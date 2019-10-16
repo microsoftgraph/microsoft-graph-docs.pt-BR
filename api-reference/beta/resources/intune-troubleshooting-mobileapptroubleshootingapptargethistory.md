@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3964702646476f35f7f6e9b7928b69fca83dc5e8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 489410ec904e012504683e960bc1f4c2b157206f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371303"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37524472"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppTargetHistory
 
@@ -27,8 +27,8 @@ Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooti
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Hora em que o item de histórico ocorreu. Herdado de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|securityGroupId|String|ID do grupo de segurança do AAD para o qual foi direcionado.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Status do item. Os valores possíveis são: `unknown`, `success`, `fail`, `error`, `pending`.|
+|securityGroupId|Cadeia de caracteres|ID do grupo de segurança do AAD para o qual foi direcionado.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Status do item. Os valores possíveis são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |errorCode|Cadeia de caracteres|Código de erro para a falha, vazio se não houver falha.|
 
 ## <a name="relationships"></a>Relações

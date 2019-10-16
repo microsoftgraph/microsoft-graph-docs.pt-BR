@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed753720116456f11d67e9adbbb998222ed7191
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d74b8462dc99476b120f3b468e34b731c3db314b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371345"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538984"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
 
@@ -32,8 +32,10 @@ Atribuição de configuração de registro
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da atribuição de configuração de registro|
+|id|Cadeia de caracteres|Chave da atribuição de configuração de registro|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Representa uma atribuição para dispositivos gerenciados no locatário|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Tipo de recurso usado para implantação em um grupo, direto ou policyset. Os valores possíveis são: `direct` e `policySets`.|
+|sourceId|Cadeia de caracteres|Identificador para o recurso usado para implantação em um grupo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,7 +54,9 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "String",
+  "sourceId": "String"
 }
 ```
 

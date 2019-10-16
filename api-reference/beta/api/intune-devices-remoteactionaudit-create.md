@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f320a3e8e2539e138aaafca98a6957d599784c7d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1068c5c6da40099b4f669f0d0cda9e1ebaf9f9b5
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188245"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527720"
 ---
 # <a name="create-remoteactionaudit"></a>Criar remoteActionAudit
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,16 +51,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar remoteAc
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID de relatório.|
+|id|Cadeia de caracteres|ID de relatório.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
-|userName|String|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
-|initiatedByUserPrincipalName|String|O formato de usuário que iniciou a ação do dispositivo é UPN.|
+|userName|Cadeia de caracteres|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
+|initiatedByUserPrincipalName|Cadeia de caracteres|O formato de usuário que iniciou a ação do dispositivo é UPN.|
 |ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, , `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
-|deviceOwnerUserPrincipalName|String|UPN do proprietário do dispositivo.|
-|deviceIMEI|String|IMEI do dispositivo.|
+|deviceOwnerUserPrincipalName|Cadeia de caracteres|UPN do proprietário do dispositivo.|
+|deviceIMEI|Cadeia de caracteres|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|managedDeviceId|String|Destino de ação.|
+|managedDeviceId|Cadeia de caracteres|Destino de ação.|
 
 
 
@@ -111,6 +111,8 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
+
+
 
 
 

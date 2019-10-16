@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 348792c6de464ddfd37f7c42b480423e969da7b5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 58296b1aae8d3582edda8e206900e65be659de6a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188658"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37532131"
 ---
 # <a name="create-devicehealthscript"></a>Criar deviceHealthScript
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/deviceManagementScripts
+POST /deviceManagement/deviceHealthScripts
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,20 +51,19 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivo. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|displayName|String|Nome do script de gerenciamento de dispositivo. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|descrição|String|Descrição opcional para o script de gerenciamento de dispositivo. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|scriptContent|Binária|O conteúdo de script. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md). Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Booliano|Indica se a assinatura do script precisa ser verificada. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|fileName|String|Nome do arquivo de script. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript. Herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits herdado de [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
-|complianceRule|[deviceHealthScriptComplianceRule](../resources/intune-devices-devicehealthscriptcompliancerule.md)|Ainda não documentado|
-|remediationScriptContent|Binária|Ainda não documentado|
+|id|Cadeia de caracteres|Identificador exclusivo do script de integridade do dispositivo|
+|publicador|Cadeia de caracteres|Nome do editor de script de integridade do dispositivo|
+|versão|String|Versão do script de integridade do dispositivo|
+|displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
+|description|String|Descrição do script de integridade do dispositivo|
+|detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
+|remediationScriptContent|Binária|Todo o conteúdo do script do PowerShell de correção|
+|createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi criado. Essa propriedade é somente leitura.|
+|lastModifiedDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi modificado. Essa propriedade é somente leitura.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
+|enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
+|runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|roleScopeTagIds|String collection|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
 
 
 
@@ -76,32 +75,24 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
+POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 Content-type: application/json
-Content-length: 712
+Content-length: 483
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
+  "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
-  "scriptContent": "c2NyaXB0Q29udGVudA==",
+  "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value",
+  "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "runAs32Bit": true,
-  "complianceRule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-    "detectionType": "string",
-    "operator": "equal",
-    "detectionValue": "Detection Value value"
-  },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
+  ]
 }
 ```
 
@@ -110,35 +101,29 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 884
+Content-Length: 655
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "id": "bcb60502-0502-bcb6-0205-b6bc0205b6bc",
+  "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
-  "scriptContent": "c2NyaXB0Q29udGVudA==",
+  "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value",
+  "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "runAs32Bit": true,
-  "complianceRule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptComplianceRule",
-    "detectionType": "string",
-    "operator": "equal",
-    "detectionValue": "Detection Value value"
-  },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
+  ]
 }
 ```
+
+
 
 
 

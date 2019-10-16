@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0dfb7e7c4ac94ecc80b87823cfda4f535b9f3c8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 96f6b3e66055e06424c367e177f4cbb42b322c77
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188042"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526453"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Criar windowsManagementAppHealthState
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,12 +51,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do estado de integridade do aplicativo de gerenciamento do Windows. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Identificador exclusivo do estado de integridade do aplicativo de gerenciamento do Windows. Essa propriedade é somente leitura.|
 |HealthState|[HealthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo de gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
+|installedVersion|Cadeia de caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Tempo de check-in do aplicativo de gerenciamento do Windows por último.|
 |deviceName|String|Nome do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
-|deviceOSVersion|String|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
+|deviceOSVersion|Cadeia de caracteres|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
 
 
 
@@ -99,6 +99,8 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
+
 
 
 

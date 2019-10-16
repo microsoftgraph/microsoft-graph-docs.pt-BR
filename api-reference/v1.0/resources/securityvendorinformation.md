@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 3fb959da2d6af10632f9113a33eb942492b679ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7af6e0903e3d178bacdd7c86b4a2cab04285171
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034423"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536094"
 ---
 # <a name="securityvendorinformation-resource-type"></a>tipo de recurso securityVendorInformation
 
@@ -20,15 +20,15 @@ Contém detalhes sobre o fornecedor de produtos/serviços de segurança, o prove
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|provedor |String|Provedor específico (produto/serviço – empresa de fornecedor); por exemplo, WindowsDefenderATP.|
-|providerVersion|String|Versão do provedor ou do subfornecedor, se existir, que gerou o alerta. *Required*|
-|subprovedor|String|Subfornecedor específico (em provedor de agregação); por exemplo, WindowsDefenderATP. SmartScreen.|
-|fornecedor |String|Nome do fornecedor do alerta (por exemplo, Microsoft, Dell, FireEye). *Required*|
+|provedor |Cadeia de caracteres|Provedor específico (produto/serviço – empresa de fornecedor); por exemplo, WindowsDefenderATP.|
+|providerVersion|Cadeia de caracteres|Versão do provedor ou do subfornecedor, se existir, que gerou o alerta. *Required*|
+|subprovedor|Cadeia de caracteres|Subfornecedor específico (em provedor de agregação); por exemplo, WindowsDefenderATP. SmartScreen.|
+|fornecedor |Cadeia de caracteres|Nome do fornecedor do alerta (por exemplo, Microsoft, Dell, FireEye). *Required*|
 
 
 ## <a name="json-representation"></a>Representação JSON
 
-O folllowing é uma representação JSON do recurso.
+Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

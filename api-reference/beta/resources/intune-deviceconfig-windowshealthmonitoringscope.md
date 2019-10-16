@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6208b85e6e9bb092615401e0f8938ba2ce8ea338
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: beaecb03ba118795ac9da8125e3102c5cb4e79b8
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371044"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538592"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>tipo de enumeração windowsHealthMonitoringScope
 
@@ -26,6 +26,7 @@ Escopo de monitoramento de integridade do dispositivo
 |indefinido|,0|Undefined|
 |healthMonitoring|1|Eventos básicos para o monitoramento de integridade do dispositivo Windows|
 |bootPerformance|duas|Eventos de desempenho de inicialização|
+|userExperienceAnalytics|4 |Eventos de análise da experiência do usuário|
 
 
 

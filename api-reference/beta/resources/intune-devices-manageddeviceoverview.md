@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32fa68eac8c4003c6a8b95f0a6a725d5eaee9047
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 02f0f159886b652f75ef01d31c731fb1f4424d7e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372234"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538781"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 
@@ -29,7 +29,7 @@ Dados de resumo de dispositivos gerenciados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do resumo|
+|id|Cadeia de caracteres|O identificador exclusivo do resumo|
 |enrolledDeviceCount|Int32|Contagem total de dispositivos registrados. Não inclui dispositivos PC gerenciados pelo Intune PC Agent|
 |mdmEnrolledCount|Int32|O número de dispositivos registrados no MDM|
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
@@ -63,7 +63,11 @@ Veja a seguir uma representação JSON do recurso.
     "macOSCount": 1024,
     "windowsMobileCount": 1024,
     "windowsCount": 1024,
-    "unknownCount": 1024
+    "unknownCount": 1024,
+    "androidDedicatedCount": 1024,
+    "androidDeviceAdminCount": 1024,
+    "androidFullyManagedCount": 1024,
+    "androidWorkProfileCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

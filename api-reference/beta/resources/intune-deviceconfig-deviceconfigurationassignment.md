@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e344554804044687c7e5b9aa90c6171055b64a16
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: af6c3715e106e446d76c1e7b250e79e713cef079
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198191"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538886"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
@@ -32,10 +32,10 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da atribuição.|
+|id|Cadeia de caracteres|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direta ou de remessa/política. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|String|O identificador da origem da atribuição.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direta ou de remessa/política. Essa propriedade é somente leitura. Os valores possíveis são: `direct` e `policySets`.|
+|sourceId|Cadeia de caracteres|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

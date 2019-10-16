@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e602786b7b7c49fb2f9a5027583b44754991245
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 21f3ec0cacb83e13071ee8453f084a070e8e26e1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187880"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536059"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Obter depIOSEnrollmentProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2166
+Content-Length: 2200
 
 {
   "value": {
@@ -98,6 +98,7 @@ Content-Length: 2166
     "privacyPaneDisabled": true,
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
+    "configurationWebUrl": true,
     "iTunesPairingMode": "allow",
     "managementCertificates": [
       {
@@ -126,6 +127,8 @@ Content-Length: 2166
   }
 }
 ```
+
+
 
 
 

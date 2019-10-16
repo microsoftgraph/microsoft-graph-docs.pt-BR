@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 726fe757e8db9b1d965c617476006d4866b040ec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fdc01e2c9cd4aabf47c900bd38bb2b0f7035308b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332761"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538963"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -23,13 +23,13 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceComplianceCheckinThresholdDays|Int32|O número de dias que tem um dispositivo pode ser executado sem fazer check-in para permanecer em conformidade. Valores válidos de 0 a 120|
+|deviceComplianceCheckinThresholdDays|Int32|O número de dias que tem um dispositivo pode ser executado sem fazer check-in para permanecer em conformidade.|
 |isScheduledActionEnabled|Booliano|O recurso está habilitado ou não para ação agendada para a regra.|
 |secureByDefault|Booliano|Quando true, o dispositivo deve ser incompatível quando não há nenhuma política de conformidade direcionada|
 |enhancedJailBreak|Booliano|O recurso está habilitado ou não para a detecção de jailbreak avançada.|
 |deviceInactivityBeforeRetirementInDay|Int32|Quando o dispositivo não faz check-in por um número especificado de dias, os dados da empresa podem ser removidos e o dispositivo não estará sob gerenciamento. Valores válidos de 30 a 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|O provedor de credenciais derivado a ser usado para esta conta. Os valores possíveis são: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
-|derivedCredentialUrl|String|O URI de autoatendimento do provedor de credenciais derivado.|
+|derivedCredentialUrl|Cadeia de caracteres|O URI de autoatendimento do provedor de credenciais derivado.|
 |androidDeviceAdministratorEnrollmentEnabled|Booliano|A propriedade para determinar se o registro do administrador do dispositivo Android está habilitado para esta conta.|
 
 ## <a name="relationships"></a>Relações

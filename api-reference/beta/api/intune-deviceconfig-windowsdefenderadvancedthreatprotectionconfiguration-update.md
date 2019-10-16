@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d4f9300350a994fe2652d57e24bb24f1fde441d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b7f4282dfd95a9f0b9fcae5e5f4d871a9ba4aaf8
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37181900"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37532880"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,22 +55,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|advancedThreatProtectionOnboardingBlob|String|Blob de integração do Windows Defender AdvancedThreatProtection.|
-|advancedThreatProtectionOnboardingFilename|String|Nome do arquivo do qual o AdvancedThreatProtectionOnboardingBlob foi obtido.|
+|advancedThreatProtectionOnboardingBlob|Cadeia de caracteres|Blob de integração do Windows Defender AdvancedThreatProtection.|
+|advancedThreatProtectionOnboardingFilename|Cadeia de caracteres|Nome do arquivo do qual o AdvancedThreatProtectionOnboardingBlob foi obtido.|
 |advancedThreatProtectionAutoPopulateOnboardingBlob|Booliano|Preencher automaticamente o blob de integração programaticamente do serviço de proteção avançada contra ameaças|
 |allowSampleSharing|Booliano|Regra para "Permitir o compartilhamento de exemplo" de AdvancedThreatProtection do Windows Defender|
 |enableExpeditedTelemetryReporting|Booliano|Acelera a frequência de relatórios de telemetria da Proteção Avançada Contra Ameaças do Windows Defender.|
-|advancedThreatProtectionOffboardingBlob|String|Blob de remoção AdvancedThreatProtection do Windows Defender.|
-|advancedThreatProtectionOffboardingFilename|String|Nome do arquivo do qual o AdvancedThreatProtectionOffboardingBlob foi obtido.|
+|advancedThreatProtectionOffboardingBlob|Cadeia de caracteres|Blob de remoção AdvancedThreatProtection do Windows Defender.|
+|advancedThreatProtectionOffboardingFilename|Cadeia de caracteres|Nome do arquivo do qual o AdvancedThreatProtectionOffboardingBlob foi obtido.|
 
 
 
@@ -175,6 +175,8 @@ Content-Length: 1775
   "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
+
+
 
 
 

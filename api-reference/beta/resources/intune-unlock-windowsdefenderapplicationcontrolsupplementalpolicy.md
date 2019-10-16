@@ -1,0 +1,79 @@
+---
+title: tipo de recurso windowsDefenderApplicationControlSupplementalPolicy
+description: Ainda não documentado
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 53edcd8f5f6de071c9bf694858219388bea5002b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539124"
+---
+# <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicy
+
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+
+Ainda não documentado
+
+## <a name="methods"></a>Métodos
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar windowsDefenderApplicationControlSupplementalPolicies](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-list.md)|coleção [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Listar Propriedades e relações dos objetos [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
+|[Obter windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-get.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Leia as propriedades e as relações do objeto [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
+|[Criar windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-create.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Criar um novo objeto [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
+|[Excluir windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-delete.md)|Nenhum|Exclui [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md).|
+|[Atualizar windowsDefenderApplicationControlSupplementalPolicy](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-update.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Atualiza as propriedades de um objeto [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
+|[atribuir ação](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-assign.md)|Nenhuma|Ainda não documentado|
+
+## <a name="properties"></a>Propriedades
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|Cadeia de caracteres|A chave da política complementar do WindowsDefenderApplicationControl.|
+|displayName|Cadeia de caracteres|O nome de exibição da política complementar do WindowsDefenderApplicationControl.|
+|description|String|A descrição da política suplementar do WindowsDefenderApplicationControl.|
+|conteúdo|Binária|O conteúdo de política suplementar WindowsDefenderApplicationControl no formato de matriz de bytes.|
+|contentFileName|Cadeia de caracteres|O nome de arquivo do conteúdo da política suplementar da WindowsDefenderApplicationControl.|
+|versão|String|A versão da política suplementar da WindowsDefenderApplicationControl.|
+|creationDatetime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi carregada.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da política suplementar do WindowsDefenderApplicationControl.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
+
+## <a name="relationships"></a>Relações
+|Relação|Tipo|Descrição|
+|:---|:---|:---|
+|assignments|coleção [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md)|As atribuições de grupo associadas para esta política suplementar do WindowsDefenderApplicationControl.|
+|deploySummary|[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md)|Resumo de implantação de política complementar do WindowsDefenderApplicationControl.|
+|deviceStatuses|coleção [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md)|A lista de Estados de implantação de dispositivo para esta política complementar do WindowsDefenderApplicationControl.|
+
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsDefenderApplicationControlSupplementalPolicy"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windowsDefenderApplicationControlSupplementalPolicy",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "content": "binary",
+  "contentFileName": "String",
+  "version": "String",
+  "creationDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ]
+}
+```
+
+
+

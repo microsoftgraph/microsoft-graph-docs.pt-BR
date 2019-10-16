@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a5048e5c01e22d9c0922f9620916c3bc4251b07
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 84fcdda3990642f42c9dcaed0616aed4c9946b7f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188280"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527727"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar [managedDeviceOve
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do resumo|
+|id|Cadeia de caracteres|O identificador exclusivo do resumo|
 |enrolledDeviceCount|Int32|Contagem total de dispositivos registrados. Não inclui dispositivos PC gerenciados pelo Intune PC Agent|
 |mdmEnrolledCount|Int32|O número de dispositivos registrados no MDM|
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
@@ -72,7 +72,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 943
+Content-length: 1082
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -86,7 +86,11 @@ Content-length: 943
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -113,7 +117,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1056
+Content-Length: 1195
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -128,7 +132,11 @@ Content-Length: 1056
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -150,6 +158,8 @@ Content-Length: 1056
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 
