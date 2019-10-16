@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c5840f1dd77ac94c0b7bb4a26c56806d4938e327
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: ae1edb762e1b46c1f1a5a2810b0fe24921d95360
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35858159"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544101"
 ---
 ```csharp
 
@@ -13,10 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var directoryObject = new DirectoryObject
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.id","https://graph.microsoft.com/beta/users/alexd@contoso.com"}
-    }
+    Id = "alexd@contoso.com"
 };
 
 await graphClient.Groups["{id}"].AcceptedSenders.References

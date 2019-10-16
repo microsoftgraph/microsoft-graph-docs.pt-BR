@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 83394ed36bd0789dad614898854ce7d17c41ccd8
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: 9f5088f384407a36a71fc20ed5d45924dd520538
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845860"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544107"
 ---
 ```csharp
 
@@ -29,12 +29,8 @@ var educationRubric = new EducationRubric
                 Content = "",
                 ContentType = BodyType.Text
             },
-            Grading = new EducationAssignmentGradeType
+            Grading = new EducationAssignmentPointsGradeType
             {
-                AdditionalData = new Dictionary<string, object>()
-                {
-                    {"@odata.type","#microsoft.graph.educationAssignmentPointsGradeType"}
-                },
                 MaxPoints = 2
             }
         },
@@ -46,12 +42,8 @@ var educationRubric = new EducationRubric
                 Content = "",
                 ContentType = BodyType.Text
             },
-            Grading = new EducationAssignmentGradeType
+            Grading = new EducationAssignmentPointsGradeType
             {
-                AdditionalData = new Dictionary<string, object>()
-                {
-                    {"@odata.type","#microsoft.graph.educationAssignmentPointsGradeType"}
-                },
                 MaxPoints = 1
             }
         }
@@ -115,12 +107,8 @@ var educationRubric = new EducationRubric
             Weight = 50
         }
     },
-    Grading = new EducationAssignmentGradeType
+    Grading = new EducationAssignmentPointsGradeType
     {
-        AdditionalData = new Dictionary<string, object>()
-        {
-            {"@odata.type","#microsoft.graph.educationAssignmentPointsGradeType"}
-        }
     }
 };
 
