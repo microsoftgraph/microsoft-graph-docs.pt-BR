@@ -1,0 +1,83 @@
+---
+title: tipo de recurso groupPolicyMigrationReport
+description: O relatório de migração de política de grupo.
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 038c0f81999bebbf0d2406637bb71e03a67397ce
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539201"
+---
+# <a name="grouppolicymigrationreport-resource-type"></a><span data-ttu-id="34a38-103">tipo de recurso groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-103">groupPolicyMigrationReport resource type</span></span>
+
+> <span data-ttu-id="34a38-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="34a38-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="34a38-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="34a38-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="34a38-106">O relatório de migração de política de grupo.</span><span class="sxs-lookup"><span data-stu-id="34a38-106">The Group Policy migration report.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="34a38-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="34a38-107">Methods</span></span>
+|<span data-ttu-id="34a38-108">Método</span><span class="sxs-lookup"><span data-stu-id="34a38-108">Method</span></span>|<span data-ttu-id="34a38-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="34a38-109">Return Type</span></span>|<span data-ttu-id="34a38-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="34a38-110">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="34a38-111">Listar groupPolicyMigrationReports</span><span class="sxs-lookup"><span data-stu-id="34a38-111">List groupPolicyMigrationReports</span></span>](../api/intune-gpanalyticsservice-grouppolicymigrationreport-list.md)|<span data-ttu-id="34a38-112">coleção [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)</span><span class="sxs-lookup"><span data-stu-id="34a38-112">[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) collection</span></span>|<span data-ttu-id="34a38-113">Listar Propriedades e relações dos objetos [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .</span><span class="sxs-lookup"><span data-stu-id="34a38-113">List properties and relationships of the [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) objects.</span></span>|
+|[<span data-ttu-id="34a38-114">Obter groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-114">Get groupPolicyMigrationReport</span></span>](../api/intune-gpanalyticsservice-grouppolicymigrationreport-get.md)|[<span data-ttu-id="34a38-115">groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-115">groupPolicyMigrationReport</span></span>](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|<span data-ttu-id="34a38-116">Leia as propriedades e as relações do objeto [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .</span><span class="sxs-lookup"><span data-stu-id="34a38-116">Read properties and relationships of the [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.</span></span>|
+|[<span data-ttu-id="34a38-117">Criar groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-117">Create groupPolicyMigrationReport</span></span>](../api/intune-gpanalyticsservice-grouppolicymigrationreport-create.md)|[<span data-ttu-id="34a38-118">groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-118">groupPolicyMigrationReport</span></span>](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|<span data-ttu-id="34a38-119">Criar um novo objeto [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .</span><span class="sxs-lookup"><span data-stu-id="34a38-119">Create a new [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.</span></span>|
+|[<span data-ttu-id="34a38-120">Excluir groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-120">Delete groupPolicyMigrationReport</span></span>](../api/intune-gpanalyticsservice-grouppolicymigrationreport-delete.md)|<span data-ttu-id="34a38-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="34a38-121">None</span></span>|<span data-ttu-id="34a38-122">Exclui [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md).</span><span class="sxs-lookup"><span data-stu-id="34a38-122">Deletes a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md).</span></span>|
+|[<span data-ttu-id="34a38-123">Atualizar groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-123">Update groupPolicyMigrationReport</span></span>](../api/intune-gpanalyticsservice-grouppolicymigrationreport-update.md)|[<span data-ttu-id="34a38-124">groupPolicyMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-124">groupPolicyMigrationReport</span></span>](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|<span data-ttu-id="34a38-125">Atualiza as propriedades de um objeto [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .</span><span class="sxs-lookup"><span data-stu-id="34a38-125">Update the properties of a [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) object.</span></span>|
+|[<span data-ttu-id="34a38-126">ação createMigrationReport</span><span class="sxs-lookup"><span data-stu-id="34a38-126">createMigrationReport action</span></span>](../api/intune-gpanalyticsservice-grouppolicymigrationreport-createmigrationreport.md)|<span data-ttu-id="34a38-127">String</span><span class="sxs-lookup"><span data-stu-id="34a38-127">String</span></span>|<span data-ttu-id="34a38-128">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="34a38-128">Not yet documented</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="34a38-129">Propriedades</span><span class="sxs-lookup"><span data-stu-id="34a38-129">Properties</span></span>
+|<span data-ttu-id="34a38-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="34a38-130">Property</span></span>|<span data-ttu-id="34a38-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="34a38-131">Type</span></span>|<span data-ttu-id="34a38-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="34a38-132">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="34a38-133">id</span><span class="sxs-lookup"><span data-stu-id="34a38-133">id</span></span>|<span data-ttu-id="34a38-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="34a38-134">String</span></span>|<span data-ttu-id="34a38-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="34a38-135">Not yet documented</span></span>|
+|<span data-ttu-id="34a38-136">groupPolicyObjectId</span><span class="sxs-lookup"><span data-stu-id="34a38-136">groupPolicyObjectId</span></span>|<span data-ttu-id="34a38-137">Guid</span><span class="sxs-lookup"><span data-stu-id="34a38-137">Guid</span></span>|<span data-ttu-id="34a38-138">O GUID do objeto da política de grupo do conteúdo XML do GPO</span><span class="sxs-lookup"><span data-stu-id="34a38-138">The Group Policy Object GUID from GPO Xml content</span></span>|
+|<span data-ttu-id="34a38-139">displayName</span><span class="sxs-lookup"><span data-stu-id="34a38-139">displayName</span></span>|<span data-ttu-id="34a38-140">String</span><span class="sxs-lookup"><span data-stu-id="34a38-140">String</span></span>|<span data-ttu-id="34a38-141">O nome do objeto de diretiva de grupo do conteúdo XML do GPO</span><span class="sxs-lookup"><span data-stu-id="34a38-141">The name of Group Policy Object from the GPO Xml Content</span></span>|
+|<span data-ttu-id="34a38-142">ouDistinguishedName</span><span class="sxs-lookup"><span data-stu-id="34a38-142">ouDistinguishedName</span></span>|<span data-ttu-id="34a38-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="34a38-143">String</span></span>|<span data-ttu-id="34a38-144">O nome diferenciado da OU.</span><span class="sxs-lookup"><span data-stu-id="34a38-144">The distinguished name of the OU.</span></span>|
+|<span data-ttu-id="34a38-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="34a38-145">createdDateTime</span></span>|<span data-ttu-id="34a38-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="34a38-146">DateTimeOffset</span></span>|<span data-ttu-id="34a38-147">A data e a hora em que o GroupPolicyMigrationReport foi criado.</span><span class="sxs-lookup"><span data-stu-id="34a38-147">The date and time at which the GroupPolicyMigrationReport was created.</span></span>|
+|<span data-ttu-id="34a38-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="34a38-148">lastModifiedDateTime</span></span>|<span data-ttu-id="34a38-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="34a38-149">DateTimeOffset</span></span>|<span data-ttu-id="34a38-150">A data e a hora em que o GroupPolicyMigrationReport foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="34a38-150">The date and time at which the GroupPolicyMigrationReport was last modified.</span></span>|
+|<span data-ttu-id="34a38-151">groupPolicyCreatedDateTime</span><span class="sxs-lookup"><span data-stu-id="34a38-151">groupPolicyCreatedDateTime</span></span>|<span data-ttu-id="34a38-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="34a38-152">DateTimeOffset</span></span>|<span data-ttu-id="34a38-153">A data e a hora em que o GroupPolicyMigrationReport foi criado.</span><span class="sxs-lookup"><span data-stu-id="34a38-153">The date and time at which the GroupPolicyMigrationReport was created.</span></span>|
+|<span data-ttu-id="34a38-154">groupPolicyLastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="34a38-154">groupPolicyLastModifiedDateTime</span></span>|<span data-ttu-id="34a38-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="34a38-155">DateTimeOffset</span></span>|<span data-ttu-id="34a38-156">A data e a hora em que o GroupPolicyMigrationReport foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="34a38-156">The date and time at which the GroupPolicyMigrationReport was last modified.</span></span>|
+|<span data-ttu-id="34a38-157">migrationReadiness</span><span class="sxs-lookup"><span data-stu-id="34a38-157">migrationReadiness</span></span>|[<span data-ttu-id="34a38-158">groupPolicyMigrationReadiness</span><span class="sxs-lookup"><span data-stu-id="34a38-158">groupPolicyMigrationReadiness</span></span>](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|<span data-ttu-id="34a38-159">A cobertura do Intune para o arquivo de objeto de diretiva de grupo associado.</span><span class="sxs-lookup"><span data-stu-id="34a38-159">The Intune coverage for the associated Group Policy Object file.</span></span> <span data-ttu-id="34a38-160">Os valores possíveis são: `none`, `partial`, `complete`, `error`, `notApplicable`.</span><span class="sxs-lookup"><span data-stu-id="34a38-160">Possible values are: `none`, `partial`, `complete`, `error`, `notApplicable`.</span></span>|
+|<span data-ttu-id="34a38-161">targetedInActiveDirectory</span><span class="sxs-lookup"><span data-stu-id="34a38-161">targetedInActiveDirectory</span></span>|<span data-ttu-id="34a38-162">Booliano</span><span class="sxs-lookup"><span data-stu-id="34a38-162">Boolean</span></span>|<span data-ttu-id="34a38-163">A propriedade de destino no AD do conteúdo XML do GPO</span><span class="sxs-lookup"><span data-stu-id="34a38-163">The Targeted in AD property from GPO Xml Content</span></span>|
+|<span data-ttu-id="34a38-164">totalSettingsCount</span><span class="sxs-lookup"><span data-stu-id="34a38-164">totalSettingsCount</span></span>|<span data-ttu-id="34a38-165">Int32</span><span class="sxs-lookup"><span data-stu-id="34a38-165">Int32</span></span>|<span data-ttu-id="34a38-166">O número total de configurações de política de grupo do arquivo de GPO.</span><span class="sxs-lookup"><span data-stu-id="34a38-166">The total number of Group Policy Settings from GPO file.</span></span>|
+|<span data-ttu-id="34a38-167">supportedSettingsCount</span><span class="sxs-lookup"><span data-stu-id="34a38-167">supportedSettingsCount</span></span>|<span data-ttu-id="34a38-168">Int32</span><span class="sxs-lookup"><span data-stu-id="34a38-168">Int32</span></span>|<span data-ttu-id="34a38-169">O número de configurações de política de grupo compatíveis com o Intune.</span><span class="sxs-lookup"><span data-stu-id="34a38-169">The number of Group Policy Settings supported by Intune.</span></span>|
+|<span data-ttu-id="34a38-170">supportedSettingsPercent</span><span class="sxs-lookup"><span data-stu-id="34a38-170">supportedSettingsPercent</span></span>|<span data-ttu-id="34a38-171">Int32</span><span class="sxs-lookup"><span data-stu-id="34a38-171">Int32</span></span>|<span data-ttu-id="34a38-172">A porcentagem de configurações de política de grupo compatíveis com o Intune.</span><span class="sxs-lookup"><span data-stu-id="34a38-172">The Percentage of Group Policy Settings supported by Intune.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="34a38-173">Relações</span><span class="sxs-lookup"><span data-stu-id="34a38-173">Relationships</span></span>
+|<span data-ttu-id="34a38-174">Relação</span><span class="sxs-lookup"><span data-stu-id="34a38-174">Relationship</span></span>|<span data-ttu-id="34a38-175">Tipo</span><span class="sxs-lookup"><span data-stu-id="34a38-175">Type</span></span>|<span data-ttu-id="34a38-176">Descrição</span><span class="sxs-lookup"><span data-stu-id="34a38-176">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="34a38-177">groupPolicySettingMappings</span><span class="sxs-lookup"><span data-stu-id="34a38-177">groupPolicySettingMappings</span></span>|<span data-ttu-id="34a38-178">coleção [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)</span><span class="sxs-lookup"><span data-stu-id="34a38-178">[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) collection</span></span>|<span data-ttu-id="34a38-179">Uma lista de configurações de política de grupo para mapeamentos MDM/Intune.</span><span class="sxs-lookup"><span data-stu-id="34a38-179">A list of group policy settings to MDM/Intune mappings.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="34a38-180">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="34a38-180">JSON Representation</span></span>
+<span data-ttu-id="34a38-181">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="34a38-181">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.groupPolicyMigrationReport"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.groupPolicyMigrationReport",
+  "id": "String (identifier)",
+  "groupPolicyObjectId": "Guid",
+  "displayName": "String",
+  "ouDistinguishedName": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "groupPolicyCreatedDateTime": "String (timestamp)",
+  "groupPolicyLastModifiedDateTime": "String (timestamp)",
+  "migrationReadiness": "String",
+  "targetedInActiveDirectory": true,
+  "totalSettingsCount": 1024,
+  "supportedSettingsCount": 1024,
+  "supportedSettingsPercent": 1024
+}
+```
+
+
+
