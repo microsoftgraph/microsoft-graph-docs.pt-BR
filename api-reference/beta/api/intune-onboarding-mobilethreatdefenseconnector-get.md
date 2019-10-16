@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f956132d97974c4f85fc120e415f767a3f4aed1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0c8c206391742c438d262c3247b1a748f32e8b67
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190450"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536550"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Obter mobileThreatDefenseConnector
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 720
+Content-Length: 828
 
 {
   "value": {
@@ -74,6 +74,8 @@ Content-Length: 720
     "id": "e4bede14-de14-e4be-14de-bee414debee4",
     "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
     "partnerState": "available",
+    "androidMobileApplicationManagementEnabled": true,
+    "iosMobileApplicationManagementEnabled": true,
     "androidEnabled": true,
     "iosEnabled": true,
     "windowsEnabled": true,
@@ -88,6 +90,8 @@ Content-Length: 720
   }
 }
 ```
+
+
 
 
 

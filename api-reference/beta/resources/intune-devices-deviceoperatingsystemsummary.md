@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a9e628a52a90f72dbf67495c8e6745bd4072ca2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ccb18fa2f8ec1545530dca13a7ed9d59be5a7504
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369980"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539096"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
@@ -29,6 +29,10 @@ Resumo do sistema operacional do dispositivo.
 |windowsMobileCount|Int32|Número da contagem de dispositivos móveis Windows.|
 |windowsCount|Int32|Número da contagem de dispositivos Windows.|
 |unknownCount|Int32|Número da contagem de dispositivos desconhecidos.|
+|androidDedicatedCount|Int32|Número de dispositivos Android dedicados.|
+|androidDeviceAdminCount|Int32|Número de dispositivos Android de administrador de dispositivos.|
+|androidFullyManagedCount|Int32|Número de dispositivos Android totalmente gerenciados.|
+|androidWorkProfileCount|Int32|Número de dispositivos Android de perfil de trabalho.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -48,7 +52,11 @@ Veja a seguir uma representação JSON do recurso.
   "macOSCount": 1024,
   "windowsMobileCount": 1024,
   "windowsCount": 1024,
-  "unknownCount": 1024
+  "unknownCount": 1024,
+  "androidDedicatedCount": 1024,
+  "androidDeviceAdminCount": 1024,
+  "androidFullyManagedCount": 1024,
+  "androidWorkProfileCount": 1024
 }
 ```
 

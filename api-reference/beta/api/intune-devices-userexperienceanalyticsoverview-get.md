@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3baa5529a3d313cb4561b89011e88988ddb0fc8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 10b35fc8913b2591d9bc526708e16b213835058b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188252"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526936"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Obter userExperienceAnalyticsOverview
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 758
+Content-Length: 872
 
 {
   "value": {
@@ -89,10 +89,14 @@ Content-Length: 758
         "severity": "informational"
       }
     ],
-    "state": "insufficientData"
+    "state": "insufficientData",
+    "deviceBootPerformanceHealthState": "insufficientData",
+    "bestPracticesHealthState": "insufficientData"
   }
 }
 ```
+
+
 
 
 

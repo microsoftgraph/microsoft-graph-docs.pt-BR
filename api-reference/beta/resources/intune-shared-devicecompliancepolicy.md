@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85bd8b77d4a863256e705a7823ca7567891681d4
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 2248277d9deac12a191f6908fa3442658e5fcc46
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199617"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539152"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Tipo de recurso deviceCompliancePolicy
 
@@ -26,9 +26,9 @@ Esta é a classe base para a política de Conformidade. Políticas de conformida
 |[Listar deviceCompliancePolicies](../api/intune-shared-devicecompliancepolicy-list.md)|Coleção [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Lista propriedades e relações dos objetos [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |[Obter deviceCompliancePolicy](../api/intune-shared-devicecompliancepolicy-get.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Propriedades de leitura e relações do objeto [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |**Configuração do dispositivo**|
-|[atribuir ação](../api/intune-shared-devicecompliancepolicy-assign.md)|Coleção deviceCompliancePolicyAssignment|Ainda não documentado|
-|[ação scheduleActionsForRules](../api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md)|Nenhuma|Ainda não documentado|
-|[ação refreshDeviceComplianceReportSummarization](../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|Nenhuma|Ainda não documentado|
+|[ação assign](../api/intune-shared-devicecompliancepolicy-assign.md)|Coleção [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Ainda não documentado|
+|ação scheduleActionsForRules|Nenhuma|Ainda não documentado|
+|ação refreshDeviceComplianceReportSummarization] (.. /api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|Nenhuma|Ainda não documentado|
 |**Conjunto de políticas**|
 |[ação hasPayloadLinks](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|coleção [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)|Ainda não documentado|
 
@@ -36,9 +36,9 @@ Esta é a classe base para a política de Conformidade. Políticas de conformida
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|descrição|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
@@ -53,7 +53,7 @@ Esta é a classe base para a política de Conformidade. Políticas de conformida
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|Visão geral de status de dispositivos para conformidade de dispositivos|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md)|Visão geral de status de usuários para conformidade de dispositivos|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Resumo do dispositivo para estado de configuração de conformidade|
-|assignments|Coleção deviceCompliancePolicyAssignment|A coleção de atribuições para essa política de conformidade.|
+|assignments|Coleção [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|A coleção de atribuições para essa política de conformidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

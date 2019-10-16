@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9774bb5f81f7d114b5f1ff1031138f922460027e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e085eb0ae86d6a93895b4c88d17664abc84536ee
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191743"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537398"
 ---
 # <a name="create-policyset"></a>Criar policyset
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,11 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 |createdDateTime|DateTimeOffset|Hora de criação do Policyset.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do Policyset.|
 |displayName|String|DisplayName do Policyset.|
-|descrição|String|Descrição do Policyset.|
+|description|String|Descrição do Policyset.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do Policyset. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida|
-|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Policyset|
+|guidedDeploymentTags|String collection|Marcas da implantação dirigida|
+|roleScopeTags|String collection|RoleScopeTags do Policyset|
 
 
 
@@ -114,6 +114,8 @@ Content-Length: 489
   ]
 }
 ```
+
+
 
 
 
