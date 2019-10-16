@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 30f7b6600a046f1b583ca8fca37f3085abb77f48
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 282639c3cf253a3c6d210f7e4c160ee150cd8acc
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37168163"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534033"
 ---
-# <a name="update-deviceconfigurationuseroverview"></a><span data-ttu-id="86ae1-103">Atualizar deviceConfigurationUserOverview</span><span class="sxs-lookup"><span data-stu-id="86ae1-103">Update deviceConfigurationUserOverview</span></span>
+# <a name="update-deviceconfigurationuseroverview"></a><span data-ttu-id="33690-103">Atualizar deviceConfigurationUserOverview</span><span class="sxs-lookup"><span data-stu-id="33690-103">Update deviceConfigurationUserOverview</span></span>
 
-> <span data-ttu-id="86ae1-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="86ae1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="33690-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="33690-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="86ae1-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="86ae1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="33690-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="33690-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="86ae1-106">Atualizar as propriedades de um objeto [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span><span class="sxs-lookup"><span data-stu-id="86ae1-106">Update the properties of a [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) object.</span></span>
+<span data-ttu-id="33690-106">Atualizar as propriedades de um objeto [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span><span class="sxs-lookup"><span data-stu-id="33690-106">Update the properties of a [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="86ae1-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="86ae1-107">Prerequisites</span></span>
-<span data-ttu-id="86ae1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="86ae1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="33690-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="33690-107">Prerequisites</span></span>
+<span data-ttu-id="33690-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="33690-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="86ae1-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="86ae1-110">Permission type</span></span>|<span data-ttu-id="86ae1-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="86ae1-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="33690-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="33690-110">Permission type</span></span>|<span data-ttu-id="33690-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="33690-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="86ae1-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="86ae1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="86ae1-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86ae1-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="86ae1-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="86ae1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="86ae1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="86ae1-115">Not supported.</span></span>|
-|<span data-ttu-id="86ae1-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="86ae1-116">Application</span></span>|<span data-ttu-id="86ae1-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86ae1-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="33690-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="33690-112">Delegated (work or school account)</span></span>|<span data-ttu-id="33690-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33690-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="33690-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="33690-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="33690-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33690-115">Not supported.</span></span>|
+|<span data-ttu-id="33690-116">Application</span><span class="sxs-lookup"><span data-stu-id="33690-116">Application</span></span>|<span data-ttu-id="33690-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33690-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="86ae1-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="86ae1-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33690-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="33690-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,44 +40,43 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertifi
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/userStatusOverview
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate/userStatusOverview
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/userStatusOverview
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/userStatusOverview
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/userStatusOverview
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/userStatusOverview
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/userStatusOverview
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="86ae1-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="86ae1-119">Request headers</span></span>
-|<span data-ttu-id="86ae1-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="86ae1-120">Header</span></span>|<span data-ttu-id="86ae1-121">Valor</span><span class="sxs-lookup"><span data-stu-id="86ae1-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="33690-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="33690-119">Request headers</span></span>
+|<span data-ttu-id="33690-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="33690-120">Header</span></span>|<span data-ttu-id="33690-121">Valor</span><span class="sxs-lookup"><span data-stu-id="33690-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="86ae1-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="86ae1-122">Authorization</span></span>|<span data-ttu-id="86ae1-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="86ae1-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="86ae1-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="86ae1-124">Accept</span></span>|<span data-ttu-id="86ae1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="86ae1-125">application/json</span></span>|
+|<span data-ttu-id="33690-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="33690-122">Authorization</span></span>|<span data-ttu-id="33690-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="33690-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="33690-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="33690-124">Accept</span></span>|<span data-ttu-id="33690-125">application/json</span><span class="sxs-lookup"><span data-stu-id="33690-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="86ae1-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="86ae1-126">Request body</span></span>
-<span data-ttu-id="86ae1-127">No corpo da solicitação, forneça uma representação JSON do objeto [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span><span class="sxs-lookup"><span data-stu-id="86ae1-127">In the request body, supply a JSON representation for the [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="33690-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="33690-126">Request body</span></span>
+<span data-ttu-id="33690-127">No corpo da solicitação, forneça uma representação JSON do objeto [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span><span class="sxs-lookup"><span data-stu-id="33690-127">In the request body, supply a JSON representation for the [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) object.</span></span>
 
-<span data-ttu-id="86ae1-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span><span class="sxs-lookup"><span data-stu-id="86ae1-128">The following table shows the properties that are required when you create the [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span></span>
+<span data-ttu-id="33690-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span><span class="sxs-lookup"><span data-stu-id="33690-128">The following table shows the properties that are required when you create the [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md).</span></span>
 
-|<span data-ttu-id="86ae1-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="86ae1-129">Property</span></span>|<span data-ttu-id="86ae1-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="86ae1-130">Type</span></span>|<span data-ttu-id="86ae1-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="86ae1-131">Description</span></span>|
+|<span data-ttu-id="33690-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="33690-129">Property</span></span>|<span data-ttu-id="33690-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="33690-130">Type</span></span>|<span data-ttu-id="33690-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="33690-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="86ae1-132">id</span><span class="sxs-lookup"><span data-stu-id="86ae1-132">id</span></span>|<span data-ttu-id="86ae1-133">String</span><span class="sxs-lookup"><span data-stu-id="86ae1-133">String</span></span>|<span data-ttu-id="86ae1-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="86ae1-134">Key of the entity.</span></span>|
-|<span data-ttu-id="86ae1-135">pendingCount</span><span class="sxs-lookup"><span data-stu-id="86ae1-135">pendingCount</span></span>|<span data-ttu-id="86ae1-136">Int32</span><span class="sxs-lookup"><span data-stu-id="86ae1-136">Int32</span></span>|<span data-ttu-id="86ae1-137">Número de usuários pendentes</span><span class="sxs-lookup"><span data-stu-id="86ae1-137">Number of pending Users</span></span>|
-|<span data-ttu-id="86ae1-138">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="86ae1-138">notApplicableCount</span></span>|<span data-ttu-id="86ae1-139">Int32</span><span class="sxs-lookup"><span data-stu-id="86ae1-139">Int32</span></span>|<span data-ttu-id="86ae1-140">Número de usuários não aplicáveis</span><span class="sxs-lookup"><span data-stu-id="86ae1-140">Number of not applicable users</span></span>|
-|<span data-ttu-id="86ae1-141">successCount</span><span class="sxs-lookup"><span data-stu-id="86ae1-141">successCount</span></span>|<span data-ttu-id="86ae1-142">Int32</span><span class="sxs-lookup"><span data-stu-id="86ae1-142">Int32</span></span>|<span data-ttu-id="86ae1-143">Número de usuários bem-sucedidos</span><span class="sxs-lookup"><span data-stu-id="86ae1-143">Number of succeeded Users</span></span>|
-|<span data-ttu-id="86ae1-144">errorCount</span><span class="sxs-lookup"><span data-stu-id="86ae1-144">errorCount</span></span>|<span data-ttu-id="86ae1-145">Int32</span><span class="sxs-lookup"><span data-stu-id="86ae1-145">Int32</span></span>|<span data-ttu-id="86ae1-146">Número de usuários com erro</span><span class="sxs-lookup"><span data-stu-id="86ae1-146">Number of error Users</span></span>|
-|<span data-ttu-id="86ae1-147">failedCount</span><span class="sxs-lookup"><span data-stu-id="86ae1-147">failedCount</span></span>|<span data-ttu-id="86ae1-148">Int32</span><span class="sxs-lookup"><span data-stu-id="86ae1-148">Int32</span></span>|<span data-ttu-id="86ae1-149">Número de usuários com falhas</span><span class="sxs-lookup"><span data-stu-id="86ae1-149">Number of failed Users</span></span>|
-|<span data-ttu-id="86ae1-150">conflictCount</span><span class="sxs-lookup"><span data-stu-id="86ae1-150">conflictCount</span></span>|<span data-ttu-id="86ae1-151">Int32</span><span class="sxs-lookup"><span data-stu-id="86ae1-151">Int32</span></span>|<span data-ttu-id="86ae1-152">Número de usuários em conflito</span><span class="sxs-lookup"><span data-stu-id="86ae1-152">Number of users in conflict</span></span>|
-|<span data-ttu-id="86ae1-153">lastUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="86ae1-153">lastUpdateDateTime</span></span>|<span data-ttu-id="86ae1-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="86ae1-154">DateTimeOffset</span></span>|<span data-ttu-id="86ae1-155">Hora da última atualização</span><span class="sxs-lookup"><span data-stu-id="86ae1-155">Last update time</span></span>|
-|<span data-ttu-id="86ae1-156">configurationVersion</span><span class="sxs-lookup"><span data-stu-id="86ae1-156">configurationVersion</span></span>|<span data-ttu-id="86ae1-157">Int32</span><span class="sxs-lookup"><span data-stu-id="86ae1-157">Int32</span></span>|<span data-ttu-id="86ae1-158">Versão da política para essa visão geral</span><span class="sxs-lookup"><span data-stu-id="86ae1-158">Version of the policy for that overview</span></span>|
+|<span data-ttu-id="33690-132">id</span><span class="sxs-lookup"><span data-stu-id="33690-132">id</span></span>|<span data-ttu-id="33690-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="33690-133">String</span></span>|<span data-ttu-id="33690-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="33690-134">Key of the entity.</span></span>|
+|<span data-ttu-id="33690-135">pendingCount</span><span class="sxs-lookup"><span data-stu-id="33690-135">pendingCount</span></span>|<span data-ttu-id="33690-136">Int32</span><span class="sxs-lookup"><span data-stu-id="33690-136">Int32</span></span>|<span data-ttu-id="33690-137">Número de usuários pendentes</span><span class="sxs-lookup"><span data-stu-id="33690-137">Number of pending Users</span></span>|
+|<span data-ttu-id="33690-138">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="33690-138">notApplicableCount</span></span>|<span data-ttu-id="33690-139">Int32</span><span class="sxs-lookup"><span data-stu-id="33690-139">Int32</span></span>|<span data-ttu-id="33690-140">Número de usuários não aplicáveis</span><span class="sxs-lookup"><span data-stu-id="33690-140">Number of not applicable users</span></span>|
+|<span data-ttu-id="33690-141">successCount</span><span class="sxs-lookup"><span data-stu-id="33690-141">successCount</span></span>|<span data-ttu-id="33690-142">Int32</span><span class="sxs-lookup"><span data-stu-id="33690-142">Int32</span></span>|<span data-ttu-id="33690-143">Número de usuários bem-sucedidos</span><span class="sxs-lookup"><span data-stu-id="33690-143">Number of succeeded Users</span></span>|
+|<span data-ttu-id="33690-144">errorCount</span><span class="sxs-lookup"><span data-stu-id="33690-144">errorCount</span></span>|<span data-ttu-id="33690-145">Int32</span><span class="sxs-lookup"><span data-stu-id="33690-145">Int32</span></span>|<span data-ttu-id="33690-146">Número de usuários com erro</span><span class="sxs-lookup"><span data-stu-id="33690-146">Number of error Users</span></span>|
+|<span data-ttu-id="33690-147">failedCount</span><span class="sxs-lookup"><span data-stu-id="33690-147">failedCount</span></span>|<span data-ttu-id="33690-148">Int32</span><span class="sxs-lookup"><span data-stu-id="33690-148">Int32</span></span>|<span data-ttu-id="33690-149">Número de usuários com falhas</span><span class="sxs-lookup"><span data-stu-id="33690-149">Number of failed Users</span></span>|
+|<span data-ttu-id="33690-150">conflictCount</span><span class="sxs-lookup"><span data-stu-id="33690-150">conflictCount</span></span>|<span data-ttu-id="33690-151">Int32</span><span class="sxs-lookup"><span data-stu-id="33690-151">Int32</span></span>|<span data-ttu-id="33690-152">Número de usuários em conflito</span><span class="sxs-lookup"><span data-stu-id="33690-152">Number of users in conflict</span></span>|
+|<span data-ttu-id="33690-153">lastUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="33690-153">lastUpdateDateTime</span></span>|<span data-ttu-id="33690-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="33690-154">DateTimeOffset</span></span>|<span data-ttu-id="33690-155">Hora da última atualização</span><span class="sxs-lookup"><span data-stu-id="33690-155">Last update time</span></span>|
+|<span data-ttu-id="33690-156">configurationVersion</span><span class="sxs-lookup"><span data-stu-id="33690-156">configurationVersion</span></span>|<span data-ttu-id="33690-157">Int32</span><span class="sxs-lookup"><span data-stu-id="33690-157">Int32</span></span>|<span data-ttu-id="33690-158">Versão da política para essa visão geral</span><span class="sxs-lookup"><span data-stu-id="33690-158">Version of the policy for that overview</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="86ae1-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="86ae1-159">Response</span></span>
-<span data-ttu-id="86ae1-160">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="86ae1-160">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="33690-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="33690-159">Response</span></span>
+<span data-ttu-id="33690-160">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="33690-160">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="86ae1-161">Exemplo</span><span class="sxs-lookup"><span data-stu-id="86ae1-161">Example</span></span>
+## <a name="example"></a><span data-ttu-id="33690-161">Exemplo</span><span class="sxs-lookup"><span data-stu-id="33690-161">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="86ae1-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="86ae1-162">Request</span></span>
-<span data-ttu-id="86ae1-163">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="86ae1-163">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="33690-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="33690-162">Request</span></span>
+<span data-ttu-id="33690-163">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="33690-163">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusOverview
 Content-type: application/json
@@ -96,8 +95,8 @@ Content-length: 306
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="86ae1-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="86ae1-164">Response</span></span>
-<span data-ttu-id="86ae1-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="86ae1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="33690-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="33690-164">Response</span></span>
+<span data-ttu-id="33690-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="33690-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -116,6 +115,8 @@ Content-Length: 355
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

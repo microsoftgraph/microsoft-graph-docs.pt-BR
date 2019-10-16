@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea0fa4ce7fbd2ff35fe5ec877b63aa4802f7b5fe
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c30d8c2d9d7a3d27e12d3ded1f6f8cc3a7a65454
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37168135"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534026"
 ---
-# <a name="create-deviceconfigurationuserstatus"></a><span data-ttu-id="a0210-103">Criar deviceConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="a0210-103">Create deviceConfigurationUserStatus</span></span>
+# <a name="create-deviceconfigurationuserstatus"></a><span data-ttu-id="bee30-103">Criar deviceConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="bee30-103">Create deviceConfigurationUserStatus</span></span>
 
-> <span data-ttu-id="a0210-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="a0210-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="bee30-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="bee30-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a0210-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a0210-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bee30-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="bee30-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a0210-106">Criar um novo objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="a0210-106">Create a new [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
+<span data-ttu-id="bee30-106">Criar um novo objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="bee30-106">Create a new [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a0210-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="a0210-107">Prerequisites</span></span>
-<span data-ttu-id="a0210-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0210-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="bee30-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="bee30-107">Prerequisites</span></span>
+<span data-ttu-id="bee30-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bee30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a0210-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a0210-110">Permission type</span></span>|<span data-ttu-id="a0210-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="a0210-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="bee30-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bee30-110">Permission type</span></span>|<span data-ttu-id="bee30-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="bee30-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0210-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a0210-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a0210-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0210-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="a0210-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a0210-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a0210-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a0210-115">Not supported.</span></span>|
-|<span data-ttu-id="a0210-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a0210-116">Application</span></span>|<span data-ttu-id="a0210-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0210-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="bee30-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bee30-112">Delegated (work or school account)</span></span>|<span data-ttu-id="bee30-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bee30-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="bee30-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bee30-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bee30-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bee30-115">Not supported.</span></span>|
+|<span data-ttu-id="bee30-116">Application</span><span class="sxs-lookup"><span data-stu-id="bee30-116">Application</span></span>|<span data-ttu-id="bee30-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bee30-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a0210-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a0210-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bee30-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bee30-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,41 +40,40 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertific
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/userStatuses
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/userStatuses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a0210-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a0210-119">Request headers</span></span>
-|<span data-ttu-id="a0210-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a0210-120">Header</span></span>|<span data-ttu-id="a0210-121">Valor</span><span class="sxs-lookup"><span data-stu-id="a0210-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bee30-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bee30-119">Request headers</span></span>
+|<span data-ttu-id="bee30-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="bee30-120">Header</span></span>|<span data-ttu-id="bee30-121">Valor</span><span class="sxs-lookup"><span data-stu-id="bee30-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a0210-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="a0210-122">Authorization</span></span>|<span data-ttu-id="a0210-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a0210-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a0210-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="a0210-124">Accept</span></span>|<span data-ttu-id="a0210-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a0210-125">application/json</span></span>|
+|<span data-ttu-id="bee30-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="bee30-122">Authorization</span></span>|<span data-ttu-id="bee30-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bee30-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="bee30-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="bee30-124">Accept</span></span>|<span data-ttu-id="bee30-125">application/json</span><span class="sxs-lookup"><span data-stu-id="bee30-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a0210-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a0210-126">Request body</span></span>
-<span data-ttu-id="a0210-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="a0210-127">In the request body, supply a JSON representation for the deviceConfigurationUserStatus object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bee30-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bee30-126">Request body</span></span>
+<span data-ttu-id="bee30-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="bee30-127">In the request body, supply a JSON representation for the deviceConfigurationUserStatus object.</span></span>
 
-<span data-ttu-id="a0210-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="a0210-128">The following table shows the properties that are required when you create the deviceConfigurationUserStatus.</span></span>
+<span data-ttu-id="bee30-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="bee30-128">The following table shows the properties that are required when you create the deviceConfigurationUserStatus.</span></span>
 
-|<span data-ttu-id="a0210-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a0210-129">Property</span></span>|<span data-ttu-id="a0210-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="a0210-130">Type</span></span>|<span data-ttu-id="a0210-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="a0210-131">Description</span></span>|
+|<span data-ttu-id="bee30-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bee30-129">Property</span></span>|<span data-ttu-id="bee30-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="bee30-130">Type</span></span>|<span data-ttu-id="bee30-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="bee30-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a0210-132">id</span><span class="sxs-lookup"><span data-stu-id="a0210-132">id</span></span>|<span data-ttu-id="a0210-133">String</span><span class="sxs-lookup"><span data-stu-id="a0210-133">String</span></span>|<span data-ttu-id="a0210-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="a0210-134">Key of the entity.</span></span>|
-|<span data-ttu-id="a0210-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="a0210-135">userDisplayName</span></span>|<span data-ttu-id="a0210-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a0210-136">String</span></span>|<span data-ttu-id="a0210-137">Nome de usuário de DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="a0210-137">User name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="a0210-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="a0210-138">devicesCount</span></span>|<span data-ttu-id="a0210-139">Int32</span><span class="sxs-lookup"><span data-stu-id="a0210-139">Int32</span></span>|<span data-ttu-id="a0210-140">Contagem de dispositivos para esse usuário.</span><span class="sxs-lookup"><span data-stu-id="a0210-140">Devices count for that user.</span></span>|
-|<span data-ttu-id="a0210-141">status</span><span class="sxs-lookup"><span data-stu-id="a0210-141">status</span></span>|[<span data-ttu-id="a0210-142">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="a0210-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="a0210-143">Status de conformidade do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="a0210-143">Compliance status of the policy report.</span></span> <span data-ttu-id="a0210-144">Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="a0210-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="a0210-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="a0210-145">lastReportedDateTime</span></span>|<span data-ttu-id="a0210-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a0210-146">DateTimeOffset</span></span>|<span data-ttu-id="a0210-147">Data e hora da última modificação do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="a0210-147">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="a0210-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="a0210-148">userPrincipalName</span></span>|<span data-ttu-id="a0210-149">String</span><span class="sxs-lookup"><span data-stu-id="a0210-149">String</span></span>|<span data-ttu-id="a0210-150">UserPrincipalName.</span><span class="sxs-lookup"><span data-stu-id="a0210-150">UserPrincipalName.</span></span>|
+|<span data-ttu-id="bee30-132">id</span><span class="sxs-lookup"><span data-stu-id="bee30-132">id</span></span>|<span data-ttu-id="bee30-133">String</span><span class="sxs-lookup"><span data-stu-id="bee30-133">String</span></span>|<span data-ttu-id="bee30-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="bee30-134">Key of the entity.</span></span>|
+|<span data-ttu-id="bee30-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="bee30-135">userDisplayName</span></span>|<span data-ttu-id="bee30-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bee30-136">String</span></span>|<span data-ttu-id="bee30-137">Nome de usuário de DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="bee30-137">User name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="bee30-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="bee30-138">devicesCount</span></span>|<span data-ttu-id="bee30-139">Int32</span><span class="sxs-lookup"><span data-stu-id="bee30-139">Int32</span></span>|<span data-ttu-id="bee30-140">Contagem de dispositivos para esse usuário.</span><span class="sxs-lookup"><span data-stu-id="bee30-140">Devices count for that user.</span></span>|
+|<span data-ttu-id="bee30-141">status</span><span class="sxs-lookup"><span data-stu-id="bee30-141">status</span></span>|[<span data-ttu-id="bee30-142">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="bee30-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="bee30-143">Status de conformidade do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="bee30-143">Compliance status of the policy report.</span></span> <span data-ttu-id="bee30-144">Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="bee30-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="bee30-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="bee30-145">lastReportedDateTime</span></span>|<span data-ttu-id="bee30-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bee30-146">DateTimeOffset</span></span>|<span data-ttu-id="bee30-147">Data e hora da última modificação do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="bee30-147">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="bee30-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="bee30-148">userPrincipalName</span></span>|<span data-ttu-id="bee30-149">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bee30-149">String</span></span>|<span data-ttu-id="bee30-150">UserPrincipalName.</span><span class="sxs-lookup"><span data-stu-id="bee30-150">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a0210-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0210-151">Response</span></span>
-<span data-ttu-id="a0210-152">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a0210-152">If successful, this method returns a `201 Created` response code and a [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bee30-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="bee30-151">Response</span></span>
+<span data-ttu-id="bee30-152">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bee30-152">If successful, this method returns a `201 Created` response code and a [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0210-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a0210-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bee30-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bee30-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a0210-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a0210-154">Request</span></span>
-<span data-ttu-id="a0210-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a0210-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="bee30-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bee30-154">Request</span></span>
+<span data-ttu-id="bee30-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bee30-155">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses
 Content-type: application/json
@@ -90,8 +89,8 @@ Content-length: 290
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a0210-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0210-156">Response</span></span>
-<span data-ttu-id="a0210-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a0210-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="bee30-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="bee30-156">Response</span></span>
+<span data-ttu-id="bee30-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bee30-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -107,6 +106,8 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 
