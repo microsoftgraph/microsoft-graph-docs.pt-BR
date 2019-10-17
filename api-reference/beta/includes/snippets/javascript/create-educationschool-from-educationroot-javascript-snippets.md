@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a0266ae37d2563098e34436c0eef2908a0d84e63
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 992306a5fc19c67d40c8d93594f3649e577f82ca
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636096"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37554891"
 ---
 ```javascript
 
@@ -34,7 +34,6 @@ const educationSchool = {
     street: "12345 Main St."
   },
   externalId: "10002",
-  fax: "+1 (253) 555-0101",
   phone: "+1 (253) 555-0102",
 };
 
