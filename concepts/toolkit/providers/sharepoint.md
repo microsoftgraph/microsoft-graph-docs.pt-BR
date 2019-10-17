@@ -3,12 +3,12 @@ title: Provedor do SharePoint
 description: Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 684214e1490238564065c2ed53588b9700d17dc3
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: e2088c41ce8f0cc3e55d269fc5f55c3c95633fbd
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242936"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553898"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 
@@ -23,7 +23,7 @@ Inicialize o provedor dentro do `onInit()` método de sua Web Part.
 ```ts
 
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt';
+import {Providers, SharePointProvider} from '@microsoft/mgt/dist/commonjs';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {

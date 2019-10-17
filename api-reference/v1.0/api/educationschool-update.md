@@ -1,67 +1,76 @@
 ---
-title: Atualizar as propriedades educationschool
+title: Atualizar propriedades de educationSchool
 description: Atualize as propriedades de um objeto de escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ae3bca11b72f7beb414096b793e9fe490156f434
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f6dfcd0d9186d3e02a581742fe4cbaead3b9e91d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331194"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553919"
 ---
-# <a name="update-educationschool-properties"></a>Atualizar as propriedades educationschool
+# <a name="update-educationschool-properties"></a>Atualizar propriedades de educationSchool
 
 Atualize as propriedades de um objeto de escola.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/schools/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+
+| Cabeçalho        | Valor                     |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|displayName| String| Nome de exibição da escola| 
-|descrição| String | Descrição da escola| 
-|principalEmail| String| Endereço de email da entidade de segurança|
-|principalName| String | Nome da entidade de segurança|
-|externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
-|highestGrade|String| Ensino de nível mais alto. |
-|lowestGrade|String| Ensino de nível mais baixo. |
-|schoolNumber|String| Número da escola.|
-|externalId|String| ID da escola no sistema de sincronização. |
-|phone|String| Número de telefone da escola. |
-|fax|Cadeia de caracteres| Número de fax da escola. |
-|address|[physicalAddress](../resources/physicaladdress.md)| Endereço da escola.|
-|createdBy|[identitySet](../resources/identityset.md)|Entidade que criou a escola.|
+| Propriedade            | Tipo                                               | Descrição                        |
+| :------------------ | :------------------------------------------------- | :--------------------------------- |
+| displayName         | String                                             | Nome de exibição da escola         |
+| description         | String                                             | Descrição da escola          |
+| principalEmail      | Cadeia de caracteres                                             | Endereço de email da entidade de segurança     |
+| principalName       | Cadeia de caracteres                                             | Nome da entidade de segurança              |
+| externalPrincipalId | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização. |
+| highestGrade        | Cadeia de caracteres                                             | Ensino de nível mais alto.              |
+| lowestGrade         | Cadeia de caracteres                                             | Ensino de nível mais baixo.               |
+| schoolNumber        | Cadeia de caracteres                                             | Número da escola.                     |
+| externalId          | Cadeia de caracteres                                             | ID da escola no sistema de sincronização.    |
+| phone               | Cadeia de caracteres                                             | Número de telefone da escola.            |
+| address             | [physicalAddress](../resources/physicaladdress.md) | Endereço da escola.             |
+| createdBy           | [identitySet](../resources/identityset.md)         | Entidade que criou a escola.     |
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationSchool](../resources/educationschool.md) atualizado no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationschool"
@@ -76,26 +85,32 @@ Content-length: 292
   "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
+
+Este é um exemplo de resposta.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
@@ -129,7 +144,6 @@ Content-length: 292
     "street": "12345 Main St."
   },
   "externalId": "10002",
-  "fax": "+1 (253) 555-0101",
   "phone": "+1 (253) 555-0102"
 }
 ```

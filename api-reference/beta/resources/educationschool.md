@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b5e0807ae73110a921c70beef6a98589db41269
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e63fa37dacea7fee6d4378a2a6040a5cf71f3790
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972548"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553933"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -43,18 +43,17 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 | id                  | Cadeia de caracteres                                | GUID desta escola.                               |
 | address             | [physicalAddress](physicaladdress.md) | Endereço da escola.                             |
 | createdBy           | [identitySet](identityset.md)         | Entidade que criou a escola.                     |
-| descrição         | String                                | Descrição da escola.                         |
+| description         | String                                | Descrição da escola.                         |
 | displayName         | String                                | Nome de exibição da escola.                        |
 | externalId          | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                    |
-| externalPrincipalId | String                                | ID da entidade de segurança no sistema de sincronização.                 |
+| externalPrincipalId | Cadeia de caracteres                                | ID da entidade de segurança no sistema de sincronização.                 |
 | externalSource      | cadeia de caracteres                                | Somente Leitura. Os valores possíveis são: `sis` ou `manual`. |
-| fax                 | Cadeia de caracteres                                | Número de fax da escola.                              |
-| highestGrade        | String                                | Ensino de nível mais alto.                              |
-| lowestGrade         | String                                | Ensino de nível mais baixo.                               |
-| phone               | String                                | Número de telefone da escola.                            |
-| principalEmail      | String                                | Endereço de email da entidade de segurança.                    |
-| principalName       | String                                | Nome da entidade de segurança.                             |
-| schoolNumber        | String                                | Número da escola.                                     |
+| highestGrade        | Cadeia de caracteres                                | Ensino de nível mais alto.                              |
+| lowestGrade         | Cadeia de caracteres                                | Ensino de nível mais baixo.                               |
+| phone               | Cadeia de caracteres                                | Número de telefone da escola.                            |
+| principalEmail      | Cadeia de caracteres                                | Endereço de email da entidade de segurança.                    |
+| principalName       | Cadeia de caracteres                                | Nome da entidade de segurança.                             |
+| schoolNumber        | Cadeia de caracteres                                | Número da escola.                                     |
 
 ## <a name="relationships"></a>Relações
 
@@ -86,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "externalId": "String",
   "externalPrincipalId": "String",
   "externalSource": "string",
-  "fax": "String",
   "highestGrade": "String",
   "id": "String (identifier)",
   "lowestGrade": "String",
