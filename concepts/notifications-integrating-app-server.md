@@ -26,7 +26,7 @@ As notificações do Microsoft Graph exige que o serviço de aplicativo use o fl
 
 4.  O serviço de identidade retorna um token com base em OBO e um token de atualização. O serviço de aplicativo pode usar o token de acesso para postar notificações ao usuário.
 
-Para saber mais sobre o fluxo OAuth 2.0 OBO, consulte [Chamadas de serviço a serviço que usam a identidade do usuário delegado no fluxo On-Behalf-Of](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). Para saber mais sobre como esse fluxo funciona com as notificações do Microsoft Graph, confira o [exemplo de serviço do aplicativo](https://aka.ms/gnsample-appservice).
+Para saber mais sobre o fluxo OAuth 2.0 OBO, consulte [Chamadas de serviço a serviço que usam a identidade do usuário delegado no fluxo On-Behalf-Of](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). Para saber mais sobre como esse fluxo funciona com as notificações do Microsoft Graph, confira o [exemplo de serviço do aplicativo](https://aka.ms/gnsample-appservice).
 
 > [!NOTE]
 > As notificações do Microsoft Graph usa atualmente o fluxo de autenticação OBO com planos futuros para simplificar essa autenticação e acabar com a necessidade de manter tokens de acesso e tokens de atualização.

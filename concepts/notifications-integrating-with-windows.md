@@ -34,7 +34,7 @@ O diagrama mostra as próximas etapas:
 1. Lógica do aplicativo. Essa etapa captura o que aciona a notificação para ser publicada para o usuário. Isso é lógica específica do aplicativo e pode ser uma atualização de dados ou evento sobre algo diferente do Microsoft Graph, como um novo evento do calendário ou atribuição de tarefas, ou o que o serviço de aplicativo quer notificar o usuário.
 2. O servidor do aplicativo publica uma notificação para o usuário alvo pela API de notificações do Microsoft Graph. Para saber mais, consulte [integração com o lado do servidor](notifications-integrating-app-server.md).
 3. Ao receber a solicitação Web com nova notificação, as notificações do Microsoft Graph mantêm o conteúdo da notificação em segurança na nuvem para esse aplicativo e esse usuário.
-4. Para cada instância do cliente do aplicativo inscrita para receber notificações para esse usuário, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, o aplicativo é um aplicativo UWP no Windows, e ele usa [notificação bruta WNS](https://docs.microsoft.com/pt-BR/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) enviar o sinal. 
+4. Para cada instância do cliente do aplicativo inscrita para receber notificações para esse usuário, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, o aplicativo é um aplicativo UWP no Windows, e ele usa [notificação bruta WNS](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) enviar o sinal. 
 5. Depois que o aplicativo for sinalizado pelas notificações por push de entrada, ele pede ao SDK para buscar as alterações no repositório de notificações do usuário. 
 6. O SDK estabelece uma conexão segura e compatível com o repositório de notificações do usuário no Microsoft Graph.
 7. O SDK recebe as alterações de dados – nesse caso, o novo conteúdo de notificação. 
@@ -57,7 +57,7 @@ O diagrama mostra as próximas etapas:
 2. Chamada do aplicativo para o SDK do cliente para atualizar ou excluir uma notificação. Atualmente, expomos duas propriedades sobre alterações de estado – **userActionState** e **readState** – mas o aplicativo pode definir esses estados e quando eles precisam ser atualizados. Por exemplo, quando um usuário descartar a notificação pop-up, você pode atualizar o **userActionState** para Descartado. Quando um usuário clica na notificação pop-up e inicia o aplicativo para consumir o conteúdo correspondente do aplicativo, você pode atualizar o **userActionState** para ativado e atualizar o **readState** para Lido. 
 3. Depois que a API correspondente é chamada para atualizar ou excluir uma notificação, o SDK irá chamar o repositório na nuvem de notificação de usuário para dispersar essa alteração para as outras instâncias de cliente do aplicativo com o mesmo usuário conectado. 
 4. Ao receber a solicitação de atualização/exclusão de um cliente, as notificações do Microsoft Graph irão atualizar o repositório de notificação e identificar as outras instâncias de cliente do aplicativo inscritas para essa alteração.
-5. Para cada inscrição do cliente do aplicativo, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, esse é um aplicativo UWP no Windows, e ele usa [notificação bruta WNS](https://docs.microsoft.com/pt-BR/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) para enviar o sinal. 
+5. Para cada inscrição do cliente do aplicativo, as notificações do Microsoft Graph envia um sinal para notificar cliente do aplicativo, por meio do serviço de envio por push nativo fornecido pelo sistema operacional. Nesse caso, esse é um aplicativo UWP no Windows, e ele usa [notificação bruta WNS](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) para enviar o sinal. 
 6. Depois que o aplicativo for sinalizado pelas notificações por push de entrada, ele pede ao SDK para buscar as alterações no repositório de notificações do usuário. 
 7. O SDK estabelece uma conexão segura e compatível com o repositório de notificações do usuário no Microsoft Graph.
 8. O SDK recebe as alterações de dados – nesse caso, as alterações são atualizações de notificação de estado ou exclusões de notificação. 
@@ -88,8 +88,8 @@ Após a conclusão da instalação, o pacote é exibido abaixo de **Referências
 
 Para saber mais sobre a incluisão e o consumo de pacotes do NuGet de seu aplicativo UWP, confira:
 
-* [Usar os pacotes do nuget.org](https://docs.microsoft.com/pt-BR/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* [Início rápido: Instalar e usar um pacote no Visual Studio](https://docs.microsoft.com/pt-BR/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [Usar os pacotes do nuget.org](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+* [Início rápido: Instalar e usar um pacote no Visual Studio](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>Inicializando as Plataformas de Dispositivo Conectado
@@ -111,7 +111,7 @@ platform.Start();
 
 Todas as chamadas de Web que o SDK realiza, incluindo a recuperação do conteúdo de uma nova notificação de entrada, atualização de notificação de estado e muito mais, são leituras de ou escrevendo para os dados do usuário e, portanto, sempre exigem um token de acesso válido. O SDK requer que você trate os seguintes eventos – chamados quando um token de acesso for solicitado ou invalidado – para garantir que, depois da plataforma inicializar, o token de acesso do usuário seja tratado corretamente. 
 
-#### <a name="accountmanageraccesstokenrequestedasync"></a>AccountManager_AccessTokenRequestedAsync
+#### <a name="accountmanager_accesstokenrequestedasync"></a>AccountManager_AccessTokenRequestedAsync
 
 Para uma implementação completa, confira o [exemplo de aplicativo Windows](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs). 
 
@@ -135,7 +135,7 @@ private async void AccountManager_AccessTokenRequestedAsync(ConnectedDevicesAcco
 }
 ```
 
-#### <a name="accountmanageraccesstokeninvalidated"></a>AccountManager_AccessTokenInvalidated
+#### <a name="accountmanager_accesstokeninvalidated"></a>AccountManager_AccessTokenInvalidated
 
 Para uma implementação completa, confira o [exemplo de aplicativo Windows](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs). 
 
@@ -152,7 +152,7 @@ As notificações do Microsoft Graph usa o WNS, a plataforma de push nativa no W
 
 Por esse motivo, é necessário um canal WNS válido que permite que as notificações brutas por push para ter êxito. O seguinte retorno de chamada de evento trata da validade do canal WNS por push. 
 
-#### <a name="notificationregistrationmanagernotificationregistrationstatechanged"></a>NotificationRegistrationManager_NotificationRegistrationStateChanged
+#### <a name="notificationregistrationmanager_notificationregistrationstatechanged"></a>NotificationRegistrationManager_NotificationRegistrationStateChanged
 
 Para uma implementação completa, confira o [exemplo de aplicativo Windows](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs). 
 
@@ -277,6 +277,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência da API](https://docs.microsoft.com/pt-BR/windows/project-rome/notifications/api-reference-for-windows/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
+- [Referência da API](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-windows/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
 - [Exemplo do lado do cliente](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) para aplicativos UWP do Windows.
 - [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações. 
