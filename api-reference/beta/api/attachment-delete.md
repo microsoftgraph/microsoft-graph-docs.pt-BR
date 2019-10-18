@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: f3e4a06e86ef5da90851a84055e3162ae475129f
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 14d012fbd33ce0ae29c700821822974fc0f5b316
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622555"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37581221"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -69,8 +69,8 @@ Anexos de um [event](../resources/event.md) em um [calendar](../resources/calend
 ```http
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-
-Attachments for a [message](../resources/message.md) in a user's mailbox.
+```
+Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -146,7 +146,7 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
