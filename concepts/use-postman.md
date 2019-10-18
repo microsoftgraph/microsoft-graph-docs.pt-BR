@@ -16,7 +16,7 @@ Você pode usar a coleção do Microsoft Graph Postman para começar a usar as A
 
 ![Imagem do Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
-Este artigo explica como começar a usar o Postman e o Microsoft Graph. Você também pode explorar as APIs do Microsoft Graph diretamente em seu navegador da Web usando o [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer).
+Este artigo explica como começar a usar o Postman e o Microsoft Graph. Você também pode explorar as APIs do Microsoft Graph diretamente em seu navegador da Web usando o [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 ## <a name="accessing-the-collection"></a>Acessando a coleção
 Você pode acessar a coleção no Postman de duas maneiras: adquirindo-o ou contribuindo para ele. Primeiro, o [Postman](https://www.getpostman.com/) precisará estar em execução no seu computador.

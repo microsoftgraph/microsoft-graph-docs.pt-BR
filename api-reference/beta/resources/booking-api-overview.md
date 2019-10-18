@@ -29,7 +29,7 @@ Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings e
 
 Siga as etapas a seguir antes de agendar os compromissos do cliente para uma empresa pela primeira vez. Certifique-se de fornecer os [tokens de acesso](/graph/auth-overview) apropriados para as operações correspondentes.
 
-1. Garanta que a empresa tenha um assinatura do [Office 365 Business Premium](https://products.office.com/pt-BR/business/office-365-business-premium).
+1. Garanta que a empresa tenha um assinatura do [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium).
 2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. No mínimo, você deve especificar um nome para a nova empresa que os clientes verão:
 <!-- { "blockType": "ignored" } -->
 ```http

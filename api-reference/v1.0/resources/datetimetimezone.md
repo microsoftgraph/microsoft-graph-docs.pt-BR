@@ -22,7 +22,7 @@ Descreve a data, a hora e o fuso horário de um ponto no tempo.
 |dateTime|Cadeia de caracteres|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`; por exemplo, `2017-08-29T04:00:00.0000000`).|
 |timeZone|Cadeia de caracteres|Representa um fuso horário, por exemplo, "Hora Padrão do Pacífico". Veja a seguir os valores mais possíveis.|
 
-Em geral, a propriedade**timeZone** _pode_ ser definida como qualquer um dos [fusos horários com suporte no Windows](https://docs.microsoft.com/pt-BR/windows-hardware/manufacture/desktop/default-time-zones), bem como [os fusos horários adicionais com suporte da API do calendário](#additional-time-zones). 
+Em geral, a propriedade**timeZone** _pode_ ser definida como qualquer um dos [fusos horários com suporte no Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones), bem como [os fusos horários adicionais com suporte da API do calendário](#additional-time-zones). 
 
 Ao usar **dateTimeTimeZone** em conjunto com um método (como por exemplo, [criar](../api/user-post-events.md) ou [atualizar](../api/event-update.md) um evento), anote os fusos horários que têm suporte, o que podem ser um subconjunto menor.
 

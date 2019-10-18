@@ -261,7 +261,7 @@ Para saber mais sobre as propriedades de email pesquisáveis, KQL como a sintaxe
 
 - [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/pt-BR//library/dn774955(v=exchg.160).aspx)
+- [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Usando $search em conjuntos de pessoas
 

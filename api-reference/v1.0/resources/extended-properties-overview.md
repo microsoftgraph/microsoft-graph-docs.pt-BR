@@ -50,7 +50,7 @@ Você pode especificar o **id** de uma propriedade estendida em um dos três for
 
 - Como uma propriedade nomeada, identificada pelo tipo de propriedade estendida, namespace e nome de uma cadeia de caracteres.
 - Como uma propriedade nomeada, identificada pelo tipo de propriedade estendida, namespace e um identificador numérico.
-- Em um formato de proptag, identificado pelo tipo de propriedade estendida e uma [marca de propriedade MAPI](https://docs.microsoft.com/pt-BR/office/client-developer/outlook/mapi/mapi-property-tags).
+- Em um formato de proptag, identificado pelo tipo de propriedade estendida e uma [marca de propriedade MAPI](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags).
 
 As próximas 2 tabelas descrevem esses formatos aplicados a propriedades estendidas única e com vários valores. {_tipo_} representa o tipo de valor ou valores da propriedade estendida. Os exemplos mostram a cadeia de caracteres, inteiro e matrizes desses tipos.
 
@@ -71,7 +71,7 @@ As próximas 2 tabelas descrevem esses formatos aplicados a propriedades estendi
 | "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | Identifica uma propriedade predefinida por sua marca de propriedade. |
 
 
-Use qualquer um dos formatos de propriedade nomeada para definir uma propriedade estendida de valor único ou vários valores como uma propriedade personalizada. Entre os dois formatos, o primeiro que leva o nome da cadeia de caracteres (**Nome**) é o formato preferencial para facilitar a referência. Propriedades nomeadas tem seus [identificadores de propriedade](https://docs.microsoft.com/pt-BR/office/client-developer/outlook/mapi/mapi-property-identifier-overview) no intervalo 0x8000-0xfffe.
+Use qualquer um dos formatos de propriedade nomeada para definir uma propriedade estendida de valor único ou vários valores como uma propriedade personalizada. Entre os dois formatos, o primeiro que leva o nome da cadeia de caracteres (**Nome**) é o formato preferencial para facilitar a referência. Propriedades nomeadas tem seus [identificadores de propriedade](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview) no intervalo 0x8000-0xfffe.
 
 Use o formato proptag para acessar propriedades predefinidas por MAPI ou por um cliente ou servidor e que já não tenha sido exibida no Microsoft Graph. Essas propriedades tem identificadores de propriedade no intervalo 0x0001-0x7fff. Não tente definir uma propriedade personalizada usando o formato proptag. 
 

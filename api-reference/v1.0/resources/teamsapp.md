@@ -33,9 +33,9 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A ID do aplicativo gerada no catálogo de aplicativos (diferente da ID fornecida pelo desenvolvedor em [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/apps/apps-package). |
-| externalId          | cadeia de caracteres   | A ID do catálogo fornecido pelo desenvolvedor do aplicativo do [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/apps/apps-package). |
-| displayName                | string   | O nome do catálogo de aplicativos fornecido pelo desenvolvedor do aplicativo no [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/apps/apps-package). |
+| id                  | string   | A ID do aplicativo gerada no catálogo de aplicativos (diferente da ID fornecida pelo desenvolvedor em [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| externalId          | cadeia de caracteres   | A ID do catálogo fornecido pelo desenvolvedor do aplicativo do [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| displayName                | string   | O nome do catálogo de aplicativos fornecido pelo desenvolvedor do aplicativo no [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
 | distributionMethod  | teamsAppDistributionMethod     | O método de distribuição para o aplicativo. |
 
 ### <a name="teamsappdistributionmethod-values"></a>valores teamsAppDistributionMethod

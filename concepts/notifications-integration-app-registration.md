@@ -22,7 +22,7 @@ Para saber como registrar aplicativos, confira [Registrar um aplicativo na Micro
 
 
 > [!NOTE]
-> Se ainda não tiver uma conta da Microsoft e quiser usar uma, acesse a página  [conta da Microsoft](https://account.microsoft.com/account). Se estiver desenvolvendo um aplicativo que usa o Azure AD versão 1.0 como uma estrutura de autenticação e identidade para contas corporativas ou de estudante, confira [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). Para saber mais sobre ou se estiver usando a nova Microsoft Identity Platform convergida (versão 2.0), confira [comparação do ponto de extremidade da Microsoft Identity Platform e o ponto de extremidade do Azure AD versão 1.0](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/azure-ad-endpoint-comparison).
+> Se ainda não tiver uma conta da Microsoft e quiser usar uma, acesse a página  [conta da Microsoft](https://account.microsoft.com/account). Se estiver desenvolvendo um aplicativo que usa o Azure AD versão 1.0 como uma estrutura de autenticação e identidade para contas corporativas ou de estudante, confira [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). Para saber mais sobre ou se estiver usando a nova Microsoft Identity Platform convergida (versão 2.0), confira [comparação do ponto de extremidade da Microsoft Identity Platform e o ponto de extremidade do Azure AD versão 1.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison).
 
 Ao registrar seu aplicativo, mantenha sempre à mão a ID do aplicativo/ID do cliente. Essa ID será usada posteriormente ao registrar seu aplicativo para experiências entre dispositivos no [Microsoft Partner Center](https://partner.microsoft.com/).
 
@@ -59,6 +59,6 @@ Adicione as seguintes permissões:
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre [permissões e consentimento](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/v2-permissions-and-consent) ou consulte a [referência de permissões](https://docs.microsoft.com/pt-BR/graph/permissions-reference) do Microsoft Graph.
+Saiba mais sobre [permissões e consentimento](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent) ou consulte a [referência de permissões](https://docs.microsoft.com/en-us/graph/permissions-reference) do Microsoft Graph.
 
 Após registrar seu aplicativo, acesse o [Partner Center](https://partner.microsoft.com/) para configurar o aplicativo para experiências entre dispositivos e para direcionar suas plataformas de aplicativo correspondentes para notificações enviadas pelo Microsoft Graph. Para saber mais, confira a [Integração à experiência entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md). 

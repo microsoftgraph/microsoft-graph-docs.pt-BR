@@ -16,7 +16,7 @@ ms.locfileid: "36426395"
 
 Uma mensagem em uma mailFolder.
 
-O número total máximo de destinatários incluídos nas propriedades **toRecipients**, **ccRecipients** e **bccRecipients** para uma única mensagem de email enviada de uma caixa de correio do Exchange A é de 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+O número total máximo de destinatários incluídos nas propriedades **toRecipients**, **ccRecipients** e **bccRecipients** para uma única mensagem de email enviada de uma caixa de correio do Exchange A é de 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
@@ -85,7 +85,7 @@ Esse recurso permite:
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/pt-BR/exchange/collaboration/shared-mailboxes/shared-mailboxes) ou ao enviar uma mensagem como um [delegado](https://support.office.com/pt-BR/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
+|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes) ou ao enviar uma mensagem como um [delegado](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
