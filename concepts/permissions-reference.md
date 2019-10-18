@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: fdcab22f936862531a30de718a1574d95bd619a4
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: b8850bf50a2d5fd6662d4835530362d48828fafd
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053898"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553891"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -466,28 +466,31 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|EduAdministration.Read | Ler configurações do aplicativo educacional |  Permite que o aplicativo leia as configurações do aplicativo de educação em nome do usuário. | Sim | Não |
-|EduAdministration.ReadWrite | Gerenciar as configurações do aplicativo educacional | Permite que o aplicativo gerencie as configurações do aplicativo de educação em nome do usuário. | Sim | Não |
-|EduAssignments.ReadBasic | Ler as tarefas de classe sem notas dos usuários | Permite ao aplicativo ler as tarefas sem notas em nome do usuário | Sim | Não |
-|EduAssignments.ReadWriteBasic | Ler e gravar as tarefas de classe sem notas dos usuários | Permite ao aplicativo ler e gravar as tarefas sem notas em nome do usuário | Sim | Não |
-|EduAssignments.Read | Ler o modo de exibição de tarefas de classe e as notas delas dos usuários | Permite ao aplicativo ler as tarefas e as notas delas em nome do usuário| Sim | Não |
-|EduAssignments.ReadWrite | Ler e gravar o modo de exibição de tarefas da classe e as notas delas dos usuários | Permite ao aplicativo ler e gravar as tarefas e as notas delas em nome do usuário|Sim | Não |
-|EduRostering.ReadBasic| Ler um subconjunto limitado do modo de exibição da lista de participação dos usuários | Permite ao aplicativo ler um subconjunto limitado de dados da estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre os usuários a serem lidas em nome do usuário.  | Sim  | Não |
-
+| Permissão                      | Exibir Cadeia de Caracteres                                                   | Descrição                                                                                                                                                                                                                                                                      | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+| :------------------------------ | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------------- |
+| _EduAdministration.Read_        | Ler configurações do aplicativo educacional                                      | Permite que o aplicativo leia as configurações do aplicativo de educação em nome do usuário.                                                                                                                                                                                                             | Sim                    | Não                          |
+| _EduAdministration.ReadWrite_   | Gerenciar as configurações do aplicativo educacional                                    | Permite que o aplicativo gerencie as configurações do aplicativo de educação em nome do usuário.                                                                                                                                                                                                           | Sim                    | Não                          |
+| _EduAssignments.ReadBasic_      | Ler as tarefas de classe sem notas dos usuários                     | Permite ao aplicativo ler as tarefas sem notas em nome do usuário                                                                                                                                                                                                          | Sim                    | Não                          |
+| _EduAssignments.ReadWriteBasic_ | Ler e gravar as tarefas de classe sem notas dos usuários           | Permite ao aplicativo ler e gravar as tarefas sem notas em nome do usuário                                                                                                                                                                                                | Sim                    | Não                          |
+| _EduAssignments.Read_           | Ler o modo de exibição de tarefas de classe e as notas delas dos usuários           | Permite ao aplicativo ler as tarefas e as notas delas em nome do usuário                                                                                                                                                                                                        | Sim                    | Não                          |
+| _EduAssignments.ReadWrite_      | Ler e gravar o modo de exibição de tarefas da classe e as notas delas dos usuários | Permite ao aplicativo ler e gravar as tarefas e as notas delas em nome do usuário                                                                                                                                                                                              | Sim                    | Não                          |
+| _EduRoster.ReadBasic_           | Ler um subconjunto limitado do modo de exibição dos usuários da lista de participantes               | Permite que o aplicativo leia um subconjunto limitado das propriedades da estrutura de escolas e classes da lista de participantes de uma organização e um subconjunto limitado das propriedades dos usuários a serem lidos em nome do usuário. Inclui nome, status, função de formação, endereço de email e foto. | Sim                    | Não                          |
+| _EduRoster. Read_                | Ler modo de exibição dos usuários da lista de participantes                                   | Permite ao aplicativo ler a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre os usuários a serem lidas em nome do usuário.                                                                                                         | Sim                    |
+| _EduRoster.ReadWrite_           | Ler e escrever o modo de exibição dos usuários da lista de participantes                         | Permite ao aplicativo ler e escrever a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre os usuários a serem lidas e escritas em nome do usuário.                                                                                   | Sim                    |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-| Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador |
-| :--------- | :------------- | :---------- | :--------------------- |
-|EduAssignments.ReadBasic.All| Ler as tarefas de classe sem notas|Permite ao aplicativo ler as tarefas sem notas para todos os usuários| Sim |
-|EduAssignments.ReadWriteBasic.All | Ler e gravar as tarefas de classe sem notas | Permite ao aplicativo ler e gravar as tarefas sem notas para todos os usuários| Sim |
-|EduAssignments.Read.All| Ler as tarefas de classe com notas | Permite ao aplicativo ler as tarefas e as notas delas para todos os usuários | Sim |
-|EduAssignments.ReadWrite.All | Ler e gravar as tarefas de classe com notas | Permite ao aplicativo ler e gravar as tarefas e as notas delas para todos os usuários | Sim |
-|EduRostering.ReadBasic.All | Ler um subconjunto limitado da lista de participação da organização. | Permite ao aplicativo ler um subconjunto limitado de estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários. | Sim |
-|EduRostering.Read.All | Ler a lista de participação da organização. | Permite ao aplicativo ler a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas. | Sim |
-|EduRostering.ReadWrite.All| Ler e gravar a lista de participação da organização. | Permite ao aplicativo ler e gravar a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas e gravadas.  | Sim |
+| Permissão                          | Exibir Cadeia de Caracteres                                      | Descrição                                                                                                                                                                   | Consentimento Obrigatório do Administrador |
+| :---------------------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- |
+| _EduAdministration.Read.All_        | Ler configurações do aplicativo ducacional                         | Ler o estado e as configurações de todos os aplicativos educacionais da Microsoft em nome do usuário                                                                                             | Sim                    |
+| _EduAdministration.ReadWrite.All_   | Gerenciar as configurações do aplicativo educacional                       | Gerenciar o estado e as configurações de todos os aplicativos educacionais da Microsoft em nome do usuário                                                                                           | sim                    |
+| _EduAssignments.ReadBasic.All_      | Ler as tarefas de classe sem notas               | Permite ao aplicativo ler as tarefas sem notas para todos os usuários                                                                                                               | Sim                    |
+| _EduAssignments.ReadWriteBasic.All_ | Ler e gravar as tarefas de classe sem notas     | Permite ao aplicativo ler e gravar as tarefas sem notas para todos os usuários                                                                                                     | Sim                    |
+| _EduAssignments.Read.All_           | Ler as tarefas de classe com notas                  | Permite ao aplicativo ler as tarefas e as notas delas para todos os usuários                                                                                                             | Sim                    |
+| _EduAssignments.ReadWrite.All_      | Ler e gravar as tarefas de classe com notas        | Permite ao aplicativo ler e gravar as tarefas e as notas delas para todos os usuários                                                                                                   | Sim                    |
+| _EduRoster.ReadBasic.All_           | Ler um subconjunto limitado da lista de participação da organização. | Permite ao aplicativo ler um subconjunto limitado de estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários.          | Sim                    |
+| _EduRoster.Read.All_                | Ler a lista de participação da organização.                     | Permite ao aplicativo ler a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas.                       | Sim                    |
+| _EduRoster.ReadWrite.All_           | Ler e gravar a lista de participação da organização.           | Permite ao aplicativo ler e gravar a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas e gravadas. | Sim                    |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -716,7 +719,19 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhum.
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_DeviceManagementApps.Read.All_ | Ler aplicativos do Microsoft Intune | Permite que o aplicativo leia as propriedades, as atribuições de grupo, o status de aplicativos, as configurações de aplicativo e as políticas de proteção de aplicativo gerenciadas pelo Microsoft Intune. | Sim | Não |
+|_DeviceManagementApps.ReadWrite.All_ | Ler e registrar os aplicativos do Microsoft Intune | Permite que aplicativo leia e registre s propriedades, as atribuições de grupo, o status dos aplicativos, as configurações de aplicativo e as políticas de proteção de aplicativo gerenciadas pelo Microsoft Intune. | Sim | Não |
+|_DeviceManagementConfiguration.Read.All_ | Ler a configuração de dispositivo e as políticas do Microsoft Intune | Permite que o aplicativo leia as propriedades de configuração de dispositivo e as políticas de conformidade de dispositivo do Microsoft Intune e sua atribuição aos grupos. | Sim | Não |
+|_DeviceManagementConfiguration.ReadWrite.All_ | Ler e escrever as configurações de dispositivo e as políticas do Microsoft Intune  | Permite que o aplicativo leia e registre as propriedades de configuração de dispositivo e as políticas de conformidade de dispositivo do Microsoft Intune e sua atribuição aos grupos. | Sim | Não |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Executar ações remotas de impacto no usuário nos dispositivos do Microsoft Intune | Permite que o aplicativo execute ações remotas de alto impacto como apagar dispositivo ou redefinir a senha em dispositivos gerenciados pelo Microsoft Intune. | Sim | Não |
+|_DeviceManagementManagedDevices.Read.All_ | Ler dispositivos do Microsoft Intune | Permite que o aplicativo leia as propriedades de dispositivos gerenciados pelo Microsoft Intune. | Sim | Não |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Ler e registrar dispositivos do Microsoft Intune | Permite que o aplicativo leia e registre as propriedades de dispositivos gerenciados pelo Microsoft Intune. Não permite operações de alto impacto como apagamento remoto e a redefinição de senha no proprietário do dispositivo. | Sim | Não |
+|_DeviceManagementRBAC.Read.All_ | Ler as configurações RBAC (Controle de Acesso com Base em Função) do Microsoft Intune | Permite que o aplicativo leia as propriedades relacionadas às configurações RBAC do Microsoft Intune. | Sim | Não |
+|_DeviceManagementRBAC.ReadWrite.All_ | Ler e registrar as configurações RBAC do Microsoft Intune | Permite que o aplicativo leia e registre as propriedades relacionadas às configurações RBAC do Microsoft Intune. | Sim | Não |
+|_DeviceManagementServiceConfig.Read.All_ | Configuração de leitura Microsoft Intune | Permite que o aplicativo leia as propriedades do serviço do Intune, incluindo o registro do dispositivo e a configuração de conexão de serviço de terceiros. | Sim | Não |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | Ler e registrar o Microsoft Intune | Permite que o aplicativo leia e registre propriedades do serviço do Microsoft Intune, incluindo o registro do dispositivo e a configuração de conexão de serviço de terceiros. | Sim | Não |
 
 ### <a name="remarks"></a>Comentários
 
@@ -727,6 +742,20 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
+
+* _DeviceManagementServiceConfiguration.Read.All_: Verificar o estado atual da assinatura do Intune (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_: Criar novos Termos e Condições (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_: Localizar o status da configuração de um dispositivo (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_: Atribuir uma política de conformidade do dispositivo para um grupo (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_: Localizar todos os aplicativos da Windows Store publicados no Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_: Publicar um novo aplicativo (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_: Localizar uma atribuição de função pelo nome (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_: Criar uma nova função personalizada (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_: Localizar um dispositivo gerenciado pelo nome (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_: Remover um dispositivo gerenciado (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_: Redefinir a senha em um dispositivo gerenciado do usuário (`POST /managedDevices/{id}/resetPasscode`).
+
+#### <a name="application"></a>Aplicativo
 
 * _DeviceManagementServiceConfiguration.Read.All_: Verificar o estado atual da assinatura do Intune (`GET /deviceManagement/subscriptionState`).
 * _DeviceManagementServiceConfiguration.ReadWrite.All_: Criar novos Termos e Condições (`POST /deviceManagement/termsAndConditions`).
@@ -1085,8 +1114,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
-| _Policy.Read.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
-| _Policy.Read.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
+| _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
