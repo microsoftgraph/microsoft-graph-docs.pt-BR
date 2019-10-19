@@ -4,12 +4,12 @@ description: Os identificadores imutáveis permitem que seu aplicativo obtenha u
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a2cdd301bfa9949d750ac3eb0813c958ccc7161d
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: ca07e359f710d8538fe51f221895eca1beb08ec2
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036372"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37439938"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter identificadores imutáveis para recursos do Outlook
 
@@ -29,8 +29,9 @@ Esse cabeçalho só se aplica à solicitação com a qual ele está incluído. S
 
 A ID imutável de um item não se alterará, desde que o item permaneça na mesma caixa de correio. Isso significa que a ID imutável NÃO será alterada se o item for movido para uma pasta diferente na caixa de correio. No entanto, a ID imutável será alterada se:
 
-- O usuário mover o item para uma caixa de correio de arquivo morto
-- O usuário exportar o item (para um PST, como um arquivo MSG, etc.) e importá-lo novamente na sua caixa de correio
+- O usuário mover o item para uma caixa de correio de arquivo morto.
+- O usuário exportar o item (para um PST, como um arquivo MSG, etc.) e importá-lo novamente na sua caixa de correio.
+- O usuário enviar uma mensagem de rascunho. A ID imutável da cópia em Itens Enviados não for a mesma ID imutável da mensagem de rascunho.
 
 ## <a name="items-that-support-immutable-id"></a>Itens que dão suporte a IDs imutáveis
 
