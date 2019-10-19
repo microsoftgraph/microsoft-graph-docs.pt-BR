@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 8be03135f0d85f9a40360cc832b1fe3acb72042f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b9485845ab97daf9c55f58f4b4f09e84ed5302a
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036306"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37036393"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
@@ -47,11 +47,16 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | Delegar outro usuário para enviar mensagens em nome do proprietário da caixa de correio | [message](../resources/message.md) | Configurar as propriedades **from** e **sender** em uma [message](../resources/message.md) |
 | Permitir que o usuário visualize as mensagens mais importantes primeiro | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Caixa de Entrada Prioritária](../resources/manage-focused-inbox.md) |
 | Consular mensagens e obtê-las em uma pasta de pesquisa  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Métodos de mailSearchFolder](../resources/mailsearchfolder.md#methods) |
+| Obter o conteúdo MIME de uma mensagem ou de um anexo de mensagem | [Mensagem](../resources/message.md) | [Obter conteúdo de MIME](/graph/outlook-get-mime-message) |
 | Adicionar, obter ou excluir anexos de uma mensagem | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Métodos de anexo](../resources/attachment.md#methods) |
+| Acessar as opções de idioma e fuso horário para um usuário | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Obter ou atualizar resposta automática, localidade, fuso horário ou horário de trabalho de um usuário | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Obter configurações da caixa de correio do usuário](../api/user-get-mailboxsettings.md), <br> [Atualizar configurações da caixa de correio do usuários](../api/user-update-mailboxsettings.md) |
 | Obter MailTips do status especial de outros destinatários, como ausência temporária | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Get MailTips](../api/user-getmailtips.md) |
 | **Gerenciamento de pasta e email** | | |
 | Organizar mensagens em uma hierarquia de pasta de email | [mailFolder](../resources/mailfolder.md)  | [Métodos de mailFolder](../resources/mailfolder.md#methods) |
+| Categorizar mensagens | [outlookCategory](../resources/outlookcategory.md) | [Métodos de outlookCategory](../resources/outlookcategory.md#methods) |
+| Usar regras de Caixa de Entrada para automatizar ações como encaminhar mensagens de entrada específicas | [messageRule](../resources/messagerule.md) | [Métodos de messageRule](../resources/messagerule.md#methods) |
+| Obter cabeçalhos de mensagens da Internet de uma mensagem | [message](../resources/message.md) | [Obter a propriedade **internetMessageHeaders** de uma mensagem](../api/message-get.md#example-2). |
 | Pesquisar e filtrar mensagens | [message](../resources/message.md) | [Parâmetros de consulta](/graph/query-parameters)  |
 | Receber notificações de alterações para as mensagens em uma pasta | [subscription](../resources/subscription.md) | [Trabalhando com webhooks no Microsoft Graph](../resources/webhooks.md) |
 | Sincronizar mensagens ou a hierarquia da pasta de email | [message](../resources/message.md) | [Obter as alterações incrementais para as mensagens em uma pasta](/graph/delta-query-messages) |

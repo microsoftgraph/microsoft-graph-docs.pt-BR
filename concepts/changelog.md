@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 3594cd441db31522cf5338f4a8365548132b05ed
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 2250f2afd44f37e1833a7dad5f49d37cd6bae965
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37581242"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598251"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -118,7 +118,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="users"></a>Usuários
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição | beta | O [user: reprocessLicenseAssignment do ](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/mailboxsettings?view=graph-rest-beta). |
+| Adição | beta | O [user: reprocessLicenseAssignment do ](/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/mailboxsettings?view=graph-rest-beta). |
 
 ### <a name="users--outlook-settings"></a>Usuários | Configurações do Outlook
 
