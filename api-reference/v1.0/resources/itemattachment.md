@@ -5,16 +5,16 @@ localization_priority: Priority
 ms.prod: outlook
 author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 7df14ea5d6611cb3771aeb23250c1e65fb6e60a4
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 554a1cd2e0f6059cf9213f1f19d756349ef000fc
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484356"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37036358"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
-Um contato, evento ou mensagem que está anexado a outro evento, mensagem ou postagem.  
+Um contato, evento ou mensagem anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md) ou [postagem](../resources/post.md) do usuário.  
 
 Derivado de [attachment](attachment.md).
 
@@ -22,7 +22,7 @@ Derivado de [attachment](attachment.md).
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades e os relacionamentos do objeto itemAttachment.|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades, os relacionamentos ou o conteúdo bruto de um objeto itemAttachment.|
 |[Delete](../api/attachment-delete.md) | Nenhum |Exclua o objeto itemAttachment. |
 
 ## <a name="properties"></a>Propriedades

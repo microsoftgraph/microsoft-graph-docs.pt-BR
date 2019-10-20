@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4accb326c08249593e16c1cf7aae83a074eec282
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c3c360ad8afb96ced971aa9e4f22461ec9aa0af5
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726554"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37036407"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
-Leia as propriedades e as relações de um anexo, anexadas a um [evento](../resources/event.md) de usuário, [mensagem](../resources/message.md) ou [postagem](../resources/post.md). 
+Leia as propriedades, os relacionamentos ou o conteúdo bruto de um anexo de um [evento](../resources/event.md), [mensagem](../resources/message.md) ou [postagem](../resources/post.md) do usuário. 
 
 Um anexo pode ser de um dos seguintes tipos:
 
@@ -24,6 +24,20 @@ Um anexo pode ser de um dos seguintes tipos:
 
 Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
 
+### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
+Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
+
+Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Veja um [exemplo](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) abaixo.
+
+Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.
+
+| Tipo de anexo do item  | Conteúdo bruto retornado |
+|:-----------|:----------|
+| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Confira um [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | Formato iCal MIME. Confira um [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | Formato MIME. Confira um [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+
+A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,6 +51,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 
 ## <a name="http-request"></a>Solicitação HTTP
+Esta seção mostra a sintaxe da solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md), [mensagem](../resources/message.md) e [postagem](../resources/post.md)) que oferecem suporte a anexos:
+
+- Para obter as propriedades e os relacionamentos de um anexo, especifique o ID do anexo a ser indexado na coleção de **anexos**, anexada ao [evento](../resources/event.md), [mensagem](../resources/message.md) ou instância de [postagem](../resources/post.md) especificada.
+- Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter ainda mais o conteúdo bruto do anexo anexando o segmento de caminho `/$value` à URL da solicitação.
+
 Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário.
 
 <!--
@@ -47,8 +66,18 @@ Attachments for an [event](../resources/event.md) in the user's or group's defau
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
 
+GET /me/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
+```
+
+Anexos para um [evento](../resources/event.md) no [calendário](../resources/calendar.md) do usuário especificado.
+<!-- { "blockType": "ignored" } -->
+```http
 GET /me/calendar/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
+
+GET /me/calendar/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}/$value
 ```
 
 <!--
@@ -62,37 +91,58 @@ Anexos de um [event](../resources/event.md) em um [calendar](../resources/calend
 GET /me/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 
+GET /me/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}/$value
+
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+
+GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+
+GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
 Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
+
+GET /me/messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
+
+GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante. <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
+
+GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
+
+GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
@@ -106,20 +156,28 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto **attachment** no corpo da resposta. As propriedades desse tipo de anexo são retornadas: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceattachment.md).
+Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
-## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
+Se você estiver obtendo as propriedades e os relacionamentos de um anexo, o corpo da resposta incluirá um objeto de [anexo](../resources/attachment.md). As propriedades desse tipo de anexo são retornadas: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceattachment.md).
 
-##### <a name="request"></a>Solicitação
+Se você estiver obtendo o conteúdo bruto de um anexo de arquivo ou de item, o corpo da resposta incluirá o valor bruto do anexo.
+
+## <a name="examples"></a>Exemplos 
+
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a>Exemplo 1: Obter as propriedades de um anexo de arquivo
+
+#### <a name="request"></a>Solicitação
+
 Veja um exemplo da solicitação para obter um anexo de arquivo de um evento.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_file_attachment_v1"
+  "name": "get_file_attachment_v1",
+  "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-v1-csharp-snippets.md)]
@@ -151,25 +209,26 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
-  "contentType": "contentType-value",
-  "contentLocation": "contentLocation-value",
-  "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA",
-  "contentId": "null",
-  "lastModifiedDateTime": "2016-01-01T12:00:00Z",
-  "id": "id-value",
-  "isInline": false,
-  "name": "name-value",
-  "size": 99
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages('AAMkAGUzY5QKjAAA%3D')/attachments/$entity",
+    "@odata.type": "#microsoft.graph.fileAttachment",
+    "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
+    "lastModifiedDateTime": "2019-04-02T03:41:29Z",
+    "name": "Draft sales invoice template.docx",
+    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 13068,
+    "isInline": false,
+    "contentId": null,
+    "contentLocation": null,
+    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
-## <a name="example-item-attachment"></a>Exemplo (anexo de item)
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a>Exemplo 2: Obter as propriedades de um anexo de item
 
-##### <a name="request-1"></a>Solicitação 1
-O primeiro exemplo mostra como obter um anexo do item em uma mensagem. As propriedades de **itemAttachment** são retornadas.
+#### <a name="request"></a>Solicitação
+
+O próximo exemplo mostra como obter um anexo de item em uma mensagem. As propriedades de **itemAttachment** são retornadas.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -199,9 +258,10 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 ---
 
 
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
+  "name": "get_item_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -221,8 +281,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir mostra como usar `$expand` para obter as propriedades do item que está anexado à mensagem. Neste exemplo, esse item é uma mensagem. As propriedades dessa mensagem anexadas também são retornadas.
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Exemplo 3: Expandir e obter as propriedades do item anexado a uma mensagem
+#### <a name="request"></a>Solicitação
+O próximo exemplo mostra como usar `$expand` para obter as propriedades do item (contato, evento ou mensagem) anexado à mensagem. Neste exemplo, esse item é uma mensagem. As propriedades dessa mensagem anexadas também são retornadas.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -252,9 +313,10 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAM
 ---
 
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
+  "name": "get_and_expand_item_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -327,8 +389,9 @@ Content-type: application/json
 
 
 
-## <a name="example-reference-attachment"></a>Exemplo (anexo de referência)
-##### <a name="request"></a>Solicitação
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Exemplo 4: Obter as propriedades de um anexo de referência
+
+#### <a name="request"></a>Solicitação
 Aqui está um exemplo da solicitação para obter um anexo de referência de uma mensagem.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -358,7 +421,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKgAAA=/attachments/A
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -380,6 +443,240 @@ Content-type: application/json
     "size": 1060,
     "isInline": true
 }
+```
+
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 5: Obter o conteúdo bruto de um anexo de arquivo em uma mensagem
+
+#### <a name="request"></a>Solicitação
+
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um arquivo do Word que foi anexado a uma mensagem.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_file_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
+```
+
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. O corpo da resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui por questões de brevidade.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_file_attachment",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{Raw bytes of the file}
+```
+
+
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Exemplo 6: obter o conteúdo bruto MIME de um anexo de contato em uma mensagem
+
+#### <a name="request"></a>Solicitação
+
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um item de contato que foi anexado a uma mensagem. 
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_contact_attachment",
+  "sampleKeys": ["AAMkADI5MAAGjk2PxAAA=","AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8="]
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
+```
+
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_contact_attachment",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+
+BEGIN:VCARD
+PROFILE:VCARD
+VERSION:3.0
+MAILER:Microsoft Exchange
+PRODID:Microsoft Exchange
+FN:Alex Wilbur
+N:Wilbur;Alex;;;
+NOTE:Sunday\, June 10\, 2012 5:44 PM:\nGutter\, window cleaning\, pressure 
+ washing\, roof debris blowing\n
+ORG:Contoso;
+CLASS:PUBLIC
+ADR;TYPE=WORK,PREF:;;4567 Main St;Buffalo;NY;98052;United States of America
+LABEL;TYPE=WORK,PREF:4567 Main St\nBuffalo\, NY 98052
+ADR;TYPE=HOME:;;;;;;
+ADR;TYPE=POSTAL:;;;;;;
+TEL;TYPE=WORK:(425) 555-0100
+TITLE:
+X-MS-IMADDRESS:
+REV;VALUE=DATE-TIME:2019-04-09T02:13:31,161Z
+END:VCARD
+```
+
+
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Exemplo 7: Obter o conteúdo bruto MIME de um anexo de evento em uma mensagem
+
+#### <a name="request"></a>Solicitação
+
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um evento que foi anexado a uma mensagem. 
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_event_attachment",
+  "sampleKeys": ["AAMkADVIOAAA=","AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM="]
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
+```
+
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_event_attachment",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Pacific Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Adele Vance:MAILTO:adelev@contoso.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Adele Vance:MAILTO:adelev@contoso.com
+DESCRIPTION;LANGUAGE=en-US:\n
+UID:040000008200
+SUMMARY;LANGUAGE=en-US:Review Megan's docs
+DTSTART;TZID=Pacific Standard Time:20190409T140000
+DTEND;TZID=Pacific Standard Time:20190409T160000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20190409T211833Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:0
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+```
+
+
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Exemplo 8: Obter o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem
+
+#### <a name="request"></a>Solicitação
+
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um convite para reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem. A entidade **eventMessage** é baseada no tipo de **mensagem**.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_message_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKiAAA=","AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ="]
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUzY5QKiAAA=/attachments/AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ=/$value
+```
+
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
+
+O corpo da resposta inclui o anexo **eventMessage** no formato MIME. O corpo do **eventMessage** é truncado por questões de brevidade. O corpo completo da mensagem é retornado de uma chamada real.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_message_attachment",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+From: Megan Bowen <MeganB@contoso.OnMicrosoft.com>
+To: Adele Vance <AdeleV@contoso.OnMicrosoft.com>
+Subject: Let's go for lunch
+Thread-Topic: Let's go for lunch
+Thread-Index: AdTPqxOmg4AXoJV960a1j5NrJCHYjA==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Thu, 28 Feb 2019 21:17:58 +0000
+Message-ID:
+    <CY4PR2201MB1046E9C83FC42478EF4EE283C9750@CY4PR2201MB1046.namprd22.prod.outlook.com>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+Content-Type: multipart/alternative;
+    boundary="_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_"
+MIME-Version: 1.0
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/plain; charset="us-ascii"
+
+Does mid month work for you?
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+</head>
+<body>
+Does mid month work for you?
+</body>
+</html>
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/calendar; charset="utf-8"; method=REQUEST
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
+
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_--
 ```
 
 
