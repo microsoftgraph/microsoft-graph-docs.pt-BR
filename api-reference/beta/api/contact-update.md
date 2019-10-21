@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: cc60a830771482d4233c879707e62013d74c838a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36418009"
 ---
 # <a name="update-contact"></a>Atualizar contato
@@ -54,27 +54,27 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assistantName|String|O nome do assistente do contato.|
+|assistantName|Cadeia de caracteres|O nome do assistente do contato.|
 |birthday|DateTimeOffset|O aniversário do contato.|
 |categories|String|As categorias associadas ao contato.|
-|children|String||
-|companyName|String|O nome da empresa do contato.|
-|department|String|O departamento do contato.|
-|displayName|String|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
+|children|Cadeia de caracteres||
+|nomeDaEmpresa|Cadeia de caracteres|O nome da empresa do contato.|
+|department|Cadeia de caracteres|O departamento do contato.|
+|displayName|Cadeia de caracteres|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
 |emailAddresses|coleção [typedEmailAddress](../resources/typedemailaddress.md)|Os endereços de email do contato.|
-|fileAs|String|O nome com o qual o contato está arquivado.|
-|gender |String |O sexo do contato. |
-|generation|String|A geração do contato.|
-|givenName|String|O nome do contato.|
-|imAddresses|String|Os endereços de mensagens instantâneas do contato.|
-|initials|String|As iniciais do contato.|
-|jobTitle|String|O cargo do contato.|
-|manager|String|O nome do gerente do contato.
-|middleName|String|O nome do meio do contato.|
-|nickName|String|O apelido do contato.|
-|officeLocation|String|O local do escritório do contato.|
-|parentFolderId|Cadeia de caracteres|A ID da pasta pai do contato.|
-|personalNotes|String|As anotações do usuário sobre o contato.|
+|fileAs|Cadeia de caracteres|O nome com o qual o contato está arquivado.|
+|gender |Cadeia de caracteres |O sexo do contato. |
+|generation|Cadeia de caracteres|A geração do contato.|
+|givenName|Cadeia de caracteres|O nome do contato.|
+|imAddresses|Cadeia de caracteres|Os endereços de mensagens instantâneas do contato.|
+|initials|Cadeia de caracteres|As iniciais do contato.|
+|jobTitle|Cadeia de caracteres|O cargo do contato.|
+|manager|Cadeia de caracteres|O nome do gerente do contato.
+|middleName|Cadeia de caracteres|O nome do meio do contato.|
+|nickName|Cadeia de caracteres|O apelido do contato.|
+|officeLocation|Cadeia de caracteres|O local do escritório do contato.|
+|parentFolderId|String|A ID da pasta pai do contato.|
+|personalNotes|Cadeia de caracteres|As anotações do usuário sobre o contato.|
 |telefones |Coleção [phone](../resources/phone.md) |Números de telefone associados ao contato, por exemplo, telefone residencial, telefone celular e telefone comercial. |
 |postalAddresses |coleção [physicalAddress](../resources/physicaladdress.md) |Endereços associados ao contato, por exemplo, endereço residencial e endereço comercial. |
 |profession|String|A profissão do contato.|
@@ -83,7 +83,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |title|String|O título do contato.|
 |websites |Coleção [website](../resources/website.md)|Sites da Web associados ao contato. |
 |weddingAnniversary |Data |Aniversário de casamento do contato. |
-|yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
+|yomiCompanyName|Cadeia de caracteres|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
 |yomiGivenName|String|O nome japonês fonético do contato. Essa propriedade é opcional.|
 |yomiSurname|String|O sobrenome japonês fonético do contato. Essa propriedade é opcional.|
 
@@ -129,7 +129,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-contact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-contact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

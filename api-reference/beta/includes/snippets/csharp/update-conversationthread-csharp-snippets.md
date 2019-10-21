@@ -1,10 +1,10 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 570c13b07cb5a548902e05eef7f6fb63d980c44f
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 7054feb5a7b1d1ddb6f2f2d401ef164cdfe7c150
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "35862865"
 ---
 ```csharp
@@ -13,10 +13,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var conversationThread = new ConversationThread
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#Microsoft.OutlookServices.ConversationThread"}
-    },
     IsLocked = true
 };
 
