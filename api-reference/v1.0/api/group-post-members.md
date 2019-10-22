@@ -5,17 +5,17 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86a50debcddc05eeee41279bd20d3dfd5b12081b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: caa00e74298eb7d744412ffdc85298d804ef615d
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337133"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621354"
 ---
 # <a name="add-member"></a>Adicionar membro
 Adicione um membro a um grupo do Office 365 ou a um grupo de segurança através da propriedade de navegação de **membros**.
 
-É possível adicionar usuários ou outros grupos. 
+É possível adicionar usuários, contatos organizacionais ou outros grupos. 
 
 > [!IMPORTANT]
 > É possível adicionar somente usuários a grupos do Office 365.
@@ -36,12 +36,13 @@ POST /groups/{id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Cabeçalho       | Valor |
+|:---------------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-type   | appication/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) ou [group](../resources/group.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) ou [organizational contact](../resources/orgcontact.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
@@ -82,11 +83,9 @@ Content-length: 30
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON da `id` do objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) ou [group](../resources/group.md) que deseja adicionar.
-
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

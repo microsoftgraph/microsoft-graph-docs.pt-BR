@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2c70da69f96a9fdbd13ca8a829ab717d4ffd13e
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 232f20f4266cc2d23580f0f7db9fdf48a9d02f41
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37036330"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622175"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -48,7 +48,8 @@ Esse recurso permite:
 |[Listar contactFolders](../api/user-list-contactfolders.md) |Coleção de [pastadeContatos](contactfolder.md)| Obter a coleção de pastas de contatos na pasta Contatos padrão do usuário conectado.|
 |[Criar pastadeContatos](../api/user-post-contactfolders.md) |[pastadeContatos](contactfolder.md)| Criar uma nova ContactFolder postando na coleção contactFolders.|
 |[Listar directReports](../api/user-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários ou contatos subordinados ao usuário da propriedade de navegação directReports.|
-|[Listar gerente](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager.|
+|[Listar gerente](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obter o usuário ou o contato organizacional que é o gerente do usuário da propriedade de navegação do gerente.|
+|[Atribuir gerente](../api/user-post-manager.md) |[directoryObject](directoryobject.md) | Atribuir um usuário ou um contato organizacional como o gerente do usuário.|
 |[Listar memberOf](../api/user-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as funções de diretório dos quais o usuário é membro direto da propriedade de navegação memberOf.|
 |[Listar memberOf transitivos](../api/user-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Enumera os grupos e as funções de diretório dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos dos quais o usuário é membro aninhado. |
 |[Listar ownedDevices](../api/user-list-owneddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices.|
@@ -97,6 +98,7 @@ Esse recurso permite:
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |isResourceAccount|Booliano| **Verdadeiro** se o usuário é uma conta de recursos; caso contrário, **falso**. O valor nulo deve ser considerado **falso**.|
 |jobTitle|String|O cargo do usuário. Oferece suporte a $filter.|
+|lastPasswordChangeDateTime| DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'|
 |legalAgeGroupClassification|String| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licenças para esse usuário. Somente leitura.|
 |email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
@@ -397,6 +399,7 @@ Veja a seguir uma representação JSON do recurso
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
+  "lastPasswordChangeDateTime": "String (timestamp)",
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",

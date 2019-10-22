@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f23d8ffcda224931950dc9c2d2cd2ade01322c36
-ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
+ms.openlocfilehash: c4cfb5297e4bae7689017f1e60738be5077604bc
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36426311"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622441"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -55,7 +55,7 @@ Veja a seguir uma representação JSON do recurso
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "string (binary)",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -103,7 +103,7 @@ Veja a seguir uma representação JSON do recurso
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
-|conversationIndex|Binária|O Índice da conversa à qual o email pertence.|
+|conversationIndex|Edm.Binary|O Índice da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|

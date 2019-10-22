@@ -5,16 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81a7936f713e769b8025dfde0b2f3d42f7234d44
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1ff81baf734d39e225031dc836fbd33d330efced
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727471"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622189"
 ---
 # <a name="list-manager"></a>Listar gerente
 
-Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
+Obtenha o gerente do usuário. Retorna o usuário ou o contato organizacional atribuído como gerente do usuário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,12 +31,11 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -46,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -75,7 +74,8 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+Este é um exemplo de resposta.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 65a66e39d0548fa994821eb4ae279d9fbc1b2aac
-ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
+ms.openlocfilehash: 3e8da555b062576c70a849280f83f713c2a627a0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37203974"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621375"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
@@ -100,6 +101,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Booliano | `True` se o organizador permite que os convidados proponham um novo horário ao responder, caso contrário,`false`. Opcional. O padrão é `true`. |
 |attendees|[Attendee](attendee.md) collection|A coleção de participantes do evento.|
 |corpo|[ItemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|A visualização da mensagem associada ao evento. Está no formato de texto.|
@@ -124,7 +126,7 @@ Veja a seguir uma representação JSON do recurso
 |originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|responseRequested|Booliano|O padrão é true, representando que o organizador gostaria de ter um convidado para enviar uma resposta para o evento.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
