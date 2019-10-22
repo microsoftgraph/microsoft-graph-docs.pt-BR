@@ -1,21 +1,22 @@
 ---
-title: Atribuir um gerente
-description: Use essa API para atribuir um gerente ao usuário.
+title: Atribuir gerente
+description: Atribuir o gerente de um usuário.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3a137ce36dd1a4a0da76d698e5f35689bca6590
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 36b24ef7b6e9fb7a35be3c87723b650581ec982c
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450659"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621445"
 ---
-# <a name="assign-a-manager"></a>Atribuir um gerente
+# <a name="assign-manager"></a>Atribuir gerente
 
-Use essa API para atribuir um gerente ao usuário.
-> Observação: não é possível atribuir subordinados diretamente; em vez disso, use essa API.
+Atribuir o gerente de um usuário.
+> [!NOTE]
+> Não é possível atribuir subordinados diretos; em vez disso, use essa API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,12 +33,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PUT /users/{id}/manager/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Cabeçalho       | Valor |
+|:---------------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-type   | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md), [User](../resources/user.md)ou [Contact organizacional](../resources/orgcontact.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 
@@ -45,7 +47,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -69,7 +71,7 @@ Content-length: xxx
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-manager-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-manager-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -79,9 +81,9 @@ Content-length: xxx
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta.
+>**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,

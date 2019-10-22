@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso onPremisesProvisioningError
-description: Representa erros de sincronização de diretório para as entidades de usuário e grupo ao sincronizar diretórios locais com o Azure Active Directory.
+description: Representa erros de sincronização de diretório para o grupo de usuários e recursos de contato durante a sincronização de diretórios locais com o Azure Active Directory.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: davidmu1
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3fd16b43d35cb12e7b9c7f82dc59f940994bc1b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ccbb10bdf5dba14a01a572198dbdbbafb2534eb7
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035740"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621649"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>tipo de recurso onPremisesProvisioningError
 
-Representa erros de sincronização de diretório para as entidades de [usuário](user.md) e [grupo](group.md) ao sincronizar diretórios locais com o Azure Active Directory.
+Representa erros de sincronização de diretório para os recursos de [usuário](user.md), [grupo](group.md) e [orgContact](orgcontact.md) ao sincronizar diretórios locais com o Azure Active Directory.
 
 ## <a name="properties"></a>Propriedades
 

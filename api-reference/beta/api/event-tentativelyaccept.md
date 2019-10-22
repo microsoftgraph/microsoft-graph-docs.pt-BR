@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ad868357f546fd156d4c9e8c66263236ba3c10d5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b9bdcd71033c1e1c21f7ba3768e357bbe5c70084
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419892"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621424"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Aceitar provisoriamente o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.
+
+Se o evento permitir propostas para novas horas, em resposta provisória ao evento, um convidado poderá optar por sugerir um tempo alternativo, incluindo o parâmetro **proposedNewTime** . Para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo, confira [propor novos horários da reunião](/graph/outlook-calendar-meeting-proposals).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -58,15 +60,21 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer **** a definição `true`de sendResponse como. Opcional.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
+Esta ação retornará HTTP 400 se ocorrer uma das seguintes ações:
+
+- O parâmetro **proposedNewTime** está incluído, mas a propriedade **allowNewTimeProposals** do **evento** é `false`. 
+- O parâmetro **proposedNewTime** está incluído, mas o parâmetro **sendResponse** está definido `false`como.
+
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+No exemplo a seguir, o usuário conectado responde provisoriamente ao evento especificado, define o **sendResponse** paremeter como true e inclui um momento alternativo no parâmetro **proposedNewTime** .
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -76,11 +84,20 @@ Este é um exemplo da solicitação.
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/tentativelyAccept
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I may not be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -91,22 +108,21 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-tentativelyaccept-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-tentativelyaccept-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### <a name="response"></a>Resposta
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
+  "name": "event_tentativelyaccept",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

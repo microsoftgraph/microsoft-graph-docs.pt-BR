@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5b3607e98cf6d83593374280b672772c7c703b09
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c353c8962e86606c45563c4fb066e1496b0426b0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721744"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621403"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -63,8 +63,10 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [eventMessage](../resources/eventmessage.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1"></a>Exemplo 1
+#### <a name="request"></a>Solicitação
 O primeiro exemplo mostra como obter as propriedades de uma mensagem de evento com base no ID da mensagem do evento.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -83,13 +85,13 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -195,8 +197,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>Solicitação 2
+### <a name="example-2"></a>Exemplo 2
+#### <a name="request"></a>Solicitação
 O segundo exemplo mostra como obter o evento associado a uma mensagem de evento. Ele usa a ID da mensagem para obter a mensagem do evento, fornece explicitamente uma conversão na mensagem do evento para acessar a propriedade de navegação **event** e aplica um parâmetro $expand para obter as propriedades do evento.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -215,13 +217,13 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta.
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

@@ -5,18 +5,22 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3d691b814517a6180a42ecd13954e019cc75be8b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 188da7f3c35a920953005cd7d228dea1e932d827
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973584"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622373"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso eventMessageRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma mensagem que representa uma solicitação de reunião.
+Uma mensagem que representa uma solicitação de reunião na caixa de correio de um convidado.
+
+A entidade **eventMessageRequest** é derivada de [eventMessage](eventmessage.md).
+
+Para responder à solicitação de reunião, primeiro, use a propriedade de navegação **evento** para acessar o evento correspondente, conforme mostrado neste [exemplo](../api/eventmessage-get.md#example-2). Em seguida, [aceite](../api/event-accept.md), [tentativelyAccept](../api/event-tentativelyaccept.md)ou [recuse](../api/event-decline.md) esse evento associado ao **eventMessageRequest**.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -25,10 +29,12 @@ Veja a seguir uma representação JSON do recurso
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.eventMessage",
   "optionalProperties": [
     "attachments",
     "event",
     "extensions",
+    "mentions",
     "previousLocation",
     "previousStartDateTime",
     "previousEndDateTime"
@@ -38,6 +44,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "bccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
@@ -45,6 +52,7 @@ Veja a seguir uma representação JSON do recurso
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "String (timestamp)",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -52,6 +60,7 @@ Veja a seguir uma representação JSON do recurso
   "id": "string (identifier)",
   "importance": "String",
   "inferenceClassification": "String",
+  "isDelegated": true,
   "isDeliveryReceiptRequested": true,
   "isDraft": true,
   "isOutOfDate": "Boolean",
@@ -60,6 +69,7 @@ Veja a seguir uma representação JSON do recurso
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "meetingMessageType": "microsoft.graph.meetingMessageType",
+  "mentionsPreview": {"@odata.type": "microsoft.graph.mentionsPreview"},
   "parentFolderId": "string",
   "previousEndDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "previousLocation": {"@odata.type": "microsoft.graph.location"},
@@ -67,6 +77,7 @@ Veja a seguir uma representação JSON do recurso
   "receivedDateTime": "String (timestamp)",
   "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
+  "responseRequested": "Boolean",
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "String (timestamp)",
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
@@ -81,6 +92,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Booliano | `True`Se o organizador da reunião permitir que os convidados proponham um novo horário `false` ao responder, caso contrário. Opcional. O padrão é `true`. |
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem.|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem.|
@@ -88,13 +100,15 @@ Veja a seguir uma representação JSON do recurso
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
+|conversationIndex|Edm.Binary|O índice da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos.|
 |id|String|Somente leitura.|
-|importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
+|importância|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Os valores possíveis são: `Focused` e `Other`.|
+|IsDelegated foi removida|Booliano|True se essa resposta de solicitação de reunião estiver acessível a um representante, caso contrário, false. O padrão é false.|
 |isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isOutOfDate|Booliano|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
@@ -103,17 +117,19 @@ Veja a seguir uma representação JSON do recurso
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |location|[Location](location.md)|O local da reunião solicitada.|
 |meetingMessageType|String| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
+|mentionsPreview|[mentionsPreview](mentionspreview.md)|Informações sobre menções na mensagem. Ao processar uma solicitação `GET` /messages, o servidor define essa propriedade e a inclui na resposta por padrão. O servidor retornará null se não houver menções na mensagem. Opcional. |
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de término anterior da reunião solicitada.|
-|previousLocation|[Localização](location.md)|O local anterior da reunião solicitada.|
+|previousLocation|[Location](location.md)|O local anterior da reunião solicitada.|
 |previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|O horário de início anterior da reunião solicitada.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
+|responseRequested|Booliano|Defina como true se o remetente quiser que o convidado envie uma resposta para a reunião solicitada.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|O horário de início da reunião solicitada.|
-|subject|String|O assunto da mensagem.|
+|assunto|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |type|String|O tipo de reunião solicitada `singleInstance`: `occurence`, `exception`, `seriesMaster`,.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
@@ -122,28 +138,43 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|Coleção [Attachment](attachment.md)| Somente leitura. Anulável.|
-|evento|[Event](event.md)| O evento associado à mensagem de evento. A pressuposição dos participantes ou recursos da sala é que o Atendedor de Calendário esteja definido para atualizar automaticamente o calendário com um evento quando mensagens de evento de solicitação de reunião chegarem. Propriedade de navegação.  Somente leitura.|
-|extensions|Coleção [Extension](extension.md)| Somente leitura. Anulável.|
+|attachments|Coleção [attachment](attachment.md)|O conjunto de anexos de [Fileattachment](fileattachment.md), [hiperattachment](itemattachment.md)e [referenceAttachment](referenceattachment.md) para a mensagem. Somente leitura. Anulável.|
+|event|[event](event.md)| O evento associado à mensagem de evento. A pressuposição dos participantes ou recursos da sala é que o Atendedor de Calendário esteja definido para atualizar automaticamente o calendário com um evento quando mensagens de evento de solicitação de reunião chegarem. Propriedade de navegação.  Somente leitura.|
+|extensions|[extension](extension.md) collection| A coleção de extensões abertas definidas para eventMessage. Somente leitura. Anulável.|
+|menções|Coleção [mention](mention.md) | Uma coleção de menções na mensagem, ordenada pelo **createdDateTime**, do mais novo para o mais antigo. Por padrão, um `GET` /messages não retorna essa propriedade, a menos que você aplique `$expand` à propriedade.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a eventMessage. Somente leitura. Anulável.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a eventMessage. Somente leitura. Anulável.|
+
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
-|[Criar anexo](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Criar um novo anexo postando na coleção Attachments.|
-|[Listar anexos](../api/eventmessage-list-attachments.md) |[Attachment](attachment.md) collection| Obtenha uma coleção de objetos Attachment.|
-|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
-|[Delete](../api/eventmessage-delete.md) | None |Excluir o objeto eventMessage. |
-|[copy](../api/message-copy.md)|[Message](message.md)||
-|[createForward](../api/message-createforward.md)|[Message](message.md)||
-|[createReply](../api/message-createreply.md)|[Message](message.md)||
-|[createReplyAll](../api/message-createreplyall.md)|[Mensagem](message.md)||
-|[forward](../api/message-forward.md)|Nenhum|Encaminha uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[move](../api/message-move.md)|[Message](message.md)|Mover a mensagem para um mailFolder.|
-|[reply](../api/message-reply.md)|Nenhum|Responde ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage.|
+|[Excluir](../api/eventmessage-delete.md) | Nenhuma |Excluir o objeto eventMessage.|
+|[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
+|[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[forward](../api/message-forward.md)|Nenhum|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[move](../api/message-move.md)|[message](message.md)|Mover uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
+|[reply](../api/message-reply.md)|Nenhum|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[replyAll](../api/message-replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
+|[unsubscribe](../api/message-unsubscribe.md)|Nenhum|Envie uma mensagem usando os dados e o endereço especificados no primeiro comando mailto no cabeçalho List-Unsubscribe.|
+|**Anexos**| | |
+|[List attachments](../api/eventmessage-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em um eventMessage.|
+|[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Adicionar um novo anexo a um eventMessage postando na coleção attachments.|
+|**Extensões abertas**| | |
+|[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
+|[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome.|
+|**Propriedades estendidas**| | |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Criar uma ou mais propriedades estendidas de valor único em uma eventMessage nova ou existente.   |
+|[Obter eventMessage com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Obter eventMessages que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
+|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Criar uma ou mais propriedades estendidas de vários valores em uma eventMessage nova ou existente.  |
+|[Obter eventMessage com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Obter um eventMessage que contenha uma propriedade estendida de vários valores usando `$expand`. |
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

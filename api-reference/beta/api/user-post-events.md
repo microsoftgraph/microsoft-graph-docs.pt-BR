@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bf54a6a949340d3d2aef9df64e3b75ce5d666d04
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cc082819183841f23038d57ec59d540126e8df10
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421908"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622486"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -18,7 +18,9 @@ ms.locfileid: "36421908"
 
 Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
 
-Você pode especificar o fuso horário de cada hora de início e de término do evento como parte de seus valores, porque as propriedades **Start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md) . Primeiro [encontre os fusos horários com suporte](outlookuser-supportedtimezones.md) para certificar-se de que você definiu somente os fusos horários que foram configurados para o servidor de caixa de correio do usuário. 
+Por padrão, a propriedade **allowNewTimeProposals** é definida como true quando um evento é criado, o que significa que os convidados podem propor uma data/hora diferente para o evento. Confira [propor novos horários de reunião](/graph/outlook-calendar-meeting-proposals) para obter mais informações sobre como propor um horário e como receber e aceitar uma nova proposta de tempo.
+
+Você pode especificar o fuso horário de cada um dos horários de início e de término do evento como parte de seus valores, porque as propriedades**inicial** e **final** são do tipo [ dateTimeTimeZone](../resources/datetimetimezone.md). Primeiro [localize os fusos horários com suporte](outlookuser-supportedtimezones.md) para garantir que você tenha definido somente fusos horários que tenham sido configurados para o servidor de caixas de correio do usuário. 
 
 Quando um evento é enviado, o servidor envia convites para os participantes.
 
@@ -90,13 +92,12 @@ Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Pref
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 600
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon work for you?"
   },
   "start": {
       "dateTime": "2017-04-15T12:00:00",
@@ -117,7 +118,8 @@ Content-length: 600
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -128,7 +130,7 @@ Content-length: 600
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -166,7 +168,7 @@ Content-length: 2197
     "isReminderOn":true,
     "hasAttachments":false,
     "subject":"Let's go brunch",
-    "bodyPreview":"Does late morning work for you?",
+    "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
@@ -178,6 +180,7 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -302,8 +305,8 @@ Content-length: 1390
     {
       "displayName": "Home Office"
     }
-  ]
-
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -314,7 +317,7 @@ Content-length: 1390
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-multiple-locations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -364,6 +367,7 @@ Content-length: 2985
   "type":"singleInstance",
   "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
   "onlineMeetingUrl":null,
+  "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
     "time":"0001-01-01T00:00:00Z"
@@ -511,7 +515,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -559,6 +563,7 @@ Content-type: application/json
     "type":"seriesMaster",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"

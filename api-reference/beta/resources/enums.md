@@ -5,13 +5,21 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b21f5ad0b3018fb37f3005d7eefdac34f1fe3f16
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 15041ab0efccf741aae7ea7b0eed4905ebc74423
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621396"
 ---
+### <a name="attachmenttype-values"></a>valores AttachmentType
+
+| Membro
+|:--------------
+| file
+| item
+| de referência
+
 ### <a name="analyticsactivitytype-values"></a>valores de analyticsActivityType
 
 | Membro
@@ -70,7 +78,7 @@ ms.locfileid: "36633682"
 
 |Membro|
 |:---|
-|none|
+|nenhuma|
 |automóvel|
 |calendar|
 |com|
@@ -137,7 +145,7 @@ ms.locfileid: "36633682"
 
 | Membro
 |:-------------------------
-| none
+| nenhuma
 | contactsOnly
 | todos os
 
@@ -164,8 +172,8 @@ ms.locfileid: "36633682"
 | lightTeal  | 0,5
 | lightPink  | 6
 | lightBrown | 178
-| lightRed   | 8 
-| maxColor   | 9 
+| lightRed   | 8
+| maxColor   | 241
 
 
 ### <a name="educationsynchronizationprofilestate-values"></a>valores de educationSynchronizationProfileState
@@ -177,7 +185,7 @@ ms.locfileid: "36633682"
 | provisioningFailed | 0,5
 | provisionado        | 6
 | provisionamento       | 178
-| unknownFutureValue | 8 
+| unknownFutureValue | 8
 
 
 ### <a name="educationsynchronizationstatus-values"></a>valores de educationSynchronizationStatus
@@ -252,7 +260,7 @@ ms.locfileid: "36633682"
 
 | Membro
 |:-----------------
-| none
+| nenhuma
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -284,7 +292,7 @@ ms.locfileid: "36633682"
 | deviceDefault
 | Bandeira
 | JanelaRestrita
-| none
+| nenhuma
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -345,10 +353,10 @@ ms.locfileid: "36633682"
 | doNotForward
 | Acompanhamento
 | conhecimento
-| direta
+| forward
 | noResponseNecessary
 | Saiba
-| resposta
+| reply
 | replyToAll
 | exame
 
@@ -370,7 +378,7 @@ ms.locfileid: "36633682"
 | NotStarted
 | Executando
 | Completed
-| Failed
+| Falhou
 
 
 ### <a name="onenotepatchactiontype-values"></a>valores de onenotePatchActionType
@@ -414,7 +422,7 @@ ms.locfileid: "36633682"
 | Automático
 | nopreview
 | verificação
-| descrição
+| description
 | de referência
 
 
@@ -486,7 +494,7 @@ ms.locfileid: "36633682"
 
 | Membro
 |:-------------------------
-| none
+| nenhuma
 | organizer
 | tentativelyAccepted
 | aceito
@@ -512,14 +520,14 @@ ms.locfileid: "36633682"
 | Casa
 | trabalho
 | blog
-| perfil
+| profile
 
 
 ### <a name="categorycolor-values"></a>valores de categoryColor
 
 | Membro   |Valor    
 |:---------|:--------
-| none     | -1      
+| nenhuma     | -1      
 | preset0  | ,0       
 | preset1  | 1       
 | preset2  | duas       
@@ -528,15 +536,15 @@ ms.locfileid: "36633682"
 | preset5  | 0,5       
 | preset6  | 6       
 | preset7  | 178       
-| preset8  | 8        
-| preset9  | 9        
-| preset10 | 10       
+| preset8  | 8       
+| preset9  | 241       
+| preset10 | 254      
 | preset11 | 11      
 | preset12 | 3,6      
 | preset13 | Treze      
 | preset14 | 14      
 | preset15 | 15      
-| preset16 | dezesseis      
+| preset16 | 16       
 | preset17 | 17.07.06      
 | preset18 | anos      
 | preset19 | 19      
@@ -569,7 +577,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 |lsHash|0,5| Tipo de hash LsHash.|
 |ctph|6| Tipo de hash CTPH.|
 |peSha1|178| Tipo de hash PESHA1.|
-|peSha256|8 | Tipo de hash PESHA256.|
+|peSha256|8| Tipo de hash PESHA256.|
 
 ### <a name="connectiondirection-values"></a>valores de connectionDirection
 
@@ -594,7 +602,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|não confiáveis|10 |O nível de integridade é não confiável.|
+|não confiáveis|254|O nível de integridade é não confiável.|
 |low|508| O nível de integridade é baixo.|
 |medium|até| O nível de integridade é médio.|
 |high|40| O nível de integridade é alto.|
@@ -639,9 +647,9 @@ Enumeração para tipos de valor do registro conforme [https://docs.microsoft.co
 |expandSz|0,5| Tipo de valor do registro REG_EXPAND_SZ.|
 |vínculo|6| Tipo de valor do registro REG_LINK.|
 |multiSz|178| Tipo de valor de registro REG_MULTI_SZ.|
-|none|8 | Tipo de valor do registro REG_NONE.|
-|QWORD|9 | Tipo de valor do registro REG_QWORD.|
-|qwordlittleEndian|10 | Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
+|nenhuma|8| Tipo de valor do registro REG_NONE.|
+|QWORD|241| Tipo de valor do registro REG_QWORD.|
+|qwordlittleEndian|254| Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
 |v|11| Tipo de valor do registro REG_SZ.|
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
@@ -663,7 +671,7 @@ Valores possíveis de um status de ciclo de vida de alerta (estágio).
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status desconhecido.|
-|newAlert|10 | O alerta é novo.|
+|newAlert|254| O alerta é novo.|
 |inProgress|508|O alerta está em andamento.|
 |Obtido|até|O alerta foi resolvido.|
 
@@ -674,7 +682,7 @@ Valores possíveis para funções de email.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Função desconhecida.|
-|remetente|1|Remetente do email.|
+|sender|1|Remetente do email.|
 |destinatário|duas|Destinatário do email.|
 
 ### <a name="logontype-values"></a>valores de Logontype
@@ -716,14 +724,14 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |medium|
 |high|
 |hidden|
-|none|
+|nenhuma|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>valores de risco
 
 |Membro|
 |:---|
-|none|
+|nenhuma|
 |confirmedSafe|
 |corrigidos|
 |Descartado pelo|
@@ -735,7 +743,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Membro|
 |:---|
-|none|
+|nenhuma|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
