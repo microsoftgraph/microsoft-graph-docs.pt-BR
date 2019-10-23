@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 17e6f243f79f999858ebb5221a1187bd39e523d2
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 07e1a61f776544690c7702a986da18387a0dc775
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35723924"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636935"
 ---
 ```objc
 
@@ -73,6 +73,7 @@ MSGraphLocation *locations = [[MSGraphLocation alloc] init];
 [locations setDisplayName:@"Home Office"];
 [locationsList addObject: locations];
 [event setLocations:locationsList];
+[event setAllowNewTimeProposals: true];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

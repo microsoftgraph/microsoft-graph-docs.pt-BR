@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e1a4aa6360d423ccd8af43d72ff5a577c28a93ad
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: d3c6eb7b947e6b190f15dfa67b27721e60176ee3
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35723921"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636928"
 ---
 ```csharp
 
@@ -82,7 +82,8 @@ var @event = new Event
         {
             DisplayName = "Home Office"
         }
-    }
+    },
+    AllowNewTimeProposals = true
 };
 
 await graphClient.Me.Events
