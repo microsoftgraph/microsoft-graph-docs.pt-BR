@@ -1,56 +1,84 @@
 ---
 title: tipo de recurso conditionalAccessPolicy
-description: Indica os atributos relacionados a uma política de acesso condicional ou políticas disparadas pela atividade de entrada correspondente
+description: Representa uma política de acesso condicional do Azure Active Directory. As políticas de acesso condicional são regras personalizadas que definem um cenário do Access.
 localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 2c45be8ee32c26187ccf42154ba6c06b60f5efc1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8187e98d1ddc5a096dea469bea22681fd5df78e7
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973213"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637757"
 ---
-# <a name="conditionalaccesspolicy-resource-type"></a><span data-ttu-id="92b9e-103">tipo de recurso conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="92b9e-103">conditionalAccessPolicy resource type</span></span>
-<span data-ttu-id="92b9e-104">Indica os atributos relacionados a uma política de acesso condicional ou políticas disparadas pela atividade de entrada correspondente</span><span class="sxs-lookup"><span data-stu-id="92b9e-104">Indicates the attributes related a conditional access policy or policies that's triggered by the corresponding sign-in activity</span></span>
+# <a name="conditionalaccesspolicy-resource-type"></a><span data-ttu-id="99f4f-104">tipo de recurso conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-104">conditionalAccessPolicy resource type</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+<span data-ttu-id="99f4f-105">Representa uma política de acesso condicional do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="99f4f-105">Represents an Azure Active Directory conditional access policy.</span></span> <span data-ttu-id="99f4f-106">As políticas de acesso condicional são regras personalizadas que definem um cenário do Access.</span><span class="sxs-lookup"><span data-stu-id="99f4f-106">Conditional access policies are custom rules that define an access scenario.</span></span> <span data-ttu-id="99f4f-107">Para obter mais informações, consulte a [documentação de acesso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/).</span><span class="sxs-lookup"><span data-stu-id="99f4f-107">For more information, see the [Conditional access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="92b9e-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="92b9e-105">Properties</span></span>
-| <span data-ttu-id="92b9e-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="92b9e-106">Property</span></span>     | <span data-ttu-id="92b9e-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="92b9e-107">Type</span></span>   |<span data-ttu-id="92b9e-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="92b9e-108">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="92b9e-109">displayName</span><span class="sxs-lookup"><span data-stu-id="92b9e-109">displayName</span></span>|<span data-ttu-id="92b9e-110">String</span><span class="sxs-lookup"><span data-stu-id="92b9e-110">String</span></span>|<span data-ttu-id="92b9e-111">Refere-se ao nome da política de acesso condicional (exemplo: "exigir MFA de Salesforce").</span><span class="sxs-lookup"><span data-stu-id="92b9e-111">Refers to the Name of the conditional access policy (example: “Require MFA for Salesforce”).</span></span>|
-|<span data-ttu-id="92b9e-112">enforcedGrantControls</span><span class="sxs-lookup"><span data-stu-id="92b9e-112">enforcedGrantControls</span></span>|<span data-ttu-id="92b9e-113">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="92b9e-113">String collection</span></span>|<span data-ttu-id="92b9e-114">Refere-se aos controles Grant impostos pela política de acesso condicional (exemplo: "requer autenticação multifator").</span><span class="sxs-lookup"><span data-stu-id="92b9e-114">Refers to the grant controls enforced by the conditional access policy (example: “Require multi-factor authentication”).</span></span>|
-|<span data-ttu-id="92b9e-115">enforcedSessionControls</span><span class="sxs-lookup"><span data-stu-id="92b9e-115">enforcedSessionControls</span></span>|<span data-ttu-id="92b9e-116">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="92b9e-116">String collection</span></span>|<span data-ttu-id="92b9e-117">Refere-se aos controles de sessão aplicados pela política de acesso condicional (exemplo: "exigir controles de aplicação imposta)").</span><span class="sxs-lookup"><span data-stu-id="92b9e-117">Refers to the session controls enforced by the conditional access policy (example: “Require app enforced controls”).</span></span>|
-|<span data-ttu-id="92b9e-118">id</span><span class="sxs-lookup"><span data-stu-id="92b9e-118">id</span></span>|<span data-ttu-id="92b9e-119">String</span><span class="sxs-lookup"><span data-stu-id="92b9e-119">String</span></span>|<span data-ttu-id="92b9e-120">GUID exclusivo da política de acesso condicional</span><span class="sxs-lookup"><span data-stu-id="92b9e-120">Unique GUID of the conditional access policy</span></span>|
-|<span data-ttu-id="92b9e-121">resultado</span><span class="sxs-lookup"><span data-stu-id="92b9e-121">result</span></span>|<span data-ttu-id="92b9e-122">String</span><span class="sxs-lookup"><span data-stu-id="92b9e-122">String</span></span>| <span data-ttu-id="92b9e-123">Indica o resultado da política de autoridade de certificação que foi disparada. Os valores possíveis são:</span><span class="sxs-lookup"><span data-stu-id="92b9e-123">Indicates the result of the CA policy that was triggered.Possible values are:</span></span><br/> `success` <br/> `failure` <br/> <span data-ttu-id="92b9e-124">`notApplied`-A política não é aplicada porque as condições da política não foram atendidas.</span><span class="sxs-lookup"><span data-stu-id="92b9e-124">`notApplied` - Policy isn't applied because policy conditions were not met.</span></span> <br/> <span data-ttu-id="92b9e-125">`notEnabled`– Isso ocorre devido à política em estado desabilitado.</span><span class="sxs-lookup"><span data-stu-id="92b9e-125">`notEnabled` - This is due to the policy in disabled state.</span></span>|
+## <a name="methods"></a><span data-ttu-id="99f4f-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="99f4f-108">Methods</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="92b9e-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="92b9e-126">JSON representation</span></span>
+| <span data-ttu-id="99f4f-109">Método</span><span class="sxs-lookup"><span data-stu-id="99f4f-109">Method</span></span>       | <span data-ttu-id="99f4f-110">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="99f4f-110">Return Type</span></span> | <span data-ttu-id="99f4f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="99f4f-111">Description</span></span> |
+|:-------------|:------------|:------------|
+| [<span data-ttu-id="99f4f-112">Listar conditionalAccessPolicies</span><span class="sxs-lookup"><span data-stu-id="99f4f-112">List conditionalAccessPolicies</span></span>](../api/conditionalaccessroot-list-policies.md) | <span data-ttu-id="99f4f-113">[conditionalAccessPolicy](conditionalaccesspolicy.md) conjunto</span><span class="sxs-lookup"><span data-stu-id="99f4f-113">[conditionalAccessPolicy](conditionalaccesspolicy.md) collection</span></span> | <span data-ttu-id="99f4f-114">Obter todos os objetos conditionalAccessPolicies na organização.</span><span class="sxs-lookup"><span data-stu-id="99f4f-114">Get all of the conditionalAccessPolicies objects in the organization.</span></span> |
+| [<span data-ttu-id="99f4f-115">Criar conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-115">Create conditionalAccessPolicy</span></span>](../api/conditionalaccessroot-post-policies.md) | [<span data-ttu-id="99f4f-116">conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-116">conditionalAccessPolicy</span></span>](conditionalaccesspolicy.md) | <span data-ttu-id="99f4f-117">Criar um novo objeto conditionalAccessPolicy.</span><span class="sxs-lookup"><span data-stu-id="99f4f-117">Create a new conditionalAccessPolicy object.</span></span> |
+| [<span data-ttu-id="99f4f-118">Obter conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-118">Get conditionalAccessPolicy</span></span>](../api/conditionalaccesspolicy-get.md) | [<span data-ttu-id="99f4f-119">conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-119">conditionalAccessPolicy</span></span>](conditionalaccesspolicy.md) | <span data-ttu-id="99f4f-120">Ler propriedades e relações de um objeto conditionalAccessPolicy.</span><span class="sxs-lookup"><span data-stu-id="99f4f-120">Read properties and relationships of a conditionalAccessPolicy object.</span></span> |
+| [<span data-ttu-id="99f4f-121">Atualizar conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-121">Update conditionalAccessPolicy</span></span>](../api/conditionalaccesspolicy-update.md) | [<span data-ttu-id="99f4f-122">conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-122">conditionalAccessPolicy</span></span>](conditionalaccesspolicy.md) | <span data-ttu-id="99f4f-123">Atualizar um objeto conditionalAccessPolicy.</span><span class="sxs-lookup"><span data-stu-id="99f4f-123">Update a conditionalAccessPolicy object.</span></span> |
+| [<span data-ttu-id="99f4f-124">Excluir conditionalAccessPolicy</span><span class="sxs-lookup"><span data-stu-id="99f4f-124">Delete conditionalAccessPolicy</span></span>](../api/conditionalaccesspolicy-delete.md) | <span data-ttu-id="99f4f-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="99f4f-125">None</span></span> | <span data-ttu-id="99f4f-126">Excluir um objeto conditionalAccessPolicy.</span><span class="sxs-lookup"><span data-stu-id="99f4f-126">Delete a conditionalAccessPolicy object.</span></span> |
 
-<span data-ttu-id="92b9e-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="92b9e-127">Here is a JSON representation of the resource.</span></span>
+## <a name="properties"></a><span data-ttu-id="99f4f-127">Propriedades</span><span class="sxs-lookup"><span data-stu-id="99f4f-127">Properties</span></span>
+
+| <span data-ttu-id="99f4f-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="99f4f-128">Property</span></span>     | <span data-ttu-id="99f4f-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="99f4f-129">Type</span></span>        | <span data-ttu-id="99f4f-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="99f4f-130">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="99f4f-131">conditions</span><span class="sxs-lookup"><span data-stu-id="99f4f-131">conditions</span></span>|[<span data-ttu-id="99f4f-132">conditionalAccessConditionSet</span><span class="sxs-lookup"><span data-stu-id="99f4f-132">conditionalAccessConditionSet</span></span>](conditionalaccessconditionset.md)| <span data-ttu-id="99f4f-133">Especifica as regras que devem ser atendidas para que a política seja aplicada.</span><span class="sxs-lookup"><span data-stu-id="99f4f-133">Specifies the rules that must be met for the policy to apply.</span></span> <span data-ttu-id="99f4f-134">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="99f4f-134">Required.</span></span> |
+|<span data-ttu-id="99f4f-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="99f4f-135">createdDateTime</span></span>|<span data-ttu-id="99f4f-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="99f4f-136">DateTimeOffset</span></span>| <span data-ttu-id="99f4f-137">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="99f4f-137">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="99f4f-138">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="99f4f-138">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="99f4f-139">ReadOnly.</span><span class="sxs-lookup"><span data-stu-id="99f4f-139">Readonly.</span></span> |
+|<span data-ttu-id="99f4f-140">description</span><span class="sxs-lookup"><span data-stu-id="99f4f-140">description</span></span>|<span data-ttu-id="99f4f-141">String</span><span class="sxs-lookup"><span data-stu-id="99f4f-141">String</span></span>| <span data-ttu-id="99f4f-142">Não usado.</span><span class="sxs-lookup"><span data-stu-id="99f4f-142">Not used.</span></span> |
+|<span data-ttu-id="99f4f-143">displayName</span><span class="sxs-lookup"><span data-stu-id="99f4f-143">displayName</span></span>|<span data-ttu-id="99f4f-144">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="99f4f-144">String</span></span>| <span data-ttu-id="99f4f-145">Especifica um nome de exibição para o objeto conditionalAccessPolicy.</span><span class="sxs-lookup"><span data-stu-id="99f4f-145">Specifies a display name for the conditionalAccessPolicy object.</span></span> |
+|<span data-ttu-id="99f4f-146">grantControls</span><span class="sxs-lookup"><span data-stu-id="99f4f-146">grantControls</span></span>|[<span data-ttu-id="99f4f-147">conditionalAccessGrantControls</span><span class="sxs-lookup"><span data-stu-id="99f4f-147">conditionalAccessGrantControls</span></span>](conditionalaccessgrantcontrols.md)| <span data-ttu-id="99f4f-148">Especifica os controles de concessão que devem ser atendidos para passar a política.</span><span class="sxs-lookup"><span data-stu-id="99f4f-148">Specifies the grant controls that must be fulfilled to pass the policy.</span></span> |
+|<span data-ttu-id="99f4f-149">id</span><span class="sxs-lookup"><span data-stu-id="99f4f-149">id</span></span>|<span data-ttu-id="99f4f-150">String</span><span class="sxs-lookup"><span data-stu-id="99f4f-150">String</span></span>| <span data-ttu-id="99f4f-151">Especifica o identificador de um objeto conditionalAccessPolicy.</span><span class="sxs-lookup"><span data-stu-id="99f4f-151">Specifies the identifier of a conditionalAccessPolicy object.</span></span> <span data-ttu-id="99f4f-152">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="99f4f-152">Read-only.</span></span>|
+|<span data-ttu-id="99f4f-153">modifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="99f4f-153">modifiedDateTime</span></span>| <span data-ttu-id="99f4f-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="99f4f-154">DateTimeOffset</span></span>|<span data-ttu-id="99f4f-155">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="99f4f-155">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="99f4f-156">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="99f4f-156">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="99f4f-157">ReadOnly.</span><span class="sxs-lookup"><span data-stu-id="99f4f-157">Readonly.</span></span> |
+|<span data-ttu-id="99f4f-158">sessionControls</span><span class="sxs-lookup"><span data-stu-id="99f4f-158">sessionControls</span></span>|[<span data-ttu-id="99f4f-159">conditionalAccessSessionControls</span><span class="sxs-lookup"><span data-stu-id="99f4f-159">conditionalAccessSessionControls</span></span>](conditionalaccesssessioncontrols.md)| <span data-ttu-id="99f4f-160">Especifica os controles de sessão que são aplicados após a entrada.</span><span class="sxs-lookup"><span data-stu-id="99f4f-160">Specifies the session controls that are enforced after sign-in.</span></span> |
+|<span data-ttu-id="99f4f-161">estado</span><span class="sxs-lookup"><span data-stu-id="99f4f-161">state</span></span>|<span data-ttu-id="99f4f-162">string</span><span class="sxs-lookup"><span data-stu-id="99f4f-162">string</span></span>| <span data-ttu-id="99f4f-163">Especifica o estado do objeto conditionalAccessPolicy.</span><span class="sxs-lookup"><span data-stu-id="99f4f-163">Specifies the state of the conditionalAccessPolicy object.</span></span> <span data-ttu-id="99f4f-164">Os valores possíveis são: `enabled` e `disabled`.</span><span class="sxs-lookup"><span data-stu-id="99f4f-164">Possible values are: `enabled`, `disabled`.</span></span> <span data-ttu-id="99f4f-165">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="99f4f-165">Required.</span></span> |
+
+## <a name="relationships"></a><span data-ttu-id="99f4f-166">Relações</span><span class="sxs-lookup"><span data-stu-id="99f4f-166">Relationships</span></span>
+
+<span data-ttu-id="99f4f-167">Nenhum</span><span class="sxs-lookup"><span data-stu-id="99f4f-167">None.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="99f4f-168">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="99f4f-168">JSON representation</span></span>
+
+<span data-ttu-id="99f4f-169">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="99f4f-169">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "displayName",
+    "description",
+    "sessionControls",
+    "grantControls"
   ],
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy",
+  "baseType": "",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
+  "conditions": {"@odata.type": "microsoft.graph.conditionalAccessConditionSet"},
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
   "displayName": "String",
-  "enforcedGrantControls": ["String"],
-  "enforcedSessionControls": ["String"],
-  "id": "String",
-  "result": "String"
+  "grantControls": {"@odata.type": "microsoft.graph.conditionalAccessGrantControls"},
+  "id": "String (identifier)",
+  "modifiedDateTime": "String (timestamp)",
+  "sessionControls": {"@odata.type": "microsoft.graph.conditionalAccessSessionControls"},
+  "state": "string"
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "conditionalAccessPolicy resource",
