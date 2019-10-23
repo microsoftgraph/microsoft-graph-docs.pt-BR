@@ -5,12 +5,12 @@ author: piotrci
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 16c165be9afe53a6540f1c5fe7faa41d88cb21b3
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 5ac971cbb06bcf7309e1bdf51afecd3b172ca2b8
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054100"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622413"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paginação de dados do Microsoft Graph em seu aplicativo 
 
@@ -22,21 +22,21 @@ Por exemplo, a URL a seguir solicita todos os usuários em uma organização com
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-Se o resultado contiver mais de cinco usuários, o Microsoft Graph retornará uma propriedade `@odata:nextLink` semelhante à mostrada a seguir, junto com a primeira página de usuários.
+Se o resultado contiver mais de cinco usuários, o Microsoft Graph retornará uma propriedade `@odata.nextLink` semelhante à mostrada a seguir, junto com a primeira página de usuários.
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
 ```
 
-Você pode recuperar a próxima página de resultados enviando o valor de URL da propriedade `@odata:nextLink` para o Microsoft Graph. 
+Você pode recuperar a próxima página de resultados enviando o valor de URL da propriedade `@odata.nextLink` para o Microsoft Graph. 
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
 
-O Microsoft Graph continuará a retornar uma referência para a próxima página de dados na propriedade `@odata:nextLink` com cada resposta até que todas as páginas do resultado sejam lidas.
+O Microsoft Graph continuará a retornar uma referência para a próxima página de dados na propriedade `@odata.nextLink` com cada resposta até que todas as páginas do resultado sejam lidas.
 
->**Importante:** Você deve incluir a URL inteira na propriedade `@odata:nextLink` na solicitação da próxima página de resultados. Dependendo da API em relação à qual a consulta está sendo realizada, o valor de URL `@odata:nextLink` conterá um parâmetro de consulta `$skiptoken` ou `$skip`. A URL também contém todos os outros parâmetros de consulta presentes na solicitação original. Não tente extrair o valor `$skiptoken` ou `$skip` e usá-lo em uma solicitação diferente. 
+>**Importante:** Você deve incluir a URL inteira na propriedade `@odata.nextLink` na solicitação da próxima página de resultados. Dependendo da API em relação à qual a consulta está sendo realizada, o valor de URL `@odata.nextLink` conterá um parâmetro de consulta `$skiptoken` ou `$skip`. A URL também contém todos os outros parâmetros de consulta presentes na solicitação original. Não tente extrair o valor `$skiptoken` ou `$skip` e usá-lo em uma solicitação diferente. 
 
 O comportamento de paginação varia entre diferentes APIs do Microsoft Graph. Ao trabalhar com dados paginados, considere o seguinte:
 

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7322c0268312a5beb61d0c7c900817e31821c6fc
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 05cdbdbc5cc044f30a3dd2f8ea63dcf6fac50222
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622503"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637564"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -28,7 +28,7 @@ Todos esses tipos de recursos de anexo são derivados do recurso [attachment](..
 
 Você pode adicionar um anexo a uma [mensagem](../resources/message.md) existente postando na coleção Attachments ou em uma nova mensagem que está sendo [rascunho](../api/user-post-messages.md), ou [criada e enviada em tempo real](../api/user-sendmail.md).
 
->**Observação**: como há atualmente um limite de 4MB no tamanho total de cada solicitação REST, em geral, isso limita o tamanho do anexo de arquivo ou item que pode ser adicionado em 4 MB. 
+>**Observação**: esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
 >
 > No entanto, se estiver anexando a uma mensagem um arquivo entre 3 MB e 150MB, você pode [criar uma sessão de carregamento](attachment-createuploadsession.md) e carregar de forma iterativa os intervalos do arquivo para anexá-lo. Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
 ## <a name="permissions"></a>Permissões

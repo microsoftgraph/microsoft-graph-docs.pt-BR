@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c3c360ad8afb96ced971aa9e4f22461ec9aa0af5
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 1d3d6c3c67b1fdb927714dc7f1848a512770a450
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37036407"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37638761"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -73,11 +73,11 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 Anexos para um [evento](../resources/event.md) no [calendário](../resources/calendar.md) do usuário especificado.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendar/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
+GET /me/calendars/{id}/events/{id}/attachments/{id}
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 
-GET /me/calendar/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}/$value
+GET /me/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
 
 <!--
@@ -88,12 +88,6 @@ GET /groups/{id}/calendar/events/{id}/attachments/{id}
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-GET /me/calendars/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}/$value
-
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 

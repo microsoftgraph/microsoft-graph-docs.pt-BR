@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 15041ab0efccf741aae7ea7b0eed4905ebc74423
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 3544152a727bc37ad610bb532ea1d1dfff1b6cc5
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621396"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637642"
 ---
 ### <a name="attachmenttype-values"></a>valores AttachmentType
 
@@ -899,3 +899,63 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |user|
 |unknownFutureValue|
 
+### <a name="conditionalaccesspolicystate"></a>conditionalAccessPolicyState
+
+|Membro|
+|:---|
+|enabled|
+|deficiência|
+
+### <a name="conditionalaccessclientapp"></a>conditionalAccessClientApp
+
+| Membro       |
+|:--------------|
+|Navegador|
+|moderno|
+|easSupported|
+|easUnsupported|
+|outro|
+
+### <a name="conditionalaccessgrantcontrol"></a>conditionalAccessGrantControl
+
+| Membro       |
+|:--------------|
+|Larga|
+|fato|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+
+### <a name="cloudappsecuritysessioncontroltype"></a>cloudAppSecuritySessionControlType
+
+| Membro       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+
+### <a name="signinfrequencytype"></a>signinFrequencyType
+
+| Membro       |
+|:--------------|
+|durante|
+|hora|
+
+### <a name="persistentbrowsersessionmode"></a>persistentBrowserSessionMode
+
+| Membro       |
+|:--------------|
+|permanente|
+|Édito|
+
+### <a name="conditionalaccessdeviceplatform"></a>conditionalAccessDevicePlatform
+
+| Membro       |
+|:--------------|
+|Android|
+|iOS|
+|Windows|
+|Windowsphonee|
+|macOS|
+|todos os|

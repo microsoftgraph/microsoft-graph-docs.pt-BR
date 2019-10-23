@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 425b3f8c3fa744c33defc7790ede0871ff60fef2
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: a8d45943ffc17c5cc949024029bd520d23895df5
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36633535"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637382"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -18,7 +18,7 @@ ms.locfileid: "36633535"
 
 Adicionar um [anexo](../resources/attachment.md) ao criar uma postagem de grupo. 
 
-Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho do anexo que você pode adicionar a 4 MB.
+Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
 
 Um anexo pode ser de um dos seguintes tipos:
 

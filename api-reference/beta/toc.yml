@@ -8246,6 +8246,22 @@
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
+            - name: Acesso Condicional
+              items:
+                - name: Políticas
+                  items:
+                    - name: Política de acesso condicional
+                      href: resources/conditionalaccesspolicy.md
+                    - name: Listar
+                      href: api/conditionalaccessroot-list-policies.md
+                    - name: Create
+                      href: api/conditionalaccessroot-post-policies.md
+                    - name: Obter
+                      href: api/conditionalaccesspolicy-get.md
+                    - name: Atualizar
+                      href: api/conditionalaccesspolicy-update.md
+                    - name: Excluir
+                      href: api/conditionalaccesspolicy-delete.md
             - name: Contratos
               href: resources/contract.md
               items:
@@ -9005,7 +9021,7 @@
               items:
                 - name: Listar blocos de anotações
                   href: api/onenote-list-notebooks.md
-                - name: Criar blocos de anotações
+                - name: Criar bloco de anotações
                   href: api/onenote-post-notebooks.md
                 - name: Listar seções
                   href: api/onenote-list-sections.md
