@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6fd375410b891c9e00532c35ef2c57aac8b793e8
+ms.openlocfilehash: c29f3912280faef09753d89be148c9f93e350053
 ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622565"
+ms.locfileid: "37633991"
 ---
 # <a name="get-manager"></a>Obter gerente
 
@@ -34,7 +34,7 @@ GET /contacts/{id}/manager
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `$select` aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -51,18 +51,38 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. 
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,

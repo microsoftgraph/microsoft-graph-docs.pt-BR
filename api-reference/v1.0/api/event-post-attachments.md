@@ -5,16 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eceb79cf733c453e9d44d7b7f1a7acdd562a2ed5
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: a09be08a90d819e7d430f9fb03c69b831a288b36
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427883"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37632590"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
-Use esta API para adicionar um [anexo](../resources/attachment.md) a um evento. Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho do anexo que você pode adicionar a 4 MB.
+Use esta API para adicionar um [anexo](../resources/attachment.md) a um evento. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Anexos de um [evento](../resources/event.md) no [calendário](../resources/calendar.md)padrão do usuário.
+Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário.
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).

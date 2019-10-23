@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f75c23e3b6b1aa79aeea0a812f7175a1b70f52e0
+ms.openlocfilehash: 01a46af833b7dc5d827d73f2fd48353e0e2b3622
 ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622577"
+ms.locfileid: "37633915"
 ---
 # <a name="list-directreports"></a>Listar directReports
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /contacts/{id}/directReports
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `$select` aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -48,17 +48,37 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contacts_get_directreports"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/{id}/directReports
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contacts-get-directreports-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contacts-get-directreports-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contacts-get-directreports-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contacts-get-directreports-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. 
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,

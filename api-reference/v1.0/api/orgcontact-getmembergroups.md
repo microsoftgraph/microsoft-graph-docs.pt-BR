@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6affc93d239caba9be65eb934b7dd0c5309660d0
+ms.openlocfilehash: bfff689d075fc874c3ce31b2992cf90286af3049
 ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622584"
+ms.locfileid: "37633965"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
@@ -58,6 +58,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_getmembergroups"
@@ -71,10 +73,28 @@ Content-length: 33
   "securityEnabledOnly": false
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-getmembergroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-getmembergroups-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-getmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/orgcontact-getmembergroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. 
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,

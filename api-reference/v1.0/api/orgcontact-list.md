@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2ced1cd140f322617d1b7a75d1af83fd938360fc
+ms.openlocfilehash: 1bab6f4bc94bff94f347c54b429a009d0e5cdf27
 ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622571"
+ms.locfileid: "37633856"
 ---
 # <a name="list-orgcontacts"></a>Listar orgContacts
 
@@ -48,17 +48,37 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_orgcontact"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-orgcontact-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-orgcontact-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-orgcontact-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-orgcontact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. 
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,
