@@ -1,5 +1,7 @@
 name: Documentos do Graph
-metadata: {}
+metadata:
+  experimental: true
+  experiment_id: b8938daf-1bcb-4f
 items:
   - name: Documentação do Microsoft Graph
     href: index.yml
@@ -82,6 +84,8 @@ items:
             href: findmeetingtimes-example.md
           - name: Obter agenda de disponibilidade
             href: outlook-get-free-busy-schedule.md
+          - name: Propor novas horas de reunião (visualização)
+            href: outlook-calendar-meeting-proposals.md
           - name: Agendar eventos recorrentes
             href: outlook-schedule-recurring-events.md
           - name: Obter eventos compartilhados
@@ -150,6 +154,8 @@ items:
             href: outlook-share-messages-folders.md
           - name: Enviar email de outro usuário
             href: outlook-send-mail-from-other-user.md
+          - name: Anexar arquivos grandes (visualização)
+            href: outlook-large-attachments.md
           - name: Organizar mensagens
             href: outlook-organize-messages.md
           - name: ID Imutável

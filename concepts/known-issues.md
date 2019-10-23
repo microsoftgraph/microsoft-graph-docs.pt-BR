@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 4895dd81a14369d5756d59ee95451f5942e246dc
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e981530f3efa38f49655427085267a9fc0206835
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792755"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37638803"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -361,6 +361,12 @@ Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a se
     ```PowerShell
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
+
+## <a name="identity-and-access"></a>Identidade e acesso
+
+### <a name="conditional-access-policies-and-named-locations"></a>Políticas de acesso condicional e locais nomeados
+
+As operações de gravação para as APIs de acesso condicional e locais nomeados exigem duas permissões: política. Policy.ReadWrite.ConditionalAccess e Directory. AccessAsUser. All. Geralmente, a permissão menos privilegiada, Policy.ReadWrite.ConditionalAccess menos privilegiada, deve ser suficiente. Neste momento, você deve adquirir um token com essas duas permissões.
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Funcionalidade disponível apenas nas APIs Graph do Azure AD ou REST do Office 365
 
