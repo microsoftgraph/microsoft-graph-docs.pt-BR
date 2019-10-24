@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ea123de2fea1efdc4647238f6a953e21d49901db
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: a851421ce76295bb2954621af9302b9eb420a8c0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418206"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622182"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -26,7 +26,7 @@ Abaixo, veja o que há de novo no Microsoft Graph e como você pode [compartilha
 ## <a name="october-2019-new-and-generally-available"></a>Outubro de 2019: Novo e geralmente disponível
 
 ### <a name="mail"></a>Email
-Use o novo parâmetro de **mensagem** para atualizar quaisquer propriedades de [mensagem](/graph/api/resources/message?view=graph-rest-1.0) graváveis ao [responder](/graph/api/message-reply?view=graph-rest-1.0) a uma mensagem, por exemplo, [adicionando um destinatário à resposta](/graph/api/message-reply#example ?view=graph-rest-1.0).
+Use o novo parâmetro de **mensagem** para atualizar quaisquer propriedades de [mensagem](/graph/api/resources/message?view=graph-rest-1.0) graváveis ao [responder](/graph/api/message-reply?view=graph-rest-1.0) a uma mensagem, por exemplo, [adicionar um destinatário à resposta](/graph/api/message-reply#example?view=graph-rest-1.0).
 
 ### <a name="users"></a>Usuários
 [Obtenha](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) ou [defina](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) as configurações preferenciais de formato de data e hora do usuário [para a caixa de correio do usuário](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
@@ -36,8 +36,16 @@ Use o novo parâmetro de **mensagem** para atualizar quaisquer propriedades de [
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
 
+### <a name="calendar"></a>Calendário
+
+Os organizadores de reuniões podem [permitir que os convidados proponham horários de reunião alternativos ](outlook-calendar-meeting-proposals.md). Ao receber uma resposta de reunião que inclua um horário alternativo proposto, o organizador pode decidir aceitar a proposta e [atualizar](/graph/api/event-update?view=graph-rest-beta) o horário da reunião.
+
 ### <a name="groups"></a>Grupos
 Use as propriedades **hideFromAddressLists** e **hideFromOutlookClients** para controlar a visibilidade de um [grupo](/graph/api/resources/group?view=graph-rest-beta) em determinadas partes da interface do usuário do Outlook ou em um cliente do Outlook.
+
+### <a name="mail"></a>Email
+
+[Anexe arquivos grandes de até 150MB](outlook-large-attachments.md) a uma instância de [mensagem](/graph/api/resources/message?view=graph-rest-beta), criando uma [sessão de upload](/graph/api/resources/uploadsession?view=graph-rest-beta) e carregando iterativamente os intervalos do arquivo até que todos os bytes do arquivo tenham sido carregados. 
 
 ## <a name="september-2019-new-and-generally-available"></a>Setembro de 2019: novo e disponível para o público geral
 
