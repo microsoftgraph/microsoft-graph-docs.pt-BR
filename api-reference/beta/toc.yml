@@ -111,6 +111,8 @@
           href: /graph/sdks/create-client?context=graph/api/beta
         - name: Escolher um provedor de autenticação.
           href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+        - name: Criar solicitações
+          href: /graph/sdks/create-requests?context=graph/api/beta
     - name: Usar o kit de ferramentas (visualização)
       items:
         - name: Visão geral do kit de ferramentas
@@ -355,7 +357,7 @@
                   href: api/planneruser-list-recentplans.md
                 - name: Listar as tarefas atribuídas ao usuário
                   href: api/planneruser-list-tasks.md
-            - name: Trabalho em equipe
+            - name: Teamwork
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -8269,6 +8271,48 @@
                   href: api/contract-get.md
                 - name: Listar contratos
                   href: api/contract-list.md
+            - name: Acesso Condicional
+              items:
+                - name: Locais nomeados
+                  items:
+                    - name: Local nomeado
+                      items:
+                        - name: Local nomeado
+                          href: resources/namedlocation.md
+                        - name: Listar
+                          href: api/conditionalaccessroot-list-namedlocations.md
+                        - name: Obter
+                          href: api/namedlocation-get.md
+                        - name: Excluir
+                          href: api/namedlocation-delete.md
+                    - name: Localização nomeada do país
+                      items:
+                        - name: Localização nomeada do país
+                          href: resources/countrynamedlocation.md
+                        - name: Listar
+                          href: api/conditionalaccessroot-list-namedlocations.md
+                        - name: Create
+                          href: api/conditionalaccessroot-post-namedlocations.md
+                        - name: Obter
+                          href: api/countrynamedlocation-get.md
+                        - name: Atualizar
+                          href: api/countrynamedlocation-update.md
+                        - name: Excluir
+                          href: api/countrynamedlocation-delete.md
+                    - name: Local nomeado por IP
+                      items:
+                        - name: Local nomeado por IP
+                          href: resources/ipnamedlocation.md
+                        - name: Listar
+                          href: api/conditionalaccessroot-list-namedlocations.md
+                        - name: Create
+                          href: api/conditionalaccessroot-post-namedlocations.md
+                        - name: Obter
+                          href: api/ipnamedlocation-get.md
+                        - name: Atualizar
+                          href: api/ipnamedlocation-update.md
+                        - name: Excluir
+                          href: api/ipnamedlocation-delete.md
             - name: Operações de política de dados
               href: resources/datapolicyoperation.md
               items:
@@ -8845,7 +8889,7 @@
         - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/mail-api-overview.md
             - name: Mensagem
               href: resources/message.md
@@ -9021,7 +9065,7 @@
               items:
                 - name: Listar blocos de anotações
                   href: api/onenote-list-notebooks.md
-                - name: Criar bloco de anotações
+                - name: Criar blocos de anotações
                   href: api/onenote-post-notebooks.md
                 - name: Listar seções
                   href: api/onenote-list-sections.md
@@ -9433,7 +9477,7 @@
         - name: Segurança
           displayname: 'Security API, Microsoft Graph Security API'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/security-api-overview.md
             - name: Ações
               href: resources/securityaction.md
@@ -9709,7 +9753,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
@@ -10085,7 +10129,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md
