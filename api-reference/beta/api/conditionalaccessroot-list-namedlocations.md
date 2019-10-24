@@ -1,0 +1,334 @@
+---
+title: Listar namedLocations
+description: Obtenha uma lista de objetos namedLocation.
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 4f5f7d52efa504df499e50cd3ebaa37359255493
+ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37653808"
+---
+# <a name="list-namedlocations"></a>Listar namedLocations
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Obtenha uma lista de objetos [namedLocation](../resources/namedlocation.md) .
+
+## <a name="permissions"></a>Permissões
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /conditionalAccess/namedLocations
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método oferece suporte `$count`aos `$filter`parâmetros `$orderBy`de `$select`consulta `$skip`do, `$top` ,,, e OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome      |Descrição|
+|:----------|:----------|
+| Autorização | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [namedLocation](../resources/namedlocation.md) no corpo da resposta.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-list-all-namedlocations"></a>Exemplo 1: listar todos os namedLocations
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "06e4ff15-ca6b-4843-9c34-3fdd1ce8f739",
+            "displayName": "IPv4 named location",
+            "modifiedDateTime": "2019-07-26T18:00:43.5796446Z",
+            "createdDateTime": "2018-06-22T11:56:12Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "6.5.4.3/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "127.126.125.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "1b7f0916-7677-40d8-97a1-d606f4ed8fcf",
+            "displayName": "Country named location",
+            "modifiedDateTime": "2018-09-10T16:54:53.7238848Z",
+            "createdDateTime": "2018-09-10T16:54:53.7238848Z",
+            "countriesAndRegions": [
+                "US",
+                "CA"
+            ],
+            "includeUnknownCountriesAndRegions": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05239353-9117-4d29-a6a1-89724cb61b8c",
+            "displayName": "Trusted IPv6 named location",
+            "modifiedDateTime": "2019-09-16T00:47:36.4967092Z",
+            "createdDateTime": "2019-09-15T21:53:34.5001162Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80e8:7:d92a:7695:fda1:9d62/48"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80d8:7:d92a:7695:fda1:9d62/48"
+                }
+            ]
+        }
+    ]
+}
+```
+### <a name="example-2-list-all-ipnamedlocations"></a>Exemplo 2: listar todos os ipNamedLocations
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "06e4ff15-ca6b-4843-9c34-3fdd1ce8f739",
+            "displayName": "IPv4 named location",
+            "modifiedDateTime": "2019-07-26T18:00:43.5796446Z",
+            "createdDateTime": "2018-06-22T11:56:12Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "6.5.4.3/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "127.126.125.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05239353-9117-4d29-a6a1-89724cb61b8c",
+            "displayName": "Trusted IPv6 named location",
+            "modifiedDateTime": "2019-09-16T00:47:36.4967092Z",
+            "createdDateTime": "2019-09-15T21:53:34.5001162Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80e8:7:d92a:7695:fda1:9d62/48"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80d8:7:d92a:7695:fda1:9d62/48"
+                }
+            ]
+        }
+    ]
+}
+```
+### <a name="example-3-list-all-namedlocations-created-after-a-certain-date"></a>Exemplo 3: listar todos os namedLocations criados após uma determinada data
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=createdDateTime ge 2019-09-01T00:00:00Z
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05239353-9117-4d29-a6a1-89724cb61b8c",
+            "displayName": "Trusted IPv6 named location",
+            "modifiedDateTime": "2019-09-16T00:47:36.4967092Z",
+            "createdDateTime": "2019-09-15T21:53:34.5001162Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80e8:7:d92a:7695:fda1:9d62/48"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80d8:7:d92a:7695:fda1:9d62/48"
+                }
+            ]
+        }
+    ]
+}
+```
+### <a name="example-4-list-all-countrynamedlocations-containing-a-certain-country-or-region"></a>Exemplo 4: listar todos os countryNamedLocations contendo um determinado país ou região
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "1b7f0916-7677-40d8-97a1-d606f4ed8fcf",
+            "displayName": "Country named location",
+            "modifiedDateTime": "2018-09-10T16:54:53.7238848Z",
+            "createdDateTime": "2018-09-10T16:54:53.7238848Z",
+            "countriesAndRegions": [
+                "US",
+                "CA"
+            ],
+            "includeUnknownCountriesAndRegions": false
+        }
+    ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List namedLocations",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
