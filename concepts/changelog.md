@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2250f2afd44f37e1833a7dad5f49d37cd6bae965
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: ef8baacbfd864dd20ca6fe15a4a4e725b0b6e682
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "37598251"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621665"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,16 +18,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="october-2019"></a>Outubro de 2019
 
-### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+### <a name="calendar"></a>Calendário
 
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição | Beta e v1.0 | Propriedade **securityIdentifier** adicionada ao recurso [groupo](/graph/api/resources/group?view=graph-rest-1.0). |
-| Adição | Beta e v1.0 | Propriedade **mdmAppId** adicionada ao recurso [dispositivo](/graph/api/resources/group?view=graph-rest-1.0). |
-| Adição | Beta | As propriedades **fabricante** e **modelo**da entidade [dispositivo](/graph/api/resources/device?view=graph-rest-beta). |
-| Adição | v1.0 | Adicionada nova entidade [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
-| Adição | v1.0 | Adicionado novo tipo de complexo [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
-| Adição | v1.0 | Adicionada uma nova relação para o **certificateBasedAuthConfiguration** do recurso da [organização](/graph/api/resources/organization?view=graph-rest-v1.0). Isso permite [uma autenticação baseada em certificado do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
+Os organizadores da reunião podem permitir propostas de horário de reunião, e os convidados podem sugerir horários de reunião alternativos.
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Adicionada a propriedade **allowNewTimeProposals** às entidades [event](/graph/api/resources/event?view=graph-rest-beta) e [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). |
+| Adição | Beta | Foi adicionado o parâmetro opcional **proposedNewTime** aos métodos [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-beta) e [decline](/graph/api/event-decline?view=graph-rest-beta) de **event**. |
+| Adição | Beta | Adicionada a entidade [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) que se baseia em [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta) e, além disso, incluídas as propriedades **proposedNewTime** e **responseType**. |
+| Adição | Beta | Adicionada a propriedade **proposedNewTime** ao tipo complexo [attendee](/graph/api/resources/attendee?view=graph-rest-beta). |
+
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -102,10 +103,26 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | Beta          |Adicionadas as propriedades **hideFromAddressLists** e **hideFromOutlookClients** à entidade do [grupo](/graph/api/resources/group?view=graph-rest-beta), para controlar a visibilidade de um grupo na interface de usuário do Outlook.|
 | Adição | Beta | O [group: assignLicense API](/graph/api/group-assignlicense?view=graph-rest-beta) foi adicionado, o que pode ser usado para atribuir uma licença a uma [group](/graph/api/resources/group?view=graph-rest-beta). |
 
+### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | v1.0 | Adicionado novo recurso [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0). Esses contatos são gerenciados pela organização e são diferentes dos [contatos pessoais](outlook-contacts-concept-overview.md)|
+| Adição | v1.0 | Adicionado novo recurso [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0). |
+| Adição | Beta e v1.0 | Propriedade **securityIdentifier** adicionada ao recurso [groupo](/graph/api/resources/group?view=graph-rest-1.0). |
+| Adição | Beta e v1.0 | Propriedade **mdmAppId** adicionada ao recurso [dispositivo](/graph/api/resources/group?view=graph-rest-1.0). |
+| Adição | Beta | As propriedades **fabricante** e **modelo**da entidade [dispositivo](/graph/api/resources/device?view=graph-rest-beta). |
+| Adição | v1.0 | Adicionada nova entidade [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
+| Adição | v1.0 | Adicionado novo tipo de complexo [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
+| Adição | v1.0 | Adicionada uma nova relação para o **certificateBasedAuthConfiguration** do recurso da [organização](/graph/api/resources/organization?view=graph-rest-v1.0). Isso permite [uma autenticação baseada em certificado do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
+
 ### <a name="mail-outlook"></a>Email (Outlook)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Adição        | Beta          | [Adicionando anexos de arquivo de até 150 MB](outlook-large-attachments.md) a uma instância de [mensagem](/graph/api/resources/message?view=graph-rest-beta). |
+| Adição        | Beta          | O tipo complexo [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-beta), a ação [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) para a entidade de [anexo](/graph/api/resources/attachment?view=graph-rest-beta) e a enumeração **attachmentType**. |
+| Alterado         | Beta          | Estendida a entidade [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) existente que foi usada pelo [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) para que esta se aplique ao **anexo** também. |
 | Adição        | v1.0          | Adicionado o parâmetro **mensagem** ao método para [responder uma mensagem rapidamente](/graph/api/message-reply?view=graph-rest-1.0). |
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
@@ -118,7 +135,8 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="users"></a>Usuários
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição | beta | O [user: reprocessLicenseAssignment do ](/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/mailboxsettings?view=graph-rest-beta). |
+| Adição | v1.0 | Adicionada a nova propriedade **lastPasswordChangeDateTime** ao recurso de [usuário](/graph/api/resources/user?view=graph-rest-v1.0). |
+| Adição | beta | O [user: reprocessLicenseAssignment do ](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/user?view=graph-rest-beta). |
 
 ### <a name="users--outlook-settings"></a>Usuários | Configurações do Outlook
 

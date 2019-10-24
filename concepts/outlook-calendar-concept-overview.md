@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 scenarios: getting-started
-ms.openlocfilehash: bbcf0f7ab8061309b7864913b15dad427a86e889
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b245261e8e0840932cbfc5a8d37a70196dce27f1
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792993"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621382"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
@@ -105,6 +105,7 @@ Está procurando a referência de API para esse serviço?
   - [Encontrar possíveis horários de reunião no calendário do Outlook](findmeetingtimes-example.md)
   - [Obter informações de disponibilidade de usuários e recursos](outlook-get-free-busy-schedule.md)
   - [Agendar compromissos repetidos como eventos recorrentes no Outlook](outlook-schedule-recurring-events.md)
+  - [Propor horários de reunião em um calendário do Outlook](outlook-calendar-meeting-proposals.md)
   - [Obter eventos compartilhados](outlook-get-shared-events-calendars.md)
   - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
 - Examine a referência da [API de calendário](/graph/api/resources/calendar?view=graph-rest-1.0) do Outlook.
