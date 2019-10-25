@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 116b73b53689c01e346568b6b5d67e56fb31b283
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 541173547ba8222ca5b64cb3396e972be5b017fc
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621599"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37719450"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "37621599"
 
 Criar uma sessão de carregamento que permite que um aplicativo carregue intervalos de um arquivo de forma iterativa, para anexar o arquivo à [mensagem](../resources/message.md)especificada.
 
-Use essa abordagem para anexar arquivos de tamanhos entre 3 MB e 150MB a uma **mensagem**. Para anexar arquivos de tamanhos em 4 MB, basta [postar na propriedade de navegação Attachments](message-post-attachments.md). 
+Use essa abordagem para anexar arquivos de tamanhos entre 3 MB e 150 MB a uma **mensagem**. Para anexar arquivos de tamanhos abaixo de 4 MB, basta [postar na propriedade de navegação Attachments](message-post-attachments.md). 
 
 Como parte da resposta, esta ação retorna uma URL de upload que você pode usar em consultas sequenciais `PUT` subsequentes. Os cabeçalhos de solicitação `PUT` para cada operação permitem que você especifique o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja interrompida durante o carregamento. 
 
@@ -31,6 +31,8 @@ A seguir estão as etapas para anexar um arquivo usando uma sessão de carregame
 
 Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
 
+> [!TIP]
+> O Exchange Online permite que os administradores personalizem o limite de tamanho de mensagens de caixas de correio do Office 365, incluindo qualquer anexo de mensagem. Por padrão, esse limite de tamanho de mensagem é de 35 MB. Descubra como [Personalizar o tamanho máximo da mensagem](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) para dar suporte a anexos maiores que o limite padrão para o seu locatário. 
 
 ## <a name="permissions"></a>Permissões
 
@@ -85,6 +87,8 @@ Veja a seguir um exemplo de como chamar essa API.
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -103,6 +107,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

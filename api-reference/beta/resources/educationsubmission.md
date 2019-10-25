@@ -5,18 +5,18 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 27467548339dc01f7c95fe55bda159c0569c38ba
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 325eb9772e350848dbf35f9832282cb92a7fda86
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173038"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726384"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso educationSubmission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os envios são propriedade de uma atribuição. Um envio representa os recursos que um indivíduo (ou grupo) liga para uma atribuição e a grade/comentários que é retornado.
+Os envios são propriedade de uma atribuição. Um envio representa os recursos que um indivíduo (ou grupo) liga para uma atribuição e os resultados (como notas ou comentários) associados ao envio.
 Os envios são criados automaticamente quando uma atribuição é publicada. O envio possui duas listas de recursos. Os recursos representam a área de trabalho usuários/grupos enquanto os recursos enviados representam os recursos que foram ativamente ativados pelos alunos.  
 
 >**Observação:** O status é somente leitura e o objeto é movido através do fluxo de trabalho via ações. 
@@ -29,7 +29,6 @@ Os envios são criados automaticamente quando uma atribuição é publicada. O e
 |[Listar recursos](../api/educationsubmission-list-resources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
 |[Listar submittedResources](../api/educationsubmission-list-submittedresources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
 |[Resultados de lista](../api/educationsubmission-list-outcomes.md) |coleção [educationOutcome](educationoutcome.md)| Obtenha uma coleção de objetos **educationOutcome** .|
-|[Atualização](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Atualize um objeto **educationSubmission** . |
 |[Enter](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Um professor usa Return para indicar que os notas/comentários podem ser mostrados para o aluno.|
 |[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa Submit para ativar a atribuição. Isso copiará os recursos na pasta **submittedResources** para a gradação e atualizará o status.|
 |[Não enviar](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Um aluno usa o não enviar para mover o estado do envio de enviado de volta para o trabalho. Isso copiará os recursos na pasta **workingResources** para a gradação e atualizará o status.|
@@ -37,27 +36,24 @@ Os envios são criados automaticamente quando uma atribuição é publicada. O e
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comentários|[educationFeedback](educationfeedback.md)|Retém a propriedade feedback que armazena as notas do professor de volta para os alunos.|
-|grade|[educationAssignmentGrade](educationassignmentgrade.md)|Contém as informações de nota que um professor atribui a esse envio.|
-|id|String| Somente leitura.|
 |destinatário|[educationSubmissionRecipient](educationsubmissionrecipient.md)|A quem esse envio é atribuído.|
 |releasedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para liberado.|
-|releasedDateTime|DateTimeOffset|Momento no momento em que o envio foi lançado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|releasedDateTime|DateTimeOffset|Momento no momento em que o envio foi lançado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |returnedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para o retornado.|
-|returnedDateTime|DateTimeOffset|Momento no momento em que o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|String|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
+|returnedDateTime|DateTimeOffset|Momento no momento em que o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|resourcesFolderUrl|Cadeia de Caracteres|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
 |status|cadeia de caracteres| Somente Leitura. Os valores possíveis são: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso para o estado enviado.|
-|submittedDateTime|DateTimeOffset|Momento no momento em que o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|submittedDateTime|DateTimeOffset|Momento no momento em que o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |unsubmittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso de enviado para o estado de trabalho.|
-|unsubmittedDateTime|DateTimeOffset|Momento no momento em que o envio foi movido de enviado para o estado de trabalho. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|unsubmittedDateTime|DateTimeOffset|Momento no momento em que o envio foi movido de enviado para o estado de trabalho. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |recursos|coleção [educationSubmissionResource](educationsubmissionresource.md)| Anulável.|
 |submittedResources|coleção [educationSubmissionResource](educationsubmissionresource.md)| Somente leitura. Anulável.|
-|resultados|coleção [educationOutcome](educationOutcome.md)|Somente leitura. Anulável.|
+|resultados|coleção [educationOutcome](educationOutcome.md) . Contém notas, comentários e/ou rubrics informações que o professor atribui a esse envio|Leitura-gravação. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -74,8 +70,6 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-    "feedback":{"@odata.type":"microsoft.graph.educationFeedback"},
-    "grade":{"@odata.type":"microsoft.graph.educationAssignmentGrade"},
     "id":"String (identifier)",
     "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
     "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},

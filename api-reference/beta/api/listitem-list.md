@@ -6,12 +6,12 @@ title: Recuperar itens de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 19f810c2d4f71f2bc296ecd590a493cd22e30f22
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1cd2bdf856f89068708ac670c239b6d27fd7ded2
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726155"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726296"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 
@@ -19,7 +19,7 @@ ms.locfileid: "36726155"
 
 Obter a coleção de [itens][item] em uma [lista][].
 
-[list]: ../resources/list.md
+[lista]: ../resources/list.md
 [item]: ../resources/listitem.md
 
 ## <a name="permissions"></a>Permissões
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
+GET /sites/{site-id}/lists/{list-id}/items
+GET /sites/{site-id}/lists/{list-id}/items?expand=fields
+GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
 ## <a name="example"></a>Exemplo
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

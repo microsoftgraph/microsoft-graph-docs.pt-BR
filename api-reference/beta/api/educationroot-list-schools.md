@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d719268a8b3e6ff044e928485449320b77bbeff4
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 53913b3c194100b7484faf62081d1be6180b5aec
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37581199"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37724652"
 ---
 # <a name="list-educationschools"></a>Listar educationSchools
 
@@ -24,14 +24,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | EduRoster.ReadBasic                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
-```http GET /education/schools
+```http 
+GET /education/schools
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

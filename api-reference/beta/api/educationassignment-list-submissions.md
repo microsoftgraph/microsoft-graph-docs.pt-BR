@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 236c5dc88a50ad537f2142cc3a8e8dc5084c2c5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0aa4e8119ba1d06d11e703545300411cf70d561
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955639"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37724554"
 ---
 # <a name="list-submissions"></a>Envios de lista
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | Sem suporte. | 
+|Application | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -73,30 +73,6 @@ Content-length: 873
 {
   "value": [
     {
-      "feedback": {
-        "text": {
-          "content": "Good work!",
-          "contentType": "Text"
-        },
-        "feedbackDateTime": "2014-01-01T00:00:00Z",
-        "feedbackBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-          "@odata.type": "microsoft.graph.identitySet"
-        },
-        "@odata.type": "microsoft.graph.educationFeedback"
-        },
-      "grade": {
-         "gradedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-        "gradedDateTime": "2014-01-01T00:00:00Z"
-      },
       "id": "33223",
       "recipient": {
         "userId": "13015",

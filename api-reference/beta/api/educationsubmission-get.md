@@ -5,20 +5,20 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d33fea58845fb9c9034d4fef100e3393bcdd4188
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae29f712aab1cd767b0c5e65d74eca7a487af4d8
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955122"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726207"
 ---
 # <a name="get-educationsubmission"></a>Obter educationSubmission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um determinado envio. Um objeto de envio representa o trabalho de um aluno para uma atribuição. Os recursos associados ao envio representam esse trabalho. Somente o aluno ao qual o envio é atribuído pode ver e modificar o envio. Um professor tem acesso total a todos os envios. 
+Recupere um determinado envio. Um objeto de envio representa o trabalho de um aluno para uma atribuição. Os recursos associados ao envio representam esse trabalho. Somente o aluno ao qual o envio é atribuído pode ver e modificar o envio. Um professor tem acesso total a todos os envios.
 
-A classificação e os comentários de um professor também fazem parte desse objeto. Somente os professores podem adicionar ou alterar notas e comentários. Os alunos não verão a nota ou os comentários até que a atribuição tenha sido liberada. As permissões básicas não incluem a classificação e o feedback, mas incluem tudo o mais.
+A classificação e os comentários de um professor fazem parte do [educationOutcome](../resources/educationoutcome.md) associado a este objeto. Somente os professores podem adicionar ou alterar notas e comentários. Os alunos não verão a nota ou os comentários até que a atribuição tenha sido liberada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -72,29 +72,6 @@ Content-type: application/json
 Content-length: 712
 
 {
-    "feedback": {
-      text: {
-        "content": "Good work!",
-        "contentType": "Text"
-      },
-      feedbackDateTime: "2014-01-01T00:00:00Z",
-      feedbackBy: {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012"
-        }
-      },
-      "@odata.type": "microsoft.graph.educationFeedback"
-      },
-      "grade": {
-         "gradedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-        "gradedDateTime": "2014-01-01T00:00:00Z"
-      },
       "id": "33223",
       "recipient": {
         "userId": "13015"

@@ -6,12 +6,12 @@ title: Lista as listas do SharePoint em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8175f3c30f481c937529879932a8cb60799184ca
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0e365b1ee5a1f9bed585f2de557f24279c044b86
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724005"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726327"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET /sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>Exemplo
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-lists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

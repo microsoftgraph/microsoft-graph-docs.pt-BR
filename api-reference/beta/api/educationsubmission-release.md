@@ -5,18 +5,18 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ddf437c60ae4ca56a800bd82b081b149a686eabe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ac32d42367d68e405263c66a9bdd980bb652ae5
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955069"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726190"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: versão
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Esta ação faz com que a classificação e os comentários associados a esse envio estejam disponíveis para o aluno. Isso alterará o status do envio de "enviado" para "lançado" e indicará que a gradação foi feita. Esta ação só pode ser feita pelo professor.
+Esta ação faz com que o [educationOutcome](../resources/educationoutcome.md) inclua notas ou comentários associados a esse envio disponível ao aluno. Isso alterará o status do envio de "enviado" para "lançado" e indicará que a gradação foi feita. Esta ação só pode ser feita pelo professor.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

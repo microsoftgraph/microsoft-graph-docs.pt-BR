@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: Pesquisar em um locatário do SharePoint para sites que correspondam a palavras-chave fornecidas.
+description: Pesquise num locatário do SharePoint por sites que correspondam a palavras-chave fornecidas.
 ms.date: 09/10/2017
 title: Localizar sites do SharePoint por palavra-chave
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8e1ab05789438d793cd10ec2598c62bdec0414c3
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: 89b55be4ab81d59be37e2b3d20ff84a51f75991b
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113895"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726231"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
@@ -32,7 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
-
+```http
+GET /sites?$search={query}
+```
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
@@ -48,7 +50,7 @@ GET https://graph.microsoft.com/beta/sites?$search={query}
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
