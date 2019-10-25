@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 scenarios: getting-started
-ms.openlocfilehash: 749d97ed3181852751996792e07ca4c573bb1c60
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: c5d00f5940c547a1f95381144f4a2af56f3ab125
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792846"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726405"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
@@ -49,7 +49,7 @@ Com a API de tarefas, o seu aplicativo pode interagir com o serviço de tarefas 
 Vejamos a seguir exemplos de alguns cenários habilitados pela API de tarefas:
 
 - [Adicionar uma tarefa que se vincula ao seu aplicativo](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
-- [Atribuir notas a alunos individuais para as tarefas vinculadas ao seu aplicativo](/graph/api/educationsubmission-update?view=graph-rest-beta)
+- [Atribuir resultados como notas a alunos individuais para as tarefas vinculadas ao seu aplicativo](/graph/api/educationoutcome-update?view=graph-rest-beta)
 - [Criar um painel do aluno para mostrar as tarefas cuja data de entrega já passou](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
 
 
