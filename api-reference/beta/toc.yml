@@ -875,7 +875,7 @@
         - name: Experiências entre dispositivos
           displayName: Project Rome
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/project-rome-overview.md
             - name: Listar os dispositivos do usuário
               href: api/user-list-devices.md
@@ -7710,8 +7710,6 @@
                   href: api/educationsubmission-list-outcomes.md
                 - name: Obter recurso enviado
                   href: api/educationsubmittedsubmissionresource-get.md
-                - name: Classificar envio
-                  href: api/educationsubmission-update.md
                 - name: Retornar envio
                   href: api/educationsubmission-return.md
             - name: Conseqüências
@@ -8248,7 +8246,7 @@
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
-            - name: Acesso Condicional
+            - name: Acesso condicional
               items:
                 - name: Políticas
                   items:
@@ -8264,15 +8262,6 @@
                       href: api/conditionalaccesspolicy-update.md
                     - name: Excluir
                       href: api/conditionalaccesspolicy-delete.md
-            - name: Contratos
-              href: resources/contract.md
-              items:
-                - name: Obter contrato
-                  href: api/contract-get.md
-                - name: Listar contratos
-                  href: api/contract-list.md
-            - name: Acesso Condicional
-              items:
                 - name: Locais nomeados
                   items:
                     - name: Local nomeado
@@ -8313,6 +8302,13 @@
                           href: api/ipnamedlocation-update.md
                         - name: Excluir
                           href: api/ipnamedlocation-delete.md
+            - name: Contratos
+              href: resources/contract.md
+              items:
+                - name: Obter contrato
+                  href: api/contract-get.md
+                - name: Listar contratos
+                  href: api/contract-list.md
             - name: Operações de política de dados
               href: resources/datapolicyoperation.md
               items:
