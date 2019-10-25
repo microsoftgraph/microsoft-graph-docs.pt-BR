@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 168e11eeb67bf5c53514c032a16e16e84cddca5b
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 57dff2056c2ebaafc7d5b5ac752f9261e7169010
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638817"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726485"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -102,6 +102,12 @@ Os organizadores da reunião podem permitir propostas de horário de reunião, e
 |Exclusão|beta|O membro **error **foi removido ao tipo de enumeração [runState ](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta)|
 |Adição|beta|O membro**userExperienceAnalytics ** foi adicionado ao tipo de enumeração[windowsHealthMonitoringScope ](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta)|
 
+### <a name="education"></a>Educação
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Exclusão | beta | Foi removida a [classificação](https://developer.microsoft.com/pt-BR/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta) de propriedades obsoletas **anunciada anteriormente** e o **feedback** de [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta). O acesso a notas e feedbacks já está disponível por meio de [educationOutcome](/graph/api/educationsubmission-list-outcome?view=graph-rest-beta)|
+
 ### <a name="groups"></a>Grupos
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -149,6 +155,12 @@ Os organizadores da reunião podem permitir propostas de horário de reunião, e
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | V1.0        | As propriedades **dateFormat** e **timeFormat** no recurso [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). As propriedades representam os formatos de data e hora escolhidos pelo usuário.|
+
+### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | beta | A API [namedLocation](/graph/api/resources/namedLocation?view=graph-rest-beta)adicionada, representa os locais nomeados no acesso condicional do Azure AD. |
 
 ## <a name="september-2019"></a>Setembro de 2019
 
