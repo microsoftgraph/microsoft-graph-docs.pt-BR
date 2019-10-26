@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 019b309a4c789cef3da5e8ac6f0ccc0aabbe13e3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 32b6314409bd9253e85d8a9df31cf005d0fe3983
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722101"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734469"
 ---
 # <a name="list-trustframeworkpolicies"></a>Listar trustFrameworkPolicies
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy. Read. TrustFramework, Policy. Read. All|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Aplicativo|Policy.Read.All|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-trustframeworks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-trustframeworks-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
