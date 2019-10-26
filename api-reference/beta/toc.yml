@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -801,7 +801,7 @@
         - name: Comunicações em nuvem
           displayName: Cloud communications
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/communications-api-overview.md
             - name: Chamada
               href: resources/call.md
@@ -8882,6 +8882,40 @@
                   href: api/trustframework-put-trustframeworkpolicy.md
                 - name: Excluir
                   href: api/trustframeworkpolicy-delete.md
+            - name: Conjunto de chaves de estrutura de confiança
+              href: resources/trustframeworkkeyset.md
+              items:
+                - name: Listar
+                  href: api/trustframework-list-keysets.md
+                - name: Criar
+                  href: api/trustframework-post-keysets.md
+                - name: Obter
+                  href: api/trustframeworkkeyset-get.md
+                - name: Atualizar
+                  href: api/trustframeworkkeyset-update.md
+                - name: Excluir
+                  href: api/trustframeworkkeyset-delete.md
+                - name: Gerar chave
+                  href: api/trustframeworkkeyset-generatekey.md
+                - name: Obter chave ativa
+                  href: api/trustframeworkkeyset-getactivekey.md
+                - name: Carregar certificado
+                  href: api/trustframeworkkeyset-uploadcertificate.md
+                - name: Carregar chave privada
+                  href: api/trustframeworkkeyset-uploadpkcs12.md
+                - name: Carregar segredo
+                  href: api/trustframeworkkeyset-uploadsecret.md
+            - name: Fluxos de usuário
+              href: resources/identityuserflow.md
+              items:
+                - name: Listar
+                  href: api/identityuserflow-list.md
+                - name: Criar
+                  href: api/identityuserflow-post-userflows.md
+                - name: Obter
+                  href: api/identityuserflow-get.md
+                - name: Excluir
+                  href: api/identityuserflow-delete.md
         - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
