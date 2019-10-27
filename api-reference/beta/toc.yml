@@ -8885,6 +8885,8 @@
             - name: Conjunto de chaves de estrutura de confiança
               href: resources/trustframeworkkeyset.md
               items:
+                - name: Chave da estrutura de confiança
+                  href: resources/trustframeworkkey.md
                 - name: Listar
                   href: api/trustframework-list-keysets.md
                 - name: Criar
@@ -8901,7 +8903,7 @@
                   href: api/trustframeworkkeyset-getactivekey.md
                 - name: Carregar certificado
                   href: api/trustframeworkkeyset-uploadcertificate.md
-                - name: Carregar chave privada
+                - name: Carregar o certificado PKCS12
                   href: api/trustframeworkkeyset-uploadpkcs12.md
                 - name: Carregar segredo
                   href: api/trustframeworkkeyset-uploadsecret.md
