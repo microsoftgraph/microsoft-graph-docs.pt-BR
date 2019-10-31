@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3c13ff99bbd4bfbbcfae32fd2d60f755d6b9f15a
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2632dfa8395d7ad68ae280e448eb095582827dd2
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356807"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538529"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -119,7 +119,7 @@ O exemplo a seguir mostra uma solicitação.
   "blockType": "request",
   "name": "get_other_user"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

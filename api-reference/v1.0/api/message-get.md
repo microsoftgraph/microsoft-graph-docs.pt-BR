@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fbaf9d07e031369c004ce795b060a303fc8d2575
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+ms.openlocfilehash: 3dfb0f3d7f6d30bb04b635330a3ceca68b6df9f0
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041941"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538830"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -245,7 +245,7 @@ O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```

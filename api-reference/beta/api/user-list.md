@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eac2031d6de80937598a66dd6086e7419dff3f1f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a4649cc8c0e3133553156725a1fc0455cf08cf36
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357539"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37524521"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -134,7 +134,7 @@ Encontrar uma conta de usuário em um locatário B2C usando um nome de entrada (
   "blockType": "request",
   "name": "get_signinname_users"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
