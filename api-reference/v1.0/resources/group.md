@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 8b9b13f10ed63de8f453355113cdc42da69139a3
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: cc5606b6a09f0acdafc1aa4a312b1a0127ad0884
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699118"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538998"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -129,6 +129,7 @@ Esse recurso permite:
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para filtrar expressões em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura.|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|securityIdentifier|Cadeia de Caracteres|Identificador de segurança do grupo, usado em cenários do Windows. <br><br>Retornado por padrão.|
 |unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. <br><br>Retornado apenas em $select. |
 |visibility|String| Especifica a visibilidade de um grupo do Office 365. Valores possíveis são: `Private`, `Public`, ou `Hiddenmembership`; valores em branco são tratados como públicos.  Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options).<br>A visibilidade só pode ser configurada quando um grupo é criado, ela não é editável.<br>A visibilidade tem suporte apenas para grupos unificados; Não há suporte para grupos de segurança. <br><br>Retornado por padrão.|
 
@@ -332,6 +333,7 @@ Veja a seguir uma representação JSON do recurso.
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
+  "securityIdentifier": "String",
   "unseenCount": 1024,
   "visibility": "string",
   "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],

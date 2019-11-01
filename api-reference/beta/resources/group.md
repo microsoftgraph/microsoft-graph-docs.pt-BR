@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e9a6c55dc65b11c130f63bd1e112911d49808d7d
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 91fcc069fa3262a536f306c719683eb6df6f15f1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418311"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536620"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -59,8 +59,9 @@ Esse recurso permite:
 |[Excluir configuração](../api/directorysetting-delete.md) | None |Excluir um objeto de configuração. |
 |[Listar pontos de extremidade](../api/group-list-endpoints.md) |conjunto [ponto de extremidade](endpoint.md) | Obtenha uma coleção de o objeto ponto de extremidade. |
 |[Obter o ponto de extremidade](../api/endpoint-get.md) | [ponto de extremidade](endpoint.md) | Leia as propriedades e os relacionamentos do objeto ponto de extremidade. |
-|[validateProperties](../api/group-validateproperties.md)|JSON| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. | 
-|**Calendário**| | |
+|[validateProperties](../api/group-validateproperties.md)|JSON| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. |
+|[assignLicense](../api/group-assignlicense.md) | [group](group.md) |Adicione ou remova assinaturas para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
+|**Calendar**| | |
 |[Criar evento](../api/group-post-events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
 |[Obter evento](../api/group-get-event.md) |[event](event.md)|Ler as propriedades de um objeto event.|
 |[Listar eventos](../api/group-list-events.md) |Coleção de [eventos](event.md)| Obter uma coleção de objetos de evento.|
@@ -134,6 +135,7 @@ Esse recurso permite:
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura.|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|securityIdentifier|Cadeia de Caracteres|Identificador de segurança do grupo, usado em cenários do Windows. <br><br>Retornado por padrão.|
 |tema|String|Especifica o tema de cor de um grupo Office 365. Os valores possíveis são: `Teal`, `Purple`, `Green`, `Blue`,`Pink`, `Orange` ou `Red`. <br><br>Retornado por padrão. |
 |unseenConversationsCount|Int32|Contagem de conversas que receberam uma ou mais novas postagens desde a última visita do usuário conectado ao grupo. Essa propriedade é igual a **unseenCount**. <br><br>Retornado apenas em $select.|
 |unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. Essa propriedade é igual a **unseenConversationsCount**.<br><br>Retornado apenas em $select. |
@@ -250,6 +252,7 @@ Veja a seguir uma representação JSON do recurso
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
+  "securityIdentifier": "string",
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
