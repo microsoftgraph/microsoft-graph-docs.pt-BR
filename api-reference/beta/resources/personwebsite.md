@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0be7c3863f9c764e7b6a0c0a4d0d8b2e9dc30717
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b5e6b8c3013c647087ab3d8db28b0196d0c79036
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939590"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37949493"
 ---
 # <a name="personwebsite-resource-type"></a>tipo de recurso personWebsite
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa informações detalhadas sobre sites que o usuário tenha associado a si mesmos em vários serviços.
+Representa informações detalhadas sobre sites associados a um usuário em vários serviços.
 
 Herda de [Myfacet](itemfacet.md).
 
@@ -24,15 +24,15 @@ Herda de [Myfacet](itemfacet.md).
 
 | Método                                           | Tipo de retorno                       | Descrição                                                |
 |:-------------------------------------------------|:----------------------------------|:-----------------------------------------------------------|
-| [Obter personWebsite](../api/personwebsite-get.md) | [personWebsite](personwebsite.md) | Leia as propriedades e os relacionamentos do objeto personWebsite. |
-| [Update](../api/personwebsite-update.md)         | [personWebsite](personwebsite.md) | Atualize o objeto personWebsite.                               |
-| [Delete](../api/personwebsite-delete.md)         | None                              | Exclua o objeto personWebsite.                               |
+| [Obter personWebsite](../api/personwebsite-get.md) | [personWebsite](personwebsite.md) | Leia as propriedades e os relacionamentos de um objeto **personWebsite** . |
+| [Atualizar personWebsite](../api/personwebsite-update.md)         | [personWebsite](personwebsite.md) | Atualizar um objeto **personWebsite** .                               |
+| [Excluir personWebsite](../api/personwebsite-delete.md)         | Nenhum                              | Excluir um objeto **personWebsite** .                               |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo              | Descrição                                                                         |
 |:-------------|:------------------|:------------------------------------------------------------------------------------|
-|categories    |String collection  | Contém categorias que um usuário associou ao site (por exemplo: pessoal, receitas)  |
+|categories    |String collection  | Contém categorias que um usuário associou ao site (por exemplo, pessoal, receitas).  |
 |description   |String             | Contém uma descrição do site.                                              |
 |displayName   |Cadeia de caracteres             | Contém um nome amigável para o site.                                           |
 |webUrl        |String             | Contém um link para o próprio site.                                              |

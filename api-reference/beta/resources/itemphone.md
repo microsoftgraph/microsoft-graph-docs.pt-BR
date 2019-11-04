@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a40a0a096fa6f0616a8ff44e41e25791873fa82f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2ba1fce4492bfacb3a44f21a0fc55ddd8d37b068
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939317"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950434"
 ---
 # <a name="itemphone-resource-type"></a>tipo de recurso de Tel.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa informações detalhadas sobre números de telefone que o usuário tenha associado em vários serviços.
+Representa informações detalhadas sobre números de telefone associados a um usuário em vários serviços.
 
 ## <a name="methods"></a>Métodos
 
@@ -31,7 +31,7 @@ Representa informações detalhadas sobre números de telefone que o usuário te
 | Propriedade     | Tipo        | Descrição                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |Cadeia de caracteres       | Contém um nome amigável para o número de telefone.                                                                                  |
-|number        |String       | Contém o número de telefone.                                                                                                       |
+|number        |Cadeia de caracteres       | Contém o número de telefone.                                                                                                       |
 |type          |string       | Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="relationships"></a>Relações

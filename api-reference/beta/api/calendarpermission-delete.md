@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: def57ef9dab0f4c1666ebd9b411d9e05c7a75858
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 13756f6a5c84b999b7322341b65030767535807c
+ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936808"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "37942647"
 ---
 # <a name="delete-calendarpermission"></a>Excluir calendarPermission
 
@@ -27,11 +27,21 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 ## <a name="http-request"></a>Solicitação HTTP
 
+Excluir as permissões especificadas do calendário principal de um usuário:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /users/{id}/calendar/calendarPermissions/{id}
+```
+
+Excluir as permissões especificadas de um calendário de Grupo:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /groups/{id}/calendar/calendarPermissions/{id}
+```
+
+Exclua as permissões especificadas do calendário do usuário que contém o evento identificado:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 

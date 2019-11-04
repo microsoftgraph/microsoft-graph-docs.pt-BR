@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e69a1b4cdc66e9c591d060bed6600c4383e14a63
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: d1cd959c4ee083ff6ec26914c5f99ccd3d8c3c8f
+ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936787"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "37942633"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 
@@ -27,11 +27,21 @@ Dependendo do tipo de calendário em que o evento se encontra e do tipo de permi
 
 ## <a name="http-request"></a>Solicitação HTTP
 
+Atualizar as permissões especificadas do calendário principal de um usuário:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
+```
+
+Atualizar as permissões especificadas de um calendário de Grupo:
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /groups/{id}/calendar/calendarPermissions/{id}
+```
+
+Atualize as permissões especificadas do calendário do usuário que contém o evento identificado:
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
@@ -49,7 +59,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |allowedRoles|coleção de cadeias de caracteres| Lista de níveis de permissão de compartilhamento permitidos para o calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 |emailAddress|[emailAddress](../resources/email.md)| Representa um compartilhamento que tem acesso ao calendário. Para o compartilhamento "minha organização", a propriedade **Address** é NULL. |
-|id|String| O identificador exclusivo do usuário (compartilhamento) com o qual o calendário foi compartilhado. Somente leitura.|
+|id|Cadeia de caracteres| O identificador exclusivo do usuário (compartilhamento) com o qual o calendário foi compartilhado. Somente leitura.|
 |isInsideOrganization|Booliano| True se o usuário em contexto (compartilhamento) estiver dentro da mesma organização que o proprietário do calendário.|
 |isRemovable|Booliano| `True`Se o usuário puder ser removido da lista de compartilhamentos do calendário especificado, `false` caso contrário. O usuário "minha organização" determina as permissões que outras pessoas dentro da sua organização têm para o calendário especificado. Não é possível remover "minha organização" como um compartilhamento para um calendário.|
 |role|calendarRoleType| Nível de permissão atual do compartilhamento de calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|

@@ -309,20 +309,28 @@
                   href: api/user-post-manager.md
             - name: Configurações do Outlook
               items:
-                - name: Usuário do Outlook
-                  href: resources/outlookuser.md
-                - name: Obter opções de idioma
-                  href: api/outlookuser-supportedlanguages.md
-                - name: Obter opções de fuso horário
-                  href: api/outlookuser-supportedtimezones.md
-                - name: Obter configurações de Caixa de Correio
-                  href: api/user-get-mailboxsettings.md
-                - name: Atualizar configurações de Caixa de Correio
-                  href: api/user-update-mailboxsettings.md
-                - name: Listar categorias
-                  href: api/outlookuser-list-mastercategories.md
-                - name: Criar categoria
-                  href: api/outlookuser-post-mastercategories.md
+                - name: Configurações da Caixa de Correio
+                  expanded: true
+                  items:
+                    - name: Configurações da Caixa de Correio
+                      href: resources/mailboxsettings.md
+                    - name: Obter configurações de Caixa de Correio
+                      href: api/user-get-mailboxsettings.md
+                    - name: Atualizar configurações de Caixa de Correio
+                      href: api/user-update-mailboxsettings.md
+                - name: Serviços de usuário do Outlook
+                  expanded: true
+                  items:
+                    - name: Usuário do Outlook
+                      href: resources/outlookuser.md
+                    - name: Obter opções de idioma
+                      href: api/outlookuser-supportedlanguages.md
+                    - name: Obter opções de fuso horário
+                      href: api/outlookuser-supportedtimezones.md
+                    - name: Listar categorias
+                      href: api/outlookuser-list-mastercategories.md
+                    - name: Criar categoria
+                      href: api/outlookuser-post-mastercategories.md
                 - name: Converter IDs
                   href: api/user-translateexchangeids.md
             - name: Tarefas do Outlook
@@ -8273,7 +8281,7 @@
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
-                - name: Criar
+                - name: Create
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
@@ -9915,6 +9923,110 @@
                   href: api/profile-post-websites.md
                 - name: Listar sites
                   href: api/profile-list-websites.md
+                - name: Informações da conta
+                  href: resources/useraccountinformation.md
+                  items:
+                    - name: Obter
+                      href: api/useraccountinformation-get.md
+                - name: Data especial
+                  href: resources/personanniversary.md
+                  items:
+                    - name: Obter
+                      href: api/personanniversary-get.md
+                    - name: Atualizar
+                      href: api/personanniversary-update.md
+                    - name: Excluir
+                      href: api/personanniversary-delete.md
+                - name: Atividade educacional
+                  href: resources/educationalactivity.md
+                  items:
+                    - name: Obter
+                      href: api/educationalactivity-get.md
+                    - name: Atualizar
+                      href: api/educationalactivity-update.md
+                    - name: Excluir
+                      href: api/educationalactivity-delete.md
+                - name: Endereço de email
+                  href: resources/itememail.md
+                  items:
+                    - name: Obter
+                      href: api/itememail-get.md
+                    - name: Atualizar
+                      href: api/itememail-update.md
+                    - name: Excluir
+                      href: api/itememail-delete.md
+                - name: Aos
+                  href: resources/personinterest.md
+                  items:
+                    - name: Obter
+                      href: api/personinterest-get.md
+                    - name: Atualizar
+                      href: api/personinterest-update.md
+                    - name: Excluir
+                      href: api/personinterest-delete.md
+                - name: Idiomas
+                  href: resources/languageproficiency.md
+                  items:
+                    - name: Obter
+                      href: api/languageproficiency-get.md
+                    - name: Atualizar
+                      href: api/languageproficiency-update.md
+                    - name: Excluir
+                      href: api/languageproficiency-delete.md
+                - name: Phone
+                  href: resources/itemphone.md
+                  items:
+                    - name: Obter
+                      href: api/itemphone-get.md
+                    - name: Atualizar
+                      href: api/itemphone-update.md
+                    - name: Excluir
+                      href: api/itemphone-delete.md
+                - name: Posições
+                  href: resources/workposition.md
+                  items:
+                    - name: Obter
+                      href: api/workposition-get.md
+                    - name: Atualizar
+                      href: api/workposition-update.md
+                    - name: Excluir
+                      href: api/workposition-delete.md
+                - name: Projects
+                  href: resources/projectparticipation.md
+                  items:
+                    - name: Obter
+                      href: api/projectparticipation-get.md
+                    - name: Atualizar
+                      href: api/projectparticipation-update.md
+                    - name: Excluir
+                      href: api/projectparticipation-delete.md
+                - name: Habilidades
+                  href: resources/skillproficiency.md
+                  items:
+                    - name: Obter
+                      href: api/skillproficiency-get.md
+                    - name: Atualizar
+                      href: api/skillproficiency-update.md
+                    - name: Excluir
+                      href: api/skillproficiency-delete.md
+                - name: Contas da Web
+                  href: resources/webaccount.md
+                  items:
+                    - name: Obter
+                      href: api/webaccount-get.md
+                    - name: Atualizar
+                      href: api/webaccount-update.md
+                    - name: Excluir
+                      href: api/webaccount-delete.md
+                - name: Sites
+                  href: resources/personwebsite.md
+                  items:
+                    - name: Obter
+                      href: api/personwebsite-get.md
+                    - name: Atualizar
+                      href: api/personwebsite-update.md
+                    - name: Excluir
+                      href: api/personwebsite-delete.md
         - name: Tarefas e planos
           displayName: Planner
           items:
@@ -10333,7 +10445,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskgroups.md
-                - name: Criar
+                - name: Create
                   href: api/outlookuser-post-taskgroups.md
                 - name: Obter
                   href: api/outlooktaskgroup-get.md
