@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/1.0
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -44,7 +44,7 @@
         - name: Controlar alterações
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/1.0
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/1.0
@@ -57,7 +57,7 @@
         - name: Adicionar dados personalizados
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/extensibility-overview?context=graph/api/1.0
             - name: Usar extensões abertas (exemplo)
               href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -71,7 +71,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -111,6 +111,8 @@
           href: /graph/sdks/create-client?context=graph/api/1.0
         - name: Escolher um provedor de autenticação.
           href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+        - name: Criar solicitações
+          href: /graph/sdks/create-requests?context=graph/api/1.0
     - name: Usar o kit de ferramentas (visualização)
       items:
         - name: Visão geral do kit de ferramentas
@@ -156,11 +158,11 @@
     - name: Referência v1.0
       expanded: true
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -290,20 +292,28 @@
                   href: api/user-post-manager.md
             - name: Configurações do Outlook
               items:
-                - name: Usuário do Outlook
-                  href: resources/outlookuser.md
-                - name: Obter opções de idioma
-                  href: api/outlookuser-supportedlanguages.md
-                - name: Obter opções de fuso horário
-                  href: api/outlookuser-supportedtimezones.md
-                - name: Obter configurações de Caixa de Correio
-                  href: api/user-get-mailboxsettings.md
-                - name: Atualizar configurações de Caixa de Correio
-                  href: api/user-update-mailboxsettings.md
-                - name: Listar categorias
-                  href: api/outlookuser-list-mastercategories.md
-                - name: Criar categoria
-                  href: api/outlookuser-post-mastercategories.md
+                - name: Configurações da Caixa de Correio
+                  expanded: true
+                  items:
+                    - name: Configurações da Caixa de Correio
+                      href: resources/mailboxsettings.md
+                    - name: Obter configurações de Caixa de Correio
+                      href: api/user-get-mailboxsettings.md
+                    - name: Atualizar configurações de Caixa de Correio
+                      href: api/user-update-mailboxsettings.md
+                - name: Serviços de usuário do Outlook
+                  expanded: true
+                  items:
+                    - name: Usuário do Outlook
+                      href: resources/outlookuser.md
+                    - name: Obter opções de idioma
+                      href: api/outlookuser-supportedlanguages.md
+                    - name: Obter opções de fuso horário
+                      href: api/outlookuser-supportedtimezones.md
+                    - name: Listar categorias
+                      href: api/outlookuser-list-mastercategories.md
+                    - name: Criar categoria
+                      href: api/outlookuser-post-mastercategories.md
                 - name: Converter IDs
                   href: api/user-translateexchangeids.md
             - name: Foto
@@ -327,7 +337,7 @@
                   href: api/user-update-settings.md
         - name: Grupos
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -743,7 +753,7 @@
         - name: Dispositivos e aplicativos
           displayName: Intune
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/intune-graph-overview.md
             - name: Gerenciamento de aplicativos
               href: resources/intune-app-conceptual.md
@@ -3105,7 +3115,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -3179,8 +3189,45 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/azure-ad-overview.md
+            - name: Aplicativo
+              href: resources/application.md
+              items:
+                - name: Listar aplicativos
+                  href: api/application-list.md
+                - name: Criar aplicativo
+                  href: api/application-post-applications.md
+                - name: Obter aplicativo
+                  href: api/application-get.md
+                - name: Atualizar aplicativo
+                  href: api/application-update.md
+                - name: Excluir aplicativo
+                  href: api/application-delete.md
+                - name: Listar aplicativos excluídos
+                  href: api/directory-deleteditems-list.md
+                - name: Obter aplicativo excluído
+                  href: api/directory-deleteditems-get.md
+                - name: Excluir aplicativo permanentemente
+                  href: api/directory-deleteditems-delete.md
+                - name: Restaurar aplicativo excluído
+                  href: api/directory-deleteditems-restore.md
+                - name: Adicionar senha
+                  href: api/application-addpassword.md
+                - name: Remover senha
+                  href: api/application-removepassword.md
+                - name: Criar extensão
+                  href: api/application-post-extensionproperty.md
+                - name: Listar extensões
+                  href: api/application-list-extensionproperty.md
+                - name: Excluir extensão
+                  href: api/application-delete-extensionproperty.md
+                - name: Listar proprietários
+                  href: api/application-list-owners.md
+                - name: Adicionar proprietário
+                  href: api/application-post-owners.md
+                - name: Remover proprietário
+                  href: api/application-delete-owners.md
             - name: Logs de auditoria
               href: resources/azure-ad-auditlog-overview.md
               items:
@@ -3203,7 +3250,7 @@
               items:
                 - name: Listar
                   href: api/certificatebasedauthconfiguration-list.md
-                - name: Create
+                - name: Criar
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
@@ -3378,7 +3425,7 @@
                   href: api/subscribedsku-list.md
                 - name: Obter subscribedSku
                   href: api/subscribedsku-get.md
-        - name: Email
+        - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -3710,7 +3757,7 @@
                       href: api/multivaluelegacyextendedproperty-get.md
         - name: Relatórios
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/report.md
             - name: Uso do dispositivo do Microsoft Teams
               href: resources/microsoft-teams-device-usage-reports.md
@@ -3911,7 +3958,7 @@
         - name: Segurança
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/security-api-overview.md
             - name: Alertas
               href: resources/alert.md
@@ -3943,7 +3990,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -3980,9 +4027,9 @@
                   href: api/listitem-list-versions.md
                 - name: Obter análise do item
                   href: api/itemanalytics-get.md
-        - name: 'Inteligência social: pessoas'
+        - name: Pessoas e inteligência do local de trabalho
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/social-overview.md
             - name: Pessoa
               href: resources/person.md
@@ -3992,7 +4039,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -4070,7 +4117,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral

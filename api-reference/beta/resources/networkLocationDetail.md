@@ -1,51 +1,52 @@
 ---
 title: tipo de recurso networkLocationDetail
-description: Indica detalhes associados ao local de rede. .
+description: Fornece o nome e o tipo de rede a partir da qual o usuário entrou.
 localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 3b7e12a87889909737cac9a52fadf64231f7f2a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8cbf60f7e7e370c5813623643f9d14cb324950cc
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009605"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939506"
 ---
-# <a name="networklocationdetail-resource-type"></a><span data-ttu-id="d1955-104">tipo de recurso networkLocationDetail</span><span class="sxs-lookup"><span data-stu-id="d1955-104">networkLocationDetail resource type</span></span>
-<span data-ttu-id="d1955-105">Indica detalhes associados ao local de rede.</span><span class="sxs-lookup"><span data-stu-id="d1955-105">Indicates details associated with the network location.</span></span>
+# <a name="networklocationdetail-resource-type"></a><span data-ttu-id="45c29-103">tipo de recurso networkLocationDetail</span><span class="sxs-lookup"><span data-stu-id="45c29-103">networkLocationDetail resource type</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+<span data-ttu-id="45c29-104">Fornece o nome e o tipo de rede a partir da qual o usuário entrou.</span><span class="sxs-lookup"><span data-stu-id="45c29-104">Provides the name and type of network from which the user signed in.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d1955-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d1955-106">Properties</span></span>
-| <span data-ttu-id="d1955-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d1955-107">Property</span></span>     | <span data-ttu-id="d1955-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="d1955-108">Type</span></span>   |<span data-ttu-id="d1955-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="d1955-109">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="d1955-110">NetworkType</span><span class="sxs-lookup"><span data-stu-id="d1955-110">networkType</span></span>|<span data-ttu-id="d1955-111">NetworkType</span><span class="sxs-lookup"><span data-stu-id="d1955-111">networkType</span></span>|<span data-ttu-id="d1955-112">Fornece o tipo da rede.</span><span class="sxs-lookup"><span data-stu-id="d1955-112">Provides the type of the network.</span></span> <span data-ttu-id="d1955-113">Os valores possíveis são `intranet`: `extranet` `namedNetwork`,, e `trusted`.</span><span class="sxs-lookup"><span data-stu-id="d1955-113">The possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.</span></span>|
-|<span data-ttu-id="d1955-114">networknames</span><span class="sxs-lookup"><span data-stu-id="d1955-114">networkNames</span></span>|<span data-ttu-id="d1955-115">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="d1955-115">String collection</span></span>|<span data-ttu-id="d1955-116">Nomes da rede.</span><span class="sxs-lookup"><span data-stu-id="d1955-116">Names of the network.</span></span>|
+## <a name="properties"></a><span data-ttu-id="45c29-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="45c29-105">Properties</span></span>
 
+| <span data-ttu-id="45c29-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="45c29-106">Property</span></span>     | <span data-ttu-id="45c29-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="45c29-107">Type</span></span>        | <span data-ttu-id="45c29-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="45c29-108">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="45c29-109">networknames</span><span class="sxs-lookup"><span data-stu-id="45c29-109">networkNames</span></span>|<span data-ttu-id="45c29-110">String collection</span><span class="sxs-lookup"><span data-stu-id="45c29-110">String collection</span></span>|<span data-ttu-id="45c29-111">Fornece o nome da rede usada ao entrar.</span><span class="sxs-lookup"><span data-stu-id="45c29-111">Provides the name of the network used when signing in.</span></span>|
+|<span data-ttu-id="45c29-112">NetworkType</span><span class="sxs-lookup"><span data-stu-id="45c29-112">networkType</span></span>|<span data-ttu-id="45c29-113">NetworkType</span><span class="sxs-lookup"><span data-stu-id="45c29-113">networkType</span></span>| <span data-ttu-id="45c29-114">Fornece o tipo de rede usada ao entrar.</span><span class="sxs-lookup"><span data-stu-id="45c29-114">Provides the type of network used when signing in.</span></span> <span data-ttu-id="45c29-115">Os valores possíveis são: `intranet`, `extranet`, `namedNetwork`, `trusted`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="45c29-115">Possible values are: `intranet`, `extranet`, `namedNetwork`, `trusted`, `unknownFutureValue`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d1955-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d1955-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="45c29-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="45c29-116">JSON representation</span></span>
 
-<span data-ttu-id="d1955-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d1955-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="45c29-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="45c29-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.networkLocationDetail"
+  "@odata.type": "microsoft.graph.networkLocationDetail",
+  "baseType": null
 }-->
 
 ```json
 {
-  "networkType": "string",
-  "networkNames": ["String"]
+  "networkNames": ["String"],
+  "networkType": "String"
 }
-
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "networkLocationDetail resource",
