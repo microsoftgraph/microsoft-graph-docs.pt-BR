@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 549578ccec5d58c8da9e956e05733e81113be5aa
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 80c070f1146161b82a24f1086f63d5a121c923d7
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726458"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939835"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -512,6 +512,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
 ---
+
+## <a name="entitlement-management-permissions"></a>Permissões de gerenciamento de direitos
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|Permissão|Exibir Cadeia de Caracteres|Descrição|Consentimento Obrigatório do Administrador|
+|:----------|:--------------|:-----------|:-------|
+|_EntitlementManagement.ReadWrite.All_|Ler e gravar os recursos de gerenciamento de direitos|Permite ao aplicativo solicitar e gerenciar o acesso a pacotes e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.|Sim|
 
 ## <a name="files-permissions"></a>Permissões de arquivos
 
@@ -1231,6 +1239,35 @@ As permissões de relatórios só são válidas para contas corporativas ou de e
 - _RoleManagement.ReadWrite.Directory_: Adicionar um membro de escopo de unidade administrativa a uma função de diretório(`POST /directoryRoles/<id>/scopedMembers`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="search-permissions"></a>Permissões de pesquisa
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalItem.ReadWrite.All_ | Ler e gravar dados externos | Permite a um aplicativo gravar dados externos na API de indexação. | Sim | Não |
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _ExternalItem.Read.All_ | Ler os dados externos | Permite a um aplicativo ler dados externos ingeridos por meio da API de indexação da Pesquisa da Microsoft| Sim | Não |
+
+### <a name="remarks"></a>Comentários
+As permissões de pesquisa só são válidas para contas corporativas ou de estudante.
+
+Esta permissão de pesquisa só se aplica aos dados ingeridos da API de indexação.
+
+O acesso aos dados por meio de pesquisa requer a devida permissão. Por exemplo, _Files.Read.All_ para acessar arquivos por meio da pesquisa.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="application"></a>Aplicativo
+
+* _ExternalItem.Read.All__: acessar dados externos da [API de pesquisa](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 

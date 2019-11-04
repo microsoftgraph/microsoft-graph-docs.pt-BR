@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5f4acc0a2f0f12b4595cf3b61d36f777aec55867
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 37e3bd6f4772e9df110af005f8a5e469a06a9fba
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973461"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939429"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -46,22 +46,27 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|allowedOnlineMeetingProviders|coleção de cadeias de caracteres| Represente os provedores de serviços de reunião online que podem ser usados para criar reuniões online neste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |canEdit |Boolean |Verdadeira se o usuário pode gravar o calendário, falsa caso contrário. Essa propriedade é verdadeira para o usuário que criou o calendário. Esta propriedade também é verdadeira para um usuário com o qual tenha sido compartilhado um calendário e tenha sido concedido acesso de gravação. |
 |canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Somente o usuário que criou o calendário pode compartilhá-lo. |
 |canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. |
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|hexColor|String|Uma cor que representa o calendário. A cor é representada por um número hexadecimal de 6 dígitos e 3 bytes. Cada byte representa um dos componentes vermelho, verde e azul da cor, no intervalo de 00 a FF na notação hexadecimal. |
+|defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|hexColor|Cadeia de Caracteres|A cor do calendário, expressa em um código de cores hexadecimais de três valores hexadecimais, cada um deles variando de 00 a FF e representando os componentes vermelho, verde ou azul do espaço de cor RGB. Se o usuário nunca tiver definido explicitamente uma cor para o calendário, esta propriedade estará vazia. |
 |id|String|O identificador exclusivo do grupo. Somente leitura.|
-|isDefaultCalendar|Booliano|True se esse calendário for o calendário padrão do usuário, caso contrário, será false.|
+|isDefaultCalendar|Booliano|Verdadeiro se este for o calendário padrão em que novos eventos são criados; caso contrário, será falso.|
+|isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
 |isShared |Booliano |True se o usuário tiver compartilhado o calendário com outros usuários. Caso contrário, será false. Como apenas o usuário que criou o calendário pode compartilhá-lo, ** isShared ** e ** isSharedWithMe ** não podem ser verdadeiros para o mesmo usuário. |
 |isSharedWithMe |Booliano |True se o usuário tiver compartilhado este calendário, caso contrário, será false. Essa propriedade sempre será false para o proprietário de um calendário.  |
-|name|String|O nome do calendário.|
+|isTallyingResponses|Booliano|Indica se o calendário deste usuário dá suporte ao acompanhamento de respostas de reunião. Somente os convites para reuniões enviados do calendário principal do usuário oferecem suporte para respostas de reunião.|
+|nome|String|O nome do calendário.|
 |owner |[emailAddress](emailaddress.md) | Se definida, representa o usuário que criou ou adicionou o calendário. Para um calendário que o usuário criou ou adicionou, a propriedade **owner** é definida para o usuário. Para um calendário compartilhado com o usuário, a propriedade **owner** é definida para a pessoa que compartilhou o calendário com o usuário. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|calendarPermissions|Coleção de [calendarPermission](calendarpermission.md)| As permissões dos usuários com os quais o calendário é compartilhado.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Propriedade de navegação. Somente leitura.|
 |events|Coleção [event](event.md)|Os eventos do calendário. Propriedade de navegação. Somente leitura.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o calendário. Somente leitura. Anulável.|
@@ -85,16 +90,20 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
+  "allowedOnlineMeetingProviders": ["string"],
   "canEdit": "boolean",
   "canShare": "boolean",
   "canViewPrivateItems": "boolean",
   "changeKey": "string",
   "color": "String",
+  "defaultOnlineMeetingProvider": "string",
   "hexColor": "String",
   "id": "string (identifier)",
   "isDefaultCalendar": "boolean",
+  "isRemovable": "boolean",
   "isShared": "boolean",
   "isSharedWithMe": "boolean",
+  "isTallyingResponses": "boolean",
   "name": "string",
   "owner": {"@odata.type": "microsoft.graph.emailAddress"}
 }
