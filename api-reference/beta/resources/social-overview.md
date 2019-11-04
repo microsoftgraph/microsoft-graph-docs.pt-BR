@@ -1,22 +1,22 @@
 ---
-title: Usar a API do Microsoft Graph para integrar a inteligência social e do local de trabalho em um aplicativo
-description: O Microsoft Graph permite o acesso a dados do local de trabalho e sociais úteis para pessoas e dá suporte a gestos sociais no contexto social de um usuário.
+title: Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
+description: O Microsoft Graph permite o acesso a dados pessoais e do local de trabalho úteis e dá suporte a gestos sociais no contexto social de um usuário.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 74beb2a66f103342f6dbc5e5977200751a309c08
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: f87f3032f58475eed95507b4e436735e5c484fc4
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450666"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939359"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência social e do local de trabalho em um aplicativo
+# <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Microsoft Graph permite o acesso a dados do local de trabalho e sociais para pessoas e dá suporte a gestos sociais no contexto social de um usuário.
+O Microsoft Graph permite o acesso a dados pessoais e do local de trabalho para pessoas e dá suporte a gestos sociais no contexto social de um usuário.
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>Agregar e extraia informações específicas sobre pessoas
 
@@ -37,7 +37,7 @@ Usar a API insights para identificar os documentos mais relevantes para o usuár
 Usar a API de análise para obter estatísticas de atividade e configurações relacionadas para um usuários:
 
 - [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuários, as configurações de análise de usuário atuais devem mostrar uma licença válida do MyAnalytics, ser aceitas no uso do MyAnalytics e ter uma caixa de correio hospedada na nuvem habilitada para o Microsoft Graph.
-- activityStatistics](../resources/activitystatistics.md): Obtém dados para a última semana concluída (ou o intervalo de tempo especificado) das atividades do Office 365 em que um usuário gastou tempo, incluindo o número de horas gastas em chamadas, conversas (mensagens instantâneas), email e reuniões durante e fora das horas de trabalho e o número de horas disponíveis para o trabalho prioritário.
+- [activityStatistics](../resources/activitystatistics.md): Obtém dados para a última semana concluída (ou o intervalo de tempo especificado) das atividades do Office 365 em que um usuário gastou tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [conversas (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md) e [reuniões](meetingactivitystatistics.md) durante e fora das horas de trabalho e o número de horas disponíveis para o [trabalho prioritário](focusactivitystatistics.md).
 
 ## <a name="manage--mentions"></a>Gerenciar as @menções
 
@@ -62,3 +62,9 @@ Include the next sentence when supporting events.
   - [Obter os detalhes de cada menção em uma mensagem](../api/message-get.md#request-2)
 
 - [Excluir uma menção](../api/message-delete.md#request-2) em uma mensagem
+
+## <a name="help-users-contextualize-others-in-their-organization"></a>Ajudar os usuários a contextualizarem outras pessoas em sua organização
+
+As pessoas que procuram contextualizar outras na organização geralmente exibem o perfil ou o cartão de perfil de uma pessoa. 
+
+O recurso [perfil](../resources/profile.md) é uma avançada fonte de informações sobre as pessoas dentro de um locatário e proporciona um mecanismo leve para armazenar e recuperar informações sobre alguém. 

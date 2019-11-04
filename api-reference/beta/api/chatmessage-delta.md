@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 55fd093150794ad23884ee130db7612046e7d068
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: bf4c0fa8333d05ad77397cb4d0bd8ad45e92539a
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439874"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936794"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -68,7 +68,7 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 Os seguintes [parâmetros de consulta OData](/graph/query-parameters) são compatível com esta API:
 - `$top`representa o número máximo de mensagens a buscar em uma chamada. O limite máximo é **50**.
 - `$skip`representa quantas mensagens devem ser ignoradas no início da lista.
-- `$filter` permite retornar mensagens que atendem a certos critérios. A única propriedade que permite a filtragem é `lastModifiedDateTime`e somente os operadores **gt** e **ge** são compatíveis. Por exemplo, o`../messages/delta?$filter=lastModifiedDateTime ge 2019-02-27T07:13:28.000z` vai buscar todas as mensagens criadas ou alteradas após o período de tempo especificado.
+- `$filter` permite retornar mensagens que atendem a certos critérios. A única propriedade que permite a filtragem é `lastModifiedDateTime`, e somente os operadores **gt** são compatíveis. Por exemplo, o`../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` vai buscar todas as mensagens criadas ou alteradas após o período de tempo especificado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho        | Valor                     |
@@ -82,7 +82,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatMessage](../resources/chatmessage.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
 
 ## <a name="examples"></a>Exemplos
 

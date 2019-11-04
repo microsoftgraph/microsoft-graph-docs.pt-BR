@@ -140,8 +140,11 @@ items:
         displayname: 'Dynamics, Dynamics 365 Business Central'
       - name: Identidade e acesso
         href: azuread-identity-access-management-concept-overview.md
-        displayName: 'Azure AD, Microsoft identity platform'
-      - name: Correio
+        displaName: 'Azure AD, Microsoft identity platform'
+        items:
+          - name: Proteção de Informações
+            href: information-protection-overview.md
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -225,6 +228,26 @@ items:
             href: outlook-immutable-id.md
       - name: Relatórios
         href: reportroot-concept-overview.md
+      - name: Pesquisar (visualização)
+        items:
+          - name: Visão geral
+            href: search-concept-overview.md
+          - name: Consulta
+            items:
+              - name: Pesquisar mensagens
+                href: search-concept-messages.md
+              - name: Pesquisar eventos
+                href: search-concept-events.md
+              - name: Pesquisar arquivos
+                href: search-concept-files.md
+              - name: Pesquisar conectores
+                href: search-concept-custom-types.md
+          - name: Índice
+            items:
+              - name: Gerenciar conexões
+                href: search-index-manage-connections.md
+              - name: Gerenciar itens
+                href: search-index-manage-items.md
       - name: Segurança
         items:
           - name: Visão Geral
@@ -240,9 +263,9 @@ items:
       - name: Sites e listas
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
-      - name: Inteligência social e de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: social-intel-concept-overview.md
           - name: Obter informações sobre pessoas relevantes
             href: people-example.md

@@ -1,94 +1,83 @@
 ---
-title: Obter aplicativo
-description: Obtenha as propriedades e os relacionamentos de um objeto application
+title: Criar aplicativo
+description: Crie um novo aplicativo.
 author: davidmu1
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b515fb45ad0329059a85102d42243b3e6fa7c202
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3b4c0401342c3bf40cd7018542ece48c9c91a64f
 ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934309"
+ms.locfileid: "37939695"
 ---
-# <a name="get-application"></a>Obter aplicativo
+# <a name="create-application"></a>Criar aplicativo
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Obtenha as propriedades e os relacionamentos de um objeto [application](../resources/application.md).
+Crie um novo objeto [application](../resources/application.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /applications/{id}
+POST /applications
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório.  |
-| Content-type | application/json. Obrigatório. |
+|:---------------|:--------|:----------|
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md). O corpo da solicitação deve conter **displayName**, que é uma propriedade obrigatória.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [application](../resources/application.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [application](../resources/application.md) no corpo da resposta.
+
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_application"
+  "name": "create_application_from_applications"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}
+```http
+POST https://graph.microsoft.com/v1.0/applications
+Content-type: application/json
+Content-length: 67
+
+{
+  "displayName": "Display name"
+}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 1044
+Content-length: 1145
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
     "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
     "deletedDateTime": null,
     "isFallbackPublicClient": null,
@@ -147,7 +136,7 @@ Content-length: 1044
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get application",
+  "description": "Create application",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

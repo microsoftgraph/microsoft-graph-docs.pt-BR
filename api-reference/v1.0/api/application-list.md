@@ -5,16 +5,14 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b74d19cad91fe7a555b58c7d876d09f31862aa6
+ms.openlocfilehash: 801f568d7f4ee6ad905fec1648683acdc8133d3d
 ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936458"
+ms.locfileid: "37939702"
 ---
 # <a name="list-applications"></a>Listar aplicativos
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha a lista de [applications](../resources/application.md) nesta organização.
 
@@ -52,27 +50,14 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_application"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications
+
+```http
+GET https://graph.microsoft.com/v1.0/applications
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -90,7 +75,7 @@ Content-type: application/json
 Content-length: 1229
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
     "value": [
         {
             "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",

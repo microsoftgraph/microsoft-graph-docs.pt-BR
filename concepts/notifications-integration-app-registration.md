@@ -3,12 +3,13 @@ title: Gerenciar registro do aplicativo e permissão de API para notificações 
 description: Para receber notificações enviadas pelo Microsoft Graph, primeiro é necessário registrar seu aplicativo no portal do Microsoft Azure.
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: dc102f451b3f206bbfefe1d3c38c3995041f04fa
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+author: merzink
+ms.openlocfilehash: 5c22fb5bc39b5b609eaae958cec9ada55f74b9f0
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778632"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934355"
 ---
 # <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>Gerenciar registro do aplicativo e permissão de API para notificações do Microsoft Graph
 
@@ -18,13 +19,11 @@ Para que o serviço do aplicativo se integre às notificações do Microsoft Gra
 
 Registre seu aplicativo no portal do [Microsoft Azure](https://portal.azure.com/#home) para suporte às contas corporativas ou de estudante da Microsoft. Se já tiver registrado o aplicativo anteriormente no [Portal do aplicativo da Microsoft](https://apps.dev.microsoft.com/), os aplicativos existentes serão exibidos na nova e melhorada experiência do portal do Azure.
 
-Para saber como registrar aplicativos, confira [Registrar um aplicativo na Microsoft Identity Platform](auth-register-app-v2.md). 
-
+Para saber como registrar aplicativos, confira [Registrar um aplicativo na Microsoft Identity Platform](auth-register-app-v2.md). Ao registrar seu aplicativo, certifique-se de manter sempre à mão a ID do aplicativo/ID do cliente. Essa ID será usada posteriormente ao registrar seu aplicativo para experiências entre dispositivos no [Microsoft Partner Center](https://partner.microsoft.com/) para clientes Windows, Android ou iOS.
 
 > [!NOTE]
-> Se ainda não tiver uma conta da Microsoft e quiser usar uma, acesse a página  [conta da Microsoft](https://account.microsoft.com/account). Se estiver desenvolvendo um aplicativo que usa o Azure AD versão 1.0 como uma estrutura de autenticação e identidade para contas corporativas ou de estudante, confira [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). Para saber mais sobre ou se estiver usando a nova Microsoft Identity Platform convergida (versão 2.0), confira [comparação do ponto de extremidade da Microsoft Identity Platform e o ponto de extremidade do Azure AD versão 1.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison).
+> Se ainda não tiver uma conta da Microsoft e quiser usar uma, acesse a página  [conta da Microsoft](https://account.microsoft.com/account). Se estiver desenvolvendo um aplicativo que usa o Azure AD versão 1.0 como uma estrutura de autenticação e identidade para contas corporativas ou de estudante, confira [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). Para saber mais sobre ou se estiver usando a nova Microsoft Identity Platform convergida (versão 2.0), confira [comparação do ponto de extremidade da Microsoft Identity Platform e o ponto de extremidade do Azure AD versão 1.0](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison).
 
-Ao registrar seu aplicativo, mantenha sempre à mão a ID do aplicativo/ID do cliente. Essa ID será usada posteriormente ao registrar seu aplicativo para experiências entre dispositivos no [Microsoft Partner Center](https://partner.microsoft.com/).
 
 ## <a name="app-certificates-and-secrets"></a>Certificados e segredos do aplicativo 
 
@@ -45,20 +44,15 @@ Adicione as seguintes permissões:
 
 - User.Read – permite que o aplicativo conecte seu usuário
 
-- Device.Read – permite a identificação da lista de dispositivos do usuário
-
-- Device.Command – permite a comunicação do dispositivo do usuário
-
 - UserActivity.ReadWrite.CreatedByApp – permite a assinatura do aplicativo para recuperação de notificação
-
-- Notifications.ReadWrite.CreatedByApp – permite o acesso e entrega de notificação
-
-- wns.connect – permite conectar ao serviço de notificação do Windows
 
 ![Captura de tela das permissões delegadas para notificações no portal do Azure](images/notifications-api-permissions-list.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre [permissões e consentimento](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent) ou consulte a [referência de permissões](https://docs.microsoft.com/en-us/graph/permissions-reference) do Microsoft Graph.
+Saiba mais sobre [permissões e consentimento](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) ou consulte a [referência de permissões](https://docs.microsoft.com/graph/permissions-reference) do Microsoft Graph.
 
-Após registrar seu aplicativo, acesse o [Partner Center](https://partner.microsoft.com/) para configurar o aplicativo para experiências entre dispositivos e para direcionar suas plataformas de aplicativo correspondentes para notificações enviadas pelo Microsoft Graph. Para saber mais, confira a [Integração à experiência entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md). 
+Após registrar seu aplicativo, visite o [Partner Center](https://partner.microsoft.com/) para configurar o aplicativo para direcionar suas plataformas de aplicativo correspondentes (Windows, iOS ou Android) para notificações enviadas pelo Microsoft Graph. Para saber mais, confira a [Integração à experiência entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md). 
+
+>[!NOTE]
+>Se você estiver apenas direcionando pontos de extremidade da Web, poderá ignorar o registro do Partner Center e aprender a configurar seu [serviço de aplicativo](notifications-integrating-app-server.md) para enviar notificações.

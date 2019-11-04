@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4649cc8c0e3133553156725a1fc0455cf08cf36
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 92ad556051ddddaa767384e46c92b894e152883c
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37524521"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937466"
 ---
 # <a name="list-users"></a>Listar usuários
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar uma lista de objetos user.
+Recupere uma lista de objetos [user](../resources/user.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -58,6 +58,8 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 #### <a name="request"></a>Solicitação
 
+Este é um exemplo de solicitação.
+
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -83,8 +85,7 @@ GET https://graph.microsoft.com/beta/users
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
-
+Este é um exemplo de resposta. 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
@@ -128,6 +129,7 @@ Encontrar uma conta de usuário em um locatário B2C usando um nome de entrada (
 
 #### <a name="request"></a>Solicitação
 
+Este é um exemplo de solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -154,8 +156,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
-
+Este é um exemplo de resposta. 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
@@ -174,6 +175,58 @@ Content-length: 108
     {
       "displayName": "John Smith",
       "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
+    }
+  ]
+}
+```
+
+### <a name="example-3--list-users-including-their-last-sign-in-time"></a>Exemplo 3: listar usuários incluindo o horário da última entrada
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName, signInActivity
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName,signInActivity)",
+  "value": [
+    {
+      "displayName": "Adele Vance",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-09-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    },
+    {
+      "displayName": "Alex Wilber",
+      "userPrincipalName": "AlexW@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-07-29T02:16:18Z",
+        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+      }
     }
   ]
 }

@@ -1,20 +1,18 @@
 ---
 title: Obter aplicativo
-description: Obtenha as propriedades e os relacionamentos de um objeto application
+description: Obtenha as propriedades e os relacionamentos de um objeto application.
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b515fb45ad0329059a85102d42243b3e6fa7c202
+ms.openlocfilehash: 14de0d2006653a3a70a9ca72771961669696e94b
 ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934309"
+ms.locfileid: "37939723"
 ---
 # <a name="get-application"></a>Obter aplicativo
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as propriedades e os relacionamentos de um objeto [application](../resources/application.md).
 
@@ -33,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -51,27 +49,13 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_application"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}
+```http
+GET https://graph.microsoft.com/v1.0/applications/{id}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -88,7 +72,7 @@ Content-type: application/json
 Content-length: 1044
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
     "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
     "deletedDateTime": null,
     "isFallbackPublicClient": null,
