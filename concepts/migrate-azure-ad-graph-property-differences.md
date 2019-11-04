@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 006c1e42ae0530c3c50aa7e432b215a9da4c2ca4
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 456490645724063b862de06fd3b70fc72a4d4144
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622551"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934743"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -55,36 +55,34 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **dirSyncEnabled** | versão &nbsp; - &nbsp;beta **onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **imutávelid** | versão &nbsp; - &nbsp;beta **onPremisesImmutableId** <br> v 1.0 &nbsp; - &nbsp; **onPremisesImmutableId** | |
 | **lastDirSyncDateTime** | versão&nbsp;-&nbsp;beta**onPremisesLastSyncDateTime**<br>v 1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
-| **onPremisesDomainName** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Planejado, mas ainda não disponível. |
-| **onPremisesNetBiosName** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Planejado, mas ainda não disponível. |
-| **onPremisesSamAccountName** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Planejado, mas ainda não disponível. |
+| **onPremisesDomainName** | versão &nbsp; - &nbsp; beta onPremisesDomainName <br> v 1.0 &nbsp; - &nbsp; onPremisesDomainName | |
+| **onPremisesNetBiosName** | versão &nbsp; - &nbsp; beta onPremisesNetBiosName <br> v 1.0 &nbsp; - &nbsp; onPremisesNetBiosName | |
+| **onPremisesSamAccountName** | versão &nbsp; - &nbsp; beta onPremisesSamAccountName <br> v 1.0 &nbsp; - &nbsp; onPremisesSamAccountName |  |
 | **provisioningErrors** | versão &nbsp; - &nbsp; beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors** |
 
 ## <a name="application-property-differences"></a>Diferenças de propriedades do aplicativo
 
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
-| **acceptMappedClaims**  | &nbsp; - &nbsp; **API beta/acceptMappedClaims** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | acceptMappedClaims agora é parte do novo recurso de API. |
-| **addIns** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | |
+| **acceptMappedClaims**  | &nbsp; - &nbsp; **API beta/acceptMappedClaims** <br> v 1.0 &nbsp; - &nbsp; **API/acceptMappedClaims** | acceptMappedClaims agora é parte do novo recurso de API. |
 | **applicationTemplateId** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **availableToOtherTenants** | versão &nbsp; - &nbsp; beta **signInAudience** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **availableToOtherTenants** | versão &nbsp; - &nbsp; beta **signInAudience** <br> v 1.0 &nbsp; - &nbsp; **signInAudience** | |
 | **errorUrl**| versão &nbsp; - &nbsp;beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_   | Essa propriedade foi preterida.|
-| **homepage**| &nbsp; - &nbsp; **página inicial/Web** beta <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | homepage agora faz parte do novo recurso da Web.|
-| **informationalUrls**| &nbsp; - &nbsp; **informações** beta <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **knownClientApplications**| &nbsp;-&nbsp;**API beta/knownClientApplications** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | knownClientApplications agora é parte do novo recurso de API. |
-| **logoutUrl**| &nbsp; - &nbsp; **Web Beta/logoutUrl** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | logoutUrl agora é parte do recurso Web. |
-| **logoUrl**| &nbsp; - &nbsp; **informações beta/logoUrl** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | logoUrl agora é parte do novo recurso de informações. |
-| **é**| versão &nbsp; - &nbsp;beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_   | Essa propriedade foi preterida.|
-| **oauth2AllowIdTokenImplicitFlow** | &nbsp;-beta&nbsp;**Web/implicitGrantSettings/enableIdTokenIssuance**<br>v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Renomeado e agora faz parte do novo recurso implicitGrantSettings. |
-| **oauth2AllowImplicitFlow**| &nbsp;-&nbsp;**Web Beta/oauth2AllowImplicitFlow**<br>v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | oauth2AllowImplicitFlow agora é parte do novo recurso da Web. |
+| **Home Page**| &nbsp; - &nbsp; **Web Beta/homePageUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/homePageUrl** | homepage agora faz parte do novo recurso da Web.|
+| **informationalUrls**| &nbsp; - &nbsp; **informações** beta <br> &nbsp; - &nbsp; **informações sobre** o v 1.0 | |
+| **knownClientApplications**| &nbsp;-&nbsp;**API beta/knownClientApplications** <br> v 1.0 &nbsp; - &nbsp; **API/knownClientApplications** | knownClientApplications agora é parte do novo recurso de API. |
+| **logoutUrl**| &nbsp; - &nbsp; **Web Beta/logoutUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/logoutUrl** | logoutUrl agora é parte do recurso Web. |
+| **logoUrl**| &nbsp; - &nbsp; **informações beta/logoUrl** <br> v 1.0 &nbsp; - &nbsp; **info/logoUrl** | logoUrl agora é parte do novo recurso de informações. |
+| **é**| &nbsp; - &nbsp; **logotipo** beta <br> &nbsp; - &nbsp; **logotipo** v 1.0   | |
+| **oauth2AllowIdTokenImplicitFlow** | &nbsp;-beta&nbsp;**Web/implicitGrantSettings/enableIdTokenIssuance**<br>v 1.0 &nbsp; - &nbsp; **Web/implicitGrantSettings/enableIdTokenIssuance** | Renomeado e agora faz parte do novo recurso implicitGrantSettings. |
+| **oauth2AllowImplicitFlow**| &nbsp;-beta&nbsp;**Web/implicitGrantSettings/enableAccessTokenIssuance**<br>v 1.0 &nbsp; - &nbsp; **Web/implicitGrantSettings/enableAccessTokenIssuance** | Renomeado e agora faz parte do novo recurso implicitGrantSettings. |
 | **Oauth2allowurlpathmatching e**| versão &nbsp; - &nbsp;beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_   | Essa propriedade foi preterida.|
-| **oauth2Permissions**| &nbsp;-&nbsp;**API beta/oauth2PermissionScopes**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Renomeado e agora parte do novo recurso de API. |
-| **oauth2RequirePostResponse**| versão &nbsp; - &nbsp;beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_   | Essa propriedade foi preterida.|
-| **publicClient**| versão &nbsp; - &nbsp; beta **isFallbackPublicClient** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Essa propriedade agora tem um novo significado &nbsp; - &nbsp; que contém as configurações de cliente público como redirectUris. Determinando se o aplicativo é um cliente público ou confidencial, ou se não está agora pronto automaticamente, com a propriedade isFallbackPublicClient manipulando um caso especial que não pode ser determinado automaticamente.|
+| **oauth2Permissions**| &nbsp;-&nbsp;**API beta/oauth2PermissionScopes**<br> v 1.0 &nbsp; - &nbsp; **API/oauth2PermissionScopes** | Renomeado e agora parte do novo recurso de API. |
+| **publicClient**| versão &nbsp; - &nbsp; beta **isFallbackPublicClient** <br> v 1.0 &nbsp; - &nbsp; **isFallbackPublicClient** | Essa propriedade agora tem um novo significado &nbsp; - &nbsp; que contém as configurações de cliente público como redirectUris. Determinando se o aplicativo é um cliente público ou confidencial, ou se não está agora pronto automaticamente, com a propriedade isFallbackPublicClient manipulando um caso especial que não pode ser determinado automaticamente.|
 | **recordConsentConditions**| versão &nbsp; - &nbsp;beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_   | Essa propriedade foi preterida.|
-| **replyUrls**| &nbsp;-&nbsp;**Web Beta/redirectUris**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Além de ser renomeado, redirectUris agora faz parte do novo recurso da Web. | |
+| **replyUrls**| &nbsp;-beta&nbsp;**Web/redirectUris**, **publicClient/redirectUris**<br> v 1.0 &nbsp; - &nbsp; **Web/redirectUris**, **publicClient/redirectUris** | Além de ser renomeado, o redirectUris agora faz parte dos novos recursos da Web e do publicClient. Isso permite que os desenvolvedores usem URIs específicos para seus clientes Web e públicos (como um aplicativo instalado em um dispositivo de área de trabalho). | |
 | **samlMetadataUrl**| versão &nbsp; - &nbsp; beta _ainda não disponível_  <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | |
-| **extensãoproperties**| &nbsp; - &nbsp; **extensões** beta <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **extensãoproperties**| &nbsp; - &nbsp; **extensões** beta <br> v 1.0 &nbsp; - &nbsp; **extensionproperties** | |
 | **Pontos de extremidade**|  versão &nbsp; - &nbsp; beta _não disponível_  <br> v 1.0 &nbsp; - &nbsp; _não disponível_  | Essa propriedade foi preterida, mas está planejada para o servicePrincipalName.|
 
 ## <a name="approleassignment-differences"></a>Diferenças do AppRoleAssignment
@@ -169,7 +167,7 @@ O recurso ServiceEndpoint do Azure AD Graph é renomeado como ponto de extremida
 | **função** | &nbsp;-&nbsp;**recurso** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **serviceId** | &nbsp;-&nbsp;**provedor** de versão beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **serviceName** | &nbsp;-&nbsp;**ProviderName** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **resourceId** | versão&nbsp;-&nbsp;beta**providerResourceId**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **Identificação** | versão&nbsp;-&nbsp;beta**providerResourceId**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **URI** | &nbsp;-&nbsp;**URI** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 
 ## <a name="serviceprincipal-property-differences"></a>Diferenças de propriedade de servicePrincipalName

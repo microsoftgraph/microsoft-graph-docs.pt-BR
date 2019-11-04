@@ -3,14 +3,14 @@ title: tipo de recurso informationalUrl
 description: Informações de perfil básicas do aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9e2eaad003f4669623a4db4af1b364e05198515d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: c8cf7bcc40480042b4cd43230ca0245bd690fd7b
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006252"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938839"
 ---
 # <a name="informationalurl-resource-type"></a>tipo de recurso informationalUrl
 
@@ -22,10 +22,11 @@ Informações de perfil básicas do aplicativo.
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|Marketing|String| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
-|declaração|String| Link para a política de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
-|à|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
-|termsOfService|String| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
+|logoUrl|String|A URL da CDN para o logotipo do aplicativo, somente leitura.|
+|marketingUrl|String| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
+|privacyStatementUrl|String| Link para a política de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
+|supportUrl|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
+|termsOfServiceUrl|String| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,10 +41,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "marketing": "String",
-  "privacy": "String",
-  "support": "String",
-  "termsOfService": "String"
+  "logoUrl": "String",
+  "marketingUrl": "String",
+  "privacyStatementUrl": "String",
+  "supportUrl": "String",
+  "termsOfServiceUrl": "String"
 }
 
 ```

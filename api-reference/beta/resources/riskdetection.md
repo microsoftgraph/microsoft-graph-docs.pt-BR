@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 07a3a76f2ec2a4c3e1536f4b4d61e52417c2053c
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: 78dac11af0168b6981e98688536064e9cbc5f528
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576463"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938727"
 ---
 # <a name="riskdetection-resource-type"></a>tipo de recurso riskDetection
 
@@ -20,10 +20,10 @@ Representa informações sobre um risco detectado em um locatário do Azure AD.
 
 O Azure AD avalia continuamente [os riscos do usuário](riskyuser.md) e os riscos de [entrada do](signin.md) aplicativo ou do usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todas as detecções de risco em seu ambiente do Azure AD.
 
-Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
+Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
 
 >[!NOTE]
->Você deve ter uma licença do Azure AD Premium P2 para usar a API de detecção de risco.
+>Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
 
 ## <a name="methods"></a>Métodos
 
@@ -41,8 +41,8 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |`correlationId`|`string`|ID de correlação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada. |
 |`riskType`|`riskEventType`|O tipo de evento de risco detectado. Os valores possíveis são unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, genericadminConfirmedUserCompromised , mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP e unknownFutureValue. |
 |`riskState`|`riskState`|O estado de um usuário ou logon arriscado detectado. Os valores possíveis são nenhum, confirmedSafe, corrigido, descartado, atRisk, confirmedCompromised e unknownFutureValue. |
-|`riskLevel`|`riskLevel`|Nível do risco detectado. Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue. |
-|`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, oculto, adminConfirmedUserCompromised, unknownFutureValue. |
+|`riskLevel`|`riskLevel`|Nível do risco detectado. Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
+|`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, oculto, adminConfirmedUserCompromised, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
 |`source`|`string`|Fonte da detecção de risco. Por exemplo, "activeDirectory". |
 |`detectionTimingType`|`riskDetectionTimingType`|Intervalo do risco detectado (em tempo real/offline). Os valores possíveis são não definidos, em tempo real, nearRealtime, offline, unknownFutureValue. |
 |`activity`|`activityType`|Indica o tipo de atividade ao qual o risco detectado está vinculado. Os valores possíveis são entrar, User, unknownFutureValue. |
@@ -52,7 +52,7 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |`activityDateTime`|`datetimeoffset`|Data e hora em que a atividade arriscada ocorreu. |
 |`detectedDateTime`|`datetimeoffset`|Data e hora em que o risco foi detectado. |
 |`lastUpdatedDateTime`|`datetime`|Data e hora da última atualização do risco. |
-|`userId`|`string`|ID exclusiva do usuário. |
+|`userId`|`string`|ID exclusivo do usuário. |
 |`userDisplayName`|`string`|Nome do usuário. |
 |`userPrincipalName`|`string`|O nome UPN do usuário. |
 |`additionalInfo`|`string`|Informações adicionais associadas à detecção de riscos no formato JSON. |

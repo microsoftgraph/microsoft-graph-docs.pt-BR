@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5cea04931d537c8b0bd29c49327a56afe8a7d5d5
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 975effa01ce60799a647bc051a0518d87afcda9e
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841294"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939583"
 ---
 # <a name="place-resource-type"></a>inserir tipo de recurso
 
@@ -30,8 +30,9 @@ As funções [findRooms](../api/user-findrooms.md) e [findRoomLists](../api/user
 |Suporte para obter todas as listas de salas ou salas em um locatário e todas as salas em uma lista de salas | Suporte semelhante-obtenha todas as salas ou listas de salas em um locatário e todas as salas em uma lista de salas|
 |Os [locais de lista](../api/place-list.md) podem retornar mais de 100 salas em um locatário | [findRooms](../api/user-findrooms.md) retorna até as primeiras salas de 100 em um locatário |
 |Suporte para [obter uma lista de salas ou salas individuais](../api/place-get.md) em um locatário | Não oferece suporte para obter uma lista de salas ou salas individuais em um locatário
-|Define as entidades específicas da [sala](room.md) e [](roomlist.md) da salalist que especificam um conjunto de propriedades mais avançado, além do nome para exibição e endereço SMTP. | Cada sala e lista de salas é de um tipo [](emailaddress.md) de endereço de email de espessura mais leve que especifica somente o nome para exibição e o endereço SMTP|
+|Define as entidades específicas da [sala](room.md) e da [salalist](roomlist.md) que especificam um conjunto de propriedades mais avançado, além do nome para exibição e endereço SMTP. | Cada sala e lista de salas é de um tipo de endereço de email de espessura [mais leve que](emailaddress.md) especifica somente o nome para exibição e o endereço SMTP|
 |Oferece suporte somente a cenários organizacionais com permissões delegadas (contas corporativas ou de estudante) ou de aplicativo | Suporte semelhante somente para cenários organizacionais com permissões delegadas ou de aplicativo|
+|Oferece suporte à [atualização de uma lista de salas ou salas individuais](../api/place-update.md) em um locatário | Não oferece suporte à atualização de uma lista de salas ou salas individuais em um locatário
 
 ## <a name="methods"></a>Métodos
 
@@ -39,13 +40,14 @@ As funções [findRooms](../api/user-findrooms.md) e [findRoomLists](../api/user
 |:------------------------------------|:-----------------------------|:--------|
 | [Locais de lista](../api/place-list.md) | Uma coleção do tipo de [local](place.md) solicitado e derivado | Obtém uma coleção do tipo especificado de objetos **Place** definidos no locatário. |
 | [Obter local](../api/place-get.md)    | O tipo de [local](place.md) solicitado e derivado            | Obtenha as propriedades e os relacionamentos de um objeto **local** especificado. |
+| [Local de atualização](../api/place-update.md)    | O tipo de [local](place.md) solicitado e derivado            | Atualizar as propriedades e os relacionamentos de um objeto **local** especificado. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo                                              | Descrição |
 |:---------------|:--------------------------------------------------|:--------|
 | address        | [physicalAddress](physicaladdress.md)             | O endereço da rua do local. |
-| displayName    | String                                            | O nome associado ao local. |
+| displayName    | Cadeia de caracteres                                            | O nome associado ao local. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local do local no latitude, longitude e (opcionalmente) as coordenadas de altitude. |
 | id             | String                                            | Identificador exclusivo do local. Somente leitura. |
 | phone          | Cadeia de caracteres                                            | O número de telefone do local. |
@@ -78,8 +80,8 @@ Veja a seguir uma representação JSON do recurso.
 ```
 
 ## <a name="see-also"></a>Confira também
-- Para que os administradores criem uma lista de salas, use o [novo](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)grupo de distribuição do cmdlet do Exchange PowerShell.
-- Para que os administradores adicionem uma sala a uma lista de salas, use o cmdlet do Exchange PowerShell [Add-DistributionGroupMember](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps).
+- Para que os administradores criem uma lista de salas, use o [novo](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)grupo de distribuição do cmdlet do Exchange PowerShell.
+- Para que os administradores adicionem uma sala a uma lista de salas, use o cmdlet do Exchange PowerShell [Add-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps).
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

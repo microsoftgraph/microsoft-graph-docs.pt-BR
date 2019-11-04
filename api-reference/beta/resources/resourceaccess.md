@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso resourceAccess
-description: Especifica um escopo de permissão OAuth 2,0 ou uma função de aplicativo exigida por um aplicativo. A propriedade **resourceAccess** do tipo requiredResourceAccess é uma coleção de **resourceAccess**.
+description: Especifica um escopo de permissão OAuth 2,0 ou uma função de aplicativo exigida por um aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 4c2a909fb2beafeb22f303ef42703b3d57c30854
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: d0d04ba99c0132a0f305bb0fdcaa5e32071d7554
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965408"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939261"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso resourceAccess
 
@@ -41,8 +41,8 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Guid|O identificador exclusivo de uma das instâncias [oAuth2Permission](oauth2permission.md) ou [appRole](approle.md) que o aplicativo de recursos expõe.|
-|type|String|Especifica se a propriedade **ID** faz referência a um [OAuth2Permission](oauth2permission.md) ou um [appRole](approle.md). Os valores possíveis são "escopo" ou "função".|
+|id|Guid|O identificador exclusivo de uma das instâncias [oauth2PermissionScopes](permissionscope.md) ou [appRole](approle.md) que o aplicativo de recursos expõe.|
+|type|String|Especifica se a propriedade **ID** faz referência a um [Oauth2PermissionScopes](permissionscope.md) ou um [appRole](approle.md). Os valores possíveis são "escopo" ou "função".|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c32501031d08e1b6d9dfc0fc78909e127a96b900
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: f82f6b17aa6155d8d49e02a4a3112f010c6279c2
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734522"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937558"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -49,8 +49,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Use | cadeia de caracteres | Semelhante à propriedade **use** de **trustFrameworkKey**. |
-| kty | cadeia de caracteres | Semelhante à propriedade **KTY** de **trustFrameworkKey**. |
+| Use | string | Semelhante à propriedade **use** de **trustFrameworkKey**. |
+| kty | string | Semelhante à propriedade **KTY** de **trustFrameworkKey**. |
 | nbf | int | Semelhante à propriedade **NBF** de **trustFrameworkKey**. |
 | exp | int | Semelhante à propriedade **exp** de **trustFrameworkKey**. |
 
@@ -63,6 +63,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um no
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_generatekey"
@@ -79,6 +81,20 @@ Content-type: application/json
   "exp": 1508969811
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-generatekey-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-generatekey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-generatekey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

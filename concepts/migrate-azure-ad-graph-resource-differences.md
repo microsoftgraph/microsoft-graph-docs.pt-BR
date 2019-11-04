@@ -4,12 +4,12 @@ description: Descreve as diferenças entre recursos no gráfico do Azure AD e re
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 49a0321601c79ac5d5c0eb64b84a7f197bcb4e03
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 925faf5aa27adcdef3d0ade88f9c3d5d8a911c75
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622544"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934736"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de tipo de recurso entre o Azure AD Graph e o Microsoft Graph
 
@@ -25,26 +25,17 @@ Se um recurso não for mostrado na lista, ele já estará disponível na [versã
 
 |Azure AD Graph. <br>(v 1.6) Resource |Microsoft Graph<br>recurso|Comentários|
 |---|---|---|
-| [Caligrafia](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)       | Beta- _ainda não disponível_<br>v 1.0- _ainda não disponível_ ||
-| [Aplicativo](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [aplicativo](/graph/api/resources/application?view=graph-rest-beta)<br>v 1.0- _ainda não disponível_ ||
-| [AppRole](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [appRole](/graph/api/resources/approle?view=graph-rest-beta)<br>v 1.0- _ainda não disponível_ | |
+| [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [aplicativo](/graph/api/resources/application?view=graph-rest-beta)<br>v 1.0- [Application](/graph/api/resources/application?view=graph-rest-1.0) ||
+| [AppRole](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [appRole](/graph/api/resources/approle?view=graph-rest-beta)<br>v 1.0- [appRole](/graph/api/resources/appRole?view=graph-rest-1.0) | |
 | [AppRoleAssignment](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão&nbsp;-&nbsp;beta[appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>v 1.0- _ainda não disponível_ | |
 | [CertificateAuthorityInformation](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão&nbsp;-&nbsp;beta[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>v 1.0&nbsp;-&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) | |
 | [Contato](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>v 1.0- [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
 | [DirectoryLinkChange](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- _nova&nbsp;abordagem_ <br>v 1.0- _nova&nbsp;abordagem_ | A consulta Delta oferece suporte à detecção de alteração de relação com um mecanismo que não requer esse recurso. Consulte [diferenças de recursos entre o Azure ad Graph e o Microsoft Graph](migrate-azure-ad-graph-feature-differences.md). |
-| [Keycredential](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)| Beta- [Keycredential](/graph/api/resources/keyCredential?view=graph-rest-beta)<br>v 1.0- _ainda não disponível_ | |
-| [Chavevalor](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [KeyValue](/graph/api/resources/keyValue?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ ||
-| [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ ||
+| [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> v 1.0- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-1.0) ||
 | [OAuth2PermissionGrant](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão&nbsp;-&nbsp;beta[oAuth2PermissionGrant](/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ ||
-| [OptionalClaim](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta-optionalClaim <br> v 1.0- _ainda não disponível_ | |
-| [OptionalClaims](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta-optionalClaims<br> v 1.0- _ainda não disponível_ ||
-| [ParentalControlSettings](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [parentalControlSettings](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ ||
-| [PasswordCredential](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [passwordCredential](/graph/api/resources/passwordCredential?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ ||
 | [PasswordProfile](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [passwordProfile](/graph/api/resources/passwordProfile?view=graph-rest-beta) <br> v 1.0-PasswordProfile ||
 | [Política](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [política](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) _(sujeita a alterações)_ <br> v 1.0- _ainda não disponível_ | Cada política terá um nome de tipo exclusivo e uma estrutura.|
 | [ProvisioningError](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão&nbsp;-&nbsp;beta_não disponível_ <br> v 1.0&nbsp;-&nbsp;_não disponível_ | Esse recurso foi preterido.  No entanto, um novo recurso descrevendo quaisquer erros de provisionamento relacionados ao AD Connect pode ser encontrado no [onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0). |
-| [RequiredResourceAccess](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [requiredResourceAccess](/graph/api/resources/requiredResourceAccess?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ | |
-| [ResourceAccess](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [resourceAccess](/graph/api/resources/resourceAccess?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ | |
 | [ServiceEndpoint](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [ponto de extremidade](/graph/api/resources/endpoint?view=graph-rest-beta) <br> v 1.0-ponto de extremidade _ainda não disponível_ | o [ponto de extremidade](/graph/api/resources/endpoint?view=graph-rest-beta) só está disponível como parte do recurso de [grupo](/graph/api/resources/group?view=graph-rest-beta) .|
 | [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [servicePrincipalName](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ | |
 | [SignInName](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- _ainda não disponível_ <br> v 1.0- _ainda não disponível_ | Nova modelagem para os identificadores usados para entrar em uma conta de usuário, chamada **identityobject**, mas ainda não disponível. Oferece suporte a cenários do Azure AD B2C. |

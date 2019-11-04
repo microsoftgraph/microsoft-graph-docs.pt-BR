@@ -3,14 +3,68 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3eb7b2d73fa1e277c1db6762c9ac5c96326889aa
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: f2ccc1fa5a33871f8cdbe17fd9bb055c678d457e
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418276"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950483"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="september-2019-new-and-generally-available"></a>Setembro de 2019: novo e disponível para o público geral
+
+### <a name="calendar-mail-and-group"></a>Calendário, email e grupo
+[Obter o conteúdo bruto de um arquivo, ou o conteúdo MIME de um item](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) que foi adicionado como um [anexo](/graph/api/resources/attachment?view=graph-rest-1.0) a um[evento](/graph/api/resources/event?view=graph-rest-1.0), [ mensagem](/graph/api/resources/message?view=graph-rest-1.0)ou[ postagem](/graph/api/resources/post?view=graph-rest-1.0) de grupo.
+
+### <a name="calendar-mail-outlook-task-personal-contact"></a>Calendário, email, tarefa do Outlook, contato pessoal
+Use a função [translateExchange](/graph/api/user-translateexchangeids?view=graph-rest-1.0) para converter uma ID de item do Outlook [entre](/graph/api/user-translateexchangeids?view=graph-rest-1.0#exchangeidformat-values)formatos suportados, incluindo o formato de ID padrão do Microsoft Graph e o formato de ID imutável. 
+
+Os recursos a seguir são compatíveis com a conversão de formato de ID:
+
+- [attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [contato](/graph/api/resources/contact?view=graph-rest-1.0)
+- [event](/graph/api/resources/event?view=graph-rest-1.0)
+- [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)
+- [message](/graph/api/resources/message?view=graph-rest-1.0)
+- [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0)
+
+### <a name="mail"></a>Email
+[Obter conteúdo MIME de uma mensagem](outlook-get-mime-message.md).
+
+### <a name="microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
+Use o [Microsoft Graph Toolkit](toolkit/overview.md) para desenvolver aplicativos de produção que ofereçam uma aparência consistente do Microsoft 365 e economize tempo na autenticação e acesso a dados do Microsoft Graph.
+
+## <a name="september-2019-new-in-preview"></a>Setembro de 2019: novidades na versão prévia
+
+> [!IMPORTANT]
+> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
+
+### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+Atualizações de [Setembro](changelog.md#september-2019) do Intune
+
+### <a name="files"></a>Arquivos
+- Suporte aprimorado à sincronização:
+
+  - Use a nova propriedade **pendingOperations** para identificar operações que podem afetar o conteúdo binário de um [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta).
+  - [Restaure](/graph/api/driveitem-restore?view=graph-rest-beta) um **driveItem** excluído. 
+- Use o Algoritmo de Hash Seguro (SHA-256) para aprimorar a segurança e a integridade dos [dados](/graph/api/resources/file?view=graph-rest-beta) do arquivo.
+- Obtenha ou defina a orientação de uma [foto](/graph/api/resources/photo?view=graph-rest-beta). A configuração é compatível com o OneDrive Personal.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- Use a propriedade new **identities** e obtenha as identidades que um [usuário](/graph/api/resources/user?view=graph-rest-beta) pode usar para entrar em uma conta. As identidades podem ser fornecidas por organizações ou provedores de identidade social, como Facebook, Google e Microsoft.
+- Aperfeiçoamentos incrementais para [sincronizar identidades](/graph/api/resources/synchronization-overview?view=graph-rest-beta) em um aplicativo de nuvem para um locatário:
+
+  - Armazenar configurações para um [trabalho de sincronização](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)
+  - Especifique um motivo para impor a [quarentena](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) a um trabalho de sincronização
+
+### <a name="teamwork"></a>Trabalho em equipe
+Use o canal **Geral** de uma [equipe](/graph/api/resources/team?view=graph-rest-beta) ou personalize as [configurações de membros](/graph/api/resources/teammembersettings?view=graph-rest-beta) para permitir que eles criem canais privados na **equipe**.
+
+### <a name="users"></a>Usuários
+- Obtenha ou atualize as identidades com as quais um [usuário](/graph/api/resources/user?view=graph-rest-beta) pode entrar em uma conta. Essas identidades podem ser fornecidas por organizações de negócios ou por provedores de identidade social, como o Facebook, o Google e a Microsoft.
+- Obtenha ou atualize as [configurações da caixa de correio](/graph/api/resources/mailboxsettings?view=graph-rest-beta) do formato de data e hora escolhidas pelo usuário.
+
 
 ## <a name="august-2019-new-and-generally-available"></a>Agosto de 2019: novo e disponível para o público geral 
 

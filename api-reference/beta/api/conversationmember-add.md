@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fd1f2c6689176422fa35a500224c6f2a5f277851
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 71070d07e17c1662523e0930b4bff4d2944b0649
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633878"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937179"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
 ```http
-POST /teams/{id}/channels/{id}/members/{id}
+POST /teams/{id}/channels/{id}/members
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,12 +49,12 @@ Inclua as propriedades a seguir no corpo da solicitação.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|As funções para esse usuário.|
-|user|[Usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|funções|coleção de cadeias de caracteres|As funções desse usuário.|
+|user|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta.
+Se bem-sucedido, este método retornará um código de resposta `201 Created` e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,7 +86,7 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

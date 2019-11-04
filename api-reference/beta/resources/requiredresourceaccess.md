@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso requiredResourceAccess
-description: Especifica o conjunto de escopos de permissão de OAuth 2,0 e funções de aplicativo no recurso especificado que um aplicativo exige acesso. Os escopos de permissão OAuth 2,0 especificados podem ser solicitados por aplicativos cliente (por meio da coleção **requiredResourceAccess** ) ao chamar um aplicativo de recurso. A propriedade **requiredResourceAccess** da entidade Application é uma coleção de **ReqiredResourceAccess**.
+description: Especifica o conjunto de escopos de permissão OAuth 2,0 e funções de aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6c7fec2027e5e987c66f868cc4a69555141bdbf9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: a2104052f4c70a988d1154bb08db025e740246fb
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965413"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938818"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>tipo de recurso requiredResourceAccess
 

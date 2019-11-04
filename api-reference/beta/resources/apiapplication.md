@@ -1,29 +1,32 @@
 ---
-title: tipo de recurso de API
+title: tipo de recurso apiApplication
 description: Especifica as configurações para um aplicativo da API Web.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 3bf5ffc21c13e0952efd0f5ea773f76dc3f7b46f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 85e9c5f62182b1dd7666117c6fcf42743ccc1e8e
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974336"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939156"
 ---
-# <a name="api-resource-type"></a>tipo de recurso de API
+# <a name="apiapplication-resource-type"></a>tipo de recurso apiApplication
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Especifica as configurações para um aplicativo da API Web.
+Especifica configurações para um aplicativo que implementa uma API Web.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|requestedAccessTokenVersion|Int32| Especifica a versão do token de acesso aceito para o recurso de API atual. Os valores possíveis são 1 ou 2.  |
-|oauth2PermissionScopes|coleção [permissionScope](permissionscope.md)| A coleção de escopos de permissão OAuth 2,0 que o aplicativo Web API (recurso) expõe para aplicativos cliente. Esses escopos de permissão podem ser concedidos aos aplicativos cliente durante o consentimento. |
+|`acceptMappedClaims`| Booliano | Quando true, permite que um aplicativo use o mapeamento de declarações sem especificar uma chave de assinatura personalizada. |
+|`knownClientApplications`| Coleção de GUIDs |Usado para o consentimento de agrupamento se você tiver uma solução que contenha duas partes: um aplicativo cliente e um aplicativo de API Web personalizado. Se você definir a appID do aplicativo cliente com esse valor, o usuário só consenti uma vez para o aplicativo cliente. O Azure AD sabe que a reenvio para o cliente significa implicitamente Confira a API Web e automaticamente provisiona entidades de serviço para ambas as APIs ao mesmo tempo. O cliente e o aplicativo da API Web devem ser registrados no mesmo locatário.|
+|`oauth2PermissionScopes`| coleção [permissionScope](permissionscope.md) | A coleção de escopos de permissão OAuth 2,0 que o aplicativo Web API (recurso) expõe para aplicativos cliente. Esses escopos de permissão podem ser concedidos aos aplicativos cliente durante o consentimento. |
+|`preAuthorizedApplications`| coleção [preauthorizedapplication e](preauthorizedapplication.md) | Lista os aplicativos cliente que são previamente autorizados com as permissões delegadas especificadas para acessar as APIs desse aplicativo. Os usuários não precisam ser consentidos em qualquer aplicativo pré autorizado (para as permissões especificadas). No entanto, qualquer permissão adicional que não esteja listada no preAuthorizedApplications (solicitado por meio de consentimento incremental, por exemplo) exigirá o consentimento do usuário. |
+|`requestedAccessTokenVersion`| Int32 | Especifica a versão do token de acesso esperada por este recurso. Isso altera a versão e o formato do JWT produzido independentemente do ponto de extremidade ou cliente usado para solicitar o token de acesso. <br><br> O ponto de extremidade usado, v 1.0 ou v 2.0, é escolhido pelo cliente e só impacta a versão do id_tokens. Os recursos precisam ser configurados `requestedAccessTokenVersion` explicitamente para indicar o formato do token de acesso suportado. <br><br> Os valores possíveis `requestedAccessTokenVersion` para `1`são `2`,, `null`ou. Se o valor for `null`, este padrão será `1`, que corresponde ao ponto de extremidade v 1.0. <br><br> Se `signInAudience` no aplicativo estiver configurado como `AzureADandPersonalMicrosoftAccount`, o valor dessa propriedade deverá ser`2` |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -38,10 +41,12 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "requestedAccessTokenVersion": 1,
-  "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}]
+  "acceptMappedClaims": true,
+  "knownClientApplications": ["Guid"],
+  "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
+  "preAuthorizedApplications": [{"@odata.type": "microsoft.graph.preAuthorizedApplication"}],
+  "requestedAccessTokenVersion": 2
 }
-
 ```
 
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: caa00e74298eb7d744412ffdc85298d804ef615d
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 76213aa84377de6c4d469a61d8287a58d7f76a20
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621354"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934855"
 ---
 # <a name="add-member"></a>Adicionar membro
 Adicione um membro a um grupo do Office 365 ou a um grupo de segurança através da propriedade de navegação de **membros**.
@@ -39,7 +39,7 @@ POST /groups/{id}/members/$ref
 | Cabeçalho       | Valor |
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Content-type   | appication/json. Obrigatório. |
+| Content-type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) ou [organizational contact](../resources/orgcontact.md) a ser adicionado.

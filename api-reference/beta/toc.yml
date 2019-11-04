@@ -44,7 +44,7 @@
         - name: Controlar alterações
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/beta
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/beta
@@ -57,7 +57,7 @@
         - name: Adicionar dados personalizados
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/extensibility-overview?context=graph/api/beta
             - name: Usar extensões abertas (exemplo)
               href: /graph/extensibility-open-users?context=graph/api/beta
@@ -71,7 +71,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -158,11 +158,11 @@
     - name: Referência beta
       expanded: true
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -378,7 +378,7 @@
                   href: api/user-update-settings.md
         - name: Grupos
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -747,6 +747,15 @@
                   href: api/calendargroup-list-calendars.md
                 - name: Criar calendário no grupo de calendários
                   href: api/calendargroup-post-calendars.md
+            - name: Permissão de calendário
+              href: resources/calendarpermission.md
+              items:
+                - name: Obter
+                  href: api/calendarpermission-get.md
+                - name: Atualizar
+                  href: api/calendarpermission-update.md
+                - name: Excluir
+                  href: api/calendarpermission-delete.md
             - name: Modo de exibição de calendário
               href: api/calendar-list-calendarview.md
               items:
@@ -798,6 +807,8 @@
                   href: api/place-list.md
                 - name: Obter local
                   href: api/place-get.md
+                - name: Local de atualização
+                  href: api/place-update.md
         - name: Comunicações em nuvem
           displayName: Cloud communications
           items:
@@ -909,7 +920,7 @@
         - name: Reserva de clientes
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/booking-api-overview.md
             - name: Negócio de reservas
               href: resources/bookingbusiness.md
@@ -7758,7 +7769,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -7848,7 +7859,7 @@
         - name: Finanças (visualização)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/dynamics-graph-reference.md
             - name: Conta
               href: resources/dynamics-account.md
@@ -8083,7 +8094,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/azure-ad-overview.md
             - name: Avaliações do acesso
               href: resources/accessreviews-root.md
@@ -8200,10 +8211,30 @@
                   href: api/application-update.md
                 - name: Excluir aplicativo
                   href: api/application-delete.md
+                - name: Listar aplicativos excluídos
+                  href: api/directory-deleteditems-list.md
+                - name: Obter aplicativo excluído
+                  href: api/directory-deleteditems-get.md
+                - name: Excluir aplicativo permanentemente
+                  href: api/directory-deleteditems-delete.md
+                - name: Restaurar aplicativo excluído
+                  href: api/directory-deleteditems-restore.md
+                - name: Adicionar senha
+                  href: api/application-addpassword.md
+                - name: Remover senha
+                  href: api/application-removepassword.md
+                - name: Criar extensão
+                  href: api/application-post-extensionproperty.md
+                - name: Listar extensões
+                  href: api/application-list-extensionproperty.md
+                - name: Excluir extensão
+                  href: api/application-delete-extensionproperty.md
                 - name: Listar proprietários
                   href: api/application-list-owners.md
-                - name: Atribuir proprietários
+                - name: Adicionar proprietário
                   href: api/application-post-owners.md
+                - name: Remover proprietário
+                  href: api/application-delete-owners.md
                 - name: Modelo de aplicativo
                   href: resources/applicationtemplate.md
                   items:
@@ -8238,7 +8269,7 @@
             - name: Configuração de autenticação baseada em certificado
               href: resources/certificatebasedauthconfiguration.md
               items:
-                - name: Listar
+                - name: Lista
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
@@ -8268,7 +8299,7 @@
                       items:
                         - name: Local nomeado
                           href: resources/namedlocation.md
-                        - name: Listar
+                        - name: Lista
                           href: api/conditionalaccessroot-list-namedlocations.md
                         - name: Obter
                           href: api/namedlocation-get.md
@@ -8430,6 +8461,63 @@
                   href: api/domain-update.md
                 - name: Verificar domínio
                   href: api/domain-verify.md
+            - name: Gerenciamento de qualificação
+              href: resources/entitlementmanagement-root.md
+              items:
+                - name: Pacote de acesso
+                  href: resources/accesspackage.md
+                  items:
+                    - name: Listar
+                      href: api/accesspackage-list.md
+                    - name: Criar
+                      href: api/accesspackage-post.md
+                    - name: Obter
+                      href: api/accesspackage-get.md
+                    - name: Excluir
+                      href: api/accesspackage-delete.md
+                - name: Atribuição de pacote de acesso
+                  href: resources/accesspackageassignment.md
+                  items:
+                    - name: Listar
+                      href: api/accesspackageassignment-list.md
+                - name: Política de atribuição de pacote do Access
+                  href: resources/accesspackageassignmentpolicy.md
+                  items:
+                    - name: Listar
+                      href: api/accesspackageassignmentpolicy-list.md
+                    - name: Criar
+                      href: api/accesspackageassignmentpolicy-post.md
+                    - name: Obter
+                      href: api/accesspackageassignmentpolicy-get.md
+                    - name: Excluir
+                      href: api/accesspackageassignmentpolicy-delete.md
+                - name: Solicitação de atribuição de pacote de acesso
+                  href: resources/accesspackageassignmentrequest.md
+                  items:
+                    - name: Listar
+                      href: api/accesspackageassignmentrequest-list.md
+                    - name: Criar
+                      href: api/accesspackageassignmentrequest-post.md
+                    - name: Obter
+                      href: api/accesspackageassignmentrequest-get.md
+                - name: Função de recurso de atribuição de pacote do Access
+                  href: resources/accesspackageassignmentresourcerole.md
+                  items:
+                    - name: Listar
+                      href: api/accesspackageassignmentresourcerole-list.md
+                - name: Catálogo de pacotes do Access
+                  href: resources/accesspackagecatalog.md
+                  items:
+                    - name: Listar
+                      href: api/accesspackagecatalog-list.md
+                    - name: Criar
+                      href: api/accesspackagecatalog-post.md
+                    - name: Obter
+                      href: api/accesspackagecatalog-get.md
+                    - name: Excluir
+                      href: api/accesspackagecatalog-delete.md
+                    - name: Listar recursos
+                      href: api/accesspackagecatalog-list-accesspackageresources.md
             - name: Política de distribuição de recursos
               href: resources/featurerolloutpolicy.md
               items:
@@ -8514,6 +8602,23 @@
                   href: api/identityprovider-update.md
                 - name: Excluir o provedor de identidade
                   href: api/identityprovider-delete.md
+            - name: Proteção de informações
+              items:
+                - name: Rótulos
+                  href: resources/informationprotectionlabel.md
+                  items:
+                    - name: Listar rótulos
+                      href: api/informationprotectionpolicy-list-labels.md
+                    - name: Obter rótulo
+                      href: api/informationprotectionlabel-get.md
+                    - name: Avaliar aplicativo
+                      href: api/informationprotectionlabel-evaluateapplication.md
+                    - name: Avaliar o resultado da classificação
+                      href: api/informationprotectionlabel-evaluateclassificationresults.md
+                    - name: Avaliar a remoção
+                      href: api/informationprotectionlabel-evaluateremoval.md
+                    - name: Extrair rótulo
+                      href: api/informationprotectionlabel-extractlabel.md
             - name: Gerenciador de convites
               href: resources/invitation.md
               items:
@@ -8796,6 +8901,10 @@
                   href: api/serviceprincipal-update.md
                 - name: Excluir entidade de serviço
                   href: api/serviceprincipal-delete.md
+                - name: Adicionar senha
+                  href: api/serviceprincipal-addpassword.md
+                - name: Remover senha
+                  href: api/serviceprincipal-removepassword.md
                 - name: Verificar objetos member
                   href: api/serviceprincipal-checkmemberobjects.md
             - name: Sku inscrita
@@ -9181,13 +9290,14 @@
                 - name: Obter recurso
                   href: api/resource-get.md
         - name: Notificações
-          href: resources/notifications-api-overview.md
           items:
+            - name: Visão Geral
+              href: resources/notifications-api-overview.md
             - name: Notificação
               href: resources/projectrome-notification.md
               items:
                 - name: Criar e enviar uma notificação
-                  href: api/notifications-post.md
+                  href: api/user-post-notifications.md
         - name: Contatos pessoais
           href: resources/contact.md
           displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -9284,7 +9394,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Registro e uso
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Contagem de registro de usuário de credenciais
                       href: resources/credentialuserregistrationcount.md
@@ -9308,7 +9418,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Relatórios de uso do Office 365
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/report.md
                 - name: Uso do dispositivo do Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -9506,10 +9616,71 @@
                       href: api/reportroot-getyammergroupsactivitygroupcounts.md
                     - name: Obter contagens de atividades
                       href: api/reportroot-getyammergroupsactivitycounts.md
+        - name: Pesquisa (visualização)
+          displayname: Microsoft Search API
+          items:
+            - name: Consulta
+              items:
+                - name: Visão Geral
+                  href: resources/search-api-overview.md
+                - name: Dados de consulta
+                  href: api/search-query.md
+            - name: Índice
+              items:
+                - name: Visão Geral
+                  href: resources/indexing-api-overview.md
+                - name: Conexão externa
+                  items:
+                    - name: Conexão externa
+                      href: resources/externalconnection.md
+                    - name: Listar conexões externas
+                      href: api/externalconnection-list.md
+                    - name: Obter conexão externa
+                      href: api/externalconnection-get.md
+                    - name: Criar conexão externa
+                      href: api/external-post-connections.md
+                    - name: Atualizar conexão externa
+                      href: api/externalconnection-update.md
+                    - name: Excluir conexão externa
+                      href: api/externalconnection-delete.md
+                    - name: Criar esquema
+                      href: api/externalconnection-post-schema.md
+                    - name: Operação get
+                      href: api/connectionoperation-get.md
+                    - name: Criar item externo
+                      href: api/externalconnection-put-items.md
+                - name: Esquema
+                  items:
+                    - name: Esquema
+                      href: resources/schema.md
+                    - name: Obter esquema
+                      href: api/schema-get.md
+                    - name: Criar esquema
+                      href: api/externalconnection-post-schema.md
+                - name: Item externo
+                  items:
+                    - name: Item externo
+                      href: resources/externalitem.md
+                    - name: Criar item externo
+                      href: api/externalconnection-put-items.md
+                    - name: Atualizar item externo
+                      href: api/externalitem-update.md
+                    - name: Excluir item externo
+                      href: api/externalitem-delete.md
+                - name: Arquivo externo
+                  items:
+                    - name: Arquivo externo
+                      href: resources/externalfile.md
+                    - name: Criar arquivo externo
+                      href: api/externalconnection-put-items.md
+                    - name: Atualizar arquivo externo
+                      href: api/externalitem-update.md
+                    - name: Excluir arquivo externo
+                      href: api/externalitem-delete.md
         - name: Segurança
           displayname: 'Security API, Microsoft Graph Security API'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/security-api-overview.md
             - name: Ações
               href: resources/securityaction.md
@@ -9571,7 +9742,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -9629,7 +9800,7 @@
                   href: api/sitepage-delete.md
                 - name: Publicar página
                   href: api/sitepage-publish.md
-        - name: Inteligência social e de trabalho
+        - name: Pessoas e inteligência do local de trabalho
           items:
             - name: Visão Geral
               href: resources/social-overview.md
@@ -9685,10 +9856,69 @@
                       href: api/activitystatistics-get.md
             - name: Menção
               href: resources/mention.md
+            - name: Perfil
+              href: resources/profile.md
+              items:
+                - name: Obter perfil
+                  href: api/profile-get.md
+                - name: Excluir perfil
+                  href: api/profile-delete.md
+                - name: Listar conta
+                  href: api/profile-list-account.md
+                - name: Listar anniversariles
+                  href: api/profile-list-anniversaries.md
+                - name: Criar data especial
+                  href: api/profile-post-anniversaries.md
+                - name: Listar atividades educacionais
+                  href: api/profile-list-educationalactivities.md
+                - name: Criar atividade educacional
+                  href: api/profile-post-educationalactivities.md
+                - name: Criar endereço de email
+                  href: api/profile-post-emails.md
+                - name: Listar endereços de email
+                  href: api/profile-list-emails.md
+                - name: Criar juros
+                  href: api/profile-post-interests.md
+                - name: Listar interesses
+                  href: api/profile-list-interests.md
+                - name: Criar idioma
+                  href: api/profile-post-languages.md
+                - name: Idiomas de lista
+                  href: api/profile-list-languages.md
+                - name: Criar nome
+                  href: api/profile-post-names.md
+                - name: Listar nomes
+                  href: api/profile-list-names.md
+                - name: Listar sites
+                  href: api/profile-list-websites.md
+                - name: Criar número de telefone
+                  href: api/profile-post-phones.md
+                - name: Listar números de telefone
+                  href: api/profile-list-phones.md
+                - name: Criar posição
+                  href: api/profile-post-positions.md
+                - name: Listar posições
+                  href: api/profile-list-positions.md
+                - name: Create project
+                  href: api/profile-post-projects.md
+                - name: Listar projetos
+                  href: api/profile-list-projects.md
+                - name: Criar habilidade
+                  href: api/profile-post-skills.md
+                - name: Listar qualificações
+                  href: api/profile-list-skills.md
+                - name: Criar conta da Web
+                  href: api/profile-post-webaccounts.md
+                - name: Listar contas da Web
+                  href: api/profile-list-webaccounts.md
+                - name: Criar site
+                  href: api/profile-post-websites.md
+                - name: Listar sites
+                  href: api/profile-list-websites.md
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -10103,7 +10333,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskgroups.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-taskgroups.md
                 - name: Obter
                   href: api/outlooktaskgroup-get.md
@@ -10161,7 +10391,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md

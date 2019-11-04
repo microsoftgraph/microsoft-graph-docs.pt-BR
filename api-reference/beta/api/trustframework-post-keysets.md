@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9b6cd03a38e4e115befacb13909d1ba0040b3aff
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: fc55eb8f469a0abd4576ffc152d997fe293ad3ed
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734523"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938299"
 ---
 # <a name="create-trustframeworkkeyset"></a>Criar trustFrameworkKeySet
 
@@ -54,11 +54,13 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta, u
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-create-an-empty-keyset"></a>Exemplo 1: criar um conjunto de chaves vazio
-Este padrão para criar um conjunto de chaves enpty e, em seguida, gerar uma chave, carregar um segredo manual e carregar um certificado ou uma chave PKCS12 é suficiente para a maioria dos cenários. 
+Essa é uma das operações mais úteis. Primeiro, você cria um conjunto de chaves vazio. Em seguida, no novo conjunto de chaves, você pode gerar uma chave, carregar um segredo manual e carregar um certificado ou uma chave PKCS12. 
 
 #### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra a solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework1"
@@ -72,6 +74,20 @@ Content-type: application/json
   "id": "keyset1"  
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-trustframeworkkeyset-from-trustframework-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-trustframeworkkeyset-from-trustframework-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-trustframeworkkeyset-from-trustframework-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
