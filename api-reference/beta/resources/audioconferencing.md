@@ -1,36 +1,35 @@
 ---
 title: tipo de recurso audioConferencing
-description: Representa as informações de acesso de telefone de um onlineMeeting.
+description: Representa informações de acesso de telefone de uma reunião online.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 94dc02920e7270fbfdacb10ee9a8edee8315fc67
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c392eb82be9e0f8c30353f18b393589b51649a3e
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974280"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969211"
 ---
-# <a name="audioconferencing-resource-type"></a><span data-ttu-id="644f0-103">tipo de recurso audioConferencing</span><span class="sxs-lookup"><span data-stu-id="644f0-103">audioConferencing resource type</span></span>
+# <a name="audioconferencing-resource-type"></a><span data-ttu-id="392a0-103">tipo de recurso audioConferencing</span><span class="sxs-lookup"><span data-stu-id="392a0-103">audioConferencing resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="644f0-104">Representa as informações de acesso de telefone de um [onlineMeeting](onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="644f0-104">Represents phone access information for an [onlineMeeting](onlinemeeting.md).</span></span>
+<span data-ttu-id="392a0-104">Representa as informações de acesso de telefone de um [onlineMeeting](onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="392a0-104">Represents phone access information for an [onlineMeeting](onlinemeeting.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="644f0-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="644f0-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="392a0-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="392a0-105">Properties</span></span>
 
-| <span data-ttu-id="644f0-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="644f0-106">Property</span></span>            | <span data-ttu-id="644f0-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="644f0-107">Type</span></span>    | <span data-ttu-id="644f0-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="644f0-108">Description</span></span>                                                                    |
+| <span data-ttu-id="392a0-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="392a0-106">Property</span></span>            | <span data-ttu-id="392a0-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="392a0-107">Type</span></span>    | <span data-ttu-id="392a0-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="392a0-108">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="644f0-109">dialinUrl</span><span class="sxs-lookup"><span data-stu-id="644f0-109">dialinUrl</span></span>           | <span data-ttu-id="644f0-110">String</span><span class="sxs-lookup"><span data-stu-id="644f0-110">String</span></span>  | <span data-ttu-id="644f0-111">Uma URL para a página da Web acessível externamente que contém informações de discagem.</span><span class="sxs-lookup"><span data-stu-id="644f0-111">A URL to the externally-accessible web page that contains dial-in information.</span></span> |
-| <span data-ttu-id="644f0-112">leaderPasscode</span><span class="sxs-lookup"><span data-stu-id="644f0-112">leaderPasscode</span></span>      | <span data-ttu-id="644f0-113">String</span><span class="sxs-lookup"><span data-stu-id="644f0-113">String</span></span>  | <span data-ttu-id="644f0-114">A senha de preenchimento necessária para se conectar ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="644f0-114">The leader password required to connect to the Audio Conference Provider.</span></span>      |
-| <span data-ttu-id="644f0-115">participantPasscode</span><span class="sxs-lookup"><span data-stu-id="644f0-115">participantPasscode</span></span> | <span data-ttu-id="644f0-116">String</span><span class="sxs-lookup"><span data-stu-id="644f0-116">String</span></span>  | <span data-ttu-id="644f0-117">A senha do participante necessária para se conectar ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="644f0-117">The participant password required to connect to the Audio Conference Provider.</span></span> |
-| <span data-ttu-id="644f0-118">tollFreeNumber</span><span class="sxs-lookup"><span data-stu-id="644f0-118">tollFreeNumber</span></span>      | <span data-ttu-id="644f0-119">String</span><span class="sxs-lookup"><span data-stu-id="644f0-119">String</span></span>  | <span data-ttu-id="644f0-120">O número de chamada gratuita para se conectar ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="644f0-120">The toll-free number to connect to the Audio Conference Provider.</span></span>              |
-| <span data-ttu-id="644f0-121">tollNumber</span><span class="sxs-lookup"><span data-stu-id="644f0-121">tollNumber</span></span>          | <span data-ttu-id="644f0-122">String</span><span class="sxs-lookup"><span data-stu-id="644f0-122">String</span></span>  | <span data-ttu-id="644f0-123">O número de chamada tarifada para se conectar ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="644f0-123">The toll number to connect to the Audio Conference Provider.</span></span>                   |
+| <span data-ttu-id="392a0-109">dialinUrl</span><span class="sxs-lookup"><span data-stu-id="392a0-109">dialinUrl</span></span>           | <span data-ttu-id="392a0-110">String</span><span class="sxs-lookup"><span data-stu-id="392a0-110">String</span></span>  | <span data-ttu-id="392a0-111">Uma URL para a página da Web acessível externamente que contém informações de discagem.</span><span class="sxs-lookup"><span data-stu-id="392a0-111">A URL to the externally-accessible web page that contains dial-in information.</span></span> |
+| <span data-ttu-id="392a0-112">ID</span><span class="sxs-lookup"><span data-stu-id="392a0-112">ConferenceId</span></span>        | <span data-ttu-id="392a0-113">String</span><span class="sxs-lookup"><span data-stu-id="392a0-113">String</span></span>  | <span data-ttu-id="392a0-114">A ID de conferência da reunião online.</span><span class="sxs-lookup"><span data-stu-id="392a0-114">The conference id of the online meeting.</span></span>      |
+| <span data-ttu-id="392a0-115">tollFreeNumber</span><span class="sxs-lookup"><span data-stu-id="392a0-115">tollFreeNumber</span></span>      | <span data-ttu-id="392a0-116">String</span><span class="sxs-lookup"><span data-stu-id="392a0-116">String</span></span>  | <span data-ttu-id="392a0-117">O número de chamada gratuita que se conecta ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="392a0-117">The toll-free number that connects to the Audio Conference Provider.</span></span>              |
+| <span data-ttu-id="392a0-118">tollNumber</span><span class="sxs-lookup"><span data-stu-id="392a0-118">tollNumber</span></span>          | <span data-ttu-id="392a0-119">String</span><span class="sxs-lookup"><span data-stu-id="392a0-119">String</span></span>  | <span data-ttu-id="392a0-120">O número de chamada tarifada que se conecta ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="392a0-120">The toll number that connects to the Audio Conference Provider.</span></span>                   |
 
-## <a name="json-representation"></a><span data-ttu-id="644f0-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="644f0-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="392a0-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="392a0-121">JSON representation</span></span>
 
-<span data-ttu-id="644f0-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="644f0-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="392a0-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="392a0-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,8 +41,7 @@ ms.locfileid: "35974280"
 ```json
 {
   "dialinUrl": "String",
-  "leaderPasscode": "String",
-  "participantPasscode": "String",
+  "ConferenceId": "String",
   "tollFreeNumber": "String",
   "tollNumber": "String"
 }
