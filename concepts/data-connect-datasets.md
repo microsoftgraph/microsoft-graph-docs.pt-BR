@@ -4,12 +4,12 @@ description: Descreve os conjuntos de dados suportados e tipos de armazenamento 
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: fee7daae0af6ee4a1dc3d887e09acd725a37ceb8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 05f60915fc3094bd2c095747c237a10590f90b03
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629842"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969197"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Conjuntos de dados, regiões e coletores compatíveis com o Microsoft Graph Data Connect
 
@@ -23,21 +23,21 @@ Data Connect é compatível agora com os seguintes conjuntos de dados. Para exib
 
 |Nome do conjunto de dados|Descrição|
 |-------------|-----------|
-|BasicDataSet_v0.Contact_v0|Contém informações de contato do catálogo de endereços de cada usuário. O esquema para esses entidades é semelhante ao [esquema de contatos pessoais do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/contact).| 
-|BasicDataSet_v0.Event_v0|Contém os eventos do calendário de cada usuário. O esquema para essas entidades é semelhante ao [esquema do calendário de eventos do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/event).| 
-|BasicDataSet_v0.Message_v0|Contém a mensagem na caixa de correio de cada usuário. O esquema para essas entidades é semelhante ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/message).| 
-|BasicDataSet_v0.SentItem_v0|Contém as mensagens enviadas da caixa de correio de cada usuário. O esquema para essas entidades é semelhante ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/message).| 
+|BasicDataSet_v0.Contact_v0|Contém informações de contato do catálogo de endereços de cada usuário. O esquema para esses entidades é semelhante ao [esquema de contatos pessoais do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact).| 
+|BasicDataSet_v0.Event_v0|Contém os eventos do calendário de cada usuário. O esquema para essas entidades é semelhante ao [esquema do calendário de eventos do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event).| 
+|BasicDataSet_v0.Message_v0|Contém a mensagem na caixa de correio de cada usuário. O esquema para essas entidades é semelhante ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).| 
+|BasicDataSet_v0.SentItem_v0|Contém as mensagens enviadas da caixa de correio de cada usuário. O esquema para essas entidades é semelhante ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).| 
 |BasicDataSet_v0.User_v0|Contém informações de usuário (NomeDeExibição, Nome UPN e assim por diante).| 
-|BasicDataSet_v0.MailboxSettings_v0|Contém as configurações da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de configuração da caixa de correio do Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
-|BasicDataSet_v0.MailFolder_v0|Contém as pastas de email da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema das pastas de email do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/mailfolder).|
-|BasicDataSet_v0.Manager_v0|Contém as informações de usuário para o gerenciador de cada usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.DirectReport_v0|Contém informações de usuário sobre funcionários que se reportam diretamente a cada usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.CalendarView_v0|O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/events).|
-|BasicDataSet_v0.User_v1|Esta tabela contém informações do usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.Contact_v1|Contém informações de contato do catálogo de endereços de cada usuário. O esquema para esses entidades corresponde ao [esquema de contatos pessoais do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/contact).|
-|BasicDataSet_v0.Event_v1|Contém os eventos do calendário de cada usuário. O esquema para essas entidades corresponde ao [esquema do calendário de eventos do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/event).|
-|BasicDataSet_v0.Message_v1|Contém a mensagem na caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/message).|
-|BasicDataSet_v0.SentItem_v1|Contém a mensagem enviada da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/message).|
+|BasicDataSet_v0.MailboxSettings_v0|Contém as configurações da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de configuração da caixa de correio do Microsoft Graph](https://docs.microsoft.com/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
+|BasicDataSet_v0.MailFolder_v0|Contém as pastas de email da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema das pastas de email do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/mailfolder).|
+|BasicDataSet_v0.Manager_v0|Contém as informações de usuário para o gerenciador de cada usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
+|BasicDataSet_v0.DirectReport_v0|Contém informações de usuário sobre funcionários que se reportam diretamente a cada usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
+|BasicDataSet_v0.CalendarView_v0|O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/events).|
+|BasicDataSet_v0.User_v1|Esta tabela contém informações do usuário. O esquema para essas entidades corresponde ao [esquema do usuário do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
+|BasicDataSet_v0.Contact_v1|Contém informações de contato do catálogo de endereços de cada usuário. O esquema para esses entidades corresponde ao [esquema de contatos pessoais do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact).|
+|BasicDataSet_v0.Event_v1|Contém os eventos do calendário de cada usuário. O esquema para essas entidades corresponde ao [esquema do calendário de eventos do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event).|
+|BasicDataSet_v0.Message_v1|Contém a mensagem na caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).|
+|BasicDataSet_v0.SentItem_v1|Contém a mensagem enviada da caixa de correio de cada usuário. O esquema para essas entidades corresponde ao [esquema de mensagens do Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).|
 
 ## <a name="regions"></a>Regiões
 
@@ -66,4 +66,4 @@ Os coletores possuem as seguintes características:
 
 ## <a name="next-steps"></a>Próximos passos
 
-Para saber mais sobre como criar pipelines do Data Connect como parte do Azure Data Factory, confira a [documentação do conector do Office 365 do Azure Data Factory](https://docs.microsoft.com/pt-BR/azure/data-factory/connector-office-365).  
+Para saber mais sobre como criar pipelines do Data Connect como parte do Azure Data Factory, confira a [documentação do conector do Office 365 do Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-office-365).  

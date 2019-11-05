@@ -4,12 +4,12 @@ description: Os dados de segurança acessíveis por meio da API de Segurança do
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: e8d7389689477f480d45cacd595f2c96e00d66bd
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 238ab0a575fe79a18bb691ec8de0816744a95a86
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730334"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969372"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
@@ -104,7 +104,7 @@ Para obter mais informações, consulte [Registrar um aplicativo na Plataforma d
 
 ## <a name="grant-permissions-to-an-application"></a>Conceder permissões a um aplicativo.
 
-O registro do aplicativo define somente qual permissão o aplicativo requer - ele não concede essas permissões ao aplicativo. Um administrador de locatários do Microsoft Azure AD deve conceder explicitamente essas permissões, fazendo uma chamada para o ponto de extremidade de consentimento do administrador. Para detalhes, consulte [Usando o ponto de extremidade de consentimento do administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
+O registro do aplicativo define somente qual permissão o aplicativo requer - ele não concede essas permissões ao aplicativo. Um administrador de locatários do Microsoft Azure AD deve conceder explicitamente essas permissões, fazendo uma chamada para o ponto de extremidade de consentimento do administrador. Para detalhes, consulte [Usando o ponto de extremidade de consentimento do administrador](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
 
 Para conceder permissões a um aplicativo, você precisará:
 
@@ -123,7 +123,7 @@ Para conceder as permissões:
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Atribuir funções do Microsoft Azure AD aos usuários
 
-Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Microsoft Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados confidenciais de segurança, a API de Segurança do Microsoft Graph também exige que os usuários recebam a função **Leitor de segurança** do Microsoft Azure AD. Para detalhes, confira [Atribuir funções de administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador a um usuário](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-users-assign-role-azure-portal).
+Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Microsoft Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados confidenciais de segurança, a API de Segurança do Microsoft Graph também exige que os usuários recebam a função **Leitor de segurança** do Microsoft Azure AD. Para detalhes, confira [Atribuir funções de administrador](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador a um usuário](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Observação:** Você precisa ser um administrador de locatários para executar esta etapa.
 
@@ -148,19 +148,19 @@ A tabela a seguir lista os recursos que você pode usar para criar um código de
 
 |**Tipo de aplicativo**|**Biblioteca de autenticação**|
 |------------------------|----------------------------|
-|[Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Aplicativos da área de trabalho - Android](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[Aplicativos da área de trabalho - Android](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|[Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 Para aplicativos que não usam nenhuma das bibliotecas existentes, consulte [Obter acesso em nome de um usuário](auth-v2-user.md).
 
 1. Obter um código do Microsoft Azure AD. A consulta a ser chamada contém o parâmetro para a ID do aplicativo, o URL de redirecionamento e as **permissões necessárias**.
 2. Use o código para obter um token de acesso.
 
-Se você usa a biblioteca OpenId Connect, consulte [Autenticar usando o Microsoft Azure AD e OpenID Connect](https://docs.microsoft.com/pt-BR/azure/architecture/multitenant-identity/authenticate) e ligar`app.UseOpenIdConnectAuthentication()`.
+Se você usa a biblioteca OpenId Connect, consulte [Autenticar usando o Microsoft Azure AD e OpenID Connect](https://docs.microsoft.com/azure/architecture/multitenant-identity/authenticate) e ligar`app.UseOpenIdConnectAuthentication()`.
 
 >**Observação:** Se você estiver solicitando tokens de autenticação delegada pelo usuário, o parâmetro da biblioteca será **Escopos solicitados**. Use o User.Read para este parâmetro ao invés do que o aplicativo registrado solicitar. O parâmetro **Escopos solicitados** NÃO afeta as permissões contidas nos tokens de autenticação retornados. Estes são determinados pelas permissões que o administrador de locatários concedeu ao aplicativo.
 

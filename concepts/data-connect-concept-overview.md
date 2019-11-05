@@ -4,13 +4,13 @@ description: O Microsoft Graph Data Connect traz os dados do Office 365 para o M
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-scenarios: getting-started
-ms.openlocfilehash: 212f530ff8e2589dcd4c913d0e4b2c7684d18f8a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: f4e365c94761a6ea77b97aaf77f93152a53d8da9
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792930"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969204"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Visão geral do Microsoft Graph Data Connect
 O Microsoft Graph contém dados avançados sobre funcionários e o seu local de trabalho, incluindo informações sobre como as pessoas trabalham e como elas se comunicam, colaboram e gerenciam seu tempo. O Microsoft Graph Data Connect oferece um conjunto de ferramentas para simplificar a entrega desses dados para o Microsoft Azure, que lhe oferece acesso às melhores ferramentas de desenvolvimento e hospedagem para trabalhar com esses dados. Isso permite que os clientes, enquanto mantêm total controle sobre seus dados do Microsoft Graph, se beneficiem de aplicativos inovadores ou específicos do setor que melhoram sua produtividade. A Microsoft está trazendo o controle mais seguro os clientes esperam.

@@ -4,13 +4,13 @@ description: 'Os grupos do Office 365 fornecem o serviço de associação fundam
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-scenarios: getting-started
-ms.openlocfilehash: 4142110f835cb12baa35e1746a536b71fb6635ea
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 376b693df7267732112ceb5967194760d8fda145
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791033"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969521"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Visão geral dos grupos do Office 365 no Microsoft Graph
 

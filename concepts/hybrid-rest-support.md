@@ -2,12 +2,12 @@
 title: Usar APIs REST para acessar caixas de correio em implantações híbridas do Exchange (visualização)
 description: O Microsoft Graph sempre forneceu acesso a caixas de correio do cliente na nuvem no Exchange Online como parte do Office 365.
 localization_priority: Priority
-ms.openlocfilehash: 5dab9fea5a9d9c9177befc90ccb64b3bb03b6b33
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ea8f09bfbee5f8f7575d4e5442d8169d38597a8
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526171"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969749"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Usar as APIs REST para acessar caixas de correio em implantações híbridas do Exchange (visualização)
 
@@ -44,6 +44,6 @@ O Microsoft Graph fornece abertura (suporte a padrões abertos como JSON, OAUTH 
 
 Os administradores de TI podem encontrar mais informações nos seguintes recursos:
 
-- [Implantações Híbridas do Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+- [Implantações Híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx)
 - [Lançamento de atualização cumulativa de setembro de 2016](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [Requisitos de arquitetura local para a API REST](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

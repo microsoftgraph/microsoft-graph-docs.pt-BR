@@ -3,13 +3,13 @@ title: Visão geral dos SDKs do Microsoft Graph
 description: Descreve os SDKs que estão disponíveis, as plataformas que eles dão suporte e o valor que eles fornecem aos desenvolvedores.
 localization_priority: Normal
 author: MichaelMainer
-scenarios: getting-started
-ms.openlocfilehash: 86641c78a4f1c7b6f14a1e1fd07f52e4ca9d87ef
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 93b2606aeb3cea9053c04d4caa87d6cf50e833e4
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792888"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969469"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Visão geral dos SDKs do Microsoft Graph
 
@@ -22,7 +22,7 @@ A biblioteca principal fornece um conjunto de recursos que melhoram o trabalho c
 > [!VIDEO https://www.youtube-nocookie.com/embed/hDnsd2nJf88]
 
 
-## <a name="supported-platforms"></a>Plataformas com suporte
+## <a name="supported-platforms"></a>Plataformas compatíveis
 
 Os SDKs estão disponíveis atualmente para os seguintes idiomas e plataformas:
 
@@ -39,7 +39,7 @@ Os SDKs estão disponíveis atualmente para os seguintes idiomas e plataformas:
 
 ## <a name="office-365-developer-subscription"></a>Assinatura do desenvolvedor do Office 365
 
-Ao criar aplicativos usando o Microsoft Graph, recomendamos que você obtenha uma assinatura gratuita de desenvolvedor do Office 365 inscrevendo-se no [programa para desenvolvedores do office 365](http://aka.ms/OfficeDevProgram).
+Ao criar aplicativos usando o Microsoft Graph, recomendamos que você obtenha uma assinatura gratuita de desenvolvedor do Office 365 inscrevendo-se no [programa para desenvolvedores do office 365](https://aka.ms/OfficeDevProgram).
 
 ## <a name="see-also"></a>Confira também
 

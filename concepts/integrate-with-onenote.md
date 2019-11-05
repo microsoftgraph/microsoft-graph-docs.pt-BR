@@ -4,13 +4,13 @@ description: O OneNote é um bloco de anotações digital que permite que os cli
 author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-scenarios: getting-started
-ms.openlocfilehash: 69aa0d83d9625559c7731391f6ad504bd86403f0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: f20ee192d2afabb6e5fe4e491bcfbc0413db44d3
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792608"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969784"
 ---
 # <a name="onenote-api-overview"></a>Visão geral da API do OneNote
 
@@ -81,14 +81,14 @@ Faça uma análise aprofundada das APIs do Microsoft Graph para saber mais sobre
 ## <a name="see-also"></a>Confira também
 Saiba mais sobre alguns outros recursos do OneNote que estão expostos somente no ponto de extremidade REST específico do serviço do OneNote.
 
-- [Desenvolvimento do OneNote](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [Trabalhar com Blocos de Anotações de Classe](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [Trabalhar com blocos de anotações de classe assíncronos](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [Trabalhar com Blocos de Anotações de Equipe](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [Copiar blocos de anotações, seções e páginas](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [Gerenciar permissões em entidades do OneNote](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Usar a caixa de diálogo Salvar do OneNote em suas páginas da Web](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Assinar webhooks](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [Desenvolvimento do OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Trabalhar com Blocos de Anotações de Classe](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Trabalhar com blocos de anotações de classe assíncronos](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [Trabalhar com Blocos de Anotações de Equipe](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Copiar blocos de anotações, seções e páginas](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [Gerenciar permissões em entidades do OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Usar a caixa de diálogo Salvar do OneNote em suas páginas da Web](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Assinar webhooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?

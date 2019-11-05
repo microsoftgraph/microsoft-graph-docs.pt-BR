@@ -2,12 +2,12 @@
 title: 'Controle de versão, suporte e mudanças significativas de políticas para o Microsoft Graph '
 description: Este artigo descreve o suporte e as alterações significativas de políticas do Microsoft Graph e as versões da API Microsoft Graph disponível no momento.
 localization_priority: Priority
-ms.openlocfilehash: 8ac36dd12feb10eb545cea80cd8d59023b6d9783
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: e2a3cd66c3d03ce5c2569449d99830865cb1810b
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778695"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968479"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph
 
@@ -15,7 +15,7 @@ Este artigo descreve o suporte e as alterações significativas de políticas do
 
 ## <a name="support-policy-and-deprecation-information"></a>Informações de política e substituição de suporte
 
-O Microsoft Graph segue a [Política de Ciclo de Vida da Microsoft](https://support.microsoft.com/en-us/lifecycle).
+O Microsoft Graph segue a [Política de Ciclo de Vida da Microsoft](https://support.microsoft.com/lifecycle).
 
 Conforme novas versões das APIs REST Microsoft Graph e SDKs do Microsoft Graph são lançadas, as versões anteriores são desativadas. A Microsoft declarará uma versão como preterida pelo menos 24 meses antes de retirar uma API ou um SDK.
 
@@ -45,7 +45,7 @@ A seguir há exemplos de alterações compatíveis com versões anteriores:
 - Alterações à ordem das propriedades
 - Alterações no formato ou no comprimento de cadeias de caracteres opacas, como IDs de recurso
 
->**Observação:** Ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API do Microsoft REST](https://github.com/microsoft/api-guidelines/).
+>**Observação:** Ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API do Microsoft REST](https://github.com/microsoft/api-guidelines/).
 
 ## <a name="versions"></a>Versões
 

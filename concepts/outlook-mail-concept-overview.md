@@ -4,13 +4,13 @@ description: O Outlook é um hub de comunicação de mensagens do Office 365. El
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-scenarios: getting-started
-ms.openlocfilehash: 7b5e82864b4dc1d4e9aa4a29577f4fc457795453
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 2a9c54486098d615d43734fc09d315e797671df7
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792972"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969253"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 

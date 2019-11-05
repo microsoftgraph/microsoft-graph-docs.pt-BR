@@ -3,12 +3,12 @@ title: Tutoriais do Microsoft Graph
 description: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você pelos conceitos básicos do Microsoft Graph, incluindo a criação de um aplicativo básico que usa a autenticação do Azure Active Directory e acessa dados por meio do Microsoft Graph.
 author: jasonjoh
 localization_priority: Priority
-ms.openlocfilehash: ee4fcaf224852d588bdb3f2d00d326a92d3f770d
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: ab51d3466ba7bec1db5edac1330e468f7992bd89
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275812"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968531"
 ---
 # <a name="microsoft-graph-tutorials"></a>Tutoriais do Microsoft Graph
 
@@ -42,8 +42,8 @@ Não está vendo seu idioma ou plataforma preferidos? Solicite um tutorial para 
 Os seguintes tutoriais concentram-se em cenários específicos para usar o Microsoft Graph.
 
 
-- [Otimizar o uso dos dados ao usar o Microsoft Graph com parâmetros de consulta](https://docs.microsoft.com/pt-BR/learn/modules/optimize-data-usage/)
-- [Otimizar o tráfego de rede com o Microsoft Graph](https://docs.microsoft.com/pt-BR/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
+- [Otimizar o uso dos dados ao usar o Microsoft Graph com parâmetros de consulta](https://docs.microsoft.com/learn/modules/optimize-data-usage/)
+- [Otimizar o tráfego de rede com o Microsoft Graph](https://docs.microsoft.com/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
 - [Alterar notificações e a consulta delta](/graph/tutorials/change-notifications)
 
 ## <a name="see-also"></a>Confira também

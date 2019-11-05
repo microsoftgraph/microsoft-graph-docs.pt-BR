@@ -3,12 +3,12 @@ title: Integração do aplicativo iOS no SDK do lado do cliente para notificaç�
 description: Integre o aplicativo iOS com notificações de usuário no SDK do cliente.
 localization_priority: Priority
 ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 1e0f809e5f6acea272268b76e69e0d86cc18bff0
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+ms.openlocfilehash: d11acc2d0c83fc6298e5c4d25aff1563ebe6c2c1
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34063230"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969861"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
 
@@ -90,7 +90,7 @@ target 'iOSSample' do
 
 No SDK do lado do cliente é desenvolvido com base em uma infraestrutura chamada Plataforma de Dispositivo Conectado. Antes de poder usar qualquer recurso, a plataforma deve ser inicializada em seu aplicativo. As etapas de inicialização que devem ocorrer no método **AppDelegate**, porque eles são necessários antes de ocorrer os cenários de notificação.
 
-Você deve criar e inicializar a plataforma ao instanciar a classe [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, como mostrado, pois depois que a plataforma é iniciada, os eventos podem começar a acionar.  
+Você deve criar e inicializar a plataforma ao instanciar a classe [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, como mostrado, pois depois que a plataforma é iniciada, os eventos podem começar a acionar.  
 
 ```ObjectiveC
 MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
@@ -147,7 +147,7 @@ As notificações do Microsoft Graph, como vários outros tipos de recursos no M
 
 Se você estiver usando uma conta da Microsoft, será necessário incluir as seguintes permissões em uma solicitação de entrada: `wl.offline_access"`, `ccs.ReadWrite`, `wns.connect`, `asimovrome.telemetry`, e `https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp`. 
 
-Se você estiver usando uma conta do Azure AD, você precisará solicitar o seguinte público alvo: `https://cdpcs.access.microsoft.com`.
+Se você estiver usando uma conta do Azure AD, você precisará solicitar o seguinte público: `https://cdpcs.access.microsoft.com`.
 
 ## <a name="adding-the-user-account-to-the-platform"></a>Adicionar a conta de usuário à plataforma 
 
@@ -251,6 +251,6 @@ Uma notificação é removida do repositório de notificação do usuário apena
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência da API](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-ios/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
+- [Referência da API](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
 - [Exemplo do lado do cliente](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) para aplicativos Android.
 - [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações. 

@@ -2,12 +2,12 @@
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: "  "
 localization_priority: Priority
-ms.openlocfilehash: 6e38985732c95cf928e78aad62d569134c19d8ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb7ce8d2d0a7836842469406768ce8a6eb81e94c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526123"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969791"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 
@@ -29,7 +29,7 @@ A tabela a seguir lista e descreve os códigos de status HTTP que podem ser reto
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Solicitação Incorreta (Bad Request)                     | Não é possível processar a solicitação porque está incorreta ou mal feita.                                                                       |
 | 401         | Não Autorizado (Unauthorized)                    | As informações de autenticação necessárias estão ausentes ou não são válidas para o recurso.                                                   |
-| 403         | Proibido                       | Acesso negado ao recurso solicitado. O usuário pode não ter permissão suficiente. <br /><br /> **Importante:** Se as políticas de acesso condicional forem aplicadas a um recurso, HTTP 403; Erro proibido=insufficent_claims poderá ser retornado. Para obter mais detalhes sobre o Microsoft Graph e acesso condicional confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Proibido                       | Acesso negado ao recurso solicitado. O usuário pode não ter permissão suficiente. <br /><br /> **Importante:** Se as políticas de acesso condicional forem aplicadas a um recurso, HTTP 403; Erro proibido=insufficent_claims poderá ser retornado. Para obter mais detalhes sobre o Microsoft Graph e acesso condicional confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Não Encontrado (Not Found)                       | O recurso solicitado não existe.                                                                                                  |
 | 405         | Método Não Permitido (Method Not Allowed)              | O método HTTP na solicitação não é permitido no recurso.                                                                         |
 | 406         | Não Aceitável (Not Acceptable)                  | Esse serviço não dá suporte ao formato solicitado no cabeçalho Accept.                                                                |

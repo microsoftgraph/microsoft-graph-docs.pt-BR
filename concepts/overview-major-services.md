@@ -3,13 +3,13 @@ title: Principais serviços e recursos do Microsoft Graph
 description: 'O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
 author: angelgolfer-ms
 localization_priority: Priority
-scenarios: getting-started
-ms.openlocfilehash: d1e91d2c644c787f50535722a2d634535b4401fa
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 4e6932c8d35a204efcbb865f1de169408afd7975
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939849"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969246"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 

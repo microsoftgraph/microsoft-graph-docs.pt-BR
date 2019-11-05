@@ -4,13 +4,13 @@ description: O Excel é uma ferramenta de produtividade indispensável. Os usuá
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-scenarios: getting-started
-ms.openlocfilehash: 23f443766ba2d8539d2a4b79e5df379dce8c252d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 1dba35e81a748951167327cce1a8174e6c803261
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792994"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968927"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Visão geral da API de gráficos e pastas de trabalho do Excel
 

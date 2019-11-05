@@ -4,13 +4,13 @@ description: 'A conexão de dados do Microsoft Graph traz dados do Office 365 e 
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-scenarios: getting-started
-ms.openlocfilehash: 8454405f67e75dcfd11acb215fb44f8342aa59d6
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 42a35f9d96b375ea4139ece3e5b15e11d300598c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792937"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969183"
 ---
 # <a name="microsoft-graph-data-connect"></a>Conexão de dados do Microsoft Graph
 
@@ -29,7 +29,7 @@ Você pode usar a conexão de dados do Microsoft Graph para criar novos tipos de
 Antes que o pipeline do Azure Data Factory possa mover os dados do Office 365, um consentimento de solicitação de dados é enviado para os aprovadores de dados designados pelo administrador do Office 365 do cliente. A movimentação dos dados se iniciar após a aprovação pelos aprovadores de dados.
 
 ## <a name="publish-your-app-as-an-azure-managed-application"></a>Publicar seu aplicativo como um aplicativo de gerenciamento do Azure
-Após desenvolver um aplicativo usando a conexão de dados do Microsoft Graph, você pode disponibilizá-lo para outras pessoas (em sua organização ou em um âmbito mais amplo). A conexão de dados do Microsoft Graph utiliza [aplicativos gerenciados pelo Azure](https://docs.microsoft.com/pt-BR/azure/managed-applications/overview) para disponibilizar esses aplicativos para outras pessoas por meio do Microsoft Azure Marketplace. Os aplicativos gerenciados pelo Azure permitem que desenvolvedores corporativos e ISVs forneçam soluções completas para seus clientes. Clientes implantam esses aplicativos gerenciados em suas assinaturas, enquanto os fornecedores (ISVs e desenvolvedores corporativos) os gerenciam e suportam. Os fornecedores de aplicativos também podem aplicar [políticas](https://docs.microsoft.com/pt-BR/azure/managed-applications/overview#azure-policy) a seus aplicativos, como a criptografia em repouso, para dar a seus clientes a segurança de que seus dados estão sendo gerenciados com mais proteção. Os aplicativos podem ser publicados no [Azure Marketplace](https://docs.microsoft.com/pt-BR/azure/managed-applications/publish-marketplace-app) ou no [catálogo de serviços do Azure](https://docs.microsoft.com/pt-BR/azure/managed-applications/publish-service-catalog-app).
+Após desenvolver um aplicativo usando a conexão de dados do Microsoft Graph, você pode disponibilizá-lo para outras pessoas (em sua organização ou em um âmbito mais amplo). A conexão de dados do Microsoft Graph utiliza [aplicativos gerenciados pelo Azure](https://docs.microsoft.com/azure/managed-applications/overview) para disponibilizar esses aplicativos para outras pessoas por meio do Microsoft Azure Marketplace. Os aplicativos gerenciados pelo Azure permitem que desenvolvedores corporativos e ISVs forneçam soluções completas para seus clientes. Clientes implantam esses aplicativos gerenciados em suas assinaturas, enquanto os fornecedores (ISVs e desenvolvedores corporativos) os gerenciam e suportam. Os fornecedores de aplicativos também podem aplicar [políticas](https://docs.microsoft.com/azure/managed-applications/overview#azure-policy) a seus aplicativos, como a criptografia em repouso, para dar a seus clientes a segurança de que seus dados estão sendo gerenciados com mais proteção. Os aplicativos podem ser publicados no [Azure Marketplace](https://docs.microsoft.com/azure/managed-applications/publish-marketplace-app) ou no [catálogo de serviços do Azure](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app).
 
 Os clientes que instalam o aplicativo verão os termos de serviço, os dados necessários, o preço de cada SKU do aplicativo e o custo aproximado do consumo do recurso. Quando as propriedades de implantação são especificadas pelo comprador, os recursos são provisionados. Isso inclui o pipeline Data Factory que inicia a extração de dados. Você fornece um Leiame para seu aplicativo que explica quando se deve esperar que a instalação seja concluída, como usar o aplicativo e como obter suporte.
 

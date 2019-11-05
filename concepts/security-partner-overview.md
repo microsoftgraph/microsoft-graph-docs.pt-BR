@@ -4,18 +4,18 @@ description: 'Este artigo descreve as oportunidades de parceria habilitadas pela
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 312c13cdad2ce8341095a87d33f4a5b01f7e1eef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5dd601c686cdc21cb5969c171e06fc57cba4e194
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574838"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969260"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Parceria com a API de segurança do Microsoft Graph – oportunidades de parceiros de tecnologia
 
 Este artigo descreve as oportunidades de parceria habilitadas pela API de segurança do Microsoft Graph e foi projetado para ajudar os gerentes de produto e as funções de desenvolvimento de negócios a entender os caminhos de investimento e a fornecer informações sobre as propostas de valor de parceria.
 
-## <a name="background"></a>Histórico
+## <a name="background"></a>Tela de fundo
 
 A maioria das organizações lida com altos volumes de dados de segurança e tem dezenas de soluções de segurança em sua empresa, tornando a tarefa de integração de vários produtos e serviços desanimadores e complexos. Esses desafios prejudicam a capacidade de as organizações se movimentarem rapidamente ao detectar e corrigir ameaças em um mundo de ataques de movimentação rápida e interrupções.
 
@@ -25,7 +25,7 @@ Parceiros tecnológicos podem se integrar à plataforma Microsoft usando a API d
 
 A API de segurança do Microsoft Graph é uma API unificada que fornece uma interface padrão e um esquema uniforme para integrar alertas de segurança e inteligência de ameaças de várias fontes, enriquecer alertas e dados com informações contextuais e automatizar a segurança das.
 
-A API de segurança faz parte do Microsoft Graph, que é uma API REST unificada para a integração de dados e inteligência de produtos e serviços da Microsoft e de parceiros. Usando o Microsoft Graph, os clientes e parceiros podem criar rapidamente soluções que se autentiquem uma vez e usem uma única chamada de API para acessar ou agir em informações de segurança de várias soluções de segurança. O valor adicional é descoberto quando você explora as outras [entidades do Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview) (Office 365, Azure Active Directory, Intune e muito mais) para associar o contexto de negócios aos seus insights de segurança.
+A API de segurança faz parte do Microsoft Graph, que é uma API REST unificada para a integração de dados e inteligência de produtos e serviços da Microsoft e de parceiros. Usando o Microsoft Graph, os clientes e parceiros podem criar rapidamente soluções que se autentiquem uma vez e usem uma única chamada de API para acessar ou agir em informações de segurança de várias soluções de segurança. O valor adicional é descoberto quando você explora as outras [entidades do Microsoft Graph](https://docs.microsoft.com/graph/overview) (Office 365, Azure Active Directory, Intune e muito mais) para associar o contexto de negócios aos seus insights de segurança.
 
 A Microsoft permite a integração de parceiros tecnológicos de duas maneiras principais.
 
@@ -51,7 +51,7 @@ A seguir estão três benefícios importantes que podem ser obtidos por meio da 
 
 *Permitir a integração mais fácil de alertas de segurança para informar a detecção de ameaças e a resposta.*
 
-- CorRelacione alertas/detecções dos provedores de segurança do Microsoft Graph com suas detecções para aprimorar seus resultados de investigação e automação de suporte.
+- Correlacione alertas/detecções dos provedores de segurança do Microsoft Graph com suas detecções para aprimorar seus resultados de investigação e automação de suporte.
 - Acessar detecções e contexto por meio do Microsoft Graph para melhorar a resposta de ameaças – triagem, investigação, correção.
 - Acessar o Customer Threat Intelligence (hash, IP, URL, domínio, etc.) para bloquear/alertar atividades mal-intencionadas.
 
@@ -60,7 +60,7 @@ A seguir estão três benefícios importantes que podem ser obtidos por meio da 
 *Fornecer maior visibilidade e simplificar o gerenciamento do ciclo de vida do incidente.*
 
 - Agregar alertas de vários provedores para criar incidentes.
-- AcEsse contexto adicional para informar a priorização e a resposta de alerta.
+- Acesse contexto adicional para informar a priorização e a resposta de alerta.
 - Manter o status do alerta sincronizado entre sistemas Gerenciando alertas.
 - Ganhe visibilidade para a postura de segurança e recomendação sobre como aprimorá-la com pontuações seguras.
 
@@ -85,7 +85,7 @@ Entidades com suporte:
 
 ### <a name="integrate-your-application-with-the-microsoft-graph-security-api"></a>Integrar seu aplicativo com a API de segurança do Microsoft Graph
 
-Todos os aplicativos integrados [devem ser registrados](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) com o Microsoft Graph. Os dois aplicativos usados por um único cliente e os usados por muitos clientes (multilocatário) são suportados.  Em ambos os casos, o cliente deve conceder consentimento para seu aplicativo. Ao chamar o Microsoft Graph, cada solicitação do seu aplicativo conterá seu identificador de aplicativo e o cliente que você está ligando em nome de. Há suporte para os seguintes tipos de solicitações:
+Todos os aplicativos integrados [devem ser registrados](https://docs.microsoft.com/graph/auth-register-app-v2) com o Microsoft Graph. Os dois aplicativos usados por um único cliente e os usados por muitos clientes (multilocatário) são suportados.  Em ambos os casos, o cliente deve conceder consentimento para seu aplicativo. Ao chamar o Microsoft Graph, cada solicitação do seu aplicativo conterá seu identificador de aplicativo e o cliente que você está ligando em nome de. Há suporte para os seguintes tipos de solicitações:
 
 - **Obter alertas** – Obtenha informações de alerta com filtragem conforme necessário.  Por exemplo: mostrar todos os alertas de alta prioridade ou "todos os alertas de alta prioridade" para um usuário específico, host, etc.
 - **Atualizar status de alerta** – permitindo o gerenciamento de um ciclo de vida de alerta.  Por exemplo: Configurando um status de alerta como "resolvido" de "em andamento" ou adicionando comentários a um alerta.

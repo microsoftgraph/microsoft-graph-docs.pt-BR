@@ -4,12 +4,12 @@ description: Descreve como usar o Microsoft Graph Data Connect para selecionar o
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 1d558c441a626a312d0097d143d194255aaed769
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 0aab5ac3806eeda54364dff6ae0b6995098da953
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629835"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969190"
 ---
 # <a name="user-selection-and-filtering-microsoft-graph-data-connect-supports"></a>O Microsoft Graph Data Connect é compatível com a seleção de usuário e filtragem
 
@@ -44,6 +44,6 @@ Os conjuntos de dados a seguir exigem que um filtro seja fornecido em uma das pr
 
 ## <a name="next-steps"></a>Próximos passos 
 
-Para saber mais sobre como modificar o usuário selecionado para extração e filtragem nos pipelines do Data Connect, confira a [documentação do conector do Office 365 do Azure Data Factory](https://docs.microsoft.com/pt-BR/azure/data-factory/connector-office-365).  
+Para saber mais sobre como modificar o usuário selecionado para extração e filtragem nos pipelines do Data Connect, confira a [documentação do conector do Office 365 do Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-office-365).  
 
   

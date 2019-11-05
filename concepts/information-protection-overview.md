@@ -4,12 +4,12 @@ description: O rótulo de proteção de informações da Microsoft ajuda as orga
 author: tommoser
 localization_priority: Normal
 ms.prod: microsoft.informationprotection
-ms.openlocfilehash: 60815acab92bc0776ff18269c654a37252ffc512
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: cdbe4b3bdb7bdada33fa8c46c074280abcf6c174
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934778"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969826"
 ---
 # <a name="information-protection-overview"></a>Visão geral da proteção de informações
 
@@ -25,7 +25,7 @@ As organizações usam rótulos para ajudar:
 
 ### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>Integre-se com a plataforma de rotulagem onipresente, servindo milhões de usuários e dispositivos
 
-Mais de um milhão de organizações com dezenas de milhões de usuários usam a proteção de informações da Microsoft para classificar, rotular e proteger os dados.  Além do Office 365, vários serviços DLP (prevenção contra perda de dados), plataformas de Business Intelligence e soluções SaaS (software-as-a-Service) [adotaram](https://www.microsoft.com/en-us/security/technology/information-protection) a identificação de proteção de informações da Microsoft para fornecer uma classificação de dados mais rica ocorre. 
+Mais de um milhão de organizações com dezenas de milhões de usuários usam a proteção de informações da Microsoft para classificar, rotular e proteger os dados.  Além do Office 365, vários serviços DLP (prevenção contra perda de dados), plataformas de Business Intelligence e soluções SaaS (software-as-a-Service) [adotaram](https://www.microsoft.com/security/technology/information-protection) a identificação de proteção de informações da Microsoft para fornecer uma classificação de dados mais rica ocorre. 
 
 ### <a name="label-information-in-line-of-business-applications"></a>Informações de rótulo em aplicativos de linha de negócios
 
@@ -35,21 +35,21 @@ Os desenvolvedores corporativos usam a proteção de informações da Microsoft 
 
 ### <a name="discover-labels-available-to-a-user-or-organization"></a>Descobrir rótulos disponíveis para um usuário ou organização
 
-Com o Microsoft Graph, você pode acessar os [Rótulos de confidencialidade](/graph/api/informationprotectionlabel.md?view=graph-rest-beta) disponíveis para um usuário ou organização. Os rótulos são aplicados por aplicativos e serviços aos dados em repouso ou em movimento, ajudando os usuários e os aplicativos e serviços downstream a entender a confidencialidade das informações que estão lidando.
+Com o Microsoft Graph, você pode acessar os [Rótulos de confidencialidade](/graph/api/informationprotectionlabel?view=graph-rest-beta) disponíveis para um usuário ou organização. Os rótulos são aplicados por aplicativos e serviços aos dados em repouso ou em movimento, ajudando os usuários e os aplicativos e serviços downstream a entender a confidencialidade das informações que estão lidando.
 
 ### <a name="understand-how-to-apply-labels"></a>Entender como aplicar rótulos
 
-Fornecendo informações sobre o rótulo de confidencialidade existente e desejado, a API REST pode informar, de forma inteligente, o aplicativo sobre as [ações](/graph/api/resources/informationProtectionActions.md?view=graph-rest-beta) que devem ser executadas para aplicar corretamente o rótulo. Isso inclui ações como aplicativo de [metadados](/graph/api/resources/metadataaction.md?view=graph-rest-beta) , geração de [marca d' água](/graph/api/resources/addwatermarkaction.md?view=graph-rest-beta) , [proteção](/graph/api/resources/protectByTemplateAction.md?view=graph-rest-beta)e muito mais.
+Fornecendo informações sobre o rótulo de confidencialidade existente e desejado, a API REST pode informar, de forma inteligente, o aplicativo sobre as [ações](/graph/api/resources/informationprotectionaction?view=graph-rest-beta) que devem ser executadas para aplicar corretamente o rótulo. Isso inclui ações como aplicativo de [metadados](/graph/api/resources/metadataaction?view=graph-rest-beta) , geração de [marca d' água](/graph/api/resources/addwatermarkaction?view=graph-rest-beta) , [proteção](/graph/api/resources/protectbytemplateaction?view=graph-rest-beta)e muito mais.
 
 ### <a name="interpret-labels-applied-to-data"></a>Interpretar rótulos aplicados aos dados
 
-Os aplicativos que consomem informações que já possuem [metadados de rótulo de confidencialidade](/graph/api/resources/metadataaction.md?view=graph-rest-beta) aplicados podem usar a API **extractLabel** para resolver metadados de rótulo para um [rótulo de confidencialidade](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)de proteção de informações da Microsoft. Use o rótulo para identificar as ações que devem ser tomadas pelo aplicativo ao lidar ou consumo dos dados rotulados. 
+Os aplicativos que consomem informações que já possuem [metadados de rótulo de confidencialidade](/graph/api/resources/metadataaction?view=graph-rest-beta) aplicados podem usar a API **extractLabel** para resolver metadados de rótulo para um [rótulo de confidencialidade](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta)de proteção de informações da Microsoft. Use o rótulo para identificar as ações que devem ser tomadas pelo aplicativo ao lidar ou consumo dos dados rotulados. 
 
 ## <a name="api-reference"></a>Referência da API
 
 Está procurando a referência de API para esse serviço?
 
-- [API de proteção de informações da Microsoft no Microsoft Graph beta](/graph/api/resources/information-protection-overview?view=graph-rest-beta)
+- [API de proteção de informações da Microsoft no Microsoft Graph beta](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 

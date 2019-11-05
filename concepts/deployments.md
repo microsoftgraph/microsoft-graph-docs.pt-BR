@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
-ms.openlocfilehash: 406966a0bc6d1f5729ab96d4bd358ea21e3d9e6e
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 4da5570719cf64ba8fc329039e4ba4fcef7348b5
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437640"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969840"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -22,7 +22,7 @@ Cada ambiente de nuvem nacional é exclusivo e diferente do ambiente global da M
 
 Este artigo fornece informações sobre as diferentes implantações de nuvem nacional do Microsoft Graph e os recursos disponíveis para os desenvolvedores dentro de cada um.
 
->**Observação:** O [Microsoft Graph data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) não dá suporte a nenhuma implantação nacional de nuvem. 
+>**Observação:** o [Microsoft Graph data Connect](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) não dá suporte a nenhuma implantação nacional de nuvem. 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -72,7 +72,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
-| Notificações de alteração (WebHooks)  | ➖|✔* |✔* |
+| Alterar notificações (Webhooks)  | ➖|✔* |✔* |
 | Consulta delta | ➖ | ➖| ➖ |
 | Extensões de esquema de diretório |➖|➖|➖|
 | Extensões de tipo aberto|➖|➖|➖|
@@ -82,7 +82,7 @@ Os seguintes recursos adicionais do Microsoft Graph estão disponíveis na visua
 * Contatos organizacionais
 * Aplicativos
 * Entidades de serviço
-* Notificações de alteração (WebHooks)
+* Alterar notificações (Webhooks)
 
 (*) Suporte limitado somente para o Exchange e serviços do OneDrive. Não há suporte para os serviços do Azure AD. 
 

@@ -4,12 +4,12 @@ description: O corpo de uma página do OneNote pode conter vários elementos fil
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70c68699df88f53cfc70bbbc5a97ed41acd97b60
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560926"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969337"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>Criar elementos posicionados absolutos nas páginas do OneNote
 
@@ -85,12 +85,12 @@ O exemplo a seguir cria uma página que contém um div posicionado absoluto e um
     <body data-absolute-enabled="true">
         <div style="position:absolute;width:280px;top:120px;left:68px">
             <p>Some text</p>
-            <img style="width:120px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+            <img style="width:120px" src="https://officeimg.vo.msecnd.net/files/018/949/ZA103278226.png" />
             <div>
                 <p>More text inside a regular, nested div</p>
             </div>
         </div>
-        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/files/018/949/ZA103278226.png" />
     </body>
 </html>
 ```

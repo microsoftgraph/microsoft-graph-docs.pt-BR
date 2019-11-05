@@ -4,16 +4,16 @@ description: Para definir o escopo das permissões de aplicativo de um aplicativ
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9121ffad617d6901688718a8982b926959d8626
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 9ccc33acff5c95cde3f4ba210684b177cc69334c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932574"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969486"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
 
-Alguns aplicativos chamam o Microsoft Graph usando sua própria identidade e não em nome de um usuário. Geralmente, são serviços de segundo plano ou aplicativos daemon executados em um servidor sem a presença de um usuário conectado. Esses aplicativos usam o [fluxo de concessão de credenciais do cliente OAuth 2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) para autenticar e são configurados com permissões de aplicativo, que permitem que esses aplicativos acessem todas as caixas de correio de uma organização no Exchange Online. Por exemplo, a permissão de aplicativo Mail.Read permite que os aplicativos leiam emails em todas as caixas de correio sem um usuário conectado. 
+Alguns aplicativos chamam o Microsoft Graph usando sua própria identidade e não em nome de um usuário. Geralmente, são serviços de segundo plano ou aplicativos daemon executados em um servidor sem a presença de um usuário conectado. Esses aplicativos usam o [fluxo de concessão de credenciais do cliente OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) para autenticar e são configurados com permissões de aplicativo, que permitem que esses aplicativos acessem todas as caixas de correio de uma organização no Exchange Online. Por exemplo, a permissão de aplicativo Mail.Read permite que os aplicativos leiam emails em todas as caixas de correio sem um usuário conectado. 
 
 Os administradores que desejem limitar o acesso ao aplicativo a um conjunto específico de caixas de correio podem usar o cmdlet **New-ApplicationAccessPolicy** do PowerShell para configurar o controle de acesso. Este artigo aborda as etapas básicas para configurar uma política de acesso a aplicativos.
 
@@ -22,7 +22,7 @@ Estas etapas são específicas aos recursos do Exchange Online e não se aplicam
 ## <a name="configure-applicationaccesspolicy"></a>Configurar ApplicationAccessPolicy
 
 Para configurar uma política de acesso a aplicativos e limitar o escopo das permissões de aplicativos:
-1.  Conecte-se ao PowerShell do Exchange Online. Para detalhes, consulte [Conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1.  Conecte-se ao PowerShell do Exchange Online. Para detalhes, consulte [Conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2.  Identifique o ID do cliente do aplicativo e um grupo de segurança habilitado para email para restringir o acesso do aplicativo.
 

@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Office 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: ce2da5df9dddc54f2257ee9dd110c4f6460bd03d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af4aefed112177a119be20c408ad6feac978ecae
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558388"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969882"
 ---
 # <a name="create-onenote-pages"></a>Criar páginas do OneNote
 
@@ -197,7 +197,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-Para obter mais exemplos que mostram como criar páginas que contêm imagens e outros arquivos, consulte [Adicionar imagens e arquivos](onenote-images-files.md), nossos [tutoriais](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-tutorial) e nossos [exemplos](https://github.com/onenotedev). Além disso, saiba como [criar elementos posicionados absolutos](onenote-abs-pos.md), [usar marcas de anotação](onenote-note-tags.md) e [extrair dados](onenote-extract-data.md) para capturas de cartão de visita e as listagens online de receitas e de produtos.
+Para obter mais exemplos que mostram como criar páginas que contêm imagens e outros arquivos, consulte [Adicionar imagens e arquivos](onenote-images-files.md), nossos [tutoriais](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-tutorial) e nossos [exemplos](https://github.com/onenotedev). Além disso, saiba como [criar elementos posicionados absolutos](onenote-abs-pos.md), [usar marcas de anotação](onenote-note-tags.md) e [extrair dados](onenote-extract-data.md) para capturas de cartão de visita e as listagens online de receitas e de produtos.
 
 O Microsoft Graph é rigoroso com certos formatos, como novas linhas CRLF em um corpo da mensagem de diversas partes. Para reduzir o risco de criar cargas mal formadas, você deve usar uma biblioteca para criar mensagens de diversas partes. 
 

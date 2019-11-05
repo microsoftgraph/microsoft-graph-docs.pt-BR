@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece um único ponto de extremidade de API que
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 68b58d0ebe8fbcdb81cf23dd5173b64da4ac4ead
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 856f427e864eb4fa6a16c1ea758288523ae23c52
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054093"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969763"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
@@ -153,6 +153,6 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 ## <a name="see-also"></a>Confira também
 
-- [Domínios do Office 365](https://technet.microsoft.com/pt-BR/library/office-365-domains.aspx)
+- [Domínios do Office 365](https://technet.microsoft.com/library/office-365-domains.aspx)
 
 - [Adição e verificação de um domínio para um locatário do Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

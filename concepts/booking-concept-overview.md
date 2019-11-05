@@ -4,13 +4,13 @@ description: O Microsoft Bookings fornece aplicativos móveis e online que torna
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: bookings
-scenarios: getting-started
-ms.openlocfilehash: 83322a2b1343e71f43cd8196ed7484e463ec6ecd
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 4eba867db964ae4fddf861e60866d1d97f7891e9
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792944"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969309"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 
@@ -42,6 +42,6 @@ Confira [API do Microsoft Bookings no Microsoft Graph beta](/graph/api/resources
 
 Saiba mais sobre:
 
-- [Microsoft Bookings](https://support.office.com/pt-BR/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) e outros [aplicativos do Office 365 business](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) e outros [aplicativos do Office 365 business](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Usar a API do Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) do Microsoft Graph.
 

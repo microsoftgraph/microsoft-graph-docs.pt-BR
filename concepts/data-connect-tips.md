@@ -4,12 +4,12 @@ description: Veja dicas de como aproveitar o Microsoft Graph Data Connect.
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 7c887cf6a6407937c49d4e90b0c73800b13bee57
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 4ca24d2752731b2de03cedf6a36fa7ed4b231ec2
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629877"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969169"
 ---
 # <a name="tips-for-using-microsoft-graph-data-connect"></a>Dicas para uso do Microsoft Graph Data Connect
 
@@ -25,9 +25,9 @@ Como o Data Connect é projetado para extrair grandes quantidades de dados em ma
 
 ## <a name="data-must-stay-within-the-organizations-subscription"></a>Os dados devem ficar dentro da assinatura da organização
 
-Os pipelines do Data Connect são organizados pelo Azure Data Factory, um serviço de integração de dados executado em uma assinatura do Azure. A assinatura do Azure está [associada a exatamente um locatário do Office 365](https://docs.microsoft.com/pt-BR/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). Dessa forma, os dados devem ter o fluxo associado inicialmente a uma assinatura do Azure. Depois de mais minimalização e agregação, os dados podem ser usados em outro lugar.
+Os pipelines do Data Connect são organizados pelo Azure Data Factory, um serviço de integração de dados executado em uma assinatura do Azure. A assinatura do Azure está [associada a exatamente um locatário do Office 365](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). Dessa forma, os dados devem ter o fluxo associado inicialmente a uma assinatura do Azure. Depois de mais minimalização e agregação, os dados podem ser usados em outro lugar.
 
-Se você quiser desenvolver um aplicativo para outras pessoas usarem para extrair os dados do Office 365, você pode compactar o aplicativo como um [aplicativo gerenciado do Azure](https://docs.microsoft.com/pt-BR/azure/managed-applications/overview) e publicar no Azure Marketplace. Em seguida, alguém pode implantar o aplicativo em sua própria assinatura do Azure, e o aplicativo pode acessar dados em seu locatário. 
+Se você quiser desenvolver um aplicativo para outras pessoas usarem para extrair os dados do Office 365, você pode compactar o aplicativo como um [aplicativo gerenciado do Azure](https://docs.microsoft.com/azure/managed-applications/overview) e publicar no Azure Marketplace. Em seguida, alguém pode implantar o aplicativo em sua própria assinatura do Azure, e o aplicativo pode acessar dados em seu locatário. 
 
 ## <a name="use-of-service-principals"></a>Uso de entidades de serviço
 
@@ -58,7 +58,7 @@ Você pode eliminar as duplicatas dos objetos JSON exportados baseados em `inter
 ## <a name="use-puser-field-to-determine-the-relevant-user"></a>Use o campo puser para determinar o usuário relevante
 
 Os dados extraídos incluem algumas propriedades meta que não existem se forem usadas as APIs correspondentes do Microsoft Graph. Especificamente, o campo `puser` pode ser útil para determinar de quais usuários os dados foram extraídos. No cenário em que você tem duas cópias do mesmo email em caixas de correio diferentes, você pode usar o campo `puser` para determinar as caixas de correio de origem das cópias.
-O campo  também é útil para conjuntos de dados, como o conjunto de dados `Manager`. JSON exportado inclui informações sobre um gerenciador, mas isso é útil apenas se você souber o que gerenciam. O campo `puser` indicará qual gerenciador corresponde ao objeto JSON.
+O campo `puser` também é útil para conjuntos de dados, como o conjunto de dados `Manager`. JSON exportado inclui informações sobre um gerenciador, mas isso é útil apenas se você souber o que gerenciam. O campo `puser` indicará qual gerenciador corresponde ao objeto JSON.
 
 ## <a name="next-steps"></a>Próximos passos
 
