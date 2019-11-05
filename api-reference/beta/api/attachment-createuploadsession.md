@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 541173547ba8222ca5b64cb3396e972be5b017fc
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 116efc7583b0344cc1845f698210f760e3843d9b
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37719450"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968913"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
 
@@ -32,7 +32,7 @@ A seguir estão as etapas para anexar um arquivo usando uma sessão de carregame
 Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
 
 > [!TIP]
-> O Exchange Online permite que os administradores personalizem o limite de tamanho de mensagens de caixas de correio do Office 365, incluindo qualquer anexo de mensagem. Por padrão, esse limite de tamanho de mensagem é de 35 MB. Descubra como [Personalizar o tamanho máximo da mensagem](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) para dar suporte a anexos maiores que o limite padrão para o seu locatário. 
+> O Exchange Online permite que os administradores personalizem o limite de tamanho de mensagens de caixas de correio do Office 365, incluindo qualquer anexo de mensagem. Por padrão, esse limite de tamanho de mensagem é de 35 MB. Descubra como [Personalizar o tamanho máximo da mensagem](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) para dar suporte a anexos maiores que o limite padrão para o seu locatário. 
 
 ## <a name="permissions"></a>Permissões
 
@@ -75,7 +75,7 @@ Se bem-sucedido, este método retorna `201, Created` um código de resposta e um
 >
 >A propriedade **uploadUrl** retornada como parte do objeto de resposta **UPLOADSESSION** é uma URL opaca para consultas `PUT` subsequentes para carregar intervalos de bytes do arquivo. Ele contém o token de autenticação apropriado para `PUT` consultas subsequentes que expiram pelo **expirationDateTime**. Não Personalize esta URL.
 >
->A propriedade **nextExpectedRanges** especifica o próximo local de byte de arquivo para carregar, por exemplo `"NextExpectedRanges":["2097152"]`,. Você deve carregar bytes em um arquivo na ordem.
+>A propriedade **nextExpectedRanges** especifica o próximo local de byte de arquivo para carregar, por exemplo `"NextExpectedRanges":["2097152"]`,. Você deve carregar os bytes em um arquivo na ordem.
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 

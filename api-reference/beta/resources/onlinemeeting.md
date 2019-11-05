@@ -3,48 +3,56 @@ title: tipo de recurso onlineMeeting
 description: Captura informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: microsoft-cloud communications
 doc_type: resourcePageType
-ms.openlocfilehash: 611731673d932d6c5135c0115d735e4d642b1bfe
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5cc62c4caa564aa071ffc6b206d5494814b0cb53
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792783"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969798"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Captura informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
+Contém informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
 
 ## <a name="methods"></a>Métodos
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-| [Obter onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos do objeto onlineMeeting. |
+| [Criar onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
+| [Obter onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos de um objeto **onlineMeeting** . |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                  | Tipo                                                   | Descrição                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String                                                 | O nível de acesso que controla a admissão para a reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
-| audioConferencing         | [audioConferencing](audioconferencing.md)              | Representa as informações de acesso de telefone de um onlineMeeting. |
-| canceledDateTime          | DateTime                                               | A hora em que a reunião foi cancelada. |
-| chatInfo                  | [chatInfo](chatinfo.md)                                | O chat associado a esta reunião. |
-| creationDatetime          | DateTime                                               | A hora em que a reunião foi criada. Somente leitura.
-| endDateTime               | DateTime                                               | Hora de término da reunião. |
-| entryExitAnnouncement     | Booliano                                                | O status dos comunicados de presença para a reunião online. Quando os comunicados de presença estiverem habilitados, a reunião online anunciará os nomes dos participantes que ingressarem na reunião por meio de áudio. |
-| expirationDateTime        | DateTime                                               | A data e a hora UTC (tempo Universal Coordenado) absoluta após a qual a reunião online pode ser excluída. O dia e a hora devem estar entre um ano antes e dez anos após, a data e a hora atuais no servidor. |
-| id                        | String                                                 | A ID associada à reunião online. Usado em uma solicitação HTTP GET como a ID. Somente leitura. Servidor gerado. |
-| isCancelled               | Booliano                                                | Se a reunião foi cancelada. |
-| joinUrl                   | String                                                 | A URL que é usada quando a reunião online é associada da Web. |
-| meetingtype               | String                                                 | Os valores possíveis são `meetNow`: `scheduled`, `recurring`, `broadcast` , (Observação: a [criação](../api/application-post-onlinemeetings.md) de `meetNow`onlineMeeting só oferece suporte). |
+| autoAdmittedUsers         | String                                                 | A configuração que especifica o tipo de participantes que será automaticamente permitido na reunião online. Somente leitura. Os valores possíveis são `everyone`: `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`,,`organizer`|
+| audioConferencing         | [audioConferencing](audioconferencing.md)              | As informações de acesso de telefone (discagem) para uma reunião online. Somente leitura. |
+| canceledDateTime          | DateTime                                               | A hora em UTC quando a reunião foi cancelada. Somente leitura. |
+| chatInfo                  | [chatInfo](chatinfo.md)                                | As informações de chat associadas a esta reunião online. |
+| creationDatetime          | DateTime                                               | O horário de criação da reunião em UTC. Somente leitura. |
+| startDateTime             | DateTime                                               | A hora de início da reunião em UTC. |
+| endDateTime               | DateTime                                               | A hora de término da reunião em UTC. |
+| id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
+| IsCanceled                | Booliano                                                | Indica se a reunião foi cancelada. Somente leitura. |
+| joinUrl                   | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
+| isbroadcast               | Booliano                                                | O sinalizador para determinar se é uma reunião de transmissão. |
 | participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| startDateTime             | DateTime                                               | Hora de início da reunião. |
-| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
-| capabilities              | Coleção de cadeias de caracteres                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
-| videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. |
+| assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
+| capabilities              | String collection                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
+| videoTeleconferenceId     | String                                                 | A ID de teleconferência do videio. Somente leitura. |
+
+### <a name="autoadmittedusers-values"></a>valores de autoAdmittedUsers
+| Valor | Descrição  |
+| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| organizer | Somente o organizador da reunião é admitido diretamente.  Todos os outros esperam no lobby, até que seja admitido pelo organizador.  |
+| invitedUsersInCompany | O organizador da reunião e os usuários na mesma empresa convidados pelo Organizador participam diretamente da reunião.  Todos os outros esperam no lobby até que seja admitido.  |
+| everyoneInCompany | Todos na mesma empresa que o Organizador participam diretamente da reunião. Usuários federados e anônimos esperam no lobby até serem admitidos.  |
+| everyoneInSameAndFederatedCompany |  Todos na mesma empresa que o organizador e as empresas federadas ingressam na reunião diretamente.  Usuários anônimos esperam no lobby até serem admitidos.  |
+| têm | Qualquer usuário é permitido. Todos (incluindo usuários anônimos) podem ingressar na reunião diretamente sem esperar no lobby.  |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -62,18 +70,16 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
-  "accessLevel": "everyone | invited | locked | sameEnterprise",
+  "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
   "canceledDateTime": "String (timestamp)",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isCancelled": false,
+  "isCanceled": false,
   "joinUrl": "String",
-  "meetingType": "meetNow | scheduled | recurring | broadcast",
+  "isBroadcast": false,
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
@@ -81,3 +87,13 @@ Veja a seguir uma representação JSON do recurso.
   "videoTeleconferenceId": "String"
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "onlineMeeting resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

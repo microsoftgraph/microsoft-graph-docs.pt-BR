@@ -1,25 +1,24 @@
 ---
 title: Obter reunião online
-description: Recupere as propriedades e os relacionamentos de um objeto **onlineMeeting** .
+description: Recupere as propriedades e os relacionamentos de um objeto de **reunião online** .
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0a4a73f048459c3d3d455e5ef0082384366cba1a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: a96dcefdd98aba1b18c70dfbd0db7609beca74f5
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792622"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969155"
 ---
 # <a name="get-online-meeting"></a>Obter reunião online
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto **onlineMeeting** .
+Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .
 
-> **Observação:** O `GET` método é limitado a uma [ID de conferência do VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
-> Para fluxos regulares, o bot pode usar o `joinURL` para ingressar em uma reunião e nenhuma pesquisa é necessária.
+> **Observação:** Atualmente `GET` , o método só tem suporte para uma [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,8 +33,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /app/onlineMeetings/{id}
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ```
+> **Observação:** O `/app` caminho é preterido. Vá em frente, use `/communications` o caminho.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -62,8 +63,8 @@ O exemplo a seguir mostra a solicitação.
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
+```http
+GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
@@ -73,7 +74,7 @@ GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -95,54 +96,56 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-  "accessLevel": "everyone",
+  "autoAdmittedUsers": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
     "tollFreeNumber": "+18666390588",
-    "participantPasscode": "2425999",
-    "leaderPasscode": null,
-    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+    "ConferenceId": "9999999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
-  "canceledDateTime": "2018-03-19T09:46:02Z",
+  "canceledDateTime": "0001-01-01T08:00:00Z",
   "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-    "messageId": "0",
-    "replyChainMessageId": "0"
+    "@odata.type": "#microsoft.graph.chatInfo",
+    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
+    "messageId": "1533758867081"
   },
-  "creationDateTime": "2018-03-19T09:46:02Z",
-  "endDateTime": "2018-03-19T09:46:02Z",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "2018-03-19T09:46:02Z",
-  "id": "013448345",
-  "isCancelled": false,
-  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "meetingType": "scheduled",
+  "creationDateTime": "2018-05-30T00:12:19.0726086Z",
+  "endDateTime": "2018-05-30T01:00:00Z",
+  "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
+  "isCanceled": false,
+  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
+  "isBroadcast": false,
   "participants": {
     "attendees": [
       {
+        "@odata.type": "#microsoft.graph.identitySet",
         "identity": {
           "user": {
-            "id": "550fae72-d251-43ec-868c-373732c2704f",
-            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            "displayName": "Heidi Steen"
+            "@odata.type": "#microsoft.graph.identity",
+            "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
+            "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+            "displayName": "John"
           }
         },
         "upn": "upn-value"
       }
     ],
     "organizer": {
+      "@odata.type": "#microsoft.graph.identitySet",
       "identity": {
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
+          "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+          "displayName": "Bob"
         }
       },
       "upn": "upn-value"
     }
   },
-  "startDateTime": "2018-03-19T09:46:02Z",
-  "subject": "Quarterly sales numbers"
+  "startDateTime": "2018-05-30T00:30:00Z",
+  "subject": "Test Meeting.",
+  "videoTeleconferenceId": "123456789"
 }
 ```
 

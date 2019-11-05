@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso audioConferencing
-description: Representa as informações de acesso de telefone de um onlineMeeting.
+description: Representa informações de acesso de telefone de uma reunião online.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 94dc02920e7270fbfdacb10ee9a8edee8315fc67
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c392eb82be9e0f8c30353f18b393589b51649a3e
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974280"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969211"
 ---
 # <a name="audioconferencing-resource-type"></a>tipo de recurso audioConferencing
 
@@ -23,10 +23,9 @@ Representa as informações de acesso de telefone de um [onlineMeeting](onlineme
 | Propriedade            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | String  | Uma URL para a página da Web acessível externamente que contém informações de discagem. |
-| leaderPasscode      | String  | A senha de preenchimento necessária para se conectar ao provedor de conferência de áudio.      |
-| participantPasscode | String  | A senha do participante necessária para se conectar ao provedor de conferência de áudio. |
-| tollFreeNumber      | String  | O número de chamada gratuita para se conectar ao provedor de conferência de áudio.              |
-| tollNumber          | String  | O número de chamada tarifada para se conectar ao provedor de conferência de áudio.                   |
+| ID        | String  | A ID de conferência da reunião online.      |
+| tollFreeNumber      | String  | O número de chamada gratuita que se conecta ao provedor de conferência de áudio.              |
+| tollNumber          | String  | O número de chamada tarifada que se conecta ao provedor de conferência de áudio.                   |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -42,8 +41,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "dialinUrl": "String",
-  "leaderPasscode": "String",
-  "participantPasscode": "String",
+  "ConferenceId": "String",
   "tollFreeNumber": "String",
   "tollNumber": "String"
 }
