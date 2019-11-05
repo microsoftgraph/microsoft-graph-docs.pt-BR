@@ -3,14 +3,13 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-scenarios: getting-started
-ms.custom: graphiamtop20
-ms.openlocfilehash: 80c070f1146161b82a24f1086f63d5a121c923d7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: b7a2ac1f38c26ad2d6208d6b382625132018731f
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939835"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969225"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -173,12 +172,16 @@ Nenhum.
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-Nenhum.
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Ler aplicativos | Permite que o aplicativo leia aplicativos e entidades de serviço em nome do usuário conectado. | Sim |
+| _Application.ReadWrite.All_ | Ler e gravar todos os aplicativos |  Permite que o aplicativo crie, leia, atualize e exclua aplicativos e entidades de serviço em nome do usuário conectado. | Sim |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Ler aplicativos | Permite que o aplicativo leia aplicativos e entidades de serviço sem um usuário conectado. | Sim |
 | _Application.ReadWrite.All_ | Ler e gravar todos os aplicativos | Permite que o aplicativo de chamada crie e gerencie (leia, atualize, atualize segredos do aplicativo e exclua) aplicativos e serviços sem um usuário conectado.  Não permite o gerenciamento de concessões de autorizações ou atribuições de aplicativos a usuários ou grupos. | Sim |
 | _Application.ReadWrite.OwnedBy_ | Gerenciar aplicativos que este aplicativo criar ou possuir | Permite que o aplicativo de chamada crie outros aplicativos e entidades de serviço, e gerencie completamente esses aplicativos e entidades de serviço (leia, atualize, atualize os segredos do aplicativo e exclua), sem um usuário conectado.  Ele não poderá atualizar os aplicativos que não pertencem a ele. Não permite o gerenciamento de concessões de autorizações ou atribuições de aplicativos a usuários ou grupos. | Sim |
 
@@ -191,11 +194,12 @@ A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _A
 
 #### <a name="delegated"></a>Delegado
 
-Nenhum.
+* _Application.Read.All_: listar todos os aplicativos (`GET /beta/applications`)
+* _Application.ReadWrite.All_: atualizar uma entidade de serviço (`PATCH /beta/servicePrincipals/{id}`)
 
 #### <a name="application"></a>Aplicativo
 
-* _Application.ReadWrite.All_: listar todos os aplicativos (`GET /beta/applications`)
+* _Application.Read.All_: listar todos os aplicativos (`GET /beta/applications`)
 * _Application.ReadWrite.All_: excluir uma entidade de serviço (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: criar um aplicativo (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)

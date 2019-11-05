@@ -1,22 +1,22 @@
 ---
 title: Criar reunião online
-description: Cria uma reunião online em nome de um usuário específico no corpo da solicitação.
+description: Crie uma reunião online em nome de um usuário específico no corpo da solicitação.
 author: VinodRavichandran
 localization_priority: Priority
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e6f75891a4ca773f9bcb22bc3a659d9a3a411e3b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: a63540ee5cb43bf7adf785783780cc97c7cbe658
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791103"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968983"
 ---
 # <a name="create-online-meeting"></a>Criar reunião online
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cria uma reunião online em nome de um usuário específico no corpo da solicitação.
+Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário.
 
 > **Observação**: a reunião não é exibida no calendário do usuário.
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Não suportado                               |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite                    |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All                |
 
@@ -33,12 +33,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
+POST /communications/onlineMeetings
+POST /me/onlineMeetings
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [onlineMeeting](../resources/onlinemeeting.md).
@@ -48,22 +52,26 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e um o
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação.
+### <a name="example-1-create-an-online-meeting-with-application-token"></a>Exemplo 1: criar uma reunião online com o token do aplicativo
 
+#### <a name="request"></a>Solicitação
+
+>**Observação:** a criação de uma reunião online usando o token do aplicativo foi preterida. Use o caminho /me com um token de usuário para criar reuniões online.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-onlinemeeting-from-application"
+  "name": "create-onlinemeeting-app-token"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/onlineMeetings
+POST https://graph.microsoft.com/beta/communications/onlineMeetings
 Content-Type: application/json
-Content-Length: 1553
 
 {
-  "meetingType": "meetNow",
+  "isBroadcast": "false",
+  "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
+  "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
+  "subject":"Application Token Meeting",
   "participants": {
     "organizer": {
       "identity": {
@@ -72,8 +80,7 @@ Content-Length: 1553
         }
       }
     }
-  },
-  "subject": "subject-value"
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -93,9 +100,9 @@ Content-Length: 1553
 
 No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md).
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -105,31 +112,28 @@ No corpo da solicitação, forneça uma representação JSON do objeto [onlineMe
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
 
 {
-  "accessLevel": "everyone",
+  "autoAdmittedUsers": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
     "tollFreeNumber": "+18666390588",
-    "participantPasscode": "2425999",
-    "leaderPasscode": null,
+    "ConferenceId": "2425999",
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledDateTime": "2018-03-19T09:46:02Z",
+  "canceledDateTime": null,
   "chatInfo": {
     "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
     "replyChainMessageId": "0"
   },
-  "creationDateTime": "2018-03-19T09:46:02Z",
-  "endDateTime": "2018-03-19T09:46:02Z",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "2018-03-19T09:46:02Z",
-  "id": "013448345",
-  "isCancelled": false,
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "isCanceled": false,
   "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "meetingType": "meetNow",
+  "isBroadcast": false,
   "participants": {
     "organizer": {
       "identity": {
@@ -142,8 +146,150 @@ Content-Length: 1574
       "upn": "upn-value"
     }
   },
-  "startDateTime": "2018-03-19T09:46:02Z",
-  "subject": "Quarterly sales numbers"
+  "subject": "Application Token Meeting"
+}
+```
+
+### <a name="example-2-create-an-online-meeting-with-user-token"></a>Exemplo 2: criar uma reunião online com o token de usuário
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "create-onlinemeeting-user-token"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User Token Meeting"
+}
+```
+
+#### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "accessLevel": "everyone",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "canceledDateTime": null,
+  "chatInfo": {
+    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+    "messageId": "0",
+    "replyChainMessageId": "0"
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "entryExitAnnouncement": true,
+  "expirationDateTime": "2019-09-14T18:37:29.1973954Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "isCanceled": false,
+  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "isBroadcast": false,
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User Token Meeting"
+}
+```
+
+### <a name="example-3-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Exemplo 3: criar uma reunião online em um Canal do Microsoft Teams com um token de usuário
+
+#### <a name="request"></a>Solicitação
+>**Observação:**: a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel.",
+  "chatInfo": {
+    "threadId":"19%3A3b52398f3c524556894b776357c1dd79%40thread.skype"
+  }
+}
+```
+#### <a name="response"></a>Resposta
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "example",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "accessLevel": "everyone",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "canceledDateTime": null,
+  "chatInfo": {
+    "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+    "messageId": "1563302249053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "entryExitAnnouncement": true,
+  "expirationDateTime": "2018-03-19T09:46:02Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+  "isCanceled": false,
+  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "isBroadcast": false,
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting in Microsoft Teams channel."
 }
 ```
 
