@@ -3,14 +3,14 @@ title: tipo de recurso prompt
 description: Tipo de base de ação de prompt.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 297a5017cbc7cb607ce3ef014d7da296b73ecb10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: baaa98894c021fce21ed64fcecf7e5c24b335867
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965569"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006568"
 ---
 # <a name="prompt-resource-type"></a>tipo de recurso prompt
 

@@ -1,22 +1,24 @@
 ---
 title: 'Call: changeScreenSharingRole'
-description: Inicie e interrompa a tela de compartilhamento na chamada. Essa API é usada para permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada ou reunião.
+description: Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 969dd84b7262dc2495c7990b39af5a593a245808
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: d670e2b1be4450b33e57ca0834aecd1f6427603d
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792435"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006351"
 ---
 # <a name="call-changescreensharingrole"></a>Call: changeScreenSharingRole
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie e interrompa a tela de compartilhamento na chamada. Essa API é usada para permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada ou reunião.
+Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
+
+> **Observação:** Isso só é suportado para chamadas de grupo que usam mídia hospedada em aplicativos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,12 +33,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/changeScreenSharingRole
+POST /communications/calls/{id}/changeScreenSharingRole
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
@@ -46,10 +51,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |role|String|Os valores possíveis são: ' Visualizador ', ' participante '|
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` o código de resposta.
+Se tiver êxito, este método retornará `202 Accepted` um código de resposta e todos os participantes receberão uma atualização de lista.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como chamar essa API.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -61,7 +65,7 @@ O exemplo a seguir mostra a solicitação.
   "name": "call-changeScreenSharingRole"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/changeScreenSharingRole
+POST https://graph.microsoft.com/beta/communications/calls/{id}/changeScreenSharingRole
 Content-Type: application/json
 Content-Length: 24
 
@@ -77,7 +81,7 @@ Content-Length: 24
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-changescreensharingrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,6 +98,56 @@ Veja a seguir um exemplo da resposta.
 } -->
 ```http
 HTTP/1.1 202 Accepted
+```
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Lista de notificação atualizada com o participante enviando vídeo de compartilhamento de tela
+Observe a `direction: sendOnly` Propriedade no fluxo de mídia.
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "id": "2765eb15-01f8-47c6-b12b-c32111a4a86f",
+          "info": {
+            "identity": {
+              "user": {
+                "displayName": "Bob",
+                "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          },
+          "mediaStreams": [
+            {
+              "mediaType": "videoBasedScreenSharing",
+              "label": "applicationsharing-video",
+              "sourceId": "1",
+              "direction": "sendOnly"
+            }
+          ],
+          "isMuted": false,
+          "isInLobby": false
+        }
+      ]
+    }
+  ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

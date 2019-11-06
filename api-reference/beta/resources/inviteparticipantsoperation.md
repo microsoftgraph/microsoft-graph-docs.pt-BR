@@ -3,14 +3,14 @@ title: tipo de recurso inviteParticipantsOperation
 description: Representa o status de uma operação de convite de participante de execução longa, disparada por uma chamada para a API participante-INVITE.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a974bd22ddd9e1ac8c6ab90cdedb9dda9f1a1bb5
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5802f5a8a63c971007cb6cda11f16823e6140298
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793017"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006680"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>tipo de recurso inviteParticipantsOperation
 
@@ -23,15 +23,10 @@ Representa o status de uma operação de convite de participante de execução l
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | O contexto do cliente.                                                                                                                               |
-| createdDateTime                | DateTimeOffset              | A hora em que a gravação foi criada.                                                                                                          |
-| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura. Servidor gerado.                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | A hora da última ação da operação.                                                                                                     |
+| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                              |
 | participants | coleção [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
-| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura. Servidor gerado.                                                                                             |
-| status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. Servidor gerado.                                                 |
-
-## <a name="relationships"></a>Relações
-Nenhum
+| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                             |
+| status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                  |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,9 +42,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "clientContext": "String",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "participants": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"

@@ -1,26 +1,28 @@
 ---
 title: 'Call: rejeitar'
-description: Rejeite as chamadas recebidas.
+description: Habilitar um bot para rejeitar uma chamada de entrada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e3befe394aa9451cbb51bd39ba41fb158b67b464
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: a083459a162117addba494f74e50842435a74516
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838828"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005903"
 ---
 # <a name="call-reject"></a>Call: rejeitar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permite que o bot rejeite uma [chamada](../resources/call.md)de entrada. A solicitação de chamada de entrada pode ser um convite para uma reunião ou uma chamada ponto a ponto. A solicitação de chamada de entrada expira após 15 segundos. Se nenhuma resposta for enviada durante esse tempo, a chamada será rejeitada automaticamente.
+Habilitar um bot para rejeitar uma chamada de entrada. A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se for recebido um convite para uma chamada de grupo, a notificação conterá os parâmetros **chatInfo** e **meetingInfo** .
 
-Depois que o bot é registrado com uma URL de retorno de chamada válida no portal do Azure, a chamada de entrada é `changeType` entregue como `created`um [commsNotification](../resources/commsnotification.md) com a definição para. O bot é esperado `Answer` ou `Reject` a chamada antes que ele expire.
+O bot deve responder ou rejeitar a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.
 
-> **Observação:** Essa API é usada apenas para rejeitar chamadas de entrada. Para encerrar as chamadas existentes, a [chamada de exclusão](../api/call-delete.md) deve ser usada em vez disso.
+Esta API não termina chamadas existentes que já foram respondidas. Use [delete Call](../api/call-delete.md) para encerrar uma chamada.
+
+> **Observação:** O bot só pode ser alcançado por meio de VoIP. A chamada PSTN para Bot ainda não é suportada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,20 +37,23 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
+POST /communications/calls/{id}/reject
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|motivos|String|O motivo da rejeição. Os valores possíveis `None`são `Busy` e`Forbidden` |
-|callbackUri|String|Permite que os bots forneçam um URI de retorno de chamada específico, onde o resultado da ação de rejeição será lançado. Isso permite enviar o resultado para a mesma instância de bot específica que disparou a ação rejeitar. Se nenhum for fornecido, o URI de retorno de chamada global do bot será usado.|
+|motivo|String|O motivo da rejeição. Os valores possíveis `None`são `Busy` e`Forbidden` |
+|callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
@@ -56,8 +61,8 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 ## <a name="examples"></a>Exemplos
 Os exemplos a seguir mostram como chamar essa API.
 
+### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>Exemplo 1: rejeitar uma chamada de entrada com o motivo "ocupado"
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -65,7 +70,7 @@ O exemplo a seguir mostra a solicitação.
   "name": "call-reject"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -81,7 +86,7 @@ Content-Length: 24
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
@@ -89,7 +94,6 @@ Content-Length: 24
 
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
 
 <!-- {
   "blockType": "response",
@@ -100,13 +104,12 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="reject-an-incoming-call-with-none-reason"></a>Rejeitar uma chamada de entrada com o motivo ' nenhum '
+### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>Exemplo 2: rejeitar uma chamada de entrada com o motivo ' nenhum '
 
 ##### <a name="notification---incoming"></a>Notificação-entrada
 
 ```http
 POST https://bot.contoso.com/api/call
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -121,10 +124,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
         "state": "incoming",
         "direction": "incoming",
         "source": {
@@ -156,17 +159,14 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação.
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+##### <a name="request"></a>Solicitar
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-reject"
+  "blockType": "request",
+  "name": "call-reject-none-reason"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -174,22 +174,13 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### <a name="response"></a>Resposta
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -198,7 +189,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -213,10 +203,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896"
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896"
       }
     }
   ]

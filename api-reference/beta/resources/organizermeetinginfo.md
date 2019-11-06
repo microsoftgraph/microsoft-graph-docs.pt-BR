@@ -1,28 +1,29 @@
 ---
 title: tipo de recurso organizerMeetingInfo
-description: Informações de reunião que contêm o organizador da reunião.
+description: 'Contém detalhes sobre o organizador da reunião. '
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3cc56b8834ec9b9c09706bf293fe0011a14d701d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cdb23ebfe16822e4caa4374fbc8e21697533c7cc
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009269"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006603"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>tipo de recurso organizerMeetingInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações de reunião que contêm o organizador da reunião.
+Contém detalhes sobre o organizador da reunião. 
+
+Para ingressar em uma reunião existente, você deve fornecer uma combinação dos tipos de recurso organizerMeetingInfo e [chatInfo](./chatinfo.md) ou o tipo de recurso [tokenMeetingInfo](./tokenmeetinginfo.md) sozinho.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                          | Descrição                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Booliano                       | Indica se uma conversa pode continuar assim que o host da conversa sair. |
 | organizer                    | [identitySet](identityset.md) | A identidade do Azure Active Directory do organizador.  |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -34,32 +35,11 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.meetingInfo",
-   "openType": true,
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
-}
-```
-
-## <a name="example"></a>Exemplo
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.organizerMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "organizer": {
-    "user": {
-      "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-      "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-    }
-  }
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 

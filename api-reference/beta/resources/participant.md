@@ -3,14 +3,14 @@ title: tipo de recurso participante
 description: O tipo de participante.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a903eb34191401100d9b19aa17eba6fb9f5c6617
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2fae206fb76ffe3c00b91d992c874e200eeae98
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009213"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006596"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
@@ -25,7 +25,7 @@ O tipo de participante.
 | [Obter participante](../api/participant-get.md)                    | [participante](participant.md)            | Leia as propriedades do objeto **participante** .    |
 | [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure o mixer de áudio do participante.            |
 | [Convidar](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Convidar um participante para a chamada.                 |
-| [Ativar mudo para participante](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Tirar o áudio de um participante em uma chamada.                     |
+| [Participante sem áudio](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Tirar o áudio de um participante em uma chamada.                     |
 | [Ativar mudo de todos os participantes](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Ativar mudo de todos os participantes da reunião.         |
 
 ## <a name="properties"></a>Propriedades
@@ -63,44 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
   "metadata": "String",
   "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
-}
-```
-
-## <a name="example"></a>Exemplo
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant"
-}-->
-```json
-{
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "en-US",
-    "region": "westus"
-  },
-  "isInLobby": false,
-  "isMuted": false,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "status": "recordingCapable"
-  }
 }
 ```
 

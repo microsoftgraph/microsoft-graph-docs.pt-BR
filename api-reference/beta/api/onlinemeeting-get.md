@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 06a9f2e3627df40e19db793dc34f1962f0d9ee47
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9b5d571a73a03f6e313f13912b10262bff7b7041
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998208"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006484"
 ---
 # <a name="get-online-meeting"></a>Obter reunião online
 
@@ -96,6 +96,7 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
+  "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",

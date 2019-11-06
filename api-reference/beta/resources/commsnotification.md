@@ -3,14 +3,14 @@ title: tipo de recurso commsNotification
 description: Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 98b261ab9a640ea23dfb942e8c2bae17b7d92989
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9901c1390d1813413cdd95949debea95d54c286b
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012937"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006702"
 ---
 # <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
 
@@ -22,7 +22,7 @@ Tipo de base de notificação de comunicação publicado por servidores de comun
 | Propriedade       | Tipo    | Descrição                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | Os valores possíveis são: `created`, `updated`, `deleted`.      |
-| recurso       | String  | URI do recurso que foi alterado.                      |
+| Resourceurl pela       | String  | URI do recurso que foi alterado.                      |
 
 > **Observação:** `resourceData` está disponível como dados adicionais. É uma entidade ou coleção (entidade), dependendo do número de alterações empacotadas na notificação.
 
@@ -40,56 +40,11 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotification",
   "changeType": "created | updated | deleted",
-  "resource": "String"
+  "resourceUrl": "String"
 }
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "truncated": true
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "created",
-      "resource": "/app/calls/1D6DE2D4-CD51-4309-8DAA-70768651088E",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "id": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-        "state": "incoming"
-      }
-    }
-  ]
-}
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "truncated": true
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "created",
-      "resource": "/app/calls/1D6DE2D4-CD51-4309-8DAA-70768651088E/participants",
-      "resourceData": [
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "id": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-        },
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79"
-        }
-      ]
-    }
-  ]
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -3,14 +3,14 @@ title: tipo de recurso callRoute
 description: O tipo callRoute.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9978bffd55f62f0646f84d2405df70eba6232d68
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 698cf2d6c2ae8b157aee4db45219eeb0b85c73c5
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974050"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006737"
 ---
 # <a name="callroute-resource-type"></a>tipo de recurso callRoute
 

@@ -3,14 +3,14 @@ title: tipo de recurso participantMixerLevel
 description: Configuração dos níveis de mixer para um determinado participante de áudio
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 27ddc297f779d1a40350bd4cc24015a2c60dd9ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc305274d619a3686d4d391516947f1d06b92745
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966225"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006582"
 ---
 # <a name="participantmixerlevel-resource-type"></a>tipo de recurso participantMixerLevel
 

@@ -3,14 +3,14 @@ title: tipo de recurso meetingParticipants
 description: Participantes de uma reunião.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2d40479390703f50ac87b7c3196aa4d5bc55bc8a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 171d24629c8a219f788ad17cdf97874bbf299a62
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792762"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006624"
 ---
 # <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
 

@@ -3,14 +3,14 @@ title: 'participante: muteAll'
 description: Ative o mudo para todos os participantes em uma chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cf7a3220e391b14cedabbb1c0536b959ad03117
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 00ace588a763a9e6d1df64830820be1ad6308567
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792545"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006463"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -31,7 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
+POST /communications/calls/{id}/participants/muteAll
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -43,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|Coleção de cadeias de caracteres|Os participantes a serem mudo.|
+|participants|String collection|Os participantes a serem mudo.|
 |clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
@@ -61,7 +63,7 @@ O exemplo a seguir mostra a solicitação.
   "name": "participant-muteAll"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll
+POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/muteAll
 Content-Type: application/json
 Content-Length: 81
 
@@ -80,7 +82,7 @@ Content-Length: 81
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-muteall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-muteall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,14 +100,13 @@ Content-Length: 81
 } -->
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
 
 {
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```

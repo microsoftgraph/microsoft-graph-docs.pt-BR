@@ -3,14 +3,14 @@ title: Obter chamada
 description: Recupere as propriedades e os relacionamentos de um objeto de chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e89928ec956f741927643353b86a7213ac62243d
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: b157f6b5233b7f83ed5530239478dd1858273d6f
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838693"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006337"
 ---
 # <a name="get-call"></a>Obter chamada
 
@@ -31,7 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}
+GET /communications/calls/{id}
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -47,11 +49,11 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-getting-a-peer-to-peer-call"></a>Exemplo 1: obtendo uma chamada ponto a ponto
 
 ##### <a name="request"></a>Solicitação
-O exemplo de chamada a seguir mostra a solicitação para obter a chamada ponto a ponto.
-
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -60,7 +62,7 @@ O exemplo de chamada a seguir mostra a solicitação para obter a chamada ponto 
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}
+GET https://graph.microsoft.com/beta/communications/calls/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
@@ -70,7 +72,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -157,29 +159,28 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
+### <a name="example-2-getting-a-group-call"></a>Exemplo 2: obtendo uma chamada de grupo
 
+##### <a name="request"></a>Solicitar
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "get-call"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
-Authorization: Bearer <Token>
+GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
 
 ##### <a name="response"></a>Resposta
 
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "established",

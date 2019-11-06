@@ -3,14 +3,14 @@ title: Obter participante
 description: Recupere as propriedades e os relacionamentos de um objeto **participante** .
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c7e53db08d8c1726b5869ae2f68180c1f37417f0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 73ad70fa54104f973b59ae6f2f8c3b4196fe18e1
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792594"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006505"
 ---
 # <a name="get-participant"></a>Obter participante
 
@@ -18,8 +18,7 @@ ms.locfileid: "36792594"
 
 Recupere as propriedades e os relacionamentos de um objeto **participante** .
 
-## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+## <a name="permissions"></a>Permissions
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
@@ -31,7 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/participants/{id}
+GET /communications/calls/{id}/participants/{id}
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -57,8 +58,8 @@ O exemplo a seguir mostra a solicitação.
   "blockType": "request",
   "name": "get-participant"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
+```http
+GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]
@@ -68,7 +69,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-participant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-participant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,47 +88,41 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 977
 
 {
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "isInLobby": true,
-  "isMuted": true,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "initiatedBy": {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
+   "@odata.type":"#microsoft.graph.participant",
+   "info":{
+      "@odata.type":"#microsoft.graph.participantInfo",
+      "identity":{
+         "@odata.type":"#microsoft.graph.identitySet",
+         "application":{
+            "@odata.type":"#microsoft.graph.identity",
+            "displayName":"Display Name",
+            "id":"278405a3-f568-4b3e-b684-009193463064",
+            "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+            },
+         "user":null,
+         "device":null,
+         "phone":null
       },
-      "languageId": "languageId-value",
-      "region": "region-value"
-    },
-    "status": "recordingCapable"
-  }
+      "id":null
+   },
+   "mediaStreams":[
+      {
+         "@odata.type":"#microsoft.graph.mediaStream",
+         "mediaType":"audio",
+         "sourceId":"1",
+         "direction":"sendReceive",
+         "serverMuted":false,
+         "label":null
+      }
+   ],
+   "isMuted":false,
+   "isInLobby":false,
+   "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants/$entity",
+   "metadata":null,
+   "recordingInfo":null
 }
 ```
 

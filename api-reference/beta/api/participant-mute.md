@@ -3,14 +3,14 @@ title: 'participante: sem áudio'
 description: Ativar mudo de um participante específico na chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1ae365e8dc033931a5c3cd97e4fd631959d1fe68
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: cbf65ee703e22895e25ae18b2a94c4a1740527f2
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792538"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006498"
 ---
 # <a name="participant-mute"></a>participante: sem áudio
 
@@ -18,8 +18,13 @@ ms.locfileid: "36792538"
 
 Ativar mudo de um participante específico na chamada.
 
-## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Este é um servidor sem som, o que significa que o servidor irá descartar todos os pacotes de áudio desse participante, mesmo que o participante continue a transmitir áudio.
+
+Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsOperation.md).
+
+> **Observação:** Isso só é suportado para chamadas de grupo.
+
+## <a name="permissions"></a>Permissions
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
@@ -31,24 +36,29 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
+POST /communications/calls/{id}/participants/{id}/mute
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|O contexto do cliente.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+>**Observação:** Whem essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
+
+## <a name="example---mute-specific-participant"></a>Exemplo-sem áudio o participante específico
 O exemplo a seguir mostra como chamar essa API.
 
 ##### <a name="request"></a>Solicitação
@@ -60,12 +70,11 @@ O exemplo a seguir mostra a solicitação.
   "name": "participant-mute"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants/2765eb15-01f8-47c6-b12b-c32111a4a86f/mute
 Content-Type: application/json
-Content-Length: 46
 
 {
-  "clientContext": "clientContext-value"
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -76,69 +85,32 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-mute-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real. 
+
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.commsOperation",
-  "truncated": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-## <a name="example---mute-specific-participant"></a>Exemplo-sem áudio o participante específico
-
-##### <a name="request"></a>Solicitação
-
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
-{
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-##### <a name="response"></a>Resposta
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
-```json
+```http
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+
 {
+  "@odata.type": "#microsoft.graph.muteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
@@ -147,7 +119,6 @@ Content-Length: 259
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -157,19 +128,21 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants",
       "resourceData": [
         {
           "@odata.type": "#microsoft.graph.participant",
-          "id": "0698446E77E24E4D85F80597083CB830",
+          "id": "2765eb15-01f8-47c6-b12b-c32111a4a86f",
           "info": {
             "identity": {
               "user": {
-                "displayName": "Test User",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+                "displayName": "Bob",
+                "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
               }
             },
             "region": "westus",
@@ -180,35 +153,10 @@ Content-Type: application/json
               "mediaType": "audio",
               "label": "main-audio",
               "sourceId": "1",
-              "direction": "sendReceive",
-              "serverMuted": false
+              "direction": "sendReceive"
             }
           ],
-          "isMuted": true,
-          "isInLobby": false
-        },
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "id": "123456W77E24E4D85F80597083CB830",
-          "info": {
-            "identity": {
-              "application": {
-                "displayName": "Test Bot",
-                "id": "1234A46B-3D17-4ADC-8DCE-DC4E7D556789"
-              }
-            },
-            "region": "westus",
-            "languageId": "en-US"
-          },
-          "mediaStreams": [
-            {
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "2",
-              "direction": "sendReceive",
-              "serverMuted": false
-            }
-          ],
+          "isMuted": true, // will be set to true on mute
           "isInLobby": false
         }
       ]

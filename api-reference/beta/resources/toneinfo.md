@@ -3,14 +3,14 @@ title: tipo de recurso toneInfo
 description: Um único evento DTMF.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0eaa4b4159ffd5e7455b1155a7f3cd82c89b19aa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa0ef52126895e61300c1e2f7a258926e209866c
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964246"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006519"
 ---
 # <a name="toneinfo-resource-type"></a>tipo de recurso toneInfo
 

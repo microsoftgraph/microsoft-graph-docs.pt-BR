@@ -3,14 +3,14 @@ title: Criar grupo de roteamento de áudio
 description: Criar um novo **audioRoutingGroup**.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 853f41cc8a9865c877754f212bbe660c44cc5e47
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7b34bc058c116a9be78f491f8dc2e826ea09f0c6
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792290"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005967"
 ---
 # <a name="create-audio-routing-group"></a>Criar grupo de roteamento de áudio
 
@@ -31,7 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
+POST /communications/calls/{id}/audioRoutingGroups
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -58,7 +60,7 @@ O exemplo a seguir mostra a solicitação.
   "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 
@@ -81,7 +83,7 @@ Content-Length: 233
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-audioroutinggroup-from-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-audioroutinggroup-from-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -121,7 +123,7 @@ Content-Length: 233
 O exemplo a seguir mostra a solicitação.
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 ```

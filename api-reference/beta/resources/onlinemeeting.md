@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso onlineMeeting
-description: Captura informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
+description: Contém informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-cloud communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5cc62c4caa564aa071ffc6b206d5494814b0cb53
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.prod: cloud-communications
+ms.openlocfilehash: 64b2c1880edafe1241367ac91889440a513964d9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969798"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006610"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
+Contém informações sobre a reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
 ## <a name="methods"></a>Métodos
 
@@ -39,7 +39,7 @@ Contém informações sobre a reunião, incluindo a URL de ingresso, a lista de 
 | id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
 | IsCanceled                | Booliano                                                | Indica se a reunião foi cancelada. Somente leitura. |
 | joinUrl                   | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
-| isbroadcast               | Booliano                                                | O sinalizador para determinar se é uma reunião de transmissão. |
+| isbroadcast               | Booliano                                                | Indica se a reunião é uma reunião de transmissão. |
 | participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
 | capabilities              | String collection                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
@@ -48,18 +48,14 @@ Contém informações sobre a reunião, incluindo a URL de ingresso, a lista de 
 ### <a name="autoadmittedusers-values"></a>valores de autoAdmittedUsers
 | Valor | Descrição  |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| organizer | Somente o organizador da reunião é admitido diretamente.  Todos os outros esperam no lobby, até que seja admitido pelo organizador.  |
+| organizer | Somente o organizador da reunião é admitido diretamente.  Todos os outros esperam no lobby, até que seja admitido pelo organizador  |
 | invitedUsersInCompany | O organizador da reunião e os usuários na mesma empresa convidados pelo Organizador participam diretamente da reunião.  Todos os outros esperam no lobby até que seja admitido.  |
-| everyoneInCompany | Todos na mesma empresa que o Organizador participam diretamente da reunião. Usuários federados e anônimos esperam no lobby até serem admitidos.  |
+| everyoneInCompany | Todos na mesma empresa que o Organizador participam diretamente da reunião.  Usuários federados e anônimos esperam no lobby até serem admitidos.  |
 | everyoneInSameAndFederatedCompany |  Todos na mesma empresa que o organizador e as empresas federadas ingressam na reunião diretamente.  Usuários anônimos esperam no lobby até serem admitidos.  |
-| têm | Qualquer usuário é permitido. Todos (incluindo usuários anônimos) podem ingressar na reunião diretamente sem esperar no lobby.  |
+| têm | Qualquer usuário é permitido, o que significa que todos (incluindo usuários anônimos) podem participar da reunião diretamente, sem esperar no lobby.  |
 
-## <a name="relationships"></a>Relações
-Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",

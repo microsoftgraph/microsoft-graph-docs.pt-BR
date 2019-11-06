@@ -3,14 +3,14 @@ title: Criar chamada
 description: Criar uma nova chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f8c8e56601d5e2feef4c14e4000a7eb1529565df
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: fbc2fb015d7e57a05e1dc51429343ce38fc2b3e9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968990"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006442"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -18,8 +18,10 @@ ms.locfileid: "37968990"
 
 Criar [chamada](../resources/call.md) permite que o bot crie uma nova chamada de saída ou ingresse em uma reunião existente. Você precisará [registrar o bot de chamada](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias, conforme mencionado abaixo.
 
+> **Observação:** No momento, só há suporte para chamadas VoIP. 
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                             |
@@ -28,45 +30,47 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado                                                                           |
 | Aplicativo                            | Calls. JoinGroupCallsasGuest. All, calls. JoinGroupCalls. All, calls. initiate. All, calls. InitiateGroupCalls. All |
 
-> **Observação:** Além disso, para uma chamada com mídia hospedada por aplicativo, você precisará da permissão calls. AccessMedia. All.
+> **Observação:** Para uma chamada com mídia hospedada em aplicativos, você precisará da permissão calls. AccessMedia. All com uma das permissões listadas na tabela anterior.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
+POST /communications/calls
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [Call](../resources/call.md) .
-
-> **Observação:** Propriedades marcadas `Server generated` como são ignoradas `POST` quando `app/calls`o processamento é ativado.
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>Criar uma chamada VOIP ponto a ponto com mídia hospedada pelo serviço
+### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Exemplo 1: criar uma chamada VoIP ponto a ponto com mídia hospedada pelo serviço
 
 > **Observação:** Essa chamada precisa da permissão calls. initiate. All.
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID de aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
+O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores do token de autorização, a URL de retorno de chamada, a ID do aplicativo, o nome do aplicativo, a ID do usuário, o nome do usuário e a ID do locatário devem ser substituídos por valores reais para que o exemplo funcione.
+
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-from-application"
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -109,7 +113,7 @@ Authorization: Bearer <Token>
 
 ##### <a name="response"></a>Resposta
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
   "blockType": "response",
@@ -118,9 +122,8 @@ Authorization: Bearer <Token>
 } -->
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
 Content-Type: application/json
-
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -135,7 +138,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -195,7 +198,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -210,7 +212,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
+      "resourceUrl": "/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -225,7 +227,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -240,7 +241,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
+      "resourceUrl": "/communications/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -254,27 +255,38 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>Criar uma chamada VOIP ponto a ponto com mídia hospedada pelo aplicativo
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Exemplo 2: criar uma chamada VoIP ponto a ponto com mídia hospedada no aplicativo
 
-> Observação: precisa de calls. initiate. All e calls. AccessMedia. All.
+> **Observação**: Este exemplo precisa de calls. initiate. All e calls. AccessMedia. All.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID de aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
+  "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
   "targets": [
     {
       "@odata.type": "#microsoft.graph.participantInfo",
@@ -293,7 +305,7 @@ Authorization: Bearer <Token>
   ],
  "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<Media Session Configuration>",
+    "blob": "<Media Session Configuration>"
   }
 }
 ```
@@ -306,7 +318,212 @@ Exemplo de blob de sessão de mídia de áudio é mostrado abaixo
 
 >**Observação:** Para chamadas ponto a ponto, as notificações esperadas são apenas para alterações de estado de chamada.
 
-### <a name="join-scheduled-meeting-with-service-hosted-media"></a>Ingressar na reunião agendada com mídia hospedada pelo serviço
+##### <a name="response"></a>Resposta
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Exemplo 3: criar uma chamada de grupo com mídia hospedada pelo serviço
+
+Isso oferece suporte a até 5 usuários de VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários de VoIP.
+> **Observação:** Esta chamada de exemplo precisa `Calls.InitiateGroupCalls.All` da permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
+
+##### <a name="request"></a>Solicitação
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Exemplo 4: criar uma chamada de grupo com mídia hospedada por aplicativo
+
+Isso oferece suporte a até 5 usuários de VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários de VoIP.
+> **Observação:** Esta chamada de exemplo precisa `Calls.InitiateGroupCalls.All` da permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
+
+##### <a name="request"></a>Solicitação
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Exemplo 5: ingressar na reunião agendada com mídia hospedada pelo serviço
 Para participar da reunião agendada, precisaremos obter a ID do thread, a ID da mensagem, a ID do organizador e a ID do locatário em que a reunião está agendada.
 Essas informações podem ser obtidas na [API obter reuniões online](../api/onlinemeeting-get.md).
 
@@ -315,17 +532,15 @@ Os valores do token de autorização, a URL de retorno de chamada, a ID do aplic
 
 ##### <a name="request"></a>Solicitação
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
+  "name": "join-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -367,18 +582,16 @@ Authorization: Bearer <Token>
 ```
 ##### <a name="response"></a>Resposta
 
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "establishing",
@@ -392,7 +605,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -455,7 +668,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -470,7 +682,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
         "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -504,7 +716,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -519,7 +730,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -552,7 +763,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -568,7 +778,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {
@@ -646,19 +856,18 @@ Content-Type: application/json
 
 >**Observação:** Para entrar em cenários de reunião distantes de notificações de estado de chamada, recebemos notificações de lista.
 
-### <a name="join-scheduled-meeting-with-app-hosted-media"></a>Ingressar na reunião agendada com mídia hospedada por aplicativo
+### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Exemplo 6: ingressar na reunião agendada com mídia hospedada por aplicativo
 Para ingressar na reunião com a mídia hospedada por aplicativo, atualize a configuração de mídia com o [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) , conforme mostrado abaixo, no exemplo fornecido acima.
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
 <!-- {
   "blockType": "example",
+  "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -693,7 +902,7 @@ Authorization: Bearer <Token>
 ```
 
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a>Reunião de canal de ingresso com mídia hospedada pelo serviço
+### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Exemplo 7: ingressar na reunião de canal com mídia hospedada pelo serviço
 A reunião dentro de um canal requer detalhes específicos, como ID do thread, MessageId e detalhes do organizador que podem ser obtidos usando a [API de reuniões online](../api/onlinemeeting-get.md).
 
 Os valores do token de autorização, a URL de retorno de chamada, a ID do aplicativo, o nome do aplicativo, a ID do usuário, o nome do usuário e a ID do locatário devem ser substituídos juntamente com os detalhes obtidos da [API obter reuniões online](../api/onlinemeeting-get.md) com valores reais para fazer com que o exemplo funcione.
@@ -702,17 +911,15 @@ Os valores do token de autorização, a URL de retorno de chamada, a ID do aplic
 
 ##### <a name="request"></a>Solicitação
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
   "blockType": "example",
+  "name": "join-channel-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -753,7 +960,7 @@ Authorization: Bearer <Token>
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Ingressar na reunião de canal como um convidado com mídia de serviço hospedado
+### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Exemplo 8: ingressar na reunião de canal como um convidado com mídia hospedada em serviço
 Para ingressar em uma reunião de canal como convidado, você precisará criar uma [identidade](../resources/identityset.md) de convidado e adicioná-la como fonte de chamada na solicitação de reunião de ingresso.
 O nome para exibição é o nome que você deseja exibir na reunião para sua identidade de convidado. A ID pode ser uma ID exclusiva que identifica a identidade de convidado.
 
@@ -761,17 +968,15 @@ O nome para exibição é o nome que você deseja exibir na reunião para sua id
 
 ##### <a name="request"></a>Solicitação
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
   "blockType": "example",
+  "name": "join-channel-meeting-as-guest-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -828,7 +1033,6 @@ Authorization: Bearer <Token>
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -844,7 +1048,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {
@@ -879,6 +1083,7 @@ Content-Type: application/json
 }
 ```
 > **Observação:** O aplicativo não receberá a lista de participantes da reunião até seu admitiu no lobby
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -3,30 +3,30 @@ title: tipo de recurso invitationParticipantInfo
 description: O **InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 570c2740cce2f4bc3b5584ba04ed50c9467591af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e25e65fb87f664788b0649f188def29b62c13d2
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967151"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006688"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
+Este recurso é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                           | Tipo                          | Descrição                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| EndpointType                       | String                        | Os valores possíveis são: `default` e `voicemail`. |
+| EndpointType                       | String                        | O tipo de ponto de extremidade. Os valores possíveis são: `default` e `voicemail`. |
 | ladrões                           | [identitySet](identityset.md) | O [identityset](identityset.md) associado a este convite.                   |
 | languageId                         | String                        | A cadeia de caracteres de cultura do idioma.                                                                                     |
 | região                             | String                        | Região do participante.                                                           |
-| replacesCallId                     | Cadeia de caracteres                        | Opcional. A chamada na qual o idenity de destino faz parte no momento. Essa chamada será cancelada quando o participante for adicionado. |
+| replacesCallId                     | String                        | Opcional. A chamada na qual o idenity de destino faz parte no momento. Essa chamada será cancelada quando o participante for adicionado. |
 
 ## <a name="json-representation"></a>Representação JSON
 

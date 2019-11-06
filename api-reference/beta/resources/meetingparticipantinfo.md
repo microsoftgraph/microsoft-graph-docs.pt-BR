@@ -3,14 +3,14 @@ title: tipo de recurso meetingParticipantInfo
 description: Informações sobre um participante de uma reunião.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 62843378d53774d19ad3428e6b52c985761edda2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2775dd3af7940f9022b9e7090125ed52fce397d6
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009766"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006631"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>tipo de recurso meetingParticipantInfo
 

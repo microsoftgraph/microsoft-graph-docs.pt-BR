@@ -3,14 +3,14 @@ title: 'Call: subscribeToTone'
 description: Assine o DTMF (sinalização de multifrequência de tom dual). Isso permite que você seja notificado quando o usuário pressionar teclas em um ' dialpad '.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a81c6440d320f74411f1ffefb94a6fea14945b14
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 50ff5f41c7637ebe79771db81889e89f982a0d92
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792522"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005934"
 ---
 # <a name="call-subscribetotone"></a>Call: subscribeToTone
 
@@ -34,7 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/subscribeToTone
+POST /communications/calls/{id}/subscribeToTone
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -64,7 +66,7 @@ O exemplo a seguir mostra a solicitação.
   "name": "call-subscribeToTone"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone
+POST https://graph.microsoft.com/beta/communications/calls/{id}/subscribeToTone
 Content-Type: application/json
 Content-Length: 46
 
@@ -80,7 +82,7 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-subscribetotone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-subscribetotone-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,12 +100,13 @@ Content-Length: 46
 } -->
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45a/operations/ea91863c-d0a6-4de0-b73a-4c8d63da5d87
+Content-Type: application/json
+Content-Length: 259
 
 {
   "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
   "status": "completed",
-  "createdDateTime": "2019-07-18T19:52:30Z",
-  "lastActionDateTime": "2019-07-18T19:52:31Z",
   "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54",
 }
 ```
@@ -115,7 +118,6 @@ A notificação contém informações sobre o Tom pressionado no recurso [tonein
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -125,10 +127,12 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/421f1100-411f-4a29-8514-dbbb9caff45",
+      "resourceUrl": "/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "state": "established",

@@ -3,49 +3,58 @@ title: 'Call: resposta'
 description: Atenda às chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8cbdd87e037bb22972394423203f0f9218edf7b2
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5c9b506b8fc10bcec48e503e394b813e79f8ad82
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792426"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006365"
 ---
 # <a name="call-answer"></a>Call: resposta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atenda às chamadas recebidas.
+Habilite um bot para atender a uma [chamada](../resources/call.md)de entrada. A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se for recebido um convite para uma chamada de grupo, a notificação conterá os parâmetros [chatInfo](../resources/chatinfo.md) e [meetingInfo](../resources/meetinginfo.md) .
 
-## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+O bot deve responder ou [rejeitar](./call-reject.md) a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.
+
+> **Observação:** O bot só pode ser acessado por VoIP. Não há suporte para a chamada PSTN.
+
+## <a name="permissions"></a>Permissions
+Você não precisa de nenhuma permissão para responder a uma chamada ponto a ponto. Você precisa de uma das seguintes permissões para ingressar em uma chamada de grupo. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                 |
 | :-------------- | :-----------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                        |
 | Delegado (conta pessoal da Microsoft) | Não suportado                        |
-| Aplicativo     | Nenhum                                                        |
+| Aplicativo     | Calls. JoinGroupCalls. All ou calls. JoinGroupCallsasGuest. All                                                         |
+
+> **Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão calls. AccessMedia. All.                                                   |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
+<!-- {"blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
+POST /communications/calls/{id}/answer
 ```
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |A ID de retorno de chamada ou de assinatura à qual os retornos serão entregues. Precisam                                                               |
-|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são `unknown`: `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`,. Precisam |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|A configuração de mídia. Precisam                                                                                                            |
+|callbackUri       |String                                    |Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.    |
+|acceptedModalities|String collection                         |A lista de aceitar modalidades. O valor possível são `audio`: `video`, `videoBasedScreenSharing`,. Obrigatório para responder a uma chamada. |
+|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta
 Este método retorna `202 Accepted` um código de resposta.
@@ -63,7 +72,7 @@ O exemplo a seguir mostra a solicitação.
   "name": "call-answer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/answer
+POST https://graph.microsoft.com/beta/communications/calls/{id}/answer
 Content-Type: application/json
 Content-Length: 211
 
@@ -71,13 +80,15 @@ Content-Length: 211
   "callbackUri": "callbackUri-value",
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
+    "blob": "<Media Session Configuration Blob>"
   },
   "acceptedModalities": [
     "audio"
   ]
 }
 ```
+Este blob é a configuração serializada para sessões de mídia que é gerada a partir do SDK de mídia.
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,7 +97,7 @@ Content-Length: 211
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -105,13 +116,12 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a>Responder chamada VOIP com mídia hospedada pelo serviço
+### <a name="example-1-answer-a-peer-to-peer-voip-call-with-service-hosted-media"></a>Exemplo 1: responder a uma chamada VoIP ponto a ponto com mídia hospedada no serviço
 
 ##### <a name="notification---incoming"></a>Notificação-entrada
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -121,13 +131,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "incoming",
         "direction": "incoming",
@@ -175,19 +187,16 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
-
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
+##### <a name="request"></a>Solicitar
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-answer"
+  "blockType": "request",
+  "name": "call-answer-service-hosted-media"
 }-->
-```json
+```http
+POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+Content-Type: application/json
+
 {
   "callbackUri": "https://bot.contoso.com/api/calls",
   "acceptedModalities": [ "audio" ],
@@ -208,7 +217,11 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -217,7 +230,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -227,13 +239,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "establishing"
       }
@@ -246,7 +260,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -256,13 +269,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }
@@ -271,13 +286,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a>Responder chamada VOIP com mídia hospedada por aplicativo
+### <a name="example-2-answer-voip-call-with-application-hosted-media"></a>Exemplo 2: responder a chamada VOIP com mídia hospedada por aplicativo
 
 ##### <a name="notification---incoming"></a>Notificação-entrada
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -287,13 +301,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "incoming",
         "direction": "incoming",
@@ -328,31 +344,33 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
-
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
+##### <a name="request"></a>Solicitar
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-answer"
+  "blockType": "request",
+  "name": "call-answer-app-hosted-media"
 }-->
-```json
+```http
+POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+Content-Type: application/json
+
 {
   "callbackUri": "https://bot.contoso.com/api/calls",
   "acceptedModalities": [ "audio" ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
+    "blob": "<Media Session Configuration Blob>"
   }
 }
 ```
 
 ##### <a name="response"></a>Resposta
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -361,7 +379,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -371,13 +388,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "establishing"
       }
@@ -390,7 +409,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -400,13 +418,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }

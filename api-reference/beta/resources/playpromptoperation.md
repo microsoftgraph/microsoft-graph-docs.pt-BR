@@ -3,14 +3,14 @@ title: tipo de recurso playPromptOperation
 description: A operação playPrompt para obter o resultado da ação playPrompt.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b79fa774c112433b09d75eb04f16823f2dad9b6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84b54fbce830f5b505decee7e2d25618700728b3
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008975"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006575"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
 
@@ -22,12 +22,10 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | O contexto do cliente.                                                                |
+| clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
 | completionReason    | String                      | Os valores possíveis são: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
-| createdDateTime     | DateTimeOffset              | A hora de início da operação.                                                   |
 | id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
-| lastActionDateTime  | DateTimeOffset              | A hora da última ação da operação.                                      |
-| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura. Servidor gerado.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## <a name="relationships"></a>Relações
@@ -48,9 +46,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "clientContext": "String",
   "completionReason": "unknown | completedSuccessfully | mediaOperationCanceled",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }

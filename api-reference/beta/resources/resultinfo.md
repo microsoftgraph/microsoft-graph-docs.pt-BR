@@ -3,14 +3,14 @@ title: tipo de recurso resultInfo
 description: O tipo resultInfo.
 author: VinodRavichandran
 localization_priority: Normal
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 1e5f6a523a8aca4454cd3355e2a0287fef9fc90d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: acc01a17420390343c3eb1f866761d54d5c81c79
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965366"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006547"
 ---
 # <a name="resultinfo-resource-type"></a>tipo de recurso resultInfo
 
@@ -22,9 +22,9 @@ O tipo resultInfo.
 
 | Propriedade | Tipo   | Descrição          |
 | :------- | :----- | :------------------  |
-| código     | String | O código de resultado.     |
+| código     | Int32 | O código de resultado.     |
 | mensagem  | String | A mensagem.         |
-| Subcódigo  | String | O subcódigo do resultado. |
+| subcódigo  | Int32 | O subcódigo do resultado. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,51 +39,9 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
-  "code": "String",
+  "code": 0,
   "message": "String",
-  "subCode": "String"
-}
-```
-
-## <a name="example-error-result"></a>Exemplo de resultado de erro
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "100",
-  "message": "Internal Server Error.",
-  "subCode": "20"
-}
-```
-
-## <a name="example-generic-success-result"></a>Exemplo de resultado genérico de êxito
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "0"
-}
-```
-
-## <a name="example-record-success-result"></a>Resultado de êxito do registro de exemplo
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "completedSilenceDetected"
+  "subcode": 0
 }
 ```
 

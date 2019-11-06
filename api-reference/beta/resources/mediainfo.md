@@ -3,14 +3,14 @@ title: tipo de recurso mediaInfo
 description: As informações de mídia usadas em ações para prompts.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6a5e5677cb479839449a5e82323729b68201791a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef58bb2ca80ec18a1d11c0e3d2e976e6d7fa2bb9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966845"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006666"
 ---
 # <a name="mediainfo-resource-type"></a>tipo de recurso mediaInfo
 

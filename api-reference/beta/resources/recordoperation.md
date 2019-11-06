@@ -3,14 +3,14 @@ title: tipo de recurso recordOperation
 description: O tipo recordOperation
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 23fb116a80dcd90206d7a0ae5eeec5d756272c3d
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: 22b1fbd157b6b13d0b839a898440ee289aa2ec73
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36061995"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006554"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
 
@@ -22,15 +22,13 @@ O tipo recordOperation
 
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | O contexto do cliente.                                                                                                                               |
+| clientContext                  | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                                                                                                                               |
 | completionReason               | String                      | Os valores possíveis são: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
-| createdDateTime                | DateTimeOffset              | A hora em que a gravação foi criada.                                                                                                          |
-| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura. Servidor gerado.                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | A hora da última ação da operação.                                                                                                     |
+| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                              |
 | recordingAccessToken           | String                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
 | recordingLocation              | String                      | O local onde a gravação está localizada.                                                                                                      |
-| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura. Servidor gerado.                                                                                             |
-| status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. Servidor gerado.                                                 |
+| resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                              |
+| status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -50,30 +48,11 @@ Veja a seguir uma representação JSON do recurso.
 {
   "clientContext": "String",
   "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "recordingAccessToken": "String",
   "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
-}
-```
-
-## <a name="example"></a>Exemplo
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.recordOperation",
-  "truncated": true
-}-->
-```json
-{
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordingAccessToken": "<access-token>",
-  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "status": "completed"
 }
 ```
 

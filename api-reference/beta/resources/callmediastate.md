@@ -2,21 +2,21 @@
 title: tipo de recurso callMediaState
 description: Representa o estado de mídia de uma chamada.
 author: VinodRavichandran
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 6b092598c50663ec9e7803a13332798d05fe095b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 29402e813f6816ebea02ad2bb86c403408c2ff81
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793015"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006744"
 ---
-# <a name="audioconferencing-resource-type"></a>tipo de recurso audioConferencing
+# <a name="callmediastate-resource-type"></a>tipo de recurso callMediaState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o estado de mídia de uma [chamada](call.md)de chamada.
+Representa o estado de mídia de uma [chamada](call.md).
 
 ## <a name="properties"></a>Propriedades
 

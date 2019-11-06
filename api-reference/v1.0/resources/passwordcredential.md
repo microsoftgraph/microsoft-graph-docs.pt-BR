@@ -5,35 +5,36 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 9d7b1013d572f98f10634ac6470367fd44ffbb66
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4aebabc02ec673534d789542af33d74d6ede4eea
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938853"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37998627"
 ---
 # <a name="passwordcredential-resource-type"></a>tipo de recurso passwordCredential
 
 Representa uma credencial de senha associada a um aplicativo ou a uma entidade de serviço. A propriedade **passwordCredentials** do [aplicativo](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> Entity é uma coleção de objetos **passwordCredential** .
 
-> Observação: não há suporte para o uso de PATCH para atualizar o passwordCredentials. Use o usar os métodos addpassword e removePassword para atualizar a senha de um aplicativo <!--or a servicePrincipal-->.
+> [!IMPORTANT]
+> Não há suporte para o uso de POST ou PATCH para definir **passwordCredential** . Use os métodos addpassword e removePassword para atualizar a senha de um aplicativo<!--or a servicePrincipal-->:
 >
-> - Application- [Addpassword](../api/application-addpassword.md)
-> - aplicativo- [removePassword](../api/application-removepassword.md)
+> - [Application: addpassword](../api/application-addpassword.md)
+> - [aplicativo: removePassword](../api/application-removepassword.md)
 <!--
-> - servicePrincipal - [addPassword](../api/serviceprincipal-addpassword.md)
-> - servicePrincipal - [removePassword](../api/serviceprincipal-removepassword.md)
+> - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
+> - [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
 -->
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | customKeyIdentifier | Binária | Não usar. |
-| displayName | Cadeia de caracteres | Nome amigável da senha. Opcional. |
+| displayName | String | Nome amigável da senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. |
-| Dica | Cadeia de caracteres | Contém os três primeiros caracteres da senha. Somente leitura. |
+| Dica | String | Contém os três primeiros caracteres da senha. Somente leitura. |
 | keyId | Guid | O identificador exclusivo da senha. |
-| secretText | Cadeia de caracteres | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm 16-64 caracteres de comprimento. O valor da senha gerada só é retornado durante a solicitação POST inicial para [addpassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
+| secretText | String | Somente leitura; Contém as senhas fortes geradas pelo Azure AD que têm 16-64 caracteres de comprimento. O valor da senha gerada só é retornado durante a solicitação POST inicial para [addpassword](../api/application-addpassword.md). Não há como recuperar essa senha no futuro. |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
