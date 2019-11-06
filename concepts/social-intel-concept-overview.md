@@ -1,18 +1,18 @@
 ---
-title: Visão geral da inteligência social e do local de trabalho no Microsoft Graph
+title: Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 description: As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-scenarios: getting-started
-ms.openlocfilehash: e6bad0a172b10ba7699d3ecd4ff29fcc555bf615
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: e71f63872100dff532df7309585f0a6be2ed352c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792881"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969365"
 ---
-# <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência social e do local de trabalho no Microsoft Graph
+# <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
 As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes. Eles fornece informações inteligentes que podem responder a perguntas como:
 
@@ -92,16 +92,21 @@ A API do Insights fornece uma com uma funcionalidade semelhante às entidades [u
 
 ## <a name="why-integrate-with-myanalytics-preview"></a>Por que integrar o MyAnalytics (visualização)?
 
-[O myAnalytics](https://docs.microsoft.com/pt-BR/workplace-analytics/myanalytics/index) fornece uma visão geral de como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.
+[O myAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/index) fornece uma visão geral de como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.
 
 A API de análises permite a sincronização ou a integração de dados de análise do usuário com um aplicativo de terceiros personalizado para oferecer suporte a uma ampla variedade de cenários que podem ajudar a melhorar a produtividade e a colaboração do usuário. Por exemplo, você poderia integrar dados do myAnalytics com atividades de dispositivos móveis para ajudar os usuários a acompanhar todas as atividades de trabalho e social e planejar o seu dia dentro de um aplicativo.
+
+## <a name="why-integrate-with-the-profile-api-preview"></a>Por que integrar com a API do perfil (visualização)?
+
+A API do [perfil](/graph/api/resources/profile?view=graph-rest-beta) representa a próxima geração na modelagem e representa as pessoas nos serviços do Microsoft 365. Os dados de perfil podem ser usados em conjunto com os dados das pessoas para criar experiências personalizadas baseado no Microsoft Graph. 
 
 ## <a name="api-reference"></a>Referência da API
 
 Procurando a referência de API para estes serviços?
 
-- [API de Pessoas no Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Use a API do Microsoft Graph para integrar inteligência social e de local de trabalho em um aplicativo](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [API de Pessoas](/graph/api/resources/social-overview?view=graph-rest-1.0)
+- [Inteligência de pessoas e no local de trabalho (visualização)](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [API do Perfil (visualização)](/graph/api/resources/profile?view=graph-rest-beta).
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -109,3 +114,4 @@ Procurando a referência de API para estes serviços?
 * Saiba mais sobre a [API de Pessoas](people-example.md) e a entidade [person](/graph/api/resources/person?view=graph-rest-1.0).
 * Para começar a usar a API do Insights, consulte [Usar a API do Insights](/graph/api/resources/insights?view=graph-rest-beta).
 * Saiba mais sobre a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
+* Saiba mais sobre a [API de perfil](/graph/api/resources/profile?view=graph-rest-beta).
