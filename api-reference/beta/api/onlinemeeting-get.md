@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a96dcefdd98aba1b18c70dfbd0db7609beca74f5
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 06a9f2e3627df40e19db793dc34f1962f0d9ee47
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969155"
+ms.locfileid: "37998208"
 ---
 # <a name="get-online-meeting"></a>Obter reunião online
 
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 ```
-> **Observação:** O `/app` caminho é preterido. Vá em frente, use `/communications` o caminho.
+> **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -63,7 +63,7 @@ O exemplo a seguir mostra a solicitação.
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

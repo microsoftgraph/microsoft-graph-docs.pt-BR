@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: c30df0bf19aeab48fab7655fd134dbc1cfe13195
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 8eb35ea0ade2e7d471674d8d064ba0ac38b361cc
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938159"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37996260"
 ---
 # <a name="create-and-send-a-notification"></a>Criar e enviar uma notificação
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -54,6 +54,8 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta qu
 ### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_notification_from_user"
@@ -86,6 +88,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-notification-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.

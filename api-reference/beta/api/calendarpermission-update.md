@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1cd959c4ee083ff6ec26914c5f99ccd3d8c3c8f
-ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
+ms.openlocfilehash: 7aee071949fb5d7ded115f131e732b6d3626e6fd
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "37942633"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37994831"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 
@@ -59,7 +59,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |allowedRoles|coleção de cadeias de caracteres| Lista de níveis de permissão de compartilhamento permitidos para o calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 |emailAddress|[emailAddress](../resources/email.md)| Representa um compartilhamento que tem acesso ao calendário. Para o compartilhamento "minha organização", a propriedade **Address** é NULL. |
-|id|Cadeia de caracteres| O identificador exclusivo do usuário (compartilhamento) com o qual o calendário foi compartilhado. Somente leitura.|
+|id|String| O identificador exclusivo do usuário (compartilhamento) com o qual o calendário foi compartilhado. Somente leitura.|
 |isInsideOrganization|Booliano| True se o usuário em contexto (compartilhamento) estiver dentro da mesma organização que o proprietário do calendário.|
 |isRemovable|Booliano| `True`Se o usuário puder ser removido da lista de compartilhamentos do calendário especificado, `false` caso contrário. O usuário "minha organização" determina as permissões que outras pessoas dentro da sua organização têm para o calendário especificado. Não é possível remover "minha organização" como um compartilhamento para um calendário.|
 |role|calendarRoleType| Nível de permissão atual do compartilhamento de calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
@@ -73,6 +73,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendarpermission"
@@ -99,6 +101,20 @@ Content-type: application/json
   "id": "RGVmYXVsdA=="
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

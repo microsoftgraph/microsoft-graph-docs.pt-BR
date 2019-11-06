@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 5cdb9543bed0cecf50428dc3461d4909977325dd
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2b62d2e4f0b93e8b7090fe20984faf1644ae2f6b
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934243"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37999420"
 ---
 # <a name="passwordcredential-resource-type"></a>tipo de recurso passwordCredential
 
@@ -18,12 +18,13 @@ ms.locfileid: "37934243"
 
 Representa uma credencial de senha associada a um aplicativo ou a uma entidade de serviço. A propriedade **passwordCredentials** do [aplicativo](application.md) e do entitites do [servicePrincipalName](serviceprincipal.md) é uma coleção de objetos **passwordCredential** .
 
-> Observação: não há suporte para o uso de PATCH para atualizar o passwordCredentials. Use o use os métodos addpassword e removePassword para atualizar a senha de um aplicativo ou de um servicePrincipalName.
+> [!IMPORTANT]
+> Não há suporte para o uso de POST ou PATCH para definir **passwordCredential** . Use os métodos addpassword e removePassword para atualizar a senha de um aplicativo ou de um servicePrincipalName:
 >
-> - Application- [Addpassword](../api/application-addpassword.md)
-> - aplicativo- [removePassword](../api/application-removepassword.md)
-> - servicePrincipalName- [Addpassword](../api/serviceprincipal-addpassword.md)
-> - servicePrincipalName- [removePassword](../api/serviceprincipal-removepassword.md)
+> - [Application: addpassword](../api/application-addpassword.md)
+> - [aplicativo: removePassword](../api/application-removepassword.md)
+> - [servicePrincipalName: addpassword](../api/serviceprincipal-addpassword.md)
+> - [servicePrincipalName: removePassword](../api/serviceprincipal-removepassword.md)
 
 
 ## <a name="properties"></a>Propriedades
