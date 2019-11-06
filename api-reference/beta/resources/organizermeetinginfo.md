@@ -1,65 +1,45 @@
 ---
 title: tipo de recurso organizerMeetingInfo
-description: Informações de reunião que contêm o organizador da reunião.
+description: 'Contém detalhes sobre o organizador da reunião. '
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3cc56b8834ec9b9c09706bf293fe0011a14d701d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cdb23ebfe16822e4caa4374fbc8e21697533c7cc
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009269"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006603"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="03f07-103">tipo de recurso organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="03f07-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="7274d-103">tipo de recurso organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="7274d-103">organizerMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="03f07-104">Informações de reunião que contêm o organizador da reunião.</span><span class="sxs-lookup"><span data-stu-id="03f07-104">Meeting information containing the organizer of the meeting.</span></span>
+<span data-ttu-id="7274d-104">Contém detalhes sobre o organizador da reunião.</span><span class="sxs-lookup"><span data-stu-id="7274d-104">Contains details about the meeting organizer.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="03f07-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="03f07-105">Properties</span></span>
+<span data-ttu-id="7274d-105">Para ingressar em uma reunião existente, você deve fornecer uma combinação dos tipos de recurso organizerMeetingInfo e [chatInfo](./chatinfo.md) ou o tipo de recurso [tokenMeetingInfo](./tokenmeetinginfo.md) sozinho.</span><span class="sxs-lookup"><span data-stu-id="7274d-105">To join an existing meeting, you must either provide a combination of the organizerMeetingInfo and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./tokenmeetinginfo.md) resource type by itself.</span></span>
 
-| <span data-ttu-id="03f07-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="03f07-106">Property</span></span>                     | <span data-ttu-id="03f07-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="03f07-107">Type</span></span>                          | <span data-ttu-id="03f07-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="03f07-108">Description</span></span>                                     |
+## <a name="properties"></a><span data-ttu-id="7274d-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7274d-106">Properties</span></span>
+
+| <span data-ttu-id="7274d-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7274d-107">Property</span></span>                     | <span data-ttu-id="7274d-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="7274d-108">Type</span></span>                          | <span data-ttu-id="7274d-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="7274d-109">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="03f07-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="03f07-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="03f07-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="03f07-110">Boolean</span></span>                       | <span data-ttu-id="03f07-111">Indica se uma conversa pode continuar assim que o host da conversa sair.</span><span class="sxs-lookup"><span data-stu-id="03f07-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="03f07-112">organizer</span><span class="sxs-lookup"><span data-stu-id="03f07-112">organizer</span></span>                    | [<span data-ttu-id="03f07-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="03f07-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="03f07-114">A identidade do Azure Active Directory do organizador.</span><span class="sxs-lookup"><span data-stu-id="03f07-114">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="7274d-110">organizer</span><span class="sxs-lookup"><span data-stu-id="7274d-110">organizer</span></span>                    | [<span data-ttu-id="7274d-111">identitySet</span><span class="sxs-lookup"><span data-stu-id="7274d-111">identitySet</span></span>](identityset.md) | <span data-ttu-id="7274d-112">A identidade do Azure Active Directory do organizador.</span><span class="sxs-lookup"><span data-stu-id="7274d-112">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="03f07-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="03f07-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7274d-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7274d-113">JSON representation</span></span>
 
-<span data-ttu-id="03f07-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="03f07-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7274d-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7274d-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.meetingInfo",
-   "openType": true,
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
-}
-```
-
-## <a name="example"></a><span data-ttu-id="03f07-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="03f07-117">Example</span></span>
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.organizerMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "organizer": {
-    "user": {
-      "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-      "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-    }
-  }
+  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
 }
 ```
 
