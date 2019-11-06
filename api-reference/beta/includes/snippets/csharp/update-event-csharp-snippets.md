@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 868c592b430204f90c6c68d4fa64a3fc3d404159
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: dc0cdacce96ef46b7848510dc8f717ae558ea564
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36845858"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "38000154"
 ---
 ```csharp
 
@@ -23,6 +23,8 @@ var @event = new Event
     Recurrence = null,
     Uid = "iCalUId-value",
     ReminderMinutesBeforeStart = 99,
+    IsOnlineMeeting = true,
+    OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
     IsReminderOn = true
 };
 
