@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: f11f45086994fa855714950b079b5151ce348662
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: ed24a66fd267d3aab344166b81247b7ab334eedd
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950406"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006512"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -164,11 +164,10 @@ Atualmente, a propriedade **onlineMeetingUrl** de um [evento](/graph/api/resourc
 
 A versão beta oferece uma solução alternativa, na qual é possível usar a propriedade **onlineMeetingProvider** de um [evento](/graph/api/resources/event?view=graph-rest-beta)para verificar se o provedor é o Microsoft Teams. Por meio da propriedade **onlineMeeting** do **evento**, você pode acessar o **joinUrl**.
 
-## <a name="calls-and-online-meetings"></a>Chamadas e reuniões online
+## <a name="cloud-communications-preview"></a>Comunicações na nuvem (visualização)
 
-> **Observação** As chamadas e reuniões online estão atualmente em visualização e estarão disponíveis apenas no ponto de extremidade beta do Microsoft Graph.
-
-- O caminho da navegação `/applications/{id}` não tem suporte. Não é permitido navegar pelo nó de aplicativos globais para o aplicativo, mesmo que seja o seu próprio.  Use o `/app` apenas para navegação.
+> **Observação** As comunicações na nuvem estão atualmente em visualização e disponíveis apenas no ponto de extremidade beta do Microsoft Graph.
+O cliente do Microsoft Teams não mostra o menu **Exibir detalhes da Reunião** para reuniões de canal criadas por meio da API de comunicações na nuvem.
 
 ## <a name="contacts"></a>Contatos
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 76213aa84377de6c4d469a61d8287a58d7f76a20
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c43bded94b1c5fd683c2ca5ca72515a12ce2ec9b
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934855"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37999406"
 ---
 # <a name="add-member"></a>Adicionar membro
 Adicione um membro a um grupo do Office 365 ou a um grupo de segurança através da propriedade de navegação de **membros**.
@@ -18,7 +18,7 @@ Adicione um membro a um grupo do Office 365 ou a um grupo de segurança através
 É possível adicionar usuários, contatos organizacionais ou outros grupos. 
 
 > [!IMPORTANT]
-> É possível adicionar somente usuários a grupos do Office 365.
+> Só é possível adicionar usuários aos grupos do Office 365 e segurança gerenciados pela nuvem.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
