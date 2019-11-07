@@ -1,39 +1,39 @@
 ---
 title: tipo de recurso Workbook
-description: A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.
+description: Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e assim por diante.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7653aecb9f10523ce838ec2832a6080f462291f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45b5cce5b6c79ef041d80a467f6663e7cdc670bb
+ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007344"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38023202"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso Workbook
 
-A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.
-
-## <a name="properties"></a>Propriedades
-Nenhuma
+Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e assim por diante.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar Sessão](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.|
-|[Fechar Sessão](../api/workbook-closesession.md) | None |Fechar uma sessão existente.|
-|[Atualizar Sessão](../api/workbook-refreshsession.md) | None |Atualizar uma sessão existente.|
+|[Criar sessão](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.|
+|[Fechar sessão](../api/workbook-closesession.md) | None |Fechar uma sessão existente.|
+|[Atualizar sessão](../api/workbook-refreshsession.md) | None |Atualizar uma sessão existente.|
 
+## <a name="properties"></a>Propriedades
+Nenhum.
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |names|coleção [workbookNamedItem](workbooknameditem.md) |Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
-|tables|[](workbooktable.md) coleção workbooktable |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
+|tables|coleção [workbooktable](workbooktable.md) |Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
 |worksheets|coleção [workbookWorksheet](workbookworksheet.md) |Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Representa o workbookApplication do Excel que gerencia a pasta de trabalho.|
 
 ## <a name="functions"></a>Funções
 
@@ -135,7 +135,7 @@ content-type: application/json;odata.metadata
 }
 ```
 ## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.
+
 <!--{
   "blockType": "resource",
   "keyProperty": "id",

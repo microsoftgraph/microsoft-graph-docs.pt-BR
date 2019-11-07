@@ -2,19 +2,17 @@
 title: 'workbookApplication: calcular'
 description: Recalcula todas as pastas de trabalho abertas no Excel no momento.
 localization_priority: Normal
-author: lumine2008
+author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d05767d03e10e0fb7785442fef6696b273f52424
+ms.openlocfilehash: 20adace4998c1538dafc4d99d6a888c5d7f3ad4f
 ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023181"
+ms.locfileid: "38023217"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: calcular
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recalcula todas as pastas de trabalho abertas no Excel no momento.
 
@@ -23,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite     |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -51,17 +49,16 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-
+Eis um exemplo de como chamar esta API.
 ### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação.
+Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workbookApplication_calculate"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application/calculate
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
 Content-length: 48
 
@@ -69,24 +66,10 @@ Content-length: 48
   "calculationType": "calculationType-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/workbookapplication-calculate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/workbookapplication-calculate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/workbookapplication-calculate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta.
-
+Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true,

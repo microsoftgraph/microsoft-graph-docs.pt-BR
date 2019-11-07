@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso workbookApplication
-description: Representa o workbookApplication do Excel que gerencia a pasta de trabalho.
+description: Representa o aplicativo Excel que gerencia a pasta de trabalho.
 localization_priority: Normal
-author: lumine2008
+author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 04b2d4ab31651fe34affe42ef4811c3802762581
+ms.openlocfilehash: a4f7d2cd6887598ac0a60522dc5bee1101dff9c9
 ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023195"
+ms.locfileid: "38023245"
 ---
 # <a name="workbookapplication-resource-type"></a>tipo de recurso workbookApplication
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o aplicativo Excel que gerencia a pasta de trabalho.
 
@@ -36,7 +34,6 @@ Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON
-
 
 <!-- {
   "blockType": "resource",
