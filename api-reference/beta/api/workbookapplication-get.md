@@ -5,51 +5,51 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 00f8bf3b596aa1a4e58beb340fef6e2c94e834e3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 399cb1452bc3c1c009d4c08668b2409f6eec2f04
+ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36723998"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38023174"
 ---
-# <a name="get-workbookapplication"></a><span data-ttu-id="f62e5-103">Obter workbookApplication</span><span class="sxs-lookup"><span data-stu-id="f62e5-103">Get workbookApplication</span></span>
+# <a name="get-workbookapplication"></a><span data-ttu-id="7498a-103">Obter workbookApplication</span><span class="sxs-lookup"><span data-stu-id="7498a-103">Get workbookApplication</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f62e5-104">Recupere as propriedades e os relacionamentos do objeto workbookApplication.</span><span class="sxs-lookup"><span data-stu-id="f62e5-104">Retrieve the properties and relationships of workbookApplication object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f62e5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="f62e5-105">Permissions</span></span>
-<span data-ttu-id="f62e5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f62e5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7498a-104">Recupere as propriedades e os relacionamentos de um objeto [workbookApplication](../resources/workbookapplication.md) .</span><span class="sxs-lookup"><span data-stu-id="7498a-104">Retrieve the properties and relationships of a [workbookApplication](../resources/workbookapplication.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7498a-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7498a-105">Permissions</span></span>
+<span data-ttu-id="7498a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7498a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f62e5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f62e5-108">Permission type</span></span>      | <span data-ttu-id="f62e5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f62e5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7498a-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7498a-108">Permission type</span></span>      | <span data-ttu-id="7498a-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7498a-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f62e5-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f62e5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f62e5-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f62e5-111">Not supported.</span></span>    |
-|<span data-ttu-id="f62e5-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f62e5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f62e5-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f62e5-113">Not supported.</span></span>    |
-|<span data-ttu-id="f62e5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f62e5-114">Application</span></span> | <span data-ttu-id="f62e5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f62e5-115">Not supported.</span></span> |
+|<span data-ttu-id="7498a-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7498a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7498a-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7498a-111">Files.ReadWrite</span></span>     |
+|<span data-ttu-id="7498a-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7498a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7498a-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7498a-113">Not supported.</span></span>    |
+|<span data-ttu-id="7498a-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7498a-114">Application</span></span> | <span data-ttu-id="7498a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7498a-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f62e5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f62e5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7498a-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7498a-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/application
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f62e5-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f62e5-117">Optional query parameters</span></span>
-<span data-ttu-id="f62e5-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f62e5-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7498a-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7498a-117">Optional query parameters</span></span>
+<span data-ttu-id="7498a-118">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7498a-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f62e5-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f62e5-119">Request headers</span></span>
-| <span data-ttu-id="f62e5-120">Nome</span><span class="sxs-lookup"><span data-stu-id="f62e5-120">Name</span></span>      |<span data-ttu-id="f62e5-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="f62e5-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7498a-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7498a-119">Request headers</span></span>
+| <span data-ttu-id="7498a-120">Nome</span><span class="sxs-lookup"><span data-stu-id="7498a-120">Name</span></span>      |<span data-ttu-id="7498a-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="7498a-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f62e5-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="f62e5-122">Authorization</span></span>  | <span data-ttu-id="f62e5-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f62e5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7498a-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="7498a-122">Authorization</span></span>  | <span data-ttu-id="7498a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7498a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f62e5-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f62e5-125">Request body</span></span>
-<span data-ttu-id="f62e5-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f62e5-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7498a-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7498a-125">Request body</span></span>
+<span data-ttu-id="7498a-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7498a-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f62e5-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="f62e5-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7498a-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="7498a-127">Response</span></span>
 
-<span data-ttu-id="f62e5-128">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookApplication](../resources/workbookapplication.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f62e5-128">If successful, this method returns a `200 OK` response code and [workbookApplication](../resources/workbookapplication.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f62e5-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f62e5-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f62e5-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f62e5-130">Request</span></span>
-<span data-ttu-id="f62e5-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f62e5-131">Here is an example of the request.</span></span>
+<span data-ttu-id="7498a-128">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [workbookApplication](../resources/workbookapplication.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7498a-128">If successful, this method returns a `200 OK` response code and a [workbookApplication](../resources/workbookapplication.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7498a-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7498a-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="7498a-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7498a-130">Request</span></span>
+<span data-ttu-id="7498a-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7498a-131">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f62e5-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="f62e5-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="7498a-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="7498a-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_workbookApplication"
@@ -57,22 +57,24 @@ GET /workbook/application
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f62e5-133">C#</span><span class="sxs-lookup"><span data-stu-id="f62e5-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="7498a-133">C#</span><span class="sxs-lookup"><span data-stu-id="7498a-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f62e5-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f62e5-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7498a-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7498a-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-workbookapplication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f62e5-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="f62e5-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7498a-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7498a-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookapplication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f62e5-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="f62e5-136">Response</span></span>
-<span data-ttu-id="f62e5-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f62e5-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7498a-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="7498a-136">Response</span></span>
+<span data-ttu-id="7498a-137">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7498a-137">Here is an example of the response.</span></span> 
+
+><span data-ttu-id="7498a-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7498a-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
