@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d4fb0aa58e899ff9e60d7ddd9f3ec705c1ca0a1
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 60dfd10426016465e215a757f34d8ad2da92be16
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534159"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38084549"
 ---
-# <a name="create-deviceconfigurationassignment"></a><span data-ttu-id="32e59-103">Criar deviceConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="32e59-103">Create deviceConfigurationAssignment</span></span>
+# <a name="create-deviceconfigurationassignment"></a><span data-ttu-id="6edb1-103">Criar deviceConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="6edb1-103">Create deviceConfigurationAssignment</span></span>
 
-> <span data-ttu-id="32e59-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="32e59-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6edb1-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6edb1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="32e59-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="32e59-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6edb1-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6edb1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="32e59-106">Criar um novo objeto [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="32e59-106">Create a new [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object.</span></span>
+<span data-ttu-id="6edb1-106">Criar um novo objeto [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="6edb1-106">Create a new [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="32e59-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="32e59-107">Prerequisites</span></span>
-<span data-ttu-id="32e59-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32e59-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6edb1-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6edb1-107">Prerequisites</span></span>
+<span data-ttu-id="6edb1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6edb1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="32e59-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="32e59-110">Permission type</span></span>|<span data-ttu-id="32e59-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="32e59-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6edb1-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6edb1-110">Permission type</span></span>|<span data-ttu-id="6edb1-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6edb1-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="32e59-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="32e59-112">Delegated (work or school account)</span></span>|<span data-ttu-id="32e59-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32e59-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="32e59-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="32e59-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="32e59-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="32e59-115">Not supported.</span></span>|
-|<span data-ttu-id="32e59-116">Application</span><span class="sxs-lookup"><span data-stu-id="32e59-116">Application</span></span>|<span data-ttu-id="32e59-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32e59-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="6edb1-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6edb1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="6edb1-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6edb1-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="6edb1-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6edb1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6edb1-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6edb1-115">Not supported.</span></span>|
+|<span data-ttu-id="6edb1-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6edb1-116">Application</span></span>|<span data-ttu-id="6edb1-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6edb1-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="32e59-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="32e59-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6edb1-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6edb1-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,37 +41,39 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCert
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate/assignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/assignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/assignments
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/rootCertificateForServerValidation/assignments
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/assignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/assignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="32e59-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="32e59-119">Request headers</span></span>
-|<span data-ttu-id="32e59-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="32e59-120">Header</span></span>|<span data-ttu-id="32e59-121">Valor</span><span class="sxs-lookup"><span data-stu-id="32e59-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6edb1-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6edb1-119">Request headers</span></span>
+|<span data-ttu-id="6edb1-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6edb1-120">Header</span></span>|<span data-ttu-id="6edb1-121">Valor</span><span class="sxs-lookup"><span data-stu-id="6edb1-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="32e59-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="32e59-122">Authorization</span></span>|<span data-ttu-id="32e59-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="32e59-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="32e59-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="32e59-124">Accept</span></span>|<span data-ttu-id="32e59-125">application/json</span><span class="sxs-lookup"><span data-stu-id="32e59-125">application/json</span></span>|
+|<span data-ttu-id="6edb1-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="6edb1-122">Authorization</span></span>|<span data-ttu-id="6edb1-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6edb1-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6edb1-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6edb1-124">Accept</span></span>|<span data-ttu-id="6edb1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="6edb1-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="32e59-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="32e59-126">Request body</span></span>
-<span data-ttu-id="32e59-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="32e59-127">In the request body, supply a JSON representation for the deviceConfigurationAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6edb1-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6edb1-126">Request body</span></span>
+<span data-ttu-id="6edb1-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="6edb1-127">In the request body, supply a JSON representation for the deviceConfigurationAssignment object.</span></span>
 
-<span data-ttu-id="32e59-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="32e59-128">The following table shows the properties that are required when you create the deviceConfigurationAssignment.</span></span>
+<span data-ttu-id="6edb1-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceConfigurationAssignment.</span><span class="sxs-lookup"><span data-stu-id="6edb1-128">The following table shows the properties that are required when you create the deviceConfigurationAssignment.</span></span>
 
-|<span data-ttu-id="32e59-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="32e59-129">Property</span></span>|<span data-ttu-id="32e59-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="32e59-130">Type</span></span>|<span data-ttu-id="32e59-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="32e59-131">Description</span></span>|
+|<span data-ttu-id="6edb1-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6edb1-129">Property</span></span>|<span data-ttu-id="6edb1-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="6edb1-130">Type</span></span>|<span data-ttu-id="6edb1-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="6edb1-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="32e59-132">id</span><span class="sxs-lookup"><span data-stu-id="32e59-132">id</span></span>|<span data-ttu-id="32e59-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="32e59-133">String</span></span>|<span data-ttu-id="32e59-134">A chave da atribuição.</span><span class="sxs-lookup"><span data-stu-id="32e59-134">The key of the assignment.</span></span>|
-|<span data-ttu-id="32e59-135">destino</span><span class="sxs-lookup"><span data-stu-id="32e59-135">target</span></span>|[<span data-ttu-id="32e59-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="32e59-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="32e59-137">O destino da atribuição da configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="32e59-137">The assignment target for the device configuration.</span></span>|
-|<span data-ttu-id="32e59-138">source</span><span class="sxs-lookup"><span data-stu-id="32e59-138">source</span></span>|[<span data-ttu-id="32e59-139">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="32e59-139">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="32e59-140">A origem da atribuição para a configuração do dispositivo, direta ou de remessa/política.</span><span class="sxs-lookup"><span data-stu-id="32e59-140">The assignment source for the device configuration, direct or parcel/policySet.</span></span> <span data-ttu-id="32e59-141">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="32e59-141">This property is read-only.</span></span> <span data-ttu-id="32e59-142">Os valores possíveis são: `direct` e `policySets`.</span><span class="sxs-lookup"><span data-stu-id="32e59-142">Possible values are: `direct`, `policySets`.</span></span>|
-|<span data-ttu-id="32e59-143">sourceId</span><span class="sxs-lookup"><span data-stu-id="32e59-143">sourceId</span></span>|<span data-ttu-id="32e59-144">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="32e59-144">String</span></span>|<span data-ttu-id="32e59-145">O identificador da origem da atribuição.</span><span class="sxs-lookup"><span data-stu-id="32e59-145">The identifier of the source of the assignment.</span></span> <span data-ttu-id="32e59-146">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="32e59-146">This property is read-only.</span></span>|
+|<span data-ttu-id="6edb1-132">id</span><span class="sxs-lookup"><span data-stu-id="6edb1-132">id</span></span>|<span data-ttu-id="6edb1-133">String</span><span class="sxs-lookup"><span data-stu-id="6edb1-133">String</span></span>|<span data-ttu-id="6edb1-134">A chave da atribuição.</span><span class="sxs-lookup"><span data-stu-id="6edb1-134">The key of the assignment.</span></span>|
+|<span data-ttu-id="6edb1-135">destino</span><span class="sxs-lookup"><span data-stu-id="6edb1-135">target</span></span>|[<span data-ttu-id="6edb1-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="6edb1-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="6edb1-137">O destino da atribuição da configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="6edb1-137">The assignment target for the device configuration.</span></span>|
+|<span data-ttu-id="6edb1-138">source</span><span class="sxs-lookup"><span data-stu-id="6edb1-138">source</span></span>|[<span data-ttu-id="6edb1-139">deviceAndAppManagementAssignmentSource</span><span class="sxs-lookup"><span data-stu-id="6edb1-139">deviceAndAppManagementAssignmentSource</span></span>](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|<span data-ttu-id="6edb1-140">A origem da atribuição para a configuração do dispositivo, direta ou de remessa/política.</span><span class="sxs-lookup"><span data-stu-id="6edb1-140">The assignment source for the device configuration, direct or parcel/policySet.</span></span> <span data-ttu-id="6edb1-141">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6edb1-141">This property is read-only.</span></span> <span data-ttu-id="6edb1-142">Os valores possíveis são: `direct` e `policySets`.</span><span class="sxs-lookup"><span data-stu-id="6edb1-142">Possible values are: `direct`, `policySets`.</span></span>|
+|<span data-ttu-id="6edb1-143">sourceId</span><span class="sxs-lookup"><span data-stu-id="6edb1-143">sourceId</span></span>|<span data-ttu-id="6edb1-144">String</span><span class="sxs-lookup"><span data-stu-id="6edb1-144">String</span></span>|<span data-ttu-id="6edb1-145">O identificador da origem da atribuição.</span><span class="sxs-lookup"><span data-stu-id="6edb1-145">The identifier of the source of the assignment.</span></span> <span data-ttu-id="6edb1-146">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6edb1-146">This property is read-only.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="32e59-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="32e59-147">Response</span></span>
-<span data-ttu-id="32e59-148">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="32e59-148">If successful, this method returns a `201 Created` response code and a [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6edb1-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="6edb1-147">Response</span></span>
+<span data-ttu-id="6edb1-148">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6edb1-148">If successful, this method returns a `201 Created` response code and a [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="32e59-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="32e59-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6edb1-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6edb1-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="32e59-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="32e59-150">Request</span></span>
-<span data-ttu-id="32e59-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="32e59-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6edb1-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6edb1-150">Request</span></span>
+<span data-ttu-id="6edb1-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6edb1-151">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 Content-type: application/json
@@ -87,8 +89,8 @@ Content-length: 230
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="32e59-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="32e59-152">Response</span></span>
-<span data-ttu-id="32e59-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="32e59-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6edb1-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="6edb1-152">Response</span></span>
+<span data-ttu-id="6edb1-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6edb1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
