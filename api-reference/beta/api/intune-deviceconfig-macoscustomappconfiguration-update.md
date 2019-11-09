@@ -1,24 +1,24 @@
 ---
-title: Criar androidForWorkImportedPFXCertificateProfile
-description: Criar um novo objeto androidForWorkImportedPFXCertificateProfile.
+title: Atualizar macOSCustomAppConfiguration
+description: Atualiza as propriedades de um objeto macOSCustomAppConfiguration.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 72f401142482f17bbb05a3a26ab532b50f93b326
+ms.openlocfilehash: 97f42012f093c0dfa33fc67cb12bea8e2dabba18
 ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084871"
+ms.locfileid: "38084276"
 ---
-# <a name="create-androidforworkimportedpfxcertificateprofile"></a>Criar androidForWorkImportedPFXCertificateProfile
+# <a name="update-macoscustomappconfiguration"></a>Atualizar macOSCustomAppConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Criar um novo objeto [androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md) .
+Atualiza as propriedades de um objeto [macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,8 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/deviceConfigurations
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,9 +47,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto androidForWorkImportedPFXCertificateProfile.
+No corpo da solicitação, forneça uma representação JSON do objeto [macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar androidForWorkImportedPFXCertificateProfile.
+A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -63,30 +64,26 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidF
 |descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificado. Valores válidos de 1 a 99 herdados de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato do nome de entidade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md). Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo da entidade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md). Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
-|extendedKeyUsages|coleção [extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Configurações de EKU (uso estendido de chave). Esta coleção pode conter um máximo de 500 elementos. Herdado de [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|Da intendedpurpose|[Da intendedpurpose](../resources/intune-deviceconfig-intendedpurpose.md)|Finalidade do perfil do certificado, que pode ser não atribuído, SmimeEncryption, SmimeSigning, etc. Os valores possíveis são `unassigned`: `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`,.|
+|bundleId|Cadeia de caracteres|ID do pacote para direcionamento.|
+|fileName|String|Nome do arquivo de configuração (*. plist | *.xml).|
+|configurationXml|Binária|XML de configuração. (Matriz de bytes codificados em UTF8)|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1499
+Content-length: 1149
 
 {
-  "@odata.type": "#microsoft.graph.androidForWorkImportedPFXCertificateProfile",
+  "@odata.type": "#microsoft.graph.macOSCustomAppConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -115,32 +112,22 @@ Content-length: 1499
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 10,
-  "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
-  "certificateValidityPeriodValue": 14,
-  "certificateValidityPeriodScale": "months",
-  "extendedKeyUsages": [
-    {
-      "@odata.type": "microsoft.graph.extendedKeyUsage",
-      "name": "Name value",
-      "objectIdentifier": "Object Identifier value"
-    }
-  ],
-  "intendedPurpose": "smimeEncryption"
+  "bundleId": "Bundle Id value",
+  "fileName": "File Name value",
+  "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1671
+Content-Length: 1321
 
 {
-  "@odata.type": "#microsoft.graph.androidForWorkImportedPFXCertificateProfile",
-  "id": "a0bfd7bc-d7bc-a0bf-bcd7-bfa0bcd7bfa0",
+  "@odata.type": "#microsoft.graph.macOSCustomAppConfiguration",
+  "id": "1b8a4e02-4e02-1b8a-024e-8a1b024e8a1b",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -171,19 +158,9 @@ Content-Length: 1671
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 10,
-  "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
-  "certificateValidityPeriodValue": 14,
-  "certificateValidityPeriodScale": "months",
-  "extendedKeyUsages": [
-    {
-      "@odata.type": "microsoft.graph.extendedKeyUsage",
-      "name": "Name value",
-      "objectIdentifier": "Object Identifier value"
-    }
-  ],
-  "intendedPurpose": "smimeEncryption"
+  "bundleId": "Bundle Id value",
+  "fileName": "File Name value",
+  "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
 

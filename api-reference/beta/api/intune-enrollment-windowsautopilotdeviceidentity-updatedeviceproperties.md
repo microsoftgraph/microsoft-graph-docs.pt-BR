@@ -1,37 +1,33 @@
 ---
-title: atribuir ação
-description: Ainda não documentado
+title: ação updateDeviceProperties
+description: Atualiza as propriedades nos dispositivos do AutoPilot.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1575dbd9812073cee2e4ca88c17569074c11d83
+ms.openlocfilehash: 409ddaf1deba1e867f60724902913115f8f4c94d
 ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085497"
+ms.locfileid: "38087198"
 ---
-# <a name="assign-action"></a>atribuir ação
+# <a name="updatedeviceproperties-action"></a>ação updateDeviceProperties
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Atualiza as propriedades nos dispositivos do AutoPilot.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
-| &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -39,9 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/windowsAutopilotDeploymentProfiles/{windowsAutopilotDeploymentProfileId}/assign
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assign
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/intendedDeploymentProfile/assign
+POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
+POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,7 +52,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceIds|String collection|Ainda não documentado|
+|userPrincipalName|String|Ainda não documentado|
+|addressableUserName|String|Ainda não documentado|
+|groupTag|String|Ainda não documentado|
+|displayName|Cadeia de caracteres|Ainda não documentado|
 
 
 
@@ -69,15 +67,16 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles/{windowsAutopilotDeploymentProfileId}/assign
+POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/updateDeviceProperties
 
 Content-type: application/json
-Content-length: 51
+Content-length: 187
 
 {
-  "deviceIds": [
-    "Device Ids value"
-  ]
+  "userPrincipalName": "User Principal Name value",
+  "addressableUserName": "Addressable User Name value",
+  "groupTag": "Group Tag value",
+  "displayName": "Display Name value"
 }
 ```
 
@@ -86,9 +85,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 

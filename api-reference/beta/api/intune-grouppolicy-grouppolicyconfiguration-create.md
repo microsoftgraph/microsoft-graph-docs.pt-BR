@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d839673b15652b446926a3b7651349a7148c7727
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 01310fd9a04b96c0aef8a117bb314c4b1aaca7f9
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184231"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087100"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Criar groupPolicyConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .
 
@@ -52,9 +52,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|displayName|String|Nome fornecido pelo usuário para o objeto Resource.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto Resource.|
 |descrição|String|Descrição fornecida pelo usuário para o objeto Resource.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|roleScopeTagIds|Coleção String|A lista de marcas de escopo para a configuração.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
@@ -69,12 +70,15 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations
 Content-type: application/json
-Content-length: 145
+Content-length: 207
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -83,17 +87,22 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 379
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "displayName": "Display Name value",
   "description": "Description value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 
