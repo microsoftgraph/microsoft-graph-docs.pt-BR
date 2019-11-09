@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18ba331637a151531e6a4dcec9e794a01c927aef
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d009095914c931c6b4b2409b53d82f7e68a2495f
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538270"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086029"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
@@ -34,7 +34,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
@@ -50,13 +50,13 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
-| Application ||
+| Aplicativo ||
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
@@ -96,7 +96,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do dispositivo.|
+|id|String|Identificador exclusivo do dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|GUID|ID da conta do Intune para determinado locatário|
 |legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
@@ -189,6 +189,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

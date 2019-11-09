@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fdb804dc293214fbcd7d937adb9ebdf959ea5fa
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: c2aba128e4c781dab30f226e25f5240e1f95db17
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538515"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078333"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe que contém as propriedades para Ator de auditoria.
 
@@ -25,13 +25,13 @@ Uma classe que contém as propriedades para Ator de auditoria.
 |:---|:---|:---|
 |type|String|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
-|ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
-|applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
+|ApplicationId|String|ID do aplicativo AAD.|
+|applicationDisplayName|String|Nome do aplicativo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
-|servicePrincipalName|Cadeia de caracteres|Nome da entidade de serviço (SPN).|
-|ipAddress|Cadeia de caracteres|IPAddress.|
+|servicePrincipalName|String|Nome da entidade de serviço (SPN).|
+|ipAddress|String|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|
-|scopeTags|coleção [scopeTagInfo](../resources/intune-auditing-scopetaginfo.md)|Lista de marcas de escopo de usuário quando a auditoria foi realizada.|
+|userRoleScopeTags|coleção [roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Lista de marcas de escopo de usuário quando a auditoria foi realizada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -56,11 +56,11 @@ Veja a seguir uma representação JSON do recurso.
   "servicePrincipalName": "String",
   "ipAddress": "String",
   "userId": "String",
-  "scopeTags": [
+  "userRoleScopeTags": [
     {
-      "@odata.type": "microsoft.graph.scopeTagInfo",
-      "scopeTagName": "String",
-      "scopeTagId": "String"
+      "@odata.type": "microsoft.graph.roleScopeTagInfo",
+      "displayName": "String",
+      "roleScopeTagId": "String"
     }
   ]
 }

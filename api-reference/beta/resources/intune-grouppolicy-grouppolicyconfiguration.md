@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43f0f9970a3d94285d1abe06c86eff83f2bed818
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c9ee783ffa3e037243a78cd49187511797e221de
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331529"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088067"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>tipo de recurso groupPolicyConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de configuração de política de grupo contém os valores configurados para uma ou mais definições de política de grupo.
 
@@ -29,14 +29,16 @@ A entidade de configuração de política de grupo contém os valores configurad
 |[Excluir groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|Nenhum|Exclui [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md).|
 |[Atualizar groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Atualiza as propriedades de um objeto [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .|
 |[atribuir ação](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|coleção [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Ainda não documentado|
+|[ação updateDefinitionValues](../api/intune-grouppolicy-grouppolicyconfiguration-updatedefinitionvalues.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|displayName|String|Nome fornecido pelo usuário para o objeto Resource.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto Resource.|
 |descrição|String|Descrição fornecida pelo usuário para o objeto Resource.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|roleScopeTagIds|Coleção String|A lista de marcas de escopo para a configuração.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações
@@ -59,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "description": "String",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }

@@ -4,18 +4,18 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 1420f751866224905f1636205de173e3bd117451
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 007b118334c57397c2ec5b66e9d7acfc9cb42775
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539166"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088270"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Esses pontos de extremidade são usados em vários fluxos de trabalho do Microsoft Graph API para o Intune.  A intenção, finalidade e permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações têm suporte apenas para fluxos de trabalho específicos.
 
@@ -25,6 +25,8 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
 - [Destino de atribuição de todos os usuários licenciados](intune-shared-alllicensedusersassignmenttarget.md)
 - [Proteção de aplicativo gerenciado Android](intune-shared-androidmanagedappprotection.md)
+- [Ação do portal da empresa](intune-shared-companyportalaction.md)
+- [Ação bloqueada do portal da empresa](intune-shared-companyportalblockedaction.md)
 - [Status de conformidade](intune-shared-compliancestatus.md)
 - [Origem da atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Destino de atribuição de gerenciamento de aplicativo e dispositivo](intune-shared-deviceandappmanagementassignmenttarget.md)
@@ -64,6 +66,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Configurações de atribuição de aplicativo móvel](intune-shared-mobileappassignmentsettings.md)
 - [Configurações de tempo de instalação do aplicativo móvel](intune-shared-mobileappinstalltimesettings.md)
 - [Evento de solução de problemas de aplicativo móvel](intune-shared-mobileapptroubleshootingevent.md)
+- [Tipo de proprietário](intune-shared-ownertype.md)
 - [Tipo de plataforma da política](intune-shared-policyplatformtype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)

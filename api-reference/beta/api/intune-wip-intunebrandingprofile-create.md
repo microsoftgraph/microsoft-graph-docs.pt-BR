@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7cff26042555067056683dac65ad98d2e9d51df
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b94ac2c27b48c867380cd402002e217aad430a68
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195311"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087962"
 ---
 # <a name="create-intunebrandingprofile"></a>Criar intuneBrandingProfile
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
 
@@ -57,23 +57,26 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar intuneBr
 |isDefaultProfile|Booliano|Booliano que indica se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que a BrandingProfile foi modificada pela última vez|
-|displayName|String|Nome da empresa/organização que é exibido para os usuários finais|
-|contactITName|String|Nome da pessoa/organização responsável pelo suporte de ti|
-|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de ti|
-|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de ti|
-|contactITNotes|String|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
-|privacyUrl|String|URL para a política de privacidade da empresa/organização|
-|onlineSupportSiteUrl|String|URL para o site de assistência técnica de ti da empresa/organização|
-|onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
+|displayName|Cadeia de caracteres|Nome da empresa/organização que é exibido para os usuários finais|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor do tema principal usada nos aplicativos do portal da empresa e no portal da Web|
 |showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será mostrado ao lado da imagem de logotipo ou não|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo de cor de tema atrás do logotipo|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo claro atrás do logotipo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
+|contactITName|String|Nome da pessoa/organização responsável pelo suporte de ti|
+|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de ti|
+|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de ti|
+|contactITNotes|String|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
+|onlineSupportSiteUrl|String|URL para o site de assistência técnica de ti da empresa/organização|
+|onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
+|privacyUrl|String|URL para a política de privacidade da empresa/organização|
 |customPrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
 |isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
 |isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
+|companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
+|showAzureADEnterpriseApps|Booliano|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
+|showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
 
 
 
@@ -87,7 +90,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1334
+Content-length: 1620
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -95,13 +98,6 @@ Content-length: 1334
   "profileDescription": "Profile Description value",
   "isDefaultProfile": true,
   "displayName": "Display Name value",
-  "contactITName": "Contact ITName value",
-  "contactITPhoneNumber": "Contact ITPhone Number value",
-  "contactITEmailAddress": "Contact ITEmail Address value",
-  "contactITNotes": "Contact ITNotes value",
-  "privacyUrl": "https://example.com/privacyUrl/",
-  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-  "onlineSupportSiteName": "Online Support Site Name value",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1,
@@ -125,9 +121,26 @@ Content-length: 1334
     "type": "Type value",
     "value": "dmFsdWU="
   },
+  "contactITName": "Contact ITName value",
+  "contactITPhoneNumber": "Contact ITPhone Number value",
+  "contactITEmailAddress": "Contact ITEmail Address value",
+  "contactITNotes": "Contact ITNotes value",
+  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+  "onlineSupportSiteName": "Online Support Site Name value",
+  "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "androidForWork",
+      "ownerType": "company",
+      "action": "remove"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
 
@@ -136,7 +149,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1506
+Content-Length: 1792
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -147,13 +160,6 @@ Content-Length: 1506
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
-  "contactITName": "Contact ITName value",
-  "contactITPhoneNumber": "Contact ITPhone Number value",
-  "contactITEmailAddress": "Contact ITEmail Address value",
-  "contactITNotes": "Contact ITNotes value",
-  "privacyUrl": "https://example.com/privacyUrl/",
-  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-  "onlineSupportSiteName": "Online Support Site Name value",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1,
@@ -177,11 +183,30 @@ Content-Length: 1506
     "type": "Type value",
     "value": "dmFsdWU="
   },
+  "contactITName": "Contact ITName value",
+  "contactITPhoneNumber": "Contact ITPhone Number value",
+  "contactITEmailAddress": "Contact ITEmail Address value",
+  "contactITNotes": "Contact ITNotes value",
+  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+  "onlineSupportSiteName": "Online Support Site Name value",
+  "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "androidForWork",
+      "ownerType": "company",
+      "action": "remove"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
+
+
 
 
 

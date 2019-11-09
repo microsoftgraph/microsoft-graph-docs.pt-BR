@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6063b07ed9361b00315a7c8a2b170cea72f7dff3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fa9b0afc1ccb014cc56945e8e3ab450765f5dc63
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371905"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088025"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Esta entidade contém dados que são usados na personalização da aparência do nível do locatário dos aplicativos do portal da empresa, bem como do portal da Web do usuário final.
 
@@ -39,23 +39,26 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |isDefaultProfile|Booliano|Booliano que indica se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que a BrandingProfile foi modificada pela última vez|
-|displayName|String|Nome da empresa/organização que é exibido para os usuários finais|
-|contactITName|String|Nome da pessoa/organização responsável pelo suporte de ti|
-|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de ti|
-|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de ti|
-|contactITNotes|String|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
-|privacyUrl|String|URL para a política de privacidade da empresa/organização|
-|onlineSupportSiteUrl|String|URL para o site de assistência técnica de ti da empresa/organização|
-|onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
+|displayName|Cadeia de caracteres|Nome da empresa/organização que é exibido para os usuários finais|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor do tema principal usada nos aplicativos do portal da empresa e no portal da Web|
 |showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será mostrado ao lado da imagem de logotipo ou não|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo de cor de tema atrás do logotipo|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo claro atrás do logotipo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
+|contactITName|String|Nome da pessoa/organização responsável pelo suporte de ti|
+|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de ti|
+|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de ti|
+|contactITNotes|String|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
+|onlineSupportSiteUrl|String|URL para o site de assistência técnica de ti da empresa/organização|
+|onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
+|privacyUrl|String|URL para a política de privacidade da empresa/organização|
 |customPrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
 |isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
 |isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
+|companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
+|showAzureADEnterpriseApps|Booliano|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
+|showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -80,13 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
-  "contactITName": "String",
-  "contactITPhoneNumber": "String",
-  "contactITEmailAddress": "String",
-  "contactITNotes": "String",
-  "privacyUrl": "String",
-  "onlineSupportSiteUrl": "String",
-  "onlineSupportSiteName": "String",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1024,
@@ -110,9 +106,26 @@ Veja a seguir uma representação JSON do recurso.
     "type": "String",
     "value": "binary"
   },
+  "contactITName": "String",
+  "contactITPhoneNumber": "String",
+  "contactITEmailAddress": "String",
+  "contactITNotes": "String",
+  "onlineSupportSiteUrl": "String",
+  "onlineSupportSiteName": "String",
+  "privacyUrl": "String",
   "customPrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "String",
+      "ownerType": "String",
+      "action": "String"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
 

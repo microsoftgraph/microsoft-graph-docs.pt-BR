@@ -5,33 +5,37 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a37d36fd5b36384d62ef656b9d36a7ed870e3586
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3d6704afe5e105491e2be35bda1e68dd446f3c88
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539089"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088298"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>tipo de recurso deviceHealthScriptAssignment
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades usadas para atribuir um script de gerenciamento de dispositivo a um grupo.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-Nenhum
+|[Listar deviceHealthScriptAssignments](../api/intune-devices-devicehealthscriptassignment-list.md)|coleção [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|Listar Propriedades e relações dos objetos [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) .|
+|[Obter deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-get.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|Leia as propriedades e as relações do objeto [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) .|
+|[Criar deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-create.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|Criar um novo objeto [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) .|
+|[Excluir deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-delete.md)|Nenhum|Exclui [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md).|
+|[Atualizar deviceHealthScriptAssignment](../api/intune-devices-devicehealthscriptassignment-update.md)|[deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|Atualiza as propriedades de um objeto [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de atribuição de script de integridade do dispositivo|
+|id|String|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory que estamos direcionando o script para|
 |runRemediationScript|Booliano|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O grupo do Azure Active Directory que estamos direcionando o script para|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Agendamento de execução de script para o grupo de destino|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   },
   "runRemediationScript": true,
   "runSchedule": {
-      "@odata.type": "microsoft.graph.runSchedule"
+    "@odata.type": "microsoft.graph.runSchedule"
   }
 }
 ```

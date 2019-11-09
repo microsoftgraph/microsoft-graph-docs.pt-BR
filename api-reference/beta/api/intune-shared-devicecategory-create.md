@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abcf67a8094033ce2a77ca6dae301c1b11a1297d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 0b41a7a98bb5a9f7f42215fd127914246c132784
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537103"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086239"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Cria um novo objeto [deviceCategory](../resources/intune-shared-devicecategory.md).
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Obboarding**|
-|description|String|Descrição opcional da categoria do dispositivo.|
+|descrição|String|Descrição opcional da categoria do dispositivo.|
 |displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
 
 ## <a name="response"></a>Resposta
@@ -99,6 +99,9 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff8b56e0edb2e9f222e2259ebb3cb7984bb63ae9
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 8db5d89099e690f6597a90bf55008fcf79c2ab26
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087219"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>Obter windowsAutopilotDeviceIdentity
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Leia as propriedades e as relações do objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
@@ -40,7 +40,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1145
+Content-Length: 1187
 
 {
   "value": {
@@ -91,10 +91,13 @@ Content-Length: 1145
     "skuNumber": "Sku Number value",
     "systemFamily": "System Family value",
     "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-    "managedDeviceId": "Managed Device Id value"
+    "managedDeviceId": "Managed Device Id value",
+    "displayName": "Display Name value"
   }
 }
 ```
+
+
 
 
 

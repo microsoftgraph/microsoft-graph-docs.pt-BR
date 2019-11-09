@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 90b1e99d84491a70be66a3ad302af16b4a55ba7a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 79ee42b2eacbf2a7d6c6925f365fac572d7641ed
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37174519"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38084381"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Obter iosEasEmailProfileConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Leia as propriedades e as relações do objeto [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) .
 
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2360
+Content-Length: 2438
 
 {
   "value": {
@@ -115,6 +115,8 @@ Content-Length: 2360
     "blockSyncingRecentlyUsedEmailAddresses": true,
     "durationOfEmailToSync": "oneDay",
     "emailAddressSource": "primarySmtpAddress",
+    "easServices": "calendars",
+    "easServicesUserOverrideEnabled": true,
     "hostName": "Host Name value",
     "requireSmime": true,
     "smimeEnablePerMessageSwitch": true,
@@ -131,6 +133,8 @@ Content-Length: 2360
   }
 }
 ```
+
+
 
 
 

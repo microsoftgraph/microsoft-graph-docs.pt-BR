@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ed7d3adf5386e4e56782b1aafd71f3bd08a6b92
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 83d3f8e084b824baa40c41ace5045fd814e38592
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538473"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088102"
 ---
 # <a name="devicehealthscript-resource-type"></a>tipo de recurso deviceHealthScript
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O Intune fornecerá ao cliente a capacidade de executar os scripts de integridade do PowerShell (remediation + detecção) nos dispositivos do Windows 10 Azure Active Directory associados registrados.
 
@@ -33,11 +33,11 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do script de integridade do dispositivo|
-|publicador|Cadeia de caracteres|Nome do editor de script de integridade do dispositivo|
+|id|String|Identificador exclusivo do script de integridade do dispositivo|
+|publicador|String|Nome do editor de script de integridade do dispositivo|
 |versão|String|Versão do script de integridade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
-|description|String|Descrição do script de integridade do dispositivo|
+|descrição|String|Descrição do script de integridade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
 |remediationScriptContent|Binária|Todo o conteúdo do script do PowerShell de correção|
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi criado. Essa propriedade é somente leitura.|
@@ -45,12 +45,12 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
 |runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|String collection|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|roleScopeTagIds|Coleção String|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|coleção [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)|A lista de atribuições de grupo para o script de integridade do dispositivo|
+|assignments|coleção [deviceHealthScriptAssignment](../resources/intune-devices-devicehealthscriptassignment.md)|A lista de atribuições de grupo para o script de integridade do dispositivo|
 |runSummary|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|Resumo de execução de alto nível para o script de integridade do dispositivo.|
 |deviceRunStates|coleção [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Lista de Estados de execução para o script de integridade do dispositivo em todos os dispositivos|
 

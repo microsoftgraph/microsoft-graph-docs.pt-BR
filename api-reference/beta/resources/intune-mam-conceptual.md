@@ -4,18 +4,18 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: edef17e5b77ac407b97bb51e2988d0993840f11e
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7fff482595831282abca3f88a0d9c72fff258c07
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539005"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088235"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 As políticas de proteção de aplicativos do Microsoft Intune ajudam a proteger os dados da empresa e evitar a perda de dados.
 
@@ -54,6 +54,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Ação de reparo do aplicativo gerenciado](intune-mam-managedappremediationaction.md)
 - [Status de aplicativo gerenciado](intune-mam-managedappstatus.md)
 - [Status bruto de aplicativo gerenciado](intune-mam-managedappstatusraw.md)
+- [Tipo de navegador gerenciado](intune-mam-managedbrowsertype.md)
 - [Aplicativo móvel gerenciado](intune-mam-managedmobileapp.md)
 - [Identificador de aplicativo móvel](intune-mam-mobileappidentifier.md)
 - [Atribuição de política de proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedapppolicyassignment.md)

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4b5185c6f8cd13dab1b9e0fe591753200c8d4a5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 87e6eb62626c6d550692428c98c9bcfe7869461d
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184217"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087093"
 ---
 # <a name="get-grouppolicyconfiguration"></a>Obter groupPolicyConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Leia as propriedades e as relações do objeto [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .
 
@@ -39,7 +39,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 416
 
 {
   "value": {
@@ -74,11 +74,16 @@ Content-Length: 348
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "displayName": "Display Name value",
     "description": "Description value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
     "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```
+
+
 
 
 

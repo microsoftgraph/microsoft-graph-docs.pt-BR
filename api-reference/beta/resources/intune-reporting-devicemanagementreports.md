@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8fa5979339f471fbe6d0fc5aa046ee8cdd00c19b
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 0869a8e6608361f7ff4d45510ef9e48b34aab7d7
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539208"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088193"
 ---
 # <a name="devicemanagementreports-resource-type"></a>tipo de recurso deviceManagementReports
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade singleton que atua como um contêiner para todas as funcionalidades de relatórios.
 
@@ -25,17 +25,16 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |:---|:---|:---|
 |[Obter deviceManagementReports](../api/intune-reporting-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Leia as propriedades e as relações do objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .|
 |[Atualizar deviceManagementReports](../api/intune-reporting-devicemanagementreports-update.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Atualiza as propriedades de um objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .|
-|[ação getDeviceNoncomplianceReports](../api/intune-reporting-devicemanagementreports-getdevicenoncompliancereports.md)|Fluxo|Ainda não documentado|
-|[ação getPolicyNoncomplianceReports](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancereports.md)|Fluxo|Ainda não documentado|
 |[ação getDeviceNonComplianceReport](../api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md)|Fluxo|Ainda não documentado|
 |[ação getPolicyNonComplianceReport](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md)|Fluxo|Ainda não documentado|
+|[ação getPolicyNonComplianceMetadata](../api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md)|Fluxo|Ainda não documentado|
 |[ação getHistoricalReport](../api/intune-reporting-devicemanagementreports-gethistoricalreport.md)|Fluxo|Ainda não documentado|
 |[ação getCachedReport](../api/intune-reporting-devicemanagementreports-getcachedreport.md)|Fluxo|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para esta entidade|
+|id|String|Identificador exclusivo para esta entidade|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

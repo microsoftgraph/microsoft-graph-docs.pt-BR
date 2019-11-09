@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3baccd69901378ad1161b8798222579ca9745e40
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 1dc5508ac19e81017eb46a5e8e812d304802f736
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534929"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085138"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades do objeto [auditEvent](../resources/intune-auditing-auditevent.md).
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome de exibição do evento.|
-|componentName|Cadeia de caracteres|Nome do componente.|
+|componentName|String|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|Cadeia de caracteres|Nome amigável da atividade.|
+|atividade|String|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
-|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
+|activityType|String|O tipo de atividade que foi executada.|
+|activityOperationType|String|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|Cadeia de caracteres|Categoria de auditoria.|
+|category|String|Categoria de auditoria.|
 
 
 
@@ -76,7 +76,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1585
+Content-length: 1603
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -94,11 +94,11 @@ Content-length: 1585
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },
@@ -133,7 +133,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1634
+Content-Length: 1652
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -152,11 +152,11 @@ Content-Length: 1634
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },

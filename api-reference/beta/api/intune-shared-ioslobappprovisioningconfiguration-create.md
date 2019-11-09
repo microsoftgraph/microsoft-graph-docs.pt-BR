@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 308936a5ee39f8accd3675a2be9b95634643ad59
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 35d2d18ded6a4dc24a31fc59b2ac37a899c329a2
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538123"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085931"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Criar iosLobAppProvisioningConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) .
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
-| &nbsp;&nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
+|Aplicativo||
+| &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,15 +55,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosLobAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data e hora de expiração do perfil opcional.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|descrição|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 
 
@@ -117,6 +117,9 @@ Content-Length: 547
   "version": 7
 }
 ```
+
+
+
 
 
 

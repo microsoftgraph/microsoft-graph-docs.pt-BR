@@ -4,18 +4,18 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: adbd49f77950f06e6e09969bd7cae5841493865f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 78b67a189da837f975f3b1aa8df0cc9527e0e781
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538620"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078354"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Use a carga de trabalho de configuração de dispositivo do Microsoft Intune para gerenciar configurações e recursos em todos os dispositivos que você gerencia.
 
@@ -198,6 +198,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de EAP](intune-deviceconfig-eaptype.md)
 - [Método de autenticação de EAS](intune-deviceconfig-easauthenticationmethod.md)
 - [Base de configuração de perfil de email do EAS](intune-deviceconfig-easemailprofileconfigurationbase.md)
+- [Serviços EAS](intune-deviceconfig-easservices.md)
 - [Política de cookies de borda](intune-deviceconfig-edgecookiepolicy.md)
 - [Configuração do botão de página inicial de borda](intune-deviceconfig-edgehomebuttonconfiguration.md)
 - [Botão oculto de página inicial de borda](intune-deviceconfig-edgehomebuttonhidden.md)
@@ -314,6 +315,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de comportamento de solicitação de elevação de usuário padrão de opções de segurança local](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [Base de perfil de certificado do macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Política de conformidade do macOS](intune-deviceconfig-macoscompliancepolicy.md)
+- [configuração de aplicativo personalizado do macOS](intune-deviceconfig-macoscustomappconfiguration.md)
 - [Configuração personalizada do macOS](intune-deviceconfig-macoscustomconfiguration.md)
 - [Configuração de recursos do dispositivo macOS](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [Configuração de proteção de ponto de extremidade do macOS](intune-deviceconfig-macosendpointprotectionconfiguration.md)
@@ -332,6 +334,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Certificado raiz confiável do macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Configuração de VPN do macOS](intune-deviceconfig-macosvpnconfiguration.md)
 - [Configuração de Wi-Fi do macOS](intune-deviceconfig-macoswificonfiguration.md)
+- [configuração de rede com fio macOS](intune-deviceconfig-macoswirednetworkconfiguration.md)
 - [Estado do certificado de todos os dispositivos gerenciados](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [Estado de certificado do dispositivo gerenciado](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Estado de criptografia de dispositivo gerenciado](intune-deviceconfig-manageddeviceencryptionstate.md)
@@ -533,5 +536,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de conexão de VPN do Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
-
-
+- [Interface de rede com fio](intune-deviceconfig-wirednetworkinterface.md)

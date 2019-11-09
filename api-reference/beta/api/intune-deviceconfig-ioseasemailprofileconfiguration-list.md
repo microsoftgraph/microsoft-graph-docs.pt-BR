@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f22f39e724e7484f16f90003e63cf97cf5863988
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: ca2fa6386c2581efd3693cf77362dc5be98fe026
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37167806"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38083806"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>Listar iosEasEmailProfileConfigurations
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar Propriedades e relações dos objetos [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) .
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2486
+Content-Length: 2568
 
 {
   "value": [
@@ -112,6 +112,8 @@ Content-Length: 2486
       "blockSyncingRecentlyUsedEmailAddresses": true,
       "durationOfEmailToSync": "oneDay",
       "emailAddressSource": "primarySmtpAddress",
+      "easServices": "calendars",
+      "easServicesUserOverrideEnabled": true,
       "hostName": "Host Name value",
       "requireSmime": true,
       "smimeEnablePerMessageSwitch": true,
@@ -129,6 +131,8 @@ Content-Length: 2486
   ]
 }
 ```
+
+
 
 
 

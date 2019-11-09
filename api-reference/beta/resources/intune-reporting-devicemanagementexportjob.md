@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1ee8c07f6083d7e6f5b5b061bd87b3438683912
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: e4bbbbd1e579fe8dc5b262cf5e855941227ed940
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538536"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088284"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>tipo de recurso deviceManagementExportJob
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa um trabalho para exportar um relatório
 
@@ -32,13 +32,12 @@ Entidade que representa um trabalho para exportar um relatório
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para esta entidade|
-|reportName|Cadeia de caracteres|Nome do relatório|
-|filter|Cadeia de caracteres|Filtros aplicados no relatório|
-|select|String collection|Colunas selecionadas do relatório|
-|Classificadoporativado|String collection|Ordenação de colunas no relatório|
+|id|String|Identificador exclusivo para esta entidade|
+|reportName|String|Nome do relatório|
+|filter|String|Filtros aplicados no relatório|
+|select|Coleção String|Colunas selecionadas do relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
-|instantâneoid|Cadeia de caracteres|Um instantâneo é um subconjunto identificável do DataSet representado pelo ReportName. Uma ID de Identificação_da_sessão ou CachedReportConfiguration pode ser usada aqui. Se uma Identificação_da_sessão for especificada, Filter, Select e OrderBy serão aplicadas aos dados representados pela Identificação_da_sessão. Filter, Select e OrderBy não podem ser especificados junto com uma ID CachedReportConfiguration.|
+|instantâneoid|String|Um instantâneo é um subconjunto identificável do DataSet representado pelo ReportName. Uma ID de Identificação_da_sessão ou CachedReportConfiguration pode ser usada aqui. Se uma Identificação_da_sessão for especificada, Filter, Select e OrderBy serão aplicadas aos dados representados pela Identificação_da_sessão. Filter, Select e OrderBy não podem ser especificados junto com uma ID CachedReportConfiguration.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do trabalho de exportação. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|Cadeia de caracteres|Local temporário do relatório exportado|
 |requestDateTime|DateTimeOffset|Hora em que o relatório exportado foi solicitado|
@@ -62,9 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "reportName": "String",
   "filter": "String",
   "select": [
-    "String"
-  ],
-  "orderBy": [
     "String"
   ],
   "format": "String",

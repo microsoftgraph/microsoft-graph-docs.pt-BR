@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b51f58e3d656f5a72238e03a3f2cdc5c3c9a0e55
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1e55ea60aacd7fef448e7fe9e51d50ddebb84af3
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196508"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088291"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>tipo de recurso windowsAutopilotDeviceIdentity
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O recurso windowsAutopilotDeviceIdentity representa um dispositivo do Windows AutoPilot.
 
@@ -30,6 +30,7 @@ O recurso windowsAutopilotDeviceIdentity representa um dispositivo do Windows Au
 |[Atualizar windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Atualiza as propriedades de um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
 |[ação assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Nenhum|Atribui um usuário aos dispositivos do AutoPilot.|
 |[ação unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Nenhum|Retira a atribuição do usuário de um dispositivo piloto automático.|
+|[ação updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Nenhum|Atualiza as propriedades nos dispositivos do AutoPilot.|
 |[Ação assignResourceAccountToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|Nenhum|Atribui a conta de recurso aos dispositivos do AutoPilot.|
 |[Ação unassignResourceAccountFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|Nenhum|Retira a atribuição da conta de recurso de um dispositivo de piloto automático.|
 
@@ -56,6 +57,7 @@ O recurso windowsAutopilotDeviceIdentity representa um dispositivo do Windows Au
 |systemFamily|String|Família de sistema|
 |azureActiveDirectoryDeviceId|String|ID de dispositivo do AAD|
 |managedDeviceId|String|ID do dispositivo gerenciado|
+|displayName|String|Nome de exibição|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -93,7 +95,8 @@ Veja a seguir uma representação JSON do recurso.
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
-  "managedDeviceId": "String"
+  "managedDeviceId": "String",
+  "displayName": "String"
 }
 ```
 

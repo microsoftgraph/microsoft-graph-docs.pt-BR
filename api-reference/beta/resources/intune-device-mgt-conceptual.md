@@ -4,18 +4,18 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 5d684352b1b910b7b340e7eb319178fc1666a5ef
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7912a4e70e1ea7daeeb000b4812e2d61e7e7e55e
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538613"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088158"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 - [Consentimento do administrador](intune-devices-adminconsent.md)
 - [Estado de autorização de administrador](intune-devices-adminconsentstate.md)
@@ -156,7 +156,6 @@ ms.locfileid: "37538613"
 - [Modelo de mensagem de notificação](intune-notification-notificationmessagetemplate.md)
 - [Opções de identidade visual do modelo de notificação](intune-notification-notificationtemplatebrandingoptions.md)
 - [Contagem de versões do SO](intune-devices-osversioncount.md)
-- [Tipo de proprietário](intune-devices-ownertype.md)
 - [Estado de correção](intune-devices-remediationstate.md)
 - [Ação remota](intune-devices-remoteaction.md)
 - [Auditoria de ação remota](intune-devices-remoteactionaudit.md)
@@ -165,8 +164,9 @@ ms.locfileid: "37538613"
 - [Resultado da ação de bloqueio remoto](intune-devices-remotelockactionresult.md)
 - [Resultado da ação de redefinir a senha](intune-devices-resetpasscodeactionresult.md)
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
+- [Informações de marca de escopo de função](intune-auditing-rolescopetaginfo.md)
+- [Resultado da ação de rotação de chaves do BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [Executar cronograma](intune-devices-runschedule.md)
-- [Informações de marca de escopo](intune-auditing-scopetaginfo.md)
 - [Resumo do estado de categoria da linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Estado do dispositivo de linha de base de segurança](intune-deviceintent-securitybaselinedevicestate.md)

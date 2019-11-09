@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92da318170cb8040f1c0267243c41ca6ec20e65f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: c5fb14edc8acbdfd3999bbc2eab74301f068721b
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538599"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078326"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>tipo de recurso androidDeviceOwnerGeneralDeviceConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso androidDeviceOwnerGeneralDeviceConfiguration.
 
@@ -35,16 +35,16 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountsBlockModification|Booliano|Indica se a adição ou a remoção de contas está desabilitada.|
 |appsAllowInstallFromUnknownSources|Booliano|Indica se o usuário tem permissão para habilitar a configuração de fontes desconhecidas.|
@@ -57,17 +57,18 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |cellularBlockWiFiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
 |dataRoamingBlocked|Booliano|Indica se um usuário será ou não bloqueado de roaming de dados.|
 |dateTimeConfigurationBlocked|Booliano|Indica se o usuário será ou não impedido de alterar manualmente a data ou a hora no dispositivo|
-|factoryResetDeviceAdministratorEmails|String collection|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
+|factoryResetDeviceAdministratorEmails|Coleção String|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|O proxy é configurado diretamente com hosts, porta e hosts excluídos.|
+|googleAccountsBlocked|Booliano|Indica se as contas do Google serão bloqueadas ou não.|
 |kioskModeScreenSaverConfigurationEnabled|Booliano|Se o modo de proteção de tela deve ou não ser habilitado ou não no modo quiosque.|
-|kioskModeScreenSaverImageUrl|Cadeia de caracteres|URL de uma imagem que será a proteção de tela do dispositivo no modo quiosque.|
+|kioskModeScreenSaverImageUrl|String|URL de uma imagem que será a proteção de tela do dispositivo no modo quiosque.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|O número de segundos que o dispositivo exibirá a proteção de tela no modo quiosque. Valores válidos de 0 a 9999999|
 |kioskModeScreenSaverStartDelayInSeconds|Int32|O número de segundos que o dispositivo precisa estar inativo para que a proteção de tela seja mostrada no modo quiosque. Valores válidos de 1 a 9999999|
 |kioskModeScreenSaverDetectMediaDisabled|Booliano|Se a tela do dispositivo deve ou não mostrar a proteção de tela se áudio/vídeo estiver em execução no modo quiosque.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que serão mostrados quando o dispositivo estiver no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskModeWallpaperUrl|Cadeia de caracteres|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
-|kioskModeExitCode|Cadeia de caracteres|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
+|kioskModeWallpaperUrl|String|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
+|kioskModeExitCode|String|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonEnabled|Booliano|Se um botão de Home virtual será exibido ou não quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indica se o botão de Home virtual é um botão deslizar para cima ou um botão de início flutuante. Os valores possíveis são: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Bluetooth no modo quiosque.|
@@ -108,7 +109,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |usersBlockAdd|Booliano|Indica se os usuários e perfis serão ou não desabilitados.|
 |usersBlockRemove|Booliano|Indica se a remoção de outros usuários do dispositivo deve ou não ser desabilitada.|
 |volumeBlockAdjustment|Booliano|Indica se o ajuste do volume mestre está ou não desabilitado.|
-|vpnAlwaysOnPackageIdentifier|Cadeia de caracteres|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
+|vpnAlwaysOnPackageIdentifier|String|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
 |vpnAlwaysOnLockdownMode|Booliano|Se um nome de pacote VPN Always on for especificado, se o tráfego de rede será ou não bloqueado quando essa VPN for desconectada.|
 |wifiBlockEditConfigurations|Booliano|Indica se o usuário será ou não impedido de editar as configurações de conexão WiFi.|
 |wifiBlockEditPolicyDefinedConfigurations|Booliano|Indica se o usuário será ou não impedido de editar apenas as redes definidas pela política.|
@@ -185,6 +186,7 @@ Veja a seguir uma representação JSON do recurso.
     "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
     "proxyAutoConfigURL": "String"
   },
+  "googleAccountsBlocked": true,
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "String",
   "kioskModeScreenSaverDisplayTimeInSeconds": 1024,
