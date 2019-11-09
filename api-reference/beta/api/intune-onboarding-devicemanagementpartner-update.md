@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31db98730e3044efc86c9953d7febf43ddfe7d92
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 26685d7d1d842ea23f081fe83b92c2a9ba5dee1d
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190520"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086610"
 ---
-# <a name="update-devicemanagementpartner"></a><span data-ttu-id="d1c04-103">Atualizar deviceManagementPartner</span><span class="sxs-lookup"><span data-stu-id="d1c04-103">Update deviceManagementPartner</span></span>
+# <a name="update-devicemanagementpartner"></a><span data-ttu-id="5b2ce-103">Atualizar deviceManagementPartner</span><span class="sxs-lookup"><span data-stu-id="5b2ce-103">Update deviceManagementPartner</span></span>
 
-> <span data-ttu-id="d1c04-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d1c04-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5b2ce-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d1c04-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d1c04-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5b2ce-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d1c04-106">Atualize as propriedades de um objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="d1c04-106">Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
+<span data-ttu-id="5b2ce-106">Atualize as propriedades de um objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="5b2ce-106">Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d1c04-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d1c04-107">Prerequisites</span></span>
-<span data-ttu-id="d1c04-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d1c04-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5b2ce-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5b2ce-107">Prerequisites</span></span>
+<span data-ttu-id="5b2ce-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b2ce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d1c04-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d1c04-110">Permission type</span></span>|<span data-ttu-id="d1c04-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="d1c04-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5b2ce-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5b2ce-110">Permission type</span></span>|<span data-ttu-id="5b2ce-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5b2ce-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d1c04-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d1c04-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d1c04-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d1c04-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="d1c04-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d1c04-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d1c04-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d1c04-115">Not supported.</span></span>|
-|<span data-ttu-id="d1c04-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d1c04-116">Application</span></span>|<span data-ttu-id="d1c04-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d1c04-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="5b2ce-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5b2ce-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5b2ce-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b2ce-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="5b2ce-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5b2ce-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5b2ce-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-115">Not supported.</span></span>|
+|<span data-ttu-id="5b2ce-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5b2ce-116">Application</span></span>|<span data-ttu-id="5b2ce-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b2ce-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d1c04-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d1c04-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b2ce-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5b2ce-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,44 +38,45 @@ ms.locfileid: "37190520"
 PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d1c04-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d1c04-119">Request headers</span></span>
-|<span data-ttu-id="d1c04-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d1c04-120">Header</span></span>|<span data-ttu-id="d1c04-121">Valor</span><span class="sxs-lookup"><span data-stu-id="d1c04-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5b2ce-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5b2ce-119">Request headers</span></span>
+|<span data-ttu-id="5b2ce-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5b2ce-120">Header</span></span>|<span data-ttu-id="5b2ce-121">Valor</span><span class="sxs-lookup"><span data-stu-id="5b2ce-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d1c04-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d1c04-122">Authorization</span></span>|<span data-ttu-id="d1c04-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d1c04-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d1c04-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="d1c04-124">Accept</span></span>|<span data-ttu-id="d1c04-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d1c04-125">application/json</span></span>|
+|<span data-ttu-id="5b2ce-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="5b2ce-122">Authorization</span></span>|<span data-ttu-id="5b2ce-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5b2ce-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5b2ce-124">Accept</span></span>|<span data-ttu-id="5b2ce-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5b2ce-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d1c04-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d1c04-126">Request body</span></span>
-<span data-ttu-id="d1c04-127">No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="d1c04-127">In the request body, supply a JSON representation for the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b2ce-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5b2ce-126">Request body</span></span>
+<span data-ttu-id="5b2ce-127">No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="5b2ce-127">In the request body, supply a JSON representation for the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.</span></span>
 
-<span data-ttu-id="d1c04-128">A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="d1c04-128">The following table shows the properties that are required when you create the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span></span>
+<span data-ttu-id="5b2ce-128">A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="5b2ce-128">The following table shows the properties that are required when you create the [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).</span></span>
 
-|<span data-ttu-id="d1c04-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d1c04-129">Property</span></span>|<span data-ttu-id="d1c04-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="d1c04-130">Type</span></span>|<span data-ttu-id="d1c04-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="d1c04-131">Description</span></span>|
+|<span data-ttu-id="5b2ce-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5b2ce-129">Property</span></span>|<span data-ttu-id="5b2ce-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="5b2ce-130">Type</span></span>|<span data-ttu-id="5b2ce-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="5b2ce-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d1c04-132">id</span><span class="sxs-lookup"><span data-stu-id="d1c04-132">id</span></span>|<span data-ttu-id="d1c04-133">String</span><span class="sxs-lookup"><span data-stu-id="d1c04-133">String</span></span>|<span data-ttu-id="d1c04-134">ID da entidade</span><span class="sxs-lookup"><span data-stu-id="d1c04-134">Id of the entity</span></span>|
-|<span data-ttu-id="d1c04-135">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="d1c04-135">lastHeartbeatDateTime</span></span>|<span data-ttu-id="d1c04-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d1c04-136">DateTimeOffset</span></span>|<span data-ttu-id="d1c04-137">Carimbo de data/hora da última pulsação após a opção de administrador habilitado conectar-se ao parceiro de gerenciamento de dispositivo</span><span class="sxs-lookup"><span data-stu-id="d1c04-137">Timestamp of last heartbeat after admin enabled option Connect to Device management Partner</span></span>|
-|<span data-ttu-id="d1c04-138">partnerState</span><span class="sxs-lookup"><span data-stu-id="d1c04-138">partnerState</span></span>|[<span data-ttu-id="d1c04-139">deviceManagementPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="d1c04-139">deviceManagementPartnerTenantState</span></span>](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|<span data-ttu-id="d1c04-140">Estado do parceiro desse locatário.</span><span class="sxs-lookup"><span data-stu-id="d1c04-140">Partner state of this tenant.</span></span> <span data-ttu-id="d1c04-141">Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span><span class="sxs-lookup"><span data-stu-id="d1c04-141">Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span></span>|
-|<span data-ttu-id="d1c04-142">partnerAppType</span><span class="sxs-lookup"><span data-stu-id="d1c04-142">partnerAppType</span></span>|[<span data-ttu-id="d1c04-143">deviceManagementPartnerAppType</span><span class="sxs-lookup"><span data-stu-id="d1c04-143">deviceManagementPartnerAppType</span></span>](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|<span data-ttu-id="d1c04-144">Tipo de aplicativo de parceiro.</span><span class="sxs-lookup"><span data-stu-id="d1c04-144">Partner App type.</span></span> <span data-ttu-id="d1c04-145">Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.</span><span class="sxs-lookup"><span data-stu-id="d1c04-145">Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.</span></span>|
-|<span data-ttu-id="d1c04-146">singleTenantAppId</span><span class="sxs-lookup"><span data-stu-id="d1c04-146">singleTenantAppId</span></span>|<span data-ttu-id="d1c04-147">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d1c04-147">String</span></span>|<span data-ttu-id="d1c04-148">Id do aplicativo do único locatário do parceiro</span><span class="sxs-lookup"><span data-stu-id="d1c04-148">Partner Single tenant App id</span></span>|
-|<span data-ttu-id="d1c04-149">displayName</span><span class="sxs-lookup"><span data-stu-id="d1c04-149">displayName</span></span>|<span data-ttu-id="d1c04-150">String</span><span class="sxs-lookup"><span data-stu-id="d1c04-150">String</span></span>|<span data-ttu-id="d1c04-151">Nome de exibição de parceiro</span><span class="sxs-lookup"><span data-stu-id="d1c04-151">Partner display name</span></span>|
-|<span data-ttu-id="d1c04-152">isConfigured</span><span class="sxs-lookup"><span data-stu-id="d1c04-152">isConfigured</span></span>|<span data-ttu-id="d1c04-153">Booliano</span><span class="sxs-lookup"><span data-stu-id="d1c04-153">Boolean</span></span>|<span data-ttu-id="d1c04-154">Se o parceiro de gerenciamento de dispositivo está configurado ou não</span><span class="sxs-lookup"><span data-stu-id="d1c04-154">Whether device management partner is configured or not</span></span>|
-|<span data-ttu-id="d1c04-155">whenPartnerDevicesWillBeRemoved</span><span class="sxs-lookup"><span data-stu-id="d1c04-155">whenPartnerDevicesWillBeRemoved</span></span>|<span data-ttu-id="d1c04-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d1c04-156">DateTimeOffset</span></span>|<span data-ttu-id="d1c04-157">DateTime em UTC quando o PartnerDevices será removido.</span><span class="sxs-lookup"><span data-stu-id="d1c04-157">DateTime in UTC when PartnerDevices will be removed.</span></span> <span data-ttu-id="d1c04-158">Isso se tornará obselete em breve.</span><span class="sxs-lookup"><span data-stu-id="d1c04-158">This will become obselete soon.</span></span>|
-|<span data-ttu-id="d1c04-159">whenPartnerDevicesWillBeMarkedAsNonCompliant</span><span class="sxs-lookup"><span data-stu-id="d1c04-159">whenPartnerDevicesWillBeMarkedAsNonCompliant</span></span>|<span data-ttu-id="d1c04-160">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d1c04-160">DateTimeOffset</span></span>|<span data-ttu-id="d1c04-161">DateTime em UTC quando PartnerDevices será marcado como não compatível.</span><span class="sxs-lookup"><span data-stu-id="d1c04-161">DateTime in UTC when PartnerDevices will be marked as NonCompliant.</span></span> <span data-ttu-id="d1c04-162">Isso se tornará obselete em breve.</span><span class="sxs-lookup"><span data-stu-id="d1c04-162">This will become obselete soon.</span></span>|
-|<span data-ttu-id="d1c04-163">whenPartnerDevicesWillBeRemovedDateTime</span><span class="sxs-lookup"><span data-stu-id="d1c04-163">whenPartnerDevicesWillBeRemovedDateTime</span></span>|<span data-ttu-id="d1c04-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d1c04-164">DateTimeOffset</span></span>|<span data-ttu-id="d1c04-165">DateTime no UTC quando PartnerDevices for removido</span><span class="sxs-lookup"><span data-stu-id="d1c04-165">DateTime in UTC when PartnerDevices will be removed</span></span>|
-|<span data-ttu-id="d1c04-166">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span><span class="sxs-lookup"><span data-stu-id="d1c04-166">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span></span>|<span data-ttu-id="d1c04-167">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d1c04-167">DateTimeOffset</span></span>|<span data-ttu-id="d1c04-168">DateTime no UTC quando PartnerDevices for marcado como não compatível</span><span class="sxs-lookup"><span data-stu-id="d1c04-168">DateTime in UTC when PartnerDevices will be marked as NonCompliant</span></span>|
+|<span data-ttu-id="5b2ce-132">id</span><span class="sxs-lookup"><span data-stu-id="5b2ce-132">id</span></span>|<span data-ttu-id="5b2ce-133">String</span><span class="sxs-lookup"><span data-stu-id="5b2ce-133">String</span></span>|<span data-ttu-id="5b2ce-134">ID da entidade</span><span class="sxs-lookup"><span data-stu-id="5b2ce-134">Id of the entity</span></span>|
+|<span data-ttu-id="5b2ce-135">lastHeartbeatDateTime</span><span class="sxs-lookup"><span data-stu-id="5b2ce-135">lastHeartbeatDateTime</span></span>|<span data-ttu-id="5b2ce-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5b2ce-136">DateTimeOffset</span></span>|<span data-ttu-id="5b2ce-137">Carimbo de data/hora da última pulsação após a opção de administrador habilitado conectar-se ao parceiro de gerenciamento de dispositivo</span><span class="sxs-lookup"><span data-stu-id="5b2ce-137">Timestamp of last heartbeat after admin enabled option Connect to Device management Partner</span></span>|
+|<span data-ttu-id="5b2ce-138">partnerState</span><span class="sxs-lookup"><span data-stu-id="5b2ce-138">partnerState</span></span>|[<span data-ttu-id="5b2ce-139">deviceManagementPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="5b2ce-139">deviceManagementPartnerTenantState</span></span>](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|<span data-ttu-id="5b2ce-140">Estado do parceiro desse locatário.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-140">Partner state of this tenant.</span></span> <span data-ttu-id="5b2ce-141">Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-141">Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.</span></span>|
+|<span data-ttu-id="5b2ce-142">partnerAppType</span><span class="sxs-lookup"><span data-stu-id="5b2ce-142">partnerAppType</span></span>|[<span data-ttu-id="5b2ce-143">deviceManagementPartnerAppType</span><span class="sxs-lookup"><span data-stu-id="5b2ce-143">deviceManagementPartnerAppType</span></span>](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|<span data-ttu-id="5b2ce-144">Tipo de aplicativo de parceiro.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-144">Partner App type.</span></span> <span data-ttu-id="5b2ce-145">Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-145">Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.</span></span>|
+|<span data-ttu-id="5b2ce-146">singleTenantAppId</span><span class="sxs-lookup"><span data-stu-id="5b2ce-146">singleTenantAppId</span></span>|<span data-ttu-id="5b2ce-147">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5b2ce-147">String</span></span>|<span data-ttu-id="5b2ce-148">Id do aplicativo do único locatário do parceiro</span><span class="sxs-lookup"><span data-stu-id="5b2ce-148">Partner Single tenant App id</span></span>|
+|<span data-ttu-id="5b2ce-149">displayName</span><span class="sxs-lookup"><span data-stu-id="5b2ce-149">displayName</span></span>|<span data-ttu-id="5b2ce-150">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5b2ce-150">String</span></span>|<span data-ttu-id="5b2ce-151">Nome de exibição de parceiro</span><span class="sxs-lookup"><span data-stu-id="5b2ce-151">Partner display name</span></span>|
+|<span data-ttu-id="5b2ce-152">isConfigured</span><span class="sxs-lookup"><span data-stu-id="5b2ce-152">isConfigured</span></span>|<span data-ttu-id="5b2ce-153">Booliano</span><span class="sxs-lookup"><span data-stu-id="5b2ce-153">Boolean</span></span>|<span data-ttu-id="5b2ce-154">Se o parceiro de gerenciamento de dispositivo está configurado ou não</span><span class="sxs-lookup"><span data-stu-id="5b2ce-154">Whether device management partner is configured or not</span></span>|
+|<span data-ttu-id="5b2ce-155">whenPartnerDevicesWillBeRemoved</span><span class="sxs-lookup"><span data-stu-id="5b2ce-155">whenPartnerDevicesWillBeRemoved</span></span>|<span data-ttu-id="5b2ce-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5b2ce-156">DateTimeOffset</span></span>|<span data-ttu-id="5b2ce-157">DateTime em UTC quando o PartnerDevices será removido.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-157">DateTime in UTC when PartnerDevices will be removed.</span></span> <span data-ttu-id="5b2ce-158">Isso se tornará obselete em breve.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-158">This will become obselete soon.</span></span>|
+|<span data-ttu-id="5b2ce-159">whenPartnerDevicesWillBeMarkedAsNonCompliant</span><span class="sxs-lookup"><span data-stu-id="5b2ce-159">whenPartnerDevicesWillBeMarkedAsNonCompliant</span></span>|<span data-ttu-id="5b2ce-160">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5b2ce-160">DateTimeOffset</span></span>|<span data-ttu-id="5b2ce-161">DateTime em UTC quando PartnerDevices será marcado como não compatível.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-161">DateTime in UTC when PartnerDevices will be marked as NonCompliant.</span></span> <span data-ttu-id="5b2ce-162">Isso se tornará obselete em breve.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-162">This will become obselete soon.</span></span>|
+|<span data-ttu-id="5b2ce-163">whenPartnerDevicesWillBeRemovedDateTime</span><span class="sxs-lookup"><span data-stu-id="5b2ce-163">whenPartnerDevicesWillBeRemovedDateTime</span></span>|<span data-ttu-id="5b2ce-164">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5b2ce-164">DateTimeOffset</span></span>|<span data-ttu-id="5b2ce-165">DateTime no UTC quando PartnerDevices for removido</span><span class="sxs-lookup"><span data-stu-id="5b2ce-165">DateTime in UTC when PartnerDevices will be removed</span></span>|
+|<span data-ttu-id="5b2ce-166">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span><span class="sxs-lookup"><span data-stu-id="5b2ce-166">whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime</span></span>|<span data-ttu-id="5b2ce-167">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5b2ce-167">DateTimeOffset</span></span>|<span data-ttu-id="5b2ce-168">DateTime no UTC quando PartnerDevices for marcado como não compatível</span><span class="sxs-lookup"><span data-stu-id="5b2ce-168">DateTime in UTC when PartnerDevices will be marked as NonCompliant</span></span>|
+|<span data-ttu-id="5b2ce-169">groupsRequiringPartnerEnrollment</span><span class="sxs-lookup"><span data-stu-id="5b2ce-169">groupsRequiringPartnerEnrollment</span></span>|<span data-ttu-id="5b2ce-170">coleção [deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)</span><span class="sxs-lookup"><span data-stu-id="5b2ce-170">[deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md) collection</span></span>|<span data-ttu-id="5b2ce-171">Grupos de usuários que especificam se o registro é por meio de um parceiro.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-171">User groups that specifies whether enrollment is through partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="d1c04-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1c04-169">Response</span></span>
-<span data-ttu-id="d1c04-170">Se tiver êxito, este método retornará o código de resposta `200 OK` e um objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d1c04-170">If successful, this method returns a `200 OK` response code and an updated [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5b2ce-172">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b2ce-172">Response</span></span>
+<span data-ttu-id="5b2ce-173">Se tiver êxito, este método retornará o código de resposta `200 OK` e um objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-173">If successful, this method returns a `200 OK` response code and an updated [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d1c04-171">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d1c04-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5b2ce-174">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5b2ce-174">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d1c04-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d1c04-172">Request</span></span>
-<span data-ttu-id="d1c04-173">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d1c04-173">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5b2ce-175">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5b2ce-175">Request</span></span>
+<span data-ttu-id="5b2ce-176">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-176">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 Content-type: application/json
-Content-length: 664
+Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -88,16 +89,24 @@ Content-length: 664
   "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d1c04-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1c04-174">Response</span></span>
-<span data-ttu-id="d1c04-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d1c04-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5b2ce-177">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b2ce-177">Response</span></span>
+<span data-ttu-id="5b2ce-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5b2ce-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 946
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -111,9 +120,19 @@ Content-Length: 713
   "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
+
+
 
 
 
