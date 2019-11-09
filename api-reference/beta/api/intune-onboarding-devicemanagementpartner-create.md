@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c626f82cb99d860d07ef997ca210980ea9f58483
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c260054415faab61efee551fb65386c18695d2b0
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190639"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086638"
 ---
 # <a name="create-devicemanagementpartner"></a>Criar deviceManagementPartner
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).
 
@@ -56,12 +56,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicativo de parceiro. Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|Cadeia de caracteres|Id do aplicativo do único locatário do parceiro|
-|displayName|String|Nome de exibição de parceiro|
+|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
 |isConfigured|Booliano|Se o parceiro de gerenciamento de dispositivo está configurado ou não|
 |whenPartnerDevicesWillBeRemoved|DateTimeOffset|DateTime em UTC quando o PartnerDevices será removido. Isso se tornará obselete em breve.|
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|DateTime em UTC quando PartnerDevices será marcado como não compatível. Isso se tornará obselete em breve.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime no UTC quando PartnerDevices for removido|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime no UTC quando PartnerDevices for marcado como não compatível|
+|groupsRequiringPartnerEnrollment|coleção [deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)|Grupos de usuários que especificam se o registro é por meio de um parceiro.|
 
 
 
@@ -75,7 +76,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners
 Content-type: application/json
-Content-length: 664
+Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -88,7 +89,15 @@ Content-length: 664
   "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
 
@@ -97,7 +106,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 946
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -111,9 +120,19 @@ Content-Length: 713
   "whenPartnerDevicesWillBeRemoved": "2017-01-01T00:00:34.890321-08:00",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "2017-01-01T00:02:38.9066046-08:00",
   "whenPartnerDevicesWillBeRemovedDateTime": "2016-12-31T23:56:38.2655023-08:00",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
+
+
 
 
 

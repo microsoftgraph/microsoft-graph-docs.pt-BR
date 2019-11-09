@@ -4,24 +4,26 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: d03cd932386b4b36af2f43beefee5cf59d21395c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b07c93901feb565b9f6816b5d8d5ae4580825b21
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196494"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088039"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 É possível registrar dispositivos, incluindo computadores Windows, para habilitar o gerenciamento de dispositivo móvel (MDM) com o Microsoft Intune. Este tópico descreve as diferentes maneiras de registrar dispositivos móveis no gerenciamento do Intune. A maneira de registrar dispositivos depende do tipo de dispositivo, da propriedade e do nível de gerenciamento necessário. O registro "Traga seu próprio dispositivo" (BYOD) permite aos usuários registrar seus telefones, computador e tablets pessoais. O registro de dispositivo de propriedade corporativa (COD) permite cenários de gerenciamento como apagamento remoto, dispositivos compartilhados ou afinidade de usuários em um dispositivo.
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar registros no Intune:
 
 - [Configuração de conector de certificado](intune-onboarding-certificateconnectorsetting.md)
+- [Parceiro de gerenciamento de conformidade](intune-onboarding-compliancemanagementpartner.md)
+- [Atribuição de parceiro de gerenciamento de conformidade](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Dados de gerenciamento de aplicativo e dispositivo](intune-onboarding-deviceandappmanagementdata.md)
 - [Configuração de limite do registro do dispositivo](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Restrição da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestriction.md)
@@ -38,6 +40,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Política local do exchange para gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
 - [Parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartner.md)
 - [Tipo de aplicativo de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnerapptype.md)
+- [Atribuição de parceiro de gerenciamento de dispositivos](intune-onboarding-devicemanagementpartnerassignment.md)
 - [Estado de locatário de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [Atribuição de configuração do registro](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Marca Intune](intune-onboarding-intunebrand.md)

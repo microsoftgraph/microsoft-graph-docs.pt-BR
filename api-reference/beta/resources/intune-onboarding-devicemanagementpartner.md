@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5219010f35013281d91e51ead5451a87abba832
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d887a8b8e239ec3a36eb5739004a3bf285d7a1a2
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366578"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088207"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Tipo de recurso deviceManagementPartner
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivos.
 
@@ -37,12 +37,13 @@ Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivo
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicativo de parceiro. Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|Cadeia de caracteres|Id do aplicativo do único locatário do parceiro|
-|displayName|String|Nome de exibição de parceiro|
+|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
 |isConfigured|Booliano|Se o parceiro de gerenciamento de dispositivo está configurado ou não|
 |whenPartnerDevicesWillBeRemoved|DateTimeOffset|DateTime em UTC quando o PartnerDevices será removido. Isso se tornará obselete em breve.|
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|DateTime em UTC quando PartnerDevices será marcado como não compatível. Isso se tornará obselete em breve.|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime no UTC quando PartnerDevices for removido|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime no UTC quando PartnerDevices for marcado como não compatível|
+|groupsRequiringPartnerEnrollment|coleção [deviceManagementPartnerAssignment](../resources/intune-onboarding-devicemanagementpartnerassignment.md)|Grupos de usuários que especificam se o registro é por meio de um parceiro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -68,7 +69,15 @@ Veja a seguir uma representação JSON do recurso.
   "whenPartnerDevicesWillBeRemoved": "String (timestamp)",
   "whenPartnerDevicesWillBeMarkedAsNonCompliant": "String (timestamp)",
   "whenPartnerDevicesWillBeRemovedDateTime": "String (timestamp)",
-  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)",
+  "groupsRequiringPartnerEnrollment": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
+      "target": {
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
 

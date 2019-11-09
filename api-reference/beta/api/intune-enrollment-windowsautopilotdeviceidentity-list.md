@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ddc09dbebe7a96a1cfaf0e4bfec8f8cdef944f1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d2cf180636d81d02ef743e4121336718c7cabef9
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184753"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087212"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Listar windowsAutopilotDeviceIdentities
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar Propriedades e relações dos objetos [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1201
+Content-Length: 1245
 
 {
   "value": [
@@ -89,11 +89,14 @@ Content-Length: 1201
       "skuNumber": "Sku Number value",
       "systemFamily": "System Family value",
       "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-      "managedDeviceId": "Managed Device Id value"
+      "managedDeviceId": "Managed Device Id value",
+      "displayName": "Display Name value"
     }
   ]
 }
 ```
+
+
 
 
 

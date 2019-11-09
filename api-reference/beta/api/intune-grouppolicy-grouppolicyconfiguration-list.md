@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 810d75d91ceb11d4dd53667b58ebf2ef46fd3395
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b1c08df7779aa9b44f50634a2576b5b881234839
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37179848"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087086"
 ---
 # <a name="list-grouppolicyconfigurations"></a>Listar groupPolicyConfigurations
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar Propriedades e relações dos objetos [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 374
+Content-Length: 448
 
 {
   "value": [
@@ -72,12 +72,17 @@ Content-Length: 374
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "displayName": "Display Name value",
       "description": "Description value",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "id": "27b935ec-35ec-27b9-ec35-b927ec35b927",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
     }
   ]
 }
 ```
+
+
 
 
 
