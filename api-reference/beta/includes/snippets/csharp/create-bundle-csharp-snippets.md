@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6339e7382bd820b347218c6349534adaa9fcdea8
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 773922204530e2859e0d00342c12531da6a38b2f
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932622"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302684"
 ---
 ```csharp
 
@@ -14,7 +14,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var driveItem = new DriveItem
 {
     Name = "Just some files",
-    @name.conflictBehavior = "rename",
+    AdditionalData = new Dictionary<string, object>()
+    {
+        {"@name.conflictBehavior","rename"}
+    },
     Bundle = new Bundle
     {
     },
