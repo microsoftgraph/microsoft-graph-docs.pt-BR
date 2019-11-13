@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 73ad70fa54104f973b59ae6f2f8c3b4196fe18e1
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 514f47cdd50117022c3c7f6e553c1d9afed4800a
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006505"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303055"
 ---
 # <a name="get-participant"></a>Obter participante
 
@@ -18,7 +18,7 @@ ms.locfileid: "38006505"
 
 Recupere as propriedades e os relacionamentos de um objeto **participante** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
@@ -58,8 +58,8 @@ O exemplo a seguir mostra a solicitação.
   "blockType": "request",
   "name": "get-participant"
 }-->
-```http
-GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]

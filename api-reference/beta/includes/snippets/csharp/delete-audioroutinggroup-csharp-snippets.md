@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 710abecde2fe9a3c2fa60c2615c92853a31ccac3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 8465f1f02fe9e586257ea4558f2352d967762f67
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710002"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302892"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.App.Calls["{id}"].AudioRoutingGroups["{id}"]
+await graphClient.Communications.Calls["{id}"].AudioRoutingGroups["{id}"]
     .Request()
     .DeleteAsync();
 

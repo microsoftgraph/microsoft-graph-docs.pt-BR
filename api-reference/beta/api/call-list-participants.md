@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c0050ea875ae9e0a8adc1037deb927071e76875
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: ff5c75db50f9321465d61edb156ad26ffc714c03
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006450"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302391"
 ---
 # <a name="list-participants"></a>Listar participantes
 
@@ -18,7 +18,7 @@ ms.locfileid: "38006450"
 
 Recupere uma lista de objetos participantes na chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
   "name": "get-participants"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

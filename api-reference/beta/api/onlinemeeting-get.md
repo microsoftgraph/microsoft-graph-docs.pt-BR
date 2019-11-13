@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9b5d571a73a03f6e313f13912b10262bff7b7041
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 07b1a13a4ad08b6a6478fa82e2d04599a3f5746a
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006484"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303080"
 ---
 # <a name="get-online-meeting"></a>Obter reunião online
 

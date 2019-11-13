@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5c9b506b8fc10bcec48e503e394b813e79f8ad82
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d1892a7f6f0331cad2b0ef74adfba857dd21b2b2
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006365"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302348"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -22,7 +22,7 @@ O bot deve responder ou [rejeitar](./call-reject.md) a chamada antes do tempo li
 
 > **Observação:** O bot só pode ser acessado por VoIP. Não há suporte para a chamada PSTN.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Você não precisa de nenhuma permissão para responder a uma chamada ponto a ponto. Você precisa de uma das seguintes permissões para ingressar em uma chamada de grupo. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                 |
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.    |
-|acceptedModalities|String collection                         |A lista de aceitar modalidades. O valor possível são `audio`: `video`, `videoBasedScreenSharing`,. Obrigatório para responder a uma chamada. |
+|acceptedModalities|Coleção String                         |A lista de aceitar modalidades. O valor possível são `audio`: `video`, `videoBasedScreenSharing`,. Obrigatório para responder a uma chamada. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta
@@ -190,7 +190,7 @@ Content-Type: application/json
 ##### <a name="request"></a>Solicitar
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "call-answer-service-hosted-media"
 }-->
 ```http
@@ -344,8 +344,10 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitar
+##### <a name="request"></a>Solicitação
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer-app-hosted-media"
@@ -363,6 +365,20 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 
