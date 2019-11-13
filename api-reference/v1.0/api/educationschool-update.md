@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f6dfcd0d9186d3e02a581742fe4cbaead3b9e91d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 2bd875c4824296c1b5ccfc6bd3969010a00b4f3b
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553919"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303101"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar propriedades de educationSchool
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                              |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,15 +46,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade            | Tipo                                               | Descrição                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | Nome de exibição da escola         |
-| description         | String                                             | Descrição da escola          |
-| principalEmail      | Cadeia de caracteres                                             | Endereço de email da entidade de segurança     |
-| principalName       | Cadeia de caracteres                                             | Nome da entidade de segurança              |
-| externalPrincipalId | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização. |
-| highestGrade        | Cadeia de caracteres                                             | Ensino de nível mais alto.              |
-| lowestGrade         | Cadeia de caracteres                                             | Ensino de nível mais baixo.               |
-| schoolNumber        | Cadeia de caracteres                                             | Número da escola.                     |
-| externalId          | Cadeia de caracteres                                             | ID da escola no sistema de sincronização.    |
+| displayName         | Cadeia de caracteres                                             | Nome de exibição da escola         |
+| descrição         | String                                             | Descrição da escola          |
+| principalEmail      | String                                             | Endereço de email da entidade de segurança     |
+| principalName       | String                                             | Nome da entidade de segurança              |
+| externalPrincipalId | String                                             | ID da entidade de segurança no sistema de sincronização. |
+| highestGrade        | String                                             | Ensino de nível mais alto.              |
+| lowestGrade         | String                                             | Ensino de nível mais baixo.               |
+| schoolNumber        | String                                             | Número da escola.                     |
+| externalId          | String                                             | ID da escola no sistema de sincronização.    |
 | phone               | Cadeia de caracteres                                             | Número de telefone da escola.            |
 | address             | [physicalAddress](../resources/physicaladdress.md) | Endereço da escola.             |
 | createdBy           | [identitySet](../resources/identityset.md)         | Entidade que criou a escola.     |
@@ -87,22 +87,18 @@ Content-length: 292
 ```
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

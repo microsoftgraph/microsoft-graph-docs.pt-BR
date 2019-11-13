@@ -1,25 +1,27 @@
 ---
-title: Mensagens de pesquisa
+title: Pesquisar mensagens
 description: A API de pesquisa da Microsoft permite que os aplicativos pesquisem informações em mensagens de email, retornem mensagens classificadas por relevância e processem uma experiência de pesquisa dedicada.
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: f78ad8af81a7d2b72ab61914cc441db279913dc1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 985da47e5a7b96cead416e8e5cda32dae0357adb
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939541"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303129"
 ---
-# <a name="search-messages"></a>Mensagens de pesquisa
+# <a name="search-messages"></a>Pesquisar mensagens
 
-A API de pesquisa da Microsoft permite que os aplicativos pesquisem informações em mensagens de email, retornem mensagens classificadas por relevância e processem uma experiência de pesquisa dedicada. A pesquisa se aplica ao corpo e aos anexos de mensagens na caixa de correio do usuário. 
+A API de pesquisa da Microsoft permite que os aplicativos pesquisem informações em mensagens de email, retornem mensagens classificadas por relevância e processem uma experiência de pesquisa dedicada. A pesquisa se aplica ao corpo e aos anexos de mensagens na caixa de correio do usuário.
 
 Uma consulta de pesquisa pode incluir [filtros](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) que os usuários finais inserem na caixa de texto de **pesquisa** no Outlook.
 
 Os resultados da pesquisa de mensagens são classificados por **receivedDateTime** em ordem decrescente.
 
-No momento, a pesquisa de mensagens aplica-se apenas às contas pessoais dos usuários, mas não às contas corporativas ou de estudante, e não às caixas de correio delegadas. Confira mais [limitações conhecidas](#known-limitations) abaixo.
+A pesquisa de mensagens aplica-se às contas corporativas ou de estudante. Os usuários podem pesquisar sua própria caixa de correio, mas não em caixas de correio delegadas. Confira mais [limitações conhecidas](#known-limitations) abaixo.
+
+A pesquisa de mensagens também procura anexos. Os [tipos de arquivo com suporte para anexos](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) é o mesmo que para o SharePoint Online.
 
 ## <a name="examples"></a>Exemplos
 
