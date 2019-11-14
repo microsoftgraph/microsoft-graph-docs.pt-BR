@@ -3,46 +3,40 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 9ebdbcccff19f5c5a099efa3c0228392276a3cc3
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7d7d48b807c484bcdc237bf78124fec10ce0a54f
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968462"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303143"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
-Você sabia que alguns dos novos recursos do Microsoft Graph se originam de solicitações populares da comunidade de desenvolvedores? 
+Confira os destaques das novidades do Microsoft Graph e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para obter uma lista completa de atualizações da API, confira as seções de [novembro](changelog.md#november-2019) e [outubro](changelog.md#october-2019) do log de alterações da API. 
 
-A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes e lança novos recursos na seguinte ordem:
-
-1. Estreia no status de visualização **_prévia_**. As atualizações da API REST relacionadas estão no ponto de extremidade beta (`https://graph.microsoft.com/beta`).  
-
-2. Promovido para o status de**_disponibilidade geral_ (GA)**, se um feedback suficiente indicar a viabilidade. Todas as atualizações da API REST relacionadas serão adicionadas ao ponto de extremidade do v 1.0 (`https://graph.microsoft.com/v1.0`). 
-
-Abaixo, veja o que há de novo no Microsoft Graph e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para obter uma lista completa de atualizações da API, confira as seções de [novembro](changelog.md#november-2019) e [Outubro](changelog.md#october-2019). 
+> [!IMPORTANT]
+> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
 
 
 ## <a name="november-2019-new-and-generally-available"></a>Novembro de 2019: novo e disponível para o público geral
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
-Registre [aplicativos](/graph/api/resources/application?view=graph-rest-1.0) que se autenticam com o Azure Active Directory (Azure AD).
+Registre [aplicativos](/graph/api/resources/application?view=graph-rest-1.0) que se autenticam com o Azure Active Directory (Azure AD). Use as [permissões](/graph/permissions-reference#application-resource-permissions) delegadas, Application.Read.All e Application.ReadWrite.All ou as permissões de aplicativos, Application.Read.All, conforme apropriado.
 
 
-## <a name="november-2019-new-in-preview"></a>Novembro de 2019: novidades na versão prévia
-
-> [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
+## <a name="november-2019-new-in-preview"></a>Novembro de 2019: Novidades na versão prévia
 
 ### <a name="calendar"></a>Calendário
 
 [Defina as propriedades](/graph/api/place-update?view=graph-rest-beta) para os tipos de local avançado de[sala](/graph/api/resources/room?view=graph-rest-beta) e [lista de sala](/graph/api/resources/roomlist?view=graph-rest-beta).
 
+### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+Atualizações de [novembro](changelog.md#november-2019) do Intune
 
-### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e no local de trabalho
+### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
 
-Estreia do recurso do [perfil](/graph/api/resources/profile?view=graph-rest-beta) que é uma representação avançada da próxima geração de entidades de pessoas nos serviços da Microsoft. Esse recurso se relaciona aos atributos comuns e práticos de pessoas, incluindo informações sobre datas significativas, como [aniversários](/graph/api/resources/personanniversary?view=graph-rest-beta), [escolaridade](/graph/api/resources/educationalactivity?view=graph-rest-beta), [cargos](/graph/api/resources/workposition?view=graph-rest-beta), [interesses](/graph/api/resources/personinterest?view=graph-rest-beta), [idioma e habilidades e competências, participação em projetos, associação em sites e outras informações de contato e conta.
+Estreia do recurso do [perfil](/graph/api/resources/profile?view=graph-rest-beta) que é uma representação avançada da próxima geração de entidades de pessoas nos serviços da Microsoft. Esse recurso se relaciona aos atributos comuns e práticos de pessoas, incluindo informações sobre datas significativas, como [aniversários](/graph/api/resources/personanniversary?view=graph-rest-beta), [escolaridade](/graph/api/resources/educationalactivity?view=graph-rest-beta), [cargos](/graph/api/resources/workposition?view=graph-rest-beta), [interesses](/graph/api/resources/personinterest?view=graph-rest-beta), [idioma](/graph/api/resources/languageproficiency?view=graph-rest-beta) e [habilidades](/graph/api/resources/skillproficiency?view=graph-rest-beta) e competências, [participação em projetos](/graph/api/resources/projectparticipation?view=graph-rest-beta), [associação em sites](/graph/api/resources/personwebsite?view=graph-rest-beta) e outras informações de contato e [conta](/graph/api/resources/useraccountinformation?view=graph-rest-beta).
 
 
 ### <a name="search"></a>Pesquisar
@@ -73,9 +67,6 @@ Os desenvolvedores e os cientistas de dados agora podem usar [ferramentas para t
 
 ## <a name="october-2019-new-in-preview"></a>Outubro de 2019: Novo em visualização
 
-> [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
-
 ### <a name="calendar"></a>Calendário
 - Os organizadores de reuniões podem [permitir que os convidados proponham horários de reunião alternativos ](outlook-calendar-meeting-proposals.md). Ao receber uma resposta de reunião que inclua um horário alternativo proposto, o organizador pode decidir aceitar a proposta e [atualizar](/graph/api/event-update?view=graph-rest-beta) o horário da reunião.
 - O compartilhamento de calendário programático está mais parecido com a experiência do usuário do Outlook. Além de controlar as permissões do usuário atual e o status de compartilhamento de um calendário:
@@ -84,10 +75,10 @@ Os desenvolvedores e os cientistas de dados agora podem usar [ferramentas para t
 - Suporte adicional para reuniões online:
   - Para cada **calendário**, especifique os provedores de reuniões online permitidos e padrão.
   - Crie ou atualize um [evento](/graph/api/resources/event?view=graph-rest-beta) que esteja disponível online e forneça detalhes para que os participantes possam ingressar na reunião online. 
-  - Em particular, use as novas propriedades onlineMeetingProvider e onlineMeeting do [evento para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade onlineMeetingUrl.
+  - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl**.
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
-Intune [outubro](changelog.md#october-2019) atualiza regras de acesso para cenários específicos
+Atualizações de [outubro](changelog.md#october-2019) do Intune
 
 ### <a name="graph-explorer"></a>Graph Explorer
 Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/preview) e confira informações contextuais úteis, como permissões, tokens de acesso e trechos de código do SDK nas novas guias **Permissões**, **Autenticação** e **Trechos de código**. Use o controle deslizante **Visualizar** para alternar entre a [produção](https://developer.microsoft.com/graph/graph-explorer) e a nova versão de visualização do Graph Explorer.
@@ -124,7 +115,15 @@ Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.c
 Os desenvolvedores e profissionais de TI podem observar o lançamento da [SDK do Microsoft Graph PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell), que criará módulos que contêm cmdlets para criar solicitações da API REST do Microsoft Graph.
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?
+
+Estas são algumas maneiras de se envolver:
+
 - Existem cenários em que você gostaria que o Microsoft Graph oferecesse suporte? Sugira e vote em novos recursos no [Microsoft Graph User Voice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+    Alguns novos recursos são originados como solicitações populares da comunidade de desenvolvedores. A equipe do Microsoft Graph avalia regularmente as necessidades dos clientes e lança novos recursos na seguinte ordem:
+
+    1. Estreia no status de visualização **_prévia_**. As atualizações da API REST relacionadas estão no ponto de extremidade beta (`https://graph.microsoft.com/beta`).  
+
+    2. Promovido para o status de**_disponibilidade geral_ (GA)**, se um feedback suficiente indicar a viabilidade. Todas as atualizações da API REST relacionadas serão adicionadas ao ponto de extremidade do v 1.0 (`https://graph.microsoft.com/v1.0`). 
 - Seja um membro ativo da comunidade do Microsoft Graph! [Participe](https://aka.ms/microsoftgraphcall) da chamada mensal à comunidade do Microsoft Graph.
 - Inscreva-se no [programa para desenvolvedores do Office 365](https://developer.microsoft.com/office/dev-program), obtenha uma assinatura gratuita do Office 365 e comece a desenvolver!
 
