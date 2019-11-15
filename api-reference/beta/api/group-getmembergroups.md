@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: da7aabed05a2e57788036904eb10f3cb16437339
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d6d799ed2e97e7ee9ad1f3c95a205f19b75f6a5f
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420767"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657876"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
-| Aplicativo                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
+| Aplicativo                            | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Directory. ReadWrite. All                             |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -86,7 +86,7 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

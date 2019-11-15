@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 17a1f89c11386f48ac695bcc4b2b13ff5c68fb86
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: e1a3e1a74d4ddf66017f36fa3f373d910dcdf793
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538420"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657897"
 ---
 # <a name="create-user"></a>Criar usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar qualquer outra propriedade gravável.
+Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
 
 >[!NOTE]
 >Para criar usuários externos, use a [API de convite](invitation-post.md).
@@ -46,7 +46,7 @@ POST /users
 
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
 
-A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade **Identities** para o usuário que você está criando, nem todas as propriedades listadas serão necessárias. Para uma [identidade de conta local B2C](../resources/objectidentity.md), apenas o **passwordProfile** é necessário. Para uma identidade social, nenhuma das propriedades é necessária.
+A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade **Identities** para o usuário que você está criando, nem todas as propriedades listadas serão necessárias. Para uma [identidade de conta local B2C](../resources/objectidentity.md), somente **passwordProfile** é necessário e **passwordPolicy** deve ser definido como `DisablePasswordExpiration`. Para uma identidade social, nenhuma das propriedades é necessária.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
@@ -57,7 +57,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
 |userPrincipalName |string |Nome UPN (usuario@contoso.com).|
 
-Como o recurso de **usuário** oferece suporte a [extensões](/graph/extensibility-overview), você `POST` pode usar a operação e adicionar propriedades personalizadas com seus próprios dados à instância de usuário ao criá-la.
+Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.
 
 Os usuários federados criados por meio dessa API serão forçados a entrar a cada 12 horas por padrão. Para obter informações sobre como alterar isso, confira [exceções para tempos de vida do token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
@@ -144,7 +144,10 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>Exemplo 2: criar um usuário com identidades sociais e de conta local
 
-Crie um novo usuário, com uma identidade de conta local com um nome de entrada e com uma identidade social. Este exemplo é normalmente usado para cenários de migração.
+Crie um novo usuário, com uma identidade de conta local com um nome de entrada, um endereço de email como entrada e com uma identidade social. Este exemplo geralmente é usado para cenários de migração em locatários de B2C.  
+
+[!NOTE] 
+Para identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitada.
 
 #### <a name="request"></a>Solicitação
 
@@ -168,15 +171,20 @@ Content-type: application/json
       "issuerAssignedId": "johnsmith"
     },
     {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
       "signInType": "federated",
       "issuer": "facebook.com",
       "issuerAssignedId": "5eecb0cd"
     }
   ],
   "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
     "password": "password-value"
-  }
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -220,15 +228,17 @@ Content-type: application/json
       "issuerAssignedId": "johnsmith"
     },
     {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
       "signInType": "federated",
       "issuer": "facebook.com",
       "issuerAssignedId": "5eecb0cd"
     }
   ],
-  "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
-    "password": null
-  }
+  "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
 

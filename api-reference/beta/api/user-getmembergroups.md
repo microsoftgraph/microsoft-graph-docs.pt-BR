@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58757c5887cc43741dcbe8e2a19c2607c0c5b2e4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8d044c4e158986a8154c0c118973edcc6ee84a1b
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421084"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657819"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | User. ReadBasic. All e Group. Read. All, User. Read e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadBasic. All e GroupMember. Read. All, User. Read e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All, User. Read e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                                       |
-| Aplicativo                            | User. Read. All e Group. Read. All, Directory. Read. All, Directory. ReadWrite. All            |
+| Aplicativo                            | User. Read. All e GroupMember. Read. All, User. Read. All e Group. Read. All, Directory. Read. All, Directory. ReadWrite. All            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -89,7 +89,7 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

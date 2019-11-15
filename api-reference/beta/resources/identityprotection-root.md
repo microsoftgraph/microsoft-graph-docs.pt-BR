@@ -1,50 +1,35 @@
 ---
-title: Usar a API de proteção de identidade do Azure AD (versão prévia)
-description: Você pode usar o Microsoft Graph para consultar o recurso identityRiskEvent para cada tipo de evento de risco detectado pela proteção de identidade do Azure AD. Esses eventos estão disponíveis para clientes com o Azure AD Premium P2. Um subconjunto de eventos está disponível para clientes com o Azure AD Premium P1.
+title: Usar as APIs de proteção de identidade do Azure AD (versão prévia)
+description: Você pode usar o Microsoft Graph para consultar as APIs de proteção de identidade para receber informações sobre o risco detectado pela proteção de identidade do Azure AD.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: d43f3a54e8ec8aebd0c8018cea9986c0c161a073
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ba2dc0a19944f373032619390f9cebaf32dc0e3
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005818"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658874"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Usar a API de proteção de identidade do Azure AD (versão prévia)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode usar o Microsoft Graph para consultar o recurso [identityRiskEvent](identityriskevent.md) para cada tipo de evento de risco detectado pela [proteção de identidade do Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection). Esses eventos estão disponíveis para clientes com o Azure AD Premium P2. Um subconjunto de eventos está disponível para clientes com o Azure AD Premium P1.
+A proteção de identidade é uma ferramenta que permite às organizações detectar, investigar e corrigir riscos baseados em identidade em seu ambiente. Você pode usar as seguintes APIs do Microsoft Graph para consultar os riscos detectados pela proteção de identidade: 
 
-* [entradas de endereços IP anônimos](anonymousipriskevent.md)
-* [entradas de dispositivos infectados por malware](malwareriskevent.md)
-* [impossível viajar para locais atypical](impossibletravelriskevent.md)
-* [usuários com credenciais vazadas](leakedcredentialsriskevent.md)
-* [entradas de endereços IP suspeitos](suspiciousipriskevent.md)
-* [entradas de locais desconhecidos](unfamiliarlocationriskevent.md)
+* [riskDetection](riskdetection.md) -consulta o Microsoft Graph para obter uma lista de detecções de riscos vinculados de usuário e de entrada e informações associadas sobre a detecção. As detecções de risco na proteção de identidade do Azure AD incluem qualquer ação suspeita identificada relacionada às contas de usuário no diretório.
 
-Use as operações a seguir para obter estes eventos e informações associadas:
+* [riskyUsers](riskyuser.md) – consulta o Microsoft Graph para obter informações sobre os usuários que a proteção de identidade detectou como arriscado. O risco do usuário representa a probabilidade de que uma determinada identidade ou conta seja comprometida. Esses riscos são calculados offline usando fontes de inteligência de ameaças internas e externas da Microsoft, incluindo pesquisadores de segurança, profissionais de imposição de leis, equipes de segurança da Microsoft e outras fontes confiáveis.
 
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Listar identityRiskEvent](../api/identityriskevent-get.md) |[identityRiskEvent](identityriskevent.md)| Obtém a coleção identityRiskEvent. |
-|[Obter identityRiskEvent](../api/identityriskevent-get.md) |[identityRiskEvent](identityriskevent.md)| Obtém o objeto identityRiskEvent. |
-|[Listar anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| Obtém a coleção anonymousIpRiskEvent. |
-|[Obter anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) |[anonymousIpRiskEvent](anonymousipriskevent.md)| Obtém o objeto anonymousIpRiskEvent. |
-|[Listar impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) |[impossibleTravelRiskEvent](impossibletravelriskevent.md)| Obtém a coleção impossibleTravelRiskEvent. |
-|[Obter impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) |[impossibleTravelRiskEvent](impossibletravelriskevent.md)| Obtém o objeto impossibleTravelRiskEvent. |
-|[Listar leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) |[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md)| Obtém a coleção leakedCredentialsRiskEvent. |
-|[Obter leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) |[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md)| Obtém o objeto leakedCredentialsRiskEvent. |
-|[Listar malwareRiskEvent](../api/malwareriskevent-get.md) |[malwareRiskEvent](malwareriskevent.md)| Obtém a coleção malwareRiskEvent. |
-|[Obter malwareRiskEvent](../api/malwareriskevent-get.md) |[malwareRiskEvent](malwareriskevent.md)| Obtém o objeto malwareRiskEvent. |
-|[Listar suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) |[suspiciousIpRiskEvent](suspiciousipriskevent.md)| Obtém a coleção suspiciousIpRiskEvent. |
-|[Obter suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) |[suspiciousIpRiskEvent](suspiciousipriskevent.md)| Obtém o objeto suspiciousIpRiskEvent. |
-|[Listar unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md)| Obtém a coleção unfamiliarLocationRiskEvent. |
-|[Obter unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md)| Obtém o objeto unfamiliarLocationRiskEvent. |
+* [Sign](signin.md) -in – consultar o Microsoft Graph para obter informações sobre as entradas do Azure AD com propriedades específicas relacionadas ao estado, detalhes e nível do risco. Um risco de entrada representa a probabilidade de que uma determinada solicitação de autenticação não seja autorizada pelo proprietário da identidade. Esses riscos podem ser calculados em tempo real ou calculados offline usando fontes de inteligência de ameaças internas e externas da Microsoft, incluindo pesquisadores de segurança, profissionais de imposição de leis, equipes de segurança da Microsoft e outras fontes confiáveis.
 
-# <a name="see-also"></a>Confira também
+* [identityRiskEvents](identityriskevent.md) – consulta o Microsoft Graph para obter uma lista de detecções de risco e informações associadas. Essa API foi preterida; Recomendamos que você use **riskDetections** em vez disso.
 
-* [Sobre a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
-* [Introdução à proteção de identidade do Azure Active Directory e ao Microsoft Graph](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+>[!NOTE]
+>A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+## <a name="see-also"></a>Confira também
+
+* [Sobre a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+* [Introdução à proteção de identidade do Azure Active Directory e ao Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

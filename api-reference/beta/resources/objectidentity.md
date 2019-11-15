@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: f161821469014d6f2a9d07013df846e092a216ea
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: c29d7ca1b2b4f20f53ed4be45807eb666002163c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539257"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658797"
 ---
 # <a name="objectidentity-resource-type"></a>tipo de recurso objectidentity
 
@@ -24,7 +24,7 @@ A propriedade **Identities** do recurso [User](user.md) é um objeto **objectide
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|signInType|string| Especifica os tipos de entrada do usuário no seu diretório, `emailAddress`como `userName` ou. `federated` Aqui, `federated` representa um identificador exclusivo para um usuário de um emissor, que pode estar em qualquer formato escolhido pelo emissor. A validação adicional é imposta no **issuerAssignedId** quando o tipo de entrada é definido como `emailAddress` ou. `userName` Essa propriedade também pode ser definida para qualquer cadeia de caracteres personalizada, para permitir vários endereços de email, por exemplo.<br><br>Suporte `$filter`.|
+|signInType|string| Especifica os tipos de entrada do usuário no seu diretório, `emailAddress`como `userName` ou. `federated` Aqui, `federated` representa um identificador exclusivo para um usuário de um emissor, que pode estar em qualquer formato escolhido pelo emissor. A validação adicional é imposta no **issuerAssignedId** quando o tipo de entrada é definido como `emailAddress` ou. `userName` Essa propriedade também pode ser definida como qualquer cadeia de caracteres personalizada.|
 |emissor|string|Especifica o emissor da identidade, por exemplo `facebook.com`.<br>Para contas locais (onde **signInType** não `federated`é), essa propriedade é o nome de domínio padrão do locatário do B2C local `contoso.onmicrosoft.com`, por exemplo.<br>Para usuários externos de outra organização do Azure AD, esse será o domínio da organização federada, por exemplo `contoso.com`.<br><br>Suporte `$filter`. limite de caracteres de 512.|
 |issuerAssignedId|string|Especifica o identificador exclusivo atribuído ao usuário pelo emissor. A combinação de **Issuer** e **issuerAssignedId** deve ser exclusiva dentro da organização. Representa o nome de entrada do usuário, quando **signInType** é definido como `emailAddress` ou `userName` (também conhecido como contas locais).<br>Quando **signInType** é definido como: <ul><li>`emailAddress`, (ou começa com `emailAddress` like `emailAddress1`) **issuerAssignedId** deve ser um endereço de email válido</li><li>`userName`, **issuerAssignedId** deve ser uma [parte local válida de um endereço de email](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>Suporte `$filter`. limite de caracteres de 512.|
 

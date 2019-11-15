@@ -5,27 +5,27 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6100e85ec3088eea6d7ad491be69b6d718ae0a43
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 707547129475de4ac7a8f1e33fe5da2d40a51d3c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420321"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657883"
 ---
 # <a name="remove-member"></a>Remover membro
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para remover um membro de um grupo por meio **** da propriedade de navegação Members.
+Use essa API para remover um membro de um grupo por meio **da** propriedade de navegação membros.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | GroupMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo | GroupMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/members/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-member-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-member-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e0295e9874be0150ee33a30bdf06d0719866d61
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 5169d2b2c54fc8055effcf1984c6279168a84072
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994460"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657869"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -21,16 +21,16 @@ Adicionar um membro a um grupo do Office 365 ou grupo de segurança por meio da 
 É possível adicionar usuários ou outros grupos. 
 
 > [!Important]
-> Você só pode adicionar usuários a segurança e grupos do Office 365 gerenciados por meio da nuvem.
+> Só é possível adicionar usuários aos grupos do Office 365 e segurança gerenciados pela nuvem.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | GroupMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | GroupMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
