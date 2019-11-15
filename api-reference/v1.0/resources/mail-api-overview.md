@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 9b9485845ab97daf9c55f58f4b4f09e84ed5302a
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 7a9c191f9bbdd8d7fb857ffca7ebe1895ec62ed6
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37036393"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302968"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
@@ -22,7 +22,8 @@ As solicitações de API de email são realizadas em nome de um [usuário](../re
 
 As mensagens de email são representadas pelo recurso [message](../resources/message.md) e organizado em uma [mailFolder](../resources/mailfolder.md). As mensagens e as pastas principais são identificadas por sua propriedade **id**, obtida das operações de `GET`.
 
->**Observação:** em geral, não pressupõem que as IDs de **message** e **mailfolder** são únicas e imutáveis em uma caixa de correio. Elas podem mudar após certas ações, como copiar, mover ou enviar.
+>[!IMPORTANT] 
+> Em geral, não assuma que os IDs das **mensagens** e das **pastas de correio** são exclusivos e sempre permanecem os mesmos em uma caixa de correio. Eles podem mudar após determinadas ações, como copiar ou mover. Você pode optar por usar as [IDs imutáveis](/graph/outlook-immutable-id) para manter a mesma ID, desde que a mensagem permaneça na mesma caixa de correio, _com exceção de envio de uma mensagem de rascunho e alguns outros cenários_. Confira [tempo de vida das IDs imutáveis](/graph/outlook-immutable-id#lifetime-of-immutable-ids) para obter detalhes.
 
 Os corpos de mensagens podem estar no formato HTML ou no formato de texto.
 
