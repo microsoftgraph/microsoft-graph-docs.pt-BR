@@ -4,12 +4,12 @@ description: Descreve as diferenças entre recursos no gráfico do Azure AD e re
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 925faf5aa27adcdef3d0ade88f9c3d5d8a911c75
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: fb46ea7d4a1a5b66925b18beb131e912a7e89767
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934736"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656512"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de tipo de recurso entre o Azure AD Graph e o Microsoft Graph
 
@@ -19,14 +19,12 @@ Ao migrar aplicativos do Azure AD Graph para o Microsoft Graph, lembre-se de que
 
 A tabela a seguir realça as diferenças entre o Azure AD Graph e recursos do Microsoft Graph.  Ele mostra recursos com nomes diferentes ou que não estão disponíveis; Ele também realça os recursos disponíveis na versão beta do Microsoft Graph, mas não na versão v 1.0.
 
-Se um recurso não for mostrado na lista, ele já estará disponível na [versão v 1.0](/graph/api/overview?view=graph-rest-1.0) do Microsoft Graph, com o mesmo nome do gráfico do Azure AD.
+Se um recurso **não** for mostrado na lista, ele já estará disponível na [versão v 1.0](/graph/api/overview?view=graph-rest-1.0) do Microsoft Graph, com o mesmo nome do gráfico do Azure AD.
 
 > **Observação**: os nomes de tipo de recurso no Azure ad Graph são Pascal-case, enquanto no Microsoft Graph eles são camel-case.
 
 |Azure AD Graph. <br>(v 1.6) Resource |Microsoft Graph<br>recurso|Comentários|
 |---|---|---|
-| [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [aplicativo](/graph/api/resources/application?view=graph-rest-beta)<br>v 1.0- [Application](/graph/api/resources/application?view=graph-rest-1.0) ||
-| [AppRole](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [appRole](/graph/api/resources/approle?view=graph-rest-beta)<br>v 1.0- [appRole](/graph/api/resources/appRole?view=graph-rest-1.0) | |
 | [AppRoleAssignment](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão&nbsp;-&nbsp;beta[appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>v 1.0- _ainda não disponível_ | |
 | [CertificateAuthorityInformation](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão&nbsp;-&nbsp;beta[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>v 1.0&nbsp;-&nbsp;[certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) | |
 | [Contato](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>v 1.0- [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
@@ -41,9 +39,9 @@ Se um recurso não for mostrado na lista, ele já estará disponível na [versã
 | [SignInName](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- _ainda não disponível_ <br> v 1.0- _ainda não disponível_ | Nova modelagem para os identificadores usados para entrar em uma conta de usuário, chamada **identityobject**, mas ainda não disponível. Oferece suporte a cenários do Azure AD B2C. |
 | [TenantDetail](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [organização](/graph/api/resources/organization?view=graph-rest-beta) <br> v 1.0- [organização](/graph/api/resources/organization?view=graph-rest-v1.0) | |
 | [TrustedCasForPasswordAuth](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | versão&nbsp;-&nbsp;beta[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> v 1.0&nbsp;-&nbsp;[certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-v1.0) | |
-| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- _ainda não disponível_ <br> v 1.0- _ainda não disponível_ |  Nova modelagem para os identificadores usados para entrar em uma conta de usuário, chamada **identityobject**, mas ainda não disponível. Oferece suporte a cenários do Azure AD B2C. |
+| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | Beta- [Objectidentity](/graph/api/resources/objectidentity?view=graph-rest-beta) <br> v 1.0- _ainda não disponível_ |  Nova modelagem para os identificadores usados para entrar em uma conta de usuário, chamada **objectidentity**. Oferece suporte a cenários do Azure AD B2C. |
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais sobre as [diferenças de propriedade de entidade](migrate-azure-ad-graph-property-differences.md) entre o Azure ad Graph e o Microsoft Graph.
 - Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .

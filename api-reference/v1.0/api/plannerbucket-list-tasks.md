@@ -6,10 +6,10 @@ author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
 ms.openlocfilehash: 9c9f796d0005e4991bdc6a736ce788cdaba3f5b6
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "37633814"
 ---
 # <a name="list-tasks"></a>Listar tarefas

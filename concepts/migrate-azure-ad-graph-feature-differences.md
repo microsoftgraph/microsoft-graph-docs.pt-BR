@@ -4,16 +4,16 @@ description: Descreve as diferenças de recursos entre a API do Azure Active Dir
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0e18bc286f4373c15da9d6a2360491e1b2f0371f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 1e99c5e0c6b2df9e30787481c36a32dcd65485d8
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630241"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656533"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 
-Este artigo faz parte da *etapa 1:* revisar as diferenças de API do [processo de migração de aplicativos](migrate-azure-ad-graph-planning-checklist.md).
+Este artigo faz parte da *etapa 1: revisar as diferenças de API* do [processo de migração de aplicativos](migrate-azure-ad-graph-planning-checklist.md).
 
 Muitos recursos do Microsoft Graph funcionam de forma semelhante aos seus colegas do Azure AD Graph. No entanto, alguns foram alterados e/ou aprimorados. Aqui, você aprenderá como adaptar seus aplicativos para aproveitar essas diferenças.  Frequentemente, as alterações são secundárias, mas vale a pena.
 
@@ -27,14 +27,13 @@ Este artigo explora como o Microsoft Graph trata:
 
 Se o aplicativo usar extensões de esquema de diretório do Azure AD Graph, você poderá continuar usando as mesmas APIs básicas (com as URLs de solicitação do Microsoft Graph) para:
 
+- Gerenciar definições de propriedade de extensão usando a propriedade **extensionproperties** no recurso [Application] [/Graph/API/Resources/Application? View = Graph-REST-v 1.0).
 - Ler valores de extensão usando GET e`$select`
 - Pesquisar valores de extensão usando GET e`$filter`
 - Atualizar valores de extensão usando PATCH
 - Remover valores de extensão usando PATCH (definido como **nulo**)
 
-No entanto, o Microsoft Graph não oferece uma maneira de gerenciar as definições de extensão de esquema de diretório do Azure AD Graph ou para exibir todas as definições de extensão de esquema disponíveis em um locatário.
-
-Em vez disso, o Microsoft Graph fornece uma experiência de desenvolvedor aprimorada de extensões de esquema, que atualmente não é compatível com as extensões de esquema de diretório do Azure AD Graph. Para saber mais, veja [extensões de esquema em adicionar dados personalizados](/graph/extensibility-overview#schema-extensions).
+O Microsoft Graph fornece uma experiência de desenvolvedor aprimorada de extensões de esquema, que hoje não é compatível com versões anteriores com extensões de esquema de diretório do Azure AD Graph. Para saber mais, veja [extensões de esquema em adicionar dados personalizados](/graph/extensibility-overview#schema-extensions).
 
 ### <a name="recommended-migration-approach"></a>Abordagem de migração recomendada
 
@@ -47,7 +46,7 @@ Em seguida, você pode alternar para usar extensões de esquema do Microsoft Gra
 - Seu aplicativo usa extensões de esquema de diretório criadas por meio do AD Connect ou
 - Seu aplicativo depende dos valores de extensão do esquema de diretório nas declarações de token.
 
->**Observação**: usar as propriedades de extensão de esquema do Microsoft Graph como declarações em um token usando declarações opcionais também não é suportada.
+>**Observação**: o uso de propriedades de extensão de esquema do Microsoft Graph como declarações em um token que usa declarações opcionais ou em uma regra de associação dinâmica também não tem suporte.
 
 Para alternar para o modelo de extensão de esquema do Microsoft Graph mais recente, você precisará:
 
@@ -63,7 +62,7 @@ O Azure AD Graph chama essas consultas diferenciais.  No Microsoft Graph, eles s
 
 A tabela a seguir destaca as principais semelhanças e diferenças:
 
-||Gráfico do Azure AD | Microsoft Graph |
+||Azure AD Graph. | Microsoft Graph |
 |----|----|----|
 | _Solicitação de dados inicial_ | Usa um parâmetro de consulta:<br>`GET /groups?deltaLink=` | O usa uma função: <br> `GET /groups/delta` |
 | _Obter novas alterações_ | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |
@@ -71,7 +70,7 @@ A tabela a seguir destaca as principais semelhanças e diferenças:
 | _Controlar alterações para o directoryObjects_ | Obtém alterações para vários recursos (usuário e grupo) na mesma operação:&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | Usa consultas separadas com o Microsoft Graph, uma para cada recurso. |
 | _Obter alterações de recursos e relações_ | Todas as solicitações retornam as alterações de recurso e relação, se o recurso tiver relações. | `GET /groups/delta?$expand=members` |
 | _Resposta que indica itens novos e alterados_ | <ul><li><p>Representa instâncias recém-criadas usando sua representação padrão.</p></li><li><p>As instâncias atualizadas são representadas por sua ID com *pelo menos* as propriedades que foram atualizadas. Outras propriedades podem ser incluídas.</p></li><li><p>As relações são representadas `directoryLinkChange` como o tipo.</p></li></ul>|<ul><li><p>Representa instâncias recém-criadas usando sua representação padrão.</p></li><li><p>As instâncias atualizadas são representadas por sua ID com *pelo menos* as propriedades que foram atualizadas. Outras propriedades podem ser incluídas.</p></li><li><p>As relações são representadas como anotações na representação de recursos padrão. Essas anotações usam o formato `propertyName@delta`, por exemplo `members@delta` , para as alterações de associação de um grupo.</p></li></ul> |
-| _Resposta indicando itens excluídos_| Indica um item excluído com uma propriedade adicional de *AAD.* IsDeleted definida como true. | Indica um item excluído com a \@anotação removida. Ele também pode conter um código de motivo, que indica se o item foi excluído, mas pode ser restaurado ou excluído permanentemente. |
+| _Resposta indicando itens excluídos_| Indica um item excluído com uma propriedade adicional de *AAD. IsDeleted* definida como true. | Indica um item excluído com a \@anotação removida. Ele também pode conter um código de motivo, que indica se o item foi excluído, mas pode ser restaurado ou excluído permanentemente. |
 
 Se seu aplicativo já estiver armazenando dados de estado, considere o uso de "sincronizar a partir de agora" mostrado anteriormente para ajudar a gerenciar a transição para consultas Delta.
 

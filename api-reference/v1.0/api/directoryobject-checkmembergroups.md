@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 66bceedacb8f9acbb163a8ad4a75bb35980f0279
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 83f72dac2451d801f10798f20eaf080b8efcfed4
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364779"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658734"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 
@@ -21,14 +21,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All e Group. Read. All, User. Read. All e Group. Read. All, Directory. Read. All    |
+|Delegado (conta corporativa ou de estudante) | User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All, User. adread. All e Group. Read. All, Directory. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read.All e Group.Read.All, Directory.Read.All |
+|Aplicativo | User. Read. All e GroupMember. Read. All, User. Read. All e Group. Read. All, Directory. Read. All |
 
 Use as orientações de cenário a seguir para ajudar a determinar quais tipos de permissão usar:
-- Use as permissões User. Read e Group. Read. All para verificar as associações de grupo para o usuário conectado.
-- Use as permissões User. ReadBasic. All e Group. Read. All ou User. Read. All e Group. Read. All para verificar as associações de grupo para qualquer usuário.
-- Use a permissão Group. Read. All para verificar os membros do grupo para um grupo.
+- Use as permissões User. Read e GroupMember. Read. All ou User. Read e Group. Read. All para obter associações de grupo para o usuário conectado.
+- Use User. ReadBasic. All e GroupMember. Read. All, User. Read. All e GroupMember. Read. All, User. ReadBasic. All e Group. Read. All ou User.. All e Group. Read. All para obter associações de grupo para qualquer usuário.
+- Use a permissão GroupMember. Read. All ou Group. Read. All para obter associações de grupo para um grupo.
 - Use a permissão Directory. Read. All para verificar as associações de grupo para um objeto de diretório.
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,7 +85,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

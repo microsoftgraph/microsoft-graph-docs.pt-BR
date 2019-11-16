@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 456490645724063b862de06fd3b70fc72a4d4144
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 67f911224b48bf3b4b630336f0fc8184f64790f4
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934743"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656519"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -30,7 +30,7 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br>propriedade|Comentários|
 |---|---|---|
 | **appRoleAssignments** | versão &nbsp; - &nbsp; beta **appRoleAssignments** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **CreationType** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_| |
+| **creationType** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_| |
 | **deletedTimestamp**| versão &nbsp; - &nbsp; beta **deleteddatetime à** <br> v 1.0 &nbsp; - &nbsp; **deleteddatetime à** | |
 | **dirSyncEnabled** | versão &nbsp; - &nbsp;beta **onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **facsimileTelephoneNumber** | versão &nbsp; - &nbsp; beta **fax** <br> v 1.0 &nbsp; - &nbsp; **fax** | |
@@ -68,7 +68,7 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **applicationTemplateId** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **availableToOtherTenants** | versão &nbsp; - &nbsp; beta **signInAudience** <br> v 1.0 &nbsp; - &nbsp; **signInAudience** | |
 | **errorUrl**| versão &nbsp; - &nbsp;beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_   | Essa propriedade foi preterida.|
-| **Home Page**| &nbsp; - &nbsp; **Web Beta/homePageUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/homePageUrl** | homepage agora faz parte do novo recurso da Web.|
+| **homepage**| &nbsp; - &nbsp; **Web Beta/homePageUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/homePageUrl** | homepage agora faz parte do novo recurso da Web.|
 | **informationalUrls**| &nbsp; - &nbsp; **informações** beta <br> &nbsp; - &nbsp; **informações sobre** o v 1.0 | |
 | **knownClientApplications**| &nbsp;-&nbsp;**API beta/knownClientApplications** <br> v 1.0 &nbsp; - &nbsp; **API/knownClientApplications** | knownClientApplications agora é parte do novo recurso de API. |
 | **logoutUrl**| &nbsp; - &nbsp; **Web Beta/logoutUrl** <br> v 1.0 &nbsp; - &nbsp; **Web/logoutUrl** | logoutUrl agora é parte do recurso Web. |
@@ -82,7 +82,6 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **recordConsentConditions**| versão &nbsp; - &nbsp;beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_   | Essa propriedade foi preterida.|
 | **replyUrls**| &nbsp;-beta&nbsp;**Web/redirectUris**, **publicClient/redirectUris**<br> v 1.0 &nbsp; - &nbsp; **Web/redirectUris**, **publicClient/redirectUris** | Além de ser renomeado, o redirectUris agora faz parte dos novos recursos da Web e do publicClient. Isso permite que os desenvolvedores usem URIs específicos para seus clientes Web e públicos (como um aplicativo instalado em um dispositivo de área de trabalho). | |
 | **samlMetadataUrl**| versão &nbsp; - &nbsp; beta _ainda não disponível_  <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_  | |
-| **extensãoproperties**| &nbsp; - &nbsp; **extensões** beta <br> v 1.0 &nbsp; - &nbsp; **extensionproperties** | |
 | **Pontos de extremidade**|  versão &nbsp; - &nbsp; beta _não disponível_  <br> v 1.0 &nbsp; - &nbsp; _não disponível_  | Essa propriedade foi preterida, mas está planejada para o servicePrincipalName.|
 
 ## <a name="approleassignment-differences"></a>Diferenças do AppRoleAssignment
@@ -213,7 +212,7 @@ O gráfico do Azure AD CertificateAuthorityInformation é renomeado como **certi
 | **trustedIssuer** | &nbsp;-&nbsp;**emissor** beta<br> &nbsp;-&nbsp;**emissor** de v 1.0 | |
 | **trustedIssuerSki** | versão&nbsp;-&nbsp;beta**issuerSki**<br> v 1.0 &nbsp; - &nbsp; **issuerSki** | |
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais sobre as [diferenças de método](migrate-azure-ad-graph-method-differences.md) entre o Azure ad Graph e o Microsoft Graph.
 - Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .

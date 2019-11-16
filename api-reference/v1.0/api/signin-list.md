@@ -6,10 +6,10 @@ author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 0e619f0d5577ffe4db91142eccc257d9fa93e643
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "36729249"
 ---
 # <a name="list-signins"></a>Listar logons
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
