@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 232f20f4266cc2d23580f0f7db9fdf48a9d02f41
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: c531cef2e992e4c2d974424624c9104dd36ff49a
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622175"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656631"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -87,6 +87,7 @@ Esse recurso permite:
 |consentProvidedForMinor|String|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |country|String|O país/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
 |createdDateTime | DateTimeOffset |Data de criação do objeto do usuário. |
+|creationType|String|Indica se a conta de usuário foi criada como uma conta corporativa ou de estudante (`null`), uma conta externa (`Invitation`), uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`) ou uma inscrição de autoatendimento usando a verificação de email (`EmailVerified`). Somente leitura.|
 |department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. Com suporte para $filter.|
@@ -117,7 +118,7 @@ Esse recurso permite:
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
 |onPremisesSyncEnabled|Booliano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
-|otherMails|String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte a $filter.|
+|otherMails|Coleção String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte a $filter.|
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[passwordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
@@ -382,6 +383,7 @@ Veja a seguir uma representação JSON do recurso
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
   "businessPhones": ["string"],
+  "creationType": "string",
   "city": "string",
   "companyName": "string",
   "consentProvidedForMinor": "string",
@@ -416,7 +418,7 @@ Veja a seguir uma representação JSON do recurso
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
+  "otherMails": ["string"],
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],

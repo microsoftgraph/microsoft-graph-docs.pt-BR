@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8ecaa74a375638f1dd732ea16b1df24a5c396f2c
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 20ddf2960b4b14c76b73a7cf0ff207357035fb33
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006786"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656505"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -583,14 +583,19 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Ler todos os grupos | Permite ao aplicativo listar grupos, e ler suas propriedades e todas as associações do grupo em nome do usuário conectado.  Também permite ao aplicativo ler calendário, conversas, arquivos e outros tipos de conteúdo de todos os grupos que o usuário conectado pode acessar. | Sim | Não |
 | _Group.ReadWrite.All_ |    Ler e gravar todos os grupos| Permite ao aplicativo criar grupos e ler todas as propriedades e associações do grupo em nome do usuário conectado.  Também permite ao aplicativo ler calendário, conversas, arquivos e outros tipos de conteúdo de todos os grupos que o usuário conectado pode acessar. Além disso, permite aos proprietários do grupo gerenciar seus grupos, e permite aos membros do grupo atualizar o conteúdo do grupo. | Sim | Não |
+| _GroupMember.Read.All_ |    Ler associações de grupo | Permite que o aplicativo liste grupos, leia as propriedades básicas do grupo e leia a associação de todos os grupos aos quais o usuário conectado tenha acesso. | Sim | Não |
+| _GroupMember.ReadWrite.All_ |    Ler e gravar associações de grupo | Permite que o aplicativo liste grupos, leia propriedades básicas, leia e atualize a associação dos grupos aos quais o usuário conectado tem acesso. As propriedades e os proprietários do grupo não podem ser atualizados e os grupos não podem ser excluídos. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Ler todos os grupos | Permite ao aplicativo ler os associados de todos os grupos sem um usuário conectado. Também permite ao aplicativo ler o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos. <br><br> **OBSERVAÇÃO:** nem todas as APIs dE grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md). | Sim |
-| _Group.ReadWrite.All_ | Ler e gravar todos os grupos | Permite que o aplicativo crie grupos, leia e atualize as associações do grupo e exclua grupos. Também permite ao aplicativo ler e escrever o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos. Todas essas operações podem ser executadas pelo aplicativo sem um usuário conectado. <br><br> **Observação:** nem todas as APIs de grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md).| Sim |
+| _Group.Read.All_ | Ler todos os grupos | Permite ao aplicativo ler os associados de todos os grupos sem um usuário conectado. Também permite ao aplicativo ler o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos.<br/><br/>**Observação:** nem todas as APIs de grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md). | Sim |
+| _Group.ReadWrite.All_ | Ler e gravar todos os grupos | Permite que o aplicativo crie grupos, leia e atualize as associações do grupo e exclua grupos. Também permite ao aplicativo ler e escrever o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos. Todas essas operações podem ser executadas pelo aplicativo sem um usuário conectado.<br/><br/>**Observação:** nem todas as APIs de grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md).| Sim |
 | _Group.Selected_ |    Acessar grupos selecionados | **Observação: Essa permissão está exposta no portal do Azure para um recurso que não está disponível para uso geral. Não use essa permissão, pois ela está sujeita a alterações.** | Sim |
+| _GroupMember.Read.All_ |    Ler associações de grupo | Permite que o aplicativo leia grupos e as propriedades básicas do grupo para todos os grupos sem um usuário conectado. | Sim |
+| _GroupMember.ReadWrite.All_ |    Ler e gravar associações de grupo | Permite que o aplicativo liste grupos, leia propriedades básicas, leia e atualize a associação dos grupos aos quais esse aplicativo tem acesso sem um usuário conectado. As propriedades e os proprietários do grupo não podem ser atualizados e os grupos não podem ser excluídos. | Sim |
+| _Group.Create_ |    Criar grupos | Permite que o aplicativo de chamada crie grupos sem um usuário conectado. Não permite ler, atualizar ou excluir grupos. | Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -613,13 +618,14 @@ As Permissões de grupo também são usadas para controlar o acesso a APIs e rec
 * _Group.Read.All_: Ler todos os grupos do Office 365 dos quais o usuário conectado é membro (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
 * _Group.Read.All_: Ler todo o conteúdo do grupo do Office 365, como conversas (`GET /groups/{id}/conversations`).
 * _Group.ReadWrite.All_: Atualizar propriedades do grupo, como fotografias (`PUT /groups/{id}/photo/$value`).
-* _Group.ReadWrite.All_: Atualizar os membros do grupo (`POST /groups/{id}/members/$ref`).
+* _GroupMember.ReadWrite.All_: Atualizar os membros do grupo (`POST /groups/{id}/members/$ref`).
 > **Observação:** Isso também requer o _User.ReadBasic.All_ para ler o usuário para adicionar como membro.
 
 #### <a name="application"></a>Aplicativo
 
 * _Group.Read.All_: Localizar todos os grupos com nomes que começam com "Vendas" (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_: O serviço daemon cria novos eventos no calendário de um grupo do Office 365 (`POST /groups/{id}/events`).
+* _Group.Create_: Criar um novo grupo (`POST /groups`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 

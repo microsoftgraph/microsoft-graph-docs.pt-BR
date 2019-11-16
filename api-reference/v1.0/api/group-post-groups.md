@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9d513455839702a08ce2efb399c2ed0a15c16a97
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dd3939d195322f336308507e1e45f4698c9cfff2
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337150"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658706"
 ---
 # <a name="create-group"></a>Criar grupo
 Crie um novo grupo conforme especificado no corpo da solicitação. Você pode criar os seguintes tipos de grupos:
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,10 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 
 Especifique outras propriedades graváveis conforme necessário para o seu grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 
->**Observação:** Criar um Grupo do Office 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários criará o grupo anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
+>**Observação:** Criar um grupo usando o Group. Criar a permissão de aplicativo sem especificar os proprietários criará o grupo anonimamente e o grupo não será modificado. Você pode usar a operação `POST` e adicionar proprietários ao grupo enquanto a cria para especificar proprietários que podem modificar o grupo.
+
+> Criar um Grupo do Office 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários criará o grupo anonimamente. Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.  
+
 
 ### <a name="grouptypes-options"></a>Opções de groupTypes
 
