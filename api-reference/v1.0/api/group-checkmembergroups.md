@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 90c524ecb447b6020e350ae7c8879c939d2421cd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 39bfad874a41d1c59bf7464afe7c398f84bd103c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337556"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658846"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
-| Aplicativo                            | Group. Read. All, Directory. Read. All. Directory.ReadWrite.All                               |
+| Aplicativo                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All. Directory.ReadWrite.All                               |
 
 
 

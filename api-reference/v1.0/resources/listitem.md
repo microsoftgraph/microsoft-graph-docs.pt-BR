@@ -2,20 +2,20 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 title: recurso listItem
-description: Este recurso representa um item em uma lista do sharepoint.
+description: Representa um item em uma lista do sharepoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 883e7257b55826abf5cf60197c7854161f568fa5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 49de3376064728b3bdf3f1657dd76bc197447410
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036467"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657478"
 ---
 # <a name="listitem-resource"></a>recurso listItem
 
-Este recurso representa um item em uma **[list][]** do SharePoint.
+Representa um item em uma lista do **[SharePoint][]**.
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.
 
 ## <a name="methods"></a>Métodos
@@ -25,7 +25,7 @@ Todos os exemplos são relativos a uma **[lista][]**:`https://graph.microsoft.co
 
 | Método                    | Tipo de retorno | Descrição
 |:-------------------------------|:-------------------|:------
-| [Get][]                   | lisItem| Obter um item em uma lista.
+| [Get][]                   | listItem| Obter um item em uma lista.
 | [Obter valores de coluna][Obter]       | listItem | Obter valores de coluna de listItem.
 | [Obter análises][]              | [itemAnalytics][]| Obter análises para este recurso. 
 | [Obter atividades por intervalo][] | [itemActivityStat][]| Obter uma coleção de itemActivityStats dentro do intervalo de tempo especificado.

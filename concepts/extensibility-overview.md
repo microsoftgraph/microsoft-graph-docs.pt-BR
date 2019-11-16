@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece um único ponto de extremidade de API que
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 856f427e864eb4fa6a16c1ea758288523ae23c52
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: e725b3951d40100a442f89bc2a4f5444c1ed2db0
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969763"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656540"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
@@ -116,7 +116,7 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Extensões do esquema de diretório do Azure AD
 
-O Microsoft Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Apesar de você ter que usar a [API do Graph do Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) para criar e gerenciar as definições de extensões de esquema de diretório, pode usar a API do Microsoft Graph para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
+O Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Você pode usar a API da Microsoft Graph para gerenciar as[definições de propriedade de extensão](/graph/api/resources/extensionproperty?view=graph-rest-1.0) e para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
 
 ## <a name="permissions"></a>Permissões
 
