@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 20ddf2960b4b14c76b73a7cf0ff207357035fb33
+ms.openlocfilehash: ce7cfcf8e438f948a2c17232b391271f17144a59
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656505"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704154"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -808,7 +808,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Ler emails do usuário | Permite ao aplicativo ler emails em caixas de correio do usuário. | Não | Sim
-| _Mail.ReadBasic_ |    Ler emails do usuário em modo básico (visualização) | (Visualização) Permite que o aplicativo leia a caixa de correio do usuário conectado, exceto o corpo, previewBody, anexos e quaisquer propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Não | Sim
+| _Mail.ReadBasic_ |    Ler emails básicos do usuário | Permite que o aplicativo leia a caixa de correio do usuário conectado, exceto o corpo, previewBody, anexos e quaisquer propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Não | Sim
 | _Mail.ReadWrite_ |    Acesso de leitura e gravação aos emails do usuário | Permite ao aplicativo criar, ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails.| Não | Sim
 | _Mail.Read.Shared_ |    Ler email compartilhado e de usuário | Permite que o aplicativo leia os emails que o usuário pode acessar, incluindo os próprios contatos do usuário e os emails compartilhados. | Não | Não
 | _Mail.ReadWrite.Shared_ |    Ler e registrar usuário e emails compartilhados | Permite que o aplicativo crie, leia, atualize e exclua emails que o usuário tem permissão de acessar, incluindo os emails compartilhados e os do próprio usuário. Não inclui a permissão para enviar emails. | Não | Não
@@ -822,7 +822,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    Ler emails em todas as caixas de correio | Permite ao aplicativo ler emails em todas as caixas de correio sem um usuário conectado.| Sim |
-| _Mail.ReadBasic.All_ |    Ler os emails básicos de todos usuários (visualização) | (Visualização) Cartões Permite que o aplicativo leia todas as caixas de correio de usuários, exceto corpo, previewBody, anexos e propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Sim | Não
+| _Mail.ReadBasic.All_ |    Ler emails básicos de todos usuários  | Permite que o aplicativo leia todas as caixas de correio de usuários, exceto corpo, previewBody, anexos e propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Sim | Não
 | _Mail.ReadWrite_ |    Ler e gravar emails em todas as caixas de correio | Permite ao aplicativo criar, ler, atualizar e excluir emails em todas as caixas de correio sem um usuário conectado. Não inclui a permissão para enviar emails. | Sim |
 | _Mail.Send_ |    Enviar email como qualquer usuário | Permite ao aplicativo enviar emails como qualquer usuário sem um usuário conectado. | Sim |
 | _MailboxSettings.Read_ |  Ler as configurações de caixa de correio do usuário | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails. | Não |

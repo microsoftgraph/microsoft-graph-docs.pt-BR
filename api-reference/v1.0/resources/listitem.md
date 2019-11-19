@@ -6,16 +6,16 @@ description: Representa um item em uma lista do sharepoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 49de3376064728b3bdf3f1657dd76bc197447410
+ms.openlocfilehash: e9a9010e8700d7e6ebd6a2e3d030fba7cab79f83
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657478"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703760"
 ---
 # <a name="listitem-resource"></a>recurso listItem
 
-Representa um item em uma lista do **[SharePoint][]**.
+Representa um item em uma **[lista][]** do Sharepoint.
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.
 
 ## <a name="methods"></a>Métodos
