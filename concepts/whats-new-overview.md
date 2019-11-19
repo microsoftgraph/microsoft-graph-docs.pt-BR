@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 7d7d48b807c484bcdc237bf78124fec10ce0a54f
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f1fe26cf74a99e0b94bdb8adf9c0ae36d24621c2
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303143"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656491"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -33,6 +33,9 @@ Registre [aplicativos](/graph/api/resources/application?view=graph-rest-1.0) que
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 Atualizações de [novembro](changelog.md#november-2019) do Intune
+
+### <a name="notifications"></a>Notificações
+Use as novas notificações simples [SDK Web](https://aka.ms/GNSDK) em vez do [SDK do Project Rome](https://github.com/Microsoft/project-rome), para aproveitar um modelo de autenticação aperfeiçoado e suporte a aplicativos da Web usando o push da Web. 
 
 ### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
 
@@ -109,7 +112,7 @@ Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.c
 - [Crie e envie notificações](/graph/api/user-post-notifications?view=graph-rest-beta) a todos os clientes de aplicativos em todos os pontos de extremidade do dispositivo que um usuário está conectado, sem ter que gerenciar as permissões de usuário delegadas.
 - Use [os pontos de extremidade da política de destino](/graph/api/resources/targetpolicyendpoints?view=graph-rest-beta) em [notificações](/graph/api/resources/notification?view=graph-rest-beta) do usuário para direcionar especificamente notificações para as plataformas Windows, iOS, Android ou WebPush.
 - Especificar uma [política de retirada](/graph/api/resources/fallbackpolicy?view=graph-rest-beta) nas notificações para pontos de extremidade iOS, enviar notificações brutas de alta prioridade que podem não ser entregues aos dispositivos, caso contrário, devido a restrições específicas da plataforma, como o modo de economia de bateria.
-- Use os novos SDKs de notificação simples para Windows, iOS, Android e JavaScript, no lugar do[SKD do Project Rome](https://github.com/Microsoft/project-rome) para aproveitar as vantagens de um modelo de autenticação aperfeiçoado e o suporte a aplicativos Web usando o push da Web.
+
  
 ### <a name="powershell-sdk"></a>SDK do PowerShell 
 Os desenvolvedores e profissionais de TI podem observar o lançamento da [SDK do Microsoft Graph PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell), que criará módulos que contêm cmdlets para criar solicitações da API REST do Microsoft Graph.
