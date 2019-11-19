@@ -5,18 +5,20 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce5671933589f6066698df3e082390207474b49
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 787ecfeaefc7e5b140dc6338195af7d58e1a8ccd
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939863"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703916"
 ---
 # <a name="searchhit-resource-type"></a>tipo de recurso searchHit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um único resultado dentro da lista de resultados de pesquisa.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="properties"></a>Propriedades
 

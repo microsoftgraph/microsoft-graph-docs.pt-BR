@@ -5,18 +5,20 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 93142dcc672c5fee18a5f98d0988352e6c02cbd0
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 59809860bd2d0954ee8323f9c8e4fe982fb4faa7
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935062"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703823"
 ---
 # <a name="searchquerystring-resource-type"></a>tipo de recurso searchQueryString
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Os termos de pesquisa da consulta.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="properties"></a>Propriedades
 

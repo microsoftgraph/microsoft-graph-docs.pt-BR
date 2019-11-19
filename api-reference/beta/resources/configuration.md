@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 080a966ae9435c189a34155d108e1c48235ffb07
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c7808d014ee2ab19fda9eceb6064375cf5904d52
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938888"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704147"
 ---
 # <a name="configuration-resource-type"></a>tipo de recurso de configuração
 
@@ -18,11 +18,13 @@ ms.locfileid: "37938888"
 
 Especifica IDs de aplicativo adicionais que têm permissão para gerenciar o externalConnection e indexar o conteúdo em um [externalConnection](../resources/externalconnection.md).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo              | Descrição |
 |:---------------|:------------------|:------------|
-| authorizedApps | String collection | Uma coleção de IDs de aplicativo para aplicativos registrados do Active Directory do Azure que têm permissão para gerenciar o externalConnection e indexar o conteúdo no externalConnection. |
+| authorizedApps | Coleção de cadeias de caracteres | Uma coleção de IDs de aplicativo para aplicativos registrados do Active Directory do Azure que têm permissão para gerenciar o externalConnection e indexar o conteúdo no externalConnection. |
 
 ## <a name="json-representation"></a>Representação JSON
 

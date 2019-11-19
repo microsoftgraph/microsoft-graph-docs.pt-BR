@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3e56b40a4ce91fa1b70aa01060c7ad5272fc1087
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 78752e2fe3375c10dcce57e3ba23e890b0ab66b5
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939057"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704175"
 ---
 # <a name="externalconnection-resource-type"></a>tipo de recurso externalConnection
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma conexão com a Microsoft Search a partir de uma fonte externa.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>Métodos
 
@@ -46,7 +48,7 @@ Uma conexão com a Microsoft Search a partir de uma fonte externa.
 |:-------------|:---------------------------------------------------------|:---|
 | items        | coleção [externalItem](externalitem.md)               | Somente leitura. Anulável. |
 | operations   | coleção [connectionOperation](connectionoperation.md) | Somente leitura. Anulável. |
-| esquemas       | [esquemas](schema.md)                                      | Somente leitura. Anulável. |
+| esquemas       | [schema](schema.md)                                      | Somente leitura. Anulável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

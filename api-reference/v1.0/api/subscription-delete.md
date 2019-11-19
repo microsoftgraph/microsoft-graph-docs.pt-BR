@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e8cfa6ced74f6080f8b1cd63a222d7928cba17e3
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: ad49621da8bac1092678940e0255c395e7e8ea88
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36341856"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704161"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -28,7 +28,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
-|[mensagem](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[Mensagem](../resources/message.md) | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

@@ -5,16 +5,18 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: b1f599a4610ce4cb939c7733949eac4c0ddba371
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 9f2d09cbd82a21874cf870c3214100115b225a1f
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939527"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704376"
 ---
 # <a name="create-update-and-delete-connections-to-the-microsoft-search-service"></a>Criar, atualizar e excluir conexões com o serviço da Pesquisa da Microsoft
 
 As conexões de serviços externos com o serviço da Pesquisa da Microsoft são representadas pelo recurso [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) no Microsoft Graph.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Uma conexão permite que seu aplicativo [defina um esquema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) para os itens que serão indexados e forneça um ponto de extremidade para o seu serviço [adicionar, atualizar ou excluir itens do índice](search-index-manage-items.md). Criar uma conexão é a primeira etapa para um aplicativo para adicionar itens ao índice de pesquisa.
 

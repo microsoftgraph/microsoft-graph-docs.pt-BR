@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e1a3e1a74d4ddf66017f36fa3f373d910dcdf793
+ms.openlocfilehash: 5b4a34190fd2ec6d61cdfb03e004e7673d60cddb
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657897"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703739"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -223,7 +223,7 @@ Content-type: application/json
   "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
     },

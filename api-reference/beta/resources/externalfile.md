@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: bee1ad36769066550e1a6adc3ce7427602c66e66
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c3e51c27985927f5ea71f8ca618c4055a609fc06
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938980"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703746"
 ---
 # <a name="externalfile-resource-type"></a>tipo de recurso externalfile
 
@@ -18,13 +18,15 @@ ms.locfileid: "37938980"
 
 Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da Microsoft. Esse tipo deriva do tipo [externalItem](externalitem.md) .
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="methods"></a>Métodos
 
 | Método                                                        | Tipo de retorno  | Descrição |
 |:--------------------------------------------------------------|:-------------|:--|
-| [Criar externalfile](../api/externalconnection-put-items.md) | externalfile | Criar um externalfile. |
-| [Atualizar externalfile](../api/externalitem-update.md)          | externalfile | Atualize um externalfile. |
-| [Delete](../api/externalitem-delete.md)                       | None         | Excluir um externalfile. |
+| [Criar externalfile](../api/externalconnection-put-items.md) | externalFile | Criar um externalfile. |
+| [Atualizar externalfile](../api/externalitem-update.md)          | externalFile | Atualize um externalfile. |
+| [Excluir](../api/externalitem-delete.md)                       | None         | Excluir um externalfile. |
 
 ## <a name="properties"></a>Propriedades
 

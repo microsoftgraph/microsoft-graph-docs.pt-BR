@@ -5,16 +5,18 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 522566fb59771dc9a4efab305a271dc89a4843af
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c5017943f966792e0246d3764a1c3e373718c63c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939520"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704333"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-search-service-index"></a>Criar, atualizar e excluir itens adicionados por seu aplicativo no índice do serviço da Pesquisa da Microsoft
 
 Os itens adicionados pelo seu aplicativo ao serviço da Pesquisa da Microsoft são representados pelos recursos [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) no Microsoft Graph.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 O recurso **externalItem** representa um tipo personalizado. Ele deve ser usado quando os itens que você adiciona ao índice usam um esquema personalizado não representado pelo recurso **externalFile**. Por exemplo, tíquetes de assistência técnica ou lista de produtos.
 

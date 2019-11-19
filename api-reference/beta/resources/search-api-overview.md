@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 871ad982eea98f45823376e993422a371b87612c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: afbb9ba469dad7751422902ea4a9876b6ca6b904
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938776"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704126"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -20,12 +20,13 @@ Usando a API de Pesquisa da Microsoft, os aplicativos podem consultar dados do O
 
 As solicitações de pesquisa são executadas no contexto do usuário conectado, identificado usando um [token de acesso com permissões delegadas](/graph/auth-v2-user).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="common-use-cases"></a>Casos de uso comuns
 
 A API de pesquisa fornece um método [query](../api/search-query.md) para pesquisar os dados na Pesquisa da Microsoft. Esta seção lista os casos de uso comuns, com base nas propriedades definidas no corpo da solicitação **query**.
 
 As solicitações de pesquisa são executadas em nome do usuário. Os resultados da pesquisa são cortados para impor o controle de acesso aplicado aos itens.  Por exemplo, no contexto de arquivos, as permissões em relação aos arquivos serão avaliadas na parte da solicitação de pesquisa. Os usuários não podem acessar mais itens na pesquisa do que poderiam na API de enumeração.
-
 
 | Casos de uso | Propriedades a serem definidas no corpo da solicitação de consulta |
 |:------------------|:---------|
@@ -42,11 +43,11 @@ As solicitações de pesquisa são executadas em nome do usuário. Os resultados
 Defina o escopo da solicitação de pesquisa usando a propriedade **entityTypes** no conteúdo da solicitação **query**.
 Estes são os tipos de entidade com suporte:
 
- - [event](event.md)
- - [message](message.md)
- - [driveItem](driveitem.md)
- - [externalFile](externalfile.md)
- - [externalItem](externalitem.md)
+- [event](event.md)
+- [message](message.md)
+- [driveItem](driveitem.md)
+- [externalFile](externalfile.md)
+- [externalItem](externalitem.md)
 
 ### <a name="page-search-results"></a>Resultados da pesquisa de página
 
@@ -74,7 +75,6 @@ Práticas recomendadas:
     | 2    | 25 | 50 |
     | 3    | 75 | 75 |
     | 4    | 150 | 100 |
-
 
 ### <a name="get-the-most-relevant-emails"></a>Obter os emails mais relevantes
 

@@ -5,18 +5,20 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3cb46a41b0c46fe5f70d94a64a91489c9c2e7d43
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e9501831ef2e83d23aa4a5587b9afd8eaa7f5ee8
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936584"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703902"
 ---
 # <a name="searchquery-resource-type"></a>tipo de recurso searchQuery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opcionais.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="properties"></a>Propriedades
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8bd5d47f444d7054aecbf7b0a63e57643837a340
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 77c17345a6a9408a8208f73f03dd98033f2b6a36
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938783"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704133"
 ---
 # <a name="schema-resource-type"></a>tipo de recurso de esquema
 
@@ -18,12 +18,14 @@ ms.locfileid: "37938783"
 
 Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [conexão](externalconnection.md)de pesquisa da Microsoft.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="methods"></a>Métodos
 
 | Método                                                    | Tipo de retorno                   | Descrição |
 |:----------------------------------------------------------|:------------------------------|:--|
 | [Criar esquema](../api/externalconnection-post-schema.md) | Nenhum *ou* [esquema](schema.md) | Registrar o esquema de conexão. |
-| [Obter esquema](../api/schema-get.md)                        | [esquemas](schema.md)           | Ler as propriedades de um objeto Schema. |
+| [Obter esquema](../api/schema-get.md)                        | [schema](schema.md)           | Ler as propriedades de um objeto Schema. |
 
 ## <a name="properties"></a>Propriedades
 

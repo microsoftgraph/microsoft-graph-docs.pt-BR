@@ -5,18 +5,20 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: cc0e750f34af4bc6013d5e4bfbae4b007347b270
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b5da13640d2c62eb8258ca1a154ddcb8c2e1b353
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937620"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703704"
 ---
 # <a name="search-query"></a>pesquisa: consulta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 Se bem-sucedido, este método retorna `HTTP 200 OK` o código de resposta e um objeto da coleção [searchResponse](../resources/searchresponse.md) no corpo da resposta.
 
-## <a name="common-use-cases"></a>Casos de usos comuns
+## <a name="common-use-cases"></a>Casos de uso comuns
 
 - [Mensagens de email](/graph/search-concept-messages) de pesquisa
 - [Eventos de calendário](/graph/search-concept-events) de pesquisa
@@ -64,6 +66,8 @@ Se bem-sucedido, este método retorna `HTTP 200 OK` o código de resposta e um o
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "search_query"
@@ -97,6 +101,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

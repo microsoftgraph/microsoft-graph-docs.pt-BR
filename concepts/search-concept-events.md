@@ -4,16 +4,18 @@ description: Você pode pesquisar no próprio calendário do usuário.
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 1b749c0b45b8250d011589e20b05a3d715b40bcb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2db61462670a553376467cf2329d26cbb339c452
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939555"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703971"
 ---
-# <a name="search-calendar-events"></a>Eventos de calendário de pesquisa
+# <a name="search-calendar-events"></a>Pesquisar eventos do calendário
 
 Seu aplicativo pode no calendário principal de um usuário. A identidade do usuário usada para Pesquisar é baseada no token de autorização.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 ## <a name="example"></a>Exemplo
 
@@ -23,23 +25,25 @@ Este exemplo procura a palavra-chave "contoso" no calendário do usuário e irá
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
-Content-Type: application/json
+Content-Type: application/json
 ```
 
 ```json
 {
-  "requests": [
-    {
-       "entityTypes": ["microsoft.graph.event"],
-       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25
-    }
-  ]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.event"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
 ```
 

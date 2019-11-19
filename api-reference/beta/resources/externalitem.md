@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ffcc69cd71d2508a2ceae568d767dc991af063d6
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 900cf61536204ff5924aea0de268befad6626b37
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938973"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704168"
 ---
 # <a name="externalitem-resource-type"></a>tipo de recurso externalItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da Microsoft.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="methods"></a>Métodos
 
