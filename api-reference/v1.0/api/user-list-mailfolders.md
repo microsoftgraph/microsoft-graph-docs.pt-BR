@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 484b2320b76da8cd31c6a4fd45ce915aec1315ba
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: fd71b5a76624edbc5c1473dd7e25aedf4437a58b
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729013"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702500"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -21,9 +21,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    |
-|Aplicativo | Mail.Read, Mail.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Aplicativo | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

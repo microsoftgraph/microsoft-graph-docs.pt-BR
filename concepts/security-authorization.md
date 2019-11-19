@@ -4,12 +4,12 @@ description: Os dados de segurança acessíveis por meio da API de Segurança do
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 238ab0a575fe79a18bb691ec8de0816744a95a86
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 1911a454b5d4e9c131b2854ff71a81c6e0afeeda
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969372"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656498"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
@@ -123,18 +123,17 @@ Para conceder as permissões:
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Atribuir funções do Microsoft Azure AD aos usuários
 
-Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Microsoft Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados confidenciais de segurança, a API de Segurança do Microsoft Graph também exige que os usuários recebam a função **Leitor de segurança** do Microsoft Azure AD. Para detalhes, confira [Atribuir funções de administrador](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador a um usuário](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
+Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados confidenciais de segurança, a API de Segurança do Microsoft Graph também exige que os usuários recebam a função **Leitor de segurança** do Microsoft Azure AD. Para obter detalhes, confira [Permissões da função de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador e não-administrador aos usuários com o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Observação:** Você precisa ser um administrador de locatários para executar esta etapa.
 
-Para atribuir funções aos usuários:
+Para atribuir uma função a um usuário:
 
-- Entre no [portal do Azure](https://portal.azure.com) (https://portal.azure.com).
-- No menu, selecione **Azure Active Directory ** > **Usuários**.
-- Selecione o nome do usuário.
-- Selecione **Gerenciar ** > **Função de diretório**.
-- Selecione **Administrador limitado** e escolha a caixa de seleção **Leitor de segurança**.
-- Selecione **Salvar**.
+1. Entre no [portal do Azure](https://portal.azure.com) (https://portal.azure.com).
+2. Clique no ícone no canto superior esquerdo para expandir o menu do portal do Azure. Selecione **Azure Active Directory** > **Usuários**.
+3. Clique no nome do usuário.
+4. Escolha **Funções atribuídas** e, em seguida, **Adicionar atribuição**.
+5. Selecione **Leitor de segurança** e clique em **Adicionar**.
 
 ## <a name="create-an-authentication-code"></a>Crie um código de autenticação
 

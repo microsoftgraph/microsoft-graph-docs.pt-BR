@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6f0b1edb4de49294780f8d4e00fe9f3f3f6470f3
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: 80b1db383e27d1b4a71eb2d45ba047026707fee3
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113937"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702493"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -32,9 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    |
-|Aplicativo | Mail.Read, Mail.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Aplicativo | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

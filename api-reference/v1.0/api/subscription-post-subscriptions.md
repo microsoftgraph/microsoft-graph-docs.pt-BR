@@ -5,12 +5,12 @@ localization_priority: Priority
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 98ee86313bbfbbd2bd6e813bc87e2035f09c5460
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: c9926e294abb7ef616c90fafe6b8756228c55de6
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "36341785"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703795"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -30,7 +30,7 @@ Assinar um aplicativo de escuta para receber notificações quando o tipo de alt
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
-|[mensagem](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

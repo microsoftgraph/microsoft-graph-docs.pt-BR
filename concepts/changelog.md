@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 4bc10422734c73cf32453a5cbf7b6a9be8692aa9
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 7da78622ae08b2e2b356eb72fdc2494e14155c42
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303136"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656596"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -23,7 +23,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | Beta  | Foi adicionada a capacidade de [atualizar uma sala ou roomlist](/graph/api/resources/place-get?view=graph-rest-beta).|
-
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -61,7 +60,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Alteração|beta|As seguintes propriedades foram alteradas no tipo complexo [credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension?view=graph-rest-beta):<br/>**teamIdentifier** de obrigatório para opcional<br/>|
 |Adição|beta|As propriedades **companyPortalBlockedActions**, **showAzureADEnterpriseApps** e **showOfficeWebApps** foram adicionadas à entidade [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)|
 
-
 ### <a name="education"></a>Educação
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -75,6 +73,9 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | v1.0 | Foi adicionado um novo tipo de entidade: [aplicativo](/graph/resources/application?view=graph-rest-v1.0).|
 | Adição | v1.0 | Novas permissões delegadas [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Adição | v1.0 | Adicionada nova permissão de aplicativo [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
+| Adição | v1.0 | As novas permissões delegadas e de aplicativo  [GroupMember.Read.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) e [GroupMember.ReadWrite.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions)  foram adicionadas para obter e atualizar o recurso da  [API de grupo](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
+| Adição | v1.0 | A nova permissão de aplicativo [Group.Create](https://docs.microsoft.com/graph/permissions-reference#group-permissions) foi adicionada para criar o recurso da [API de grupo](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
+| Adição | Beta e v1.0 | A propriedade **creationType** foi adicionada ao recurso de [usuário](/graph/resources/user?view=graph-rest-v1.0).|
 
 ### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
 
@@ -393,6 +394,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição | Beta | Foi adicionado o recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-beta), que representa uma identidade usada para entrar em uma conta de usuário. |
 | Adição | Beta | Adicionada a propriedade **synchronizationJobSettings** ao recurso [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta).|
 | Adição | Beta | Novos valores possíveis para a propriedade **rasão** no recurso [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta).|
+| Adição | Beta | Adicionada a capacidade de gerenciar logon único de senha nas credenciais de [servicePrincipal object](/graph/api/resources/serviceprincipal?view=graph-rest-beta). |
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
