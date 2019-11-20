@@ -5,18 +5,24 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1c9093f6c86f11588b0758a80fdbe8682d6d216
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 246eb11fbcffb8c86c7d50cd186eec9473d6028e
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005966"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747585"
 ---
 # <a name="call-mute"></a>chamada: sem áudio
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Permite que o aplicativo se desative.
+
+Este é um servidor sem som, o que significa que o servidor irá descartar todos os pacotes de áudio desse participante, mesmo que o participante continue a transmitir áudio.
+
+Para obter mais detalhes sobre como lidar com operações sem som, consulte [muteParticipantOperation](../resources/muteparticipantoperation.md)
+
+> **Observação:** Este método só tem suporte para chamadas de grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,16 +45,19 @@ POST /communications/calls/{id}/mute
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|O contexto do cliente.|
+|clientContext|Cadeia de Caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
+
+> **Observação:** Depois que essa operação retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -93,7 +102,7 @@ Content-Type: application/json
 <!-- { 
   "blockType": "response", 
   "truncated": true, 
-  "@odata.type": "microsoft.graph.commsOperation" 
+  "@odata.type": "microsoft.graph.muteParticipantOperation" 
 } --> 
 ```http
 HTTP/1.1 200 OK
@@ -104,13 +113,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.commsOperation",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
+  "@odata.type": "#microsoft.graph.muteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"

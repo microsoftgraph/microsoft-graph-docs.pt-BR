@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7db831333982126b0edd24a5664388a89e8bc74d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: de47162a9a2c3b4baf31f8b3b11f50100730d3b9
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005905"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747578"
 ---
 # <a name="call-unmute"></a>chamada: ativar mudo
 
@@ -20,11 +20,11 @@ Permitir que o aplicativo se desative sozinho.
 
 Este é um servidor que está desativado, o que significa que o servidor começará a enviar pacotes de áudio para este participante a outros participantes novamente.
 
-Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsOperation.md).
+Para obter mais informações sobre como lidar com as operações de desativação, consulte [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).
 
-> **Observação:** Isso só é suportado para chamadas de grupo.
+> **Observação:** Este método só tem suporte para chamadas de grupo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
@@ -51,10 +51,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|O contexto do cliente.|
+|clientContext|Cadeia de Caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.
 
 >**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
 
@@ -98,7 +98,7 @@ Content-Length: 46
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -109,13 +109,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.commsOperation",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
+  "@odata.type": "#microsoft.graph.unmuteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#unmuteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"

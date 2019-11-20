@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c9a0ec61c99a265e99c8c9f2d55864793e8486f2
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3d3d0f4a33eb8a6386d3b479a17233534f61da12
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936731"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747571"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Obter conditionalAccessPolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | Policy.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

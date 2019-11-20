@@ -5,12 +5,12 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5e8af42e62003b8aed9000efd2fa6de635c8bb67
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: c6221f32d36b0fa58b6e400745f949f460462b55
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658825"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747916"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipalName: createPasswordSingleSignOnCredentials
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
+|id|Cadeia de caracteres|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
 |las|coleção [Credential](../resources/credential.md)|Uma lista de objetos de credencial que definem o fluxo de entrada completo.|
 
 ## <a name="response"></a>Resposta
@@ -64,6 +64,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um no
 ### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo de uma solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_createpasswordsinglesignoncredentials"
@@ -89,6 +91,20 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-createpasswordsinglesignoncredentials-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-createpasswordsinglesignoncredentials-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-createpasswordsinglesignoncredentials-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

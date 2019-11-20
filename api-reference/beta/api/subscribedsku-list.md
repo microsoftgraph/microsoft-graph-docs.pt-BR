@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db959d41948fb967193972c700c8d7ddd7cbd642
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 01b378c0839e7f7305d71fecdfc96fc52223bf07
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724460"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747774"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Organization. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Organization. Read. All, Directory. Read. All, Organization. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+
+Este método não oferece suporte aos [parâmetros de consulta OData](/graph//query-parameters) para ajudar a personalizar a`$filter` resposta (não tem suporte).
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Descrição|
@@ -67,7 +69,7 @@ GET https://graph.microsoft.com/beta/subscribedSkus
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedskus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscribedskus-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

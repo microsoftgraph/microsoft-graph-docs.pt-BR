@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1892a7f6f0331cad2b0ef74adfba857dd21b2b2
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 344aa48fd3b816e5d72141a5388fd1abdce50406
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302348"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747592"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -29,9 +29,9 @@ Você não precisa de nenhuma permissão para responder a uma chamada ponto a po
 | :-------------- | :-----------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                        |
 | Delegado (conta pessoal da Microsoft) | Não suportado                        |
-| Aplicativo     | Calls. JoinGroupCalls. All ou calls. JoinGroupCallsasGuest. All                                                         |
+| Aplicativo     | Calls. JoinGroupCalls. All ou calls. JoinGroupCallsasGuest. All |
 
-> **Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão calls. AccessMedia. All.                                                   |
+> **Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão calls. AccessMedia. All. Você deve ter pelo menos uma das seguintes permissões para garantir que o `source` na notificação de chamada de entrada seja descriptografado: calls. AccessMedia. All, calls. initiate. All, calls. InitiateGroupCall. All, calls. JoinGroupCall. All, calls. JoinGroupCallAsGuest. All. O `source` é a informação do chamador na notificação de chamada de entrada. Sem pelo menos uma dessas permissões, o `source` permanecerá criptografado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {"blockType": "ignored" } -->
@@ -52,12 +52,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.    |
-|acceptedModalities|Coleção String                         |A lista de aceitar modalidades. O valor possível são `audio`: `video`, `videoBasedScreenSharing`,. Obrigatório para responder a uma chamada. |
+|callbackUri       |String                                    |Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.    |
+|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são `audio`: `video`, `videoBasedScreenSharing`,. Obrigatório para responder a uma chamada. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta
-Este método retorna `202 Accepted` um código de resposta.
+Este método retorna um `202 Accepted` código de resposta.
 
 ## <a name="examples"></a>Exemplos
 O exemplo a seguir mostra como chamar essa API.

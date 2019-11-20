@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c79ab7fe3993a2007b367db9992ae4fbf3b7ee0d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5ed519aabb270648e83ae8dc3d9cf46cf8ff12e6
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936648"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747547"
 ---
 # <a name="list-policies"></a>Listar políticas
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
+|Aplicativo                            | Policy.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

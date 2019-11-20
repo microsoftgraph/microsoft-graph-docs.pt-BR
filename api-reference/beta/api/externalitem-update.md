@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: edc1899554f56580dee387003fa7c55593db6f9f
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 05eef675ccb6b79e3919fae9a50e90b2d9a31326
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994476"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747192"
 ---
 # <a name="update-externalitem"></a>Atualizar externalitem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualizar as propriedades de um [externalitem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,8 +42,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md). |
+| ID de conexão | cadeia de caracteres | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
+| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

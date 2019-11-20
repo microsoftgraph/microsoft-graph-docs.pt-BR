@@ -1,22 +1,22 @@
 ---
-title: Tipo de recurso MuteParticipantOperation
-description: Descreve o formato de resposta de uma operação do participante sem som de chamada.
+title: tipo de recurso unmuteParticipantOperation
+description: Descreve o formato de resposta de uma chamada operação de desativação de participantes.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6a3e48179f2b08d5bb1097507fc4751f1d7d2b4e
+ms.openlocfilehash: d3c843ffcf46d8816f4ad3853d42cb5d0fa34422
 ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748382"
+ms.locfileid: "38748045"
 ---
-# <a name="muteparticipantoperation-resource-type"></a>Tipo de recurso MuteParticipantOperation
+# <a name="unmuteparticipantoperation-resource-type"></a>tipo de recurso unmuteParticipantOperation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve o formato de resposta de uma operação do participante sem som de chamada.
+Descreve o formato de resposta de uma chamada operação de desativação de participantes.
 
 ## <a name="properties"></a>Propriedades
 
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.muteParticipantOperation"
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation"
 }-->
 ```json
 {
@@ -54,7 +54,7 @@ Veja a seguir uma representação JSON do recurso.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "muteParticipantOperation resource",
+  "description": "unmuteParticipantOperation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

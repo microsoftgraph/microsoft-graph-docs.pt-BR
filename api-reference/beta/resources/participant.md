@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e2fae206fb76ffe3c00b91d992c874e200eeae98
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: c4bcaca9ea85a85d87e0584f37f0efeb89ed3773
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006596"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748011"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
@@ -20,24 +20,24 @@ O tipo de participante.
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                          | Tipo de retorno                              | Descrição                                       |
-|:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Obter participante](../api/participant-get.md)                    | [participante](participant.md)            | Leia as propriedades do objeto **participante** .    |
-| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure o mixer de áudio do participante.            |
-| [Convidar](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Convidar um participante para a chamada.                 |
-| [Participante sem áudio](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Tirar o áudio de um participante em uma chamada.                     |
-| [Ativar mudo de todos os participantes](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Ativar mudo de todos os participantes da reunião.         |
+| Método                                                 | Tipo de retorno                                                 | Descrição                                    |
+|:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
+| [Obter participante](../api/participant-get.md)           | [participante](participant.md)                               | Leia as propriedades do objeto **participante** . |
+| [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Configure o mixer de áudio do participante.         |
+| [Convidar](../api/participant-invite.md)                 | [commsOperation](commsoperation.md)                         | Convidar um participante para a chamada.              |
+| [Participante sem áudio](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Tirar o áudio de um participante em uma chamada.                  |
+| [Ativar mudo de todos os participantes](../api/participant-muteall.md) | [commsOperation](commsoperation.md) | Ativar mudo de todos os participantes da reunião.      |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo                                     | Descrição                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | A ID do participante.                                          |
+| id                   | Cadeia de caracteres                                   | A ID do participante.                                          |
 | informações                  | [participantInfo](participantinfo.md)    | O participante do participante.                          |
-| isInLobby            | booliano                                  | true se o participante está no lobby                          |
-| IsMuted              | booliano                                  | true se o participante estiver mudo (cliente ou servidor sem som)    |
+| isInLobby            | Boolean                                  | `true`Se o participante estiver no lobby.                          |
+| IsMuted              | Boolean                                  | `true`Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
-| los             | String                                   | Um blob de dados fornecido pelo participante na lista     |
+| los             | Cadeia de Caracteres                                   | Um blob de dados fornecido pelo participante na lista.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre o fato de o participante ter capacidade de gravação. |
 
 ## <a name="relationships"></a>Relações

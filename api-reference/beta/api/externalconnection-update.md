@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4f9e521b8fb9c003a5850b80ac06088f10dff628
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 33dd46c03056026337713b35197be5a65ed17485
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994510"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747194"
 ---
 # <a name="update-connection"></a>Atualizar conexão
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualizar as propriedades de um [externalConnection](../resources/externalconnection.md).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:--------------|:-----------------------------------------------|:------------|
 | Configuration | [configuration](../resources/configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar o conteúdo na conexão. |
 | description   | String                                         | Descrição da conexão exibida no centro de administração do Microsoft 365. |
-| nome          | String                                         | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
+| name          | Cadeia de caracteres                                         | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
 
 ## <a name="response"></a>Resposta
 

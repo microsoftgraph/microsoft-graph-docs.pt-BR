@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cbf65ee703e22895e25ae18b2a94c4a1740527f2
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: af906dad7ad24ad9c82411be3b7a896fcafa216c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006498"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747977"
 ---
 # <a name="participant-mute"></a>participante: sem áudio
 
@@ -20,11 +20,11 @@ Ativar mudo de um participante específico na chamada.
 
 Este é um servidor sem som, o que significa que o servidor irá descartar todos os pacotes de áudio desse participante, mesmo que o participante continue a transmitir áudio.
 
-Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsOperation.md).
+Para obter mais informações sobre como lidar com operações sem som, consulte [muteParticipantOperation](../resources/muteParticipantoperation.md).
 
-> **Observação:** Isso só é suportado para chamadas de grupo.
+> **Observação:** Este método só tem suporte para chamadas de grupo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
@@ -51,10 +51,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|clientContext|Cadeia de Caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
 
 >**Observação:** Whem essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
 

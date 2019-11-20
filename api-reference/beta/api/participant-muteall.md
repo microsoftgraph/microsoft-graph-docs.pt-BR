@@ -5,18 +5,21 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00ace588a763a9e6d1df64830820be1ad6308567
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: a4f5157e4441269258ed578a26a6ea700b8e4e0a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006463"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747963"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ative o mudo para todos os participantes em uma chamada.
+
+> **Observação:** Esta API foi preterida e será removida até 15 de março de 2020. Para fazer o mudo de um único participante, confira [participante: sem áudio](participant-mute.md).
+
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,17 +42,18 @@ POST /communications/calls/{id}/participants/muteAll
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|String collection|Os participantes a serem mudo.|
-|clientContext|String|O contexto do cliente.|
+|participants|Coleção de cadeias de caracteres|Os participantes a serem mudo.|
+|clientContext|Cadeia de Caracteres|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.

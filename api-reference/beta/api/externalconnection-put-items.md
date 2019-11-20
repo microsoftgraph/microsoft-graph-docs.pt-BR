@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 13c794fc7d03fa607bc61d57d731bdf2d3d04f71
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 10adfc916f2c4f30f19944188b1b375080c6e5bf
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994540"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747204"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
@@ -19,6 +19,8 @@ ms.locfileid: "37994540"
 Crie um novo [externalItem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md).
 
 Essa API pode ser usada para criar um item personalizado ou um arquivo. Especifique o tipo que você está criando incluindo a `@odata.type` Propriedade no corpo JSON. O [externalConnection](../resources/externalconnection.md) recipiente deve ter um [esquema](../resources/schema.md) registrado do tipo correspondente.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,8 +44,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md). Se nenhum item já existir com isso `id`, um novo item é criado. Se já existir um item com isso `id`, ele será substituído pelo objeto enviado no corpo. |
+| ID de conexão | cadeia de caracteres | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
+| item-id       | cadeia de caracteres | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md). Se nenhum item já existir com isso `id`, um novo item é criado. Se já existir um item com isso `id`, ele será substituído pelo objeto enviado no corpo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

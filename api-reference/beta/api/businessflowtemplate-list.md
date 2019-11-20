@@ -4,13 +4,13 @@ description: No recurso de revisões do Azure AD Access, liste todos os objetos 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-author: ''
-ms.openlocfilehash: cce66344a9420efb6a9b78c15c6d6f66a8f20c71
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+author: markwahl-msft
+ms.openlocfilehash: 8a46bff027ecfa98924fbfe66b6fd8b2b8035efd
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718776"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747599"
 ---
 # <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-businessflowtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-businessflowtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,20 +87,24 @@ Content-type: application/json
     "value":[
         {
             "id": "842169fe-e1b7-4ce9-98b6-6a9db02eec6b",
-            "displayName": "Access Reviews for External Users' access to groups"
+            "displayName": "Access reviews of guest user memberships of a group"
         },
         {
             "id": "7fbc909b-efe1-4c72-8ae6-99cb30b882de",
-            "displayName": "Access Reviews for External Users' access to applications"
+            "displayName": "Access reviews of guest user assignments to an application"
         },
         {
             "id": "50839a84-e23c-44a7-a8cc-16e162afc656",
-            "displayName": "Access Reviews for All Users' assignment to applications"
+            "displayName": "Access reviews of assignments to an application"
         },
         {
             "id": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-            "displayName": "Access Reviews for Office 365 Groups' membership"
-        } 
+            "displayName": "Access reviews of memberships of a group"
+        },
+        {
+            "id": "d7e0b82d-997f-44d0-ac5e-de9deb087c15",
+            "displayName": "Access reviews of memberships of an Azure AD role"
+        }
     ]
 }
 

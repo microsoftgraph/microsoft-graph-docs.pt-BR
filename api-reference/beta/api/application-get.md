@@ -1,16 +1,16 @@
 ---
 title: Obter aplicativo
-description: Obtenha as propriedades e os relacionamentos de um objeto application
+description: Obtenha as propriedades e os relacionamentos de um objeto application.
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b515fb45ad0329059a85102d42243b3e6fa7c202
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e5a2fd02e7cf078aee3898b881d4754169ef0d6a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934309"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747626"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
