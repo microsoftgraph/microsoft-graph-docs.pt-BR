@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a43dedd654f67a7c8ffa84931476526a2f44bb44
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 2d6e406f621222757166da162ff7e026f5ce239c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538417"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38751763"
 ---
 ```objc
 
@@ -25,15 +25,20 @@ MSGraphObjectIdentity *identities = [[MSGraphObjectIdentity alloc] init];
 [identities setIssuerAssignedId:@"johnsmith"];
 [identitiesList addObject: identities];
 MSGraphObjectIdentity *identities = [[MSGraphObjectIdentity alloc] init];
+[identities setSignInType:@"emailAddress"];
+[identities setIssuer:@"contoso.onmicrosoft.com"];
+[identities setIssuerAssignedId:@"jsmith@yahoo.com"];
+[identitiesList addObject: identities];
+MSGraphObjectIdentity *identities = [[MSGraphObjectIdentity alloc] init];
 [identities setSignInType:@"federated"];
 [identities setIssuer:@"facebook.com"];
 [identities setIssuerAssignedId:@"5eecb0cd"];
 [identitiesList addObject: identities];
 [user setIdentities:identitiesList];
 MSGraphPasswordProfile *passwordProfile = [[MSGraphPasswordProfile alloc] init];
-[passwordProfile setForceChangePasswordNextSignIn: true];
 [passwordProfile setPassword:@"password-value"];
 [user setPasswordProfile:passwordProfile];
+[user setPasswordPolicies:@"DisablePasswordExpiration"];
 
 NSError *error;
 NSData *userData = [user getSerializedDataWithError:&error];
