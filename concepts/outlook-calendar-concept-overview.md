@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e5e8ff0c1b3eb15fd2a8cd68de11c9995cf693b9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 18f322178c8ec7f29acd4af3d7296cffded834c9
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969812"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756774"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
@@ -73,6 +73,7 @@ Com a globalização, as atuais reuniões de negócios geralmente envolvem parti
 - Como exemplo no Outlook, os clientes podem organizar uma reunião e incluir participantes de uma sala de conferências em Seattle, uma cafeteria em Paris e um escritório doméstico na China. De forma programática, a propriedade **locations** do evento, que é uma coleção de objetos [location](/graph/api/resources/location?view=graph-rest-1.0), pode refletir esse nível de detalhes em **displayName** e **locationType** para cada **location**. Veja um [exemplo](/graph/api/event-get?view=graph-rest-1.0#request-2).
 - O Outlook oferece aos clientes a flexibilidade de organizar eventos e especificar um fuso horário para cada um dos horários de início e término de um evento. Para oferecer suporte a essa flexibilidade, por padrão, a API de calendário retorna os horários de **início** e **término** de um **evento** em UTC e oferece as propriedades **originalStartTimeZone** e **originalEndTimeZone** para observar os fusos horários usados quando o evento foi criado.
 - Como alternativa, você pode especificar o cabeçalho `Prefer: outlook.timezone="{time zone name}"` para que uma operação de evento GET retorne **início** e **término** no fuso horário especificado. O nome do fuso horário pode ser qualquer um dos nomes compatíveis com o Windows e, também, os nomes nesta [lista](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). Confira um [exemplo](/graph/api/event-get?view=graph-rest-1.0#request-1) de cabeçalho `Prefer` em uso.
+- Disponível somente na versão prévia em beta: as organizações que oferecem suporte a provedores de reuniões online podem configurar calendários do Outlook para usar esses provedores. Você pode facilmente [organizar os eventos nesses calendários como reuniões online](outlook-calendar-online-meetings.md).
 
 ## <a name="build-apps-with-location-awareness-and-provide-intelligent-context-preview"></a>Criar aplicativos com reconhecimento de local e fornecer contexto inteligente (prévia)
 
@@ -104,8 +105,9 @@ Está procurando a referência de API para esse serviço?
 - Saiba mais:
   - [Encontrar possíveis horários de reunião no calendário do Outlook](findmeetingtimes-example.md)
   - [Obter informações de disponibilidade de usuários e recursos](outlook-get-free-busy-schedule.md)
+  - [Propor horários de reunião em um calendário do Outlook (versão prévia)](outlook-calendar-meeting-proposals.md)
+  - [Usar o Outlook para organizar e participar de reuniões online (versão prévia)](outlook-calendar-online-meetings.md)
   - [Agendar compromissos repetidos como eventos recorrentes no Outlook](outlook-schedule-recurring-events.md)
-  - [Propor horários de reunião em um calendário do Outlook](outlook-calendar-meeting-proposals.md)
   - [Obter eventos compartilhados](outlook-get-shared-events-calendars.md)
   - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
 - Examine a referência da [API de calendário](/graph/api/resources/calendar?view=graph-rest-1.0) do Outlook.
