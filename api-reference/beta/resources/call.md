@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9b5c920bfb332445688ab327d424b6f9abb8e4e8
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 65e17466121dedef36c72a0091974e2a2329494c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006751"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747994"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -24,32 +24,32 @@ Embora a mesma identidade não possa ser convidada várias vezes, é possível q
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                            | Tipo de retorno                                       | Descrição                                  |
-|:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Get call](../api/call-get.md)                                    | [call](call.md)                                   | Leia propriedades do objeto **call**.      |
-| [Delete](../api/call-delete.md)                                   |                                                   | Exclua ou desligue uma **chamada** ativa.        |
-| **Tratamento de chamadas**                                                 |                                                   |                                              |
-| [Answer](../api/call-answer.md)                                   |                                                   | Atenda às chamadas recebidas.                     |
-| [Reject](../api/call-reject.md)                                   |                                                   | Rejeite as chamadas recebidas.                     |
-| [Redirect](../api/call-redirect.md)                               |                                                   | Redirecione as chamadas recebidas.                   |
-| [Transfer](../api/call-transfer.md)                               |                                                   | Transferir uma chamada                              |
-| **Chamadas em Grupo**                                                   |                                                   |                                              |
-| [List participants](../api/call-list-participants.md)             | [participant](participant.md) collection          | Obtenha uma coleção do objeto participant.         |
-| [Invite Participants](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | Convide participantes para a chamada ativa.      |
-| [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Ative o mudo para todos os participantes em uma chamada.           |
-| [Ativar mudo para participante](../api/participant-mute.md)                    | [commsOperation](commsoperation.md)               | Ative o mudo para participante na chamada de grupo.        |
-| [Configure Audio Mixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | Configure áudio na conversa com vários participantes.  |
-| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Crie um novo audioRoutingGroup postando-o na coleção audioRoutingGroups. |
-| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Obtenha uma coleção do objeto audioRoutingGroup.  |
-| **Interactive-Voice-Response**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Reproduza uma solicitação na chamada.                     |
-| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Grave um clipe de áudio curto da chamada.     |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancele o processamento de mídia.                     |
-| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Inscreva-se nos tons DTMF.                     |
-| **Operações do próprio participante**                                   |                                                   |                                              |
-| [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Ative o mudo para si mesmo na chamada.                       |
-| [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Desative o mudo automaticamente na chamada.                     |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Inicie e interrompa a tela de compartilhamento na chamada.   |
+| Método                                                             | Tipo de retorno                                                 | Descrição                                                                     |
+|:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [Get](../api/call-get.md)                                     | [call](call.md)                                             | Leia propriedades do objeto **call**.                                         |
+| [Delete](../api/call-delete.md)                                    | Nenhum                                                            | Exclua ou desligue uma **chamada** ativa.                                           |
+| **Tratamento de chamadas**                                                  |                                                        |                                                                                 |
+| [Resposta](../api/call-answer.md)                                    | Nenhum                                                            | Atenda às chamadas recebidas.                                                        |
+| [Reject](../api/call-reject.md)                                    | Nenhum                                                            | Rejeite as chamadas recebidas.                                                        |
+| [Redirecionar](../api/call-redirect.md)                                | Nenhum                                                            | Redirecione as chamadas recebidas.                                                      |
+| [Transfer](../api/call-transfer.md)                                | Nenhum                                                            | Transferir uma chamada                                                                 |
+| **Chamadas em Grupo**                                                    |                                                             |                                                                                 |
+| [List participants](../api/call-list-participants.md)              | [participant](participant.md) collection                    | Obtenha uma coleção do objeto participant.                                            |
+| [Convidar participantes](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Convide participantes para a chamada ativa.                                         |
+| [Ativar mudo para todos os participantes](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Ative o mudo para todos os participantes em uma chamada.                                              |
+| [Ativar mudo para participante](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Ative o mudo para participante na chamada de grupo.                                           |
+| [Configurar o mixer de áudio](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | Configure áudio na conversa com vários participantes.                                     |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Crie um novo audioRoutingGroup postando-o na coleção audioRoutingGroups. |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Obtenha uma coleção do objeto audioRoutingGroup.                                      |
+| **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
+| [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Reproduza uma solicitação na chamada.                                                        |
+| [Record](../api/call-record.md)                                    | [recordOperation](recordoperation.md)                       | Grave um clipe de áudio curto da chamada.                                        |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)      | [commsOperation](commsoperation.md)                         | Cancele o processamento de mídia.                                                        |
+| [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | Inscreva-se nos tons DTMF.                                                        |
+| **Operações do próprio participante**                                    |                                                             |                                                                                 |
+| [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Ative o mudo para si mesmo na chamada.                                                          |
+| [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Desative o mudo automaticamente na chamada.                                                        |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Nenhum                                                            | Inicie e interrompa a tela de compartilhamento na chamada.                                      |
 
 ## <a name="properties"></a>Propriedades
 
