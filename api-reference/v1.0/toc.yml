@@ -217,6 +217,8 @@
             - name: Objetos de diretório
               href: resources/directoryobject.md
               items:
+                - name: Verificar objetos member
+                  href: api/user-checkmemberobjects.md
                 - name: Listar dispositivos de propriedade
                   href: api/user-list-owneddevices.md
                 - name: Listar dispositivos registrados
@@ -350,6 +352,8 @@
                   href: api/group-post-owners.md
                 - name: Verificar grupos de membros
                   href: api/group-checkmembergroups.md
+                - name: Verificar objetos member
+                  href: api/group-checkmemberobjects.md
                 - name: Criar grupo
                   href: api/group-post-groups.md
                 - name: Excluir grupo
@@ -1499,7 +1503,7 @@
                 - name: Resumo do estado da configuração de política de conformidade do dispositivo
                   href: resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-devicecompliancepolicysettingstatesummary-get.md
@@ -1512,7 +1516,7 @@
                 - name: Ação de conformidade agendada do dispositivo para a regra
                   href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -3294,10 +3298,8 @@
                   href: api/device-update.md
                 - name: Excluir dispositivo
                   href: api/device-delete.md
-                - name: Listar proprietários registrados
-                  href: api/device-list-registeredowners.md
-                - name: Listar usuários registrados
-                  href: api/device-list-registeredusers.md
+                - name: Verificar objetos member
+                  href: api/device-checkmemberobjects.md
                 - name: Criar proprietário registrado
                   href: api/device-post-registeredowners.md
                 - name: Criar usuário registrado
@@ -3306,6 +3308,10 @@
                   href: api/device-list-memberof.md
                 - name: Listar grupos transitivos de dispositivo
                   href: api/device-list-transitivememberof.md
+                - name: Listar proprietários registrados
+                  href: api/device-list-registeredowners.md
+                - name: Listar usuários registrados
+                  href: api/device-list-registeredusers.md
             - name: Objeto de diretório
               href: resources/directoryobject.md
               items:

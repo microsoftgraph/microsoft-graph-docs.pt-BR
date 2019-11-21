@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f6a5eebba2e68cfa0b9deb248ec6abb5bc185358
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 8a6c46f1ce391dfc055dd18960df7d85c6d19b0a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702472"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748507"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -23,6 +23,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | Beta  | Foi adicionada a capacidade de [atualizar uma sala ou roomlist](/graph/api/resources/place-get?view=graph-rest-beta).|
+
+### <a name="cloud-communications-calls-and-online-meetings"></a>Comunicações na nuvem (Chamadas e reuniões online)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Alteração        | Beta        | Tipo de retorno alterado para os métodos [sem áudio](/graph/api/call-mute?view=graph-rest-beta) e [silenciar participante](/graph/api/participant-mute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). | 
+| Alteração        | Beta        | Tipo de retorno alterado para método de [ativar áudio](/graph/api/call-unmute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). | 
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
