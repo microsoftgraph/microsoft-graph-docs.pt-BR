@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7da78622ae08b2e2b356eb72fdc2494e14155c42
+ms.openlocfilehash: f6a5eebba2e68cfa0b9deb248ec6abb5bc185358
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656596"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702472"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -64,18 +64,31 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionada a propriedade [classSettings](/api-reference/beta/resources/teamclasssettings.md) ao recurso [equipe](/api-reference/beta/resources/team.md) para permitir que os chamadores obtenham configurações específicas de uma equipe de tipo Classe.|
+| Adição | beta | Adicionada a propriedade [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-beta) ao recurso [equipe](/graph/api/resources/team?view=graph-rest-beta) para permitir que os chamadores obtenham configurações específicas de uma equipe de tipo Classe.|
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Adição | v1.0 | Foi adicionado um novo tipo de entidade: [aplicativo](/graph/resources/application?view=graph-rest-v1.0).|
+| Adição | v1.0 | Foi adicionado um novo tipo de entidade: [aplicativo](/graph/api/resources/application?view=graph-rest-1.0).|
 | Adição | v1.0 | Novas permissões delegadas [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Adição | v1.0 | Adicionada nova permissão de aplicativo [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
-| Adição | v1.0 | As novas permissões delegadas e de aplicativo  [GroupMember.Read.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) e [GroupMember.ReadWrite.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions)  foram adicionadas para obter e atualizar o recurso da  [API de grupo](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
-| Adição | v1.0 | A nova permissão de aplicativo [Group.Create](https://docs.microsoft.com/graph/permissions-reference#group-permissions) foi adicionada para criar o recurso da [API de grupo](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
-| Adição | Beta e v1.0 | A propriedade **creationType** foi adicionada ao recurso de [usuário](/graph/resources/user?view=graph-rest-v1.0).|
+| Adição | v1.0 | Adicionadas novas permissões delegadas e de aplicativo  [GroupMember.Read.All](permissions-reference.md#group-permissions) e [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions)  para obter e atualizar o recurso do  [grupo](/graph/api/resources/group?view=graph-rest-1.0) .
+| Adição | v1.0 | Adicionada nova permissão de aplicativo [Group.Create](permissions-reference.md#group-permissions) para criar o recurso do **grupo** .
+| Adição | Beta e v1.0 | Adicionada a propriedade **creationType** ao recurso de [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
+
+### <a name="mail-outlook"></a>Email (Outlook)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Adicionado suporte para a permissão delegada [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) e para a permissão de aplicativo [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) para [criar](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [obter](/graph/api/subscription-get?view=graph-rest-beta), [atualizar](/graph/api/subscription-update?view=graph-rest-beta) e [excluir](/graph/api/subscription-delete?view=graph-rest-beta) assinaturas para as notificações de alteração na mensagem. |
+| Adição | v1.0 | Adicionado suporte para a permissão delegada Mail.ReadBasic e para a permissão de aplicativo Mail.ReadBasic.All para:<br />- [Listar mensagens](/graph/api/user-list-messages?view=graph-rest-1.0)<br />- [Obter mensagem](/graph/api/message-get?view=graph-rest-1.0) <br />- [Listar pastas de email](/graph/api/user-list-mailfolders?view=graph-rest-1.0)<br />- [Obter pasta de email](/graph/api/mailfolder-get?view=graph-rest-1.0)<br />- [Listar pastas filho](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Listar mensagens na pasta](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Obter o delta de mensagem](/graph/api/message-delta?view=graph-rest-1.0)<br />- [Obter a pasta de email delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) <br />- [Criar](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [obter](/graph/api/subscription-get?view=graph-rest-1.0), [atualizar](/graph/api/subscription-update?view=graph-rest-1.0) e [excluir](/graph/api/subscription-delete?view=graph-rest-1.0) assinaturas para as notificações de alteração na mensagem.|
+
+### <a name="identity-and-access-azure-ad--conditional-access"></a>Identidade e acesso (Azure AD) | Acesso condicional
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | beta | Adicionada permissão Policy.Read.All no nível do aplicativo para operações de leitura nas políticas de acesso condicional e nos locais nomeados.|
 
 ### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
 
@@ -212,9 +225,9 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição | Beta e v1.0 | As propriedades **fabricante** e **modelo**da entidade [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). |
 | Adição | v1.0 | Adicionado novo recurso [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0). Esses contatos são gerenciados pela organização e são diferentes dos [contatos pessoais](outlook-contacts-concept-overview.md)|
 | Adição | v1.0 | Adicionado novo recurso [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0). |
-| Adição | v1.0 | Adicionada nova entidade [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
-| Adição | v1.0 | Adicionado novo tipo de complexo [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
-| Adição | v1.0 | Adicionada uma nova relação para o **certificateBasedAuthConfiguration** do recurso da [organização](/graph/api/resources/organization?view=graph-rest-v1.0). Isso permite [uma autenticação baseada em certificado do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
+| Adição | v1.0 | Adicionada nova entidade [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-1.0). |
+| Adição | v1.0 | Adicionado novo tipo de complexo [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0). |
+| Adição | v1.0 | Adicionada uma nova relação para o **certificateBasedAuthConfiguration** do recurso da [organização](/graph/api/resources/organization?view=graph-rest-1.0). Isso permite [uma autenticação baseada em certificado do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
 
 ### <a name="identity-and-access-azure-ad--conditional-access"></a>Identidade e acesso (Azure AD) | Acesso condicional
 
@@ -259,8 +272,6 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição        | Beta          | [Adicionando anexos de arquivo de até 150 MB](outlook-large-attachments.md) a uma instância de [mensagem](/graph/api/resources/message?view=graph-rest-beta). |
 | Adição        | Beta          | O tipo complexo [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-beta), a ação [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) para a entidade de [anexo](/graph/api/resources/attachment?view=graph-rest-beta) e a enumeração **attachmentType**. |
 | Alterado         | Beta          | Estendida a entidade [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) existente que foi usada pelo [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) para que esta se aplique ao **anexo** também. |
-| Adição        | v1.0          | Adicionado o parâmetro **mensagem** ao método para [responder uma mensagem rapidamente](/graph/api/message-reply?view=graph-rest-1.0). |
-
 
 ### <a name="notifications"></a>Notificações
 
@@ -280,7 +291,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 ### <a name="users"></a>Usuários
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição | v1.0 | Adicionada a nova propriedade **lastPasswordChangeDateTime** ao recurso de [usuário](/graph/api/resources/user?view=graph-rest-v1.0). |
+| Adição | v1.0 | Adicionada a nova propriedade **lastPasswordChangeDateTime** ao recurso de [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
 | Adição | beta | O [user: reprocessLicenseAssignment do ](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/user?view=graph-rest-beta). |
 
 ### <a name="users--outlook-settings"></a>Usuários | Configurações do Outlook
@@ -896,7 +907,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 |  Introdução do novo **APIs de logs de auditoria do Azure AD**, oferecendo logs de atividades para tarefas de gerenciamento de diretório através de [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-v1.0) e atividade de entrada pelo [signIns](/graph/api/resources/signIns?view=graph-rest-v1.0).|
+| Adição | v1.0 |  Introdução do novo **APIs de logs de auditoria do Azure AD**, oferecendo logs de atividades para tarefas de gerenciamento de diretório através de [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-1.0) e atividade de entrada pelo [signIns](/graph/api/resources/signIns?view=graph-rest-1.0).|
 | Adição | beta | Adição de novas permissões de aplicativo para APIs de **avaliação de acesso**: AccessReview.Read.All, ProgramControl.Read.All e ProgramControl.ReadWrite.All. Para mais detalhes, confira a [referência da API de revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
 | Adição | beta | Adicione a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Essa é uma renomeação das propriedades **refreshTokensValidFromDateTime**, mas ambas as propriedades terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a propriedade antiga, **refreshTokensValidFromDateTime**, será removida.|
 | Adição | beta | Adicione a ação **revokeSignInSessions** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Esta é uma renomeação da ação **invalidateAllRefreshTokens**, mas ambas as ações de serviço terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a ação de serviço antiga, **invalidateAllRefreshTokens**, será removida. |
@@ -989,7 +1000,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Adicionadas APIs financeiras para o Dynamics 365 Business Central. Para saber mais, confira o [Referência da API de finanças](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
+| Adição        | Beta          | Adicionadas APIs financeiras para o Dynamics 365 Business Central. Para saber mais, confira o [Referência da API de finanças](/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0).|
 
 ### <a name="identity-and-access-directory-apis"></a>Identidade e acesso (APIs de diretório)
 
@@ -1057,7 +1068,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição |beta|Adicionada nova propriedade relatedContacts em [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).|
-|Adição |v1.0|Adicionada nova propriedade relatedContacts em [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0).|
+|Adição |v1.0|Adicionada nova propriedade relatedContacts em [educationUser](/graph/api/resources/educationUser?view=graph-rest-1.0).|
 
 ### <a name="files-onedrive-for-business"></a>Arquivos (OneDrive for Business)
 
@@ -1095,7 +1106,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição |Beta e v1.0| Adicionada a propriedade **internalId** ao recurso [team](/graph/api/resources/team?view=graph-rest-v1.0).|
+|Adição |Beta e v1.0| Adicionada a propriedade **internalId** ao recurso [team](/graph/api/resources/team?view=graph-rest-1.0).|
 |Adição |Beta e v1.0| Adição de suporte para configuração do Word, Excel, PowerPoint, PDF e para as [guias](teams-configuring-builtin-tabs.md) da biblioteca de documentos. |
 |Adição |beta| Introdução da API[Enviar uma mensagem para um canal](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
 |Adição |beta| Introdução da API [Responder a uma mensagem em um canal](/graph/api/channel-post-messagereply?view=graph-rest-beta). |
@@ -1134,7 +1145,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição |v1.0|Para oferecer suporte à configuração de um provedor de identidade em um locatário do Azure AD B2C, introduziu um novo tipo de recurso da entidade [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) e as operações [criar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [listar](/graph/api/identityprovider-list?view=graph-rest-v1.0), [obter](/graph/api/identityprovider-get?view=graph-rest-v1.0), [atualizar](/graph/api/identityprovider-update?view=graph-rest-v1.0) e [excluir](/graph/api/identityprovider-delete?view=graph-rest-v1.0).|
+|Adição |v1.0|Para oferecer suporte à configuração de um provedor de identidade em um locatário do Azure AD B2C, introduziu um novo tipo de recurso da entidade [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-1.0) e as operações [criar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0), [listar](/graph/api/identityprovider-list?view=graph-rest-1.0), [obter](/graph/api/identityprovider-get?view=graph-rest-1.0), [atualizar](/graph/api/identityprovider-update?view=graph-rest-1.0) e [excluir](/graph/api/identityprovider-delete?view=graph-rest-1.0).|
 
 ### <a name="identity-and-access-directory-apis"></a>Identidade e acesso (APIs de diretório)
 
@@ -1143,7 +1154,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | v1.0 | Adicionado novo método transitiveMembers para [grupos](/graph/api/group-list-transitivemembers?view=graph-rest-1.0). Esse método retorna uma lista simples de membros, inclusive os aninhados.|
 | Adição | v1.0 | Adicionado novo método transitiveMemberOf para [usuários](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0), [grupos](/graph/api/group-list-transitivemembersof?view=graph-rest-beta) e [dispositivos](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0).|
 | Adição | v1.0 | Adicionadas novas propriedades para [usuários](/graph/api/resources/user?view=graph-rest-1.0): **employeeId**, **faxNumber**, **onPremisesDistinguishedName**, **showInAddressList** e **otherMails**.|
-| Adição | v1.0 | Adicionada a propriedade **forceChangePasswordNextSignInWithMfa** para o tipo complexo [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0).|
+| Adição | v1.0 | Adicionada a propriedade **forceChangePasswordNextSignInWithMfa** para o tipo complexo [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-1.0).|
 | Adição | v1.0 | Adicionada a propriedade **licenseAssignmentStates** para a entidade de[usuário](/graph/api/resources/user?view=graph-rest-1.0) para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Adição | v1.0 | Adicionado o recurso **licenseAssignmentState** para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Adição | v1.0 | Adicionadas as propriedades **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** e **membersWithLicenseErrors** para o relacionamento da entidade[Grupo ](/graph/api/resources/group?view=graph-rest-1.0) para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
