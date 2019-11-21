@@ -86,6 +86,8 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propor novas horas de reunião (visualização)
             href: outlook-calendar-meeting-proposals.md
+          - name: Organizar ou participar de reuniões online (visualização)
+            href: outlook-calendar-online-meetings.md
           - name: Agendar eventos recorrentes
             href: outlook-schedule-recurring-events.md
           - name: Obter eventos compartilhados
