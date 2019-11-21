@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8a6c46f1ce391dfc055dd18960df7d85c6d19b0a
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: f9901df5724cc701bcaab0138ab15fc20cf9c563
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748507"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756874"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -83,6 +83,15 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | v1.0 | Adicionadas novas permissões delegadas e de aplicativo  [GroupMember.Read.All](permissions-reference.md#group-permissions) e [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions)  para obter e atualizar o recurso do  [grupo](/graph/api/resources/group?view=graph-rest-1.0) .
 | Adição | v1.0 | Adicionada nova permissão de aplicativo [Group.Create](permissions-reference.md#group-permissions) para criar o recurso do **grupo** .
 | Adição | Beta e v1.0 | Adicionada a propriedade **creationType** ao recurso de [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
+| Adição | v1.0 | Adicionada a operação [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) para o recurso[dispositivo](/graph/api/resources/device?view=graph-rest-1.0). |
+| Adição | v1.0 | Adicionada a operação [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) para o recurso[grupo](/graph/api/resources/group?view=graph-rest-1.0). |
+| Adição | v1.0 | Adicionada a operação [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) para o recurso[usuário](/graph/api/resources/user?view=graph-rest-1.0). |
+
+### <a name="identity-and-access-information-protection"></a>Identidade e acesso (Proteção de informação)
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | beta        | Adicionadas novas permissões delegadas e de aplicativo [ThreatAssessment.ReadWrite.All](permissions-reference.md#threat-assessment-permissions) e [ThreatAssessment.Read.All](permissions-reference.md#threat-assessment-permissions) para Ler e gravar solicitações de avaliação de ameaças |
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
@@ -1013,7 +1022,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Adicione as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** ao recurso do [domínio](/graph/api/resources/domain?view=graph-rest-1.0).|
+| Adição | v1.0 | Adicionar as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** no recurso [domain](/graph/api/resources/domain?view=graph-rest-1.0).|
 | Adição | beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0).|
 | Adição | beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
 

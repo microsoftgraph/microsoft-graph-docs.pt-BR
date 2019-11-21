@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4ea9156f89ac1e979c0f6c83e3b6ae828333fbbd
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 224ef601bf089ed24eac39a7061f0453c8fd6e3e
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333343"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748493"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -58,7 +58,7 @@ Para usuários e grupos, as restrições a seguir aplicam-se sobre como usar alg
 Para usuários e grupos, existem restrições sobre como usar alguns parâmetros de consulta:
 
 - Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
-- `$expand` tem suporte apenas para as propriedades de navegação `manager` e `members` para usuários e grupos, respectivamente.
+- O `$select` também tem suporte para `manager` e `members` propriedade de navegação para usuários e grupos, respectivamente. A seleção dessas propriedades permite controlar as alterações feitas no gerenciador de usuário e nas associações de grupo.
 
 - Os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por ID de objeto. Por exemplo, a solicitação a seguir retorna alterações para os grupos que correspondem às IDs especificadas no filtro de consulta. 
 
@@ -78,7 +78,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - Relações entre os usuários e os grupos são representadas como anotações na representação do recurso padrão. Essas anotações usam o formato `propertyName@delta`. As anotações são incluídas na resposta da solicitação de consulta inicial delta.
 
-As instâncias removidas são representadas por sua **id** e um objeto `@removed`. O objeto `@removed` pode incluir informações adicionais sobre o porquê de a instância ter sido removida. Por exemplo,  "@removed": {"reason": “changed”}.
+As instâncias removidas são representadas por sua **id** e um objeto `@removed`. O objeto `@removed` pode incluir informações adicionais sobre o porquê de a instância ter sido removida. Por exemplo,  "@removido": {"motivo": “alterado”}.
 
 Possíveis motivos @removed podem ser *changed* ou *deleted*.
 

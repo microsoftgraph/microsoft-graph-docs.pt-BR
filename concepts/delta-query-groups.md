@@ -4,12 +4,12 @@ description: A consulta delta permite que você consulte adições, exclusões o
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fac0aaf0e895c0bdd44434174cf2cc24b99fd5c6
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 71647e5f5aa37fb7d7c5e6d63668c2b8f50f4e6c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053915"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748500"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 
@@ -40,18 +40,18 @@ Para iniciar o rastreamento de alterações no recurso de grupo, faça uma solic
 Observe o seguinte:
 
 - O parâmetro de consulta `$select` opcional está incluído na solicitação para demonstrar como os parâmetros de consulta são automaticamente incluídos nas futuras solicitações.
-- O parâmetro de consulta `$expand` opcional é incluído para mostrar como membros do grupo podem ser recuperados com objetos de grupo. Isso permite o controle de alterações de associação, como quando usuários são adicionados ou removidos de grupos.
+- O parâmetro de consulta `$select` opcional também é usado para mostrar como os membros do grupo podem ser recuperados em conjunto com objetos de grupo. Isso permite o controle de alterações de associação, como quando usuários são adicionados ou removidos de grupos.
 - A solicitação inicial não inclui um token de estado. Os tokens de estado serão usados nas solicitações subsequentes.
 
 ``` http
-GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
 ## <a name="initial-response"></a>Resposta inicial
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [group](/graph/api/resources/group?view=graph-rest-1.0) no corpo da resposta. Se o conjunto de grupos inteiro for muito grande para caber em uma resposta, um `nextLink` contendo um token de estado também será incluído.
 
-Neste exemplo, um `nextLink` foi incluído; os parâmetros de consulta `$select` e `$expand` originais estão codificados no token de estado.
+Neste exemplo, um `nextLink` foi incluído; o parâmetro de consulta `$select` original é codificado no token de estado.
 
 ```http
 HTTP/1.1 200 OK
@@ -89,7 +89,7 @@ Content-type: application/json
 
 ## <a name="nextlink-request"></a>solicitação nextLink
 
-A segunda solicitação usa o `nextLink` da resposta anterior, que contém o `skipToken`. Observe que os parâmetros `$select` e `$expand` não estão presentes explicitamente, pois estão codificados no token.
+A segunda solicitação usa o `nextLink` da resposta anterior, que contém o `skipToken`. Observe que o parâmetro `$select` não está presente explicitamente porque ele é codificado no token.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
@@ -232,7 +232,7 @@ Content-type: application/json
 
 Alguns aspectos a observar sobre a resposta do exemplo acima:
 
-- Os objetos são retornados com o mesmo conjunto de propriedades originalmente especificado pelos parâmetros de consulta `$select` e `$expand`.
+- Os objetos são retornados com o mesmo conjunto de propriedades originalmente especificado pelo parâmetro de consulta `$select`.
 
 - Propriedades alteradas e inalteradas estão incluídas. No exemplo acima, a propriedade `description` tem um novo valor, e a propriedade `displayName` não foi alterada.
 
@@ -244,14 +244,14 @@ Alguns aspectos a observar sobre a resposta do exemplo acima:
 
 ## <a name="paging-through-members-in-a-large-group"></a>Ver membros de um grande grupo
 
-A propriedade `members@delta` é incluída em objetos de grupo por padrão quando o parâmetro de consulta `$select` não foi especificado ou quando o parâmetro `$expand=members` é explicitamente especificado. No caso de grupos com muitos membros, é possível que nem todos caibam em uma resposta única. Nesta seção, descrevemos o padrão a ser implementado para lidar com essas situações.
+A propriedade `members@delta` é incluída em objetos de grupo por padrão quando o parâmetro de consulta `$select` não foi especificado ou quando o parâmetro `$select=members` é explicitamente especificado. No caso de grupos com muitos membros, é possível que nem todos caibam em uma resposta única. Nesta seção, descrevemos o padrão a ser implementado para lidar com essas situações.
 
 >**Observação:** esse padrão aplica-se à recuperação inicial do estado de grupo e às chamadas subsequentes para obter as alterações da consulta delta.
 
 Vamos supor que você esteja executando a consulta delta a seguir para capturar o estado inicial completo de grupos ou posteriormente para obter alterações da consulta delta:
 
 ``` http
-GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
 1. O Microsoft Graph pode retornar uma resposta com apenas um objeto de grupo, com uma lista grande de membros na propriedade `members@delta`:
@@ -290,7 +290,7 @@ Content-type: application/json
 }
 ```
 
-2. Quando você seguir o `nextLink`, poderá receber uma resposta novamente com o mesmo objeto de grupo. Os mesmos valores de propriedade serão retornados, mas a propriedade expandida `members@delta` agora contém uma lista com outros usuários.
+2. Quando você seguir o `nextLink`, poderá receber uma resposta novamente com o mesmo objeto de grupo. Os mesmos valores de propriedade serão retornados, mas a propriedade `members@delta` agora contém uma lista de usuários diferente.
 
 **Segunda página**
 
