@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 01ef8d7a09f34070fe16619ae24d6c202a847453
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 01d167ad4d56e0a5e555e3a33f64e5298cc19fbc
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748514"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757135"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -808,7 +808,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Ler emails do usuário | Permite ao aplicativo ler emails em caixas de correio do usuário. | Não | Sim
-| _Mail.ReadBasic_ |    Ler emails básicos do usuário | Permite que o aplicativo leia a caixa de correio do usuário conectado, exceto o Copro, BodyPreview, UniqueBody, Anexos, ExtendedProperties e Extensões. Não inclui permissões para pesquisar mensagens. | Não | Sim
+| _Mail.ReadBasic_ |    Ler emails básicos do usuário | Permite que o aplicativo leia e-mails na caixa de correio do usuário conectado, exceto **body**, **bodyPreview**, **uniqueBody**, **anexos**, **extensões**, e quaisquer propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Não | Sim
 | _Mail.ReadWrite_ |    Acesso de leitura e gravação aos emails do usuário | Permite ao aplicativo criar, ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails.| Não | Sim
 | _Mail.Read.Shared_ |    Ler email compartilhado e de usuário | Permite que o aplicativo leia os emails que o usuário pode acessar, incluindo os próprios contatos do usuário e os emails compartilhados. | Não | Não
 | _Mail.ReadWrite.Shared_ |    Ler e registrar usuário e emails compartilhados | Permite que o aplicativo crie, leia, atualize e exclua emails que o usuário tem permissão de acessar, incluindo os emails compartilhados e os do próprio usuário. Não inclui a permissão para enviar emails. | Não | Não
@@ -1420,6 +1420,36 @@ Os seguintes usos são válidos para permissões delegadas:
 * _AgreementAcceptance.Read_: ler os status de aceitação de termos de uso do usuário (`GET /beta/me/agreementAcceptances`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="threat-assessment-permissions"></a>Permissões de avaliação de ameaças
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ThreatAssessment.ReadWrite.All_ | Solicitações de avaliação de ameaças de leitura e gravação | Permite que o aplicativo leia os eventos de segurança da sua organização em nome do usuário conectado. Também permite que o aplicativo crie novas solicitações para avaliar as ameaças recebidas por sua organização em nome do usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ThreatAssessment.Read.All_ | Solicitações de avaliação de ameaças de leitura | Permite que o aplicativo leia os eventos de segurança da sua organização em nome do usuário conectado. | Sim |
+
+### <a name="remarks"></a>Comentários
+
+Essas permissões só são válidas para contas corporativas ou de estudante.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _ThreatAssessment. ReadWrite.All_: ler e gravar solicitações de avaliação de ameaças (`POST /informationProtection/threatAssessmentRequests`)
+
+#### <a name="application"></a>Aplicativo
+
+* _ThreatAssessment. ReadWrite.All_: ler e gravar solicitações de avaliação de ameaças (`GET /informationProtection/threatAssessmentRequests`)
 
 ---
 
