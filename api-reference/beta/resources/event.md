@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3feca862395b693c63f3bad60ade95d7f71645e8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 65723f2a951d4630f939e1981c60793941099faf
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939415"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757128"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -117,15 +117,15 @@ Veja a seguir uma representação JSON do recurso
 |importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
-|isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
+|isOnlineMeeting|Booliano| `True`Se esse evento tiver informações de reunião online (ou seja, **onlineMeeting** aponta para um recurso [onlineMeetingInfo](onlinemeetinginfo.md)), caso contrário `false`. O padrão é `false` (**onlineMeeting** é `null`). Opcional. <br> Após definir **isOnlineMeeting** como `true`, o Microsoft Graph Inicializa **onlineMeeting**. Subsequentemente, o Outlook ignora todas as alterações feitas em **isOnlineMeeting**e a reunião permanece disponível online. |
 |isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|O local do evento.|
 |locations|[location](location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
-|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Detalhes para o participante entrar na reunião online. Somente leitura.|
-|onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
-|onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica um evento como uma reunião online como o Skype. Somente leitura.|
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Detalhes para o participante entrar na reunião online. O padrão é nulo. Somente leitura. <br>Após definir as propriedades **isOnlineMeeting** e **onlineMeetingProvider** para habilitar uma reunião online, o Microsoft Graph Inicializa **onlineMeeting**. Uma vez definidas, a reunião permanecerá disponível online e você não poderá alterar as propriedades **isOnlineMeeting**, **onlineMeetingProvider**e **onlneMeeting** novamente.|
+|onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Por padrão, **onlineMeetingProvider** é `unknown`. Os valores possíveis são `unknown`, `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. <br> Após definir **isOnlineMeeting**, o Microsoft Graph Inicializa **onlineMeeting**. Em seguida, não será possível alterar **onlineMeetingProvider** novamente, e a reunião permanecerá disponível online. |
+|onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica no Outlook que um evento é uma reunião online como o Skype. Somente leitura.<br>Acesse a URL para entrar em uma reunião online usando **joinUrl**, exposto por meio da propriedade **onlineMeeting** do **evento**. A propriedade **onlineMeetingUrl** será substituído no futuro. |
 |organizer|[Recipient](recipient.md)|O organizador do evento.|
 |originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
 |originalStart|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
