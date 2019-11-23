@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 01d167ad4d56e0a5e555e3a33f64e5298cc19fbc
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: 8c6bfaaed12dfcda3c730890e598253230b4cfeb
+ms.sourcegitcommit: 719eb06b263a10739190e4460b7ffdf0f1a50484
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757135"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "39191472"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -291,7 +291,7 @@ Nenhum.
 |_Calls.JoinGroupCallasGuest.All_|Ingressar em reuniões e chamadas de grupo como um convidado (visualização)|Permite que o aplicativo ingresse anonimamente no grupo chamadas e em reuniões agendadas em sua organização, sem um usuário conectado. O aplicativo ingressará como convidado para reuniões em seu locatário.|Sim|
 |_Calls.AccessMedia.All_\*|Acessar fluxos de mídia em uma chamada como um aplicativo (visualização)|Permite que o aplicativo obtenha acesso direto aos fluxos de mídia em uma chamada sem um usuário conectado.|Sim|
 
-> \***Importante:** você não pode usar a API Microsoft.Graph.Calls.Media para gravar ou, do contrário, persistir conteúdo de mídia de chamadas ou reuniões que seu bot acessar.
+> \***Importante:** NÃO é possível usar as APIs de comunicações na nuvem para gravar ou persistir o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentações de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 <br/>
 
@@ -607,7 +607,7 @@ No caso de Permissões de aplicativo, há algumas limitações para APIs com sup
 
 Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-As Permissões de grupo também são usadas para controlar o acesso a APIs e recursos do [Microsoft Teams](/graph/api/resources/teams-api-overview). Não há suporte para as contas pessoais da Microsoft.
+As permissões de grupo são usadas para controlar o acesso aos recursos e APIs do [Microsoft Teams](/graph/api/resources/teams-api-overview). Não há suporte para as contas pessoais da Microsoft.
 
 As Permissões de grupo também são usadas para controlar o acesso a APIs e recursos do [Microsoft Planner](/graph/api/resources/planner-overview). Somente as permissões delegadas são suportadas pelas APIs do Microsoft Planner; as permissões de aplicativo não são suportadas. Contas pessoais da Microsoft não são suportadas.
 
@@ -970,7 +970,6 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo (visualização)|Permite que o aplicativo leia os detalhes da reunião online associada ao VTC em sua organização, sem um usuário conectado.|Sim|
-|_OnlineMeetings.ReadWrite.All_|Leia e Crie Reuniões Online do aplicativo (preterido) em nome de um usuário|Permite que o aplicativo crie reuniões Online em sua organização em nome de usuário, sem um usuário conectado.|Sim|
 
 <br/>
 
