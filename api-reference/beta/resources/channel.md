@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cdcb7f10d068372c167f65a7868672a7cb669107
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: ff2b3fbd679022880728f482c2c2eb7555325c99
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677122"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250726"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -41,6 +41,7 @@ ms.locfileid: "36677122"
 |[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia em um canal.|
 |[Remover guia](../api/teamstab-delete.md) | Nenhum | Remover (desafixar) uma guia de um canal.|
 |[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualizar as propriedades da guia.|
+|[Obter pasta de arquivos](../api/driveitem-get.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -61,6 +62,7 @@ ms.locfileid: "36677122"
 |messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável. No momento, esse API tem suporte apenas à leitura, mas eventualmente terá suporte a mensagens escritas também.|
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
 |membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
+|driveItem|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
 
 ## <a name="json-representation"></a>Representação JSON
 

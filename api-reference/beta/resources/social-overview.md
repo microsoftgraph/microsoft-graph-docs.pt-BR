@@ -5,12 +5,12 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: f87f3032f58475eed95507b4e436735e5c484fc4
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 06d27d69aae008bb1bfe772a02a5951a33a4f0bd
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939359"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250733"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
@@ -20,11 +20,23 @@ O Microsoft Graph permite o acesso a dados pessoais e do local de trabalho para 
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>Agregar e extraia informações específicas sobre pessoas
 
+Recurso: Pessoas
+
 Use o recurso [person](../resources/person.md) e a API de Pessoas para agregar informações sobre uma pessoa provenientes de emails, contatos e redes sociais. Os resultados são ordenados por sua relevância com base em várias relações de comunicação, colaboração e comerciais. A API permite navegar, classificar, selecionar, filtrar ou procurar pessoas com base em critérios selecionados.
 
 - [Listar pessoas](../api/user-list-people.md)
 
+## <a name="help-users-contextualize-others-in-their-organization"></a>Ajudar os usuários a contextualizarem outras pessoas em sua organização
+
+Recurso: Perfil (visualização)
+
+As pessoas que procuram contextualizar outras na organização geralmente exibem o perfil ou o cartão de perfil de uma pessoa. 
+
+O recurso [perfil](../resources/profile.md) é uma avançada fonte de informações sobre as pessoas dentro de um locatário e proporciona um mecanismo leve para armazenar e recuperar informações sobre alguém. 
+
 ## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Ajudar os usuários a obter os documentos mais relevantes para seu trabalho
+
+Recurso: Ideias do documento
 
 Usar a API insights para identificar os documentos mais relevantes para o usuário:
 
@@ -32,14 +44,9 @@ Usar a API insights para identificar os documentos mais relevantes para o usuár
 - Listar documentos [usados por](../api/insights-list-used.md) um usuário
 - Listar documentos [compartilhados com ou por](../api/insights-list-shared.md) um usuário
 
-## <a name="help-users-gain-insights-into-their-work-patterns"></a>Ajudar os usuários a obter informações sobre seus padrões de trabalho
-
-Usar a API de análise para obter estatísticas de atividade e configurações relacionadas para um usuários:
-
-- [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuários, as configurações de análise de usuário atuais devem mostrar uma licença válida do MyAnalytics, ser aceitas no uso do MyAnalytics e ter uma caixa de correio hospedada na nuvem habilitada para o Microsoft Graph.
-- [activityStatistics](../resources/activitystatistics.md): Obtém dados para a última semana concluída (ou o intervalo de tempo especificado) das atividades do Office 365 em que um usuário gastou tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [conversas (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md) e [reuniões](meetingactivitystatistics.md) durante e fora das horas de trabalho e o número de horas disponíveis para o [trabalho prioritário](focusactivitystatistics.md).
-
 ## <a name="manage--mentions"></a>Gerenciar as @menções
+
+Recurso: @-menções (visualização)
 
 Chamar um destinatário para notificar e atrair a atenção do destinatário em uma mensagem é um gesto social comum.
 O recurso [menção](../resources/mention.md) e a API de Menções fornecem um mecanismo simplificado para marcar um destinatário em uma [mensagem](../resources/message.md), receber todas as mensagens nas quais um usuário é notificado usando uma @menção ou receber cada menção em uma mensagem.
@@ -63,8 +70,12 @@ Include the next sentence when supporting events.
 
 - [Excluir uma menção](../api/message-delete.md#request-2) em uma mensagem
 
-## <a name="help-users-contextualize-others-in-their-organization"></a>Ajudar os usuários a contextualizarem outras pessoas em sua organização
 
-As pessoas que procuram contextualizar outras na organização geralmente exibem o perfil ou o cartão de perfil de uma pessoa. 
+## <a name="help-users-gain-insights-into-their-work-patterns"></a>Ajudar os usuários a obter informações sobre seus padrões de trabalho
 
-O recurso [perfil](../resources/profile.md) é uma avançada fonte de informações sobre as pessoas dentro de um locatário e proporciona um mecanismo leve para armazenar e recuperar informações sobre alguém. 
+Recurso: Análise (visualização)
+
+Usar a API de análise para obter estatísticas de atividade e configurações relacionadas para um usuários:
+
+- [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuários, as configurações de análise de usuário atuais devem mostrar uma licença válida do MyAnalytics, ser aceitas no uso do MyAnalytics e ter uma caixa de correio hospedada na nuvem habilitada para o Microsoft Graph.
+- [activityStatistics](../resources/activitystatistics.md): Obtém dados para a última semana concluída (ou o intervalo de tempo especificado) das atividades do Office 365 em que um usuário gastou tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [conversas (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md) e [reuniões](meetingactivitystatistics.md) durante e fora das horas de trabalho e o número de horas disponíveis para o [trabalho prioritário](focusactivitystatistics.md).
