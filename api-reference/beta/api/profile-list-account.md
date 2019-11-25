@@ -1,22 +1,22 @@
 ---
-title: Listar conta
+title: Listar contas
 description: Recupere uma lista de objetos useraccountinformation.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 800814e1b8d342e4d0d118101dccf65007250514
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 13d1a5c35f177771886598629e3f6f27ff91931e
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998012"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250646"
 ---
-# <a name="list-account"></a>Listar conta
+# <a name="list-accounts"></a>Listar contas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupera as propriedades relacionadas à conta do usuário do [perfil](../resources/profile.md).
+Recupera as propriedades relacionadas às contas do usuário a partir do [perfil](../resources/profile.md).
 
 ## <a name="permissions"></a>Permissões
 

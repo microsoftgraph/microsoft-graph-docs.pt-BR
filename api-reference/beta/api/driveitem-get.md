@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: Recupere os metadados de um DriveItem em um Drive por ID ou caminho do sistema de arquivos.
+description: Recupere os metadados de um DriveItem em um Drive por ID ou por caminho do sistema de arquivos.
 ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0f7aee77c2a3a97bef8c67789d2a88d14ad0a62f
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 1a7e4af2e31e3f3ec6f279b5e9f6646bc4c6ed60
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333210"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250639"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -25,9 +25,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Aplicativo | Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
+
+> Observação: o `/teams` ponto de extremidade requer o uso de permissões Group. Read. All ou Group. ReadWrite. All.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -38,6 +40,7 @@ GET /drives/{drive-id}/items/{item-id}
 GET /drives/{drive-id}/root:/{item-path}
 GET /groups/{group-id}/drive/items/{item-id}
 GET /groups/{group-id}/drive/root:/{item-path}
+GET /teams/{teamId}/channels/{channelId}/files
 GET /me/drive/items/{item-id}
 GET /me/drive/root:/{item-path}
 GET /sites/{siteId}/drive/items/{itemId}
@@ -72,7 +75,6 @@ Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso
 
 Eis um exemplo de solicitação para a pasta raiz do OneDrive do usuário.
 
-
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
@@ -92,7 +94,6 @@ GET /me/drive/root
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## <a name="response"></a>Resposta
 
@@ -132,7 +133,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>Comentários
 
-Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].
+Confira mais informações sobre como os erros são retornados em [Respostas de Erros][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
