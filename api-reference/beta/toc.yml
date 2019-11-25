@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -365,7 +365,14 @@
                   href: api/planneruser-list-recentplans.md
                 - name: Listar as tarefas atribuídas ao usuário
                   href: api/planneruser-list-tasks.md
-            - name: Trabalho em equipe
+            - name: Perfil
+              href: resources/profile.md
+              items:
+                - name: Obter o perfil do usuário
+                  href: api/profile-get.md
+                - name: Excluir o perfil do usuário
+                  href: api/profile-delete.md
+            - name: Teamwork
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -1052,7 +1059,7 @@
                 - name: Esquema de configuração do aplicativo Android for Work
                   href: resources/intune-androidforwork-androidforworkappconfigurationschema.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-androidforwork-androidforworkappconfigurationschema-list.md
                     - name: Obter
                       href: api/intune-androidforwork-androidforworkappconfigurationschema-get.md
@@ -1071,7 +1078,7 @@
                 - name: Perfil de registro do Android for Work
                   href: resources/intune-androidforwork-androidforworkenrollmentprofile.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-androidforwork-androidforworkenrollmentprofile-list.md
                     - name: Obter
                       href: api/intune-androidforwork-androidforworkenrollmentprofile-get.md
@@ -3427,7 +3434,7 @@
                 - name: Atribuição de configuração do dispositivo
                   href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-deviceconfigurationassignment-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-deviceconfigurationassignment-get.md
@@ -3440,7 +3447,7 @@
                 - name: Resumo de conflitos de configuração do dispositivo
                   href: resources/intune-deviceconfig-deviceconfigurationconflictsummary.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-deviceconfigurationconflictsummary-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-deviceconfigurationconflictsummary-get.md
@@ -3869,7 +3876,7 @@
                 - name: Valor decimal longo da apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-get.md
@@ -6104,7 +6111,7 @@
                 - name: Condição de gerenciamento local
                   href: resources/intune-fencing-locationmanagementcondition.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-fencing-locationmanagementcondition-list.md
                     - name: Obter
                       href: api/intune-fencing-locationmanagementcondition-get.md
@@ -6195,7 +6202,7 @@
                 - name: Condição de gerenciamento
                   href: resources/intune-fencing-managementcondition.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-fencing-managementcondition-list.md
                     - name: Obter
                       href: api/intune-fencing-managementcondition-get.md
@@ -6210,7 +6217,7 @@
                 - name: Instrução de condição de gerenciamento
                   href: resources/intune-fencing-managementconditionstatement.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-fencing-managementconditionstatement-list.md
                     - name: Obter
                       href: api/intune-fencing-managementconditionstatement-get.md
@@ -6627,7 +6634,7 @@
                 - name: Proteção de aplicativo gerenciado padrão
                   href: resources/intune-mam-defaultmanagedappprotection.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-mam-defaultmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-defaultmanagedappprotection-get.md
@@ -6640,7 +6647,7 @@
                 - name: Perfil de identidade visual do Intune
                   href: resources/intune-wip-intunebrandingprofile.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-wip-intunebrandingprofile-list.md
                     - name: Obter
                       href: api/intune-wip-intunebrandingprofile-get.md
@@ -6879,7 +6886,7 @@
                 - name: Política de proteção de informações do Windows
                   href: resources/intune-mam-windowsinformationprotectionpolicy.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-mam-windowsinformationprotectionpolicy-list.md
                     - name: Obter
                       href: api/intune-mam-windowsinformationprotectionpolicy-get.md
@@ -7048,7 +7055,7 @@
                 - name: Conector de defesa contra ameaças móveis
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: Obter
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -7070,7 +7077,7 @@
                 - name: Organização
                   href: resources/intune-onboarding-organization.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-onboarding-organization-list.md
                     - name: Obter
                       href: api/intune-onboarding-organization-get.md
@@ -8361,7 +8368,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: Listar
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: Create
+                    - name: Criar
                       href: api/conditionalaccessroot-post-policies.md
                     - name: Obter
                       href: api/conditionalaccesspolicy-get.md
@@ -9893,6 +9900,176 @@
               items:
                 - name: Listar pessoas
                   href: api/user-list-people.md
+            - name: Perfil (visualização)
+              href: resources/profile.md
+              items:
+                - name: Obter o perfil do usuário
+                  href: api/profile-get.md
+                - name: Excluir o perfil do usuário
+                  href: api/profile-delete.md
+                - name: Informações da conta
+                  href: resources/useraccountinformation.md
+                  items:
+                    - name: Lista
+                      href: api/profile-list-account.md
+                    - name: Obter
+                      href: api/useraccountinformation-get.md
+                - name: Data especial
+                  href: resources/personanniversary.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-anniversaries.md
+                    - name: Criar
+                      href: api/profile-post-anniversaries.md
+                    - name: Obter
+                      href: api/personanniversary-get.md
+                    - name: Atualizar
+                      href: api/personanniversary-update.md
+                    - name: Excluir
+                      href: api/personanniversary-delete.md
+                - name: Atividade educacional
+                  href: resources/educationalactivity.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-educationalactivities.md
+                    - name: Criar
+                      href: api/profile-post-educationalactivities.md
+                    - name: Obter
+                      href: api/educationalactivity-get.md
+                    - name: Atualizar
+                      href: api/educationalactivity-update.md
+                    - name: Excluir
+                      href: api/educationalactivity-delete.md
+                - name: Endereço de email
+                  href: resources/itememail.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-emails.md
+                    - name: Criar
+                      href: api/profile-post-emails.md
+                    - name: Obter
+                      href: api/itememail-get.md
+                    - name: Atualizar
+                      href: api/itememail-update.md
+                    - name: Excluir
+                      href: api/itememail-delete.md
+                - name: Aos
+                  href: resources/personinterest.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-interests.md
+                    - name: Criar
+                      href: api/profile-post-interests.md
+                    - name: Obter
+                      href: api/personinterest-get.md
+                    - name: Atualizar
+                      href: api/personinterest-update.md
+                    - name: Excluir
+                      href: api/personinterest-delete.md
+                - name: Idiomas
+                  href: resources/languageproficiency.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-languages.md
+                    - name: Criar
+                      href: api/profile-post-languages.md
+                    - name: Obter
+                      href: api/languageproficiency-get.md
+                    - name: Atualizar
+                      href: api/languageproficiency-update.md
+                    - name: Excluir
+                      href: api/languageproficiency-delete.md
+                - name: Nomes
+                  href: resources/personname.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-names.md
+                    - name: Criar
+                      href: api/profile-post-names.md
+                    - name: Obter
+                      href: api/personname-get.md
+                    - name: Atualizar
+                      href: api/personname-update.md
+                    - name: Excluir
+                      href: api/personname-delete.md
+                - name: Phone
+                  href: resources/itemphone.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-phones.md
+                    - name: Criar
+                      href: api/profile-post-phones.md
+                    - name: Obter
+                      href: api/itemphone-get.md
+                    - name: Atualizar
+                      href: api/itemphone-update.md
+                    - name: Excluir
+                      href: api/itemphone-delete.md
+                - name: Posições
+                  href: resources/workposition.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-positions.md
+                    - name: Criar
+                      href: api/profile-post-positions.md
+                    - name: Obter
+                      href: api/workposition-get.md
+                    - name: Atualizar
+                      href: api/workposition-update.md
+                    - name: Excluir
+                      href: api/workposition-delete.md
+                - name: Projects
+                  href: resources/projectparticipation.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-projects.md
+                    - name: Criar
+                      href: api/profile-post-projects.md
+                    - name: Obter
+                      href: api/projectparticipation-get.md
+                    - name: Atualizar
+                      href: api/projectparticipation-update.md
+                    - name: Excluir
+                      href: api/projectparticipation-delete.md
+                - name: Habilidades
+                  href: resources/skillproficiency.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-skills.md
+                    - name: Criar
+                      href: api/profile-post-skills.md
+                    - name: Obter
+                      href: api/skillproficiency-get.md
+                    - name: Atualizar
+                      href: api/skillproficiency-update.md
+                    - name: Excluir
+                      href: api/skillproficiency-delete.md
+                - name: Contas da Web
+                  href: resources/webaccount.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-webaccounts.md
+                    - name: Criar
+                      href: api/profile-post-webaccounts.md
+                    - name: Obter
+                      href: api/webaccount-get.md
+                    - name: Atualizar
+                      href: api/webaccount-update.md
+                    - name: Excluir
+                      href: api/webaccount-delete.md
+                - name: Sites
+                  href: resources/personwebsite.md
+                  items:
+                    - name: Listar
+                      href: api/profile-list-websites.md
+                    - name: Criar
+                      href: api/profile-post-websites.md
+                    - name: Obter
+                      href: api/personwebsite-get.md
+                    - name: Atualizar
+                      href: api/personwebsite-update.md
+                    - name: Excluir
+                      href: api/personwebsite-delete.md
             - name: Informações
               href: resources/officegraphinsights.md
               items:
@@ -9911,7 +10088,9 @@
                   items:
                     - name: Listar compartilhados
                       href: api/insights-list-shared.md
-            - name: Análise
+            - name: Menção (prévia)
+              href: resources/mention.md
+            - name: Análise (visualização)
               href: resources/useranalytics.md
               items:
                 - name: Configurações
@@ -9938,171 +10117,6 @@
                       href: api/activitystatistics-list.md
                     - name: Obter estatísticas de atividade
                       href: api/activitystatistics-get.md
-            - name: Menção
-              href: resources/mention.md
-            - name: Perfil
-              href: resources/profile.md
-              items:
-                - name: Obter perfil
-                  href: api/profile-get.md
-                - name: Excluir perfil
-                  href: api/profile-delete.md
-                - name: Listar conta
-                  href: api/profile-list-account.md
-                - name: Listar anniversariles
-                  href: api/profile-list-anniversaries.md
-                - name: Criar data especial
-                  href: api/profile-post-anniversaries.md
-                - name: Listar atividades educacionais
-                  href: api/profile-list-educationalactivities.md
-                - name: Criar atividade educacional
-                  href: api/profile-post-educationalactivities.md
-                - name: Criar endereço de email
-                  href: api/profile-post-emails.md
-                - name: Listar endereços de email
-                  href: api/profile-list-emails.md
-                - name: Criar juros
-                  href: api/profile-post-interests.md
-                - name: Listar interesses
-                  href: api/profile-list-interests.md
-                - name: Criar idioma
-                  href: api/profile-post-languages.md
-                - name: Idiomas de lista
-                  href: api/profile-list-languages.md
-                - name: Criar nome
-                  href: api/profile-post-names.md
-                - name: Listar nomes
-                  href: api/profile-list-names.md
-                - name: Listar sites
-                  href: api/profile-list-websites.md
-                - name: Criar número de telefone
-                  href: api/profile-post-phones.md
-                - name: Listar números de telefone
-                  href: api/profile-list-phones.md
-                - name: Criar posição
-                  href: api/profile-post-positions.md
-                - name: Listar posições
-                  href: api/profile-list-positions.md
-                - name: Create project
-                  href: api/profile-post-projects.md
-                - name: Listar projetos
-                  href: api/profile-list-projects.md
-                - name: Criar habilidade
-                  href: api/profile-post-skills.md
-                - name: Listar qualificações
-                  href: api/profile-list-skills.md
-                - name: Criar conta da Web
-                  href: api/profile-post-webaccounts.md
-                - name: Listar contas da Web
-                  href: api/profile-list-webaccounts.md
-                - name: Criar site
-                  href: api/profile-post-websites.md
-                - name: Listar sites
-                  href: api/profile-list-websites.md
-                - name: Informações da conta
-                  href: resources/useraccountinformation.md
-                  items:
-                    - name: Obter
-                      href: api/useraccountinformation-get.md
-                - name: Data especial
-                  href: resources/personanniversary.md
-                  items:
-                    - name: Obter
-                      href: api/personanniversary-get.md
-                    - name: Atualizar
-                      href: api/personanniversary-update.md
-                    - name: Excluir
-                      href: api/personanniversary-delete.md
-                - name: Atividade educacional
-                  href: resources/educationalactivity.md
-                  items:
-                    - name: Obter
-                      href: api/educationalactivity-get.md
-                    - name: Atualizar
-                      href: api/educationalactivity-update.md
-                    - name: Excluir
-                      href: api/educationalactivity-delete.md
-                - name: Endereço de email
-                  href: resources/itememail.md
-                  items:
-                    - name: Obter
-                      href: api/itememail-get.md
-                    - name: Atualizar
-                      href: api/itememail-update.md
-                    - name: Excluir
-                      href: api/itememail-delete.md
-                - name: Aos
-                  href: resources/personinterest.md
-                  items:
-                    - name: Obter
-                      href: api/personinterest-get.md
-                    - name: Atualizar
-                      href: api/personinterest-update.md
-                    - name: Excluir
-                      href: api/personinterest-delete.md
-                - name: Idiomas
-                  href: resources/languageproficiency.md
-                  items:
-                    - name: Obter
-                      href: api/languageproficiency-get.md
-                    - name: Atualizar
-                      href: api/languageproficiency-update.md
-                    - name: Excluir
-                      href: api/languageproficiency-delete.md
-                - name: Phone
-                  href: resources/itemphone.md
-                  items:
-                    - name: Obter
-                      href: api/itemphone-get.md
-                    - name: Atualizar
-                      href: api/itemphone-update.md
-                    - name: Excluir
-                      href: api/itemphone-delete.md
-                - name: Posições
-                  href: resources/workposition.md
-                  items:
-                    - name: Obter
-                      href: api/workposition-get.md
-                    - name: Atualizar
-                      href: api/workposition-update.md
-                    - name: Excluir
-                      href: api/workposition-delete.md
-                - name: Projects
-                  href: resources/projectparticipation.md
-                  items:
-                    - name: Obter
-                      href: api/projectparticipation-get.md
-                    - name: Atualizar
-                      href: api/projectparticipation-update.md
-                    - name: Excluir
-                      href: api/projectparticipation-delete.md
-                - name: Habilidades
-                  href: resources/skillproficiency.md
-                  items:
-                    - name: Obter
-                      href: api/skillproficiency-get.md
-                    - name: Atualizar
-                      href: api/skillproficiency-update.md
-                    - name: Excluir
-                      href: api/skillproficiency-delete.md
-                - name: Contas da Web
-                  href: resources/webaccount.md
-                  items:
-                    - name: Obter
-                      href: api/webaccount-get.md
-                    - name: Atualizar
-                      href: api/webaccount-update.md
-                    - name: Excluir
-                      href: api/webaccount-delete.md
-                - name: Sites
-                  href: resources/personwebsite.md
-                  items:
-                    - name: Obter
-                      href: api/personwebsite-get.md
-                    - name: Atualizar
-                      href: api/personwebsite-update.md
-                    - name: Excluir
-                      href: api/personwebsite-delete.md
         - name: Tarefas e planos
           displayName: Planner
           items:
@@ -10203,7 +10217,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
