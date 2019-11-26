@@ -13,6 +13,7 @@ items:
       - name: Serviços no Microsoft Graph
         href: overview-major-services.md
       - name: Novidades
+        expanded: true
         items:
           - name: Destaques novidades
             href: whats-new-overview.md
