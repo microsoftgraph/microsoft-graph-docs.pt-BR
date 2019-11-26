@@ -4,12 +4,12 @@ description: O Microsoft Graph é o gateway para dados e inteligência no Micros
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9e00e45af4c429385fcb109a0017b2f986d95034
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: b5325af0619d1f1ad7d212b69d82d63b32978a0f
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969239"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "39263258"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão geral do Microsoft Graph
 
@@ -28,7 +28,7 @@ Na plataforma do Microsoft 365, três componentes principais facilitam o acesso 
 Juntos, a API do Microsoft Graph Data, os conectores (versão prévia) e os dados alimentam a plataforma do Microsoft 365. Com a capacidade de acessar dados e outros conjuntos de dados do Microsoft Graph para gerar informação e análise, você pode ampliar as experiências Microsoft 365 ou desenvolver aplicativos exclusivos e inteligentes.
 
 > [!NOTE]
-> Os conectores do Microsoft Graph estão em versão prévia. Para saber mais sobre a versão prévia, confira [versão prévia de conectores](https://docs.microsoft.com/MicrosoftSearch/connectors-preview). Para participar da versão prévia, primeiro você deve enviar o [formulário de inscrição na versão prévia dos conectores do Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> Os conectores do Microsoft Graph estão em versão prévia. Para usar conectores com o Microsoft Search ou para criar conectores, você deve se inscrever no [programa de visualização de conectores](https://docs.microsoft.com/MicrosoftSearch/connectors-preview). Para participar do programa de visualização, envie o [formulário de inscrição na versão prévia dos conectores do Microsoft Graph](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
 
 ## <a name="whats-in-microsoft-graph"></a>Serviços do Microsoft Graph
 
