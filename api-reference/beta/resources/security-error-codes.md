@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: e267cda81418e7dfce1df61f389a8ed9e0d99339
-ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
+ms.openlocfilehash: e4ea8bbfa3d808037ed2db56765719516b03f877
+ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37041874"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39621611"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
 
@@ -56,13 +56,13 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 As ações em massa (criar, atualizar, excluir) podem gerar dois códigos de erro potenciais diferentes: 
 
 - Um código de erro 400 indica que o corpo fornecido teve um erro durante a serialização.
-- Um código de erro 206 indica que uma ou mais ações em massa falharam quando foram federadas no provedor. A resposta conterá dados de sucesso/erro dos provedores individuais para cada indicador de inteligência de ameaças. Ao contrário dos [alertas](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-1.0#alerts), todas as informações de erro em potencial serão contidas no corpo da resposta para ações em massa [tiIndicator](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) .
+- Um código de erro 206 indica que uma ou mais ações em massa falharam quando foram federadas no provedor. A resposta conterá dados de sucesso/erro dos provedores individuais para cada indicador de inteligência de ameaças. Ao contrário dos [alertas](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0#alerts), todas as informações de erro em potencial serão contidas no corpo da resposta para ações em massa [tiIndicator](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) .
 
 ## <a name="constraints"></a>Restrições
 
-O `$top` parâmetro de consulta OData tem um limite de 1000 alertas e uma combinação de `$top`  +  `$skip` parâmetros de consulta OData não pode exceder 6000 alertas. Por exemplo, `/security/alerts?$top=10&$skip=5990` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=5991` retornará um código de resposta `400 Bad Request`.
+O `$top` parâmetro de consulta OData tem um limite de 1000 alertas. Recomendamos que você inclua apenas `$top` o e `$skip` não em sua primeira consulta Get. Você pode usar `@odata.nextLink` para paginação. Se você precisar usar `$skip`o, ele terá um limite de 500 alertas. Por exemplo, `/security/alerts?$top=10&$skip=500` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=501` retornará um código de resposta `400 Bad Request`. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
-Um arredondamento de trabalho para esse limite é usar `$filter` o parâmetro de consulta OData `eventDateTime` com o da entidade de alerta da API de segurança do Microsoft `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` Graph, usando e substituindo o valor DateTime pelo último alerta (6000th). Você também pode definir um intervalo para o `eventDateTime`; por exemplo, `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
+Uma solução alternativa para esse limite é usar o `$filter` parâmetro de consulta OData com `eventDateTime` a entidade de alerta da API de segurança do Microsoft Graph, `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` usando e substituindo o valor DateTime pelo último alerta (1500th). Você também pode definir um intervalo para o `eventDateTime`; por exemplo, `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
 
 ## <a name="see-also"></a>Confira também
 

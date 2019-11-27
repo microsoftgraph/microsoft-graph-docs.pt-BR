@@ -4,12 +4,12 @@ description: Enviar uma mensagem proativa para um usuário do Microsoft Teams co
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a1cdd206d7cc6db97340ec41727ce9ea64c86510
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: e8222931709ab504106c86209ec186140b4a2087
+ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36839196"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39621646"
 ---
 # <a name="proactive-messaging-using-a-bot-in-microsoft-teams"></a>Mensagens pró-ativas usando um bot no Microsoft Teams
 
@@ -75,7 +75,7 @@ Quando o aplicativo é instalado para o usuário, o bot receberá um `conversati
 Se você perder o `chatThreadId`, poderá encontrá-lo novamente chamando:
 
 ```http
-GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}'
+GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}')
 ```
 
 A propriedade **ID** do resultado é a ID chatThread.
