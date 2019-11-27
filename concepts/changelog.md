@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f9901df5724cc701bcaab0138ab15fc20cf9c563
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: c1d38f86e5644decfbae3b5e90b456e55f897cb6
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756874"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250705"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -122,6 +122,12 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição        | beta        | Foi adicionada a ação [query](/graph/api/search-query?view=graph-rest-beta). |
 | Adição        | beta        | Foram adicionados os tipos complexos [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta) e [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta). |
 | Adição        | beta        | Foram adicionadas as entidades [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta) e [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) e os métodos expostos por essas entidades. |
+
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | beta          | Outra rota adicionada para recuperar um [driveItem] usando uma ID de canal e de equipe, [obter driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## <a name="october-2019"></a>Outubro de 2019
 
