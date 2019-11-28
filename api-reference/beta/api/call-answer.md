@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 344aa48fd3b816e5d72141a5388fd1abdce50406
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: ff9de522e96ea6cec614d8673d8f85987ac88908
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747592"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636719"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -326,7 +326,7 @@ Content-Type: application/json
         },
         "targets": [
           {
-            "@odata.type": "#microsoft.graph.participantInfo",
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "application": {
                 "displayName": "Test BOT",

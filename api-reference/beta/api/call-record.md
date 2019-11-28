@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dc240c00e16db17e438c19ae792ce73425ed2350
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 2961bacfa9092aa580801e42e44aa1d2adbfaa97
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006057"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636698"
 ---
 # <a name="call-record"></a>Call: Record
 
@@ -60,7 +60,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |maxSilenceTimeoutInSeconds|Int32| Tempo máximo de silêncio (pausa) permitido após um usuário começar a falar. Padrão = 5 segundos, mín = 1 segundo, máximo = 300 segundos.|
 |maxRecordDurationInSeconds|Int32| Duração máxima de uma operação de registro antes de parar a gravação. Padrão = 5 segundos, mín = 1 segundo, máximo = 300 segundos.|
 |playBeep|Booliano| Se true, reproduz um aviso sonoro para indicar ao usuário que eles podem começar a gravar suas mensagens. Padrão = true.|
-|stopTones|String collection|Pare os toques especificados para terminar a gravação.|
+|stopTones|Coleção de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
@@ -127,13 +127,13 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 {
   "@odata.type": "#microsoft.graph.recordOperation",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
   "status": "running",
   "completionReason": null,
   "resultInfo": null,
   "recordingLocation": null,
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
-
 ```
 
 ##### <a name="notification---operation-completed"></a>Notificação-operação concluída
@@ -159,6 +159,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.recordOperation",
         "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
+        "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
         "recordingLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",

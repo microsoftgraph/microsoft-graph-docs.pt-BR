@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81eeab8beb45f292483033a9120b8a8a3c424bc7
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: e382b778819c7c1c68d445ee9691a0206bbd76e5
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37637368"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636817"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para adicionar um [anexo](../resources/attachment.md) a um evento. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
+Use esta API para adicionar um [anexo](../resources/attachment.md) a um [evento](../resources/event.md)existente. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
+
+Se um organizador adicionar um anexo a um evento de reunião, o organizador poderá, subsequentemente, [Atualizar](event-update.md) o evento para enviar o anexo e também atualizar o evento para cada participante.
 
 ## <a name="permissions"></a>Permissões
 

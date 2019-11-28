@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a588dc58df43e818ab4b1c2c239cb81b3ec8b4e1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 21927e1cc85048603217a1067d40274c5d6c80b7
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936628"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636775"
 ---
 # <a name="create-namedlocation"></a>Criar namedLocation
 
@@ -24,12 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. ReadWrite. ConditionalAccess e Directory. AccessAsUser. All |
+| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.ConditionalAccess |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
-
->[!NOTE]
->Essa API requer várias permissões. Para obter detalhes, consulte [known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

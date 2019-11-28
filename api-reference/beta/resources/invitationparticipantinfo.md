@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7e25e65fb87f664788b0649f188def29b62c13d2
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 762e5dc75c03cda78581b90b54c3fea27a7f12f2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006688"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636663"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 
@@ -24,8 +24,6 @@ Este recurso é usado para representar um conjunto de identidades associadas a u
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | EndpointType                       | String                        | O tipo de ponto de extremidade. Os valores possíveis são: `default` e `voicemail`. |
 | ladrões                           | [identitySet](identityset.md) | O [identityset](identityset.md) associado a este convite.                   |
-| languageId                         | String                        | A cadeia de caracteres de cultura do idioma.                                                                                     |
-| região                             | String                        | Região do participante.                                                           |
 | replacesCallId                     | String                        | Opcional. A chamada na qual o idenity de destino faz parte no momento. Essa chamada será cancelada quando o participante for adicionado. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -35,7 +33,8 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "endpointType",
+    "replacesCallId"
   ],
   "@odata.type": "microsoft.graph.invitationParticipantInfo"
 }-->
@@ -43,8 +42,6 @@ Veja a seguir uma representação JSON do recurso.
 {
   "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "languageId": "String",
-  "region": "String",
   "replacesCallId": "String"
 }
 ```

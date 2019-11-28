@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -372,7 +372,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Teamwork
+            - name: Trabalho em equipe
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -880,6 +880,8 @@
                   href: api/call-mute.md
                 - name: Atualizar metadados
                   href: api/call-updatemetadata.md
+                - name: Atualizar status de gravação
+                  href: api/call-updaterecordingstatus.md
                 - name: Grupo de roteamento de áudio
                   href: resources/audioroutinggroup.md
                   items:
@@ -942,7 +944,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: Obter
                   href: api/bookingbusiness-get.md
@@ -983,7 +985,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-customers.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-customers.md
                 - name: Obter
                   href: api/bookingcustomer-get.md
@@ -996,7 +998,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-services.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-services.md
                 - name: Obter
                   href: api/bookingservice-get.md
@@ -1009,7 +1011,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-staffmembers.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: Obter
                   href: api/bookingstaffmember-get.md
@@ -1246,7 +1248,7 @@
                 - name: Estado de instalação do dispositivo
                   href: resources/intune-books-deviceinstallstate.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-books-deviceinstallstate-list.md
                     - name: Obter
                       href: api/intune-books-deviceinstallstate-get.md
@@ -1266,7 +1268,7 @@
                 - name: Certificado de assinatura de código de empresa
                   href: resources/intune-apps-enterprisecodesigningcertificate.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-apps-enterprisecodesigningcertificate-list.md
                     - name: Obter
                       href: api/intune-apps-enterprisecodesigningcertificate-get.md
@@ -1287,7 +1289,7 @@
                 - name: Aplicativo LOB do iOS
                   href: resources/intune-apps-ioslobapp.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-apps-ioslobapp-list.md
                     - name: Obter
                       href: api/intune-apps-ioslobapp-get.md
@@ -1721,7 +1723,7 @@
                 - name: Conteúdo do aplicativo móvel
                   href: resources/intune-apps-mobileappcontent.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-apps-mobileappcontent-list.md
                     - name: Obter
                       href: api/intune-apps-mobileappcontent-get.md
@@ -3637,7 +3639,7 @@
                 - name: Configuração de política de grupo
                   href: resources/intune-grouppolicy-grouppolicyconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-grouppolicy-grouppolicyconfiguration-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicyconfiguration-get.md
@@ -3654,7 +3656,7 @@
                 - name: Atribuição da configuração de política de grupo
                   href: resources/intune-grouppolicy-grouppolicyconfigurationassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-grouppolicy-grouppolicyconfigurationassignment-list.md
                     - name: Obter
                       href: api/intune-grouppolicy-grouppolicyconfigurationassignment-get.md
@@ -4931,7 +4933,7 @@
                 - name: Perfil de certificado de importação do PFX do Windows 10
                   href: resources/intune-deviceconfig-windows10pfximportcertificateprofile.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-windows10pfximportcertificateprofile-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-windows10pfximportcertificateprofile-get.md
@@ -7296,7 +7298,7 @@
                 - name: Categoria do dispositivo
                   href: resources/intune-shared-devicecategory.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-shared-devicecategory-list.md
                     - name: Obter
                       href: api/intune-shared-devicecategory-get.md
@@ -7499,7 +7501,7 @@
                 - name: Evento de solução de problemas de aplicativo móvel
                   href: resources/intune-shared-mobileapptroubleshootingevent.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-shared-mobileapptroubleshootingevent-list.md
                     - name: Obter
                       href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -8356,7 +8358,7 @@
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
-                - name: Create
+                - name: Criar
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
@@ -8608,7 +8610,7 @@
                   href: api/directory-list-featurerolloutpolicies.md
                 - name: Obter
                   href: api/featurerolloutpolicy-get.md
-                - name: Create
+                - name: Criar
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Atualizar
                   href: api/featurerolloutpolicy-update.md
@@ -8737,7 +8739,7 @@
                       href: api/onpremisesagentgroup-list.md
                     - name: Obter
                       href: api/onpremisesagentgroup-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/onpremisesagentgroup-post.md
                     - name: Atualizar
                       href: api/onpremisesagentgroup-update.md
@@ -8757,7 +8759,7 @@
                       href: api/publishedresource-list.md
                     - name: Obter
                       href: api/publishedresource-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/publishedresource-post.md
                     - name: Atualizar
                       href: api/publishedresource-update.md
@@ -10217,7 +10219,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Teamwork
+        - name: Trabalho em equipe
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
@@ -10499,7 +10501,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-tasks.md
                 - name: Obter
                   href: api/outlooktask-get.md
@@ -10518,7 +10520,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskfolders.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-taskfolders.md
                 - name: Obter
                   href: api/outlooktaskfolder-get.md
@@ -10535,7 +10537,7 @@
               items:
                 - name: Listar
                   href: api/outlookuser-list-taskgroups.md
-                - name: Create
+                - name: Criar
                   href: api/outlookuser-post-taskgroups.md
                 - name: Obter
                   href: api/outlooktaskgroup-get.md

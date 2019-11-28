@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db432612507c9ebafd595350575557f52450fe4f
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 51db3a87dbbfae18bb3b1651d34dc9cf1ca28725
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005921"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636691"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -301,7 +301,7 @@ Content-Type: application/json
 ##### <a name="request"></a>Solicitar
 
 <!-- {
-  "blockType": "request", 
+  "blockType": "ignored", 
   "name": "call-redirect-simuring"
 } -->
 

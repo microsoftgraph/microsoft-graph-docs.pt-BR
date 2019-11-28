@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2da0dd44ca1dc7ffd8d6ee13b1289e75c87f7cd6
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d9e9a17a9afb197333e677547f3fa5dca22df9b2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006561"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637042"
 ---
 # <a name="recordinginfo-resource-type"></a>tipo de recurso recordingInfo
 
@@ -20,10 +20,10 @@ Informações de gravação de um participante.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo    | Descrição|
-|:---------------|:--------|:----------|
-| initiatedBy | [participantInfo](participantinfo.md) | O participante que iniciou a gravação. |
-| status | String | Os valores possíveis são: `recordingCapable`, `notRecording`, `startedRecording`. |
+| Propriedade        | Tipo    | Descrição|
+|:----------------|:--------|:----------|
+| initiatedBy     | [participantInfo](participantinfo.md) | O participante que iniciou a gravação. |
+| recordingStatus | String | Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "status": "recordingCapable | notRecording | startedRecording"
+  "recordingStatus": "unknown | notRecording | recording | failed"
 }
 ```
 

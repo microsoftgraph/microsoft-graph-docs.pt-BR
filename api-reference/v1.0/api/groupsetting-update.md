@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 961a1f5c82903de18c54f8c179d544c51b18ed94
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6aa2f8b393f1de1e81174097a9da520a096a33cb
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371638"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636796"
 ---
 # <a name="update-a-group-setting"></a>Atualizar uma configuração de grupo
 
@@ -36,10 +36,10 @@ Atualizar uma configuração específica de grupo ou de locatário como um todo.
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome | Descrição |
 |:-----------|:-----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | {token}. Obrigatório. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -133,7 +133,7 @@ Content-length: 173
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

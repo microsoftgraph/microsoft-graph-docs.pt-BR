@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9443b636bae32a28d6d281d980e8ff6f38153610
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 0db65ba76d0953ca365559450e621414ded574a7
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302110"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636705"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -77,7 +77,7 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/callback",
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -141,12 +141,14 @@ Content-Type: application/json
         "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
+    "countryCode": null,
+    "endpointType": null,
     "region": null,
     "languageId": null
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -155,7 +157,9 @@ Content-Type: application/json
           "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
       },
+      "endpointType": null,
       "region": null,
+      "replacesCallId": null,
       "languageId": null
     }
   ],
@@ -291,7 +295,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
