@@ -5,29 +5,29 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2da0dd44ca1dc7ffd8d6ee13b1289e75c87f7cd6
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d9e9a17a9afb197333e677547f3fa5dca22df9b2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006561"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637042"
 ---
-# <a name="recordinginfo-resource-type"></a><span data-ttu-id="30356-103">tipo de recurso recordingInfo</span><span class="sxs-lookup"><span data-stu-id="30356-103">recordingInfo resource type</span></span>
+# <a name="recordinginfo-resource-type"></a><span data-ttu-id="7ba0f-103">tipo de recurso recordingInfo</span><span class="sxs-lookup"><span data-stu-id="7ba0f-103">recordingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="30356-104">Informações de gravação de um participante.</span><span class="sxs-lookup"><span data-stu-id="30356-104">Recording information for a participant.</span></span>
+<span data-ttu-id="7ba0f-104">Informações de gravação de um participante.</span><span class="sxs-lookup"><span data-stu-id="7ba0f-104">Recording information for a participant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="30356-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="30356-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7ba0f-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7ba0f-105">Properties</span></span>
 
-| <span data-ttu-id="30356-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="30356-106">Property</span></span>       | <span data-ttu-id="30356-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="30356-107">Type</span></span>    | <span data-ttu-id="30356-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="30356-108">Description</span></span>|
-|:---------------|:--------|:----------|
-| <span data-ttu-id="30356-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="30356-109">initiatedBy</span></span> | [<span data-ttu-id="30356-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="30356-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="30356-111">O participante que iniciou a gravação.</span><span class="sxs-lookup"><span data-stu-id="30356-111">The participant who initiated the recording.</span></span> |
-| <span data-ttu-id="30356-112">status</span><span class="sxs-lookup"><span data-stu-id="30356-112">status</span></span> | <span data-ttu-id="30356-113">String</span><span class="sxs-lookup"><span data-stu-id="30356-113">String</span></span> | <span data-ttu-id="30356-114">Os valores possíveis são: `recordingCapable`, `notRecording`, `startedRecording`.</span><span class="sxs-lookup"><span data-stu-id="30356-114">Possible values are: `recordingCapable`, `notRecording`, `startedRecording`.</span></span> |
+| <span data-ttu-id="7ba0f-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7ba0f-106">Property</span></span>        | <span data-ttu-id="7ba0f-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ba0f-107">Type</span></span>    | <span data-ttu-id="7ba0f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ba0f-108">Description</span></span>|
+|:----------------|:--------|:----------|
+| <span data-ttu-id="7ba0f-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="7ba0f-109">initiatedBy</span></span>     | [<span data-ttu-id="7ba0f-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="7ba0f-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="7ba0f-111">O participante que iniciou a gravação.</span><span class="sxs-lookup"><span data-stu-id="7ba0f-111">The participant who initiated the recording.</span></span> |
+| <span data-ttu-id="7ba0f-112">recordingStatus</span><span class="sxs-lookup"><span data-stu-id="7ba0f-112">recordingStatus</span></span> | <span data-ttu-id="7ba0f-113">String</span><span class="sxs-lookup"><span data-stu-id="7ba0f-113">String</span></span> | <span data-ttu-id="7ba0f-114">Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou.</span><span class="sxs-lookup"><span data-stu-id="7ba0f-114">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="30356-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="30356-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7ba0f-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7ba0f-115">JSON representation</span></span>
 
-<span data-ttu-id="30356-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="30356-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7ba0f-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7ba0f-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +39,7 @@ ms.locfileid: "38006561"
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "status": "recordingCapable | notRecording | startedRecording"
+  "recordingStatus": "unknown | notRecording | recording | failed"
 }
 ```
 
