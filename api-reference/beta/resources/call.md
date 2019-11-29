@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 65e17466121dedef36c72a0091974e2a2329494c
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 01e3441e64c6b9f37bacbe00bf2c639439a03fb1
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747994"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636664"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -49,7 +49,9 @@ Embora a mesma identidade não possa ser convidada várias vezes, é possível q
 | **Operações do próprio participante**                                    |                                                             |                                                                                 |
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Ative o mudo para si mesmo na chamada.                                                          |
 | [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Desative o mudo automaticamente na chamada.                                                        |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Nenhum                                                            | Inicie e interrompa a tela de compartilhamento na chamada.                                      |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Nenhum                                                        | Inicie e interrompa a tela de compartilhamento na chamada.                                      |
+| **Operações de gravação**                                           |                                                             |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Atualiza o status da gravação.                      |
 
 ## <a name="properties"></a>Propriedades
 
@@ -62,6 +64,7 @@ Embora a mesma identidade não possa ser convidada várias vezes, é possível q
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para cenários de reunião.                                                                                                                                |
 | direction           | String                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
 | id                  | String                                                                                                 | A ID de chamada. Somente leitura.                                                                                                                                                                        |
+| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | O contexto associado a uma chamada recebida. Somente leitura. Servidor gerado.                                                                                                                                |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração de mídia. As informações necessárias para a criação de chamadas ponto a ponto ou para entrar em reuniões.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. O estado da mídia de chamadas. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contém os recursos de uma reunião. Somente leitura.                                                                                                       |
@@ -74,7 +77,7 @@ Embora a mesma identidade não possa ser convidada várias vezes, é possível q
 | source              | [participantInfo](participantinfo.md)                                                                  | O remetente da chamada.                                                                                                                                                                         |
 | state               | String                                                                                                 | O estado da chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura.                          |
 | assunto             | String                                                                                                 | O assunto da conversa.                                                                                                                                                                    |
-| targets             | [participantInfo](participantinfo.md) collection                                                       | O destinatário da chamada. Informações necessárias para criar chamadas ponto a ponto.                                                                                                            |
+| targets             | conjunto [invitationParticipantInfo](participantinfo.md)                                             | O destinatário da chamada. Informações necessárias para criar chamadas ponto a ponto.                                                                                                            |
 | tenantId            | String                                                                                                 | Somente leitura. `tenantId` em Azure Active Directory.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Somente leitura.                                                                                                                                                                       |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Somente leitura.                                                                                                                                                                        |
@@ -100,6 +103,7 @@ Veja a seguir uma representação JSON do recurso.
     "chatInfo",
     "direction",
     "id",
+    "incomingContext",
     "mediaState",
     "meetingCapability",
     "meetingInfo",
@@ -128,6 +132,7 @@ Veja a seguir uma representação JSON do recurso.
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
+  "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
@@ -141,7 +146,7 @@ Veja a seguir uma representação JSON do recurso.
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
   "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}

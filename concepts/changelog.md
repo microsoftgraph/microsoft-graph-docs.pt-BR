@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c1d38f86e5644decfbae3b5e90b456e55f897cb6
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 6e699e9f6b486dc35072c8f5c1953f38499a07c2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250705"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637105"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -30,6 +30,20 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |:----------------|:------------|:-----------------------------------------|
 | Alteração        | Beta        | Tipo de retorno alterado para os métodos [sem áudio](/graph/api/call-mute?view=graph-rest-beta) e [silenciar participante](/graph/api/participant-mute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). | 
 | Alteração        | Beta        | Tipo de retorno alterado para método de [ativar áudio](/graph/api/call-unmute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). | 
+
+### <a name="cloud-communications--recording"></a>Comunicação em nuvem | Gravação
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição|beta|Adicionada nova ação [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-beta) para [fazer uma ligação para](/graph/api/resources/call?view=graph-rest-beta) entidade.
+|Adição|beta|Adicionado novo tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-beta).
+|Adição|beta|Adicionada a nova propriedade `incomingContext` para[ fazer chamada para a](/graph/api/resources/call?view=graph-rest-beta) entidade.
+|Adição|beta|Adicionada a nova propriedade `endpointType` ao tipo complexo [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-beta).
+|Adição|beta|Adicionada a nova propriedade `endpointType` ao tipo complexo [invitationParticipantInfo](/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta).
+|Adição|beta|Adicionada a nova propriedade `recordingStatus` ao tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
+|Exclusão|beta|Removida a propriedade `status`do tipo complexo[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
+|Exclusão|beta|Removida a herança de [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-beta) do tipo complexo [invitationParticipantInfo](/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta).
+
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -87,7 +101,15 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | v1.0 | Adicionada a operação [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) para o recurso[grupo](/graph/api/resources/group?view=graph-rest-1.0). |
 | Adição | v1.0 | Adicionada a operação [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) para o recurso[usuário](/graph/api/resources/user?view=graph-rest-1.0). |
 
-### <a name="identity-and-access-information-protection"></a>Identidade e acesso (Proteção de informação)
+### <a name="identity-and-access-azure-ad--conditional-access"></a>Identidade e acesso (Azure AD) | Acesso condicional
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | beta | Adicionada permissão Policy.Read.All no nível do aplicativo para operações de leitura nas políticas de acesso condicional e nos locais nomeados.|
+| Adição | beta | Suporte adicional para o estado somente de relatório : `enabledForReportingButNotEnforced`.|
+| Alteração | beta | Atualizadas as permissões necessárias para executar as operações de gravação tanto para as políticas de acesso condicional quanto para os locais nomeados.|
+
+### <a name="identity-and-access-azure-ad--information-protection"></a>Identidade e acesso (Azure AD) | Proteção de informações
 
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -97,14 +119,10 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionada a propriedade **conversationIndex** à [message](/graph/resources/message?view=graph-rest-v1.0) e seu tipo derivado [eventMessage](/graph/resources/eventmessage?view=graph-rest-v1.0).|
 | Adição | Beta | Adicionado suporte para a permissão delegada [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) e para a permissão de aplicativo [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) para [criar](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [obter](/graph/api/subscription-get?view=graph-rest-beta), [atualizar](/graph/api/subscription-update?view=graph-rest-beta) e [excluir](/graph/api/subscription-delete?view=graph-rest-beta) assinaturas para as notificações de alteração na mensagem. |
 | Adição | v1.0 | Adicionado suporte para a permissão delegada Mail.ReadBasic e para a permissão de aplicativo Mail.ReadBasic.All para:<br />- [Listar mensagens](/graph/api/user-list-messages?view=graph-rest-1.0)<br />- [Obter mensagem](/graph/api/message-get?view=graph-rest-1.0) <br />- [Listar pastas de email](/graph/api/user-list-mailfolders?view=graph-rest-1.0)<br />- [Obter pasta de email](/graph/api/mailfolder-get?view=graph-rest-1.0)<br />- [Listar pastas filho](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Listar mensagens na pasta](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Obter o delta de mensagem](/graph/api/message-delta?view=graph-rest-1.0)<br />- [Obter a pasta de email delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) <br />- [Criar](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [obter](/graph/api/subscription-get?view=graph-rest-1.0), [atualizar](/graph/api/subscription-update?view=graph-rest-1.0) e [excluir](/graph/api/subscription-delete?view=graph-rest-1.0) assinaturas para as notificações de alteração na mensagem.|
 
-### <a name="identity-and-access-azure-ad--conditional-access"></a>Identidade e acesso (Azure AD) | Acesso condicional
-
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição | beta | Adicionada permissão Policy.Read.All no nível do aplicativo para operações de leitura nas políticas de acesso condicional e nos locais nomeados.|
 
 ### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
 
