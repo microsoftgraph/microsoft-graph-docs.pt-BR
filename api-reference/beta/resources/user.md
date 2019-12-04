@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ee3f42f36ccee18baf4bcbaaf6790c12a717961e
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: c4ca85a37f2bd1f40daed09dd6ba2b4616e2b81f
+ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658860"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39672828"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -28,60 +28,113 @@ Esse recurso permite:
 
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
-|[Listar usuários](../api/user-list.md) |Coleção [user](user.md)| Recuperar uma lista de objetos user.|
-|[Criar usuário](../api/user-post-users.md) |[user](user.md)| Criar um novo objeto user.|
-|[Obter usuário](../api/user-get.md) | [user](user.md) |Ler propriedades e relações do objeto user.|
-|[Atualizar usuário](../api/user-update.md) | [user](user.md) |Atualizar o objeto user. |
-|[Excluir usuário](../api/user-delete.md) | Nenhum |Excluir o objeto user. |
-|[Listar mensagens](../api/user-list-messages.md) |Coleção [message](message.md)| Obter todas as mensagens na caixa de correio do usuário conectado.|
-|[Criar mensagem](../api/user-post-messages.md) |[message](message.md)| Crie uma mensagem postando na coleção de mensagens.|
-|[Listar mailFolders](../api/user-list-mailfolders.md) |Coleção [mailFolder](mailfolder.md)| Obter o conjunto de pastas de email sob a pasta raiz do usuário conectado. |
-|[Criar MailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Crie um novo mailFolder postando na coleção mailFolders.|
-|[sendMail](../api/user-sendmail.md)|Nenhum|Enviar a mensagem especificada no corpo da solicitação.|
-|[Listar eventos](../api/user-list-events.md) |Coleção [event](event.md)| Obter uma lista de objetos event na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.|
-|[Criar evento](../api/user-post-events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
-|[Listar calendários](../api/user-list-calendars.md) |Coleção [Calendar](calendar.md)| Obter uma coleção de objetos Calendar.|
-|[Criar calendário](../api/user-post-calendars.md) |[Calendar](calendar.md)| Criar um novo Calendar postando na coleção calendars.|
-|[Listar calendarGroups](../api/user-list-calendargroups.md) |Coleção [CalendarGroup](calendargroup.md)| Obter uma coleção de objetos CalendarGroup.|
-|[Criar calendarGroup](../api/user-post-calendargroups.md) |[CalendarGroup](calendargroup.md)| Criar um novo CalendarGroup postando na coleção calendarGroups.|
-|[Listar calendarView](../api/user-list-calendarview.md) |Coleção [event](event.md)| Obter uma coleção de objetos de evento.|
-|[Listar contatos](../api/user-list-contacts.md) |Coleção [Contact](contact.md)| Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado.|
-|[Criar contato](../api/user-post-contacts.md) |[contato](contact.md)| Crie um novo contato postando na coleção de contatos.|
-|[Listar contactFolders](../api/user-list-contactfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obtenha a coleção de pastas de contatos na pasta de contatos padrão do usuário conectado.|
-|[Criar contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Crie um novo contactFolder postando na coleção contactFolders.|
-|[Listar directReports](../api/user-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários ou contatos subordinados ao usuário da propriedade de navegação directReports.|
-|[Listar gerente](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager.|
-|[Listar memberOf](../api/user-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos, funções de diretório e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação memberOf.|
-|[Listar memberOf transitivos](../api/user-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos dos quais o usuário é membro aninhado. |
-|[Listar joinedTeams](../api/user-list-joinedteams.md) |Coleção [team](team.md)| Obter as equipes do Microsoft Teams no qual o usuário é membro direto da propriedade de navegação joinedTeams.|
-|[Listar ownedDevices](../api/user-list-owneddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices.|
-|[Listar ownedObjects](../api/user-list-ownedobjects.md) |Coleção [directoryObject](directoryobject.md)| Obter os objetos directory que pertencem ao usuário da propriedade de navegação ownedObjects.|
-|[Listar plannerTasks](../api/planneruser-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter o plannerTasks atribuído ao usuário.|
-|[Listar registeredDevices](../api/user-list-registereddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que estão registrados para o usuário da propriedade de navegação registeredDevices.|
-|[Listar associações de função com escopo](../api/user-list-scopedrolememberof.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Obter as associações de unidades administrativas de função com escopo deste usuário.|
-|[Listar createdObjects](../api/user-list-createdobjects.md) |Coleção [directoryObject](directoryobject.md)| Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects.|
-|[Listar agreementAcceptances](../api/user-list-agreementacceptances.md) | Coleção [agreementAcceptance](agreementacceptance.md) | Obter uma lista de termos de status de aceitação de uso do usuário.|
-|[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
-|[reprocessLicense](../api/user-reprocesslicenseassignment.md) |[user](user.md)| Reprocessar as atribuições de assinatura do usuário.|
-|[Listar licenseDetails](../api/user-list-licensedetails.md) |Coleção [licenseDetails](licensedetails.md)| Obtenha uma coleção de objetos licenseDetails.|
-|[checkMemberGroups](../api/user-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
-|[checkMemberObjects](../api/user-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifique a associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. A verificação é transitiva.|
-|[delta](../api/user-delta.md)|coleção de usuários| Obter as alterações incrementais para usuários. |
-|[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo.|
-|[findRoomLists](../api/user-findroomlists.md)|Coleção [emailaddress.md](emailaddress.md) | Obter as listas de salas definidas em um locatário.|
-|[findRooms](../api/user-findrooms.md)|Coleção [emailaddress.md](emailaddress.md) | Obter todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. |
-|[getMailTips](../api/user-getmailtips.md)|Coleção [mailTips](mailtips.md)|Retornar dicas de email de um ou mais destinatários conforme disponíveis para o usuário conectado. |
-|[getMemberGroups](../api/user-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva.|
-|[getMemberObjects](../api/user-getmemberobjects.md)|Coleção String| Retornar todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Nenhum |Invalidar todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **refreshTokensValidFromDateTime** para a data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método é substituído por **revokeSignInSessions**.|
-|[reminderView](../api/user-reminderview.md)|Coleção [Reminder](reminder.md)|Retorna uma lista de lembretes de calendário nas horas de início e término especificadas.|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Nenhum |Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**.|
-|[translateExchangeIds](../api/user-translateexchangeids.md) |coleção [convertIdResult](convertidresult.md)| Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.|
+| [Listar usuários](../api/user-list.md) | Coleção [user](user.md) | Recuperar uma lista de objetos user. |
+| [Criar usuário](../api/user-post-users.md) | [user](user.md) | Criar um novo objeto user. |
+| [Obter usuário](../api/user-get.md) | [user](user.md) | Ler propriedades e relações do objeto user. |
+| [Atualizar usuário](../api/user-update.md) | [user](user.md) | Atualizar o objeto user. |
+| [Excluir usuário](../api/user-delete.md) | Nenhum | Excluir o objeto user. |
+| [Obter delta](../api/user-delta.md) | coleção de usuários | Obter as alterações incrementais para usuários. |
+| **Calendário** ||| 
+| [Criar calendário](../api/user-post-calendars.md) | [Calendar](calendar.md) | Criar um novo Calendar postando na coleção calendars.|
+| [Criar calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Criar um novo CalendarGroup postando na coleção calendarGroups. |
+| [Criar evento](../api/user-post-events.md) | [event](event.md) | Criar um novo Event postando na coleção de eventos. |
+| [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo. |
+| [findRooms](../api/user-findrooms.md) | Coleção [emailaddress.md](emailaddress.md) | Obter todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. |
+| [findRoomLists](../api/user-findroomlists.md) | Coleção [emailaddress.md](emailaddress.md) | Obter as listas de salas definidas em um locatário.|
+| [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado. |
+| [Listar calendários](../api/user-list-calendars.md) | Coleção [Calendar](calendar.md) | Obter uma coleção de objetos Calendar. |
+| [Listar calendarGroups](../api/user-list-calendargroups.md) | Coleção [CalendarGroup](calendargroup.md) | Obter uma coleção de objetos CalendarGroup. |
+| [Listar calendarView](../api/user-list-calendarview.md) | Coleção [event](event.md) | Obter uma coleção de objetos de evento. |
+| [Listar eventos](../api/user-list-events.md) | Coleção [event](event.md) | Obter uma lista de objetos event na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série. |
+| [reminderView](../api/user-reminderview.md) | Coleção [Reminder](reminder.md) | Retorna uma lista de lembretes de calendário nas horas de início e término especificadas. |
+| **Contatos** |||
+| [Criar contato](../api/user-post-contacts.md) | [contato](contact.md) | Crie um novo contato postando na coleção de contatos. |
+| [Criar contactFolder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Crie um novo contactFolder postando na coleção contactFolders. |
+| [Listar contatos](../api/user-list-contacts.md) | Coleção [Contact](contact.md) | Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado. |
+| [Listar contactFolders](../api/user-list-contactfolders.md) | Coleção [ContactFolder](contactfolder.md) | Obtenha a coleção de pastas de contatos na pasta de contatos padrão do usuário conectado. |
+| **Objetos de diretório** |||
+| [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva. |
+| [checkMemberObjects](../api/user-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique a associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. A verificação é transitiva. |
+| [exportPersonalData](../api/user-exportpersonaldata.md) | Nenhum | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário organizacional. |
+| [getByIds](../api/directoryobject-getbyids.md) | Coleção de cadeia de caracteres | Retorna os objetos de diretório especificados a partir de uma lista de ids. |
+| [getMemberGroups](../api/user-getmembergroups.md) | Coleção de cadeias de caracteres | Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva. |
+| [getMemberObjects](../api/user-getmemberobjects.md) | Coleção String | Retornar todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
+| [Listar createdObjects](../api/user-list-createdobjects.md) | Coleção [directoryObject](directoryobject.md) | Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects. |
+| [Listar licenseDetails](../api/user-list-licensedetails.md) | Coleção [licenseDetails](licensedetails.md) | Obtenha uma coleção de objetos licenseDetails. |
+| [Listar ownedDevices](../api/user-list-owneddevices.md) | Coleção [directoryObject](directoryobject.md) | Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices. |
+| [Listar ownedObjects](../api/user-list-ownedobjects.md) | Coleção [directoryObject](directoryobject.md) | Obter os objetos directory que pertencem ao usuário da propriedade de navegação ownedObjects. |
+| [Listar registeredDevices](../api/user-list-registereddevices.md) | Coleção [directoryObject](directoryobject.md) | Obter os dispositivos que estão registrados para o usuário da propriedade de navegação registeredDevices. |
+| [Listar associações de função com escopo](../api/user-list-scopedrolememberof.md) | Coleção [scopedRoleMembership](scopedrolemembership.md) | Obter as associações de unidades administrativas de função com escopo deste usuário. |
+| [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocessar as atribuições de assinatura do usuário. |
+| [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhum | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**. |
+| **Unidade** |||
+| [Obter unidade](../api/drive-get.md) | [unidade](drive.md) | Recupere as propriedades e as relações de um recurso da Unidade. |
+| [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |
+| **Grupos** |||
+| [Listar joinedTeams](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Obter as equipes do Microsoft Teams no qual o usuário é membro direto da propriedade de navegação joinedTeams. |
+| [Listar memberOf](../api/user-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obter os grupos, funções de diretório e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação memberOf. |
+| [Listar memberOf transitivos](../api/user-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos dos quais o usuário é membro aninhado. |
+| **Percepções** |||
+| [Listar compartilhado](../api/insights-list-shared.md) | coleção [sharedInsight](insights-shared.md) | Visão calculada que retorna a lista de arquivos compartilhados com um usuário. |
+| [Listar tendências](../api/insights-list-trending.md) | coleção [tendências](insights-trending.md)  | Insights calculados que retornam a lista de itens de tendências do usuário. |
+| [Listar usados](../api/insights-list-used.md) | coleção [usedInsight](insights-used.md) | Visão calculada que retorna a lista de arquivos usados com um usuário. |
+| **Email** |||
+| [Criar inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Crie uma substituição da Caixa de Entrada Destaques para um remetente identificado por um endereço SMTP. |
+| [Criar MailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Crie um novo mailFolder postando na coleção mailFolders. |
+| [Criar mensagem](../api/user-post-messages.md) | [message](message.md) | Crie uma mensagem postando na coleção de mensagens. |
+| [Criar messageRule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Crie um objeto messageRule especificando um conjunto de condições e ações. |
+| [getMailTips](../api/user-getmailtips.md) | Coleção [mailTips](mailtips.md) | Retornar dicas de email de um ou mais destinatários conforme disponíveis para o usuário conectado. |
+| [Listar mailFolders](../api/user-list-mailfolders.md) | Coleção [mailFolder](mailfolder.md) | Obter o conjunto de pastas de email sob a pasta raiz do usuário conectado. |
+| [Listar mensagens](../api/user-list-messages.md) | Coleção [message](message.md)| Obter todas as mensagens na caixa de correio do usuário conectado. |
+| [List overrides](../api/inferenceclassification-list-overrides.md) | Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md) | Obtenha as substituições da Caixa de Entrada Destaques que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas. |
+| [Listar regras](../api/mailfolder-list-messagerules.md) | Coleção [messageRule](messagerule.md) | Obtenha todos os objetos messageRule definidos para a caixa de entrada do usuário. |
+| [Enviar email](../api/user-sendmail.md) | Nenhum | Enviar a mensagem especificada no corpo da solicitação. |
+| **Anotações** |||
+| [Criar bloco de anotações](../api/onenote-post-notebooks.md) | [bloco de anotações](notebook.md) | Crie um novo bloco de anotações do OneNote. |
+| [Listar bloco de anotações](../api/onenote-list-notebooks.md) | Coleção [bloco de anotações](notebook.md) | Recuperar uma lista de objetos do bloco de anotações. |
 |**Extensões abertas**| | |
-|[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
-|[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
-|**Extensões de esquema**| | |
-|[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Criar uma definição para a extensão de esquema e usá-la para adicionar dados digitados personalizados a um recurso.|
+| [Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso. |
+| [Obter extensão aberta](../api/opentypeextension-get.md) | Coleção [openTypeExtension](opentypeextension.md) | Obtenha uma extensão aberta identificada pelo nome da extensão. |
+| **Hierarquia da organização** |||
+| [Atribuir gerenciador](../api/user-post-manager.md) | Nenhum | Atribuir um gerenciador de usuário. |
+| [Obter gerenciador](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager. |
+| [Listar directReports](../api/user-list-directreports.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários ou contatos subordinados ao usuário da propriedade de navegação directReports. |
+| **Configurações do Outlook** |||
+| [Criar categoria do Outlook](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) | Cria um objeto outlookCategory na lista mestra de categorias do usuário. |
+| [Obter supportedLanguages](../api/outlookuser-supportedlanguages.md), | Coleção [localeInfo](localeinfo.md) | Obtenha a lista de locais e idiomas com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
+| [Obter supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md collection) | Obtenha a lista de fusos horários com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
+| [Obter configurações de caixa de correio do usuário](../api/user-get-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Obtenha as configurações de caixa de correio do usuário. |
+| [Listar as categorias do Outlook](../api/outlookuser-list-mastercategories.md) | Coleção [outlookCategory](outlookcategory.md) | Obtém todas as categorias que foram definidas para o usuário. |
+| [Converter IDs do Exchange](../api/user-translateexchangeids.md) | coleção [convertIdResult](convertidresult.md) | Traduzir os identificadores de recursos relacionados ao Outlook entre formatos. |
+| [Atualizar configurações da caixa de correio do usuário](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Habilitar, configurar ou desabilitar o mailboxSettings de um ou mais usuários. |
+| **Tarefas do Outlook** |||
+| [Criar outlookTask](../api/outlookuser-post-tasks.md) | [outlookTask](outlooktask.md) | Criar uma tarefa do Outlook no grupo de tarefas padrão (Minhas Tarefas) e pasta de tarefas padrão (Tarefas) na caixa de correio do usuário. |
+| [Listar tarefas](../api/outlookuser-list-tasks.md) | coleção [outlookTask](outlooktask.md) | Obtenha todas as tarefas do Outlook na caixa de correio do usuário. |
+| **Pessoas** |||
+| [Listar pessoas](../api/user-list-people.md) | [person](person.md) | Recupere uma lista de objetos person ordenados por relevância para o usuário, o que é determinado pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. |
+| **Foto** |||
+| [Obter foto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Obtenha a profilePhoto especificado ou seus metadados (propriedades profilePhoto ). |
+| [Atualizar profilephoto](../api/profilephoto-update.md) | Nenhum | Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. |
+| **Planner** |||
+| [Obter plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | Recupere as propriedades e relações de um objeto plannerUser. |
+| [Listar favoritePlans](../api/planneruser-list-favoriteplans.md) | coleção [plannerPlan](plannerplan.md) | Recupere uma lista de plannerPlans marcados como favoritos por um usuário. |
+| [Listar recentPlans](../api/planneruser-list-recentplans.md) | coleção [plannerPlan](plannerplan.md) | Recupere uma lista de plannerPlans recentemente exibida por um usuário. |
+| [Listar tarefas](../api/planneruser-list-tasks.md) | Coleção [plannerTask](plannertask.md) | Obter o plannerTasks atribuído ao usuário. |
+| [Atualizar plannerUser](../api/planneruser-update.md) | Nenhum | Atualize as propriedades de um objeto plannerUser. |
+| **Perfil** |||
+| [Obter perfil](../api/profile-get.md) | [perfil](profile.md) | Recupere as propriedades e relações de um objeto de perfil para um determinado usuário. |
+| [Excluir perfil](../api/profile-delete.md) | Nenhum | Exclua o objeto de perfil de uma conta de usuário. |
+| **Extensões de esquema** | | |
+| [Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) | Nenhum | Cria uma definição para a extensão de esquema e a usa para adicionar dados digitados personalizados a um recurso.|
+| **Teamwork** |||
+| [Instalar o aplicativo para o usuário](../api/user-add-teamsappinstallation.md) | Nenhum | Instale um aplicativo no escopo pessoal do usuário especificado. |
+| [Listar aplicativos instalados para o usuário](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado. |
+| [Atualizar aplicativo](../api/user-upgrade-teamsappinstallation.md) | Nenhum | Atualize uma instalação de aplicativo no escopo pessoal do usuário especificado para a versão mais recente do aplicativo.
+| [Desinstalar aplicativo para o usuário](../api/user-delete-teamsappinstallation.md) | Nenhum | Desinstale um aplicativo do escopo pessoal do usuário especificado. |
+| **Configurações do usuário** |||
+| [Obter configurações](../api/user-get-settings.md) | [configurações](user-settings.md) | Leia o usuário e o objeto de configurações da organização. |
+| [Atualizar configurações](../api/user-update-settings.md) | [configurações](user-settings.md) | Atualize as propriedades do objeto de configurações. |
 
 ## <a name="properties"></a>Propriedades
 
