@@ -3,12 +3,12 @@ title: 'Criar aplicativos para diversos dispositivos com a tecnologia do Project
 description: 'Você pode usar o Project Rome para criar experiências que abrangem vários dispositivos e plataformas sem complicações, reduzindo conflitos para usuários e ajudando a promover o engajamento com o aplicativo. Para que aplicativos compartilhem dados entre vários dispositivos e plataformas usando as APIs do Project Rome, é necessário configurar um aplicativo para diversos dispositivos que inclua informações sobre os aplicativos específicos de plataforma. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: f54f38c5d047d2b5d790e5bea48fdb27f54b4004
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 93f171278eb892cb31712738c0e2249eb7d2f353
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570352"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37969847"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome 
 
@@ -37,10 +37,10 @@ Por exemplo, uma usuária está assistindo a um vídeo enquanto vai de ônibus d
 Quando você associa credenciais de notificações por push a cada uma das plataformas em que seu aplicativo está disponível com o aplicativo entre dispositivos, o aplicativo do usuário pode enviar comandos para outros dispositivos e criar experiências entre várias telas ou fazer a transição de um fluxo de trabalho de um dispositivo para outro em tempo real. 
 
 ## <a name="select-the-right-hosting-method-for-your-cross-device-app-configuration"></a>Selecione o método certo de hospedagem da configuração de aplicativo entre dispositivos
-Você pode hospedar a configuração de aplicativo entre dispositivos como um arquivo JSON no seu domínio ou um perfil configurável pelo [Centro de Desenvolvimento do Windows](https://developer.microsoft.com/pt-BR/windows). Escolha uma opção de hospedagem de acordo com os recursos do Project Rome que você deseja habilitar nos aplicativos. 
+Você pode hospedar a configuração de aplicativo entre dispositivos como um arquivo JSON no seu domínio ou um perfil configurável pelo [Centro de Desenvolvimento do Windows](https://developer.microsoft.com/windows). Escolha uma opção de hospedagem de acordo com os recursos do Project Rome que você deseja habilitar nos aplicativos. 
 
 ### <a name="windows-dev-center-profile-recommended"></a>Perfil do Centro de Desenvolvimento do Windows (recomendado) 
-Você pode acessar todos os recursos de Rome Project usando um aplicativo entre dispositivos gerenciado no [Centro de Desenvolvimento do Windows](https://developer.microsoft.com/pt-BR/windows). O Centro de Desenvolvimento do Windows também oferece a *melhor* maneira de gerenciar alterações de configuração do aplicativo entre dispositivos. Você pode salvar atualizações em um perfil existente de forma mais segura antes de estar pronto para publicar as alterações de produção. Quando você publica alterações em um aplicativo entre dispositivos existente no Centro de Desenvolvimento, o novo perfil entrará em vigor após aproximadamente **uma hora**.  
+Você pode acessar todos os recursos de Rome Project usando um aplicativo entre dispositivos gerenciado no [Centro de Desenvolvimento do Windows](https://developer.microsoft.com/windows). O Centro de Desenvolvimento do Windows também oferece a *melhor* maneira de gerenciar alterações de configuração do aplicativo entre dispositivos. Você pode salvar atualizações em um perfil existente de forma mais segura antes de estar pronto para publicar as alterações de produção. Quando você publica alterações em um aplicativo entre dispositivos existente no Centro de Desenvolvimento, o novo perfil entrará em vigor após aproximadamente **uma hora**.  
 
 ### <a name="externally-hosted-json-file-limited"></a>Arquivo JSON hospedado externamente (limitado) 
 Você pode usar os seguintes recursos do Project Rome em todas as plataformas compatíveis usando um aplicativo entre dispositivos gerenciado como um arquivo JSON hospedado externamente:  
@@ -70,14 +70,14 @@ Você precisará coletar cada uma das IDs de aplicativo específicas da platafor
 
 Para encontrar as IDs:
 
-* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/pt-BR/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** – para saber mais, veja [Alterar o nome do pacote](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** – para saber mais, veja [Pacote](https://developer.apple.com/documentation/foundation/bundle) e [Propriedades obrigatórias, localizáveis e editáveis](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>Etapa 3: Configurar suporte para a conta Microsoft ou o Azure AD
-Para habilitar experiências entre dispositivos, os usuários do seu aplicativo devem entrar com uma  [conta Microsoft](https://account.microsoft.com/account)  ou uma conta do  [Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
+Para habilitar experiências entre dispositivos, os usuários do seu aplicativo devem entrar com uma  [conta Microsoft](https://account.microsoft.com/account)  ou uma conta do  [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
 
 Você pode localizar as IDs de aplicativo/cliente existentes ou provisionar novas entrando no [portal de registro do aplicativo](https://apps.dev.microsoft.com) com sua conta de desenvolvedor. Quando você entra no portal, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
@@ -95,7 +95,8 @@ Se você tiver optado por configurar o aplicativo entre dispositivos no Centro d
 
 Para encontrar as IDs:
 
-* **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](https://docs.microsoft.com/pt-BR/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
+* 
+  **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](https://docs.microsoft.com/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service** – confira [Visão geral de APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** – veja [Mensagens em nuvem Firebase](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -142,8 +143,8 @@ O exemplo a seguir inclui todos os identificadores de plataforma válidos aceito
 
 Para encontrar as IDs:
 
-* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/pt-BR/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** – para saber mais, veja [Alterar o nome do pacote](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** – para saber mais, veja [Pacote](https://developer.apple.com/documentation/foundation/bundle) e [Propriedades obrigatórias, localizáveis e editáveis](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   
@@ -187,7 +188,7 @@ Se estiver usando as APIs no lado do cliente para Windows, iOS ou Android, será
 Se estiver usando a API do feed de atividades no Microsoft Graph, seu valor de host precisa ser fornecido na propriedade **activitySourceHost**. Para saber mais, veja [tipo de recurso de atividade](/graph/api/resources/projectrome-activity?view=graph-rest-1.0).
 
 ### <a name="universal-windows-apps"></a>Aplicativos Universais do Windows
-Se tiver um aplicativo do Windows, será necessário configurar o valor do host no manifesto do aplicativo antes de publicar os dados. Para saber mais, veja [uap5:UserActivity](https://docs.microsoft.com/pt-BR/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
+Se tiver um aplicativo do Windows, será necessário configurar o valor do host no manifesto do aplicativo antes de publicar os dados. Para saber mais, veja [uap5:UserActivity](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps

@@ -4,12 +4,12 @@ description: Este artigo descreve os códigos de erro que são retornados pelas 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: f74f9be52756e068aa3e197f2de526b38c187266
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 316097c01cbd1888b63304727e442f14b2d7c51b
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558374"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37969819"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Códigos de erro para APIs do OneNote no Microsoft Graph
 
@@ -63,7 +63,7 @@ O servidor está ocupado demais para lidar com a solicitação de entrada neste 
 Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 5.000 itens do OneNote (bloco de anotações, seções, grupos de seções) e não podem ser consultadas usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 5000 itens do OneNote. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
 
 ### <a name="10012"></a>10012
-Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, confira [Configurar uma biblioteca para exigir check-out de arquivos](https://support.office.com/pt-BR/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
+Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, confira [Configurar uma biblioteca para exigir check-out de arquivos](https://support.office.com/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Remova o requisito de check-out da biblioteca ou mova o bloco de anotações.
 
@@ -343,7 +343,7 @@ Não há suporte para a fonte do vídeo especificada na solicitação. Confira [
 Algo está errado com a conta do usuário.
 
 ### <a name="30101"></a>30101
-A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/en-us/).
+A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/).
 
 ### <a name="30102"></a>30102
 Nada mais pode ser adicionado à seção solicitada porque ela atingiu seu tamanho máximo.
