@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a0f46e67de69762ebf26600726dd58e74fbcbe5e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9095ca1c8f26f9a5925b3d1ad9fc95533df0365e
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337138"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844948"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 Adiciona um usuário aos proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo.
@@ -32,12 +32,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /groups/{id}/owners/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
