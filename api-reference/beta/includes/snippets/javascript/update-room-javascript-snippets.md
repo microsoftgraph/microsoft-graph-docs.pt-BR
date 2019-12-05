@@ -1,11 +1,16 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 891a1e030ef78e5bc9b54b732ab0cb28bab6800c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37997032"
 ---
-
 ```javascript
 
 const options = {
-	authProvider,
+    authProvider,
 };
 
 const client = Client.init(options);
@@ -20,7 +25,7 @@ const place = {
 };
 
 let res = await client.api('/places/cf100@contoso.com')
-	.version('beta')
-	.update(place);
+    .version('beta')
+    .update(place);
 
 ```
