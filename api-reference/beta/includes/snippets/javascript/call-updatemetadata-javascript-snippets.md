@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ca5cd047ed90488ecf28ddb7189a2835411ff97f
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 91d42308d60436a584f9575c2f40165cbe052ade
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636146"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39856714"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const updateMetadata = {
   clientContext: "clientContext-value"
 };
 
-let res = await client.api('/app/calls/{id}/updateMetadata')
+let res = await client.api('/communications/calls/{id}/updateMetadata')
     .version('beta')
     .post(updateMetadata);
 

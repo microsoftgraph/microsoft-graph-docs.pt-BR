@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 772fd09abfd488849d853f0ca4df216c391bb6a8
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 47d77e8b4671d1e0668745f1bcbb13182646f21f
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302116"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39856723"
 ---
 ```javascript
 
@@ -33,7 +33,7 @@ const call = {
   },
   targets: [
     {
-      @odata.type: "#microsoft.graph.participantInfo",
+      @odata.type: "#microsoft.graph.invitationParticipantInfo",
       identity: {
         @odata.type: "#microsoft.graph.identitySet",
         user: {

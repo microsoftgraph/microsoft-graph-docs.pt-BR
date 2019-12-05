@@ -3,18 +3,32 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 6e699e9f6b486dc35072c8f5c1953f38499a07c2
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 55117b9db8a12e9ce3b4b41aab49212368b2c805
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637105"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844271"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
+
+## <a name="december-2019"></a>Dezembro de 2019
+
+### <a name="change-notifications-webhooks"></a>Alterar notificações (Webhooks)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Suporte adicionado para os aplicativos inscritos para receber notificações que incluam dados de recursos. Os recursos compatíveis no momento são os recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) em conversas e canais do Microsoft Teams. Os aplicativos com inscrição para notificações devem implementar a autorização e o código de descriptografia adicionais para se beneficiarem desse recurso. Para obter mais detalhes, confira [Configurar notificações em mensagens de chat, incluindo propriedades de mensagem (visualização)](webhooks-with-resource-data.md).|
+
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+ 
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Foram adicionadas[ notificações](/graph/api/subscription-post-subscriptions) para mensagens de canal novas e editadas e mensagens de chat novas e editadas.
 
 ## <a name="november-2019"></a>Novembro de 2019
 
@@ -1148,7 +1162,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição |Beta e v1.0| Adicionada a propriedade **internalId** ao recurso [team](/graph/api/resources/team?view=graph-rest-1.0).|
 |Adição |Beta e v1.0| Adição de suporte para configuração do Word, Excel, PowerPoint, PDF e para as [guias](teams-configuring-builtin-tabs.md) da biblioteca de documentos. |
-|Adição |beta| Introdução da API[Enviar uma mensagem para um canal](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
+|Adição |beta| Introdução da API[Enviar uma mensagem para um canal](/graph/api/channel-post-messages?view=graph-rest-beta). |
 |Adição |beta| Introdução da API [Responder a uma mensagem em um canal](/graph/api/channel-post-messagereply?view=graph-rest-beta). |
 |Exclusão |beta| Remoção da API POST /teams/{id}/channels/{id}/chatThreads. Em lugar dela, use [Criar uma mensagem em um canal](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
 |Adição |beta | Foi adicionado suporte para permissões do aplicativo para o recurso [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta).|
