@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c1870b3e772c82e4e62abc83dee16530988e35cb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3c1b7e139fde7edc3707b661e113063f5fcf3c2c
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420074"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843872"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
@@ -35,12 +35,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /groups/{id}/owners/$ref
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Descrição|
+|:---------------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [user](../resources/user.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON do objeto [User](../resources/user.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
@@ -67,7 +68,7 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-owner-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

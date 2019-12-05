@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: c7b9b91dfd909014ebbd505c2dbca3ad1b24ac3d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 4a5ffc3ec86c0ce40e4b5fca25b7f0ddcf5dca9f
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702542"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844173"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -20,23 +20,25 @@ Assinar um aplicativo de escuta para receber notificações quando o tipo de alt
 
 ## <a name="permissions"></a>Permissões
 
-Criar uma assinatura exige o escopo de leitura do recurso. Por exemplo, para obter notificações por mensagens, seu aplicativo precisa da `Mail.Read` permissão. 
+A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para obter notificações sobre mensagens, seu aplicativo precisa da permissão mail. Read. 
  
  Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
+|[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
+|[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
-|[mensagem](../resources/message.md) | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Observação:** Há limitações adicionais para assinaturas de itens no OneDrive e no Outlook. Limitações para criar e gerenciar assinaturas (receber, atualizar e excluir assinaturas).
+> **Observação:** Limitações adicionais se aplicam a assinaturas em itens do OneDrive e do Outlook. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
 
 - No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações são enviadas pelos tipos de alterações solicitadas na pasta inscrita, ou qualquer arquivo, pasta ou outras instâncias **driveItem** na sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
@@ -62,16 +64,16 @@ POST /subscriptions
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
 Esse `clientState` campo é opcional.
 
-Este exemplo de solicitação cria uma assinatura para notificações sobre novos emails recebidos pelo usuário conectado no momento.
+Esta solicitação cria uma assinatura para notificações sobre novos emails recebidos pelo usuário conectado no momento.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,7 +108,7 @@ Content-type: application/json
 ---
 
 
-Estes são os valores válidos para a propriedade de recurso:
+Estes são os valores válidos para a Propriedade Resource.
 
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
@@ -119,9 +121,11 @@ Estes são os valores válidos para a propriedade de recurso:
 |Unidades|me/drive/root|
 |Alerta de segurança|security/alerts?$filter=status eq ‘New’|
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -148,7 +152,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
-O ponto de extremidade da notificação da assinatura (especificado na `notificationUrl` propriedade) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [Configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
+O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

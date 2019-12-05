@@ -4,12 +4,12 @@ description: O Microsoft Graph é o gateway para dados e inteligência no Micros
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b5325af0619d1f1ad7d212b69d82d63b32978a0f
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 8857d73de24cd5b6d5ee939b2ac7bd5acd1a81db
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39263258"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844229"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão geral do Microsoft Graph
 
@@ -65,7 +65,7 @@ Escolha o primeiro cenário sobre a pesquisa de participantes da reunião como u
 Você pode navegar por outros recursos usando relações:
 
 - Conecte-se ao gerente por meio de uma [relação de gerente](/graph/api/user-list-manager?view=graph-rest-1.0).
-- Obtenha informações valiosas e inteligência incluindo arquivos populares com [tendências ao redor](/graph/api/resources/insights-trending?view=graph-rest-beta) do usuário.
+- Obtenha informações valiosas e inteligência incluindo arquivos populares com [tendências ao redor](/graph/api/resources/insights-trending?view=graph-rest-1.0) do usuário.
 - [Obtenha as pessoas mais relevantes](/graph/api/user-list-people?view=graph-rest-beta) para o usuário.
 - Estender o cenário para acessar os grupos de usuários por meio de uma relação [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)
 - [Acessar outros membros em cada grupo](/graph/api/group-list-members?view=graph-rest-1.0).
@@ -94,7 +94,7 @@ Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft G
 |   GET os usuários em minha organização  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   GET grupos em minha organização | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   GET as pessoas relacionadas a mim | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
-|   Itens GET mais populares à minha volta | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
+|   Itens GET mais populares à minha volta | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=v1.0) |
 |   GET minhas anotações | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
 ## <a name="bring-data-from-an-external-content-source-to-microsoft-graph-preview"></a>Reunir dados de uma fonte de conteúdo externo para o Microsoft Graph (versão prévia)

@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 3bd97a9c727a88cd4677de359880c79ed8a85e39
+ms.openlocfilehash: 8a9a1114b5e247807b952d15901b5def124a245a
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843858"
+ms.locfileid: "39844328"
 ---
 # <a name="list-used"></a>Listar usados
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informações calculadas que incluem uma lista de documentos modificados pelo usuário.
 
@@ -48,17 +46,16 @@ GET /me/insights/used/{id}/resource
 GET /users/{id | userPrincipalName}/insights/used/{id}/resource
 ```
 
-
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 Você pode usar o `$filter` parâmetro de consulta para filtrar itens usados. Por exemplo, com base no **tipo**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 Ou com base no **ContainerType**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+`https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
 Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
 
@@ -81,7 +78,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma l
 
 Este é um exemplo da solicitação.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/used
+GET https://graph.microsoft.com/v1.0/me/insights/used
 ```
 
 ##### <a name="response"></a>Resposta
@@ -115,4 +112,5 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
     ]
 }
 ```
+
 

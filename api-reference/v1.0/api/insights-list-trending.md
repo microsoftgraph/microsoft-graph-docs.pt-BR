@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 5ebc964e0beae45e5024cab508447e632c96e6cb
+ms.openlocfilehash: e97e5f9a72084b7748551d60e795e43e80f353ed
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843816"
+ms.locfileid: "39844330"
 ---
 # <a name="list-trending"></a>Listar tendências
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informação calculada que inclui uma lista de documentos que envolvem a tendência do usuário.
 
@@ -74,7 +72,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma l
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/trending
+GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real. Veja um exemplo de resposta un truncada na parte inferior da página.

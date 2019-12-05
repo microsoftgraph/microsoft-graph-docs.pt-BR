@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 0b631554cc8cd2ed0c9a76f4c132d36c4b08e0cd
+ms.openlocfilehash: 624319d216758228de1c3fbed4e7b4f172a9e7ce
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844306"
+ms.locfileid: "39844997"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendência
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Relação avançada conectando um usuário a documentos que estão em tendência ao usuário (são relevantes para o usuário). Os arquivos do OneDrive e os arquivos armazenados em sites de equipe do SharePoint podem ser tendências em torno do usuário.
 

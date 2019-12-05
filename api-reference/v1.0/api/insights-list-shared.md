@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 010c2809d4679c2cfdc8090f7c3291ddc8981bfd
+ms.openlocfilehash: 8aa3267de5373e0f75f73851c4d995cbb29cd8bf
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843823"
+ms.locfileid: "39844327"
 ---
 # <a name="list-shared"></a>Listar compartilhados
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informações calculadas que incluem a lista de documentos compartilhados com um usuário.
 
@@ -47,13 +45,13 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 Você pode usar o `$filter` parâmetro de consulta para filtrar itens compartilhados. Por exemplo, com base no **tipo**:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 Você também pode recuperar arquivos compartilhados por um usuário específico. Por exemplo, especificando a `lastshared/sharedby/address` Propriedade:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
 Consulte o tipo complexo [sharingDetail](../resources/insights-sharingdetail.md) .
 
@@ -76,7 +74,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma l
 
 Este é um exemplo da solicitação.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/shared
+GET https://graph.microsoft.com/v1.0/me/insights/shared
 ```
 
 ##### <a name="response"></a>Resposta

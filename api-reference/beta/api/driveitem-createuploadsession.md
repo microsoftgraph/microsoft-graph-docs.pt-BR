@@ -6,12 +6,12 @@ title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3d8cee638105339f5e84ac229c2c9c81a2eb65a3
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 3f99c75d0a1f0366cdccb2e590bb16856d9b3caf
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333203"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843949"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -62,7 +62,7 @@ Por exemplo, a `item` propriedade permite definir os seguintes parâmetros:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
   "fileSize": 1234,
   "name": "filename.txt"
@@ -401,9 +401,9 @@ Content-Type: application/json
 * Um tamanho de intervalo de bytes de 10 MiB para conexões estáveis de alta velocidade é ideal. Para conexões mais lentas ou menos confiáveis, você pode obter melhores resultados com um tamanho de fragmento menor. O tamanho do fragmento recomendado é entre 5 e 10 MiB.
 * Use um tamanho de intervalo de bytes que seja múltiplo de 320 KiB (327.680 bytes). Uma falha ao usar um tamanho de fragmento que seja múltiplo de 320 KiB pode resultar na falha de transferências de arquivos grandes após o carregamento do último intervalo de bytes.
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
-Confira o tópico [Respostas de erro][error-response] para saber detalhes sobre como os erros são retornados.
+Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre como os erros são retornados.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6a009640b47ce02b1719d6e5535813d365dc9e6
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 3eeeadf3ed27087051c7bf6945920466d60b9469
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450638"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844990"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -39,7 +39,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
-|invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório.|
+|invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório. Os seguintes caracteres especiais não são permitidos no endereço de email:<br><ul><li>Til (~)</li><li>Ponto de exclamação (`!`)</li><li>Arroba (`@`)</li><li>Sinal de número`#`()</li><li>Cifrão (`$`)</li><li>Porcentagem (`%`)</li><li>Acento circunflexo`^`()</li><li>E comercial`&`()</li><li>Asterisco (`*`)</li><li>Parênteses (`( )`)</li><li>Hífen (`-`)</li><li>Sinal de mais`+`()</li><li>Sinal de igual`=`()</li><li>Colchetes (`[ ]`)</li><li>Chaves (`{ }`)</li><li>Barra invertida`\`()</li><li>Barra (`/`)</li><li>Pipe (`|`)</li><li>Ponto e`;`vírgula ()</li><li>Dois-`:`pontos ()</li><li>Aspas (`"`)</li><li>Colchetes angulares`< >`()</li><li>Ponto de interrogação (`?`)</li><li>Vírgula (`,`)</li></ul><br>No entanto, as seguintes exceções se aplicam:<br><ul><li>Um ponto (`.`) ou um hífen (`-`) é permitido em qualquer lugar no nome do usuário, exceto no início ou no final do nome.</li><li>Um sublinhado`_`() é permitido em qualquer lugar no nome do usuário. Isso inclui no início ou no final do nome.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
 |sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
@@ -50,7 +50,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|invitedUser|[Usuário](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
+|invitedUser|[user](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

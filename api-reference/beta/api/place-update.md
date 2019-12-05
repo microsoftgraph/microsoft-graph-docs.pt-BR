@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e89dc031802ea420079bbbbbf5dd46f4fe181fc
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 3e2e517d0a20384c8aaaa24e9f385cf5560c411e
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949498"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844187"
 ---
 # <a name="update-place"></a>Local de atualização
 
@@ -33,36 +33,37 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /places/{id}
+PATCH /places/{id | emailAddress}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Nome       | Valor|
+|:-----------|:------|
+| Autorização  | {token} de portador. Obrigatório. |
+| Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Somente uma instância de um recurso de colocar (**sala** ou **sala de salas**) pode ser atualizada de cada vez. No corpo da solicitação, use `@odata.type` para especificar o tipo de local e inclua as propriedades desse tipo para atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço da sala ou da sala de salas. |
-| audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
+| audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
 | bookingType            | [bookingType](../resources/room.md)                            | Tipo de sala. Os valores possíveis são: `Standard` e `Reserved`. |
-| Build               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número de edifício em que a sala se encontra. |
-| máxima               | Cadeia de caracteres                                            | Especifica a capacidade da sala. |
-| displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
-| floorLabel             | Cadeia de caracteres                                            | Especifica a carta de piso em que a sala está ativa. |
+| Build               | String                                            | Especifica o nome do edifício ou o número de edifício em que a sala se encontra. |
+| máxima               | String                                            | Especifica a capacidade da sala. |
+| displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
+| floorLabel             | String                                            | Especifica a carta de piso em que a sala está ativa. |
 | floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da sala de opções no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
 | isWheelchairAccessible | Booliano                                           | Especifica se a sala pode ser acessada por cadeira. |
-| rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| apelido               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
+| rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
+| apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou sala de salas. |
-| tags                   | String collection                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
-| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| tags                   | Coleção String                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
+| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
 
@@ -77,6 +78,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 Este é um exemplo de solicitação.
 
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -95,6 +98,20 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
@@ -127,8 +144,8 @@ Content-type: application/json
       "countryOrRegion": "USA"
     },
     "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
+      "latitude": 47.0,
+      "longitude": -122.0
     },
     "phone": "555-555-0100",
     "nickname": "Conf Room",
@@ -156,6 +173,8 @@ Content-type: application/json
 Este é um exemplo de solicitação.
 
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
@@ -167,9 +186,37 @@ Content-type: application/json
 {
   "@odata.type": "microsoft.graph.roomlist",
   "displayName": "Building 1",
-  "phone":"555-555-0100"
+  "phone":"555-555-0100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
@@ -200,7 +247,13 @@ Content-type: application/json
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geocoordinates": null,
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ },
   "phone": "555-555-0100",
   "emailAddress": "bldg1@contoso.com"
 }

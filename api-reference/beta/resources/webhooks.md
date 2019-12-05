@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 8f37e7cfbfe206cfb932661335c78dc370180bac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c951e83348134ee2a5b85e5091377d55a5fd1027
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964127"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844243"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -28,6 +28,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - [Conversa][] em grupo do Office 365
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
+- [chatMessage][]
 - [Alerta][] de segurança
 
 ## <a name="permissions"></a>Permissões
@@ -38,7 +39,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][]|
 | Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [evento][], [mensagem][]                                        |
-| Aplicativo                            | [alerta][], [contato][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][]|
+| Aplicativo                            | [alerta][], [contato][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][], [chat][]|
 
 ## <a name="see-also"></a>Confira também
 
@@ -49,6 +50,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 - [Atualizar assinatura](../api/subscription-update.md)
 - [Excluir assinatura](../api/subscription-delete.md)
 
+[chatMessage]: ./chatmessage.md
 [contato]: ./contact.md
 [conversa]: ./conversation.md
 [driveItem]: ./driveitem.md

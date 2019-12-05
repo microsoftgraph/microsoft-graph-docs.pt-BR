@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: fb4c1c07d008c37475927d490b49bbb19c1e69d5
+ms.openlocfilehash: 9d30f09195867635ec10b8aac5413c1d89a73b46
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844299"
+ms.locfileid: "39844941"
 ---
 # <a name="usagedetails-resource-type"></a>tipo de recurso usageDetails
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Tipo complexo contendo propriedades de itens [usados](insights-used.md) . Informações sobre quando o recurso foi acessado pela última vez (exibido) e modificado (editado) pelo usuário.
 

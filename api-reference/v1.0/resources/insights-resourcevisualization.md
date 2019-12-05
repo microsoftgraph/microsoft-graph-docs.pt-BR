@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b49ce2c0fb0c1d2ab167ffbb033bf11b0171a20f
+ms.openlocfilehash: 39810868e779f9de62535e4b463f477f12739e85
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844488"
+ms.locfileid: "39845018"
 ---
 # <a name="resourcevisualization-resource-type"></a>tipo de recurso resourceVisualization
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Tipo complexo contendo as propriedades de [officeGraphInsights](officegraphinsights.md).
 
@@ -81,7 +79,7 @@ Veja a seguir uma representação JSON do recurso
 -   Folder
 -   Other
 
-Consulta de exemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+Consulta de exemplo:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>valores da Propriedade ContainerType
 Os tipos com suporte podem diferir com base nos contêineres dos quais o [officeGraphInsights](officegraphinsights.md) retorna arquivos. Por exemplo, somente a percepção [sharedInsight](insights-shared.md) retorna arquivos de "Dropbox", "box" e "GDrive".
@@ -93,4 +91,4 @@ Os tipos com suporte podem diferir com base nos contêineres dos quais o [office
 -   Caixa
 -   GDrive
 
-Consulta de exemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+Consulta de exemplo:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`

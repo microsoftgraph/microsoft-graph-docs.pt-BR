@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 439b64cca61c6324aa72e5f4c845f1bd1598230b
+ms.openlocfilehash: 1dc952ba931e1a0cb4302dac881f2d5ec015c591
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844976"
+ms.locfileid: "39844336"
 ---
 # <a name="insightidentity"></a>insightIdentity
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Tipo complexo contendo propriedades de itens do [sharedInsight](insights-shared.md) . 
 

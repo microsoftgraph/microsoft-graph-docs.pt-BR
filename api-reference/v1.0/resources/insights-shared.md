@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c0af37fb5915fa3d1ec69feecc9bcbf472b4a85a
+ms.openlocfilehash: 07eeaaed610ed83f8e5e74037b2441962260da9c
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844215"
+ms.locfileid: "39845011"
 ---
 # <a name="sharedinsight-resource-type"></a>tipo de recurso sharedInsight
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma percepção representando arquivos compartilhados com ou por um usuário específico. Há suporte para os seguintes arquivos compartilhados:
 
