@@ -5,12 +5,12 @@ author: VinodRavichandran
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: d5bcd46cb89a5d911c9286ef5c2093460949a3a1
-ms.sourcegitcommit: 99cbeac2ca652632d2946c4740133c9b82c8e992
+ms.openlocfilehash: 99f79861ae4641f29784ebad44c14408a69821d9
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "37477072"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843935"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
 
@@ -18,17 +18,18 @@ ms.locfileid: "37477072"
 
 A API de comunicações do Microsoft Graph adiciona uma nova dimensão à maneira como você ou sua organização podem interagir com outros usuários, habilitando os principais recursos e funções de comunicação de seus aplicativos e serviços. Você pode usar esta API para criar e receber chamadas, criar e recuperar coordenadas da reunião e verificar a presença dos usuários.
 
-Você pode usar a API de comunicações para criar aplicativos de serviço (bots) que atuam como participantes de uma chamada e que criam e recuperam reuniões em nome dos usuários. <!-- and to check presence availability and activity of users. -->
+Você pode usar a API de comunicações para criar aplicativos de serviço (bots) que atuam como participantes de uma chamada e que criam e recuperam reuniões em nome dos usuários e verificar a disponibilidade e a atividade de presença.
 Essa API fornece funcionalidade de chamada, bem como a capacidade de criar e recuperar reuniões online. Você pode usar aplicativos de serviço (bots) com esta API, onde o bot pode atuar como participante de suas chamadas de VoIP ou reuniões do Microsoft Teams, por exemplo.
 
 ## <a name="authorization"></a>Autorização
 
-É necessária uma das seguintes [permissões](https://docs.microsoft.com/pt-BR/graph/permissions-reference#calls-permissions) para acessar a API de comunicações. Essas permissões precisam ser concedidas pelo administrador
+É necessária uma das seguintes [permissões](https://docs.microsoft.com/graph/permissions-reference#calls-permissions) para acessar a API de comunicações. Essas permissões precisam ser concedidas pelo administrador
 
 | Cenário                 | Permissões                                  |
 |:------------------------------------|:---------------------------------------------|
 | Chamando                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Reuniões                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
+| Presença                 | Presence.Read, Presence.Read.All |
 
 ## <a name="common-use-cases"></a>Casos de uso comuns
 
@@ -36,18 +37,20 @@ A tabela a seguir lista alguns dos usos comuns para a API de comunicações.
 
 | Casos de uso                         | Recursos REST                                 | Confira também  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Criando e associando chamadas 1-1 e de grupo   | [Call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta)| [Métodos para chamadas](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#methods)| 
-|Chamadas IVR   |     | [Métodos para IVR](https://docs.microsoft.com/en-us/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
-| Controles de chamada (participante) | [Participante](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta)   ||
-|Reuniões|[onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Métodos para reuniões](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
+| Criando e associando chamadas 1-1 e de grupo   | [Call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta)| [Métodos para chamadas](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta#methods)| 
+|Chamadas IVR   |     | [Métodos para IVR](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
+| Controles de chamada (participante) | [Participante](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-beta)   ||
+|Reuniões|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Métodos para reuniões](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
+|Presença | [presença](/graph/api/resources/presence) | [Métodos para presença](/graph/api/resources/presence#methods) |
 
 ## <a name="common-properties"></a>Propriedades comuns
 
 | Recurso                | Propriedades                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [propriedades de chamada](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#properties)  |
-| participante                         | [propriedades dos participantes](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta#properties) |
-| onlineMeeting                            | [Propriedades onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
+| call                               | [propriedades de chamada](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta#properties)  |
+| participante                         | [propriedades dos participantes](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-beta#properties) |
+| onlineMeeting                            | [Propriedades onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
+| presença | [Propriedades de presença](/graph/api/resources/presence#properties) |
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,22 +1,22 @@
 ---
 title: Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
-description: O Microsoft Graph permite o acesso a dados pessoais e do local de trabalho úteis e dá suporte a gestos sociais no contexto social de um usuário.
+description: O Microsoft Graph permite o acesso a dados úteis sobre pessoas, seu perfil, documentos dos quais eles interagem e padrões de trabalho e oferece suporte a gestos no contexto social de um usuário.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 06d27d69aae008bb1bfe772a02a5951a33a4f0bd
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 9085db75d70932fe3364b5739a33fc480f30032a
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250733"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844257"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Microsoft Graph permite o acesso a dados pessoais e do local de trabalho para pessoas e dá suporte a gestos sociais no contexto social de um usuário.
+O Microsoft Graph permite o acesso a dados úteis sobre pessoas, seu perfil, documentos dos quais eles interagem e padrões de trabalho e oferece suporte a gestos no contexto social de um usuário.
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>Agregar e extraia informações específicas sobre pessoas
 

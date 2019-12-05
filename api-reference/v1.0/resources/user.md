@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ab0a296f89b882030f476a739b8991568c79e28
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: fbf7a01c8de5015cd83a97cd63c0e98bdbc30af0
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672870"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843938"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -106,8 +106,8 @@ Esse recurso permite:
 |**Extensões de esquema**| | |
 | [Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) | Nenhum | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso. |
 | **Configurações do usuário** |||
-| [Obter configurações](../api/user-get-settings.md) | [configurações](user-settings.md) | Leia o usuário e o objeto de configurações da organização. |
-| [Atualizar configurações](../api/user-update-settings.md) | [configurações](user-settings.md) | Atualizar as propriedades do objeto de configurações. |
+| [Obter configurações](../api/usersettings-get.md) | [userSettings](usersettings.md) | Leia o usuário e o objeto de configurações da organização. |
+| [Atualizar configurações](../api/usersettings-update.md) | [userSettings](usersettings.md) | Atualize as propriedades do objeto de configurações. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -235,7 +235,8 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
 |eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
-|inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância inferidas. |
+|inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
+|insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|
 |licenseDetails|Coleção de[licenseDetails](licensedetails.md)|Uma coleção de detalhes da licença do usuário. Somente leitura.|
 |mailFolders|Coleção [mailFolder](mailfolder.md)| As pastas de email do usuário. Somente leitura. Anulável.|
 |manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente do usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|

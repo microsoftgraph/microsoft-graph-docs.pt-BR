@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8c6bfaaed12dfcda3c730890e598253230b4cfeb
-ms.sourcegitcommit: 719eb06b263a10739190e4460b7ffdf0f1a50484
+ms.openlocfilehash: 6c2f309ac7b66d3d698e54c2280b49b0bb5912a4
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "39191472"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844285"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1123,7 +1123,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Place.Read.All_ |Ler todos os locais da empresa |Permite que o aplicativo leia os locais da empresa (salas de conferência e listas de salas) para eventos de calendário e outros aplicativos. |Não | Não |
+| _Place.Read.All_ |Permite que o aplicativo leia os locais da empresa (salas de conferência e listas de salas) que foram configurados pelo locatário no Exchange Online. |Sim | Não |
+| _Place.ReadWrite.All_ |Permite que o aplicativo leia e grave os locais da empresa (salas de conferência e listas de salas) que foram configurados pelo locatário no Exchange Online. |Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1164,6 +1165,23 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="presence-permissions"></a>Permissões de presença
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.Read_ | Ler as informações de presença do usuário | Permite que o aplicativo leia as informações de presença em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Sim |
+| _Presence.Read.All_ |   Ler as informações de presença de todos os usuários em sua organização | Permite que o aplicativo leia as informações de presença de todos os usuário do diretório em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Sim |
+
+### <a name="example-usage"></a>Exemplo de uso
+
+* _Presence.Read_: se você estiver conectado, recupere a sua própria informação de presença (`GET /me/presence`)
+* _Presence.Read.All_: Recupere as informações de presença de outro usuário (`GET /users/{id}/presence`)
+* _Presence.Read.All_: Recupere as informações de presença de vários usuários (`POST /communications/getPresencesByUserId`)
 
 ---
 

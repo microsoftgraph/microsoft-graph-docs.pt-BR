@@ -349,6 +349,8 @@ items:
                 href: /graph/tutorials/change-notifications
               - name: Notificações ausentes do Outlook (versão prévia)
                 href: webhooks-outlook-authz.md
+              - name: Notificações com dados de recursos (visualização)
+                href: webhooks-with-resource-data.md
           - name: Controlar alterações
             displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
             items:

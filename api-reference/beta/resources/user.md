@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c4ca85a37f2bd1f40daed09dd6ba2b4616e2b81f
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 9252825eb0e970f5c8d7da0d9eb4275574dd564a
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672828"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843956"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -41,7 +41,7 @@ Esse recurso permite:
 | [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo. |
 | [findRooms](../api/user-findrooms.md) | Coleção [emailaddress.md](emailaddress.md) | Obter todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. |
 | [findRoomLists](../api/user-findroomlists.md) | Coleção [emailaddress.md](emailaddress.md) | Obter as listas de salas definidas em um locatário.|
-| [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado. |
+| [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Adquira as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado. |
 | [Listar calendários](../api/user-list-calendars.md) | Coleção [Calendar](calendar.md) | Obter uma coleção de objetos Calendar. |
 | [Listar calendarGroups](../api/user-list-calendargroups.md) | Coleção [CalendarGroup](calendargroup.md) | Obter uma coleção de objetos CalendarGroup. |
 | [Listar calendarView](../api/user-list-calendarview.md) | Coleção [event](event.md) | Obter uma coleção de objetos de evento. |
@@ -56,8 +56,8 @@ Esse recurso permite:
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 | [checkMemberGroups](../api/user-checkmembergroups.md) | Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva. |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique a associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. A verificação é transitiva. |
-| [exportPersonalData](../api/user-exportpersonaldata.md) | Nenhum | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário organizacional. |
-| [getByIds](../api/directoryobject-getbyids.md) | Coleção de cadeia de caracteres | Retorna os objetos de diretório especificados a partir de uma lista de ids. |
+| [exportPersonalData](../api/user-exportpersonaldata.md) | Nenhum | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização. |
+| [getByIds](../api/directoryobject-getbyids.md) | Coleção de cadeias de caracteres | Retorna os objetos de diretório especificados a partir de uma lista de ids. |
 | [getMemberGroups](../api/user-getmembergroups.md) | Coleção de cadeias de caracteres | Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva. |
 | [getMemberObjects](../api/user-getmemberobjects.md) | Coleção String | Retornar todos os grupos, funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva. |
 | [Listar createdObjects](../api/user-list-createdobjects.md) | Coleção [directoryObject](directoryobject.md) | Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects. |
@@ -69,7 +69,7 @@ Esse recurso permite:
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocessar as atribuições de assinatura do usuário. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhum | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**. |
 | **Unidade** |||
-| [Obter unidade](../api/drive-get.md) | [unidade](drive.md) | Recupere as propriedades e as relações de um recurso da Unidade. |
+| [Obter unidade](../api/drive-get.md) | [unidade](drive.md) | Recuperar as propriedades e as relações de um recurso Drive. |
 | [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |
 | **Grupos** |||
 | [Listar joinedTeams](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Obter as equipes do Microsoft Teams no qual o usuário é membro direto da propriedade de navegação joinedTeams. |
@@ -80,7 +80,7 @@ Esse recurso permite:
 | [Listar tendências](../api/insights-list-trending.md) | coleção [tendências](insights-trending.md)  | Insights calculados que retornam a lista de itens de tendências do usuário. |
 | [Listar usados](../api/insights-list-used.md) | coleção [usedInsight](insights-used.md) | Visão calculada que retorna a lista de arquivos usados com um usuário. |
 | **Email** |||
-| [Criar inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Crie uma substituição da Caixa de Entrada Destaques para um remetente identificado por um endereço SMTP. |
+| [Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Criar uma substituição da Caixa de Entrada Destaques para um remetente identificado por um endereço SMTP. |
 | [Criar MailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Crie um novo mailFolder postando na coleção mailFolders. |
 | [Criar mensagem](../api/user-post-messages.md) | [message](message.md) | Crie uma mensagem postando na coleção de mensagens. |
 | [Criar messageRule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Crie um objeto messageRule especificando um conjunto de condições e ações. |
@@ -92,7 +92,7 @@ Esse recurso permite:
 | [Enviar email](../api/user-sendmail.md) | Nenhum | Enviar a mensagem especificada no corpo da solicitação. |
 | **Anotações** |||
 | [Criar bloco de anotações](../api/onenote-post-notebooks.md) | [bloco de anotações](notebook.md) | Crie um novo bloco de anotações do OneNote. |
-| [Listar bloco de anotações](../api/onenote-list-notebooks.md) | Coleção [bloco de anotações](notebook.md) | Recuperar uma lista de objetos do bloco de anotações. |
+| [Listar blocos de anotações](../api/onenote-list-notebooks.md) | Coleção [bloco de anotações](notebook.md) | Recuperar uma lista de objetos do bloco de anotações. |
 |**Extensões abertas**| | |
 | [Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso. |
 | [Obter extensão aberta](../api/opentypeextension-get.md) | Coleção [openTypeExtension](opentypeextension.md) | Obtenha uma extensão aberta identificada pelo nome da extensão. |
@@ -102,9 +102,9 @@ Esse recurso permite:
 | [Listar directReports](../api/user-list-directreports.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários ou contatos subordinados ao usuário da propriedade de navegação directReports. |
 | **Configurações do Outlook** |||
 | [Criar categoria do Outlook](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) | Cria um objeto outlookCategory na lista mestra de categorias do usuário. |
-| [Obter supportedLanguages](../api/outlookuser-supportedlanguages.md), | Coleção [localeInfo](localeinfo.md) | Obtenha a lista de locais e idiomas com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
-| [Obter supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md collection) | Obtenha a lista de fusos horários com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
-| [Obter configurações de caixa de correio do usuário](../api/user-get-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Obtenha as configurações de caixa de correio do usuário. |
+| [Obter supportedLanguages](../api/outlookuser-supportedlanguages.md), | Coleção [localeInfo](localeinfo.md) | Obtém a lista de locais e idiomas com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
+| [Obter supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md collection) | Obtém a lista de fusos horários com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
+| [Obtém configurações de caixa de correio do usuário](../api/user-get-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Obtém as configurações de caixa de correio do usuário. |
 | [Listar as categorias do Outlook](../api/outlookuser-list-mastercategories.md) | Coleção [outlookCategory](outlookcategory.md) | Obtém todas as categorias que foram definidas para o usuário. |
 | [Converter IDs do Exchange](../api/user-translateexchangeids.md) | coleção [convertIdResult](convertidresult.md) | Traduzir os identificadores de recursos relacionados ao Outlook entre formatos. |
 | [Atualizar configurações da caixa de correio do usuário](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Habilitar, configurar ou desabilitar o mailboxSettings de um ou mais usuários. |
@@ -114,8 +114,8 @@ Esse recurso permite:
 | **Pessoas** |||
 | [Listar pessoas](../api/user-list-people.md) | [person](person.md) | Recupere uma lista de objetos person ordenados por relevância para o usuário, o que é determinado pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. |
 | **Foto** |||
-| [Obter foto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Obtenha a profilePhoto especificado ou seus metadados (propriedades profilePhoto ). |
-| [Atualizar profilephoto](../api/profilephoto-update.md) | Nenhum | Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. |
+| [Obter foto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Obtém o profilePhoto especificado ou seus metadados (propriedades profilePhoto). |
+| [Atualizar profilephoto](../api/profilephoto-update.md) | Nenhum | Atualiza a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. |
 | **Planner** |||
 | [Obter plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | Recupere as propriedades e relações de um objeto plannerUser. |
 | [Listar favoritePlans](../api/planneruser-list-favoriteplans.md) | coleção [plannerPlan](plannerplan.md) | Recupere uma lista de plannerPlans marcados como favoritos por um usuário. |
@@ -133,8 +133,8 @@ Esse recurso permite:
 | [Atualizar aplicativo](../api/user-upgrade-teamsappinstallation.md) | Nenhum | Atualize uma instalação de aplicativo no escopo pessoal do usuário especificado para a versão mais recente do aplicativo.
 | [Desinstalar aplicativo para o usuário](../api/user-delete-teamsappinstallation.md) | Nenhum | Desinstale um aplicativo do escopo pessoal do usuário especificado. |
 | **Configurações do usuário** |||
-| [Obter configurações](../api/user-get-settings.md) | [configurações](user-settings.md) | Leia o usuário e o objeto de configurações da organização. |
-| [Atualizar configurações](../api/user-update-settings.md) | [configurações](user-settings.md) | Atualize as propriedades do objeto de configurações. |
+| [Obter configurações](../api/usersettings-get.md) | [userSettings](usersettings.md) | Leia o usuário e o objeto de configurações da organização. |
+| [Atualizar configurações](../api/usersettings-update.md) | [userSettings](usersettings.md) | Atualize as propriedades do objeto de configurações. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -287,7 +287,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |photos|coleção de [fotos](photo.md)| Somente leitura. Anulável.|
 |planner|[plannerUser](planneruser.md)| Serviços de planejador seletivo disponíveis para o usuário. Somente leitura. Anulável. |
 |scopedRoleMemberOf|Coleção [scopedRoleMembership](scopedrolemembership.md)| As associações de unidade administrativa de função com escopo deste usuário. Somente leitura. Anulável.|
-|settings|[userSettings](user-settings.md) | Somente leitura. Anulável.|
+|settings|[userSettings](usersettings.md) | Somente leitura. Anulável.|
 |registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
