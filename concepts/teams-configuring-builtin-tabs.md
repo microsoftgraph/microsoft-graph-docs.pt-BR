@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: eaaea41d320f35ec3acbb217cfb4d374f0553aba
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 81a2051e69c772d7b8314821b8c37debb7acc864
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969514"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844467"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -97,7 +97,7 @@ O exemplo a seguir criar uma guia configurada do Word.
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 {
   "displayName": "word",
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
   "configuration": {
      "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
      "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",
