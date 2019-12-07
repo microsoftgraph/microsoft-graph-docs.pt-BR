@@ -6,12 +6,12 @@ title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3f99c75d0a1f0366cdccb2e590bb16856d9b3caf
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 33bd220fcacaa513495a277108d68f19f901d053
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843949"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895354"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -184,7 +184,7 @@ Content-Type: application/json
 O aplicativo pode usar o valor de **nextExpectedRanges** para determinar onde iniciar o próximo intervalo de bytes.
 É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado no serviço.
 
-Você sempre deve determinar o tamanho dos intervalos de byte de acordo com as práticas recomendadas a seguir. Não suponha que **nextExpectedRanges** retornará intervalos de tamanho apropriado para carregar um intervalo de bytes.
+Você sempre deve determinar o tamanho dos intervalos de byte de acordo com as práticas recomendadas a seguir. Não presuma que **nextExpectedRanges** retornará intervalos de tamanho adequado para um intervalo de bytes a ser carregado.
 A propriedade **nextExpectedRanges** indica intervalos do arquivo que não foram recebidos, e não um padrão para como seu aplicativo deve carregar o arquivo.
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->

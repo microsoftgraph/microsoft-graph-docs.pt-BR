@@ -1,0 +1,54 @@
+---
+title: tipo de recurso openShiftItem
+description: Representa uma única contagem de um turno aberto.
+localization_priority: Normal
+author: akumar39
+ms.prod: microsoft-teams
+doc_type: resourcePageType
+ms.openlocfilehash: 86392d330403acf667f81c1dce4bbc951bb8185d
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895568"
+---
+# <a name="openshiftitem-resource-type"></a>tipo de recurso openShiftItem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Representa uma única contagem de um [openshift](../resources/openshift.md).
+
+## <a name="properties"></a>Propriedades
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|openSlotCount|Int32| Contagem do número de Slots para o turno aberto especificado.|
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.openShiftItem",
+  "baseType": "microsoft.graph.shiftItem"
+}-->
+
+```json
+{
+  "openSlotCount": 1024
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "openShiftItem resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

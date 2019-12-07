@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d7fc8145a17cd2a6609b1a203f12e4836cb030e2
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 16ac01a7ca9d05e9e5c3c08b16b938fb73abada6
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724754"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895288"
 ---
 # <a name="get-schedule"></a>Obter cronograma
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-get-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +109,12 @@ Content-length: 401
   "enabled": true,
   "timeZone": "America/Chicago",
   "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "provisionStatusCode": null,
+  "timeClockEnabled": true,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true
 }
 ```
 

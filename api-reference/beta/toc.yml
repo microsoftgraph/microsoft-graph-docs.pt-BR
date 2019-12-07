@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -44,7 +44,7 @@
         - name: Controlar alterações
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/beta
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/beta
@@ -278,9 +278,10 @@
                       href: api/insights-list-trending.md
                     - name: Listar usados
                       href: api/insights-list-used.md
-                - name: Configurações de usuário de descoberta de conteúdo
-                  href: resources/usersettings.md
+                - name: Configurações de descoberta de conteúdo
                   items:
+                    - name: Configurações do usuário
+                      href: resources/usersettings.md
                     - name: Obter configurações
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
@@ -389,7 +390,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Trabalho em equipe
+            - name: Teamwork
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -2787,7 +2788,7 @@
                 - name: Configuração geral do dispositivo Android for Work
                   href: resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
@@ -2800,7 +2801,7 @@
                 - name: Configuração do EAS do Gmail do Android for Work
                   href: resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md
@@ -4273,7 +4274,7 @@
                 - name: Política de conformidade do macOS
                   href: resources/intune-deviceconfig-macoscompliancepolicy.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceconfig-macoscompliancepolicy-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-macoscompliancepolicy-get.md
@@ -4299,7 +4300,7 @@
                 - name: Configuração personalizada do macOS
                   href: resources/intune-deviceconfig-macoscustomconfiguration.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -5756,7 +5757,7 @@
                 - name: Instância de configuração de inteiro do gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementintegersettinginstance.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceintent-devicemanagementintegersettinginstance-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementintegersettinginstance-get.md
@@ -5788,7 +5789,7 @@
                 - name: Atribuição de tentativa do gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementintentassignment.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-deviceintent-devicemanagementintentassignment-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementintentassignment-get.md
@@ -5973,7 +5974,7 @@
                 - name: Instância de configuração da cadeia de caracteres do gerenciamento de dispositivos
                   href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
                     - name: Obter
                       href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
@@ -7055,7 +7056,7 @@
                 - name: Atribuição de configuração do registro
                   href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                     - name: Obter
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -7074,7 +7075,7 @@
                 - name: Conector de defesa contra ameaças móveis
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: Listar
+                    - name: Lista
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: Obter
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -10236,7 +10237,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
