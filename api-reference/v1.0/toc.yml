@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: /graph/auth/index?context=graph/api/1.0
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -44,7 +44,7 @@
         - name: Controlar alterações
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/1.0
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/1.0
@@ -270,9 +270,10 @@
                       href: api/insights-list-trending.md
                     - name: Listar usados
                       href: api/insights-list-used.md
-                - name: Configurações de usuário de descoberta de conteúdo
-                  href: resources/usersettings.md
+                - name: Configurações de descoberta de conteúdo
                   items:
+                    - name: Configurações do usuário
+                      href: resources/usersettings.md
                     - name: Obter configurações
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
@@ -2583,7 +2584,7 @@
                       href: api/intune-mam-managedmobileapp-list.md
                     - name: Obter
                       href: api/intune-mam-managedmobileapp-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-mam-managedmobileapp-create.md
                     - name: Excluir
                       href: api/intune-mam-managedmobileapp-delete.md
@@ -3451,7 +3452,7 @@
         - name: Email
           displayName: 'Outlook, Outlook mail'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/mail-api-overview.md
             - name: Mensagem
               href: resources/message.md
@@ -4158,7 +4159,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão geral
