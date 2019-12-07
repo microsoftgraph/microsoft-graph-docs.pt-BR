@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 55117b9db8a12e9ce3b4b41aab49212368b2c805
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: f02447a2db457c9e681d1b169eb641d3f5debb01
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844271"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895511"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -23,6 +23,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Suporte adicionado para os aplicativos inscritos para receber notificações que incluam dados de recursos. Os recursos compatíveis no momento são os recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) em conversas e canais do Microsoft Teams. Os aplicativos com inscrição para notificações devem implementar a autorização e o código de descriptografia adicionais para se beneficiarem desse recurso. Para obter mais detalhes, confira [Configurar notificações em mensagens de chat, incluindo propriedades de mensagem (visualização)](webhooks-with-resource-data.md).|
+
+### <a name="people-intelligence--insights"></a>Inteligência pessoal | Insights
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | A API do Insights está disponível em v1.0. Ela inclui os recursos [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](/graph/api/resources/insights-used?view=graph-rest-1.0) e [sharedInsight](/graph/api/resources/insights-shared?view=graph-rest-1.0) e tipos e métodos relacionados. Confira [Por que se integrar com informações baseadas em documentos?](social-intel-concept-overview.md#why-integrate-with-document-based-insights) para saber mais. |
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
  
@@ -133,7 +139,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Adicionada a propriedade **conversationIndex** à [message](/graph/resources/message?view=graph-rest-v1.0) e seu tipo derivado [eventMessage](/graph/resources/eventmessage?view=graph-rest-v1.0).|
+| Adição | v1.0 | Adicionada a propriedade **conversationIndex** à [message](/graph/api/resources/message?view=graph-rest-1.0) e seu tipo derivado [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-v1.0).|
 | Adição | Beta | Adicionado suporte para a permissão delegada [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) e para a permissão de aplicativo [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) para [criar](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [obter](/graph/api/subscription-get?view=graph-rest-beta), [atualizar](/graph/api/subscription-update?view=graph-rest-beta) e [excluir](/graph/api/subscription-delete?view=graph-rest-beta) assinaturas para as notificações de alteração na mensagem. |
 | Adição | v1.0 | Adicionado suporte para a permissão delegada Mail.ReadBasic e para a permissão de aplicativo Mail.ReadBasic.All para:<br />- [Listar mensagens](/graph/api/user-list-messages?view=graph-rest-1.0)<br />- [Obter mensagem](/graph/api/message-get?view=graph-rest-1.0) <br />- [Listar pastas de email](/graph/api/user-list-mailfolders?view=graph-rest-1.0)<br />- [Obter pasta de email](/graph/api/mailfolder-get?view=graph-rest-1.0)<br />- [Listar pastas filho](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Listar mensagens na pasta](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Obter o delta de mensagem](/graph/api/message-delta?view=graph-rest-1.0)<br />- [Obter a pasta de email delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) <br />- [Criar](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [obter](/graph/api/subscription-get?view=graph-rest-1.0), [atualizar](/graph/api/subscription-update?view=graph-rest-1.0) e [excluir](/graph/api/subscription-delete?view=graph-rest-1.0) assinaturas para as notificações de alteração na mensagem.|
 
@@ -159,7 +165,9 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | beta          | Outra rota adicionada para recuperar um [driveItem] usando uma ID de canal e de equipe, [obter driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
+| Adição | Beta | Adicionados os recursos [openshift](/graph/api/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/beta/resources/swapShiftChangeRequest?view=graph-rest-beta) e [timeoffrequest](/graph/api/beta/resources/timeoffrequest?view=graph-rest-beta) e os métodos associados.|
+| Adição | Beta | Adicionadas as propriedades **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** ao recurso [schedule](/graph/api/beta/resources/schedule?view=graph-rest-beta).|
+| Adição        | Beta          | Outra rota adicionada para recuperar um [driveItem] usando uma ID de canal e de equipe, [obter driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## <a name="october-2019"></a>Outubro de 2019
 
