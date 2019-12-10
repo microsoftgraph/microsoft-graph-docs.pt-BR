@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 184f7f31787b592e4313ff11702d5cc5997c762e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4b5da5f27022115eef0e55bd5657561e3a93d893
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087205"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943660"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Atualizar windowsAutopilotDeviceIdentity
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,22 +56,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil status detalhado do dispositivo do Windows AutoPilot. Os valores possíveis são: `none` e `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo do Windows AutoPilot.|
-|orderIdentifier|String|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
-|groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
-|purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
+|orderIdentifier|Cadeia de Caracteres|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
+|groupTag|Cadeia de Caracteres|Marca de grupo do dispositivo do Windows AutoPilot.|
+|purchaseOrderIdentifier|Cadeia de Caracteres|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
-|modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
+|fabricante|Cadeia de Caracteres|Fabricante OEM do dispositivo do Windows AutoPilot.|
+|modelo|Cadeia de Caracteres|Nome do modelo do dispositivo do Windows AutoPilot.|
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro do Intune do dispositivo do Windows AutoPilot. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do Intune para o dispositivo do Windows AutoPilot.|
-|addressableUserName|String|Nome de usuário endereçável.|
+|addressableUserName|Cadeia de Caracteres|Nome de usuário endereçável.|
 |userPrincipalName|String|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|String|Número de SKU|
-|systemFamily|String|Família de sistema|
-|azureActiveDirectoryDeviceId|String|ID de dispositivo do AAD|
-|managedDeviceId|String|ID do dispositivo gerenciado|
+|skuNumber|Cadeia de Caracteres|Número de SKU|
+|systemFamily|Cadeia de Caracteres|Família de sistema|
+|azureActiveDirectoryDeviceId|Cadeia de Caracteres|ID de dispositivo do AAD|
+|managedDeviceId|Cadeia de Caracteres|ID do dispositivo gerenciado|
 |displayName|Cadeia de caracteres|Nome de exibição|
 
 
@@ -145,7 +145,6 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
-
 
 
 
