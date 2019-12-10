@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d37041155cb4d2a422c9b8c1f4c4ebb8aaa2e53d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: a16cd0541aea74ffa683a6a8cdf5f7779a993778
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536641"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938695"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Atualizar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) .
 
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|Cadeia de caracteres|ID de dispositivo.|
+|deviceId|Cadeia de Caracteres|ID de dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização.|
 |osVersion|String|Versão do sistema operacional Windows.|
-|osDescription|Cadeia de caracteres|Descrição da versão do sistema operacional Windows.|
+|osDescription|Cadeia de Caracteres|Descrição da versão do sistema operacional Windows.|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|O estado de implantação da política. Os valores possíveis são: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|Cadeia de caracteres|O nome do usuário deste dispositivo.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|policyVersion|Cadeia de caracteres|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
+|userPrincipalName|String|Nome principal do usuário.|
+|policyVersion|Cadeia de Caracteres|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
 
 
 
@@ -111,7 +111,6 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
 
 
 

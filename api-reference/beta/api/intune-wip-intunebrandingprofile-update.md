@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4621fbf1a5e94759d4f133e1debfd299d1766769
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 0cd72b310ad29e5ff32520945d63a80f7fb1b370
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087934"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938471"
 ---
 # <a name="update-intunebrandingprofile"></a>Atualizar intuneBrandingProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,31 +52,31 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneB
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave de perfil|
-|ProfileName|String|Nome do perfil|
-|profileDescription|String|Descrição do perfil|
-|isDefaultProfile|Booliano|Booliano que indica se o perfil é usado como padrão ou não|
+|ProfileName|Cadeia de Caracteres|Nome do perfil|
+|profileDescription|Cadeia de Caracteres|Descrição do perfil|
+|isDefaultProfile|Boolean|Booliano que indica se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que a BrandingProfile foi modificada pela última vez|
 |displayName|Cadeia de caracteres|Nome da empresa/organização que é exibido para os usuários finais|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor do tema principal usada nos aplicativos do portal da empresa e no portal da Web|
-|showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
+|showLogo|Boolean|Booliano que indica se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será mostrado ao lado da imagem de logotipo ou não|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo de cor de tema atrás do logotipo|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa que têm um plano de fundo claro atrás do logotipo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
-|contactITName|String|Nome da pessoa/organização responsável pelo suporte de ti|
-|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de ti|
-|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de ti|
-|contactITNotes|String|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
-|onlineSupportSiteUrl|String|URL para o site de assistência técnica de ti da empresa/organização|
+|contactITName|Cadeia de Caracteres|Nome da pessoa/organização responsável pelo suporte de ti|
+|contactITPhoneNumber|Cadeia de Caracteres|Número de telefone da pessoa/organização responsável pelo suporte de ti|
+|contactITEmailAddress|Cadeia de Caracteres|Endereço de email da pessoa/organização responsável pelo suporte de ti|
+|contactITNotes|Cadeia de Caracteres|Comentários de texto sobre a pessoa/organização responsável pelo suporte de ti|
+|onlineSupportSiteUrl|Cadeia de Caracteres|URL para o site de assistência técnica de ti da empresa/organização|
 |onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
-|privacyUrl|String|URL para a política de privacidade da empresa/organização|
-|customPrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
-|isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
-|isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
+|privacyUrl|Cadeia de Caracteres|URL para a política de privacidade da empresa/organização|
+|customPrivacyMessage|Cadeia de Caracteres|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
+|isRemoveDeviceDisabled|Boolean|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
+|isFactoryResetDisabled|Boolean|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
 |companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
-|showAzureADEnterpriseApps|Booliano|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
-|showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
+|showAzureADEnterpriseApps|Boolean|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
+|showOfficeWebApps|Boolean|Booliano que indica se o Office webapps será mostrado no portal da empresa|
 
 
 
@@ -205,7 +205,6 @@ Content-Length: 1792
   "showOfficeWebApps": true
 }
 ```
-
 
 
 

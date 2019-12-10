@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 166b02eb7ee621aed828aba935220c9b07a2e85b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c42ee43eeeb68a3a0298c777eea65fa33d41d01d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190325"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941565"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,12 +51,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar sideLoad
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID exclusiva da chave de carregamento do lado.|
+|id|String|ID exclusiva da chave de carregamento do lado.|
 |value|Cadeia de caracteres|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
-|displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
-|descrição|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
+|displayName|Cadeia de caracteres|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
+|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
 |totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
-|lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
+|lastUpdatedDateTime|Cadeia de Caracteres|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 
 
 
@@ -99,6 +99,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

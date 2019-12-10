@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2152a3113ebd01469b041b3b443a2aa417983ee
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: beccde3703891baa883f6effada1e0b9217e531a
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086890"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942469"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4606
+Content-Length: 4878
 
 {
   "value": {
@@ -119,6 +119,10 @@ Content-Length: 4606
     "managedBrowser": "microsoftEdge",
     "maximumAllowedDeviceThreatLevel": "secured",
     "mobileThreatDefenseRemediationAction": "wipe",
+    "blockDataIngestionIntoOrganizationDocuments": true,
+    "allowedDataIngestionLocations": [
+      "sharePoint"
+    ],
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -168,11 +172,14 @@ Content-Length: 4606
     "customBrowserDisplayName": "Custom Browser Display Name value",
     "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
     "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
-    "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
+    "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value",
+    "allowedAndroidDeviceModels": [
+      "Allowed Android Device Models value"
+    ],
+    "appActionIfAndroidDeviceModelNotAllowed": "wipe"
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9acac7faee059a012b77fd3bbb9114ee4a1d9d59
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c73e2a387a501407cb37fb9c2b16000ce71c0a17
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38080473"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39925071"
 ---
 # <a name="get-macosmicrosoftedgeapp"></a>Obter macOSMicrosoftEdgeApp
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 985
 
 {
   "value": {
@@ -96,11 +96,11 @@ Content-Length: 961
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
-    "dependentAppCount": 1
+    "dependentAppCount": 1,
+    "channel": "beta"
   }
 }
 ```
-
 
 
 
