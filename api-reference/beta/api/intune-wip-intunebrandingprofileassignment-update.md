@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5be336a1d3c7440b2ddb7a0d72a34f5c96866ec7
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bfe7f131346c2c272905aafe36444e9b5429709e
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195143"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938219"
 ---
-# <a name="update-intunebrandingprofileassignment"></a><span data-ttu-id="e5501-103">Atualizar intuneBrandingProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="e5501-103">Update intuneBrandingProfileAssignment</span></span>
+# <a name="update-intunebrandingprofileassignment"></a><span data-ttu-id="60276-103">Atualizar intuneBrandingProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="60276-103">Update intuneBrandingProfileAssignment</span></span>
 
-> <span data-ttu-id="e5501-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e5501-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="60276-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="60276-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e5501-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e5501-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="60276-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="60276-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e5501-106">Atualiza as propriedades de um objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="e5501-106">Update the properties of a [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object.</span></span>
+<span data-ttu-id="60276-106">Atualiza as propriedades de um objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="60276-106">Update the properties of a [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e5501-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e5501-107">Prerequisites</span></span>
-<span data-ttu-id="e5501-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e5501-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="60276-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="60276-107">Prerequisites</span></span>
+<span data-ttu-id="60276-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="60276-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5501-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e5501-110">Permission type</span></span>|<span data-ttu-id="e5501-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e5501-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="60276-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="60276-110">Permission type</span></span>|<span data-ttu-id="60276-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="60276-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e5501-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e5501-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e5501-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5501-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="e5501-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e5501-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e5501-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e5501-115">Not supported.</span></span>|
-|<span data-ttu-id="e5501-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e5501-116">Application</span></span>|<span data-ttu-id="e5501-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5501-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="60276-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="60276-112">Delegated (work or school account)</span></span>|<span data-ttu-id="60276-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60276-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="60276-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="60276-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="60276-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="60276-115">Not supported.</span></span>|
+|<span data-ttu-id="60276-116">Application</span><span class="sxs-lookup"><span data-stu-id="60276-116">Application</span></span>|<span data-ttu-id="60276-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60276-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e5501-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e5501-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="60276-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="60276-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +38,31 @@ ms.locfileid: "37195143"
 PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments/{intuneBrandingProfileAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e5501-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e5501-119">Request headers</span></span>
-|<span data-ttu-id="e5501-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e5501-120">Header</span></span>|<span data-ttu-id="e5501-121">Valor</span><span class="sxs-lookup"><span data-stu-id="e5501-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="60276-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="60276-119">Request headers</span></span>
+|<span data-ttu-id="60276-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="60276-120">Header</span></span>|<span data-ttu-id="60276-121">Valor</span><span class="sxs-lookup"><span data-stu-id="60276-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e5501-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e5501-122">Authorization</span></span>|<span data-ttu-id="e5501-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e5501-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e5501-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e5501-124">Accept</span></span>|<span data-ttu-id="e5501-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e5501-125">application/json</span></span>|
+|<span data-ttu-id="60276-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="60276-122">Authorization</span></span>|<span data-ttu-id="60276-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="60276-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="60276-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="60276-124">Accept</span></span>|<span data-ttu-id="60276-125">application/json</span><span class="sxs-lookup"><span data-stu-id="60276-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e5501-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e5501-126">Request body</span></span>
-<span data-ttu-id="e5501-127">No corpo da solicitação, forneça uma representação JSON do objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="e5501-127">In the request body, supply a JSON representation for the [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="60276-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="60276-126">Request body</span></span>
+<span data-ttu-id="60276-127">No corpo da solicitação, forneça uma representação JSON do objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="60276-127">In the request body, supply a JSON representation for the [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object.</span></span>
 
-<span data-ttu-id="e5501-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md).</span><span class="sxs-lookup"><span data-stu-id="e5501-128">The following table shows the properties that are required when you create the [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md).</span></span>
+<span data-ttu-id="60276-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md).</span><span class="sxs-lookup"><span data-stu-id="60276-128">The following table shows the properties that are required when you create the [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md).</span></span>
 
-|<span data-ttu-id="e5501-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e5501-129">Property</span></span>|<span data-ttu-id="e5501-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="e5501-130">Type</span></span>|<span data-ttu-id="e5501-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e5501-131">Description</span></span>|
+|<span data-ttu-id="60276-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="60276-129">Property</span></span>|<span data-ttu-id="60276-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="60276-130">Type</span></span>|<span data-ttu-id="60276-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="60276-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e5501-132">id</span><span class="sxs-lookup"><span data-stu-id="e5501-132">id</span></span>|<span data-ttu-id="e5501-133">String</span><span class="sxs-lookup"><span data-stu-id="e5501-133">String</span></span>|<span data-ttu-id="e5501-134">Identificador exclusivo da entidade.</span><span class="sxs-lookup"><span data-stu-id="e5501-134">Unique identifier of the entity.</span></span>|
-|<span data-ttu-id="e5501-135">destino</span><span class="sxs-lookup"><span data-stu-id="e5501-135">target</span></span>|[<span data-ttu-id="e5501-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="e5501-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="e5501-137">Destino de atribuição ao qual o perfil de identidade visual está atribuído.</span><span class="sxs-lookup"><span data-stu-id="e5501-137">Assignment target that the branding profile is assigned to.</span></span>|
+|<span data-ttu-id="60276-132">id</span><span class="sxs-lookup"><span data-stu-id="60276-132">id</span></span>|<span data-ttu-id="60276-133">String</span><span class="sxs-lookup"><span data-stu-id="60276-133">String</span></span>|<span data-ttu-id="60276-134">Identificador exclusivo da entidade.</span><span class="sxs-lookup"><span data-stu-id="60276-134">Unique identifier of the entity.</span></span>|
+|<span data-ttu-id="60276-135">destino</span><span class="sxs-lookup"><span data-stu-id="60276-135">target</span></span>|[<span data-ttu-id="60276-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="60276-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="60276-137">Destino de atribuição ao qual o perfil de identidade visual está atribuído.</span><span class="sxs-lookup"><span data-stu-id="60276-137">Assignment target that the branding profile is assigned to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e5501-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5501-138">Response</span></span>
-<span data-ttu-id="e5501-139">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e5501-139">If successful, this method returns a `200 OK` response code and an updated [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="60276-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="60276-138">Response</span></span>
+<span data-ttu-id="60276-139">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="60276-139">If successful, this method returns a `200 OK` response code and an updated [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5501-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e5501-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="60276-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="60276-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e5501-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5501-141">Request</span></span>
-<span data-ttu-id="e5501-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e5501-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="60276-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="60276-141">Request</span></span>
+<span data-ttu-id="60276-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="60276-142">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments/{intuneBrandingProfileAssignmentId}
 Content-type: application/json
@@ -76,8 +76,8 @@ Content-length: 171
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e5501-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5501-143">Response</span></span>
-<span data-ttu-id="e5501-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e5501-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="60276-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="60276-143">Response</span></span>
+<span data-ttu-id="60276-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="60276-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -91,6 +91,7 @@ Content-Length: 220
   }
 }
 ```
+
 
 
 
