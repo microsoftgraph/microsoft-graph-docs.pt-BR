@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f6ce51fb71c8fb25a2db8b2d9b324efb0efc2ffa
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: df72773a47b696f209eedf96f02311636fdeb9c1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535748"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943246"
 ---
 # <a name="list-grouppolicysettingmappings"></a>Listar groupPolicySettingMappings
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar Propriedades e relações dos objetos [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1024
+Content-Length: 1065
 
 {
   "value": [
@@ -87,6 +87,7 @@ Content-Length: 1024
       "mdmMinimumOSVersion": 3,
       "settingType": "policy",
       "isMdmSupported": true,
+      "mdmSupportedState": "supported",
       "settingScope": "device",
       "intuneSettingUriList": [
         "Intune Setting Uri List value"
@@ -95,7 +96,6 @@ Content-Length: 1024
   ]
 }
 ```
-
 
 
 

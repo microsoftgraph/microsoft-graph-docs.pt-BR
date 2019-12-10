@@ -3,12 +3,12 @@ title: Componente de logon no kit de ferramentas do Microsoft Graph
 description: Um componente de logon é um botão e um controle de submenu para facilitar a autenticação da plataforma de identidade da Microsoft.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e7c657b3b6c9772b2d7b7b8e64a57c9982f4caef
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 767894cc88fa40eb96655fc8979dd5b2ef8d4eba
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242944"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919434"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no kit de ferramentas do Microsoft Graph
 
@@ -28,9 +28,9 @@ Um componente de logon é um botão e um controle de submenu para facilitar a au
 
 O componente funciona com um provedor e o Microsoft Graph. No entanto, se você quiser fornecer sua própria lógica e autenticação, você pode usar `userDetails` a propriedade para definir os detalhes do usuário conectado. 
 
-| Propriedade | Atributo | Descrição |
+| Atributo | Propriedade | Descrição |
 | --- | --- | -- |
-| `userDetails` | `user-details` | Defina o objeto de usuário que será exibido no controle. |
+| User-detalhes | userdetails | Defina o objeto de usuário que será exibido no controle. |
 
 O exemplo a seguir define os detalhes da pessoa.
 
@@ -59,10 +59,12 @@ mgt-login {
   --margin: 0;
   --padding: 12px 20px;
   --color: #201f1e;
+  --color-hover: var(--theme-primary-color);
   --background-color: transparent;
   --background-color--hover: #edebe9;
   --popup-content-background-color: white;
-  --popup-command-font-size: 12px; }
+  --popup-command-font-size: 12px;
+  --popup-color: #201f1e;
 }
 ```
 

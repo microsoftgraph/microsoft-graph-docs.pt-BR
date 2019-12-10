@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5e8befa9726114ff6159a545db5d8f20b58123b
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 646fb55f08abe1fc6d6b0745b2fbf1affcb82aa2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086680"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941880"
 ---
 # <a name="update-compliancemanagementpartner"></a>Atualizar complianceManagementPartner
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [complia
 |lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após o administrador integrado ao parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
-|macOsOnboarded|Booliano|Parceiro integrado para dispositivos Mac.|
-|windowsOnboarded|Booliano|Parceiro integrado para dispositivos Windows.|
-|androidOnboarded|Booliano|Parceiro integrado para dispositivos Android.|
-|iosOnboarded|Booliano|Parceiro integrado para dispositivos IOS.|
+|macOsOnboarded|Boolean|Parceiro integrado para dispositivos Mac.|
+|windowsOnboarded|Boolean|Parceiro integrado para dispositivos Windows.|
+|androidOnboarded|Boolean|Parceiro integrado para dispositivos Android.|
+|iosOnboarded|Boolean|Parceiro integrado para dispositivos IOS.|
 |macOsEnrollmentAssignments|coleção [complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que inscrevem dispositivos Mac por meio do parceiro.|
 |windowsEnrollmentAssignments|coleção [complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos do Windows por meio do parceiro.|
 |androidEnrollmentAssignments|coleção [complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio do parceiro.|
@@ -173,7 +173,6 @@ Content-Length: 1293
   ]
 }
 ```
-
 
 
 

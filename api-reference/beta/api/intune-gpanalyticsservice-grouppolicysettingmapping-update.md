@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ceda370eafffa0937323585ca85bd94359ac027a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 68d5b1f3c48229677889f47c8adfff73e5821e7b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535741"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943239"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Atualizar groupPolicySettingMapping
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .
 
@@ -51,24 +51,25 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
-|parentId|Cadeia de caracteres|ID pai da configuração de política de grupo.|
-|childIdList|String collection|Lista de IDs filhos da configuração de política de grupo.|
+|id|String|Ainda não documentado|
+|parentId|Cadeia de Caracteres|ID pai da configuração de política de grupo.|
+|childIdList|Coleção de cadeias de caracteres|Lista de IDs filhos da configuração de política de grupo.|
 |settingName|Cadeia de caracteres|O nome dessa configuração de política de grupo.|
-|settingValue|Cadeia de caracteres|O valor dessa configuração de política de grupo.|
-|settingValueType|Cadeia de caracteres|O tipo de valor dessa configuração de política de grupo.|
-|settingDisplayName|Cadeia de caracteres|O nome de exibição dessa configuração de política de grupo.|
-|settingDisplayValue|Cadeia de caracteres|O valor de exibição dessa configuração de política de grupo.|
-|settingDisplayValueType|Cadeia de caracteres|O tipo de valor de exibição dessa configuração de política de grupo.|
-|settingValueDisplayUnits|Cadeia de caracteres|As unidades de exibição desse valor de configuração da política de grupo|
-|settingCategory|Cadeia de caracteres|A categoria em que a configuração da política de grupo está.|
-|mdmCspName|Cadeia de caracteres|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
-|mdmSettingUri|Cadeia de caracteres|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
+|settingValue|Cadeia de Caracteres|O valor dessa configuração de política de grupo.|
+|settingValueType|Cadeia de Caracteres|O tipo de valor dessa configuração de política de grupo.|
+|settingDisplayName|Cadeia de Caracteres|O nome de exibição dessa configuração de política de grupo.|
+|settingDisplayValue|Cadeia de Caracteres|O valor de exibição dessa configuração de política de grupo.|
+|settingDisplayValueType|Cadeia de Caracteres|O tipo de valor de exibição dessa configuração de política de grupo.|
+|settingValueDisplayUnits|Cadeia de Caracteres|As unidades de exibição desse valor de configuração da política de grupo|
+|settingCategory|Cadeia de Caracteres|A categoria em que a configuração da política de grupo está.|
+|mdmCspName|Cadeia de Caracteres|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
+|mdmSettingUri|Cadeia de Caracteres|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
 |mdmMinimumOSVersion|Int32|A versão mínima do sistema operacional para a qual esta configuração MDM oferece suporte.|
-|SettingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou ADMX) da política de grupo. Os valores possíveis são: `unknown`, `policy`, `account`.|
-|isMdmSupported|Booliano|Indica se a configuração é suportada pelo Intune ou não|
+|SettingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou ADMX) da política de grupo. Os valores possíveis são: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
+|isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no MDM ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
-|intuneSettingUriList|String collection|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
+|intuneSettingUriList|Coleção de cadeias de caracteres|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
 
 
 
@@ -82,7 +83,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings/{groupPolicySettingMappingId}
 Content-type: application/json
-Content-length: 850
+Content-length: 887
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -103,6 +104,7 @@ Content-length: 850
   "mdmMinimumOSVersion": 3,
   "settingType": "policy",
   "isMdmSupported": true,
+  "mdmSupportedState": "supported",
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
@@ -115,7 +117,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 899
+Content-Length: 936
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -137,13 +139,13 @@ Content-Length: 899
   "mdmMinimumOSVersion": 3,
   "settingType": "policy",
   "isMdmSupported": true,
+  "mdmSupportedState": "supported",
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
   ]
 }
 ```
-
 
 
 

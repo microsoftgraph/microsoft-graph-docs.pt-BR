@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 078c3a1d57a104a1bd17fa6911952e72df4613c1
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 78530c185f13565bfdfb51673fbdf492918ae3b2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087107"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943253"
 ---
 # <a name="get-grouppolicysettingmapping"></a>Obter groupPolicySettingMapping
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 964
+Content-Length: 1003
 
 {
   "value": {
@@ -89,6 +89,7 @@ Content-Length: 964
     "mdmMinimumOSVersion": 3,
     "settingType": "policy",
     "isMdmSupported": true,
+    "mdmSupportedState": "supported",
     "settingScope": "device",
     "intuneSettingUriList": [
       "Intune Setting Uri List value"
@@ -96,7 +97,6 @@ Content-Length: 964
   }
 }
 ```
-
 
 
 
