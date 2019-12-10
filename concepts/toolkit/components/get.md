@@ -1,0 +1,64 @@
+---
+title: Obter componente no Microsoft Graph Toolkit
+description: Um componente Get permite que você faça qualquer consulta GET do Microsoft Graph diretamente no HTML.
+localization_priority: Normal
+author: nmetulev
+ms.openlocfilehash: 77beb3940eb29a2c9158fba88d78084639e433ed
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39921694"
+---
+# <a name="get-component-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="47498-103">Obter componente no Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="47498-103">Get component in the Microsoft Graph Toolkit</span></span>
+
+<span data-ttu-id="47498-104">Você pode usar `mgt-get` o para tornar qualquer consulta Get do Microsoft Graph diretamente no HTML.</span><span class="sxs-lookup"><span data-stu-id="47498-104">You can use `mgt-get` to make any GET query from Microsoft Graph directly in your HTML.</span></span> <span data-ttu-id="47498-105">O componente não fornece uma interface do usuário padrão e requer que você escreva um modelo.</span><span class="sxs-lookup"><span data-stu-id="47498-105">The component does not provide a default UI and requires that you write a template.</span></span>
+
+## <a name="example"></a><span data-ttu-id="47498-106">Exemplo</span><span class="sxs-lookup"><span data-stu-id="47498-106">Example</span></span>
+
+```html
+<mgt-get resource="/me/messages" version="beta" scopes="mail.read" max-pages="2">
+  <template>
+    emails: {{value.length}}
+  </template>
+  <template data-type="loading">
+    loading
+  </template>
+</mgt-get>
+```
+
+## <a name="properties-and-attributes"></a><span data-ttu-id="47498-107">Propriedades e atributos</span><span class="sxs-lookup"><span data-stu-id="47498-107">Properties and attributes</span></span>
+
+<span data-ttu-id="47498-108">Você pode usar vários atributos para alterar o comportamento do componente.</span><span class="sxs-lookup"><span data-stu-id="47498-108">You can use several attributes to change the behavior of the component.</span></span> <span data-ttu-id="47498-109">O único atributo obrigatório é `resource`.</span><span class="sxs-lookup"><span data-stu-id="47498-109">The only required attribute is `resource`.</span></span>
+
+| <span data-ttu-id="47498-110">Atributo</span><span class="sxs-lookup"><span data-stu-id="47498-110">Attribute</span></span> | <span data-ttu-id="47498-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="47498-111">Property</span></span>  | <span data-ttu-id="47498-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="47498-112">Description</span></span> |
+| --- | --- | --- |
+| <span data-ttu-id="47498-113">recurso</span><span class="sxs-lookup"><span data-stu-id="47498-113">resource</span></span> | <span data-ttu-id="47498-114">recurso</span><span class="sxs-lookup"><span data-stu-id="47498-114">resource</span></span> | <span data-ttu-id="47498-115">O recurso a ser obtido do Microsoft Graph (por exemplo `/me`,).</span><span class="sxs-lookup"><span data-stu-id="47498-115">The resource to get from Microsoft Graph (for example, `/me`).</span></span> |
+| <span data-ttu-id="47498-116">escopos</span><span class="sxs-lookup"><span data-stu-id="47498-116">scopes</span></span> | <span data-ttu-id="47498-117">escopos</span><span class="sxs-lookup"><span data-stu-id="47498-117">scopes</span></span> | <span data-ttu-id="47498-118">Matriz opcional de cadeias de caracteres se você usar a propriedade ou um escopo delimitado por vírgula se estiver usando o atributo.</span><span class="sxs-lookup"><span data-stu-id="47498-118">Optional array of strings if using the property or a comma delimited scope if using the attribute.</span></span> <span data-ttu-id="47498-119">O componente usará esses escopos (com um provedor suportado) para garantir que o usuário tenha sido aceito para a permissão correta.</span><span class="sxs-lookup"><span data-stu-id="47498-119">The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission.</span></span> |
+| <span data-ttu-id="47498-120">versão</span><span class="sxs-lookup"><span data-stu-id="47498-120">version</span></span> | <span data-ttu-id="47498-121">versão</span><span class="sxs-lookup"><span data-stu-id="47498-121">version</span></span> | <span data-ttu-id="47498-122">Versão da API opcional a ser usada ao fazer a solicitação GET.</span><span class="sxs-lookup"><span data-stu-id="47498-122">Optional API version to use when making the GET request.</span></span> <span data-ttu-id="47498-123">O padrão é `v1.0`.</span><span class="sxs-lookup"><span data-stu-id="47498-123">Default is `v1.0`.</span></span>  |
+| <span data-ttu-id="47498-124">Max-Pages</span><span class="sxs-lookup"><span data-stu-id="47498-124">max-pages</span></span> | <span data-ttu-id="47498-125">maxPages</span><span class="sxs-lookup"><span data-stu-id="47498-125">maxPages</span></span> | <span data-ttu-id="47498-126">Número opcional de páginas (para recursos que dão suporte à paginação).</span><span class="sxs-lookup"><span data-stu-id="47498-126">Optional number of pages (for resources that support paging).</span></span> <span data-ttu-id="47498-127">O padrão é 3.</span><span class="sxs-lookup"><span data-stu-id="47498-127">Default is 3.</span></span> <span data-ttu-id="47498-128">Definir esse valor como 0 receberá todas as páginas.</span><span class="sxs-lookup"><span data-stu-id="47498-128">Setting this value to 0 will get all pages.</span></span>  |
+| <span data-ttu-id="47498-129">Não disponível</span><span class="sxs-lookup"><span data-stu-id="47498-129">N/A</span></span> | <span data-ttu-id="47498-130">response</span><span class="sxs-lookup"><span data-stu-id="47498-130">response</span></span> | <span data-ttu-id="47498-131">Somente leitura resposta do Microsoft Graph se a solicitação tiver sido bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="47498-131">Read-only response from Microsoft Graph if request was successful.</span></span>  |
+| <span data-ttu-id="47498-132">Não disponível</span><span class="sxs-lookup"><span data-stu-id="47498-132">N/A</span></span> |<span data-ttu-id="47498-133">erro</span><span class="sxs-lookup"><span data-stu-id="47498-133">error</span></span>| <span data-ttu-id="47498-134">Somente leitura erro do Microsoft Graph se a solicitação não tiver sido bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="47498-134">Read-only error from Microsoft Graph if request was not successful.</span></span> |
+
+## <a name="events"></a><span data-ttu-id="47498-135">Eventos</span><span class="sxs-lookup"><span data-stu-id="47498-135">Events</span></span>
+| <span data-ttu-id="47498-136">Evento</span><span class="sxs-lookup"><span data-stu-id="47498-136">Event</span></span> | <span data-ttu-id="47498-137">Detalhe</span><span class="sxs-lookup"><span data-stu-id="47498-137">Detail</span></span> | <span data-ttu-id="47498-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="47498-138">Description</span></span> |
+| --- | --- | --- |
+| <span data-ttu-id="47498-139">dataChange</span><span class="sxs-lookup"><span data-stu-id="47498-139">dataChange</span></span> | <span data-ttu-id="47498-140">O detalhe contém os `response` objetos `error` e.</span><span class="sxs-lookup"><span data-stu-id="47498-140">The detail contains the `response` and `error` objects.</span></span> | <span data-ttu-id="47498-141">Acionado quando a resposta ou erro é alterada.</span><span class="sxs-lookup"><span data-stu-id="47498-141">Fired when the response or error change.</span></span> |
+
+## <a name="templates"></a><span data-ttu-id="47498-142">Modelos</span><span class="sxs-lookup"><span data-stu-id="47498-142">Templates</span></span>
+
+<span data-ttu-id="47498-143">O `mgt-get` componente suporta vários [modelos](../templates.md) que você pode usar para definir a aparência.</span><span class="sxs-lookup"><span data-stu-id="47498-143">The `mgt-get` component supports several [templates](../templates.md) that you can use to define the look and feel.</span></span> <span data-ttu-id="47498-144">Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes.</span><span class="sxs-lookup"><span data-stu-id="47498-144">To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.</span></span>
+
+| <span data-ttu-id="47498-145">Tipo de dados</span><span class="sxs-lookup"><span data-stu-id="47498-145">Data type</span></span> | <span data-ttu-id="47498-146">Contexto de dados</span><span class="sxs-lookup"><span data-stu-id="47498-146">Data context</span></span> | <span data-ttu-id="47498-147">Descrição</span><span class="sxs-lookup"><span data-stu-id="47498-147">Description</span></span> |
+| --- | --- | --- |
+| <span data-ttu-id="47498-148">Padrão.</span><span class="sxs-lookup"><span data-stu-id="47498-148">default</span></span> | <span data-ttu-id="47498-149">A resposta do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="47498-149">The response from Microsoft Graph.</span></span> | <span data-ttu-id="47498-150">O modelo padrão é necessário para renderizar os dados provenientes do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="47498-150">The default template is required to render the data coming from Microsoft Graph.</span></span> |
+| <span data-ttu-id="47498-151">erro</span><span class="sxs-lookup"><span data-stu-id="47498-151">error</span></span> | <span data-ttu-id="47498-152">O erro do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="47498-152">The error from Microsoft Graph.</span></span> | <span data-ttu-id="47498-153">Este modelo será usado se houver um erro ao fazer a solicitação.</span><span class="sxs-lookup"><span data-stu-id="47498-153">This template will be used if there is an error making the request.</span></span> |
+| <span data-ttu-id="47498-154">carregando</span><span class="sxs-lookup"><span data-stu-id="47498-154">loading</span></span> | <span data-ttu-id="47498-155">Não disponível</span><span class="sxs-lookup"><span data-stu-id="47498-155">N/A</span></span> | <span data-ttu-id="47498-156">Este modelo é usado enquanto a solicitação é feita.</span><span class="sxs-lookup"><span data-stu-id="47498-156">This template is used while the request is being made.</span></span> |
+
+## <a name="microsoft-graph-permissions"></a><span data-ttu-id="47498-157">Permissões do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="47498-157">Microsoft Graph permissions</span></span>
+
+<span data-ttu-id="47498-158">Para obter mais informações sobre permissões, consulte a [referência de permissões](https://docs.microsoft.com/graph/permissions-reference)do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="47498-158">For more information about permissions, see the Microsoft Graph [permissions reference](https://docs.microsoft.com/graph/permissions-reference).</span></span> 
+
+## <a name="authentication"></a><span data-ttu-id="47498-159">Autenticação</span><span class="sxs-lookup"><span data-stu-id="47498-159">Authentication</span></span>
+
+<span data-ttu-id="47498-160">O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md) para buscar os dados necessários.</span><span class="sxs-lookup"><span data-stu-id="47498-160">The control uses the global authentication provider described in the [authentication documentation](./../providers.md) to fetch the required data.</span></span>
