@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b934dde5a14d7f2cd70817bffc9a6fc02ffe1b2
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6d49e760511e8764e875368cfe81a909c9e098be
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187769"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943793"
 ---
-# <a name="create-importedwindowsautopilotdeviceidentity"></a><span data-ttu-id="b3b9e-103">Criar importedWindowsAutopilotDeviceIdentity</span><span class="sxs-lookup"><span data-stu-id="b3b9e-103">Create importedWindowsAutopilotDeviceIdentity</span></span>
+# <a name="create-importedwindowsautopilotdeviceidentity"></a><span data-ttu-id="67724-103">Criar importedWindowsAutopilotDeviceIdentity</span><span class="sxs-lookup"><span data-stu-id="67724-103">Create importedWindowsAutopilotDeviceIdentity</span></span>
 
-> <span data-ttu-id="b3b9e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="67724-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="67724-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b3b9e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="67724-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="67724-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b3b9e-106">Criar um novo objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).</span><span class="sxs-lookup"><span data-stu-id="b3b9e-106">Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.</span></span>
+<span data-ttu-id="67724-106">Criar um novo objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).</span><span class="sxs-lookup"><span data-stu-id="67724-106">Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b3b9e-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="b3b9e-107">Prerequisites</span></span>
-<span data-ttu-id="b3b9e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b3b9e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="67724-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="67724-107">Prerequisites</span></span>
+<span data-ttu-id="67724-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67724-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b3b9e-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b3b9e-110">Permission type</span></span>|<span data-ttu-id="b3b9e-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="b3b9e-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="67724-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="67724-110">Permission type</span></span>|<span data-ttu-id="67724-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="67724-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b3b9e-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b3b9e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b3b9e-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3b9e-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="b3b9e-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b3b9e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b3b9e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-115">Not supported.</span></span>|
-|<span data-ttu-id="b3b9e-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b3b9e-116">Application</span></span>|<span data-ttu-id="b3b9e-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b3b9e-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="67724-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="67724-112">Delegated (work or school account)</span></span>|<span data-ttu-id="67724-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67724-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="67724-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="67724-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="67724-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="67724-115">Not supported.</span></span>|
+|<span data-ttu-id="67724-116">Application</span><span class="sxs-lookup"><span data-stu-id="67724-116">Application</span></span>|<span data-ttu-id="67724-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67724-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b3b9e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b3b9e-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="67724-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="67724-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,38 +38,38 @@ ms.locfileid: "37187769"
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b3b9e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b3b9e-119">Request headers</span></span>
-|<span data-ttu-id="b3b9e-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b3b9e-120">Header</span></span>|<span data-ttu-id="b3b9e-121">Valor</span><span class="sxs-lookup"><span data-stu-id="b3b9e-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="67724-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="67724-119">Request headers</span></span>
+|<span data-ttu-id="67724-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="67724-120">Header</span></span>|<span data-ttu-id="67724-121">Valor</span><span class="sxs-lookup"><span data-stu-id="67724-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b3b9e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b3b9e-122">Authorization</span></span>|<span data-ttu-id="b3b9e-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b3b9e-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="b3b9e-124">Accept</span></span>|<span data-ttu-id="b3b9e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b3b9e-125">application/json</span></span>|
+|<span data-ttu-id="67724-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="67724-122">Authorization</span></span>|<span data-ttu-id="67724-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="67724-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="67724-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="67724-124">Accept</span></span>|<span data-ttu-id="67724-125">application/json</span><span class="sxs-lookup"><span data-stu-id="67724-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b3b9e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b3b9e-126">Request body</span></span>
-<span data-ttu-id="b3b9e-127">No corpo da solicitação, forneça uma representação JSON do objeto importedWindowsAutopilotDeviceIdentity.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-127">In the request body, supply a JSON representation for the importedWindowsAutopilotDeviceIdentity object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="67724-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="67724-126">Request body</span></span>
+<span data-ttu-id="67724-127">No corpo da solicitação, forneça uma representação JSON do objeto importedWindowsAutopilotDeviceIdentity.</span><span class="sxs-lookup"><span data-stu-id="67724-127">In the request body, supply a JSON representation for the importedWindowsAutopilotDeviceIdentity object.</span></span>
 
-<span data-ttu-id="b3b9e-128">A tabela a seguir mostra as propriedades que são necessárias ao criar importedWindowsAutopilotDeviceIdentity.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-128">The following table shows the properties that are required when you create the importedWindowsAutopilotDeviceIdentity.</span></span>
+<span data-ttu-id="67724-128">A tabela a seguir mostra as propriedades que são necessárias ao criar importedWindowsAutopilotDeviceIdentity.</span><span class="sxs-lookup"><span data-stu-id="67724-128">The following table shows the properties that are required when you create the importedWindowsAutopilotDeviceIdentity.</span></span>
 
-|<span data-ttu-id="b3b9e-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b3b9e-129">Property</span></span>|<span data-ttu-id="b3b9e-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="b3b9e-130">Type</span></span>|<span data-ttu-id="b3b9e-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3b9e-131">Description</span></span>|
+|<span data-ttu-id="67724-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="67724-129">Property</span></span>|<span data-ttu-id="67724-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="67724-130">Type</span></span>|<span data-ttu-id="67724-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="67724-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b3b9e-132">id</span><span class="sxs-lookup"><span data-stu-id="b3b9e-132">id</span></span>|<span data-ttu-id="b3b9e-133">String</span><span class="sxs-lookup"><span data-stu-id="b3b9e-133">String</span></span>|<span data-ttu-id="b3b9e-134">O GUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-134">The GUID for the object</span></span>|
-|<span data-ttu-id="b3b9e-135">orderIdentifier</span><span class="sxs-lookup"><span data-stu-id="b3b9e-135">orderIdentifier</span></span>|<span data-ttu-id="b3b9e-136">String</span><span class="sxs-lookup"><span data-stu-id="b3b9e-136">String</span></span>|<span data-ttu-id="b3b9e-137">ID do pedido do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-137">Order Id of the Windows autopilot device.</span></span> <span data-ttu-id="b3b9e-138">– Substituir</span><span class="sxs-lookup"><span data-stu-id="b3b9e-138">- Deprecate</span></span>|
-|<span data-ttu-id="b3b9e-139">groupTag</span><span class="sxs-lookup"><span data-stu-id="b3b9e-139">groupTag</span></span>|<span data-ttu-id="b3b9e-140">String</span><span class="sxs-lookup"><span data-stu-id="b3b9e-140">String</span></span>|<span data-ttu-id="b3b9e-141">Marca de grupo do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-141">Group Tag of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="b3b9e-142">serialNumber</span><span class="sxs-lookup"><span data-stu-id="b3b9e-142">serialNumber</span></span>|<span data-ttu-id="b3b9e-143">String</span><span class="sxs-lookup"><span data-stu-id="b3b9e-143">String</span></span>|<span data-ttu-id="b3b9e-144">Número de série do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-144">Serial number of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="b3b9e-145">productKey</span><span class="sxs-lookup"><span data-stu-id="b3b9e-145">productKey</span></span>|<span data-ttu-id="b3b9e-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b3b9e-146">String</span></span>|<span data-ttu-id="b3b9e-147">Chave do produto (Product Key) do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-147">Product Key of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="b3b9e-148">importid</span><span class="sxs-lookup"><span data-stu-id="b3b9e-148">importId</span></span>|<span data-ttu-id="b3b9e-149">String</span><span class="sxs-lookup"><span data-stu-id="b3b9e-149">String</span></span>|<span data-ttu-id="b3b9e-150">A ID de importação do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-150">The Import Id of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="b3b9e-151">hardwareIdentifier</span><span class="sxs-lookup"><span data-stu-id="b3b9e-151">hardwareIdentifier</span></span>|<span data-ttu-id="b3b9e-152">Binária</span><span class="sxs-lookup"><span data-stu-id="b3b9e-152">Binary</span></span>|<span data-ttu-id="b3b9e-153">Blob de hardware do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-153">Hardware Blob of the Windows autopilot device.</span></span>|
-|<span data-ttu-id="b3b9e-154">state</span><span class="sxs-lookup"><span data-stu-id="b3b9e-154">state</span></span>|[<span data-ttu-id="b3b9e-155">importedWindowsAutopilotDeviceIdentityState</span><span class="sxs-lookup"><span data-stu-id="b3b9e-155">importedWindowsAutopilotDeviceIdentityState</span></span>](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|<span data-ttu-id="b3b9e-156">Estado atual do dispositivo importado.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-156">Current state of the imported device.</span></span>|
-|<span data-ttu-id="b3b9e-157">assignedUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b3b9e-157">assignedUserPrincipalName</span></span>|<span data-ttu-id="b3b9e-158">String</span><span class="sxs-lookup"><span data-stu-id="b3b9e-158">String</span></span>|<span data-ttu-id="b3b9e-159">UPN do usuário que o dispositivo será atribuído</span><span class="sxs-lookup"><span data-stu-id="b3b9e-159">UPN of the user the device will be assigned</span></span>|
+|<span data-ttu-id="67724-132">id</span><span class="sxs-lookup"><span data-stu-id="67724-132">id</span></span>|<span data-ttu-id="67724-133">String</span><span class="sxs-lookup"><span data-stu-id="67724-133">String</span></span>|<span data-ttu-id="67724-134">O GUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="67724-134">The GUID for the object</span></span>|
+|<span data-ttu-id="67724-135">orderIdentifier</span><span class="sxs-lookup"><span data-stu-id="67724-135">orderIdentifier</span></span>|<span data-ttu-id="67724-136">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="67724-136">String</span></span>|<span data-ttu-id="67724-137">ID do pedido do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="67724-137">Order Id of the Windows autopilot device.</span></span> <span data-ttu-id="67724-138">– Substituir</span><span class="sxs-lookup"><span data-stu-id="67724-138">- Deprecate</span></span>|
+|<span data-ttu-id="67724-139">groupTag</span><span class="sxs-lookup"><span data-stu-id="67724-139">groupTag</span></span>|<span data-ttu-id="67724-140">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="67724-140">String</span></span>|<span data-ttu-id="67724-141">Marca de grupo do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="67724-141">Group Tag of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="67724-142">serialNumber</span><span class="sxs-lookup"><span data-stu-id="67724-142">serialNumber</span></span>|<span data-ttu-id="67724-143">String</span><span class="sxs-lookup"><span data-stu-id="67724-143">String</span></span>|<span data-ttu-id="67724-144">Número de série do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="67724-144">Serial number of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="67724-145">productKey</span><span class="sxs-lookup"><span data-stu-id="67724-145">productKey</span></span>|<span data-ttu-id="67724-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="67724-146">String</span></span>|<span data-ttu-id="67724-147">Chave do produto (Product Key) do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="67724-147">Product Key of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="67724-148">importid</span><span class="sxs-lookup"><span data-stu-id="67724-148">importId</span></span>|<span data-ttu-id="67724-149">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="67724-149">String</span></span>|<span data-ttu-id="67724-150">A ID de importação do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="67724-150">The Import Id of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="67724-151">hardwareIdentifier</span><span class="sxs-lookup"><span data-stu-id="67724-151">hardwareIdentifier</span></span>|<span data-ttu-id="67724-152">Binária</span><span class="sxs-lookup"><span data-stu-id="67724-152">Binary</span></span>|<span data-ttu-id="67724-153">Blob de hardware do dispositivo do Windows AutoPilot.</span><span class="sxs-lookup"><span data-stu-id="67724-153">Hardware Blob of the Windows autopilot device.</span></span>|
+|<span data-ttu-id="67724-154">state</span><span class="sxs-lookup"><span data-stu-id="67724-154">state</span></span>|[<span data-ttu-id="67724-155">importedWindowsAutopilotDeviceIdentityState</span><span class="sxs-lookup"><span data-stu-id="67724-155">importedWindowsAutopilotDeviceIdentityState</span></span>](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|<span data-ttu-id="67724-156">Estado atual do dispositivo importado.</span><span class="sxs-lookup"><span data-stu-id="67724-156">Current state of the imported device.</span></span>|
+|<span data-ttu-id="67724-157">assignedUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="67724-157">assignedUserPrincipalName</span></span>|<span data-ttu-id="67724-158">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="67724-158">String</span></span>|<span data-ttu-id="67724-159">UPN do usuário que o dispositivo será atribuído</span><span class="sxs-lookup"><span data-stu-id="67724-159">UPN of the user the device will be assigned</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b3b9e-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3b9e-160">Response</span></span>
-<span data-ttu-id="b3b9e-161">Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-161">If successful, this method returns a `201 Created` response code and a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="67724-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="67724-160">Response</span></span>
+<span data-ttu-id="67724-161">Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="67724-161">If successful, this method returns a `201 Created` response code and a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b3b9e-162">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b3b9e-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="67724-162">Exemplo</span><span class="sxs-lookup"><span data-stu-id="67724-162">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b3b9e-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b3b9e-163">Request</span></span>
-<span data-ttu-id="b3b9e-164">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="67724-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67724-163">Request</span></span>
+<span data-ttu-id="67724-164">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="67724-164">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
@@ -94,8 +94,8 @@ Content-length: 679
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b3b9e-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3b9e-165">Response</span></span>
-<span data-ttu-id="b3b9e-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b3b9e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="67724-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="67724-165">Response</span></span>
+<span data-ttu-id="67724-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="67724-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -120,6 +120,7 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
 
 
 
