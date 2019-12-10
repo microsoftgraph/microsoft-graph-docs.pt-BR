@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e085eb0ae86d6a93895b4c88d17664abc84536ee
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 289701c0f1db1d479d80a5d205a0101456cd1f38
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537398"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940977"
 ---
 # <a name="create-policyset"></a>Criar policyset
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [policyset](../resources/intune-policyset-policyset.md) .
 
@@ -51,15 +51,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave do Policyset.|
+|id|String|Chave do Policyset.|
 |createdDateTime|DateTimeOffset|Hora de criação do Policyset.|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do Policyset.|
-|displayName|String|DisplayName do Policyset.|
+|displayName|Cadeia de caracteres|DisplayName do Policyset.|
 |description|String|Descrição do Policyset.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do Policyset. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|String collection|Marcas da implantação dirigida|
-|roleScopeTags|String collection|RoleScopeTags do Policyset|
+|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida|
+|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Policyset|
 
 
 
@@ -114,7 +114,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

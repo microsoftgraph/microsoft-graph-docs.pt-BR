@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d9ac1dfbd4e1d2773646b105c0add9d6b92885a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4d3ec36da229bf1b3e65f79ee1e2c4f4cecce6c3
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536284"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940893"
 ---
 # <a name="list-policysetitems"></a>Listar policySetItems
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar Propriedades e relações dos objetos [policySetItem](../resources/intune-policyset-policysetitem.md) .
 
@@ -84,7 +84,6 @@ Content-Length: 548
   ]
 }
 ```
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b2a73ed7fc6dedc611235263fee07ec585d19790
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 8132306e6e4047068aaead76c0e9297983e77d8d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37189771"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941306"
 ---
 # <a name="update-deviceappmanagementtask"></a>Atualizar deviceAppManagementTask
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,14 +52,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|String|O nome.|
-|descrição|Cadeia de caracteres|A descrição.|
+|displayName|Cadeia de caracteres|O nome.|
+|description|Cadeia de caracteres|A descrição.|
 |createdDateTime|DateTimeOffset|A data de criação.|
 |dueDateTime|DateTimeOffset|A data de conclusão.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
 |prioridade|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|A prioridade. Os valores possíveis são: `none`, `high`, `low`.|
-|Criador|String|O endereço de email do criador.|
-|creatorNotes|String|Observações do criador.|
+|Criador|Cadeia de Caracteres|O endereço de email do criador.|
+|creatorNotes|Cadeia de Caracteres|Observações do criador.|
 |assignedTo|String|O nome ou email do administrador ao qual esta tarefa é atribuída.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status. Os valores possíveis são: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
@@ -113,6 +113,7 @@ Content-Length: 508
   "status": "pending"
 }
 ```
+
 
 
 
