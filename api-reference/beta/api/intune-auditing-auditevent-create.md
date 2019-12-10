@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4f6381ffb352c7d5188ed181640b5dc80459d89
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 6682ecc7b7c656ac0e065cb395b1a3b1d02f6ae7
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085159"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39932303"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar auditEve
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome de exibição do evento.|
-|componentName|String|Nome do componente.|
+|componentName|Cadeia de Caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|String|Nome amigável da atividade.|
+|atividade|Cadeia de Caracteres|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|String|O tipo de atividade que foi executada.|
-|activityOperationType|String|O tipo de operação HTTP da atividade.|
+|activityType|Cadeia de Caracteres|O tipo de atividade que foi executada.|
+|activityOperationType|Cadeia de Caracteres|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
@@ -185,7 +185,6 @@ Content-Length: 1652
   "category": "Category value"
 }
 ```
-
 
 
 
