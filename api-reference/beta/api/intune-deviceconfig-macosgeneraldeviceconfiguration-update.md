@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e37e0375a6ff3214484ac96de0c5baa352f2f08d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: afd0fa18e4c70e7b6b330fc173bc4f408636dbe9
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533578"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948244"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>Atualizar macOSGeneralDeviceConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md).
 
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que está em CompliantAppsList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
@@ -76,41 +76,41 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
-|Propriedadeskeychainblockcloudsync|Booliano|Indica se a sincronização de chaves do iCloud está bloqueada (macOS 10,12 e posterior).|
-|airPrintBlocked|Booliano|Indica se o arquivo de impressão está bloqueado (macOS 10,12 e posterior).|
-|airPrintForceTrustedTLS|Booliano|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (macOS 10,13 e posterior).|
-|airPrintBlockiBeaconDiscovery|Booliano|Indica se a descoberta de impressoras de impressão do iBeacon está ou não bloqueada. Isso impede os beacons Bluetooth de impressão de mensagens de phishing para tráfego de rede (macOS 10,3 e posterior).|
-|safariBlockAutofill|Booliano|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
-|cameraBlocked|Booliano|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
-|iTunesBlockMusicService|Booliano|Indica se o serviço de música deve ou não ser bloqueado e o aplicativo de música é revertido para o modo clássico.|
+|Propriedadeskeychainblockcloudsync|Boolean|Indica se a sincronização de chaves do iCloud está bloqueada (macOS 10,12 e posterior).|
+|airPrintBlocked|Boolean|Indica se o arquivo de impressão está bloqueado (macOS 10,12 e posterior).|
+|airPrintForceTrustedTLS|Boolean|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (macOS 10,13 e posterior).|
+|airPrintBlockiBeaconDiscovery|Boolean|Indica se a descoberta de impressoras de impressão do iBeacon está ou não bloqueada. Isso impede os beacons Bluetooth de impressão de mensagens de phishing para tráfego de rede (macOS 10,3 e posterior).|
+|safariBlockAutofill|Boolean|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
+|cameraBlocked|Boolean|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
+|iTunesBlockMusicService|Boolean|Indica se o serviço de música deve ou não ser bloqueado e o aplicativo de música é revertido para o modo clássico.|
 |spotlightBlockInternetResults|Boolean|Indica se o Spotlight deve ou não bloquear o retorno de qualquer resultado de uma pesquisa na Internet.|
-|keyboardBlockDictation|Booliano|Indica se o usuário será ou não impedido de usar a entrada de ditado.|
-|definitionLookupBlocked|Booliano|Indica se a pesquisa de definição deve ou não ser bloqueada.|
-|appleWatchBlockAutoUnlock|Booliano|Indica se os usuários devem ou não bloquear seu Mac com o Apple Watch.|
-|iTunesBlockFileSharing|Booliano|Indica se os arquivos devem ou não ser transferidos usando o iTunes.|
-|iCloudBlockDocumentSync|Booliano|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada.|
-|iCloudBlockMail|Booliano|Indica se o iCloud deve ou não bloquear emails de sincronização.|
-|iCloudBlockAddressBook|Booliano|Indica se o iCloud deve ou não bloquear os contatos de sincronização.|
-|iCloudBlockCalendar|Booliano|Indica se o iCloud deve ou não bloquear calendários de sincronização.|
-|iCloudBlockReminders|Booliano|Indica se o iCloud deve ou não bloquear lembretes de sincronização.|
-|iCloudBlockBookmarks|Booliano|Indica se o iCloud deve ou não bloquear os indicadores de sincronização.|
-|iCloudBlockNotes|Booliano|Indica se o iCloud deve ou não bloquear as anotações de sincronização.|
-|airDropBlocked|Booliano|Indica se o recurso de recebimento de esficado deve ou não ser permitido.|
-|passwordBlockModification|Booliano|Indica se a modificação de senha deve ou não ser permitida.|
-|passwordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
-|passwordBlockAutoFill|Booliano|Indica se o recurso de senhas de preenchimento automático deve ou não ser bloqueado.|
-|passwordBlockProximityRequests|Booliano|Indica se as senhas de solicitação devem ou não ser bloqueadas de dispositivos próximos.|
-|passwordBlockAirDropSharing|Booliano|Indica se as senhas de compartilhamento devem ou não ser bloqueadas com o recurso de senha de soltura.|
+|keyboardBlockDictation|Boolean|Indica se o usuário será ou não impedido de usar a entrada de ditado.|
+|definitionLookupBlocked|Boolean|Indica se a pesquisa de definição deve ou não ser bloqueada.|
+|appleWatchBlockAutoUnlock|Boolean|Indica se os usuários devem ou não bloquear seu Mac com o Apple Watch.|
+|iTunesBlockFileSharing|Boolean|Indica se os arquivos devem ou não ser transferidos usando o iTunes.|
+|iCloudBlockDocumentSync|Boolean|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada.|
+|iCloudBlockMail|Boolean|Indica se o iCloud deve ou não bloquear emails de sincronização.|
+|iCloudBlockAddressBook|Boolean|Indica se o iCloud deve ou não bloquear os contatos de sincronização.|
+|iCloudBlockCalendar|Boolean|Indica se o iCloud deve ou não bloquear calendários de sincronização.|
+|iCloudBlockReminders|Boolean|Indica se o iCloud deve ou não bloquear lembretes de sincronização.|
+|iCloudBlockBookmarks|Boolean|Indica se o iCloud deve ou não bloquear os indicadores de sincronização.|
+|iCloudBlockNotes|Boolean|Indica se o iCloud deve ou não bloquear as anotações de sincronização.|
+|airDropBlocked|Boolean|Indica se o recurso de recebimento de esficado deve ou não ser permitido.|
+|passwordBlockModification|Boolean|Indica se a modificação de senha deve ou não ser permitida.|
+|passwordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
+|passwordBlockAutoFill|Boolean|Indica se o recurso de senhas de preenchimento automático deve ou não ser bloqueado.|
+|passwordBlockProximityRequests|Boolean|Indica se as senhas de solicitação devem ou não ser bloqueadas de dispositivos próximos.|
+|passwordBlockAirDropSharing|Boolean|Indica se as senhas de compartilhamento devem ou não ser bloqueadas com o recurso de senha de soltura.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Define o número de dias que uma atualização de software será delyed para um dispositivo supervisionado. Valores válidos de 0 a 90|
-|softwareUpdatesForceDelayed|Booliano|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
-|contentCachingBlocked|Booliano|Indica se o cache de conteúdo deve ou não ser permitido.|
-|iCloudBlockPhotoLibrary|Booliano|Indica se Biblioteca de Fotos do iCloud deve ou não ser bloqueada.|
+|softwareUpdatesForceDelayed|Boolean|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
+|contentCachingBlocked|Boolean|Indica se o cache de conteúdo deve ou não ser permitido.|
+|iCloudBlockPhotoLibrary|Boolean|Indica se Biblioteca de Fotos do iCloud deve ou não ser bloqueada.|
 |screenCaptureBlocked|Boolean|Indica se o usuário será ou não impedido de fazer capturas de tela.|
-|classroomAppBlockRemoteScreenObservation|Booliano|Indica se a observação de tela remota deve ou não ser permitida por aplicativo de sala de aula. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
-|classroomAppForceUnpromptedScreenObservation|Booliano|Indica se a permissão será ou não automaticamente para o professor de um curso gerenciado no aplicativo da sala de aula para exibir a tela de um aluno sem avisar. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
-|classroomForceAutomaticallyJoinClasses|Booliano|Indica se a permissão será ou não automaticamente para as solicitações do professor, sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
-|classroomForceRequestPermissionToLeaveClasses|Booliano|Indica se um aluno inscrito em um curso não gerenciado via sala de aula será solicitado a solicitar permissão do professor ao tentar sair do curso. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
-|classroomForceUnpromptedAppAndDeviceLock|Booliano|Indica se o professor deve ou não bloquear aplicativos ou o dispositivo sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomAppBlockRemoteScreenObservation|Boolean|Indica se a observação de tela remota deve ou não ser permitida por aplicativo de sala de aula. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomAppForceUnpromptedScreenObservation|Boolean|Indica se a permissão será ou não automaticamente para o professor de um curso gerenciado no aplicativo da sala de aula para exibir a tela de um aluno sem avisar. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomForceAutomaticallyJoinClasses|Boolean|Indica se a permissão será ou não automaticamente para as solicitações do professor, sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|Indica se um aluno inscrito em um curso não gerenciado via sala de aula será solicitado a solicitar permissão do professor ao tentar sair do curso. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
+|classroomForceUnpromptedAppAndDeviceLock|Boolean|Indica se o professor deve ou não bloquear aplicativos ou o dispositivo sem avisar o aluno. Requer o registro de MDM via Apple School Manager ou Apple Business Manager.|
 |iCloudBlockActivityContinuation|Boolean|Indica se o usuário será ou não impedido de continuar o trabalho que iniciou em um dispositivo MacOS em outro dispositivo iOS ou MacOS (MacOS 10,15 ou posterior).|
 
 
@@ -318,7 +318,6 @@ Content-Length: 3318
   "iCloudBlockActivityContinuation": true
 }
 ```
-
 
 
 
