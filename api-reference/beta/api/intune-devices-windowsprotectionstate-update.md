@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74824bbc5c066d0e3df398786e5163642b64707a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4c64d51e88bc4e4bcff7baf5214f61e094b7ff53
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187979"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944199"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar Windowsprotectionstate foi
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [windowsprotectionstate foi](../resources/intune-devices-windowsprotectionstate.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,22 +53,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
-|malwareProtectionEnabled|Booliano|O anti-malware está habilitado ou não|
+|malwareProtectionEnabled|Boolean|O anti-malware está habilitado ou não|
 |DeviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente, etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Booliano|A proteção em tempo real está habilitada ou não?|
-|networkInspectionSystemEnabled|Booliano|Sistema de inspeção de rede habilitado ou não?|
-|quickScanOverdue|Booliano|Verificação rápida em atraso ou não?|
-|fullScanOverdue|Booliano|Verificação completa em atraso ou não?|
-|signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
-|rebootRequired|Booliano|Reinicialização necessária ou não?|
-|fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|String|Versão atual do mecanismo do Endpoint Protection|
-|signatureVersion|String|Versão atual de definições de malware|
-|antiMalwareVersion|String|Versão Antimalware atual|
+|realTimeProtectionEnabled|Boolean|A proteção em tempo real está habilitada ou não?|
+|networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
+|quickScanOverdue|Boolean|Verificação rápida em atraso ou não?|
+|fullScanOverdue|Boolean|Verificação completa em atraso ou não?|
+|signatureUpdateOverdue|Boolean|Assinatura desatualizada ou não?|
+|rebootRequired|Boolean|Reinicialização necessária ou não?|
+|fullScanRequired|Boolean|Verificação completa necessária ou não?|
+|engineVersion|Cadeia de Caracteres|Versão atual do mecanismo do Endpoint Protection|
+|signatureVersion|Cadeia de Caracteres|Versão atual de definições de malware|
+|antiMalwareVersion|Cadeia de Caracteres|Versão Antimalware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
-|lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
-|lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
+|lastQuickScanSignatureVersion|Cadeia de Caracteres|Versão da última assinatura de verificação rápida|
+|lastFullScanSignatureVersion|Cadeia de Caracteres|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
 
 
@@ -136,6 +136,7 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

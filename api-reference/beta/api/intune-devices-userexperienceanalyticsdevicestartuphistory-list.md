@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a84fc72dc80058b0e11468d7ac2ab201cde5a98
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 73eb0c121e98b61577921b9cca818ba50505bfa7
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37529155"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944446"
 ---
 # <a name="list-userexperienceanalyticsdevicestartuphistories"></a>Listar userExperienceAnalyticsDeviceStartupHistories
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar Propriedades e relações dos objetos [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) .
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 537
+Content-Length: 636
 
 {
   "value": [
@@ -79,12 +79,13 @@ Content-Length: 537
       "groupPolicyLoginTimeInMs": 8,
       "coreLoginTimeInMs": 1,
       "totalLoginTimeInMs": 2,
-      "isFirstLogin": true
+      "isFirstLogin": true,
+      "isFeatureUpdate": true,
+      "operatingSystemVersion": "Operating System Version value"
     }
   ]
 }
 ```
-
 
 
 

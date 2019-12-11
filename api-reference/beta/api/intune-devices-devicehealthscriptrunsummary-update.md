@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47364fad3d582f576818d69dac8aed9714d5bcf9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 5a102b6624a2bedf70708ac4fedb03c523c34511
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37531060"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945036"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Atualizar deviceHealthScriptRunSummary
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md) .
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |noIssueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção não encontrou um problema e o dispositivo está íntegro|
 |issueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção encontrou um problema|
 |detectionScriptErrorDeviceCount|Int32|Número de dispositivos nos quais a execução do script de detecção encontrou um erro e não foi concluída|
@@ -61,6 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |issueReoccurredDeviceCount|Int32|Número de dispositivos para os quais o script de correção foi executado com êxito, mas falhou ao resolver o problema detectado|
 |remediationScriptErrorDeviceCount|Int32|Número de dispositivos para os quais a execução do script de correção encontrou um erro e não foi concluída|
 |lastScriptRunDateTime|DateTimeOffset|Hora da última execução para o script em todos os dispositivos|
+|issueRemediatedCumulativeDeviceCount|Int32|Número de dispositivos que foram corrigidos nos últimos 30 dias|
 
 
 
@@ -74,7 +75,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 Content-type: application/json
-Content-length: 448
+Content-length: 494
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -86,7 +87,8 @@ Content-length: 448
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
   "remediationScriptErrorDeviceCount": 1,
-  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+  "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
 
@@ -95,7 +97,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 497
+Content-Length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -108,10 +110,10 @@ Content-Length: 497
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
   "remediationScriptErrorDeviceCount": 1,
-  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+  "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

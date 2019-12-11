@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d11a20463b6421a3975fc516c219fc52b7813cc8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: a8ad91d9e7d6a5e02d25e72528c62e71a145c37f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37183734"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947992"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Criar managedAllDeviceCertificateState
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [managedAllDeviceCertificateState](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,15 +53,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|managedDeviceDisplayName|String|Nome de exibição do dispositivo|
+|managedDeviceDisplayName|Cadeia de Caracteres|Nome de exibição do dispositivo|
 |userPrincipalName|String|Nome UPN|
 |certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
-|certificateIssuerName|String|Emissor|
-|certificateThumbprint|String|Identificação|
-|certificateSerialNumber|String|Número de série|
-|certificateSubjectName|String|Nome do assunto do certificado|
+|certificateIssuerName|Cadeia de Caracteres|Emissor|
+|certificateThumbprint|Cadeia de Caracteres|Identificação|
+|certificateSerialNumber|Cadeia de Caracteres|Número de série|
+|certificateSubjectName|Cadeia de Caracteres|Nome do assunto do certificado|
 |certificateKeyUsages|Int32|Uso de chave|
-|certificateExtendedKeyUsages|String|Uso avançado de chave|
+|certificateExtendedKeyUsages|Cadeia de Caracteres|Uso avançado de chave|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 
 
@@ -117,6 +117,7 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
 
 
 
