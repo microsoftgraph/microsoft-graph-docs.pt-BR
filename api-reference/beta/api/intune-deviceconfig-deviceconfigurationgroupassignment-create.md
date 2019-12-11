@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95936153eb25d3dbf81931f090dd413dc325f126
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 00da2479c36d9b9780264e19d48a838b4ab838eb
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38083876"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949354"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Criar deviceConfigurationGroupAssignment
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -61,8 +61,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
-|excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
+|targetGroupId|Cadeia de Caracteres|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
+|excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 
 
@@ -99,7 +99,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

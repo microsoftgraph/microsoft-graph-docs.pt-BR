@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7831582d7b716bd2725c3ed5d0294a2f3348325
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 62e531acf0ac8a9d6e662313ff94ffacb7c10057
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38083862"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949325"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Atualizar deviceConfigurationGroupAssignment
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -61,8 +61,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
-|excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
+|targetGroupId|Cadeia de Caracteres|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
+|excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 
 
@@ -99,7 +99,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 
