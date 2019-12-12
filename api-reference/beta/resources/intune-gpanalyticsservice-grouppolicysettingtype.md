@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6cfc68216c80ab62fe7ab93630ba4d66fb72dced
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b5e2a02beb5c53bc3379119262a4ebce62e0fab3
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539173"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955663"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>tipo de enumeração groupPolicySettingType
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de configuração da política de grupo.
 
@@ -24,8 +24,12 @@ Tipo de configuração da política de grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|GroupPolicySettingType desconhecido|
-|política|1|Configuração de política|
-|Count|duas|Configuração de conta|
+|política|1|Tipo de configuração de política|
+|Count|duas|Tipo de configuração de conta|
+|securityoptions|3D|Tipo de configuração securityoptions|
+|userRightsAssignment|4 |Tipo de configuração UserRightsAssignment|
+|auditSetting|5 |Tipo de configuração AuditSetting|
+|windowsFirewallSettings|6 |Tipo de configuração WindowsFirewallSettings|
 
 
 

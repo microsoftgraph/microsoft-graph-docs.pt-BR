@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56fe9a9ebc8f68b517461d6f6ae7466e953ca366
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9b0c606be725364927a686bdec24e985850fa33d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37175373"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39954178"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,12 +51,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar cartToCl
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
-|descrição|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
+|description|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
 |deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivos a serem associados às classes.|
 |classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
@@ -111,6 +111,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

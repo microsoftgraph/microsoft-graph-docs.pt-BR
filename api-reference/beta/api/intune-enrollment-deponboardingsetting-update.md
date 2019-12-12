@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 597cde967d9f1f66438c27acc25a0989d5f6fc02
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: a0491100aea1ceb761f70c461b5b8e128078a52c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185242"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955403"
 ---
 # <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,12 +57,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [depOnbo
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço última syned com o Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou uma sincronização pela última vez.|
-|shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
+|shareTokenWithSchoolDataSyncService|Boolean|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
 |TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenname|String|Nome amigável para token Dep|
+|tokenname|Cadeia de Caracteres|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
-|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 
@@ -123,6 +123,7 @@ Content-Length: 689
   ]
 }
 ```
+
 
 
 

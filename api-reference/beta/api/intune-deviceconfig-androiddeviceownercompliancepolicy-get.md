@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5f3b7fc60afa828eaec1e3ae341eea312c50b41
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 3e1d516bc382d29a1602077807543f7f30f433f4
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085012"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39953912"
 ---
 # <a name="get-androiddeviceownercompliancepolicy"></a>Obter androidDeviceOwnerCompliancePolicy
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1411
+Content-Length: 1476
 
 {
   "value": {
@@ -82,6 +82,7 @@ Content-Length: 1411
     "version": 7,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "securityRequireSafetyNetAttestationBasicIntegrity": true,
     "securityRequireSafetyNetAttestationCertifiedDevice": true,
     "osMinimumVersion": "Os Minimum Version value",
@@ -103,7 +104,6 @@ Content-Length: 1411
   }
 }
 ```
-
 
 
 

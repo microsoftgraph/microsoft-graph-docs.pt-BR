@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3e96083cdbc1c59b9e77d18bbf1b2e1a081ff37
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 8f17e7725802879f639ce6803f9f6c12dca21e5f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539075"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955480"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>tipo de recurso deviceHealthScriptRunSummary
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades para o resumo de execução de um script de gerenciamento de dispositivo.
 
@@ -29,7 +29,7 @@ Contém propriedades para o resumo de execução de um script de gerenciamento d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade de Resumo de execução de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |noIssueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção não encontrou um problema e o dispositivo está íntegro|
 |issueDetectedDeviceCount|Int32|Número de dispositivos para os quais o script de detecção encontrou um problema|
 |detectionScriptErrorDeviceCount|Int32|Número de dispositivos nos quais a execução do script de detecção encontrou um erro e não foi concluída|
@@ -39,6 +39,7 @@ Contém propriedades para o resumo de execução de um script de gerenciamento d
 |issueReoccurredDeviceCount|Int32|Número de dispositivos para os quais o script de correção foi executado com êxito, mas falhou ao resolver o problema detectado|
 |remediationScriptErrorDeviceCount|Int32|Número de dispositivos para os quais a execução do script de correção encontrou um erro e não foi concluída|
 |lastScriptRunDateTime|DateTimeOffset|Hora da última execução para o script em todos os dispositivos|
+|issueRemediatedCumulativeDeviceCount|Int32|Número de dispositivos que foram corrigidos nos últimos 30 dias|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -63,7 +64,8 @@ Veja a seguir uma representação JSON do recurso.
   "remediationSkippedDeviceCount": 1024,
   "issueReoccurredDeviceCount": 1024,
   "remediationScriptErrorDeviceCount": 1024,
-  "lastScriptRunDateTime": "String (timestamp)"
+  "lastScriptRunDateTime": "String (timestamp)",
+  "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
 

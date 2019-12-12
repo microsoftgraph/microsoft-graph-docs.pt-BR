@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7912a4e70e1ea7daeeb000b4812e2d61e7e7e55e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: de5f688e0613d1336c277f85cb3bce6c482c2fbc
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088158"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955572"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -132,7 +132,6 @@ ms.locfileid: "38088158"
 - [Visão geral do dispositivo gerenciado](intune-devices-manageddeviceoverview.md)
 - [Estado de integridade reportado pelo parceiro do dispositivo gerenciado](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Ação remota de dispositivo gerenciados](intune-devices-manageddeviceremoteaction.md)
-- [Tipo de agente de gerenciamento](intune-devices-managementagenttype.md)
 - [Condição de gerenciamento](intune-fencing-managementcondition.md)
 - [Expressões de condição de gerenciamento](intune-fencing-managementconditionexpression.md)
 - [Modelo de expressões de condição de gerenciamento](intune-fencing-managementconditionexpressionmodel.md)

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9178f62d1dd711134ba1925a6cc5c4a9082a99e
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: bf156461bdb4c988e4c6750831c7493a00678bdf
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538459"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955473"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A experiência do usuário da entidade de histórico de inicialização do dispositivo de análise contém detalhes do histórico de desempenho da inicialização.
 
@@ -32,7 +32,7 @@ A experiência do usuário da entidade de histórico de inicialização do dispo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do histórico de inicialização do dispositivo de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do histórico de inicialização do dispositivo de análise da experiência do usuário.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo de análise da experiência do usuário.|
 |startTime|DateTimeOffset|A hora de início do dispositivo de análise da experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização do núcleo do dispositivo de análise da experiência do usuário em milissegundos.|
@@ -42,7 +42,9 @@ A experiência do usuário da entidade de histórico de inicialização do dispo
 |groupPolicyLoginTimeInMs|Int32|O tempo de logon da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
 |coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise da experiência do usuário em milissegundos.|
-|isFirstLogin|Booliano|O dispositivo de análise de experiência do usuário primeiro logon.|
+|isFirstLogin|Boolean|O dispositivo de análise de experiência do usuário primeiro logon.|
+|isFeatureUpdate|Boolean|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
+|operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise da experiência do usuário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -68,7 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "groupPolicyLoginTimeInMs": 1024,
   "coreLoginTimeInMs": 1024,
   "totalLoginTimeInMs": 1024,
-  "isFirstLogin": true
+  "isFirstLogin": true,
+  "isFeatureUpdate": true,
+  "operatingSystemVersion": "String"
 }
 ```
 
