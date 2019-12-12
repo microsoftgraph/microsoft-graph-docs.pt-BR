@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7101b773b29eab5f2d4fe587cb0a47ba91adb394
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: aa7ac9c08fdd4311abb63e3e3db22640535266c1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084675"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949991"
 ---
 # <a name="get-androidworkprofilepkcscertificateprofile"></a>Obter androidWorkProfilePkcsCertificateProfile
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2029
+Content-Length: 2337
 
 {
   "value": {
@@ -119,11 +119,19 @@ Content-Length: 2029
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificateTemplateName": "Certificate Template Name value",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+    "subjectNameFormatString": "Subject Name Format String value",
+    "certificateStore": "machine",
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
+    ]
   }
 }
 ```
-
 
 
 
