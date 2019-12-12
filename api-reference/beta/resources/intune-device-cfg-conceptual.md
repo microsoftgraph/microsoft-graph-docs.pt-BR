@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 78b67a189da837f975f3b1aa8df0cc9527e0e781
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c8031b38eb9e86641b4dd62388b067847edace97
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078354"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955726"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -116,7 +116,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política da unidade fixa do BitLocker](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Tipo de informações de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Opções de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [Tipo de rotação da senha de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Política da unidade removível do BitLocker](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Política da unidade de sistema do BitLocker](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Configuração de sincronização do navegador](intune-deviceconfig-browsersyncsetting.md)
@@ -296,13 +295,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de Wi-Fi do iOS](intune-deviceconfig-ioswificonfiguration.md)
 - [iOSik EV2 VPN Configuration](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Extensão de logon único Kerberos](intune-deviceconfig-kerberossinglesignonextension.md)
-- [Par de valores booleanos principais](intune-deviceconfig-keybooleanvaluepair.md)
-- [Par principal de valor inteiro](intune-deviceconfig-keyintegervaluepair.md)
-- [Par chave real de valor](intune-deviceconfig-keyrealvaluepair.md)
 - [Tamanho da chave](intune-deviceconfig-keysize.md)
 - [Opção de provedor de armazenamento de chaves](intune-deviceconfig-keystorageprovideroption.md)
-- [Par de valores de cadeia de caracteres de chave](intune-deviceconfig-keystringvaluepair.md)
-- [Par de valores digitados por chave](intune-deviceconfig-keytypedvaluepair.md)
 - [Usos de chave](intune-deviceconfig-keyusages.md)
 - [Valor da chave](intune-deviceconfig-keyvalue.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
