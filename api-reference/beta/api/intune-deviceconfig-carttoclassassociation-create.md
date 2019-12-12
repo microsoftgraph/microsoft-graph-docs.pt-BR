@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56fe9a9ebc8f68b517461d6f6ae7466e953ca366
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9b0c606be725364927a686bdec24e985850fa33d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37175373"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39954178"
 ---
-# <a name="create-carttoclassassociation"></a><span data-ttu-id="b7c1f-103">Criar cartToClassAssociation</span><span class="sxs-lookup"><span data-stu-id="b7c1f-103">Create cartToClassAssociation</span></span>
+# <a name="create-carttoclassassociation"></a><span data-ttu-id="f716e-103">Criar cartToClassAssociation</span><span class="sxs-lookup"><span data-stu-id="f716e-103">Create cartToClassAssociation</span></span>
 
-> <span data-ttu-id="b7c1f-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f716e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="f716e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b7c1f-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f716e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f716e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b7c1f-106">Criar um novo objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) .</span><span class="sxs-lookup"><span data-stu-id="b7c1f-106">Create a new [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.</span></span>
+<span data-ttu-id="f716e-106">Criar um novo objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) .</span><span class="sxs-lookup"><span data-stu-id="f716e-106">Create a new [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b7c1f-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="b7c1f-107">Prerequisites</span></span>
-<span data-ttu-id="b7c1f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7c1f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f716e-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f716e-107">Prerequisites</span></span>
+<span data-ttu-id="f716e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f716e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b7c1f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7c1f-110">Permission type</span></span>|<span data-ttu-id="b7c1f-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="b7c1f-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f716e-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f716e-110">Permission type</span></span>|<span data-ttu-id="f716e-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="f716e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7c1f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7c1f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b7c1f-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7c1f-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="b7c1f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b7c1f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b7c1f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-115">Not supported.</span></span>|
-|<span data-ttu-id="b7c1f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7c1f-116">Application</span></span>|<span data-ttu-id="b7c1f-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b7c1f-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="f716e-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f716e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f716e-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f716e-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="f716e-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f716e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f716e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f716e-115">Not supported.</span></span>|
+|<span data-ttu-id="f716e-116">Application</span><span class="sxs-lookup"><span data-stu-id="f716e-116">Application</span></span>|<span data-ttu-id="f716e-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f716e-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b7c1f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7c1f-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f716e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f716e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,37 +38,37 @@ ms.locfileid: "37175373"
 POST /deviceManagement/cartToClassAssociations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b7c1f-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7c1f-119">Request headers</span></span>
-|<span data-ttu-id="b7c1f-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b7c1f-120">Header</span></span>|<span data-ttu-id="b7c1f-121">Valor</span><span class="sxs-lookup"><span data-stu-id="b7c1f-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f716e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f716e-119">Request headers</span></span>
+|<span data-ttu-id="f716e-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f716e-120">Header</span></span>|<span data-ttu-id="f716e-121">Valor</span><span class="sxs-lookup"><span data-stu-id="f716e-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b7c1f-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7c1f-122">Authorization</span></span>|<span data-ttu-id="b7c1f-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b7c1f-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="b7c1f-124">Accept</span></span>|<span data-ttu-id="b7c1f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b7c1f-125">application/json</span></span>|
+|<span data-ttu-id="f716e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="f716e-122">Authorization</span></span>|<span data-ttu-id="f716e-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f716e-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f716e-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f716e-124">Accept</span></span>|<span data-ttu-id="f716e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f716e-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b7c1f-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7c1f-126">Request body</span></span>
-<span data-ttu-id="b7c1f-127">No corpo da solicitação, forneça uma representação JSON do objeto cartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-127">In the request body, supply a JSON representation for the cartToClassAssociation object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f716e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f716e-126">Request body</span></span>
+<span data-ttu-id="f716e-127">No corpo da solicitação, forneça uma representação JSON do objeto cartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="f716e-127">In the request body, supply a JSON representation for the cartToClassAssociation object.</span></span>
 
-<span data-ttu-id="b7c1f-128">A tabela a seguir mostra as propriedades que são necessárias ao criar cartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-128">The following table shows the properties that are required when you create the cartToClassAssociation.</span></span>
+<span data-ttu-id="f716e-128">A tabela a seguir mostra as propriedades que são necessárias ao criar cartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="f716e-128">The following table shows the properties that are required when you create the cartToClassAssociation.</span></span>
 
-|<span data-ttu-id="b7c1f-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b7c1f-129">Property</span></span>|<span data-ttu-id="b7c1f-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7c1f-130">Type</span></span>|<span data-ttu-id="b7c1f-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7c1f-131">Description</span></span>|
+|<span data-ttu-id="f716e-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f716e-129">Property</span></span>|<span data-ttu-id="f716e-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="f716e-130">Type</span></span>|<span data-ttu-id="f716e-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="f716e-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7c1f-132">id</span><span class="sxs-lookup"><span data-stu-id="b7c1f-132">id</span></span>|<span data-ttu-id="b7c1f-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b7c1f-133">String</span></span>|<span data-ttu-id="b7c1f-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-134">Key of the entity.</span></span>|
-|<span data-ttu-id="b7c1f-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b7c1f-135">createdDateTime</span></span>|<span data-ttu-id="b7c1f-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b7c1f-136">DateTimeOffset</span></span>|<span data-ttu-id="b7c1f-137">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-137">DateTime the object was created.</span></span>|
-|<span data-ttu-id="b7c1f-138">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="b7c1f-138">lastModifiedDateTime</span></span>|<span data-ttu-id="b7c1f-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b7c1f-139">DateTimeOffset</span></span>|<span data-ttu-id="b7c1f-140">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-140">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="b7c1f-141">versão</span><span class="sxs-lookup"><span data-stu-id="b7c1f-141">version</span></span>|<span data-ttu-id="b7c1f-142">Int32</span><span class="sxs-lookup"><span data-stu-id="b7c1f-142">Int32</span></span>|<span data-ttu-id="b7c1f-143">Versão do CartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-143">Version of the CartToClassAssociation.</span></span>|
-|<span data-ttu-id="b7c1f-144">displayName</span><span class="sxs-lookup"><span data-stu-id="b7c1f-144">displayName</span></span>|<span data-ttu-id="b7c1f-145">String</span><span class="sxs-lookup"><span data-stu-id="b7c1f-145">String</span></span>|<span data-ttu-id="b7c1f-146">O administrador forneceu o nome da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-146">Admin provided name of the device configuration.</span></span>|
-|<span data-ttu-id="b7c1f-147">descrição</span><span class="sxs-lookup"><span data-stu-id="b7c1f-147">description</span></span>|<span data-ttu-id="b7c1f-148">String</span><span class="sxs-lookup"><span data-stu-id="b7c1f-148">String</span></span>|<span data-ttu-id="b7c1f-149">Descrição fornecida pelo administrador do CartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-149">Admin provided description of the CartToClassAssociation.</span></span>|
-|<span data-ttu-id="b7c1f-150">deviceCartIds</span><span class="sxs-lookup"><span data-stu-id="b7c1f-150">deviceCartIds</span></span>|<span data-ttu-id="b7c1f-151">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="b7c1f-151">String collection</span></span>|<span data-ttu-id="b7c1f-152">Identificadores de carrinhos de dispositivos a serem associados às classes.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-152">Identifiers of device carts to be associated with classes.</span></span>|
-|<span data-ttu-id="b7c1f-153">classroomIds</span><span class="sxs-lookup"><span data-stu-id="b7c1f-153">classroomIds</span></span>|<span data-ttu-id="b7c1f-154">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="b7c1f-154">String collection</span></span>|<span data-ttu-id="b7c1f-155">Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-155">Identifiers of classrooms to be associated with device carts.</span></span>|
+|<span data-ttu-id="f716e-132">id</span><span class="sxs-lookup"><span data-stu-id="f716e-132">id</span></span>|<span data-ttu-id="f716e-133">String</span><span class="sxs-lookup"><span data-stu-id="f716e-133">String</span></span>|<span data-ttu-id="f716e-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="f716e-134">Key of the entity.</span></span>|
+|<span data-ttu-id="f716e-135">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="f716e-135">createdDateTime</span></span>|<span data-ttu-id="f716e-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f716e-136">DateTimeOffset</span></span>|<span data-ttu-id="f716e-137">DateTime em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="f716e-137">DateTime the object was created.</span></span>|
+|<span data-ttu-id="f716e-138">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f716e-138">lastModifiedDateTime</span></span>|<span data-ttu-id="f716e-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f716e-139">DateTimeOffset</span></span>|<span data-ttu-id="f716e-140">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="f716e-140">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="f716e-141">versão</span><span class="sxs-lookup"><span data-stu-id="f716e-141">version</span></span>|<span data-ttu-id="f716e-142">Int32</span><span class="sxs-lookup"><span data-stu-id="f716e-142">Int32</span></span>|<span data-ttu-id="f716e-143">Versão do CartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="f716e-143">Version of the CartToClassAssociation.</span></span>|
+|<span data-ttu-id="f716e-144">displayName</span><span class="sxs-lookup"><span data-stu-id="f716e-144">displayName</span></span>|<span data-ttu-id="f716e-145">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f716e-145">String</span></span>|<span data-ttu-id="f716e-146">O administrador forneceu o nome da Configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f716e-146">Admin provided name of the device configuration.</span></span>|
+|<span data-ttu-id="f716e-147">description</span><span class="sxs-lookup"><span data-stu-id="f716e-147">description</span></span>|<span data-ttu-id="f716e-148">String</span><span class="sxs-lookup"><span data-stu-id="f716e-148">String</span></span>|<span data-ttu-id="f716e-149">Descrição fornecida pelo administrador do CartToClassAssociation.</span><span class="sxs-lookup"><span data-stu-id="f716e-149">Admin provided description of the CartToClassAssociation.</span></span>|
+|<span data-ttu-id="f716e-150">deviceCartIds</span><span class="sxs-lookup"><span data-stu-id="f716e-150">deviceCartIds</span></span>|<span data-ttu-id="f716e-151">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="f716e-151">String collection</span></span>|<span data-ttu-id="f716e-152">Identificadores de carrinhos de dispositivos a serem associados às classes.</span><span class="sxs-lookup"><span data-stu-id="f716e-152">Identifiers of device carts to be associated with classes.</span></span>|
+|<span data-ttu-id="f716e-153">classroomIds</span><span class="sxs-lookup"><span data-stu-id="f716e-153">classroomIds</span></span>|<span data-ttu-id="f716e-154">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="f716e-154">String collection</span></span>|<span data-ttu-id="f716e-155">Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="f716e-155">Identifiers of classrooms to be associated with device carts.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b7c1f-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7c1f-156">Response</span></span>
-<span data-ttu-id="b7c1f-157">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-157">If successful, this method returns a `201 Created` response code and a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f716e-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="f716e-156">Response</span></span>
+<span data-ttu-id="f716e-157">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f716e-157">If successful, this method returns a `201 Created` response code and a [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b7c1f-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b7c1f-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f716e-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f716e-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b7c1f-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7c1f-159">Request</span></span>
-<span data-ttu-id="b7c1f-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f716e-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f716e-159">Request</span></span>
+<span data-ttu-id="f716e-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f716e-160">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations
 Content-type: application/json
@@ -88,8 +88,8 @@ Content-length: 271
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b7c1f-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7c1f-161">Response</span></span>
-<span data-ttu-id="b7c1f-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b7c1f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f716e-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="f716e-161">Response</span></span>
+<span data-ttu-id="f716e-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f716e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -111,6 +111,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 
