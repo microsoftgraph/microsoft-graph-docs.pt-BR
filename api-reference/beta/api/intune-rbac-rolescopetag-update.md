@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3abe206624e1d24d515059a86e3272c591643ec8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1dd417be2450f7cc956f6e6c4c7c39f9f748be2d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194933"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955123"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
+|Application|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,9 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleSco
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
-|descrição|String|Descrição da marca de escopo da função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
+|description|String|Descrição da marca de escopo da função.|
 |isBuiltIn|Booliano|Descrição da marca de escopo da função.|
 
 
@@ -94,6 +94,7 @@ Content-Length: 204
   "isBuiltIn": true
 }
 ```
+
 
 
 

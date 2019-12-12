@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17b8225f867c254c8dab3469fafae0f50799a5ed
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 240ca89d363f60eff21cc1d299b5b96c5523cbbc
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536214"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955074"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>Criar deviceManagementCachedReportConfiguration
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para esta entidade|
-|reportName|Cadeia de caracteres|Nome do relatório|
-|filter|Cadeia de caracteres|Filtros aplicados na criação de relatórios.|
-|select|String collection|Colunas selecionadas do relatório|
-|Classificadoporativado|String collection|Ordenação de colunas no relatório|
+|id|String|Identificador exclusivo para esta entidade|
+|reportName|Cadeia de Caracteres|Nome do relatório|
+|filter|Cadeia de Caracteres|Filtros aplicados na criação de relatórios.|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|
 |expirationDateTime|DateTimeOffset|Hora em que o relatório em cache expira|
@@ -113,7 +113,6 @@ Content-Length: 434
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

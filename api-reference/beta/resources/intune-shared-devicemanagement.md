@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f800c9a2eed631c5cfef07d042c2393366468007
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d64e30320bf16209850758844b944864ee13d273
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538753"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955333"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  
 
@@ -62,10 +62,10 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
+|id|String|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
@@ -125,6 +125,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |dataSharingConsents|coleção [dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|O compartilhamento de dados é enviado.|
 |detectedApps|Conjunto [detectedApp](../resources/intune-devices-detectedapp.md)|A lista de aplicativos detectados associados a um dispositivo.|
 |deviceManagementScripts|coleção [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|A lista de scripts de gerenciamento de dispositivo associados ao locatário.|
+|deviceShellScripts|coleção [deviceShellScript](../resources/intune-devices-deviceshellscript.md)|A lista de scripts do Shell de dispositivo associados ao locatário.|
 |deviceHealthScripts|coleção [deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|A lista de scripts de integridade do dispositivo associados ao locatário.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Visão geral do dispositivo|
 |managedDevices|Conjunto [managedDevice](../resources/intune-devices-manageddevice.md)|A lista de dispositivos gerenciados.|

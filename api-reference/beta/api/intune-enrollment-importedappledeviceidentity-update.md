@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e30b98ffa30a306e816c73418b927f4369f729a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: e897948b6fea2fc129a87328d720cb78848c4553
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535916"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955284"
 ---
 # <a name="update-importedappledeviceidentity"></a>Atualizar importedAppleDeviceIdentity
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) .
 
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |serialNumber|String|Número de série do dispositivo|
-|requestedEnrollmentProfileId|Cadeia de caracteres|ID do perfil de registro o administrador pretende aplicar ao dispositivo durante o próximo registro|
+|requestedEnrollmentProfileId|Cadeia de Caracteres|ID do perfil de registro o administrador pretende aplicar ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de registro de tempo foi atribuído ao dispositivo|
 |isSupervised|Boolean|Indica se o dispositivo Apple é supervisionado. Mais informações em:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta de dispositivos Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Booliano|Indica se o dispositivo é excluído do Apple Business Manager|
+|isDeleted|Boolean|Indica se o dispositivo é excluído do Apple Business Manager|
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
 |description|String|A descrição do dispositivo|
@@ -116,7 +116,6 @@ Content-Length: 627
   "platform": "ios"
 }
 ```
-
 
 
 
