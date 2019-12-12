@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65fd1a065beb29494bc371674b56c4c6dcfa98bb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6f0fafa578b115b1b3f9bce8feabae7181f522cd
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180654"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945204"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,12 +52,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [dataSha
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
-|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
+|objectdisplayname|Cadeia de Caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de Caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
+|granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|Cadeia de Caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|Cadeia de Caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
 
 
 
@@ -102,6 +102,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 
