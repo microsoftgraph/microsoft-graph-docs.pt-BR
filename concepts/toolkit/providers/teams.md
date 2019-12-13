@@ -3,12 +3,12 @@ title: Provedor do Microsoft Teams
 description: Use o provedor de equipes dentro da guia do Microsoft Teams para facilitar a autenticação e o acesso ao Microsoft Graph a todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 57d53d19507e3ad6d53810538eff62a0e20740bd
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 335673ba2faa04916c2f8548999077a68202bbf0
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275693"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955754"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
@@ -18,7 +18,7 @@ Para saber mais, veja [Providers](../providers.md).
 
 ## <a name="get-started"></a>Introdução
 
-Antes de usar o provedor do Teams, você precisará certificar-se de que você referenciou o [SDK do Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) na sua página.
+Antes de usar o provedor do Teams, você precisará certificar-se de que você referenciou o [SDK do Microsoft Teams](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) na sua página.
 
 ### <a name="via-script-tag"></a>via marca de script
 O exemplo a seguir usa o provedor em HTML (via CDN).
@@ -83,13 +83,13 @@ Para ver um exemplo completo, confira o [exemplo de guia do Microsoft Teams](htt
 
 ## <a name="configure-your-teams-app"></a>Configurar seu aplicativo do teams
 
-Se você estiver apenas começando a usar o Teams apps, consulte [adicionar guias aos aplicativos do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview). Você também pode usar o [app Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) para desenvolver rapidamente o manifesto do aplicativo.
+Se você estiver apenas começando a usar o Teams apps, consulte [adicionar guias aos aplicativos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview). Você também pode usar o [app Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) para desenvolver rapidamente o manifesto do aplicativo.
 
 Após instalar seu aplicativo com uma guia e você estiver pronto para usar os componentes, você precisará certificar-se de que seu aplicativo tem as permissões corretas para acessar o Microsoft Graph. Para configurar seu aplicativo com as permissões necessárias:
 
-1. [Recuperar seu nome de domínio](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [Criar um novo registro de aplicativo](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
-3. [Conceder sua permissão de aplicativo](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
+1. [Recuperar seu nome de domínio](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
+2. [Criar um novo registro de aplicativo](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+3. [Conceder sua permissão de aplicativo](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 É importante adicionar a permissão certa na **página Adicionar acesso à API**. Você precisará de um administrador para adicionar e aprovar as permissões, dependendo de qual componente você precisa.
 

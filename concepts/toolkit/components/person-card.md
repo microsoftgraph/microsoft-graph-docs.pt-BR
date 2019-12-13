@@ -3,12 +3,12 @@ title: Componente de cartão de pessoa no kit de ferramentas do Microsoft Graph
 description: Um componente de cartão de pessoa é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: f4d8c975fe91d91658f512cea708ee104d4fd906
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 7f4f20773b152db037d3b57481aa5e8638866f52
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275854"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955866"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Componente de cartão de pessoa no kit de ferramentas do Microsoft Graph
 
@@ -26,11 +26,11 @@ Para obter mais informações sobre `mgt-person` o componente, consulte [docs-Pe
 
 O componente usa o Microsoft Graph para fornecer detalhes adicionais sobre o usuário. Para definir um usuário, você deve usar a propriedade **Person-Query** de `mgt-person`.
 
-| Atributo         | type                     | Descrição                                                                           |
+| Atributo         | Tipo                     | Descrição                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | pessoa-detalhes | MicrosoftGraph. User <br> MicrosoftGraph. Person <br> MicrosoftGraph. Contact | Objeto Person conforme definido pelo Microsoft Graph, contendo detalhes relacionados ao usuário. |
 | pessoa-imagem   | png/jpg/SVG                    | Imagem relacionada à pessoa exibida no cartão.                                   |
-
+| Inherit-detalhes   | Nenhum.                  | Permite que o cartão de pessoa percorra a `mgt-person` árvore pai para que o `person-details` componente `person-image` use o mesmo e os dados.                      |
 
 
 ## <a name="templates"></a>Modelos
@@ -39,16 +39,15 @@ O componente de cartão de pessoa usa [modelos](../templates.md) que permitem qu
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
-| Padrão. | Person: o objeto de detalhes da pessoa <br> personImage: a URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
-| adicional-detalhes | Person: o objeto de detalhes da pessoa <br> personImage: a URL da imagem | O modelo usado para adicionar conteúdo adicional ao cartão. |
+| Padrão. | `person`: O objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
+| adicional-detalhes | `person`: O objeto de detalhes da pessoa <br> `personImage`: a URL da imagem | O modelo usado para adicionar conteúdo adicional ao cartão. |
 
 Por exemplo, você pode usar um modelo para personalizar o componente anexado ao `mgt-person` componente e um modelo para adicionar mais detalhes no cartão. 
 
 ```html
     <mgt-person person-query="me" show-name show-email person-card="hover">
       <template data-type="person-card">
-        <mgt-person-card person-details="{{person}}" 
-            person-image="{{personImage}}">
+        <mgt-person-card inherit-details>
           <template data-type="additional-details">
             <h3>Stuffed Animal Friends:</h3>
             <ul>

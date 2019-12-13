@@ -3,12 +3,12 @@ title: Componente pessoas no Microsoft Graph Toolkit
 description: Você pode usar o `mgt-people` componente da Web para exibir um grupo de pessoas ou contatos usando suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: fcc44262f807d3f10f42e8af8e476975ad262cda
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 5f85f0a72e8658a8fc734728ae76d79157da39de
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35242950"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955873"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente pessoas no Microsoft Graph Toolkit
 
@@ -30,10 +30,14 @@ Este componente usa vários controles de [pessoal de gerenciamento](./person.md)
 
 Por padrão, o `mgt-people` componente busca eventos do `/me/people` ponto de extremidade com o `personType/class eq 'Person'` filtro para exibir os usuários contatados com frequência. Você pode usar várias propriedades para alterar esse comportamento.
 
-| Propriedade | Atributo | Descrição |
+| Atributo | Propriedade | Descrição |
 | --- | --- | --- |
-| `showMax` | `show-max` | Indica o número máximo de pessoas a serem exibidas. O valor padrão é 3. |
-| `people` | `people` | Uma matriz de pessoas para obter ou definir a lista de pessoas renderizadas pelo componente. Use essa propriedade para acessar as pessoas carregadas pelo componente. Defina esse valor para carregar suas próprias pessoas. |
+| show-Max | showMax | Indica o número máximo de pessoas a serem mostradas. O valor padrão é 3. |
+| people | people | Uma matriz de pessoas para obter ou definir a lista de pessoas renderizadas pelo componente. Use essa propriedade para acessar as pessoas carregadas pelo componente. Defina esse valor para carregar suas próprias pessoas. |
+| ID de grupo | groupId | Recupera pessoas de um Microsoft Graph específico da respectiva ID. |
+| User-IDs | userIds | Dada uma matriz de usuário `ids`do Microsoft Graph, o componente renderizará esses usuários.  |
+| cartão de pessoa | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o `hover` painel `click`ou o menu suspenso. O valor padrão é `none`. |
+
 
 O exemplo a seguir define o número máximo de pessoas a serem mostradas.
 
@@ -63,7 +67,7 @@ O `mgt-people` dá suporte a vários [modelos](../templates.md) que você pode u
 | `default` | `people`: lista de objetos Person | O modelo padrão substitui todo o componente pelo seu. |
 | `person` | `person`: objeto Person | O modelo usado para renderizar cada pessoa. |
 | `overflow` | `people`: lista de objetos Person <br> `max`: número de pessoas mostradas <br> `extra`: número de pessoas extras | O modelo usado para renderizar o número além do máximo à direita da lista de pessoas. |
-| `no-data` | Nenhum contexto de dados é passado | O modelo usado quando nenhuma pessoa está disponível. |
+| `no-data` | Nenhum contexto de dados é passado | O modelo usado quando não há dados disponíveis. |
 
 Os exemplos a seguir mostram como usar o `person` modelo.
 
@@ -84,9 +88,9 @@ Os exemplos a seguir mostram como usar o `person` modelo.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| Resource | Permissão/escopo |
+| Resource | Permissão |
 | - | - |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
 
 ## <a name="authentication"></a>Autenticação
 

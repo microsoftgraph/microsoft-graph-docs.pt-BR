@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f02447a2db457c9e681d1b169eb641d3f5debb01
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 64b1f80a323df5290dc9d24e8f3ec4fbfcebdef0
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895511"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39923592"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,11 +18,65 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="december-2019"></a>Dezembro de 2019
 
+### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[deviceShellScript](/graph/api/resources/intune-devices-deviceshellscript?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[deviceManagementSettingFileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingfileconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingProfileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingprofileconstraint?view=graph-rest-beta)<br/>[redirectSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-redirectsinglesignonextension?view=graph-rest-beta)<br/>[retireScheduledManagedDevice](/graph/api/resources/intune-deviceconfig-retirescheduledmanageddevice?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[defenderRealtimeScanDirection](/graph/api/resources/intune-deviceconfig-defenderrealtimescandirection?view=graph-rest-beta)<br/>[managedAppDataIngestionLocation](/graph/api/resources/intune-mam-managedappdataingestionlocation?view=graph-rest-beta)<br/>[managedDeviceArchitecture](/graph/api/resources/intune-devices-manageddevicearchitecture?view=graph-rest-beta)<br/>[mdmSupportedState](/graph/api/resources/intune-gpanalyticsservice-mdmsupportedstate?view=graph-rest-beta)<br/>[scheduledRetireState](/graph/api/resources/intune-deviceconfig-scheduledretirestate?view=graph-rest-beta)<br/>|
+|Adição|beta|A ação [getDevicesScheduledToRetire](o:getDevicesScheduledToRetire:Collection(microsoft.graph.deviceCompliancePolicy)) foi adicionada à coleção [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) |
+|Adição|beta|A ação [setScheduledRetireState](o:setScheduledRetireState:Collection(microsoft.graph.deviceCompliancePolicy)) foi adicionada à coleção [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) |
+|Adição|beta|A ação [wipe](/graph/api/intune-devices-manageddevice-wipe) foi adicionada ao [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
+|Exclusão|beta|A ação [wipe](/graph/api/intune-devices-manageddevice-wipe) foi removida do [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
+|Adição|beta|As propriedades **advancedThreatProtectionRequiredSecurityLevel** e **securityBlockDeviceAdministratorManagedDevices** foram adicionadas à entidade [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta)|
+|Adição|beta|A propriedade **advancedThreatProtectionRequiredSecurityLevel** foi adicionada à entidade [androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy?view=graph-rest-beta)|
+|Adição|beta|A propriedade **certificateCredentialConfigurationDisabled** foi adicionada à entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)|
+|Adição|beta|As propriedades **allowedAndroidDeviceModels** and **appActionIfAndroidDeviceModelNotAllowed** foram adicionadas à entidade [androidManagedAppProtection](/graph/api/resources/intune-shared-androidmanagedappprotection?view=graph-rest-beta)|
+|Adição|beta|A propriedade **advancedThreatProtectionRequiredSecurityLevel** foi adicionada à entidade [androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta)|
+|Adição|beta|As propriedades **subjectNameFormatString**, **certificateStore** e **customSubjectAlternativeNames** foram adicionadas à entidade [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)|
+|Adição|beta|As propriedades **allowedAndroidDeviceModels** and **appActionIfAndroidDeviceModelNotAllowed** foram adicionadas à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta)|
+|Adição|beta|A propriedade **issueRemediatedCumulativeDeviceCount** foi adicionada à entidade [deviceHealthScriptRunSummary](/graph/api/resources/intune-devices-devicehealthscriptrunsummary?view=graph-rest-beta)|
+|Adição|beta|A propriedade **mdmSupportedState** foi adicionada à entidade [groupPolicySettingMapping](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingmapping?view=graph-rest-beta)|
+|Adição|beta|As propriedades **subjectNameFormatString**, **certificateStore** e **customSubjectAlternativeNames** foram adicionadas à entidade [iosPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-iospkcscertificateprofile)|
+|Adição|beta|A propriedade **channel**foi adicionada à entidade [macOSMicrosoftEdgeApp](/graph/api/resources/intune-apps-macosmicrosoftedgeapp?view=graph-rest-beta)|
+|Adição|beta|As propriedades **blockDataIngestionIntoOrganizationDocuments** e **allowedDataIngestionLocations** foram adicionadas à entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
+|Adição|beta|As propriedades **physicalMemoryInBytes** e **processorArchitecture** foram adicionadas à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
+|Adição|beta|As propriedades **isFeatureUpdate** e **operatingSystemVersion** foram a dicionadas à entidade [userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory?view=graph-rest-beta)|
+|Adição|beta|As propriedades **defenderDisableScanArchiveFiles**, **defenderDisableBehaviorMonitoring**, **defenderDisableCloudProtection**, **defenderEnableScanIncomingMail**, **defenderEnableScanMappedNetworkDrivesDuringFullScan**, **defenderDisableScanRemovableDrivesDuringFullScan**, **defenderDisableScanDownloads**, **defenderDisableIntrusionPreventionSystem**, **defenderDisableOnAccessProtection**, **defenderDisableRealTimeMonitoring**, **defenderDisableScanNetworkFiles**, **defenderDisableScanScriptsLoadedInInternetExplorer**, **defenderBlockEndUserAccess**, **defenderScanMaxCpuPercentage**, **defenderCheckForSignaturesBeforeRunningScan**, **defenderCloudBlockLevel**, **defenderCloudExtendedTimeoutInSeconds**, **defenderDaysBeforeDeletingQuarantinedMalware**, **defenderDisableCatchupFullScan**, **defenderDisableCatchupQuickScan**, **defenderEnableLowCpuPriority**, **defenderFileExtensionsToExclude**, **defenderFilesAndFoldersToExclude**, **defenderProcessesToExclude**, **defenderPotentiallyUnwantedAppAction**, **defenderScanDirection**, **defenderScanType**, **defenderScheduledQuickScanTime**, **defenderScheduledScanDay**, **defenderScheduledScanTime**, **defenderSubmitSamplesConsentType** e **defenderDetectedMalwareActions** propertforam adicionadas à propriedade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
+|Adição|beta|A propriedade **uninstallBuiltInApps** foi adicionada à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Adição|beta|As propriedades **subjectNameFormatString**, **certificateStore** e **customSubjectAlternativeNames** foram adicionadas à entidade [windows10PkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10pkcscertificateprofile?view=graph-rest-beta)|
+|Adição|beta|A propriedade de navegação **deviceShellScripts** foi adicionada à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
+|Adição|beta|A propriedade **passwordChangeUrl**foi adicionada ao tipo complexo [kerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-kerberossinglesignonextension?view=graph-rest-beta)|
+|Adição|beta|Os membros **securityoptions**, **userRightsAssignment**, **auditSetting** e **windowsFirewallSettings** foram adicionados ao tipo de enumeração [groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)|
+|Adição|beta|O membro **contentDownloaded** foi adicionado ao tipo de enumeração [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)|
+
 ### <a name="change-notifications-webhooks"></a>Alterar notificações (Webhooks)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Suporte adicionado para os aplicativos inscritos para receber notificações que incluam dados de recursos. Os recursos compatíveis no momento são os recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) em conversas e canais do Microsoft Teams. Os aplicativos com inscrição para notificações devem implementar a autorização e o código de descriptografia adicionais para se beneficiarem desse recurso. Para obter mais detalhes, confira [Configurar notificações em mensagens de chat, incluindo propriedades de mensagem (visualização)](webhooks-with-resource-data.md).|
+
+### <a name="microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
+
+Introduziu a versão 1,1 do Microsoft Graph Toolkit.
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | NA         | O componente [mgt-get](/graph/toolkit/components/get) foi adicionado. |
+| Adição        | NA         | [Proxy provider](/graph/toolkit/providers/proxy) foi adicionado. |
+| Adição        | NA          | O atributo `inherit-details` foi adicionado ao [componente cartão pessoal](/graph/toolkit/components/person). |
+| Adição        | NA         | A propriedade `selectedPeople` foi adicionada ao [componente seletor de pessoas](/graph/toolkit/components/people-picker). |
+| Adição        | NA        | As propriedades `loading` e `error` foram adicionada ao [componente seletor de pessoas](/graph/toolkit/components/people-picker). |
+| Adição        | NA        | Os modelos `task` e `task-details` foram adicionados ao [componente tarefas](/graph/toolkit/components/tasks). |
+| Adição        | NA          | A propriedade `isNewTaskVisible` foi adicionada ao[componente tarefas](/graph/toolkit/components/tasks). |
+| Adição        | NA        | O atributo `group-id` foi adicionado ao[componente tarefas](/graph/toolkit/components/tasks). |
+| Adição        | NA          | A propriedade `taskFilter` foi adicionada ao[componente tarefas](/graph/toolkit/components/tasks). |
+| Adição        | NA         | O evento `eventClick` foi adicionado ao [componente de agenda](/graph/toolkit/components/agenda). |
+| Adição        | NA          | O atributo `person-card` foi adicionado ao[componente pessoas](/graph/toolkit/components/people). |
+| Adição        | NA          | O atributo `user-ids` foi adicionado ao[componente pessoas](/graph/toolkit/components/people). |
+| Correções        | NA         | [Correções de erros e melhorias](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
+
 
 ### <a name="people-intelligence--insights"></a>Inteligência pessoal | Insights
 
@@ -34,7 +88,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
  
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Foram adicionadas[ notificações](/graph/api/subscription-post-subscriptions) para mensagens de canal novas e editadas e mensagens de chat novas e editadas.
+| Adição | beta | Foram adicionadas[ notificações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) para mensagens de canal novas e editadas e mensagens de chat novas e editadas.
 
 ## <a name="november-2019"></a>Novembro de 2019
 
@@ -67,7 +121,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
-|Tipo de alteração|Versão|Descrição|
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-beta)<br/>[macOSCustomAppConfiguration](/graph/api/resources/intune-deviceconfig-macoscustomappconfiguration?view=graph-rest-beta)<br/>[macOSWiredNetworkConfiguration](/graph/api/resources/intune-deviceconfig-macoswirednetworkconfiguration?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[companyPortalBlockedAction](/graph/api/resources/intune-shared-companyportalblockedaction?view=graph-rest-beta)<br/>[complianceManagementPartnerAssignment](/graph/api/resources/intune-onboarding-compliancemanagementpartnerassignment?view=graph-rest-beta)<br/>[deviceManagementPartnerAssignment](/graph/api/resources/intune-onboarding-devicemanagementpartnerassignment?view=graph-rest-beta)<br/>[roleScopeTagInfo](/graph/api/resources/intune-auditing-rolescopetaginfo?view=graph-rest-beta)<br/>[rotateBitLockerKeysDeviceActionResult](/graph/api/resources/intune-devices-rotatebitlockerkeysdeviceactionresult?view=graph-rest-beta)<br/>|

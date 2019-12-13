@@ -3,16 +3,18 @@ title: Componente tarefas no Microsoft Graph Toolkit
 description: O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com qualquer tarefa no Microsoft Planner ou no Microsoft to-do.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: f8366842be9319e8c89d05fa23bc488cde49359a
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 19faf3dec1c61680250cacf3cfaf5837b8bc4cee
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275819"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955845"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente tarefas no Microsoft Graph Toolkit
 
-O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com tarefas no Microsoft Planner ou Microsoft to-do.
+O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com tarefas no Microsoft Planner ou Microsoft to-do.  
+
+Além disso, um usuário pode atribuir um único ou vários usuários do Microsoft Graph a uma tarefa. Para obter mais detalhes sobre as atribuições do Microsoft Graph, consulte [plannerAssignments](https://docs.microsoft.com/graph/api/resources/plannerassignments?view=graph-rest-1.0).
 
 ## <a name="example"></a>Exemplo
 
@@ -24,21 +26,31 @@ O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou 
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Atributo | Descrição |
+| Atributo | Propriedade | Descrição |
 | -- | -- | -- |
-| dataSource | Data-Source = "todo/planejador" | Uma enumeração para configurar a fonte de dados para tarefas-Microsoft to-do ou Microsoft Planner. O padrão é `planner`. |
-| readOnly | somente leitura | Um booliano para definir a interface de tarefa como somente leitura (sem adicionar ou remover tarefas). O padrão é `false`. |
-| hideHeader | Ocultar-cabeçalho | Um booliano para mostrar ou ocultar o cabeçalho do componente. O padrão é `false`. |
-| initialid | Initial-ID = "planner_id/folder_id" | Uma ID de cadeia de caracteres para definir o planejador ou pasta inicialmente exibido para a ID fornecida. |
-| initialBucketId | Initial-Bucket-ID = "BUCKET_ID" | Uma ID de cadeia de caracteres para definir o Bucket exibido inicialmente (somente a fonte de dados do Planner) para a ID fornecida. |
-| targetId | Target-ID = "planner_id/folder_id" | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou ID de pasta fornecido. |
-| targetBucketId | Target-Bucket-ID = "BUCKET_ID" | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para a ID de Bucket fornecida (somente a fonte de dados do Planner). |
+| Data-Source = "todo/planejador" | dataSource | Uma enumeração para configurar a fonte de dados para tarefas-Microsoft to-do ou Microsoft Planner. O padrão é `planner`. |
+| somente leitura | readOnly | Um booliano para definir a interface de tarefa como somente leitura (sem adicionar ou remover tarefas). O padrão é `false`. |
+| Ocultar-cabeçalho | hideHeader | Um booliano para mostrar ou ocultar o cabeçalho do componente. O padrão é `false`. |
+| Initial-ID = "planner_id/folder_id" | initialid | Uma ID de cadeia de caracteres para definir o planejador ou pasta inicialmente exibido para a ID fornecida. |
+| Initial-Bucket-ID = "bucket_id" | initialBucketId | Uma ID de cadeia de caracteres para definir o Bucket exibido inicialmente (somente a fonte de dados do Planner) para a ID fornecida. |
+| Target-ID = "planner_id/folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou ID de pasta fornecido. |
+| Target-Bucket-ID = "bucket_id" |targetBucketId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para a ID de Bucket fornecida (somente a fonte de dados do Planner). |
+| ID de grupo | groupId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para a ID de grupo (somente fonte de dados do Planner). |
+| Não disponível | isNewTaskVisible  | Determina se a exibição de nova tarefa é visível no processamento. |
+| Não disponível | taskFilter  | Uma função opcional para filtrar quais tarefas são exibidas para o usuário. |
 
-Apresentamos um exemplo a seguir.
+O exemplo a seguir mostra apenas as tarefas do Planner com a ID *12345* e não permite que o usuário crie novas tarefas.
 
-````html
+```html
 <mgt-tasks read-only initial-id="12345"></mgt-tasks>
-````
+```
+
+O exemplo a seguir mostra como filtrar tarefas que têm apenas *category3* definido.
+
+```js
+let taskView = document.querySelector('mgt-tasks');
+taskView.taskFilter = task => task.appliedCategories.category3 === true;
+```
 
 ## <a name="custom-css-variables"></a>Variáveis CSS personalizadas
 
@@ -93,6 +105,35 @@ mgt-tasks {
 }
 ````
 
+## <a name="events"></a>Eventos
+| Evento | Detalhe | Descrição |
+| --- | --- | --- |
+| taskClick | O detalhe contém o respectivo `task` objeto | Acionado quando o usuário clica ou toca em uma tarefa. |
+
+## <a name="templates"></a>Modelos
+
+O `tasks` componente oferece suporte a vários [modelos](../templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes:
+
+| Tipo de dados     | Contexto de dados              | Descrição                                                       |
+| ---------     | ------------------------- | ----------------------------------------------------------------- |
+| tarefa     | tarefa: um planejador ou objeto de tarefa tarefas pendentes | Substitui toda a tarefa padrão. |
+| tarefa-detalhes | tarefa: um planejador ou objeto de tarefa tarefas pendentes | o modelo substitui a seção de detalhes da tarefa. |
+
+O exemplo a seguir define um modelo para o componente tarefas.
+
+```html
+    <mgt-tasks data-source="todo">
+      <template data-type="task-details">
+        <div>
+          Owner: {{task.owner}}
+        </div>
+        <div>
+          Importance Level: {{task.importance}}
+        </div>
+      </template>
+    </mgt-tasks>
+```
+
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
@@ -105,6 +146,7 @@ Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 | /me/outlook/taskGroups | Tasks.Read |
 | /me/outlook/taskFolders | Tarefas. Read, Tasks. ReadWrite |
 | /me/outlook/tasks | Tasks.ReadWrite |
+| /groups/$ {Group-ID}/Planner/Plans | Group.Read.All, Group.ReadWrite.All |
 
 Para a fonte de dados do Microsoft Planner, as tarefas de busca e leitura exigem a permissão groups. Read. All. Adicionar, atualizar ou remover tarefas requer a permissão groups. ReadWrite. All.
 

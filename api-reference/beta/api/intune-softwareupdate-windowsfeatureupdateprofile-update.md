@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fc8489caaf37f3daa94752c75ad9f33a556b7c2a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 06272e3ddc3c92c2f042e08b010cbc8197cb49b5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537787"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939266"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>Atualizar windowsFeatureUpdateProfile
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador da entidade.|
-|displayName|String|O nome de exibição do perfil.|
+|id|String|O identificador da entidade.|
+|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
 |description|String|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
+|featureUpdateVersion|Cadeia de Caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
 
@@ -97,7 +97,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

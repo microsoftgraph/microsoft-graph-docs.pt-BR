@@ -3,12 +3,12 @@ title: Provedor do SharePoint
 description: Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e2088c41ce8f0cc3e55d269fc5f55c3c95633fbd
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: e9cf69d26f68da0393f1ef1ecd92683cb9efdd39
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553898"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955761"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 
@@ -44,11 +44,15 @@ public render(): void {
 
 >**Observação:** O Microsoft Graph Toolkit requer o typescript 3. x. Verifique se você está usando uma versão com suporte do typescript, [instalando o compilador certo](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 
+## <a name="sample"></a>Amostra
+
+Para obter um exemplo que mostra como usar os vários componentes em suas Web Parts do SharePoint, consulte o exemplo de Web Part do [SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) no repositório do Microsoft Graph Toolkit.
+
 ## <a name="test-in-the-workbench"></a>Teste no Workbench
 
 Se você estiver apenas começando a usar as Web Parts do SharePoint, poderá seguir as orientações [Compilar sua primeira Web Part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) .
 
-Depois de criar uma Web Part e estiver pronto para usar os componentes, você precisará certificar-se de que sua Web Part tem as permissões corretas para acessar o Microsoft Graph. Para obter detalhes, consulte [consuma Microsoft Graph na estrutura do SharePoint](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/use-aad-tutorial).
+Depois de criar uma Web Part e estiver pronto para usar os componentes, você precisará certificar-se de que sua Web Part tem as permissões corretas para acessar o Microsoft Graph. Para obter detalhes, consulte [consuma Microsoft Graph na estrutura do SharePoint](https://docs.microsoft.com/sharepoint/dev/spfx/use-aad-tutorial).
 
 Em suma, é importante adicionar a permissão certa ao seu `package-solution.json`. Você precisará carregar um pacote de sua Web Part para o SharePoint e fazer com que um administrador aprove as permissões solicitadas.
 

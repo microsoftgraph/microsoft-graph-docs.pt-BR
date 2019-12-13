@@ -3,12 +3,12 @@ title: Modelos no Microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b9ef4b9422d84886fa4df76618b6cdf14def2378
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 59dbda5b18e1c8cb0c858c073a25f4a76b121fe6
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275706"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955747"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no Microsoft Graph Toolkit
 
@@ -67,6 +67,29 @@ Este formato também pode ser usado dentro de atributos:
 ```
 
 > **Observação:** Você também pode expandir objetos como `{{event}}` e eles serão renderizados como cadeias de caracteres JSON. Isso pode ser útil quando você está desenvolvendo os modelos.
+
+## <a name="data-context-helper-properties"></a>Propriedades do auxiliar de contexto de dados
+
+As propriedades a seguir também podem ser usadas com o objeto de contexto de dados em seus modelos.
+
+| Propriedade |  Descrição |
+| --- | --- | --- |
+| $index | Índice numérico do item que está sendo processado durante o loop `data-for`. |
+| $parent | Se um modelo é renderizado dentro de outro modelo, essa propriedade permite que você acesse o contexto de dados pai. |
+
+O exemplo a seguir mostra como usar a `$index` Propriedade em um loop data-para.
+
+```html
+<mgt-person>
+  <mgt-person-card>
+    <template data-type="additional-details">
+      <span data-for="language in languages">
+        {{ language.displayName }}<span data-if="$index < languages.length - 1">, </span>
+      </span>
+    </template>
+  </mgt-person-card>
+</mgt-person>
+```
 
 ## <a name="conditional-rendering"></a>Renderização condicional
 

@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: d77c6578d79edb60fbba08200dc033f032b39282
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 22ad36715dd0405d44214901a0adf90bb717b167
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275841"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955880"
 ---
 # <a name="people-picker-component"></a>Componente de seletor de pessoas
 
@@ -30,17 +30,42 @@ Se o número de pessoas a serem exibidas exceder o `show-max` valor, nem todas a
 
 Por padrão, o `mgt-people-picker` componente busca eventos do `/me/people` ponto de extremidade. Use os atributos a seguir para alterar esse comportamento.
 
-| Propriedade | Atributo | Descrição                                                                                                                                                                            |
+| Atributo | Propriedade | Descrição                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| showMax  | show-Max  | Um valor numérico para indicar o número máximo de pessoas a serem mostradas. o valor padrão é 6.                                                                                             |
+| show-Max | showMax   | Um valor numérico para indicar o número máximo de pessoas a serem mostradas. o valor padrão é 6.                                                                                             |
 | people   | people    | Uma matriz de pessoas para obter ou definir a lista de pessoas renderizadas pelo componente. Use essa propriedade para acessar as pessoas carregadas pelo componente. Defina esse valor para carregar suas próprias pessoas. |
 | group    | group     | Um valor String que pertence a um grupo definido pelo Microsoft Graph para mais filtragem dos resultados da pesquisa.                                                                            |
+|  selecionado-pessoas  | selectedPeople     | Uma matriz do tipo `person`, representando pessoas selecionadas no componente. Defina esse valor para escolher as pessoas selecionadas por padrão.|
 
-Apresentamos um exemplo a seguir.
+Este é um `show-max` exemplo.
 
 ```html
 <mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
+
+## <a name="selected-people"></a>Pessoas selecionadas
+
+A seção de pessoas selecionada do componente renderiza cada pessoa escolhida pelo desenvolvedor ou pelo usuário. 
+
+![gerenciamento de pessoas-seletor](./images/selected-people.png)
+
+Você pode preencher dados de pessoas selecionados executando um dos seguintes procedimentos:
+
+- Definir a `selectedPeople` propriedade diretamente, conforme mostrado no exemplo a seguir.  
+
+    ```javascript
+    // personObject = User or Person from Microsoft Graph
+    document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
+    ```
+
+- Usando o `selectUsersById()` método, que aceita uma matriz de IDs de [usuário](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) do Microsoft Graph para localizar os detalhes do usuário associado para seleção.
+
+     >**Observação:** Se nenhum usuário for localizado para um `id`, nenhum dado será renderizado para isso `id`.
+
+    ```javascript
+    // id = Mirosoft graph User "id"
+    document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
+    ```
 
 ## <a name="css-custom-properties"></a>Propriedades personalizadas de CSS
 
@@ -53,14 +78,35 @@ mgt-people-picker {
 }
 ```
 
+## <a name="templates"></a>Modelos
+
+ `mgt-people-picker`o dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes.
+
+| Tipo de dados | Contexto de dados | Descrição |
+| --- | --- | --- |
+| carregando | nulo: não há dados | O modelo usado para renderizar o estado do seletor enquanto a solicitação ao gráfico está sendo feita. |
+| erro | nulo: não há dados| O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
+| selecionado-pessoa |Person: o objeto de detalhes da pessoa| O modelo para renderizar as pessoas selecionadas. |
+| person | Person: o objeto de detalhes da pessoa| O modelo para renderizar pessoas na lista suspensa. |
+
+Os exemplos a seguir mostram como usar o `error` modelo.
+
+```html
+<mgt-people-picker>
+  <template data-type="error">
+    <p>Sorry, no people were found</p>
+  </template>
+</mgt-people-picker>
+```
+
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${GroupId}/Members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
+| [/groups/\${GroupId}/Members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
 
 ## <a name="authentication"></a>Autenticação
 

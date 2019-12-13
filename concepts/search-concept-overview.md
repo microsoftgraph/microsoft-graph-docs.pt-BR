@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 6d18decc6e704f5190dd832d78eabf8809a2ca1e
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 4196a2b01576e11f2b9db28a4ea1f89d76f467c5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39263251"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955908"
 ---
 # <a name="overview-for-extending-the-microsoft-search-experience-for-apps-on-microsoft-graph-preview"></a>Visão geral de como estender a experiência da Pesquisa da Microsoft para aplicativos no Microsoft Graph (versão prévia)
 
@@ -69,4 +69,4 @@ Está procurando a referência de API para esse serviço?
 
 Participe da comunidade:
 
-- [Discussão no StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-search)
+- [Discussão no StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search)

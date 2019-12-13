@@ -3,12 +3,12 @@ title: Provedores de kit de ferramentas do Microsoft Graph
 description: Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 52b0510fdc79253cb2a448b7a454b1dcfaf01bb9
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 221258b49d9a5217829633c7882b9dd4f9d2a221
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275721"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955782"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Provedores de kit de ferramentas do Microsoft Graph
 
@@ -29,13 +29,14 @@ O kit de ferramentas implementa os seguintes provedores:
 - [MsalProvider](./providers/msal.md)
 - [SharePointprovider](./providers/sharepoint.md)
 - [Teamprovider](./providers/teams.md)
-- Provedor de suplementos do Office (em breve)
-
-## <a name="get-started"></a>Introdução
+- [Proxyprovider](./providers/proxy.md)
+- [Simpleprovider](./providers/custom.md)
 
 Você pode criar um provedor a qualquer momento. Recomendamos que você crie o provedor antes de usar qualquer um dos componentes. Esta seção descreve como inicializar um provedor.
 
-A `Providers` variável global expõe as seguintes propriedades e funções
+## <a name="providers-namespace"></a>Namespace de provedores
+
+O `Providers` namespace expõe as seguintes propriedades e funções:
 
 - `globalProvider : IProvider`
 
@@ -49,10 +50,10 @@ A `callbackFunction` função será chamada quando um provedor for alterado ou q
 
 O kit de ferramentas fornece duas maneiras de criar novos provedores:
 
-- Criar um novo `SimpleProvider` passando uma função para obter um token de acesso
-- Estender a `IProvider` classe abstrata
+- Crie um novo `SimpleProvider` passando uma função para obter um token de acesso.
+- Estenda a `IProvider` classe abstract.
 
-Leia mais sobre cada um na documentação dos [provedores personalizados](./providers/custom.md) .
+Para obter mais detalhes sobre cada um, consulte [Custom Providers](./providers/custom.md).
 
 ## <a name="using-multiple-providers"></a>Usando vários provedores
 
@@ -82,7 +83,7 @@ if (TeamsProvider.isAvailable) {
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>Fazendo suas próprias chamadas para o Microsoft Graph
 
-Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização, desde que você inicialize um provedor (conforme descrito na seção anterior). Para obter uma referência para o mesmo SDK do Microsoft Graph usado pelos componentes, primeiro obtenha uma referência para o IProvider global e, em seguida `Graph` , use o objeto, conforme mostrado.
+Todos os componentes podem acessar o Microsoft Graph sem a necessidade de personalização, desde que você inicialize um provedor (conforme descrito na seção anterior). Para obter uma referência para o mesmo SDK do Microsoft Graph usado pelos componentes, primeiro obtenha uma referência para o IProvider global e, em seguida `Graph` , use o objeto, conforme mostrado:
 
 ```js
 import { Providers } from '@microsoft/mgt';

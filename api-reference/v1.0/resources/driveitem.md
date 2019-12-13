@@ -6,12 +6,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a098da44ea4d6861a7d4372c907452721bfc881b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7c36dabf1fe894dcf5ee7e97d00916bcce433aea
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029369"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955859"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -101,6 +101,8 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 **Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenado em cache.
 A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
 A remoção das permissões de arquivo de um usuário pode não invalidar a URL imediatamente.
+
+>**Observação:** o parâmetro @microsoft.graph.conflictBehavior deve ser incluído na URL, em vez do corpo da solicitação.
 
 ## <a name="json-representation"></a>Representação JSON
 

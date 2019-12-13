@@ -3,12 +3,12 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b4664cf545c858dbb2d49ad5191ab7cf5118092e
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: ab9dc1bef81585bb71cdb29de015d8adb6030110
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275700"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955852"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
@@ -51,10 +51,10 @@ Você pode usar três propriedades para definir os detalhes da pessoa. Use apena
 
 Você pode usar várias propriedades para personalizar o componente.
 
-| Propriedade    | Atributo    | Descrição                                                   |
-| ----------- | ------------ | ------------------------------------------------------------- |
-| Nome do mesmo  | show-Name  | Definir sinalizador para exibir o nome de exibição da pessoa `false`-o padrão é. |
-| Enviar email | Mostrar-email | Definir sinalizador para exibir o email da pessoa- `false`o padrão é.        |
+| Atributo    | Propriedade   | Descrição                                                   |
+| -----------  | ---------- | ------------------------------------------------------------- |
+| show-Name    | Nome do mesmo   | Definir sinalizador para exibir o nome de exibição da pessoa `false`-o padrão é. |
+| Mostrar-email   | Enviar email  | Definir sinalizador para exibir o email da pessoa- `false`o padrão é.        |
 
 ## <a name="css-custom-properties"></a>Propriedades personalizadas de CSS
 
@@ -112,9 +112,9 @@ O `mgt-person` componente pode mostrar um `mgt-person-card` em foco ou clique.
 <mgt-person person-query="me" person-card="hover"></mgt-person>
 ```
 
-| Propriedade     | Atributo     | Descrição                                                                     |
+| Atributo    |  Propriedade     | Descrição                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| personCard | cartão de pessoa | Uma enumeração para determinar a ação do usuário necessária para ativar o `hover` painel `click`ou o menu suspenso. O valor padrão é`none` |
+| cartão de pessoa | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o `hover` painel `click`ou o menu suspenso. O valor padrão é`none` |
 
 
 Para obter mais informações sobre modelos, estilos e atributos, consulte [componente de cartão de pessoa](./person-card.md).
@@ -125,11 +125,11 @@ Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
 | Resource                                                                                                    | Permissão     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [$value/me/Photo/](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/People/? $search =](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [$value/Users/{ID}/Photo/](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [$value/me/Photo/](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/People/? $search =](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [$value/Users/{ID}/Photo/](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Observação:** para acessar os `*/photo/$value` recursos para contas pessoais da Microsoft, use o ponto de extremidade beta do Microsoft Graph.
 
