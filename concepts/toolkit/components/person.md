@@ -3,16 +3,16 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ab9dc1bef81585bb71cdb29de015d8adb6030110
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8a0498203296f3880741a4bc2cc53ffd69aff518
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955852"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866872"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
-O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email. 
+O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 
 O componente pessoa também usa a [pessoa de gerenciamento de pessoas](./person-card.md) para exibir um cartão de submenu com informações adicionais sobre o usuário. Para obter detalhes, consulte a seção [cartão de pessoa](#person-card) .
 
@@ -29,7 +29,7 @@ O componente pessoa também usa a [pessoa de gerenciamento de pessoas](./person-
 
 Você pode usar três propriedades para definir os detalhes da pessoa. Use apenas uma das seguintes propriedades por instância:
 
-* Defina o `user-id` atributo ou `userId` a propriedade para buscar o usuário do Microsoft Graph usando sua ID.  
+* Defina o `user-id` atributo ou `userId` a propriedade para buscar o usuário do Microsoft Graph usando sua ID.
 
 * Definir o `person-query` atributo ou `personQuery` a propriedade para pesquisar o Microsoft Graph em uma determinada pessoa. Ele escolherá a primeira pessoa disponível e buscará os detalhes da pessoa. Um email funciona melhor para garantir que a pessoa certa seja consultada, mas um nome também funciona.
 
@@ -103,7 +103,7 @@ O exemplo a seguir define um modelo para o componente Person.
 </mgt-person>
 ```
 
-## <a name="person-card"></a>Cartão de pessoa
+## <a name="person-card"></a>Cartão Pessoal
 
 O `mgt-person` componente pode mostrar um `mgt-person-card` em foco ou clique.
 
@@ -123,13 +123,13 @@ Para obter mais informações sobre modelos, estilos e atributos, consulte [comp
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Resource                                                                                                    | Permissão     |
+| Recurso                                                                                                    | Permissão     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [$value/me/Photo/](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/People/? $search =](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [$value/Users/{ID}/Photo/](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [$value/me/Photo/](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/People/? $search =](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [$value/Users/{ID}/Photo/](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Observação:** para acessar os `*/photo/$value` recursos para contas pessoais da Microsoft, use o ponto de extremidade beta do Microsoft Graph.
 

@@ -3,12 +3,12 @@ title: Componente pessoas no Microsoft Graph Toolkit
 description: Você pode usar o `mgt-people` componente da Web para exibir um grupo de pessoas ou contatos usando suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 5f85f0a72e8658a8fc734728ae76d79157da39de
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 21a530abe227897941c59115a17522cf79d4b163
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955873"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870901"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente pessoas no Microsoft Graph Toolkit
 
@@ -88,9 +88,9 @@ Os exemplos a seguir mostram como usar o `person` modelo.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| Resource | Permissão |
+| Recurso | Permissão |
 | - | - |
-| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
+| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 
 ## <a name="authentication"></a>Autenticação
 

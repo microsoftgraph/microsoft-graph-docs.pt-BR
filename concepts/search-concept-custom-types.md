@@ -1,19 +1,19 @@
 ---
-title: Tipos personalizados de pesquisa
-description: A API de consulta permite pesquisar entre tipos personalizados ingeridos por meio da API de indexação.
+title: Usar a API de pesquisa da Microsoft no Microsoft Graph para Pesquisar tipos personalizados
+description: Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e executar consultas de pesquisa nesse conteúdo externo.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 53203d300fd3cf42fd5e6993fe8ba016de06669a
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 9d00ddbbedd775a6efb59971da10fbc9ee8854a6
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703978"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866907"
 ---
-# <a name="search-custom-types-externalitem"></a>Pesquisar tipos personalizados (externalItem)
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a>Usar a API de pesquisa da Microsoft no Microsoft Graph para Pesquisar tipos personalizados
 
-A API do Microsoft Search permite que você importe dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e execute consultas de pesquisa nesse conteúdo externo.
+Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e executar consultas de pesquisa nesse conteúdo externo.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -21,7 +21,7 @@ Para Pesquisar tipos personalizados, especifique o seguinte no corpo da solicita
 
 - A propriedade **ContentSources** para incluir a ID de conexão atribuída durante a configuração do conector
 
-- A propriedade **EntityType** como`externalItem`
+- A propriedade **EntityTypes** como`externalItem`
 
 - A propriedade **stored_fields** para incluir os campos no item externo que você deseja recuperar
 
@@ -62,8 +62,6 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Resposta
-
-Resposta
 
 ```json
 {
@@ -117,10 +115,8 @@ Resposta
 
 - Tipos personalizados não dão suporte à pesquisa em várias fontes (especificado em **ContentSources**). Você pode pesquisar apenas uma conexão por vez.
 
-- Você deve especificar a propriedade **stored_fields** , caso contrário os resultados da pesquisa não serão retornados.
+- Você deve especificar a propriedade **stored_fields** ; caso contrário, os resultados da pesquisa não serão retornados.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre:
-
-- [Usar a API de pesquisa](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta)

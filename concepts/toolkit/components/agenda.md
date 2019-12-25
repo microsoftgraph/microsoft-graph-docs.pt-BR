@@ -3,16 +3,16 @@ title: Componente de agenda no kit de ferramentas do Microsoft Graph
 description: O componente de gerenciamento de agenda da Web é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 7f46602396ab794593101505d56c14b675db235f
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 0676c7ab66e899aa4af3dea0f623f301ce9b9f4e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955894"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866886"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente de agenda no kit de ferramentas do Microsoft Graph
 
-O `mgt-agenda` componente da Web representa eventos em um calendário de usuário ou grupo. Por padrão, o calendário exibe o atual eventos de usuário conectado para o dia atual. O componente também pode usar qualquer ponto de extremidade que retorne eventos do Microsoft Graph. 
+O `mgt-agenda` componente da Web representa eventos em um calendário de usuário ou grupo. Por padrão, o calendário exibe o atual eventos de usuário conectado para o dia atual. O componente também pode usar qualquer ponto de extremidade que retorne eventos do Microsoft Graph.
 
 ## <a name="example"></a>Exemplo
 
@@ -137,11 +137,11 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
 | recurso | permissão/escopo |
 | - | - |
-| [/me/calendarview](https://docs.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
 
 O componente permite que você especifique uma consulta diferente do Microsoft Graph para chamar (como `/groups/{id}/calendar/calendarView`). Nesse caso, acrescente o escopo no final da cadeia de caracteres, delimitado por`|`
 
 ## <a name="authentication"></a>Autenticação
 
-O controle de logon aproveita o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md). 
+O controle de logon aproveita o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).
 

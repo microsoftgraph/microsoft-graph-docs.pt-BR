@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 22ad36715dd0405d44214901a0adf90bb717b167
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 715ef4552a3d87ecb59a1925d1a3e52c7d8ed4ea
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955880"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866879"
 ---
 # <a name="people-picker-component"></a>Componente de seletor de pessoas
 
@@ -87,7 +87,7 @@ mgt-people-picker {
 | carregando | nulo: não há dados | O modelo usado para renderizar o estado do seletor enquanto a solicitação ao gráfico está sendo feita. |
 | erro | nulo: não há dados| O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | selecionado-pessoa |Person: o objeto de detalhes da pessoa| O modelo para renderizar as pessoas selecionadas. |
-| person | Person: o objeto de detalhes da pessoa| O modelo para renderizar pessoas na lista suspensa. |
+| vendedor | Person: o objeto de detalhes da pessoa| O modelo para renderizar pessoas na lista suspensa. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 
@@ -105,8 +105,8 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${GroupId}/Members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
+| [/groups/\${GroupId}/Members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
 
 ## <a name="authentication"></a>Autenticação
 

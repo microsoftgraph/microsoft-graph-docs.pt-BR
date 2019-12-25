@@ -3,12 +3,12 @@ title: Instalar o SDK do Microsoft Graph
 description: Fornece instruções para a instalação dos SDKs C#, Java, JavaScript, Objective-C, PHP e Ruby do Microsoft Graph.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: a46f005e2ff646f420d19741eca3c8c21a95291a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9fdb05c6d6fbe3e35f1ed80ddb8223bc3b3f290b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630178"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868573"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Instalar os SDKs do Microsoft Graph
 
@@ -23,7 +23,7 @@ O SDK do Microsoft Graph .NET está incluído nos seguintes pacotes NuGet:
 * [Microsoft. Graph. Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) -a biblioteca principal para fazer chamadas para o Microsoft Graph.
 * [Microsoft. Graph. auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) : fornece um wrapper baseado em cenário de autenticação da biblioteca de autenticação da Microsoft (MSAL) para uso com o SDK do Microsoft Graph. Microsoft. Graph. auth tem uma dependência em Microsoft. Graph. Core.
 
-Você pode usar a [interface do usuário do Gerenciador de pacotes no Visual Studio ou no console do Gerenciador de pacotes](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio) para instalar os pacotes do Microsoft. Graph em seu projeto. Os seguintes comandos do console do Gerenciador de pacotes instalarão as bibliotecas Microsoft. Graph, Microsoft. Graph. Core e Microsoft. Graph. auth. O Microsoft. Graph. Core é instalado como uma dependência de Microsoft. Graph.
+Você pode usar a [interface do usuário do Gerenciador de pacotes no Visual Studio ou no console do Gerenciador de pacotes](/nuget/quickstart/install-and-use-a-package-in-visual-studio) para instalar os pacotes do Microsoft. Graph em seu projeto. Os seguintes comandos do console do Gerenciador de pacotes instalarão as bibliotecas Microsoft. Graph, Microsoft. Graph. Core e Microsoft. Graph. auth. O Microsoft. Graph. Core é instalado como uma dependência de Microsoft. Graph.
 
 ```
 Install-Package Microsoft.Graph
@@ -105,7 +105,7 @@ github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
 
 2. Executar `carthage update`. Isso irá buscar dependências em uma pasta Carthage/checkouts e, em seguida, cria a biblioteca MSGraphClientSDK.
 
-3. Usando o Xcode, na guia configurações **gerais** da sua meta de aplicativo, na seção **estruturas e bibliotecas vinculadas** , arraste e solte o **MSGraphClientSDK. Framework** e o **MSGraphMSALAuthProvider. Framework** do Carthage/ Criar pasta no disco.
+3. Usando o Xcode, na guia configurações **gerais** da sua meta de aplicativo, na seção **estruturas e bibliotecas vinculadas** , arraste e solte o **MSGraphClientSDK. Framework** e o **MSGraphMSALAuthProvider. Framework** da pasta Carthage/Build no disco.
 
 4. Na guia Configurações de **fases de compilação** do seu destino de aplicativo **+** , clique no ícone e escolha **nova fase de script de execução**. Crie um script de execução em que você especifique seu shell (ex:/bin/sh) e adicione o seguinte conteúdo ao script:
 

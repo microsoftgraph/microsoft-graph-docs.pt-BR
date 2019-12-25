@@ -1,32 +1,32 @@
 ---
-title: Pesquisar arquivos (incluindo externalFile)
-description: A API de consulta permite que você pesquise entre arquivos (DriveItem ou arquivos externos).
+title: Usar a API de pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
+description: Você pode usar a API de pesquisa da Microsoft para pesquisar arquivos armazenados no SharePoint ou no OneDrive.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 95a8b99b9970ec239935ee2c35afeec581a1b35f
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0b8db24a8b9ccd63ac3d3be800b209a64eb3aa9d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703944"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866914"
 ---
-# <a name="search-files-including-externalfile"></a>Pesquisar arquivos (incluindo externalFile)
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a>Usar a API de pesquisa da Microsoft no Microsoft Graph para pesquisar arquivos
 
-A API do Microsoft Search permite pesquisar arquivos armazenados no SharePoint ou no OneDrive. Ele usa um modelo de relevância que utiliza sinais do Microsoft Graph sobre as relações e atividades dos usuários. Isso permite retornar e promover o conteúdo com o qual os usuários se preocupam, em uma experiência de pesquisa de arquivo consistente com a guia **arquivos** que lista os resultados da pesquisa no SharePoint.
+Você pode usar a API de pesquisa da Microsoft para pesquisar arquivos armazenados no SharePoint ou no OneDrive. A API do Microsoft Search usa um modelo de relevância que utiliza sinais do Microsoft Graph sobre as relações e atividades dos usuários. Isso permite que você retorne e promova o conteúdo que os usuários se preocupam, em uma experiência de pesquisa de arquivo consistente com a guia **arquivos** que lista os resultados da pesquisa no SharePoint. 
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-Além disso, a API pode trazer arquivos externos expostos por meio do recurso [externalfile](/graph/api/resources/externalfile?view=graph-rest-beta) .
+A API também pode trazer arquivos externos expostos por meio do recurso [externalfile](/graph/api/resources/externalfile?view=graph-rest-beta) .
 
 ## <a name="search-sharepoint-or-onedrive-files"></a>Pesquisar arquivos do SharePoint ou do OneDrive
 
 Você pode usar o KQL em termos de pesquisa de consultas do SharePoint e do OneDrive. Por exemplo:
 
-- `"query" : "contoso filetype:docx OR filetype:doc"`consultas de escopos em documentos do Word
+- `"query": "contoso filetype:docx OR filetype:doc"`escopo a consulta em documentos do Word.
 - `"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`escopo a consulta para uma determinada pasta dentro de um site.
 
-Para ser válido, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido Consultád na condição.
+Para ser válido, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido e consultável na condição.
 
 ### <a name="example"></a>Exemplo
 
@@ -57,8 +57,6 @@ Content-Type: application/json
 ```
 
 #### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta.
 
 <!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
@@ -106,12 +104,12 @@ Veja a seguir um exemplo da resposta.
 
 ## <a name="search-external-files-well-known-types"></a>Pesquisar arquivos externos (tipos bem conhecidos)
 
-O [conector de compartilhamento de arquivos](/MicrosoftSearch/file-share-connector) é um conector "pronto para uso" disponível no Microsoft Search. Permite indexar arquivos disponíveis em um compartilhamento de arquivos. Você pode usar a API de consulta para consultar todos os arquivos externos.
+O [conector de compartilhamento de arquivos](/MicrosoftSearch/file-share-connector) está disponível no Microsoft Search por padrão. Você pode usá-lo para indexar arquivos disponíveis em um compartilhamento de arquivos. Você pode usar a API de consulta para consultar todos os arquivos externos.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="example"></a>Exemplo
 
-O exemplo a seguir retorna todos os conectores externalfile configurados para o locatário e classifica os resultados por relevância.
+O exemplo a seguir retorna todos os arquivos externos configurados para o locatário e classifica os resultados por relevância.
 
 #### <a name="request"></a>Solicitação
 
@@ -183,13 +181,13 @@ Content-Type: application/json
 
 ## <a name="search-all-files-including-externalfile-instances"></a>Pesquisar todos os arquivos (incluindo instâncias de arquivos externos)
 
-Você pode pesquisar todos os arquivos de um locatário, incluindo o [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) e todos os arquivos externos, especificando dois tipos de entidade na solicitação de pesquisa.
+Você pode pesquisar todos os arquivos de um locatário, incluindo arquivos armazenados em [driveItems](/graph/api/resources/driveitem?view=graph-rest-beta) e arquivos externos, especificando dois tipos de entidade na solicitação de pesquisa.
 
-A resposta fornece uma mistura de instâncias **driveItem** e externalItem no `_sources` campo de cada objeto [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) .
+A resposta inclui as instâncias **driveItem** e **externalItem** no `_sources` campo de cada objeto [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) .
 
 ### <a name="example"></a>Exemplo
 
-O exemplo a seguir retorna todos os conectores **externos** defile e objetos **driveItem** do locatário que satisfazem os termos de pesquisa. Ele classifica os resultados por relevância.
+O exemplo a seguir retorna todos os objetos **externalfile** e **driveItem** configurados no locatário que satisfazem os termos de pesquisa. Ele classifica os resultados por relevância.
 
 ### <a name="request"></a>Solicitação
 
@@ -220,10 +218,9 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-Você não pode fazer o escopo de uma consulta para uma ConnectionID específica.
+Você não pode fazer o escopo de uma consulta para uma ID de conexão específica.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre:
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta)
 
-- [Usar a API de pesquisa](/graph/api/resources/search-api-overview?view=graph-rest-beta)

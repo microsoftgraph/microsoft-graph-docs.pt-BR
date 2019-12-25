@@ -1,19 +1,19 @@
 ---
-title: Pesquisar mensagens
-description: A API de pesquisa da Microsoft permite que os aplicativos pesquisem informações em mensagens de email, retornem mensagens classificadas por relevância e processem uma experiência de pesquisa dedicada.
+title: Usar a API do Microsoft Search no Microsoft Graph para pesquisar mensagens
+description: Você pode usar a API de pesquisa da Microsoft para pesquisar informações em mensagens de email, devolver mensagens classificadas por relevância e renderizar uma experiência de pesquisa dedicada.
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: d5dc6357bc6250b3964722114bd242e66871869a
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: e57cbed67c3c224c26779b3c98e400c0411937ee
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703930"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868552"
 ---
-# <a name="search-messages"></a>Pesquisar mensagens
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-messages"></a>Usar a API do Microsoft Search no Microsoft Graph para pesquisar mensagens
 
-A API de pesquisa da Microsoft permite que os aplicativos pesquisem informações em mensagens de email, retornem mensagens classificadas por relevância e processem uma experiência de pesquisa dedicada. A pesquisa se aplica ao corpo e aos anexos de mensagens na caixa de correio do usuário.
+Você pode usar a API de pesquisa da Microsoft para pesquisar informações em mensagens de email, devolver mensagens classificadas por relevância e renderizar uma experiência de pesquisa dedicada. A pesquisa se aplica ao corpo e aos anexos de mensagens na caixa de correio do usuário.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -21,15 +21,15 @@ Uma consulta de pesquisa pode incluir [filtros](https://support.office.com/artic
 
 Os resultados da pesquisa de mensagens são classificados por **receivedDateTime** em ordem decrescente.
 
-A pesquisa de mensagens aplica-se às contas corporativas ou de estudante. Os usuários podem pesquisar sua própria caixa de correio, mas não em caixas de correio delegadas. Confira mais [limitações conhecidas](#known-limitations) abaixo.
+A pesquisa de mensagens aplica-se às contas corporativas ou de estudante. Os usuários podem pesquisar sua própria caixa de correio, mas não podem pesquisar caixas de correio delegadas. Para obter detalhes, consulte [limitações conhecidas](#known-limitations).
 
-A pesquisa de mensagens também procura anexos. Os [tipos de arquivo com suporte para anexos](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) é o mesmo que para o SharePoint Online.
+A pesquisa de mensagens também procura anexos. Os [tipos de arquivo com suporte](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para a pesquisa de anexo de mensagens são os mesmos que para a pesquisa do SharePoint Online.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1"></a>Exemplo 1
+### <a name="example-1-search-messages-in-a-users-mailbox"></a>Exemplo 1: Pesquisar mensagens na caixa de correio de um usuário
 
-O exemplo a seguir consulta mensagens na caixa de correio do usuário conectado que contêm a cadeia de caracteres "contoso" em qualquer parte da mensagem (o nome do remetente, assunto, corpo da mensagem ou qualquer anexo). A consulta retorna os 25 primeiros resultados. Os resultados da pesquisa são ordenados por DateTime decrescente.
+O exemplo a seguir consulta mensagens na caixa de correio do usuário conectado que contêm a cadeia de caracteres "contoso" em qualquer parte da mensagem (o nome do remetente, assunto, corpo da mensagem ou qualquer anexo). A consulta retorna os 25 primeiros resultados. Os resultados da pesquisa são ordenados por **DateTime** decrescente.
 
 #### <a name="request"></a>Solicitação
 
@@ -59,7 +59,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta que contém uma mensagem que corresponde ao critério de pesquisa.
+Veja a seguir um exemplo da resposta, que contém uma mensagem que corresponde ao critério de pesquisa. 
 
 ```json
 {
@@ -118,9 +118,8 @@ Veja a seguir um exemplo da resposta que contém uma mensagem que corresponde ao
 }
 ```
 
-### <a name="example-2-search-top-results-messages"></a>Exemplo 2 principais mensagens de resultados de pesquisa
-
-O exemplo a seguir usa a mesma consulta de pesquisa que o [exemplo 1](#example-1)e classifica os resultados por relevância.
+### <a name="example-2-search-top-results-messages"></a>Exemplo 2: Pesquisar mensagens de resultados principais
+O exemplo a seguir usa a consulta de pesquisa mostrada no [exemplo 1](#example-1)e classifica os resultados por relevância. 
 
 <!-- markdownlint-disable MD024 -->
 #### <a name="request"></a>Solicitação
@@ -152,12 +151,9 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-- Você só pode acessar a caixa de correio de um usuário. Não há suporte para pesquisa de caixa de correio delegada
-
+- Você só pode acessar a caixa de correio de um usuário. Não há suporte para a pesquisa de caixas de correio delegadas.
 - Para mensagens, a propriedade **total** do tipo [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) contém o número de resultados na página, e não o número total de resultados correspondentes.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre:
-
-- [Usar a API de pesquisa](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Usar a API de pesquisa da Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta)

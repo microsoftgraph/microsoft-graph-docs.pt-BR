@@ -3,41 +3,41 @@ title: Escolher um provedor de autenticação do Microsoft Graph
 description: Saiba como escolher provedores de autenticação específicos do cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 7975a2049ee16d89cfc9668babde091db7dd140e
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 678468abae61fa0f9830c0dd1b1578d9aafa177a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778296"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868531"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolher um provedor de autenticação do Microsoft Graph com base no cenário
 
-Os provedores de autenticação implementam o código necessário para adquirir um token usando a biblioteca de autenticação da Microsoft (MSAL); gerenciar vários erros potenciais para casos como o consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, defina o cabeçalho de autorização da solicitação HTTP. A tabela a seguir lista o conjunto de provedores que correspondem aos cenários para diferentes [tipos de aplicativos](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
+Os provedores de autenticação implementam o código necessário para adquirir um token usando a biblioteca de autenticação da Microsoft (MSAL); gerenciar vários erros potenciais para casos como o consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, defina o cabeçalho de autorização da solicitação HTTP. A tabela a seguir lista o conjunto de provedores que correspondem aos cenários para diferentes [tipos de aplicativos](/azure/active-directory/develop/v2-app-types).
 
 |Cenário | Fluxo/concessão | Público-alvo | Provedor|
 |--|--|--|--|
-| [Aplicativo de página única](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
+| [Aplicativo de página única](/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
 | | Implícito | Consumidor/org delegada |[Provedor implícito](#ImplicitProvider) |
-| [Aplicativo Web que chama APIs da Web](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | | | |
+| [Aplicativo Web que chama APIs da Web](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | | | |
 | | Código de Autorização | Consumidor/org delegada | [Provedor de código de autorização](#AuthCodeProvider) |
 | | Credenciais do cliente  | Somente aplicativo | [Provedor de credenciais do cliente](#ClientCredentialsProvider) |
-| [API Web que chama APIs da Web](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | | | |
+| [API Web que chama APIs da Web](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | | | |
 | | Em nome de | Consumidor/org delegada | [Em nome do provedor](#OnBehalfOfProvider) |
 | | Credenciais do cliente  | Somente aplicativo | [Provedor de credenciais do cliente](#ClientCredentialsProvider) |
-| [Aplicativo de área de trabalho que chama APIs da Web](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
+| [Aplicativo de área de trabalho que chama APIs da Web](/azure/active-directory/develop/scenario-desktop-acquire-token) | | | |
 | | Interativo | Consumidor/org delegada | [Provedor interativo](#InteractiveProvider) |
 | | Integrada do Windows | Organização delegada | [Provedor integrado do Windows](#IntegratedWindowsProvider) |
 | | Proprietário do recurso  | Organização delegada | [Provedor de nome de usuário/senha](#UsernamePasswordProvider) |
 | | Código de dispositivo  | Organização delegada | [Provedor de código de dispositivo](#DeviceCodeProvider) |
-| [Aplicativo daemon](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
+| [Aplicativo daemon](/azure/active-directory/develop/scenario-daemon-acquire-token) | | | |
 | | Credenciais do cliente  | Somente aplicativo | [Provedor de credenciais do cliente](#ClientCredentialsProvider) |
-| [Aplicativo móvel que chama as APIs Web](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
+| [Aplicativo móvel que chama as APIs Web](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Interativo | Consumidor/org delegada | [Provedor interativo](#InteractiveProvider) |
 
 
 ## <a name="a-nameauthcodeproviderauthorization-code-provider"></a><a name="AuthCodeProvider"/>Provedor de código de autorização
 
-O fluxo de código de autorização permite que aplicativos nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira [Microsoft Identity Platform and OAuth 2,0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+O fluxo de código de autorização permite que aplicativos nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira [Microsoft Identity Platform and OAuth 2,0 Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
@@ -48,7 +48,7 @@ IConfidentialClientApplication confidentialClientApplication = ConfidentialClien
     .WithClientSecret(clientSecret) // or .WithCertificate(certificate)
     .Build();
 
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);  
+AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);
 ```
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
@@ -70,7 +70,7 @@ AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
@@ -86,7 +86,7 @@ Não disponível, ainda. Vote ou abra uma solicitação de [recurso do Microsoft
 
 ##  <a name="a-nameclientcredentialsproviderclient-credentials-provider"></a><a name="ClientCredentialsProvider"/>Provedor de credenciais do cliente
 
-O fluxo de credenciais do cliente permite que aplicativos de serviço sejam executados sem interação do usuário. O acesso baseia-se na identidade do aplicativo. Para obter mais informações, consulte [Microsoft Identity Platform e The OAuth 2,0 Client Credentials Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+O fluxo de credenciais do cliente permite que aplicativos de serviço sejam executados sem interação do usuário. O acesso baseia-se na identidade do aplicativo. Para obter mais informações, consulte [Microsoft Identity Platform e The OAuth 2,0 Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
@@ -119,7 +119,7 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
@@ -135,7 +135,7 @@ Não disponível, ainda. Forneça suporte ou abra uma [solicitação de recurso 
 
 ##  <a name="a-nameonbehalfofprovideron-behalf-of-provider"></a><a name="OnBehalfOfProvider"/>Provedor em nome de
 
-O fluxo em nome de é aplicável quando o aplicativo chama uma API de serviço/Web que, em seguida, chama a API do Microsoft Graph. Saiba mais lendo a [plataforma de identidade da Microsoft e o fluxo em nome de do OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+O fluxo em nome de é aplicável quando o aplicativo chama uma API de serviço/Web que, em seguida, chama a API do Microsoft Graph. Saiba mais lendo a [plataforma de identidade da Microsoft e o fluxo em nome de do OAuth 2,0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
@@ -161,7 +161,7 @@ Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft 
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
@@ -177,7 +177,7 @@ Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft 
 
 ## <a name="a-nameimplicitproviderimplicit-provider"></a><a name="ImplicitProvider"/>Provedor implícito
 
-O fluxo de concessão implícito é usado em aplicativos baseados em navegador. Para obter mais informações, consulte [Microsoft Identity Platform and implícito Grant Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
+O fluxo de concessão implícito é usado em aplicativos baseados em navegador. Para obter mais informações, consulte [Microsoft Identity Platform and implícito Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
@@ -196,7 +196,7 @@ const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
 // Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
 const userAgentApplication = new Msal.UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MicrosoftGraph.MSALAuthenticationProvider(userAgentApplication, graphScopes);
+const authProvider = new MicrosoftGraph.ImplicitMSALAuthenticationProvider(userAgentApplication, graphScopes);
 
 const options = {
     authProvider, // An instance created from previous step
@@ -213,7 +213,7 @@ Não aplicável.
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
@@ -229,7 +229,7 @@ Não aplicável.
 
 ##  <a name="a-namedevicecodeproviderdevice-code-provider"></a><a name="DeviceCodeProvider"/>Provedor de código de dispositivo
 
-O fluxo de código de dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, consulte [plataforma de identidade da Microsoft e o fluxo de código de dispositivo OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code).
+O fluxo de código de dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, consulte [plataforma de identidade da Microsoft e o fluxo de código de dispositivo OAuth 2,0](/azure/active-directory/develop/v2-oauth2-device-code).
 
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
@@ -255,7 +255,7 @@ Não disponível, ainda. Forneça suporte ou abra uma [solicitação de recurso 
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
@@ -296,7 +296,7 @@ Não aplicável.
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
@@ -312,7 +312,7 @@ Não aplicável.
 
 ##  <a name="a-nameinteractiveproviderinteractive-provider"></a><a name="InteractiveProvider"/>Provedor interativo
 
-O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativos de área de trabalho para chamar o Microsoft Graph no nome de um usuário. Para obter detalhes, [](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively)consulte adquirindo tokens interativamente.
+O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativos de área de trabalho para chamar o Microsoft Graph no nome de um usuário. Para obter detalhes, consulte [adquirindo tokens interativamente](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
 # <a name="ctabcs"></a>[C#](#tab/CS)
 
@@ -349,16 +349,16 @@ IGraphServiceClient graphClient =
     .buildClient();
 ```
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 ```objc
 NSError *error = nil;
-MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID" 
+MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID"
 error:&error];
 
 MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
 
- MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication 
+ MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication
  andOptions:authProviderOptions];
 ```
 
@@ -374,7 +374,7 @@ Não aplicável.
 
 ##  <a name="a-nameusernamepasswordproviderusernamepassword-provider"></a><a name="UsernamePasswordProvider"/>Provedor de nome de usuário/senha
 
-O provedor de nome de usuário/senha permite que um aplicativo entre em um usuário usando seu nome de usuário e senha. Use este fluxo somente quando não for possível usar qualquer um dos outros fluxos OAuth. Para obter mais informações, consulte [plataforma de identidade da Microsoft e a credencial de senha de proprietário do recurso OAuth 2,0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
+O provedor de nome de usuário/senha permite que um aplicativo entre em um usuário usando seu nome de usuário e senha. Use este fluxo somente quando não for possível usar qualquer um dos outros fluxos OAuth. Para obter mais informações, consulte [plataforma de identidade da Microsoft e a credencial de senha de proprietário do recurso OAuth 2,0](/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
@@ -413,7 +413,7 @@ UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
