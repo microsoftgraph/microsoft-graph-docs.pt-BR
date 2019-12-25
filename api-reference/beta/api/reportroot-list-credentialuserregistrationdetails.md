@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 040c90fb7b2158481379444bbf2699301681e448
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 527576eb416c4459ac8c1e5612d1a33c77c4204c
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722640"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868881"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Listar credentialUserRegistrationDetails
 
@@ -42,13 +42,13 @@ Essa função suporta o parâmetro de consulta OData opcional **$Filter**. Você
 
 | Propriedades | Descrição e exemplo |
 | --------- | ----------------------- |
-| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados `eq`:, `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
-| userPrincipalName | Filtrar por nome principal do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro suportados `eq` : `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
-| authMethods | Filtrar pelos métodos de autenticação usados durante o registro. Por exemplo: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Operadores de filtro suportados `eq`:. |
-| IsRegistered | Filtro para usuários que registraram a redefinição de senha de autoatendimento (SSPR). Por exemplo: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Operadores de filtro suportados `eq`:. |
-| isEnabled | Filtro para usuários que foram habilitados para o SSPR. Por exemplo: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Operadores filtter com suporte `eq`:. |
-| iscapable | Filtro para usuários que estão prontos para executar redefinição de senha ou a autenticação multifator (MFA). Por exemplo: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Operadores de filtro suportados:`eq` |
-| isMfaRegistered | Filtro para usuários registrados para MFA. Por exemplo: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Operadores de filtro suportados `eq`:. |
+| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados `eq`:, `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
+| userPrincipalName | Filtrar por nome principal do usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro suportados `eq` : `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
+| authMethods | Filtrar pelos métodos de autenticação usados durante o registro. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Operadores de filtro suportados `eq`:. |
+| IsRegistered | Filtro para usuários que registraram a redefinição de senha de autoatendimento (SSPR). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Operadores de filtro suportados `eq`:. |
+| isEnabled | Filtro para usuários que foram habilitados para o SSPR. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Operadores filtter com suporte `eq`:. |
+| iscapable | Filtro para usuários que estão prontos para executar redefinição de senha ou a autenticação multifator (MFA). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Operadores de filtro suportados:`eq` |
+| isMfaRegistered | Filtro para usuários registrados para MFA. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Operadores de filtro suportados `eq`:. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-credentialuserregistrationdetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-credentialuserregistrationdetails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

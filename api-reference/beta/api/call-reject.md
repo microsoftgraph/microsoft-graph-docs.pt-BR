@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e2d14cff71b161b780726c2937b1c008323a9cc5
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: ad223a862330f9d137761685b68e119ad10abb56
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302195"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868244"
 ---
 # <a name="call-reject"></a>Call: rejeitar
 
@@ -21,8 +21,6 @@ Habilitar um bot para rejeitar uma chamada de entrada. A solicitação de chamad
 O bot deve responder ou rejeitar a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.
 
 Esta API não termina chamadas existentes que já foram respondidas. Use [delete Call](../api/call-delete.md) para encerrar uma chamada.
-
-> **Observação:** O bot só pode ser alcançado por meio de VoIP. A chamada PSTN para Bot ainda não é suportada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

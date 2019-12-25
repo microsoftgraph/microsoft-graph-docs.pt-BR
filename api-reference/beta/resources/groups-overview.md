@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: ce5eafe39f191132b60e46cb7a589c872bff884b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71b650b1a0858ff9f26b3c719c6983888448c106
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005895"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870240"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -38,7 +38,7 @@ O diferencial dos grupos do Office 365 é a natureza colaborativa, ideal para pe
 
 ### <a name="group-in-outlook-example"></a>Grupo em um exemplo do Outlook
 
-Veja a seguir uma representação JSON dos grupos no Outlook. 
+Veja a seguir uma representação JSON dos grupos no Outlook.
 
 ```http
 
@@ -66,17 +66,17 @@ Veja a seguir uma representação JSON dos grupos no Outlook.
     "visibility": "Public"
 }
 ```
-Saiba mais sobre os grupos do Office 365 e as experiências de administrador no tópico [Saiba mais sobre grupos do Office 365](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Saiba mais sobre os grupos do Office 365 e as experiências de administrador no tópico [Saiba mais sobre grupos do Office 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>Grupos de segurança e grupos de segurança habilitados para email.
 
 Os grupos de segurança servem para controlar o acesso de usuários aos recursos. Ao verificar se um usuário faz parte de um grupo de segurança, seu aplicativo pode tomar decisões de autorização quando esse usuário tentar acessar alguns recursos seguros do seu aplicativo. Os grupos de segurança podem ter como membros usuários e outros grupos de segurança.
 
-Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão. Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx).
+Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão. Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](https://technet.microsoft.com/library/bb123521%28v=exchg.160%29.aspx).
 
 ### <a name="security-group-example"></a>Exemplo de grupo de segurança
 
-Veja a seguir uma representação JSON de um grupo de segurança. 
+Veja a seguir uma representação JSON de um grupo de segurança.
 
 ```http
 {
@@ -96,9 +96,9 @@ Veja a seguir uma representação JSON de um grupo de segurança.
     "securityEnabled": true
 }
 ```
-## <a name="dynamic-membership"></a>Associação dinâmica 
+## <a name="dynamic-membership"></a>Associação dinâmica
 
-Todos os tipos de grupo podem ter regras de associação dinâmica que adicionam ou removem automaticamente membros do grupo com base nas propriedades do usuário. Por exemplo, um grupo de "funcionários do Marketing" pode incluir todo usuário que tiver a propriedade departament definida como "Marketing". Dessa forma, os novos funcionários de marketing são adicionados automaticamente ao grupo, enquanto os que saem do departamento são automaticamente removidos dele. Essa regra pode ser especificada em um campo "membershipRule" durante a criação de grupo como `"membershipRule": 'user.department -eq "Marketing"'`. O GroupType também deve incluir a `"DynamicMembership"`. A solicitação a seguir cria um novo grupo do Office 365 para os funcionários de marketing: 
+Todos os tipos de grupo podem ter regras de associação dinâmica que adicionam ou removem automaticamente membros do grupo com base nas propriedades do usuário. Por exemplo, um grupo de "funcionários do Marketing" pode incluir todo usuário que tiver a propriedade departament definida como "Marketing". Dessa forma, os novos funcionários de marketing são adicionados automaticamente ao grupo, enquanto os que saem do departamento são automaticamente removidos dele. Essa regra pode ser especificada em um campo "membershipRule" durante a criação de grupo como `"membershipRule": 'user.department -eq "Marketing"'`. O GroupType também deve incluir a `"DynamicMembership"`. A solicitação a seguir cria um novo grupo do Office 365 para os funcionários de marketing:
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -117,15 +117,15 @@ POST https://graph.microsoft.com/beta/groups
 }
 ```
 
-Saiba como formular membershipRules no artigo [Criar regras baseadas em atributo para associação dinâmica de grupo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+Saiba como formular membershipRules no artigo [Criar regras baseadas em atributo para associação dinâmica de grupo no Azure Active Directory](/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
 
-> **Observação**: as regras de associação dinâmica exigem que o locatário tenha uma licença ao nível [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) ou posterior.
+> **Observação**: as regras de associação dinâmica exigem que o locatário tenha uma licença ao nível [Azure Active Directory Premium P1](https://azure.microsoft.com/pricing/details/active-directory/) ou posterior.
 
 ## <a name="other-types-of-groups"></a>Outros tipos de grupos
 
 Os grupos do Office 365 no Yammer são usados para facilitar a colaboração de usuários por meio de publicações do Yammer. Esse tipo de grupo pode ser retornado por meio de uma solicitação de leitura, mas as postagens nele não podem ser acessadas por meio da API. Quando as postagens e os feeds de conversas do Yammer são habilitados em um grupo, as conversas em grupo do Office 365 são desabilitadas por padrão. Saiba mais em [Documentos de API do desenvolvedor do Yammer](https://developer.yammer.com/docs).
 
-## <a name="group-based-licensing"></a>Licenciamento com base em grupo 
+## <a name="group-based-licensing"></a>Licenciamento com base em grupo
 
 O recurso de licenciamento baseado em grupo pode ser usado para atribuir uma ou mais licenças de produto a um grupo do Azure AD. O Azure AD garante que as licenças sejam atribuídas a todos os membros do grupo. Todos os novos membros que ingressarem no grupo receberão as licenças apropriadas. Quando eles deixarem o grupo, essas licenças serão removidas. O recurso só pode ser usado com grupos de segurança e grupos do Office 365 que tenham securityEnabled=TRUE. Para saber mais sobre o licenciamento baseado em grupo, clique [aqui](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 

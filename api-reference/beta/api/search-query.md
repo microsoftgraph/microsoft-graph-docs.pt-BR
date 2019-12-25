@@ -1,16 +1,16 @@
 ---
 title: 'pesquisa: consulta'
-description: FORNEÇA UMA DESCRIÇÃO AQUI
+description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b5da13640d2c62eb8258ca1a154ddcb8c2e1b353
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: ff5d67dc749ce60797ec6c6387d79795718409c5
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703704"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868846"
 ---
 # <a name="search-query"></a>pesquisa: consulta
 
@@ -40,7 +40,8 @@ POST /search/query
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {token} |
+| Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

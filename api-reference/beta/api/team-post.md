@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5e8d6307999ab6db7b614e12ea6117245f473c29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e38393f0c6c30daae7ba46d1e14033dea3078ec6
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990838"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864947"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -112,7 +112,7 @@ Content-Location: /teams/{teamId}
 
 ### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a>Exemplo 3: Criar uma equipe com vários canais, aplicativos instalados e guias fixadas usando permissões delegadas
 
-Aqui está uma solicitação com um conteúdo completo. O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`. 
+Aqui está uma solicitação com um conteúdo completo. O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`.
 
 #### <a name="request"></a>Solicitação
 
@@ -139,7 +139,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "name": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "https://docs.microsoft.com/en-us/microsoftteams/microsoft-teams"
+                        "contentUrl": "/microsoftteams/microsoft-teams"
                     }
                 },
                 {
@@ -217,7 +217,7 @@ O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/t
 
 Observações sobre essa chamada:
 
-* Para criar uma equipe, o grupo a partir do qual você a está criando deve ter pelo menos um proprietário. 
+* Para criar uma equipe, o grupo a partir do qual você a está criando deve ter pelo menos um proprietário.
 * A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo. Portanto, ao fazer essa chamada com a propriedade **group@odata.bind**, a inclusão da equipe **displayName**, **visibilidade**, **especialização** ou propriedades **owners@odata.bind** retornarão um erro.
 * Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação. Recomendamos que você repita a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
 
@@ -248,7 +248,7 @@ Content-Location: /teams/{teamId}
 
 A seguir está uma solicitação que converte um grupo existente com propriedades estendidas que criarão a equipe com vários canais, aplicativos instalados e guias fixadas.
 
-Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates).
+Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### <a name="request"></a>Solicitação
 
@@ -303,7 +303,7 @@ Os tipos de modelos base são modelos especiais criados pela Microsoft para seto
 
 Para criar uma equipe a partir de um modelo base não padrão, você vai precisar alterar a propriedade `template@odata.bind` no corpo da solicitação de `standard` para indicar o que você deseja criar para o modelo base padrão.
 
-Para saber mais sobre tipos de modelos base com suporte, confira [Comece a trabalhar com modelos do Teams](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates).
+Para saber mais sobre tipos de modelos base com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### <a name="request"></a>Solicitação
 
@@ -332,7 +332,7 @@ Content-Location: /teams/{teamId}
 
 Os tipos de modelos base podem ser estendidos com propriedade adicionais, permitindo que você crie sobre um modelo base existente com configurações, canais, aplicativos ou guias de equipe adicionais.
 
-Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates).
+Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### <a name="request"></a>Solicitação
 
@@ -384,7 +384,7 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>Confira também
 
-- [Modelos disponíveis](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates)
+- [Modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates)
 - [Introdução aos modelos de Equipes de varejo](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Introdução aos modelos de Equipes médicas](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)

@@ -5,31 +5,31 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 83c9f8b9c1d95139ed2b170dd3df4964add15b1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5102a9e445c7aeadefdf37df41dc7325f2a8ed5e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013161"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870376"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Com o Microsoft Graph, você pode acessar recursos do [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) para habilitar cenários como gerenciar funções de administrador (diretório), convidando usuários externos para uma organização e, se você for um [Provedor de Solução na Nuvem (CSP)](https://partner.microsoft.com/cloud-solution-provider), gerenciar dados do cliente. O Microsoft Graph também fornece métodos que os aplicativos podem usar, por exemplo, para descobrir informações sobre grupo transitivo e associações de função de usuário. 
+Com o Microsoft Graph, você pode acessar recursos do [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) para habilitar cenários como gerenciar funções de administrador (diretório), convidando usuários externos para uma organização e, se você for um [Provedor de Solução na Nuvem (CSP)](https://partner.microsoft.com/cloud-solution-provider), gerenciar dados do cliente. O Microsoft Graph também fornece métodos que os aplicativos podem usar, por exemplo, para descobrir informações sobre grupo transitivo e associações de função de usuário.
 
 > **Observação**: alguns recursos do Azure AD são documentados em outras seções da API de referência. Para saber mais, confira [Usuários](users.md) e [Grupos](group.md).
 
 
 ## <a name="authorization"></a>Autorização
- 
-Para chamar as APIs do Microsoft Graph nos recursos do Azure AD, seu aplicativo precisará das permissões adequadas. Muitas das APIs expostas nos recursos do Azure AD exigem uma das [permissões de _diretório_](/graph/permissions-reference#directory-permissions). As permissões de diretório são altamente privilegiadas e sempre exigem o consentimento do administrador. 
+
+Para chamar as APIs do Microsoft Graph nos recursos do Azure AD, seu aplicativo precisará das permissões adequadas. Muitas das APIs expostas nos recursos do Azure AD exigem uma das [permissões de _diretório_](/graph/permissions-reference#directory-permissions). As permissões de diretório são altamente privilegiadas e sempre exigem o consentimento do administrador.
 
 Se seu aplicativo estiver agindo em nome de um usuário (permissões delegadas), é provável que esse usuário precise ser um membro de uma [função de administrador](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) apropriada para que seu aplicativo chame com êxito muitas das APIs do Azure AD.
 
-Para saber mais sobre permissões, incluindo permissões delegadas e de aplicativos, confira o artigo sobre [Permissões](/graph/permissions-reference). 
+Para saber mais sobre permissões, incluindo permissões delegadas e de aplicativos, confira o artigo sobre [Permissões](/graph/permissions-reference).
 
-## <a name="common-use-cases"></a>Casos comuns de uso 
+## <a name="common-use-cases"></a>Casos comuns de uso
 
 A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 
@@ -44,7 +44,7 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Aplique políticas do Azure AD para aplicativos, entidades de serviço, grupos ou toda a organização. Atualmente, há suporte para políticas de vida útil do token e de descoberta de realm inicial.  | [política](../resources/policy.md) | N/D |
 | **Acesso seguro privilegiado ao Azure AD** | | |
 | Gerencie e monitore o acesso privilegiado com limite de tempo aos diretório e os recursos do Azure para administradores e profissionais de TI com PIM (Privileged Identity Management). | [APIs de Privileged Identity Management](../resources/privilegedidentitymanagement-root.md) | [O que é o Azure AD Privileged Identity Management?](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| Monitore os eventos de risco de identidade, como os usuários fazendo logon em dispositivos infectado por malware ou locais desconhecidos. | [API do serviço de proteção de identidade](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Eventos de risco do Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-reporting-risk-events) |
+| Monitore os eventos de risco de identidade, como os usuários fazendo logon em dispositivos infectado por malware ou locais desconhecidos. | [API do serviço de proteção de identidade](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Eventos de risco do Azure Active Directory](/azure/active-directory/active-directory-reporting-risk-events) |
 | **Gerenciar dispositivos** | | |
 | Gerenciar os dispositivos registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator. | [device](../resources/device.md) | [Introdução ao registro de dispositivos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[O que é o InTune?](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Registrar dispositivos para o gerenciamento no Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **Gerenciamento de aplicativos** | | |
@@ -60,9 +60,9 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
 | Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | **Avaliações do Access** | | |
-| Certifique-se que as associações ao grupo e os direitos de acesso ao aplicativo estão corretos com as revisões de acesso | [API de revisões de acesso](../resources/accessreviews-root.md) |[Revisões de acesso ao Azure AD](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| Certifique-se que as associações ao grupo e os direitos de acesso ao aplicativo estão corretos com as revisões de acesso | [API de revisões de acesso](../resources/accessreviews-root.md) |[Revisões de acesso ao Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 ## <a name="next-steps"></a>Próximas etapas
-APIs e recursos de diretório podem criar novas maneiras para você relacionar-se com os usuários e gerenciar as experiências deles com o Microsoft Graph. Para saber mais: 
+APIs e recursos de diretório podem criar novas maneiras para você relacionar-se com os usuários e gerenciar as experiências deles com o Microsoft Graph. Para saber mais:
 
 - Examine os métodos e as propriedades dos recursos mais úteis para o seu cenário.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).

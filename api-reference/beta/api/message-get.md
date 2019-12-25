@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0746cddf987c6fed21fb27c2e0fffb09b596c520
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 20a68ed4448c8762217ba0d37d368af63d58c8e9
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036169"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869462"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail. ReadBasic, mail. Read    |
-|Delegado (conta pessoal da Microsoft) | Mail. ReadBasic, mail. Read    |
-|Aplicativo | Mail. ReadBasic. All, mail. Read |
+|Delegado (conta corporativa ou de estudante) | Mail.ReadBasic, Mail.Read    |
+|Delegado (conta pessoal da Microsoft) | Mail.ReadBasic, Mail.Read    |
+|Aplicativo | Mail.ReadBasic.All, Mail.Read |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -90,6 +90,8 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.
 
+A especificação `$value` do parâmetro retorna o conteúdo da mensagem no formato MIME e não um recurso de **mensagem** .
+
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1"></a>Exemplo 1
 #### <a name="request"></a>Solicitação
@@ -112,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -170,7 +172,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mentions-in-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mentions-in-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -277,7 +279,7 @@ Content-length: 2248
 ### <a name="example-3"></a>Exemplo 3
 #### <a name="request"></a>Solicitação
 
-O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e **uniqueBody** da mensagem especificada no formato de texto.
+O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e o **uniqueBody** da mensagem especificada no formato do texto.
 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -299,7 +301,7 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -308,7 +310,7 @@ Prefer: outlook.body-content-type="text"
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para confirmar o `Prefer: outlook.body-content-type` cabeçalho da solicitação.
+Veja a seguir um exemplo da resposta. Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para reconhecer o `Prefer: outlook.body-content-type` cabeçalho da solicitação.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -359,7 +361,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-internet-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-internet-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -408,6 +410,115 @@ Content-type: application/json
   ]
 }
 ```
+
+
+### <a name="example-5"></a>Exemplo 5
+#### <a name="request"></a>Solicitação
+O quinto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
+```
+
+#### <a name="response"></a>Resposta
+Esta é a resposta. O conteúdo MIME começa com o `MIME-Version` cabeçalho. 
+<!-- {
+  "blockType": "ignored"
+} -->
+```http
+HTTP/1.1 200 OK
+
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox 
+Transport; Mon, 4 Sep 2017 03:00:08 -0700 
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0; Mon, 4 Sep 
+2017 03:00:07 -0700 
+Received: from contoso.com 
+(fe80::5bf:5059:4ca0:5017) by contoso.com 
+(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Mon, 4 Sep 2017 
+03:00:01 -0700 
+From: Administrator <admin@contoso.com> 
+To: Administrator <admin@contoso.com> 
+Subject: This email has attachment. 
+Thread-Topic: This email has attachment. 
+Thread-Index: AQHTJWSHSywMzSz8o0OJud48nG50GQ== 
+Date: Mon, 4 Sep 2017 10:00:00 +0000 
+Message-ID: 
+                <4aade2547798441eab5188a7a2436bc1@contoso.com> 
+Accept-Language: en-US 
+Content-Language: en-US 
+X-MS-Exchange-Organization-AuthAs: Internal 
+X-MS-Exchange-Organization-AuthMechanism: 04 
+X-MS-Exchange-Organization-AuthSource: 
+                contoso.com 
+X-MS-Has-Attach: yes 
+X-MS-Exchange-Organization-Network-Message-Id: 
+                0ffdb402-ec03-42c8-5d32-08d4f37bb517 
+X-MS-Exchange-Organization-SCL: -1 
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0 
+x-ms-publictraffictype: Emai
+
+```http
+MIME-Version: 1.0 
+Content-Type: multipart/mixed; 
+                boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: multipart/alternative; 
+                boundary="_000_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/plain; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+The attachment is an email. 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/html; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+<html> 
+<head> 
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-= 
+1"> 
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi= 
+n-bottom:0;} --></style> 
+</head> 
+<body dir=3D"ltr"> 
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font= 
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr"> 
+<p>The attachment is an email.</p> 
+</div> 
+</body> 
+</html> 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_-- 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: application/octet-stream; name="Attachment email.eml" 
+Content-Description: Attachment email.eml 
+Content-Disposition: attachment; filename="Attachment email.eml"; size=408; 
+                creation-date="Mon, 04 Sep 2017 09:59:43 GMT"; 
+                modification-date="Mon, 04 Sep 2017 09:59:43 GMT" 
+Content-Transfer-Encoding: base64 
+ 
+RnJvbToJQWRtaW5pc3RyYXRvciA8YWRtaW5AdGVuYW50LUVYSEItMTQ3MS5jb20+DQpTZW50OglN 
+b25kYXksIFNlcHRlbWJlciA0LCAyMDE3IDM6MjYgUE0NClRvOglTcml2YXJkaGFuIEhlYmJhcg0K 
+U3ViamVjdDoJQXR0YWNobWVudCBlbWFpbA0KDQpJIHdpbGwgYXR0YWNoIHRoaXMgZW1haWwgdG8g 
+YW5vdGhlciBtYWlsLg0K 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
+```
+
 
 ## <a name="see-also"></a>Confira também
 

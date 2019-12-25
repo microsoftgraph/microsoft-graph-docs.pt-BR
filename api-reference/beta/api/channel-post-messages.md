@@ -1,18 +1,18 @@
 ---
-title: Criar chat em um canal
+title: Criar chatMessage em um canal
 description: Criar um novo chat no canal especificado.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 26d35bae2eb5dd85989660e243355ea3099bf54d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a764a7190432b838bdd982b4275fe6dca897ba56
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418694"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868181"
 ---
-# <a name="create-chatmessage-in-a-channel"></a>Criar chat em um canal
+# <a name="create-chatmessage-in-a-channel"></a>Criar chatMessage em um canal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -85,7 +85,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -243,6 +243,9 @@ Content-length: 160
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
+
+> Observação: a ID do anexo deve ser exclusiva e pode ser um novo GUID gerado aleatoriamente. No entanto, a ID do anexo deve ser a mesma nos elementos _Body_ e _Attachments_ .
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -328,7 +331,7 @@ Content-length: 160
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência de cartões](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
+- [Referência de cartões](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: af906dad7ad24ad9c82411be3b7a896fcafa216c
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 1c720ce79b4c31b2895e6d953ab0e36cbb2450be
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747977"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869322"
 ---
 # <a name="participant-mute"></a>participante: sem áudio
 
@@ -51,12 +51,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|Cadeia de Caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.
 
->**Observação:** Whem essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
+>**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
 
 ## <a name="example---mute-specific-participant"></a>Exemplo-sem áudio o participante específico
 O exemplo a seguir mostra como chamar essa API.

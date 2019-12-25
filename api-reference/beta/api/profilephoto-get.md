@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5b4fd73fa14c459cf49f4b52a064ad52e400550d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b5aec9f4cd1868948d750a8320da9d054ab29558
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978641"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869301"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -38,9 +38,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)  <br /> **Observação**: não há suporte para a operação de metadados. | Para recurso de **usuário**:<br/>User.Read, User.ReadWrite<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 |Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 
-> **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+> **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
-## <a name="http-request"></a>Solicitação HTTP 
+## <a name="http-request"></a>Solicitação HTTP
 
 ### <a name="get-the-photo"></a>Obter a foto
 <!-- { "blockType": "ignored" } -->
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/me/photo
 ```
 
 ##### <a name="response"></a>Resposta
-Os dados de resposta a seguir mostram os metadados da foto. 
+Os dados de resposta a seguir mostram os metadados da foto.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -161,7 +161,7 @@ Content-type: application/json
 }
 ```
 
-Os dados de resposta a seguir mostram o conteúdo de uma resposta quando uma foto ainda não foi carregada para o usuário. 
+Os dados de resposta a seguir mostram o conteúdo de uma resposta quando uma foto ainda não foi carregada para o usuário.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
