@@ -5,58 +5,59 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8d63d87110fe168f718c3fb489a328d72540686
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ea63ffd44d82809e5d07111713bea0d403b5ae4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945785"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868447"
 ---
-# <a name="list-members"></a><span data-ttu-id="65eaa-103">Listar membros</span><span class="sxs-lookup"><span data-stu-id="65eaa-103">List members</span></span>
+# <a name="list-members"></a><span data-ttu-id="5ada1-103">Listar membros</span><span class="sxs-lookup"><span data-stu-id="5ada1-103">List members</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="65eaa-104">Use essa API para obter a lista de Membros (usuário e grupo) em uma unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="65eaa-104">Use this API to get the members list (user and group) in an administrative unit.</span></span>
+<span data-ttu-id="5ada1-104">Use essa API para obter a lista de Membros (usuário e grupo) em uma unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="5ada1-104">Use this API to get the members list (user and group) in an administrative unit.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="65eaa-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="65eaa-105">Permissions</span></span>
-<span data-ttu-id="65eaa-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65eaa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ada1-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="5ada1-105">Permissions</span></span>
+<span data-ttu-id="5ada1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5ada1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-
-|<span data-ttu-id="65eaa-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="65eaa-108">Permission type</span></span>      | <span data-ttu-id="65eaa-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="65eaa-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5ada1-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5ada1-108">Permission type</span></span>      | <span data-ttu-id="5ada1-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5ada1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="65eaa-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="65eaa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="65eaa-111">AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="65eaa-111">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="65eaa-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="65eaa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65eaa-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="65eaa-113">Not supported.</span></span>    |
-|<span data-ttu-id="65eaa-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="65eaa-114">Application</span></span> | <span data-ttu-id="65eaa-115">AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="65eaa-115">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="5ada1-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5ada1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5ada1-111">AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="5ada1-111">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="5ada1-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5ada1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ada1-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5ada1-113">Not supported.</span></span>    |
+|<span data-ttu-id="5ada1-114">Application</span><span class="sxs-lookup"><span data-stu-id="5ada1-114">Application</span></span> | <span data-ttu-id="5ada1-115">AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="5ada1-115">AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="65eaa-116">Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão member. Read. Hidden é necessária.</span><span class="sxs-lookup"><span data-stu-id="65eaa-116">Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.</span></span>
+> <span data-ttu-id="5ada1-116">Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão member. Read. Hidden é necessária.</span><span class="sxs-lookup"><span data-stu-id="5ada1-116">Note: To list the members of a hidden membership in an administrative unit, the Member.Read.Hidden permission is required.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="65eaa-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="65eaa-117">HTTP request</span></span>
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+## <a name="http-request"></a><span data-ttu-id="5ada1-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5ada1-117">HTTP request</span></span>
 
 ```http
 GET /administrativeUnits/{id}/members
 GET /administrativeUnits/{id}/members/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="65eaa-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="65eaa-118">Request headers</span></span>
-| <span data-ttu-id="65eaa-119">Nome</span><span class="sxs-lookup"><span data-stu-id="65eaa-119">Name</span></span>      |<span data-ttu-id="65eaa-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="65eaa-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5ada1-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5ada1-118">Request headers</span></span>
+| <span data-ttu-id="5ada1-119">Nome</span><span class="sxs-lookup"><span data-stu-id="5ada1-119">Name</span></span>      |<span data-ttu-id="5ada1-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="5ada1-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="65eaa-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="65eaa-121">Authorization</span></span>  | <span data-ttu-id="65eaa-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="65eaa-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5ada1-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="5ada1-121">Authorization</span></span>  | <span data-ttu-id="5ada1-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5ada1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="65eaa-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="65eaa-124">Request body</span></span>
-<span data-ttu-id="65eaa-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="65eaa-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ada1-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5ada1-124">Request body</span></span>
+<span data-ttu-id="5ada1-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5ada1-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="65eaa-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="65eaa-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5ada1-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="5ada1-126">Response</span></span>
 
-<span data-ttu-id="65eaa-127">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [User](../resources/user.md) e/ou [Group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="65eaa-127">If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and/or [group](../resources/group.md) objects in the response body.</span></span>  <span data-ttu-id="65eaa-128">Em vez disso, se `$ref` você colocar no final da solicitação, a resposta conterá uma coleção de `@odata.id` links/URLs para os membros.</span><span class="sxs-lookup"><span data-stu-id="65eaa-128">Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.</span></span>
+<span data-ttu-id="5ada1-127">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [User](../resources/user.md) e/ou [Group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5ada1-127">If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and/or [group](../resources/group.md) objects in the response body.</span></span>  <span data-ttu-id="5ada1-128">Em vez disso, se `$ref` você colocar no final da solicitação, a resposta conterá uma coleção de `@odata.id` links/URLs para os membros.</span><span class="sxs-lookup"><span data-stu-id="5ada1-128">Instead, if you put `$ref` at the end of the request, the response will contain a collection of `@odata.id` links/URLs to the members.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="65eaa-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="65eaa-129">Examples</span></span>
-##### <a name="list-member-objects"></a><span data-ttu-id="65eaa-130">Listar objetos member</span><span class="sxs-lookup"><span data-stu-id="65eaa-130">List member objects</span></span>
-<span data-ttu-id="65eaa-131">A solicitação a seguir listará os membros da unidade administrativa, retornando um conjunto de usuários e/ou grupos.</span><span class="sxs-lookup"><span data-stu-id="65eaa-131">The following request will list the members of the administrative unit, returning a collection of users and/or groups.</span></span>
+## <a name="examples"></a><span data-ttu-id="5ada1-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="5ada1-129">Examples</span></span>
+##### <a name="list-member-objects"></a><span data-ttu-id="5ada1-130">Listar objetos member</span><span class="sxs-lookup"><span data-stu-id="5ada1-130">List member objects</span></span>
+<span data-ttu-id="5ada1-131">A solicitação a seguir listará os membros da unidade administrativa, retornando um conjunto de usuários e/ou grupos.</span><span class="sxs-lookup"><span data-stu-id="5ada1-131">The following request will list the members of the administrative unit, returning a collection of users and/or groups.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 ```
 
-<span data-ttu-id="65eaa-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="65eaa-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="5ada1-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5ada1-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
  
 ```http
 HTTP/1.1 200 OK
@@ -83,12 +84,12 @@ Content-length: 100
 }
 ```
 
-##### <a name="list-member-references"></a><span data-ttu-id="65eaa-135">Listar referências de membros</span><span class="sxs-lookup"><span data-stu-id="65eaa-135">List member references</span></span>
-<span data-ttu-id="65eaa-136">A solicitação a seguir listará as referências de membro da unidade administrativa, retornando uma `@odata.id` coleção de referências para os membros.</span><span class="sxs-lookup"><span data-stu-id="65eaa-136">The following request will list the member references of the administrative unit, returning a collection of `@odata.id` references to the members.</span></span>
+##### <a name="list-member-references"></a><span data-ttu-id="5ada1-135">Listar referências de membros</span><span class="sxs-lookup"><span data-stu-id="5ada1-135">List member references</span></span>
+<span data-ttu-id="5ada1-136">A solicitação a seguir listará as referências de membro da unidade administrativa, retornando uma `@odata.id` coleção de referências para os membros.</span><span class="sxs-lookup"><span data-stu-id="5ada1-136">The following request will list the member references of the administrative unit, returning a collection of `@odata.id` references to the members.</span></span>
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
-<span data-ttu-id="65eaa-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="65eaa-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="5ada1-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5ada1-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
  
 ```http
 HTTP/1.1 200 OK
