@@ -5,38 +5,44 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b5ae5d321ac5fec86801ca11f60ead8a276fd73
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 21cda352cb887a377248a3fbbf16a761773128ba
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938916"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870419"
 ---
-# <a name="accesspackageresourcerole-resource-type"></a><span data-ttu-id="36e3a-103">tipo de recurso accessPackageResourceRole</span><span class="sxs-lookup"><span data-stu-id="36e3a-103">accessPackageResourceRole resource type</span></span>
+# <a name="accesspackageresourcerole-resource-type"></a><span data-ttu-id="9ac17-103">tipo de recurso accessPackageResourceRole</span><span class="sxs-lookup"><span data-stu-id="9ac17-103">accessPackageResourceRole resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="36e3a-104">No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de pacote do Access é uma referência a uma função definida em um recurso, que pode ser usada em um pacote do Access.</span><span class="sxs-lookup"><span data-stu-id="36e3a-104">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource role is a reference to a role defined in a resource, that can be used in an access package.</span></span>
+<span data-ttu-id="9ac17-104">No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de pacote do Access é uma referência a uma função definida em um recurso, que pode ser usada em um pacote do Access.</span><span class="sxs-lookup"><span data-stu-id="9ac17-104">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource role is a reference to a role defined in a resource, that can be used in an access package.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="36e3a-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="36e3a-105">Properties</span></span>
+## <a name="methods"></a><span data-ttu-id="9ac17-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="9ac17-105">Methods</span></span>
 
-| <span data-ttu-id="36e3a-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="36e3a-106">Property</span></span>     | <span data-ttu-id="36e3a-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="36e3a-107">Type</span></span>        | <span data-ttu-id="36e3a-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="36e3a-108">Description</span></span> |
+| <span data-ttu-id="9ac17-106">Método</span><span class="sxs-lookup"><span data-stu-id="9ac17-106">Method</span></span>       | <span data-ttu-id="9ac17-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="9ac17-107">Return Type</span></span> | <span data-ttu-id="9ac17-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="9ac17-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="36e3a-109">description</span><span class="sxs-lookup"><span data-stu-id="36e3a-109">description</span></span>|<span data-ttu-id="36e3a-110">String</span><span class="sxs-lookup"><span data-stu-id="36e3a-110">String</span></span>|<span data-ttu-id="36e3a-111">Uma descrição para a função de recurso.</span><span class="sxs-lookup"><span data-stu-id="36e3a-111">A description for the resource role.</span></span>|
-|<span data-ttu-id="36e3a-112">displayName</span><span class="sxs-lookup"><span data-stu-id="36e3a-112">displayName</span></span>|<span data-ttu-id="36e3a-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="36e3a-113">String</span></span>|<span data-ttu-id="36e3a-114">O nome de exibição da função de recurso como a função definida pelo aplicativo.</span><span class="sxs-lookup"><span data-stu-id="36e3a-114">The display name of the resource role such as the role defined by the application.</span></span>|
-|<span data-ttu-id="36e3a-115">id</span><span class="sxs-lookup"><span data-stu-id="36e3a-115">id</span></span>|<span data-ttu-id="36e3a-116">String</span><span class="sxs-lookup"><span data-stu-id="36e3a-116">String</span></span>| <span data-ttu-id="36e3a-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="36e3a-117">Read-only.</span></span>|
-|<span data-ttu-id="36e3a-118">originid</span><span class="sxs-lookup"><span data-stu-id="36e3a-118">originId</span></span>|<span data-ttu-id="36e3a-119">String</span><span class="sxs-lookup"><span data-stu-id="36e3a-119">String</span></span>|<span data-ttu-id="36e3a-120">O identificador exclusivo da função de recurso no sistema de origem.</span><span class="sxs-lookup"><span data-stu-id="36e3a-120">The unique identifier of the resource role in the origin system.</span></span> |
-|<span data-ttu-id="36e3a-121">originSystem</span><span class="sxs-lookup"><span data-stu-id="36e3a-121">originSystem</span></span>|<span data-ttu-id="36e3a-122">String</span><span class="sxs-lookup"><span data-stu-id="36e3a-122">String</span></span>|<span data-ttu-id="36e3a-123">O tipo do recurso no sistema de origem.</span><span class="sxs-lookup"><span data-stu-id="36e3a-123">The type of the resource in the origin system.</span></span>|
+| [<span data-ttu-id="9ac17-109">Listar funções de recurso accessPackageCatalog</span><span class="sxs-lookup"><span data-stu-id="9ac17-109">List accessPackageCatalog resource roles</span></span>](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | <span data-ttu-id="9ac17-110">coleção [accessPackageResourceRole](accesspackageresourcerole.md)</span><span class="sxs-lookup"><span data-stu-id="9ac17-110">[accessPackageResourceRole](accesspackageresourcerole.md) collection</span></span> | <span data-ttu-id="9ac17-111">Recupere uma lista de objetos accessPackageResourceRole para um catálogo.</span><span class="sxs-lookup"><span data-stu-id="9ac17-111">Retrieve a list of accessPackageResourceRole objects for a catalog.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="36e3a-124">Relações</span><span class="sxs-lookup"><span data-stu-id="36e3a-124">Relationships</span></span>
+## <a name="properties"></a><span data-ttu-id="9ac17-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9ac17-112">Properties</span></span>
 
-| <span data-ttu-id="36e3a-125">Relação</span><span class="sxs-lookup"><span data-stu-id="36e3a-125">Relationship</span></span> | <span data-ttu-id="36e3a-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="36e3a-126">Type</span></span>        | <span data-ttu-id="36e3a-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="36e3a-127">Description</span></span> |
+| <span data-ttu-id="9ac17-113">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9ac17-113">Property</span></span>     | <span data-ttu-id="9ac17-114">Tipo</span><span class="sxs-lookup"><span data-stu-id="9ac17-114">Type</span></span>        | <span data-ttu-id="9ac17-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="9ac17-115">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="36e3a-128">accessPackageResource</span><span class="sxs-lookup"><span data-stu-id="36e3a-128">accessPackageResource</span></span>|[<span data-ttu-id="36e3a-129">accessPackageResource</span><span class="sxs-lookup"><span data-stu-id="36e3a-129">accessPackageResource</span></span>](accesspackageresource.md)| <span data-ttu-id="36e3a-p101">Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="36e3a-p101">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="9ac17-116">description</span><span class="sxs-lookup"><span data-stu-id="9ac17-116">description</span></span>|<span data-ttu-id="9ac17-117">String</span><span class="sxs-lookup"><span data-stu-id="9ac17-117">String</span></span>|<span data-ttu-id="9ac17-118">Uma descrição para a função de recurso.</span><span class="sxs-lookup"><span data-stu-id="9ac17-118">A description for the resource role.</span></span>|
+|<span data-ttu-id="9ac17-119">displayName</span><span class="sxs-lookup"><span data-stu-id="9ac17-119">displayName</span></span>|<span data-ttu-id="9ac17-120">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9ac17-120">String</span></span>|<span data-ttu-id="9ac17-121">O nome de exibição da função de recurso como a função definida pelo aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9ac17-121">The display name of the resource role such as the role defined by the application.</span></span>|
+|<span data-ttu-id="9ac17-122">id</span><span class="sxs-lookup"><span data-stu-id="9ac17-122">id</span></span>|<span data-ttu-id="9ac17-123">String</span><span class="sxs-lookup"><span data-stu-id="9ac17-123">String</span></span>| <span data-ttu-id="9ac17-124">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9ac17-124">Read-only.</span></span>|
+|<span data-ttu-id="9ac17-125">originid</span><span class="sxs-lookup"><span data-stu-id="9ac17-125">originId</span></span>|<span data-ttu-id="9ac17-126">String</span><span class="sxs-lookup"><span data-stu-id="9ac17-126">String</span></span>|<span data-ttu-id="9ac17-127">O identificador exclusivo da função de recurso no sistema de origem.</span><span class="sxs-lookup"><span data-stu-id="9ac17-127">The unique identifier of the resource role in the origin system.</span></span> |
+|<span data-ttu-id="9ac17-128">originSystem</span><span class="sxs-lookup"><span data-stu-id="9ac17-128">originSystem</span></span>|<span data-ttu-id="9ac17-129">String</span><span class="sxs-lookup"><span data-stu-id="9ac17-129">String</span></span>|<span data-ttu-id="9ac17-130">O tipo do recurso no sistema de origem.</span><span class="sxs-lookup"><span data-stu-id="9ac17-130">The type of the resource in the origin system.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="36e3a-132">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="36e3a-132">JSON representation</span></span>
+## <a name="relationships"></a><span data-ttu-id="9ac17-131">Relações</span><span class="sxs-lookup"><span data-stu-id="9ac17-131">Relationships</span></span>
 
-<span data-ttu-id="36e3a-133">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="36e3a-133">The following is a JSON representation of the resource.</span></span>
+| <span data-ttu-id="9ac17-132">Relação</span><span class="sxs-lookup"><span data-stu-id="9ac17-132">Relationship</span></span> | <span data-ttu-id="9ac17-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="9ac17-133">Type</span></span>        | <span data-ttu-id="9ac17-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="9ac17-134">Description</span></span> |
+|:-------------|:------------|:------------|
+|<span data-ttu-id="9ac17-135">accessPackageResource</span><span class="sxs-lookup"><span data-stu-id="9ac17-135">accessPackageResource</span></span>|[<span data-ttu-id="9ac17-136">accessPackageResource</span><span class="sxs-lookup"><span data-stu-id="9ac17-136">accessPackageResource</span></span>](accesspackageresource.md)| <span data-ttu-id="9ac17-p101">Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="9ac17-p101">Read-only. Nullable.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="9ac17-139">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9ac17-139">JSON representation</span></span>
+
+<span data-ttu-id="9ac17-140">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="9ac17-140">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
