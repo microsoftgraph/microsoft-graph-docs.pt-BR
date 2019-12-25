@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 50d54ae046ef5a0283f5eb2e474fd0faab781687
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: 958e6750c9b6a0749613d3a380b43a7d1ab282c2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062100"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870247"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>tipo de recurso featureRolloutPolicy
 
@@ -28,18 +28,18 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 
 ### <a name="passthrough-authentication"></a>Autenticação de passagem
 
-* Identifique um servidor executando o Windows Server 2012 R2 ou posterior onde você deseja que o agente do [PassthroughAuthentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta) seja executado.Certifique-se de que o servidor ingressou no domínio, possa autenticar usuários selecionados com o Active Directory e pode se comunicar com o Azure AD em portas/URLs de saída.
+* Identifique um servidor executando o Windows Server 2012 R2 ou posterior onde você deseja que o agente do [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) seja executado.Certifique-se de que o servidor ingressou no domínio, possa autenticar usuários selecionados com o Active Directory e pode se comunicar com o Azure AD em portas/URLs de saída.
 * [Baixe](https://aka.ms/getauthagent) & instale o agente de autenticação do Microsoft Azure ad Connect no servidor.
-* Para habilitar a alta disponibilidade, instale agentes de autenticação adicionais em outros servidores, conforme descrito [aqui](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
-* Verifique se você configurou suas configurações de [bloqueio inteligente](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout) adequadamente. Isso é para garantir que as contas do Active Directory no local dos usuários não sejam bloqueadas por atores ruins.
+* Para habilitar a alta disponibilidade, instale agentes de autenticação adicionais em outros servidores, conforme descrito [aqui](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
+* Verifique se você configurou suas configurações de [bloqueio inteligente](/azure/active-directory/authentication/howto-password-smart-lockout) adequadamente. Isso é para garantir que as contas do Active Directory no local dos usuários não sejam bloqueadas por atores ruins.
 
 ### <a name="seamlesssso"></a>SeamlessSso
 
-* Habilite o [SeamlessSso](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso) para as florestas do [](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) AD com base nessas instruções.
+* Habilite o [SeamlessSso](/azure/active-directory/hybrid/how-to-connect-sso) para as florestas do AD com [base nessas instruções.](/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature)
 
 ### <a name="passwordhashsync"></a>PasswordHashSync
 
-* Habilite o [PasswordHashSync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs) na página "recursos opcionais" no Azure ad Connect.
+* Habilite o [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) na página "recursos opcionais" no Azure ad Connect.
 
 ## <a name="methods"></a>Métodos
 
@@ -58,7 +58,7 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|String|Uma descrição para esta política de distribuição de recursos.|
-|displayName|String|O nome de exibição desta política de distribuição de recursos.|
+|displayName|Cadeia de caracteres|O nome de exibição desta política de distribuição de recursos.|
 |apresentam|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
 |isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|

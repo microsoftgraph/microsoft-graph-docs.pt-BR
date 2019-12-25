@@ -3,14 +3,14 @@ title: Criar esquema
 description: Crie o esquema para uma conexão do Microsoft Search.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 201f2c474dd0ecdd38b14cbb6af3cb009b51fa82
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 560fc240439ed204e349bb09a44f398925007182
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747224"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869742"
 ---
 # <a name="create-schema"></a>Criar esquema
 
@@ -18,7 +18,7 @@ ms.locfileid: "38747224"
 
 Crie o esquema para uma [conexão](../resources/externalconnection.md)do Microsoft Search.
 
-Há dois tipos de esquema compatíveis: itens personalizados e arquivos.
+Dois tipos de esquema são suportados: itens personalizados e arquivos.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -63,7 +63,7 @@ Com o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver ê
 Sem o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto de [esquema](../resources/schema.md) no corpo da resposta.
 
 > [!NOTE]
-> A criação de um esquema é um processo de longa execução sujeito a tempos limite de gateway. O uso `Prefer: respond-async` do é recomendado para evitar erros de tempo limite.
+> A criação de um esquema é um processo de longa execução sujeito a tempos limite de gateway. Recomendamos usar o `Prefer: respond-async` cabeçalho para evitar erros de tempo limite.
 
 ## <a name="examples"></a>Exemplos
 

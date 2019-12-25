@@ -3,14 +3,14 @@ title: tipo de recurso de esquema
 description: Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma conexão de pesquisa da Microsoft.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 77c17345a6a9408a8208f73f03dd98033f2b6a36
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 2a13d797ff3b695250f7dd5cfef3bc077afe505b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704133"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870114"
 ---
 # <a name="schema-resource-type"></a>tipo de recurso de esquema
 

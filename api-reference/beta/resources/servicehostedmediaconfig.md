@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso serviceHostedMediaConfig
-description: O tipo serviceHostedMediaConfig.
+description: A mídia que está hospedada remotamente.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: edefba3e415a50322022e4549fbecbd37da6d1da
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 405f6b40260908d7492a3b02c8535588c8475ca8
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006540"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870086"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso serviceHostedMediaConfig
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo serviceHostedMediaConfig.
+A mídia que está hospedada remotamente. Isso é herdado de [mediaConfig](mediaconfig.md).
 
 ## <a name="properties"></a>Propriedades
 

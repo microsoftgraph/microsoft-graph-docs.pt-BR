@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 71ff9c4eb4e22b20e9c4d9b9ebb7b78ccb6f18f0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5980cb2db52a5c418d69b8c786a5b6f51123e3b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008520"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870105"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Usar a API do Microsoft Graph para detecção e proteção contra ameaças de segurança (visualização)
 
@@ -20,7 +20,7 @@ A sofisticação de ameaças à segurança continua a ser escalonada, afetando a
 
 O gráfico de segurança inteligente reúne a inteligência de segurança de dentro da Microsoft, de centros de operações de segurança e parceiros de todo o mundo para formar um ecossistema de soluções de segurança integradas. Usando o Machine Learning, o monitoramento comportamental e a escala da nuvem, o gráfico de segurança inteligente pode melhor proteger, detectar e responder a ameaças de forma rápida e abrangente. A [API de segurança](security-api-overview.md) conecta você ao [gráfico de segurança inteligente](https://www.microsoft.com/en-us/security/intelligence-security-api), capacitando-o com soluções acionáveis e holísticas.
 
-A [API de eventos de risco de proteção de identidade](identityprotection-root.md) fornece acesso fácil aos clientes do Azure ad Premium P1 e P2 para consultar detecções de [risco feitas pela proteção de identidade](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started) e usar esses eventos em sistemas Siem e aplicativos de segurança.
+A [API de eventos de risco de proteção de identidade](identityprotection-root.md) fornece acesso fácil aos clientes do Azure ad Premium P1 e P2 para consultar detecções de [risco feitas pela proteção de identidade](/azure/active-directory/active-directory-identityprotection-graph-getting-started) e usar esses eventos em sistemas Siem e aplicativos de segurança.
 
 ## <a name="see-also"></a>Confira também
 

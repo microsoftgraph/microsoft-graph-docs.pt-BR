@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 31c25211efbca8ae0f52a9348ad0531ea818397f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d698aa85f38061ce22d63f37ea3deca3635ba219
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974511"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870950"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o [recurso termos de uso do Azure Active Directory de](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) acordo com seu cenário.
+Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o [recurso termos de uso do Azure Active Directory de](/azure/active-directory/active-directory-tou) acordo com seu cenário.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,14 +35,14 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome para exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome para exibição do contrato.|
 |id|String| Somente leitura.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|arquivos|[](agreementfile.md) coleção agreementfile|Somente leitura. PDFs vinculados a este contrato.|
+|arquivos|coleção [agreementfile](agreementfile.md)|Somente leitura. PDFs vinculados a este contrato.|
 
 ## <a name="json-representation"></a>Representação JSON
 

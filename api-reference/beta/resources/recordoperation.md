@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso recordOperation
-description: O tipo recordOperation
+description: Contém informações relacionadas à gravação de áudio.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 22b1fbd157b6b13d0b839a898440ee289aa2ec73
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 837540c55bb6573828efe87ee0c7ae333335ea11
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006554"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870135"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo recordOperation
+Contém informações relacionadas à gravação de áudio.
 
 ## <a name="properties"></a>Propriedades
 

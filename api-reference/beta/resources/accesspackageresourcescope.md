@@ -5,18 +5,20 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7bfa2f617e746aee17a62a7550c41e3de54f47cd
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1418e2cb21a1023e864d842b760006e05f3afb03
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939513"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870959"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>tipo de recurso accessPackageResourceScope
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No [Azure ad pretitulation Management](entitlementmanagement-root.md), um escopo de recurso de pacote do Access é uma referência a um escopo dentro de um recurso, para aqueles recursos que têm vários escopos.
+
+Você pode determinar o escopo de recurso do pacote de acesso para um recurso que já tenha sido adicionado a um pacote do Access, usando [list accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) para retornar uma coleção de objetos [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) .
 
 ## <a name="properties"></a>Propriedades
 

@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso chatInfo
-description: Informações sobre uma mensagem no Microsoft Teams.
+description: Contém informações associadas às reuniões do Microsoft Teams.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1cf5dc67aa4a3db8b495f8942f64e05ba0bbc6a4
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 5801ad39c3e977740825f14da18568a488e77695
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006716"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870355"
 ---
 # <a name="chatinfo-resource-type"></a>tipo de recurso chatInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações sobre uma mensagem no Microsoft Teams.
+Contém informações associadas às reuniões do Microsoft Teams.
 
 ## <a name="properties"></a>Propriedades
 

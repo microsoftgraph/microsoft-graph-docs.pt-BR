@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 7fb6fb1751f830515cf5cab77abe83f3984de4ab
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 8cf41b6a69c0154eda59068e39a4d5d6d4cd80d2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895340"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870278"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -587,10 +587,10 @@ ms.locfileid: "39895340"
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11    |
-| preset12 | 3,6    |
-| preset13 | Treze    |
-| preset14 | 14    |
+| preset11 | 11     |
+| preset12 | 12     |
+| preset13 | 13     |
+| preset14 | 14     |
 | preset15 | 15     |
 | preset16 | 16     |
 | preset17 | 17     |
@@ -698,7 +698,7 @@ Enumeração para tipos de valor do registro, conforme definido pelos [tipos de 
 | nenhuma              | 8      | REG_NONE tipo de valor do registro.                |
 | QWORD             | 9      | REG_QWORD tipo de valor do registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro. |
-| v                | 11    | REG_SZ tipo de valor do registro.                  |
+| v                | 11     | REG_SZ tipo de valor do registro.                  |
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -1103,3 +1103,77 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |Alta|1 |
 |Baixo|2 |
 
+### <a name="threatassessmentcontenttype-values"></a>valores de threatAssessmentContentType
+
+| Membro | Valor | Descrição             |
+|:-------|:------|:------------------------|
+| Email   | 1      | Ameaça de email.            |
+| url    | 2      | Ameaça de URL.             |
+| file   | 3      | Ameaça do arquivo de anexo. |
+
+### <a name="threatexpectedassessment-values"></a>valores de threatExpectedAssessment
+
+| Membro  | Valor | Descrição                       |
+|:--------|:------|:----------------------------------|
+| Larga   | 1      | A ameaça deve ser bloqueada.     |
+| bloqueia | 2      | A ameaça não deve ser bloqueada. |
+
+### <a name="threatcategory-values"></a>valores de threatCategory
+
+| Membro             | Valor | Descrição        |
+|:-------------------|:------|:-------------------|
+| electrónico               | 1      | Ameaça de spam.       |
+| fraude           | 2      | Ameaça de phishing.   |
+| software            | 3      | Ameaça de malware.    |
+| unknownFutureValue | 4      | Um membro Sentinel. |
+
+### <a name="threatassessmentstatus-values"></a>valores de threatAssessmentStatus
+
+| Membro    | Valor | Descrição                              |
+|:----------|:------|:-----------------------------------------|
+| função   | 1      | A avaliação de ameaças ainda está em andamento. |
+| Completed | 2      | A avaliação de ameaças foi concluída.         |
+
+### <a name="threatassessmentrequestsource-values"></a>valores de threatAssessmentRequestSource
+
+| Membro        | Valor | Descrição              |
+|:--------------|:------|:-------------------------|
+| indefinido     | ,0     | Ainda não conhece.            |
+| user          | 1      | Envio do usuário.         |
+| administrador | 2      | Envio de administrador de locatários. |
+
+### <a name="threatassessmentresulttype-values"></a>valores de threatAssessmentResultType
+
+| Membro             | Valor | Descrição                                          |
+|:-------------------|:------|:-----------------------------------------------------|
+| checkPolicy        | 1      | O resultado da verificação de política, `mail` apenas para avaliação. |
+| reexaminar             | 2      | O resultado da nova verificação.                                   |
+| unknownFutureValue | 3      | Um membro Sentinel.                                   |
+
+### <a name="maildestinationroutingreason-values"></a>valores de mailDestinationRoutingReason
+
+| Membro                | Valor | Descrição                         |
+|:----------------------|:------|:------------------------------------|
+| nenhuma                  | ,0     | Ainda não conhece.                       |
+| mailFlowRule          | 1      | Regra de transporte do Exchange.            |
+| safeSender            | 2      | Lista de remetentes seguros.                   |
+| blockedSender         | 3      | Lista de remetentes bloqueados.                |
+| advancedSpamFiltering | 4      | Opção de flitering de spam avançada.     |
+| domainAllowList       | 5      | Lista de permissões de domínio do remetente.           |
+| domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
+| notInAddressBook      | 7      | Excluir o remetente não está no catálogo de endereços. |
+| firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
+| autoPurgeToInbox      | 9      | Mensagem de movimentação de viagem para a caixa de entrada.   |
+| autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
+| autoPurgeToDeleted    | 11     | Mensagem de movimentação de viagens para exclusão. |
+| saída              | 12     | Emails de saída.                      |
+| Não é lixo eletrônico               | 13     | Permitir por não ser lixo eletrônico.              |
+| desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
+| unknownFutureValue    | 15     | Um membro Sentinel.                  |
+
+### <a name="threatassessmentrequestpivotproperty-values"></a>valores de threatAssessmentRequestPivotProperty
+
+| Membro                       | Valor | Descrição                                                            |
+|:-----------------------------|:------|:-----------------------------------------------------------------------|
+| threatCategory               | 1      | Agregar solicitação de avaliação `threatCategory`de ameaça por.               |
+| mailDestinationRoutingReason | 2      | Agregar solicitação de avaliação `mailDestinationRoutingReason`de ameaça por. |

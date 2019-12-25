@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3eff83475c4a36ec1c294c62b9e1b87673926d8d
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: fa87acd2065a3a56f15016bb7708e73cebe63a31
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895570"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870156"
 ---
 # <a name="openshift-resource-type"></a>tipo de recurso openShift
 
@@ -22,9 +22,9 @@ Representa um turno não atribuído e aberto em um [cronograma](../resources/sch
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Get](../api/openshift-get.md) | [openShift](openshift.md) | Leia as propriedades e os relacionamentos do objeto openShift. |
-| [Update](../api/openshift-update.md) | [openShift](openshift.md) | Atualize o objeto openShift. |
-| [Delete](../api/openshift-delete.md) | None | Exclua o objeto openShift. |
+| [Get](../api/openshift-get.md) | [openShift](openshift.md) | Leia as propriedades e os relacionamentos de um objeto **openShift** . |
+| [Update](../api/openshift-update.md) | [openShift](openshift.md) | Atualize um objeto **openShift** . |
+| [Delete](../api/openshift-delete.md) | None | Excluir um objeto **openShift** . |
 
 ## <a name="properties"></a>Propriedades
 

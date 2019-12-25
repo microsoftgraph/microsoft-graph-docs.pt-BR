@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso mediaStream
-description: O tipo mediaStream.
+description: Contém informações sobre o canal de mídia.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 63fad1d064c4ab967bba6df8bed6dbcdd20a3d69
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: de5c90453d9adb657c2df5ee761d847056664037
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006652"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870177"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo mediaStream.
+Contém informações sobre o canal de mídia.
 
 ## <a name="properties"></a>Propriedades
 
@@ -25,7 +25,7 @@ O tipo mediaStream.
 | direction   | String  | A direção. Os valores possíveis são `inactive`: `sendOnly` `receiveOnly`,, `sendReceive`,.                  |
 | rótulo       | String  | O rótulo do fluxo de mídia.                                                                                       |
 | Mídia   | String  | O tipo de mídia. O valor possível é `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Booliano | Se a mídia estiver com mudo ativado pelo servidor.                                                                          |
+| serverMuted | Booliano | Indica se a mídia está com mudo ativado pelo servidor.                                                                          |
 | sourceId    | String  | A ID da fonte.                                                                                                |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -47,22 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "mediaType": "unknown | audio | video | videoBasedScreenSharing | data",
   "serverMuted": true,
   "sourceId": "String"
-}
-```
-
-## <a name="example"></a>Exemplo
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.mediaStream"
-}-->
-```json
-{
-  "direction": "sendReceive",
-  "label": "main-audio",
-  "mediaType": "audio",
-  "serverMuted": false,
-  "sourceId": "1024"
 }
 ```
 

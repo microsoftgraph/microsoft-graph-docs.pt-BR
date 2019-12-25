@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso invitationParticipantInfo
-description: O **InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
+description: Representa uma entidade que está sendo convidada para uma chamada de grupo.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 762e5dc75c03cda78581b90b54c3fea27a7f12f2
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: bddce0358bfa0ec46d8231958817002cb4ca8c20
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636663"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870219"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Este recurso é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
+Representa uma entidade que está sendo convidada para uma chamada de grupo. 
 
 ## <a name="properties"></a>Propriedades
 

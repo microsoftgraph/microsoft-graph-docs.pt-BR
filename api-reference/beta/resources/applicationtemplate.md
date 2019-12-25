@@ -5,18 +5,18 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4a8e1f4cb365f86df32e32ed568aa3a96d1c090f
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 0c34c083a4cfee63db724228d9390c7452ca5a92
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35147887"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870943"
 ---
 # <a name="applicationtemplate-resource-type"></a>tipo de recurso applicationtemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um aplicativo na [Galeria de aplicativos do Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list).
+Representa um aplicativo na [Galeria de aplicativos do Azure ad](/azure/active-directory/saas-apps/tutorial-list).
 
 ## <a name="methods"></a>Métodos
 
@@ -31,11 +31,11 @@ Representa um aplicativo na [Galeria de aplicativos do Azure ad](https://docs.mi
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|categories|Coleção de cadeias de caracteres|A lista de categorias para o aplicativo. Os valores com suporte podem `Collaboration`ser `Business Management`: `Consumer`,`Content management`, `CRM`, `Data services` `Developer services`,, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity` ,,,,, , `Project management`, `Telecommunications`, `Tools, Travel`, e `Web design & hosting`.|
+|categories|Coleção de cadeias de caracteres|A lista de categorias para o aplicativo. Os valores com suporte podem `Collaboration`ser `Business Management`: `Consumer`,`Content management`, `CRM`, `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel`,,,,,,,,,,,,,,,,,,,,,,,,,, e `Web design & hosting` `Health` `Human resources`|
 |descrição|String|Uma descrição do aplicativo.|
-|displayName|String|O nome do aplicativo.|
+|displayName|Cadeia de caracteres|O nome do aplicativo.|
 |homePageUrl|String|A URL da home page do aplicativo.|
-|id|Cadeia de caracteres| Identificador exclusivo do aplicativo. Somente leitura.|
+|id|String| Identificador exclusivo do aplicativo. Somente leitura.|
 |logoUrl|String|A URL para obter o logotipo para este aplicativo.|
 |publicador|String|O nome do editor para este aplicativo.|
 |supportedProvisioningTypes|Coleção de cadeias de caracteres|A lista de modos de provisionamento compatíveis com este aplicativo. O único valor válido é `sync`.|

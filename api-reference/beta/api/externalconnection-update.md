@@ -3,14 +3,14 @@ title: Atualizar externalConnection
 description: Atualizar as propriedades de um externalConnection.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 33dd46c03056026337713b35197be5a65ed17485
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 3ae9e9171cf153b84d8678cec25965779d8c1398
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747194"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869735"
 ---
 # <a name="update-connection"></a>Atualizar conexão
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,8 +52,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade      | Tipo                                           | Descrição |
 |:--------------|:-----------------------------------------------|:------------|
 | Configuration | [configuration](../resources/configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar o conteúdo na conexão. |
-| description   | String                                         | Descrição da conexão exibida no centro de administração do Microsoft 365. |
-| name          | Cadeia de caracteres                                         | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
+| descrição   | String                                         | Descrição da conexão exibida no centro de administração do Microsoft 365. |
+| nome          | String                                         | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
 
 ## <a name="response"></a>Resposta
 

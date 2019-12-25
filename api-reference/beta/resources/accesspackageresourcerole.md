@@ -5,18 +5,24 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b5ae5d321ac5fec86801ca11f60ead8a276fd73
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 21cda352cb887a377248a3fbbf16a761773128ba
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938916"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870419"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>tipo de recurso accessPackageResourceRole
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de pacote do Access é uma referência a uma função definida em um recurso, que pode ser usada em um pacote do Access.
+
+## <a name="methods"></a>Métodos
+
+| Método       | Tipo de retorno | Descrição |
+|:-------------|:------------|:------------|
+| [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | coleção [accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos accessPackageResourceRole para um catálogo. |
 
 ## <a name="properties"></a>Propriedades
 

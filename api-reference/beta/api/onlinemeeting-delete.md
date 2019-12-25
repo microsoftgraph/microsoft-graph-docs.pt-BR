@@ -1,92 +1,78 @@
 ---
-title: Excluir externalConnection
-description: Excluir um externalConnection.
+title: Excluir onlineMeeting
+description: Excluir uma reunião online.
+author: ananmishr
 localization_priority: Normal
-author: snlraju-msft
-ms.prod: search
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ab69d1c90b0f3e0767c339dd1d0e4b44020ce4b0
+ms.openlocfilehash: d6b5f0afa09bf88c9f070ef88adda2f5be20c50f
 ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869775"
+ms.locfileid: "40871718"
 ---
-# <a name="delete-externalconnection"></a>Excluir externalConnection
+# <a name="delete-onlinemeeting"></a>Excluir onlineMeeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [externalConnection](../resources/externalconnection.md).
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Excluir um objeto [onlineMeeting](../resources/onlinemeeting.md) .
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
-
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
+| :-------------- | :----------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetings.ReadWrite              |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
+| Application                            | Sem suporte.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
-DELETE /external/connections/{id}
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+O exemplo a seguir mostra a solicitação.
 
-Este é um exemplo de solicitação.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_connection"
+  "name": "delete-call"
 }-->
-
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-connection-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-connection-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-connection-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Resposta
-<!-- markdownlint-enable MD024 -->
-
-Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
@@ -97,12 +83,16 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
-  "description": "Delete externalConnection",
+  "description": "Delete call",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

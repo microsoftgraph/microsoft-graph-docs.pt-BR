@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e2191102e62cacadddcbbbb270b6afe16af93ff9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 4d74380ab35e90002af2919b67b63b4a50fb7dcd
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356230"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869624"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 
@@ -29,6 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Application | Group.Read.All, Directory.Read.All |
 
 > Observação: para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
  
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

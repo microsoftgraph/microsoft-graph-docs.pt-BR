@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 28f9956c065e59a0db1ffbd0b82175546d3e5139
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c1bae369b71744e69753b9e7b38e5b193db00a7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973108"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870334"
 ---
 # <a name="datetimetimezone-resource-type"></a>tipo de recurso dateTimeTimeZone
 
@@ -22,11 +22,11 @@ Descreve a data, a hora e o fuso horário de um ponto no tempo.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |dateTime|Cadeia de caracteres|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`). Por exemplo, "2019-04-16T09:00:00".|
-|timeZone|Cadeia de caracteres|Representa um fuso horário, por exemplo, "hora padrão do Pacífico". Confira abaixo os valores possíveis.|
+|timeZone|Cadeia de caracteres|Representa um fuso horário, por exemplo, "Hora Padrão do Pacífico". Confira abaixo os valores possíveis.|
 
-Em geral, a **** Propriedade timeZone _pode_ ser definida para qualquer um dos [fusos horários atualmente com suporte no Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones), bem como os [fusos horários adicionais suportados pela API de calendário](#additional-time-zones). 
+Em geral, a propriedade**timeZone** _pode_ ser definida como qualquer um dos [fusos horários com suporte no Windows](/windows-hardware/manufacture/desktop/default-time-zones), bem como [os fusos horários adicionais com suporte da API do calendário](#additional-time-zones).
 
-Ao usar o **dateTimeTimeZone** em conjunto com um método (como [criar](../api/user-post-events.md) ou [Atualizar](../api/event-update.md) um evento), anote os fusos horários reais compatíveis, que podem ser um subconjunto menor.
+Ao usar **dateTimeTimeZone** em conjunto com um método (como por exemplo, [criar](../api/user-post-events.md) ou [atualizar](../api/event-update.md) um evento), anote os fusos horários que têm suporte, o que podem ser um subconjunto menor.
 
 ### <a name="additional-time-zones"></a>Fusos horários adicionais
 
