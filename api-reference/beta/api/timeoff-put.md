@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9288ed6db5111b99f4cf0f7488d81626678f90dc
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: eabdfe2eb57cf5b2a4dd3917df756a8e144f3a71
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895287"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863655"
 ---
 # <a name="replace-timeoff"></a>Substituir timeOff
 
@@ -28,7 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Application | Schedule. ReadWrite. All *  |
+
+>\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
@@ -45,7 +47,7 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

@@ -3,14 +3,14 @@ title: tipo de recurso externalConnection
 description: Uma conexão com a Microsoft Search a partir de uma fonte externa.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 78752e2fe3375c10dcce57e3ba23e890b0ab66b5
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 4a77afc0aeef6c68d7bd58e554848068f25e1142
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704175"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866837"
 ---
 # <a name="externalconnection-resource-type"></a>tipo de recurso externalConnection
 
@@ -38,9 +38,9 @@ Uma conexão com a Microsoft Search a partir de uma fonte externa.
 | Propriedade      | Tipo                              | Descrição |
 |:--------------|:----------------------------------|:------------|
 | Configuration | [configuration](configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar o conteúdo na conexão. Opcional. |
-| description   | Cadeia de caracteres                            | Descrição da conexão exibida no centro de administração do Microsoft 365. Opcional. |
+| descrição   | Cadeia de caracteres                            | Descrição da conexão exibida no centro de administração do Microsoft 365. Opcional. |
 | id            | String                            | ID exclusiva fornecida pelo desenvolvedor da conexão dentro do locatário do Azure Active Directory. Comprimento máximo de 32 caracteres. Deve conter apenas caracteres alfanuméricos. Não pode começar `Microsoft` com um dos seguintes valores: `None` `Directory`,, `Exchange`, `ExchangeArchive`, `LinkedIn`, `Mailbox`, `MicrosoftSearch`, `OneDriveBusiness`, `SharePoint`, `Teams`,,, `Yammer`, `Connectors`,,,,,,,. Obrigatório. |
-| name          | String                            | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
+| nome          | String                            | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 

@@ -1,16 +1,16 @@
 ---
 title: 'timeOffRequest: aprovar'
-description: Aprovar um timeoffrequest. "
+description: Aprovar um objeto timeoffrequest. "
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 631461eba5bab8f15bc392d59e9800f1b65be5a3
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 5df1ebc343bc22b359e889c31743f3c321c86f9d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895525"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863656"
 ---
 # <a name="timeoffrequest-approve"></a>timeOffRequest: aprovar
 
@@ -26,7 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+|Application | Schedule. ReadWrite. All *  |
+
+>\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +42,8 @@ POST /teams/{id}/schedule/timeOffRequests/approve
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {token} |
+| Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -48,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|mensagem|String|Uma mensagem de aprovação personalizada.|
+|mensagem|String|Mensagem de aprovação personalizada.|
 
 ## <a name="response"></a>Resposta
 
@@ -61,6 +64,8 @@ Veja a seguir um exemplo de como chamar essa API.
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffrequest_approve"
@@ -74,6 +79,16 @@ Content-type: application/json
   "message": "message-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoffrequest-approve-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timeoffrequest-approve-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

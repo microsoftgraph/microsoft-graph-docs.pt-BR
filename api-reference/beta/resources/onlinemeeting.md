@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 64b2c1880edafe1241367ac91889440a513964d9
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: e7cae71f220a2a519908e3af890029a2da555577
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006610"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866683"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
@@ -29,21 +29,18 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 
 | Propriedade                  | Tipo                                                   | Descrição                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | A configuração que especifica o tipo de participantes que será automaticamente permitido na reunião online. Somente leitura. Os valores possíveis são `everyone`: `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`,,`organizer`|
+| autoAdmittedUsers         | String                                                 | A configuração que especifica o tipo de participantes que será automaticamente permitido na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura.|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | As informações de acesso de telefone (discagem) para uma reunião online. Somente leitura. |
-| canceledDateTime          | DateTime                                               | A hora em UTC quando a reunião foi cancelada. Somente leitura. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | As informações de chat associadas a esta reunião online. |
 | creationDatetime          | DateTime                                               | O horário de criação da reunião em UTC. Somente leitura. |
 | startDateTime             | DateTime                                               | A hora de início da reunião em UTC. |
 | endDateTime               | DateTime                                               | A hora de término da reunião em UTC. |
 | id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
-| IsCanceled                | Booliano                                                | Indica se a reunião foi cancelada. Somente leitura. |
-| joinUrl                   | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
-| isbroadcast               | Booliano                                                | Indica se a reunião é uma reunião de transmissão. |
+| joinWebUrl                   | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
-| capabilities              | String collection                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
-| videoTeleconferenceId     | String                                                 | A ID de teleconferência do videio. Somente leitura. |
+| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
+| capabilities              | Coleção de cadeias de caracteres                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
+| videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. Somente leitura. |
 
 ### <a name="autoadmittedusers-values"></a>valores de autoAdmittedUsers
 | Valor | Descrição  |
@@ -68,14 +65,11 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 {
   "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "canceledDateTime": "String (timestamp)",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isCanceled": false,
-  "joinUrl": "String",
-  "isBroadcast": false,
+  "joinWebUrl": "String",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",

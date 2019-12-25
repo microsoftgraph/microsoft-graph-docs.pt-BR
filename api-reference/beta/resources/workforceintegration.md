@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa604c7d087d3231dd6ed1c6903a87f80298904b
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 631f2cc52b9327d77edd6fc5ad48292cf044570f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895562"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866487"
 ---
 # <a name="workforceintegration-resource-type"></a>tipo de recurso workforceIntegration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma instância de uma integração do workforceforce com turnos.
+Uma instância de uma integração de força de funcionários com turnos.
 
 ## <a name="methods"></a>Métodos
 

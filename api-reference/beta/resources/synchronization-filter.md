@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afc100b7f75554506a7752036dc9bdeb856ca72f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 09524f1c54b760a8ec6f921967572ad1b68db8cf
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964813"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866571"
 ---
 # <a name="filter-resource-type"></a>tipo de recurso de filtro
 
@@ -22,7 +22,7 @@ O filtro faz parte do [mapeamento de objetos](synchronization-objectmapping.md).
 
 Um objeto é considerado em escopo para o conjunto de grupos (o conjunto de grupos `true`é avaliado como) se qualquer um dos grupos no conjunto for `true`avaliado como.
 
-Para mais informações, consulte [provisionamento de aplicativo baseado em atributo com filtros de escopo](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-scoping-filters)
+Para mais informações, consulte [provisionamento de aplicativo baseado em atributo com filtros de escopo](/azure/active-directory/active-directory-saas-scoping-filters)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

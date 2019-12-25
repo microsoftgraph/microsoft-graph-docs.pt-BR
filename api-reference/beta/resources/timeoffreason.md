@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 62943670a0c87d34fd849e988ef5bf827aa6d72a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 514ca74bb9826546e95f225e394e8fc07a0f674f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964274"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866515"
 ---
 # <a name="timeoffreason-resource-type"></a>tipo de recurso timeOffReason
 
@@ -22,11 +22,11 @@ Uma razão válida para uma instância do [timeOff](timeoff.md) em um [cronogram
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Criar uma página `timeOffReason`.|
-|[Listar timeOffReason](../api/schedule-list-timeoffreasons.md) | coleção [timeOffReason](timeoffreason.md) | Obter uma lista dos `timeOffReasons` em um cronograma.|
-|[Obter timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obter um `timeOffReason` por ID.|
-|[Substituir timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Substituir um `timeOffReason`.|
-|[Excluir timeOffReason](../api/timeoffreason-delete.md) | Nenhum | Marcar `timeOffReason` como inativa.|
+|[Criar](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Criar um novo **timeOffReason**.|
+|[List](../api/schedule-list-timeoffreasons.md) | coleção [timeOffReason](timeoffreason.md) | Obtenha a lista de **timeOffReason** em um cronograma.|
+|[Get](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obtenha um **timeOffReason** por ID.|
+|[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Substitua um **timeOffReason**.|
+|[Delete](../api/timeoffreason-delete.md) | Nenhum | Marcar um **timeOffReason** como inativo.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                 |

@@ -5,16 +5,19 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: ae53a9ee3f9687a9bc4f248804c2e4c9060953f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7b3abf4a0cee4f2d81a36fba9b27690e4411e6cf
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979096"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867824"
 ---
 # <a name="get-leakedcredentialsriskevent"></a>Obter leakedCredentialsRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Recupere as propriedades e os relacionamentos de um objeto leakedcredentialsriskevent.
 ## <a name="permissions"></a>Permissões
@@ -24,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | IdentityRiskEvent.Read.All |
+|Application | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

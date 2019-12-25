@@ -1,22 +1,22 @@
 ---
 title: 'Call: cancelMediaProcessing'
-description: Cancela o processamento de mídia para todas as operações de PlayPrompt ou registro em andamento.
+description: Cancela o processamento de mídia para qualquer operação PlayPrompt ou RecordResponse em andamento.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1463489c82d1595e1bdcaa9629e5f306b95aa19f
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: cf5b6da2bf657fb999a5c9e4df06e1a8841b7942
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006358"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868279"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: cancelMediaProcessing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancela o processamento de mídia para todas as operações de PlayPrompt ou registro em andamento.
+Cancela o processamento de todas as operações de [resposta de gravação](./call-record.md) ou [aviso de execução](./call-playprompt.md) em andamento.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,17 +39,17 @@ POST /communications/calls/{id}/cancelMediaProcessing
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| todos os            | Booliano | O sinalizador que indica se todas as operações ou o atual devem ser interrompidos. |
 | clientContext  | String  | O contexto do cliente.                                            |
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` o código de resposta e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Se tiver êxito, este método retornará `200 OK` um código de resposta http e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -69,7 +69,6 @@ Content-Type: application/json
 Content-Length: 62
 
 {
-  "all": true,
   "clientContext": "clientContext-value"
 }
 ```
@@ -104,13 +103,14 @@ Content-Type: application/json
 Content-Length: 259
 
 {
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "@odata.type": "#microsoft.graph.cancelMediaProcessingOperation",
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5"
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação-operação concluída
+##### <a name="notification---operation-canceled-for-recordresponse"></a>Notificação-operação cancelada para recordResponse
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -130,11 +130,21 @@ Content-Type: application/json
       "changeType": "deleted",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.recordOperation",
         "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
+        "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+        "status": "failed",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 400,
+          "subcode": 8508,
+          "message": "Action falied, the operation was cancelled."
+        },
+        "recordingLocation": "",
+        "recordingAccessToken": "",
+        "completionReason": "operationCanceled"
       }
     }
   ]

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ff9de522e96ea6cec614d8673d8f85987ac88908
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: ab0380bca750f53e4f89c32c072843fd53849675
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636719"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868286"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -18,9 +18,7 @@ ms.locfileid: "39636719"
 
 Habilite um bot para atender a uma [chamada](../resources/call.md)de entrada. A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se for recebido um convite para uma chamada de grupo, a notificação conterá os parâmetros [chatInfo](../resources/chatinfo.md) e [meetingInfo](../resources/meetinginfo.md) .
 
-O bot deve responder ou [rejeitar](./call-reject.md) a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.
-
-> **Observação:** O bot só pode ser acessado por VoIP. Não há suporte para a chamada PSTN.
+O bot deve responder, [rejeitar](./call-reject.md) ou [redirecionar](./call-redirect.md) a chamada antes que a chamada expire. O valor de tempo limite atual é de 15 segundos.
 
 ## <a name="permissions"></a>Permissões
 Você não precisa de nenhuma permissão para responder a uma chamada ponto a ponto. Você precisa de uma das seguintes permissões para ingressar em uma chamada de grupo. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

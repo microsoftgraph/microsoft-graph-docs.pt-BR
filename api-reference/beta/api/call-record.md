@@ -1,31 +1,32 @@
 ---
-title: 'Call: Record'
-description: Grave um clipe de áudio curto da chamada. Isso será útil se o bot quiser capturar uma resposta de voz do chamador seguindo um prompt.
+title: 'Call: recordResponse'
+description: Grave uma resposta de áudio curta do chamador. Isso será útil se o bot quiser capturar uma resposta de voz do chamador seguindo um prompt.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2961bacfa9092aa580801e42e44aa1d2adbfaa97
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: fac72a4f0436980fd143d9a9011a6bd73c2c3c76
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636698"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868258"
 ---
-# <a name="call-record"></a>Call: Record
+# <a name="call-recordresponse"></a>Call: recordResponse
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gravar um clipe de áudio curto de uma chamada.
+Grave uma resposta de áudio curta do chamador.
+
 Um bot pode usá-la para capturar uma resposta de voz de um chamador depois de ser solicitada uma resposta.
 
-Para obter mais informações sobre como lidar com operações, confira [commsOperation](../resources/commsOperation.md)
+Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsOperation.md)
 
->**Observação:** Isso só é suportado para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+>**Observação:** Essa API tem suporte apenas para [chamadas](../resources/call.md) iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-Esta ação não deve ser registrada em toda a chamada. O tamanho máximo da gravação é de 5 minutos. A gravação não é salva permanentemente pela plataforma de comunicação na nuvem e é descartada logo após o término da chamada. O bot deve baixar a gravação imediatamente após a conclusão da operação de gravação usando o valor recordingLocation fornecido na notificação de conclusão.
+Esta ação não deve ser registrada em toda a chamada. O tamanho máximo da gravação é de 2 minutos. A gravação não é salva permanentemente pela plataforma de comunicação na nuvem e é descartada logo após o término da chamada. O bot deve baixar a gravação imediatamente após a conclusão da operação de gravação usando o valor recordingLocation fornecido na notificação de conclusão.
 
->**Observação:** Qualquer mídia coletada pode **não** ser persistente. Certifique-se de que você está em conformidade com as leis e regulamentos da sua área quando se trata de gravação de chamada. Consulte um advogado legal para obter mais informações.
+>**Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,8 +40,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/calls/{id}/record
-POST /communications/calls/{id}/record
+POST /app/calls/{id}/recordResponse
+POST /communications/calls/{id}/recordResponse
 ```
 > **Observação:** o caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 
@@ -48,28 +49,31 @@ POST /communications/calls/{id}/record
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type| application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|prompts|coleção [mediaPrompt](../resources/mediaprompt.md) | Coleção de prompts a serem executados (se houver) antes da gravação começar. Os clientes podem optar por especificar a ação "playPrompt" separadamente ou especificar como parte de "Record"-principalmente todos os registros são precedidos por um prompt. O suporte atual é apenas para um único prompt como parte do conjunto. |
-|bargeInAllowed|Booliano| Se for true, essa solicitação de registro será Barge em outras solicitações de registro/playprompt da fila existente/no momento. Padrão = false. |
-|initialSilenceTimeoutInSeconds | Int32| Silêncio inicial máximo (silêncio do usuário) permitido a partir da hora em que começamos a operação de registro antes do tempo limite e falha na operação. Se estivermos reproduzindo um prompt, este cronômetro será iniciado após a conclusão do prompt. Padrão = 5 segundos, mín = 1 segundo, máx. = 300 segundos |
-|maxSilenceTimeoutInSeconds|Int32| Tempo máximo de silêncio (pausa) permitido após um usuário começar a falar. Padrão = 5 segundos, mín = 1 segundo, máximo = 300 segundos.|
-|maxRecordDurationInSeconds|Int32| Duração máxima de uma operação de registro antes de parar a gravação. Padrão = 5 segundos, mín = 1 segundo, máximo = 300 segundos.|
+|prompts|Coleção [MediaPrompt](../resources/mediaprompt.md) | Os prompts a serem reproduzidos. O tamanho máximo da coleção mediaPrompt compatível é 1.|
+|bargeInAllowed|Booliano| Se for true, a solicitação recordResponse será Barge para outras solicitações de registro/playprompt em fila existentes/em processamento no momento. Padrão = false. |
+|initialSilenceTimeoutInSeconds | Int32| Silêncio inicial máximo (silêncio do usuário) permitido a partir da hora em que começamos a operação de resposta de registro antes do tempo limite e falha na operação. Se estivermos reproduzindo um prompt, este cronômetro será iniciado após a conclusão do prompt. Padrão = 5 segundos, mín = 1 segundo, máx. = 120 segundos |
+|maxSilenceTimeoutInSeconds|Int32| Tempo máximo de silêncio (pausa) permitido após um usuário começar a falar. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
+|maxRecordDurationInSeconds|Int32| Duração máxima para a operação recordResponse antes de parar a gravação. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
 |playBeep|Booliano| Se true, reproduz um aviso sonoro para indicar ao usuário que eles podem começar a gravar suas mensagens. Padrão = true.|
 |stopTones|Coleção de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
+> **Observação:** O tempo máximo de gravação foi reduzido de cinco minutos para 2 minutos.
+
 ## <a name="response"></a>Resposta
-Este método retorna um `200 OK` código de resposta e um cabeçalho de local com um URI para o [recordOperation](../resources/recordoperation.md) criado para essa solicitação.
+Este método retorna um `200 OK` código de resposta http e um cabeçalho de local com um URI para o [recordOperation](../resources/recordoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
 
-### <a name="example-1-record-a-short-audio-clip-from-a-call"></a>Exemplo 1: gravar um clipe de áudio curto de uma chamada
+### <a name="example-1-records-a-short-audio-response-from-the-caller"></a>Exemplo 1: grava uma breve resposta de áudio do chamador
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -78,10 +82,10 @@ O exemplo a seguir mostra a solicitação.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-record"
+  "name": "call-recordResponse"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/record
+POST https://graph.microsoft.com/beta/communications/calls/{id}/recordResponse
 Content-Type: application/json
 Content-Length: 394
 
@@ -173,7 +177,7 @@ Content-Type: application/json
 
 ### <a name="example-2-retrieving-the-recording-file"></a>Exemplo 2: Recuperando o arquivo de gravação
 
-> **Observação:** Embora você possa buscar a gravação e processá-la, você **deve** excluí-la posteriormente. Não é possível persistir a mídia.
+> **Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 ##### <a name="request"></a>Solicitar
 
@@ -200,12 +204,14 @@ Content-Type: application/octet-stream
 (application/octet-stream of size 160696 bytes)
 ```
 
+> **Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "call: record",
+  "description": "call: recordResponse",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

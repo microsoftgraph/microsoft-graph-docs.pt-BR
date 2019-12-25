@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4b35c2c56c7033cd668b311c17169f5c719e5948
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: fb03e368a8a9c5cf929f314714a3a5d2fdee4b93
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062079"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866844"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -18,7 +18,7 @@ ms.locfileid: "36062079"
 
 Representa um item excluído no diretório. Quando um item é excluído, ele é adicionado ao "contêiner" de itens excluídos. Itens excluídos permanecerão disponíveis para restauração por até 30 dias. Após 30 dias, esses itens serão excluídos permanentemente.
 
-Atualmente, a funcionalidade de itens excluídos apenas tem suporte para [grupos](group.md) e [usuários](users.md) do Office 365.
+Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](application.md), [grupo](group.md) e recursos do [usuário](user.md) .
 
 ## <a name="methods"></a>Métodos
 

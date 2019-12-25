@@ -5,24 +5,25 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c50b183819d7f56c6d5317a6e30840b674be750a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b528ce517bc5cd3df627c01ffc247f5aeef19015
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990782"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864933"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos no catálogo de aplicativos da sua organização
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publicar um [aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams. Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso `distributionMethod`  =  `organization`criado terá.
+Publicar um [aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams.
+Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso `distributionMethod`  =  `organization`criado terá.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
->**Observação:** Somente os administradores globais podem chamar esta API. 
+>**Observação:** Somente os administradores globais podem chamar esta API.
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
@@ -45,7 +46,9 @@ POST /appCatalogs/teamsApps
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Carga do manifesto zip do teams. Para o arquivo zip do aplicativo do Teams, [consulte criar um pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Você não pode criar um aplicativo para uma organização que tenha a mesma ID de manifesto que outro aplicativo da organização.
+Carga do manifesto zip do teams.
+Para o arquivo zip do aplicativo do Teams, [consulte criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).
+Você não pode criar um aplicativo para uma organização que tenha a mesma ID de manifesto que outro aplicativo da organização.
 
 ## <a name="response"></a>Resposta
 
@@ -63,7 +66,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-Para obter informações sobre como criar um arquivo zip do aplicativo do Microsoft Teams, consulte [criar um pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+Para obter informações sobre como criar um arquivo zip do aplicativo do Microsoft Teams, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).
 
 ### <a name="response"></a>Resposta
 

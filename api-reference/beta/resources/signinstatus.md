@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d336e226b2855687da0aae889afd9d92141c895c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f86c7026fc487e48388bd3d20e973e7a0cf7e41
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008303"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866606"
 ---
 # <a name="signinstatus-resource-type"></a>tipo de recurso signInStatus
 Fornece o status de entrada (sucesso ou falha) da entrada
@@ -21,8 +21,8 @@ Fornece o status de entrada (sucesso ou falha) da entrada
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |additionalDetails|String|Fornece detalhes adicionais sobre a atividade de entrada|
-|errorCode|Int32|Fornece o código de erro de 5 6digit que é gerado durante uma falha de entrada. Confira a [lista de códigos e mensagens de erro](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
-|failureReason|Cadeia de caracteres|Fornece a mensagem de erro ou o motivo da falha para a atividade de entrada correspondente. Confira a [lista de códigos e mensagens de erro](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|errorCode|Int32|Fornece o código de erro de 5 6digit que é gerado durante uma falha de entrada. Confira a [lista de códigos e mensagens de erro](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|failureReason|Cadeia de caracteres|Fornece a mensagem de erro ou o motivo da falha para a atividade de entrada correspondente. Confira a [lista de códigos e mensagens de erro](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 
 ## <a name="json-representation"></a>Representação JSON
 

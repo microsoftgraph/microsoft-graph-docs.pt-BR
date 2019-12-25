@@ -3,14 +3,14 @@ title: Obter connectionOperation
 description: Recupere as propriedades de um connectionOperation.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b09a9ac40cd79a8f543fcb910385d09a3d598dcb
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 99bd074aed8c24a6d1990c753c8ea5ffe537097f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747520"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868062"
 ---
 # <a name="get-connectionoperation"></a>Obter connectionOperation
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalItem.ReadWrite.All |
+| Application                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

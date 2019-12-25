@@ -6,12 +6,12 @@ title: Obter permissões
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: c2fab9362422097b5ef323b7170f8cdce49dcc2f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: fe627a2d543e78caf1fc1ee68202534d95772a01
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36725854"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867733"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 
@@ -23,7 +23,7 @@ Permissões efetivas de um item podem vir de duas fontes: permissões definidas 
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade `inheritedFrom` Esta propriedade é um recurso [itemReference](../resources/itemreference.md) que faz referência ao ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/library/cc721640.aspx#section1).
 
 ## <a name="permissions"></a>Permissões
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

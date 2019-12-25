@@ -5,18 +5,21 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2b66755924022b4fa30637cc8e97c4f944ad2d79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be2b5db09a20264525e783e05771f6d1da2783e2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005769"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866781"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>tipo de recurso impossibleTravelRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) onde dois logons de conta ocorrem a partir de locais atypical para o usuário e seria impossível viajar entre os locais na duração entre os logins. Complete as informações sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+>[!NOTE]
+>A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+Um evento de risco detectado pela [proteção de identidade do Active Directory do Azure](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) onde dois logons de conta ocorrem a partir de locais atypical para o usuário e seria impossível viajar entre os locais na duração entre as entradas. Complete as informações sobre os eventos de risco podem ser encontradas na [documentação do Azure ad Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Métodos
@@ -31,7 +34,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
 |deviceInformation|string| Informações sobre o dispositivo|
-|id|cadeia de caracteres| Somente leitura|
+|id|string| Somente leitura|
 |ipAddress|string| O endereço IP da segunda entrada|
 |isAtypicalLocation|booliano| Se um dos locais for atypical para o usuário|
 |location|cadeia de caracteres| O local anexado ao endereço IP da segunda entrada|
@@ -44,7 +47,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |riskEventType|string| O tipo de risco|
 |userAgent|string| A cadeia de caracteres do agente do usuário do navegador|
 |userDisplayName|string| O nome do usuário em risco|
-|userId|string| A identificação do usuário em risco|
+|userId|cadeia de caracteres| A identificação do usuário em risco|
 |userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
 ## <a name="relationships"></a>Relações

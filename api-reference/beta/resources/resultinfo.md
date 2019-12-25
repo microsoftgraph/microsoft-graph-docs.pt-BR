@@ -1,22 +1,27 @@
 ---
 title: tipo de recurso resultInfo
-description: O tipo resultInfo.
+description: Contém informações de resultado específicas de êxito e falha.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: acc01a17420390343c3eb1f866761d54d5c81c79
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 5cb59cb63ff7c50ba14b972991d54806eabc4f54
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006547"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866627"
 ---
 # <a name="resultinfo-resource-type"></a>tipo de recurso resultInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo resultInfo.
+Contém informações de resultado específicas de êxito e falha. 
+
+O código especifica se o resultado é um êxito ou uma falha genérica. 
+
+Os subcódigos fornecem informações complementares relacionadas ao tipo de sucesso ou falha (por exemplo, uma transferência de chamada foi bem-sucedida).
+
 
 ## <a name="properties"></a>Propriedades
 

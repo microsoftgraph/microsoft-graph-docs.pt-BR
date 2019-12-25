@@ -5,18 +5,21 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7ea0a11931021e828660cc7b03991b8ea96ef1f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47b8b7590be2d4b235bb04fe079b58cf65cb4ae7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005797"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866788"
 ---
 # <a name="identityriskevent-resource-type"></a>tipo de recurso identityRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/). É o tipo base para cada tipo de evento de risco específico:
+>[!NOTE]
+>A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/). É o tipo base para cada tipo de evento de risco específico:
 
 | Tipo de evento         | Descrição|
 |:---------------|:-----------|
@@ -27,7 +30,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |[suspiciousIpRiskEvent](suspiciousipriskevent.md) | Entradas de endereços IP suspeitos. |
 |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | Entradas de locais desconhecidos. |
 
-As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events).
+As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](/azure/active-directory/active-directory-reporting-risk-events).
 
 ## <a name="methods"></a>Métodos
 
@@ -40,13 +43,13 @@ As informações completas sobre eventos de risco podem ser encontradas na [docu
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|cadeia de caracteres| Somente leitura|
+|id|string| Somente leitura|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
 |riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
 |riskEventType|string| O tipo de risco|
 |userDisplayName|string| O nome do usuário em risco|
-|userId|string| A identificação do usuário em risco|
+|userId|cadeia de caracteres| A identificação do usuário em risco|
 |userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
 ## <a name="relationships"></a>Relações
@@ -56,7 +59,7 @@ As informações completas sobre eventos de risco podem ser encontradas na [docu
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso. 
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e4d7565cdb16eb2a6a0abb7a33344c70490e2616
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a944309d59383b8c1501495c12d937acb13adbbb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939219"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870978"
 ---
 # <a name="accesspackage-resource-type"></a>tipo de recurso accessPackage
 
@@ -28,7 +28,9 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 | [Listar accessPackages](../api/accesspackage-list.md) | coleção [accessPackage](accesspackage.md) | Recupere uma lista de objetos **accesspackage** . |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Criar um novo objeto **accesspackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um objeto **accesspackage** . |
-| [Excluir accessPackage](../api/accesspackage-delete.md) | | Excluir um **accesspackage**. |
+| [Excluir accessPackage](../api/accesspackage-delete.md) |Nenhum | Excluir um **accesspackage**. |
+| [Listar accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | coleção [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Recupere uma lista de objetos **accessPackageResourceRoleScope** para este pacote de acesso. |
+| [Criar accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Nenhum | Crie um novo objeto **accessPackageResourceRoleScope** para este pacote de acesso. |
 
 ## <a name="properties"></a>Propriedades
 

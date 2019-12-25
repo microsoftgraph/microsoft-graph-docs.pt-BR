@@ -3,14 +3,14 @@ title: tipo de recurso externalItem
 description: Um item indexado por meio de uma conexão de pesquisa da Microsoft.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 900cf61536204ff5924aea0de268befad6626b37
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 5a396d41ffaf0e602a586635296586cbdce42f50
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704168"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866823"
 ---
 # <a name="externalitem-resource-type"></a>tipo de recurso externalItem
 

@@ -1,24 +1,24 @@
 ---
 title: 'synchronizationSchema: ParseName'
-description: '(.. objeto/Resources/synchronization_attributemappingsource.MD). '
+description: '(.. objeto/Resources/synchronization_attributemappingsource. MD). '
 localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 97463376adb97d60834609499ce9c95be374f191
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6717e0219ec76d32db0e613447137f9675df1cb4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409671"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865010"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: ParseName
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Analisar uma determinada expressão de cadeia de caracteres em um [attributeMappingSource | (.. objeto/Resources/synchronization_attributemappingsource.MD). 
+Analisar uma determinada expressão de cadeia de caracteres em um [attributeMappingSource | (.. objeto/Resources/synchronization_attributemappingsource. MD).
 
-Para obter mais informações sobre expressões, consulte [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+Para obter mais informações sobre expressões, consulte [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |Sem suporte.|
-|Aplicativo                            |Sem suporte.| 
+|Aplicativo                            |Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -125,7 +125,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -133,7 +133,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

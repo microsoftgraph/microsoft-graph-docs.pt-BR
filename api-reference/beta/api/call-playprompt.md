@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 465cd7a0695d7c8dee510b68a75c8b08b99cdc31
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 2c62afeac5870d288c546aa3761b60a270d85219
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005974"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868265"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|prompts|Coleção MediaPrompt| Atualmente, apenas uma única solicitação e do tipo [MediaPrompt](../resources/mediaprompt.md) é suportada.|
+|prompts|Coleção [MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem reproduzidos. O tamanho máximo de coleção mediaPrompt compatível é 20.|
 |ciclo|Booliano| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.|
 

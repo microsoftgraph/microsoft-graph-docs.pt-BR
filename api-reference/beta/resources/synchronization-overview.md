@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 818f5060db1fe4f6c05f0473e438095877ead119
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e2e64f72c52a6f571b8b97cde643441d8837eda
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007862"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866543"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
@@ -20,12 +20,12 @@ A sincronização de identidade do Azure Active Directory (Azure AD) (também ch
 
 - Criar, iniciar e interromper trabalhos de sincronização
 - Fazer alterações no esquema de sincronização para trabalhos
-- Verificar o status de sincronização atual 
+- Verificar o status de sincronização atual
 
 Para obter mais informações sobre sincronização no Azure AD, consulte:
 
-* [Automatizar o provisionamento de usuários e desprovisionamento para aplicativos SaaS com o Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
-* [Gerenciando o provisionamento de contas de usuário para aplicativos corporativos no portal do Azure](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Automatizar o provisionamento de usuários e desprovisionamento para aplicativos SaaS com o Azure Active Directory](/azure/active-directory/active-directory-saas-app-provisioning)
+* [Gerenciando o provisionamento de contas de usuário para aplicativos corporativos no portal do Azure](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
 Você também pode experimentar a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) em um locatário de exemplo ou seu próprio locatário.
 
@@ -37,7 +37,7 @@ Para obter mais informações, consulte [trabalho de sincronização](synchroniz
 
 ## <a name="synchronization-schema"></a>Esquema de sincronização
 
-O esquema de sincronização define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de configuração de um determinado trabalho de sincronização. Normalmente, você personalizará alguns dos mapeamentos de [atributo](synchronization-attributemapping.md)ou adicionará um [filtro de escopo](synchronization-filter.md) para sincronizar somente objetos que atendam a uma determinada condição.
+O esquema de sincronização define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de configuração de um determinado trabalho de sincronização. Normalmente, você personalizará alguns dos [mapeamentos de atributo](synchronization-attributemapping.md)ou adicionará um [filtro de escopo](synchronization-filter.md) para sincronizar somente objetos que atendam a uma determinada condição.
 
 O esquema de sincronização inclui os seguintes componentes:
 
@@ -65,14 +65,14 @@ A API de sincronização do Azure AD usa o OAuth 2,0 para autorização. Antes d
 
 O exemplo a seguir mostra como localizar o objeto de entidade de serviço por nome de exibição.
 
-**Solicitação** 
+**Solicitação**
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-**Resposta**
+**Response**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -97,13 +97,13 @@ HTTP/1.1 200 OK
 
 O exemplo a seguir mostra como localizar o objeto de entidade de serviço por ID de aplicativo.
 
-**Pedir** 
+**Solicitação**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-**Resposta**
+**Response**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-**Resposta**
+**Response**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -160,7 +160,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-**Resposta**
+**Response**
 <!-- { "blockType": "ignored" } -->
 ```http
     HTTP/1.1 200 OK
@@ -185,7 +185,7 @@ O exemplo a seguir mostra como obter o esquema de sincronização.
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-**Resposta**
+**Response**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

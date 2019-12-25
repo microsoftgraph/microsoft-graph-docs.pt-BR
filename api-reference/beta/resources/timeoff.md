@@ -5,28 +5,28 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 8c7d792b834125bdfb8a109c85b2c1f45b18230b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 64ef8a07d3190ad2a54e9e3e5c68f3ffb0335acc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007652"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866522"
 ---
 # <a name="timeoff-resource-type"></a>tipo de recurso timeOff
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma unidade de não trabalho no cronograma.
+Uma unidade de não funcionar em um cronograma.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Criar um novo `timeOff` objeto.|
-|[Listar timeoffss](../api/schedule-list-timesoff.md) | coleção [timeOff](timeoff.md) | Obtenha a lista de `timeOff` objetos nesse cronograma.|
-|[Obter timeOff](../api/timeoff-get.md) | [timeOff](timeoff.md) | Obter um `timeOff` por ID.|
-|[Substituir timeOff](../api/timeoff-put.md) | [timeOff](timeoff.md) | Substituir um `timeOff`.|
-|[Excluir timeOff](../api/timeoff-delete.md) | Nenhum | Excluir uma `timeOff` do agendamento.|
+|[Criar](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Criar um novo objeto **timeOff** .|
+|[List](../api/schedule-list-timesoff.md) | coleção [timeOff](timeoff.md) | Obtenha a lista de objetos **timeOff** neste cronograma.|
+|[Get (.. /api/timeoff-get.md) | [timeOff](timeoff.md) | Obtenha um objeto **timeOff** por ID.|
+|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Substituir um objeto **timeOff** .|
+|[Delete](../api/timeoff-delete.md) | Nenhum | Excluir um objeto **timeOff** da agenda.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                                                                      |

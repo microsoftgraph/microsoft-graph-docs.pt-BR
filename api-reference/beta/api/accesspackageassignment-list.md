@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8ed838b01364e5616db6ed8b2236dc0b5593d9ff
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: fa93152cdd390093ceeedb061649af018c28808a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935054"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868027"
 ---
 # <a name="list-accesspackageassignments"></a>Listar accessPackageAssignments
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     |  EntitlementManagement. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     |  EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -38,7 +38,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar apenas atribuições entregues, você pode incluir uma `$filter=assignmentState eq 'Delivered'`consulta.
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar apenas atribuições entregues, você pode incluir uma `$filter=assignmentState eq 'Delivered'`consulta. Para recuperar apenas as atribuições de um usuário específico, você pode incluir uma consulta com atribuições direcionadas à ID do `$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`objeto para esse usuário.
+
 Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -60,14 +61,30 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

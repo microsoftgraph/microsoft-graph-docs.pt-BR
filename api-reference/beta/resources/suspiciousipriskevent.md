@@ -5,18 +5,21 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a774c94d8e4ade2067e3aa784c42bee5db6ee3b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24d7e80d3f6b73658f63a0aaaf8f355f8db54971
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008044"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866564"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>tipo de recurso suspiciousIpRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) em que uma entrada de conta é tentada a partir de um endereço IP suspeito. As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+>[!NOTE]
+>A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) em que uma entrada de conta é tentada a partir de um endereço IP suspeito. As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Métodos
@@ -30,7 +33,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|cadeia de caracteres| Somente leitura|
+|id|string| Somente leitura|
 |ipAddress|string| O endereço IP do logon|
 |location|cadeia de caracteres| O local anexado ao endereço IP do logon|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
@@ -38,7 +41,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
 |riskEventType|string| O tipo de risco|
 |userDisplayName|string| O nome do usuário em risco|
-|userId|string| A identificação do usuário em risco|
+|userId|cadeia de caracteres| A identificação do usuário em risco|
 |userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
 ## <a name="relationships"></a>Relações

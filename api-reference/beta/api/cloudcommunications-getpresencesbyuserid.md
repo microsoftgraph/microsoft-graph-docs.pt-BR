@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5303c39584822a68afa559eb99c9fa579121e515
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 93a782a0d46125a1f4a4a751c45d254e293c05cb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844110"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868092"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Presence. Read. All                         |
+| Delegado (conta corporativa ou de estudante)     | Presence.Read.All                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
 | Application                            | Sem suporte.                                  |
 
@@ -58,6 +58,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 ### <a name="request"></a>Solicitação
 O exemplo a seguir mostra uma solicitação.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-presence-multiple-users"
@@ -71,6 +73,20 @@ Content-Type: application/json
     "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-presence-multiple-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-presence-multiple-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>Resposta
 O exemplo a seguir mostra a resposta.
 

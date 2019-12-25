@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f33249ddbc5a539ed5f05c7971d14b6b9b594200
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 63aaf0312242b2275dc2ce29ee88bf3efb385fcd
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726281"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866578"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com atributos de extensão de diretório
 
@@ -83,7 +83,7 @@ O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.
 
 Você precisará do nome completo do atributo de extensão. Se você não souber o nome completo (que deve ser semelhante a **extension_9d98asdfl15980a_Nickname**), Confira as seguintes informações sobre atributos de extensão de diretório e como inspecioná-los: 
 
-* [Estender o esquema de diretório do Azure AD com propriedades personalizadas](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [Estender o esquema de diretório do Azure AD com propriedades personalizadas](https://azure.microsoft.com/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
 * [Extensões de esquema de diretório | Conceitos da API do Graph](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
@@ -108,7 +108,7 @@ Authorization: Bearer {Token}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -225,8 +225,8 @@ Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de n
 2. Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre Extension_9d98asdfl15980a_Nickname e CommunityNickname.
 
     - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como diretório de origem e Salesforce.com como o diretório de`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`destino ().
-    - Nos objectmappings da regra, encontre o mapeamento entre usuários ( [](synchronization-objectmapping.md) `"sourceObjectName": "User",   "targetObjectName": "User"`).
-    - Na matriz [attributeMappings](synchronization-attributemapping.md) do objectmapping ****, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
+    - Nos [Objectmappings](synchronization-objectmapping.md) da regra, encontre o mapeamento entre usuários (`"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectmapping**, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
     ```json
     {

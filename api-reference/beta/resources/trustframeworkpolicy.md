@@ -5,25 +5,25 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f573b331b587db50019e71468ec98d0e746e3963
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83b4a747007ed0ba55cc0fec37b9cf45debf1f47
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964183"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866501"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>tipo de recurso trustFrameworkPolicy
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Representa uma diretiva de [estrutura de confiança](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) (também chamada de [política personalizada](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom)) no [Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview). Uma política de estrutura de confiança fornece controle total sobre as viagens do usuário. Use-o para:
+Representa uma diretiva de [estrutura de confiança](/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) (também chamada de [política personalizada](/azure/active-directory-b2c/active-directory-b2c-overview-custom)) no [Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview). Uma política de estrutura de confiança fornece controle total sobre as viagens do usuário. Use-o para:
 
 * Personalize as experiências de inscrição e inscrição totalmente.
 * Federar para qualquer provedor SAML, Open ID Connect ou OAuth2 Identity Provider.
 * Integre-se com outros sistemas ou armazenamentos de dados do usuário chamando pontos de extremidade REST.
 * Transforme declarações e personalize tokens emitidos para o aplicativo de terceira parte confiável.
 
-Para obter mais informações, consulte [Custom Policies in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom).
+Para obter mais informações, consulte [Custom Policies in Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-overview-custom).
 
 ## <a name="methods"></a>Métodos
 
@@ -62,5 +62,5 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="see-also"></a>Confira também
 
-- [trustFrameworkPolicy esquema](https://docs.microsoft.com/en-us/azure/active-directory-b2c/trustframeworkpolicy) para obter informações sobre os elementos do esquema.  
+- [trustFrameworkPolicy esquema](/azure/active-directory-b2c/trustframeworkpolicy) para obter informações sobre os elementos do esquema.
 - [trustFrameworkPolicy. xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
