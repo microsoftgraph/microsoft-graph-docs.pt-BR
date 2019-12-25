@@ -5,50 +5,50 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d4cb9e9a665ea6e1a06162ddc6cee3067f0e21d1
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 185e10b8c6e5826ca8d200df2b964496ededd9b9
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427757"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864044"
 ---
-# <a name="get-user-mailbox-settings"></a><span data-ttu-id="1a1bc-104">Obter as configurações da caixa de correio do usuário</span><span class="sxs-lookup"><span data-stu-id="1a1bc-104">Get user mailbox settings</span></span>
+# <a name="get-user-mailbox-settings"></a><span data-ttu-id="e8cbc-104">Obter as configurações da caixa de correio do usuário</span><span class="sxs-lookup"><span data-stu-id="e8cbc-104">Get user mailbox settings</span></span>
 
-<span data-ttu-id="1a1bc-105">Obtenha as [mailboxSettings](../resources/mailboxsettings.md) do usuário.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-105">Get the user's [mailboxSettings](../resources/mailboxsettings.md).</span></span> <span data-ttu-id="1a1bc-106">Você pode exibir todas as configurações de caixa de correio ou obter configurações específicas.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-106">You can view all mailbox settings, or get specific settings.</span></span>
+<span data-ttu-id="e8cbc-105">Obtenha as [mailboxSettings](../resources/mailboxsettings.md) do usuário.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-105">Get the user's [mailboxSettings](../resources/mailboxsettings.md).</span></span> <span data-ttu-id="e8cbc-106">Você pode exibir todas as configurações de caixa de correio ou obter configurações específicas.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-106">You can view all mailbox settings, or get specific settings.</span></span>
 
-<span data-ttu-id="1a1bc-107">Os usuários podem definir as configurações a seguir para suas caixas de correio por meio de um cliente do Outlook:</span><span class="sxs-lookup"><span data-stu-id="1a1bc-107">Users can set the following settings for their mailboxes through an Outlook client:</span></span>
+<span data-ttu-id="e8cbc-107">Os usuários podem definir as configurações a seguir para suas caixas de correio por meio de um cliente do Outlook:</span><span class="sxs-lookup"><span data-stu-id="e8cbc-107">Users can set the following settings for their mailboxes through an Outlook client:</span></span>
 
-- <span data-ttu-id="1a1bc-108">[respostas automáticas](../resources/automaticrepliessetting.md) (notificar pessoas automaticamente ao receber seus emails)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-108">[automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)</span></span>
-- <span data-ttu-id="1a1bc-109">formato de data</span><span class="sxs-lookup"><span data-stu-id="1a1bc-109">date format</span></span>
-- <span data-ttu-id="1a1bc-110">[localidade](../resources/localeinfo.md) (idioma e país/região)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-110">[locale](../resources/localeinfo.md) (language and country/region)</span></span>
-- <span data-ttu-id="1a1bc-111">formato de hora</span><span class="sxs-lookup"><span data-stu-id="1a1bc-111">time format</span></span>
-- <span data-ttu-id="1a1bc-112">fuso horário</span><span class="sxs-lookup"><span data-stu-id="1a1bc-112">time zone</span></span>
-- [<span data-ttu-id="1a1bc-113">horário de trabalho</span><span class="sxs-lookup"><span data-stu-id="1a1bc-113">working hours</span></span>](../resources/workinghours.md)
+- <span data-ttu-id="e8cbc-108">[respostas automáticas](../resources/automaticrepliessetting.md) (notificar pessoas automaticamente ao receber seus emails)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-108">[automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)</span></span>
+- <span data-ttu-id="e8cbc-109">formato de data</span><span class="sxs-lookup"><span data-stu-id="e8cbc-109">date format</span></span>
+- <span data-ttu-id="e8cbc-110">[localidade](../resources/localeinfo.md) (idioma e país/região)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-110">[locale](../resources/localeinfo.md) (language and country/region)</span></span>
+- <span data-ttu-id="e8cbc-111">formato de hora</span><span class="sxs-lookup"><span data-stu-id="e8cbc-111">time format</span></span>
+- <span data-ttu-id="e8cbc-112">fuso horário</span><span class="sxs-lookup"><span data-stu-id="e8cbc-112">time zone</span></span>
+- [<span data-ttu-id="e8cbc-113">horário de trabalho</span><span class="sxs-lookup"><span data-stu-id="e8cbc-113">working hours</span></span>](../resources/workinghours.md)
 
-<span data-ttu-id="1a1bc-114">Os usuários podem definir os formatos de data e hora preferidos usando o Outlook na Web.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-114">Users can set their preferred date and time formats using Outlook on the web.</span></span> <span data-ttu-id="1a1bc-115">Os usuários podem escolher um dos formatos de [data abreviada](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [tempo abreviado](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) com suporte.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-115">Users can choose one of the supported [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats.</span></span> <span data-ttu-id="1a1bc-116">Essa operação `GET` retorna o formato escolhido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-116">This `GET` operation returns the format the user has chosen.</span></span>
+<span data-ttu-id="e8cbc-114">Os usuários podem definir os formatos de data e hora preferidos usando o Outlook na Web.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-114">Users can set their preferred date and time formats using Outlook on the web.</span></span> <span data-ttu-id="e8cbc-115">Os usuários podem escolher um dos formatos de [data abreviada](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [tempo abreviado](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) com suporte.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-115">Users can choose one of the supported [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats.</span></span> <span data-ttu-id="e8cbc-116">Essa operação `GET` retorna o formato escolhido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-116">This `GET` operation returns the format the user has chosen.</span></span>
 
-<span data-ttu-id="1a1bc-117">Os usuários podem definir o fuso horário preferido em qualquer cliente do Outlook, escolhendo entre os [fusos horários com suporte](outlookuser-supportedtimezones.md) que o administrador configurou para o servidor da caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-117">Users can set the time zone they prefer on any Outlook client, by choosing from the [supported time zones](outlookuser-supportedtimezones.md) that their administrator has set up for their mailbox server.</span></span> <span data-ttu-id="1a1bc-118">O administrador pode configurar os fusos horários no formato de fuso horário do Windows ou no formato de [fuso horário de Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson).</span><span class="sxs-lookup"><span data-stu-id="1a1bc-118">The administrator can set up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="1a1bc-119">O formato do Windows é o padrão.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-119">The Windows format is the default.</span></span> 
+<span data-ttu-id="e8cbc-117">Os usuários podem definir o fuso horário preferido em qualquer cliente do Outlook, escolhendo entre os [fusos horários com suporte](outlookuser-supportedtimezones.md) que o administrador configurou para o servidor da caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-117">Users can set the time zone they prefer on any Outlook client, by choosing from the [supported time zones](outlookuser-supportedtimezones.md) that their administrator has set up for their mailbox server.</span></span> <span data-ttu-id="e8cbc-118">O administrador pode configurar os fusos horários no formato de fuso horário do Windows ou no formato de [fuso horário de Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson).</span><span class="sxs-lookup"><span data-stu-id="e8cbc-118">The administrator can set up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="e8cbc-119">O formato do Windows é o padrão.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-119">The Windows format is the default.</span></span>
 
-<span data-ttu-id="1a1bc-120">Essa operação `GET` retorna o fuso horário preferido do usuário no formato configurado pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-120">This `GET` operation returns the user's preferred time zone in the format that the administrator has set up.</span></span> <span data-ttu-id="1a1bc-121">Se quiser que o fuso horário esteja em um formato específico (Windows ou IANA), você pode primeiro [atualizar o fuso horário de preferência nesse formato como uma configuração de caixa de correio](user-update-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="1a1bc-121">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="1a1bc-122">Posteriormente, você poderá obter o fuso horário nesse formato.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-122">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="1a1bc-123">Como alternativa, você pode gerenciar a conversão de formato separadamente no seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-123">Alternatively, you can manage the format conversion separately in your app.</span></span> 
+<span data-ttu-id="e8cbc-120">Essa operação `GET` retorna o fuso horário preferido do usuário no formato configurado pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-120">This `GET` operation returns the user's preferred time zone in the format that the administrator has set up.</span></span> <span data-ttu-id="e8cbc-121">Se quiser que o fuso horário esteja em um formato específico (Windows ou IANA), você pode primeiro [atualizar o fuso horário de preferência nesse formato como uma configuração de caixa de correio](user-update-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="e8cbc-121">If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md).</span></span> <span data-ttu-id="e8cbc-122">Posteriormente, você poderá obter o fuso horário nesse formato.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-122">Subsequently you will be able to get the time zone in that format.</span></span> <span data-ttu-id="e8cbc-123">Como alternativa, você pode gerenciar a conversão de formato separadamente no seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-123">Alternatively, you can manage the format conversion separately in your app.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a1bc-124">Permissões</span><span class="sxs-lookup"><span data-stu-id="1a1bc-124">Permissions</span></span>
-<span data-ttu-id="1a1bc-p106">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a1bc-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e8cbc-124">Permissões</span><span class="sxs-lookup"><span data-stu-id="e8cbc-124">Permissions</span></span>
+<span data-ttu-id="e8cbc-p106">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8cbc-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a1bc-127">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1a1bc-127">Permission type</span></span>      | <span data-ttu-id="1a1bc-128">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-128">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e8cbc-127">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e8cbc-127">Permission type</span></span>      | <span data-ttu-id="e8cbc-128">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-128">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a1bc-129">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-129">Delegated (work or school account)</span></span> | <span data-ttu-id="1a1bc-130">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a1bc-130">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="1a1bc-131">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-131">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a1bc-132">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a1bc-132">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="1a1bc-133">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1a1bc-133">Application</span></span> | <span data-ttu-id="1a1bc-134">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a1bc-134">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="e8cbc-129">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-129">Delegated (work or school account)</span></span> | <span data-ttu-id="e8cbc-130">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8cbc-130">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="e8cbc-131">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-131">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8cbc-132">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8cbc-132">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="e8cbc-133">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e8cbc-133">Application</span></span> | <span data-ttu-id="e8cbc-134">MailboxSettings.Read, MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8cbc-134">MailboxSettings.Read, MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a1bc-135">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1a1bc-135">HTTP request</span></span>
-<span data-ttu-id="1a1bc-136">Para obter todas as configurações de caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="1a1bc-136">To get all the mailbox settings for a user:</span></span>
+## <a name="http-request"></a><span data-ttu-id="e8cbc-135">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e8cbc-135">HTTP request</span></span>
+<span data-ttu-id="e8cbc-136">Para obter todas as configurações de caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="e8cbc-136">To get all the mailbox settings for a user:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-<span data-ttu-id="1a1bc-137">Para obter configurações específicas, somente as configurações de respostas automáticas, formato de data, localidade, formato de hora, fuso horário ou horário de trabalho:</span><span class="sxs-lookup"><span data-stu-id="1a1bc-137">To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, or working hours:</span></span>
+<span data-ttu-id="e8cbc-137">Para obter configurações específicas, somente as configurações de respostas automáticas, formato de data, localidade, formato de hora, fuso horário ou horário de trabalho:</span><span class="sxs-lookup"><span data-stu-id="e8cbc-137">To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, or working hours:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -69,33 +69,33 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1a1bc-138">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1a1bc-138">Optional query parameters</span></span>
-<span data-ttu-id="1a1bc-139">Este método também dá suporte a alguns [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-139">This method supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1a1bc-140">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1a1bc-140">Request headers</span></span>
-| <span data-ttu-id="1a1bc-141">Nome</span><span class="sxs-lookup"><span data-stu-id="1a1bc-141">Name</span></span>       | <span data-ttu-id="1a1bc-142">Tipo</span><span class="sxs-lookup"><span data-stu-id="1a1bc-142">Type</span></span> | <span data-ttu-id="1a1bc-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a1bc-143">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="e8cbc-138">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e8cbc-138">Optional query parameters</span></span>
+<span data-ttu-id="e8cbc-139">Este método também dá suporte a alguns [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-139">This method supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e8cbc-140">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e8cbc-140">Request headers</span></span>
+| <span data-ttu-id="e8cbc-141">Nome</span><span class="sxs-lookup"><span data-stu-id="e8cbc-141">Name</span></span>       | <span data-ttu-id="e8cbc-142">Tipo</span><span class="sxs-lookup"><span data-stu-id="e8cbc-142">Type</span></span> | <span data-ttu-id="e8cbc-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="e8cbc-143">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="1a1bc-144">Autorização</span><span class="sxs-lookup"><span data-stu-id="1a1bc-144">Authorization</span></span>  | <span data-ttu-id="1a1bc-145">string</span><span class="sxs-lookup"><span data-stu-id="1a1bc-145">string</span></span>  | <span data-ttu-id="1a1bc-p107">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e8cbc-144">Autorização</span><span class="sxs-lookup"><span data-stu-id="e8cbc-144">Authorization</span></span>  | <span data-ttu-id="e8cbc-145">string</span><span class="sxs-lookup"><span data-stu-id="e8cbc-145">string</span></span>  | <span data-ttu-id="e8cbc-p107">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1a1bc-148">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1a1bc-148">Request body</span></span>
-<span data-ttu-id="1a1bc-149">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-149">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e8cbc-148">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e8cbc-148">Request body</span></span>
+<span data-ttu-id="e8cbc-149">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-149">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a1bc-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a1bc-150">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e8cbc-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8cbc-150">Response</span></span>
 
-<span data-ttu-id="1a1bc-151">Se for bem-sucedido, este método retornará um código de resposta `200 OK` e um dos seguintes objetos solicitados no corpo da resposta:</span><span class="sxs-lookup"><span data-stu-id="1a1bc-151">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
+<span data-ttu-id="e8cbc-151">Se for bem-sucedido, este método retornará um código de resposta `200 OK` e um dos seguintes objetos solicitados no corpo da resposta:</span><span class="sxs-lookup"><span data-stu-id="e8cbc-151">If successful, this method returns a `200 OK` response code and one of the following requested objects in the response body:</span></span>
 
-- <span data-ttu-id="1a1bc-152">Objeto [mailboxSettings](../resources/mailboxsettings.md)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-152">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
-- <span data-ttu-id="1a1bc-153">Objeto [automaticRepliesSetting](../resources/automaticrepliessetting.md)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-153">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
-- <span data-ttu-id="1a1bc-154">cadeia de caracteres (para **dateFormat**)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-154">string (for **dateFormat**)</span></span>
-- <span data-ttu-id="1a1bc-155">Objeto [localeInfo](../resources/localeinfo.md)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-155">[localeInfo](../resources/localeinfo.md) object</span></span>
-- <span data-ttu-id="1a1bc-156">cadeia de caracteres (para **timeFormat**)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-156">string (for **timeFormat**)</span></span>
-- <span data-ttu-id="1a1bc-157">cadeia de caracteres (para **timeZone**)</span><span class="sxs-lookup"><span data-stu-id="1a1bc-157">string (for **timeZone**)</span></span>
-- [<span data-ttu-id="1a1bc-158">workingHours</span><span class="sxs-lookup"><span data-stu-id="1a1bc-158">workingHours</span></span>](../resources/workinghours.md)
+- <span data-ttu-id="e8cbc-152">Objeto [mailboxSettings](../resources/mailboxsettings.md)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-152">[mailboxSettings](../resources/mailboxsettings.md) object</span></span>
+- <span data-ttu-id="e8cbc-153">Objeto [automaticRepliesSetting](../resources/automaticrepliessetting.md)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-153">[automaticRepliesSetting](../resources/automaticrepliessetting.md) object</span></span>
+- <span data-ttu-id="e8cbc-154">cadeia de caracteres (para **dateFormat**)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-154">string (for **dateFormat**)</span></span>
+- <span data-ttu-id="e8cbc-155">Objeto [localeInfo](../resources/localeinfo.md)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-155">[localeInfo](../resources/localeinfo.md) object</span></span>
+- <span data-ttu-id="e8cbc-156">cadeia de caracteres (para **timeFormat**)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-156">string (for **timeFormat**)</span></span>
+- <span data-ttu-id="e8cbc-157">cadeia de caracteres (para **timeZone**)</span><span class="sxs-lookup"><span data-stu-id="e8cbc-157">string (for **timeZone**)</span></span>
+- [<span data-ttu-id="e8cbc-158">workingHours</span><span class="sxs-lookup"><span data-stu-id="e8cbc-158">workingHours</span></span>](../resources/workinghours.md)
 
-## <a name="examples"></a><span data-ttu-id="1a1bc-159">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1a1bc-159">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e8cbc-159">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e8cbc-159">Examples</span></span>
 
-### <a name="example-1"></a><span data-ttu-id="1a1bc-160">Exemplo 1</span><span class="sxs-lookup"><span data-stu-id="1a1bc-160">Example 1</span></span>
-#### <a name="request"></a><span data-ttu-id="1a1bc-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a1bc-161">Request</span></span> 
-<span data-ttu-id="1a1bc-162">O primeiro exemplo obtém todas as configurações da caixa de correio do usuário conectado, que incluem configurações de respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário e horário de trabalho.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-162">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, locale (language and country/region), time format, time zone, and working hours.</span></span>
+### <a name="example-1"></a><span data-ttu-id="e8cbc-160">Exemplo 1</span><span class="sxs-lookup"><span data-stu-id="e8cbc-160">Example 1</span></span>
+#### <a name="request"></a><span data-ttu-id="e8cbc-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e8cbc-161">Request</span></span>
+<span data-ttu-id="e8cbc-162">O primeiro exemplo obtém todas as configurações da caixa de correio do usuário conectado, que incluem configurações de respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário e horário de trabalho.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-162">The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, locale (language and country/region), time format, time zone, and working hours.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -105,8 +105,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 
-#### <a name="response"></a><span data-ttu-id="1a1bc-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a1bc-163">Response</span></span>
-<span data-ttu-id="1a1bc-164">A resposta inclui todas as configurações da caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-164">The response includes all the mailbox settings of the signed-in user.</span></span> <span data-ttu-id="1a1bc-165">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-165">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1a1bc-166">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-166">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e8cbc-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8cbc-163">Response</span></span>
+<span data-ttu-id="e8cbc-164">A resposta inclui todas as configurações da caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-164">The response includes all the mailbox settings of the signed-in user.</span></span>
+<span data-ttu-id="e8cbc-165">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-165">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="e8cbc-166">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-166">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -157,11 +158,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="1a1bc-167">Exemplo 2</span><span class="sxs-lookup"><span data-stu-id="1a1bc-167">Example 2</span></span>
-#### <a name="request"></a><span data-ttu-id="1a1bc-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a1bc-168">Request</span></span>
-<span data-ttu-id="1a1bc-169">O segundo exemplo obtém especificamente as configurações de respostas automáticas da caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-169">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
+### <a name="example-2"></a><span data-ttu-id="e8cbc-167">Exemplo 2</span><span class="sxs-lookup"><span data-stu-id="e8cbc-167">Example 2</span></span>
+#### <a name="request"></a><span data-ttu-id="e8cbc-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e8cbc-168">Request</span></span>
+<span data-ttu-id="e8cbc-169">O segundo exemplo obtém especificamente as configurações de respostas automáticas da caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-169">The second example gets specifically the automatic replies settings of the signed-in user's mailbox.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1a1bc-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a1bc-170">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e8cbc-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="e8cbc-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_2"
@@ -169,26 +170,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1a1bc-171">C#</span><span class="sxs-lookup"><span data-stu-id="1a1bc-171">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e8cbc-171">C#</span><span class="sxs-lookup"><span data-stu-id="e8cbc-171">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a1bc-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a1bc-172">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e8cbc-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e8cbc-172">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1a1bc-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a1bc-173">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e8cbc-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e8cbc-173">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="1a1bc-174">Java</span><span class="sxs-lookup"><span data-stu-id="1a1bc-174">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="e8cbc-174">Java</span><span class="sxs-lookup"><span data-stu-id="e8cbc-174">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-mailboxsettings-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="1a1bc-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a1bc-175">Response</span></span>
-<span data-ttu-id="1a1bc-p109">A resposta inclui apenas as configurações de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-p109">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e8cbc-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8cbc-175">Response</span></span>
+<span data-ttu-id="e8cbc-p109">A resposta inclui apenas as configurações de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-p109">The response includes only the automatic replies settings. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -216,9 +217,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3"></a><span data-ttu-id="1a1bc-179">Exemplo 3</span><span class="sxs-lookup"><span data-stu-id="1a1bc-179">Example 3</span></span>
-#### <a name="request"></a><span data-ttu-id="1a1bc-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a1bc-180">Request</span></span>
-<span data-ttu-id="1a1bc-181">O terceiro exemplo obtém especificamente as configurações de horário de trabalho da caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-181">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
+### <a name="example-3"></a><span data-ttu-id="e8cbc-179">Exemplo 3</span><span class="sxs-lookup"><span data-stu-id="e8cbc-179">Example 3</span></span>
+#### <a name="request"></a><span data-ttu-id="e8cbc-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e8cbc-180">Request</span></span>
+<span data-ttu-id="e8cbc-181">O terceiro exemplo obtém especificamente as configurações de horário de trabalho da caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-181">The third example gets specifically the working hour settings of the signed-in user's mailbox.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3"
@@ -226,8 +227,9 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
-#### <a name="response"></a><span data-ttu-id="1a1bc-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a1bc-182">Response</span></span>
-<span data-ttu-id="1a1bc-183">A resposta inclui apenas as configurações de horário de trabalho.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-183">The response includes only the working hours settings.</span></span> <span data-ttu-id="1a1bc-184">As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md).</span><span class="sxs-lookup"><span data-stu-id="1a1bc-184">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span> <span data-ttu-id="1a1bc-185">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-185">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1a1bc-186">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1a1bc-186">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e8cbc-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8cbc-182">Response</span></span>
+<span data-ttu-id="e8cbc-183">A resposta inclui apenas as configurações de horário de trabalho.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-183">The response includes only the working hours settings.</span></span> <span data-ttu-id="e8cbc-184">As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md).</span><span class="sxs-lookup"><span data-stu-id="e8cbc-184">Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).</span></span>
+<span data-ttu-id="e8cbc-185">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-185">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="e8cbc-186">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e8cbc-186">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",

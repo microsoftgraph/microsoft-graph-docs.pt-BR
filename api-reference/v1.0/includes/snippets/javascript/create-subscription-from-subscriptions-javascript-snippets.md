@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9bcf04ad1e02e79f12835cc4bbd60d1350b81e37
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: 0fe5d6527e762faa5edaf16517ef6ebc11c90e41
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "36636332"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864116"
 ---
 ```javascript
 
@@ -16,7 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const subscription = {
-   changeType: "created,updated",
+   changeType: "updated",
    notificationUrl: "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    resource: "me/mailFolders('Inbox')/messages",
    expirationDateTime:"2016-11-20T18:23:45.9356913Z",
