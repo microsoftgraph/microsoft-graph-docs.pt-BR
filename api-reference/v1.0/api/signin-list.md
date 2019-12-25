@@ -6,10 +6,10 @@ author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 0e619f0d5577ffe4db91142eccc257d9fa93e643
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/25/2019
 ms.locfileid: "36729249"
 ---
 # <a name="list-signins"></a>Listar logons

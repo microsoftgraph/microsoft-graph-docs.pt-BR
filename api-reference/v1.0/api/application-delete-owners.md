@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 84728c7c4e7c37eb49b4f0cd02087e80b77dbf00
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/25/2019
 ms.locfileid: "37999069"
 ---
 # <a name="remove-owner"></a>Remover proprietário

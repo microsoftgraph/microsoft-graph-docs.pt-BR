@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4ef5da57a90a4e6c8727f18c146759a309d97161
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: 699c2b634bf477bf9f797aab4eb290013a57d801
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396783"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865619"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Int32|Representa a duração de um intervalo de tempo em ** availabilityView ** na resposta. O padrão é 30 minutos, o mínimo é 6, o máximo é 1440. Opcional.|
+|availabilityViewInterval|Int32|Representa a duração de um intervalo de tempo em ** availabilityView ** na resposta. O padrão é 30 minutos, o mínimo é 5, o máximo é 1440. Opcional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o período termina.|
 |agendas|Coleção String|Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações sobre disponibilidade.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o período começa.|

@@ -5,18 +5,19 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f5694c2708a02e3e6d4d766e9af403dcaefac335
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9cefea7168e48fa4d22e8a2dd1f7770143e49e90
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033905"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863761"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
 
 
-No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md). Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
+No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md).
+Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
 
 Cada equipe está associada a um [grupo](../resources/group.md).
 O grupo tem a mesma ID da equipe, por exemplo, /groups/{id}/team é igual a /teams/{id}.
@@ -45,11 +46,12 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Configurações que definem o uso de Giphy, memes e figurinhas na equipe.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configurações que definem se os convidados podem criar, atualizar ou excluir canais na equipe.|
-|internalId | string | Uma ID exclusiva da equipe, que foi usada em alguns locais, como o log de auditoria da [API da Atividade de Gestão do Office 365](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference). |
+|internalId | string | Uma ID exclusiva da equipe, que foi usada em alguns locais, como o log de auditoria da [API da Atividade de Gestão do Office 365](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Booliano|Se essa equipe está no modo somente leitura. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Configurações para definir a mensagens e menções na equipe.|
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que será enviado à equipe no cliente do Microsoft Teams. Esta é a URL que você recebe ao clicar com o botão direito do mouse em uma equipe no cliente do Microsoft Teams e escolher **Obter o link para a equipe**. Essa URL deve ser tratada como um blob opaco e não analisado. |
+|classSettings|[teamClassSettings](teamclasssettings.md) |Definir configurações de uma classe. Disponível apenas quando a equipe representa uma classe.|
 
 ## <a name="relationships"></a>Relações
 
@@ -62,6 +64,8 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 
 Veja a seguir uma representação JSON do recurso.
 
+>**Observação:** se a equipe for do tipo classe, uma propriedade **classSettings** será aplicada à equipe.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.team",
@@ -69,14 +73,15 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "internalId": "string",
   "isArchived": false,
-  "webUrl": "string (URL)"
+  "webUrl": "string (URL)",
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
 
 ```

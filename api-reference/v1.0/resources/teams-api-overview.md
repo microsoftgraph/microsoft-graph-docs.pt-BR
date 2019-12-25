@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: db0809790247e834a64672699b0a4183c04f5458
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: cadfc3037d8506ea5eb6ba099ae51a78af151e97
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730320"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863768"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -40,7 +40,7 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Office 365 que fo
 
 Na Microsoft Graph, o Microsoft Teams é representado por um recurso de [grupo](../resources/group.md). Os grupos do Microsoft Teams e Office 365 atendem às várias necessidades de colaboração em grupo. Quase todos os recursos baseados em grupo se aplicam aos grupos do Microsoft Teams e do Office 365, como calendário de grupo, arquivos, anotações, fotos, planos e assim por diante. A principal diferença entre uma [equipe](team.md) e um grupo do Office 365 é o modo de comunicação entre os membros. Os membros da equipe se comunicam por meio de chat persistente no contexto de uma equipe específica. Os membros do grupo do Office 365 se comunicam por conversas em grupo, que são conversas por email que ocorrem no contexto de um grupo no Outlook.
 
-Qualquer grupo que tenha uma equipe possui uma propriedade **resourceProvisioningOptions** que contém "Team". 
+Qualquer grupo que tenha uma equipe possui uma propriedade **resourceProvisioningOptions** que contém "Team".
 
 >**Observação:** a propriedade **Group.resourceProvisioningOptions** pode ser alterada.
 Não adicione ou remova "Team" dessa coleção; caso contrário, você obterá resultados incorretos ao listar todas as equipes.
@@ -64,23 +64,27 @@ Para adicionar membros e proprietários a uma equipe, altere a associação do [
 | [Remover proprietário](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{userId}/$ref |
 | [Atualizar equipe](../api/team-update.md)  | PATCH     | /teams/{id} |
 
-Recomendamos que, ao adicionar um proprietário, você também adicione esse usuário como membro. Se uma equipe tiver um proprietário que também não seja um membro, as alterações de propriedade e associação talvez não sejam imediatamente exibidas no Microsoft Teams. Além disso, aplicativos e APIs diferentes tratam disso de maneira diferente. Por exemplo, o Microsoft Teams mostrará equipes das quais o usuário é membro ou proprietário, enquanto os cmdlets do PowerShell do Microsoft Teams e a API /me/joinedTeams mostrarão apenas as equipes das quais o usuário é membro. Para evitar confusão, adicione também todos os proprietários à lista de membros. 
+Recomendamos que, ao adicionar um proprietário, você também adicione esse usuário como membro.
+Se uma equipe tiver um proprietário que também não seja um membro, as alterações de propriedade e associação talvez não sejam imediatamente exibidas no Microsoft Teams.
+Além disso, aplicativos e APIs diferentes tratam disso de maneira diferente.
+Por exemplo, o Microsoft Teams mostrará equipes das quais o usuário é membro ou proprietário, enquanto os cmdlets do PowerShell do Microsoft Teams e a API /me/joinedTeams mostrarão apenas as equipes das quais o usuário é membro.
+Para evitar confusão, adicione também todos os proprietários à lista de membros.
 
 Problema conhecido: quando DELETE /groups/{id}/owners é chamado, o usuário também é removido da lista /groups/{id}/members. Para contornar isso, recomendamos que você remova o usuário dos proprietários e membros, espere 10 segundos e adicione-os novamente aos membros.
 
 Ao adicionar e remover membros e proprietários, não coloque chaves { } ao redor da ID.
 
-| Velocidade | Sintaxe | 
+| Velocidade | Sintaxe |
 | ------ | ----- |
-| Rápida | https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref | 
-| Lento | https://graph.microsoft.com/v1.0/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref | 
+| Rápida | https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref |
+| Lento | https://graph.microsoft.com/v1.0/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref |
 
 Da mesma forma, se o `userId` na URL ou no conteúdo for expresso como um UPN, e não como um GUID, o desempenho será mais lento.
 
-| Velocidade | Sintaxe | 
+| Velocidade | Sintaxe |
 | ------ | ----- |
-| Rápida | 48d31887-5fad-4d73-a9f5-3c356e68a038 | 
-| Lento | vitor@example.com | 
+| Rápida | 48d31887-5fad-4d73-a9f5-3c356e68a038 |
+| Lento | vitor@example.com |
 
 Quando o caminho mais lento é executado, se um membro ou membro da equipe atual estiver conectado ao aplicativo/site do Microsoft Teams, a alteração será refletida em uma hora.
 Se nenhum desses usuários estiver conectado ao aplicativo/site do Microsoft Teams, a alteração não será refletida até uma hora depois que um deles se conectar.

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3eaf72c234dddc8531e9ba427e5bf1c9042b2f58
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 87ef4a7a8db8eaad8c99972bed5113f847bb3a25
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720008"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868188"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -43,6 +43,8 @@ GET /teams/{id}/channels/{id}/messages
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Você pode usar o parâmetro de consulta [$top](/graph/query-parameters#top-parameter) para controlar o número de itens por resposta. No momento, não há suporte para os outros [Parâmetros de consulta OData](/graph/query-parameters).
+
+> **Observação:** [OBTER /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) oferece suporte para a filtragem por data, que fornece dados semelhantes para OBTER /teams/{id}/channels/{id}/messages.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

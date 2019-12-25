@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 01f6bb81ec7e46911fb1a5e3dbdd55f69f92b6c8
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 8ef4fb2e1f785ba814ec0a3c82f8f8f668d81ced
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658713"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864751"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 Obtenha grupos dos quais um grupo é um membro direto. 
@@ -25,6 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

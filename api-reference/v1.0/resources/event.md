@@ -5,18 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ad5c50d1210d32304ec20f75afe2928e577f3c17
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 68cd814afae41f89a8101af4e08bc635aec4ab24
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37204002"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863883"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
 Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
 
-O número máximo de participantes incluídos em um**evento**e o número máximo de destinatários em uma[eventMessage](eventmessage.md) enviada de uma caixa de correio no Exchange Online é 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/pt-BR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+O número máximo de participantes incluídos em um**evento**e o número máximo de destinatários em uma[eventMessage](eventmessage.md) enviada de uma caixa de correio no Exchange Online é 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
@@ -104,7 +104,7 @@ Esse recurso permite:
 >
 > * Para contas da Microsoft: `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> Para abrir o evento em uma versão atual do Outlook na Web, converta a URL em um dos seguintes formatos e use essa URL para abrir o evento: 
+> Para abrir o evento em uma versão atual do Outlook na Web, converta a URL em um dos seguintes formatos e use essa URL para abrir o evento:
 >
 > * Para contas corporativas ou de estudante: `https://outlook.office365.com/calendar/item/{event-id}`
 >

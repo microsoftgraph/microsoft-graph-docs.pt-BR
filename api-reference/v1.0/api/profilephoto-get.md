@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ae531d0e5bd8aa759f0c72a1fc3ac420467127e1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 471c5bbdb69f1bb67e05c271aaf7f67a977cb89d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022296"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865465"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -34,9 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
 
-> **Observação:** Há um [problema conhecido](https://docs.microsoft.com/pt-BR/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
+> **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
-## <a name="http-request"></a>Solicitação HTTP 
+## <a name="http-request"></a>Solicitação HTTP
 
 ### <a name="get-the-photo"></a>Obter a foto
 <!-- { "blockType": "ignored" } -->
@@ -103,7 +103,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response"></a>Resposta 
+##### <a name="response"></a>Resposta
 Contém os dados binários da foto solicitada. O código de resposta HTTP é 200.
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>Exemplo 2: Obtenha foto 48 x 48 para uso conectado
@@ -130,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/me/photo
 
 ##### <a name="response"></a>Resposta
 
-Os dados de resposta a seguir mostram os metadados da foto. 
+Os dados de resposta a seguir mostram os metadados da foto.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
