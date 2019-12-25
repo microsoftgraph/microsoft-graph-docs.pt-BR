@@ -1,22 +1,22 @@
 ---
-title: Permissões
+title: Listar itens excluídos pertencentes a um usuário
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0a863964f553bedeb4e47c81afefc3aa4f7d39b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 168667566f880ecc2b2aafea63d95179e8c5c6a4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016934"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869946"
 ---
-# <a name="list-deleted-items-owned-by-a-user"></a>**Listar itens excluídos pertencentes a um usuário**
+# <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
 Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  
 
-Atualmente, a funcionalidade Listar itens excluídos é suportada apenas para recursos de [grupo](../resources/group.md) pertencentes ao usuário.
+Atualmente, a funcionalidade Listar itens excluídos é suportada apenas para recursos de [aplicativo](../resources/application.md) e de [grupo](../resources/group.md) pertencentes ao usuário.
 
 Esta é uma ação de serviço, o que significa que ele não oferece suporte à paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificados por ID.
 

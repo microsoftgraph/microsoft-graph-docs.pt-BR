@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Retornar a permissão de compartilhamento eficaz de um recurso de permissão específico.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 367330a2ba1c4f592b8b04a3ab0df7e7f7b94950
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8f2aa1e4e8345b2d84831ebbc8ec1044ad99b3a9
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728556"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865514"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 
@@ -22,7 +22,7 @@ Permissões efetivas de um item podem vir de duas fontes: permissões definidas 
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade `inheritedFrom` Esta propriedade é um recurso [itemReference](../resources/itemreference.md) que faz referência ao ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/library/cc721640.aspx#section1).
 
 ## <a name="permissions"></a>Permissões
 
@@ -75,7 +75,7 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -118,7 +118,7 @@ Permissões com uma faceta [**invitation**](../resources/sharinginvitation.md) r
 
 ### <a name="error-responses"></a>Respostas de erro
 
-Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
+Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 
 [error-response]: /graph/errors
 

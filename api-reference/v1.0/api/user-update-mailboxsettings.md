@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d26efae5860b918563a265bde12dbfafe68b21fe
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 392ed9a0b2042eadcac035a93f2e667dbb1a9747
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427956"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863961"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -23,11 +23,11 @@ Habilitar, configurar ou desabilitar uma ou mais das seguintes configurações c
 - fuso horário
 - [horário de trabalho](../resources/workinghours.md)
 
-Ao atualizar o formato de data ou hora preferencial para um usuário, especifique-o, respectivamente, o formato de [data abreviada](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [hora curta](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . 
+Ao atualizar o formato de data ou hora preferencial para um usuário, especifique-o, respectivamente, o formato de [data abreviada](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [hora curta](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) .
 
 Ao atualizar o fuso horário preferencial para um usuário, especifique-o no formato de fuso horário do Windows ou da [autoridade de números atribuídos à Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário do Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
 
-> [!TIP] 
+> [!TIP]
 > Você não pode criar nem excluir nenhuma configuração de caixa de correio.
 
 ## <a name="permissions"></a>Permissões
@@ -82,7 +82,7 @@ Definir horas de trabalho com valores inadequados pode retornar os seguintes err
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1"></a>Exemplo 1
-#### <a name="request"></a>Solicitação 
+#### <a name="request"></a>Solicitação
 O primeiro exemplo habilita as respostas automáticas de um intervalo de datas, definindo as seguintes propriedades da propriedade **automaticRepliesSetting**: **status**, **scheduledStartDateTime** e **scheduledEndDateTime**.
 
 

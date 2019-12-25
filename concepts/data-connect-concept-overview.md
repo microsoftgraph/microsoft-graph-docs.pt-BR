@@ -5,12 +5,12 @@ author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f4e365c94761a6ea77b97aaf77f93152a53d8da9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: adbc84b0d032c4c2cfb32d0c448bac5bfcae607f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969204"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868020"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Visão geral do Microsoft Graph Data Connect
 O Microsoft Graph contém dados avançados sobre funcionários e o seu local de trabalho, incluindo informações sobre como as pessoas trabalham e como elas se comunicam, colaboram e gerenciam seu tempo. O Microsoft Graph Data Connect oferece um conjunto de ferramentas para simplificar a entrega desses dados para o Microsoft Azure, que lhe oferece acesso às melhores ferramentas de desenvolvimento e hospedagem para trabalhar com esses dados. Isso permite que os clientes, enquanto mantêm total controle sobre seus dados do Microsoft Graph, se beneficiem de aplicativos inovadores ou específicos do setor que melhoram sua produtividade. A Microsoft está trazendo o controle mais seguro os clientes esperam.
@@ -27,9 +27,6 @@ A Microsoft está facilitando comunicação avançada e conectada entre o Micros
 
 ### <a name="get-access-to-data-at-scale"></a>Obter acesso a dados em escala
 Aplicativos avançados precisam de acesso a grandes quantidades de dados, geralmente de vários usuários em sua organização ao mesmo tempo. Com o modelo de dados transacionais tradicional, você precisa criar uma infraestrutura complexa e fazer milhares de chamadas à API para coordenar essa entrega de dados. Com apenas algumas etapas simples, o Microsoft Graph Data Connect usa a força do Azure Data Factory para entregar dados do Office 365 da sua organização para o aplicativo, em um cronograma que pode ser repetido.
-
-## <a name="api-reference"></a>Referência da API
-Está procurando a referência de API para esse serviço?
 
 ## <a name="next-steps"></a>Próximas etapas
 Para começar, veja [Introdução ao Microsoft Graph Data Connect](data-connect-get-started.md).

@@ -5,12 +5,12 @@ author: anchanda
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 23c051caceff6be68e3b550c06f50c397a5c5d97
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: cf4087675804b3bd873699634c527db9038ffe8e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621642"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869882"
 ---
 # <a name="list-group-transitive-members"></a>Membros transitivos do grupo de lista
 
@@ -24,9 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory. Read. All, User. Read. All |
+|Application | Directory. Read. All, User. Read. All |
 
 >**Observação:** Para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -91,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. 
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,

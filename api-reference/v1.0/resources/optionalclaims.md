@@ -5,17 +5,17 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 886becff415cbc1dbaa2c5608042b0828c31c2bb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4c768c09b0755327ff6fbd7b2de0feb906944fbf
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939008"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863831"
 ---
 # <a name="optionalclaims-resource-type"></a>tipo de recurso optionalClaims
 Declara as declarações opcionais solicitadas por um aplicativo. Um aplicativo pode configurar declarações opcionais a serem retornadas em cada um dos três tipos de tokens (token de ID, token de acesso, token SAML 2) que pode receber do serviço de token de segurança. Um aplicativo pode configurar um conjunto diferente de declarações opcionais a serem retornadas em cada tipo de token. A propriedade optionalClaims do [aplicativo](application.md) é um objeto **optionalClaims** .
 
-Os desenvolvedores de aplicativos podem configurar declarações opcionais em seus aplicativos do Azure AD para especificar quais declarações eles desejam em tokens enviados para seus aplicativos pelo serviço de token de segurança da Microsoft. Consulte [fornecer declarações opcionais para seu aplicativo do Azure ad](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.
+Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |

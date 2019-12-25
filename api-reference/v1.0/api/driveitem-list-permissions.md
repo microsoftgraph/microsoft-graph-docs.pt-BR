@@ -5,18 +5,18 @@ ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
-description: Liste as permissões efetivas de compartilhamento de um DriveItem.
+description: Listar as permissões de compartilhamento efetivas de em um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 9700dbd4429ee20b4e2d5921e60d0f506bbfdc8d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e1348a36e71a8ecc694f2a61f5056b12efd02399
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721094"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864779"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um DriveItem
+# <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 
-Liste as permissões efetivas de compartilhamento de um [DriveItem](../resources/driveitem.md).
+Listar as permissões de compartilhamento efetivas de em um [driveItem](../resources/driveitem.md).
 
 ## <a name="access-to-sharing-permissions"></a>Acessar permissões de compartilhamento
 
@@ -70,12 +70,11 @@ As permissões efetivas de compartilhamento de um DriveItem podem vir de duas fo
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/library/cc721640.aspx#section1).
 
 ## <a name="example"></a>Exemplo
 
 Este exemplo recupera a coleção de permissões em um item na unidade do usuário conectado.
-
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
@@ -91,7 +90,7 @@ GET /me/drive/items/{item-id}/permissions
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -158,7 +157,7 @@ A relação **permissions** de um DriveItem não pode ser expandida como parte d
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
+Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 
 [error-response]: /graph/errors
 

@@ -4,12 +4,12 @@ description: Multipurpose Internet Mail Extensions (MIME) é um padrão de email
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 2eadf89007e1127ffbbf9e40506c37b47778da7c
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 4e0ffb77d7e06fb72be2a4d965465e438d054c43
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036379"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868538"
 ---
 # <a name="get-mime-content-of-a-message"></a>Obter conteúdo MIME de uma mensagem
 
@@ -57,7 +57,7 @@ A seguir está um exemplo que solicita que uma mensagem na caixa de correio do u
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/4aade2547798441eab5188a7a2436bc1/$value
+GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 
 Esta é a resposta. O conteúdo MIME começa com o `MIME-Version` cabeçalho. 

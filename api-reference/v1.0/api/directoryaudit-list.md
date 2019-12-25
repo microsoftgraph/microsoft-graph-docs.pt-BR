@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82e281567c919ec6a1ada62c3f506893a435fb9a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7733cd1a29640331ecd4ab766bc3563fa29600b7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727051"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869954"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -160,8 +160,8 @@ Content-length: 271
                 "oldValue": null,
                 "newValue": "DirectorySync"}],
             "groupType": "unifiedGroups"
-            }],
-        }, {
+            }, 
+            {
             "id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
             "displayName": null,
             "Type": "User",

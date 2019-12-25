@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d657b8f022395c24d27df56442c164731215a04e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c1485bbc43588b8144cbe1cc7cb189f9b8c9fdc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033849"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863775"
 ---
 # <a name="teammembersettings-resource-type"></a>tipo de recurso teamMemberSettings
 
@@ -21,6 +21,7 @@ Configurações para configurar se os membros podem executar determinadas açõe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|allowCreatePrivateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais privados.|
 |allowCreateUpdateChannels|Booliano|Se definido como true, os membros podem adicionar e atualizar canais.|
 |allowDeleteChannels|Booliano|Se definido como true, os membros podem excluir canais.|
 |allowAddRemoveApps|Booliano|Se definido como true, os membros podem adicionar e remover aplicativos.|
@@ -38,6 +39,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "allowCreatePrivateChannels": true,
   "allowCreateUpdateChannels": true,
   "allowDeleteChannels": true,
   "allowAddRemoveApps": true,
