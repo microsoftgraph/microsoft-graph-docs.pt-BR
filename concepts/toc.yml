@@ -95,6 +95,22 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: ID Imutável
             href: outlook-immutable-id.md
+      - name: Comunicações na nuvem
+        items:
+          - name: Visão Geral
+            href: cloud-communications-concept-overview.md
+          - name: Introdução
+            href: cloud-communications-get-started.md
+          - name: Chamadas
+            href: cloud-communications-calls.md
+          - name: Mídia
+            href: cloud-communications-media.md
+          - name: Online Meetings
+            href: cloud-communications-online-meetings.md
+          - name: Gerenciar números de telefone para bots
+            href: cloud-communications-phone-number.md
+          - name: Limites
+            href: cloud-communications-limits.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -230,7 +246,11 @@ items:
           - name: ID Imutável
             href: outlook-immutable-id.md
       - name: Relatórios
-        href: reportroot-concept-overview.md
+        items:
+          - name: Visão Geral
+            href: reportroot-concept-overview.md
+          - name: Autorização para relatórios de uso do Office 365
+            href: reportroot-authorization.md
       - name: Pesquisar (visualização)
         items:
           - name: Visão geral
