@@ -5,59 +5,61 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5303c39584822a68afa559eb99c9fa579121e515
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 93a782a0d46125a1f4a4a751c45d254e293c05cb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844110"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868092"
 ---
-# <a name="cloudcommunications-getpresencesbyuserid"></a><span data-ttu-id="3f82e-103">cloudCommunications: getPresencesByUserId</span><span class="sxs-lookup"><span data-stu-id="3f82e-103">cloudCommunications: getPresencesByUserId</span></span>
+# <a name="cloudcommunications-getpresencesbyuserid"></a><span data-ttu-id="f2960-103">cloudCommunications: getPresencesByUserId</span><span class="sxs-lookup"><span data-stu-id="f2960-103">cloudCommunications: getPresencesByUserId</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3f82e-104">Obtenha as informações de [presença](../resources/presence.md) de vários usuários.</span><span class="sxs-lookup"><span data-stu-id="3f82e-104">Get the [presence](../resources/presence.md) information for multiple users.</span></span>
+<span data-ttu-id="f2960-104">Obtenha as informações de [presença](../resources/presence.md) de vários usuários.</span><span class="sxs-lookup"><span data-stu-id="f2960-104">Get the [presence](../resources/presence.md) information for multiple users.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3f82e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="3f82e-105">Permissions</span></span>
-<span data-ttu-id="3f82e-106">Uma das seguintes permissões é necessária para chamar essas APIs.</span><span class="sxs-lookup"><span data-stu-id="3f82e-106">One of the following permissions is required to call these APIs.</span></span> <span data-ttu-id="3f82e-107">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3f82e-107">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2960-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="f2960-105">Permissions</span></span>
+<span data-ttu-id="f2960-106">Uma das seguintes permissões é necessária para chamar essas APIs.</span><span class="sxs-lookup"><span data-stu-id="f2960-106">One of the following permissions is required to call these APIs.</span></span> <span data-ttu-id="f2960-107">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2960-107">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="3f82e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3f82e-108">Permission type</span></span> | <span data-ttu-id="3f82e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3f82e-109">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="f2960-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f2960-108">Permission type</span></span> | <span data-ttu-id="f2960-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f2960-109">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="3f82e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3f82e-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="3f82e-111">Presence. Read. All</span><span class="sxs-lookup"><span data-stu-id="3f82e-111">Presence.Read.All</span></span>                         |
-| <span data-ttu-id="3f82e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3f82e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3f82e-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3f82e-113">Not Supported.</span></span>                         |
-| <span data-ttu-id="3f82e-114">Application</span><span class="sxs-lookup"><span data-stu-id="3f82e-114">Application</span></span>                            | <span data-ttu-id="3f82e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3f82e-115">Not Supported.</span></span>                                  |
+| <span data-ttu-id="f2960-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f2960-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f2960-111">Presence.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2960-111">Presence.Read.All</span></span>                         |
+| <span data-ttu-id="f2960-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f2960-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2960-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2960-113">Not Supported.</span></span>                         |
+| <span data-ttu-id="f2960-114">Application</span><span class="sxs-lookup"><span data-stu-id="f2960-114">Application</span></span>                            | <span data-ttu-id="f2960-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2960-115">Not Supported.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="3f82e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3f82e-116">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2960-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f2960-116">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /communications/getPresencesByUserId
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3f82e-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3f82e-117">Request Headers</span></span>
-| <span data-ttu-id="3f82e-118">Nome</span><span class="sxs-lookup"><span data-stu-id="3f82e-118">Name</span></span>          | <span data-ttu-id="3f82e-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="3f82e-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="f2960-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f2960-117">Request Headers</span></span>
+| <span data-ttu-id="f2960-118">Nome</span><span class="sxs-lookup"><span data-stu-id="f2960-118">Name</span></span>          | <span data-ttu-id="f2960-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="f2960-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="3f82e-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="3f82e-120">Authorization</span></span> | <span data-ttu-id="3f82e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3f82e-p102">Bearer {token}. Required.</span></span> |
-|<span data-ttu-id="3f82e-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="3f82e-123">Content-type</span></span> | <span data-ttu-id="3f82e-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3f82e-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="f2960-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="f2960-120">Authorization</span></span> | <span data-ttu-id="f2960-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f2960-p102">Bearer {token}. Required.</span></span> |
+|<span data-ttu-id="f2960-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="f2960-123">Content-type</span></span> | <span data-ttu-id="f2960-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f2960-p103">application/json. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="3f82e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3f82e-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2960-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f2960-126">Request body</span></span>
 
-<span data-ttu-id="3f82e-127">No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="3f82e-127">In the request body, provide a JSON object with the following parameter.</span></span>
+<span data-ttu-id="f2960-127">No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="f2960-127">In the request body, provide a JSON object with the following parameter.</span></span>
 
-| <span data-ttu-id="3f82e-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="3f82e-128">Parameter</span></span>      | <span data-ttu-id="3f82e-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="3f82e-129">Type</span></span>    |<span data-ttu-id="3f82e-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="3f82e-130">Description</span></span>|
+| <span data-ttu-id="f2960-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f2960-128">Parameter</span></span>      | <span data-ttu-id="f2960-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="f2960-129">Type</span></span>    |<span data-ttu-id="f2960-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="f2960-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3f82e-131">ids</span><span class="sxs-lookup"><span data-stu-id="3f82e-131">ids</span></span>|<span data-ttu-id="3f82e-132">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="3f82e-132">String collection</span></span>|<span data-ttu-id="3f82e-133">As IDs de objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="3f82e-133">The user object IDs.</span></span>|
+|<span data-ttu-id="f2960-131">ids</span><span class="sxs-lookup"><span data-stu-id="f2960-131">ids</span></span>|<span data-ttu-id="f2960-132">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="f2960-132">String collection</span></span>|<span data-ttu-id="f2960-133">As IDs de objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="f2960-133">The user object IDs.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="3f82e-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="3f82e-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f2960-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2960-134">Response</span></span>
 
-<span data-ttu-id="3f82e-135">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Presence](../resources/presence.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3f82e-135">If successful, this method returns a `200 OK` response code and a collection of [presence](../resources/presence.md) objects in the response body.</span></span>
+<span data-ttu-id="f2960-135">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Presence](../resources/presence.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f2960-135">If successful, this method returns a `200 OK` response code and a collection of [presence](../resources/presence.md) objects in the response body.</span></span>
 
 
-## <a name="examples"></a><span data-ttu-id="3f82e-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3f82e-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f2960-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f2960-136">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="3f82e-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3f82e-137">Request</span></span>
-<span data-ttu-id="3f82e-138">O exemplo a seguir mostra uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="3f82e-138">The following example shows a request.</span></span>
+### <a name="request"></a><span data-ttu-id="f2960-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f2960-137">Request</span></span>
+<span data-ttu-id="f2960-138">O exemplo a seguir mostra uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="f2960-138">The following example shows a request.</span></span>
 
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="f2960-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2960-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-presence-multiple-users"
@@ -71,10 +73,24 @@ Content-Type: application/json
     "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
-### <a name="response"></a><span data-ttu-id="3f82e-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="3f82e-139">Response</span></span>
-<span data-ttu-id="3f82e-140">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="3f82e-140">The following example shows the response.</span></span>
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f2960-140">C#</span><span class="sxs-lookup"><span data-stu-id="f2960-140">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="3f82e-141">**Observação:** Os objetos Response podem ser reduzidos para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="3f82e-141">**Note:** The response objects might be shortened for readability.</span></span> <span data-ttu-id="3f82e-142">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3f82e-142">All the properties will be returned from an actual call.</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2960-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2960-141">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-presence-multiple-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2960-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f2960-142">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-presence-multiple-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### <a name="response"></a><span data-ttu-id="f2960-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2960-143">Response</span></span>
+<span data-ttu-id="f2960-144">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="f2960-144">The following example shows the response.</span></span>
+
+> <span data-ttu-id="f2960-145">**Observação:** Os objetos Response podem ser reduzidos para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="f2960-145">**Note:** The response objects might be shortened for readability.</span></span> <span data-ttu-id="f2960-146">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f2960-146">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

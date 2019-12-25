@@ -5,32 +5,34 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b44a8498dec3694b07b882951f1f4722b7662af9
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b3c672998e7174789af27c738c908d4bc1f0feb3
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410700"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866983"
 ---
-# <a name="create-timeoffreason"></a><span data-ttu-id="856fd-103">Criar timeOffReason</span><span class="sxs-lookup"><span data-stu-id="856fd-103">Create timeOffReason</span></span>
+# <a name="create-timeoffreason"></a><span data-ttu-id="8f030-103">Criar timeOffReason</span><span class="sxs-lookup"><span data-stu-id="8f030-103">Create timeOffReason</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="856fd-104">Criar um novo [timeOffReason](../resources/timeoffreason.md).</span><span class="sxs-lookup"><span data-stu-id="856fd-104">Create a new [timeOffReason](../resources/timeoffreason.md).</span></span>
+<span data-ttu-id="8f030-104">Criar um novo [timeOffReason](../resources/timeoffreason.md).</span><span class="sxs-lookup"><span data-stu-id="8f030-104">Create a new [timeOffReason](../resources/timeoffreason.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="856fd-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="856fd-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f030-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="8f030-105">Permissions</span></span>
 
-<span data-ttu-id="856fd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="856fd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8f030-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f030-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="856fd-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="856fd-108">Permission type</span></span>      | <span data-ttu-id="856fd-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="856fd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f030-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8f030-108">Permission type</span></span>      | <span data-ttu-id="8f030-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8f030-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="856fd-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="856fd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="856fd-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="856fd-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="856fd-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="856fd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="856fd-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="856fd-113">Not supported.</span></span>    |
-|<span data-ttu-id="856fd-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="856fd-114">Application</span></span> | <span data-ttu-id="856fd-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="856fd-115">Not supported.</span></span> |
+|<span data-ttu-id="8f030-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8f030-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8f030-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8f030-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8f030-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8f030-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f030-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8f030-113">Not supported.</span></span>    |
+|<span data-ttu-id="8f030-114">Application</span><span class="sxs-lookup"><span data-stu-id="8f030-114">Application</span></span> | <span data-ttu-id="8f030-115">Schedule. ReadWrite. All \*</span><span class="sxs-lookup"><span data-stu-id="8f030-115">Schedule.ReadWrite.All\*</span></span> |
 
-> <span data-ttu-id="856fd-116">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="856fd-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="856fd-117">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="856fd-117">Global admins can access groups that they are not a member of.</span></span>
+><span data-ttu-id="8f030-116">\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.</span><span class="sxs-lookup"><span data-stu-id="8f030-116">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="856fd-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="856fd-118">HTTP request</span></span>
+> <span data-ttu-id="8f030-117">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="8f030-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="8f030-118">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="8f030-118">Global admins can access groups that they are not a member of.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="8f030-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8f030-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,24 +40,24 @@ ms.locfileid: "36410700"
 POST /teams/{teamId}/schedule/timeOffReasons
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="856fd-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="856fd-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8f030-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8f030-120">Request headers</span></span>
 
-| <span data-ttu-id="856fd-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="856fd-120">Header</span></span>       | <span data-ttu-id="856fd-121">Valor</span><span class="sxs-lookup"><span data-stu-id="856fd-121">Value</span></span> |
+| <span data-ttu-id="8f030-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8f030-121">Header</span></span>       | <span data-ttu-id="8f030-122">Valor</span><span class="sxs-lookup"><span data-stu-id="8f030-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="856fd-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="856fd-122">Authorization</span></span>  | <span data-ttu-id="856fd-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="856fd-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="856fd-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="856fd-125">Content-Type</span></span>  | <span data-ttu-id="856fd-126">application/json</span><span class="sxs-lookup"><span data-stu-id="856fd-126">application/json</span></span>  |
+| <span data-ttu-id="8f030-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="8f030-123">Authorization</span></span>  | <span data-ttu-id="8f030-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8f030-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8f030-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8f030-126">Content-Type</span></span>  | <span data-ttu-id="8f030-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8f030-p104">application/json. Required.</span></span>  |
 
-## <a name="response"></a><span data-ttu-id="856fd-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="856fd-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f030-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f030-129">Response</span></span>
 
-<span data-ttu-id="856fd-128">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="856fd-128">If successful, this method returns a `201 Created` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.</span></span>
+<span data-ttu-id="8f030-130">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [timeOffReason](../resources/timeoffreason.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8f030-130">If successful, this method returns a `201 Created` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="856fd-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="856fd-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8f030-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8f030-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="856fd-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="856fd-130">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8f030-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8f030-132">Request</span></span>
 
-<span data-ttu-id="856fd-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="856fd-131">The following is an example of the request.</span></span>
+<span data-ttu-id="8f030-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8f030-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="856fd-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="856fd-132">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8f030-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f030-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-post-timeoffreasons"
@@ -70,26 +72,26 @@ Content-type: application/json
   "isActive": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="856fd-133">C#</span><span class="sxs-lookup"><span data-stu-id="856fd-133">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8f030-135">C#</span><span class="sxs-lookup"><span data-stu-id="8f030-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-post-timeoffreasons-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="856fd-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="856fd-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8f030-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f030-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-post-timeoffreasons-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="856fd-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="856fd-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8f030-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8f030-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-post-timeoffreasons-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="856fd-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="856fd-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8f030-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f030-138">Response</span></span>
 
-<span data-ttu-id="856fd-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="856fd-137">The following is an example of the response.</span></span> 
+<span data-ttu-id="8f030-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8f030-139">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="856fd-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="856fd-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="8f030-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8f030-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

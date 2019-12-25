@@ -5,33 +5,35 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a36cbbacc931f6bd00b7aa8f228429943ddad712
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7a23472db0b87204ed3dd3e7408154738a940103
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410672"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867901"
 ---
-# <a name="delete-schedulinggroup"></a><span data-ttu-id="8b770-103">Excluir schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="8b770-103">Delete schedulingGroup</span></span>
+# <a name="delete-schedulinggroup"></a><span data-ttu-id="51a06-103">Excluir schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="51a06-103">Delete schedulingGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8b770-104">Marcar um modo de [agendamento](../resources/schedulinggroup.md) como inativo, definindo sua propriedade IsActive. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="8b770-104">Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its **isActive** property.</span></span>
-<span data-ttu-id="8b770-105">Esse método não remove o enhorário do plano. [](../resources/schedulinggroup.md)</span><span class="sxs-lookup"><span data-stu-id="8b770-105">This method does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule.</span></span> <span data-ttu-id="8b770-106">As instâncias de [alternância](../resources/shift.md) existentes atribuídas ao grupo de agendamento permanecem como parte do grupo.</span><span class="sxs-lookup"><span data-stu-id="8b770-106">Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.</span></span>
+<span data-ttu-id="51a06-104">Marcar um modo de [agendamento](../resources/schedulinggroup.md) como inativo, definindo sua propriedade **IsActive** .</span><span class="sxs-lookup"><span data-stu-id="51a06-104">Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its **isActive** property.</span></span>
+<span data-ttu-id="51a06-105">Esse método não [Remove o enhorário do plano.](../resources/schedulinggroup.md)</span><span class="sxs-lookup"><span data-stu-id="51a06-105">This method does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule.</span></span> <span data-ttu-id="51a06-106">As instâncias de [alternância](../resources/shift.md) existentes atribuídas ao grupo de agendamento permanecem como parte do grupo.</span><span class="sxs-lookup"><span data-stu-id="51a06-106">Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8b770-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="8b770-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="51a06-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="51a06-107">Permissions</span></span>
 
-<span data-ttu-id="8b770-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8b770-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="51a06-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="51a06-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b770-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8b770-110">Permission type</span></span>      | <span data-ttu-id="8b770-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8b770-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="51a06-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="51a06-110">Permission type</span></span>      | <span data-ttu-id="51a06-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="51a06-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8b770-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8b770-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8b770-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b770-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b770-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8b770-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b770-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8b770-115">Not supported.</span></span>    |
-|<span data-ttu-id="8b770-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8b770-116">Application</span></span> | <span data-ttu-id="8b770-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8b770-117">Not supported.</span></span> |
+|<span data-ttu-id="51a06-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="51a06-112">Delegated (work or school account)</span></span> | <span data-ttu-id="51a06-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51a06-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="51a06-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="51a06-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51a06-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="51a06-115">Not supported.</span></span>    |
+|<span data-ttu-id="51a06-116">Application</span><span class="sxs-lookup"><span data-stu-id="51a06-116">Application</span></span> | <span data-ttu-id="51a06-117">Schedule. ReadWrite. All \*</span><span class="sxs-lookup"><span data-stu-id="51a06-117">Schedule.ReadWrite.All\*</span></span> |
 
-> <span data-ttu-id="8b770-118">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="8b770-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="8b770-119">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="8b770-119">Global admins can access groups that they are not a member of.</span></span>
+><span data-ttu-id="51a06-118">\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.</span><span class="sxs-lookup"><span data-stu-id="51a06-118">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8b770-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8b770-120">HTTP request</span></span>
+> <span data-ttu-id="51a06-119">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="51a06-119">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="51a06-120">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="51a06-120">Global admins can access groups that they are not a member of.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="51a06-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="51a06-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,27 +41,26 @@ ms.locfileid: "36410672"
 DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8b770-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8b770-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="51a06-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="51a06-122">Request headers</span></span>
 
-| <span data-ttu-id="8b770-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8b770-122">Header</span></span>       | <span data-ttu-id="8b770-123">Valor</span><span class="sxs-lookup"><span data-stu-id="8b770-123">Value</span></span> |
+| <span data-ttu-id="51a06-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="51a06-123">Header</span></span>       | <span data-ttu-id="51a06-124">Valor</span><span class="sxs-lookup"><span data-stu-id="51a06-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8b770-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="8b770-124">Authorization</span></span>  | <span data-ttu-id="8b770-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8b770-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="8b770-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8b770-127">Content-Type</span></span>  | <span data-ttu-id="8b770-128">application/json</span><span class="sxs-lookup"><span data-stu-id="8b770-128">application/json</span></span>  |
+| <span data-ttu-id="51a06-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="51a06-125">Authorization</span></span>  | <span data-ttu-id="51a06-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="51a06-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8b770-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8b770-129">Request body</span></span>
-<span data-ttu-id="8b770-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8b770-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="51a06-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="51a06-128">Request body</span></span>
+<span data-ttu-id="51a06-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="51a06-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8b770-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="8b770-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="51a06-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="51a06-130">Response</span></span>
 
-<span data-ttu-id="8b770-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8b770-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="51a06-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="51a06-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b770-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8b770-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="51a06-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="51a06-133">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="8b770-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8b770-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="51a06-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="51a06-134">Request</span></span>
 
-<span data-ttu-id="8b770-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8b770-136">The following is an example of the request.</span></span>
+<span data-ttu-id="51a06-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="51a06-135">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8b770-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="8b770-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="51a06-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="51a06-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-delete-schedulinggroups"
@@ -67,26 +68,26 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8b770-138">C#</span><span class="sxs-lookup"><span data-stu-id="8b770-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="51a06-137">C#</span><span class="sxs-lookup"><span data-stu-id="51a06-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-delete-schedulinggroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8b770-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8b770-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="51a06-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51a06-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-delete-schedulinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8b770-140">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="8b770-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="51a06-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51a06-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-delete-schedulinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="8b770-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="8b770-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="51a06-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="51a06-140">Response</span></span>
 
-<span data-ttu-id="8b770-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8b770-142">The following is an example of the response.</span></span> 
+<span data-ttu-id="51a06-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="51a06-141">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="8b770-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8b770-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="51a06-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="51a06-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
