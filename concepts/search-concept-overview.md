@@ -1,20 +1,20 @@
 ---
-title: Visão geral da API de pesquisa (versão prévia)
-description: Saiba mais sobre como usar a API da Pesquisa da Microsoft para indexar conteúdo e adicionar pesquisa ao Office e o conteúdo indexado em seus aplicativos.
+title: Visão geral da API Microsoft Search no Microsoft Graph (visualização)
+description: Use a API da Pesquisa da Microsoft para indexar conteúdo e adicionar pesquisa ao Office e o conteúdo indexado em seus aplicativos.
 localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 4196a2b01576e11f2b9db28a4ea1f89d76f467c5
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6f7515682f7600a4c0d58e49213eacf17add44e0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955908"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866893"
 ---
-# <a name="overview-for-extending-the-microsoft-search-experience-for-apps-on-microsoft-graph-preview"></a>Visão geral de como estender a experiência da Pesquisa da Microsoft para aplicativos no Microsoft Graph (versão prévia)
+# <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Visão geral da API Microsoft Search no Microsoft Graph (visualização)
 
-A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona ganhos de produtividade e resultados de pesquisa relevantes para sua organização. Ela reúne o conhecimento coletivo e a produtividade de uma organização, e apresenta um conteúdo relevante para manter os usuários finais atualizados. A Pesquisa da Microsoft está disponível em várias experiências, inclusive no Office, SharePoint, Delve, Windows e Bing. A API do Microsoft Search permite aos aplicativos estender a experiência de pesquisa semelhante aos clientes dos aplicativos. 
+A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona ganhos de produtividade e resultados de pesquisa relevantes para sua organização. Ela reúne o conhecimento coletivo e a produtividade de uma organização, e apresenta um conteúdo relevante para manter os usuários finais atualizados. A Pesquisa da Microsoft está disponível em várias experiências, inclusive no Office, SharePoint, Delve, Windows e Bing. Você pode usar a API de pesquisa da Microsoft no Microsoft Graph para estender a pesquisa da Microsoft para seus aplicativos.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -23,7 +23,7 @@ A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona 
 
 ### <a name="one-unified-search-endpoint-for-microsoft-cloud-data"></a>Um ponto de extremidade de pesquisa unificado para dados de nuvem da Microsoft
 
-A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa unificado para permitir que os desenvolvedores [consultem](/graph/api/search-query?view=graph-rest-beta) dados na nuvem da Microsoft que a Pesquisa da Microsoft já indexa, como mensagens e eventos nas caixas de correio do Outlook e arquivos no OneDrive e no SharePoint.
+A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa que você pode usar para permitir que os desenvolvedores [consultem](/graph/api/search-query?view=graph-rest-beta) dados na nuvem da Microsoft que a Pesquisa da Microsoft já indexa, como mensagens e eventos nas caixas de correio do Outlook e arquivos no OneDrive e no SharePoint.
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Incluir dados externos personalizados na experiência de pesquisa
 
@@ -31,16 +31,16 @@ Os clientes que queiram incluir dados que estejam fora da nuvem da Microsoft em 
 
 ### <a name="consistent-up-to-date-search-experience"></a>Experiência de pesquisa atualizada e consistente
 
-Ao usar a API da Pesquisa da Microsoft, os clientes se beneficiam ao obter resultados relevantes mais personalizados com o Microsoft Graph. Isso também faz com que a pesquisa nos aplicativos retorne resultados consistentes com a pesquisa em aplicativos do Office.
+Ao usar a API de pesquisa da Microsoft, seus clientes se beneficiam dos resultados de pesquisa relevantes mais personalizados com a plataforma Microsoft Graph. A experiência de pesquisa em seus aplicativos retorna resultados que são consistentes com a pesquisa em aplicativos do Office.
 
-## <a name="what-data-can-i-add-or-access-by-using-these-apis"></a>Quais dados posso adicionar ou acessar usando essas APIs?
+## <a name="what-data-can-i-add-or-access-by-using-the-microsoft-search-api"></a>Quais dados posso adicionar ou acessar usando a API de pesquisa da Microsoft?
 
-A Pesquisa da Microsoft proporciona suporte para pesquisar conteúdo na nuvem da Microsoft:
+A API de pesquisa da Microsoft suporta para pesquisar o seguinte conteúdo na nuvem da Microsoft:
 
 - Objetos [message](/graph/api/resources/message?view=graph-rest-beta) e [event](/graph/api/resources/event?view=graph-rest-beta) do Outlook
 - Objetos de arquivos [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) do SharePoint e do OneDrive
 
-Além disso, você pode indexar e pesquisar conteúdos externos:
+Além disso, você pode indexar e pesquisar conteúdos externos, por meio do seguinte:
 
 - Objetos [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) que são de tipos personalizados
 - Objetos [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) que são de tipos conhecidos
@@ -67,6 +67,4 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="see-also"></a>Confira também
 
-Participe da comunidade:
-
-- [Discussão no StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search)
+- Entre em contato com a Comunidade no [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-search).
