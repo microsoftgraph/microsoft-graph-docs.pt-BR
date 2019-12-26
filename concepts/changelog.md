@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 64b1f80a323df5290dc9d24e8f3ec4fbfcebdef0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 253863ce5e513d4cda090e79a87d082e0f7907b7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39923592"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868048"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,26 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="december-2019"></a>Dezembro de 2019
+
+### <a name="change-notifications-webhooks"></a>Alterar notificações (Webhooks)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Suporte adicionado para os aplicativos inscritos para receber notificações que incluam dados de recursos. Os recursos compatíveis no momento são os recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) em conversas e canais do Microsoft Teams. Os aplicativos com inscrição para notificações devem implementar a autorização e o código de descriptografia adicionais para se beneficiarem desse recurso. Para obter mais detalhes, confira [Configurar notificações em mensagens de chat, incluindo propriedades de mensagem (visualização)](webhooks-with-resource-data.md).|
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+A presença na versão beta foi adicionada e APIs de comunicações na nuvem para o v1.0 foram introduzidas.
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:---|:---|:---|
+|Adição|beta|Adicionado o recurso de [presença](/graph/api/resources/presence?view=graph-rest-beta) e métodos associados e as permissões Presence.Read e Presence.Read.All foram introduzidos.|
+|Adição|v1.0|Adicionadas as seguintes APIs: [criar chamada](/graph/api/application-post-calls?view=graph-rest-1.0), [atender chamada](/graph/api/call-answer?view=graph-rest-1.0), [rejeitar chamada](/graph/api/call-reject?view=graph-rest-1.0), [obter chamada](/graph/api/call-get?view=graph-rest-1.0), [excluir chamada](/graph/api/call-delete?view=graph-rest-1.0), [ignorar chamada](/graph/api/call-mute?view=graph-rest-1.0), [ativar / desativar som](/graph/api/call-unmute?view=graph-rest-1.0), [função de compartilhamento de tela de alteração de chamada](/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [transferência de chamada](/graph/api/call-transfer?view=graph-rest-1.0), [redirecionamento de chamada](/graph/api/call-redirect?view=graph-rest-1.0), [reproduzir um prompt](/graph/api/call-playprompt?view=graph-rest-1.0), [gravar resposta](/graph/api/call-recordresponse?view=graph-rest-1.0), [inscrever-se em tne](/graph/api/call-subscribetotone?view=graph-rest-1.0), [listar participantes](/graph/api/call-list-participants?view=graph-rest-1.0), [convidar participantes](/graph/api/participant-invite?view=graph-rest-1.0), [obter participantes](/graph/api/participant-get?view=graph-rest-1.0), [silenciar participantes](/graph/api/participant-mute?view=graph-rest-1.0), [criar reunião online](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [obter reunião online](/graph/api/onlinemeeting-get?view=graph-rest-1.0) e [ligar keep alive](/graph/api/call-keepalive?view=graph-rest-1.0).|
+|Adição|v1.0|Os recursos a seguir foram adicionados: [chamada](/graph/api/resouces/call?view=graph-rest-1.0), [participante](/graph/api/resouces/participant?view=graph-rest-1.0) e [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0).|
+| Alteração        | Beta        | Registro de API IVR renomeado para [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
+| Alteração        | Beta        | Removidas as propriedades de objeto [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) **isCanceled**, **canceledDateTime**, e**entryExitAnnouncement**. Propriedade renomeada **joinUrl**para **joinWebUrl**. | 
+| Adição        | Beta & v 1.0       | Adicionada a operação[delete onlineMeeting](/graph/api/onlinemeeting-delete.md).|
+
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -51,11 +71,23 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Os membros **securityoptions**, **userRightsAssignment**, **auditSetting** e **windowsFirewallSettings** foram adicionados ao tipo de enumeração [groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)|
 |Adição|beta|O membro **contentDownloaded** foi adicionado ao tipo de enumeração [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)|
 
-### <a name="change-notifications-webhooks"></a>Alterar notificações (Webhooks)
+### <a name="education"></a>Educação
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Suporte adicionado para os aplicativos inscritos para receber notificações que incluam dados de recursos. Os recursos compatíveis no momento são os recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) em conversas e canais do Microsoft Teams. Os aplicativos com inscrição para notificações devem implementar a autorização e o código de descriptografia adicionais para se beneficiarem desse recurso. Para obter mais detalhes, confira [Configurar notificações em mensagens de chat, incluindo propriedades de mensagem (visualização)](webhooks-with-resource-data.md).|
+| Adição | v1.0 | Adicionada a propriedade [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) ao recurso [equipe](/graph/api/resources/team?view=graph-rest-1.0) para permitir que os chamadores obtenham configurações específicas de uma equipe de tipo Classe.|
+
+### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:---|:---|:---|
+|Alteração | beta |Atualizado o comportamento das relações **appRoleAssignments** e **appRoleAssignedTo** relações em [servicePrincipal](/graph/api/resoureces/serviceprincipal.md) para retornar as funções conforme o documento. **appRoleAssignments** retorna funções de aplicativo concedidas à entidade de serviço e **appRoleAssignedTo** retorna as funções de aplicativo concedidas à entidade de serviço.|
+|Adição|Beta, v 1.0|Suporte adicional para retornar uma quantidade limitada de informações quando o aplicativo não tiver acesso a alguns tipos em uma coleção de resposta. Para obter mais detalhes, confira [Informações limitadas retornadas para objetos membro inacessíveis](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
+
+### <a name="identity-and-access-azure-ad--information-protection"></a>Identidade e acesso (Azure AD) | Proteção de informações
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | beta        | Adiconadas as APIs [criar](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [obter](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) e [listar](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) para gerenciar os recursos[threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta).|
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
 
@@ -84,11 +116,25 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | A API do Insights está disponível em v1.0. Ela inclui os recursos [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](/graph/api/resources/insights-used?view=graph-rest-1.0) e [sharedInsight](/graph/api/resources/insights-shared?view=graph-rest-1.0) e tipos e métodos relacionados. Confira [Por que se integrar com informações baseadas em documentos?](social-intel-concept-overview.md#why-integrate-with-document-based-insights) para saber mais. |
 
+### <a name="reports--office-365-usage-reports"></a>Relatórios | Relatórios de uso do Office 365
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Alteração          | Beta e v1.0  | Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço do Office 365 em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](reportroot-authorization.md).|
+
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
  
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Foram adicionadas[ notificações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) para mensagens de canal novas e editadas e mensagens de chat novas e editadas.
+| Alteração | beta | As permissões de aplicativo foram atualizadas para executar operações de leitura e gravação para os recursos de turnos, incluindo[schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), e[openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Observação:** as permissões de aplicativos estão na visualização particular e não estão disponíveis para uso público.|
+
+
+### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | Beta | O novo tipo de entidade [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 
 ## <a name="november-2019"></a>Novembro de 2019
 
@@ -102,8 +148,9 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Alteração        | Beta        | Tipo de retorno alterado para os métodos [sem áudio](/graph/api/call-mute?view=graph-rest-beta) e [silenciar participante](/graph/api/participant-mute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). | 
-| Alteração        | Beta        | Tipo de retorno alterado para método de [ativar áudio](/graph/api/call-unmute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). | 
+| Alteração        | Beta        | Tipo de retorno alterado para os métodos [sem áudio](/graph/api/call-mute?view=graph-rest-beta) e [silenciar participante](/graph/api/participant-mute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). |
+| Alteração        | Beta        | Tipo de retorno alterado para método de [ativar áudio](/graph/api/call-unmute?view=graph-rest-beta) de [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) para [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). |
+| Adição        | Beta        | A ação [keepAlive](/api-reference/beta/api/call-keepalive.md) adicionada à entidade [chamada](/api-reference/beta/resources/call.md). |
 
 ### <a name="cloud-communications--recording"></a>Comunicação em nuvem | Gravação
 
@@ -212,15 +259,15 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 |:----------------|:------------|:---------------------------------------------|
 | Adição        | beta        | Foi adicionada uma [API de Pesquisa da Microsoft](search-concept-overview.md) que estabelece recursos de [consulta](/graph/api/search-query?view=graph-rest-beta) e [indexação](/graph/api/resource/indexing-api-overview?view=graph-rest-beta). |
 | Adição        | beta        | Foi adicionada a ação [query](/graph/api/search-query?view=graph-rest-beta). |
-| Adição        | beta        | Foram adicionados os tipos complexos [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta) e [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta). |
-| Adição        | beta        | Foram adicionadas as entidades [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta) e [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) e os métodos expostos por essas entidades. |
+| Adição        | beta        | Foram adicionados os tipos complexos [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resources/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resources/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) e [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta). |
+| Adição        | beta        | Foram adicionadas as entidades [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](/graph/api/resources/schema?view=graph-rest-beta), [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) e os métodos expostos por essas entidades. |
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | Beta | Adicionados os recursos [openshift](/graph/api/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/beta/resources/swapShiftChangeRequest?view=graph-rest-beta) e [timeoffrequest](/graph/api/beta/resources/timeoffrequest?view=graph-rest-beta) e os métodos associados.|
-| Adição | Beta | Adicionadas as propriedades **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** ao recurso [schedule](/graph/api/beta/resources/schedule?view=graph-rest-beta).|
+| Adição | Beta | Adicionados os recursos [openshift](/graph/api/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapShiftChangeRequest?view=graph-rest-beta) e [timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta) e os métodos associados.|
+| Adição | Beta | Adicionadas as propriedades **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** ao recurso [schedule](/graph/api/resources/schedule?view=graph-rest-beta).|
 | Adição        | Beta          | Outra rota adicionada para recuperar um [driveItem] usando uma ID de canal e de equipe, [obter driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## <a name="october-2019"></a>Outubro de 2019
@@ -357,22 +404,22 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Alteração          | beta          | O nome da entidade **detectedSensitiveContent** foi alterado para [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
-| Exclusão        | beta          | As propriedades **displayName**, **uniqueCount** e **matches** foram removidas de [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
-| Alteração          | beta          | As propriedades **id** foram alteradas para **sensitiveTypeId** de [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   | 
-| Alteração          | beta          | A propriedade **confidence** foi alterada para **confidenceLevel** de [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   | 
-| Adição        | beta          | A propriedade **count** foi adicionada a [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/.  | 
-| Exclusão        | beta          | A propriedade **actionSource** foi removida de [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). | 
-| Exclusão        | beta          | A entidade **auditInfo** foi removida. | 
-| Alteração          | beta          | **protectByDoNotForwardAction** foi alterado para [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). | 
-| Adição        | beta          | A propriedade **alignment** foi adicionada a [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). | 
+| Alteração          | beta          | O nome da entidade **detectedSensitiveContent** foi alterado para [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  |
+| Exclusão        | beta          | As propriedades **displayName**, **uniqueCount** e **matches** foram removidas de [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  |
+| Alteração          | beta          | As propriedades **id** foram alteradas para **sensitiveTypeId** de [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   |
+| Alteração          | beta          | A propriedade **confidence** foi alterada para **confidenceLevel** de [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   |
+| Adição        | beta          | A propriedade **count** foi adicionada a [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/.  |
+| Exclusão        | beta          | A propriedade **actionSource** foi removida de [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). |
+| Exclusão        | beta          | A entidade **auditInfo** foi removida. |
+| Alteração          | beta          | **protectByDoNotForwardAction** foi alterado para [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). |
+| Adição        | beta          | A propriedade **alignment** foi adicionada a [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). |
 | Alteração          | beta          | A propriedade **labelId** foi alterada para **label** em [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Alteração          | beta          | A propriedade **classificationIds** foi alterada para **responsibleSensitivityTypeIds** em [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Adição        | beta          | A propriedade **actionSource** foi adicionada a [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Alteração          | beta          | A propriedade **labelId** foi alterada para **label** em [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
 | Alteração          | beta          | A propriedade **classificationIds** foi alterada para **responsibleSensitivityTypeIds** em [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
 | Adição        | beta          | A propriedade **actionSource** foi adicionada a [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
-| Alteração          | beta          | O valor de enumeração [contentFormat](/graph/api/resources/enums?view=graph-rest-beta)) foi alterado de **file** para **default**. | 
+| Alteração          | beta          | O valor de enumeração [contentFormat](/graph/api/resources/enums?view=graph-rest-beta)) foi alterado de **file** para **default**. |
 | Exclusão        | beta          | O valor **mandatory** foi removido da enumeração [actionSource](/graph/api/resources/enums?view=graph-rest-beta)). |
 | Alteração          | beta          | O valor de enumeração de [actionSource](/graph/api/resources/enums?view=graph-rest-beta)) **policyDefault** foi removido para **default**. |
 | Exclusão        | beta          | **auditMetadataKey** foi removido. |
@@ -503,7 +550,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição        | Beta        | Adicionada a propriedade **isBroadcast** ao recurso [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta). |
 | Alteração        | Beta        | Renomeada a propriedade **recurso** ao **resourceUrl** no recurso [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta). |
 | Alteração          | Beta        | Alterado os tipos de propriedade **código** e **subCódigo** de uma cadeia de caracteres para Int32 no recurso [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta). |
-| Alteração        | Beta        | Renomeada a propriedade **subcódigo** como **subCódigo** no recurso [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta). | 
+| Alteração        | Beta        | Renomeada a propriedade **subcódigo** como **subCódigo** no recurso [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta). |
 
 ### <a name="files-onedrive-for-business-and-onedrive-personal"></a>Arquivos (OneDrive for Business e OneDrive Pessoal)
 
@@ -1619,7 +1666,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| **Tipo de alteração** | **Version**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | v1.0 e beta | A propriedade**internetMessageHeaders** da entidade [mensagem](/graph/api/resources/message?view=graph-rest-1.0) é gravável na criação de mensagens. |
 
@@ -3925,7 +3972,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| **Tipo de alteração** | **Version** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0        | Foi adicionado _inferenceClassification_ e _extensões_ a entidade **mensagem**. |
 

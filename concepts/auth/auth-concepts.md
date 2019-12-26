@@ -1,26 +1,26 @@
 ---
-'title:': Authentication and authorization basics for Microsoft Graph
+title: Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 description: Para chamar o Microsoft Graph, o aplicativo deve adquirir um token de acesso da Microsoft Identity Plataform.
 author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: a1d11cab454ead5f15d405b7674d727c69e71c96
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 3b680e906b6adacb0e737b34d50f69d2ad36675f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054002"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870909"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 
-Para chamar o Microsoft Graph, o aplicativo deve adquirir um token de acesso da Microsoft Identity Plataform. O token de acesso contém informações sobre seu aplicativo e as permissões que ele possui para os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser registrado com a Microsoft Identity Platform e ter autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph. 
+Para chamar o Microsoft Graph, o aplicativo deve adquirir um token de acesso da Microsoft Identity Plataform. O token de acesso contém informações sobre seu aplicativo e as permissões que ele possui para os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser registrado com a Microsoft Identity Platform e ter autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph.
 
 Este tópico fornece uma visão geral dos tokens de acesso, da Microsoft Identidade Platform e de como seu aplicativo pode obter tokens de acesso. Se você já estiver familiarizado com a integração de um aplicativo com o Microsoft Identity Platform para obter tokens, confira a seção [Próximas Etapas](#next-steps) para obter informações e exemplos específicos do Microsoft Graph.
 
 ## <a name="access-tokens"></a>Tokens de acesso
 
-Os tokens de acesso emitidos pela Microsoft Identity Platform são codificados em base 64 de JSON Web Tokens (JWT). Eles contêm informações (declarações) que as APIs da Web protegidas pela Microsoft Identity Platform, como o Microsoft Graph, usam para validar o chamador e para garantir que o chamador tenha as permissões adequadas para executar a operação solicitada. Ao chamar o Microsoft Graph, você pode tratar os tokens de acesso como opacos. Você deve sempre transmitir tokens de acesso em canais seguros, como protocolo TLS (HTTPS).
+Tokens de acesso emitidos pela plataforma de identidade da Microsoft contêm informações (declarações) que as APIs da Web protegidas pela Microsoft Identity Platform, como o Microsoft Graph, usam para validar o chamador e para garantir que o chamador tenha as permissões adequadas para executar a operação solicitada. Ao chamar o Microsoft Graph, você deve tratar os tokens de acesso como opacos. Você deve sempre transmitir tokens de acesso em canais seguros, como protocolo TLS (HTTPS).
 
 Este é um exemplo de um token de acesso da Microsoft Identity Platform:
 
@@ -41,7 +41,7 @@ GET https://graph.microsoft.com/v1.0/me/
 
 Antes que seu aplicativo possa receber um token da Microsoft Identity Platform, ele deve ser registrado no [portal do Azure](https://portal.azure.com/). O registro integra o aplicativo com a Microsoft Identity Platform e estabelece as informações que ele usa para acessar os tokens, incluindo:
 
-- **ID do aplicativo**: um identificador exclusivo atribuído pela Microsoft Identity Platform. 
+- **ID do aplicativo**: um identificador exclusivo atribuído pela Microsoft Identity Platform.
 - **Redirecionamento de URL/URI**: um ou mais pontos de extremidade no qual seu aplicativo receberá respostas da Microsoft Identity Platform. (Para aplicativos móveis e nativos, será um URI atribuído pela Microsoft Identity Platform.)
 - **Segredo do Aplicativo**: uma senha ou um par de chaves públicas/particulares que seu aplicativo usa para se autenticar com a Microsoft Identity Platform. (Não é necessário para aplicativos nativos ou móveis.)
 
@@ -66,16 +66,15 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como usuários, grupos e email. Como desenvolvedor, você decide quais permissões seu aplicativo deverá solicitar para o Microsoft Graph. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado.
 
-O Microsoft Graph tem dois tipos de permissões: 
+O Microsoft Graph tem dois tipos de permissões:
 
-- As **permissões delegadas** são usadas pelos aplicativos que têm um usuário conectado atualmente. Para esses aplicativos, o usuário ou um administrador concorda com as permissões que o aplicativo solicita e o aplicativo pode agir como o usuário conectado ao fazer chamadas ao Microsoft Graph. Algumas permissões delegadas podem ser autorizadas por usuários não administradores, mas algumas permissões com maiores privilégios exigem o [consentimento do administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
+- As **permissões delegadas** são usadas pelos aplicativos que têm um usuário conectado atualmente. Para esses aplicativos, o usuário ou um administrador concorda com as permissões que o aplicativo solicita e o aplicativo pode agir como o usuário conectado ao fazer chamadas ao Microsoft Graph. Algumas permissões delegadas podem ser autorizadas por usuários não administradores, mas algumas permissões com maiores privilégios exigem o [consentimento do administrador](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  
 
-- As **permissões de aplicativo** são usadas pelos aplicativos que são executados sem um usuário conectado. Por exemplo, aplicativos executados em segundo plano ou como daemons. As permissões de aplicativo só podem ser [concedidas por um administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
+- As **permissões de aplicativo** são usadas pelos aplicativos que são executados sem um usuário conectado. Por exemplo, aplicativos executados em segundo plano ou como daemons. As permissões de aplicativo só podem ser [concedidas por um administrador](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer solicitações ao Microsoft Graph. É importante compreender a diferença entre as Permissões Delegadas e as Permissões de aplicativo que o aplicativo tem autorização para usar e as respectivas Permissões Efetivas ao fazer chamadas para o Microsoft Graph
 
-- No caso de permissões delegadas, as permissões efetivas do aplicativo estarão na interseção menos privilegiada das permissões delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a permissão delegada User.ReadWrite.All. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
-  
+- No caso de permissões delegadas, as permissões efetivas do aplicativo estarão na interseção menos privilegiada das permissões delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a permissão delegada User.ReadWrite.All. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
 - No caso de permissões de aplicativo, as permissões efetivas do aplicativo estarão no nível completo de privilégios implícitos na permissão. Por exemplo, um aplicativo que tem a permissão de aplicativo User.ReadWrite.All pode atualizar o perfil de todos os usuários na organização.
 
 >**Observação** Por padrão, os aplicativos que receberam permissões de aplicativo para os seguintes conjuntos de dados podem acessar todas as caixas de correio na organização:
@@ -85,7 +84,7 @@ As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer 
 - [Email](../permissions-reference.md#mail-permissions)
 - [Configurações da Caixa de Correio](../permissions-reference.md#mail-permissions)
 
->Os administradores podem configurar a [política de acesso a aplicativos](../auth-limit-mailbox-access.md) para limitar o acesso do aplicativo a caixas de correio _específicas_. 
+>Os administradores podem configurar a [política de acesso a aplicativos](../auth-limit-mailbox-access.md) para limitar o acesso do aplicativo a caixas de correio _específicas_.
 
 Para obter uma lista completa das permissões do Microsoft Graph e saber quais permissões precisam de autorização de um administrador, confira a [Referência de permissões](../permissions-reference.md).
 
@@ -101,7 +100,7 @@ Sobre o ponto de extremidade da Microsoft Identity Platform:
 
 Para obter uma lista completa de bibliotecas de cliente da Microsoft, middleware de servidor da Microsoft e bibliotecas de terceiros compatíveis, confira [Bibliotecas de autenticação da Microsoft Identity Platform](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
-Não é necessário usar uma biblioteca de autenticação para obter um token de acesso. Para saber mais do uso direto com os pontos de extremidade da Microsoft Identity Platform sem a ajuda de uma biblioteca de autenticação, confira [autenticação da Microsoft Identity Platform](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/authentication-scenarios)
+Não é necessário usar uma biblioteca de autenticação para obter um token de acesso. Para saber mais do uso direto com os pontos de extremidade da Microsoft Identity Platform sem a ajuda de uma biblioteca de autenticação, confira [autenticação da Microsoft Identity Platform](/azure/active-directory/develop/authentication-scenarios)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -120,11 +119,11 @@ Se já estiver pronto para entrar no código, você pode usar os seguintes recur
 
 Para ajudá-lo a começar rapidamente, criamos uma série de módulos de treinamento e outros recursos que mostram como autenticar e usar a API em diversas plataformas.
 
-- Use a página [Introdução](https://developer.microsoft.com/pt-BR/graph/get-started) para encontrar bibliotecas, exemplos, conteúdo de treinamento e outros recursos para sua plataforma favorita.
-- Para começar a trabalhar rapidamente com um exemplo pré-configurado para sua plataforma, confira o [Início Rápido do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/quick-start).
+- Use a página [Introdução](https://developer.microsoft.com/graph/get-started) para encontrar bibliotecas, exemplos, conteúdo de treinamento e outros recursos para sua plataforma favorita.
+- Para começar a trabalhar rapidamente com um exemplo pré-configurado para sua plataforma, confira o [Início Rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start).
 - Veja nossos [exemplos do Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) no GitHub.
 
-### <a name="microsoft-identity-platform-samples-and-documentation"></a>Documentação e exemplos da Microsoft Identity Platform 
+### <a name="microsoft-identity-platform-samples-and-documentation"></a>Documentação e exemplos da Microsoft Identity Platform
 
 A documentação da Microsoft Identity Platform contém artigos e exemplos que se concentram especificamente na autenticação e autorização com a Microsoft Identity Platform.
 

@@ -4,12 +4,12 @@ description: 'Listar todas as equipes '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 847af7e9b2ff9f725ca2ebd2d7a1e82916e33c27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5161abd3e21a394ebe5872efc9a75c103d75041d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580985"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868517"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Listar todas as equipes do Microsoft Teams para uma organização
 
@@ -58,7 +58,7 @@ Usando as APIs beta, você pode usar $filter para retornar apenas os grupos que 
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Observação**: $filter em /groups só está disponível por meio do ponto de extremidade beta. resourceProvisioningOptions está disponível na versão 1.0 e beta.
+> **Observação**: a filtragem de grupos por resourceProvisioningOptions só está disponível por meio do ponto de extremidade beta. resourceProvisioningOptions está disponível na versão 1.0 e beta.
 
 > **Observação**: certas equipes antigas não utilizadas não serão listadas. Para saber mais, confira [problemas conhecidos](known-issues.md#missing-teams-in-list-all-teams).
 
