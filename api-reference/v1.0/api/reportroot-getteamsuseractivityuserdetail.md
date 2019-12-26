@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: ce5c4c6d7a1d3271d854d0ecb9d089920f07c842
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e10862bbefc091f6d8e8bbbaeba502734637965e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727884"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865227"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -25,6 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta corporativa ou de estudante)     | Reports.Read.All                         |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
+
+**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

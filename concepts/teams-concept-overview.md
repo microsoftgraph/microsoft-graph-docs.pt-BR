@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c374adf6369790c92cfc8261367bfa233276c82a
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 4214d2d250f45d8f57a6ac3235575aa5327eb1e2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969162"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866900"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -92,5 +92,5 @@ Usar a API do [Teams no Microsoft Graph](/graph/api/resources/teams-api-overview
 - Analise em detalhes os métodos, propriedades e relações dos recursos de [equipe](/graph/api/resources/team?view=graph-rest-1.0), [canal](/graph/api/resources/channel?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0).
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Leia mais sobre o [modelo de programação do Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/concepts-overview).
-- Explore as [APIs de chamadas e reuniões online](/graph/api/resources/calls-api-overview?view=graph-rest-beta). 
+- Explore as [APIs de comunicações em nuvem](/graph/api/resources/communications-api-overview?view=graph-rest-beta).
 - Comece a trabalhar com um exemplo de código: [Linhas Aéreas Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [mini exemplos C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)

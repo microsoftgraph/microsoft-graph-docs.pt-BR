@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6c2f309ac7b66d3d698e54c2280b49b0bb5912a4
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 0f6c8ba4e08112860b74a0ed932fc11895ed13dd
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844285"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870894"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -43,6 +43,51 @@ Os recursos de pesquisa de usuário e grupo permitem que o aplicativo pesquise u
 Se o usuário conectado for um usuário convidado, dependendo das permissões que recebeu um aplicativo, ele pode ler o perfil de um usuário específico ou grupo (por exemplo, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`). No entanto, o usuário não pode executar consultas no conjunto de recursos `/users` ou `/groups` que, potencialmente, retornam mais de um recurso.
 
 Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou grupos que ele obtém seguindo os links nas propriedades de navegação. Por exemplo, `/users/{id}/directReports` ou `/groups/{id}/members`.
+
+## <a name="limited-information-returned-for-inaccessible-member-objects"></a>Informações limitadas retornadas para objetos membro inacessíveis
+Objetos de contêiner, como grupos, oferecem suporte a membros de vários tipos; por exemplo, usuários e dispositivos. Quando um aplicativo consulta a associação de um objeto contêiner e não tem permissão para ler um determinado tipo, os membros desse tipo são retornados, mas com informações limitadas.  O aplicativo recebe umas 200 respostas e uma coleção de objetos.  Informações completas são retornadas para os tipos de objetos que o aplicativo tem permissões para ler.  Para os tipos de objetos que o aplicativo não tem permissão para ler, apenas o tipo e a ID do objeto são retornados.
+
+Isso é aplicado a todos as relações que são do tipo [directoryObject](/graph/api/resources/directoryobject) (não apenas aos links de membro). Os exemplos incluem `/groups/{id}/members`, `/users/{id}/memberOf` ou `me/ownedObjects`.
+
+Por exemplo, digamos que um aplicativo tenha as permissões de [User.Read.All](#user-permissions) e [Group.Read.All](#group-permissions) do Microsoft Graph.  Um grupo foi criado e esse grupo contém um usuário, um grupo e um dispositivo.  O aplicativo chama aos [membros do grupo de listas](/graph/api/group-list-members).  O aplicativo tem acesso aos objetos de usuário e grupo no grupo, mas não ao objeto do dispositivo.  Na resposta, todas as propriedades selecionadas dos objetos de usuário e grupo são retornadas. No entanto, para o objeto de dispositivo, apenas as informações limitadas são retornadas.  O tipo de dados e a ID do objeto são retornados para o dispositivo, mas todas as outras propriedades têm um valor *nulo*. Os aplicativos sem permissão não poderão usar a ID para obter o objeto real.
+
+```http
+GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
+```
+
+Segue a resposta de JSON:
+
+```json
+{
+"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryObjects(id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl)",
+    "value":[
+        {
+            "@odata.type":"#microsoft.graph.user",
+            "id":"69d035a3-29c9-469f-809d-d21a4ae69e65",
+            "displayName":"Jane Dane",
+            "createdDateTime":"2019-09-18T09:06:51Z",
+            "deletedDateTime":null
+        },
+        {
+            "@odata.type":"#microsoft.graph.group",
+            "id":"c43a7cc9-2d95-44b6-bf6a-6392e41949b4",
+            "displayName":"Group 1",
+            "description":null,
+            "createdDateTime":"2019-10-24T01:34:35Z",
+            "deletedDateTime":null
+        },
+        {
+            "@odata.type":"#microsoft.graph.device",
+            "id": "d282309e-f91d-43b6-badb-9e68aa4b4fc8",
+            "accountEnabled":null,
+            "deviceId":null,
+            "displayName":null,
+            "operatingSystem":null,
+            "operatingSystemVersion":null
+        }
+    ]
+}
+```
 
 ---
 
@@ -1170,7 +1215,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ## <a name="presence-permissions"></a>Permissões de presença
 
-#### <a name="application-permissions"></a>Permissões de aplicativos
+#### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
@@ -1216,7 +1261,7 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. Serviços que fornecem relatórios de uso incluem o Office 365 e Azure Active Directory. | Sim | Não |
+| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Serviços que fornecem relatórios de uso incluem o Office 365 e o Azure Active Directory. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1225,7 +1270,8 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 | _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. Serviços que fornecem relatórios de uso incluem o Office 365 e Azure Active Directory. | Sim |
 
 ### <a name="remarks"></a>Comentários
-As permissões de relatórios só são válidas para contas corporativas ou de estudante.
+- As permissões de relatórios só são válidas para contas corporativas ou de estudante.
+- Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](reportroot-authorization.md).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1275,6 +1321,15 @@ As permissões de relatórios só são válidas para contas corporativas ou de e
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
 ---
+
+## <a name="schedule-management-permissions"></a>Permissões do gerenciamento de agenda
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Schedule.ReadWrite.All_ | Dados do serviço de Turnos de Leitura e Gravação (Teams) | Permite que um aplicativo leia e grave a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público.| Sim | Não |
+| _Schedule.Read.All_ | Dados do serviço de Turnos de Leitura (Teams) | Permite que o aplicativo leia a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
 
 ## <a name="search-permissions"></a>Permissões de pesquisa
 
