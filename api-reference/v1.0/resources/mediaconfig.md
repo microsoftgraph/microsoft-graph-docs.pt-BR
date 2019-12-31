@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso mediaConfig
 description: Uma classe base abstrata que contém a configuração de mídia usada para se conectar a uma chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5dd1fc048522f0b93c7d92cb9d43e341bcbe8a80
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: ad914bfcf3a0657a96b994241ad875aa3261e227
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870995"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913545"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="80841-103">tipo de recurso mediaConfig</span><span class="sxs-lookup"><span data-stu-id="80841-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="70e37-103">tipo de recurso mediaConfig</span><span class="sxs-lookup"><span data-stu-id="70e37-103">mediaConfig resource type</span></span>
 
-<span data-ttu-id="80841-104">Uma classe base abstrata que contém a configuração de mídia usada para se conectar a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="80841-104">An abstract base class that contains the media configuration used to connect to a call.</span></span>
+<span data-ttu-id="70e37-104">Uma classe base abstrata que contém a configuração de mídia usada para se conectar a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="70e37-104">An abstract base class that contains the media configuration used to connect to a call.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="80841-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="80841-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="70e37-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="70e37-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
