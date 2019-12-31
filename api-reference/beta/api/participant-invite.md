@@ -1,16 +1,16 @@
 ---
 title: 'participante: convidar'
 description: Convide participantes para a chamada ativa.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c95bf23ca3e96f7ba8950e816117866456b64d2
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: d6bd74f8bf1a7b8eb410f84a6a05040ae65166f3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302982"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913111"
 ---
 # <a name="participant-invite"></a>participante: convidar
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte                       |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte                       |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
 | Aplicativo     | Calls. InitiateGroupCalls. All                               |
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participants|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes que serão convidados.|
+|participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes que serão convidados.|
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta

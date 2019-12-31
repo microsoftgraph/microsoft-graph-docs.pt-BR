@@ -1,16 +1,16 @@
 ---
 title: 'Call: cancelMediaProcessing'
 description: Cancela o processamento de mídia para qualquer operação PlayPrompt ou RecordResponse em andamento.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cf5b6da2bf657fb999a5c9e4df06e1a8841b7942
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a11b42affaa2cc4c21dd50e2d2474f3e2ffa77d1
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868279"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912914"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: cancelMediaProcessing
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Nenhum.                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP

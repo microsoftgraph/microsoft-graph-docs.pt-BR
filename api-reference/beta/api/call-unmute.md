@@ -1,16 +1,16 @@
 ---
 title: 'chamada: ativar mudo'
 description: Permitir que o aplicativo se desative sozinho.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: de47162a9a2c3b4baf31f8b3b11f50100730d3b9
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: c13d3811678b7dc6f3b0f38eb0aaf98727c8b6bc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747578"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912738"
 ---
 # <a name="call-unmute"></a>chamada: ativar mudo
 
@@ -28,8 +28,8 @@ Para obter mais informações sobre como lidar com as operações de desativaç�
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|Cadeia de Caracteres|O contexto do cliente.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.

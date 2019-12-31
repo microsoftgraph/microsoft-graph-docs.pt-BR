@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso Presence
 description: Contém informações sobre a presença de um usuário, incluindo a disponibilidade e a atividade do usuário.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 15635f29143a51f87a107c5f4e632b8684e79c50
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 48574baf0969077add921d6b4c9d52dd2d5d4906
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844278"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913566"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso Presence
 
@@ -18,7 +18,7 @@ Contém informações sobre a presença de um usuário, incluindo a disponibilid
 
 > **Observação:** No momento, esse recurso só tem suporte para usuários do Microsoft Teams.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                            | Tipo de retorno                                       | Descrição                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
@@ -30,7 +30,7 @@ Contém informações sobre a presença de um usuário, incluindo a disponibilid
 
 | Relação        | Tipo                                                 | Descrição                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  string     |  A ID de objeto de usuário   |
+|id    |  cadeia de caracteres     |  A ID de objeto de usuário   |
 |availability    |  coleção de cadeias de caracteres   |   As informações de presença básicas de um usuário. Os valores possíveis `Available`são `AvailableIdle`, `Away`, `BeRightBack` `Busy` `BusyIdle`,,, `DoNotDisturb`, `Offline`,,`PresenceUnknown`  |
 |atividade    |  coleção de cadeias de caracteres      |    As informações complementares para a disponibilidade de um usuário. Os valores possíveis `Available`são `Away`, `BeRightBack``Busy` `DoNotDisturb` `InACall`,,,, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`.       |
 

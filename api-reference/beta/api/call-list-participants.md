@@ -1,16 +1,16 @@
 ---
 title: Listar participantes
 description: Recupere uma lista de objetos participantes na chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ff5c75db50f9321465d61edb156ad26ffc714c03
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: c9e9fb8e1ea8a78629aa7c1fdf5639864a4f5162
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302391"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912850"
 ---
 # <a name="list-participants"></a>Listar participantes
 

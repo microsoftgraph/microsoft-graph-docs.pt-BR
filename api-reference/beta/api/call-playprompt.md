@@ -1,16 +1,16 @@
 ---
 title: 'Call: playPrompt'
 description: Reproduza um prompt na chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c62afeac5870d288c546aa3761b60a270d85219
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6b3d7c8ee072ac347ec25b2ac0edebdb80a2a92d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868265"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912829"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP

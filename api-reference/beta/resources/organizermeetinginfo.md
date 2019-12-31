@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso organizerMeetingInfo
 description: 'Contém detalhes sobre o organizador da reunião. '
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cdb23ebfe16822e4caa4374fbc8e21697533c7cc
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 3f011870422abb255c895b389a959554cd44ddfa
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006603"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913510"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>tipo de recurso organizerMeetingInfo
 

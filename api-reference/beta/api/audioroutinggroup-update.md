@@ -1,16 +1,16 @@
 ---
 title: Atualizar grupo de roteamento de áudio
 description: Modificar fontes e receptores de um audioRoutingGroup.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 993695ead1dc881a721ffc360cfb1e9abd75556d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 77fa0c78f295cd8d0380a386ad19f88388417989
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006372"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911871"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar grupo de roteamento de áudio
 
@@ -45,9 +45,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| receptores | String collection | Os participantes de destino no audioRoutingGroup. |
+| receptores | Coleção de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
 | routingmode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
-| fontes | String collection | O participante de origem no audioRoutingGroup. |
+| fontes | Coleção de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.

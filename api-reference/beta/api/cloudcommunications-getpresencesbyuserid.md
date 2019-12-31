@@ -1,16 +1,16 @@
 ---
 title: 'cloudCommunications: getPresencesByUserId'
 description: Obtenha as informações de presença de vários usuários.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 93a782a0d46125a1f4a4a751c45d254e293c05cb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 256fdbbe86eb667fa06ca411aad050bf5e8013dc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868092"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912724"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Presence.Read.All                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Application                            | Sem suporte.                                  |
+| Delegada (conta corporativa ou de estudante)     | Presence.Read.All                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                         |
+| Aplicativo                            | Sem suporte.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

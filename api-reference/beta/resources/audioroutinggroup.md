@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso audioRoutingGroup
 description: O grupo de roteamento de áudio armazena uma rota de áudio privada entre os participantes de uma conversa de várias partes. Source é o próprio participante e os receptores são um subconjunto de outros participantes da conversa de vários participantes.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 827f67239be572bbc2b20b8900ea33b9b0294412
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: cb96e83f6c80a3b3c50b37612731272ca329e3cc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006758"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913748"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
 
@@ -20,13 +20,13 @@ O grupo de roteamento de áudio armazena uma rota de áudio privada entre os par
 
 > **Observação:** o [ConfigureMixer](../api/participant-configuremixer.md) não envolve nenhuma rota, é para toda a chamada para definir os níveis de volume para combinações de receptor de origem.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                  | Tipo de retorno                               | Descrição                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Obter audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Leia as propriedades e os relacionamentos do objeto audioRoutingGroup.|
-| [Atualizar](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Atualizar lista de receptores.                       |
-| [Excluir](../api/audioroutinggroup-delete.md)            | None                                      | Exclua o grupo roteamento de áudio.              |
+| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Atualizar lista de receptores.                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | None                                      | Exclua o grupo roteamento de áudio.              |
 
 ## <a name="properties"></a>Propriedades
 
@@ -34,7 +34,7 @@ O grupo de roteamento de áudio armazena uma rota de áudio privada entre os par
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | cadeia de caracteres            | Somente leitura.                                                           |
 | receptores     | collection(string) | Lista de IDs de participantes de recebimento.                                   |
-| routingmode   | string            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
+| routingmode   | cadeia de caracteres            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
 | fontes       | collection(string) | Lista de IDs de participantes de origem.                                      |
 
 > **Observação:** O modo de roteamento determina as restrições nas fontes e nos receptores. Só há suporte para os seguintes grupos de roteamento.

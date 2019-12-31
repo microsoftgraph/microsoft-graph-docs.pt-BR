@@ -1,16 +1,16 @@
 ---
 title: 'participante: configureMixer'
 description: Configure o modo como o áudio é misturado para diferentes participantes em uma conversa de várias partes.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f1a7650ea3195cdb28af6d49a71983129e0e322a
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: d1aa61efeafe26dde904787bf723c8352594c424
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636831"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913125"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 

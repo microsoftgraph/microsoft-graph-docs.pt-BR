@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso meetingParticipants
 description: Participantes de uma reunião.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 171d24629c8a219f788ad17cdf97874bbf299a62
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 66bb521ae9a2222b5ea60709ac3687da930161d6
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006624"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913552"
 ---
 # <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
 

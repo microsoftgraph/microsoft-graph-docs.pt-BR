@@ -1,16 +1,16 @@
 ---
 title: Excluir grupo de roteamento de áudio
 description: Exclua o grupo de roteamento de áudio especificado.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4155f02b6c4f6eda7366734bd3f13dd2313d907d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 7f89c223c7e45ccaa5a25fe7bbdd7a53f529880f
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006407"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911809"
 ---
 # <a name="delete-audio-routing-group"></a>Excluir grupo de roteamento de áudio
 

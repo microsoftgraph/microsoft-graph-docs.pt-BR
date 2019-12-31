@@ -1,16 +1,16 @@
 ---
 title: 'Call: updateMetadata'
 description: Atualize os metadados da aplicação associados a uma chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e681ebf65ebed550d4180788eb5d534723981463
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: b4d4b0fc986952f7bcfdbaff09aee60609337da1
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636684"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912794"
 ---
 # <a name="call-updatemetadata"></a>Call: updateMetadata
 

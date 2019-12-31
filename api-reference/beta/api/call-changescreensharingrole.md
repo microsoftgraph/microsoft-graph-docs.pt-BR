@@ -1,16 +1,16 @@
 ---
 title: 'Call: changeScreenSharingRole'
 description: Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d670e2b1be4450b33e57ca0834aecd1f6427603d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 333a9a2ebb6fa5b3c43ccee47f0256ef5ba6dee3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006351"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912766"
 ---
 # <a name="call-changescreensharingrole"></a>Call: changeScreenSharingRole
 

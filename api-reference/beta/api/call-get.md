@@ -1,16 +1,16 @@
 ---
 title: Obter chamada
 description: Recupere as propriedades e os relacionamentos de um objeto de chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f02f1a984f27148aeac088efb4d56409480ba969
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: f0ec45357ee56846b3234911ab3f37b47785f869
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636712"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912773"
 ---
 # <a name="get-call"></a>Obter chamada
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                         |
 | Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP

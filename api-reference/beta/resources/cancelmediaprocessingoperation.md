@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso CancelMediaProcessingOperation
 description: Esse tipo de recurso é usado para descrever o formato de resposta da operação de cancelamento do processamento de mídia.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cc9142be9524b34ded7a2bd9315a6bb2cc1aa9ca
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 20da55c068f6e0f0a69b876cfd23181eac1391a4
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006723"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913496"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>Tipo de recurso CancelMediaProcessingOperation
 

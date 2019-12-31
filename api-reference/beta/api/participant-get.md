@@ -1,16 +1,16 @@
 ---
 title: Obter participante
 description: Recupere as propriedades e os relacionamentos de um objeto **participante** .
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 514f47cdd50117022c3c7f6e553c1d9afed4800a
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 54d6e0d0f51c6f45b8473c5b8764bf7ec03be9c3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303055"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913118"
 ---
 # <a name="get-participant"></a>Obter participante
 

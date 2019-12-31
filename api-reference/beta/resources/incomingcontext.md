@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso incomingContext
-description: O contexto associado a uma chamada de entrada.
-author: VinodRavichandran
+description: O contexto associado a uma chamada recebida.
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0afe972be631a2048b2a1970b1fda41e8cb72920
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 4ade91c621dabdb7867ff5a4586276265d73ca81
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636894"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913524"
 ---
 # <a name="incomingcontext-resource-type"></a>tipo de recurso incomingContext
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O contexto associado a uma chamada de entrada.
+O contexto associado a uma chamada recebida.
 
 ## <a name="properties"></a>Propriedades
 

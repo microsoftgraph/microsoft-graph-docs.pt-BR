@@ -1,16 +1,16 @@
 ---
 title: 'chamada: sem áudio'
 description: Permite que o aplicativo se desative.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 246eb11fbcffb8c86c7d50cd186eec9473d6028e
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 6e9a4f10924292eb48145846efa5352f19f2ca54
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747585"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912752"
 ---
 # <a name="call-mute"></a>chamada: sem áudio
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|Cadeia de Caracteres|O contexto do cliente.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.

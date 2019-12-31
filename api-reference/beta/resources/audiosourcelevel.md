@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso audioSourceLevel
 description: Configuração de nível para outras fontes.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa3a06d319eea0e3af5c016a9ef799591f76fabb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 35997bfcae7f33cc9bf8e62121c5dc2a724c95be
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013210"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913741"
 ---
 # <a name="audiosourcelevel-resource-type"></a>tipo de recurso audioSourceLevel
 

@@ -1,16 +1,16 @@
 ---
 title: 'Call: Redirect'
 description: Redirecione as chamadas recebidas.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51db3a87dbbfae18bb3b1651d34dc9cf1ca28725
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 8d0512b808e0ac89cb94e8a429599b27781822f6
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636691"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912815"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|targets|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada toque simultâneo. Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado. Oferecemos suporte para até 25 metas para o toque simultâneo.
+|targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada toque simultâneo. Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado. Oferecemos suporte para até 25 metas para o toque simultâneo.
 |targetDisposition|String|Preterido Os valores possíveis são: `default` , `simultaneousRing` , `forward`. Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada ou chamada de toque simultâneo do número de destinos fornecidos.|
 |timeout|Int32|O tempo limite (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo limite é entre 15 e 90 segundos, inclusive. O valor de tempo limite padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeito a alterações). |
 |maskCallee|Booliano|Indica se o receptor deve ser oculto do chamador. Se true, a identidade do receptor é a identidade do bot. Padrão: false.|

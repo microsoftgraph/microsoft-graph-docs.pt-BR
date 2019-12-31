@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso inviteParticipantsOperation
 description: Representa o status de uma operação de convite de participante de execução longa, disparada por uma chamada para a API participante-INVITE.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5802f5a8a63c971007cb6cda11f16823e6140298
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 1f0d53b9e0921b7d53df1499964ddfe84eaf7df7
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006680"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913447"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>tipo de recurso inviteParticipantsOperation
 
@@ -24,7 +24,7 @@ Representa o status de uma operação de convite de participante de execução l
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | O contexto do cliente.                                                                                                                               |
 | id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                              |
-| participants | coleção [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
+| participants | conjunto [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                             |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                  |
 

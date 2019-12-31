@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso commsNotification
 description: Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1752bbe46ee7795bd71df2089dadf6a975ccae26
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 05a800d4732ae54dd6c8b1ce76074b64625b9c16
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870922"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913356"
 ---
 # <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
 

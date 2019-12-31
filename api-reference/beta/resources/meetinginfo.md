@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso meetingInfo
 description: Informações de reunião especificadas para criar ou ingressar em uma reunião.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ef9c2b86c9eb745ae6282a5d3cbce8a76dc31139
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: b6ed682e063ce1f9b2d780a547a8de1856c6dbd0
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006638"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913391"
 ---
 # <a name="meetinginfo-resource-type"></a>tipo de recurso meetingInfo
 

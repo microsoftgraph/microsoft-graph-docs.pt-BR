@@ -1,16 +1,16 @@
 ---
 title: 'participante: muteAll'
 description: Ative o mudo para todos os participantes em uma chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b1e4555c77a843cfccd420ef0c17a09dba20a383
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 2ccf39562f3fe2e9ad3755388aa37e9264b7a486
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636821"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913097"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 

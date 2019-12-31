@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso updateRecordingStatusOperation
 description: Descreve o formato de resposta de uma ação de status de gravação de atualização.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 92cfc481d10cccd3752db29a0c1da7d46000ed3b
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 302ea2c5ce0cfb54168bf936f8c6e5829e0867c7
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636916"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913279"
 ---
 # <a name="updaterecordingstatusoperation-resource-type"></a>tipo de recurso updateRecordingStatusOperation
 

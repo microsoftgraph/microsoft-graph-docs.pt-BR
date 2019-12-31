@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso audioDuckingConfiguration
 description: Parâmetros para o pato de outras fontes (phasing dentro e fora de outras fontes).
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cfff0ca240a13c9c4396d605def05a52e1916778
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0305f076c4952c2e5d29df85d65f5f8d6c86232f
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013217"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913755"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>tipo de recurso audioDuckingConfiguration
 
