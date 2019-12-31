@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com a API de comunicações no Microsoft Graph
 description: A API de comunicações do Microsoft Graph adiciona uma nova dimensão à maneira como seus aplicativos e serviços podem interagir com os usuários, ativando os recursos de voz e vídeo.
-author: VinodRavichandran
+author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: dbad2e21d5e3dbdae37ab30b02d2a96970722040
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7bbe0ba0387ebbbb6669d463dba7073f571efbf9
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870341"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913335"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
 

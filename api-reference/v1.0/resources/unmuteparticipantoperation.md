@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso unmuteParticipantOperation
 description: Descreve o formato de resposta de uma chamada operação de desativação de participantes.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3091caf53c4840db5c12ef856908b172a767624f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1066861ab084f42c6652fab63a0199161bf9cd5e
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865634"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912955"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>tipo de recurso unmuteParticipantOperation
 

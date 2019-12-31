@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso resultInfo
 description: Isso contém informações específicas sobre o resultado de êxito e falha.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 39027ecf949860d9ffa757a95839ae7fd8184a27
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 230783192e936d3fb3c2799e6cb98d39492589a3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865644"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913405"
 ---
 # <a name="resultinfo-resource-type"></a>tipo de recurso resultInfo
 

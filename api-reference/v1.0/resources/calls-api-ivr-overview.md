@@ -1,16 +1,16 @@
 ---
 title: Cenários IVR em chamadas
 description: 'Estes são os cenários de resposta de voz interativa (IVR) que as APIs de chamada no Microsoft Graph dão suporte:'
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: f1a7e2c84083675037bbf146f5660afe6fee0a31
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9cbf0b9640c13c45730aa5842e150c4ad58767c4
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871003"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913454"
 ---
 # <a name="ivr-scenarios-in-calls"></a>Cenários IVR em chamadas
 

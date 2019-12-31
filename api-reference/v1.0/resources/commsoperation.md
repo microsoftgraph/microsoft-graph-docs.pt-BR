@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso commsOperation
 description: O status de determinadas operações de longa duração.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 47937d059f9a624ca5b9c58333275081d5a68400
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 91b56b93e6572d3b5a87b3f37dcbe9cdeee7e00a
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865665"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913230"
 ---
 # <a name="commsoperation-resource-type"></a>tipo de recurso commsOperation
 

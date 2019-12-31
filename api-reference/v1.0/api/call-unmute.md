@@ -1,16 +1,16 @@
 ---
 title: 'chamada: ativar mudo'
 description: Permitir que o aplicativo se desative sozinho.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7d1a55c888864fc333c304b1b445cd65594ff62c
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 51ad26211208934599feb65d4f932d8654fd170e
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871017"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913629"
 ---
 # <a name="call-unmute"></a>chamada: ativar mudo
 
@@ -26,8 +26,8 @@ Para obter mais informações sobre como lidar com as operações de desativaç�
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP

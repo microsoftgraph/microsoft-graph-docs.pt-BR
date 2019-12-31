@@ -1,16 +1,16 @@
 ---
 title: Excluir chamada
 description: Excluir ou desligar uma chamada ativa.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: def11fd1f30cbba8a1bef7f85821d7901dc7f379
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 708ff1466b86be842e751c3a79cf17dbf1ad64bd
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871043"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913601"
 ---
 # <a name="delete-call"></a>Excluir chamada
 
@@ -20,8 +20,8 @@ Excluir ou desligar uma chamada ativa. Para chamadas de grupo, isso só excluir�
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                         |
 | Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP

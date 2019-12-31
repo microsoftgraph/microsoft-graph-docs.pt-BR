@@ -1,20 +1,20 @@
 ---
 title: 'Call: recordResponse'
-description: Grava uma breve resposta de áudio do chamador. Isso será útil se o bot quiser capturar uma resposta de voz do chamador seguindo um prompt.
-author: VinodRavichandran
+description: Registra uma resposta de áudio curta do chamador. Isso será útil se o bot quiser capturar uma resposta de voz do chamador seguindo um prompt.
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 29fd70983ab72f1499be0e980c955fac39e5941b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 530cab8a11344959df32f7acc41bb706162ccab1
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865723"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913258"
 ---
 # <a name="call-recordresponse"></a>Call: recordResponse
 
-Grava uma breve resposta de áudio do chamador.
+Registra uma resposta de áudio curta do chamador.
 Um bot pode usá-la para capturar uma resposta de voz de um chamador depois de ser solicitada uma resposta.
 
 Para obter mais informações sobre como lidar com operações, confira [commsOperation](../resources/commsOperation.md)

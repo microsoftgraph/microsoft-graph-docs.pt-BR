@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso callMediaState
 description: Representa o estado de mídia de uma chamada.
-author: VinodRavichandran
+author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 01e2e8017d89ddf96997d1d5bef729f9e9dc439d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b73f6110639cfb158bef8e5f529d9a2c65b34689
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871002"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913461"
 ---
 # <a name="callmediastate-resource-type"></a>tipo de recurso callMediaState
 

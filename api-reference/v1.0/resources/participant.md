@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso participante
 description: O tipo de participante.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f20bd68cbd4669c002edb37c2ab5fb0a7340dba4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3f9e861cc5427243b18ff920facab7544d6315ad
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865650"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913734"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
 O tipo de participante.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                 | Tipo de retorno                                                 | Descrição                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|

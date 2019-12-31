@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso MuteParticipantOperation
 description: Descreve o formato de resposta de uma operação do participante sem som de chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 016fc70bf6422ecf255a15991e1d749e3b2dcce0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 291af6799d744fc717f15dcbdcddcbdc98518d34
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865651"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913209"
 ---
 # <a name="muteparticipantoperation-resource-type"></a>Tipo de recurso MuteParticipantOperation
 

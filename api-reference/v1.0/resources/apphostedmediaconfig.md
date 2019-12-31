@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso appHostedMediaConfig
 description: Pilha de mídia hospedada pelo aplicativo.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a5596e8e549cc22fe448de67669dde1d70727c3e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4518359a1a1a8478aaf2f0157cdc9e659ea6dd4a
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871010"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913489"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
 

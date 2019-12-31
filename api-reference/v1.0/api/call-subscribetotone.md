@@ -1,16 +1,16 @@
 ---
 title: 'Call: subscribeToTone'
 description: Assine o DTMF (sinalização de multifrequência de tom dual). Isso permite que você seja notificado quando o usuário pressionar teclas em um ' dialpad '.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 67f77d3413b53d2f26bb60be934a188239bd8234
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6a79f3f5395261bf3ceb5ab9d9dd55666b394bce
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871018"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913692"
 ---
 # <a name="call-subscribetotone"></a>Call: subscribeToTone
 

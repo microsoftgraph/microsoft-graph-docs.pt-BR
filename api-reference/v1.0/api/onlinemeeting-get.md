@@ -1,16 +1,16 @@
 ---
 title: Obter onlineMeeting
 description: Recupere as propriedades e os relacionamentos de um objeto de **reunião online** .
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 704ca0d5dca4b1bbee02ebc779d13503403d2646
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cd2d6abb0131c7193c1504c58eb89e68520cea58
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865671"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912305"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Application                            | OnlineMeetings.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                                        |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Aplicativo                            | OnlineMeetings.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

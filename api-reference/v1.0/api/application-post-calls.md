@@ -1,16 +1,16 @@
 ---
 title: Criar chamada
 description: Criar uma nova chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a9631f6b8dfb8335d7747e5f6531cb1942417d6d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3c10d3ec18e3bfa3704be7a152a10fcfc53760b6
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865752"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913615"
 ---
 # <a name="create-call"></a>Criar chamada
 

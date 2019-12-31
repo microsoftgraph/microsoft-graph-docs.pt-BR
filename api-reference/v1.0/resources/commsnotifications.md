@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso commsNotifications
 description: Lista de notificações usadas pelos servidores de comunicação para o envio de várias notificações em um único lote.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4c41a8657ebc144a7247a5e40984866c71d66154
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b5cbd2e2e2875a3e2ab207925a11fa258ad117f2
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871000"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913237"
 ---
 # <a name="commsnotifications-resource-type"></a>tipo de recurso commsNotifications
 

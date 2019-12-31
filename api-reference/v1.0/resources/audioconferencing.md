@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso audioConferencing
 description: Representa informações de acesso de telefone de uma reunião online.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d2eab9732660f53c7e003b49f6c6ca780c8a4610
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f1c58fb5cbf65b73aed2978fd0b3be45d7d30aec
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865667"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913475"
 ---
 # <a name="audioconferencing-resource-type"></a>tipo de recurso audioConferencing
 

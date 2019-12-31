@@ -1,16 +1,16 @@
 ---
 title: 'participante: sem áudio'
 description: Ativar mudo de um participante específico na chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1b146462034cf8b8b2e90cd031698ff39f356ca
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2c65bf06524b883ca4632a6127e50a13e4355054
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865677"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913419"
 ---
 # <a name="participant-mute"></a>participante: sem áudio
 

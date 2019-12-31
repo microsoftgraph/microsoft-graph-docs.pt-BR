@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso mediaPrompt
 description: Esse tipo de recurso contém informações sobre o arquivo de áudio a ser reproduzido e outras configurações adicionais.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f981559ce5bac9bb597e49ff1b9d31e48413454b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0ef83d9645ac4277893ff8c769ecb6e092e3e84d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870994"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913195"
 ---
 # <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
 
