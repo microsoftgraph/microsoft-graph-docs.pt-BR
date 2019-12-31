@@ -1,30 +1,30 @@
 ---
 title: tipo de recurso prompt
 description: Tipo de base de ação de prompt.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: baaa98894c021fce21ed64fcecf7e5c24b335867
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: f43babf47f767ad24c6466d9a454ed026f027564
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006568"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913657"
 ---
-# <a name="prompt-resource-type"></a><span data-ttu-id="a5403-103">tipo de recurso prompt</span><span class="sxs-lookup"><span data-stu-id="a5403-103">prompt resource type</span></span>
+# <a name="prompt-resource-type"></a><span data-ttu-id="35ada-103">tipo de recurso prompt</span><span class="sxs-lookup"><span data-stu-id="35ada-103">prompt resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5403-104">Tipo de base de ação de prompt.</span><span class="sxs-lookup"><span data-stu-id="a5403-104">Prompt action base type.</span></span>
+<span data-ttu-id="35ada-104">Tipo de base de ação de prompt.</span><span class="sxs-lookup"><span data-stu-id="35ada-104">Prompt action base type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a5403-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a5403-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="35ada-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="35ada-105">Properties</span></span>
 
-<span data-ttu-id="a5403-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a5403-106">None</span></span>
+<span data-ttu-id="35ada-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="35ada-106">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a5403-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a5403-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="35ada-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="35ada-107">JSON representation</span></span>
 
-<span data-ttu-id="a5403-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a5403-108">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="35ada-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="35ada-108">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

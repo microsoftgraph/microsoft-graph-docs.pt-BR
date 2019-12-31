@@ -1,38 +1,38 @@
 ---
 title: Tipo de recurso SubscribeToToneOperation
 description: Descreve o formato de resposta da criação da assinatura para receber tons DTMF.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9f3a2f9cc3e32fd6455e2d692d4d4df2e9d502ac
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 0b10062ed51aae20d6d4268da349b9b429d6c528
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006533"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913685"
 ---
-# <a name="subscribetotoneoperation-resource-type"></a><span data-ttu-id="e99ac-103">Tipo de recurso SubscribeToToneOperation</span><span class="sxs-lookup"><span data-stu-id="e99ac-103">SubscribeToToneOperation resource type</span></span>
+# <a name="subscribetotoneoperation-resource-type"></a><span data-ttu-id="7338e-103">Tipo de recurso SubscribeToToneOperation</span><span class="sxs-lookup"><span data-stu-id="7338e-103">SubscribeToToneOperation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e99ac-104">Descreve o formato de resposta da criação da assinatura para receber tons DTMF.</span><span class="sxs-lookup"><span data-stu-id="e99ac-104">Describes the response format of creation of subscription to receive DTMF tones.</span></span>
+<span data-ttu-id="7338e-104">Descreve o formato de resposta da criação da assinatura para receber tons DTMF.</span><span class="sxs-lookup"><span data-stu-id="7338e-104">Describes the response format of creation of subscription to receive DTMF tones.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e99ac-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e99ac-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7338e-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7338e-105">Properties</span></span>
 
-| <span data-ttu-id="e99ac-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e99ac-106">Property</span></span>                       | <span data-ttu-id="e99ac-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="e99ac-107">Type</span></span>                        | <span data-ttu-id="e99ac-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="e99ac-108">Description</span></span>                                                                                                                                       |
+| <span data-ttu-id="7338e-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7338e-106">Property</span></span>                       | <span data-ttu-id="7338e-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="7338e-107">Type</span></span>                        | <span data-ttu-id="7338e-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7338e-108">Description</span></span>                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="e99ac-109">clientContext</span><span class="sxs-lookup"><span data-stu-id="e99ac-109">clientContext</span></span>                  | <span data-ttu-id="e99ac-110">String</span><span class="sxs-lookup"><span data-stu-id="e99ac-110">String</span></span>                      | <span data-ttu-id="e99ac-111">O contexto do cliente.</span><span class="sxs-lookup"><span data-stu-id="e99ac-111">The client context.</span></span>                                                                                                                               |
-| <span data-ttu-id="e99ac-112">id</span><span class="sxs-lookup"><span data-stu-id="e99ac-112">id</span></span>                             | <span data-ttu-id="e99ac-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e99ac-113">String</span></span>                      | <span data-ttu-id="e99ac-114">A ID da operação do servidor.</span><span class="sxs-lookup"><span data-stu-id="e99ac-114">The server operation ID.</span></span> <span data-ttu-id="e99ac-115">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="e99ac-115">Read-only.</span></span>                                                                                             |
-| <span data-ttu-id="e99ac-116">resultInfo</span><span class="sxs-lookup"><span data-stu-id="e99ac-116">resultInfo</span></span>                     | [<span data-ttu-id="e99ac-117">resultInfo</span><span class="sxs-lookup"><span data-stu-id="e99ac-117">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="e99ac-118">As informações de resultado.</span><span class="sxs-lookup"><span data-stu-id="e99ac-118">The result information.</span></span>  <span data-ttu-id="e99ac-119">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="e99ac-119">Read-only.</span></span>                                                                                             |
-| <span data-ttu-id="e99ac-120">status</span><span class="sxs-lookup"><span data-stu-id="e99ac-120">status</span></span>                         | <span data-ttu-id="e99ac-121">String</span><span class="sxs-lookup"><span data-stu-id="e99ac-121">String</span></span>                      | <span data-ttu-id="e99ac-122">Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="e99ac-122">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="e99ac-123">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="e99ac-123">Read-only.</span></span>                                                 |
+| <span data-ttu-id="7338e-109">clientContext</span><span class="sxs-lookup"><span data-stu-id="7338e-109">clientContext</span></span>                  | <span data-ttu-id="7338e-110">String</span><span class="sxs-lookup"><span data-stu-id="7338e-110">String</span></span>                      | <span data-ttu-id="7338e-111">O contexto do cliente.</span><span class="sxs-lookup"><span data-stu-id="7338e-111">The client context.</span></span>                                                                                                                               |
+| <span data-ttu-id="7338e-112">id</span><span class="sxs-lookup"><span data-stu-id="7338e-112">id</span></span>                             | <span data-ttu-id="7338e-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7338e-113">String</span></span>                      | <span data-ttu-id="7338e-114">A ID da operação do servidor.</span><span class="sxs-lookup"><span data-stu-id="7338e-114">The server operation ID.</span></span> <span data-ttu-id="7338e-115">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7338e-115">Read-only.</span></span>                                                                                             |
+| <span data-ttu-id="7338e-116">resultInfo</span><span class="sxs-lookup"><span data-stu-id="7338e-116">resultInfo</span></span>                     | [<span data-ttu-id="7338e-117">resultInfo</span><span class="sxs-lookup"><span data-stu-id="7338e-117">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="7338e-118">As informações de resultado.</span><span class="sxs-lookup"><span data-stu-id="7338e-118">The result information.</span></span>  <span data-ttu-id="7338e-119">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7338e-119">Read-only.</span></span>                                                                                             |
+| <span data-ttu-id="7338e-120">status</span><span class="sxs-lookup"><span data-stu-id="7338e-120">status</span></span>                         | <span data-ttu-id="7338e-121">String</span><span class="sxs-lookup"><span data-stu-id="7338e-121">String</span></span>                      | <span data-ttu-id="7338e-122">Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="7338e-122">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="7338e-123">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7338e-123">Read-only.</span></span>                                                 |
 
-## <a name="relationships"></a><span data-ttu-id="e99ac-124">Relações</span><span class="sxs-lookup"><span data-stu-id="e99ac-124">Relationships</span></span>
-<span data-ttu-id="e99ac-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e99ac-125">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7338e-124">Relações</span><span class="sxs-lookup"><span data-stu-id="7338e-124">Relationships</span></span>
+<span data-ttu-id="7338e-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="7338e-125">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e99ac-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e99ac-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7338e-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7338e-126">JSON representation</span></span>
 
-<span data-ttu-id="e99ac-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e99ac-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7338e-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7338e-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,33 +1,33 @@
 ---
 title: tipo de recurso toneInfo
 description: Um único evento DTMF.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: aa0ef52126895e61300c1e2f7a258926e209866c
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 268787c0f80bd8b540ee1522c26c263a380e0189
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006519"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913048"
 ---
-# <a name="toneinfo-resource-type"></a><span data-ttu-id="0fb43-103">tipo de recurso toneInfo</span><span class="sxs-lookup"><span data-stu-id="0fb43-103">toneInfo resource type</span></span>
+# <a name="toneinfo-resource-type"></a><span data-ttu-id="c0ffc-103">tipo de recurso toneInfo</span><span class="sxs-lookup"><span data-stu-id="c0ffc-103">toneInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0fb43-104">Um único evento DTMF.</span><span class="sxs-lookup"><span data-stu-id="0fb43-104">A single DTMF event.</span></span>
+<span data-ttu-id="c0ffc-104">Um único evento DTMF.</span><span class="sxs-lookup"><span data-stu-id="c0ffc-104">A single DTMF event.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0fb43-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0fb43-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c0ffc-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c0ffc-105">Properties</span></span>
 
-| <span data-ttu-id="0fb43-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0fb43-106">Property</span></span>       | <span data-ttu-id="0fb43-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="0fb43-107">Type</span></span>    | <span data-ttu-id="0fb43-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="0fb43-108">Description</span></span>|
+| <span data-ttu-id="c0ffc-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c0ffc-106">Property</span></span>       | <span data-ttu-id="c0ffc-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="c0ffc-107">Type</span></span>    | <span data-ttu-id="c0ffc-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0ffc-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="0fb43-109">SequenceId</span><span class="sxs-lookup"><span data-stu-id="0fb43-109">sequenceId</span></span> | <span data-ttu-id="0fb43-110">Int64</span><span class="sxs-lookup"><span data-stu-id="0fb43-110">Int64</span></span> | <span data-ttu-id="0fb43-111">Um identificador incremental usado para ordenar eventos de DTMF.</span><span class="sxs-lookup"><span data-stu-id="0fb43-111">An incremental identifier used for ordering DTMF events.</span></span> |
-| <span data-ttu-id="0fb43-112">bipe</span><span class="sxs-lookup"><span data-stu-id="0fb43-112">tone</span></span> | <span data-ttu-id="0fb43-113">String</span><span class="sxs-lookup"><span data-stu-id="0fb43-113">String</span></span> | <span data-ttu-id="0fb43-114">Os valores possíveis são `tone0`: `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`,,,,,,,,,.</span><span class="sxs-lookup"><span data-stu-id="0fb43-114">Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`.</span></span> |
+| <span data-ttu-id="c0ffc-109">SequenceId</span><span class="sxs-lookup"><span data-stu-id="c0ffc-109">sequenceId</span></span> | <span data-ttu-id="c0ffc-110">Int64</span><span class="sxs-lookup"><span data-stu-id="c0ffc-110">Int64</span></span> | <span data-ttu-id="c0ffc-111">Um identificador incremental usado para ordenar eventos de DTMF.</span><span class="sxs-lookup"><span data-stu-id="c0ffc-111">An incremental identifier used for ordering DTMF events.</span></span> |
+| <span data-ttu-id="c0ffc-112">bipe</span><span class="sxs-lookup"><span data-stu-id="c0ffc-112">tone</span></span> | <span data-ttu-id="c0ffc-113">String</span><span class="sxs-lookup"><span data-stu-id="c0ffc-113">String</span></span> | <span data-ttu-id="c0ffc-114">Os valores possíveis são `tone0`: `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`,,,,,,,,,.</span><span class="sxs-lookup"><span data-stu-id="c0ffc-114">Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="0fb43-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0fb43-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c0ffc-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c0ffc-115">JSON representation</span></span>
 
-<span data-ttu-id="0fb43-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0fb43-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c0ffc-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c0ffc-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

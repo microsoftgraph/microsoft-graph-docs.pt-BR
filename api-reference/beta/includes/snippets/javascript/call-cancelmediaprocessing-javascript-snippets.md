@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 302cdf706e7cbb750e0f1a23cf9ea99eac776666
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f272e29012ad3a53918e9a12193b4112ff9851a4
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302533"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912916"
 ---
 ```javascript
 
@@ -16,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 const cancelMediaProcessingOperation = {
-  all: true,
   clientContext: "clientContext-value"
 };
 

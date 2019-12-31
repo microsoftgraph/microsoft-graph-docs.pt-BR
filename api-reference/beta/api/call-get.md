@@ -1,61 +1,61 @@
 ---
 title: Obter chamada
 description: Recupere as propriedades e os relacionamentos de um objeto de chamada.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f02f1a984f27148aeac088efb4d56409480ba969
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: f0ec45357ee56846b3234911ab3f37b47785f869
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636712"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912773"
 ---
-# <a name="get-call"></a><span data-ttu-id="7870d-103">Obter chamada</span><span class="sxs-lookup"><span data-stu-id="7870d-103">Get call</span></span>
+# <a name="get-call"></a><span data-ttu-id="dbca5-103">Obter chamada</span><span class="sxs-lookup"><span data-stu-id="dbca5-103">Get call</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7870d-104">Recupere as propriedades e os relacionamentos de um objeto de chamada.</span><span class="sxs-lookup"><span data-stu-id="7870d-104">Retrieve the properties and relationships of a call object.</span></span>
+<span data-ttu-id="dbca5-104">Recupere as propriedades e os relacionamentos de um objeto de chamada.</span><span class="sxs-lookup"><span data-stu-id="dbca5-104">Retrieve the properties and relationships of a call object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7870d-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7870d-105">Permissions</span></span>
-<span data-ttu-id="7870d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7870d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dbca5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="dbca5-105">Permissions</span></span>
+<span data-ttu-id="dbca5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dbca5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7870d-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7870d-108">Permission type</span></span> | <span data-ttu-id="7870d-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7870d-109">Permissions (from least to most privileged)</span></span>                  |
+| <span data-ttu-id="dbca5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dbca5-108">Permission type</span></span> | <span data-ttu-id="dbca5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dbca5-109">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="7870d-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7870d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7870d-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7870d-111">Not Supported.</span></span>                         |
-| <span data-ttu-id="7870d-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7870d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7870d-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7870d-113">Not Supported.</span></span>                         |
-| <span data-ttu-id="7870d-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7870d-114">Application</span></span>                            | <span data-ttu-id="7870d-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="7870d-115">None.</span></span>                                  |
+| <span data-ttu-id="dbca5-110">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dbca5-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="dbca5-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dbca5-111">Not Supported.</span></span>                         |
+| <span data-ttu-id="dbca5-112">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dbca5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dbca5-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dbca5-113">Not Supported.</span></span>                         |
+| <span data-ttu-id="dbca5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dbca5-114">Application</span></span>                            | <span data-ttu-id="dbca5-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="dbca5-115">None.</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="7870d-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7870d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dbca5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dbca5-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}
 GET /communications/calls/{id}
 ```
-> <span data-ttu-id="7870d-117">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="7870d-117">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="7870d-118">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="7870d-118">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="dbca5-117">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="dbca5-117">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="dbca5-118">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="dbca5-118">Going forward, use the `/communications` path.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7870d-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7870d-119">Optional query parameters</span></span>
-<span data-ttu-id="7870d-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7870d-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dbca5-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="dbca5-119">Optional query parameters</span></span>
+<span data-ttu-id="dbca5-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="dbca5-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7870d-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7870d-121">Request headers</span></span>
-| <span data-ttu-id="7870d-122">Nome</span><span class="sxs-lookup"><span data-stu-id="7870d-122">Name</span></span>          | <span data-ttu-id="7870d-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="7870d-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="dbca5-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dbca5-121">Request headers</span></span>
+| <span data-ttu-id="dbca5-122">Nome</span><span class="sxs-lookup"><span data-stu-id="dbca5-122">Name</span></span>          | <span data-ttu-id="dbca5-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="dbca5-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="7870d-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="7870d-124">Authorization</span></span> | <span data-ttu-id="7870d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7870d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dbca5-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="dbca5-124">Authorization</span></span> | <span data-ttu-id="dbca5-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dbca5-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7870d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7870d-127">Request body</span></span>
-<span data-ttu-id="7870d-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7870d-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dbca5-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dbca5-127">Request body</span></span>
+<span data-ttu-id="dbca5-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dbca5-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7870d-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="7870d-129">Response</span></span>
-<span data-ttu-id="7870d-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7870d-130">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dbca5-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="dbca5-129">Response</span></span>
+<span data-ttu-id="dbca5-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dbca5-130">If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7870d-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7870d-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="dbca5-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="dbca5-131">Examples</span></span>
 
-### <a name="example-1-getting-a-peer-to-peer-call"></a><span data-ttu-id="7870d-132">Exemplo 1: obtendo uma chamada ponto a ponto</span><span class="sxs-lookup"><span data-stu-id="7870d-132">Example 1: Getting a Peer-to-Peer call</span></span>
+### <a name="example-1-getting-a-peer-to-peer-call"></a><span data-ttu-id="dbca5-132">Exemplo 1: obtendo uma chamada ponto a ponto</span><span class="sxs-lookup"><span data-stu-id="dbca5-132">Example 1: Getting a Peer-to-Peer call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7870d-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7870d-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="dbca5-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dbca5-133">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7870d-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="7870d-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="dbca5-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="dbca5-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-call"
@@ -64,24 +64,24 @@ GET /communications/calls/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7870d-135">C#</span><span class="sxs-lookup"><span data-stu-id="7870d-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dbca5-135">C#</span><span class="sxs-lookup"><span data-stu-id="dbca5-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7870d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7870d-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dbca5-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dbca5-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7870d-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7870d-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dbca5-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dbca5-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7870d-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="7870d-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="dbca5-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="dbca5-138">Response</span></span>
 
-> <span data-ttu-id="7870d-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7870d-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="dbca5-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dbca5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -159,11 +159,11 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
-### <a name="example-2-getting-a-group-call"></a><span data-ttu-id="7870d-141">Exemplo 2: obtendo uma chamada de grupo</span><span class="sxs-lookup"><span data-stu-id="7870d-141">Example 2: Getting a group call</span></span>
+### <a name="example-2-getting-a-group-call"></a><span data-ttu-id="dbca5-141">Exemplo 2: obtendo uma chamada de grupo</span><span class="sxs-lookup"><span data-stu-id="dbca5-141">Example 2: Getting a group call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7870d-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7870d-142">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="dbca5-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dbca5-142">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7870d-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="7870d-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="dbca5-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="dbca5-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-call"
@@ -171,22 +171,22 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7870d-144">C#</span><span class="sxs-lookup"><span data-stu-id="7870d-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="dbca5-144">C#</span><span class="sxs-lookup"><span data-stu-id="dbca5-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7870d-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7870d-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dbca5-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dbca5-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7870d-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7870d-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dbca5-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dbca5-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7870d-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="7870d-147">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="dbca5-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="dbca5-147">Response</span></span>
 
 <!-- {
   "blockType": "response",
