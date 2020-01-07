@@ -5,12 +5,12 @@ author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f20ee192d2afabb6e5fe4e491bcfbc0413db44d3
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 3c4fe67529b920c9a346636cc3e1d6724d469b51
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969784"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951913"
 ---
 # <a name="onenote-api-overview"></a>Visão geral da API do OneNote
 
@@ -47,9 +47,9 @@ A seguir, estão algumas das solicitações mais populares para trabalhar com os
 
 |Operação|URL|
 |:--------|:--|
-|Obter meus blocos de anotações|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
-|Obter minhas seções|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
-|Obter minhas páginas|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+|Obter meus blocos de anotações|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/notebooks&version=v1.0)|
+|Obter minhas seções|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/sections&version=v1.0)|
+|Obter minhas páginas|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/graph/graph-explorer?request=me/onenote/pages&version=v1.0)|
 
 ## <a name="learn-more-about-onenote-apis"></a>Saiba mais sobre as APIs do OneNote
 
