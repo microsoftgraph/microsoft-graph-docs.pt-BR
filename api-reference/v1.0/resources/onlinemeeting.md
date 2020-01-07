@@ -1,26 +1,26 @@
 ---
 title: tipo de recurso onlineMeeting
 description: Contém informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 105c9f3ffa594dd457b40124070aef0dbb96689a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7b82170b606334c6db8fa07c3f9b2f95f16c0082
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870989"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951962"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
 Contém informações sobre a reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-| [Criar onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
+| [Criar ReuniãoOnline](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
 | [Obter onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos de um objeto **onlineMeeting** . |
 | [Excluir onlineMeeting](../api/onlinemeeting-delete.md) | Nenhum | Excluir uma reunião online |
 
@@ -36,8 +36,8 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 | id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
 | joinWebUrl                | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
-| videoTeleconferenceId     | String                                                 | A ID de teleconferência do videio. Somente leitura. |
+| assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
+| videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. Somente leitura. |
 
 
 ## <a name="json-representation"></a>Representação JSON

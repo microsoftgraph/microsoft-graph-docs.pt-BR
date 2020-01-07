@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a764a7190432b838bdd982b4275fe6dca897ba56
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 65ee5bcd763a065873fe795a1638c33b4610ded2
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868181"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951662"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Criar chatMessage em um canal
 
@@ -48,7 +48,6 @@ POST /teams/{id}/channels/{id}/messages
 
 No corpo da solicitação, forneça uma representação JSON de um objeto [Message](../resources/chatmessage.md) . Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.
 
-> Observação: não há suporte para o envio de mensagens com anexos e imagens.
 
 ## <a name="response"></a>Resposta
 

@@ -1,22 +1,22 @@
 ---
-title: Obter openShiftChangeRequest
-description: Recupere as propriedades e os relacionamentos de um objeto openShiftChangeRequest.
+title: Listar swapShiftsChangeRequest
+description: Recupere uma lista de objetos swapShiftsChangeRequest na equipe.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d054f424e22948fefe5b10f323aa252176df0f2
+ms.openlocfilehash: 1e28fc65b430ab90fd27d621cabfeeaf77c7114b
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951770"
+ms.locfileid: "40952073"
 ---
-# <a name="get-openshiftchangerequest"></a>Obter openShiftChangeRequest
+# <a name="list-swapshiftschangerequest"></a>Listar swapShiftsChangeRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
+Recupere uma lista de objetos [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) na equipe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,16 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group. ReadWrite. All, Group. Read. All |
+| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo | Schedule. Read. All *, Schedule. ReadWrite. All*  |
+
+>\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+GET /teams/{id}/schedule/swapShiftsChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -52,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -61,11 +63,11 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e o obj
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "get_openshiftchangerequest"
+  "name": "get_swapshiftschangerequest"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests
 ```
 
 ### <a name="response"></a>Resposta
@@ -77,7 +79,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.openShiftChangeRequest"
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 } -->
 
 ```http
@@ -85,35 +87,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
-  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "assignedTo": "manager",
-  "state": "pending",
-  "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
-  "senderDateTime": "2019-05-01T10:00:00Z",
-  "senderMessage": "Can I take this shift?",
-  "managerUserId": null,
-  "managerActionDateTime": null,
-  "managerActionMessage": null,
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+    "value": [
+        {
+        "id": "0b87dd20-d5ed-4764-9c3e-cfc8516def09",
+        "senderShiftId": "5ad10161-6524-4c7c-9beb-4e8677ba2f6d",
+        "recipientShiftId": "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c",
+        "assignedTo": "manager",
+        "state": "approved",
+        "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
+        "senderDateTime": "2019-05-01T10:00:00Z",
+        "senderMessage": "I can't make my shift, any chance we can swap?",
+        "recipientUserId": "567c8ea5-9e32-422a-a663-8270201699cd",
+        "recipientActionDateTime": "2019-05-01T11:00:00Z",
+        "recipientActionMessage": "Sure!",
+        "managerUserId": "fdcc8d43-7f83-438a-9ab1-098e8f2a95ff",
+        "managerActionDateTime": "2019-05-01T12:00:00Z",
+        "managerActionMessage": "Approved!"
+        }
+    ]
 }
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShiftChangeRequest",
+  "description": "List swapShiftsChangeRequests",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

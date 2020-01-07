@@ -1,22 +1,22 @@
 ---
-title: Excluir openShift
-description: Excluir um objeto openShift.
+title: 'offerShiftRequest: aprovar'
+description: Aprovar um objeto offershiftrequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fcd91c57079641097abfbf9674ca204c3909714e
+ms.openlocfilehash: 72662c2077a24b9bb253f26e1a314165792c43d4
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951920"
+ms.locfileid: "40952178"
 ---
-# <a name="delete-openshift"></a>Excluir openShift
+# <a name="offershiftrequest-approve"></a>offerShiftRequest: aprovar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [openShift](../resources/openshift.md) .
+Aprovar um objeto [offershiftrequest](../resources/offershiftrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,14 +26,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | Schedule. ReadWrite. All * |
+
+>\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/openShifts/{openShiftId}
+POST /teams/schedule/offerShiftRequests/approve
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -41,63 +43,57 @@ DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 | Nome          | Descrição   |
 |:--------------|:--------------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação para esse método.
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+
+| Parâmetro    | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|mensagem|String|Mensagem personalizada enviada na aprovação.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+O exemplo a seguir mostra uma solicitação.
 <!-- {
   "blockType": "request",
-  "name": "delete_openshift"
+  "name": "offershiftrequest_approve"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+POST https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests/approve
+Content-type: application/json
+
+{
+  "message": "Approved!"
+}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-openshift-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-openshift-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-openshift-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta.
-
+O exemplo a seguir mostra a resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete openShift",
+  "description": "offerShiftRequest: approve",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -835,7 +835,7 @@
                   href: api/place-get.md
                 - name: Local de atualização
                   href: api/place-update.md
-        - name: Comunicações em nuvem
+        - name: Comunicações na nuvem
           displayName: Cloud communications
           items:
             - name: Visão Geral
@@ -10552,9 +10552,26 @@
                       href: api/schedulinggroup-put.md
                     - name: Excluir
                       href: api/schedulinggroup-delete.md
+                - name: Oferecer mudança
+                  href: resources/offershiftrequest.md
+                  items:
+                    - name: Criar
+                      href: api/offershiftrequest-post.md
+                    - name: Obter
+                      href: api/offershiftrequest-get.md
+                    - name: Lista
+                      href: api/offershiftrequest-list.md
+                    - name: Aprovar
+                      href: api/offershiftrequest-approve.md
+                    - name: Aceito
+                      href: api/offershiftrequest-decline.md
                 - name: Abrir turno
                   href: resources/openshift.md
                   items:
+                    - name: Listar
+                      href: api/openshift-list.md
+                    - name: Criar
+                      href: api/openshift-post.md
                     - name: Obter
                       href: api/openshift-get.md
                     - name: Atualizar
@@ -10564,25 +10581,32 @@
                 - name: Abrir solicitação de alteração de turno
                   href: resources/openshiftchangerequest.md
                   items:
+                    - name: Listar
+                      href: api/openshiftchangerequest-list.md
+                    - name: Criar
+                      href: api/openshiftchangerequest-post.md
                     - name: Obter
                       href: api/openshiftchangerequest-get.md
-                    - name: Atualizar
-                      href: api/openshiftchangerequest-update.md
-                    - name: Excluir
-                      href: api/openshiftchangerequest-delete.md
                     - name: Aprovar
                       href: api/openshiftchangerequest-approve.md
                     - name: Aceito
                       href: api/openshiftchangerequest-decline.md
+                - name: Preferências de mudança
+                  href: resources/shiftpreferences.md
+                  items:
+                    - name: Obter
+                      href: api/shiftpreferences-get.md
+                    - name: Atualizar
+                      href: api/shiftpreferences-put.md
                 - name: Trocar solicitação de alteração de mudança
                   href: resources/swapshiftschangerequest.md
                   items:
+                    - name: Listar
+                      href: api/swapshiftschangerequest-list.md
+                    - name: Criar
+                      href: api/swapshiftschangerequest-post.md
                     - name: Obter
                       href: api/swapshiftschangerequest-get.md
-                    - name: Atualizar
-                      href: api/swapshiftschangerequest-update.md
-                    - name: Excluir
-                      href: api/swapshiftschangerequest-delete.md
                 - name: Folga
                   href: resources/timeoff.md
                   items:

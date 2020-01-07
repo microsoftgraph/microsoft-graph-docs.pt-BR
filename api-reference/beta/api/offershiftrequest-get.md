@@ -1,22 +1,22 @@
 ---
-title: Obter openShiftChangeRequest
-description: Recupere as propriedades e os relacionamentos de um objeto openShiftChangeRequest.
+title: Obter offerShiftRequest
+description: Recupere as propriedades e os relacionamentos de um objeto offerShiftRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d054f424e22948fefe5b10f323aa252176df0f2
+ms.openlocfilehash: 48fa2dc104dc609192232a4f173b314134829fb5
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951770"
+ms.locfileid: "40952150"
 ---
-# <a name="get-openshiftchangerequest"></a>Obter openShiftChangeRequest
+# <a name="get-offershiftrequest"></a>Obter offerShiftRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
+Recupere as propriedades e os relacionamentos de um objeto [offerShiftRequest](../resources/offershiftrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,16 +24,18 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group. ReadWrite. All, Group. Read. All |
+| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | Schedule. Read. All *, Schedule. ReadWrite. All* |
+
+>\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+GET /teams/schedule/offerShiftRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -52,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [offerShiftRequest](../resources/offershiftrequest.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -61,11 +63,11 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e o obj
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "get_openshiftchangerequest"
+  "name": "get_offershiftrequest"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests
 ```
 
 ### <a name="response"></a>Resposta
@@ -77,7 +79,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.openShiftChangeRequest"
+  "@odata.type": "microsoft.graph.offerShiftRequest"
 } -->
 
 ```http
@@ -85,27 +87,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
-  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "assignedTo": "manager",
-  "state": "pending",
-  "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
-  "senderDateTime": "2019-05-01T10:00:00Z",
-  "senderMessage": "Can I take this shift?",
-  "managerUserId": null,
-  "managerActionDateTime": null,
-  "managerActionMessage": null,
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+  "recipientActionMessage": "recipientActionMessage-value",
+  "recipientActionDateTime": "datetime-value",
+  "senderShiftId": "senderShiftId-value",
+  "recipientUserId": "recipientUserId-value"
 }
 ```
 
@@ -113,7 +98,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShiftChangeRequest",
+  "description": "Get offerShiftRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

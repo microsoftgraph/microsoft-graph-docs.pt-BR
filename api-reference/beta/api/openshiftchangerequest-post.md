@@ -1,39 +1,40 @@
 ---
-title: Obter openShiftChangeRequest
-description: Recupere as propriedades e os relacionamentos de um objeto openShiftChangeRequest.
+title: Criar openShiftChangeRequest
+description: Criar uma instância de um objeto openShiftChangeRequest.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d054f424e22948fefe5b10f323aa252176df0f2
+ms.openlocfilehash: fb37f5c65ba04547aebd273df8ada78271a68108
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951770"
+ms.locfileid: "40952206"
 ---
-# <a name="get-openshiftchangerequest"></a>Obter openShiftChangeRequest
+# <a name="create-openshiftchangerequest"></a>Criar openShiftChangeRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
-
+Criar uma instância de um objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group. ReadWrite. All, Group. Read. All |
+| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
+| Aplicativo                            | Schedule. ReadWrite. All *  |
+
+>\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+POST /teams/{id}/schedule/openShiftsChangeRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -45,14 +46,14 @@ Este método oferece suporte a alguns dos parâmetros de consulta OData para aju
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON de um novo objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [openShiftChangeRequest](../resources/openshiftchangerequest.md) criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -60,12 +61,19 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e o obj
 
 Este é um exemplo de solicitação.
 <!-- {
-  "blockType": "request",
-  "name": "get_openshiftchangerequest"
+  "blockType": "request"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftsChangeRequests
+Authorization: Bearer {token}
+Content-type: application/json
+Content-length: 244
+
+{
+  "senderMessage": "Can I take this shift?",
+  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8"
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -77,7 +85,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.openShiftChangeRequest"
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 } -->
 
 ```http
@@ -107,13 +115,14 @@ Content-type: application/json
     }
   }
 }
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShiftChangeRequest",
+  "description": "Create openShiftRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

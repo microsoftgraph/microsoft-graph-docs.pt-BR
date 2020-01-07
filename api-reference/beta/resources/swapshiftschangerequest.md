@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 80149a37dfb4d8d900066d11c315d125ff7fd670
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: a172737f40572b29358ecdc6fba804db2a8b80e5
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895565"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951955"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>tipo de recurso swapShiftsChangeRequest
 
@@ -18,13 +18,14 @@ ms.locfileid: "39895565"
 
 Representa um tipo de solicitação de mudança para trocar uma [mudança](../resources/shift.md) por outro usuário na [equipe](../resources/team.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
+| [List](../api/swapshiftschangerequest-list.md) | Coleção de [swapShiftsChangeRequest](swapshiftschangerequest.md) | Listar as propriedades e os relacionamentos dos objetos **swapShiftsChangeRequest** em uma equipe. |
+| [Create](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Criar uma instância de um objeto swapshiftschangerequest. |
 | [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Leia as propriedades e os relacionamentos de um objeto **swapShiftsChangeRequest** . |
-| [Update](../api/swapshiftschangerequest-update.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Atualizar um objeto **swapShiftsChangeRequest** . |
-| [Delete](../api/swapshiftschangerequest-delete.md) | None | Excluir um objeto **swapShiftsChangeRequest** . |
+|[Aprovar](../api/swapshiftschangerequest-approve.md)|Nenhum|Aprovar um swapshiftschangerequest. |
 
 ## <a name="properties"></a>Propriedades
 

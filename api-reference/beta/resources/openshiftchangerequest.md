@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 400444ccccc13d103420cc95c522a6ed0aa1afa6
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 69663b876e98bfe9f5c633890d02a6abd3b72f32
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895569"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951927"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>tipo de recurso openShiftChangeRequest
 
@@ -18,13 +18,13 @@ ms.locfileid: "39895569"
 
 Representa um tipo de solicitação de mudança para declarar um [openshift](../resources/openshift.md) em um [cronograma](../resources/schedule.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
+| [Criar](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Criar uma instância de um objeto openshiftchangerequest. |
+| [List](../api/openshiftchangerequest-list.md) | Coleção de [openshiftchangerequest](openshiftchangerequest.md) | Listar as propriedades e os relacionamentos dos objetos **openShiftChangeRequest** em uma equipe. |
 | [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Leia as propriedades e os relacionamentos de um objeto **openShiftChangeRequest** . |
-| [Update](../api/openshiftchangerequest-update.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Atualize um objeto **openShiftChangeRequest** . |
-| [Delete](../api/openshiftchangerequest-delete.md) | None | Excluir um objeto **openShiftChangeRequest** . |
 |[Aprovar](../api/openshiftchangerequest-approve.md)|Nenhum|Aprovar uma solicitação de alteração de turno aberta.|
 |[Aceito](../api/openshiftchangerequest-decline.md)|Nenhum| Recusar uma solicitação de alteração de turno aberto.|
 
