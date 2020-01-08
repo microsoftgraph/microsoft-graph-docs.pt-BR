@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 253863ce5e513d4cda090e79a87d082e0f7907b7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9fccee5ed68b8df21a58506d7a3745a439256673
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868048"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951969"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -126,8 +126,10 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
  
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Foram adicionadas[ notificações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) para mensagens de canal novas e editadas e mensagens de chat novas e editadas.
-| Alteração | beta | As permissões de aplicativo foram atualizadas para executar operações de leitura e gravação para os recursos de turnos, incluindo[schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), e[openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Observação:** as permissões de aplicativos estão na visualização particular e não estão disponíveis para uso público.|
+| Adição | Beta | Foram adicionadas[ notificações](/graph/api/subscription-post- subscriptions?view=graph-rest-beta) para mensagens de canal novas e editadas e mensagens de chat novas e editadas. |
+| Adição | Beta | Foram adicionados o recurso [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) e os métodos associados.|
+| Adição | Beta | Foi adicionado novo relacionamento `shiftPreferences` à entidade [UserSettings](/graph/api/resources/usersettings?view=graph-rest-beta). |
+| Alteração | Beta | As permissões de aplicativo foram atualizadas para executar operações de leitura e gravação para os recursos de turnos, incluindo[schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), e[openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Observação:** as permissões de aplicativos estão na visualização particular e não estão disponíveis para uso público.|
 
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
@@ -1666,7 +1668,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
-| **Tipo de alteração** | **Version**   | **Descrição**                          |
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | v1.0 e beta | A propriedade**internetMessageHeaders** da entidade [mensagem](/graph/api/resources/message?view=graph-rest-1.0) é gravável na criação de mensagens. |
 
@@ -3972,7 +3974,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="mail-outlook"></a>Email (Outlook)
 
-| **Tipo de alteração** | **Version** | **Descrição**                          |
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0        | Foi adicionado _inferenceClassification_ e _extensões_ a entidade **mensagem**. |
 
