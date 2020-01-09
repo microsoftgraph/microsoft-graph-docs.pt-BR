@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 0ab32470a7ecf5e00d10ccada984096d16537f1b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 0c0f257a9bdcf6c149b4f6374e2011cebb437603
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37632665"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994961"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso anexo
 
@@ -19,6 +19,8 @@ ms.locfileid: "37632665"
 Você pode adicionar conteúdo relacionado a um [evento](../resources/event.md)de usuário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md) de grupo no formato de um anexo. 
 
 Os eventos em calendários de grupo não têm suporte para anexos.
+
+As tarefas do Outlook não dão suporte a anexos de referência.
 
 **attachment** é o recurso de base para os seguintes tipos de anexo derivados:
 
@@ -40,8 +42,8 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 |[Adicionar anexo a um evento do usuário](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento em um calendário de usuário.|
 |[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.|
 |[Criar sessão para anexar arquivo grande](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Criar uma sessão de carregamento que permite que um aplicativo carregue intervalos de um arquivo de forma iterativa, para anexar o arquivo à **mensagem**especificada. O tamanho do arquivo deve estar entre 3 MB e 150MB.|
-|[Adicionar anexo a uma tarefa do Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Adicionar um anexo de arquivo, item ou link a uma tarefa do Outlook.|
-|[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma postagem.|
+|[Adicionar anexo a uma tarefa do Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Adicionar um anexo de arquivo ou item a uma tarefa do Outlook.|
+|[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicionar um anexo de arquivo, item ou link a uma postagem de grupo.|
 |[Listar anexos de um evento de usuário](../api/event-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento em um calendário de usuário. |
 |[Listar anexos de uma mensagem](../api/message-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
 |[Listar anexos de uma tarefa do Outlook](../api/outlooktask-list-attachments.md) | Coleção [attachment](attachment.md) | Obter uma lista de anexos para uma tarefa do Outlook. |
