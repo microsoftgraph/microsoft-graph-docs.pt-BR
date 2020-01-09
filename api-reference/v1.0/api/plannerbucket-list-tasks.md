@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9c9f796d0005e4991bdc6a736ce788cdaba3f5b6
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8204b6d7acc716b3f410b97b7019bfbe89efb7aa
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37633814"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995011"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -54,7 +54,7 @@ Este é um exemplo da solicitação.
   "name": "plannerbucket_get_tasks"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
+GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}/tasks
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerbucket-get-tasks-csharp-snippets.md)]

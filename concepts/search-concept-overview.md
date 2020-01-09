@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 6f7515682f7600a4c0d58e49213eacf17add44e0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 48d54de1e9c758a21af1e179e83876b19c146840
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866893"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994968"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Visão geral da API Microsoft Search no Microsoft Graph (visualização)
 
@@ -67,4 +67,4 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="see-also"></a>Confira também
 
-- Entre em contato com a Comunidade no [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-search).
+- Entre em contato com a Comunidade no [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search).
