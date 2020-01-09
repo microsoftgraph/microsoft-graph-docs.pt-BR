@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6ea710aa83f947eab040be74a4bfe7245e4974cd
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: fee56dc24fc193987e4b13622c2539c62ce846e2
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867785"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40995358"
 ---
 ```javascript
 
@@ -15,18 +15,30 @@ const options = {
 
 const client = Client.init(options);
 
-const openShifts = {
-  sharedOpenShift: {
-    openSlotCount: 99
-  },
-  draftOpenShift: {
-    openSlotCount: 99
-  },
-  schedulingGroupId: "TAG_f914d037-00a3-4ba4-b712-ef178cbea263"
+const openShift = {
+schedulingGroupId: "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+sharedOpenShift: {
+notes: "Inventory Management",
+openSlotCount:5,
+displayName: "Field shift",
+startDateTime: "2018-10-04T00:58:45.340Z",
+endDateTime: "2018-10-04T09:50:45.332Z",
+theme: "white",
+activities: [
+{
+isPaid: true,
+startDateTime: "2018-10-04T00:58:45.340Z",
+endDateTime: "2018-10-04T01:58:45.340Z",
+code: "",
+displayName: "Lunch"
+}
+]
+},
+draftOpenShift: null
 };
 
-let res = await client.api('/teams/{id}/schedule/openShifts')
+let res = await client.api('/teams/{id}/schedule/openShifts/{openShiftId}')
     .version('beta')
-    .update(openShifts);
+    .put(openShift);
 
 ```
