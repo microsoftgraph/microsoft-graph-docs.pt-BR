@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 715ef4552a3d87ecb59a1925d1a3e52c7d8ed4ea
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 65ff9382de97ddcd7a0b4bd8a315f8350a80ec35
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866879"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023121"
 ---
 # <a name="people-picker-component"></a>Componente de seletor de pessoas
 
@@ -105,8 +105,9 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${GroupId}/Members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
+| [/groups/\${GroupId}/Members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
+| [/Users/$ {userprincípioname}](/graph/api/user-list-people?view=graph-rest-1.0)  | User. Readbasic. All |
 
 ## <a name="authentication"></a>Autenticação
 

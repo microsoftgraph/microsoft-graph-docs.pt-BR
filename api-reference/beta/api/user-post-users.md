@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b4a34190fd2ec6d61cdfb03e004e7673d60cddb
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0719415786a00b07485761c72985abcc47106dd0
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703739"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023096"
 ---
 # <a name="create-user"></a>Criar usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um novo [usuário](../resources/user.md). O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
+
+Essa operação retorna, por padrão, apenas um subconjunto das propriedades de cada usuário. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades não retornadas por padrão, execute uma [operação GET](user-get.md) e especifique as propriedades em uma opção de consulta do `$select` OData.
 
 >[!NOTE]
 >Para criar usuários externos, use a [API de convite](invitation-post.md).
