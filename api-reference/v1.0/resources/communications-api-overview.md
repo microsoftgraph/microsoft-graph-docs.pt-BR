@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: b70006aad978ce05c63f62354a3ac7f27105e4f9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b17dc07431bfe579125d162754c4f4ad4110e73f
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913223"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023072"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
 
@@ -37,7 +37,7 @@ A tabela a seguir lista alguns dos usos comuns para a API de comunicações.
 | Criando e associando chamadas 1-1 e de grupo   | [Call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0)| [Métodos para chamadas](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
 |Chamadas IVR   |     | [Métodos para IVR](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
 | Controles de chamada (participante) | [Participante](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
-|Reuniões|[onlineMeeting](https://docs.microsoft.comgraph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Métodos para reuniões](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+|Reuniões|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Métodos para reuniões](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 
 ## <a name="common-properties"></a>Propriedades comuns
 
