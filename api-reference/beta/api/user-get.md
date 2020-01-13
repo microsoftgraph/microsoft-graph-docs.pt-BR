@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2632dfa8395d7ad68ae280e448eb095582827dd2
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 6e330ce8d12430e8c1bbfa70dd8dc8541f602ecd
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538529"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023107"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -18,7 +18,7 @@ ms.locfileid: "37538529"
 
 Recuperar as propriedades e os relacionamentos do objeto user.
 
-Como o recurso **user** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **user**.
+Esta operação retorna, por padrão, apenas um subconjunto das propriedades mais usadas de cada usuário. Essas propriedades _padrão_ estão listadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](user-get.md) para o usuário e especifique as propriedades em uma opção de consulta `$select` do OData. Como o recurso **usuário** dá suporte a [extensões](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **usuário**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

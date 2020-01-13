@@ -3,18 +3,26 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9fccee5ed68b8df21a58506d7a3745a439256673
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 8d1f8eeb909e307dca7e8208177741818764cf92
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951969"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023128"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
+
+## <a name="january-2020"></a>Janeiro de 2020
+
+### <a name="security"></a>Segurança 
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Alteração | Beta e v1.0 | O método [Atualizar alerta](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) agora atualiza o campo **comentários** apenas com os seguintes valores: <br/> `Closed in IPC`, `Closed in MCAS`.|
 
 ## <a name="december-2019"></a>Dezembro de 2019
 
