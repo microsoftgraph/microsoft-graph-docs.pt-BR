@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 337d31a49dbbe170100ca7532b111a230a753076
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: aa78e466326ac523afabccd1d2dd39c805b06772
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702528"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119802"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
@@ -138,7 +138,7 @@ O `accessReviewRecurrenceSettings` está incorporado nas configurações de revi
 | Propriedade                     | Tipo                                                                                                          | Descrição |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | O intervalo de recorrência, que deve ser `onetime`um `weekly`de `monthly`, `quarterly`,, `annual`ou.                                                                   |
-| `recurrenceEndType`|`String` | Como a recorrência termina. Se for `Never`, não haverá uma extremidade explícita da série de recorrência. Se for `endBy`, a recorrência terminará em uma determinada data. Se for `occurrences`, a série terminará após `recurrentCount` a conclusão das instâncias da revisão. |
+| `recurrenceEndType`|`String` | Como a recorrência termina. Se for `never`, não haverá uma extremidade explícita da série de recorrência. Se for `endBy`, a recorrência terminará em uma determinada data. Se for `occurrences`, a série terminará após `recurrenceCount` a conclusão das instâncias da revisão. |
 | `durationInDays`|`Int32`     | A duração em dias da recorrência.                                                                              |
 | `recurrenceCount`|`Int32`    | A contagem de recorrências, se o valor `recurrenceEndType` for `occurrences`ou 0 caso contrário.                                                        |
 
