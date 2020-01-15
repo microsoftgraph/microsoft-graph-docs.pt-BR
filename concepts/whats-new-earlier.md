@@ -3,14 +3,80 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: e178eeeae1c4dfd4b8dc6b09f33de95cc036dc5a
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 87dcbc3bef9998498f14b32d06eecc6aac1e9ed5
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895497"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119795"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="november-2019-new-and-generally-available"></a>Novembro de 2019: novo e disponível para o público geral
+
+### <a name="groups"></a>Grupos
+- Use permissões delegadas ou de aplicativo, GroupMember.Read.All e GroupMember.ReadWrite.All, para listar grupos, leia as propriedades básicas do grupo, leia (e atualize a permissão de leitura/gravação) a associação dos grupos aos quais o aplicativo tem acesso.
+- Use a permissão do aplicativo, Group.Create, para criar grupos sem um usuário conectado.
+- Para um [grupo](/graph/api/resources/group?view=graph-rest-1.0) especificado, [verifique a associação](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) em outros grupos ou funções de diretório.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- Registre [aplicativos](/graph/api/resources/application?view=graph-rest-1.0) que se autenticam com o Azure Active Directory (Azure AD). Use as [permissões](/graph/permissions-reference#application-resource-permissions) delegadas, Application.Read.All e Application.ReadWrite.All ou as permissões de aplicativos, Application.Read.All, conforme apropriado.
+- Para um [dispositivo](/graph/api/resources/device?view=graph-rest-1.0) especificado, [verifique a associação](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) em outros grupos ou funções de diretório.
+
+### <a name="mail"></a>Email
+- Use a propriedade **conversationIndex** para obter a posição de uma mensagem em uma conversa de email do Outlook.
+- Use a permissão delegada, Mail.ReadBasic e a permissão de aplicativo, Mail.ReadBasic.All, para obter os recursos de [mensagem](/graph/api/resources/message?view=graph-rest-1.0) ou de [pasta de email](/graph/api/resources/mailfolder?view=graph-rest-1.0), acompanhar suas alterações e gerenciar [assinaturas](/graph/api/resources/subscription?view=graph-rest-1.0) para notificações de alteração nas mensagens.
+
+### <a name="users"></a>Usuários
+- [Verifique se há associações de grupo](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) de um [usuário](/graph/api/resources/user?view=graph-rest-1.0) específico.
+- Use a propriedade **creationType** para descobrir como uma conta de usuário foi criada, por exemplo, se a conta foi criada como uma conta corporativa ou de estudante ou como uma conta externa, etc.
+
+## <a name="november-2019-new-in-preview"></a>Novembro de 2019: Novidades na versão prévia
+
+### <a name="calendar"></a>Calendário
+- [Use o Outlook para organizar e participar de reuniões online](outlook-calendar-online-meetings.md).
+- [Defina as propriedades](/graph/api/place-update?view=graph-rest-beta) para os tipos de local avançado de [sala](/graph/api/resources/room?view=graph-rest-beta) e [lista de sala](/graph/api/resources/roomlist?view=graph-rest-beta).
+
+### <a name="cloud-communication"></a>Comunicação na nuvem
+O tipo de recurso de [chamada](/graph/api/resources/call?view=graph-rest-beta) dá suporte aos seguintes recursos adicionais:
+
+- O [contexto de uma chamada de entrada](/graph/api/resources/incomingcontext?view=graph-rest-beta)
+- O tipo de ponto de extremidade de um participante, como correio de voz ou Skype for Business
+- A capacidade de [atualizar](/graph/api/call-updaterecordingstatus?view=graph-rest-beta) as [informações de registro](/graph/api/resources/recordinginfo?view=graph-rest-beta) de um [participante](/graph/api/resources/participant?view=graph-rest-beta)
+
+### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+Atualizações de [novembro](changelog.md#november-2019) do Intune
+
+### <a name="education"></a>Educação
+Os administradores podem habilitar as configurações de toda a classe por meio da propriedade **classSettings** da [equipe](/graph/api/resources/team?view=graph-rest-beta) associada à [classe](/graph/api/resources/educationclass?view=graph-rest-beta). Atualmente, há uma configuração para notificar os guardiões sobre tarefas semanais.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- Use a permissão do aplicativo, Policy.Read.All, para ler todas as políticas de acesso condicional da sua localização e locais nomeados, sem um usuário conectado.
+- Permita que a [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) esteja em um estado somente de relatório, `enabledForReportingButNotEnforced`.
+- Use a permissão delegada, ThreatAssessment.ReadWrite.All, ou a permissão de aplicativo, ThreatAssessment.Read.All, leia (ou crie uma permissão de leitura/gravação) solicitações para avaliar ameaças em uma organização.
+
+### <a name="mail"></a>Email
+Use a permissão delegada, Mail.ReadBasic e a permissão de aplicativo, Mail.ReadBasic.All, para gerenciar as [assinaturas](/graph/api/resources/subscription?view=graph-rest-beta) para notificações de alteração no recurso de [mensagem](/graph/api/resources/message?view=graph-rest-beta).
+
+### <a name="notifications"></a>Notificações
+Use as novas notificações simples [SDK Web](https://aka.ms/GNSDK) em vez do [SDK do Project Rome](https://github.com/Microsoft/project-rome), para aproveitar um modelo de autenticação aperfeiçoado e suporte a aplicativos da Web usando o push da Web. 
+
+### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
+Estreia do recurso do [perfil](/graph/api/resources/profile?view=graph-rest-beta) que é uma representação avançada da próxima geração de entidades de pessoas nos serviços da Microsoft. Esse recurso se relaciona aos atributos comuns e práticos de pessoas, incluindo informações sobre datas significativas, como [aniversários](/graph/api/resources/personanniversary?view=graph-rest-beta), [escolaridade](/graph/api/resources/educationalactivity?view=graph-rest-beta), [cargos](/graph/api/resources/workposition?view=graph-rest-beta), [interesses](/graph/api/resources/personinterest?view=graph-rest-beta), [idioma](/graph/api/resources/languageproficiency?view=graph-rest-beta) e [habilidades](/graph/api/resources/skillproficiency?view=graph-rest-beta) e competências, [participação em projetos](/graph/api/resources/projectparticipation?view=graph-rest-beta), [associação em sites](/graph/api/resources/personwebsite?view=graph-rest-beta) e outras informações de contato e [conta](/graph/api/resources/useraccountinformation?view=graph-rest-beta).
+
+### <a name="search"></a>Pesquisar
+Estreia da [API de Pesquisa da Microsoft](search-concept-overview.md) que permite aos usuários do aplicativo obter os resultados de pesquisa mais atualizados, personalizados e relevantes com a plataforma Microsoft Graph. Use o recurso de [consulta](/graph/api/search-query?view=graph-rest-beta)por padrão, pesquisas mensagens e eventos do Outlook e arquivos do OneDrive e do SharePoint na nuvem da Microsoft. Use os conectores [disponíveis](/microsoftsearch/connectors-overview) na [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery), para incluir dados de pesquisa fora do Microsoft Cloud. Como alternativa, [construa seus próprios conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), indexe arquivos e itens personalizados externos e consulte fontes de dados externas específicas.
+
+### <a name="teamwork"></a>Trabalho em equipe
+Obtenha os recursos de [arquivo](/graph/api/resources/driveitem?view=graph-rest-beta) associados a uma [equipe](/graph/api/resources/team?view=graph-rest-beta) e [canal](/graph/api/resources/channel?view=graph-rest-beta) usando a seguinte sintaxe de solicitação de HTTP:
+
+```http
+GET /teams/{teamId}/channels/{channelId}/filesFolder
+```
+
+### <a name="users"></a>Usuários
+Use a propriedade **creationType** para descobrir como uma conta de usuário foi criada, por exemplo, se a conta foi criada como uma conta corporativa ou de estudante ou como uma conta externa, etc.
+
 
 ## <a name="october-2019-new-and-generally-available"></a>Outubro de 2019: Novo e geralmente disponível
 
@@ -170,7 +236,7 @@ Até esse ponto, você pode [seguir](/graph/api/driveitem-follow?view=graph-rest
 - Os administradores podem [listar as revisões de acesso](/graph/api/accessreview-list?view=graph-rest-beta) para facilitar de maneira eficiente a análise de associações de grupos, o acesso a aplicativos corporativos e as atribuições de funções. As revisões de acesso regular garantem que apenas as pessoas adequadas tenham acesso contínuo aos recursos de maneiras específicas.
 
 ### <a name="social-and-workplace-intelligence"></a>Inteligência social e do local de trabalho
-Os usuários finais vêm podendo usar o aplicativo [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) do Office 365para obter insights sobre gerenciamento de tempo, colaboração no trabalho e equilíbrio profissional. Agora você pode usar a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) para integrar dados sobre tempo gasto em atividades de trabalho, como chamadas, chats e email, para ajudar a melhorar a produtividade e o bem-estar do usuário. 
+Os usuários finais vêm podendo usar o aplicativo [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) do Office 365para obter insights sobre gerenciamento de tempo, colaboração no trabalho e equilíbrio profissional. Agora você pode usar a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) para integrar dados sobre tempo gasto em atividades de trabalho, como chamadas, chats e email, para ajudar a melhorar a produtividade e o bem-estar do usuário. 
 
 
 ## <a name="july-2019-new-and-generally-available"></a>Julho de 2019: novo e disponível para o público geral 

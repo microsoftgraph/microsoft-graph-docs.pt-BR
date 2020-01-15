@@ -236,6 +236,12 @@ items:
                 href: notifications-integrating-with-android.md
               - name: Integração de aplicativos IOS
                 href: notifications-integrating-with-ios.md
+      - name: Inteligência de pessoas e local de trabalho
+        items:
+          - name: Visão geral
+            href: social-intel-concept-overview.md
+          - name: Obter informações sobre pessoas relevantes
+            href: people-example.md
       - name: Contatos pessoais
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
@@ -286,12 +292,6 @@ items:
       - name: Sites e listas
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
-      - name: Inteligência de pessoas e no local de trabalho
-        items:
-          - name: Visão geral
-            href: social-intel-concept-overview.md
-          - name: Obter informações sobre pessoas relevantes
-            href: people-example.md
       - name: Tarefas e planos
         href: planner-concept-overview.md
         displayName: Planner
