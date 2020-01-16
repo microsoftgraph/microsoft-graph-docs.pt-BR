@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8d1f8eeb909e307dca7e8208177741818764cf92
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: d65312934ddea65aa23b5953608019e5a6ddb128
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023128"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119809"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -88,8 +88,10 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
-|Alteração | beta |Atualizado o comportamento das relações **appRoleAssignments** e **appRoleAssignedTo** relações em [servicePrincipal](/graph/api/resoureces/serviceprincipal.md) para retornar as funções conforme o documento. **appRoleAssignments** retorna funções de aplicativo concedidas à entidade de serviço e **appRoleAssignedTo** retorna as funções de aplicativo concedidas à entidade de serviço.|
+|Alteração | beta |Atualizado o comportamento das relações **appRoleAssignments** e **appRoleAssignedTo** relações em [servicePrincipal](/graph/api/resoureces/serviceprincipal?view=graph-rest-beta) para retornar as funções conforme o documento. **appRoleAssignments** retorna funções de aplicativo concedidas à entidade de serviço e **appRoleAssignedTo** retorna as funções de aplicativo concedidas à entidade de serviço.|
+| Adição | beta | O novo tipo de entidade [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 |Adição|Beta, v 1.0|Suporte adicional para retornar uma quantidade limitada de informações quando o aplicativo não tiver acesso a alguns tipos em uma coleção de resposta. Para obter mais detalhes, confira [Informações limitadas retornadas para objetos membro inacessíveis](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
+
 
 ### <a name="identity-and-access-azure-ad--information-protection"></a>Identidade e acesso (Azure AD) | Proteção de informações
 
@@ -118,7 +120,7 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 | Correções        | NA         | [Correções de erros e melhorias](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
 
 
-### <a name="people-intelligence--insights"></a>Inteligência pessoal | Insights
+### <a name="people-and-workplace-intelligence--insights"></a>Inteligência social e do ambiente de trabalho | Ideias
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -139,12 +141,6 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 | Adição | Beta | Foi adicionado novo relacionamento `shiftPreferences` à entidade [UserSettings](/graph/api/resources/usersettings?view=graph-rest-beta). |
 | Alteração | Beta | As permissões de aplicativo foram atualizadas para executar operações de leitura e gravação para os recursos de turnos, incluindo[schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), e[openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Observação:** as permissões de aplicativos estão na visualização particular e não estão disponíveis para uso público.|
 
-
-### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
-
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição | Beta | O novo tipo de entidade [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 
 ## <a name="november-2019"></a>Novembro de 2019
 
