@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca1a27b30152debe51add8f0b418d3983c13b746
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: acea1f8ba7021e76d069f8da60c7b5cb9bbe9604
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995929"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216712"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>informationProtectionLabel: evaluateRemoval
 
@@ -33,9 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | InformationProtectionPolicy. Read. All        |
+| Delegada (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | InformationProtectionPolicy. Read. All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,19 +47,20 @@ POST /informationprotection/policy/labels/evaluateRemoval
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome          | Descrição                 |
-| :------------ | :-------------------------- |
-| Autorização | {token} de portador. Obrigatório.   |
-| Content-type  | application/json. Obrigatório. |
+| Nome          | Descrição                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
+| Content-type  | application/json. Obrigatório.                                                                                                                                                       |
+| Agente de usuário    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro              | Tipo                                                             | Descrição                                                                                                                                                                                                   |
-| :--------------------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parâmetro              | Tipo                                                             | Descrição                                                                                                                         |
+| :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor. |
-| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justificativa que deve ser fornecida pelo usuário ou pela lógica do aplicativo.                                                                                                                                         |
+| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justificativa que deve ser fornecida pelo usuário ou pela lógica do aplicativo.                                                               |
 
 
 ## <a name="response"></a>Resposta
@@ -83,6 +84,7 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

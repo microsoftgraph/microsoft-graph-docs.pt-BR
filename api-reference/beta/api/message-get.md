@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 20a68ed4448c8762217ba0d37d368af63d58c8e9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9d0676f1d9558e92fe5d033c44a48bcfad140b0f
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869462"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216767"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Use o `$value` parâmetro para obter o conteúdo MIME de uma mensagem.
+Use o parâmetro `$value` para obter o conteúdo MIME de uma mensagem.
 
 Use o `$expand` parâmetro de consulta na propriedade de navegação **menciona** para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.
 
@@ -90,7 +90,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.
 
-A especificação `$value` do parâmetro retorna o conteúdo da mensagem no formato MIME e não um recurso de **mensagem** .
+Especificar o parâmetro `$value` retorna o conteúdo da mensagem no formato MIME e não um recurso de **mensagem**.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1"></a>Exemplo 1
@@ -125,6 +125,7 @@ Veja a seguir um exemplo da resposta. As propriedades **Body** e **uniqueBody** 
 Observação: o objeto Response mostrado aqui é truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -182,6 +183,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "get_mentions_in_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -313,6 +315,7 @@ Prefer: outlook.body-content-type="text"
 Veja a seguir um exemplo da resposta. Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para reconhecer o `Prefer: outlook.body-content-type` cabeçalho da solicitação.
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -374,6 +377,7 @@ Veja a seguir um exemplo da resposta. Observação: o número de cabeçalhos de 
 
 <!-- {
   "blockType": "response",
+  "name": "get_message_internet_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -417,8 +421,10 @@ Content-type: application/json
 O quinto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.
 
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
@@ -426,10 +432,14 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 #### <a name="response"></a>Resposta
 Esta é a resposta. O conteúdo MIME começa com o `MIME-Version` cabeçalho. 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -465,9 +475,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 

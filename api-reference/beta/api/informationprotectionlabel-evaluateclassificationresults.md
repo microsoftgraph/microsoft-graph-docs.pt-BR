@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06031fd4887b417fe12858ca5d3f1622f58a4f96
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9f1012e7516ee635d9b44d1ae8a1277480aff6c8
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995613"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216670"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>informationProtectionLabel: evaluateClassificationResults
 
@@ -42,9 +42,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | InformationProtectionPolicy. Read. All        |
+| Delegada (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | InformationProtectionPolicy. Read. All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,10 +56,11 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome          | Descrição                 |
-| :------------ | :-------------------------- |
-| Autorização | {token} de portador. Obrigatório.   |
-| Content-type  | application/json. Obrigatório. |
+| Nome          | Descrição                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Autorização | {token} de portador. Obrigatório.                                                                                                                                             |
+| Content-type  | application/json. Obrigatório.                                                                                                                                           |
+| Agente de usuário    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -67,7 +68,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro             | Tipo                                                                    | Descrição                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor.                                                                         |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor.                                                                                                                                                   |
 | classificationResults | coleção [classificationResult](../resources/classificationresult.md) | Contém o conjunto de resultados de classificação retornado pelo ponto de extremidade de classificação de dados. As informações de Classificaiton são usadas para determinar o rótulo apropriado com base na configuração de rótulo de política de proteção de informações da Microsoft no centro de segurança e conformidade do Office 365. |
 
 ## <a name="response"></a>Resposta
@@ -91,6 +92,7 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

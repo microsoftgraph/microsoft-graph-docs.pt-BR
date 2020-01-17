@@ -2,15 +2,15 @@
 title: tipo de recurso de assinatura
 description: 'Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 70af093b6ed782ba7bf447c339e5187439849970
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 39ca29e8f2cbe9ad2c861fc83856fe83c2164675
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844264"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216844"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -25,7 +25,7 @@ Uma assinatura permite que um aplicativo cliente receba notificações sobre dad
 - Um [mensagem][], [evento][], ou [contato][] no Outlook
 - Um [usuário][] ou [grupo][] no Azure Active Directory
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
@@ -41,16 +41,16 @@ Uma assinatura permite que um aplicativo cliente receba notificações sobre dad
 |:---------|:-----|:------------|
 | changeType | string | Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. Obrigatório. <br><br>Observação: As notificações do item na raiz da unidade suportam somente `updated` changeType. Notificações de grupos e usuário suportam `updated` e `deleted` changeType. |
 | notificationUrl | cadeia de caracteres | A URL do ponto de extremidade que recebe as notificações. Esta URL deve usar o protocolo HTTPS. Obrigatório. |
-| lifecycleNotificationUrl | string | A URL do ponto de extremidade que recebe notificações de ciclo `subscriptionRemoved` de `missed` vida, incluindo e notificações. Se não for fornecido, as notificações serão entregues ao **notificationUrl**. Esta URL deve usar o protocolo HTTPS. Opcional. <br><br>[Leia mais](/graph/webhooks-outlook-authz) sobre como os recursos do Outlook usam notificações de ciclo de vida. |
+| lifecycleNotificationUrl | cadeia de caracteres | A URL do ponto de extremidade que recebe notificações de ciclo `subscriptionRemoved` de `missed` vida, incluindo e notificações. Se não for fornecido, as notificações serão entregues ao **notificationUrl**. Esta URL deve usar o protocolo HTTPS. Opcional. <br><br>[Leia mais](/graph/webhooks-outlook-authz) sobre como os recursos do Outlook usam notificações de ciclo de vida. |
 | recurso | string | Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/beta/`). Obrigatório. |
 | expirationDateTime | DateTimeOffset | Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. Obrigatório. |
-| clientState | string | Especifica o valor da propriedade **ClientState** enviada pelo serviço em cada notificação. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação veio do serviço, comparando o valor da propriedade **ClientState** enviada com a assinatura com o valor da propriedade **ClientState** recebida com cada notificação. Opcional. |
-| id | string | Identificador exclusivo da assinatura. Somente leitura. |
-| ApplicationId | string | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
+| clientState | cadeia de caracteres | Especifica o valor da propriedade **ClientState** enviada pelo serviço em cada notificação. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação veio do serviço, comparando o valor da propriedade **ClientState** enviada com a assinatura com o valor da propriedade **ClientState** recebida com cada notificação. Opcional. |
+| id | cadeia de caracteres | Identificador exclusivo da assinatura. Somente leitura. |
+| ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, este campo conterá a ID do usuário conectado o aplicativo chamado em nome de. Se o aplicativo usava permissões de aplicativo, este campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. |
 | includeResourceData | Booliano | Quando definido como `true`, as notificações de alteração [incluem dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de chat). Opcional. | 
-| encryptionCertificate | string | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar dados de recurso em notificações. Opcional. Obrigatório quando **includeResourceData** é true. | 
-| encryptionCertificateId | string | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar dados de recurso. Opcional. Obrigatório quando **includeResourceData** é true. |
+| encryptionCertificate | cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar dados de recurso em notificações. Opcional. Obrigatório quando **includeResourceData** é true. | 
+| encryptionCertificateId | cadeia de caracteres | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar dados de recurso. Opcional. Obrigatório quando **includeResourceData** é true. |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 

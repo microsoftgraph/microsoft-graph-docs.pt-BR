@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 043b82820418915f4e38aab1839fee6113b423ec
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: c04849feac987eefef82eb3e069645406218ff1f
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994404"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216303"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | InformationProtectionPolicy. Read. All        |
+| Delegada (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
+| Application                            | InformationProtectionPolicy. Read. All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,17 +41,18 @@ POST /informationprotection/policy/labels/extractLabel
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome          | Descrição                    |
-| :------------ | :----------------------------- |
-| Autorização | {token} de portador. Obrigatório.                 |
-| Content-type  | Content-Type: Application/JSON. Obrigatório. |
+| Nome          | Descrição                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
+| Content-type  | Content-Type: Application/JSON. Obrigatório.                                                                                                                                         |
+| Agente de usuário    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro   | Tipo                                       | Descrição                                                                                                                                                                                                   |
-| :---------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parâmetro   | Tipo                                       | Descrição                                                                                                                         |
+| :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo | [contentInfo](../resources/contentinfo.md) | Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor. |
 
 ## <a name="response"></a>Resposta
@@ -75,6 +76,7 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
     "contentInfo": {
