@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab57e15b88cef2ba1749c19a1b00d3521136f274
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cc45adb31d22502878cc7c8cad2c9d85eed3f91e
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865563"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216879"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -111,6 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -217,6 +218,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 Veja a seguir um exemplo da resposta. Observação: O conjunto de cabeçalhos das mensagens no objeto de resposta é truncado para brevidade. Todas os cabeçalhos serão retornados de uma chamada real.
 <!-- {
   "blockType": "response",
+  "name": "get_message_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -289,6 +291,7 @@ Prefer: outlook.body-content-type="text"
 Veja a seguir um exemplo da resposta. Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para reconhecer o `Prefer: outlook.body-content-type` cabeçalho da solicitação.
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -319,19 +322,26 @@ Preference-Applied: outlook.body-content-type="text"
 O quarto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.
 
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 
 #### <a name="response"></a>Resposta
 Esta é a resposta. O conteúdo MIME começa com o `MIME-Version` cabeçalho. 
+
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -367,9 +377,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 

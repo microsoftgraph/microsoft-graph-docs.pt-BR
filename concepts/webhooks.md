@@ -1,16 +1,16 @@
 ---
 title: Configurar notificações para alterações nos dados de usuário
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
-author: piotrci
+author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e4bd9809524b5891f1883f62b8ef5c6fbaa5d01f
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: a9bee67379203b7dbe2c6a3b4dff1caba95e422d
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845025"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216830"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -53,7 +53,7 @@ Ou para alguma pasta no OneDrive pessoal de um usuário: `/drives/{id}/root`
 
 Ou para a pasta raiz de uma unidade do SharePoint/OneDrive for Business: `/drive/root`
 
-Ou para um novo alerta da [API de Segurança](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+Ou para um novo alerta da [API de Segurança](security-concept-overview.md): `/security/alerts?$filter=status eq 'newAlert'`, `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### <a name="azure-ad-resource-limitations"></a>Limitações de recursos do Microsoft Azure AD
 

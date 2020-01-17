@@ -1,15 +1,15 @@
 ---
 title: Configurar notificações de alteração que incluam dados de recursos (visualização)
 description: O Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. As notificações podem incluir propriedades do recurso.
-author: piotrci
+author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 2284e416ca50769098e4682c251326840229d60f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1a84035cd0e1e596e88124a5f75fdcbd1326defe
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866858"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216865"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>Configurar notificações de alteração que incluam dados de recursos (visualização)
 
