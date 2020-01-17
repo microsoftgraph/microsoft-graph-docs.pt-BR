@@ -5,39 +5,39 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca1a27b30152debe51add8f0b418d3983c13b746
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: acea1f8ba7021e76d069f8da60c7b5cb9bbe9604
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995929"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216712"
 ---
-# <a name="informationprotectionlabel-evaluateremoval"></a><span data-ttu-id="fec6e-103">informationProtectionLabel: evaluateRemoval</span><span class="sxs-lookup"><span data-stu-id="fec6e-103">informationProtectionLabel: evaluateRemoval</span></span>
+# <a name="informationprotectionlabel-evaluateremoval"></a><span data-ttu-id="a9718-103">informationProtectionLabel: evaluateRemoval</span><span class="sxs-lookup"><span data-stu-id="a9718-103">informationProtectionLabel: evaluateRemoval</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fec6e-104">Indique o aplicativo de consumo que ações deve executar para remover as informações de rótulo.</span><span class="sxs-lookup"><span data-stu-id="fec6e-104">Indicate to the consuming application what actions it should take to remove the label information.</span></span>
+<span data-ttu-id="a9718-104">Indique o aplicativo de consumo que ações deve executar para remover as informações de rótulo.</span><span class="sxs-lookup"><span data-stu-id="a9718-104">Indicate to the consuming application what actions it should take to remove the label information.</span></span>
 
-<span data-ttu-id="fec6e-105">Dada [contentInfo](../resources/contentinfo.md) como uma entrada, que inclui [pares de chave/valor](../resources/keyvaluepair.md)de metadados de conteúdo existentes, a API retorna um [informationProtectionAction](../resources/informationprotectionaction.md) que contém alguma combinação de uma ou mais das seguintes opções:</span><span class="sxs-lookup"><span data-stu-id="fec6e-105">Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains some combination of one of more of the following:</span></span> 
+<span data-ttu-id="a9718-105">Dada [contentInfo](../resources/contentinfo.md) como uma entrada, que inclui [pares de chave/valor](../resources/keyvaluepair.md)de metadados de conteúdo existentes, a API retorna um [informationProtectionAction](../resources/informationprotectionaction.md) que contém alguma combinação de uma ou mais das seguintes opções:</span><span class="sxs-lookup"><span data-stu-id="a9718-105">Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains some combination of one of more of the following:</span></span> 
 
-* [<span data-ttu-id="fec6e-106">justifyaction</span><span class="sxs-lookup"><span data-stu-id="fec6e-106">justifyAction</span></span>](../resources/justifyaction.md)
-* [<span data-ttu-id="fec6e-107">metadataaction</span><span class="sxs-lookup"><span data-stu-id="fec6e-107">metadataAction</span></span>](../resources/metadataaction.md)
-* [<span data-ttu-id="fec6e-108">removeContentFooterAction</span><span class="sxs-lookup"><span data-stu-id="fec6e-108">removeContentFooterAction</span></span>](../resources/removecontentfooteraction.md)
-* [<span data-ttu-id="fec6e-109">removeContentHeaderAction</span><span class="sxs-lookup"><span data-stu-id="fec6e-109">removeContentHeaderAction</span></span>](../resources/removecontentheaderaction.md)
-* [<span data-ttu-id="fec6e-110">removeProtectionAction</span><span class="sxs-lookup"><span data-stu-id="fec6e-110">removeProtectionAction</span></span>](../resources/removeprotectionaction.md)
-* [<span data-ttu-id="fec6e-111">removeWatermarkAction</span><span class="sxs-lookup"><span data-stu-id="fec6e-111">removeWatermarkAction</span></span>](../resources/removewatermarkaction.md)
+* [<span data-ttu-id="a9718-106">justifyaction</span><span class="sxs-lookup"><span data-stu-id="a9718-106">justifyAction</span></span>](../resources/justifyaction.md)
+* [<span data-ttu-id="a9718-107">metadataaction</span><span class="sxs-lookup"><span data-stu-id="a9718-107">metadataAction</span></span>](../resources/metadataaction.md)
+* [<span data-ttu-id="a9718-108">removeContentFooterAction</span><span class="sxs-lookup"><span data-stu-id="a9718-108">removeContentFooterAction</span></span>](../resources/removecontentfooteraction.md)
+* [<span data-ttu-id="a9718-109">removeContentHeaderAction</span><span class="sxs-lookup"><span data-stu-id="a9718-109">removeContentHeaderAction</span></span>](../resources/removecontentheaderaction.md)
+* [<span data-ttu-id="a9718-110">removeProtectionAction</span><span class="sxs-lookup"><span data-stu-id="a9718-110">removeProtectionAction</span></span>](../resources/removeprotectionaction.md)
+* [<span data-ttu-id="a9718-111">removeWatermarkAction</span><span class="sxs-lookup"><span data-stu-id="a9718-111">removeWatermarkAction</span></span>](../resources/removewatermarkaction.md)
 
-## <a name="permissions"></a><span data-ttu-id="fec6e-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="fec6e-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a9718-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="a9718-112">Permissions</span></span>
 
-<span data-ttu-id="fec6e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fec6e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a9718-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9718-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fec6e-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fec6e-115">Permission type</span></span>                        | <span data-ttu-id="fec6e-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fec6e-116">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a9718-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a9718-115">Permission type</span></span>                        | <span data-ttu-id="a9718-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a9718-116">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="fec6e-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fec6e-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="fec6e-118">InformationProtectionPolicy. Read</span><span class="sxs-lookup"><span data-stu-id="fec6e-118">InformationProtectionPolicy.Read</span></span>            |
-| <span data-ttu-id="fec6e-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fec6e-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fec6e-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fec6e-120">Not supported.</span></span>                              |
-| <span data-ttu-id="fec6e-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fec6e-121">Application</span></span>                            | <span data-ttu-id="fec6e-122">InformationProtectionPolicy. Read. All</span><span class="sxs-lookup"><span data-stu-id="fec6e-122">InformationProtectionPolicy.Read.All</span></span>        |
+| <span data-ttu-id="a9718-117">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a9718-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="a9718-118">InformationProtectionPolicy. Read</span><span class="sxs-lookup"><span data-stu-id="a9718-118">InformationProtectionPolicy.Read</span></span>            |
+| <span data-ttu-id="a9718-119">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a9718-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9718-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a9718-120">Not supported.</span></span>                              |
+| <span data-ttu-id="a9718-121">Application</span><span class="sxs-lookup"><span data-stu-id="a9718-121">Application</span></span>                            | <span data-ttu-id="a9718-122">InformationProtectionPolicy. Read. All</span><span class="sxs-lookup"><span data-stu-id="a9718-122">InformationProtectionPolicy.Read.All</span></span>        |
 
-## <a name="http-request"></a><span data-ttu-id="fec6e-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fec6e-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a9718-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a9718-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,36 +45,37 @@ ms.locfileid: "37995929"
 POST /informationprotection/policy/labels/evaluateRemoval
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fec6e-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fec6e-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a9718-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a9718-124">Request headers</span></span>
 
-| <span data-ttu-id="fec6e-125">Nome</span><span class="sxs-lookup"><span data-stu-id="fec6e-125">Name</span></span>          | <span data-ttu-id="fec6e-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="fec6e-126">Description</span></span>                 |
-| :------------ | :-------------------------- |
-| <span data-ttu-id="fec6e-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="fec6e-127">Authorization</span></span> | <span data-ttu-id="fec6e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fec6e-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="fec6e-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="fec6e-130">Content-type</span></span>  | <span data-ttu-id="fec6e-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fec6e-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="a9718-125">Nome</span><span class="sxs-lookup"><span data-stu-id="a9718-125">Name</span></span>          | <span data-ttu-id="a9718-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9718-126">Description</span></span>                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <span data-ttu-id="a9718-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="a9718-127">Authorization</span></span> | <span data-ttu-id="a9718-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a9718-p102">Bearer {token}. Required.</span></span>                                                                                                                                                         |
+| <span data-ttu-id="a9718-130">Content-type</span><span class="sxs-lookup"><span data-stu-id="a9718-130">Content-type</span></span>  | <span data-ttu-id="a9718-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a9718-p103">application/json. Required.</span></span>                                                                                                                                                       |
+| <span data-ttu-id="a9718-133">Agente de usuário</span><span class="sxs-lookup"><span data-stu-id="a9718-133">User-Agent</span></span>    | <span data-ttu-id="a9718-134">Descreve o nome e a versão do aplicativo de chamada.</span><span class="sxs-lookup"><span data-stu-id="a9718-134">Describes the name and version of the calling application.</span></span> <span data-ttu-id="a9718-135">Os detalhes surgirão no Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="a9718-135">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="a9718-136">O formato sugerido é ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="a9718-136">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="a9718-137">Opcional.</span><span class="sxs-lookup"><span data-stu-id="a9718-137">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fec6e-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fec6e-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a9718-138">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a9718-138">Request body</span></span>
 
-<span data-ttu-id="fec6e-134">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fec6e-134">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="a9718-139">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a9718-139">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="fec6e-135">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="fec6e-135">Parameter</span></span>              | <span data-ttu-id="fec6e-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="fec6e-136">Type</span></span>                                                             | <span data-ttu-id="fec6e-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="fec6e-137">Description</span></span>                                                                                                                                                                                                   |
-| :--------------------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <span data-ttu-id="fec6e-138">contentInfo</span><span class="sxs-lookup"><span data-stu-id="fec6e-138">contentInfo</span></span>            | [<span data-ttu-id="fec6e-139">contentInfo</span><span class="sxs-lookup"><span data-stu-id="fec6e-139">contentInfo</span></span>](../resources/contentinfo.md)                       | <span data-ttu-id="fec6e-140">Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor.</span><span class="sxs-lookup"><span data-stu-id="fec6e-140">Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.</span></span> |
-| <span data-ttu-id="fec6e-141">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="fec6e-141">downgradeJustification</span></span> | [<span data-ttu-id="fec6e-142">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="fec6e-142">downgradeJustification</span></span>](../resources/downgradejustification.md) | <span data-ttu-id="fec6e-143">Justificativa que deve ser fornecida pelo usuário ou pela lógica do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="fec6e-143">Justification that must be provided by the user or application logic.</span></span>                                                                                                                                         |
+| <span data-ttu-id="a9718-140">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a9718-140">Parameter</span></span>              | <span data-ttu-id="a9718-141">Tipo</span><span class="sxs-lookup"><span data-stu-id="a9718-141">Type</span></span>                                                             | <span data-ttu-id="a9718-142">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9718-142">Description</span></span>                                                                                                                         |
+| :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| <span data-ttu-id="a9718-143">contentInfo</span><span class="sxs-lookup"><span data-stu-id="a9718-143">contentInfo</span></span>            | [<span data-ttu-id="a9718-144">contentInfo</span><span class="sxs-lookup"><span data-stu-id="a9718-144">contentInfo</span></span>](../resources/contentinfo.md)                       | <span data-ttu-id="a9718-145">Fornece detalhes sobre o formato de conteúdo, o estado do conteúdo e os [metadados](../resources/keyvaluepair.md) existentes como pares de chave/valor.</span><span class="sxs-lookup"><span data-stu-id="a9718-145">Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.</span></span> |
+| <span data-ttu-id="a9718-146">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="a9718-146">downgradeJustification</span></span> | [<span data-ttu-id="a9718-147">downgradeJustification</span><span class="sxs-lookup"><span data-stu-id="a9718-147">downgradeJustification</span></span>](../resources/downgradejustification.md) | <span data-ttu-id="a9718-148">Justificativa que deve ser fornecida pelo usuário ou pela lógica do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="a9718-148">Justification that must be provided by the user or application logic.</span></span>                                                               |
 
 
-## <a name="response"></a><span data-ttu-id="fec6e-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="fec6e-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a9718-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9718-149">Response</span></span>
 
-<span data-ttu-id="fec6e-145">Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto da coleção [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fec6e-145">If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.</span></span> <span data-ttu-id="fec6e-146">O [objeto informationProtectionAction](../resources/informationprotectionaction.md) conterá um objeto [metadataaction](../resources/metadataaction.md) que informa ao aplicativo quais metadados serão removidos.</span><span class="sxs-lookup"><span data-stu-id="fec6e-146">The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove.</span></span> 
+<span data-ttu-id="a9718-150">Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto da coleção [informationProtectionAction](../resources/informationprotectionaction.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a9718-150">If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.</span></span> <span data-ttu-id="a9718-151">O [objeto informationProtectionAction](../resources/informationprotectionaction.md) conterá um objeto [metadataaction](../resources/metadataaction.md) que informa ao aplicativo quais metadados serão removidos.</span><span class="sxs-lookup"><span data-stu-id="a9718-151">The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove.</span></span> 
 
-## <a name="examples"></a><span data-ttu-id="fec6e-147">Exemplos</span><span class="sxs-lookup"><span data-stu-id="fec6e-147">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a9718-152">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a9718-152">Examples</span></span>
 
-<span data-ttu-id="fec6e-148">Veja a seguir um exemplo de como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="fec6e-148">The following is an example of how to call this API.</span></span>
+<span data-ttu-id="a9718-153">Veja a seguir um exemplo de como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="a9718-153">The following is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="fec6e-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fec6e-149">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a9718-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a9718-154">Request</span></span>
 
-<span data-ttu-id="fec6e-150">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fec6e-150">The following is an example of the request.</span></span>
+<span data-ttu-id="a9718-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a9718-155">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fec6e-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="fec6e-151">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="a9718-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="a9718-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "informationprotectionlabel_evaluateremoval"
@@ -83,6 +84,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {
@@ -137,26 +139,26 @@ Content-type: application/json
     }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fec6e-152">C#</span><span class="sxs-lookup"><span data-stu-id="fec6e-152">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="a9718-157">C#</span><span class="sxs-lookup"><span data-stu-id="a9718-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-evaluateremoval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fec6e-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fec6e-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a9718-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a9718-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-evaluateremoval-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fec6e-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fec6e-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a9718-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a9718-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateremoval-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="fec6e-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="fec6e-155">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a9718-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9718-160">Response</span></span>
 
-<span data-ttu-id="fec6e-156">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fec6e-156">The following is an example of the response.</span></span>
+<span data-ttu-id="a9718-161">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a9718-161">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="fec6e-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fec6e-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a9718-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a9718-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
