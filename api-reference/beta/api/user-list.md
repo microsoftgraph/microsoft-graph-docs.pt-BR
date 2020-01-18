@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4b151a097f733064e250e3df631671bc1ec4fc5e
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 1c96f252e8098e1a8dc7d2fe49ab9d98cbb67744
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023093"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232018"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -44,7 +44,6 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Cabeçalho        | Valor                      |
 |:--------------|:---------------------------|
 | Autorização | {token} do portador (obrigatório)  |
-| Content-Type  | application/json           |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

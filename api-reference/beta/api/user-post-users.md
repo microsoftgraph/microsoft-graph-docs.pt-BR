@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0719415786a00b07485761c72985abcc47106dd0
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: e09525eaa1889a195d3a0d1c05793e6148d40ef1
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023096"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232039"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -116,8 +116,8 @@ No corpo da solicitação, forneça uma representação JSON do objeto [user](..
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
-[!NOTE]
-O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>[!NOTE]
+>O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -148,8 +148,8 @@ Content-type: application/json
 
 Crie um novo usuário, com uma identidade de conta local com um nome de entrada, um endereço de email como entrada e com uma identidade social. Este exemplo geralmente é usado para cenários de migração em locatários de B2C.  
 
-[!NOTE] 
-Para identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitada.
+>[!NOTE] 
+>Para identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitada.
 
 #### <a name="request"></a>Solicitação
 
