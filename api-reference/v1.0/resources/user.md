@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbf7a01c8de5015cd83a97cd63c0e98bdbc30af0
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: b8295c91f3c291389ca85fe18719c7249d11a03c
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843938"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232004"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -125,6 +125,7 @@ Esse recurso permite:
 |consentProvidedForMinor|String|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |country|String|O país/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
 |createdDateTime | DateTimeOffset |Data de criação do objeto do usuário. |
+|creationType|String|Indica se a conta de usuário foi criada como uma conta corporativa ou de estudante (`null`), uma conta externa (`Invitation`), uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`) ou uma inscrição de autoatendimento usando a verificação de email (`EmailVerified`). Somente leitura.|
 |department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. Com suporte para $filter.|
@@ -132,6 +133,7 @@ Esse recurso permite:
 |givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|Identidades|Coleção [objectIdentity](objectIdentity.md)| Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br>Oferece suporte a $filter.|
 |imAddresses|String collection|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |isResourceAccount|Booliano| **Verdadeiro** se o usuário é uma conta de recursos; caso contrário, **falso**. O valor nulo deve ser considerado **falso**.|
@@ -425,6 +427,8 @@ Veja a seguir uma representação JSON do recurso
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "String (timestamp)",
+  "creationType": "string",
   "department": "string",
   "displayName": "string",
   "employeeId": "string",
@@ -432,6 +436,7 @@ Veja a seguir uma representação JSON do recurso
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
+  "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "imAddresses": ["string"],
   "interests": ["string"],
   "isResourceAccount": false,
