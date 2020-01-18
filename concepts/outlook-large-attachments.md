@@ -4,12 +4,12 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma de duas m
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 62d5496ba3e7a1ccb28af45922a254a6d10c6519
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 4b6aaa2e10ac1fc718d306921dab60b771c8b9e4
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726512"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216851"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>Anexar arquivos grandes às mensagens do Outlook como anexos (visualização)
 
@@ -26,7 +26,7 @@ Este artigo usa um exemplo para ilustrar a segunda abordagem. O exemplo cria e u
 
 Uma operação bem-sucedida retorna `HTTP 201 Created` e uma nova instância[uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta), que contém uma URL opaca que você pode usar em operações `PUT` subseqüentes para carregar partes do arquivo. A **uploadSession** fornece um local de armazenamento temporário onde os bytes do arquivo são salvos até que você tenha carregado o arquivo completo. 
 
-A URL opaca, retornada na propriedade **uploadUrl** da **uploadSession** é pré-autenticada e contém o token de autorização apropriado para consultas `PUT` subsequentes no domínio `https://outlook.office.com`. Esse token expira por **expirationDateTime**. Não Personalize essa URL para as operações `PUT`.
+Verifique se solicitou `Mail.ReadWrite`permissão para criar **uploadSession**. A URL opaca, retornada na propriedade **uploadUrl** do novo **uploadSession** é pré-autenticada e contém o token de autorização apropriado para consultas `PUT` subsequentes no domínio `https://outlook.office.com`. Esse token expira por **expirationDateTime**. Não Personalize essa URL para as operações `PUT`.
 
 O objeto**uploadSession** na resposta também inclui a propriedade **nextExpectedRanges**, que indica que o local inicial de carregamento deve ser byte 0.
 

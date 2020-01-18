@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f413e41b7b2a35bfd16fa16841fa68c10330660
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: f9648b505700b05b05a64f977cb94bbd7d92f6e0
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727415"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232032"
 ---
 # <a name="list-users"></a>Listar usuários
 
-Recuperar uma lista de objetos user.
+Recupere uma lista de objetos [user](../resources/user.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,6 @@ Determinadas propriedades não podem ser retornadas dentro de uma coleção de u
 | Cabeçalho        | Valor                      |
 |:--------------|:---------------------------|
 | Autorização | {token} do portador (obrigatório)  |
-| Content-Type  | application/json           |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -181,6 +180,53 @@ Content-length: 159
       "displayName": "displayName-value",
       "givenName": "givenName-value",
       "postalCode": "postalCode-value"
+    }
+  ]
+}
+```
+
+### <a name="example-3-find-a-user-account-using-a-sign-in-name"></a>Exemplo 3: localizar uma conta de usuário usando o nome de logon
+
+Encontrar uma conta de usuário em um locatário B2C usando um nome de entrada (também conhecido como conta local). Essa solicitação pode ser usada por um suporte técnico para encontrar uma conta de usuário do cliente, em um locatário B2C (neste exemplo, o locatário B2C é contoso.onmicrosoft.com).
+
+>[!NOTE]
+>Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**.
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signinname_users"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+```
+
+---
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. 
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 108
+
+{
+  "value": [
+    {
+      "displayName": "John Smith",
+      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
     }
   ]
 }

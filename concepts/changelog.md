@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d65312934ddea65aa23b5953608019e5a6ddb128
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: 98e11c3f2ca2746d4ade30ccb7b8661638b75f69
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119809"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216809"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -31,6 +31,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Suporte adicionado para os aplicativos inscritos para receber notificações que incluam dados de recursos. Os recursos compatíveis no momento são os recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) em conversas e canais do Microsoft Teams. Os aplicativos com inscrição para notificações devem implementar a autorização e o código de descriptografia adicionais para se beneficiarem desse recurso. Para obter mais detalhes, confira [Configurar notificações em mensagens de chat, incluindo propriedades de mensagem (visualização)](webhooks-with-resource-data.md).|
+
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
@@ -98,6 +99,7 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | beta        | Adiconadas as APIs [criar](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [obter](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) e [listar](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) para gerenciar os recursos[threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta).|
+| Adição        | beta        | Cabeçalho de solicitação opcional adicionado, agente de usuário para [avaliar o aplicativo](/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [avaliar a classificação](/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [avaliar a remoção](/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extrair rótulos](/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [listar rótulos](/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta) e [obter rótulos](/graph/api/informationprotectionlabel-get?view=graph-rest-beta).
 
 ### <a name="microsoft-graph-toolkit"></a>Microsoft Graph Toolkit
 
@@ -119,7 +121,6 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 | Adição        | NA          | O atributo `user-ids` foi adicionado ao[componente pessoas](/graph/toolkit/components/people). |
 | Correções        | NA         | [Correções de erros e melhorias](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
 
-
 ### <a name="people-and-workplace-intelligence--insights"></a>Inteligência social e do ambiente de trabalho | Ideias
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -136,7 +137,7 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
  
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | Beta | Foram adicionadas[ notificações](/graph/api/subscription-post- subscriptions?view=graph-rest-beta) para mensagens de canal novas e editadas e mensagens de chat novas e editadas. |
+| Adição | Beta | Foram adicionadas[ notificações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) para mensagens de canal novas e editadas e mensagens de chat novas e editadas. |
 | Adição | Beta | Foram adicionados o recurso [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) e os métodos associados.|
 | Adição | Beta | Foi adicionado novo relacionamento `shiftPreferences` à entidade [UserSettings](/graph/api/resources/usersettings?view=graph-rest-beta). |
 | Alteração | Beta | As permissões de aplicativo foram atualizadas para executar operações de leitura e gravação para os recursos de turnos, incluindo[schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), e[openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Observação:** as permissões de aplicativos estão na visualização particular e não estão disponíveis para uso público.|
