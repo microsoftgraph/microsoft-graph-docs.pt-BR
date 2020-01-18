@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 54c4ce8f21a2e62311d3931915f682f8f2366bfc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aebd847d9bb922867b7293d6f06f0ae65f23c8cb
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372546"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232025"
 ---
 # <a name="create-user"></a>Criar Usuário
 
@@ -46,7 +46,7 @@ POST /users
 
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar um usuário.
+A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias. Para obter uma [identidade de conta local B2C](../resources/objectidentity.md), só é necessário **passwordProfile** e **passwordPolicy** deve ser definido como `DisablePasswordExpiration`. Para uma identidade social, nenhuma das propriedades é necessária.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
@@ -68,7 +68,9 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="example-1-create-a-user"></a>Exemplo 1: criar um usuário
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -114,7 +116,7 @@ Content-type: application/json
 
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -143,6 +145,95 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>Exemplo 2: criar um usuário com identidades de conta social e local
+
+Crie um novo usuário, com uma identidade de conta local, com um nome de logon, um endereço de email como logon e com uma identidade social. Esse exemplo é geralmente usado para cenários de migração em locatários de B2C.  
+
+>[!NOTE] 
+>Para as identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitado.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {  
+  "blockType": "request",   
+  "name": "create_user_from_users_identities"   
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/users
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "identities": [
+    {
+      "signInType": "userName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordProfile" : {
+    "password": "password-value"
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+
+---
+
+#### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta. 
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "displayName": "John Smith",
+  "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "identities": [
+    {
+      "signInType": "userName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+## <a name="see-also"></a>Confira também
+
+- [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0f6c8ba4e08112860b74a0ed932fc11895ed13dd
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cb5dfc24011c07724b7116d2edb50397ddc74a2c
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870894"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216893"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1014,8 +1014,8 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo (visualização)|Permite que o aplicativo leia os detalhes da reunião online associada ao VTC em sua organização, sem um usuário conectado.|Sim|
-
+|_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo |Permite que o aplicativo leia os detalhes da reunião online associada ao VTC em sua organização, sem um usuário conectado.|Sim|
+|_OnlineMeetings.ReadWrite.All_|Ler detalhes de Reunião Online do aplicativo (preteridos)|**Preterido. Não use.** Permite que um aplicativo crie e leia as reuniões online sem um usuário conectado.|Sim|
 <br/>
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -1168,8 +1168,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Place.Read.All_ |Permite que o aplicativo leia os locais da empresa (salas de conferência e listas de salas) que foram configurados pelo locatário no Exchange Online. |Sim | Não |
-| _Place.ReadWrite.All_ |Permite que o aplicativo leia e grave os locais da empresa (salas de conferência e listas de salas) que foram configurados pelo locatário no Exchange Online. |Sim | Não |
+| _Place.Read.All_ |   Ler todos os locais da empresa | Permite que o aplicativo leia os locais da empresa (salas de conferência e listas de salas) que foram configurados pelo locatário no Exchange Online. |Sim | Não |
+| _Place.ReadWrite.All_ |   Ler e gravar todos os locais da empresa | Permite que o aplicativo leia e grave os locais da empresa (salas de conferência e listas de salas) que foram configurados pelo locatário no Exchange Online. |Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
