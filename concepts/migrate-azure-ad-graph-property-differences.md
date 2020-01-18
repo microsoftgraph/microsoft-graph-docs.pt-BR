@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67f911224b48bf3b4b630336f0fc8184f64790f4
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 2294956bd24a6fc984032b68ab1d2a7298a87e74
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656519"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233946"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -30,7 +30,6 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br>propriedade|Comentários|
 |---|---|---|
 | **appRoleAssignments** | versão &nbsp; - &nbsp; beta **appRoleAssignments** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **creationType** | versão &nbsp; - &nbsp; beta _ainda não disponível_ <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_| |
 | **deletedTimestamp**| versão &nbsp; - &nbsp; beta **deleteddatetime à** <br> v 1.0 &nbsp; - &nbsp; **deleteddatetime à** | |
 | **dirSyncEnabled** | versão &nbsp; - &nbsp;beta **onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **facsimileTelephoneNumber** | versão &nbsp; - &nbsp; beta **fax** <br> v 1.0 &nbsp; - &nbsp; **fax** | |
@@ -41,10 +40,10 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **oAuth2PermissionGrants** | versão &nbsp; - &nbsp; beta **oAuth2PermissionGrants** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ ||
 | **provisioningErrors** | versão &nbsp; - &nbsp; beta _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | versão&nbsp;-&nbsp;beta**signinSessionsValidFromDateTime**<br>v 1.0&nbsp;-&nbsp;_ainda não está disponível_ | |
-| **signinNames** | &nbsp; - &nbsp; **identidades beta/signInType** <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | Essa propriedade agora é parte do recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-beta) .|
+| **signinNames** | &nbsp; - &nbsp; **identidades beta/signInType** <br> v 1.0 &nbsp; - &nbsp; **Identities/signInType** | Essa propriedade agora é parte do recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) .|
 | **telephoneNumber** | versão &nbsp; - &nbsp; beta **businessPhones** <br> v 1.0 &nbsp; - &nbsp; **businessPhones** | |
 | **thumbnailPhoto** | &nbsp; - &nbsp; **foto**beta, fotos <br> &nbsp; - &nbsp; **foto**v 1.0, fotos | A foto de miniatura do Azure AD não está disponível por meio do Microsoft Graph.  Em vez disso, use a [API de foto](/graph/api/resources/profilephoto?view=graph-rest-1.0) . |
-| **useridentities** | &nbsp; - &nbsp; **identidades** beta <br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **useridentities** | &nbsp; - &nbsp; **identidades** beta <br> &nbsp; - &nbsp; **identidades** v 1.0 | Confira o tipo de recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) para obter mais detalhes.|
 | **userState** | versão &nbsp; - &nbsp; beta **externalUserState** <br> v 1.0 &nbsp; - &nbsp; **externalUserState** | |
 | **userStateChangedOn** | versão&nbsp;-&nbsp;beta**externalUserStateChangeDateTime**<br>v 1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
 
@@ -155,7 +154,7 @@ O recurso directoryObjectReference do Azure AD Graph foi renomeado para director
 
 ## <a name="policy-property-differences"></a>Diferenças de propriedade de política
 
-Atualmente, o recurso de política no Microsoft Graph (disponível apenas na visualização) é muito semelhante ao Azure AD Graph.  No entanto, ele mudará para que haja tipos de política nomeados (como tokenIssuancePolicy ou tokenLifetimePolicy), em vez de um tipo de recurso de política genérico.
+No Microsoft Graph, há tipos de política nomeados (como tokenIssuancePolicy ou tokenLifetimePolicy), em vez de um tipo de recurso de política genérico. Mais detalhes estão disponíveis na [visão geral da política](/graph/api/resources/policy-overview?view=graph-rest-beta). As políticas ainda não estão disponíveis na v 1.0.
 
 ## <a name="serviceendpoint-property-differences"></a>Diferenças de Propriedade ServiceEndpoint
 
@@ -166,7 +165,7 @@ O recurso ServiceEndpoint do Azure AD Graph é renomeado como ponto de extremida
 | **função** | &nbsp;-&nbsp;**recurso** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **serviceId** | &nbsp;-&nbsp;**provedor** de versão beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **serviceName** | &nbsp;-&nbsp;**ProviderName** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
-| **Identificação** | versão&nbsp;-&nbsp;beta**providerResourceId**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **resourceId** | versão&nbsp;-&nbsp;beta**providerResourceId**<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 | **URI** | &nbsp;-&nbsp;**URI** beta<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 
 ## <a name="serviceprincipal-property-differences"></a>Diferenças de propriedade de servicePrincipalName

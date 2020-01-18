@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API do Azure Active Directory (
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bc48be3712b0d3b03e9799559aac4d6ae812b5d0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 884802fafcccf4408b84da96f6c4f94818e31b16
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422174"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234037"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Migrar o .NET Client library use para o Microsoft Graph
 
@@ -80,8 +80,8 @@ As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para ad
     signedInUser = (User)await client.Me.Request().GetAsync();
     ```
 
-    [!NOTE]
-    A biblioteca de cliente do Azure AD Graph oferece suporte à sintaxe de consulta baseada em LINQ. No entanto, a biblioteca de cliente do Microsoft Graph não.  Consequentemente, você precisará converter as consultas relevantes para uma expressão mais RESTful.  
+    >[!NOTE]
+    >A biblioteca de cliente do Azure AD Graph oferece suporte à sintaxe de consulta baseada em LINQ. No entanto, a biblioteca de cliente do Microsoft Graph não.  Consequentemente, você precisará converter as consultas relevantes para uma expressão mais RESTful.  
 
     Para fazer isso, altere:
 

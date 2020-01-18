@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API do Azure Active Directory (
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 348bc7632c2e2e158d41bb1cc2da9fa3ea755ca6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e9a817e7fbc056994d98fa32ec945d8e9c2deda5
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630227"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234051"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Migrar aplicativos do Azure AD Graph para o Microsoft Graph
 
@@ -28,7 +28,7 @@ Além disso, o Microsoft Graph oferece suporte a vários novos conjuntos de jogo
 - Recursos de segurança como:
   - [Eventos de risco de identidade](/graph/api/resources/identityriskevent?view=graph-rest-beta)
   - [Usuários de risco](/graph/api/resources/riskyuser?view=graph-rest-beta)
-- [Bibliotecas e exemplos de cliente](/graph/) disponíveis em muito mais plataformas e idiomas
+- [Bibliotecas e exemplos de cliente](/graph/) disponíveis em muitas plataformas e outros idiomas. Os SDKs do Microsoft Graph fornecem uma interface detectável para acessar facilmente seus dados ao lidar com a aquisição de token de forma transparente, tentar novamente o tratamento devido a erros e limitação, tratamento de redirecionamento seguro e serialização e desserialização de modelo.
 
 O Microsoft Graph oferece acesso a muitos outros serviços do que apenas ao Azure Active Directory. Também é o [gateway da API para os serviços do Microsoft 365](/graph/).
 

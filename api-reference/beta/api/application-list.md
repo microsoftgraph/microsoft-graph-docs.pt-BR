@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b74d19cad91fe7a555b58c7d876d09f31862aa6
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 45bd17b5f855db16d8e3716d7df8cae5b35c41eb
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936458"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233953"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -40,7 +40,6 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório.  |
-| Content-type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

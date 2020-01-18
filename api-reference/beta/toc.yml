@@ -286,7 +286,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Email
+            - name: Correio
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -390,7 +390,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Teamwork
+            - name: Trabalho em equipe
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -8912,25 +8912,67 @@
                   items:
                     - name: Obter objetos de membros
                       href: api/orgcontact-getmemberobjects.md
-            - name: Políticas
-              href: resources/policy.md
+            - name: Política
+              href: resources/policy-overview.md
               items:
-                - name: Listar políticas
-                  href: api/policy-list.md
-                - name: Criar uma política
-                  href: api/policy-post.md
-                - name: Obter política
-                  href: api/policy-get.md
-                - name: Atualizar política
-                  href: api/policy-update.md
-                - name: Excluir política
-                  href: api/policy-delete.md
-                - name: Atribuir política
-                  href: api/policy-assign.md
-                - name: Listar políticas atribuídas
-                  href: api/policy-list-assigned.md
-                - name: Listar aplicadas ao aplicativo
-                  href: api/policy-list-appliesto.md
+                - name: Política de tempo limite baseada em atividade
+                  href: resources/activitybasedtimeoutpolicy.md
+                  items:
+                    - name: Criar
+                      href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                    - name: Listar
+                      href: api/activitybasedtimeoutpolicy-list.md
+                    - name: Obter
+                      href: api/activitybasedtimeoutpolicy-get.md
+                    - name: Atualizar
+                      href: api/activitybasedtimeoutpolicy-update.md
+                    - name: Excluir
+                      href: api/activitybasedtimeoutpolicy-delete.md
+                - name: Política de mapeamento de declarações
+                  href: resources/claimsmappingpolicy.md
+                  items:
+                    - name: Criar
+                      href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                    - name: Listar
+                      href: api/claimsmappingpolicy-list.md
+                    - name: Obter
+                      href: api/claimsmappingpolicy-get.md
+                    - name: Atualizar
+                      href: api/claimsmappingpolicy-update.md
+                    - name: Excluir
+                      href: api/claimsmappingpolicy-delete.md
+                    - name: Listar aplicadas ao aplicativo
+                      href: api/claimsmappingpolicy-list-appliesto.md
+                - name: Política de descoberta de realm inicial
+                  href: resources/homerealmdiscoverypolicy.md
+                  items:
+                    - name: Criar
+                      href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                    - name: Listar
+                      href: api/homerealmdiscoverypolicy-list.md
+                    - name: Obter
+                      href: api/homerealmdiscoverypolicy-get.md
+                    - name: Atualizar
+                      href: api/homerealmdiscoverypolicy-update.md
+                    - name: Excluir
+                      href: api/homerealmdiscoverypolicy-delete.md
+                    - name: Listar aplicadas ao aplicativo
+                      href: api/homerealmdiscoverypolicy-list-appliesto.md
+                - name: Política do tempo de vida do token
+                  href: resources/tokenlifetimepolicy.md
+                  items:
+                    - name: Criar
+                      href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                    - name: Listar
+                      href: api/tokenlifetimepolicy-list.md
+                    - name: Obter
+                      href: api/tokenlifetimepolicy-get.md
+                    - name: Atualizar
+                      href: api/tokenlifetimepolicy-update.md
+                    - name: Excluir
+                      href: api/tokenlifetimepolicy-delete.md
+                    - name: Listar aplicadas ao aplicativo
+                      href: api/tokenlifetimepolicy-list-appliesto.md
             - name: Privileged Identity Management
               items:
                 - name: Privileged Identity Management
@@ -9007,7 +9049,7 @@
                     - name: Recursos gerenciados
                       href: resources/governanceresource.md
                       items:
-                        - name: Listar
+                        - name: Lista
                           href: api/governanceresource-list.md
                         - name: Obter
                           href: api/governanceresource-get.md
@@ -9221,7 +9263,7 @@
                   href: api/identityuserflow-get.md
                 - name: Excluir
                   href: api/identityuserflow-delete.md
-        - name: Email
+        - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -9400,7 +9442,7 @@
               items:
                 - name: Listar blocos de anotações
                   href: api/onenote-list-notebooks.md
-                - name: Criar blocos de anotações
+                - name: Criar bloco de anotações
                   href: api/onenote-post-notebooks.md
                 - name: Listar seções
                   href: api/onenote-list-sections.md
@@ -9492,7 +9534,7 @@
               items:
                 - name: Criar e enviar uma notificação
                   href: api/user-post-notifications.md
-        - name: Inteligência de pessoas e no local de trabalho
+        - name: Inteligência de pessoas e local de trabalho
           items:
             - name: Visão geral
               href: resources/social-overview.md
@@ -10320,7 +10362,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Teamwork
+        - name: Trabalho em equipe
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
@@ -10808,7 +10850,7 @@
             - name: Comentários da pasta de trabalho
               href: resources/workbookcomment.md
               items:
-                - name: Listar
+                - name: Lista
                   href: api/workbook-list-comments.md
                 - name: Obter
                   href: api/workbookcomment-get.md
