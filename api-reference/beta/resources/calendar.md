@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 37e3bd6f4772e9df110af005f8a5e469a06a9fba
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 23b15d39d7f4ce7b0f0fe56bbf6c293c3f7854e3
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939429"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216691"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -54,7 +54,7 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |hexColor|Cadeia de Caracteres|A cor do calendário, expressa em um código de cores hexadecimais de três valores hexadecimais, cada um deles variando de 00 a FF e representando os componentes vermelho, verde ou azul do espaço de cor RGB. Se o usuário nunca tiver definido explicitamente uma cor para o calendário, esta propriedade estará vazia. |
-|id|String|O identificador exclusivo do grupo. Somente leitura.|
+|id|String|O identificador exclusivo do calendário. Somente leitura.|
 |isDefaultCalendar|Booliano|Verdadeiro se este for o calendário padrão em que novos eventos são criados; caso contrário, será falso.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
 |isShared |Booliano |True se o usuário tiver compartilhado o calendário com outros usuários. Caso contrário, será false. Como apenas o usuário que criou o calendário pode compartilhá-lo, ** isShared ** e ** isSharedWithMe ** não podem ser verdadeiros para o mesmo usuário. |
