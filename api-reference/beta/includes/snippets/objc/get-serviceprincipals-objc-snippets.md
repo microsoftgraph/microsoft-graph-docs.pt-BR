@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 84c000df6935b0382fc48b5d9fd171a8c0c7da47
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: bfd78e4c05df3acbcd9771b59bcc7675492af458
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35717739"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41494997"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *servicePrincipalList = [[NSMutableArray alloc] init];
-        servicePrincipalList = [jsonFinal valueForKey:@"value"];
-        MSGraphServicePrincipal *servicePrincipal = [[MSGraphServicePrincipal alloc] initWithDictionary:[servicePrincipalList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphServicePrincipal *servicePrincipal = [[MSGraphServicePrincipal alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

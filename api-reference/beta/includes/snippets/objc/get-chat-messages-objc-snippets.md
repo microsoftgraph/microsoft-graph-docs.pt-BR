@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: eaea6faad376e086f7241980e89c37c34b56c4bd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 6c9e4600f342672a4203f94b60fc02b12b70ddb7
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35707751"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41493310"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *chatMessageList = [[NSMutableArray alloc] init];
-        chatMessageList = [jsonFinal valueForKey:@"value"];
-        MSGraphChatMessage *chatMessage = [[MSGraphChatMessage alloc] initWithDictionary:[chatMessageList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphChatMessage *chatMessage = [[MSGraphChatMessage alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

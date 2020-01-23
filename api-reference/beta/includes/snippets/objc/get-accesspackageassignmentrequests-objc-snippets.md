@@ -1,7 +1,12 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 9b6cdb919028ca454c9c1a0757a68d100aae0c8a
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41493809"
 ---
-
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
@@ -11,13 +16,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
-	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *accessPackageAssignmentRequestList = [[NSMutableArray alloc] init];
-		accessPackageAssignmentRequestList = [jsonFinal valueForKey:@"value"];
-		MSGraphAccessPackageAssignmentRequest *accessPackageAssignmentRequest = [[MSGraphAccessPackageAssignmentRequest alloc] initWithDictionary:[accessPackageAssignmentRequestList objectAtIndex: 0] error:&nserror];
+        NSError *jsonError = nil;
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphAccessPackageAssignmentRequest *accessPackageAssignmentRequest = [[MSGraphAccessPackageAssignmentRequest alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

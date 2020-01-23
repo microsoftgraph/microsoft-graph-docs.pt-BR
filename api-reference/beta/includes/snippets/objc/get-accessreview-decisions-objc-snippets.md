@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 865ff0c77f7200af6b0f522bb57fc5a7e56fc361
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 474c90c509acf8d4a4ab674560b9021c15ce3433
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35710934"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41495579"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *accessReviewDecisionList = [[NSMutableArray alloc] init];
-        accessReviewDecisionList = [jsonFinal valueForKey:@"value"];
-        MSGraphAccessReviewDecision *accessReviewDecision = [[MSGraphAccessReviewDecision alloc] initWithDictionary:[accessReviewDecisionList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphAccessReviewDecision *accessReviewDecision = [[MSGraphAccessReviewDecision alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

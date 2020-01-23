@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6b7e175c3baab7a8c1b5b3df09cf4e38e409ebe3
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 4ea45fe8890a274883ce6f342935f4fa6b60eb4c
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35726302"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41493338"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *yammerDeviceUsageUserCountsList = [[NSMutableArray alloc] init];
-        yammerDeviceUsageUserCountsList = [jsonFinal valueForKey:@"value"];
-        MSGraphYammerDeviceUsageUserCounts *yammerDeviceUsageUserCounts = [[MSGraphYammerDeviceUsageUserCounts alloc] initWithDictionary:[yammerDeviceUsageUserCountsList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphYammerDeviceUsageUserCounts *yammerDeviceUsageUserCounts = [[MSGraphYammerDeviceUsageUserCounts alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

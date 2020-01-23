@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d35543f90b17e16fa0311ee35dee91ab23e2f091
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d2b2000b2a4bfc9609f464028cacf141da0ef358
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718680"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41495272"
 ---
 ```objc
 
@@ -19,10 +19,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
         NSError *jsonError = nil;
-        NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-        NSMutableArray *certificateBasedAuthConfigurationList = [[NSMutableArray alloc] init];
-        certificateBasedAuthConfigurationList = [jsonFinal valueForKey:@"value"];
-        MSGraphCertificateBasedAuthConfiguration *certificateBasedAuthConfiguration = [[MSGraphCertificateBasedAuthConfiguration alloc] initWithDictionary:[certificateBasedAuthConfigurationList objectAtIndex: 0] error:&nserror];
+        MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+        MSGraphCertificateBasedAuthConfiguration *certificateBasedAuthConfiguration = [[MSGraphCertificateBasedAuthConfiguration alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
