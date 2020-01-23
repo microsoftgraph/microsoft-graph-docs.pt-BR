@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a0a90c6e68f1cdc8e8dde7e6bc7a173b844b11c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08a06892892402bee063b532698beeceffd87720
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013518"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41475592"
 ---
 # <a name="accessreviewdecision-resource-type"></a>tipo de recurso accessReviewDecision
 
@@ -21,7 +21,7 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 
 ## <a name="methods"></a>Métodos
 
-Nenhum.  Os objetos desse tipo são criados automaticamente pelo recurso quando uma revisão do Access Inicializa e não pode ser excluída.  Eles podem ser recuperados de uma revisão de acesso usando as relações de [decisões](../api/accessreview-listdecisions.md) e mydecisions. [](../api/accessreview-listmydecisions.md)
+Nenhum.  Os objetos desse tipo são criados automaticamente pelo recurso quando uma revisão do Access Inicializa e não pode ser excluída.  Eles podem ser recuperados de uma revisão de acesso usando as relações de [decisões](../api/accessreview-listdecisions.md) e [mydecisions](../api/accessreview-listmydecisions.md) .
 
 ## <a name="properties"></a>Propriedades
 
@@ -31,11 +31,11 @@ Esta tabela ilustra as propriedades básicas de objetos desse tipo.
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
 | `id`                            |`String`                      | A identificação da decisão dentro da revisão do Access.                                                                                     |
 | `accessReviewId`                |`String`                      | A ID gerada pelo recurso da revisão do Access.                                                                                       |
-| `reviewedBy`                    |[userIdentity](useridentity.md)| A identidade do revisor.                                                                                       |
+| `reviewedBy`                    |[userIdentity](useridentity.md)| A identidade do revisor. Se a recomendação tiver sido usada como revisão, o userPrincipalName estará vazio.                                                                                      |
 | `reviewedDate`                  |`DateTimeOffset`              | A data e a hora em que a revisão mais recente desse direito de acesso foi fornecida.                                                                         |
-| `reviewResult`                  |`String`                      | O resultado da revisão.                                                                                    |
+| `reviewResult`                  |`String`                      | O resultado da revisão, um `NotReviewed`de, `Deny` `DontKnow` ou. `Approve`                                                                                    |
 | `justification`                 |`String`                      | A justificativa de negócios do revisor, se fornecido.                                                                         |
-| `appliedBy`                     |[userIdentity](useridentity.md)| Quando a revisão for concluída, se os resultados forem aplicados manualmente, a identidade do usuário que aplicou a decisão.                                                           |
+| `appliedBy`                     |[userIdentity](useridentity.md)| Quando a revisão for concluída, se os resultados forem aplicados manualmente, a identidade do usuário que aplicou a decisão. Se a revisão foi aplicada automaticamente, o userPrincipalName estará vazio.                                                          |
 | `appliedDateTime`               |`DateTimeOffset`              | A data e a hora em que a decisão de revisão foi aplicada.                                                          |
 | `applyResult`                   |`String`                      | O resultado da aplicação da decisão, um de `NotApplied`, `Success` `Failed` `NotFound` ou `NotSupported`.                      |
 | `accessRecommendation`          |`String`                      | A recomendação gerada pelo recurso mostrada para o revisor, um `Approve` `Deny` ou. `NotAvailable` |
@@ -53,7 +53,7 @@ Além disso, as propriedades adicionais podem estar presentes dependendo do tipo
 
 ## <a name="relationships"></a>Relações
 
-Nenhum  Os objetos desse tipo podem ser recuperados de uma análise do Access usando as relações de [decisões](../api/accessreview-listdecisions.md) e mydecisions do objeto [accessReview](accessreview.md) . [](../api/accessreview-listmydecisions.md)
+Nenhum  Os objetos desse tipo podem ser recuperados de uma análise do Access usando as relações de [decisões](../api/accessreview-listdecisions.md) e [mydecisions](../api/accessreview-listmydecisions.md) do objeto [accessReview](accessreview.md) .
 
 ## <a name="see-also"></a>Confira também
 
