@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcional que voc�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: fc0bd9d650309159f60b5ad3dfaf618d58de3fc1
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: f5cee8933c13ea9f92ae14ae664e9c1492267ea1
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216886"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41251896"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -47,6 +47,15 @@ Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 | Nome                     | Descrição | Exemplo
 |:-------------------------|:------------|:---------|
 | [$skipToken](#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. (Algumas APIs usam `$skip` em vez disso.) | `/users?$skiptoken=X%274453707402000100000017...`|
+
+## <a name="other-odata-url-capabilities"></a>Outros recursos de URL OData
+
+Os seguintes recursos OData 4.0 são segmentos de URL, não parâmetros de consulta.
+
+| Nome                     | Descrição | Exemplo 
+|:-------------------------|:------------|:---------|
+| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Atualiza a associação de entidades a uma coleção. | `POST /groups/{id}/members/$ref` |
+| [$value](/graph/api/profilephoto-get) | Recupera ou atualiza o valor binário de um item. | `GET /me/photo/$value` |
 
 ## <a name="encoding-query-parameters"></a>Codificação de parâmetros da consulta
 
