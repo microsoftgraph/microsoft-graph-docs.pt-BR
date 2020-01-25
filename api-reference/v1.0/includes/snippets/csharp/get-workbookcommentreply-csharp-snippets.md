@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2432c7f0fba4d7b1741161e3402fac86b1d00b11
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: 8ee719e406a47a4ee4d527122220386bdf802b4b
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838988"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41497182"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookCommentReply = await graphClient.Drive.Root.Workbook.Comments["{id}"].Replies["{id}"]
+var workbookCommentReply = await graphClient.Drive.Items["{id}"].Workbook.Comments["{id}"].Replies["{id}"]
     .Request()
     .GetAsync();
 
