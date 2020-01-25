@@ -2,15 +2,15 @@
 title: Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 description: 'Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. '
 ms.date: 4/9/2019
-author: simonhult
+author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 55d91f72b561b5e476322b4aee051979005c577a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 402c3810d3f772f8bf6fa89b265bce13575217cb
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793007"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41477106"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
@@ -475,7 +475,12 @@ Content-type: application/json
   ]
 }
 ```
+### <a name="types-of-results-included"></a>Tipos de resultados incluídos
+Por padrão, o Microsoft Graph mostra apenas os resultados da caixa de correio, que não incluem os resultados de diretório/organização. Para recuperar os resultados do diretório, especifique um cabeçalho HTTP, como mostrado.
 
+```
+"X-PeopleQuery-QuerySources: Mailbox,Directory”
+```
 ### <a name="select-the-fields-to-return"></a>Selecione os campos para retornar
 
 Você pode limitar a quantidade de dados retornados do servidor usando o parâmetro *$select* para escolher um ou mais campos. O campo `@odata.id` sempre é retornado.
