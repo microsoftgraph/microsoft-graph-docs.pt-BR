@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 318e3df2d643011537c5d1d9597910fc6b045362
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d4b8bf73499bc2cca2a7497e57e3cce6c8cbe5b9
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007645"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559037"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
@@ -25,7 +25,7 @@ Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](
 |[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
 |[Obter guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
 |[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia em um canal.|
-|[Remover guia](../api/teamstab-delete.md) | Nenhum | Remover (desafixar) uma guia de um canal.|
+|[Excluir guia](../api/teamstab-delete.md) | Nenhum | Remover (desafixar) uma guia de um canal.|
 |[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualizar as propriedades da guia.|
 
 
@@ -33,9 +33,9 @@ Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|  id              |   cadeia de caracteres                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
+|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
 |  displayName            |   string                  |  Nome da guia.     |
-|  name            |   string                  |  Preterido Nome da guia.     |
+|  nome            |   string                  |  Preterido Nome da guia.     |
 |  teamsAppId           |   string             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação.     |
 |  sortOrderIndex  |   string                  |  Índice da ordem usada para classificar as guias.     |
 |  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância de guia. Somente leitura.     |

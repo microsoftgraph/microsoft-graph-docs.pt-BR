@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fbb3ba929289da43aaa2dc22bc8dce799c1b63f8
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 584e7016e74d7aeef8093af8e62e216a8f2870aa
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998620"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559051"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -36,12 +36,6 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |[Listar todas as equipes](/graph/teams-list-all-teams) | Coleção [group](group.md) | Liste todos os grupos que têm equipes. |
 |[Obter foto da equipe](../api/team-get-photo.md) | Dados Binários | Obter a foto (imagem) de uma equipe. |
 |[Atualizar foto da equipe](../api/team-update-photo.md) | Nenhum | Atualizar a foto (imagem) de uma equipe. |
-|[Publicar aplicativos para sua organização](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Crie aplicativos do Teams que apenas sua organização possa ver. |
-|[Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adiciona (instala) um aplicativo a uma equipe.|
-|[Adicionar uma guia ao canal](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adiciona (instala) uma guia ao canal de uma equipe.|
-|[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Obter mensagens em um canal](../api/channel-list-messages.md) |
-|[Criar uma chatMessage em um canal](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
-|[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal. |
 
 ## <a name="properties"></a>Propriedades
 

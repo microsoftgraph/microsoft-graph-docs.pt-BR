@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 811dd2d8739cb77c9b12db9226428e0c5901232d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 99a40b7b8f4446385632c3274924c733a20da24e
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718244"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558771"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits
 
 Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [parâmetros de consulta OData](/graph/query_parameters).
 
-|Nome     |Descrição                            |Exemplo|
+|Parâmetro     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filtra os resultados (linhas). |`/auditLogs/directoryAudits?$filter=createdDateTime le 2018-01-24`<br>`/auditLogs/directoryAudits?$filter=targetResources/any(x: startswith(x/displayName, 'def'))` |
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/directoryAudits?$top=1`|
@@ -49,7 +49,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 
 ### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte pelo parâmetro $filter
 
-|Nome do Atributo |Operadores com suporte|
+|Atributo        |Operadores com suporte|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|
 |activityDateTime| eq, ge, le|
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudits-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4639426918198622897e91fc945d107be0a26855
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0678c741172d34d6558aa56724378d18811432ee
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730173"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558778"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
@@ -112,11 +112,11 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 Verifique se aplicou a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.
 
-|Nome|Valor|Descrição|
+|Parâmetro|Descrição|Exemplo|
 |:---------------|:--------|:-------|
-|$filter|string|Retorna uma extensão com sua **id** correspondentes ao valor do parâmetro `extensionId`.|
-|$filter com o operador **any**|string|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|
-|$expand|string|Expande uma instância de recurso para incluir uma extensão. |
+|$filter|Retorna uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|[Solicitação 3](#request-3)|
+|$filter com o operador **any**|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|[Solicitação 5](#request-5)|
+|$expand|Expande uma instância de recurso para incluir uma extensão. |[Solicitação 3](#request-3) e [solicitação 5](#request-5)|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |

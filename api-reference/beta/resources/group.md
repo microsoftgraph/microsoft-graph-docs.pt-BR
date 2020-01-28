@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 926f0a26a8d534bef199ddff72a07af4e455002d
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 1f9be33d5a4932951ca2a12a2a0bbad01a9f5b2c
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672842"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559023"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -37,6 +37,7 @@ Esse recurso permite:
 |[Obter grupo](../api/group-get.md) | [grupo](group.md) |Ler as propriedades e as relações do objeto do grupo.|
 |[Atualizar grupo](../api/group-update.md) | Nenhum |Atualizar as propriedades de um objeto group. |
 |[Excluir grupo](../api/group-delete.md) | Nenhum |Excluir um objeto group. |
+|[Listar grupos](../api/group-list.md) |[group](group.md)|Ler as propriedades e as relações de todos os objetos do grupo.|
 |[delta](../api/group-delta.md)|Coleção group| Obter alterações incrementais para grupos. |
 |[Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) |Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)| Listar políticas de ciclo de vida de grupo. |
 |[Listar proprietários](../api/group-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obter os proprietários do grupo da propriedade de navegação **owners**.|

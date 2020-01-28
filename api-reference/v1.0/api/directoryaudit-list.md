@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7733cd1a29640331ecd4ab766bc3563fa29600b7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 91f4c33f7f44fc3d0254fc799c2c5b9e756b7386
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869954"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558785"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -38,7 +38,7 @@ GET /auditLogs/directoryaudits
 
 Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
 
-| Nome                                                       | Descrição                                                                   | Exemplo                                                                     |
+| Parâmetro                                                       | Descrição                                                                   | Exemplo                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
 | [\$Filtre](/graph/query_parameters#filter-parameter)       | Filtra os resultados (linhas).                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
 | [\$Início](/graph/query_parameters#top-parameter)             | Define o tamanho de página de resultados.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
@@ -46,7 +46,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 
 ### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte \$no parâmetro Filter
 
-| Nome do atributo                                               | Operadores com suporte |
+| Atributo                                                    | Operadores com suporte |
 | :----------------------------------------------------------- | :------------------ |
 | activityDisplayName                                          | eq, startswith      |
 | activityDateTime                                             | eq, ge, le          |

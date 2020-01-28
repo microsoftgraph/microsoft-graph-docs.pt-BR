@@ -898,7 +898,7 @@
                 - name: Grupo de roteamento de áudio
                   href: resources/audioroutinggroup.md
                   items:
-                    - name: Criar
+                    - name: Create
                       href: api/call-post-audioroutinggroups.md
                     - name: Obter
                       href: api/audioroutinggroup-get.md
@@ -909,7 +909,7 @@
             - name: Reunião online
               href: resources/onlinemeeting.md
               items:
-                - name: Criar
+                - name: Create
                   href: api/application-post-onlinemeetings.md
                 - name: Obter
                   href: api/onlinemeeting-get.md
@@ -966,7 +966,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list.md
-                - name: Criar
+                - name: Create
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: Obter
                   href: api/bookingbusiness-get.md
@@ -1007,7 +1007,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-customers.md
-                - name: Criar
+                - name: Create
                   href: api/bookingbusiness-post-customers.md
                 - name: Obter
                   href: api/bookingcustomer-get.md
@@ -1020,7 +1020,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-services.md
-                - name: Criar
+                - name: Create
                   href: api/bookingbusiness-post-services.md
                 - name: Obter
                   href: api/bookingservice-get.md
@@ -1033,7 +1033,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-staffmembers.md
-                - name: Criar
+                - name: Create
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: Obter
                   href: api/bookingstaffmember-get.md
@@ -8435,7 +8435,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: Listar
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: Criar
+                    - name: Create
                       href: api/conditionalaccessroot-post-policies.md
                     - name: Obter
                       href: api/conditionalaccesspolicy-get.md
@@ -8461,7 +8461,7 @@
                           href: resources/countrynamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Criar
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/countrynamedlocation-get.md
@@ -8475,7 +8475,7 @@
                           href: resources/ipnamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Criar
+                        - name: Create
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/ipnamedlocation-get.md
@@ -8677,14 +8677,14 @@
                   items:
                     - name: Listar
                       href: api/accesspackageresourcerequest-list.md
-                    - name: Criar
+                    - name: Create
                       href: api/accesspackageresourcerequest-post.md
                 - name: Escopo de função de recurso de pacote de acesso
                   href: resources/accesspackageresourcerequest.md
                   items:
                     - name: Listar
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: Criar
+                    - name: Create
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: Política de distribuição de recursos
               href: resources/featurerolloutpolicy.md
@@ -8693,7 +8693,7 @@
                   href: api/directory-list-featurerolloutpolicies.md
                 - name: Obter
                   href: api/featurerolloutpolicy-get.md
-                - name: Criar
+                - name: Create
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Atualizar
                   href: api/featurerolloutpolicy-update.md
@@ -8803,7 +8803,7 @@
                       href: resources/urlassessmentrequest.md
                     - name: Listar
                       href: api/informationprotection-list-threatassessmentrequests.md
-                    - name: Criar
+                    - name: Create
                       href: api/informationprotection-post-threatassessmentrequests.md
                     - name: Obter
                       href: api/threatassessmentrequest-get.md
@@ -8842,7 +8842,7 @@
                       href: api/onpremisesagentgroup-list.md
                     - name: Obter
                       href: api/onpremisesagentgroup-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/onpremisesagentgroup-post.md
                     - name: Atualizar
                       href: api/onpremisesagentgroup-update.md
@@ -8862,7 +8862,7 @@
                       href: api/publishedresource-list.md
                     - name: Obter
                       href: api/publishedresource-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/publishedresource-post.md
                     - name: Atualizar
                       href: api/publishedresource-update.md
@@ -10378,6 +10378,8 @@
                   href: api/team-get.md
                 - name: Atualizar equipe
                   href: api/team-update.md
+                - name: Excluir equipe
+                  href: api/group-delete.md
                 - name: Arquivar equipe
                   href: api/team-archive.md
                 - name: Desarquivar equipe
@@ -10475,14 +10477,14 @@
                   href: api/chat-list.md
                 - name: Obter bate-papo
                   href: api/chat-get.md
+                - name: Listar membros de chat
+                  href: api/conversationmember-list.md
+                - name: Obter membro de chat
+                  href: api/conversationmember-get.md
                 - name: Listar mensagens em um bate-papo
                   href: api/chatmessage-list.md
                 - name: Receba uma mensagem no bate-papo
                   href: api/chatmessage-get.md
-                - name: Obter Membros no chat
-                  href: api/conversationmember-list.md
-                - name: Obter um membro no chat
-                  href: api/conversationmember-get.md
             - name: Mensagem de chat
               href: resources/chatmessage.md
               items:
@@ -10521,7 +10523,7 @@
                   href: api/user-delete-teamsappinstallation.md
                 - name: Atualização do aplicativo instalado para o usuário
                   href: api/user-upgrade-teamsappinstallation.md
-            - name: Guia
+            - name: Tab
               href: resources/teamstab.md
               items:
                 - name: Listar guias
