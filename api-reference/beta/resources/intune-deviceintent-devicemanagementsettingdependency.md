@@ -5,25 +5,25 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 100a6d441e161c353425f2d890e9468ebb32f3e8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c8f75e4590336f94520c1dc43b437a36048a230c
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364660"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636732"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>tipo de recurso deviceManagementSettingDependency
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Informações de dependência de uma configuração
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|DefinitionId|String|A ID da definição de configuração da configuração dependente|
+|DefinitionId|Cadeia de caracteres|A ID da definição de configuração da configuração dependente|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor da configuração de dependência|
 
 ## <a name="relationships"></a>Relações
@@ -42,7 +42,10 @@ Veja a seguir uma representação JSON do recurso.
   "definitionId": "String",
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "String"
+      ]
     }
   ]
 }

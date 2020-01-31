@@ -8803,7 +8803,7 @@
                       href: resources/urlassessmentrequest.md
                     - name: Listar
                       href: api/informationprotection-list-threatassessmentrequests.md
-                    - name: Create
+                    - name: Criar
                       href: api/informationprotection-post-threatassessmentrequests.md
                     - name: Obter
                       href: api/threatassessmentrequest-get.md
@@ -8913,66 +8913,24 @@
                     - name: Obter objetos de membros
                       href: api/orgcontact-getmemberobjects.md
             - name: Política
-              href: resources/policy-overview.md
+              href: resources/policy.md
               items:
-                - name: Política de tempo limite baseada em atividade
-                  href: resources/activitybasedtimeoutpolicy.md
-                  items:
-                    - name: Criar
-                      href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
-                    - name: Listar
-                      href: api/activitybasedtimeoutpolicy-list.md
-                    - name: Obter
-                      href: api/activitybasedtimeoutpolicy-get.md
-                    - name: Atualizar
-                      href: api/activitybasedtimeoutpolicy-update.md
-                    - name: Excluir
-                      href: api/activitybasedtimeoutpolicy-delete.md
-                - name: Política de mapeamento de declarações
-                  href: resources/claimsmappingpolicy.md
-                  items:
-                    - name: Criar
-                      href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
-                    - name: Listar
-                      href: api/claimsmappingpolicy-list.md
-                    - name: Obter
-                      href: api/claimsmappingpolicy-get.md
-                    - name: Atualizar
-                      href: api/claimsmappingpolicy-update.md
-                    - name: Excluir
-                      href: api/claimsmappingpolicy-delete.md
-                    - name: Listar aplicadas ao aplicativo
-                      href: api/claimsmappingpolicy-list-appliesto.md
-                - name: Política de descoberta de realm inicial
-                  href: resources/homerealmdiscoverypolicy.md
-                  items:
-                    - name: Criar
-                      href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
-                    - name: Listar
-                      href: api/homerealmdiscoverypolicy-list.md
-                    - name: Obter
-                      href: api/homerealmdiscoverypolicy-get.md
-                    - name: Atualizar
-                      href: api/homerealmdiscoverypolicy-update.md
-                    - name: Excluir
-                      href: api/homerealmdiscoverypolicy-delete.md
-                    - name: Listar aplicadas ao aplicativo
-                      href: api/homerealmdiscoverypolicy-list-appliesto.md
-                - name: Política do tempo de vida do token
-                  href: resources/tokenlifetimepolicy.md
-                  items:
-                    - name: Criar
-                      href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
-                    - name: Listar
-                      href: api/tokenlifetimepolicy-list.md
-                    - name: Obter
-                      href: api/tokenlifetimepolicy-get.md
-                    - name: Atualizar
-                      href: api/tokenlifetimepolicy-update.md
-                    - name: Excluir
-                      href: api/tokenlifetimepolicy-delete.md
-                    - name: Listar aplicadas ao aplicativo
-                      href: api/tokenlifetimepolicy-list-appliesto.md
+                - name: Listar políticas
+                  href: api/policy-list.md
+                - name: Criar uma política
+                  href: api/policy-post.md
+                - name: Obter política
+                  href: api/policy-get.md
+                - name: Atualizar política
+                  href: api/policy-update.md
+                - name: Excluir política
+                  href: api/policy-delete.md
+                - name: Atribuir política
+                  href: api/policy-assign.md
+                - name: Listar políticas atribuídas
+                  href: api/policy-list-assigned.md
+                - name: Listar aplicadas ao aplicativo
+                  href: api/policy-list-appliesto.md
             - name: Privileged Identity Management
               items:
                 - name: Privileged Identity Management
@@ -9049,7 +9007,7 @@
                     - name: Recursos gerenciados
                       href: resources/governanceresource.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/governanceresource-list.md
                         - name: Obter
                           href: api/governanceresource-get.md
@@ -9442,7 +9400,7 @@
               items:
                 - name: Listar blocos de anotações
                   href: api/onenote-list-notebooks.md
-                - name: Criar bloco de anotações
+                - name: Criar blocos de anotações
                   href: api/onenote-post-notebooks.md
                 - name: Listar seções
                   href: api/onenote-list-sections.md
@@ -10852,7 +10810,7 @@
             - name: Comentários da pasta de trabalho
               href: resources/workbookcomment.md
               items:
-                - name: Lista
+                - name: Listar
                   href: api/workbook-list-comments.md
                 - name: Obter
                   href: api/workbookcomment-get.md

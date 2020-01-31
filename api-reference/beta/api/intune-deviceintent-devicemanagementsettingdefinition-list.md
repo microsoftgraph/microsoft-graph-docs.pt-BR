@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 236f8474d8d851739dd90a3b4dce8a4a0a1fe290
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d2ca002e7b2055bd1a0b5153b2b7162965e537a1
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945561"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635737"
 ---
 # <a name="list-devicemanagementsettingdefinitions"></a>Listar deviceManagementSettingDefinitions
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 1142
 
 {
   "value": [
@@ -77,13 +77,17 @@ Content-Length: 914
       "displayName": "Display Name value",
       "isTopLevel": true,
       "description": "Description value",
+      "placeholderText": "Placeholder Text value",
       "documentationUrl": "https://example.com/documentationUrl/",
       "keywords": [
         "Keywords value"
       ],
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "Supported Types value"
+          ]
         }
       ],
       "dependencies": [
@@ -92,7 +96,10 @@ Content-Length: 914
           "definitionId": "Definition Id value",
           "constraints": [
             {
-              "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+              "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+              "supportedTypes": [
+                "Supported Types value"
+              ]
             }
           ]
         }

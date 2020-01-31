@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 007b118334c57397c2ec5b66e9d7acfc9cb42775
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: e1b613dc9140e597dc9eb0c74448f227cf940ba5
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088270"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636823"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -25,6 +25,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
 - [Destino de atribuição de todos os usuários licenciados](intune-shared-alllicensedusersassignmenttarget.md)
 - [Proteção de aplicativo gerenciado Android](intune-shared-androidmanagedappprotection.md)
+- [Tipo de rotação da senha de recuperação do BitLocker](intune-shared-bitlockerrecoverypasswordrotationtype.md)
 - [Ação do portal da empresa](intune-shared-companyportalaction.md)
 - [Ação bloqueada do portal da empresa](intune-shared-companyportalblockedaction.md)
 - [Status de conformidade](intune-shared-compliancestatus.md)
@@ -56,9 +57,15 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Intervalo de IP](intune-shared-iprange.md)
 - [Intervalo de IPv4](intune-shared-ipv4range.md)
 - [Intervalo de IPv6](intune-shared-ipv6range.md)
+- [Par de valores booleanos principais](intune-shared-keybooleanvaluepair.md)
+- [Par principal de valor inteiro](intune-shared-keyintegervaluepair.md)
+- [Par chave real de valor](intune-shared-keyrealvaluepair.md)
+- [Par de valores de cadeia de caracteres de chave](intune-shared-keystringvaluepair.md)
+- [Par de valores digitados por chave](intune-shared-keytypedvaluepair.md)
 - [Par chave/valor](intune-shared-keyvaluepair.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-shared-macosvppappassignmentsettings.md)
 - [Tipo de proprietário do dispositivo gerenciado](intune-shared-manageddeviceownertype.md)
+- [Tipo de agente de gerenciamento](intune-shared-managementagenttype.md)
 - [Política de proteção de informações do Windows MDM](intune-shared-mdmwindowsinformationprotectionpolicy.md)
 - [Configurações de atribuição do aplicativo da Microsoft Store para Empresas](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [Conteúdo MIME](intune-shared-mimecontent.md)

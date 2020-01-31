@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f2615ce72d17d72949af65c27dba7f9bbf37e5ed
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: df5365746a37eb5d1cb26b564cb390f500407c5f
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216781"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578826"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -47,15 +47,18 @@ Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você 
 
 Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solicitação inicial. O Microsoft Graph codifica automaticamente o parâmetro especificado em `nextLink` ou `deltaLink` fornecidos na resposta. O aplicativo de chamada só precisa especificar os parâmetros de consulta desejados uma vez antecipados. O Microsoft Graph adiciona os parâmetros especificados automaticamente para todas as solicitações subsequentes.
 
-Observe o seguinte em relação aos parâmetros de consulta opcionais:
+Observe o suporte geral limitado dos seguintes parâmetros de consulta opcionais:
 
-- `$orderby` não tem suporte para consultas delta.
-     - Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta em sua lógica de mesclagem.
-- `$top` o não tem suporte para consultas delta, e o número de objetos em cada página pode variar dependendo do tipo de recurso e do tipo de alterações feitas no recurso.
+- `$orderby` 
+    
+    Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta em sua lógica de mesclagem.
+- `$top` 
+    
+    O número de objetos em cada página pode variar dependendo do tipo de recurso e do tipo de alterações feitas no recurso.
 
-Para usuários e grupos, as restrições a seguir aplicam-se sobre como usar alguns parâmetros de consulta:
+Para obter o recurso[mensagem](/graph/api/resources/message?view=graph-rest-1.0), consulte os detalhes do [suporte aos parâmetros de consulta em uma consulta delta](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages).
 
-Para usuários e grupos, existem restrições sobre como usar alguns parâmetros de consulta:
+Para os recursos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0), há restrições no uso de alguns parâmetros de consulta:
 
 - Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
 - O `$select` também tem suporte para `manager` e `members` propriedade de navegação para usuários e grupos, respectivamente. A seleção dessas propriedades permite controlar as alterações feitas no gerenciador de usuário e nas associações de grupo.
@@ -95,22 +98,23 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | **Coleção de recursos**                                        | **API**                                                                                                                                                                                |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Aplicativos (visualização)                                         | Função [delta](/graph/api/application-delta?view=graph-rest-beta) do recurso [application](/graph/api/resources/application?view=graph-rest-beta) (visualização)                     |
-| Classes (pré-visualização)                                              | função [delta](/graph/api/educationclass-delta?view=graph-rest-beta) do recurso [Class](/graph/api/resources/educationclass?view=graph-rest-beta) (visualização)                     |
+| Mensagens de chat em um canal (visualização)                            | função [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) do recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) |
+| Classes (pré-visualização)                                              | Função [delta](/graph/api/educationclass-delta?view=graph-rest-beta) do recurso [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) (visualização)                     |
 | Objetos de diretório (visualização)                                    | Função [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) do recurso [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) (visualização)        |
 | Funções de diretório                                                | Função [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) do recurso [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0)                           |
 | Itens de unidade\*                                                  | Função [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) do recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)                                       |
-| Usuários da educação (pré-visualização)                                      | Função [delta](/graph/api/educationuser-delta?view=graph-rest-beta) do recurso [usuário da Educação](/graph/api/resources/educationuser?view=graph-rest-beta) (visualização)             |
+| Usuários da educação (pré-visualização)                                      | Função [delta](/graph/api/educationuser-delta?view=graph-rest-beta) do recurso [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta) (visualização)             |
 | Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta?view=graph-rest-1.0) do recurso [evento](/graph/api/resources/event?view=graph-rest-1.0)                                                   |
 | Grupos                                                         | Função [delta](/graph/api/group-delta?view=graph-rest-1.0) do recurso [group](/graph/api/resources/group?view=graph-rest-1.0)                                                   |
 | Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) do recurso [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                     |
 | Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta?view=graph-rest-1.0) do recurso [mensagem](/graph/api/resources/message?view=graph-rest-1.0)                                              |
 | Pastas de contatos pessoais                                       | função [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) do recurso [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
-| Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0)                                             |
-| Escolas (pré-visualização)                                              | Função [delta](/graph/api/educationschool-delta?view=graph-rest-beta) do recurso [Escola](/graph/api/resources/educationschool?view=graph-rest-beta) (pré-visualização)                  |
+| Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0)    
+| Itens do Planner\*\* (pré-visualização)                                    | função [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (visualização)|                                         |
+| Escolas (pré-visualização)                                              | Função [delta](/graph/api/educationschool-delta?view=graph-rest-beta) do recurso [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta) (visualização)                  |
 | Entidades de serviço (visualização)                                   | Função [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (visualização)      |
 | Usuários                                                          | função [delta](/graph/api/user-delta?view=graph-rest-1.0) do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) |
-| Itens do Planner\*\* (pré-visualização)                                    | função [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (visualização)|
-| chatMessages em um canal (visualização)                            | função [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) do recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) |
+
 
 > \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas pequenas diferenças de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta?view=graph-rest-1.0).
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1485c429594967fd3c76fc27cb89e85c84cda92
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 26f29427dfe863ed1b89eaef5025655dc07430fd
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374355"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636592"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Restrições de registro específicas de plataformas
 
@@ -25,8 +25,9 @@ Restrições de registro específicas de plataformas
 |:---|:---|:---|
 |platformBlocked|Booliano|Bloqueia o registro da plataforma|
 |personalDeviceEnrollmentBlocked|Booliano|Bloqueia o registro de dispositivos de sua propriedade|
-|osMinimumVersion|String|Versão do SO mínimo compatível|
+|osMinimumVersion|Cadeia de caracteres|Versão do SO mínimo compatível|
 |osMaximumVersion|Cadeia de caracteres|Versão do SO máximo compatível|
+|blockedManufacturers|String collection|Conjunto de fabricantes bloqueados.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -44,7 +45,10 @@ Veja a seguir uma representação JSON do recurso.
   "platformBlocked": true,
   "personalDeviceEnrollmentBlocked": true,
   "osMinimumVersion": "String",
-  "osMaximumVersion": "String"
+  "osMaximumVersion": "String",
+  "blockedManufacturers": [
+    "String"
+  ]
 }
 ```
 

@@ -6,18 +6,18 @@ title: Listar quem tem acesso a um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 98d8f28c6f0cf516ca908b0de138417010bf8d53
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b5974057e04c0eed14b4cc01c0433db5318c524b
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868594"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635051"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar as permissões de compartilhamento efetivas de em um [driveItem](../resources/driveitem.md).
+Listar as permissões de compartilhamento efetivas em um [driveItem](../resources/driveitem.md).
 
 ## <a name="access-to-sharing-permissions"></a>Acessar permissões de compartilhamento
 

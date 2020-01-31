@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dfed244b4a09e3b3fad7a9473f9bae064a6aff6d
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3deb92ec056c63f493edd4785085885dcfc5ab5b
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949051"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635962"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>Get iosDeviceFeaturesConfiguration
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6110
+Content-Length: 7315
 
 {
   "value": {
@@ -217,6 +217,36 @@ Content-Length: 6110
       "value": "dmFsdWU="
     },
     "singleSignOnExtension": {
+      "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+      "realm": "Realm value",
+      "domains": [
+        "Domains value"
+      ],
+      "blockAutomaticLogin": true,
+      "cacheName": "Cache Name value",
+      "credentialBundleIdAccessControlList": [
+        "Credential Bundle Id Access Control List value"
+      ],
+      "domainRealms": [
+        "Domain Realms value"
+      ],
+      "isDefaultRealm": true,
+      "passwordBlockModification": true,
+      "passwordExpirationDays": 6,
+      "passwordExpirationNotificationDays": 2,
+      "userPrincipalName": "User Principal Name value",
+      "passwordRequireActiveDirectoryComplexity": true,
+      "passwordPreviousPasswordBlockCount": 2,
+      "passwordMinimumLength": 5,
+      "passwordMinimumAgeDays": 6,
+      "passwordRequirementsDescription": "Password Requirements Description value",
+      "requireUserPresence": true,
+      "activeDirectorySiteCode": "Active Directory Site Code value",
+      "passwordEnableLocalSync": true,
+      "blockActiveDirectorySiteAutoDiscovery": true,
+      "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+    },
+    "iosSingleSignOnExtension": {
       "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
       "realm": "Realm value",
       "domains": [

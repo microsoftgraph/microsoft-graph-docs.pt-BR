@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8031b38eb9e86641b4dd62388b067847edace97
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 39b62ea997c62537a419bd8090d330184af7f47c
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955726"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636585"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -39,6 +39,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
 - [Configuração automática de proxy global de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
+- [Perfil de certificado PFX importado do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
 - [Modo de repositório de execução do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Tipo de senha obrigatória do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Perfil de certificado SCEP do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -105,6 +106,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de controle do aplicativo App Locker](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Base de configuração de recursos do dispositivo Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 - [Formato de nome de assunto da Apple](intune-deviceconfig-applesubjectnameformat.md)
+- [Configuração do Apple VPN Always on](intune-deviceconfig-applevpnalwaysonconfiguration.md)
 - [Configuração de VPN da Apple](intune-deviceconfig-applevpnconfiguration.md)
 - [Tipo de conexão de VPN da Apple](intune-deviceconfig-applevpnconnectiontype.md)
 - [Tipo de compartilhamento de área de transferência do Application Guard Block](intune-deviceconfig-applicationguardblockclipboardsharingtype.md)
@@ -138,6 +140,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Ação de aplicativo potencialmente indesejada do Defender](intune-deviceconfig-defenderpotentiallyunwantedappaction.md)
 - [Solicitação de envio de exemplo do Defender](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Tipo de proteção do Defender](intune-deviceconfig-defenderprotectiontype.md)
+- [Direção de verificação em tempo real do defender](intune-deviceconfig-defenderrealtimescandirection.md)
 - [Tipo de verificação do Defender](intune-deviceconfig-defenderscantype.md)
 - [Tipo de exibição de contatos de TI da Central de Segurança do Defender](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [Notificações do Centro de Segurança do Defender de tipo de aplicativo](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
@@ -260,6 +263,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Perfil de certificado do iOS](intune-deviceconfig-ioscertificateprofile.md)
 - [Base de perfil de certificado do iOS](intune-deviceconfig-ioscertificateprofilebase.md)
 - [Política de conformidade do iOS](intune-deviceconfig-ioscompliancepolicy.md)
+- [extensão de logon único da credencial do iOS](intune-deviceconfig-ioscredentialsinglesignonextension.md)
 - [Configuração personalizada do iOS](intune-deviceconfig-ioscustomconfiguration.md)
 - [configuração de autenticação de credencial derivada do iOS](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [Configuração de recursos do dispositivo iOS](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
@@ -276,11 +280,14 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Página de tela inicial do iOS](intune-deviceconfig-ioshomescreenpage.md)
 - [Perfil certificado PFX importado do iOS](intune-deviceconfig-iosimportedpfxcertificateprofile.md)
 - [extensão de logon único Kerberos iOS](intune-deviceconfig-ioskerberossinglesignonextension.md)
+- [tipo de aplicativo modo quiosque do iOS](intune-deviceconfig-ioskioskmodeapptype.md)
 - [Regras de uso de rede do iOS](intune-deviceconfig-iosnetworkusagerule.md)
 - [Tipo de alerta de notificação do iOS](intune-deviceconfig-iosnotificationalerttype.md)
 - [Configurações de notificação do iOS](intune-deviceconfig-iosnotificationsettings.md)
 - [Perfil de certificado de PKCS do iOS](intune-deviceconfig-iospkcscertificateprofile.md)
+- [extensão de logon único de redirecionamento de iOS](intune-deviceconfig-iosredirectsinglesignonextension.md)
 - [Perfil de certificado do SCEP do iOS](intune-deviceconfig-iosscepcertificateprofile.md)
+- [extensão de logon único do iOS](intune-deviceconfig-iossinglesignonextension.md)
 - [Configurações de logon único do iOS](intune-deviceconfig-iossinglesignonsettings.md)
 - [Certificado raiz confiável do iOS](intune-deviceconfig-iostrustedrootcertificate.md)
 - [Configuração de atualização do iOS](intune-deviceconfig-iosupdateconfiguration.md)
@@ -309,6 +316,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de comportamento de solicitação de elevação de usuário padrão de opções de segurança local](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [Base de perfil de certificado do macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Política de conformidade do macOS](intune-deviceconfig-macoscompliancepolicy.md)
+- [extensão de logon único da credencial macOS](intune-deviceconfig-macoscredentialsinglesignonextension.md)
 - [configuração de aplicativo personalizado do macOS](intune-deviceconfig-macoscustomappconfiguration.md)
 - [Configuração personalizada do macOS](intune-deviceconfig-macoscustomconfiguration.md)
 - [Configuração de recursos do dispositivo macOS](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
@@ -324,7 +332,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [extensão de kernel macOS](intune-deviceconfig-macoskernelextension.md)
 - [item de lançamento do macOS](intune-deviceconfig-macoslaunchitem.md)
 - [Perfil de certificado PKCS do macOS](intune-deviceconfig-macospkcscertificateprofile.md)
+- [extensão de logon único de redirecionamento macOS](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [Perfil de certificado do SCEP do macOS](intune-deviceconfig-macosscepcertificateprofile.md)
+- [extensão de logon único do macOS](intune-deviceconfig-macossinglesignonextension.md)
 - [Certificado raiz confiável do macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Configuração de VPN do macOS](intune-deviceconfig-macosvpnconfiguration.md)
 - [Configuração de Wi-Fi do macOS](intune-deviceconfig-macoswificonfiguration.md)
@@ -332,6 +342,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado do certificado de todos os dispositivos gerenciados](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [Estado de certificado do dispositivo gerenciado](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Estado de criptografia de dispositivo gerenciado](intune-deviceconfig-manageddeviceencryptionstate.md)
+- [Estado da configuração do aplicativo móvel do dispositivo gerenciado](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
+- [Estado de configuração do aplicativo móvel do dispositivo gerenciado](intune-deviceconfig-managedDeviceMobileAppConfigurationState.md)
 - [Aplicativo reportado pelo dispositivo gerenciado](intune-deviceconfig-manageddevicereportedapp.md)
 - [Classificação de conteúdo de mídia da Austrália](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Classificação de conteúdo de mídia do Canadá](intune-deviceconfig-mediacontentratingcanada.md)
@@ -380,10 +392,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Classificação de tipo de televisão do Reino Unido](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [Classificação de tipo de filmes dos Estados Unidos](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [Classificação de tipo de televisão dos Estados Unidos](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
+- [Redirecionar extensão de logon único](intune-deviceconfig-redirectsinglesignonextension.md)
 - [Tipo de senha obrigatória](intune-deviceconfig-requiredpasswordtype.md)
 - [Estado de aplicativos restritos](intune-deviceconfig-restrictedappsstate.md)
 - [Violação de aplicativos restritos](intune-deviceconfig-restrictedappsviolation.md)
+- [Desative o dispositivo gerenciado agendado](intune-deviceconfig-retirescheduledmanageddevice.md)
 - [Tipo de filtro de pesquisa segura](intune-deviceconfig-safesearchfiltertype.md)
+- [Estado de retirada agendado](intune-deviceconfig-scheduledretirestate.md)
 - [Tipo de conta de avaliação segura](intune-deviceconfig-secureassessmentaccounttype.md)
 - [Inicialização segura com um tipo de d m](intune-deviceconfig-securebootwithdmatype.md)
 - [Tipo de início do serviço](intune-deviceconfig-servicestarttype.md)
@@ -397,6 +412,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Extensão de logon único](intune-deviceconfig-singlesignonextension.md)
 - [Nível de segurança do site](intune-deviceconfig-sitesecuritylevel.md)
 - [Resumo do status de atualização do software](intune-deviceconfig-softwareupdatestatussummary.md)
+- [Plugins de rede prisioneiros especificados](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [Configuração de gerenciamento de estado](intune-deviceconfig-statemanagementsetting.md)
 - [Tipo de nome alternativo da entidade](intune-deviceconfig-subjectalternativenametype.md)
 - [Formato de nome da entidade](intune-deviceconfig-subjectnameformat.md)
@@ -425,9 +441,11 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Rota de VPN](intune-deviceconfig-vpnroute.md)
 - [Servidor VPN](intune-deviceconfig-vpnserver.md)
 - [Tipo de certificado do servidor VPN](intune-deviceconfig-vpnservercertificatetype.md)
+- [Ação de exceção do serviço VPN](intune-deviceconfig-vpnserviceexceptionaction.md)
 - [Regra de tráfego da VPN](intune-deviceconfig-vpntrafficrule.md)
 - [Tipo de aplicativo de regra de tráfego da VPN](intune-deviceconfig-vpntrafficruleapptype.md)
 - [Tipo de política de roteamento da regra de tráfego da VPN](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
+- [Tipo de configuração de túnel VPN](intune-deviceconfig-vpntunnelconfigurationtype.md)
 - [Configurações de cookies do navegador da Web](intune-deviceconfig-webbrowsercookiesettings.md)
 - [Cronograma semanal](intune-deviceconfig-weeklyschedule.md)
 - [Informações da reunião na tela de boas-vindas](intune-deviceconfig-welcomescreenmeetinginformation.md)

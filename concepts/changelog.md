@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: b7d5cda65e29227bf69a5ddf4232d0bc7fba335a
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 19424cf19a1135620bdaa31dfdbc5c0bebc322ae
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234016"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578847"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,16 +18,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="january-2020"></a>Janeiro de 2020
 
-### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-|:---|:---|:---|
-|Alteração | beta |Conjunto de políticas existentes atualizado com um segmento de [políticas](/graph/api/resources/policy-overview?view=graph-rest-beta) de URL. Os recursos de política digitados agora estão agrupados no segmento de políticas conforme descrito em [postagem no blog](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). Esta atualização adiciona quatro recursos de política digitados: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>e [homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta)  </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
-| Adição | beta | Adicionado [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) o tipo de recurso que controla a saída automática para sessões da web após um período de inatividade, para aplicativos que suportam a funcionalidade de tempo limite baseado em atividade.|
-| Adição | beta |O tipo de recurso [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) controla o mapeamento de declarações para os protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect, para tokens emitidos para um aplicativo específico.|
-| Adição | beta | O tipo de recurso [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) controla o comportamento de autenticação do Azure Active Directory para usuários federados, em particular as restrições de aceleração automática e autenticação de usuário em domínios federados. |
-| Adição | beta | O tipo de recurso [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) controla a duração da vida útil dos tokens de acesso usados ​​para acessar recursos protegidos.|
-
-### <a name="security"></a>Segurança 
+### <a name="security"></a>Segurança
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -47,7 +38,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Suporte adicionado para os aplicativos inscritos para receber notificações que incluam dados de recursos. Os recursos compatíveis no momento são os recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) em conversas e canais do Microsoft Teams. Os aplicativos com inscrição para notificações devem implementar a autorização e o código de descriptografia adicionais para se beneficiarem desse recurso. Para obter mais detalhes, confira [Configurar notificações em mensagens de chat, incluindo propriedades de mensagem (visualização)](webhooks-with-resource-data.md).|
 
-
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
 A presença na versão beta foi adicionada e APIs de comunicações na nuvem para o v1.0 foram introduzidas.
@@ -60,7 +50,6 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 | Alteração        | Beta        | Registro de API IVR renomeado para [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
 | Alteração        | Beta        | Removidas as propriedades de objeto [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) **isCanceled**, **canceledDateTime**, e**entryExitAnnouncement**. Propriedade renomeada **joinUrl**para **joinWebUrl**. | 
 | Adição        | Beta & v 1.0       | Adicionada a operação[delete onlineMeeting](/graph/api/onlinemeeting-delete.md).|
-
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -102,6 +91,7 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 | Adição | v1.0 | Adicionada a propriedade [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) ao recurso [equipe](/graph/api/resources/team?view=graph-rest-1.0) para permitir que os chamadores obtenham configurações específicas de uma equipe de tipo Classe.|
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
 |Alteração | beta |Atualizado o comportamento das relações **appRoleAssignments** e **appRoleAssignedTo** relações em [servicePrincipal](/graph/api/resources/serviceprincipal.md) para retornar as funções conforme o documento. **appRoleAssignments** retorna funções de aplicativo concedidas à entidade de serviço e **appRoleAssignedTo** retorna as funções de aplicativo concedidas à entidade de serviço.|
@@ -1872,7 +1862,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| **Tipo de alteração** | **Versão** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | As APIs de [aplicativo](/graph/api/resources/application?view=graph-rest-beta) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) serão atualizadas na visualização (beta). O primeiro conjunto de alterações será aplicado em 16 de julho de 2018. As alterações incluem a renomeação e a reestruturação de propriedade. A maioria das propriedades existentes não estará disponível até que as alterações sejam concluídas. Novas propriedades serão adicionadas. As alterações serão lançadas na Visualização (beta) antes do lançamento da versão 1.0. |
 

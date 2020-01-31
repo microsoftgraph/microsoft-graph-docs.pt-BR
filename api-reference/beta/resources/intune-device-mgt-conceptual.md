@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: de5f688e0613d1336c277f85cb3bce6c482c2fbc
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 00cb96f6af16ba78391d2311ab02e220a209b410
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955572"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636543"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -34,6 +34,7 @@ ms.locfileid: "39955572"
 - [Resultado de ação do dispositivo gerenciado em massa](intune-devices-bulkmanageddeviceactionresult.md)
 - [Tipo de gabinete](intune-devices-chassistype.md)
 - [Condição de gerenciamento de cerca geográfica circular](intune-fencing-circulargeofencemanagementcondition.md)
+- [Tipo qualificado de gerenciamento de co](intune-devices-comanagementeligibletype.md)
 - [Estado de conformidade](intune-devices-compliancestate.md)
 - [Ação do Gerenciador de configurações](intune-devices-configurationmanageraction.md)
 - [Tipo de ação do Gerenciador de configurações](intune-devices-configurationmanageractiontype.md)
@@ -78,6 +79,7 @@ ms.locfileid: "39955572"
 - [Estado do dispositivo de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentdevicestate.md)
 - [Resumo do estado do dispositivo de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentdevicestatesummary.md)
 - [Categoria de configuração de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentsettingcategory.md)
+- [Restrição secreta de configuração da intenção de gerenciamento de dispositivo](intune-deviceintent-devicemanagementintentsettingsecretconstraint.md)
 - [Estado do usuário de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentuserstate.md)
 - [Resumo do estado do usuário de tentativa do gerenciamento de dispositivos](intune-deviceintent-devicemanagementintentuserstatesummary.md)
 - [Atribuição de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptassignment.md)
@@ -85,14 +87,20 @@ ms.locfileid: "39955572"
 - [Atribuição de grupo de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptgroupassignment.md)
 - [Resumo de execução de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptrunsummary.md)
 - [Estado de usuário de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptuserstate.md)
+- [Restrição de aplicativo para configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingappconstraint.md)
 - [Restrição booleana de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Categoria de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingcategory.md)
+- [Restrição de conjunto de configurações de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingcollectionconstraint.md)
 - [Comparação de configurações de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [Definição de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [Dependência de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingdependency.md)
+- [Restrição de tipo de registro de configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingenrollmenttypeconstraint.md)
+- [Restrição de arquivo de configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingfileconstraint.md)
 - [Instância de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettinginstance.md)
 - [Restrição de número inteiro da configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingintegerconstraint.md)
+- [Restrição de perfil da configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [Restrição de regex de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingregexconstraint.md)
+- [Restrição obrigatória da configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
 - [Restrição de comprimento de cadeia de caracteres de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [Restrição de xml de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
 - [Instância de configuração da cadeia de caracteres do gerenciamento de dispositivos](intune-deviceintent-devicemanagementstringsettinginstance.md)
@@ -108,6 +116,7 @@ ms.locfileid: "39955572"
 - [Resumo do sistema operacional do dispositivo](intune-devices-deviceoperatingsystemsummary.md)
 - [Visão geral de proteção de dispositivo](intune-devices-deviceprotectionoverview.md)
 - [Estado do registro do dispositivo](intune-devices-deviceregistrationstate.md)
+- [Script de Shell de dispositivo](intune-devices-deviceshellscript.md)
 - [Tipo de disco](intune-devices-disktype.md)
 - [Código de ativação do SIM inserido](intune-esim-embeddedsimactivationcode.md)
 - [Pool de códigos de ativação do SIM inserido](intune-esim-embeddedsimactivationcodepool.md)
@@ -127,6 +136,7 @@ ms.locfileid: "39955572"
 - [Usuário conectado](intune-devices-loggedonuser.md)
 - [Estado de modo perdido](intune-devices-lostmodestate.md)
 - [Dispositivo gerenciado](intune-devices-manageddevice.md)
+- [Arquitetura de dispositivo gerenciado](intune-devices-manageddevicearchitecture.md)
 - [Configurações de limpeza do dispositivo gerenciado](intune-devices-manageddevicecleanupsettings.md)
 - [Modelos e fabricantes de dispositivos gerenciados](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [Visão geral do dispositivo gerenciado](intune-devices-manageddeviceoverview.md)

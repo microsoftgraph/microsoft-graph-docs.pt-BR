@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a4ef851bfd8e14525541ba2115f8300bb7b1dee
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 4af4965472453934c7f6f3d6d0325e733389b1c8
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948666"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635878"
 ---
 # <a name="get-iosupdateconfiguration"></a>Acessar iosUpdateConfiguration
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1526
+Content-Length: 1579
 
 {
   "value": {
@@ -107,6 +107,7 @@ Content-Length: 1526
     "isEnabled": true,
     "activeHoursStart": "12:00:05.5020000",
     "activeHoursEnd": "11:59:00.8990000",
+    "desiredOsVersion": "Desired Os Version value",
     "scheduledInstallDays": [
       "monday"
     ],

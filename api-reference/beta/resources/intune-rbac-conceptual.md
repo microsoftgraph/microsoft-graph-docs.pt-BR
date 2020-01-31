@@ -4,19 +4,18 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: 3f16673a2a54b4ed0de380ddd4b66aa6c74c1106
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a43efe3a1c881eb014a075f30906dab79c7be13d
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967676"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636522"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O controle de acesso baseado em função do Intune determina quem pode executar ações em objetos do Intune e fazer alterações para aplicativos gerenciados, usuários e dispositivos.   
 
@@ -25,11 +24,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de 
 - [Detalhes de função atribuídos ao gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Atribuição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Definição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroledefinition.md)
+- [Vários aplicativos RBAC](intune-rbac-rbacapplicationmultiple.md)
 - [Ação de recurso](intune-rbac-resourceaction.md)
 - [Operação de recurso](intune-rbac-resourceoperation.md)
 - [Atribuição de função](intune-rbac-roleassignment.md)
 - [Tipo de escopo de atribuição de função](intune-rbac-roleassignmentscopetype.md)
 - [Definição de função](intune-rbac-roledefinition.md)
+- [Gerenciamento de função](intune-rbac-rolemanagement.md)
 - [Permissão de função](intune-rbac-rolepermission.md)
 - [Marca de escopo de função](intune-rbac-rolescopetag.md)
 - [Atribuição automática de marca de escopo de função](intune-rbac-rolescopetagautoassignment.md)

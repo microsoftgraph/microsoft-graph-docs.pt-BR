@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cfb7cc45d41d779d63ef4c13ff28996ed035abe3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4a27a7b63248ddb94e4ea819300f325e04a02c9f
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977535"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636515"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados do catálogo de aplicativos do Microsoft Teams
 
@@ -23,11 +23,9 @@ Isso inclui os aplicativos do Microsoft Teams Store, bem como os aplicativos do 
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 
-> **Observação:** Somente os administradores globais podem chamar esta API.
-
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | AppCatalog.ReadWrite.All            |
+| Delegada (conta corporativa ou de estudante)     | AppCatalog.ReadWrite.All            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
 | Aplicativo                            | Sem suporte                       |
 

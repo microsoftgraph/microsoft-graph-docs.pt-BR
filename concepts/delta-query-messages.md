@@ -4,12 +4,12 @@ description: A consulta delta permite consultar adições, exclusões ou atualiz
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 383c7a1bc0a2e129d859b17101f80ee1638d22fa
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: c51c1e79e96068805ca37630d28cae0854f414dd
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216788"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578833"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obter as alterações incrementais para as mensagens em uma pasta
 
@@ -42,6 +42,7 @@ Verifique o [exemplo](#example-to-synchronize-messages-in-a-folder) abaixo para 
 - Suporte à consulta delta `$select`, `$top` e `$expand` para mensagens.
 - Há suporte limitado para `$filter` e `$orderby`:
   - As únicas expressões `$filter` com suporte são `$filter=receivedDateTime+ge+{value}` ou `$filter=receivedDateTime+gt+{value}`.
+  - A aplicação de `$filter` em uma consulta Delta retorna apenas até 5.000 mensagens.
   - A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida.
 - Não há suporte para `$search`.
 

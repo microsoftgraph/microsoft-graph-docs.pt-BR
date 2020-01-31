@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7fff482595831282abca3f88a0d9c72fff258c07
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: aca9bd987b45a60d99038637e51434e2e6426a78
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088235"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636816"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -38,6 +38,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Nível de compartilhamento de área de transferência do aplicativo gerenciado](intune-mam-managedappclipboardsharinglevel.md)
 - [Configuração de aplicativo gerenciado](intune-mam-managedappconfiguration.md)
 - [Tipo de criptografia de dados do aplicativo gerenciado](intune-mam-managedappdataencryptiontype.md)
+- [Localização da inclusão de dados do aplicativo gerenciado](intune-mam-managedappdataingestionlocation.md)
 - [Local de armazenamento de dados do aplicativo gerenciado](intune-mam-managedappdatastoragelocation.md)
 - [Nível de transferência de dados do aplicativo gerenciado](intune-mam-managedappdatatransferlevel.md)
 - [Nível de ameaça do dispositivo de aplicativo gerenciado](intune-mam-managedappdevicethreatlevel.md)

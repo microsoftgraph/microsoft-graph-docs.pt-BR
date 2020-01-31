@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94f51c9ec56131e089afc44819f4d892145e7d8c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f5774a220edd9113425801364bdca7df4982cfe
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364702"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636795"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>tipo de recurso deviceManagementSettingDefinition
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa a definição de uma determinada configuração
 
@@ -32,13 +32,14 @@ Entidade que representa a definição de uma determinada configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da definição de configuração|
+|id|String|A ID da definição de configuração|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os possíveis valores são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|String|O nome de exibição da configuração|
+|displayName|Cadeia de caracteres|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
-|descrição|String|A descrição da configuração|
-|documentationUrl|String|URL para configurar a documentação|
-|palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
+|description|String|A descrição da configuração|
+|placeholderText|Cadeia de caracteres|Texto do espaço reservado como um exemplo de entrada válida|
+|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
+|palavras-chave|String collection|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
 
@@ -61,13 +62,17 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "isTopLevel": true,
   "description": "String",
+  "placeholderText": "String",
   "documentationUrl": "String",
   "keywords": [
     "String"
   ],
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "String"
+      ]
     }
   ],
   "dependencies": [
@@ -76,7 +81,10 @@ Veja a seguir uma representação JSON do recurso.
       "definitionId": "String",
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "String"
+          ]
         }
       ]
     }

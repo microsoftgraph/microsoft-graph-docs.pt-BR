@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 148a21251ff073212bcd8698ebe4d7333ef25c62
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 069b6ea01444df3490a6a1888815634153cfc653
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948834"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635899"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>Listar iosikEv2VpnConfigurations
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4949
+Content-Length: 5777
 
 {
   "value": [
@@ -196,7 +196,26 @@ Content-Length: 4949
       "tlsMaximumVersion": "Tls Maximum Version value",
       "tlsMinimumVersion": "Tls Minimum Version value",
       "allowDefaultSecurityAssociationParameters": true,
-      "allowDefaultChildSecurityAssociationParameters": true
+      "allowDefaultChildSecurityAssociationParameters": true,
+      "alwaysOnConfiguration": {
+        "@odata.type": "microsoft.graph.appleVpnAlwaysOnConfiguration",
+        "tunnelConfiguration": "cellular",
+        "userToggleEnabled": true,
+        "voicemailExceptionAction": "allowTrafficOutside",
+        "airPrintExceptionAction": "allowTrafficOutside",
+        "cellularExceptionAction": "allowTrafficOutside",
+        "allowAllCaptiveNetworkPlugins": true,
+        "allowedCaptiveNetworkPlugins": {
+          "@odata.type": "microsoft.graph.specifiedCaptiveNetworkPlugins",
+          "allowedBundleIdentifiers": [
+            "Allowed Bundle Identifiers value"
+          ]
+        },
+        "allowCaptiveWebSheet": true,
+        "natKeepAliveIntervalInSeconds": 13,
+        "natKeepAliveOffloadEnable": true
+      },
+      "enableAlwaysOnConfiguration": true
     }
   ]
 }

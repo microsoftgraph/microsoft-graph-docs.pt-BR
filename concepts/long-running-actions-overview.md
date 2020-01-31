@@ -3,19 +3,19 @@ title: Como trabalhar com ações de execução longa (beta)
 description: Este artigo descreve o trabalho com ações de execução longa.
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: 08584750feba670b0041f50696b75b3f7e6910b5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 470ef7ea7fd3597bec7c22b5d97cff38a5ef5a75
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730313"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635086"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Como trabalhar com ações de execução longa (beta)
 
 
 Algumas respostas de API exigem tempo indeterminado para serem concluídas.
 Em vez de ter que esperar até que a ação seja concluída antes de retornar uma resposta, o Microsoft Graph pode usar um padrão de ações de execução longa.
-Esse padrão fornece ao aplicativo uma espera para sondar se há atualizações de status em uma ação de execução longa, sem que qualquer solicitação aguarde até que a ação seja concluída.
+Este padrão fornece ao aplicativo uma maneira de Pesquisar atualizações de status em uma ação de execução longa, sem qualquer solicitação aguardando a conclusão da ação.
 
 O padrão geral segue estas etapas:
 
@@ -53,7 +53,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-complete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
