@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e1e484bd3debc422890014aeb0df48806550e64
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 907f68e44383f877256a75f3b2b7b6f3585272ff
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621431"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651950"
 ---
 # <a name="event-decline"></a>event: decline
 
@@ -138,7 +138,7 @@ Veja a seguir um exemplo da resposta.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

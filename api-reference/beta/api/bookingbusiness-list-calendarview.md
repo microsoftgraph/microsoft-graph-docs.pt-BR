@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 272df1dbcf64531a3fcce88778465511022ec6e3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 3eb5cee33c29af782bd3ae9719efe2d75a7bb68c
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720246"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651971"
 ---
 # <a name="list-bookings-calendarview"></a>Listar o calendarView do Bookings
 
@@ -23,28 +23,36 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta corporativa ou de estudante) |  Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
-
 ```
+
+## <a name="query-parameters"></a>Parâmetros de consulta
+
+Forneça os seguintes parâmetros de consulta necessários com valores na URL solicitada.
+
+| Parâmetro    | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T00:00:00Z ' e o mesmo tempo em PST teria a seguinte aparência: ' 2017-12-31T16:00:00-08:00 '.|
+|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T03:00: o 00Z ' e o mesmo momento em PST teria a seguinte aparência: ' 2017-12-31T19:00:00-08:00 '.|
+
+Os valores de `start` e `end` são interpretados usando o deslocamento de fuso horário especificado em seus valores correspondentes e não são afetados pelo valor `Prefer: outlook.timezone` do cabeçalho, se houver.
+
+Este método também dá suporte a alguns [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça os seguintes parâmetros de consulta com valores na URL solicitada.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T00:00:00Z ' e o mesmo tempo em PST teria a seguinte aparência: ' 2017-12-31T16:00:00-08:00 '.|
-|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T03:00: o 00Z ' e o mesmo momento em PST teria a seguinte aparência: ' 2017-12-31T19:00:00-08:00 '.|
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna `200, OK` o código de resposta e o objeto da coleção [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
@@ -70,7 +78,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

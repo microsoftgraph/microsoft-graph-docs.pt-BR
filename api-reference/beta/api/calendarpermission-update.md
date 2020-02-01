@@ -5,16 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7aee071949fb5d7ded115f131e732b6d3626e6fd
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 98deef23a65fd4bfa9fc2ae6f112d97e38cf9bf5
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994831"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651964"
 ---
 # <a name="update-calendarpermission"></a>Atualizar calendarPermission
 
-Atualize as propriedades do objeto calendarPermission.
+Atualize as permissões atribuídas a um compartilhamento ou delegado existente, através do objeto [calendarPermission](../resources/calendarpermission.md) correspondente para um calendário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,7 +27,7 @@ Dependendo do tipo de calendário em que o evento se encontra e do tipo de permi
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Atualizar as permissões especificadas do calendário principal de um usuário:
+Atualizar as permissões especificadas do calendário de um usuário:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
@@ -57,12 +57,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|allowedRoles|coleção de cadeias de caracteres| Lista de níveis de permissão de compartilhamento permitidos para o calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
-|emailAddress|[emailAddress](../resources/email.md)| Representa um compartilhamento que tem acesso ao calendário. Para o compartilhamento "minha organização", a propriedade **Address** é NULL. |
-|id|String| O identificador exclusivo do usuário (compartilhamento) com o qual o calendário foi compartilhado. Somente leitura.|
-|isInsideOrganization|Booliano| True se o usuário em contexto (compartilhamento) estiver dentro da mesma organização que o proprietário do calendário.|
-|isRemovable|Booliano| `True`Se o usuário puder ser removido da lista de compartilhamentos do calendário especificado, `false` caso contrário. O usuário "minha organização" determina as permissões que outras pessoas dentro da sua organização têm para o calendário especificado. Não é possível remover "minha organização" como um compartilhamento para um calendário.|
-|role|calendarRoleType| Nível de permissão atual do compartilhamento de calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|role|[calendarRoleType](../resources/calendarpermission.md#calendarroletype-values)| O nível de permissão a ser alterado para o compartilhamento ou representante do calendário. |
 
 ## <a name="response"></a>Resposta
 
@@ -72,33 +67,21 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+O exemplo a seguir altera o nível de permissão de Sharee, Adele, `write`para.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["RGVmYXVsdA=="],
   "name": "update_calendarpermission"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
+PATCH https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/RGVmYXVsdA==
 Content-type: application/json
 
 {
-  "emailAddress": {
-    "name": "My Organization",
-  },
-  "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
-  "id": "RGVmYXVsdA=="
+  "role": "write"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -124,6 +107,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
+  "name": "update_calendarpermission",
   "truncated": true,
   "@odata.type": "microsoft.graph.calendarPermission"
 } -->
@@ -133,20 +117,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "emailAddress": {
-    "name": "My Organization",
-  },
-  "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
-  "id": "RGVmYXVsdA=="
+    "id": "L289RXhlbGVW",
+    "isRemovable": true,
+    "isInsideOrganization": true,
+    "role": "write",
+    "allowedRoles": [
+        "freeBusyRead",
+        "limitedRead",
+        "read",
+        "write"
+    ],
+    "emailAddress": {
+        "name": "Adele Vance",
+        "address": "AdeleV@contoso.OnMicrosoft.com"
+    }
 }
 ```
 

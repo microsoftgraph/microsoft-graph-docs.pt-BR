@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fe255a3f4e314d6624948a28c504236a589e81a3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 34c2b0e9c06bbafdf9a384d24ea9472af2b7d1e8
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421824"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652176"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 Se você quiser usar **menção** para chamar outro usuário na nova mensagem:
 
-- Inclua a propriedade **** Required ToRecipients, a **** Propriedade mencionas e qualquer propriedade gravável de mensagem no corpo da solicitação.
+- Inclua a propriedade Required **ToRecipients** , a propriedade **mencionas** e qualquer propriedade gravável de mensagem no corpo da solicitação.
 - Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .
 
 ## <a name="response"></a>Resposta
@@ -110,7 +110,7 @@ Content-length: 512
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -171,7 +171,7 @@ Content-length: 344
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-mentions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -235,7 +235,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -243,11 +243,62 @@ Content-type: application/json
 
 
 ##### <a name="response-3"></a>Resposta 3
+Veja a seguir um exemplo da resposta.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="request-4"></a>Solicitação 4
+
+O próximo exemplo cria uma mensagem com um anexo de arquivo e envia a mensagem.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_attachment"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "Meet for lunch?",
+    "body": {
+      "contentType": "Text",
+      "content": "The new cafeteria is open."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "meganb@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "name": "attachment.txt",
+        "contentType": "text/plain",
+        "contentBytes": "SGVsbG8gV29ybGQh"
+      }
+    ]
+  }
+}
+```
+
+##### <a name="response-4"></a>Resposta 4
+
 Este é um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```

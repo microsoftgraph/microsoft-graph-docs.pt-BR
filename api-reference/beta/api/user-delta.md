@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd79c6f23b87ebcaa9f766f4beab901d6b97d4d8
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 605b4fa7a890d1f2a74b44fe00eb3e978a2ee5dd
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724313"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652034"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.  |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -90,7 +90,7 @@ Por padrão, as solicitações usando `deltaLink` ou `nextLink` retornam as mesm
 - Se a propriedade nunca foi definida anteriormente, de nenhuma forma será incluída na resposta.
 
 
-> **Observação:** com esse comportamento, ao verificar a resposta, não será possível dizer se uma propriedade foi alterada ou não. Além disso, as respostas Delta tendem a ser grandes porque elas contêm todos os valores de propriedade, conforme mostrado no [exemplo 2](#example-2-selecting-three-properties).
+> **Observação:** com esse comportamento, ao verificar a resposta, não será possível dizer se uma propriedade foi alterada ou não. Além disso, as respostas delta tendem a ser grandes porque contêm todos os valores de propriedades, como mostrado no [Exemplo 2](#example-2-selecting-three-properties).
 
 ### <a name="alternative-return-only-the-changed-properties"></a>Alternativa: retornar somente as propriedades alteradas
 
@@ -99,11 +99,11 @@ Adicionar o cabeçalho `prefer:return=minimal` opcional na solicitação resulta
 - Se a propriedade foi alterada, o novo valor será incluído na resposta. Isso inclui propriedades definidas com valor nulo.
 - Se a propriedade não foi alterada, a propriedade não será incluído na resposta de forma alguma. (Diferente do comportamento padrão.)
 
-> **Observação:** é possível adicionar o cabeçalho a uma solicitação `deltaLink` a qualquer momento no ciclo de delta. O cabeçalho afeta apenas o conjunto de propriedades incluídas na resposta e ele não afeta como a consulta delta é executada. Confira o [exemplo 3](#example-3-alternative-minimal-response-behavior).
+> **Observação:** é possível adicionar o cabeçalho a uma solicitação `deltaLink` a qualquer momento no ciclo de delta. O cabeçalho afeta apenas o conjunto de propriedades incluídas na resposta e ele não afeta como a consulta delta é executada. Veja o [Exemplo 3](#example-3-alternative-minimal-response-behavior).
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-default-properties"></a>Exemplo 1: propriedades padrão
+### <a name="example-1-default-properties"></a>Exemplo 1: Propriedades padrão
 
 #### <a name="request"></a>Solicitação
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/users/delta
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -173,11 +173,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-selecting-three-properties"></a>Exemplo 2: selecionando três propriedades
+### <a name="example-2-selecting-three-properties"></a>Exemplo 2: Escolher três propriedades
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra a solicitação inicial selecionando três propriedades de controle de alterações, com comportamento de resposta padrão.
+O próximo exemplo mostra uma solicitação inicial selecionando três propriedades para controle de alterações com comportamento de resposta padrão.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -205,7 +205,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 
 #### <a name="response"></a>Resposta
 
-A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que todas as três propriedades estão incluídas na resposta e não são conhecidas quais foram alteradas desde que `deltaLink` foram obtidas.
+A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que todas as três propriedades foram incluídas na resposta e não se sabe quais foram alteradas desde que o `deltaLink` foi obtido.
 
 <!-- {
   "blockType": "response",
@@ -231,11 +231,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-alternative-minimal-response-behavior"></a>Exemplo 3: comportamento de resposta mínimo alternativo
+### <a name="example-3-alternative-minimal-response-behavior"></a>Exemplo 3: Comportamento de resposta mínimo alternativo
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra a solicitação inicial selecionando três propriedades de controle de alterações, com comportamento de resposta mínimo alternativo.
+O exemplo a seguir mostra uma solicitação inicial selecionando três propriedades para controle de alterações com o comportamento de resposta mínima alternativa.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -255,7 +255,7 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
