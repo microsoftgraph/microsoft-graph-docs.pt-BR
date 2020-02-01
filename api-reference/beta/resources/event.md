@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 65723f2a951d4630f939e1981c60793941099faf
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: a89ae11fe89421763241313989aab8d6a839e03d
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757128"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652218"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -118,7 +118,7 @@ Veja a seguir uma representação JSON do recurso
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
 |isOnlineMeeting|Booliano| `True`Se esse evento tiver informações de reunião online (ou seja, **onlineMeeting** aponta para um recurso [onlineMeetingInfo](onlinemeetinginfo.md)), caso contrário `false`. O padrão é `false` (**onlineMeeting** é `null`). Opcional. <br> Após definir **isOnlineMeeting** como `true`, o Microsoft Graph Inicializa **onlineMeeting**. Subsequentemente, o Outlook ignora todas as alterações feitas em **isOnlineMeeting**e a reunião permanece disponível online. |
-|isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|
+|isOrganizer|Booliano|Defina como verdadeiro se o proprietário do calendário (especificado pela propriedade do **proprietário** do [calendário](calendar.md)) for o organizador do evento (especificado pela propriedade do **organizador** do **evento**). Isso também se aplica se um representante organizou o evento em nome do proprietário.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|O local do evento.|
