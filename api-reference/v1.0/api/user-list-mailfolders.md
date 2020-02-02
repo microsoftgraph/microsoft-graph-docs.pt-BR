@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: fd71b5a76624edbc5c1473dd7e25aedf4437a58b
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 1b802b636ce4a2a7e3b0b4b3c9c3c145842a9670
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702500"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652225"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ---
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Veja a seguir um exemplo da resposta.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -99,8 +99,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "archive"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -108,8 +107,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "conversationhistory"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -117,8 +115,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "deleteditems"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -126,8 +123,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "drafts"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -135,8 +131,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 70,
-            "totalItemCount": 71,
-            "wellKnownName": "inbox"
+            "totalItemCount": 71
         },
         {
             "id": "AQMkADYAAAIBGQAAAA==",
@@ -144,8 +139,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "junkemail"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -153,8 +147,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "outbox"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -162,8 +155,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "sentitems"
+            "totalItemCount": 0
         }
     ]
 }

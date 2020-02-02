@@ -1,18 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3e1bbbd157e666ee2adc9783b61e2d0bab42c803
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0552d7cedc6f04d17b02e5b60be492554750323e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35856293"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544141"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-MailFolder mailFolder = new MailFolder();
-mailFolder.additionalDataManager().put("@odata.type", new JsonPrimitive("microsoft.graph.mailSearchFolder"));
+MailSearchFolder mailFolder = new MailSearchFolder();
 mailFolder.displayName = "Weekly digests";
 mailFolder.includeNestedFolders = true;
 LinkedList<String> sourceFolderIdsList = new LinkedList<String>();

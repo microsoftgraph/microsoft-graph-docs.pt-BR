@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e1723cdf1997586cf1342c79112174e8754ec45f
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 4e693b70185d725f04f8318ed61f1649e24d663b
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636909"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652162"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -30,7 +30,7 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
-|[Delete](../api/message-delete.md) | None |Excluir o objeto eventMessage. |
+|[Excluir](../api/message-delete.md) | None |Excluir o objeto eventMessage. |
 |[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -65,7 +65,7 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |conversationIndex|Edm.Binary|Indica a posição da mensagem dentro da conversa.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
-|from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
+|from|[recipient](recipient.md)|O proprietário da caixa de correio a partir da qual a mensagem é enviada. Na maioria dos casos, esse valor é o mesmo que a propriedade **Sender** , exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos.|
 |id|Cadeia de caracteres|Identificador exclusivo da mensagem de evento (Observe que esse valor pode ser alterado se uma mensagem for movida ou alterada)|
 |importância|String| A importância da mensagem: `low`, `normal`, `high`.|
@@ -81,7 +81,7 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
+|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade para um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [para um calendário compartilhado ou como um representante](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |subject|Cadeia de caracteres|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
@@ -93,7 +93,7 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |:---------------|:--------|:----------|
 |attachments|Coleção [attachment](attachment.md)| Somente leitura. Anulável.|
 |event|[event](event.md)| O evento associado à mensagem de evento. A pressuposição dos participantes ou recursos da sala é que o Atendedor de Calendário esteja definido para atualizar automaticamente o calendário com um evento quando mensagens de evento de solicitação de reunião chegarem. Propriedade de navegação.  Somente leitura.|
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para eventMessage. Somente leitura. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para eventMessage. Somente leitura. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a eventMessage. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a eventMessage. Somente leitura. Anulável.|
 
