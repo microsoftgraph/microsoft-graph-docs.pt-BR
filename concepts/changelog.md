@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: bd1ea278c1d6b7830a45640c1be4eb62b1f5809b
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: d9eb819dadee80182c59a8ae1477a1b771b6c82f
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636508"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652013"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -59,6 +59,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração | Beta e v1.0 | O método [Atualizar alerta](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) agora atualiza o campo **comentários** apenas com os seguintes valores: <br/> `Closed in IPC`, `Closed in MCAS`.|
+
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+ 
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição | v1.0 | A propriedade de navegação **primaryChannel** foi adicionada ao tipo de recurso de equipe.|
 
 ### <a name="users"></a>Usuários
 
@@ -181,7 +187,6 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 | Adição | Beta | Foram adicionados o recurso [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) e os métodos associados.|
 | Adição | Beta | Foi adicionado novo relacionamento `shiftPreferences` à entidade [UserSettings](/graph/api/resources/usersettings?view=graph-rest-beta). |
 | Alteração | Beta | As permissões de aplicativo foram atualizadas para executar operações de leitura e gravação para os recursos de turnos, incluindo[schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), e[openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Observação:** as permissões de aplicativos estão na visualização particular e não estão disponíveis para uso público.|
-
 
 ## <a name="november-2019"></a>Novembro de 2019
 
@@ -3904,7 +3909,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta        | Os itens de raiz de unidade adicionados aos Webhooks como um recurso que está disponível para se inscrever. |
 
-### <a name="mail-outlook"></a>E-mail (Outlook)
+### <a name="mail-outlook"></a>Email (Outlook)
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
