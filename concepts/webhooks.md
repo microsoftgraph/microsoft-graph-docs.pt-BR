@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a9bee67379203b7dbe2c6a3b4dff1caba95e422d
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 54775b566c26f0b6bc99fd1a8482fe5b12c5d1fa
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216830"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651761"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -197,6 +197,7 @@ O objeto notification tem as seguintes propriedades:
 | changeType | string | O tipo de evento que gerou a notificação. Por exemplo, `created` ao receber um email ou `updated` ao marcar uma mensagem como lida. |
 | recurso | string | O URI do recurso relativo a `https://graph.microsoft.com`. |
 | resourceData | objeto | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. |
+| tenantId | cadeia de caracteres | A ID do locatário do qual a notificação se originou. |
 
 Por exemplo, para recursos do Outlook, `resourceData` contém os seguintes campos:
 
@@ -222,6 +223,7 @@ Quando o usuário recebe um email, o Microsoft Graph envia uma notificação sem
       "clientState":"secretClientValue",
       "changeType":"created",
       "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
@@ -267,6 +269,7 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 - [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Alterar tutorial de notificações](/graph/tutorials/change-notifications)
+- [Notificações do ciclo de vida (visualização)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contato]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversa]: /graph/api/resources/conversation?view=graph-rest-1.0

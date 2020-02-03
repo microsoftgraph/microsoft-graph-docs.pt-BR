@@ -4,12 +4,12 @@ description: O Outlook pode suspender a entrega de notificações de alteração
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 481dbee58a5ee761816e05c88d44e115da736035
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: ad690749db14bdb8994e1bfe85b0b312029657a2
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216837"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651775"
 ---
 # <a name="reduce-missing-subscriptions-and-notifications-for-outlook-resources-preview"></a>Reduzir assinaturas ausentes e notificações de recursos do Outlook (visualização) 
 
@@ -37,6 +37,8 @@ Para receber notificações de ciclo de vida, você pode usar o ponto de extremi
 Ao criar uma assinatura, você pode especificar um ponto de extremidade de notificação separado usando a propriedade**lifecycleNotificationUrl**. Se você especificar o ponto de extremidade, todos os tipos de notificações de ciclo de vida atuais e futuros serão entregues lá. Caso contrário, as notificações `subscriptionRemoved` e `missed` serão entregues nas **notificationUrl** existentes para todas as assinaturas existentes.
 
 > **Observação:** a propriedade **lifecycleNotificationUrl** só pode ser definida ou lida usando as APIs beta do Microsoft Graph. No entanto, as assinaturas criadas usando as APIs beta são armazenadas no mesmo ambiente de produção que as assinaturas criadas usando v1.0, para que você possa implementar o novo fluxo do Outlook, além de suas assinaturas, usando APIs v1.0.
+
+> As assinaturas criadas por meio das APIs do v 1.0 receberão notificações do ciclo de vida. 
 
 ### <a name="subscription-request-example"></a>Exemplo de solicitação de assinatura
 

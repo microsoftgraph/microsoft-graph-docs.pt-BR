@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3e02b245010ddcd7243d3859fd1192ab8c6a0bf4
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 45c0d34fbbf04d8203092a33c4f4d499b1f7bdb4
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216746"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651768"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -61,6 +61,11 @@ Atualmente, os seguintes recursos oferecem atualmente um cabeçalho `Retry-After
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 
 Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://msdn.microsoft.com/library/office/dn589798.aspx).
+
+> [!NOTE]
+> Se nenhum cabeçalho `Retry-After` for fornecido pela resposta, recomendamos implementar uma política de repetição exponencial de retirada. Você também pode implementar [padrões mais avançados](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) ao criar aplicativos em grande escala. 
+> 
+> Os SDKs do Microsoft Graph já implementam manipuladores que dependem do cabeçalho `Retry-After` ou padrão para uma política de repetição de retirada exponencial.
 
 ## <a name="service-specific-limits"></a>Limites específicos do serviço
 
