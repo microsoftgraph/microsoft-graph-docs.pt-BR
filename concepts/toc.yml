@@ -91,8 +91,12 @@ items:
             href: outlook-calendar-online-meetings.md
           - name: Agendar eventos recorrentes
             href: outlook-schedule-recurring-events.md
+          - name: Compartilhar ou delegar calendário (visualização)
+            href: outlook-share-or-delegate-calendar.md
           - name: Obter eventos compartilhados
             href: outlook-get-shared-events-calendars.md
+          - name: Criar eventos compartilhados
+            href: outlook-create-event-in-shared-delegated-calendar.md
           - name: ID Imutável
             href: outlook-immutable-id.md
       - name: Comunicações na nuvem
