@@ -4,12 +4,12 @@ description: As APIs de comunicação em nuvem no Microsoft Graph adicionam uma 
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 9c4bd2e4ca327e9d5a482ac5dddd3f6bd41a4652
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f2b85634d27d566fc57a57a1e9b6db0366bb9481
+ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871557"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711707"
 ---
 # <a name="cloud-communications-api-overview"></a>Visão geral da API de comunicações em nuvem
 As APIs de comunicação em nuvem no Microsoft Graph adicionam uma nova dimensão a como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamadas e reuniões online. Expanda sua empresa expedido o modo como você responde às necessidades dos clientes e como seus funcionários colaboram entre si.
@@ -93,7 +93,7 @@ Você pode usar as APIs de comunicação em nuvem para:
 Está procurando a referência de API para esse serviço?
 
 - [APIs de comunicações em nuvem no Microsoft Graph (v 1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
-- [APIs de comunicações em nuvem no Microsoft Graph (beta)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
+- [APIs de comunicações em nuvem no Microsoft Graph (beta)](/graph/api/resources/communications-api-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
