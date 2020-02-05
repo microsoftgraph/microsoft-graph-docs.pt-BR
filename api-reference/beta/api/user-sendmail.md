@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 34c2b0e9c06bbafdf9a384d24ea9472af2b7d1e8
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 1258b7808b15348b38fceaf084626a6d89629cc3
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652176"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774440"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -254,8 +254,10 @@ HTTP/1.1 202 Accepted
 
 ##### <a name="request-4"></a>Solicitação 4
 
-O próximo exemplo cria uma mensagem com um anexo de arquivo e envia a mensagem.
+O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_attachment"
@@ -290,6 +292,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-attachment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-attachment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response-4"></a>Resposta 4
 

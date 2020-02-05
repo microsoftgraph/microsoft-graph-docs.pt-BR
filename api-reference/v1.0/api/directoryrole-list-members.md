@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c91523265c988265dd8706677ba82ecd4634e250
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1ae0bdf76122e801fb3c3aef976be3ce2dee6871
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864828"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774570"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+|Aplicativo | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -52,25 +52,25 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_directoryrole_members"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-members-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-members-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

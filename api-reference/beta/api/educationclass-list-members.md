@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0ddb78d439d91479a51c94fc2dbaae3224318633
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1c787cf43eb429ffa416a09eb75ffae2bb8b5f2c
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718016"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774391"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -51,21 +51,21 @@ Este é um exemplo de solicitação.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_educationclass_members"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11016/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-members-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7245c76a61099ee080ec9474adfa866fdd7e12c5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 018cecb780cd5ebcb37b742f662d383213ccd7b1
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721044"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774499"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -49,25 +49,25 @@ Este é um exemplo de solicitação.
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_educationclass_members"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-members-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-members-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
