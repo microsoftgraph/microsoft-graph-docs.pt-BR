@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6717e0219ec76d32db0e613447137f9675df1cb4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 08f33169af606fdaa5824b8a98f770094897814a
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865010"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839959"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: ParseName
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Analisar uma determinada expressão de cadeia de caracteres em um [attributeMappingSource | (.. objeto/Resources/synchronization_attributemappingsource. MD).
+Analisar uma determinada expressão de cadeia de caracteres em um objeto [attributeMappingSource](../resources/synchronization-attributemappingsource.md) .
 
 Para obter mais informações sobre expressões, consulte [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) |Sem suporte.|
+|Delegada (conta corporativa ou de estudante)     |Directory.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) |Sem suporte.|
 |Aplicativo                            |Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

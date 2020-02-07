@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2f179eaa7f6af016376ca5ca7907a36783cb30ce
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 4dd666da0fdcfd747cd4c80fd0aaa430cbacb776
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774601"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839994"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -26,7 +26,7 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |:---------------- |:-------------------------------------------- |
 | [Delegado](/graph/auth-v2-user) (conta corporativa ou de estudante) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
 | [Delegado](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
-| [Aplicativo](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
 
 Os resultados da resposta são baseados no contexto do aplicativo de chamada. A seguir, um resumo dos cenários comuns:
 
@@ -151,5 +151,7 @@ Content-length: 586
   ]
 }
 -->
+
+> **Observação:** o `clientState` valor da propriedade não é retornado por motivos de segurança.  
 
 Quando uma solicitação retorna várias páginas de dados, a resposta inclui uma propriedade `@odata.nextLink` para ajudá-lo a gerenciar os resultados.  Para saber mais, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
