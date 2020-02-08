@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bfd4a174fa10f99167b3f9ef37bb36db6a56cb96
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 4c505ca57406b5ff6554f015c74ae702044e7e01
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672856"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865736"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -58,6 +58,7 @@ Esse recurso permite:
 |[Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualizar um objeto de configuração. |
 |[Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Valide se o nome de exibição do grupo do Office 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
+|[assignLicense](../api/group-assignlicense.md)|[group](group.md)| Adicione ou remova assinaturas para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 |**Calendar**| | |
 |[Criar evento](../api/group-post-events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
 |[Obter evento](../api/group-get-event.md) |[event](event.md)|Ler as propriedades de um objeto event.|

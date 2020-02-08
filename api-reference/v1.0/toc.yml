@@ -241,6 +241,8 @@
                   href: api/user-list-ownedobjects.md
                 - name: Listar dispositivos registrados
                   href: api/user-list-registereddevices.md
+                - name: Reprocessar atribuição de licença
+                  href: api/user-reprocesslicenseassignment.md
                 - name: Revogar sessão de entrada
                   href: api/user-revokesigninsessions.md
             - name: Unidade
@@ -278,7 +280,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Email
+            - name: Correio
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -368,6 +370,8 @@
                   href: api/group-post-members.md
                 - name: Adicionar proprietário
                   href: api/group-post-owners.md
+                - name: Atribuir licença
+                  href: api/group-assignlicense.md
                 - name: Verificar grupos de membros
                   href: api/group-checkmembergroups.md
                 - name: Verificar objetos member
@@ -3760,7 +3764,7 @@
               items:
                 - name: Obter recurso
                   href: api/resource-get.md
-        - name: Inteligência de pessoas e no local de trabalho
+        - name: Inteligência de pessoas e local de trabalho
           items:
             - name: Visão geral
               href: resources/social-overview.md
@@ -4321,7 +4325,7 @@
                   href: api/teamsappinstallation-delete.md
                 - name: Atualizar o aplicativo instalado para a equipe
                   href: api/teamsappinstallation-upgrade.md
-            - name: Guia
+            - name: Tab
               href: resources/teamstab.md
               items:
                 - name: Listar guias
