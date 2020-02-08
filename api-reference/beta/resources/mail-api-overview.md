@@ -5,18 +5,20 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: c7bfb550cfacc9ad87114400ca9ae6c24e5d4406
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 77a685f4bda0005f27f7acf74eec0f2a3780aee8
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303087"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839980"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado aos dados de email do Outlook do usuário em uma conta pessoal ou da organização. Com as [permissões de aplicativo e delegadas apropriadas](/graph/permissions-reference), seu aplicativo pode acessar os dados de email do usuário conectado ou qualquer usuário em um locatário. Os dados de email podem estar na nuvem no Exchange Online como parte do Office 365, ou no Exchange no local em uma [implantação híbrida](/graph/hybrid-rest-support).
+O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado aos dados de email do Outlook do usuário em uma conta pessoal ou da organização. Com as [permissões de aplicativo e delegadas apropriadas](/graph/permissions-reference), seu aplicativo pode acessar os dados de email do usuário conectado ou qualquer usuário em um locatário. 
+
+[!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="using-the-mail-rest-api"></a>Usar a API REST do email
 
@@ -25,7 +27,7 @@ As solicitações de API de email são realizadas em nome de um [usuário](../re
 As mensagens de email são representadas pelo recurso [message](../resources/message.md) e organizado em uma [mailFolder](../resources/mailfolder.md). As mensagens e as pastas principais são identificadas por sua propriedade **id**, obtida das operações de `GET`.
 
 >[!IMPORTANT] 
-> Em geral, não presuma que as IDs de **mensagem** e **mailfolder** sejam exclusivas e sempre permanecem as mesmas em uma caixa de correio. Elas podem mudar após certas ações, como copiar ou mover. Você pode optar por usar as [IDs imutáveis](/graph/outlook-immutable-id) para manter a mesma ID, desde que a mensagem permaneça na mesma caixa de correio, _com exceção de envio de uma mensagem de rascunho e alguns outros cenários_. Confira [tempo de vida das IDs imutáveis](/graph/outlook-immutable-id#lifetime-of-immutable-ids) para obter detalhes.
+> Em geral, não assuma que os IDs das **mensagens** e das **pastas de correio** são exclusivos e sempre permanecem os mesmos em uma caixa de correio. Eles podem mudar após determinadas ações, como copiar ou mover. Você pode optar por usar as [IDs imutáveis](/graph/outlook-immutable-id) para manter a mesma ID, desde que a mensagem permaneça na mesma caixa de correio, _com exceção de envio de uma mensagem de rascunho e alguns outros cenários_. Confira [tempo de vida das IDs imutáveis](/graph/outlook-immutable-id#lifetime-of-immutable-ids) para obter detalhes.
 
 Os corpos de mensagens podem estar no formato HTML ou no formato de texto.
 

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c3203292b5aef990c6a50a0063e27353b520ddaa
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: d1888b740315e94ea0bb39a664f5390085e1d2f2
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969805"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839915"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Visão geral da API de contatos pessoais do Outlook
 
@@ -43,6 +43,10 @@ Você pode usar as operações CRUD típicas de um [contact](/graph/api/resource
 - A entidade **contact** é compatível com uma foto de contato que é implementada como a mesma entidade [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-1.0) da foto de usuário armazenada no Exchange Online ou no Azure Active Directory. Isso elimina a sobrecarga na conversão entre as fotos de perfil de usuário e de contato.
 - Mantenha a loja de aplicativos local sincronizada inscrevendo-se em [alterar notificações](/graph/api/resources/webhooks?view=graph-rest-1.0) e [controlar as alterações](delta-query-overview.md) nos contatos e pastas de contato.
 - Você pode ampliar o armazenamento de aplicativos em uma instância de contato como uma [extensão aberta](extensibility-overview.md#open-extensions) ou adicionar dados personalizados fortemente tipados ao esquema de contatos como uma [extensão de esquema](extensibility-overview.md#schema-extensions).
+
+## <a name="where-is-the-data"></a>Onde estão os dados?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>Referência da API
 

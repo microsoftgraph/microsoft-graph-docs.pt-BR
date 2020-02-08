@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2a9c54486098d615d43734fc09d315e797671df7
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 70538917e54ff24be9513bb0d1e912d1918c1a59
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969253"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839938"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
@@ -56,6 +56,10 @@ Use o Microsoft Graph para sugerir dados contextuais aos usuários de seu aplica
 Muitas vezes os aplicativos precisam armazenar os dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso dos dados. O Microsoft Graph permite que você simplesmente inclua dados de aplicativos como cabeçalhos de mensagens da Internet quando [criar](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) ou [enviar](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) uma nova mensagem ou uma resposta a uma mensagem.
 
 Se você precisar adicionar e atualizar dados personalizados subsequentemente, poderá [armazenar os dados em instâncias de recursos individuais](extensibility-overview.md#open-extensions). Se apropriado, como alternativa, você pode estender o esquema, adicionar propriedades personalizadas e armazenar dados digitados nos recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility-overview.md#schema-extensions) sejam passíveis de ser descobertas e compartilhadas.
+
+## <a name="where-is-the-data"></a>Onde estão os dados?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?

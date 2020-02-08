@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 12377bccdc0e91b947541f32a614f412628c9b0e
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 886a891bc8f30f0cbcce104e5899b3e52ac967f7
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774923"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839945"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -151,5 +151,7 @@ Content-length: 586
   "suppressions": [
   ]
 }-->
+
+> **Observação:** o valor da propriedade `clientState` não é retornado para fins de segurança.  
 
 Quando uma solicitação retorna várias páginas de dados, a resposta inclui uma propriedade `@odata.nextLink` para ajudá-lo a gerenciar os resultados.  Para saber mais, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).

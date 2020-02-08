@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 18f322178c8ec7f29acd4af3d7296cffded834c9
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: 4db79703595e9a8e4f21fa6eefd0ab098123138b
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756774"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840001"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
@@ -91,6 +91,10 @@ Dependendo do cenário do aplicativo, você pode usar a API locais no contexto d
 Use a [API de pessoas](people-example.md) no Microsoft Graph para conectar-se a [dados de pessoas](/graph/api/resources/person?view=graph-rest-1.0) que são baseados nos padrões de comunicação e colaboração de um usuário e nas relações comerciais. Você pode implementar controles, como um seletor de pessoas, e sugerir pessoas relevantes para o usuário ao organizar reuniões em nome do usuário.
 
 Economize custos indiretos ao armazenar e gerenciar dados de aplicativos em armazenamentos de dados externos. Com o Microsoft Graph, você pode armazenar dados de aplicativos personalizados como [extensões abertas](extensibility-overview.md#open-extensions) em instâncias de recursos individuais. Se você precisar que os dados sejam digitados ou gostaria de poder compartilhar o esquema digitado, poderá armazenar dados de aplicativos personalizados em [extensões de esquema](extensibility-overview.md#schema-extensions).
+
+## <a name="where-is-the-data"></a>Onde estão os dados?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>Referência da API
 
