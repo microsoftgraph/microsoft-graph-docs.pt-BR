@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ae6cd9109faf46aa9ab2b55c0015f846f494a619
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: 5e56d74e35bf55caade6c0137619d0d24ecc7323
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119781"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865848"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -17,54 +17,40 @@ Confira os destaques das novidades do Microsoft Graph e como você pode [compart
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
 
+## <a name="february-2020-new-and-generally-available"></a>Fevereiro de 2020: novo e disponível para o público geral
+
+### <a name="calendar"></a>Calendário
+Vamos examinar um exemplo de [criação de um evento em um calendário compartilhado ou delegado](outlook-create-event-in-shared-delegated-calendar.md), além das ações e propriedades disponíveis para o representante, os convidados e o proprietário do calendário durante esse processo.
+
+### <a name="security"></a>Segurança
+Para aumentar a segurança ao assinar as [notificações de alteração dos dados do usuário](webhooks.md), [impor o Protocolo TLS 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) ou mais recente em clientes e servidores de sites usados no processo de notificação. O novo requisito será lançado em estágios a partir de 15 de fevereiro de 2020. A partir de 15 de maio de 2020, todos os pontos de extremidade de notificação devem atendem ao novo requisito de TLS. [Descubra os estágios do lançamento](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) e, se necessário, use a nova propriedade **latestSupportedTlsVersion** como uma solução alternativa temporária para evitar falhas de assinatura antes de concluir a atualização de TLS.
+
+## <a name="february-2020-new-in-preview"></a>Fevereiro de 2020: novidades na versão prévia
+
+### <a name="calendar"></a>Calendário
+Confira [tarefas com suporte por APIs de visualização que gerenciam o compartilhamento de calendários e a delegação](outlook-share-or-delegate-calendar.md).
+
+
 ## <a name="january-2020-new-and-generally-available"></a>Janeiro de 2020: Novo e disponível para o público geral
 
 ### <a name="security"></a>Segurança
 Como parte do gerenciamento de alerta de cliente, use o método de [alerta de atualização](/graph/api/alert-update?view=graph-rest-1.0) e atualize o campo **comentários** como `Closed in IPC` ou `Closed in MCAS`.
 
-## <a name="december-2019-new-and-generally-available"></a>Dezembro de 2019: Novo e disponível para o público geral
+### <a name="teamwork"></a>Trabalho em equipe
+Use a propriedade de navegação **primaryChannel** de uma [equipe](/graph/api/resources/team?view=graph-rest-1.0) para acessar o canal padrão, **Geral**.
 
-### <a name="cloud-communications"></a>Comunicações na nuvem
-A API de comunicações na nuvem tem o GA'd e as APIs para [chamada](/graph/api/resources/call?view=graph-rest-1.0) e [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0) estão [disponíveis na v1.0](/graph/api/resources/communications-api-overview?view=graph-rest-1.0).
+### <a name="users"></a>Usuários
+Use a propriedade **identities** para acessar uma ou mais identidades que um [usuário](/graph/api/resources/user?view=graph-rest-1.0) pode usar para entrar em uma conta de usuário do Azure AD. As identidades podem ser fornecidas pela Microsoft, por organizações ou por provedores de identidade social, como Facebook, Google ou Microsoft. Essa propriedade permite que o usuário entre na conta de usuário com uma dessas identidades.
 
-### <a name="education"></a>Educação
-Use a propriedade **classSettings** para gerenciar configurações específicas de classe, como habilitar o envio de resumos de atribuições semanais. Esta propriedade está disponível no recurso [equipe](/graph/api/resources/team?view=graph-rest-1.0) quando a equipe representa uma [classe educacional](/graph/api/resources/educationclass?view=graph-rest-1.0).
-
-### <a name="identity-and-access"></a>Identidade e acesso 
-[Tentar obter objetos de contêiner com permissões limitadas retorna dados parciais](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects). Um exemplo é uma instância de [grupo](/graph/api/resources/group?view=graph-rest-1.0) associada a um [usuário](/graph/api/resources/user?view=graph-rest-1.0), outro **grupo** e um [dispositivo](/graph/api/resources/device?view=graph-rest-1.0). Um aplicativo que tem somente as permissões User.Read.All e Group.Read.All e tentar acessar essa instância de **grupo** obteria os objetos de **usuário** e **grupo**, mas dados limitados para o objeto de **dispositivo** (apenas o tipo de dados e a ID do objeto e não os valores da propriedade).
-
-### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
-A API do insights tem GA'd. Use a API em aplicativos de produção para identificar os documentos mais relevantes, que são:
-
-- [Tendências de](/graph/api/insights-list-trending?view=graph-rest-1.0) um usuário
-- [Usado por](/graph/api/insights-list-used?view=graph-rest-1.0) um usuário
-- [Compartilhados com ou por](/graph/api/insights-list-shared?view=graph-rest-1.0) um usuário
-
-### <a name="reports"></a>Relatórios
-Para obter relatórios de uso do Office 365 usando permissões delegadas por um usuário, os administradores devem ter atribuído ao usuário uma função de administrador limitado do Azure AD. Podendo ser uma das seguintes funções: administrador da empresa, administrador do Exchange, administrador do SharePoint, administrador do Lync, leitor global ou leitor de relatórios. Para mais detalhes, confira [Autorização para APIs lerem os relatórios de uso do Office 365](reportroot-authorization.md).
-
-### <a name="toolkit"></a>Kit de ferramentas
-O Microsoft Graph Toolkit v1.1 foi lançado. Para obter uma lista de aperfeiçoamentos e correções de bugs, confira a [seção de dezembro de 2019](changelog.md#december-2019) do log de alterações.
-
-## <a name="december-2019-new-in-preview"></a>Dezembro de 2019: novidades na versão prévia
-
-### <a name="cloud-communications"></a>Comunicações na nuvem
-- Use o novo recurso [presença](/graph/api/resources/presence?view=graph-rest-beta) para obter informações sobre a disponibilidade e a atividade atual de um ou mais usuários.
-- [Exclua](/graph/api/onlinemeeting-delete?view=graph-rest-beta) uma instância de um [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta).
-- Confira a [seção de dezembro de 2019](changelog.md#december-2019) do log de alterações para a renomeação e a remoção de alguns membros dos recursos da [chamada](/graph/api/resources/call?view=graph-rest-beta) e do [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta), para estar na paridade com a versão v1 desses recursos.
+## <a name="january-2020-new-in-preview"></a>Janeiro de 2020: novidades na versão prévia
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
-Atualizações de [Dezembro](changelog.md#december-2019) do Intune
+Atualizações de [janeiro](changelog.md#january-2020) do Intune.
 
-### <a name="identity-and-access"></a>Identidade e acesso 
-- Correção de comportamento nos relacionamentos **appRoleAssignments** e **appRoleAssignedTo** em [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
-- Use [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta) em [gerenciamento de direitos do Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) para solicitar a adição de um recurso a um [catálogo](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta), para que as funções desse recurso possam ser usadas em um [pacote de acesso](/graph/api/resources/accesspackage?view=graph-rest-beta).
-- Use a [API de avaliação de ameaças](/graph/api/resources/threatassessment-api-overview?view=graph-rest-beta) para capacitar os administradores a relatar emails suspeitos, URLs de phishing, anexos de email ou outros arquivos. O veredicto de varredura de thread pode então informá-los a ajustar a política organizacional adequadamente.
-
-### <a name="teamwork"></a>Trabalho em equipe
-- [Configure as notificações que incluem dados de recursos](webhooks-with-resource-data.md) para recursos do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) nos canais e bate-papos do Microsoft Teams.
-- [Assine as notificações](/graph/api/resources/subscription?view=graph-rest-beta) de [mensagens de canal ou de bate-papo](/graph/api/resources/chatmessage?view=graph-rest-beta) novas ou modificadas.
-- Use o recurso [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) para permitir que a especificação da disponibilidade de um usuário seja atribuída a turnos em um [cronograma](/graph/api/resources/schedule?view=graph-rest-beta). Obtenha ou defina isso como parte das [configurações](/graph/api/resources/usersettings?view=graph-rest-beta) do usuário.
+<!--
+### Identity and access
+Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-beta) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta), and [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta).
+-->
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

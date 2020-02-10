@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f36915f0932f71d4f35215294f3ac4645d4f59d8
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 33b7c7cf7d298de82cef0c46b2a8d56ad61576e7
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774755"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865799"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,10 +18,24 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="february-2020"></a>Fevereiro de 2020
 
+### <a name="groups"></a>Grupos
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | O [group: assignLicense API](../api-reference/v1.0/api/group-assignlicense.md) foi adicionado, o que pode ser usado para atribuir uma licença a uma [group](../api-reference/v1.0/resources/group.md). |
+
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
 | Adição | Beta e v1.0 | A propriedade **latestSupportedTlsVersion** foi adicionada à entidade da [assinatura](/graph/api/resources/subscription?view=graph-rest-1.0). Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Para obter detalhes, confira [Assinaturas do Microsoft Graph que substituíram o TLS 1.0 e o 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
+
+### <a name="users"></a>Usuários
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | v1.0 | O [user: reprocessLicenseAssignment do ](../api-reference/v1.0/api/user-reprocesslicenseassignment.md), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](../api-reference/v1.0/resources/user.md). |
+| Adição | v1.0 | A propriedade **identidades** foi adicionada ao recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0). Esta propriedade representa o conjunto de identidades (como contas locais e contas sociais) com as quais este usuário pode se conectar.|
 
 ## <a name="january-2020"></a>Janeiro de 2020
 
@@ -1658,7 +1672,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|Adicionada a ação **overrideComplianceState** em [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 |Adição|beta|Adicionada a ação **getTargetedUsersAndDevices** no conjunto [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta) |
 |Adição|beta|Adicionada a função [autopilotDeviceStream](/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream?view=graph-rest-beta) em [importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta) |
-|Adição|beta|Adicionada a propriedade **restrictedApps** à entidade [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) |
+|Adição|Beta|Adicionada a propriedade **restrictedApps** à entidade [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta) |
 |Adição|beta|Adicionada a propriedade**tokenCreationDateTime** para a entidade [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)|
 |Exclusão|beta|Removida a propriedade **restrictedApps** na entidade[androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta)|
 |Exclusão|beta|Removida a propriedade **restrictedApps** na entidade[androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta)|
@@ -3317,7 +3331,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |**Tipo de alteração**|**Versão**|**Descrição**|
 |:-------------|:-----------|:--------------|
 |Alteração|beta|Adicionou a propriedade deletedDateTime à entidade [user](/graph/api/resources/user?view=graph-rest-beta).
-|Alteração|beta|Adicionou a propriedade deletedDateTime à entidade [group](/graph/api/resources/group?view=graph-rest-beta).
+|Alteração|Beta|Adicionou a propriedade deletedDateTime à entidade [group](/graph/api/resources/group?view=graph-rest-beta).
 |Alteração|beta|Adicionou a propriedade deletedDateTime à entidade [application](/graph/api/resources/application?view=graph-rest-beta).
 
 ### <a name="added-domain-operations-to-v10"></a>Adicionou operações de domínio para v1.0
