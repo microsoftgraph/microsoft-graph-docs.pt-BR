@@ -4,12 +4,12 @@ description: 'O HTML que define o conteúdo e a estrutura da página quando voc�
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: fcb4a8127b633ba309212a7160c9e5548836466c
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 2ba3ce1432a2213a4ecdcfce1ab9a9c98c88c818
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639214"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865729"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>HTML de entrada e saída nas páginas do OneNote
 
@@ -447,7 +447,12 @@ As tabelas podem conter os atributos a seguir no HTML de entrada e saída. As AP
 |Atributo de entrada|Descrição|
 |:------|:------|
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
-| style | As propriedades [style](#styles) do CSS do elemento e também:<br/> - **border**. Pode ser 0px ou 1px.<br/> - **width**. Com suporte de **table** e **td** como pixels ou porcentagem de largura da página.<br/><br/>Exemplo: `width="100px"` ou `width="60%"` |
+| style | As propriedades [style](#styles) do CSS do elemento e também:<br/> - **width**. Com suporte de **table** e **td** como pixels ou porcentagem de largura da página.<br/><br/>Exemplo: `width="100px"` ou `width="60%"` |
+| borda | Adiciona borda à tabela com largura especificada |
+| largura | Largura da tabela |
+| bgcolor | A cor do plano de fundo da tabela |
+
+**Observação:** não há suporte para o uso da propriedade **border** no atributo do estilo de uma tabela de html de entrada. 
  
 
 #### <a name="output-attributes"></a>Atributos de saída
@@ -464,7 +469,7 @@ Os exemplos a seguir mostram HTML de entrada que usa maneiras diferentes de defi
 #### <a name="input-html-with-optional-settings-at-different-levels"></a>HTML de entrada com configurações opcionais em níveis diferentes.
 
 ```html
-<table style="border:0px;width:500px;background-color:green">
+<table border="1"; Width="500"; bgcolor = "green">
     <tr> 
         <td>Cell 1</td> 
         <td>Cell 2</td> 
