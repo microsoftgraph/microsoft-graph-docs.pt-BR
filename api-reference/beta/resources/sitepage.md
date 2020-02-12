@@ -6,12 +6,12 @@ title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 240ab50f31d500fad960768bb6c45cb9c6ff6511
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d92a78ff73854d465ba8363b7bddff66be6bffc4
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965044"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953610"
 ---
 # <a name="sitepage-resource"></a>recurso sitePage
 
@@ -27,13 +27,13 @@ Todos os exemplos abaixo são relativos a um [site][], por `https://graph.micros
 
 | Tarefa comum                     | Método HTTP
 |:--------------------------------|:------------------------------
-| [Listar páginas][]                  | OBTER/Pages
+| [List pages][]                  | OBTER/Pages
 | [Obter página][]                    | OBTER/Pages/{Page-ID}
 | [Create][]                      | POSTAR/Pages
 | [Delete][]                      | EXCLUIR/Pages/{Page-ID}
 | [Publish][]                     | POSTAR/Pages/{Page-ID}/Publish
 
-[Listar páginas]: ../api/sitepage-list.md
+[List pages]: ../api/sitepage-list.md
 [Obter página]: ../api/sitepage-get.md
 [Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
@@ -113,7 +113,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 | eTag                 | string            | ETag do item. Somente leitura.
 | lastModifiedBy       | [identitySet][]   | Identidade da última pessoa que alterou esse item. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset    | A data e a hora que o item foi modificado pela última vez. Somente leitura.
-| parentReference      | [itemReference][] | A data e a hora que o item foi modificado pela última vez. Somente leitura.
+| parentReference      | [itemReference][] | Informações do pai, se o item tiver um pai. Somente leitura.
 | webUrl               | string (url)      | A URL que exibe o item no navegador. Somente leitura.
 
 ## <a name="relationships"></a>Relações
