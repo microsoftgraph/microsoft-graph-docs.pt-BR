@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9136931b08a2e86f582a0272a6be214740562e4b
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 3d4da6d5998f55496e0c726fa015164307325f17
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865764"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953627"
 ---
 # <a name="user-reprocesslicenseassignment"></a>usuário: reprocessLicenseAssignment
 
@@ -48,6 +48,7 @@ Se bem-sucedido, este método retorna `200 OK` o código de resposta e um objeto
 O exemplo a seguir mostra como reprocessar atribuições de licença para o usuário.
 ### <a name="request"></a>Solicitação
 
+
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -57,6 +58,24 @@ O exemplo a seguir mostra como reprocessar atribuições de licença para o usu�
 POST https://graph.microsoft.com/v1.0/users/047dd774-f1c4-40f2-82f0-278de79f9b83/reprocessLicenseAssignment
 
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-reprocesslicenseassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-reprocesslicenseassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-reprocesslicenseassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-reprocesslicenseassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
