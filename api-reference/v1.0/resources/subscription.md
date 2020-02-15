@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ebd12c5876ae9bb580ac8466eeb88341bb1a0ae4
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 02f06d9de4a3e40c06208502b8b08fbc2ab06bd2
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774916"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953589"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -44,7 +44,7 @@ Uma assinatura permite que um aplicativo cliente receba notificações sobre dad
 | id | string | Identificador exclusivo da assinatura. Somente leitura. |
 | ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Apenas leitura. |
-| latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Valores possíveis: **v1_0**, **v1_1**, **v1_2**, **v1_3**. Opcional, o padrão é v1_2. Se o ponto de extremidade do cliente oferecer suporte para o TLS 1.2 ou superior, essa propriedade não será necessária. Se o ponto de extremidade do cliente oferecer suporte apenas para o TLS 1.0 ou 1.1, essa propriedade deverá ser definida como a versão correspondente ou a operação falhará. |
+| latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 
