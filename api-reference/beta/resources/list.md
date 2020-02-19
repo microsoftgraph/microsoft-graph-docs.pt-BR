@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: O recurso list representa uma lista em um site.
+description: O recurso de lista representa uma lista em um site.
 ms.date: 09/11/2017
 title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b79172049278758c77ac620f00c391d52633792b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4df869eeba7b66dad0bddef48b7d5686d8899702
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009990"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108459"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -31,6 +31,7 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 | Tarefa comum               | Método HTTP
 |:--------------------------|:------------------------------
 | [Obter lista][]              | GET /lists/{list-id}
+| [Criar lista][]           | POSTAR/Lists
 | [Enumerar itens de lista][]  | GET /lists/{list-id}/items
 | [Atualizar item de lista][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Excluir item de lista][]      | DELETE /lists/{list-id}/items/{item-id}
@@ -38,6 +39,7 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 | [Obter atividades recentes][] | GET /lists/{list-id}/activities
 
 [Obter lista]: ../api/list-get.md
+[Criar lista]: ../api/list-create.md
 [Enumerar itens de lista]: ../api/listitem-list.md
 [Atualizar item de lista]: ../api/listitem-update.md
 [Excluir item de lista]: ../api/listitem-delete.md
@@ -91,13 +93,13 @@ O recurso **list** tem as seguintes propriedades.
 | **contentTypes** | Collection([contentType][])      | A coleção de tipos de conteúdo presentes nesta lista.
 | **displayName**  | string                           | O título em exibição da lista.
 | **list**         | [listInfo][]                     | Fornece mais detalhes sobre a lista.
-| **system**       | [systemFacet][]                  | Se estiver presente, indica que se trata de uma lista gerenciada pelo sistema. Somente leitura.
+| **system**       | [systemFacet][]                  | Se estiver presente, indica que se trata de uma lista gerenciada pelo sistema. Apenas leitura.
 
 As propriedades a seguir são herdadas do **[baseItem][]**.
 
 | Nome da propriedade            | Tipo             | Descrição
 |:-------------------------|:-----------------|:-------------------------------
-| **id**                   | string           | O identificador exclusivo do item. Somente leitura.
+| **id**                   | cadeia de caracteres           | O identificador exclusivo do item. Somente leitura.
 | **name**                 | string           | O nome do item.
 | **createdBy**            | [identitySet][]  | Identidade do criador desse item. Somente leitura.
 | **createdDateTime**      | DateTimeOffset   | A data e a hora da criação do item. Somente leitura.
@@ -113,7 +115,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 | Nome da relação | Tipo                        | Descrição
 |:------------------|:----------------------------|:------------------------------
 | **activities**    | Conjunto [itemActivity][] | As atividades recentes que ocorreram nesta lista.
-| **drive**         | [drive][]                   | Presente somente em bibliotecas de documentos. Permite o acesso à lista como um recurso [drive][] com [driveItems][driveItem].
+| **drive**         | [drive][]                   | Presente somente em bibliotecas de documentos. Permite o acesso à lista como um recurso de [unidade][] com [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | Todos os itens contidos na lista.
 
 [baseItem]: baseitem.md

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6be3fa431a2216ef8b31b673a5f73ef6067fff9
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0fd9f5ea9cd15abac7eea693b2af5c595b145ac7
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939198"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108438"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>tipo de recurso accessPackageAssignmentRequest
 
@@ -36,10 +36,10 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |id|String| Somente leitura.|
 |isValidationOnly|Booliano|True se a solicitação não deve ser processada para a atribuição.|
 |elabora|String|A justificativa fornecida pelo solicitante.|
-|RequestState|String|Um dos `Denied`, `Delivered`, `PartiallyDelivered`,. Somente leitura.|
-|requestStatus|String|Mais informações sobre o status do processamento da solicitação. Somente leitura.|
-|RequestType|String|Um `UserAdd` ou `UserRemove`. Somente leitura.|
-
+|RequestState|String|Um de `Denied`, `Delivered` `PartiallyDelivered` ou `Submitted`. Apenas leitura.|
+|requestStatus|String|Mais informações sobre o status do processamento da solicitação. Apenas leitura.|
+|RequestType|String|Um de `UserAdd`, `UserRemove` `AdminAdd` ou `AdminRemove`. Apenas leitura.|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Uma atribuição de pacote de acesso solicitada foi criada.|
 
 ## <a name="relationships"></a>Relações
 
@@ -64,7 +64,14 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
- 
+  "createdDateTime": "2020-02-12T22:06:58.303Z",
+  "completedDate": "2020-02-12T22:14:28.19Z",
+  "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
+  "requestType": "UserAdd",
+  "requestState": "Delivered",
+  "requestStatus": "FulfilledNotificationTriggered",
+  "isValidationOnly": false,
+  "justification": ""
 }
 ```
 
