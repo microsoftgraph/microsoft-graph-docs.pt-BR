@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 45c0d34fbbf04d8203092a33c4f4d499b1f7bdb4
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 36a20e88e8755a6a38140759f3cac568efbdf18c
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651768"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108466"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -60,7 +60,7 @@ Atualmente, os seguintes recursos oferecem atualmente um cabeçalho `Retry-After
 - [Pessoas e social](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 
-Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://msdn.microsoft.com/library/office/dn589798.aspx).
+Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
 > [!NOTE]
 > Se nenhum cabeçalho `Retry-After` for fornecido pela resposta, recomendamos implementar uma política de repetição exponencial de retirada. Você também pode implementar [padrões mais avançados](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) ao criar aplicativos em grande escala. 
