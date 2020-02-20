@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 2a93e0e25a426fec3d7ab1e10a51953c286da0ab
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: a2389044671be071cf1d43dcd788519ee49d6363
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216238"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159021"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -20,16 +20,20 @@ A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notifica
 
 Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alterações nos seguintes recursos:
 
-- [Mensagem][] do Outlook
-- [Evento][] do Outlook
-- [Contato][] pessoal do Outlook
-- [user][]
-- [group][]
-- [Conversa][] em grupo do Office 365
-- Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
-- Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
-- [chatMessage][]
-- [Alerta][] de segurança
+| **Resource** | **Caminhos de recurso suportados** | **Dados de recurso podem ser incluídos em notificações**                  |
+|:----------------|:------------|:-----------------------------------------|
+| [Mensagem][] do Outlook | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | Não |
+| [Evento][] do Outlook | `/users/{id}/events` | Não |
+| [Contato][] pessoal do Outlook | `/users/{id}/contacts` | Não |
+| [user][] | `/users`(alterações em todos os usuários)<br>`/users/{id}`(alterações em um usuário específico) | Não |
+| [group][] | `/groups`(alterações em todos os grupos)<br>`/groups/{id}`(alterações em um grupo específico) | Não |
+| [Conversa][] em grupo do Office 365 | `groups/{id}/conversations` | Não |
+| Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário | `/me/drive/root` | Não |
+| Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business | `/drives/{id}/root`<br> `/me/drive/root` | Não |
+| [Alerta][] de segurança | `/security/alerts/{id}`(alterações em um alerta específico) <br> `/security/alerts/?$filter`(alterações nos alertas filtrados)| Não |
+| Teams [chat](/graph/api/resources/subscription?view=graph-rest-beta) | `/teams/allMessages`(mensagens em todos os canais em todas as equipes)<br>`/teams/{id}/channels/{id}/messages`(mensagens em um canal específico)<br>`/chats/allMessages`(mensagens em todos os chats)<br>`/chats/{id}/messages`(mensagens em um chat específico) | Sim |
+
+> **Observação**: qualquer caminho de recurso que comece `/users/{id}` com também pode `/me` aceitar para fazer referência ao usuário conectado.
 
 ## <a name="permissions"></a>Permissões
 

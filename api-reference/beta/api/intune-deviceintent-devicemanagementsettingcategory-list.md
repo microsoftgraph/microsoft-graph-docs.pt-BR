@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 838b032670295d3fb722e33c5476ba63fb0a4628
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 63c7b679a2886a675e0cb8a2acbf3fa783769671
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945603"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162299"
 ---
 # <a name="list-devicemanagementsettingcategories"></a>Listar deviceManagementSettingCategories
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,14 +63,15 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 207
+Content-Length: 242
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
       "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "hasRequiredSetting": true
     }
   ]
 }

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 038c0f81999bebbf0d2406637bb71e03a67397ce
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 40e173e3d40a7253bf0947edfd1284094b9ada26
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539201"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159490"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>tipo de recurso groupPolicyMigrationReport
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O relatório de migração de política de grupo.
 
@@ -33,10 +33,10 @@ O relatório de migração de política de grupo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |groupPolicyObjectId|Guid|O GUID do objeto da política de grupo do conteúdo XML do GPO|
-|displayName|String|O nome do objeto de diretiva de grupo do conteúdo XML do GPO|
-|ouDistinguishedName|Cadeia de caracteres|O nome diferenciado da OU.|
+|displayName|Cadeia de caracteres|O nome do objeto de diretiva de grupo do conteúdo XML do GPO|
+|ouDistinguishedName|String|O nome diferenciado da OU.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi modificado pela última vez.|
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
@@ -51,6 +51,7 @@ O relatório de migração de política de grupo.
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |groupPolicySettingMappings|coleção [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Uma lista de configurações de política de grupo para mapeamentos MDM/Intune.|
+|unsupportedGroupPolicyExtensions|coleção [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md)|Uma lista de extensões de política de grupo sem suporte no objeto de diretiva de grupo.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

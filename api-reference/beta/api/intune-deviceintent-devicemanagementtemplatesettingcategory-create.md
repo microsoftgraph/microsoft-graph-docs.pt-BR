@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce87bc6dbde6eb2e905f39e8968e024ed01c0a75
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f81c3c859dcfd14f60a0874e2c9c23445c6f6fdf
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945456"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162285"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>Criar deviceManagementTemplateSettingCategory
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,6 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|String|A ID de categoria herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|Cadeia de caracteres|O nome da categoria herdado de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Booliano|A categoria contém a configuração necessária de nível superior herdada de [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
@@ -66,11 +67,12 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/categories
 Content-type: application/json
-Content-length: 121
+Content-length: 152
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplateSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -79,12 +81,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 170
+Content-Length: 201
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplateSettingCategory",
   "id": "cd213562-3562-cd21-6235-21cd623521cd",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 

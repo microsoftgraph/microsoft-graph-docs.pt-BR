@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: e1b613dc9140e597dc9eb0c74448f227cf940ba5
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 9a5a6ee1a9111f85d041821e8e5917c0b007698d
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636823"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160337"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -25,7 +25,6 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
 - [Destino de atribuição de todos os usuários licenciados](intune-shared-alllicensedusersassignmenttarget.md)
 - [Proteção de aplicativo gerenciado Android](intune-shared-androidmanagedappprotection.md)
-- [Tipo de rotação da senha de recuperação do BitLocker](intune-shared-bitlockerrecoverypasswordrotationtype.md)
 - [Ação do portal da empresa](intune-shared-companyportalaction.md)
 - [Ação bloqueada do portal da empresa](intune-shared-companyportalblockedaction.md)
 - [Status de conformidade](intune-shared-compliancestatus.md)
@@ -38,13 +37,12 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Configuração de registro do dispositivo](intune-shared-deviceenrollmentconfiguration.md)
 - [Tipo de registro de dispositivo](intune-shared-deviceenrollmenttype.md)
 - [Gerenciamento de dispositivos](intune-shared-devicemanagement.md)
-- [Emissor de credenciais derivadas de gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialissuer.md)
-- [Tipo de notificação de credencial derivada de gerenciamento de dispositivo](intune-shared-devicemanagementderivedcredentialnotificationtype.md)
 - [Configurações de credenciais derivadas de gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Script de gerenciamento de dispositivo](intune-shared-devicemanagementscript.md)
 - [Tipo de plataforma do dispositivo](intune-shared-deviceplatformtype.md)
 - [Tipo de dispositivo](intune-shared-devicetype.md)
 - [Habilitação](intune-shared-enablement.md)
+- [Opções de disponibilidade do registro](intune-shared-enrollmentavailabilityoptions.md)
 - [Estado de registro](intune-shared-enrollmentstate.md)
 - [Destino de atribuição de grupos de exclusão](intune-shared-exclusiongroupassignmenttarget.md)
 - [Destino de atribuição de grupo](intune-shared-groupassignmenttarget.md)
@@ -57,11 +55,6 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Intervalo de IP](intune-shared-iprange.md)
 - [Intervalo de IPv4](intune-shared-ipv4range.md)
 - [Intervalo de IPv6](intune-shared-ipv6range.md)
-- [Par de valores booleanos principais](intune-shared-keybooleanvaluepair.md)
-- [Par principal de valor inteiro](intune-shared-keyintegervaluepair.md)
-- [Par chave real de valor](intune-shared-keyrealvaluepair.md)
-- [Par de valores de cadeia de caracteres de chave](intune-shared-keystringvaluepair.md)
-- [Par de valores digitados por chave](intune-shared-keytypedvaluepair.md)
 - [Par chave/valor](intune-shared-keyvaluepair.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-shared-macosvppappassignmentsettings.md)
 - [Tipo de proprietário do dispositivo gerenciado](intune-shared-manageddeviceownertype.md)
@@ -96,5 +89,4 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Configurações de atribuição do aplicativo Windows universal AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Estado do Windows Update](intune-shared-windowsupdatestate.md)
-- [Status do Windows Update](intune-shared-windowsupdatestatus.md)
 

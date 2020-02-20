@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccb18fa2f8ec1545530dca13a7ed9d59be5a7504
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 59d49f6862f8ab8df1baad1db5458131067514b4
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539096"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162488"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Resumo do sistema operacional do dispositivo.
 
@@ -33,6 +33,7 @@ Resumo do sistema operacional do dispositivo.
 |androidDeviceAdminCount|Int32|Número de dispositivos Android de administrador de dispositivos.|
 |androidFullyManagedCount|Int32|Número de dispositivos Android totalmente gerenciados.|
 |androidWorkProfileCount|Int32|Número de dispositivos Android de perfil de trabalho.|
+|configMgrDeviceCount|Int32|Número de dispositivos gerenciados pelo ConfigMgr.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -56,7 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "androidDedicatedCount": 1024,
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
-  "androidWorkProfileCount": 1024
+  "androidWorkProfileCount": 1024,
+  "configMgrDeviceCount": 1024
 }
 ```
 

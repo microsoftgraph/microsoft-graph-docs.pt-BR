@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 39b62ea997c62537a419bd8090d330184af7f47c
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 2ee75dfc57e68f8074500996fca4f5306884d841
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636585"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163679"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -51,6 +51,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de segurança Wi-Fi do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Tipo de EAP do Android](intune-deviceconfig-androideaptype.md)
 - [Configuração de perfil de email do EAS do Android](intune-deviceconfig-androideasemailprofileconfiguration.md)
+- [Tipo de pacote VPN AlwaysOn do Android Enterprise](intune-deviceconfig-androidenterprisealwaysonvpnpackagetype.md)
 - [Configuração de Wi-Fi corporativa do Android](intune-deviceconfig-androidenterprisewificonfiguration.md)
 - [Base de perfil de certificado do Android for Work](intune-deviceconfig-androidforworkcertificateprofilebase.md)
 - [Política de conformidade do Android for Work](intune-deviceconfig-androidforworkcompliancepolicy.md)
@@ -118,6 +119,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política da unidade fixa do BitLocker](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Tipo de informações de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Opções de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
+- [Tipo de rotação da senha de recuperação do BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Política da unidade removível do BitLocker](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Política da unidade de sistema do BitLocker](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Configuração de sincronização do navegador](intune-deviceconfig-browsersyncsetting.md)
@@ -131,6 +133,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Uso de configurações](intune-deviceconfig-configurationusage.md)
 - [Extensão de logon único da credencial](intune-deviceconfig-credentialsinglesignonextension.md)
 - [Nome alternativo da entidade personalizada](intune-deviceconfig-customsubjectalternativename.md)
+- [Janela de tempo de atualização personalizada](intune-deviceconfig-customupdatetimewindow.md)
 - [Dia da semana](intune-deviceconfig-dayofweek.md)
 - [Política de conformidade do dispositivo padrão](intune-deviceconfig-defaultdevicecompliancepolicy.md)
 - [Tipo de superfície de ataque do Defender](intune-deviceconfig-defenderattacksurfacetype.md)
@@ -254,6 +257,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Multitexto do valor da apresentação da política de grupo](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
 - [Texto do valor da apresentação da política de grupo](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [Tipo de política de grupo](intune-grouppolicy-grouppolicytype.md)
+- [Definição de política de grupo carregada](intune-grouppolicy-grouppolicyuploadeddefinition.md)
+- [Apresentação de política de grupo carregada](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [Algoritmos hash](intune-deviceconfig-hashalgorithms.md)
 - [Configuração de acesso à tinta](intune-deviceconfig-inkaccesssetting.md)
 - [Finalidade pretendida](intune-deviceconfig-intendedpurpose.md)
@@ -289,6 +294,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Perfil de certificado do SCEP do iOS](intune-deviceconfig-iosscepcertificateprofile.md)
 - [extensão de logon único do iOS](intune-deviceconfig-iossinglesignonextension.md)
 - [Configurações de logon único do iOS](intune-deviceconfig-iossinglesignonsettings.md)
+- [tipo de agendamento de atualização do software iOS](intune-deviceconfig-iossoftwareupdatescheduletype.md)
 - [Certificado raiz confiável do iOS](intune-deviceconfig-iostrustedrootcertificate.md)
 - [Configuração de atualização do iOS](intune-deviceconfig-iosupdateconfiguration.md)
 - [Status do dispositivo de atualização do iOS](intune-deviceconfig-iosupdatedevicestatus.md)
@@ -302,8 +308,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de Wi-Fi do iOS](intune-deviceconfig-ioswificonfiguration.md)
 - [iOSik EV2 VPN Configuration](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Extensão de logon único Kerberos](intune-deviceconfig-kerberossinglesignonextension.md)
+- [Par de valores booleanos principais](intune-deviceconfig-keybooleanvaluepair.md)
+- [Par principal de valor inteiro](intune-deviceconfig-keyintegervaluepair.md)
+- [Par chave real de valor](intune-deviceconfig-keyrealvaluepair.md)
 - [Tamanho da chave](intune-deviceconfig-keysize.md)
 - [Opção de provedor de armazenamento de chaves](intune-deviceconfig-keystorageprovideroption.md)
+- [Par de valores de cadeia de caracteres de chave](intune-deviceconfig-keystringvaluepair.md)
+- [Par de valores digitados por chave](intune-deviceconfig-keytypedvaluepair.md)
 - [Usos de chave](intune-deviceconfig-keyusages.md)
 - [Valor da chave](intune-deviceconfig-keyvalue.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
@@ -343,7 +354,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado de certificado do dispositivo gerenciado](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Estado de criptografia de dispositivo gerenciado](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Estado da configuração do aplicativo móvel do dispositivo gerenciado](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
-- [Estado de configuração do aplicativo móvel do dispositivo gerenciado](intune-deviceconfig-managedDeviceMobileAppConfigurationState.md)
 - [Aplicativo reportado pelo dispositivo gerenciado](intune-deviceconfig-manageddevicereportedapp.md)
 - [Classificação de conteúdo de mídia da Austrália](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Classificação de conteúdo de mídia do Canadá](intune-deviceconfig-mediacontentratingcanada.md)
@@ -370,7 +380,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Inteiro de configuração de OMA](intune-deviceconfig-omasettinginteger.md)
 - [Cadeia de configuração de OMA ](intune-deviceconfig-omasettingstring.md)
 - [Cadeia xml de configuração de OMA](intune-deviceconfig-omasettingstringxml.md)
+- [Carga de criptografia local](intune-raimportcerts-onpremencryptedpayload.md)
 - [Intervalo de versão do sistema operacional](intune-deviceconfig-operatingsystemversionrange.md)
+- [Solicitação de recript de pfx](intune-raimportcerts-pfxrecryptionrequest.md)
+- [Certificado de usuário pfx](intune-raimportcerts-pfxusercertificate.md)
 - [Tipo de ação de energia](intune-deviceconfig-poweractiontype.md)
 - [Recursos pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
 - [Classificação de tipo de aplicativos](intune-deviceconfig-ratingappstype.md)
@@ -542,6 +555,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de agendamento de instalação do Windows Update](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Opção de exibição para notificação de atualização do Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Instalação agendada do Windows Update](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Status do Windows Update](intune-deviceconfig-windowsupdatestatus.md)
 - [Tipo de atualização do Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Configurações de controle da conta do usuário do Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Configuração de VPN do Windows](intune-deviceconfig-windowsvpnconfiguration.md)

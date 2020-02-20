@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d57798baa5e2b8bdf99e911b5baf42d34213f82
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3cc165fed3f08d961b34bccd436e87d6b82dc8cc
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37529064"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162474"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsDevicePerformance
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade de desempenho do dispositivo de análise da experiência do usuário contém detalhes de desempenho de inicialização do dispositivo.
 
@@ -33,12 +33,12 @@ A entidade de desempenho do dispositivo de análise da experiência do usuário 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
+|id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|Cadeia de caracteres|O nome do dispositivo de análise da experiência do usuário.|
-|modelo|Cadeia de caracteres|O modelo de dispositivo de análise da experiência do usuário.|
+|modelo|String|O modelo de dispositivo de análise da experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise da experiência do usuário.|
-|disktype|[disktype](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise da experiência do usuário. Os valores possíveis são: `unkown`, `hdd`, `ssd`.|
-|operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo de análise da experiência do usuário.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise da experiência do usuário. Os valores possíveis são: `unkown`, `hdd`, `ssd`.|
+|operatingSystemVersion|String|A versão do sistema operacional do dispositivo de análise da experiência do usuário.|
 |bootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização do núcleo do dispositivo de análise da experiência do usuário em milissegundos.|
 |groupPolicyBootTimeInMs|Int32|O tempo de inicialização da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
@@ -47,6 +47,7 @@ A entidade de desempenho do dispositivo de análise da experiência do usuário 
 |coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
 |groupPolicyLoginTimeInMs|Int32|O tempo de logon da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
 |deviceCount|Int64|Contagem de dispositivos resumida da análise de experiência do usuário.|
+|responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -75,7 +76,8 @@ Veja a seguir uma representação JSON do recurso.
   "loginScore": 1024,
   "coreLoginTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
-  "deviceCount": 1024
+  "deviceCount": 1024,
+  "responsiveDesktopTimeInMs": 1024
 }
 ```
 

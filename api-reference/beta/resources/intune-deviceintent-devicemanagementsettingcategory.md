@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6288edcd5c81e359ebb77335aa64e6f53ac71ef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 569c71d80411d4ec75086d47dcd9f74c5e4ef9e9
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364730"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163478"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>tipo de recurso deviceManagementSettingCategory
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa uma categoria de configuração
 
@@ -33,7 +33,8 @@ Entidade que representa uma categoria de configuração
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID da categoria|
-|displayName|String|O nome da categoria|
+|displayName|Cadeia de caracteres|O nome da categoria|
+|hasRequiredSetting|Booliano|A categoria contém a configuração necessária de nível superior|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -52,7 +53,8 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "hasRequiredSetting": true
 }
 ```
 

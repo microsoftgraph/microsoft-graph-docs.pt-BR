@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: debb09cb12191f025a70a2dde5d4b476b6cd4592
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2622a418d39e01f1d5e965de28fc5a8ef8922391
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944600"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162075"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -72,7 +72,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1082
+Content-length: 1114
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -90,7 +90,8 @@ Content-length: 1082
     "androidDedicatedCount": 5,
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
-    "androidWorkProfileCount": 7
+    "androidWorkProfileCount": 7,
+    "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -117,7 +118,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1195
+Content-Length: 1227
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -136,7 +137,8 @@ Content-Length: 1195
     "androidDedicatedCount": 5,
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
-    "androidWorkProfileCount": 7
+    "androidWorkProfileCount": 7,
+    "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

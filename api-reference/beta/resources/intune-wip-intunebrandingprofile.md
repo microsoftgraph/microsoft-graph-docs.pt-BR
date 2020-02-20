@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa9b0afc1ccb014cc56945e8e3ab450765f5dc63
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f161b0354e9fd2a4e8cf7a5e5936d2cf2719a407
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088025"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163700"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
@@ -59,6 +59,9 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
 |showAzureADEnterpriseApps|Booliano|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
 |showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
+|sendDeviceOwnershipChangePushNotification|Booliano|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final. Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -125,7 +128,12 @@ Veja a seguir uma representação JSON do recurso.
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

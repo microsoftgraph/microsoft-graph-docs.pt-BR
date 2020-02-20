@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02fe74bf70c5961b510bfd74ba732c81839e575a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 61881d1ed9073f214e8d5c1763bd5236b37bd894
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945155"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162229"
 ---
 # <a name="create-devicehealthscript"></a>Criar deviceHealthScript
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,18 +52,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo do script de integridade do dispositivo|
-|publicador|Cadeia de Caracteres|Nome do editor de script de integridade do dispositivo|
+|publicador|String|Nome do editor de script de integridade do dispositivo|
 |versão|String|Versão do script de integridade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
-|description|String|Descrição do script de integridade do dispositivo|
+|descrição|String|Descrição do script de integridade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
 |remediationScriptContent|Binária|Todo o conteúdo do script do PowerShell de correção|
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
-|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
+|runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|isGlobalScript|Booliano|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
+|highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
 
 
 
@@ -77,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 Content-type: application/json
-Content-length: 483
+Content-length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -92,7 +94,9 @@ Content-length: 483
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
 
@@ -101,7 +105,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 655
+Content-Length: 747
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -119,7 +123,9 @@ Content-Length: 655
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
 

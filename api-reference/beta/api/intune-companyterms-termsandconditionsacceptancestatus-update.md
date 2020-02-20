@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe36370710773c77cdbe38d0fe97a91ac721328a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: a09b95a815a37994ce10827ac304e9ab377d51fe
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954157"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159140"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Atualizar termsAndConditionsAcceptanceStatus
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,6 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [termsAn
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
+|userPrincipalName|String|O userPrincipalName do usuário que aceitou o termo.|
 
 
 
@@ -68,13 +69,14 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 Content-type: application/json
-Content-length: 211
+Content-length: 264
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -83,14 +85,15 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 313
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

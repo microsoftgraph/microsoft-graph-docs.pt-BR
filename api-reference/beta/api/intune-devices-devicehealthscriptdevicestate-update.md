@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3899f1ae9d0860ee2eca169169bb9012358bb886
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c2208a4f7d9ae7dcecdcacb471643d9cda41a421
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945057"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162110"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>Atualizar deviceHealthScriptDeviceState
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,11 +56,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |lastStateUpdateDateTime|DateTimeOffset|O último carimbo de data/hora de quando o script de integridade do dispositivo é executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O carimbo de data/hora seguinte de quando o script de integridade do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez em que a extensão de gerenciamento do Intune foi sincronizada com o Intune|
-|preRemediationDetectionScriptOutput|Cadeia de Caracteres|Saída do script de detecção antes da correção|
-|preRemediationDetectionScriptError|Cadeia de Caracteres|Erro do script de detecção antes da correção|
-|remediationScriptError|Cadeia de Caracteres|Saída de erro do script de correção|
-|postRemediationDetectionScriptOutput|Cadeia de Caracteres|Saída do script de detecção após a correção|
-|postRemediationDetectionScriptError|Cadeia de Caracteres|Erro do script de detecção após a correção|
+|preRemediationDetectionScriptOutput|String|Saída do script de detecção antes da correção|
+|preRemediationDetectionScriptError|String|Erro do script de detecção antes da correção|
+|remediationScriptError|String|Saída de erro do script de correção|
+|postRemediationDetectionScriptOutput|String|Saída do script de detecção após a correção|
+|postRemediationDetectionScriptError|String|Erro do script de detecção após a correção|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da execução do script de integridade do dispositivo mais recente. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 

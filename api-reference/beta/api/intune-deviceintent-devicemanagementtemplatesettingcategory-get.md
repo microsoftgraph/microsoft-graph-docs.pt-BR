@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b270af753d1ba9e67d0a75a02bd379705d48837
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1994de46a0641d75be0f78792b4ef6af3a084430
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945435"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162278"
 ---
 # <a name="get-devicemanagementtemplatesettingcategory"></a>Obter deviceManagementTemplateSettingCategory
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,13 +66,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 195
+Content-Length: 228
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementTemplateSettingCategory",
     "id": "cd213562-3562-cd21-6235-21cd623521cd",
-    "displayName": "Display Name value"
+    "displayName": "Display Name value",
+    "hasRequiredSetting": true
   }
 }
 ```

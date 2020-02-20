@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c6a6634b477437a1336fbfc45dfbb04751b6343
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: a580db6993abfedd5bc42ecf77579e2d365afcb3
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39933661"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160302"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>Obter windowsMicrosoftEdgeApp
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 987
+Content-Length: 1050
 
 {
   "value": {
@@ -97,7 +97,8 @@ Content-Length: 987
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
-    "channel": "beta"
+    "channel": "beta",
+    "displayLanguageLocale": "Display Language Locale value"
   }
 }
 ```

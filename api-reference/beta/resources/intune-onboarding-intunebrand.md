@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 478f087b4a7998a8c90bd429e0a0d3173d9b8e3c
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 1b6b913f115ee73566a688a90355377a7ff495eb
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088032"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160344"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 
@@ -31,6 +31,7 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |showNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial do aplicativo do portal da empresa|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual padrão|
 |contactITName|String|Nome da pessoa/organização responsável pelo suporte de TI.|
 |contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
 |contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
@@ -44,6 +45,8 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
 |showAzureADEnterpriseApps|Booliano|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
 |showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
+|sendDeviceOwnershipChangePushNotification|Booliano|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final. Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -83,6 +86,9 @@ Veja a seguir uma representação JSON do recurso.
     "value": "binary"
   },
   "showDisplayNameNextToLogo": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "contactITName": "String",
   "contactITPhoneNumber": "String",
   "contactITEmailAddress": "String",
@@ -102,7 +108,9 @@ Veja a seguir uma representação JSON do recurso.
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "String"
 }
 ```
 

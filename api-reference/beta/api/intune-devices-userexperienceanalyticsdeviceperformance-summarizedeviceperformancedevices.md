@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ec7d75d22b1d3eae4561c093ebfed006c728885
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: bf3bfd84f2f0d206553d955c74adfe05f7add6a5
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944481"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162047"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a>função summarizeDevicePerformanceDevices
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 636
+Content-Length: 675
 
 {
   "value": [
@@ -89,7 +89,8 @@ Content-Length: 636
       "loginScore": 10,
       "coreLoginTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
-      "deviceCount": 11
+      "deviceCount": 11,
+      "responsiveDesktopTimeInMs": 9
     }
   ]
 }

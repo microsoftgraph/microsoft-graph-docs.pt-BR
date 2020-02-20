@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83d3f8e084b824baa40c41ace5045fd814e38592
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c9b375299db9fa52be494dca185ba9370627e3cb
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088102"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159476"
 ---
 # <a name="devicehealthscript-resource-type"></a>tipo de recurso deviceHealthScript
 
@@ -29,6 +29,10 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 |[Excluir deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|Nenhum|Exclui [deviceHealthScript](../resources/intune-devices-devicehealthscript.md).|
 |[Atualizar deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Atualiza as propriedades de um objeto [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) .|
 |[atribuir ação](../api/intune-devices-devicehealthscript-assign.md)|Nenhuma|Ainda não documentado|
+|[ação updateGlobalScript](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Atualizar o script de integridade do dispositivo proprietário|
+|[ação getGlobalScriptHighestAvailableVersion](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Atualizar o script de integridade do dispositivo proprietário|
+|[ação enableGlobalScripts](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Nenhuma|Ainda não documentado|
+|[função areGlobalScriptsAvailable](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -45,7 +49,9 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
 |runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|Coleção String|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|isGlobalScript|Booliano|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
+|highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -79,7 +85,9 @@ Veja a seguir uma representação JSON do recurso.
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "String"
 }
 ```
 

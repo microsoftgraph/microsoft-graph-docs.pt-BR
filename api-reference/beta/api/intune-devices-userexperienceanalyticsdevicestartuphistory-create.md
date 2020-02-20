@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07905b1aaae394c8b366949bc657cb15679ae7fb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: dec1a8c5848e2646674390ff38ff645e88ec2b6a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944467"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162033"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>Criar userExperienceAnalyticsDeviceStartupHistory
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -60,9 +60,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 |totalBootTimeInMs|Int32|O tempo de inicialização total do dispositivo de análise da experiência do usuário, em milissegundos.|
 |groupPolicyLoginTimeInMs|Int32|O tempo de logon da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
 |coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
+|responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
 |totalLoginTimeInMs|Int32|O tempo total de logon do dispositivo de análise da experiência do usuário em milissegundos.|
-|isFirstLogin|Boolean|O dispositivo de análise de experiência do usuário primeiro logon.|
-|isFeatureUpdate|Boolean|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
+|isFirstLogin|Booliano|O dispositivo de análise de experiência do usuário primeiro logon.|
+|isFeatureUpdate|Booliano|O registro de inicialização do dispositivo de análise da experiência do usuário é uma atualização de recurso.|
 |operatingSystemVersion|String|A versão do sistema operacional do registro de inicialização do dispositivo de análise da experiência do usuário.|
 
 
@@ -77,7 +78,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 498
+Content-length: 533
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -89,6 +90,7 @@ Content-length: 498
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
@@ -101,7 +103,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 547
+Content-Length: 582
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -114,6 +116,7 @@ Content-Length: 547
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,

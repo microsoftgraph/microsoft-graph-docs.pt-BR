@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 5cee94c1ff36bf30d977b7eb97d77f11d4d2ff5e
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 18d675b38dd3155b5a06c67fc3164fd315d7c0b2
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450699"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162495"
 ---
 # <a name="activitystatistics-resource-type"></a>tipo de recurso activityStatistics
 
@@ -26,21 +26,20 @@ Os seguintes tipos de estatísticas são derivados de **activityStatistics**:
 * [Foco](focusactivitystatistics.md)
 * [Atenda](meetingactivitystatistics.md)
 
-### <a name="activity-id-property"></a>Propriedade ID da atividade
+<!--  removing per Mathew 2/6/2020   ### Activity id property
 
-Em uma solicitação HTTP, para obter um tipo específico de estatísticas de atividade dentro de um intervalo de datas, você pode expressar essas informações como uma ID para a coleção de activityStatistics do usuário no seguinte formato `{startdate}` , `{enddate}` onde e são expressas no calendário ISO 8601 formato de data `{activity}` e pode ser "Call", "chat", "email", "foco" ou "reunião":
+In an HTTP request, to get a specific type of activity statistics within a date range, you can express this information as an ID to the user's collection of activityStatistics in the following format, where `{startdate}` and `{enddate}` are expressed in ISO 8601 calendar date format and `{activity}` can be "call", "chat", "email", "focus", or "meeting":
 
 ```
 {activity}_{startdate}_{enddate}
 ```
 
-Por exemplo, a ID "email_2019-08 -10 _2019-08-12" representa o emailActivityStatistics para o usuário especificado entre 10 de agosto de 2019 e 12 de agosto de 2019.
-
+For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivityStatistics for the specified user between August 10, 2019 and August 12, 2019.
+-->
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Obter as propriedades das estatísticas de uma atividade especificada para um usuário, para o intervalo de tempo especificado. |
 | [Listar activityStatistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | Recupere as propriedades da coleção de estatísticas de atividade de um usuário para a última semana completa.|
 
 ## <a name="properties"></a>Propriedades

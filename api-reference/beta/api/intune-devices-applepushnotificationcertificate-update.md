@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8690f583bff395f54f31b56e3480e29e1815e462
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9730ba7ff6d2b876533fda89232749064354d5f6
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945288"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162250"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,12 +52,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [applePu
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do certificado.|
-|appleIdentifier|Cadeia de Caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
+|appleIdentifier|String|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|Cadeia de Caracteres|O status do carregamento do certificado.|
-|certificateUploadFailureReason|Cadeia de Caracteres|O motivo da falha no carregamento do certificado.|
+|certificateUploadStatus|String|O status do carregamento do certificado.|
+|certificateUploadFailureReason|String|O motivo da falha no carregamento do certificado.|
+|certificateSerialNumber|String|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|String|Ainda não documentado|
 
 
@@ -72,7 +73,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 416
+Content-length: 481
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -81,6 +82,7 @@ Content-length: 416
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
@@ -90,7 +92,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 529
+Content-Length: 594
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -101,6 +103,7 @@ Content-Length: 529
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```

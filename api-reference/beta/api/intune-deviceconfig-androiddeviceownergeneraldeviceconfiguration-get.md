@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 05be431b2f4f6f63beaafb2b0ad7d60f764aa966
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9435706289d88c3e1879cc3e74297b756fee59a5
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39953849"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160267"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Obter androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -185,8 +185,8 @@ Content-Length: 4799
     "usersBlockAdd": true,
     "usersBlockRemove": true,
     "volumeBlockAdjustment": true,
-    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnAlwaysOnLockdownMode": true,
+    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
     "wifiBlockEditPolicyDefinedConfigurations": true
   }

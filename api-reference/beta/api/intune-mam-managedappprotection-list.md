@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ab55b2a2ced36a674983149fc778f54a4dc2af7
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6c584fa10e321ff1131d99eb762c3b28e1a21633
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39953870"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161620"
 ---
 # <a name="list-managedappprotections"></a>Listar managedAppProtections
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2535
+Content-Length: 2589
 
 {
   "value": [
@@ -122,7 +122,8 @@ Content-Length: 2535
       "blockDataIngestionIntoOrganizationDocuments": true,
       "allowedDataIngestionLocations": [
         "sharePoint"
-      ]
+      ],
+      "appActionIfUnableToAuthenticateUser": "wipe"
     }
   ]
 }

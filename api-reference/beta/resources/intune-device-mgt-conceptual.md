@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00cb96f6af16ba78391d2311ab02e220a209b410
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 23e0eaae9becb1d15f26607a9bda67a27d6c2386
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636543"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163672"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -124,6 +124,7 @@ ms.locfileid: "41636543"
 - [Estado do dispositivo de SIM inserido](intune-esim-embeddedsimdevicestate.md)
 - [Valor do estado do dispositivo de SIM inserido](intune-esim-embeddedsimdevicestatevalue.md)
 - [Evento de solução de problemas de registro](intune-troubleshooting-enrollmenttroubleshootingevent.md)
+- [Estado do script de integridade do dispositivo global](intune-devices-globaldevicehealthscriptstate.md)
 - [Informações de hardware](intune-devices-hardwareinformation.md)
 - [Estado de integridade](intune-devices-healthstate.md)
 - [Cronograma por hora](intune-devices-hourlyschedule.md)
@@ -132,7 +133,6 @@ ms.locfileid: "41636543"
 - [Mensagem de notificação localizada](intune-notification-localizednotificationmessage.md)
 - [Resultado da ação de localizar dispositivo](intune-devices-locatedeviceactionresult.md)
 - [Condição de gerenciamento local](intune-fencing-locationmanagementcondition.md)
-- [Nível de log](intune-troubleshooting-loglevel.md)
 - [Usuário conectado](intune-devices-loggedonuser.md)
 - [Estado de modo perdido](intune-devices-lostmodestate.md)
 - [Dispositivo gerenciado](intune-devices-manageddevice.md)
@@ -142,6 +142,7 @@ ms.locfileid: "41636543"
 - [Visão geral do dispositivo gerenciado](intune-devices-manageddeviceoverview.md)
 - [Estado de integridade reportado pelo parceiro do dispositivo gerenciado](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Ação remota de dispositivo gerenciados](intune-devices-manageddeviceremoteaction.md)
+- [Estado de aplicativo resumido do dispositivo gerenciado](intune-troubleshooting-manageddevicesummarizedappstate.md)
 - [Condição de gerenciamento](intune-fencing-managementcondition.md)
 - [Expressões de condição de gerenciamento](intune-fencing-managementconditionexpression.md)
 - [Modelo de expressões de condição de gerenciamento](intune-fencing-managementconditionexpressionmodel.md)
@@ -182,6 +183,7 @@ ms.locfileid: "41636543"
 - [Resumo do estado da linha de base de segurança](intune-deviceintent-securitybaselinestatesummary.md)
 - [Modelo de linha da base de segurança](intune-deviceintent-securitybaselinetemplate.md)
 - [Usuário de dispositivo Apple compartilhado](intune-devices-sharedappledeviceuser.md)
+- [Tuple_2 de execução type_ collection_1 da operação](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Expressões de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpression.md)
 - [Tipo de operador de expressão de condição de gerenciamento unário](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -189,6 +191,8 @@ ms.locfileid: "41636543"
 - [Categoria de análise da experiência do usuário](intune-devices-userexperienceanalyticscategory.md)
 - [Desempenho do dispositivo de análise da experiência do usuário](intune-devices-userexperienceanalyticsdeviceperformance.md)
 - [Histórico de inicialização do dispositivo de análise da experiência do usuário](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
+- [Processo de inicialização do dispositivo de análise da experiência do usuário](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
+- [Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário](intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
 - [Estado de integridade da análise da experiência do usuário](intune-devices-userexperienceanalyticshealthstate.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsight.md)
 - [Gravidade da visão da análise da experiência do usuário](intune-devices-userexperienceanalyticsinsightseverity.md)
@@ -196,6 +200,7 @@ ms.locfileid: "41636543"
 - [Métrica de análise da experiência do usuário](intune-devices-userexperienceanalyticsmetric.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
 - [Resumo de regressão da análise da experiência do usuário](intune-devices-userexperienceanalyticsregressionsummary.md)
+- [Histórico de Pontuação de início da análise da experiência do usuário](intune-devices-userexperienceanalyticsstartupscorehistory.md)
 - [Análise da experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Estado de implantação do piloto automático do Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)

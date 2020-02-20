@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d64e30320bf16209850758844b944864ee13d273
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d498bf40347a43bf15f339952f05e37c711f7921
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955333"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159469"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -65,7 +65,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |id|String|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
@@ -132,12 +132,15 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |remoteActionAudits|coleção [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|A lista de auditorias de ação remota do dispositivo com o locatário.|
 |windowsMalwareInformation|coleção [windowsmalwareinformation foram adicionadas](../resources/intune-devices-windowsmalwareinformation.md)|A lista de malwares afetados no locatário.|
 |mobileAppTroubleshootingEvents|coleção [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A Propriedade Collection de MobileAppTroubleshootingEvent.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|Visão geral da análise da experiência do usuário|
-|userExperienceAnalyticsBaselines|coleção [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Linhas de base de análise da experiência do usuário|
-|userExperienceAnalyticsCategories|coleção [userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|Categorias de análise da experiência do usuário|
-|userExperienceAnalyticsDevicePerformance|coleção [userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Desempenho do dispositivo de análise da experiência do usuário|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Resumo de regressão da análise da experiência do usuário|
-|userExperienceAnalyticsDeviceStartupHistory|coleção [userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Histórico de inicialização do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|Visão geral da análise da experiência do usuário|
+|userExperienceAnalyticsBaselines|coleção userExperienceAnalyticsBaseline|Linhas de base de análise da experiência do usuário|
+|userExperienceAnalyticsCategories|coleção userExperienceAnalyticsCategory|Categorias de análise da experiência do usuário|
+|userExperienceAnalyticsDevicePerformance|coleção userExperienceAnalyticsDevicePerformance|Desempenho do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|Resumo de regressão da análise da experiência do usuário|
+|userExperienceAnalyticsDeviceStartupHistory|coleção userExperienceAnalyticsDeviceStartupHistory|Histórico de inicialização do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcesses|coleção userExperienceAnalyticsDeviceStartupProcess|Processos de inicialização do dispositivo de análise da experiência do usuário|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|coleção userExperienceAnalyticsDeviceStartupProcessPerformance|Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário|
+|userExperienceAnalyticsStartupScoreHistory|coleção userExperienceAnalyticsStartupScoreHistory|Experiência do usuário histórico de pontos de inicialização do dispositivo analítico|
 |**Enrollmentid**|
 |depOnboardingSettings|coleção [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Este conjunto de vários tokens DEP por locatário.|
 |importedDeviceIdentities|coleção [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades de dispositivo importadas.|

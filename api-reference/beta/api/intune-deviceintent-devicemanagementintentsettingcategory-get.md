@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a94eff28d42ffbd9cf9b3de61d41edf6d9d1e19b
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: fa535b27509d317201baa9048174f882ad18f2f0
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945694"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162320"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>Obter deviceManagementIntentSettingCategory
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,13 +66,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 193
+Content-Length: 226
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
     "id": "39bf2a82-2a82-39bf-822a-bf39822abf39",
-    "displayName": "Display Name value"
+    "displayName": "Display Name value",
+    "hasRequiredSetting": true
   }
 }
 ```

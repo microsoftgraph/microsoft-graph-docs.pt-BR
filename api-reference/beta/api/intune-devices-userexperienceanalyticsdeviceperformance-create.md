@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe36600ebdc69edc037169c27cab25babf10bceb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2a85a73ebde994913a30e5935fa7743360f96eda
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944509"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162068"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Criar userExperienceAnalyticsDevicePerformance
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 |:---|:---|:---|
 |id|String|O identificador exclusivo do dispositivo de desempenho de inicialização do dispositivo de análise de experiência do usuário.|
 |deviceName|Cadeia de caracteres|O nome do dispositivo de análise da experiência do usuário.|
-|modelo|Cadeia de Caracteres|O modelo de dispositivo de análise da experiência do usuário.|
+|modelo|String|O modelo de dispositivo de análise da experiência do usuário.|
 |fabricante|String|O fabricante do dispositivo de análise da experiência do usuário.|
 |diskType|[diskType](../resources/intune-devices-disktype.md)|O tipo de disco do dispositivo de análise da experiência do usuário. Os valores possíveis são: `unkown`, `hdd`, `ssd`.|
-|operatingSystemVersion|Cadeia de Caracteres|A versão do sistema operacional do dispositivo de análise da experiência do usuário.|
+|operatingSystemVersion|String|A versão do sistema operacional do dispositivo de análise da experiência do usuário.|
 |bootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário.|
 |coreBootTimeInMs|Int32|O tempo de inicialização do núcleo do dispositivo de análise da experiência do usuário em milissegundos.|
 |groupPolicyBootTimeInMs|Int32|O tempo de inicialização da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
@@ -65,6 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 |coreLoginTimeInMs|Int32|O tempo de logon do dispositivo de análise da experiência do usuário em milissegundos.|
 |groupPolicyLoginTimeInMs|Int32|O tempo de logon da política de grupo do dispositivo de análise da experiência do usuário em milissegundos.|
 |deviceCount|Int64|Contagem de dispositivos resumida da análise de experiência do usuário.|
+|responsiveDesktopTimeInMs|Int32|O tempo de resposta da análise da experiência do usuário em milissegundos.|
 
 
 
@@ -78,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 494
+Content-length: 529
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -94,7 +95,8 @@ Content-length: 494
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
 
@@ -103,7 +105,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 578
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -120,7 +122,8 @@ Content-Length: 543
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
 

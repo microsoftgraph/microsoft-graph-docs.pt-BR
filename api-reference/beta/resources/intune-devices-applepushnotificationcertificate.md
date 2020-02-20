@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90e7ede759d9df4197aa193495d8aea26996766e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 63e4b858404242d84597a7f650bae6c0870f5b76
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319276"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162502"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Certificado de notificação por push da Apple.
 
@@ -37,6 +37,7 @@ Certificado de notificação por push da Apple.
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
 |certificateUploadStatus|String|O status do carregamento do certificado.|
 |certificateUploadFailureReason|String|O motivo da falha no carregamento do certificado.|
+|certificateSerialNumber|String|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|String|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
@@ -60,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "expirationDateTime": "String (timestamp)",
   "certificateUploadStatus": "String",
   "certificateUploadFailureReason": "String",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```
