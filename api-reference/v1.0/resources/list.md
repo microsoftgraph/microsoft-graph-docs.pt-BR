@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: 51821bb20188c004af3f2aca868c3cfd953ce19c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db6fceb1f7806b5356a4e75f1e4fb6a247bd5b00
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036404"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108480"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -30,12 +30,14 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/v1
 | Tarefa comum               | Método HTTP
 |:--------------------------|:------------------------------
 | [Obter lista][]              | GET /lists/{list-id}
+| [Criar lista][]           | POSTAR/listas
 | [Enumerar itens de lista][]  | GET /lists/{list-id}/items
 | [Atualizar item de lista][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Excluir item de lista][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Criar item de lista][]      | POST /lists/{list-id}
 
 [Obter lista]: ../api/list-get.md
+[Criar lista]: ../api/list-create.md
 [Enumerar itens de lista]: ../api/listitem-list.md
 [Atualizar item de lista]: ../api/listitem-update.md
 [Excluir item de lista]: ../api/listitem-delete.md

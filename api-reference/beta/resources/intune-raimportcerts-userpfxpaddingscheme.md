@@ -5,30 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9f9a882cd1fdc788782a7c68df1ad38c6cc8d37e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6b04dcd01d21ace78368411524067f83db3bc93a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36308131"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163546"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>tipo de enumeração userPfxPaddingScheme
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores com suporte para o esquema de preenchimento usado pelo provedor de criptografia.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Ainda não documentado|
-|pkcs1|1|Ainda não documentado|
-|oaepSha1|duas|Ainda não documentado|
-|oaepSha256|3D|Ainda não documentado|
-|oaepSha384|quatro|Ainda não documentado|
-|oaepSha512|0,5|Ainda não documentado|
+|nenhuma|,0|Esquema de preenchimento desconhecido.|
+|pkcs1|1|Pkcs1 não tem mais suporte|
+|oaepSha1|duas|OaepSha1 não tem mais suporte|
+|oaepSha256|3D|Use o preenchimento OAEP SHA-256.|
+|oaepSha384|quatro|Use o preenchimento OAEP SHA-384.|
+|oaepSha512|0,5|Use o preenchimento OAEP SHA-512.|
 
 
 
