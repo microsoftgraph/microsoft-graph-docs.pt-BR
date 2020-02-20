@@ -900,7 +900,7 @@
                 - name: Grupo de roteamento de áudio
                   href: resources/audioroutinggroup.md
                   items:
-                    - name: Create
+                    - name: Criar
                       href: api/call-post-audioroutinggroups.md
                     - name: Obter
                       href: api/audioroutinggroup-get.md
@@ -911,7 +911,7 @@
             - name: Reunião online
               href: resources/onlinemeeting.md
               items:
-                - name: Create
+                - name: Criar
                   href: api/application-post-onlinemeetings.md
                 - name: Obter
                   href: api/onlinemeeting-get.md
@@ -968,7 +968,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: Obter
                   href: api/bookingbusiness-get.md
@@ -1000,7 +1000,7 @@
             - name: Moeda da reserva
               href: resources/bookingcurrency.md
               items:
-                - name: Lista
+                - name: Listar
                   href: api/bookingcurrency-list.md
                 - name: Obter
                   href: api/bookingcurrency-get.md
@@ -1009,7 +1009,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-customers.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-customers.md
                 - name: Obter
                   href: api/bookingcustomer-get.md
@@ -1022,7 +1022,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-services.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-services.md
                 - name: Obter
                   href: api/bookingservice-get.md
@@ -1035,7 +1035,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-staffmembers.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: Obter
                   href: api/bookingstaffmember-get.md
@@ -1465,6 +1465,19 @@
                       href: api/intune-apps-macoslobapp-update.md
                 - name: Aplicativo filho macOS LOB
                   href: resources/intune-apps-macoslobchildapp.md
+                - name: aplicativo macOS mdatp
+                  href: resources/intune-apps-macosmdatpapp.md
+                  items:
+                    - name: Listar
+                      href: api/intune-apps-macosmdatpapp-list.md
+                    - name: Obter
+                      href: api/intune-apps-macosmdatpapp-get.md
+                    - name: Criar
+                      href: api/intune-apps-macosmdatpapp-create.md
+                    - name: Excluir
+                      href: api/intune-apps-macosmdatpapp-delete.md
+                    - name: Atualizar
+                      href: api/intune-apps-macosmdatpapp-update.md
                 - name: aplicativo macOS Microsoft Edge
                   href: resources/intune-apps-macosmicrosoftedgeapp.md
                   items:
@@ -2734,6 +2747,8 @@
                       href: api/intune-deviceconfig-androideasemailprofileconfiguration-delete.md
                     - name: Atualizar
                       href: api/intune-deviceconfig-androideasemailprofileconfiguration-update.md
+                - name: Tipo de pacote VPN AlwaysOn do Android Enterprise
+                  href: resources/intune-deviceconfig-androidenterprisealwaysonvpnpackagetype.md
                 - name: Configuração de Wi-Fi corporativa do Android
                   href: resources/intune-deviceconfig-androidenterprisewificonfiguration.md
                   items:
@@ -3250,6 +3265,8 @@
                   href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
                 - name: Opções de recuperação do BitLocker
                   href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
+                - name: Tipo de rotação da senha de recuperação do BitLocker
+                  href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
                 - name: Política da unidade removível do BitLocker
                   href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
                 - name: Política da unidade de sistema do BitLocker
@@ -3287,6 +3304,8 @@
                   href: resources/intune-deviceconfig-credentialsinglesignonextension.md
                 - name: Nome alternativo da entidade personalizada
                   href: resources/intune-deviceconfig-customsubjectalternativename.md
+                - name: Janela de tempo de atualização personalizada
+                  href: resources/intune-deviceconfig-customupdatetimewindow.md
                 - name: Dia da semana
                   href: resources/intune-deviceconfig-dayofweek.md
                 - name: Política de conformidade do dispositivo padrão
@@ -3955,6 +3974,32 @@
                       href: api/intune-grouppolicy-grouppolicypresentationvaluetext-update.md
                 - name: Tipo de política de grupo
                   href: resources/intune-grouppolicy-grouppolicytype.md
+                - name: Definição de política de grupo carregada
+                  href: resources/intune-grouppolicy-grouppolicyuploadeddefinition.md
+                  items:
+                    - name: Listar
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinition-list.md
+                    - name: Obter
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinition-get.md
+                    - name: Criar
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinition-create.md
+                    - name: Excluir
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinition-delete.md
+                    - name: Atualizar
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinition-update.md
+                - name: Apresentação de política de grupo carregada
+                  href: resources/intune-grouppolicy-grouppolicyuploadedpresentation.md
+                  items:
+                    - name: Listar
+                      href: api/intune-grouppolicy-grouppolicyuploadedpresentation-list.md
+                    - name: Obter
+                      href: api/intune-grouppolicy-grouppolicyuploadedpresentation-get.md
+                    - name: Criar
+                      href: api/intune-grouppolicy-grouppolicyuploadedpresentation-create.md
+                    - name: Excluir
+                      href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
+                    - name: Atualizar
+                      href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
                 - name: Algoritmos hash
                   href: resources/intune-deviceconfig-hashalgorithms.md
                 - name: Configuração de acesso à tinta
@@ -4167,6 +4212,8 @@
                   href: resources/intune-deviceconfig-iossinglesignonextension.md
                 - name: Configurações de logon único do iOS
                   href: resources/intune-deviceconfig-iossinglesignonsettings.md
+                - name: tipo de agendamento de atualização do software iOS
+                  href: resources/intune-deviceconfig-iossoftwareupdatescheduletype.md
                 - name: Certificado raiz confiável do iOS
                   href: resources/intune-deviceconfig-iostrustedrootcertificate.md
                   items:
@@ -4259,10 +4306,20 @@
                       href: api/intune-deviceconfig-iosikev2vpnconfiguration-update.md
                 - name: Extensão de logon único Kerberos
                   href: resources/intune-deviceconfig-kerberossinglesignonextension.md
+                - name: Par de valores booleanos principais
+                  href: resources/intune-deviceconfig-keybooleanvaluepair.md
+                - name: Par principal de valor inteiro
+                  href: resources/intune-deviceconfig-keyintegervaluepair.md
+                - name: Par chave real de valor
+                  href: resources/intune-deviceconfig-keyrealvaluepair.md
                 - name: Tamanho da chave
                   href: resources/intune-deviceconfig-keysize.md
                 - name: Opção de provedor de armazenamento de chaves
                   href: resources/intune-deviceconfig-keystorageprovideroption.md
+                - name: Par de valores de cadeia de caracteres de chave
+                  href: resources/intune-deviceconfig-keystringvaluepair.md
+                - name: Par de valores digitados por chave
+                  href: resources/intune-deviceconfig-keytypedvaluepair.md
                 - name: Usos de chave
                   href: resources/intune-deviceconfig-keyusages.md
                 - name: Valor da chave
@@ -4544,19 +4601,6 @@
                       href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
                 - name: Estado da configuração do aplicativo móvel do dispositivo gerenciado
                   href: resources/intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md
-                - name: Estado de configuração do aplicativo móvel do dispositivo gerenciado
-                  href: resources/intune-deviceconfig-managedDeviceMobileAppConfigurationState.md
-                  items:
-                    - name: Listar
-                      href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-list.md
-                    - name: Obter
-                      href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-get.md
-                    - name: Criar
-                      href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-create.md
-                    - name: Excluir
-                      href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-delete.md
-                    - name: Atualizar
-                      href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-update.md
                 - name: Aplicativo reportado pelo dispositivo gerenciado
                   href: resources/intune-deviceconfig-manageddevicereportedapp.md
                 - name: Classificação de conteúdo de mídia da Austrália
@@ -4620,8 +4664,47 @@
                   href: resources/intune-deviceconfig-omasettingstring.md
                 - name: Cadeia xml de configuração de OMA
                   href: resources/intune-deviceconfig-omasettingstringxml.md
+                - name: Carga de criptografia local
+                  href: resources/intune-raimportcerts-onpremencryptedpayload.md
+                  items:
+                    - name: Listar
+                      href: api/intune-raimportcerts-onpremencryptedpayload-list.md
+                    - name: Obter
+                      href: api/intune-raimportcerts-onpremencryptedpayload-get.md
+                    - name: Criar
+                      href: api/intune-raimportcerts-onpremencryptedpayload-create.md
+                    - name: Excluir
+                      href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
+                    - name: Atualizar
+                      href: api/intune-raimportcerts-onpremencryptedpayload-update.md
                 - name: Intervalo de versão do sistema operacional
                   href: resources/intune-deviceconfig-operatingsystemversionrange.md
+                - name: Solicitação de recript de pfx
+                  href: resources/intune-raimportcerts-pfxrecryptionrequest.md
+                  items:
+                    - name: Listar
+                      href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
+                    - name: Obter
+                      href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
+                    - name: Criar
+                      href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
+                    - name: Excluir
+                      href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
+                    - name: Atualizar
+                      href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
+                - name: Certificado de usuário pfx
+                  href: resources/intune-raimportcerts-pfxusercertificate.md
+                  items:
+                    - name: Listar
+                      href: api/intune-raimportcerts-pfxusercertificate-list.md
+                    - name: Obter
+                      href: api/intune-raimportcerts-pfxusercertificate-get.md
+                    - name: Criar
+                      href: api/intune-raimportcerts-pfxusercertificate-create.md
+                    - name: Excluir
+                      href: api/intune-raimportcerts-pfxusercertificate-delete.md
+                    - name: Atualizar
+                      href: api/intune-raimportcerts-pfxusercertificate-update.md
                 - name: Tipo de ação de energia
                   href: resources/intune-deviceconfig-poweractiontype.md
                 - name: Recursos pré-lançamento
@@ -5449,6 +5532,8 @@
                   href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
                 - name: Instalação agendada do Windows Update
                   href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
+                - name: Status do Windows Update
+                  href: resources/intune-deviceconfig-windowsupdatestatus.md
                 - name: Tipo de atualização do Windows
                   href: resources/intune-deviceconfig-windowsupdatetype.md
                 - name: Configurações de controle da conta do usuário do Windows
@@ -5659,6 +5744,12 @@
                       href: api/intune-devices-devicehealthscript-update.md
                     - name: atribuir ação
                       href: api/intune-devices-devicehealthscript-assign.md
+                    - name: ação updateGlobalScript
+                      href: api/intune-devices-devicehealthscript-updateglobalscript.md
+                    - name: ação getGlobalScriptHighestAvailableVersion
+                      href: api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md
+                    - name: ação enableGlobalScripts
+                      href: api/intune-devices-devicehealthscript-enableglobalscripts.md
                 - name: Atribuição de script de integridade do dispositivo
                   href: resources/intune-devices-devicehealthscriptassignment.md
                   items:
@@ -6186,6 +6277,8 @@
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
                     - name: Atualizar
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-update.md
+                - name: Estado do script de integridade do dispositivo global
+                  href: resources/intune-devices-globaldevicehealthscriptstate.md
                 - name: Informações de hardware
                   href: resources/intune-devices-hardwareinformation.md
                 - name: Estado de integridade
@@ -6218,8 +6311,6 @@
                       href: api/intune-fencing-locationmanagementcondition-list.md
                     - name: Obter
                       href: api/intune-fencing-locationmanagementcondition-get.md
-                - name: Nível de log
-                  href: resources/intune-troubleshooting-loglevel.md
                 - name: Usuário conectado
                   href: resources/intune-devices-loggedonuser.md
                 - name: Estado de modo perdido
@@ -6302,6 +6393,8 @@
                   href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
                 - name: Ação remota de dispositivo gerenciados
                   href: resources/intune-devices-manageddeviceremoteaction.md
+                - name: Estado de aplicativo resumido do dispositivo gerenciado
+                  href: resources/intune-troubleshooting-manageddevicesummarizedappstate.md
                 - name: Condição de gerenciamento
                   href: resources/intune-fencing-managementcondition.md
                   items:
@@ -6517,6 +6610,8 @@
                       href: api/intune-deviceintent-securitybaselinetemplate-update.md
                 - name: Usuário de dispositivo Apple compartilhado
                   href: resources/intune-devices-sharedappledeviceuser.md
+                - name: Tuple_2 de execução type_ collection_1 da operação
+                  href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                 - name: Expressões de condição de gerenciamento unário
                   href: resources/intune-fencing-unarymanagementconditionexpression.md
                 - name: Tipo de operador de expressão de condição de gerenciamento unário
@@ -6571,6 +6666,32 @@
                       href: api/intune-devices-userexperienceanalyticsdevicestartuphistory-delete.md
                     - name: Atualizar
                       href: api/intune-devices-userexperienceanalyticsdevicestartuphistory-update.md
+                - name: Processo de inicialização do dispositivo de análise da experiência do usuário
+                  href: resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md
+                  items:
+                    - name: Listar
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md
+                    - name: Obter
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md
+                    - name: Criar
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-create.md
+                    - name: Excluir
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-delete.md
+                    - name: Atualizar
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-update.md
+                - name: Desempenho do processo de inicialização do dispositivo de análise de experiência do usuário
+                  href: resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md
+                  items:
+                    - name: Listar
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-list.md
+                    - name: Obter
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-get.md
+                    - name: Criar
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-create.md
+                    - name: Excluir
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-delete.md
+                    - name: Atualizar
+                      href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-update.md
                 - name: Estado de integridade da análise da experiência do usuário
                   href: resources/intune-devices-userexperienceanalyticshealthstate.md
                 - name: Visão geral da análise da experiência do usuário
@@ -6608,6 +6729,19 @@
                       href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
                     - name: summarizeDeviceRegressionPerformance
                       href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
+                - name: Histórico de Pontuação de início da análise da experiência do usuário
+                  href: resources/intune-devices-userexperienceanalyticsstartupscorehistory.md
+                  items:
+                    - name: Listar
+                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-list.md
+                    - name: Obter
+                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-get.md
+                    - name: Criar
+                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-create.md
+                    - name: Excluir
+                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-delete.md
+                    - name: Atualizar
+                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-update.md
                 - name: Análise da experiência do usuário resumida por
                   href: resources/intune-devices-userexperienceanalyticssummarizedby.md
                 - name: Expressões de condição de gerenciamento variável
@@ -7278,13 +7412,6 @@
                       href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                     - name: Atualizar
                       href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                - name: Vários aplicativos RBAC
-                  href: resources/intune-rbac-rbacapplicationmultiple.md
-                  items:
-                    - name: Obter
-                      href: api/intune-rbac-rbacapplicationmultiple-get.md
-                    - name: Atualizar
-                      href: api/intune-rbac-rbacapplicationmultiple-update.md
                 - name: Ação Resource
                   href: resources/intune-rbac-resourceaction.md
                 - name: Operação de recurso
@@ -7328,13 +7455,6 @@
                       href: api/intune-rbac-roledefinition-delete.md
                     - name: Atualizar
                       href: api/intune-rbac-roledefinition-update.md
-                - name: Gerenciamento de função
-                  href: resources/intune-rbac-rolemanagement.md
-                  items:
-                    - name: Obter
-                      href: api/intune-rbac-rolemanagement-get.md
-                    - name: Atualizar
-                      href: api/intune-rbac-rolemanagement-update.md
                 - name: Permissão de função
                   href: resources/intune-rbac-rolepermission.md
                 - name: Marca de escopo de função
@@ -7393,8 +7513,6 @@
                       href: api/intune-shared-androidmanagedappprotection-update.md
                     - name: ação hasPayloadLinks
                       href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
-                - name: Tipo de rotação da senha de recuperação do BitLocker
-                  href: resources/intune-shared-bitlockerrecoverypasswordrotationtype.md
                 - name: Ação do portal da empresa
                   href: resources/intune-shared-companyportalaction.md
                 - name: Ação bloqueada do portal da empresa
@@ -7483,10 +7601,6 @@
                       href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
                     - name: ação sendCustomNotificationToCompanyPortal
                       href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
-                - name: Emissor de credenciais derivadas de gerenciamento de dispositivos
-                  href: resources/intune-shared-devicemanagementderivedcredentialissuer.md
-                - name: Tipo de notificação de credencial derivada de gerenciamento de dispositivo
-                  href: resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md
                 - name: Configurações de credenciais derivadas de gerenciamento de dispositivos
                   href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                   items:
@@ -7521,6 +7635,8 @@
                   href: resources/intune-shared-devicetype.md
                 - name: Habilitação
                   href: resources/intune-shared-enablement.md
+                - name: Opções de disponibilidade do registro
+                  href: resources/intune-shared-enrollmentavailabilityoptions.md
                 - name: Estado de registro
                   href: resources/intune-shared-enrollmentstate.md
                 - name: Destino de atribuição de grupos de exclusão
@@ -7573,16 +7689,6 @@
                   href: resources/intune-shared-ipv4range.md
                 - name: Intervalo de IPv6
                   href: resources/intune-shared-ipv6range.md
-                - name: Par de valores booleanos principais
-                  href: resources/intune-shared-keybooleanvaluepair.md
-                - name: Par principal de valor inteiro
-                  href: resources/intune-shared-keyintegervaluepair.md
-                - name: Par chave real de valor
-                  href: resources/intune-shared-keyrealvaluepair.md
-                - name: Par de valores de cadeia de caracteres de chave
-                  href: resources/intune-shared-keystringvaluepair.md
-                - name: Par de valores digitados por chave
-                  href: resources/intune-shared-keytypedvaluepair.md
                 - name: Par chave/valor
                   href: resources/intune-shared-keyvaluepair.md
                 - name: Configurações de atribuição do aplicativo VPP do macOS
@@ -7756,8 +7862,6 @@
                       href: api/intune-shared-windowsupdatestate-delete.md
                     - name: Atualizar
                       href: api/intune-shared-windowsupdatestate-update.md
-                - name: Status do Windows Update
-                  href: resources/intune-shared-windowsupdatestatus.md
             - name: Despesas de telecomunicações
               href: resources/intune-tem-conceptual.md
               items:
@@ -8485,11 +8589,11 @@
             - name: Configuração de autenticação baseada em certificado
               href: resources/certificatebasedauthconfiguration.md
               items:
-                - name: Lista
+                - name: Listar
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
-                - name: Create
+                - name: Criar
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
@@ -8501,7 +8605,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: Listar
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: Create
+                    - name: Criar
                       href: api/conditionalaccessroot-post-policies.md
                     - name: Obter
                       href: api/conditionalaccesspolicy-get.md
@@ -8515,7 +8619,7 @@
                       items:
                         - name: Local nomeado
                           href: resources/namedlocation.md
-                        - name: Lista
+                        - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
                         - name: Obter
                           href: api/namedlocation-get.md
@@ -8527,7 +8631,7 @@
                           href: resources/countrynamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Create
+                        - name: Criar
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/countrynamedlocation-get.md
@@ -8541,7 +8645,7 @@
                           href: resources/ipnamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Create
+                        - name: Criar
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/ipnamedlocation-get.md
@@ -8719,7 +8823,7 @@
                 - name: Função de recurso de atribuição de pacote do Access
                   href: resources/accesspackageassignmentresourcerole.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/accesspackageassignmentresourcerole-list.md
                     - name: Obter
                       href: api/accesspackageassignmentresourcerole-get.md
@@ -8743,23 +8847,23 @@
                   items:
                     - name: Listar
                       href: api/accesspackageresourcerequest-list.md
-                    - name: Create
+                    - name: Criar
                       href: api/accesspackageresourcerequest-post.md
                 - name: Escopo de função de recurso de pacote de acesso
                   href: resources/accesspackageresourcerequest.md
                   items:
                     - name: Listar
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: Create
+                    - name: Criar
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: Política de distribuição de recursos
               href: resources/featurerolloutpolicy.md
               items:
-                - name: Lista
+                - name: Listar
                   href: api/directory-list-featurerolloutpolicies.md
                 - name: Obter
                   href: api/featurerolloutpolicy-get.md
-                - name: Create
+                - name: Criar
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Atualizar
                   href: api/featurerolloutpolicy-update.md
@@ -8893,7 +8997,7 @@
                 - name: Agente local
                   href: resources/onpremisesagent.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/onpremisesagent-list.md
                     - name: Obter
                       href: api/onpremisesagent-get.md
@@ -8904,11 +9008,11 @@
                 - name: Grupo de agentes local
                   href: resources/onpremisesagentgroup.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/onpremisesagentgroup-list.md
                     - name: Obter
                       href: api/onpremisesagentgroup-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/onpremisesagentgroup-post.md
                     - name: Atualizar
                       href: api/onpremisesagentgroup-update.md
@@ -8924,11 +9028,11 @@
                 - name: Recurso publicado
                   href: resources/publishedresource.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/publishedresource-list.md
                     - name: Obter
                       href: api/publishedresource-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/publishedresource-post.md
                     - name: Atualizar
                       href: api/publishedresource-update.md
@@ -9073,7 +9177,7 @@
                     - name: Recursos gerenciados
                       href: resources/governanceresource.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/governanceresource-list.md
                         - name: Obter
                           href: api/governanceresource-get.md
@@ -9082,14 +9186,14 @@
                     - name: Definições de função
                       href: resources/governanceroledefinition.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/governanceroledefinition-list.md
                         - name: Obter
                           href: api/governanceroledefinition-get.md
                     - name: Configurações de função
                       href: resources/governancerolesetting.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/governancerolesetting-list.md
                         - name: Obter
                           href: api/governancerolesetting-get.md
@@ -9098,7 +9202,7 @@
                     - name: Atribuições de função
                       href: resources/governanceroleassignment.md
                       items:
-                        - name: Lista
+                        - name: Listar
                           href: api/governanceroleassignment-list.md
                         - name: Obter
                           href: api/governanceroleassignment-get.md
@@ -9577,7 +9681,7 @@
                 - name: Informações da conta
                   href: resources/useraccountinformation.md
                   items:
-                    - name: Lista
+                    - name: Listar
                       href: api/profile-list-account.md
                     - name: Obter
                       href: api/useraccountinformation-get.md
@@ -9782,8 +9886,6 @@
                       href: resources/meetingactivitystatistics.md
                     - name: Listar estatísticas de atividade
                       href: api/activitystatistics-list.md
-                    - name: Obter estatísticas de atividade
-                      href: api/activitystatistics-get.md
         - name: Contatos pessoais
           href: resources/contact.md
           displayName: 'Outlook, Outlook contacts, Outlook contact, People'
@@ -10876,7 +10978,7 @@
             - name: Comentários da pasta de trabalho
               href: resources/workbookcomment.md
               items:
-                - name: Lista
+                - name: Listar
                   href: api/workbook-list-comments.md
                 - name: Obter
                   href: api/workbookcomment-get.md
