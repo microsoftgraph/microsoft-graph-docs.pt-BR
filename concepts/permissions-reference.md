@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: cb5dfc24011c07724b7116d2edb50397ddc74a2c
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 4a43b65c7419a6072018d9ee1d4f2572eedcdb87
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216893"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108487"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -122,32 +122,7 @@ Para obter mais informações sobre funções de administrador, confira [Atribui
 
 ---
 
-## <a name="analytics-resource-permissions"></a>Permissões de recurso do Analytics
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   Ler todas as estatísticas de atividades do usuário. | Permite que o aplicativo leia as estatísticas das atividades do usuário sem um usuário conectado. | Sim |
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-Nenhuma.
-
-### <a name="example-usage"></a>Exemplo de uso
-
-#### <a name="delegated"></a>Delegado	
-
-* _Analytics.Read_: [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
-* _Analytics.Read_: [Obter as estatísticas da atividade de um usuário](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
-
-#### <a name="application"></a>Aplicativo
-
-Nenhum.
-
----
-
-## <a name="administrative-units-permissions"></a>Permissões de Unidades Administrativas
+## <a name="administrative-units-permissions"></a>Permissões de unidades administrativas
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -180,6 +155,30 @@ _AdministrativeUnit.Read.All_ e _AdministrativeUnit. ReadWrite.All_ só são vá
 - _AdministrativeUnit.ReadWrite.All_: Adicionar membros a uma unidade administrativa (`POST /beta/administrativeUnits/<id>/members`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="analytics-resource-permissions"></a>Permissões de recurso do Analytics
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Ler todas as estatísticas de atividades do usuário. | Permite que o aplicativo leia as estatísticas das atividades do usuário sem um usuário conectado. | Sim |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+Nenhuma.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado	
+
+* _Analytics.Read_: [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+
+#### <a name="application"></a>Aplicativo
+
+Nenhum
 
 ---
 
@@ -746,17 +745,19 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário.  | Permite que o aplicativo para leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
+| _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário.  | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskyUser.Read.All_ |   Leia as informações de risco de identidade do usuário. | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização sem um usuário conectado. | Sim |
+| _IdentityRiskyUser.ReadWrite.All_ |   Ler e atualizar as informações de risco de identidade do usuário. | Permite que o aplicativo leia as informações de risco de identidade do usuário para todos os usuários em sua organização sem um usuário conectado. | Sim |
 
 
 ### <a name="remarks"></a>Comentários
 
-_IdentityRiskUser.Read.All_ é válido apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade do usuário, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityRiskUser.Read.All_ e _IdentityRiskyUser.ReadWrite.ALL_ são válidos apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade do usuário, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1464,6 +1465,22 @@ As permissões _Compartilhadas_ atualmente só são compatíveis com contas corp
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
 ---
+
+## <a name="teams-activity-permissions"></a>Permissões de Atividades da Equipe
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read_ | Ler o feed de atividades do trabalho em equipe | Permite que o aplicativo leia o feed de atividade em equipe do usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Não | Não |
+| _TeamsActivity.Send_ | Enviar uma atividade de trabalho em equipe como o usuário | Permite que o aplicativo crie novas atividades no feed de atividades de trabalho em equipe do usuário e envie novas atividades para o feed de atividades de outros usuários, em nome do usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Não | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read.All_ | Ler o feed de atividades do trabalho em equipe de todos os usuários. | Permite que o aplicativo leia o feed de atividade em equipe de todos os usuários sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
+| _TeamsActivity.Send_ | Enviar uma atividade de trabalho em equipe para qualquer usuário | Permite que o aplicativo envie novas atividades para o feed de atividade em equipe de qualquer usuário, sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
 
 ## <a name="terms-of-use-permissions"></a>Permissões de termos de uso
 
