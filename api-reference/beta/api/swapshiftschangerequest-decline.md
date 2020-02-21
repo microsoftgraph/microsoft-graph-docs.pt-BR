@@ -1,22 +1,22 @@
 ---
-title: 'openShiftChangeRequest: aprovar'
-description: Aprovar uma solicitação de openshift.
+title: 'swapShiftsChangeRequest: recusar'
+description: Recusar uma solicitação Shift de troca.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1301a975dcf858ff1d6f65beb1665d3ca5933de6
+ms.openlocfilehash: 35d7d9d83dc32d7598815ed8d98e7f6f828d8b1f
 ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219682"
+ms.locfileid: "42219787"
 ---
-# <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: aprovar
+# <a name="swapshiftschangerequest-decline"></a>swapShiftsChangeRequest: recusar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aprovar um objeto [openshiftchangerequest](../resources/openshiftchangerequest.md) .
+Recusar um objeto [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|mensagem|String|Uma mensagem de aprovação personalizada.|
+|mensagem|String|Uma mensagem de recusa personalizada.|
 
 ## <a name="response"></a>Resposta
 
@@ -64,11 +64,11 @@ O exemplo a seguir mostra como chamar essa API.
 Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
-  "name": "openshiftchangerequest_approve"
+  "name": "swapshiftchangerequest_decline"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 Content-type: application/json
 
 {
@@ -86,14 +86,14 @@ Este é um exemplo de resposta.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 NO CONTENT
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "openShiftChangeRequest: approve",
+  "description": "swapShiftChangeRequest: decline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

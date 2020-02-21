@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f952444e374d7db808dc708bf75dd9e6617d2e19
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 0a6ff400b787efbfd59e0d2f9aa614e85652be66
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952199"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219731"
 ---
 # <a name="swapshiftschangerequest-approve"></a>swapShiftsChangeRequest: aprovar
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/swapShiftsChangeRequests/approve
+POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,11 +64,11 @@ O exemplo a seguir mostra como chamar essa API.
 Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
-  "name": "openshiftchangerequest_approve"
+  "name": "swapshiftchangerequest_approve"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve
 Content-type: application/json
 
 {
@@ -86,14 +86,14 @@ Este é um exemplo de resposta.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 NO CONTENT
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "openShiftChangeRequest: approve",
+  "description": "swapShiftChangeRequest: approve",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
