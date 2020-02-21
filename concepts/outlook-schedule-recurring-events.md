@@ -4,12 +4,12 @@ description: Eventos recorrentes são uma parte importante do calendário do Out
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8730ca8ad7694782afafcabbc7d02f138f8fbb22
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570345"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162523"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Agendar compromissos repetidos como eventos recorrentes no Outlook
 
@@ -358,4 +358,8 @@ Para criar uma regra de recorrência, você deve especificar um padrão e um int
 
 ## <a name="next-steps"></a>Próximas etapas
     
-Veja mais detalhes em [integração com o calendário do Outlook](outlook-calendar-concept-overview.md).
+- Veja mais detalhes em [integração com o calendário do Outlook](outlook-calendar-concept-overview.md).
+- Visualize outros exemplos de eventos recorrentes na referência da API do calendário:
+  - [Crie um evento recorrente que ocorra uma vez por semana](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
+  - [Crie um evento recorrente diário](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+

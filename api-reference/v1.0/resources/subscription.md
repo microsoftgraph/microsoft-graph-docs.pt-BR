@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 02f06d9de4a3e40c06208502b8b08fbc2ab06bd2
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: cda3163cd7538c418338e5d2c6d1ab0a076b33ff
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953589"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159133"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -21,6 +21,8 @@ Uma assinatura permite que um aplicativo cliente receba notificações sobre dad
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
 - Um [usuário][] ou [grupo][] no Azure Active Directory
 - Um [alerta][] da API de Segurança do Microsoft Graph
+
+As expressões da trajetória do recurso com suporte para cada recurso - que podem ser usadas na propriedade do**recurso** da assinatura - estão documentadas no [artigo da visão geral](webhooks.md).
 
 ## <a name="methods"></a>Métodos
 

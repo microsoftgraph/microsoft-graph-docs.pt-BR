@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4a43b65c7419a6072018d9ee1d4f2572eedcdb87
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: 59fb8610dfbcb6689a25850f1104f1fc88233baf
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108487"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160232"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -164,7 +164,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   Ler todas as estatísticas de atividades do usuário. | Permite que o aplicativo leia as estatísticas das atividades do usuário sem um usuário conectado. | Sim |
+| _Analytics.Read_ |   Leia as estatísticas das atividades do usuário. | Permite que o aplicativo leia as estatísticas das atividades do usuário conectado, como quanto tempo o usuário gastou em e-mails, em reuniões ou em sessões de chat. | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1009,15 +1009,12 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 |_OnlineMeetings.Read_|Ler Reunião Online.|Permite que um aplicativo leia detalhes da reunião online em nome do usuário conectado.|Não|Não|
 |_OnlineMeetings.ReadWrite_|Leia e Crie Reuniões Online.|Permite que um aplicativo crie e leia as reuniões online em nome do usuário conectado. |Não|Não|
 
-<br/>
-
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|Ler detalhes de Reunião Online do aplicativo |Permite que o aplicativo leia os detalhes da reunião online associada ao VTC em sua organização, sem um usuário conectado.|Sim|
 |_OnlineMeetings.ReadWrite.All_|Ler detalhes de Reunião Online do aplicativo (preteridos)|**Preterido. Não use.** Permite que um aplicativo crie e leia as reuniões online sem um usuário conectado.|Sim|
-<br/>
 
 ### <a name="example-usage"></a>Exemplo de uso
 

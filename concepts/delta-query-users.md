@@ -4,12 +4,12 @@ description: A consulta delta permite que você consulte adições, exclusões o
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: ef3a310dc4ccaf4ea1d858dfe913d626855b24d8
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: c41185f7c8679dc2df06ae6a47a55c2f904012be
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652027"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163686"
 ---
 # <a name="get-incremental-changes-for-users"></a>Obter as alterações incrementais para usuários
 
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## <a name="deltalink-response"></a>Resposta deltaLink
 
-Se não houve alterações, o mesmo `deltaToken` é retornado com nenhum resultado.
+Se não houve alterações, uma diferente `deltatoken` é retornada com nenhum resultado.
 
 ```http
 HTTP/1.1 200 OK
@@ -171,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-No caso de alterações, o mesmo `deltaToken` é retornado incluindo um conjunto de usuários alterados.
+Se houve alterações, uma diferente `deltatoken` é retornada incluindo um conjunto de usuários alterados.
 
 ```http
 HTTP/1.1 200 OK

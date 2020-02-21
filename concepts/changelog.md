@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 33b7c7cf7d298de82cef0c46b2a8d56ad61576e7
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 0bdf257a202e976b24aa15d01c63499218eb5af6
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865799"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163693"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,11 +18,45 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="february-2020"></a>Fevereiro de 2020
 
+### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[macOSMdatpApp](/graph/api/resources/intune-apps-macosmdatpapp)<br/>[unsupportedGroupPolicyExtension](/graph/api/resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension)<br/>[userExperienceAnalyticsDeviceStartupProcess](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocess)<br/>[userExperienceAnalyticsDeviceStartupProcessPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance)<br/>[userExperienceAnalyticsStartupScoreHistory](/graph/api/resources/intune-devices-userexperienceanalyticsstartupscorehistory)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[customUpdateTimeWindow](/graph/api/resources/intune-deviceconfig-customupdatetimewindow)<br/>[iosAvailableUpdateVersion](/graph/api/resources/intune-softwareupdate-iosavailableupdateversion)<br/>[managedDeviceSummarizedAppState](/graph/api/resources/intune-troubleshooting-manageddevicesummarizedappstate)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[enrollmentAvailabilityOptions](/graph/api/resources/intune-shared-enrollmentavailabilityoptions)<br/>[globalDeviceHealthScriptState](/graph/api/resources/intune-devices-globaldevicehealthscriptstate)<br/>[iosSoftwareUpdateScheduleType](/graph/api/resources/intune-deviceconfig-iossoftwareupdatescheduletype)<br/>|
+|Adição|beta|Adicionada a ação [updateGlobalScript](/graph/api/intune-devices-devicehealthscript-updateglobalscript) em [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Adição|beta|Adicionada a ação [GetGlobalScriptHighestAvailableVersion](/graph/api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion) em [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Adição|beta|Adicionada a ação [enableGlobalScripts](/graph/api/intune-devices-devicehealthscript-enableglobalscripts) na coleção [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Adição|beta|Adicionada a função [getManagedDevicesWithFailedOrPendingApps](/graph/api/intune-troubleshooting-user-getmanageddeviceswithfailedorpendingapps) em [usuário](/graph/api/resources/intune-shared-user) |
+|Adição|beta|Adicionada a função [enableGlobalScripts](/graph/api/intune-devices-devicehealthscript-areglobalscriptsavailable) na coleção [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Exclusão|Beta|Foram removidos os seguintes tipos de enumeração:<br/>**logLevel**<br/>|
+|Adição|beta|Adicionada a propriedade **certificateSerialNumber** à entidade [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate)|
+|Adição|beta|Adicionadas as propriedades **isGlobalScript** e **highestAvailableVersion** à entidade [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript)|
+|Adição|beta|Adicionada a propriedade **hasRequiredSetting** à entidade [deviceManagementSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementsettingcategory)|
+|Adição|beta|Adicionadas as propriedades **sendDeviceOwnershipChangePushNotification**, **enrollmentAvailability** e **roleScopeTagIds** à entidade [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile)|
+|Adição|beta|Adicionadas as propriedades **updateScheduleType** e **customUpdateTimeWindows** à entidade [iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration)|
+|Adição|beta|Adicionada a propriedade **appActionIfUnableToAuthenticateUser** à entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection)|
+|Adição|beta|Adicionada a propriedade **userPrincipalName** à entidade [termsAndConditionsAcceptanceStatus](/graph/api/resources/intune-companyterms-termsandconditionsacceptancestatus)|
+|Adição|beta|Adicionada a propriedade **responsiveDesktopTimeInMs** à entidade [userExperienceAnalyticsDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdeviceperformance)|
+|Adição|beta|Adicionada a propriedade **responsiveDesktopTimeInMs** à entidade [userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory)|
+|Adição|beta|Adicionada a propriedade **installLanguage** à entidade [win32LobApp](/graph/api/resources/intune-apps-win32lobapp)|
+|Adição|beta|Adicionada a propriedade **displayLanguageLocale** à entidade [windowsMicrosoftEdgeApp](/graph/api/resources/intune-apps-windowsmicrosoftedgeapp)|
+|Adição|beta|Adicionadas as propriedades de navegação **userExperienceAnalyticsDeviceStartupProcesses**, **userExperienceAnalyticsDeviceStartupProcessPerformance** e **userExperienceAnalyticsStartupScoreHistory** à propriedade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement)|
+|Adição|beta|Adicionada a propriedade de navegação **unsupportedGroupPolicyExtensions** à entidade [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport)|
+|Adição|beta|Adicionada a propriedade **configMgrDeviceCount** ao tipo complexo [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary)|
+|Adição|beta|Adicionadas as propriedades **sendDeviceOwnershipChangePushNotification**, **enrollmentAvailability** e **roleScopeTagIds** ao tipo de complexo [intuneBrandingProfile](/graph/api/resources/intune-onboarding-intunebrand)|
+|Adição|beta|Adicionada a propriedade **troubleshootingErrorDetails** ao tipo de complexo [mobileAppTroubleshootingHistoryItem](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem)|
+|Adição|beta|Adicionado ao membro **xTec** ao tipo de enumeração [deviceManagementDerivedCredentialIssuer](/graph/api/resources/intune-rapolicy-devicemanagementderivedcredentialissuer)|
+|Adição|beta|Adicionado o membro **windows10x** ao tipo de dispositivo [deviceType](/graph/api/resources/intune-deviceconfig-devicetype)|
+|Adição|beta|Adicionado o membro**windowsManagementCloudApi** ao tipo de enumeração [managementAgentType](/graph/api/resources/intune-deviceconfig-managementagenttype)|
+
+
 ### <a name="groups"></a>Grupos
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | O [group: assignLicense API](../api-reference/v1.0/api/group-assignlicense.md) foi adicionado, o que pode ser usado para atribuir uma licença a uma [group](../api-reference/v1.0/resources/group.md). |
+| Adição | v1.0 | O [group: assignLicense API](/graph/api/group-assignlicense.md?view=graph-rest-1.0) foi adicionado, o que pode ser usado para atribuir uma licença a uma [group](/graph/api/resources/group?view=graph-rest-1.0). |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
@@ -34,7 +68,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição | v1.0 | O [user: reprocessLicenseAssignment do ](../api-reference/v1.0/api/user-reprocesslicenseassignment.md), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](../api-reference/v1.0/resources/user.md). |
+| Adição | v1.0 | O [user: reprocessLicenseAssignment do ](/graph/api/user-reprocesslicenseassignment.md), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/user.md?view=graph-rest-1.0). |
 | Adição | v1.0 | A propriedade **identidades** foi adicionada ao recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0). Esta propriedade representa o conjunto de identidades (como contas locais e contas sociais) com as quais este usuário pode se conectar.|
 
 ## <a name="january-2020"></a>Janeiro de 2020
@@ -1856,7 +1890,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|Os membros**zscalerPrivateAccess**, **f5Access2018**, **citrixSso** e **paloAltoGlobalProtectV2** foram adicionados ao tipo de enumeração[appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro**userAbandonment** para o tipo de enumeração [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **bloqueados** na enumeração tipo [enrollmentState](/graph/api/resources/intune-enrollment-enrollmentstate?view=graph-rest-beta) |
-|Adição|beta|Adicionado o membro**microsoft365ManagedMdm** na enumeração tipo [managementAgentType](/graph/api/resources/intune-devices-managementagenttype?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro**microsoft365ManagedMdm** na enumeração tipo [managementAgentType](/graph/api/resources/intune-shared-managementagenttype?view=graph-rest-beta)|
 |Adição|beta|O membro **domainNameService** foi adicionado na enumeração tipo[subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta)|
 |Adição|beta|Os membros **wpa2Personal** e **wpa2Enterprise** foram adicionados à enumeração tipo [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta) |
 |Adição|beta|Os membros **enterpriseUnwantedSoftware**, **resgate** e **hipsRule**foram adicionados À enumeração tipo[windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta)|
