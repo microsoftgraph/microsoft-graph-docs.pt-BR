@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9db168bda1c79232bb18b76464732e10e75331e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58ec80676455c4804723771e5e71fbab30a9a2c1
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976366"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163413"
 ---
 # <a name="create-page"></a>Criar página
 
@@ -18,7 +18,10 @@ Crie uma nova página do OneNote na seção padrão do bloco de anotações padr
 
 Para criar uma página em uma seção diferente no bloco de anotações padrão, você pode usar `sectionName` o parâmetro de consulta.  Exemplo: `../onenote/pages?sectionName=My%20section`
 
-A `POST /onenote/pages` operação é usada apenas para criar páginas no bloco de anotações padrão do usuário atual. Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada](../api/section-post-pages.md).           
+A `POST /onenote/pages` operação é usada apenas para criar páginas no bloco de anotações padrão do usuário atual. Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada](../api/section-post-pages.md).  
+
+> **Observação:** Há um limite para o número de páginas que podem ser adicionadas a uma seção usando essa API. Para obter detalhes, consulte [criar páginas do OneNote](/graph/onenote-create-page) para todas as limitações com esta API.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
