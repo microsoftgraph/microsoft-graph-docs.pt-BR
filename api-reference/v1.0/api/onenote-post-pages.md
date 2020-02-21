@@ -5,30 +5,33 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9db168bda1c79232bb18b76464732e10e75331e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58ec80676455c4804723771e5e71fbab30a9a2c1
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976366"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163413"
 ---
-# <a name="create-page"></a><span data-ttu-id="d0b29-103">Criar página</span><span class="sxs-lookup"><span data-stu-id="d0b29-103">Create page</span></span>
+# <a name="create-page"></a><span data-ttu-id="8ec74-103">Criar página</span><span class="sxs-lookup"><span data-stu-id="8ec74-103">Create page</span></span>
 
-<span data-ttu-id="d0b29-104">Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.</span><span class="sxs-lookup"><span data-stu-id="d0b29-104">Create a new OneNote page in the default section of the default notebook.</span></span>
+<span data-ttu-id="8ec74-104">Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.</span><span class="sxs-lookup"><span data-stu-id="8ec74-104">Create a new OneNote page in the default section of the default notebook.</span></span>
 
-<span data-ttu-id="d0b29-105">Para criar uma página em uma seção diferente no bloco de anotações padrão, você pode usar `sectionName` o parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="d0b29-105">To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.</span></span>  <span data-ttu-id="d0b29-106">Exemplo: `../onenote/pages?sectionName=My%20section`</span><span class="sxs-lookup"><span data-stu-id="d0b29-106">Example: `../onenote/pages?sectionName=My%20section`</span></span>
+<span data-ttu-id="8ec74-105">Para criar uma página em uma seção diferente no bloco de anotações padrão, você pode usar `sectionName` o parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="8ec74-105">To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.</span></span>  <span data-ttu-id="8ec74-106">Exemplo: `../onenote/pages?sectionName=My%20section`</span><span class="sxs-lookup"><span data-stu-id="8ec74-106">Example: `../onenote/pages?sectionName=My%20section`</span></span>
 
-<span data-ttu-id="d0b29-107">A `POST /onenote/pages` operação é usada apenas para criar páginas no bloco de anotações padrão do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="d0b29-107">The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook.</span></span> <span data-ttu-id="d0b29-108">Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada](../api/section-post-pages.md).</span><span class="sxs-lookup"><span data-stu-id="d0b29-108">If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).</span></span>           
-## <a name="permissions"></a><span data-ttu-id="d0b29-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="d0b29-109">Permissions</span></span>
-<span data-ttu-id="d0b29-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0b29-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8ec74-107">A `POST /onenote/pages` operação é usada apenas para criar páginas no bloco de anotações padrão do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="8ec74-107">The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook.</span></span> <span data-ttu-id="8ec74-108">Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada](../api/section-post-pages.md).</span><span class="sxs-lookup"><span data-stu-id="8ec74-108">If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).</span></span>  
 
-|<span data-ttu-id="d0b29-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d0b29-112">Permission type</span></span>      | <span data-ttu-id="d0b29-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d0b29-113">Permissions (from least to most privileged)</span></span>              |
+> <span data-ttu-id="8ec74-109">**Observação:** Há um limite para o número de páginas que podem ser adicionadas a uma seção usando essa API.</span><span class="sxs-lookup"><span data-stu-id="8ec74-109">**Note:** There is a limit to the number of pages that can be added to a section using this API.</span></span> <span data-ttu-id="8ec74-110">Para obter detalhes, consulte [criar páginas do OneNote](/graph/onenote-create-page) para todas as limitações com esta API.</span><span class="sxs-lookup"><span data-stu-id="8ec74-110">For details, see [Create OneNote pages](/graph/onenote-create-page) for all limitations with this API.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="8ec74-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="8ec74-111">Permissions</span></span>
+<span data-ttu-id="8ec74-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8ec74-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="8ec74-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8ec74-114">Permission type</span></span>      | <span data-ttu-id="8ec74-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8ec74-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d0b29-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d0b29-114">Delegated (work or school account)</span></span> | <span data-ttu-id="d0b29-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0b29-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d0b29-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d0b29-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0b29-117">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d0b29-117">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="d0b29-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d0b29-118">Application</span></span> | <span data-ttu-id="d0b29-119">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0b29-119">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="8ec74-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8ec74-116">Delegated (work or school account)</span></span> | <span data-ttu-id="8ec74-117">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8ec74-117">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8ec74-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8ec74-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8ec74-119">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8ec74-119">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="8ec74-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8ec74-120">Application</span></span> | <span data-ttu-id="8ec74-121">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8ec74-121">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d0b29-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d0b29-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8ec74-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8ec74-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -38,26 +41,26 @@ POST /groups/{id}/onenote/pages
 POST /sites/{id}/onenote/pages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d0b29-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d0b29-121">Request headers</span></span>  
-| <span data-ttu-id="d0b29-122">Nome</span><span class="sxs-lookup"><span data-stu-id="d0b29-122">Name</span></span>       | <span data-ttu-id="d0b29-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="d0b29-123">Type</span></span> | <span data-ttu-id="d0b29-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="d0b29-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8ec74-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8ec74-123">Request headers</span></span>  
+| <span data-ttu-id="8ec74-124">Nome</span><span class="sxs-lookup"><span data-stu-id="8ec74-124">Name</span></span>       | <span data-ttu-id="8ec74-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="8ec74-125">Type</span></span> | <span data-ttu-id="8ec74-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="8ec74-126">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="d0b29-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="d0b29-125">Authorization</span></span>  | <span data-ttu-id="d0b29-126">string</span><span class="sxs-lookup"><span data-stu-id="d0b29-126">string</span></span>  | <span data-ttu-id="d0b29-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d0b29-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="d0b29-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d0b29-129">Content-Type</span></span> | <span data-ttu-id="d0b29-130">string</span><span class="sxs-lookup"><span data-stu-id="d0b29-130">string</span></span> | <span data-ttu-id="d0b29-p105">`text/html`ou `application/xhtml+xml` para o conteúdo HTML, inclusive para a parte obrigatória "Apresentação" de solicitações com várias partes. As solicitações com várias partes usam o tipo de conteúdo `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="d0b29-p105">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
+| <span data-ttu-id="8ec74-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="8ec74-127">Authorization</span></span>  | <span data-ttu-id="8ec74-128">string</span><span class="sxs-lookup"><span data-stu-id="8ec74-128">string</span></span>  | <span data-ttu-id="8ec74-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8ec74-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8ec74-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8ec74-131">Content-Type</span></span> | <span data-ttu-id="8ec74-132">string</span><span class="sxs-lookup"><span data-stu-id="8ec74-132">string</span></span> | <span data-ttu-id="8ec74-p106">`text/html`ou `application/xhtml+xml` para o conteúdo HTML, inclusive para a parte obrigatória "Apresentação" de solicitações com várias partes. As solicitações com várias partes usam o tipo de conteúdo `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="8ec74-p106">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d0b29-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d0b29-133">Request body</span></span>
-<span data-ttu-id="d0b29-134">No corpo da solicitação, forneça o conteúdo HTML da página.</span><span class="sxs-lookup"><span data-stu-id="d0b29-134">In the request body, supply the HTML content for the page.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8ec74-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8ec74-135">Request body</span></span>
+<span data-ttu-id="8ec74-136">No corpo da solicitação, forneça o conteúdo HTML da página.</span><span class="sxs-lookup"><span data-stu-id="8ec74-136">In the request body, supply the HTML content for the page.</span></span>
 
-<span data-ttu-id="d0b29-p106">O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode conter um formato de mensagem com várias partes conforme mostrado no exemplo. Se você estiver enviando dados binários, envie uma solicitação com várias partes.</span><span class="sxs-lookup"><span data-stu-id="d0b29-p106">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
+<span data-ttu-id="8ec74-p107">O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode conter um formato de mensagem com várias partes conforme mostrado no exemplo. Se você estiver enviando dados binários, envie uma solicitação com várias partes.</span><span class="sxs-lookup"><span data-stu-id="8ec74-p107">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d0b29-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0b29-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8ec74-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="8ec74-139">Response</span></span>
 
-<span data-ttu-id="d0b29-138">Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Page](../resources/page.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d0b29-138">If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
+<span data-ttu-id="8ec74-140">Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Page](../resources/page.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8ec74-140">If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d0b29-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d0b29-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d0b29-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d0b29-140">Request</span></span>
-<span data-ttu-id="d0b29-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d0b29-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8ec74-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8ec74-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8ec74-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8ec74-142">Request</span></span>
+<span data-ttu-id="8ec74-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8ec74-143">Here is an example of the request.</span></span>
 
-<span data-ttu-id="d0b29-142">No `../onenote/pages` caminho, você pode usar o `sectionName` parâmetro de consulta para criar uma página em uma seção específica no bloco de anotações padrão.</span><span class="sxs-lookup"><span data-stu-id="d0b29-142">In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook.</span></span> <span data-ttu-id="d0b29-143">Exemplo: `../onenote/pages?sectionName=My%20section`.</span><span class="sxs-lookup"><span data-stu-id="d0b29-143">Example: `../onenote/pages?sectionName=My%20section`.</span></span> <span data-ttu-id="d0b29-144">Se a seção não existir (ou tiver sido renomeada), a API criará uma nova seção.</span><span class="sxs-lookup"><span data-stu-id="d0b29-144">If the section doesn't exist (or was renamed), the API will create a new section.</span></span>
+<span data-ttu-id="8ec74-144">No `../onenote/pages` caminho, você pode usar o `sectionName` parâmetro de consulta para criar uma página em uma seção específica no bloco de anotações padrão.</span><span class="sxs-lookup"><span data-stu-id="8ec74-144">In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook.</span></span> <span data-ttu-id="8ec74-145">Exemplo: `../onenote/pages?sectionName=My%20section`.</span><span class="sxs-lookup"><span data-stu-id="8ec74-145">Example: `../onenote/pages?sectionName=My%20section`.</span></span> <span data-ttu-id="8ec74-146">Se a seção não existir (ou tiver sido renomeada), a API criará uma nova seção.</span><span class="sxs-lookup"><span data-stu-id="8ec74-146">If the section doesn't exist (or was renamed), the API will create a new section.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -99,8 +102,8 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a><span data-ttu-id="d0b29-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0b29-145">Response</span></span>
-<span data-ttu-id="d0b29-p108">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d0b29-p108">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
+##### <a name="response"></a><span data-ttu-id="8ec74-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="8ec74-147">Response</span></span>
+<span data-ttu-id="8ec74-p109">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8ec74-p109">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
