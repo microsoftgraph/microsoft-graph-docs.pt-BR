@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcional que voc�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: f5cee8933c13ea9f92ae14ae664e9c1492267ea1
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 6aafefce824a9d37522415b785f00a43efe40c0f
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "41251896"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160225"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -369,6 +369,8 @@ Algumas solicitações retornam várias páginas de dados devido à paginação 
 Use o parâmetro de consulta `$top` para especificar o tamanho de página do conjunto de resultados. 
 
 Se restarem mais itens no conjunto de resultados, o corpo da resposta conterá um parâmetro `@odata.nextLink`. Esse parâmetro contém uma URL que você pode usar para obter a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md). 
+
+O $top aceita um valor mínimo de 1 e um valor máximo de 999 (inclusive).  
 
 Por exemplo, a solicitação a seguir retorna as primeiras cinco mensagens na caixa de correio do usuário:
 
