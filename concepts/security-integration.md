@@ -4,12 +4,12 @@ description: Você pode se conectar à API de segurança do Microsoft Graph usan
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 362dde5c75180bfe1edbf42f49bcbe009af9015a
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: a3f5a2dc137a37012c4d7787d8c57c1045970be3
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484404"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219605"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>Integração das soluções de segurança usando a API de segurança do Microsoft Graph
 
@@ -23,7 +23,7 @@ Você pode se conectar à API de segurança do Microsoft Graph usando qualquer u
 
 | Tipo de solução | Nome | Conector | Comunicado |
 |:-----|:--------|:--------|:----------|
-| SIEM |Splunk |[Visão geral da API de Segurança do Microsoft Graph](https://aka.ms/graphsecuritysplunkaddon) | [Postagem no blog](https://aka.ms/graphsecuritysplunkaddonblogpost) |
+| SIEM |Splunk Enterprise e Splunk Cloud|[Visão geral da API de Segurança do Microsoft Graph](https://aka.ms/graphsecuritysplunkaddon) | [Postagem no blog](https://aka.ms/graphsecuritysplunkaddonblogpost)<br>[Postagem no blog Splunk na nuvem](https://aka.ms/graphsecuritysplunkcloudblogpost)|
 | SOAR | Aplicativos lógicos do Azure/fluxo da Microsoft | [Conectores de segurança do Microsoft Graph para Aplicativos Lógicos, Flow e PowerApps](https://aka.ms/graphsecurityconnectors) | [Postagem no blog](https://aka.ms/graphsecurityconnectorsblogpost) |
 | Automação | Módulo do PowerShell | [Módulo do PowerShell de segurança do Microsoft Graph](https://aka.ms/graphsecuritypowershellmodule) | [Postagem no blog](https://aka.ms/graphsecuritypowershellmodulepost) |
 | Relatório | Power BI | [Conector de segurança do Microsoft Graph para Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc) | [Postagem no blog](https://aka.ms/graphsecuritypowerbiconnectorblogpost) |

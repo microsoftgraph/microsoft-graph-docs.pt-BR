@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 10d142195e5b3520dc47cf52b4708a104e645e2d
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: a3dd8232233d328b254d2b7668fb923694ce770c
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969889"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219759"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -87,4 +87,5 @@ Está procurando a referência de API para esse serviço?
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Usar a API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- Explorar [exemplos da API de segurança do Microsoft Graph](https://aka.ms/graphsecurityapicode)
 - Interessado em se tornar um provedor de segurança? Contate [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

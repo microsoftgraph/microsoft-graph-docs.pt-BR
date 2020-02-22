@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7a71eecadd1d39c37c7778a283bf7a25686da23c
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 1c000496a49460269fbb386c9ba7225b4746f109
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844474"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219773"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
@@ -105,8 +105,8 @@ A API do [perfil](/graph/api/resources/profile?view=graph-rest-beta) representa 
 Procurando a referência de API para estes serviços?
 
 - [API de Pessoas](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Inteligência de pessoas e do local de trabalho](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [API do Perfil (visualização)](/graph/api/resources/profile?view=graph-rest-beta).
+- [Análise API (visualização)](/graph/api/resources/useranalytics?view=graph-rest-beta)
+- [API do Perfil (visualização)](/graph/api/resources/profile?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0bdf257a202e976b24aa15d01c63499218eb5af6
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 5a8f89b2c31480b8cd0b11374c7dc7d74cd3653c
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163693"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219598"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -56,7 +56,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | O [group: assignLicense API](/graph/api/group-assignlicense.md?view=graph-rest-1.0) foi adicionado, o que pode ser usado para atribuir uma licença a uma [group](/graph/api/resources/group?view=graph-rest-1.0). |
+| Adição | v1.0 | O [group: assignLicense API](/graph/api/group-assignlicense?view=graph-rest-1.0) foi adicionado, o que pode ser usado para atribuir uma licença a uma [group](/graph/api/resources/group?view=graph-rest-1.0). |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
@@ -64,11 +64,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |:---|:---|:---|
 | Adição | Beta e v1.0 | A propriedade **latestSupportedTlsVersion** foi adicionada à entidade da [assinatura](/graph/api/resources/subscription?view=graph-rest-1.0). Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Para obter detalhes, confira [Assinaturas do Microsoft Graph que substituíram o TLS 1.0 e o 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
 
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | Beta | Adicionado o método [swapShiftsChangeRequest: recusar](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta) método para o recurso **swapShiftsChangeRequest**. |
+
 ### <a name="users"></a>Usuários
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição | v1.0 | O [user: reprocessLicenseAssignment do ](/graph/api/user-reprocesslicenseassignment.md), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/user.md?view=graph-rest-1.0). |
+| Adição | v1.0 | O [user: reprocessLicenseAssignment do ](/graph/api/user-reprocesslicenseassignment), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/user?view=graph-rest-1.0). |
 | Adição | v1.0 | A propriedade **identidades** foi adicionada ao recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0). Esta propriedade representa o conjunto de identidades (como contas locais e contas sociais) com as quais este usuário pode se conectar.|
 
 ## <a name="january-2020"></a>Janeiro de 2020
