@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
-ms.openlocfilehash: 4da5570719cf64ba8fc329039e4ba4fcef7348b5
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: ba7ecccddadb65bcd2e1a3050be404256bf587e2
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969840"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219766"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -44,7 +44,7 @@ Para saber mais sobre os tokens de acesso do Azure AD e o Microsoft Graph, consu
 
 A tabela a seguir mostra os pontos de extremidade da raiz do serviço para o Microsoft Graph e o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) para cada nuvem nacional.
 
-| National Cloud | Microsoft Graph | Explorador do Graph |
+| National Cloud | Microsoft Graph | Graph Explorer |
 |---------------------------|----------------|----------------|
 | Microsoft Graph para o governo dos EUA | https://graph.microsoft.us | Sem suporte. |
 | Microsoft Graph para o governo dos EUA L5 (DOD) | https://dod-graph.microsoft.us | Sem suporte. |
@@ -73,7 +73,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
 | Alterar notificações (Webhooks)  | ➖|✔* |✔* |
-| Consulta delta | ➖ | ➖| ➖ |
+| Consulta delta | ➖ | ✔ | ➖ |
 | Extensões de esquema de diretório |➖|➖|➖|
 | Extensões de tipo aberto|➖|➖|➖|
   
@@ -96,4 +96,4 @@ Para saber mais sobre nuvens nacionais, confira os seguintes tópicos:
 - [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Governo do Azure](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure da 21Vianet da China](https://docs.microsoft.com/azure/china/)
-- [Microsoft Azure Alemanha](https://docs.microsoft.com/azure/germany/)
+- [Azure Alemanha](https://docs.microsoft.com/azure/germany/)
