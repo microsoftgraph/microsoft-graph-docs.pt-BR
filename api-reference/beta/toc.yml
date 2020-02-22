@@ -10768,7 +10768,7 @@
                       href: api/shiftpreferences-get.md
                     - name: Atualizar
                       href: api/shiftpreferences-put.md
-                - name: Trocar solicitação de alteração de mudança
+                - name: Trocar mudança de mudança
                   href: resources/swapshiftschangerequest.md
                   items:
                     - name: Listar
@@ -10777,6 +10777,10 @@
                       href: api/swapshiftschangerequest-post.md
                     - name: Obter
                       href: api/swapshiftschangerequest-get.md
+                    - name: Aprovar
+                      href: api/swapshiftschangerequest-approve.md
+                    - name: Aceito
+                      href: api/swapshiftschangerequest-decline.md
                 - name: Folga
                   href: resources/timeoff.md
                   items:
