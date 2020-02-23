@@ -4,19 +4,21 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma de duas m
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 74cc6ad4af5d649ca480c7b708b0716062e8d36a
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: f6087de7146dd7b395bbe122097a41bd221c1da5
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953603"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42229749"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>Anexar arquivos grandes às mensagens do Outlook como anexos (visualização)
 
 Dependendo do tamanho do arquivo, você pode escolher uma das duas maneiras de anexar um arquivo a uma [mensagem](/graph/api/resources/message?view=graph-rest-beta):
 
-- Se o tamanho do arquivo é até 4 MB, você pode fazer um único [POST na propriedade de navegação de anexos da mensagem](/graph/api/message-post-attachments?view=graph-rest-beta). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
-- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de carregamento e use o `PUT` iteradamente para carregar intervalos de bytes do arquivo até que você carregue todo o arquivo. Um cabeçalho na resposta `PUT` finalizada com êxito inclui uma URL com a ID do anexo.
+- Se o tamanho do arquivo for menor que 3 MB, você poderá executar um único [POST na propriedade de navegação de anexos da mensagem](/graph/api/message-post-attachments?view=graph-rest-beta). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
+- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de carregamento e use o `PUT` iteradamente para carregar intervalos de bytes do arquivo até que você carregue todo o arquivo. Um cabeçalho na resposta `PUT` finalizada com êxito inclui uma URL com a ID do anexo. 
+
+Para anexar vários arquivos a uma mensagem, escolha a abordagem de cada arquivo com base em seu tamanho e anexe-os individualmente.
 
 Este artigo usa um exemplo para ilustrar a segunda abordagem. O exemplo cria e usa uma sessão de carregamento para adicionar um anexo de arquivo grande (com tamanho acima de 3 MB) a uma mensagem específica. Depois de carregar o arquivo inteiro, ele recebe uma URL que contém uma identificação para o arquivo em anexo, com o qual ele pode fazer outras operações, como obter os metadados do anexo de arquivo.
 
@@ -32,7 +34,7 @@ O objeto**uploadSession** na resposta também inclui a propriedade **nextExpecte
 
 ### <a name="example-request-create-an-upload-session"></a>Solicitação de exemplo: criar uma sessão de carregamento
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "walkthrough_create_uploadsession",
@@ -50,15 +52,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/walkthrough-create-uploadsession-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -255,5 +257,9 @@ DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626f
 ```http
 HTTP/1.1 204 No content
 ```
+## <a name="errors"></a>Erros
 
+### <a name="errorattachmentsizeshouldnotbelessthanminimumsize"></a>ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
+
+Este erro é devolvido ao tentar [criar uma sessão de upload](/graph/api/attachment-createuploadsession?view=graph-rest-beta) para anexar um arquivo menor que 3 MB. Se o tamanho do arquivo for menor que 3 MB, execute um único [POST na propriedade de navegação de anexos da mensagem](/graph/api/message-post-attachments?view=graph-rest-beta). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
 
