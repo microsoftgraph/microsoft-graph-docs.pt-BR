@@ -5,24 +5,24 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cda3163cd7538c418338e5d2c6d1ab0a076b33ff
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: e036c357d65c7f01c1596095569f8dfe5b863007
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159133"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219668"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
 Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:
 
-- Um [mensagem][], [evento][], ou [contato][] no Outlook
+- Um [alerta][] do Microsoft Graph Security API
 - Um [conversa][] de um grupo do Office 365
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
+- Uma [mensagem][], [evento][] ou [contato][] no Outlook
 - Um [usuário][] ou [grupo][] no Azure Active Directory
-- Um [alerta][] da API de Segurança do Microsoft Graph
 
-As expressões da trajetória do recurso com suporte para cada recurso - que podem ser usadas na propriedade do**recurso** da assinatura - estão documentadas no [artigo da visão geral](webhooks.md).
+Consulte [usar o Microsoft Graph API para obter notificações de alteração](webhooks.md) dos possíveis valores de caminho de recurso de cada recurso suportado.
 
 ## <a name="methods"></a>Métodos
 
@@ -40,7 +40,7 @@ As expressões da trajetória do recurso com suporte para cada recurso - que pod
 |:---------|:-----|:------------|
 | changeType | cadeia de caracteres | Obrigatório. Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações do item na raiz da unidade suportam somente `updated` changeType. Notificações de grupos e usuário suportam `updated` e `deleted` changeType. |
 | notificationUrl | cadeia de caracteres | Obrigatório. A URL do ponto de extremidade que receberá as notificações. Esta URL deve usar o protocolo HTTPS. |
-| recurso | cadeia de caracteres | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). |
+| recurso | cadeia de caracteres | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
 | clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação foi proveniente do serviço comparando o valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida com cada notificação. |
 | id | string | Identificador exclusivo da assinatura. Somente leitura. |

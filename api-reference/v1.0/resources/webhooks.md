@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: aadd1cb451a5da1c8d546ce140bd8129ca9c2bf8
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 882dfc676607c949fb45a67441465886dd24ad9a
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162509"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219745"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -20,16 +20,16 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 
 | **Recurso** | **Trajetórias dos recursos com suporte** | **Os dados do recurso podem ser incluídos nas notificações**                  |
 |:----------------|:------------|:-----------------------------------------|
-| [Mensagem][] do Outlook | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | Não |
-| [Evento][] do Outlook | `/users/{id}/events` | Não |
-| [Contato][] pessoal do Outlook | `/users/{id}/contacts` | Não |
-| [Usuário][] | `/users` (alterações a todos os usuários)<br>`/users/{id}` ( um usuário específico) | Não |
-| [Grupo][] | `/groups` (alterações a todos os grupos)<br>`/groups/{id}` (a um grupo específico) | Não |
-| [Conversa][] em grupo do Office 365 | `groups/{id}/conversations` | Não |
-| Conteúdo dentro da hierarquia de _qualquer pasta_ [driveItem][] no OneDrive pessoal do usuário | `/me/drive/root` | Não |
-| Conteúdo dentro da hierarquia da _pasta raiz_[driveItem][] no OneDrive for Business | `/drives/{id}/root`<br> `/me/drive/root` | Não |
-| [Alerta][] de segurança | `/security/alerts/{id}` (a um alerta específico) <br> `/security/alerts/?$filter` (alterações em alertas filtrados) | Não |
-| Equipes [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | `/teams/allMessages` (mensagens em todos os canais de todas as equipes)<br>`/teams/{id}/channels/{id}/messages` (mensagens em um chat específico)<br>`/chats/allMessages` (mensagens em todos os chats)<br>`/chats/{id}/messages` (mensagens em um chat específico) | Sim |
+| [Mensagem][] do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário: <br>`/users/{id}/messages`<br>Alterações em todas as mensagens na caixa de entrada de um usuário:<br>`/users/{id}/mailFolders('inbox')/messages` | Não |
+| [Evento][] do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário:<br>`/users/{id}/events` | Não |
+| [Contato][] pessoal do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário:<br>`/users/{id}/contacts` | Não |
+| [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
+| [Grupo][] | Alterações em todos os grupos:<br>`/groups` <br>Alterações em um grupo específico:<br>`/groups/{id}` | Não |
+| [Conversa][] em grupo do Office 365 | Alterações nas conversas de um grupo:<br>`groups/{id}/conversations` | Não |
+| [driveItem][] no OneDrive (pessoal) | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/users/{id}/drive/root` | Não |
+| [driveItem][] no OneDrive for Business | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Não |
+| [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
+| Equipes [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
 
 > **Observação**: qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
 
