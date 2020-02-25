@@ -1,11 +1,16 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 39caffa7cb2e419fa914c5545688cfc120e7bb59
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636924"
 ---
-
 ```javascript
 
 const options = {
-	authProvider,
+    authProvider,
 };
 
 const client = Client.init(options);
@@ -20,6 +25,6 @@ const string = {
 };
 
 let res = await client.api('/me/checkMemberObjects')
-	.post(string);
+    .post(string);
 
 ```
