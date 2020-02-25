@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ef2b53a9b907146c91bb66e269c6f604c2b26d57
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 847bb4f25cfdadecc3983ac7365eff8146200094
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938685"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268382"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -64,19 +64,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | categories|String|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina. |
 | importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-| isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
-|isOnlineMeeting|Booliano| `True`Se esse evento tiver informações de reunião online `false` , caso contrário. O padrão é false. Opcional.|
-| isReminderOn|Boolean|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
-| location|Localização|O local do evento.|
+| isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se for true, independentemente de ser um evento de dia ou de vários dias, o horário de início e término deverá ser definido como meia-noite e estar no mesmo fuso horário.|
+|isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
+| isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+| location|Local|O local do evento.|
 |locations|[location](../resources/location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
-|onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness`e `skypeForConsumer`. Opcional. |
+|onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
 | recurrence|PatternedRecurrence|O padrão de recorrência do evento.|
 | reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-| responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+| responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 | sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|O status a ser exibido. Os valores possíveis são `free` : `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`,.|
 | iniciar|DateTimeTimeZone|A data, a hora e o fuso horário do evento. |
-| assunto|String|O texto da linha de assunto do evento.|
+| assunto|Cadeia de caracteres|O texto da linha de assunto do evento.|
 
 Como o recurso **evento** dá suporte as [extensões](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância do **evento** existente.
 
@@ -94,7 +94,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_event"
@@ -119,11 +119,11 @@ Content-length: 285
   "isReminderOn": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

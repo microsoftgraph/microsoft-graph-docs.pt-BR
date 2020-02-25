@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dad5e83e515fbbbcd8f762966d89080f2f662c21
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 575b04f56b2f91f399b8e6bf48a95afdd758307d
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994918"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268396"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -66,11 +66,11 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 ### <a name="example-1-create-an-event-in-a-specific-calendar"></a>Exemplo 1: criar um evento em um calendário específico
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir cria um evento no calendário especificado do usuário conectado.
+O exemplo a seguir cria um evento em um calendário específico e atribui ao evento um valor opcional de **TransactionId** .
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
@@ -105,18 +105,19 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -124,7 +125,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -157,6 +160,7 @@ Content-type: application/json
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs": "busy",
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
@@ -224,7 +228,7 @@ O exemplo a seguir cria um evento no calendário especificado do usuário conect
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGViNDU8zAAAAAGtlAAA="],
@@ -264,15 +268,15 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-with-online-meeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-with-online-meeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -280,7 +284,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

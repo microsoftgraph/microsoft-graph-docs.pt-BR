@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05cdbdbc5cc044f30a3dd2f8ea63dcf6fac50222
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: d25d3a39d6a59d8dd00afccd47cc484480e1ceae
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37637564"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268391"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -28,7 +28,7 @@ Todos esses tipos de recursos de anexo são derivados do recurso [attachment](..
 
 Você pode adicionar um anexo a uma [mensagem](../resources/message.md) existente postando na coleção Attachments ou em uma nova mensagem que está sendo [rascunho](../api/user-post-messages.md), ou [criada e enviada em tempo real](../api/user-sendmail.md).
 
->**Observação**: esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
+>**Observação**: esta operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
 >
 > No entanto, se estiver anexando a uma mensagem um arquivo entre 3 MB e 150MB, você pode [criar uma sessão de carregamento](attachment-createuploadsession.md) e carregar de forma iterativa os intervalos do arquivo para anexá-lo. Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
 ## <a name="permissions"></a>Permissões
@@ -75,7 +75,7 @@ Se bem-sucedido, este método retorna `201 Created` o código de resposta e o ob
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_message_beta"
@@ -91,15 +91,15 @@ Content-length: 142
   "contentBytes": "a0b1c76de9f7="
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -201,7 +201,7 @@ Content-length: 162
 Veja um exemplo de uma solicitação que adiciona um anexo de referência a uma mensagem existente.
 O anexo aponta para uma pasta no OneDrive.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_message",
@@ -222,15 +222,15 @@ Content-length: 319
     "isFolder": "True" 
 } 
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-from-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

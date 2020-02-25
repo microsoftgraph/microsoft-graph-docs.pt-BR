@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e924ea98bb0f9ac8e0b610a4672cbed83d83d0bc
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 644ba7fbd762acde7f5229d15267de5352f03ca8
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913440"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268318"
 ---
 # <a name="recordinginfo-resource-type"></a>tipo de recurso recordingInfo
 
@@ -23,7 +23,8 @@ Informações de gravação de um participante.
 | Propriedade        | Tipo    | Descrição|
 |:----------------|:--------|:----------|
 | initiatedBy     | [participantInfo](participantinfo.md) | O participante que iniciou a gravação. |
-| recordingStatus | String | Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou. |
+| recordingStatus | Cadeia de caracteres | Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou. |
+| Iniciador | [identitySet](identitySet.md) | As identidades do iniciador de gravação. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,7 +40,8 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "recordingStatus": "unknown | notRecording | recording | failed"
+  "recordingStatus": "unknown | notRecording | recording | failed",
+  "initiator": {"@odata.type": "#microsoft.graph.initiator"}
 }
 ```
 

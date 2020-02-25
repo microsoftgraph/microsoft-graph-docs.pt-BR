@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6e1822c1f528d58a825abcecb5aecfdc05213fee
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 27919e11c29d5003ba3be4a0fe25f531b5206c5d
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161499"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268405"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -81,10 +81,10 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-event"></a>Exemplo 1: criar um evento
+### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>Exemplo 1: criar um evento no fuso horário especificado e atribuir o evento um valor opcional de TransactionId
 
 #### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar o fuso horário para as horas de **início** e **fim** na resposta.
+Este é um exemplo da solicitação. Ele usa o cabeçalho de solicitação prefiro: Outlook. TimeZone para especificar o fuso horário das horas de início e término na resposta. Também define a propriedade TransactionId para reduzir as tentativas desnecessárias no servidor.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -122,7 +122,8 @@ Content-type: application/json
       "type": "required"
     }
   ],
-  "allowNewTimeProposals": true
+  "allowNewTimeProposals": true,
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -179,6 +180,7 @@ Content-length: 2197
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs":"busy",
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",

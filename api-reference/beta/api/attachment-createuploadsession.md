@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 116efc7583b0344cc1845f698210f760e3843d9b
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 11984b8f0976c3410cd05f2d4a7252939f3e6786
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968913"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268367"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "37968913"
 
 Criar uma sessão de carregamento que permite que um aplicativo carregue intervalos de um arquivo de forma iterativa, para anexar o arquivo à [mensagem](../resources/message.md)especificada.
 
-Use essa abordagem para anexar arquivos de tamanhos entre 3 MB e 150 MB a uma **mensagem**. Para anexar arquivos de tamanhos abaixo de 4 MB, basta [postar na propriedade de navegação Attachments](message-post-attachments.md). 
+Use essa abordagem para anexar um arquivo a uma **mensagem** quando o tamanho do arquivo estiver entre 3 mb e 150 MB. Para anexar um arquivo menor que 3 MB, [post na propriedade de navegação Attachments](message-post-attachments.md). 
 
 Como parte da resposta, esta ação retorna uma URL de upload que você pode usar em consultas sequenciais `PUT` subsequentes. Os cabeçalhos de solicitação `PUT` para cada operação permitem que você especifique o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja interrompida durante o carregamento. 
 
@@ -69,7 +69,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [uploadSession](../resources/uploadsession.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [uploadSession](../resources/uploadsession.md) no corpo da resposta.
 
 >**Observação**: 
 >
@@ -82,13 +82,11 @@ Se bem-sucedido, este método retorna `201, Created` um código de resposta e um
 
 ## <a name="examples"></a>Exemplos
 
-Veja a seguir um exemplo de como chamar essa API.
+O exemplo a seguir mostra como criar uma sessão de carregamento que você pode usar em operações de upload de arquivo subsequentes.
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -107,15 +105,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -123,8 +121,6 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Resposta
-
-Este é um exemplo de resposta.
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

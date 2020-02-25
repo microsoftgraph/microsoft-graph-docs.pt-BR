@@ -5,18 +5,18 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e382b778819c7c1c68d445ee9691a0206bbd76e5
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 5064c995e1d441d2086432501aa488bd4d4885b5
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636817"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268412"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para adicionar um [anexo](../resources/attachment.md) a um [evento](../resources/event.md)existente. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
+Use esta API para adicionar um [anexo](../resources/attachment.md) a um [evento](../resources/event.md)existente. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
 
 Se um organizador adicionar um anexo a um evento de reunião, o organizador poderá, subsequentemente, [Atualizar](event-update.md) o evento para enviar o anexo e também atualizar o evento para cada participante.
 
@@ -64,7 +64,7 @@ Se bem-sucedido, este método retorna um código de resposta `201 Created` e um 
 
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event_beta"
@@ -81,15 +81,15 @@ Content-length: 151
     "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -201,7 +201,7 @@ Content-length: 162
 Veja um exemplo de uma solicitação que adiciona um anexo de referência a um evento existente.
 O anexo aponta para uma pasta no OneDrive.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_event"
@@ -221,15 +221,15 @@ Content-length: 319
     "isFolder": "True"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-from-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-from-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da8993fb65fcc9a0a7bb0f887c3e743b196c686a
-ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
+ms.openlocfilehash: 85710d819338944b20ce46e3d5f71277a3710dcf
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39621630"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268437"
 ---
 # <a name="user-checkmemberobjects"></a>usuário: checkMemberObjects
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadBasic, User. Read. All, User. ReadWrite. All<br><br>Além disso:<br><br><ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+| Delegado (conta corporativa ou de estudante)     | User. ReadBasic. All, User. Read. All, User. ReadWrite. All<br><br>Além disso:<br><br><ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All<br>E<ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo de como chamar essa API.
 
 Este é um exemplo de solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_checkmemberobjects"
@@ -81,19 +81,19 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-checkmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-checkmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
