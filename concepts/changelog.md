@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5a8f89b2c31480b8cd0b11374c7dc7d74cd3653c
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: d2bdd53f05611bac7b9fef76bfada081517ef738
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219598"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268419"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="february-2020"></a>Fevereiro de 2020
+
+### <a name="cloud-communications--recording"></a>Comunicações em nuvem | Gravação
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição|beta|Adicionada a propriedade de **inicialização** para o tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
