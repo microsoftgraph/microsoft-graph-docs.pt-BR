@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4214d2d250f45d8f57a6ac3235575aa5327eb1e2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 90f5323a747a59f2c76607d418ca564e419e6084
+ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866900"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280635"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -77,7 +77,7 @@ As APIs do Microsoft Teams podem melhorar os aplicativos dentro e fora do Teams:
 |Sites| Exibem conteúdo aprimorado em suas páginas da Web.|
 |Serviços|Aprimoram seus aplicativos de cliente com dados do Microsoft Graph por meio do seu serviço Web.|
 | [Feed de atividades](https://docs.microsoft.com/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
-| [Chamadas e reuniões online (visualização)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
+| [Chamadas e reuniões online (visualização)](https://docs.microsoft.com/graph/api/resources/communications-api-overview) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
 
 ## <a name="api-reference"></a>Referência da API
 

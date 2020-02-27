@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a9578943a5afb5381e16e8c4a986d0f5ff3617cd
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 15409e92e94b0553cf7393e5fc59798a4cdb532c
+ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219780"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42280628"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -35,6 +35,10 @@ O elemento _constraint_ do nome determina a extensão potencial do acesso que o 
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas e de estudante
 
 Nem todas as permissões são válidas tanto para contas da Microsoft como para contas corporativas e de estudante. Você pode escolher **Conta de suporte da Microsoft** para cada grupo de permissão para determinar se uma permissão específica é válida para contas da Microsoft, contas corporativas ou de estudante ou ambas.
+
+## <a name="permissions-availability-status"></a>Status de disponibilidade de permissões
+
+As permissões do Microsoft Graph no [portal do Azure](https://portal.azure.com/) geralmente estão disponíveis e no status DG para todos os aplicativos usarem, exceto alguns conjuntos que estão no status de visualização ou visualização privada. As permissões na visualização estão disponíveis para o público; elas podem mudar e podem não ser promovidas ao status DG. As permissões no status de visualização privada não estão disponíveis e talvez nunca sejam disponibilizadas ao público. Não use as permissões no status de visualização ou visualização privada em aplicativos de produção.
 
 ## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>Limitações de pesquisa de usuário e grupo para usuários convidados em organizações
 
@@ -1320,14 +1324,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="schedule-management-permissions"></a>Permissões do gerenciamento de agenda
+## <a name="schedule-management-permissions-private-preview"></a>Permissões do gerenciamento de agenda ([visualização privada](#permissions-availability-status))
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Schedule.ReadWrite.All_ | Dados do serviço de Turnos de Leitura e Gravação (Teams) | Permite que um aplicativo leia e grave a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público.| Sim | Não |
-| _Schedule.Read.All_ | Dados do serviço de Turnos de Leitura (Teams) | Permite que o aplicativo leia a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
+| _Schedule.ReadWrite.All_ (visualização privada)| Dados do serviço de Turnos de Leitura e Gravação (Teams) | Permite que um aplicativo leia e grave a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado.| Sim | Não |
+| _Schedule.Read.All_ (visualização privada)| Dados do serviço de Turnos de Leitura (Teams) | Permite que o aplicativo leia a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado.  | Sim | Não |
 
 ## <a name="search-permissions"></a>Permissões de pesquisa
 
@@ -1670,6 +1674,34 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 *   _UserActivity.ReadWrite.CreatedByApp_: excluir um item de histórico em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
 
 ---
+
+## <a name="user-authentication-method-permissions-private-preview"></a>Permissões do método de autenticação do usuário ([visualização privada](#permissions-availability-status))
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_UserAuthenticationMethod.Read_ (visualização privada)        |Ler os próprios métodos de autenticação       |Permitir que o aplicativo leia os métodos de autenticação do usuário conectado, incluindo números de telefone e configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas do usuário conectado, entrar ou usar métodos de autenticação do usuário conectado. |Sim|Não|
+|_UserAuthenticationMethod.Read.All_ (visualização privada)    |Ler os métodos de autenticação dos usuários    |Permite que o aplicativo leia os métodos de autenticação de todos os usuários em sua organização aos quais o usuário têm acesso. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|Não|
+|_UserAuthenticationMethod.ReadWrite_ (visualização privada)   |Gerenciar os próprios métodos de autenticação     |Permite que o aplicativo leia e grave os métodos de autenticação do usuário conectado, incluindo números de telefone e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas do usuário conectado, entrar ou usar métodos de autenticação do usuário conectado. |Sim|Não|
+|_UserAuthenticationMethod.ReadWrite.All_ (visualização privada)|Gerenciar os métodos de autenticação dos usuários  |Permite que o aplicativo leia e grave os métodos de autenticação de todos os usuários em sua organização aos quais o usuário conectado têm acesso. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|Não|
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_UserAuthenticationMethod.Read.All_ (visualização privada)   |Ler os métodos de autenticação dos usuários    |Permite que o aplicativo leia os métodos de autenticação de todos os usuários em sua organização sem um usuário conectado. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|
+|_UserAuthenticationMethod.ReadWrite.All_ (visualização privada)|Gerenciar os métodos de autenticação dos usuários  |Permite que o aplicativo leia e grave os métodos de autenticação de todos os usuários em sua organização sem um usuário conectado. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|
+
+### <a name="remarks"></a>Comentários
+
+As permissões do método de autenticação do usuário são usadas para gerenciar os métodos de autenticação nos usuários. Com essas permissões, um usuário ou aplicativo delegado pode registrar novos métodos de autenticação em um usuário, ler os métodos de autenticação que o usuário já registrou, atualizar esses métodos de autenticação e removê-los do usuário.
+
+Com essas permissões, todos os métodos de autenticação podem ser lidos e gerenciados em um usuário. Isso inclui os métodos usados para:
+
+* Autenticação primária (senha)
+* Segundo fator de autenticação multifator/MFA (números de telefone)
+* Redefinição de senha de autoatendimento/SSPR (endereço de email)
 
 ## <a name="permission-scenarios"></a>Cenários de permissão
 
