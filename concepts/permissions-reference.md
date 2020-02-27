@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 15409e92e94b0553cf7393e5fc59798a4cdb532c
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: 137857094346ac44679fb95c66ca5e522bd69b9b
+ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280628"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42287972"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -357,7 +357,7 @@ Nenhum.
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
-## <a name="channelmessage-permissions"></a>ChannelMessage permissões
+## <a name="channel-message-permissions"></a>Permissões de mensagem de canal
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
@@ -368,7 +368,8 @@ Nenhum.
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_ChannelMessage.Read.All_ |Listar mensagens do canal  |Permite que um aplicativo leia todas as mensagens de canal do Microsoft Teams, sem um usuário conectado. |Sim | Não |
-|_ChannelMessage.UpdatePolicyViolation.All_ | Sinalizar mensagens de canal para a política de violação |Permite que o aplicativo atualize as mensagens do canal do Microsoft Teams, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
+|_ChannelMessage.Send_ |Enviar a mensagem do canal |Permite que um aplicativo envie mensagens de canal no Microsoft Teams, em nome do usuário conectado. |Sim | Não |
+|_ChannelMessage.UpdatePolicyViolation.All_ |Sinalizar mensagens de canal para a política de violação |Permite que o aplicativo atualize as mensagens do canal do Microsoft Teams, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
 
 > **Observação:** consulte também [Group. Read. All](#group-permissions).
 
@@ -388,7 +389,7 @@ Nenhum.
 |_Chat.Read.All_ |Ler todas as mensagens de bate-papo  |Permite que um aplicativo leia, sem um usuário conectado, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Sim | Não |
 |_Chat.UpdatePolicyViolation.All_ |Sinalizar mensagens de chat para a política de violação |Permite que o aplicativo atualize as mensagens de chat de grupo ou Microsoft Teams 1:1, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
 
-> **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channelmessage-permissions).
+> **Observação:** para mensagens em um canal, consulte [permissões ChannelMessage](#channel-message-permissions).
 
 ## <a name="contacts-permissions"></a>Permissões de contatos
 
@@ -1372,7 +1373,8 @@ O acesso aos dados por meio de pesquisa requer a devida permissão. Por exemplo,
 | _SecurityEvents.ReadWrite.All_   | Ler e atualizar os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização em nome do usuário conectado. Também permite ao aplicativo atualizar as propriedades editáveis em eventos de segurança em nome do usuário conectado. | Sim  | Não |
 | _SecurityActions.Read.All_        |  Ler as ações de segurança da organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado. | Sim  | Não |
 | _SecurityActions.ReadWrite.All_   | Ler e atualizar as ações de segurança da organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
-| _ThreatIndicators.ReadWrite.OwnedBy_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
+| _ThreatIndicators.ReadWrite.OwnedBy_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário |Permite que o aplicativo crie indicadores de ameaças e gerencie totalmente esses indicadores de ameaças (ler, atualizar e excluir) em nome do usuário conectado.  | Sim  | Não |
+| _ThreatIndicators.Read.All_   | Leia os indicadores de ameaças da sua organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1383,6 +1385,7 @@ O acesso aos dados por meio de pesquisa requer a devida permissão. Por exemplo,
 | _SecurityActions.Read.All_        |  Ler os eventos de segurança da organização | Permite que o aplicativo leia os eventos de segurança da sua organização. | Sim  |
 | _SecurityActions.ReadWrite.All_   | Criar e ler ações de segurança da sua organização | Permite que o aplicativo leia ou crie ações de segurança, sem um usuário ter entrado. | Sim  |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo crie indicadores de ameaças e gerencie totalmente esses indicadores de ameaças (ler, atualizar e excluir) sem um usuário ter entrado.  Ele não atualizará os indicadores de ameaças que não possui. | Sim  |
+| _ThreatIndicators.Read.All_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo leia todos os indicadores em sua organização sem um usuário conectado. | Sim  |
 
 ### <a name="remarks"></a>Comentários
 
@@ -1467,37 +1470,55 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
-## <a name="teams-activity-permissions"></a>Permissões de Atividades da Equipe
+## <a name="teams-activity-permissions-private-preview"></a>Permissões de atividades do Teams ([visualização privada](#permissions-availability-status))
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read_ | Ler o feed de atividades do trabalho em equipe | Permite que o aplicativo leia o feed de atividade em equipe do usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Não | Não |
-| _TeamsActivity.Send_ | Enviar uma atividade de trabalho em equipe como o usuário | Permite que o aplicativo crie novas atividades no feed de atividades de trabalho em equipe do usuário e envie novas atividades para o feed de atividades de outros usuários, em nome do usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Não | Não |
+| _TeamsActivity.Read_ (visualização particular)| Ler o feed de atividades do trabalho em equipe | Permite que o aplicativo leia o feed de atividade em equipe do usuário conectado.  | Não | Não |
+| _TeamsActivity.Send_ (visualização particular)| Enviar uma atividade de trabalho em equipe como o usuário | Permite que o aplicativo crie novas atividades no feed de atividades de trabalho em equipe do usuário e envie novas atividades para o feed de atividades de outros usuários, em nome do usuário conectado. | Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsActivity.Read.All_ | Ler o feed de atividades do trabalho em equipe de todos os usuários. | Permite que o aplicativo leia o feed de atividade em equipe de todos os usuários sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
-| _TeamsActivity.Send_ | Enviar uma atividade de trabalho em equipe para qualquer usuário | Permite que o aplicativo envie novas atividades para o feed de atividade em equipe de qualquer usuário, sem um usuário conectado. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
+| _TeamsActivity.Read.All_ (visualização privada) | Ler o feed de atividades do trabalho em equipe de todos os usuários. | Permite que o aplicativo leia o feed de atividade em equipe de todos os usuários sem um usuário conectado. | Sim | Não |
+| _TeamsActivity.Send_ (visualização particular)| Enviar uma atividade de trabalho em equipe para qualquer usuário | Permite que o aplicativo envie novas atividades para o feed de atividade em equipe de qualquer usuário, sem um usuário conectado. | Sim | Não |
 
-## <a name="teams-app-permissions"></a>Permissões do aplicativo de Teams
+## <a name="teams-app-permissions-private-preview"></a>Permissões de aplicativos do Teams([visualização privada](#permissions-availability-status))
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público.   | Sim | Não |
-| _TeamsApp.ReadWrite.All_ | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público.    | Sim | Não |
+| _TeamsApp.Read.All_(visualização privada)| Ler todos os aplicativos instalados do Teams | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.ReadWrite.All_ (visualização privada)| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
-| _TeamsApp.ReadWrite.All_ | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. No momento, esta permissão está somente em versão prévia privada e não está disponível para uso público. | Sim | Não |
+| _TeamsApp.Read.All_(visualização privada)| Lê os aplicativos do Teams instalados de todos os usuários | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.ReadWrite.All_ (visualização privada)| Gerencia os aplicativos do Teams de todos os usuários  | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.  | Sim | Não |
+
+## <a name="teams-tab-permissions-private-preview"></a>Permissões da guia Teams ([visualização privada](#permissions-availability-status))
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsTab.Read.All_ (visualização privada)| Lê guias no Microsoft Teams. | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo.    | Sim | Não |
+| _TeamsTab.ReadWrite.All_ (visualização privada)| Lê e grava guias no Microsoft Teams. | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo.   | Sim | Não |
+| _TeamsTab.Create_ (visualização particular)| Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, em nome do usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsTab.Read.All_ (visualização privada)| Lê guias no Microsoft Teams. | Lê os nomes e as configurações de guias dentro de qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias.    | Sim | Não |
+| _TeamsTab.ReadWrite.All_ (visualização privada)| Lê e grava guias no Microsoft Teams. | Lê e escreve as guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não dá acesso ao conteúdo nas guias. | Sim | Não |
+| _TeamsTab.Create_(visualização particular)| Cria guias no Microsoft Teams. | Permite que o aplicativo crie guias em qualquer equipe do Microsoft Teams, sem um usuário conectado. Isso não concede a capacidade de ler, modificar ou excluir guias depois de criá-las ou conceder acesso ao conteúdo nas guias. | Sim | Não |
 
 ## <a name="terms-of-use-permissions"></a>Permissões de termos de uso
 
