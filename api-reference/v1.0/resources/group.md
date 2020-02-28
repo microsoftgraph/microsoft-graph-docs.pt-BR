@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4c505ca57406b5ff6554f015c74ae702044e7e01
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 8e22afa9608f3dfbc970b7a3f35b72075fffb29e
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865736"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331322"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -118,6 +118,8 @@ Esse recurso permite:
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte a $filter e $orderby. |
 |groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Office 365; caso contrário, será um grupo de segurança.  <br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |hasMembersWithLicenseErrors|Boolean|Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Esta propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é true). Veja um [exemplo](../api/group-list.md).|
+|hideFromAddressLists |Boleano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: **Catálogo de endereços**, listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar grupos** para pesquisar grupos; caso contrário, falso. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
+|hideFromOutlookClients |Boolean |Verdadeiro se o grupo não for exibido nos clientes do Outlook, como Outlook para Windows e Outlook na Web; caso contrário, falso. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é **true**. <br><br>Retornado apenas em $select. |
 |licenseProcessingState|String|Indica o status da atribuição de licença de grupo para todos os membros do grupo. O valor padrão é **false**. Somente leitura. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`.<br><br>Retornado apenas em $select. Somente leitura.|
@@ -322,6 +324,8 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "string",
   "groupTypes": ["string"],
   "hasMembersWithLicenseErrors": "Boolean",
+  "hideFromAddressLists": false,
+  "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",

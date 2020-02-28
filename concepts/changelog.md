@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 3e9ab1397c7ca50c4cc4fadb6ffd132496849d98
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: bea58c2820e4ca90bfd586cc33c49418dca8fc61
+ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280607"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288000"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -76,6 +76,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta | Adicionado o método [swapShiftsChangeRequest: recusar](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta) método para o recurso **swapShiftsChangeRequest**. |
+
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+ 
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Adicione [notificações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) para todas as mensagens de canal no locatário e todas as mensagens de chat no locatário. |
 
 ### <a name="users"></a>Usuários
 
