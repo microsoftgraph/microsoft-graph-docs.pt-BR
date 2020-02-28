@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: e14227ad1e64aaea6bf2cfb15f9ba76d0ffeb12b
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 739f5821df7eded3757a437fb2909595c4df7692
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219647"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331329"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -20,30 +20,31 @@ A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notifica
 
 Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alterações nos seguintes recursos:
 
-| **Resource** | **Caminhos de recurso suportados** | **Dados de recurso podem ser incluídos em notificações**                  |
+| **Recurso** | **Trajetórias dos recursos com suporte** | **Os dados do recurso podem ser incluídos nas notificações**                  |
 |:----------------|:------------|:-----------------------------------------|
-| [Mensagem][] do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário: <br>`/users/{id}/messages`<br>Alterações nas mensagens na caixa de entrada de um usuário:<br>`/users/{id}/mailFolders('inbox')/messages` | Não |
-| [Evento][] do Outlook | Alterações em todos os eventos na caixa de correio de um usuário:<br>`/users/{id}/events` | Não |
-| [Contato][] pessoal do Outlook | Alterações em todos os contatos pessoais da caixa de correio de um usuário:<br>`/users/{id}/contacts` | Não |
-| [user][] | Alterações para todos os usuários:<br>`/users` <br>Alterações para um usuário específico:<br>`/users/{id}`| Não |
-| [group][] | Alterações em todos os grupos:<br>`/groups` <br>Alterações em um grupo específico:<br>`/groups/{id}` | Não |
+| [Mensagem][] do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário: <br>`/users/{id}/messages`<br>Alterações em todas as mensagens na caixa de entrada de um usuário:<br>`/users/{id}/mailFolders('inbox')/messages` | Não |
+| [Evento][] do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário:<br>`/users/{id}/events` | Não |
+| [Contato][] pessoal do Outlook | Alterações em todas as mensagens na caixa de correio de um usuário:<br>`/users/{id}/contacts` | Não |
+| [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
+| [Grupo][] | Alterações em todos os grupos:<br>`/groups` <br>Alterações em um grupo específico:<br>`/groups/{id}` | Não |
 | [Conversa][] em grupo do Office 365 | Alterações nas conversas de um grupo:<br>`groups/{id}/conversations` | Não |
-| [driveItem][] no onedrive (pessoal) | Alterações no conteúdo dentro da hierarquia de _qualquer pasta_:<br>`/users/{id}/drive/root` | Não |
-| [driveItem][] no onedrive for Business | Alterações no conteúdo dentro da hierarquia da _pasta raiz_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Não |
-| [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações nos alertas filtrados:<br> `/security/alerts/?$filter`| Não |
-| Teams [chat](/graph/api/resources/subscription?view=graph-rest-beta) | Alterações em mensagens de chat em todos os canais em todas as equipes:<br>`/teams/allMessages` <br>Alterações em mensagens de chat em um canal específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de chat em todos os chats:<br>`/chats/allMessages` <br>Alterações em mensagens de chat em um chat específico:<br>`/chats/{id}/messages` | Sim |
+| [driveItem][] no OneDrive (pessoal) | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/users/{id}/drive/root` | Não |
+| [driveItem][] no OneDrive for Business | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Não |
+| [lista][] em um [site][] do SharePoint | `/sites/{id}/lists/{id}` | Não |
+| [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
+| Equipes [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
 
-> **Observação**: qualquer caminho de recurso que comece `/users/{id}` com também pode `/me` aceitar para fazer referência ao usuário conectado.
+> **Observação**: qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Em geral, as operações de assinatura exigem permissão de leitura ao recurso. Por exemplo, para obter notificações de mensagens, seu aplicativo precisa da permissão `Mail.Read`. O artigo [criar assinatura](../api/subscription-post-subscriptions.md) lista as permissões necessárias para cada tipo de recurso. A tabela a seguir lista os tipos de permissões que o aplicativo pode solicitar para usar webhooks para tipos específicos de recursos.
 
 | Tipo de permissão                        | Tipos de recurso com suporte                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][]|
-| Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [evento][], [mensagem][]                                        |
-| Aplicativo                            | [alerta][], [contato][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][], [chat][]|
+| Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][]|
+| Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [lista][], [evento][], [mensagem][]                                        |
+| Aplicativo                            | [alerta][], [contato][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [chat][]|
 
 ## <a name="see-also"></a>Confira também
 
@@ -58,6 +59,8 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [contato]: ./contact.md
 [conversa]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

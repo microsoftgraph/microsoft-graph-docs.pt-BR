@@ -4,13 +4,13 @@ description: Controlar o acesso a recursos, incluindo grupos, aplicativos e site
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
-doc_type: resourcePageType
-ms.openlocfilehash: 6eada39751a6ed107fb1b74d61100aa1a3469c83
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+doc_type: conceptualPageType
+ms.openlocfilehash: 7e255a68d46e810d22e26d167dbe3ef5a6714496
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870285"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331315"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
 
@@ -32,7 +32,7 @@ Os tipos de recurso de gerenciamento de direito incluem:
 
 Observe que o recurso de gerenciamento de direito, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de qualificação está sendo usado deve ter uma assinatura válida de compra ou de avaliação do Azure AD Premium P2 ou EMS e5.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 

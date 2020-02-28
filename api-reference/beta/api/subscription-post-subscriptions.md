@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e5276d8cf4e0a096e1ce98c9247d0c46e9f515c9
-ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
+ms.openlocfilehash: 550cec423d03c2fc1bf4e589675dcfeb126c39d8
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42287986"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331273"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -36,6 +36,7 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
@@ -134,6 +135,7 @@ Estes são os valores válidos para a Propriedade Resource.
 |Grupos|grupos|
 |Conversas|groups('*{id}*')/conversations|
 |Unidades|me/drive/root|
+|Listar|site/{site-ID}/Lists/{List-ID}|
 |Alerta de segurança|security/alerts?$filter=status eq ‘New’|
 
 ### <a name="response"></a>Resposta

@@ -5,21 +5,21 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0fd9f5ea9cd15abac7eea693b2af5c595b145ac7
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: c2440dfc7e798ea5b0a197f60b62acce4199b4ca
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108438"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331266"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>tipo de recurso accessPackageAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote do Access. Se a solicitação for bem-sucedida, com todas as aprovações necessárias, o usuário receberá uma atribuição de pacote de acesso e será o assunto dessa atribuição de pacote de acesso resultante.
+No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote do Access. Se a solicitação for bem-sucedida, com todas as aprovações necessárias, o usuário receberá uma atribuição de pacote de acesso e será o assunto dessa atribuição de pacote de acesso resultante.  O Azure AD também cria solicitações de atribuição de pacote de acesso automaticamente para rastrear a remoção do acesso.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -36,9 +36,9 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |id|String| Somente leitura.|
 |isValidationOnly|Booliano|True se a solicitação não deve ser processada para a atribuição.|
 |elabora|String|A justificativa fornecida pelo solicitante.|
-|RequestState|String|Um de `Denied`, `Delivered` `PartiallyDelivered` ou `Submitted`. Apenas leitura.|
-|requestStatus|String|Mais informações sobre o status do processamento da solicitação. Apenas leitura.|
-|RequestType|String|Um de `UserAdd`, `UserRemove` `AdminAdd` ou `AdminRemove`. Apenas leitura.|
+|RequestState|String|Um de `Denied`, `Delivered`, `PartiallyDelivered` `Submitted` ou `Scheduled`. Somente leitura.|
+|requestStatus|String|Mais informações sobre o status do processamento da solicitação. Somente leitura.|
+|RequestType|String|Um de `UserAdd`, `UserRemove`, `AdminAdd` `AdminRemove` ou `SystemRemove`. Somente leitura.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Uma atribuição de pacote de acesso solicitada foi criada.|
 
 ## <a name="relationships"></a>Relações

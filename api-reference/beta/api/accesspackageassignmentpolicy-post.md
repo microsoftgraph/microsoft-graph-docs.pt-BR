@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 280a532c2d0047fecb0085f88b73c92c30a4867f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ffa1b1ac1519c933e9ca352ec90b45a5161d2a43
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37935047"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331180"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>Criar accessPackageAssignmentPolicy
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement. ReadWrite. All  |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -56,6 +56,8 @@ Se tiver êxito, este método retornará um código de resposta de série 200 e 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies"
@@ -69,9 +71,36 @@ Content-type: application/json
   "accessPackageId": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "displayName": "direct",
   "description": "direct assignments by administrator",
-  "isEnabled": true
+  "isDenyPolicy": false,
+  "accessReviewSettings": null,
+  "requestorSettings": {
+    "scopeType": "NoSubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
@@ -94,7 +123,7 @@ Content-type: application/json
   "accessPackageId": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "displayName": "direct",
   "description": "direct assignments by administrator",
-  "isEnabled": true
+  "isDenyPolicy": false
 }
 ```
 
