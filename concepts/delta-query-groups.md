@@ -4,12 +4,12 @@ description: A consulta delta permite que você consulte adições, exclusões o
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: adff47b66af366dc98bd6471a272c369cb4a7a7b
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 32c4a6b88cecd858751c5732416577def407ab30
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216795"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394597"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 ## <a name="nextlink-response"></a>Resposta nextLink
 
-A resposta contém outro `nextLink` com outro valor de `skipToken`, indicando que há mais grupos disponíveis. Continue fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser retornada na resposta final.
+A resposta contém outro `nextLink` com outro valor de `skipToken`, indicando que há mais grupos disponíveis. Você deve continuar criando solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja retornada na resposta final, mesmo que o valor seja uma matriz vazia (isso pode ocorrer em determinadas circunstâncias).
 
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Office 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: af4aefed112177a119be20c408ad6feac978ecae
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 25ea6350bf8f31192b12eea8047c914f0e2f52ef
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969882"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394488"
 ---
 # <a name="create-onenote-pages"></a>Criar páginas do OneNote
 
@@ -223,7 +223,7 @@ Consulte [Requisitos e limitações do HTML de entrada](#requirements-and-limita
 |------|------|  
 | Código de êxito | Um código de status HTTP 201. |  
 | Corpo da resposta | Uma representação OData da nova página no formato JSON. |  
-| Erros | Se a solicitação falhar, a API retornará erros no objeto **@api.diagnostics** no corpo da resposta. |  
+| Erros | Se a solicitação falhar, a API retornará erros no objeto **\@@api.diagnostics** no corpo da resposta. |  
 | Cabeçalho location | A URL do recurso para a nova página. |  
 | Cabeçalho X-CorrelationId | Um GUID que identifica de forma exclusiva a solicitação. Você pode usar esse valor juntamente com o valor do cabeçalho Data ao trabalhar com o suporte da Microsoft para solucionar problemas. |  
 
@@ -240,6 +240,14 @@ O segmento `version` na URL representa a versão do Microsoft Graph que você de
 
 Use `me` para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado). Use `users/{id}` para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use o [Microsoft Graph](https://graph.microsoft.com/v1.0/users) para obter as IDs de usuário. 
 
+<a name="limitations"></a>
+
+## <a name="onenote-section-size-limitations"></a>Limitações de tamanho de seção do OneNote
+Há um limite para o número de páginas que você pode adicionar a uma seção usando a API do OneNote. Quando esse limite é atingido em uma seção e é feita uma tentativa de criar uma nova página nessa seção, você verá uma resposta com o código de status HTTP `507` e a mensagem "O número máximo de páginas permitido por seção foi excedido". Para obter mais informações sobre esse código de erro, consulte [Códigos de erro do OneNote](onenote-error-codes.md).
+
+Você pode usar uma das seguintes soluções alternativas:
+- Crie uma nova seção e adicione novas páginas.
+- Exclua páginas não utilizadas de uma seção existente que atingiu o limite de páginas.
 
 <a name="permissions"></a>
 

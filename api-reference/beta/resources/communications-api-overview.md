@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 7bbe0ba0387ebbbb6669d463dba7073f571efbf9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 7869ac59f84f266542254fd0c8fc8ea97ee4815d
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913335"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394579"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
 
@@ -30,6 +30,7 @@ Essa API fornece funcionalidade de chamada, bem como a capacidade de criar e rec
 | Chamando                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Reuniões                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
 | Presença                 | Presence.Read, Presence.Read.All |
+| Registros de chamadas             | CallRecords.Read.All |
 
 ## <a name="common-use-cases"></a>Casos de uso comuns
 
@@ -42,6 +43,7 @@ A tabela a seguir lista alguns dos usos comuns para a API de comunicações.
 | Controles de chamada (participante) | [Participante](/graph/api/resources/participant?view=graph-rest-beta)   ||
 |Reuniões|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Métodos para reuniões](/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
 |Presença | [presença](/graph/api/resources/presence) | [Métodos para presença](/graph/api/resources/presence#methods) |
+| Recuperar registros de chamadas | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) | [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-beta) |
 
 ## <a name="common-properties"></a>Propriedades comuns
 
@@ -51,6 +53,7 @@ A tabela a seguir lista alguns dos usos comuns para a API de comunicações.
 | participante                         | [propriedades dos participantes](/graph/api/resources/participant?view=graph-rest-beta#properties) |
 | onlineMeeting                            | [Propriedades onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 | presença | [Propriedades de presença](/graph/api/resources/presence#properties) |
+| callRecord | [Propriedades do callRecord](/graph/api/resources/callrecords-callrecord#properties) |
 
 ## <a name="see-also"></a>Confira também
 
