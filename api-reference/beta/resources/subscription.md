@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 11f57518433267a85e78ab06f70ffaa5c1e5fa34
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: fb2dd66e9e18e4951005bcda2b249235e99cd829
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331177"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394439"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -19,6 +19,7 @@ ms.locfileid: "42331177"
 Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:
 
 - Um [alerta][] do Microsoft Graph Security API
+- Uma [callRecord][] produzida após uma chamada ou reunião no Microsoft Teams
 - Um [chat][] enviado por meio de equipes ou canais no Microsoft Teams
 - Um [conversa][] de um grupo do Office 365
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
@@ -33,8 +34,8 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
 | [Criar assinatura](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Assina um aplicativo de escuta para receber notificações quando dados do Microsoft Graph são alterados. |
-| [Atualizar assinatura](../api/subscription-update.md) | [subscription](subscription.md) | Renovar uma assinatura atualizando seu tempo de expiração. |
-| [Listar de assinaturas](../api/subscription-list.md) | [assinatura](subscription.md) | Lista assinaturas ativas. |
+| [Atualizar assinatura](../api/subscription-update.md) | [assinatura](subscription.md) | Renovar uma assinatura atualizando seu tempo de expiração. |
+| [Listar de assinaturas](../api/subscription-list.md) | [subscription](subscription.md) | Lista assinaturas ativas. |
 | [Obter assinatura](../api/subscription-get.md) | [subscription](subscription.md) | Leia as propriedades e as relações do objeto Subscription. |
 | [Excluir assinatura](../api/subscription-delete.md) | Nenhuma | Excluir um objeto Subscription. |
 
@@ -51,7 +52,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | id | cadeia de caracteres | Identificador exclusivo da assinatura. Somente leitura. |
 | ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, este campo conterá a ID do usuário conectado o aplicativo chamado em nome de. Se o aplicativo usava permissões de aplicativo, este campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. |
-| includeResourceData | Booliano | Quando definido como `true`, as notificações de alteração [incluem dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de chat). Opcional. | 
+| includeResourceData | Boolean | Quando definido como `true`, as notificações de alteração [incluem dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de chat). Opcional. | 
 | encryptionCertificate | cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar dados de recurso em notificações. Opcional. Obrigatório quando **includeResourceData** é true. | 
 | encryptionCertificateId | cadeia de caracteres | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar dados de recurso. Opcional. Obrigatório quando **includeResourceData** é true. |
 | latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. |
@@ -61,6 +62,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Resource            | Tempo de expiração máximo  |
 |:--------------------|:-------------------------|
 | **Alerta** de segurança     | 43200 minutos (em 30 dias )  |
+| Teams **callRecord**    | 4230 minutos (em 3 dias)  |
 | Teams **chat**    | 60 minutos (1 hora)  |
 | **Conversa** de grupo | 4230 minutos (em 3 dias)    |
 | OneDrive **driveItem**    | 4230 minutos (em 3 dias)    |
@@ -116,6 +118,7 @@ Veja a seguir uma representação JSON do recurso.
 [user]: ./user.md
 [alert]: ./alert.md
 [chatMessage]: ./chatmessage.md
+[callRecord]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

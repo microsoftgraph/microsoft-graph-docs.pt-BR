@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 550cec423d03c2fc1bf4e589675dcfeb126c39d8
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 6bb11e36b2a5f11f94cea7294e77e6d23aa8dd54
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331273"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394470"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -26,6 +26,7 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/Communications/callRecords) | Sem suporte | Sem suporte | CallRecords. Read. All  |
 |[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/Teams/allMessages--todas as mensagens do canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Sem suporte | Sem suporte | Chat.Read.All  |
@@ -137,6 +138,7 @@ Estes são os valores válidos para a Propriedade Resource.
 |Unidades|me/drive/root|
 |Listar|site/{site-ID}/Lists/{List-ID}|
 |Alerta de segurança|security/alerts?$filter=status eq ‘New’|
+|Registros de chamadas|comunicações/callRecords|
 
 ### <a name="response"></a>Resposta
 

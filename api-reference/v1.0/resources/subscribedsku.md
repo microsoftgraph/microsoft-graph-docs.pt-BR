@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f0e99acd1cfead36cd4f0591591cfbe7cee9d1e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bcd9e9b9cf32b3bfc35c5c10cb43a2a748b32041
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034017"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394614"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -28,13 +28,13 @@ Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e exclu
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
-|capabilityStatus|String| Por exemplo, "habilitado". |
+|capabilityStatus|String|  Os valores possíveis são: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| O número de licenças que foram atribuídas. |
 |id|String| O identificador exclusivo do objeto SKU assinado. Chave, não anulável. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
 |onplans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulável |
 |skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
-|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". |
+|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". Para obter uma lista de assinaturas comerciais que uma organização adquiriu, consulte [list subscribedSkus](../api/subscribedsku-list.md).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

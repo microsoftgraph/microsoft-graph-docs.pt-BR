@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso subscribedSku
-description: " criar, atualizar e excluir não são suportados. Não há suporte para expressões de filtro de consulta. Herda de directoryObject."
+description: " criar, atualizar e excluir não são suportados. Não há suporte para expressões de filtro de consulta. Herda do directoryObject."
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9e57ff1e59c7caf5b29e582b7381492a7eee5b4c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c88ac94d35b93a76ec2ea4f096b69facb7f26435
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964814"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394502"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -29,13 +29,13 @@ Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e exclu
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
-|capabilityStatus|String| Por exemplo, "habilitado". |
+|capabilityStatus|String| Os valores possíveis são: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| O número de licenças que foram atribuídas. |
 |id|String| O identificador exclusivo do objeto SKU assinado. Chave, não anulável. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
 |onplans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulável |
 |skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
-|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". |
+|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". Para obter uma lista de assinaturas comerciais que uma organização adquiriu, consulte [list subscribedSkus](../api/subscribedsku-list.md). |
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,176 +1,117 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Hub
 title: Documentação do Microsoft Graph
+brand: m365
 metadata:
   title: Documentação do Microsoft Graph
-  description: Saiba como você pode usar o Microsoft Graph para criar aplicativos para organizações e clientes que interagem com os dados de milhões de usuários.
-  services: active-directory
+  description: Microsoft Graph fornece um modelo de programação unificada que você pode usar para criar aplicativos para empresas e clientes que interagem com os dados de milhões de usuários. Você pode usar as APIs REST do Microsoft Graph para acessar dados no Azure Active Directory, serviços do Office 365, Enterprise Mobility e serviços de segurança, serviços do Windows 10, Dynamics 365 e muito mais. Explore a nossa documentação para saber mais sobre como usar as APIs do Microsoft Graph.
+  ms.topic: hub-page
+  ms.prod: ms-graph
   author: CelesteDG
-  manager: mtillman
-  ms.tgt_pltfrm: na
-  ms.devlang: na
-  ms.topic: landing-page
-  ms.date: 03/20/2019
   ms.author: celested
-abstract:
-  description: 'Microsoft Graph fornece um modelo de programação unificada que você pode usar para criar aplicativos para empresas e clientes que interagem com os dados de milhões de usuários. Você pode usar as APIs REST do Microsoft Graph para acessar dados no Azure Active Directory, serviços do Office 365, Enterprise Mobility e serviços de segurança, serviços do Windows 10, Dynamics 365 e muito mais. Explore a nossa documentação para saber mais sobre como usar as APIs do Microsoft Graph.'
-  aside:
-    image:
-      alt: null
-      height: 110
-      src: ./images/index/whatsnew-video.png
-      width: 250
-    title: 'Visão geral do Microsoft Graph (4:46)'
-    href: 'https://youtu.be/PI9NO5rayiY'
-    width: 250
-sections:
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /graph/overview
-            html: <p>Descubra o que você pode fazer com o Microsoft Graph e veja alguns casos de uso popular do API.</p>
-            image:
-              src: ./images/index/i_get-started.svg
-            title: Visão geral do Microsoft Graph
-          - href: /graph/overview-major-services
-            html: <p>Familiarize-se com os principais serviços e recursos que estão disponíveis no Microsoft Graph.</p>
-            image:
-              src: ./images/index/i_overview.svg
-            title: Serviços e recursos
-          - href: 'https://developer.microsoft.com/graph/graph-explorer/'
-            html: <p>Crie solicitações e veja as respostas para Microsoft Graph.</p>
-            image:
-              src: ./images/index/i_queries.svg
-            title: Explorador do Graph
-          - href: /graph/use-the-api
-            html: <p>Saiba como começar a usar a API do Microsoft Graph para acessar recursos de serviço do Microsoft Cloud.</p>
-            image:
-              src: ./images/index/i_code-edit.svg
-            title: Usar a API
-          - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-            html: <p>Use API REST v1.0 do Microsoft Graph para atender às suas necessidades de produção prática.</p>
-            image:
-              src: ./images/index/i_api-reference.svg
-            title: APIs REST v1.0 do Microsoft Graph
-          - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-            html: <p>Experimente o ponto de extremidade do Microsoft Graph beta.</p>
-            image:
-              src: ./images/index/i_api.svg
-            title: API REST Beta do Microsoft Graph
-  - title: Plataformas com suporte
-    items:
-      - type: paragraph
-        text: 'Encontre SDKs e siga plataforma específica, passo a passo de exercícios de treinamento que orientam você por meio de conceitos básicos do Microsoft Graph, incluindo como criar um aplicativo simples que usa a autenticação do Azure AD e tem acesso a dados por meio do Microsoft Graph.'
-      - type: table
-        style: dataMatrix
-        columns:
-          - image:
-              src: ./images/index/logo_NETcore.svg
-            title: .NET
-          - image:
-              src: ./images/index/logo_NET.svg
-            title: .NET
-          - image:
-              src: ./images/index/logo_android.svg
-            title: Android
-          - image:
-              src: ./images/index/angular.svg
-            title: Angular
-          - image:
-              src: ./images/index/logo_ios.svg
-            title: iOS
-          - image:
-              src: ./images/index/logo_java.svg
-            title: Java
-          - image:
-              src: ./images/index/logo_js.svg
-            title: JavaScript
-          - image:
-              src: ./images/index/logo_nodejs.svg
-            title: Node.js
-          - image:
-              src: ./images/index/logo_php.svg
-            title: PHP
-          - image:
-              src: ./images/index/logo_python.svg
-            title: Python
-          - image:
-              src: ./images/index/logo_ruby.svg
-            title: Ruby
-          - image:
-              src: ./images/index/logo_windows.svg
-            title: UWP
-          - image:
-              src: ./images/index/logo_xamarin.svg
-            title: Xamarin
-        rows:
-          - title: Início rápido
-            values:
-              - href: null
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-dotnet'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-android'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-angular'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift'
-              - href: null
-              - href: null
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-node'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-php'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-Python'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-ruby'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-xamarin'
-          - title: Tutorial
-            values:
-              - href: /graph/tutorials/aspnet
-              - href: /graph/tutorials/aspnet
-              - href: /graph/tutorials/android
-              - href: /graph/tutorials/angular
-              - href: null
-              - href: null
-              - href: null
-              - href: /graph/tutorials/node
-              - href: /graph/tutorials/php
-              - href: /graph/tutorials/python
-              - href: /graph/tutorials/ruby
-              - href: /graph/tutorials/uwp
-              - href: /graph/tutorials/xamarin
-          - title: SDK
-            values:
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-android'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-objc'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-java'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-php'
-              - href: null
-              - href: 'https://github.com/microsoftgraph/msgraph-sdk-ruby'
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
+  ms.date: 02/28/2020
+  featureFlags:
+  - clicktale
+  ms.openlocfilehash: 550a74bb18bc7604824c87fe7520a56a8a8c3a81
+  ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 03/03/2020
+  ms.locfileid: "42394495"
+highlightedContent:
+  items:
+  - title: Visão Geral do Microsoft Graph
+    itemType: overview
+    url: /graph/overview
+  - title: Serviços e recursos
+    itemType: concept
+    url: /graph/overview-major-services
+  - title: Graph Explorer
+    itemType: deploy
+    url: https://developer.microsoft.com/graph/graph-explorer/
+  - title: Usar a API
+    itemType: overview
+    url: /graph/use-the-api
+  - title: APIs REST v1.0 do Microsoft Graph
+    itemType: reference
+    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
+  - title: API REST Beta do Microsoft Graph
+    itemType: reference
+    url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+conceptualContent:
+  items:
+  - title: Explorar
+    links:
+    - url: /graph/whats-new-overview
+      itemType: overview
+      text: Novidades do Microsoft Graph
+    - url: /graph/users-you-can-reach
+      itemType: concept
+      text: Usuários que você pode alcançar
+    - url: /graph/data-connect-overview
+      itemType: concept
+      text: Conexão de dados do Microsoft Graph
+    - url: https://developer.microsoft.com/graph/quick-start
+      itemType: quickstart
+      text: QuickStarts
+    - url: /graph/tutorials
+      itemType: tutorial
+      text: Tutoriais
+  - title: Saiba mais
+    links:
+    - url: /graph/azuread-users-concept-overview
+      itemType: overview
+      text: Usuários
+    - url: /graph/teams-concept-overview
+      itemType: overview
+      text: Trabalho em equipe
+    - url: /graph/onedrive-concept-overview
+      itemType: overview
+      text: Arquivos
+    - url: /graph/outlook-calendar-concept-overview
+      itemType: overview
+      text: Calendário
+    - url: /graph/outlook-mail-concept-overview
+      itemType: overview
+      text: Correio
+    - url: /graph/azuread-identity-access-management-concept-overview
+      itemType: overview
+      text: Identidade e acesso
+  - title: Desenvolver
+    links:
+    - url: /graph/auth/auth-concepts
+      itemType: concept
+      text: Obter tokens de autenticação
+    - url: https://docs.microsoft.com/en-us/graph/use-the-api
+      itemType: overview
+      text: Usar a API
+    - url: /graph/migrate-azure-ad-graph-overview
+      itemType: overview
+      text: Migrar
+    - url: /graph/sdks/sdks-overview
+      itemType: overview
+      text: Usar os SDKs
+    - url: /graph/toolkit/overview
+      itemType: overview
+      text: Usar o kit de ferramentas (visualização)
+additionalContent:
+  sections:
   - title: Recursos
     items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /graph/changelog
-            html: <p>Descubra o que mudou nas versões da API do Microsoft Graph v1.0 e beta.</p>
-            image:
-              src: ./images/index/i_backlog.svg
-            title: Log de mudanças
-          - href: 'https://developer.microsoft.com/graph/blogs/'
-            html: '<p>Leia o blog para obter as últimas notícias sobre novas APIs, alterações significativas e muito mais.</p>'
-            image:
-              src: ./images/index/i_blog.svg
-            title: Blog do Microsoft Graph
-          - href: /graph/known-issues
-            html: <p>Problemas conhecidos com o Microsoft Graph.</p>
-            image:
-              src: ./images/index/i_investigate.svg
-            title: Problemas conhecidos
+    - title: Log de mudanças
+      summary: Descubra o que mudou nas versões da API do Microsoft Graph v1.0 e beta.
+      url: /graph/changelog
+    - title: Problemas conhecidos
+      summary: Problemas conhecidos com o Microsoft Graph.
+      url: /graph/known-issues
+    - title: Suporte
+      summary: Faça uma pergunta ou forneça comentários sobre nossas APIs ou documentos.
+      url: https://developer.microsoft.com/graph/support
+    - title: Blog do Microsoft Graph
+      summary: Leia o blog para obter as últimas notícias sobre novas APIs, alterações significativas e muito mais.
+      url: https://developer.microsoft.com/graph/blogs/
+    - title: Chamadas de comunidade mensais
+      summary: Ingressar nas chamadas mensais ou acompanhar as gravações anteriores.
+      url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
+    - title: Vídeos e podcasts
+      summary: Confira nossa série de vídeos e podcasts para saber mais sobre as APIs do Microsoft Graph.
+      url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 26c217720692b0d36cfa0acf7537b757c92399ac
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: c9eabbb0c0cd1cd692ad6ebc5a346c46473161b1
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349318"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394593"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>tipo de recurso provisioningObjectSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "35349318"
 
 Representa uma ação executada pelo serviço de provisionamento do Azure AD e suas propriedades associadas. 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -35,10 +35,11 @@ Representa uma ação executada pelo serviço de provisionamento do Azure AD e s
 |cycleid|String|ID exclusiva por iteração de trabalho.|
 |durationInMilliseconds|Int32|Indica quanto tempo esta ação de provisionamento levou para ser concluída. Medido em milissegundos.|
 |id|Cadeia de caracteres| Indica que a ID exclusiva para a atividade. Este é um GUID somente leitura.|
-|initiatedBy|[inicia](initiator.md)|Detalhes sobre quem iniciou este provisionamento.|
+|initiatedBy|[Iniciador](initiator.md)|Detalhes sobre quem iniciou este provisionamento.|
 |ID|String|A identificação exclusiva de todo o trabalho de provisionamento.|
-|ModifiedProperties|[](modifiedproperty.md) coleção modifiedproperty|Os detalhes de cada propriedade que foi modificada nesta ação de provisionamento neste objeto.|
+|ModifiedProperties|coleção [modifiedproperty](modifiedproperty.md)|Os detalhes de cada propriedade que foi modificada nesta ação de provisionamento neste objeto.|
 |provisioningSteps|coleção [provisioningStep](provisioningstep.md)|Detalhes de cada etapa no provisionamento.|
+|servicePrincipal|[servicePrincipal](serviceprincipal.md) collection|Representa a entidade de serviço usada para provisionamento.|
 |sourceIdentity|[provisionedIdentity](provisionedidentity.md)|Detalhes do objeto de origem que está sendo provisionado.|
 |sourceSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Detalhes do sistema de origem do objeto que está sendo provisionado.|
 |statusInfo|[statusBase](statusbase.md)|Detalhes do status de provisionamento.|
@@ -76,6 +77,7 @@ Veja a seguir uma representação JSON do recurso.
   "jobId": "String",
   "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}],
   "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
+  "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal"}],
   "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
   "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
   "statusInfo": {"@odata.type": "microsoft.graph.statusBase"},
