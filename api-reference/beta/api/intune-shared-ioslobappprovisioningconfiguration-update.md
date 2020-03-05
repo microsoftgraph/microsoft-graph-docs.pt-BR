@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 800bba2c8d6390b48d2dab6ac19febc0687f3471
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 0a900dd980acc99a602ec603feeecbce06f29b58
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939820"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458410"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>Atualizar iosLobAppProvisioningConfiguration
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
 
@@ -59,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosLobA
 |expirationDateTime|DateTimeOffset|Data e hora de expiração do perfil opcional.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|

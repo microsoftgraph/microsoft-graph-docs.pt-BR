@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: cdde391b0dfec4932a8142ede97a08621a5f16bd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6b8cf1c2a08ca600192a854ecc0848701b21665
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992784"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456813"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obter multiValueLegacyExtendedProperty
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [evento](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
 - [Tarefa do Outlook](../resources/outlooktask.md)

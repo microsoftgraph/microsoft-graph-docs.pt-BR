@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5781f0c3e148f349cf05831657d89d430a471820
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c843e66f2ceefc4c14b1780693f8a2111deca0d5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939005"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457696"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Criar deviceManagementTroubleshootingEvent
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção.|
-|EventName|Cadeia de Caracteres|Nome do evento correspondente ao evento de solução de problemas. É um campo opcional|
+|EventName|String|Nome do evento correspondente ao evento de solução de problemas. É um campo opcional|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas|
 
 

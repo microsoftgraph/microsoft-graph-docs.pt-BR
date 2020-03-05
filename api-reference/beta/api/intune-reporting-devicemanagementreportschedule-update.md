@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7506d298f094e8528c24813c9df86720866b9090
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 292094610627ee65d0a7f675aaae2eb578625dab
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940233"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42459071"
 ---
 # <a name="update-devicemanagementreportschedule"></a>Atualizar deviceManagementReportSchedule
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,17 +54,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo para esta entidade|
-|reportScheduleName|Cadeia de Caracteres|Nome da agenda|
-|subject|String|Assunto dos relatórios agendados que são entregues|
-|email|Coleção de cadeias de caracteres|Emails para os quais os relatórios agendados são entregues|
+|reportScheduleName|String|Nome da agenda|
+|assunto|String|Assunto dos relatórios agendados que são entregues|
+|email|String collection|Emails para os quais os relatórios agendados são entregues|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência da entrega de relatórios agendados. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Hora de início da entrega dos relatórios agendados|
 |endDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados termina|
 |userId|Cadeia de caracteres|A ID do usuário que criou o relatório|
-|reportName|Cadeia de Caracteres|Nome do relatório|
-|filter|Cadeia de Caracteres|Filtros aplicados no relatório|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
+|reportName|String|Nome do relatório|
+|filter|String|Filtros aplicados no relatório|
+|select|String collection|Colunas selecionadas do relatório|
+|Classificadoporativado|String collection|Ordenação de colunas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório agendado. Os valores possíveis são: `csv` e `pdf`.|
 
 

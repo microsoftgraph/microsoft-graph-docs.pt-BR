@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3528cc2da190464ddfd60a013440ae9cd21c9d6b
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 4ef710116ed829876a8dcfea99be472fbd11da4c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39938730"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457514"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Criar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,14 +55,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|Cadeia de Caracteres|ID de dispositivo.|
+|deviceId|String|ID de dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização.|
 |osVersion|String|Versão do sistema operacional Windows.|
-|osDescription|Cadeia de Caracteres|Descrição da versão do sistema operacional Windows.|
+|osDescription|String|Descrição da versão do sistema operacional Windows.|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|O estado de implantação da política. Os valores possíveis são: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|Cadeia de caracteres|O nome do usuário deste dispositivo.|
 |userPrincipalName|String|Nome principal do usuário.|
-|policyVersion|Cadeia de Caracteres|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
+|policyVersion|String|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
 
 
 

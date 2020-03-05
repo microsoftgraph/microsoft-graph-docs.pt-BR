@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a140edbea884bd048a068bbf873719e63f46c08
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3ec672a7942e338297489a347f51532ffb42305a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39938891"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457577"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Criar windowsDefenderApplicationControlSupplementalPolicy
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,11 +57,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 |displayName|Cadeia de caracteres|O nome de exibição da política complementar do WindowsDefenderApplicationControl.|
 |description|String|A descrição da política suplementar do WindowsDefenderApplicationControl.|
 |conteúdo|Binária|O conteúdo de política suplementar WindowsDefenderApplicationControl no formato de matriz de bytes.|
-|contentFileName|Cadeia de Caracteres|O nome de arquivo do conteúdo da política suplementar da WindowsDefenderApplicationControl.|
+|contentFileName|String|O nome de arquivo do conteúdo da política suplementar da WindowsDefenderApplicationControl.|
 |versão|String|A versão da política suplementar da WindowsDefenderApplicationControl.|
 |creationDatetime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi carregada.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da política suplementar do WindowsDefenderApplicationControl.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
 
 
 

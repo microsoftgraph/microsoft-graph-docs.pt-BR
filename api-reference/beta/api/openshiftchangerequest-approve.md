@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1301a975dcf858ff1d6f65beb1665d3ca5933de6
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 0a088e12c41d349806ad142013dd01c40c00f080
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219682"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456394"
 ---
 # <a name="openshiftchangerequest-approve"></a>openShiftChangeRequest: aprovar
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

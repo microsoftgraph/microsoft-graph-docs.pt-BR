@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eaf1d91f3f69d4fad40b93485321def8af196377
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 38f8c3b82b12154e9dd330f53539cd2f80025517
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159861"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457430"
 ---
 # <a name="list-intunebrandingprofiles"></a>Listar Navegaçãointunebrandingprofiles
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

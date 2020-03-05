@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bbb8bd9b270e145c6df88782fcac638f08922738
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 94e0c6128ea3da59ffabf366581f74d2f78d75b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42459236"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>Atualizar deviceManagementCachedReportConfiguration
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo para esta entidade|
-|reportName|Cadeia de Caracteres|Nome do relatório|
-|filter|Cadeia de Caracteres|Filtros aplicados na criação de relatórios.|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
+|reportName|String|Nome do relatório|
+|filter|String|Filtros aplicados na criação de relatórios.|
+|select|String collection|Colunas selecionadas do relatório|
+|Classificadoporativado|String collection|Ordenação de colunas no relatório|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|
 |expirationDateTime|DateTimeOffset|Hora em que o relatório em cache expira|

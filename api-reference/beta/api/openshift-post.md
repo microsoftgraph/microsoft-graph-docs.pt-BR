@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 635dd4c81e0b7f6cbe0cd2ceb26e391f2fb3bac5
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 96aa613dade7ea26c7f5a9f075b0c248b4e16564
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952220"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456401"
 ---
 # <a name="create-openshift"></a>Criar openShift
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

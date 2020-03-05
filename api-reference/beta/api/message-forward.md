@@ -5,26 +5,28 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b1d59903635a6aaaa4460d90de71c3aa6a9bc86c
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f30b10cefc0ca4ff8f4f59c2b25cb5e91637e453
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415072"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456905"
 ---
 # <a name="message-forward"></a>message: forward
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encaminhar uma mensagem, adicionar um comentário ou modificar qualquer propriedade atualizável  
-tudo em uma **** chamada de encaminhamento. A mensagem é salva na pasta Itens Enviados.
+tudo em uma chamada de **encaminhamento** . A mensagem é salva na pasta Itens Enviados.
 
 Outra opção é primeiro [criar um rascunho de mensagem de encaminhamento](../api/message-createforward.md) para incluir um comentário ou atualizar quaisquer propriedades da mensagem e, em seguida, [enviar](../api/message-send.md) o rascunho da mensagem.
 
 **Observação**
 
 - Você pode especificar um comentário ou a propriedade **Body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Você deve especificar o `toRecipients` parâmetro ou a propriedade ToRecipients do **** `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
+- Você deve especificar o `toRecipients` parâmetro ou a propriedade **ToRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -67,7 +69,7 @@ O exemplo a seguir define a propriedade **isDeliveryReceiptRequested** como true
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_forward"
@@ -91,15 +93,15 @@ Content-Type: application/json
   "comment": "Dana, just want to make sure you get this." 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-forward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-forward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a90ecf29119a74e3d102e61ca1f2987683d5c54d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b43453dcfbc752bc2f11b1576e7aafa4adbec0e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984087"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457080"
 ---
 # <a name="get-locatedriskevent"></a>Obter locatedRiskEvent
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

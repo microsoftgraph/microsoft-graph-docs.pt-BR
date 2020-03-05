@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01d3c247d968baa2c309c81e0138c287e6f18d74
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 22fbd9585297f8b47b9a4e99255eb1a7229c6230
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939953"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42458543"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -50,7 +52,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
-| Application ||
+| Aplicativo ||
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5617d7896b90919d902e9ad72129c2e5f738c1c
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 189bce50760ac319fe7336bd33bd68120280d2d6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940317"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42459131"
 ---
 # <a name="update-devicemanagementexportjob"></a>Atualizar deviceManagementExportJob
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,11 +54,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo para esta entidade|
-|reportName|Cadeia de Caracteres|Nome do relatório|
-|filter|Cadeia de Caracteres|Filtros aplicados no relatório|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|reportName|String|Nome do relatório|
+|filter|String|Filtros aplicados no relatório|
+|select|String collection|Colunas selecionadas do relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
-|instantâneoid|Cadeia de Caracteres|Um instantâneo é um subconjunto identificável do DataSet representado pelo ReportName. Uma ID de Identificação_da_sessão ou CachedReportConfiguration pode ser usada aqui. Se uma Identificação_da_sessão for especificada, Filter, Select e OrderBy serão aplicadas aos dados representados pela Identificação_da_sessão. Filter, Select e OrderBy não podem ser especificados junto com uma ID CachedReportConfiguration.|
+|instantâneoid|String|Um instantâneo é um subconjunto identificável do DataSet representado pelo ReportName. Uma ID de Identificação_da_sessão ou CachedReportConfiguration pode ser usada aqui. Se uma Identificação_da_sessão for especificada, Filter, Select e OrderBy serão aplicadas aos dados representados pela Identificação_da_sessão. Filter, Select e OrderBy não podem ser especificados junto com uma ID CachedReportConfiguration.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do trabalho de exportação. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|Cadeia de caracteres|Local temporário do relatório exportado|
 |requestDateTime|DateTimeOffset|Hora em que o relatório exportado foi solicitado|

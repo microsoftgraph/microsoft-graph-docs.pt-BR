@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 06e61d00767f5e191f3f6ecf6ddcb469f4c3b7ff
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: fc4e92aa39ba93bdba6de7412e5a3a94156b7a3e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415110"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456947"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,8 +23,8 @@ Crie uma mensagem para responder a todos de rascunho para incluir um comentário
 **Observação**
 
 - Você pode especificar um comentário ou a propriedade **Body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a **** Propriedade ReplyTo for especificada na mensagem original, por formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
-**** as propriedades ReplyTo e ToRecipients e não os destinatários nas propriedades **from** e **** ToRecipients. **** 
+- Se a propriedade **ReplyTo** for especificada na mensagem original, por formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
+as propriedades **ReplyTo** e **ToRecipients** e não os destinatários nas propriedades **from** e **ToRecipients** . 
 
 
 ## <a name="permissions"></a>Permissões
@@ -65,7 +67,7 @@ O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_createreplyall"
@@ -87,15 +89,15 @@ Content-Type: application/json
     "comment": "if the project gets approved, please take a look at the attached guidelines before you decide on the name." 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreplyall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createreplyall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createreplyall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c3382b4461e2c52c3238e3b6ea1e0a18ef8ec5b5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b5c0577f8dd2d767f58cd464cfe7d874b5c7c5b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414900"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456842"
 ---
 # <a name="update-rule"></a>Atualizar regra
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. |
 | displayName | String | O nome de exibição da regra. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Condições de exceção para a regra. |
-| isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. |
+| isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. |
 | isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
 
@@ -59,7 +61,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e o obj
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir muda o nome da regra e as ações a serem seguidas para essa regra no [exemplo](messagerule-get.md#example) em [Obter regra](messagerule-get.md), do encaminhamento para um endereço a marcar sua importância como alta. 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_messagerule"
@@ -75,15 +77,15 @@ Content-type: application/json
      }
 } 
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-messagerule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-messagerule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-messagerule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

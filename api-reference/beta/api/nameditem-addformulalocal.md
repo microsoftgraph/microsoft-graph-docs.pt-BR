@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f712700a2421eec2149b4b8ebc7aa0c610ecf781
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d1f8700c2ba2a25d336f89a2270e727751e9d853
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414872"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456800"
 ---
 # <a name="add-named-item-formulalocal"></a>Adicionar item nomeado FormulaLocal
-Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
+
+Namespace: Microsoft. Graph adiciona um novo nome à coleção do escopo fornecido usando a localidade do usuário para a fórmula.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,9 +43,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|O nome do item nomeado.|
+|nome|cadeia de caracteres|O nome do item nomeado.|
 |formula|string|A fórmula ou o intervalo ao qual o nome fará referência.|
-|comentário|string|O comentário associado ao item nomeado|
+|comment|string|O comentário associado ao item nomeado|
 
 ## <a name="response"></a>Resposta
 
@@ -57,7 +58,7 @@ Eis um exemplo de como chamar esta API.
 Este é um exemplo da solicitação.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "NamedItemcollection_add"
@@ -73,15 +74,15 @@ Content-length: 54
   "comment": "Comment for the named item"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditemcollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditemcollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/nameditemcollection-add-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

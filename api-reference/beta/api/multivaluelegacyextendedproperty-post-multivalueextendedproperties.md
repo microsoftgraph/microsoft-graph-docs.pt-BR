@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2e1f9840661354f9ff2d7b2e5f4386f2d17ca0fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8cb697f142a2f52b805723379ad35c4280a8d674
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983793"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456806"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [evento](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Tarefa do Outlook](../resources/outlooktask.md)
@@ -58,7 +60,7 @@ Dependendo do recurso para o qual você está criando a propriedade estendida e 
 Você pode criar propriedades estendidas em uma instância de recurso nova ou existente.
 
 Para criar uma ou mais propriedades estendidas em uma _nova_ instância de recurso, use a mesma solicitação REST válida para a criação da instância e inclua as propriedades da nova instância de recurso _e a propriedade estendida_ no corpo da solicitação.
-Observe que alguns recursos dão suporte à criação de mais de uma maneira. Para obter mais informações sobre como criar essas instâncias de recurso, consulte os tópicos correspondentes para criar uma [mensagem](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [evento](../api/user-post-events.md), [calendário](../api/user-post-calendars.md), [contato](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [tarefa](../resources/outlooktask.md) [do Outlook Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md), [evento de grupo](../api/group-post-events.md)e postagem de [grupo](../resources/post.md). 
+Observe que alguns recursos dão suporte à criação de mais de uma maneira. Para obter mais informações sobre como criar essas instâncias de recurso, consulte os tópicos correspondentes para criar uma [mensagem](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [evento](../api/user-post-events.md), [calendário](../api/user-post-calendars.md), [contato](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [tarefa do Outlook](../resources/outlooktask.md), pasta de [tarefas do Outlook](../resources/outlooktaskfolder.md), evento de [grupo](../api/group-post-events.md)e [postagem de grupo](../resources/post.md). 
  
 Veja a seguir a sintaxe das solicitações. 
 

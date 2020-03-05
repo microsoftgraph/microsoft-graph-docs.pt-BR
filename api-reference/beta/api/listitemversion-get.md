@@ -6,14 +6,16 @@ title: Obter uma versão anterior de um item de lista - API do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 752287ac5e004688e1dd1747f3689c5f460dc946
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85dda18768463398244fc648b77d92e20ca82786
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35984088"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457101"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>Obter um recurso ListItemVersion (prévia)
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |            Tipo de permissão             | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Sites.Read.All, Sites.ReadWrite.All         |
-| Delegado (conta pessoal da Microsoft) | n/d                                         |
+| Delegada (conta pessoal da Microsoft) | n/d                                         |
 | Aplicativo                            | Sites.Read.All, Sites.ReadWrite.All         |
 
 

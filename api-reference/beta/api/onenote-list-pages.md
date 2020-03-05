@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: cb0c1db9a795dd18ed41abf4f757d2f43601e087
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc6b3cb3a2f05c160f37df4b9f1614dfbc6dde91
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992658"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456548"
 ---
 # <a name="list-pages"></a>Listar páginas
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

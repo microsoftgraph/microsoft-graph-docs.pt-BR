@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 649c6d658206f684efde8d5bc82b26e7d0ef6216
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 58c995a9ca6be7029b1a5510023160c97cadb735
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913090"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456500"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                                        |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
 | Aplicativo                            | OnlineMeetings.Read.All                               |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,7 +60,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto
 O exemplo a seguir mostra a solicitação.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-onlineMeeting"
@@ -66,15 +68,15 @@ O exemplo a seguir mostra a solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

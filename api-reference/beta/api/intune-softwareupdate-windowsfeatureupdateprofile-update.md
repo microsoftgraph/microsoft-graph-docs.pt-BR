@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06272e3ddc3c92c2f042e08b010cbc8197cb49b5
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: de3ada6b4a3770a48d62e3714531c52ded1fe6b2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939266"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457871"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>Atualizar windowsFeatureUpdateProfile
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |id|String|O identificador da entidade.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
 |description|String|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de Caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
+|featureUpdateVersion|String|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
 

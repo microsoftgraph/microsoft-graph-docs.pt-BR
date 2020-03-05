@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: de1811094d6be3148610078d25e0afafecc3fb04
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 02bf3e4fd86662d551f0d403322d9877c0ed5ad0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636845"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457311"
 ---
 # <a name="update-ipnamedlocation"></a>Atualizar ipNamedlocation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |displayName|String|Nome legível do local.|
 |Intervalos|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR do IPv4 (1.2.3.4/32) ou qualquer formato IPv6 permitido da IETF RFC5962.|
-|isTrusted|Booliano|O valor é `true` se esse local for explicitamente confiável.|
+|isTrusted|Boolean|O valor é `true` se esse local for explicitamente confiável.|
 
 ## <a name="response"></a>Resposta
 
@@ -63,7 +65,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 Este é um exemplo de solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ipnamedlocation"
@@ -86,7 +88,7 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-ipnamedlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

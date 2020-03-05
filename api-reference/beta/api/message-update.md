@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f7b4f0f187c767d2c70f4b261b202cd99e623f2c
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5c087c9ecb423d305681567b68bfb8726dbe3e2e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869448"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456877"
 ---
 # <a name="update-message"></a>Atualizar mensagem
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. |
 |sinalizador|[followupFlag](../resources/followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Devem corresponder à caixa de correio real que foi usada. |
-|importância|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|importância|Cadeia de caracteres|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Atualizável apenas se IsDraft = true.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
@@ -72,7 +74,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_message"
@@ -91,11 +93,11 @@ Content-length: 248
   "inferenceClassification": "other"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

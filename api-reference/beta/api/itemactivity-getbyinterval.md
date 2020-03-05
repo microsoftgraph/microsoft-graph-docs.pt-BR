@@ -6,20 +6,22 @@ title: Obter estatísticas de atividade de item por intervalo
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6d1f7a3b4e6a326f107a0d0ff33db59ed73f2794
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7bd05327e1571174b3ce1a228ab6a1b736c0fcd7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979103"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457297"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter [itemActivityStats][] para as atividades que foram realizadas sob esse recurso dentro do intervalo de tempo especificado.
 
->**Observação:** O **** recurso do naanalytics ainda não está disponível em todas as implantações [nacionais](/graph/deployments).
+>**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 As agregações de análise podem não estar disponíveis para todos os tipos de ação.
 
