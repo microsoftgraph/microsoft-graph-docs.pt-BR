@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8b471de6dac08111453d42b32f2c95e8d2a94f06
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: ed52ecf6be97f6a1e7626438a3b248cc38a03938
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791516"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42429353"
 ---
 # <a name="update-itemcategories"></a>Atualizar as categorias
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Atualizar as propriedades de um objeto de categoria de item para o Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -62,11 +67,11 @@ Content-type: application/json
 }
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ```json
 HTTP/1.1 200 OK

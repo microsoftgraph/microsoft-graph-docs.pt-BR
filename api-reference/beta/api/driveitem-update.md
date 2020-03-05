@@ -6,14 +6,16 @@ title: Atualizar um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 436bf26b03ca5b1cb59b5ea851e45f9908ea71ca
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cff8bc2d7f5c4daec1da7e26f6f07b873b55dbee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416608"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432310"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,7 +67,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurs
 Este exemplo renomeia o recurso DriveItem como "new-file-name.docx".
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-item" } -->
 
 ```http
@@ -76,15 +78,15 @@ Content-type: application/json
   "name": "new-file-name.docx"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,7 +95,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta.
+Se tiver êxito, esse método retornará um recurso [driveItem][item-resource]no corpo da resposta.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -108,9 +110,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
-Confira mais detalhes sobre como os erros são retornados em [Respostas de erro][error-response].
+Confira [Respostas de erro][error-response] para saber mais detalhes sobre como os erros retornam.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1fe1be67164c4c615a66fee5a009be36fac169c0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: fd543399b27c5a900144588ef9b5f8f69efef061
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791642"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42430123"
 ---
 # <a name="delete-employees"></a>Excluir funcionários
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Excluir um funcionário do Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -56,7 +61,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
-**Resposta** 
+**Response** 
 
 Veja a seguir um exemplo da resposta. 
 

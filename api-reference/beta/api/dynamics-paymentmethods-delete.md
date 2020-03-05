@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: a15fd1e1e07db00342391817ee204501bb7b196c
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b5e65e596cdf53d20b117c39c2b4e7a3b63ce417
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791411"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428745"
 ---
 # <a name="delete-paymentmethods"></a>Excluir paymentMethods
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Excluir um objeto de método de pagamento do Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -57,7 +62,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 
-**Resposta** 
+**Response** 
 
 Veja a seguir um exemplo da resposta. 
 

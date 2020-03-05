@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9b7a60418d1a322b3d2997c1889f7280acd7810d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 58932fcc23eb78c2715b79e57f100508f50b66a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791418"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428758"
 ---
 # <a name="update-journallines"></a>Atualizar journalLines
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Atualizar as propriedades de um objeto de linhas de diário para o Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -62,7 +67,7 @@ Content-type: application/json
 }
 ```
 
-**Resposta**
+**Response**
 
 ```json
 HTTP/1.1 200 OK

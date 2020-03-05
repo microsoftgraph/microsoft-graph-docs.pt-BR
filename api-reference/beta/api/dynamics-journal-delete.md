@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 798d085af068729b24264b86667eab8274415dbe
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: ff9b50f7e0b1a4b6580cc2ba328d98a9dcd8b132
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42429346"
 ---
 # <a name="delete-journals"></a>Excluir diários
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Excluir um diário do Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -58,7 +63,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 ```
 
-**Resposta** 
+**Response** 
 
 Veja a seguir um exemplo da resposta. 
 

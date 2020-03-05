@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 28ce56d439b43e8706f3a726dc6f18d0b79c64bb
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 202a4202aabe6d7eae04faee489dbc9ceb807722
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791397"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428688"
 ---
 # <a name="update-paymentmethods"></a>Atualizar paymentMethods
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Atualizar as propriedades de um objeto de método de pagamento para o Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -61,11 +66,11 @@ Content-type: application/json
 }
 ```
 
-**Resposta**
+**Response**
 
 Veja a seguir um exemplo da resposta. 
 
-> **Observação**: o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ```json
 HTTP/1.1 200 OK

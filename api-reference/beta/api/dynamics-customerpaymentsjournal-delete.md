@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0ddd675b617c679258b0f5de5363922b1e3e6d8d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7844d1caab27cb1cc5e4fd171a79d5c585a16a49
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791726"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42430571"
 ---
 # <a name="delete-customerpaymentjournals"></a>Excluir customerPaymentJournals
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Excluir um objeto de diário de pagamento de cliente do Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -58,7 +63,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
-**Resposta** 
+**Response** 
 
 Veja a seguir um exemplo da resposta. 
 

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f5e203e1a45d7afbe541278819aa4dcacb1a9a0a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 032f7ccc3140a9ea158ded7b072124cc7cf919d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791369"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428646"
 ---
 # <a name="delete-paymentterms"></a>Excluir paymentTerms
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Excluir um objeto de condições de pagamento do Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -57,7 +62,7 @@ Este é um exemplo da solicitação.
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
-**Resposta** 
+**Response** 
 
 Veja a seguir um exemplo da resposta. 
 

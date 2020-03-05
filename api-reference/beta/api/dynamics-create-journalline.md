@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c0d047840143c87618eb33fc1ee9d0bc074f3f7e
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 2350bb112b0585e822c4c4c92af5511705b3612c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791950"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431379"
 ---
 # <a name="create-journallines"></a>Criar journalLines
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Cria um objeto de linha de diário no Dynamics 365 Business central.
 
 ## <a name="permissions"></a>Permissões
@@ -69,7 +74,7 @@ Content-type: application/json
   "comment": ""
 }
 ```
-**Resposta**
+**Response**
 
 ```json
 HTTP/1.1 201 Created
