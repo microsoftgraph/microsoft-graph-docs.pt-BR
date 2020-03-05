@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 24afb57908ae4b83053474a6c0e069f2ca8f98e6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ebbb82dc92afada1e62cb111cc63223b9cf7bee7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334028"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527152"
 ---
 # <a name="appinstallcontroltype-enum-type"></a>tipo de enumeração appInstallControlType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Configuração do controle de instalação do aplicativo
 
@@ -24,10 +26,10 @@ Configuração do controle de instalação do aplicativo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|em qualquer lugar|1|Desativar recomendações de aplicativo|
-|storeOnly|duas|Permitir somente aplicativos de armazenamento|
-|a0/&gt|3D|Mostrar recomendações de aplicativo|
-|preferStore|quatro|Avisar antes de instalar aplicativos de fora do repositório|
+|em qualquer lugar|1 |Desativar recomendações de aplicativo|
+|storeOnly|2 |Permitir somente aplicativos de armazenamento|
+|a0/&gt|3 |Mostrar recomendações de aplicativo|
+|preferStore|4 |Avisar antes de instalar aplicativos de fora do repositório|
 
 
 

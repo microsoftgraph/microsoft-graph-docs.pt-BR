@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 431afa07b2276219186c508b88bc05ab981f65ff
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 58a59e32fd75a99c9585d9c22115620b8a4aad20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162425"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526301"
 ---
 # <a name="iossoftwareupdatescheduletype-enum-type"></a>tipo de enumeração iosSoftwareUpdateScheduleType
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,9 +26,9 @@ Atualize o tipo de agendamento para atualizações de software iOS.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |updateOutsideOfActiveHours|,0|Atualização fora do horário ativo.|
-|alwaysUpdate|1|Sempre atualizar.|
-|updateDuringTimeWindows|duas|Atualize durante as janelas de tempo.|
-|updateOutsideOfTimeWindows|3D|Atualização fora das janelas de tempo.|
+|alwaysUpdate|1 |Sempre atualizar.|
+|updateDuringTimeWindows|2 |Atualize durante as janelas de tempo.|
+|updateOutsideOfTimeWindows|3 |Atualização fora das janelas de tempo.|
 
 
 

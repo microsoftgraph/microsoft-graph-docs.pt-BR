@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df996a3267cc31b80456b74ca6002d3a95467e79
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ce24c84d32178378aaf4f4fc4256aa31c22cae3d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368202"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529480"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enumeração ratingNewZealandMoviesType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de filmes na Nova Zelândia
 
@@ -24,13 +26,13 @@ Rótulos de classificação de filmes na Nova Zelândia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|Adequado para audiência geral|
-|parentalGuidance|3D|A classificação PG recomenda orientação dos pais|
-|completa|quatro|A classificação M é adequada para o público adulto|
-|agesAbove13|0,5|A classificação do R13 é restrita às pessoas com mais de 13 anos|
-|agesAbove15|6|A classificação do R15 é restrita a pessoas de 15 anos ou mais|
-|agesAbove16|178|A classificação do R16 é restrita a pessoas com 16 anos ou mais|
+|Bloqueado|1 |Não permitir conteúdo de filmes|
+|geral|2 |Adequado para audiência geral|
+|parentalGuidance|3 |A classificação PG recomenda orientação dos pais|
+|completa|4 |A classificação M é adequada para o público adulto|
+|agesAbove13|5 |A classificação do R13 é restrita às pessoas com mais de 13 anos|
+|agesAbove15|6 |A classificação do R15 é restrita a pessoas de 15 anos ou mais|
+|agesAbove16|7 |A classificação do R16 é restrita a pessoas com 16 anos ou mais|
 |agesAbove18|8 |A classificação do R18 é restrita a pessoas de 18 anos ou mais|
 |limitado|9 |A classificação R é restrita a uma determinada audiência|
 |agesAbove16Restricted|10 |A classificação RP16 requer que os espectadores de 16 acompanhados por um pai ou adulto|

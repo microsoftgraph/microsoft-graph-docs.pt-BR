@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 66c7a129e4db54b14b21ffc1c9b29c706e39cb69
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: c4ba7144144bd59ab1eb0256951574581c7ec97e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636606"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528251"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>tipo de enumeração windowsAutopilotDeviceType
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

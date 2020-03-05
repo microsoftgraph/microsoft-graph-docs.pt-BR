@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bf58d4ef7762d4631328d0e0e122a9902bc2c83e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 519558ff2e56b823ac5c889fb8d383f547a61daf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367866"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529358"
 ---
 # <a name="subjectnameformat-enum-type"></a>tipo de enumeração subjectNameFormat
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Opções de formato de nome de entidade.
 
@@ -24,12 +26,12 @@ Opções de formato de nome de entidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |CommonName|,0|Nome comum.|
-|commonNameIncludingEmail|1|Nome comum incluindo email.|
-|commonNameAsEmail|duas|Nome comum como email.|
-|cliente|3D|Formato de nome de entidade personalizado.|
-|commonNameAsIMEI|0,5|Nome comum como IMEI.|
-|commonNameAsSerialNumber|6|Nome comum como número de série.|
-|commonNameAsAadDeviceId|178|Nome comum como número de série.|
+|commonNameIncludingEmail|1 |Nome comum incluindo email.|
+|commonNameAsEmail|2 |Nome comum como email.|
+|cliente|3 |Formato de nome de entidade personalizado.|
+|commonNameAsIMEI|5 |Nome comum como IMEI.|
+|commonNameAsSerialNumber|6 |Nome comum como número de série.|
+|commonNameAsAadDeviceId|7 |Nome comum como número de série.|
 |commonNameAsIntuneDeviceId|8 |Nome comum como número de série.|
 |commonNameAsDurableDeviceId|9 |Nome comum como número de série.|
 

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e8d64f3af656a03bd02ecba5db2fbdab288f3693
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1d44c4db05be66f568ba5c0b9182a6d2ab509088
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333881"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527070"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para o modo de atualização automática.
 
@@ -24,12 +26,12 @@ Valores possíveis para o modo de atualização automática.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|notifyDownload|1|Notifique o download.|
-|autoInstallAtMaintenanceTime|duas|Instalação automática no momento da manutenção.|
-|autoInstallAndRebootAtMaintenanceTime|3D|Instalação automática e reinicialização no momento da manutenção.|
-|autoInstallAndRebootAtScheduledTime|quatro|Instalação automática e reinicialização no horário agendado.|
-|autoInstallAndRebootWithoutEndUserControl|0,5|Instalação e reinício automáticos sem controle de usuário final|
-|windowsDefault|6|Redefina como o valor padrão do Windows.|
+|notifyDownload|1 |Notifique o download.|
+|autoInstallAtMaintenanceTime|2 |Instalação automática no momento da manutenção.|
+|autoInstallAndRebootAtMaintenanceTime|3 |Instalação automática e reinicialização no momento da manutenção.|
+|autoInstallAndRebootAtScheduledTime|4 |Instalação automática e reinicialização no horário agendado.|
+|autoInstallAndRebootWithoutEndUserControl|5 |Instalação e reinício automáticos sem controle de usuário final|
+|windowsDefault|6 |Redefina como o valor padrão do Windows.|
 
 
 

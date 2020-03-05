@@ -4,19 +4,20 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: d566e570273cfecf213462ab4bf9cea5b76086a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d79e455db0b6112bbd44b12a1614750311d42ca7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967529"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527504"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Gerenciar certificados de acesso de recursos no Intune
 
+Namespace: Microsoft. Graph
+
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Você pode importar certificados PFX usando a API do Microsoft Graph para o Intune.
 

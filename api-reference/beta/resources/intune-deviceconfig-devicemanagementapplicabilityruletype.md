@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7e6424778dbe0a19fabe174b767f3a5934c6bc7c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 441a12397d63611799fd105eb21aeeae82feced5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332803"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530121"
 ---
 # <a name="devicemanagementapplicabilityruletype-enum-type"></a>tipo de enumeração deviceManagementApplicabilityRuleType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipos de regra de aplicabilidade compatíveis para a configuração do dispositivo
 
@@ -24,7 +26,7 @@ Tipos de regra de aplicabilidade compatíveis para a configuração do dispositi
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ser|,0|Incluir|
-|impedir|1|Excluir|
+|impedir|1 |Excluir|
 
 
 

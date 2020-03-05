@@ -5,30 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0edaa623b080e7b5884b6fe7c3f8817a1c6aecca
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 65ea22f4a0684fb77b267d7793082ae066af5bd8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327791"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528259"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Configuração de experiência inicial da caixa
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hidePrivacySettings|Booliano|Mostrar ou ocultar as configurações de privacidade para o usuário|
-|hideEULA|Booliano|Mostrar ou ocultar o EULA para o usuário|
+|hidePrivacySettings|Boolean|Mostrar ou ocultar as configurações de privacidade para o usuário|
+|hideEULA|Boolean|Mostrar ou ocultar o EULA para o usuário|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuário. Os valores possíveis são: `administrator` e `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação do AAD join. Os valores possíveis são: `singleUser` e `shared`.|
-|skipKeyboardSelectionPage|Booliano|Se definido, ignore a página de seleção de teclado se idioma e região estiverem definidos|
-|hideEscapeLink|Booliano|Se for definido como true, o usuário não poderá iniciar novamente com uma conta diferente, na entrada da empresa|
+|skipKeyboardSelectionPage|Boolean|Se definido, ignore a página de seleção de teclado se idioma e região estiverem definidos|
+|hideEscapeLink|Boolean|Se for definido como true, o usuário não poderá iniciar novamente com uma conta diferente, na entrada da empresa|
 
 ## <a name="relationships"></a>Relações
 Nenhum

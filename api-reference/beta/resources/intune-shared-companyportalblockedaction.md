@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ed24dc039742ef7c0412fcd8a67f1a460062c7f
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 15460de0c53b1b7b383095b7bee50af0192b3462
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088277"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527481"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>tipo de recurso companyPortalBlockedAction
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

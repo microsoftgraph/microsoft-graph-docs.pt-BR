@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1f260b032078bdcd60000ecbde315a91cfcf492
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 330972424697aed731cd3f1a646505c51cd3f52c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337591"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528702"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>tipo de recurso bulkManagedDeviceActionResult
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|successfulDeviceIds|Coleção de cadeias de caracteres|Dispositivos bem-sucedidos|
-|failedDeviceIds|Coleção de cadeias de caracteres|Dispositivos com falha|
-|notFoundDeviceIds|Coleção de cadeias de caracteres|Dispositivos não encontrados|
-|notSupportedDeviceIds|Coleção de cadeias de caracteres|Dispositivos não suportados|
+|successfulDeviceIds|String collection|Dispositivos bem-sucedidos|
+|failedDeviceIds|String collection|Dispositivos com falha|
+|notFoundDeviceIds|String collection|Dispositivos não encontrados|
+|notSupportedDeviceIds|String collection|Dispositivos não suportados|
 
 ## <a name="relationships"></a>Relações
 Nenhum

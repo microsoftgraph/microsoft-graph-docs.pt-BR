@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 17f56ac8860b93b046381a017a91894eea07e21c
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 83f5e382a1cccb23b0f30414b48f505b82199e92
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078299"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529932"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>tipo de recurso iosEasEmailProfileConfiguration
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -37,13 +39,13 @@ Herda de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-eas
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |usernameSource|[UserEmail](../resources/intune-deviceconfig-useremailsource.md)|Atributo username que é separado do AAD e injetado nesse perfil antes da instalação no dispositivo. Herdado de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Os valores possíveis são: `userPrincipalName` e `primarySmtpAddress`.|
@@ -52,24 +54,24 @@ Herda de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-eas
 |customDomainName|String|Valor de nome de domínio personalizado usado durante a geração de um perfil de email antes da instalação no dispositivo. Herdado de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Nome da conta.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Método de autenticação para este perfil de email. Os valores possíveis são: `usernameAndPassword`, `certificate`, `derivedCredential`.|
-|blockMovingMessagesToOtherEmailAccounts|Booliano|Indica se as mensagens de movimentação devem ou não ser bloqueadas para outras contas de email.|
-|blockSendingEmailFromThirdPartyApps|Booliano|Indica se o envio de emails de aplicativos de terceiros deve ou não ser bloqueado.|
-|blockSyncingRecentlyUsedEmailAddresses|Booliano|Indica se a sincronização de endereços de email usados recentemente deve ou não ser bloqueada, por exemplo, ao compor novos emails.|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|Indica se as mensagens de movimentação devem ou não ser bloqueadas para outras contas de email.|
+|blockSendingEmailFromThirdPartyApps|Boolean|Indica se o envio de emails de aplicativos de terceiros deve ou não ser bloqueado.|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|Indica se a sincronização de endereços de email usados recentemente deve ou não ser bloqueada, por exemplo, ao compor novos emails.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duração de tempo que o email deve ser sincronizado de volta para o. . Os valores possíveis são: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddresse|[UserEmail](../resources/intune-deviceconfig-useremailsource.md)|Atributo de email separado do AAD e injetado nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `userPrincipalName` e `primarySmtpAddress`.|
 |easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Trocar dados a serem sincronizados. Os valores possíveis são `none`: `calendars`, `contacts`, `email`, `notes`, `reminders`,.|
-|easServicesUserOverrideEnabled|Booliano|Permitir que os usuários alterem as configurações de sincronização.|
+|easServicesUserOverrideEnabled|Boolean|Permitir que os usuários alterem as configurações de sincronização.|
 |hostName|Cadeia de caracteres|Local do Exchange que (URL) ao qual o aplicativo de email nativo se conecta.|
-|requireSmime|Booliano|Indica se o certificado S/MIME deve ou não ser usado.|
-|smimeEnablePerMessageSwitch|Booliano|Indica se os emails não criptografados devem ou não ser permitidos.|
-|smimeEncryptByDefaultEnabled|Booliano|Se definido como true a criptografia S/MIME estiver habilitada por padrão.|
-|smimeSigningEnabled|Booliano|Se definido como true a assinatura S/MIME estiver habilitada para essa conta|
-|smimeSigningUserOverrideEnabled|Booliano|Se definido como true, o usuário pode ativar ou desativar a assinatura S/MIME.|
-|smimeEncryptByDefaultUserOverrideEnabled|Booliano|Se definido como true, o usuário pode ativar a opção criptografia por padrão.|
-|smimeSigningCertificateUserOverrideEnabled|Booliano|Se definido como true, o usuário pode selecionar a identidade de assinatura.|
-|smimeEncryptionCertificateUserOverrideEnabled|Booliano|Se definido como true, o usuário pode selecionar a identidade de criptografia S/MIME. |
-|requireSsl|Booliano|Indica se o SSL deve ou não ser usado.|
-|useOAuth|Booliano|Especifica se a conexão deve usar o OAuth para autenticação.|
+|requireSmime|Boolean|Indica se o certificado S/MIME deve ou não ser usado.|
+|smimeEnablePerMessageSwitch|Boolean|Indica se os emails não criptografados devem ou não ser permitidos.|
+|smimeEncryptByDefaultEnabled|Boolean|Se definido como true a criptografia S/MIME estiver habilitada por padrão.|
+|smimeSigningEnabled|Boolean|Se definido como true a assinatura S/MIME estiver habilitada para essa conta|
+|smimeSigningUserOverrideEnabled|Boolean|Se definido como true, o usuário pode ativar ou desativar a assinatura S/MIME.|
+|smimeEncryptByDefaultUserOverrideEnabled|Boolean|Se definido como true, o usuário pode ativar a opção criptografia por padrão.|
+|smimeSigningCertificateUserOverrideEnabled|Boolean|Se definido como true, o usuário pode selecionar a identidade de assinatura.|
+|smimeEncryptionCertificateUserOverrideEnabled|Boolean|Se definido como true, o usuário pode selecionar a identidade de criptografia S/MIME. |
+|requireSsl|Boolean|Indica se o SSL deve ou não ser usado.|
+|useOAuth|Boolean|Especifica se a conexão deve usar o OAuth para autenticação.|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Assinatura tipo de certificado para este perfil de email. Os valores possíveis são: `none`, `certificate`, `derivedCredential`.|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Tipo de certificado de criptografia para este perfil de email. Os valores possíveis são: `none`, `certificate`, `derivedCredential`.|
 

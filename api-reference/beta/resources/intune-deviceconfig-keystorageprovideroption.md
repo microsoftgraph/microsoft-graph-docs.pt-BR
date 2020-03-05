@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 21a2e72bc226fdd7a965fbfb3f6ddd7735a4f351
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8580688edbdacb150a37ee5cf2a52fdc77dd490f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325498"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526252"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>tipo de enumeração keyStorageProviderOption
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Opções de importação do KSP (provedor de armazenamento de chave).
 
@@ -24,9 +26,9 @@ Opções de importação do KSP (provedor de armazenamento de chave).
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |useTpmKspOtherwiseUseSoftwareKsp|,0|Importar para KSP de Trusted Platform Module (TPM) se presente, caso contrário, importe para o KSP de software.|
-|useTpmKspOtherwiseFail|1|Importar para KSP de Trusted Platform Module (TPM) se presente, caso contrário, falha.|
-|usePassportForWorkKspOtherwiseFail|duas|Importe para o Passport para trabalho do KSP, se disponível, caso contrário, falha.|
-|useSoftwareKsp|3D|Importar para KSP de software.|
+|useTpmKspOtherwiseFail|1 |Importar para KSP de Trusted Platform Module (TPM) se presente, caso contrário, falha.|
+|usePassportForWorkKspOtherwiseFail|2 |Importe para o Passport para trabalho do KSP, se disponível, caso contrário, falha.|
+|useSoftwareKsp|3 |Importar para KSP de software.|
 
 
 

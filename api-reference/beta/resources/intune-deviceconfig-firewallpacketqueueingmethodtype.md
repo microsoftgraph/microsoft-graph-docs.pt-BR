@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4222580a079fd37b381cdaf78e0b2985029ef34b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3b134e00e0237e407331f0ea0554c54dcf0d39ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338137"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529988"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enumeração firewallPacketQueueingMethodType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para firewallPacketQueueingMethod
 
@@ -24,10 +26,10 @@ Valores possíveis para firewallPacketQueueingMethod
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
-|deficiência|1|Desabilitar enfileiramento de pacotes|
-|queueInbound|duas|Enfileirar pacotes criptografados de entrada|
-|queueOutbound|3D|Pacotes de saída de fila descriptografados para encaminhamento|
-|queueBoth|quatro|Enfileiramento de pacotes de entrada e de saída|
+|deficiência|1 |Desabilitar enfileiramento de pacotes|
+|queueInbound|2 |Enfileirar pacotes criptografados de entrada|
+|queueOutbound|3 |Pacotes de saída de fila descriptografados para encaminhamento|
+|queueBoth|4 |Enfileiramento de pacotes de entrada e de saída|
 
 
 

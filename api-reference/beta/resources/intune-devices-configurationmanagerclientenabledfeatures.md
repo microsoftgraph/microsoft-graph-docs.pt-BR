@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9407e1d035a5cd50db7b071f562acb4eb2d007b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2dfae041f1aab4c4ea74490d372350c5c0c2087b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371982"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528679"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 recursos habilitados pelo cliente do Gerenciador de Configurações
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|inventory|Booliano|Se o estoque é gerenciado pelo Intune|
-|modernApps|Booliano|Se o aplicativo moderno é gerenciado pelo Intune|
-|resourceAccess|Booliano|Se o acesso ao recurso é gerenciado pelo Intune|
-|deviceConfiguration|Booliano|Se a configuração do dispositivo é gerenciada pelo Intune|
-|compliancePolicy|Booliano|Se a política de conformidade é gerenciada pelo Intune|
+|inventory|Boolean|Se o estoque é gerenciado pelo Intune|
+|modernApps|Boolean|Se o aplicativo moderno é gerenciado pelo Intune|
+|resourceAccess|Boolean|Se o acesso ao recurso é gerenciado pelo Intune|
+|deviceConfiguration|Boolean|Se a configuração do dispositivo é gerenciada pelo Intune|
+|compliancePolicy|Boolean|Se a política de conformidade é gerenciada pelo Intune|
 |windowsUpdateForBusiness|Booliano|Se o Windows Update para Empresas é gerenciado pelo Intune|
-|endpointProtection|Booliano|Se o Endpoint Protection é gerenciado pelo Intune|
-|Officetreinamento|Booliano|Se o aplicativo do Office é gerenciado pelo Intune|
+|endpointProtection|Boolean|Se o Endpoint Protection é gerenciado pelo Intune|
+|Officetreinamento|Boolean|Se o aplicativo do Office é gerenciado pelo Intune|
 
 ## <a name="relationships"></a>Relações
 Nenhum

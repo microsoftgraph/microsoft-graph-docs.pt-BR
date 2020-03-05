@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f17e7725802879f639ce6803f9f6c12dca21e5f
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 959b6722f1a72ff1f423f4288ebebdcd14aada11
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528609"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>tipo de recurso deviceHealthScriptRunSummary
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

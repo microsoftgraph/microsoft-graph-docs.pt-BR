@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f664a6b57d92f5a8cd2d586f8bc2747ffa6db71c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9cee18df0fe6ba3cc59d8d427aa472f8943e03d9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342002"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527789"
 ---
 # <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>tipo de enumeração deviceManagementDomainJoinConnectorState
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A solicitação ODJ diz.
 
@@ -24,8 +26,8 @@ A solicitação ODJ diz.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |active|,0|O conector está ativamente fazendo ping no Intune.|
-|erro|1|Não há um coração do conector da última hora.|
-|inativa|duas|Não há um coração do conector dos últimos 5 dias.|
+|erro|1 |Não há um coração do conector da última hora.|
+|inativa|2 |Não há um coração do conector dos últimos 5 dias.|
 
 
 

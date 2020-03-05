@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a113e3733a2e8a275f81f1f33aa186257704b2e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1c026a6cb638f29160404da45a6198cace3a0fa4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333615"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526921"
 ---
 # <a name="dayofweek-enum-type"></a>tipo de enumeração de dayOfWeek
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para um dia da semana
 
@@ -24,12 +26,12 @@ Valores possíveis para um dia da semana
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |domingo|,0|Domingo.|
-|período|1|Segunda-feira.|
-|feira|duas|Terça-feira.|
-|feira|3D|Quarta-feira.|
-|quinta-feira|quatro|Quinta-feira.|
-|sexta|0,5|Sexta-feira.|
-|sábado|6|Sábado.|
+|período|1 |Segunda-feira.|
+|feira|2 |Terça-feira.|
+|feira|3 |Quarta-feira.|
+|quinta-feira|4 |Quinta-feira.|
+|sexta|5 |Sexta-feira.|
+|sábado|6 |Sábado.|
 
 
 

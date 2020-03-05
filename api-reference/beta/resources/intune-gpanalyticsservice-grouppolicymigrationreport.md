@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40e173e3d40a7253bf0947edfd1284094b9ada26
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 8f15de982acad969967b9c1bf4fdf634e8456172
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159490"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528146"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>tipo de recurso groupPolicyMigrationReport
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -42,7 +44,7 @@ O relatório de migração de política de grupo.
 |groupPolicyCreatedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi criado.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|A data e a hora em que o GroupPolicyMigrationReport foi modificado pela última vez.|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|A cobertura do Intune para o arquivo de objeto de diretiva de grupo associado. Os valores possíveis são: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Booliano|A propriedade de destino no AD do conteúdo XML do GPO|
+|targetedInActiveDirectory|Boolean|A propriedade de destino no AD do conteúdo XML do GPO|
 |totalSettingsCount|Int32|O número total de configurações de política de grupo do arquivo de GPO.|
 |supportedSettingsCount|Int32|O número de configurações de política de grupo compatíveis com o Intune.|
 |supportedSettingsPercent|Int32|A porcentagem de configurações de política de grupo compatíveis com o Intune.|

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a89a1b1ea890f26ef49d0cc5362af866c1f4c4ff
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: ccf5de7e4a9b877b1466f632ba2e1821aaed6161
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163784"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528428"
 ---
 # <a name="userexperienceanalyticsstartupscorehistory-resource-type"></a>tipo de recurso userExperienceAnalyticsStartupScoreHistory
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

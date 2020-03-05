@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4097125b35f0dc5149315157d3e332204e2b1f78
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ed1aba4f94e01dfac333969f2a934a502380c38e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36308215"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527656"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>tipo de recurso deviceAppManagementTask
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma tarefa de gerenciamento de aplicativo de dispositivo.
 
@@ -34,8 +36,8 @@ Uma tarefa de gerenciamento de aplicativo de dispositivo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|String|O nome.|
-|descrição|Cadeia de caracteres|A descrição.|
+|displayName|Cadeia de caracteres|O nome.|
+|description|Cadeia de caracteres|A descrição.|
 |createdDateTime|DateTimeOffset|A data de criação.|
 |dueDateTime|DateTimeOffset|A data de conclusão.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|

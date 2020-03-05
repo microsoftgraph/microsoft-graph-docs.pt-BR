@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d828b57e6ae76e3a0babcc2b27a009e60f7a6407
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 4b044565f0ec87570bbf9584b37217c0f4881839
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636014"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529645"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>tipo de recurso managedDeviceMobileAppConfigurationSettingState
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,16 +25,16 @@ Estado da configuração do aplicativo móvel do dispositivo gerenciado para um 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|Cadeia de caracteres|A configuração que é relatada|
-|settingName|Cadeia de caracteres|Nome de configuração localizada/de usuário que é relatada|
-|instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração que é relatada.|
+|configuração|String|A configuração que é relatada|
+|settingName|String|Nome de configuração localizada/de usuário que é relatada|
+|instanceDisplayName|String|Nome da instância de configuração que é relatada.|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
-|errorDescription|Cadeia de caracteres|Descrição de erro|
+|errorDescription|String|Descrição de erro|
 |userId|String|UserId|
-|userName|Cadeia de caracteres|UserName|
-|userEmail|Cadeia de caracteres|UserEmail|
-|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
+|userName|String|UserName|
+|userEmail|String|UserEmail|
+|userPrincipalName|String|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
 

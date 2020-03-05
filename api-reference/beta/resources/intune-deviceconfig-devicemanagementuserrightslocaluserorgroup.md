@@ -5,27 +5,29 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bf4ac6aa9de235b1e4117b47c6a5eafc5c011a5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a4e935781bf0524f5fb5df2a8a9ecd868767bfed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332747"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530114"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Representa informações de um usuário ou grupo local usado para a configuração de direitos do usuário.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|O nome desse usuário ou grupo local.|
-|descrição|String|Descrição do administrador desse usuário ou grupo local.|
-|securityIdentifier|String|O identificador de segurança desse usuário ou grupo local (por exemplo, * S-1-5-32-544).|
+|nome|String|O nome desse usuário ou grupo local.|
+|description|String|Descrição do administrador desse usuário ou grupo local.|
+|securityIdentifier|Cadeia de Caracteres|O identificador de segurança desse usuário ou grupo local (por exemplo, * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

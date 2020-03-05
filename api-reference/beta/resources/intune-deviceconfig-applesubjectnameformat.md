@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 09d2cc87f06a8ae28bdc35b1bfc3de01f8280aa7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cfbdaf6a8498641059f32cbd0509e5e68fedbbcc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333986"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527138"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>tipo de enumeração appleSubjectNameFormat
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Opções de formato de nome de entidade para dispositivos Apple.
 
@@ -24,11 +26,11 @@ Opções de formato de nome de entidade para dispositivos Apple.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |CommonName|,0|Nome comum.|
-|commonNameAsEmail|1|Nome comum como email.|
-|cliente|duas|Formato de nome de entidade personalizado.|
-|commonNameIncludingEmail|3D|Nome comum incluindo email.|
-|commonNameAsIMEI|0,5|Nome comum como IMEI.|
-|commonNameAsSerialNumber|6|Nome comum como número de série.|
+|commonNameAsEmail|1 |Nome comum como email.|
+|cliente|2 |Formato de nome de entidade personalizado.|
+|commonNameIncludingEmail|3 |Nome comum incluindo email.|
+|commonNameAsIMEI|5 |Nome comum como IMEI.|
+|commonNameAsSerialNumber|6 |Nome comum como número de série.|
 
 
 

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4eff14cb14bc9edd1a676eeeb543a599c2d032b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1269ae2c05a42286fc4f8a829d4e2a65219801b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369196"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527536"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Marca de escopo de função
 
@@ -35,9 +37,9 @@ Marca de escopo de função
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
-|descrição|String|Descrição da marca de escopo da função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
+|description|String|Descrição da marca de escopo da função.|
 |isBuiltIn|Booliano|Descrição da marca de escopo da função.|
 
 ## <a name="relationships"></a>Relações

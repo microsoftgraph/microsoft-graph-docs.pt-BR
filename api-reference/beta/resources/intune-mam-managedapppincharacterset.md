@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c1b073c77ad346be262c06ece531c8f1ae08b2c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1570907643fba8377fd703543a52f3867aa43cf3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332075"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527903"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>tipo de enumeração managedAppPinCharacterSet
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Conjunto de caracteres que deve ser usado para o PIN do aplicativo de um usuário
 
@@ -24,7 +26,7 @@ Conjunto de caracteres que deve ser usado para o PIN do aplicativo de um usuári
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |numéricos|,0|Caracteres numéricos|
-|alphanumericAndSymbol|1|Caracteres alfanuméricos e simbólicos|
+|alphanumericAndSymbol|1 |Caracteres alfanuméricos e simbólicos|
 
 
 

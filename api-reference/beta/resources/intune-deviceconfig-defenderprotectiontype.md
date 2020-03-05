@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ecc0571d3e4a2f5bed6ab5882dacc69e5c4cf96
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7e20a340fa07dd32e948cf8eb00df5622b1481b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955551"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526873"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>tipo de enumeração defenderProtectionType
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,8 +26,8 @@ Possíveis valores da proteção do defender PUA
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Valor padrão do dispositivo, sem intenção.|
-|possibilite|1|Funcionalidade de bloqueio.|
-|auditmode|duas|Permitir a funcionalidade, mas gerar logs.|
+|possibilite|1 |Funcionalidade de bloqueio.|
+|auditmode|2 |Permitir a funcionalidade, mas gerar logs.|
 
 
 

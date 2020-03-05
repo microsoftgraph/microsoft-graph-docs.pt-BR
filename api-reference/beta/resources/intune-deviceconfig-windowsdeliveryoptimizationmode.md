@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b2a66292ec6fb5db3fead93cbda7d24f5e505514
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 66ea4d13059cb9d3333c958481e711e5cd49b416
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371163"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529093"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Modo de otimização de entrega para distribuição de mesmo nível
 
@@ -24,10 +26,10 @@ Modo de otimização de entrega para distribuição de mesmo nível
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Permite que o usuário defina.|
-|httpOnly|1|Somente HTTP, sem emparelhamento|
-|httpWithPeeringNat|duas|Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede|
-|httpWithPeeringPrivateGroup|3D|HTTP combinado com emparelhamento em um grupo privado|
-|httpWithInternetPeering|quatro|HTTP combinado com emparelhamento da Internet|
+|httpOnly|1 |Somente HTTP, sem emparelhamento|
+|httpWithPeeringNat|2 |Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede|
+|httpWithPeeringPrivateGroup|3 |HTTP combinado com emparelhamento em um grupo privado|
+|httpWithInternetPeering|4 |HTTP combinado com emparelhamento da Internet|
 |simpleDownload|99|Modo de download simples sem emparelhamento|
 |bypassmode|100|Modo bypass. Não usar otimização de entrega e usar BITS em vez disso|
 

@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 19a3edd058b326f1627bb000eeca31267c834342
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3a902087fc41a1be9144b02f77c4b599ac9df76a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333818"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527045"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>tipo de enumeração bitLockerRecoveryInformationType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipos BitLockerRecoveryInformationType
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|passwordAndKey|1|Armazenar senhas de recuperação e pacotes de chaves.|
-|passwordOnly|duas|Armazenar somente senhas de recuperação.|
+|passwordAndKey|1 |Armazenar senhas de recuperação e pacotes de chaves.|
+|passwordOnly|2 |Armazenar somente senhas de recuperação.|
 
 
 

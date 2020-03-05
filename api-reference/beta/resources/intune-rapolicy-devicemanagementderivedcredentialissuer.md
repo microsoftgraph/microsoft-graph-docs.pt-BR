@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 51e6dd87a99f5711d48ff463b07cc2582a674312
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 6ca735199fa281c1c901a2201187f6410bec7609
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162460"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527578"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>tipo de enumeração deviceManagementDerivedCredentialIssuer
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,9 +26,9 @@ Valores com suporte para o emissor de credenciais derivado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |intercede|,0|Intercede|
-|entrustDatacard|1|Cartão de Entrust|
-|purebred|duas|Purebred|
-|xTec|3D|XTec|
+|entrustDatacard|1 |Cartão de Entrust|
+|purebred|2 |Purebred|
+|xTec|3 |XTec|
 
 
 
