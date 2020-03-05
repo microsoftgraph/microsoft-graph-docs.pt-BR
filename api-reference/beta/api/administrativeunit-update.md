@@ -5,62 +5,64 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b8a41fd335d003abeaafaad08850d638716e2f1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 30d8470c16e2d7556b65ea797b2298025cfc74d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408563"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441687"
 ---
-# <a name="update-administrativeunit"></a><span data-ttu-id="c7cc4-103">Atualizar administrativeunit</span><span class="sxs-lookup"><span data-stu-id="c7cc4-103">Update administrativeunit</span></span>
+# <a name="update-administrativeunit"></a><span data-ttu-id="f417e-103">Atualizar administrativeunit</span><span class="sxs-lookup"><span data-stu-id="f417e-103">Update administrativeunit</span></span>
+
+<span data-ttu-id="f417e-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f417e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c7cc4-104">Atualiza as propriedades de um objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="c7cc4-104">Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c7cc4-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c7cc4-105">Permissions</span></span>
-<span data-ttu-id="c7cc4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7cc4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f417e-105">Atualiza as propriedades de um objeto [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="f417e-105">Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f417e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f417e-106">Permissions</span></span>
+<span data-ttu-id="f417e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f417e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="c7cc4-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c7cc4-108">Permission type</span></span>      | <span data-ttu-id="c7cc4-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c7cc4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f417e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f417e-109">Permission type</span></span>      | <span data-ttu-id="f417e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f417e-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c7cc4-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c7cc4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c7cc4-111">AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="c7cc4-111">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c7cc4-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c7cc4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7cc4-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-113">Not supported.</span></span>    |
-|<span data-ttu-id="c7cc4-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c7cc4-114">Application</span></span> | <span data-ttu-id="c7cc4-115">AdministrativeUnit. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="c7cc4-115">AdministrativeUnit.ReadWrite.All</span></span> |
+|<span data-ttu-id="f417e-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f417e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f417e-112">AdministrativeUnit. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="f417e-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f417e-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f417e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f417e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f417e-114">Not supported.</span></span>    |
+|<span data-ttu-id="f417e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f417e-115">Application</span></span> | <span data-ttu-id="f417e-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f417e-116">AdministrativeUnit.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c7cc4-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c7cc4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f417e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f417e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /administrativeUnits/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c7cc4-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c7cc4-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f417e-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f417e-118">Request headers</span></span>
 
-| <span data-ttu-id="c7cc4-118">Nome</span><span class="sxs-lookup"><span data-stu-id="c7cc4-118">Name</span></span>      |<span data-ttu-id="c7cc4-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7cc4-119">Description</span></span>|
+| <span data-ttu-id="f417e-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f417e-119">Name</span></span>      |<span data-ttu-id="f417e-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f417e-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c7cc4-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="c7cc4-120">Authorization</span></span>  | <span data-ttu-id="c7cc4-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f417e-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f417e-121">Authorization</span></span>  | <span data-ttu-id="f417e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f417e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c7cc4-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c7cc4-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f417e-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f417e-124">Request body</span></span>
 
-<span data-ttu-id="c7cc4-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="f417e-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="f417e-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="c7cc4-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c7cc4-127">Property</span></span>   | <span data-ttu-id="c7cc4-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="c7cc4-128">Type</span></span> |<span data-ttu-id="c7cc4-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7cc4-129">Description</span></span>|
+| <span data-ttu-id="f417e-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f417e-128">Property</span></span>   | <span data-ttu-id="f417e-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="f417e-129">Type</span></span> |<span data-ttu-id="f417e-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="f417e-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c7cc4-130">description</span><span class="sxs-lookup"><span data-stu-id="c7cc4-130">description</span></span>|<span data-ttu-id="c7cc4-131">string</span><span class="sxs-lookup"><span data-stu-id="c7cc4-131">string</span></span>|<span data-ttu-id="c7cc4-132">Descrição da unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-132">Description for the administrative unit.</span></span>|
-|<span data-ttu-id="c7cc4-133">displayName</span><span class="sxs-lookup"><span data-stu-id="c7cc4-133">displayName</span></span>|<span data-ttu-id="c7cc4-134">string</span><span class="sxs-lookup"><span data-stu-id="c7cc4-134">string</span></span>|<span data-ttu-id="c7cc4-135">Nome de exibição para a unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-135">Display name for the administrative unit.</span></span>|
-|<span data-ttu-id="c7cc4-136">visibilidade</span><span class="sxs-lookup"><span data-stu-id="c7cc4-136">visibility</span></span>|<span data-ttu-id="c7cc4-137">string</span><span class="sxs-lookup"><span data-stu-id="c7cc4-137">string</span></span>|<span data-ttu-id="c7cc4-138">Visibilidade para a unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-138">Visibility for the administrative unit.</span></span> <span data-ttu-id="c7cc4-139">Se não for definido, o padrão será "Public".</span><span class="sxs-lookup"><span data-stu-id="c7cc4-139">If not set then the default is "public".</span></span> <span data-ttu-id="c7cc4-140">Pode ser definido como "HiddenMembership", que oculta a associação de não membros.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-140">Can be set to "HiddenMembership", which hides the membership from non-members.</span></span>|
+|<span data-ttu-id="f417e-131">description</span><span class="sxs-lookup"><span data-stu-id="f417e-131">description</span></span>|<span data-ttu-id="f417e-132">string</span><span class="sxs-lookup"><span data-stu-id="f417e-132">string</span></span>|<span data-ttu-id="f417e-133">Descrição da unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="f417e-133">Description for the administrative unit.</span></span>|
+|<span data-ttu-id="f417e-134">displayName</span><span class="sxs-lookup"><span data-stu-id="f417e-134">displayName</span></span>|<span data-ttu-id="f417e-135">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f417e-135">string</span></span>|<span data-ttu-id="f417e-136">Nome de exibição para a unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="f417e-136">Display name for the administrative unit.</span></span>|
+|<span data-ttu-id="f417e-137">visibilidade</span><span class="sxs-lookup"><span data-stu-id="f417e-137">visibility</span></span>|<span data-ttu-id="f417e-138">string</span><span class="sxs-lookup"><span data-stu-id="f417e-138">string</span></span>|<span data-ttu-id="f417e-139">Visibilidade para a unidade administrativa.</span><span class="sxs-lookup"><span data-stu-id="f417e-139">Visibility for the administrative unit.</span></span> <span data-ttu-id="f417e-140">Se não for definido, o padrão será "Public".</span><span class="sxs-lookup"><span data-stu-id="f417e-140">If not set then the default is "public".</span></span> <span data-ttu-id="f417e-141">Pode ser definido como "HiddenMembership", que oculta a associação de não membros.</span><span class="sxs-lookup"><span data-stu-id="f417e-141">Can be set to "HiddenMembership", which hides the membership from non-members.</span></span>|
 
-<span data-ttu-id="c7cc4-141">Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `PATCH` usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância existente do **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="c7cc4-141">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.</span></span>
+<span data-ttu-id="f417e-142">Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `PATCH` usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância existente do **administrativeUnit** .</span><span class="sxs-lookup"><span data-stu-id="f417e-142">Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **administrativeUnit** instance.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c7cc4-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7cc4-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f417e-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="f417e-143">Response</span></span>
 
-<span data-ttu-id="c7cc4-143">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="c7cc4-143">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="f417e-144">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f417e-144">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c7cc4-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c7cc4-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f417e-145">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f417e-145">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="c7cc4-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c7cc4-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f417e-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f417e-146">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c7cc4-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="c7cc4-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f417e-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="f417e-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_administrativeunit"
@@ -76,22 +78,22 @@ Content-length: 114
   "visibility": "visibility-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c7cc4-147">C#</span><span class="sxs-lookup"><span data-stu-id="c7cc4-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f417e-148">C#</span><span class="sxs-lookup"><span data-stu-id="f417e-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c7cc4-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c7cc4-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f417e-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f417e-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c7cc4-149">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="c7cc4-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f417e-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f417e-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-administrativeunit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="c7cc4-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7cc4-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f417e-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="f417e-151">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -102,10 +104,10 @@ Content-length: 114
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c7cc4-151">Confira também</span><span class="sxs-lookup"><span data-stu-id="c7cc4-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f417e-152">Confira também</span><span class="sxs-lookup"><span data-stu-id="f417e-152">See also</span></span>
 
-- [<span data-ttu-id="c7cc4-152">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="c7cc4-152">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="c7cc4-153">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="c7cc4-153">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="f417e-153">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="f417e-153">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="f417e-154">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="f417e-154">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

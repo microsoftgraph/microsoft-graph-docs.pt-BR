@@ -5,32 +5,34 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca603ac58cd5136d8ef4f5da77727380cd27c609
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 2baa42a7bc985aec6deae580cfd5a4db59e0818d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718979"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441365"
 ---
-# <a name="list-applicationtemplates"></a><span data-ttu-id="a6e2f-103">Listar applicationTemplates</span><span class="sxs-lookup"><span data-stu-id="a6e2f-103">List applicationTemplates</span></span>
+# <a name="list-applicationtemplates"></a><span data-ttu-id="7d9b4-103">Listar applicationTemplates</span><span class="sxs-lookup"><span data-stu-id="7d9b4-103">List applicationTemplates</span></span>
+
+<span data-ttu-id="7d9b4-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="7d9b4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a6e2f-104">Recupere uma lista de [](../resources/applicationtemplate.md) objetos applicationtemplate da Galeria de aplicativos do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-104">Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Azure AD application gallery.</span></span>
+<span data-ttu-id="7d9b4-105">Recupere uma lista de objetos [applicationtemplate](../resources/applicationtemplate.md) da Galeria de aplicativos do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-105">Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Azure AD application gallery.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a6e2f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a6e2f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7d9b4-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7d9b4-106">Permissions</span></span>
 
-<span data-ttu-id="a6e2f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a6e2f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7d9b4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7d9b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a6e2f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a6e2f-108">Permission type</span></span>                        | <span data-ttu-id="a6e2f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a6e2f-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7d9b4-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7d9b4-109">Permission type</span></span>                        | <span data-ttu-id="7d9b4-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7d9b4-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a6e2f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a6e2f-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a6e2f-111">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-111">None.</span></span> |
-| <span data-ttu-id="a6e2f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a6e2f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6e2f-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-113">Not supported.</span></span> |
-| <span data-ttu-id="a6e2f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a6e2f-114">Application</span></span>                            | <span data-ttu-id="a6e2f-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-115">None.</span></span> |
+| <span data-ttu-id="7d9b4-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7d9b4-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7d9b4-112">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-112">None.</span></span> |
+| <span data-ttu-id="7d9b4-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7d9b4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7d9b4-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-114">Not supported.</span></span> |
+| <span data-ttu-id="7d9b4-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7d9b4-115">Application</span></span>                            | <span data-ttu-id="7d9b4-116">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-116">None.</span></span> |
 
-<span data-ttu-id="a6e2f-116">Permissões adicionais não são necessárias para chamar esta API, contanto que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-116">Additional permissions are not required to call this API, as long as your application has a valid access token to call Microsoft Graph.</span></span>
+<span data-ttu-id="7d9b4-117">Permissões adicionais não são necessárias para chamar esta API, contanto que seu aplicativo tenha um token de acesso válido para chamar o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-117">Additional permissions are not required to call this API, as long as your application has a valid access token to call Microsoft Graph.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="a6e2f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a6e2f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d9b4-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7d9b4-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,36 +40,36 @@ ms.locfileid: "36718979"
 GET /applicationTemplates
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a6e2f-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a6e2f-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7d9b4-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7d9b4-119">Optional query parameters</span></span>
 
-<span data-ttu-id="a6e2f-119">Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-119">This method supports some of the OData query parameters to help customize the response.</span></span> 
+<span data-ttu-id="7d9b4-120">Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-120">This method supports some of the OData query parameters to help customize the response.</span></span> 
 
-- <span data-ttu-id="a6e2f-120">Você pode usar o `$filter` parâmetro de forma limitada.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-120">You can use the `$filter` parameter in a limited way.</span></span> <span data-ttu-id="a6e2f-121">Você só pode filtrar por **DisplayName** ou **categorias**.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-121">You can only filter by **displayName** or **categories**.</span></span> <span data-ttu-id="a6e2f-122">Por exemplo,  `$filter=contains(displayName, 'salesf')` ou `$filter=categories/any(c:contains(c, 'myCategory'))`.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-122">For example,  `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.</span></span>
-- <span data-ttu-id="a6e2f-123">Você pode usar `$orderby` `$top,` e `$skip` consultar parâmetros em qualquer solicitação get.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-123">You can use `$orderby`, `$top,` and `$skip` query parameters in any GET request.</span></span>
+- <span data-ttu-id="7d9b4-121">Você pode usar o `$filter` parâmetro de forma limitada.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-121">You can use the `$filter` parameter in a limited way.</span></span> <span data-ttu-id="7d9b4-122">Você só pode filtrar por **DisplayName** ou **categorias**.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-122">You can only filter by **displayName** or **categories**.</span></span> <span data-ttu-id="7d9b4-123">Por exemplo,  `$filter=contains(displayName, 'salesf')` ou `$filter=categories/any(c:contains(c, 'myCategory'))`.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-123">For example,  `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.</span></span>
+- <span data-ttu-id="7d9b4-124">Você pode usar `$orderby` `$top,` e `$skip` consultar parâmetros em qualquer solicitação get.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-124">You can use `$orderby`, `$top,` and `$skip` query parameters in any GET request.</span></span>
 
-<span data-ttu-id="a6e2f-124">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="a6e2f-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="7d9b4-125">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="7d9b4-125">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a6e2f-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a6e2f-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7d9b4-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7d9b4-126">Request headers</span></span>
 
-| <span data-ttu-id="a6e2f-126">Nome</span><span class="sxs-lookup"><span data-stu-id="a6e2f-126">Name</span></span>      |<span data-ttu-id="a6e2f-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="a6e2f-127">Description</span></span>|
+| <span data-ttu-id="7d9b4-127">Nome</span><span class="sxs-lookup"><span data-stu-id="7d9b4-127">Name</span></span>      |<span data-ttu-id="7d9b4-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="7d9b4-128">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a6e2f-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="a6e2f-128">Authorization</span></span> | <span data-ttu-id="a6e2f-129">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="a6e2f-129">Bearer {code}</span></span> |
+| <span data-ttu-id="7d9b4-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="7d9b4-129">Authorization</span></span> | <span data-ttu-id="7d9b4-130">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="7d9b4-130">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a6e2f-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a6e2f-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7d9b4-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7d9b4-131">Request body</span></span>
 
-<span data-ttu-id="a6e2f-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="7d9b4-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a6e2f-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6e2f-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7d9b4-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d9b4-133">Response</span></span>
 
-<span data-ttu-id="a6e2f-133">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [applicationtemplate](../resources/applicationtemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-133">If successful, this method returns a `200 OK` response code and a collection of [applicationTemplate](../resources/applicationtemplate.md) objects in the response body.</span></span>
+<span data-ttu-id="7d9b4-134">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [applicationtemplate](../resources/applicationtemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-134">If successful, this method returns a `200 OK` response code and a collection of [applicationTemplate](../resources/applicationtemplate.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a6e2f-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a6e2f-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7d9b4-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7d9b4-135">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a6e2f-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a6e2f-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7d9b4-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7d9b4-136">Request</span></span>
 
-<span data-ttu-id="a6e2f-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-136">The following is an example of the request.</span></span>
+<span data-ttu-id="7d9b4-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-137">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a6e2f-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="a6e2f-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7d9b4-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="7d9b4-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -76,27 +78,27 @@ GET /applicationTemplates
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a6e2f-138">C#</span><span class="sxs-lookup"><span data-stu-id="a6e2f-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7d9b4-139">C#</span><span class="sxs-lookup"><span data-stu-id="7d9b4-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a6e2f-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a6e2f-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7d9b4-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7d9b4-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a6e2f-140">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a6e2f-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7d9b4-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7d9b4-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a6e2f-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6e2f-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7d9b4-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d9b4-142">Response</span></span>
 
-<span data-ttu-id="a6e2f-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-142">The following is an example of the response.</span></span>
+<span data-ttu-id="7d9b4-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-143">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a6e2f-143">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-143">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a6e2f-144">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a6e2f-144">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7d9b4-144">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-144">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7d9b4-145">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7d9b4-145">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

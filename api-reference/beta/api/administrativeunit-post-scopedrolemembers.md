@@ -5,51 +5,53 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4089617fb3babf51c7e30d24005d16f745df9a2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6fe72ec5158eb055b6f4309089aa8dc0327571a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408643"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441701"
 ---
-# <a name="add-a-scopedrolemember"></a><span data-ttu-id="392fb-104">Adicionar um scopedRoleMember</span><span class="sxs-lookup"><span data-stu-id="392fb-104">Add a scopedRoleMember</span></span>
+# <a name="add-a-scopedrolemember"></a><span data-ttu-id="21454-104">Adicionar um scopedRoleMember</span><span class="sxs-lookup"><span data-stu-id="21454-104">Add a scopedRoleMember</span></span>
+
+<span data-ttu-id="21454-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="21454-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="392fb-105">Adicione um novo [scopedRoleMembership](../resources/scopedrolemembership.md).</span><span class="sxs-lookup"><span data-stu-id="392fb-105">Add a new [scopedRoleMembership](../resources/scopedrolemembership.md).</span></span> <span data-ttu-id="392fb-106">Observação: somente as funções de administrador de *conta de usuário* e *administrador de helpdesk* têm suporte para associações com escopo de função.</span><span class="sxs-lookup"><span data-stu-id="392fb-106">NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships.</span></span>
+<span data-ttu-id="21454-106">Adicione um novo [scopedRoleMembership](../resources/scopedrolemembership.md).</span><span class="sxs-lookup"><span data-stu-id="21454-106">Add a new [scopedRoleMembership](../resources/scopedrolemembership.md).</span></span> <span data-ttu-id="21454-107">Observação: somente as funções de administrador de *conta de usuário* e *administrador de helpdesk* têm suporte para associações com escopo de função.</span><span class="sxs-lookup"><span data-stu-id="21454-107">NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="392fb-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="392fb-107">Permissions</span></span>
-<span data-ttu-id="392fb-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="392fb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="21454-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="21454-108">Permissions</span></span>
+<span data-ttu-id="21454-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="21454-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="392fb-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="392fb-110">Permission type</span></span>      | <span data-ttu-id="392fb-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="392fb-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="21454-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="21454-111">Permission type</span></span>      | <span data-ttu-id="21454-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="21454-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="392fb-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="392fb-112">Delegated (work or school account)</span></span> | <span data-ttu-id="392fb-113">RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="392fb-113">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="392fb-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="392fb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="392fb-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="392fb-115">Not supported.</span></span>    |
-|<span data-ttu-id="392fb-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="392fb-116">Application</span></span> | <span data-ttu-id="392fb-117">RoleManagement. ReadWrite. Directory</span><span class="sxs-lookup"><span data-stu-id="392fb-117">RoleManagement.ReadWrite.Directory</span></span> |
+|<span data-ttu-id="21454-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="21454-113">Delegated (work or school account)</span></span> | <span data-ttu-id="21454-114">RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="21454-114">RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="21454-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="21454-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="21454-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="21454-116">Not supported.</span></span>    |
+|<span data-ttu-id="21454-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="21454-117">Application</span></span> | <span data-ttu-id="21454-118">RoleManagement.ReadWrite.Directory</span><span class="sxs-lookup"><span data-stu-id="21454-118">RoleManagement.ReadWrite.Directory</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="392fb-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="392fb-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="21454-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="21454-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/scopedRoleMembers
 ```
-## <a name="request-headers"></a><span data-ttu-id="392fb-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="392fb-119">Request headers</span></span>
-| <span data-ttu-id="392fb-120">Nome</span><span class="sxs-lookup"><span data-stu-id="392fb-120">Name</span></span>      |<span data-ttu-id="392fb-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="392fb-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="21454-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="21454-120">Request headers</span></span>
+| <span data-ttu-id="21454-121">Nome</span><span class="sxs-lookup"><span data-stu-id="21454-121">Name</span></span>      |<span data-ttu-id="21454-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="21454-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="392fb-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="392fb-122">Authorization</span></span>  | <span data-ttu-id="392fb-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="392fb-p104">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="21454-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="21454-123">Authorization</span></span>  | <span data-ttu-id="21454-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="21454-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="392fb-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="392fb-125">Request body</span></span>
-<span data-ttu-id="392fb-126">No corpo da solicitação, forneça uma representação JSON do objeto [scopedRoleMembership](../resources/scopedrolemembership.md) .</span><span class="sxs-lookup"><span data-stu-id="392fb-126">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="21454-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="21454-126">Request body</span></span>
+<span data-ttu-id="21454-127">No corpo da solicitação, forneça uma representação JSON do objeto [scopedRoleMembership](../resources/scopedrolemembership.md) .</span><span class="sxs-lookup"><span data-stu-id="21454-127">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="392fb-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="392fb-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="21454-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="21454-128">Response</span></span>
 
-<span data-ttu-id="392fb-128">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="392fb-128">If successful, this method returns `201 Created` response code and [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
+<span data-ttu-id="21454-129">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="21454-129">If successful, this method returns `201 Created` response code and [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="392fb-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="392fb-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="392fb-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="392fb-130">Request</span></span>
-<span data-ttu-id="392fb-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="392fb-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="21454-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="21454-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="21454-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="21454-131">Request</span></span>
+<span data-ttu-id="21454-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="21454-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="392fb-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="392fb-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="21454-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="21454-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_scopedrolemembership_from_administrativeunit"
@@ -66,23 +68,23 @@ Content-length: 272
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="392fb-133">C#</span><span class="sxs-lookup"><span data-stu-id="392fb-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="21454-134">C#</span><span class="sxs-lookup"><span data-stu-id="21454-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-scopedrolemembership-from-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="392fb-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="392fb-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="21454-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="21454-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-scopedrolemembership-from-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="392fb-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="392fb-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="21454-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="21454-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-scopedrolemembership-from-administrativeunit-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="392fb-136">No corpo da solicitação, forneça uma representação JSON do objeto [scopedRoleMembership](../resources/scopedrolemembership.md) .</span><span class="sxs-lookup"><span data-stu-id="392fb-136">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="392fb-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="392fb-137">Response</span></span>
-<span data-ttu-id="392fb-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="392fb-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="21454-137">No corpo da solicitação, forneça uma representação JSON do objeto [scopedRoleMembership](../resources/scopedrolemembership.md) .</span><span class="sxs-lookup"><span data-stu-id="21454-137">In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="21454-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="21454-138">Response</span></span>
+<span data-ttu-id="21454-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="21454-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

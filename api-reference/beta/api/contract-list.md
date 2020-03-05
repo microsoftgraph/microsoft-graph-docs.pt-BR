@@ -5,62 +5,64 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cfbe5ddf1123f350b06715ba618029330839534b
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 92ddc4ed4974f76cfa9dbfadea28b582b617fb66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719721"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42436745"
 ---
-# <a name="list-contracts"></a><span data-ttu-id="ab836-103">Listar contratos</span><span class="sxs-lookup"><span data-stu-id="ab836-103">List contracts</span></span>
+# <a name="list-contracts"></a><span data-ttu-id="e52cd-103">Listar contratos</span><span class="sxs-lookup"><span data-stu-id="e52cd-103">List contracts</span></span>
+
+<span data-ttu-id="e52cd-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e52cd-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ab836-104">Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.</span><span class="sxs-lookup"><span data-stu-id="ab836-104">Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.</span></span>
+<span data-ttu-id="e52cd-105">Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.</span><span class="sxs-lookup"><span data-stu-id="e52cd-105">Retrieve a list of [contract](../resources/contract.md) objects associated to a partner tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ab836-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ab836-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e52cd-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e52cd-106">Permissions</span></span>
 
-<span data-ttu-id="ab836-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ab836-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e52cd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e52cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="ab836-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ab836-108">Permission type</span></span>      | <span data-ttu-id="ab836-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ab836-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e52cd-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e52cd-109">Permission type</span></span>      | <span data-ttu-id="e52cd-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e52cd-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ab836-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ab836-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ab836-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ab836-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ab836-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ab836-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab836-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ab836-113">Not supported.</span></span>    |
-|<span data-ttu-id="ab836-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ab836-114">Application</span></span> | <span data-ttu-id="ab836-115">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ab836-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="e52cd-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e52cd-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e52cd-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e52cd-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="e52cd-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e52cd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e52cd-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e52cd-114">Not supported.</span></span>    |
+|<span data-ttu-id="e52cd-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e52cd-115">Application</span></span> | <span data-ttu-id="e52cd-116">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e52cd-116">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ab836-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ab836-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e52cd-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e52cd-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /contracts
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ab836-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ab836-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e52cd-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e52cd-118">Optional query parameters</span></span>
 
-<span data-ttu-id="ab836-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ab836-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> 
+<span data-ttu-id="e52cd-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e52cd-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> 
 
-> <span data-ttu-id="ab836-119">Há suporte para filtragem para customerId, DefaultDomainName e displayName.</span><span class="sxs-lookup"><span data-stu-id="ab836-119">Filtering is supported for customerId, defaultDomainName, and displayName.</span></span>
+> <span data-ttu-id="e52cd-120">Há suporte para filtragem para customerId, DefaultDomainName e displayName.</span><span class="sxs-lookup"><span data-stu-id="e52cd-120">Filtering is supported for customerId, defaultDomainName, and displayName.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ab836-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ab836-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e52cd-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e52cd-121">Request headers</span></span>
 
-| <span data-ttu-id="ab836-121">Nome</span><span class="sxs-lookup"><span data-stu-id="ab836-121">Name</span></span>      |<span data-ttu-id="ab836-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="ab836-122">Description</span></span>|
+| <span data-ttu-id="e52cd-122">Nome</span><span class="sxs-lookup"><span data-stu-id="e52cd-122">Name</span></span>      |<span data-ttu-id="e52cd-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="e52cd-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ab836-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ab836-123">Authorization</span></span>  | <span data-ttu-id="ab836-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ab836-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e52cd-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="e52cd-124">Authorization</span></span>  | <span data-ttu-id="e52cd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e52cd-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ab836-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ab836-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e52cd-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e52cd-127">Request body</span></span>
 
-<span data-ttu-id="ab836-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ab836-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e52cd-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e52cd-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ab836-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="ab836-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e52cd-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="e52cd-129">Response</span></span>
 
-<span data-ttu-id="ab836-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ab836-129">If successful, this method returns a `200 OK` response code and a collection of [Contract](../resources/contract.md) objects in the response body.</span></span>
+<span data-ttu-id="e52cd-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e52cd-130">If successful, this method returns a `200 OK` response code and a collection of [Contract](../resources/contract.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ab836-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ab836-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ab836-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ab836-131">Request</span></span>
+## <a name="example"></a><span data-ttu-id="e52cd-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e52cd-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e52cd-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e52cd-132">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ab836-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="ab836-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e52cd-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="e52cd-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_contract"
@@ -68,24 +70,24 @@ GET /contracts
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/contracts
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ab836-133">C#</span><span class="sxs-lookup"><span data-stu-id="ab836-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e52cd-134">C#</span><span class="sxs-lookup"><span data-stu-id="e52cd-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-contract-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ab836-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ab836-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e52cd-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e52cd-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-contract-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ab836-135">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ab836-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e52cd-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e52cd-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contract-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ab836-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ab836-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e52cd-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="e52cd-137">Response</span></span>
 
-<span data-ttu-id="ab836-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ab836-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="e52cd-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e52cd-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

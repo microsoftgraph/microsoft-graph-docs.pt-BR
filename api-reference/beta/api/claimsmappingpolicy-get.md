@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 80a9fd1a9f32fa7c0a5bfcf2a48bb1fc267c39b2
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: a8228373b55eb2c47a64d11b2bf56eeef3004615
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234079"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42438243"
 ---
-# <a name="get-claimsmappingpolicy"></a><span data-ttu-id="028cc-103">Obter claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="028cc-103">Get claimsMappingPolicy</span></span>
+# <a name="get-claimsmappingpolicy"></a><span data-ttu-id="b7e7d-103">Obter claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="b7e7d-103">Get claimsMappingPolicy</span></span>
+
+<span data-ttu-id="b7e7d-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b7e7d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="028cc-104">Recupere as propriedades e os relacionamentos de um objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="028cc-104">Retrieve the properties and relationships of a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.</span></span>
+<span data-ttu-id="b7e7d-105">Recupere as propriedades e os relacionamentos de um objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="b7e7d-105">Retrieve the properties and relationships of a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="028cc-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="028cc-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7e7d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b7e7d-106">Permissions</span></span>
 
-<span data-ttu-id="028cc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="028cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b7e7d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7e7d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="028cc-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="028cc-108">Permission type</span></span>                        | <span data-ttu-id="028cc-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="028cc-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b7e7d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7e7d-109">Permission type</span></span>                        | <span data-ttu-id="b7e7d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b7e7d-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="028cc-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="028cc-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="028cc-111">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="028cc-111">Policy.Read.All</span></span> |
-| <span data-ttu-id="028cc-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="028cc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="028cc-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="028cc-113">Not supported.</span></span> |
-| <span data-ttu-id="028cc-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="028cc-114">Application</span></span>                            | <span data-ttu-id="028cc-115">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="028cc-115">Policy.Read.All</span></span> |
+| <span data-ttu-id="b7e7d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7e7d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b7e7d-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="b7e7d-112">Policy.Read.All</span></span> |
+| <span data-ttu-id="b7e7d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b7e7d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7e7d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-114">Not supported.</span></span> |
+| <span data-ttu-id="b7e7d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7e7d-115">Application</span></span>                            | <span data-ttu-id="b7e7d-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="b7e7d-116">Policy.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="028cc-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="028cc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7e7d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7e7d-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,43 +38,59 @@ ms.locfileid: "41234079"
 GET /policies/claimsMappingPolicies/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="028cc-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="028cc-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b7e7d-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b7e7d-118">Optional query parameters</span></span>
 
-<span data-ttu-id="028cc-118">Este método oferece suporte `$expand` aos `$select` parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="028cc-118">This method supports the `$expand` and `$select` OData query parameters to help customize the response.</span></span> <span data-ttu-id="028cc-119">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="028cc-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="028cc-120">Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.</span><span class="sxs-lookup"><span data-stu-id="028cc-120">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
+<span data-ttu-id="b7e7d-119">Este método oferece suporte `$expand` aos `$select` parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-119">This method supports the `$expand` and `$select` OData query parameters to help customize the response.</span></span> <span data-ttu-id="b7e7d-120">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b7e7d-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span> <span data-ttu-id="b7e7d-121">Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-121">When using `$expand` make sure your app requests permissions to read the expanded objects.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="028cc-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="028cc-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b7e7d-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7e7d-122">Request headers</span></span>
 
-| <span data-ttu-id="028cc-122">Nome</span><span class="sxs-lookup"><span data-stu-id="028cc-122">Name</span></span>      |<span data-ttu-id="028cc-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="028cc-123">Description</span></span>|
+| <span data-ttu-id="b7e7d-123">Nome</span><span class="sxs-lookup"><span data-stu-id="b7e7d-123">Name</span></span>      |<span data-ttu-id="b7e7d-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7e7d-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="028cc-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="028cc-124">Authorization</span></span> | <span data-ttu-id="028cc-125">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="028cc-125">Bearer {token}</span></span> |
+| <span data-ttu-id="b7e7d-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7e7d-125">Authorization</span></span> | <span data-ttu-id="b7e7d-126">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="b7e7d-126">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="028cc-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="028cc-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7e7d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7e7d-127">Request body</span></span>
 
-<span data-ttu-id="028cc-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="028cc-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b7e7d-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="028cc-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="028cc-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b7e7d-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7e7d-129">Response</span></span>
 
-<span data-ttu-id="028cc-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="028cc-129">If successful, this method returns a `200 OK` response code and the requested [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="b7e7d-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-130">If successful, this method returns a `200 OK` response code and the requested [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="028cc-130">Exemplos</span><span class="sxs-lookup"><span data-stu-id="028cc-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b7e7d-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b7e7d-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="028cc-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="028cc-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b7e7d-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7e7d-132">Request</span></span>
 
-<span data-ttu-id="028cc-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="028cc-132">The following is an example of the request.</span></span>
+<span data-ttu-id="b7e7d-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-133">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="b7e7d-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7e7d-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_claimsmappingpolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}
 ```
+# <a name="c"></a>[<span data-ttu-id="b7e7d-135">C#</span><span class="sxs-lookup"><span data-stu-id="b7e7d-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-claimsmappingpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="028cc-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="028cc-133">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="b7e7d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7e7d-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-claimsmappingpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="028cc-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="028cc-134">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="b7e7d-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b7e7d-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-claimsmappingpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="028cc-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="028cc-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+### <a name="response"></a><span data-ttu-id="b7e7d-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7e7d-138">Response</span></span>
+
+<span data-ttu-id="b7e7d-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-139">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="b7e7d-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b7e7d-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

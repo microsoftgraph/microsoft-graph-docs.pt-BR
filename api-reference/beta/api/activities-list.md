@@ -7,34 +7,36 @@ description: Lista as atividades recentes que foram realizadas em um item ou em 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 78d08603ff367635b21d2518d3fa8b68b0210aba
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1b2d07c81a1d58aedc67cea1f567b9ec9c0378d0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719231"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441814"
 ---
-# <a name="enumerate-activities-preview"></a><span data-ttu-id="ea0bb-103">Enumerar atividades (prévia)</span><span class="sxs-lookup"><span data-stu-id="ea0bb-103">Enumerate activities (preview)</span></span>
+# <a name="enumerate-activities-preview"></a><span data-ttu-id="3b3d4-103">Enumerar atividades (prévia)</span><span class="sxs-lookup"><span data-stu-id="3b3d4-103">Enumerate activities (preview)</span></span>
+
+<span data-ttu-id="3b3d4-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3b3d4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea0bb-104">Lista as [atividades](../resources/itemactivity.md) recentes que foram realizadas em um item ou em uma hierarquia.</span><span class="sxs-lookup"><span data-stu-id="ea0bb-104">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
+<span data-ttu-id="3b3d4-105">Lista as [atividades](../resources/itemactivity.md) recentes que foram realizadas em um item ou em uma hierarquia.</span><span class="sxs-lookup"><span data-stu-id="3b3d4-105">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
 
-<span data-ttu-id="ea0bb-105">**Observação:** as atividades são uma Visualização limitada e ainda não disponível para todos os locatários.</span><span class="sxs-lookup"><span data-stu-id="ea0bb-105">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
+<span data-ttu-id="3b3d4-106">**Observação:** as atividades são uma Visualização limitada e ainda não disponível para todos os locatários.</span><span class="sxs-lookup"><span data-stu-id="3b3d4-106">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
 
 [activities]: ../resources/itemactivity.md
 
-## <a name="permissions"></a><span data-ttu-id="ea0bb-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ea0bb-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3b3d4-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="3b3d4-107">Permissions</span></span>
 
-<span data-ttu-id="ea0bb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea0bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3b3d4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b3d4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ea0bb-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea0bb-109">Permission type</span></span>                        | <span data-ttu-id="ea0bb-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ea0bb-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="3b3d4-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3b3d4-110">Permission type</span></span>                        | <span data-ttu-id="3b3d4-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3b3d4-111">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="ea0bb-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea0bb-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ea0bb-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea0bb-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="ea0bb-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea0bb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea0bb-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea0bb-114">Not supported.</span></span>
-|<span data-ttu-id="ea0bb-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ea0bb-115">Application</span></span>                            | <span data-ttu-id="ea0bb-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea0bb-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="3b3d4-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3b3d4-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="3b3d4-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b3d4-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="3b3d4-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b3d4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b3d4-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b3d4-115">Not supported.</span></span>
+|<span data-ttu-id="3b3d4-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3b3d4-116">Application</span></span>                            | <span data-ttu-id="3b3d4-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b3d4-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ea0bb-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea0bb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3b3d4-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3b3d4-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,33 +47,33 @@ GET /sites/{site-id}/lists/{list-id}/activities
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 ```
 
-## <a name="example"></a><span data-ttu-id="ea0bb-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ea0bb-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3b3d4-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3b3d4-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="ea0bb-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ea0bb-119">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3b3d4-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3b3d4-120">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ea0bb-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea0bb-120">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3b3d4-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b3d4-121">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ea0bb-121">C#</span><span class="sxs-lookup"><span data-stu-id="ea0bb-121">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3b3d4-122">C#</span><span class="sxs-lookup"><span data-stu-id="3b3d4-122">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ea0bb-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea0bb-122">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3b3d4-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b3d4-123">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ea0bb-123">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ea0bb-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3b3d4-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3b3d4-124">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ea0bb-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea0bb-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3b3d4-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b3d4-125">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 

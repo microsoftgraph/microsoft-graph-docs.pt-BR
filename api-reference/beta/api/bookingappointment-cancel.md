@@ -5,57 +5,59 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f4ea71b02e798b47c3f133078a352402f9f52267
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 91c9da27446d7588c806f3262b5060780071a78d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415684"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441316"
 ---
-# <a name="bookingappointment-cancel"></a><span data-ttu-id="a5d17-103">bookingAppointment: cancelar</span><span class="sxs-lookup"><span data-stu-id="a5d17-103">bookingAppointment: cancel</span></span>
+# <a name="bookingappointment-cancel"></a><span data-ttu-id="aef19-103">bookingAppointment: cancelar</span><span class="sxs-lookup"><span data-stu-id="aef19-103">bookingAppointment: cancel</span></span>
+
+<span data-ttu-id="aef19-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="aef19-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5d17-104">Cancelar o [bookingAppointment](../resources/bookingappointment.md) especificado no [bookingbusiness](../resources/bookingbusiness.md)especificado e enviar uma mensagem para o cliente envolvido e os membros da equipe.</span><span class="sxs-lookup"><span data-stu-id="a5d17-104">Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.</span></span>
+<span data-ttu-id="aef19-105">Cancelar o [bookingAppointment](../resources/bookingappointment.md) especificado no [bookingbusiness](../resources/bookingbusiness.md)especificado e enviar uma mensagem para o cliente envolvido e os membros da equipe.</span><span class="sxs-lookup"><span data-stu-id="aef19-105">Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5d17-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a5d17-105">Permissions</span></span>
-<span data-ttu-id="a5d17-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5d17-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="aef19-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="aef19-106">Permissions</span></span>
+<span data-ttu-id="aef19-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aef19-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a5d17-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a5d17-108">Permission type</span></span>      | <span data-ttu-id="a5d17-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a5d17-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aef19-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aef19-109">Permission type</span></span>      | <span data-ttu-id="aef19-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="aef19-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a5d17-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a5d17-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="a5d17-111">BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="a5d17-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="a5d17-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a5d17-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5d17-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a5d17-113">Not supported.</span></span>   |
-|<span data-ttu-id="a5d17-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a5d17-114">Application</span></span> | <span data-ttu-id="a5d17-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a5d17-115">Not supported.</span></span>  |
+|<span data-ttu-id="aef19-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aef19-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="aef19-112">BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="aef19-112">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="aef19-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aef19-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aef19-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aef19-114">Not supported.</span></span>   |
+|<span data-ttu-id="aef19-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="aef19-115">Application</span></span> | <span data-ttu-id="aef19-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aef19-116">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="a5d17-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a5d17-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aef19-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aef19-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="a5d17-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a5d17-117">Request headers</span></span>
-| <span data-ttu-id="a5d17-118">Nome</span><span class="sxs-lookup"><span data-stu-id="a5d17-118">Name</span></span>       | <span data-ttu-id="a5d17-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="a5d17-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="aef19-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="aef19-118">Request headers</span></span>
+| <span data-ttu-id="aef19-119">Nome</span><span class="sxs-lookup"><span data-stu-id="aef19-119">Name</span></span>       | <span data-ttu-id="aef19-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="aef19-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a5d17-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5d17-120">Authorization</span></span>  | <span data-ttu-id="a5d17-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="a5d17-121">Bearer {code}</span></span>|
+| <span data-ttu-id="aef19-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="aef19-121">Authorization</span></span>  | <span data-ttu-id="aef19-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="aef19-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a5d17-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a5d17-122">Request body</span></span>
-<span data-ttu-id="a5d17-123">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a5d17-123">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aef19-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="aef19-123">Request body</span></span>
+<span data-ttu-id="aef19-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="aef19-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a5d17-124">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a5d17-124">Parameter</span></span>    | <span data-ttu-id="a5d17-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="a5d17-125">Type</span></span>   |<span data-ttu-id="a5d17-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="a5d17-126">Description</span></span>|
+| <span data-ttu-id="aef19-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="aef19-125">Parameter</span></span>    | <span data-ttu-id="aef19-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="aef19-126">Type</span></span>   |<span data-ttu-id="aef19-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="aef19-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a5d17-127">cancellationMessage</span><span class="sxs-lookup"><span data-stu-id="a5d17-127">cancellationMessage</span></span>|<span data-ttu-id="a5d17-128">String</span><span class="sxs-lookup"><span data-stu-id="a5d17-128">String</span></span>|<span data-ttu-id="a5d17-129">Uma mensagem a ser reconhecida pelo cliente de que o compromisso foi cancelado.</span><span class="sxs-lookup"><span data-stu-id="a5d17-129">A message to acknowledge with the customer that the appointment has been cancelled.</span></span>|
+|<span data-ttu-id="aef19-128">cancellationMessage</span><span class="sxs-lookup"><span data-stu-id="aef19-128">cancellationMessage</span></span>|<span data-ttu-id="aef19-129">String</span><span class="sxs-lookup"><span data-stu-id="aef19-129">String</span></span>|<span data-ttu-id="aef19-130">Uma mensagem a ser reconhecida pelo cliente de que o compromisso foi cancelado.</span><span class="sxs-lookup"><span data-stu-id="aef19-130">A message to acknowledge with the customer that the appointment has been cancelled.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a5d17-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="a5d17-130">Response</span></span>
-<span data-ttu-id="a5d17-p102">Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a5d17-p102">If successful, this method returns `204 No content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="aef19-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="aef19-131">Response</span></span>
+<span data-ttu-id="aef19-p102">Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="aef19-p102">If successful, this method returns `204 No content` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="a5d17-133">Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="a5d17-133">If you attempt to cancel an appointment that does not exisit, this method returns `HTTP 404 Not found`.</span></span>
+<span data-ttu-id="aef19-134">Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="aef19-134">If you attempt to cancel an appointment that does not exisit, this method returns `HTTP 404 Not found`.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a5d17-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a5d17-134">Example</span></span>
-<span data-ttu-id="a5d17-135">Veja a seguir um exemplo de como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="a5d17-135">The following is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a5d17-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a5d17-136">Request</span></span>
-<span data-ttu-id="a5d17-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a5d17-137">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="aef19-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aef19-135">Example</span></span>
+<span data-ttu-id="aef19-136">Veja a seguir um exemplo de como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="aef19-136">The following is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="aef19-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="aef19-137">Request</span></span>
+<span data-ttu-id="aef19-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="aef19-138">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a5d17-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="a5d17-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="aef19-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="aef19-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingappointment_cancel"
@@ -68,23 +70,23 @@ Content-type: application/json
   "cancellationMessage": "Your appointment has been successfully cancelled. Please call us again."
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a5d17-139">C#</span><span class="sxs-lookup"><span data-stu-id="a5d17-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="aef19-140">C#</span><span class="sxs-lookup"><span data-stu-id="aef19-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingappointment-cancel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a5d17-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a5d17-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="aef19-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aef19-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingappointment-cancel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a5d17-141">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a5d17-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="aef19-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aef19-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingappointment-cancel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="a5d17-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="a5d17-142">Response</span></span>
-<span data-ttu-id="a5d17-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a5d17-143">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="aef19-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="aef19-143">Response</span></span>
+<span data-ttu-id="aef19-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="aef19-144">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
