@@ -5,32 +5,34 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 4e906a2f7f9d95cd3c3623d1f84c41aedded6cc4
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 57df22d5d1e4d5b8c60a8689254d11292a1793d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508147"
 ---
-# <a name="attendee-resource-type"></a><span data-ttu-id="a226a-104">Tipo de recurso attendee</span><span class="sxs-lookup"><span data-stu-id="a226a-104">attendee resource type</span></span>
+# <a name="attendee-resource-type"></a><span data-ttu-id="dc457-104">Tipo de recurso attendee</span><span class="sxs-lookup"><span data-stu-id="dc457-104">attendee resource type</span></span>
+
+<span data-ttu-id="dc457-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="dc457-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a226a-105">Um participante do evento.</span><span class="sxs-lookup"><span data-stu-id="a226a-105">An event attendee.</span></span> <span data-ttu-id="a226a-106">Pode ser uma pessoa ou recurso, como uma sala de reunião ou equipamento, que seja configurado como um recurso no Exchange Server para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a226a-106">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
+<span data-ttu-id="dc457-106">Um participante do evento.</span><span class="sxs-lookup"><span data-stu-id="dc457-106">An event attendee.</span></span> <span data-ttu-id="dc457-107">Pode ser uma pessoa ou recurso, como uma sala de reunião ou equipamento, que seja configurado como um recurso no Exchange Server para o locatário.</span><span class="sxs-lookup"><span data-stu-id="dc457-107">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
 
-<span data-ttu-id="a226a-107">Derivado de [attendeeBase](attendeebase.md).</span><span class="sxs-lookup"><span data-stu-id="a226a-107">Derived from [attendeeBase](attendeebase.md).</span></span>
+<span data-ttu-id="dc457-108">Derivado de [attendeeBase](attendeebase.md).</span><span class="sxs-lookup"><span data-stu-id="dc457-108">Derived from [attendeeBase](attendeebase.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a226a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a226a-108">Properties</span></span>
-| <span data-ttu-id="a226a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a226a-109">Property</span></span>     | <span data-ttu-id="a226a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="a226a-110">Type</span></span>   |<span data-ttu-id="a226a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="a226a-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="dc457-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dc457-109">Properties</span></span>
+| <span data-ttu-id="dc457-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dc457-110">Property</span></span>     | <span data-ttu-id="dc457-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="dc457-111">Type</span></span>   |<span data-ttu-id="dc457-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc457-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a226a-112">emailAddress</span><span class="sxs-lookup"><span data-stu-id="a226a-112">emailAddress</span></span>|[<span data-ttu-id="a226a-113">emailAddress</span><span class="sxs-lookup"><span data-stu-id="a226a-113">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="a226a-114">Inclui o nome e endereço SMTP do participante.</span><span class="sxs-lookup"><span data-stu-id="a226a-114">Includes the name and SMTP address of the attendee.</span></span>|
-|<span data-ttu-id="a226a-115">proposedNewTime</span><span class="sxs-lookup"><span data-stu-id="a226a-115">proposedNewTime</span></span>|[<span data-ttu-id="a226a-116">timeSlot</span><span class="sxs-lookup"><span data-stu-id="a226a-116">timeSlot</span></span>](timeslot.md)|<span data-ttu-id="a226a-117">Uma data/hora alternativa proposta pelo participante para que uma solicitação de reunião inicie e termine.</span><span class="sxs-lookup"><span data-stu-id="a226a-117">An alternate date/time proposed by the attendee for a meeting request to start and end.</span></span> <span data-ttu-id="a226a-118">Se o participante não propôs outra vez, essa propriedade não é incluída em uma resposta de um evento GET.</span><span class="sxs-lookup"><span data-stu-id="a226a-118">If the attendee hasn't proposed another time, then this property is not included in a response of a GET event.</span></span>|
-|<span data-ttu-id="a226a-119">status</span><span class="sxs-lookup"><span data-stu-id="a226a-119">status</span></span>|[<span data-ttu-id="a226a-120">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="a226a-120">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="a226a-121">A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.</span><span class="sxs-lookup"><span data-stu-id="a226a-121">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
-|<span data-ttu-id="a226a-122">type</span><span class="sxs-lookup"><span data-stu-id="a226a-122">type</span></span>|<span data-ttu-id="a226a-123">String</span><span class="sxs-lookup"><span data-stu-id="a226a-123">String</span></span>|<span data-ttu-id="a226a-124">O tipo de participante: `required`, `optional` ou `resource`.</span><span class="sxs-lookup"><span data-stu-id="a226a-124">The attendee type: `required`, `optional`, `resource`.</span></span>|
+|<span data-ttu-id="dc457-113">emailAddress</span><span class="sxs-lookup"><span data-stu-id="dc457-113">emailAddress</span></span>|[<span data-ttu-id="dc457-114">emailAddress</span><span class="sxs-lookup"><span data-stu-id="dc457-114">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="dc457-115">Inclui o nome e endereço SMTP do participante.</span><span class="sxs-lookup"><span data-stu-id="dc457-115">Includes the name and SMTP address of the attendee.</span></span>|
+|<span data-ttu-id="dc457-116">proposedNewTime</span><span class="sxs-lookup"><span data-stu-id="dc457-116">proposedNewTime</span></span>|[<span data-ttu-id="dc457-117">timeSlot</span><span class="sxs-lookup"><span data-stu-id="dc457-117">timeSlot</span></span>](timeslot.md)|<span data-ttu-id="dc457-118">Uma data/hora alternativa proposta pelo participante para que uma solicitação de reunião inicie e termine.</span><span class="sxs-lookup"><span data-stu-id="dc457-118">An alternate date/time proposed by the attendee for a meeting request to start and end.</span></span> <span data-ttu-id="dc457-119">Se o participante não propôs outra vez, essa propriedade não é incluída em uma resposta de um evento GET.</span><span class="sxs-lookup"><span data-stu-id="dc457-119">If the attendee hasn't proposed another time, then this property is not included in a response of a GET event.</span></span>|
+|<span data-ttu-id="dc457-120">status</span><span class="sxs-lookup"><span data-stu-id="dc457-120">status</span></span>|[<span data-ttu-id="dc457-121">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="dc457-121">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="dc457-122">A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.</span><span class="sxs-lookup"><span data-stu-id="dc457-122">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
+|<span data-ttu-id="dc457-123">type</span><span class="sxs-lookup"><span data-stu-id="dc457-123">type</span></span>|<span data-ttu-id="dc457-124">String</span><span class="sxs-lookup"><span data-stu-id="dc457-124">String</span></span>|<span data-ttu-id="dc457-125">O tipo de participante: `required`, `optional` ou `resource`.</span><span class="sxs-lookup"><span data-stu-id="dc457-125">The attendee type: `required`, `optional`, `resource`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a226a-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a226a-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dc457-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dc457-126">JSON representation</span></span>
 
-<span data-ttu-id="a226a-126">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="a226a-126">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="dc457-127">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="dc457-127">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

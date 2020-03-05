@@ -6,22 +6,24 @@ title: TextColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6681875328695d2e67cc10508f47183fcedb0df4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6167a81c0898b2de1c5878926633f8dbd0baa2d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964337"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519789"
 ---
-# <a name="textcolumn-resource-type"></a><span data-ttu-id="ec776-103">Tipo de recurso TextColumn</span><span class="sxs-lookup"><span data-stu-id="ec776-103">TextColumn resource type</span></span>
+# <a name="textcolumn-resource-type"></a><span data-ttu-id="77901-103">Tipo de recurso TextColumn</span><span class="sxs-lookup"><span data-stu-id="77901-103">TextColumn resource type</span></span>
+
+<span data-ttu-id="77901-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="77901-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ec776-104">**textColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são texto.</span><span class="sxs-lookup"><span data-stu-id="ec776-104">The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.</span></span>
+<span data-ttu-id="77901-105">**textColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são texto.</span><span class="sxs-lookup"><span data-stu-id="77901-105">The **textColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are text.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ec776-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ec776-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="77901-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="77901-106">JSON representation</span></span>
 
-<span data-ttu-id="ec776-106">Aqui está uma representação JSON de um recurso **textColumn**.</span><span class="sxs-lookup"><span data-stu-id="ec776-106">Here is a JSON representation of a **textColumn** resource.</span></span>
+<span data-ttu-id="77901-107">Aqui está uma representação JSON de um recurso **textColumn**.</span><span class="sxs-lookup"><span data-stu-id="77901-107">Here is a JSON representation of a **textColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.textColumn" } -->
 
 ```json
@@ -34,15 +36,15 @@ ms.locfileid: "35964337"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="ec776-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ec776-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="77901-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="77901-108">Properties</span></span>
 
-| <span data-ttu-id="ec776-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="ec776-108">Property name</span></span>                   | <span data-ttu-id="ec776-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="ec776-109">Type</span></span>   | <span data-ttu-id="ec776-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="ec776-110">Description</span></span>
+| <span data-ttu-id="77901-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="77901-109">Property name</span></span>                   | <span data-ttu-id="77901-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="77901-110">Type</span></span>   | <span data-ttu-id="77901-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="77901-111">Description</span></span>
 |:--------------------------------|:-------|:-----------------------------------------------
-| <span data-ttu-id="ec776-111">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="ec776-111">**allowMultipleLines**</span></span>          | <span data-ttu-id="ec776-112">string</span><span class="sxs-lookup"><span data-stu-id="ec776-112">string</span></span> | <span data-ttu-id="ec776-113">Se deseja permitir várias linhas de texto.</span><span class="sxs-lookup"><span data-stu-id="ec776-113">Whether to allow multiple lines of text.</span></span>
-| <span data-ttu-id="ec776-114">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="ec776-114">**appendChangesToExistingText**</span></span> | <span data-ttu-id="ec776-115">string</span><span class="sxs-lookup"><span data-stu-id="ec776-115">string</span></span> | <span data-ttu-id="ec776-116">Se as atualizações nesta coluna devem substituir o texto existente ou acrescentar a ele.</span><span class="sxs-lookup"><span data-stu-id="ec776-116">Whether updates to this column should replace existing text, or append to it.</span></span>
-| <span data-ttu-id="ec776-117">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="ec776-117">**linesForEditing**</span></span>             | <span data-ttu-id="ec776-118">int</span><span class="sxs-lookup"><span data-stu-id="ec776-118">int</span></span>    | <span data-ttu-id="ec776-119">O tamanho da caixa de texto.</span><span class="sxs-lookup"><span data-stu-id="ec776-119">The size of the text box.</span></span>
-| <span data-ttu-id="ec776-120">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="ec776-120">**maxLength**</span></span>                   | <span data-ttu-id="ec776-121">int</span><span class="sxs-lookup"><span data-stu-id="ec776-121">int</span></span>    | <span data-ttu-id="ec776-122">O número máximo de caracteres para o valor.</span><span class="sxs-lookup"><span data-stu-id="ec776-122">The maximum number of characters for the value.</span></span>
-| <span data-ttu-id="ec776-123">**textType**</span><span class="sxs-lookup"><span data-stu-id="ec776-123">**textType**</span></span>                    | <span data-ttu-id="ec776-124">string</span><span class="sxs-lookup"><span data-stu-id="ec776-124">string</span></span> | <span data-ttu-id="ec776-125">O tipo de texto sendo armazenado.</span><span class="sxs-lookup"><span data-stu-id="ec776-125">The type of text being stored.</span></span> <span data-ttu-id="ec776-126">Deve ser `plain` ou `richText`</span><span class="sxs-lookup"><span data-stu-id="ec776-126">Must be one of `plain` or `richText`</span></span>
+| <span data-ttu-id="77901-112">**allowMultipleLines**</span><span class="sxs-lookup"><span data-stu-id="77901-112">**allowMultipleLines**</span></span>          | <span data-ttu-id="77901-113">string</span><span class="sxs-lookup"><span data-stu-id="77901-113">string</span></span> | <span data-ttu-id="77901-114">Se deseja permitir várias linhas de texto.</span><span class="sxs-lookup"><span data-stu-id="77901-114">Whether to allow multiple lines of text.</span></span>
+| <span data-ttu-id="77901-115">**appendChangesToExistingText**</span><span class="sxs-lookup"><span data-stu-id="77901-115">**appendChangesToExistingText**</span></span> | <span data-ttu-id="77901-116">string</span><span class="sxs-lookup"><span data-stu-id="77901-116">string</span></span> | <span data-ttu-id="77901-117">Se as atualizações nesta coluna devem substituir o texto existente ou acrescentar a ele.</span><span class="sxs-lookup"><span data-stu-id="77901-117">Whether updates to this column should replace existing text, or append to it.</span></span>
+| <span data-ttu-id="77901-118">**linesForEditing**</span><span class="sxs-lookup"><span data-stu-id="77901-118">**linesForEditing**</span></span>             | <span data-ttu-id="77901-119">int</span><span class="sxs-lookup"><span data-stu-id="77901-119">int</span></span>    | <span data-ttu-id="77901-120">O tamanho da caixa de texto.</span><span class="sxs-lookup"><span data-stu-id="77901-120">The size of the text box.</span></span>
+| <span data-ttu-id="77901-121">**maxLength**</span><span class="sxs-lookup"><span data-stu-id="77901-121">**maxLength**</span></span>                   | <span data-ttu-id="77901-122">int</span><span class="sxs-lookup"><span data-stu-id="77901-122">int</span></span>    | <span data-ttu-id="77901-123">O número máximo de caracteres para o valor.</span><span class="sxs-lookup"><span data-stu-id="77901-123">The maximum number of characters for the value.</span></span>
+| <span data-ttu-id="77901-124">**textType**</span><span class="sxs-lookup"><span data-stu-id="77901-124">**textType**</span></span>                    | <span data-ttu-id="77901-125">string</span><span class="sxs-lookup"><span data-stu-id="77901-125">string</span></span> | <span data-ttu-id="77901-126">O tipo de texto sendo armazenado.</span><span class="sxs-lookup"><span data-stu-id="77901-126">The type of text being stored.</span></span> <span data-ttu-id="77901-127">Deve ser `plain` ou `richText`</span><span class="sxs-lookup"><span data-stu-id="77901-127">Must be one of `plain` or `richText`</span></span>
 
 <!--
 {

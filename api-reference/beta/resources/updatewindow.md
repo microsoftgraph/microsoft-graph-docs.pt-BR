@@ -5,29 +5,31 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 57fb977dd853261300ed09dd8d9b3c343f62bea0
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: d0f509accba2cb73709a4a5fa504a5d2a716b038
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840951"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519579"
 ---
-# <a name="updatewindow-resource-type"></a><span data-ttu-id="0eb0f-103">tipo de recurso updateWindow</span><span class="sxs-lookup"><span data-stu-id="0eb0f-103">updateWindow resource type</span></span>
+# <a name="updatewindow-resource-type"></a><span data-ttu-id="e643f-103">tipo de recurso updateWindow</span><span class="sxs-lookup"><span data-stu-id="e643f-103">updateWindow resource type</span></span>
+
+<span data-ttu-id="e643f-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e643f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0eb0f-104">Representa a janela de tempo durante a qual [os agentes](onpremisesagent.md) podem receber atualizações.</span><span class="sxs-lookup"><span data-stu-id="0eb0f-104">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
+<span data-ttu-id="e643f-105">Representa a janela de tempo durante a qual [os agentes](onpremisesagent.md) podem receber atualizações.</span><span class="sxs-lookup"><span data-stu-id="e643f-105">Represents time window during which [agents](onpremisesagent.md) can receive updates.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0eb0f-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0eb0f-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e643f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e643f-106">Properties</span></span>
 
-| <span data-ttu-id="0eb0f-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0eb0f-106">Property</span></span>     | <span data-ttu-id="0eb0f-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="0eb0f-107">Type</span></span>        | <span data-ttu-id="0eb0f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="0eb0f-108">Description</span></span> |
+| <span data-ttu-id="e643f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e643f-107">Property</span></span>     | <span data-ttu-id="e643f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="e643f-108">Type</span></span>        | <span data-ttu-id="e643f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e643f-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="0eb0f-109">updateWindowEndTime</span><span class="sxs-lookup"><span data-stu-id="0eb0f-109">updateWindowEndTime</span></span>|<span data-ttu-id="0eb0f-110">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="0eb0f-110">TimeOfDay</span></span>|<span data-ttu-id="0eb0f-111">Término de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="0eb0f-111">End of a time window during which agents can receive updates</span></span>|
-|<span data-ttu-id="0eb0f-112">updateWindowStartTime</span><span class="sxs-lookup"><span data-stu-id="0eb0f-112">updateWindowStartTime</span></span>|<span data-ttu-id="0eb0f-113">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="0eb0f-113">TimeOfDay</span></span>|<span data-ttu-id="0eb0f-114">Início de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="0eb0f-114">Start of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="e643f-110">updateWindowEndTime</span><span class="sxs-lookup"><span data-stu-id="e643f-110">updateWindowEndTime</span></span>|<span data-ttu-id="e643f-111">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="e643f-111">TimeOfDay</span></span>|<span data-ttu-id="e643f-112">Término de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="e643f-112">End of a time window during which agents can receive updates</span></span>|
+|<span data-ttu-id="e643f-113">updateWindowStartTime</span><span class="sxs-lookup"><span data-stu-id="e643f-113">updateWindowStartTime</span></span>|<span data-ttu-id="e643f-114">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="e643f-114">TimeOfDay</span></span>|<span data-ttu-id="e643f-115">Início de uma janela de tempo durante a qual os agentes podem receber atualizações</span><span class="sxs-lookup"><span data-stu-id="e643f-115">Start of a time window during which agents can receive updates</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0eb0f-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0eb0f-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e643f-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e643f-116">JSON representation</span></span>
 
-<span data-ttu-id="0eb0f-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0eb0f-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e643f-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e643f-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

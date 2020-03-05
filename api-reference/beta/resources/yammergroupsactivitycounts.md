@@ -5,29 +5,31 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 12ab6de821ad4cd4362bcd3baa82525f6894b747
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b997d111f31f290c0721172fdb59d9fdd0fd3bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963756"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518991"
 ---
-# <a name="yammergroupsactivitycounts-resource-type"></a><span data-ttu-id="6ae44-103">tipo de recurso yammerGroupsActivityCounts</span><span class="sxs-lookup"><span data-stu-id="6ae44-103">yammerGroupsActivityCounts resource type</span></span>
+# <a name="yammergroupsactivitycounts-resource-type"></a><span data-ttu-id="afcca-103">tipo de recurso yammerGroupsActivityCounts</span><span class="sxs-lookup"><span data-stu-id="afcca-103">yammerGroupsActivityCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6ae44-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6ae44-104">Properties</span></span>
+<span data-ttu-id="afcca-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="afcca-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="6ae44-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6ae44-105">Property</span></span>          | <span data-ttu-id="6ae44-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="6ae44-106">Type</span></span>   |
+## <a name="properties"></a><span data-ttu-id="afcca-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="afcca-105">Properties</span></span>
+
+| <span data-ttu-id="afcca-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="afcca-106">Property</span></span>          | <span data-ttu-id="afcca-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="afcca-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="6ae44-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="6ae44-107">reportRefreshDate</span></span> | <span data-ttu-id="6ae44-108">Data</span><span class="sxs-lookup"><span data-stu-id="6ae44-108">Date</span></span>   |
-| <span data-ttu-id="6ae44-109">curti</span><span class="sxs-lookup"><span data-stu-id="6ae44-109">liked</span></span>             | <span data-ttu-id="6ae44-110">Int64</span><span class="sxs-lookup"><span data-stu-id="6ae44-110">Int64</span></span>  |
-| <span data-ttu-id="6ae44-111">posta</span><span class="sxs-lookup"><span data-stu-id="6ae44-111">posted</span></span>            | <span data-ttu-id="6ae44-112">Int64</span><span class="sxs-lookup"><span data-stu-id="6ae44-112">Int64</span></span>  |
-| <span data-ttu-id="6ae44-113">Saiba</span><span class="sxs-lookup"><span data-stu-id="6ae44-113">read</span></span>              | <span data-ttu-id="6ae44-114">Int64</span><span class="sxs-lookup"><span data-stu-id="6ae44-114">Int64</span></span>  |
-| <span data-ttu-id="6ae44-115">reportDate</span><span class="sxs-lookup"><span data-stu-id="6ae44-115">reportDate</span></span>        | <span data-ttu-id="6ae44-116">Data</span><span class="sxs-lookup"><span data-stu-id="6ae44-116">Date</span></span>   |
-| <span data-ttu-id="6ae44-117">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="6ae44-117">reportPeriod</span></span>      | <span data-ttu-id="6ae44-118">String</span><span class="sxs-lookup"><span data-stu-id="6ae44-118">String</span></span> |
+| <span data-ttu-id="afcca-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="afcca-108">reportRefreshDate</span></span> | <span data-ttu-id="afcca-109">Data</span><span class="sxs-lookup"><span data-stu-id="afcca-109">Date</span></span>   |
+| <span data-ttu-id="afcca-110">curti</span><span class="sxs-lookup"><span data-stu-id="afcca-110">liked</span></span>             | <span data-ttu-id="afcca-111">Int64</span><span class="sxs-lookup"><span data-stu-id="afcca-111">Int64</span></span>  |
+| <span data-ttu-id="afcca-112">posta</span><span class="sxs-lookup"><span data-stu-id="afcca-112">posted</span></span>            | <span data-ttu-id="afcca-113">Int64</span><span class="sxs-lookup"><span data-stu-id="afcca-113">Int64</span></span>  |
+| <span data-ttu-id="afcca-114">Saiba</span><span class="sxs-lookup"><span data-stu-id="afcca-114">read</span></span>              | <span data-ttu-id="afcca-115">Int64</span><span class="sxs-lookup"><span data-stu-id="afcca-115">Int64</span></span>  |
+| <span data-ttu-id="afcca-116">reportDate</span><span class="sxs-lookup"><span data-stu-id="afcca-116">reportDate</span></span>        | <span data-ttu-id="afcca-117">Data</span><span class="sxs-lookup"><span data-stu-id="afcca-117">Date</span></span>   |
+| <span data-ttu-id="afcca-118">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="afcca-118">reportPeriod</span></span>      | <span data-ttu-id="afcca-119">String</span><span class="sxs-lookup"><span data-stu-id="afcca-119">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="6ae44-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6ae44-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="afcca-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="afcca-120">JSON representation</span></span>
 
-<span data-ttu-id="6ae44-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6ae44-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="afcca-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="afcca-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

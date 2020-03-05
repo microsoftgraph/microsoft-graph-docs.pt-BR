@@ -5,28 +5,30 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 659ca7f55309499314f94ea62e9433c919856dc6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cec9c2f2a092175c7ccecaa09c7b8b510000205c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972646"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501546"
 ---
-# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="6d29f-104">tipo de recurso educationOneNoteResource</span><span class="sxs-lookup"><span data-stu-id="6d29f-104">educationOneNoteResource resource type</span></span>
+# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="d3497-104">tipo de recurso educationOneNoteResource</span><span class="sxs-lookup"><span data-stu-id="d3497-104">educationOneNoteResource resource type</span></span>
+
+<span data-ttu-id="d3497-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d3497-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6d29f-105">Uma subclasse de [educationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="6d29f-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="6d29f-106">Isso representa o local da página do OneNote.</span><span class="sxs-lookup"><span data-stu-id="6d29f-106">This represents the location of the OneNote page.</span></span>  
+<span data-ttu-id="d3497-106">Uma subclasse de [educationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="d3497-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="d3497-107">Isso representa o local da página do OneNote.</span><span class="sxs-lookup"><span data-stu-id="d3497-107">This represents the location of the OneNote page.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="6d29f-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6d29f-107">Properties</span></span>
-| <span data-ttu-id="6d29f-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6d29f-108">Property</span></span>     | <span data-ttu-id="6d29f-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="6d29f-109">Type</span></span>   |<span data-ttu-id="6d29f-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="6d29f-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d3497-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d3497-108">Properties</span></span>
+| <span data-ttu-id="d3497-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3497-109">Property</span></span>     | <span data-ttu-id="d3497-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3497-110">Type</span></span>   |<span data-ttu-id="d3497-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3497-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6d29f-111">pageUrl</span><span class="sxs-lookup"><span data-stu-id="6d29f-111">pageUrl</span></span>|<span data-ttu-id="6d29f-112">String</span><span class="sxs-lookup"><span data-stu-id="6d29f-112">String</span></span>|<span data-ttu-id="6d29f-113">A URL do Microsoft Graph para a página no OneNote.</span><span class="sxs-lookup"><span data-stu-id="6d29f-113">The Microsoft Graph URL to the page in OneNote.</span></span>|
-|<span data-ttu-id="6d29f-114">sectionName</span><span class="sxs-lookup"><span data-stu-id="6d29f-114">sectionName</span></span>|<span data-ttu-id="6d29f-115">String</span><span class="sxs-lookup"><span data-stu-id="6d29f-115">String</span></span>|<span data-ttu-id="6d29f-116">Nome da seção para a qual as distribuições devem ser copiadas ou copiadas no.</span><span class="sxs-lookup"><span data-stu-id="6d29f-116">Section name that distributions should be copied into or were copied into.</span></span>|
+|<span data-ttu-id="d3497-112">pageUrl</span><span class="sxs-lookup"><span data-stu-id="d3497-112">pageUrl</span></span>|<span data-ttu-id="d3497-113">String</span><span class="sxs-lookup"><span data-stu-id="d3497-113">String</span></span>|<span data-ttu-id="d3497-114">A URL do Microsoft Graph para a página no OneNote.</span><span class="sxs-lookup"><span data-stu-id="d3497-114">The Microsoft Graph URL to the page in OneNote.</span></span>|
+|<span data-ttu-id="d3497-115">sectionName</span><span class="sxs-lookup"><span data-stu-id="d3497-115">sectionName</span></span>|<span data-ttu-id="d3497-116">String</span><span class="sxs-lookup"><span data-stu-id="d3497-116">String</span></span>|<span data-ttu-id="d3497-117">Nome da seção para a qual as distribuições devem ser copiadas ou copiadas no.</span><span class="sxs-lookup"><span data-stu-id="d3497-117">Section name that distributions should be copied into or were copied into.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6d29f-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6d29f-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d3497-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d3497-118">JSON representation</span></span>
 
-<span data-ttu-id="6d29f-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6d29f-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d3497-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d3497-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,33 +5,35 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7e2e9304aa8c7e7c8d59602a5710596b14e74636
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: d46ffa5cc3f0eee423b4800ee13f19677bf7c41f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638607"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521943"
 ---
-# <a name="persistentbrowsersessioncontrol-resource-type"></a><span data-ttu-id="4ff09-103">tipo de recurso persistentBrowserSessionControl</span><span class="sxs-lookup"><span data-stu-id="4ff09-103">persistentBrowserSessionControl resource type</span></span>
+# <a name="persistentbrowsersessioncontrol-resource-type"></a><span data-ttu-id="999a4-103">tipo de recurso persistentBrowserSessionControl</span><span class="sxs-lookup"><span data-stu-id="999a4-103">persistentBrowserSessionControl resource type</span></span>
+
+<span data-ttu-id="999a4-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="999a4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4ff09-104">Controle de sessão para definir se deseja persistir cookies ou não.</span><span class="sxs-lookup"><span data-stu-id="4ff09-104">Session control to define whether to persist cookies or not.</span></span> <span data-ttu-id="4ff09-105">Inehrits do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).</span><span class="sxs-lookup"><span data-stu-id="4ff09-105">Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
+<span data-ttu-id="999a4-105">Controle de sessão para definir se deseja persistir cookies ou não.</span><span class="sxs-lookup"><span data-stu-id="999a4-105">Session control to define whether to persist cookies or not.</span></span> <span data-ttu-id="999a4-106">Inehrits do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).</span><span class="sxs-lookup"><span data-stu-id="999a4-106">Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4ff09-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4ff09-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="999a4-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="999a4-107">Properties</span></span>
 
-| <span data-ttu-id="4ff09-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4ff09-107">Property</span></span>     | <span data-ttu-id="4ff09-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="4ff09-108">Type</span></span>        | <span data-ttu-id="4ff09-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4ff09-109">Description</span></span> |
+| <span data-ttu-id="999a4-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="999a4-108">Property</span></span>     | <span data-ttu-id="999a4-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="999a4-109">Type</span></span>        | <span data-ttu-id="999a4-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="999a4-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="4ff09-110">isEnabled</span><span class="sxs-lookup"><span data-stu-id="4ff09-110">isEnabled</span></span>     |<span data-ttu-id="4ff09-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ff09-111">Boolean</span></span>      | <span data-ttu-id="4ff09-112">Especifica se o controle de sessão está habilitado.</span><span class="sxs-lookup"><span data-stu-id="4ff09-112">Specifies whether the session control is enabled.</span></span> |
-|<span data-ttu-id="4ff09-113">Mode</span><span class="sxs-lookup"><span data-stu-id="4ff09-113">mode</span></span>|<span data-ttu-id="4ff09-114">String</span><span class="sxs-lookup"><span data-stu-id="4ff09-114">String</span></span>| <span data-ttu-id="4ff09-115">Os valores possíveis são: `always` e `never`.</span><span class="sxs-lookup"><span data-stu-id="4ff09-115">Possible values are: `always`, `never`.</span></span>|
+|<span data-ttu-id="999a4-111">isEnabled</span><span class="sxs-lookup"><span data-stu-id="999a4-111">isEnabled</span></span>     |<span data-ttu-id="999a4-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="999a4-112">Boolean</span></span>      | <span data-ttu-id="999a4-113">Especifica se o controle de sessão está habilitado.</span><span class="sxs-lookup"><span data-stu-id="999a4-113">Specifies whether the session control is enabled.</span></span> |
+|<span data-ttu-id="999a4-114">Mode</span><span class="sxs-lookup"><span data-stu-id="999a4-114">mode</span></span>|<span data-ttu-id="999a4-115">String</span><span class="sxs-lookup"><span data-stu-id="999a4-115">String</span></span>| <span data-ttu-id="999a4-116">Os valores possíveis são: `always` e `never`.</span><span class="sxs-lookup"><span data-stu-id="999a4-116">Possible values are: `always`, `never`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4ff09-116">Relações</span><span class="sxs-lookup"><span data-stu-id="4ff09-116">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="999a4-117">Relações</span><span class="sxs-lookup"><span data-stu-id="999a4-117">Relationships</span></span>
 
-<span data-ttu-id="4ff09-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4ff09-117">None.</span></span>
+<span data-ttu-id="999a4-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="999a4-118">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4ff09-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4ff09-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="999a4-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="999a4-119">JSON representation</span></span>
 
-<span data-ttu-id="4ff09-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4ff09-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="999a4-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="999a4-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

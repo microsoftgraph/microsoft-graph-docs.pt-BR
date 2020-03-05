@@ -5,30 +5,32 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3b23249d7c0b898344113c5bcfe950c207891250
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: c7638c08214002a58328378967c024af871cb734
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658881"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507356"
 ---
-# <a name="credential-resource-type"></a><span data-ttu-id="9753a-103">tipo de recurso Credential</span><span class="sxs-lookup"><span data-stu-id="9753a-103">credential resource type</span></span>
+# <a name="credential-resource-type"></a><span data-ttu-id="1945e-103">tipo de recurso Credential</span><span class="sxs-lookup"><span data-stu-id="1945e-103">credential resource type</span></span>
+
+<span data-ttu-id="1945e-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1945e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9753a-104">Indica uma única credencial usada para entrar em um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9753a-104">Indicates a single credential used for sign-in to an application.</span></span> <span data-ttu-id="9753a-105">Por exemplo, username é uma credencial, password é outra credencial.</span><span class="sxs-lookup"><span data-stu-id="9753a-105">For example, username is one credential, password is another credential.</span></span>
+<span data-ttu-id="1945e-105">Indica uma única credencial usada para entrar em um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1945e-105">Indicates a single credential used for sign-in to an application.</span></span> <span data-ttu-id="1945e-106">Por exemplo, username é uma credencial, password é outra credencial.</span><span class="sxs-lookup"><span data-stu-id="1945e-106">For example, username is one credential, password is another credential.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9753a-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9753a-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1945e-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1945e-107">Properties</span></span>
 
-| <span data-ttu-id="9753a-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9753a-107">Property</span></span>     | <span data-ttu-id="9753a-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="9753a-108">Type</span></span>        | <span data-ttu-id="9753a-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="9753a-109">Description</span></span> |
+| <span data-ttu-id="1945e-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1945e-108">Property</span></span>     | <span data-ttu-id="1945e-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="1945e-109">Type</span></span>        | <span data-ttu-id="1945e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1945e-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="9753a-110">fieldId</span><span class="sxs-lookup"><span data-stu-id="9753a-110">fieldId</span></span>|<span data-ttu-id="9753a-111">String</span><span class="sxs-lookup"><span data-stu-id="9753a-111">String</span></span>|<span data-ttu-id="9753a-112">O nome do campo para esta credencial.</span><span class="sxs-lookup"><span data-stu-id="9753a-112">The name of the field for this credential.</span></span> <span data-ttu-id="9753a-113">por exemplo, nome de usuário ou senha ou phoneNumber.</span><span class="sxs-lookup"><span data-stu-id="9753a-113">e.g, username or password or phoneNumber.</span></span> <span data-ttu-id="9753a-114">Isso é definido pelo aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9753a-114">This is defined by the application.</span></span> <span data-ttu-id="9753a-115">Deve corresponder ao que está no campo HTML no objeto singleSignOnSettings/password.</span><span class="sxs-lookup"><span data-stu-id="9753a-115">Must match what is in the html field on singleSignOnSettings/password object.</span></span>|
-|<span data-ttu-id="9753a-116">type</span><span class="sxs-lookup"><span data-stu-id="9753a-116">type</span></span>|<span data-ttu-id="9753a-117">String</span><span class="sxs-lookup"><span data-stu-id="9753a-117">String</span></span>|<span data-ttu-id="9753a-118">O tipo desta credencial.</span><span class="sxs-lookup"><span data-stu-id="9753a-118">The type for this credential.</span></span> <span data-ttu-id="9753a-119">Valores válidos: username, password ou Other.</span><span class="sxs-lookup"><span data-stu-id="9753a-119">Valid values: username, password, or other.</span></span>|
-|<span data-ttu-id="9753a-120">value</span><span class="sxs-lookup"><span data-stu-id="9753a-120">value</span></span>|<span data-ttu-id="9753a-121">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9753a-121">String</span></span>|<span data-ttu-id="9753a-122">O valor dessa credencial.</span><span class="sxs-lookup"><span data-stu-id="9753a-122">The value for this credential.</span></span> <span data-ttu-id="9753a-123">por exemplo, mysuperhiddenpassword.</span><span class="sxs-lookup"><span data-stu-id="9753a-123">e.g, mysuperhiddenpassword.</span></span> <span data-ttu-id="9753a-124">Observação o valor de senhas é somente gravação, o valor nunca pode ser lido novamente.</span><span class="sxs-lookup"><span data-stu-id="9753a-124">Note the value for passwords is write-only, the value can never be read back.</span></span>|
+|<span data-ttu-id="1945e-111">fieldId</span><span class="sxs-lookup"><span data-stu-id="1945e-111">fieldId</span></span>|<span data-ttu-id="1945e-112">String</span><span class="sxs-lookup"><span data-stu-id="1945e-112">String</span></span>|<span data-ttu-id="1945e-113">O nome do campo para esta credencial.</span><span class="sxs-lookup"><span data-stu-id="1945e-113">The name of the field for this credential.</span></span> <span data-ttu-id="1945e-114">por exemplo, nome de usuário ou senha ou phoneNumber.</span><span class="sxs-lookup"><span data-stu-id="1945e-114">e.g, username or password or phoneNumber.</span></span> <span data-ttu-id="1945e-115">Isso é definido pelo aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1945e-115">This is defined by the application.</span></span> <span data-ttu-id="1945e-116">Deve corresponder ao que está no campo HTML no objeto singleSignOnSettings/password.</span><span class="sxs-lookup"><span data-stu-id="1945e-116">Must match what is in the html field on singleSignOnSettings/password object.</span></span>|
+|<span data-ttu-id="1945e-117">type</span><span class="sxs-lookup"><span data-stu-id="1945e-117">type</span></span>|<span data-ttu-id="1945e-118">String</span><span class="sxs-lookup"><span data-stu-id="1945e-118">String</span></span>|<span data-ttu-id="1945e-119">O tipo desta credencial.</span><span class="sxs-lookup"><span data-stu-id="1945e-119">The type for this credential.</span></span> <span data-ttu-id="1945e-120">Valores válidos: username, password ou Other.</span><span class="sxs-lookup"><span data-stu-id="1945e-120">Valid values: username, password, or other.</span></span>|
+|<span data-ttu-id="1945e-121">value</span><span class="sxs-lookup"><span data-stu-id="1945e-121">value</span></span>|<span data-ttu-id="1945e-122">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1945e-122">String</span></span>|<span data-ttu-id="1945e-123">O valor dessa credencial.</span><span class="sxs-lookup"><span data-stu-id="1945e-123">The value for this credential.</span></span> <span data-ttu-id="1945e-124">por exemplo, mysuperhiddenpassword.</span><span class="sxs-lookup"><span data-stu-id="1945e-124">e.g, mysuperhiddenpassword.</span></span> <span data-ttu-id="1945e-125">Observação o valor de senhas é somente gravação, o valor nunca pode ser lido novamente.</span><span class="sxs-lookup"><span data-stu-id="1945e-125">Note the value for passwords is write-only, the value can never be read back.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9753a-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9753a-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1945e-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1945e-126">JSON representation</span></span>
 
-<span data-ttu-id="9753a-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="9753a-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1945e-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1945e-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

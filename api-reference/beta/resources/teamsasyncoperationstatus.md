@@ -5,25 +5,27 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 35975d122adf6411afc6fe4c382d1ff46b41e263
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c82065c789847d3e2a11947dcf921b12c55530e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007680"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519894"
 ---
-# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="e093d-103">tipo de enumeração teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="e093d-103">teamsAsyncOperationStatus enum type</span></span>
+# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="2dfbc-103">tipo de enumeração teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="2dfbc-103">teamsAsyncOperationStatus enum type</span></span>
+
+<span data-ttu-id="2dfbc-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2dfbc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e093d-104">Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="e093d-104">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+<span data-ttu-id="2dfbc-105">Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="2dfbc-105">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
 
-## <a name="members"></a><span data-ttu-id="e093d-105">Membros</span><span class="sxs-lookup"><span data-stu-id="e093d-105">Members</span></span>
+## <a name="members"></a><span data-ttu-id="2dfbc-106">Membros</span><span class="sxs-lookup"><span data-stu-id="2dfbc-106">Members</span></span>
 
-| <span data-ttu-id="e093d-106">Membro</span><span class="sxs-lookup"><span data-stu-id="e093d-106">Member</span></span> | <span data-ttu-id="e093d-107">Valor</span><span class="sxs-lookup"><span data-stu-id="e093d-107">Value</span></span>| <span data-ttu-id="e093d-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="e093d-108">Description</span></span> |
+| <span data-ttu-id="2dfbc-107">Membro</span><span class="sxs-lookup"><span data-stu-id="2dfbc-107">Member</span></span> | <span data-ttu-id="2dfbc-108">Valor</span><span class="sxs-lookup"><span data-stu-id="2dfbc-108">Value</span></span>| <span data-ttu-id="2dfbc-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2dfbc-109">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e093d-109">Inválido</span><span class="sxs-lookup"><span data-stu-id="e093d-109">invalid</span></span>|<span data-ttu-id="e093d-110">,0</span><span class="sxs-lookup"><span data-stu-id="e093d-110">0</span></span>|<span data-ttu-id="e093d-111">Valor inválido.</span><span class="sxs-lookup"><span data-stu-id="e093d-111">Invalid value.</span></span>|
-|<span data-ttu-id="e093d-112">notStarted</span><span class="sxs-lookup"><span data-stu-id="e093d-112">notStarted</span></span>|<span data-ttu-id="e093d-113">1</span><span class="sxs-lookup"><span data-stu-id="e093d-113">1</span></span>|<span data-ttu-id="e093d-114">A operação não foi iniciada.</span><span class="sxs-lookup"><span data-stu-id="e093d-114">The operation has not started.</span></span>|
-|<span data-ttu-id="e093d-115">inProgress</span><span class="sxs-lookup"><span data-stu-id="e093d-115">inProgress</span></span>|<span data-ttu-id="e093d-116">duas</span><span class="sxs-lookup"><span data-stu-id="e093d-116">2</span></span>|<span data-ttu-id="e093d-117">A operação está sendo executada.</span><span class="sxs-lookup"><span data-stu-id="e093d-117">The operation is running.</span></span>|
-|<span data-ttu-id="e093d-118">adicionada</span><span class="sxs-lookup"><span data-stu-id="e093d-118">succeeded</span></span>|<span data-ttu-id="e093d-119">3D</span><span class="sxs-lookup"><span data-stu-id="e093d-119">3</span></span>|<span data-ttu-id="e093d-120">A operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="e093d-120">The operation succeeded.</span></span>|
-|<span data-ttu-id="e093d-121">falhou</span><span class="sxs-lookup"><span data-stu-id="e093d-121">failed</span></span>|<span data-ttu-id="e093d-122">quatro</span><span class="sxs-lookup"><span data-stu-id="e093d-122">4</span></span>|<span data-ttu-id="e093d-123">Falha na operação.</span><span class="sxs-lookup"><span data-stu-id="e093d-123">The operation failed.</span></span>|
+|<span data-ttu-id="2dfbc-110">Inválido</span><span class="sxs-lookup"><span data-stu-id="2dfbc-110">invalid</span></span>|<span data-ttu-id="2dfbc-111">,0</span><span class="sxs-lookup"><span data-stu-id="2dfbc-111">0</span></span>|<span data-ttu-id="2dfbc-112">Valor inválido.</span><span class="sxs-lookup"><span data-stu-id="2dfbc-112">Invalid value.</span></span>|
+|<span data-ttu-id="2dfbc-113">notStarted</span><span class="sxs-lookup"><span data-stu-id="2dfbc-113">notStarted</span></span>|<span data-ttu-id="2dfbc-114">1 </span><span class="sxs-lookup"><span data-stu-id="2dfbc-114">1</span></span>|<span data-ttu-id="2dfbc-115">A operação não foi iniciada.</span><span class="sxs-lookup"><span data-stu-id="2dfbc-115">The operation has not started.</span></span>|
+|<span data-ttu-id="2dfbc-116">inProgress</span><span class="sxs-lookup"><span data-stu-id="2dfbc-116">inProgress</span></span>|<span data-ttu-id="2dfbc-117">2 </span><span class="sxs-lookup"><span data-stu-id="2dfbc-117">2</span></span>|<span data-ttu-id="2dfbc-118">A operação está sendo executada.</span><span class="sxs-lookup"><span data-stu-id="2dfbc-118">The operation is running.</span></span>|
+|<span data-ttu-id="2dfbc-119">adicionada</span><span class="sxs-lookup"><span data-stu-id="2dfbc-119">succeeded</span></span>|<span data-ttu-id="2dfbc-120">3 </span><span class="sxs-lookup"><span data-stu-id="2dfbc-120">3</span></span>|<span data-ttu-id="2dfbc-121">A operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="2dfbc-121">The operation succeeded.</span></span>|
+|<span data-ttu-id="2dfbc-122">falhou</span><span class="sxs-lookup"><span data-stu-id="2dfbc-122">failed</span></span>|<span data-ttu-id="2dfbc-123">4 </span><span class="sxs-lookup"><span data-stu-id="2dfbc-123">4</span></span>|<span data-ttu-id="2dfbc-124">Falha na operação.</span><span class="sxs-lookup"><span data-stu-id="2dfbc-124">The operation failed.</span></span>|

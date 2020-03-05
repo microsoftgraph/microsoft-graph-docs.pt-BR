@@ -5,31 +5,33 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6083e5b17429cb2914850d91aba9acca8ab0433c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10e1d95eb20bbfe4e1bcf43e75eaa51a3ebec189
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963990"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519159"
 ---
-# <a name="workbookrangesort-resource-type"></a><span data-ttu-id="4b701-103">tipo de recurso workbookRangeSort</span><span class="sxs-lookup"><span data-stu-id="4b701-103">workbookRangeSort resource type</span></span>
+# <a name="workbookrangesort-resource-type"></a><span data-ttu-id="31c87-103">tipo de recurso workbookRangeSort</span><span class="sxs-lookup"><span data-stu-id="31c87-103">workbookRangeSort resource type</span></span>
+
+<span data-ttu-id="31c87-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="31c87-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4b701-104">Gerencia operações de classificação em objetos Range.</span><span class="sxs-lookup"><span data-stu-id="4b701-104">Manages sorting operations on Range objects.</span></span>
+<span data-ttu-id="31c87-105">Gerencia operações de classificação em objetos Range.</span><span class="sxs-lookup"><span data-stu-id="31c87-105">Manages sorting operations on Range objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="4b701-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="4b701-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="31c87-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="31c87-106">Methods</span></span>
 
-| <span data-ttu-id="4b701-106">Método</span><span class="sxs-lookup"><span data-stu-id="4b701-106">Method</span></span>           | <span data-ttu-id="4b701-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="4b701-107">Return Type</span></span>    |<span data-ttu-id="4b701-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="4b701-108">Description</span></span>|
+| <span data-ttu-id="31c87-107">Método</span><span class="sxs-lookup"><span data-stu-id="31c87-107">Method</span></span>           | <span data-ttu-id="31c87-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="31c87-108">Return Type</span></span>    |<span data-ttu-id="31c87-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="31c87-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="4b701-109">Apply</span><span class="sxs-lookup"><span data-stu-id="4b701-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="4b701-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4b701-110">None</span></span>|<span data-ttu-id="4b701-111">Execute uma operação de classificação.</span><span class="sxs-lookup"><span data-stu-id="4b701-111">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="31c87-110">Apply</span><span class="sxs-lookup"><span data-stu-id="31c87-110">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="31c87-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="31c87-111">None</span></span>|<span data-ttu-id="31c87-112">Execute uma operação de classificação.</span><span class="sxs-lookup"><span data-stu-id="31c87-112">Perform a sort operation.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="4b701-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4b701-112">Properties</span></span>
-<span data-ttu-id="4b701-113">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="4b701-113">None</span></span>
+## <a name="properties"></a><span data-ttu-id="31c87-113">Propriedades</span><span class="sxs-lookup"><span data-stu-id="31c87-113">Properties</span></span>
+<span data-ttu-id="31c87-114">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="31c87-114">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="4b701-114">Relações</span><span class="sxs-lookup"><span data-stu-id="4b701-114">Relationships</span></span>
-<span data-ttu-id="4b701-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4b701-115">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="31c87-115">Relações</span><span class="sxs-lookup"><span data-stu-id="31c87-115">Relationships</span></span>
+<span data-ttu-id="31c87-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="31c87-116">None</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,35 +5,37 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 3d1c1f1b2bcf919769009bbb65a917c4b9cb84f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7d030bbfaff939da4be645d8003984e5dde0a7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008429"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520692"
 ---
-# <a name="sharepointactivityuserdetail-resource-type"></a><span data-ttu-id="b1bf8-103">tipo de recurso sharePointActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="b1bf8-103">sharePointActivityUserDetail resource type</span></span>
+# <a name="sharepointactivityuserdetail-resource-type"></a><span data-ttu-id="0beba-103">tipo de recurso sharePointActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="0beba-103">sharePointActivityUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b1bf8-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b1bf8-104">Properties</span></span>
+<span data-ttu-id="0beba-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0beba-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="b1bf8-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b1bf8-105">Property</span></span>                  | <span data-ttu-id="b1bf8-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="b1bf8-106">Type</span></span>              |
+## <a name="properties"></a><span data-ttu-id="0beba-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0beba-105">Properties</span></span>
+
+| <span data-ttu-id="0beba-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0beba-106">Property</span></span>                  | <span data-ttu-id="0beba-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="0beba-107">Type</span></span>              |
 | :------------------------ | :---------------- |
-| <span data-ttu-id="b1bf8-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="b1bf8-107">reportRefreshDate</span></span>         | <span data-ttu-id="b1bf8-108">Data</span><span class="sxs-lookup"><span data-stu-id="b1bf8-108">Date</span></span>              |
-| <span data-ttu-id="b1bf8-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b1bf8-109">userPrincipalName</span></span>         | <span data-ttu-id="b1bf8-110">String</span><span class="sxs-lookup"><span data-stu-id="b1bf8-110">String</span></span>            |
-| <span data-ttu-id="b1bf8-111">isDeleted</span><span class="sxs-lookup"><span data-stu-id="b1bf8-111">isDeleted</span></span>                 | <span data-ttu-id="b1bf8-112">Booliano</span><span class="sxs-lookup"><span data-stu-id="b1bf8-112">Boolean</span></span>           |
-| <span data-ttu-id="b1bf8-113">deletedDate</span><span class="sxs-lookup"><span data-stu-id="b1bf8-113">deletedDate</span></span>               | <span data-ttu-id="b1bf8-114">Data</span><span class="sxs-lookup"><span data-stu-id="b1bf8-114">Date</span></span>              |
-| <span data-ttu-id="b1bf8-115">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="b1bf8-115">lastActivityDate</span></span>          | <span data-ttu-id="b1bf8-116">Data</span><span class="sxs-lookup"><span data-stu-id="b1bf8-116">Date</span></span>              |
-| <span data-ttu-id="b1bf8-117">viewedOrEditedFileCount</span><span class="sxs-lookup"><span data-stu-id="b1bf8-117">viewedOrEditedFileCount</span></span>   | <span data-ttu-id="b1bf8-118">Int64</span><span class="sxs-lookup"><span data-stu-id="b1bf8-118">Int64</span></span>             |
-| <span data-ttu-id="b1bf8-119">syncedFileCount</span><span class="sxs-lookup"><span data-stu-id="b1bf8-119">syncedFileCount</span></span>           | <span data-ttu-id="b1bf8-120">Int64</span><span class="sxs-lookup"><span data-stu-id="b1bf8-120">Int64</span></span>             |
-| <span data-ttu-id="b1bf8-121">sharedInternallyFileCount</span><span class="sxs-lookup"><span data-stu-id="b1bf8-121">sharedInternallyFileCount</span></span> | <span data-ttu-id="b1bf8-122">Int64</span><span class="sxs-lookup"><span data-stu-id="b1bf8-122">Int64</span></span>             |
-| <span data-ttu-id="b1bf8-123">sharedExternallyFileCount</span><span class="sxs-lookup"><span data-stu-id="b1bf8-123">sharedExternallyFileCount</span></span> | <span data-ttu-id="b1bf8-124">Int64</span><span class="sxs-lookup"><span data-stu-id="b1bf8-124">Int64</span></span>             |
-| <span data-ttu-id="b1bf8-125">visitedPageCount</span><span class="sxs-lookup"><span data-stu-id="b1bf8-125">visitedPageCount</span></span>          | <span data-ttu-id="b1bf8-126">Int64</span><span class="sxs-lookup"><span data-stu-id="b1bf8-126">Int64</span></span>             |
-| <span data-ttu-id="b1bf8-127">assignedProducts</span><span class="sxs-lookup"><span data-stu-id="b1bf8-127">assignedProducts</span></span>          | <span data-ttu-id="b1bf8-128">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="b1bf8-128">String collection</span></span> |
-| <span data-ttu-id="b1bf8-129">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="b1bf8-129">reportPeriod</span></span>              | <span data-ttu-id="b1bf8-130">String</span><span class="sxs-lookup"><span data-stu-id="b1bf8-130">String</span></span>            |
+| <span data-ttu-id="0beba-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="0beba-108">reportRefreshDate</span></span>         | <span data-ttu-id="0beba-109">Data</span><span class="sxs-lookup"><span data-stu-id="0beba-109">Date</span></span>              |
+| <span data-ttu-id="0beba-110">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="0beba-110">userPrincipalName</span></span>         | <span data-ttu-id="0beba-111">String</span><span class="sxs-lookup"><span data-stu-id="0beba-111">String</span></span>            |
+| <span data-ttu-id="0beba-112">isDeleted</span><span class="sxs-lookup"><span data-stu-id="0beba-112">isDeleted</span></span>                 | <span data-ttu-id="0beba-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="0beba-113">Boolean</span></span>           |
+| <span data-ttu-id="0beba-114">deletedDate</span><span class="sxs-lookup"><span data-stu-id="0beba-114">deletedDate</span></span>               | <span data-ttu-id="0beba-115">Data</span><span class="sxs-lookup"><span data-stu-id="0beba-115">Date</span></span>              |
+| <span data-ttu-id="0beba-116">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="0beba-116">lastActivityDate</span></span>          | <span data-ttu-id="0beba-117">Data</span><span class="sxs-lookup"><span data-stu-id="0beba-117">Date</span></span>              |
+| <span data-ttu-id="0beba-118">viewedOrEditedFileCount</span><span class="sxs-lookup"><span data-stu-id="0beba-118">viewedOrEditedFileCount</span></span>   | <span data-ttu-id="0beba-119">Int64</span><span class="sxs-lookup"><span data-stu-id="0beba-119">Int64</span></span>             |
+| <span data-ttu-id="0beba-120">syncedFileCount</span><span class="sxs-lookup"><span data-stu-id="0beba-120">syncedFileCount</span></span>           | <span data-ttu-id="0beba-121">Int64</span><span class="sxs-lookup"><span data-stu-id="0beba-121">Int64</span></span>             |
+| <span data-ttu-id="0beba-122">sharedInternallyFileCount</span><span class="sxs-lookup"><span data-stu-id="0beba-122">sharedInternallyFileCount</span></span> | <span data-ttu-id="0beba-123">Int64</span><span class="sxs-lookup"><span data-stu-id="0beba-123">Int64</span></span>             |
+| <span data-ttu-id="0beba-124">sharedExternallyFileCount</span><span class="sxs-lookup"><span data-stu-id="0beba-124">sharedExternallyFileCount</span></span> | <span data-ttu-id="0beba-125">Int64</span><span class="sxs-lookup"><span data-stu-id="0beba-125">Int64</span></span>             |
+| <span data-ttu-id="0beba-126">visitedPageCount</span><span class="sxs-lookup"><span data-stu-id="0beba-126">visitedPageCount</span></span>          | <span data-ttu-id="0beba-127">Int64</span><span class="sxs-lookup"><span data-stu-id="0beba-127">Int64</span></span>             |
+| <span data-ttu-id="0beba-128">assignedProducts</span><span class="sxs-lookup"><span data-stu-id="0beba-128">assignedProducts</span></span>          | <span data-ttu-id="0beba-129">String collection</span><span class="sxs-lookup"><span data-stu-id="0beba-129">String collection</span></span> |
+| <span data-ttu-id="0beba-130">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="0beba-130">reportPeriod</span></span>              | <span data-ttu-id="0beba-131">String</span><span class="sxs-lookup"><span data-stu-id="0beba-131">String</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="b1bf8-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b1bf8-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0beba-132">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0beba-132">JSON representation</span></span>
 
-<span data-ttu-id="b1bf8-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b1bf8-132">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0beba-133">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0beba-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

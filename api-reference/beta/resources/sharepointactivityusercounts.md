@@ -5,31 +5,33 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 97fbcb8c611bd497a7bf6613a5bde53738aff5e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21690f1fa42da4bfa0e2a9c2df48691f00a9595c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008450"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520699"
 ---
-# <a name="sharepointactivityusercounts-resource-type"></a><span data-ttu-id="ae127-103">tipo de recurso sharePointActivityUserCounts</span><span class="sxs-lookup"><span data-stu-id="ae127-103">sharePointActivityUserCounts resource type</span></span>
+# <a name="sharepointactivityusercounts-resource-type"></a><span data-ttu-id="8785b-103">tipo de recurso sharePointActivityUserCounts</span><span class="sxs-lookup"><span data-stu-id="8785b-103">sharePointActivityUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ae127-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ae127-104">Properties</span></span>
+<span data-ttu-id="8785b-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8785b-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="ae127-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ae127-105">Property</span></span>          | <span data-ttu-id="ae127-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="ae127-106">Type</span></span>   |
+## <a name="properties"></a><span data-ttu-id="8785b-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8785b-105">Properties</span></span>
+
+| <span data-ttu-id="8785b-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8785b-106">Property</span></span>          | <span data-ttu-id="8785b-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="8785b-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="ae127-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="ae127-107">reportRefreshDate</span></span> | <span data-ttu-id="ae127-108">Data</span><span class="sxs-lookup"><span data-stu-id="ae127-108">Date</span></span>   |
-| <span data-ttu-id="ae127-109">visitedPage</span><span class="sxs-lookup"><span data-stu-id="ae127-109">visitedPage</span></span>       | <span data-ttu-id="ae127-110">Int64</span><span class="sxs-lookup"><span data-stu-id="ae127-110">Int64</span></span>  |
-| <span data-ttu-id="ae127-111">viewedOrEdited</span><span class="sxs-lookup"><span data-stu-id="ae127-111">viewedOrEdited</span></span>    | <span data-ttu-id="ae127-112">Int64</span><span class="sxs-lookup"><span data-stu-id="ae127-112">Int64</span></span>  |
-| <span data-ttu-id="ae127-113">sincronizados</span><span class="sxs-lookup"><span data-stu-id="ae127-113">synced</span></span>            | <span data-ttu-id="ae127-114">Int64</span><span class="sxs-lookup"><span data-stu-id="ae127-114">Int64</span></span>  |
-| <span data-ttu-id="ae127-115">sharedInternally</span><span class="sxs-lookup"><span data-stu-id="ae127-115">sharedInternally</span></span>  | <span data-ttu-id="ae127-116">Int64</span><span class="sxs-lookup"><span data-stu-id="ae127-116">Int64</span></span>  |
-| <span data-ttu-id="ae127-117">sharedExternally</span><span class="sxs-lookup"><span data-stu-id="ae127-117">sharedExternally</span></span>  | <span data-ttu-id="ae127-118">Int64</span><span class="sxs-lookup"><span data-stu-id="ae127-118">Int64</span></span>  |
-| <span data-ttu-id="ae127-119">reportDate</span><span class="sxs-lookup"><span data-stu-id="ae127-119">reportDate</span></span>        | <span data-ttu-id="ae127-120">Data</span><span class="sxs-lookup"><span data-stu-id="ae127-120">Date</span></span>   |
-| <span data-ttu-id="ae127-121">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="ae127-121">reportPeriod</span></span>      | <span data-ttu-id="ae127-122">String</span><span class="sxs-lookup"><span data-stu-id="ae127-122">String</span></span> |
+| <span data-ttu-id="8785b-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="8785b-108">reportRefreshDate</span></span> | <span data-ttu-id="8785b-109">Data</span><span class="sxs-lookup"><span data-stu-id="8785b-109">Date</span></span>   |
+| <span data-ttu-id="8785b-110">visitedPage</span><span class="sxs-lookup"><span data-stu-id="8785b-110">visitedPage</span></span>       | <span data-ttu-id="8785b-111">Int64</span><span class="sxs-lookup"><span data-stu-id="8785b-111">Int64</span></span>  |
+| <span data-ttu-id="8785b-112">viewedOrEdited</span><span class="sxs-lookup"><span data-stu-id="8785b-112">viewedOrEdited</span></span>    | <span data-ttu-id="8785b-113">Int64</span><span class="sxs-lookup"><span data-stu-id="8785b-113">Int64</span></span>  |
+| <span data-ttu-id="8785b-114">sincronizados</span><span class="sxs-lookup"><span data-stu-id="8785b-114">synced</span></span>            | <span data-ttu-id="8785b-115">Int64</span><span class="sxs-lookup"><span data-stu-id="8785b-115">Int64</span></span>  |
+| <span data-ttu-id="8785b-116">sharedInternally</span><span class="sxs-lookup"><span data-stu-id="8785b-116">sharedInternally</span></span>  | <span data-ttu-id="8785b-117">Int64</span><span class="sxs-lookup"><span data-stu-id="8785b-117">Int64</span></span>  |
+| <span data-ttu-id="8785b-118">sharedExternally</span><span class="sxs-lookup"><span data-stu-id="8785b-118">sharedExternally</span></span>  | <span data-ttu-id="8785b-119">Int64</span><span class="sxs-lookup"><span data-stu-id="8785b-119">Int64</span></span>  |
+| <span data-ttu-id="8785b-120">reportDate</span><span class="sxs-lookup"><span data-stu-id="8785b-120">reportDate</span></span>        | <span data-ttu-id="8785b-121">Data</span><span class="sxs-lookup"><span data-stu-id="8785b-121">Date</span></span>   |
+| <span data-ttu-id="8785b-122">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="8785b-122">reportPeriod</span></span>      | <span data-ttu-id="8785b-123">String</span><span class="sxs-lookup"><span data-stu-id="8785b-123">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="ae127-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ae127-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8785b-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8785b-124">JSON representation</span></span>
 
-<span data-ttu-id="ae127-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ae127-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8785b-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8785b-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

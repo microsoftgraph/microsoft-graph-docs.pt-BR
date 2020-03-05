@@ -5,30 +5,32 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 05f882a54ab43dce3f985a4913b3f20c4ef3a1f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8aedd6e049e2832c9db637827e8457928d950a3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007708"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519950"
 ---
-# <a name="teamfunsettings-resource-type"></a><span data-ttu-id="2f281-103">tipo de recurso teamFunSettings</span><span class="sxs-lookup"><span data-stu-id="2f281-103">teamFunSettings resource type</span></span>
+# <a name="teamfunsettings-resource-type"></a><span data-ttu-id="1c7d4-103">tipo de recurso teamFunSettings</span><span class="sxs-lookup"><span data-stu-id="1c7d4-103">teamFunSettings resource type</span></span>
+
+<span data-ttu-id="1c7d4-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1c7d4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2f281-104">Configurações para configurar o uso de Giphy, memes e selos na [equipe](team.md).</span><span class="sxs-lookup"><span data-stu-id="2f281-104">Settings to configure use of Giphy, memes, and stickers in the [team](team.md).</span></span>
+<span data-ttu-id="1c7d4-105">Configurações para configurar o uso de Giphy, memes e selos na [equipe](team.md).</span><span class="sxs-lookup"><span data-stu-id="1c7d4-105">Settings to configure use of Giphy, memes, and stickers in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2f281-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2f281-105">Properties</span></span>
-| <span data-ttu-id="2f281-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2f281-106">Property</span></span>     | <span data-ttu-id="2f281-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="2f281-107">Type</span></span>   |<span data-ttu-id="2f281-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="2f281-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1c7d4-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1c7d4-106">Properties</span></span>
+| <span data-ttu-id="1c7d4-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1c7d4-107">Property</span></span>     | <span data-ttu-id="1c7d4-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="1c7d4-108">Type</span></span>   |<span data-ttu-id="1c7d4-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c7d4-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2f281-109">allowGiphy</span><span class="sxs-lookup"><span data-stu-id="2f281-109">allowGiphy</span></span>|<span data-ttu-id="2f281-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="2f281-110">Boolean</span></span>|<span data-ttu-id="2f281-111">Se definido como true, habilita o uso do Giphy.</span><span class="sxs-lookup"><span data-stu-id="2f281-111">If set to true, enables Giphy use.</span></span>|
-|<span data-ttu-id="2f281-112">giphyContentRating</span><span class="sxs-lookup"><span data-stu-id="2f281-112">giphyContentRating</span></span>|<span data-ttu-id="2f281-113">Cadeia de caracteres (enum)</span><span class="sxs-lookup"><span data-stu-id="2f281-113">String (enum)</span></span>|<span data-ttu-id="2f281-114">Classificação de conteúdo do Giphy.</span><span class="sxs-lookup"><span data-stu-id="2f281-114">Giphy content rating.</span></span> <span data-ttu-id="2f281-115">Os valores possíveis são: `moderate` e `strict`.</span><span class="sxs-lookup"><span data-stu-id="2f281-115">Possible values are: `moderate`, `strict`.</span></span>|
-|<span data-ttu-id="2f281-116">allowStickersAndMemes</span><span class="sxs-lookup"><span data-stu-id="2f281-116">allowStickersAndMemes</span></span>|<span data-ttu-id="2f281-117">Booliano</span><span class="sxs-lookup"><span data-stu-id="2f281-117">Boolean</span></span>|<span data-ttu-id="2f281-118">Se definido como true, permite que os usuários incluam adesivos e memes.</span><span class="sxs-lookup"><span data-stu-id="2f281-118">If set to true, enables users to include stickers and memes.</span></span>|
-|<span data-ttu-id="2f281-119">allowCustomMemes</span><span class="sxs-lookup"><span data-stu-id="2f281-119">allowCustomMemes</span></span>|<span data-ttu-id="2f281-120">Booliano</span><span class="sxs-lookup"><span data-stu-id="2f281-120">Boolean</span></span>|<span data-ttu-id="2f281-121">Se definido como true, permite que os usuários incluam memes personalizados.</span><span class="sxs-lookup"><span data-stu-id="2f281-121">If set to true, enables users to include custom memes.</span></span>|
+|<span data-ttu-id="1c7d4-110">allowGiphy</span><span class="sxs-lookup"><span data-stu-id="1c7d4-110">allowGiphy</span></span>|<span data-ttu-id="1c7d4-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="1c7d4-111">Boolean</span></span>|<span data-ttu-id="1c7d4-112">Se definido como true, habilita o uso do Giphy.</span><span class="sxs-lookup"><span data-stu-id="1c7d4-112">If set to true, enables Giphy use.</span></span>|
+|<span data-ttu-id="1c7d4-113">giphyContentRating</span><span class="sxs-lookup"><span data-stu-id="1c7d4-113">giphyContentRating</span></span>|<span data-ttu-id="1c7d4-114">Cadeia de caracteres (enum)</span><span class="sxs-lookup"><span data-stu-id="1c7d4-114">String (enum)</span></span>|<span data-ttu-id="1c7d4-115">Classificação de conteúdo do Giphy.</span><span class="sxs-lookup"><span data-stu-id="1c7d4-115">Giphy content rating.</span></span> <span data-ttu-id="1c7d4-116">Os valores possíveis são: `moderate` e `strict`.</span><span class="sxs-lookup"><span data-stu-id="1c7d4-116">Possible values are: `moderate`, `strict`.</span></span>|
+|<span data-ttu-id="1c7d4-117">allowStickersAndMemes</span><span class="sxs-lookup"><span data-stu-id="1c7d4-117">allowStickersAndMemes</span></span>|<span data-ttu-id="1c7d4-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="1c7d4-118">Boolean</span></span>|<span data-ttu-id="1c7d4-119">Se definido como true, permite que os usuários incluam adesivos e memes.</span><span class="sxs-lookup"><span data-stu-id="1c7d4-119">If set to true, enables users to include stickers and memes.</span></span>|
+|<span data-ttu-id="1c7d4-120">allowCustomMemes</span><span class="sxs-lookup"><span data-stu-id="1c7d4-120">allowCustomMemes</span></span>|<span data-ttu-id="1c7d4-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="1c7d4-121">Boolean</span></span>|<span data-ttu-id="1c7d4-122">Se definido como true, permite que os usuários incluam memes personalizados.</span><span class="sxs-lookup"><span data-stu-id="1c7d4-122">If set to true, enables users to include custom memes.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2f281-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2f281-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1c7d4-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1c7d4-123">JSON representation</span></span>
 
-<span data-ttu-id="2f281-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2f281-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1c7d4-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1c7d4-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

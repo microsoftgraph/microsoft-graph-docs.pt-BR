@@ -5,28 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 68fb44ff091720520c5061f0421d3819a8eed176
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db90f040eef98af1136be7a80323dbedfe0acb92
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965002"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520510"
 ---
-# <a name="sizerange-resource-type"></a><span data-ttu-id="8454b-103">Tipo de recurso sizeRange</span><span class="sxs-lookup"><span data-stu-id="8454b-103">sizeRange resource type</span></span>
+# <a name="sizerange-resource-type"></a><span data-ttu-id="052e4-103">Tipo de recurso sizeRange</span><span class="sxs-lookup"><span data-stu-id="052e4-103">sizeRange resource type</span></span>
+
+<span data-ttu-id="052e4-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="052e4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8454b-104">Especifica os tamanhos mínimo e máximo (em kilobytes) que uma mensagem de entrada deve ter para que a condição ou exceção seja aplicada.</span><span class="sxs-lookup"><span data-stu-id="8454b-104">Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span>
+<span data-ttu-id="052e4-105">Especifica os tamanhos mínimo e máximo (em kilobytes) que uma mensagem de entrada deve ter para que a condição ou exceção seja aplicada.</span><span class="sxs-lookup"><span data-stu-id="052e4-105">Specifies the maximum and minimum sizes (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8454b-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8454b-105">Properties</span></span>
-| <span data-ttu-id="8454b-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8454b-106">Property</span></span>     | <span data-ttu-id="8454b-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="8454b-107">Type</span></span>   |<span data-ttu-id="8454b-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="8454b-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="052e4-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="052e4-106">Properties</span></span>
+| <span data-ttu-id="052e4-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="052e4-107">Property</span></span>     | <span data-ttu-id="052e4-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="052e4-108">Type</span></span>   |<span data-ttu-id="052e4-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="052e4-109">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="8454b-109">maximumSize</span><span class="sxs-lookup"><span data-stu-id="8454b-109">maximumSize</span></span> | <span data-ttu-id="8454b-110">Int32</span><span class="sxs-lookup"><span data-stu-id="8454b-110">Int32</span></span> | <span data-ttu-id="8454b-111">Especifica o tamanho máximo (em kilobytes) que uma mensagem de entrada deve ter para que a condição ou exceção seja aplicada.</span><span class="sxs-lookup"><span data-stu-id="8454b-111">The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
-| <span data-ttu-id="8454b-112">minimumSize</span><span class="sxs-lookup"><span data-stu-id="8454b-112">minimumSize</span></span> | <span data-ttu-id="8454b-113">Int32</span><span class="sxs-lookup"><span data-stu-id="8454b-113">Int32</span></span> | <span data-ttu-id="8454b-114">Especifica o tamanho mínimo (em kilobytes) que uma mensagem de entrada deve ter para que a condição ou exceção seja aplicada.</span><span class="sxs-lookup"><span data-stu-id="8454b-114">The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
+| <span data-ttu-id="052e4-110">maximumSize</span><span class="sxs-lookup"><span data-stu-id="052e4-110">maximumSize</span></span> | <span data-ttu-id="052e4-111">Int32</span><span class="sxs-lookup"><span data-stu-id="052e4-111">Int32</span></span> | <span data-ttu-id="052e4-112">Especifica o tamanho máximo (em kilobytes) que uma mensagem de entrada deve ter para que a condição ou exceção seja aplicada.</span><span class="sxs-lookup"><span data-stu-id="052e4-112">The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
+| <span data-ttu-id="052e4-113">minimumSize</span><span class="sxs-lookup"><span data-stu-id="052e4-113">minimumSize</span></span> | <span data-ttu-id="052e4-114">Int32</span><span class="sxs-lookup"><span data-stu-id="052e4-114">Int32</span></span> | <span data-ttu-id="052e4-115">Especifica o tamanho mínimo (em kilobytes) que uma mensagem de entrada deve ter para que a condição ou exceção seja aplicada.</span><span class="sxs-lookup"><span data-stu-id="052e4-115">The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="8454b-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8454b-115">JSON representation</span></span>
-<span data-ttu-id="8454b-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8454b-116">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="052e4-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="052e4-116">JSON representation</span></span>
+<span data-ttu-id="052e4-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="052e4-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

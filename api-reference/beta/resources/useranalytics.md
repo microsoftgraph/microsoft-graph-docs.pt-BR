@@ -5,40 +5,42 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 51e72d21cfb0e26e46a7d247f4ede59b112893ea
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: ffe6830088bd60c4de9cea8def8e8202d1b33f13
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450691"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519537"
 ---
-# <a name="useranalytics-resource-type"></a><span data-ttu-id="c407c-103">tipo de recurso useranalytics</span><span class="sxs-lookup"><span data-stu-id="c407c-103">userAnalytics resource type</span></span>
+# <a name="useranalytics-resource-type"></a><span data-ttu-id="4489c-103">tipo de recurso useranalytics</span><span class="sxs-lookup"><span data-stu-id="4489c-103">userAnalytics resource type</span></span>
+
+<span data-ttu-id="4489c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4489c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c407c-104">As configurações do usuário e as estatísticas de atividade.</span><span class="sxs-lookup"><span data-stu-id="c407c-104">The user's settings and activity statistics.</span></span>
+<span data-ttu-id="4489c-105">As configurações do usuário e as estatísticas de atividade.</span><span class="sxs-lookup"><span data-stu-id="4489c-105">The user's settings and activity statistics.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="c407c-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="c407c-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="4489c-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="4489c-106">Methods</span></span>
 
-| <span data-ttu-id="c407c-106">Método</span><span class="sxs-lookup"><span data-stu-id="c407c-106">Method</span></span>       | <span data-ttu-id="c407c-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="c407c-107">Return Type</span></span> | <span data-ttu-id="c407c-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="c407c-108">Description</span></span> |
+| <span data-ttu-id="4489c-107">Método</span><span class="sxs-lookup"><span data-stu-id="4489c-107">Method</span></span>       | <span data-ttu-id="4489c-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="4489c-108">Return Type</span></span> | <span data-ttu-id="4489c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4489c-109">Description</span></span> |
 |:-------------|:------------|:------------|
-[<span data-ttu-id="c407c-109">Obter configurações</span><span class="sxs-lookup"><span data-stu-id="c407c-109">Get settings</span></span>](../api/useranalytics-get-settings.md) | [<span data-ttu-id="c407c-110">configurações</span><span class="sxs-lookup"><span data-stu-id="c407c-110">settings</span></span>](settings.md) | <span data-ttu-id="c407c-111">Obter as configurações do usuário para usar a API de análise.</span><span class="sxs-lookup"><span data-stu-id="c407c-111">Get the user's settings for using the analytics API.</span></span>|
+[<span data-ttu-id="4489c-110">Obter configurações</span><span class="sxs-lookup"><span data-stu-id="4489c-110">Get settings</span></span>](../api/useranalytics-get-settings.md) | [<span data-ttu-id="4489c-111">configurações</span><span class="sxs-lookup"><span data-stu-id="4489c-111">settings</span></span>](settings.md) | <span data-ttu-id="4489c-112">Obter as configurações do usuário para usar a API de análise.</span><span class="sxs-lookup"><span data-stu-id="4489c-112">Get the user's settings for using the analytics API.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="c407c-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c407c-112">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4489c-113">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4489c-113">Properties</span></span>
 
-| <span data-ttu-id="c407c-113">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c407c-113">Property</span></span>     | <span data-ttu-id="c407c-114">Tipo</span><span class="sxs-lookup"><span data-stu-id="c407c-114">Type</span></span>        | <span data-ttu-id="c407c-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="c407c-115">Description</span></span> |
+| <span data-ttu-id="4489c-114">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4489c-114">Property</span></span>     | <span data-ttu-id="4489c-115">Tipo</span><span class="sxs-lookup"><span data-stu-id="4489c-115">Type</span></span>        | <span data-ttu-id="4489c-116">Descrição</span><span class="sxs-lookup"><span data-stu-id="4489c-116">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="c407c-116">settings</span><span class="sxs-lookup"><span data-stu-id="c407c-116">settings</span></span>|[<span data-ttu-id="c407c-117">configurações</span><span class="sxs-lookup"><span data-stu-id="c407c-117">settings</span></span>](settings.md)|<span data-ttu-id="c407c-118">As configurações atuais de um usuário para usar a API de análise.</span><span class="sxs-lookup"><span data-stu-id="c407c-118">The current settings for a user to use the analytics API.</span></span>|
+|<span data-ttu-id="4489c-117">configurações</span><span class="sxs-lookup"><span data-stu-id="4489c-117">settings</span></span>|[<span data-ttu-id="4489c-118">configurações</span><span class="sxs-lookup"><span data-stu-id="4489c-118">settings</span></span>](settings.md)|<span data-ttu-id="4489c-119">As configurações atuais de um usuário para usar a API de análise.</span><span class="sxs-lookup"><span data-stu-id="4489c-119">The current settings for a user to use the analytics API.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c407c-119">Relações</span><span class="sxs-lookup"><span data-stu-id="c407c-119">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="4489c-120">Relações</span><span class="sxs-lookup"><span data-stu-id="4489c-120">Relationships</span></span>
 
-| <span data-ttu-id="c407c-120">Relação</span><span class="sxs-lookup"><span data-stu-id="c407c-120">Relationship</span></span> | <span data-ttu-id="c407c-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="c407c-121">Type</span></span>        | <span data-ttu-id="c407c-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="c407c-122">Description</span></span> |
+| <span data-ttu-id="4489c-121">Relação</span><span class="sxs-lookup"><span data-stu-id="4489c-121">Relationship</span></span> | <span data-ttu-id="4489c-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="4489c-122">Type</span></span>        | <span data-ttu-id="4489c-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="4489c-123">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="c407c-123">activityStatistics</span><span class="sxs-lookup"><span data-stu-id="c407c-123">activityStatistics</span></span>|<span data-ttu-id="c407c-124">coleção [activityStatistics](activitystatistics.md)</span><span class="sxs-lookup"><span data-stu-id="c407c-124">[activityStatistics](activitystatistics.md) collection</span></span>| <span data-ttu-id="c407c-125">O conjunto de atividades de trabalho que um usuário gastou enquanto está fora do horário de trabalho.</span><span class="sxs-lookup"><span data-stu-id="c407c-125">The collection of work activities that a user spent time on during and outside of working hours.</span></span> <span data-ttu-id="c407c-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c407c-126">Read-only.</span></span> <span data-ttu-id="c407c-127">Anulável.</span><span class="sxs-lookup"><span data-stu-id="c407c-127">Nullable.</span></span>|
+|<span data-ttu-id="4489c-124">activityStatistics</span><span class="sxs-lookup"><span data-stu-id="4489c-124">activityStatistics</span></span>|<span data-ttu-id="4489c-125">coleção [activityStatistics](activitystatistics.md)</span><span class="sxs-lookup"><span data-stu-id="4489c-125">[activityStatistics](activitystatistics.md) collection</span></span>| <span data-ttu-id="4489c-126">O conjunto de atividades de trabalho que um usuário gastou enquanto está fora do horário de trabalho.</span><span class="sxs-lookup"><span data-stu-id="4489c-126">The collection of work activities that a user spent time on during and outside of working hours.</span></span> <span data-ttu-id="4489c-127">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4489c-127">Read-only.</span></span> <span data-ttu-id="4489c-128">Anulável.</span><span class="sxs-lookup"><span data-stu-id="4489c-128">Nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c407c-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c407c-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4489c-129">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4489c-129">JSON representation</span></span>
 
-<span data-ttu-id="c407c-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c407c-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4489c-130">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4489c-130">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

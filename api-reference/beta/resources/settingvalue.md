@@ -5,29 +5,31 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d8e652501f8cd96e3e820e61b4ad9d353b61f3fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 673627d726475708c79445f818f23104f0582ef7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008471"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520819"
 ---
-# <a name="settingvalue-resource-type"></a><span data-ttu-id="2afec-103">tipo de recurso SettingValue</span><span class="sxs-lookup"><span data-stu-id="2afec-103">settingValue resource type</span></span>
+# <a name="settingvalue-resource-type"></a><span data-ttu-id="0ba97-103">tipo de recurso SettingValue</span><span class="sxs-lookup"><span data-stu-id="0ba97-103">settingValue resource type</span></span>
+
+<span data-ttu-id="0ba97-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0ba97-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2afec-104">Uma configuração representada por um par de nome/valor.</span><span class="sxs-lookup"><span data-stu-id="2afec-104">A setting represented by a name/value pair.</span></span>
+<span data-ttu-id="0ba97-105">Uma configuração representada por um par de nome/valor.</span><span class="sxs-lookup"><span data-stu-id="0ba97-105">A setting represented by a name/value pair.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="2afec-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2afec-105">Properties</span></span>
-| <span data-ttu-id="2afec-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2afec-106">Property</span></span>     | <span data-ttu-id="2afec-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="2afec-107">Type</span></span>   |<span data-ttu-id="2afec-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="2afec-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0ba97-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0ba97-106">Properties</span></span>
+| <span data-ttu-id="0ba97-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0ba97-107">Property</span></span>     | <span data-ttu-id="0ba97-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="0ba97-108">Type</span></span>   |<span data-ttu-id="0ba97-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="0ba97-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2afec-109">name</span><span class="sxs-lookup"><span data-stu-id="2afec-109">name</span></span>|<span data-ttu-id="2afec-110">string</span><span class="sxs-lookup"><span data-stu-id="2afec-110">string</span></span>|<span data-ttu-id="2afec-111">Nome da configuração (conforme definido pelo directorySettingTemplate).</span><span class="sxs-lookup"><span data-stu-id="2afec-111">Name of the setting (as defined by the directorySettingTemplate).</span></span>|
-|<span data-ttu-id="2afec-112">value</span><span class="sxs-lookup"><span data-stu-id="2afec-112">value</span></span>|<span data-ttu-id="2afec-113">string</span><span class="sxs-lookup"><span data-stu-id="2afec-113">string</span></span>|<span data-ttu-id="2afec-114">Valor da configuração.</span><span class="sxs-lookup"><span data-stu-id="2afec-114">Value of the setting.</span></span>|
+|<span data-ttu-id="0ba97-110">nome</span><span class="sxs-lookup"><span data-stu-id="0ba97-110">name</span></span>|<span data-ttu-id="0ba97-111">string</span><span class="sxs-lookup"><span data-stu-id="0ba97-111">string</span></span>|<span data-ttu-id="0ba97-112">Nome da configuração (conforme definido pelo directorySettingTemplate).</span><span class="sxs-lookup"><span data-stu-id="0ba97-112">Name of the setting (as defined by the directorySettingTemplate).</span></span>|
+|<span data-ttu-id="0ba97-113">value</span><span class="sxs-lookup"><span data-stu-id="0ba97-113">value</span></span>|<span data-ttu-id="0ba97-114">string</span><span class="sxs-lookup"><span data-stu-id="0ba97-114">string</span></span>|<span data-ttu-id="0ba97-115">Valor da configuração.</span><span class="sxs-lookup"><span data-stu-id="0ba97-115">Value of the setting.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2afec-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2afec-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0ba97-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0ba97-116">JSON representation</span></span>
 
-<span data-ttu-id="2afec-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2afec-116">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0ba97-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0ba97-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bdc4c54f9f5676496ae64e97b1ce14e3918e7cc9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 9a2ac5e0e8656cf6d7dcde2528d7ca000368d640
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913314"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507793"
 ---
-# <a name="callroute-resource-type"></a><span data-ttu-id="e41e7-103">tipo de recurso callRoute</span><span class="sxs-lookup"><span data-stu-id="e41e7-103">callRoute resource type</span></span>
+# <a name="callroute-resource-type"></a><span data-ttu-id="526c8-103">tipo de recurso callRoute</span><span class="sxs-lookup"><span data-stu-id="526c8-103">callRoute resource type</span></span>
+
+<span data-ttu-id="526c8-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="526c8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e41e7-104">O tipo callRoute.</span><span class="sxs-lookup"><span data-stu-id="e41e7-104">The callRoute type.</span></span>
+<span data-ttu-id="526c8-105">O tipo callRoute.</span><span class="sxs-lookup"><span data-stu-id="526c8-105">The callRoute type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e41e7-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e41e7-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="526c8-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="526c8-106">Properties</span></span>
 
-| <span data-ttu-id="e41e7-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e41e7-106">Property</span></span>            | <span data-ttu-id="e41e7-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="e41e7-107">Type</span></span>                          | <span data-ttu-id="e41e7-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="e41e7-108">Description</span></span>                                                  |
+| <span data-ttu-id="526c8-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="526c8-107">Property</span></span>            | <span data-ttu-id="526c8-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="526c8-108">Type</span></span>                          | <span data-ttu-id="526c8-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="526c8-109">Description</span></span>                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="e41e7-109">recente</span><span class="sxs-lookup"><span data-stu-id="e41e7-109">final</span></span>               | [<span data-ttu-id="e41e7-110">identitySet</span><span class="sxs-lookup"><span data-stu-id="e41e7-110">identitySet</span></span>](identityset.md) | <span data-ttu-id="e41e7-111">A identidade que foi resolvida para na chamada.</span><span class="sxs-lookup"><span data-stu-id="e41e7-111">The identity that was resolved to in the call.</span></span>               |
-| <span data-ttu-id="e41e7-112">Original</span><span class="sxs-lookup"><span data-stu-id="e41e7-112">original</span></span>            | [<span data-ttu-id="e41e7-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="e41e7-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="e41e7-114">A identidade que foi usada originalmente na chamada.</span><span class="sxs-lookup"><span data-stu-id="e41e7-114">The identity that was originally used in the call.</span></span>           |
-| <span data-ttu-id="e41e7-115">RoutingType</span><span class="sxs-lookup"><span data-stu-id="e41e7-115">routingType</span></span>         | <span data-ttu-id="e41e7-116">String</span><span class="sxs-lookup"><span data-stu-id="e41e7-116">String</span></span>                        | <span data-ttu-id="e41e7-117">Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.</span><span class="sxs-lookup"><span data-stu-id="e41e7-117">Possible values are: `forwarded`, `lookup`, `selfFork`.</span></span>  |
+| <span data-ttu-id="526c8-110">recente</span><span class="sxs-lookup"><span data-stu-id="526c8-110">final</span></span>               | [<span data-ttu-id="526c8-111">identitySet</span><span class="sxs-lookup"><span data-stu-id="526c8-111">identitySet</span></span>](identityset.md) | <span data-ttu-id="526c8-112">A identidade que foi resolvida para na chamada.</span><span class="sxs-lookup"><span data-stu-id="526c8-112">The identity that was resolved to in the call.</span></span>               |
+| <span data-ttu-id="526c8-113">Original</span><span class="sxs-lookup"><span data-stu-id="526c8-113">original</span></span>            | [<span data-ttu-id="526c8-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="526c8-114">identitySet</span></span>](identityset.md) | <span data-ttu-id="526c8-115">A identidade que foi usada originalmente na chamada.</span><span class="sxs-lookup"><span data-stu-id="526c8-115">The identity that was originally used in the call.</span></span>           |
+| <span data-ttu-id="526c8-116">RoutingType</span><span class="sxs-lookup"><span data-stu-id="526c8-116">routingType</span></span>         | <span data-ttu-id="526c8-117">String</span><span class="sxs-lookup"><span data-stu-id="526c8-117">String</span></span>                        | <span data-ttu-id="526c8-118">Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.</span><span class="sxs-lookup"><span data-stu-id="526c8-118">Possible values are: `forwarded`, `lookup`, `selfFork`.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="e41e7-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e41e7-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="526c8-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="526c8-119">JSON representation</span></span>
 
-<span data-ttu-id="e41e7-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e41e7-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="526c8-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="526c8-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

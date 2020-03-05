@@ -5,30 +5,32 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 0f822c38c57d5e47d39a40b3285773e0e36fd2ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ebdfef4a8ee4e11c2993dbd97a735c6e01960b6b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964128"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519425"
 ---
-# <a name="website-resource-type"></a><span data-ttu-id="89db5-103">tipo de recurso site</span><span class="sxs-lookup"><span data-stu-id="89db5-103">website resource type</span></span>
+# <a name="website-resource-type"></a><span data-ttu-id="a33d9-103">tipo de recurso site</span><span class="sxs-lookup"><span data-stu-id="a33d9-103">website resource type</span></span>
+
+<span data-ttu-id="a33d9-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a33d9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="89db5-104">Representa um site da Web.</span><span class="sxs-lookup"><span data-stu-id="89db5-104">Represents a web site.</span></span>
+<span data-ttu-id="a33d9-105">Representa um site da Web.</span><span class="sxs-lookup"><span data-stu-id="a33d9-105">Represents a web site.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="89db5-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="89db5-105">Properties</span></span>
-| <span data-ttu-id="89db5-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="89db5-106">Property</span></span>     | <span data-ttu-id="89db5-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="89db5-107">Type</span></span>   |<span data-ttu-id="89db5-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="89db5-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a33d9-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a33d9-106">Properties</span></span>
+| <span data-ttu-id="a33d9-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a33d9-107">Property</span></span>     | <span data-ttu-id="a33d9-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a33d9-108">Type</span></span>   |<span data-ttu-id="a33d9-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a33d9-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="89db5-109">type</span><span class="sxs-lookup"><span data-stu-id="89db5-109">type</span></span>|<span data-ttu-id="89db5-110">String</span><span class="sxs-lookup"><span data-stu-id="89db5-110">String</span></span>| <span data-ttu-id="89db5-111">Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="89db5-111">Possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
-|<span data-ttu-id="89db5-112">address</span><span class="sxs-lookup"><span data-stu-id="89db5-112">address</span></span>|<span data-ttu-id="89db5-113">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="89db5-113">string</span></span>|<span data-ttu-id="89db5-114">A URL do site.</span><span class="sxs-lookup"><span data-stu-id="89db5-114">The URL of the website.</span></span>|
-|<span data-ttu-id="89db5-115">displayName</span><span class="sxs-lookup"><span data-stu-id="89db5-115">displayName</span></span>|<span data-ttu-id="89db5-116">string</span><span class="sxs-lookup"><span data-stu-id="89db5-116">string</span></span>|<span data-ttu-id="89db5-117">O nome de exibição do site da Web.</span><span class="sxs-lookup"><span data-stu-id="89db5-117">The display name of the web site.</span></span>|
+|<span data-ttu-id="a33d9-110">type</span><span class="sxs-lookup"><span data-stu-id="a33d9-110">type</span></span>|<span data-ttu-id="a33d9-111">String</span><span class="sxs-lookup"><span data-stu-id="a33d9-111">String</span></span>| <span data-ttu-id="a33d9-112">Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="a33d9-112">Possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
+|<span data-ttu-id="a33d9-113">address</span><span class="sxs-lookup"><span data-stu-id="a33d9-113">address</span></span>|<span data-ttu-id="a33d9-114">string</span><span class="sxs-lookup"><span data-stu-id="a33d9-114">string</span></span>|<span data-ttu-id="a33d9-115">A URL do site.</span><span class="sxs-lookup"><span data-stu-id="a33d9-115">The URL of the website.</span></span>|
+|<span data-ttu-id="a33d9-116">displayName</span><span class="sxs-lookup"><span data-stu-id="a33d9-116">displayName</span></span>|<span data-ttu-id="a33d9-117">string</span><span class="sxs-lookup"><span data-stu-id="a33d9-117">string</span></span>|<span data-ttu-id="a33d9-118">O nome de exibição do site da Web.</span><span class="sxs-lookup"><span data-stu-id="a33d9-118">The display name of the web site.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="89db5-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="89db5-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a33d9-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a33d9-119">JSON representation</span></span>
 
-<span data-ttu-id="89db5-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="89db5-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a33d9-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a33d9-120">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

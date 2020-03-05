@@ -5,32 +5,34 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1658114615c4532f0a7f9b9f5ad3c3a25deff81b
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 4275730cfd7c9c9c58496b674062ffedb5d7a6cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349317"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521324"
 ---
-# <a name="provisioningstep-resource-type"></a><span data-ttu-id="568d9-103">tipo de recurso provisioningStep</span><span class="sxs-lookup"><span data-stu-id="568d9-103">provisioningStep resource type</span></span>
+# <a name="provisioningstep-resource-type"></a><span data-ttu-id="42046-103">tipo de recurso provisioningStep</span><span class="sxs-lookup"><span data-stu-id="42046-103">provisioningStep resource type</span></span>
+
+<span data-ttu-id="42046-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="42046-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="568d9-104">Descreve as etapas executadas para executar uma ação.</span><span class="sxs-lookup"><span data-stu-id="568d9-104">Describes the steps taken to perform an action.</span></span>
+<span data-ttu-id="42046-105">Descreve as etapas executadas para executar uma ação.</span><span class="sxs-lookup"><span data-stu-id="42046-105">Describes the steps taken to perform an action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="568d9-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="568d9-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="42046-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="42046-106">Properties</span></span>
 
-| <span data-ttu-id="568d9-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="568d9-106">Property</span></span>     | <span data-ttu-id="568d9-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="568d9-107">Type</span></span>        | <span data-ttu-id="568d9-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="568d9-108">Description</span></span> |
+| <span data-ttu-id="42046-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="42046-107">Property</span></span>     | <span data-ttu-id="42046-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="42046-108">Type</span></span>        | <span data-ttu-id="42046-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="42046-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="568d9-109">description</span><span class="sxs-lookup"><span data-stu-id="568d9-109">description</span></span>|<span data-ttu-id="568d9-110">String</span><span class="sxs-lookup"><span data-stu-id="568d9-110">String</span></span>|<span data-ttu-id="568d9-111">Resumo do que ocorreu durante a etapa.</span><span class="sxs-lookup"><span data-stu-id="568d9-111">Summary of what occurred during the step.</span></span>|
-|<span data-ttu-id="568d9-112">detalhes</span><span class="sxs-lookup"><span data-stu-id="568d9-112">details</span></span>|[<span data-ttu-id="568d9-113">detailsInfo</span><span class="sxs-lookup"><span data-stu-id="568d9-113">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="568d9-114">Detalhes sobre o que ocorreu durante a etapa.</span><span class="sxs-lookup"><span data-stu-id="568d9-114">Details of what occurred during the step.</span></span>|
-|<span data-ttu-id="568d9-115">name</span><span class="sxs-lookup"><span data-stu-id="568d9-115">name</span></span>|<span data-ttu-id="568d9-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="568d9-116">String</span></span>|<span data-ttu-id="568d9-117">Nome da etapa.</span><span class="sxs-lookup"><span data-stu-id="568d9-117">Name of the step.</span></span>|
-|<span data-ttu-id="568d9-118">provisioningStepType</span><span class="sxs-lookup"><span data-stu-id="568d9-118">provisioningStepType</span></span>|<span data-ttu-id="568d9-119">String</span><span class="sxs-lookup"><span data-stu-id="568d9-119">String</span></span>| <span data-ttu-id="568d9-120">Tipo de etapa.</span><span class="sxs-lookup"><span data-stu-id="568d9-120">Type of step.</span></span> <span data-ttu-id="568d9-121">Os valores possíveis são: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="568d9-121">Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="568d9-122">status</span><span class="sxs-lookup"><span data-stu-id="568d9-122">status</span></span>|<span data-ttu-id="568d9-123">String</span><span class="sxs-lookup"><span data-stu-id="568d9-123">String</span></span>| <span data-ttu-id="568d9-124">Status da etapa.</span><span class="sxs-lookup"><span data-stu-id="568d9-124">Status of the step.</span></span> <span data-ttu-id="568d9-125">Os valores possíveis são: `success`, `failure`, `skipped`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="568d9-125">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="42046-110">description</span><span class="sxs-lookup"><span data-stu-id="42046-110">description</span></span>|<span data-ttu-id="42046-111">String</span><span class="sxs-lookup"><span data-stu-id="42046-111">String</span></span>|<span data-ttu-id="42046-112">Resumo do que ocorreu durante a etapa.</span><span class="sxs-lookup"><span data-stu-id="42046-112">Summary of what occurred during the step.</span></span>|
+|<span data-ttu-id="42046-113">detalhes</span><span class="sxs-lookup"><span data-stu-id="42046-113">details</span></span>|[<span data-ttu-id="42046-114">detailsInfo</span><span class="sxs-lookup"><span data-stu-id="42046-114">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="42046-115">Detalhes sobre o que ocorreu durante a etapa.</span><span class="sxs-lookup"><span data-stu-id="42046-115">Details of what occurred during the step.</span></span>|
+|<span data-ttu-id="42046-116">nome</span><span class="sxs-lookup"><span data-stu-id="42046-116">name</span></span>|<span data-ttu-id="42046-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="42046-117">String</span></span>|<span data-ttu-id="42046-118">Nome da etapa.</span><span class="sxs-lookup"><span data-stu-id="42046-118">Name of the step.</span></span>|
+|<span data-ttu-id="42046-119">provisioningStepType</span><span class="sxs-lookup"><span data-stu-id="42046-119">provisioningStepType</span></span>|<span data-ttu-id="42046-120">String</span><span class="sxs-lookup"><span data-stu-id="42046-120">String</span></span>| <span data-ttu-id="42046-121">Tipo de etapa.</span><span class="sxs-lookup"><span data-stu-id="42046-121">Type of step.</span></span> <span data-ttu-id="42046-122">Os valores possíveis são: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="42046-122">Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="42046-123">status</span><span class="sxs-lookup"><span data-stu-id="42046-123">status</span></span>|<span data-ttu-id="42046-124">String</span><span class="sxs-lookup"><span data-stu-id="42046-124">String</span></span>| <span data-ttu-id="42046-125">Status da etapa.</span><span class="sxs-lookup"><span data-stu-id="42046-125">Status of the step.</span></span> <span data-ttu-id="42046-126">Os valores possíveis são: `success`, `failure`, `skipped`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="42046-126">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="568d9-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="568d9-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="42046-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="42046-127">JSON representation</span></span>
 
-<span data-ttu-id="568d9-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="568d9-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="42046-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="42046-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

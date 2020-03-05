@@ -5,36 +5,38 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 317120eb7c4138d955bf8a35030375180d5a1631
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: fe9d3f469b088611c41e006de128a2c695074657
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638544"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507510"
 ---
-# <a name="conditionalaccesssessioncontrols-resource-type"></a><span data-ttu-id="064ae-103">tipo de recurso conditionalAccessSessionControls</span><span class="sxs-lookup"><span data-stu-id="064ae-103">conditionalAccessSessionControls resource type</span></span>
+# <a name="conditionalaccesssessioncontrols-resource-type"></a><span data-ttu-id="435ba-103">tipo de recurso conditionalAccessSessionControls</span><span class="sxs-lookup"><span data-stu-id="435ba-103">conditionalAccessSessionControls resource type</span></span>
+
+<span data-ttu-id="435ba-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="435ba-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="064ae-104">Representa os controles de sessão que são aplicados após a entrada.</span><span class="sxs-lookup"><span data-stu-id="064ae-104">Represents session controls that are enforced after sign-in.</span></span>
-<span data-ttu-id="064ae-105">Todos os controles de sessão herdam de [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).</span><span class="sxs-lookup"><span data-stu-id="064ae-105">All the session controls inherit from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).</span></span>
+<span data-ttu-id="435ba-105">Representa os controles de sessão que são aplicados após a entrada.</span><span class="sxs-lookup"><span data-stu-id="435ba-105">Represents session controls that are enforced after sign-in.</span></span>
+<span data-ttu-id="435ba-106">Todos os controles de sessão herdam de [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).</span><span class="sxs-lookup"><span data-stu-id="435ba-106">All the session controls inherit from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="064ae-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="064ae-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="435ba-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="435ba-107">Properties</span></span>
 
-| <span data-ttu-id="064ae-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="064ae-107">Property</span></span>     | <span data-ttu-id="064ae-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="064ae-108">Type</span></span>        | <span data-ttu-id="064ae-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="064ae-109">Description</span></span> |
+| <span data-ttu-id="435ba-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="435ba-108">Property</span></span>     | <span data-ttu-id="435ba-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="435ba-109">Type</span></span>        | <span data-ttu-id="435ba-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="435ba-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="064ae-110">applicationEnforcedRestrictions</span><span class="sxs-lookup"><span data-stu-id="064ae-110">applicationEnforcedRestrictions</span></span>|[<span data-ttu-id="064ae-111">applicationEnforcedRestrictionsSessionControl</span><span class="sxs-lookup"><span data-stu-id="064ae-111">applicationEnforcedRestrictionsSessionControl</span></span>](applicationenforcedrestrictionssessioncontrol.md)| <span data-ttu-id="064ae-112">Controle de sessão para impor restrições de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="064ae-112">Session control to enforce application restrictions.</span></span> <span data-ttu-id="064ae-113">Somente o Exchange Online e o SharePoint Online dão suporte a esse controle de sessão.</span><span class="sxs-lookup"><span data-stu-id="064ae-113">Only Exchange Online and Sharepoint Online support this session control.</span></span> |
-|<span data-ttu-id="064ae-114">cloudAppSecurity</span><span class="sxs-lookup"><span data-stu-id="064ae-114">cloudAppSecurity</span></span>|[<span data-ttu-id="064ae-115">cloudAppSecuritySessionControl</span><span class="sxs-lookup"><span data-stu-id="064ae-115">cloudAppSecuritySessionControl</span></span>](cloudappsecuritysessioncontrol.md)| <span data-ttu-id="064ae-116">Controle de sessão para aplicar o Cloud app Security.</span><span class="sxs-lookup"><span data-stu-id="064ae-116">Session control to apply cloud app security.</span></span>|
-|<span data-ttu-id="064ae-117">persistentBrowser</span><span class="sxs-lookup"><span data-stu-id="064ae-117">persistentBrowser</span></span>|[<span data-ttu-id="064ae-118">persistentBrowserSessionControl</span><span class="sxs-lookup"><span data-stu-id="064ae-118">persistentBrowserSessionControl</span></span>](persistentbrowsersessioncontrol.md)| <span data-ttu-id="064ae-119">Controle de sessão para definir se deseja persistir cookies ou não.</span><span class="sxs-lookup"><span data-stu-id="064ae-119">Session control to define whether to persist cookies or not.</span></span> <span data-ttu-id="064ae-120">Todos os aplicativos devem ser selecionados para que esse controle de sessão funcione corretamente.</span><span class="sxs-lookup"><span data-stu-id="064ae-120">All apps should be selected for this session control to work correctly.</span></span> |
-|<span data-ttu-id="064ae-121">signInFrequency</span><span class="sxs-lookup"><span data-stu-id="064ae-121">signInFrequency</span></span>|[<span data-ttu-id="064ae-122">signInFrequencySessionControl</span><span class="sxs-lookup"><span data-stu-id="064ae-122">signInFrequencySessionControl</span></span>](signinfrequencysessioncontrol.md)| <span data-ttu-id="064ae-123">Controle de sessão para impor a frequência de entrada.</span><span class="sxs-lookup"><span data-stu-id="064ae-123">Session control to enforce signin frequency.</span></span>|
+|<span data-ttu-id="435ba-111">applicationEnforcedRestrictions</span><span class="sxs-lookup"><span data-stu-id="435ba-111">applicationEnforcedRestrictions</span></span>|[<span data-ttu-id="435ba-112">applicationEnforcedRestrictionsSessionControl</span><span class="sxs-lookup"><span data-stu-id="435ba-112">applicationEnforcedRestrictionsSessionControl</span></span>](applicationenforcedrestrictionssessioncontrol.md)| <span data-ttu-id="435ba-113">Controle de sessão para impor restrições de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="435ba-113">Session control to enforce application restrictions.</span></span> <span data-ttu-id="435ba-114">Somente o Exchange Online e o SharePoint Online dão suporte a esse controle de sessão.</span><span class="sxs-lookup"><span data-stu-id="435ba-114">Only Exchange Online and Sharepoint Online support this session control.</span></span> |
+|<span data-ttu-id="435ba-115">cloudAppSecurity</span><span class="sxs-lookup"><span data-stu-id="435ba-115">cloudAppSecurity</span></span>|[<span data-ttu-id="435ba-116">cloudAppSecuritySessionControl</span><span class="sxs-lookup"><span data-stu-id="435ba-116">cloudAppSecuritySessionControl</span></span>](cloudappsecuritysessioncontrol.md)| <span data-ttu-id="435ba-117">Controle de sessão para aplicar o Cloud app Security.</span><span class="sxs-lookup"><span data-stu-id="435ba-117">Session control to apply cloud app security.</span></span>|
+|<span data-ttu-id="435ba-118">persistentBrowser</span><span class="sxs-lookup"><span data-stu-id="435ba-118">persistentBrowser</span></span>|[<span data-ttu-id="435ba-119">persistentBrowserSessionControl</span><span class="sxs-lookup"><span data-stu-id="435ba-119">persistentBrowserSessionControl</span></span>](persistentbrowsersessioncontrol.md)| <span data-ttu-id="435ba-120">Controle de sessão para definir se deseja persistir cookies ou não.</span><span class="sxs-lookup"><span data-stu-id="435ba-120">Session control to define whether to persist cookies or not.</span></span> <span data-ttu-id="435ba-121">Todos os aplicativos devem ser selecionados para que esse controle de sessão funcione corretamente.</span><span class="sxs-lookup"><span data-stu-id="435ba-121">All apps should be selected for this session control to work correctly.</span></span> |
+|<span data-ttu-id="435ba-122">signInFrequency</span><span class="sxs-lookup"><span data-stu-id="435ba-122">signInFrequency</span></span>|[<span data-ttu-id="435ba-123">signInFrequencySessionControl</span><span class="sxs-lookup"><span data-stu-id="435ba-123">signInFrequencySessionControl</span></span>](signinfrequencysessioncontrol.md)| <span data-ttu-id="435ba-124">Controle de sessão para impor a frequência de entrada.</span><span class="sxs-lookup"><span data-stu-id="435ba-124">Session control to enforce signin frequency.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="064ae-124">Relações</span><span class="sxs-lookup"><span data-stu-id="064ae-124">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="435ba-125">Relações</span><span class="sxs-lookup"><span data-stu-id="435ba-125">Relationships</span></span>
 
-<span data-ttu-id="064ae-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="064ae-125">None.</span></span>
+<span data-ttu-id="435ba-126">Nenhum</span><span class="sxs-lookup"><span data-stu-id="435ba-126">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="064ae-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="064ae-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="435ba-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="435ba-127">JSON representation</span></span>
 
-<span data-ttu-id="064ae-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="064ae-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="435ba-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="435ba-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

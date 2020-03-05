@@ -1,32 +1,34 @@
 ---
 title: tipo de recurso educationPowerPointResource
-description: 'Uma subclasse de educationResource. Este é um recurso do PowerPoint. O arquivo do PowerPoint deve ser carregado no **** diretório fileresource associado ao '
+description: 'Uma subclasse de educationResource. Este é um recurso do PowerPoint. O arquivo do PowerPoint deve ser carregado no diretório **fileresource** associado ao '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 72ab3435ed30602bbd9b2fadf9a6f4d0879e9198
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82bd2a49b95bfb8e880869c753556e9cde868236
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972594"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501294"
 ---
-# <a name="educationpowerpointresource-resource-type"></a><span data-ttu-id="119f9-105">tipo de recurso educationPowerPointResource</span><span class="sxs-lookup"><span data-stu-id="119f9-105">educationPowerPointResource resource type</span></span>
+# <a name="educationpowerpointresource-resource-type"></a><span data-ttu-id="7b5a9-105">tipo de recurso educationPowerPointResource</span><span class="sxs-lookup"><span data-stu-id="7b5a9-105">educationPowerPointResource resource type</span></span>
+
+<span data-ttu-id="7b5a9-106">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="7b5a9-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="119f9-106">Uma subclasse de [educationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="119f9-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="119f9-107">Este é um recurso do PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="119f9-107">This is a PowerPoint resource.</span></span> <span data-ttu-id="119f9-108">O arquivo do PowerPoint deve ser carregado no \*\*\*\* diretório fileresource associado à atribuição ou ao envio.</span><span class="sxs-lookup"><span data-stu-id="119f9-108">The PowerPoint file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
+<span data-ttu-id="7b5a9-107">Uma subclasse de [educationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="7b5a9-107">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="7b5a9-108">Este é um recurso do PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="7b5a9-108">This is a PowerPoint resource.</span></span> <span data-ttu-id="7b5a9-109">O arquivo do PowerPoint deve ser carregado no diretório **fileresource** associado à atribuição ou ao envio.</span><span class="sxs-lookup"><span data-stu-id="7b5a9-109">The PowerPoint file must be uploaded in the **fileResource** directory associated with the assignment or submission.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="119f9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="119f9-109">Properties</span></span>
-| <span data-ttu-id="119f9-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="119f9-110">Property</span></span>     | <span data-ttu-id="119f9-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="119f9-111">Type</span></span>   |<span data-ttu-id="119f9-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="119f9-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7b5a9-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7b5a9-110">Properties</span></span>
+| <span data-ttu-id="7b5a9-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7b5a9-111">Property</span></span>     | <span data-ttu-id="7b5a9-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="7b5a9-112">Type</span></span>   |<span data-ttu-id="7b5a9-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b5a9-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="119f9-113">fileUrl</span><span class="sxs-lookup"><span data-stu-id="119f9-113">fileUrl</span></span>|<span data-ttu-id="119f9-114">String</span><span class="sxs-lookup"><span data-stu-id="119f9-114">String</span></span>|<span data-ttu-id="119f9-115">Local do arquivo no disco.</span><span class="sxs-lookup"><span data-stu-id="119f9-115">Location of the file on disk.</span></span>|
+|<span data-ttu-id="7b5a9-114">fileUrl</span><span class="sxs-lookup"><span data-stu-id="7b5a9-114">fileUrl</span></span>|<span data-ttu-id="7b5a9-115">String</span><span class="sxs-lookup"><span data-stu-id="7b5a9-115">String</span></span>|<span data-ttu-id="7b5a9-116">Local do arquivo no disco.</span><span class="sxs-lookup"><span data-stu-id="7b5a9-116">Location of the file on disk.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="119f9-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="119f9-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7b5a9-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7b5a9-117">JSON representation</span></span>
 
-<span data-ttu-id="119f9-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="119f9-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7b5a9-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7b5a9-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

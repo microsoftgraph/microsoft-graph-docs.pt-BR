@@ -5,25 +5,27 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b93e01bf6274591282fd5e486bebb878672d8cc3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65eda1c24fee112ef18fc6682b537f92f924dcf8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973227"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507573"
 ---
-#  <a name="complianceinformation-resource-type"></a><span data-ttu-id="c3220-103">tipo de recurso complianceInformation</span><span class="sxs-lookup"><span data-stu-id="c3220-103">complianceInformation resource type</span></span>
+#  <a name="complianceinformation-resource-type"></a><span data-ttu-id="d3546-103">tipo de recurso complianceInformation</span><span class="sxs-lookup"><span data-stu-id="d3546-103">complianceInformation resource type</span></span>
 
-<span data-ttu-id="c3220-104">Contém dados de conformidade associados ao controle de Pontuação segura.</span><span class="sxs-lookup"><span data-stu-id="c3220-104">Contains compliance data associated with secure score control.</span></span>
+<span data-ttu-id="d3546-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d3546-104">Namespace: microsoft.graph</span></span>
 
-|<span data-ttu-id="c3220-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c3220-105">Property</span></span> |<span data-ttu-id="c3220-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="c3220-106">Type</span></span> |<span data-ttu-id="c3220-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="c3220-107">Description</span></span> |
+<span data-ttu-id="d3546-105">Contém dados de conformidade associados ao controle de Pontuação segura.</span><span class="sxs-lookup"><span data-stu-id="d3546-105">Contains compliance data associated with secure score control.</span></span>
+
+|<span data-ttu-id="d3546-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3546-106">Property</span></span> |<span data-ttu-id="d3546-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3546-107">Type</span></span> |<span data-ttu-id="d3546-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3546-108">Description</span></span> |
 |:--|:--|:--|
-|<span data-ttu-id="c3220-108">certificaname</span><span class="sxs-lookup"><span data-stu-id="c3220-108">certificationName</span></span> | <span data-ttu-id="c3220-109">string</span><span class="sxs-lookup"><span data-stu-id="c3220-109">string</span></span> | <span data-ttu-id="c3220-110">Nome de certificação de conformidade (por exemplo, ISO 27018:2014, RGPD, FedRAMP, NIST 800-171)</span><span class="sxs-lookup"><span data-stu-id="c3220-110">Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)</span></span> |
-|<span data-ttu-id="c3220-111">certificationControls</span><span class="sxs-lookup"><span data-stu-id="c3220-111">certificationControls</span></span> | <span data-ttu-id="c3220-112">coleção [certificationControl](certificationcontrol.md)</span><span class="sxs-lookup"><span data-stu-id="c3220-112">[certificationControl](certificationcontrol.md) collection</span></span> | <span data-ttu-id="c3220-113">Coleção de controles de certificação associados à certificação</span><span class="sxs-lookup"><span data-stu-id="c3220-113">Collection of the certification controls associated with certification</span></span> |
+|<span data-ttu-id="d3546-109">certificaname</span><span class="sxs-lookup"><span data-stu-id="d3546-109">certificationName</span></span> | <span data-ttu-id="d3546-110">string</span><span class="sxs-lookup"><span data-stu-id="d3546-110">string</span></span> | <span data-ttu-id="d3546-111">Nome de certificação de conformidade (por exemplo, ISO 27018:2014, RGPD, FedRAMP, NIST 800-171)</span><span class="sxs-lookup"><span data-stu-id="d3546-111">Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)</span></span> |
+|<span data-ttu-id="d3546-112">certificationControls</span><span class="sxs-lookup"><span data-stu-id="d3546-112">certificationControls</span></span> | <span data-ttu-id="d3546-113">coleção [certificationControl](certificationcontrol.md)</span><span class="sxs-lookup"><span data-stu-id="d3546-113">[certificationControl](certificationcontrol.md) collection</span></span> | <span data-ttu-id="d3546-114">Coleção de controles de certificação associados à certificação</span><span class="sxs-lookup"><span data-stu-id="d3546-114">Collection of the certification controls associated with certification</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="c3220-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c3220-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d3546-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d3546-115">JSON representation</span></span>
 
-<span data-ttu-id="c3220-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c3220-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d3546-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d3546-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

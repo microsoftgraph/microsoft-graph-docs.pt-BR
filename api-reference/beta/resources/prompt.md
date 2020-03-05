@@ -5,26 +5,28 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f43babf47f767ad24c6466d9a454ed026f027564
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: eac53ae6bd4de602c15df5c6c543e12dd58192ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913657"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521387"
 ---
-# <a name="prompt-resource-type"></a><span data-ttu-id="35ada-103">tipo de recurso prompt</span><span class="sxs-lookup"><span data-stu-id="35ada-103">prompt resource type</span></span>
+# <a name="prompt-resource-type"></a><span data-ttu-id="4efec-103">tipo de recurso prompt</span><span class="sxs-lookup"><span data-stu-id="4efec-103">prompt resource type</span></span>
+
+<span data-ttu-id="4efec-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4efec-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35ada-104">Tipo de base de ação de prompt.</span><span class="sxs-lookup"><span data-stu-id="35ada-104">Prompt action base type.</span></span>
+<span data-ttu-id="4efec-105">Tipo de base de ação de prompt.</span><span class="sxs-lookup"><span data-stu-id="4efec-105">Prompt action base type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="35ada-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="35ada-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4efec-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4efec-106">Properties</span></span>
 
-<span data-ttu-id="35ada-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="35ada-106">None</span></span>
+<span data-ttu-id="4efec-107">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4efec-107">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="35ada-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="35ada-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4efec-108">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4efec-108">JSON representation</span></span>
 
-<span data-ttu-id="35ada-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="35ada-108">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4efec-109">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4efec-109">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

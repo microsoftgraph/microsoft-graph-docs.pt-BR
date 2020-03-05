@@ -5,30 +5,32 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: f03563549cc1b2f42a274032dab7b310511c70c7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1678f560fa003c1884a9fa673ee85b7473e36c88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939177"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519460"
 ---
-# <a name="visualproperties-resource-type"></a><span data-ttu-id="4634b-103">tipo de recurso visualproperties</span><span class="sxs-lookup"><span data-stu-id="4634b-103">visualProperties resource type</span></span>
+# <a name="visualproperties-resource-type"></a><span data-ttu-id="1e2cf-103">tipo de recurso visualproperties</span><span class="sxs-lookup"><span data-stu-id="1e2cf-103">visualProperties resource type</span></span>
+
+<span data-ttu-id="1e2cf-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1e2cf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4634b-104">Representa o conteúdo visual, como título e corpo, de uma notificação Visual direcionada para um usuário.</span><span class="sxs-lookup"><span data-stu-id="4634b-104">Represents the visual content, namely title and body, of a visual notification targeted to a user.</span></span> 
+<span data-ttu-id="1e2cf-105">Representa o conteúdo visual, como título e corpo, de uma notificação Visual direcionada para um usuário.</span><span class="sxs-lookup"><span data-stu-id="1e2cf-105">Represents the visual content, namely title and body, of a visual notification targeted to a user.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="4634b-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4634b-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1e2cf-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1e2cf-106">Properties</span></span>
 
-| <span data-ttu-id="4634b-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4634b-106">Property</span></span>     | <span data-ttu-id="4634b-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="4634b-107">Type</span></span>        | <span data-ttu-id="4634b-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="4634b-108">Description</span></span> |
+| <span data-ttu-id="1e2cf-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1e2cf-107">Property</span></span>     | <span data-ttu-id="1e2cf-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="1e2cf-108">Type</span></span>        | <span data-ttu-id="1e2cf-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="1e2cf-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="4634b-109">title</span><span class="sxs-lookup"><span data-stu-id="4634b-109">title</span></span>|<span data-ttu-id="4634b-110">String</span><span class="sxs-lookup"><span data-stu-id="4634b-110">String</span></span>|<span data-ttu-id="4634b-111">O título de uma notificação de usuário visual.</span><span class="sxs-lookup"><span data-stu-id="4634b-111">The title of a visual user notification.</span></span> <span data-ttu-id="4634b-112">Este campo é obrigatório para cargas de notificação visuais.</span><span class="sxs-lookup"><span data-stu-id="4634b-112">This field is required for visual notification payloads.</span></span> |
-|<span data-ttu-id="4634b-113">corpo</span><span class="sxs-lookup"><span data-stu-id="4634b-113">body</span></span>|<span data-ttu-id="4634b-114">String</span><span class="sxs-lookup"><span data-stu-id="4634b-114">String</span></span>|<span data-ttu-id="4634b-115">O corpo de uma notificação de usuário visual.</span><span class="sxs-lookup"><span data-stu-id="4634b-115">The body of a visual user notification.</span></span> <span data-ttu-id="4634b-116">O corpo é opcional.</span><span class="sxs-lookup"><span data-stu-id="4634b-116">Body is optional.</span></span>|
+|<span data-ttu-id="1e2cf-110">title</span><span class="sxs-lookup"><span data-stu-id="1e2cf-110">title</span></span>|<span data-ttu-id="1e2cf-111">String</span><span class="sxs-lookup"><span data-stu-id="1e2cf-111">String</span></span>|<span data-ttu-id="1e2cf-112">O título de uma notificação de usuário visual.</span><span class="sxs-lookup"><span data-stu-id="1e2cf-112">The title of a visual user notification.</span></span> <span data-ttu-id="1e2cf-113">Este campo é obrigatório para cargas de notificação visuais.</span><span class="sxs-lookup"><span data-stu-id="1e2cf-113">This field is required for visual notification payloads.</span></span> |
+|<span data-ttu-id="1e2cf-114">corpo</span><span class="sxs-lookup"><span data-stu-id="1e2cf-114">body</span></span>|<span data-ttu-id="1e2cf-115">String</span><span class="sxs-lookup"><span data-stu-id="1e2cf-115">String</span></span>|<span data-ttu-id="1e2cf-116">O corpo de uma notificação de usuário visual.</span><span class="sxs-lookup"><span data-stu-id="1e2cf-116">The body of a visual user notification.</span></span> <span data-ttu-id="1e2cf-117">O corpo é opcional.</span><span class="sxs-lookup"><span data-stu-id="1e2cf-117">Body is optional.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="4634b-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4634b-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1e2cf-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1e2cf-118">JSON representation</span></span>
 
-<span data-ttu-id="4634b-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4634b-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1e2cf-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1e2cf-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
