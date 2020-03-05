@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b0c46dcb61cf9e7f5f4524a0f86959f60738242c
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a1ebfe8f59bf420885a8b3f63b426fdd946a954b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367165"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447826"
 ---
-# <a name="installintent-enum-type"></a><span data-ttu-id="2e838-103">tipo de enumeração installIntent</span><span class="sxs-lookup"><span data-stu-id="2e838-103">installIntent enum type</span></span>
+# <a name="installintent-enum-type"></a><span data-ttu-id="b3ce7-103">tipo de enumeração installIntent</span><span class="sxs-lookup"><span data-stu-id="b3ce7-103">installIntent enum type</span></span>
 
-> <span data-ttu-id="2e838-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2e838-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="b3ce7-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b3ce7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2e838-105">Valores possíveis para o propósito de instalação escolhido pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="2e838-105">Possible values for the install intent chosen by the admin.</span></span>
+> <span data-ttu-id="b3ce7-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b3ce7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="2e838-106">Membros</span><span class="sxs-lookup"><span data-stu-id="2e838-106">Members</span></span>
-|<span data-ttu-id="2e838-107">Membro</span><span class="sxs-lookup"><span data-stu-id="2e838-107">Member</span></span>|<span data-ttu-id="2e838-108">Valor</span><span class="sxs-lookup"><span data-stu-id="2e838-108">Value</span></span>|<span data-ttu-id="2e838-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e838-109">Description</span></span>|
+<span data-ttu-id="b3ce7-106">Valores possíveis para o propósito de instalação escolhido pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="b3ce7-106">Possible values for the install intent chosen by the admin.</span></span>
+
+## <a name="members"></a><span data-ttu-id="b3ce7-107">Membros</span><span class="sxs-lookup"><span data-stu-id="b3ce7-107">Members</span></span>
+|<span data-ttu-id="b3ce7-108">Membro</span><span class="sxs-lookup"><span data-stu-id="b3ce7-108">Member</span></span>|<span data-ttu-id="b3ce7-109">Valor</span><span class="sxs-lookup"><span data-stu-id="b3ce7-109">Value</span></span>|<span data-ttu-id="b3ce7-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3ce7-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2e838-110">disponível</span><span class="sxs-lookup"><span data-stu-id="2e838-110">available</span></span>|<span data-ttu-id="2e838-111">,0</span><span class="sxs-lookup"><span data-stu-id="2e838-111">0</span></span>|<span data-ttu-id="2e838-112">Tentativa de instalação disponível.</span><span class="sxs-lookup"><span data-stu-id="2e838-112">Available install intent.</span></span>|
-|<span data-ttu-id="2e838-113">obrigatório</span><span class="sxs-lookup"><span data-stu-id="2e838-113">required</span></span>|<span data-ttu-id="2e838-114">1</span><span class="sxs-lookup"><span data-stu-id="2e838-114">1</span></span>|<span data-ttu-id="2e838-115">Tentativa de instalação necessária.</span><span class="sxs-lookup"><span data-stu-id="2e838-115">Required install intent.</span></span>|
-|<span data-ttu-id="2e838-116">INTAL</span><span class="sxs-lookup"><span data-stu-id="2e838-116">uninstall</span></span>|<span data-ttu-id="2e838-117">duas</span><span class="sxs-lookup"><span data-stu-id="2e838-117">2</span></span>|<span data-ttu-id="2e838-118">Tentativa de instalação de desinstalação.</span><span class="sxs-lookup"><span data-stu-id="2e838-118">Uninstall install intent.</span></span>|
-|<span data-ttu-id="2e838-119">availableWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="2e838-119">availableWithoutEnrollment</span></span>|<span data-ttu-id="2e838-120">3D</span><span class="sxs-lookup"><span data-stu-id="2e838-120">3</span></span>|<span data-ttu-id="2e838-121">Disponível sem a intenção de instalação do registro.</span><span class="sxs-lookup"><span data-stu-id="2e838-121">Available without enrollment install intent.</span></span>|
+|<span data-ttu-id="b3ce7-111">disponível</span><span class="sxs-lookup"><span data-stu-id="b3ce7-111">available</span></span>|<span data-ttu-id="b3ce7-112">,0</span><span class="sxs-lookup"><span data-stu-id="b3ce7-112">0</span></span>|<span data-ttu-id="b3ce7-113">Tentativa de instalação disponível.</span><span class="sxs-lookup"><span data-stu-id="b3ce7-113">Available install intent.</span></span>|
+|<span data-ttu-id="b3ce7-114">obrigatório</span><span class="sxs-lookup"><span data-stu-id="b3ce7-114">required</span></span>|<span data-ttu-id="b3ce7-115">1 </span><span class="sxs-lookup"><span data-stu-id="b3ce7-115">1</span></span>|<span data-ttu-id="b3ce7-116">Tentativa de instalação necessária.</span><span class="sxs-lookup"><span data-stu-id="b3ce7-116">Required install intent.</span></span>|
+|<span data-ttu-id="b3ce7-117">INTAL</span><span class="sxs-lookup"><span data-stu-id="b3ce7-117">uninstall</span></span>|<span data-ttu-id="b3ce7-118">2 </span><span class="sxs-lookup"><span data-stu-id="b3ce7-118">2</span></span>|<span data-ttu-id="b3ce7-119">Tentativa de instalação de desinstalação.</span><span class="sxs-lookup"><span data-stu-id="b3ce7-119">Uninstall install intent.</span></span>|
+|<span data-ttu-id="b3ce7-120">availableWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="b3ce7-120">availableWithoutEnrollment</span></span>|<span data-ttu-id="b3ce7-121">3 </span><span class="sxs-lookup"><span data-stu-id="b3ce7-121">3</span></span>|<span data-ttu-id="b3ce7-122">Disponível sem a intenção de instalação do registro.</span><span class="sxs-lookup"><span data-stu-id="b3ce7-122">Available without enrollment install intent.</span></span>|
 
 
 

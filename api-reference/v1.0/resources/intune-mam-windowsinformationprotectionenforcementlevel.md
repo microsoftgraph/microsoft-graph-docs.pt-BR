@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e355a947957eefa0a8f21e9429cee3d0e0c20912
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ba8e8cded8ac4a245a556de78fc2ab99443eab3e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360654"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448239"
 ---
-# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a><span data-ttu-id="88b82-103">tipo de enumeração windowsInformationProtectionEnforcementLevel</span><span class="sxs-lookup"><span data-stu-id="88b82-103">windowsInformationProtectionEnforcementLevel enum type</span></span>
+# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a><span data-ttu-id="fcdd5-103">tipo de enumeração windowsInformationProtectionEnforcementLevel</span><span class="sxs-lookup"><span data-stu-id="fcdd5-103">windowsInformationProtectionEnforcementLevel enum type</span></span>
 
-> <span data-ttu-id="88b82-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="88b82-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="fcdd5-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="fcdd5-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="88b82-105">Valores possíveis para níveis de imposição de proteção WIP</span><span class="sxs-lookup"><span data-stu-id="88b82-105">Possible values for WIP Protection enforcement levels</span></span>
+> <span data-ttu-id="fcdd5-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="fcdd5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="88b82-106">Membros</span><span class="sxs-lookup"><span data-stu-id="88b82-106">Members</span></span>
-|<span data-ttu-id="88b82-107">Membro</span><span class="sxs-lookup"><span data-stu-id="88b82-107">Member</span></span>|<span data-ttu-id="88b82-108">Valor</span><span class="sxs-lookup"><span data-stu-id="88b82-108">Value</span></span>|<span data-ttu-id="88b82-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="88b82-109">Description</span></span>|
+<span data-ttu-id="fcdd5-106">Valores possíveis para níveis de imposição de proteção WIP</span><span class="sxs-lookup"><span data-stu-id="fcdd5-106">Possible values for WIP Protection enforcement levels</span></span>
+
+## <a name="members"></a><span data-ttu-id="fcdd5-107">Membros</span><span class="sxs-lookup"><span data-stu-id="fcdd5-107">Members</span></span>
+|<span data-ttu-id="fcdd5-108">Membro</span><span class="sxs-lookup"><span data-stu-id="fcdd5-108">Member</span></span>|<span data-ttu-id="fcdd5-109">Valor</span><span class="sxs-lookup"><span data-stu-id="fcdd5-109">Value</span></span>|<span data-ttu-id="fcdd5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="fcdd5-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="88b82-110">noprotection</span><span class="sxs-lookup"><span data-stu-id="88b82-110">noProtection</span></span>|<span data-ttu-id="88b82-111">,0</span><span class="sxs-lookup"><span data-stu-id="88b82-111">0</span></span>|<span data-ttu-id="88b82-112">Nenhuma imposição de proteção</span><span class="sxs-lookup"><span data-stu-id="88b82-112">No protection enforcement</span></span>|
-|<span data-ttu-id="88b82-113">encryptAndAuditOnly</span><span class="sxs-lookup"><span data-stu-id="88b82-113">encryptAndAuditOnly</span></span>|<span data-ttu-id="88b82-114">1</span><span class="sxs-lookup"><span data-stu-id="88b82-114">1</span></span>|<span data-ttu-id="88b82-115">Somente criptografia e auditoria</span><span class="sxs-lookup"><span data-stu-id="88b82-115">Encrypt and Audit only</span></span>|
-|<span data-ttu-id="88b82-116">encryptAuditAndPrompt</span><span class="sxs-lookup"><span data-stu-id="88b82-116">encryptAuditAndPrompt</span></span>|<span data-ttu-id="88b82-117">duas</span><span class="sxs-lookup"><span data-stu-id="88b82-117">2</span></span>|<span data-ttu-id="88b82-118">Criptografar, auditar e solicitar</span><span class="sxs-lookup"><span data-stu-id="88b82-118">Encrypt, Audit and Prompt</span></span>|
-|<span data-ttu-id="88b82-119">encryptAuditAndBlock</span><span class="sxs-lookup"><span data-stu-id="88b82-119">encryptAuditAndBlock</span></span>|<span data-ttu-id="88b82-120">3D</span><span class="sxs-lookup"><span data-stu-id="88b82-120">3</span></span>|<span data-ttu-id="88b82-121">Criptografar, auditar e bloquear</span><span class="sxs-lookup"><span data-stu-id="88b82-121">Encrypt, Audit and Block</span></span>|
+|<span data-ttu-id="fcdd5-111">noprotection</span><span class="sxs-lookup"><span data-stu-id="fcdd5-111">noProtection</span></span>|<span data-ttu-id="fcdd5-112">,0</span><span class="sxs-lookup"><span data-stu-id="fcdd5-112">0</span></span>|<span data-ttu-id="fcdd5-113">Nenhuma imposição de proteção</span><span class="sxs-lookup"><span data-stu-id="fcdd5-113">No protection enforcement</span></span>|
+|<span data-ttu-id="fcdd5-114">encryptAndAuditOnly</span><span class="sxs-lookup"><span data-stu-id="fcdd5-114">encryptAndAuditOnly</span></span>|<span data-ttu-id="fcdd5-115">1 </span><span class="sxs-lookup"><span data-stu-id="fcdd5-115">1</span></span>|<span data-ttu-id="fcdd5-116">Somente criptografia e auditoria</span><span class="sxs-lookup"><span data-stu-id="fcdd5-116">Encrypt and Audit only</span></span>|
+|<span data-ttu-id="fcdd5-117">encryptAuditAndPrompt</span><span class="sxs-lookup"><span data-stu-id="fcdd5-117">encryptAuditAndPrompt</span></span>|<span data-ttu-id="fcdd5-118">2 </span><span class="sxs-lookup"><span data-stu-id="fcdd5-118">2</span></span>|<span data-ttu-id="fcdd5-119">Criptografar, auditar e solicitar</span><span class="sxs-lookup"><span data-stu-id="fcdd5-119">Encrypt, Audit and Prompt</span></span>|
+|<span data-ttu-id="fcdd5-120">encryptAuditAndBlock</span><span class="sxs-lookup"><span data-stu-id="fcdd5-120">encryptAuditAndBlock</span></span>|<span data-ttu-id="fcdd5-121">3 </span><span class="sxs-lookup"><span data-stu-id="fcdd5-121">3</span></span>|<span data-ttu-id="fcdd5-122">Criptografar, auditar e bloquear</span><span class="sxs-lookup"><span data-stu-id="fcdd5-122">Encrypt, Audit and Block</span></span>|
 
 
 

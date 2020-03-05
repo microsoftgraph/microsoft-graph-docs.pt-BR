@@ -5,20 +5,22 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7da2a3a2c712cdbe1fc3fb961781e35099a565d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc6ace98b84e8b844139c148215eeffdd4c3ad49
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033611"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446818"
 ---
-# <a name="timeconstraint-resource-type"></a><span data-ttu-id="493ec-103">Tipo de recurso timeConstraint</span><span class="sxs-lookup"><span data-stu-id="493ec-103">timeConstraint resource type</span></span>
+# <a name="timeconstraint-resource-type"></a><span data-ttu-id="5021a-103">Tipo de recurso timeConstraint</span><span class="sxs-lookup"><span data-stu-id="5021a-103">timeConstraint resource type</span></span>
 
-<span data-ttu-id="493ec-104">Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.</span><span class="sxs-lookup"><span data-stu-id="493ec-104">Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.</span></span>
+<span data-ttu-id="5021a-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5021a-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="493ec-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="493ec-105">JSON representation</span></span>
+<span data-ttu-id="5021a-105">Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.</span><span class="sxs-lookup"><span data-stu-id="5021a-105">Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.</span></span>
 
-<span data-ttu-id="493ec-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="493ec-106">Here is a JSON representation of the resource</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5021a-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5021a-106">JSON representation</span></span>
+
+<span data-ttu-id="5021a-107">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="5021a-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,11 +37,11 @@ ms.locfileid: "36033611"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="493ec-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="493ec-107">Properties</span></span>
-| <span data-ttu-id="493ec-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="493ec-108">Property</span></span>     | <span data-ttu-id="493ec-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="493ec-109">Type</span></span>   |<span data-ttu-id="493ec-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="493ec-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5021a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5021a-108">Properties</span></span>
+| <span data-ttu-id="5021a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5021a-109">Property</span></span>     | <span data-ttu-id="5021a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="5021a-110">Type</span></span>   |<span data-ttu-id="5021a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="5021a-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="493ec-111">activityDomain</span><span class="sxs-lookup"><span data-stu-id="493ec-111">activityDomain</span></span>|<span data-ttu-id="493ec-112">activityDomain</span><span class="sxs-lookup"><span data-stu-id="493ec-112">activityDomain</span></span>|<span data-ttu-id="493ec-113">A natureza da atividade, opcional.</span><span class="sxs-lookup"><span data-stu-id="493ec-113">The nature of the activity, optional.</span></span> <span data-ttu-id="493ec-114">Os valores possíveis são: `work`, `personal`, `unrestricted`, ou `unknown`.</span><span class="sxs-lookup"><span data-stu-id="493ec-114">The possible values are: `work`, `personal`, `unrestricted`, or `unknown`.</span></span>|
-|<span data-ttu-id="493ec-115">intervalos de tempo</span><span class="sxs-lookup"><span data-stu-id="493ec-115">timeslots</span></span>|<span data-ttu-id="493ec-116">Coleção [timeSlot](timeslot.md)</span><span class="sxs-lookup"><span data-stu-id="493ec-116">[timeSlot](timeslot.md) collection</span></span>|<span data-ttu-id="493ec-117">Uma matriz de períodos de tempo.</span><span class="sxs-lookup"><span data-stu-id="493ec-117">An array of time periods.</span></span>|
+|<span data-ttu-id="5021a-112">activityDomain</span><span class="sxs-lookup"><span data-stu-id="5021a-112">activityDomain</span></span>|<span data-ttu-id="5021a-113">activityDomain</span><span class="sxs-lookup"><span data-stu-id="5021a-113">activityDomain</span></span>|<span data-ttu-id="5021a-114">A natureza da atividade, opcional.</span><span class="sxs-lookup"><span data-stu-id="5021a-114">The nature of the activity, optional.</span></span> <span data-ttu-id="5021a-115">Os valores possíveis são: `work`, `personal`, `unrestricted`, ou `unknown`.</span><span class="sxs-lookup"><span data-stu-id="5021a-115">The possible values are: `work`, `personal`, `unrestricted`, or `unknown`.</span></span>|
+|<span data-ttu-id="5021a-116">intervalos de tempo</span><span class="sxs-lookup"><span data-stu-id="5021a-116">timeslots</span></span>|<span data-ttu-id="5021a-117">Coleção [timeSlot](timeslot.md)</span><span class="sxs-lookup"><span data-stu-id="5021a-117">[timeSlot](timeslot.md) collection</span></span>|<span data-ttu-id="5021a-118">Uma matriz de períodos de tempo.</span><span class="sxs-lookup"><span data-stu-id="5021a-118">An array of time periods.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

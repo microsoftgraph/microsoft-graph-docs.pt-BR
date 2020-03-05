@@ -5,18 +5,20 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5189b578d0a996ceb27014d2c5400e508e1e8a56
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: defd2c9b06a0d866ce43bbd4a9e8b36bdad770fb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034948"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447035"
 ---
-# <a name="publicationfacet-resource-type"></a><span data-ttu-id="5f7a4-103">Tipo de recurso PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="5f7a4-103">PublicationFacet resource type</span></span>
+# <a name="publicationfacet-resource-type"></a><span data-ttu-id="9cd13-103">Tipo de recurso PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="9cd13-103">PublicationFacet resource type</span></span>
 
-<span data-ttu-id="5f7a4-104">O recurso **publicationFacet** fornece detalhes sobre o status de publicado em um recurso [driveItemVersion](driveitemversion.md) ou [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="5f7a4-104">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
+<span data-ttu-id="9cd13-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="9cd13-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5f7a4-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5f7a4-105">JSON representation</span></span>
+<span data-ttu-id="9cd13-105">O recurso **publicationFacet** fornece detalhes sobre o status de publicado em um recurso [driveItemVersion](driveitemversion.md) ou [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="9cd13-105">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="9cd13-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9cd13-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,12 +33,12 @@ ms.locfileid: "36034948"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="5f7a4-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5f7a4-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9cd13-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9cd13-107">Properties</span></span>
 
-|   <span data-ttu-id="5f7a4-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5f7a4-107">Property</span></span>    |  <span data-ttu-id="5f7a4-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="5f7a4-108">Type</span></span>  | <span data-ttu-id="5f7a4-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="5f7a4-109">Description</span></span> |
+|   <span data-ttu-id="9cd13-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9cd13-108">Property</span></span>    |  <span data-ttu-id="9cd13-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="9cd13-109">Type</span></span>  | <span data-ttu-id="9cd13-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="9cd13-110">Description</span></span> |
 | :------------ | :----- | :---------- |
-| <span data-ttu-id="5f7a4-110">**level**</span><span class="sxs-lookup"><span data-stu-id="5f7a4-110">**level**</span></span>     | <span data-ttu-id="5f7a4-111">String</span><span class="sxs-lookup"><span data-stu-id="5f7a4-111">String</span></span> | <span data-ttu-id="5f7a4-112">O estado de publicação deste documento.</span><span class="sxs-lookup"><span data-stu-id="5f7a4-112">The state of publication for this document.</span></span> <span data-ttu-id="5f7a4-113">Pode ser `published` ou `checkout`.</span><span class="sxs-lookup"><span data-stu-id="5f7a4-113">Either `published` or `checkout`.</span></span> <span data-ttu-id="5f7a4-114">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5f7a4-114">Read-only.</span></span>  |
-| <span data-ttu-id="5f7a4-115">**versionId**</span><span class="sxs-lookup"><span data-stu-id="5f7a4-115">**versionId**</span></span> | <span data-ttu-id="5f7a4-116">String</span><span class="sxs-lookup"><span data-stu-id="5f7a4-116">String</span></span> | <span data-ttu-id="5f7a4-117">O identificador exclusivo da versão fica visível para o chamador atual.</span><span class="sxs-lookup"><span data-stu-id="5f7a4-117">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="5f7a4-118">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5f7a4-118">Read-only.</span></span>  |
+| <span data-ttu-id="9cd13-111">**level**</span><span class="sxs-lookup"><span data-stu-id="9cd13-111">**level**</span></span>     | <span data-ttu-id="9cd13-112">String</span><span class="sxs-lookup"><span data-stu-id="9cd13-112">String</span></span> | <span data-ttu-id="9cd13-113">O estado de publicação deste documento.</span><span class="sxs-lookup"><span data-stu-id="9cd13-113">The state of publication for this document.</span></span> <span data-ttu-id="9cd13-114">Pode ser `published` ou `checkout`.</span><span class="sxs-lookup"><span data-stu-id="9cd13-114">Either `published` or `checkout`.</span></span> <span data-ttu-id="9cd13-115">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9cd13-115">Read-only.</span></span>  |
+| <span data-ttu-id="9cd13-116">**versionId**</span><span class="sxs-lookup"><span data-stu-id="9cd13-116">**versionId**</span></span> | <span data-ttu-id="9cd13-117">String</span><span class="sxs-lookup"><span data-stu-id="9cd13-117">String</span></span> | <span data-ttu-id="9cd13-118">O identificador exclusivo da versão fica visível para o chamador atual.</span><span class="sxs-lookup"><span data-stu-id="9cd13-118">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="9cd13-119">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9cd13-119">Read-only.</span></span>  |
 
 
 <!-- {

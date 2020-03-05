@@ -6,29 +6,31 @@ description: O objeto MoveAction fornece informações sobre uma atividade que m
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8ef93cd83c8fd020af91a9ea8c9288c1d27d5cf6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 04c9ddad00b5705d84af6e72ac194a0d32fd015c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036068"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447378"
 ---
-# <a name="moveaction-resource-type"></a><span data-ttu-id="e6719-103">tipo de recurso MoveAction</span><span class="sxs-lookup"><span data-stu-id="e6719-103">moveAction resource type</span></span>
+# <a name="moveaction-resource-type"></a><span data-ttu-id="8c23a-103">tipo de recurso MoveAction</span><span class="sxs-lookup"><span data-stu-id="8c23a-103">moveAction resource type</span></span>
 
-<span data-ttu-id="e6719-104">A presença do recurso **MoveAction** em uma myactivity indica que a atividade moveu um item. [\*\*\*\*][activity]</span><span class="sxs-lookup"><span data-stu-id="e6719-104">The presence of the **moveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.</span></span>
+<span data-ttu-id="8c23a-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8c23a-104">Namespace: microsoft.graph</span></span>
 
-><span data-ttu-id="e6719-105">**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="e6719-105">**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="8c23a-105">A presença do recurso **MoveAction** em uma [**myactivity**][activity] indica que a atividade moveu um item.</span><span class="sxs-lookup"><span data-stu-id="8c23a-105">The presence of the **moveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.</span></span>
+
+><span data-ttu-id="8c23a-106">**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="8c23a-106">**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="properties"></a><span data-ttu-id="e6719-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e6719-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8c23a-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8c23a-107">Properties</span></span>
 
-| <span data-ttu-id="e6719-107">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="e6719-107">Property name</span></span> | <span data-ttu-id="e6719-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="e6719-108">Type</span></span>   | <span data-ttu-id="e6719-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e6719-109">Description</span></span>
+| <span data-ttu-id="8c23a-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="8c23a-108">Property name</span></span> | <span data-ttu-id="8c23a-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="8c23a-109">Type</span></span>   | <span data-ttu-id="8c23a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="8c23a-110">Description</span></span>
 |:--------------|:-------|:----------------------------------------------------
-| <span data-ttu-id="e6719-110">from</span><span class="sxs-lookup"><span data-stu-id="e6719-110">from</span></span>          | <span data-ttu-id="e6719-111">string</span><span class="sxs-lookup"><span data-stu-id="e6719-111">string</span></span> | <span data-ttu-id="e6719-112">O nome do local do qual o item foi movido.</span><span class="sxs-lookup"><span data-stu-id="e6719-112">The name of the location the item was moved from.</span></span>
-| <span data-ttu-id="e6719-113">para</span><span class="sxs-lookup"><span data-stu-id="e6719-113">to</span></span>            | <span data-ttu-id="e6719-114">string</span><span class="sxs-lookup"><span data-stu-id="e6719-114">string</span></span> | <span data-ttu-id="e6719-115">O nome do local para o qual o item foi movido.</span><span class="sxs-lookup"><span data-stu-id="e6719-115">The name of the location the item was moved to.</span></span>
+| <span data-ttu-id="8c23a-111">from</span><span class="sxs-lookup"><span data-stu-id="8c23a-111">from</span></span>          | <span data-ttu-id="8c23a-112">string</span><span class="sxs-lookup"><span data-stu-id="8c23a-112">string</span></span> | <span data-ttu-id="8c23a-113">O nome do local do qual o item foi movido.</span><span class="sxs-lookup"><span data-stu-id="8c23a-113">The name of the location the item was moved from.</span></span>
+| <span data-ttu-id="8c23a-114">para</span><span class="sxs-lookup"><span data-stu-id="8c23a-114">to</span></span>            | <span data-ttu-id="8c23a-115">string</span><span class="sxs-lookup"><span data-stu-id="8c23a-115">string</span></span> | <span data-ttu-id="8c23a-116">O nome do local para o qual o item foi movido.</span><span class="sxs-lookup"><span data-stu-id="8c23a-116">The name of the location the item was moved to.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e6719-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e6719-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8c23a-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8c23a-117">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",

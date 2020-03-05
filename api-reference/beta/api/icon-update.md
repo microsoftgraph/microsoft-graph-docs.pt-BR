@@ -5,52 +5,54 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 5228bd86e11aeccd76003f419f095a87228613e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4a3d0818d659514975b2328db651b5ac45331e73
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953210"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446511"
 ---
-# <a name="update-icon"></a><span data-ttu-id="e2fff-103">Atualizar ícone</span><span class="sxs-lookup"><span data-stu-id="e2fff-103">Update icon</span></span>
+# <a name="update-icon"></a><span data-ttu-id="6846a-103">Atualizar ícone</span><span class="sxs-lookup"><span data-stu-id="6846a-103">Update icon</span></span>
+
+<span data-ttu-id="6846a-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6846a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e2fff-104">Atualize as propriedades do objeto de ícone.</span><span class="sxs-lookup"><span data-stu-id="e2fff-104">Update the properties of icon object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e2fff-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e2fff-105">Permissions</span></span>
-<span data-ttu-id="e2fff-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2fff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6846a-105">Atualize as propriedades do objeto de ícone.</span><span class="sxs-lookup"><span data-stu-id="6846a-105">Update the properties of icon object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6846a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6846a-106">Permissions</span></span>
+<span data-ttu-id="6846a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6846a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e2fff-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e2fff-108">Permission type</span></span>      | <span data-ttu-id="e2fff-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e2fff-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6846a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6846a-109">Permission type</span></span>      | <span data-ttu-id="6846a-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6846a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e2fff-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e2fff-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e2fff-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e2fff-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e2fff-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e2fff-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2fff-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e2fff-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e2fff-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e2fff-114">Application</span></span> | <span data-ttu-id="e2fff-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e2fff-115">Not supported.</span></span> |
+|<span data-ttu-id="6846a-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6846a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6846a-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6846a-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="6846a-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6846a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6846a-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6846a-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="6846a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6846a-115">Application</span></span> | <span data-ttu-id="6846a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6846a-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e2fff-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e2fff-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6846a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6846a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/tables/{id|name}/sort/fields/icon
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="e2fff-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="e2fff-117">Optional request headers</span></span>
-| <span data-ttu-id="e2fff-118">Nome</span><span class="sxs-lookup"><span data-stu-id="e2fff-118">Name</span></span>       | <span data-ttu-id="e2fff-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2fff-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="6846a-118">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="6846a-118">Optional request headers</span></span>
+| <span data-ttu-id="6846a-119">Nome</span><span class="sxs-lookup"><span data-stu-id="6846a-119">Name</span></span>       | <span data-ttu-id="6846a-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6846a-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="e2fff-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="e2fff-120">Authorization</span></span>  | <span data-ttu-id="e2fff-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e2fff-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6846a-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="6846a-121">Authorization</span></span>  | <span data-ttu-id="6846a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6846a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e2fff-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e2fff-123">Request body</span></span>
-<span data-ttu-id="e2fff-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="e2fff-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6846a-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6846a-124">Request body</span></span>
+<span data-ttu-id="6846a-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="6846a-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e2fff-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e2fff-127">Property</span></span>     | <span data-ttu-id="e2fff-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="e2fff-128">Type</span></span>   |<span data-ttu-id="e2fff-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2fff-129">Description</span></span>|
+| <span data-ttu-id="6846a-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6846a-128">Property</span></span>     | <span data-ttu-id="6846a-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="6846a-129">Type</span></span>   |<span data-ttu-id="6846a-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="6846a-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e2fff-130">index</span><span class="sxs-lookup"><span data-stu-id="e2fff-130">index</span></span>|<span data-ttu-id="e2fff-131">int</span><span class="sxs-lookup"><span data-stu-id="e2fff-131">int</span></span>|<span data-ttu-id="e2fff-132">Representa o índice do ícone em determinado conjunto.</span><span class="sxs-lookup"><span data-stu-id="e2fff-132">Represents the index of the icon in the given set.</span></span>|
-|<span data-ttu-id="e2fff-133">set</span><span class="sxs-lookup"><span data-stu-id="e2fff-133">set</span></span>|<span data-ttu-id="e2fff-134">string</span><span class="sxs-lookup"><span data-stu-id="e2fff-134">string</span></span>|<span data-ttu-id="e2fff-p104">Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.</span><span class="sxs-lookup"><span data-stu-id="e2fff-p104">Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.</span></span>|
+|<span data-ttu-id="6846a-131">index</span><span class="sxs-lookup"><span data-stu-id="6846a-131">index</span></span>|<span data-ttu-id="6846a-132">int</span><span class="sxs-lookup"><span data-stu-id="6846a-132">int</span></span>|<span data-ttu-id="6846a-133">Representa o índice do ícone em determinado conjunto.</span><span class="sxs-lookup"><span data-stu-id="6846a-133">Represents the index of the icon in the given set.</span></span>|
+|<span data-ttu-id="6846a-134">set</span><span class="sxs-lookup"><span data-stu-id="6846a-134">set</span></span>|<span data-ttu-id="6846a-135">string</span><span class="sxs-lookup"><span data-stu-id="6846a-135">string</span></span>|<span data-ttu-id="6846a-p104">Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.</span><span class="sxs-lookup"><span data-stu-id="6846a-p104">Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e2fff-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2fff-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6846a-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="6846a-138">Response</span></span>
 
-<span data-ttu-id="e2fff-138">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookIcon](../resources/workbookicon.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e2fff-138">If successful, this method returns a `200 OK` response code and updated [workbookIcon](../resources/workbookicon.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e2fff-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e2fff-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e2fff-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e2fff-140">Request</span></span>
-<span data-ttu-id="e2fff-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e2fff-141">Here is an example of the request.</span></span>
+<span data-ttu-id="6846a-139">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbookIcon](../resources/workbookicon.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6846a-139">If successful, this method returns a `200 OK` response code and updated [workbookIcon](../resources/workbookicon.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6846a-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6846a-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6846a-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6846a-141">Request</span></span>
+<span data-ttu-id="6846a-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6846a-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_icon"
@@ -65,8 +67,8 @@ Content-length: 39
   "index": 99
 }
 ```
-##### <a name="response"></a><span data-ttu-id="e2fff-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2fff-142">Response</span></span>
-<span data-ttu-id="e2fff-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e2fff-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6846a-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="6846a-143">Response</span></span>
+<span data-ttu-id="6846a-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6846a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

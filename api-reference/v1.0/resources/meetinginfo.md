@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8ef003db89ea676b4415a90c27913add49aad6e1
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: c27fe67c2c57d609a7524c8d2efda27443d75efe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913174"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447420"
 ---
-# <a name="meetinginfo-resource-type"></a><span data-ttu-id="2ecb2-103">tipo de recurso meetingInfo</span><span class="sxs-lookup"><span data-stu-id="2ecb2-103">meetingInfo resource type</span></span>
+# <a name="meetinginfo-resource-type"></a><span data-ttu-id="1b9e1-103">tipo de recurso meetingInfo</span><span class="sxs-lookup"><span data-stu-id="1b9e1-103">meetingInfo resource type</span></span>
 
-<span data-ttu-id="2ecb2-104">Esta é uma classe abstrata que contém informações específicas da reunião.</span><span class="sxs-lookup"><span data-stu-id="2ecb2-104">This is an abstract class that contains meeting specific information.</span></span>
+<span data-ttu-id="1b9e1-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1b9e1-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="1b9e1-105">Esta é uma classe abstrata que contém informações específicas da reunião.</span><span class="sxs-lookup"><span data-stu-id="1b9e1-105">This is an abstract class that contains meeting specific information.</span></span>
  
-<span data-ttu-id="2ecb2-105">Para ingressar em uma reunião existente, você deve especificar o [organizerMeetingInfo](organizermeetinginfo.md) em combinação com o [chatInfo](./chatinfo.md)ou apenas o [tokenMeetingInfo](tokenmeetinginfo.md).</span><span class="sxs-lookup"><span data-stu-id="2ecb2-105">To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), or just the [tokenMeetingInfo](tokenmeetinginfo.md).</span></span>
+<span data-ttu-id="1b9e1-106">Para ingressar em uma reunião existente, você deve especificar o [organizerMeetingInfo](organizermeetinginfo.md) em combinação com o [chatInfo](./chatinfo.md)ou apenas o [tokenMeetingInfo](tokenmeetinginfo.md).</span><span class="sxs-lookup"><span data-stu-id="1b9e1-106">To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), or just the [tokenMeetingInfo](tokenmeetinginfo.md).</span></span>
 
 
-## <a name="derived-types"></a><span data-ttu-id="2ecb2-106">Tipos derivados</span><span class="sxs-lookup"><span data-stu-id="2ecb2-106">Derived types</span></span>
+## <a name="derived-types"></a><span data-ttu-id="1b9e1-107">Tipos derivados</span><span class="sxs-lookup"><span data-stu-id="1b9e1-107">Derived types</span></span>
 
-| <span data-ttu-id="2ecb2-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="2ecb2-107">Type</span></span>                                                 | <span data-ttu-id="2ecb2-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="2ecb2-108">Description</span></span>                                                         |
+| <span data-ttu-id="1b9e1-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="1b9e1-108">Type</span></span>                                                 | <span data-ttu-id="1b9e1-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="1b9e1-109">Description</span></span>                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [<span data-ttu-id="2ecb2-109">organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="2ecb2-109">organizerMeetingInfo</span></span>](./organizermeetinginfo.md)    | <span data-ttu-id="2ecb2-110">Detalhes sobre o organizador da reunião</span><span class="sxs-lookup"><span data-stu-id="2ecb2-110">Details about the organizer of the meeting</span></span>                          |
-| [<span data-ttu-id="2ecb2-111">tokenMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="2ecb2-111">tokenMeetingInfo</span></span>](tokenmeetinginfo.md)              | <span data-ttu-id="2ecb2-112">Um token criptografado que contém as informações sobre a reunião</span><span class="sxs-lookup"><span data-stu-id="2ecb2-112">An encrypted token that contains the information about the meeting</span></span>  |
+| [<span data-ttu-id="1b9e1-110">organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="1b9e1-110">organizerMeetingInfo</span></span>](./organizermeetinginfo.md)    | <span data-ttu-id="1b9e1-111">Detalhes sobre o organizador da reunião</span><span class="sxs-lookup"><span data-stu-id="1b9e1-111">Details about the organizer of the meeting</span></span>                          |
+| [<span data-ttu-id="1b9e1-112">tokenMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="1b9e1-112">tokenMeetingInfo</span></span>](tokenmeetinginfo.md)              | <span data-ttu-id="1b9e1-113">Um token criptografado que contém as informações sobre a reunião</span><span class="sxs-lookup"><span data-stu-id="1b9e1-113">An encrypted token that contains the information about the meeting</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="2ecb2-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2ecb2-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1b9e1-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1b9e1-114">JSON representation</span></span>
 
-<span data-ttu-id="2ecb2-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2ecb2-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1b9e1-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1b9e1-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

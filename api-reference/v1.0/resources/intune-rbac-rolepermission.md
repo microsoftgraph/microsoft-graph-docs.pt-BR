@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f53a6250500137b368f17ae71524f4e1121d1aa
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: f3a01bf7c6f607c7340cff8ea5075a24fb879ddb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355873"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447924"
 ---
-# <a name="rolepermission-resource-type"></a><span data-ttu-id="e1da5-103">Tipo de recurso rolePermission</span><span class="sxs-lookup"><span data-stu-id="e1da5-103">rolePermission resource type</span></span>
+# <a name="rolepermission-resource-type"></a><span data-ttu-id="f8558-103">Tipo de recurso rolePermission</span><span class="sxs-lookup"><span data-stu-id="f8558-103">rolePermission resource type</span></span>
 
-> <span data-ttu-id="e1da5-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e1da5-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="f8558-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f8558-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e1da5-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="e1da5-105">Not yet documented</span></span>
+> <span data-ttu-id="f8558-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f8558-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e1da5-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e1da5-106">Properties</span></span>
-|<span data-ttu-id="e1da5-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e1da5-107">Property</span></span>|<span data-ttu-id="e1da5-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="e1da5-108">Type</span></span>|<span data-ttu-id="e1da5-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e1da5-109">Description</span></span>|
+<span data-ttu-id="f8558-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="f8558-106">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="f8558-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f8558-107">Properties</span></span>
+|<span data-ttu-id="f8558-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f8558-108">Property</span></span>|<span data-ttu-id="f8558-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="f8558-109">Type</span></span>|<span data-ttu-id="f8558-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f8558-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e1da5-110">resourceActions</span><span class="sxs-lookup"><span data-stu-id="e1da5-110">resourceActions</span></span>|<span data-ttu-id="e1da5-111">Coleção [resourceAction](../resources/intune-rbac-resourceaction.md)</span><span class="sxs-lookup"><span data-stu-id="e1da5-111">[resourceAction](../resources/intune-rbac-resourceaction.md) collection</span></span>|<span data-ttu-id="e1da5-112">Ações</span><span class="sxs-lookup"><span data-stu-id="e1da5-112">Actions</span></span>|
+|<span data-ttu-id="f8558-111">resourceActions</span><span class="sxs-lookup"><span data-stu-id="f8558-111">resourceActions</span></span>|<span data-ttu-id="f8558-112">Coleção [resourceAction](../resources/intune-rbac-resourceaction.md)</span><span class="sxs-lookup"><span data-stu-id="f8558-112">[resourceAction](../resources/intune-rbac-resourceaction.md) collection</span></span>|<span data-ttu-id="f8558-113">Ações</span><span class="sxs-lookup"><span data-stu-id="f8558-113">Actions</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e1da5-113">Relações</span><span class="sxs-lookup"><span data-stu-id="e1da5-113">Relationships</span></span>
-<span data-ttu-id="e1da5-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e1da5-114">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f8558-114">Relações</span><span class="sxs-lookup"><span data-stu-id="f8558-114">Relationships</span></span>
+<span data-ttu-id="f8558-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="f8558-115">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e1da5-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e1da5-115">JSON Representation</span></span>
-<span data-ttu-id="e1da5-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e1da5-116">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f8558-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f8558-116">JSON Representation</span></span>
+<span data-ttu-id="f8558-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f8558-117">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rolePermission"

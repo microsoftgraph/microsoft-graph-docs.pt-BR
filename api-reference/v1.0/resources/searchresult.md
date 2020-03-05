@@ -7,18 +7,20 @@ localization_priority: Normal
 description: O recurso SearchResult indica que um item é a resposta a uma consulta de pesquisa.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e6c0c458d9e6e3d31060cec49419b6b2438d5b00
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f3f3c9edceb864e8e1f895ccdfe4e5a4f8e6046a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034570"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446944"
 ---
-# <a name="searchresult-resource-type"></a><span data-ttu-id="b3b26-103">Tipo de recurso SearchResult</span><span class="sxs-lookup"><span data-stu-id="b3b26-103">SearchResult resource type</span></span>
+# <a name="searchresult-resource-type"></a><span data-ttu-id="e4dc7-103">Tipo de recurso SearchResult</span><span class="sxs-lookup"><span data-stu-id="e4dc7-103">SearchResult resource type</span></span>
 
-<span data-ttu-id="b3b26-104">O recurso **SearchResult** indica que um item é a resposta a uma consulta de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="b3b26-104">The **SearchResult** resource indicates than an item is the response to a search query.</span></span>
+<span data-ttu-id="e4dc7-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e4dc7-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b3b26-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b3b26-105">JSON representation</span></span>
+<span data-ttu-id="e4dc7-105">O recurso **SearchResult** indica que um item é a resposta a uma consulta de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="e4dc7-105">The **SearchResult** resource indicates than an item is the response to a search query.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="e4dc7-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e4dc7-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,15 +34,15 @@ ms.locfileid: "36034570"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="b3b26-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b3b26-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e4dc7-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e4dc7-107">Properties</span></span>
 
-| <span data-ttu-id="b3b26-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b3b26-107">Property</span></span>            | <span data-ttu-id="b3b26-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="b3b26-108">Type</span></span>   | <span data-ttu-id="b3b26-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3b26-109">Description</span></span>
+| <span data-ttu-id="e4dc7-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e4dc7-108">Property</span></span>            | <span data-ttu-id="e4dc7-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="e4dc7-109">Type</span></span>   | <span data-ttu-id="e4dc7-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e4dc7-110">Description</span></span>
 |:--------------------|:-------|:----------------------------------------------
-| <span data-ttu-id="b3b26-110">onClickTelemetryUrl</span><span class="sxs-lookup"><span data-stu-id="b3b26-110">onClickTelemetryUrl</span></span> | <span data-ttu-id="b3b26-111">String</span><span class="sxs-lookup"><span data-stu-id="b3b26-111">String</span></span> | <span data-ttu-id="b3b26-p101">Uma URL de retorno de chamada que pode ser usada para registrar informações de telemetria. O aplicativo deve emitir um GET nesta URL se o usuário interagir com este item para melhorar a qualidade dos resultados.</span><span class="sxs-lookup"><span data-stu-id="b3b26-p101">A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.</span></span>
+| <span data-ttu-id="e4dc7-111">onClickTelemetryUrl</span><span class="sxs-lookup"><span data-stu-id="e4dc7-111">onClickTelemetryUrl</span></span> | <span data-ttu-id="e4dc7-112">String</span><span class="sxs-lookup"><span data-stu-id="e4dc7-112">String</span></span> | <span data-ttu-id="e4dc7-p101">Uma URL de retorno de chamada que pode ser usada para registrar informações de telemetria. O aplicativo deve emitir um GET nesta URL se o usuário interagir com este item para melhorar a qualidade dos resultados.</span><span class="sxs-lookup"><span data-stu-id="e4dc7-p101">A callback URL that can be used to record telemetry information. The application should issue a GET on this URL if the user interacts with this item to improve the quality of results.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b3b26-114">Comentários</span><span class="sxs-lookup"><span data-stu-id="b3b26-114">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="e4dc7-115">Comentários</span><span class="sxs-lookup"><span data-stu-id="e4dc7-115">Remarks</span></span> 
 
-<span data-ttu-id="b3b26-115">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="b3b26-115">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="e4dc7-116">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="e4dc7-116">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 <!-- {
   "type": "#page.annotation",
