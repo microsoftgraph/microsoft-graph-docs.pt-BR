@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 503a12fb6d7039540e35696b9bd4bdc274440da2
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 14a05cb7e2c8bb0df57fefedec6331d73e9846fe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162096"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42469465"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Atualizar deviceHealthScriptRunSummary
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

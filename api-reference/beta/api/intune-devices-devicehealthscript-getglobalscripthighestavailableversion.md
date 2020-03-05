@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e0bb6f14570ef3a73fe41a6fb2d279e1c77c62bd
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: f9ee758cb448051499d1613feb0a816f4c35909a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162201"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42469682"
 ---
 # <a name="getglobalscripthighestavailableversion-action"></a>ação getGlobalScriptHighestAvailableVersion
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b75490562c595c83d7fdaaa204d7bc3c79bfd06
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 8dfddfb7d854a8a92053b7301ecf433fa9bc0df9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161991"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42468275"
 ---
 # <a name="get-userexperienceanalyticsdevicestartupprocess"></a>Obter userExperienceAnalyticsDeviceStartupProcess
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

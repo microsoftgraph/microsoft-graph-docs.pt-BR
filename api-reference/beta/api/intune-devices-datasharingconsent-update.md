@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f0fafa578b115b1b3f9bce8feabae7181f522cd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f8a856ce266380796344e178279a0629ddac2488
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945204"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42469899"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,12 +54,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [dataSha
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|Cadeia de Caracteres|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|Cadeia de Caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
+|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
 |granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|Cadeia de Caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|Cadeia de Caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
 
 
 

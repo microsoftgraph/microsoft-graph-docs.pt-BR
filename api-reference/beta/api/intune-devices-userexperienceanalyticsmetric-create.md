@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74198bc62effbe61869931f6f94f88d85a69d185
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: b9e8ca95bcb11d26212f0248fcced244d6edbc9d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944432"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42468233"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Criar userExperienceAnalyticsMetric
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 |:---|:---|:---|
 |id|String|O identificador exclusivo da métrica de análise da experiência do usuário.|
 |valor|Duplo|O valor da métrica de análise da experiência do usuário.|
-|unidade|Cadeia de Caracteres|A unidade da métrica de análise da experiência do usuário.|
+|unidade|String|A unidade da métrica de análise da experiência do usuário.|
 
 
 

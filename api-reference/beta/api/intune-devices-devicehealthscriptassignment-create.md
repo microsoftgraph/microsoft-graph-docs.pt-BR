@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f646da7d59a3558c85f3c47a18ceddfe7deb5428
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: abe35146756d70acb737334e7958f8f77cf9fe24
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162173"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42469675"
 ---
 # <a name="create-devicehealthscriptassignment"></a>Criar deviceHealthScriptAssignment
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -53,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 |:---|:---|:---|
 |id|String|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory que estamos direcionando o script para|
-|runRemediationScript|Booliano|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
+|runRemediationScript|Boolean|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Agendamento de execução de script para o grupo de destino|
 
 
