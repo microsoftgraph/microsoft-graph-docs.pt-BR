@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4824dd4989e31d931ee55c4749c177536219659a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ed2243b393595adeb39f84137f4096e6d0e2812b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367677"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529302"
 ---
-# <a name="vpnondemandruleconnectionaction-enum-type"></a><span data-ttu-id="5b052-103">tipo de enumeração vpnOnDemandRuleConnectionAction</span><span class="sxs-lookup"><span data-stu-id="5b052-103">vpnOnDemandRuleConnectionAction enum type</span></span>
+# <a name="vpnondemandruleconnectionaction-enum-type"></a><span data-ttu-id="1f89b-103">tipo de enumeração vpnOnDemandRuleConnectionAction</span><span class="sxs-lookup"><span data-stu-id="1f89b-103">vpnOnDemandRuleConnectionAction enum type</span></span>
 
-> <span data-ttu-id="5b052-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5b052-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="1f89b-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1f89b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5b052-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5b052-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1f89b-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1f89b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="5b052-106">Ação de conexão de regra por demanda da VPN.</span><span class="sxs-lookup"><span data-stu-id="5b052-106">VPN On-Demand Rule Connection Action.</span></span>
+> <span data-ttu-id="1f89b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1f89b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="5b052-107">Membros</span><span class="sxs-lookup"><span data-stu-id="5b052-107">Members</span></span>
-|<span data-ttu-id="5b052-108">Membro</span><span class="sxs-lookup"><span data-stu-id="5b052-108">Member</span></span>|<span data-ttu-id="5b052-109">Valor</span><span class="sxs-lookup"><span data-stu-id="5b052-109">Value</span></span>|<span data-ttu-id="5b052-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="5b052-110">Description</span></span>|
+<span data-ttu-id="1f89b-107">Ação de conexão de regra por demanda da VPN.</span><span class="sxs-lookup"><span data-stu-id="1f89b-107">VPN On-Demand Rule Connection Action.</span></span>
+
+## <a name="members"></a><span data-ttu-id="1f89b-108">Membros</span><span class="sxs-lookup"><span data-stu-id="1f89b-108">Members</span></span>
+|<span data-ttu-id="1f89b-109">Membro</span><span class="sxs-lookup"><span data-stu-id="1f89b-109">Member</span></span>|<span data-ttu-id="1f89b-110">Valor</span><span class="sxs-lookup"><span data-stu-id="1f89b-110">Value</span></span>|<span data-ttu-id="1f89b-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="1f89b-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5b052-111">connect</span><span class="sxs-lookup"><span data-stu-id="5b052-111">connect</span></span>|<span data-ttu-id="5b052-112">,0</span><span class="sxs-lookup"><span data-stu-id="5b052-112">0</span></span>|<span data-ttu-id="5b052-113">Ao.</span><span class="sxs-lookup"><span data-stu-id="5b052-113">Connect.</span></span>|
-|<span data-ttu-id="5b052-114">evaluateConnection</span><span class="sxs-lookup"><span data-stu-id="5b052-114">evaluateConnection</span></span>|<span data-ttu-id="5b052-115">1</span><span class="sxs-lookup"><span data-stu-id="5b052-115">1</span></span>|<span data-ttu-id="5b052-116">Avaliar conexão.</span><span class="sxs-lookup"><span data-stu-id="5b052-116">Evaluate Connection.</span></span>|
-|<span data-ttu-id="5b052-117">ignora</span><span class="sxs-lookup"><span data-stu-id="5b052-117">ignore</span></span>|<span data-ttu-id="5b052-118">duas</span><span class="sxs-lookup"><span data-stu-id="5b052-118">2</span></span>|<span data-ttu-id="5b052-119">Ignora.</span><span class="sxs-lookup"><span data-stu-id="5b052-119">Ignore.</span></span>|
-|<span data-ttu-id="5b052-120">disconnect</span><span class="sxs-lookup"><span data-stu-id="5b052-120">disconnect</span></span>|<span data-ttu-id="5b052-121">3D</span><span class="sxs-lookup"><span data-stu-id="5b052-121">3</span></span>|<span data-ttu-id="5b052-122">Desconectar.</span><span class="sxs-lookup"><span data-stu-id="5b052-122">Disconnect.</span></span>|
+|<span data-ttu-id="1f89b-112">connect</span><span class="sxs-lookup"><span data-stu-id="1f89b-112">connect</span></span>|<span data-ttu-id="1f89b-113">,0</span><span class="sxs-lookup"><span data-stu-id="1f89b-113">0</span></span>|<span data-ttu-id="1f89b-114">Ao.</span><span class="sxs-lookup"><span data-stu-id="1f89b-114">Connect.</span></span>|
+|<span data-ttu-id="1f89b-115">evaluateConnection</span><span class="sxs-lookup"><span data-stu-id="1f89b-115">evaluateConnection</span></span>|<span data-ttu-id="1f89b-116">1 </span><span class="sxs-lookup"><span data-stu-id="1f89b-116">1</span></span>|<span data-ttu-id="1f89b-117">Avaliar conexão.</span><span class="sxs-lookup"><span data-stu-id="1f89b-117">Evaluate Connection.</span></span>|
+|<span data-ttu-id="1f89b-118">ignora</span><span class="sxs-lookup"><span data-stu-id="1f89b-118">ignore</span></span>|<span data-ttu-id="1f89b-119">2 </span><span class="sxs-lookup"><span data-stu-id="1f89b-119">2</span></span>|<span data-ttu-id="1f89b-120">Ignora.</span><span class="sxs-lookup"><span data-stu-id="1f89b-120">Ignore.</span></span>|
+|<span data-ttu-id="1f89b-121">disconnect</span><span class="sxs-lookup"><span data-stu-id="1f89b-121">disconnect</span></span>|<span data-ttu-id="1f89b-122">3 </span><span class="sxs-lookup"><span data-stu-id="1f89b-122">3</span></span>|<span data-ttu-id="1f89b-123">Desconectar.</span><span class="sxs-lookup"><span data-stu-id="1f89b-123">Disconnect.</span></span>|
 
 
 

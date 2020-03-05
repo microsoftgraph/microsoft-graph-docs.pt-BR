@@ -5,34 +5,36 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b2df645780cdd7d06847d3acb18766027bf4ad8
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: ea5cd7d7fe20e2b956e8beadcddf27f4b73f89ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636599"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528777"
 ---
-# <a name="devicemanagementsettingrequiredconstraint-resource-type"></a><span data-ttu-id="d7f69-103">tipo de recurso deviceManagementSettingRequiredConstraint</span><span class="sxs-lookup"><span data-stu-id="d7f69-103">deviceManagementSettingRequiredConstraint resource type</span></span>
+# <a name="devicemanagementsettingrequiredconstraint-resource-type"></a><span data-ttu-id="4b35a-103">tipo de recurso deviceManagementSettingRequiredConstraint</span><span class="sxs-lookup"><span data-stu-id="4b35a-103">deviceManagementSettingRequiredConstraint resource type</span></span>
 
-> <span data-ttu-id="d7f69-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d7f69-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4b35a-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4b35a-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d7f69-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d7f69-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4b35a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4b35a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d7f69-106">Restrição que impõe uma determinada configuração necessária que não é nula/indefinida/sequência vazia/não configurada</span><span class="sxs-lookup"><span data-stu-id="d7f69-106">Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured</span></span>
+> <span data-ttu-id="4b35a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4b35a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="4b35a-107">Restrição que impõe uma determinada configuração necessária que não é nula/indefinida/sequência vazia/não configurada</span><span class="sxs-lookup"><span data-stu-id="4b35a-107">Constraint that enforces a particular required setting that is not null/undefined/empty string/not configured</span></span>
 
 
-<span data-ttu-id="d7f69-107">Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="d7f69-107">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
+<span data-ttu-id="4b35a-108">Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="4b35a-108">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d7f69-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d7f69-108">Properties</span></span>
-|<span data-ttu-id="d7f69-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d7f69-109">Property</span></span>|<span data-ttu-id="d7f69-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="d7f69-110">Type</span></span>|<span data-ttu-id="d7f69-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="d7f69-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4b35a-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4b35a-109">Properties</span></span>
+|<span data-ttu-id="4b35a-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4b35a-110">Property</span></span>|<span data-ttu-id="4b35a-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="4b35a-111">Type</span></span>|<span data-ttu-id="4b35a-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="4b35a-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d7f69-112">Não configuravalue</span><span class="sxs-lookup"><span data-stu-id="d7f69-112">notConfiguredValue</span></span>|<span data-ttu-id="d7f69-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d7f69-113">String</span></span>|<span data-ttu-id="d7f69-114">Lista de valores que significa não configurado para a configuração</span><span class="sxs-lookup"><span data-stu-id="d7f69-114">List of value which means not configured for the setting</span></span>|
+|<span data-ttu-id="4b35a-113">Não configuravalue</span><span class="sxs-lookup"><span data-stu-id="4b35a-113">notConfiguredValue</span></span>|<span data-ttu-id="4b35a-114">String</span><span class="sxs-lookup"><span data-stu-id="4b35a-114">String</span></span>|<span data-ttu-id="4b35a-115">Lista de valores que significa não configurado para a configuração</span><span class="sxs-lookup"><span data-stu-id="4b35a-115">List of value which means not configured for the setting</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d7f69-115">Relações</span><span class="sxs-lookup"><span data-stu-id="d7f69-115">Relationships</span></span>
-<span data-ttu-id="d7f69-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d7f69-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="4b35a-116">Relações</span><span class="sxs-lookup"><span data-stu-id="4b35a-116">Relationships</span></span>
+<span data-ttu-id="4b35a-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4b35a-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d7f69-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d7f69-117">JSON Representation</span></span>
-<span data-ttu-id="d7f69-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d7f69-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4b35a-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4b35a-118">JSON Representation</span></span>
+<span data-ttu-id="4b35a-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4b35a-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingRequiredConstraint"

@@ -5,27 +5,29 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a5fa53c28f743f23a8e8e0544182ab62b98c6ced
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 92cad118957ea383b886cccc8fb29066e8b2fd20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368076"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529441"
 ---
-# <a name="safesearchfiltertype-enum-type"></a><span data-ttu-id="c215c-103">tipo de enumeração safeSearchFilterType</span><span class="sxs-lookup"><span data-stu-id="c215c-103">safeSearchFilterType enum type</span></span>
+# <a name="safesearchfiltertype-enum-type"></a><span data-ttu-id="1f4d5-103">tipo de enumeração safeSearchFilterType</span><span class="sxs-lookup"><span data-stu-id="1f4d5-103">safeSearchFilterType enum type</span></span>
 
-> <span data-ttu-id="c215c-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c215c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="1f4d5-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1f4d5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="c215c-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c215c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1f4d5-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1f4d5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="c215c-106">Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário</span><span class="sxs-lookup"><span data-stu-id="c215c-106">Specifies what level of safe search (filtering adult content) is required</span></span>
+> <span data-ttu-id="1f4d5-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1f4d5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c215c-107">Membros</span><span class="sxs-lookup"><span data-stu-id="c215c-107">Members</span></span>
-|<span data-ttu-id="c215c-108">Membro</span><span class="sxs-lookup"><span data-stu-id="c215c-108">Member</span></span>|<span data-ttu-id="c215c-109">Valor</span><span class="sxs-lookup"><span data-stu-id="c215c-109">Value</span></span>|<span data-ttu-id="c215c-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="c215c-110">Description</span></span>|
+<span data-ttu-id="1f4d5-107">Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário</span><span class="sxs-lookup"><span data-stu-id="1f4d5-107">Specifies what level of safe search (filtering adult content) is required</span></span>
+
+## <a name="members"></a><span data-ttu-id="1f4d5-108">Membros</span><span class="sxs-lookup"><span data-stu-id="1f4d5-108">Members</span></span>
+|<span data-ttu-id="1f4d5-109">Membro</span><span class="sxs-lookup"><span data-stu-id="1f4d5-109">Member</span></span>|<span data-ttu-id="1f4d5-110">Valor</span><span class="sxs-lookup"><span data-stu-id="1f4d5-110">Value</span></span>|<span data-ttu-id="1f4d5-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="1f4d5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c215c-111">UserDefined</span><span class="sxs-lookup"><span data-stu-id="c215c-111">userDefined</span></span>|<span data-ttu-id="c215c-112">,0</span><span class="sxs-lookup"><span data-stu-id="c215c-112">0</span></span>|<span data-ttu-id="c215c-113">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="c215c-113">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="c215c-114">impede</span><span class="sxs-lookup"><span data-stu-id="c215c-114">strict</span></span>|<span data-ttu-id="c215c-115">1</span><span class="sxs-lookup"><span data-stu-id="c215c-115">1</span></span>|<span data-ttu-id="c215c-116">Filtragem mais rigorosa e estrita contra conteúdo adulto.</span><span class="sxs-lookup"><span data-stu-id="c215c-116">Strict, highest filtering against adult content.</span></span>|
-|<span data-ttu-id="c215c-117">moderado</span><span class="sxs-lookup"><span data-stu-id="c215c-117">moderate</span></span>|<span data-ttu-id="c215c-118">duas</span><span class="sxs-lookup"><span data-stu-id="c215c-118">2</span></span>|<span data-ttu-id="c215c-119">Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).</span><span class="sxs-lookup"><span data-stu-id="c215c-119">Moderate filtering against adult content (valid search results will not be filtered).</span></span>|
+|<span data-ttu-id="1f4d5-112">UserDefined</span><span class="sxs-lookup"><span data-stu-id="1f4d5-112">userDefined</span></span>|<span data-ttu-id="1f4d5-113">,0</span><span class="sxs-lookup"><span data-stu-id="1f4d5-113">0</span></span>|<span data-ttu-id="1f4d5-114">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="1f4d5-114">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="1f4d5-115">impede</span><span class="sxs-lookup"><span data-stu-id="1f4d5-115">strict</span></span>|<span data-ttu-id="1f4d5-116">1 </span><span class="sxs-lookup"><span data-stu-id="1f4d5-116">1</span></span>|<span data-ttu-id="1f4d5-117">Filtragem mais rigorosa e estrita contra conteúdo adulto.</span><span class="sxs-lookup"><span data-stu-id="1f4d5-117">Strict, highest filtering against adult content.</span></span>|
+|<span data-ttu-id="1f4d5-118">moderado</span><span class="sxs-lookup"><span data-stu-id="1f4d5-118">moderate</span></span>|<span data-ttu-id="1f4d5-119">2 </span><span class="sxs-lookup"><span data-stu-id="1f4d5-119">2</span></span>|<span data-ttu-id="1f4d5-120">Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).</span><span class="sxs-lookup"><span data-stu-id="1f4d5-120">Moderate filtering against adult content (valid search results will not be filtered).</span></span>|
 
 
 

@@ -5,34 +5,36 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0f9a04583bfb9b28546e9057f0530f72558a0be
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 12107fb0338e98d6ea423a2f14cd5e6809acfce9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364632"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528790"
 ---
-# <a name="devicemanagementsettingregexconstraint-resource-type"></a><span data-ttu-id="d2bb2-103">tipo de recurso deviceManagementSettingRegexConstraint</span><span class="sxs-lookup"><span data-stu-id="d2bb2-103">deviceManagementSettingRegexConstraint resource type</span></span>
+# <a name="devicemanagementsettingregexconstraint-resource-type"></a><span data-ttu-id="bded9-103">tipo de recurso deviceManagementSettingRegexConstraint</span><span class="sxs-lookup"><span data-stu-id="bded9-103">deviceManagementSettingRegexConstraint resource type</span></span>
 
-> <span data-ttu-id="d2bb2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d2bb2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="bded9-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="bded9-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d2bb2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d2bb2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bded9-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="bded9-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d2bb2-106">Restrição que impõe a configuração corresponde a um determinado padrão de RegEx</span><span class="sxs-lookup"><span data-stu-id="d2bb2-106">Constraint enforcing the setting matches against a given RegEx pattern</span></span>
+> <span data-ttu-id="bded9-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="bded9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="bded9-107">Restrição que impõe a configuração corresponde a um determinado padrão de RegEx</span><span class="sxs-lookup"><span data-stu-id="bded9-107">Constraint enforcing the setting matches against a given RegEx pattern</span></span>
 
 
-<span data-ttu-id="d2bb2-107">Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="d2bb2-107">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
+<span data-ttu-id="bded9-108">Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="bded9-108">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d2bb2-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d2bb2-108">Properties</span></span>
-|<span data-ttu-id="d2bb2-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d2bb2-109">Property</span></span>|<span data-ttu-id="d2bb2-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="d2bb2-110">Type</span></span>|<span data-ttu-id="d2bb2-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="d2bb2-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bded9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bded9-109">Properties</span></span>
+|<span data-ttu-id="bded9-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bded9-110">Property</span></span>|<span data-ttu-id="bded9-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="bded9-111">Type</span></span>|<span data-ttu-id="bded9-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="bded9-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d2bb2-112">Regex</span><span class="sxs-lookup"><span data-stu-id="d2bb2-112">regex</span></span>|<span data-ttu-id="d2bb2-113">String</span><span class="sxs-lookup"><span data-stu-id="d2bb2-113">String</span></span>|<span data-ttu-id="d2bb2-114">O padrão RegEx a ser correspondido em relação</span><span class="sxs-lookup"><span data-stu-id="d2bb2-114">The RegEx pattern to match against</span></span>|
+|<span data-ttu-id="bded9-113">Regex</span><span class="sxs-lookup"><span data-stu-id="bded9-113">regex</span></span>|<span data-ttu-id="bded9-114">String</span><span class="sxs-lookup"><span data-stu-id="bded9-114">String</span></span>|<span data-ttu-id="bded9-115">O padrão RegEx a ser correspondido em relação</span><span class="sxs-lookup"><span data-stu-id="bded9-115">The RegEx pattern to match against</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d2bb2-115">Relações</span><span class="sxs-lookup"><span data-stu-id="d2bb2-115">Relationships</span></span>
-<span data-ttu-id="d2bb2-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d2bb2-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="bded9-116">Relações</span><span class="sxs-lookup"><span data-stu-id="bded9-116">Relationships</span></span>
+<span data-ttu-id="bded9-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="bded9-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d2bb2-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d2bb2-117">JSON Representation</span></span>
-<span data-ttu-id="d2bb2-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d2bb2-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bded9-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bded9-118">JSON Representation</span></span>
+<span data-ttu-id="bded9-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bded9-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingRegexConstraint"

@@ -5,30 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77537a249846943bb77c574be619c356d8c349c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a5256e928b916b082eb857fbe36128453d17293e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348016"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527404"
 ---
-# <a name="iprange-resource-type"></a><span data-ttu-id="d3b4d-103">Tipo de recurso ipRange</span><span class="sxs-lookup"><span data-stu-id="d3b4d-103">ipRange resource type</span></span>
+# <a name="iprange-resource-type"></a><span data-ttu-id="3c070-103">Tipo de recurso ipRange</span><span class="sxs-lookup"><span data-stu-id="3c070-103">ipRange resource type</span></span>
 
-> <span data-ttu-id="d3b4d-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d3b4d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="3c070-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3c070-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d3b4d-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d3b4d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3c070-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3c070-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d3b4d-106">Classe base de intervalo de IP para intervalo de endereços IPV4 e IPv6</span><span class="sxs-lookup"><span data-stu-id="d3b4d-106">IP range base class for representing IPV4, IPV6 address ranges</span></span>
+> <span data-ttu-id="3c070-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3c070-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d3b4d-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d3b4d-107">Properties</span></span>
-|<span data-ttu-id="d3b4d-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3b4d-108">Property</span></span>|<span data-ttu-id="d3b4d-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3b4d-109">Type</span></span>|<span data-ttu-id="d3b4d-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3b4d-110">Description</span></span>|
+<span data-ttu-id="3c070-107">Classe base de intervalo de IP para intervalo de endereços IPV4 e IPv6</span><span class="sxs-lookup"><span data-stu-id="3c070-107">IP range base class for representing IPV4, IPV6 address ranges</span></span>
+
+## <a name="properties"></a><span data-ttu-id="3c070-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3c070-108">Properties</span></span>
+|<span data-ttu-id="3c070-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3c070-109">Property</span></span>|<span data-ttu-id="3c070-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="3c070-110">Type</span></span>|<span data-ttu-id="3c070-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="3c070-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="d3b4d-111">Relações</span><span class="sxs-lookup"><span data-stu-id="d3b4d-111">Relationships</span></span>
-<span data-ttu-id="d3b4d-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d3b4d-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3c070-112">Relações</span><span class="sxs-lookup"><span data-stu-id="3c070-112">Relationships</span></span>
+<span data-ttu-id="3c070-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="3c070-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d3b4d-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d3b4d-113">JSON Representation</span></span>
-<span data-ttu-id="d3b4d-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d3b4d-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3c070-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3c070-114">JSON Representation</span></span>
+<span data-ttu-id="3c070-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3c070-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ipRange"

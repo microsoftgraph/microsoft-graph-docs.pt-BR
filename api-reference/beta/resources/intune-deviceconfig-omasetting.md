@@ -5,33 +5,35 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1cb8a58130e2e51d16393287811e2025da6778a9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 411e3909a71d94be2c6086e9a00616245fca062b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368538"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525982"
 ---
-# <a name="omasetting-resource-type"></a><span data-ttu-id="1bcf2-103">Tipo de recurso omaSetting</span><span class="sxs-lookup"><span data-stu-id="1bcf2-103">omaSetting resource type</span></span>
+# <a name="omasetting-resource-type"></a><span data-ttu-id="4415e-103">Tipo de recurso omaSetting</span><span class="sxs-lookup"><span data-stu-id="4415e-103">omaSetting resource type</span></span>
 
-> <span data-ttu-id="1bcf2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1bcf2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4415e-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4415e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1bcf2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1bcf2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4415e-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4415e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="1bcf2-106">Configurações de OMA.</span><span class="sxs-lookup"><span data-stu-id="1bcf2-106">OMA Settings definition.</span></span>
+> <span data-ttu-id="4415e-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4415e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1bcf2-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1bcf2-107">Properties</span></span>
-|<span data-ttu-id="1bcf2-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1bcf2-108">Property</span></span>|<span data-ttu-id="1bcf2-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="1bcf2-109">Type</span></span>|<span data-ttu-id="1bcf2-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1bcf2-110">Description</span></span>|
+<span data-ttu-id="4415e-107">Configurações de OMA.</span><span class="sxs-lookup"><span data-stu-id="4415e-107">OMA Settings definition.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="4415e-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4415e-108">Properties</span></span>
+|<span data-ttu-id="4415e-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4415e-109">Property</span></span>|<span data-ttu-id="4415e-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="4415e-110">Type</span></span>|<span data-ttu-id="4415e-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="4415e-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1bcf2-111">displayName</span><span class="sxs-lookup"><span data-stu-id="1bcf2-111">displayName</span></span>|<span data-ttu-id="1bcf2-112">String</span><span class="sxs-lookup"><span data-stu-id="1bcf2-112">String</span></span>|<span data-ttu-id="1bcf2-113">Nome de exibição.</span><span class="sxs-lookup"><span data-stu-id="1bcf2-113">Display Name.</span></span>|
-|<span data-ttu-id="1bcf2-114">descrição</span><span class="sxs-lookup"><span data-stu-id="1bcf2-114">description</span></span>|<span data-ttu-id="1bcf2-115">String</span><span class="sxs-lookup"><span data-stu-id="1bcf2-115">String</span></span>|<span data-ttu-id="1bcf2-116">Descrição.</span><span class="sxs-lookup"><span data-stu-id="1bcf2-116">Description.</span></span>|
-|<span data-ttu-id="1bcf2-117">omaUri</span><span class="sxs-lookup"><span data-stu-id="1bcf2-117">omaUri</span></span>|<span data-ttu-id="1bcf2-118">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1bcf2-118">String</span></span>|<span data-ttu-id="1bcf2-119">OMA.</span><span class="sxs-lookup"><span data-stu-id="1bcf2-119">OMA.</span></span>|
+|<span data-ttu-id="4415e-112">displayName</span><span class="sxs-lookup"><span data-stu-id="4415e-112">displayName</span></span>|<span data-ttu-id="4415e-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4415e-113">String</span></span>|<span data-ttu-id="4415e-114">Nome de exibição.</span><span class="sxs-lookup"><span data-stu-id="4415e-114">Display Name.</span></span>|
+|<span data-ttu-id="4415e-115">description</span><span class="sxs-lookup"><span data-stu-id="4415e-115">description</span></span>|<span data-ttu-id="4415e-116">String</span><span class="sxs-lookup"><span data-stu-id="4415e-116">String</span></span>|<span data-ttu-id="4415e-117">Descrição.</span><span class="sxs-lookup"><span data-stu-id="4415e-117">Description.</span></span>|
+|<span data-ttu-id="4415e-118">omaUri</span><span class="sxs-lookup"><span data-stu-id="4415e-118">omaUri</span></span>|<span data-ttu-id="4415e-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4415e-119">String</span></span>|<span data-ttu-id="4415e-120">OMA.</span><span class="sxs-lookup"><span data-stu-id="4415e-120">OMA.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1bcf2-120">Relações</span><span class="sxs-lookup"><span data-stu-id="1bcf2-120">Relationships</span></span>
-<span data-ttu-id="1bcf2-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="1bcf2-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="4415e-121">Relações</span><span class="sxs-lookup"><span data-stu-id="4415e-121">Relationships</span></span>
+<span data-ttu-id="4415e-122">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4415e-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1bcf2-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1bcf2-122">JSON Representation</span></span>
-<span data-ttu-id="1bcf2-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1bcf2-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4415e-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4415e-123">JSON Representation</span></span>
+<span data-ttu-id="4415e-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4415e-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSetting"

@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d92ec405681b2f7571fcb19e38de83000f16fe8e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c4418d97b5db20bc8be9508cd19ac2c8d61ebf02
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338056"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526413"
 ---
-# <a name="internetsitesecuritylevel-enum-type"></a><span data-ttu-id="69da1-103">tipo de enumeração internetSiteSecurityLevel</span><span class="sxs-lookup"><span data-stu-id="69da1-103">internetSiteSecurityLevel enum type</span></span>
+# <a name="internetsitesecuritylevel-enum-type"></a><span data-ttu-id="75c16-103">tipo de enumeração internetSiteSecurityLevel</span><span class="sxs-lookup"><span data-stu-id="75c16-103">internetSiteSecurityLevel enum type</span></span>
 
-> <span data-ttu-id="69da1-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="69da1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="75c16-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="75c16-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="69da1-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="69da1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="75c16-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="75c16-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="69da1-106">Valores possíveis para o nível de segurança do site da Internet.</span><span class="sxs-lookup"><span data-stu-id="69da1-106">Possible values for internet site security level.</span></span>
+> <span data-ttu-id="75c16-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="75c16-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="69da1-107">Membros</span><span class="sxs-lookup"><span data-stu-id="69da1-107">Members</span></span>
-|<span data-ttu-id="69da1-108">Membro</span><span class="sxs-lookup"><span data-stu-id="69da1-108">Member</span></span>|<span data-ttu-id="69da1-109">Valor</span><span class="sxs-lookup"><span data-stu-id="69da1-109">Value</span></span>|<span data-ttu-id="69da1-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="69da1-110">Description</span></span>|
+<span data-ttu-id="75c16-107">Valores possíveis para o nível de segurança do site da Internet.</span><span class="sxs-lookup"><span data-stu-id="75c16-107">Possible values for internet site security level.</span></span>
+
+## <a name="members"></a><span data-ttu-id="75c16-108">Membros</span><span class="sxs-lookup"><span data-stu-id="75c16-108">Members</span></span>
+|<span data-ttu-id="75c16-109">Membro</span><span class="sxs-lookup"><span data-stu-id="75c16-109">Member</span></span>|<span data-ttu-id="75c16-110">Valor</span><span class="sxs-lookup"><span data-stu-id="75c16-110">Value</span></span>|<span data-ttu-id="75c16-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="75c16-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="69da1-111">UserDefined</span><span class="sxs-lookup"><span data-stu-id="69da1-111">userDefined</span></span>|<span data-ttu-id="69da1-112">,0</span><span class="sxs-lookup"><span data-stu-id="69da1-112">0</span></span>|<span data-ttu-id="69da1-113">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="69da1-113">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="69da1-114">medium</span><span class="sxs-lookup"><span data-stu-id="69da1-114">medium</span></span>|<span data-ttu-id="69da1-115">1</span><span class="sxs-lookup"><span data-stu-id="69da1-115">1</span></span>|<span data-ttu-id="69da1-116">Médio.</span><span class="sxs-lookup"><span data-stu-id="69da1-116">Medium.</span></span>|
-|<span data-ttu-id="69da1-117">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="69da1-117">mediumHigh</span></span>|<span data-ttu-id="69da1-118">duas</span><span class="sxs-lookup"><span data-stu-id="69da1-118">2</span></span>|<span data-ttu-id="69da1-119">Médio-alto.</span><span class="sxs-lookup"><span data-stu-id="69da1-119">Medium-High.</span></span>|
-|<span data-ttu-id="69da1-120">high</span><span class="sxs-lookup"><span data-stu-id="69da1-120">high</span></span>|<span data-ttu-id="69da1-121">3D</span><span class="sxs-lookup"><span data-stu-id="69da1-121">3</span></span>|<span data-ttu-id="69da1-122">Alto.</span><span class="sxs-lookup"><span data-stu-id="69da1-122">High.</span></span>|
+|<span data-ttu-id="75c16-112">UserDefined</span><span class="sxs-lookup"><span data-stu-id="75c16-112">userDefined</span></span>|<span data-ttu-id="75c16-113">,0</span><span class="sxs-lookup"><span data-stu-id="75c16-113">0</span></span>|<span data-ttu-id="75c16-114">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="75c16-114">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="75c16-115">medium</span><span class="sxs-lookup"><span data-stu-id="75c16-115">medium</span></span>|<span data-ttu-id="75c16-116">1 </span><span class="sxs-lookup"><span data-stu-id="75c16-116">1</span></span>|<span data-ttu-id="75c16-117">Médio.</span><span class="sxs-lookup"><span data-stu-id="75c16-117">Medium.</span></span>|
+|<span data-ttu-id="75c16-118">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="75c16-118">mediumHigh</span></span>|<span data-ttu-id="75c16-119">2 </span><span class="sxs-lookup"><span data-stu-id="75c16-119">2</span></span>|<span data-ttu-id="75c16-120">Médio-alto.</span><span class="sxs-lookup"><span data-stu-id="75c16-120">Medium-High.</span></span>|
+|<span data-ttu-id="75c16-121">high</span><span class="sxs-lookup"><span data-stu-id="75c16-121">high</span></span>|<span data-ttu-id="75c16-122">3 </span><span class="sxs-lookup"><span data-stu-id="75c16-122">3</span></span>|<span data-ttu-id="75c16-123">Alto.</span><span class="sxs-lookup"><span data-stu-id="75c16-123">High.</span></span>|
 
 
 
