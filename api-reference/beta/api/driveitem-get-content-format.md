@@ -6,27 +6,29 @@ title: Converter em outros formatos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 914f6b5d847c6b8af5439c4b5e83f3d9f281aa65
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 03bb884e8dde82c99d0aadfa2a6e925b0d6552a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719378"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432653"
 ---
-# <a name="download-a-file-in-another-format"></a><span data-ttu-id="597fe-103">Baixar um arquivo em outro formato</span><span class="sxs-lookup"><span data-stu-id="597fe-103">Download a file in another format</span></span>
+# <a name="download-a-file-in-another-format"></a><span data-ttu-id="6a6d0-103">Baixar um arquivo em outro formato</span><span class="sxs-lookup"><span data-stu-id="6a6d0-103">Download a file in another format</span></span>
+
+<span data-ttu-id="6a6d0-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6a6d0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="597fe-104">Use esta API para recuperar os conteúdos de um item em um formato específico.</span><span class="sxs-lookup"><span data-stu-id="597fe-104">Use this API to retrieve the contents of an item in a specific format.</span></span>
-<span data-ttu-id="597fe-105">Nem todos os arquivos podem ser convertidos em todos os formatos.</span><span class="sxs-lookup"><span data-stu-id="597fe-105">Not all files can be converted into all formats.</span></span>
+<span data-ttu-id="6a6d0-105">Use esta API para recuperar os conteúdos de um item em um formato específico.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-105">Use this API to retrieve the contents of an item in a specific format.</span></span>
+<span data-ttu-id="6a6d0-106">Nem todos os arquivos podem ser convertidos em todos os formatos.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-106">Not all files can be converted into all formats.</span></span>
 
-<span data-ttu-id="597fe-106">Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).</span><span class="sxs-lookup"><span data-stu-id="597fe-106">To download the item in its original format, see [download an item's contents](driveitem-get-content.md).</span></span>
+<span data-ttu-id="6a6d0-107">Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).</span><span class="sxs-lookup"><span data-stu-id="6a6d0-107">To download the item in its original format, see [download an item's contents](driveitem-get-content.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="597fe-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="597fe-107">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6a6d0-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6a6d0-108">Prerequisites</span></span>
 
-<span data-ttu-id="597fe-108">Para chamar esta API, o usuário deve ter concedido acesso de leitura ao aplicativo para o arquivo que o aplicativo deseja converter.</span><span class="sxs-lookup"><span data-stu-id="597fe-108">To call this API, the user must have granted the application read access to the file the app wishes to convert.</span></span>
+<span data-ttu-id="6a6d0-109">Para chamar esta API, o usuário deve ter concedido acesso de leitura ao aplicativo para o arquivo que o aplicativo deseja converter.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-109">To call this API, the user must have granted the application read access to the file the app wishes to convert.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="597fe-109">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="597fe-109">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6a6d0-110">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6a6d0-110">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,59 +37,59 @@ GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="597fe-110">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="597fe-110">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="6a6d0-111">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="6a6d0-111">Query parameters</span></span>
 
-| <span data-ttu-id="597fe-111">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="597fe-111">Parameter</span></span>      | <span data-ttu-id="597fe-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="597fe-112">Type</span></span>  | <span data-ttu-id="597fe-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="597fe-113">Description</span></span>                                                    |
+| <span data-ttu-id="6a6d0-112">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="6a6d0-112">Parameter</span></span>      | <span data-ttu-id="6a6d0-113">Tipo</span><span class="sxs-lookup"><span data-stu-id="6a6d0-113">Type</span></span>  | <span data-ttu-id="6a6d0-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="6a6d0-114">Description</span></span>                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| <span data-ttu-id="597fe-114">_format_</span><span class="sxs-lookup"><span data-stu-id="597fe-114">_format_</span></span>  | <span data-ttu-id="597fe-115">string</span><span class="sxs-lookup"><span data-stu-id="597fe-115">string</span></span> | <span data-ttu-id="597fe-116">Especifique o formato em que o conteúdo do item deve ser baixado.</span><span class="sxs-lookup"><span data-stu-id="597fe-116">Specify the format the item's content should be downloaded as.</span></span> |
+| <span data-ttu-id="6a6d0-115">_format_</span><span class="sxs-lookup"><span data-stu-id="6a6d0-115">_format_</span></span>  | <span data-ttu-id="6a6d0-116">string</span><span class="sxs-lookup"><span data-stu-id="6a6d0-116">string</span></span> | <span data-ttu-id="6a6d0-117">Especifique o formato em que o conteúdo do item deve ser baixado.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-117">Specify the format the item's content should be downloaded as.</span></span> |
 
 
-<span data-ttu-id="597fe-117">Os seguintes valores são válidos para o parâmetro **format**:</span><span class="sxs-lookup"><span data-stu-id="597fe-117">The following values are valid for the **format** parameter:</span></span>
+<span data-ttu-id="6a6d0-118">Os seguintes valores são válidos para o parâmetro **format**:</span><span class="sxs-lookup"><span data-stu-id="6a6d0-118">The following values are valid for the **format** parameter:</span></span>
 
-| <span data-ttu-id="597fe-118">Valor</span><span class="sxs-lookup"><span data-stu-id="597fe-118">Value</span></span> | <span data-ttu-id="597fe-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="597fe-119">Description</span></span>                        | <span data-ttu-id="597fe-120">Extensões de origem com suporte</span><span class="sxs-lookup"><span data-stu-id="597fe-120">Supported source extensions</span></span>
+| <span data-ttu-id="6a6d0-119">Valor</span><span class="sxs-lookup"><span data-stu-id="6a6d0-119">Value</span></span> | <span data-ttu-id="6a6d0-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6a6d0-120">Description</span></span>                        | <span data-ttu-id="6a6d0-121">Extensões de origem com suporte</span><span class="sxs-lookup"><span data-stu-id="6a6d0-121">Supported source extensions</span></span>
 |:------|:-----------------------------------|---------------------------------
-| <span data-ttu-id="597fe-121">glb</span><span class="sxs-lookup"><span data-stu-id="597fe-121">glb</span></span>   | <span data-ttu-id="597fe-122">Converte o item no formato GLB</span><span class="sxs-lookup"><span data-stu-id="597fe-122">Converts the item into GLB format</span></span>  | <span data-ttu-id="597fe-123">Cool, FBX, obj, estrato, STL, 3mf</span><span class="sxs-lookup"><span data-stu-id="597fe-123">cool, fbx, obj, ply, stl, 3mf</span></span>
-| <span data-ttu-id="597fe-124">HTML</span><span class="sxs-lookup"><span data-stu-id="597fe-124">html</span></span>  | <span data-ttu-id="597fe-125">Converte o item em formato HTML</span><span class="sxs-lookup"><span data-stu-id="597fe-125">Converts the item into HTML format</span></span> | <span data-ttu-id="597fe-126">EML, MD, msg</span><span class="sxs-lookup"><span data-stu-id="597fe-126">eml, md, msg</span></span>
-| <span data-ttu-id="597fe-127">jpg</span><span class="sxs-lookup"><span data-stu-id="597fe-127">jpg</span></span>   | <span data-ttu-id="597fe-128">Converte o item em formato JPG</span><span class="sxs-lookup"><span data-stu-id="597fe-128">Converts the item into JPG format</span></span>  | <span data-ttu-id="597fe-129">3G2, 3GP, 3GP2, 3GPP, 3mf, ai, ARW, ASF, AVI, Bas, Bash, bat, BMP, c CBL, cmd, cool, CPP, CR2, CRW, cs, CSS, CSV, CUR, DCM,, DIC, DICM, DICOM, DNG, Doc, docx,, o EPI, o, o EPSF, o, o EPSI, o , HEIC, HEIF, htm, HTML, ICO, Icon, Java, JFIF, JPEG, jpg, js, JSON, Key, log, M2TS, M4A, M4V, reparation, MD, MEF, MOV, o filme, mp3, o MRW, o NEF, o NRW, o (a), o, o, o formato de página, o, o png, o , potm, potx, PPS, ppsx, ppsxm, ppt, pptm, pptx, PS, ps1, PSB, PSD, py, RAW, RB, RTF, RW1, RW2, sh, esboço, SQL, SR2, STL, TIF, TIFF,, txt, webm, XBM,. WMA, XCF,, XPM, YAML, yml</span><span class="sxs-lookup"><span data-stu-id="597fe-129">3g2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, cool, cpp, cr2, crw, cs, css, csv, cur, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, glb, h, hcp, heic, heif, htm, html, ico, icon, java, jfif, jpeg, jpg, js, json, key, log, m2ts, m4a, m4v, markdown, md, mef, mov, movie, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, numbers, obj, odp, odt, ogg, orf, pages, pano, pdf, pef, php, pict, pl, ply, png, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, py, raw, rb, rtf, rw1, rw2, sh, sketch, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml</span></span>
-| <span data-ttu-id="597fe-130">pdf</span><span class="sxs-lookup"><span data-stu-id="597fe-130">pdf</span></span>   | <span data-ttu-id="597fe-131">Converte o item em formato PDF</span><span class="sxs-lookup"><span data-stu-id="597fe-131">Converts the item into PDF format</span></span>  | <span data-ttu-id="597fe-132">Doc, docx, ePub, EML, htm, HTML, MD, MSG, odp, ODS, odt, PPS, ppsx, XL, pptx, RTF, TIF, TIFF, xls, xlsm, xlsx</span><span class="sxs-lookup"><span data-stu-id="597fe-132">doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx</span></span>
+| <span data-ttu-id="6a6d0-122">glb</span><span class="sxs-lookup"><span data-stu-id="6a6d0-122">glb</span></span>   | <span data-ttu-id="6a6d0-123">Converte o item ao formato GLB</span><span class="sxs-lookup"><span data-stu-id="6a6d0-123">Converts the item into GLB format</span></span>  | <span data-ttu-id="6a6d0-124">cool, fbx, obj, ply, stl, 3mf</span><span class="sxs-lookup"><span data-stu-id="6a6d0-124">cool, fbx, obj, ply, stl, 3mf</span></span>
+| <span data-ttu-id="6a6d0-125">HTML</span><span class="sxs-lookup"><span data-stu-id="6a6d0-125">html</span></span>  | <span data-ttu-id="6a6d0-126">Converte o item ao formato HTML</span><span class="sxs-lookup"><span data-stu-id="6a6d0-126">Converts the item into HTML format</span></span> | <span data-ttu-id="6a6d0-127">eml, md, msg</span><span class="sxs-lookup"><span data-stu-id="6a6d0-127">eml, md, msg</span></span>
+| <span data-ttu-id="6a6d0-128">jpg</span><span class="sxs-lookup"><span data-stu-id="6a6d0-128">jpg</span></span>   | <span data-ttu-id="6a6d0-129">Converte o item ao formato JPG</span><span class="sxs-lookup"><span data-stu-id="6a6d0-129">Converts the item into JPG format</span></span>  | <span data-ttu-id="6a6d0-130">3g2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, cool, cpp, cr2, crw, cs, css, csv, cur, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, glb, h, hcp, heic, heif, htm, html, ico, icon, java, jfif, jpeg, jpg, js, json, key, log, m2ts, m4a, m4v, markdown, md, mef, mov, movie, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, numbers, obj, odp, odt, ogg, orf, pages, pano, pdf, pef, php, pict, pl, ply, png, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, py, raw, rb, rtf, rw1, rw2, sh, sketch, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml</span><span class="sxs-lookup"><span data-stu-id="6a6d0-130">3g2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, cool, cpp, cr2, crw, cs, css, csv, cur, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, glb, h, hcp, heic, heif, htm, html, ico, icon, java, jfif, jpeg, jpg, js, json, key, log, m2ts, m4a, m4v, markdown, md, mef, mov, movie, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, numbers, obj, odp, odt, ogg, orf, pages, pano, pdf, pef, php, pict, pl, ply, png, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, py, raw, rb, rtf, rw1, rw2, sh, sketch, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml</span></span>
+| <span data-ttu-id="6a6d0-131">pdf</span><span class="sxs-lookup"><span data-stu-id="6a6d0-131">pdf</span></span>   | <span data-ttu-id="6a6d0-132">Converte o item ao formato PDF</span><span class="sxs-lookup"><span data-stu-id="6a6d0-132">Converts the item into PDF format</span></span>  | <span data-ttu-id="6a6d0-133">doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx</span><span class="sxs-lookup"><span data-stu-id="6a6d0-133">doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="597fe-133">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="597fe-133">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="6a6d0-134">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="6a6d0-134">Optional request headers</span></span>
 
-| <span data-ttu-id="597fe-134">Nome</span><span class="sxs-lookup"><span data-stu-id="597fe-134">Name</span></span>            | <span data-ttu-id="597fe-135">Valor</span><span class="sxs-lookup"><span data-stu-id="597fe-135">Value</span></span>   | <span data-ttu-id="597fe-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="597fe-136">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="6a6d0-135">Nome</span><span class="sxs-lookup"><span data-stu-id="6a6d0-135">Name</span></span>            | <span data-ttu-id="6a6d0-136">Valor</span><span class="sxs-lookup"><span data-stu-id="6a6d0-136">Value</span></span>   | <span data-ttu-id="6a6d0-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="6a6d0-137">Description</span></span>                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="597fe-137">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="597fe-137">_if-none-match_</span></span> | <span data-ttu-id="597fe-138">String</span><span class="sxs-lookup"><span data-stu-id="597fe-138">String</span></span>  | <span data-ttu-id="597fe-139">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="597fe-139">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="6a6d0-138">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="6a6d0-138">_if-none-match_</span></span> | <span data-ttu-id="6a6d0-139">String</span><span class="sxs-lookup"><span data-stu-id="6a6d0-139">String</span></span>  | <span data-ttu-id="6a6d0-140">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-140">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="597fe-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="597fe-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6a6d0-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6a6d0-141">Example</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="597fe-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="597fe-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6a6d0-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="6a6d0-142">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /drive/items/{item-id}/content?format={format}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="597fe-142">C#</span><span class="sxs-lookup"><span data-stu-id="597fe-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6a6d0-143">C#</span><span class="sxs-lookup"><span data-stu-id="6a6d0-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="597fe-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="597fe-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6a6d0-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6a6d0-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="597fe-144">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="597fe-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6a6d0-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6a6d0-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="597fe-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="597fe-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6a6d0-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="6a6d0-146">Response</span></span>
 
-<span data-ttu-id="597fe-146">Retorna uma resposta `302 Found` que redireciona para uma URL de download previamente autenticada do arquivo convertido.</span><span class="sxs-lookup"><span data-stu-id="597fe-146">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.</span></span>
+<span data-ttu-id="6a6d0-147">Retorna uma resposta `302 Found` que redireciona para uma URL de download previamente autenticada do arquivo convertido.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-147">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.</span></span>
 
-<span data-ttu-id="597fe-147">Para baixar o arquivo convertido, seu aplicativo deve seguir o cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="597fe-147">To download the converted file, your app must follow the `Location` header in the response.</span></span>
+<span data-ttu-id="6a6d0-148">Para baixar o arquivo convertido, seu aplicativo deve seguir o cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-148">To download the converted file, your app must follow the `Location` header in the response.</span></span>
 
-<span data-ttu-id="597fe-148">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.</span><span class="sxs-lookup"><span data-stu-id="597fe-148">Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.</span></span>
+<span data-ttu-id="6a6d0-149">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-149">Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "stream" } -->
 
@@ -96,9 +98,9 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="597fe-149">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="597fe-149">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="6a6d0-150">Respostas de erros</span><span class="sxs-lookup"><span data-stu-id="6a6d0-150">Error responses</span></span>
 
-<span data-ttu-id="597fe-150">Confira [Respostas de erro][error-response] para saber mais sobre como os erros retornam.</span><span class="sxs-lookup"><span data-stu-id="597fe-150">See [Error Responses][error-response] for more information about how errors are returned.</span></span>
+<span data-ttu-id="6a6d0-151">Confira [Respostas de Erros][error-response] para saber mais sobre como os erros retornam.</span><span class="sxs-lookup"><span data-stu-id="6a6d0-151">See [Error Responses][error-response] for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

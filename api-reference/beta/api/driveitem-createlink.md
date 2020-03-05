@@ -6,34 +6,36 @@ title: Compartilhar um arquivo com um link
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1e9c1f2ffaa5b50b95a49d4be03ce543f12a476b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8263c675fae86a664c12f7d49967eef50c3a11cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416822"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432800"
 ---
-# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="b4442-103">Criar um link de compartilhamento para um DriveItem</span><span class="sxs-lookup"><span data-stu-id="b4442-103">Create a sharing link for a DriveItem</span></span>
+# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="d5bbe-103">Criar um link de compartilhamento para um DriveItem</span><span class="sxs-lookup"><span data-stu-id="d5bbe-103">Create a sharing link for a DriveItem</span></span>
+
+<span data-ttu-id="d5bbe-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d5bbe-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b4442-104">Você pode usar a ação **createLink** para compartilhar um [DriveItem](../resources/driveitem.md) por meio de um link de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="b4442-104">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
+<span data-ttu-id="d5bbe-105">Você pode usar a ação **createLink** para compartilhar um [DriveItem](../resources/driveitem.md) por meio de um link de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-105">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
 
-<span data-ttu-id="b4442-p101">A ação **createLink** criará um novo link de compartilhamento se o tipo de link especificado não existir para o aplicativo de chamada. Se um link de compartilhamento do tipo especificado já existir para o aplicativo, o link de compartilhamento existente será retornado.</span><span class="sxs-lookup"><span data-stu-id="b4442-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
+<span data-ttu-id="d5bbe-p101">A ação **createLink** criará um novo link de compartilhamento se o tipo de link especificado não existir para o aplicativo de chamada. Se um link de compartilhamento do tipo especificado já existir para o aplicativo, o link de compartilhamento existente será retornado.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
 
-<span data-ttu-id="b4442-107">Recursos de DriveItem herdam permissões de compartilhamento de seus ancestrais.</span><span class="sxs-lookup"><span data-stu-id="b4442-107">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
+<span data-ttu-id="d5bbe-108">Recursos de DriveItem herdam permissões de compartilhamento de seus ancestrais.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-108">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b4442-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="b4442-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5bbe-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="d5bbe-109">Permissions</span></span>
 
-<span data-ttu-id="b4442-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b4442-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d5bbe-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5bbe-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b4442-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b4442-111">Permission type</span></span>      | <span data-ttu-id="b4442-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b4442-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d5bbe-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d5bbe-112">Permission type</span></span>      | <span data-ttu-id="d5bbe-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d5bbe-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b4442-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b4442-113">Delegated (work or school account)</span></span> | <span data-ttu-id="b4442-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4442-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b4442-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b4442-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4442-116">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4442-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b4442-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b4442-117">Application</span></span> | <span data-ttu-id="b4442-118">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4442-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="d5bbe-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d5bbe-114">Delegated (work or school account)</span></span> | <span data-ttu-id="d5bbe-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5bbe-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d5bbe-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d5bbe-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5bbe-117">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5bbe-117">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d5bbe-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d5bbe-118">Application</span></span> | <span data-ttu-id="d5bbe-119">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5bbe-119">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b4442-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b4442-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5bbe-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d5bbe-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,55 +47,55 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### <a name="request-body"></a><span data-ttu-id="b4442-120">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b4442-120">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="d5bbe-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d5bbe-121">Request body</span></span>
 
-<span data-ttu-id="b4442-121">O corpo da solicitação define as propriedades do link de compartilhamento que seu aplicativo está solicitando.</span><span class="sxs-lookup"><span data-stu-id="b4442-121">The body of the request defines properties of the sharing link your application is requesting.</span></span>
-<span data-ttu-id="b4442-122">A solicitação deve ser um objeto JSON com as seguintes propriedades.</span><span class="sxs-lookup"><span data-stu-id="b4442-122">The request should be a JSON object with the following properties.</span></span>
+<span data-ttu-id="d5bbe-122">O corpo da solicitação define as propriedades do link de compartilhamento que seu aplicativo está solicitando.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-122">The body of the request defines properties of the sharing link your application is requesting.</span></span>
+<span data-ttu-id="d5bbe-123">A solicitação deve ser um objeto JSON com as seguintes propriedades.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-123">The request should be a JSON object with the following properties.</span></span>
 
-|   <span data-ttu-id="b4442-123">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b4442-123">Property</span></span>                 |  <span data-ttu-id="b4442-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="b4442-124">Type</span></span>  |                                 <span data-ttu-id="b4442-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="b4442-125">Description</span></span>                                                               |
+|   <span data-ttu-id="d5bbe-124">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d5bbe-124">Property</span></span>                 |  <span data-ttu-id="d5bbe-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="d5bbe-125">Type</span></span>  |                                 <span data-ttu-id="d5bbe-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5bbe-126">Description</span></span>                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="b4442-126">type</span><span class="sxs-lookup"><span data-stu-id="b4442-126">type</span></span>               | <span data-ttu-id="b4442-127">string</span><span class="sxs-lookup"><span data-stu-id="b4442-127">string</span></span> | <span data-ttu-id="b4442-128">O tipo de link de compartilhamento a ser criado.</span><span class="sxs-lookup"><span data-stu-id="b4442-128">The type of sharing link to create.</span></span> <span data-ttu-id="b4442-129">Exibir, editar ou incorporar.</span><span class="sxs-lookup"><span data-stu-id="b4442-129">Either view, edit, or embed.</span></span>                                    |
-|<span data-ttu-id="b4442-130">password</span><span class="sxs-lookup"><span data-stu-id="b4442-130">password</span></span>           | <span data-ttu-id="b4442-131">string</span><span class="sxs-lookup"><span data-stu-id="b4442-131">string</span></span> | <span data-ttu-id="b4442-132">A senha do link de compartilhamento que é definida pelo criador.</span><span class="sxs-lookup"><span data-stu-id="b4442-132">The password of the sharing link that is set by the creator.</span></span> <span data-ttu-id="b4442-133">Opcional e o OneDrive somente pessoal.</span><span class="sxs-lookup"><span data-stu-id="b4442-133">Optional and OneDrive Personal only.</span></span>         |
-|<span data-ttu-id="b4442-134">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="b4442-134">expirationDateTime</span></span> | <span data-ttu-id="b4442-135">string</span><span class="sxs-lookup"><span data-stu-id="b4442-135">string</span></span> | <span data-ttu-id="b4442-136">Uma cadeia de caracteres com formato AAAA-MM-ddTHH: mm: ssZ de DateTime indica o tempo de expiração da permissão.</span><span class="sxs-lookup"><span data-stu-id="b4442-136">A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.</span></span> |
-|<span data-ttu-id="b4442-137">escopo</span><span class="sxs-lookup"><span data-stu-id="b4442-137">scope</span></span>              | <span data-ttu-id="b4442-138">string</span><span class="sxs-lookup"><span data-stu-id="b4442-138">string</span></span> | <span data-ttu-id="b4442-139">Opcional.</span><span class="sxs-lookup"><span data-stu-id="b4442-139">Optional.</span></span> <span data-ttu-id="b4442-140">O escopo do link a ser criado.</span><span class="sxs-lookup"><span data-stu-id="b4442-140">The scope of link to create.</span></span> <span data-ttu-id="b4442-141">Anônimo ou organização.</span><span class="sxs-lookup"><span data-stu-id="b4442-141">Either anonymous or organization.</span></span>                              |
+|<span data-ttu-id="d5bbe-127">type</span><span class="sxs-lookup"><span data-stu-id="d5bbe-127">type</span></span>               | <span data-ttu-id="d5bbe-128">string</span><span class="sxs-lookup"><span data-stu-id="d5bbe-128">string</span></span> | <span data-ttu-id="d5bbe-129">O tipo de link de compartilhamento a ser criado.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-129">The type of sharing link to create.</span></span> <span data-ttu-id="d5bbe-130">Exibir, editar ou incorporar.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-130">Either view, edit, or embed.</span></span>                                    |
+|<span data-ttu-id="d5bbe-131">password</span><span class="sxs-lookup"><span data-stu-id="d5bbe-131">password</span></span>           | <span data-ttu-id="d5bbe-132">string</span><span class="sxs-lookup"><span data-stu-id="d5bbe-132">string</span></span> | <span data-ttu-id="d5bbe-133">A senha do link de compartilhamento que é definida pelo criador.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-133">The password of the sharing link that is set by the creator.</span></span> <span data-ttu-id="d5bbe-134">Opcional e o OneDrive somente pessoal.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-134">Optional and OneDrive Personal only.</span></span>         |
+|<span data-ttu-id="d5bbe-135">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="d5bbe-135">expirationDateTime</span></span> | <span data-ttu-id="d5bbe-136">string</span><span class="sxs-lookup"><span data-stu-id="d5bbe-136">string</span></span> | <span data-ttu-id="d5bbe-137">Uma cadeia de caracteres com formato AAAA-MM-ddTHH: mm: ssZ de DateTime indica o tempo de expiração da permissão.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-137">A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.</span></span> |
+|<span data-ttu-id="d5bbe-138">escopo</span><span class="sxs-lookup"><span data-stu-id="d5bbe-138">scope</span></span>              | <span data-ttu-id="d5bbe-139">string</span><span class="sxs-lookup"><span data-stu-id="d5bbe-139">string</span></span> | <span data-ttu-id="d5bbe-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-140">Optional.</span></span> <span data-ttu-id="d5bbe-141">O escopo do link a ser criado.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-141">The scope of link to create.</span></span> <span data-ttu-id="d5bbe-142">Anônimo ou organização.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-142">Either anonymous or organization.</span></span>                              |
 
 
-### <a name="link-types"></a><span data-ttu-id="b4442-142">Tipos de link</span><span class="sxs-lookup"><span data-stu-id="b4442-142">Link types</span></span>
+### <a name="link-types"></a><span data-ttu-id="d5bbe-143">Tipos de link</span><span class="sxs-lookup"><span data-stu-id="d5bbe-143">Link types</span></span>
 
-<span data-ttu-id="b4442-143">Os seguintes valores são permitidos para o parâmetro **type**.</span><span class="sxs-lookup"><span data-stu-id="b4442-143">The following values are allowed for the **type** parameter.</span></span>
+<span data-ttu-id="d5bbe-144">Os seguintes valores são permitidos para o parâmetro **type**.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-144">The following values are allowed for the **type** parameter.</span></span>
 
-| <span data-ttu-id="b4442-144">Valor do tipo</span><span class="sxs-lookup"><span data-stu-id="b4442-144">Type value</span></span> | <span data-ttu-id="b4442-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="b4442-145">Description</span></span>                                                                                  |
+| <span data-ttu-id="d5bbe-145">Valor do tipo</span><span class="sxs-lookup"><span data-stu-id="d5bbe-145">Type value</span></span> | <span data-ttu-id="d5bbe-146">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5bbe-146">Description</span></span>                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b4442-146">modo de exibição</span><span class="sxs-lookup"><span data-stu-id="b4442-146">view</span></span>     | <span data-ttu-id="b4442-147">Cria um link somente leitura para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="b4442-147">Creates a read-only link to the DriveItem.</span></span>                                                        |
-| <span data-ttu-id="b4442-148">edit</span><span class="sxs-lookup"><span data-stu-id="b4442-148">edit</span></span>     | <span data-ttu-id="b4442-149">Cria um link de leitura e gravação para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="b4442-149">Creates a read-write link to the DriveItem.</span></span>                                                       |
-| <span data-ttu-id="b4442-150">Incorporar</span><span class="sxs-lookup"><span data-stu-id="b4442-150">embed</span></span>    | <span data-ttu-id="b4442-151">Cria um link incorporado para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="b4442-151">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="b4442-152">Essa opção só está disponível para arquivos no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="b4442-152">This option is only available for files in OneDrive personal.</span></span> |
+| <span data-ttu-id="d5bbe-147">modo de exibição</span><span class="sxs-lookup"><span data-stu-id="d5bbe-147">view</span></span>     | <span data-ttu-id="d5bbe-148">Cria um link somente leitura para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-148">Creates a read-only link to the DriveItem.</span></span>                                                        |
+| <span data-ttu-id="d5bbe-149">edit</span><span class="sxs-lookup"><span data-stu-id="d5bbe-149">edit</span></span>     | <span data-ttu-id="d5bbe-150">Cria um link de leitura e gravação para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-150">Creates a read-write link to the DriveItem.</span></span>                                                       |
+| <span data-ttu-id="d5bbe-151">Incorporar</span><span class="sxs-lookup"><span data-stu-id="d5bbe-151">embed</span></span>    | <span data-ttu-id="d5bbe-152">Cria um link incorporado para DriveItem.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-152">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="d5bbe-153">Essa opção só está disponível para arquivos no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-153">This option is only available for files in OneDrive personal.</span></span> |
 
-### <a name="scope-types"></a><span data-ttu-id="b4442-153">Tipos de escopo</span><span class="sxs-lookup"><span data-stu-id="b4442-153">Scope types</span></span>
+### <a name="scope-types"></a><span data-ttu-id="d5bbe-154">Tipos de escopo</span><span class="sxs-lookup"><span data-stu-id="d5bbe-154">Scope types</span></span>
 
-<span data-ttu-id="b4442-154">Os seguintes valores são permitidos para o parâmetro **scope**.</span><span class="sxs-lookup"><span data-stu-id="b4442-154">The following values are allowed for the **scope** parameter.</span></span>
-<span data-ttu-id="b4442-155">Se o parâmetro **scope** não for especificado, o tipo de link padrão será criado para a organização.</span><span class="sxs-lookup"><span data-stu-id="b4442-155">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
+<span data-ttu-id="d5bbe-155">Os seguintes valores são permitidos para o parâmetro **scope**.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-155">The following values are allowed for the **scope** parameter.</span></span>
+<span data-ttu-id="d5bbe-156">Se o parâmetro **scope** não for especificado, o tipo de link padrão será criado para a organização.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-156">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
 
-| <span data-ttu-id="b4442-156">Valor</span><span class="sxs-lookup"><span data-stu-id="b4442-156">Value</span></span>          | <span data-ttu-id="b4442-157">Descrição</span><span class="sxs-lookup"><span data-stu-id="b4442-157">Description</span></span>
+| <span data-ttu-id="d5bbe-157">Valor</span><span class="sxs-lookup"><span data-stu-id="d5bbe-157">Value</span></span>          | <span data-ttu-id="d5bbe-158">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5bbe-158">Description</span></span>
 |:---------------|:------------------------------------------------------------
-| <span data-ttu-id="b4442-158">sejam</span><span class="sxs-lookup"><span data-stu-id="b4442-158">anonymous</span></span>    | <span data-ttu-id="b4442-159">Qualquer pessoa com o link tem acesso, sem a necessidade de fazer logon.</span><span class="sxs-lookup"><span data-stu-id="b4442-159">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="b4442-160">Isso pode incluir pessoas de fora da sua organização.</span><span class="sxs-lookup"><span data-stu-id="b4442-160">This may include people outside of your organization.</span></span> <span data-ttu-id="b4442-161">O suporte a link anônimo pode ser desabilitado por um administrador.</span><span class="sxs-lookup"><span data-stu-id="b4442-161">Anonymous link support may be disabled by an administrator.</span></span>
-| <span data-ttu-id="b4442-162">organization</span><span class="sxs-lookup"><span data-stu-id="b4442-162">organization</span></span> | <span data-ttu-id="b4442-163">Qualquer pessoa que se inscreveu em sua organização (locatário) pode usar o link para obter acesso.</span><span class="sxs-lookup"><span data-stu-id="b4442-163">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="b4442-164">Disponível apenas no OneDrive for Business e no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="b4442-164">Only available in OneDrive for Business and SharePoint.</span></span>
+| <span data-ttu-id="d5bbe-159">sejam</span><span class="sxs-lookup"><span data-stu-id="d5bbe-159">anonymous</span></span>    | <span data-ttu-id="d5bbe-160">Qualquer pessoa com o link tem acesso, sem precisar fazer logon.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-160">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="d5bbe-161">Isso pode incluir pessoas de fora da organização.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-161">This may include people outside of your organization.</span></span> <span data-ttu-id="d5bbe-162">O suporte para links anônimos pode ser desativado por um administrador.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-162">Anonymous link support may be disabled by an administrator.</span></span>
+| <span data-ttu-id="d5bbe-163">organization</span><span class="sxs-lookup"><span data-stu-id="d5bbe-163">organization</span></span> | <span data-ttu-id="d5bbe-164">Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-164">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="d5bbe-165">Disponível apenas no OneDrive for Business e no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-165">Only available in OneDrive for Business and SharePoint.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="b4442-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="b4442-165">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d5bbe-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5bbe-166">Response</span></span>
 
-<span data-ttu-id="b4442-166">Se for bem-sucedido, esse método retornará um único recurso [Permission](../resources/permission.md) no corpo da resposta, que representa as permissões de compartilhamento solicitadas.</span><span class="sxs-lookup"><span data-stu-id="b4442-166">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
+<span data-ttu-id="d5bbe-167">Se for bem-sucedido, esse método retornará um único recurso [Permission](../resources/permission.md) no corpo da resposta, que representa as permissões de compartilhamento solicitadas.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-167">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
 
-<span data-ttu-id="b4442-167">A resposta será `201 Created` se um novo link de compartilhamento for criado para o item ou `200 OK` se um link existente for retornado.</span><span class="sxs-lookup"><span data-stu-id="b4442-167">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
+<span data-ttu-id="d5bbe-168">A resposta será `201 Created` se um novo link de compartilhamento for criado para o item ou `200 OK` se um link existente for retornado.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-168">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b4442-168">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b4442-168">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d5bbe-169">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d5bbe-169">Example</span></span>
 
-<span data-ttu-id="b4442-169">O exemplo a seguir solicita um link de compartilhamento que será criado para o DriveItem especificado por {itemId} no OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="b4442-169">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
-<span data-ttu-id="b4442-170">O link de compartilhamento é configurado como somente leitura e utilizável por qualquer pessoa com o link.</span><span class="sxs-lookup"><span data-stu-id="b4442-170">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
+<span data-ttu-id="d5bbe-170">O exemplo a seguir solicita um link de compartilhamento que será criado para o DriveItem especificado por {itemId} no OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-170">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
+<span data-ttu-id="d5bbe-171">O link de compartilhamento é configurado como somente leitura e utilizável por qualquer pessoa com o link.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-171">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
 
-### <a name="request"></a><span data-ttu-id="b4442-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b4442-171">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d5bbe-172">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d5bbe-172">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b4442-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="b4442-172">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5bbe-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5bbe-173">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "item_createlink"
@@ -109,22 +111,22 @@ Content-type: application/json
   "scope": "anonymous"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b4442-173">C#</span><span class="sxs-lookup"><span data-stu-id="b4442-173">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5bbe-174">C#</span><span class="sxs-lookup"><span data-stu-id="d5bbe-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4442-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b4442-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5bbe-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5bbe-175">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/item-createlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b4442-175">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="b4442-175">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5bbe-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5bbe-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b4442-176">Resposta</span><span class="sxs-lookup"><span data-stu-id="b4442-176">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d5bbe-177">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5bbe-177">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -148,16 +150,16 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-company-sharable-links"></a><span data-ttu-id="b4442-177">Criando links compartilháveis pela empresa</span><span class="sxs-lookup"><span data-stu-id="b4442-177">Creating company sharable links</span></span>
+## <a name="creating-company-sharable-links"></a><span data-ttu-id="d5bbe-178">Criando links compartilháveis pela empresa</span><span class="sxs-lookup"><span data-stu-id="d5bbe-178">Creating company sharable links</span></span>
 
-<span data-ttu-id="b4442-178">O OneDrive for Business e o SharePoint oferecem suporte a links compartilháveis pela empresa.</span><span class="sxs-lookup"><span data-stu-id="b4442-178">OneDrive for Business and SharePoint support company sharable links.</span></span>
-<span data-ttu-id="b4442-179">Estes são semelhantes a links anônimos, com a diferença de que apenas funcionam para membros da organização proprietária.</span><span class="sxs-lookup"><span data-stu-id="b4442-179">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
-<span data-ttu-id="b4442-180">Para criar um link compartilhável pela empresa, use o parâmetro **scope** com um valor de `organization`.</span><span class="sxs-lookup"><span data-stu-id="b4442-180">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
+<span data-ttu-id="d5bbe-179">O OneDrive for Business e o SharePoint oferecem suporte a links compartilháveis pela empresa.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-179">OneDrive for Business and SharePoint support company sharable links.</span></span>
+<span data-ttu-id="d5bbe-180">Estes são semelhantes a links anônimos, com a diferença de que apenas funcionam para membros da organização proprietária.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-180">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
+<span data-ttu-id="d5bbe-181">Para criar um link compartilhável pela empresa, use o parâmetro **scope** com um valor de `organization`.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-181">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="b4442-181">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b4442-181">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d5bbe-182">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d5bbe-182">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b4442-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="b4442-182">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5bbe-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5bbe-183">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
 
 ```http
@@ -169,22 +171,22 @@ Content-Type: application/json
   "scope": "organization"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b4442-183">C#</span><span class="sxs-lookup"><span data-stu-id="b4442-183">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5bbe-184">C#</span><span class="sxs-lookup"><span data-stu-id="d5bbe-184">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4442-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b4442-184">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5bbe-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5bbe-185">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b4442-185">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="b4442-185">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5bbe-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5bbe-186">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b4442-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="b4442-186">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d5bbe-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5bbe-187">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -207,16 +209,16 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-embeddable-links"></a><span data-ttu-id="b4442-187">Criar links inseríveis</span><span class="sxs-lookup"><span data-stu-id="b4442-187">Creating embeddable links</span></span>
+## <a name="creating-embeddable-links"></a><span data-ttu-id="d5bbe-188">Criar links inseríveis</span><span class="sxs-lookup"><span data-stu-id="d5bbe-188">Creating embeddable links</span></span>
 
-<span data-ttu-id="b4442-p113">Ao usar o tipo de link `embed`, a webUrl retornada pode ser inserida em um elemento HTML `<iframe>`. Quando um link de inserção é criado, a propriedade `webHtml` contém o código HTML de um `<iframe>` para hospedar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="b4442-p113">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
+<span data-ttu-id="d5bbe-p113">Ao usar o tipo de link `embed`, a webUrl retornada pode ser inserida em um elemento HTML `<iframe>`. Quando um link de inserção é criado, a propriedade `webHtml` contém o código HTML de um `<iframe>` para hospedar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-p113">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
 
-<span data-ttu-id="b4442-190">**Observação:** os links de inseridos só tem suporte no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="b4442-190">**Note:** Embed links are only supported for OneDrive personal.</span></span>
+<span data-ttu-id="d5bbe-191">**Observação:** os links de inseridos só tem suporte no OneDrive Pessoal.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-191">**Note:** Embed links are only supported for OneDrive personal.</span></span>
 
-### <a name="request"></a><span data-ttu-id="b4442-191">Solicitar</span><span class="sxs-lookup"><span data-stu-id="b4442-191">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d5bbe-192">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d5bbe-192">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b4442-192">HTTP</span><span class="sxs-lookup"><span data-stu-id="b4442-192">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5bbe-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5bbe-193">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
 
 ```http
@@ -227,22 +229,22 @@ Content-Type: application/json
   "type": "embed"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b4442-193">C#</span><span class="sxs-lookup"><span data-stu-id="b4442-193">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5bbe-194">C#</span><span class="sxs-lookup"><span data-stu-id="d5bbe-194">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4442-194">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b4442-194">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5bbe-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5bbe-195">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b4442-195">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="b4442-195">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5bbe-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5bbe-196">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="b4442-196">Resposta</span><span class="sxs-lookup"><span data-stu-id="b4442-196">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d5bbe-197">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5bbe-197">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -265,11 +267,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="b4442-197">Comentários</span><span class="sxs-lookup"><span data-stu-id="b4442-197">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d5bbe-198">Comentários</span><span class="sxs-lookup"><span data-stu-id="d5bbe-198">Remarks</span></span>
 
-* <span data-ttu-id="b4442-198">Links criados usando esta ação não expiram, a menos que uma política de expiração padrão seja imposta à organização.</span><span class="sxs-lookup"><span data-stu-id="b4442-198">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
-* <span data-ttu-id="b4442-199">Os links ficam visíveis nas permissões de compartilhamento do item e podem ser removidos por um proprietário desse item.</span><span class="sxs-lookup"><span data-stu-id="b4442-199">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
-* <span data-ttu-id="b4442-200">Os links sempre apontam para a versão atual de um item, a menos que esse item esteja em check-out (apenas no SharePoint).</span><span class="sxs-lookup"><span data-stu-id="b4442-200">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
+* <span data-ttu-id="d5bbe-199">Links criados usando esta ação não expiram, a menos que uma política de expiração padrão seja imposta à organização.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-199">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
+* <span data-ttu-id="d5bbe-200">Os links ficam visíveis nas permissões de compartilhamento do item e podem ser removidos por um proprietário desse item.</span><span class="sxs-lookup"><span data-stu-id="d5bbe-200">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
+* <span data-ttu-id="d5bbe-201">Os links sempre apontam para a versão atual de um item, a menos que esse item esteja em check-out (apenas no SharePoint).</span><span class="sxs-lookup"><span data-stu-id="d5bbe-201">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
 
 <!--
 {
