@@ -5,30 +5,32 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e2e517d0a20384c8aaaa24e9f385cf5560c411e
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 7d93a4dcdacbb5bf1dc66ac2f26389727cfd80da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844187"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455806"
 ---
-# <a name="update-place"></a><span data-ttu-id="59201-103">Local de atualização</span><span class="sxs-lookup"><span data-stu-id="59201-103">Update place</span></span>
+# <a name="update-place"></a><span data-ttu-id="8e311-103">Local de atualização</span><span class="sxs-lookup"><span data-stu-id="8e311-103">Update place</span></span>
+
+<span data-ttu-id="8e311-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8e311-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="59201-104">Atualize as propriedades do objeto [local](../resources/place.md) , que pode ser uma [sala](../resources/room.md) ou uma [sala de salas](../resources/roomlist.md).</span><span class="sxs-lookup"><span data-stu-id="59201-104">Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md).</span></span> <span data-ttu-id="59201-105">Você pode identificar a **sala** ou a **sala de salas** especificando a propriedade **ID** ou **EmailAddress** .</span><span class="sxs-lookup"><span data-stu-id="59201-105">You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.</span></span>
+<span data-ttu-id="8e311-105">Atualize as propriedades do objeto [local](../resources/place.md) , que pode ser uma [sala](../resources/room.md) ou uma [sala de salas](../resources/roomlist.md).</span><span class="sxs-lookup"><span data-stu-id="8e311-105">Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md).</span></span> <span data-ttu-id="8e311-106">Você pode identificar a **sala** ou a **sala de salas** especificando a propriedade **ID** ou **EmailAddress** .</span><span class="sxs-lookup"><span data-stu-id="8e311-106">You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="59201-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="59201-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8e311-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="8e311-107">Permissions</span></span>
 
-<span data-ttu-id="59201-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59201-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8e311-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8e311-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="59201-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="59201-109">Permission type</span></span>                        | <span data-ttu-id="59201-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="59201-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="8e311-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8e311-110">Permission type</span></span>                        | <span data-ttu-id="8e311-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8e311-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="59201-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="59201-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="59201-112">Place. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="59201-112">Place.ReadWrite.All.</span></span> |
-| <span data-ttu-id="59201-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="59201-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59201-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="59201-114">Not supported.</span></span> |
-| <span data-ttu-id="59201-115">Application</span><span class="sxs-lookup"><span data-stu-id="59201-115">Application</span></span>                            | <span data-ttu-id="59201-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="59201-116">Not supported</span></span> |
+| <span data-ttu-id="8e311-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8e311-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="8e311-113">Place. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="8e311-113">Place.ReadWrite.All.</span></span> |
+| <span data-ttu-id="8e311-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8e311-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e311-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8e311-115">Not supported.</span></span> |
+| <span data-ttu-id="8e311-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8e311-116">Application</span></span>                            | <span data-ttu-id="8e311-117">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8e311-117">Not supported</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="59201-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="59201-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8e311-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8e311-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,50 +38,50 @@ ms.locfileid: "39844187"
 PATCH /places/{id | emailAddress}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="59201-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="59201-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8e311-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8e311-119">Request headers</span></span>
 
-| <span data-ttu-id="59201-119">Nome</span><span class="sxs-lookup"><span data-stu-id="59201-119">Name</span></span>       | <span data-ttu-id="59201-120">Valor</span><span class="sxs-lookup"><span data-stu-id="59201-120">Value</span></span>|
+| <span data-ttu-id="8e311-120">Nome</span><span class="sxs-lookup"><span data-stu-id="8e311-120">Name</span></span>       | <span data-ttu-id="8e311-121">Valor</span><span class="sxs-lookup"><span data-stu-id="8e311-121">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="59201-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="59201-121">Authorization</span></span>  | <span data-ttu-id="59201-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="59201-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="59201-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="59201-124">Content-Type</span></span> | <span data-ttu-id="59201-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="59201-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="8e311-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="8e311-122">Authorization</span></span>  | <span data-ttu-id="8e311-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8e311-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8e311-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8e311-125">Content-Type</span></span> | <span data-ttu-id="8e311-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8e311-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="59201-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="59201-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8e311-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8e311-128">Request body</span></span>
 
-<span data-ttu-id="59201-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="59201-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="59201-129">Somente uma instância de um recurso de colocar (**sala** ou **sala de salas**) pode ser atualizada de cada vez.</span><span class="sxs-lookup"><span data-stu-id="59201-129">Only one instance of a place resource (**room** or **roomList**) can be updated at a time.</span></span> <span data-ttu-id="59201-130">No corpo da solicitação, use `@odata.type` para especificar o tipo de local e inclua as propriedades desse tipo para atualizar.</span><span class="sxs-lookup"><span data-stu-id="59201-130">In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update.</span></span> <span data-ttu-id="59201-131">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="59201-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="59201-132">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="59201-132">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="8e311-129">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="8e311-129">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="8e311-130">Somente uma instância de um recurso de colocar (**sala** ou **sala de salas**) pode ser atualizada de cada vez.</span><span class="sxs-lookup"><span data-stu-id="8e311-130">Only one instance of a place resource (**room** or **roomList**) can be updated at a time.</span></span> <span data-ttu-id="8e311-131">No corpo da solicitação, use `@odata.type` para especificar o tipo de local e inclua as propriedades desse tipo para atualizar.</span><span class="sxs-lookup"><span data-stu-id="8e311-131">In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update.</span></span> <span data-ttu-id="8e311-132">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="8e311-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8e311-133">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="8e311-133">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="59201-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="59201-133">Property</span></span>               | <span data-ttu-id="59201-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="59201-134">Type</span></span>                                              | <span data-ttu-id="59201-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="59201-135">Description</span></span> |
+| <span data-ttu-id="8e311-134">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8e311-134">Property</span></span>               | <span data-ttu-id="8e311-135">Tipo</span><span class="sxs-lookup"><span data-stu-id="8e311-135">Type</span></span>                                              | <span data-ttu-id="8e311-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="8e311-136">Description</span></span> |
 |:-----------------------|:--------------------------------------------------|:--|
-| <span data-ttu-id="59201-136">address</span><span class="sxs-lookup"><span data-stu-id="59201-136">address</span></span>                | [<span data-ttu-id="59201-137">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="59201-137">physicalAddress</span></span>](../resources/physicaladdress.md)             | <span data-ttu-id="59201-138">O endereço da sala ou da sala de salas.</span><span class="sxs-lookup"><span data-stu-id="59201-138">The street address of the room or roomlist.</span></span> |
-| <span data-ttu-id="59201-139">audioDeviceName</span><span class="sxs-lookup"><span data-stu-id="59201-139">audioDeviceName</span></span>        | <span data-ttu-id="59201-140">String</span><span class="sxs-lookup"><span data-stu-id="59201-140">String</span></span>                                            | <span data-ttu-id="59201-141">Especifica o nome do dispositivo de áudio na sala.</span><span class="sxs-lookup"><span data-stu-id="59201-141">Specifies the name of the audio device in the room.</span></span> |
-| <span data-ttu-id="59201-142">bookingType</span><span class="sxs-lookup"><span data-stu-id="59201-142">bookingType</span></span>            | [<span data-ttu-id="59201-143">bookingType</span><span class="sxs-lookup"><span data-stu-id="59201-143">bookingType</span></span>](../resources/room.md)                            | <span data-ttu-id="59201-144">Tipo de sala.</span><span class="sxs-lookup"><span data-stu-id="59201-144">Type of room.</span></span> <span data-ttu-id="59201-145">Os valores possíveis são: `Standard` e `Reserved`.</span><span class="sxs-lookup"><span data-stu-id="59201-145">Possible values are `Standard` and `Reserved`.</span></span> |
-| <span data-ttu-id="59201-146">Build</span><span class="sxs-lookup"><span data-stu-id="59201-146">building</span></span>               | <span data-ttu-id="59201-147">String</span><span class="sxs-lookup"><span data-stu-id="59201-147">String</span></span>                                            | <span data-ttu-id="59201-148">Especifica o nome do edifício ou o número de edifício em que a sala se encontra.</span><span class="sxs-lookup"><span data-stu-id="59201-148">Specifies the building name or building number that the room is in.</span></span> |
-| <span data-ttu-id="59201-149">máxima</span><span class="sxs-lookup"><span data-stu-id="59201-149">capacity</span></span>               | <span data-ttu-id="59201-150">String</span><span class="sxs-lookup"><span data-stu-id="59201-150">String</span></span>                                            | <span data-ttu-id="59201-151">Especifica a capacidade da sala.</span><span class="sxs-lookup"><span data-stu-id="59201-151">Specifies the capacity of the room.</span></span> |
-| <span data-ttu-id="59201-152">displayDeviceName</span><span class="sxs-lookup"><span data-stu-id="59201-152">displayDeviceName</span></span>      | <span data-ttu-id="59201-153">String</span><span class="sxs-lookup"><span data-stu-id="59201-153">String</span></span>                                            | <span data-ttu-id="59201-154">Especifica o nome do dispositivo de exibição na sala.</span><span class="sxs-lookup"><span data-stu-id="59201-154">Specifies the name of the display device in the room.</span></span> |
-| <span data-ttu-id="59201-155">floorLabel</span><span class="sxs-lookup"><span data-stu-id="59201-155">floorLabel</span></span>             | <span data-ttu-id="59201-156">String</span><span class="sxs-lookup"><span data-stu-id="59201-156">String</span></span>                                            | <span data-ttu-id="59201-157">Especifica a carta de piso em que a sala está ativa.</span><span class="sxs-lookup"><span data-stu-id="59201-157">Specifies the floor letter that the room is on.</span></span> |
-| <span data-ttu-id="59201-158">floorNumber</span><span class="sxs-lookup"><span data-stu-id="59201-158">floorNumber</span></span>            | <span data-ttu-id="59201-159">Int32</span><span class="sxs-lookup"><span data-stu-id="59201-159">Int32</span></span>                                             | <span data-ttu-id="59201-160">Especifica o número do andar em que a sala está.</span><span class="sxs-lookup"><span data-stu-id="59201-160">Specifies the floor number that the room is on.</span></span> |
-| <span data-ttu-id="59201-161">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="59201-161">geoCoordinates</span></span>         | [<span data-ttu-id="59201-162">outlookGeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="59201-162">outlookGeoCoordinates</span></span>](../resources/outlookgeocoordinates.md) | <span data-ttu-id="59201-163">Especifica o local da sala ou da sala de opções no latitude, longitude e, opcionalmente, as coordenadas de altitude.</span><span class="sxs-lookup"><span data-stu-id="59201-163">Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates.</span></span> |
-| <span data-ttu-id="59201-164">isWheelchairAccessible</span><span class="sxs-lookup"><span data-stu-id="59201-164">isWheelchairAccessible</span></span> | <span data-ttu-id="59201-165">Booliano</span><span class="sxs-lookup"><span data-stu-id="59201-165">Boolean</span></span>                                           | <span data-ttu-id="59201-166">Especifica se a sala pode ser acessada por cadeira.</span><span class="sxs-lookup"><span data-stu-id="59201-166">Specifies whether the room is wheelchair accessible.</span></span> |
-| <span data-ttu-id="59201-167">rótulo</span><span class="sxs-lookup"><span data-stu-id="59201-167">label</span></span>                  | <span data-ttu-id="59201-168">String</span><span class="sxs-lookup"><span data-stu-id="59201-168">String</span></span>                                            | <span data-ttu-id="59201-169">Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome.</span><span class="sxs-lookup"><span data-stu-id="59201-169">Specifies a descriptive label for the room, for example, a number or name.</span></span> |
-| <span data-ttu-id="59201-170">apelido</span><span class="sxs-lookup"><span data-stu-id="59201-170">nickname</span></span>               | <span data-ttu-id="59201-171">String</span><span class="sxs-lookup"><span data-stu-id="59201-171">String</span></span>                                            | <span data-ttu-id="59201-172">Especifica um apelido para a sala, por exemplo, "conf sala".</span><span class="sxs-lookup"><span data-stu-id="59201-172">Specifies a nickname for the room, for example, "conf room".</span></span> |
-| <span data-ttu-id="59201-173">phone</span><span class="sxs-lookup"><span data-stu-id="59201-173">phone</span></span>                  | <span data-ttu-id="59201-174">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="59201-174">String</span></span>                                            | <span data-ttu-id="59201-175">O número de telefone da sala ou sala de salas.</span><span class="sxs-lookup"><span data-stu-id="59201-175">The phone number of the room or roomlist.</span></span> |
-| <span data-ttu-id="59201-176">tags</span><span class="sxs-lookup"><span data-stu-id="59201-176">tags</span></span>                   | <span data-ttu-id="59201-177">Coleção String</span><span class="sxs-lookup"><span data-stu-id="59201-177">String collection</span></span>                                 | <span data-ttu-id="59201-178">Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília.</span><span class="sxs-lookup"><span data-stu-id="59201-178">Specifies additional features of the room, for example, details like the type of view or furniture type.</span></span> |
-| <span data-ttu-id="59201-179">videoDeviceName</span><span class="sxs-lookup"><span data-stu-id="59201-179">videoDeviceName</span></span>        | <span data-ttu-id="59201-180">String</span><span class="sxs-lookup"><span data-stu-id="59201-180">String</span></span>                                            | <span data-ttu-id="59201-181">Especifica o nome do dispositivo de vídeo na sala.</span><span class="sxs-lookup"><span data-stu-id="59201-181">Specifies the name of the video device in the room.</span></span> |
+| <span data-ttu-id="8e311-137">address</span><span class="sxs-lookup"><span data-stu-id="8e311-137">address</span></span>                | [<span data-ttu-id="8e311-138">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="8e311-138">physicalAddress</span></span>](../resources/physicaladdress.md)             | <span data-ttu-id="8e311-139">O endereço da sala ou da sala de salas.</span><span class="sxs-lookup"><span data-stu-id="8e311-139">The street address of the room or roomlist.</span></span> |
+| <span data-ttu-id="8e311-140">audioDeviceName</span><span class="sxs-lookup"><span data-stu-id="8e311-140">audioDeviceName</span></span>        | <span data-ttu-id="8e311-141">String</span><span class="sxs-lookup"><span data-stu-id="8e311-141">String</span></span>                                            | <span data-ttu-id="8e311-142">Especifica o nome do dispositivo de áudio na sala.</span><span class="sxs-lookup"><span data-stu-id="8e311-142">Specifies the name of the audio device in the room.</span></span> |
+| <span data-ttu-id="8e311-143">bookingType</span><span class="sxs-lookup"><span data-stu-id="8e311-143">bookingType</span></span>            | [<span data-ttu-id="8e311-144">bookingType</span><span class="sxs-lookup"><span data-stu-id="8e311-144">bookingType</span></span>](../resources/room.md)                            | <span data-ttu-id="8e311-145">Tipo de sala.</span><span class="sxs-lookup"><span data-stu-id="8e311-145">Type of room.</span></span> <span data-ttu-id="8e311-146">Os valores possíveis são: `Standard` e `Reserved`.</span><span class="sxs-lookup"><span data-stu-id="8e311-146">Possible values are `Standard` and `Reserved`.</span></span> |
+| <span data-ttu-id="8e311-147">Build</span><span class="sxs-lookup"><span data-stu-id="8e311-147">building</span></span>               | <span data-ttu-id="8e311-148">String</span><span class="sxs-lookup"><span data-stu-id="8e311-148">String</span></span>                                            | <span data-ttu-id="8e311-149">Especifica o nome do edifício ou o número de edifício em que a sala se encontra.</span><span class="sxs-lookup"><span data-stu-id="8e311-149">Specifies the building name or building number that the room is in.</span></span> |
+| <span data-ttu-id="8e311-150">máxima</span><span class="sxs-lookup"><span data-stu-id="8e311-150">capacity</span></span>               | <span data-ttu-id="8e311-151">String</span><span class="sxs-lookup"><span data-stu-id="8e311-151">String</span></span>                                            | <span data-ttu-id="8e311-152">Especifica a capacidade da sala.</span><span class="sxs-lookup"><span data-stu-id="8e311-152">Specifies the capacity of the room.</span></span> |
+| <span data-ttu-id="8e311-153">displayDeviceName</span><span class="sxs-lookup"><span data-stu-id="8e311-153">displayDeviceName</span></span>      | <span data-ttu-id="8e311-154">String</span><span class="sxs-lookup"><span data-stu-id="8e311-154">String</span></span>                                            | <span data-ttu-id="8e311-155">Especifica o nome do dispositivo de exibição na sala.</span><span class="sxs-lookup"><span data-stu-id="8e311-155">Specifies the name of the display device in the room.</span></span> |
+| <span data-ttu-id="8e311-156">floorLabel</span><span class="sxs-lookup"><span data-stu-id="8e311-156">floorLabel</span></span>             | <span data-ttu-id="8e311-157">String</span><span class="sxs-lookup"><span data-stu-id="8e311-157">String</span></span>                                            | <span data-ttu-id="8e311-158">Especifica a carta de piso em que a sala está ativa.</span><span class="sxs-lookup"><span data-stu-id="8e311-158">Specifies the floor letter that the room is on.</span></span> |
+| <span data-ttu-id="8e311-159">floorNumber</span><span class="sxs-lookup"><span data-stu-id="8e311-159">floorNumber</span></span>            | <span data-ttu-id="8e311-160">Int32</span><span class="sxs-lookup"><span data-stu-id="8e311-160">Int32</span></span>                                             | <span data-ttu-id="8e311-161">Especifica o número do andar em que a sala está.</span><span class="sxs-lookup"><span data-stu-id="8e311-161">Specifies the floor number that the room is on.</span></span> |
+| <span data-ttu-id="8e311-162">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="8e311-162">geoCoordinates</span></span>         | [<span data-ttu-id="8e311-163">outlookGeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="8e311-163">outlookGeoCoordinates</span></span>](../resources/outlookgeocoordinates.md) | <span data-ttu-id="8e311-164">Especifica o local da sala ou da sala de opções no latitude, longitude e, opcionalmente, as coordenadas de altitude.</span><span class="sxs-lookup"><span data-stu-id="8e311-164">Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates.</span></span> |
+| <span data-ttu-id="8e311-165">isWheelchairAccessible</span><span class="sxs-lookup"><span data-stu-id="8e311-165">isWheelchairAccessible</span></span> | <span data-ttu-id="8e311-166">Boolean</span><span class="sxs-lookup"><span data-stu-id="8e311-166">Boolean</span></span>                                           | <span data-ttu-id="8e311-167">Especifica se a sala pode ser acessada por cadeira.</span><span class="sxs-lookup"><span data-stu-id="8e311-167">Specifies whether the room is wheelchair accessible.</span></span> |
+| <span data-ttu-id="8e311-168">rótulo</span><span class="sxs-lookup"><span data-stu-id="8e311-168">label</span></span>                  | <span data-ttu-id="8e311-169">String</span><span class="sxs-lookup"><span data-stu-id="8e311-169">String</span></span>                                            | <span data-ttu-id="8e311-170">Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome.</span><span class="sxs-lookup"><span data-stu-id="8e311-170">Specifies a descriptive label for the room, for example, a number or name.</span></span> |
+| <span data-ttu-id="8e311-171">apelido</span><span class="sxs-lookup"><span data-stu-id="8e311-171">nickname</span></span>               | <span data-ttu-id="8e311-172">String</span><span class="sxs-lookup"><span data-stu-id="8e311-172">String</span></span>                                            | <span data-ttu-id="8e311-173">Especifica um apelido para a sala, por exemplo, "conf sala".</span><span class="sxs-lookup"><span data-stu-id="8e311-173">Specifies a nickname for the room, for example, "conf room".</span></span> |
+| <span data-ttu-id="8e311-174">phone</span><span class="sxs-lookup"><span data-stu-id="8e311-174">phone</span></span>                  | <span data-ttu-id="8e311-175">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8e311-175">String</span></span>                                            | <span data-ttu-id="8e311-176">O número de telefone da sala ou sala de salas.</span><span class="sxs-lookup"><span data-stu-id="8e311-176">The phone number of the room or roomlist.</span></span> |
+| <span data-ttu-id="8e311-177">tags</span><span class="sxs-lookup"><span data-stu-id="8e311-177">tags</span></span>                   | <span data-ttu-id="8e311-178">String collection</span><span class="sxs-lookup"><span data-stu-id="8e311-178">String collection</span></span>                                 | <span data-ttu-id="8e311-179">Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília.</span><span class="sxs-lookup"><span data-stu-id="8e311-179">Specifies additional features of the room, for example, details like the type of view or furniture type.</span></span> |
+| <span data-ttu-id="8e311-180">videoDeviceName</span><span class="sxs-lookup"><span data-stu-id="8e311-180">videoDeviceName</span></span>        | <span data-ttu-id="8e311-181">String</span><span class="sxs-lookup"><span data-stu-id="8e311-181">String</span></span>                                            | <span data-ttu-id="8e311-182">Especifica o nome do dispositivo de vídeo na sala.</span><span class="sxs-lookup"><span data-stu-id="8e311-182">Specifies the name of the video device in the room.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="59201-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="59201-182">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8e311-183">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e311-183">Response</span></span>
 
-<span data-ttu-id="59201-183">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Place](../resources/place.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59201-183">If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.</span></span>
+<span data-ttu-id="8e311-184">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Place](../resources/place.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8e311-184">If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="59201-184">Exemplos</span><span class="sxs-lookup"><span data-stu-id="59201-184">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="8e311-185">Exemplos</span><span class="sxs-lookup"><span data-stu-id="8e311-185">Examples</span></span>
 
-### <a name="example-1-update-a-room"></a><span data-ttu-id="59201-185">Exemplo 1: atualizar uma sala</span><span class="sxs-lookup"><span data-stu-id="59201-185">Example 1: Update a room</span></span>
+### <a name="example-1-update-a-room"></a><span data-ttu-id="8e311-186">Exemplo 1: atualizar uma sala</span><span class="sxs-lookup"><span data-stu-id="8e311-186">Example 1: Update a room</span></span>
 
-### <a name="request"></a><span data-ttu-id="59201-186">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59201-186">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8e311-187">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8e311-187">Request</span></span>
 
-<span data-ttu-id="59201-187">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="59201-187">The following is an example of the request.</span></span>
+<span data-ttu-id="8e311-188">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8e311-188">The following is an example of the request.</span></span>
 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="59201-188">HTTP</span><span class="sxs-lookup"><span data-stu-id="59201-188">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8e311-189">HTTP</span><span class="sxs-lookup"><span data-stu-id="8e311-189">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -98,27 +100,27 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="59201-189">C#</span><span class="sxs-lookup"><span data-stu-id="59201-189">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8e311-190">C#</span><span class="sxs-lookup"><span data-stu-id="8e311-190">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="59201-190">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59201-190">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8e311-191">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8e311-191">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="59201-191">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59201-191">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8e311-192">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8e311-192">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="59201-192">Resposta</span><span class="sxs-lookup"><span data-stu-id="59201-192">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8e311-193">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e311-193">Response</span></span>
 
-<span data-ttu-id="59201-193">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="59201-193">The following is an example of the response.</span></span>
+<span data-ttu-id="8e311-194">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8e311-194">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="59201-194">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="59201-194">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="59201-195">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="59201-195">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="8e311-195">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="8e311-195">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="8e311-196">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8e311-196">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -166,15 +168,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-roomlist"></a><span data-ttu-id="59201-196">Exemplo 2: atualizar uma salalist</span><span class="sxs-lookup"><span data-stu-id="59201-196">Example 2: Update a roomlist</span></span>
+### <a name="example-2-update-a-roomlist"></a><span data-ttu-id="8e311-197">Exemplo 2: atualizar uma salalist</span><span class="sxs-lookup"><span data-stu-id="8e311-197">Example 2: Update a roomlist</span></span>
 
-### <a name="request"></a><span data-ttu-id="59201-197">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59201-197">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8e311-198">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8e311-198">Request</span></span>
 
-<span data-ttu-id="59201-198">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="59201-198">The following is an example of the request.</span></span>
+<span data-ttu-id="8e311-199">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8e311-199">The following is an example of the request.</span></span>
 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="59201-199">HTTP</span><span class="sxs-lookup"><span data-stu-id="59201-199">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8e311-200">HTTP</span><span class="sxs-lookup"><span data-stu-id="8e311-200">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
@@ -203,27 +205,27 @@ Content-type: application/json
  }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="59201-200">C#</span><span class="sxs-lookup"><span data-stu-id="59201-200">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8e311-201">C#</span><span class="sxs-lookup"><span data-stu-id="8e311-201">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="59201-201">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59201-201">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8e311-202">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8e311-202">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="59201-202">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59201-202">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8e311-203">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8e311-203">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="59201-203">Resposta</span><span class="sxs-lookup"><span data-stu-id="59201-203">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8e311-204">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e311-204">Response</span></span>
 
-<span data-ttu-id="59201-204">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="59201-204">The following is an example of the response.</span></span>
+<span data-ttu-id="8e311-205">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8e311-205">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="59201-205">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="59201-205">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="59201-206">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="59201-206">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="8e311-206">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="8e311-206">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="8e311-207">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8e311-207">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

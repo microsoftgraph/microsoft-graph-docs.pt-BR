@@ -5,52 +5,54 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0f8853797d3aa18b1a2794716a0884f1ff75e432
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 55a60cf5ab8d7be5df4a8d0c29fe646131bf1651
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413948"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456072"
 ---
-# <a name="create-outlook-category"></a><span data-ttu-id="b986b-103">Criar categoria do Outlook</span><span class="sxs-lookup"><span data-stu-id="b986b-103">Create Outlook category</span></span>
+# <a name="create-outlook-category"></a><span data-ttu-id="c6a60-103">Criar categoria do Outlook</span><span class="sxs-lookup"><span data-stu-id="c6a60-103">Create Outlook category</span></span>
+
+<span data-ttu-id="c6a60-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="c6a60-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b986b-104">Cria um objeto [outlookCategory](../resources/outlookcategory.md) na lista mestra de categorias do usuário.</span><span class="sxs-lookup"><span data-stu-id="b986b-104">Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.</span></span>
+<span data-ttu-id="c6a60-105">Cria um objeto [outlookCategory](../resources/outlookcategory.md) na lista mestra de categorias do usuário.</span><span class="sxs-lookup"><span data-stu-id="c6a60-105">Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b986b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="b986b-105">Permissions</span></span>
-<span data-ttu-id="b986b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b986b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c6a60-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c6a60-106">Permissions</span></span>
+<span data-ttu-id="c6a60-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6a60-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b986b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b986b-108">Permission type</span></span>      | <span data-ttu-id="b986b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b986b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c6a60-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c6a60-109">Permission type</span></span>      | <span data-ttu-id="c6a60-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c6a60-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b986b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b986b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b986b-111">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b986b-111">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="b986b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b986b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b986b-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b986b-113">MailboxSettings.ReadWrite</span></span>   |
-|<span data-ttu-id="b986b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b986b-114">Application</span></span> | <span data-ttu-id="b986b-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b986b-115">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="c6a60-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c6a60-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c6a60-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6a60-112">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="c6a60-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c6a60-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6a60-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6a60-114">MailboxSettings.ReadWrite</span></span>   |
+|<span data-ttu-id="c6a60-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c6a60-115">Application</span></span> | <span data-ttu-id="c6a60-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6a60-116">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b986b-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b986b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c6a60-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c6a60-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/outlook/masterCategories
 POST /users/{id|userPrincipalName}/outlook/masterCategories
 ```
-## <a name="request-headers"></a><span data-ttu-id="b986b-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b986b-117">Request headers</span></span>
-| <span data-ttu-id="b986b-118">Nome</span><span class="sxs-lookup"><span data-stu-id="b986b-118">Name</span></span>       | <span data-ttu-id="b986b-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="b986b-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c6a60-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c6a60-118">Request headers</span></span>
+| <span data-ttu-id="c6a60-119">Nome</span><span class="sxs-lookup"><span data-stu-id="c6a60-119">Name</span></span>       | <span data-ttu-id="c6a60-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="c6a60-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="b986b-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="b986b-120">Authorization</span></span>  | <span data-ttu-id="b986b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b986b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c6a60-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="c6a60-121">Authorization</span></span>  | <span data-ttu-id="c6a60-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c6a60-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="b986b-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b986b-123">Request body</span></span>
-<span data-ttu-id="b986b-124">No corpo da solicitação, forneça uma representação JSON do objeto [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="b986b-124">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c6a60-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c6a60-124">Request body</span></span>
+<span data-ttu-id="c6a60-125">No corpo da solicitação, forneça uma representação JSON do objeto [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="c6a60-125">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b986b-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="b986b-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c6a60-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="c6a60-126">Response</span></span>
 
-<span data-ttu-id="b986b-126">Se tiver êxito, este método retornará um código de resposta `201 Created` e o objeto [outlookCategory](../resources/outlookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b986b-126">If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+<span data-ttu-id="c6a60-127">Se tiver êxito, este método retornará um código de resposta `201 Created` e o objeto [outlookCategory](../resources/outlookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c6a60-127">If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b986b-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b986b-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b986b-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b986b-128">Request</span></span>
-<span data-ttu-id="b986b-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b986b-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c6a60-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c6a60-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c6a60-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c6a60-129">Request</span></span>
+<span data-ttu-id="c6a60-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c6a60-130">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b986b-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="b986b-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c6a60-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6a60-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlookcategory_from_outlookuser"
@@ -65,23 +67,23 @@ Content-Length: 70
       "color":"preset9"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b986b-131">C#</span><span class="sxs-lookup"><span data-stu-id="b986b-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c6a60-132">C#</span><span class="sxs-lookup"><span data-stu-id="c6a60-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlookcategory-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b986b-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b986b-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c6a60-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c6a60-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlookcategory-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b986b-133">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="b986b-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c6a60-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c6a60-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-outlookcategory-from-outlookuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="b986b-134">No corpo da solicitação, forneça uma representação JSON do objeto [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="b986b-134">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="b986b-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="b986b-135">Response</span></span>
-<span data-ttu-id="b986b-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b986b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c6a60-135">No corpo da solicitação, forneça uma representação JSON do objeto [outlookCategory](../resources/outlookcategory.md).</span><span class="sxs-lookup"><span data-stu-id="c6a60-135">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="c6a60-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="c6a60-136">Response</span></span>
+<span data-ttu-id="c6a60-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c6a60-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

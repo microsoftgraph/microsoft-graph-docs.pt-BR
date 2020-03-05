@@ -5,36 +5,38 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9db93957bc6897a2c865aa07a524e189c9d6cba5
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b9bc875b3bd01cc2083f7726a1c0abb42c0bb316
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866942"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453769"
 ---
-# <a name="replace-schedulinggroup"></a><span data-ttu-id="8c263-103">Subtituir schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="8c263-103">Replace schedulingGroup</span></span>
+# <a name="replace-schedulinggroup"></a><span data-ttu-id="ceb10-103">Subtituir schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="ceb10-103">Replace schedulingGroup</span></span>
+
+<span data-ttu-id="ceb10-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ceb10-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8c263-104">Substitua [um existente.](../resources/schedulinggroup.md)</span><span class="sxs-lookup"><span data-stu-id="8c263-104">Replace an existing [schedulingGroup](../resources/schedulinggroup.md).</span></span>
+<span data-ttu-id="ceb10-105">Substitua [um existente.](../resources/schedulinggroup.md)</span><span class="sxs-lookup"><span data-stu-id="ceb10-105">Replace an existing [schedulingGroup](../resources/schedulinggroup.md).</span></span>
 
-<span data-ttu-id="8c263-105">Se o The [Scheduling](../resources/schedulinggroup.md) especificado não existir, este método retornará `404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="8c263-105">If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this method returns `404 Not found`.</span></span>
+<span data-ttu-id="ceb10-106">Se o The [Scheduling](../resources/schedulinggroup.md) especificado não existir, este método retornará `404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="ceb10-106">If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this method returns `404 Not found`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8c263-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8c263-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ceb10-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="ceb10-107">Permissions</span></span>
 
-<span data-ttu-id="8c263-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8c263-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ceb10-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ceb10-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8c263-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8c263-109">Permission type</span></span>      | <span data-ttu-id="8c263-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8c263-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ceb10-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ceb10-110">Permission type</span></span>      | <span data-ttu-id="ceb10-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ceb10-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8c263-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8c263-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8c263-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c263-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8c263-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8c263-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8c263-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8c263-114">Not supported.</span></span>    |
-|<span data-ttu-id="8c263-115">Application</span><span class="sxs-lookup"><span data-stu-id="8c263-115">Application</span></span> | <span data-ttu-id="8c263-116">Schedule. ReadWrite. All \*</span><span class="sxs-lookup"><span data-stu-id="8c263-116">Schedule.ReadWrite.All\*</span></span>  |
+|<span data-ttu-id="ceb10-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ceb10-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ceb10-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ceb10-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ceb10-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ceb10-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ceb10-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ceb10-115">Not supported.</span></span>    |
+|<span data-ttu-id="ceb10-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ceb10-116">Application</span></span> | <span data-ttu-id="ceb10-117">Schedule. ReadWrite. All \*</span><span class="sxs-lookup"><span data-stu-id="ceb10-117">Schedule.ReadWrite.All\*</span></span>  |
 
-><span data-ttu-id="8c263-117">\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.</span><span class="sxs-lookup"><span data-stu-id="8c263-117">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
+><span data-ttu-id="ceb10-118">\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.</span><span class="sxs-lookup"><span data-stu-id="ceb10-118">\* **Important:** Application permissions are currently in private preview only and are not available for public use.</span></span>
 
-> <span data-ttu-id="8c263-118">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="8c263-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="8c263-119">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="8c263-119">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="ceb10-119">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="ceb10-119">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="ceb10-120">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="ceb10-120">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="8c263-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8c263-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ceb10-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ceb10-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,28 +44,28 @@ ms.locfileid: "40866942"
 PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8c263-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8c263-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ceb10-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ceb10-122">Request headers</span></span>
 
-| <span data-ttu-id="8c263-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8c263-122">Header</span></span>       | <span data-ttu-id="8c263-123">Valor</span><span class="sxs-lookup"><span data-stu-id="8c263-123">Value</span></span> |
+| <span data-ttu-id="ceb10-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ceb10-123">Header</span></span>       | <span data-ttu-id="ceb10-124">Valor</span><span class="sxs-lookup"><span data-stu-id="ceb10-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8c263-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="8c263-124">Authorization</span></span>  | <span data-ttu-id="8c263-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8c263-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="8c263-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8c263-127">Content-Type</span></span>  | <span data-ttu-id="8c263-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8c263-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="ceb10-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="ceb10-125">Authorization</span></span>  | <span data-ttu-id="ceb10-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ceb10-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ceb10-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ceb10-128">Content-Type</span></span>  | <span data-ttu-id="ceb10-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ceb10-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8c263-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8c263-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ceb10-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ceb10-131">Request body</span></span>
 
-<span data-ttu-id="8c263-131">No corpo da solicitação, forneça uma representação JSON de um objeto do objeto de [plano](../resources/schedulinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="8c263-131">In the request body, supply a JSON representation of a [schedulingGroup](../resources/schedulinggroup.md) object.</span></span>
+<span data-ttu-id="ceb10-132">No corpo da solicitação, forneça uma representação JSON de um objeto do objeto de [plano](../resources/schedulinggroup.md) .</span><span class="sxs-lookup"><span data-stu-id="ceb10-132">In the request body, supply a JSON representation of a [schedulingGroup](../resources/schedulinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8c263-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="8c263-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ceb10-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="ceb10-133">Response</span></span>
 
-<span data-ttu-id="8c263-133">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de forma de [plano](../resources/schedulinggroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8c263-133">If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
+<span data-ttu-id="ceb10-134">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de forma de [plano](../resources/schedulinggroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ceb10-134">If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8c263-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8c263-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ceb10-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ceb10-135">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="8c263-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8c263-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ceb10-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ceb10-136">Request</span></span>
 
-<span data-ttu-id="8c263-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8c263-136">The following is an example of the request.</span></span>
+<span data-ttu-id="ceb10-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ceb10-137">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8c263-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="8c263-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ceb10-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="ceb10-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-put-schedulinggroups"
@@ -82,26 +84,26 @@ Prefer: return=representation
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8c263-138">C#</span><span class="sxs-lookup"><span data-stu-id="8c263-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ceb10-139">C#</span><span class="sxs-lookup"><span data-stu-id="ceb10-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-put-schedulinggroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8c263-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8c263-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ceb10-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ceb10-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-put-schedulinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8c263-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8c263-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ceb10-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ceb10-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-put-schedulinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="8c263-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="8c263-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ceb10-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="ceb10-142">Response</span></span>
 
-<span data-ttu-id="8c263-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8c263-142">The following is an example of the response.</span></span> 
+<span data-ttu-id="ceb10-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ceb10-143">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="8c263-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8c263-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="ceb10-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ceb10-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

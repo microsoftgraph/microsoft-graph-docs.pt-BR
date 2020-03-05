@@ -5,60 +5,62 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 471a583851aa8e4548d2f9c66672ce54227e5d97
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: affb05ba026be7c0ed4fbc4c09c09d1af8715ebc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977654"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452943"
 ---
-# <a name="delete-synchronizationschema"></a><span data-ttu-id="455a3-104">Excluir synchronizationSchema</span><span class="sxs-lookup"><span data-stu-id="455a3-104">Delete synchronizationSchema</span></span>
+# <a name="delete-synchronizationschema"></a><span data-ttu-id="fa6fc-104">Excluir synchronizationSchema</span><span class="sxs-lookup"><span data-stu-id="fa6fc-104">Delete synchronizationSchema</span></span>
+
+<span data-ttu-id="fa6fc-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="fa6fc-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="455a3-105">Exclui o esquema personalizado e redefine o esquema para a configuração padrão.</span><span class="sxs-lookup"><span data-stu-id="455a3-105">Deletes the customized schema and resets the schema to the default configuration.</span></span> <span data-ttu-id="455a3-106">Se o esquema for excluído no contexto do modelo, ele redefinirá o esquema como o padrão associado ao modelo do `factoryTag`.</span><span class="sxs-lookup"><span data-stu-id="455a3-106">If the schema is deleted in the context of the template, it resets the schema to the default one associated with the template's `factoryTag`.</span></span>
+<span data-ttu-id="fa6fc-106">Exclui o esquema personalizado e redefine o esquema para a configuração padrão.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-106">Deletes the customized schema and resets the schema to the default configuration.</span></span> <span data-ttu-id="fa6fc-107">Se o esquema for excluído no contexto do modelo, ele redefinirá o esquema como o padrão associado ao modelo do `factoryTag`.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-107">If the schema is deleted in the context of the template, it resets the schema to the default one associated with the template's `factoryTag`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="455a3-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="455a3-107">Permissions</span></span>
-<span data-ttu-id="455a3-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="455a3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fa6fc-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="fa6fc-108">Permissions</span></span>
+<span data-ttu-id="fa6fc-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fa6fc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="455a3-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="455a3-110">Permission type</span></span>                        | <span data-ttu-id="455a3-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="455a3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fa6fc-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fa6fc-111">Permission type</span></span>                        | <span data-ttu-id="fa6fc-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fa6fc-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="455a3-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="455a3-112">Delegated (work or school account)</span></span>     |<span data-ttu-id="455a3-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="455a3-113">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="455a3-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="455a3-114">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="455a3-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="455a3-115">Not supported.</span></span>|
-|<span data-ttu-id="455a3-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="455a3-116">Application</span></span>                            |<span data-ttu-id="455a3-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="455a3-117">Not supported.</span></span>| 
+|<span data-ttu-id="fa6fc-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fa6fc-113">Delegated (work or school account)</span></span>     |<span data-ttu-id="fa6fc-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fa6fc-114">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="fa6fc-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fa6fc-115">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="fa6fc-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-116">Not supported.</span></span>|
+|<span data-ttu-id="fa6fc-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fa6fc-117">Application</span></span>                            |<span data-ttu-id="fa6fc-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-118">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="455a3-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="455a3-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa6fc-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fa6fc-119">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="455a3-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="455a3-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fa6fc-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fa6fc-120">Request headers</span></span>
 
-| <span data-ttu-id="455a3-120">Nome</span><span class="sxs-lookup"><span data-stu-id="455a3-120">Name</span></span>           | <span data-ttu-id="455a3-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="455a3-121">Type</span></span>    | <span data-ttu-id="455a3-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="455a3-122">Description</span></span>|
+| <span data-ttu-id="fa6fc-121">Nome</span><span class="sxs-lookup"><span data-stu-id="fa6fc-121">Name</span></span>           | <span data-ttu-id="fa6fc-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="fa6fc-122">Type</span></span>    | <span data-ttu-id="fa6fc-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa6fc-123">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="455a3-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="455a3-123">Authorization</span></span>  | <span data-ttu-id="455a3-124">string</span><span class="sxs-lookup"><span data-stu-id="455a3-124">string</span></span>  | <span data-ttu-id="455a3-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="455a3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fa6fc-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="fa6fc-124">Authorization</span></span>  | <span data-ttu-id="fa6fc-125">string</span><span class="sxs-lookup"><span data-stu-id="fa6fc-125">string</span></span>  | <span data-ttu-id="fa6fc-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="455a3-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="455a3-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fa6fc-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fa6fc-128">Request body</span></span>
 
-<span data-ttu-id="455a3-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="455a3-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="fa6fc-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="455a3-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="455a3-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fa6fc-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa6fc-130">Response</span></span>
 
-<span data-ttu-id="455a3-130">Se tiver êxito, este método retornará um código de resposta `201 No Content`.</span><span class="sxs-lookup"><span data-stu-id="455a3-130">If successful, this method returns a `201 No Content` response code.</span></span> <span data-ttu-id="455a3-131">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="455a3-131">It does not return anything in response body.</span></span>
+<span data-ttu-id="fa6fc-131">Se tiver êxito, este método retornará um código de resposta `201 No Content`.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-131">If successful, this method returns a `201 No Content` response code.</span></span> <span data-ttu-id="fa6fc-132">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-132">It does not return anything in response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="455a3-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="455a3-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fa6fc-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fa6fc-133">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="455a3-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="455a3-133">Request</span></span>
-<span data-ttu-id="455a3-134">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="455a3-134">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="fa6fc-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fa6fc-134">Request</span></span>
+<span data-ttu-id="fa6fc-135">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-135">The following is an example of a request.</span></span>
 
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-##### <a name="response"></a><span data-ttu-id="455a3-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="455a3-135">Response</span></span>
-<span data-ttu-id="455a3-136">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="455a3-136">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="fa6fc-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa6fc-136">Response</span></span>
+<span data-ttu-id="fa6fc-137">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="fa6fc-137">The following is an example of a response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,31 +5,33 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 9e8b5afc5623deeb855029024a1080e974ca5eda
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 852d4f7c13dd6bf710d2ec429e0a1313ff33e46f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983331"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454896"
 ---
-# <a name="delete-a-historyitem"></a><span data-ttu-id="67cdb-103">Excluir um historyItem</span><span class="sxs-lookup"><span data-stu-id="67cdb-103">Delete a historyItem</span></span>
+# <a name="delete-a-historyitem"></a><span data-ttu-id="38787-103">Excluir um historyItem</span><span class="sxs-lookup"><span data-stu-id="38787-103">Delete a historyItem</span></span>
+
+<span data-ttu-id="38787-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="38787-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="67cdb-104">Excluir um item de histórico existente para uma atividade existente do usuário.</span><span class="sxs-lookup"><span data-stu-id="67cdb-104">Delete an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="38787-105">Excluir um item de histórico existente para uma atividade existente do usuário.</span><span class="sxs-lookup"><span data-stu-id="38787-105">Delete an existing history item for an existing user activity.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="67cdb-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="67cdb-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="38787-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="38787-106">Permissions</span></span>
 
-<span data-ttu-id="67cdb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67cdb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="38787-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38787-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="67cdb-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="67cdb-108">Permission type</span></span>      | <span data-ttu-id="67cdb-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="67cdb-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="38787-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="38787-109">Permission type</span></span>      | <span data-ttu-id="38787-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="38787-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="67cdb-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="67cdb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="67cdb-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="67cdb-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="67cdb-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="67cdb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67cdb-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="67cdb-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="67cdb-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="67cdb-114">Application</span></span> | <span data-ttu-id="67cdb-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="67cdb-115">Not supported.</span></span> |
+|<span data-ttu-id="38787-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="38787-111">Delegated (work or school account)</span></span> | <span data-ttu-id="38787-112">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="38787-112">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="38787-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="38787-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38787-114">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="38787-114">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="38787-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38787-115">Application</span></span> | <span data-ttu-id="38787-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38787-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="67cdb-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="67cdb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38787-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38787-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,28 +39,28 @@ ms.locfileid: "35983331"
 DELETE /me/activities/{id}/historyItems/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="67cdb-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="67cdb-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="38787-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="38787-118">Request headers</span></span>
 
-|<span data-ttu-id="67cdb-118">Nome</span><span class="sxs-lookup"><span data-stu-id="67cdb-118">Name</span></span> | <span data-ttu-id="67cdb-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="67cdb-119">Type</span></span> | <span data-ttu-id="67cdb-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="67cdb-120">Description</span></span>|
+|<span data-ttu-id="38787-119">Nome</span><span class="sxs-lookup"><span data-stu-id="38787-119">Name</span></span> | <span data-ttu-id="38787-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="38787-120">Type</span></span> | <span data-ttu-id="38787-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="38787-121">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="67cdb-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="67cdb-121">Authorization</span></span> | <span data-ttu-id="67cdb-122">string</span><span class="sxs-lookup"><span data-stu-id="67cdb-122">string</span></span> | <span data-ttu-id="67cdb-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="67cdb-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="38787-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="38787-122">Authorization</span></span> | <span data-ttu-id="38787-123">string</span><span class="sxs-lookup"><span data-stu-id="38787-123">string</span></span> | <span data-ttu-id="38787-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38787-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="67cdb-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="67cdb-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="38787-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="38787-126">Request body</span></span>
 
-<span data-ttu-id="67cdb-126">Nenhum corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="67cdb-126">No request body.</span></span>
+<span data-ttu-id="38787-127">Nenhum corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="38787-127">No request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="67cdb-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="67cdb-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38787-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="38787-128">Response</span></span>
 
-<span data-ttu-id="67cdb-128">Se tiver êxito, este método retornará `204 No Content` o código de resposta se o item do histórico tiver sido excluído.</span><span class="sxs-lookup"><span data-stu-id="67cdb-128">If successful, this method returns the `204 No Content` response code if the history item was deleted.</span></span>
+<span data-ttu-id="38787-129">Se tiver êxito, este método retornará `204 No Content` o código de resposta se o item do histórico tiver sido excluído.</span><span class="sxs-lookup"><span data-stu-id="38787-129">If successful, this method returns the `204 No Content` response code if the history item was deleted.</span></span>
 
-## <a name="example"></a><span data-ttu-id="67cdb-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="67cdb-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="38787-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="38787-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="67cdb-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67cdb-130">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="38787-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38787-131">Request</span></span>
 
-<span data-ttu-id="67cdb-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="67cdb-131">Here is an example of the request.</span></span>
+<span data-ttu-id="38787-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="38787-132">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="67cdb-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="67cdb-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="38787-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="38787-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_historyItem"
@@ -67,16 +69,16 @@ DELETE /me/activities/{id}/historyItems/{id}
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 ```
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="67cdb-133">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="67cdb-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="38787-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38787-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="67cdb-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="67cdb-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="38787-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="38787-135">Response</span></span>
 
-<span data-ttu-id="67cdb-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="67cdb-135">Here is an example of the response.</span></span>
+<span data-ttu-id="38787-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38787-136">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

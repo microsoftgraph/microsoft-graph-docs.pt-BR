@@ -5,50 +5,52 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5f3b37931e62aa9add5ac408fe574909e67b5155
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 380f36b0b100d6f78c74ab0b0244ebe51fac6cde
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346503"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456228"
 ---
-# <a name="create-directreport"></a><span data-ttu-id="ae412-103">Criar directReport</span><span class="sxs-lookup"><span data-stu-id="ae412-103">Create directReport</span></span>
+# <a name="create-directreport"></a><span data-ttu-id="4f56c-103">Criar directReport</span><span class="sxs-lookup"><span data-stu-id="4f56c-103">Create directReport</span></span>
+
+<span data-ttu-id="4f56c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4f56c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ae412-104">Use esta API para criar um novo directReport.</span><span class="sxs-lookup"><span data-stu-id="ae412-104">Use this API to create a new directReport.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ae412-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ae412-105">Permissions</span></span>
-<span data-ttu-id="ae412-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ae412-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4f56c-105">Use esta API para criar um novo directReport.</span><span class="sxs-lookup"><span data-stu-id="4f56c-105">Use this API to create a new directReport.</span></span>
+## <a name="permissions"></a><span data-ttu-id="4f56c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4f56c-106">Permissions</span></span>
+<span data-ttu-id="4f56c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f56c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ae412-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ae412-108">Permission type</span></span>      | <span data-ttu-id="ae412-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ae412-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4f56c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4f56c-109">Permission type</span></span>      | <span data-ttu-id="4f56c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4f56c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ae412-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ae412-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ae412-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ae412-111">Not supported.</span></span>    |
-|<span data-ttu-id="ae412-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ae412-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae412-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ae412-113">Not supported.</span></span>    |
-|<span data-ttu-id="ae412-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ae412-114">Application</span></span> | <span data-ttu-id="ae412-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ae412-115">Not supported.</span></span> |
+|<span data-ttu-id="4f56c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4f56c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4f56c-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f56c-112">Not supported.</span></span>    |
+|<span data-ttu-id="4f56c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4f56c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4f56c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f56c-114">Not supported.</span></span>    |
+|<span data-ttu-id="4f56c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4f56c-115">Application</span></span> | <span data-ttu-id="4f56c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f56c-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ae412-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ae412-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f56c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4f56c-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/directReports
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ae412-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ae412-117">Request headers</span></span>
-| <span data-ttu-id="ae412-118">Nome</span><span class="sxs-lookup"><span data-stu-id="ae412-118">Name</span></span>       | <span data-ttu-id="ae412-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="ae412-119">Type</span></span> | <span data-ttu-id="ae412-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ae412-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4f56c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4f56c-118">Request headers</span></span>
+| <span data-ttu-id="4f56c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4f56c-119">Name</span></span>       | <span data-ttu-id="4f56c-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="4f56c-120">Type</span></span> | <span data-ttu-id="4f56c-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="4f56c-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ae412-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ae412-121">Authorization</span></span>  | <span data-ttu-id="ae412-122">string</span><span class="sxs-lookup"><span data-stu-id="ae412-122">string</span></span>  | <span data-ttu-id="ae412-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ae412-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4f56c-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="4f56c-122">Authorization</span></span>  | <span data-ttu-id="4f56c-123">string</span><span class="sxs-lookup"><span data-stu-id="4f56c-123">string</span></span>  | <span data-ttu-id="4f56c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4f56c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ae412-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ae412-125">Request body</span></span>
-<span data-ttu-id="ae412-126">No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).</span><span class="sxs-lookup"><span data-stu-id="ae412-126">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f56c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4f56c-126">Request body</span></span>
+<span data-ttu-id="4f56c-127">No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).</span><span class="sxs-lookup"><span data-stu-id="4f56c-127">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ae412-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae412-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4f56c-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f56c-128">Response</span></span>
 
-<span data-ttu-id="ae412-128">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ae412-128">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="4f56c-129">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4f56c-129">If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ae412-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ae412-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ae412-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ae412-130">Request</span></span>
-<span data-ttu-id="ae412-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ae412-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4f56c-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4f56c-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4f56c-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4f56c-131">Request</span></span>
+<span data-ttu-id="4f56c-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4f56c-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ae412-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="ae412-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4f56c-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="4f56c-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_orgcontact"
@@ -63,15 +65,15 @@ Content-length: 30
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ae412-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ae412-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4f56c-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4f56c-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="ae412-134">No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).</span><span class="sxs-lookup"><span data-stu-id="ae412-134">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="ae412-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae412-135">Response</span></span>
-<span data-ttu-id="ae412-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ae412-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="4f56c-135">No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).</span><span class="sxs-lookup"><span data-stu-id="4f56c-135">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="4f56c-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f56c-136">Response</span></span>
+<span data-ttu-id="4f56c-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4f56c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

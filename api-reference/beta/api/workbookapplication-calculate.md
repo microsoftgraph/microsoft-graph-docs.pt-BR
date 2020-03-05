@@ -5,57 +5,59 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d05767d03e10e0fb7785442fef6696b273f52424
-ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
+ms.openlocfilehash: 42a43b523be9cfbbc9299183260827ae24b50ee2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023181"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451452"
 ---
-# <a name="workbookapplication-calculate"></a><span data-ttu-id="94eef-103">workbookApplication: calcular</span><span class="sxs-lookup"><span data-stu-id="94eef-103">workbookApplication: calculate</span></span>
+# <a name="workbookapplication-calculate"></a><span data-ttu-id="13978-103">workbookApplication: calcular</span><span class="sxs-lookup"><span data-stu-id="13978-103">workbookApplication: calculate</span></span>
+
+<span data-ttu-id="13978-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="13978-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="94eef-104">Recalcula todas as pastas de trabalho abertas no Excel no momento.</span><span class="sxs-lookup"><span data-stu-id="94eef-104">Recalculate all currently opened workbooks in Excel.</span></span>
+<span data-ttu-id="13978-105">Recalcula todas as pastas de trabalho abertas no Excel no momento.</span><span class="sxs-lookup"><span data-stu-id="13978-105">Recalculate all currently opened workbooks in Excel.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="94eef-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="94eef-105">Permissions</span></span>
-<span data-ttu-id="94eef-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94eef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="13978-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="13978-106">Permissions</span></span>
+<span data-ttu-id="13978-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="13978-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="94eef-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="94eef-108">Permission type</span></span>      | <span data-ttu-id="94eef-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="94eef-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="13978-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="13978-109">Permission type</span></span>      | <span data-ttu-id="13978-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="13978-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="94eef-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="94eef-110">Delegated (work or school account)</span></span> | <span data-ttu-id="94eef-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="94eef-111">Files.ReadWrite</span></span>     |
-|<span data-ttu-id="94eef-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="94eef-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="94eef-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94eef-113">Not supported.</span></span>    |
-|<span data-ttu-id="94eef-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="94eef-114">Application</span></span> | <span data-ttu-id="94eef-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94eef-115">Not supported.</span></span> |
+|<span data-ttu-id="13978-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="13978-111">Delegated (work or school account)</span></span> | <span data-ttu-id="13978-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="13978-112">Files.ReadWrite</span></span>     |
+|<span data-ttu-id="13978-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="13978-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="13978-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="13978-114">Not supported.</span></span>    |
+|<span data-ttu-id="13978-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="13978-115">Application</span></span> | <span data-ttu-id="13978-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="13978-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="94eef-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="94eef-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="13978-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="13978-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/application/calculate
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="94eef-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="94eef-117">Request headers</span></span>
-| <span data-ttu-id="94eef-118">Nome</span><span class="sxs-lookup"><span data-stu-id="94eef-118">Name</span></span>       | <span data-ttu-id="94eef-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="94eef-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="13978-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="13978-118">Request headers</span></span>
+| <span data-ttu-id="13978-119">Nome</span><span class="sxs-lookup"><span data-stu-id="13978-119">Name</span></span>       | <span data-ttu-id="13978-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="13978-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="94eef-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="94eef-120">Authorization</span></span>  | <span data-ttu-id="94eef-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94eef-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="94eef-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="94eef-123">Content-type</span></span> | <span data-ttu-id="94eef-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94eef-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="13978-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="13978-121">Authorization</span></span>  | <span data-ttu-id="13978-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="13978-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="13978-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="13978-124">Content-type</span></span> | <span data-ttu-id="13978-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="13978-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="94eef-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="94eef-126">Request body</span></span>
-<span data-ttu-id="94eef-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="94eef-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="13978-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="13978-127">Request body</span></span>
+<span data-ttu-id="13978-128">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="13978-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="94eef-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="94eef-128">Parameter</span></span>    | <span data-ttu-id="94eef-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="94eef-129">Type</span></span>   |<span data-ttu-id="94eef-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="94eef-130">Description</span></span>|
+| <span data-ttu-id="13978-129">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="13978-129">Parameter</span></span>    | <span data-ttu-id="13978-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="13978-130">Type</span></span>   |<span data-ttu-id="13978-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="13978-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="94eef-131">Calculador de cálculo</span><span class="sxs-lookup"><span data-stu-id="94eef-131">calculationType</span></span>|<span data-ttu-id="94eef-132">string</span><span class="sxs-lookup"><span data-stu-id="94eef-132">string</span></span>|<span data-ttu-id="94eef-133">Especifica o tipo de cálculo a usar.</span><span class="sxs-lookup"><span data-stu-id="94eef-133">Specifies the calculation type to use.</span></span>  <span data-ttu-id="94eef-134">Os valores possíveis são: `Recalculate`, `Full`, `FullRebuild`.</span><span class="sxs-lookup"><span data-stu-id="94eef-134">Possible values are: `Recalculate`, `Full`, `FullRebuild`.</span></span>|
+|<span data-ttu-id="13978-132">Calculador de cálculo</span><span class="sxs-lookup"><span data-stu-id="13978-132">calculationType</span></span>|<span data-ttu-id="13978-133">string</span><span class="sxs-lookup"><span data-stu-id="13978-133">string</span></span>|<span data-ttu-id="13978-134">Especifica o tipo de cálculo a usar.</span><span class="sxs-lookup"><span data-stu-id="13978-134">Specifies the calculation type to use.</span></span>  <span data-ttu-id="13978-135">Os valores possíveis são: `Recalculate`, `Full`, `FullRebuild`.</span><span class="sxs-lookup"><span data-stu-id="13978-135">Possible values are: `Recalculate`, `Full`, `FullRebuild`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="94eef-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="94eef-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="13978-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="13978-136">Response</span></span>
 
-<span data-ttu-id="94eef-p105">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="94eef-p105">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="13978-p105">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="13978-p105">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="94eef-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="94eef-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="13978-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="13978-139">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="94eef-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="94eef-139">Request</span></span>
-<span data-ttu-id="94eef-140">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="94eef-140">The following is an example of a request.</span></span>
+### <a name="request"></a><span data-ttu-id="13978-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="13978-140">Request</span></span>
+<span data-ttu-id="13978-141">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="13978-141">The following is an example of a request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="94eef-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="94eef-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="13978-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="13978-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workbookApplication_calculate"
@@ -69,23 +71,23 @@ Content-length: 48
   "calculationType": "calculationType-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="94eef-142">C#</span><span class="sxs-lookup"><span data-stu-id="94eef-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="13978-143">C#</span><span class="sxs-lookup"><span data-stu-id="13978-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookapplication-calculate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="94eef-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="94eef-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="13978-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="13978-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookapplication-calculate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="94eef-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="94eef-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="13978-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="13978-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookapplication-calculate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="94eef-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="94eef-145">Response</span></span>
-<span data-ttu-id="94eef-146">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="94eef-146">The following example shows the response.</span></span>
+### <a name="response"></a><span data-ttu-id="13978-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="13978-146">Response</span></span>
+<span data-ttu-id="13978-147">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="13978-147">The following example shows the response.</span></span>
 
 <!-- {
   "blockType": "response",

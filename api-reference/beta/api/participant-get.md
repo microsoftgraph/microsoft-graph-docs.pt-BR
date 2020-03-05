@@ -5,55 +5,57 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 54d6e0d0f51c6f45b8473c5b8764bf7ec03be9c3
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 643bcdb06c69f7d0c80f7ba18a6020258630b507
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913118"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455981"
 ---
-# <a name="get-participant"></a><span data-ttu-id="dbbcc-103">Obter participante</span><span class="sxs-lookup"><span data-stu-id="dbbcc-103">Get participant</span></span>
+# <a name="get-participant"></a><span data-ttu-id="799d7-103">Obter participante</span><span class="sxs-lookup"><span data-stu-id="799d7-103">Get participant</span></span>
+
+<span data-ttu-id="799d7-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="799d7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dbbcc-104">Recupere as propriedades e os relacionamentos de um objeto **participante** .</span><span class="sxs-lookup"><span data-stu-id="dbbcc-104">Retrieve the properties and relationships of a **participant** object.</span></span>
+<span data-ttu-id="799d7-105">Recupere as propriedades e os relacionamentos de um objeto **participante** .</span><span class="sxs-lookup"><span data-stu-id="799d7-105">Retrieve the properties and relationships of a **participant** object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dbbcc-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="dbbcc-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="799d7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="799d7-106">Permissions</span></span>
 
-| <span data-ttu-id="dbbcc-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dbbcc-106">Permission type</span></span> | <span data-ttu-id="dbbcc-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dbbcc-107">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="799d7-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="799d7-107">Permission type</span></span> | <span data-ttu-id="799d7-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="799d7-108">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="dbbcc-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dbbcc-108">Delegated (work or school account)</span></span>     | <span data-ttu-id="dbbcc-109">Não suportado</span><span class="sxs-lookup"><span data-stu-id="dbbcc-109">Not Supported</span></span>        |
-| <span data-ttu-id="dbbcc-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dbbcc-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dbbcc-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="dbbcc-111">Not Supported</span></span>        |
-| <span data-ttu-id="dbbcc-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dbbcc-112">Application</span></span>     | <span data-ttu-id="dbbcc-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dbbcc-113">None</span></span>                                        |
+| <span data-ttu-id="799d7-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="799d7-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="799d7-110">Não suportado</span><span class="sxs-lookup"><span data-stu-id="799d7-110">Not Supported</span></span>        |
+| <span data-ttu-id="799d7-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="799d7-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="799d7-112">Não suportado</span><span class="sxs-lookup"><span data-stu-id="799d7-112">Not Supported</span></span>        |
+| <span data-ttu-id="799d7-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="799d7-113">Application</span></span>     | <span data-ttu-id="799d7-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="799d7-114">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="dbbcc-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dbbcc-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="799d7-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="799d7-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/participants/{id}
 GET /communications/calls/{id}/participants/{id}
 ```
-> <span data-ttu-id="dbbcc-115">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-115">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="dbbcc-116">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-116">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="799d7-116">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="799d7-116">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="799d7-117">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="799d7-117">Going forward, use the `/communications` path.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="dbbcc-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="dbbcc-117">Optional query parameters</span></span>
-<span data-ttu-id="dbbcc-118">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="799d7-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="799d7-118">Optional query parameters</span></span>
+<span data-ttu-id="799d7-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="799d7-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="dbbcc-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dbbcc-119">Request headers</span></span>
-| <span data-ttu-id="dbbcc-120">Nome</span><span class="sxs-lookup"><span data-stu-id="dbbcc-120">Name</span></span>          | <span data-ttu-id="dbbcc-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="dbbcc-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="799d7-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="799d7-120">Request headers</span></span>
+| <span data-ttu-id="799d7-121">Nome</span><span class="sxs-lookup"><span data-stu-id="799d7-121">Name</span></span>          | <span data-ttu-id="799d7-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="799d7-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="dbbcc-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="dbbcc-122">Authorization</span></span> | <span data-ttu-id="dbbcc-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="799d7-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="799d7-123">Authorization</span></span> | <span data-ttu-id="799d7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="799d7-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="dbbcc-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dbbcc-125">Request body</span></span>
-<span data-ttu-id="dbbcc-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="799d7-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="799d7-126">Request body</span></span>
+<span data-ttu-id="799d7-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="799d7-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dbbcc-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="dbbcc-127">Response</span></span>
-<span data-ttu-id="dbbcc-128">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [participante](../resources/participant.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-128">If successful, this method returns a `200 OK` response code and a [participant](../resources/participant.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="799d7-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="799d7-128">Response</span></span>
+<span data-ttu-id="799d7-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [participante](../resources/participant.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="799d7-129">If successful, this method returns a `200 OK` response code and a [participant](../resources/participant.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dbbcc-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dbbcc-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="799d7-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="799d7-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dbbcc-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dbbcc-130">Request</span></span>
-<span data-ttu-id="dbbcc-131">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-131">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="799d7-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="799d7-131">Request</span></span>
+<span data-ttu-id="799d7-132">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="799d7-132">The following example shows the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="dbbcc-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="dbbcc-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="799d7-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="799d7-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-participant"
@@ -61,24 +63,24 @@ GET /communications/calls/{id}/participants/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/7e1b4346-85a6-4bdd-abe3-d11c5d420efe
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="dbbcc-133">C#</span><span class="sxs-lookup"><span data-stu-id="dbbcc-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="799d7-134">C#</span><span class="sxs-lookup"><span data-stu-id="799d7-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dbbcc-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dbbcc-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="799d7-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="799d7-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-participant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="dbbcc-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dbbcc-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="799d7-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="799d7-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-participant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="dbbcc-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="dbbcc-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="799d7-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="799d7-137">Response</span></span>
 
-> <span data-ttu-id="dbbcc-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dbbcc-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="799d7-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="799d7-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

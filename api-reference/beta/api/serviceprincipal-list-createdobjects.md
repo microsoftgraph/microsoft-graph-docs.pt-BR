@@ -5,54 +5,56 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e45c5447fe6c054a2d3446c14bc44771955f9be0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 544b346df02244b5a5f519afa69bbba6f5d6339d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867838"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453420"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a><span data-ttu-id="eccf3-103">servicePrincipalName: listar createdObjects</span><span class="sxs-lookup"><span data-stu-id="eccf3-103">servicePrincipal: List createdObjects</span></span>
+# <a name="serviceprincipal-list-createdobjects"></a><span data-ttu-id="daeaa-103">servicePrincipalName: listar createdObjects</span><span class="sxs-lookup"><span data-stu-id="daeaa-103">servicePrincipal: List createdObjects</span></span>
+
+<span data-ttu-id="daeaa-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="daeaa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="eccf3-104">Recupere uma lista de objetos directoryobject.</span><span class="sxs-lookup"><span data-stu-id="eccf3-104">Retrieve a list of directoryobject objects.</span></span>
+<span data-ttu-id="daeaa-105">Recupere uma lista de objetos directoryobject.</span><span class="sxs-lookup"><span data-stu-id="daeaa-105">Retrieve a list of directoryobject objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="eccf3-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="eccf3-105">Permissions</span></span>
-<span data-ttu-id="eccf3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eccf3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="daeaa-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="daeaa-106">Permissions</span></span>
+<span data-ttu-id="daeaa-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="daeaa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="eccf3-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="eccf3-108">Permission type</span></span>      | <span data-ttu-id="eccf3-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="eccf3-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="daeaa-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="daeaa-109">Permission type</span></span>      | <span data-ttu-id="daeaa-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="daeaa-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="eccf3-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="eccf3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="eccf3-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="eccf3-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="eccf3-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="eccf3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eccf3-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="eccf3-113">Not supported.</span></span>    |
-|<span data-ttu-id="eccf3-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="eccf3-114">Application</span></span> | <span data-ttu-id="eccf3-115">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eccf3-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="daeaa-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="daeaa-111">Delegated (work or school account)</span></span> | <span data-ttu-id="daeaa-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="daeaa-112">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="daeaa-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="daeaa-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="daeaa-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="daeaa-114">Not supported.</span></span>    |
+|<span data-ttu-id="daeaa-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="daeaa-115">Application</span></span> | <span data-ttu-id="daeaa-116">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="daeaa-116">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="eccf3-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="eccf3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="daeaa-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="daeaa-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/createdObjects
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="eccf3-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="eccf3-117">Optional query parameters</span></span>
-<span data-ttu-id="eccf3-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="eccf3-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="daeaa-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="daeaa-118">Optional query parameters</span></span>
+<span data-ttu-id="daeaa-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="daeaa-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="eccf3-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="eccf3-119">Request headers</span></span>
-| <span data-ttu-id="eccf3-120">Nome</span><span class="sxs-lookup"><span data-stu-id="eccf3-120">Name</span></span>       | <span data-ttu-id="eccf3-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="eccf3-121">Type</span></span> | <span data-ttu-id="eccf3-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="eccf3-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="daeaa-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="daeaa-120">Request headers</span></span>
+| <span data-ttu-id="daeaa-121">Nome</span><span class="sxs-lookup"><span data-stu-id="daeaa-121">Name</span></span>       | <span data-ttu-id="daeaa-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="daeaa-122">Type</span></span> | <span data-ttu-id="daeaa-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="daeaa-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="eccf3-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="eccf3-123">Authorization</span></span>  | <span data-ttu-id="eccf3-124">string</span><span class="sxs-lookup"><span data-stu-id="eccf3-124">string</span></span>  | <span data-ttu-id="eccf3-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="eccf3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="daeaa-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="daeaa-124">Authorization</span></span>  | <span data-ttu-id="daeaa-125">string</span><span class="sxs-lookup"><span data-stu-id="daeaa-125">string</span></span>  | <span data-ttu-id="daeaa-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="daeaa-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="eccf3-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="eccf3-127">Request body</span></span>
-<span data-ttu-id="eccf3-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="eccf3-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="daeaa-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="daeaa-128">Request body</span></span>
+<span data-ttu-id="daeaa-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="daeaa-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eccf3-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="eccf3-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="daeaa-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="daeaa-130">Response</span></span>
 
-<span data-ttu-id="eccf3-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="eccf3-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="eccf3-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="eccf3-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="eccf3-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eccf3-132">Request</span></span>
-<span data-ttu-id="eccf3-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="eccf3-133">Here is an example of the request.</span></span>
+<span data-ttu-id="daeaa-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="daeaa-131">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="daeaa-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="daeaa-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="daeaa-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="daeaa-133">Request</span></span>
+<span data-ttu-id="daeaa-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="daeaa-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="eccf3-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="eccf3-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="daeaa-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="daeaa-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipals_get_createdobjects"
@@ -60,22 +62,22 @@ GET /servicePrincipals/{id}/createdObjects
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="eccf3-135">C#</span><span class="sxs-lookup"><span data-stu-id="eccf3-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="daeaa-136">C#</span><span class="sxs-lookup"><span data-stu-id="daeaa-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-get-createdobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="eccf3-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eccf3-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="daeaa-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="daeaa-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-get-createdobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="eccf3-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eccf3-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="daeaa-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="daeaa-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-get-createdobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="eccf3-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="eccf3-138">Response</span></span>
-<span data-ttu-id="eccf3-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eccf3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="daeaa-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="daeaa-139">Response</span></span>
+<span data-ttu-id="daeaa-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="daeaa-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

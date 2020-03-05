@@ -6,58 +6,60 @@ title: Localizar sites do SharePoint por palavra-chave
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 89b55be4ab81d59be37e2b3d20ff84a51f75991b
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: c41f49f217e669a35ef77872161394186ec4b392
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726231"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453202"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="9e96b-103">Procurar sites</span><span class="sxs-lookup"><span data-stu-id="9e96b-103">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="6a5ca-103">Procurar sites</span><span class="sxs-lookup"><span data-stu-id="6a5ca-103">Search for sites</span></span>
+
+<span data-ttu-id="6a5ca-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6a5ca-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9e96b-104">Pesquisar em um locatário do SharePoint para [sites][] que correspondam a palavras-chave fornecidas.</span><span class="sxs-lookup"><span data-stu-id="9e96b-104">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
+<span data-ttu-id="6a5ca-105">Pesquisar em um locatário do SharePoint para [sites][] que correspondam a palavras-chave fornecidas.</span><span class="sxs-lookup"><span data-stu-id="6a5ca-105">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
 
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="9e96b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="9e96b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6a5ca-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="6a5ca-107">Permissions</span></span>
 
-<span data-ttu-id="9e96b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9e96b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6a5ca-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6a5ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9e96b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9e96b-109">Permission type</span></span>                        | <span data-ttu-id="9e96b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9e96b-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="6a5ca-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6a5ca-110">Permission type</span></span>                        | <span data-ttu-id="6a5ca-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6a5ca-111">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="9e96b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9e96b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="9e96b-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e96b-112">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="9e96b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9e96b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e96b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9e96b-114">Not supported.</span></span>
-|<span data-ttu-id="9e96b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9e96b-115">Application</span></span>                            | <span data-ttu-id="9e96b-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e96b-116">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="6a5ca-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6a5ca-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="6a5ca-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6a5ca-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="6a5ca-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6a5ca-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6a5ca-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6a5ca-115">Not supported.</span></span>
+|<span data-ttu-id="6a5ca-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6a5ca-116">Application</span></span>                            | <span data-ttu-id="6a5ca-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6a5ca-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="9e96b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9e96b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6a5ca-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6a5ca-118">HTTP request</span></span>
 ```http
 GET /sites?$search={query}
 ```
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9e96b-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="9e96b-118">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6a5ca-119">HTTP</span><span class="sxs-lookup"><span data-stu-id="6a5ca-119">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?$search={query}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9e96b-119">C#</span><span class="sxs-lookup"><span data-stu-id="9e96b-119">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6a5ca-120">C#</span><span class="sxs-lookup"><span data-stu-id="6a5ca-120">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9e96b-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9e96b-120">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6a5ca-121">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6a5ca-121">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9e96b-121">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9e96b-121">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6a5ca-122">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6a5ca-122">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="9e96b-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e96b-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6a5ca-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="6a5ca-123">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -86,7 +88,7 @@ Content-type: application/json
   ]
 }
 ```
-><span data-ttu-id="9e96b-123">**Observação:** A única propriedade que funciona para classificação é **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="9e96b-123">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="9e96b-124">O filtro de pesquisa é uma pesquisa de texto livre que usa várias propriedades ao recuperar os resultados da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="9e96b-124">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
+><span data-ttu-id="6a5ca-124">**Observação:** A única propriedade que funciona para classificação é **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="6a5ca-124">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="6a5ca-125">O filtro de pesquisa é uma pesquisa de texto livre que usa várias propriedades ao recuperar os resultados da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="6a5ca-125">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
 
 <!--
 {

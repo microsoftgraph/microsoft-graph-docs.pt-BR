@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d40146e205dd250f99df3334b5e0c8d0323564c7
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: e2bd12ff187e2253eb0f8f3af00afe2ed106f1bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234112"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452208"
 ---
-# <a name="create-tokenlifetimepolicy"></a><span data-ttu-id="a45c3-103">Criar tokenLifetimePolicy</span><span class="sxs-lookup"><span data-stu-id="a45c3-103">Create tokenLifetimePolicy</span></span>
+# <a name="create-tokenlifetimepolicy"></a><span data-ttu-id="cbf4a-103">Criar tokenLifetimePolicy</span><span class="sxs-lookup"><span data-stu-id="cbf4a-103">Create tokenLifetimePolicy</span></span>
+
+<span data-ttu-id="cbf4a-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="cbf4a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a45c3-104">Criar um novo objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="a45c3-104">Create a new [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.</span></span>
+<span data-ttu-id="cbf4a-105">Criar um novo objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="cbf4a-105">Create a new [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a45c3-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a45c3-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cbf4a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="cbf4a-106">Permissions</span></span>
 
-<span data-ttu-id="a45c3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a45c3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cbf4a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbf4a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a45c3-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a45c3-108">Permission type</span></span>                        | <span data-ttu-id="a45c3-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a45c3-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="cbf4a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cbf4a-109">Permission type</span></span>                        | <span data-ttu-id="cbf4a-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cbf4a-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a45c3-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a45c3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a45c3-111">Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="a45c3-111">Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="a45c3-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a45c3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a45c3-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a45c3-113">Not supported.</span></span> |
-| <span data-ttu-id="a45c3-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a45c3-114">Application</span></span>                            | <span data-ttu-id="a45c3-115">Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="a45c3-115">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="cbf4a-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cbf4a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="cbf4a-112">Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="cbf4a-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="cbf4a-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cbf4a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbf4a-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cbf4a-114">Not supported.</span></span> |
+| <span data-ttu-id="cbf4a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cbf4a-115">Application</span></span>                            | <span data-ttu-id="cbf4a-116">Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="cbf4a-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a45c3-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a45c3-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbf4a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cbf4a-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,26 +38,28 @@ ms.locfileid: "41234112"
 POST policies/tokenLifetimePolicies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a45c3-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a45c3-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cbf4a-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cbf4a-118">Request headers</span></span>
 
-| <span data-ttu-id="a45c3-118">Nome</span><span class="sxs-lookup"><span data-stu-id="a45c3-118">Name</span></span>          | <span data-ttu-id="a45c3-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="a45c3-119">Description</span></span>   |
+| <span data-ttu-id="cbf4a-119">Nome</span><span class="sxs-lookup"><span data-stu-id="cbf4a-119">Name</span></span>          | <span data-ttu-id="cbf4a-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="cbf4a-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="a45c3-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="a45c3-120">Authorization</span></span> | <span data-ttu-id="a45c3-121">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="a45c3-121">Bearer {token}</span></span> |
-| <span data-ttu-id="a45c3-122">Content-type</span><span class="sxs-lookup"><span data-stu-id="a45c3-122">Content-type</span></span> | <span data-ttu-id="a45c3-123">application/json</span><span class="sxs-lookup"><span data-stu-id="a45c3-123">application/json</span></span> |
+| <span data-ttu-id="cbf4a-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="cbf4a-121">Authorization</span></span> | <span data-ttu-id="cbf4a-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="cbf4a-122">Bearer {token}</span></span> |
+| <span data-ttu-id="cbf4a-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="cbf4a-123">Content-type</span></span> | <span data-ttu-id="cbf4a-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cbf4a-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a45c3-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a45c3-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbf4a-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cbf4a-125">Request body</span></span>
 
-<span data-ttu-id="a45c3-125">No corpo da solicitação, forneça uma representação JSON do objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="a45c3-125">In the request body, supply a JSON representation of [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.</span></span>
+<span data-ttu-id="cbf4a-126">No corpo da solicitação, forneça uma representação JSON do objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="cbf4a-126">In the request body, supply a JSON representation of [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a45c3-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="a45c3-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cbf4a-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbf4a-127">Response</span></span>
 
-<span data-ttu-id="a45c3-127">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a45c3-127">If successful, this method returns a `201 Created` response code and a new [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object in the response body.</span></span>
+<span data-ttu-id="cbf4a-128">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cbf4a-128">If successful, this method returns a `201 Created` response code and a new [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a45c3-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a45c3-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cbf4a-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cbf4a-129">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a45c3-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a45c3-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cbf4a-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cbf4a-130">Request</span></span>
 
-<span data-ttu-id="a45c3-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a45c3-130">The following is an example of the request.</span></span>
+<span data-ttu-id="cbf4a-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="cbf4a-131">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="cbf4a-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="cbf4a-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tokenlifetimepolicy_from_tokenlifetimepolicies"
@@ -73,12 +77,22 @@ Content-type: application/json
   "isOrganizationDefault": true
 }
 ```
+# <a name="javascript"></a>[<span data-ttu-id="cbf4a-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cbf4a-133">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-tokenlifetimepolicy-from-tokenlifetimepolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="a45c3-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="a45c3-131">Response</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="cbf4a-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cbf4a-134">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-tokenlifetimepolicy-from-tokenlifetimepolicies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="a45c3-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a45c3-132">The following is an example of the response.</span></span>
+---
 
-> <span data-ttu-id="a45c3-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a45c3-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+### <a name="response"></a><span data-ttu-id="cbf4a-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbf4a-135">Response</span></span>
+
+<span data-ttu-id="cbf4a-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cbf4a-136">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="cbf4a-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cbf4a-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

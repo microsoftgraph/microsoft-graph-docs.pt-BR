@@ -5,51 +5,53 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d551420a95d4afcfd77fa6a23c2a9684c533084e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 07bf9d9069a89cef3bbf74526fc954a987d12f2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937459"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451722"
 ---
-# <a name="create-calendar"></a><span data-ttu-id="547a7-103">Criar calendário</span><span class="sxs-lookup"><span data-stu-id="547a7-103">Create Calendar</span></span>
+# <a name="create-calendar"></a><span data-ttu-id="15eeb-103">Criar calendário</span><span class="sxs-lookup"><span data-stu-id="15eeb-103">Create Calendar</span></span>
+
+<span data-ttu-id="15eeb-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="15eeb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="547a7-104">Use esta API para criar um novo Calendar para um [usuário](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="547a7-104">Use this API to create a new calendar for a [user](../resources/user.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="547a7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="547a7-105">Permissions</span></span>
-<span data-ttu-id="547a7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="547a7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="15eeb-105">Use esta API para criar um novo Calendar para um [usuário](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="15eeb-105">Use this API to create a new calendar for a [user](../resources/user.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="15eeb-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="15eeb-106">Permissions</span></span>
+<span data-ttu-id="15eeb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15eeb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="547a7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="547a7-108">Permission type</span></span>      | <span data-ttu-id="547a7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="547a7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15eeb-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="15eeb-109">Permission type</span></span>      | <span data-ttu-id="15eeb-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="15eeb-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="547a7-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="547a7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="547a7-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="547a7-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="547a7-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="547a7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="547a7-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="547a7-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="547a7-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="547a7-114">Application</span></span> | <span data-ttu-id="547a7-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="547a7-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="15eeb-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="15eeb-111">Delegated (work or school account)</span></span> | <span data-ttu-id="15eeb-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15eeb-112">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="15eeb-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="15eeb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15eeb-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15eeb-114">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="15eeb-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="15eeb-115">Application</span></span> | <span data-ttu-id="15eeb-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15eeb-116">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="547a7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="547a7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15eeb-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="15eeb-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendars
 POST /users/{id | userPrincipalName}/calendars
 ```
-## <a name="request-headers"></a><span data-ttu-id="547a7-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="547a7-117">Request headers</span></span>
-| <span data-ttu-id="547a7-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="547a7-118">Header</span></span>       | <span data-ttu-id="547a7-119">Valor</span><span class="sxs-lookup"><span data-stu-id="547a7-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="15eeb-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="15eeb-118">Request headers</span></span>
+| <span data-ttu-id="15eeb-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="15eeb-119">Header</span></span>       | <span data-ttu-id="15eeb-120">Valor</span><span class="sxs-lookup"><span data-stu-id="15eeb-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="547a7-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="547a7-120">Authorization</span></span>  | <span data-ttu-id="547a7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="547a7-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="547a7-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="547a7-123">Content-Type</span></span>  | <span data-ttu-id="547a7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="547a7-124">application/json</span></span>  |
+| <span data-ttu-id="15eeb-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="15eeb-121">Authorization</span></span>  | <span data-ttu-id="15eeb-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="15eeb-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="15eeb-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="15eeb-124">Content-Type</span></span>  | <span data-ttu-id="15eeb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="15eeb-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="547a7-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="547a7-125">Request body</span></span>
-<span data-ttu-id="547a7-126">No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="547a7-126">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15eeb-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="15eeb-126">Request body</span></span>
+<span data-ttu-id="15eeb-127">No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="15eeb-127">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="547a7-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="547a7-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15eeb-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="15eeb-128">Response</span></span>
 
-<span data-ttu-id="547a7-128">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="547a7-128">If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
+<span data-ttu-id="15eeb-129">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="15eeb-129">If successful, this method returns `201 Created` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="547a7-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="547a7-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="547a7-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="547a7-130">Request</span></span>
-<span data-ttu-id="547a7-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="547a7-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="15eeb-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="15eeb-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="15eeb-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15eeb-131">Request</span></span>
+<span data-ttu-id="15eeb-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="15eeb-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="547a7-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="547a7-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="15eeb-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="15eeb-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_calendar_from_user"
@@ -63,23 +65,23 @@ Content-type: application/json
 }
 
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="547a7-133">C#</span><span class="sxs-lookup"><span data-stu-id="547a7-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="15eeb-134">C#</span><span class="sxs-lookup"><span data-stu-id="15eeb-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-calendar-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="547a7-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="547a7-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="15eeb-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15eeb-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="547a7-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="547a7-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="15eeb-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15eeb-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-calendar-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="547a7-136">No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="547a7-136">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="547a7-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="547a7-137">Response</span></span>
-<span data-ttu-id="547a7-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="547a7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="15eeb-137">No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="15eeb-137">In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="15eeb-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="15eeb-138">Response</span></span>
+<span data-ttu-id="15eeb-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="15eeb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

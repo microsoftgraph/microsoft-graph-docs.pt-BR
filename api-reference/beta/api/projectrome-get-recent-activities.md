@@ -5,30 +5,32 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 59385b82dd4d979106c0337489cb4fcea9747835
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1aa948b9a71c0855e7bde250b90ee56c2c923579
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983324"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454889"
 ---
-# <a name="get-recent-user-activities"></a><span data-ttu-id="6ffe7-109">Obter atividades recentes do usuário</span><span class="sxs-lookup"><span data-stu-id="6ffe7-109">Get recent user activities</span></span>
+# <a name="get-recent-user-activities"></a><span data-ttu-id="9e915-109">Obter atividades recentes do usuário</span><span class="sxs-lookup"><span data-stu-id="9e915-109">Get recent user activities</span></span>
+
+<span data-ttu-id="9e915-110">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="9e915-110">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6ffe7-110">Obter atividades recentes para um determinado usuário.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-110">Get recent activities for a given user.</span></span> <span data-ttu-id="6ffe7-111">Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada".</span><span class="sxs-lookup"><span data-stu-id="6ffe7-111">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="6ffe7-112">O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-112">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="6ffe7-113">As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-113">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="6ffe7-114">Isso significa que as atividades sem **historyItems** não serão incluídas na resposta.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-114">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="6ffe7-115">A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-115">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="6ffe7-116">Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-116">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="6ffe7-117">Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-117">To get your application's activities, use the **nextLink** property to paginate.</span></span>
+<span data-ttu-id="9e915-111">Obter atividades recentes para um determinado usuário.</span><span class="sxs-lookup"><span data-stu-id="9e915-111">Get recent activities for a given user.</span></span> <span data-ttu-id="9e915-112">Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada".</span><span class="sxs-lookup"><span data-stu-id="9e915-112">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="9e915-113">O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas.</span><span class="sxs-lookup"><span data-stu-id="9e915-113">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="9e915-114">As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**.</span><span class="sxs-lookup"><span data-stu-id="9e915-114">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="9e915-115">Isso significa que as atividades sem **historyItems** não serão incluídas na resposta.</span><span class="sxs-lookup"><span data-stu-id="9e915-115">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="9e915-116">A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas.</span><span class="sxs-lookup"><span data-stu-id="9e915-116">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="9e915-117">Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes.</span><span class="sxs-lookup"><span data-stu-id="9e915-117">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="9e915-118">Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.</span><span class="sxs-lookup"><span data-stu-id="9e915-118">To get your application's activities, use the **nextLink** property to paginate.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6ffe7-118">Permissões</span><span class="sxs-lookup"><span data-stu-id="6ffe7-118">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9e915-119">Permissões</span><span class="sxs-lookup"><span data-stu-id="9e915-119">Permissions</span></span>
 
-<span data-ttu-id="6ffe7-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6ffe7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9e915-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9e915-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6ffe7-121">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6ffe7-121">Permission type</span></span>      | <span data-ttu-id="6ffe7-122">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6ffe7-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9e915-122">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9e915-122">Permission type</span></span>      | <span data-ttu-id="9e915-123">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9e915-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6ffe7-123">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6ffe7-123">Delegated (work or school account)</span></span> | <span data-ttu-id="6ffe7-124">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="6ffe7-124">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="6ffe7-125">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6ffe7-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ffe7-126">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="6ffe7-126">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="6ffe7-127">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6ffe7-127">Application</span></span> | <span data-ttu-id="6ffe7-128">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-128">Not supported.</span></span> |
+|<span data-ttu-id="9e915-124">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9e915-124">Delegated (work or school account)</span></span> | <span data-ttu-id="9e915-125">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="9e915-125">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="9e915-126">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9e915-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e915-127">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="9e915-127">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="9e915-128">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9e915-128">Application</span></span> | <span data-ttu-id="9e915-129">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9e915-129">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6ffe7-129">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6ffe7-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e915-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9e915-130">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,15 +38,15 @@ ms.locfileid: "35983324"
 GET /me/activities/recent
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6ffe7-130">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6ffe7-130">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9e915-131">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9e915-131">Optional query parameters</span></span>
 
-<span data-ttu-id="6ffe7-131">Este método oferece suporte a alguns [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-131">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="6ffe7-132">Há suporte para os seguintes parâmetros de consulta:</span><span class="sxs-lookup"><span data-stu-id="6ffe7-132">The following query parameters are supported:</span></span>
+<span data-ttu-id="9e915-132">Este método oferece suporte a alguns [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9e915-132">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="9e915-133">Há suporte para os seguintes parâmetros de consulta:</span><span class="sxs-lookup"><span data-stu-id="9e915-133">The following query parameters are supported:</span></span>
 
-- <span data-ttu-id="6ffe7-133">$expand da propriedade de navegação **historyItems** .</span><span class="sxs-lookup"><span data-stu-id="6ffe7-133">$expand for the **historyItems** navigation property.</span></span>
-- <span data-ttu-id="6ffe7-134">$top limitar o número máximo de itens nas páginas.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-134">$top to limit the maximum number of items across pages.</span></span>
-- <span data-ttu-id="6ffe7-135">$filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-135">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
+- <span data-ttu-id="9e915-134">$expand da propriedade de navegação **historyItems** .</span><span class="sxs-lookup"><span data-stu-id="9e915-134">$expand for the **historyItems** navigation property.</span></span>
+- <span data-ttu-id="9e915-135">$top limitar o número máximo de itens nas páginas.</span><span class="sxs-lookup"><span data-stu-id="9e915-135">$top to limit the maximum number of items across pages.</span></span>
+- <span data-ttu-id="9e915-136">$filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.</span><span class="sxs-lookup"><span data-stu-id="9e915-136">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
 
-<span data-ttu-id="6ffe7-136">Veja a seguir alguns exemplos de consultas suportadas com codificação de URL.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-136">The following are some examples of supported queries with URL encoding.</span></span>
+<span data-ttu-id="9e915-137">Veja a seguir alguns exemplos de consultas suportadas com codificação de URL.</span><span class="sxs-lookup"><span data-stu-id="9e915-137">The following are some examples of supported queries with URL encoding.</span></span>
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -54,25 +56,25 @@ GET /me/activities/recent
 /me/activities/recent?$top=5
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6ffe7-137">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6ffe7-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9e915-138">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9e915-138">Request headers</span></span>
 
-|<span data-ttu-id="6ffe7-138">Nome</span><span class="sxs-lookup"><span data-stu-id="6ffe7-138">Name</span></span> | <span data-ttu-id="6ffe7-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="6ffe7-139">Type</span></span> | <span data-ttu-id="6ffe7-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="6ffe7-140">Description</span></span>|
+|<span data-ttu-id="9e915-139">Nome</span><span class="sxs-lookup"><span data-stu-id="9e915-139">Name</span></span> | <span data-ttu-id="9e915-140">Tipo</span><span class="sxs-lookup"><span data-stu-id="9e915-140">Type</span></span> | <span data-ttu-id="9e915-141">Descrição</span><span class="sxs-lookup"><span data-stu-id="9e915-141">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="6ffe7-141">Autorização</span><span class="sxs-lookup"><span data-stu-id="6ffe7-141">Authorization</span></span> | <span data-ttu-id="6ffe7-142">string</span><span class="sxs-lookup"><span data-stu-id="6ffe7-142">string</span></span> | <span data-ttu-id="6ffe7-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="9e915-142">Autorização</span><span class="sxs-lookup"><span data-stu-id="9e915-142">Authorization</span></span> | <span data-ttu-id="9e915-143">string</span><span class="sxs-lookup"><span data-stu-id="9e915-143">string</span></span> | <span data-ttu-id="9e915-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9e915-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6ffe7-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6ffe7-145">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e915-146">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9e915-146">Request body</span></span>
 
-<span data-ttu-id="6ffe7-146">Não especifique um corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-146">Do not specify a request body.</span></span>
+<span data-ttu-id="9e915-147">Não especifique um corpo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9e915-147">Do not specify a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6ffe7-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="6ffe7-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9e915-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e915-148">Response</span></span>
 
-<span data-ttu-id="6ffe7-148">Se bem-sucedido, este método retorna o `200 OK` código de resposta com as atividades recentes do usuário para seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-148">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
+<span data-ttu-id="9e915-149">Se bem-sucedido, este método retorna o `200 OK` código de resposta com as atividades recentes do usuário para seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9e915-149">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6ffe7-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6ffe7-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9e915-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9e915-150">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="6ffe7-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6ffe7-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="9e915-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9e915-151">Request</span></span>
 
-<span data-ttu-id="6ffe7-151">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-151">The following is an example of the request.</span></span>
+<span data-ttu-id="9e915-152">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9e915-152">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -83,9 +85,9 @@ GET /me/activities/recent
 GET https://graph.microsoft.com/beta/me/activities/recent
 ```
 
-##### <a name="response"></a><span data-ttu-id="6ffe7-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="6ffe7-152">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9e915-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="9e915-153">Response</span></span>
 
-<span data-ttu-id="6ffe7-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6ffe7-153">The following is an example of the response.</span></span>
+<span data-ttu-id="9e915-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9e915-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "ignored",
