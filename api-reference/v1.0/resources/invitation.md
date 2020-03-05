@@ -5,14 +5,16 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 97bdbb685f260bb166d36dace1c2cfe62b69a902
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 1d9902498cd41157954476eb3c9aa57e9964bcbb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844320"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447714"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
+
+Namespace: microsoft.graph
 
 Representa um convite usado para adicionar usuários externos a uma organização. 
 

@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 1ef2aa97cf9ba5d834a44fc5f338ff933330f491
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 8ac5019909a2f5ebe808be695ed7d516738c21e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844201"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447336"
 ---
 # <a name="officegraphinsights-resource-type"></a>tipo de recurso officeGraphInsights
+
+Namespace: microsoft.graph
 
 Ideias são relações calculadas usando análises e técnicas de aprendizado de máquina. Por exemplo, você pode identificar tendências de documentos do OneDrive com usuários à sua volta.
 

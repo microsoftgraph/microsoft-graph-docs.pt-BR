@@ -5,14 +5,16 @@ localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: f88f940541bee75a6898ac638fe80e44fc368320
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c7b932bf7f0747ff6b5050f7e19accf871c1b1a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036292"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447511"
 ---
 # <a name="mailbox-usage-reports"></a>Relatórios de uso da caixa de correio
+
+Namespace: microsoft.graph
 
 Use os relatórios de uso da caixa de correio para obter informações sobre usuários com uma caixa de correio e seu nível de atividade, que é principalmente baseado em emails enviados e recebidos. Você também pode conferir a quantidade de armazenamento que cada caixa postal consome e quantas caixas de correio estão se aproximando das cotas de armazenamento.
 

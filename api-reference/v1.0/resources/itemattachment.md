@@ -5,14 +5,16 @@ localization_priority: Priority
 ms.prod: outlook
 author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 554a1cd2e0f6059cf9213f1f19d756349ef000fc
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: c5c565e81ed9218d3d04f15585236b87a362d5e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37036358"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447637"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
+
+Namespace: microsoft.graph
 
 Um contato, evento ou mensagem anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md) ou [postagem](../resources/post.md) do usuário.  
 

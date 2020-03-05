@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 0311e514c7d15e8b5fafcc94beecaecdcc6d9d49
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 207d7ce3f5cf572d3c32de23882e04a8cc9dd54d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035851"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447322"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
+
+Namespace: microsoft.graph
 
 O ponto de entrada para os recursos do OneNote.
 

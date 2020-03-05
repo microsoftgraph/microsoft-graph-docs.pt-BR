@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6a7acaa5ef4e6b6c60e2cfdff254601773258da6
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 328ac0423ae21b3d8eee096422b4b46b460d48fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652006"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447399"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
+
+Namespace: microsoft.graph
 
 Uma mensagem em uma mailFolder.
 

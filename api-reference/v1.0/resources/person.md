@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 66c37327f329995a84a8017625f86fde989b4e3c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27f0f5c27814ff09433cc68b82930878feb95963
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035543"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447203"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
+
+Namespace: microsoft.graph
 
 Uma agregação de informações sobre uma pessoa provenientes de emails, contatos e redes sociais. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório da sua organização e as pessoas de comunicações recentes (como emails e Skype).
 

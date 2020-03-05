@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e829929df46208ee321f56ae2d9f0144c320d4a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0de32560e154eaa732e596040525025ad0676926
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036327"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448015"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
+
+Namespace: microsoft.graph
 
 Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e Rascunhos. As pastas de email podem conter mensagens, outros itens do Outlook e pastas de correio filho.
 
