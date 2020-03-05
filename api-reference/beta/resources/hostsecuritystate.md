@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2f9f654b1a68ff393315889d7b2d9286636fcf35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec4b6ba22aceaaaeb3c612f61eb522bfe14243c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005832"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496863"
 ---
 # <a name="hostsecuritystate-resource-type"></a>tipo de recurso hostSecurityState
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +25,9 @@ Contém informações de estado sobre o host (incluindo dispositivos, computador
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |FQDN|String|FQDN do host (nome de domínio totalmente qualificado) (por exemplo, machine.company.com).|
-|isAzureAadJoined|Booliano|True se o host estiver associado ao domínio nos serviços de domínio do Azure Active Directory.|
-|isAzureAadRegistered|Booliano|True se o host registrado no registro de dispositivo do Azure Active Directory (dispositivos BYOD-ou seja, não é totalmente gerenciado pela empresa).|
-|isHybridAzureDomainJoined|Booliano|True se o host é membro de um domínio do Active Directory local.|
+|isAzureAadJoined|Boolean|True se o host estiver associado ao domínio nos serviços de domínio do Azure Active Directory.|
+|isAzureAadRegistered|Boolean|True se o host registrado no registro de dispositivo do Azure Active Directory (dispositivos BYOD-ou seja, não é totalmente gerenciado pela empresa).|
+|isHybridAzureDomainJoined|Boolean|True se o host é membro de um domínio do Active Directory local.|
 |NetBiosName|String|O nome do host local, sem o nome de domínio DNS.|
 |Opera|String|Sistema operacional host. (Por exemplo, Windows10, MacOS, RHEL, etc.).|
 |privateIpAddress|String|Privado (não roteável) endereço IPv4 ou IPv6 (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|

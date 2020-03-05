@@ -6,14 +6,16 @@ title: IncompleteData
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 23d78fa3605259031fc2c408e93a0461bb12cb28
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3abefff4749413648a3f1a56d1dbf6d44f16a471
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006280"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496275"
 ---
 # <a name="incompletedata-resource-type"></a>tipo de recurso incompleteData
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ As propriedades dentro podem fornecer informações sobre o motivo pelo qual há
 | Propriedade                  | Tipo           | Descrição
 |:--------------------------|:---------------|:--------------------------------
 | missingDataBeforeDateTime | DateTimeOffset | O serviço não tem dados de origem antes do tempo especificado.
-| wasThrottled              | Booliano        | Alguns dados não foram gravados devido à atividade excessiva.
+| wasThrottled              | Boolean        | Alguns dados não foram gravados devido à atividade excessiva.
 
 <!--
 {

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5c3efdd55f432add28f6d13797a0f73b4458b966
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: c10173d099ac7c2ad9714b0240f306e783fdd6da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841245"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496807"
 ---
 # <a name="hybridagentupdaterconfiguration-resource-type"></a>tipo de recurso hybridAgentUpdaterConfiguration
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +39,7 @@ A atualização do agente seguirá a lista de prioridades abaixo
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|allowUpdateConfigurationOverride|Booliano|Indica se a configuração do atualizador será ignorada e o agente receberá uma atualização quando a próxima versão do agente estiver disponível.|
+|allowUpdateConfigurationOverride|Boolean|Indica se a configuração do atualizador será ignorada e o agente receberá uma atualização quando a próxima versão do agente estiver disponível.|
 |deferUpdateDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |updateWindow|[updateWindow](updatewindow.md)||
 

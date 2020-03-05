@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8bf32b855ed77ccdf712b1a739ef913d0a3dade0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3efdebea07bb824b2314af516810ca36ad43adc9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971939"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497619"
 ---
 # <a name="governancepermission-resource-type"></a>tipo de recurso governancePermission
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ Representa a permissão de acesso que um [governanceSubject](../resources/govern
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |accessLevel|String|O nível de acesso. Valores válidos: ``None``, ``UserRead``, ``AdminRead``e ``AdminReadWrite``.|
-|isActive|Booliano|Indica se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
-|isqualificável|Booliano|Indica se o solicitante tem qualquer atribuição de função qualificada para o nível de acesso.|
+|isActive|Boolean|Indica se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
+|isqualificável|Boolean|Indica se o solicitante tem qualquer atribuição de função qualificada para o nível de acesso.|
 
 ## <a name="json-representation"></a>Representação JSON
 

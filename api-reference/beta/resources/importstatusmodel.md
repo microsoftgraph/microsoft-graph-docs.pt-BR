@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 917f83f005ba682d54722d51feea3f7ff872b0f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b5cc73b5401ab0761c07f6c76cb33cca8f20d83f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496408"
 ---
 # <a name="importstatusmodel-resource-type"></a>tipo de recurso importStatusModel
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

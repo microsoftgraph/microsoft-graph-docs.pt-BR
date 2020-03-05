@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 2b73c69b7fdb7099994e9925815d80e2bf99d5f6
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: c77f5294a191b827673e52ee60c132713b16e490
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036218"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498298"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +37,7 @@ Derivado de [attachment](attachment.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentBytes|EDM. Binary|O conteúdo do arquivo codificado pela base64.|
+|contentBytes|Edm.Binary|O conteúdo do arquivo codificado pela base64.|
 |contentId|String|A ID do anexo no repositório do Exchange.|
 |contentLocation|Cadeia de caracteres|Não use essa propriedade que não tem suporte.|
 |contentType|String|O tipo de conteúdo do anexo.|

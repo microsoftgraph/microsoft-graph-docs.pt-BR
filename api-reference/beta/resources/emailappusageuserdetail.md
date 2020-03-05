@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ae0409124569f4318df94f97729402a91d4b8e45
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 700ef4b222860d19ef3ba78ae583a50e8cf8d0cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972142"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499481"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>tipo de recurso emailAppUsageUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -20,19 +22,19 @@ ms.locfileid: "35972142"
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
 | userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | Booliano           |
+| displayName       | Cadeia de caracteres            |
+| isDeleted         | Boolean           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
-| mailForMac        | Coleção de cadeias de caracteres |
-| outlookForMac     | Coleção de cadeias de caracteres |
-| outlookForWindows | Coleção de cadeias de caracteres |
-| outlookForMobile  | Coleção de cadeias de caracteres |
-| otherForMobile    | Coleção de cadeias de caracteres |
-| outlookForWeb     | Coleção de cadeias de caracteres |
-| pop3App           | Coleção de cadeias de caracteres |
-| imap4App          | Coleção de cadeias de caracteres |
-| smtpApp           | Coleção de cadeias de caracteres |
+| mailForMac        | String collection |
+| outlookForMac     | String collection |
+| outlookForWindows | String collection |
+| outlookForMobile  | String collection |
+| otherForMobile    | String collection |
+| outlookForWeb     | String collection |
+| pop3App           | String collection |
+| imap4App          | String collection |
+| smtpApp           | String collection |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Representação JSON

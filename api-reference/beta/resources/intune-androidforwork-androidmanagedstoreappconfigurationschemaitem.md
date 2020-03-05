@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39f7bb07e28875ec2d0280eb02a9d3c90b5a82e3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3f3dc6d00c2d5b579b99a8fe17cca5d3e54482aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366207"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42494594"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Único item de configuração no esquema de configuração personalizada de um aplicativo Android.
 
@@ -26,8 +28,8 @@ ms.locfileid: "36366207"
 |índice|Int32|Índice exclusivo que o aplicativo usa para manter itens de esquema aninhados|
 |parentIndex|Int32|Índice do item de esquema pai para rastrear itens de esquema aninhados|
 |schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
-|displayName|String|Nome legível por humanos|
-|descrição|String|Descrição do que o item controla dentro do aplicativo|
+|displayName|Cadeia de caracteres|Nome legível por humanos|
+|description|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
 |defaultStringValue|Cadeia de caracteres|Valor padrão para itens do tipo cadeia de caracteres, se especificado pelo desenvolvedor do aplicativo|

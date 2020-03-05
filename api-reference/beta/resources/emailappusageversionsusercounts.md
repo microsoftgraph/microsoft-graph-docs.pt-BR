@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 18b86708071f1fab573571703dbb5bc253fcf2ce
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edc9242a99f0a993b2fa21c95259582bdf31c3da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972135"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499411"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>tipo de recurso emailAppUsageVersionsUserCounts
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 

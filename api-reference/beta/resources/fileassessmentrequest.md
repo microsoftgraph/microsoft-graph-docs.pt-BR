@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 24bad37d6b01ed4fd7901890bfd8692da8f8a51e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3a7b0b4d83b68acf90aacf71c83169881a2ecdde
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867140"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498328"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>tipo de recurso fileAssessmentRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ O arquivo pode ser um arquivo de texto ou um documento do Word ou um arquivo bin
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Criar threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Crie uma nova solicitação de avaliação de arquivo postando um objeto **fileAssessmentRequest** . |
-| [Obter threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Leia as propriedades e os relacionamentos de um objeto **fileAssessmentRequest** . |
+| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Crie uma nova solicitação de avaliação de arquivo postando um objeto **fileAssessmentRequest** . |
+| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Leia as propriedades e os relacionamentos de um objeto **fileAssessmentRequest** . |
 
 ## <a name="properties"></a>Propriedades
 

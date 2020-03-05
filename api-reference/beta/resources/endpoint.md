@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: db9904c4c668ff86e56be85835c2752ab0d17525
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 36c69a616cfd1d1aa531f42e9622b4f0c63ec83d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972121"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499390"
 ---
 # <a name="endpoint-resource-type"></a>Tipo de recurso de ponto de extremidade
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

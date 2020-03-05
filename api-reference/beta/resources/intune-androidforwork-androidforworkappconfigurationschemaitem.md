@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 280fd0423a51a4324ee3837695b0b5c86760b415
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 08732e31372a59216894bcb70ffd6318a0fa2f1e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367075"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42495092"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchemaItem
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Item de configuração único dentro de um esquema de configurações personalizadas de um aplicativo do Android for Work.
 
@@ -24,8 +26,8 @@ Item de configuração único dentro de um esquema de configurações personaliz
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
-|displayName|String|Nome legível por humanos|
-|descrição|String|Descrição do que o item controla dentro do aplicativo|
+|displayName|Cadeia de caracteres|Nome legível por humanos|
+|description|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
 |defaultStringValue|Cadeia de caracteres|Valor padrão para itens do tipo cadeia de caracteres, se especificado pelo desenvolvedor do aplicativo|

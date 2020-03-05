@@ -5,36 +5,38 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc1bfa8f0bed261b79a1cae87cd1db64e8a099c4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fc3003a2d62609b0646e79f3d43c51b352f02ee8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366900"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42494174"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v4_0|Booliano|Versão 4.0 ou posterior.|
-|v4_0_3|Booliano|Versão 4.0.3 ou posterior.|
-|v4_1|Booliano|Versão 4.1 ou posterior.|
-|v4_2|Booliano|Versão 4.2 ou posterior.|
-|v4_3|Booliano|Versão 4.3 ou posterior.|
-|v4_4|Booliano|Versão 4.4 ou posterior.|
-|v5_0|Booliano|Versão 5.0 ou posterior.|
-|v5_1|Booliano|Versão 5.1 ou posterior.|
-|v6_0|Booliano|Versão 6,0 ou posterior.|
-|v7_0|Booliano|Versão 7,0 ou posterior.|
-|v7_1|Booliano|Versão 7,1 ou posterior.|
-|v8_0|Booliano|Versão 8.0 ou posterior.|
+|v4_0|Boolean|Versão 4.0 ou posterior.|
+|v4_0_3|Boolean|Versão 4.0.3 ou posterior.|
+|v4_1|Boolean|Versão 4.1 ou posterior.|
+|v4_2|Boolean|Versão 4.2 ou posterior.|
+|v4_3|Boolean|Versão 4.3 ou posterior.|
+|v4_4|Boolean|Versão 4.4 ou posterior.|
+|v5_0|Boolean|Versão 5.0 ou posterior.|
+|v5_1|Boolean|Versão 5.1 ou posterior.|
+|v6_0|Boolean|Versão 6,0 ou posterior.|
+|v7_0|Boolean|Versão 7,0 ou posterior.|
+|v7_1|Boolean|Versão 7,1 ou posterior.|
+|v8_0|Boolean|Versão 8.0 ou posterior.|
 |v8_1|Booliano|Versão 8,1 ou posterior.|
 |v9_0|Booliano|Versão 9.0 ou posterior.|
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2846c247d4a0d196d4c620f447b40d47cd486c81
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 909849775e5bf35c9a29902efbbc3975177956d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349334"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496009"
 ---
 # <a name="initiator-resource-type"></a>tipo de recurso do iniciador
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Descreve quem ou o que iniciou o evento de provisionamento.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome da pessoa ou serviço que iniciou o evento de provisionamento.|
+|displayName|Cadeia de caracteres|Nome da pessoa ou serviço que iniciou o evento de provisionamento.|
 |id|String|Identifica exclusivamente a pessoa ou o serviço que iniciou o evento de provisionamento.|
 |initiatortype|String| Tipo de iniciador. Os valores possíveis são: `user`, `app`, `system`, `unknownFutureValue`.|
 

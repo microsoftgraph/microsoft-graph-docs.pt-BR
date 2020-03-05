@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 1bd1821bbb3336386b54b62ebe7b4787c85d1ebf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9cf027969fb6ae988fd3e57da9d6c3002a4b4da9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006420"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497325"
 ---
 # <a name="governancerolesetting-resource-type"></a>tipo de recurso governanceRoleSetting
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Representa um conjunto de configurações em cada definição de função que pr
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | coleção [governanceRoleSetting](../resources/governancerolesetting.md)|Lista uma coleção de configurações de função em um recurso.|
 |[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Leia as propriedades e as relações de uma configuração de função.|
-|[Atualização](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualize um objeto de configuração de função. |
+|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualize um objeto de configuração de função. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade               |Tipo                                      |Descrição|
@@ -33,7 +35,7 @@ Representa um conjunto de configurações em cada definição de função que pr
 |resourceId           |String                                  |Obrigatório. A ID do recurso ao qual a configuração de função está associada.|
 |roleDefinitionId     |String                                  |Obrigatório. A ID da definição de função à qual a configuração de função está associada.|
 |isDefault            |Booliano                                 |Somente leitura. Indica se o roleSetting é um padrão roleSetting|
-|lastUpdatedDateTime  |DateTimeOffset                          |Somente leitura. A hora em que a configuração da função foi atualizada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastUpdatedDateTime  |DateTimeOffset                          |Somente leitura. A hora em que a configuração da função foi atualizada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |lastUpdatedBy        |String                                  |Somente leitura. O nome de exibição do administrador que atualizou pela última vez o roleSetting.|
 |adminEligibleSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função qualificada.|
 |adminMemberSettings  |coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
@@ -43,7 +45,7 @@ Representa um conjunto de configurações em cada definição de função que pr
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recurso|[Entidadegovernanceresource](../resources/governanceresource.md)|Somente leitura. O recurso associado para esta configuração de função.|
+|recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado para esta configuração de função.|
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Somente leitura. A definição de função aplicada a essa configuração de função. |
 
 ## <a name="json-representation"></a>Representação JSON

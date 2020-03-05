@@ -5,14 +5,16 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 8cf41b6a69c0154eda59068e39a4d5d6d4cd80d2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3218bf404665e9e4889fae77e5b1efbbd6f2dc9f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870278"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499187"
 ---
 # <a name="enum-values"></a>Valores de enumeração
+
+Namespace: Microsoft. Graph
 
 ### <a name="attachmenttype-values"></a>valores AttachmentType
 
@@ -92,7 +94,7 @@ ms.locfileid: "40870278"
 |:---|
 |nenhuma|
 |automóvel|
-|calendar|
+|calendário|
 |com|
 |plano|
 |firstAid|
@@ -404,7 +406,7 @@ ms.locfileid: "40870278"
 | forward
 | noResponseNecessary
 | Saiba
-| reply
+| resposta
 | replyToAll
 | exame
 
@@ -470,7 +472,7 @@ ms.locfileid: "40870278"
 | Automático
 | nopreview
 | verificação
-| descrição
+| description
 | de referência
 
 
@@ -730,7 +732,7 @@ Valores possíveis para funções de email.
 | Membro    | Valor | Descrição             |
 | :-------- | :---- | :---------------------- |
 | desconhecido   | ,0     | Função desconhecida.           |
-| sender    | 1      | Remetente do email.    |
+| remetente    | 1      | Remetente do email.    |
 | destinatário | 2      | Destinatário do email. |
 
 ### <a name="logontype-values"></a>valores de Logontype

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 668f5430e8f098986b7d5398f32c9c35543a7e11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 985e674c0e8e79f7b929097dd5c61dfa15917a93
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971848"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497388"
 ---
 # <a name="governanceroledefinition-resource-type"></a>tipo de recurso governanceRoleDefinition
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,13 +37,13 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` tem suporte no `roleDefinitions` conjunto 
 |id         |String     |A ID da definição de função. |
 |resourceId |String     |Obrigatório. A ID do recurso associada à definição de função. |
 |externalId   |Cadeia de caracteres     |A ID externa da definição de função.|
-|displayName|String     |O nome de exibição da definição de função.|
+|displayName|Cadeia de caracteres     |O nome de exibição da definição de função.|
 |templateId | String | |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recurso|[Entidadegovernanceresource](../resources/governanceresource.md)|Somente leitura. O recurso associado para a definição de função.|
+|recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado para a definição de função.|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|A configuração de função associada para a definição de função.|
 
 ## <a name="json-representation"></a>Representação JSON

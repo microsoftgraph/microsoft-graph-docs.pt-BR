@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 930937feb584e160afc429ab31f3974351eee2c3
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: de892cb10d7333b8807253f99148edbdcedf5d66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867142"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499404"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>tipo de recurso emailFileAssessmentRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ O arquivo de email pode ser um tipo de arquivo. eml.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Criar threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Crie uma nova solicitação de avaliação de arquivo de email postando um objeto **emailFileAssessmentRequest** . |
-| [Obter threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Leia as propriedades e os relacionamentos de um objeto **emailFileAssessmentRequest** . |
+| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Crie uma nova solicitação de avaliação de arquivo de email postando um objeto **emailFileAssessmentRequest** . |
+| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Leia as propriedades e os relacionamentos de um objeto **emailFileAssessmentRequest** . |
 
 ## <a name="properties"></a>Propriedades
 

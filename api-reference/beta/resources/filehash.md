@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 532389671cacb907c7e85862a621b936ec1691a0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a163a89e1e7ca7cb2a6bdf4c65945a601323d8fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973531"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498235"
 ---
 # <a name="filehash-resource-type"></a>tipo de recurso FileHash
+
+Namespace: Microsoft. Graph
 
 Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
 
@@ -20,7 +22,7 @@ Contém informações com monitoração de hash de arquivo (criptografia e confi
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|hashtype|[](filehashtypeenumtype.md) Enumeração filehashtype|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
+|hashtype|Enumeração [Filehashtype](filehashtypeenumtype.md)|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
 |hashValue|String|Valor do hash do arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON

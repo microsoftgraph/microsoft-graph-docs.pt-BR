@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a14a6821d06dc566aa355f77100ef75cc8394f6e
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 03e73fe63e7624b2ab9d549c3b9ccd1526301a9c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331342"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498606"
 ---
 # <a name="externalsponsors-complex-type"></a>tipo complexo externalSponsors
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Usada no estágio de aprovação de uma [política de atribuição de pacote do 
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| IsBackup | Booliano | Indica se o patrocinador é um Aprovador de fallback de backup. |
+| IsBackup | Boolean | Indica se o patrocinador é um Aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 

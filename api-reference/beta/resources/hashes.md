@@ -6,14 +6,16 @@ title: Hashes
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b620170cf05e8e04cb4368874ea20d29c5440298
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 985efa857fdf9aaa254884e04bfccf1d780d5b8c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333245"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496926"
 ---
 # <a name="hashes-resource-type"></a>tipo de recurso hashes
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

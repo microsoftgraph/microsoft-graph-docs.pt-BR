@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 958e6750c9b6a0749613d3a380b43a7d1ab282c2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a5ebc5884b0fd1ccf52fca961247e610b1c8cad5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870247"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498480"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>tipo de recurso featureRolloutPolicy
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +63,7 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 |displayName|Cadeia de caracteres|O nome de exibição desta política de distribuição de recursos.|
 |apresentam|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
-|isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
+|isAppliedToOrganization|Boolean|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
 
 ## <a name="relationships"></a>Relações

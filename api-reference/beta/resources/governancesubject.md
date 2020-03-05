@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 26f6c6904de97fc96eb1b29b9bcbc376bcf69c61
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d1fbf75b4e9643dc0e3b968ace7a013616904ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005972"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497168"
 ---
 # <a name="governancesubject-resource-type"></a>tipo de recurso governanceSubject
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ Representa usuários, grupos e entidades de serviço que estão sendo gerenciado
 |:----------|:----------|:----------|
 |id         |String     | A ID do assunto.|
 |type       |String     |O tipo do assunto. O valor pode ser ``User``, ``Group``e ``ServicePrincipal``.|
-|displayName|String     |O nome de exibição do assunto.|
-|email      |Cadeia de caracteres     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
+|displayName|Cadeia de caracteres     |O nome de exibição do assunto.|
+|email      |String     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
 |principalName|Cadeia de caracteres   |O nome da entidade de segurança do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
 
 ## <a name="relationships"></a>Relações

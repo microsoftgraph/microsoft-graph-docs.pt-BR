@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7ca1b7b0a2ae4021dc2def637e0326044ab8749e
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 5b4170a3baf186d907340bc1c490c508644ec30a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331344"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496933"
 ---
 # <a name="groupmembers-complex-type"></a>tipo complexo groupMembers
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ Usado nas configurações de solicitação, aprovação e revisão de atribuiç�
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
 | id |Cadeia de caracteres | A ID do grupo no Azure AD. |
-| descrição |String | O nome do grupo no Azure AD. Somente leitura. |
-| IsBackup | Booliano | Para o **groupMembers** em um estágio de aprovação, essa propriedade indica que os membros do grupo são aprovadores de fallback de backup. |
+| description |String | O nome do grupo no Azure AD. Somente leitura. |
+| IsBackup | Boolean | Para o **groupMembers** em um estágio de aprovação, essa propriedade indica que os membros do grupo são aprovadores de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 

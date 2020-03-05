@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c0af37fb5915fa3d1ec69feecc9bcbf472b4a85a
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: e6d0304ed73e9452126064ab72e66e6ce3fff0bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844215"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42495638"
 ---
 # <a name="sharedinsight-resource-type"></a>tipo de recurso sharedInsight
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4f615655110ffdc6b76469d3d29cd4d13663d511
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 454dd6dd3b095c01e476f52ae38d3a9caa552192
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938825"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496079"
 ---
 # <a name="informationprotectioncontentlabel-resource-type"></a>tipo de recurso informationProtectionContentLabel
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d377d530bf3b9dbdef37178ff6290ba4b63e6ad4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8f2b733363ecbd79a885a0b76c170f076664590
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972023"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498214"
 ---
 # <a name="filehashtype-enum"></a>Enumeração filehashtype
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +25,11 @@ Enumeração para tipos de hash de arquivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo desconhecido.|
-|SHA1|1|Tipo de hash SHA1.|
-|SHA256|duas| Tipo de hash SHA256.|
-|MD5|3D| Tipo de hash MD5.|
-|authenticodeHash256|quatro| Tipo de hash AuthenticodeHash256.|
-|lsHash|0,5| Tipo de hash LsHash.|
-|ctph|6| Tipo de hash CTPH.|
-|peSha1|178| Tipo de hash PESHA1.|
+|SHA1|1 |Tipo de hash SHA1.|
+|SHA256|2 | Tipo de hash SHA256.|
+|MD5|3 | Tipo de hash MD5.|
+|authenticodeHash256|4 | Tipo de hash AuthenticodeHash256.|
+|lsHash|5 | Tipo de hash LsHash.|
+|ctph|6 | Tipo de hash CTPH.|
+|peSha1|7 | Tipo de hash PESHA1.|
 |peSha256|8 | Tipo de hash PESHA256.|

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bfc3bb7895a3ec66a32456b48901fc456d3c3b2e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32be4465ffcd710bbfdaf8f3c60b3813a0b7d3be
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971863"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497318"
 ---
 # <a name="governancerulesetting-resource-type"></a>tipo de recurso governanceRuleSetting
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

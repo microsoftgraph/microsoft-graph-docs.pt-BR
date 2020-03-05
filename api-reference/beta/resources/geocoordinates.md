@@ -6,14 +6,16 @@ title: GeoCoordinates
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 86de97358591df8dc446b91d0be7a8192c7346f8
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 07b0a39155b8c9c4dc02d6cff1e0a93c1a9cd418
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333250"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497633"
 ---
 # <a name="geocoordinates-resource-type"></a>tipo de recurso GeoCoordinates
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

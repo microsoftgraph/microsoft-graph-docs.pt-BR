@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a0429de2cacc816eaf1a603a29a08897650da6e2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28af0f6ca55881bd0f0848cda27cfe56bd1d5eb5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971918"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497612"
 ---
 # <a name="governanceresource-resource-type"></a>tipo de recurso Entidadegovernanceresource
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Representa os recursos que podem ser gerenciados pelo gerenciamento de identidad
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | coleção [entidadegovernanceresource](../resources/governanceresource.md)|Lista uma coleção de recursos aos quais o solicitante tem acesso.|
-|[Get](../api/governanceresource-get.md) | [Entidadegovernanceresource](../resources/governanceresource.md) |Leia as propriedades e as relações de uma entidade de recurso especificada por ID.|
+|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Leia as propriedades e as relações de uma entidade de recurso especificada por ID.|
 |[Registrar](../api/governanceresource-register.md) | |Registre uma assinatura do Azure ou um grupo de gerenciamento não gerenciados no serviço PIM. |
 
 Não `POST`, `PUT`, `PATCH`, `DELETE` há suporte no `roleDefinitions` conjunto de entidades por enquanto.
@@ -35,7 +37,7 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` há suporte no `roleDefinitions` conjunto 
 |id                 |String     |A ID do recurso. Está no formato GUID.|
 |externalId           |String   |A ID externa do recurso, que representa sua ID original no sistema externo. Por exemplo, a ID externa de um recurso de assinatura pode ser "/subscriptions/c14ae696-5e0c-4E5D-88cc-bef6637737ac". |
 |type               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
-|displayName        |String     |O nome de exibição do recurso.|
+|displayName        |Cadeia de caracteres     |O nome de exibição do recurso.|
 |status             |String     |O status de um determinado recurso. Por exemplo, ele pode representar se o recurso está bloqueado ou não (valores: `Active` / `Locked`). Observação: essa propriedade pode ser estendida no futuro para dar suporte a mais cenários.|
 |registeredDateTime|DateTimeOffset      |Representa a data e hora em que o recurso é registrado no PIM.|
 |registeredRoot|String      |ExternalId do escopo raiz do recurso que é registrado no PIM. O escopo raiz pode ser os recursos pai, avô ou ancestral superior.|
@@ -50,7 +52,7 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` há suporte no `roleDefinitions` conjunto 
 |roleDefinitions |coleção [governanceRoleDefinition](../resources/governanceroledefinition.md)|O conjunto de defintions de função para o recurso.|
 |roleAssignmentRequests |coleção [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|A coleção de solicitações de atribuição de função para o recurso.|
 |roleSettings |coleção [governanceRoleSetting](../resources/governancerolesetting.md)|O conjunto de configurações de função para o recurso.|
-|primário          |[Entidadegovernanceresource](../resources/governanceresource.md)           |Somente leitura. O recurso pai. para `pimforazurerbac` o cenário, ele pode representar a assinatura à qual o recurso pertence.|
+|primário          |[governanceResource](../resources/governanceresource.md)           |Somente leitura. O recurso pai. para `pimforazurerbac` o cenário, ele pode representar a assinatura à qual o recurso pertence.|
 
 ## <a name="json-representation"></a>Representação JSON
 

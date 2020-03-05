@@ -5,14 +5,16 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: a3ce59a23b5aec6dd43b370c3b67e9439b11937e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3922fc08bf30dde7daa7e01d1f810cb3e45d5d81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938959"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498536"
 ---
 # <a name="fallbackpolicyproperties-resource-type"></a>tipo de recurso fallbackPolicyProperties
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
