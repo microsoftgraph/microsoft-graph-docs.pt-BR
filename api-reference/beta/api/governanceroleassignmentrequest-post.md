@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: a49bd528ffe97e33402ab8aef51f86a07b33e5fa
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8d9946425e90968d65f2592901ae6d5ac7f3c018
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420312"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421036"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões                               |
 |:---------------------------------------|:------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | PrivilegedAccess. ReadWrite. AzureResources |
+| Delegado (conta corporativa ou de estudante)     | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                            |
 | Aplicativo                            | Sem suporte. |
 
@@ -66,7 +68,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [gover
 | SubjectID        | String                                                   | A ID do assunto. Obrigatório. |
 | assignmentstate  | String                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active`. Obrigatório. |
 | type             | String                                                   | O tipo de solicitação. O valor pode ser `AdminAdd`, `UserAdd`, `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew`,,,, `AdminRenew`e. `AdminExtend` Obrigatório. |
-| motivos           | String                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise. |
+| motivo           | String                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise. |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O agendamento da solicitação de atribuição de função. Para o tipo de `UserAdd`solicitação `AdminAdd`de `AdminUpdate`,, `AdminExtend`, e, é necessário. |
 
 ## <a name="response"></a>Resposta
@@ -104,13 +106,13 @@ Neste exemplo, um administrador atribui o usuário nawu@fimdev.net à função l
 | SubjectID        | String                                                   | Sim                      | \<SubjectID\> |
 | assignmentstate  | String                                                   | Sim                      | Qualificado/ativo |
 | type             | String                                                   | Sim                      | AdminAdd |
-| motivos           | String                                                   | depende das configurações de função |   |
+| motivo           | String                                                   | depende das configurações de função |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "governanceroleassignmentrequest_post"
@@ -134,15 +136,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -212,10 +214,10 @@ Neste exemplo, o usuário nawu@fimdev.net ativa a função de leitor de cobranç
 | SubjectID        | String                                                   | Sim                      | \<SubjectID\> |
 | assignmentstate  | String                                                   | Sim                      | Ativo |
 | type             | String                                                   | Sim                      | UserAdd |
-| motivos           | String                                                   | depende das configurações de função |   |
+| motivo           | String                                                   | depende das configurações de função |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
-#### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitar
 
 <!-- {
   "blockType": "request",
@@ -315,7 +317,7 @@ Neste exemplo, o usuário nawu@fimdev.net desativa a função de leitor de cobra
 | SubjectID        | String                                                   | Sim      | \<SubjectID\> |
 | assignmentstate  | String                                                   | Sim      | Ativo |
 | type             | String                                                   | Sim      | Userremove |
-| motivos           | String                                                   | Não       |   |
+| motivo           | String                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
@@ -385,7 +387,7 @@ Neste exemplo, um administrador remove o usuário nawu@fimdev.net da função le
 | SubjectID        | String                                                   | Sim      | \<SubjectID\> |
 | assignmentstate  | String                                                   | Sim      | Qualificado/ativo |
 | type             | String                                                   | Sim      | AdminRemove |
-| motivos           | String                                                   | Não       |   |
+| motivo           | String                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
@@ -453,7 +455,7 @@ Neste exemplo, os administradores atualizam a atribuição de função para o us
 | SubjectID        | String                                                   | Sim                     | \<SubjectID\> |
 | assignmentstate  | String                                                   | Sim                     | Qualificado/ativo |
 | type             | String                                                   | Sim                     | AdminUpdate |
-| motivos           | String                                                   | depende do roleSettings |   |
+| motivo           | String                                                   | depende do roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
@@ -544,7 +546,7 @@ Este exemplo estende a atribuição de função de expiração para o usuário A
 | SubjectID        | String                                                   | Sim                     | \<SubjectID\> |
 | assignmentstate  | String                                                   | Sim                     | Qualificado/ativo |
 | type             | String                                                   | Sim                     | AdminExtend |
-| motivos           | String                                                   | depende do roleSettings |   |
+| motivo           | String                                                   | depende do roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação

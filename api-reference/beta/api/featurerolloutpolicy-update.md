@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dbdbe19a401f10acead10884f02de5d380465e0a
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: e93dbcbdc7d4a4d40b929a801dae4b673100a274
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062091"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421708"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. ReadWrite. FeatureRollout |
+| Delegado (conta corporativa ou de estudante)     | Policy.ReadWrite.FeatureRollout |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -49,8 +51,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|String|Uma descrição para esta política.|
-|displayName|String|O nome de exibição para esta política.|
-|isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
+|displayName|Cadeia de caracteres|O nome de exibição para esta política.|
+|isAppliedToOrganization|Boolean|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
