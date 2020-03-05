@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a32ee6182f8937123662e3a8c3e4d18145607151
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 37c0ffd9b5359f4f876ba3278e4f95ea7272e670
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372325"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524988"
 ---
-# <a name="loggedonuser-resource-type"></a><span data-ttu-id="300d3-103">tipo de recurso loggedOnUser</span><span class="sxs-lookup"><span data-stu-id="300d3-103">loggedOnUser resource type</span></span>
+# <a name="loggedonuser-resource-type"></a><span data-ttu-id="c5b96-103">tipo de recurso loggedOnUser</span><span class="sxs-lookup"><span data-stu-id="c5b96-103">loggedOnUser resource type</span></span>
 
-> <span data-ttu-id="300d3-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="300d3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="c5b96-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="c5b96-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="300d3-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="300d3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c5b96-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c5b96-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="300d3-106">Usuário conectado</span><span class="sxs-lookup"><span data-stu-id="300d3-106">Logged On User</span></span>
+> <span data-ttu-id="c5b96-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c5b96-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="300d3-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="300d3-107">Properties</span></span>
-|<span data-ttu-id="300d3-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="300d3-108">Property</span></span>|<span data-ttu-id="300d3-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="300d3-109">Type</span></span>|<span data-ttu-id="300d3-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="300d3-110">Description</span></span>|
+<span data-ttu-id="c5b96-107">Usuário conectado</span><span class="sxs-lookup"><span data-stu-id="c5b96-107">Logged On User</span></span>
+
+## <a name="properties"></a><span data-ttu-id="c5b96-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c5b96-108">Properties</span></span>
+|<span data-ttu-id="c5b96-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c5b96-109">Property</span></span>|<span data-ttu-id="c5b96-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="c5b96-110">Type</span></span>|<span data-ttu-id="c5b96-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="c5b96-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="300d3-111">userId</span><span class="sxs-lookup"><span data-stu-id="300d3-111">userId</span></span>|<span data-ttu-id="300d3-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="300d3-112">String</span></span>|<span data-ttu-id="300d3-113">ID de usuário</span><span class="sxs-lookup"><span data-stu-id="300d3-113">User id</span></span>|
-|<span data-ttu-id="300d3-114">lastLogOnDateTime</span><span class="sxs-lookup"><span data-stu-id="300d3-114">lastLogOnDateTime</span></span>|<span data-ttu-id="300d3-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="300d3-115">DateTimeOffset</span></span>|<span data-ttu-id="300d3-116">Data e hora em que o usuário faz logon</span><span class="sxs-lookup"><span data-stu-id="300d3-116">Date time when user logs on</span></span>|
+|<span data-ttu-id="c5b96-112">userId</span><span class="sxs-lookup"><span data-stu-id="c5b96-112">userId</span></span>|<span data-ttu-id="c5b96-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c5b96-113">String</span></span>|<span data-ttu-id="c5b96-114">ID de usuário</span><span class="sxs-lookup"><span data-stu-id="c5b96-114">User id</span></span>|
+|<span data-ttu-id="c5b96-115">lastLogOnDateTime</span><span class="sxs-lookup"><span data-stu-id="c5b96-115">lastLogOnDateTime</span></span>|<span data-ttu-id="c5b96-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c5b96-116">DateTimeOffset</span></span>|<span data-ttu-id="c5b96-117">Data e hora em que o usuário faz logon</span><span class="sxs-lookup"><span data-stu-id="c5b96-117">Date time when user logs on</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="300d3-117">Relações</span><span class="sxs-lookup"><span data-stu-id="300d3-117">Relationships</span></span>
-<span data-ttu-id="300d3-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="300d3-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c5b96-118">Relações</span><span class="sxs-lookup"><span data-stu-id="c5b96-118">Relationships</span></span>
+<span data-ttu-id="c5b96-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c5b96-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="300d3-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="300d3-119">JSON Representation</span></span>
-<span data-ttu-id="300d3-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="300d3-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c5b96-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c5b96-120">JSON Representation</span></span>
+<span data-ttu-id="c5b96-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c5b96-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.loggedOnUser"

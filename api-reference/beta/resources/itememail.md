@@ -5,42 +5,44 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: eed73f61b281463848c8520ebdcdbc75ac26d29d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a18d72fb44f373b6cee1047cc2eed5f0c18a1d0e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939331"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523076"
 ---
-# <a name="itememail-resource-type"></a><span data-ttu-id="56bff-103">tipo de recurso de email</span><span class="sxs-lookup"><span data-stu-id="56bff-103">itemEmail resource type</span></span>
+# <a name="itememail-resource-type"></a><span data-ttu-id="e3cf0-103">tipo de recurso de email</span><span class="sxs-lookup"><span data-stu-id="e3cf0-103">itemEmail resource type</span></span>
+
+<span data-ttu-id="e3cf0-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e3cf0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="56bff-104">Representa informações detalhadas sobre endereços de email associados ao usuário.</span><span class="sxs-lookup"><span data-stu-id="56bff-104">Represents detailed information about email addresses associated with the user.</span></span>
+<span data-ttu-id="e3cf0-105">Representa informações detalhadas sobre endereços de email associados ao usuário.</span><span class="sxs-lookup"><span data-stu-id="e3cf0-105">Represents detailed information about email addresses associated with the user.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="56bff-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="56bff-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="e3cf0-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="e3cf0-106">Methods</span></span>
 
-| <span data-ttu-id="56bff-106">Método</span><span class="sxs-lookup"><span data-stu-id="56bff-106">Method</span></span>                                   | <span data-ttu-id="56bff-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="56bff-107">Return Type</span></span>               | <span data-ttu-id="56bff-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="56bff-108">Description</span></span>                                            |
+| <span data-ttu-id="e3cf0-107">Método</span><span class="sxs-lookup"><span data-stu-id="e3cf0-107">Method</span></span>                                   | <span data-ttu-id="e3cf0-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="e3cf0-108">Return Type</span></span>               | <span data-ttu-id="e3cf0-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e3cf0-109">Description</span></span>                                            |
 |:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [<span data-ttu-id="56bff-109">Get</span><span class="sxs-lookup"><span data-stu-id="56bff-109">Get</span></span>](../api/itememail-get.md) | [<span data-ttu-id="56bff-110">Email</span><span class="sxs-lookup"><span data-stu-id="56bff-110">itemEmail</span></span>](itememail.md) | <span data-ttu-id="56bff-111">Ler propriedades e relações de um objeto item de **email** .</span><span class="sxs-lookup"><span data-stu-id="56bff-111">Read properties and relationships of an **itemEmail** object.</span></span> |
-| [<span data-ttu-id="56bff-112">Update</span><span class="sxs-lookup"><span data-stu-id="56bff-112">Update</span></span>](../api/itememail-update.md)     | [<span data-ttu-id="56bff-113">Email</span><span class="sxs-lookup"><span data-stu-id="56bff-113">itemEmail</span></span>](itememail.md) | <span data-ttu-id="56bff-114">Atualize um objeto de **email** .</span><span class="sxs-lookup"><span data-stu-id="56bff-114">Update an **itemEmail** object.</span></span>                               |
-| [<span data-ttu-id="56bff-115">Delete</span><span class="sxs-lookup"><span data-stu-id="56bff-115">Delete</span></span>](../api/itememail-delete.md)     | <span data-ttu-id="56bff-116">None</span><span class="sxs-lookup"><span data-stu-id="56bff-116">None</span></span>                      | <span data-ttu-id="56bff-117">Excluir um objeto de **email** .</span><span class="sxs-lookup"><span data-stu-id="56bff-117">Delete an **itemEmail** object.</span></span>                               |
+| [<span data-ttu-id="e3cf0-110">Get</span><span class="sxs-lookup"><span data-stu-id="e3cf0-110">Get</span></span>](../api/itememail-get.md) | [<span data-ttu-id="e3cf0-111">Email</span><span class="sxs-lookup"><span data-stu-id="e3cf0-111">itemEmail</span></span>](itememail.md) | <span data-ttu-id="e3cf0-112">Ler propriedades e relações de um objeto item de **email** .</span><span class="sxs-lookup"><span data-stu-id="e3cf0-112">Read properties and relationships of an **itemEmail** object.</span></span> |
+| [<span data-ttu-id="e3cf0-113">Update</span><span class="sxs-lookup"><span data-stu-id="e3cf0-113">Update</span></span>](../api/itememail-update.md)     | [<span data-ttu-id="e3cf0-114">Email</span><span class="sxs-lookup"><span data-stu-id="e3cf0-114">itemEmail</span></span>](itememail.md) | <span data-ttu-id="e3cf0-115">Atualize um objeto de **email** .</span><span class="sxs-lookup"><span data-stu-id="e3cf0-115">Update an **itemEmail** object.</span></span>                               |
+| [<span data-ttu-id="e3cf0-116">Delete</span><span class="sxs-lookup"><span data-stu-id="e3cf0-116">Delete</span></span>](../api/itememail-delete.md)     | <span data-ttu-id="e3cf0-117">None</span><span class="sxs-lookup"><span data-stu-id="e3cf0-117">None</span></span>                      | <span data-ttu-id="e3cf0-118">Excluir um objeto de **email** .</span><span class="sxs-lookup"><span data-stu-id="e3cf0-118">Delete an **itemEmail** object.</span></span>                               |
 
-## <a name="properties"></a><span data-ttu-id="56bff-118">Propriedades</span><span class="sxs-lookup"><span data-stu-id="56bff-118">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e3cf0-119">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e3cf0-119">Properties</span></span>
 
-| <span data-ttu-id="56bff-119">Propriedade</span><span class="sxs-lookup"><span data-stu-id="56bff-119">Property</span></span>     | <span data-ttu-id="56bff-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="56bff-120">Type</span></span>        | <span data-ttu-id="56bff-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="56bff-121">Description</span></span>                                                               |
+| <span data-ttu-id="e3cf0-120">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e3cf0-120">Property</span></span>     | <span data-ttu-id="e3cf0-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="e3cf0-121">Type</span></span>        | <span data-ttu-id="e3cf0-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="e3cf0-122">Description</span></span>                                                               |
 |:-------------|:------------|:--------------------------------------------------------------------------|
-|<span data-ttu-id="56bff-122">address</span><span class="sxs-lookup"><span data-stu-id="56bff-122">address</span></span>       |<span data-ttu-id="56bff-123">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="56bff-123">String</span></span>       | <span data-ttu-id="56bff-124">O próprio endereço de email.</span><span class="sxs-lookup"><span data-stu-id="56bff-124">The email address itself.</span></span>                                                 |
-|<span data-ttu-id="56bff-125">displayName</span><span class="sxs-lookup"><span data-stu-id="56bff-125">displayName</span></span>   |<span data-ttu-id="56bff-126">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="56bff-126">String</span></span>       | <span data-ttu-id="56bff-127">O nome ou rótulo que um usuário associou a um endereço de email específico.</span><span class="sxs-lookup"><span data-stu-id="56bff-127">The name or label a user has associated with a particular email address.</span></span>  |
-|<span data-ttu-id="56bff-128">type</span><span class="sxs-lookup"><span data-stu-id="56bff-128">type</span></span>          |<span data-ttu-id="56bff-129">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="56bff-129">string</span></span>       | <span data-ttu-id="56bff-130">Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.</span><span class="sxs-lookup"><span data-stu-id="56bff-130">Possible values are: `unknown`, `work`, `personal`, `main`, `other`.</span></span>      |
+|<span data-ttu-id="e3cf0-123">address</span><span class="sxs-lookup"><span data-stu-id="e3cf0-123">address</span></span>       |<span data-ttu-id="e3cf0-124">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e3cf0-124">String</span></span>       | <span data-ttu-id="e3cf0-125">O próprio endereço de email.</span><span class="sxs-lookup"><span data-stu-id="e3cf0-125">The email address itself.</span></span>                                                 |
+|<span data-ttu-id="e3cf0-126">displayName</span><span class="sxs-lookup"><span data-stu-id="e3cf0-126">displayName</span></span>   |<span data-ttu-id="e3cf0-127">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e3cf0-127">String</span></span>       | <span data-ttu-id="e3cf0-128">O nome ou rótulo que um usuário associou a um endereço de email específico.</span><span class="sxs-lookup"><span data-stu-id="e3cf0-128">The name or label a user has associated with a particular email address.</span></span>  |
+|<span data-ttu-id="e3cf0-129">type</span><span class="sxs-lookup"><span data-stu-id="e3cf0-129">type</span></span>          |<span data-ttu-id="e3cf0-130">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e3cf0-130">string</span></span>       | <span data-ttu-id="e3cf0-131">Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.</span><span class="sxs-lookup"><span data-stu-id="e3cf0-131">Possible values are: `unknown`, `work`, `personal`, `main`, `other`.</span></span>      |
 
-## <a name="relationships"></a><span data-ttu-id="56bff-131">Relações</span><span class="sxs-lookup"><span data-stu-id="56bff-131">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="e3cf0-132">Relações</span><span class="sxs-lookup"><span data-stu-id="e3cf0-132">Relationships</span></span>
 
-<span data-ttu-id="56bff-132">Nenhum</span><span class="sxs-lookup"><span data-stu-id="56bff-132">None</span></span>
+<span data-ttu-id="e3cf0-133">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e3cf0-133">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="56bff-133">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="56bff-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e3cf0-134">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e3cf0-134">JSON representation</span></span>
 
-<span data-ttu-id="56bff-134">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="56bff-134">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e3cf0-135">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e3cf0-135">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

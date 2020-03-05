@@ -6,22 +6,24 @@ title: LookupColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8c92bce6b6d7ba401f6b9274f2ba0eee4439929e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 813b31b61e3f510107cdd27ed64ec44fba9d0550
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009906"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522887"
 ---
-# <a name="lookupcolumn-resource-type"></a><span data-ttu-id="1a068-103">Tipo de recurso LookupColumn</span><span class="sxs-lookup"><span data-stu-id="1a068-103">LookupColumn resource type</span></span>
+# <a name="lookupcolumn-resource-type"></a><span data-ttu-id="691c5-103">Tipo de recurso LookupColumn</span><span class="sxs-lookup"><span data-stu-id="691c5-103">LookupColumn resource type</span></span>
+
+<span data-ttu-id="691c5-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="691c5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a068-104">A **lookupColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são buscados em outra origem do site.</span><span class="sxs-lookup"><span data-stu-id="1a068-104">The **lookupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are looked up from another source in the site.</span></span>
+<span data-ttu-id="691c5-105">A **lookupColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são buscados em outra origem do site.</span><span class="sxs-lookup"><span data-stu-id="691c5-105">The **lookupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are looked up from another source in the site.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1a068-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1a068-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="691c5-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="691c5-106">JSON representation</span></span>
 
-<span data-ttu-id="1a068-106">Aqui está uma representação JSON de um recurso **lookupColumn**.</span><span class="sxs-lookup"><span data-stu-id="1a068-106">Here is a JSON representation of a **lookupColumn** resource.</span></span>
+<span data-ttu-id="691c5-107">Aqui está uma representação JSON de um recurso **lookupColumn**.</span><span class="sxs-lookup"><span data-stu-id="691c5-107">Here is a JSON representation of a **lookupColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.lookupColumn" } -->
 
 ```json
@@ -34,15 +36,15 @@ ms.locfileid: "36009906"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="1a068-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1a068-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="691c5-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="691c5-108">Properties</span></span>
 
-| <span data-ttu-id="1a068-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="1a068-108">Property name</span></span>             | <span data-ttu-id="1a068-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="1a068-109">Type</span></span>    | <span data-ttu-id="1a068-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a068-110">Description</span></span>
+| <span data-ttu-id="691c5-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="691c5-109">Property name</span></span>             | <span data-ttu-id="691c5-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="691c5-110">Type</span></span>    | <span data-ttu-id="691c5-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="691c5-111">Description</span></span>
 |:--------------------------|:--------|:---------------------------------------
-| <span data-ttu-id="1a068-111">**allowMultipleValues**</span><span class="sxs-lookup"><span data-stu-id="1a068-111">**allowMultipleValues**</span></span>   | <span data-ttu-id="1a068-112">booliano</span><span class="sxs-lookup"><span data-stu-id="1a068-112">boolean</span></span> | <span data-ttu-id="1a068-113">Indica se vários valores podem ser selecionados da origem.</span><span class="sxs-lookup"><span data-stu-id="1a068-113">Indicates whether multiple values can be selected from the source.</span></span>
-| <span data-ttu-id="1a068-114">**allowUnlimitedLength**</span><span class="sxs-lookup"><span data-stu-id="1a068-114">**allowUnlimitedLength**</span></span>  | <span data-ttu-id="1a068-115">booliano</span><span class="sxs-lookup"><span data-stu-id="1a068-115">boolean</span></span> | <span data-ttu-id="1a068-116">Indica se os valores na coluna podem exceder o limite padrão de 255 caracteres.</span><span class="sxs-lookup"><span data-stu-id="1a068-116">Indicates whether values in the column should be able to exceed the standard limit of 255 characters.</span></span>
-| <span data-ttu-id="1a068-117">**columnName**</span><span class="sxs-lookup"><span data-stu-id="1a068-117">**columnName**</span></span>            | <span data-ttu-id="1a068-118">string</span><span class="sxs-lookup"><span data-stu-id="1a068-118">string</span></span>  | <span data-ttu-id="1a068-119">O nome da coluna de origem de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="1a068-119">The name of the lookup source column.</span></span>
-| <span data-ttu-id="1a068-120">**listId**</span><span class="sxs-lookup"><span data-stu-id="1a068-120">**listId**</span></span>                | <span data-ttu-id="1a068-121">string</span><span class="sxs-lookup"><span data-stu-id="1a068-121">string</span></span>  | <span data-ttu-id="1a068-122">O identificador exclusivo da lista de origem de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="1a068-122">The unique identifier of the lookup source list.</span></span>
-| <span data-ttu-id="1a068-123">**primaryLookupColumnId**</span><span class="sxs-lookup"><span data-stu-id="1a068-123">**primaryLookupColumnId**</span></span> | <span data-ttu-id="1a068-124">string</span><span class="sxs-lookup"><span data-stu-id="1a068-124">string</span></span>  | <span data-ttu-id="1a068-125">Se especificado, esta coluna é uma *pesquisa secundária*, obtendo um campo adicional da lista pesquisada pela *pesquisa primária*.</span><span class="sxs-lookup"><span data-stu-id="1a068-125">If specified, this column is a *secondary lookup*, pulling an additional field from the list item looked up by the *primary lookup*.</span></span> <span data-ttu-id="1a068-126">Use o item da lista procurado pela pesquisa *primária* como a fonte para a coluna nomeada aqui.</span><span class="sxs-lookup"><span data-stu-id="1a068-126">Use the list item looked up by the *primary* as the source for the column named here.</span></span>
+| <span data-ttu-id="691c5-112">**allowMultipleValues**</span><span class="sxs-lookup"><span data-stu-id="691c5-112">**allowMultipleValues**</span></span>   | <span data-ttu-id="691c5-113">booliano</span><span class="sxs-lookup"><span data-stu-id="691c5-113">boolean</span></span> | <span data-ttu-id="691c5-114">Indica se vários valores podem ser selecionados da origem.</span><span class="sxs-lookup"><span data-stu-id="691c5-114">Indicates whether multiple values can be selected from the source.</span></span>
+| <span data-ttu-id="691c5-115">**allowUnlimitedLength**</span><span class="sxs-lookup"><span data-stu-id="691c5-115">**allowUnlimitedLength**</span></span>  | <span data-ttu-id="691c5-116">booliano</span><span class="sxs-lookup"><span data-stu-id="691c5-116">boolean</span></span> | <span data-ttu-id="691c5-117">Indica se os valores na coluna podem exceder o limite padrão de 255 caracteres.</span><span class="sxs-lookup"><span data-stu-id="691c5-117">Indicates whether values in the column should be able to exceed the standard limit of 255 characters.</span></span>
+| <span data-ttu-id="691c5-118">**columnName**</span><span class="sxs-lookup"><span data-stu-id="691c5-118">**columnName**</span></span>            | <span data-ttu-id="691c5-119">string</span><span class="sxs-lookup"><span data-stu-id="691c5-119">string</span></span>  | <span data-ttu-id="691c5-120">O nome da coluna de origem de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="691c5-120">The name of the lookup source column.</span></span>
+| <span data-ttu-id="691c5-121">**listId**</span><span class="sxs-lookup"><span data-stu-id="691c5-121">**listId**</span></span>                | <span data-ttu-id="691c5-122">string</span><span class="sxs-lookup"><span data-stu-id="691c5-122">string</span></span>  | <span data-ttu-id="691c5-123">O identificador exclusivo da lista de origem de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="691c5-123">The unique identifier of the lookup source list.</span></span>
+| <span data-ttu-id="691c5-124">**primaryLookupColumnId**</span><span class="sxs-lookup"><span data-stu-id="691c5-124">**primaryLookupColumnId**</span></span> | <span data-ttu-id="691c5-125">string</span><span class="sxs-lookup"><span data-stu-id="691c5-125">string</span></span>  | <span data-ttu-id="691c5-126">Se especificado, esta coluna é uma *pesquisa secundária*, obtendo um campo adicional da lista pesquisada pela *pesquisa primária*.</span><span class="sxs-lookup"><span data-stu-id="691c5-126">If specified, this column is a *secondary lookup*, pulling an additional field from the list item looked up by the *primary lookup*.</span></span> <span data-ttu-id="691c5-127">Use o item da lista procurado pela pesquisa *primária* como a fonte para a coluna nomeada aqui.</span><span class="sxs-lookup"><span data-stu-id="691c5-127">Use the list item looked up by the *primary* as the source for the column named here.</span></span>
 
 <!--
 {

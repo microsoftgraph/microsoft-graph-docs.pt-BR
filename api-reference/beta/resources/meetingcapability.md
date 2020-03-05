@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2b891a9e6d0eb90a527c79528e9fd595c2f8ca5b
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 0b425f035b77e7efed8de8fa39073822382e7593
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522740"
 ---
-# <a name="meetingcapability-resource-type"></a><span data-ttu-id="fb2fa-103">tipo de recurso meetingCapability</span><span class="sxs-lookup"><span data-stu-id="fb2fa-103">meetingCapability resource type</span></span>
+# <a name="meetingcapability-resource-type"></a><span data-ttu-id="2251f-103">tipo de recurso meetingCapability</span><span class="sxs-lookup"><span data-stu-id="2251f-103">meetingCapability resource type</span></span>
+
+<span data-ttu-id="2251f-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2251f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fb2fa-104">Contém os recursos de uma reunião</span><span class="sxs-lookup"><span data-stu-id="fb2fa-104">Contains the capabilities of a meeting</span></span>
+<span data-ttu-id="2251f-105">Contém os recursos de uma reunião</span><span class="sxs-lookup"><span data-stu-id="2251f-105">Contains the capabilities of a meeting</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fb2fa-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fb2fa-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2251f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2251f-106">Properties</span></span>
 
-| <span data-ttu-id="fb2fa-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fb2fa-106">Property</span></span>                          | <span data-ttu-id="fb2fa-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="fb2fa-107">Type</span></span>    | <span data-ttu-id="fb2fa-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="fb2fa-108">Description</span></span>                                                        |
+| <span data-ttu-id="2251f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2251f-107">Property</span></span>                          | <span data-ttu-id="2251f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="2251f-108">Type</span></span>    | <span data-ttu-id="2251f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2251f-109">Description</span></span>                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| <span data-ttu-id="fb2fa-109">allowAnonymousUsersToDialOut</span><span class="sxs-lookup"><span data-stu-id="fb2fa-109">allowAnonymousUsersToDialOut</span></span>      | <span data-ttu-id="fb2fa-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="fb2fa-110">Boolean</span></span> | <span data-ttu-id="fb2fa-111">Indica se os usuários anônimos de discagem são permitidos em uma reunião.</span><span class="sxs-lookup"><span data-stu-id="fb2fa-111">Indicates whether anonymous users dialout is allowed in a meeting.</span></span> |
-| <span data-ttu-id="fb2fa-112">allowAnonymousUsersToStartMeeting</span><span class="sxs-lookup"><span data-stu-id="fb2fa-112">allowAnonymousUsersToStartMeeting</span></span> | <span data-ttu-id="fb2fa-113">Booliano</span><span class="sxs-lookup"><span data-stu-id="fb2fa-113">Boolean</span></span> | <span data-ttu-id="fb2fa-114">Indica se os usuários anônimos podem iniciar uma reunião.</span><span class="sxs-lookup"><span data-stu-id="fb2fa-114">Indicates whether anonymous users are allowed to start a meeting.</span></span>  |
-| <span data-ttu-id="fb2fa-115">autoAdmittedUsers</span><span class="sxs-lookup"><span data-stu-id="fb2fa-115">autoAdmittedUsers</span></span>                 | <span data-ttu-id="fb2fa-116">String</span><span class="sxs-lookup"><span data-stu-id="fb2fa-116">String</span></span>  | <span data-ttu-id="fb2fa-117">Os valores possíveis são: `everyoneInCompany` e `everyone`.</span><span class="sxs-lookup"><span data-stu-id="fb2fa-117">Possible values are: `everyoneInCompany`, `everyone`.</span></span>              |
+| <span data-ttu-id="2251f-110">allowAnonymousUsersToDialOut</span><span class="sxs-lookup"><span data-stu-id="2251f-110">allowAnonymousUsersToDialOut</span></span>      | <span data-ttu-id="2251f-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="2251f-111">Boolean</span></span> | <span data-ttu-id="2251f-112">Indica se os usuários anônimos de discagem são permitidos em uma reunião.</span><span class="sxs-lookup"><span data-stu-id="2251f-112">Indicates whether anonymous users dialout is allowed in a meeting.</span></span> |
+| <span data-ttu-id="2251f-113">allowAnonymousUsersToStartMeeting</span><span class="sxs-lookup"><span data-stu-id="2251f-113">allowAnonymousUsersToStartMeeting</span></span> | <span data-ttu-id="2251f-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="2251f-114">Boolean</span></span> | <span data-ttu-id="2251f-115">Indica se os usuários anônimos podem iniciar uma reunião.</span><span class="sxs-lookup"><span data-stu-id="2251f-115">Indicates whether anonymous users are allowed to start a meeting.</span></span>  |
+| <span data-ttu-id="2251f-116">autoAdmittedUsers</span><span class="sxs-lookup"><span data-stu-id="2251f-116">autoAdmittedUsers</span></span>                 | <span data-ttu-id="2251f-117">String</span><span class="sxs-lookup"><span data-stu-id="2251f-117">String</span></span>  | <span data-ttu-id="2251f-118">Os valores possíveis são: `everyoneInCompany` e `everyone`.</span><span class="sxs-lookup"><span data-stu-id="2251f-118">Possible values are: `everyoneInCompany`, `everyone`.</span></span>              |
 
-## <a name="json-representation"></a><span data-ttu-id="fb2fa-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fb2fa-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2251f-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2251f-119">JSON representation</span></span>
 
-<span data-ttu-id="fb2fa-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fb2fa-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2251f-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2251f-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

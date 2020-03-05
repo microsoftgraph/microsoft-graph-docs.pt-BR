@@ -6,20 +6,22 @@ title: ItemActionStat
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 719a443af65fd9642feee3bc8ddbc832eb3964c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ab31d8a155e0b9fd54b3f2185e7d05969291ec1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010109"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523125"
 ---
-# <a name="itemactionstat-resource-type"></a><span data-ttu-id="db3e4-103">tipo de recurso itemActionStat</span><span class="sxs-lookup"><span data-stu-id="db3e4-103">itemActionStat resource type</span></span>
+# <a name="itemactionstat-resource-type"></a><span data-ttu-id="44e2e-103">tipo de recurso itemActionStat</span><span class="sxs-lookup"><span data-stu-id="44e2e-103">itemActionStat resource type</span></span>
+
+<span data-ttu-id="44e2e-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="44e2e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="db3e4-104">O recurso **itemActionStat** fornece detalhes agregados sobre uma ação em um período de tempo.</span><span class="sxs-lookup"><span data-stu-id="db3e4-104">The **itemActionStat** resource provides aggregate details about an action over a period of time.</span></span>
+<span data-ttu-id="44e2e-105">O recurso **itemActionStat** fornece detalhes agregados sobre uma ação em um período de tempo.</span><span class="sxs-lookup"><span data-stu-id="44e2e-105">The **itemActionStat** resource provides aggregate details about an action over a period of time.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="db3e4-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="db3e4-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="44e2e-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="44e2e-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,12 +36,12 @@ ms.locfileid: "36010109"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="db3e4-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="db3e4-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="44e2e-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="44e2e-107">Properties</span></span>
 
-| <span data-ttu-id="db3e4-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="db3e4-107">Property</span></span>    | <span data-ttu-id="db3e4-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="db3e4-108">Type</span></span>  | <span data-ttu-id="db3e4-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="db3e4-109">Description</span></span>
+| <span data-ttu-id="44e2e-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="44e2e-108">Property</span></span>    | <span data-ttu-id="44e2e-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="44e2e-109">Type</span></span>  | <span data-ttu-id="44e2e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="44e2e-110">Description</span></span>
 |:------------|:------|:-------------------------------------------------------
-| <span data-ttu-id="db3e4-110">actionCount</span><span class="sxs-lookup"><span data-stu-id="db3e4-110">actionCount</span></span> | <span data-ttu-id="db3e4-111">Int32</span><span class="sxs-lookup"><span data-stu-id="db3e4-111">Int32</span></span> | <span data-ttu-id="db3e4-112">O número de vezes que a ação ocorreu.</span><span class="sxs-lookup"><span data-stu-id="db3e4-112">The number of times the action took place.</span></span> <span data-ttu-id="db3e4-113">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="db3e4-113">Read-only.</span></span>
-| <span data-ttu-id="db3e4-114">actorCount</span><span class="sxs-lookup"><span data-stu-id="db3e4-114">actorCount</span></span>  | <span data-ttu-id="db3e4-115">Int32</span><span class="sxs-lookup"><span data-stu-id="db3e4-115">Int32</span></span> | <span data-ttu-id="db3e4-116">O número de atores distintos que executaram a ação.</span><span class="sxs-lookup"><span data-stu-id="db3e4-116">The number of distinct actors that performed the action.</span></span> <span data-ttu-id="db3e4-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="db3e4-117">Read-only.</span></span>
+| <span data-ttu-id="44e2e-111">actionCount</span><span class="sxs-lookup"><span data-stu-id="44e2e-111">actionCount</span></span> | <span data-ttu-id="44e2e-112">Int32</span><span class="sxs-lookup"><span data-stu-id="44e2e-112">Int32</span></span> | <span data-ttu-id="44e2e-113">O número de vezes que a ação ocorreu.</span><span class="sxs-lookup"><span data-stu-id="44e2e-113">The number of times the action took place.</span></span> <span data-ttu-id="44e2e-114">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="44e2e-114">Read-only.</span></span>
+| <span data-ttu-id="44e2e-115">actorCount</span><span class="sxs-lookup"><span data-stu-id="44e2e-115">actorCount</span></span>  | <span data-ttu-id="44e2e-116">Int32</span><span class="sxs-lookup"><span data-stu-id="44e2e-116">Int32</span></span> | <span data-ttu-id="44e2e-117">O número de atores distintos que executaram a ação.</span><span class="sxs-lookup"><span data-stu-id="44e2e-117">The number of distinct actors that performed the action.</span></span> <span data-ttu-id="44e2e-118">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="44e2e-118">Read-only.</span></span>
 
 <!--
 {

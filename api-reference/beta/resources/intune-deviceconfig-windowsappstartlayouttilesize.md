@@ -5,29 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4be31b5c7dfdc100215a2dfc1aef511e446ac6cf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3c3082054c42072c365088d70746fba6386f8826
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371249"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525569"
 ---
-# <a name="windowsappstartlayouttilesize-enum-type"></a><span data-ttu-id="100e1-103">tipo de enumeração windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="100e1-103">windowsAppStartLayoutTileSize enum type</span></span>
+# <a name="windowsappstartlayouttilesize-enum-type"></a><span data-ttu-id="e2f2c-103">tipo de enumeração windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="e2f2c-103">windowsAppStartLayoutTileSize enum type</span></span>
 
-> <span data-ttu-id="100e1-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="100e1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e2f2c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e2f2c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="100e1-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="100e1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e2f2c-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="100e1-106">O tamanho do bloco do aplicativo do Windows no layout de início.</span><span class="sxs-lookup"><span data-stu-id="100e1-106">The tile size of Windows app in the start layout.</span></span>
+> <span data-ttu-id="e2f2c-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="100e1-107">Membros</span><span class="sxs-lookup"><span data-stu-id="100e1-107">Members</span></span>
-|<span data-ttu-id="100e1-108">Membro</span><span class="sxs-lookup"><span data-stu-id="100e1-108">Member</span></span>|<span data-ttu-id="100e1-109">Valor</span><span class="sxs-lookup"><span data-stu-id="100e1-109">Value</span></span>|<span data-ttu-id="100e1-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="100e1-110">Description</span></span>|
+<span data-ttu-id="e2f2c-107">O tamanho do bloco do aplicativo do Windows no layout de início.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-107">The tile size of Windows app in the start layout.</span></span>
+
+## <a name="members"></a><span data-ttu-id="e2f2c-108">Membros</span><span class="sxs-lookup"><span data-stu-id="e2f2c-108">Members</span></span>
+|<span data-ttu-id="e2f2c-109">Membro</span><span class="sxs-lookup"><span data-stu-id="e2f2c-109">Member</span></span>|<span data-ttu-id="e2f2c-110">Valor</span><span class="sxs-lookup"><span data-stu-id="e2f2c-110">Value</span></span>|<span data-ttu-id="e2f2c-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2f2c-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="100e1-111">hidden</span><span class="sxs-lookup"><span data-stu-id="100e1-111">hidden</span></span>|<span data-ttu-id="100e1-112">,0</span><span class="sxs-lookup"><span data-stu-id="100e1-112">0</span></span>|<span data-ttu-id="100e1-113">Oculta.</span><span class="sxs-lookup"><span data-stu-id="100e1-113">Hidden.</span></span>|
-|<span data-ttu-id="100e1-114">small</span><span class="sxs-lookup"><span data-stu-id="100e1-114">small</span></span>|<span data-ttu-id="100e1-115">1</span><span class="sxs-lookup"><span data-stu-id="100e1-115">1</span></span>|<span data-ttu-id="100e1-116">1x1 pequeno.</span><span class="sxs-lookup"><span data-stu-id="100e1-116">Small 1x1.</span></span>|
-|<span data-ttu-id="100e1-117">medium</span><span class="sxs-lookup"><span data-stu-id="100e1-117">medium</span></span>|<span data-ttu-id="100e1-118">duas</span><span class="sxs-lookup"><span data-stu-id="100e1-118">2</span></span>|<span data-ttu-id="100e1-119">2x2 médio.</span><span class="sxs-lookup"><span data-stu-id="100e1-119">Medium 2x2.</span></span>|
-|<span data-ttu-id="100e1-120">várias</span><span class="sxs-lookup"><span data-stu-id="100e1-120">wide</span></span>|<span data-ttu-id="100e1-121">3D</span><span class="sxs-lookup"><span data-stu-id="100e1-121">3</span></span>|<span data-ttu-id="100e1-122">Wide 4x2.</span><span class="sxs-lookup"><span data-stu-id="100e1-122">Wide 4x2.</span></span>|
-|<span data-ttu-id="100e1-123">large</span><span class="sxs-lookup"><span data-stu-id="100e1-123">large</span></span>|<span data-ttu-id="100e1-124">quatro</span><span class="sxs-lookup"><span data-stu-id="100e1-124">4</span></span>|<span data-ttu-id="100e1-125">4x4 grande.</span><span class="sxs-lookup"><span data-stu-id="100e1-125">Large 4x4.</span></span>|
+|<span data-ttu-id="e2f2c-112">hidden</span><span class="sxs-lookup"><span data-stu-id="e2f2c-112">hidden</span></span>|<span data-ttu-id="e2f2c-113">,0</span><span class="sxs-lookup"><span data-stu-id="e2f2c-113">0</span></span>|<span data-ttu-id="e2f2c-114">Oculta.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-114">Hidden.</span></span>|
+|<span data-ttu-id="e2f2c-115">small</span><span class="sxs-lookup"><span data-stu-id="e2f2c-115">small</span></span>|<span data-ttu-id="e2f2c-116">1 </span><span class="sxs-lookup"><span data-stu-id="e2f2c-116">1</span></span>|<span data-ttu-id="e2f2c-117">1x1 pequeno.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-117">Small 1x1.</span></span>|
+|<span data-ttu-id="e2f2c-118">medium</span><span class="sxs-lookup"><span data-stu-id="e2f2c-118">medium</span></span>|<span data-ttu-id="e2f2c-119">2 </span><span class="sxs-lookup"><span data-stu-id="e2f2c-119">2</span></span>|<span data-ttu-id="e2f2c-120">2x2 médio.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-120">Medium 2x2.</span></span>|
+|<span data-ttu-id="e2f2c-121">várias</span><span class="sxs-lookup"><span data-stu-id="e2f2c-121">wide</span></span>|<span data-ttu-id="e2f2c-122">3 </span><span class="sxs-lookup"><span data-stu-id="e2f2c-122">3</span></span>|<span data-ttu-id="e2f2c-123">Wide 4x2.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-123">Wide 4x2.</span></span>|
+|<span data-ttu-id="e2f2c-124">large</span><span class="sxs-lookup"><span data-stu-id="e2f2c-124">large</span></span>|<span data-ttu-id="e2f2c-125">4 </span><span class="sxs-lookup"><span data-stu-id="e2f2c-125">4</span></span>|<span data-ttu-id="e2f2c-126">4x4 grande.</span><span class="sxs-lookup"><span data-stu-id="e2f2c-126">Large 4x4.</span></span>|
 
 
 

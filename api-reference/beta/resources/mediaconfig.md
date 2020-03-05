@@ -5,28 +5,30 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 61fe1dfcc4c2c9b686a61d22e55ddae3c80661be
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: eccf818abe2fd2b38fb2a3ee708b5dbf2a33fbf3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913300"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522775"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="7ec6d-103">tipo de recurso mediaConfig</span><span class="sxs-lookup"><span data-stu-id="7ec6d-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="f23f4-103">tipo de recurso mediaConfig</span><span class="sxs-lookup"><span data-stu-id="f23f4-103">mediaConfig resource type</span></span>
+
+<span data-ttu-id="f23f4-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f23f4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7ec6d-104">Uma classe base abstrata que contém a configuração de mídia usada para se conectar a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="7ec6d-104">An abstract base class that contains the media configuration used to connect to a call.</span></span>
+<span data-ttu-id="f23f4-105">Uma classe base abstrata que contém a configuração de mídia usada para se conectar a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="f23f4-105">An abstract base class that contains the media configuration used to connect to a call.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7ec6d-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7ec6d-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f23f4-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f23f4-106">Properties</span></span>
 
-| <span data-ttu-id="7ec6d-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7ec6d-106">Property</span></span>       | <span data-ttu-id="7ec6d-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ec6d-107">Type</span></span>    | <span data-ttu-id="7ec6d-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ec6d-108">Description</span></span>|
+| <span data-ttu-id="f23f4-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f23f4-107">Property</span></span>       | <span data-ttu-id="f23f4-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="f23f4-108">Type</span></span>    | <span data-ttu-id="f23f4-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f23f4-109">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="7ec6d-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="7ec6d-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="7ec6d-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="7ec6d-110">Boolean</span></span> |  |
+| <span data-ttu-id="f23f4-110">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="f23f4-110">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="f23f4-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="f23f4-111">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="7ec6d-111">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7ec6d-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f23f4-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f23f4-112">JSON representation</span></span>
 
-<span data-ttu-id="7ec6d-112">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7ec6d-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f23f4-113">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f23f4-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

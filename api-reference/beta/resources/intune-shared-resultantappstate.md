@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 712e6039d276d78c187e6e97128a45aa04e62058
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3412e630fe9bbf154207a79fe805569c04dbd628
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347889"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523566"
 ---
-# <a name="resultantappstate-enum-type"></a><span data-ttu-id="3d5ec-103">tipo de enumeração resultantAppState</span><span class="sxs-lookup"><span data-stu-id="3d5ec-103">resultantAppState enum type</span></span>
+# <a name="resultantappstate-enum-type"></a><span data-ttu-id="b9c0c-103">tipo de enumeração resultantAppState</span><span class="sxs-lookup"><span data-stu-id="b9c0c-103">resultantAppState enum type</span></span>
 
-> <span data-ttu-id="3d5ec-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="b9c0c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b9c0c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="3d5ec-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b9c0c-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="3d5ec-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3d5ec-106">Not yet documented</span></span>
+> <span data-ttu-id="b9c0c-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3d5ec-107">Membros</span><span class="sxs-lookup"><span data-stu-id="3d5ec-107">Members</span></span>
-|<span data-ttu-id="3d5ec-108">Membro</span><span class="sxs-lookup"><span data-stu-id="3d5ec-108">Member</span></span>|<span data-ttu-id="3d5ec-109">Valor</span><span class="sxs-lookup"><span data-stu-id="3d5ec-109">Value</span></span>|<span data-ttu-id="3d5ec-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="3d5ec-110">Description</span></span>|
+<span data-ttu-id="b9c0c-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="b9c0c-107">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="b9c0c-108">Membros</span><span class="sxs-lookup"><span data-stu-id="b9c0c-108">Members</span></span>
+|<span data-ttu-id="b9c0c-109">Membro</span><span class="sxs-lookup"><span data-stu-id="b9c0c-109">Member</span></span>|<span data-ttu-id="b9c0c-110">Valor</span><span class="sxs-lookup"><span data-stu-id="b9c0c-110">Value</span></span>|<span data-ttu-id="b9c0c-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="b9c0c-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3d5ec-111">instalação</span><span class="sxs-lookup"><span data-stu-id="3d5ec-111">installed</span></span>|<span data-ttu-id="3d5ec-112">1</span><span class="sxs-lookup"><span data-stu-id="3d5ec-112">1</span></span>|<span data-ttu-id="3d5ec-113">O aplicativo é instalado sem erros</span><span class="sxs-lookup"><span data-stu-id="3d5ec-113">The application is installed with no errors</span></span>|
-|<span data-ttu-id="3d5ec-114">falhou</span><span class="sxs-lookup"><span data-stu-id="3d5ec-114">failed</span></span>|<span data-ttu-id="3d5ec-115">duas</span><span class="sxs-lookup"><span data-stu-id="3d5ec-115">2</span></span>|<span data-ttu-id="3d5ec-116">Falha ao instalar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-116">The application failed to install.</span></span>|
-|<span data-ttu-id="3d5ec-117">não instalado</span><span class="sxs-lookup"><span data-stu-id="3d5ec-117">notInstalled</span></span>|<span data-ttu-id="3d5ec-118">3D</span><span class="sxs-lookup"><span data-stu-id="3d5ec-118">3</span></span>|<span data-ttu-id="3d5ec-119">O aplicativo não está instalado.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-119">The application is not installed.</span></span>|
-|<span data-ttu-id="3d5ec-120">uninstallFailed</span><span class="sxs-lookup"><span data-stu-id="3d5ec-120">uninstallFailed</span></span>|<span data-ttu-id="3d5ec-121">quatro</span><span class="sxs-lookup"><span data-stu-id="3d5ec-121">4</span></span>|<span data-ttu-id="3d5ec-122">Falha ao desinstalar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-122">The application failed to uninstall.</span></span>|
-|<span data-ttu-id="3d5ec-123">pendingInstall</span><span class="sxs-lookup"><span data-stu-id="3d5ec-123">pendingInstall</span></span>|<span data-ttu-id="3d5ec-124">0,5</span><span class="sxs-lookup"><span data-stu-id="3d5ec-124">5</span></span>|<span data-ttu-id="3d5ec-125">A instalação do aplicativo está em andamento.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-125">The installation of the application is in progress.</span></span>|
-|<span data-ttu-id="3d5ec-126">desconhecido</span><span class="sxs-lookup"><span data-stu-id="3d5ec-126">unknown</span></span>|<span data-ttu-id="3d5ec-127">99</span><span class="sxs-lookup"><span data-stu-id="3d5ec-127">99</span></span>|<span data-ttu-id="3d5ec-128">O status do aplicativo é desconhecido.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-128">The status of the application is unknown.</span></span>|
-|<span data-ttu-id="3d5ec-129">Não aplicável</span><span class="sxs-lookup"><span data-stu-id="3d5ec-129">notApplicable</span></span>|<span data-ttu-id="3d5ec-130">-1</span><span class="sxs-lookup"><span data-stu-id="3d5ec-130">-1</span></span>|<span data-ttu-id="3d5ec-131">O aplicativo não é aplicável.</span><span class="sxs-lookup"><span data-stu-id="3d5ec-131">The application is not applicable.</span></span>|
+|<span data-ttu-id="b9c0c-112">instalação</span><span class="sxs-lookup"><span data-stu-id="b9c0c-112">installed</span></span>|<span data-ttu-id="b9c0c-113">1 </span><span class="sxs-lookup"><span data-stu-id="b9c0c-113">1</span></span>|<span data-ttu-id="b9c0c-114">O aplicativo é instalado sem erros</span><span class="sxs-lookup"><span data-stu-id="b9c0c-114">The application is installed with no errors</span></span>|
+|<span data-ttu-id="b9c0c-115">falhou</span><span class="sxs-lookup"><span data-stu-id="b9c0c-115">failed</span></span>|<span data-ttu-id="b9c0c-116">2 </span><span class="sxs-lookup"><span data-stu-id="b9c0c-116">2</span></span>|<span data-ttu-id="b9c0c-117">Falha ao instalar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-117">The application failed to install.</span></span>|
+|<span data-ttu-id="b9c0c-118">não instalado</span><span class="sxs-lookup"><span data-stu-id="b9c0c-118">notInstalled</span></span>|<span data-ttu-id="b9c0c-119">3 </span><span class="sxs-lookup"><span data-stu-id="b9c0c-119">3</span></span>|<span data-ttu-id="b9c0c-120">O aplicativo não está instalado.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-120">The application is not installed.</span></span>|
+|<span data-ttu-id="b9c0c-121">uninstallFailed</span><span class="sxs-lookup"><span data-stu-id="b9c0c-121">uninstallFailed</span></span>|<span data-ttu-id="b9c0c-122">4 </span><span class="sxs-lookup"><span data-stu-id="b9c0c-122">4</span></span>|<span data-ttu-id="b9c0c-123">Falha ao desinstalar o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-123">The application failed to uninstall.</span></span>|
+|<span data-ttu-id="b9c0c-124">pendingInstall</span><span class="sxs-lookup"><span data-stu-id="b9c0c-124">pendingInstall</span></span>|<span data-ttu-id="b9c0c-125">5 </span><span class="sxs-lookup"><span data-stu-id="b9c0c-125">5</span></span>|<span data-ttu-id="b9c0c-126">A instalação do aplicativo está em andamento.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-126">The installation of the application is in progress.</span></span>|
+|<span data-ttu-id="b9c0c-127">desconhecido</span><span class="sxs-lookup"><span data-stu-id="b9c0c-127">unknown</span></span>|<span data-ttu-id="b9c0c-128">99</span><span class="sxs-lookup"><span data-stu-id="b9c0c-128">99</span></span>|<span data-ttu-id="b9c0c-129">O status do aplicativo é desconhecido.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-129">The status of the application is unknown.</span></span>|
+|<span data-ttu-id="b9c0c-130">Não aplicável</span><span class="sxs-lookup"><span data-stu-id="b9c0c-130">notApplicable</span></span>|<span data-ttu-id="b9c0c-131">-1</span><span class="sxs-lookup"><span data-stu-id="b9c0c-131">-1</span></span>|<span data-ttu-id="b9c0c-132">O aplicativo não é aplicável.</span><span class="sxs-lookup"><span data-stu-id="b9c0c-132">The application is not applicable.</span></span>|
 
 
 

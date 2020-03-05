@@ -5,22 +5,24 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4ccd17c7a6c8e1b9e834b1e1d1ebc4e98aac37d6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fba6b6d811a10f06338e8e13e5c8dc487e31813
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966297"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522183"
 ---
-# <a name="outlookgeocoordinates-resource-type"></a><span data-ttu-id="30529-103">Tipo de recurso outlookGeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="30529-103">outlookGeoCoordinates resource type</span></span>
+# <a name="outlookgeocoordinates-resource-type"></a><span data-ttu-id="6e704-103">Tipo de recurso outlookGeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="6e704-103">outlookGeoCoordinates resource type</span></span>
+
+<span data-ttu-id="6e704-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6e704-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="30529-104">As coordenadas geográficas, a elevação e o grau de precisão delas para um local físico.</span><span class="sxs-lookup"><span data-stu-id="30529-104">The geographic coordinates, elevation, and their degree of accuracy for a physical location.</span></span>
+<span data-ttu-id="6e704-105">As coordenadas geográficas, a elevação e o grau de precisão delas para um local físico.</span><span class="sxs-lookup"><span data-stu-id="6e704-105">The geographic coordinates, elevation, and their degree of accuracy for a physical location.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="30529-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="30529-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6e704-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6e704-106">JSON representation</span></span>
 
-<span data-ttu-id="30529-106">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="30529-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6e704-107">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6e704-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,14 +42,14 @@ ms.locfileid: "35966297"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="30529-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="30529-107">Properties</span></span>
-| <span data-ttu-id="30529-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="30529-108">Property</span></span>     | <span data-ttu-id="30529-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="30529-109">Type</span></span>   |<span data-ttu-id="30529-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="30529-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6e704-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6e704-108">Properties</span></span>
+| <span data-ttu-id="6e704-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6e704-109">Property</span></span>     | <span data-ttu-id="6e704-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="6e704-110">Type</span></span>   |<span data-ttu-id="6e704-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e704-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="30529-111">accuracy</span><span class="sxs-lookup"><span data-stu-id="30529-111">accuracy</span></span>|<span data-ttu-id="30529-112">double</span><span class="sxs-lookup"><span data-stu-id="30529-112">double</span></span>|<span data-ttu-id="30529-113">A precisão da latitude e da longitude.</span><span class="sxs-lookup"><span data-stu-id="30529-113">The accuracy of the latitude and longitude.</span></span> <span data-ttu-id="30529-114">Por exemplo, a precisão pode ser medida em metros, como a precisão da latitude e da longitude em um raio de 50 metros.</span><span class="sxs-lookup"><span data-stu-id="30529-114">As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.</span></span>|
-|<span data-ttu-id="30529-115">altitude</span><span class="sxs-lookup"><span data-stu-id="30529-115">altitude</span></span>|<span data-ttu-id="30529-116">double</span><span class="sxs-lookup"><span data-stu-id="30529-116">double</span></span>|<span data-ttu-id="30529-117">A altitude do local.</span><span class="sxs-lookup"><span data-stu-id="30529-117">The altitude of the location.</span></span>|
-|<span data-ttu-id="30529-118">altitudeAccuracy</span><span class="sxs-lookup"><span data-stu-id="30529-118">altitudeAccuracy</span></span>|<span data-ttu-id="30529-119">double</span><span class="sxs-lookup"><span data-stu-id="30529-119">double</span></span>|<span data-ttu-id="30529-120">A precisão da altitude.</span><span class="sxs-lookup"><span data-stu-id="30529-120">The accuracy of the altitude.</span></span>|
-|<span data-ttu-id="30529-121">latitude</span><span class="sxs-lookup"><span data-stu-id="30529-121">latitude</span></span>|<span data-ttu-id="30529-122">double</span><span class="sxs-lookup"><span data-stu-id="30529-122">double</span></span>|<span data-ttu-id="30529-123">A latitude do local.</span><span class="sxs-lookup"><span data-stu-id="30529-123">The latitude of the location.</span></span>|
-|<span data-ttu-id="30529-124">longitude</span><span class="sxs-lookup"><span data-stu-id="30529-124">longitude</span></span>|<span data-ttu-id="30529-125">double</span><span class="sxs-lookup"><span data-stu-id="30529-125">double</span></span>|<span data-ttu-id="30529-126">A longitude do local.</span><span class="sxs-lookup"><span data-stu-id="30529-126">The longitude of the location.</span></span>|
+|<span data-ttu-id="6e704-112">accuracy</span><span class="sxs-lookup"><span data-stu-id="6e704-112">accuracy</span></span>|<span data-ttu-id="6e704-113">double</span><span class="sxs-lookup"><span data-stu-id="6e704-113">double</span></span>|<span data-ttu-id="6e704-114">A precisão da latitude e da longitude.</span><span class="sxs-lookup"><span data-stu-id="6e704-114">The accuracy of the latitude and longitude.</span></span> <span data-ttu-id="6e704-115">Por exemplo, a precisão pode ser medida em metros, como a precisão da latitude e da longitude em um raio de 50 metros.</span><span class="sxs-lookup"><span data-stu-id="6e704-115">As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.</span></span>|
+|<span data-ttu-id="6e704-116">altitude</span><span class="sxs-lookup"><span data-stu-id="6e704-116">altitude</span></span>|<span data-ttu-id="6e704-117">double</span><span class="sxs-lookup"><span data-stu-id="6e704-117">double</span></span>|<span data-ttu-id="6e704-118">A altitude do local.</span><span class="sxs-lookup"><span data-stu-id="6e704-118">The altitude of the location.</span></span>|
+|<span data-ttu-id="6e704-119">altitudeAccuracy</span><span class="sxs-lookup"><span data-stu-id="6e704-119">altitudeAccuracy</span></span>|<span data-ttu-id="6e704-120">double</span><span class="sxs-lookup"><span data-stu-id="6e704-120">double</span></span>|<span data-ttu-id="6e704-121">A precisão da altitude.</span><span class="sxs-lookup"><span data-stu-id="6e704-121">The accuracy of the altitude.</span></span>|
+|<span data-ttu-id="6e704-122">latitude</span><span class="sxs-lookup"><span data-stu-id="6e704-122">latitude</span></span>|<span data-ttu-id="6e704-123">double</span><span class="sxs-lookup"><span data-stu-id="6e704-123">double</span></span>|<span data-ttu-id="6e704-124">A latitude do local.</span><span class="sxs-lookup"><span data-stu-id="6e704-124">The latitude of the location.</span></span>|
+|<span data-ttu-id="6e704-125">longitude</span><span class="sxs-lookup"><span data-stu-id="6e704-125">longitude</span></span>|<span data-ttu-id="6e704-126">double</span><span class="sxs-lookup"><span data-stu-id="6e704-126">double</span></span>|<span data-ttu-id="6e704-127">A longitude do local.</span><span class="sxs-lookup"><span data-stu-id="6e704-127">The longitude of the location.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

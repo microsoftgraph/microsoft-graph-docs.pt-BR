@@ -5,32 +5,34 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0274cdb1c35307e91e31c0b357ecf9a16e2d3f19
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 8d6bce42c31e39f5b36e3beccdac2fc660f9cb30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913076"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522754"
 ---
-# <a name="mediastream-resource-type"></a><span data-ttu-id="c8b71-103">tipo de recurso mediaStream</span><span class="sxs-lookup"><span data-stu-id="c8b71-103">mediaStream resource type</span></span>
+# <a name="mediastream-resource-type"></a><span data-ttu-id="1877f-103">tipo de recurso mediaStream</span><span class="sxs-lookup"><span data-stu-id="1877f-103">mediaStream resource type</span></span>
+
+<span data-ttu-id="1877f-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1877f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c8b71-104">Contém informações sobre o canal de mídia.</span><span class="sxs-lookup"><span data-stu-id="c8b71-104">Contains information about the media channel.</span></span>
+<span data-ttu-id="1877f-105">Contém informações sobre o canal de mídia.</span><span class="sxs-lookup"><span data-stu-id="1877f-105">Contains information about the media channel.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c8b71-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c8b71-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1877f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1877f-106">Properties</span></span>
 
-| <span data-ttu-id="c8b71-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c8b71-106">Property</span></span>    | <span data-ttu-id="c8b71-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="c8b71-107">Type</span></span>    | <span data-ttu-id="c8b71-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="c8b71-108">Description</span></span>                                                                                                   |
+| <span data-ttu-id="1877f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1877f-107">Property</span></span>    | <span data-ttu-id="1877f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="1877f-108">Type</span></span>    | <span data-ttu-id="1877f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="1877f-109">Description</span></span>                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| <span data-ttu-id="c8b71-109">direction</span><span class="sxs-lookup"><span data-stu-id="c8b71-109">direction</span></span>   | <span data-ttu-id="c8b71-110">String</span><span class="sxs-lookup"><span data-stu-id="c8b71-110">String</span></span>  | <span data-ttu-id="c8b71-111">A direção.</span><span class="sxs-lookup"><span data-stu-id="c8b71-111">The direction.</span></span> <span data-ttu-id="c8b71-112">Os valores possíveis são `inactive`: `sendOnly` `receiveOnly`,, `sendReceive`,.</span><span class="sxs-lookup"><span data-stu-id="c8b71-112">The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.</span></span>                  |
-| <span data-ttu-id="c8b71-113">rótulo</span><span class="sxs-lookup"><span data-stu-id="c8b71-113">label</span></span>       | <span data-ttu-id="c8b71-114">String</span><span class="sxs-lookup"><span data-stu-id="c8b71-114">String</span></span>  | <span data-ttu-id="c8b71-115">O rótulo do fluxo de mídia.</span><span class="sxs-lookup"><span data-stu-id="c8b71-115">The media stream label.</span></span>                                                                                       |
-| <span data-ttu-id="c8b71-116">Mídia</span><span class="sxs-lookup"><span data-stu-id="c8b71-116">mediaType</span></span>   | <span data-ttu-id="c8b71-117">String</span><span class="sxs-lookup"><span data-stu-id="c8b71-117">String</span></span>  | <span data-ttu-id="c8b71-118">O tipo de mídia.</span><span class="sxs-lookup"><span data-stu-id="c8b71-118">The media type.</span></span> <span data-ttu-id="c8b71-119">O valor possível é `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span><span class="sxs-lookup"><span data-stu-id="c8b71-119">The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span></span>        |
-| <span data-ttu-id="c8b71-120">serverMuted</span><span class="sxs-lookup"><span data-stu-id="c8b71-120">serverMuted</span></span> | <span data-ttu-id="c8b71-121">Booliano</span><span class="sxs-lookup"><span data-stu-id="c8b71-121">Boolean</span></span> | <span data-ttu-id="c8b71-122">Indica se a mídia está com mudo ativado pelo servidor.</span><span class="sxs-lookup"><span data-stu-id="c8b71-122">Indicates whether the media is muted by the server.</span></span>                                                                          |
-| <span data-ttu-id="c8b71-123">sourceId</span><span class="sxs-lookup"><span data-stu-id="c8b71-123">sourceId</span></span>    | <span data-ttu-id="c8b71-124">String</span><span class="sxs-lookup"><span data-stu-id="c8b71-124">String</span></span>  | <span data-ttu-id="c8b71-125">A ID da fonte.</span><span class="sxs-lookup"><span data-stu-id="c8b71-125">The source ID.</span></span>                                                                                                |
+| <span data-ttu-id="1877f-110">direction</span><span class="sxs-lookup"><span data-stu-id="1877f-110">direction</span></span>   | <span data-ttu-id="1877f-111">String</span><span class="sxs-lookup"><span data-stu-id="1877f-111">String</span></span>  | <span data-ttu-id="1877f-112">A direção.</span><span class="sxs-lookup"><span data-stu-id="1877f-112">The direction.</span></span> <span data-ttu-id="1877f-113">Os valores possíveis são `inactive`: `sendOnly` `receiveOnly`,, `sendReceive`,.</span><span class="sxs-lookup"><span data-stu-id="1877f-113">The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.</span></span>                  |
+| <span data-ttu-id="1877f-114">rótulo</span><span class="sxs-lookup"><span data-stu-id="1877f-114">label</span></span>       | <span data-ttu-id="1877f-115">String</span><span class="sxs-lookup"><span data-stu-id="1877f-115">String</span></span>  | <span data-ttu-id="1877f-116">O rótulo do fluxo de mídia.</span><span class="sxs-lookup"><span data-stu-id="1877f-116">The media stream label.</span></span>                                                                                       |
+| <span data-ttu-id="1877f-117">Mídia</span><span class="sxs-lookup"><span data-stu-id="1877f-117">mediaType</span></span>   | <span data-ttu-id="1877f-118">String</span><span class="sxs-lookup"><span data-stu-id="1877f-118">String</span></span>  | <span data-ttu-id="1877f-119">O tipo de mídia.</span><span class="sxs-lookup"><span data-stu-id="1877f-119">The media type.</span></span> <span data-ttu-id="1877f-120">O valor possível é `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span><span class="sxs-lookup"><span data-stu-id="1877f-120">The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.</span></span>        |
+| <span data-ttu-id="1877f-121">serverMuted</span><span class="sxs-lookup"><span data-stu-id="1877f-121">serverMuted</span></span> | <span data-ttu-id="1877f-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="1877f-122">Boolean</span></span> | <span data-ttu-id="1877f-123">Indica se a mídia está com mudo ativado pelo servidor.</span><span class="sxs-lookup"><span data-stu-id="1877f-123">Indicates whether the media is muted by the server.</span></span>                                                                          |
+| <span data-ttu-id="1877f-124">sourceId</span><span class="sxs-lookup"><span data-stu-id="1877f-124">sourceId</span></span>    | <span data-ttu-id="1877f-125">String</span><span class="sxs-lookup"><span data-stu-id="1877f-125">String</span></span>  | <span data-ttu-id="1877f-126">A ID da fonte.</span><span class="sxs-lookup"><span data-stu-id="1877f-126">The source ID.</span></span>                                                                                                |
 
-## <a name="json-representation"></a><span data-ttu-id="c8b71-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c8b71-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1877f-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1877f-127">JSON representation</span></span>
 
-<span data-ttu-id="c8b71-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c8b71-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1877f-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1877f-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
