@@ -1,32 +1,34 @@
 ---
 title: Criar blocos de anotações
-description: Criar um novo bloco de anotações do OneNote.
+description: Crie um novo bloco de anotações do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a1a6a2bc2b6bf009e1254060ef0f1106526228ae
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8bed7897875adb722262441ef34618afb271ef7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414606"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456541"
 ---
-# <a name="create-notebook"></a><span data-ttu-id="1839f-103">Criar blocos de anotações</span><span class="sxs-lookup"><span data-stu-id="1839f-103">Create notebook</span></span>
+# <a name="create-notebook"></a><span data-ttu-id="79f0b-103">Criar blocos de anotações</span><span class="sxs-lookup"><span data-stu-id="79f0b-103">Create notebook</span></span>
+
+<span data-ttu-id="79f0b-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="79f0b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1839f-104">Criar um novo [bloco de anotações](../resources/notebook.md)do OneNote.</span><span class="sxs-lookup"><span data-stu-id="1839f-104">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="1839f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1839f-105">Permissions</span></span>
-<span data-ttu-id="1839f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1839f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="79f0b-105">Criar um novo [bloco de anotações](../resources/notebook.md)do OneNote.</span><span class="sxs-lookup"><span data-stu-id="79f0b-105">Create a new OneNote [notebook](../resources/notebook.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="79f0b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="79f0b-106">Permissions</span></span>
+<span data-ttu-id="79f0b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="79f0b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1839f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1839f-108">Permission type</span></span>      | <span data-ttu-id="1839f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1839f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="79f0b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="79f0b-109">Permission type</span></span>      | <span data-ttu-id="79f0b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="79f0b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1839f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1839f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1839f-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1839f-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1839f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1839f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1839f-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1839f-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="1839f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1839f-114">Application</span></span> | <span data-ttu-id="1839f-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1839f-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="79f0b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="79f0b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="79f0b-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="79f0b-112">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="79f0b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="79f0b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="79f0b-114">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="79f0b-114">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="79f0b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="79f0b-115">Application</span></span> | <span data-ttu-id="79f0b-116">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="79f0b-116">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1839f-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1839f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="79f0b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="79f0b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/notebooks
@@ -34,26 +36,26 @@ POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
 POST /sites/{id}/onenote/notebooks
 ```
-## <a name="request-headers"></a><span data-ttu-id="1839f-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1839f-117">Request headers</span></span>
-| <span data-ttu-id="1839f-118">Nome</span><span class="sxs-lookup"><span data-stu-id="1839f-118">Name</span></span>       | <span data-ttu-id="1839f-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="1839f-119">Type</span></span> | <span data-ttu-id="1839f-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="1839f-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="79f0b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="79f0b-118">Request headers</span></span>
+| <span data-ttu-id="79f0b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="79f0b-119">Name</span></span>       | <span data-ttu-id="79f0b-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="79f0b-120">Type</span></span> | <span data-ttu-id="79f0b-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="79f0b-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="1839f-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="1839f-121">Authorization</span></span>  | <span data-ttu-id="1839f-122">string</span><span class="sxs-lookup"><span data-stu-id="1839f-122">string</span></span>  | <span data-ttu-id="1839f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1839f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1839f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1839f-125">Content-Type</span></span> | <span data-ttu-id="1839f-126">string</span><span class="sxs-lookup"><span data-stu-id="1839f-126">string</span></span> | `application/json` |
+| <span data-ttu-id="79f0b-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="79f0b-122">Authorization</span></span>  | <span data-ttu-id="79f0b-123">string</span><span class="sxs-lookup"><span data-stu-id="79f0b-123">string</span></span>  | <span data-ttu-id="79f0b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="79f0b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="79f0b-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="79f0b-126">Content-Type</span></span> | <span data-ttu-id="79f0b-127">string</span><span class="sxs-lookup"><span data-stu-id="79f0b-127">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="1839f-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1839f-127">Request body</span></span>
-<span data-ttu-id="1839f-128">No corpo da solicitação, forneça um nome para o bloco de anotações.</span><span class="sxs-lookup"><span data-stu-id="1839f-128">In the request body, supply a name for the notebook.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="79f0b-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="79f0b-128">Request body</span></span>
+<span data-ttu-id="79f0b-129">No corpo da solicitação, forneça um nome para o bloco de anotações.</span><span class="sxs-lookup"><span data-stu-id="79f0b-129">In the request body, supply a name for the notebook.</span></span> 
 
-<span data-ttu-id="1839f-129">Os nomes dos blocos de anotações devem ser exclusivos.</span><span class="sxs-lookup"><span data-stu-id="1839f-129">Notebook names must be unique.</span></span> <span data-ttu-id="1839f-130">O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres:?\/\*: <>| ' "</span><span class="sxs-lookup"><span data-stu-id="1839f-130">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
+<span data-ttu-id="79f0b-130">Os nomes dos blocos de anotações devem ser exclusivos.</span><span class="sxs-lookup"><span data-stu-id="79f0b-130">Notebook names must be unique.</span></span> <span data-ttu-id="79f0b-131">O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres:?\/\*: <>| ' "</span><span class="sxs-lookup"><span data-stu-id="79f0b-131">The name cannot contain more than 128 characters or contain the following characters:  ?\*\/:<>|'"</span></span>
 
-## <a name="response"></a><span data-ttu-id="1839f-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="1839f-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="79f0b-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="79f0b-132">Response</span></span>
 
-<span data-ttu-id="1839f-132">Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Notebook](../resources/notebook.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1839f-132">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
+<span data-ttu-id="79f0b-133">Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Notebook](../resources/notebook.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="79f0b-133">If successful, this method returns a `201 Created` response code and the new [notebook](../resources/notebook.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1839f-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1839f-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1839f-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1839f-134">Request</span></span>
-<span data-ttu-id="1839f-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1839f-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="79f0b-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="79f0b-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="79f0b-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="79f0b-135">Request</span></span>
+<span data-ttu-id="79f0b-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="79f0b-136">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1839f-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="1839f-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="79f0b-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="79f0b-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_notebook_from_onenote"
@@ -67,23 +69,23 @@ Content-length: 30
   "displayName": "Notebook name"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1839f-137">C#</span><span class="sxs-lookup"><span data-stu-id="1839f-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="79f0b-138">C#</span><span class="sxs-lookup"><span data-stu-id="79f0b-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-notebook-from-onenote-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1839f-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1839f-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="79f0b-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="79f0b-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-notebook-from-onenote-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1839f-139">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1839f-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="79f0b-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="79f0b-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-notebook-from-onenote-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1839f-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="1839f-140">Response</span></span>
-<span data-ttu-id="1839f-p104">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1839f-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="79f0b-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="79f0b-141">Response</span></span>
+<span data-ttu-id="79f0b-p104">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="79f0b-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

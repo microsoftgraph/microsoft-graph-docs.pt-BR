@@ -5,63 +5,65 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7d59d8c5a173f614473a7443fc7db97a4e3f6618
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7210ec04f8161c1fbf564bae9af3b1d2fa28f179
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415225"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457015"
 ---
-# <a name="create-rule"></a><span data-ttu-id="f965c-103">Criar regra</span><span class="sxs-lookup"><span data-stu-id="f965c-103">Create rule</span></span>
+# <a name="create-rule"></a><span data-ttu-id="2e908-103">Criar regra</span><span class="sxs-lookup"><span data-stu-id="2e908-103">Create rule</span></span>
+
+<span data-ttu-id="2e908-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2e908-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f965c-104">Crie um objeto [messageRule](../resources/messagerule.md) especificando um conjunto de condições e ações.</span><span class="sxs-lookup"><span data-stu-id="f965c-104">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
+<span data-ttu-id="2e908-105">Crie um objeto [messageRule](../resources/messagerule.md) especificando um conjunto de condições e ações.</span><span class="sxs-lookup"><span data-stu-id="2e908-105">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
 
-<span data-ttu-id="f965c-105">O Outlook realizará essas ações se uma mensagem recebida na Caixa de Entrada do usuário atender às condições especificadas.</span><span class="sxs-lookup"><span data-stu-id="f965c-105">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
+<span data-ttu-id="2e908-106">O Outlook realizará essas ações se uma mensagem recebida na Caixa de Entrada do usuário atender às condições especificadas.</span><span class="sxs-lookup"><span data-stu-id="2e908-106">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f965c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f965c-106">Permissions</span></span>
-<span data-ttu-id="f965c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f965c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2e908-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="2e908-107">Permissions</span></span>
+<span data-ttu-id="2e908-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2e908-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f965c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f965c-109">Permission type</span></span>      | <span data-ttu-id="f965c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f965c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2e908-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2e908-110">Permission type</span></span>      | <span data-ttu-id="2e908-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2e908-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f965c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f965c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f965c-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f965c-112">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f965c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f965c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f965c-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f965c-114">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="f965c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f965c-115">Application</span></span> | <span data-ttu-id="f965c-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f965c-116">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="2e908-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2e908-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2e908-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e908-113">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="2e908-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2e908-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e908-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e908-115">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="2e908-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2e908-116">Application</span></span> | <span data-ttu-id="2e908-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e908-117">MailboxSettings.ReadWrite</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="f965c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f965c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2e908-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2e908-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/mailFolders/inbox/messagerules
 POST /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ```
-## <a name="request-headers"></a><span data-ttu-id="f965c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f965c-118">Request headers</span></span>
-| <span data-ttu-id="f965c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f965c-119">Name</span></span>       | <span data-ttu-id="f965c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f965c-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2e908-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2e908-119">Request headers</span></span>
+| <span data-ttu-id="2e908-120">Nome</span><span class="sxs-lookup"><span data-stu-id="2e908-120">Name</span></span>       | <span data-ttu-id="2e908-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e908-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f965c-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f965c-121">Authorization</span></span>  | <span data-ttu-id="f965c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f965c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2e908-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="2e908-122">Authorization</span></span>  | <span data-ttu-id="2e908-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e908-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="f965c-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f965c-124">Request body</span></span>
-<span data-ttu-id="f965c-125">No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua regra.</span><span class="sxs-lookup"><span data-stu-id="f965c-125">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="f965c-126">A seguir estão os parâmetros de corpo que normalmente são usados ao criar regras.</span><span class="sxs-lookup"><span data-stu-id="f965c-126">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="f965c-127">É possível especificar outras propriedades **messageRule** graváveis conforme apropriado no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f965c-127">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2e908-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2e908-125">Request body</span></span>
+<span data-ttu-id="2e908-126">No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua regra.</span><span class="sxs-lookup"><span data-stu-id="2e908-126">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="2e908-127">A seguir estão os parâmetros de corpo que normalmente são usados ao criar regras.</span><span class="sxs-lookup"><span data-stu-id="2e908-127">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="2e908-128">É possível especificar outras propriedades **messageRule** graváveis conforme apropriado no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2e908-128">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
 
-| <span data-ttu-id="f965c-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f965c-128">Parameter</span></span>       | <span data-ttu-id="f965c-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="f965c-129">Type</span></span>|<span data-ttu-id="f965c-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="f965c-130">Description</span></span>|
+| <span data-ttu-id="2e908-129">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="2e908-129">Parameter</span></span>       | <span data-ttu-id="2e908-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="2e908-130">Type</span></span>|<span data-ttu-id="2e908-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e908-131">Description</span></span>|
 |:--------|:-------|:----------|
-|<span data-ttu-id="f965c-131">actions</span><span class="sxs-lookup"><span data-stu-id="f965c-131">actions</span></span>|[<span data-ttu-id="f965c-132">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="f965c-132">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="f965c-133">Ações a serem realizadas em uma mensagem quando as condições correspondentes, se houver, forem atendidas.</span><span class="sxs-lookup"><span data-stu-id="f965c-133">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled.</span></span> <span data-ttu-id="f965c-134">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f965c-134">Required.</span></span>|
-|<span data-ttu-id="f965c-135">conditions</span><span class="sxs-lookup"><span data-stu-id="f965c-135">conditions</span></span>|[<span data-ttu-id="f965c-136">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="f965c-136">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="f965c-137">Condições que, quando atendidas, acionarão as ações correspondentes dessa regra.</span><span class="sxs-lookup"><span data-stu-id="f965c-137">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> <span data-ttu-id="f965c-138">Opcional.</span><span class="sxs-lookup"><span data-stu-id="f965c-138">Optional.</span></span>|
-|<span data-ttu-id="f965c-139">displayName</span><span class="sxs-lookup"><span data-stu-id="f965c-139">displayName</span></span>| <span data-ttu-id="f965c-140">String</span><span class="sxs-lookup"><span data-stu-id="f965c-140">String</span></span>  | <span data-ttu-id="f965c-141">O nome de exibição da regra.</span><span class="sxs-lookup"><span data-stu-id="f965c-141">The display name of the rule.</span></span> <span data-ttu-id="f965c-142">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f965c-142">Required.</span></span>|
-|<span data-ttu-id="f965c-143">exceptions</span><span class="sxs-lookup"><span data-stu-id="f965c-143">exceptions</span></span>| [<span data-ttu-id="f965c-144">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="f965c-144">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="f965c-145">Representa condições de exceção para a regra.</span><span class="sxs-lookup"><span data-stu-id="f965c-145">Represents exception conditions for the rule.</span></span> <span data-ttu-id="f965c-146">Opcional.</span><span class="sxs-lookup"><span data-stu-id="f965c-146">Optional.</span></span> |
-|<span data-ttu-id="f965c-147">isEnabled</span><span class="sxs-lookup"><span data-stu-id="f965c-147">isEnabled</span></span> | <span data-ttu-id="f965c-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="f965c-148">Boolean</span></span> | <span data-ttu-id="f965c-149">Indica se a regra está habilitada para ser aplicada a mensagens.</span><span class="sxs-lookup"><span data-stu-id="f965c-149">Indicates whether the rule is enabled to be applied to messages.</span></span> <span data-ttu-id="f965c-150">Opcional.</span><span class="sxs-lookup"><span data-stu-id="f965c-150">Optional.</span></span> |
-|<span data-ttu-id="f965c-151">sequence</span><span class="sxs-lookup"><span data-stu-id="f965c-151">sequence</span></span>| <span data-ttu-id="f965c-152">Int32</span><span class="sxs-lookup"><span data-stu-id="f965c-152">Int32</span></span> | <span data-ttu-id="f965c-153">Indica a ordem em que a regra é executada, entre outras regras.</span><span class="sxs-lookup"><span data-stu-id="f965c-153">Indicates the order in which the rule is executed, among other rules.</span></span> <span data-ttu-id="f965c-154">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f965c-154">Required.</span></span>|
+|<span data-ttu-id="2e908-132">actions</span><span class="sxs-lookup"><span data-stu-id="2e908-132">actions</span></span>|[<span data-ttu-id="2e908-133">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="2e908-133">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="2e908-134">Ações a serem realizadas em uma mensagem quando as condições correspondentes, se houver, forem atendidas.</span><span class="sxs-lookup"><span data-stu-id="2e908-134">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled.</span></span> <span data-ttu-id="2e908-135">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e908-135">Required.</span></span>|
+|<span data-ttu-id="2e908-136">conditions</span><span class="sxs-lookup"><span data-stu-id="2e908-136">conditions</span></span>|[<span data-ttu-id="2e908-137">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="2e908-137">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="2e908-138">Condições que, quando atendidas, acionarão as ações correspondentes dessa regra.</span><span class="sxs-lookup"><span data-stu-id="2e908-138">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> <span data-ttu-id="2e908-139">Opcional.</span><span class="sxs-lookup"><span data-stu-id="2e908-139">Optional.</span></span>|
+|<span data-ttu-id="2e908-140">displayName</span><span class="sxs-lookup"><span data-stu-id="2e908-140">displayName</span></span>| <span data-ttu-id="2e908-141">String</span><span class="sxs-lookup"><span data-stu-id="2e908-141">String</span></span>  | <span data-ttu-id="2e908-142">O nome de exibição da regra.</span><span class="sxs-lookup"><span data-stu-id="2e908-142">The display name of the rule.</span></span> <span data-ttu-id="2e908-143">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e908-143">Required.</span></span>|
+|<span data-ttu-id="2e908-144">exceptions</span><span class="sxs-lookup"><span data-stu-id="2e908-144">exceptions</span></span>| [<span data-ttu-id="2e908-145">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="2e908-145">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="2e908-146">Representa condições de exceção para a regra.</span><span class="sxs-lookup"><span data-stu-id="2e908-146">Represents exception conditions for the rule.</span></span> <span data-ttu-id="2e908-147">Opcional.</span><span class="sxs-lookup"><span data-stu-id="2e908-147">Optional.</span></span> |
+|<span data-ttu-id="2e908-148">isEnabled</span><span class="sxs-lookup"><span data-stu-id="2e908-148">isEnabled</span></span> | <span data-ttu-id="2e908-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="2e908-149">Boolean</span></span> | <span data-ttu-id="2e908-150">Indica se a regra está habilitada para ser aplicada a mensagens.</span><span class="sxs-lookup"><span data-stu-id="2e908-150">Indicates whether the rule is enabled to be applied to messages.</span></span> <span data-ttu-id="2e908-151">Opcional.</span><span class="sxs-lookup"><span data-stu-id="2e908-151">Optional.</span></span> |
+|<span data-ttu-id="2e908-152">sequence</span><span class="sxs-lookup"><span data-stu-id="2e908-152">sequence</span></span>| <span data-ttu-id="2e908-153">Int32</span><span class="sxs-lookup"><span data-stu-id="2e908-153">Int32</span></span> | <span data-ttu-id="2e908-154">Indica a ordem em que a regra é executada, entre outras regras.</span><span class="sxs-lookup"><span data-stu-id="2e908-154">Indicates the order in which the rule is executed, among other rules.</span></span> <span data-ttu-id="2e908-155">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e908-155">Required.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f965c-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="f965c-155">Response</span></span>
-<span data-ttu-id="f965c-156">Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto **messageRule** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f965c-156">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2e908-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e908-156">Response</span></span>
+<span data-ttu-id="2e908-157">Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto **messageRule** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2e908-157">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f965c-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f965c-157">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f965c-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f965c-158">Request</span></span>
-<span data-ttu-id="f965c-159">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f965c-159">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2e908-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2e908-158">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2e908-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e908-159">Request</span></span>
+<span data-ttu-id="2e908-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2e908-160">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f965c-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="f965c-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2e908-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="2e908-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_messagerule_from_mailfolder"
@@ -93,22 +95,22 @@ Content-type: application/json
 }
 
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f965c-161">C#</span><span class="sxs-lookup"><span data-stu-id="f965c-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2e908-162">C#</span><span class="sxs-lookup"><span data-stu-id="2e908-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-messagerule-from-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f965c-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f965c-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2e908-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2e908-163">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-messagerule-from-mailfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f965c-163">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="f965c-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2e908-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2e908-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-messagerule-from-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f965c-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="f965c-164">Response</span></span>
-<span data-ttu-id="f965c-p110">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f965c-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2e908-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e908-165">Response</span></span>
+<span data-ttu-id="2e908-p110">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2e908-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

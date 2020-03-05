@@ -5,58 +5,60 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: af8780e9e943e6585ff4f46baab289d9f6f99dd6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 056b1491de7044efac3a51612590766949fd7a96
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414662"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456611"
 ---
-# <a name="update-oauth2permissiongrant"></a><span data-ttu-id="1fdad-103">Atualizar oAuth2PermissionGrant</span><span class="sxs-lookup"><span data-stu-id="1fdad-103">Update oAuth2PermissionGrant</span></span>
+# <a name="update-oauth2permissiongrant"></a><span data-ttu-id="bbc5d-103">Atualizar oAuth2PermissionGrant</span><span class="sxs-lookup"><span data-stu-id="bbc5d-103">Update oAuth2PermissionGrant</span></span>
+
+<span data-ttu-id="bbc5d-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="bbc5d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1fdad-104">Atualize as propriedades do objeto oAuth2PermissionGrant.</span><span class="sxs-lookup"><span data-stu-id="1fdad-104">Update the properties of oAuth2PermissionGrant object.</span></span>
+<span data-ttu-id="bbc5d-105">Atualize as propriedades do objeto oAuth2PermissionGrant.</span><span class="sxs-lookup"><span data-stu-id="bbc5d-105">Update the properties of oAuth2PermissionGrant object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1fdad-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1fdad-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bbc5d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="bbc5d-106">Permissions</span></span>
 
-<span data-ttu-id="1fdad-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1fdad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bbc5d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bbc5d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="1fdad-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1fdad-108">Permission type</span></span>      | <span data-ttu-id="1fdad-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1fdad-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bbc5d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bbc5d-109">Permission type</span></span>      | <span data-ttu-id="bbc5d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bbc5d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1fdad-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1fdad-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1fdad-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1fdad-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1fdad-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1fdad-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1fdad-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1fdad-113">Not supported.</span></span>    |
-|<span data-ttu-id="1fdad-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1fdad-114">Application</span></span> | <span data-ttu-id="1fdad-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1fdad-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="bbc5d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bbc5d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bbc5d-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bbc5d-112">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="bbc5d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bbc5d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bbc5d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bbc5d-114">Not supported.</span></span>    |
+|<span data-ttu-id="bbc5d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bbc5d-115">Application</span></span> | <span data-ttu-id="bbc5d-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bbc5d-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1fdad-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1fdad-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bbc5d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bbc5d-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /oAuth2Permissiongrants/{id}
 PATCH /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
 PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="1fdad-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1fdad-117">Request headers</span></span>
-| <span data-ttu-id="1fdad-118">Nome</span><span class="sxs-lookup"><span data-stu-id="1fdad-118">Name</span></span>       | <span data-ttu-id="1fdad-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="1fdad-119">Type</span></span> | <span data-ttu-id="1fdad-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="1fdad-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bbc5d-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bbc5d-118">Request headers</span></span>
+| <span data-ttu-id="bbc5d-119">Nome</span><span class="sxs-lookup"><span data-stu-id="bbc5d-119">Name</span></span>       | <span data-ttu-id="bbc5d-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="bbc5d-120">Type</span></span> | <span data-ttu-id="bbc5d-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="bbc5d-121">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="1fdad-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="1fdad-121">Authorization</span></span>  | <span data-ttu-id="1fdad-122">string</span><span class="sxs-lookup"><span data-stu-id="1fdad-122">string</span></span>  | <span data-ttu-id="1fdad-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1fdad-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bbc5d-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="bbc5d-122">Authorization</span></span>  | <span data-ttu-id="bbc5d-123">string</span><span class="sxs-lookup"><span data-stu-id="bbc5d-123">string</span></span>  | <span data-ttu-id="bbc5d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bbc5d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1fdad-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1fdad-125">Request body</span></span>
-<span data-ttu-id="1fdad-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="1fdad-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bbc5d-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bbc5d-126">Request body</span></span>
+<span data-ttu-id="bbc5d-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="bbc5d-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1fdad-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1fdad-129">Property</span></span>     | <span data-ttu-id="1fdad-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="1fdad-130">Type</span></span>   |<span data-ttu-id="1fdad-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="1fdad-131">Description</span></span>|
+| <span data-ttu-id="bbc5d-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bbc5d-130">Property</span></span>     | <span data-ttu-id="bbc5d-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="bbc5d-131">Type</span></span>   |<span data-ttu-id="bbc5d-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="bbc5d-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1fdad-132">scope</span><span class="sxs-lookup"><span data-stu-id="1fdad-132">scope</span></span>|<span data-ttu-id="1fdad-133">String</span><span class="sxs-lookup"><span data-stu-id="1fdad-133">String</span></span>| <span data-ttu-id="1fdad-134">Especifica o valor da declaração do escopo que o aplicativo de recursos deve esperar no token de acesso do OAuth 2,0.</span><span class="sxs-lookup"><span data-stu-id="1fdad-134">Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token.</span></span> |
+|<span data-ttu-id="bbc5d-133">scope</span><span class="sxs-lookup"><span data-stu-id="bbc5d-133">scope</span></span>|<span data-ttu-id="bbc5d-134">String</span><span class="sxs-lookup"><span data-stu-id="bbc5d-134">String</span></span>| <span data-ttu-id="bbc5d-135">Especifica o valor da declaração do escopo que o aplicativo de recursos deve esperar no token de acesso do OAuth 2,0.</span><span class="sxs-lookup"><span data-stu-id="bbc5d-135">Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1fdad-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="1fdad-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bbc5d-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="bbc5d-136">Response</span></span>
 
-<span data-ttu-id="1fdad-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1fdad-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="bbc5d-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bbc5d-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1fdad-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1fdad-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1fdad-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1fdad-139">Request</span></span>
+## <a name="example"></a><span data-ttu-id="bbc5d-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bbc5d-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bbc5d-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bbc5d-140">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1fdad-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="1fdad-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bbc5d-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="bbc5d-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_oAuth2Permissiongrant"
@@ -70,21 +72,21 @@ Content-length: 30
   "scope": "scope-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1fdad-141">C#</span><span class="sxs-lookup"><span data-stu-id="1fdad-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bbc5d-142">C#</span><span class="sxs-lookup"><span data-stu-id="bbc5d-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1fdad-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1fdad-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bbc5d-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bbc5d-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-oauth2permissiongrant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1fdad-143">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1fdad-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bbc5d-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bbc5d-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="1fdad-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="1fdad-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="bbc5d-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="bbc5d-145">Response</span></span>
 
 <!-- {
   "blockType": "response",
