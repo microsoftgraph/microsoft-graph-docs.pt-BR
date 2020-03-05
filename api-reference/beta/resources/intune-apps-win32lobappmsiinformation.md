@@ -5,37 +5,39 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 958cc834a2044e623a8fa1cf7ed37bed1ec7b1f9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 92ff70c8b1bbf63ce6fd81321282a0f61f4accc3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335645"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490690"
 ---
-# <a name="win32lobappmsiinformation-resource-type"></a><span data-ttu-id="11deb-103">tipo de recurso win32LobAppMsiInformation</span><span class="sxs-lookup"><span data-stu-id="11deb-103">win32LobAppMsiInformation resource type</span></span>
+# <a name="win32lobappmsiinformation-resource-type"></a><span data-ttu-id="5b1af-103">tipo de recurso win32LobAppMsiInformation</span><span class="sxs-lookup"><span data-stu-id="5b1af-103">win32LobAppMsiInformation resource type</span></span>
 
-> <span data-ttu-id="11deb-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="11deb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="5b1af-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5b1af-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="11deb-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="11deb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5b1af-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5b1af-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="11deb-106">Contém as propriedades do aplicativo MSI para um aplicativo Win32.</span><span class="sxs-lookup"><span data-stu-id="11deb-106">Contains MSI app properties for a Win32 App.</span></span>
+> <span data-ttu-id="5b1af-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5b1af-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="11deb-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="11deb-107">Properties</span></span>
-|<span data-ttu-id="11deb-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="11deb-108">Property</span></span>|<span data-ttu-id="11deb-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="11deb-109">Type</span></span>|<span data-ttu-id="11deb-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="11deb-110">Description</span></span>|
+<span data-ttu-id="5b1af-107">Contém as propriedades do aplicativo MSI para um aplicativo Win32.</span><span class="sxs-lookup"><span data-stu-id="5b1af-107">Contains MSI app properties for a Win32 App.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="5b1af-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5b1af-108">Properties</span></span>
+|<span data-ttu-id="5b1af-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5b1af-109">Property</span></span>|<span data-ttu-id="5b1af-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="5b1af-110">Type</span></span>|<span data-ttu-id="5b1af-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="5b1af-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="11deb-111">productCode</span><span class="sxs-lookup"><span data-stu-id="11deb-111">productCode</span></span>|<span data-ttu-id="11deb-112">String</span><span class="sxs-lookup"><span data-stu-id="11deb-112">String</span></span>|<span data-ttu-id="11deb-113">O código do produto MSI.</span><span class="sxs-lookup"><span data-stu-id="11deb-113">The MSI product code.</span></span>|
-|<span data-ttu-id="11deb-114">productVersion</span><span class="sxs-lookup"><span data-stu-id="11deb-114">productVersion</span></span>|<span data-ttu-id="11deb-115">String</span><span class="sxs-lookup"><span data-stu-id="11deb-115">String</span></span>|<span data-ttu-id="11deb-116">A versão do produto MSI.</span><span class="sxs-lookup"><span data-stu-id="11deb-116">The MSI product version.</span></span>|
-|<span data-ttu-id="11deb-117">upgradeCode</span><span class="sxs-lookup"><span data-stu-id="11deb-117">upgradeCode</span></span>|<span data-ttu-id="11deb-118">String</span><span class="sxs-lookup"><span data-stu-id="11deb-118">String</span></span>|<span data-ttu-id="11deb-119">O código de atualização MSI.</span><span class="sxs-lookup"><span data-stu-id="11deb-119">The MSI upgrade code.</span></span>|
-|<span data-ttu-id="11deb-120">requiresReboot</span><span class="sxs-lookup"><span data-stu-id="11deb-120">requiresReboot</span></span>|<span data-ttu-id="11deb-121">Booliano</span><span class="sxs-lookup"><span data-stu-id="11deb-121">Boolean</span></span>|<span data-ttu-id="11deb-122">Se o aplicativo MSI exige a reinicialização do computador para concluir a instalação.</span><span class="sxs-lookup"><span data-stu-id="11deb-122">Whether the MSI app requires the machine to reboot to complete installation.</span></span>|
-|<span data-ttu-id="11deb-123">PackageType</span><span class="sxs-lookup"><span data-stu-id="11deb-123">packageType</span></span>|[<span data-ttu-id="11deb-124">win32LobAppMsiPackageType</span><span class="sxs-lookup"><span data-stu-id="11deb-124">win32LobAppMsiPackageType</span></span>](../resources/intune-apps-win32lobappmsipackagetype.md)|<span data-ttu-id="11deb-125">O tipo de pacote MSI.</span><span class="sxs-lookup"><span data-stu-id="11deb-125">The MSI package type.</span></span> <span data-ttu-id="11deb-126">Os valores possíveis são: `perMachine`, `perUser`, `dualPurpose`.</span><span class="sxs-lookup"><span data-stu-id="11deb-126">Possible values are: `perMachine`, `perUser`, `dualPurpose`.</span></span>|
-|<span data-ttu-id="11deb-127">productName</span><span class="sxs-lookup"><span data-stu-id="11deb-127">productName</span></span>|<span data-ttu-id="11deb-128">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="11deb-128">String</span></span>|<span data-ttu-id="11deb-129">O nome do produto MSI.</span><span class="sxs-lookup"><span data-stu-id="11deb-129">The MSI product name.</span></span>|
-|<span data-ttu-id="11deb-130">publicador</span><span class="sxs-lookup"><span data-stu-id="11deb-130">publisher</span></span>|<span data-ttu-id="11deb-131">String</span><span class="sxs-lookup"><span data-stu-id="11deb-131">String</span></span>|<span data-ttu-id="11deb-132">O Publicador MSI.</span><span class="sxs-lookup"><span data-stu-id="11deb-132">The MSI publisher.</span></span>|
+|<span data-ttu-id="5b1af-112">productCode</span><span class="sxs-lookup"><span data-stu-id="5b1af-112">productCode</span></span>|<span data-ttu-id="5b1af-113">String</span><span class="sxs-lookup"><span data-stu-id="5b1af-113">String</span></span>|<span data-ttu-id="5b1af-114">O código do produto MSI.</span><span class="sxs-lookup"><span data-stu-id="5b1af-114">The MSI product code.</span></span>|
+|<span data-ttu-id="5b1af-115">productVersion</span><span class="sxs-lookup"><span data-stu-id="5b1af-115">productVersion</span></span>|<span data-ttu-id="5b1af-116">String</span><span class="sxs-lookup"><span data-stu-id="5b1af-116">String</span></span>|<span data-ttu-id="5b1af-117">A versão do produto MSI.</span><span class="sxs-lookup"><span data-stu-id="5b1af-117">The MSI product version.</span></span>|
+|<span data-ttu-id="5b1af-118">upgradeCode</span><span class="sxs-lookup"><span data-stu-id="5b1af-118">upgradeCode</span></span>|<span data-ttu-id="5b1af-119">String</span><span class="sxs-lookup"><span data-stu-id="5b1af-119">String</span></span>|<span data-ttu-id="5b1af-120">O código de atualização MSI.</span><span class="sxs-lookup"><span data-stu-id="5b1af-120">The MSI upgrade code.</span></span>|
+|<span data-ttu-id="5b1af-121">requiresReboot</span><span class="sxs-lookup"><span data-stu-id="5b1af-121">requiresReboot</span></span>|<span data-ttu-id="5b1af-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="5b1af-122">Boolean</span></span>|<span data-ttu-id="5b1af-123">Se o aplicativo MSI exige a reinicialização do computador para concluir a instalação.</span><span class="sxs-lookup"><span data-stu-id="5b1af-123">Whether the MSI app requires the machine to reboot to complete installation.</span></span>|
+|<span data-ttu-id="5b1af-124">PackageType</span><span class="sxs-lookup"><span data-stu-id="5b1af-124">packageType</span></span>|[<span data-ttu-id="5b1af-125">win32LobAppMsiPackageType</span><span class="sxs-lookup"><span data-stu-id="5b1af-125">win32LobAppMsiPackageType</span></span>](../resources/intune-apps-win32lobappmsipackagetype.md)|<span data-ttu-id="5b1af-126">O tipo de pacote MSI.</span><span class="sxs-lookup"><span data-stu-id="5b1af-126">The MSI package type.</span></span> <span data-ttu-id="5b1af-127">Os valores possíveis são: `perMachine`, `perUser`, `dualPurpose`.</span><span class="sxs-lookup"><span data-stu-id="5b1af-127">Possible values are: `perMachine`, `perUser`, `dualPurpose`.</span></span>|
+|<span data-ttu-id="5b1af-128">productName</span><span class="sxs-lookup"><span data-stu-id="5b1af-128">productName</span></span>|<span data-ttu-id="5b1af-129">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5b1af-129">String</span></span>|<span data-ttu-id="5b1af-130">O nome do produto MSI.</span><span class="sxs-lookup"><span data-stu-id="5b1af-130">The MSI product name.</span></span>|
+|<span data-ttu-id="5b1af-131">publicador</span><span class="sxs-lookup"><span data-stu-id="5b1af-131">publisher</span></span>|<span data-ttu-id="5b1af-132">String</span><span class="sxs-lookup"><span data-stu-id="5b1af-132">String</span></span>|<span data-ttu-id="5b1af-133">O Publicador MSI.</span><span class="sxs-lookup"><span data-stu-id="5b1af-133">The MSI publisher.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="11deb-133">Relações</span><span class="sxs-lookup"><span data-stu-id="11deb-133">Relationships</span></span>
-<span data-ttu-id="11deb-134">Nenhum</span><span class="sxs-lookup"><span data-stu-id="11deb-134">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="5b1af-134">Relações</span><span class="sxs-lookup"><span data-stu-id="5b1af-134">Relationships</span></span>
+<span data-ttu-id="5b1af-135">Nenhum</span><span class="sxs-lookup"><span data-stu-id="5b1af-135">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="11deb-135">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="11deb-135">JSON Representation</span></span>
-<span data-ttu-id="11deb-136">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="11deb-136">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5b1af-136">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5b1af-136">JSON Representation</span></span>
+<span data-ttu-id="5b1af-137">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5b1af-137">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppMsiInformation"

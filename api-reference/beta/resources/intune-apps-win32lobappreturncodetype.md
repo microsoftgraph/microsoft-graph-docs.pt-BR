@@ -5,29 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 19ecf9f8047b1fe73cf6cff9efdd140f39ece35a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d97896382ef5b596cdded326f3579f746d9b09b4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335491"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490256"
 ---
-# <a name="win32lobappreturncodetype-enum-type"></a><span data-ttu-id="7507f-103">tipo de enumeração win32LobAppReturnCodeType</span><span class="sxs-lookup"><span data-stu-id="7507f-103">win32LobAppReturnCodeType enum type</span></span>
+# <a name="win32lobappreturncodetype-enum-type"></a><span data-ttu-id="18c4c-103">tipo de enumeração win32LobAppReturnCodeType</span><span class="sxs-lookup"><span data-stu-id="18c4c-103">win32LobAppReturnCodeType enum type</span></span>
 
-> <span data-ttu-id="7507f-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7507f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="18c4c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="18c4c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7507f-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7507f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="18c4c-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="18c4c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="7507f-106">Indica o tipo de código de retorno.</span><span class="sxs-lookup"><span data-stu-id="7507f-106">Indicates the type of return code.</span></span>
+> <span data-ttu-id="18c4c-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="18c4c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="7507f-107">Membros</span><span class="sxs-lookup"><span data-stu-id="7507f-107">Members</span></span>
-|<span data-ttu-id="7507f-108">Membro</span><span class="sxs-lookup"><span data-stu-id="7507f-108">Member</span></span>|<span data-ttu-id="7507f-109">Valor</span><span class="sxs-lookup"><span data-stu-id="7507f-109">Value</span></span>|<span data-ttu-id="7507f-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="7507f-110">Description</span></span>|
+<span data-ttu-id="18c4c-107">Indica o tipo de código de retorno.</span><span class="sxs-lookup"><span data-stu-id="18c4c-107">Indicates the type of return code.</span></span>
+
+## <a name="members"></a><span data-ttu-id="18c4c-108">Membros</span><span class="sxs-lookup"><span data-stu-id="18c4c-108">Members</span></span>
+|<span data-ttu-id="18c4c-109">Membro</span><span class="sxs-lookup"><span data-stu-id="18c4c-109">Member</span></span>|<span data-ttu-id="18c4c-110">Valor</span><span class="sxs-lookup"><span data-stu-id="18c4c-110">Value</span></span>|<span data-ttu-id="18c4c-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="18c4c-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7507f-111">falhou</span><span class="sxs-lookup"><span data-stu-id="7507f-111">failed</span></span>|<span data-ttu-id="7507f-112">,0</span><span class="sxs-lookup"><span data-stu-id="7507f-112">0</span></span>|<span data-ttu-id="7507f-113">Falhou.</span><span class="sxs-lookup"><span data-stu-id="7507f-113">Failed.</span></span>|
-|<span data-ttu-id="7507f-114">sucesso</span><span class="sxs-lookup"><span data-stu-id="7507f-114">success</span></span>|<span data-ttu-id="7507f-115">1</span><span class="sxs-lookup"><span data-stu-id="7507f-115">1</span></span>|<span data-ttu-id="7507f-116">Audita.</span><span class="sxs-lookup"><span data-stu-id="7507f-116">Success.</span></span>|
-|<span data-ttu-id="7507f-117">softReboot</span><span class="sxs-lookup"><span data-stu-id="7507f-117">softReboot</span></span>|<span data-ttu-id="7507f-118">duas</span><span class="sxs-lookup"><span data-stu-id="7507f-118">2</span></span>|<span data-ttu-id="7507f-119">Soft-a reinicialização é necessária.</span><span class="sxs-lookup"><span data-stu-id="7507f-119">Soft-reboot is required.</span></span>|
-|<span data-ttu-id="7507f-120">hardReboot</span><span class="sxs-lookup"><span data-stu-id="7507f-120">hardReboot</span></span>|<span data-ttu-id="7507f-121">3D</span><span class="sxs-lookup"><span data-stu-id="7507f-121">3</span></span>|<span data-ttu-id="7507f-122">É necessário reinicializar o disco rígido.</span><span class="sxs-lookup"><span data-stu-id="7507f-122">Hard-reboot is required.</span></span>|
-|<span data-ttu-id="7507f-123">Nova</span><span class="sxs-lookup"><span data-stu-id="7507f-123">retry</span></span>|<span data-ttu-id="7507f-124">quatro</span><span class="sxs-lookup"><span data-stu-id="7507f-124">4</span></span>|<span data-ttu-id="7507f-125">Tente novamente.</span><span class="sxs-lookup"><span data-stu-id="7507f-125">Retry.</span></span>|
+|<span data-ttu-id="18c4c-112">falhou</span><span class="sxs-lookup"><span data-stu-id="18c4c-112">failed</span></span>|<span data-ttu-id="18c4c-113">,0</span><span class="sxs-lookup"><span data-stu-id="18c4c-113">0</span></span>|<span data-ttu-id="18c4c-114">Falhou.</span><span class="sxs-lookup"><span data-stu-id="18c4c-114">Failed.</span></span>|
+|<span data-ttu-id="18c4c-115">sucesso</span><span class="sxs-lookup"><span data-stu-id="18c4c-115">success</span></span>|<span data-ttu-id="18c4c-116">1 </span><span class="sxs-lookup"><span data-stu-id="18c4c-116">1</span></span>|<span data-ttu-id="18c4c-117">Audita.</span><span class="sxs-lookup"><span data-stu-id="18c4c-117">Success.</span></span>|
+|<span data-ttu-id="18c4c-118">softReboot</span><span class="sxs-lookup"><span data-stu-id="18c4c-118">softReboot</span></span>|<span data-ttu-id="18c4c-119">2 </span><span class="sxs-lookup"><span data-stu-id="18c4c-119">2</span></span>|<span data-ttu-id="18c4c-120">Soft-a reinicialização é necessária.</span><span class="sxs-lookup"><span data-stu-id="18c4c-120">Soft-reboot is required.</span></span>|
+|<span data-ttu-id="18c4c-121">hardReboot</span><span class="sxs-lookup"><span data-stu-id="18c4c-121">hardReboot</span></span>|<span data-ttu-id="18c4c-122">3 </span><span class="sxs-lookup"><span data-stu-id="18c4c-122">3</span></span>|<span data-ttu-id="18c4c-123">É necessário reinicializar o disco rígido.</span><span class="sxs-lookup"><span data-stu-id="18c4c-123">Hard-reboot is required.</span></span>|
+|<span data-ttu-id="18c4c-124">Nova</span><span class="sxs-lookup"><span data-stu-id="18c4c-124">retry</span></span>|<span data-ttu-id="18c4c-125">4 </span><span class="sxs-lookup"><span data-stu-id="18c4c-125">4</span></span>|<span data-ttu-id="18c4c-126">Tente novamente.</span><span class="sxs-lookup"><span data-stu-id="18c4c-126">Retry.</span></span>|
 
 
 

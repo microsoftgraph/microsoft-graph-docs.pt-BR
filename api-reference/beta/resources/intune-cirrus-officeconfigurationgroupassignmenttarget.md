@@ -5,33 +5,35 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb97541a86e820e02e56a20568d3869a047dc2c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e844f54486e26a6e41fdb40b1fba2be08bac10fe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011957"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488135"
 ---
-# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a><span data-ttu-id="662df-103">tipo de recurso officeConfigurationGroupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="662df-103">officeConfigurationGroupAssignmentTarget resource type</span></span>
+# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a><span data-ttu-id="fe3b2-103">tipo de recurso officeConfigurationGroupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="fe3b2-103">officeConfigurationGroupAssignmentTarget resource type</span></span>
 
-> <span data-ttu-id="662df-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="662df-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="fe3b2-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="fe3b2-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="662df-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="662df-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fe3b2-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="fe3b2-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="662df-106">Destino de atribuição de grupo AAD de configuração de cliente do Office.</span><span class="sxs-lookup"><span data-stu-id="662df-106">Office client configuration AAD group assignment target.</span></span>
+> <span data-ttu-id="fe3b2-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="fe3b2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="662df-107">Herda de [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="662df-107">Inherits from [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)</span></span>
+<span data-ttu-id="fe3b2-107">Destino de atribuição de grupo AAD de configuração de cliente do Office.</span><span class="sxs-lookup"><span data-stu-id="fe3b2-107">Office client configuration AAD group assignment target.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="662df-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="662df-108">Properties</span></span>
-|<span data-ttu-id="662df-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="662df-109">Property</span></span>|<span data-ttu-id="662df-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="662df-110">Type</span></span>|<span data-ttu-id="662df-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="662df-111">Description</span></span>|
+<span data-ttu-id="fe3b2-108">Herda de [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="fe3b2-108">Inherits from [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="fe3b2-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fe3b2-109">Properties</span></span>
+|<span data-ttu-id="fe3b2-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fe3b2-110">Property</span></span>|<span data-ttu-id="fe3b2-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="fe3b2-111">Type</span></span>|<span data-ttu-id="fe3b2-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="fe3b2-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="662df-112">groupId</span><span class="sxs-lookup"><span data-stu-id="662df-112">groupId</span></span>|<span data-ttu-id="662df-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="662df-113">String</span></span>|<span data-ttu-id="662df-114">A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="662df-114">The Id of the AAD group we are targeting the device configuration to.</span></span>|
+|<span data-ttu-id="fe3b2-113">groupId</span><span class="sxs-lookup"><span data-stu-id="fe3b2-113">groupId</span></span>|<span data-ttu-id="fe3b2-114">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fe3b2-114">String</span></span>|<span data-ttu-id="fe3b2-115">A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="fe3b2-115">The Id of the AAD group we are targeting the device configuration to.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="662df-115">Relações</span><span class="sxs-lookup"><span data-stu-id="662df-115">Relationships</span></span>
-<span data-ttu-id="662df-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="662df-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="fe3b2-116">Relações</span><span class="sxs-lookup"><span data-stu-id="fe3b2-116">Relationships</span></span>
+<span data-ttu-id="fe3b2-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="fe3b2-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="662df-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="662df-117">JSON Representation</span></span>
-<span data-ttu-id="662df-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="662df-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fe3b2-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fe3b2-118">JSON Representation</span></span>
+<span data-ttu-id="fe3b2-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fe3b2-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
