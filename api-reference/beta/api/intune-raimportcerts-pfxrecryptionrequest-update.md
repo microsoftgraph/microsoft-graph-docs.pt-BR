@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a7af58e0c5e33db45ca3af90bfd7fd24e749f20d
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: d1bd51caa6aa72fffc03da24265f5a11e9fa9550
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161572"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42460140"
 ---
 # <a name="update-pfxrecryptionrequest"></a>Atualizar pfxRecryptionRequest
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
