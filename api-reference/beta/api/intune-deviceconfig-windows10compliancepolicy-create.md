@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ceb9f9adebe57df4bdfc460eeef5ce8a05f2a3f8
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: bf9c8c82d98c2fc560e8bee6123d8347121af8bf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947726"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42482024"
 ---
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
@@ -68,9 +70,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado.|
 |requireHealthyDeviceReport|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
-|osMinimumVersion|Cadeia de Caracteres|Versão mínima do Windows 10.|
+|osMinimumVersion|String|Versão mínima do Windows 10.|
 |osMaximumVersion|String|Versão máxima do Windows 10.|
-|mobileOsMinimumVersion|Cadeia de Caracteres|Versão mínima do Windows Phone.|
+|mobileOsMinimumVersion|String|Versão mínima do Windows Phone.|
 |mobileOsMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
 |bitLockerEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
@@ -79,7 +81,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
 |Propriedades activefirewallrequired|Boolean|Exigir firewall ativo em dispositivos Windows.|
 |defenderEnabled|Boolean|Requer o Windows Defender Antimalware em dispositivos Windows.|
-|defenderVersion|Cadeia de Caracteres|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
+|defenderVersion|String|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
 |signatureOutOfDate|Boolean|Requer que a assinatura antimalware do Windows Defender esteja atualizada em dispositivos Windows.|
 |rtpEnabled|Boolean|Requer a proteção em tempo real do Windows Defender Antimalware em dispositivos Windows.|
 |antivirusRequired|Boolean|Exigir que qualquer solução antivírus registrada com o Windows Decurity Center seja ativada e monitorando (por exemplo, Symantec, Windows Defender).|

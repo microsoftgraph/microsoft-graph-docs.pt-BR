@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83ec7e6abdfcf262e6bbd1016cccb3f196ab319c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 727ae548fad91fae302fdb6e3bc225ccbdc5d225
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334959"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487379"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>tipo de recurso advancedThreatProtectionOnboardingDeviceSettingState
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Estado de integração ATP para um determinado dispositivo.
 
@@ -33,7 +35,7 @@ Estado de integração ATP para um determinado dispositivo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` ,,,,,,,, , `blackberry`, `palm`, `unknown`.|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`,,,,,,,,,,.|
 |configuração|String|O nome da classe de configuração e o nome da propriedade.|
 |settingName|String|O nome da configuração sendo relatada|
 |deviceId|String|A ID do dispositivo sendo relatada|

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f0c20b73c753ea4d51e18469f97841b02e01e83
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 73536b8e1343d2c69296ca7c8149f4fad0e9a34b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331774"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491327"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>tipo de recurso mobileContainedApp
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe abstrata que representa um aplicativo contido em um mobileApp que atua como um pacote.
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e01d39a60b9b1e329bcfd849cdbfaddeaf175b8e
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 6471aee5a287a9977800f273c438719b1e9daadc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162446"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42485734"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>tipo de enumeração androidEnterpriseAlwaysOnVpnPackageType
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,11 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|cliente|1|Nome do pacote personalizado, o profissionais pode fornecer o nome do pacote do cliente VPN que eles desejam usar.|
-|ciscoAnyConnect|duas|Cisco AnyConnect.|
-|f5Access|3D|Acesso a F5.|
-|paloAltoNetworksGlobalProtect|quatro|GlobalProtect de redes de Palo Alto.|
-|pulseSecure|0,5|Pulso seguro.|
+|cliente|1 |Nome do pacote personalizado, o profissionais pode fornecer o nome do pacote do cliente VPN que eles desejam usar.|
+|ciscoAnyConnect|2 |Cisco AnyConnect.|
+|f5Access|3 |Acesso a F5.|
+|paloAltoNetworksGlobalProtect|4 |GlobalProtect de redes de Palo Alto.|
+|pulseSecure|5 |Pulso seguro.|
 
 
 

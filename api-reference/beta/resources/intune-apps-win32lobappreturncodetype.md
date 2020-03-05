@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 19ecf9f8047b1fe73cf6cff9efdd140f39ece35a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d97896382ef5b596cdded326f3579f746d9b09b4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335491"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490256"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>tipo de enumeração win32LobAppReturnCodeType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Indica o tipo de código de retorno.
 
@@ -24,10 +26,10 @@ Indica o tipo de código de retorno.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |falhou|,0|Falhou.|
-|sucesso|1|Audita.|
-|softReboot|duas|Soft-a reinicialização é necessária.|
-|hardReboot|3D|É necessário reinicializar o disco rígido.|
-|Nova|quatro|Tente novamente.|
+|sucesso|1 |Audita.|
+|softReboot|2 |Soft-a reinicialização é necessária.|
+|hardReboot|3 |É necessário reinicializar o disco rígido.|
+|Nova|4 |Tente novamente.|
 
 
 

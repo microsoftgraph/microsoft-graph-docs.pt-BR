@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ff16af165c41103202d870e3a389fd73fc94d804
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3d5c9ba006bd155f2452242feadc5d965bf6d451
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334777"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42486098"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>tipo de enumeração androidDeviceOwnerSystemUpdateInstallType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipos de atualização do sistema para o proprietário do dispositivo Android.
 
@@ -24,9 +26,9 @@ Tipos de atualização do sistema para o proprietário do dispositivo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Comportamento padrão do dispositivo, que normalmente solicita que o usuário aceite atualizações do sistema.|
-|adiamento|1|Adiar a instalação automática de atualizações até 30 dias.|
-|em janelas|duas|Instale automaticamente dentro de uma janela de manutenção diária.|
-|Automático|3D|Instalar atualizações automaticamente o mais rápido possível.|
+|adiamento|1 |Adiar a instalação automática de atualizações até 30 dias.|
+|em janelas|2 |Instale automaticamente dentro de uma janela de manutenção diária.|
+|Automático|3 |Instalar atualizações automaticamente o mais rápido possível.|
 
 
 

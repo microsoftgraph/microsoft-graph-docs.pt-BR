@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff66028009505150010fac19baff81c9eef07c5b
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9263b339eefc18dab24e46457b78e0095ed58e00
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947852"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42483921"
 ---
 # <a name="create-restrictedappsviolation"></a>Criar restrictedAppsViolation
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +56,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar restrict
 |id|String|Identificador exclusivo do objeto. Composto de AccountId, DeviceID, PolicyId e userId|
 |userId|Cadeia de caracteres|O identificador exclusivo do usuário deve ser GUID|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|Cadeia de Caracteres|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
+|managedDeviceId|String|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
 |deviceName|String|Nome do dispositivo|
-|deviceConfigurationId|Cadeia de Caracteres|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
-|deviceConfigurationName|Cadeia de Caracteres|Nome do perfil de configuração do dispositivo|
+|deviceConfigurationId|String|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
+|deviceConfigurationName|String|Nome do perfil de configuração do dispositivo|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado de aplicativos restritos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|coleção [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violados|

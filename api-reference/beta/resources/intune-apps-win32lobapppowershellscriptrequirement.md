@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 854a1d348d4701ab52895856df306791a20c91d5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6f7826f23746c5579212ef1ba4dc67f22d299272
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335568"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490557"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>tipo de recurso win32LobAppPowerShellScriptRequirement
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades de script do PowerShell para detectar um aplicativo Win32
 
@@ -29,8 +31,8 @@ Herda de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequiremen
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção herdada de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |detecçaovalue|String|O valor de detecção herdado de [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |displayName|String|O nome de exibição exclusivo para esta regra|
-|enforceSignatureCheck|Booliano|Um valor que indica se a verificação de assinatura é imposta|
-|runAs32Bit|Booliano|Um valor que indica se este script deve ser executado como 32 bits|
+|enforceSignatureCheck|Boolean|Um valor que indica se a verificação de assinatura é imposta|
+|runAs32Bit|Boolean|Um valor que indica se este script deve ser executado como 32 bits|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que o script é executado. Os valores possíveis são: `system` e `user`.|
 |scriptContent|String|O conteúdo de script codificado em base64 para detectar o aplicativo de LoB (linha de negócios) do Win32|
 |Detecção|[win32LobAppPowerShellScriptDetectionType](../resources/intune-apps-win32lobapppowershellscriptdetectiontype.md)|O tipo de detecção para saída de script. Os valores possíveis são: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|

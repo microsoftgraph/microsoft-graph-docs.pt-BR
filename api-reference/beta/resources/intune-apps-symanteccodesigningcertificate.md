@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 330dd361c01d59ede307945bfae4b5d043461621
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8ee7473a782df120a83d6d534a5f63de14885311
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335834"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491026"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso symantecCodeSigningCertificate
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
@@ -34,7 +36,7 @@ Ainda não documentado
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo. pfx.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|subject|Cadeia de caracteres|O valor de entidade para o certificado.|
+|assunto|Cadeia de caracteres|O valor de entidade para o certificado.|
 |issuerName|String|O nome do emissor do certificado.|
 |emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|

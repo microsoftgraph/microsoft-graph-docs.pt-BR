@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eef4e5788be1c725ce9bfe2bc6fb2bd298394450
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2b76572f56e219a08a7dc7452e184e31be121ae4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955733"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491341"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>tipo de recurso mobileAppRelationshipState
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,9 +25,9 @@ Descreve os detalhes de status da instalação do aplicativo filho no contexto d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|sourceIds|Coleção de cadeias de caracteres|O conjunto de IDs do aplicativo móvel de origem.|
-|targetId|Cadeia de Caracteres|A ID do aplicativo de destino relacionado.|
-|targetDisplayName|Cadeia de Caracteres|O nome de exibição do aplicativo de destino relacionado.|
+|sourceIds|String collection|O conjunto de IDs do aplicativo móvel de origem.|
+|targetId|String|A ID do aplicativo de destino relacionado.|
+|targetDisplayName|String|O nome de exibição do aplicativo de destino relacionado.|
 |deviceId|Cadeia de caracteres|A ID de dispositivo correspondente.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo do aplicativo de destino. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails`, `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet`, `dependencyPendingReboot`, `dependencyWithAutoInstallDisabled`, `seeInstallErrorCode`, `autoInstallDisabled`, `seeUninstallErrorCode`, `pendingReboot`, `installingDependencies`, `contentDownloaded`, `powerShellScriptRequirementNotMet`, `registryRequirementNotMet`, `fileSystemRequirementNotMet`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|

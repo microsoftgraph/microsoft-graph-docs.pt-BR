@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 318a85763376eb0c301e9906c6ea2ac507ee7fcd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 38497db6cbc8c144d7b424404635e1f4e64d5b29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342156"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491778"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades de um único arquivo de instalação associado uma versão específica de mobileAppContent.
 
@@ -38,14 +40,14 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
 |id|String|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|name|String|O nome do arquivo.|
+|nome|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
 |manifest|Binária|As informações do manifesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|O estado da solicitação de carregamento atual. Os valores possíveis são: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isframeworkfile|Booliano|Um valor que indica se o arquivo é um arquivo de estrutura.|
-|IsDependency|Booliano|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
+|isframeworkfile|Boolean|Um valor que indica se o arquivo é um arquivo de estrutura.|
+|IsDependency|Boolean|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

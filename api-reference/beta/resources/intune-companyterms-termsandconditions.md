@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 788c128540d20effeaafcb254019e6b1a76c709a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1f93c85c1ff8b60f4021d5fbf5ed9078baa5edfc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198982"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487869"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma entidade termsAndConditions representa os metadados e conteúdos de determinada política de Termos e Condições (T&C). Os conteúdos das políticas da T&C são apresentados aos usuários na primeira tentativa de registro no Intune, e posteriormente, nas edições em que um administrador solicitou a nova aceitação. Eles permitem que os administradores comuniquem as provisões com as quais um usuário deve concordar para que os dispositivos sejam registrados no Intune.
 
@@ -32,17 +34,17 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da política de T&C.|
+|id|String|Identificador exclusivo da política de T&C.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |modifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|Nome fornecido pelo administrador para a política de T&C. |
-|descrição|String|Descrição fornecida pelo administrador para a política de T&C.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
+|description|String|Descrição fornecida pelo administrador para a política de T&C.|
 |title|String|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

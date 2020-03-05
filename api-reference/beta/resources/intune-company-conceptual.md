@@ -4,19 +4,20 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: conceptualPageType
-ms.openlocfilehash: a94e8179bd0064c7eb10f88551b7192f830cdcd4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58eb3050ab2057c0178c77e5ae0a309b708096f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011943"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487946"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Termos e condições da empresa no Microsoft Intune
 
+Namespace: Microsoft. Graph
+
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 É possível implantar termos e condições do Intune em grupos de usuários para explicar como o registro, o acesso a recursos de trabalho e o aplicativo Portal da Empresa afetam dispositivos e usuários. Os usuários devem aceitar os termos e condições antes de usarem o Portal da Empresa para registrar e acessar o trabalho deles.
 

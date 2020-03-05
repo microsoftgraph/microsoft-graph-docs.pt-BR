@@ -5,18 +5,20 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb97541a86e820e02e56a20568d3869a047dc2c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e844f54486e26a6e41fdb40b1fba2be08bac10fe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011957"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488135"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationGroupAssignmentTarget
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Destino de atribuição de grupo AAD de configuração de cliente do Office.
 

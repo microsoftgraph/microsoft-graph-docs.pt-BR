@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 101f7a96fc95f00a739dfcf27384a3668d170eed
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e9c729c7a3d1e4d8a33136913f8c718b7e13b49d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335631"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490613"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>tipo de enumeração win32LobAppMsiPackageType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Indica o tipo de pacote de um Win32LobApp MSI.
 
@@ -24,8 +26,8 @@ Indica o tipo de pacote de um Win32LobApp MSI.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |permachine|,0|Indica um pacote de aplicativo por máquina.|
-|perUser|1|Indica um pacote de aplicativo por usuário.|
-|dualPurpose|duas|Indica um pacote de aplicativos de uso duplo.|
+|perUser|1 |Indica um pacote de aplicativo por usuário.|
+|dualPurpose|2 |Indica um pacote de aplicativos de uso duplo.|
 
 
 

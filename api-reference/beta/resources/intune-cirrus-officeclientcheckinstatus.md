@@ -5,18 +5,20 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df8f1927329a34a51b5f6d8738faec05be01b451
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b5509fed7c7dba43a9070695982c120f007f097
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36011999"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488541"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso officeClientCheckinStatus
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que descreve as estatísticas de check-in do locatário.
 ## <a name="properties"></a>Propriedades
@@ -26,11 +28,11 @@ Entidade que descreve as estatísticas de check-in do locatário.
 |deviceName|String|Nome do dispositivo que está tentando fazer check-in.|
 |devicePlatform|String|Plataforma do dispositivo que está tentando fazer check-in.|
 |devicePlatformVersion|String|Versão da plataforma do dispositivo que está tentando fazer check-in.|
-|wasSuccessful|Booliano|Se o último check-in foi bem-sucedido.|
+|wasSuccessful|Boolean|Se o último check-in foi bem-sucedido.|
 |userId|String|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Tempo de check-in do último dispositivo em UTC.|
 |errorMessage|String|Mensagem de erro se algum associado para o último check-in.|
-|appliedPolicies|Coleção de cadeias de caracteres|Lista de políticas entregues ao dispositivo como última verificação.|
+|appliedPolicies|String collection|Lista de políticas entregues ao dispositivo como última verificação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

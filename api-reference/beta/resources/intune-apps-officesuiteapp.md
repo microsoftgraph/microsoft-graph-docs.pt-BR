@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c866a4589505af9721d0fc97d16056e90939b19b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 88246bed788a0e8f9e9ed7b9aaa01e139bd169b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199108"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491222"
 ---
 # <a name="officesuiteapp-resource-type"></a>tipo de recurso officeSuiteApp
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades e propriedades herdadas para o aplicativo do pacote do office365.
 
@@ -36,8 +38,8 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|descrição|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -51,17 +53,17 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|autoAcceptEula|Booliano|O valor para aceitar o EULA automaticamente no dispositivo do usuário.|
+|autoAcceptEula|Boolean|O valor para aceitar o EULA automaticamente no dispositivo do usuário.|
 |productIds|coleção [officeProductId](../resources/intune-apps-officeproductid.md)|As IDs de produto que representam a SKU do pacote do office365.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|A propriedade para representar os aplicativos que são excluídos da ID de produto do Office365 selecionado.|
-|Propriedades usesharedcomputeractivation|Booliano|A propriedade que representa se a ativação de computador compartilhado é usada não para o pacote de aplicativos do office365.|
+|Propriedades usesharedcomputeractivation|Boolean|A propriedade que representa se a ativação de computador compartilhado é usada não para o pacote de aplicativos do office365.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|A propriedade para representar o canal de atualização do office365. Os valores possíveis são: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A propriedade para representar a versão do pacote de aplicativos do office365. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|localesToInstall|Coleção de cadeias de caracteres|A propriedade para representar os locais que são instalados quando os aplicativos do Office365 estão instalados. Ele usa RFC 6033 padrão. Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|localesToInstall|String collection|A propriedade para representar os locais que são instalados quando os aplicativos do Office365 estão instalados. Ele usa RFC 6033 padrão. Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Para especificar o nível de exibição da interface do usuário da configuração de progresso da instalação no dispositivo. Os valores possíveis são: `none` e `full`.|
-|shouldUninstallOlderVersionsOfOffice|Booliano|A propriedade para determinar se deve desinstalar o Office MSI existente se um pacote de aplicativos do Office365 for implantado no dispositivo ou não.|
+|shouldUninstallOlderVersionsOfOffice|Boolean|A propriedade para determinar se deve desinstalar o Office MSI existente se um pacote de aplicativos do Office365 for implantado no dispositivo ou não.|
 |targetVersion|String|A propriedade para representar a versão de destino específica para o pacote de aplicativos do Office365 que deve permanecer implantado nos dispositivos.|
 |updateVersion|String|A propriedade para representar a versão de atualização na qual a versão de destino específica está disponível para o pacote de aplicativos do office365.|
 |officeConfigurationXml|Binária|A propriedade para representar o arquivo de configuração XML que pode ser especificado para aplicativos do Office ProPlus. Tem precedência sobre todas as outras propriedades. Quando presente, o arquivo de configuração XML será usado para criar o aplicativo.|

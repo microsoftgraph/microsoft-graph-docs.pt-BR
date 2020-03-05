@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cbe4329aacdfb151e0bb5b73f8b24b624010c327
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 58e95490fa3fd7adaec6e6b8f01c43566b1c289a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538641"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42486546"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyDirect
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Proxy global do proprietário do dispositivo Android.
 
@@ -26,7 +28,7 @@ Herda de [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|host|Cadeia de caracteres|O nome do host|
+|host|String|O nome do host|
 |propor|Int32|A porta|
 |excludedHosts|String collection|Os hosts excluídos|
 

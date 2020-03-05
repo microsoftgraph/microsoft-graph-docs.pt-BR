@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f846887188f5fca2fc013ce5ea5716693e9397e1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 040da9c471d42ff77423dc035cce8b255ab9299a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335106"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488723"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
 
@@ -30,9 +32,9 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|displayName|String|Nome do livro eletrônico.|
-|descrição|String|Descrição.|
+|id|String|Chave da entidade.|
+|displayName|Cadeia de caracteres|Nome do livro eletrônico.|
+|description|String|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|

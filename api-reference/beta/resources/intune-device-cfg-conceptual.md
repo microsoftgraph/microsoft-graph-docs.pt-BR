@@ -4,14 +4,16 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2ee75dfc57e68f8074500996fca4f5306884d841
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 3ba5df73946b6d0c279be38b86e63f93623248c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163679"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487540"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
+
+Namespace: Microsoft. Graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 

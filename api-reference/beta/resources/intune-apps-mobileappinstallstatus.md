@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 95d6d694da12fe4615ada0d0a2a19f5d7d992980
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 891ddaa41d03c18afd45eff8c7dbe05cb8e32b0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955614"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491694"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>tipo de recurso mobileAppInstallStatus
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -33,18 +35,18 @@ Contém propriedades para o estado de instalação de um aplicativo móvel para 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceName|Cadeia de Caracteres|Nome do dispositivo|
-|deviceId|Cadeia de Caracteres|ID do dispositivo|
+|deviceName|String|Nome do dispositivo|
+|deviceId|String|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails`, `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet`, `dependencyPendingReboot`, `dependencyWithAutoInstallDisabled`, `seeInstallErrorCode`, `autoInstallDisabled`, `seeUninstallErrorCode`, `pendingReboot`, `installingDependencies`, `contentDownloaded`, `powerShellScriptRequirementNotMet`, `registryRequirementNotMet`, `fileSystemRequirementNotMet`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|O código de erro para instalação ou desinstalação de falhas.|
 |osVersion|String|Versão do sistema operacional|
-|osDescription|Cadeia de Caracteres|Descrição do sistema operacional|
+|osDescription|String|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
 |userPrincipalName|String|Nome UPN|
-|displayVersion|Cadeia de Caracteres|Versão de leitura humana do aplicativo|
+|displayVersion|String|Versão de leitura humana do aplicativo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

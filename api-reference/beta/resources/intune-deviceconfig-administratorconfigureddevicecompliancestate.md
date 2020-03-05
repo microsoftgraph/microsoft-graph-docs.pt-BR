@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 708223395789ab67a18df9a09bb0e5e0d5958543
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c3abe146cf0cc773f19d882027575edeaa122081
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334987"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487456"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>tipo de enumeração administratorConfiguredDeviceComplianceState
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Enumeração de estado de conformidade do dispositivo configurada pelo administrador
 
@@ -24,7 +26,7 @@ Enumeração de estado de conformidade do dispositivo configurada pelo administr
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|,0|Definir o estado de conformidade com base em outras políticas de conformidade|
-|Incompatível|1|Definir conformidade com não compatível|
+|Incompatível|1 |Definir conformidade com não compatível|
 
 
 

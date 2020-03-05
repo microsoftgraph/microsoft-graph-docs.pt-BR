@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 088a84fff9beca407012c8c143f8d58c257d80a9
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: ee7d1ec51d226d3d1808fd4afe4b5f011dc77446
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955607"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491124"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enumeração resultantAppStateDetail
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,9 +26,9 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noAdditionalDetails|,0|Não há detalhes adicionais disponíveis.|
-|dependencyFailedToInstall|1|Uma ou mais dependências do aplicativo não foram instaladas.|
-|dependencyWithRequirementsNotMet|duas|Uma ou mais das dependências do aplicativo têm requisitos que não foram atendidos.|
-|dependencyPendingReboot|3D|Uma ou mais das dependências do aplicativo exige a reinicialização do dispositivo para concluir a instalação.|
+|dependencyFailedToInstall|1 |Uma ou mais dependências do aplicativo não foram instaladas.|
+|dependencyWithRequirementsNotMet|2 |Uma ou mais das dependências do aplicativo têm requisitos que não foram atendidos.|
+|dependencyPendingReboot|3 |Uma ou mais das dependências do aplicativo exige a reinicialização do dispositivo para concluir a instalação.|
 |dependencyWithAutoInstallDisabled|4 |Uma ou mais dependências do aplicativo estão configuradas para não instalar automaticamente.|
 |seeInstallErrorCode|2000|Falha ao instalar o aplicativo. Consulte Propriedade de código de erro para obter mais detalhes.|
 |autoInstallDisabled|3000|O aplicativo está configurado para não ser instalado automaticamente.|
