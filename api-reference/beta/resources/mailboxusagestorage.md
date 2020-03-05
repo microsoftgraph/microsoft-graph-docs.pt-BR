@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6f4ee4b29c82102db96cd4d71718f7da449776b5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40cc5f9b9cab7f17e185619d7fccdec028ae6250
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009836"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522831"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>tipo de recurso mailboxUsageStorage
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 

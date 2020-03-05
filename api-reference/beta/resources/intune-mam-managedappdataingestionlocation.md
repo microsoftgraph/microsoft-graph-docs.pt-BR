@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3bc5d531910af33af5c45d913c6f2ee827b0bd8
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 64b8adf3aa82575db53472f047f8f4145ce32535
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955656"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524333"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>tipo de enumeração managedAppDataIngestionLocation
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,9 +25,9 @@ Locais que podem ser usados para trazer dados para documentos de organização
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive for business|
-|Do|duas|SharePoint Online|
-|Câmara|3D|A câmera do dispositivo|
+|oneDriveForBusiness|1 |OneDrive for business|
+|Do|2 |SharePoint Online|
+|Câmara|3 |A câmera do dispositivo|
 
 
 

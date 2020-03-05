@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 92171fb3e9fc50e516ed4568cceea03c5e0ba1cf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f999e393caab410ea3f7565ade25d189193cfc40
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369931"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525023"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Status do registro do dispositivo.
 
@@ -24,12 +26,12 @@ Status do registro do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não registrado|,0|O dispositivo não está registrado.|
-|inscreve|duas|O dispositivo está registrado.|
-|revogado|3D|O dispositivo foi bloqueado, apagado ou desativado.|
-|keyconflict|quatro|O dispositivo tem um conflito de teclas.|
-|approvalPending|0,5|O dispositivo está aguardando aprovação.|
-|certificateReset|6|O certificado de dispositivo foi redefinido.|
-|notRegisteredPendingEnrollment|178|O dispositivo não está registrado e registro pendente.|
+|inscreve|2 |O dispositivo está registrado.|
+|revogado|3 |O dispositivo foi bloqueado, apagado ou desativado.|
+|keyconflict|4 |O dispositivo tem um conflito de teclas.|
+|approvalPending|5 |O dispositivo está aguardando aprovação.|
+|certificateReset|6 |O certificado de dispositivo foi redefinido.|
+|notRegisteredPendingEnrollment|7 |O dispositivo não está registrado e registro pendente.|
 |desconhecido|8 |O status do registro do dispositivo é desconhecido.|
 
 

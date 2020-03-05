@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8f75e4590336f94520c1dc43b437a36048a230c
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 9cb6abb17963a9c22e027a4ba56eadfd3b07f6a8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636732"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525254"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>tipo de recurso deviceManagementSettingDependency
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Informações de dependência de uma configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|DefinitionId|Cadeia de caracteres|A ID da definição de configuração da configuração dependente|
+|DefinitionId|String|A ID da definição de configuração da configuração dependente|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor da configuração de dependência|
 
 ## <a name="relationships"></a>Relações

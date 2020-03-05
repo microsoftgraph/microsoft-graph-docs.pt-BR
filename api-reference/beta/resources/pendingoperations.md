@@ -6,14 +6,16 @@ author: JeremyKelley
 ms.date: 08/06/2019
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d83a68bf555fa5cc239fb38b147d12754f223e13
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 31629ee29bc91b3b2bae53e954743df17cde7d30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333382"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521966"
 ---
 # <a name="pendingoperations-resource-type"></a>tipo de recurso pendingOperations
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

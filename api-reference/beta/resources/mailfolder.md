@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 87195cf98406e37e0f4a419833fbc1d101b19563
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f80f49c193192f4a7ef63c51b20f6693fabc403
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966862"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522824"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -76,7 +78,7 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
-|displayName|String|O nome de exibição da mailFolder.|
+|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
 |id|String|Identificador exclusivo de mailFolder.|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|

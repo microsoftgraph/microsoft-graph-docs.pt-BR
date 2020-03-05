@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: c1e441b142ef27abbdde4ac613ef8d75848f5001
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f07743a592753daff2670478c6f2fe18207f6013
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966549"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522453"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>tipo de recurso office365GroupsActivityCounts
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 

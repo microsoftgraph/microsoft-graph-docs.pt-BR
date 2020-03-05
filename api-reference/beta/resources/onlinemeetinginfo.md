@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52bfe4fd46443c826838153cc2a40ea57712182b
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 8ac6c42f28ed1f2adccd54fcd3bd6667f4113b7a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913153"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522246"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>tipo de recurso onlineMeetingInfo
+
+Namespace: Microsoft. Graph
 
 Detalhes para o participante entrar na reunião online.
 
@@ -24,7 +26,7 @@ Detalhes para o participante entrar na reunião online.
 |joinUrl|String| O link externo que inicia a reunião online. Esta é uma URL que os clientes serão inicializados em um navegador e redirecionará o usuário para participar da reunião.|
 |telefones|Coleção [phone](phone.md)| Todos os números de telefone associados a esta conferência.|
 |quickDial|String| O Quickdial pré-formatado para esta chamada.|
-|tollFreeNumbers|Coleção de cadeias de caracteres| Os números de chamada gratuita que podem ser usados para ingressar na conferência.|
+|tollFreeNumbers|String collection| Os números de chamada gratuita que podem ser usados para ingressar na conferência.|
 |tollNumber|String| O número de chamada tarifada que pode ser usado para ingressar na conferência.|
 
 ## <a name="json-representation"></a>Representação JSON

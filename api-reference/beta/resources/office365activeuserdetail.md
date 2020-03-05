@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 9e58e0d4613118cd8ceecfcae318982bc2035917
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7027d581e9dfd883a7dca6f91d3a1d56184097ac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009493"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522460"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>tipo de recurso office365ActiveUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -20,15 +22,15 @@ ms.locfileid: "36009493"
 | :-------------------------------- | :---------------- | ---------------------------------------- |
 | reportRefreshDate                 | Data              | A última data do conteúdo.          |
 | userPrincipalName                 | String            | O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. |
-| displayName                       | String            | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. |
-| isDeleted                         | Booliano           | Se este usuário foi excluído ou excluído por software. |
+| displayName                       | Cadeia de caracteres            | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. |
+| isDeleted                         | Boolean           | Se este usuário foi excluído ou excluído por software. |
 | deletedDate                       | Data              | A data em que a operação de exclusão ocorreu. O valor padrão é "nulo" quando o usuário não foi excluído. |
-| hasExchangeLicense                | Booliano           | Se o usuário foi atribuído a uma licença do Exchange. |
-| hasOneDriveLicense                | Booliano           | Se o usuário foi atribuído a uma licença do OneDrive. |
-| hasSharePointLicense              | Booliano           | Se o usuário foi atribuído a uma licença do SharePoint. |
-| hasSkypeForBusinessLicense        | Booliano           | Se o usuário foi atribuído a uma licença do Skype for Business. |
-| hasYammerLicense                  | Booliano           | Se o usuário foi atribuído a uma licença do Yammer. |
-| hasTeamsLicense                   | Booliano           | Se o usuário foi atribuído a uma licença do teams. |
+| hasExchangeLicense                | Boolean           | Se o usuário foi atribuído a uma licença do Exchange. |
+| hasOneDriveLicense                | Boolean           | Se o usuário foi atribuído a uma licença do OneDrive. |
+| hasSharePointLicense              | Boolean           | Se o usuário foi atribuído a uma licença do SharePoint. |
+| hasSkypeForBusinessLicense        | Boolean           | Se o usuário foi atribuído a uma licença do Skype for Business. |
+| hasYammerLicense                  | Boolean           | Se o usuário foi atribuído a uma licença do Yammer. |
+| hasTeamsLicense                   | Boolean           | Se o usuário foi atribuído a uma licença do teams. |
 | exchangeLastActivityDate          | Data              | A data em que o usuário leu ou enviou email pela última vez. |
 | oneDriveLastActivityDate          | Data              | A data em que o usuário exibiu ou editou arquivos, arquivos compartilhados internamente ou externamente, ou arquivos sincronizados. |
 | sharePointLastActivityDate        | Data              | A data em que o usuário exibiu ou editou arquivos, arquivos compartilhados internamente ou externamente, arquivos sincronizados ou páginas do SharePoint visualizadas por último. |
@@ -41,7 +43,7 @@ ms.locfileid: "36009493"
 | skypeForBusinessLicenseAssignDate | Data              | A última data em que o usuário recebeu uma licença do Skype for Business. |
 | yammerLicenseAssignDate           | Data              | A última data em que o usuário recebeu uma licença do Yammer. |
 | teamsLicenseAssignDate            | Data              | A última data em que o usuário recebeu uma licença do teams. |
-| assignedProducts                  | Coleção de cadeias de caracteres | Todos os produtos atribuídos para o usuário.  |
+| assignedProducts                  | String collection | Todos os produtos atribuídos para o usuário.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

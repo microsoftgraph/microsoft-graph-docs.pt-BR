@@ -5,20 +5,22 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5d86df3bde56e242559e224cc27921d162be7bf4
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b6e0848b88427cf0929030f07b163204842c3cd7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913412"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522253"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contém informações sobre a reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -37,9 +39,9 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 | endDateTime               | DateTime                                               | A hora de término da reunião em UTC. |
 | id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
 | joinWebUrl                   | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
-| participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
+| participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
-| capabilities              | Coleção de cadeias de caracteres                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
+| capabilities              | String collection                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
 | videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. Somente leitura. |
 
 ### <a name="autoadmittedusers-values"></a>valores de autoAdmittedUsers

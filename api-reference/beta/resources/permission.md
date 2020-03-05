@@ -6,14 +6,16 @@ description: recurso Permission representando uma permissão de compartilhamento
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3f74ecd71a9f411a336c7fb4b5720208ca0ffa42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4f7e931ebec462de50f3ae5c61f033d2c10f92f4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966178"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521959"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,14 +68,14 @@ Veja a seguir uma representação JSON do recurso.
 |:--------------------|:----------------------------|:-------------------------
 | id                  | String                      | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
 | grantedTo           | [IdentitySet][]             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
-| grantedToIdentities | Coleção ([identityset][]) | Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
+| grantedToIdentities | Coleção([IdentitySet][]) | Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
 | invitation          | [SharingInvitation][]       | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom       | [ItemReference][]           | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId             | String                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API][]** de compartilhamentos. Somente leitura.
+| shareId             | Cadeia de caracteres                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API de compartilhamentos][]**. Somente leitura.
 | expirationDateTime  | DateTimeOffset              | Um formato de yyyy-MM-ddTHH: mm: ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime. MinValue indica que não há validade configurada para essa permissão. Opcional.
-| hasPassword         | Booliano                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
+| hasPassword         | Boolean                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
 
 ### <a name="roles-enumeration-values"></a>Valores de enumeração de funções
 
@@ -86,18 +88,18 @@ Veja a seguir uma representação JSON do recurso.
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
-Links de compartilhamento contêm um token exclusivo necessário para acessar o item.
+Os links de compartilhamento contêm um token exclusivo e necessário para acessar o item.
 
 Permissões com uma faceta [**invitation**][SharingInvitation] representam permissões adicionadas convidando usuários ou grupos específicos para ter acesso ao arquivo.
 
 ## <a name="sharing-links"></a>Links de compartilhamento
 
 Permissões com uma faceta [**link**][SharingLink] representam links de compartilhamento criados no item.
-Estes são os tipos de permissões mais comuns.
-Links de compartilhamento fornecem uma URL exclusiva que pode ser usada para acessar um arquivo ou uma pasta.
+Estes são os tipos mais comuns de permissões.
+Os links de compartilhamento fornecem uma URL exclusiva que pode ser usada para acessar um arquivo ou pasta.
 Eles podem ser configurados para conceder acesso de várias maneiras.
-Por exemplo, você pode usar a [][] API CreateLink para criar um link que funcione para qualquer pessoa que se inscreveu em sua organização ou pode criar um link que funcione para qualquer pessoa, sem precisar entrar.
-Você pode usar a API [INVITE][] para criar um link que funciona apenas para pessoas específicas, seja em sua empresa ou não.
+Por exemplo, você pode usar a API [createLink][] para criar um link que funcione para qualquer pessoa conectada à sua organização ou criar um link que funcione para qualquer pessoa, sem precisar fazer logon.
+Você pode usar a API [invite][] para criar um link que funcione apenas para pessoas específicas, estejam elas na sua empresa ou não.
 
 Aqui estão alguns exemplos de links de compartilhamento.
 
@@ -122,7 +124,7 @@ Este link de exibição fornece acesso somente leitura a qualquer pessoa com o l
 }
 ```
 
-### <a name="edit-link"></a>Link de edição
+### <a name="edit-link"></a>Editar link
 
 Este link de edição fornece acesso de leitura e gravação a qualquer pessoa na organização com o link.
 
@@ -162,9 +164,9 @@ Este link não concede nenhum privilégio adicional para o usuário.
 }
 ```
 
-### <a name="specific-people-link"></a>Link de pessoas específico
+### <a name="specific-people-link"></a>Link de pessoas específicas
 
-Este link fornece acesso de leitura e gravação às pessoas específicas na `grantedToIdentities` coleção.
+Este link fornece acesso de leitura e gravação para as pessoas específicas na coleção `grantedToIdentities`.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
@@ -243,9 +245,9 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 |:---------------------------------------------------------|:-----------------------
 | [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Obter permissão](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Criar link] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
-| [Convidar pessoas] [convidar]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Criar link][createLink]                                | `POST /drive/items/{item-id}/createLink`
+| [Convidar pessoas][invite]                                  | `POST /drive/items/{item-id}/invite`
+| [Atualizar](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
@@ -253,7 +255,7 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 [createLink]: ../api/driveitem-createlink.md
 [conceder]: ../api/permission-grant.md
 [IdentitySet]: identityset.md
-[Alguém]: ../api/driveitem-invite.md
+[invite]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
 [API de compartilhamentos]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md

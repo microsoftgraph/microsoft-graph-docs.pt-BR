@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb715113e45477738faba70e9cd1e4f6c10a4ad8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dfc8c35180e333fdd33d7daee250f87692d288a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319248"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525170"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>tipo de recurso appLogCollectionRequest
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade AppLogCollectionRequest.
 
@@ -33,10 +35,10 @@ Entidade AppLogCollectionRequest.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
+|id|String|O identificador exclusivo. É userId_DeviceId_AppId ID.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
-|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
+|customLogFolders|String collection|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 ## <a name="relationships"></a>Relações

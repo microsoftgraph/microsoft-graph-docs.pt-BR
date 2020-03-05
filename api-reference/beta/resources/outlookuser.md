@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2c23cccabcea33b8cdaacba6ae9abede456c5c99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eadd5947a03fce69f790e2e9f0a4d738078002cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009262"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522064"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +32,7 @@ Representa os serviços do Outlook disponíveis para um usuário.
 |[Criar outlookTaskGroup](../api/outlookuser-post-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)| Criar um grupo de tarefas do Outlook na caixa de correio do usuário.|
 |[Listar taskGroups](../api/outlookuser-list-taskgroups.md) |coleção [outlookTaskGroup](outlooktaskgroup.md)| Obter todos os grupos de tarefas do Outlook na caixa de correio do usuário.|
 |[Criar outlookTask](../api/outlookuser-post-tasks.md) |[outlookTask](outlooktask.md)| Crie uma tarefa do Outlook no grupo de tarefas padrão`My Tasks`() e na pasta de`Tasks`tarefas padrão () na caixa de correio do usuário.|
-|[Listar tarefas](../api/outlookuser-list-tasks.md) |coleção [outlookTask](outlooktask.md)| Obter todas as tarefas do Outlook na caixa de correio do usuário.|
+|[Listar tarefas](../api/outlookuser-list-tasks.md) |coleção [outlookTask](outlooktask.md)| Obtenha todas as tarefas do Outlook na caixa de correio do usuário.|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | Coleção [localeInfo](localeinfo.md) | Obtém a lista de localidades e idiomas com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | Coleção [timeZoneInformation](timezoneinformation.md) | Obtém a lista de fusos horários com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário. |
 

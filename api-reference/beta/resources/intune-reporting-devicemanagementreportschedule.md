@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 231f1f84acd294c340984c0c375bb87ceba94f95
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3ce3f9a54c3be73f089b0ddf99a1f96fd114aff9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538844"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523783"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>tipo de recurso deviceManagementReportSchedule
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa um cronograma para o qual os relatórios são entregues
 
@@ -33,15 +35,15 @@ Entidade que representa um cronograma para o qual os relatórios são entregues
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo para esta entidade|
-|reportScheduleName|Cadeia de caracteres|Nome da agenda|
-|subject|String|Assunto dos relatórios agendados que são entregues|
+|reportScheduleName|String|Nome da agenda|
+|assunto|String|Assunto dos relatórios agendados que são entregues|
 |email|String collection|Emails para os quais os relatórios agendados são entregues|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência da entrega de relatórios agendados. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Hora de início da entrega dos relatórios agendados|
 |endDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados termina|
 |userId|Cadeia de caracteres|A ID do usuário que criou o relatório|
-|reportName|Cadeia de caracteres|Nome do relatório|
-|filter|Cadeia de caracteres|Filtros aplicados no relatório|
+|reportName|String|Nome do relatório|
+|filter|String|Filtros aplicados no relatório|
 |select|String collection|Colunas selecionadas do relatório|
 |Classificadoporativado|String collection|Ordenação de colunas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório agendado. Os valores possíveis são: `csv`, `pdf`.|

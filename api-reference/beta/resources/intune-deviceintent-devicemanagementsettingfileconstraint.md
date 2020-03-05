@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60ff6a00e30e328daf2330e39511956ec1ab1f18
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1757f3d6d7e6e60a9c45e95e531a142fabbb95f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39924623"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525247"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>tipo de recurso deviceManagementSettingFileConstraint
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|supportedExtensions|Coleção de cadeias de caracteres|Extensões de arquivo aceitáveis para carregar essa configuração|
+|supportedExtensions|String collection|Extensões de arquivo aceitáveis para carregar essa configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum

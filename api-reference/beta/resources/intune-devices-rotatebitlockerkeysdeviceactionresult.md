@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46b0f00f38e453edbd2e5214a1fe1e900a418639
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: dbcc2bc237016a6076389e66f3524ba2aead832c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524918"
 ---
 # <a name="rotatebitlockerkeysdeviceactionresult-resource-type"></a>tipo de recurso rotateBitLockerKeysDeviceActionResult
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

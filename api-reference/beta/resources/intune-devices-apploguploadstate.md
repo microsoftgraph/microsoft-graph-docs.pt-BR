@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ca37de06d50f57eda6c094f195fb5f291181034a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d692e352f177c7f882a33e49604934c4b1a22912
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525163"
 ---
 # <a name="apploguploadstate-enum-type"></a>tipo de enumeração appLogUploadState
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 AppLogUploadStatus
 
@@ -24,8 +26,8 @@ AppLogUploadStatus
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |função|,0|A solicitação está aguardando processamento ou sob processamento|
-|Completed|1|A solicitação foi concluída com o arquivo carregado no blob do Azure para download.|
-|falhou|duas|Solicitar processamento concluído e em estado de erro.|
+|Completed|1 |A solicitação foi concluída com o arquivo carregado no blob do Azure para download.|
+|falhou|2 |Solicitar processamento concluído e em estado de erro.|
 
 
 

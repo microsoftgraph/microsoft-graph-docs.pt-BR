@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9ae4ae7e6f014b52f4049d6663b732680d033d5
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4a5e7aa1816c4b47765259e41acd70a8fbd74405
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539082"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525079"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>tipo de recurso deviceHealthScriptDeviceState
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades para o estado de execução do dispositivo do script de integridade do dispositivo.
 
@@ -32,17 +34,17 @@ Contém propriedades para o estado de execução do dispositivo do script de int
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade de estado do dispositivo de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |detecçaostate|[runState](../resources/intune-shared-runstate.md)|Estado de detecção da execução do script de integridade do dispositivo mais recente. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|O último carimbo de data/hora de quando o script de integridade do dispositivo é executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O carimbo de data/hora seguinte de quando o script de integridade do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez em que a extensão de gerenciamento do Intune foi sincronizada com o Intune|
-|preRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção antes da correção|
-|preRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção antes da correção|
-|remediationScriptError|Cadeia de caracteres|Saída de erro do script de correção|
-|postRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção após a correção|
-|postRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção após a correção|
-|remediable|[remediable](../resources/intune-devices-remediationstate.md)|Estado de correção da execução do script de integridade do dispositivo mais recente. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|preRemediationDetectionScriptOutput|String|Saída do script de detecção antes da correção|
+|preRemediationDetectionScriptError|String|Erro do script de detecção antes da correção|
+|remediationScriptError|String|Saída de erro do script de correção|
+|postRemediationDetectionScriptOutput|String|Saída do script de detecção após a correção|
+|postRemediationDetectionScriptError|String|Erro do script de detecção após a correção|
+|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da execução do script de integridade do dispositivo mais recente. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

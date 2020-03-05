@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0d1e1f4922c022215d806cfa83d01d1735c704da
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 1e32756e0d1e68397e0ca7bc843a956492ac46c3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163462"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523918"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>tipo de enumeração deviceManagementDerivedCredentialNotificationType
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,8 +26,8 @@ Valores com suporte para o tipo de notificação a ser usado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |nenhuma|,0|Nenhuma|
-|companyPortal|1|Portal da empresa|
-|email|duas|Email|
+|companyPortal|1 |Portal da empresa|
+|email|2 |Email|
 
 
 

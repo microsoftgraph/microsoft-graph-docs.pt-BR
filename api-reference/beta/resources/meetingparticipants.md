@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 66bb521ae9a2222b5ea60709ac3687da930161d6
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 38071e4ab18127ca8f49b4ef4befdfafbf4c7e04
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913552"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522719"
 ---
 # <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

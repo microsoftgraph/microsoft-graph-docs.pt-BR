@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4864388492f3dedec4add271904f2e07a3e85419
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: a6aa9202310ac2c0edcb70bac07fd49f5de668c8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653822"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523146"
 ---
 # <a name="ipv4cidrrange-resource-type"></a>tipo de recurso iPv4CidrRange
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

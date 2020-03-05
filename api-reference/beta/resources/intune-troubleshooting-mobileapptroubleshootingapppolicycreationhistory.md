@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d83f07cfa71c84cb0db99b7ea6e26822177f8f
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 2f8a10002d39f09c801c431332f709c93a2099c4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523314"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 90e505abfb9256276d24b81c3d038b2b0882069a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c587d9d6e11354a136948bbbf37565e42e0bb678
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966668"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522579"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,13 +30,13 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |destinationPort|String|Porta de destino (da conexão de rede).|
 |destinationUrl|String|URL de conexão de rede/cadeia de caracteres URI-excluindo parâmetros. (por exemplo, ' www.contoso.com/products/default.html ')|
 |direction|connectionDirection|Direção da conexão de rede. Os valores possíveis são: `unknown`, `inbound`, `outbound`.|
-|domainRegisteredDateTime|DateTimeOffset|Data em que o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|domainRegisteredDateTime|DateTimeOffset|Data em que o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |localDnsName|String|A resolução de nome DNS local da forma como aparece no cache de DNS local do host (por exemplo, caso o arquivo "hosts" tenha sido adulterado).|
 |natDestinationAddress|String|Endereço IP de destino de conversão de endereço de rede.|
 |natDestinationPort|String|Porta de destino de conversão de endereço de rede.|
 |natSourceAddress|String|Endereço IP de origem de conversão de endereço de rede.|
 |natSourcePort|String|Porta de origem de conversão de endereço de rede.|
-|RDP|securityNetworkProtocol|Protocolo de rede. Os valores possíveis são `unknown`: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp` `ipv6` `ipv6RoutingHeader`,,, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` ,,,,,,,, , `raw`, `ipx`, `spx`, `spxII`.|
+|RDP|securityNetworkProtocol|Protocolo de rede. Os valores possíveis são `unknown`: `ip`, `icmp`, `igmp`, `ggp` `ipv4` `tcp`,,, `pup`, `udp`, `idp` `ipv6` `ipv6RoutingHeader`,,, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` `raw` `ipx` `spx`,,,, `spxII`,,,,,,,,,.|
 |riskScore|String|Provedor gerado/Pontuação de risco calculado da conexão de rede. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 |sourceAddress|String|Endereço IP de origem (ou seja, origem) (da conexão de rede).|
 |sourcePort|String|Porta IP de origem (ou seja, origem) (da conexão de rede).|
@@ -47,13 +49,13 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |:---|:---|:---|
 |desconhecido|-1|Protocolo desconhecido.|
 |IP|,0|Protocolo de Internet.|
-|ICMP|1| Protocolo de mensagens de controle da Internet.|
-|IGMP|duas| Protocolo de gerenciamento de grupos da Internet.|
-|ggp|3D| Gateway para protocolo gateway.|
-|IPv4|quatro| Protocolo IP versão 4.|
-|tcp|6| Protocolo de controle de transmissão.|
-|confiável|3,6| Protocolo de pacote universal do PARC.|
-|via|17.07.06| Protocolo de datagrama de usuário.|
+|ICMP|1 | Protocolo de mensagens de controle da Internet.|
+|IGMP|2 | Protocolo de gerenciamento de grupos da Internet.|
+|ggp|3 | Gateway para protocolo gateway.|
+|IPv4|4 | Protocolo IP versão 4.|
+|tcp|6 | Protocolo de controle de transmissão.|
+|confiável|12 | Protocolo de pacote universal do PARC.|
+|via|17 | Protocolo de datagrama de usuário.|
 |IDP|22| Protocolo de datagrama da Internet.|
 |IPv6|41| Protocolo IP versão 6 (IPv6).|
 |ipv6RoutingHeader|43| cabeçalho de roteamento IPv6.|

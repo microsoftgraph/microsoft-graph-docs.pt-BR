@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: cc80110a2f8f755ef984b2f993ea660798a86743
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21bc509fd2364365e29d1e35bcbe78d67fdc40c8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966465"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522376"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>tipo de recurso oneDriveUsageAccountDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -22,7 +24,7 @@ ms.locfileid: "35966465"
 | siteUrl                 | String  |
 | ownerDisplayName        | String  |
 | ownerPrincipalName      | String  |
-| isDeleted               | Booliano |
+| isDeleted               | Boolean |
 | lastActivityDate        | Data    |
 | Contagem de FileCount               | Int64   |
 | activeFileCount         | Int64   |

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ce99713637d7607caed40451a0716cb0acde14e4
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: 94d09955ad20af1117b156e433c95f2914df7348
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113902"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522197"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>tipo de recurso onPremisesPublishingProfile
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79941f498efae8167e6d9abcd9bcdf78b9557677
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bd21f5dea3bab467abf1b19754ada88a4fbb531a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199615"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523713"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A classe base da configuração de registro do dispositivo
 
@@ -34,9 +36,9 @@ A classe base da configuração de registro do dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para a conta|
-|displayName|String|O nome de exibição da configuração de registro do dispositivo|
-|descrição|String|A descrição da configuração de registro do dispositivo|
+|id|String|Identificador exclusivo para a conta|
+|displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo|
+|description|String|A descrição da configuração de registro do dispositivo|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade.|
 |createdDateTime|DateTimeOffset|Data e hora de criação em UTC da configuração de registro do dispositivo|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação em UTC da configuração de registro do dispositivo|

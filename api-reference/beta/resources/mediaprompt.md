@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c9c7dce23eb3b5548722c837f20902561ecc0a92
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: f8adc2829b7910fa5780c320cffe0ee91b9bbe23
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912717"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522761"
 ---
 # <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

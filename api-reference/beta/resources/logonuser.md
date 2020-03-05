@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 08053b2e3ba42c167edebb3678b41ccb3531e078
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9a7bb439863a39ce165235b31642e542b1bb331
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009913"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522894"
 ---
 # <a name="logonuser-resource-type"></a>tipo de recurso logonUser
+
+Namespace: Microsoft. Graph
 
 Contém informações de estado sobre o usuário conectado neste host
 
@@ -26,7 +28,7 @@ Contém informações de estado sobre o usuário conectado neste host
 |firstSeenDateTime|DateTimeOffset|Data e hora em que o logon mais antigo por essa conta de usuário ocorreu (período determinado pelo provedor). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |lastSeenDateTime|DateTimeOffset|DateTime no qual a conta de usuário tem o logon mais recente. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |LogonId|String|ID de logon do usuário.|
-|Logontypesowner|Coleção de cadeias de caracteres|Coleção dos tipos de logon observados para o usuário conectado da primeira vez para a última vista. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|Logontypesowner|String collection|Coleção dos tipos de logon observados para o usuário conectado da primeira vez para a última vista. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

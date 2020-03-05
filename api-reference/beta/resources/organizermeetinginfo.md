@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3f011870422abb255c895b389a959554cd44ddfa
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 07c4deef22e92a0aaed77733b2eac22bfd0a8aaf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913510"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522120"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>tipo de recurso organizerMeetingInfo
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

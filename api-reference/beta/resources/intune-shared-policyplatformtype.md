@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e795b2bf983557f8a6d0de4dd461f76bff65dd6
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 9c0ee815ba97dcc2ba8cea23cb6c0a922a2fb495
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538704"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523594"
 ---
 # <a name="policyplatformtype-enum-type"></a>tipo de enumeração policyPlatformType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipos de plataforma Suppoorted para políticas.
 
@@ -24,9 +26,9 @@ Tipos de plataforma Suppoorted para políticas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Android|,0|Android.|
-|androidForWork|1|AndroidForWork.|
-|iOS|duas|emiti.|
-|macOS|3D|MacOS.|
+|androidForWork|1 |AndroidForWork.|
+|iOS|2 |emiti.|
+|macOS|3 |MacOS.|
 |windowsPhone81|4 |Windowsphonee 8,1.|
 |windows81AndLater|5 |Windows 8,1 e posterior|
 |windows10AndLater|6 |Windows 10 e posterior.|

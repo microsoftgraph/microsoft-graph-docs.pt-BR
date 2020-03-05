@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d519e18723ac9fbd38e7cec64a6758b0c9396bc2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 67439b11cc2067df23c71cf9fc939fbfb250f874
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966276"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522071"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ No Outlook, há um grupo `My Tasks` de tarefas padrão que você não pode renom
 |[Obter outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.|
 |[Criar outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Criar uma pasta de tarefas do Outlook.|
 |[Listar taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |coleção [outlookTaskFolder](outlooktaskfolder.md)| Obter uma coleção de pastas de tarefas do Outlook.|
-|[Atualização](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
+|[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
 |[Delete](../api/outlooktaskgroup-delete.md) | Nenhum |Excluir o grupo de tarefas do Outlook especificado. |
 
 ## <a name="properties"></a>Propriedades
@@ -37,8 +39,8 @@ No Outlook, há um grupo `My Tasks` de tarefas padrão que você não pode renom
 |changeKey|String|A versão do grupo de tarefas.|
 |groupKey|Edm.Guid|O identificador exclusivo do GUID do grupo de tarefas.|
 |id|String|O identificador exclusivo da cadeia de caracteres do grupo de tarefas. Somente leitura.|
-|IsDefault|Booliano|True se o grupo de tarefas é o grupo de tarefas padrão.|
-|name|String|O nome do grupo de tarefas.|
+|IsDefault|Boolean|True se o grupo de tarefas é o grupo de tarefas padrão.|
+|nome|String|O nome do grupo de tarefas.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

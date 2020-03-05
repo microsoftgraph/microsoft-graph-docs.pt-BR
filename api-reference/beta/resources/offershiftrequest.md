@@ -5,20 +5,22 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c2b12dd9df816ad7fecbf6c520f0fff579087428
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 6b0d56a3c9e3e8b098dbbe7f172a42631afbb33b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952290"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522516"
 ---
 # <a name="offershiftrequest-resource-type"></a>tipo de recurso offerShiftRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o tipo de solicitação de mudança para oferecer uma mudança para outro usuário na equipe.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 2ba1fce4492bfacb3a44f21a0fc55ddd8d37b068
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 48c585a05043b4f17e5e7406eb44b9150b5e5bdc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950434"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523062"
 ---
 # <a name="itemphone-resource-type"></a>tipo de recurso de Tel.
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +33,7 @@ Representa informações detalhadas sobre números de telefone associados a um u
 | Propriedade     | Tipo        | Descrição                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |Cadeia de caracteres       | Contém um nome amigável para o número de telefone.                                                                                  |
-|number        |Cadeia de caracteres       | Contém o número de telefone.                                                                                                       |
+|number        |String       | Contém o número de telefone.                                                                                                       |
 |type          |string       | Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="relationships"></a>Relações

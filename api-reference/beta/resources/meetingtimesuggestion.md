@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 08db0883021337ced13fa753c5cf3b0083782cc9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d24220b43573aff655d7af9b4a60b76322de60ed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009738"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522712"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Tipo de recurso meetingTimeSuggestion
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

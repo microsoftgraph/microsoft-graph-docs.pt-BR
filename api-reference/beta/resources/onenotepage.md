@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 3d43f517ec028534e9b443c6e6c6e3e667a09e43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bf3410923cdcc7d48c78d6872e5fc6c20f4cf619
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966416"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522327"
 ---
 # <a name="onenotepage-resource-type"></a>tipo de recurso onenotePage
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ Uma página em um bloco de anotações do OneNote.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|parentNotebook|[anotações](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
+|parentNotebook|[bloco de anotações](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
 |parentSection|[onenoteSection](onenotesection.md)|A seção que contém a página. Somente leitura.|
 
 ## <a name="methods"></a>Métodos

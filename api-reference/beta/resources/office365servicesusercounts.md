@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 5958ab3cb05767465b0866078d378208f1b466e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0deb5eceb31ca3453c1cc5f29ae669f7053738c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009465"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522418"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>tipo de recurso office365ServicesUserCounts
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 

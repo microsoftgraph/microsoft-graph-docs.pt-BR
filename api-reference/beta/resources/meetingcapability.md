@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2b891a9e6d0eb90a527c79528e9fd595c2f8ca5b
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 0b425f035b77e7efed8de8fa39073822382e7593
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522740"
 ---
 # <a name="meetingcapability-resource-type"></a>tipo de recurso meetingCapability
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ Contém os recursos de uma reunião
 
 | Propriedade                          | Tipo    | Descrição                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Booliano | Indica se os usuários anônimos de discagem são permitidos em uma reunião. |
-| allowAnonymousUsersToStartMeeting | Booliano | Indica se os usuários anônimos podem iniciar uma reunião.  |
+| allowAnonymousUsersToDialOut      | Boolean | Indica se os usuários anônimos de discagem são permitidos em uma reunião. |
+| allowAnonymousUsersToStartMeeting | Boolean | Indica se os usuários anônimos podem iniciar uma reunião.  |
 | autoAdmittedUsers                 | String  | Os valores possíveis são: `everyoneInCompany` e `everyone`.              |
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6d966ecb599d98c92bf1e70eca1f61fb665e359d
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: f6dbb44810c9469eb6ddb4dc8fd3299bb2b71e71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652041"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522866"
 ---
 # <a name="mailboxsettings-resource-type"></a>Tipo de recurso mailboxSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

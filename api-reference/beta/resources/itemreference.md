@@ -6,14 +6,16 @@ title: ItemReference
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 434e3ed1da1f7536224e27b619cedf3bbef5f20e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4f9b061757405f284e367cc4311230c76515a086
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967060"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523048"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
+
+Namespace: Microsoft. Graph
 
 O recurso **ItemReference** proporciona as informações necessárias para enviar um [DriveItem](driveitem.md) pela API.
 
@@ -46,7 +48,7 @@ Veja a seguir uma representação JSON do recurso
 | driveId       | String            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.
 | driveType     | String            | Identifica o tipo de unidade. Consulte o recurso [unidade][] para obter os valores.
 | id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
-| name          | String            | O nome do item ao qual se faz referência. Somente leitura.
+| nome          | String            | O nome do item ao qual se faz referência. Somente leitura.
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
 | shareId       | String            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.

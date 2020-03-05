@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 1c9fffd2edec48fb528dcb2f6c5a751dd4f32d30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f52a68cd2e6803943ac1f76fd2df12ae01f88071
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010102"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523174"
 ---
 # <a name="configuring-the-invitation-message"></a>Configurando a mensagem de convite
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

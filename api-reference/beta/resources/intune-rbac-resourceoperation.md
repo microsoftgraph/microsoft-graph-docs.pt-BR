@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b83ad1c902e8455d42ae0e9805bf6881b49ef3b4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eb92fdb1f4607d705a3d883a4ce824a852b3aad9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369280"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523897"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que oferece suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
 
@@ -37,8 +39,8 @@ Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST)
 |recurso|String|Categoria de recurso à qual essa operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|descrição|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Booliano|Determina se a permissão é validada para os escopos definidos por atribuição de função.|
+|description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|enabledForScopeValidation|Boolean|Determina se a permissão é validada para os escopos definidos por atribuição de função.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

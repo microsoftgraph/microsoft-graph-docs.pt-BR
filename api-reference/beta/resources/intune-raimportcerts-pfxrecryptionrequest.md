@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 37012f2345020b46566c7dd93d29ae2037cb7bec
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: dfd38ab6cadb316f20afeffe12ef1973130ef974
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163567"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523939"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>tipo de recurso pfxRecryptionRequest
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

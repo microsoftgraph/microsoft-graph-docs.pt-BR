@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c2c144ff23253ebde5e98fb7c219ace1a1c8806c
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 2b7eb9821f21af7a037723815a9b670ac3c41041
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913132"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522600"
 ---
 # <a name="muteparticipantoperation-resource-type"></a>Tipo de recurso MuteParticipantOperation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

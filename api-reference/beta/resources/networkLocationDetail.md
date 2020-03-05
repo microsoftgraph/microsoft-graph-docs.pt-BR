@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8cbf60f7e7e370c5813623643f9d14cb324950cc
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6cc1aa8f25fa3f2cae4cad4a253f758ace0532b0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939506"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522586"
 ---
 # <a name="networklocationdetail-resource-type"></a>tipo de recurso networkLocationDetail
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

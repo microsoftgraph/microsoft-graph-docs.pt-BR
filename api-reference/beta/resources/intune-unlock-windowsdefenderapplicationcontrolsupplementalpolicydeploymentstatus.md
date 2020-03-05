@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e10728bba5048b1e46889c178710b79043622624
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: ba11aedae421faff69634f209bbd748bd8bd1238
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538837"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523244"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades para o estado de implantação de uma política suplementar do WindowsDefenderApplicationControl para um dispositivo.
 
@@ -34,14 +36,14 @@ Contém propriedades para o estado de implantação de uma política suplementar
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|Cadeia de caracteres|ID de dispositivo.|
+|deviceId|String|ID de dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização.|
 |osVersion|String|Versão do sistema operacional Windows.|
-|osDescription|Cadeia de caracteres|Descrição da versão do sistema operacional Windows.|
+|osDescription|String|Descrição da versão do sistema operacional Windows.|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|O estado de implantação da política. Os valores possíveis são: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|Cadeia de caracteres|O nome do usuário deste dispositivo.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|policyVersion|Cadeia de caracteres|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
+|userPrincipalName|String|Nome principal do usuário.|
+|policyVersion|String|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

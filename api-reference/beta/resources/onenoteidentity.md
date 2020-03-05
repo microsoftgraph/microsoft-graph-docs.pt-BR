@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 0a7df80dd3dcd4f4b93edb4e708e65de3f74d775
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad578dcfa54f51484aa7e29ad5c3ade8a9195b61
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966444"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522355"
 ---
 # <a name="onenoteidentity-resource-type"></a>tipo de recurso oneNoteIdentity
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +48,7 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|string|Nome de exibição da identidade.|
-|id|cadeia de caracteres|Identificador exclusivo da identidade.|
+|id|string|Identificador exclusivo da identidade.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

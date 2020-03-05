@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 631da782e47325a2ff28eb6ae9eb1447e1b0a14d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 094c8f9fc6489f081f93d5a6e1ece02857884910
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009255"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522078"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>tipo de recurso outlookTaskFolder
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ No Outlook, o grupo de tarefas padrão `My Tasks`, contém uma pasta de tarefas 
 |[Obter outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Obtenha as propriedades e os relacionamentos da pasta de tarefas especificada do Outlook.|
 |[Criar outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Criar uma tarefa do Outlook na pasta de tarefas especificada.|
 |[Listar tarefas](../api/outlooktaskfolder-list-tasks.md) |coleção [outlookTask](outlooktask.md)| Obter todas as tarefas do Outlook na pasta especificada.|
-|[Atualização](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Atualizar as propriedades graváveis de uma pasta de tarefas do Outlook. |
+|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Atualizar as propriedades graváveis de uma pasta de tarefas do Outlook. |
 |[Delete](../api/outlooktaskfolder-delete.md) | Nenhum |Excluir a pasta de tarefas do Outlook especificada.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Crie uma ou mais propriedades estendidas de valor único em uma pasta de tarefas Nova ou existente do Outlook.   |
@@ -41,8 +43,8 @@ No Outlook, o grupo de tarefas padrão `My Tasks`, contém uma pasta de tarefas 
 |:---------------|:--------|:----------|
 |changeKey|String|A versão da pasta de tarefas.|
 |id|String|O identificador da pasta de tarefas, exclusivo na caixa de correio do usuário. Somente leitura.|
-|isDefaultFolder|Booliano|True se a pasta é a pasta de tarefas padrão.|
-|name|String|O nome da pasta de tarefas.|
+|isDefaultFolder|Boolean|True se a pasta é a pasta de tarefas padrão.|
+|nome|String|O nome da pasta de tarefas.|
 |parentGroupKey|Guid|O identificador exclusivo do GUID para o grupo pai da pasta de tarefas.|
 
 ## <a name="relationships"></a>Relações

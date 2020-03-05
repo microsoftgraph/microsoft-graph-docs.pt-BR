@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: ecd1c42ceb278c483601344dd28c72f7436b9537
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c61ab3808a37d1f90f15dc55ab6331c5bec8c7a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009346"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522334"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>tipo de recurso onenoteOperationError
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

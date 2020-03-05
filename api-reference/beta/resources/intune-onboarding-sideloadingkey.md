@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d812862af014d9e33674c495688223bc5b32d5c0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1be5f4db6876ff18d17305fe657c9852c01fd15f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375412"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524080"
 ---
 # <a name="sideloadingkey-resource-type"></a>tipo de recurso sideLoadingKey
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 A entidade SideLoadingKey é necessária para os dispositivos Windows 8 e 8,1 para aplicativos de linha de negócios de desinstalar para um locatário.
 
@@ -32,10 +34,10 @@ A entidade SideLoadingKey é necessária para os dispositivos Windows 8 e 8,1 pa
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID exclusiva da chave de carregamento do lado.|
+|id|String|ID exclusiva da chave de carregamento do lado.|
 |value|Cadeia de caracteres|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
-|displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
-|descrição|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
+|displayName|Cadeia de caracteres|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
+|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
 |totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
 |lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 

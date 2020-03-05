@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7f2ff99f6f7548e9176358219d70cd55e1232a05
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: cf031459004e0c0d56b5b09145ed897a9f960142
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939170"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523006"
 ---
 # <a name="labeldetails-resource-type"></a>tipo de recurso labelDetails
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +27,8 @@ Representa os detalhes do rótulo de um rótulo de proteção de informações. 
 | color       | String  | A cor que a interface do usuário deve exibir para o rótulo, se configurada.                               |
 | description | Cadeia de caracteres  | A descrição definida pelo administrador para o rótulo.                                                                 |
 | id          | String  | A ID do rótulo é um identificador global exclusivo (GUID).                                                          |
-| isActive    | Booliano | Indica se o rótulo está ativo ou não. Os rótulos ativos devem ser ocultos ou desabilitados nas interfaces de usuário. |
-| name        | Cadeia de caracteres  | O nome de texto não criptografado do rótulo.                                                                             |
+| isActive    | Boolean | Indica se o rótulo está ativo ou não. Os rótulos ativos devem ser ocultos ou desabilitados nas interfaces de usuário. |
+| nome        | Cadeia de caracteres  | O nome de texto não criptografado do rótulo.                                                                             |
 | sensitivity | Int32   | O valor de confidencialidade do rótulo, onde inferior é menos confidencial.                                           |
 | tooltip     | String  | A dica de ferramenta que deve ser exibida para o rótulo em uma interface de usuário.                                      |
 

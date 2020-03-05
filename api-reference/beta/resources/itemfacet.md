@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: bb89037b3d5b88e57ec12b2b02a5e2ed37cb2601
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: efd4977872dfefc5a0e5be9b10ad1fa196fa20a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939324"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523069"
 ---
 # <a name="itemfacet-resource-type"></a>tipo de recurso de Multiface
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

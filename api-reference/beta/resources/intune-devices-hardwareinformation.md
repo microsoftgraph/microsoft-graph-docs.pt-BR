@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a09b1e4d5e788d19ae0df6f6a02fe46009e5362
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 40c3c122fe5aae65b4ed34d5178c67160a7fbe0a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369924"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525009"
 ---
 # <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Informações de hardware de um determinado dispositivo.
 
@@ -35,9 +37,9 @@ Informações de hardware de um determinado dispositivo.
 |cellularTechnology|String|Tecnologia celular do dispositivo|
 |wifiMac|String|Endereço MAC WiFi do dispositivo|
 |operatingSystemLanguage|String|Idioma do sistema operacional do dispositivo|
-|isSupervised|Booliano|Modo supervisionado do dispositivo|
+|isSupervised|Boolean|Modo supervisionado do dispositivo|
 |isEncrypted|Boolean|Status de criptografia do dispositivo|
-|isSharedDevice|Booliano|IPad compartilhado|
+|isSharedDevice|Boolean|IPad compartilhado|
 |sharedDeviceCachedUsers|coleção [sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)|Todos os usuários no dispositivo Apple compartilhado|
 |tpmSpecificationVersion|String|Cadeia de caracteres que especifica a versão da especificação.|
 |operatingSystemEdition|String|Cadeia de caracteres que especifica a edição do sistema operacional.|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9e74a49a9a8c4b57232ed90cef232fa8b7feb998
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 203d914098d6b7cb0b03715accac4958bcf53870
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841315"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522232"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>tipo de recurso onPremisesAgentGroup
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ Representa o grupo de agentes local. Os grupos de agentes permitem que um admini
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome para exibição do **onPremisesAgentGroup**.|
+|displayName|Cadeia de caracteres|Nome para exibição do **onPremisesAgentGroup**.|
 |id|String| A ID de objeto do **onPremisesAgentGroup**. Somente leitura.|
 |isDefault|Booliano|Indica se o **onPremisesAgentGroup** é o grupo de agente padrão. Somente um único grupo de agentes pode ser o padrão **onPremisesAgentGroup** e é definido pelo sistema.|
 |publishingtype|string| Os valores possíveis são: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|

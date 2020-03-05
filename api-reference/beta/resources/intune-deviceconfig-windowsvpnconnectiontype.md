@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 18c6ea554bb22ee31ff6ae2e0d596343ad42532c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7cf55244cc40c78524fb0dd40fcb38d99c31dae4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337612"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525352"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>tipo de enumeração windowsVpnConnectionType
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de conexão VPN do Windows.
 
@@ -24,9 +26,9 @@ Tipo de conexão VPN do Windows.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |pulseSecure|,0|Pulso seguro.|
-|f5EdgeClient|1|Cliente de borda F5.|
-|dellSonicWallMobileConnect|duas|Conexão móvel Dell SonicWALL.|
-|checkPointCapsuleVpn|3D|Verificar VPN de cápsula de ponto.|
+|f5EdgeClient|1 |Cliente de borda F5.|
+|dellSonicWallMobileConnect|2 |Conexão móvel Dell SonicWALL.|
+|checkPointCapsuleVpn|3 |Verificar VPN de cápsula de ponto.|
 
 
 

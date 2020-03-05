@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 215cf68cbf2efffacd6259aa64b0a00d5700b842
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98408034bb734ddd714b0959d2605a3f240c7777
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009381"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522362"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ Para obter informações sobre as permissões necessárias para trabalhar com o 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|notebooks|Coleção [Notebook](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
+|notebooks|Coleção [bloco de anotações](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
 |operations|coleção [onenoteOperation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
 |páginas|coleção [onenotePage](onenotepage.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
 |recursos|coleção [onenoteResource](onenoteresource.md) |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](onenoteresource.md). Somente leitura. Anulável.|
@@ -63,8 +65,8 @@ Para obter informações sobre as permissões necessárias para trabalhar com o 
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Create notebook](../api/onenote-post-notebooks.md) |[anotações](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
-|[List notebooks](../api/onenote-list-notebooks.md) |Coleção [Notebook](notebook.md)| Obter uma coleção de blocos de anotações.|
+|[Criar bloco de anotações](../api/onenote-post-notebooks.md) |[bloco de anotações](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
+|[Listar blocos de anotações](../api/onenote-list-notebooks.md) |Coleção [bloco de anotações](notebook.md)| Obter uma coleção de blocos de anotações.|
 |[Create page](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md) | Crie uma página postando na coleção pages.|
 |[List pages](../api/onenote-list-pages.md) |coleção [onenotePage](onenotepage.md)| Obter uma coleção de páginas.|
 |[List section groups](../api/onenote-list-sectiongroups.md) |coleção de [seções](sectiongroup.md)| Obter uma coleção de grupos de seção.|

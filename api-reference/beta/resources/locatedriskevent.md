@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e024b5311d6385888e7ed8e53ba9e37e8b2d2ed5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7abb10417e7659e923eddf04990067c8b979ce9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966983"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522922"
 ---
 # <a name="locatedriskevent-resource-type"></a>tipo de recurso locatedRiskEvent
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 * [entradas de dispositivos infectados por malware](malwareriskevent.md)
 * [impossível viajar para locais atypical](impossibletravelriskevent.md)
 * [entradas de endereços IP suspeitos](suspiciousipriskevent.md)
-* [entradas de locais](unfamiliarlocationriskevent.md) desconhecidos As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+* [entradas de locais desconhecidos](unfamiliarlocationriskevent.md) As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Métodos
@@ -35,7 +37,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|cadeia de caracteres| Somente leitura|
+|id|string| Somente leitura|
 |ipAddress|string| O endereço IP do logon|
 |location|cadeia de caracteres| O local anexado ao endereço IP do logon|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
@@ -43,13 +45,13 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
 |riskEventType|string| O tipo de risco|
 |userDisplayName|string| O nome do usuário em risco|
-|userId|string| A identificação do usuário em risco|
+|userId|cadeia de caracteres| A identificação do usuário em risco|
 |userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

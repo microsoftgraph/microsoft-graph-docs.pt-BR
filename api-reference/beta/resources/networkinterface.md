@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ef932729149ea21580ff5a8f1cc3f52e253bfc50
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5fd40bec964a73579863b8222cd4c90d58991502
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009612"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522572"
 ---
 # <a name="networkinterface-resource-type"></a>tipo de recurso networkInterface
+
+Namespace: Microsoft. Graph
 
 Representa uma placa de interface de rede (NIC) associada a esse host.
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 10bdafb9894d822f345bb6fb23174fa7f7deee4c
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: e32d6c51ae09601bc752ed2a352dc50a4285f7c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653815"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523160"
 ---
 # <a name="ipnamedlocation-resource-type"></a>tipo de recurso ipNamedLocation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,7 @@ Herda de [namedLocation](../resources/namedLocation.md)
 |displayName|Cadeia de caracteres|Nome legível do local.|
 |id|String|Identificador de um objeto namedLocation. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
 |Intervalos|Coleção [ipRange](iprange.md)|Lista de intervalos de endereços IP no formato CIDR do IPv4 (por exemplo, 1.2.3.4/32) ou qualquer formato IPv6 permitido da IETF RFC596.|
-|isTrusted|Booliano|True se esse local é explicitamente confiável.|
+|isTrusted|Boolean|True se esse local é explicitamente confiável.|
 |modifiedDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora da última modificação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Herdado de [namedLocation](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Relações

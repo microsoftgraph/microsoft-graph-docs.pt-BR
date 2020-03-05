@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 166cd8eb5d6add0d96705ae59f38819c64b1465b
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 82f0e9fa1ab499d7adc305cd74fcf7cdf09fd796
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036295"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523090"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Derivado de [attachment](attachment.md).
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades, relações ou conteúdo bruto de um objeto de item de anexo.|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades, os relacionamentos ou o conteúdo bruto de um objeto itemAttachment.|
 |[Delete](../api/attachment-delete.md) | Nenhum |Exclua o objeto itemAttachment. |
 
 ## <a name="properties"></a>Propriedades
@@ -37,7 +39,7 @@ Derivado de [attachment](attachment.md).
 |name|Cadeia de caracteres|O nome de exibição do anexo.|
 |size|Int32|O tamanho do anexo em bytes.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|O contato anexado, a mensagem ou o evento. Propriedade de navegação.|

@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 76d4d8daf17fa6c953ad7bf727c8b6481f7dc8b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b904928b03318a57f6ed4bd7bd7696b4a8805571
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009591"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522558"
 ---
 # <a name="notebook-resource-type"></a>tipo de recurso Notebook
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +63,7 @@ Veja a seguir uma representação JSON do recurso
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do bloco de anotações. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |links|[notebookLinks](notebooklinks.md)|Links para abrir o bloco de anotações. O `oneNoteClientURL` link abre o bloco de anotações no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebURL` link abre o bloco de anotações no OneNote na Web.|
-|displayName|String|O nome do bloco de anotações.|
+|displayName|Cadeia de caracteres|O nome do bloco de anotações.|
 |sectionGroupsUrl|String|A URL da propriedade `sectionGroups` de navegação, que retorna todos os grupos de seção no bloco de anotações. Somente leitura.|
 |sectionsUrl|String|A URL da propriedade `sections` de navegação, que retorna todas as seções do bloco de anotações. Somente leitura.|
 |própria|String|O ponto de extremidade onde você pode obter detalhes sobre o bloco de anotações. Somente leitura.|
@@ -77,9 +79,9 @@ Veja a seguir uma representação JSON do recurso
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter bloco de anotações](../api/notebook-get.md) | [anotações](notebook.md) |Leia as propriedades e as relações do bloco de anotações.|
+|[Obter bloco de anotações](../api/notebook-get.md) | [bloco de anotações](notebook.md) |Leia as propriedades e as relações do bloco de anotações.|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | coleção [recentNotebook](recentnotebook.md) | Obtenha uma coleção de blocos de anotações acessados mais recentemente para o usuário. |
-|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [anotações](notebook.md) | Recupere as propriedades e os relacionamentos de um objeto Notebook usando seu caminho de URL. |
+|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [bloco de anotações](notebook.md) | Recupere as propriedades e os relacionamentos de um objeto Notebook usando seu caminho de URL. |
 |[Criar grupo de seções](../api/notebook-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Criar um grupo de seção postando na coleção sectionGroups no bloco de anotações especificado.|
 |[List section groups](../api/notebook-list-sectiongroups.md) |coleção de [seções](sectiongroup.md)| Obtém uma coleção de grupos de seções no bloco de anotações especificado.|
 |[Criar seção](../api/notebook-post-sections.md) |[onenoteSection](onenotesection.md)| Criar uma seção postando na coleção Sections no bloco de anotações especificado.|

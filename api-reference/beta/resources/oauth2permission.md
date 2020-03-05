@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 16dfa93d13127d585cd5b56a56987bb22ab39d8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d17834e3cbfcc1d22c9531befe7baa29215f8c4f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009570"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522537"
 ---
 # <a name="oauth2permission-resource-type"></a>tipo de recurso oAuth2Permission
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

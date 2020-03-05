@@ -5,20 +5,22 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6326ad561f7589f85f59fe5d4729816d7f046949
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6ae920e35c3ba7c2b31c5947f15b3e9d6585a21c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913587"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522036"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O tipo de participante.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                 | Tipo de retorno                                                 | Descrição                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
@@ -34,8 +36,8 @@ O tipo de participante.
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | A ID do participante.                                          |
 | informações                  | [participantInfo](participantinfo.md)    | O participante do participante.                          |
-| isInLobby            | Booliano                                  | `true`Se o participante estiver no lobby.                          |
-| IsMuted              | Booliano                                  | `true`Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
+| isInLobby            | Boolean                                  | `true`Se o participante estiver no lobby.                          |
+| IsMuted              | Boolean                                  | `true`Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
 | los             | String                                   | Um blob de dados fornecido pelo participante na lista.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre o fato de o participante ter capacidade de gravação. |

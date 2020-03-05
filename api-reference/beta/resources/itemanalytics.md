@@ -6,14 +6,16 @@ title: O naanalytics
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d2be5c7665961248e989101a1a9bd21eb805e6e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4035ff821927d520ed457c3040be01bd9368240c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967090"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523097"
 ---
 # <a name="itemanalytics-resource-type"></a>tipo de recurso do multianalytics
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ O recurso do Microsoft **Analytics** oferece análise sobre as atividades que oc
 
 Você também pode usar a API [funçãogetactivitiesbyinterval][] para recuperar a análise por um intervalo ou intervalo de tempo personalizado.
 
->**Observação:** O **** recurso do naanalytics ainda não está disponível em todas as implantações [nacionais](/graph/deployments).
+>**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 ## <a name="json-representation"></a>Representação JSON
 

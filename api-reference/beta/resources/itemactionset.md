@@ -6,14 +6,16 @@ title: ItemActionSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8053942fe96011b018e46681d69d308f65aa5d5f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b3b803b719ad14fabf19574a55360009c3dda14e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967144"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523132"
 ---
 # <a name="itemactionset-resource-type"></a>Tipo de recurso ItemActionSet
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

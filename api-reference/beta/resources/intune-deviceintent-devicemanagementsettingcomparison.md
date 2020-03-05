@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e8c886e3464070d0dba8779741ed65681a764de
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6eebd6da0667960fc4319c8c073ad221ddc694a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364737"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525261"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>tipo de recurso deviceManagementSettingComparison
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade que representa o resultado da comparação da configuração
 
@@ -24,7 +26,7 @@ Entidade que representa o resultado da comparação da configuração
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID da configuração|
-|displayName|String|O nome de exibição da configuração|
+|displayName|Cadeia de caracteres|O nome de exibição da configuração|
 |DefinitionId|String|A ID da definição de configuração dessa instância|
 |currentValueJson|String|Representação JSON do valor da configuração de modelo de intenção atual (ou)|
 |newValueJson|String|Representação JSON do valor da configuração de um novo modelo|

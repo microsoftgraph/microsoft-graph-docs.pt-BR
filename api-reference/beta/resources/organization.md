@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3853192a328439eed57e22531d81b09986e2766b
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: cb347dcd95b60a0afcbb4704f65f9339db2973e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539250"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522127"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,26 +39,26 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:-------- |:---- |:----------- |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | A coleção de planos de serviço associados ao locatário. Não anulável. |
 | businessPhones | String collection | Número de telefone da organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. |
-| city | Cadeia de caracteres | Nome da cidade do endereço da organização. |
-| country | Cadeia de caracteres | Nome do país/região do endereço da organização. |
-| countryLetterCode | String | Abreviação de país/região da organização. |
+| city | String | Nome da cidade do endereço da organização. |
+| country | String | Nome do país/região do endereço da organização. |
+| countryLetterCode | String | Abreviação do país/região da organização. |
 | createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 | deletedDateTime | DateTimeOffset | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-| displayName | Cadeia de caracteres | O nome de exibição do locatário. |
+| displayName | String | O nome de exibição do locatário. |
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
 | objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-| onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
-| postalCode | Cadeia de caracteres | Código postal do endereço da organização. |
+| onPremisesSyncEnabled | Boolean | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
+| postalCode | Cadeia de caracteres | CEP do endereço da organização. |
 | preferredLanguage | String | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
 | provisionedPlans | coleção [provisionedPlan](provisionedplan.md) | Não anulável. |
 | securityComplianceNotificationMails | Coleção de cadeias de caracteres ||
 | securityComplianceNotificationPhones | Coleção de cadeias de caracteres ||
-| state | Cadeia de caracteres | Nome do estado do endereço da organização. |
-| street | String | Nome da rua do endereço da organização. |
+| state | String | Nome do estado do endereço da organização. |
+| street | Cadeia de caracteres | Nome da rua do endereço da organização. |
 | technicalNotificationMails |String collection | Não anulável. |
 | verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável. |
 
@@ -64,7 +66,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
-|certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Apenas uma única instância do certificateBasedAuthConfiguration pode ser criada na coleção.  |
+|certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

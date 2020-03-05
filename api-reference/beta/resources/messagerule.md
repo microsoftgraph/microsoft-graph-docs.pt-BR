@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2bdcdba51424f7f864acb454869522b0996ef254
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec7225800c179ae5592c5d2ef040f8a009568ac7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009696"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522670"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ Programaticamente, você pode acessar regras por meio da propriedade de navegaç
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. |
 | displayName | Cadeia de caracteres | O nome de exibição da regra. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Condições de exceção para a regra. |
-| hasError | Booliano | Indica se a regra está em uma condição de erro. Somente leitura. |
+| hasError | Boolean | Indica se a regra está em uma condição de erro. Somente leitura. |
 | id |String|O identificador exclusivo da regra. Somente leitura.|
-| isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. |
+| isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. |
 | isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
 

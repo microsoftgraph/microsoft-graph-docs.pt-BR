@@ -6,14 +6,16 @@ title: ItemActivity
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ab96c3169a2d2dc37e6b94ab325866e93fa4d6c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4cac403e44abaf9ae69f78005555772b9979046f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967089"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523118"
 ---
 # <a name="itemactivity-resource-type"></a>Tipo de recurso ItemActivity
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

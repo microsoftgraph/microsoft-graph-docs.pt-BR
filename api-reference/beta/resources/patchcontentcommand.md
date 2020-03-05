@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 4cfa6fe84c18d4895e5d709d3ab6254258c1b970
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f0b1ff2e4d8b6c312cf0a3a5be0acf70835fd788
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422279"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521994"
 ---
 # <a name="patchcontentcommand-resource-type"></a>tipo de recurso patchContentCommand
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

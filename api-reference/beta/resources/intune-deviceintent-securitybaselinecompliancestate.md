@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a287ede8651b3466acdd4ebe229eb1a0f84810d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf982cb474edb750212630622b9be7ca1d728aea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319372"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525198"
 ---
 # <a name="securitybaselinecompliancestate-enum-type"></a>tipo de enumeração securityBaselineComplianceState
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Estado de conformidade da linha de base de segurança
 
@@ -24,11 +26,11 @@ Estado de conformidade da linha de base de segurança
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Estado desconhecido|
-|forma|1|Estado seguro|
-|Não aplicável|duas|Estado não aplicável|
-|Não seguro|3D|Estado não seguro|
-|erro|quatro|Estado de erro|
-|apresentar|0,5|Estado de conflito|
+|forma|1 |Estado seguro|
+|Não aplicável|2 |Estado não aplicável|
+|Não seguro|3 |Estado não seguro|
+|erro|4 |Estado de erro|
+|apresentar|5 |Estado de conflito|
 
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: dfc45c4973194d26c1830f8c36d3bf3b407d2e3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d517763fdfcbf046c36fc944d229b9a15b0cb8fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009500"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522446"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>tipo de recurso office365GroupsActivityDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -21,7 +23,7 @@ ms.locfileid: "36009500"
 | groupId                           | Cadeia de caracteres  | A ID do grupo.          |
 | reportRefreshDate                 | Data    | A última data do conteúdo.          |
 | groupDisplayName                  | String  | O nome de exibição do grupo.           |
-| isDeleted                         | Booliano | Se este usuário foi excluído ou excluído por software. |
+| isDeleted                         | Boolean | Se este usuário foi excluído ou excluído por software. |
 | ownerPrincipalName                | String  | O nome principal do proprietário do grupo.          |
 | lastActivityDate                  | Data    | A data da última atividade dos seguintes cenários: caixa de correio de grupo recebidas emails; arquivos de usuário exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos do SharePoint; páginas do SharePoint exibidas pelo usuário; mensagens postadas, lidas ou curtidas pelo usuário em grupos do Yammer. |
 | groupType                         | String  | O tipo de grupo. Os valores possíveis são: **Public** ou **Private**. |

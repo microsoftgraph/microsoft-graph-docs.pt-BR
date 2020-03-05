@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26f29427dfe863ed1b89eaef5025655dc07430fd
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: ed769c1e6550584688324f4bfdf2db772feae19c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636592"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524185"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,9 +25,9 @@ Restrições de registro específicas de plataformas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|platformBlocked|Booliano|Bloqueia o registro da plataforma|
+|platformBlocked|Boolean|Bloqueia o registro da plataforma|
 |personalDeviceEnrollmentBlocked|Booliano|Bloqueia o registro de dispositivos de sua propriedade|
-|osMinimumVersion|Cadeia de caracteres|Versão do SO mínimo compatível|
+|osMinimumVersion|String|Versão do SO mínimo compatível|
 |osMaximumVersion|Cadeia de caracteres|Versão do SO máximo compatível|
 |blockedManufacturers|String collection|Conjunto de fabricantes bloqueados.|
 

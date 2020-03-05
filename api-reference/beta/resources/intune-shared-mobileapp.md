@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9688f0b4223fe0e1ec2e355c54f0efcbffdc2573
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: ca889aadfe5ce3a2bdbb7c2409db0b2ddec451af
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538718"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523622"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
 
@@ -39,16 +41,16 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
-|publisher|Cadeia de caracteres|O publicador do aplicativo.|
+|description|String|A descrição do aplicativo.|
+|publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez.|
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador.|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade.|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais.|
-|owner|Cadeia de caracteres|O proprietário do conteúdo.|
-|developer|Cadeia de caracteres|O desenvolvedor do aplicativo.|
+|privacyInformationUrl|String|A URL da declaração de privacidade.|
+|informationUrl|String|A URL de informações adicionais.|
+|owner|String|O proprietário do conteúdo.|
+|developer|String|O desenvolvedor do aplicativo.|
 |notes|String|Anotações do aplicativo.|
 |uploadState|Int32|O estado de upload.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|

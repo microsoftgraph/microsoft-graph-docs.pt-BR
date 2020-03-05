@@ -5,14 +5,16 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 2d740c5b19b363fa2534984bf059cd186b065e89
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a35d48839e6932274f4257ce475710ea904878c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939604"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521980"
 ---
 # <a name="payloadtypes-resource-type"></a>tipo de recurso payloadTypes
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

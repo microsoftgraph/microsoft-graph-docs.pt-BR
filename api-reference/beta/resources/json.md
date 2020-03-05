@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 95eb60aa039ce526d32795b4c81abb0f225808c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 25a142fa9fedfb3746c884e936ba06486622ae11
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010025"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523041"
 ---
 # <a name="json-resource-type"></a>Tipo de recurso Json
+
+Namespace: Microsoft. Graph
 
 Representa os dados retornados no formato do JSON
 ## <a name="properties"></a>Propriedades

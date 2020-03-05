@@ -2,18 +2,20 @@
 author: JeremyKelley
 description: " ou uma coleção de itens que deve ser tratada como uma coleção em vez de itens individuais."
 ms.date: 09/10/2017
-title: Packager
+title: Pacote
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6ae382d1f69a88d814339370264dc5dc7fac9414
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d58d370abb628138040f34a0ffa6362c86b6a1ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966262"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522057"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ DriveItems com a faceta **package** não incluem uma faceta **folder** ou **file
 }
 ```
 
-| Nome da Propriedade | Tipo   | Descrição                                                                                                                                                                      |
+| Nome da propriedade | Tipo   | Descrição                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **type**      | string | Uma cadeia de caracteres indicando o tipo de pacote. Embora `oneNote` seja o único valor definido atualmente, você deve esperar que outros tipos de pacote sejam retornados e lidar com eles da forma apropriada. |
 
