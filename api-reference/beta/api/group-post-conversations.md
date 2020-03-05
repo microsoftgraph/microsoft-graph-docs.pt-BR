@@ -5,55 +5,57 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 688d7c1a5d2d5a60ac7f2dbaf0751df4835ecc12
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ebbe3ece6af2acd71ab8fcffc12bbc65ddd29e1a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420095"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42418845"
 ---
-# <a name="create-conversation"></a><span data-ttu-id="a85c7-103">Criar conversa</span><span class="sxs-lookup"><span data-stu-id="a85c7-103">Create conversation</span></span>
+# <a name="create-conversation"></a><span data-ttu-id="57cd7-103">Criar conversa</span><span class="sxs-lookup"><span data-stu-id="57cd7-103">Create conversation</span></span>
+
+<span data-ttu-id="57cd7-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="57cd7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a85c7-104">Crie uma nova [conversa](../resources/conversation.md) incluindo um thread e uma postagem.</span><span class="sxs-lookup"><span data-stu-id="a85c7-104">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
+<span data-ttu-id="57cd7-105">Crie uma nova [conversa](../resources/conversation.md) incluindo um thread e uma postagem.</span><span class="sxs-lookup"><span data-stu-id="57cd7-105">Create a new [conversation](../resources/conversation.md) by including a thread and a post.</span></span> 
 
-<span data-ttu-id="a85c7-105">Use [reply thread](conversationthread-reply.md) ou [reply post](post-reply.md) para postar mais na conversa.</span><span class="sxs-lookup"><span data-stu-id="a85c7-105">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
+<span data-ttu-id="57cd7-106">Use [reply thread](conversationthread-reply.md) ou [reply post](post-reply.md) para postar mais na conversa.</span><span class="sxs-lookup"><span data-stu-id="57cd7-106">Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a85c7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a85c7-106">Permissions</span></span>
-<span data-ttu-id="a85c7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a85c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="57cd7-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="57cd7-107">Permissions</span></span>
+<span data-ttu-id="57cd7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57cd7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a85c7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a85c7-109">Permission type</span></span>      | <span data-ttu-id="a85c7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a85c7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="57cd7-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="57cd7-110">Permission type</span></span>      | <span data-ttu-id="57cd7-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="57cd7-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a85c7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a85c7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a85c7-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a85c7-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a85c7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a85c7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a85c7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a85c7-114">Not supported.</span></span>    |
-|<span data-ttu-id="a85c7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a85c7-115">Application</span></span> | <span data-ttu-id="a85c7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a85c7-116">Not supported.</span></span> |
+|<span data-ttu-id="57cd7-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="57cd7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="57cd7-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57cd7-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="57cd7-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="57cd7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57cd7-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="57cd7-115">Not supported.</span></span>    |
+|<span data-ttu-id="57cd7-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="57cd7-116">Application</span></span> | <span data-ttu-id="57cd7-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="57cd7-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a85c7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a85c7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="57cd7-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="57cd7-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/conversations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a85c7-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a85c7-118">Request headers</span></span>
-| <span data-ttu-id="a85c7-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a85c7-119">Header</span></span>       | <span data-ttu-id="a85c7-120">Valor</span><span class="sxs-lookup"><span data-stu-id="a85c7-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="57cd7-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="57cd7-119">Request headers</span></span>
+| <span data-ttu-id="57cd7-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="57cd7-120">Header</span></span>       | <span data-ttu-id="57cd7-121">Valor</span><span class="sxs-lookup"><span data-stu-id="57cd7-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a85c7-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a85c7-121">Authorization</span></span>  | <span data-ttu-id="a85c7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a85c7-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="a85c7-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a85c7-124">Content-Type</span></span>  | <span data-ttu-id="a85c7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a85c7-125">application/json</span></span>  |
+| <span data-ttu-id="57cd7-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="57cd7-122">Authorization</span></span>  | <span data-ttu-id="57cd7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="57cd7-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="57cd7-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="57cd7-125">Content-Type</span></span>  | <span data-ttu-id="57cd7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="57cd7-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a85c7-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a85c7-126">Request body</span></span>
-<span data-ttu-id="a85c7-127">No corpo da solicitação, forneça uma representação JSON do objeto [conversation](../resources/conversation.md) que contém um [conversationThread](../resources/conversationthread.md) e um [post](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="a85c7-127">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
+## <a name="request-body"></a><span data-ttu-id="57cd7-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="57cd7-127">Request body</span></span>
+<span data-ttu-id="57cd7-128">No corpo da solicitação, forneça uma representação JSON do objeto [conversation](../resources/conversation.md) que contém um [conversationThread](../resources/conversationthread.md) e um [post](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="57cd7-128">In the request body, supply a JSON representation of [conversation](../resources/conversation.md) object containing a [conversationThread](../resources/conversationthread.md) and a [post](../resources/post.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="a85c7-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="a85c7-128">Response</span></span>
-<span data-ttu-id="a85c7-129">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [conversation](../resources/conversation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a85c7-129">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span> 
+## <a name="response"></a><span data-ttu-id="57cd7-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="57cd7-129">Response</span></span>
+<span data-ttu-id="57cd7-130">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [conversation](../resources/conversation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="57cd7-130">If successful, this method returns `201 Created` response code and [conversation](../resources/conversation.md) object in the response body.</span></span> 
 
-<span data-ttu-id="a85c7-130">A resposta inclui as IDs da nova conversa e do thread, que você pode usar na operação [listar postagens](conversationthread-list-posts.md) para obter a nova postagem também.</span><span class="sxs-lookup"><span data-stu-id="a85c7-130">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
+<span data-ttu-id="57cd7-131">A resposta inclui as IDs da nova conversa e do thread, que você pode usar na operação [listar postagens](conversationthread-list-posts.md) para obter a nova postagem também.</span><span class="sxs-lookup"><span data-stu-id="57cd7-131">The response includes the IDs for the new conversation and thread, which you can use in the [list posts](conversationthread-list-posts.md) operation to get the new post as well.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a85c7-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a85c7-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="a85c7-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a85c7-132">Request</span></span>
-<span data-ttu-id="a85c7-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a85c7-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="57cd7-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="57cd7-132">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="57cd7-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="57cd7-133">Request</span></span>
+<span data-ttu-id="57cd7-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="57cd7-134">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a85c7-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="a85c7-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="57cd7-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="57cd7-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_from_group"
@@ -86,24 +88,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a85c7-135">C#</span><span class="sxs-lookup"><span data-stu-id="a85c7-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="57cd7-136">C#</span><span class="sxs-lookup"><span data-stu-id="57cd7-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a85c7-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a85c7-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="57cd7-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57cd7-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a85c7-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a85c7-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="57cd7-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="57cd7-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="a85c7-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="a85c7-138">Response</span></span>
-<span data-ttu-id="a85c7-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a85c7-139">The following is an example of the response.</span></span>
-><span data-ttu-id="a85c7-140">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a85c7-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a85c7-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a85c7-141">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="57cd7-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="57cd7-139">Response</span></span>
+<span data-ttu-id="57cd7-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="57cd7-140">The following is an example of the response.</span></span>
+><span data-ttu-id="57cd7-141">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="57cd7-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="57cd7-142">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="57cd7-142">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
