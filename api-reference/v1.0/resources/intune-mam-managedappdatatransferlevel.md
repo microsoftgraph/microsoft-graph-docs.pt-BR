@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ca91a5260b61e58de15ca31f56ab1979a53251dc
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 8f8fe94a7a84b5b49a3502f4c07ed117d49ade7d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356370"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448414"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>tipo de enumeração managedAppDataTransferLevel
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Os dados podem ser transferidos de/para essas classes de aplicativos
 
@@ -22,8 +24,8 @@ Os dados podem ser transferidos de/para essas classes de aplicativos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |todos os aplicativos|,0|Todos os aplicativos.|
-|managedApps|1|Aplicativos gerenciados.|
-|none|duas|Nenhum aplicativo.|
+|managedApps|1 |Aplicativos gerenciados.|
+|nenhuma|2 |Nenhum aplicativo.|
 
 
 

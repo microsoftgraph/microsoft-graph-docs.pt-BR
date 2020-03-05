@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00da2479c36d9b9780264e19d48a838b4ab838eb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 380da320217a63ccf115bc98f4b75ec6d844de0e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949354"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42449142"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Criar deviceConfigurationGroupAssignment
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -61,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|targetGroupId|Cadeia de Caracteres|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
+|targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
 |excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 

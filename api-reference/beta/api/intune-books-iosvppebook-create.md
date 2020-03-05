@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dea82ace154662826cf82e78053f8c678e4768f
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: bb641714a4ffbdb304ba3a95bb7078d9bc223696
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39931771"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450360"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,22 +56,22 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |id|String|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |description|String|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|Cadeia de Caracteres|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|String|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |informationUrl|String|A URL de informações adicionais. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|Cadeia de Caracteres|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
-|appleId|Cadeia de Caracteres|O Apple ID associado ao token Vpp.|
-|vppOrganizationName|Cadeia de Caracteres|O nome da organização do token Vpp.|
+|appleId|String|O Apple ID associado ao token Vpp.|
+|vppOrganizationName|String|O nome da organização do token Vpp.|
 |genres|Coleção de cadeia de caracteres|Gêneros.|
-|idioma|Cadeia de Caracteres|Idioma.|
+|idioma|String|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
 
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a3e73cf0b0dbe0b54b9ac3af5a5378503f336e6a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4c87031c5d8957e4014f491f671c05b7a10b4934
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870446"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451263"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceintegration
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
 |displayName|String|Nome da integração da força de funcionários.|
 |encripta|workforceIntegrationEncryption|O recurso de criptografia de integração da força de funcionários. |
-|isActive|Booliano|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
+|isActive|Boolean|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
 |compatível|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
 |url|Cadeia de caracteres| URL de integração de força de obra para retornos de chamada do serviço de turno. |
 
@@ -65,7 +67,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo de solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_workforceintegration"
@@ -87,15 +89,15 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

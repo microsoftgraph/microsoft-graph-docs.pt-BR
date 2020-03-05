@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65be6c79e05b19ad7dcd5fc3fabc4117e2cddec2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3a4b4a0e2ef8355450f039608a7769a613296cc2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39932037"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450388"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,12 +55,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome de exibição do evento.|
-|componentName|Cadeia de Caracteres|Nome do componente.|
+|componentName|String|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|Cadeia de Caracteres|Nome amigável da atividade.|
+|atividade|String|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|Cadeia de Caracteres|O tipo de atividade que foi executada.|
-|activityOperationType|Cadeia de Caracteres|O tipo de operação HTTP da atividade.|
+|activityType|String|O tipo de atividade que foi executada.|
+|activityOperationType|String|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|

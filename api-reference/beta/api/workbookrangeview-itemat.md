@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0e944a1ad0c0840fd0cc450226ddb78b312e2ece
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5d6423e8899d9bc07038cf72ef453a87c44f53ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938117"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451326"
 ---
 # <a name="workbookrangeview-itemat"></a>workbookRangeView: itemAt
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

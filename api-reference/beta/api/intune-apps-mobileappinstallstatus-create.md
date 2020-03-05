@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 24c7cba524cb90a7a9c9ea65ea276b41abba9bdc
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 30ffe5c96f9e0b4829663558d0a97a604168b1ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39935138"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450696"
 ---
 # <a name="create-mobileappinstallstatus"></a>Criar mobileAppInstallStatus
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,18 +55,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceName|Cadeia de Caracteres|Nome do dispositivo|
-|deviceId|Cadeia de Caracteres|ID do dispositivo|
+|deviceName|String|Nome do dispositivo|
+|deviceId|String|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails`, `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet`, `dependencyPendingReboot`, `dependencyWithAutoInstallDisabled`, `seeInstallErrorCode`, `autoInstallDisabled`, `seeUninstallErrorCode`, `pendingReboot`, `installingDependencies`, `contentDownloaded`, `powerShellScriptRequirementNotMet`, `registryRequirementNotMet`, `fileSystemRequirementNotMet`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|O código de erro para instalação ou desinstalação de falhas.|
 |osVersion|String|Versão do sistema operacional|
-|osDescription|Cadeia de Caracteres|Descrição do sistema operacional|
+|osDescription|String|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
 |userPrincipalName|String|Nome UPN|
-|displayVersion|Cadeia de Caracteres|Versão de leitura humana do aplicativo|
+|displayVersion|String|Versão de leitura humana do aplicativo|
 
 
 

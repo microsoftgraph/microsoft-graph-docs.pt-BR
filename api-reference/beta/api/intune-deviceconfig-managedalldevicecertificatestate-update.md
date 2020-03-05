@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f3e86964684f0b1e913b74aaad7ab587aad65e70
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1ae99c18b065e2b40259a84ae869bf0d1d6008f7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947957"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448624"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>Atualizar managedAllDeviceCertificateState
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,15 +55,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|managedDeviceDisplayName|Cadeia de Caracteres|Nome de exibição do dispositivo|
+|managedDeviceDisplayName|String|Nome de exibição do dispositivo|
 |userPrincipalName|String|Nome UPN|
 |certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
-|certificateIssuerName|Cadeia de Caracteres|Emissor|
-|certificateThumbprint|Cadeia de Caracteres|Identificação|
-|certificateSerialNumber|Cadeia de Caracteres|Número de série|
-|certificateSubjectName|Cadeia de Caracteres|Nome do assunto do certificado|
+|certificateIssuerName|String|Emissor|
+|certificateThumbprint|String|Identificação|
+|certificateSerialNumber|String|Número de série|
+|certificateSubjectName|String|Nome do assunto do certificado|
 |certificateKeyUsages|Int32|Uso de chave|
-|certificateExtendedKeyUsages|Cadeia de Caracteres|Uso avançado de chave|
+|certificateExtendedKeyUsages|String|Uso avançado de chave|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 
 

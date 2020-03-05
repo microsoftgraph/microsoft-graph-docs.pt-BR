@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2160d8ee9858f5f4af752e7ce4c5170a074354ac
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 27d4833c82819c5a646cbad25959bdb6071a782c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39934452"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450626"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [symante
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo. pfx.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|subject|Cadeia de caracteres|O valor de entidade para o certificado.|
-|issuerName|Cadeia de Caracteres|O nome do emissor do certificado.|
-|emissor|Cadeia de Caracteres|O valor do emissor para o certificado.|
+|assunto|Cadeia de caracteres|O valor de entidade para o certificado.|
+|issuerName|String|O nome do emissor do certificado.|
+|emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de codesignação como CERT da Symantec.|
 

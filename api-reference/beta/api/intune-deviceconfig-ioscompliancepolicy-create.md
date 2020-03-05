@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dc2933f3a6c6408a9f5edbe5a97d1bcf579ecbc8
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 1ce2abd418d96598f617897c112c36ac70093d3b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635100"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42449051"
 ---
 # <a name="create-ioscompliancepolicy"></a>Criar iosCompliancePolicy
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,7 +60,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosCompliancePol
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|passcodeBlockSimple|Booliano|Indica se códigos de acesso simples devem ou não ser bloqueados.|
+|passcodeBlockSimple|Boolean|Indica se códigos de acesso simples devem ou não ser bloqueados.|
 |passcodeExpirationDays|Int32|Número de dias antes da expiração do código de acesso. Valores válidos de 1 a 65535|
 |passcodeMinimumLength|Int32|Comprimento mínimo do código de acesso. Valores válidos de 4 a 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que um código de acesso seja necessário.|
@@ -66,13 +68,13 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosCompliancePol
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acesso anteriores para bloquear. Valores válidos de 1 a 24|
 |passcodeMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de código de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passcodeRequired|Booliano|Indica se um código de acesso deve ou não ser exigido.|
-|osMinimumVersion|Cadeia de caracteres|Versão mínima do IOS.|
+|passcodeRequired|Boolean|Indica se um código de acesso deve ou não ser exigido.|
+|osMinimumVersion|String|Versão mínima do IOS.|
 |osMaximumVersion|String|Versão máxima do iOS.|
-|osMinimumBuildVersion|Cadeia de caracteres|Versão mínima do IOS Build.|
-|osMaximumBuildVersion|Cadeia de caracteres|Versão máxima do IOS Build.|
-|securityBlockJailbrokenDevices|Booliano|Os dispositivos não devem ser violados ou com modificações root.|
-|deviceThreatProtectionEnabled|Booliano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
+|osMinimumBuildVersion|String|Versão mínima do IOS Build.|
+|osMaximumBuildVersion|String|Versão máxima do IOS Build.|
+|securityBlockJailbrokenDevices|Boolean|Os dispositivos não devem ser violados ou com modificações root.|
+|deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indica se um perfil de email gerenciado deve ou não ser exigido.|
 |restrictedApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Exigir que o dispositivo não tenha os aplicativos especificados instalados. Essa coleção pode conter um máximo de 100 elementos.|

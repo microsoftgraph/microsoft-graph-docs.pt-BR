@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d791126a5e059c80d4bc6da76597dd563e1c723a
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 55045faa017c852b812c04b2565269773090ee2e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367823"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448379"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O recurso ManagedAppPolicy representa um tipo de base para políticas específicas de plataformas.
 
@@ -28,11 +30,11 @@ O recurso ManagedAppPolicy representa um tipo de base para políticas específic
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição da política.|
-|descrição|String|Descrição da política.|
+|displayName|Cadeia de caracteres|Nome de exibição da política.|
+|description|String|Descrição da política.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política.|
 |lastModifiedDateTime|DateTimeOffset|Última hora em que a política foi modificada.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações

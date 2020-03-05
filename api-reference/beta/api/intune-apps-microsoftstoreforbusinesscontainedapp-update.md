@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d8449b70311c5eb4f4ca65c62378af23dca3d98
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3a25ce46c353902feb700bdf1a853d3998f34eee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39935937"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450843"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Atualizar microsoftStoreForBusinessContainedApp
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [microso
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|Cadeia de Caracteres|A ID do modelo do usuário do aplicativo do aplicativo contido de um MicrosoftStoreForBusinessApp.|
+|appUserModelId|String|A ID do modelo do usuário do aplicativo do aplicativo contido de um MicrosoftStoreForBusinessApp.|
 
 
 
