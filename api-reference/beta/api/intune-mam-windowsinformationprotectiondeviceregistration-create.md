@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bbe37b0ed8bfb8d0f4b12c0b05d69ea6a13834fe
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3fd6c029efc52acc594c51f37700388231c08260
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39942139"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462968"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Criar windowsInformationProtectionDeviceRegistration
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userId|Cadeia de caracteres|UserId associado a este registro de registro de dispositivo.|
-|deviceRegistrationId|Cadeia de Caracteres|Identificador de dispositivo para este registro de registro de dispositivo.|
+|deviceRegistrationId|String|Identificador de dispositivo para este registro de registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.|
-|deviceMacAddress|Cadeia de Caracteres|Endereço MAC do dispositivo.|
+|deviceMacAddress|String|Endereço MAC do dispositivo.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo.|
 
 

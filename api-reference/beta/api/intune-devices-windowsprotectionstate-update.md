@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c64d51e88bc4e4bcff7baf5214f61e094b7ff53
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8aa21ece86f372274085bdad6d43df0a2893ba2e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944199"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42467638"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar Windowsprotectionstate foi
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -62,13 +64,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |signatureUpdateOverdue|Boolean|Assinatura desatualizada ou não?|
 |rebootRequired|Boolean|Reinicialização necessária ou não?|
 |fullScanRequired|Boolean|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de Caracteres|Versão atual do mecanismo do Endpoint Protection|
-|signatureVersion|Cadeia de Caracteres|Versão atual de definições de malware|
-|antiMalwareVersion|Cadeia de Caracteres|Versão Antimalware atual|
+|engineVersion|String|Versão atual do mecanismo do Endpoint Protection|
+|signatureVersion|String|Versão atual de definições de malware|
+|antiMalwareVersion|String|Versão Antimalware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de Caracteres|Versão da última assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de Caracteres|Versão da última assinatura de verificação completa|
+|lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
 
 

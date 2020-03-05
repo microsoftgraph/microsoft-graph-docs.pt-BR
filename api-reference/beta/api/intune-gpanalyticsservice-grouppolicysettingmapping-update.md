@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68d5b1f3c48229677889f47c8adfff73e5821e7b
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 49b0ca62f96c16a37761517e41eeae74ffb929d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943239"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42465419"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Atualizar groupPolicySettingMapping
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -52,24 +54,24 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Ainda não documentado|
-|parentId|Cadeia de Caracteres|ID pai da configuração de política de grupo.|
-|childIdList|Coleção de cadeias de caracteres|Lista de IDs filhos da configuração de política de grupo.|
+|parentId|String|ID pai da configuração de política de grupo.|
+|childIdList|String collection|Lista de IDs filhos da configuração de política de grupo.|
 |settingName|Cadeia de caracteres|O nome dessa configuração de política de grupo.|
-|settingValue|Cadeia de Caracteres|O valor dessa configuração de política de grupo.|
-|settingValueType|Cadeia de Caracteres|O tipo de valor dessa configuração de política de grupo.|
-|settingDisplayName|Cadeia de Caracteres|O nome de exibição dessa configuração de política de grupo.|
-|settingDisplayValue|Cadeia de Caracteres|O valor de exibição dessa configuração de política de grupo.|
-|settingDisplayValueType|Cadeia de Caracteres|O tipo de valor de exibição dessa configuração de política de grupo.|
-|settingValueDisplayUnits|Cadeia de Caracteres|As unidades de exibição desse valor de configuração da política de grupo|
-|settingCategory|Cadeia de Caracteres|A categoria em que a configuração da política de grupo está.|
-|mdmCspName|Cadeia de Caracteres|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
-|mdmSettingUri|Cadeia de Caracteres|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
+|settingValue|String|O valor dessa configuração de política de grupo.|
+|settingValueType|String|O tipo de valor dessa configuração de política de grupo.|
+|settingDisplayName|String|O nome de exibição dessa configuração de política de grupo.|
+|settingDisplayValue|String|O valor de exibição dessa configuração de política de grupo.|
+|settingDisplayValueType|String|O tipo de valor de exibição dessa configuração de política de grupo.|
+|settingValueDisplayUnits|String|As unidades de exibição desse valor de configuração da política de grupo|
+|settingCategory|String|A categoria em que a configuração da política de grupo está.|
+|mdmCspName|String|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
+|mdmSettingUri|String|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
 |mdmMinimumOSVersion|Int32|A versão mínima do sistema operacional para a qual esta configuração MDM oferece suporte.|
 |SettingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou ADMX) da política de grupo. Os valores possíveis são: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
 |isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no MDM ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
-|intuneSettingUriList|Coleção de cadeias de caracteres|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
+|intuneSettingUriList|String collection|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
 
 
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c6736afe09eb861ce0a94f02c8c29809df73f8bc
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 1477903f2dea9179f4691fddf933b6f8491102de
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161708"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42463746"
 ---
 # <a name="update-grouppolicyuploadedpresentation"></a>Atualizar groupPolicyUploadedPresentation
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a6955e6ada8fd4654cb995b08542fe6c5d19e0d
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 9b7cc9e7623a4954934f6e236c22ce5042390059
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160818"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42463837"
 ---
 # <a name="get-grouppolicyuploadeddefinition"></a>Obter groupPolicyUploadedDefinition
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

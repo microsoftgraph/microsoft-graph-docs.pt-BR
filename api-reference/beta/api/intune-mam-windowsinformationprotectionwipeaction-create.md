@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fbe8cf278607269e1e70d11c305604a414f02cc2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8bffa30178e881ccb30cefab218d53df5e0cd639
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39942062"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462807"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Criar windowsInformationProtectionWipeAction
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Status de ação de apagamento. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|Cadeia de Caracteres|O UserId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceRegistrationId|Cadeia de Caracteres|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceName|Cadeia de Caracteres|Nome do dispositivo de destino.|
-|targetedDeviceMacAddress|Cadeia de Caracteres|Endereço MAC do dispositivo de destino.|
+|targetedUserId|String|O UserId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceRegistrationId|String|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceName|String|Nome do dispositivo de destino.|
+|targetedDeviceMacAddress|String|Endereço MAC do dispositivo de destino.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo direcionado por esta ação de apagamento.|
 
 

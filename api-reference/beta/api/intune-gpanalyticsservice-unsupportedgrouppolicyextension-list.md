@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4b8847fbc5bd0cd8168f764039f9a70b57c58af
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 007f65f15dba6bfb1fa0a6c4ab2e9260fd828e47
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161766"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42465335"
 ---
 # <a name="list-unsupportedgrouppolicyextensions"></a>Listar unsupportedGroupPolicyExtensions
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
