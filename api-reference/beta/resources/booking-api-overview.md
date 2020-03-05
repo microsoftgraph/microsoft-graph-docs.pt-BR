@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 171f75d35812176202263659185bd4dca94e06de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6159d830656ed898de1e91a4866c74f145cfa0a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974196"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508021"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Usar a API do Microsoft Bookings no Microsoft Graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 O Microsoft Bookings permite que proprietários de pequenas empresas gerenciem reservas e informações de clientes com configuração mínima. Um proprietário de empresa pode criar um ou mais negócios e cada empresa oferece um conjunto de serviços. O proprietário pode definir membros da equipe e especificar os serviços que cada membro da equipe executará. Um cliente pode agendar um horário para um serviço específico nesse negócio em um aplicativo online ou móvel. O Bookings garante que o horário do compromisso seja mantido atualizado para a empresa, funcionários e clientes envolvidos.
 
@@ -29,7 +29,7 @@ Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings e
 
 Siga as etapas a seguir antes de agendar os compromissos do cliente para uma empresa pela primeira vez. Certifique-se de fornecer os [tokens de acesso](/graph/auth-overview) apropriados para as operações correspondentes.
 
-1. Garanta que a empresa tenha um assinatura do [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium).
+1. Garanta que a empresa tenha um assinatura do [Office 365 Business Premium](https://products.office.com/pt-BR/business/office-365-business-premium).
 2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. No mínimo, você deve especificar um nome para a nova empresa que os clientes verão:
 <!-- { "blockType": "ignored" } -->
 ```http
