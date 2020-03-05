@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: db6fceb1f7806b5356a4e75f1e4fb6a247bd5b00
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: af970267f4aebcac986659324a30238a8510c010
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447581"
 ---
 # <a name="list-resource"></a>Recurso List
+
+Namespace: microsoft.graph
 
 O recurso **list** representa uma lista em um [site][].
 Este recurso contém as propriedades de nível superior da lista, incluindo definições de modelo e campo.
