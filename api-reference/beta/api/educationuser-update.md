@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6be8a60248290ab1a96b499000b6b548925974e4
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: 11c0b59f5ee79c18e8920a8979db23fe3769f60c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439733"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42423508"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade         | Tipo                                                 | Descrição                                                                                                                                      |
 | :--------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String                                               | Nome de exibição do usuário                                                                                                                             |
+| displayName      | Cadeia de caracteres                                               | Nome de exibição do usuário                                                                                                                             |
 | givenName        | String                                               | Nome                                                                                                                                       |
 | middleName       | String                                               | O nome do meio do usuário                                                                                                                              |
 | surname          | String                                               | Sobrenome do usuário                                                                                                                                  |
@@ -72,7 +74,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um ob
 
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
@@ -89,15 +91,15 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

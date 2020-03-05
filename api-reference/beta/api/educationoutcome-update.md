@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0ec9ebc02c10794d6e022de33e12a77cac66620e
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: a02098f65bdf9357bcc944d667d7657871895e1e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461109"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426189"
 ---
 # <a name="update-educationoutcome"></a>Atualizar educationoutcome
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 O objeto educationOutcome será um dos seguintes tipos derivados: **educationPointsOutcome**, **educationFeedbackOutcome**ou **educationRubricOutcome**. Forneça as propriedades específicas relevantes ao tipo de resultado que está sendo corrigido.
 
-Todos os tipos de resultados derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos** e **publishedPoints**, **feedback** e **publishedFeedback**. Não atualiza a propriedade "published"; é para uso interno. Por exemplo, para atribuir pontos a um **educationPointsOutcome**, atualize a **** propriedade Points, mas não atualize o **publishedPoints**.
+Todos os tipos de resultados derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos** e **publishedPoints**, **feedback** e **publishedFeedback**. Não atualiza a propriedade "published"; é para uso interno. Por exemplo, para atribuir pontos a um **educationPointsOutcome**, atualize a propriedade **Points** , mas não atualize o **publishedPoints**.
 
 ## <a name="response"></a>Resposta
 
@@ -62,7 +64,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Veja a seguir um exemplo da solicitação para atualizar um resultado de comentários.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -82,7 +84,7 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationfeedbackoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -134,7 +136,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da solicitação para atualizar um resultado de pontos.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
@@ -152,7 +154,7 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationpointsoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -201,7 +203,7 @@ Content-type: application/json
 
 Veja a seguir um exemplo da solicitação para atualizar um resultado amostra rubric.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -241,7 +243,7 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

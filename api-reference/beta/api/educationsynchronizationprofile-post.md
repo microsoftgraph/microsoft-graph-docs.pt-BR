@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 314cb71f5f3ebf135cab0ef3bf9cc9afff9eb730
-ms.sourcegitcommit: c739cbfab42181adfcda409ca12514ab7f4832b1
+ms.openlocfilehash: 5eab69540ccc4d862f2106cd41a2b9b1023d30f4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "36982877"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424432"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Criar um educationSynchronizationProfile
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

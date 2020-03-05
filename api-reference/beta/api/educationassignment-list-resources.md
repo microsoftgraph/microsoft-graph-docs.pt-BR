@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2baee0d77afe1d42be9e67a2c45b2edb9fe7e19a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc52c3c2411818d98bc5889b1bf06b5a65c8b664
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955646"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427393"
 ---
 # <a name="list-educationassignmentresources"></a>Listar educationAssignmentResources
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

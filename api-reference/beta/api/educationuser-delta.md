@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c89c065d5e4bd8510d6821a3c7a13bd106ce9eb8
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 37dc85ae1c907aaa1cf43428e7ad19188e7c053d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34764724"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42423921"
 ---
 # <a name="educationuser-delta"></a>educationUser: Delta
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

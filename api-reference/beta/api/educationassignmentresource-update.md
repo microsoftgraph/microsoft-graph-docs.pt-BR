@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb210affa5d98bdbc9a5cd012adc20a5c4ac49ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955548"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427085"
 ---
 # <a name="update-educationassignmentresource"></a>Atualizar educationAssignmentResource
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Booliano| Indica se este recurso deve ser copiado para o objeto de recurso de cada aluno quando a atribuição é publicada.|
+|distributeForStudentWork|Boolean| Indica se este recurso deve ser copiado para o objeto de recurso de cada aluno quando a atribuição é publicada.|
 |recurso|educationResource| Objeto Resource. |
 
 ## <a name="response"></a>Resposta
