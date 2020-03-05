@@ -5,30 +5,32 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ffa1b1ac1519c933e9ca352ec90b45a5161d2a43
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: c58e9e41a5b3ed89e3c4fb1a217a8470e947aa94
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331180"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534430"
 ---
-# <a name="create-accesspackageassignmentpolicy"></a><span data-ttu-id="c18b9-103">Criar accessPackageAssignmentPolicy</span><span class="sxs-lookup"><span data-stu-id="c18b9-103">Create accessPackageAssignmentPolicy</span></span>
+# <a name="create-accesspackageassignmentpolicy"></a><span data-ttu-id="4d8bf-103">Criar accessPackageAssignmentPolicy</span><span class="sxs-lookup"><span data-stu-id="4d8bf-103">Create accessPackageAssignmentPolicy</span></span>
+
+<span data-ttu-id="4d8bf-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4d8bf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c18b9-104">No [Gerenciamento de qualificação do Azure ad](../resources/entitlementmanagement-root.md), use esta API para criar um novo objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="c18b9-104">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), use this API to create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.</span></span>
+<span data-ttu-id="4d8bf-105">Em [Gerenciamento de qualificação do Azure ad](../resources/entitlementmanagement-root.md), crie um novo objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="4d8bf-105">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c18b9-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c18b9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4d8bf-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4d8bf-106">Permissions</span></span>
 
-<span data-ttu-id="c18b9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c18b9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4d8bf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4d8bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c18b9-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c18b9-108">Permission type</span></span>                        | <span data-ttu-id="c18b9-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c18b9-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4d8bf-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4d8bf-109">Permission type</span></span>                        | <span data-ttu-id="4d8bf-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4d8bf-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="c18b9-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c18b9-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c18b9-111">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c18b9-111">EntitlementManagement.ReadWrite.All</span></span>  |
-| <span data-ttu-id="c18b9-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c18b9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c18b9-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c18b9-113">Not supported.</span></span> |
-| <span data-ttu-id="c18b9-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c18b9-114">Application</span></span>                            | <span data-ttu-id="c18b9-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c18b9-115">Not supported.</span></span> |
+| <span data-ttu-id="4d8bf-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4d8bf-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4d8bf-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d8bf-112">EntitlementManagement.ReadWrite.All</span></span>  |
+| <span data-ttu-id="4d8bf-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4d8bf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d8bf-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-114">Not supported.</span></span> |
+| <span data-ttu-id="4d8bf-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4d8bf-115">Application</span></span>                            | <span data-ttu-id="4d8bf-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c18b9-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c18b9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d8bf-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4d8bf-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,28 +38,32 @@ ms.locfileid: "42331180"
 POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c18b9-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c18b9-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4d8bf-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4d8bf-118">Request headers</span></span>
 
-| <span data-ttu-id="c18b9-118">Nome</span><span class="sxs-lookup"><span data-stu-id="c18b9-118">Name</span></span>          | <span data-ttu-id="c18b9-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="c18b9-119">Description</span></span>   |
+| <span data-ttu-id="4d8bf-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4d8bf-119">Name</span></span>          | <span data-ttu-id="4d8bf-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="4d8bf-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="c18b9-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="c18b9-120">Authorization</span></span> | <span data-ttu-id="c18b9-121">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="c18b9-121">Bearer \{token\}.</span></span> <span data-ttu-id="c18b9-122">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c18b9-122">Required.</span></span> |
-| <span data-ttu-id="c18b9-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c18b9-123">Content-Type</span></span>  | <span data-ttu-id="c18b9-124">application/json</span><span class="sxs-lookup"><span data-stu-id="c18b9-124">application/json</span></span>  |
+| <span data-ttu-id="4d8bf-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="4d8bf-121">Authorization</span></span> | <span data-ttu-id="4d8bf-122">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-122">Bearer \{token\}.</span></span> <span data-ttu-id="4d8bf-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-123">Required.</span></span> |
+| <span data-ttu-id="4d8bf-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4d8bf-124">Content-Type</span></span>  | <span data-ttu-id="4d8bf-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c18b9-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c18b9-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4d8bf-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4d8bf-127">Request body</span></span>
 
-<span data-ttu-id="c18b9-126">No corpo da solicitação, forneça uma representação JSON do objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="c18b9-126">In the request body, supply a JSON representation of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.</span></span>
+<span data-ttu-id="4d8bf-128">No corpo da solicitação, forneça uma representação JSON de um objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="4d8bf-128">In the request body, supply a JSON representation of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c18b9-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="c18b9-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4d8bf-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d8bf-129">Response</span></span>
 
-<span data-ttu-id="c18b9-128">Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c18b9-128">If successful, this method returns a 200-series response code and a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="4d8bf-130">Se tiver êxito, este método retornará um código de resposta de série 200 e um novo objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-130">If successful, this method returns a 200-series response code and a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c18b9-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c18b9-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4d8bf-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4d8bf-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="c18b9-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c18b9-130">Request</span></span>
+### <a name="example-1-create-a-direct-assignment-policy"></a><span data-ttu-id="4d8bf-132">Exemplo 1: criar uma política de atribuição direta</span><span class="sxs-lookup"><span data-stu-id="4d8bf-132">Example 1: Create a direct assignment policy</span></span>
 
-<span data-ttu-id="c18b9-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c18b9-131">The following is an example of the request.</span></span>
+<span data-ttu-id="4d8bf-133">Uma política de atribuição direta é útil quando as solicitações de atribuição de pacote de acesso só serão criadas por um administrador, e não pelos próprios usuários.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-133">A direct assignment policy is useful when access package assignment requests will only be created by an administrator, not by users themselves.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c18b9-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="c18b9-132">HTTP</span></span>](#tab/http)
+#### <a name="request"></a><span data-ttu-id="4d8bf-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4d8bf-134">Request</span></span>
+
+<span data-ttu-id="4d8bf-135">O exemplo a seguir mostra uma solicitação para criar uma política de atribuição de pacote do Access.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-135">The following example shows a request to create an access package assignment policy.</span></span> <span data-ttu-id="4d8bf-136">Nesta política, nenhum usuário pode solicitar, nenhuma aprovação é necessária e não há nenhuma revisão do Access.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-136">In this policy, no users can request, no approval is required, and there are no access reviews.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="4d8bf-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="4d8bf-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies"
@@ -71,7 +77,6 @@ Content-type: application/json
   "accessPackageId": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "displayName": "direct",
   "description": "direct assignments by administrator",
-  "isDenyPolicy": false,
   "accessReviewSettings": null,
   "requestorSettings": {
     "scopeType": "NoSubjects",
@@ -87,26 +92,25 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c18b9-133">C#</span><span class="sxs-lookup"><span data-stu-id="c18b9-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4d8bf-138">C#</span><span class="sxs-lookup"><span data-stu-id="4d8bf-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c18b9-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c18b9-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4d8bf-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4d8bf-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c18b9-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c18b9-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4d8bf-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4d8bf-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentpolicy-from-accesspackageassignmentpolicies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+#### <a name="response"></a><span data-ttu-id="4d8bf-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d8bf-141">Response</span></span>
 
-### <a name="response"></a><span data-ttu-id="c18b9-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="c18b9-136">Response</span></span>
+<span data-ttu-id="4d8bf-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-142">The following is an example of the response.</span></span>
 
-<span data-ttu-id="c18b9-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c18b9-137">The following is an example of the response.</span></span>
-
-> <span data-ttu-id="c18b9-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c18b9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="4d8bf-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -122,10 +126,135 @@ Content-type: application/json
   "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
   "accessPackageId": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "displayName": "direct",
-  "description": "direct assignments by administrator",
-  "isDenyPolicy": false
+  "description": "direct assignments by administrator"
 }
 ```
+
+### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a><span data-ttu-id="4d8bf-145">Exemplo 2: criar uma política para usuários de outras organizações solicitarem</span><span class="sxs-lookup"><span data-stu-id="4d8bf-145">Example 2: Create a policy for users from other organizations to request</span></span>
+
+<span data-ttu-id="4d8bf-146">O exemplo a seguir mostra uma política mais complexa com aprovações de dois estágios e revisões de acesso.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-146">The following example shows a more complex policy with two-stage approvals and access reviews.</span></span>
+
+#### <a name="request"></a><span data-ttu-id="4d8bf-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4d8bf-147">Request</span></span>
+
+<span data-ttu-id="4d8bf-148">Veja a seguir um exemplo de solicitação para criar uma política de atribuição de pacote do Access.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-148">The following is an example of the request to create an access package assignment policy.</span></span> 
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_multistage"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
+Content-type: application/json
+
+{
+    "accessPackageId": "string (identifier)",
+    "displayName": "Users from connected organizations can request",
+    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+    "canExtend": false,
+    "durationInDays": 365,
+    "expirationDateTime": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingConnectedOrganizationSubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "Serial",
+        "approvalStages": [
+            {
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "group for users from connected organizations which have no external sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.externalSponsors",
+                        "isBackup": false
+                    }
+                ],
+                "escalationApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "user if the external sponsor does not respond"
+                    }
+                ]
+            },
+            {
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "group for users from connected organizations which have no internal sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.internalSponsors",
+                        "isBackup": false
+                    }
+                ],
+                "escalationApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "user if the internal sponsor does not respond"
+                    }
+                ]
+            }
+        ]
+    },
+    "accessReviewSettings": {
+        "isEnabled": true,
+        "recurrenceType": "quarterly",
+        "reviewerType": "Self",
+        "startDateTime": "2020-04-01T07:59:59.998Z",
+        "durationInDays": 25,
+        "reviewers": []
+    }
+}
+```
+
+
+#### <a name="response"></a><span data-ttu-id="4d8bf-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d8bf-149">Response</span></span>
+
+<span data-ttu-id="4d8bf-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-150">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="4d8bf-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4d8bf-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
+  "accessPackageId": "string (identifier)",
+  "displayName": "Users from connected organizations can request",
+  "description": "Allow users from configured connected organizations to request and be approved by their sponsors"
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
