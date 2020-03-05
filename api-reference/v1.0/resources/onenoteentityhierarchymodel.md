@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: febe87c3c57612dae06e3a34a187399e6b94c55a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd924b4ef79efa8b517bbf190eb3d3defc7bc1c5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035823"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447434"
 ---
 # <a name="onenoteentityhierarchymodel-resource"></a>recurso onenoteEntityHierarchyModel
+
+Namespace: Microsoft. Graph
 
 Este é um tipo base para entidades do OneNote.
 

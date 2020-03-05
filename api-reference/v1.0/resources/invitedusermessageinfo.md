@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fff33ce5ceda9ea3c60583338538a1bf502ae0f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 324ce713354fc8f27ef926ef1ee0bbf538ee4b0a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036747"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447700"
 ---
 # <a name="configuring-the-invitation-message"></a>Configurando a mensagem de convite
+
+Namespace: Microsoft. Graph
 
 O objeto invitedUserMessageInfo permite que você configure a mensagem de [convite](invitation.md) .
 

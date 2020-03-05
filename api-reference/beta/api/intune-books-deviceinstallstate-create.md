@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6363af3c96923a1d2a91815e0c257ff496fcda4
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6d26d61ca0c7a97466d16df3ba29d71ab5d1c735
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39932023"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444606"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,13 +55,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceIn
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceName|Cadeia de Caracteres|Nome do dispositivo.|
-|deviceId|Cadeia de Caracteres|ID do dispositivo.|
+|deviceName|String|Nome do dispositivo.|
+|deviceId|String|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
 |installState|[installState](../resources/intune-books-installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Cadeia de Caracteres|O código de erro de falhas de instalação.|
+|errorCode|String|O código de erro de falhas de instalação.|
 |osVersion|String|Versão do sistema operacional.|
-|osDescription|Cadeia de Caracteres|Descrição do sistema operacional.|
+|osDescription|String|Descrição do sistema operacional.|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
 

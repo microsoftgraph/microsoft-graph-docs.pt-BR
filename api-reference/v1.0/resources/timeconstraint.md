@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7da2a3a2c712cdbe1fc3fb961781e35099a565d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc6ace98b84e8b844139c148215eeffdd4c3ad49
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033611"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446818"
 ---
 # <a name="timeconstraint-resource-type"></a>Tipo de recurso timeConstraint
+
+Namespace: Microsoft. Graph
 
 Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.
 

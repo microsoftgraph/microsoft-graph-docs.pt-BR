@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3e1b79c80c20197cc14a5097efdf9eb0513b43e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edf239d5e14ca65ee4ae15f846182e5678f89f46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034885"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447014"
 ---
 # <a name="rangeformat-resource-type"></a>Tipo de recurso RangeFormat
+
+Namespace: Microsoft. Graph
 
 Um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
 

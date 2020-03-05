@@ -6,14 +6,16 @@ localization_priority: Normal
 ms.prod: insights
 description: O recurso personOrGroupColumn em uma columnDefinition indica que os valores da coluna representam uma pessoa ou grupo escolhido no diretório.
 doc_type: resourcePageType
-ms.openlocfilehash: d8ce31e7eb044e588f73afefb2b370e161fa7cdf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea89377f38f820ec00fc38343ba714ec22a10c1c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035515"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447196"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
+
+Namespace: Microsoft. Graph
 
 O recurso **personOrGroupColumn** em uma [columnDefinition](columndefinition.md) indica que os valores da coluna representam uma pessoa ou grupo escolhido no diretório.
 

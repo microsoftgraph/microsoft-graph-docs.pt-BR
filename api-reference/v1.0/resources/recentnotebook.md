@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: df61d1d676c204d63c0bbfc25236a4ed7bc4f75f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74050f5987b9a9085a6fbe0ab5f07c7e78744424
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447007"
 ---
 # <a name="recentnotebook-resource-type"></a>tipo de recurso recentNotebook
+
+Namespace: Microsoft. Graph
 
 Um bloco de notas do OneNote recentemente acessado. Um **recentNotebook** é similar a um [notebook](notebook.md), mas tem menos propriedades.
 

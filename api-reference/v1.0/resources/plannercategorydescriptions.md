@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7543b231fbad190be6ad7840611aec034adae053
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0ef4c4f91c4b2f8017a7b7555785c9dd10d082a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035305"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447133"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>tipo de recurso plannerCategoryDescriptions
+
+Namespace: Microsoft. Graph
 
 O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto [Plan Details](plannerplandetails.md) . Pode haver até 6 categorias definidas. 
 

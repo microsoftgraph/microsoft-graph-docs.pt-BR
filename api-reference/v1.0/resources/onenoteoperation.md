@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 179bdad12d81298605a7ac196ab717b9024e9df0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff4078938987c1d80462bd1bbdf8c17a90759edd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035774"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447308"
 ---
 # <a name="onenoteoperation-resource-type"></a>tipo de recurso onenoteOperation
+
+Namespace: Microsoft. Graph
 
 O status de determinadas operações demoradas do OneNote.
 

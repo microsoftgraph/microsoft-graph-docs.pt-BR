@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b646841a8c9197e676687c1ea81511cb365269d2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 65222ecbbc4c8c75b03521bcaaf92274808b8548
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949571"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42443150"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Criar deviceComplianceSettingState
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,15 +55,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |:---|:---|:---|
 |id|String|Chave da entidade|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`,,,,,,,,,,.|
-|configuração|Cadeia de Caracteres|O nome da classe de configuração e o nome da propriedade.|
-|settingName|Cadeia de Caracteres|O nome da configuração sendo relatada|
-|deviceId|Cadeia de Caracteres|A ID do dispositivo sendo relatada|
+|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|settingName|String|O nome da configuração sendo relatada|
+|deviceId|String|A ID do dispositivo sendo relatada|
 |deviceName|String|O nome do dispositivo sendo relatado|
-|userId|Cadeia de Caracteres|A ID do usuário sendo relatada|
+|userId|String|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|Cadeia de Caracteres|O nome de usuário que está sendo relatado|
+|userName|String|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|Cadeia de Caracteres|O modelo do dispositivo que está sendo relatado|
+|deviceModel|String|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 

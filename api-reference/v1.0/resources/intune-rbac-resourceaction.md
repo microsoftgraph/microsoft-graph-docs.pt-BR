@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c30c9a272029fc681a383772b2467dc6fb67af88
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ae06b047fc93f09bd2b797a4eeaa296d232a0b68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359023"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447959"
 ---
 # <a name="resourceaction-resource-type"></a>Tipo de recurso resourceAction
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedResourceActions|Coleção de cadeias de caracteres|Ações permitidas|
+|allowedResourceActions|String collection|Ações permitidas|
 |notAllowedResourceActions|String collection|Ações não permitidas|
 
 ## <a name="relationships"></a>Relações

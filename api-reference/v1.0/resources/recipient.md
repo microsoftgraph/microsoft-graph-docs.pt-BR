@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9cce3b701965b819d82fc25a28da7e2627c1e2b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ea7da375f98905447fc684cf51145b4db003725
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034822"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447000"
 ---
 # <a name="recipient-resource-type"></a>Tipo de recurso recipient
+
+Namespace: Microsoft. Graph
 
 Representa informações sobre um usuário no envio ou recebimento de um evento, mensagem ou postagem de grupo. 
 

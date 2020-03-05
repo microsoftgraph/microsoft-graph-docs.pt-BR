@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 758d76bd5e1eb577223a41e4e0452179d8bdafc7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20766f236bc3f9d8702a257fa3073a4fa205ce51
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033457"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446769"
 ---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
+
+Namespace: Microsoft. Graph
 
 Especifica um domínio de um locatário. A propriedade **verifiedDomains** da entidade [organization](organization.md) é uma coleção de **VerifiedDomain**.
 
@@ -21,9 +23,9 @@ Especifica um domínio de um locatário. A propriedade **verifiedDomains** da en
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
-|isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
+|isDefault|Boolean|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
 |isinitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
-|name|String|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
+|nome|String|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
 |type|String|Por exemplo, "Managed".|
 
 ## <a name="json-representation"></a>Representação JSON

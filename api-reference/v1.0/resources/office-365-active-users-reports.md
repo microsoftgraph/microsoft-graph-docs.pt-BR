@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 95c377ae8ee00c39196586822019e33ad97fcb8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 163eab83bfcb5089ec21d449d90840384c12e4ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035963"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447343"
 ---
 # <a name="office-365-active-users-reports"></a>Relatórios dos usuários ativos do Office 365
+
+Namespace: Microsoft. Graph
 
 Você pode usar os relatórios dos usuários ativos do Office 365 para descobrir quantas licenças de produtos estão sendo usadas por indivíduos em sua organização e detalhar informações sobre quais usuários estão usando quais produtos. Esses relatórios podem ajudar os administradores a identificar produtos ou usuários subutilizados que possam precisar de treinamento ou informações adicionais.
 
@@ -21,6 +23,6 @@ Você pode usar os relatórios dos usuários ativos do Office 365 para descobrir
 ## <a name="reports"></a>Relatórios
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getoffice365activeuserdetail.md) | Fluxo      | Obtenha dados sobre os usuários ativos do Office 365. |
+| [Obter dados de usuário](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Obtenha dados sobre os usuários ativos do Office 365. |
 | [Obter contagens de usuários](../api/reportroot-getoffice365activeusercounts.md) | Fluxo      | Obtenha a contagem de usuários ativos diários no período de relatório por produto. |
 | [Obter contagens de usuários dos serviços](../api/reportroot-getoffice365servicesusercounts.md) | Fluxo      | Obtenha a contagem de usuários por tipo de atividade e serviço. |

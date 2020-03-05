@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: dce1cf62530b1f129d6cf9e96ebb1867ba8954f4
-ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
+ms.openlocfilehash: 5aada0b7802495571498fe3b3b6f6576c89e6579
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41232118"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447350"
 ---
 # <a name="objectidentity-resource-type"></a>tipo de recurso objectidentity
+
+Namespace: Microsoft. Graph
 
 Representa uma identidade usada para entrar em uma conta de usuário. Uma identidade pode ser fornecida pela Microsoft, por organizações ou por provedores de identidade social, como Facebook, Google ou Microsoft, que estão vinculados a uma conta de usuário. Isso permite que o usuário entre na conta de usuário com qualquer uma dessas identidades associadas.
 

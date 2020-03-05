@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b884312f8c3a9e8e02242023556713be62f8529f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 37bc96fdd0dad65a1f6b5b6bcec244ef96b915ac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034906"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447021"
 ---
 # <a name="rangefill-resource-type"></a>Tipo de recurso RangeFill
+
+Namespace: Microsoft. Graph
 
 Representa a tela de fundo de um objeto Range.
 

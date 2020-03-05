@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15fca0cedc6fe1da81da25688bbc447c1f8f475f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 52a353f4e4d99f5d68812bd89ea0b9467ee7e5c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360101"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447784"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Representa um objeto de usuário do Azure Active Directory.
 
@@ -22,8 +24,8 @@ Representa um objeto de usuário do Azure Active Directory.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar objetos Users](../api/intune-shared-user-list.md) .|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|Coleção [user](../resources/intune-shared-user.md)|Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).|
-|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [user](../resources/intune-shared-user.md)|Criar um novo objeto [user](../resources/intune-shared-user.md).|
+|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|Coleção [usuário](../resources/intune-shared-user.md)|Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).|
+|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [usuário](../resources/intune-shared-user.md)|Criar um novo objeto [user](../resources/intune-shared-user.md).|
 |[Excluir usuário](../api/intune-shared-user-delete.md).|Nenhum|Excluir [user](../resources/intune-shared-user.md).|
 |[Atualize](../api/intune-shared-user-update.md) o objeto do usuário.|[user](../resources/intune-shared-user.md)|Atualizar as propriedades de um objeto de [user](../resources/intune-shared-user.md).|
 |**Gerenciamento de dispositivos**|

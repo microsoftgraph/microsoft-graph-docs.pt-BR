@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e125d45e435cd298cb5926f42b0bb1ae29c5090
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8e35afea5c67683b23314a17728039c12c0f2fe1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39930783"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444466"
 ---
 # <a name="get-officeclientconfiguration"></a>Obter Conjuntoofficeclientconfiguration
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

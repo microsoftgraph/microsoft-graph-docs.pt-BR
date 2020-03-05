@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f97e54a02457bf8e7d50826cb6c9337dbf5685a
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2cfe07982df7687027af6b52a72900a5794606d5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367263"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448155"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
@@ -29,9 +31,9 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
-|displayName|String|Ainda não documentado|
-|descrição|String|Ainda não documentado|
+|id|String|Ainda não documentado|
+|displayName|Cadeia de caracteres|Ainda não documentado|
+|description|String|Ainda não documentado|
 |prioridade|Int32|Ainda não documentado|
 |createdDateTime|DateTimeOffset|Ainda não documentado|
 |lastModifiedDateTime|DateTimeOffset|Ainda não documentado|

@@ -5,16 +5,18 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a323cc2925b022823289a5fae87832257f50a102
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: f82c99054f3c78225fa582ae09ff16507fad98ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360073"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447847"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  
 

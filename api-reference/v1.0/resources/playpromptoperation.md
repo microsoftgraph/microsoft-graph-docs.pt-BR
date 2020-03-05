@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 731e8597fba4347659a3cddea8fb2934258255c7
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 5adc385c5764371c1e2cab516bc33fd8504aecf5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913216"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447084"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
+
+Namespace: Microsoft. Graph
 
 A operação playPrompt para obter o resultado da ação playPrompt.
 

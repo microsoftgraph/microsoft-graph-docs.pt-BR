@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso itemPreviewInfo contém informações sobre como inserir uma visualização de um driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 71d660a71bce09f198a0feb9c3acbb9a69a23a5f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d2050a38e77e0cfa7176ba63756e9b9d8dcd384
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036558"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447618"
 ---
 # <a name="itempreviewinfo-resource-type"></a>tipo de recurso itemPreviewInfo
+
+Namespace: Microsoft. Graph
 
 O recurso **itemPreviewInfo** contém informações sobre como inserir uma visualização de um [driveItem](driveitem.md).
 

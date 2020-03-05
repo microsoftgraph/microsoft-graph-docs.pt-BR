@@ -6,20 +6,22 @@ description: O objeto PostItem fornece análises sobre as atividades que ocorrer
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9c33a79d2728b578eeab1348a655e2b7a7574955
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b4ee2bba6cff84a99cf5a0e20dddc09ad87ee59
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036579"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447651"
 ---
 # <a name="itemanalytics-resource-type"></a>tipo de recurso do multianalytics
+
+Namespace: Microsoft. Graph
 
 O recurso do Microsoft **Analytics** oferece análise sobre as atividades que ocorreram em um item. No momento, esse recurso só está disponível no SharePoint e no OneDrive for Business.
 
 Você também pode usar a API [funçãogetactivitiesbyinterval][] para recuperar a análise por um intervalo ou intervalo de tempo personalizado.
 
->**Observação:** O **** recurso do naanalytics ainda não está disponível em todas as implantações [nacionais](/graph/deployments).
+>**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 ## <a name="properties"></a>Propriedades
 

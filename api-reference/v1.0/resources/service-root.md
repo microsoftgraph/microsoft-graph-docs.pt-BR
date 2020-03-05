@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 8a4c31b24fd22929fae3d4848c141efacb894ef7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbac4aa73d9310ed78e88a2149ea0c64ddf3c640
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034409"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446909"
 ---
 # <a name="service-root"></a>Raiz de serviço
+
+Namespace: Microsoft. Graph
 
 
 ## <a name="methods"></a>Métodos
@@ -27,7 +29,7 @@ ms.locfileid: "36034409"
 |[List directoryRole](../api/directoryrole-list.md) | Coleção [directoryRole](directoryrole.md) |Obtenha a coleção de objetos de directoryRole. |
 |[List directoryRoleTemplate](../api/directoryroletemplate-list.md) | Coleção [directoryRoleTemplate](directoryroletemplate.md) |Obtenha a coleção de objetos de directoryRoleTemplate. |
 |[List drive](../api/drive-list.md) | Coleção [drive](drive.md) |Obtenha a coleção de objetos de unidades. |
-|[Get drive](../api/drive-get.md) | [drive](drive.md)  |Obtenha as propriedades do objeto drive. |
+|[Obter unidade](../api/drive-get.md) | [unidade](drive.md)  |Obtenha as propriedades do objeto drive. |
 |[Criar grupo](../api/group-post-groups.md) |[group](group.md)| Crie um novo grupo postando na coleção de grupos.|
 |[List group](../api/group-list.md) | Coleção [group](group.md) |Obtenha a coleção de objetos de grupos. |
 |[List organization](../api/organization-get.md) | Coleção [organization](organization.md) |Obtenha a coleção de objetos de organizações. |

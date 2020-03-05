@@ -6,16 +6,18 @@ description: O objeto MoveAction fornece informações sobre uma atividade que m
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8ef93cd83c8fd020af91a9ea8c9288c1d27d5cf6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 04c9ddad00b5705d84af6e72ac194a0d32fd015c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036068"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447378"
 ---
 # <a name="moveaction-resource-type"></a>tipo de recurso MoveAction
 
-A presença do recurso **MoveAction** em uma myactivity indica que a atividade moveu um item. [****][activity]
+Namespace: Microsoft. Graph
+
+A presença do recurso **MoveAction** em uma [**myactivity**][activity] indica que a atividade moveu um item.
 
 >**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 

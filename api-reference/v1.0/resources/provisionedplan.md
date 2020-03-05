@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3560aab132448a0d13c4b4abe2590d4802cdf9f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c12ce39739bd6f922edacf11654b24d6f7b471dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034990"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447028"
 ---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
+
+Namespace: Microsoft. Graph
 
 A propriedade **provisionedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **provisionedPlan**.
 

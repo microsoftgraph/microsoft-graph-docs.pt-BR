@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ee841112aa641069ec64d744120f460713e51c7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 404b0fd380c1161a827fe4610f744d0b9872c92b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036453"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447525"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Tipo de recurso locationConstraintItem
+
+Namespace: Microsoft. Graph
 
 As condições indicadas por um cliente para o local de uma reunião.
 

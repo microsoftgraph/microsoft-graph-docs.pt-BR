@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 758cbf5e9d031e72e8e458f5ec8c649dcbaa009c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 61b5b8d6f883ed3e7799acd312cb71c68dd07780
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035361"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447154"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>tipo de recurso plannerAppliedCategories
+
+Namespace: Microsoft. Graph
 
 
 O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicados a uma tarefa. Ele faz parte do objeto [plannerTask](plannertask.md) .

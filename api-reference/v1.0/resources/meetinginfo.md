@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8ef003db89ea676b4415a90c27913add49aad6e1
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: c27fe67c2c57d609a7524c8d2efda27443d75efe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913174"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447420"
 ---
 # <a name="meetinginfo-resource-type"></a>tipo de recurso meetingInfo
+
+Namespace: Microsoft. Graph
 
 Esta é uma classe abstrata que contém informações específicas da reunião.
  

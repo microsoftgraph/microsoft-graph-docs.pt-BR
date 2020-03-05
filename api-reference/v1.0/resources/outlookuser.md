@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 754ae286c97e4c6ddae4ed6fb4f34aef5733090f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27d7e91223a763720cdb70d6b857f91c0955b5ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035676"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447252"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
+
+Namespace: Microsoft. Graph
 
 
 Representa os serviços do Outlook disponíveis para um usuário.

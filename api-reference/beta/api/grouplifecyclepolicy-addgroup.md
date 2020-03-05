@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4062d807df2c1613735ccb6d37f56e663fe46d78
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 07ad966a3fbbfd6a44fc5a744366d8e7d754e5be
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953364"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446608"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Quando é bem-sucedido, este método retorna um código de resposta `200 OK`. Quando o grupo é adicionado à política, o valor **true** é retornado no corpo da resposta. Caso contrário, um valor **false** é retornado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK`. Quando o grupo é adicionado à política, o valor **true** é retornado no corpo da resposta. Caso contrário, um valor **false** é retornado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -5,14 +5,16 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 0c85fb6ffe9881960226ec4dc73a7487ce764d94
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: d1a65eb214fee21389b7d6c78c10a0d9b9d0e4ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39263234"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446923"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
+
+Namespace: Microsoft. Graph
 
 Erros na API de segurança do Microsoft Graph são retornados usando o código de status de conteúdo parcial HTTP 206, e são entregues por meio de um cabeçalho de aviso.
 
@@ -53,7 +55,7 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## <a name="constraints"></a>Restrições
 
-O `$top` parâmetro de consulta OData tem um limite de 1000 alertas. Recomendamos que você inclua apenas `$top` o e `$skip` não em sua primeira consulta Get. Você pode usar `@odata.nextLink` para paginação. Se você precisar usar `$skip`o, ele terá um limite de 500 alertas. Por exemplo, `/security/alerts?$top=10&$skip=500` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=501` retornará um código de resposta `400 Bad Request`. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+O `$top` parâmetro de consulta OData tem um limite de 1000 alertas. É recomendável incluir apenas o `$top` e não o `$skip` na primeira consulta OBTER. Você pode usar `@odata.nextLink` para paginação. Se você precisar usar o `$skip`, ele tem um limite de 500 alertas. Por exemplo, `/security/alerts?$top=10&$skip=500` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=501` retornará um código de resposta `400 Bad Request`. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 Um workaaround para esse limite é usar o `$filter` parâmetro de consulta OData com a `eventDateTime` entidade de alerta da API de segurança do Microsoft Graph, usando `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` e substituindo o valor DateTime pelo último alerta (1500th). Você também pode definir um intervalo para o `eventDateTime`; por exemplo, *alertas? $Filter = eventDateTime **gt** 2018-11-**11**T00:00:00.000 z&eventDateTime **lt** 2018-11-**12**T00:00:00.000 z*
 

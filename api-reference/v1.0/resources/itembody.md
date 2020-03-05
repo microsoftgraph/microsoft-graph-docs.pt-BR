@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6cf87c803ec957b42cc55cf1523a708b145af117
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fb7fea89a7da3d98899a19614d7c40f76dcb6f8e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657485"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447644"
 ---
 # <a name="itembody-resource-type"></a>Tipo de recurso itemBody
+
+Namespace: Microsoft. Graph
 
 Representa as propriedades do corpo de um item, como uma mensagem, um evento ou uma postagem de grupo.
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: c17b0f0e4127c570514dad0498f3f5384e4a69ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 891e4c154faf053fd72578210b3d8602422279e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035277"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447126"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>tipo de recurso plannerChecklistItems
+
+Namespace: Microsoft. Graph
 
 O recurso **plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um tipo aberto. Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) . O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md) .
 

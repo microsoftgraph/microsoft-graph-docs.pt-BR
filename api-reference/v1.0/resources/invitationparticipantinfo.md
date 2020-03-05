@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8b42e89f89332e58fa2f7edcf39c774446c6b9d9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 4a4d34e94fc54cd47ed6773e91c2fb62f0b62ce4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447707"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
+
+Namespace: Microsoft. Graph
 
 Este recurso é usado para representar a entidade que está sendo convidada para uma chamada de grupo. 
 

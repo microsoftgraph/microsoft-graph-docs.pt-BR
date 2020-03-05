@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ebd5beb4f81f85d4b696037c5ff5d4688b71d90a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0b014a0a2ce338524e6abf0e6bcaa532e2b5c1c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863803"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446993"
 ---
 # <a name="registrykeystate-resource-type"></a>tipo de recurso registryKeystate
+
+Namespace: Microsoft. Graph
 
 Contém informações sobre as alterações da chave do registro relacionadas ao alerta e o processo que alterou as chaves do registro.
 

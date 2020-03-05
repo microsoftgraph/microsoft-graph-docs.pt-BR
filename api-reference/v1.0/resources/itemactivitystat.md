@@ -6,14 +6,16 @@ description: O objeto Entidadeitemactivitystat fornece informações sobre as at
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bf4396e6da5c56b19d33d7a914d864cb6dd54592
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 11b19e4b953d4353382aec15071c6589b5bb23c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036670"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447665"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
+
+Namespace: Microsoft. Graph
 
 O recurso **entidadeitemactivitystat** fornece informações sobre as atividades que aconteceram dentro de um intervalo de tempo.
 
@@ -22,7 +24,7 @@ O recurso **entidadeitemactivitystat** fornece informações sobre as atividades
 | Propriedade         | Tipo                    | Descrição
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Indica que as estatísticas neste intervalo são baseadas em dados incompletos. Somente leitura.
-| istendência       | Booliano                 | Indica se o item é "Trending". Somente leitura.
+| istendência       | Boolean                 | Indica se o item é "Trending". Somente leitura.
 | startDateTime    | DateTimeOffset          | Quando o intervalo é iniciado. Somente leitura.
 | endDateTime      | DateTimeOffset          | Quando o intervalo termina. Somente leitura.
 | create           | [itemActionStat][]      | Estatísticas sobre as ações de **criação** neste intervalo. Somente leitura.

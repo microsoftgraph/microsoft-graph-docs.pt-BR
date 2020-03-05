@@ -6,21 +6,23 @@ description: O objeto myactivity fornece informações sobre uma atividade que o
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ddd478794cc3ad87ce29513c45455a9ba2911a52
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1ffbcc84f3cb399b131ae40c46cae9230e4cac8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036726"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447672"
 ---
 # <a name="itemactivity-resource-type"></a>tipo de recurso de multiatividade
 
-O **** recurso doactivity fornece informações sobre as atividades que ocorreram em um item ou em um contêiner.
+Namespace: Microsoft. Graph
+
+O recurso **doactivity** fornece informações sobre as atividades que ocorreram em um item ou em um contêiner.
 Disponível atualmente só no SharePoint e no OneDrive for Business.
 
-As ações que ocorreram em um ItemProperty são detalhadas na propriedade itempropertyset. [][]
+As ações que ocorreram em um ItemProperty são detalhadas [na propriedade][] itempropertyset.
 
->**Observação:** **** o myactivity atualmente só está disponível no SharePoint e no onedrive for Business.
+>**Observação:** o **myactivity** atualmente só está disponível no SharePoint e no onedrive for Business.
 
 [itemActionSet]: itemactionset.md#properties
 

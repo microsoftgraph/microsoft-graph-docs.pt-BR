@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O tipo de recurso thumbnail representa a miniatura de uma imagem, vídeo, documento ou qualquer item que tenha uma representação de bitmap.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3e352529e2f008369cefa989293e7f73ebd98ce3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9db187516cd133ebeab0a352d56470e6b2e172c7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033639"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446825"
 ---
 # <a name="thumbnail-resource-type"></a>Tipo de recurso thumbnail
+
+Namespace: Microsoft. Graph
 
 O tipo de recurso **thumbnail** representa a miniatura de uma imagem, vídeo, documento ou qualquer item que tenha uma representação de bitmap.
 

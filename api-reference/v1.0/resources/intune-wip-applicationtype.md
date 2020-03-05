@@ -5,24 +5,26 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 749b80808de9516b6950b6df231c0da3f5c3c3fb
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 952294d390fdb47cc5b614109539db3293c3a0bf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356678"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447742"
 ---
 # <a name="applicationtype-enum-type"></a>tipo de enumeração ApplicationType
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipos de aplicativo possíveis
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UTC|1|O aplicativo Windows universal|
-|placa|duas|O aplicativo da área de trabalho Windows|
+|UTC|1 |O aplicativo Windows universal|
+|placa|2 |O aplicativo da área de trabalho Windows|
 
 
 

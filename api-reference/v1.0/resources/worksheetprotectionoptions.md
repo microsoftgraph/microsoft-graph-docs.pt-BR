@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 083cc86ef5fd7361f2dfd11f8cb2aff501d06035
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f530a3258ff576bc98f0438ae241b84d087714a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033228"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446657"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>Tipo de recurso WorksheetProtectionOptions
+
+Namespace: Microsoft. Graph
 
 Representa as opções de proteção da planilha.
 

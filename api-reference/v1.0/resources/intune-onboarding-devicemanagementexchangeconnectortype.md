@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fdb99f770e719d05ef097820ff5fff56b7f0a74d
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 848e7aba02627042603e4240694fc7f267ef903e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367963"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448099"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorType
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O tipo de conector do Exchange.
 
@@ -22,9 +24,9 @@ O tipo de conector do Exchange.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |onPremises|,0|Conecta-se ao ambiente do Exchange local.|
-|discussões|1|Conecta-se ao ambiente do Exchange multilocatário do O365|
-|serviceToService|duas|O serviço do Intune conecta-se diretamente ao ambiente do Exchange multilocatário do O365|
-|dedicado|3D|Conecta-se ao ambiente do Exchange dedicado do O365.|
+|discussões|1 |Conecta-se ao ambiente do Exchange multilocatário do O365|
+|serviceToService|2 |O serviço do Intune conecta-se diretamente ao ambiente do Exchange multilocatário do O365|
+|dedicado|3 |Conecta-se ao ambiente do Exchange dedicado do O365.|
 
 
 

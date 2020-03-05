@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b0c46dcb61cf9e7f5f4524a0f86959f60738242c
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a1ebfe8f59bf420885a8b3f63b426fdd946a954b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367165"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447826"
 ---
 # <a name="installintent-enum-type"></a>tipo de enumeração installIntent
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para o propósito de instalação escolhido pelo administrador.
 
@@ -22,9 +24,9 @@ Valores possíveis para o propósito de instalação escolhido pelo administrado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|,0|Tentativa de instalação disponível.|
-|obrigatório|1|Tentativa de instalação necessária.|
-|INTAL|duas|Tentativa de instalação de desinstalação.|
-|availableWithoutEnrollment|3D|Disponível sem a intenção de instalação do registro.|
+|obrigatório|1 |Tentativa de instalação necessária.|
+|INTAL|2 |Tentativa de instalação de desinstalação.|
+|availableWithoutEnrollment|3 |Disponível sem a intenção de instalação do registro.|
 
 
 

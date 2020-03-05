@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 8909f1fb610a664c4d2fe95f73a74abc4707f75c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b80e1808cc7d9103d121d4972456d378cb7c9951
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953245"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446510"
 ---
-# <a name="get-icon"></a>Obter ícone
+# <a name="get-icon"></a>Get Icon
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: d995888b55282ac9db8aef9cc047f069a3cf20fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 49b8989bd8526cbe8074a386ae31e76fd195642d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035137"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447091"
 ---
 # <a name="planneruser-resource-type"></a>tipo de recurso plannerUser
+
+Namespace: Microsoft. Graph
 
 O recurso **plannerUser** fornece acesso a recursos do Planner para um [usuário](user.md). Ele não contém propriedades utilizáveis.
 

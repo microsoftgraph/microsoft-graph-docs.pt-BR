@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: c9b0c2f36913d3d89edb1bd119b2473158f0a9bb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: f75c6873aa6e3f540ee12930ba67e4b1ee9898b2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939050"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446748"
 ---
 # <a name="webapplication-resource-type"></a>tipo de recurso webApplication
+
+Namespace: Microsoft. Graph
 
 Especifica configurações para um aplicativo Web.
 
@@ -20,7 +22,7 @@ Especifica configurações para um aplicativo Web.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| homePageUrl | Cadeia de caracteres | Página inicial ou página de aterrissagem do aplicativo. |
+| homePageUrl | String | Página inicial ou página de aterrissagem do aplicativo. |
 | implicitGrantSettings | [implicitGrantSettings](implicitgrantsettings.md)| Especifica se este aplicativo Web pode solicitar tokens usando o fluxo implícito do OAuth 2,0. |
 | logoutUrl | String | Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
 | redirectUris | String collection | Especifica as URLs nas quais os tokens de usuário são enviados para entrada ou os URIs de redirecionamento nos quais os códigos de autorização OAuth 2,0 e tokens de acesso são enviados. |

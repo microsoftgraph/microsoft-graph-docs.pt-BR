@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 94cff7629b73d9d595c07cce9ebee74579676c32
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e5b9a1687209c9d8580ef3c82bece0c31733d707
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036495"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447595"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>tipo de recurso licenseAssignmentState
+
+Namespace: Microsoft. Graph
 
 
 A propriedade **licenseAssignmentStates** da entidade [User](user.md) é uma coleção de objetos **licenseAssignmentState** . Ele fornece detalhes sobre as atribuições de licença a um usuário. Os detalhes incluem informações como:  

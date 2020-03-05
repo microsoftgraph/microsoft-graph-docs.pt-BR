@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a5ad30474b23c6ef96bbc1a66142098e7f696138
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77c413f98e4c329e7dc7ebcb2412ac12bedfad8d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035564"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447224"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
+
+Namespace: Microsoft. Graph
 
 O padrão e o intervalo da recorrência.
 

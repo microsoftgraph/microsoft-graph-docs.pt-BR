@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a580db6993abfedd5bc42ecf77579e2d365afcb3
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 4c8e637837c9442d7463154d6ce1aa5fa6c18756
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160302"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444802"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>Obter windowsMicrosoftEdgeApp
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

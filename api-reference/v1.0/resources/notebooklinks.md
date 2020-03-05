@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 8ec315e3dbf5e807408c4de289b2bedf42999159
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca01278d3160329cca970bfb56f7822a8bd6b7c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035956"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447357"
 ---
 # <a name="notebooklinks-resource-type"></a>tipo de recurso notebookLinks
+
+Namespace: Microsoft. Graph
 
 Links para abrir um bloco de anotações do OneNote.
 

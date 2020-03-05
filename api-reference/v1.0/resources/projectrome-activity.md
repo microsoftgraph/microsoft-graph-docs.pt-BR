@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1b0e0f7cd6ed3a7629653719078b1e69eeeffc19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4726119e7b4dd2283329e2eda73d27d020e73bf3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035025"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447067"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso atividade
+
+Namespace: Microsoft. Graph
 
 Representa uma única atividade dentro de um aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de [histórico](projectrome-historyitem.md) que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
 

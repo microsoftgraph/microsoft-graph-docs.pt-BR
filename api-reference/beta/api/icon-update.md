@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 5228bd86e11aeccd76003f419f095a87228613e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4a3d0818d659514975b2328db651b5ac45331e73
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35953210"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446511"
 ---
 # <a name="update-icon"></a>Atualizar ícone
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

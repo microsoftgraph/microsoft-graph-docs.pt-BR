@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 9cf9430c1cf090b701def7f1a484c4369926f274
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ebb91dbfacf511252cde8fd37ba6119dd3aeeb34
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355740"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447777"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Gerenciamento de despesas com telecomunicações no Microsoft Intune
+
+Namespace: Microsoft. Graph
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
 

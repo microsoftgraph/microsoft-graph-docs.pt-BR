@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a9befac2a3f15fe3bec3b36a5846872a31ef3f5
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 66936612e5c8938e6824d8feb70933ab1e7e19c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39930433"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444417"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Atualizar officeClientConfigurationAssignment
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|* * TODO: determinar escopos * *|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|* * TODO: determinar escopos * *|
+|Aplicativo|* * TODO: determinar escopos * *|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

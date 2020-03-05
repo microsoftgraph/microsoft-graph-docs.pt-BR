@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso Video agrupa itens de dados relacionados a vídeos em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 24af35fff4e867caa8e7052c821cb44d1f2c3755
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2982dbad8f1e06a2f1288bd499c88c77a4ef2fda
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033429"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446762"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
+
+Namespace: Microsoft. Graph
 
 O recurso **Video** agrupa itens de dados relacionados a vídeos em uma única estrutura.
 

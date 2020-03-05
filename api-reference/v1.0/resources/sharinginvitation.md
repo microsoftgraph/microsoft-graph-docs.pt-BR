@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso SharingInvitation agrupa itens de dados relacionados a convites em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 011402b40b601642a048b91e3b3f66de0792aaf2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e1b5434f025c48f1eea08d31a00b4bc5fc9d39f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034241"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446874"
 ---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
+
+Namespace: Microsoft. Graph
 
 O recurso **SharingInvitation** agrupa itens de dados relacionados a convites em uma única estrutura.
 
@@ -40,7 +42,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da Propriedade  | Tipo            | Descrição
+| Nome da propriedade  | Tipo            | Descrição
 |:---------------|:----------------|:------------------------------------------
 | email          | Cadeia de caracteres          | O endereço de email fornecido para o destinatário do convite de compartilhamento. Somente leitura.
 | invitedBy      | [identitySet][] | Fornece informações sobre quem enviou o convite que criou essa permissão, se essas informações estiverem disponíveis. Somente leitura.

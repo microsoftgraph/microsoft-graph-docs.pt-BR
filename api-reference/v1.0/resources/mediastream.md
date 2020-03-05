@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ed564f4789a88092e34b8f8b4b0db8db63b48f2f
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6751d00a89bb4ca024f069a69213ebd2d76b7ef7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913650"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447427"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
+
+Namespace: Microsoft. Graph
 
 Contém informações sobre o canal de mídia.
 
@@ -23,7 +25,7 @@ Contém informações sobre o canal de mídia.
 | direction   | String  | A direção. Os valores possíveis são `inactive`: `sendOnly` `receiveOnly`,, `sendReceive`,.                  |
 | rótulo       | String  | O rótulo do fluxo de mídia.                                                                                       |
 | Mídia   | String  | O tipo de mídia. O valor possível é `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Booliano | Se a mídia estiver com mudo ativado pelo servidor.                                                                          |
+| serverMuted | Boolean | Se a mídia estiver com mudo ativado pelo servidor.                                                                          |
 | sourceId    | String  | A ID da fonte.                                                                                                |
 
 ## <a name="json-representation"></a>Representação JSON

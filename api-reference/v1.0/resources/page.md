@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4a8ff5f6d0d9ed435d51d005df21a73bcb25a930
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69066585c575569da7b355a6c52263843510dcc3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035634"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447238"
 ---
 # <a name="page-resource-type"></a>tipo de recurso Page
+
+Namespace: Microsoft. Graph
 
 Uma página em um bloco de anotações do OneNote.
 

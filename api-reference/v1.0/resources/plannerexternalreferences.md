@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 35e26aaf13686a030d35d5d75ec3c99c8df93a6a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 37511817d32d1979cf30fc12eb7a1560b1870c27
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035221"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447119"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>tipo de recurso plannerExternalReferences
+
+Namespace: Microsoft. Graph
 
 O recurso **plannerExternalReferences** representa a coleção de referências em uma tarefa. Este é um tipo aberto. Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) . O valor no par propriedade-valor é o objeto [externalReference](plannerexternalreference.md) .
 

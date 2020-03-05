@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 54a2a8bb3901f1a6938401963e8efcbd9e02f194
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 171a58e82ea3e7ab76d919d1fef693f540b4f4db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448162"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
+
+Namespace: Microsoft. Graph
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e4b0fba95896e0787d69f6312f41c4a8c6144a36
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: b1867ac65e897568639cf158a025e50bb9658c20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360850"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447973"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enumeração windowsHelloForBusinessPinUsage
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Opções de uso de PIN do Windows Hello para empresas
 
@@ -22,8 +24,8 @@ Opções de uso de PIN do Windows Hello para empresas
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |autorizado|,0|Ainda não documentado|
-|obrigatório|1|Ainda não documentado|
-|Não|duas|Ainda não documentado|
+|obrigatório|1 |Ainda não documentado|
+|Não|2 |Ainda não documentado|
 
 
 

@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c49876cbb56e3630e357ad54a57682958151a9f7
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 54223a5b9e807dc45a9868b3251b8d8b1a0fcd72
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913713"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447686"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>tipo de recurso inviteParticipantsOperation
+
+Namespace: Microsoft. Graph
 
 Representa o status de uma operação de convite de participante de execução longa, disparada por uma chamada para a API participante-INVITE.
 
@@ -22,7 +24,7 @@ Representa o status de uma operação de convite de participante de execução l
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | O contexto do cliente.                                                                                                                               |
 | id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura.                                                                                              |
-| participants | conjunto [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
+| participantes | conjunto [invitationParticipantInfo](invitationParticipantInfo.md) | Os participantes a serem convidados. |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura.                                                                                             |
 | status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura.                                                  |
 

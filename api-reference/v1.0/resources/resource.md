@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cd8ea18047aa3f24343411f8dafd7a79357da87b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 03dde18905892538e4f883f2e90b6b0c36fda460
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034689"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446972"
 ---
 # <a name="onenoteresource-resource-type"></a>Tipo de recurso OneNoteResource
+
+Namespace: Microsoft. Graph
 
 Uma imagem ou outro recurso de arquivo em uma página do OneNote. 
 
@@ -77,7 +79,7 @@ Nenhum
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter dados binários do recurso](../api/resource-get.md) | Fluxo |Recupere os dados binários de um recurso de arquivo ou imagem.|
+|[Obter dados binários do recurso](../api/resource-get.md) | Stream |Recupere os dados binários de um recurso de arquivo ou imagem.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

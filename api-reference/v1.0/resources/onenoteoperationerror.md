@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 95eda3299b62a1ebe49b2520206265cc14c3ac57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3bb434db18361c9c918189744a9197ae6a6df8e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035767"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447301"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>tipo de recurso onenoteOperationError
+
+Namespace: Microsoft. Graph
 
 Um erro de uma operação do OneNote com falha.
 

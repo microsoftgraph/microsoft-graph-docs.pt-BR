@@ -6,16 +6,18 @@ description: O objeto doactionset fornece informações sobre as ações que for
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a28a3380761e2d1914d7c088e5927fc5d3addd4b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 76778f959f52518ca4055a0da471bffeca5a73e7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036719"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447693"
 ---
 # <a name="itemactionset-resource-type"></a>tipo de recurso doactionset
 
-O **** recurso doactionset fornece informações sobre as ações que compõem uma [atividade][itemActivity] em um item.
+Namespace: Microsoft. Graph
+
+O recurso **Doactionset** fornece informações sobre as ações que compõem uma [atividade][itemActivity] em um item.
 
 >**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 
@@ -23,7 +25,7 @@ O **** recurso doactionset fornece informações sobre as ações que compõem u
 
 ## <a name="properties"></a>Propriedades
 
-As ações a seguir estão disponíveis no momento. Como novas ações podem ser adicionadas no futuro, certifique-se de que seu aplicativo possa **** lidar com um ItemAdded que inclui ações desconhecidas.
+As ações a seguir estão disponíveis no momento. Como novas ações podem ser adicionadas no futuro, certifique-se de que seu aplicativo possa lidar **com um ItemAdded** que inclui ações desconhecidas.
 
 | Nome da propriedade | Tipo              | Descrição
 |:--------------|:------------------|:-----------------------------------------

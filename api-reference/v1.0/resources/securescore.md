@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 395c5ed0594d1f509bb664b5aee6ea18bb42af0a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1fc789a967f8fbba33e113dd55e7bfae7803940e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446930"
 ---
 # <a name="securescore-resource-type"></a>tipo de recurso secureScore
+
+Namespace: Microsoft. Graph
 
 Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível do locatário e do controle. Por padrão, são mantidos 90 dias de dados. Esses dados são classificados por **createdDateTime**, do mais recente para o mais antigo. Isso permitirá respostas de página usando $top = n, onde n = o número de dias de dados que você deseja recuperar. 
 
@@ -35,7 +37,7 @@ Representa a pontuação segura de um locatário por dia de dados de pontuação
 |   activeUserCount |   Int32   |   Contagem de usuários ativos de um determinado locatário.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
 |   currentScore    |   Duplo  |   Pontuação Obtida de locatário atual em data especificada.    |
-|   enabledservices |   Coleção de cadeias de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
+|   enabledservices |   String collection   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
 |   licensedUserCount   |   Int32   |   Contagem de usuários licenciados de um determinado locatário.    |
 |   maxScore |  Duplo  |   Pontuação máxima possível de locatário na data especificada.    |
 |   averageComparativeScores |  coleção [averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por meio de assentos) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura) dentro do escopo. |

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b0c606be725364927a686bdec24e985850fa33d
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2338e879df9f7e1920c90df61dda62a86d1bc2db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954178"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42443325"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,8 +59,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar cartToCl
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |description|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
-|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivos a serem associados às classes.|
-|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
+|deviceCartIds|String collection|Identificadores de carrinhos de dispositivos a serem associados às classes.|
+|classroomIds|String collection|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
 
 

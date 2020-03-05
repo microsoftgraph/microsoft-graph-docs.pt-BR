@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6161faa323846ef64bc7e61d018e2dd431a81665
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6684046b6587838370ae01349a0e0cf6a962b814
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39934935"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444942"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Criar mobileAppProvisioningConfigGroupAssignment
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|targetGroupId|Cadeia de Caracteres|A ID do grupo do AAD no qual a configuração de provisionamento do aplicativo está sendo direcionada.|
+|targetGroupId|String|A ID do grupo do AAD no qual a configuração de provisionamento do aplicativo está sendo direcionada.|
 |id|String|Chave da entidade.|
 
 

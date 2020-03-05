@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 33dbc9821d2a58763d81249aebe21a9a2c3aee08
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a3d013668d0a4a11473a51a103bbf8b942139c06
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033583"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446811"
 ---
 # <a name="timestamp-resource-type"></a>tipo de recurso timeStamp
+
+Namespace: Microsoft. Graph
 
 Informações de data e hora para um ponto no tempo.
 

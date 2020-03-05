@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1cbbac43b7c47ee7aa160bf1e66a94e1afdb0c60
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 2d0217bf395a37b361e83818e653a2ad23220eef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734427"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446482"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ No corpo da solicitação, fornece um objeto JSON com uma ou mais propriedades q
 |:---------------|:--------|:----------|
 |clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
-|nome|Cadeia de caracteres|O nome exclusivo do provedor de identidade.|
+|nome|String|O nome exclusivo do provedor de identidade.|
 
 ## <a name="response"></a>Resposta
 
@@ -65,7 +67,7 @@ O exemplo a seguir atualiza a definição da vida útil do token **identityProvi
 ##### <a name="request"></a>Solicitação
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
@@ -79,15 +81,15 @@ Content-length: 41
     "clientSecret": "1111111111111"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 65511c11810a95dfaf7497b0cc2cb1b1ad89c8a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e0d9b3b963e02bf017630ad898501518449a20f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034549"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446937"
 ---
 # <a name="sectiongroup-resource-type"></a>tipo de recurso de @ @ @ Section
+
+Namespace: Microsoft. Graph
 
 Um grupo de seções em um bloco de anotações do OneNote. Os grupos de seções podem conter seções e grupos de seções.
 
@@ -54,7 +56,7 @@ Veja a seguir uma representação JSON do recurso.
 |id|String|O identificador exclusivo do grupo de seções. Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o grupo de seções foi modificado pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|displayName|String|O nome do grupo de seção.|
+|displayName|Cadeia de caracteres|O nome do grupo de seção.|
 |sectionGroupsUrl|String|A URL da propriedade `sectionGroups` de navegação, que retorna todos os grupos de seção no grupo de seções. Somente leitura.|
 |sectionsUrl|String|A URL da propriedade `sections` de navegação, que retorna todas as seções no grupo de seções. Somente leitura.|
 |própria|String|O ponto de extremidade onde você pode obter detalhes sobre o grupo de seções. Somente leitura.|

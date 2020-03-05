@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: edf64c6aaa2a9745b28543bd3dc3a458b7d8869e
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: df465172d02b701b8b9f9439a32644f5df541f45
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367235"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448141"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Restrições de registro específicas de plataformas
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|platformBlocked|Booliano|Bloqueia o registro da plataforma|
+|platformBlocked|Boolean|Bloqueia o registro da plataforma|
 |personalDeviceEnrollmentBlocked|Booliano|Bloqueia o registro de dispositivos de sua propriedade|
 |osMinimumVersion|String|Versão do SO mínimo compatível|
 |osMaximumVersion|Cadeia de caracteres|Versão do SO máximo compatível|

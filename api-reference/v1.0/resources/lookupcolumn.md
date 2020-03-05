@@ -7,14 +7,16 @@ localization_priority: Normal
 description: A lookupColumn em um recurso columnDefinition indica que os valores da coluna são buscados em outra origem do site.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5f0299816a1ea53338053708dbd99f7be8428051
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 752d60bbb1ac93b5a58eb326e7a6769921c47a66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036340"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447518"
 ---
 # <a name="lookupcolumn-resource-type"></a>Tipo de recurso LookupColumn
+
+Namespace: Microsoft. Graph
 
 A **lookupColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são buscados em outra origem do site.
 

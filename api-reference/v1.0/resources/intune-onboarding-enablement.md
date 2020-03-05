@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 40530d501652f8967d33291d3305a58df36adbbd
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 053c0b3a361eb3c47bd3ea7073be43d6dbd11289
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367921"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448071"
 ---
 # <a name="enablement-enum-type"></a>tipo de enumeração de habilitação
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: Microsoft. Graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
@@ -22,8 +24,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Ainda não documentado|
-|enabled|1|Ainda não documentado|
-|deficiência|duas|Ainda não documentado|
+|enabled|1 |Ainda não documentado|
+|deficiência|2 |Ainda não documentado|
 
 
 

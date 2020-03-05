@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c9ee379e76c709f48b8dcf4ea9e706126b957525
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b393038a1728b26b827ba4f577bfd6bd449cd41
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036430"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447546"
 ---
 # <a name="localeinfo-resource-type"></a>Tipo de recurso localeInfo
+
+Namespace: Microsoft. Graph
 
 Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.
 

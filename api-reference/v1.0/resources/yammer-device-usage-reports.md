@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 209410e21cd9f96c87695409741e6a088a272601
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e2c91db77fbd57118c340d2d51a3bcd67ac0641
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033261"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446636"
 ---
 # <a name="yammer-device-usage-reports"></a>Relatórios de uso de dispositivos do Yammer
+
+Namespace: Microsoft. Graph
 
 Os relatórios de uso do dispositivo para o Yammer fornecem informações sobre quais dispositivos seus usuários utilizam para se envolver no Yammer. Você pode exibir o número de usuários por tipo de dispositivo em um período de tempo selecionado e exibir detalhes por usuário.
 
@@ -22,6 +24,6 @@ Os relatórios de uso do dispositivo para o Yammer fornecem informações sobre 
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getyammerdeviceusageuserdetail.md) | Fluxo      | Obtenha dados sobre o uso do dispositivo Yammer por usuário. |
+| [Obter dados de usuário](../api/reportroot-getyammerdeviceusageuserdetail.md) | Stream      | Obtenha dados sobre o uso do dispositivo Yammer por usuário. |
 | [Obter contagens de usuários de distribuição](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Fluxo      | Obtenha o número de usuários por tipo de dispositivo.  |
 | [Obter contagens de usuários](../api/reportroot-getyammerdeviceusageusercounts.md) | Fluxo      | Obtenha o número de usuários diários por tipo de dispositivo. |

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a3f95b6bf2a97a52f6c74143b2789ca9464f277d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0d6f5824823af71f5ce7c1a63dce9d73eca8e5c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036418"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447588"
 ---
 # <a name="licensedetails-resource-type"></a>tipo de recurso licenseDetails
+
+Namespace: Microsoft. Graph
 
 Contém informações sobre uma licença atribuída a um usuário.
 

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso SharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 01d27971cd04ff91333d25240e4d1d517e05cec5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3195207588061840c4e1394e1460f74d3728510c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034248"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446860"
 ---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
+
+Namespace: Microsoft. Graph
 
 O recurso **SharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
 
@@ -56,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
 
 Esta tabela define os valores possíveis para a propriedade **type**:
 
-| Valor   | Função    | Descrição
+| Valor   | Role    | Descrição
 |:--------|:--------|:---------------------------------------------------------
 | `view`  | `read`  | Um link somente de compartilhamento para exibição, permitindo o acesso somente leitura.
 | `edit`  | `write` | Um link de compartilhamento de edição, permitindo o acesso de leitura e gravação.
@@ -66,8 +68,8 @@ Esta tabela define os valores possíveis para a propriedade **type**:
 
 | Valor          | Descrição
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | Qualquer pessoa com o link tem acesso, sem a necessidade de fazer logon. Isso pode incluir pessoas de fora da sua organização.
-| `organization` | Qualquer pessoa que se inscreveu em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
+| `anonymous`    | Qualquer pessoa com o link tem acesso, sem precisar fazer logon. Isso pode incluir pessoas de fora da organização.
+| `organization` | Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

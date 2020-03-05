@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f301947d6d277cd4fd51b7db035ef4f7134a5e65
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24ed9ce0b7a4b7d9a013888fe7b43cbba5b4a264
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035502"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447175"
 ---
 # <a name="physicaladdress-resource-type"></a>Tipo de recurso physicalAddress
+
+Namespace: Microsoft. Graph
 
 Representa o endereço físico de um recurso, como um contato ou evento.
 
