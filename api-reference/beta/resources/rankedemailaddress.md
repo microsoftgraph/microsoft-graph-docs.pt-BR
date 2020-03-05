@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e29d5b2f2116050f9cea036df35ed6cc012c0e36
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bdba5af83357737c77e3b5c441703e404f971587
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965520"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521275"
 ---
 # <a name="rankedemailaddress-resource-type"></a>tipo de recurso rankedEmailAddress
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

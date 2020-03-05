@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d15e2709c429be3c6400b59db5174093892d3009
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: d496273d844f1754e45b156422aad3e0927e0656
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519600"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>tipo de recurso unifiedRolePermission
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

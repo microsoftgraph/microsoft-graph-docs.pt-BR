@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d4b8bf73499bc2cca2a7497e57e3cce6c8cbe5b9
-ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
+ms.openlocfilehash: 74dfe42bc48757ffe8799a033dfebf2df61f913d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41559037"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519845"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

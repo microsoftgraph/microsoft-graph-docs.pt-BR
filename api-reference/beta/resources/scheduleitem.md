@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: ''
-ms.openlocfilehash: f2901412dcf1d52d8b117afa214da159b4553a8a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd71cd95d676ea226e03a15324cda01e41b6d2c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008639"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520967"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -22,11 +24,11 @@ Um item que descreve a disponibilidade de um usuário correspondente a um evento
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente termina. |
-|IsPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento estiver marcado `private`; caso contrário, false. Opcional. |
+|IsPrivate |Boolean |A sensibilidade do evento correspondente. True se o evento estiver marcado `private`; caso contrário, false. Opcional. |
 |location |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
 |iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | A linha de assunto do evento correspondente. Opcional.|
+|assunto |String | A linha de assunto do evento correspondente. Opcional.|
 
 
 ## <a name="json-representation"></a>Representação JSON

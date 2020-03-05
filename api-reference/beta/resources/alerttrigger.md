@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 682ff7952b39cd71399441014c528eaba32ac4b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28bfd51a403077ee4ab456f6ca17fb176addf58d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013386"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508335"
 ---
 # <a name="alerttrigger-resource-type"></a>tipo de recurso alertTrigger
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Contém informações sobre as propriedades que acionaram uma detecção (as pro
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|name|String|Nome da propriedade servindo como um gatilho de detecção.|
+|nome|String|Nome da propriedade servindo como um gatilho de detecção.|
 |type|String|Tipo da propriedade no par chave: valor para interpretação. Por exemplo, String, Boolean, etc.|
 |value|Cadeia de caracteres|O valor da propriedade servindo como um gatilho de detecção.|
 

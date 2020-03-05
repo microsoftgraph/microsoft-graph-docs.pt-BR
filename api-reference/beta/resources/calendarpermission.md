@@ -5,14 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 80c704dbb3e50d3f4d0ba586a40f06f74f032321
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: c038ccd69cefa66c4fd57f4b09273662320f2640
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651733"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507835"
 ---
 # <a name="calendarpermission-resource-type"></a>tipo de recurso calendarPermission
+
+Namespace: Microsoft. Graph
 
 As permissões de um usuário com o qual o calendário foi compartilhado ou delegado em um cliente do Outlook.
 
@@ -27,7 +29,7 @@ Depois que um compartilhamento ou representante tiver sido configurado para um c
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Obter calendarPermission](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Leia as propriedades e os relacionamentos do objeto calendarPermission. |
-| [Atualização](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Atualize o objeto calendarPermission. |
+| [Update](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Atualize o objeto calendarPermission. |
 | [Delete](../api/calendarpermission-delete.md) | Nenhum | Exclua o objeto calendarPermission. |
 
 ## <a name="properties"></a>Propriedades
@@ -36,8 +38,8 @@ Depois que um compartilhamento ou representante tiver sido configurado para um c
 |:-------------|:------------|:------------|
 |allowedRoles|coleção [calendarRoleType](#calendarroletype-values)| Lista de níveis de permissão de compartilhamento ou de delegação permitidos para o calendário. Os valores possíveis são: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 |emailAddress|[emailAddress](emailaddress.md)| Representa um compartilhamento ou representante que tem acesso ao calendário. Para o compartilhamento "minha organização", a propriedade **Address** é NULL. Somente leitura. |
-|id|Cadeia de caracteres| O identificador exclusivo do usuário (compartilhamento ou representante) com o qual o calendário foi compartilhado. Somente leitura.|
-|isInsideOrganization|Booliano| True se o usuário em contexto (compartilhamento ou representante) estiver dentro da mesma organização que o proprietário do calendário.|
+|id|String| O identificador exclusivo do usuário (compartilhamento ou representante) com o qual o calendário foi compartilhado. Somente leitura.|
+|isInsideOrganization|Boolean| True se o usuário em contexto (compartilhamento ou representante) estiver dentro da mesma organização que o proprietário do calendário.|
 |isRemovable|Booliano| `True`Se o usuário puder ser removido da lista de compartilhamentos ou representantes do calendário especificado, `false` caso contrário. O usuário "minha organização" determina as permissões que outras pessoas dentro da sua organização têm para o calendário especificado. Não é possível remover "minha organização" como um compartilhamento para um calendário.|
 |role|[calendarRoleType](#calendarroletype-values)| Nível de permissão atual do compartilhamento ou representante do calendário. |
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 367a2c556b560056bcab44e6c20ae7851e493e48
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: c5c7d7765d546dad5f6de39f72f092b3bf9daee6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950476"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521464"
 ---
 # <a name="profile-resource-type"></a>tipo de recurso Profile
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Representa propriedades descritivas de uma pessoa em um locatário. Essas propri
 
 | Método                                                                     | Tipo de retorno                                                    | Descrição                                                                          |
 |:---------------------------------------------------------------------------|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [Obter perfil](../api/profile-get.md)                                       | [profile](profile.md)                                          | Leia as propriedades e as relações do objeto de perfil.                                 |
+| [Obter perfil](../api/profile-get.md)                                       | [perfil](profile.md)                                          | Leia as propriedades e as relações do objeto de perfil.                                 |
 | [Excluir perfil](../api/profile-delete.md)                                         | Nenhum                                                           | Excluir um objeto de **perfil** .                                                               |
 | [Listar conta](../api/profile-list-account.md)                             | coleção [userAccountInformation](useraccountinformation.md) | Obtenha uma coleção de objetos **userAccountInformation** .                                      |
 | [Criar personAnniversary](../api/profile-post-anniversaries.md)           | [personAnniversary](personanniversary.md)                      | Crie um novo **personAnniversary** postando na coleção de datas comemorativas.           |

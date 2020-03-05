@@ -6,14 +6,16 @@ title: DefaultColumnValue
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 9c59fd3303f014f8f9f78d8abc52b7f7ff59ade1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 57c66b627a61c59f78166bd8d6a14aef41cdd36d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973137"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507279"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

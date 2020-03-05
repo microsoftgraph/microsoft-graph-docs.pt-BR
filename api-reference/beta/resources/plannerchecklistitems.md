@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: bebec56f57f546dcfc0b16eedb1fb9635d0fb16f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5816be4175e719077836ad103a524acce86c0a1a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965997"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521759"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>tipo de recurso plannerChecklistItems
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

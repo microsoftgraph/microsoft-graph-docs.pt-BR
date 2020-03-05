@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 378d8c1d773eacb3339eba35d5d60cc7ef5f2400
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c8f244b9c3601aaeb315b09bb51d21275a63f6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006602"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503254"
 ---
 # <a name="taxgroups-resource-type"></a>tipo de recurso taxGroups
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um tipo de recurso taxGroups no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -23,7 +28,7 @@ Representa um tipo de recurso taxGroups no Dynamics 365 Business central.
 |[Obter taxGroups](../api/dynamics-taxgroups-get.md)|taxGroups|Obtém um objeto de grupo de impostos.|
 |[Postar taxGroups](../api/dynamics-create-taxgroups.md)|taxGroups|Cria um objeto de grupo de impostos.|
 |[Patch taxGroups](../api/dynamics-taxgroups-update.md)|taxGroups|Atualiza um objeto de grupo de impostos.|
-|[Excluir taxGroups](../api/dynamics-taxgroups-delete.md)|none|Exclui um objeto de grupo de impostos.|
+|[Excluir taxGroups](../api/dynamics-taxgroups-delete.md)|nenhuma|Exclui um objeto de grupo de impostos.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -32,7 +37,7 @@ Representa um tipo de recurso taxGroups no Dynamics 365 Business central.
 |código|cadeia de caracteres|Especifica o grupo de impostos.|
 |displayName|string|Especifica o nome de exibição do grupo de impostos.|
 |taxType|string|Especifica o tipo de imposto para o grupo.|
-|lastModifiedDateTime|DateTime|O último DateTime que o grupo de impostos foi modificado. Somente leitura.|  
+|lastModifiedDateTime|datetime|O último DateTime que o grupo de impostos foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

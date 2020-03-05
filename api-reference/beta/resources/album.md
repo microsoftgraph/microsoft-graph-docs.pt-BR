@@ -6,14 +6,16 @@ description: Faceta descrevendo um pacote que é um álbum de fotos.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 59717995870cbfe970fd23b160377d32cb722835
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60d653db52f71de6fe4079df25223b393ea18da3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974448"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508356"
 ---
 # <a name="album-resource-type"></a>tipo de recurso do álbum
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

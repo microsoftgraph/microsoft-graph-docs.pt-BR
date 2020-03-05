@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: conceptualPageType
 author: ''
-ms.openlocfilehash: 0e45fc94df443cb2067d5e5e492d4186ba074eeb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fc73232345f663abb3d2e91e618145374c8990b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013483"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508440"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Usar a API REST de feed de atividades
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

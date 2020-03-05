@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b93e01bf6274591282fd5e486bebb878672d8cc3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65eda1c24fee112ef18fc6682b537f92f924dcf8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973227"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507573"
 ---
 #  <a name="complianceinformation-resource-type"></a>tipo de recurso complianceInformation
+
+Namespace: Microsoft. Graph
 
 Contém dados de conformidade associados ao controle de Pontuação segura.
 

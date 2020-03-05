@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ec4d3fdb415533d5b3f2effc72688fe912551bc8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 25d350e48aaddbda2b931ae5a9e177ec6caa9799
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012874"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507475"
 ---
 # <a name="connector-resource-type"></a>tipo de recurso conector
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ ms.locfileid: "36012874"
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter conector](../api/connector-get.md) | [conector](connector.md) |Leia as propriedades e as relações do objeto Connector.|
-|[Listar memberOf](../api/connector-list-memberof.md) |[](connectorgroup.md) coleção de conectores| Obtenha o objeto de conexão associado ao conector.|
+|[Listar memberOf](../api/connector-list-memberof.md) |coleção de [conectores](connectorgroup.md)| Obtenha o objeto de conexão associado ao conector.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -41,7 +43,7 @@ ms.locfileid: "36012874"
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|memberOf|[](connectorgroup.md) coleção de conectores| O MemberGroup do qual a conexão é membro.<br>Somente leitura. |
+|memberOf|coleção de [conectores](connectorgroup.md)| O MemberGroup do qual a conexão é membro.<br>Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON
 

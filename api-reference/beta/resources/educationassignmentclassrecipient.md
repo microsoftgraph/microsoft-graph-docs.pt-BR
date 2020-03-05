@@ -5,18 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7824875cba3188729e06c264d58fe6cc3afb9529
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b1643e442a657edcda924db4d10ebc0212425d48
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972842"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502750"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>tipo de recurso educationAssignmentClassRecipient
 
+Namespace: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usada dentro da propriedade [assignment.](educationassignment.md) assignTo. Quando definido como destinatário de classe, cada aluno da turma receberá um objeto de envio quando a atribuição for publicada.
+Usada dentro da propriedade [assignment. assignTo](educationassignment.md) . Quando definido como destinatário de classe, cada aluno da turma receberá um objeto de envio quando a atribuição for publicada.
 
 Esse recurso é uma subclasse de [educationAssignmentRecipient](educationassignmentrecipient.md).
 

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7472118f1a7a7fb30ac1bc4e4775f04f4a84fca4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1af4ca26a3456dd3e926b81045845675002c04a1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973776"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506355"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>tipo de recurso domainDnsMxRecord
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,12 +27,12 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
-|IsOptional|Booliano| Se for falso, o registro MX deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|IsOptional|Boolean| Se for falso, o registro MX deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor usado ao configurar a propriedade *alias/Host/Name* do registro MX no host DNS. |
 |mailExchange|String| O valor usado ao configurar a *resposta/destino/valor* do registro MX no host DNS.|
 |preferência|Int32| O valor usado ao configurar a propriedade *preference/Priority* do registro MX no host DNS. |
 |recordType|String| Tipo de registro DNS. O valor é sempre *MX*. Chave |
-|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro MX.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro MX.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |TTL|Int32| O valor a ser usado ao configurar a propriedade *TTL (time-to-Live)* do registro MX no host DNS. Não anulável |
 
 ## <a name="relationships"></a>Relações

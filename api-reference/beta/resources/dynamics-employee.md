@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 96d44856ad52c983e61181fc64b93477fbe79e6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84fccbcb9d60c97a2ce0079a9ba773a8400a8069
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972947"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504080"
 ---
 # <a name="employees-resource-type"></a>tipo de recurso Employees
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um funcionário no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa um funcionário no Dynamics 365 Business central.
 |[Obter funcionários](../api/dynamics-employee-get.md)      |dos  |Obter um objeto Employee.   |
 |[Postar funcionários](../api/dynamics-create-employee.md)  |dos  |Criar um objeto Employee.|
 |[Patch funcionários](../api/dynamics-employee-update.md) |dos  |Atualizar um objeto Employee.|
-|[Excluir funcionários](../api/dynamics-employee-delete.md)|none       |Excluir um objeto Employee.|
+|[Excluir funcionários](../api/dynamics-employee-delete.md)|nenhuma       |Excluir um objeto Employee.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo   |Descrição                                            |
@@ -39,14 +44,14 @@ Representa um funcionário no Dynamics 365 Business central.
 |address             |[Extra. Address](../resources/dynamics-complextypes.md)|Especifica o endereço do funcionário. Esse endereço aparecerá em todos os documentos de recursos do funcionário.|
 |phoneNumber         |string  |Especifica o número de telefone do funcionário.             |
 |mobilePhone         |string  |Especifica o número de telefone celular do funcionário.      |
-|email               |string  |Especifica o endereço de email do funcionário.                |
+|email               |cadeia de caracteres  |Especifica o endereço de email do funcionário.                |
 |personalEmail       |string  |Especifica o endereço de email pessoal do funcionário.       |
 |employmentDate      |data    |Especifica a data em que o funcionário começou a trabalhar para a empresa.|
 |terminationDate     |data    |Especifica a data de término do funcionário, devido à aposentadoria ou à descarta, por exemplo.|
 |status              |cadeia de caracteres  |Especifica o status do funcionário. Os valores possíveis estão ativos, inativos ou terminados|
 |birthDate           |data    |Especifica a data de nascimento do funcionário.                |
 |Panorama             |stream  |A imagem do funcionário. Somente Leitura.                       |
-|lastModifiedDateTime|DateTime|O último DateTime que o funcionário foi modificado. Somente leitura.|  
+|lastModifiedDateTime|datetime|O último DateTime que o funcionário foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c53fdc0b21a00c5eae43b8c170a1512e55d496b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec8192d486194132e71f8f1fff493e081f8192e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964423"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519838"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>tipo de recurso teamsTabConfiguration (tipo aberto)
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

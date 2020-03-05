@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 02ef418f0f2124b4bd0c7489db8c732398005761
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d57f116adac652cb55a3a270383ddb5c65d8e40f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538382"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507468"
 ---
 # <a name="connectorgroup-resource-type"></a>tipo de recurso do The Connector
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "37538382"
 |:---------------|:--------|:----------|
 |[Obter um conector de conexão](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Leia as propriedades e as relações do objeto de conexão.|
 |[Criar aplicativo](../api/connectorgroup-post-applications.md) |[application](application.md)| Associe um aplicativo ao grupo de conectores postando na coleção de aplicativos.|
-|[Listar aplicativos](../api/connectorgroup-list-applications.md) |coleção [Application](application.md)| Obtenha a coleção de objetos de aplicativo associada.|
+|[Listar aplicativos](../api/connectorgroup-list-applications.md) |Coleção [application](application.md)| Obtenha a coleção de objetos de aplicativo associada.|
 |[Criar conector](../api/connectorgroup-post-members.md) |[conector](connector.md)| Adicionar um conector ao grupo de conectores postando na coleção Members.|
 |[Listar membros](../api/connectorgroup-list-members.md) |coleção [Connector](connector.md)| Obtenha uma coleção de objetos Connector.|
 |[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Atualize o objeto de conexão. |
@@ -34,12 +36,12 @@ ms.locfileid: "37538382"
 |connectorGroupType|string| O tipo de conectores que serão usados com o grupo. Os valores possíveis são `applicationProxy`:.|
 |id|String| A ID do objeto do conector|
 |isDefault|Booliano| Indica se o grupo de conectores é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é definido pelo sistema.|
-|name|Cadeia de caracteres| O nome associado ao conector.|
+|nome|String| O nome associado ao conector.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Emprego|coleção [Application](application.md)| Somente leitura. Anulável.|
+|Emprego|Coleção [application](application.md)| Somente leitura. Anulável.|
 |members|coleção [Connector](connector.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

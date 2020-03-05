@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: afcef3766e4df80a3856ab59684ba826c3a78d14
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 3fd03ed6bb8f3e5e3548781c29d5d9fe16fcba23
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437822"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521268"
 ---
 # <a name="rbacapplication-resource-type"></a>tipo de recurso rbacApplication
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

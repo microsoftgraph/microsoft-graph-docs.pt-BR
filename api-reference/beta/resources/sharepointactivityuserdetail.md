@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 3d1c1f1b2bcf919769009bbb65a917c4b9cb84f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7d030bbfaff939da4be645d8003984e5dde0a7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008429"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520692"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>tipo de recurso sharePointActivityUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -20,7 +22,7 @@ ms.locfileid: "36008429"
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Data              |
 | userPrincipalName         | String            |
-| isDeleted                 | Booliano           |
+| isDeleted                 | Boolean           |
 | deletedDate               | Data              |
 | lastActivityDate          | Data              |
 | viewedOrEditedFileCount   | Int64             |
@@ -28,7 +30,7 @@ ms.locfileid: "36008429"
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
 | visitedPageCount          | Int64             |
-| assignedProducts          | Coleção de cadeias de caracteres |
+| assignedProducts          | String collection |
 | reportPeriod              | String            |
 
 ## <a name="json-representation"></a>Representação JSON

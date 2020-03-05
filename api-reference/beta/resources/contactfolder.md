@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4a9fe3263bed04252e8eba5129437d0a7c155d42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ebca7ecd2ba49c3a14973bbc6060980c07927d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973185"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507454"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
 |id|String|Identificador exclusivo da pasta de contatos. Somente leitura.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
 |wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente `contacts` é a única pasta de contatos reconhecida.|

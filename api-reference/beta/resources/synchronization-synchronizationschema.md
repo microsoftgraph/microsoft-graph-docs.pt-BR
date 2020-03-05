@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 95cb2a9bc38b3c23d8ddece5abe5520bf0fe25a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a50a53c7d76d281f4a42e976bacc0803377379d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007778"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520034"
 ---
 # <a name="synchronizationschema-resource-type"></a>tipo de recurso synchronizationSchema
 
+Namespace: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de configuração de um determinado trabalho de sincronização. Normalmente, você personalizará alguns dos mapeamentos de [atributo](synchronization-attributemapping.md)ou adicionará um [filtro de escopo](synchronization-filter.md) para sincronizar somente objetos que atendam a uma determinada condição.
+Define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de configuração de um determinado trabalho de sincronização. Normalmente, você personalizará alguns dos [mapeamentos de atributo](synchronization-attributemapping.md)ou adicionará um [filtro de escopo](synchronization-filter.md) para sincronizar somente objetos que atendam a uma determinada condição.
 
 As seções a seguir descrevem os componentes de alto nível do esquema de sincronização.
 
@@ -30,7 +32,7 @@ As [definições de diretório](synchronization-directorydefinition.md) fornecem
 
 ## <a name="object-mappings"></a>Mapeamentos de objetos
 
-Os mapeamentos de [objeto](synchronization-objectmapping.md) são a parte principal da regra de sincronização. Cada mapeamento de objeto define como um determinado objeto deve ser sincronizado da origem para o diretório de destino. Em particular, o mapeamento define como um objeto no diretório de origem deve ser correspondido com um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se provisionar um objeto e como os atributos do objeto devem ser transformados Quando estão sincronizadas da origem para o diretório de destino.
+Os [mapeamentos de objeto](synchronization-objectmapping.md) são a parte principal da regra de sincronização. Cada mapeamento de objeto define como um determinado objeto deve ser sincronizado da origem para o diretório de destino. Em particular, o mapeamento define como um objeto no diretório de origem deve ser correspondido com um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se provisionar um objeto e como os atributos do objeto devem ser transformados Quando estão sincronizadas da origem para o diretório de destino.
 
 ## <a name="methods"></a>Métodos
 
@@ -41,7 +43,7 @@ Os mapeamentos de [objeto](synchronization-objectmapping.md) são a parte princi
 |[Excluir esquema](../api/synchronization-synchronizationschema-delete.md)    |Nenhum   |Exclua o esquema personalizado, redefinindo o esquema para a configuração padrão. |
 |[Operadores de filtro de lista](../api/synchronization-synchronizationschema-filteroperators.md)    |coleção [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)   |Liste todos os operadores com suporte nos filtros de escopo. |
 |[Funções de mapeamento de atributo de lista](../api/synchronization-synchronizationschema-functions.md)    |coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)   |Listar todas as funções suportadas nas expressões de mapeamento de atributos. |
-|[Analisar expressão de mapeamento de atributos](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|Analisar uma expressão de cadeia de caracteres em um [attributeMappingSource|(.. objeto/Resources/synchronization_attributemappingsource.MD).|
+|[Analisar expressão de mapeamento de atributos](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|Analisar uma expressão de cadeia de caracteres em um [attributeMappingSource|(.. objeto/Resources/synchronization_attributemappingsource. MD).|
 
 
 ## <a name="properties"></a>Propriedades

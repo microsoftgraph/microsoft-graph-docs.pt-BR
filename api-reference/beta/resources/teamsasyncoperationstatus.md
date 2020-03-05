@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 35975d122adf6411afc6fe4c382d1ff46b41e263
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c82065c789847d3e2a11947dcf921b12c55530e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007680"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519894"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enumeração teamsAsyncOperationStatus
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
 |Inválido|,0|Valor inválido.|
-|notStarted|1|A operação não foi iniciada.|
-|inProgress|duas|A operação está sendo executada.|
-|adicionada|3D|A operação foi bem-sucedida.|
-|falhou|quatro|Falha na operação.|
+|notStarted|1 |A operação não foi iniciada.|
+|inProgress|2 |A operação está sendo executada.|
+|adicionada|3 |A operação foi bem-sucedida.|
+|falhou|4 |Falha na operação.|

@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3f4359b712f183ffc634e079aea0d61094a2b013
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 32ebcbb4b4d0c8721b5cd1d1a421edb37d836821
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726708"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519124"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>tipo de recurso workbookTableColumn
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +41,7 @@ Representa uma coluna em uma tabela.
 |:---------------|:--------|:----------|
 |id|int|Retorna uma chave exclusiva que identifica a coluna na tabela. Somente leitura.|
 |índice|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
-|name|string|Retorna o nome da coluna da tabela.|
+|nome|string|Retorna o nome da coluna da tabela.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações

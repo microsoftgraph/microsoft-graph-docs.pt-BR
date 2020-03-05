@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 53496734f79121edd010a429ec0a8da28b16e836
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b10536af68a20bd5c92da132406fe7dd8ee65b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008884"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521408"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Um tipo complexo para representar a propriedade de **atribuição** na parte [vi
 |:----|:-----|:-----------|
 |iconUrl | String | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
 |alternateText | String | Opcion Alt-conteúdo de texto acessível para a imagem|
-|addImageQuery | Booliano | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
+|addImageQuery | Boolean | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON
 

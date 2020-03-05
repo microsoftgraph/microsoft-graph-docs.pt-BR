@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2f76c071efd10d2d43887bdd5dd04df0d2aa86d5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d74b9d268bf61ee191fb2a8b35368b08dd5650d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974224"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508091"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>tipo de recurso auditActivityInitiator
-Identity o objeto Resource que inicia a atividade. O iniciador pode ser um usuário, um aplicativo ou um sistema (que é considerado como um aplicativo)
+
+Namespace: Microsoft. Graph Identity o objeto Resource que inicia a atividade. O iniciador pode ser um usuário, um aplicativo ou um sistema (que é considerado como um aplicativo)
 
 
 

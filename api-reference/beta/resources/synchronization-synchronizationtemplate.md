@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9176c092d62b4ee43d15d29884a3882fd3c627e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9952b06276efa712068091ecd8b7b5dc5e6769d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964596"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520013"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationtemplate
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 
 | Método        | Tipo de retorno               | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationtemplate-list.md)    |[](synchronization-synchronizationtemplate.md) coleção synchronizationtemplate  |Lista os modelos disponíveis para uma instância de aplicativo ou aplicativo (entidade de serviço).|
-|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationtemplate](synchronization-synchronizationtemplate.md)   |Leia as propriedades e as relações do **** objeto synchronizationtemplate.|
+|[List](../api/synchronization-synchronizationtemplate-list.md)    |coleção [synchronizationtemplate](synchronization-synchronizationtemplate.md)  |Lista os modelos disponíveis para uma instância de aplicativo ou aplicativo (entidade de serviço).|
+|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationtemplate](synchronization-synchronizationtemplate.md)   |Leia as propriedades e as relações do objeto **synchronizationtemplate** .|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -37,8 +39,8 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 |:--------------|:--------------------------|:-----------------------------|
 |id             |Cadeia de caracteres                     |Identificador de modelo exclusivo.|
 |ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo ao qual este modelo pertence.|
-|Padrão.        |Booliano                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
-|descrição    |String                     |Descrição do modelo.|
+|Padrão.        |Boolean                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
+|description    |String                     |Descrição do modelo.|
 |detectáveis   |String                     |`true`Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
 |factoryTag     |String                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|
 |los       |coleção metadataEntry   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|

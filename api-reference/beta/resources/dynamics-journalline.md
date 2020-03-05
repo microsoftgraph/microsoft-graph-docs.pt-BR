@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cb9b20d7d88159dbddd2a18caa6db7fe52e5a601
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8285a64b931ab18dac51cc20224877bbac74be90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972912"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503653"
 ---
 # <a name="journallines-resource-type"></a>tipo de recurso journalLines
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa uma linha em um diário no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa uma linha em um diário no Dynamics 365 Business central.
 |[Obter journalLines](../api/dynamics-journalline-get.md)      |journalLines|Obtém uma linha do diário.   |
 |[Postar journalLines](../api/dynamics-create-journalline.md)  |journalLines|Cria uma linha de diário.|
 |[Patch journalLines](../api/dynamics-journalline-update.md) |journalLines|Atualiza uma linha do diário.|
-|[Excluir journalLines](../api/dynamics-journalline-delete.md)|none        |Exclui uma linha do diário.|
+|[Excluir journalLines](../api/dynamics-journalline-delete.md)|nenhuma        |Exclui uma linha do diário.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade             | Tipo                   |Descrição                                                        |
@@ -38,9 +43,9 @@ Representa uma linha em um diário no Dynamics 365 Business central.
 |documentNumber        |Cadeia de caracteres, tamanho máximo 20 |Especifica um número de documento para a linha do diário.                  |
 |externalDocumentNumber|Cadeia de caracteres, tamanho máximo 20 |Especifica um número de documento externo para a linha do diário.        |
 |quantia                |dígitos                 |Especifica o valor total (incluindo o IVA) que a linha do diário consiste.|
-|descrição           |Cadeia de caracteres, tamanho máximo 50 |A descrição da linha do diário, fornecida pelo usuário ou autocriada.|
+|description           |Cadeia de caracteres, tamanho máximo 50 |A descrição da linha do diário, fornecida pelo usuário ou autocriada.|
 |comment               |Cadeia de caracteres, tamanho máximo 250|Um comentário especificado pelo usuário na linha do diário.                      |
-|lastModifiedDateTime  |DateTime                |O último DateTime em que a linha do diário foi modificada. Somente leitura.        |
+|lastModifiedDateTime  |datetime                |O último DateTime em que a linha do diário foi modificada. Somente leitura.        |
 
 ## <a name="relationships"></a>Relações
 Uma linha de diário é uma subpágina de um diário. Ele não pode ser acessado diretamente.

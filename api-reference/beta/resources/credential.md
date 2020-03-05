@@ -5,14 +5,16 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3b23249d7c0b898344113c5bcfe950c207891250
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: c7638c08214002a58328378967c024af871cb734
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658881"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507356"
 ---
 # <a name="credential-resource-type"></a>tipo de recurso Credential
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

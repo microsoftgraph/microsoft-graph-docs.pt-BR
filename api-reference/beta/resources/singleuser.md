@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0d4db47278051dd79b697dc352549b95b872e4aa
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 13792bcffabbc9dceb272cd1cf156fbf9a5a5a10
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331338"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520566"
 ---
 # <a name="singleuser-complex-type"></a>tipo complexo Únicousuário
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +27,8 @@ Este tipo tem as seguintes propriedades:
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
 | id |Cadeia de caracteres | A ID do usuário no Azure AD. |
-| descrição |String | O nome do usuário no Azure AD. Somente leitura. |
-| IsBackup | Booliano | Para um **únicousuário** em um estágio de aprovação, indica se o usuário é um Aprovador de fallback de backup. |
+| description |String | O nome do usuário no Azure AD. Somente leitura. |
+| IsBackup | Boolean | Para um **únicousuário** em um estágio de aprovação, indica se o usuário é um Aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 

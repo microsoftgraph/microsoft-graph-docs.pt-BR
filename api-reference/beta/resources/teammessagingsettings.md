@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3a89ed35c820338cde7b3f22a7345c860b1a4427
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 213a8d388b80a4b35d26afc0071445a8ac6095b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964526"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519929"
 ---
 # <a name="teammessagingsettings-resource-type"></a>tipo de recurso teamMessagingSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,11 +23,11 @@ Configurações para configurar mensagens e menção na [equipe](team.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Booliano|Se definido como true, os usuários podem editar suas mensagens.|
-|allowUserDeleteMessages|Booliano|Se definido como true, os usuários podem excluir suas mensagens.|
-|allowOwnerDeleteMessages|Booliano|Se definido como true, os proprietários podem excluir qualquer mensagem.|
-|allowTeamMentions|Booliano|Se for definido como true, @team mencionadas serão permitidas.|
-|allowChannelMentions|Booliano|Se for definido como true, @channel mencionadas serão permitidas.|
+|allowUserEditMessages|Boolean|Se definido como true, os usuários podem editar suas mensagens.|
+|allowUserDeleteMessages|Boolean|Se definido como true, os usuários podem excluir suas mensagens.|
+|allowOwnerDeleteMessages|Boolean|Se definido como true, os proprietários podem excluir qualquer mensagem.|
+|allowTeamMentions|Boolean|Se for definido como true, @team mencionadas serão permitidas.|
+|allowChannelMentions|Boolean|Se for definido como true, @channel mencionadas serão permitidas.|
 
 ## <a name="json-representation"></a>Representação JSON
 

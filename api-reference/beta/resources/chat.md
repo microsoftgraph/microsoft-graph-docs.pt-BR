@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 61c23e32d455dd18af639dad31806d54d9e8bd07
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fa6952640a1986d0139007ba863275aef2bc6aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974021"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507737"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |:---------------|:--------|:----------|
 |[Listar chats](../api/chat-list.md) | coleção [chat](channel.md) | Obter a lista de chats de que um usuário faz parte.|
 |[Obter bate-papo](../api/chat-get.md) | [chat](channel.md) | Leia as propriedades e as relações do chat.|
-|[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Obtenha a lista de todos os usuários no chat.|
-|[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obtenha um único usuário no chat.|
+|[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.|
+|[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obter um único usuário no bate-papo.|
 |[Listar mensagens em um bate-papo](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. |
 |[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. |
 
@@ -43,7 +45,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 | installedApps | Coleção [teamsAppInstallation](teamsappinstallation.md) | Uma coleção de todos os aplicativos no chat. Anulável. |
-| members | coleção [conversationMember](conversationmember.md) | Uma coleção de todas as pessoas no chat. Anulável. |
+| membros | coleção [conversationMember](conversationmember.md) | Uma coleção de todas as pessoas no chat. Anulável. |
 | messages | [chatMessage](chatmessage.md) collection | Uma coleção de todas as mensagens no chat. Anulável. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -68,7 +70,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="see-also"></a>Confira também
 
-- [channel](channel.md)
+- [canal](channel.md)
 - [chatMessage](chatmessage.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cb96e83f6c80a3b3c50b37612731272ca329e3cc
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 44049ebaa431ac1c11e6581c82eab76a7406fb94
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913748"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508105"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ O grupo de roteamento de áudio armazena uma rota de áudio privada entre os par
 
 > **Observação:** o [ConfigureMixer](../api/participant-configuremixer.md) não envolve nenhuma rota, é para toda a chamada para definir os níveis de volume para combinações de receptor de origem.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                  | Tipo de retorno                               | Descrição                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
@@ -34,7 +36,7 @@ O grupo de roteamento de áudio armazena uma rota de áudio privada entre os par
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | cadeia de caracteres            | Somente leitura.                                                           |
 | receptores     | collection(string) | Lista de IDs de participantes de recebimento.                                   |
-| routingmode   | cadeia de caracteres            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
+| routingmode   | string            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
 | fontes       | collection(string) | Lista de IDs de participantes de origem.                                      |
 
 > **Observação:** O modo de roteamento determina as restrições nas fontes e nos receptores. Só há suporte para os seguintes grupos de roteamento.

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e248e47cf94e2c26e80b505cbaead450e03561d4
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 23227bd4f363748bade73999a4004747d691a364
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331358"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508230"
 ---
 # <a name="approvalsettings-complex-type"></a>tipo complexo approvalSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +24,9 @@ Usada para a `requestApprovalSettings` propriedade de uma [política de atribui�
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| isApprovalRequired | Booliano | Se for false, a aprovação não será necessária para solicitações nesta política. |
-| isApprovalRequiredForExtension | Booliano| Se for false, a aprovação não será necessária para um usuário que já tenha uma atribuição para estender sua atribuição. |
-| isRequestorJustificationRequired | Booliano | Indica se o solicitante é necessário para fornecer uma justificativa em sua solicitação. |
+| isApprovalRequired | Boolean | Se for false, a aprovação não será necessária para solicitações nesta política. |
+| isApprovalRequiredForExtension | Boolean| Se for false, a aprovação não será necessária para um usuário que já tenha uma atribuição para estender sua atribuição. |
+| isRequestorJustificationRequired | Boolean | Indica se o solicitante é necessário para fornecer uma justificativa em sua solicitação. |
 | approvalmode| String | Um de `NoApproval`, `SingleStage` ou `Serial`. O `NoApproval` é usado quando `isApprovalRequired` é falso. |
 | approvalStages | coleção [approvalStage](approvalstage.md)| Se for necessário aprovar, um ou dois elementos dessa coleção define cada um dos estágios de aprovação. Uma matriz vazia se nenhuma aprovação for necessária.  |
 

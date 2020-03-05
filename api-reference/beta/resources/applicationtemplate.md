@@ -5,14 +5,16 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c34c083a4cfee63db724228d9390c7452ca5a92
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c707a9010103f4226e62782a83891ff880a245e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870943"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508258"
 ---
 # <a name="applicationtemplate-resource-type"></a>tipo de recurso applicationtemplate
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,15 +33,15 @@ Representa um aplicativo na [Galeria de aplicativos do Azure ad](/azure/active-d
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|categories|Coleção de cadeias de caracteres|A lista de categorias para o aplicativo. Os valores com suporte podem `Collaboration`ser `Business Management`: `Consumer`,`Content management`, `CRM`, `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel`,,,,,,,,,,,,,,,,,,,,,,,,,, e `Web design & hosting` `Health` `Human resources`|
-|descrição|String|Uma descrição do aplicativo.|
+|categories|String collection|A lista de categorias para o aplicativo. Os valores com suporte podem `Collaboration`ser `Business Management`: `Consumer`,`Content management`, `CRM`, `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools, Travel`,,,,,,,,,,,,,,,,,,,,,,,,,, e `Web design & hosting` `Health` `Human resources`|
+|description|String|Uma descrição do aplicativo.|
 |displayName|Cadeia de caracteres|O nome do aplicativo.|
 |homePageUrl|String|A URL da home page do aplicativo.|
 |id|String| Identificador exclusivo do aplicativo. Somente leitura.|
 |logoUrl|String|A URL para obter o logotipo para este aplicativo.|
 |publicador|String|O nome do editor para este aplicativo.|
-|supportedProvisioningTypes|Coleção de cadeias de caracteres|A lista de modos de provisionamento compatíveis com este aplicativo. O único valor válido é `sync`.|
-|supportedSingleSignOnModes|Coleção de cadeias de caracteres|A lista de modos de logon único suportados por este aplicativo. Os valores com suporte `password`são `saml`, `external`, e `oidc`.|
+|supportedProvisioningTypes|String collection|A lista de modos de provisionamento compatíveis com este aplicativo. O único valor válido é `sync`.|
+|supportedSingleSignOnModes|String collection|A lista de modos de logon único suportados por este aplicativo. Os valores com suporte `password`são `saml`, `external`, e `oidc`.|
 
 ## <a name="relationships"></a>Relações
 

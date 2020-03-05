@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 86e65d46c8037ebcbb2c98f9f9e93f94f34bbdef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a21d4d3005be8a776ae8bb9f9e3c1027be48de72
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972702"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501924"
 ---
 # <a name="educationidentitydomain-resource-type"></a>tipo de recurso educationIdentityDomain
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 4e906a2f7f9d95cd3c3623d1f84c41aedded6cc4
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 57df22d5d1e4d5b8c60a8689254d11292a1793d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508147"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

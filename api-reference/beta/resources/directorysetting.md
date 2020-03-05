@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fdef82ef7585d3b59510b491f6b10396afbf6763
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d42e46d39e28357d6839111a5e6a865b421cf87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973819"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506628"
 ---
 # <a name="directorysetting-resource-type"></a>tipo de recurso directorySetting
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,9 +36,9 @@ As configurações de diretório podem ser criadas com base no [directorySetting
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|string|Exibe o nome deste grupo de configurações, que vem do modelo associado. Somente leitura.|
-|id|cadeia de caracteres| Identificador exclusivo dessas configurações. Somente leitura.|
+|id|string| Identificador exclusivo dessas configurações. Somente leitura.|
 |templateId|string| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura.|
-|values|[](settingvalue.md) coleção SettingValue| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo.|
+|values|coleção [SettingValue](settingvalue.md)| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

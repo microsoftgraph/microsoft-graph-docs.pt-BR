@@ -6,14 +6,16 @@ title: CreateAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e47a57e392ef629730a9de68c973d54b2ab5c2fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 349a46b4fc4b13fd597f120fdc4ca4d6641e932e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973178"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507363"
 ---
 # <a name="createaction-resource-type"></a>Tipo de recurso CreateAction
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6c1bae369b71744e69753b9e7b38e5b193db00a7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9ffbc319700fd871bd3f27af9eaaaf85cdaf1ffa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870334"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507293"
 ---
 # <a name="datetimetimezone-resource-type"></a>tipo de recurso dateTimeTimeZone
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ Descreve a data, a hora e o fuso horário de um ponto no tempo.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|dateTime|Cadeia de caracteres|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`). Por exemplo, "2019-04-16T09:00:00".|
+|dateTime|String|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`). Por exemplo, "2019-04-16T09:00:00".|
 |timeZone|Cadeia de caracteres|Representa um fuso horário, por exemplo, "Hora Padrão do Pacífico". Confira abaixo os valores possíveis.|
 
 Em geral, a propriedade**timeZone** _pode_ ser definida como qualquer um dos [fusos horários com suporte no Windows](/windows-hardware/manufacture/desktop/default-time-zones), bem como [os fusos horários adicionais com suporte da API do calendário](#additional-time-zones).

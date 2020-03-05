@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dd8e67cbf4ba8994e03d683665928f9e62608d8e
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 24af9e9be6dc9b63934a02193958e0267dde8dea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521009"
 ---
 # <a name="rubriclevel-resource-type"></a>tipo de recurso rubricLevel
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

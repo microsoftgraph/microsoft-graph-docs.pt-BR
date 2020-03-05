@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 923567d8581f7c4497cbe45c125c529660b9d4b6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e1332d169054300645922c4f5a70f313a67760b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964785"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520146"
 ---
 # <a name="objectmapping-resource-type"></a>tipo de recurso objectmapping
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +30,8 @@ Os mapeamentos de objetos são a parte principal da [regra de sincronização](s
 |enabled        |Boolean    |Quando `true`, esse mapeamento de objeto será processado durante a sincronização. Quando `false`, esse mapeamento de objeto será ignorado.|
 |flowTypes      |objectFlowTypes    |Quais tipos de fluxo estão habilitados para este mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes e `Delete` desprovisiona usuários existentes. O padrão é `Add, Update, Delete`. |
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
-|name           |String     |Nome amigável do mapeamento do objeto.|
-|scope          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA.|
+|nome           |String     |Nome amigável do mapeamento do objeto.|
+|escopo          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA.|
 |sourceObjectName           |String     |Nome do objeto no diretório de origem. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de origem.|
 |targetObjectName           |String     |Nome do objeto no diretório de destino. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de destino.|
 

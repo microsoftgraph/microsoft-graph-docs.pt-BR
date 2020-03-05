@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 88880fbe88c0bd702eefeac5bed9668aac12a356
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 853f7ba95ca4e569efd57bb46024b4258b098d90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455179"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520314"
 ---
 # <a name="statusdetails-resource-type"></a>tipo de recurso statusDetails
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ Descreve o status do evento de provisionamento e os erros associados. Ela é her
 |additionalDetails|String|Detalhes adicionais em caso de erro.|
 |errorCategory|String|Categoriza o código de erro.|
 |errorCode|Cadeia de caracteres|Código de erro exclusivo, caso algum tenha ocorrido.|
-|motivos|String|Resume o status e descreve por que o status ocorreu.|
+|motivo|String|Resume o status e descreve por que o status ocorreu.|
 |recomendado|String|Fornece a resolução para o erro correspondente.|
 
 ## <a name="json-representation"></a>Representação JSON

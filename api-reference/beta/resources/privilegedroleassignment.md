@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 010dbf110de414e5221873263ffb5bcffe30db48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2781e601b82e33c260ead70c5d87c9e36c495569
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008877"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521506"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>tipo de recurso privilegedRoleAssignment
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,11 +37,11 @@ Representa uma atribuição de função privilegiada para um usuário específic
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|A data e hora UTC em que a atribuição de função privilegiada temporária será expirada. Para atribuição de função permanente, o valor é NULL.|
-|id|string| O identificador exclusivo da atribuição de função privilegiada. Somente leitura. Ele está no formato de ' userId_roleId ', onde userId é a cadeia de caracteres GUID da ID de usuário do Azure AD e RoleID é a cadeia de caracteres GUID da ID de função do administrador do Azure.|
+|id|string| O identificador exclusivo da atribuição de função privilegiada. Somente leitura. Ele está no formato de ' userId_roleId ', onde userId é a cadeia de caracteres GUID da ID de usuário do Azure AD e RoleID é a cadeia de caracteres GUID da ID da função de administrador do Azure.|
 |iselevados|booliano|**true** se a atribuição de função é ativada. **false** se a atribuição de função é desativada.|
 |resultMessage|string|Mensagem de resultado definida pelo serviço.|
 |roleId|string|Identificador de função. Em formato de cadeia de caracteres GUID.|
-|userId|string|Identificador de usuário. Em formato de cadeia de caracteres GUID.|
+|userId|cadeia de caracteres|Identificador de usuário. Em formato de cadeia de caracteres GUID.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

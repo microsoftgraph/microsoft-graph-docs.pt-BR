@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 21342efd10f5e6f66db795a781eb3f0e333975a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 466b39a52f2bc2b9e20f313f3f80926855f492f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519523"
 ---
 # <a name="useridentity-type"></a>tipo UserIdentity
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +47,7 @@ Nenhum
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter revisores do accessReview](../api/accessreview-listreviewers.md) |       [](useridentity.md) coleção UserIdentity| Obter os revisores de um accessReview. |
+|[Obter revisores do accessReview](../api/accessreview-listreviewers.md) |       coleção [UserIdentity](useridentity.md)| Obter os revisores de um accessReview. |
 |[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) |      Nenhum.   |   Adicionar um revisor a um accessReview. |
 |[Remover revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum.  |   Remover um revisor de um accessReview. |
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3f05273d19eec691d977a8810a5afa0c3fb22d28
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: fd98c3cda25c435c27d912a4c896e7825be94340
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939078"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521373"
 ---
 # <a name="protectadhocaction-resource-type"></a>tipo de recurso protectAdhocAction
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

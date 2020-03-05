@@ -6,14 +6,16 @@ title: CurrencyColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 61a3c968ff48cd3bf59ec3611bc2e50a1a92a797
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 75ef7125c55674b2feb6e617a40313b5bca242bc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973171"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507328"
 ---
 # <a name="currencycolumn-resource-type"></a>Tipo de recurso CurrencyColumn
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

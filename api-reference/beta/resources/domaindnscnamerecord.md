@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a76818c23890a011a4607629b16122a767126178
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b3a957197821bfb010aed5de071ec1e89192828
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012755"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506362"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>tipo de recurso domainDnsCnameRecord
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,10 +29,10 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 |:---------------|:--------|:----------|
 |canônicaname|String| O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS. |
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura|
-|IsOptional|Booliano| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
+|IsOptional|Boolean| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
 |rótulo|String| O valor usado ao configurar o *alias/host/nome* do registro CNAME no host DNS. |
 |recordType|String| Tipo de registro DNS. O valor é sempre *CNAME*. Chave|
-|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro CNAME.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro CNAME.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |TTL|Int32| O valor a ser usado ao configurar a propriedade TTL (time-to-Live) do registro CNAME no host DNS. Não anulável |
 
 ## <a name="relationships"></a>Relações

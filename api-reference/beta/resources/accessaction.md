@@ -6,18 +6,20 @@ title: Accessaction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6ff8489cea29f5ee249266f36b784b3bd246daab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81be9565ad926eb3498228ced9098578168734db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974516"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508573"
 ---
 # <a name="accessaction-resource-type"></a>tipo de recurso accessaction
 
+Namespace: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A presença do recurso **accessaction** em uma myactivity indica que a atividade acessou um item. [****][activity]
+A presença do recurso **accessaction** em uma [**myactivity**][activity] indica que a atividade acessou um item.
 
 >**Observação:** Os registros de atividade do Access atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 

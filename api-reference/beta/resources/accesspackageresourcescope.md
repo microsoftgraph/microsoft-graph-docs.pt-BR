@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1418e2cb21a1023e864d842b760006e05f3afb03
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 242c90e9d0e506dbeb6576975305d0a0f8397f86
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870959"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508496"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>tipo de recurso accessPackageResourceScope
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ Você pode determinar o escopo de recurso do pacote de acesso para um recurso qu
 |description|String|A descrição do escopo.|
 |displayName|Cadeia de caracteres|O nome de exibição do escopo.|
 |id|String| Somente leitura.|
-|isRootScope|Booliano|True se os escopos são organizados em uma hierarquia e este é o escopo superior ou raiz do recurso.|
+|isRootScope|Boolean|True se os escopos são organizados em uma hierarquia e este é o escopo superior ou raiz do recurso.|
 |originid|String|O identificador exclusivo do escopo no recurso, conforme definido no sistema de origem.|
 |originSystem|String|O sistema de origem para o escopo.|
 |roleOriginId|String|O sistema de origem para a função, se for diferente.|

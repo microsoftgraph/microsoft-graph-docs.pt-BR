@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: dfd75ac3cec0b4580bff58555754585274977c2d
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 03625811beec7df8cd679455e9853ea49edf0ed6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507814"
 ---
 # <a name="callactivitystatistics-resource-type"></a>tipo de recurso callActivityStatistics
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

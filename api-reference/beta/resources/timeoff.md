@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 64ef8a07d3190ad2a54e9e3e5c68f3ffb0335acc
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3ff9edf6bf3834faf5d91773b6c94ecbc4158d79
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866522"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519733"
 ---
 # <a name="timeoff-resource-type"></a>tipo de recurso timeOff
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

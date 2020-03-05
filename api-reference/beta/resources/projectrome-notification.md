@@ -5,15 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: 8b1207007e113d42291ac07f1c5220f74e168261
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2b72c55d7159f44fbc368acda9c431ef96be3905
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939345"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521401"
 ---
 # <a name="notification-resource-type"></a>tipo de recurso de notificação
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Namespace: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma notificação publicada por um servidor de aplicativos que se destina a um usuário especificado. A notificação é armazenada no Microsoft Graph e é distribuída para diferentes pontos de extremidade do dispositivo de Propriedade do usuário. 
 

@@ -1,22 +1,24 @@
 ---
 title: tipo de recurso educationPowerPointResource
-description: 'Uma subclasse de educationResource. Este é um recurso do PowerPoint. O arquivo do PowerPoint deve ser carregado no **** diretório fileresource associado ao '
+description: 'Uma subclasse de educationResource. Este é um recurso do PowerPoint. O arquivo do PowerPoint deve ser carregado no diretório **fileresource** associado ao '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 72ab3435ed30602bbd9b2fadf9a6f4d0879e9198
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82bd2a49b95bfb8e880869c753556e9cde868236
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972594"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501294"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>tipo de recurso educationPowerPointResource
 
+Namespace: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma subclasse de [educationResource](educationresource.md). Este é um recurso do PowerPoint. O arquivo do PowerPoint deve ser carregado no **** diretório fileresource associado à atribuição ou ao envio.
+Uma subclasse de [educationResource](educationresource.md). Este é um recurso do PowerPoint. O arquivo do PowerPoint deve ser carregado no diretório **fileresource** associado à atribuição ou ao envio.
 
 
 ## <a name="properties"></a>Propriedades

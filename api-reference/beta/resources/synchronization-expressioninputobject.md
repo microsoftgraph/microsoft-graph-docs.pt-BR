@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 113c38e540b8c41fb3d3156b27f6f5e1f1df42f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 107dd80187f7b00439ec248be513d921bc64888e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007946"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520202"
 ---
 # <a name="expressioninputobject-resource-type"></a>tipo de recurso expressionInputObject
 
+Namespace: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um objeto que será usado como dados de teste de entrada [](../api/synchronization-synchronizationschema-parseexpression.md) quando a ação parsetable executar uma avaliação de expressão.
+Representa um objeto que será usado como dados de teste de entrada quando a ação [parsetable](../api/synchronization-synchronizationschema-parseexpression.md) executar uma avaliação de expressão.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

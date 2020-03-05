@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 644ba7fbd762acde7f5229d15267de5352f03ca8
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 62ce735d5719ef05c5f96de546adcd5518a72786
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268318"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521226"
 ---
 # <a name="recordinginfo-resource-type"></a>tipo de recurso recordingInfo
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Informações de gravação de um participante.
 | Propriedade        | Tipo    | Descrição|
 |:----------------|:--------|:----------|
 | initiatedBy     | [participantInfo](participantinfo.md) | O participante que iniciou a gravação. |
-| recordingStatus | Cadeia de caracteres | Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou. |
+| recordingStatus | String | Os valores possíveis são `unknown`: `notRecording`, `recording`,, `failed`ou. |
 | Iniciador | [identitySet](identitySet.md) | As identidades do iniciador de gravação. |
 
 ## <a name="json-representation"></a>Representação JSON

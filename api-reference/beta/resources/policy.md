@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 4a97caf82a53900ac4ba1e81cebddda114336597
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3dbb37cf1d3dadd62a9a280977769603426e5589
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965807"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521604"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de política
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,14 +33,14 @@ Essa política é descrita em mais detalhes abaixo.
 |[Excluir política](../api/policy-delete.md)|Nenhum|Exclua o objeto Policy.|
 |[Atribuir política](../api/policy-assign.md)|Nenhum|Atribuir uma política a um aplicativo, entidade de serviço.|
 |[Listar políticas](../api/policy-list.md)|Coleção Policy|Obter todos os objetos de política na organização.|
-|[Listar políticas atribuídas](../api/policy-list-assigned.md)|Coleção Policy|Obter todos os objetos de política atribuídos a uma entidade de serviço ou aplicativo.|
+|[List assigned policies](../api/policy-list-assigned.md)|Coleção Policy|Obter todos os objetos de política atribuídos a uma entidade de serviço ou aplicativo.|
 
 ##  <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definir|Coleção de cadeias de caracteres|A versão de cadeia de caracteres da política específica. Confira a seguir. Obrigatório.|
-|displayName|String|Um nome personalizado para a política. Obrigatório.|
-|IsOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|definir|String collection|A versão de cadeia de caracteres da política específica. Confira a seguir. Obrigatório.|
+|displayName|Cadeia de caracteres|Um nome personalizado para a política. Obrigatório.|
+|IsOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 |type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy". Obrigatório.|
 |alternativeIdentifer|String| |
 |keyCredentials| Coleção [keyCredential](keycredential.md)| |
@@ -95,7 +97,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de temp
 
 | Propriedade     | Tipo   |Descrição| Valor mínimo | Valor máximo | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|Controla por quanto tempo **os tokens de acesso e de ID** são considerados válidos.|10 minutos|1 dia|1 hour|
+|AccessTokenLifetime|String|Controla por quanto tempo **os tokens de acesso e de ID** são considerados válidos.|10 minutos|1 dia|1 hora|
 |MaxInactiveTime|String|Controla como o antigo token de atualização pode ser antes que um cliente não possa mais usá-lo para recuperar um novo par de tokens de acesso/atualização para acessar um recurso.|10 minutos|90 dias|14 dias|
 |MaxAgeSingleFactor|String|Controla por quanto tempo um usuário pode continuar a usar tokens de atualização para obter novos pares de tokens de acesso/atualização após a última vez que autenticar com êxito apenas um único fator. Como o fator único é considerado menos seguro do que a autenticação multifator, é recomendável que essa política seja definida como um valor igual ou menor do que o MultiFactorRefreshTokenMaxAge.|10 minutos|até a revogação|365 dias ou até-revogados|
 |MaxAgeMultiFactor|String|Controla por quanto tempo um usuário pode continuar a usar os tokens de atualização para obter novos pares de tokens de acesso/atualização após a última vez em que foram autenticados com vários fatores.|10 minutos|até a revogação|365 dias ou até-revogados|

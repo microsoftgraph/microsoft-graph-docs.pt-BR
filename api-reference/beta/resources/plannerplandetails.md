@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 61296138f1477219e85ae7fd372102b8c7fd3a47
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4ec087de509d66f48c8921252cb1b058e6581741
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965884"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521675"
 ---
 # <a name="plannerplandetails-resource-type"></a>tipo de recurso plannerPlanDetails
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ O recurso **plannerPlanDetails** representa as informações adicionais sobre um
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |Leia as propriedades e os relacionamentos de um objeto **plannerPlanDetails** .|
-|[Atualização](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |Atualizar um objeto **plannerPlanDetails** . |
+|[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |Atualizar um objeto **plannerPlanDetails** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 715685ee485b538d6be3dd45cb87949483324382
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 97375635d86b1be8149035c94d183026a3d49a25
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939394"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508084"
 ---
 # <a name="authenticationdetail-resource-type"></a>tipo de recurso authenticationDetail
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ Fornece os detalhes de autenticação para uma entrada de usuário, como informa
 |authenticationStepDateTime|DateTimeOffset|Representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
 |authenticationStepRequirement|String|A etapa de autenticação atendida. Por exemplo, autenticação primária ou autenticação multifator.|
 |authenticationStepResultDetail|String|Detalhes sobre por que a etapa foi bem-sucedida ou falhou. Por exemplo, o usuário é bloqueado, o código de fraude inserido, nenhuma entrada de telefone-tempo limite, telefone inacessível ou declaração no token.|
-|adicionada|Booliano|Indica o status da etapa de autenticação.|Valores possíveis: `succeeded`, `failed`.|
+|adicionada|Boolean|Indica o status da etapa de autenticação.|Valores possíveis: `succeeded`, `failed`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c7f7c8108ac17e6705b8bf5f69b0e87f0dc96b31
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f93eb5ccf8b3acda9113312f4dbbb9063bdfcef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519271"
 ---
 # <a name="workbookchartseries-resource-type"></a>tipo de recurso workbookChartSeries
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,14 +28,14 @@ Representa uma série de um gráfico.
 |[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](workbookchartseries.md) |Leia as propriedades e os relacionamentos do objeto chartSeries.|
 |[Criar ChartPoint](../api/chartseries-post-points.md) |[chartPoints](workbookchartpoint.md)| Crie um novo chartPoint postando na coleção Points.|
 |[List points](../api/chartseries-list-points.md) |coleção [workbookChartPoints](workbookchartpoint.md)| Obtenha uma coleção de objetos chartPoints.|
-|[Atualização](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md) |Atualize o objeto chartSeries. |
+|[Update](../api/chartseries-update.md) | [workbookChartSeries](workbookchartseries.md) |Atualize o objeto chartSeries. |
 |[List](../api/chartseries-list.md) | coleção [workbookChartSeries](workbookchartseries.md) |Obtenha uma coleção de objetos chartSeries. |
 |[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](workbookchartseries.md)|Recupera uma série com base na respectiva posição na coleção|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Representa o nome de uma série do gráfico.|
+|nome|string|Representa o nome de uma série do gráfico.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

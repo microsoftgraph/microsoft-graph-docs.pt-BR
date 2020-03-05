@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: dfa873daf5b3c5a47e10ab480292ffb11b656b01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1487523d89dc6677f2fc04b62013e7db9602b92
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974291"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508133"
 ---
 # <a name="attendeebase-resource-type"></a>Tipo de recurso attendeeBase
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

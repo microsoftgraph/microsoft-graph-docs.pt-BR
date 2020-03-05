@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 507b74a32a175bfc37405bd66ddef6f5bfa49c9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d279bcfd605df8d53331cc217d7b5fdb76510659
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013462"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508391"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso administrativeUnit
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,8 +54,8 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
-|displayName|string|Nome de exibição para a unidade administrativa.|
-|id|cadeia de caracteres|Identificador exclusivo para a unidade administrativa. Somente leitura.|
+|displayName|cadeia de caracteres|Nome de exibição para a unidade administrativa.|
+|id|string|Identificador exclusivo para a unidade administrativa. Somente leitura.|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como HiddenMembership ou público. Se não for definido, o comportamento padrão é público. Quando definido como HiddenMembership, somente os membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações

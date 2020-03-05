@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4239a12be5fffbf5c579752c3de4998c88749bd3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1881c697eae6b4032635d2e4797a14ef2e848e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012783"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506460"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>tipo de recurso directorySettingTemplate
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,8 +33,8 @@ Modelos de configuração de diretório representam configurações definidas pe
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição do modelo. Somente leitura.|
-|displayName|string|Nome para exibição do modelo. Somente leitura. |
-|id|cadeia de caracteres| Identificador exclusivo do modelo. Somente leitura.|
+|displayName|cadeia de caracteres|Nome para exibição do modelo. Somente leitura. |
+|id|string| Identificador exclusivo do modelo. Somente leitura.|
 |values|coleção [settingTemplateValue](settingtemplatevalue.md)| Coleção de settingTemplateValues que lista o conjunto de configurações disponíveis, padrões e tipos que compõem esse modelo.  Somente leitura. |
 
 ## <a name="relationships"></a>Relações

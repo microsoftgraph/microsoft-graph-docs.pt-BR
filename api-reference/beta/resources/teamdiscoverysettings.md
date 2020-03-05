@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso teamDiscoverySettings
-description: Configurações para configurar a descoberta de equipe por outras pessoas.
+description: Configurações de capacidade de descoberta da equipe por outras pessoas.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6dd1c3728d91be88689f72e020b773f7875807a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a668c9d3b234fede0ad5c151e1dbbc95fc93516
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964568"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519957"
 ---
 # <a name="teamdiscoverysettings-resource-type"></a>tipo de recurso teamDiscoverySettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ Fornece configurações para permitir que outras pessoas configurem a descoberta
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|showInTeamsSearchAndSuggestions|Booliano|Se for definido como true, a equipe ficará visível via pesquisa e sugestões do cliente do teams.|
+|showInTeamsSearchAndSuggestions|Boolean|Se for definido como true, a equipe ficará visível via pesquisa e sugestões do cliente do teams.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dd2b30c8ffa07eab87949bf53eaa98e6d88851c1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 433528d9d663a3dc19cecaa5c2dad68e362dc882
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007939"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520181"
 ---
 # <a name="filtergroup-resource-type"></a>tipo de recurso de filtro
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Define um conjunto de cláusulas que um objeto deve satisfazer para ser consider
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |cláusulas|coleção [filterClause](synchronization-filterclause.md)|Cláusulas de filtro (condições) desse grupo. Todas as cláusulas em um grupo devem ser atendidas para que o grupo de filtros seja `true`avaliado.|
-|name|String|Nome legível do grupo de filtros.|
+|nome|String|Nome legível do grupo de filtros.|
 
 ## <a name="json-representation"></a>Representação JSON
 

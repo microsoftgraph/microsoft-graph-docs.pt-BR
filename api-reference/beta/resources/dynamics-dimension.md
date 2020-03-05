@@ -5,14 +5,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 5bd5382ae020baaf726db53f9252c4d3498833ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ed7c7a389778e651af8d2c11c53277a27e022ce1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504535"
 ---
 # <a name="dimensions-resource-type"></a>Tipo de recurso de dimensões
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa uma dimensão no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -27,7 +32,7 @@ Representa uma dimensão no Dynamics 365 Business central.
 |id                  |GUID                   |A ID exclusiva do item.|
 |código                |Cadeia de caracteres, tamanho máximo 20|O código de dimensão.       |
 |displayName         |string                 |Especifica o nome da dimensão. Esse nome aparecerá onde a dimensão é usada.|
-|lastModifiedDateTime|DateTime               |O último DateTime que a dimensão foi modificada.|  
+|lastModifiedDateTime|datetime               |O último DateTime que a dimensão foi modificada.|  
 
 
 ## <a name="json-representation"></a>Representação JSON

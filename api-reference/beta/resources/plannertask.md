@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9ced498b9bc56d8f21f96ede67d1a9a6501ddb21
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: be85587206d9f340699729190af7edd0392d80d0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677173"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521647"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,7 @@ O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma
 |createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Booliano|Somente leitura. O valor é `true` se o objeto de detalhes da tarefa tem uma descrição não vazia e `false` caso contrário.|
-|id|String|Somente leitura. A ID da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
+|id|Cadeia de caracteres|Somente leitura. A ID da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |prioridade|Int32|Prioridade da tarefa. O intervalo de valores válido é `0` entre `10` e (inclusive), com o valor crescente sendo prioridade`0` mais baixa (tem a `10` maior prioridade e tem a menor prioridade).  Atualmente, o Planner interpreta valores `0` e `1` como "urgente `2` " e `3` `4` como "importante", `5` `6` `7` e como "médio" e `8`, `9`e `10` como "baixo".  Atualmente, o Planner define o `1` valor para "urgente" `3` , para "importante" `5` , para "médio" e `9` para "baixo".|

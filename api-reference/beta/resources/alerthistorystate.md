@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9467da6f5b088e9b1fadd3797a8b10f4b6e820db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3729078eb803cea09a998aee819904876e88c6c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974420"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508342"
 ---
 # <a name="alerthistorystate-resource-type"></a>tipo de recurso alertHistoryState
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ Armazena as alterações feitas nos alertas.
 |comentários|String collection|Comentário inserido pelo usuário conectado.|
 |comentários|String| Comentários de analista sobre o alerta nesta atualização. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|String| Valor do status do alerta (se atualizado). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
-|updatedDateTime|DateTimeOffset| Data e hora da atualização de alerta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|updatedDateTime|DateTimeOffset| Data e hora da atualização de alerta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |user|String| O UPN do usuário conectado que atualizou o alerta (obtido do token de portador-se no modo de autenticação do usuário/delegado). |
 
 ## <a name="json-representation"></a>Representação JSON

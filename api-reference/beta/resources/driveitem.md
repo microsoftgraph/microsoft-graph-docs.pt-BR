@@ -6,14 +6,16 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a056a79b0ed5dc24e2a9a48a79141ba79f8d49c3
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: fb6f3c92972255dc459263da1bb161de22e3f5b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955621"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505564"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -109,10 +111,10 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | conteúdo              | Fluxo             | O fluxo de conteúdo, se o item representar um arquivo.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
-| cTag                 | Cadeia de Caracteres             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
+| cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
 | descrição          | Cadeia de caracteres             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
-| eTag                 | Cadeia de Caracteres             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
+| eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
 | folder               | [folder][]         | Metadados de pasta, se o item for uma pasta. Somente leitura.
@@ -170,7 +172,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
 A remoção das permissões de arquivo de um usuário pode não invalidar a URL imediatamente.
 
->**Observação:** O parâmetro @microsoft. Graph. conflictBehavior deve ser incluído na URL em vez do corpo da solicitação.
+>**Observação:** o parâmetro @microsoft.graph.conflictBehavior deve ser incluído na URL, em vez do corpo da solicitação.
 
 ## <a name="methods"></a>Métodos
 

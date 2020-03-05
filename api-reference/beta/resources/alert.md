@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 559acf5727f34a05fdfa2f3cbad7669c40182622
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 83bd3689ca7dc695ac538a7d87e0d44ce561f9dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013406"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508349"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,17 +36,17 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |activityGroupName|String|Nome ou alias do grupo de atividades (invasor) a que este alerta é atribuído.|
-|assignedTo|String|Nome do analista ao qual o alerta está atribuído para triagem, investigação ou remediação (suporta [atualização](../api/alert-update.md)).|
+|assignedTo|Cadeia de caracteres|Nome do analista ao qual o alerta está atribuído para triagem, investigação ou remediação (suporta [atualização](../api/alert-update.md)).|
 |azureSubscriptionId|String|ID da assinatura do Azure, presente se o alerta estiver relacionado a um recurso do Azure.|
 |azureTenantId |String|Locatário do Azure Active Directory. Obrigatório. |
 |category|String|Categoria de alerta (por exemplo, credentialTheft ransomware, etc.).|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` (suporta[atualização](../api/alert-update.md)).|
 |cloudAppStates|conjunto [cloudAppSecurityState](cloudappsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os aplicativos de nuvem relacionados a esse alerta.|
-|comentários|Coleção de cadeias de caracteres|Comentários fornecidos pelo cliente no alerta (gerenciamento de alerta de cliente) (suporta [atualização](../api/alert-update.md)).|
+|comentários|String collection|Comentários fornecidos pelo cliente no alerta (gerenciamento de alerta de cliente) (suporta [atualização](../api/alert-update.md)).|
 |confidence|Int32|Confiança da lógica de detecção (porcentagem entre 1 e 100).|
 |createdDateTime |DateTimeOffset|Hora em que o alerta foi criado pelo provedor de alerta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
 |description|String|Descrição de alerta.|
-|detectionIds|Coleção de cadeias de caracteres|Conjunto de alertas relacionados a essa entidade de alerta (cada alerta é enviado ao SIEM como um registro separado).|
+|detectionIds|String collection|Conjunto de alertas relacionados a essa entidade de alerta (cada alerta é enviado ao SIEM como um registro separado).|
 |eventDateTime |DateTimeOffset|Tempo no qual o(s) evento(s) que serviu (serviram) como acionador(es) para gerar o alerta ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Obrigatório.|
 |comentários|alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. (suporta [atualização](../api/alert-update.md))|
 |fileStates|[fileSecurityState](filesecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os arquivos relacionados a esse alerta.|

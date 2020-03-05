@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3aff109b152be328e6923f6fdb36f116e63a9c16
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 1bc49a3fbf494e378ec695af1f53c0ca4ea313ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913307"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521618"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

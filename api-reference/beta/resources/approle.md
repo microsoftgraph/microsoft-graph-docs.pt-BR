@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: febf5beb135e907680b8a038b9ca21c86abe9dfe
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 059eeafd16544befe4a51a749fd83f33f18b52bd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939135"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508244"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ Representa uma função de aplicativo que pode ser solicitada por um aplicativo 
 |id|Guid|Identificador de função exclusivo dentro da coleção **appRoles** . Ao criar uma nova função de aplicativo, um novo identificador GUID deve ser fornecido. |
 |isEnabled|Boolean|Ao criar ou atualizar uma função de aplicativo, isso deve ser definido como **true** (que é o padrão). Para excluir uma função, é necessário primeiro defini-la como **false**.  Nesse ponto, em uma chamada subsequente, essa função pode ser removida.|
 |tenham|String| Somente leitura. Especifica se a função de aplicativo é definida no objeto Application ou no objeto servicePrincipalName. _Não_ deve ser incluído em solicitações POST ou patch. |
-|value|Cadeia de caracteres|Especifica o valor que será incluído na `roles` declaração em tokens de autenticação e de acesso. Não deve exceder 120 caracteres de comprimento. Caracteres `:` `!` `#` `$` permitidos são `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `A-Z` como os caracteres nos intervalos `a-z`e. `0-9` `^` `@` `[` `]` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` Qualquer outro caractere, incluindo o caractere de espaço, não é permitido.  |
+|value|Cadeia de caracteres|Especifica o valor que será incluído na `roles` declaração em tokens de autenticação e de acesso. Não deve exceder 120 caracteres de comprimento. Os caracteres permitidos `:` `!` `#` `$` `%` são `&` `'` `(` `)` `0-9` `a-z`, bem como os `A-Z` caracteres nos intervalos e. `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` Qualquer outro caractere, incluindo o caractere de espaço, não é permitido.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

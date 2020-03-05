@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4a284774b76774da0420322f0cd2e092aec6ce83
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 8e06b64bc01be163149468c9090df2a8ea59497d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952283"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520622"
 ---
 # <a name="shiftavailability-resource-type"></a>tipo de recurso shiftAvailability
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

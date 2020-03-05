@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 500c78d0e29d83c68c2b7247a9787b977cc8a7b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1dc4ec7bb3fa30f7dc6362c850893953c4aa6aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973601"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503975"
 ---
 # <a name="generalledgerentries-resource-type"></a>tipo de recurso generalLedgerEntries
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um objeto generalLedgerEntry no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -32,10 +37,10 @@ Representa um objeto generalLedgerEntry no Dynamics 365 Business central.
 |documentType        |string                 |Especifica o tipo de documento da entrada G/L.|
 |accountId           |GUID                   |Especifica a AccountId da entrada G/L.    |
 |accountNumber       |Cadeia de caracteres, tamanho máximo 20|Especifica o accountNumber da entrada G/L.|
-|descrição         |Cadeia de caracteres, tamanho máximo 50|Especifica a descrição da entrada G/L.  |
+|description         |Cadeia de caracteres, tamanho máximo 50|Especifica a descrição da entrada G/L.  |
 |debitAmount         |numéricos                |Especifica o debitAmount da entrada G/L.  |
 |creditAmount        |numéricos                |Especifica o creditAmount da entrada G/L. |
-|lastModifiedDateTime|DateTime               |A última data/hora em que a entrada G/L foi modificada.|
+|lastModifiedDateTime|datetime               |A última data/hora em que a entrada G/L foi modificada.|
 
 
 ## <a name="relationships"></a>Relações

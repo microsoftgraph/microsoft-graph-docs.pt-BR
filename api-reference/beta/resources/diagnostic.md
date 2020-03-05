@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 4ac591640e647a1caa5230bd8e7e8c64ad2314af
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f0d5e6a938c454ca2efeda0dd7628c15269d6311
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973138"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507237"
 ---
 # <a name="diagnostic-resource-type"></a>tipo de recurso de diagnóstico
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

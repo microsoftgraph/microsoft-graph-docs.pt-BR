@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c109c2c28a9c4c9248adfbad4c94c9c50268f28f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 74cc7815d4df22c1914f525ed0451b778c7777d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871743"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508517"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>tipo de recurso accessPackageResourceRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |catalogID|String|A ID exclusiva do catálogo de pacotes do Access.|
 |expirationDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|isValidationOnly|Booliano|Se definido, não adiciona o recurso.|
+|isValidationOnly|Boolean|Se definido, não adiciona o recurso.|
 |elabora|String|A justificativa do solicitante para adicionar o recurso.|
 |RequestState|String| O resultado de se o serviço foi capaz de adicionar o recurso ao catálogo.  O valor é `Delivered` se o recurso foi adicionado. Somente Leitura.|
 |requestStatus|String|Somente leitura.|

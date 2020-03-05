@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 308c64e7eb086f48859581cf2d66aae07269fe6e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d20a6d5c4918f729189e95a27bad18d9f872c8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965954"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521724"
 ---
 # <a name="plannergroup-resource-type"></a>tipo de recurso do The Planner
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ O recurso **Planner** fornece acesso a recursos do Planner para um [grupo](group
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. Identificador do complannerr ****|
+|id|String| Somente leitura. Identificador do **complannerr**|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

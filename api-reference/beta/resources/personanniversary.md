@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 1ad4c5a1792ee0e75a31f165b0a8eebf6f0d2130
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 7dad5536eb78b2d7119ace63eb0f7ce16880e85f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949514"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521922"
 ---
 # <a name="personanniversary-resource-type"></a>tipo de recurso personAnniversary
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

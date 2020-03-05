@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 929fd2569067e67af6770b9281bce1d09cd9eca4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e799d5db1042f743ecc8fe389ed32e808b7fe02
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007372"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519376"
 ---
 # <a name="workbookchartaxis-resource-type"></a>tipo de recurso workbookChartAxis
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

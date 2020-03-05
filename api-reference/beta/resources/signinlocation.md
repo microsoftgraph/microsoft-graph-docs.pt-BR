@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bf0cdec3a2c5feae1b178fc92d02e433d87737a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fbe356cf939236e1965a2a7005d791bc3a814acc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965023"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520580"
 ---
 # <a name="signinlocation-resource-type"></a>tipo de recurso signInLocation
-Fornece a cidade, o estado e o país/região de onde a entrada ocorreu.
+
+Namespace: o Microsoft. Graph fornece a cidade, o estado e o país/região de onde a entrada ocorreu.
 
 
 

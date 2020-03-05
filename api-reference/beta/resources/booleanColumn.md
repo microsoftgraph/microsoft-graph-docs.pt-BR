@@ -6,14 +6,16 @@ title: BooleanColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d218c1b497f457abc1fdebb34a5b94d26de1d0ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b1d5cb1ef019127bc5a850a295a63c874e37691a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013070"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507870"
 ---
 # <a name="booleancolumn-resource-type"></a>Tipo de recurso BooleanColumn
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

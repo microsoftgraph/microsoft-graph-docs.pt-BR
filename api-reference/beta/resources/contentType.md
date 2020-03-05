@@ -6,14 +6,16 @@ title: ContentType
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b7376b431154595f9b3d2de1931918b629e74acb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a051a8bb31cd138d351321255e77b7fb1517fe3e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012860"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507447"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ Aqui está uma representação JSON de um recurso **contentType**.
 | **description**   | string               | O texto descritivo do item.
 | **group**         | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.
 | **hidden**        | booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.
-| **id**            | string               | O identificador exclusivo do tipo de conteúdo.
+| **id**            | cadeia de caracteres               | O identificador exclusivo do tipo de conteúdo.
 | **inheritedFrom** | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.
 | **name**          | string               | O nome do tipo de conteúdo.
 | **order**         | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ed87787ca8016f1dde7711304a1da1fc977c641b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c072f75095267910d128396c3848b2decca4728c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965709"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521492"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso privilegedRoleSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

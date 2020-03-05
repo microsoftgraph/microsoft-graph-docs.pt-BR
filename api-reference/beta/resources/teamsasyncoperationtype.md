@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: ce67f7561609ac4a2724f2804aa4462957784b0a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10c283cbf32e1259dac83b4575d1b36bd347ba56
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964456"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519887"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>tipo de enumeração teamsAsyncOperationType
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ Tipos de [teamsAsyncOperation](teamsasyncoperation.md). Os membros serão adicio
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
 |Inválido|,0|Valor inválido.|
-|cloneTeam|1|Operação para clonar uma equipe.|
-|archiveTeam|duas|Operação para arquivar uma equipe.|
-|unarchiveTeam|3D|Operação para restaurar uma equipe arquivada.|
-|createteam|3D|Operação para criar uma equipe a partir do zero.|
+|cloneTeam|1 |Operação para clonar uma equipe.|
+|archiveTeam|2 |Operação para arquivar uma equipe.|
+|unarchiveTeam|3 |Operação para restaurar uma equipe arquivada.|
+|createteam|3 |Operação para criar uma equipe a partir do zero.|
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: bb92f3bfc91e8fa418d6a33ad6a77a5fddbf9f10
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cd71091293041d84f0f2c1d5436999fa5793037b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35519207"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519530"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>tipo de recurso userCredentialUsageDetails
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +35,7 @@ Representa o uso de redefinição de senha de autoatendimento para um determinad
 | failureReason | Cadeia de caracteres | Fornece o motivo da falha para o fluxo de trabalho de redefinição ou registro correspondente. |
 | apresentam | string | Os valores possíveis são `registration` : `reset`e. |
 | id | String | Somente leitura. O identificador exclusivo da atividade. Somente leitura.|
-| IsSuccess | Booliano | Indica êxito ou falha do fluxo de trabalho. |
+| IsSuccess | Boolean | Indica êxito ou falha do fluxo de trabalho. |
 | userDisplayName | String | Nome de usuário do usuário que está executando o fluxo de trabalho de redefinição ou registro. |
 | userPrincipalName | String | Nome principal do usuário que está executando o fluxo de trabalho de redefinição ou registro. |
 

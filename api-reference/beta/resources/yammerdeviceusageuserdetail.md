@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 083ace4b10b24e8e5de5d287ddf418d93658c879
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 982ebfc0de39bd956a4223e7bb0665ac73c42402
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006973"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518998"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>tipo de recurso yammerDeviceUsageUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -20,16 +22,16 @@ ms.locfileid: "36006973"
 | :---------------- | :------ |
 | reportRefreshDate | Data    |
 | userPrincipalName | String  |
-| displayName       | String  |
+| displayName       | Cadeia de caracteres  |
 | userState         | String  |
 | stateChangeDate   | Data    |
 | lastActivityDate  | Data    |
-| usedWeb           | Booliano |
-| usedWindowsPhone  | Booliano |
-| usedAndroidPhone  | Booliano |
-| usediPhone        | Booliano |
-| usediPad          | Booliano |
-| usedOthers        | Booliano |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
+| usedOthers        | Boolean |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Representação JSON

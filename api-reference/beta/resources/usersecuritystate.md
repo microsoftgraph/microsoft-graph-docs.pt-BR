@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3c0f9cb91484f23702329a38de26189176dacb13
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 67e5c7d2feb76346d754f582e34b5afe39af3d32
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964224"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519509"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso usersecuritystate
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ Contém informações monitoradoras sobre a conta de usuário.
 |accountName|String|Nome da conta da conta de usuário (sem o domínio do Active Directory ou domínio DNS) `mailNickName`-(também chamado).|
 |domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, formato de domínio \ conta).|
 |emailRole|emailRole|Para alertas relacionados a email-a função de email da conta de usuário. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
-|isVpn|Booliano|Indica se o usuário fez logon por meio de uma VPN.|
+|isVpn|Boolean|Indica se o usuário fez logon por meio de uma VPN.|
 |logonDateTime|DateTimeOffset|Hora em que o logon ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |LogonId|String|ID de entrada do usuário.|
 |logonIp|String|Endereço IP para o qual a solicitação de entrada originou.|

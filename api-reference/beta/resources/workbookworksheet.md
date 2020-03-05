@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 93386edf60e30069068ceb2fa437fb128b239302
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edb6e13c975c0dc65c19604aef7256d63a409141
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963854"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519103"
 ---
 # <a name="workbookworksheet-resource-type"></a>tipo de recurso workbookWorksheet
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 |[Nomes da lista](../api/worksheet-list-names.md) |coleção [workbookNamedItem](workbooknameditem.md)| Faça com que a coleção de itens nomeados seja associada à planilha.|
 |[Listar gráficos](../api/worksheet-list-charts.md) |coleção [workbookChart](workbookchart.md)| Obtenha a coleção de objetos Chart.|
 |[Create Table](../api/worksheet-post-tables.md) |[workbooktable](workbooktable.md)| Crie uma nova Table postando na coleção de tabelas.|
-|[List tables](../api/worksheet-list-tables.md) |[](workbooktable.md) coleção workbooktable| Obtenha uma coleção de objetos Table.|
+|[List tables](../api/worksheet-list-tables.md) |coleção [workbooktable](workbooktable.md)| Obtenha uma coleção de objetos Table.|
 |[Atualização](../api/worksheet-update.md) | [workbookWorksheet](workbookworksheet.md)   |Atualize o objeto Worksheet. |
 |[Cell](../api/worksheet-cell.md)|[workbookRange](workbookrange.md)|Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha.|
 |[Range](../api/worksheet-range.md)|[workbookRange](workbookrange.md)|Obtém o objeto de intervalo especificado pelo nome ou endereço.|
@@ -53,7 +55,7 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 |names|coleção [workbookNamedItem](workbooknameditem.md)|Retorna a coleção de nomes associados à planilha. Somente leitura.|
 |pivotTables|Coleção [workbookPivotTable](workbookpivottable.md)| Coleção de Tabelas Dinâmicas que fazem parte da planilha. |
 |proteção|[workbookWorksheetProtection](workbookworksheetprotection.md)|Retorna o objeto de proteção da planilha para uma planilha. Somente leitura.|
-|tables|[](workbooktable.md) coleção workbooktable|Coleção de tabelas que fazem parte da planilha. Somente leitura.|
+|tables|coleção [workbooktable](workbooktable.md)|Coleção de tabelas que fazem parte da planilha. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

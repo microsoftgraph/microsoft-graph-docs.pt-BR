@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 7cfc723a4370c2b30440dcd4e33b50ed066ac89b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 041de72a3372fd80063b96ba73d10272247c4fdb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006589"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503744"
 ---
 # <a name="journal-resource-type"></a>tipo de recurso diário
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um diário no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa um diário no Dynamics 365 Business central.
 |[Obter diário](../api/dynamics-journal-get.md)      |diário    |Obtém um diário.   |
 |[Diário de lançamentos](../api/dynamics-create-journal.md)  |diário    |Cria um diário.|
 |[Diário de patches](../api/dynamics-journal-update.md) |diário    |Atualiza um diário.|
-|[Excluir diário](../api/dynamics-journal-delete.md)|none       |Exclui um diário.|
+|[Excluir diário](../api/dynamics-journal-delete.md)|nenhuma       |Exclui um diário.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo                  |Descrição                                           |
@@ -32,7 +37,7 @@ Representa um diário no Dynamics 365 Business central.
 |id                  |GUID                   |A ID exclusiva do diário. Não editável.           |
 |código                |Cadeia de caracteres, tamanho máximo 10| O código do diário.                             |
 |displayName         |Cadeia de caracteres, tamanho máximo 50| O nome de exibição do diário.                     |
-|lastModifiedDateTime|DateTime               |O último DateTime que o diário foi modificado. Somente Leitura.|
+|lastModifiedDateTime|datetime               |O último DateTime que o diário foi modificado. Somente Leitura.|
 
 ## <a name="bound-actions"></a>Ações associadas
 O tipo de recurso diário oferece uma ação associada `post` chamada que envia o lote de diário geral correspondente.

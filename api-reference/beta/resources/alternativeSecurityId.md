@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 32930b1e6dc5c4f58232d307dd67780d9b3981e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e3dfae11009000fa89eccb7c0263867fe2a1562
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974329"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508328"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
+
+Namespace: Microsoft. Graph
 
 Apenas para uso interno. Esse tipo complexo será preterido no futuro.
 
@@ -36,4 +38,4 @@ Apenas para uso interno. Esse tipo complexo será preterido no futuro.
 |:-----------------|:-----------|:---------------------
 | type             | Int32      | Apenas para uso interno
 | identityProvider | string     | Apenas para uso interno
-| chave              | EDM. Binary | Apenas para uso interno
+| chave              | Edm.Binary | Apenas para uso interno

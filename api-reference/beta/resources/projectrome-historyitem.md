@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: d5d71d36a2a88492c51e06670815ceec323790b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd83657c99b4fb2e5ce077549d51d60329ae9d60
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965590"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521415"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso historyItem
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

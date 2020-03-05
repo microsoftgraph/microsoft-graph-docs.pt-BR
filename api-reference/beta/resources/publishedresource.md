@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54a2b1b610f30ec3ce7d9853916aad345142cbf0
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 7b6f81f9e3a6b399f7e029e21330fe83b533af87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841357"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521289"
 ---
 # <a name="publishedresource-resource-type"></a>tipo de recurso publishedResource
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ Representa o recurso publicado no local. Um administrador de locatários pode pu
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String| Nome para exibição do publishedResource.|
+|displayName|Cadeia de caracteres| Nome para exibição do publishedResource.|
 |id|String| A ID de objeto do publishedResource. Somente leitura.|
 |publishingtype|string| Os valores possíveis são: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 |resourceName|Cadeia de caracteres|Nome do publishedResource.|

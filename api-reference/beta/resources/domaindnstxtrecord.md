@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 30324c84bdfdc9fdb1ce7e6fd2379d5a60235d72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5555fa6f02e0639f1e126112918c39168b445945
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012727"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505844"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>tipo de recurso domainDnsTxtRecord
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,10 +27,10 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura. |
-|IsOptional|Booliano| Se for falso, o registro TXT deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|IsOptional|Boolean| Se for falso, o registro TXT deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor a ser usado ao configurar a propriedade *Name* do registro txt no host DNS.|
 |recordType|String| Tipo de registro DNS. O valor é sempre *txt*. Chave |
-|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro TXT.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro TXT.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |texto|String| O valor usado ao configurar a propriedade *Text* no host DNS. |
 |TTL|Int32| O valor a ser usado ao configurar a propriedade *TTL (time-to-Live)* do registro MX no host DNS. Não anulável |
 

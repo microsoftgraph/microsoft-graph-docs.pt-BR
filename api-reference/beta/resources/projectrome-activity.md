@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: d3be4631db4f1ed5a50a5844475835c1add5d649
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 79a728699a28cff6e5dfc7ac3174c55d9dd12a52
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965604"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521422"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso atividade
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

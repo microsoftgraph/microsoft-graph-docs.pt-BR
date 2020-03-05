@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: e6097915005c96291f93543866ad9e28ff781f82
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba7b481f4b20033e1a4ffcd42ac92421bc3536a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963868"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519117"
 ---
 # <a name="workbooktablerow-resource-type"></a>tipo de recurso workbookTableRow
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

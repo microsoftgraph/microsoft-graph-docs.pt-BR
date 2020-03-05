@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e63fa37dacea7fee6d4378a2a6040a5cf71f3790
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 67baa3f5a57e968b53ae3f51a6c49b3743be25a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553933"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500937"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,20 +42,20 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 
 | Propriedade            | Tipo                                  | Descrição                                        |
 | :------------------ | :------------------------------------ | :------------------------------------------------- |
-| id                  | Cadeia de caracteres                                | GUID desta escola.                               |
+| id                  | String                                | GUID desta escola.                               |
 | address             | [physicalAddress](physicaladdress.md) | Endereço da escola.                             |
 | createdBy           | [identitySet](identityset.md)         | Entidade que criou a escola.                     |
 | description         | String                                | Descrição da escola.                         |
-| displayName         | String                                | Nome de exibição da escola.                        |
+| displayName         | Cadeia de caracteres                                | Nome de exibição da escola.                        |
 | externalId          | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                    |
-| externalPrincipalId | Cadeia de caracteres                                | ID da entidade de segurança no sistema de sincronização.                 |
+| externalPrincipalId | String                                | ID da entidade de segurança no sistema de sincronização.                 |
 | externalSource      | cadeia de caracteres                                | Somente Leitura. Os valores possíveis são: `sis` ou `manual`. |
-| highestGrade        | Cadeia de caracteres                                | Ensino de nível mais alto.                              |
-| lowestGrade         | Cadeia de caracteres                                | Ensino de nível mais baixo.                               |
+| highestGrade        | String                                | Ensino de nível mais alto.                              |
+| lowestGrade         | String                                | Ensino de nível mais baixo.                               |
 | phone               | Cadeia de caracteres                                | Número de telefone da escola.                            |
-| principalEmail      | Cadeia de caracteres                                | Endereço de email da entidade de segurança.                    |
-| principalName       | Cadeia de caracteres                                | Nome da entidade de segurança.                             |
-| schoolNumber        | Cadeia de caracteres                                | Número da escola.                                     |
+| principalEmail      | String                                | Endereço de email da entidade de segurança.                    |
+| principalName       | String                                | Nome da entidade de segurança.                             |
+| schoolNumber        | String                                | Número da escola.                                     |
 
 ## <a name="relationships"></a>Relações
 

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 4a1c777d51dd1ba706af85f431162cda16b5d25b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd990ea9778ada7d43c9b8192d77cf8af618909b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012601"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504633"
 ---
 # <a name="customerpayments-resource-type"></a>tipo de recurso customerPayments
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um pagamento de cliente no Dynamics 365 Business central. Um pagamento de cliente é inserido como uma linha em um diário de pagamento do cliente.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa um pagamento de cliente no Dynamics 365 Business central. Um pagament
 |[Obter customerPayments](../api/dynamics-customerpayment-get.md)|customerPayments|Obtém um pagamento de cliente.|
 |[Postar customerPayments](../api/dynamics-create-customerpayment.md)|customerPayments|Cria um pagamento de cliente.|
 |[Patch customerPayments](../api/dynamics-customerpayment-update.md)|customerPayments|Atualiza um pagamento de cliente.|
-|[Excluir customerPayments](../api/dynamics-customerpayment-delete.md)|none|Exclui um pagamento de cliente.|
+|[Excluir customerPayments](../api/dynamics-customerpayment-delete.md)|nenhuma|Exclui um pagamento de cliente.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo    |Descrição|
@@ -41,9 +46,9 @@ Representa um pagamento de cliente no Dynamics 365 Business central. Um pagament
 |quantia|dígitos|Especifica o valor total (incluindo o IVA) que o pagamento do cliente consiste.|
 |appliesToInvoiceId|GUID|A identificação exclusiva da fatura à qual o pagamento está relacionado.|
 |appliesToInvoiceNumber|Cadeia de caracteres, tamanho máximo 20|O número da fatura à qual o pagamento está relacionado.|
-|descrição|Cadeia de caracteres, tamanho máximo 50|A descrição do pagamento do cliente, fornecida pelo usuário ou pela autocriação.|
+|description|Cadeia de caracteres, tamanho máximo 50|A descrição do pagamento do cliente, fornecida pelo usuário ou pela autocriação.|
 |comment|Cadeia de caracteres, tamanho máximo 250|Um comentário especificado pelo usuário no pagamento do cliente.|
-|lastModifiedDateTime|DateTime|O último DateTime que o pagamento do cliente foi modificado. Somente leitura.|
+|lastModifiedDateTime|datetime|O último DateTime que o pagamento do cliente foi modificado. Somente leitura.|
 
 
 ## <a name="relationships"></a>Relações

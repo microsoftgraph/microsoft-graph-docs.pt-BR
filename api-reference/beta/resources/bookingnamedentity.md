@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 7eba40effa1ef5107a97e2acd075dad0c5e350f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c219d0ab879c1bc1ae172d08322647b2c261497
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013098"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507986"
 ---
 # <a name="bookingnamedentity-resource-type"></a>tipo de recurso bookingNamedEntity
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -21,7 +23,7 @@ Este é um tipo base para entidades de livros da Microsoft que fornecem um nome 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Um nome para a entidade derivada, que faz interface com clientes.|
+|displayName|Cadeia de caracteres|Um nome para a entidade derivada, que faz interface com clientes.|
 |id|String| A ID da entidade derivada. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

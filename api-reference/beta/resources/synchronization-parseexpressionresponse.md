@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a2c2bc0291eca7c04f246c6f62424b0bab10dced
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c752d5c021418dd4a3154a539a61c6ab3bae8a61
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964778"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520132"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>tipo de recurso parseExpressionResponse
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,10 +24,10 @@ Representa a resposta da ação [parsery](../api/synchronization-synchronization
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |erro|publicError|Detalhes do erro, se a avaliação da expressão resultar em um erro.|
-|evaluationResult|Coleção de cadeias de caracteres|Uma coleção de valores produzidos pela avaliação da expressão.|
-|evaluationSucceeded|Booliano|`true`se a avaliação tiver sido bem-sucedida.|
+|evaluationResult|String collection|Uma coleção de valores produzidos pela avaliação da expressão.|
+|evaluationSucceeded|Boolean|`true`se a avaliação tiver sido bem-sucedida.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um objeto [attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisada.|
-|parsingSucceeded|Booliano|`true`se a expressão tiver sido analisada com êxito.|
+|parsingSucceeded|Boolean|`true`se a expressão tiver sido analisada com êxito.|
 
 ## <a name="json-representation"></a>Representação JSON
 

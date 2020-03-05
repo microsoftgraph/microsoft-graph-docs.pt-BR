@@ -5,14 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: fb2dd66e9e18e4951005bcda2b249235e99cd829
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: b724ee1f2dec3821983682f893a15b7b9db25655
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394439"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520279"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,8 +36,8 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
 | [Criar assinatura](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Assina um aplicativo de escuta para receber notificações quando dados do Microsoft Graph são alterados. |
-| [Atualizar assinatura](../api/subscription-update.md) | [assinatura](subscription.md) | Renovar uma assinatura atualizando seu tempo de expiração. |
-| [Listar de assinaturas](../api/subscription-list.md) | [subscription](subscription.md) | Lista assinaturas ativas. |
+| [Atualizar assinatura](../api/subscription-update.md) | [subscription](subscription.md) | Renovar uma assinatura atualizando seu tempo de expiração. |
+| [Listar de assinaturas](../api/subscription-list.md) | [assinatura](subscription.md) | Lista assinaturas ativas. |
 | [Obter assinatura](../api/subscription-get.md) | [subscription](subscription.md) | Leia as propriedades e as relações do objeto Subscription. |
 | [Excluir assinatura](../api/subscription-delete.md) | Nenhuma | Excluir um objeto Subscription. |
 
@@ -45,16 +47,16 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 |:---------|:-----|:------------|
 | changeType | string | Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. Obrigatório. <br><br>Observação: o item raiz da unidade e as notificações de `updated` lista suportam apenas o ChangeType. Notificações de grupos e usuário suportam `updated` e `deleted` changeType. |
 | notificationUrl | cadeia de caracteres | A URL do ponto de extremidade que recebe as notificações. Esta URL deve usar o protocolo HTTPS. Obrigatório. |
-| lifecycleNotificationUrl | cadeia de caracteres | A URL do ponto de extremidade que recebe notificações de ciclo `subscriptionRemoved` de `missed` vida, incluindo e notificações. Se não for fornecido, as notificações serão entregues ao **notificationUrl**. Esta URL deve usar o protocolo HTTPS. Opcional. <br><br>[Leia mais](/graph/webhooks-outlook-authz) sobre como os recursos do Outlook usam notificações de ciclo de vida. |
+| lifecycleNotificationUrl | string | A URL do ponto de extremidade que recebe notificações de ciclo `subscriptionRemoved` de `missed` vida, incluindo e notificações. Se não for fornecido, as notificações serão entregues ao **notificationUrl**. Esta URL deve usar o protocolo HTTPS. Opcional. <br><br>[Leia mais](/graph/webhooks-outlook-authz) sobre como os recursos do Outlook usam notificações de ciclo de vida. |
 | recurso | string | Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/beta/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado. Obrigatório. |
 | expirationDateTime | DateTimeOffset | Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. Obrigatório. |
-| clientState | cadeia de caracteres | Especifica o valor da propriedade **ClientState** enviada pelo serviço em cada notificação. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação veio do serviço, comparando o valor da propriedade **ClientState** enviada com a assinatura com o valor da propriedade **ClientState** recebida com cada notificação. Opcional. |
-| id | cadeia de caracteres | Identificador exclusivo da assinatura. Somente leitura. |
-| ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
+| clientState | string | Especifica o valor da propriedade **ClientState** enviada pelo serviço em cada notificação. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação veio do serviço, comparando o valor da propriedade **ClientState** enviada com a assinatura com o valor da propriedade **ClientState** recebida com cada notificação. Opcional. |
+| id | string | Identificador exclusivo da assinatura. Somente leitura. |
+| ApplicationId | string | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
 | creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, este campo conterá a ID do usuário conectado o aplicativo chamado em nome de. Se o aplicativo usava permissões de aplicativo, este campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. |
 | includeResourceData | Boolean | Quando definido como `true`, as notificações de alteração [incluem dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de chat). Opcional. | 
-| encryptionCertificate | cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar dados de recurso em notificações. Opcional. Obrigatório quando **includeResourceData** é true. | 
-| encryptionCertificateId | cadeia de caracteres | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar dados de recurso. Opcional. Obrigatório quando **includeResourceData** é true. |
+| encryptionCertificate | string | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar dados de recurso em notificações. Opcional. Obrigatório quando **includeResourceData** é true. | 
+| encryptionCertificateId | string | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar dados de recurso. Opcional. Obrigatório quando **includeResourceData** é true. |
 | latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso

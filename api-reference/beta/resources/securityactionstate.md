@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: e3efd29e156b6e0346574c74fad2a30a39ec7131
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 42037a6b65deb4bd3fc31d63c5cd47bee21b7eb7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008506"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520812"
 ---
 # <a name="securityactionstate-resource-type"></a>tipo de recurso securityActionState
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Representa o histórico das alterações de estado SecurityAction.
 |:-------------|:------------|:------------|
 |appId|String|A ID de aplicativo do aplicativo de chamada que enviou uma atualização (PATCH) à ação. O `appId` deve ser extraído do token de autenticação e não inserido manualmente pelo aplicativo de chamada.|
 |status|String| Status do SecurityAction nesta atualização. Os valores possíveis são: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|updatedDateTime|DateTimeOffset| Carimbo de data/hora em que ActionState foi atualizado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|updatedDateTime|DateTimeOffset| Carimbo de data/hora em que ActionState foi atualizado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |user|String|O nome principal de usuário do usuário conectado que enviou uma atualização (PATCH) à ação. O `user` deve ser extraído do token de autenticação e não inserido manualmente pelo aplicativo de chamada.|
 
 ## <a name="json-representation"></a>Representação JSON

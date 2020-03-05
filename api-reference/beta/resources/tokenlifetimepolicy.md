@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6a19ec9e2b8747737895bed89b1a92ec4c5d134a
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 2db679b651d1140940b0ce532b858606c4d13f63
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234116"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519670"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tipo de recurso tokenLifetimePolicy
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,8 +31,8 @@ Herda de [stsPolicy](stsPolicy.md).
 | [Criar tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Criar um objeto tokenLifetimePolicy. |
 | [Obter tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Ler propriedades e relações de um objeto tokenLifetimePolicy. |
 | [Listar tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Ler propriedades e relações de objetos tokenLifetimePolicies. |
-| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | Nenhuma | Atualizar um objeto tokenLifetimePolicy. |
-| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Nenhuma | Excluir um objeto tokenLifetimePolicy. |
+| [Atualizar tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | Nenhum | Atualizar um objeto tokenLifetimePolicy. |
+| [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Nenhum | Excluir um objeto tokenLifetimePolicy. |
 | [Listar se aplica](../api/tokenlifetimepolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obtenha a lista de directoryObjects à qual essa política foi aplicada. |
 
 ## <a name="properties"></a>Propriedades
@@ -38,10 +40,10 @@ Herda de [stsPolicy](stsPolicy.md).
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Identificador exclusivo da política. Somente leitura.|
-|definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|definir|String collection| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|String| Descrição da política.|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 
 ### <a name="properties-of-a-token-lifetime-policy-definition"></a>Propriedades de uma definição de política de tempo de vida do token
@@ -62,7 +64,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de temp
 
 | Propriedade     | Tipo   |Descrição| Valor mínimo | Valor máximo | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|Controla por quanto tempo os tokens de acesso e de ID são considerados válidos.|10 minutos|1 dia|1 hour|
+|AccessTokenLifetime|String|Controla por quanto tempo os tokens de acesso e de ID são considerados válidos.|10 minutos|1 dia|1 hora|
 |Versão|Inteiro|Defina o valor 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="relationships"></a>Relações

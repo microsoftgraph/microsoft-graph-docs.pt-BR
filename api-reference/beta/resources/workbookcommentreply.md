@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0a4dfc215eec435c67f1259a85e899db4dfb2b63
-ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
+ms.openlocfilehash: 5d080f283401d9486de53095d3ad25029edbb14b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775899"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519236"
 ---
 # <a name="workbookcommentreply-resource-type"></a>tipo de recurso workbookCommentReply
+
+Namespace: Microsoft. Graph
 
 Representa uma resposta a um comentário do Excel.
 

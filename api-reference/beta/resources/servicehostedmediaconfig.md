@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6a6cc16dec5c1ff5318a4d1b6d46799a4ab071aa
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 16db7e17e48ce8f257d9b6a1bfd296ca06bd0634
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913643"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520791"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso serviceHostedMediaConfig
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ A mídia que está hospedada remotamente. Isso é herdado de [mediaConfig](media
 | Propriedade                    | Tipo                                                        | Descrição                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | coleção [mediaInfo](mediainfo.md)                        | A lista de mídias a buscar previamente.                   |
-| removeFromDefaultAudioGroup | Booliano                                                     | Remover o próprio participante do grupo de áudio padrão. |
+| removeFromDefaultAudioGroup | Boolean                                                     | Remover o próprio participante do grupo de áudio padrão. |
 
 ## <a name="json-representation"></a>Representação JSON
 

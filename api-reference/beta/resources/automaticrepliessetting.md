@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 3a4320a687ca47d89e04d61c659075cea7722e32
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5058f734eb2f477b1a9cdd917d00429a2b551deb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013154"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508063"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Tipo de recurso automaticRepliesSetting
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

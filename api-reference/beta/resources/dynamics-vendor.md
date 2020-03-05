@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 7c0609d96f6d97503faf5c5251d3641979a4f6e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d05b30dbbb5ecb6aa8a1934a5fe2a1b35cbe890b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972849"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502855"
 ---
 # <a name="vendors-resource-type"></a>tipo de recurso fornecedores
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um fornecedor no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa um fornecedor no Dynamics 365 Business central.
 |[Obter fornecedores](../api/dynamics-vendor-get.md)|fornecedor|Obtém um objeto fornecedor.|
 |[Lançar fornecedores](../api/dynamics-create-vendor.md)|fornecedor|Cria um objeto fornecedor.|
 |[Fornecedores de patch](../api/dynamics-vendor-update.md)|fornecedor|Atualiza um objeto fornecedor.|
-|[Excluir fornecedor](../api/dynamics-vendor-delete.md)|none|Exclui um objeto fornecedor.|
+|[Excluir fornecedor](../api/dynamics-vendor-delete.md)|nenhuma|Exclui um objeto fornecedor.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -34,7 +39,7 @@ Representa um fornecedor no Dynamics 365 Business central.
 |displayName|string|O nome de exibição do fornecedor.|
 |address|[Extra. Address](../resources/dynamics-complextypes.md)|O endereço do fornecedor.|
 |phoneNumber|string|O número de telefone do fornecedor.|
-|email|string|O endereço de email do fornecedor.|
+|email|cadeia de caracteres|O endereço de email do fornecedor.|
 |site|string|O endereço do site do fornecedor.|
 |taxRegistrationNumber|string|O número de registro de imposto do fornecedor.|
 |CurrencyID|GUID|A ID do código de moeda padrão do fornecedor.|
@@ -45,7 +50,7 @@ Representa um fornecedor no Dynamics 365 Business central.
 |taxLiable|booliano|Especifica se o fornecedor é responsável por impostos.|
 |bloqueou|string|Especifica quais transações com o fornecedor que não podem ser lançados. Os valores aceitos estão em branco, pagamento ou todos|
 |carga|dígitos|O saldo do fornecedor. Somente Leitura.|
-|lastModifiedDateTime|DateTime|O último DateTime que o fornecedor foi modificado. Somente leitura.|  
+|lastModifiedDateTime|datetime|O último DateTime que o fornecedor foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

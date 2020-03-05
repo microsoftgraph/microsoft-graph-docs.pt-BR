@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 4011dd7f5f363afc4d0017d5b8931cc26e9f20e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cfc15d65e840d7634c5c9134c5fc36a244f73286
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974112"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507884"
 ---
 # <a name="bookingworkhours-resource-type"></a>tipo de recurso bookingWorkHours
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7147378e308faac7ca1fea931a465e1ea54f22ef
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: 2b52b9dbd7b2b76df34ab6c55a46b69718d4a0e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108445"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508559"
 ---
 # <a name="accesspackageassignment-resource-type"></a>tipo de recurso accessPackageAssignment
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,14 +32,14 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atrib
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|String|O identificador do pacote de acesso. Apenas leitura.|
-|assignmentPolicyId|String|O identificador da política de atribuição de pacote do Access. Apenas leitura.|
-|assignmentstate|String|O estado do pacote do Access. Os valores possíveis `Delivered` são `Expired`ou. Apenas leitura.|
+|accessPackageId|String|O identificador do pacote de acesso. Somente leitura.|
+|assignmentPolicyId|String|O identificador da política de atribuição de pacote do Access. Somente leitura.|
+|assignmentstate|String|O estado do pacote do Access. Os valores possíveis `Delivered` são `Expired`ou. Somente leitura.|
 |assignmentStatus|String|Somente leitura.|
-|catalogID|String|O identificador do catálogo que contém o pacote do Access. Apenas leitura.|
+|catalogID|String|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
 |expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|Extended|Booliano|Indica se a atribuição de pacote de acesso é estendida. Apenas leitura.|
+|Extended|Boolean|Indica se a atribuição de pacote de acesso é estendida. Somente leitura.|
 |targetId|String| A ID do assunto com a atribuição. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

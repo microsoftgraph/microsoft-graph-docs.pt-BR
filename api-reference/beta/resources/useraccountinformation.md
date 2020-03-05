@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0bdb0bd3856e8eaf55d19d01a8566a34810051c7
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: cdeb6a676304fe4ec69207f9df6331d0df503b56
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949486"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519551"
 ---
 # <a name="useraccountinformation-resource-type"></a>tipo de recurso userAccountInformation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,9 +33,9 @@ Herda de [Myfacet](itemfacet.md).
 | Propriedade            | Tipo                       | Descrição                                                                                                                              |
 |:--------------------|:---------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
 |ageGroup             |String                      | Mostra o grupo de idade do usuário. Os valores `null`permitidos `minor`, `notAdult` e `adult` são gerados pelo diretório e não podem ser alterados.|
-|countryCode          |Cadeia de caracteres|                     | Contém o código de país de dois caracteres associado à conta de usuários.                                                                |
+|countryCode          |String|                     | Contém o código de país de dois caracteres associado à conta de usuários.                                                                |
 |preferredLanguageTag |[localeInfo](localeinfo.md) | Contém o idioma que o usuário associou como preferencial para a conta.                                                              |
-|userPrincipalName    |Cadeia de caracteres                      | O nome principal do usuário (UPN) do usuário associado à conta.                                                                   |
+|userPrincipalName    |String                      | O nome principal do usuário (UPN) do usuário associado à conta.                                                                   |
 
 ## <a name="relationships"></a>Relações
 

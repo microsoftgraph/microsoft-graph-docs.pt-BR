@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0567ca9347b560b14ae96da4914a8801f9183019
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8f862972b1c061d2c95267af19b26da300978288
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870971"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508524"
 ---
 # <a name="accesspackageresource-resource-type"></a>tipo de recurso accessPackageResource
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,10 +32,10 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), um recurs
 |:-------------|:------------|:------------|
 |addedBy|String|Somente leitura.|
 |adicionado|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|descrição|String|Uma descrição do recurso.|
+|description|String|Uma descrição do recurso.|
 |displayName|Cadeia de caracteres|O nome de exibição do recurso, como o nome do aplicativo, o nome do grupo ou o nome do site.|
 |id|String| Somente leitura.|
-|isPendingOnboarding|Booliano|True se o recurso ainda não está disponível para atribuição.|
+|isPendingOnboarding|Boolean|True se o recurso ainda não está disponível para atribuição.|
 |originid|String|O identificador exclusivo do recurso no sistema de origem. No caso de um grupo do Azure AD, esse é o identificador do grupo. |
 |originSystem|String|O tipo do recurso no sistema de origem, como `SharePointOnline` ou. `AadGroup`|
 |resourceType|String|O tipo do recurso, como `Application` se é um aplicativo conectado ao Azure ad ou `SharePoint Online Site` um site do SharePoint Online.|

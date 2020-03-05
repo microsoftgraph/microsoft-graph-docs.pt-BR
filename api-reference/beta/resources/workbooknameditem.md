@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ''
-ms.openlocfilehash: 90c816bde49cf7062bf2b04deebd8ce6a7e08669
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17b9e7a04a2524febcb949829b626bc6efe6b779
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007113"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519208"
 ---
 # <a name="workbooknameditem-resource-type"></a>tipo de recurso workbookNamedItem
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,10 +35,10 @@ Representa um nome definido para um intervalo de células ou um valor. Os nomes 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|O nome do objeto. Somente leitura.|
-|comment|cadeia de caracteres|Representa o comentário associado a esse nome.|
+|nome|string|O nome do objeto. Somente leitura.|
+|comment|string|Representa o comentário associado a esse nome.|
 |scope|string|Indica se o nome tem escopo para a pasta de trabalho ou uma planilha específica. Somente leitura.|
-|type|string|Indica o tipo de referência associado ao nome. Os valores possíveis são: `String`, `Integer`, `Double`, `Boolean` e `Range`. Somente leitura.|
+|type|cadeia de caracteres|Indica o tipo de referência associado ao nome. Os valores possíveis são: `String`, `Integer`, `Double`, `Boolean` e `Range`. Somente leitura.|
 |value|string|Representa a fórmula à qual o nome está definido para fazer referência. Por exemplo, =Plan14!$B$2:$H$12, =4,75, etc. Somente leitura.|
 |visible|booliano|Determina se o objeto fica visível ou não.|
 

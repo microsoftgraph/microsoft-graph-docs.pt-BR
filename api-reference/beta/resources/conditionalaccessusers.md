@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7e54c5b018331952776b36a0ab3c07be88c2be7c
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 269fe0552c69773fa62b97cf9803b3e0127f655b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507503"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>tipo de recurso conditionalAccessUsers
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +24,12 @@ Representa usuários, grupos e funções incluídos e excluídos do escopo da po
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeUsers | Coleção de cadeias de caracteres | IDs de usuário em escopo de política, a menos que `None` explicitamente `All` excluído `GuestsOrExternalUsers`ou ou. |
-| excludeUsers | Coleção de cadeias de caracteres | IDs de usuário excluídas do escopo da política e `GuestsOrExternalUsers`/ou. |
-| includeGroups | Coleção de cadeias de caracteres | IDs de grupo em escopo de política, a menos que `All`explicitamente excluído ou. |
-| excludeGroups | Coleção de cadeias de caracteres | IDs de grupo excluídas do escopo da política. |
-| includeRoles | Coleção de cadeias de caracteres | IDs de função em escopo de política, a menos que `All`explicitamente excluído ou. |
-| excludeRoles | Coleção de cadeias de caracteres | IDs de função excluídas do escopo da política. |
+| includeUsers | String collection | IDs de usuário em escopo de política, a menos que `None` explicitamente `All` excluído `GuestsOrExternalUsers`ou ou. |
+| excludeUsers | String collection | IDs de usuário excluídas do escopo da política e `GuestsOrExternalUsers`/ou. |
+| includeGroups | String collection | IDs de grupo em escopo de política, a menos que `All`explicitamente excluído ou. |
+| excludeGroups | String collection | IDs de grupo excluídas do escopo da política. |
+| includeRoles | String collection | IDs de função em escopo de política, a menos que `All`explicitamente excluído ou. |
+| excludeRoles | String collection | IDs de função excluídas do escopo da política. |
 
 ## <a name="relationships"></a>Relações
 

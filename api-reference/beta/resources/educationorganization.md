@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a28577dca488cb11bc6c34c7c653e0db1ede3d4e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8652e6841c39442d8b9875ea48c785a0275073ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501483"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso educationOrganization
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Entidade abstrata usada para modelar a semelhança entre diferentes tipos de org
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String| Descrição da organização.|
-|displayName|String| Nome de exibição da organização.|
+|displayName|Cadeia de caracteres| Nome de exibição da organização.|
 |externalSource|cadeia de caracteres| Origem de onde esta organização foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações

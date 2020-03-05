@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: f9589cbb4cb380eececdcc7adf7bd5dd682269f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82d6ead5d41820f827f58d5a9069744e1b2ac49d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012669"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505158"
 ---
 # <a name="agedaccountsreceivable-resource-type"></a>tipo de recurso agedAccountsReceivable
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um objeto agedAccountsReceivable no Dynamics 365 Business central, que está mostrando o envelhecimento de uma conta de cliente.
 
 ## <a name="methods"></a>Métodos
@@ -28,7 +33,7 @@ Representa um objeto agedAccountsReceivable no Dynamics 365 Business central, qu
 |:---------------|:--------|:--------------------------------------------|
 |Box      |GUID     |A ID exclusiva do cliente.                   |
 |customerNumber  |string   |Especifica o número do cliente.                 |
-|name            |string   |Especifica o nome do cliente.                   |
+|nome            |string   |Especifica o nome do cliente.                   |
 |currencyCode    |string   |Especifica a moeda.                      |
 |balanceDue      |numéricos  |Especifica o saldo total do cliente.      |
 |currentAmount   |numéricos  |Especifica o saldo para o período de envelhecimento atual.|

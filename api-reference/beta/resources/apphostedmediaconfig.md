@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1fb8ff772343d11f74834da48ef368b2e2aa93f
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 70bd631631dd5d4fdebe55d379ea61f98fba19a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913769"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508307"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Pilha de mídia hospedada pelo aplicativo.
 | Propriedade                          | Tipo    | Descrição                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
 | blob                              | String  | O blob de configuração de mídia gerado pelo agente de mídia inteligente.    |
-| removeFromDefaultAudioGroup       | Booliano | Remover o áudio do grupo de áudio padrão                       |
+| removeFromDefaultAudioGroup       | Boolean | Remover o áudio do grupo de áudio padrão                       |
 
 ## <a name="json-representation"></a>Representação JSON
 

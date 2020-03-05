@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 6688175224d0578d1b4907b9fa184cd5f459c089
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 915357db8a30ae6298fb76279a46379465fb2b10
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008835"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521296"
 ---
 # <a name="publicerror-resource-type"></a>tipo de recurso publicError
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

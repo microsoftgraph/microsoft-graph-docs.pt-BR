@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 42414f0089cf3e33529796ebbeb53b95bc1d4ef2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60d37ab606668fbe6828293112997980c7e4580c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964016"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519306"
 ---
 # <a name="workbookchartlegend-resource-type"></a>tipo de recurso workbookChartLegend
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

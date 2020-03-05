@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb63903b5a3eb0eeed8683463b9927537180f53
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 6662ab205e390ae72d283d5015aa346c4b6fc2b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950420"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520503"
 ---
 # <a name="skillproficiency-resource-type"></a>tipo de recurso skillProficiency
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

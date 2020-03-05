@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 88cc7870ef8db503dd2d0fd5f5de93ddf51bdac4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 921fa2068d152652b41f36b8893859df7696b5a8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965758"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521520"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>tipo de recurso privilegedOperationEvent
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,12 +36,12 @@ Representa um evento de auditoria que é gerado pelo gerenciamento de identidade
 |id|string|O identificador exclusivo para o privilegedOperationEvent. Somente leitura.|
 |referenceKey|string|Número do tíquete de solicitação/incidente durante a ativação de função. O valor é apresentado somente se o número do tíquete for fornecido durante a ativação de função.|
 |referenceSystem|string|Sistema de tíquetes de solicitações/incidentes fornecido durante a ativação do Tole. O valor é apresentado somente se o sistema de tíquete for fornecido durante a ativação de função.|
-|RequestType|string|O tipo de operação de solicitação. O valor de RequestType pode ```Assign``` ser: (atribuição de ```Activate``` função), (ativação ```Unassign``` de função), (atribuição ```Deactivate``` de função remover), ( ```ScanAlersNow``` desativação de função) ```DismissAlert``` , (examinar alertas de segurança ```FixAlertItem``` ), (ignorar alerta de segurança), (corrigir uma segurança problema de alerta) ```AccessReview_Review``` , (revise uma revisão do ```AccessReview_Create``` Access), (criar uma revisão ```AccessReview_Update``` do Access), (atualizar uma revisão ```AccessReview_Delete``` do Access) e (excluir uma revisão do Access).|
+|RequestType|string|O tipo de operação de solicitação. O valor de RequestType pode ```Assign``` ser: (atribuição de ```Activate``` função), (ativação ```Unassign``` de função), (atribuição ```Deactivate``` de função remover), ( ```ScanAlersNow``` desativação de função) ```DismissAlert``` , (examinar alertas de segurança ```FixAlertItem``` ), (ignorar o alerta de segurança ```AccessReview_Review``` ), (corrigir um problema de ```AccessReview_Create``` alerta de segurança), (revisar uma ```AccessReview_Update``` ```AccessReview_Delete``` revisão de acesso)|
 |requestorId|string|A ID de usuário do solicitante que inicia a operação.|
 |requestorName|string|O nome de usuário do solicitante que inicia a operação.|
 |roleId|string|A ID da função associada à operação.|
 |roleName|string|O nome da função.|
-|tenantId|string|A ID do locatário (organização).|
+|tenantId|cadeia de caracteres|A ID do locatário (organização).|
 |userId|string|A ID do usuário associada à operação.|
 |usermail|string|O email do usuário.|
 |userName|string|O nome de exibição do usuário.|

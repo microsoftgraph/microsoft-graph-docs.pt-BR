@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso directoryObjectPartnerReference
-description: Representa uma referência a um objeto Directory em um locatário do parceiro. Herda de directoryObject.
+description: Representa uma referência a um objeto Directory em um locatário do parceiro. Herda do directoryObject.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54a6d742e31dba6861bed55d26179e1936fa8c5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3158e081586cbcb822d385cbb357b017ac7239ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973815"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507020"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ Representa uma referência a um objeto Directory em uma organização parceira. 
 |description|String| Descrição do objeto retornado. Somente leitura. |
 |displayName|Cadeia de caracteres| Nome do objeto de diretório que está sendo retornado, como o grupo ou o aplicativo. Somente leitura. |
 |externalPartnerTenantId|Guid| O identificador de locatário para o locatário do parceiro. Somente leitura. |
-|id|Cadeia de caracteres| O identificador exclusivo do recurso. Herdado de [directoryObject](directoryobject.md). Somente leitura. |
+|id|String| O identificador exclusivo do recurso. Herdado de [directoryObject](directoryobject.md). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário do parceiro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON

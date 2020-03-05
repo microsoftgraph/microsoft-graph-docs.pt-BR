@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1658114615c4532f0a7f9b9f5ad3c3a25deff81b
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 4275730cfd7c9c9c58496b674062ffedb5d7a6cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349317"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521324"
 ---
 # <a name="provisioningstep-resource-type"></a>tipo de recurso provisioningStep
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Descreve as etapas executadas para executar uma ação.
 |:-------------|:------------|:------------|
 |description|String|Resumo do que ocorreu durante a etapa.|
 |detalhes|[detailsInfo](detailsinfo.md)|Detalhes sobre o que ocorreu durante a etapa.|
-|name|Cadeia de caracteres|Nome da etapa.|
+|nome|Cadeia de caracteres|Nome da etapa.|
 |provisioningStepType|String| Tipo de etapa. Os valores possíveis são: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|String| Status da etapa. Os valores possíveis são: `success`, `failure`, `skipped`, `unknownFutureValue`.|
 

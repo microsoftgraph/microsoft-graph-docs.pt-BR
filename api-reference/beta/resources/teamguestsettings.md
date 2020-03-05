@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2d6e10ccde127e2318ad9c2f3015f5d911574513
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be38d577d52e0086059f9a5627c670fb537941ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964554"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519943"
 ---
 # <a name="teamguestsettings-resource-type"></a>tipo de recurso teamGuestSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,8 +23,8 @@ Configurações para configurar se os convidados podem criar, atualizar ou exclu
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Booliano|Se definido como true, os convidados podem adicionar e atualizar canais.|
-|allowDeleteChannels|Booliano|Se definido como true, os convidados podem excluir canais.|
+|allowCreateUpdateChannels|Boolean|Se definido como true, os convidados podem adicionar e atualizar canais.|
+|allowDeleteChannels|Boolean|Se definido como true, os convidados podem excluir canais.|
 
 ## <a name="json-representation"></a>Representação JSON
 

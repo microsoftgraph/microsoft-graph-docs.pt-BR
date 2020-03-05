@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5bd7443e775a8a9de0dbbc27cf8843331f8f8cb7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c5c3815b2418f414aa552f211bbeed5f643eb0d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519859"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>tipo de recurso teamsDeviceUsageUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -21,14 +23,14 @@ ms.locfileid: "36007622"
 | reportRefreshDate | Data    |
 | userPrincipalName | String  |
 | lastActivityDate  | Data    |
-| isDeleted         | Booliano |
+| isDeleted         | Boolean |
 | deletedDate       | Data    |
-| usedWeb           | Booliano |
-| usedWindowsPhone  | Booliano |
-| usediOS           | Booliano |
-| usedMac           | Booliano |
-| usedAndroidPhone  | Booliano |
-| usedWindows       | Booliano |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usediOS           | Boolean |
+| usedMac           | Boolean |
+| usedAndroidPhone  | Boolean |
+| usedWindows       | Boolean |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Representação JSON

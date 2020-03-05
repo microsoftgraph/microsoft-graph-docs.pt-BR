@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 35997bfcae7f33cc9bf8e62121c5dc2a724c95be
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: beb67d906c5f159f94ab8f64863eb383286489b2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913741"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508098"
 ---
 # <a name="audiosourcelevel-resource-type"></a>tipo de recurso audioSourceLevel
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Configuração de nível para outras fontes.
 
 | Propriedade               | Tipo    | Descrição                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | Booliano | Permite que essa fonte para o pato de outras fontes enquanto ativa. Se for definido como true, o nível de pato precisará ser definido.|
+| duckOthers             | Boolean | Permite que essa fonte para o pato de outras fontes enquanto ativa. Se for definido como true, o nível de pato precisará ser definido.|
 | antes                  | Int64   | O nível de pato da origem se `duckOthers` estiver definido como `true`.                                     |
 | participante            | String  | O fluxo de áudio do participante de origem.                                                                |
 

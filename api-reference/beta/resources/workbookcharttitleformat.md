@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ce00af7877b4602e76c390635478713835da2f2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7235e8b1d9d5867b47c66a462e9c94b86a528dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007134"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519250"
 ---
 # <a name="workbookcharttitleformat-resource-type"></a>tipo de recurso workbookChartTitleFormat
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

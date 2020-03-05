@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 545ed2aed08be31aad09e33d8db7e0bd669bfcb8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a547329bc6f82ec76d0efc44d7a9e1ffb7700389
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008093"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520328"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Tipo de recurso standardTimeZoneOffset
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

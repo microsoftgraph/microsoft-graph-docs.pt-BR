@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d3a7f4e49f50ca4cb26e52d767064cc57b255ce4
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 0de9c384c5f48d832180da48c22ed6595ce3922d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633703"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502274"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,12 +45,12 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 
 | Propriedade       | Tipo                                  | Descrição                                                                             |
 | :------------- | :------------------------------------ | :-------------------------------------------------------------------------------------- |
-| id             | Cadeia de caracteres                                | O identificador exclusivo da aula.                                                        |
+| id             | String                                | O identificador exclusivo da aula.                                                        |
 | classCode      | String                                | Código de aula usada pela escola para identificar a aula.                                    |
 | durante         | [educationCourse](educationcourse.md) | Informações de cursos da turma                                                        |
 | createdBy      | [identitySet]                         | Entidade que criou a aula                                                            |
-| descrição    | String                                | Descrição da aula.                                                               |
-| displayName    | String                                | Nome da aula.                                                                      |
+| description    | String                                | Descrição da aula.                                                               |
+| displayName    | Cadeia de caracteres                                | Nome da aula.                                                                      |
 | externalId     | String                                | ID da aula no sistema de sincronização.                                                |
 | externalName   | Cadeia de caracteres                                | Nome da aula no sistema de sincronização.                                                |
 | externalSource | cadeia de caracteres                                | Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`. |

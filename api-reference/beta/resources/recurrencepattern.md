@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 48fca7295d7305fd915cf40a32c227f1fbf08c5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a363affb9e2a5e1f516497581803bdc1d223bdfc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008737"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521212"
 ---
 # <a name="recurrencepattern-resource-type"></a>Tipo de recurso recurrencePattern
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

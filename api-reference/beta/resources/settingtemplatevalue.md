@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9a49dd291bd9cc7baa31d90ba8e247ac984b1906
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cbd53a704e37b6f0cfa15cc875d5de000627b76c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965184"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520756"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

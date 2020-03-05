@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aa78e466326ac523afabccd1d2dd39c805b06772
-ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
+ms.openlocfilehash: 0ef5ff461f906da6c9480f7f44ba73a870ebfe48
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119802"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508482"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

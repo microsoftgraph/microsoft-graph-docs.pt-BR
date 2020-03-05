@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d8df88699fde1e4d5562db6299cd12665512c03b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a086a5f91ad93497b6aa1d841e5baa7ee7e72f96
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963987"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519201"
 ---
 # <a name="workbookpivottable-resource-type"></a>tipo de recurso workbookPivotTable
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

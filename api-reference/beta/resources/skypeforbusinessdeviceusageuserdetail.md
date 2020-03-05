@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b84cf9c7654354446fb7c6a5005befe3d17a0fa4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 582c3483d4292f634385461508bf579834dfd12e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964911"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520405"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>tipo de recurso skypeForBusinessDeviceUsageUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -21,11 +23,11 @@ ms.locfileid: "35964911"
 | reportRefreshDate | Data    |
 | userPrincipalName | String  |
 | lastActivityDate  | Data    |
-| usedWindows       | Booliano |
-| usedWindowsPhone  | Booliano |
-| usedAndroidPhone  | Booliano |
-| usediPhone        | Booliano |
-| usediPad          | Booliano |
+| usedWindows       | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Representação JSON

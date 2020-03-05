@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 317120eb7c4138d955bf8a35030375180d5a1631
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: fe9d3f469b088611c41e006de128a2c695074657
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638544"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507510"
 ---
 # <a name="conditionalaccesssessioncontrols-resource-type"></a>tipo de recurso conditionalAccessSessionControls
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

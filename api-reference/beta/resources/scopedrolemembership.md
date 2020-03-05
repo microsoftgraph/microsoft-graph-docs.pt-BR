@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2580555bf3d10454aad9052f694ff1a62bf4b9b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5448db2bb73146b3f3e435376ea7b5d708f0474
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965278"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520939"
 ---
 # <a name="scopedrolemembership-resource-type"></a>tipo de recurso scopedRoleMembership
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

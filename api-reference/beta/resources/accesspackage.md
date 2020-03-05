@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a944309d59383b8c1501495c12d937acb13adbbb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: bc08a1b92ccb8404a20cd5013be74d37f7659a5f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870978"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508566"
 ---
 # <a name="accesspackage-resource-type"></a>tipo de recurso accessPackage
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,8 +44,8 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 |description|String|A descrição do pacote do Access.|
 |displayName|Cadeia de caracteres|O nome de exibição do pacote do Access.|
 |id|String| Somente leitura.|
-|isHidden|Booliano|Se o pacote de acesso está oculto do solicitante.|
-|isRoleScopesVisible|Booliano|Indica se os escopos de função estão visíveis.|
+|isHidden|Boolean|Se o pacote de acesso está oculto do solicitante.|
+|isRoleScopesVisible|Boolean|Indica se os escopos de função estão visíveis.|
 |modifiedBy|String|O UPN do usuário que modificou este recurso pela última vez. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 

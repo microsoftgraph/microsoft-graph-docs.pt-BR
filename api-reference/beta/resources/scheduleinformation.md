@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: ''
-ms.openlocfilehash: 3d6ede4e1085a8be3f78b714f690b79b836abbcb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e43bd0fc88cd8b7cdcb793deca8940ccaae9461f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965303"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520974"
 ---
 # <a name="scheduleinformation-resource-type"></a>tipo de recurso scheduleInformation
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c5ece5d1ad1c5c38253d73353b05b94727855fd5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d6c064e7a87b0e9c776a5691f24b48dfff56422
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007568"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519628"
 ---
 # <a name="typedemailaddress-resource-type"></a>tipo de recurso typedEmailAddress
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Representa o nome, os endereços de email e o tipo de endereço de email corresp
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email de um contato.|
-|name|String|O nome de exibição de um contato.|
+|nome|String|O nome de exibição de um contato.|
 |type |String |O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`. O valor padrão é `unknown`, o que significa que o **endereço** não foi definido como um tipo específico. |
 |otherLabel |String  |Para especificar um tipo personalizado de endereço de email, **** defina Type `other`como e atribua **otherLabel** a uma cadeia de caracteres personalizada. Por exemplo, você pode usar um endereço de email específico para suas atividades de voluntários. Defina **** o tipo `other`como e defina **otherLabel** como uma cadeia de caracteres personalizada `Volunteer work`, como. |
 

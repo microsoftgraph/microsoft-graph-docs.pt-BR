@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: a2104052f4c70a988d1154bb08db025e740246fb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3c2251f5a5b4655a73747490f5052661c3b4a6eb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938818"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521107"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>tipo de recurso requiredResourceAccess
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

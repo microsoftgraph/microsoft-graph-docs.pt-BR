@@ -5,14 +5,16 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 80c7ec18094af2cd84671e095515566bfc52a10e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b0682bae37c060b92df96fb6c92979b7ab57c259
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966109"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521915"
 ---
 # <a name="persondatasource-resource-type"></a>tipo de recurso personDataSource
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

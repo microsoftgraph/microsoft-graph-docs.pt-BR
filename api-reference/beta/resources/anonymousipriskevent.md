@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 205659f4ebc301824798cd39506cd73853c167ca
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c1fdfbfde3c1246034c885a1c8b1047408136a13
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870395"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508321"
 ---
 # <a name="anonymousipriskevent-resource-type"></a>tipo de recurso anonymousIpRiskEvent
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

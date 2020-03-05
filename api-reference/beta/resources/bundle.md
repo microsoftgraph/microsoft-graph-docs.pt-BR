@@ -6,14 +6,16 @@ description: Faceta descrevendo um driveItem que é um agrupamento lógico de ou
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f843afa112f95e391761d0c8804600018a67534c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae03674970c8861c7d1c158e62662d9691e74789
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507863"
 ---
 # <a name="bundle-resource-type"></a>tipo de recurso Bundle
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

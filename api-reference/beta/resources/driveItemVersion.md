@@ -6,14 +6,16 @@ title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e3886c27ded6b26082609933d5ac7382dc182b45
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec7abdcb6ae65ebe3333289dca384448a1569988
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973087"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505655"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

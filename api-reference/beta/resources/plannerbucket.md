@@ -5,14 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: eed92a62fed8077d2b7ee541feac7e0fa5c73483
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7843563ac11ccaf2e4bce3254c8c7db55231c4d7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965998"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521787"
 ---
 # <a name="plannerbucket-resource-type"></a>tipo de recurso plannerBucket
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,14 +29,14 @@ O recurso **plannerBucket** representa um Bucket (ou "coluna personalizada") par
 |[Obter plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Leia as propriedades e os relacionamentos do objeto **plannerBucket** .|
 |[Listar plannerTasks](../api/plannerbucket-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
 |[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Criar um novo objeto **plannerBucket** . |
-|[Atualização](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Atualize o objeto **plannerBucket** . |
+|[Update](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Atualize o objeto **plannerBucket** . |
 |[Delete](../api/plannerbucket-delete.md) | Nenhum |Exclua o objeto **plannerBucket** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID do Bucket. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
-|name|Cadeia de caracteres|Nome do Bucket.|
+|nome|Cadeia de caracteres|Nome do bucket.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |planId|String|ID do plano ao qual o Bucket pertence.|
 

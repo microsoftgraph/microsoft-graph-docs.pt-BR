@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 51e72d21cfb0e26e46a7d247f4ede59b112893ea
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: ffe6830088bd60c4de9cea8def8e8202d1b33f13
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450691"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519537"
 ---
 # <a name="useranalytics-resource-type"></a>tipo de recurso useranalytics
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ As configurações do usuário e as estatísticas de atividade.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|settings|[configurações](settings.md)|As configurações atuais de um usuário para usar a API de análise.|
+|configurações|[configurações](settings.md)|As configurações atuais de um usuário para usar a API de análise.|
 
 ## <a name="relationships"></a>Relações
 

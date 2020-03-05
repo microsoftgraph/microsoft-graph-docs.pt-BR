@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0a0cd29ef679d5534dab2ec38d9814fac5a89d29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7b79c81ce473440084b7a2409c0d621888f2286
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964031"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519327"
 ---
 # <a name="workbookchartfont-resource-type"></a>tipo de recurso workbookChartFont
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 |bold|booliano|Representa o status da fonte em negrito.|
 |color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|string|Nome da fonte (por exemplo, "Calibri")|
+|nome|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
 |underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`.|
 

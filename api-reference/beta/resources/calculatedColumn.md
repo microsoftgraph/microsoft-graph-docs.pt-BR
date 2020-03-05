@@ -6,14 +6,16 @@ title: CalculatedColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8492dcf39cbdee92a998a418599fc00b314078c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c9bd8963ed847e60bb5b71abfd100cd372dd1dc5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013056"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507849"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

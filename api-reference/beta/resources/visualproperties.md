@@ -5,14 +5,16 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: f03563549cc1b2f42a274032dab7b310511c70c7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1678f560fa003c1884a9fa673ee85b7473e36c88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939177"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519460"
 ---
 # <a name="visualproperties-resource-type"></a>tipo de recurso visualproperties
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

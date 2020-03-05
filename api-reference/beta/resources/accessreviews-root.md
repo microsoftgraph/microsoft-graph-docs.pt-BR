@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: d19879c2768a7f3647fb18631e278afdc0989b36
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 536293390da403c4c8375d551bda8643f3ffb9dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870411"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508461"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -69,11 +71,11 @@ As funções de diretório a seguir são necessárias para um usuário de chamad
 
 | Recurso de destino | Operation | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|[accessReview](accessreview.md) de uma função do Azure AD | Leitura | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de função privilegiada |
+|[accessReview](accessreview.md) de uma função do Azure AD | Ler | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de função privilegiada |
 |[accessReview](accessreview.md) de uma função do Azure AD | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador global ou administrador de função privilegiada |
-|[accessReview](accessreview.md) de um grupo ou aplicativo | Leitura | AccessReview. Read. All, AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
+|[accessReview](accessreview.md) de um grupo ou aplicativo | Ler | AccessReview. Read. All, AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
 |[accessReview](accessreview.md) de um grupo ou aplicativo | Criar, atualizar ou excluir | AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global ou administrador de usuário |
-| [programas](program.md) e [programControl](programcontrol.md)| Leitura | ProgramControl. Read. All ou ProgramControl. ReadWrite. All |  Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
+| [programas](program.md) e [programControl](programcontrol.md)| Ler | ProgramControl. Read. All ou ProgramControl. ReadWrite. All |  Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
 | [programas](program.md) e [programControl](programcontrol.md) | Criar, atualizar ou excluir | ProgramControl.ReadWrite.All | Administrador global ou administrador de usuário |
 
 Além disso, um usuário que é um revisor atribuído de uma revisão do Access pode gerenciar suas decisões, sem precisar estar em uma função de diretório.

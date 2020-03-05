@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0b10062ed51aae20d6d4268da349b9b429d6c528
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: e35b3fe674c9f92b7dab723325d658facf13962f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913685"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520286"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>Tipo de recurso SubscribeToToneOperation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

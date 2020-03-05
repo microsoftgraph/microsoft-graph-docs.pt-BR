@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 87b75da0489099edb5294df752278311b5bf2a86
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bacf2ed499d420006173af8b3616a14b7c487904
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966052"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521815"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>tipo de recurso plannerAppliedCategories
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6a29d0fe7a40a666c24f70ad5c5a36a65516d259
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: b16fb4093e4724a19483810283a7fd53b1aa25b0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450505"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506726"
 ---
 # <a name="directoryroletemplate-resource-type"></a>tipo de recurso directoryRoleTemplate
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,8 +31,8 @@ Representa um modelo de função de diretório. Um modelo de função de diretó
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String|A descrição definida para a função de diretório. Somente leitura.|
-|displayName|String|O nome de exibição para definir para a função de diretório. Somente leitura. |
-|id|Cadeia de caracteres|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome de exibição para definir para a função de diretório. Somente leitura. |
+|id|String|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

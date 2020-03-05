@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 60181a2289b272809cff025abeee83c594ae833e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0012344d2a641b892ae5e3fa905ce1e0c6282a5a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006427"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502421"
 ---
 # <a name="educationassignmentresource-resource-type"></a>tipo de recurso educationAssignmentResource
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,13 +26,13 @@ Um objeto envoltório que armazena os recursos associados a uma atribuição. O 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Ler propriedades e relações de um objeto **educationAssignmentResource** .|
-|[Atualização](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Atualize um objeto **educationAssignmentResource** . |
+|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Atualize um objeto **educationAssignmentResource** . |
 |[Delete](../api/educationassignmentresource-delete.md) | None |Excluir um objeto **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Booliano|Indica se esse recurso deve ser copiado para cada aluno enviado para modificação e envio.|
+|distributeForStudentWork|Boolean|Indica se esse recurso deve ser copiado para cada aluno enviado para modificação e envio.|
 |id|String| ID desse recurso. Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto de recurso que foi associado a essa atribuição.|
 

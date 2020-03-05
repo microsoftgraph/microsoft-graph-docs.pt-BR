@@ -5,21 +5,23 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c2440dfc7e798ea5b0a197f60b62acce4199b4ca
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 7d7fcf663abf15478b0c2745e9c60e1021d1ee7b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331266"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508545"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>tipo de recurso accessPackageAssignmentRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote do Access. Se a solicitação for bem-sucedida, com todas as aprovações necessárias, o usuário receberá uma atribuição de pacote de acesso e será o assunto dessa atribuição de pacote de acesso resultante.  O Azure AD também cria solicitações de atribuição de pacote de acesso automaticamente para rastrear a remoção do acesso.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -34,7 +36,7 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |completedDate|DateTimeOffset|A data do final do processamento, bem como êxito ou falha, de uma solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |id|String| Somente leitura.|
-|isValidationOnly|Booliano|True se a solicitação não deve ser processada para a atribuição.|
+|isValidationOnly|Boolean|True se a solicitação não deve ser processada para a atribuição.|
 |elabora|String|A justificativa fornecida pelo solicitante.|
 |RequestState|String|Um de `Denied`, `Delivered`, `PartiallyDelivered` `Submitted` ou `Scheduled`. Somente leitura.|
 |requestStatus|String|Mais informações sobre o status do processamento da solicitação. Somente leitura.|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: be1b8a0b1a623c6cf322d5cf7997f04b87875c51
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 9f9b45885219a081bad8d7f34a49f81d8062d212
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437745"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519607"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>tipo de recurso unifiedRoleDefinition
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,8 +35,8 @@ Um unifiedRoleDefinition é uma coleção de permissões que lista as operaçõe
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|String| A descrição para o unifiedRoleDefinition. Somente leitura quando isbuiltem for true. |
-|displayName|String| O nome de exibição do unifiedRoleDefinition. Somente leitura quando isbuiltem for true. Obrigatório.|
-|id|Cadeia de caracteres| O identificador exclusivo para o unifiedRoleDefinition. Chave, não anulável, somente leitura. |
+|displayName|Cadeia de caracteres| O nome de exibição do unifiedRoleDefinition. Somente leitura quando isbuiltem for true. Obrigatório.|
+|id|String| O identificador exclusivo para o unifiedRoleDefinition. Chave, não anulável, somente leitura. |
 |isBuiltIn|Booliano| Sinalizador que indica se o unifiedRoleDefinition é parte do conjunto padrão incluído no produto ou personalizado. Somente leitura. |
 |isEnabled|Boolean| Sinalizador que indica se a função está habilitada para atribuição. Se false, a função não estará disponível para atribuição. Somente leitura quando isbuiltem for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de escopos permissões concedidas pela definição de função aplicam-se ao. No momento, só há suporte para "/". Somente leitura quando isbuiltem for true. |

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 130b1d536c881991a54e5b6fd06aee2f3f59483a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70dd4a277caa005883d205f353bbcfbf63428bcf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012958"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507695"
 ---
 # <a name="chatmessagemention-resource-type"></a>tipo de recurso chatMessageMention
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 58ed332429d7976b75929b433d57bd77536b9e70
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28f3c0adccb853ac8daddca9aaad70a2c0b35e2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013448"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508377"
 ---
 # <a name="agreementacceptance-resource-type"></a>tipo de recurso agreementAcceptance
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

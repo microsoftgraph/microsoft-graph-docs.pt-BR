@@ -6,14 +6,16 @@ title: Jailbreak
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 78a0bd7da9ab0d2f6f0c15a06416ce09ae53219a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 68fedb28859cb2d484f51c3c9e6f8d4cadbc28f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008646"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521023"
 ---
 # <a name="root-resource-type"></a>Tipo de recurso Root
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

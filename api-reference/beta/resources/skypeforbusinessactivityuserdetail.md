@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bd17deab26b061f48f762bf8ffeb5f8289b2a51f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f838d6eefc761849c37cd0646744233cef5a28b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008191"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520426"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>tipo de recurso skypeForBusinessActivityUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -48,10 +50,10 @@ ms.locfileid: "36008191"
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
 | reportRefreshDate                        | Data              |
 | userPrincipalName                        | String            |
-| isDeleted                                | Booliano           |
+| isDeleted                                | Boolean           |
 | deletedDate                              | Data              |
 | lastActivityDate                         | Data              |
-| assignedProducts                         | Coleção de cadeias de caracteres |
+| assignedProducts                         | String collection |
 | reportPeriod                             | String            |
 
 ## <a name="json-representation"></a>Representação JSON

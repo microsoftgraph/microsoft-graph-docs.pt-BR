@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 9de2bfec6bab126577fa0013a58caac83ad031f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ba7eaaed5918635ab6a8744d2b9136475e83ec3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008982"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521583"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +70,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
-|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **DisplayName** de um [outlookCategory](outlookcategory.md) que foi definido para um usuário.|
+|categories|String collection|As categorias associadas à postagem. Cada categoria corresponde à propriedade **DisplayName** de um [outlookCategory](outlookcategory.md) que foi definido para um usuário.|
 |changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|
@@ -76,7 +78,7 @@ Veja a seguir uma representação JSON do recurso
 |from|[recipient](recipient.md)|Usado em cenários de acesso de representante. Indica quem postou a mensagem em nome de outro usuário. Esta é uma propriedade padrão.|
 |hasAttachments|Booliano|Indica se a postagem tem pelo menos um anexo. Esta é uma propriedade padrão.|
 |id|String| Somente leitura.|
-|importance | String | A importância de um grupo post: `low`, `normal`, `high`. |
+|importância | String | A importância de um grupo post: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Especifica quando a postagem foi modificada pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |newParticipants|Coleção [recipient](recipient.md)|Participantes da conversa que foram adicionados ao thread como parte desta postagem.|
 |receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -85,7 +87,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|Coleção [Attachment](attachment.md)|O conjunto de [](fileattachment.md)anexos de fileattachment, hiperattachment e [referenceAttachment](referenceattachment.md) para a postagem. [](itemattachment.md) Somente leitura. Anulável.|
+|attachments|Coleção [Attachment](attachment.md)|O conjunto de anexos de [Fileattachment](fileattachment.md), [hiperattachment](itemattachment.md)e [referenceAttachment](referenceattachment.md) para a postagem. Somente leitura. Anulável.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para a postagem. Somente leitura. Anulável.|
 |inresponderto|[Post](post.md)|A postagem anterior à qual esta postagem está respondendo no [conversationThread](conversationthread.md). Somente leitura.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a postagem. Somente leitura. Anulável.|

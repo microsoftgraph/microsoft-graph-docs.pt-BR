@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b3ee13166a81fad96e577efd6721983714ca17b4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f4f13bf13b34c41c7c15c3356cc67636e6f441c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870058"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519922"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,9 +44,9 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|loja|0| O aplicativo está disponível para todos os locatários na loja de aplicativos do Microsoft Teams.|
-|organização|1|O aplicativo está disponível somente nesse locatário.|
-|sideloaded|2|O aplicativo está disponível apenas para usuário/equipe onde ele está instalado.|
+|loja|,0| O aplicativo está disponível para todos os locatários na loja de aplicativos do Microsoft Teams.|
+|organização|1 |O aplicativo está disponível somente nesse locatário.|
+|sideloaded|2 |O aplicativo está disponível apenas para usuário/equipe onde ele está instalado.|
 
 ## <a name="relationships"></a>Relações
 

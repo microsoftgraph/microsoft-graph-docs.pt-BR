@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ea20a14ddd18e533767e7e969a91a07f6e2ad479
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3deae74f1ffc991e6e9178a46575c21d69272d2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964275"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519677"
 ---
 # <a name="timezoneinformation-resource-type"></a>Tipo de recurso timeZoneInformation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Representa um fuso horário. Entre os formatos de fuso horário válidos estão 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |alias|string|Um identificador para o fuso horário.|
-|displayName|string|Uma sequência de caracteres de exibição que representa o fuso horário.|
+|displayName|cadeia de caracteres|Uma sequência de caracteres de exibição que representa o fuso horário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

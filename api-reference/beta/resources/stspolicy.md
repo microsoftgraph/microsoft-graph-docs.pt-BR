@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f351d994daba00f4465d934fe570b5db2e704ae9
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: b3206908e75e9d36638bc59ee2fdcba7006534ca
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234058"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520300"
 ---
 # <a name="policybase-resource-type"></a>tipo de recurso policyBase
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Herda de [policyBase](policyBase.md).
 
 ## <a name="methods"></a>Métodos
 
-Nenhuma
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 
@@ -31,8 +33,8 @@ Nenhuma
 |id|String| Identificador exclusivo da política. Somente leitura. Herdado de [policyBase](policyBase.md).|
 |description|String| Descrição da política. Herdado de [policyBase](policyBase.md).|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Herdado de [policyBase](policyBase.md).|
-|definir|Coleção de cadeias de caracteres| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|definir|String collection| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
+|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 ## <a name="relationships"></a>Relações
 

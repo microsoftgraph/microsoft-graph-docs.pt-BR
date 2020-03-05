@@ -5,14 +5,16 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c160f9bd20f7dfccfa19dbf4d466dd967fde9c2c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ba29e98150db6ffa9938585540d9b77f8a755cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972758"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502267"
 ---
 # <a name="educationcourse-resource-type"></a>tipo de recurso educationCourse
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ Representa as informações de curso de uma aula. É usada dentro de [educationC
 | Propriedade     | Tipo   | Descrição                               |
 | :----------- | :----- | :---------------------------------------- |
 | courseNumber | String | Identificador exclusivo do curso.         |
-| descrição  | String | Descrição do curso.                |
-| displayName  | String | Nome do curso.                       |
-| externalId   | Cadeia de caracteres | ID do curso do sistema de sincronização. |
-| subject      | Cadeia de caracteres | Assunto do curso.                    |
+| description  | String | Descrição do curso.                |
+| displayName  | Cadeia de caracteres | Nome do curso.                       |
+| externalId   | String | ID do curso do sistema de sincronização. |
+| assunto      | String | Assunto do curso.                    |
 
 ## <a name="json-representation"></a>Representação JSON
 

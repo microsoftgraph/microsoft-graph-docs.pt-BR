@@ -5,14 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: cfa1d87093c7f843dd9a8294a253751726b3d34b
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e23d8a873abb0de5a086350b3748f9e40d7e12ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938720"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521037"
 ---
 # <a name="room-resource-type"></a>tipo de recurso Room
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,7 @@ No Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 | floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
 | id                     | String                                            | Identificador exclusivo da sala. Somente leitura. |
-| isWheelchairAccessible | Booliano                                           | Especifica se a sala pode ser acessada por cadeira. |
+| isWheelchairAccessible | Boolean                                           | Especifica se a sala pode ser acessada por cadeira. |
 | rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
 | apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala. |
@@ -54,7 +56,7 @@ No Exchange Online, cada sala é associada a uma caixa de correio de sala. Deriv
 
 | Valor    | Descrição                                               |
 |:---------|:----------------------------------------------------------|
-| caracteres | A sala pode ser reservada com base nas outras configurações deste cmdlet. O proprietário, o autor e o proprietário do site ainda podem acessar o item. |
+| caracteres | A sala pode ser reservada com base nas outras configurações deste cmdlet. Esse é o valor padrão. |
 | serve | A sala está disponível somente em uma primeira base de chegada. Ele não pode ser reservado.|
 
 ## <a name="relationships"></a>Relações

@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ce1ff84abb6704255267b521c67e5fc7b231b7df
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: 7eb8f39c30343412584e63fa1e8c3382db4fa9c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439931"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521184"
 ---
 # <a name="relatedcontact-resource-type"></a>tipo de recurso relatedContact
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +24,12 @@ Registro de contato relacionado a um [educationUser](../resources/educationuser.
 
 | Propriedade      | Tipo                  | Descrição                                                                                                         |
 | :------------ | :-------------------- | :------------------------------------------------------------------------------------------------------------------ |
-| id            | Cadeia de caracteres                | Identidade do contato no Azure Active Directory.                                                              |
+| id            | String                | Identidade do contato no Azure Active Directory.                                                              |
 | displayName   | Cadeia de caracteres                | Nome do contato. Obrigatório.                                                                                      |
 | emailAddress  | String                | Endereço de email principal do contato.                                                                               |
 | mobilePhone   | String                | Número do telefone celular do contato.                                                                                 |
 | relação  | `contactRelationship` | Relação com o usuário. Os valores possíveis `parent`são `relative`: `aide` `doctor` `guardian`,,, `child`, `other`,. |
-| accessConsent | Booliano               | Indica se o usuário foi remetido para acessar os dados dos alunos.                                               |
+| accessConsent | Boolean               | Indica se o usuário foi remetido para acessar os dados dos alunos.                                               |
 
 ## <a name="json-representation"></a>Representação JSON
 

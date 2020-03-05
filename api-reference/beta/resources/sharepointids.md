@@ -6,14 +6,16 @@ title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c7e18e43bcbe9c73500701577c752e7a30d47194
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e22c653bf2dd88fe75fdb43dd8e9601c2a9d6d4e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965121"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520685"
 ---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ Veja a seguir uma representação JSON do recurso
 | listItemUniqueId | string       | O identificador exclusivo (guid) do item dentro do OneDrive for Business ou de um site do SharePoint.
 | siteId           | string       | O identificador exclusivo (guid) do conjunto de sites do item (SPSite).
 | siteUrl          | string (url) | A URL do SharePoint do site que contém o item.
-| tenantId         | string       | O identificador exclusivo (GUID) da locação.
+| tenantId         | cadeia de caracteres       | O identificador exclusivo (GUID) da locação.
 | webId            | string       | O identificador exclusivo (guid) do site do item (SPWeb).
 
 ## <a name="remarks"></a>Comentários

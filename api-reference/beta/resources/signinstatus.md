@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 0f86c7026fc487e48388bd3d20e973e7a0cf7e41
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: ffdbb7553c6359174930f1583fb6afda68d9efef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866606"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520573"
 ---
 # <a name="signinstatus-resource-type"></a>tipo de recurso signInStatus
-Fornece o status de entrada (sucesso ou falha) da entrada
+
+Namespace: o Microsoft. Graph fornece o status de entrada (êxito ou falha) da entrada
 
 
 

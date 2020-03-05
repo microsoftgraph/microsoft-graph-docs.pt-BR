@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 465a45a2ba8a607d0537e66b96207b3d60626517
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 1aa9188f40175ba0f52f143081004d8c3cbc4797
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950469"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521429"
 ---
 # <a name="projectparticipation-resource-type"></a>tipo de recurso projectParticipation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ Herda de [Myfacet](itemfacet.md).
 |clientes        |[companyDetail](companydetail.md)            | Contém informações detalhadas sobre o cliente para o qual o projeto foi.                              |
 |conhecidos    |coleção [relatedPerson](relatedperson.md) | Lista as pessoas que também trabalharam no projeto.                                                          |
 |detalhada        |[positionDetail](positiondetail.md)          | Contém detalhes sobre a função do usuário no projeto.                                             |
-|displayName   |Cadeia de caracteres                                       |Contém um nome amigável para o projeto.                                                         |
+|displayName   |String                                       |Contém um nome amigável para o projeto.                                                         |
 |responsáveis      |coleção [relatedPerson](relatedperson.md) | A pessoa ou as pessoas que patrocinaram o projeto.                                                         |
 
 ## <a name="relationships"></a>Relações

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e99db38b4f6c925f7ec7bfb2345582d6f8f9dae1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 179eda96e62c124de5c64688352040b62dfc6c77
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964617"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520027"
 ---
 # <a name="synchronizationstatus-resource-type"></a>tipo de recurso synchronizationStatus
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Representa o status atual do [synchronizationJob](synchronization-synchronizatio
 |:--------------------------------------|:----------|:---------------|
 |código|String|Código de status de alto nível do trabalho de sincronização. Os valores possíveis são: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Número de vezes consecutivas que esse trabalho falhou.|
-|escrowsPruned|Booliano|`true`Se as caução do trabalho (erros no nível do objeto) foram removidas durante a sincronização inicial. As caução podem ser removidas se durante a sincronização inicial, você atinge o limite de erros que normalmente colocam o trabalho em quarentena. Em vez de entrar em quarentena, o processo de sincronização limpa os erros do trabalho e continua até que a sincronização inicial seja concluída. Quando a sincronização inicial for concluída, o trabalho será pausado e aguardará que o cliente Limpe os erros.|
+|escrowsPruned|Boolean|`true`Se as caução do trabalho (erros no nível do objeto) foram removidas durante a sincronização inicial. As caução podem ser removidas se durante a sincronização inicial, você atinge o limite de erros que normalmente colocam o trabalho em quarentena. Em vez de entrar em quarentena, o processo de sincronização limpa os erros do trabalho e continua até que a sincronização inicial seja concluída. Quando a sincronização inicial for concluída, o trabalho será pausado e aguardará que o cliente Limpe os erros.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução do trabalho.|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução deste trabalho, que não tinham erros.|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução do trabalho, que exportou objetos para o diretório de destino.|

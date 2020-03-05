@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e920d34cc9a42c29138a97a83786087c86b7ee10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1269e23b5cbb68c665aace8c2590150f687611cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008912"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521548"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso privilegedApproval
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

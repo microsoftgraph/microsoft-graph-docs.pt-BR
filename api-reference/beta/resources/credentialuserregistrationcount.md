@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 42c722b04493767d3dbcaf713157d931569d8c32
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: cd08bbcd6a189c2f76c130d28ea749745a5f8fca
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35475897"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507342"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>tipo de recurso credentialUserRegistrationCount
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e556743517436950e3608247b537307e5bb97e3d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 175b3b8372214851ef62cf0740779b19fd2d4ce1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013038"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507828"
 ---
 # <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Um grupo de calendários do usuário.
 | Método                                                      | Tipo de retorno                        | Descrição                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [List calendar groups](../api/user-list-calendargroups.md)  | Coleção [Calendar](calendar.md) | Obter os grupos de calendários do usuário.                               |
-| [Create calendar group](../api/user-post-calendargroups.md) | [Calendário](calendar.md)            | Criar um novo grupo de calendários.                                  |
+| [Create calendar group](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Criar um novo grupo de calendários.                                  |
 | [Get calendar group](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Leia as propriedades e os relacionamentos de um objeto de grupo de calendários. |
 | [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Atualize o objeto calendarGroup.                                  |
 | [Delete](../api/calendargroup-delete.md)                    | Nenhum                               | Exclua o objeto calendarGroup.                                  |
@@ -34,7 +36,7 @@ Um grupo de calendários do usuário.
 
 | Propriedade  | Tipo   | Descrição                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name      | Cadeia de caracteres | O nome do grupo.                                                                                                                                                                                           |
+| nome      | Cadeia de caracteres | O nome do grupo.                                                                                                                                                                                           |
 | changeKey | String | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
 | classId   | Guid   | O identificador de classe. Somente leitura.                                                                                                                                                                          |
 | id        | String | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |

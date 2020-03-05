@@ -5,20 +5,22 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 8375b4ae5d3a25ac46069a21a1c2d18d270a6ec0
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a54d2aa08f9e05c266c16ae9bad541e442f8f4b1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939457"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519747"
 ---
 # <a name="tiindicator-resource-type"></a>tipo de recurso tiIndicator
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Os indicadores de inteligência da ameaça (TI) representam dados usados para identificar atividades mal-intencionadas. Se sua organização trabalha com indicadores de ameaça, gerando sua própria, obtendo seus próprios feeds de fontes abertas, compartilhando com organizações ou comunidades parceiras ou comprando feeds de dados, talvez você queira usar esses indicadores em várias segurança ferramentas de correspondência com dados de log. A entidade **TIINDICATORS** API de segurança do Microsoft Graph permite que você carregue seus indicadores de ameaça para as ferramentas de segurança da Microsoft para as ações de permitir, bloquear ou alertar.
 
-Os indicadores de ameaça carregados por meio do **tiIndicators** serão usados em conjunto com o Microsoft Threat Intelligence para fornecer uma solução de segurança personalizada para sua organização. Ao usar a entidade **tiIndicators** , você especifica a solução de segurança da Microsoft para a qual deseja utilizar os indicadores por meio da propriedade **targetProduct** e especifica a ação (permitir, bloquear ou alerta) à qual a solução de segurança deve Aplique os indicadores por meio da propriedade **Action** .
+Os indicadores de ameaça carregados por meio do **tiIndicators** serão usados em conjunto com o Microsoft Threat Intelligence para fornecer uma solução de segurança personalizada para sua organização. Ao usar a entidade **tiIndicators** , você especifica a solução de segurança da Microsoft para a qual deseja utilizar os indicadores por meio da propriedade **targetProduct** e especifica a ação (permitir, bloquear ou alerta) à qual a solução de segurança deve aplicar os indicadores por meio da propriedade **Action** .
 
 O suporte atual do **targetProduct** inclui o seguinte:
 
@@ -40,7 +42,7 @@ O suporte atual do **targetProduct** inclui o seguinte:
 
    Há um limite de 5000 indicadores por locatário para o Microsoft defender ATP.
    
-Para obter detalhes sobre os tipos de indicadores suportados e limites sobre contagens de indicadores por locatário, consulte [Manage indicadores](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+Para mais detalhes sobre os tipos de indicadores com suporte e limites de contagens de indicadores por locatário, confira [Gerenciar indicadores](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## <a name="methods"></a>Métodos
 
@@ -71,12 +73,12 @@ Para obter detalhes sobre os tipos de indicadores suportados e limites sobre con
 |externalId|Cadeia de caracteres| Um número de identificação que liga o indicador de volta para o sistema do provedor de indicadores (por exemplo, uma chave externa). |
 |id|Cadeia de caracteres|Criado pelo sistema quando o indicador é ingerido. GUID gerado/identificador exclusivo. Somente leitura.|
 |ingestedDateTime|DateTimeOffset| Marcado pelo sistema quando o indicador está ingerido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|isActive|Booliano| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
+|isActive|Boolean| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
 |killChain|coleção [killChain](#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve o ponto ou os pontos na cadeia de Kill que este indicador aponta. Consulte ' valores killChain ' abaixo para ver os valores exatos. |
 |knownFalsePositives|String|Cenários nos quais o indicador pode causar falsos positivos. Isso deve ser um texto legível por pessoas.|
 |lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |malwareFamilyNames|String collection|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
-|passiveOnly|Booliano |Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso. |
+|passiveOnly|Boolean |Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso. |
 |severity|Int32| Um inteiro que representa a gravidade do comportamento mal-intencionado identificado pelos dados dentro do indicador. Os valores aceitáveis são 0 – 5, onde 5 é o mais grave e zero não é grave. O valor padrão é 3. |
 |tags|String collection|Uma matriz JSON de cadeias de caracteres que armazena marcas arbitrárias/palavras-chave. |
 |targetProduct|String|Um valor String que representa um único produto de segurança ao qual o indicador deve ser aplicado. Os valores aceitáveis `Azure Sentinel`são `Microsoft Defender ATP`:,. **Required**|
@@ -142,10 +144,10 @@ Para obter informações sobre esse modelo, consulte [o modelo de losango](http:
 | Membro | Valor | Descrição |
 |:-------|:----- |:------------|
 | desconhecido |  ,0    | |
-| adversário |  1    |O indicador descreve o adversário.|
-| função |  duas   |O indicador é uma capacidade do adversário.|
-| ti | 3D |O indicador descreve a infraestrutura do adversário.|
-| vítima | quatro |O indicador descreve a vítima do adversário.|
+| adversário |  1     |O indicador descreve o adversário.|
+| função |  2    |O indicador é uma capacidade do adversário.|
+| ti | 3  |O indicador descreve a infraestrutura do adversário.|
+| vítima | 4  |O indicador descreve a vítima do adversário.|
 | unknownFutureValue | 127 | |
 
 ### <a name="killchain-values"></a>valores de killChain

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8d060de55d765adb7e01e6b03842c569f03c8d4f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e1f4ffd3154700f59ebdd26a2213755810b561ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502841"
 ---
 # <a name="educationalactivity-resource-type"></a>tipo de recurso educationalActivity
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

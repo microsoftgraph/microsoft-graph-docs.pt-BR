@@ -6,14 +6,16 @@ title: BaseItemVersion
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d5265004eac969fa827e5456183180a4c6434f96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47865e388616763b60ce3cd45195bf9919c7acf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974231"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508035"
 ---
 # <a name="baseitemversion-resource-type"></a>Tipo de recurso BaseItemVersion
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

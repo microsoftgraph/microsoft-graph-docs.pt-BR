@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: d367314d5546c59dd251b30e952aa17b9d60ce10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf6917b724f9e35735d63d1cda13c01d6f9003bf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006588"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503597"
 ---
 # <a name="paymentterms-resource-type"></a>tipo de recurso paymentTerms
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um termo de pagamento no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa um termo de pagamento no Dynamics 365 Business central.
 |[Obter paymentTerms](../api/dynamics-paymentterms-get.md)      |paymentTerms|Obter um objeto de condições de pagamento.   |
 |[Postar paymentTerms](../api/dynamics-create-paymentterms.md)  |paymentTerms|Criar um objeto de condições de pagamento.|
 |[Patch paymentTerms](../api/dynamics-paymentterms-update.md) |paymentTerms|Atualizar um objeto de condições de pagamento.|
-|[Excluir paymentTerms](../api/dynamics-paymentterms-delete.md)|none        |Excluir um objeto de condições de pagamento.|
+|[Excluir paymentTerms](../api/dynamics-paymentterms-delete.md)|nenhuma        |Excluir um objeto de condições de pagamento.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade                     | Tipo     |Descrição                                                |
@@ -36,7 +41,7 @@ Representa um termo de pagamento no Dynamics 365 Business central.
 |discountDateCalculation       |string  |Especifica a fórmula usada para calcular a data em que um pagamento deve ser feito para obter um desconto.|
 |discountPercent               |dígitos |Especifica a porcentagem de desconto aplicada ao pagamento antecipado de um valor de fatura.|
 |calculateDiscountOnCreditMemos|booliano |Especifica se o desconto deve ser aplicado a memorandos de crédito. **True** indica que um desconto será fornecido, **false** indica que um desconto não será fornecido.|
-|lastModifiedDateTime          |DateTime|O último DateTime que o paymentTerms foi modificado. Somente leitura.|  
+|lastModifiedDateTime          |datetime|O último DateTime que o paymentTerms foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4e0d8916cb13c91a52d7df66fe907d611e78d908
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c6f78a666d5e3785c6e02b9f5622f5d0529c61a0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973164"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507307"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
+
+Namespace: Microsoft. Graph
 
 Representa uma operação de política de dados enviada. Ele contém informações necessárias para controlar o status de uma operação. Por exemplo, um administrador da empresa pode enviar uma solicitação de operação de política de dados para exportar os dados da empresa de um funcionário e, posteriormente, rastrear essa solicitação.
 
@@ -33,7 +35,7 @@ Representa uma operação de política de dados enviada. Ele contém informaçõ
 |status|cadeia de caracteres| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|O local da URL para o qual os dados estão sendo exportados para solicitações de exportação.|
 |userId|Cadeia de caracteres|A ID do usuário em que a operação é executada.|
-|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em horário UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em horário UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |progresso|Duplo|Especifica o progresso de uma operação.|
 
 ## <a name="relationships"></a>Relações

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: af08e7a405492a8a7ac02b9889a881190a5689af
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: aa8bcf293c0b85c242a442961e07e81fb6f9a818
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394432"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519439"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +47,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][]|
 | Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [lista][], [evento][], [mensagem][]                                        |
-| Application                            | [alerta][], [contato][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][], [chat][]|
+| Aplicativo                            | [alerta][], [contato][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][], [chat][]|
 
 ## <a name="see-also"></a>Confira também
 

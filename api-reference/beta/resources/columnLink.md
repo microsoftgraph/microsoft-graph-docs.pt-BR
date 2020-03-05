@@ -6,14 +6,16 @@ title: ColumnLink
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4add6ac0edc401815d8072371ce0faca48d5852b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2c4da6165a33caa50de38788a927c4bb0c54fd90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012940"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507632"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +39,7 @@ Aqui está uma representação JSON de um recurso **columnLink**.
 
 | Nome da propriedade | Tipo   | Descrição
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | string | O identificador exclusivo da coluna.
+| **id**        | cadeia de caracteres | O identificador exclusivo da coluna.
 | **name**      | string | O nome da coluna desse tipo de conteúdo.
 
 <!--

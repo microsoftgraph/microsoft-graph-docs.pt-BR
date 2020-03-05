@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: d4e9616d1430c3c3789f42cb023583dfdb452d6d
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: c338e80d7a816bb583a4f6b3923f7e23990a64a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995018"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521198"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ Derivado de [attachment](attachment.md).
 |:---------------|:--------|:----------|
 |contentType|String|O tipo de conteúdo do anexo. Opcional.|
 |id|String|A ID do anexo.  Somente leitura.|
-|isFolder|Booliano|Especifica se o anexo é um link para uma pasta. Deve definir this como true se **sourceUrl** for um link para uma pasta. Opcional.|
+|isFolder|Boolean|Especifica se o anexo é um link para uma pasta. Deve definir this como true se **sourceUrl** for um link para uma pasta. Opcional.|
 |isInline|Booliano|Defina como verdadeiro se o anexo é exibido embutido no corpo do objeto de incorporação. Opcional.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional.|
 |nome|Cadeia de caracteres|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo. Obrigatório.|

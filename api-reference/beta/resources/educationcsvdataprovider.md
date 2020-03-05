@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f515744f5206ea132531373e3df317e02dd6cbb4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 207fee7f889c4369862918943371e2d629c8fab9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006399"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502169"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>tipo de recurso educationCsvDataProvider
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

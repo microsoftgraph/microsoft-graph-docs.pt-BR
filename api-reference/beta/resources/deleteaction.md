@@ -6,14 +6,16 @@ title: DeleteAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c5617c61f3221351930ab8d4bf940eaf1efa0629
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 453be9ad3764081207cfa51e56b69111186ff87b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973832"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507272"
 ---
 # <a name="deleteaction-resource-type"></a>Tipo de recurso DeleteAction
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,7 @@ A presença do recurso **DeleteAction** em uma [**itemActivity**][activity] indi
 
 | Nome da propriedade | Tipo   | Descrição
 |:--------------|:-------|:----------------------------------------------------
-| name          | string | O nome do item que foi excluído.
+| nome          | string | O nome do item que foi excluído.
 | objectType    | string | `File`ou `Folder`, dependendo do tipo do item excluído.
 
 ## <a name="remarks"></a>Comentários

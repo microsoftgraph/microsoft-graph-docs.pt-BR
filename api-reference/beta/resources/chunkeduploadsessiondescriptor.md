@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9df47d6bc2ac99d36f87e2af3734f25462371a29
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b77583a54722822212fccc45014cdcdff1aba834
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973440"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507674"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>Tipo de recurso chunkedUploadSessionDescriptor
+
+Namespace: Microsoft. Graph
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|String||
+|nome|String||
 
 ## <a name="json-representation"></a>Representação JSON
 

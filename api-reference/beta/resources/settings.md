@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: a7d534aecf6e7ffa427ea175ae06e2b1820435b2
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: abd68f3623f78d57b2db5812038223dc6137027f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450706"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520763"
 ---
 # <a name="settings-resource-type"></a>tipo de recurso de configurações
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ Para a API de análise retornar resultados para os usuários, eles devem ter uma
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|hasGraphMailbox|Booliano|Especifica se a caixa de correio principal do usuário está hospedada na nuvem e está habilitada para o Microsoft Graph.|
-|hasLicense|Booliano|Especifica se o usuário tem uma licença myAnalytics atribuída.|
-|hasOptedOut|Booliano|Especifica se o usuário optou por ter o myAnalytics.|
+|hasGraphMailbox|Boolean|Especifica se a caixa de correio principal do usuário está hospedada na nuvem e está habilitada para o Microsoft Graph.|
+|hasLicense|Boolean|Especifica se o usuário tem uma licença myAnalytics atribuída.|
+|hasOptedOut|Boolean|Especifica se o usuário optou por ter o myAnalytics.|
 
 ## <a name="json-representation"></a>Representação JSON
 

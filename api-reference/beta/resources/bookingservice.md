@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 5f51ec999f0a2048b8dbcbdd533c609eb5a86757
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bdf2fa686023ce33233722b3cd05f2984d1cabb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974126"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507898"
 ---
 # <a name="bookingservice-resource-type"></a>tipo de recurso bookingService
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -25,7 +27,7 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |[Listar serviços](../api/bookingbusiness-list-services.md) | coleção [bookingService](bookingservice.md) | Obtenha uma lista de objetos **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
 |[Criar bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Crie um **bookingService** para o [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Obter bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Obtenha as propriedades e os relacionamentos de um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
-|[Atualização](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Atualize um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
+|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Atualize um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Delete](../api/bookingservice-delete.md) | None |Exclua um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 
 ## <a name="properties"></a>Propriedades
@@ -36,16 +38,16 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |defaultprice|Duplo|O preço monetário padrão do serviço.|
 |defaultpricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultlembrers|coleção [bookingReminder](bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
-|descrição|String|Uma descrição de texto para o serviço.|
-|displayName|String|Um nome de serviço.|
+|description|String|Uma descrição de texto para o serviço.|
+|displayName|Cadeia de caracteres|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
-|id|Cadeia de caracteres|A ID do serviço, em um formato GUID. Somente leitura.|
-|isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
+|id|String|A ID do serviço, em um formato GUID. Somente leitura.|
+|isHiddenFromCustomers|Boolean|True significa que este serviço não está disponível para os clientes para reserva.|
 |notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|String collection|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

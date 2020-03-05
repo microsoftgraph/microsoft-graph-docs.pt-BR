@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d8d9cad16e33b022fa7c9d4e97a4d28e89436041
-ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
+ms.openlocfilehash: cac54f10a3109be5596a62a84271a485a5f70449
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37113898"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520069"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso synchronizationJob
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

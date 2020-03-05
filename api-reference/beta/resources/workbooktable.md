@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 1568cc1f08ded8ffdbac04e040bccefe63e9dd02
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6a95756e59a8dc0040406b9fc678a312e14a499
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963882"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519131"
 ---
 # <a name="workbooktable-resource-type"></a>tipo de recurso workbooktable
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ Representa uma tabela do Excel.
 |[Converttorange](../api/table-converttorange.md)|[workbookRange](workbookrange.md)|Converte a tabela em um intervalo de células normal. Todos os dados são preservados.|
 |[Delete](../api/table-delete.md)|None|Exclui a tabela.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Nenhum|Aplica novamente todos os filtros à tabela.|
-|[List](../api/table-list.md) | [](workbooktable.md) coleção workbooktable |Obtenha a coleção de objetos da tabela. |
+|[List](../api/table-list.md) | coleção [workbooktable](workbooktable.md) |Obtenha a coleção de objetos da tabela. |
 |[Add](../api/tablecollection-add.md)|[workbooktable](workbooktable.md)|Cria uma nova tabela. O endereço de origem do intervalo determina a planilha à qual a tabela será adicionada. Se a tabela não puder ser adicionada (por exemplo, porque o endereço é inválido ou a tabela se sobreporia a outra), será gerado um erro.|
 
 ## <a name="properties"></a>Propriedades
@@ -47,9 +49,9 @@ Representa uma tabela do Excel.
 |showHeaders|booliano|Indica se a linha do cabeçalho está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.|
 |showTotals|booliano|Indica se a linha do total está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do total.|
 |style|cadeia de caracteres|Valor da constante que representa o estilo de Tabela. Os valores possíveis são: TableStyleLight1 a TableStyleLight21, TableStyleMedium1 a TableStyleMedium28, TableStyleStyleDark1 a TableStyleStyleDark11. Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.|
-|highlightFirstColumn|Booliano|Indica se a primeira coluna contém uma formatação especial.   |
-|highlightLastColumn|Booliano|Indica se a última coluna contém uma formatação especial. |
-|showBandedColumns|Booliano|Indica se as colunas mostram formatação em faixas nas quais as colunas ímpares são realçadas de modo diferente das colunas pares, tornando a leitura da tabela mais fácil.   |
+|highlightFirstColumn|Boolean|Indica se a primeira coluna contém uma formatação especial.   |
+|highlightLastColumn|Boolean|Indica se a última coluna contém uma formatação especial. |
+|showBandedColumns|Boolean|Indica se as colunas mostram formatação em faixas nas quais as colunas ímpares são realçadas de modo diferente das colunas pares, tornando a leitura da tabela mais fácil.   |
 |showBandedRows|Booliano|Indica se as linhas mostram formatação em faixas nas quais as linhas ímpares são realçadas de modo diferente das colunas pares, tornando a leitura da tabela mais fácil.    |
 |showFilterButton|Booliano|Indica se os botões de filtro estão visíveis na parte superior de cada cabeçalho da coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.   |
 |legacyId|Cadeia de caracteres|ID herdada usada em clientes do Excel anteriores. O valor do identificador permanece o mesmo, ainda que a tabela seja renomeada. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.   |

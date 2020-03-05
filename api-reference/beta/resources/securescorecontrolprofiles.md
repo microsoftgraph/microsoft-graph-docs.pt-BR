@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5e244576cb014719d454fe37bd8395054efe2e2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7dfca5eedebe7f2fe524c79cee52e5855af7f291
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965273"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520861"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,7 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 |   implementationCost |    String  |   Custo do recurso do controle implemmentating (baixo, moderado, alto). |
 |   classificação |  Int32   |   Classificação de pilha da Microsoft de controle.   |
 |   las |   String Collection   |   Lista de ameaças o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
-|   preterido |    Booliano |   Sinalizador para indicar se um controle está depreciado.   |
+|   preterido |    Boolean |   Sinalizador para indicar se um controle está depreciado.   |
 |   correção |   String  |   Descrição do que o controle ajudará a corrigir. |
 |   remediationImpact | String  |   Descrição do impacto sobre os usuários da correção. |
 |   actionUrl | String  |   URL para onde o controle pode ser acionado. |

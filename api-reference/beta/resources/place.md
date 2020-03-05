@@ -5,14 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 975effa01ce60799a647bc051a0518d87afcda9e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ea1736e0215b411673f8c458f79c57181312a25a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939583"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521839"
 ---
 # <a name="place-resource-type"></a>inserir tipo de recurso
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 438fa0035b2c84b6fe702e3b1765e3d8b5adaf9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e5578cc2bc05aedd417230cc3e9d3b171e9ba577
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006623"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503898"
 ---
 # <a name="items-resource-type"></a>tipo de recurso itens
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um item no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa um item no Dynamics 365 Business central.
 |[Obter itens](../api/dynamics-item-get.md)      |items     |Obtém um objeto item.   |
 |[Itens post](../api/dynamics-create-item.md)  |items     |Cria um objeto item.|
 |[Item de patch](../api/dynamics-item-update.md)  |items     |Atualiza um objeto item.|
-|[Excluir itens](../api/dynamics-item-delete.md)|none      |Exclui um objeto item.|
+|[Excluir itens](../api/dynamics-item-delete.md)|nenhuma      |Exclui um objeto item.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade           | Tipo |Descrição                                          |
@@ -44,7 +49,7 @@ Representa um item no Dynamics 365 Business central.
 |unitCost            |dígitos |Especifica o custo por unidade do item.             |
 |taxGroupId          |GUID    |Especifica a ID do grupo de impostos para o item.      |
 |taxGroupCode        |numéricos |Um grupo de impostos representa um grupo de itens ou recursos de estoque sujeitos a termos de impostos idênticos.|
-|lastModifiedDateTime|DateTime|A última data/hora em que o item foi modificado. Somente leitura.  |  
+|lastModifiedDateTime|datetime|A última data/hora em que o item foi modificado. Somente leitura.  |  
 
 
 ## <a name="relationships"></a>Relações

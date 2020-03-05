@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3652a6d09d363a4f14227752506ba5d670dfd6fb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9dd3bc69636f6717917979d94c58b4d030b58991
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008002"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520258"
 ---
 # <a name="attributedefinition-resource-type"></a>tipo de recurso attributeDefinition
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,14 +24,14 @@ Descreve um atributo de um objeto.
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|Core         |Booliano    | `true`Se o atributo deve ser usado como a âncora do objeto. Atributos de âncora devem ter um valor exclusivo que identifica um objeto e deve ser imutável. O padrão é `false`. Um, e apenas um, dos atributos do objeto deve ser designado como a âncora para dar suporte à sincronização. |
-|caseExact      |Booliano    |`true`Se o valor desse atributo deve ser tratado como diferencia maiúsculas de minúsculas. Essa configuração afeta como o mecanismo de sincronização detecta alterações para o atributo.|
+|Core         |Boolean    | `true`Se o atributo deve ser usado como a âncora do objeto. Atributos de âncora devem ter um valor exclusivo que identifica um objeto e deve ser imutável. O padrão é `false`. Um, e apenas um, dos atributos do objeto deve ser designado como a âncora para dar suporte à sincronização. |
+|caseExact      |Boolean    |`true`Se o valor desse atributo deve ser tratado como diferencia maiúsculas de minúsculas. Essa configuração afeta como o mecanismo de sincronização detecta alterações para o atributo.|
 |los       |coleção [metadataEntry](../resources/synchronization-metadataentry.md)   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
-|múltiplos valores    |Booliano    |`true`se um atributo puder ter vários valores. O padrão é `false`.|
+|múltiplos valores    |Boolean    |`true`se um atributo puder ter vários valores. O padrão é `false`.|
 |Imutabilidade     |String     |Uma imutabilidade de atributo. Os valores possíveis são `ReadWrite`: `ReadOnly`, `Immutable`, `WriteOnly`,. O padrão é `ReadWrite`.|
-|name           |String     |Nome do atributo. Deve ser exclusivo dentro da definição do objeto. Não anulável.|
-|obrigatório       |Booliano    |`true`Se o atributo for necessário. Objeto não pode ser criado se qualquer um dos atributos necessários estiver ausente. Se durante a sincronização, o atributo Required não tem valor, o valor padrão será usado. Se o valor padrão não foi definido, a sincronização registrará um erro.|
-|referencedObjects|[](../resources/synchronization-referencedobject.md) coleção referenciable |Para atributos com `reference` tipo, lista objetos referenciados (por exemplo, `manager` o atributo seria `User` List como o objeto referenciado).|
+|nome           |String     |Nome do atributo. Deve ser exclusivo dentro da definição do objeto. Não anulável.|
+|obrigatório       |Boolean    |`true`Se o atributo for necessário. Objeto não pode ser criado se qualquer um dos atributos necessários estiver ausente. Se durante a sincronização, o atributo Required não tem valor, o valor padrão será usado. Se o valor padrão não foi definido, a sincronização registrará um erro.|
+|referencedObjects|coleção [referenciable](../resources/synchronization-referencedobject.md) |Para atributos com `reference` tipo, lista objetos referenciados (por exemplo, `manager` o atributo seria `User` List como o objeto referenciado).|
 |type           |String     |Tipo de valor de atributo. Os valores possíveis são: `String`, `Integer`, `Reference`, `Binary`, `Boolean`. O padrão é `String`.|
 
 ## <a name="json-representation"></a>Representação JSON

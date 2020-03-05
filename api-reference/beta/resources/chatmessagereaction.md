@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: e1193e65697187f705f2758c2c195e5519326dc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb26a46a3669b721184399036fa80e4a6b291ec8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973981"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507688"
 ---
 # <a name="chatmessagereaction-resource-type"></a>tipo de recurso chatMessageReaction
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

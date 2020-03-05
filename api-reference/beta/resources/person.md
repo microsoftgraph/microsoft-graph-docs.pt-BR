@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 762d3bf04c891c9a2388368ca90a90ce904dc6e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4df5f82bd14ba56969c26facef82b59f3ac7e3f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966157"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521936"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,10 +33,10 @@ Uma agregação de informações sobre uma pessoa através de email, contatos e 
 |birthday|string|O aniversário da pessoa.|
 |companyName|string|O nome da empresa da pessoa.|
 |departamento|string|O departamento da pessoa.|
-|displayName|string|O nome de exibição da pessoa.|
+|displayName|cadeia de caracteres|O nome de exibição da pessoa.|
 |emailAddresses|coleção [rankedEmailAddress](rankedemailaddress.md)|Os endereços de email da pessoa.|
 |givenName|string|O nome fornecido da pessoa.|
-|id|cadeia de caracteres|O identificador exclusivo da pessoa. Somente leitura.|
+|id|string|O identificador exclusivo da pessoa. Somente leitura.|
 |isFavorite|booliano|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
 |mailboxType|string|O tipo de caixa de correio que é representado pelo endereço de email da pessoa.|
 |officeLocation|string|O local do escritório da pessoa.|

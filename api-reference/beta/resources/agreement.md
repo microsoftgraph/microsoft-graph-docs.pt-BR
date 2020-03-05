@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d698aa85f38061ce22d63f37ea3deca3635ba219
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9d45be38338554a1bf5181e4f7a3624b3d928127
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870950"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508384"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +39,7 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 |:-------------|:------------|:------------|
 |displayName|Cadeia de caracteres|Nome para exibição do contrato.|
 |id|String| Somente leitura.|
-|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
+|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |

@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c180d6d2649f7c55868ffa04a5318c5c5f522ddd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f28e89ae20d5675da303f11dc67b6e4b562b5340
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519404"
 ---
 # <a name="workbookchart-resource-type"></a>tipo de recurso workbookChart
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ Representa um objeto chart em uma pasta de trabalho.
 |height|double|Representa a altura, em pontos, do objeto Chart.|
 |id|cadeia de caracteres|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
 |left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
-|name|string|Representa o nome de um objeto Chart.|
+|nome|string|Representa o nome de um objeto Chart.|
 |top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 

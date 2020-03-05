@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 45b5cce5b6c79ef041d80a467f6663e7cdc670bb
-ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
+ms.openlocfilehash: 47a0a9cc517bad5ad005a23b1de94a38992da44e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023202"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519418"
 ---
 # <a name="workbook-resource-type"></a>tipo de recurso Workbook
+
+Namespace: Microsoft. Graph
 
 Contém objetos Workbook relacionados, como planilhas, tabelas, intervalos e assim por diante.
 

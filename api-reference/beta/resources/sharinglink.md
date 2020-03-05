@@ -6,14 +6,16 @@ title: SharingLink
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f1ebff332227410bcb67d87de50a97dd2e078660
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e96164b636866637a30f733cb46da5124d90fa49
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965128"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520643"
 ---
 # <a name="sharinglink-resource-type"></a>tipo de recurso sharingLink
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ Veja a seguir uma representação JSON do recurso.
 | aplicativo    | [identity][]  | O aplicativo ao qual o link está associado.
 | type           | String        | O tipo do link criado.
 | scope          | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
-| preventsDownload | Booliano       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
+| preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml        | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl         | String        | Uma URL que abre o item no navegador no site do OneDrive.
 
@@ -59,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
 
 A tabela a seguir define os valores possíveis para a propriedade **Type** .
 
-| Valor    | Função     | Descrição
+| Valor    | Role     | Descrição
 |:---------|:---------|:---------------------------------------------------------
 | `view`   | `read`   | Um link somente de compartilhamento para exibição, permitindo o acesso somente leitura.
 | `edit`   | `write`  | Um link de compartilhamento de edição, permitindo o acesso de leitura e gravação.
@@ -71,8 +73,8 @@ A tabela a seguir define os valores possíveis para a propriedade **Scope** .
 
 | Valor            | Descrição
 |:-----------------|:------------------------------------------------------------
-| `anonymous`      | Qualquer pessoa com o link tem acesso, sem a necessidade de fazer logon. Isso pode incluir pessoas de fora da sua organização.
-| `organization`   | Qualquer pessoa que se inscreveu em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
+| `anonymous`      | Qualquer pessoa com o link tem acesso, sem precisar fazer logon. Isso pode incluir pessoas de fora da organização.
+| `organization`   | Qualquer pessoa que tenha feito logon em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 | `existingAccess` | Somente as pessoas que já receberam acesso ao item por meio de outros meios podem acessar o item usando este link. Disponível apenas no OneDrive for Business e no SharePoint.
 | `users`          | O link concede acesso somente a uma lista específica de pessoas. Disponível apenas no OneDrive for Business e no SharePoint.
 

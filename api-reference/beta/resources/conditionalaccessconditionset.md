@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9e81e8b2748a7dc3b6a9ca028472c1f6ab153b0e
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: dee80ebdacfda6c0b633f1aec1dd085d80eb22e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638509"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507559"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>tipo de recurso conditionalAccessConditionSet
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,11 +26,11 @@ Representa o tipo de condições que controlam quando a política se aplica.
 |:-------------|:------------|:------------|
 |Emprego|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos no e excluídos da política. Obrigatório. |
 |usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos no e excluídos da política. Obrigatório. |
-|clientAppTypes|Coleção de cadeias de caracteres| Tipos de aplicativo cliente incluídos na política. Os valores possíveis são: `browser`, `modern`, `easSupported`, `easUnsupported`, `other`.|
+|clientAppTypes|String collection| Tipos de aplicativo cliente incluídos na política. Os valores possíveis são: `browser`, `modern`, `easSupported`, `easUnsupported`, `other`.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Estados do dispositivo na política. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos no e excluídos da política. |
 |plataformas|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
-|signInRiskLevels|Coleção de cadeias de caracteres| Níveis de risco incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
+|signInRiskLevels|String collection| Níveis de risco incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
 
 ## <a name="relationships"></a>Relações
 

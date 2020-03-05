@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7300c5f2d46a3a60a104288d8ee9559e6cf5fd2c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aac921b1e9f70bc22db2b91833a6b6d348a935db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006413"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502141"
 ---
 # <a name="educationfeedback-resource-type"></a>tipo de recurso educationFeedback
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Comentários de um professor para um aluno. Essa propriedade representa a parte 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |feedbackBy|[identitySet](identityset.md)|Usuário que criou o comentário.|
-|feedbackDateTime|DateTimeOffset|Momento no momento em que o comentário foi fornecido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|feedbackDateTime|DateTimeOffset|Momento no momento em que o comentário foi fornecido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |texto|[itemBody](itembody.md)|Solicitações.|
 
 ## <a name="json-representation"></a>Representação JSON

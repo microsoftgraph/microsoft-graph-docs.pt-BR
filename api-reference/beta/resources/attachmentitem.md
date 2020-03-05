@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b6570b44bab06c0ab4b8b6788ea585276b43c3cc
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: fa739af74f00142405ecb536346639d3a2ca9f60
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621635"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508154"
 ---
 # <a name="attachmentitem-resource-type"></a>tipo de recurso attachmentItem
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ Representa os atributos de um item a ser anexado.
 |attachmentType|String| O tipo de anexo. Os valores possíveis são: `file`, `item`, `reference`. Obrigatório.|
 |contentType|String|A natureza dos dados no anexo. Opcional.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`. Opcional.|
-|name|Cadeia de caracteres|O nome de exibição do anexo. Pode ser uma cadeia de caracteres descritiva e não precisa ser o nome real do arquivo. Obrigatório.|
+|nome|Cadeia de caracteres|O nome de exibição do anexo. Pode ser uma cadeia de caracteres descritiva e não precisa ser o nome real do arquivo. Obrigatório.|
 |size|Int64|O comprimento do anexo em bytes. Obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON

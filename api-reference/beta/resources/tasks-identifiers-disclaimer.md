@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 726c9953d514796384ee23c948a157c29099d81f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a4a3c957973f4d6de5f063f277bb446f42d6706
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964561"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519978"
 ---
 # <a name="identifiers-in-tasks"></a>Identificadores nas tarefas
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

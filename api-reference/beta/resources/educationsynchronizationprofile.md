@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d5d79c50d29d4a89aa78b724f7cde747ea90706b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7cea993bfaeaf7de82268747518288aaac836198
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500083"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso educationSynchronizationProfile
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

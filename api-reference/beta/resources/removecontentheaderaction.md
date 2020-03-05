@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 99f3b77607b34cb68cdef3fa9fc5658ed06b52ec
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 907113e20b5e4257a672190433efd055a628c17f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938938"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521149"
 ---
 # <a name="removecontentheaderaction-resource-type"></a>tipo de recurso removeContentHeaderAction
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

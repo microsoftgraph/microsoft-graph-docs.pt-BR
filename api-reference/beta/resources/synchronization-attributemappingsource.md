@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e2f0e3b3d5ce3ca0c1fef55f81aa454b149e5a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 969f262f76f976c13f5c0a26ae53d67751b8820b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007967"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520230"
 ---
 # <a name="attributemappingsource-resource-type"></a>tipo de recurso attributeMappingSource
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Define como um valor deve ser extraído (ou transformado) a partir do objeto Sou
 | Propriedade              | Tipo                      | Descrição               |
 |:----------------------|:--------------------------|:--------------------------|
 |expressão             |String                     |Representação de expressão equivalente deste objeto **attributeMappingSource** .|
-|name                   |String                     |Parâmetro Name da origem do mapeamento. Dependendo do valor da propriedade **Type** , isso pode ser o nome da função, o nome do atributo de origem ou um valor constante a ser usado. |
+|nome                   |String                     |Parâmetro Name da origem do mapeamento. Dependendo do valor da propriedade **Type** , isso pode ser o nome da função, o nome do atributo de origem ou um valor constante a ser usado. |
 |parameters             |coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Se este objeto representar uma função, lista os parâmetros da função. Os parâmetros consistem nos objetos **attributeMappingSource** , permitindo expressões complexas. Se **Type** não `Function`for, esta propriedade será NULL/matriz vazia. |
 |type                   | String                    |O tipo desta fonte de mapeamento de atributos. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
 

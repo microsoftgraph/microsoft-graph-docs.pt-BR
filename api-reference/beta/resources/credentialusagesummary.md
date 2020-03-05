@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 46fc3f90b7a7f286d61a324e7b5f439d467a4978
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 17fc4535e5132b6bf6c2f6eab4a94b5a58ef9bb1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35518662"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507349"
 ---
 # <a name="credentialusagesummary-resource-type"></a>tipo de recurso credentialUsageSummary
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

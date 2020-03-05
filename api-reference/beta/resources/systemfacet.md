@@ -6,14 +6,16 @@ title: SystemFacet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b9c4532c9fc93c37b2faa9ec2d6e7b247280f462
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c30f1f360a8bb355c09265d3c0a5f7f6b574f56e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007736"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520006"
 ---
 # <a name="system-facet"></a>Faceta System
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

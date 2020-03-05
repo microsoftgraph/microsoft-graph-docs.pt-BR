@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 960945d72db1cc347228983b9567968dfcfc52d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 922ebf14f59d60a988fe77ee36ce04d9c76befec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963784"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519026"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>tipo de recurso yammerActivityUserDetail
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -20,14 +22,14 @@ ms.locfileid: "35963784"
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
 | userPrincipalName | String            |
-| displayName       | String            |
+| displayName       | Cadeia de caracteres            |
 | userState         | String            |
 | stateChangeDate   | Data              |
 | lastActivityDate  | Data              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
-| assignedProducts  | Coleção de cadeias de caracteres |
+| assignedProducts  | String collection |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Representação JSON

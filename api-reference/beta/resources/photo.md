@@ -6,14 +6,16 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ed3d60fabfd367668b5c7a8230bba0f19f7d88f5
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: bdb587e7440fd98c48f71a2611e2a34e039367dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333238"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521880"
 ---
 # <a name="photo-resource-type"></a>tipo de recurso Photo
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

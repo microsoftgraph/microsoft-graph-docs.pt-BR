@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d8e652501f8cd96e3e820e61b4ad9d353b61f3fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 673627d726475708c79445f818f23104f0582ef7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008471"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520819"
 ---
 # <a name="settingvalue-resource-type"></a>tipo de recurso SettingValue
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ Uma configuração representada por um par de nome/valor.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Nome da configuração (conforme definido pelo directorySettingTemplate).|
+|nome|string|Nome da configuração (conforme definido pelo directorySettingTemplate).|
 |value|string|Valor da configuração.|
 
 ## <a name="json-representation"></a>Representação JSON

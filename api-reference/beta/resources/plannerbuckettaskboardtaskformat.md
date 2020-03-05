@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b9e9713dca07e8eff0b320fcc50c8c48cc46f489
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6815209c4a87ee348cb3c37f5b318a5022e4c5b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009096"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521780"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>tipo de recurso plannerBucketTaskBoardTaskFormat
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usada
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leia as propriedades e os relacionamentos do objeto **plannerBucketTaskBoardTaskFormat** .|
-|[Atualização](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Atualize o objeto **plannerBucketTaskBoardTaskFormat** . |
+|[Update](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Atualize o objeto **plannerBucketTaskBoardTaskFormat** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

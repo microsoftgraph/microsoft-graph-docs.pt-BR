@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cfc0c00add243b98c852a00f0a4ab990c3ca5173
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: c51c3cd7c706cf154db8c1de21c04aaa098c3efb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437787"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519614"
 ---
 # <a name="unifiedroleassignment-resource-type"></a>tipo de recurso unifiedRoleAssignment
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

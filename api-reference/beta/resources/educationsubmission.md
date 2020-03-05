@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 325eb9772e350848dbf35f9832282cb92a7fda86
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 077188c3ca30837cad6adcffa2204750753cd1cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726384"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500734"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso educationSubmission
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ Os envios são criados automaticamente quando uma atribuição é publicada. O e
 |releasedDateTime|DateTimeOffset|Momento no momento em que o envio foi lançado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |returnedBy|[identitySet](identityset.md)|Usuário que moveu o status desse envio para o retornado.|
 |returnedDateTime|DateTimeOffset|Momento no momento em que o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|Cadeia de Caracteres|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
+|resourcesFolderUrl|String|Pasta onde todos os recursos de arquivo para esse envio precisam ser armazenados.|
 |status|cadeia de caracteres| Somente Leitura. Os valores possíveis são: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Usuário que moveu o recurso para o estado enviado.|
 |submittedDateTime|DateTimeOffset|Momento no momento em que o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|

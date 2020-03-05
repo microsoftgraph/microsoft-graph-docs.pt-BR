@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d8291bcd418af5549a8abb7dd30deebcdde9ed03
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: baa5daded03e9ddc5dedbb97f86d15d690240d09
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636803"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507524"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>tipo de recurso conditionalAccessPolicy
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

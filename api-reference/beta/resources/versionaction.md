@@ -6,14 +6,16 @@ title: VersionAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8eeec313ac4ed901d7552e2ad65d02edcaa821cd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63b22b34abda4d1f268e16b00f65d6c4bb867c7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007393"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519474"
 ---
 # <a name="versionaction-resource-type"></a>Tipo de recurso VersionAction
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

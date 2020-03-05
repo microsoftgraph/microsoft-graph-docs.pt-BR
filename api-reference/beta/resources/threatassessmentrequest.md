@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8441fe14434733efda10c51d88e0750904ee1246
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1a6a8f0f1448522d624b9c9e97bb2fab426b6988
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867136"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519775"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>tipo de recurso threatAssessmentRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,9 +31,9 @@ Uma solicitação de avaliação de ameaça pode ser um dos seguintes tipos:
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) | coleção [threatAssessmentRequest](threatassessmentrequest.md) | Listar todas as solicitações de avaliação de ameaça sob locatário. |
-| [Criar threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Crie uma nova solicitação de avaliação de ameaça postando um tipo de recurso derivado: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md). |
-| [Obter threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Recupere as propriedades e os relacionamentos de um recurso **threatAssessmentRequest** especificado. |
+| [List threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) | coleção [threatAssessmentRequest](threatassessmentrequest.md) | Listar todas as solicitações de avaliação de ameaça sob locatário. |
+| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Crie uma nova solicitação de avaliação de ameaça postando um tipo de recurso derivado: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md). |
+| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Recupere as propriedades e os relacionamentos de um recurso **threatAssessmentRequest** especificado. |
 
 ## <a name="properties"></a>Propriedades
 

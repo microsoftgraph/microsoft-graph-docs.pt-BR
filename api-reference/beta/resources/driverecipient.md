@@ -6,14 +6,16 @@ title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f86b79567b4148934f1c9624124026472fbb3395
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 64c2341eff772a5d26f6d17a3e646b561f4a9d37
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012706"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505480"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

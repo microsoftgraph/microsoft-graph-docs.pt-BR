@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fb03e368a8a9c5cf929f314714a3a5d2fdee4b93
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5aa90644a679c34eb7d2f9b53a5759b6b4293fed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866844"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507048"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

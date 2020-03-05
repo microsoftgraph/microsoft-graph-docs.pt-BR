@@ -6,14 +6,16 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7f60d33f8fbfe76c9dfd0ca02c98df96ca6ab380
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d36c7460b5ee50a6230cdacc5514e200920e31c4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973290"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507625"
 ---
 # <a name="columndefinition-resource-type"></a>tipo de recurso columnDefinition
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +70,7 @@ As propriedades relacionadas ao tipo (Boolean, calculado, Choice, Currency, date
 | **displayName**         | string  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
-| **id**                  | string  | O identificador exclusivo da coluna.
+| **id**                  | cadeia de caracteres  | O identificador exclusivo da coluna.
 | **indexed**             | booliano | Especifica se os valores da coluna podem ser usados para classificação e pesquisa.
 | **name**                | string  | O nome voltado para a API da coluna, conforme ele aparece nos [campos][] em uma [listItem][]. Para o nome voltado ao usuário, consulte **displayName**.
 | **readOnly**            | bool    | Especifica se os valores da coluna podem ser modificados.
@@ -85,7 +87,7 @@ As propriedades relacionadas ao tipo (Boolean, calculado, Choice, Currency, date
 | **personOrGroup** | [personOrGroupColumn][] | Esta coluna armazena valores de Pessoa ou Grupo.
 | **text**          | [textColumn][]          | Esta coluna armazena valores de texto.
 
->**Observação:** Essas propriedades correspondem à enumeração de [][] UserField do SharePoint.
+>**Observação:** Essas propriedades correspondem à enumeração de [UserField][] do SharePoint.
 Enquanto os tipos de campo mais comuns são representados na tabela anterior, esta API beta ainda não tem alguns.
 nestes casos, nenhuma das facetas do tipo de coluna serão preenchidas, e a coluna só terá as propriedades básicas.
 

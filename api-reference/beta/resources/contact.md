@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8eb692a3671672b82891a66531c64df1fcaa0e5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 256a8e63b5ff331bdc770ed690998c98c1e92098
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012881"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507461"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -93,14 +95,14 @@ Veja a seguir uma representação JSON do recurso
 |nomeDaEmpresa|String|O nome da empresa do contato.|
 |createdDateTime|DateTimeOffset|A hora em que o contato foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |department|String|O departamento do contato.|
-|displayName|String|O nome para exibição do contato. Você pode especificar o nome de exibição em uma operação [criar](../api/user-post-contacts.md) ou [atualizar](../api/contact-update.md). Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação [atualizar](../api/contact-update.md).|
+|displayName|Cadeia de caracteres|O nome para exibição do contato. Você pode especificar o nome de exibição em uma operação [criar](../api/user-post-contacts.md) ou [atualizar](../api/contact-update.md). Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação [atualizar](../api/contact-update.md).|
 |emailAddresses|coleção [typedEmailAddress](typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
-|sinalizador|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de conclusão do contato. |
+|flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de conclusão do contato. |
 |gender |String |O sexo do contato. |
 |generation|String|A geração do contato.|
 |givenName|String|O nome do contato.|
-|id|String| Identificador exclusivo do contato. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]Somente leitura. |
+|id|String| Identificador exclusivo do contato. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
 |imAddresses|Coleção de cadeias de caracteres|Os endereços de mensagens instantâneas do contato.|
 |initials|String|As iniciais do contato.|
 |jobTitle|String|O cargo do contato.|
@@ -109,7 +111,7 @@ Veja a seguir uma representação JSON do recurso
 |middleName|String|O nome do meio do contato.|
 |nickName|String|O apelido do contato.|
 |officeLocation|String|O local do escritório do contato.|
-|parentFolderId|Cadeia de caracteres|A ID da pasta pai do contato.|
+|parentFolderId|String|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
 |telefones |Coleção [phone](phone.md) |Números de telefone associados ao contato, por exemplo, telefone residencial, telefone celular e telefone comercial. |
 |postalAddresses |coleção [physicalAddress](physicaladdress.md) |Endereços associados ao contato, por exemplo, endereço residencial e endereço comercial. |

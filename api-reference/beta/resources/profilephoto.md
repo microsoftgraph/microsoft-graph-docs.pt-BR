@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso de profilePhoto
-description: Uma foto de perfil de um usuário, grupo ou contato do Outlook acessado a partir do Exchange Online ou do Azure Active Directory (AAD). Seus dados binários não são codificados em base 64.
+description: Uma foto de perfil de um usuário, grupo ou contato do Outlook acessado a partir do Exchange Online ou do Azure Active Directory (AAD). Os dados binários não são codificados em base-64.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: eee47378343aef1b0a471ac186099d4598124862
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f7d582c64e600846a17654623ca233d0132e6bf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965674"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521457"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

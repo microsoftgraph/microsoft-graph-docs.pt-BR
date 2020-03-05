@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb960156a6c8f3a407dbd0691cdbed32e03693d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 750bd79dad9758f3ffe883fd87713c42c29c0917
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703909"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520918"
 ---
 # <a name="searchhitscontainer-resource-type"></a>tipo de recurso searchHitsContainer
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ Representa a lista de resultados de pesquisa.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |falta|coleção [searchHit](searchhit.md)|Encasulate os resultados da pesquisa.|
-|moreResultsAvailable|Booliano|Fornece informações se mais resultados estiverem disponíveis. Nesse caso, você pode aumentar o deslocamento "de" e "para".|
+|moreResultsAvailable|Boolean|Fornece informações se mais resultados estiverem disponíveis. Nesse caso, você pode aumentar o deslocamento "de" e "para".|
 |total|Int32|O número total de resultados. Observação Este não é o número de resultados na página, mas o número total de resultados que atendem à consulta.|
 
 ## <a name="json-representation"></a>Representação JSON

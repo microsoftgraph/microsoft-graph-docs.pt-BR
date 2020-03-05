@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6be6300bc901305fb87b04e2482f145b9187f9fb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 507746674f17a7bf8255ccddc53ea14fe2ca5a26
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939233"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521177"
 ---
 # <a name="relatedperson-resource-type"></a>tipo de recurso relatedPerson
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

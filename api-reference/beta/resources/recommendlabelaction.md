@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54f2a872c0aa64eb79e0b8755ddc6b3788f14055
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2a4da2900ec12233e680238fb294c38a9e17ebbe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939373"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521233"
 ---
 # <a name="recommendlabelaction-resource-type"></a>tipo de recurso recommendLabelAction
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

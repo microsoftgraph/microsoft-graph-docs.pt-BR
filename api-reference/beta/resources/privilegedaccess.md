@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 7f59f8420be6ff97511415e944d154cb5d59950f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c8388c8ba9fd79b44e0d037496313cf67774bdf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965786"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521555"
 ---
 # <a name="privilegedaccess-resource-type"></a>tipo de recurso privilegedAccess
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ Representa um grupo de funcionalidades fornecidas pelo serviço de gerenciamento
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
 |id         |String     |A ID do provedor gerenciado pelo PIM.|
-|displayName|String     |O nome de exibição do provedor gerenciado pelo PIM.|
+|displayName|Cadeia de caracteres     |O nome de exibição do provedor gerenciado pelo PIM.|
 
 
 ## <a name="relationships"></a>Relações

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 02e4f039411c992cd1d7335fc2463d660b8ff181
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7d3fee76df5f60c47639183f7d3e7ce54164f81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972870"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503212"
 ---
 # <a name="trialbalance-resource-type"></a>tipo de recurso trialBalance
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um balancete no Dynamics 365 Business central.
 
 ## <a name="methods"></a>Métodos

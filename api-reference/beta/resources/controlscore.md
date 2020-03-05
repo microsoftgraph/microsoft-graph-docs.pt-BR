@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 89e448d828f1f7caef73b14586b06d1df238f100
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f718e197e690d3779870e5996161461fe8f60915
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973930"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507412"
 ---
 #  <a name="controlscore-resource-type"></a>tipo de recurso controlScore
+
+Namespace: Microsoft. Graph
 
 Este recurso contém uma pontuação de locatário e uma descrição para um controle individual.
 
@@ -21,7 +23,7 @@ Este recurso contém uma pontuação de locatário e uma descrição para um con
 |   controlName |   String  |   Controlar o nome exclusivo |
 |   score   |   Duplo  |  A pontuação alcançada do locatário para o controle (ele varia dia a dia, dependendo das operações do locatário no controle). |
 |   controlCategory |   String  |  Categoria de ação de controle (identidade, dados, dispositivo, aplicativos, infraestrutura). |
-|   descrição |   String  |  Descrição do controle. |
+|   description |   String  |  Descrição do controle. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: a135627804e2d6c5be4203c0ee0c229642c70c65
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a8dc7eed4bdbcc39a04f55996e11b6d9dc6da1f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973741"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505165"
 ---
 # <a name="agedaccountspayable-resource-type"></a>tipo de recurso agedAccountsPayable
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um objeto agedAccountsPayable no Dynamics 365 Business central, que está mostrando o envelhecimento de uma conta de fornecedor.
 
 ## <a name="methods"></a>Métodos
@@ -28,7 +33,7 @@ Representa um objeto agedAccountsPayable no Dynamics 365 Business central, que e
 |:--------------|:---------|:-------------------------------------------|
 |VendorID       |GUID      |A ID exclusiva do fornecedor.                    |
 |vendorNumber   |string    |Especifica o número do fornecedor.                  |
-|name           |string    |Especifica o nome do fornecedor.                    |
+|nome           |string    |Especifica o nome do fornecedor.                    |
 |currencyCode   |string    |Especifica a moeda.                     |
 |balanceDue     |numéricos   |Especifica o saldo total devido ao fornecedor.|
 |currentAmount  |numéricos   |Especifica o saldo antes do primeiro período de envelhecimento.|

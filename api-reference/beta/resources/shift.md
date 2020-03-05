@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d3a91cd7b4f2b4d8e32219514d1190599ac416de
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 16cce4d0c2ad6526154acd5895f5a24f76a7025d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049628"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520636"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso Shift
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

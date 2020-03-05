@@ -6,14 +6,16 @@ title: SharingInvitation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: eebfa17a08918ec3ac08700577921b1037761086
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6bbe39603ed4daad9c354b1c14ed6a68b3638c6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008331"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520650"
 ---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da Propriedade  | Tipo                          | Descrição                                                                                                                   |
+| Nome da propriedade  | Tipo                          | Descrição                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | email          | Cadeia de caracteres                        | O endereço de email fornecido para o destinatário do convite de compartilhamento. Somente leitura.                                          |
 | invitedBy      | [identitySet](identityset.md) | Fornece informações sobre quem enviou o convite que criou essa permissão, se essas informações estiverem disponíveis. Somente leitura. |

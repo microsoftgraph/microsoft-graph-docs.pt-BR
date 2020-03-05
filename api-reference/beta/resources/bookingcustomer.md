@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 864635014b3e215dabd11896922ca9e73a5e8cb9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af64f8686b1779030c0ace93b4805845c6ed3c81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974165"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507993"
 ---
 # <a name="bookingcustomer-resource-type"></a>tipo de recurso bookingCustomer
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -26,7 +28,7 @@ Representa um cliente de um [bookingBusiness](bookingbusiness.md).
 |[Listar clientes](../api/bookingbusiness-list-customers.md) | coleção [bookingCustomer](bookingcustomer.md) | Obtenha uma lista de objetos **bookingCustomer** . |
 |[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Criar um novo objeto **bookingCustomer** . |
 |[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e os relacionamentos de um objeto **bookingCustomer** .|
-|[Atualização](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualizar um objeto **bookingCustomer** . |
+|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualizar um objeto **bookingCustomer** . |
 |[Delete](../api/bookingcustomer-delete.md) | None |Excluir um objeto **bookingCustomer** . |
 
 ## <a name="properties"></a>Propriedades

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 05f882a54ab43dce3f985a4913b3f20c4ef3a1f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8aedd6e049e2832c9db637827e8457928d950a3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007708"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519950"
 ---
 # <a name="teamfunsettings-resource-type"></a>tipo de recurso teamFunSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,10 +23,10 @@ Configurações para configurar o uso de Giphy, memes e selos na [equipe](team.m
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowGiphy|Booliano|Se definido como true, habilita o uso do Giphy.|
+|allowGiphy|Boolean|Se definido como true, habilita o uso do Giphy.|
 |giphyContentRating|Cadeia de caracteres (enum)|Classificação de conteúdo do Giphy. Os valores possíveis são: `moderate` e `strict`.|
-|allowStickersAndMemes|Booliano|Se definido como true, permite que os usuários incluam adesivos e memes.|
-|allowCustomMemes|Booliano|Se definido como true, permite que os usuários incluam memes personalizados.|
+|allowStickersAndMemes|Boolean|Se definido como true, permite que os usuários incluam adesivos e memes.|
+|allowCustomMemes|Boolean|Se definido como true, permite que os usuários incluam memes personalizados.|
 
 ## <a name="json-representation"></a>Representação JSON
 

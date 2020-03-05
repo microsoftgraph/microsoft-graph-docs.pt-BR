@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0e91f08e9f421a348f5ec7c2ebf5e2f23d4e9377
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: e9edfd06ecd65d7e08d6701d1fc885dce9067689
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952311"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519705"
 ---
 # <a name="timerange-resource-type"></a>tipo de recurso timerange
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

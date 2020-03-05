@@ -5,14 +5,16 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 2540934b93a1047df5b19c4fe1b477ba30fd798c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7dcfaf2d5cc2d1dbd38cdc4a8a7c5eac71e9539b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972268"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499803"
 ---
 # <a name="email-activity-reports"></a>Relatórios de atividades do email
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

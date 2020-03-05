@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: e8d25294b219815c8aa569c7a8c7fab7ec68830c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 94ebd10ef87946b5333ec5a06d5edccadc298158
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006609"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503569"
 ---
 # <a name="shipmentmethods-resource-type"></a>tipo de recurso shipmentMethods
+
+Namespace: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa um método de entrega no Dynamics 365 Business central, como no-break, FEDEX e DHL.
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +29,7 @@ Representa um método de entrega no Dynamics 365 Business central, como no-break
 |[Obter shipmentMethods](../api/dynamics-shipmentmethods-get.md)|shipmentMethods|Obtém um método de remessa.|
 |[Postar shipmentMethods](../api/dynamics-create-shipmentmethods.md)|shipmentMethods|Cria um método de remessa.|
 |[Patch shipmentMethods](../api/dynamics-shipmentmethods-update.md)|shipmentMethods|Atualiza um método de remessa.|
-|[Excluir shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|none|Exclui um método de remessa.|
+|[Excluir shipmentMethods](../api/dynamics-shipmentmethods-delete.md)|nenhuma|Exclui um método de remessa.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -32,7 +37,7 @@ Representa um método de entrega no Dynamics 365 Business central, como no-break
 |id|GUID|A ID exclusiva do shipmentMethod. Não editável.|
 |código|cadeia de caracteres|Especifica o código do método de remessa.|
 |displayName|string|Especifica o nome de exibição do método de remessa.|
-|lastModifiedDateTime|DateTime|O último DateTime que o método de remessa foi modificado. Somente leitura.|  
+|lastModifiedDateTime|datetime|O último DateTime que o método de remessa foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

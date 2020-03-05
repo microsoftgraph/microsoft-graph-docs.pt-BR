@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 822f819cd8e9ef0f93279c67b94972a1e9fb7929
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: ff61b1d9713a0da322d01e3c302ebefc98dbee46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638579"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507552"
 ---
 # <a name="conditionalaccessdevicestates-resource-type"></a>tipo de recurso conditionalAccessDeviceStates
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ Representa os Estados do dispositivo no escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeStates | Coleção de cadeias de caracteres | Estados no escopo da política. `All`é o único valor permitido. |
-| excludeStates | Coleção de cadeias de caracteres | Estados excluídos do escopo da política. Valores possíveis: `Compliant`, `DomainJoined`. |
+| includeStates | String collection | Estados no escopo da política. `All`é o único valor permitido. |
+| excludeStates | String collection | Estados excluídos do escopo da política. Valores possíveis: `Compliant`, `DomainJoined`. |
 
 ## <a name="relationships"></a>Relações
 

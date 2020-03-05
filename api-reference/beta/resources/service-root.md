@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: cca5e05cd1ebc1ef5aa24818b5edad80f85c9cf3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 87de80bb6a9de28f7ed2864d630bed7e7eb4d1c4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008499"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520798"
 ---
 # <a name="service-root"></a>Raiz de serviço
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ ms.locfileid: "36008499"
 |[List directoryRole](../api/directoryrole-list.md) | Coleção [directoryRole](directoryrole.md) |Obtenha a coleção de objetos de directoryRole. |
 |[List directoryRoleTemplate](../api/directoryroletemplate-list.md) | Coleção [directoryRoleTemplate](directoryroletemplate.md) |Obtenha a coleção de objetos de directoryRoleTemplate. |
 |[List drive](../api/drive-list.md) | Coleção [drive](drive.md) |Obtenha a coleção de objetos de unidades. |
-|[Get drive](../api/drive-get.md) | [drive](drive.md)  |Obtenha as propriedades do objeto drive. |
+|[Obter unidade](../api/drive-get.md) | [unidade](drive.md)  |Obtenha as propriedades do objeto drive. |
 |[Criar grupo](../api/group-post-groups.md) |[group](group.md)| Crie um novo grupo postando na coleção de grupos.|
 |[List group](../api/group-list.md) | Coleção [group](group.md) |Obtenha a coleção de objetos de grupos. |
 |[List organization](../api/organization-list.md) | Coleção [organization](organization.md) |Obtenha a coleção de objetos de organizações. |
@@ -36,7 +38,7 @@ ms.locfileid: "36008499"
 |[Criar usuário](../api/user-post-users.md) |[user](user.md)| Crie um novo usuário postando na coleção de usuários.|
 |[List user](../api/user-list.md) | Coleção [user](user.md) |Obtenha a coleção de objetos de usuários. |
 |[Criar um conector](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|Criar um novo grupo de conectores postando na coleção connectorGroups.|
-|[Lista de conectores de lista](../api/connectorgroup-list.md) | [](connectorgroup.md) coleção de conectores |Obter coleção de objetos do grupo de conectores. |
+|[Lista de conectores de lista](../api/connectorgroup-list.md) | coleção de [conectores](connectorgroup.md) |Obter coleção de objetos do grupo de conectores. |
 |[Conector de lista](../api/connector-list.md) | coleção [Connector](connector.md) |Obter coleção de objetos do conector. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

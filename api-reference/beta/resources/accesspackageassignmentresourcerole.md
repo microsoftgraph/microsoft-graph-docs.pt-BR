@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1dbf73623ddd51cc1172e5610e84cc7861657489
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c9eddff042af5b2cd724e87e3438f398e8d68c19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939191"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508538"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>tipo de recurso accessPackageAssignmentResourceRole
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

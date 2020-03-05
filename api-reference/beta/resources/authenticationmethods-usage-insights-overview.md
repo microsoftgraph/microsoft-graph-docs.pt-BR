@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 4f8886333d5067abc42a583084726c58ec67a659
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f20c633d1cfcbadd50a1c892cf6370211e0acb7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013196"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508077"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Trabalhar com a API de relatório de uso dos métodos de autenticação
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ Relatórios de uso estão disponíveis para recursos licenciados que aproveitam 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba como implantar a redefinição de [senha de autoatendimento do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+- Saiba como [implantar a redefinição de senha de autoatendimento do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 - Saiba como implantar o [Azure Active Directory MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
 - Saiba como habilitar o [registro de informações de segurança combinado](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined).
 

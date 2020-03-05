@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 77b1cf812edd334197c268c92bb982954fb11b12
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edc456aaa03cc54bd7b385bc97d37eb657ea53b2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974114"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507905"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>tipo de recurso bookingSchedulingPolicy
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -21,10 +23,10 @@ Representa o conjunto de políticas que determinam como os compromissos devem se
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Booliano|True se para permitir que os clientes escolham uma pessoa específica para a reserva.|
+|allowStaffSelection|Boolean|True se para permitir que os clientes escolham uma pessoa específica para a reserva.|
 |maximumAdvance|Duração|Número máximo de dias de antecedência que uma reserva pode ser feita. Ele segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |minimumLeadTime|Duração|A quantidade mínima de tempo antes da qual as reservas e os cancelamentos devem ser feitos. Ele segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|sendConfirmationsToOwner|Booliano| True para notificar a empresa por email quando uma reserva é criada ou alterada. Use o endereço de email especificado na propriedade **email** da entidade **bookingBusiness** para a empresa. |
+|sendConfirmationsToOwner|Boolean| True para notificar a empresa por email quando uma reserva é criada ou alterada. Use o endereço de email especificado na propriedade **email** da entidade **bookingBusiness** para a empresa. |
 |timeSlotInterval|Duração|Duração de cada intervalo de tempo, indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 
 ## <a name="json-representation"></a>Representação JSON

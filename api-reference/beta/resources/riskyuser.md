@@ -5,14 +5,16 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3548be0439eaa5335d710a35f51fdbaecb19060c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cb1087323287f3c8e752810b1c37365c8268a19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008723"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521058"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e63fd8ad7aa7d0a19fe1774e18bba5d59af52140
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 6f900056db140719ff5bc7902a6a7a9531cebe9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173304"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521002"
 ---
 # <a name="rubricquality-resource-type"></a>tipo de recurso rubricQuality
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ Uma qualidade de um amostra rubric. Consulte [educationRubric](educationrubric.m
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |criteria|coleção [rubricCriterion](rubriccriterion.md)|O conjunto de critérios para esta qualidade de amostra rubric.|
-|descrição|[itemBody](itembody.md)|A descrição dessa qualidade de amostra rubric.|
+|description|[itemBody](itembody.md)|A descrição dessa qualidade de amostra rubric.|
 |displayName|String|O nome dessa qualidade de amostra rubric.|
 |qualityid|String|A ID desse recurso.|
 |weight|Único|Se presente, um peso numérico para essa qualidade.  Os pesos devem adicionar até 100.|

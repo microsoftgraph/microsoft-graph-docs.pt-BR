@@ -5,20 +5,22 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 083b0ad81ffee25d8a03bf5ff38815d2ca0155a8
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 75084cba71946d8b14ab080ac5872359bf0ceb12
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952269"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520608"
 ---
 # <a name="shiftpreferences-resource-type"></a>tipo de recurso shiftPreferences
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a disponibilidade de um usuário a ser atribuída a turnos no [cronograma](schedule.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

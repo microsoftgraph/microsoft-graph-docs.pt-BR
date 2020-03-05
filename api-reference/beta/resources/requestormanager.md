@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b7eea64e2d3f1d32b7ca60fc0c3a548401f7ef23
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 8b2e3062383dd1cc1c7d04342b2dcbd5be0afd67
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331336"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521121"
 ---
 # <a name="requestomanager-complex-type"></a>tipo complexo requestoManager
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Usado nas configurações de aprovação de uma [política de atribuição de pa
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| IsBackup | Booliano | Para um gerente em um estágio de aprovação, indica se o gerente é um Aprovador de fallback de backup. |
+| IsBackup | Boolean | Para um gerente em um estágio de aprovação, indica se o gerente é um Aprovador de fallback de backup. |
 
 ## <a name="json-representation"></a>Representação JSON
 

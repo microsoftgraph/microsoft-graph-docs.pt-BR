@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0858c714fab3fbfb862119d5ece1af2650888391
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ac64ef16eea584ec2a6360a0c2b0f3c4eb5397ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964806"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520209"
 ---
 # <a name="directorydefinition-resource-type"></a>tipo de recurso directoryDefinition
 
+Namespace: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece as informações do mecanismo de sincronização sobre um diretório e seus objetos. Esse recurso instrui o mecanismo de sincronização, por exemplo, que o diretório tem objetos chamados **usuário** e **grupo**, quais atributos são compatíveis com esses objetos e os tipos desses atributos. Para que o objeto e o atributo participem das [regras de sincronização](synchronization-synchronizationrule.md) e dos mapeamentos de [objetos](synchronization-objectmapping.md), eles devem ser definidos como parte da definição de diretório.
+Fornece as informações do mecanismo de sincronização sobre um diretório e seus objetos. Esse recurso instrui o mecanismo de sincronização, por exemplo, que o diretório tem objetos chamados **usuário** e **grupo**, quais atributos são compatíveis com esses objetos e os tipos desses atributos. Para que o objeto e o atributo participem das [regras de sincronização](synchronization-synchronizationrule.md) e dos [mapeamentos de objetos](synchronization-objectmapping.md), eles devem ser definidos como parte da definição de diretório.
 
 Em geral, o [esquema de sincronização](synchronization-synchronizationschema.md) padrão fornecido como parte do [modelo de sincronização](synchronization-synchronizationtemplate.md) definirá os objetos e atributos usados com mais frequência para esse diretório. No entanto, se o diretório oferecer suporte à adição de atributos personalizados, convém expandir a definição padrão com seus próprios objetos ou atributos personalizados. Para obter mais informações, consulte [Configurar a sincronização com atributos personalizados](synchronization-configure-with-custom-target-attributes.md) e [Configurar a sincronização com atributos de extensão de diretório](synchronization-configure-with-directory-extension-attributes.md).
 
@@ -34,10 +36,10 @@ As definições de diretório são atualizadas como parte do [esquema de sincron
 |:--------------|:----------|:---------------|
 |id           |String     |Identificador de diretório. Não anulável.|
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
-|name           |String     |Nome do diretório. Deve ser exclusivo no [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
-|objectos        |[](synchronization-objectdefinition.md) coleção ObjectDefinition    |Conjunto de objetos suportados pelo diretório.|
+|nome           |String     |Nome do diretório. Deve ser exclusivo no [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
+|objectos        |coleção [ObjectDefinition](synchronization-objectdefinition.md)    |Conjunto de objetos suportados pelo diretório.|
 |versão|String|Valor somente leitura que indica a versão descoberta. NULL se a descoberta ainda não tiver ocorrido.|
-|discoveryDateTime|DateTimeOffset| Representa a data e a hora da descoberta usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|discoveryDateTime|DateTimeOffset| Representa a data e a hora da descoberta usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |discoverabilities|string| Valor somente leitura indicando qual tipo de descoberta o aplicativo oferece suporte. Os possíveis valores são: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9c1dbbaa6a429a90a54f8af5f3b380ff58c86dab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65554254260d640638e7cbbbb2d0a0076e209f22
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007491"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519544"
 ---
 # <a name="useractivationcounts-resource-type"></a>tipo de recurso userActivationCounts
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -25,7 +27,7 @@ ms.locfileid: "36007491"
 | windows10Mobile   | Int64  | A contagem de ativação no Windows 10 Mobile. |
 | emiti               | Int64  | A contagem de ativação no iOS.             |
 | Android           | Int64  | A contagem de ativação em um dispositivo Android.  |
-| activatedOnSharedComputer   | Booliano | True se o usuário usou o produto em um computador compartilhado antes. |
+| activatedOnSharedComputer   | Boolean | True se o usuário usou o produto em um computador compartilhado antes. |
 
 ## <a name="json-representation"></a>Representação JSON
 

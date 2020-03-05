@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bf88364ffd8f06783ef98ac32276d948fc6b1791
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 3f5f34664bd721564a8ee63248c65b66123aad98
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667617"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507772"
 ---
 # <a name="certificateauthority-resource-type"></a>tipo de recurso certificateAuthority
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ Representa uma autoridade de certificação.
 |certificado|Binário|Obrigatório. A cadeia de caracteres codificada em base64 que representa o certificado público.|
 |certificateRevocationListUrl|String|A URL da lista de certificados revogados.|
 |deltaCertificateRevocationListUrl|String|A URL contém a lista de todos os certificados revogados desde a última vez que uma lista de revocaton de certificados completo foi criada.|
-|isRootAuthority|Booliano|Obrigatório. **true** se o certificado confiável é uma autoridade raiz, **false** se o certificado confiável é uma autoridade intermediária.|
+|isRootAuthority|Boolean|Obrigatório. **true** se o certificado confiável é uma autoridade raiz, **false** se o certificado confiável é uma autoridade intermediária.|
 |emissor|String|O emissor do certificado, calculado com base no valor do **certificado** . Somente leitura. |
 |issuerSki|String|O identificador de chave de entidade do certificado, calculado com base no valor do **certificado** . Somente leitura.|
 

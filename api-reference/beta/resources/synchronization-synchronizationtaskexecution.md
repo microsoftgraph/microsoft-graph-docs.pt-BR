@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4e5a863111861d78b8a4131b68b8637b005aba49
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 936201202a36d85f8b7a0caa5cfb1cebb002bbb1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007750"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520020"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso synchronizationTaskExecution
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

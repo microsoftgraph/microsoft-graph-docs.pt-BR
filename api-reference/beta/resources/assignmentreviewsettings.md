@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c673d96ab5bb6dbb6f217d5b36f41520b421f5bf
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: a26728fb39fccd1512a559638c595551a20c0042
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331345"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508175"
 ---
 # <a name="assignmentreviewsettings-resource-type"></a>tipo de recurso assignmentReviewSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

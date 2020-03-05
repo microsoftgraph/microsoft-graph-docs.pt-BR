@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3d2e626535d579b77c27125500d7247401f26915
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: 69b90ae911ca956dedf3a7675d7666c7faa4b906
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280614"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508426"
 ---
 # <a name="activitystatistics-resource-type"></a>tipo de recurso activityStatistics
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,9 +51,9 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 |atividade |analyticsActivityType |O tipo de atividade para a qual as estatísticas são retornadas. Os valores possíveis são: `call`, `chat`, `email`, `focus`e `meeting`. |
 |duration |Duração |Total de horas gasto na atividade. O valor é representado no formato ISO 8601 para durações. |
 |endDate |Data |Data em que a atividade foi concluída, expressada no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-03" que segue o formato AAAA-MM-DD. |
-|id |Cadeia de caracteres |ID somente leitura da atividade. Não analise ou personalize o valor para seus cenários. |
+|id |String |ID somente leitura da atividade. Não analise ou personalize o valor para seus cenários. |
 |startDate |Date |Data em que a atividade foi iniciada, expressa no formato ISO 8601 para datas do calendário. Por exemplo, o valor da propriedade poderia ser "2019-07-04" que segue o formato AAAA-MM-DD. |
-|timeZoneUsed |Cadeia de caracteres |O fuso horário que o usuário define no Microsoft Outlook é usado para a computação. Por exemplo, o valor da propriedade poderia ser "hora padrão do Pacífico". |
+|timeZoneUsed |String |O fuso horário que o usuário define no Microsoft Outlook é usado para a computação. Por exemplo, o valor da propriedade poderia ser "hora padrão do Pacífico". |
 
 ## <a name="relationships"></a>Relações
 

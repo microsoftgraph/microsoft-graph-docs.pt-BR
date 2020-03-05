@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: d4f9cd2e8608a29a34ccd0c8bdf54fafa77fee33
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: f2bd2d84d6f7dbc18fc5e37079eebc4289dd2ee2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622611"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499593"
 ---
 # <a name="emailactivitystatistics-resource-type"></a>tipo de recurso emailActivityStatistics
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

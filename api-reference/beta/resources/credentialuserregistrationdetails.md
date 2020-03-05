@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 414cd6977f4e3c15ab7b82bd88329e9e3549f137
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: c86a486223bd32857c17084244befe103a0942d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35518661"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507335"
 ---
 # <a name="credentialuserregistrationdetails-resource-type"></a>tipo de recurso credentialUserRegistrationDetails
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,10 +33,10 @@ Representa os detalhes do uso da redefinição de senha de autoatendimento e da 
 |:-------------|:------------|:------------|
 | authMethods | coleção registrationAuthMethod | Representa o método de autenticação usado pelo usuário. Os valores possíveis são `email`: `mobilePhone`, `officePhone`, `securityQuestion` , (usado somente para redefinição de senha de autoatendimento `appCode`), `alternateMobilePhone` `appNotification`, e (com suporte apenas no registro). |
 | id | String | O identificador exclusivo da atividade. Somente leitura.|
-| iscapable | Booliano | Indica se o usuário está pronto para executar a redefinição de senha de autoatendimento ou a MFA. |
+| iscapable | Boolean | Indica se o usuário está pronto para executar a redefinição de senha de autoatendimento ou a MFA. |
 | isEnabled | Boolean | Indiciates se o usuário está habilitado para executar redefinição de senha de autoatendimento. |
-| isMfaRegistered | Booliano | Indiciates se o usuário está registrado para MFA. |
-| IsRegistered | Booliano | Indica se o usuário registrou todos os métodos de autenticação para redefinição de senha de autoatendimento. |
+| isMfaRegistered | Boolean | Indiciates se o usuário está registrado para MFA. |
+| IsRegistered | Boolean | Indica se o usuário registrou todos os métodos de autenticação para redefinição de senha de autoatendimento. |
 | userDisplayName | String | Fornece o nome de usuário do usuário correspondente. |
 | userPrincipalName | String | Fornece o nome principal de usuário do usuário correspondente. |
 

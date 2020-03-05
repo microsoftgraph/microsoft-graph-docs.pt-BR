@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 881f5e47d7a441a297c21a0463e49496aeaf7a07
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 26a6c46d014ae1820b0355272cbebc5b371746dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965730"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521499"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso privilegedRoleAssignmentRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 
-`privilegedRoleAssignmentRequest`é uma entidade com modelo de tíquete usada para gerenciar o ciclo de vida das atribuições de função. Ele representa a intenção/decisão dos usuários e administradores, e também fornece a flexibilidade para permitir a implementação de Schduling recorrentes, Gates de aprovação e assim por diante, em comparação com as `POST` operações `LIST` e exposição diretas, bem como `MY` e `Cancel` funções em `governanceRoleAssignment`.
+`privilegedRoleAssignmentRequest`é uma entidade com modelo de tíquete usada para gerenciar o ciclo de vida das atribuições de função. Ele representa a intenção/decisão dos usuários e administradores, e também fornece a flexibilidade para permitir a implementação de Schduling recorrentes, Gates de aprovação e assim por diante, em comparação com a `POST` exposição `LIST` e operações diretas `MY` , `Cancel` bem como `governanceRoleAssignment`e funções.
 
 ## <a name="methods"></a>Métodos
 
@@ -36,7 +38,7 @@ Representa a solicitação de operações de atribuição de função no gerenci
 |id|String| Somente leitura. A ID da solicitação de atribuição de função.|
 |assignmentstate|String| O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários.|
 |duration|String| A duração de uma atribuição de função.|
-|motivos|String| O motivo da atribuição de função.|
+|motivo|String| O motivo da atribuição de função.|
 |requestedDateTime|DateTimeOffset| Somente leitura. O tempo de criação da solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |roleId|String| A ID da função.|
 |Cronograma|[governanceSchedule](governanceschedule.md)| O objeto Schedule da solicitação de atribuição de função.|

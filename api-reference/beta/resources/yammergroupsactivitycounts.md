@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 12ab6de821ad4cd4362bcd3baa82525f6894b747
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b997d111f31f290c0721172fdb59d9fdd0fd3bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963756"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518991"
 ---
 # <a name="yammergroupsactivitycounts-resource-type"></a>tipo de recurso yammerGroupsActivityCounts
+
+Namespace: Microsoft. Graph
 
 ## <a name="properties"></a>Propriedades
 

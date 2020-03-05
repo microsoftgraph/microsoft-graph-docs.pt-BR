@@ -5,14 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 56125d94e94033646251edf5d53d2f8b141af29c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c381f3507df9b979fd409add56975ac79db008a2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966066"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521832"
 ---
 # <a name="using-order-hints-in-planner"></a>Usando dicas de ordenação no Planner
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
