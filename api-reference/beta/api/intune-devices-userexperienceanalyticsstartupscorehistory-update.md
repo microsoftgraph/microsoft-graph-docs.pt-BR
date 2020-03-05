@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b3c49164ef636ad7822ca4c82bd81802ea37431
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: a4645c627a54f0476c0928bb5bfd2267a04741fb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160830"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42467953"
 ---
-# <a name="update-userexperienceanalyticsstartupscorehistory"></a><span data-ttu-id="52bde-103">Atualizar userExperienceAnalyticsStartupScoreHistory</span><span class="sxs-lookup"><span data-stu-id="52bde-103">Update userExperienceAnalyticsStartupScoreHistory</span></span>
+# <a name="update-userexperienceanalyticsstartupscorehistory"></a><span data-ttu-id="d4d25-103">Atualizar userExperienceAnalyticsStartupScoreHistory</span><span class="sxs-lookup"><span data-stu-id="d4d25-103">Update userExperienceAnalyticsStartupScoreHistory</span></span>
 
-> <span data-ttu-id="52bde-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="52bde-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="d4d25-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d4d25-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="52bde-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="52bde-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d4d25-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d4d25-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="52bde-106">Atualiza as propriedades de um objeto [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .</span><span class="sxs-lookup"><span data-stu-id="52bde-106">Update the properties of a [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object.</span></span>
+> <span data-ttu-id="d4d25-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d4d25-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="52bde-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="52bde-107">Prerequisites</span></span>
-<span data-ttu-id="52bde-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52bde-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d4d25-107">Atualiza as propriedades de um objeto [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .</span><span class="sxs-lookup"><span data-stu-id="d4d25-107">Update the properties of a [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object.</span></span>
 
-|<span data-ttu-id="52bde-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="52bde-110">Permission type</span></span>|<span data-ttu-id="52bde-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="52bde-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="d4d25-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d4d25-108">Prerequisites</span></span>
+<span data-ttu-id="d4d25-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d4d25-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="d4d25-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d4d25-111">Permission type</span></span>|<span data-ttu-id="d4d25-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="d4d25-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="52bde-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="52bde-112">Delegated (work or school account)</span></span>|<span data-ttu-id="52bde-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52bde-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="52bde-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="52bde-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="52bde-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="52bde-115">Not supported.</span></span>|
-|<span data-ttu-id="52bde-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="52bde-116">Application</span></span>|<span data-ttu-id="52bde-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52bde-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="d4d25-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d4d25-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d4d25-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4d25-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="d4d25-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d4d25-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d4d25-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d4d25-116">Not supported.</span></span>|
+|<span data-ttu-id="d4d25-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d4d25-117">Application</span></span>|<span data-ttu-id="d4d25-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4d25-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="52bde-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="52bde-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d4d25-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d4d25-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,34 +40,34 @@ ms.locfileid: "42160830"
 PATCH /deviceManagement/userExperienceAnalyticsStartupScoreHistory/{userExperienceAnalyticsStartupScoreHistoryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="52bde-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="52bde-119">Request headers</span></span>
-|<span data-ttu-id="52bde-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="52bde-120">Header</span></span>|<span data-ttu-id="52bde-121">Valor</span><span class="sxs-lookup"><span data-stu-id="52bde-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d4d25-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d4d25-120">Request headers</span></span>
+|<span data-ttu-id="d4d25-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d4d25-121">Header</span></span>|<span data-ttu-id="d4d25-122">Valor</span><span class="sxs-lookup"><span data-stu-id="d4d25-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="52bde-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="52bde-122">Authorization</span></span>|<span data-ttu-id="52bde-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="52bde-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="52bde-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="52bde-124">Accept</span></span>|<span data-ttu-id="52bde-125">application/json</span><span class="sxs-lookup"><span data-stu-id="52bde-125">application/json</span></span>|
+|<span data-ttu-id="d4d25-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="d4d25-123">Authorization</span></span>|<span data-ttu-id="d4d25-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d4d25-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d4d25-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="d4d25-125">Accept</span></span>|<span data-ttu-id="d4d25-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d4d25-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="52bde-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="52bde-126">Request body</span></span>
-<span data-ttu-id="52bde-127">No corpo da solicitação, forneça uma representação JSON do objeto [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .</span><span class="sxs-lookup"><span data-stu-id="52bde-127">In the request body, supply a JSON representation for the [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d4d25-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d4d25-127">Request body</span></span>
+<span data-ttu-id="d4d25-128">No corpo da solicitação, forneça uma representação JSON do objeto [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .</span><span class="sxs-lookup"><span data-stu-id="d4d25-128">In the request body, supply a JSON representation for the [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object.</span></span>
 
-<span data-ttu-id="52bde-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md).</span><span class="sxs-lookup"><span data-stu-id="52bde-128">The following table shows the properties that are required when you create the [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md).</span></span>
+<span data-ttu-id="d4d25-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md).</span><span class="sxs-lookup"><span data-stu-id="d4d25-129">The following table shows the properties that are required when you create the [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md).</span></span>
 
-|<span data-ttu-id="52bde-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="52bde-129">Property</span></span>|<span data-ttu-id="52bde-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="52bde-130">Type</span></span>|<span data-ttu-id="52bde-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="52bde-131">Description</span></span>|
+|<span data-ttu-id="d4d25-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d4d25-130">Property</span></span>|<span data-ttu-id="d4d25-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d4d25-131">Type</span></span>|<span data-ttu-id="d4d25-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="d4d25-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="52bde-132">id</span><span class="sxs-lookup"><span data-stu-id="52bde-132">id</span></span>|<span data-ttu-id="52bde-133">String</span><span class="sxs-lookup"><span data-stu-id="52bde-133">String</span></span>|<span data-ttu-id="52bde-134">O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="52bde-134">The unique identifier of the user experience analytics device startup process.</span></span>|
-|<span data-ttu-id="52bde-135">startupDateTime</span><span class="sxs-lookup"><span data-stu-id="52bde-135">startupDateTime</span></span>|<span data-ttu-id="52bde-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="52bde-136">DateTimeOffset</span></span>|<span data-ttu-id="52bde-137">A experiência do usuário da data de início do dispositivo de análise.</span><span class="sxs-lookup"><span data-stu-id="52bde-137">The user experience analytics device startup date time.</span></span>|
-|<span data-ttu-id="52bde-138">startupScore</span><span class="sxs-lookup"><span data-stu-id="52bde-138">startupScore</span></span>|<span data-ttu-id="52bde-139">Int32</span><span class="sxs-lookup"><span data-stu-id="52bde-139">Int32</span></span>|<span data-ttu-id="52bde-140">Pontuação de inicialização do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="52bde-140">User experience analytics device startup score.</span></span>|
-|<span data-ttu-id="52bde-141">coreBootScore</span><span class="sxs-lookup"><span data-stu-id="52bde-141">coreBootScore</span></span>|<span data-ttu-id="52bde-142">Int32</span><span class="sxs-lookup"><span data-stu-id="52bde-142">Int32</span></span>|<span data-ttu-id="52bde-143">A pontuação de inicialização do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="52bde-143">The user experience analytics device core boot score.</span></span>|
-|<span data-ttu-id="52bde-144">coreSigninScore</span><span class="sxs-lookup"><span data-stu-id="52bde-144">coreSigninScore</span></span>|<span data-ttu-id="52bde-145">Int32</span><span class="sxs-lookup"><span data-stu-id="52bde-145">Int32</span></span>|<span data-ttu-id="52bde-146">A pontuação de entrada do core do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="52bde-146">The User experience analytics device core sign-in score.</span></span>|
+|<span data-ttu-id="d4d25-133">id</span><span class="sxs-lookup"><span data-stu-id="d4d25-133">id</span></span>|<span data-ttu-id="d4d25-134">String</span><span class="sxs-lookup"><span data-stu-id="d4d25-134">String</span></span>|<span data-ttu-id="d4d25-135">O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="d4d25-135">The unique identifier of the user experience analytics device startup process.</span></span>|
+|<span data-ttu-id="d4d25-136">startupDateTime</span><span class="sxs-lookup"><span data-stu-id="d4d25-136">startupDateTime</span></span>|<span data-ttu-id="d4d25-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d4d25-137">DateTimeOffset</span></span>|<span data-ttu-id="d4d25-138">A experiência do usuário da data de início do dispositivo de análise.</span><span class="sxs-lookup"><span data-stu-id="d4d25-138">The user experience analytics device startup date time.</span></span>|
+|<span data-ttu-id="d4d25-139">startupScore</span><span class="sxs-lookup"><span data-stu-id="d4d25-139">startupScore</span></span>|<span data-ttu-id="d4d25-140">Int32</span><span class="sxs-lookup"><span data-stu-id="d4d25-140">Int32</span></span>|<span data-ttu-id="d4d25-141">Pontuação de inicialização do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="d4d25-141">User experience analytics device startup score.</span></span>|
+|<span data-ttu-id="d4d25-142">coreBootScore</span><span class="sxs-lookup"><span data-stu-id="d4d25-142">coreBootScore</span></span>|<span data-ttu-id="d4d25-143">Int32</span><span class="sxs-lookup"><span data-stu-id="d4d25-143">Int32</span></span>|<span data-ttu-id="d4d25-144">A pontuação de inicialização do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="d4d25-144">The user experience analytics device core boot score.</span></span>|
+|<span data-ttu-id="d4d25-145">coreSigninScore</span><span class="sxs-lookup"><span data-stu-id="d4d25-145">coreSigninScore</span></span>|<span data-ttu-id="d4d25-146">Int32</span><span class="sxs-lookup"><span data-stu-id="d4d25-146">Int32</span></span>|<span data-ttu-id="d4d25-147">A pontuação de entrada do core do dispositivo de análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="d4d25-147">The User experience analytics device core sign-in score.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="52bde-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="52bde-147">Response</span></span>
-<span data-ttu-id="52bde-148">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="52bde-148">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d4d25-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="d4d25-148">Response</span></span>
+<span data-ttu-id="d4d25-149">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d4d25-149">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="52bde-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="52bde-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d4d25-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d4d25-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="52bde-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="52bde-150">Request</span></span>
-<span data-ttu-id="52bde-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="52bde-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d4d25-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d4d25-151">Request</span></span>
+<span data-ttu-id="d4d25-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d4d25-152">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsStartupScoreHistory/{userExperienceAnalyticsStartupScoreHistoryId}
 Content-type: application/json
@@ -80,8 +82,8 @@ Content-length: 216
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="52bde-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="52bde-152">Response</span></span>
-<span data-ttu-id="52bde-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="52bde-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d4d25-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="d4d25-153">Response</span></span>
+<span data-ttu-id="d4d25-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d4d25-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
