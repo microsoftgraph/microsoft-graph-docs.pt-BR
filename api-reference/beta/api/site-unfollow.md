@@ -1,18 +1,20 @@
 ---
 author: learafa
-title: Site da seguinte
+title: Deixar de seguir site
 description: Não acompanhar o site de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7279459c4830e461453f08348ed29ae1e828bc92
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b818e77eb509756a26697d6c7ccf0124f7959b5e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409958"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453188"
 ---
-# <a name="unfollow-site"></a>Site da seguinte 
+# <a name="unfollow-site"></a>Deixar de seguir site 
+
+Namespace: Microsoft. Graph
 
 Não acompanhar o [site](../resources/site.md) de um usuário ou vários sites.
 
@@ -41,7 +43,7 @@ No corpo da solicitação, forneça uma matriz de objetos JSON com o parâmetro 
 
 | Nome                 | Valor  | Descrição                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | string | O [identificador exclusivo](../resources/site.md#id-property) do item. |
+|   id                 | cadeia de caracteres | O [identificador exclusivo](../resources/site.md#id-property) do item. |
 
 ## <a name="response"></a>Resposta
 
@@ -55,7 +57,7 @@ O exemplo a seguir mostra como desacompanhar vários sites.
 ### <a name="request"></a>Solicitação
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -74,15 +76,15 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

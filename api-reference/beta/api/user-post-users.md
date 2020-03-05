@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e09525eaa1889a195d3a0d1c05793e6148d40ef1
-ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
+ms.openlocfilehash: 9f95d1b2264e6a09b8ab2a33345d09ba00e62604
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41232039"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451667"
 ---
 # <a name="create-user"></a>Criar usuário
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,11 +50,11 @@ POST /users
 
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md).
 
-A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade **Identities** para o usuário que você está criando, nem todas as propriedades listadas serão necessárias. Para uma [identidade de conta local B2C](../resources/objectidentity.md), somente **passwordProfile** é necessário e **passwordPolicy** deve ser definido como `DisablePasswordExpiration`. Para uma identidade social, nenhuma das propriedades é necessária.
+A tabela a seguir lista as propriedades que são necessárias ao criar um usuário. Se você estiver incluindo uma propriedade de **identidades** para o usuário que está criando, nem todas as propriedades listadas serão necessárias. Para obter uma [identidade de conta local B2C](../resources/objectidentity.md), só é necessário **passwordProfile** e **passwordPolicy** deve ser definido como `DisablePasswordExpiration`. Para uma identidade social, nenhuma das propriedades é necessária.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
+|accountEnabled |Boolean |True se a conta estiver habilitada; caso contrário, false.|
 |displayName |cadeia de caracteres |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
@@ -77,7 +79,7 @@ Se tiver êxito, este método retornará um código de resposta `201 Created` e 
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {  
   "blockType": "request",   
   "name": "create_user_from_users_2"    
@@ -98,15 +100,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -144,17 +146,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>Exemplo 2: criar um usuário com identidades sociais e de conta local
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>Exemplo 2: criar um usuário com identidades de conta social e local
 
-Crie um novo usuário, com uma identidade de conta local com um nome de entrada, um endereço de email como entrada e com uma identidade social. Este exemplo geralmente é usado para cenários de migração em locatários de B2C.  
+Crie um novo usuário, com uma identidade de conta local, com um nome de logon, um endereço de email como logon e com uma identidade social. Esse exemplo é geralmente usado para cenários de migração em locatários de B2C.  
 
 >[!NOTE] 
->Para identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitada.
+>Para as identidades de conta local, as expirações de senha devem ser desabilitadas e forçar alteração de senha no próximo logon também deve ser desabilitado.
 
 #### <a name="request"></a>Solicitação
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {  
   "blockType": "request",   
   "name": "create_user_from_users_identities"   
@@ -189,15 +191,15 @@ Content-type: application/json
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-identities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-identities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

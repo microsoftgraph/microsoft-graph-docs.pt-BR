@@ -5,14 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6bb11e36b2a5f11f94cea7294e77e6d23aa8dd54
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 2b01ed0193c5360b46aaa24da6fe257a6a86bb47
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394470"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453090"
 ---
 # <a name="create-subscription"></a>Criar assinatura
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) (/Communications/callRecords) | Sem suporte | Sem suporte | CallRecords. Read. All  |
+|[callRecord](../resources/callrecords-callrecord.md) (/Communications/callRecords) | Sem suporte | Sem suporte | CallRecords.Read.All  |
 |[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/Teams/allMessages--todas as mensagens do canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Sem suporte | Sem suporte | Chat.Read.All  |
@@ -170,7 +172,7 @@ Content-length: 252
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
+## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 

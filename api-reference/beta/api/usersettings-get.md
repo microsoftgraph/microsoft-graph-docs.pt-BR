@@ -5,19 +5,21 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82d6897f0637090db704a5ca174f75f04446ba13
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: fa1856d6c30e11eee3f3b3379e6d9e8164f56d08
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844166"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451557"
 ---
 # <a name="get-settings"></a>Obter configurações
 
+Namespace: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia o objeto [UserSettings](../resources/usersettings.md) User e Organization.
-Para saber como atualizar as propriedades do objeto [UserSettings](../resources/usersettings.md) , consulte [Update User Settings](usersettings-update.md).
+Leia o objeto [userSettings](../resources/usersettings.md) do usuário e da organização.
+Para saber como atualizar as propriedades do objeto [userSettings](../resources/usersettings.md), confira [atualizar as configurações de usuário](usersettings-update.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [UserSettings](../resources/usersettings.md) no corpo da resposta.
+Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [userSettings](../resources/usersettings.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

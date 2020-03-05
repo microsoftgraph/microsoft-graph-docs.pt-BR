@@ -5,15 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: 911e18d4a866d1e1af53582e9b6d32aaf3f33764
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: b66544406372c2eaa7be6f8f4261c75cbd7c6c5e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843977"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451662"
 ---
 # <a name="create-and-send-a-notification"></a>Criar e enviar uma notificação
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Namespace: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar e enviar uma notificação direcionada a um usuário por meio do Microsoft Graph. A notificação é armazenada no repositório de feeds de notificação do Microsoft Graph e é enviada a todos os clientes de aplicativos em todos os pontos de extremidade do dispositivo nos quais o usuário está conectado.  
 

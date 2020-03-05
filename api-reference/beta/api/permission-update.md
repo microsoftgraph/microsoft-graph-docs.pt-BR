@@ -6,14 +6,16 @@ title: Alterar permissões de compartilhamento
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 79ff1a987a6d31ef38d9c6b3002fad3849263654
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3c5d0f45db2cf73c53adfd697840c2eb55c4c8c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413661"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455941"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -58,7 +60,7 @@ Para obter um melhor desempenho, não inclua valores existentes que não foram a
 
 | Propriedade     | Tipo   | Descrição                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+| **roles**    | String collection | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
 
@@ -69,7 +71,7 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e um objet
 Aqui está um exemplo da solicitação que altera a função da permissão de compartilhamento para somente leitura.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
 
 ```http
@@ -80,15 +82,15 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 27919e11c29d5003ba3be4a0fe25f531b5206c5d
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: dddbdcdb9631e54f012e3111fb4080c72926f767
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268405"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451714"
 ---
 # <a name="create-event"></a>Criar evento
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

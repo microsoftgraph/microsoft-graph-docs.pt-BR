@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: f112c7d3253a0a0801b7542f492c6f3f1f675c81
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: a7516798c18ec00f770d5632f3ed3faee1830e64
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053939"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453510"
 ---
 # <a name="send-device-command"></a>Enviar comando do dispositivo
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -148,7 +150,7 @@ HTTP/1.1 201 OK
 
 O exemplo a seguir mostra como consultar um serviço de aplicativo em um dispositivo. Para usar um serviço de aplicativo, você deve fazer uma chamada POST usando a ID do dispositivo (obtido de uma chamada GET ativada `me/devices`). Para usar o exemplo a seguir, você deve instalar o [aplicativo Roma](https://aka.ms/romanapp) no seu dispositivo de destino.
 
-Várias propriedades adicionais devem ser definidas na chamada. O *tipo* deve ser definido *como serviço*, *AppServiceName* deve ser definido como o nome do serviço de aplicativo definido no aplicativo, *PackageFamilyName* deve ser definido como o nome da família do pacote definido no manifesto do aplicativo e *carga* contém as chaves e os valores para o serviço que você está chamando no aplicativo de destino.
+Várias propriedades adicionais devem ser definidas na chamada. O *tipo* deve ser definido *como serviço*, *AppServiceName* deve ser definido como o nome do serviço de aplicativo definido no aplicativo, *PackageFamilyName* deve ser definido como o nome da família de pacote definido no manifesto do aplicativo e a *carga* contém as chaves e os valores para o serviço que você está chamando no aplicativo de destino.
 
 #### <a name="request"></a>Solicitação
 

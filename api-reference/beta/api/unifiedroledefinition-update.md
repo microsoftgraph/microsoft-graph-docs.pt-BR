@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3be16446147e3e0dd9d4c2a481b5fdae63312f6a
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: ee564c893473231cddf68e804b767c2f8142137a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461595"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452047"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,8 +51,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|String| A descrição da definição de função. Somente leitura quando isbuiltem for true. |
-|displayName|String| O nome de exibição da definição de função. Somente leitura quando isbuiltem for true. Obrigatório.|
-|id|Cadeia de caracteres| O identificador exclusivo da definição de função. Chave, não anulável, somente leitura. |
+|displayName|Cadeia de caracteres| O nome de exibição da definição de função. Somente leitura quando isbuiltem for true. Obrigatório.|
+|id|String| O identificador exclusivo da definição de função. Chave, não anulável, somente leitura. |
 |isBuiltIn|Booliano| Sinalizador que indica se a definição de função é parte do conjunto padrão incluído no produto ou personalizado. Somente leitura. |
 |isEnabled|Boolean| Sinalizador que indica se a função está habilitada para atribuição. Se false, a função não estará disponível para atribuição. Somente leitura quando isbuiltem for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de escopos permissões concedidas pela definição de função aplicam-se ao. No momento, só há suporte para "/". Somente leitura quando isbuiltem for true. |
@@ -68,7 +70,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 
 Este é um exemplo de solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroledefinition"
@@ -92,15 +94,15 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedroledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedroledefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroledefinition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

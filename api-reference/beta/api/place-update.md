@@ -5,14 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e2e517d0a20384c8aaaa24e9f385cf5560c411e
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 7d93a4dcdacbb5bf1dc66ac2f26389727cfd80da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844187"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455806"
 ---
 # <a name="update-place"></a>Local de atualização
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Place. ReadWrite. All. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Sem suporte |
+| Aplicativo                            | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,11 +60,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | floorLabel             | String                                            | Especifica a carta de piso em que a sala está ativa. |
 | floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da sala de opções no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
-| isWheelchairAccessible | Booliano                                           | Especifica se a sala pode ser acessada por cadeira. |
+| isWheelchairAccessible | Boolean                                           | Especifica se a sala pode ser acessada por cadeira. |
 | rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
 | apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou sala de salas. |
-| tags                   | Coleção String                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
+| tags                   | String collection                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
 | videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
@@ -79,7 +81,7 @@ Este é um exemplo de solicitação.
 
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -98,15 +100,15 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -174,7 +176,7 @@ Este é um exemplo de solicitação.
 
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
@@ -203,15 +205,15 @@ Content-type: application/json
  }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

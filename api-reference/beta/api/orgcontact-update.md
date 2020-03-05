@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 653f2fcb01e7fb0db5599b3dbc87fa7f38827ffd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c56ab5562e9b242819d7110914329996e64596a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414214"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456229"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +46,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |city|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|Booliano||
+|onPremisesSyncEnabled|Boolean||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
@@ -55,10 +57,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |officeLocation|String||
 |postalCode|String||
 |proxyAddresses|String||
-|state|String||
+|state|Cadeia de caracteres||
 |streetAddress|String||
 |surname|String||
-|businessPhones|Coleção de cadeias de caracteres||
+|businessPhones|String collection||
 
 ## <a name="response"></a>Resposta
 
@@ -67,7 +69,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_orgcontact"
@@ -88,15 +90,15 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-orgcontact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-orgcontact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

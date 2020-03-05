@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 01737dd7ffbb15e3fd96cad6b9c9c3aa55cc981d
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: eb74999e48c3b2d524bf35d2d51390a526043a35
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633654"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455260"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,13 +52,13 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 |elevationDuration|duration|A duração quando a função é ativada. Obrigatório.|
 |id|string|O identificador exclusivo das configurações de função. Somente leitura. Obrigatório.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável. Obrigatório.|
-|lastGlobalAdmin|Booliano|Apenas para uso interno.|
+|lastGlobalAdmin|Boolean|Apenas para uso interno.|
 |maxElavationDuration|duration|Duração máxima da função ativada. Obrigatório.|
-|mfaOnElevation|Booliano|**true** se a MFA é necessária para ativar a função. **false** se a MFA não é necessária para ativar a função. Obrigatório.|
+|mfaOnElevation|Boolean|**true** se a MFA é necessária para ativar a função. **false** se a MFA não é necessária para ativar a função. Obrigatório.|
 |minElevationDuration|duration|Duração mínima para a função ativada. Obrigatório.|
-|notificationToUserOnElevation|Booliano|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada. Obrigatório.|
-|ticketingInfoOnElevation|Booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
-|approvalOnElevation|Booliano|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função. Obrigatório.|
+|notificationToUserOnElevation|Boolean|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada. Obrigatório.|
+|ticketingInfoOnElevation|Boolean|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
+|approvalOnElevation|Boolean|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função. Obrigatório.|
 |approverIds|coleção de cadeias de caracteres|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="response"></a>Resposta
@@ -68,7 +70,7 @@ Observe que o locatário precisa ser registrado no PIM. Caso contrário, o códi
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "put_privilegedrolesettings"
@@ -91,15 +93,15 @@ Content-type: application/json
     "approverIds": ["e2b2a2fb-13d7-495c-adc9-941fe966793f", "22770e3f-b9b4-418e-9dea-d0e3d2f275dd"]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/put-privilegedrolesettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-privilegedrolesettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/put-privilegedrolesettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

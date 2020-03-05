@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 34c73f3acec6084989f48d7e96b7bc05cbd2b115
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 0db1441030dc75d60dcbb1bd3d3eab2b09a5aad4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219738"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452338"
 ---
 # <a name="update-tiindicator"></a>Atualizar tiIndicator
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,19 +52,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |ação|string| A ação a ser aplicada se o indicador for correspondido de dentro da ferramenta de segurança do targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`.|
-|activityGroupNames|Coleção de cadeias de caracteres|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
+|activityGroupNames|String collection|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
 |additionalInformation|String|Uma área catchall na qual os dados extras do indicador não cobertos pelas outras propriedades de tiIndicator podem ser colocados. Os dados colocados no additionalInformation normalmente não serão utilizados pela ferramenta de segurança do targetProduct.|
 |confidence|Int32|Um inteiro representando a confiança dos dados dentro do indicador identifica precisamente o comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
-|descrição|String|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
+|description|String|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
 |diamondModel|[diamondModel](#diamondmodel-values)|A área do modelo em losango em que esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime indicando quando o indicador expira. Todos os indicadores devem ter uma data de vencimento para evitar indicadores obsoletos persistentes no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`.|
 |externalId|Cadeia de caracteres|Um número de identificação que liga o indicador de volta para o sistema do provedor de indicadores (por exemplo, uma chave externa).|
-|isActive|Booliano|Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
+|isActive|Boolean|Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
 |killChain|coleção [killChain](#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve o ponto ou os pontos na cadeia de Kill que este indicador aponta. Consulte "valores de killChain" abaixo para ver os valores exatos.|
 |knownFalsePositives|String|Cenários nos quais o indicador pode causar falsos positivos. Isso deve ser um texto legível por pessoas.|
 |lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`|
-|malwareFamilyNames|Coleção de cadeias de caracteres|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
-|passiveOnly|Booliano|Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso.|
+|malwareFamilyNames|String collection|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
+|passiveOnly|Boolean|Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso.|
 |severity|Int32|Um inteiro que representa a gravidade do comportamento mal-intencionado identificado pelos dados dentro do indicador. Os valores aceitáveis são 0 – 5, onde 5 é o mais grave e zero não é grave. O valor padrão é 3.|
 |tags|String collection|Uma matriz JSON de cadeias de caracteres que armazena marcas arbitrárias/palavras-chave.|
 |tlpLevel|[tlpLevel](#tlplevel-values)| Valor do protocolo de luz de tráfego para o indicador. Os valores possíveis são: `unknown`, `white`, `green`, `amber`, `red`.|

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 74a937c58a0662c34547f23587206c42d5801fb3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d86f4011df727ec31e2c054e0fa2ea10736ca9e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992175"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455526"
 ---
 # <a name="delete-policy"></a>Excluir política
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Quando é bem-sucedido, este método retorna um código de resposta `204 No Content`. Se não tiver êxito...
+Se bem sucedido, este método retorna um código de resposta `204 No Content`. Se não tiver êxito...
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir exclui uma política.

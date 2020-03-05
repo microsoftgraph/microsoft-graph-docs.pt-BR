@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 1c4d276211071ea66351cec3b6bc1fa1684cab8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c9fcd985b3e3a2b38a02e4bf5366a84788bdc866
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992028"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454854"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

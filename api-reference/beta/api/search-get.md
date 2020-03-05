@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 90db18f6dddeff1f3bf57b0f2c756928564d54f6
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 64e9c65d0de415e62d0238c58dc460dd1a82fcd5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703711"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453705"
 ---
-# <a name="search"></a>Pesquisar
+# <a name="search"></a>Pesquisa
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

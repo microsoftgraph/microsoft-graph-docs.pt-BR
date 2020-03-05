@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ce9ccfe4c5181b51f8ed006be6e5b32dcf56fe34
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 93e3f45cc52af1e6e4c72be0d22a5bfcef376c5a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394446"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454882"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Atualizar plannerUser
-description: Atualiza as propriedades de um objeto plannerUser. Você pode usar essa operação para adicionar ou remover planos da lista de planos favoritos de um usuário e para indicar quais planos o usuário exibiu recentemente.
+description: Atualize as propriedades de um objeto plannerUser. Você pode usar essa operação para adicionar ou remover planos da lista de planos favoritos de um usuário e para indicar quais planos o usuário exibiu recentemente.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 269741aff4f17a0855bda4681ae49799c03cd4f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 690b3f5ee5eac190916aa1137fc90504cc1de8ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992168"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455547"
 ---
 # <a name="update-planneruser"></a>Atualizar plannerUser
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

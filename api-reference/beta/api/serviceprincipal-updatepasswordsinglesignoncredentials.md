@@ -5,14 +5,16 @@ localization_priority: Normal
 author: bharathramh92
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 30e629bddd7de3e55b83c43760d5f146c6849a27
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 7b64d948a59fa52b193d787c850cdab86d34275b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747801"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453314"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipalName: updatePasswordSingleSignOnCredentials
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
+|id|String|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
 |las|coleção [Credential](../resources/credential.md)|Uma lista de objetos de credencial que definem o fluxo de entrada completo.|
 
 ## <a name="response"></a>Resposta
@@ -65,7 +67,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 Veja a seguir um exemplo de uma solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_updatepasswordsinglesignoncredentials"
@@ -91,15 +93,15 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-updatepasswordsinglesignoncredentials-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-updatepasswordsinglesignoncredentials-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-updatepasswordsinglesignoncredentials-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ee4e9dcf16489952de2c516a5247d4bb2d6d3f39
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 5d1eb7ffa6659275f333966306c74b8bd7f0e7ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952087"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453034"
 ---
 # <a name="create-swapshiftschangerequest"></a>Criar swapShiftsChangeRequest
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

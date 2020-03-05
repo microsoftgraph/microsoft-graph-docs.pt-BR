@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9ec20b1208906129e5559307fc347e9d39c6dd7e
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: ba2c351ffb511ecb83d87d7b4d151da1528a2387
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840965"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454828"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Atribuir publishedResource a onPremisesAgentGroup
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:--------------------------------------|:---------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnPremisesPublishingProfiles. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | OnPremisesPublishingProfiles.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 

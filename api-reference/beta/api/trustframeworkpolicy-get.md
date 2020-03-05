@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 697218f1ff488b935b401406fbd30ddd9f5ebf65
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: b8a7c2a9d38d5da3ef38d2a724b3fa1b015a4efd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734385"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452065"
 ---
 # <a name="get-trustframeworkpolicy"></a>Obter trustFrameworkPolicy
+
+Namespace: Microsoft. Graph
 
 >**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -24,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Policy.Read.All|
+|Delegado (conta corporativa ou de estudante)| Policy. Read. All, Policy. ReadWrite. TrustFramework|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Policy.Read.All|
+|Aplicativo|Policy. Read. All, Policy. ReadWrite. TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 

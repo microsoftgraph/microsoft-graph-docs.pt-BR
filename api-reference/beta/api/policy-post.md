@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ca8b2f2d98c577fb053f95110a11f5c3c7b875ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e13ef2bdcf424d68d94d97412487708022386cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983436"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455498"
 ---
 # <a name="create-policy"></a>Criar política
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar uma pol�
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |definir|String|A versão de cadeia de caracteres do objeto [Policy](../resources/policy.md) .|
-|displayName|String|Um nome personalizado para a política.|
+|displayName|Cadeia de caracteres|Um nome personalizado para a política.|
 |type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta

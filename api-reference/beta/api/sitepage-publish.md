@@ -6,14 +6,16 @@ title: Publicar página
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5f4404b33a54979271750d4074a9c6da235966ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 90d08b3f8fae2ed186d1809b4318eec7ef9cf5dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991209"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453164"
 ---
 # <a name="sitepage-publish"></a>sitePage: publish
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

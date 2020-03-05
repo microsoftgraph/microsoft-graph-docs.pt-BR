@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ef1c33422b36e8fd88fcc6646506905e2a091e1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f75f25eb44693ce4158bdbf1e8de1047fecadef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35991097"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452880"
 ---
 # <a name="get-synchronizationtemplate"></a>Obter synchronizationtemplate
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ed4880d80bd94febc4d12deb04ca10a4cb7dad3
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: 782be85dc7a82e56bc5a2dc0d4449b6562f68c17
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396734"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452614"
 ---
 # <a name="clone-a-team"></a>Clonar uma equipe
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,11 +59,11 @@ POST /teams/{id}/clone
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |classificação|Cadeia de caracteres (opcional)|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Os valores válidos para essa propriedade são definidos pela criação de um valor de [configuração](../resources/directorysetting.md) de classificação, com base na [definição de modelo](../resources/directorysettingtemplate.md). Se a classificação não for especificada, a classificação será copiada da equipe/grupo original.|
-|descrição|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, será deixada em branco.|
+|description|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, será deixada em branco.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, será calculada a partir do displayName. Problema conhecido: esta propriedade é ignorada no momento.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Uma lista separada por vírgulas das partes a serem clonadas. As partes legais são "aplicativos, guias, configurações, canais, membros".|
-|visibilidade|[teamVisibilityType](../resources/teamvisibilitytype.md) opcion| Especifica a visibilidade do grupo. Os valores possíveis são: **Private**, **Public**. Se a visibilidade não for especificada, a visibilidade será copiada da equipe/grupo original. Se a equipe que está sendo clonada for uma equipe do **educationClass** , o parâmetro Visibility será ignorado e a visibilidade do novo grupo será definida como HiddenMembership.|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (opcional)| Especifica a visibilidade do grupo. Os valores possíveis são: **Private**, **Public**. Se a visibilidade não for especificada, a visibilidade será copiada da equipe/grupo original. Se a equipe que está sendo clonada for uma equipe do **educationClass** , o parâmetro Visibility será ignorado e a visibilidade do novo grupo será definida como HiddenMembership.|
 
 ## <a name="response"></a>Resposta
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 85104248d840478a9595382b54d3eaa7ea7e1e5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81c9d429ba3a74d854a9d091f6e40af7993916f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978858"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455489"
 ---
 # <a name="update-policy"></a>Política de atualização
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,8 +46,8 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros que precis
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |definir|String|A versão do em formato do objeto [Policy](../resources/policy.md) .|
-|displayName|String|Um nome personalizado para a política.|
-|isOrganizationDefault|Booliano|Especifica se essa política é aplicada por padrão.|
+|displayName|Cadeia de caracteres|Um nome personalizado para a política.|
+|isOrganizationDefault|Boolean|Especifica se essa política é aplicada por padrão.|
 |type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 421fb9be650ab22c07e940ab2eac2fcf20abf5a7
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 98830be617ef35492256bbe6ddc19e7ac1af51d6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234110"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453482"
 ---
 # <a name="remove-homerealmdiscoverypolicy"></a>Remover homeRealmDiscoveryPolicy
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

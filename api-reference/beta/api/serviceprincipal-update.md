@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 852ea0467779ba0dab80eb0c571f39b1cf60ed9b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b48477c319aaaa72a4427b31f23bf4624c869b38
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410120"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453335"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar o servicePrincipalName
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,10 +45,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |accountEnabled|Booliano|                **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.            |
 |appDisplayName|Cadeia de caracteres|O nome de exibição exposto pelo aplicativo associado.|
-|appId|Cadeia de caracteres|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
+|appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
 |appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** de um usuário ou grupo é necessário antes que o Azure AD emita um token de usuário ou de acesso ao aplicativo.                            **Observações**: requer a versão 1,5 ou posterior, não anulável.            |
 |appRoles|appRole|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** na entidade de aplicativo **observações**: requer a versão 1,5 ou posterior, não anulável.            |
-|displayName|String|O nome de exibição da entidade de serviço.|
+|displayName|Cadeia de caracteres|O nome de exibição da entidade de serviço.|
 |errorUrl|String|            |
 |homepage|String|A URL da home page do aplicativo associado.|
 |keyCredentials|keycredential|A coleção de credenciais principais associada à entidade de serviço.                            **Anotações**: não anulável.            |
@@ -58,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |replyUrls|String|As URLs às quais os tokens de usuário são enviados para entrar com aplicativo associado ou os URIs de redirecionamento aos quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
 |samlMetadataUrl|String|            |
 |servicePrincipalNames|String|Os URIs que identificam o aplicativo associado. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não nulos, o operador **any** é obrigatório para expressões de filtro em Propriedades de vários valores; para obter mais informações, consulte [supported queries, Filters, and paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
-|marcações|String|                                        **Anotações**: não anulável.            |
+|tags|String|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta
 
@@ -67,7 +69,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_serviceprincipal"
@@ -97,15 +99,15 @@ Content-length: 391
   "appRoleAssignmentRequired": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 471a583851aa8e4548d2f9c66672ce54227e5d97
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: affb05ba026be7c0ed4fbc4c09c09d1af8715ebc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977654"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452943"
 ---
 # <a name="delete-synchronizationschema"></a>Excluir synchronizationSchema
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

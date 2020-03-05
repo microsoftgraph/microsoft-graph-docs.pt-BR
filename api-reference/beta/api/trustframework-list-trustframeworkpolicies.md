@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32b6314409bd9253e85d8a9df31cf005d0fe3983
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 61e110d00bb39074314f847cdfb530b9488a855f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734469"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452180"
 ---
 # <a name="list-trustframeworkpolicies"></a>Listar trustFrameworkPolicies
+
+Namespace: Microsoft. Graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -24,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy.Read.All|
+|Delegado (conta corporativa ou de estudante)|Policy. Read. All, Policy. ReadWrite. TrustFramework|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Policy.Read.All|
+|Aplicativo|Policy. Read. All, Policy. ReadWrite. TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -61,7 +63,7 @@ O exemplo a seguir recupera todos os **trustFrameworkPolicies**.
 ##### <a name="request"></a>Solicitação
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_trustFrameworks"
@@ -69,15 +71,15 @@ O exemplo a seguir recupera todos os **trustFrameworkPolicies**.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/policies
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-trustframeworks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-trustframeworks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-trustframeworks-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

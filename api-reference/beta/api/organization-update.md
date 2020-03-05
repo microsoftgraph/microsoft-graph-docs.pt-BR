@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 69c1467aed702918692b8e354ad661a949ca2638
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c1d162f3511e49ab3d5462dfca2c033a75c56342
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414354"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456324"
 ---
 # <a name="update-organization"></a>Atualize a organização
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Organization. ReadWrite. All, Directory. AccessAsUser. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Organization. ReadWrite. All |
+|Aplicativo | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade  | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
+|marketingNotificationEmails|String collection|                                        **Anotações**: não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
 |securityComplianceNotificationPhones|Coleção de cadeia de caracteres||
@@ -66,7 +68,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organization"
@@ -89,15 +91,15 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
