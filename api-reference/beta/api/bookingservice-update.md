@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a9738c22e920635b3ef08dcc97803adb611831c5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a218ee14aaa0a27118e9d4dfd05b074937a50118
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419325"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441078"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
+
+Namespace: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,16 +56,16 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |defaultprice|Duplo|O preço monetário padrão do serviço.|
 |defaultpricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultlembrers|coleção [bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
-|descrição|String|Uma descrição de texto para o serviço.|
-|displayName|String|Um nome de serviço.|
+|description|String|Uma descrição de texto para o serviço.|
+|displayName|Cadeia de caracteres|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
 |id|String| Somente leitura.|
-|isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
+|isHiddenFromCustomers|Boolean|True significa que este serviço não está disponível para os clientes para reserva.|
 |notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|String collection|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
@@ -71,7 +73,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No content`. N
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir atualiza a duração do serviço especificado.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingservice"
@@ -85,15 +87,15 @@ Content-type: application/json
     "defaultDuration":"PT30M"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingservice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingservice-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingservice-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

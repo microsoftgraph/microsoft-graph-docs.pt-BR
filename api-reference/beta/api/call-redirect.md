@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8d0512b808e0ac89cb94e8a429599b27781822f6
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 7eeddd2bbecb82ee0c5b90232a6e0b64de050f9d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912815"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440763"
 ---
 # <a name="call-redirect"></a>Call: Redirect
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,8 +57,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada toque simultâneo. Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado. Oferecemos suporte para até 25 metas para o toque simultâneo.
 |targetDisposition|String|Preterido Os valores possíveis são: `default` , `simultaneousRing` , `forward`. Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada ou chamada de toque simultâneo do número de destinos fornecidos.|
 |timeout|Int32|O tempo limite (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo limite é entre 15 e 90 segundos, inclusive. O valor de tempo limite padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeito a alterações). |
-|maskCallee|Booliano|Indica se o receptor deve ser oculto do chamador. Se true, a identidade do receptor é a identidade do bot. Padrão: false.|
-|maskCaller|Booliano|Indica se o chamador deve ser oculto do receptor. Se true, a identidade do chamador é a identidade do bot. Padrão: false.|
+|maskCallee|Boolean|Indica se o receptor deve ser oculto do chamador. Se true, a identidade do receptor é a identidade do bot. Padrão: false.|
+|maskCaller|Boolean|Indica se o chamador deve ser oculto do receptor. Se true, a identidade do chamador é a identidade do bot. Padrão: false.|
 |callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https`.|
 
 ## <a name="response"></a>Resposta
@@ -123,7 +125,7 @@ Estes exemplos abordarão um fluxo de trabalho de uma notificação de chamada d
 
 ##### <a name="request"></a>Solicitação
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -149,15 +151,15 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

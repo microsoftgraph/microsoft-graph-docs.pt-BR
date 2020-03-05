@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 11984b8f0976c3410cd05f2d4a7252939f3e6786
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 41f971e51099c00b93ae5e083103a869e0bfd403
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268367"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441351"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,6 +35,10 @@ Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large
 
 > [!TIP]
 > O Exchange Online permite que os administradores personalizem o limite de tamanho de mensagens de caixas de correio do Office 365, incluindo qualquer anexo de mensagem. Por padrão, esse limite de tamanho de mensagem é de 35 MB. Descubra como [Personalizar o tamanho máximo da mensagem](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) para dar suporte a anexos maiores que o limite padrão para o seu locatário. 
+
+> [!IMPORTANT] 
+> Esteja ciente de um [problema conhecido](/graph/known-issues#attaching-large-files-to-messages) se estiver anexando a uma mensagem em uma caixa de correio compartilhada ou delegada.
+
 
 ## <a name="permissions"></a>Permissões
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: dfc574c9028d5e810a92fd5de4b099d3109bf7ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad83631d6707e5f72f0813a71f7e40497e1903b0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943369"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42437172"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,11 +44,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Os valores possíveis são `applicationProxy`:.|
-|name|String|O nome do conector.|
+|nome|String|O nome do conector.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de teleconnector atualizado no corpo da resposta. [](../resources/connectorgroup.md)
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de [teleconnector](../resources/connectorgroup.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a43cda1f55516d61383f6a31c1742d87eb5c42d2
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: f9a6eb580d7a4873cf9e909308243f22ac2b935a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036127"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441344"
 ---
 # <a name="get-attachment"></a>Obter anexo
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,25 +23,25 @@ Leia as propriedades, relações ou conteúdo bruto de um anexo, anexados a um [
 Um anexo pode ser de um dos seguintes tipos:
 
 * Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).
-* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)). Você pode usar `$expand` o para obter as propriedades desse item. Veja um [exemplo](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).
+* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)). Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).
 * Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md)).
 
 Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md).
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
-Você pode acrescentar o segmento `/$value` de caminho para obter o conteúdo bruto de um arquivo ou anexo de item. 
+Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
 
-Para um anexo de arquivo, o tipo de conteúdo se baseia em seu tipo de conteúdo original. Veja um [exemplo](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) abaixo.
+Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Veja um [exemplo](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) abaixo.
 
-Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md)ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.
+Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.
 
-| Tipo de anexo de item  | Conteúdo bruto retornado |
+| Tipo de anexo do item  | Conteúdo bruto retornado |
 |:-----------|:----------|
-| **contato** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) Formato MIME. Confira o [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **evento** | formato MIME iCal. Confira o [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | Formato MIME. Confira o [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Confira um [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | Formato iCal MIME. Confira um [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | Formato MIME. Confira um [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
-Tentar obter um anexo `$value` de referência retorna http 405.
+A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,7 +61,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)e [postagem](../resources/post.md)) que dão suporte a anexos:
 
 - Para obter as propriedades e as relações de um anexo, especifique a ID do anexo a ser indexada na coleção **Attachments** , anexada ao [evento](../resources/event.md)especificado, à [mensagem](../resources/message.md), à [tarefa do Outlook](../resources/outlooktask.md)ou à instância de [post](../resources/post.md) .
-- Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter o conteúdo bruto do anexo acrescentando o segmento `/$value` de caminho à URL de solicitação.
+- Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter ainda mais o conteúdo bruto do anexo anexando o segmento de caminho `/$value` à URL da solicitação.
 
 Um anexo de um [evento](../resources/event.md):
 
@@ -146,20 +148,20 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, o método GET retornará `200 OK` um código de resposta. 
 
-Se você estiver obtendo as propriedades e as relações de um anexo, o corpo da resposta incluirá um objeto [Attachment](../resources/attachment.md) .
-As propriedades desse tipo de anexo são retornadas: [Fileattachment](../resources/fileattachment.md), [Item Attachment ou](../resources/itemattachment.md) [referenceAttachment](../resources/referenceattachment.md).
+Se você estiver obtendo as propriedades e os relacionamentos de um anexo, o corpo da resposta incluirá um objeto de [anexo](../resources/attachment.md).
+As propriedades desse tipo de anexo são retornadas: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceattachment.md).
 
-Se você estiver obtendo o conteúdo bruto de um arquivo ou anexo de item, o corpo da resposta incluirá o valor bruto do anexo.
+Se você estiver obtendo o conteúdo bruto de um anexo de arquivo ou de item, o corpo da resposta incluirá o valor bruto do anexo.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-properties-of-a-file-attachment"></a>Exemplo 1: obter as propriedades de um anexo de arquivo
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a>Exemplo 1: Obter as propriedades de um anexo de arquivo
 
 #### <a name="request"></a>Solicitação
 
 Aqui está um exemplo da solicitação para obter as propriedades de um anexo de arquivo em uma mensagem.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_beta",
@@ -169,15 +171,15 @@ Aqui está um exemplo da solicitação para obter as propriedades de um anexo de
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -213,13 +215,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-item-attachment"></a>Exemplo 2: obter as propriedades de um anexo de item
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a>Exemplo 2: Obter as propriedades de um anexo de item
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como obter um anexo de item em uma mensagem. As propriedades do item de **anexo** são retornadas.
+O próximo exemplo mostra como obter um anexo de item em uma mensagem. As propriedades de **itemAttachment** são retornadas.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment",
@@ -229,15 +231,15 @@ O exemplo a seguir mostra como obter um anexo de item em uma mensagem. As propri
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -269,12 +271,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Exemplo 3: expandir e obter as propriedades do item anexado a uma mensagem
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Exemplo 3: Expandir e obter as propriedades do item anexado a uma mensagem
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como usar `$expand` o para obter as propriedades do item (contato, evento ou mensagem) que está anexado à mensagem. Neste exemplo, esse item é uma mensagem; as propriedades dessa mensagem anexada também são retornadas.
+O próximo exemplo mostra como usar `$expand` para obter as propriedades do item (contato, evento ou mensagem) anexado à mensagem. Neste exemplo, esse item é uma mensagem. As propriedades dessa mensagem anexadas também são retornadas.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment",
@@ -284,15 +286,15 @@ O exemplo a seguir mostra como usar `$expand` o para obter as propriedades do it
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-and-expand-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-and-expand-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -379,13 +381,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Exemplo 4: obter as propriedades de um anexo de referência
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Exemplo 4: Obter as propriedades de um anexo de referência
 
 #### <a name="request"></a>Solicitação
 
 Aqui está um exemplo da solicitação para obter um anexo de referência em um evento.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment",
@@ -395,15 +397,15 @@ Aqui está um exemplo da solicitação para obter um anexo de referência em um 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-reference-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-reference-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -442,11 +444,11 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 5: obter o conteúdo bruto de um anexo de arquivo em uma mensagem
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Exemplo 5: Obter o conteúdo bruto de um anexo de arquivo em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para obter o conteúdo bruto de um arquivo do Word que tenha sido anexado a uma mensagem.
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um arquivo do Word que foi anexado a uma mensagem.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_file_attachment",
@@ -458,7 +460,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 ```
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. O corpo da resposta real inclui os bytes brutos do anexo de arquivo, abreviados aqui por brevidade.
+Veja a seguir um exemplo da resposta. O corpo da resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui por questões de brevidade.
 
 <!-- {
   "blockType": "ignored",
@@ -473,11 +475,11 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Exemplo 6: obter o conteúdo MIME bruto de um anexo de contato em uma mensagem
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Exemplo 6: obter o conteúdo bruto MIME de um anexo de contato em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para obter o conteúdo bruto de um item de contato que tenha sido anexado a uma mensagem. 
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um item de contato que foi anexado a uma mensagem. 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_contact_attachment",
@@ -522,11 +524,11 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Exemplo 7: obter o conteúdo bruto de MIME de um anexo de evento em uma mensagem
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Exemplo 7: Obter o conteúdo bruto MIME de um anexo de evento em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para obter o conteúdo bruto de um evento que tenha sido anexado a uma mensagem. 
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um evento que foi anexado a uma mensagem. 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_event_attachment",
@@ -602,11 +604,11 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Exemplo 8: obter o conteúdo MIME bruto de um anexo de item de convite de reunião em uma mensagem
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Exemplo 8: Obter o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem
 
 #### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para obter o conteúdo bruto de um convite de reunião (do tipo [eventMessage](../resources/eventmessage.md) ) que foi anexado a uma mensagem. A entidade **eventMessage** é baseada no tipo de **mensagem** .
+Aqui está um exemplo da solicitação para obter o conteúdo bruto de um convite para reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem. A entidade **eventMessage** é baseada no tipo de **mensagem**.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -620,7 +622,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/A
 #### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
-O corpo da resposta inclui o anexo **eventMessage** no formato MIME. O corpo do **eventMessage** é truncado por brevidade. O corpo completo da mensagem é retornado de uma chamada real.
+O corpo da resposta inclui o anexo **eventMessage** no formato MIME. O corpo do **eventMessage** é truncado por questões de brevidade. O corpo completo da mensagem é retornado de uma chamada real.
 
 <!-- {
   "blockType": "ignored",

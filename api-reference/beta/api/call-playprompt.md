@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6b3d7c8ee072ac347ec25b2ac0edebdb80a2a92d
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b1e24b0e1d50a3015e6b6ade9de8ccf011e4e23a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912829"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440784"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                               |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                               |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|Coleção [MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem reproduzidos. O tamanho máximo de coleção mediaPrompt compatível é 20.|
-|ciclo|Booliano| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
+|ciclo|Boolean| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
@@ -65,7 +67,7 @@ O exemplo a seguir mostra como chamar essa API.
 O exemplo a seguir mostra a solicitação.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-playPrompt"
@@ -90,7 +92,7 @@ Content-Length: 166
   "loop": false
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-playprompt-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

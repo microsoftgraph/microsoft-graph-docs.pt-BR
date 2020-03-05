@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 24536f48f790413adebb4ab1bfac7cf2de438f45
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: e6b436c59feda5fbb890a5f83cb5d11a3c3dc0de
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108410"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42442030"
 ---
 # <a name="list-accesspackageassignmentrequests"></a>Listar accessPackageAssignmentRequests
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
