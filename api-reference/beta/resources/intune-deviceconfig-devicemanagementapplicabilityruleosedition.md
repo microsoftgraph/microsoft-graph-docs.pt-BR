@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0abd5cdde3806b96804f632419e6499be445c16b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 72e8883d8494943181d38edbcfcf4e4194a76e11
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332838"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530128"
 ---
 # <a name="devicemanagementapplicabilityruleosedition-resource-type"></a>tipo de recurso deviceManagementApplicabilityRuleOsEdition
 
+Namespace: Microsoft. Graph
+
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
@@ -24,7 +26,7 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |osEditionTypes|coleção [windows10EditionType](../resources/intune-deviceconfig-windows10editiontype.md)|Tipo de edição de so da regra de aplicabilidade.|
-|name|String|Nome do objeto.|
+|nome|String|Nome do objeto.|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Tipo de regra de aplicabilidade. Os valores possíveis são: `include`, `exclude`.|
 
 ## <a name="relationships"></a>Relações

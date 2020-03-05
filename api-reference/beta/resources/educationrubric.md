@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b43b611465af4dabb62d9dd741eb9a8670f241b9
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 6c448652719f20ab2edd7c283ea18e99a37edbbd
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173234"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534431"
 ---
 # <a name="educationrubric-resource-type"></a>tipo de recurso educationRubric
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,6 +26,7 @@ Consulte [Education amostra rubric Overview](https://developer.microsoft.com/gra
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
+| [Criar educationRubric](../api/educationuser-post-rubrics.md) | [educationRubric](educationrubric.md) | Criar um novo objeto educationRubric. |
 | [Obter educationRubric](../api/educationrubric-get.md) | [educationRubric](educationrubric.md) | Leia as propriedades e os relacionamentos do objeto educationRubric. |
 | [Atualizar educationRubric](../api/educationrubric-update.md) | [educationRubric](educationrubric.md) | Atualize o objeto educationRubric. |
 | [Excluir educationRubric](../api/educationrubric-delete.md) | Nenhum | Exclua o objeto educationRubric. |
@@ -34,11 +37,11 @@ Consulte [Education amostra rubric Overview](https://developer.microsoft.com/gra
 |:-------------|:------------|:------------|
 |createdBy|[identitySet](identityset.md)|O usuário que criou este recurso.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|descrição|[itemBody](itembody.md)|A descrição desse amostra rubric.|
+|description|[itemBody](itembody.md)|A descrição desse amostra rubric.|
 |displayName|String|O nome deste amostra rubric.|
 |notas|[educationAssignmentGradeType](educationassignmentgradetype.md)|O tipo de gradação desse amostra rubric-NULL para um amostra rubric sem pontos, ou [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) para um ponto amostra rubric.|
 |lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
-|lastModifiedDateTime|DateTimeOffset|Momento no momento em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|Momento no momento em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |alcançar|coleção [rubricLevel](rubriclevel.md)|A coleção de níveis que compõem este amostra rubric.|
 |qualidades|coleção [rubricQuality](rubricquality.md)|O conjunto de qualidades que compõem este amostra rubric.|
 

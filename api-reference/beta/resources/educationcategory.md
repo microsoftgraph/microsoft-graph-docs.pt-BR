@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4732bab700ab23869e0463437288b1aa8897aa0e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14a399e09c74e439b64a273695b65e5a96cd25f8
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972783"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534392"
 ---
 # <a name="educationcategory-resource-type"></a>tipo de recurso educationCategory
+
+Namespace: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,6 +25,7 @@ Uma categoria que pode ser aplicada a atribuições.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
+|[Criar categoria](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Criar um novo **educationCategory**.|
 |[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Obter um **educationCategory**existente.|
 |[Excluir categoria](../api/educationcategory-delete.md) | Nenhum | Remover um **educationCategory**.|
 
@@ -31,7 +34,7 @@ Uma categoria que pode ser aplicada a atribuições.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String|Identificador exclusivo da categoria.|
-|displayName|String|Identificador exclusivo da categoria.|
+|displayName|Cadeia de caracteres|Identificador exclusivo da categoria.|
 
 ## <a name="json-representation"></a>Representação JSON
 

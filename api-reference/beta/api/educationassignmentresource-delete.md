@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ab9bdc849988ac44e52370991bd20f9c51a6e04e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e2d1c887d2c25f5d385c734a6e85912929704d5
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427253"
+ms.locfileid: "42534417"
 ---
 # <a name="delete-educationassignmentresource"></a>Excluir educationAssignmentResource
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /educationClasses/assignments/{id}/resources/{id}
+DELETE /education/classes/{id}/assignments/{id}/resources/{id}
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
