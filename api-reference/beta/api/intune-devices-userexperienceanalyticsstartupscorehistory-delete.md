@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac005ddce985004f7f906f368cddc5939a3f213a
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 7b5e381d1be307229a0dca30175160aa2e79d54d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161878"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42468016"
 ---
 # <a name="delete-userexperienceanalyticsstartupscorehistory"></a>Excluir userExperienceAnalyticsStartupScoreHistory
+
+Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
