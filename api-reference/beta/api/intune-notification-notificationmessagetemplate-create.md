@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f48522e7b73323de498e9d6ed8219dbdc5402fe
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 01880bae6f0a1d929192d18cd79baee546470824
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941992"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462633"
 ---
-# <a name="create-notificationmessagetemplate"></a><span data-ttu-id="fcea6-103">Criar notificationMessageTemplate</span><span class="sxs-lookup"><span data-stu-id="fcea6-103">Create notificationMessageTemplate</span></span>
+# <a name="create-notificationmessagetemplate"></a><span data-ttu-id="754e3-103">Criar notificationMessageTemplate</span><span class="sxs-lookup"><span data-stu-id="754e3-103">Create notificationMessageTemplate</span></span>
 
-> <span data-ttu-id="fcea6-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="fcea6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="754e3-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="754e3-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="fcea6-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="fcea6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="754e3-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="754e3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="fcea6-106">Criar um novo objeto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="fcea6-106">Create a new [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
+> <span data-ttu-id="754e3-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="754e3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="fcea6-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="fcea6-107">Prerequisites</span></span>
-<span data-ttu-id="fcea6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fcea6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="754e3-107">Criar um novo objeto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).</span><span class="sxs-lookup"><span data-stu-id="754e3-107">Create a new [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object.</span></span>
 
-|<span data-ttu-id="fcea6-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fcea6-110">Permission type</span></span>|<span data-ttu-id="fcea6-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="fcea6-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="754e3-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="754e3-108">Prerequisites</span></span>
+<span data-ttu-id="754e3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="754e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="754e3-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="754e3-111">Permission type</span></span>|<span data-ttu-id="754e3-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="754e3-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fcea6-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fcea6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fcea6-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fcea6-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="fcea6-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fcea6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fcea6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fcea6-115">Not supported.</span></span>|
-|<span data-ttu-id="fcea6-116">Application</span><span class="sxs-lookup"><span data-stu-id="fcea6-116">Application</span></span>|<span data-ttu-id="fcea6-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fcea6-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="754e3-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="754e3-113">Delegated (work or school account)</span></span>|<span data-ttu-id="754e3-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="754e3-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="754e3-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="754e3-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="754e3-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="754e3-116">Not supported.</span></span>|
+|<span data-ttu-id="754e3-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="754e3-117">Application</span></span>|<span data-ttu-id="754e3-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="754e3-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fcea6-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fcea6-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="754e3-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="754e3-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +40,35 @@ ms.locfileid: "39941992"
 POST /deviceManagement/notificationMessageTemplates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fcea6-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fcea6-119">Request headers</span></span>
-|<span data-ttu-id="fcea6-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="fcea6-120">Header</span></span>|<span data-ttu-id="fcea6-121">Valor</span><span class="sxs-lookup"><span data-stu-id="fcea6-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="754e3-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="754e3-120">Request headers</span></span>
+|<span data-ttu-id="754e3-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="754e3-121">Header</span></span>|<span data-ttu-id="754e3-122">Valor</span><span class="sxs-lookup"><span data-stu-id="754e3-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fcea6-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="fcea6-122">Authorization</span></span>|<span data-ttu-id="fcea6-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fcea6-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fcea6-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="fcea6-124">Accept</span></span>|<span data-ttu-id="fcea6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="fcea6-125">application/json</span></span>|
+|<span data-ttu-id="754e3-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="754e3-123">Authorization</span></span>|<span data-ttu-id="754e3-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="754e3-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="754e3-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="754e3-125">Accept</span></span>|<span data-ttu-id="754e3-126">application/json</span><span class="sxs-lookup"><span data-stu-id="754e3-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fcea6-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fcea6-126">Request body</span></span>
-<span data-ttu-id="fcea6-127">No corpo da solicitação, forneça uma representação JSON do objeto notificationMessageTemplate.</span><span class="sxs-lookup"><span data-stu-id="fcea6-127">In the request body, supply a JSON representation for the notificationMessageTemplate object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="754e3-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="754e3-127">Request body</span></span>
+<span data-ttu-id="754e3-128">No corpo da solicitação, forneça uma representação JSON do objeto notificationMessageTemplate.</span><span class="sxs-lookup"><span data-stu-id="754e3-128">In the request body, supply a JSON representation for the notificationMessageTemplate object.</span></span>
 
-<span data-ttu-id="fcea6-128">A tabela a seguir mostra as propriedades que são necessárias ao criar notificationMessageTemplate.</span><span class="sxs-lookup"><span data-stu-id="fcea6-128">The following table shows the properties that are required when you create the notificationMessageTemplate.</span></span>
+<span data-ttu-id="754e3-129">A tabela a seguir mostra as propriedades que são necessárias ao criar notificationMessageTemplate.</span><span class="sxs-lookup"><span data-stu-id="754e3-129">The following table shows the properties that are required when you create the notificationMessageTemplate.</span></span>
 
-|<span data-ttu-id="fcea6-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fcea6-129">Property</span></span>|<span data-ttu-id="fcea6-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="fcea6-130">Type</span></span>|<span data-ttu-id="fcea6-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="fcea6-131">Description</span></span>|
+|<span data-ttu-id="754e3-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="754e3-130">Property</span></span>|<span data-ttu-id="754e3-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="754e3-131">Type</span></span>|<span data-ttu-id="754e3-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="754e3-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fcea6-132">id</span><span class="sxs-lookup"><span data-stu-id="fcea6-132">id</span></span>|<span data-ttu-id="fcea6-133">String</span><span class="sxs-lookup"><span data-stu-id="fcea6-133">String</span></span>|<span data-ttu-id="fcea6-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="fcea6-134">Key of the entity.</span></span>|
-|<span data-ttu-id="fcea6-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="fcea6-135">lastModifiedDateTime</span></span>|<span data-ttu-id="fcea6-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fcea6-136">DateTimeOffset</span></span>|<span data-ttu-id="fcea6-137">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="fcea6-137">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="fcea6-138">displayName</span><span class="sxs-lookup"><span data-stu-id="fcea6-138">displayName</span></span>|<span data-ttu-id="fcea6-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fcea6-139">String</span></span>|<span data-ttu-id="fcea6-140">Nome de exibição do modelo de mensagem de notificação.</span><span class="sxs-lookup"><span data-stu-id="fcea6-140">Display name for the Notification Message Template.</span></span>|
-|<span data-ttu-id="fcea6-141">defaultLocale</span><span class="sxs-lookup"><span data-stu-id="fcea6-141">defaultLocale</span></span>|<span data-ttu-id="fcea6-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fcea6-142">String</span></span>|<span data-ttu-id="fcea6-143">A localidade padrão para fallback quando a localidade solicitada não está disponível.</span><span class="sxs-lookup"><span data-stu-id="fcea6-143">The default locale to fallback onto when the requested locale is not available.</span></span>|
-|<span data-ttu-id="fcea6-144">brandingOptions</span><span class="sxs-lookup"><span data-stu-id="fcea6-144">brandingOptions</span></span>|[<span data-ttu-id="fcea6-145">notificationTemplateBrandingOptions</span><span class="sxs-lookup"><span data-stu-id="fcea6-145">notificationTemplateBrandingOptions</span></span>](../resources/intune-notification-notificationtemplatebrandingoptions.md)|<span data-ttu-id="fcea6-146">As opções de identidade visual do modelo de mensagem.</span><span class="sxs-lookup"><span data-stu-id="fcea6-146">The Message Template Branding Options.</span></span> <span data-ttu-id="fcea6-147">A identidade visual é definida no Console do administrador do Intune.</span><span class="sxs-lookup"><span data-stu-id="fcea6-147">Branding is defined in the Intune Admin Console.</span></span> <span data-ttu-id="fcea6-148">Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span><span class="sxs-lookup"><span data-stu-id="fcea6-148">Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span></span>|
-|<span data-ttu-id="fcea6-149">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="fcea6-149">roleScopeTagIds</span></span>|<span data-ttu-id="fcea6-150">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="fcea6-150">String collection</span></span>|<span data-ttu-id="fcea6-151">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="fcea6-151">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="754e3-133">id</span><span class="sxs-lookup"><span data-stu-id="754e3-133">id</span></span>|<span data-ttu-id="754e3-134">String</span><span class="sxs-lookup"><span data-stu-id="754e3-134">String</span></span>|<span data-ttu-id="754e3-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="754e3-135">Key of the entity.</span></span>|
+|<span data-ttu-id="754e3-136">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="754e3-136">lastModifiedDateTime</span></span>|<span data-ttu-id="754e3-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="754e3-137">DateTimeOffset</span></span>|<span data-ttu-id="754e3-138">DateTime da última modificação do objeto.</span><span class="sxs-lookup"><span data-stu-id="754e3-138">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="754e3-139">displayName</span><span class="sxs-lookup"><span data-stu-id="754e3-139">displayName</span></span>|<span data-ttu-id="754e3-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="754e3-140">String</span></span>|<span data-ttu-id="754e3-141">Nome de exibição do modelo de mensagem de notificação.</span><span class="sxs-lookup"><span data-stu-id="754e3-141">Display name for the Notification Message Template.</span></span>|
+|<span data-ttu-id="754e3-142">defaultLocale</span><span class="sxs-lookup"><span data-stu-id="754e3-142">defaultLocale</span></span>|<span data-ttu-id="754e3-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="754e3-143">String</span></span>|<span data-ttu-id="754e3-144">A localidade padrão para fallback quando a localidade solicitada não está disponível.</span><span class="sxs-lookup"><span data-stu-id="754e3-144">The default locale to fallback onto when the requested locale is not available.</span></span>|
+|<span data-ttu-id="754e3-145">brandingOptions</span><span class="sxs-lookup"><span data-stu-id="754e3-145">brandingOptions</span></span>|[<span data-ttu-id="754e3-146">notificationTemplateBrandingOptions</span><span class="sxs-lookup"><span data-stu-id="754e3-146">notificationTemplateBrandingOptions</span></span>](../resources/intune-notification-notificationtemplatebrandingoptions.md)|<span data-ttu-id="754e3-147">As opções de identidade visual do modelo de mensagem.</span><span class="sxs-lookup"><span data-stu-id="754e3-147">The Message Template Branding Options.</span></span> <span data-ttu-id="754e3-148">A identidade visual é definida no Console do administrador do Intune.</span><span class="sxs-lookup"><span data-stu-id="754e3-148">Branding is defined in the Intune Admin Console.</span></span> <span data-ttu-id="754e3-149">Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span><span class="sxs-lookup"><span data-stu-id="754e3-149">Possible values are: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.</span></span>|
+|<span data-ttu-id="754e3-150">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="754e3-150">roleScopeTagIds</span></span>|<span data-ttu-id="754e3-151">String collection</span><span class="sxs-lookup"><span data-stu-id="754e3-151">String collection</span></span>|<span data-ttu-id="754e3-152">Lista de marcas de escopo para esta instância de entidade.</span><span class="sxs-lookup"><span data-stu-id="754e3-152">List of Scope Tags for this Entity instance.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="fcea6-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="fcea6-152">Response</span></span>
-<span data-ttu-id="fcea6-153">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fcea6-153">If successful, this method returns a `201 Created` response code and a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="754e3-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="754e3-153">Response</span></span>
+<span data-ttu-id="754e3-154">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="754e3-154">If successful, this method returns a `201 Created` response code and a [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fcea6-154">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fcea6-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="754e3-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="754e3-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fcea6-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fcea6-155">Request</span></span>
-<span data-ttu-id="fcea6-156">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fcea6-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="754e3-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="754e3-156">Request</span></span>
+<span data-ttu-id="754e3-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="754e3-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates
 Content-type: application/json
@@ -83,8 +85,8 @@ Content-length: 259
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="fcea6-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="fcea6-157">Response</span></span>
-<span data-ttu-id="fcea6-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fcea6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="754e3-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="754e3-158">Response</span></span>
+<span data-ttu-id="754e3-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="754e3-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
