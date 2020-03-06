@@ -5,62 +5,64 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e6d41fd97ea52588d1d68c3439d39400acb95014
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 82026017e3d82b5daa792c0cbe73718751cc2efd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913265"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518690"
 ---
-# <a name="call-playprompt"></a><span data-ttu-id="e6e0f-103">Call: playPrompt</span><span class="sxs-lookup"><span data-stu-id="e6e0f-103">call: playPrompt</span></span>
+# <a name="call-playprompt"></a><span data-ttu-id="d69d5-103">Call: playPrompt</span><span class="sxs-lookup"><span data-stu-id="d69d5-103">call: playPrompt</span></span>
 
-<span data-ttu-id="e6e0f-104">Reproduza um prompt na chamada.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-104">Play a prompt in the call.</span></span>
+<span data-ttu-id="d69d5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d69d5-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e6e0f-105">Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)</span><span class="sxs-lookup"><span data-stu-id="e6e0f-105">For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)</span></span>
+<span data-ttu-id="d69d5-105">Reproduza um prompt na chamada.</span><span class="sxs-lookup"><span data-stu-id="d69d5-105">Play a prompt in the call.</span></span>
+
+<span data-ttu-id="d69d5-106">Para obter mais informações sobre como lidar com as operações, consulte [commsOperation](../resources/commsoperation.md)</span><span class="sxs-lookup"><span data-stu-id="d69d5-106">For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)</span></span>
 
 > [!Note]
-> <span data-ttu-id="e6e0f-106">A ação **playPrompt** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="e6e0f-106">The **playPrompt** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
+> <span data-ttu-id="d69d5-107">A ação **playPrompt** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="d69d5-107">The **playPrompt** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e6e0f-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="e6e0f-107">Permissions</span></span>
-<span data-ttu-id="e6e0f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e6e0f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d69d5-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="d69d5-108">Permissions</span></span>
+<span data-ttu-id="d69d5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d69d5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e6e0f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e6e0f-110">Permission type</span></span>                        | <span data-ttu-id="e6e0f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e6e0f-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d69d5-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d69d5-111">Permission type</span></span>                        | <span data-ttu-id="d69d5-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d69d5-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="e6e0f-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e6e0f-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e6e0f-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-113">Not Supported.</span></span>                               |
-| <span data-ttu-id="e6e0f-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e6e0f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6e0f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-115">Not Supported.</span></span>                               |
-| <span data-ttu-id="e6e0f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e6e0f-116">Application</span></span>                            | <span data-ttu-id="e6e0f-117">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-117">None.</span></span>                                        |
+| <span data-ttu-id="d69d5-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d69d5-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="d69d5-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d69d5-114">Not Supported.</span></span>                               |
+| <span data-ttu-id="d69d5-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d69d5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d69d5-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d69d5-116">Not Supported.</span></span>                               |
+| <span data-ttu-id="d69d5-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d69d5-117">Application</span></span>                            | <span data-ttu-id="d69d5-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d69d5-118">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="e6e0f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e6e0f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d69d5-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d69d5-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /communications/calls/{id}/playPrompt
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e6e0f-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e6e0f-119">Request headers</span></span>
-| <span data-ttu-id="e6e0f-120">Nome</span><span class="sxs-lookup"><span data-stu-id="e6e0f-120">Name</span></span>          | <span data-ttu-id="e6e0f-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="e6e0f-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="d69d5-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d69d5-120">Request headers</span></span>
+| <span data-ttu-id="d69d5-121">Nome</span><span class="sxs-lookup"><span data-stu-id="d69d5-121">Name</span></span>          | <span data-ttu-id="d69d5-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="d69d5-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="e6e0f-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e6e0f-122">Authorization</span></span> | <span data-ttu-id="e6e0f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d69d5-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="d69d5-123">Authorization</span></span> | <span data-ttu-id="d69d5-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d69d5-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e6e0f-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e6e0f-125">Request body</span></span>
-<span data-ttu-id="e6e0f-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d69d5-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d69d5-126">Request body</span></span>
+<span data-ttu-id="d69d5-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d69d5-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="e6e0f-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="e6e0f-127">Parameter</span></span>      | <span data-ttu-id="e6e0f-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="e6e0f-128">Type</span></span>    |<span data-ttu-id="e6e0f-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="e6e0f-129">Description</span></span>|
+| <span data-ttu-id="d69d5-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="d69d5-128">Parameter</span></span>      | <span data-ttu-id="d69d5-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="d69d5-129">Type</span></span>    |<span data-ttu-id="d69d5-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="d69d5-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e6e0f-130">prompts</span><span class="sxs-lookup"><span data-stu-id="e6e0f-130">prompts</span></span>|<span data-ttu-id="e6e0f-131">Coleção [MediaPrompt](../resources/mediaprompt.md)</span><span class="sxs-lookup"><span data-stu-id="e6e0f-131">[MediaPrompt](../resources/mediaprompt.md) collection</span></span>| <span data-ttu-id="e6e0f-132">Os prompts a serem reproduzidos.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-132">The prompts to be played.</span></span> <span data-ttu-id="e6e0f-133">O tamanho máximo de coleção MediaPrompt compatível é 20.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-133">The maximum supported MediaPrompt collection size is 20.</span></span>|
-|<span data-ttu-id="e6e0f-134">clientContext</span><span class="sxs-lookup"><span data-stu-id="e6e0f-134">clientContext</span></span>|<span data-ttu-id="e6e0f-135">String</span><span class="sxs-lookup"><span data-stu-id="e6e0f-135">String</span></span>|<span data-ttu-id="e6e0f-136">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-136">Unique client context string.</span></span> <span data-ttu-id="e6e0f-137">Pode ter um máximo de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-137">Can have a maximum of 256 characters.</span></span>|
+|<span data-ttu-id="d69d5-131">prompts</span><span class="sxs-lookup"><span data-stu-id="d69d5-131">prompts</span></span>|<span data-ttu-id="d69d5-132">Coleção [MediaPrompt](../resources/mediaprompt.md)</span><span class="sxs-lookup"><span data-stu-id="d69d5-132">[MediaPrompt](../resources/mediaprompt.md) collection</span></span>| <span data-ttu-id="d69d5-133">Os prompts a serem reproduzidos.</span><span class="sxs-lookup"><span data-stu-id="d69d5-133">The prompts to be played.</span></span> <span data-ttu-id="d69d5-134">O tamanho máximo de coleção MediaPrompt compatível é 20.</span><span class="sxs-lookup"><span data-stu-id="d69d5-134">The maximum supported MediaPrompt collection size is 20.</span></span>|
+|<span data-ttu-id="d69d5-135">clientContext</span><span class="sxs-lookup"><span data-stu-id="d69d5-135">clientContext</span></span>|<span data-ttu-id="d69d5-136">String</span><span class="sxs-lookup"><span data-stu-id="d69d5-136">String</span></span>|<span data-ttu-id="d69d5-137">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="d69d5-137">Unique client context string.</span></span> <span data-ttu-id="d69d5-138">Pode ter um máximo de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="d69d5-138">Can have a maximum of 256 characters.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e6e0f-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="e6e0f-138">Response</span></span>
-<span data-ttu-id="e6e0f-139">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-139">If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d69d5-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="d69d5-139">Response</span></span>
+<span data-ttu-id="d69d5-140">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d69d5-140">If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e6e0f-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e6e0f-140">Example</span></span>
-<span data-ttu-id="e6e0f-141">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-141">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="d69d5-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d69d5-141">Example</span></span>
+<span data-ttu-id="d69d5-142">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="d69d5-142">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e6e0f-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e6e0f-142">Request</span></span>
-<span data-ttu-id="e6e0f-143">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-143">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="d69d5-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d69d5-143">Request</span></span>
+<span data-ttu-id="d69d5-144">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="d69d5-144">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e6e0f-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="e6e0f-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d69d5-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="d69d5-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-playPrompt"
@@ -84,17 +86,17 @@ Content-Length: 166
   ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e6e0f-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e6e0f-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d69d5-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d69d5-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-playprompt-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e6e0f-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="e6e0f-146">Response</span></span>
-<span data-ttu-id="e6e0f-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-147">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="d69d5-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="d69d5-147">Response</span></span>
+<span data-ttu-id="d69d5-148">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d69d5-148">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e6e0f-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e6e0f-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d69d5-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d69d5-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -115,7 +117,7 @@ Content-Type: application/json
 
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="e6e0f-150">Notificação-operação concluída</span><span class="sxs-lookup"><span data-stu-id="e6e0f-150">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="d69d5-151">Notificação-operação concluída</span><span class="sxs-lookup"><span data-stu-id="d69d5-151">Notification - operation completed</span></span>
  
 ```http
 POST https://bot.contoso.com/api/calls
