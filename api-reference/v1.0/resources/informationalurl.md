@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: e81d8cc4a1ef25364727049269b420cf426eb0c8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ebf2a79931936e8f45f93cba46b1fefdbf0163b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939478"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532879"
 ---
 # <a name="informationalurl-resource-type"></a>tipo de recurso informationalUrl
+
+Namespace: microsoft.graph
 
 Informações de perfil básicas do aplicativo.
 
@@ -20,11 +22,11 @@ Informações de perfil básicas do aplicativo.
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|logoUrl|Cadeia de caracteres|A URL da CDN para o logotipo do aplicativo, somente leitura.|
-|marketingUrl|Cadeia de caracteres| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
-|privacyStatementUrl|Cadeia de caracteres| Link para a política de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
-|supportUrl|Cadeia de caracteres| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
-|termsOfServiceUrl|Cadeia de caracteres| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
+|logoUrl|String|A URL da CDN para o logotipo do aplicativo, somente leitura.|
+|marketingUrl|String| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
+|privacyStatementUrl|String| Link para a política de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
+|supportUrl|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
+|termsOfServiceUrl|String| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

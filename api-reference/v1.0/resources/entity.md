@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 519b6abdc3bddf20c09008fa44036348c985213d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa126023c94b9c27766f23799a2f679bd12442ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030426"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532979"
 ---
 # <a name="entity-resource-type"></a>Tipo de recurso entity
+
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

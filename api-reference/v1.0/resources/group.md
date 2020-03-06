@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 8e22afa9608f3dfbc970b7a3f35b72075fffb29e
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: f297ce2a56dfdee74fe9917b240dff72d4490fc4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331322"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531360"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
+
+Namespace: microsoft.graph
 
 Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365 ou um grupo de segurança.  
 

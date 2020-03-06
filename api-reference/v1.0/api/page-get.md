@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: a4605242ca911e9634e79fa5b9761ae2bb8e0ab6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c15d5d32b6102a3651fec24a99c3f9c185f963d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022548"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511086"
 ---
 # <a name="get-page"></a>Obter página
+
+Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [Page](../resources/page.md) .
 

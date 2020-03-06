@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5c89b3e90cce7dcc064dfd7186eafcc26a37dd0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3da7e07e7d918d451e996e859463d31d6cf9d0a1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033023"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531885"
 ---
 # <a name="chartaxistitle-resource-type"></a>Tipo de recurso ChartAxisTitle
+
+Namespace: microsoft.graph
 
 Representa o título de um eixo do gráfico.
 
@@ -30,7 +32,7 @@ Representa o título de um eixo do gráfico.
 |texto|string|Representa o título do eixo.|
 |visible|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Representa a formatação do título do eixo do gráfico. Somente leitura.|

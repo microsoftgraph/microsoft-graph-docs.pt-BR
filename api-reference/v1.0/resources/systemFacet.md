@@ -7,14 +7,16 @@ localization_priority: Normal
 description: A faceta System indica que o objeto é gerenciado pelo sistema para sua própria operação.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 78fe776685a2d3f162a6971365d3f41cf6fa7615
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a8b171474bcbe3e16c383856945eb37db763a05
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033962"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533593"
 ---
 # <a name="system-facet"></a>Faceta System
+
+Namespace: microsoft.graph
 
 A faceta **System** indica que o objeto é gerenciado pelo sistema para sua própria operação.
 A maioria dos aplicativos deve ignorar itens que têm uma faceta do Sistema.

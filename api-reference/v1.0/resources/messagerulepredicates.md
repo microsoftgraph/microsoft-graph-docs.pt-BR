@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4cf6edbf7652ae3a7aebcbc73fc398587b1fac30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d40763e53aef06209818476314bca76ad2ba1293
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036089"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534230"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Tipo de recurso messageRulePredicates
+
+Namespace: microsoft.graph
 
 
 Representa o conjunto de condições e exceções disponíveis para uma regra.
@@ -26,7 +28,7 @@ Representa o conjunto de condições e exceções disponíveis para uma regra.
 | fromAddresses | Coleção ([Recipient](recipient.md)) | Representa os endereços de email específicos do remetente de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | hasAttachments | Booliano | Indica se uma mensagem de entrada deve ter anexos para que a exceção ou condição seja aplicada. |
 | headerContains | Collection(String) | Representa as cadeias de caracteres que são exibidas nos cabeçalhos de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
-| importance | importance | A importância que é marcada em uma mensagem de entrada para que a exceção ou condição seja aplicada: `low`, `normal`, `high`. |
+| importância | importância | A importância que é marcada em uma mensagem de entrada para que a exceção ou condição seja aplicada: `low`, `normal`, `high`. |
 | isApprovalRequest | Booliano | Indica se uma mensagem de entrada deve ter uma solicitação de aprovação para que a exceção ou condição seja aplicada. |
 | isAutomaticForward | Booliano | Indica se uma mensagem de entrada deve ser encaminhada automaticamente para que a exceção ou condição seja aplicada. |
 | isAutomaticReply | Booliano | Indica se uma mensagem de entrada deve ser uma resposta automática para que a exceção ou condição seja aplicada. |

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Aqui está uma representação JSON de um recurso ColumnDefinition.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3a02721c5289b1d49077e1b2d9fa1017f0c53021
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d178fce760def6ae74fa6fa6c520139e2f778dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032869"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533056"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
+
+Namespace: microsoft.graph
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,7 +66,7 @@ O recurso **columnDefinition** tem as seguintes propriedades.
 | **displayName**         | string  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
-| **id**                  | string  | O identificador exclusivo da coluna.
+| **id**                  | cadeia de caracteres  | O identificador exclusivo da coluna.
 | **indexed**             | booliano | Especifica se os valores da coluna podem ser usados para classificação e pesquisa.
 | **name**                | string  | O nome voltado para a API da coluna, conforme ele aparece nos [campos][] em uma [listItem][]. Para o nome voltado ao usuário, consulte **displayName**.
 | **readOnly**            | bool    | Especifica se os valores da coluna podem ser modificados.
