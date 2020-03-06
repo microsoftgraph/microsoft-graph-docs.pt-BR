@@ -12,25 +12,25 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42520911"
 ---
-# <a name="searchquery-resource-type"></a><span data-ttu-id="f5603-103">tipo de recurso searchQuery</span><span class="sxs-lookup"><span data-stu-id="f5603-103">searchQuery resource type</span></span>
+# <a name="searchquery-resource-type"></a><span data-ttu-id="35f40-103">tipo de recurso searchQuery</span><span class="sxs-lookup"><span data-stu-id="35f40-103">searchQuery resource type</span></span>
 
-<span data-ttu-id="f5603-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f5603-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="35f40-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="35f40-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f5603-105">Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opcionais.</span><span class="sxs-lookup"><span data-stu-id="f5603-105">Represents a search query that contains search terms and optional filters.</span></span>
+<span data-ttu-id="35f40-105">Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opcionais.</span><span class="sxs-lookup"><span data-stu-id="35f40-105">Represents a search query that contains search terms and optional filters.</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="properties"></a><span data-ttu-id="f5603-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f5603-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="35f40-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="35f40-106">Properties</span></span>
 
-| <span data-ttu-id="f5603-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f5603-107">Property</span></span>     | <span data-ttu-id="f5603-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="f5603-108">Type</span></span>        | <span data-ttu-id="f5603-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5603-109">Description</span></span> |
+| <span data-ttu-id="35f40-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="35f40-107">Property</span></span>     | <span data-ttu-id="35f40-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="35f40-108">Type</span></span>        | <span data-ttu-id="35f40-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="35f40-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="f5603-110">query_string</span><span class="sxs-lookup"><span data-stu-id="f5603-110">query_string</span></span>|[<span data-ttu-id="f5603-111">searchQueryString</span><span class="sxs-lookup"><span data-stu-id="f5603-111">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="f5603-112">A consulta de pesquisa que contém os termos da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="f5603-112">The search query containing the search terms.</span></span>|
+|<span data-ttu-id="35f40-110">query_string</span><span class="sxs-lookup"><span data-stu-id="35f40-110">query_string</span></span>|[<span data-ttu-id="35f40-111">searchQueryString</span><span class="sxs-lookup"><span data-stu-id="35f40-111">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="35f40-112">A consulta de pesquisa que contém os termos da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="35f40-112">The search query containing the search terms.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f5603-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f5603-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="35f40-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="35f40-113">JSON representation</span></span>
 
-<span data-ttu-id="f5603-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f5603-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="35f40-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="35f40-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

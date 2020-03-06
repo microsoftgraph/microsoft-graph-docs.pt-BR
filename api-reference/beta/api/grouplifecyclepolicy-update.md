@@ -12,55 +12,55 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42446573"
 ---
-# <a name="update-grouplifecyclepolicy"></a><span data-ttu-id="7ab4c-103">Atualizar groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="7ab4c-103">Update groupLifecyclePolicy</span></span>
+# <a name="update-grouplifecyclepolicy"></a><span data-ttu-id="80719-103">Atualizar groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="80719-103">Update groupLifecyclePolicy</span></span>
 
-<span data-ttu-id="7ab4c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="7ab4c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="80719-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80719-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7ab4c-105">Atualiza as propriedades de um objeto do [tipo de recurso groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="7ab4c-105">Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.</span></span>
+<span data-ttu-id="80719-105">Atualiza as propriedades de um objeto do [tipo de recurso groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="80719-105">Update the properties of a groupLifecyclePolicy[groupLifecyclePolicy resource type](../resources/grouplifecyclepolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7ab4c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7ab4c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="80719-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="80719-106">Permissions</span></span>
 
-<span data-ttu-id="7ab4c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ab4c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="80719-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80719-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
  
 
-|<span data-ttu-id="7ab4c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7ab4c-109">Permission type</span></span>      | <span data-ttu-id="7ab4c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7ab4c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="80719-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="80719-109">Permission type</span></span>      | <span data-ttu-id="80719-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="80719-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7ab4c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7ab4c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7ab4c-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ab4c-112">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7ab4c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7ab4c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ab4c-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="7ab4c-114">Not supported</span></span> |
-|<span data-ttu-id="7ab4c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7ab4c-115">Application</span></span> | <span data-ttu-id="7ab4c-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ab4c-116">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="80719-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="80719-111">Delegated (work or school account)</span></span> | <span data-ttu-id="80719-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80719-112">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="80719-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="80719-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80719-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="80719-114">Not supported</span></span> |
+|<span data-ttu-id="80719-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="80719-115">Application</span></span> | <span data-ttu-id="80719-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80719-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7ab4c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7ab4c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80719-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="80719-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /groupLifecyclePolicies/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="7ab4c-118">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="7ab4c-118">Optional request headers</span></span>
-| <span data-ttu-id="7ab4c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="7ab4c-119">Name</span></span> | <span data-ttu-id="7ab4c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ab4c-120">Description</span></span> |
+## <a name="optional-request-headers"></a><span data-ttu-id="80719-118">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="80719-118">Optional request headers</span></span>
+| <span data-ttu-id="80719-119">Nome</span><span class="sxs-lookup"><span data-stu-id="80719-119">Name</span></span> | <span data-ttu-id="80719-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="80719-120">Description</span></span> |
 |:-----------|:-----------|
-| <span data-ttu-id="7ab4c-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="7ab4c-121">Authorization</span></span> | <span data-ttu-id="7ab4c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7ab4c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7ab4c-124">Content-Type</span></span>  | <span data-ttu-id="7ab4c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7ab4c-125">application/json</span></span>  |
+| <span data-ttu-id="80719-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="80719-121">Authorization</span></span> | <span data-ttu-id="80719-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="80719-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="80719-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="80719-124">Content-Type</span></span>  | <span data-ttu-id="80719-125">application/json</span><span class="sxs-lookup"><span data-stu-id="80719-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7ab4c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7ab4c-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="80719-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="80719-126">Request body</span></span>
 
-<span data-ttu-id="7ab4c-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="80719-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="80719-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7ab4c-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7ab4c-130">Property</span></span> | <span data-ttu-id="7ab4c-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ab4c-131">Type</span></span> | <span data-ttu-id="7ab4c-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ab4c-132">Description</span></span> |
+| <span data-ttu-id="80719-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="80719-130">Property</span></span> | <span data-ttu-id="80719-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="80719-131">Type</span></span> | <span data-ttu-id="80719-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="80719-132">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7ab4c-133">alternateNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="7ab4c-133">alternateNotificationEmails</span></span>|<span data-ttu-id="7ab4c-134">String</span><span class="sxs-lookup"><span data-stu-id="7ab4c-134">String</span></span>| <span data-ttu-id="7ab4c-135">Lista de endereços de email para o envio de notificações para grupos sem proprietários.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-135">List of email address to send notifications for groups without owners.</span></span> <span data-ttu-id="7ab4c-136">É possível definir vários endereços de email separando-os com ponto-e-vírgula.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-136">Multiple email address can be defined by separating email address with a semicolon.</span></span> |
-|<span data-ttu-id="7ab4c-137">groupLifetimeInDays</span><span class="sxs-lookup"><span data-stu-id="7ab4c-137">groupLifetimeInDays</span></span>|<span data-ttu-id="7ab4c-138">Int32</span><span class="sxs-lookup"><span data-stu-id="7ab4c-138">Int32</span></span>| <span data-ttu-id="7ab4c-139">Número de dias antes que um grupo expire e precise ser renovado.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-139">Number of days before a group expires and needs to be renewed.</span></span> <span data-ttu-id="7ab4c-140">Após renová-lo, o período de validade é estendido de acordo com o número de dias definido.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-140">Once renewed, the group expiration is extended by the number of days defined.</span></span> |
-|<span data-ttu-id="7ab4c-141">managedGroupTypes</span><span class="sxs-lookup"><span data-stu-id="7ab4c-141">managedGroupTypes</span></span>|<span data-ttu-id="7ab4c-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7ab4c-142">String</span></span>| <span data-ttu-id="7ab4c-143">O tipo de grupo ao qual se aplica a política de expiração.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-143">The group type for which the expiration policy applies.</span></span> <span data-ttu-id="7ab4c-144">Os valores possíveis são **All**, **Selected** ou **None**.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-144">Possible values are **All**, **Selected** or **None**.</span></span> |
+|<span data-ttu-id="80719-133">alternateNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="80719-133">alternateNotificationEmails</span></span>|<span data-ttu-id="80719-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="80719-134">String</span></span>| <span data-ttu-id="80719-135">Lista de endereços de email para o envio de notificações para grupos sem proprietários.</span><span class="sxs-lookup"><span data-stu-id="80719-135">List of email address to send notifications for groups without owners.</span></span> <span data-ttu-id="80719-136">É possível definir vários endereços de email separando-os com ponto-e-vírgula.</span><span class="sxs-lookup"><span data-stu-id="80719-136">Multiple email address can be defined by separating email address with a semicolon.</span></span> |
+|<span data-ttu-id="80719-137">groupLifetimeInDays</span><span class="sxs-lookup"><span data-stu-id="80719-137">groupLifetimeInDays</span></span>|<span data-ttu-id="80719-138">Int32</span><span class="sxs-lookup"><span data-stu-id="80719-138">Int32</span></span>| <span data-ttu-id="80719-139">Número de dias antes que um grupo expire e precise ser renovado.</span><span class="sxs-lookup"><span data-stu-id="80719-139">Number of days before a group expires and needs to be renewed.</span></span> <span data-ttu-id="80719-140">Após renová-lo, o período de validade é estendido de acordo com o número de dias definido.</span><span class="sxs-lookup"><span data-stu-id="80719-140">Once renewed, the group expiration is extended by the number of days defined.</span></span> |
+|<span data-ttu-id="80719-141">managedGroupTypes</span><span class="sxs-lookup"><span data-stu-id="80719-141">managedGroupTypes</span></span>|<span data-ttu-id="80719-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="80719-142">String</span></span>| <span data-ttu-id="80719-143">O tipo de grupo ao qual se aplica a política de expiração.</span><span class="sxs-lookup"><span data-stu-id="80719-143">The group type for which the expiration policy applies.</span></span> <span data-ttu-id="80719-144">Os valores possíveis são **All**, **Selected** ou **None**.</span><span class="sxs-lookup"><span data-stu-id="80719-144">Possible values are **All**, **Selected** or **None**.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="7ab4c-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ab4c-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="80719-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="80719-145">Response</span></span>
 
-<span data-ttu-id="7ab4c-146">Quando é bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-146">If successful, this method returns a `200 OK` response code and updated [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7ab4c-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7ab4c-147">Example</span></span>
+<span data-ttu-id="80719-146">Quando é bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80719-146">If successful, this method returns a `200 OK` response code and updated [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="80719-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="80719-147">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7ab4c-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7ab4c-148">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="80719-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="80719-148">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="7ab4c-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="7ab4c-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="80719-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="80719-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_grouplifecyclepolicy"
@@ -76,22 +76,22 @@ Content-length: 151
   "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7ab4c-150">C#</span><span class="sxs-lookup"><span data-stu-id="7ab4c-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="80719-150">C#</span><span class="sxs-lookup"><span data-stu-id="80719-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-grouplifecyclepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7ab4c-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ab4c-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="80719-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80719-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-grouplifecyclepolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7ab4c-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7ab4c-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="80719-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80719-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-grouplifecyclepolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7ab4c-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ab4c-153">Response</span></span>
-<span data-ttu-id="7ab4c-154">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="7ab4c-154">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="80719-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="80719-153">Response</span></span>
+<span data-ttu-id="80719-154">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="80719-154">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
