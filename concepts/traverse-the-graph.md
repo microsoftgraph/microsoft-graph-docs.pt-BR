@@ -3,12 +3,12 @@ title: Acessar dados e métodos ao navegar no Microsoft Graph
 description: Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: cf71da309cd123895dfb0666c8fe3e60e3f65e23
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: c00179e5ea39f5be40308e400774bb1316ff8c3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969507"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448533"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Acessar dados e métodos ao navegar no Microsoft Graph
 
@@ -29,7 +29,9 @@ O documento de metadados ($metadata) é publicado na raiz do serviço. Você pod
     https://graph.microsoft.com/beta/$metadata
 ```
 
-Com os metadados, você pode exibir e entender o modelo de dados do Microsoft Graph, inclusive os tipos de entidade, os tipos complexos e as enumerações que compõem os recursos representados nos pacotes de solicitação e resposta.
+Com os metadados, você pode exibir e entender o modelo de dados do Microsoft Graph, inclusive os tipos de entidade, os tipos complexos e as enumerações que compõem os recursos representados nos pacotes de solicitação e resposta. 
+
+Os metadados também são compatíveis com os tipos, métodos e enumerações que os define em espaços de nomes (ou namespace),OData correspondentes. A maior parte da API do Microsoft Graph é definida no espaço de nomes OData, `microsoft.graph`.
 
 Você pode usar os metadados para compreender as relações entre entidades no Microsoft Graph e estabelecer URLs que navegam entre essas entidades.
 

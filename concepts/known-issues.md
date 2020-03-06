@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 4166056959d9ca01edd475878f8ed5444cea7cea
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 09a53d4103436eab8314c19420ecb9b15cd981a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637140"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42418143"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -164,9 +164,8 @@ Atualmente, a propriedade **onlineMeetingUrl** de um [evento](/graph/api/resourc
 
 A versão beta oferece uma solução alternativa, na qual é possível usar a propriedade **onlineMeetingProvider** de um [evento](/graph/api/resources/event?view=graph-rest-beta)para verificar se o provedor é o Microsoft Teams. Por meio da propriedade **onlineMeeting** do **evento**, você pode acessar o **joinUrl**.
 
-## <a name="cloud-communications-preview"></a>Comunicações na nuvem (visualização)
+## <a name="cloud-communications"></a>Comunicações na nuvem 
 
-> **Observação** As comunicações na nuvem estão atualmente em visualização e disponíveis apenas no ponto de extremidade beta do Microsoft Graph.
 O cliente do Microsoft Teams não mostra o menu **Exibir detalhes da Reunião** para reuniões de canal criadas por meio da API de comunicações na nuvem.
 
 ## <a name="contacts"></a>Contatos
@@ -217,6 +216,9 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ```
 
 ## <a name="messages"></a>Mensagens
+
+### <a name="attaching-large-files-to-messages"></a>Anexando grandes arquivos a mensagens
+Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) só é bem sucedida se a mensagem estiver na caixa de correio do usuário conectado.
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
 

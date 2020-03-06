@@ -4,12 +4,12 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma de duas m
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f6087de7146dd7b395bbe122097a41bd221c1da5
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 5f6f54adf38c0f2827b587e6646df4cb3549a204
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229749"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448568"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>Anexar arquivos grandes às mensagens do Outlook como anexos (visualização)
 
@@ -21,6 +21,9 @@ Dependendo do tamanho do arquivo, você pode escolher uma das duas maneiras de a
 Para anexar vários arquivos a uma mensagem, escolha a abordagem de cada arquivo com base em seu tamanho e anexe-os individualmente.
 
 Este artigo usa um exemplo para ilustrar a segunda abordagem. O exemplo cria e usa uma sessão de carregamento para adicionar um anexo de arquivo grande (com tamanho acima de 3 MB) a uma mensagem específica. Depois de carregar o arquivo inteiro, ele recebe uma URL que contém uma identificação para o arquivo em anexo, com o qual ele pode fazer outras operações, como obter os metadados do anexo de arquivo.
+
+> [!IMPORTANT] 
+> Esteja atento a um [problema conhecido](known-issues.md#attaching-large-files-to-messages)se você estiver anexando arquivos de grande tamanho a uma mensagem em uma caixa de correio delegada ou compartilhada.
 
 ## <a name="step-1-create-an-upload-session"></a>Etapa 1: Criar uma sessão de upload
 

@@ -4,12 +4,12 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0e4bba173c234201c3f3002e8917eaa74176a583
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 0be1d19f9968d5da7d4c3f7ff84a76397dfa2115
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968545"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448526"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -17,7 +17,15 @@ O Microsoft Graph é uma API Web RESTful que permite que você acesse os recurso
 
 > **Importante:**  a maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
 
-Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao seguinte.
+## <a name="odata-namespace"></a>Espaço de nomes (namespace) OData
+
+A API do Microsoft Graph define a maioria dos seus recursos, métodos e enumerações no namespace OData, `microsoft.graph`nos [metadados do Microsoft Graph](traverse-the-graph.md#microsoft-graph-api-metadata). Um pequeno número de conjuntos de APIs são definidos em seus subnamespaces, como a [API de registros de chamada](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta), que define recursos como [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) no `microsoft.graph.callRecords`. 
+
+A menos que especificado explicitamente no tópico correspondente, considere tipos, métodos e enumerações fazem parte do espaço de nomes `microsoft.graph`.
+
+## <a name="call-a-rest-api-method"></a>Método de chamada à API REST
+
+Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao visto abaixo:
 
 <!-- {
   "blockType": "ignored"
@@ -42,7 +50,6 @@ Depois de fazer uma solicitação, uma resposta é retornada, que inclui:
 ## <a name="http-methods"></a>Métodos HTTP
 
 O Microsoft Graph usa o método HTTP em sua solicitação para determinar sua solicitação está fazendo. A API é compatível com os seguintes métodos.
-
 
 |**Method** |**Descrição**                             |
 | :----- | :------------------------------------------- |
