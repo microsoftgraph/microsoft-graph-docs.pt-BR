@@ -6,16 +6,18 @@ description: O objeto CreateAction fornece informações sobre a criação de um
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 755cf1f7d58dc8b1404ff2b3f3a606380066bf6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13a0083a8047ef09126e19908765647d55932698
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029579"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533012"
 ---
 # <a name="createaction-resource-type"></a>tipo de recurso CreateAction
 
-A presença do recurso **CreateAction** em uma myactivity indica que a atividade criou um item. [****][activity]
+Namespace: microsoft.graph
+
+A presença do recurso **CreateAction** em uma [**myactivity**][activity] indica que a atividade criou um item.
 
 **Observação:** Este recurso está vazio no momento. No futuro, ele pode ser preenchido com propriedades adicionais.
 

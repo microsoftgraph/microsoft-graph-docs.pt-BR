@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: e21e2fad07dca15c5be42b8de29aa5c791c50d69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c912a1ad9740148cd40429478a018c6af512fdf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033898"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533572"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso targetResource
+
+Namespace: microsoft.graph
 
 Representa os tipos de recursos de destino associados à atividade de auditoria. 
 
@@ -21,11 +23,11 @@ Representa os tipos de recursos de destino associados à atividade de auditoria.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String|Indica a ID exclusiva do recurso.|
-|displayName|String|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
+|displayName|Cadeia de caracteres|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
 |type|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
 |userPrincipalName|Cadeia de caracteres|Quando o **tipo** está definido `User`como, isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
 |groupType|String|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
-|ModifiedProperties|[](modifiedproperty.md) coleção modifiedproperty|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
+|ModifiedProperties|coleção [modifiedproperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
 
 ## <a name="json-representation"></a>Representação JSON
 

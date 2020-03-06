@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8afbfcb8ddb7650b27badb4fab6589f9aa8cbefd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: f923bd4afc68b3b83926af29d47ad442d6964157
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35733622"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636446"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const directoryRole = {
 };
 
 let res = await client.api('/directoryRoles')
-    .post({directoryRole : directoryRole});
+    .post(directoryRole);
 
 ```

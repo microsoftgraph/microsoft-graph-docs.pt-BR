@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 405d663e4f1f7fb040e79cdd10669bc824e3edef
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 6eb66033ef1b0e345c3929982b9f08d6e4ce2573
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036442"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531747"
 ---
 # <a name="convertidresult-resource-type"></a>tipo de recurso convertIdResult
+
+Namespace: microsoft.graph
 
 O resultado de uma conversão de formato de ID executada pela função [translateExchangeIds](../api/user-translateexchangeids.md) .
 

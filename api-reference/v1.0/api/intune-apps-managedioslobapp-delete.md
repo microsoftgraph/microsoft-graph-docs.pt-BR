@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02ba4fa22d7f74b473b1d7a6d52d8566862c60a3
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 3037d2dd17d87b887a01e8a2108ca0ef684d4102
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37358498"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516191"
 ---
 # <a name="delete-managedioslobapp"></a>Excluir managedIOSLobApp
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Exclui [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).
 

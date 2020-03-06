@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3be5210346652854658e53ca3a2d108995cde5c9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1559b1f8551095c5becf5782a4c9d8f03e7d2e64
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37358778"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516466"
 ---
 # <a name="get-macosofficesuiteapp"></a>Acessar macOSOfficeSuiteApp
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Leia as propriedades e as relações do objeto [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).
 

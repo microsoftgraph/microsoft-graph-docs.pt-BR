@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 842ae238b81fe8c075b4cc78c00d249fa33546af
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: bd8c89ea705c26909e236c65213dfeac11a55875
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367641"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530429"
 ---
 # <a name="visibilitysetting-enum-type"></a>tipo de enumeração visibilitySetting
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Estado de visibilidade genérico.
 
@@ -22,8 +24,8 @@ Estado de visibilidade genérico.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|ocult|1|Ocultar.|
-|programa|duas|Mostrar.|
+|ocult|1 |Ocultar.|
+|programa|2 |Mostrar.|
 
 
 

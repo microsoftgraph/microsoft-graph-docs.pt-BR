@@ -1,22 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5724fd3f4f2876a942e153e105aca3a9b6c631f1
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 8fd8537d7e3a4fdad4c1187d372189e082699431
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888272"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37544142"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachment = new Attachment
+var attachment = new ItemAttachment
 {
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.type","#Microsoft.OutlookServices.ItemAttachment"}
-    },
     Name = "name-value",
     Item = "message or event entity"
 };

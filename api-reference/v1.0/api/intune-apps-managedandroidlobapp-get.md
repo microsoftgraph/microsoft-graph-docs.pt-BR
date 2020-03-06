@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 360fac59917cc5d72aadca90d93d26cebf92ef29
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 8763a9d3350e101e793536cba99cba6f8098ee7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355488"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516430"
 ---
 # <a name="get-managedandroidlobapp"></a>Acessar managedAndroidLobApp
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Leia as propriedades e as relações do objeto [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).
 

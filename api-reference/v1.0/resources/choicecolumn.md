@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O choiceColumn em um recurso columnDefinition indica que os valores da coluna podem ser selecionados em uma lista de opções.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a86cb783fb170c2b9528b47272fc214ea0010760
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a29a80bccd2afb76804b2e1a4d81b5a69d44adf1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029733"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533068"
 ---
 # <a name="choicecolumn-resource-type"></a>Tipo de recurso ChoiceColumn
+
+Namespace: microsoft.graph
 
 O **choiceColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna podem ser selecionados em uma lista de opções.
 
