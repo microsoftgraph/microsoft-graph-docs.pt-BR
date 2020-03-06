@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8e7ea6f4a24763782310d51f1d879bbf2f161c5e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 5983ea869e9913919343778cc41524fb2312f1e3
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731769"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636380"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const plannerBucketTaskBoardTaskFormat = {
 };
 
 let res = await client.api('/planner/tasks/{task-id}/bucketTaskBoardFormat')
-    .update({plannerBucketTaskBoardTaskFormat : plannerBucketTaskBoardTaskFormat});
+    .update(plannerBucketTaskBoardTaskFormat);
 
 ```

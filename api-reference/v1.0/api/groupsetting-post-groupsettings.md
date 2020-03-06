@@ -5,57 +5,59 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 27720fecd77f9bb6a6de027e44d39378a1a712dc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 06b63deba03bee7646c4d0e0f0323b3720d6073b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366328"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516819"
 ---
-# <a name="create-a-group-setting"></a><span data-ttu-id="1a827-107">Criar uma configuração de grupo</span><span class="sxs-lookup"><span data-stu-id="1a827-107">Create a group setting</span></span>
+# <a name="create-a-group-setting"></a><span data-ttu-id="2d233-107">Criar uma configuração de grupo</span><span class="sxs-lookup"><span data-stu-id="2d233-107">Create a group setting</span></span>
 
-<span data-ttu-id="1a827-p102">Use essa API para criar uma nova configuração com base nos modelos disponíveis em [groupSettingTemplates](../resources/groupsettingtemplate.md). Essas configurações podem ser no nível do locatário ou do grupo. A solicitação de criação precisa fornecer [settingValues](../resources/settingvalue.md) para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que rege se os membros de um grupo podem convidar usuários convidados pode ser definida. Isso controlará esse comportamento depois que a capacidade de adicionar usuários convidados a um grupo esteja disponível de forma geral.</span><span class="sxs-lookup"><span data-stu-id="1a827-p102">Use this API to create a new setting, based on the templates available in [groupSettingTemplates](../resources/groupsettingtemplate.md). These settings can be at the tenant-level or at the group level. The creation request must provide [settingValues](../resources/settingvalue.md) for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
+<span data-ttu-id="2d233-108">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d233-108">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1a827-113">Para obter uma lista de modelos e as propriedades que eles dão suporte no v 1.0, use uma [consulta groupSettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0) (para pontos de extremidade beta, Call [directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).)</span><span class="sxs-lookup"><span data-stu-id="1a827-113">For a list of templates and the properties they support in v1.0, use a [groupSettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)  (For beta endpoints, call [directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).)</span></span>
+<span data-ttu-id="2d233-p102">Use essa API para criar uma nova configuração com base nos modelos disponíveis em [groupSettingTemplates](../resources/groupsettingtemplate.md). Essas configurações podem ser no nível do locatário ou do grupo. A solicitação de criação precisa fornecer [settingValues](../resources/settingvalue.md) para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que rege se os membros de um grupo podem convidar usuários convidados pode ser definida. Isso controlará esse comportamento depois que a capacidade de adicionar usuários convidados a um grupo esteja disponível de forma geral.</span><span class="sxs-lookup"><span data-stu-id="2d233-p102">Use this API to create a new setting, based on the templates available in [groupSettingTemplates](../resources/groupsettingtemplate.md). These settings can be at the tenant-level or at the group level. The creation request must provide [settingValues](../resources/settingvalue.md) for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a827-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="1a827-114">Permissions</span></span>
+<span data-ttu-id="2d233-114">Para obter uma lista de modelos e as propriedades que eles dão suporte no v 1.0, use uma [consulta groupSettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0) (para pontos de extremidade beta, Call [directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).)</span><span class="sxs-lookup"><span data-stu-id="2d233-114">For a list of templates and the properties they support in v1.0, use a [groupSettingTemplate query](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)  (For beta endpoints, call [directorySettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta).)</span></span>
 
-<span data-ttu-id="1a827-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a827-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2d233-115">Permissões</span><span class="sxs-lookup"><span data-stu-id="2d233-115">Permissions</span></span>
+
+<span data-ttu-id="2d233-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d233-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="1a827-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1a827-117">Permission type</span></span>      | <span data-ttu-id="1a827-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1a827-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2d233-118">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d233-118">Permission type</span></span>      | <span data-ttu-id="2d233-119">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2d233-119">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a827-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1a827-119">Delegated (work or school account)</span></span> | <span data-ttu-id="1a827-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1a827-120">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1a827-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1a827-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a827-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1a827-122">Not supported.</span></span>    |
-|<span data-ttu-id="1a827-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1a827-123">Application</span></span> | <span data-ttu-id="1a827-124">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a827-124">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2d233-120">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d233-120">Delegated (work or school account)</span></span> | <span data-ttu-id="2d233-121">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="2d233-121">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2d233-122">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d233-122">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d233-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d233-123">Not supported.</span></span>    |
+|<span data-ttu-id="2d233-124">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d233-124">Application</span></span> | <span data-ttu-id="2d233-125">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d233-125">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a827-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1a827-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d233-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d233-126">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupSettings
 POST /groups/{id}/settings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1a827-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1a827-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2d233-127">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d233-127">Request headers</span></span>
 
-| <span data-ttu-id="1a827-127">Nome</span><span class="sxs-lookup"><span data-stu-id="1a827-127">Name</span></span> | <span data-ttu-id="1a827-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a827-128">Description</span></span> |
+| <span data-ttu-id="2d233-128">Nome</span><span class="sxs-lookup"><span data-stu-id="2d233-128">Name</span></span> | <span data-ttu-id="2d233-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d233-129">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="1a827-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="1a827-129">Authorization</span></span> | <span data-ttu-id="1a827-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1a827-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1a827-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1a827-132">Content-Type</span></span> | <span data-ttu-id="1a827-133">application/json</span><span class="sxs-lookup"><span data-stu-id="1a827-133">application/json</span></span> |
+| <span data-ttu-id="2d233-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d233-130">Authorization</span></span> | <span data-ttu-id="2d233-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d233-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2d233-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2d233-133">Content-Type</span></span> | <span data-ttu-id="2d233-134">application/json</span><span class="sxs-lookup"><span data-stu-id="2d233-134">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1a827-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1a827-134">Request body</span></span>
-<span data-ttu-id="1a827-p105">No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md). No entanto, o nome de exibição para que a configuração será definida com base no nome do modelo configurações referenciado.</span><span class="sxs-lookup"><span data-stu-id="1a827-p105">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d233-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2d233-135">Request body</span></span>
+<span data-ttu-id="2d233-p105">No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md). No entanto, o nome de exibição para que a configuração será definida com base no nome do modelo configurações referenciado.</span><span class="sxs-lookup"><span data-stu-id="2d233-p105">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object. However, the display name for the setting will be set based on the referenced settings template name.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a827-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a827-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2d233-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d233-138">Response</span></span>
 
-<span data-ttu-id="1a827-138">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [groupSetting](../resources/groupsetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1a827-138">If successful, this method returns `201 Created` response code and [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
+<span data-ttu-id="2d233-139">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [groupSetting](../resources/groupsetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d233-139">If successful, this method returns `201 Created` response code and [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1a827-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1a827-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2d233-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2d233-140">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1a827-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a827-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="2d233-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d233-141">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1a827-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a827-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2d233-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d233-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings"
@@ -76,28 +78,28 @@ Content-length: 215
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1a827-142">C#</span><span class="sxs-lookup"><span data-stu-id="1a827-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2d233-143">C#</span><span class="sxs-lookup"><span data-stu-id="2d233-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a827-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a827-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2d233-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d233-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1a827-144">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="1a827-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2d233-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d233-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="1a827-145">Java</span><span class="sxs-lookup"><span data-stu-id="1a827-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2d233-146">Java</span><span class="sxs-lookup"><span data-stu-id="2d233-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="1a827-146">No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md).</span><span class="sxs-lookup"><span data-stu-id="1a827-146">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="1a827-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a827-147">Response</span></span>
+<span data-ttu-id="2d233-147">No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md).</span><span class="sxs-lookup"><span data-stu-id="2d233-147">In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="2d233-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d233-148">Response</span></span>
 
-<span data-ttu-id="1a827-p106">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1a827-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="2d233-p106">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d233-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

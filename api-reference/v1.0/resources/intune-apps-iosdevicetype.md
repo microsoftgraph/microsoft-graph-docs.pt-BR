@@ -5,30 +5,32 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a62cb711b70352d98650ae03945316de9ed2b5d2
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 057de993f7e9cef948c3334b8dcb22e34f49ba23
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356249"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531234"
 ---
-# <a name="iosdevicetype-resource-type"></a><span data-ttu-id="93851-103">Tipo de recurso do iosDeviceType</span><span class="sxs-lookup"><span data-stu-id="93851-103">iosDeviceType resource type</span></span>
+# <a name="iosdevicetype-resource-type"></a><span data-ttu-id="76838-103">Tipo de recurso do iosDeviceType</span><span class="sxs-lookup"><span data-stu-id="76838-103">iosDeviceType resource type</span></span>
 
-> <span data-ttu-id="93851-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="93851-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="76838-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="76838-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="93851-105">Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo móvel pode executar.</span><span class="sxs-lookup"><span data-stu-id="93851-105">Contains properties of the possible iOS device types the mobile app can run on.</span></span>
+> <span data-ttu-id="76838-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="76838-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="93851-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="93851-106">Properties</span></span>
-|<span data-ttu-id="93851-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="93851-107">Property</span></span>|<span data-ttu-id="93851-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="93851-108">Type</span></span>|<span data-ttu-id="93851-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="93851-109">Description</span></span>|
+<span data-ttu-id="76838-106">Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo móvel pode executar.</span><span class="sxs-lookup"><span data-stu-id="76838-106">Contains properties of the possible iOS device types the mobile app can run on.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="76838-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="76838-107">Properties</span></span>
+|<span data-ttu-id="76838-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="76838-108">Property</span></span>|<span data-ttu-id="76838-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="76838-109">Type</span></span>|<span data-ttu-id="76838-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="76838-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="93851-110">iPad</span><span class="sxs-lookup"><span data-stu-id="93851-110">iPad</span></span>|<span data-ttu-id="93851-111">Booliano</span><span class="sxs-lookup"><span data-stu-id="93851-111">Boolean</span></span>|<span data-ttu-id="93851-112">Se o aplicativo deve ser executado em iPads.</span><span class="sxs-lookup"><span data-stu-id="93851-112">Whether the app should run on iPads.</span></span>|
-|<span data-ttu-id="93851-113">iPhoneAndIPod</span><span class="sxs-lookup"><span data-stu-id="93851-113">iPhoneAndIPod</span></span>|<span data-ttu-id="93851-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="93851-114">Boolean</span></span>|<span data-ttu-id="93851-115">Se o aplicativo deve ser executado em iPhones e iPods.</span><span class="sxs-lookup"><span data-stu-id="93851-115">Whether the app should run on iPhones and iPods.</span></span>|
+|<span data-ttu-id="76838-111">iPad</span><span class="sxs-lookup"><span data-stu-id="76838-111">iPad</span></span>|<span data-ttu-id="76838-112">Booliano</span><span class="sxs-lookup"><span data-stu-id="76838-112">Boolean</span></span>|<span data-ttu-id="76838-113">Se o aplicativo deve ser executado em iPads.</span><span class="sxs-lookup"><span data-stu-id="76838-113">Whether the app should run on iPads.</span></span>|
+|<span data-ttu-id="76838-114">iPhoneAndIPod</span><span class="sxs-lookup"><span data-stu-id="76838-114">iPhoneAndIPod</span></span>|<span data-ttu-id="76838-115">Booliano</span><span class="sxs-lookup"><span data-stu-id="76838-115">Boolean</span></span>|<span data-ttu-id="76838-116">Se o aplicativo deve ser executado em iPhones e iPods.</span><span class="sxs-lookup"><span data-stu-id="76838-116">Whether the app should run on iPhones and iPods.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="93851-116">Relações</span><span class="sxs-lookup"><span data-stu-id="93851-116">Relationships</span></span>
-<span data-ttu-id="93851-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="93851-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="76838-117">Relações</span><span class="sxs-lookup"><span data-stu-id="76838-117">Relationships</span></span>
+<span data-ttu-id="76838-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="76838-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="93851-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="93851-118">JSON Representation</span></span>
-<span data-ttu-id="93851-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="93851-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="76838-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="76838-119">JSON Representation</span></span>
+<span data-ttu-id="76838-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="76838-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosDeviceType"

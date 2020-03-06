@@ -5,40 +5,42 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a76d11472b3faef95e87ed4724f1397ebe467a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70dfe86840bd908a2e626b7f965d89251b9221aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033779"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533501"
 ---
-# <a name="teamsappinstallation-resource-type"></a><span data-ttu-id="f273d-103">tipo de recurso teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="f273d-103">teamsAppInstallation resource type</span></span>
+# <a name="teamsappinstallation-resource-type"></a><span data-ttu-id="d88a7-103">tipo de recurso teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="d88a7-103">teamsAppInstallation resource type</span></span>
 
-<span data-ttu-id="f273d-104">Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md).</span><span class="sxs-lookup"><span data-stu-id="f273d-104">A [teamsApp](teamsapp.md) installed in a [team](team.md).</span></span> <span data-ttu-id="f273d-105">Qualquer bots que faça parte do aplicativo se tornará parte de qualquer equipe à qual o aplicativo é adicionado.</span><span class="sxs-lookup"><span data-stu-id="f273d-105">Any bots that are part of the app will become part of any team the app is added to.</span></span>
+<span data-ttu-id="d88a7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d88a7-104">Namespace: microsoft.graph</span></span>
 
-## <a name="methods"></a><span data-ttu-id="f273d-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="f273d-106">Methods</span></span>
+<span data-ttu-id="d88a7-105">Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md).</span><span class="sxs-lookup"><span data-stu-id="d88a7-105">A [teamsApp](teamsapp.md) installed in a [team](team.md).</span></span> <span data-ttu-id="d88a7-106">Qualquer bots que faça parte do aplicativo se tornará parte de qualquer equipe à qual o aplicativo é adicionado.</span><span class="sxs-lookup"><span data-stu-id="d88a7-106">Any bots that are part of the app will become part of any team the app is added to.</span></span>
 
-| <span data-ttu-id="f273d-107">Método</span><span class="sxs-lookup"><span data-stu-id="f273d-107">Method</span></span>       | <span data-ttu-id="f273d-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="f273d-108">Return Type</span></span>  |<span data-ttu-id="f273d-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f273d-109">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="d88a7-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="d88a7-107">Methods</span></span>
+
+| <span data-ttu-id="d88a7-108">Método</span><span class="sxs-lookup"><span data-stu-id="d88a7-108">Method</span></span>       | <span data-ttu-id="d88a7-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="d88a7-109">Return Type</span></span>  |<span data-ttu-id="d88a7-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d88a7-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="f273d-110">Listar aplicativos</span><span class="sxs-lookup"><span data-stu-id="f273d-110">List apps</span></span>](../api/teamsappinstallation-list.md) | [<span data-ttu-id="f273d-111">teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="f273d-111">teamsAppInstallation</span></span>](teamsappinstallation.md) | <span data-ttu-id="f273d-112">Lista os aplicativos instalados em uma equipe.</span><span class="sxs-lookup"><span data-stu-id="f273d-112">Lists apps installed in a team.</span></span>|
-|[<span data-ttu-id="f273d-113">Adicionar aplicativo</span><span class="sxs-lookup"><span data-stu-id="f273d-113">Add app</span></span>](../api/teamsappinstallation-add.md) | [<span data-ttu-id="f273d-114">teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="f273d-114">teamsAppInstallation</span></span>](teamsappinstallation.md) | <span data-ttu-id="f273d-115">Adiciona (instala) um aplicativo a uma equipe.</span><span class="sxs-lookup"><span data-stu-id="f273d-115">Adds (installs) an app to a team.</span></span>|
-|[<span data-ttu-id="f273d-116">Remover aplicativo</span><span class="sxs-lookup"><span data-stu-id="f273d-116">Remove app</span></span>](../api/teamsappinstallation-delete.md) | <span data-ttu-id="f273d-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="f273d-117">None</span></span> | <span data-ttu-id="f273d-118">Remove (desinstala) um aplicativo de uma equipe.</span><span class="sxs-lookup"><span data-stu-id="f273d-118">Removes (uninstalls) an app from a team.</span></span>|
-|[<span data-ttu-id="f273d-119">Atualizar aplicativo</span><span class="sxs-lookup"><span data-stu-id="f273d-119">Upgrade app</span></span>](../api/teamsappinstallation-upgrade.md) | <span data-ttu-id="f273d-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="f273d-120">None</span></span> | <span data-ttu-id="f273d-121">Atualiza para a versão mais recente do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f273d-121">Upgrades to the latest version of the app.</span></span>|
+|[<span data-ttu-id="d88a7-111">Listar aplicativos</span><span class="sxs-lookup"><span data-stu-id="d88a7-111">List apps</span></span>](../api/teamsappinstallation-list.md) | [<span data-ttu-id="d88a7-112">teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="d88a7-112">teamsAppInstallation</span></span>](teamsappinstallation.md) | <span data-ttu-id="d88a7-113">Lista os aplicativos instalados em uma equipe.</span><span class="sxs-lookup"><span data-stu-id="d88a7-113">Lists apps installed in a team.</span></span>|
+|[<span data-ttu-id="d88a7-114">Adicionar aplicativo</span><span class="sxs-lookup"><span data-stu-id="d88a7-114">Add app</span></span>](../api/teamsappinstallation-add.md) | [<span data-ttu-id="d88a7-115">teamsAppInstallation</span><span class="sxs-lookup"><span data-stu-id="d88a7-115">teamsAppInstallation</span></span>](teamsappinstallation.md) | <span data-ttu-id="d88a7-116">Adiciona (instala) um aplicativo a uma equipe.</span><span class="sxs-lookup"><span data-stu-id="d88a7-116">Adds (installs) an app to a team.</span></span>|
+|[<span data-ttu-id="d88a7-117">Remover aplicativo</span><span class="sxs-lookup"><span data-stu-id="d88a7-117">Remove app</span></span>](../api/teamsappinstallation-delete.md) | <span data-ttu-id="d88a7-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d88a7-118">None</span></span> | <span data-ttu-id="d88a7-119">Remove (desinstala) um aplicativo de uma equipe.</span><span class="sxs-lookup"><span data-stu-id="d88a7-119">Removes (uninstalls) an app from a team.</span></span>|
+|[<span data-ttu-id="d88a7-120">Atualizar aplicativo</span><span class="sxs-lookup"><span data-stu-id="d88a7-120">Upgrade app</span></span>](../api/teamsappinstallation-upgrade.md) | <span data-ttu-id="d88a7-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d88a7-121">None</span></span> | <span data-ttu-id="d88a7-122">Atualiza para a versão mais recente do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="d88a7-122">Upgrades to the latest version of the app.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="f273d-122">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f273d-122">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d88a7-123">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d88a7-123">Properties</span></span>
 
-| <span data-ttu-id="f273d-123">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f273d-123">Property</span></span>            | <span data-ttu-id="f273d-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="f273d-124">Type</span></span>     | <span data-ttu-id="f273d-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="f273d-125">Description</span></span> |
+| <span data-ttu-id="d88a7-124">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d88a7-124">Property</span></span>            | <span data-ttu-id="d88a7-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="d88a7-125">Type</span></span>     | <span data-ttu-id="d88a7-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="d88a7-126">Description</span></span> |
 |:------------------- |:-------- |:----------- |
-| <span data-ttu-id="f273d-126">id</span><span class="sxs-lookup"><span data-stu-id="f273d-126">id</span></span>                  | <span data-ttu-id="f273d-127">string</span><span class="sxs-lookup"><span data-stu-id="f273d-127">string</span></span>   | <span data-ttu-id="f273d-128">Uma ID exclusiva (não a AppID do Teams).</span><span class="sxs-lookup"><span data-stu-id="f273d-128">A unique id (not the teams appid).</span></span> |
+| <span data-ttu-id="d88a7-127">id</span><span class="sxs-lookup"><span data-stu-id="d88a7-127">id</span></span>                  | <span data-ttu-id="d88a7-128">string</span><span class="sxs-lookup"><span data-stu-id="d88a7-128">string</span></span>   | <span data-ttu-id="d88a7-129">Uma ID exclusiva (não a AppID do Teams).</span><span class="sxs-lookup"><span data-stu-id="d88a7-129">A unique id (not the teams appid).</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="f273d-129">Relações</span><span class="sxs-lookup"><span data-stu-id="f273d-129">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="d88a7-130">Relacionamento</span><span class="sxs-lookup"><span data-stu-id="d88a7-130">Relationships</span></span>
 
-| <span data-ttu-id="f273d-130">Relação</span><span class="sxs-lookup"><span data-stu-id="f273d-130">Relationship</span></span>   | <span data-ttu-id="f273d-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="f273d-131">Type</span></span>    | <span data-ttu-id="f273d-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="f273d-132">Description</span></span> |
+| <span data-ttu-id="d88a7-131">Relação</span><span class="sxs-lookup"><span data-stu-id="d88a7-131">Relationship</span></span>   | <span data-ttu-id="d88a7-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="d88a7-132">Type</span></span>    | <span data-ttu-id="d88a7-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="d88a7-133">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f273d-133">teamsApp</span><span class="sxs-lookup"><span data-stu-id="f273d-133">teamsApp</span></span>|[<span data-ttu-id="f273d-134">teamsApp</span><span class="sxs-lookup"><span data-stu-id="f273d-134">teamsApp</span></span>](teamsapp.md)| <span data-ttu-id="f273d-135">O aplicativo que está instalado.</span><span class="sxs-lookup"><span data-stu-id="f273d-135">The app that is installed.</span></span> |
-|<span data-ttu-id="f273d-136">teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="f273d-136">teamsAppDefinition</span></span>|[<span data-ttu-id="f273d-137">teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="f273d-137">teamsAppDefinition</span></span>](teamsappdefinition.md)| <span data-ttu-id="f273d-138">Os detalhes desta versão do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f273d-138">The details of this version of the app.</span></span> |
+|<span data-ttu-id="d88a7-134">teamsApp</span><span class="sxs-lookup"><span data-stu-id="d88a7-134">teamsApp</span></span>|[<span data-ttu-id="d88a7-135">teamsApp</span><span class="sxs-lookup"><span data-stu-id="d88a7-135">teamsApp</span></span>](teamsapp.md)| <span data-ttu-id="d88a7-136">O aplicativo que está instalado.</span><span class="sxs-lookup"><span data-stu-id="d88a7-136">The app that is installed.</span></span> |
+|<span data-ttu-id="d88a7-137">teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="d88a7-137">teamsAppDefinition</span></span>|[<span data-ttu-id="d88a7-138">teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="d88a7-138">teamsAppDefinition</span></span>](teamsappdefinition.md)| <span data-ttu-id="d88a7-139">Os detalhes desta versão do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="d88a7-139">The details of this version of the app.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="f273d-139">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f273d-139">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d88a7-140">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d88a7-140">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,11 +54,11 @@ ms.locfileid: "36033779"
 }
 ```
 
-# <a name="see-also"></a><span data-ttu-id="f273d-140">Confira também</span><span class="sxs-lookup"><span data-stu-id="f273d-140">See also</span></span>
+# <a name="see-also"></a><span data-ttu-id="d88a7-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="d88a7-141">See also</span></span>
 
-- [<span data-ttu-id="f273d-141">teamsApp</span><span class="sxs-lookup"><span data-stu-id="f273d-141">teamsApp</span></span>](teamsapp.md)
-- [<span data-ttu-id="f273d-142">teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="f273d-142">teamsAppDefinition</span></span>](teamsappdefinition.md)
-- [<span data-ttu-id="f273d-143">teamsTab</span><span class="sxs-lookup"><span data-stu-id="f273d-143">teamsTab</span></span>](../resources/teamstab.md)
+- [<span data-ttu-id="d88a7-142">teamsApp</span><span class="sxs-lookup"><span data-stu-id="d88a7-142">teamsApp</span></span>](teamsapp.md)
+- [<span data-ttu-id="d88a7-143">teamsAppDefinition</span><span class="sxs-lookup"><span data-stu-id="d88a7-143">teamsAppDefinition</span></span>](teamsappdefinition.md)
+- [<span data-ttu-id="d88a7-144">teamsTab</span><span class="sxs-lookup"><span data-stu-id="d88a7-144">teamsTab</span></span>](../resources/teamstab.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

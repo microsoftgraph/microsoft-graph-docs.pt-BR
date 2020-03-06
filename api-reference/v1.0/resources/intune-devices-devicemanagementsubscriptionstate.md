@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3aef499e90222dc1e60feebce334e1797e5b299
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 36494fc309e1dc5bd7612117a924136e2f1b2bf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356923"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533274"
 ---
-# <a name="devicemanagementsubscriptionstate-enum-type"></a><span data-ttu-id="b7e73-103">tipo de enumeração deviceManagementSubscriptionState</span><span class="sxs-lookup"><span data-stu-id="b7e73-103">deviceManagementSubscriptionState enum type</span></span>
+# <a name="devicemanagementsubscriptionstate-enum-type"></a><span data-ttu-id="62d1c-103">tipo de enumeração deviceManagementSubscriptionState</span><span class="sxs-lookup"><span data-stu-id="62d1c-103">deviceManagementSubscriptionState enum type</span></span>
 
-> <span data-ttu-id="b7e73-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b7e73-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="62d1c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="62d1c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b7e73-105">Estado de assinatura de gerenciamento de dispositivo móvel do locatário.</span><span class="sxs-lookup"><span data-stu-id="b7e73-105">Tenant mobile device management subscription state.</span></span>
+> <span data-ttu-id="62d1c-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="62d1c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b7e73-106">Membros</span><span class="sxs-lookup"><span data-stu-id="b7e73-106">Members</span></span>
-|<span data-ttu-id="b7e73-107">Membro</span><span class="sxs-lookup"><span data-stu-id="b7e73-107">Member</span></span>|<span data-ttu-id="b7e73-108">Valor</span><span class="sxs-lookup"><span data-stu-id="b7e73-108">Value</span></span>|<span data-ttu-id="b7e73-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7e73-109">Description</span></span>|
+<span data-ttu-id="62d1c-106">Estado de assinatura de gerenciamento de dispositivo móvel do locatário.</span><span class="sxs-lookup"><span data-stu-id="62d1c-106">Tenant mobile device management subscription state.</span></span>
+
+## <a name="members"></a><span data-ttu-id="62d1c-107">Membros</span><span class="sxs-lookup"><span data-stu-id="62d1c-107">Members</span></span>
+|<span data-ttu-id="62d1c-108">Membro</span><span class="sxs-lookup"><span data-stu-id="62d1c-108">Member</span></span>|<span data-ttu-id="62d1c-109">Valor</span><span class="sxs-lookup"><span data-stu-id="62d1c-109">Value</span></span>|<span data-ttu-id="62d1c-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="62d1c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7e73-110">função</span><span class="sxs-lookup"><span data-stu-id="b7e73-110">pending</span></span>|<span data-ttu-id="b7e73-111">,0</span><span class="sxs-lookup"><span data-stu-id="b7e73-111">0</span></span>|<span data-ttu-id="b7e73-112">Pending</span><span class="sxs-lookup"><span data-stu-id="b7e73-112">Pending</span></span>|
-|<span data-ttu-id="b7e73-113">active</span><span class="sxs-lookup"><span data-stu-id="b7e73-113">active</span></span>|<span data-ttu-id="b7e73-114">1</span><span class="sxs-lookup"><span data-stu-id="b7e73-114">1</span></span>|<span data-ttu-id="b7e73-115">Ativo</span><span class="sxs-lookup"><span data-stu-id="b7e73-115">Active</span></span>|
-|<span data-ttu-id="b7e73-116">warning</span><span class="sxs-lookup"><span data-stu-id="b7e73-116">warning</span></span>|<span data-ttu-id="b7e73-117">duas</span><span class="sxs-lookup"><span data-stu-id="b7e73-117">2</span></span>|<span data-ttu-id="b7e73-118">Aviso</span><span class="sxs-lookup"><span data-stu-id="b7e73-118">Warning</span></span>|
-|<span data-ttu-id="b7e73-119">deficiência</span><span class="sxs-lookup"><span data-stu-id="b7e73-119">disabled</span></span>|<span data-ttu-id="b7e73-120">3D</span><span class="sxs-lookup"><span data-stu-id="b7e73-120">3</span></span>|<span data-ttu-id="b7e73-121">Desabilitado</span><span class="sxs-lookup"><span data-stu-id="b7e73-121">Disabled</span></span>|
-|<span data-ttu-id="b7e73-122">deleted</span><span class="sxs-lookup"><span data-stu-id="b7e73-122">deleted</span></span>|<span data-ttu-id="b7e73-123">quatro</span><span class="sxs-lookup"><span data-stu-id="b7e73-123">4</span></span>|<span data-ttu-id="b7e73-124">Deleted</span><span class="sxs-lookup"><span data-stu-id="b7e73-124">Deleted</span></span>|
-|<span data-ttu-id="b7e73-125">bloqueou</span><span class="sxs-lookup"><span data-stu-id="b7e73-125">blocked</span></span>|<span data-ttu-id="b7e73-126">0,5</span><span class="sxs-lookup"><span data-stu-id="b7e73-126">5</span></span>|<span data-ttu-id="b7e73-127">Blocked</span><span class="sxs-lookup"><span data-stu-id="b7e73-127">Blocked</span></span>|
-|<span data-ttu-id="b7e73-128">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="b7e73-128">lockedOut</span></span>|<span data-ttu-id="b7e73-129">8 </span><span class="sxs-lookup"><span data-stu-id="b7e73-129">8</span></span>|<span data-ttu-id="b7e73-130">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="b7e73-130">LockedOut</span></span>|
+|<span data-ttu-id="62d1c-111">função</span><span class="sxs-lookup"><span data-stu-id="62d1c-111">pending</span></span>|<span data-ttu-id="62d1c-112">,0</span><span class="sxs-lookup"><span data-stu-id="62d1c-112">0</span></span>|<span data-ttu-id="62d1c-113">Pending</span><span class="sxs-lookup"><span data-stu-id="62d1c-113">Pending</span></span>|
+|<span data-ttu-id="62d1c-114">active</span><span class="sxs-lookup"><span data-stu-id="62d1c-114">active</span></span>|<span data-ttu-id="62d1c-115">1 </span><span class="sxs-lookup"><span data-stu-id="62d1c-115">1</span></span>|<span data-ttu-id="62d1c-116">Ativo</span><span class="sxs-lookup"><span data-stu-id="62d1c-116">Active</span></span>|
+|<span data-ttu-id="62d1c-117">warning</span><span class="sxs-lookup"><span data-stu-id="62d1c-117">warning</span></span>|<span data-ttu-id="62d1c-118">2 </span><span class="sxs-lookup"><span data-stu-id="62d1c-118">2</span></span>|<span data-ttu-id="62d1c-119">Aviso</span><span class="sxs-lookup"><span data-stu-id="62d1c-119">Warning</span></span>|
+|<span data-ttu-id="62d1c-120">deficiência</span><span class="sxs-lookup"><span data-stu-id="62d1c-120">disabled</span></span>|<span data-ttu-id="62d1c-121">3 </span><span class="sxs-lookup"><span data-stu-id="62d1c-121">3</span></span>|<span data-ttu-id="62d1c-122">Desabilitado</span><span class="sxs-lookup"><span data-stu-id="62d1c-122">Disabled</span></span>|
+|<span data-ttu-id="62d1c-123">deleted</span><span class="sxs-lookup"><span data-stu-id="62d1c-123">deleted</span></span>|<span data-ttu-id="62d1c-124">4 </span><span class="sxs-lookup"><span data-stu-id="62d1c-124">4</span></span>|<span data-ttu-id="62d1c-125">Deleted</span><span class="sxs-lookup"><span data-stu-id="62d1c-125">Deleted</span></span>|
+|<span data-ttu-id="62d1c-126">bloqueou</span><span class="sxs-lookup"><span data-stu-id="62d1c-126">blocked</span></span>|<span data-ttu-id="62d1c-127">5 </span><span class="sxs-lookup"><span data-stu-id="62d1c-127">5</span></span>|<span data-ttu-id="62d1c-128">Blocked</span><span class="sxs-lookup"><span data-stu-id="62d1c-128">Blocked</span></span>|
+|<span data-ttu-id="62d1c-129">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="62d1c-129">lockedOut</span></span>|<span data-ttu-id="62d1c-130">8 </span><span class="sxs-lookup"><span data-stu-id="62d1c-130">8</span></span>|<span data-ttu-id="62d1c-131">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="62d1c-131">LockedOut</span></span>|
 
 
 

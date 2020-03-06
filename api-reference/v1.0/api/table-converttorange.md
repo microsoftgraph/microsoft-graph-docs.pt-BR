@@ -5,50 +5,52 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a06d5349dfbf73a979ef1eb88c198e0e558b5674
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 82361ae49127fae002041cf2705c07239add557e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371607"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509707"
 ---
-# <a name="table-converttorange"></a><span data-ttu-id="b5018-104">Table: convertToRange</span><span class="sxs-lookup"><span data-stu-id="b5018-104">Table: convertToRange</span></span>
+# <a name="table-converttorange"></a><span data-ttu-id="6120e-104">Table: convertToRange</span><span class="sxs-lookup"><span data-stu-id="6120e-104">Table: convertToRange</span></span>
 
-<span data-ttu-id="b5018-p102">Converte a tabela em um intervalo de células normal. Todos os dados são preservados.</span><span class="sxs-lookup"><span data-stu-id="b5018-p102">Converts the table into a normal range of cells. All data is preserved.</span></span>
-## <a name="permissions"></a><span data-ttu-id="b5018-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="b5018-107">Permissions</span></span>
-<span data-ttu-id="b5018-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b5018-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6120e-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6120e-105">Namespace: microsoft.graph</span></span>
 
-|<span data-ttu-id="b5018-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b5018-110">Permission type</span></span>      | <span data-ttu-id="b5018-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b5018-111">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="6120e-p102">Converte a tabela em um intervalo de células normal. Todos os dados são preservados.</span><span class="sxs-lookup"><span data-stu-id="6120e-p102">Converts the table into a normal range of cells. All data is preserved.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6120e-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="6120e-108">Permissions</span></span>
+<span data-ttu-id="6120e-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6120e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="6120e-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6120e-111">Permission type</span></span>      | <span data-ttu-id="6120e-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6120e-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b5018-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b5018-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b5018-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b5018-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="b5018-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b5018-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b5018-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b5018-115">Not supported.</span></span>    |
-|<span data-ttu-id="b5018-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b5018-116">Application</span></span> | <span data-ttu-id="b5018-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b5018-117">Not supported.</span></span> |
+|<span data-ttu-id="6120e-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6120e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="6120e-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6120e-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="6120e-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6120e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6120e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6120e-116">Not supported.</span></span>    |
+|<span data-ttu-id="6120e-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6120e-117">Application</span></span> | <span data-ttu-id="6120e-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6120e-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b5018-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b5018-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6120e-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6120e-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/convertToRange
 POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="b5018-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b5018-119">Request headers</span></span>
-| <span data-ttu-id="b5018-120">Nome</span><span class="sxs-lookup"><span data-stu-id="b5018-120">Name</span></span>       | <span data-ttu-id="b5018-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="b5018-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6120e-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6120e-120">Request headers</span></span>
+| <span data-ttu-id="6120e-121">Nome</span><span class="sxs-lookup"><span data-stu-id="6120e-121">Name</span></span>       | <span data-ttu-id="6120e-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="6120e-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="b5018-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b5018-122">Authorization</span></span>  | <span data-ttu-id="b5018-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b5018-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b5018-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b5018-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="b5018-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="b5018-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="6120e-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="6120e-123">Authorization</span></span>  | <span data-ttu-id="6120e-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6120e-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6120e-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6120e-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="6120e-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="6120e-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b5018-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b5018-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6120e-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6120e-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="b5018-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="b5018-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6120e-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="6120e-130">Response</span></span>
 
-<span data-ttu-id="b5018-130">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b5018-130">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="6120e-131">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6120e-131">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5018-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b5018-131">Example</span></span>
-<span data-ttu-id="b5018-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="b5018-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="b5018-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b5018-133">Request</span></span>
-<span data-ttu-id="b5018-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b5018-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6120e-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6120e-132">Example</span></span>
+<span data-ttu-id="6120e-133">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="6120e-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="6120e-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6120e-134">Request</span></span>
+<span data-ttu-id="6120e-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6120e-135">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b5018-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="b5018-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6120e-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="6120e-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "table_converttorange"
@@ -56,27 +58,27 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/convertToRange
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b5018-136">C#</span><span class="sxs-lookup"><span data-stu-id="b5018-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6120e-137">C#</span><span class="sxs-lookup"><span data-stu-id="6120e-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-converttorange-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5018-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b5018-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6120e-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6120e-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/table-converttorange-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b5018-138">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="b5018-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6120e-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6120e-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/table-converttorange-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="b5018-139">Java</span><span class="sxs-lookup"><span data-stu-id="b5018-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6120e-140">Java</span><span class="sxs-lookup"><span data-stu-id="6120e-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/table-converttorange-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="b5018-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="b5018-140">Response</span></span>
-<span data-ttu-id="b5018-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b5018-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6120e-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="6120e-141">Response</span></span>
+<span data-ttu-id="6120e-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6120e-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

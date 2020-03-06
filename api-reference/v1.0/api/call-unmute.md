@@ -5,60 +5,62 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51ad26211208934599feb65d4f932d8654fd170e
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: ce43da407bae979b174c971e867a8302c220e31f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913629"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518648"
 ---
-# <a name="call-unmute"></a><span data-ttu-id="09363-103">chamada: ativar mudo</span><span class="sxs-lookup"><span data-stu-id="09363-103">call: unmute</span></span>
+# <a name="call-unmute"></a><span data-ttu-id="d6e59-103">chamada: ativar mudo</span><span class="sxs-lookup"><span data-stu-id="d6e59-103">call: unmute</span></span>
 
-<span data-ttu-id="09363-104">Permitir que o aplicativo se desative sozinho.</span><span class="sxs-lookup"><span data-stu-id="09363-104">Allow the application to unmute itself.</span></span>
+<span data-ttu-id="d6e59-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d6e59-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="09363-105">Este é um servidor que está desativado, o que significa que o servidor começará a enviar pacotes de áudio para este participante a outros participantes novamente.</span><span class="sxs-lookup"><span data-stu-id="09363-105">This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.</span></span>
+<span data-ttu-id="d6e59-105">Permitir que o aplicativo se desative sozinho.</span><span class="sxs-lookup"><span data-stu-id="d6e59-105">Allow the application to unmute itself.</span></span>
 
-<span data-ttu-id="09363-106">Para obter mais informações sobre como lidar com as operações de desativação, consulte [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).</span><span class="sxs-lookup"><span data-stu-id="09363-106">For more information about how to handle unmute operations, see [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).</span></span>
+<span data-ttu-id="d6e59-106">Este é um servidor que está desativado, o que significa que o servidor começará a enviar pacotes de áudio para este participante a outros participantes novamente.</span><span class="sxs-lookup"><span data-stu-id="d6e59-106">This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.</span></span>
 
-> <span data-ttu-id="09363-107">**Observação:** Este método só tem suporte para chamadas de grupo.</span><span class="sxs-lookup"><span data-stu-id="09363-107">**Note:** This method is only supported for group calls.</span></span>
+<span data-ttu-id="d6e59-107">Para obter mais informações sobre como lidar com as operações de desativação, consulte [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).</span><span class="sxs-lookup"><span data-stu-id="d6e59-107">For more information about how to handle unmute operations, see [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="09363-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="09363-108">Permissions</span></span>
+> <span data-ttu-id="d6e59-108">**Observação:** Este método só tem suporte para chamadas de grupo.</span><span class="sxs-lookup"><span data-stu-id="d6e59-108">**Note:** This method is only supported for group calls.</span></span>
 
-| <span data-ttu-id="09363-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="09363-109">Permission type</span></span>                        | <span data-ttu-id="09363-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="09363-110">Permissions (from least to most privileged)</span></span> |
+## <a name="permissions"></a><span data-ttu-id="d6e59-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="d6e59-109">Permissions</span></span>
+
+| <span data-ttu-id="d6e59-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d6e59-110">Permission type</span></span>                        | <span data-ttu-id="d6e59-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d6e59-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="09363-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="09363-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="09363-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="09363-112">Not supported.</span></span>                               |
-| <span data-ttu-id="09363-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="09363-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="09363-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="09363-114">Not supported.</span></span>                               |
-| <span data-ttu-id="09363-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="09363-115">Application</span></span>                            | <span data-ttu-id="09363-116">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="09363-116">None.</span></span>                                        |
+| <span data-ttu-id="d6e59-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d6e59-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d6e59-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d6e59-113">Not supported.</span></span>                               |
+| <span data-ttu-id="d6e59-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d6e59-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d6e59-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d6e59-115">Not supported.</span></span>                               |
+| <span data-ttu-id="d6e59-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d6e59-116">Application</span></span>                            | <span data-ttu-id="d6e59-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d6e59-117">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="09363-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="09363-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d6e59-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d6e59-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /communications/calls/{id}/unmute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="09363-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="09363-118">Request headers</span></span>
-| <span data-ttu-id="09363-119">Nome</span><span class="sxs-lookup"><span data-stu-id="09363-119">Name</span></span>          | <span data-ttu-id="09363-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="09363-120">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="d6e59-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d6e59-119">Request headers</span></span>
+| <span data-ttu-id="d6e59-120">Nome</span><span class="sxs-lookup"><span data-stu-id="d6e59-120">Name</span></span>          | <span data-ttu-id="d6e59-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="d6e59-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="09363-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="09363-121">Authorization</span></span> | <span data-ttu-id="09363-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="09363-p101">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="09363-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="09363-124">Content-type</span></span> | <span data-ttu-id="09363-p102">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="09363-p102">application/json. Required.</span></span>|
+| <span data-ttu-id="d6e59-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d6e59-122">Authorization</span></span> | <span data-ttu-id="d6e59-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d6e59-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d6e59-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="d6e59-125">Content-type</span></span> | <span data-ttu-id="d6e59-p102">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d6e59-p102">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="09363-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="09363-127">Request body</span></span>
-<span data-ttu-id="09363-128">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="09363-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d6e59-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d6e59-128">Request body</span></span>
+<span data-ttu-id="d6e59-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d6e59-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="09363-129">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="09363-129">Parameter</span></span>      | <span data-ttu-id="09363-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="09363-130">Type</span></span>    |<span data-ttu-id="09363-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="09363-131">Description</span></span>|
+| <span data-ttu-id="d6e59-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="d6e59-130">Parameter</span></span>      | <span data-ttu-id="d6e59-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="d6e59-131">Type</span></span>    |<span data-ttu-id="d6e59-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="d6e59-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="09363-132">clientContext</span><span class="sxs-lookup"><span data-stu-id="09363-132">clientContext</span></span>|<span data-ttu-id="09363-133">String</span><span class="sxs-lookup"><span data-stu-id="09363-133">String</span></span>|<span data-ttu-id="09363-134">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="09363-134">Unique Client Context string.</span></span> <span data-ttu-id="09363-135">O limite máximo é de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="09363-135">Max limit is 256 chars.</span></span>|
+|<span data-ttu-id="d6e59-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="d6e59-133">clientContext</span></span>|<span data-ttu-id="d6e59-134">String</span><span class="sxs-lookup"><span data-stu-id="d6e59-134">String</span></span>|<span data-ttu-id="d6e59-135">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="d6e59-135">Unique Client Context string.</span></span> <span data-ttu-id="d6e59-136">O limite máximo é de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="d6e59-136">Max limit is 256 chars.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="09363-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="09363-136">Response</span></span>
-<span data-ttu-id="09363-137">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="09363-137">If successful, this method returns a `200 OK` response code and a [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d6e59-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="d6e59-137">Response</span></span>
+<span data-ttu-id="d6e59-138">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d6e59-138">If successful, this method returns a `200 OK` response code and a [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) object in the response body.</span></span>
 
-><span data-ttu-id="09363-138">**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.</span><span class="sxs-lookup"><span data-stu-id="09363-138">**Note:** When this API returns a successful response, all participants will receive a roster update.</span></span>
+><span data-ttu-id="d6e59-139">**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.</span><span class="sxs-lookup"><span data-stu-id="d6e59-139">**Note:** When this API returns a successful response, all participants will receive a roster update.</span></span>
 
-## <a name="example"></a><span data-ttu-id="09363-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="09363-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d6e59-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d6e59-140">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="09363-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="09363-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="d6e59-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d6e59-141">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="09363-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="09363-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d6e59-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="d6e59-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-unmute"
@@ -72,28 +74,28 @@ Content-Length: 46
   "clientContext": "clientContext-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="09363-142">C#</span><span class="sxs-lookup"><span data-stu-id="09363-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d6e59-143">C#</span><span class="sxs-lookup"><span data-stu-id="d6e59-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-unmute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="09363-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="09363-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d6e59-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d6e59-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-unmute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="09363-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="09363-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d6e59-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d6e59-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-unmute-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="09363-145">Java</span><span class="sxs-lookup"><span data-stu-id="09363-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d6e59-146">Java</span><span class="sxs-lookup"><span data-stu-id="d6e59-146">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-unmute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="09363-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="09363-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="d6e59-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="d6e59-147">Response</span></span>
 
-> <span data-ttu-id="09363-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="09363-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d6e59-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d6e59-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -122,7 +124,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-unmuted"></a><span data-ttu-id="09363-149">Lista de notificação atualizada com o participante sem som</span><span class="sxs-lookup"><span data-stu-id="09363-149">Notification - roster updated with participant unmuted</span></span>
+##### <a name="notification---roster-updated-with-participant-unmuted"></a><span data-ttu-id="d6e59-150">Lista de notificação atualizada com o participante sem som</span><span class="sxs-lookup"><span data-stu-id="d6e59-150">Notification - roster updated with participant unmuted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

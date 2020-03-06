@@ -7,20 +7,22 @@ localization_priority: Normal
 description: O recurso FolderView fornece ou define recomendações sobre a experiência do usuário de uma pasta.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 67ec2e079348cc45664804d39314e6c81f4548e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a614f0a14f6dc12df412692c01b8005e62665143
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532936"
 ---
-# <a name="folderview-resource-type"></a><span data-ttu-id="62998-103">Tipo de recurso FolderView</span><span class="sxs-lookup"><span data-stu-id="62998-103">FolderView resource type</span></span>
+# <a name="folderview-resource-type"></a><span data-ttu-id="b3c97-103">Tipo de recurso FolderView</span><span class="sxs-lookup"><span data-stu-id="b3c97-103">FolderView resource type</span></span>
 
-<span data-ttu-id="62998-104">O recurso **FolderView** fornece ou define recomendações sobre a experiência do usuário de uma pasta.</span><span class="sxs-lookup"><span data-stu-id="62998-104">The **FolderView** resource provides or sets recommendations on the user-experience of a folder.</span></span>
+<span data-ttu-id="b3c97-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b3c97-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="62998-105">Está disponível a partir da propriedade [folder][folder-facet] dos recursos [driveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="62998-105">It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.</span></span>
+<span data-ttu-id="b3c97-105">O recurso **FolderView** fornece ou define recomendações sobre a experiência do usuário de uma pasta.</span><span class="sxs-lookup"><span data-stu-id="b3c97-105">The **FolderView** resource provides or sets recommendations on the user-experience of a folder.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="62998-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="62998-106">JSON representation</span></span>
+<span data-ttu-id="b3c97-106">Está disponível a partir da propriedade [folder][folder-facet] dos recursos [driveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="b3c97-106">It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="b3c97-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b3c97-107">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.folderView" } -->
 
@@ -32,51 +34,51 @@ ms.locfileid: "36032449"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="62998-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="62998-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b3c97-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b3c97-108">Properties</span></span>
 
-| <span data-ttu-id="62998-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="62998-108">Property name</span></span>         | <span data-ttu-id="62998-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="62998-109">Type</span></span>   | <span data-ttu-id="62998-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="62998-110">Description</span></span>
+| <span data-ttu-id="b3c97-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="b3c97-109">Property name</span></span>         | <span data-ttu-id="b3c97-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="b3c97-110">Type</span></span>   | <span data-ttu-id="b3c97-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3c97-111">Description</span></span>
 |:----------------------|:-------|:--------------------------------------------
-| <span data-ttu-id="62998-111">**sortBy**</span><span class="sxs-lookup"><span data-stu-id="62998-111">**sortBy**</span></span>            | <span data-ttu-id="62998-112">string</span><span class="sxs-lookup"><span data-stu-id="62998-112">string</span></span> | <span data-ttu-id="62998-113">O método pelo qual a pasta deve ser classificada.</span><span class="sxs-lookup"><span data-stu-id="62998-113">The method by which the folder should be sorted.</span></span>
-| <span data-ttu-id="62998-114">**sortOrder**</span><span class="sxs-lookup"><span data-stu-id="62998-114">**sortOrder**</span></span>         | <span data-ttu-id="62998-115">string</span><span class="sxs-lookup"><span data-stu-id="62998-115">string</span></span> | <span data-ttu-id="62998-p101">Se for verdadeiro, indica que os itens devem ser classificados em ordem decrescente. Caso contrário, os itens devem ser classificados em ordem crescente.</span><span class="sxs-lookup"><span data-stu-id="62998-p101">If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending.</span></span>
-| <span data-ttu-id="62998-118">**viewType**</span><span class="sxs-lookup"><span data-stu-id="62998-118">**viewType**</span></span>          | <span data-ttu-id="62998-119">string</span><span class="sxs-lookup"><span data-stu-id="62998-119">string</span></span> | <span data-ttu-id="62998-120">O tipo de modo de exibição que deve ser usado para representar a pasta.</span><span class="sxs-lookup"><span data-stu-id="62998-120">The type of view that should be used to represent the folder.</span></span>
+| <span data-ttu-id="b3c97-112">**sortBy**</span><span class="sxs-lookup"><span data-stu-id="b3c97-112">**sortBy**</span></span>            | <span data-ttu-id="b3c97-113">string</span><span class="sxs-lookup"><span data-stu-id="b3c97-113">string</span></span> | <span data-ttu-id="b3c97-114">O método pelo qual a pasta deve ser classificada.</span><span class="sxs-lookup"><span data-stu-id="b3c97-114">The method by which the folder should be sorted.</span></span>
+| <span data-ttu-id="b3c97-115">**sortOrder**</span><span class="sxs-lookup"><span data-stu-id="b3c97-115">**sortOrder**</span></span>         | <span data-ttu-id="b3c97-116">string</span><span class="sxs-lookup"><span data-stu-id="b3c97-116">string</span></span> | <span data-ttu-id="b3c97-p101">Se for verdadeiro, indica que os itens devem ser classificados em ordem decrescente. Caso contrário, os itens devem ser classificados em ordem crescente.</span><span class="sxs-lookup"><span data-stu-id="b3c97-p101">If true, indicates that items should be sorted in descending order. Otherwise, items should be sorted ascending.</span></span>
+| <span data-ttu-id="b3c97-119">**viewType**</span><span class="sxs-lookup"><span data-stu-id="b3c97-119">**viewType**</span></span>          | <span data-ttu-id="b3c97-120">string</span><span class="sxs-lookup"><span data-stu-id="b3c97-120">string</span></span> | <span data-ttu-id="b3c97-121">O tipo de modo de exibição que deve ser usado para representar a pasta.</span><span class="sxs-lookup"><span data-stu-id="b3c97-121">The type of view that should be used to represent the folder.</span></span>
 
-<span data-ttu-id="62998-121">Você pode usar a propriedade _sortBy_ para controlar a ordem de classificação dos itens em aplicativos que respeitam a faceta **viewType**.</span><span class="sxs-lookup"><span data-stu-id="62998-121">You can use the _sortBy_ property to control the sort order of the items in applications that respect the **viewType** facet.</span></span>
+<span data-ttu-id="b3c97-122">Você pode usar a propriedade _sortBy_ para controlar a ordem de classificação dos itens em aplicativos que respeitam a faceta **viewType**.</span><span class="sxs-lookup"><span data-stu-id="b3c97-122">You can use the _sortBy_ property to control the sort order of the items in applications that respect the **viewType** facet.</span></span>
 
-### <a name="sortby-options"></a><span data-ttu-id="62998-122">opções de sortBy</span><span class="sxs-lookup"><span data-stu-id="62998-122">sortBy options</span></span>
+### <a name="sortby-options"></a><span data-ttu-id="b3c97-123">opções de sortBy</span><span class="sxs-lookup"><span data-stu-id="b3c97-123">sortBy options</span></span>
 
-<span data-ttu-id="62998-123">Os seguintes valores são definidos para a propriedade **sortBy**.</span><span class="sxs-lookup"><span data-stu-id="62998-123">The following values are defined for the **sortBy** property.</span></span>
+<span data-ttu-id="b3c97-124">Os seguintes valores são definidos para a propriedade **sortBy**.</span><span class="sxs-lookup"><span data-stu-id="b3c97-124">The following values are defined for the **sortBy** property.</span></span>
 
-| <span data-ttu-id="62998-124">Valor</span><span class="sxs-lookup"><span data-stu-id="62998-124">Value</span></span>                    | <span data-ttu-id="62998-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="62998-125">Description</span></span>
+| <span data-ttu-id="b3c97-125">Valor</span><span class="sxs-lookup"><span data-stu-id="b3c97-125">Value</span></span>                    | <span data-ttu-id="b3c97-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3c97-126">Description</span></span>
 | ------------------------ | --------------------------------------------------
-| `default`                | <span data-ttu-id="62998-126">A ordem de classificação padrão do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="62998-126">The default sort order of the application.</span></span>
-| `name`                   | <span data-ttu-id="62998-127">Os itens devem ser organizados pela propriedade **name** dos itens.</span><span class="sxs-lookup"><span data-stu-id="62998-127">Items should be arranged by the **name** property of the items.</span></span>
-| `type`                   | <span data-ttu-id="62998-128">Os itens devem ser organizados pelo tipo de item.</span><span class="sxs-lookup"><span data-stu-id="62998-128">Items should be arranged by the type of item.</span></span>
-| `size`                   | <span data-ttu-id="62998-129">Os itens devem ser organizados pela propriedade **size** dos itens.</span><span class="sxs-lookup"><span data-stu-id="62998-129">Items should be arranged by the **size** property of the items.</span></span>
-| `takenOrCreatedDateTime` | <span data-ttu-id="62998-p102">Os itens devem ser organizados pela propriedade **takenDateTime** da faceta **photo**. Se não estiver disponível, a propriedade **createdDateTime** deverá ser usada.</span><span class="sxs-lookup"><span data-stu-id="62998-p102">Items should be arranged by the **takenDateTime** property of the **photo** facet. If not available, the **createdDateTime** property should be used.</span></span>
-| `lastModifiedDateTime`   | <span data-ttu-id="62998-132">Os itens devem ser organizados pela propriedade **lastModifiedDateTime** dos itens.</span><span class="sxs-lookup"><span data-stu-id="62998-132">Items should be arranged by the **lastModifiedDateTime** property of the items.</span></span>
-| `sequence`               | <span data-ttu-id="62998-133">Os itens seguem uma sequência personalizada especificada pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="62998-133">Items follow a custom sequence specified by the user.</span></span>
+| `default`                | <span data-ttu-id="b3c97-127">A ordem de classificação padrão do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="b3c97-127">The default sort order of the application.</span></span>
+| `name`                   | <span data-ttu-id="b3c97-128">Os itens devem ser organizados pela propriedade **name** dos itens.</span><span class="sxs-lookup"><span data-stu-id="b3c97-128">Items should be arranged by the **name** property of the items.</span></span>
+| `type`                   | <span data-ttu-id="b3c97-129">Os itens devem ser organizados pelo tipo de item.</span><span class="sxs-lookup"><span data-stu-id="b3c97-129">Items should be arranged by the type of item.</span></span>
+| `size`                   | <span data-ttu-id="b3c97-130">Os itens devem ser organizados pela propriedade **size** dos itens.</span><span class="sxs-lookup"><span data-stu-id="b3c97-130">Items should be arranged by the **size** property of the items.</span></span>
+| `takenOrCreatedDateTime` | <span data-ttu-id="b3c97-p102">Os itens devem ser organizados pela propriedade **takenDateTime** da faceta **photo**. Se não estiver disponível, a propriedade **createdDateTime** deverá ser usada.</span><span class="sxs-lookup"><span data-stu-id="b3c97-p102">Items should be arranged by the **takenDateTime** property of the **photo** facet. If not available, the **createdDateTime** property should be used.</span></span>
+| `lastModifiedDateTime`   | <span data-ttu-id="b3c97-133">Os itens devem ser organizados pela propriedade **lastModifiedDateTime** dos itens.</span><span class="sxs-lookup"><span data-stu-id="b3c97-133">Items should be arranged by the **lastModifiedDateTime** property of the items.</span></span>
+| `sequence`               | <span data-ttu-id="b3c97-134">Os itens seguem uma sequência personalizada especificada pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="b3c97-134">Items follow a custom sequence specified by the user.</span></span>
 
 
-### <a name="sortorder-options"></a><span data-ttu-id="62998-134">opções de sortOrder</span><span class="sxs-lookup"><span data-stu-id="62998-134">sortOrder options</span></span>
+### <a name="sortorder-options"></a><span data-ttu-id="b3c97-135">opções de sortOrder</span><span class="sxs-lookup"><span data-stu-id="b3c97-135">sortOrder options</span></span>
 
-<span data-ttu-id="62998-135">Os seguintes valores são definidos para a propriedade **sortOrder**.</span><span class="sxs-lookup"><span data-stu-id="62998-135">The following values are defined for the **sortOrder** property.</span></span>
+<span data-ttu-id="b3c97-136">Os seguintes valores são definidos para a propriedade **sortOrder**.</span><span class="sxs-lookup"><span data-stu-id="b3c97-136">The following values are defined for the **sortOrder** property.</span></span>
 
-| <span data-ttu-id="62998-136">Valor</span><span class="sxs-lookup"><span data-stu-id="62998-136">Value</span></span>        | <span data-ttu-id="62998-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="62998-137">Description</span></span>
+| <span data-ttu-id="b3c97-137">Valor</span><span class="sxs-lookup"><span data-stu-id="b3c97-137">Value</span></span>        | <span data-ttu-id="b3c97-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3c97-138">Description</span></span>
 | ------------ | --------------------------------------------------------------
-| `ascending`  | <span data-ttu-id="62998-138">Os itens devem ser organizados em ordem crescente.</span><span class="sxs-lookup"><span data-stu-id="62998-138">Items should be arranged in ascending order.</span></span>
-| `descending` | <span data-ttu-id="62998-139">Os itens devem ser organizados em ordem decrescente.</span><span class="sxs-lookup"><span data-stu-id="62998-139">Items should be arranged in descending order.</span></span>
+| `ascending`  | <span data-ttu-id="b3c97-139">Os itens devem ser organizados em ordem crescente.</span><span class="sxs-lookup"><span data-stu-id="b3c97-139">Items should be arranged in ascending order.</span></span>
+| `descending` | <span data-ttu-id="b3c97-140">Os itens devem ser organizados em ordem decrescente.</span><span class="sxs-lookup"><span data-stu-id="b3c97-140">Items should be arranged in descending order.</span></span>
 
 
-### <a name="viewtype-options"></a><span data-ttu-id="62998-140">opções de ViewType</span><span class="sxs-lookup"><span data-stu-id="62998-140">viewType options</span></span>
+### <a name="viewtype-options"></a><span data-ttu-id="b3c97-141">opções de ViewType</span><span class="sxs-lookup"><span data-stu-id="b3c97-141">viewType options</span></span>
 
-<span data-ttu-id="62998-141">Os seguintes valores são definidos para a propriedade **viewType**.</span><span class="sxs-lookup"><span data-stu-id="62998-141">The following values are defined for the **viewType** property.</span></span>
+<span data-ttu-id="b3c97-142">Os seguintes valores são definidos para a propriedade **viewType**.</span><span class="sxs-lookup"><span data-stu-id="b3c97-142">The following values are defined for the **viewType** property.</span></span>
 
-| <span data-ttu-id="62998-142">Valor</span><span class="sxs-lookup"><span data-stu-id="62998-142">Value</span></span>        | <span data-ttu-id="62998-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="62998-143">Description</span></span>
+| <span data-ttu-id="b3c97-143">Valor</span><span class="sxs-lookup"><span data-stu-id="b3c97-143">Value</span></span>        | <span data-ttu-id="b3c97-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3c97-144">Description</span></span>
 | ------------ | --------------------------------------------------------------
-| `default`    | <span data-ttu-id="62998-144">O tipo de exibição padrão para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="62998-144">The default view type for the application.</span></span>
-| `icons`      | <span data-ttu-id="62998-145">Um modo de exibição que usa ícones para representar driveItems.</span><span class="sxs-lookup"><span data-stu-id="62998-145">A view that uses icons to represent driveItems.</span></span>
-| `details`    | <span data-ttu-id="62998-146">Um modo de exibição com várias colunas que fornecem detalhes adicionais sobre cada item.</span><span class="sxs-lookup"><span data-stu-id="62998-146">A view with multiple columns that provide additional details about each item.</span></span>
-| `thumbnails` | <span data-ttu-id="62998-147">Um modo de exibição que usa miniaturas maiores de driveItems para representar os itens.</span><span class="sxs-lookup"><span data-stu-id="62998-147">A view that uses larger thumbnails of driveItems to represent the items.</span></span>
+| `default`    | <span data-ttu-id="b3c97-145">O tipo de exibição padrão para o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="b3c97-145">The default view type for the application.</span></span>
+| `icons`      | <span data-ttu-id="b3c97-146">Um modo de exibição que usa ícones para representar driveItems.</span><span class="sxs-lookup"><span data-stu-id="b3c97-146">A view that uses icons to represent driveItems.</span></span>
+| `details`    | <span data-ttu-id="b3c97-147">Um modo de exibição com várias colunas que fornecem detalhes adicionais sobre cada item.</span><span class="sxs-lookup"><span data-stu-id="b3c97-147">A view with multiple columns that provide additional details about each item.</span></span>
+| `thumbnails` | <span data-ttu-id="b3c97-148">Um modo de exibição que usa miniaturas maiores de driveItems para representar os itens.</span><span class="sxs-lookup"><span data-stu-id="b3c97-148">A view that uses larger thumbnails of driveItems to represent the items.</span></span>
 
 
 [item-resource]: driveitem.md

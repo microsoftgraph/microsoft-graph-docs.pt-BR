@@ -5,28 +5,30 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 18c320eddbbc9c982d8a3ddfa1b7a067272f34cc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f8d0fd0237bbca4b13deb7fbc8efb3f064f92e2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307956"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509847"
 ---
-# <a name="update-securescorecontrolprofile"></a><span data-ttu-id="a0e2b-103">Atualizar secureScoreControlProfile</span><span class="sxs-lookup"><span data-stu-id="a0e2b-103">Update secureScoreControlProfile</span></span>
+# <a name="update-securescorecontrolprofile"></a><span data-ttu-id="3eedc-103">Atualizar secureScoreControlProfile</span><span class="sxs-lookup"><span data-stu-id="3eedc-103">Update secureScoreControlProfile</span></span>
 
-<span data-ttu-id="a0e2b-104">Atualize um objeto **secureScoreControlProfile** editável em qualquer solução integrada para alterar várias propriedades, como **assignedTo** ou **tenantNote**.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-104">Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.</span></span>
+<span data-ttu-id="3eedc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3eedc-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a0e2b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a0e2b-105">Permissions</span></span>
+<span data-ttu-id="3eedc-105">Atualize um objeto **secureScoreControlProfile** editável em qualquer solução integrada para alterar várias propriedades, como **assignedTo** ou **tenantNote**.</span><span class="sxs-lookup"><span data-stu-id="3eedc-105">Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.</span></span>
 
-<span data-ttu-id="a0e2b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0e2b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3eedc-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3eedc-106">Permissions</span></span>
 
-|<span data-ttu-id="a0e2b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a0e2b-108">Permission type</span></span>      | <span data-ttu-id="a0e2b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a0e2b-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="3eedc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3eedc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="3eedc-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3eedc-109">Permission type</span></span>      | <span data-ttu-id="3eedc-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3eedc-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a0e2b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a0e2b-110">Delegated (work or school account)</span></span> |   <span data-ttu-id="a0e2b-111">Escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-111">SecurityEvents.ReadWrite.All.</span></span>  |
-|<span data-ttu-id="a0e2b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a0e2b-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="a0e2b-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-113">Not supported.</span></span>  |
-|<span data-ttu-id="a0e2b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a0e2b-114">Application</span></span> | <span data-ttu-id="a0e2b-115">Escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-115">SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="3eedc-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3eedc-111">Delegated (work or school account)</span></span> |   <span data-ttu-id="3eedc-112">Escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="3eedc-112">SecurityEvents.ReadWrite.All.</span></span>  |
+|<span data-ttu-id="3eedc-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3eedc-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="3eedc-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3eedc-114">Not supported.</span></span>  |
+|<span data-ttu-id="3eedc-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3eedc-115">Application</span></span> | <span data-ttu-id="3eedc-116">Escopo securityevents. ReadWrite. All.</span><span class="sxs-lookup"><span data-stu-id="3eedc-116">SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a0e2b-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a0e2b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3eedc-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3eedc-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,40 +36,40 @@ ms.locfileid: "36307956"
 PATCH /security/secureScoreControlProfiles/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a0e2b-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a0e2b-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3eedc-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3eedc-118">Request headers</span></span>
 
-| <span data-ttu-id="a0e2b-118">Nome</span><span class="sxs-lookup"><span data-stu-id="a0e2b-118">Name</span></span>       | <span data-ttu-id="a0e2b-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="a0e2b-119">Description</span></span>|
+| <span data-ttu-id="3eedc-119">Nome</span><span class="sxs-lookup"><span data-stu-id="3eedc-119">Name</span></span>       | <span data-ttu-id="3eedc-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="3eedc-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="a0e2b-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="a0e2b-120">Authorization</span></span>  | <span data-ttu-id="a0e2b-121">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-121">Bearer {code}.</span></span> <span data-ttu-id="a0e2b-122">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-122">Required.</span></span>|
-|<span data-ttu-id="a0e2b-123">Preferir</span><span class="sxs-lookup"><span data-stu-id="a0e2b-123">Prefer</span></span> | <span data-ttu-id="a0e2b-124">Return = representação.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-124">return=representation.</span></span> |
+| <span data-ttu-id="3eedc-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="3eedc-121">Authorization</span></span>  | <span data-ttu-id="3eedc-122">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="3eedc-122">Bearer {code}.</span></span> <span data-ttu-id="3eedc-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3eedc-123">Required.</span></span>|
+|<span data-ttu-id="3eedc-124">Preferir</span><span class="sxs-lookup"><span data-stu-id="3eedc-124">Prefer</span></span> | <span data-ttu-id="3eedc-125">Return = representação.</span><span class="sxs-lookup"><span data-stu-id="3eedc-125">return=representation.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a0e2b-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a0e2b-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3eedc-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3eedc-126">Request body</span></span>
 
-<span data-ttu-id="a0e2b-126">No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-126">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="a0e2b-127">O corpo **deve** conter a `vendorInformation` Propriedade com os `provider` campos `vendor` válidos e.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-127">The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="a0e2b-128">A tabela a seguir lista os campos que podem ser atualizados para um **secureScoreControlProfile**.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-128">The following table lists the fields that can be updated for a **secureScoreControlProfile**.</span></span> <span data-ttu-id="a0e2b-129">Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-129">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="a0e2b-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="3eedc-127">No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="3eedc-127">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="3eedc-128">O corpo **deve** conter a `vendorInformation` Propriedade com os `provider` campos `vendor` válidos e.</span><span class="sxs-lookup"><span data-stu-id="3eedc-128">The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="3eedc-129">A tabela a seguir lista os campos que podem ser atualizados para um **secureScoreControlProfile**.</span><span class="sxs-lookup"><span data-stu-id="3eedc-129">The following table lists the fields that can be updated for a **secureScoreControlProfile**.</span></span> <span data-ttu-id="3eedc-130">Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados.</span><span class="sxs-lookup"><span data-stu-id="3eedc-130">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="3eedc-131">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="3eedc-131">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="a0e2b-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a0e2b-131">Property</span></span>   | <span data-ttu-id="a0e2b-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="a0e2b-132">Type</span></span> |<span data-ttu-id="a0e2b-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="a0e2b-133">Description</span></span>|
+| <span data-ttu-id="3eedc-132">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3eedc-132">Property</span></span>   | <span data-ttu-id="3eedc-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="3eedc-133">Type</span></span> |<span data-ttu-id="3eedc-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="3eedc-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a0e2b-134">assignedTo</span><span class="sxs-lookup"><span data-stu-id="a0e2b-134">assignedTo</span></span>|<span data-ttu-id="a0e2b-135">String</span><span class="sxs-lookup"><span data-stu-id="a0e2b-135">String</span></span>|<span data-ttu-id="a0e2b-136">Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-136">Name of the analyst the control is assigned to for triage, implementation, or remediation.</span></span>|
-|<span data-ttu-id="a0e2b-137">comment</span><span class="sxs-lookup"><span data-stu-id="a0e2b-137">comment</span></span>|<span data-ttu-id="a0e2b-138">String</span><span class="sxs-lookup"><span data-stu-id="a0e2b-138">String</span></span>|<span data-ttu-id="a0e2b-139">Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).</span><span class="sxs-lookup"><span data-stu-id="a0e2b-139">Analyst comments on the control (for customer control management).</span></span>|
-|<span data-ttu-id="a0e2b-140">state</span><span class="sxs-lookup"><span data-stu-id="a0e2b-140">state</span></span>| <span data-ttu-id="a0e2b-141">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a0e2b-141">String</span></span>|<span data-ttu-id="a0e2b-142">Configuração orientada pelo analista no controle.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-142">Analyst driven setting on the control.</span></span> <span data-ttu-id="a0e2b-143">Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-143">Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span></span>|
-| <span data-ttu-id="a0e2b-144">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="a0e2b-144">vendorInformation</span></span> | [<span data-ttu-id="a0e2b-145">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="a0e2b-145">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="a0e2b-146">Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = SecureScore;).</span><span class="sxs-lookup"><span data-stu-id="a0e2b-146">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;).</span></span> <span data-ttu-id="a0e2b-147">**Os campos Provider e Vendor são necessários.**</span><span class="sxs-lookup"><span data-stu-id="a0e2b-147">**Provider and vendor fields are required.**</span></span> |
+|<span data-ttu-id="3eedc-135">assignedTo</span><span class="sxs-lookup"><span data-stu-id="3eedc-135">assignedTo</span></span>|<span data-ttu-id="3eedc-136">String</span><span class="sxs-lookup"><span data-stu-id="3eedc-136">String</span></span>|<span data-ttu-id="3eedc-137">Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.</span><span class="sxs-lookup"><span data-stu-id="3eedc-137">Name of the analyst the control is assigned to for triage, implementation, or remediation.</span></span>|
+|<span data-ttu-id="3eedc-138">comment</span><span class="sxs-lookup"><span data-stu-id="3eedc-138">comment</span></span>|<span data-ttu-id="3eedc-139">String</span><span class="sxs-lookup"><span data-stu-id="3eedc-139">String</span></span>|<span data-ttu-id="3eedc-140">Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).</span><span class="sxs-lookup"><span data-stu-id="3eedc-140">Analyst comments on the control (for customer control management).</span></span>|
+|<span data-ttu-id="3eedc-141">state</span><span class="sxs-lookup"><span data-stu-id="3eedc-141">state</span></span>| <span data-ttu-id="3eedc-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3eedc-142">String</span></span>|<span data-ttu-id="3eedc-143">Configuração orientada pelo analista no controle.</span><span class="sxs-lookup"><span data-stu-id="3eedc-143">Analyst driven setting on the control.</span></span> <span data-ttu-id="3eedc-144">Os valores possíveis são: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span><span class="sxs-lookup"><span data-stu-id="3eedc-144">Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span></span>|
+| <span data-ttu-id="3eedc-145">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="3eedc-145">vendorInformation</span></span> | [<span data-ttu-id="3eedc-146">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="3eedc-146">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="3eedc-147">Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = SecureScore;).</span><span class="sxs-lookup"><span data-stu-id="3eedc-147">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;).</span></span> <span data-ttu-id="3eedc-148">**Os campos Provider e Vendor são necessários.**</span><span class="sxs-lookup"><span data-stu-id="3eedc-148">**Provider and vendor fields are required.**</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="a0e2b-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0e2b-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3eedc-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="3eedc-149">Response</span></span>
 
-<span data-ttu-id="a0e2b-149">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-149">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="3eedc-150">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="3eedc-150">If successful, this method returns a `204 No Content` response code.</span></span>
 
-<span data-ttu-id="a0e2b-150">Se o cabeçalho de solicitação opcional for usado, o método retornará `200 OK` um código de resposta e o objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-150">If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.</span></span>
+<span data-ttu-id="3eedc-151">Se o cabeçalho de solicitação opcional for usado, o método retornará `200 OK` um código de resposta e o objeto [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3eedc-151">If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a0e2b-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a0e2b-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3eedc-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3eedc-152">Example</span></span>
 
-### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="a0e2b-152">Exemplo 1: solicitação sem cabeçalho de preferência</span><span class="sxs-lookup"><span data-stu-id="a0e2b-152">Example 1: Request without Prefer header</span></span>
+### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="3eedc-153">Exemplo 1: solicitação sem cabeçalho de preferência</span><span class="sxs-lookup"><span data-stu-id="3eedc-153">Example 1: Request without Prefer header</span></span>
 
-### <a name="request"></a><span data-ttu-id="a0e2b-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a0e2b-153">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3eedc-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3eedc-154">Request</span></span>
 
-<span data-ttu-id="a0e2b-154">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-154">The following is an example of the request.</span></span>
+<span data-ttu-id="3eedc-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3eedc-155">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a0e2b-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="a0e2b-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3eedc-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="3eedc-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securescorecontrolprofiles_update"
@@ -90,28 +92,28 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a0e2b-156">C#</span><span class="sxs-lookup"><span data-stu-id="a0e2b-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3eedc-157">C#</span><span class="sxs-lookup"><span data-stu-id="3eedc-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a0e2b-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a0e2b-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3eedc-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3eedc-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a0e2b-158">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a0e2b-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3eedc-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3eedc-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="a0e2b-159">Java</span><span class="sxs-lookup"><span data-stu-id="a0e2b-159">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3eedc-160">Java</span><span class="sxs-lookup"><span data-stu-id="3eedc-160">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a0e2b-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0e2b-160">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3eedc-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="3eedc-161">Response</span></span>
 
-<span data-ttu-id="a0e2b-161">Veja a seguir o exemplo de uma resposta bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-161">The following is an example of a successful response.</span></span>
+<span data-ttu-id="3eedc-162">Veja a seguir o exemplo de uma resposta bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="3eedc-162">The following is an example of a successful response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,11 +124,11 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="a0e2b-162">Exemplo 2: solicitação com cabeçalho preferencial</span><span class="sxs-lookup"><span data-stu-id="a0e2b-162">Example 2: Request with Prefer header</span></span>
+### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="3eedc-163">Exemplo 2: solicitação com cabeçalho preferencial</span><span class="sxs-lookup"><span data-stu-id="3eedc-163">Example 2: Request with Prefer header</span></span>
 
-#### <a name="request"></a><span data-ttu-id="a0e2b-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a0e2b-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3eedc-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3eedc-164">Request</span></span>
 
-<span data-ttu-id="a0e2b-164">O exemplo a seguir mostra uma solicitação que inclui `Prefer` o cabeçalho da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-164">The following example shows a request that includes the `Prefer` request header.</span></span>
+<span data-ttu-id="3eedc-165">O exemplo a seguir mostra uma solicitação que inclui `Prefer` o cabeçalho da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3eedc-165">The following example shows a request that includes the `Prefer` request header.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -150,11 +152,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a0e2b-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0e2b-165">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3eedc-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="3eedc-166">Response</span></span>
 
-<span data-ttu-id="a0e2b-166">Veja a seguir um exemplo da resposta quando o cabeçalho de `Prefer: return=representation` solicitação opcional é usado.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-166">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
+<span data-ttu-id="3eedc-167">Veja a seguir um exemplo da resposta quando o cabeçalho de `Prefer: return=representation` solicitação opcional é usado.</span><span class="sxs-lookup"><span data-stu-id="3eedc-167">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
 
-> <span data-ttu-id="a0e2b-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a0e2b-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3eedc-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3eedc-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
