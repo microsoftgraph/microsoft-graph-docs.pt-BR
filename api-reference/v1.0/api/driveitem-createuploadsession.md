@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 doc_type: apiPageType
-ms.openlocfilehash: 40e6097c2a25cf9f74b2e49e45458478ee4d1ab8
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 44d260d4df6edc2dae9acfc2e7db5d9a1618b947
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895347"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517773"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
+
+Namespace: microsoft.graph
 
 Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo. Uma sessão de upload permite que seu aplicativo carregue intervalos do arquivo em solicitações de API sequenciais, permitindo que a transferência seja retomada se uma conexão for interrompida enquanto o upload estiver em andamento.
 

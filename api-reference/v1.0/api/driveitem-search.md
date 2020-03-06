@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Pesquise a hierarquia de itens para itens que corresponda a uma consulta.
 doc_type: apiPageType
-ms.openlocfilehash: 20f18efcbfcdae411cc609e1f4c0033507d00633
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 94e9da3b6807b41158712da3b9cd15c9c9b99583
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163539"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517668"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
+
+Namespace: microsoft.graph
 
 Pesquise a hierarquia de itens para itens que correspondam a uma consulta.
 Você pode pesquisar em uma hierarquia de pastas, uma unidade inteira ou arquivos compartilhados com o usuário atual.

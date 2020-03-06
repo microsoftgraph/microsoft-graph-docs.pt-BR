@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 05cc4c21fe3a8ea0d4b27b6c27b737ec6fe317d2
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 786b3d1429d2f081207fa2d81b5f178d3cb5e08d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912969"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533445"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tipo de recurso tokenMeetingInfo
+
+Namespace: microsoft.graph
 
 Estas são as informações do token que permitem participar de uma reunião existente. Isso é obtido como parte da notificação de chamada de entrada. 
 

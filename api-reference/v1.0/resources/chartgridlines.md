@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: af1f9576c486174b6aa78dd3196c813e744a1552
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4c621739ea654b479825f293944a39db1c0b66e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029796"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533124"
 ---
 # <a name="chartgridlines-resource-type"></a>Tipo de recurso ChartGridlines
+
+Namespace: microsoft.graph
 
 Representa linhas de grade principais ou secundárias em um eixo do gráfico.
 
@@ -29,7 +31,7 @@ Representa linhas de grade principais ou secundárias em um eixo do gráfico.
 |:---------------|:--------|:----------|
 |visible|booliano|Valor booliano que determina se as linhas de grade do eixo ficam visíveis ou não.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Representa a formatação de linhas de grade do gráfico. Somente leitura.|

@@ -5,14 +5,16 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 735f7cc453a15ebf36aabc0e4d6a7a845a6c416c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 367be35ffc1c37b04f2c3f5f1c70139e4562c870
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034227"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533718"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
+
+Namespace: microsoft.graph
 
 Detalha a atividade de entrada do usuário e do aplicativo para um locatário (diretório).
 
@@ -26,19 +28,19 @@ Detalha a atividade de entrada do usuário e do aplicativo para um locatário (d
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appDisplayName|Cadeia de caracteres|Nome do aplicativo exibido no portal do Azure.|
-|appId|Cadeia de caracteres|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory.|
+|appDisplayName|String|Nome do aplicativo exibido no portal do Azure.|
+|appId|String|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory.|
 |appliedConditionalAccessPolicy|coleção [appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
-|clientAppUsed|Cadeia de caracteres|Identifica o cliente herdado usado para a atividade de entrada.  Inclui navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP e POP.|
+|clientAppUsed|String|Identifica o cliente herdado usado para a atividade de entrada.  Inclui navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP e POP.|
 |conditionalAccessStatus|cadeia de caracteres| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são `success`: `failure`, `notApplied`,, `unknownFutureValue`e.|
-|correlationId|Cadeia de caracteres|A ID de solicitação enviada do cliente quando o logon é iniciado; usado para solucionar problemas de atividade de entrada.|
+|correlationId|String|A ID de solicitação enviada do cliente quando o logon é iniciado; usado para solucionar problemas de atividade de entrada.|
 |createdDateTime|DateTimeOffset|Data e hora (UTC) a entrada foi iniciada. Exemplo: meia-noite em 1º de janeiro de 2014 `'2014-01-01T00:00:00Z'`é reportada como.|
 |deviceDetail|[deviceDetail](devicedetail.md)|Informações do dispositivo de onde a entrada ocorreu; inclui ID de dispositivo, sistema operacional e navegador. |
 |id|String|ID exclusiva que representa a atividade de entrada.|
-|ipAddress|Cadeia de caracteres|Endereço IP do cliente usado para entrar.|
+|ipAddress|String|Endereço IP do cliente usado para entrar.|
 |isInteractive|Booliano|Indica se um logon é interativo ou não.|
 |location|[signInLocation](signinlocation.md)|Fornece a cidade, o estado e o código do país onde a entrada se originou.|
-|resourceDisplayName|String|Nome do recurso do usuário conectado.|
+|resourceDisplayName|Cadeia de caracteres|Nome do recurso do usuário conectado.|
 |resourceId|Cadeia de caracteres|ID do recurso que o usuário entrou.|
 |riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. <br>**Observação:** Os detalhes dessa propriedade exigem uma licença do Azure AD Premium P2. Outras licenças retornam o `hidden`valor.|
 |riskEventTypes|riskEventTypes|Tipos de eventos de risco associados à entrada. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|

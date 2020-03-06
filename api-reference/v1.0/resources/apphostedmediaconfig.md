@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4518359a1a1a8478aaf2f0157cdc9e659ea6dd4a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 43cc6f690ce2c491b4e49de4c1d641964df7a07d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913489"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533159"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
+
+Namespace: microsoft.graph
 
 Pilha de mídia hospedada pelo aplicativo.
 

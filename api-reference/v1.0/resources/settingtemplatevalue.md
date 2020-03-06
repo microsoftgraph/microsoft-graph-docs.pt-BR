@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f4ac39001e260d7f65b3a593d90976f94acd4693
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eea9f77b26ee0ce88e2c97c87e7cca50cbf48491
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034388"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533741"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
+
+Namespace: microsoft.graph
 
 Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
 
@@ -21,8 +23,8 @@ Representa uma definição de configuração de modelo individual, incluindo o v
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |defaultValue|String| Valor padrão para a configuração. |
-|descrição|String| Descrição da configuração. |
-|name|Cadeia de caracteres| Nome da configuração. |
+|description|String| Descrição da configuração. |
+|nome|Cadeia de caracteres| Nome da configuração. |
 |type|String| Tipo da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON

@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 14dbd96567510a3aefab4fddbc57a196c7734b5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3772d0063fc19eb3a3c46953d5c85d8085f0a72a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033912"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533570"
 ---
 # <a name="tablesort-resource-type"></a>Tipo de recurso TableSort
+
+Namespace: microsoft.graph
 
 Gerencia operações de classificação em objetos Table.
 

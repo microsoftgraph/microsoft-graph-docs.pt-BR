@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso photo fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c86190768c10b04bb55f59104368089cf7c77b18
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e3f167384112c3c3354cdff88b41632f92e2637
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035495"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534053"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
+
+Namespace: microsoft.graph
 
 O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um [driveItem](driveitem.md).
 

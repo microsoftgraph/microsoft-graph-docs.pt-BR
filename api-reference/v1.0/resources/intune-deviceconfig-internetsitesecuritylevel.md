@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e764c7bbdb634d6814e5fd512533775f85bb2be7
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: da0a803341e4d13cb076b6e4102e99620e6b2911
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359177"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530715"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>tipo de enumeração internetSiteSecurityLevel
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para o nível de segurança do site da Internet.
 
@@ -22,9 +24,9 @@ Valores possíveis para o nível de segurança do site da Internet.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|medium|1|Médio.|
-|mediumHigh|duas|Médio-alto.|
-|high|3D|Alto.|
+|medium|1 |Médio.|
+|mediumHigh|2 |Médio-alto.|
+|high|3 |Alto.|
 
 
 

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2ae25fdc04ff6e9de72539096dde4fe334185434
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c0edbff969997f4dddfda837b85331d821c39c09
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633850"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531619"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
+
+Namespace: microsoft.graph
 
 Representa um domínio associado ao locatário.
 
@@ -24,7 +26,7 @@ Para associar um domínio a um locatário:
 
 2. [Recupere](../api/domain-list-verificationdnsrecords.md) os registros de verificação de domínio. Adicione os detalhes do registro de verificação ao arquivo de zona do domínio usando o registrador de domínio ou a configuração do servidor DNS.
 
-3. [Verifique](../api/domain-verify.md) a propriedade do domínio. Isso verificará o domínio e definirá ** a propriedade isconfirmoud como *true*.
+3. [Verifique](../api/domain-verify.md) a propriedade do domínio. Isso verificará o domínio e definirá a propriedade *Isconfirmoud* como *true*.
 
 4. [Indicar](../api/domain-update.md) os serviços com suporte que você planeja usar com o domínio.
 
@@ -58,10 +60,10 @@ Para associar um domínio a um locatário:
 |isverificed|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
 |passwordNotificationWindowInDays|Int32|Especifica o número de dias antes que um usuário receba uma notificação de que a senha expirará. Se a propriedade não for definida, será usado um valor padrão de 14 dias.|
 |passwordValidityPeriodInDays|Int32| Especifica o período de tempo que uma senha é válida antes de ser alterada. Se a propriedade não for definida, será usado um valor padrão de 90 dias. |
-|supportedservices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Pode incluir 0, 1 ou mais dos seguintes valores: *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar/remover usando a API do Graph incluem: *email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
-|estado|[domainstate](domainstate.md)| Status das operações assíncronas agendadas para o domínio. |
+|supportedservices|String collection| Os recursos atribuídos ao domínio.<br><br>Pode incluir 0, 1 ou mais dos seguintes valores: *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar/remover usando a API do Graph incluem: *email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
+|state|[domainstate](domainstate.md)| Status das operações assíncronas agendadas para o domínio. |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 As relações entre um domínio e outros objetos no diretório, como seus registros de verificação e registros de configuração de serviço, são expostas por meio das propriedades de navegação. Você pode ler essas relações direcionando essas propriedades de navegação em suas solicitações.
 

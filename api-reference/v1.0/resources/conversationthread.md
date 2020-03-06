@@ -5,15 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 59e54733a0ece0c6fa4bef31282cf30939b676ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e49e8617125758f606c42c47de3d9d13495666f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032820"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531752"
 ---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
-Um conversationThread é uma coleção de [postagens](post.md).
+
+Namespace: Microsoft. Graph A conversationThread é uma coleção de [postagens](post.md).
 
 A coleção de destinatários da última postagem são os destinatários agregados do thread inteiro. Um thread pode ter uma coleção crescente de destinatários. Um novo thread é criado quando um destinatário é removido do thread.
 
@@ -25,7 +26,7 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |[Criar thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
 |[Obter conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
-|[Delete](../api/conversationthread-delete.md) | Nenhum |Exclua um objeto conversationThread. |
+|[Excluir](../api/conversationthread-delete.md) | Nenhum |Exclua um objeto conversationThread. |
 |[Responder](../api/conversationthread-reply.md)|Nenhuma|Responda a este thread criando uma nova entidade Post.|
 |[Listar Postagens](../api/conversationthread-list-posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 
@@ -42,7 +43,7 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |visualização|String|Um breve resumo do corpo da última postagem nesta conversa.|
 |isLocked|Booliano|Indica se o thread está bloqueado.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |postagens|Coleção [post](post.md)| Somente leitura. Anulável.|

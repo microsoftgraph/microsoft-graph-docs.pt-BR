@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: O recurso siteCollection fornece mais informações sobre um conjunto de sites.
 doc_type: resourcePageType
-ms.openlocfilehash: 27a534f2f9afe99a1a5abb1aee91b1b53b29566d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e34b4fdb63a825e87cea8eda6117232ee1da93d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034157"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533684"
 ---
 # <a name="sitecollection-resource"></a>Recurso SiteCollection
+
+Namespace: microsoft.graph
 
 O recurso **siteCollection** fornece mais informações sobre um conjunto de sites.
 

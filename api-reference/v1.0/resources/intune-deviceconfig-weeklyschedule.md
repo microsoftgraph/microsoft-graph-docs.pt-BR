@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b24cc817fc36deed7a11330a5ed21254b18d81be
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 82b37629bfecd34a8cb8a8cbea288f22c6b68e6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367606"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530428"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enumeração weeklySchedule
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para um cronograma semanal.
 
@@ -22,13 +24,13 @@ Valores possíveis para um cronograma semanal.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|diário|1|Diário.|
-|domingo|duas|Domingo.|
-|período|3D|Segunda-feira.|
-|feira|quatro|Terça-feira.|
-|feira|0,5|Quarta-feira.|
-|quinta-feira|6|Quinta-feira.|
-|sexta|178|Sexta-feira.|
+|diário|1 |Diário.|
+|domingo|2 |Domingo.|
+|período|3 |Segunda-feira.|
+|feira|4 |Terça-feira.|
+|feira|5 |Quarta-feira.|
+|quinta-feira|6 |Quinta-feira.|
+|sexta|7 |Sexta-feira.|
 |sábado|8 |Sábado.|
 
 

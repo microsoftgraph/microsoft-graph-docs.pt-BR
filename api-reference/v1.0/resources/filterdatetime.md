@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e2938c151e052372df1b959e6e24d4a2c0d94ea4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9214e8ecde9b2c09e06cfcc6d6145ea5319eace9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032456"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531402"
 ---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
+
+Namespace: microsoft.graph
 
 Indica como filtrar uma data ao filtrar valores.
 

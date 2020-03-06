@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e8e69f7f28fb66ecbe7181eb76645f89d5278148
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 8c53ef8b8b7e431319b448f26a41ce5eba857033
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844934"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531262"
 ---
 # <a name="usedinsight-resource-type"></a>tipo de recurso usedInsight
+
+Namespace: microsoft.graph
 
 Uma percepção representando documentos usados por um usuário específico. O insights retorna os documentos mais relevantes que um usuário tenha exibido ou acessado. Isso inclui documentos em:
 
@@ -34,7 +36,7 @@ Uma percepção representando documentos usados por um usuário específico. O i
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propriedades que você pode usar para visualizar o documento em sua experiência. Somente leitura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propriedades de referência do documento usado, como a URL e o tipo do documento. Somente leitura     |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|

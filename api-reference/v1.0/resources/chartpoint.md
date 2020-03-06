@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5e0a9d9fe558f53fe87ae8e3a0a447a5bd93aa71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: befa6f552fd343140d2aae10266c1445066266d5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032946"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531830"
 ---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
+
+Namespace: microsoft.graph
 
 Representa o ponto de uma série do gráfico.
 
@@ -31,7 +33,7 @@ Representa o ponto de uma série do gráfico.
 |valor|Json|Retorna o valor de um ponto do gráfico. Somente leitura.|
 |id|string|identificador exclusivo|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|

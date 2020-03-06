@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c34a9e640589a0df537d5f13652552551ac00372
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c7be34951862ab6a2ce28f738482d4609f4edc71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029775"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531838"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Tipo de recurso ChartGridlinesFormat
+
+Namespace: microsoft.graph
 
 Encapsula as propriedades de formato das linhas de grade do gráfico.
 
@@ -23,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |line|[WorkbookChartLineFormat](chartlineformat.md)|Representa a formatação de linha do gráfico. Somente leitura.|

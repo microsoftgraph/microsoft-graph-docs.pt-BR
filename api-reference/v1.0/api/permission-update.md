@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 261066450894c5cdfccbed85a9aaec0a59c976be
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2d67cd965240620e6f40ec62f56c09ce51a7813
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365619"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511037"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
+
+Namespace: microsoft.graph
 
 Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
 
@@ -57,7 +59,7 @@ Para obter um melhor desempenho, não inclua valores existentes que não foram a
 
 | Propriedade | Tipo              | Descrição                   |
 |:---------|:------------------|:------------------------------|
-| funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+| funções    | String collection | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
 
@@ -68,7 +70,7 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e um objet
 Aqui está um exemplo da solicitação que altera a função da permissão de compartilhamento para somente leitura.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
@@ -79,19 +81,19 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objetivo-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -122,7 +124,7 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
+Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 
 [error-response]: /graph/errors
 

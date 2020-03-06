@@ -5,14 +5,16 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8eb9789f9ec15c51c4ce02b6958ad1ec3886be92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 29a0459e27f27f4563101d8100675046ca2731b1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029229"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532893"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
+
+Namespace: microsoft.graph
 
 Representa um provedor de identidade do Azure Active Directory (Azure AD). O provedor de identidade pode ser Microsoft, Google, Facebook, Amazon, LinkedIn ou Twitter. Os seguintes provedores de identidade são na visualização: Weibo, QQ, WeChat, GitHub e qualquer provedores com suporte OpenID Connect. 
 

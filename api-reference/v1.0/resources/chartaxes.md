@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7e8ee5eac8face4d16418799d627d3aa168c48c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5a33108de8225e3222ecea74afa3c0d9f1caa4b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029873"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531912"
 ---
 # <a name="chartaxes-resource-type"></a>Tipo de recurso ChartAxes
+
+Namespace: microsoft.graph
 
 Representa os eixos de um gráfico.
 
@@ -23,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categoryAxis|[WorkbookChartAxis](chartaxis.md)|Representa o eixo de categoria em um gráfico. Somente leitura.|

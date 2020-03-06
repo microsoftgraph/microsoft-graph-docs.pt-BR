@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso contentTypeOrder especifica a ordem na qual o Content Type será exibido na seleção da interface do usuário.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c77f2dd3763199fea8f0a1377a1b46f8aa4881d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9470596cc064006c3bc4307df5f20634886dfc7f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032834"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531774"
 ---
 # <a name="contenttypeorder-resource-type"></a>Tipo de recurso ContentTypeOrder
+
+Namespace: microsoft.graph
 
 O recurso **contentTypeOrder** especifica a ordem na qual o Content Type será exibido na seleção da interface do usuário.
 

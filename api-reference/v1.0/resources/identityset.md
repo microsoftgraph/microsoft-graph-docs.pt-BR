@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso IdentitySet é uma coleção de chaves dos recursos identity.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f1176f133f51432899a1fb6ddab964f04e658c69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a5d53769dc023e79ac9f50db2c085647775cab0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030216"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531338"
 ---
 # <a name="identityset-resource-type"></a>Tipo de recurso IdentitySet
+
+Namespace: microsoft.graph
 
 O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](identity.md). É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
 

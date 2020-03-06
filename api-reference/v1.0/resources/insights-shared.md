@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 07eeaaed610ed83f8e5e74037b2441962260da9c
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 9b7bb8c2a69ebab16171ff4a74283d0993aefc8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845011"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532874"
 ---
 # <a name="sharedinsight-resource-type"></a>tipo de recurso sharedInsight
+
+Namespace: microsoft.graph
 
 Uma percepção representando arquivos compartilhados com ou por um usuário específico. Há suporte para os seguintes arquivos compartilhados:
 
@@ -36,7 +38,7 @@ Uma percepção representando arquivos compartilhados com ou por um usuário esp
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propriedades que você pode usar para visualizar o documento em sua experiência. Somente leitura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propriedades de referência do documento compartilhado, como a URL e o tipo do documento. Somente leitura       |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|

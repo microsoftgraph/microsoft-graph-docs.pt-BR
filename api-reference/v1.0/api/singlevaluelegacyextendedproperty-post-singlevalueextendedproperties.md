@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c90c8fca501e813635e3e3b208c1a5be6808b728
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 64fa9d6e76e61acdb3b28f60c6452b35c5b6fcaf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975589"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509791"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
+
+Namespace: microsoft.graph
 
 Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. 
 
@@ -21,7 +23,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [evento](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 

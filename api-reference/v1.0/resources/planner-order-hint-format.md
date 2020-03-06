@@ -5,14 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 5cba8d9e69ba5d30700202ae811f7755f0234a40
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 585c8d34a90cf8f567014b763ebeeb9b296c7aae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035431"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534041"
 ---
 # <a name="using-order-hints-in-planner"></a>Usando dicas de ordenação no Planner
+
+Namespace: microsoft.graph
 
 Os objetos no Planner identificam sua ordem de classificação pelas dicas de ordenação. Os valores de dica de ordenação são cadeias de caracteres. Os clientes podem classificar as cadeias de caracteres com base no valor ordinal dos caracteres nelas para identificar a ordem dos itens. Os caracteres são comparados desde o início da cadeia de caracteres, até que uma diferença seja encontrada nos valores ordinais de caracteres ou uma cadeia de caracteres termina, caso em que a cadeia de caracteres mais curta seria classificada antes da mais longa. Os valores podem conter qualquer caractere ordinal entre 32 (espaço) e 126 (`~`)
 

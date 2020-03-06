@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso GeoCoordinates fornece as coordenadas geográficas e a elevação de um local com base nos metadados contidos no arquivo.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 64b81bc2946658ffc8617662879bc6cb20e25047
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c6fce88c0a85b23e799030e9190d7d82e884089d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029306"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532934"
 ---
 # <a name="geocoordinates-resource-type"></a>Tipo de recurso GeoCoordinates
+
+Namespace: microsoft.graph
 
 O recurso **GeoCoordinates** fornece as coordenadas geográficas e a elevação de um local com base nos metadados contidos no arquivo. Se um [**DriveItem**](driveitem.md) tiver uma faceta **location** não nula, o item representa um arquivo com um local conhecido associado a ele.
 

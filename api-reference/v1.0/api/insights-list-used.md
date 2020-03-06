@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 8a9a1114b5e247807b952d15901b5def124a245a
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: cf884aeefd17400a1c1b8601a6d0d38b81b4a2da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844328"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516700"
 ---
 # <a name="list-used"></a>Listar usados
+
+Namespace: microsoft.graph
 
 Informações calculadas que incluem uma lista de documentos modificados pelo usuário.
 

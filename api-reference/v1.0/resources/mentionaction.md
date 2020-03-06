@@ -6,14 +6,16 @@ description: O objeto Mençãoaction fornece informações sobre quem foi mencio
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 511519439f4079b2d7d618767855582f201c00f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: de6bf1657e9b9ba21d589a6ef27292553bf93f7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036180"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534244"
 ---
 # <a name="mentionaction-resource-type"></a>tipo de recurso mençãoaction
+
+Namespace: microsoft.graph
 
 O recurso **MentionAction** fornece informações sobre um [atividade][] que mencionou pessoas.
 

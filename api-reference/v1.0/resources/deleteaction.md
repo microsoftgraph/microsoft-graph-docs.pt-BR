@@ -6,16 +6,18 @@ description: O objeto DeleteAction fornece informações sobre a exclusão de um
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 93f605e74a0a483a94593a9aaa40d6fd30efe914
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d19b41d886c459822abc2ea1b04acebd94c7b68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032729"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531694"
 ---
 # <a name="deleteaction-resource-type"></a>tipo de recurso DeleteAction
 
-A presença do recurso **DeleteAction** em uma myactivity indica que a atividade excluiu um item. [****][activity]
+Namespace: microsoft.graph
+
+A presença do recurso **DeleteAction** em uma [**myactivity**][activity] indica que a atividade excluiu um item.
 
 >**Observação:** Os registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 
@@ -25,7 +27,7 @@ A presença do recurso **DeleteAction** em uma myactivity indica que a atividade
 
 | Nome da propriedade | Tipo   | Descrição
 |:--------------|:-------|:----------------------------------------------------
-| name          | string | O nome do item que foi excluído.
+| nome          | string | O nome do item que foi excluído.
 | objectType    | string | `File`ou `Folder`, dependendo do tipo do item excluído.
 
 

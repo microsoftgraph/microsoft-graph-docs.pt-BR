@@ -6,18 +6,20 @@ description: Obter itemAnalyticyStats para as atividades que foram realizadas ne
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 30f06f9bcdfb96f61f39b81152f0c9cd23872e49
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9afe02bc6de9fa106970f1596ab33d7e520aaeef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025530"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511743"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 
+Namespace: microsoft.graph
+
 Obtenha uma coleção de recursos [itemActivityStats][] para as atividades que foram realizadas nesse recurso dentro do intervalo de tempo especificado.
 
->**Observação:** O **** recurso do naanalytics ainda não está disponível em todas as implantações [nacionais](/graph/deployments).
+>**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 As agregações de análise podem não estar disponíveis para todos os tipos de ação.
 
