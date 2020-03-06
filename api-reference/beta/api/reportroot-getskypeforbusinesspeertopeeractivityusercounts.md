@@ -14,7 +14,7 @@ ms.locfileid: "42454070"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

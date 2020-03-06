@@ -45,10 +45,10 @@ No corpo da solicitação, forneça uma representação JSON do objeto [privileg
 
 | Propriedade     | Tipo    |  Descrição|
 |:---------------|:--------|:----------|
-|roleId|Cadeia de caracteres|A ID da função. Obrigatório.|
-|type|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função. Obrigatório.|
-|assignmentstate|Cadeia de caracteres|O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
-|motivo|Cadeia de caracteres|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise.|
+|roleId|String|A ID da função. Obrigatório.|
+|type|String|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função. Obrigatório.|
+|assignmentstate|String|O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
+|motivo|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise.|
 |Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta

@@ -14,7 +14,7 @@ ms.locfileid: "42524749"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso depOnboardingSetting
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -46,13 +46,13 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP que está
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço última syned com o Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou uma sincronização pela última vez.|
-|shareTokenWithSchoolDataSyncService|Boolean|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
+|shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
 |TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
 |tokenname|String|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
+|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

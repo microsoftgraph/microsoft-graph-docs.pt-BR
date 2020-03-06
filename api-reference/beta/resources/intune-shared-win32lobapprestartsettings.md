@@ -14,7 +14,7 @@ ms.locfileid: "42523482"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>tipo de recurso win32LobAppRestartSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

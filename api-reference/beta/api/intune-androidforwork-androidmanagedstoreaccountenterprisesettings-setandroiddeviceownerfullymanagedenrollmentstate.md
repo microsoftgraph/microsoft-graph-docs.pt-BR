@@ -14,7 +14,7 @@ ms.locfileid: "42446097"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>ação setAndroidDeviceOwnerFullyManagedEnrollmentState
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
