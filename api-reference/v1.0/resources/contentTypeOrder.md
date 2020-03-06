@@ -7,20 +7,22 @@ localization_priority: Normal
 description: O recurso contentTypeOrder especifica a ordem na qual o Content Type será exibido na seleção da interface do usuário.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c77f2dd3763199fea8f0a1377a1b46f8aa4881d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9470596cc064006c3bc4307df5f20634886dfc7f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032834"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531774"
 ---
-# <a name="contenttypeorder-resource-type"></a><span data-ttu-id="f7546-103">Tipo de recurso ContentTypeOrder</span><span class="sxs-lookup"><span data-stu-id="f7546-103">ContentTypeOrder resource type</span></span>
+# <a name="contenttypeorder-resource-type"></a><span data-ttu-id="f6d02-103">Tipo de recurso ContentTypeOrder</span><span class="sxs-lookup"><span data-stu-id="f6d02-103">ContentTypeOrder resource type</span></span>
 
-<span data-ttu-id="f7546-104">O recurso **contentTypeOrder** especifica a ordem na qual o Content Type será exibido na seleção da interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="f7546-104">The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.</span></span>
+<span data-ttu-id="f6d02-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f6d02-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f7546-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f7546-105">JSON representation</span></span>
+<span data-ttu-id="f6d02-105">O recurso **contentTypeOrder** especifica a ordem na qual o Content Type será exibido na seleção da interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="f6d02-105">The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.</span></span>
 
-<span data-ttu-id="f7546-106">Aqui está uma representação JSON de um recurso **contentTypeOrder**.</span><span class="sxs-lookup"><span data-stu-id="f7546-106">Here is a JSON representation of a **contentTypeOrder** resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f6d02-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f6d02-106">JSON representation</span></span>
+
+<span data-ttu-id="f6d02-107">Aqui está uma representação JSON de um recurso **contentTypeOrder**.</span><span class="sxs-lookup"><span data-stu-id="f6d02-107">Here is a JSON representation of a **contentTypeOrder** resource.</span></span>
 <!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder", "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
 
 ```json
@@ -30,12 +32,12 @@ ms.locfileid: "36032834"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="f7546-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f7546-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f6d02-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f6d02-108">Properties</span></span>
 
-| <span data-ttu-id="f7546-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="f7546-108">Property name</span></span> | <span data-ttu-id="f7546-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="f7546-109">Type</span></span>    | <span data-ttu-id="f7546-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f7546-110">Description</span></span>
+| <span data-ttu-id="f6d02-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="f6d02-109">Property name</span></span> | <span data-ttu-id="f6d02-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="f6d02-110">Type</span></span>    | <span data-ttu-id="f6d02-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="f6d02-111">Description</span></span>
 |:--------------|:--------|:----------------------------------------------------
-| <span data-ttu-id="f7546-111">**default**</span><span class="sxs-lookup"><span data-stu-id="f7546-111">**default**</span></span>   | <span data-ttu-id="f7546-112">booliano</span><span class="sxs-lookup"><span data-stu-id="f7546-112">boolean</span></span> | <span data-ttu-id="f7546-113">Se esse é o Content Type padrão</span><span class="sxs-lookup"><span data-stu-id="f7546-113">Whether this is the default Content Type</span></span>
-| <span data-ttu-id="f7546-114">**position**</span><span class="sxs-lookup"><span data-stu-id="f7546-114">**position**</span></span>  | <span data-ttu-id="f7546-115">Int32</span><span class="sxs-lookup"><span data-stu-id="f7546-115">Int32</span></span>   | <span data-ttu-id="f7546-116">Especifica a posição em que o tipo de conteúdo aparece na seleção da interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="f7546-116">Specifies the position in which the Content Type appears in the selection UI.</span></span>
+| <span data-ttu-id="f6d02-112">**default**</span><span class="sxs-lookup"><span data-stu-id="f6d02-112">**default**</span></span>   | <span data-ttu-id="f6d02-113">booliano</span><span class="sxs-lookup"><span data-stu-id="f6d02-113">boolean</span></span> | <span data-ttu-id="f6d02-114">Se esse é o Content Type padrão</span><span class="sxs-lookup"><span data-stu-id="f6d02-114">Whether this is the default Content Type</span></span>
+| <span data-ttu-id="f6d02-115">**position**</span><span class="sxs-lookup"><span data-stu-id="f6d02-115">**position**</span></span>  | <span data-ttu-id="f6d02-116">Int32</span><span class="sxs-lookup"><span data-stu-id="f6d02-116">Int32</span></span>   | <span data-ttu-id="f6d02-117">Especifica a posição em que o tipo de conteúdo aparece na seleção da interface do usuário.</span><span class="sxs-lookup"><span data-stu-id="f6d02-117">Specifies the position in which the Content Type appears in the selection UI.</span></span>
 
 <!-- {
   "type": "#page.annotation",

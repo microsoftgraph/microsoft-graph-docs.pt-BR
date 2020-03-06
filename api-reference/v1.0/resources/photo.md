@@ -7,18 +7,20 @@ localization_priority: Normal
 description: O recurso photo fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c86190768c10b04bb55f59104368089cf7c77b18
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e3f167384112c3c3354cdff88b41632f92e2637
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035495"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534053"
 ---
-# <a name="photo-resource-type"></a><span data-ttu-id="54d45-103">Tipo de recurso Photo</span><span class="sxs-lookup"><span data-stu-id="54d45-103">Photo resource type</span></span>
+# <a name="photo-resource-type"></a><span data-ttu-id="d3cef-103">Tipo de recurso Photo</span><span class="sxs-lookup"><span data-stu-id="d3cef-103">Photo resource type</span></span>
 
-<span data-ttu-id="54d45-104">O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="54d45-104">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
+<span data-ttu-id="d3cef-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d3cef-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="54d45-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="54d45-105">JSON representation</span></span>
+<span data-ttu-id="d3cef-105">O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="d3cef-105">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="d3cef-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d3cef-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,24 +41,24 @@ ms.locfileid: "36035495"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="54d45-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="54d45-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d3cef-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d3cef-107">Properties</span></span>
 
-| <span data-ttu-id="54d45-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="54d45-107">Property</span></span>                | <span data-ttu-id="54d45-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="54d45-108">Type</span></span>           | <span data-ttu-id="54d45-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="54d45-109">Description</span></span>
+| <span data-ttu-id="d3cef-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3cef-108">Property</span></span>                | <span data-ttu-id="d3cef-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3cef-109">Type</span></span>           | <span data-ttu-id="d3cef-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3cef-110">Description</span></span>
 |:------------------------|:---------------|:----------------------------------
-| <span data-ttu-id="54d45-110">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="54d45-110">**takenDateTime**</span></span>       | <span data-ttu-id="54d45-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="54d45-111">DateTimeOffset</span></span> | <span data-ttu-id="54d45-p101">Representa a data e a hora em que a foto foi tirada. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p101">Represents the date and time the photo was taken. Read-only.</span></span>
-| <span data-ttu-id="54d45-114">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="54d45-114">**cameraMake**</span></span>          | <span data-ttu-id="54d45-115">String</span><span class="sxs-lookup"><span data-stu-id="54d45-115">String</span></span>         | <span data-ttu-id="54d45-p102">Fabricante da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p102">Camera manufacturer. Read-only.</span></span>
-| <span data-ttu-id="54d45-118">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="54d45-118">**cameraModel**</span></span>         | <span data-ttu-id="54d45-119">String</span><span class="sxs-lookup"><span data-stu-id="54d45-119">String</span></span>         | <span data-ttu-id="54d45-p103">Modelo da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p103">Camera model. Read-only.</span></span>
-| <span data-ttu-id="54d45-122">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="54d45-122">**fNumber**</span></span>             | <span data-ttu-id="54d45-123">Duplo</span><span class="sxs-lookup"><span data-stu-id="54d45-123">Double</span></span>         | <span data-ttu-id="54d45-p104">O valor de f-stop da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p104">The F-stop value from the camera. Read-only.</span></span>
-| <span data-ttu-id="54d45-126">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="54d45-126">**exposureDenominator**</span></span> | <span data-ttu-id="54d45-127">Duplo</span><span class="sxs-lookup"><span data-stu-id="54d45-127">Double</span></span>         | <span data-ttu-id="54d45-p105">O denominador da fração do tempo de exposição da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="54d45-130">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="54d45-130">**exposureNumerator**</span></span>   | <span data-ttu-id="54d45-131">Duplo</span><span class="sxs-lookup"><span data-stu-id="54d45-131">Double</span></span>         | <span data-ttu-id="54d45-p106">O numerador da fração do tempo de exposição da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="54d45-134">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="54d45-134">**focalLength**</span></span>         | <span data-ttu-id="54d45-135">Double</span><span class="sxs-lookup"><span data-stu-id="54d45-135">Double</span></span>         | <span data-ttu-id="54d45-p107">A distância focal da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p107">The focal length from the camera. Read-only.</span></span>
-| <span data-ttu-id="54d45-138">**iso**</span><span class="sxs-lookup"><span data-stu-id="54d45-138">**iso**</span></span>                 | <span data-ttu-id="54d45-139">Int32</span><span class="sxs-lookup"><span data-stu-id="54d45-139">Int32</span></span>          | <span data-ttu-id="54d45-p108">O valor de ISO da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="54d45-p108">The ISO value from the camera. Read-only.</span></span>
+| <span data-ttu-id="d3cef-111">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="d3cef-111">**takenDateTime**</span></span>       | <span data-ttu-id="d3cef-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d3cef-112">DateTimeOffset</span></span> | <span data-ttu-id="d3cef-p101">Representa a data e a hora em que a foto foi tirada. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p101">Represents the date and time the photo was taken. Read-only.</span></span>
+| <span data-ttu-id="d3cef-115">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="d3cef-115">**cameraMake**</span></span>          | <span data-ttu-id="d3cef-116">String</span><span class="sxs-lookup"><span data-stu-id="d3cef-116">String</span></span>         | <span data-ttu-id="d3cef-p102">Fabricante da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p102">Camera manufacturer. Read-only.</span></span>
+| <span data-ttu-id="d3cef-119">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="d3cef-119">**cameraModel**</span></span>         | <span data-ttu-id="d3cef-120">String</span><span class="sxs-lookup"><span data-stu-id="d3cef-120">String</span></span>         | <span data-ttu-id="d3cef-p103">Modelo da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p103">Camera model. Read-only.</span></span>
+| <span data-ttu-id="d3cef-123">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="d3cef-123">**fNumber**</span></span>             | <span data-ttu-id="d3cef-124">Duplo</span><span class="sxs-lookup"><span data-stu-id="d3cef-124">Double</span></span>         | <span data-ttu-id="d3cef-p104">O valor de f-stop da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p104">The F-stop value from the camera. Read-only.</span></span>
+| <span data-ttu-id="d3cef-127">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="d3cef-127">**exposureDenominator**</span></span> | <span data-ttu-id="d3cef-128">Duplo</span><span class="sxs-lookup"><span data-stu-id="d3cef-128">Double</span></span>         | <span data-ttu-id="d3cef-p105">O denominador da fração do tempo de exposição da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="d3cef-131">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="d3cef-131">**exposureNumerator**</span></span>   | <span data-ttu-id="d3cef-132">Duplo</span><span class="sxs-lookup"><span data-stu-id="d3cef-132">Double</span></span>         | <span data-ttu-id="d3cef-p106">O numerador da fração do tempo de exposição da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="d3cef-135">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="d3cef-135">**focalLength**</span></span>         | <span data-ttu-id="d3cef-136">Double</span><span class="sxs-lookup"><span data-stu-id="d3cef-136">Double</span></span>         | <span data-ttu-id="d3cef-p107">A distância focal da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p107">The focal length from the camera. Read-only.</span></span>
+| <span data-ttu-id="d3cef-139">**iso**</span><span class="sxs-lookup"><span data-stu-id="d3cef-139">**iso**</span></span>                 | <span data-ttu-id="d3cef-140">Int32</span><span class="sxs-lookup"><span data-stu-id="d3cef-140">Int32</span></span>          | <span data-ttu-id="d3cef-p108">O valor de ISO da câmera. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d3cef-p108">The ISO value from the camera. Read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="54d45-142">Comentários</span><span class="sxs-lookup"><span data-stu-id="54d45-142">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d3cef-143">Comentários</span><span class="sxs-lookup"><span data-stu-id="d3cef-143">Remarks</span></span>
 
-<span data-ttu-id="54d45-143">O OneDrive for Business e o SharePoint retornam apenas a propriedade **takenDateTime**.</span><span class="sxs-lookup"><span data-stu-id="54d45-143">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
+<span data-ttu-id="d3cef-144">O OneDrive for Business e o SharePoint retornam apenas a propriedade **takenDateTime**.</span><span class="sxs-lookup"><span data-stu-id="d3cef-144">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
 
-<span data-ttu-id="54d45-144">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="54d45-144">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="d3cef-145">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="d3cef-145">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 <!-- {
   "type": "#page.annotation",
   "description": "The photo facet provides details about the camera and settings on the camera for photos.",

@@ -5,33 +5,35 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c34a9e640589a0df537d5f13652552551ac00372
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c7be34951862ab6a2ce28f738482d4609f4edc71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029775"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531838"
 ---
-# <a name="chartgridlinesformat-resource-type"></a><span data-ttu-id="4470a-103">Tipo de recurso ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="4470a-103">ChartGridlinesFormat resource type</span></span>
+# <a name="chartgridlinesformat-resource-type"></a><span data-ttu-id="b7fa7-103">Tipo de recurso ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="b7fa7-103">ChartGridlinesFormat resource type</span></span>
 
-<span data-ttu-id="4470a-104">Encapsula as propriedades de formato das linhas de grade do gráfico.</span><span class="sxs-lookup"><span data-stu-id="4470a-104">Encapsulates the format properties for chart gridlines.</span></span>
+<span data-ttu-id="b7fa7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7fa7-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="b7fa7-105">Encapsula as propriedades de formato das linhas de grade do gráfico.</span><span class="sxs-lookup"><span data-stu-id="b7fa7-105">Encapsulates the format properties for chart gridlines.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="4470a-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="4470a-105">Methods</span></span>
-<span data-ttu-id="4470a-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4470a-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="b7fa7-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="b7fa7-106">Methods</span></span>
+<span data-ttu-id="b7fa7-107">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b7fa7-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4470a-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4470a-107">Properties</span></span>
-<span data-ttu-id="4470a-108">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="4470a-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="b7fa7-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b7fa7-108">Properties</span></span>
+<span data-ttu-id="b7fa7-109">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="b7fa7-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="4470a-109">Relações</span><span class="sxs-lookup"><span data-stu-id="4470a-109">Relationships</span></span>
-| <span data-ttu-id="4470a-110">Relação</span><span class="sxs-lookup"><span data-stu-id="4470a-110">Relationship</span></span> | <span data-ttu-id="4470a-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="4470a-111">Type</span></span>   |<span data-ttu-id="4470a-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="4470a-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="b7fa7-110">Relacionamento</span><span class="sxs-lookup"><span data-stu-id="b7fa7-110">Relationships</span></span>
+| <span data-ttu-id="b7fa7-111">Relação</span><span class="sxs-lookup"><span data-stu-id="b7fa7-111">Relationship</span></span> | <span data-ttu-id="b7fa7-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7fa7-112">Type</span></span>   |<span data-ttu-id="b7fa7-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7fa7-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4470a-113">line</span><span class="sxs-lookup"><span data-stu-id="4470a-113">line</span></span>|[<span data-ttu-id="4470a-114">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="4470a-114">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="4470a-115">Representa a formatação de linha do gráfico.</span><span class="sxs-lookup"><span data-stu-id="4470a-115">Represents chart line formatting.</span></span> <span data-ttu-id="4470a-116">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4470a-116">Read-only.</span></span>|
+|<span data-ttu-id="b7fa7-114">line</span><span class="sxs-lookup"><span data-stu-id="b7fa7-114">line</span></span>|[<span data-ttu-id="b7fa7-115">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="b7fa7-115">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="b7fa7-116">Representa a formatação de linha do gráfico.</span><span class="sxs-lookup"><span data-stu-id="b7fa7-116">Represents chart line formatting.</span></span> <span data-ttu-id="b7fa7-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b7fa7-117">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="4470a-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4470a-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b7fa7-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b7fa7-118">JSON representation</span></span>
 
-<span data-ttu-id="4470a-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4470a-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b7fa7-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b7fa7-119">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

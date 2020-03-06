@@ -5,32 +5,34 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c7e7211218a3ed5f4a9e266a6358f47318c88e05
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: ab5b8c221f1e30868a54b1b4a5a1cd5ef27954e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864457"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510372"
 ---
-# <a name="reportroot-getoffice365activationcounts"></a><span data-ttu-id="333c4-103">reportRoot: getOffice365ActivationCounts</span><span class="sxs-lookup"><span data-stu-id="333c4-103">reportRoot: getOffice365ActivationCounts</span></span>
+# <a name="reportroot-getoffice365activationcounts"></a><span data-ttu-id="8a487-103">reportRoot: getOffice365ActivationCounts</span><span class="sxs-lookup"><span data-stu-id="8a487-103">reportRoot: getOffice365ActivationCounts</span></span>
 
-<span data-ttu-id="333c4-104">Obtenha a contagem de ativações do Office 365 em desktops e dispositivos.</span><span class="sxs-lookup"><span data-stu-id="333c4-104">Get the count of Office 365 activations on desktops and devices.</span></span>
+<span data-ttu-id="8a487-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a487-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="333c4-105">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Ativações do Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span><span class="sxs-lookup"><span data-stu-id="333c4-105">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
+<span data-ttu-id="8a487-105">Obtenha a contagem de ativações do Office 365 em desktops e dispositivos.</span><span class="sxs-lookup"><span data-stu-id="8a487-105">Get the count of Office 365 activations on desktops and devices.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="333c4-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="333c4-106">Permissions</span></span>
+> <span data-ttu-id="8a487-106">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Ativações do Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span><span class="sxs-lookup"><span data-stu-id="8a487-106">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
 
-<span data-ttu-id="333c4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="333c4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8a487-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="8a487-107">Permissions</span></span>
 
-| <span data-ttu-id="333c4-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="333c4-109">Permission type</span></span>                        | <span data-ttu-id="333c4-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="333c4-110">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="8a487-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a487-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="8a487-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8a487-110">Permission type</span></span>                        | <span data-ttu-id="8a487-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8a487-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="333c4-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="333c4-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="333c4-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="333c4-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="333c4-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="333c4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="333c4-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="333c4-114">Not supported.</span></span>                           |
-| <span data-ttu-id="333c4-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="333c4-115">Application</span></span>                            | <span data-ttu-id="333c4-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="333c4-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="8a487-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8a487-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="8a487-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="8a487-113">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="8a487-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8a487-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a487-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8a487-115">Not supported.</span></span>                           |
+| <span data-ttu-id="8a487-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8a487-116">Application</span></span>                            | <span data-ttu-id="8a487-117">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="8a487-117">Reports.Read.All</span></span>                         |
 
-<span data-ttu-id="333c4-117">**Observação**: para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador do locatário deve ter atribuído ao usuário a função de administrador limitada do Azure ad apropriada.</span><span class="sxs-lookup"><span data-stu-id="333c4-117">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="333c4-118">Para obter mais detalhes, consulte [Authorization for APIs to read Office 365 Usage Reports](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="333c4-118">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
+<span data-ttu-id="8a487-118">**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário.</span><span class="sxs-lookup"><span data-stu-id="8a487-118">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="8a487-119">Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="8a487-119">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="333c4-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="333c4-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8a487-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8a487-120">HTTP request</span></span>
 
 
 <!-- { "blockType": "ignored" } --> 
@@ -39,37 +41,37 @@ ms.locfileid: "40864457"
 GET /reports/getOffice365ActivationCounts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="333c4-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="333c4-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8a487-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8a487-121">Request headers</span></span>
 
-| <span data-ttu-id="333c4-121">Nome</span><span class="sxs-lookup"><span data-stu-id="333c4-121">Name</span></span>          | <span data-ttu-id="333c4-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="333c4-122">Description</span></span>                              |
+| <span data-ttu-id="8a487-122">Nome</span><span class="sxs-lookup"><span data-stu-id="8a487-122">Name</span></span>          | <span data-ttu-id="8a487-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a487-123">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="333c4-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="333c4-123">Authorization</span></span> | <span data-ttu-id="333c4-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="333c4-p103">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="333c4-126">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="333c4-126">If-None-Match</span></span> | <span data-ttu-id="333c4-127">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="333c4-127">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="333c4-128">Opcional.</span><span class="sxs-lookup"><span data-stu-id="333c4-128">Optional.</span></span> |
+| <span data-ttu-id="8a487-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="8a487-124">Authorization</span></span> | <span data-ttu-id="8a487-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8a487-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="8a487-127">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="8a487-127">If-None-Match</span></span> | <span data-ttu-id="8a487-128">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="8a487-128">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="8a487-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="8a487-129">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="333c4-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="333c4-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8a487-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a487-130">Response</span></span>
 
-<span data-ttu-id="333c4-130">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="333c4-130">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="333c4-131">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="333c4-131">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="8a487-131">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="8a487-131">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="8a487-132">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="8a487-132">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="333c4-132">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="333c4-132">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="8a487-133">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="8a487-133">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="333c4-133">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="333c4-133">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="8a487-134">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="8a487-134">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="333c4-134">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="333c4-134">Report Refresh Date</span></span>
-- <span data-ttu-id="333c4-135">Tipo de produto</span><span class="sxs-lookup"><span data-stu-id="333c4-135">Product Type</span></span>
-- <span data-ttu-id="333c4-136">Windows</span><span class="sxs-lookup"><span data-stu-id="333c4-136">Windows</span></span>
-- <span data-ttu-id="333c4-137">Mac</span><span class="sxs-lookup"><span data-stu-id="333c4-137">Mac</span></span>
-- <span data-ttu-id="333c4-138">Android</span><span class="sxs-lookup"><span data-stu-id="333c4-138">Android</span></span>
-- <span data-ttu-id="333c4-139">iOS</span><span class="sxs-lookup"><span data-stu-id="333c4-139">iOS</span></span>
-- <span data-ttu-id="333c4-140">Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="333c4-140">Windows 10 Mobile</span></span>
+- <span data-ttu-id="8a487-135">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="8a487-135">Report Refresh Date</span></span>
+- <span data-ttu-id="8a487-136">Tipo de produto</span><span class="sxs-lookup"><span data-stu-id="8a487-136">Product Type</span></span>
+- <span data-ttu-id="8a487-137">Windows</span><span class="sxs-lookup"><span data-stu-id="8a487-137">Windows</span></span>
+- <span data-ttu-id="8a487-138">Mac</span><span class="sxs-lookup"><span data-stu-id="8a487-138">Mac</span></span>
+- <span data-ttu-id="8a487-139">Android</span><span class="sxs-lookup"><span data-stu-id="8a487-139">Android</span></span>
+- <span data-ttu-id="8a487-140">iOS</span><span class="sxs-lookup"><span data-stu-id="8a487-140">iOS</span></span>
+- <span data-ttu-id="8a487-141">Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="8a487-141">Windows 10 Mobile</span></span>
 
-## <a name="example"></a><span data-ttu-id="333c4-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="333c4-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8a487-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8a487-142">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="333c4-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="333c4-142">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8a487-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8a487-143">Request</span></span>
 
-<span data-ttu-id="333c4-143">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="333c4-143">The following is an example of the request.</span></span>
+<span data-ttu-id="8a487-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8a487-144">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="333c4-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="333c4-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8a487-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a487-145">HTTP</span></span>](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -79,28 +81,28 @@ GET /reports/getOffice365ActivationCounts
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationCounts
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="333c4-145">C#</span><span class="sxs-lookup"><span data-stu-id="333c4-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8a487-146">C#</span><span class="sxs-lookup"><span data-stu-id="8a487-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365activationcounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="333c4-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="333c4-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8a487-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8a487-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activationcounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="333c4-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="333c4-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8a487-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8a487-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activationcounts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="333c4-148">Java</span><span class="sxs-lookup"><span data-stu-id="333c4-148">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8a487-149">Java</span><span class="sxs-lookup"><span data-stu-id="8a487-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activationcounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="333c4-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="333c4-149">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8a487-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a487-150">Response</span></span>
 
-<span data-ttu-id="333c4-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="333c4-150">The following is an example of the response.</span></span>
+<span data-ttu-id="8a487-151">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8a487-151">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,7 +116,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="333c4-151">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="333c4-151">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="8a487-152">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="8a487-152">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

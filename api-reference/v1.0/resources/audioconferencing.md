@@ -5,29 +5,31 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f1c58fb5cbf65b73aed2978fd0b3be45d7d30aec
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 47724eaf62b02d5bf53792dc711b5d556364a6d9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913475"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532056"
 ---
-# <a name="audioconferencing-resource-type"></a><span data-ttu-id="1cc31-103">tipo de recurso audioConferencing</span><span class="sxs-lookup"><span data-stu-id="1cc31-103">audioConferencing resource type</span></span>
+# <a name="audioconferencing-resource-type"></a><span data-ttu-id="787f7-103">tipo de recurso audioConferencing</span><span class="sxs-lookup"><span data-stu-id="787f7-103">audioConferencing resource type</span></span>
 
-<span data-ttu-id="1cc31-104">Representa as informações de acesso de telefone de um [onlineMeeting](onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="1cc31-104">Represents phone access information for an [onlineMeeting](onlinemeeting.md).</span></span>
+<span data-ttu-id="787f7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="787f7-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1cc31-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1cc31-105">Properties</span></span>
+<span data-ttu-id="787f7-105">Representa as informações de acesso de telefone de um [onlineMeeting](onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="787f7-105">Represents phone access information for an [onlineMeeting](onlinemeeting.md).</span></span>
 
-| <span data-ttu-id="1cc31-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1cc31-106">Property</span></span>            | <span data-ttu-id="1cc31-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="1cc31-107">Type</span></span>    | <span data-ttu-id="1cc31-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="1cc31-108">Description</span></span>                                                                    |
+## <a name="properties"></a><span data-ttu-id="787f7-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="787f7-106">Properties</span></span>
+
+| <span data-ttu-id="787f7-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="787f7-107">Property</span></span>            | <span data-ttu-id="787f7-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="787f7-108">Type</span></span>    | <span data-ttu-id="787f7-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="787f7-109">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="1cc31-109">dialinUrl</span><span class="sxs-lookup"><span data-stu-id="1cc31-109">dialinUrl</span></span>           | <span data-ttu-id="1cc31-110">String</span><span class="sxs-lookup"><span data-stu-id="1cc31-110">String</span></span>  | <span data-ttu-id="1cc31-111">Uma URL para a página da Web acessível externamente que contém informações de discagem.</span><span class="sxs-lookup"><span data-stu-id="1cc31-111">A URL to the externally-accessible web page that contains dial-in information.</span></span> |
-| <span data-ttu-id="1cc31-112">ID</span><span class="sxs-lookup"><span data-stu-id="1cc31-112">ConferenceId</span></span>        | <span data-ttu-id="1cc31-113">String</span><span class="sxs-lookup"><span data-stu-id="1cc31-113">String</span></span>  | <span data-ttu-id="1cc31-114">A ID de conferência da reunião online.</span><span class="sxs-lookup"><span data-stu-id="1cc31-114">The conference id of the online meeting.</span></span>      |
-| <span data-ttu-id="1cc31-115">tollFreeNumber</span><span class="sxs-lookup"><span data-stu-id="1cc31-115">tollFreeNumber</span></span>      | <span data-ttu-id="1cc31-116">String</span><span class="sxs-lookup"><span data-stu-id="1cc31-116">String</span></span>  | <span data-ttu-id="1cc31-117">O número de chamada gratuita que se conecta ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="1cc31-117">The toll-free number that connects to the Audio Conference Provider.</span></span>              |
-| <span data-ttu-id="1cc31-118">tollNumber</span><span class="sxs-lookup"><span data-stu-id="1cc31-118">tollNumber</span></span>          | <span data-ttu-id="1cc31-119">String</span><span class="sxs-lookup"><span data-stu-id="1cc31-119">String</span></span>  | <span data-ttu-id="1cc31-120">O número de chamada tarifada que se conecta ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="1cc31-120">The toll number that connects to the Audio Conference Provider.</span></span>                   |
+| <span data-ttu-id="787f7-110">dialinUrl</span><span class="sxs-lookup"><span data-stu-id="787f7-110">dialinUrl</span></span>           | <span data-ttu-id="787f7-111">String</span><span class="sxs-lookup"><span data-stu-id="787f7-111">String</span></span>  | <span data-ttu-id="787f7-112">Uma URL para a página da Web acessível externamente que contém informações de discagem.</span><span class="sxs-lookup"><span data-stu-id="787f7-112">A URL to the externally-accessible web page that contains dial-in information.</span></span> |
+| <span data-ttu-id="787f7-113">ID</span><span class="sxs-lookup"><span data-stu-id="787f7-113">ConferenceId</span></span>        | <span data-ttu-id="787f7-114">String</span><span class="sxs-lookup"><span data-stu-id="787f7-114">String</span></span>  | <span data-ttu-id="787f7-115">A ID de conferência da reunião online.</span><span class="sxs-lookup"><span data-stu-id="787f7-115">The conference id of the online meeting.</span></span>      |
+| <span data-ttu-id="787f7-116">tollFreeNumber</span><span class="sxs-lookup"><span data-stu-id="787f7-116">tollFreeNumber</span></span>      | <span data-ttu-id="787f7-117">String</span><span class="sxs-lookup"><span data-stu-id="787f7-117">String</span></span>  | <span data-ttu-id="787f7-118">O número de chamada gratuita que se conecta ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="787f7-118">The toll-free number that connects to the Audio Conference Provider.</span></span>              |
+| <span data-ttu-id="787f7-119">tollNumber</span><span class="sxs-lookup"><span data-stu-id="787f7-119">tollNumber</span></span>          | <span data-ttu-id="787f7-120">String</span><span class="sxs-lookup"><span data-stu-id="787f7-120">String</span></span>  | <span data-ttu-id="787f7-121">O número de chamada tarifada que se conecta ao provedor de conferência de áudio.</span><span class="sxs-lookup"><span data-stu-id="787f7-121">The toll number that connects to the Audio Conference Provider.</span></span>                   |
 
-## <a name="json-representation"></a><span data-ttu-id="1cc31-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1cc31-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="787f7-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="787f7-122">JSON representation</span></span>
 
-<span data-ttu-id="1cc31-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1cc31-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="787f7-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="787f7-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

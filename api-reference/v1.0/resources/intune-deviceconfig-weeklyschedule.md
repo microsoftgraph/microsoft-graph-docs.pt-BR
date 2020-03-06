@@ -5,31 +5,33 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b24cc817fc36deed7a11330a5ed21254b18d81be
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 82b37629bfecd34a8cb8a8cbea288f22c6b68e6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367606"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530428"
 ---
-# <a name="weeklyschedule-enum-type"></a><span data-ttu-id="ef968-103">tipo de enumeração weeklySchedule</span><span class="sxs-lookup"><span data-stu-id="ef968-103">weeklySchedule enum type</span></span>
+# <a name="weeklyschedule-enum-type"></a><span data-ttu-id="0a745-103">tipo de enumeração weeklySchedule</span><span class="sxs-lookup"><span data-stu-id="0a745-103">weeklySchedule enum type</span></span>
 
-> <span data-ttu-id="ef968-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ef968-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="0a745-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0a745-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ef968-105">Valores possíveis para um cronograma semanal.</span><span class="sxs-lookup"><span data-stu-id="ef968-105">Possible values for a weekly schedule.</span></span>
+> <span data-ttu-id="0a745-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="0a745-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ef968-106">Membros</span><span class="sxs-lookup"><span data-stu-id="ef968-106">Members</span></span>
-|<span data-ttu-id="ef968-107">Membro</span><span class="sxs-lookup"><span data-stu-id="ef968-107">Member</span></span>|<span data-ttu-id="ef968-108">Valor</span><span class="sxs-lookup"><span data-stu-id="ef968-108">Value</span></span>|<span data-ttu-id="ef968-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef968-109">Description</span></span>|
+<span data-ttu-id="0a745-106">Valores possíveis para um cronograma semanal.</span><span class="sxs-lookup"><span data-stu-id="0a745-106">Possible values for a weekly schedule.</span></span>
+
+## <a name="members"></a><span data-ttu-id="0a745-107">Membros</span><span class="sxs-lookup"><span data-stu-id="0a745-107">Members</span></span>
+|<span data-ttu-id="0a745-108">Membro</span><span class="sxs-lookup"><span data-stu-id="0a745-108">Member</span></span>|<span data-ttu-id="0a745-109">Valor</span><span class="sxs-lookup"><span data-stu-id="0a745-109">Value</span></span>|<span data-ttu-id="0a745-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="0a745-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ef968-110">UserDefined</span><span class="sxs-lookup"><span data-stu-id="ef968-110">userDefined</span></span>|<span data-ttu-id="ef968-111">,0</span><span class="sxs-lookup"><span data-stu-id="ef968-111">0</span></span>|<span data-ttu-id="ef968-112">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="ef968-112">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="ef968-113">diário</span><span class="sxs-lookup"><span data-stu-id="ef968-113">everyday</span></span>|<span data-ttu-id="ef968-114">1</span><span class="sxs-lookup"><span data-stu-id="ef968-114">1</span></span>|<span data-ttu-id="ef968-115">Diário.</span><span class="sxs-lookup"><span data-stu-id="ef968-115">Everyday.</span></span>|
-|<span data-ttu-id="ef968-116">domingo</span><span class="sxs-lookup"><span data-stu-id="ef968-116">sunday</span></span>|<span data-ttu-id="ef968-117">duas</span><span class="sxs-lookup"><span data-stu-id="ef968-117">2</span></span>|<span data-ttu-id="ef968-118">Domingo.</span><span class="sxs-lookup"><span data-stu-id="ef968-118">Sunday.</span></span>|
-|<span data-ttu-id="ef968-119">período</span><span class="sxs-lookup"><span data-stu-id="ef968-119">monday</span></span>|<span data-ttu-id="ef968-120">3D</span><span class="sxs-lookup"><span data-stu-id="ef968-120">3</span></span>|<span data-ttu-id="ef968-121">Segunda-feira.</span><span class="sxs-lookup"><span data-stu-id="ef968-121">Monday.</span></span>|
-|<span data-ttu-id="ef968-122">feira</span><span class="sxs-lookup"><span data-stu-id="ef968-122">tuesday</span></span>|<span data-ttu-id="ef968-123">quatro</span><span class="sxs-lookup"><span data-stu-id="ef968-123">4</span></span>|<span data-ttu-id="ef968-124">Terça-feira.</span><span class="sxs-lookup"><span data-stu-id="ef968-124">Tuesday.</span></span>|
-|<span data-ttu-id="ef968-125">feira</span><span class="sxs-lookup"><span data-stu-id="ef968-125">wednesday</span></span>|<span data-ttu-id="ef968-126">0,5</span><span class="sxs-lookup"><span data-stu-id="ef968-126">5</span></span>|<span data-ttu-id="ef968-127">Quarta-feira.</span><span class="sxs-lookup"><span data-stu-id="ef968-127">Wednesday.</span></span>|
-|<span data-ttu-id="ef968-128">quinta-feira</span><span class="sxs-lookup"><span data-stu-id="ef968-128">thursday</span></span>|<span data-ttu-id="ef968-129">6</span><span class="sxs-lookup"><span data-stu-id="ef968-129">6</span></span>|<span data-ttu-id="ef968-130">Quinta-feira.</span><span class="sxs-lookup"><span data-stu-id="ef968-130">Thursday.</span></span>|
-|<span data-ttu-id="ef968-131">sexta</span><span class="sxs-lookup"><span data-stu-id="ef968-131">friday</span></span>|<span data-ttu-id="ef968-132">178</span><span class="sxs-lookup"><span data-stu-id="ef968-132">7</span></span>|<span data-ttu-id="ef968-133">Sexta-feira.</span><span class="sxs-lookup"><span data-stu-id="ef968-133">Friday.</span></span>|
-|<span data-ttu-id="ef968-134">sábado</span><span class="sxs-lookup"><span data-stu-id="ef968-134">saturday</span></span>|<span data-ttu-id="ef968-135">8 </span><span class="sxs-lookup"><span data-stu-id="ef968-135">8</span></span>|<span data-ttu-id="ef968-136">Sábado.</span><span class="sxs-lookup"><span data-stu-id="ef968-136">Saturday.</span></span>|
+|<span data-ttu-id="0a745-111">UserDefined</span><span class="sxs-lookup"><span data-stu-id="0a745-111">userDefined</span></span>|<span data-ttu-id="0a745-112">,0</span><span class="sxs-lookup"><span data-stu-id="0a745-112">0</span></span>|<span data-ttu-id="0a745-113">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="0a745-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="0a745-114">diário</span><span class="sxs-lookup"><span data-stu-id="0a745-114">everyday</span></span>|<span data-ttu-id="0a745-115">1 </span><span class="sxs-lookup"><span data-stu-id="0a745-115">1</span></span>|<span data-ttu-id="0a745-116">Diário.</span><span class="sxs-lookup"><span data-stu-id="0a745-116">Everyday.</span></span>|
+|<span data-ttu-id="0a745-117">domingo</span><span class="sxs-lookup"><span data-stu-id="0a745-117">sunday</span></span>|<span data-ttu-id="0a745-118">2 </span><span class="sxs-lookup"><span data-stu-id="0a745-118">2</span></span>|<span data-ttu-id="0a745-119">Domingo.</span><span class="sxs-lookup"><span data-stu-id="0a745-119">Sunday.</span></span>|
+|<span data-ttu-id="0a745-120">período</span><span class="sxs-lookup"><span data-stu-id="0a745-120">monday</span></span>|<span data-ttu-id="0a745-121">3 </span><span class="sxs-lookup"><span data-stu-id="0a745-121">3</span></span>|<span data-ttu-id="0a745-122">Segunda-feira.</span><span class="sxs-lookup"><span data-stu-id="0a745-122">Monday.</span></span>|
+|<span data-ttu-id="0a745-123">feira</span><span class="sxs-lookup"><span data-stu-id="0a745-123">tuesday</span></span>|<span data-ttu-id="0a745-124">4 </span><span class="sxs-lookup"><span data-stu-id="0a745-124">4</span></span>|<span data-ttu-id="0a745-125">Terça-feira.</span><span class="sxs-lookup"><span data-stu-id="0a745-125">Tuesday.</span></span>|
+|<span data-ttu-id="0a745-126">feira</span><span class="sxs-lookup"><span data-stu-id="0a745-126">wednesday</span></span>|<span data-ttu-id="0a745-127">5 </span><span class="sxs-lookup"><span data-stu-id="0a745-127">5</span></span>|<span data-ttu-id="0a745-128">Quarta-feira.</span><span class="sxs-lookup"><span data-stu-id="0a745-128">Wednesday.</span></span>|
+|<span data-ttu-id="0a745-129">quinta-feira</span><span class="sxs-lookup"><span data-stu-id="0a745-129">thursday</span></span>|<span data-ttu-id="0a745-130">6 </span><span class="sxs-lookup"><span data-stu-id="0a745-130">6</span></span>|<span data-ttu-id="0a745-131">Quinta-feira.</span><span class="sxs-lookup"><span data-stu-id="0a745-131">Thursday.</span></span>|
+|<span data-ttu-id="0a745-132">sexta</span><span class="sxs-lookup"><span data-stu-id="0a745-132">friday</span></span>|<span data-ttu-id="0a745-133">7 </span><span class="sxs-lookup"><span data-stu-id="0a745-133">7</span></span>|<span data-ttu-id="0a745-134">Sexta-feira.</span><span class="sxs-lookup"><span data-stu-id="0a745-134">Friday.</span></span>|
+|<span data-ttu-id="0a745-135">sábado</span><span class="sxs-lookup"><span data-stu-id="0a745-135">saturday</span></span>|<span data-ttu-id="0a745-136">8 </span><span class="sxs-lookup"><span data-stu-id="0a745-136">8</span></span>|<span data-ttu-id="0a745-137">Sábado.</span><span class="sxs-lookup"><span data-stu-id="0a745-137">Saturday.</span></span>|
 
 
 

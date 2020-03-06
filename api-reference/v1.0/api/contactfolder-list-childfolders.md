@@ -5,49 +5,51 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1df6de7e71d25054d62e49228ad8de3e3f78f390
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 79d63c4624b3c2d0ff09ea4a2cfffe2a8da58454
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721429"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518263"
 ---
-# <a name="list-childfolders"></a><span data-ttu-id="c9bcb-103">Listar childFolders</span><span class="sxs-lookup"><span data-stu-id="c9bcb-103">List childFolders</span></span>
+# <a name="list-childfolders"></a><span data-ttu-id="93aef-103">Listar childFolders</span><span class="sxs-lookup"><span data-stu-id="93aef-103">List childFolders</span></span>
 
-<span data-ttu-id="c9bcb-104">Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.</span><span class="sxs-lookup"><span data-stu-id="c9bcb-104">Get a collection of child folders under the specified contact folder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c9bcb-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c9bcb-105">Permissions</span></span>
-<span data-ttu-id="c9bcb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9bcb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="93aef-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="93aef-104">Namespace: microsoft.graph</span></span>
 
-|<span data-ttu-id="c9bcb-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c9bcb-108">Permission type</span></span>      | <span data-ttu-id="c9bcb-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c9bcb-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="93aef-105">Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.</span><span class="sxs-lookup"><span data-stu-id="93aef-105">Get a collection of child folders under the specified contact folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="93aef-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="93aef-106">Permissions</span></span>
+<span data-ttu-id="93aef-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="93aef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="93aef-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="93aef-109">Permission type</span></span>      | <span data-ttu-id="93aef-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="93aef-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c9bcb-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c9bcb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9bcb-111">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9bcb-111">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="c9bcb-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c9bcb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9bcb-113">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9bcb-113">Contacts.Read, Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="c9bcb-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c9bcb-114">Application</span></span> | <span data-ttu-id="c9bcb-115">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c9bcb-115">Contacts.Read, Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="93aef-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="93aef-111">Delegated (work or school account)</span></span> | <span data-ttu-id="93aef-112">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93aef-112">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="93aef-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="93aef-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="93aef-114">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93aef-114">Contacts.Read, Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="93aef-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="93aef-115">Application</span></span> | <span data-ttu-id="93aef-116">Contacts.Read, Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93aef-116">Contacts.Read, Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c9bcb-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c9bcb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="93aef-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="93aef-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c9bcb-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c9bcb-117">Optional query parameters</span></span>
-<span data-ttu-id="c9bcb-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="c9bcb-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="c9bcb-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c9bcb-119">Request headers</span></span>
-| <span data-ttu-id="c9bcb-120">Nome</span><span class="sxs-lookup"><span data-stu-id="c9bcb-120">Name</span></span>       | <span data-ttu-id="c9bcb-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="c9bcb-121">Type</span></span> | <span data-ttu-id="c9bcb-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9bcb-122">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="93aef-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="93aef-118">Optional query parameters</span></span>
+<span data-ttu-id="93aef-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="93aef-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="93aef-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="93aef-120">Request headers</span></span>
+| <span data-ttu-id="93aef-121">Nome</span><span class="sxs-lookup"><span data-stu-id="93aef-121">Name</span></span>       | <span data-ttu-id="93aef-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="93aef-122">Type</span></span> | <span data-ttu-id="93aef-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="93aef-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="c9bcb-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="c9bcb-123">Authorization</span></span>  | <span data-ttu-id="c9bcb-124">string</span><span class="sxs-lookup"><span data-stu-id="c9bcb-124">string</span></span>  | <span data-ttu-id="c9bcb-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c9bcb-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="93aef-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="93aef-124">Authorization</span></span>  | <span data-ttu-id="93aef-125">string</span><span class="sxs-lookup"><span data-stu-id="93aef-125">string</span></span>  | <span data-ttu-id="93aef-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="93aef-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c9bcb-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c9bcb-127">Request body</span></span>
-<span data-ttu-id="c9bcb-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c9bcb-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="93aef-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="93aef-128">Request body</span></span>
+<span data-ttu-id="93aef-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="93aef-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c9bcb-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9bcb-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="93aef-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="93aef-130">Response</span></span>
 
-<span data-ttu-id="c9bcb-130">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [ContactFolder](../resources/contactfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c9bcb-130">If successful, this method returns a `200 OK` response code and collection of [ContactFolder](../resources/contactfolder.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c9bcb-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c9bcb-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c9bcb-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9bcb-132">Request</span></span>
-<span data-ttu-id="c9bcb-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c9bcb-133">Here is an example of the request.</span></span>
+<span data-ttu-id="93aef-131">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [ContactFolder](../resources/contactfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="93aef-131">If successful, this method returns a `200 OK` response code and collection of [ContactFolder](../resources/contactfolder.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="93aef-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="93aef-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="93aef-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="93aef-133">Request</span></span>
+<span data-ttu-id="93aef-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="93aef-134">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="c9bcb-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="c9bcb-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="93aef-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="93aef-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contactfolder_get_childfolders"
@@ -55,26 +57,26 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="c9bcb-135">C#</span><span class="sxs-lookup"><span data-stu-id="c9bcb-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="93aef-136">C#</span><span class="sxs-lookup"><span data-stu-id="93aef-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-get-childfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c9bcb-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c9bcb-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="93aef-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="93aef-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-get-childfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c9bcb-137">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="c9bcb-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="93aef-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="93aef-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/contactfolder-get-childfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="c9bcb-138">Java</span><span class="sxs-lookup"><span data-stu-id="c9bcb-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="93aef-139">Java</span><span class="sxs-lookup"><span data-stu-id="93aef-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contactfolder-get-childfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c9bcb-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9bcb-139">Response</span></span>
-<span data-ttu-id="c9bcb-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c9bcb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="93aef-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="93aef-140">Response</span></span>
+<span data-ttu-id="93aef-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="93aef-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
