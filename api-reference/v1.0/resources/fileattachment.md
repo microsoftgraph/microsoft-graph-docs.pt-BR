@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4975e9b46a4b55429906fbcd9b7b23f8774a47e9
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: ad8c1a9ffd4a4b5cc68554505464173a40aafd29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036197"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531430"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
+
+Namespace: microsoft.graph
 
 Um arquivo (como um arquivo de texto ou um documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md) ou [postagem](../resources/post.md). A propriedade **contentBytes** possui os conteúdos codificados base64 do arquivo.  
 

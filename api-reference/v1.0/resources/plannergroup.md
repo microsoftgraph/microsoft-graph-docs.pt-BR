@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 65d0e81eede4f5edf75a43eaa662e9c044674624
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7b495575eafbea877df79a6b8a5fb83b0ad2060
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035235"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533992"
 ---
 # <a name="plannergroup-resource-type"></a>tipo de recurso do The Planner
+
+Namespace: microsoft.graph
 
 O recurso **Planner** fornece acesso a recursos do Planner para um [grupo](group.md). Ele não contém propriedades utilizáveis.
 
@@ -25,9 +27,9 @@ O recurso **Planner** fornece acesso a recursos do Planner para um [grupo](group
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. Identificador do complannerr ****|
+|id|String| Somente leitura. Identificador do **complannerr**|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Planeje|Coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna o [plannerPlans](plannerplan.md) de Propriedade do grupo.|

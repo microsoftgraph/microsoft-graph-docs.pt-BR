@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 46b5e87ab1a74a944111c76b46e86ad40022b36a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: db1bf6491a7b46efd9098c3bf22cf6c376e7abb8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37355306"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516248"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>Excluir managedDeviceMobileAppConfigurationUserStatus
+
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 

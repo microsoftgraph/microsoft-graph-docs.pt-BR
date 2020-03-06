@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2b8574d790094468d4a74ab5796c18e26b696540
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9d98d64dbb5e859f98eca84bb46a3137d808424
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030489"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531495"
 ---
 # <a name="educationstudent-resource-type"></a>Tipo de recurso educationStudent
+
+Namespace: microsoft.graph
 
 Informações adicionais incluídas a um [educationUser](educationuser.md) que está presente quando a primaryRole de um usuário é `student`.
 

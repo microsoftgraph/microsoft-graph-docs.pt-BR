@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 74bf8d6071bcd043983df7244c18fd69988c6407
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 1d3a0df8c2e6bc13dee12f6d82c65b432b736c73
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652169"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532970"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
+
+Namespace: microsoft.graph
 
 Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
 

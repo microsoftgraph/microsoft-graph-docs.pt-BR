@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso baseItem é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2bde386a736805d52758f6d80e629c585f82d87e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 181895c835544540387c96856c9cbbfb3b5e4f5d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029978"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532005"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
+
+Namespace: microsoft.graph
 
 O recurso **baseItem** é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos. Recursos que derivam de **baseItem** incluem:
 
@@ -66,7 +68,7 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 | parentReference      | [itemReference][] | Informações do pai, se o item tiver um pai. Leitura e gravação.                              |
 | webUrl               | string (url)      | URL que exibe o recurso no navegador. Somente leitura.                              |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação       | Tipo     | Descrição
 |:-------------------|:---------|:---------------------------------------------
@@ -75,7 +77,7 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[Usuário]: user.md
+[user]: user.md
 
 ## <a name="remarks"></a>Comentários
 

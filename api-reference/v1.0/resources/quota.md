@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso quota fornece detalhes sobre restrições de espaço em um recurso Drive.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ee93ddfe54e785ea8a8fa245ab3828c548928cc0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53aad1392e66f610f85f30ae088dc6f8ca04df73
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034955"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533929"
 ---
 # <a name="quota-resource-type"></a>Tipo de recurso Quota
+
+Namespace: microsoft.graph
 
 O recurso **quota** fornece detalhes sobre restrições de espaço em um recurso [Drive](drive.md).
 

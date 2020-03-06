@@ -5,18 +5,20 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3f9e861cc5427243b18ff920facab7544d6315ad
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: e6711a771d0c10112850f2d05943f4e8752ebbdf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913734"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534086"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
+Namespace: microsoft.graph
+
 O tipo de participante.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                 | Tipo de retorno                                                 | Descrição                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|

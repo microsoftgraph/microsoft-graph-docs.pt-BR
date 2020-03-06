@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ecd129c4b76ebe932a9b87abeda6d638b4bce23
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 307421c7fa5bf15628fb6bb1e10d6ba36bef5705
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356263"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531220"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Tipo de recurso iosLobAppAssignmentSettings
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades usadas para atribuir um aplicativo móvel da iOS LOB a um grupo.
 

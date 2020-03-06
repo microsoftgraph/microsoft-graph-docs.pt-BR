@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2bd875c4824296c1b5ccfc6bd3969010a00b4f3b
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 2cbbd02b3fcbb3653e1cc3a9adeffc18865894cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303101"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517443"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar propriedades de educationSchool
+
+Namespace: microsoft.graph
 
 Atualize as propriedades de um objeto de escola.
 
@@ -47,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade            | Tipo                                               | Descrição                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | Cadeia de caracteres                                             | Nome de exibição da escola         |
-| descrição         | String                                             | Descrição da escola          |
+| description         | String                                             | Descrição da escola          |
 | principalEmail      | String                                             | Endereço de email da entidade de segurança     |
 | principalName       | String                                             | Nome da entidade de segurança              |
 | externalPrincipalId | String                                             | ID da entidade de segurança no sistema de sincronização. |
@@ -69,7 +71,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um ob
 
 Este é um exemplo de solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -86,19 +88,19 @@ Content-length: 292
 }
 ```
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
