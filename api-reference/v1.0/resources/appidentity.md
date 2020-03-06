@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3a8b2c9185f595bf4ab534dda5a73b1a5f40fd17
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc2f6f912eafdacfc05eb11b65140995dfa28cec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030090"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532116"
 ---
 # <a name="appidentity-resource-type"></a>tipo de recurso appIdentity
+
+Namespace: microsoft.graph
 
 Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui a ID de aplicativo, o nome e a ID e o nome da entidade de serviço. Este recurso é usado pela operação [Get directoryAudit](../api/directoryaudit-get.md) .
 
@@ -20,8 +22,8 @@ Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appId|Cadeia de caracteres|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
-|displayName|String|Refere-se ao nome do aplicativo exibido no portal do Azure.|
+|appId|String|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
+|displayName|Cadeia de caracteres|Refere-se ao nome do aplicativo exibido no portal do Azure.|
 |servicePrincipalName|String|Refere-se ao GUID exclusivo indicando a ID da entidade de serviço no Azure Active Directory para o aplicativo correspondente.|
 |servicePrincipalName|Cadeia de caracteres|Refere-se ao nome da entidade de segurança do serviço é o nome do aplicativo no locatário. |
 

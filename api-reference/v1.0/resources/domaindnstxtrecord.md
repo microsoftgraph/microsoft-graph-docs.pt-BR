@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1f0a7321ab0b083d726c7e9904818adef322fa63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a2899081dcc171feb2ae937ae1a742093c5133f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030559"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531584"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>tipo de recurso domainDnsTxtRecord
+
+Namespace: microsoft.graph
 
 Representa um registro TXT adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
 
@@ -26,7 +28,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 |IsOptional|Booliano| Se for falso, o registro TXT deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor a ser usado ao configurar a propriedade *Name* do registro txt no host DNS.|
 |recordType|String| Tipo de registro DNS. O valor é sempre *txt*. Chave |
-|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro TXT.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro TXT.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |texto|String| O valor usado ao configurar a propriedade *Text* no host DNS. |
 |TTL|Int32| O valor a ser usado ao configurar a propriedade *TTL (time-to-Live)* do registro MX no host DNS. Não anulável |
 

@@ -7,14 +7,16 @@ title: Tipo de recurso de hashes
 description: O recurso hash agrupa hashes disponíveis em uma estrutura simples para um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6ed5cef48584aeb9d656ba0e088b535988f25a1f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb852ad01394ac463cb3d23ed404a7956bbf1eea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030230"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532907"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
+
+Namespace: microsoft.graph
 
 O recurso **hash** agrupa hashes disponíveis em uma estrutura simples para um item.
 

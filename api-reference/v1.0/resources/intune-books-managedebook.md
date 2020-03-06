@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3288b86ec735b4480577bb36a604107a51bb4f7f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 66d0efae21a68bd14286af45c4c021dbf7ba96fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360458"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531003"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
 
@@ -28,9 +30,9 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|displayName|String|Nome do livro eletrônico.|
-|descrição|String|Descrição.|
+|id|String|Chave da entidade.|
+|displayName|Cadeia de caracteres|Nome do livro eletrônico.|
+|description|String|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|
@@ -39,7 +41,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |informationUrl|String|A URL de informações adicionais.|
 |privacyInformationUrl|String|A URL da declaração de privacidade.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |assignments|Coleção [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|A lista de atribuições para este livro eletrônico.|

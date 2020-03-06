@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be29685f40b925e2e4156de4e653d03db6712818
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d70fc12e64d056cd484502d46bd25874951f79a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027185"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509255"
 ---
 # <a name="list-tabs-in-channel"></a>Listar guias no canal
+
+Namespace: microsoft.graph
 
 
 Recupere a lista de [guias](../resources/teamstab.md) no [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). 

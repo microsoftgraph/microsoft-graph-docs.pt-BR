@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 11fb56ec66ffb74a284f0636d4577f911e9993d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 29abdd3f407dd627f6c8af8ddab475cdcb829d83
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034185"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533704"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Tipo de recurso singleValueLegacyExtendedProperty
+
+Namespace: microsoft.graph
 
 Uma propriedade estendida que contém um único valor. 
 

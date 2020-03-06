@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1a3dad16f96f8b16618a1916bcccf6cf67eb95ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74ea4cf908e8d6aecf53bbc9f1011a51b23ac270
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975883"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510729"
 ---
 # <a name="get-user-activities"></a>Obter atividades do usuário
+
+Namespace: microsoft.graph
 
 Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão UserActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 

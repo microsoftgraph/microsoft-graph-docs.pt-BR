@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Um columnLink em um contentType anexa um columnDefinition de site para esse tipo de conteúdo.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d3914c4b3cfe18d2dead778116b86134caaf6caa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fe17c5baf13e24800f28af1895561d55f3bf66cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029691"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531810"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
+
+Namespace: microsoft.graph
 
 Um **columnLink** em um [contentType][] anexa um **columnDefinition** de site para esse tipo de conteúdo.
 
@@ -39,7 +41,7 @@ Aqui está uma representação JSON de um recurso **columnLink**.
 
 | Nome da propriedade | Tipo   | Descrição
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | string | O identificador exclusivo da coluna.
+| **id**        | cadeia de caracteres | O identificador exclusivo da coluna.
 | **name**      | string | O nome da coluna desse tipo de conteúdo.
 
 <!-- {

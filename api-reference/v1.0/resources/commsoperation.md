@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 91b56b93e6572d3b5a87b3f37dcbe9cdeee7e00a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 05dcb092c34db57660c149fef0665ec31bdaba74
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913230"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533046"
 ---
 # <a name="commsoperation-resource-type"></a>tipo de recurso commsOperation
+
+Namespace: microsoft.graph
 
 Representa o status de determinadas operações de longa duração.
 

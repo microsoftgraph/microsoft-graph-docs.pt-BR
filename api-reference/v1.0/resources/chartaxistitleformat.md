@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3ae74b7353a0b4198b42a04fdd420eb3447d4c11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62522cee67684141911511de26731879936b4f2b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029845"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531878"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>Tipo de recurso ChartAxisTitleFormat
+
+Namespace: microsoft.graph
 
 Representa a formatação do título do eixo do gráfico.
 
@@ -23,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |font|[WorkbookChartFont](chartfont.md)|Representa os atributos de fonte, como nome, tamanho, cor, etc., do objeto do eixo do gráfico. Somente leitura.|

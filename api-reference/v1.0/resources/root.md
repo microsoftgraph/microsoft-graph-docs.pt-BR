@@ -7,14 +7,16 @@ localization_priority: Normal
 description: A faceta Root indica que um objeto é o mais alto em sua hierarquia.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6cbeb16ed6f5faa101770dff3d2339196facc5d6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c6f0dff9c58661f5e661fdb61fd4e0be2c39fb4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034640"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533799"
 ---
 # <a name="root-resource-type"></a>Tipo de recurso Root
+
+Namespace: microsoft.graph
 
 A faceta **Root** indica que um objeto é o mais alto em sua hierarquia.
 A presença (não nulo) do valor da faceta indica que o objeto é a raiz.

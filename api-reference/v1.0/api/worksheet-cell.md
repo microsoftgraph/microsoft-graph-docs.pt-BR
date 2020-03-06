@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 39370dafce1d404f4412cbda6e907aaff115afb6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b447bed5bd6e77faa941a3c228f78b804d0204f6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026240"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508692"
 ---
-# <a name="worksheet-cell"></a>Worksheet: Cell
+# <a name="worksheet-cell"></a>Planilha: célula
+
+Namespace: microsoft.graph
 
 Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha.
 ## <a name="permissions"></a>Permissões

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 168667566f880ecc2b2aafea63d95179e8c5c6a4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6c114e41e113faa3a039a2039844a5fa0cd273f6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869946"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518032"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
+
+Namespace: microsoft.graph
 
 Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  
 

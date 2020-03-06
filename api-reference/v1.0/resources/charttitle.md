@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b2c65a53dc5ff6ebcbc91438ff0e0e8d55bc3647
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e3d30d1796945c7d0217a83db966a203678f938
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032897"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533089"
 ---
 # <a name="charttitle-resource-type"></a>Tipo de recurso ChartTitle
+
+Namespace: microsoft.graph
 
 Representa um objeto ChartTitle de um gráfico.
 
@@ -31,7 +33,7 @@ Representa um objeto ChartTitle de um gráfico.
 |texto|string|Representa o texto do título de um gráfico.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto de título de gráfico.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartTitleFormat](charttitleformat.md)|Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|

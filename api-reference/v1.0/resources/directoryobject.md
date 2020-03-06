@@ -5,14 +5,16 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c1b462b001c9ccecfb792b705506a5b43f8b0254
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 01548a3f1be4725fad1814f4a509a13a987858e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032736"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531649"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
+
+Namespace: microsoft.graph
 
 Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo básico de muitos outros tipos de entidade de diretório.
 

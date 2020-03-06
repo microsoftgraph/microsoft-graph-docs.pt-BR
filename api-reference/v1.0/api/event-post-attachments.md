@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 493f9fbb3c92f8986afa28ecf98ee1e9166a4f1e
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: af1226e5a8fbf9cd19c198a622e90f3a29873702
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229906"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517338"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
+
+Namespace: microsoft.graph
 
 Use esta API para adicionar um [anexo](../resources/attachment.md) a um [evento](../resources/event.md)existente. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 3 MB.
 

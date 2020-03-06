@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 84ca2fff70adff1acdf63e62f19c64f18c7518c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a27176342c89d78468c0b766c094f537a4f7bda
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029649"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533019"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
+
+Namespace: microsoft.graph
 
 Uma pasta que contém contatos.
 
@@ -25,7 +27,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |:---------------|:--------|:----------|
 |[Obter contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Obtenha uma pasta de contatos usando a respectiva ID.|
 |[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Atualize o objeto contactFolder. |
-|[Delete](../api/contactfolder-delete.md) | Nenhum |Exclua um objeto contactFolder. |
+|[Excluir](../api/contactfolder-delete.md) | Nenhum |Exclua um objeto contactFolder. |
 |[Listar childFolders](../api/contactfolder-list-childfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.|
 |[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[ContactFolder](contactfolder.md)| Crie uma nova contactFolder como um filho de uma pasta especificada.|
 |[delta](../api/contact-delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
@@ -39,11 +41,11 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
 |id|String|Identificador exclusivo da pasta de contatos. Somente leitura.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |childFolders|Coleção [ContactFolder](contactfolder.md)|A coleção de pastas filho na pasta. Propriedade de navegação. Somente leitura. Anulável.|

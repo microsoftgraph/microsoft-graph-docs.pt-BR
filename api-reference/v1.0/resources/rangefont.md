@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fe49cc3209164778bbeed625b3c24c7cc8ee3238
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2d519d4a21af17dd10fa840e2e81bab9aef35c19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034899"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533913"
 ---
 # <a name="rangefont-resource-type"></a>Tipo de recurso RangeFont
+
+Namespace: microsoft.graph
 
 Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, dentre outros.
 
@@ -30,7 +32,7 @@ Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, c
 |bold|booliano|Representa o status da fonte em negrito.|
 |color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|string|Nome da fonte (por exemplo, "Calibri")|
+|nome|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|
 |underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 

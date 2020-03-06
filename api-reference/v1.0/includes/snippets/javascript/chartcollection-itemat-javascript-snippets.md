@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e446cb60c899b4eaa71d5dd4eda683b54404e7a1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 27706f8b2d9b6b2d3142024d7d565bda6ed00f6a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35733118"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636469"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const workbookChart = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt')
-    .post({workbookChart : workbookChart});
+    .post(workbookChart);
 
 ```

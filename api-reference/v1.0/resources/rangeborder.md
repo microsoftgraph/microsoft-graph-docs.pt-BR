@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8b5a12c05bed39363d8a8a01eef749f2e88b929e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f906b1e98134b255858015efd765df2194c4a5b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034927"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533904"
 ---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
+
+Namespace: microsoft.graph
 
 Representa a borda de um objeto.
 

@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 58ec80676455c4804723771e5e71fbab30a9a2c1
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: c80e8ae2c9fdfe4a11a02e9f71ada531a121b279
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163413"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511289"
 ---
 # <a name="create-page"></a>Criar página
+
+Namespace: microsoft.graph
 
 Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.
 

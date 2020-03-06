@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 36426a7e3f1fb79264a788d8af7e7768f5bae26a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59558512d27bb92c48fb5c0ac2dd0fb52f7c426d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032617"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531500"
 ---
 # <a name="educationterm-resource-type"></a>Tipo de recurso educationTerm
+
+Namespace: microsoft.graph
 
 Termo A. Isso representa uma parte designada do ano acadêmico. É usada dentro de [educationClass](educationclass.md).
 

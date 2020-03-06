@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8966850b73c40274b98310a7b40ff1ff1c75e509
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 318877b9ff3fd60291f6018573f9a5f4992a5eb8
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35735645"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636438"
 ---
 ```javascript
 
@@ -47,6 +47,6 @@ const educationUser = {
 };
 
 let res = await client.api('/education/users')
-    .post({educationUser : educationUser});
+    .post(educationUser);
 
 ```

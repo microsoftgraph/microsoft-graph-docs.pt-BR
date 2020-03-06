@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso FileSystemInfo contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 12f2c0ed0dd10b36adea919795c2ae55f586436a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c53710ebdf2c14b405d69f883a125e4d14b6b7b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030335"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532942"
 ---
 # <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
+
+Namespace: microsoft.graph
 
 O recurso **FileSystemInfo** contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item. Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cfff1b5841ff00c7236d81f5908a2f9329b5baed
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 603a42e7b662295e73461732f4a8e0462092847f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361557"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512108"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Cria um novo objeto [deviceCategory](../resources/intune-shared-devicecategory.md).
 
@@ -53,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 |id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
 |displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
-|descrição|String|Descrição opcional da categoria do dispositivo.|
+|description|String|Descrição opcional da categoria do dispositivo.|
 
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7cf5de980f28768fdd92ed4b052e0c678be1cdac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8730c6fefebadbd2c64937366c7b7de41537b11c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029495"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531668"
 ---
 # <a name="devicedetail-resource-type"></a>tipo de recurso deviceDetail
+
+Namespace: microsoft.graph
 
 Indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Isso inclui informações como navegador de dispositivos e sistema operacional e se o dispositivo é gerenciado pelo Azure AD.
 

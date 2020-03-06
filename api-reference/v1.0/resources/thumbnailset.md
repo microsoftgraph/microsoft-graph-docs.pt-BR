@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso ThumbnailSet é uma coleção com chave dos recursos thumbnail.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1dbd9ec5698fd3a9aac21e2f1463ce4364946e69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ffcd654534dc1ff38f4f708b135d29ab101e0878
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033625"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533466"
 ---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
+
+Namespace: microsoft.graph
 
 O recurso **ThumbnailSet** é uma coleção com chave dos recursos [thumbnail](thumbnail.md). Ele é usado para representar um conjunto de miniaturas associado a um DriveItem.
 

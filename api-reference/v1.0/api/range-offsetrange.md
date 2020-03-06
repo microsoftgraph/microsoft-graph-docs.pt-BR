@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fe1c368eff0c03df0fe454684139720ec8360ac5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b8dd6806ec24d130ac2adeb1f89877cf10dd31fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025285"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510596"
 ---
 # <a name="range-offsetrange"></a>Range: OffsetRange
+
+Namespace: microsoft.graph
 
 Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.
 ## <a name="permissions"></a>Permissões

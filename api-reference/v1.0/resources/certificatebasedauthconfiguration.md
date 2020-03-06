@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d0b5b57a7594dfaf4fde88615c6a21314618c0eb
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 908a648add1d3e3ea2da4a90fe0f13d2e561ee17
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539285"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531942"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>tipo de recurso certificateBasedAuthConfiguration
+
+Namespace: microsoft.graph
 
 A autenticação baseada em certificado permite que você seja autenticado pelo Azure Active Directory com um certificado de cliente em um dispositivo Windows, Android ou iOS ao conectar sua conta do Exchange Online a:
 
@@ -42,7 +44,7 @@ Saiba mais sobre [a autenticação baseada em certificado no Azure Active Direct
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |certificateAuthorities|coleção [certificateAuthority](certificateauthority.md)|Coleção de autoridades de certificação que cria uma cadeia de certificado confiável.|
-|id|Cadeia de caracteres|O identificador exclusivo da configuração de autenticação baseada em certificado. Somente leitura.|
+|id|String|O identificador exclusivo da configuração de autenticação baseada em certificado. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

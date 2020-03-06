@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso File agrupa itens de dados relacionados a arquivos em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 51ec91a635db2ca259ba84cea29304e4e6ac7cbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c316e3b09f00ffebd7ebfab5e47b49c7df3980d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030370"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532956"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
+
+Namespace: microsoft.graph
 
 O recurso **File** agrupa itens de dados relacionados a arquivos em uma única estrutura.
 

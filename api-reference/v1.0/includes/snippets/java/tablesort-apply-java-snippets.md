@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 03bf14dcc2f511af58020ff1cfb89d9c0b08cbe9
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 5a87ddf1018dfc649e20140da1f3da498413dd75
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35888010"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402114"
 ---
 ```java
 
@@ -25,7 +25,7 @@ fields.icon = icon;
 
 fieldsList.add(fields);
 
-boolean matchCase = True;
+boolean matchCase = true;
 
 String method = "method-value";
 

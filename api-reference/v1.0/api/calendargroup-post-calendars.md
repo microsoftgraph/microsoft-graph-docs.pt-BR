@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 606baa54f37d25ab2954a30152eb699cebac2337
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7eda16d5f255243650073efb54ee641b61bf960f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518753"
 ---
 # <a name="create-calendar"></a>Criar calendário
+
+Namespace: microsoft.graph
 
 Use esta API para criar um novo calendário em um grupo de calendários para um [usuário](../resources/user.md).
 
@@ -66,7 +68,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 Este é um exemplo da solicitação.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
@@ -82,7 +84,7 @@ Content-type: application/json
   "name": "Marketing calendar"
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-calendargroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

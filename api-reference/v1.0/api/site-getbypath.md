@@ -5,16 +5,18 @@ ms.date: 09/10/2017
 title: Obter site do SharePoint por caminho
 localization_priority: Normal
 ms.prod: sharepoint
-description: Recupere as propriedades e as relações de um recurso de site.
+description: Recupere as propriedades e as relações de um recurso do site.
 doc_type: apiPageType
-ms.openlocfilehash: 5e6195ddb90578d31d4cf68f081aafebbd004e24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 767f6c3bd882fcc8a04931a5d3b802a56d4b39c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021470"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509784"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obter um recurso de site pelo caminho
+
+Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.
 

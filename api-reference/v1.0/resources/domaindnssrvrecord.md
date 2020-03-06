@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ae62cc8b45e867c7fbac0c775134d08f45dfab91
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32a9461cb28bc51489ddca6f3b569871bcc584d0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032645"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531591"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>tipo de recurso domainDnsSrvRecord
+
+Namespace: microsoft.graph
 
 Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
 
@@ -31,7 +33,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 |RDP|String| O valor a ser usado ao configurar a propriedade *Protocol* do registro SRV no host DNS. |
 |recordType|String|  Tipo de registro DNS. O valor é sempre *SRV*. Chave |
 |service|Cadeia de caracteres| O valor a ser usado ao configurar a propriedade *Service* do registro SRV no host DNS. |
-|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro SRV.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro SRV.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |TTL|Int32| O valor a ser usado ao configurar a propriedade *TTL (time-to-Live)* do registro SRV no host DNS. Não anulável |
 |weight|Int32| O valor a ser usado ao configurar a propriedade *Weight* do registro SRV no host DNS. |
 

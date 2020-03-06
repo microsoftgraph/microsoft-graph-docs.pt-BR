@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3246cd861d61130ea83ab8a02886a9f281603398
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a701fbe2cea27db97bb7d95911c0c0ee1140b55c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034563"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533782"
 ---
 # <a name="section-resource-type"></a>tipo de recurso Section
+
+Namespace: microsoft.graph
 
 Uma seção em um bloco de anotações do OneNote. As seções podem conter páginas.
 
@@ -56,11 +58,11 @@ Veja a seguir uma representação JSON do recurso.
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a seção foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |links|[SectionLinks](sectionlinks.md)|Links para abrir a seção. O `oneNoteClientURL` link abre a seção no cliente nativo do OneNote se ele estiver instalado. O `oneNoteWebURL` link abre a seção no OneNote na Web.|
-|displayName|String|O nome da seção. |
+|displayName|Cadeia de caracteres|O nome da seção. |
 |pagesUrl|String|O `pages` ponto de extremidade onde você pode obter detalhes de todas as páginas da seção. Somente leitura.|
 |própria|String|O ponto de extremidade onde você pode obter detalhes sobre a seção. Somente leitura.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |páginas|Coleção [OnenotePage](page.md) |Obtém o conjunto de páginas da seção.  Somente leitura. Anulável.|

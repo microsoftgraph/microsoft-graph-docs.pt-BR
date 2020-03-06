@@ -5,14 +5,16 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: b73f6110639cfb158bef8e5f529d9a2c65b34689
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 3bf6b0e2387ac658ad506e3b4ea226a9a8f66e6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913461"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531957"
 ---
 # <a name="callmediastate-resource-type"></a>tipo de recurso callMediaState
+
+Namespace: microsoft.graph
 
 
 Representa o estado de mídia de uma [chamada](call.md).

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 07ea8e7a3a5622446ab2c0126d21187f6d7ce3b9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: dadb35cb95db83c03c74bdb2e4eac70a5951cc5e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359233"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532515"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>tipo de enumeração firewallPreSharedKeyEncodingMethodType
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para firewallPreSharedKeyEncodingMethod
 
@@ -22,8 +24,8 @@ Valores possíveis para firewallPreSharedKeyEncodingMethod
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
-|none|1|A chave pré-compartilhada não está codificada. Em vez disso, ele é mantido em seu formato de caracteres largos|
-|utF8|duas|Codificar a chave pré-compartilhada usando UTF-8|
+|nenhuma|1 |A chave pré-compartilhada não está codificada. Em vez disso, ele é mantido em seu formato de caracteres largos|
+|utF8|2 |Codificar a chave pré-compartilhada usando UTF-8|
 
 
 
