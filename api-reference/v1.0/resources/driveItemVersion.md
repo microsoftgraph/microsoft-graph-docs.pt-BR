@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e9521eb549bf84b900e6c49c4dedc5f2199de317
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b0ca825a0cd920ba10575ad2cd826da7e0b64055
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029397"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531556"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
+
+Namespace: microsoft.graph
 
 O recurso **DriveItemVersion** representa uma versão específica de um [DriveItem](driveitem.md).
 

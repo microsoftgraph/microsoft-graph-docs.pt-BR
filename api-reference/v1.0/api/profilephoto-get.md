@@ -5,14 +5,16 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 471c5bbdb69f1bb67e05c271aaf7f67a977cb89d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b21e23d3b278c608e11a18137329407d68476049
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865465"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510757"
 ---
 # <a name="get-photo"></a>Obter foto
+
+Namespace: microsoft.graph
 
 Obtenha a [profilePhoto](../resources/profilephoto.md) especificada ou seus metadados (propriedades de profilePhoto).
 

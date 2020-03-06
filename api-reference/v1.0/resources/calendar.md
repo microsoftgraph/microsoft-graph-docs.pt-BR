@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 19b4ee365a1c8520a87343de9920fded290e183a
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 713753dc10e7576d458b5c83c994aa757085b05f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216212"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531983"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
+
+Namespace: microsoft.graph
 
 Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
 
@@ -49,8 +51,8 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. |
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|id|String|Identificador exclusivo do calendário. Somente leitura.|
-|name|String|O nome do calendário.|
+|id|String|O identificador exclusivo do calendário. Somente leitura.|
+|nome|String|O nome do calendário.|
 |owner |[emailAddress](emailaddress.md) | Se definida, representa o usuário que criou ou adicionou o calendário. Para um calendário que o usuário criou ou adicionou, a propriedade **owner** é definida para o usuário. Para um calendário compartilhado com o usuário, a propriedade **owner** é definida para a pessoa que compartilhou o calendário com o usuário. |
 
 ## <a name="relationships"></a>Relações

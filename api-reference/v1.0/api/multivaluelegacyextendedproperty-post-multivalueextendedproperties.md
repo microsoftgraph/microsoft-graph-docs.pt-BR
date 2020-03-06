@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 87cb6d617d719575705bdfb9379f4b5a87ddfe57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e63dd8b810feba508addccc6e30a30993b1e1ccf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976597"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511429"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
+
+Namespace: microsoft.graph
 
 Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. 
 
@@ -21,7 +23,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [evento](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
@@ -130,7 +132,7 @@ Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../reso
 |id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
-Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties** , forneça uma representação JSON dessa instância de recurso também (ou seja, uma [mensagem](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [evento](../resources/event.md), etc.).
+Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties** , forneça uma representação JSON dessa instância de recurso também (ou seja, uma [mensagem](../resources/message.md), [mailFolder](../resources/mailfolder.md), [evento](../resources/event.md), etc.).
 
 
 ## <a name="response"></a>Resposta
