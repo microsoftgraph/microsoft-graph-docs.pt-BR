@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e4d56376628ef95096b14e96334f9bcb9da425f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7c7295ac860f681db8182e66484f2df4dadb7fe5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024228"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509325"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados do catálogo de aplicativos do Microsoft Teams
+
+Namespace: microsoft.graph
 
 Listar [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams.
 Isso inclui os aplicativos do Microsoft Teams Store, bem como os aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). Para obter aplicativos apenas do catálogo de aplicativos da sua organização, `Organization` especifique como **DistributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
@@ -49,7 +51,7 @@ Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parame
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Nenhum.
+Nenhum
 
 > **Observação:** Você pode filtrar em qualquer um dos campos do objeto [teamsCatalogApp](../resources/teamsapp.md) para diminuir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: igual, não igual, e, ou, e não.
 

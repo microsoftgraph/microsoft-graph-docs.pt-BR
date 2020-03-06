@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9fc47940b8a9f249e66092ee016453a9eb5152ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef62f6df73c24f9e6b3884921865c28ea152a3dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032855"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533033"
 ---
 #  <a name="complianceinformation-resource-type"></a>tipo de recurso complianceInformation
+
+Namespace: microsoft.graph
 
 Contém dados de conformidade associados ao controle de Pontuação segura.
 

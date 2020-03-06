@@ -5,14 +5,16 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54badc0fb411a79ac854c2a34f708cd7d29133a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a1dacd980fbe35563b2b6b3c210a98da9265b440
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029481"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531654"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
+
+Namespace: microsoft.graph
 
 Representa os itens de auditoria de diretório e sua coleção.
 
@@ -30,7 +32,7 @@ Representa os itens de auditoria de diretório e sua coleção.
 |activityDateTime|DateTimeOffset|Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |activityDisplayName|Cadeia de caracteres|Indica o nome da atividade ou o nome da operação (exemplos: "criar usuário" e "Adicionar membro ao grupo"). Para obter uma lista completa, confira [lista de atividades do Azure ad](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|Coleção [KeyValue](keyvalue.md)|Indica detalhes adicionais sobre a atividade.|
-|category|String|Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)|
+|category|Cadeia de caracteres|Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)|
 |correlationId|GUID|Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.|
 |id|Cadeia de caracteres| Indica que a ID exclusiva para a atividade. Este é um GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Indica que informações sobre o usuário ou o aplicativo iniciou a atividade.|

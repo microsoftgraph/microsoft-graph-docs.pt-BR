@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1066861ab084f42c6652fab63a0199161bf9cd5e
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d1365ea90f2c6cd1d6670204d40da4ea1fd84591
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912955"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533432"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>tipo de recurso unmuteParticipantOperation
+
+Namespace: microsoft.graph
 
 Descreve o formato de resposta de uma chamada operação de desativação de participantes.
 

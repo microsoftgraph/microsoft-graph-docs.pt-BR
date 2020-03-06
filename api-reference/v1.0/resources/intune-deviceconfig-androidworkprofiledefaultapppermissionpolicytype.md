@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e4fc78f522081c6e16d0278affa2ae9c87f83dda
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 7bcd679b584df1d7aeac14cc10f730bc889d6bce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366808"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530949"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>tipo de enumeração androidWorkProfileDefaultAppPermissionPolicyType
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de política de permissão de aplicativo padrão do perfil de trabalho do Android.
 
@@ -22,9 +24,9 @@ Tipo de política de permissão de aplicativo padrão do perfil de trabalho do A
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|prompt|1|Notifica.|
-|Concessão autogrant|duas|Concessão automática.|
-|Negação de permissão|3D|Negação automática.|
+|prompt|1 |Notifica.|
+|Concessão autogrant|2 |Concessão automática.|
+|Negação de permissão|3 |Negação automática.|
 
 
 

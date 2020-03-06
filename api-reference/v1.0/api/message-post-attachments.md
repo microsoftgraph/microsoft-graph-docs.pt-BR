@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d622b62e122381a2cc8ee3c9d74c1f772e0a050a
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 24beb6a0b636e39372993443e0dadb13b0c81941
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229706"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511499"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
+
+Namespace: microsoft.graph
 
 Use esta API para adicionar um [anexo](../resources/attachment.md) a uma mensagem. 
 

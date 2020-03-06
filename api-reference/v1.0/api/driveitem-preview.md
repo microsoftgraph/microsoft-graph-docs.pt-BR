@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1de53b8183f4277c0241a08822ef539613b83a45
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 95466aaeb0cfb9c4127391f4e19a75f58ce2931d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015338"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517682"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
+
+Namespace: microsoft.graph
 
 Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.
 

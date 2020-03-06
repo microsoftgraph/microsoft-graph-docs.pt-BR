@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4e53ee27de09b105add8c5bd00d7cd551a9c1737
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2767f4d289b4ffb0b4be6001a3a28ee0727c33dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034626"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533811"
 ---
 # <a name="scheduleinformation-resource-type"></a>tipo de recurso scheduleInformation
+
+Namespace: microsoft.graph
 
 Representa a disponibilidade de um usuário, lista de distribuição ou recurso (sala ou equipamento) por um período de tempo especificado.
 

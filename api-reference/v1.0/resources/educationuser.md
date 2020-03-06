@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 14fef4a171a1d0fa2dd8f72a5d98da34a5b3d14a
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 4a7a238f9453cd7663573472240ed41f3944493b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748541"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532996"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
+
+Namespace: microsoft.graph
 
 Um usuário no sistema. Essa é uma variante específica de educação do usuário com a mesma `id` que o Microsoft Graph retornará do ponto de extremidade `/users` não específico da educação.
 Esse objeto fornece um subconjunto direcionado de propriedades do objeto principal [user](user.md) e adiciona um conjunto de propriedades específico de educação, como dados de `primaryRole`, aluno e professor.
@@ -32,22 +34,22 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **True** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
+|accountEnabled|Booliano| **True** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
 |businessPhones|String collection|Números de telefone para o usuário. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |createdBy|[identitySet](identityset.md)| Entidade que criou o usuário. |
-|department|Cadeia de Caracteres|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
+|department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|Cadeia de caracteres|O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |externalSource|`educationExternalSource`| De onde esse usuário foi criado. Os valores possíveis são: `sis`, `manual`.|
-|givenName|Cadeia de Caracteres|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
+|givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
 |id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
 |mailingAddress|[physicalAddress](physicaladdress.md)| Endereço de email do usuário.|
-|mailNickname|Cadeia de Caracteres|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.|
+|mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.|
 |middleName| String | O nome do meio do usuário.|
-|mobilePhone|Cadeia de Caracteres|O número de celular principal do usuário.|
-|passwordPolicies|Cadeia de Caracteres|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Os dois podem ser especificados juntos, por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
+|mobilePhone|String|O número de celular principal do usuário.|
+|passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Os dois podem ser especificados juntos, por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo, "en-US".|
 |primaryRole|educationUserRole| Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`. Oferece suporte a $filter.|
@@ -55,19 +57,19 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |relatedContacts|coleção [relatedContact](relatedcontact.md)|Conjunto de contatos relacionados ao usuário.  Essa propriedade opcional deve ser especificada em uma cláusula $select e só pode ser recuperada para um usuário individual.|
 |residenceAddress|[physicalAddress](physicaladdress.md)| Endereço em que o usuário reside.|
 |student|[educationStudent](educationstudent.md)| Se a função principal for aluno, esse bloco conterá dados específicos do aluno.|
-|surname|Cadeia de Caracteres|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
+|surname|String|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
 |teacher|[educationTeacher](educationteacher.md)| Se a função principal for professor, esse bloco conterá dados específicos do professor.|
 |usageLocation|Cadeia de caracteres|Um código de país de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços em países ou regiões. Os exemplos incluem: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.|
 |userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby.
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |classes|Coleção [educationClass](educationclass.md)| Aulas às quais o usuário pertence. Anulável.|
 |schools|Coleção [educationSchool](educationschool.md)| Escolas às quais o usuário pertence. Anulável.|
 |assignments| [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)| Lista de atribuições para o usuário. Anulável.|
-|user|[Usuário](user.md)| O usuário de diretório correspondente a este usuário.|
+|user|[user](user.md)| O usuário de diretório correspondente a este usuário.|
 
 >**Observação:** o recurso **educationassignment** é uma versão /beta. Se for usar esse recurso, não se esqueça de revisar o [log de alterações](/graph/changelog) periodicamente. Quando os recursos de API do Microsoft Graph são liberados para o ponto de extremidade/v1.0, o lançamento é observado no log de alterações. Se o aplicativo consumir o recurso **educationassignment**, será necessário declarar as URLs de solicitação básicas, como mostrado no seguinte bloco de códigos:  
 ```JavaScript

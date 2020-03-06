@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1c1485bbc43588b8144cbe1cc7cb189f9b8c9fdc
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d75ae8d97d3d2c95cc1779e38346efeea3026f23
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863775"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533536"
 ---
 # <a name="teammembersettings-resource-type"></a>tipo de recurso teamMemberSettings
+
+Namespace: microsoft.graph
 
 
 

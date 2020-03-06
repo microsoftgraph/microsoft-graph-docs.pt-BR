@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 40bee951d3030772973911510ebba7cc90f412ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a643411ab75aa352e3c672f94f6e8259e931b6c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034486"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533768"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
+
+Namespace: microsoft.graph
 
 Representa a pontuação segura de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode explicitamente extrair controles individuais.
 
@@ -21,7 +23,7 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Lista secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
+|[Listar secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
 |[Obter secureScoreControlProfile](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
 |[Atualizar securescorecontrolprofile](../api/securescorecontrolprofile-update.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Atualize um objeto securescorecontrolprofile. |
 
@@ -44,7 +46,7 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 |correção|String|Descrição do que o controle ajudará a corrigir.|
 |remediationImpact|String|Descrição do impacto sobre os usuários da correção.|
 |service|String|Serviço que possui o controle (Exchange, SharePoint, Azure AD).|
-|las|Coleção de cadeias de caracteres|Lista de ameaças que o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento
+|las|String collection|Lista de ameaças que o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento
 elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação).|
 |camada|String|Camada de controle (Core, defesa profunda, avançada)   |
 |userimpact|String|Impacto do usuário da implementação do controle (baixo, moderado, alto).   |

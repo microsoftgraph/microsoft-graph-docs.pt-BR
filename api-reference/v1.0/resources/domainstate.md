@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: feefe750997735d9f814f425ffd1380e25800a30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 75515640ea164beb43f1f1f32d70f97f996abb38
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029411"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531570"
 ---
 # <a name="domainstate-resource-type"></a>tipo de recurso domainstate
+
+Namespace: microsoft.graph
 
 Representa o status de operações assíncronas agendadas em um domínio.
 

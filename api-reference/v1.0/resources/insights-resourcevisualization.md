@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 39810868e779f9de62535e4b463f477f12739e85
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 876acf56d4f3445d55163a8c4cdb5bc1461c45de
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845018"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531296"
 ---
 # <a name="resourcevisualization-resource-type"></a>tipo de recurso resourceVisualization
+
+Namespace: microsoft.graph
 
 Tipo complexo contendo as propriedades de [officeGraphInsights](officegraphinsights.md).
 
@@ -61,7 +63,7 @@ Veja a seguir uma representação JSON do recurso
 -   OneNotePage
 -   InfoPath
 -   Visio
--   Editor
+-   Publisher
 -   Project
 -   Access
 -   Email
@@ -77,7 +79,7 @@ Veja a seguir uma representação JSON do recurso
 -   História
 -   ExternalContent
 -   Folder
--   Other
+-   Outros
 
 Consulta de exemplo:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 

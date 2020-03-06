@@ -7,14 +7,16 @@ localization_priority: Normal
 description: defaultColumnValue em um recurso columnDefinition especifica o valor padrão dessa coluna.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4a2ddff8de7efb2bb697ffae63d69376588e6ac9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 986649e390fe22d2f8f39c2fa8ca4ff03ccd8af2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029509"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531698"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
+
+Namespace: microsoft.graph
 
 **defaultColumnValue** em um recurso [columnDefinition](columndefinition.md) especifica o valor padrão dessa coluna.
 O valor padrão pode ser especificado tanto diretamente ou como uma fórmula.

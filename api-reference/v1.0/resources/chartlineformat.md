@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 505e6d88e0c1b19ea33d475b6d8edf3485e29cea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7224f7d5d0b41814c17081eefab79de47ca89ebb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032960"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533111"
 ---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
+
+Namespace: microsoft.graph
 
 Encapsula as opções de formatação dos elementos de linha.
 

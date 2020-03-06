@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ca306ba5a40ffc08147c8e8449ab03bf51afd745
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8e069aef1d26a409e9ebe29a516136a952604ee6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030279"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531381"
 ---
 # <a name="freebusyerror-resource-type"></a>tipo de recurso freeBusyError
+
+Namespace: microsoft.graph
 
 Representa informações de erro da tentativa de obter a disponibilidade de um usuário, lista de distribuição ou recurso.
 

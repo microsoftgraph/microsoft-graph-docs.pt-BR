@@ -7,14 +7,16 @@ localization_priority: Normal
 description: dateTimeColumn em um recurso columnDefinition indica que os valores da coluna são datas ou horas.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 35a80a369f348193858a54226ae5b239df67447f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c3f5fa00af8b04753f6581120760b5a57a9e08a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032771"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531717"
 ---
 # <a name="datetimecolumn-resource-type"></a>Tipo de recurso DateTimeColumn
+
+Namespace: microsoft.graph
 
 **dateTimeColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são datas ou horas.
 

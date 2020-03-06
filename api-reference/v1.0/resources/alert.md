@@ -5,14 +5,16 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7248fb61f62c9b17d639a5e7e2c3d8b4b2e92719
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3a6e6a0ca0f789183de5b32bed66ee03ec38dce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033226"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533168"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
+
+Namespace: microsoft.graph
 
 Representa possíveis problemas de segurança no locatário de um cliente identificado pela Microsoft ou por soluções de segurança de parceiros. Use alertas para unificar e agilizar o gerenciamento de problemas de segurança em todas as soluções integradas. Para saber mais, veja exemplos de consulta no [Explorador de Gráfico](https://developer.microsoft.com/graph/graph-explorer).
 

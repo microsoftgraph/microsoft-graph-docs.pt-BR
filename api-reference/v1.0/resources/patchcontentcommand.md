@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fb6ea7d5ba18e91685de3a883f7060d0fa83b729
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c8aab8770304f8616025d0d5ac2e70ad41a1340
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035571"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534075"
 ---
 # <a name="patchcontentcommand-resource-type"></a>tipo de recurso patchContentCommand
+
+Namespace: microsoft.graph
 
 As alterações a serem feitas em uma página do OneNote em uma solicitação de PATCH.
 

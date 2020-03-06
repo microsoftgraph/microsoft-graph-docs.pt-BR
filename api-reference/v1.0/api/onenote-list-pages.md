@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 72956bafbd526c3391e68358aad2104e51b29773
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 22daf1f67fee7cc495bd0d4996d6291f3d75e2be
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976450"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511310"
 ---
 # <a name="list-pages"></a>Listar páginas
+
+Namespace: microsoft.graph
 
 Recupere uma lista de objetos [Page](../resources/page.md) .
 ## <a name="permissions"></a>Permissões

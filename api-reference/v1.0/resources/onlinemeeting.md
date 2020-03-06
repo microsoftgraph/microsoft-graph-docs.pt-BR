@@ -5,18 +5,20 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7b82170b606334c6db8fa07c3f9b2f95f16c0082
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 531413ee2a9c322af99a98ecf2270faa50ccb0e0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951962"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534154"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
+Namespace: microsoft.graph
+
 Contém informações sobre a reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -35,8 +37,8 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 | endDateTime               | DateTime                                               | A hora de término da reunião em UTC. |
 | id                        | String                                                 | A ID padrão associada à reunião online. Somente leitura. |
 | joinWebUrl                | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
-| participants              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
-| assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
+| participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
+| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
 | videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. Somente leitura. |
 
 

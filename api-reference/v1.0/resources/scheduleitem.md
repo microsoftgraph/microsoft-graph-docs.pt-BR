@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fb544041948d5e46c1ae8c3f6f887f595ddb82e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4136b71dfb273525e8793521d50545ee5b1873cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034627"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533795"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
+
+Namespace: microsoft.graph
 
 Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item se aplica a um recurso (sala ou equipamento) também.
 

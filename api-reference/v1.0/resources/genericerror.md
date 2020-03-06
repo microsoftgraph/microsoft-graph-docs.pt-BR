@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bddfdaba2456f44a0cea2688109abbf152af291f
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: d9e74b53cc5dcd184136439cc80583074633d88c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036428"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531373"
 ---
 # <a name="genericerror-resource-type"></a>tipo de recurso genericError
+
+Namespace: microsoft.graph
 
 Um erro de uso geral.
 

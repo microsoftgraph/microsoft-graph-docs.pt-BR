@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: e25c61cc58874944017ee34dddcff75c22b134b6
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: fc920fe09a891248310e8acebafb4f2da4d36723
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937410"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533942"
 ---
 # <a name="publicclientapplication-resource-type"></a>tipo de recurso publicClientApplication
+
+Namespace: microsoft.graph
 
 Especifica configurações para aplicativo não Web ou API não Web (por exemplo, dispositivos móveis ou outros clientes públicos, como um aplicativo instalado em um dispositivo Desktop).
 

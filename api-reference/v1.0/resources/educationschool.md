@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d7cc20b01b35f678b20e18e21dcb099a89982ab9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 407f29c7d8f9468c5e9b1da1badad294cb655121
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553905"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531513"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
+
+Namespace: microsoft.graph
 
 Recurso usado para gerenciar aulas, professores e alunos da escola representada.  
 
@@ -28,29 +30,29 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 | [Listar usuários](../api/educationschool-list-users.md)       | Coleção [educationUser](educationuser.md)   | Obtenha a coleção de objetos **educationUser**.                                                |
 | [Remover usuário](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Remova um **educationUser** da escola por meio da propriedade de navegação **users**.      |
 | [Atualizar](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Atualize um objeto **educationSchool**.                                                       |
-| [Delete](../api/educationschool-delete.md)               | Nenhum                                           | Exclua um objeto **educationSchool**.                                                       |
+| [Excluir](../api/educationschool-delete.md)               | Nenhum                                           | Exclua um objeto **educationSchool**.                                                       |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo                                  | Descrição                                                                        |
 | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
-| id                  | Cadeia de caracteres                                | GUID desta escola.                                                               |
+| id                  | String                                | GUID desta escola.                                                               |
 | displayName         | Cadeia de caracteres                                | Nome de exibição da escola.                                                        |
-| description         | Cadeia de caracteres                                | Descrição da escola.                                                         |
+| description         | String                                | Descrição da escola.                                                         |
 | status              | cadeia de caracteres                                | Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`. |
 | externalSource      | educationExternalSource               | Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.        |
-| principalEmail      | Cadeia de caracteres                                | Endereço de email da entidade de segurança.                                                    |
-| principalName       | Cadeia de caracteres                                | Nome da entidade de segurança.                                                             |
-| externalPrincipalId | Cadeia de caracteres                                | ID da entidade de segurança no sistema de sincronização.                                                 |
-| highestGrade        | Cadeia de caracteres                                | Ensino de nível mais alto.                                                              |
-| lowestGrade         | Cadeia de caracteres                                | Ensino de nível mais baixo.                                                               |
-| schoolNumber        | Cadeia de caracteres                                | Número da escola.                                                                     |
+| principalEmail      | String                                | Endereço de email da entidade de segurança.                                                    |
+| principalName       | String                                | Nome da entidade de segurança.                                                             |
+| externalPrincipalId | String                                | ID da entidade de segurança no sistema de sincronização.                                                 |
+| highestGrade        | String                                | Ensino de nível mais alto.                                                              |
+| lowestGrade         | String                                | Ensino de nível mais baixo.                                                               |
+| schoolNumber        | String                                | Número da escola.                                                                     |
 | externalId          | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                                                    |
-| phone               | Cadeia de caracteres                                | Número de telefone da escola.                                                            |
+| phone               | String                                | Número de telefone da escola.                                                            |
 | address             | [physicalAddress](physicaladdress.md) | Endereço da escola.                                                             |
 | createdBy           | [identitySet](identityset.md)         | Entidade que criou a escola.                                                     |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo                                           | Descrição                             |
 | :----------- | :--------------------------------------------- | :-------------------------------------- |

@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 5ecf1aeb0014ec8ead97fc7d1b01d366c9565291
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d01f3116f6a6a12753384ec41c2cee609b9b7f8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035984"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534183"
 ---
 # <a name="office-365-activations-reports"></a>Relatórios de ativações do Office 365
+
+Namespace: microsoft.graph
 
 Os relatórios de ativação do Office 365 oferecem uma visão de quais usuários ativaram suas assinaturas do Office 365 em pelo menos um dispositivo. Esses relatórios fornecem dados sobre as ativações de assinaturas do Office 365 ProPlus, do Project e do Visio Pro para Office 365, bem como o detalhamento das ativações entre desktops e dispositivos. Esses relatórios podem ajudar a identificar os usuários que podem precisar de suporte adicional para ativar a assinatura do Office.
 
@@ -21,6 +23,6 @@ Os relatórios de ativação do Office 365 oferecem uma visão de quais usuário
 ## <a name="reports"></a>Relatórios
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getoffice365activationsuserdetail.md) | Fluxo      | Obtenha dados sobre usuários que ativaram o Office 365. |
+| [Obter dados de usuário](../api/reportroot-getoffice365activationsuserdetail.md) | Stream      | Obtenha dados sobre usuários que ativaram o Office 365. |
 | [Obter contagens de ativação](../api/reportroot-getoffice365activationcounts.md) | Fluxo      | Obtenha a contagem de ativações do Office 365 em desktops e dispositivos. |
 | [Obter contagens de usuários](../api/reportroot-getoffice365activationsusercounts.md) | Fluxo      | Obtenha a contagem de usuários habilitados e aqueles que ativaram a assinatura do Office no desktop ou nos dispositivos. |

@@ -5,14 +5,16 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ded792f69573b4434e4157d7c665471683273169
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9edb4e0ad13f7caf94fd4308f606fccc14861aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033317"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533363"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
+
+Namespace: microsoft.graph
 
 Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, gráficos, etc.
 

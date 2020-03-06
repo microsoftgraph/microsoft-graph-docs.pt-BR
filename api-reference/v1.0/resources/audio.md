@@ -6,14 +6,16 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 description: O recurso Audio agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 doc_type: resourcePageType
-ms.openlocfilehash: 1351ae9dcd363d156997fd5cc75e7e3387a0fb38
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 5487c7fb0505a1ab9a6b0e53278e235083cb83e4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913482"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532060"
 ---
 # <a name="audio-facet"></a>Faceta Audio
+
+Namespace: microsoft.graph
 
 O recurso **Audio** agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 
@@ -47,16 +49,16 @@ Se um [**DriveItem**](driveitem.md) tiver uma faceta **audio** não nula, o item
 
 | Nome da propriedade         | Tipo    | Descrição                                                          |
 |:----------------------|:--------|:---------------------------------------------------------------------|
-| **album**             | cadeia de caracteres  | O título do álbum deste arquivo de áudio.                          |
-| **albumArtist**       | cadeia de caracteres  | Artista nomeado no álbum para o arquivo de áudio.                    |
-| **artist**            | cadeia de caracteres  | O artista do arquivo de áudio.                            |
+| **album**             | string  | O título do álbum deste arquivo de áudio.                          |
+| **albumArtist**       | string  | Artista nomeado no álbum para o arquivo de áudio.                    |
+| **artist**            | string  | O artista do arquivo de áudio.                            |
 | **bitrate**           | Int64   | Taxa de bits expressa em kbps.                                           |
-| **composers**         | cadeia de caracteres  | O nome do compositor do arquivo de áudio.                          |
-| **copyright**         | cadeia de caracteres  | Informações de direitos autorais para o arquivo de áudio.                            |
+| **composers**         | string  | O nome do compositor do arquivo de áudio.                          |
+| **copyright**         | string  | Informações de direitos autorais para o arquivo de áudio.                            |
 | **disc**              | Int16   | O número do disco do qual este arquivo de áudio é proveniente.                    |
 | **discCount**         | Int16   | O número total de discos neste álbum.                             |
 | **duration**          | Int64   | Duração do arquivo de áudio, expressa em milissegundos                |
-| **genre**             | cadeia de caracteres  | O gênero deste arquivo de áudio.                                        |
+| **genre**             | string  | O gênero deste arquivo de áudio.                                        |
 | **hasDrm**            | booliano | Indica se o arquivo está protegido com o gerenciamento de direitos digitais.   |
 | **isVariableBitrate** | booliano | Indica se o arquivo é codificado com uma taxa de bits variável.            |
 | **title**             | string  | O título do arquivo de áudio.                                         |

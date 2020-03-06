@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 04e18e6935ef4ec6c1f3c2415a638d08f9e4576b
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2eea63d3f3d40727f990b4e4acdcc2f428380fcc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366605"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530879"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>tipo de enumeração defenderMonitorFileActivity
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para monitorar a atividade do arquivo.
 
@@ -22,10 +24,10 @@ Valores possíveis para monitorar a atividade do arquivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|desabilitar|1|Desabilitar o monitoramento da atividade do arquivo.|
-|monitorAllFiles|duas|Monitorar todos os arquivos.|
-|monitorIncomingFilesOnly|3D| Monitorar somente os arquivos de entrada.|
-|monitorOutgoingFilesOnly|quatro|Monitorar somente os arquivos de saída.|
+|desabilitar|1 |Desabilitar o monitoramento da atividade do arquivo.|
+|monitorAllFiles|2 |Monitorar todos os arquivos.|
+|monitorIncomingFilesOnly|3 | Monitorar somente os arquivos de entrada.|
+|monitorOutgoingFilesOnly|4 |Monitorar somente os arquivos de saída.|
 
 
 

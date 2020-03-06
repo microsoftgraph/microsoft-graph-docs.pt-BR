@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6cfeb6c426f264b1f4b69d617b935b4374478c07
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: d00f9056a177715061edbff4332e86b925cf49ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37368061"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532759"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>tipo de enumeração mobileAppPublishingState
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Indica o estado de publicação de um aplicativo.
 
@@ -22,8 +24,8 @@ Indica o estado de publicação de um aplicativo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não publicado|,0|O aplicativo ainda não foi publicado.|
-|processe|1|O aplicativo está aguardando o processamento do lado do serviço.|
-|novamente|duas|O aplicativo é publicado.|
+|processe|1 |O aplicativo está aguardando o processamento do lado do serviço.|
+|novamente|2 |O aplicativo é publicado.|
 
 
 

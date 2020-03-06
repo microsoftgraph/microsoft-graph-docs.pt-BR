@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b53b223a3f9d894f8ab140014528c0cd02c224dc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0aece739f4a65db35271e4fe6f2c87db3a2c56a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035998"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534202"
 ---
 # <a name="nameditem-resource-type"></a>Tipo de recurso NamedItem
+
+Namespace: microsoft.graph
 
 Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (conforme exibido no tipo abaixo), objetos de intervalo ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.
 
@@ -31,14 +33,14 @@ Representa um nome definido para um intervalo de células ou um valor. Os nomes 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|O nome do objeto. Somente leitura.|
-|comment|cadeia de caracteres|Representa o comentário associado a esse nome.|
+|nome|cadeia de caracteres|O nome do objeto. Somente leitura.|
+|comment|string|Representa o comentário associado a esse nome.|
 |scope|string|Indica se o nome tem escopo para a pasta de trabalho ou uma planilha específica. Somente leitura.|
 |type|cadeia de caracteres|Indica o tipo de referência que está associado ao nome. Os valores possíveis são: `String`, `Integer`, `Double`, `Boolean`, `Range`. Somente leitura.|
 |value|Json|Representa a fórmula à qual o nome está definido para fazer referência. Por exemplo, =Plan14!$B$2:$H$12, =4,75, etc. Somente leitura.|
 |visible|booliano|Determina se o objeto fica visível ou não.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |planilha|[WorkbookWorksheet](worksheet.md)|Retorna a planilha em que o item nomeado está no escopo. Disponível somente se o item estiver com escopo de planilha. Somente leitura.|
