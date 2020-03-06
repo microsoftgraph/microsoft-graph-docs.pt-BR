@@ -14,7 +14,7 @@ ms.locfileid: "42455304"
 ---
 # <a name="create-privilegedroleassignment"></a>Create privilegedRoleAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

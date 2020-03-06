@@ -14,7 +14,7 @@ ms.locfileid: "42470291"
 ---
 # <a name="update-devicemanagementtemplate"></a>Atualizar deviceManagementTemplate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |id|String|A ID do modelo|
 |displayName|Cadeia de caracteres|O nome de exibição do modelo|
 |description|String|A descrição do modelo|
-|versionInfo|String|As informações de versão do modelo|
+|versionInfo|Cadeia de caracteres|As informações de versão do modelo|
 |preterido|Boolean|O modelo é preterido ou não. Os propósitos não podem ser criados a partir de um modelo preterido.|
 |intentCount|Int32|Número de tentativas criadas a partir deste modelo.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`.|

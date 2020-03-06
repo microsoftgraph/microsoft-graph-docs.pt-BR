@@ -14,7 +14,7 @@ ms.locfileid: "42522334"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>tipo de recurso onenoteOperationError
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

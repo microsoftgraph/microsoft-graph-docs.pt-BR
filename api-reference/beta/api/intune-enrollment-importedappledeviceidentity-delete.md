@@ -14,7 +14,7 @@ ms.locfileid: "42466763"
 ---
 # <a name="delete-importedappledeviceidentity"></a>Excluir importedAppleDeviceIdentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

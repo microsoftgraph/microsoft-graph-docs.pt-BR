@@ -14,7 +14,7 @@ ms.locfileid: "42519992"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso targetResource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa os tipos de recursos de destino associados à atividade de auditoria. 
 
@@ -27,7 +27,7 @@ Representa os tipos de recursos de destino associados à atividade de auditoria.
 |displayName|Cadeia de caracteres|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
 |type|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
 |userPrincipalName|Cadeia de caracteres|Quando o **tipo** está definido `User`como, isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
-|groupType|String|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
+|groupType|Cadeia de caracteres|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
 |ModifiedProperties|coleção [modifiedproperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
 
 ## <a name="json-representation"></a>Representação JSON

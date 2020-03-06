@@ -6,14 +6,16 @@ description: Representa um item em uma lista do sharepoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e9a9010e8700d7e6ebd6a2e3d030fba7cab79f83
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 96c61daea047f969f88352429a46fc7efb8b776d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703760"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447560"
 ---
 # <a name="listitem-resource"></a>recurso listItem
+
+Namespace: microsoft.graph
 
 Representa um item em uma **[lista][]** do Sharepoint.
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.

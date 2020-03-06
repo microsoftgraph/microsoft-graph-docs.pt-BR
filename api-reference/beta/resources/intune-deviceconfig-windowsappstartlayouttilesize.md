@@ -14,7 +14,7 @@ ms.locfileid: "42525569"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enumeração windowsAppStartLayoutTileSize
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

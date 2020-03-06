@@ -14,7 +14,7 @@ ms.locfileid: "42507898"
 ---
 # <a name="bookingservice-resource-type"></a>tipo de recurso bookingService
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

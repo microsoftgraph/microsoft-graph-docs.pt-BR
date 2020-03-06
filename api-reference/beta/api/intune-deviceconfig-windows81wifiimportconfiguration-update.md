@@ -14,7 +14,7 @@ ms.locfileid: "42476416"
 ---
 # <a name="update-windows81wifiimportconfiguration"></a>Atualizar windows81WifiImportConfiguration
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. xml).|
-|ProfileName|String|Nome do perfil exibido na interface do usuário.|
+|ProfileName|Cadeia de caracteres|Nome do perfil exibido na interface do usuário.|
 |payload|Binária|Carga. (Matriz de bytes codificados por UTF8). Este é o arquivo XML salvo no dispositivo que você usou para se conectar ao ponto de extremidade Wi-Fi.|
 
 

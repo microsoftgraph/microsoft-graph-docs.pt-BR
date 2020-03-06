@@ -15,7 +15,7 @@ ms.locfileid: "42453224"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obter um recurso de site pelo caminho
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

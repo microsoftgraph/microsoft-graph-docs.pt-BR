@@ -14,7 +14,7 @@ ms.locfileid: "42453188"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Não acompanhar o [site](../resources/site.md) de um usuário ou vários sites.
 

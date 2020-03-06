@@ -15,7 +15,7 @@ ms.locfileid: "42453156"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Listar as páginas na lista de páginas do site de um site
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

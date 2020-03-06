@@ -14,7 +14,7 @@ ms.locfileid: "42522106"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

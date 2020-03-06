@@ -14,7 +14,7 @@ ms.locfileid: "42520911"
 ---
 # <a name="searchquery-resource-type"></a>tipo de recurso searchQuery
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

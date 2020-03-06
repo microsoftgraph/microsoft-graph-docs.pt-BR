@@ -14,7 +14,7 @@ ms.locfileid: "42456947"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

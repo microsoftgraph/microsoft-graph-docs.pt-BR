@@ -5,14 +5,16 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: people
 doc_type: conceptualPageType
-ms.openlocfilehash: 342eb433f7acc5c8e37d37e7ebcf7cb59f768aa1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e0a402cd01cf9dc8effd16496d7230cc8e98d5d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939247"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521471"
 ---
 # <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>Use a API do Perfil no Microsoft Graph para recuperar informações sobre você mesmo ou outro usuário 
+
+Namespace: microsoft.graph
 
 Os aplicativos do Microsoft Graph podem usar a API de Perfil para recuperar o perfil do usuário conectado com uma conta válida do Azure AD ou da Microsoft. Essas informações podem ser usadas em aplicativos para ajudar a contextualizar outros usuários, fornecer uma experiência mais avançada para o usuário no aplicativo ou como um mecanismo para armazenar informações estendidas sobre o usuário, as quais também poderão ser usadas no Microsoft 365. 
 

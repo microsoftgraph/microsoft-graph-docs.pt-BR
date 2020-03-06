@@ -14,7 +14,7 @@ ms.locfileid: "42522169"
 ---
 # <a name="openshiftitem-resource-type"></a>tipo de recurso openShiftItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

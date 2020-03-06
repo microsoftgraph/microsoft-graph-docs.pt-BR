@@ -14,7 +14,7 @@ ms.locfileid: "42472664"
 ---
 # <a name="list-devicemanagementbooleansettinginstances"></a>Listar deviceManagementBooleanSettingInstances
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

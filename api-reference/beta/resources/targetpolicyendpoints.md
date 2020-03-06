@@ -14,7 +14,7 @@ ms.locfileid: "42519999"
 ---
 # <a name="targetpolicyendpoints-resource-type"></a>tipo de recurso targetPolicyEndpoints
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

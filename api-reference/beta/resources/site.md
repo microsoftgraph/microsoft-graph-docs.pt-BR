@@ -6,14 +6,16 @@ title: Site
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 691f91b63fdff583476c5308f4b8370a563120a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be567e1ba44790c54127ccee17dbb0d396f15e0c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008352"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520552"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

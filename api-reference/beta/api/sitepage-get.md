@@ -15,7 +15,7 @@ ms.locfileid: "42453174"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Obter uma página na lista de páginas do site de um site
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

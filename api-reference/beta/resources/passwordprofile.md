@@ -14,7 +14,7 @@ ms.locfileid: "42522008"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

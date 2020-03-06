@@ -14,7 +14,7 @@ ms.locfileid: "42507905"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>tipo de recurso bookingSchedulingPolicy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

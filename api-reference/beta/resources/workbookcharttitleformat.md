@@ -14,7 +14,7 @@ ms.locfileid: "42519250"
 ---
 # <a name="workbookcharttitleformat-resource-type"></a>tipo de recurso workbookChartTitleFormat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

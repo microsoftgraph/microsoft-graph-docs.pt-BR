@@ -14,7 +14,7 @@ ms.locfileid: "42522817"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo rec
 | IsSupported | Boolean | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
 | includeNestedFolders | Boolean | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
 | sourceFolderIds | String collection | As pastas de caixa de correio que devem ser minadas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="json-representation"></a>Representação JSON
 

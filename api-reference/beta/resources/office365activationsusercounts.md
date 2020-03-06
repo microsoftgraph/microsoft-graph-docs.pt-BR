@@ -14,14 +14,14 @@ ms.locfileid: "42522481"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>tipo de recurso office365ActivationsUserCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                 | Tipo   | Descrição                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Data   | A última data do conteúdo.          |
-| ProductType              | String | O tipo de produto como "Office 365 ProPlus", "Project Client" ou "Visio Pro for Office 365". |
+| ProductType              | Cadeia de caracteres | O tipo de produto como "Office 365 ProPlus", "Project Client" ou "Visio Pro for Office 365". |
 | atribuí                 | Int64  | O número de usuários foi atribuído para a licença de produto. |
 | ativado                | Int64  | O número de usuários que ativaram o produto. |
 | sharedComputerActivation | Int64  | O número de usuários que usaram o produto em um computador compartilhado. |

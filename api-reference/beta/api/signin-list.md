@@ -14,7 +14,7 @@ ms.locfileid: "42453265"
 ---
 # <a name="list-signins"></a>Listar logons
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

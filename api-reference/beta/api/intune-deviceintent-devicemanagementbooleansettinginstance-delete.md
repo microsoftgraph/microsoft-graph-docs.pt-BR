@@ -14,7 +14,7 @@ ms.locfileid: "42472734"
 ---
 # <a name="delete-devicemanagementbooleansettinginstance"></a>Excluir deviceManagementBooleanSettingInstance
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

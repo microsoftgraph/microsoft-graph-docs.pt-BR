@@ -15,7 +15,7 @@ ms.locfileid: "42520006"
 ---
 # <a name="system-facet"></a>Faceta System
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

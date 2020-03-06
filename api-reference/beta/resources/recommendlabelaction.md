@@ -14,7 +14,7 @@ ms.locfileid: "42521233"
 ---
 # <a name="recommendlabelaction-resource-type"></a>tipo de recurso recommendLabelAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

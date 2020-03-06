@@ -14,7 +14,7 @@ ms.locfileid: "42507786"
 ---
 # <a name="ivr-scenarios-in-calls"></a>Cenários IVR em chamadas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

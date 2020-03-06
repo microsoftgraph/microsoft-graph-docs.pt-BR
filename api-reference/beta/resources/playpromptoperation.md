@@ -14,7 +14,7 @@ ms.locfileid: "42521618"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +24,8 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
-| completionReason    | String                      | Os valores possíveis são: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
+| clientContext       | Cadeia de caracteres                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
+| completionReason    | Cadeia de caracteres                      | Os valores possíveis são: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |

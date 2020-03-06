@@ -15,7 +15,7 @@ ms.locfileid: "42453228"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

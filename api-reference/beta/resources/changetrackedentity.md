@@ -14,7 +14,7 @@ ms.locfileid: "42507751"
 ---
 # <a name="changetrackedentity-resource-type"></a>tipo de recurso changeTrackedEntity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

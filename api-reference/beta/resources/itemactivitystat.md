@@ -15,7 +15,7 @@ ms.locfileid: "42523111"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

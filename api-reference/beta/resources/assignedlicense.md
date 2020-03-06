@@ -14,7 +14,7 @@ ms.locfileid: "42508209"
 ---
 # <a name="assignedlicense-resource-type"></a>Tipo de recurso assignedLicense
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

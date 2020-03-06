@@ -14,7 +14,7 @@ ms.locfileid: "42521436"
 ---
 # <a name="programcontroltype-resource-type"></a>tipo de recurso programControlType
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,20 +5,22 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3319ba8186087688c7b5590be8d07913e41020aa
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 38c82eff5d079651f0fbdaebfa3cf0bd1fbc2328
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023114"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519558"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directoryobject.md).
+Representa uma conta de usuário do AD do Azure. Herda de [directoryObject](directoryobject.md).
 
-Por motivos de desempenho, as operações [criar](../api/user-post-users.md), [obter](../api/user-get.md) e [listar](../api/user-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades padrão estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.
+Por motivos de desempenho, as operações [create](../api/user-post-users.md), [get](../api/user-get.md) e [list](../api/user-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades padrão estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.
 
 Esse recurso permite:
 
@@ -166,6 +168,7 @@ Esse recurso permite:
 | hireDate | DateTimeOffset | A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em $select. |
 | id | String | O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). <br><br>Retornado por padrão. Não anulável. Somente leitura.|
 | Identidades | Coleção [objectIdentity](objectIdentity.md) | Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br><br>Retornado apenas em $select. Oferece suporte a $filter. |
+| imAddresses | String collection | Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 | interests | Coleção de cadeias de caracteres | Uma lista para o usuário descrever os interesses dele. <br><br>Retornado apenas em $select. |
 | isResourceAccount | Booliano | `true`Se o usuário for uma conta de recurso, caso contrário`false` O valor nulo deve ser considerado `false`. <br><br>Retornado apenas em $select. |
 | jobTitle | String | O cargo do usuário. <br><br>Retornado por padrão. Oferece suporte a $filter.|

@@ -14,7 +14,7 @@ ms.locfileid: "42455144"
 ---
 # <a name="list-positions"></a>Listar posições
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
