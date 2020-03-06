@@ -5,49 +5,51 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e2c8b66ab247c629513de0698cef30de8420525c
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a85e1d77022e1f890eb0bba70fac8557918f8b8f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865700"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511275"
 ---
-# <a name="delete-onlinemeeting"></a><span data-ttu-id="990a9-103">Excluir onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="990a9-103">Delete onlineMeeting</span></span>
+# <a name="delete-onlinemeeting"></a><span data-ttu-id="1acb8-103">Excluir onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="1acb8-103">Delete onlineMeeting</span></span>
 
-<span data-ttu-id="990a9-104">Excluir um objeto [onlineMeeting](../resources/onlinemeeting.md) .</span><span class="sxs-lookup"><span data-stu-id="990a9-104">Delete an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+<span data-ttu-id="1acb8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1acb8-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="990a9-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="990a9-105">Permissions</span></span>
+<span data-ttu-id="1acb8-105">Excluir um objeto [onlineMeeting](../resources/onlinemeeting.md) .</span><span class="sxs-lookup"><span data-stu-id="1acb8-105">Delete an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-| <span data-ttu-id="990a9-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="990a9-106">Permission type</span></span> | <span data-ttu-id="990a9-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="990a9-107">Permissions (from least to most privileged)</span></span>                  |
+## <a name="permissions"></a><span data-ttu-id="1acb8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1acb8-106">Permissions</span></span>
+
+| <span data-ttu-id="1acb8-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1acb8-107">Permission type</span></span> | <span data-ttu-id="1acb8-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1acb8-108">Permissions (from least to most privileged)</span></span>                  |
 | :-------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="990a9-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="990a9-108">Delegated (work or school account)</span></span>     | <span data-ttu-id="990a9-109">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="990a9-109">OnlineMeetings.ReadWrite</span></span>              |
-| <span data-ttu-id="990a9-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="990a9-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="990a9-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="990a9-111">Not Supported.</span></span>                         |
-| <span data-ttu-id="990a9-112">Application</span><span class="sxs-lookup"><span data-stu-id="990a9-112">Application</span></span>                            | <span data-ttu-id="990a9-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="990a9-113">Not Supported.</span></span>                         |
+| <span data-ttu-id="1acb8-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1acb8-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="1acb8-110">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1acb8-110">OnlineMeetings.ReadWrite</span></span>              |
+| <span data-ttu-id="1acb8-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1acb8-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1acb8-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1acb8-112">Not Supported.</span></span>                         |
+| <span data-ttu-id="1acb8-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1acb8-113">Application</span></span>                            | <span data-ttu-id="1acb8-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1acb8-114">Not Supported.</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="990a9-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="990a9-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1acb8-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1acb8-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="990a9-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="990a9-115">Request headers</span></span>
-| <span data-ttu-id="990a9-116">Nome</span><span class="sxs-lookup"><span data-stu-id="990a9-116">Name</span></span>          | <span data-ttu-id="990a9-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="990a9-117">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="1acb8-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1acb8-116">Request headers</span></span>
+| <span data-ttu-id="1acb8-117">Nome</span><span class="sxs-lookup"><span data-stu-id="1acb8-117">Name</span></span>          | <span data-ttu-id="1acb8-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="1acb8-118">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="990a9-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="990a9-118">Authorization</span></span> | <span data-ttu-id="990a9-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="990a9-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1acb8-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="1acb8-119">Authorization</span></span> | <span data-ttu-id="1acb8-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1acb8-p101">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="990a9-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="990a9-121">Request body</span></span>
-<span data-ttu-id="990a9-122">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="990a9-122">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1acb8-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1acb8-122">Request body</span></span>
+<span data-ttu-id="1acb8-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1acb8-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="990a9-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="990a9-123">Response</span></span>
-<span data-ttu-id="990a9-p102">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="990a9-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1acb8-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="1acb8-124">Response</span></span>
+<span data-ttu-id="1acb8-p102">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1acb8-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="990a9-126">Exemplos</span><span class="sxs-lookup"><span data-stu-id="990a9-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1acb8-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1acb8-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="990a9-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="990a9-127">Request</span></span>
-<span data-ttu-id="990a9-128">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="990a9-128">The following example shows the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1acb8-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1acb8-128">Request</span></span>
+<span data-ttu-id="1acb8-129">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="1acb8-129">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="990a9-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="990a9-129">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1acb8-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="1acb8-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-call"
@@ -55,22 +57,26 @@ DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="990a9-130">C#</span><span class="sxs-lookup"><span data-stu-id="990a9-130">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1acb8-131">C#</span><span class="sxs-lookup"><span data-stu-id="1acb8-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="990a9-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="990a9-131">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1acb8-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1acb8-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="990a9-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="990a9-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1acb8-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1acb8-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="1acb8-134">Java</span><span class="sxs-lookup"><span data-stu-id="1acb8-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="990a9-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="990a9-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1acb8-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="1acb8-135">Response</span></span>
 
 <!-- {
   "blockType": "response",

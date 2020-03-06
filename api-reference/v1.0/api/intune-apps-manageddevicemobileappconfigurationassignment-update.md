@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 794570f4e820e1de54a85a9684da6bdcb630311b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7d3d527a4c820b431ff612cf629ad37b86042629
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "37358610"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516311"
 ---
-# <a name="update-manageddevicemobileappconfigurationassignment"></a><span data-ttu-id="9d771-103">Atualizar managedDeviceMobileAppConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="9d771-103">Update managedDeviceMobileAppConfigurationAssignment</span></span>
+# <a name="update-manageddevicemobileappconfigurationassignment"></a><span data-ttu-id="28b2a-103">Atualizar managedDeviceMobileAppConfigurationAssignment</span><span class="sxs-lookup"><span data-stu-id="28b2a-103">Update managedDeviceMobileAppConfigurationAssignment</span></span>
 
-> <span data-ttu-id="9d771-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="9d771-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="28b2a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28b2a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9d771-105">Atualizar as propriedades de um objeto [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="9d771-105">Update the properties of a [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object.</span></span>
+> <span data-ttu-id="28b2a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="28b2a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9d771-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9d771-106">Prerequisites</span></span>
-<span data-ttu-id="9d771-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d771-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="28b2a-106">Atualizar as propriedades de um objeto [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="28b2a-106">Update the properties of a [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object.</span></span>
 
-|<span data-ttu-id="9d771-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9d771-109">Permission type</span></span>|<span data-ttu-id="9d771-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="9d771-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="28b2a-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="28b2a-107">Prerequisites</span></span>
+<span data-ttu-id="28b2a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28b2a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="28b2a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="28b2a-110">Permission type</span></span>|<span data-ttu-id="28b2a-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="28b2a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9d771-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9d771-111">Delegated (work or school account)</span></span>|<span data-ttu-id="9d771-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d771-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="9d771-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9d771-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9d771-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9d771-114">Not supported.</span></span>|
-|<span data-ttu-id="9d771-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d771-115">Application</span></span>|<span data-ttu-id="9d771-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9d771-116">Not supported.</span></span>|
+|<span data-ttu-id="28b2a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="28b2a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="28b2a-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28b2a-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="28b2a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="28b2a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="28b2a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="28b2a-115">Not supported.</span></span>|
+|<span data-ttu-id="28b2a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="28b2a-116">Application</span></span>|<span data-ttu-id="28b2a-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="28b2a-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9d771-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9d771-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28b2a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="28b2a-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,31 +38,31 @@ ms.locfileid: "37358610"
 PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments/{managedDeviceMobileAppConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9d771-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9d771-118">Request headers</span></span>
-|<span data-ttu-id="9d771-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9d771-119">Header</span></span>|<span data-ttu-id="9d771-120">Valor</span><span class="sxs-lookup"><span data-stu-id="9d771-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="28b2a-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="28b2a-119">Request headers</span></span>
+|<span data-ttu-id="28b2a-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="28b2a-120">Header</span></span>|<span data-ttu-id="28b2a-121">Valor</span><span class="sxs-lookup"><span data-stu-id="28b2a-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9d771-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="9d771-121">Authorization</span></span>|<span data-ttu-id="9d771-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9d771-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9d771-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="9d771-123">Accept</span></span>|<span data-ttu-id="9d771-124">application/json</span><span class="sxs-lookup"><span data-stu-id="9d771-124">application/json</span></span>|
+|<span data-ttu-id="28b2a-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="28b2a-122">Authorization</span></span>|<span data-ttu-id="28b2a-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28b2a-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="28b2a-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="28b2a-124">Accept</span></span>|<span data-ttu-id="28b2a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="28b2a-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9d771-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9d771-125">Request body</span></span>
-<span data-ttu-id="9d771-126">No corpo da solicitação, forneça uma representação JSON do objeto [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="9d771-126">In the request body, supply a JSON representation for the [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="28b2a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="28b2a-126">Request body</span></span>
+<span data-ttu-id="28b2a-127">No corpo da solicitação, forneça uma representação JSON do objeto [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="28b2a-127">In the request body, supply a JSON representation for the [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object.</span></span>
 
-<span data-ttu-id="9d771-127">A tabela a seguir mostra as propriedades que são necessárias ao criar [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="9d771-127">The following table shows the properties that are required when you create the [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span></span>
+<span data-ttu-id="28b2a-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span><span class="sxs-lookup"><span data-stu-id="28b2a-128">The following table shows the properties that are required when you create the [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).</span></span>
 
-|<span data-ttu-id="9d771-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9d771-128">Property</span></span>|<span data-ttu-id="9d771-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="9d771-129">Type</span></span>|<span data-ttu-id="9d771-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="9d771-130">Description</span></span>|
+|<span data-ttu-id="28b2a-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="28b2a-129">Property</span></span>|<span data-ttu-id="28b2a-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="28b2a-130">Type</span></span>|<span data-ttu-id="28b2a-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="28b2a-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9d771-131">id</span><span class="sxs-lookup"><span data-stu-id="9d771-131">id</span></span>|<span data-ttu-id="9d771-132">String</span><span class="sxs-lookup"><span data-stu-id="9d771-132">String</span></span>|<span data-ttu-id="9d771-133">Identificador exclusivo da entidade.</span><span class="sxs-lookup"><span data-stu-id="9d771-133">Unique identifier of the entity.</span></span>|
-|<span data-ttu-id="9d771-134">destino</span><span class="sxs-lookup"><span data-stu-id="9d771-134">target</span></span>|[<span data-ttu-id="9d771-135">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="9d771-135">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="9d771-136">Destino de atribuição ao qual a política de T&C foi designada.</span><span class="sxs-lookup"><span data-stu-id="9d771-136">Assignment target that the T&C policy is assigned to.</span></span>|
+|<span data-ttu-id="28b2a-132">id</span><span class="sxs-lookup"><span data-stu-id="28b2a-132">id</span></span>|<span data-ttu-id="28b2a-133">String</span><span class="sxs-lookup"><span data-stu-id="28b2a-133">String</span></span>|<span data-ttu-id="28b2a-134">Identificador exclusivo da entidade.</span><span class="sxs-lookup"><span data-stu-id="28b2a-134">Unique identifier of the entity.</span></span>|
+|<span data-ttu-id="28b2a-135">destino</span><span class="sxs-lookup"><span data-stu-id="28b2a-135">target</span></span>|[<span data-ttu-id="28b2a-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="28b2a-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="28b2a-137">Destino de atribuição ao qual a política de T&C foi designada.</span><span class="sxs-lookup"><span data-stu-id="28b2a-137">Assignment target that the T&C policy is assigned to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9d771-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d771-137">Response</span></span>
-<span data-ttu-id="9d771-138">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9d771-138">If successful, this method returns a `200 OK` response code and an updated [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="28b2a-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="28b2a-138">Response</span></span>
+<span data-ttu-id="28b2a-139">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28b2a-139">If successful, this method returns a `200 OK` response code and an updated [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9d771-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9d771-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="28b2a-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="28b2a-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9d771-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d771-140">Request</span></span>
-<span data-ttu-id="9d771-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9d771-141">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="28b2a-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="28b2a-141">Request</span></span>
+<span data-ttu-id="28b2a-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="28b2a-142">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/assignments/{managedDeviceMobileAppConfigurationAssignmentId}
 Content-type: application/json
@@ -74,8 +76,8 @@ Content-length: 185
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9d771-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d771-142">Response</span></span>
-<span data-ttu-id="9d771-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9d771-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="28b2a-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="28b2a-143">Response</span></span>
+<span data-ttu-id="28b2a-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="28b2a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

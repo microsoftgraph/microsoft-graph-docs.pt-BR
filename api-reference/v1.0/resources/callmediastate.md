@@ -5,27 +5,29 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: b73f6110639cfb158bef8e5f529d9a2c65b34689
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 3bf6b0e2387ac658ad506e3b4ea226a9a8f66e6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913461"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531957"
 ---
-# <a name="callmediastate-resource-type"></a><span data-ttu-id="ced46-103">tipo de recurso callMediaState</span><span class="sxs-lookup"><span data-stu-id="ced46-103">callMediaState resource type</span></span>
+# <a name="callmediastate-resource-type"></a><span data-ttu-id="5ee52-103">tipo de recurso callMediaState</span><span class="sxs-lookup"><span data-stu-id="5ee52-103">callMediaState resource type</span></span>
+
+<span data-ttu-id="5ee52-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5ee52-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="ced46-104">Representa o estado de mídia de uma [chamada](call.md).</span><span class="sxs-lookup"><span data-stu-id="ced46-104">Represents the media state for a [call](call.md).</span></span>
+<span data-ttu-id="5ee52-105">Representa o estado de mídia de uma [chamada](call.md).</span><span class="sxs-lookup"><span data-stu-id="5ee52-105">Represents the media state for a [call](call.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ced46-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ced46-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5ee52-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5ee52-106">Properties</span></span>
 
-| <span data-ttu-id="ced46-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ced46-106">Property</span></span>            | <span data-ttu-id="ced46-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="ced46-107">Type</span></span>    | <span data-ttu-id="ced46-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="ced46-108">Description</span></span>                                                                    |
+| <span data-ttu-id="5ee52-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5ee52-107">Property</span></span>            | <span data-ttu-id="5ee52-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="5ee52-108">Type</span></span>    | <span data-ttu-id="5ee52-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="5ee52-109">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="ced46-109">audio</span><span class="sxs-lookup"><span data-stu-id="ced46-109">audio</span></span>           | <span data-ttu-id="ced46-110">String</span><span class="sxs-lookup"><span data-stu-id="ced46-110">String</span></span>  | <span data-ttu-id="ced46-111">O estado da mídia de áudio.</span><span class="sxs-lookup"><span data-stu-id="ced46-111">The audio media state.</span></span> <span data-ttu-id="ced46-112">Os valores possíveis são: `active` e `inactive`.</span><span class="sxs-lookup"><span data-stu-id="ced46-112">Possible values are: `active`, `inactive`.</span></span> |
+| <span data-ttu-id="5ee52-110">audio</span><span class="sxs-lookup"><span data-stu-id="5ee52-110">audio</span></span>           | <span data-ttu-id="5ee52-111">String</span><span class="sxs-lookup"><span data-stu-id="5ee52-111">String</span></span>  | <span data-ttu-id="5ee52-112">O estado da mídia de áudio.</span><span class="sxs-lookup"><span data-stu-id="5ee52-112">The audio media state.</span></span> <span data-ttu-id="5ee52-113">Os valores possíveis são: `active` e `inactive`.</span><span class="sxs-lookup"><span data-stu-id="5ee52-113">Possible values are: `active`, `inactive`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="ced46-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ced46-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5ee52-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5ee52-114">JSON representation</span></span>
 
-<span data-ttu-id="ced46-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ced46-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5ee52-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5ee52-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,28 +5,30 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 36426a7e3f1fb79264a788d8af7e7768f5bae26a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59558512d27bb92c48fb5c0ac2dd0fb52f7c426d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032617"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531500"
 ---
-# <a name="educationterm-resource-type"></a><span data-ttu-id="5cca9-105">Tipo de recurso educationTerm</span><span class="sxs-lookup"><span data-stu-id="5cca9-105">educationTerm resource type</span></span>
+# <a name="educationterm-resource-type"></a><span data-ttu-id="45dba-105">Tipo de recurso educationTerm</span><span class="sxs-lookup"><span data-stu-id="45dba-105">educationTerm resource type</span></span>
 
-<span data-ttu-id="5cca9-106">Termo A.</span><span class="sxs-lookup"><span data-stu-id="5cca9-106">A term.</span></span> <span data-ttu-id="5cca9-107">Isso representa uma parte designada do ano acadêmico.</span><span class="sxs-lookup"><span data-stu-id="5cca9-107">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="5cca9-108">É usada dentro de [educationClass](educationclass.md).</span><span class="sxs-lookup"><span data-stu-id="5cca9-108">It is used within [educationClass](educationclass.md).</span></span>
+<span data-ttu-id="45dba-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="45dba-106">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5cca9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5cca9-109">Properties</span></span>
-| <span data-ttu-id="5cca9-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5cca9-110">Property</span></span>     | <span data-ttu-id="5cca9-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="5cca9-111">Type</span></span>   |<span data-ttu-id="5cca9-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="5cca9-112">Description</span></span>|
+<span data-ttu-id="45dba-107">Termo A.</span><span class="sxs-lookup"><span data-stu-id="45dba-107">A term.</span></span> <span data-ttu-id="45dba-108">Isso representa uma parte designada do ano acadêmico.</span><span class="sxs-lookup"><span data-stu-id="45dba-108">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="45dba-109">É usada dentro de [educationClass](educationclass.md).</span><span class="sxs-lookup"><span data-stu-id="45dba-109">It is used within [educationClass](educationclass.md).</span></span>
+
+## <a name="properties"></a><span data-ttu-id="45dba-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="45dba-110">Properties</span></span>
+| <span data-ttu-id="45dba-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="45dba-111">Property</span></span>     | <span data-ttu-id="45dba-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="45dba-112">Type</span></span>   |<span data-ttu-id="45dba-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="45dba-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5cca9-113">displayName</span><span class="sxs-lookup"><span data-stu-id="5cca9-113">displayName</span></span>| <span data-ttu-id="5cca9-114">String</span><span class="sxs-lookup"><span data-stu-id="5cca9-114">String</span></span>| <span data-ttu-id="5cca9-115">Nome de exibição do termo.</span><span class="sxs-lookup"><span data-stu-id="5cca9-115">Display name of the term.</span></span>| 
-|<span data-ttu-id="5cca9-116">externalId</span><span class="sxs-lookup"><span data-stu-id="5cca9-116">externalId</span></span>|<span data-ttu-id="5cca9-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5cca9-117">String</span></span>| <span data-ttu-id="5cca9-118">ID do termo no sistema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="5cca9-118">ID of term in the syncing system.</span></span>|
-|<span data-ttu-id="5cca9-119">startDate</span><span class="sxs-lookup"><span data-stu-id="5cca9-119">startDate</span></span>|<span data-ttu-id="5cca9-120">Date</span><span class="sxs-lookup"><span data-stu-id="5cca9-120">Date</span></span>|<span data-ttu-id="5cca9-121">Início do termo.</span><span class="sxs-lookup"><span data-stu-id="5cca9-121">Start of the term.</span></span>|
-|<span data-ttu-id="5cca9-122">endDate</span><span class="sxs-lookup"><span data-stu-id="5cca9-122">endDate</span></span>|<span data-ttu-id="5cca9-123">Data</span><span class="sxs-lookup"><span data-stu-id="5cca9-123">Date</span></span>|<span data-ttu-id="5cca9-124">Fim do termo.</span><span class="sxs-lookup"><span data-stu-id="5cca9-124">End of the term.</span></span>|
+|<span data-ttu-id="45dba-114">displayName</span><span class="sxs-lookup"><span data-stu-id="45dba-114">displayName</span></span>| <span data-ttu-id="45dba-115">String</span><span class="sxs-lookup"><span data-stu-id="45dba-115">String</span></span>| <span data-ttu-id="45dba-116">Nome de exibição do termo.</span><span class="sxs-lookup"><span data-stu-id="45dba-116">Display name of the term.</span></span>| 
+|<span data-ttu-id="45dba-117">externalId</span><span class="sxs-lookup"><span data-stu-id="45dba-117">externalId</span></span>|<span data-ttu-id="45dba-118">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="45dba-118">String</span></span>| <span data-ttu-id="45dba-119">ID do termo no sistema de sincronização.</span><span class="sxs-lookup"><span data-stu-id="45dba-119">ID of term in the syncing system.</span></span>|
+|<span data-ttu-id="45dba-120">startDate</span><span class="sxs-lookup"><span data-stu-id="45dba-120">startDate</span></span>|<span data-ttu-id="45dba-121">Date</span><span class="sxs-lookup"><span data-stu-id="45dba-121">Date</span></span>|<span data-ttu-id="45dba-122">Início do termo.</span><span class="sxs-lookup"><span data-stu-id="45dba-122">Start of the term.</span></span>|
+|<span data-ttu-id="45dba-123">endDate</span><span class="sxs-lookup"><span data-stu-id="45dba-123">endDate</span></span>|<span data-ttu-id="45dba-124">Data</span><span class="sxs-lookup"><span data-stu-id="45dba-124">Date</span></span>|<span data-ttu-id="45dba-125">Fim do termo.</span><span class="sxs-lookup"><span data-stu-id="45dba-125">End of the term.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5cca9-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5cca9-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="45dba-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="45dba-126">JSON representation</span></span>
 
-<span data-ttu-id="5cca9-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5cca9-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="45dba-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="45dba-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

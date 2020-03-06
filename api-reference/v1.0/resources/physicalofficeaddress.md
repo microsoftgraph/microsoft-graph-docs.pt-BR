@@ -5,31 +5,33 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7d79479136390627eeb82a269e79b286cebf9a2e
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 0c7b0280d8b9e7d62357985b88ead034b015aef1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622583"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534061"
 ---
-# <a name="physicalofficeaddress-resource-type"></a><span data-ttu-id="28b9e-103">tipo de recurso physicalOfficeAddress</span><span class="sxs-lookup"><span data-stu-id="28b9e-103">physicalOfficeAddress resource type</span></span>
+# <a name="physicalofficeaddress-resource-type"></a><span data-ttu-id="80ba9-103">tipo de recurso physicalOfficeAddress</span><span class="sxs-lookup"><span data-stu-id="80ba9-103">physicalOfficeAddress resource type</span></span>
 
-<span data-ttu-id="28b9e-104">Representa o endereço comercial de um recurso, como um contato organizacional.</span><span class="sxs-lookup"><span data-stu-id="28b9e-104">Represents the business address of a resource such as an organizational contact.</span></span>
+<span data-ttu-id="80ba9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80ba9-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="28b9e-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="28b9e-105">Properties</span></span>
+<span data-ttu-id="80ba9-105">Representa o endereço comercial de um recurso, como um contato organizacional.</span><span class="sxs-lookup"><span data-stu-id="80ba9-105">Represents the business address of a resource such as an organizational contact.</span></span>
 
-| <span data-ttu-id="28b9e-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="28b9e-106">Property</span></span>     | <span data-ttu-id="28b9e-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="28b9e-107">Type</span></span>   |<span data-ttu-id="28b9e-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="28b9e-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="80ba9-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="80ba9-106">Properties</span></span>
+
+| <span data-ttu-id="80ba9-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="80ba9-107">Property</span></span>     | <span data-ttu-id="80ba9-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="80ba9-108">Type</span></span>   |<span data-ttu-id="80ba9-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="80ba9-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="28b9e-109">city</span><span class="sxs-lookup"><span data-stu-id="28b9e-109">city</span></span>|<span data-ttu-id="28b9e-110">String</span><span class="sxs-lookup"><span data-stu-id="28b9e-110">String</span></span>|<span data-ttu-id="28b9e-111">A cidade.</span><span class="sxs-lookup"><span data-stu-id="28b9e-111">The city.</span></span>|
-|<span data-ttu-id="28b9e-112">countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="28b9e-112">countryOrRegion</span></span>|<span data-ttu-id="28b9e-113">String</span><span class="sxs-lookup"><span data-stu-id="28b9e-113">String</span></span>|<span data-ttu-id="28b9e-p101">O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".</span><span class="sxs-lookup"><span data-stu-id="28b9e-p101">The country or region. It's a free-format string value, for example, "United States".</span></span>|
-|<span data-ttu-id="28b9e-116">officeLocation</span><span class="sxs-lookup"><span data-stu-id="28b9e-116">officeLocation</span></span>  | <span data-ttu-id="28b9e-117">String</span><span class="sxs-lookup"><span data-stu-id="28b9e-117">String</span></span> | <span data-ttu-id="28b9e-118">Local do Office, como o prédio e o número do escritório de um contato organizacional.</span><span class="sxs-lookup"><span data-stu-id="28b9e-118">Office location such as building and office number for an organizational contact.</span></span>  |
-|<span data-ttu-id="28b9e-119">postalCode</span><span class="sxs-lookup"><span data-stu-id="28b9e-119">postalCode</span></span>|<span data-ttu-id="28b9e-120">String</span><span class="sxs-lookup"><span data-stu-id="28b9e-120">String</span></span>|<span data-ttu-id="28b9e-121">O código de endereçamento postal, ou CEP.</span><span class="sxs-lookup"><span data-stu-id="28b9e-121">The postal code.</span></span>|
-|<span data-ttu-id="28b9e-122">state</span><span class="sxs-lookup"><span data-stu-id="28b9e-122">state</span></span>|<span data-ttu-id="28b9e-123">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="28b9e-123">String</span></span>|<span data-ttu-id="28b9e-124">O estado.</span><span class="sxs-lookup"><span data-stu-id="28b9e-124">The state.</span></span>|
-|<span data-ttu-id="28b9e-125">street</span><span class="sxs-lookup"><span data-stu-id="28b9e-125">street</span></span>|<span data-ttu-id="28b9e-126">String</span><span class="sxs-lookup"><span data-stu-id="28b9e-126">String</span></span>|<span data-ttu-id="28b9e-127">O tipo de logradouro (rua, alameda, avenida, etc.).</span><span class="sxs-lookup"><span data-stu-id="28b9e-127">The street.</span></span>|
+|<span data-ttu-id="80ba9-110">city</span><span class="sxs-lookup"><span data-stu-id="80ba9-110">city</span></span>|<span data-ttu-id="80ba9-111">String</span><span class="sxs-lookup"><span data-stu-id="80ba9-111">String</span></span>|<span data-ttu-id="80ba9-112">A cidade.</span><span class="sxs-lookup"><span data-stu-id="80ba9-112">The city.</span></span>|
+|<span data-ttu-id="80ba9-113">countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="80ba9-113">countryOrRegion</span></span>|<span data-ttu-id="80ba9-114">String</span><span class="sxs-lookup"><span data-stu-id="80ba9-114">String</span></span>|<span data-ttu-id="80ba9-p101">O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".</span><span class="sxs-lookup"><span data-stu-id="80ba9-p101">The country or region. It's a free-format string value, for example, "United States".</span></span>|
+|<span data-ttu-id="80ba9-117">officeLocation</span><span class="sxs-lookup"><span data-stu-id="80ba9-117">officeLocation</span></span>  | <span data-ttu-id="80ba9-118">String</span><span class="sxs-lookup"><span data-stu-id="80ba9-118">String</span></span> | <span data-ttu-id="80ba9-119">Local do Office, como o prédio e o número do escritório de um contato organizacional.</span><span class="sxs-lookup"><span data-stu-id="80ba9-119">Office location such as building and office number for an organizational contact.</span></span>  |
+|<span data-ttu-id="80ba9-120">postalCode</span><span class="sxs-lookup"><span data-stu-id="80ba9-120">postalCode</span></span>|<span data-ttu-id="80ba9-121">String</span><span class="sxs-lookup"><span data-stu-id="80ba9-121">String</span></span>|<span data-ttu-id="80ba9-122">O código de endereçamento postal, ou CEP.</span><span class="sxs-lookup"><span data-stu-id="80ba9-122">The postal code.</span></span>|
+|<span data-ttu-id="80ba9-123">state</span><span class="sxs-lookup"><span data-stu-id="80ba9-123">state</span></span>|<span data-ttu-id="80ba9-124">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="80ba9-124">String</span></span>|<span data-ttu-id="80ba9-125">O estado.</span><span class="sxs-lookup"><span data-stu-id="80ba9-125">The state.</span></span>|
+|<span data-ttu-id="80ba9-126">street</span><span class="sxs-lookup"><span data-stu-id="80ba9-126">street</span></span>|<span data-ttu-id="80ba9-127">String</span><span class="sxs-lookup"><span data-stu-id="80ba9-127">String</span></span>|<span data-ttu-id="80ba9-128">O tipo de logradouro (rua, alameda, avenida, etc.).</span><span class="sxs-lookup"><span data-stu-id="80ba9-128">The street.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="28b9e-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="28b9e-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="80ba9-129">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="80ba9-129">JSON representation</span></span>
 
-<span data-ttu-id="28b9e-129">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="28b9e-129">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="80ba9-130">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="80ba9-130">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

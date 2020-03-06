@@ -5,29 +5,31 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 851862a49a3a6852d70e597d70f5622833c7c087
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ce1abf2ea6df1e7a289802073a47bd1b9fdeb005
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025355"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510701"
 ---
-# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="94a81-103">Criar ou substituir um historyItem</span><span class="sxs-lookup"><span data-stu-id="94a81-103">Create or replace a historyItem</span></span>
+# <a name="create-or-replace-a-historyitem"></a><span data-ttu-id="273e9-103">Criar ou substituir um historyItem</span><span class="sxs-lookup"><span data-stu-id="273e9-103">Create or replace a historyItem</span></span>
 
-<span data-ttu-id="94a81-104">Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.</span><span class="sxs-lookup"><span data-stu-id="94a81-104">Create a new or replace an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="273e9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="273e9-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="94a81-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="94a81-105">Permissions</span></span>
+<span data-ttu-id="273e9-105">Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.</span><span class="sxs-lookup"><span data-stu-id="273e9-105">Create a new or replace an existing history item for an existing user activity.</span></span>
 
-<span data-ttu-id="94a81-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94a81-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="273e9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="273e9-106">Permissions</span></span>
+
+<span data-ttu-id="273e9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="273e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="94a81-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="94a81-108">Permission type</span></span>      | <span data-ttu-id="94a81-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="94a81-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="273e9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="273e9-109">Permission type</span></span>      | <span data-ttu-id="273e9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="273e9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="94a81-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="94a81-110">Delegated (work or school account)</span></span> | <span data-ttu-id="94a81-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="94a81-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="94a81-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="94a81-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="94a81-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="94a81-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="94a81-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="94a81-114">Application</span></span> | <span data-ttu-id="94a81-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94a81-115">Not supported.</span></span> |
+|<span data-ttu-id="273e9-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="273e9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="273e9-112">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="273e9-112">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="273e9-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="273e9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="273e9-114">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="273e9-114">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="273e9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="273e9-115">Application</span></span> | <span data-ttu-id="273e9-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="273e9-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="94a81-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="94a81-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="273e9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="273e9-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +37,27 @@ ms.locfileid: "36025355"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-<span data-ttu-id="94a81-117">ID precisa ser um GUID.</span><span class="sxs-lookup"><span data-stu-id="94a81-117">Id needs to be a GUID.</span></span>
+<span data-ttu-id="273e9-118">ID precisa ser um GUID.</span><span class="sxs-lookup"><span data-stu-id="273e9-118">Id needs to be a GUID.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="94a81-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="94a81-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="273e9-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="273e9-119">Request headers</span></span>
 
-|<span data-ttu-id="94a81-119">Nome</span><span class="sxs-lookup"><span data-stu-id="94a81-119">Name</span></span> | <span data-ttu-id="94a81-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="94a81-120">Type</span></span> | <span data-ttu-id="94a81-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="94a81-121">Description</span></span>|
+|<span data-ttu-id="273e9-120">Nome</span><span class="sxs-lookup"><span data-stu-id="273e9-120">Name</span></span> | <span data-ttu-id="273e9-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="273e9-121">Type</span></span> | <span data-ttu-id="273e9-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="273e9-122">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="94a81-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="94a81-122">Authorization</span></span> | <span data-ttu-id="94a81-123">string</span><span class="sxs-lookup"><span data-stu-id="94a81-123">string</span></span> | <span data-ttu-id="94a81-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94a81-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="273e9-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="273e9-123">Authorization</span></span> | <span data-ttu-id="273e9-124">string</span><span class="sxs-lookup"><span data-stu-id="273e9-124">string</span></span> | <span data-ttu-id="273e9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="273e9-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="94a81-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="94a81-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="273e9-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="273e9-127">Request body</span></span>
 
-<span data-ttu-id="94a81-127">No corpo da solicitação, forneça uma representação JSON de um objeto [historyItem](../resources/projectrome-historyitem.md) .</span><span class="sxs-lookup"><span data-stu-id="94a81-127">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
+<span data-ttu-id="273e9-128">No corpo da solicitação, forneça uma representação JSON de um objeto [historyItem](../resources/projectrome-historyitem.md) .</span><span class="sxs-lookup"><span data-stu-id="273e9-128">In the request body, supply a JSON representation of a [historyItem](../resources/projectrome-historyitem.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="94a81-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="94a81-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="273e9-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="273e9-129">Response</span></span>
 
-<span data-ttu-id="94a81-129">Se tiver êxito, este método retornará `201 Created` o código de resposta se o historyItem foi `200 OK` criado ou se o historyItem foi substituído.</span><span class="sxs-lookup"><span data-stu-id="94a81-129">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
+<span data-ttu-id="273e9-130">Se tiver êxito, este método retornará `201 Created` o código de resposta se o historyItem foi `200 OK` criado ou se o historyItem foi substituído.</span><span class="sxs-lookup"><span data-stu-id="273e9-130">If successful, this method returns the `201 Created` response code if the historyItem was created or `200 OK` if the historyItem was replaced.</span></span>
 
-## <a name="example"></a><span data-ttu-id="94a81-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="94a81-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="273e9-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="273e9-131">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="94a81-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="94a81-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="273e9-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="273e9-132">Request</span></span>
 
-<span data-ttu-id="94a81-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="94a81-132">Here is an example of the request.</span></span>
+<span data-ttu-id="273e9-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="273e9-133">Here is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -74,9 +76,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="94a81-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="94a81-133">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="273e9-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="273e9-134">Response</span></span>
 
-<span data-ttu-id="94a81-134">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="94a81-134">Here is an example of the response.</span></span>
+<span data-ttu-id="273e9-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="273e9-135">Here is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
