@@ -7,20 +7,22 @@ localization_priority: Normal
 description: O choiceColumn em um recurso columnDefinition indica que os valores da coluna podem ser selecionados em uma lista de opções.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a86cb783fb170c2b9528b47272fc214ea0010760
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a29a80bccd2afb76804b2e1a4d81b5a69d44adf1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029733"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533068"
 ---
-# <a name="choicecolumn-resource-type"></a><span data-ttu-id="ebb2f-103">Tipo de recurso ChoiceColumn</span><span class="sxs-lookup"><span data-stu-id="ebb2f-103">ChoiceColumn resource type</span></span>
+# <a name="choicecolumn-resource-type"></a><span data-ttu-id="c812f-103">Tipo de recurso ChoiceColumn</span><span class="sxs-lookup"><span data-stu-id="c812f-103">ChoiceColumn resource type</span></span>
 
-<span data-ttu-id="ebb2f-104">O **choiceColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna podem ser selecionados em uma lista de opções.</span><span class="sxs-lookup"><span data-stu-id="ebb2f-104">The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.</span></span>
+<span data-ttu-id="c812f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c812f-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ebb2f-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ebb2f-105">JSON representation</span></span>
+<span data-ttu-id="c812f-105">O **choiceColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna podem ser selecionados em uma lista de opções.</span><span class="sxs-lookup"><span data-stu-id="c812f-105">The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.</span></span>
 
-<span data-ttu-id="ebb2f-106">Aqui está uma representação JSON de um recurso **choiceColumn**.</span><span class="sxs-lookup"><span data-stu-id="ebb2f-106">Here is a JSON representation of a **choiceColumn** resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c812f-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c812f-106">JSON representation</span></span>
+
+<span data-ttu-id="c812f-107">Aqui está uma representação JSON de um recurso **choiceColumn**.</span><span class="sxs-lookup"><span data-stu-id="c812f-107">Here is a JSON representation of a **choiceColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.choiceColumn" } -->
 
 ```json
@@ -31,13 +33,13 @@ ms.locfileid: "36029733"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="ebb2f-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ebb2f-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c812f-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c812f-108">Properties</span></span>
 
-| <span data-ttu-id="ebb2f-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="ebb2f-108">Property name</span></span>      | <span data-ttu-id="ebb2f-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="ebb2f-109">Type</span></span>               | <span data-ttu-id="ebb2f-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="ebb2f-110">Description</span></span>
+| <span data-ttu-id="c812f-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="c812f-109">Property name</span></span>      | <span data-ttu-id="c812f-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="c812f-110">Type</span></span>               | <span data-ttu-id="c812f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="c812f-111">Description</span></span>
 |:-------------------|:-------------------|:----------------------------------------------
-| <span data-ttu-id="ebb2f-111">**allowTextEntry**</span><span class="sxs-lookup"><span data-stu-id="ebb2f-111">**allowTextEntry**</span></span> | <span data-ttu-id="ebb2f-112">booliano</span><span class="sxs-lookup"><span data-stu-id="ebb2f-112">boolean</span></span>            | <span data-ttu-id="ebb2f-113">Se verdadeiro, permite valores personalizados que não estão em opções configuradas.</span><span class="sxs-lookup"><span data-stu-id="ebb2f-113">If true, allows custom values that aren't in the configured choices.</span></span>
-| <span data-ttu-id="ebb2f-114">**choices**</span><span class="sxs-lookup"><span data-stu-id="ebb2f-114">**choices**</span></span>        | <span data-ttu-id="ebb2f-115">collection(string)</span><span class="sxs-lookup"><span data-stu-id="ebb2f-115">collection(string)</span></span> | <span data-ttu-id="ebb2f-116">A lista de valores disponíveis para essa coluna.</span><span class="sxs-lookup"><span data-stu-id="ebb2f-116">The list of values available for this column.</span></span>
-| <span data-ttu-id="ebb2f-117">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="ebb2f-117">**displayAs**</span></span>      | <span data-ttu-id="ebb2f-118">string</span><span class="sxs-lookup"><span data-stu-id="ebb2f-118">string</span></span>             | <span data-ttu-id="ebb2f-119">Como as opções devem ser apresentadas na UX.</span><span class="sxs-lookup"><span data-stu-id="ebb2f-119">How the choices are to be presented in the UX.</span></span> <span data-ttu-id="ebb2f-120">Deve ser `checkBoxes`, `dropDownMenu` ou `radioButtons`</span><span class="sxs-lookup"><span data-stu-id="ebb2f-120">Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons`</span></span>
+| <span data-ttu-id="c812f-112">**allowTextEntry**</span><span class="sxs-lookup"><span data-stu-id="c812f-112">**allowTextEntry**</span></span> | <span data-ttu-id="c812f-113">booliano</span><span class="sxs-lookup"><span data-stu-id="c812f-113">boolean</span></span>            | <span data-ttu-id="c812f-114">Se verdadeiro, permite valores personalizados que não estão em opções configuradas.</span><span class="sxs-lookup"><span data-stu-id="c812f-114">If true, allows custom values that aren't in the configured choices.</span></span>
+| <span data-ttu-id="c812f-115">**choices**</span><span class="sxs-lookup"><span data-stu-id="c812f-115">**choices**</span></span>        | <span data-ttu-id="c812f-116">collection(string)</span><span class="sxs-lookup"><span data-stu-id="c812f-116">collection(string)</span></span> | <span data-ttu-id="c812f-117">A lista de valores disponíveis para essa coluna.</span><span class="sxs-lookup"><span data-stu-id="c812f-117">The list of values available for this column.</span></span>
+| <span data-ttu-id="c812f-118">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="c812f-118">**displayAs**</span></span>      | <span data-ttu-id="c812f-119">string</span><span class="sxs-lookup"><span data-stu-id="c812f-119">string</span></span>             | <span data-ttu-id="c812f-120">Como as opções devem ser apresentadas na UX.</span><span class="sxs-lookup"><span data-stu-id="c812f-120">How the choices are to be presented in the UX.</span></span> <span data-ttu-id="c812f-121">Deve ser `checkBoxes`, `dropDownMenu` ou `radioButtons`</span><span class="sxs-lookup"><span data-stu-id="c812f-121">Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons`</span></span>
 
 
 <!-- {
