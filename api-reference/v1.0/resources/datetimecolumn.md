@@ -7,20 +7,22 @@ localization_priority: Normal
 description: dateTimeColumn em um recurso columnDefinition indica que os valores da coluna são datas ou horas.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 35a80a369f348193858a54226ae5b239df67447f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c3f5fa00af8b04753f6581120760b5a57a9e08a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032771"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531717"
 ---
-# <a name="datetimecolumn-resource-type"></a><span data-ttu-id="31800-103">Tipo de recurso DateTimeColumn</span><span class="sxs-lookup"><span data-stu-id="31800-103">DateTimeColumn resource type</span></span>
+# <a name="datetimecolumn-resource-type"></a><span data-ttu-id="bdbba-103">Tipo de recurso DateTimeColumn</span><span class="sxs-lookup"><span data-stu-id="bdbba-103">DateTimeColumn resource type</span></span>
 
-<span data-ttu-id="31800-104">**dateTimeColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são datas ou horas.</span><span class="sxs-lookup"><span data-stu-id="31800-104">The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.</span></span>
+<span data-ttu-id="bdbba-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bdbba-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="31800-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="31800-105">JSON representation</span></span>
+<span data-ttu-id="bdbba-105">**dateTimeColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são datas ou horas.</span><span class="sxs-lookup"><span data-stu-id="bdbba-105">The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.</span></span>
 
-<span data-ttu-id="31800-106">Aqui está uma representação JSON de um recurso **dateTimeColumn**.</span><span class="sxs-lookup"><span data-stu-id="31800-106">Here is a JSON representation of a **dateTimeColumn** resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bdbba-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bdbba-106">JSON representation</span></span>
+
+<span data-ttu-id="bdbba-107">Aqui está uma representação JSON de um recurso **dateTimeColumn**.</span><span class="sxs-lookup"><span data-stu-id="bdbba-107">Here is a JSON representation of a **dateTimeColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.dateTimeColumn" } -->
 
 ```json
@@ -30,20 +32,20 @@ ms.locfileid: "36032771"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="31800-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="31800-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bdbba-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bdbba-108">Properties</span></span>
 
-| <span data-ttu-id="31800-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="31800-108">Property name</span></span>      | <span data-ttu-id="31800-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="31800-109">Type</span></span>               | <span data-ttu-id="31800-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="31800-110">Description</span></span>
+| <span data-ttu-id="bdbba-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="bdbba-109">Property name</span></span>      | <span data-ttu-id="bdbba-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="bdbba-110">Type</span></span>               | <span data-ttu-id="bdbba-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bdbba-111">Description</span></span>
 |:-------------------|:-------------------|:----------------------------------------------
-| <span data-ttu-id="31800-111">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="31800-111">**displayAs**</span></span>      | <span data-ttu-id="31800-112">string</span><span class="sxs-lookup"><span data-stu-id="31800-112">string</span></span>             | <span data-ttu-id="31800-113">Como o valor deve ser apresentado na experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="31800-113">How the value should be presented in the UX.</span></span> <span data-ttu-id="31800-114">Deve ser `default`, `friendly` ou `standard`.</span><span class="sxs-lookup"><span data-stu-id="31800-114">Must be one of `default`, `friendly`, or `standard`.</span></span> <span data-ttu-id="31800-115">Consulte abaixo para ver mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="31800-115">See below for more details.</span></span> <span data-ttu-id="31800-116">Se não for especificado, é tratado como `default`.</span><span class="sxs-lookup"><span data-stu-id="31800-116">If unspecified, treated as `default`.</span></span>
-| <span data-ttu-id="31800-117">**format**</span><span class="sxs-lookup"><span data-stu-id="31800-117">**format**</span></span>         | <span data-ttu-id="31800-118">string</span><span class="sxs-lookup"><span data-stu-id="31800-118">string</span></span>             | <span data-ttu-id="31800-119">Indica se o valor deve ser apresentado como apenas uma data ou uma data e hora.</span><span class="sxs-lookup"><span data-stu-id="31800-119">Indicates whether the value should be presented as a date only or a date and time.</span></span> <span data-ttu-id="31800-120">Deve ser `dateOnly` ou `dateTime`</span><span class="sxs-lookup"><span data-stu-id="31800-120">Must be one of `dateOnly` or `dateTime`</span></span>
+| <span data-ttu-id="bdbba-112">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="bdbba-112">**displayAs**</span></span>      | <span data-ttu-id="bdbba-113">string</span><span class="sxs-lookup"><span data-stu-id="bdbba-113">string</span></span>             | <span data-ttu-id="bdbba-114">Como o valor deve ser apresentado na experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="bdbba-114">How the value should be presented in the UX.</span></span> <span data-ttu-id="bdbba-115">Deve ser `default`, `friendly` ou `standard`.</span><span class="sxs-lookup"><span data-stu-id="bdbba-115">Must be one of `default`, `friendly`, or `standard`.</span></span> <span data-ttu-id="bdbba-116">Consulte abaixo para ver mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="bdbba-116">See below for more details.</span></span> <span data-ttu-id="bdbba-117">Se não for especificado, é tratado como `default`.</span><span class="sxs-lookup"><span data-stu-id="bdbba-117">If unspecified, treated as `default`.</span></span>
+| <span data-ttu-id="bdbba-118">**format**</span><span class="sxs-lookup"><span data-stu-id="bdbba-118">**format**</span></span>         | <span data-ttu-id="bdbba-119">string</span><span class="sxs-lookup"><span data-stu-id="bdbba-119">string</span></span>             | <span data-ttu-id="bdbba-120">Indica se o valor deve ser apresentado como apenas uma data ou uma data e hora.</span><span class="sxs-lookup"><span data-stu-id="bdbba-120">Indicates whether the value should be presented as a date only or a date and time.</span></span> <span data-ttu-id="bdbba-121">Deve ser `dateOnly` ou `dateTime`</span><span class="sxs-lookup"><span data-stu-id="bdbba-121">Must be one of `dateOnly` or `dateTime`</span></span>
 
-## <a name="displayas-options"></a><span data-ttu-id="31800-121">Opções de displayas</span><span class="sxs-lookup"><span data-stu-id="31800-121">DisplayAs options</span></span>
+## <a name="displayas-options"></a><span data-ttu-id="bdbba-122">Opções de displayas</span><span class="sxs-lookup"><span data-stu-id="bdbba-122">DisplayAs options</span></span>
 
-| <span data-ttu-id="31800-122">Valor</span><span class="sxs-lookup"><span data-stu-id="31800-122">Value</span></span>        | <span data-ttu-id="31800-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="31800-123">Description</span></span>
+| <span data-ttu-id="bdbba-123">Valor</span><span class="sxs-lookup"><span data-stu-id="bdbba-123">Value</span></span>        | <span data-ttu-id="bdbba-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="bdbba-124">Description</span></span>
 |:-------------|:--------------------------------------------------------------
-| <span data-ttu-id="31800-124">**default**</span><span class="sxs-lookup"><span data-stu-id="31800-124">**default**</span></span>  | <span data-ttu-id="31800-125">Usa o processamento de renderização padrão na UX.</span><span class="sxs-lookup"><span data-stu-id="31800-125">Uses the default rendering in the UX.</span></span>
-| <span data-ttu-id="31800-126">**amigável**</span><span class="sxs-lookup"><span data-stu-id="31800-126">**friendly**</span></span> | <span data-ttu-id="31800-127">Usa uma representação amigável relativa (ex.</span><span class="sxs-lookup"><span data-stu-id="31800-127">Uses a friendly relative representation (eg.</span></span> <span data-ttu-id="31800-128">"hoje às 15:00")</span><span class="sxs-lookup"><span data-stu-id="31800-128">"today at 3:00 PM")</span></span>
-| <span data-ttu-id="31800-129">**standard**</span><span class="sxs-lookup"><span data-stu-id="31800-129">**standard**</span></span> | <span data-ttu-id="31800-130">Usa a representação padrão absoluta (ex.</span><span class="sxs-lookup"><span data-stu-id="31800-130">Uses the standard absolute representation (eg.</span></span> <span data-ttu-id="31800-131">"10/05/2017 15:20")</span><span class="sxs-lookup"><span data-stu-id="31800-131">"5/10/2017 3:20 PM")</span></span>
+| <span data-ttu-id="bdbba-125">**default**</span><span class="sxs-lookup"><span data-stu-id="bdbba-125">**default**</span></span>  | <span data-ttu-id="bdbba-126">Usa o processamento de renderização padrão na UX.</span><span class="sxs-lookup"><span data-stu-id="bdbba-126">Uses the default rendering in the UX.</span></span>
+| <span data-ttu-id="bdbba-127">**amigável**</span><span class="sxs-lookup"><span data-stu-id="bdbba-127">**friendly**</span></span> | <span data-ttu-id="bdbba-128">Usa uma representação amigável relativa (ex.</span><span class="sxs-lookup"><span data-stu-id="bdbba-128">Uses a friendly relative representation (eg.</span></span> <span data-ttu-id="bdbba-129">"hoje às 15:00")</span><span class="sxs-lookup"><span data-stu-id="bdbba-129">"today at 3:00 PM")</span></span>
+| <span data-ttu-id="bdbba-130">**standard**</span><span class="sxs-lookup"><span data-stu-id="bdbba-130">**standard**</span></span> | <span data-ttu-id="bdbba-131">Usa a representação padrão absoluta (ex.</span><span class="sxs-lookup"><span data-stu-id="bdbba-131">Uses the standard absolute representation (eg.</span></span> <span data-ttu-id="bdbba-132">"10/05/2017 15:20")</span><span class="sxs-lookup"><span data-stu-id="bdbba-132">"5/10/2017 3:20 PM")</span></span>
 
 
 <!-- {

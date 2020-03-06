@@ -5,30 +5,32 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4607e403e33d2921706725cdf879fb9af6a675fb
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2eae0a5fc9da19443b59bbfe598e93264cf408df
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367739"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532348"
 ---
-# <a name="settingsource-resource-type"></a><span data-ttu-id="782f3-103">Tipo de recurso settingSource</span><span class="sxs-lookup"><span data-stu-id="782f3-103">settingSource resource type</span></span>
+# <a name="settingsource-resource-type"></a><span data-ttu-id="c4a23-103">Tipo de recurso settingSource</span><span class="sxs-lookup"><span data-stu-id="c4a23-103">settingSource resource type</span></span>
 
-> <span data-ttu-id="782f3-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="782f3-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="c4a23-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c4a23-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="782f3-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="782f3-105">Not yet documented</span></span>
+> <span data-ttu-id="c4a23-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c4a23-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="782f3-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="782f3-106">Properties</span></span>
-|<span data-ttu-id="782f3-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="782f3-107">Property</span></span>|<span data-ttu-id="782f3-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="782f3-108">Type</span></span>|<span data-ttu-id="782f3-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="782f3-109">Description</span></span>|
+<span data-ttu-id="c4a23-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c4a23-106">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="c4a23-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c4a23-107">Properties</span></span>
+|<span data-ttu-id="c4a23-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c4a23-108">Property</span></span>|<span data-ttu-id="c4a23-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="c4a23-109">Type</span></span>|<span data-ttu-id="c4a23-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="c4a23-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="782f3-110">id</span><span class="sxs-lookup"><span data-stu-id="782f3-110">id</span></span>|<span data-ttu-id="782f3-111">String</span><span class="sxs-lookup"><span data-stu-id="782f3-111">String</span></span>|<span data-ttu-id="782f3-112">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="782f3-112">Not yet documented</span></span>|
-|<span data-ttu-id="782f3-113">displayName</span><span class="sxs-lookup"><span data-stu-id="782f3-113">displayName</span></span>|<span data-ttu-id="782f3-114">String</span><span class="sxs-lookup"><span data-stu-id="782f3-114">String</span></span>|<span data-ttu-id="782f3-115">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="782f3-115">Not yet documented</span></span>|
+|<span data-ttu-id="c4a23-111">id</span><span class="sxs-lookup"><span data-stu-id="c4a23-111">id</span></span>|<span data-ttu-id="c4a23-112">String</span><span class="sxs-lookup"><span data-stu-id="c4a23-112">String</span></span>|<span data-ttu-id="c4a23-113">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c4a23-113">Not yet documented</span></span>|
+|<span data-ttu-id="c4a23-114">displayName</span><span class="sxs-lookup"><span data-stu-id="c4a23-114">displayName</span></span>|<span data-ttu-id="c4a23-115">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c4a23-115">String</span></span>|<span data-ttu-id="c4a23-116">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c4a23-116">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="782f3-116">Relações</span><span class="sxs-lookup"><span data-stu-id="782f3-116">Relationships</span></span>
-<span data-ttu-id="782f3-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="782f3-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c4a23-117">Relações</span><span class="sxs-lookup"><span data-stu-id="c4a23-117">Relationships</span></span>
+<span data-ttu-id="c4a23-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c4a23-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="782f3-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="782f3-118">JSON Representation</span></span>
-<span data-ttu-id="782f3-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="782f3-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c4a23-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c4a23-119">JSON Representation</span></span>
+<span data-ttu-id="c4a23-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c4a23-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.settingSource"

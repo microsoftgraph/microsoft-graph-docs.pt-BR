@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bce7f3bfb34d02cd2c2d087544f8e38abf260774
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 788f037830565453b1ce836a2b8e7294c6332e3f
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731837"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636351"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const onenoteSection = {
 };
 
 let res = await client.api('/me/onenote/sectionGroups/{id}/sections')
-    .post({onenoteSection : onenoteSection});
+    .post(onenoteSection);
 
 ```

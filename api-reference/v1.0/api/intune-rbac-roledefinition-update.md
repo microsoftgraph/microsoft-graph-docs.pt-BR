@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cd1932d207fba178c1964a0d5e4cdf1afcdfd8e8
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e6207f1312a05df47730df95208d132728eac6de
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361690"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512171"
 ---
-# <a name="update-roledefinition"></a><span data-ttu-id="aefc7-103">Atualizar roleDefinition</span><span class="sxs-lookup"><span data-stu-id="aefc7-103">Update roleDefinition</span></span>
+# <a name="update-roledefinition"></a><span data-ttu-id="95003-103">Atualizar roleDefinition</span><span class="sxs-lookup"><span data-stu-id="95003-103">Update roleDefinition</span></span>
 
-> <span data-ttu-id="aefc7-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aefc7-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="95003-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="95003-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="aefc7-105">Atualizar as propriedades de um objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="aefc7-105">Update the properties of a [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
+> <span data-ttu-id="95003-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="95003-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="aefc7-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="aefc7-106">Prerequisites</span></span>
-<span data-ttu-id="aefc7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aefc7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="95003-106">Atualizar as propriedades de um objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="95003-106">Update the properties of a [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
 
-|<span data-ttu-id="aefc7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aefc7-109">Permission type</span></span>|<span data-ttu-id="aefc7-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="aefc7-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="95003-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="95003-107">Prerequisites</span></span>
+<span data-ttu-id="95003-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95003-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="95003-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="95003-110">Permission type</span></span>|<span data-ttu-id="95003-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="95003-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="aefc7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aefc7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="aefc7-112">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aefc7-112">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="aefc7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aefc7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="aefc7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aefc7-114">Not supported.</span></span>|
-|<span data-ttu-id="aefc7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="aefc7-115">Application</span></span>|<span data-ttu-id="aefc7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aefc7-116">Not supported.</span></span>|
+|<span data-ttu-id="95003-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="95003-112">Delegated (work or school account)</span></span>|<span data-ttu-id="95003-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95003-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="95003-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="95003-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="95003-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="95003-115">Not supported.</span></span>|
+|<span data-ttu-id="95003-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="95003-116">Application</span></span>|<span data-ttu-id="95003-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="95003-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="aefc7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aefc7-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="95003-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="95003-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +39,34 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}
 PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="aefc7-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="aefc7-118">Request headers</span></span>
-|<span data-ttu-id="aefc7-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="aefc7-119">Header</span></span>|<span data-ttu-id="aefc7-120">Valor</span><span class="sxs-lookup"><span data-stu-id="aefc7-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="95003-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="95003-119">Request headers</span></span>
+|<span data-ttu-id="95003-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="95003-120">Header</span></span>|<span data-ttu-id="95003-121">Valor</span><span class="sxs-lookup"><span data-stu-id="95003-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="aefc7-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="aefc7-121">Authorization</span></span>|<span data-ttu-id="aefc7-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aefc7-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="aefc7-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="aefc7-123">Accept</span></span>|<span data-ttu-id="aefc7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="aefc7-124">application/json</span></span>|
+|<span data-ttu-id="95003-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="95003-122">Authorization</span></span>|<span data-ttu-id="95003-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="95003-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="95003-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="95003-124">Accept</span></span>|<span data-ttu-id="95003-125">application/json</span><span class="sxs-lookup"><span data-stu-id="95003-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="aefc7-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="aefc7-125">Request body</span></span>
-<span data-ttu-id="aefc7-126">No corpo da solicitação, forneça uma representação JSON do objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="aefc7-126">In the request body, supply a JSON representation for the [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="95003-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="95003-126">Request body</span></span>
+<span data-ttu-id="95003-127">No corpo da solicitação, forneça uma representação JSON do objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="95003-127">In the request body, supply a JSON representation for the [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
 
-<span data-ttu-id="aefc7-127">A tabela a seguir mostra as propriedades que são necessárias ao criar [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="aefc7-127">The following table shows the properties that are required when you create the [roleDefinition](../resources/intune-rbac-roledefinition.md).</span></span>
+<span data-ttu-id="95003-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="95003-128">The following table shows the properties that are required when you create the [roleDefinition](../resources/intune-rbac-roledefinition.md).</span></span>
 
-|<span data-ttu-id="aefc7-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aefc7-128">Property</span></span>|<span data-ttu-id="aefc7-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="aefc7-129">Type</span></span>|<span data-ttu-id="aefc7-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="aefc7-130">Description</span></span>|
+|<span data-ttu-id="95003-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="95003-129">Property</span></span>|<span data-ttu-id="95003-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="95003-130">Type</span></span>|<span data-ttu-id="95003-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="95003-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="aefc7-131">id</span><span class="sxs-lookup"><span data-stu-id="aefc7-131">id</span></span>|<span data-ttu-id="aefc7-132">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="aefc7-132">String</span></span>|<span data-ttu-id="aefc7-133">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="aefc7-133">Key of the entity.</span></span> <span data-ttu-id="aefc7-134">É somente leitura e gerada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="aefc7-134">This is read-only and automatically generated.</span></span>|
-|<span data-ttu-id="aefc7-135">displayName</span><span class="sxs-lookup"><span data-stu-id="aefc7-135">displayName</span></span>|<span data-ttu-id="aefc7-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="aefc7-136">String</span></span>|<span data-ttu-id="aefc7-137">Nome de exibição da definição de Função.</span><span class="sxs-lookup"><span data-stu-id="aefc7-137">Display Name of the Role definition.</span></span>|
-|<span data-ttu-id="aefc7-138">descrição</span><span class="sxs-lookup"><span data-stu-id="aefc7-138">description</span></span>|<span data-ttu-id="aefc7-139">String</span><span class="sxs-lookup"><span data-stu-id="aefc7-139">String</span></span>|<span data-ttu-id="aefc7-140">Descrição da definição de Função.</span><span class="sxs-lookup"><span data-stu-id="aefc7-140">Description of the Role definition.</span></span>|
-|<span data-ttu-id="aefc7-141">rolePermissions</span><span class="sxs-lookup"><span data-stu-id="aefc7-141">rolePermissions</span></span>|<span data-ttu-id="aefc7-142">Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="aefc7-142">[rolePermission](../resources/intune-rbac-rolepermission.md) collection</span></span>|<span data-ttu-id="aefc7-143">Lista de Permissões de Função que esta função está autorizada a executar.</span><span class="sxs-lookup"><span data-stu-id="aefc7-143">List of Role Permissions this role is allowed to perform.</span></span> <span data-ttu-id="aefc7-144">Elas devem corresponder ao actionName definido como parte de rolePermission.</span><span class="sxs-lookup"><span data-stu-id="aefc7-144">These must match the actionName that is defined as part of the rolePermission.</span></span>|
-|<span data-ttu-id="aefc7-145">isBuiltIn</span><span class="sxs-lookup"><span data-stu-id="aefc7-145">isBuiltIn</span></span>|<span data-ttu-id="aefc7-146">Booliano</span><span class="sxs-lookup"><span data-stu-id="aefc7-146">Boolean</span></span>|<span data-ttu-id="aefc7-147">Tipo de Função.</span><span class="sxs-lookup"><span data-stu-id="aefc7-147">Type of Role.</span></span> <span data-ttu-id="aefc7-148">Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.</span><span class="sxs-lookup"><span data-stu-id="aefc7-148">Set to True if it is built-in, or set to False if it is a custom role definition.</span></span>|
+|<span data-ttu-id="95003-132">id</span><span class="sxs-lookup"><span data-stu-id="95003-132">id</span></span>|<span data-ttu-id="95003-133">String</span><span class="sxs-lookup"><span data-stu-id="95003-133">String</span></span>|<span data-ttu-id="95003-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="95003-134">Key of the entity.</span></span> <span data-ttu-id="95003-135">É somente leitura e gerada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="95003-135">This is read-only and automatically generated.</span></span>|
+|<span data-ttu-id="95003-136">displayName</span><span class="sxs-lookup"><span data-stu-id="95003-136">displayName</span></span>|<span data-ttu-id="95003-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="95003-137">String</span></span>|<span data-ttu-id="95003-138">Nome de exibição da definição de Função.</span><span class="sxs-lookup"><span data-stu-id="95003-138">Display Name of the Role definition.</span></span>|
+|<span data-ttu-id="95003-139">description</span><span class="sxs-lookup"><span data-stu-id="95003-139">description</span></span>|<span data-ttu-id="95003-140">String</span><span class="sxs-lookup"><span data-stu-id="95003-140">String</span></span>|<span data-ttu-id="95003-141">Descrição da definição de Função.</span><span class="sxs-lookup"><span data-stu-id="95003-141">Description of the Role definition.</span></span>|
+|<span data-ttu-id="95003-142">rolePermissions</span><span class="sxs-lookup"><span data-stu-id="95003-142">rolePermissions</span></span>|<span data-ttu-id="95003-143">Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)</span><span class="sxs-lookup"><span data-stu-id="95003-143">[rolePermission](../resources/intune-rbac-rolepermission.md) collection</span></span>|<span data-ttu-id="95003-144">Lista de Permissões de Função que esta função está autorizada a executar.</span><span class="sxs-lookup"><span data-stu-id="95003-144">List of Role Permissions this role is allowed to perform.</span></span> <span data-ttu-id="95003-145">Elas devem corresponder ao actionName definido como parte de rolePermission.</span><span class="sxs-lookup"><span data-stu-id="95003-145">These must match the actionName that is defined as part of the rolePermission.</span></span>|
+|<span data-ttu-id="95003-146">isBuiltIn</span><span class="sxs-lookup"><span data-stu-id="95003-146">isBuiltIn</span></span>|<span data-ttu-id="95003-147">Booliano</span><span class="sxs-lookup"><span data-stu-id="95003-147">Boolean</span></span>|<span data-ttu-id="95003-148">Tipo de Função.</span><span class="sxs-lookup"><span data-stu-id="95003-148">Type of Role.</span></span> <span data-ttu-id="95003-149">Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.</span><span class="sxs-lookup"><span data-stu-id="95003-149">Set to True if it is built-in, or set to False if it is a custom role definition.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="aefc7-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="aefc7-149">Response</span></span>
-<span data-ttu-id="aefc7-150">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [roleDefinition](../resources/intune-rbac-roledefinition.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="aefc7-150">If successful, this method returns a `200 OK` response code and an updated [roleDefinition](../resources/intune-rbac-roledefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="95003-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="95003-150">Response</span></span>
+<span data-ttu-id="95003-151">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [roleDefinition](../resources/intune-rbac-roledefinition.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="95003-151">If successful, this method returns a `200 OK` response code and an updated [roleDefinition](../resources/intune-rbac-roledefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aefc7-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aefc7-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="95003-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="95003-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="aefc7-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="aefc7-152">Request</span></span>
-<span data-ttu-id="aefc7-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="aefc7-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="95003-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="95003-153">Request</span></span>
+<span data-ttu-id="95003-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="95003-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
@@ -94,8 +96,8 @@ Content-length: 580
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="aefc7-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="aefc7-154">Response</span></span>
-<span data-ttu-id="aefc7-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="aefc7-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="95003-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="95003-155">Response</span></span>
+<span data-ttu-id="95003-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="95003-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

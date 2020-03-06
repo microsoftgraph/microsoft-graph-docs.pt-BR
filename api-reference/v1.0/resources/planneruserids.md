@@ -5,25 +5,27 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 80f34e9c3b4d81fb32ae6c29a180f3f4ddf56d45
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02b8ae1ed88c5e1ae20a629875047d67124cf0c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035123"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533964"
 ---
-# <a name="planneruserids-resource-type"></a><span data-ttu-id="b139c-106">tipo de recurso plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="b139c-106">plannerUserIds resource type</span></span>
+# <a name="planneruserids-resource-type"></a><span data-ttu-id="478fb-106">tipo de recurso plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="478fb-106">plannerUserIds resource type</span></span>
 
-<span data-ttu-id="b139c-107">O recurso **plannerUserIds** representa a lista de IDs de usuários com as quais um [plano](plannerplan.md) é compartilhado.</span><span class="sxs-lookup"><span data-stu-id="b139c-107">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with.</span></span> <span data-ttu-id="b139c-108">Este é um tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="b139c-108">This is an Open Type.</span></span> <span data-ttu-id="b139c-109">Se estiver aproveitando os grupos do Office 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](group.md) .</span><span class="sxs-lookup"><span data-stu-id="b139c-109">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan.</span></span> <span data-ttu-id="b139c-110">Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo.</span><span class="sxs-lookup"><span data-stu-id="b139c-110">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
+<span data-ttu-id="478fb-107">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="478fb-107">Namespace: microsoft.graph</span></span>
 
-
-## <a name="properties"></a><span data-ttu-id="b139c-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b139c-111">Properties</span></span>
-<span data-ttu-id="b139c-112">As propriedades de um tipo aberto podem ser definidas pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="b139c-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="b139c-113">Nesse caso, o cliente deve fornecer IDs de usuário como propriedades com seus valores como `true` Boolean.</span><span class="sxs-lookup"><span data-stu-id="b139c-113">In this case, the client should provide user ids as properties with their values being the `true` boolean.</span></span> <span data-ttu-id="b139c-114">Quando as IDs de usuário não são mais compartilhadas, as propriedades são removidas automaticamente `false` definindo seus valores para o Boolean.</span><span class="sxs-lookup"><span data-stu-id="b139c-114">When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
+<span data-ttu-id="478fb-108">O recurso **plannerUserIds** representa a lista de IDs de usuários com as quais um [plano](plannerplan.md) é compartilhado.</span><span class="sxs-lookup"><span data-stu-id="478fb-108">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with.</span></span> <span data-ttu-id="478fb-109">Este é um tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="478fb-109">This is an Open Type.</span></span> <span data-ttu-id="478fb-110">Se estiver aproveitando os grupos do Office 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](group.md) .</span><span class="sxs-lookup"><span data-stu-id="478fb-110">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan.</span></span> <span data-ttu-id="478fb-111">Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo.</span><span class="sxs-lookup"><span data-stu-id="478fb-111">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="b139c-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b139c-115">JSON representation</span></span>
+## <a name="properties"></a><span data-ttu-id="478fb-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="478fb-112">Properties</span></span>
+<span data-ttu-id="478fb-113">As propriedades de um tipo aberto podem ser definidas pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="478fb-113">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="478fb-114">Nesse caso, o cliente deve fornecer IDs de usuário como propriedades com seus valores como `true` Boolean.</span><span class="sxs-lookup"><span data-stu-id="478fb-114">In this case, the client should provide user ids as properties with their values being the `true` boolean.</span></span> <span data-ttu-id="478fb-115">Quando as IDs de usuário não são mais compartilhadas, as propriedades são removidas automaticamente `false` definindo seus valores para o Boolean.</span><span class="sxs-lookup"><span data-stu-id="478fb-115">When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 
-<span data-ttu-id="b139c-116">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="b139c-116">Here is a JSON representation of the resource</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="478fb-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="478fb-116">JSON representation</span></span>
+
+<span data-ttu-id="478fb-117">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="478fb-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,7 +40,7 @@ ms.locfileid: "36035123"
 }
 ```
 
-<span data-ttu-id="b139c-117">Como</span><span class="sxs-lookup"><span data-stu-id="b139c-117">// Example</span></span>
+<span data-ttu-id="478fb-118">Como</span><span class="sxs-lookup"><span data-stu-id="478fb-118">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id

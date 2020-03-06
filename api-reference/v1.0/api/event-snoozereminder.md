@@ -5,27 +5,29 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f3c1b5c42183dcf43a88510d1e4f0e0447557b4f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: adb0b50231ceb64eb9c11d871adbbbe9a7bdee4a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365080"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517331"
 ---
-# <a name="event-snoozereminder"></a><span data-ttu-id="a8256-103">event: snoozeReminder</span><span class="sxs-lookup"><span data-stu-id="a8256-103">event: snoozeReminder</span></span>
+# <a name="event-snoozereminder"></a><span data-ttu-id="2d335-103">event: snoozeReminder</span><span class="sxs-lookup"><span data-stu-id="2d335-103">event: snoozeReminder</span></span>
 
-<span data-ttu-id="a8256-104">Adiar um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) de usuário até um novo horário.</span><span class="sxs-lookup"><span data-stu-id="a8256-104">Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.</span></span>
+<span data-ttu-id="2d335-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d335-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a8256-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a8256-105">Permissions</span></span>
-<span data-ttu-id="a8256-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a8256-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2d335-105">Adiar um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) de usuário até um novo horário.</span><span class="sxs-lookup"><span data-stu-id="2d335-105">Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.</span></span>
 
-|<span data-ttu-id="a8256-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a8256-108">Permission type</span></span>      | <span data-ttu-id="a8256-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a8256-109">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="2d335-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2d335-106">Permissions</span></span>
+<span data-ttu-id="2d335-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d335-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="2d335-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d335-109">Permission type</span></span>      | <span data-ttu-id="2d335-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2d335-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a8256-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a8256-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a8256-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8256-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="a8256-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a8256-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8256-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8256-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="a8256-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a8256-114">Application</span></span> | <span data-ttu-id="a8256-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8256-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="2d335-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d335-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2d335-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2d335-112">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2d335-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d335-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d335-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2d335-114">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="2d335-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d335-115">Application</span></span> | <span data-ttu-id="2d335-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2d335-116">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a8256-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a8256-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d335-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d335-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/snoozeReminder
@@ -43,29 +45,29 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/sn
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 ```
-## <a name="request-headers"></a><span data-ttu-id="a8256-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a8256-117">Request headers</span></span>
-| <span data-ttu-id="a8256-118">Nome</span><span class="sxs-lookup"><span data-stu-id="a8256-118">Name</span></span>       | <span data-ttu-id="a8256-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="a8256-119">Type</span></span> | <span data-ttu-id="a8256-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="a8256-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2d335-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d335-118">Request headers</span></span>
+| <span data-ttu-id="2d335-119">Nome</span><span class="sxs-lookup"><span data-stu-id="2d335-119">Name</span></span>       | <span data-ttu-id="2d335-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="2d335-120">Type</span></span> | <span data-ttu-id="2d335-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d335-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a8256-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a8256-121">Authorization</span></span>  | <span data-ttu-id="a8256-122">string</span><span class="sxs-lookup"><span data-stu-id="a8256-122">string</span></span>  | <span data-ttu-id="a8256-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a8256-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a8256-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a8256-125">Content-Type</span></span> | <span data-ttu-id="a8256-126">string</span><span class="sxs-lookup"><span data-stu-id="a8256-126">string</span></span>  | <span data-ttu-id="a8256-p103">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a8256-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="2d335-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d335-122">Authorization</span></span>  | <span data-ttu-id="2d335-123">string</span><span class="sxs-lookup"><span data-stu-id="2d335-123">string</span></span>  | <span data-ttu-id="2d335-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d335-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2d335-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2d335-126">Content-Type</span></span> | <span data-ttu-id="2d335-127">string</span><span class="sxs-lookup"><span data-stu-id="2d335-127">string</span></span>  | <span data-ttu-id="2d335-p103">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d335-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a8256-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a8256-129">Request body</span></span>
-<span data-ttu-id="a8256-130">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a8256-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d335-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2d335-130">Request body</span></span>
+<span data-ttu-id="2d335-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d335-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a8256-131">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a8256-131">Parameter</span></span>    | <span data-ttu-id="a8256-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="a8256-132">Type</span></span>   |<span data-ttu-id="a8256-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="a8256-133">Description</span></span>|
+| <span data-ttu-id="2d335-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="2d335-132">Parameter</span></span>    | <span data-ttu-id="2d335-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="2d335-133">Type</span></span>   |<span data-ttu-id="2d335-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d335-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a8256-134">newReminderTime</span><span class="sxs-lookup"><span data-stu-id="a8256-134">newReminderTime</span></span>|<span data-ttu-id="a8256-135">DateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="a8256-135">DateTimeTimeZone</span></span>|<span data-ttu-id="a8256-136">A nova data e hora para disparar o lembrete.</span><span class="sxs-lookup"><span data-stu-id="a8256-136">The new date and time to trigger the reminder.</span></span>|
+|<span data-ttu-id="2d335-135">newReminderTime</span><span class="sxs-lookup"><span data-stu-id="2d335-135">newReminderTime</span></span>|<span data-ttu-id="2d335-136">DateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="2d335-136">DateTimeTimeZone</span></span>|<span data-ttu-id="2d335-137">A nova data e hora para disparar o lembrete.</span><span class="sxs-lookup"><span data-stu-id="2d335-137">The new date and time to trigger the reminder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a8256-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8256-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2d335-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d335-138">Response</span></span>
 
-<span data-ttu-id="a8256-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a8256-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="2d335-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d335-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a8256-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a8256-140">Example</span></span>
-<span data-ttu-id="a8256-141">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="a8256-141">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a8256-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a8256-142">Request</span></span>
-<span data-ttu-id="a8256-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a8256-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2d335-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2d335-141">Example</span></span>
+<span data-ttu-id="2d335-142">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="2d335-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="2d335-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d335-143">Request</span></span>
+<span data-ttu-id="2d335-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d335-144">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="a8256-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="a8256-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2d335-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d335-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -82,27 +84,27 @@ Content-length: 97
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a8256-145">C#</span><span class="sxs-lookup"><span data-stu-id="a8256-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2d335-146">C#</span><span class="sxs-lookup"><span data-stu-id="2d335-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-snoozereminder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a8256-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a8256-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2d335-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d335-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-snoozereminder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a8256-147">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="a8256-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2d335-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d335-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-snoozereminder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="a8256-148">Java</span><span class="sxs-lookup"><span data-stu-id="a8256-148">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2d335-149">Java</span><span class="sxs-lookup"><span data-stu-id="2d335-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-snoozereminder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="a8256-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8256-149">Response</span></span>
-<span data-ttu-id="a8256-150">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a8256-150">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="2d335-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d335-150">Response</span></span>
+<span data-ttu-id="2d335-151">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d335-151">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
