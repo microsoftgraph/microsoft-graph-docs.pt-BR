@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dac511c8ea132e3cba92bcead828d4003ae6d65f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 4144b7aa4fb37d1c3016694eff2282e300fe2431
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730369"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533369"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>tipo de recurso workbookTableColumn
+
+Namespace: microsoft.graph
 
 Representa uma coluna em uma tabela.
 
@@ -27,7 +29,7 @@ Representa uma coluna em uma tabela.
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Obtém o objeto de intervalo associado a toda a coluna.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de totais da coluna.|
-|[Delete](../api/tablecolumn-delete.md)|Nenhum|Exclui a coluna da tabela.|
+|[Excluir](../api/tablecolumn-delete.md)|Nenhum|Exclui a coluna da tabela.|
 |[List](../api/tablecolumn-list.md) | Conjunto [WorkbookTableColumn](workbooktablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Obtém uma coluna com base em sua posição na coleção.|
 |[Add](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](workbooktablecolumn.md)|Adiciona uma nova coluna à tabela.|
@@ -37,7 +39,7 @@ Representa uma coluna em uma tabela.
 |:---------------|:--------|:----------|
 |id|cadeia de caracteres|Retorna uma chave exclusiva que identifica a coluna na tabela. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.|
 |index|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
-|name|string|Retorna o nome da coluna da tabela.|
+|nome|string|Retorna o nome da coluna da tabela.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações

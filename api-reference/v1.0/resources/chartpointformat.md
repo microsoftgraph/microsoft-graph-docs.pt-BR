@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b17eb84c3de5505a3dfea23ce3fef564dca9aa2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c71b7158b7ba3cef208fb6bf983d077c9474e77c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029761"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533105"
 ---
 # <a name="chartpointformat-resource-type"></a>Tipo de recurso ChartPointFormat
+
+Namespace: microsoft.graph
 
 Representa um objeto de formatação para os pontos do gráfico.
 
@@ -23,7 +25,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|Representa o formato de preenchimento de um gráfico, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|

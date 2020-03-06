@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5c1d9ccd71e49e673235bfca151f5b5db92efd1f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 87189999f94cacbbcc4b8e3d0e8cdfe97e7993a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730292"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533586"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
+
+Namespace: microsoft.graph
 
 Representa uma tabela do Excel.
 

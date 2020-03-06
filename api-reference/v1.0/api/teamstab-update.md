@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f2b391055dcb17af41f4bf5522b248a00caa9aa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 634450b1b33adc152c1012c7795e04105435678c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027164"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509248"
 ---
 # <a name="update-tab"></a>Atualizar guia
+
+Namespace: microsoft.graph
 
 
 Atualiza as propriedades da [guia](../resources/teamstab.md)especificada. Isso pode ser usado para configurar o conteúdo da guia.

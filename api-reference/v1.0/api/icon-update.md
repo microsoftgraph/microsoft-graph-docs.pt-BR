@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: db660e457473e228d69e105ce85a03537f79df9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8cd6839991e16c5b8517d8ce3630fe81862cd1b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014407"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516784"
 ---
 # <a name="update-icon"></a>Atualizar ícone
+
+Namespace: microsoft.graph
 
 Atualize as propriedades do objeto de ícone.
 ## <a name="permissions"></a>Permissões
@@ -42,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|int|Representa o índice do ícone em determinado conjunto.|
-|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1`,,, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack`,,,, `FourRating`, `FourTrafficLights` `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters` `ThreeStars` ,,,,, , `ThreeTriangles`, `FiveBoxes`.|
+|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags` `ThreeTrafficLights1`,, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack`,,,, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray` `FiveRating`,, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`,,,,,,,,.|
 
 ## <a name="response"></a>Resposta
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d8b569436152e2a57e152f0fe2f2c632f0d2d93a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10fe3898c215955e968171cc16f97617afc9aefa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532115"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>tipo de recurso appliedConditionalAccessPolicy
+
+Namespace: microsoft.graph
 
 Indica os atributos relacionados à política ou políticas de acesso condicional aplicadas que são disparadas pela atividade de entrada correspondente.
 
@@ -20,9 +22,9 @@ Indica os atributos relacionados à política ou políticas de acesso condiciona
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Refere-se ao nome da política de acesso condicional (exemplo: "exigir MFA de Salesforce").|
-|enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles Grant impostos pela política de acesso condicional (exemplo: "requer autenticação multifator").|
-|enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão aplicados pela política de acesso condicional (exemplo: "exigir controles de aplicação imposta)").|
+|displayName|Cadeia de caracteres|Refere-se ao nome da política de acesso condicional (exemplo: "exigir MFA de Salesforce").|
+|enforcedGrantControls|String collection|Refere-se aos controles Grant impostos pela política de acesso condicional (exemplo: "requer autenticação multifator").|
+|enforcedSessionControls|String collection|Refere-se aos controles de sessão aplicados pela política de acesso condicional (exemplo: "exigir controles de aplicação imposta)").|
 |id|String|GUID exclusivo da vigilância de acesso condicional. y|
 |resultado|String| Indica o resultado da política de autoridade de certificação que foi disparada. Os valores possíveis são:<br/>`success`<br/>`failure`<br/>`notApplied`-A política não é aplicada porque as condições da política não foram atendidas.<br/>`notEnabled`– Isso ocorre devido à política em estado desabilitado.|
 

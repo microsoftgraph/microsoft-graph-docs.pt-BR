@@ -5,14 +5,16 @@ localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 87340d09655ef682cfbc98bb8795ceaa4bdd33a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 110502c61a25ae046aa17fde72a5ffc64368b1eb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032596"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531486"
 ---
 # <a name="email-activity-reports"></a>Relatórios de atividades do email
+
+Namespace: microsoft.graph
 
 Use os relatórios de atividades de email para obter uma visão de alto nível do tráfego de email em sua organização. Você também pode detalhar o widget Atividade de email para entender as tendências e os detalhes da atividade de email por usuário em sua organização.
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a21960781c5381b94586e4a5b54cf4c5db349308
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1d8075943266b76780945962387e21016faa6cc8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357098"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530327"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enumeração windowsUserAccountControlSettings
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para as configurações de controle de conta de usuário do Windows.
 
@@ -22,10 +24,10 @@ Valores possíveis para as configurações de controle de conta de usuário do W
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysNotify|1|Sempre notificar.|
-|notifyOnAppChanges|duas|Notificar alterações no aplicativo.|
-|notifyOnAppChangesWithoutDimming|3D|Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
-|neverNotify|quatro|Nunca notificar.|
+|alwaysNotify|1 |Sempre notificar.|
+|notifyOnAppChanges|2 |Notificar alterações no aplicativo.|
+|notifyOnAppChangesWithoutDimming|3 |Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
+|neverNotify|4 |Nunca notificar.|
 
 
 

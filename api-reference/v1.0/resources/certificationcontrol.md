@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ad7c07d269f9dc627de41db621e4d73f0d2c10b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb792c5ce3b462fa5d2febcd1fb5ed0509d3ef30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029901"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531934"
 ---
 #  <a name="certificationcontrol-resource-type"></a>tipo de recurso certificationControl
+
+Namespace: microsoft.graph
 
 Contém dados de certificação de conformidade associados ao controle de Pontuação segura.
 
@@ -20,7 +22,7 @@ Contém dados de certificação de conformidade associados ao controle de Pontua
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|name|String|Nome do controle de certificação |
+|nome|String|Nome do controle de certificação |
 |url|Cadeia de caracteres|URL para o portal de confiança do serviço Microsoft |
 
 ## <a name="json-representation"></a>Representação JSON

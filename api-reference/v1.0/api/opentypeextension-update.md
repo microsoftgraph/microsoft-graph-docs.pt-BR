@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6465c6b342032ff1e14e43487b534e39f1443ea0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 26289c7bbe11f2d91c7e226aa6a118a26a18476b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022632"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511240"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
+
+Namespace: microsoft.graph
 
 Atualize uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) com as propriedades no corpo da solicitação:
 

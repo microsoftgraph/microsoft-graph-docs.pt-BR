@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8088d704d5a075131d5ee1b2c3b9edf75785708b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7bf1daec731033bddab63ee0fa232fbf83fe3a2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035725"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534145"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso Operation
+
+Namespace: microsoft.graph
 
 O status de uma operação de execução longa.
 

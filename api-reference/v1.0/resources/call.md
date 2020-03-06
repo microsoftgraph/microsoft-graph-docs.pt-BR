@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f97360875af2241df3d78108d9c7447bfa6b6975
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d903865d0977d93e2b8c0ca3cbaafc2d1607a632
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913468"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531975"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
+
+Namespace: microsoft.graph
 
 O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `app/calls`.
 

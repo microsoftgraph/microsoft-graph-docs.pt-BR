@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f128fd22562889a5a537f3815a4003aec9bfc8a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ed82e040121f49bdef29009f6ac387ed4c79cbc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030013"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532031"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>tipo de recurso averageComparativeScore
+
+Namespace: microsoft.graph
 
 Contém várias pontuações diferentes com base em escopos diferentes (por exemplo, média por tamanho da indústria vertical, média por tamanho de estação da empresa e assim por diante) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura).
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: 0c5375ea3e188d6023e3588531e07877f6de38ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13d377f05650f50f9f87f618ca1c9c07d1da70ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036096"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534222"
 ---
 # <a name="modifiedproperty-resource-type"></a>tipo de recurso modifiedproperty
+
+Namespace: microsoft.graph
 
 Indica todas as propriedades em um recurso do Azure AD que foram modificadas, incluindo os valores antigo e novo.
 

@@ -5,14 +5,16 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ffd1f600395a1c72f2ab4c72ef1c3d3a358e387
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 93fa2a438a3294ef52545bf241d93d39283f91a3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016150"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516756"
 ---
 # <a name="create-identityprovider"></a>Criar identityProvider
+
+Namespace: microsoft.graph
 
 Criar um novo [identityProvider](../resources/identityprovider.md) especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.
 

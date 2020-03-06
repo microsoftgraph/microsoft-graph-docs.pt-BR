@@ -7,14 +7,16 @@ localization_priority: Normal
 description: 'O recurso Folder agrupa dados relacionados a pastas em um item em uma única estrutura. '
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f4b43c672b297ce50a5a6aa3dbb3f3d83a1d53be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ee34252671477a1efb83daf056330b499d94966
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030328"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531395"
 ---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
+
+Namespace: microsoft.graph
 
 O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. [**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 695fd6dbe04ce35cff061f11f8c9783c78830d61
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2665e57dc076a671b3ee31fc7361279c9a81f598
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034010"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533621"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Tipo de recurso standardTimeZoneOffset
+
+Namespace: microsoft.graph
 
 Especifica quando um fuso horário muda do horário de verão para o horário padrão.
 

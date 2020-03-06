@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 03cdf594b04c75cd14b31dfbaef5894e8aacd19d
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 9424055d5669b9279dede18b6eb3773da47d9b19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913664"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533880"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
+
+Namespace: microsoft.graph
 
 Esse tipo de recurso contém informações relacionadas à gravação de áudio.
 

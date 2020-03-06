@@ -6,16 +6,18 @@ description: O objeto restoreaction fornece informações sobre uma atividade qu
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1395ee284fa2f3ca16371c8282124c07c9b4bd73
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6b186e7e9fdc620fa59b7c5445d10296f80e4a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034654"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533830"
 ---
 # <a name="restoreaction-resource-type"></a>tipo de recurso restoreaction
 
-A presença do recurso **** restoreaction em um item de @ [**Activity**][activity] indica que a atividade restaurou um item.
+Namespace: microsoft.graph
+
+A presença do recurso **restoreaction** em um item de @ [**Activity**][activity] indica que a atividade restaurou um item.
 
 **Observação**: este recurso está vazio no momento. No futuro, ele pode ser preenchido com propriedades adicionais.
 

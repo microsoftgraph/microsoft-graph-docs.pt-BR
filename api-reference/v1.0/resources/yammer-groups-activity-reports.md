@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: c5627ea69b34fd186e09b3d381482721a28b09a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 961072e088d36748d51a4a6081f0ee06c47b6e20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033219"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534267"
 ---
 # <a name="yammer-groups-activity-reports"></a>Relatórios de atividades de grupos do Yammer
+
+Namespace: microsoft.graph
 
 Você pode usar os relatórios de atividades de grupos do Yammer para obter informações sobre a atividade de grupos do yammer em sua organização e ver quantos grupos do Yammer estão sendo criados e usados.
 
@@ -22,6 +24,6 @@ Você pode usar os relatórios de atividades de grupos do Yammer para obter info
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de grupo](../api/reportroot-getyammergroupsactivitydetail.md) | Fluxo      | Obtenha dados sobre as atividades de grupo do Yammer por grupo. |
+| [Obter dados de grupo](../api/reportroot-getyammergroupsactivitydetail.md) | Stream      | Obtenha dados sobre as atividades de grupo do Yammer por grupo. |
 | [Obter contagens de grupo](../api/reportroot-getyammergroupsactivitygroupcounts.md) | Fluxo      | Obtenha o número total de grupos que existiam e quantos incluíam atividade de conversação em grupo. |
-| [Obter contagens de atividade](../api/reportroot-getyammergroupsactivitycounts.md) | Fluxo      | Obtenha o número de mensagens postadas, lidas e curtidas em grupos do Yammer. |
+| [Obter contagens de atividades](../api/reportroot-getyammergroupsactivitycounts.md) | Fluxo      | Obtenha o número de mensagens postadas, lidas e curtidas em grupos do Yammer. |
