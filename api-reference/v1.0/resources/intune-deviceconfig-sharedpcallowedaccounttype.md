@@ -5,24 +5,26 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 869a0cf8ad19454eb02da551fdaa30d72aab83b5
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 71af9966d8bbebf183d0879678d179632dc427ac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367697"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532346"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>tipo de enumeração sharedPCAllowedAccountType
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de contas que têm permissão para compartilhar o PC.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|convidado|1|Apenas contas de convidado.|
-|domínio|duas|Apenas contas unidas por domínio.|
+|convidado|1 |Apenas contas de convidado.|
+|domínio|2 |Apenas contas unidas por domínio.|
 
 
 

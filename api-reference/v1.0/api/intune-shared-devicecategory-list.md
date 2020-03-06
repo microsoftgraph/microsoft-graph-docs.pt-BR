@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 780cb239119d28941a1cfaf73d28bc8749120873
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 6463f41b2e9045065e2f783f80428a94d3944f9c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361494"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512087"
 ---
 # <a name="list-devicecategories"></a>Listar deviceCategories
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Lista propriedades e relações dos objetos [deviceCategory](../resources/intune-shared-devicecategory.md).
 

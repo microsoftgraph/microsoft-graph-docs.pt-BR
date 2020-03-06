@@ -5,18 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6c604fa008c66447457f1c5736a31df0f39f28b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: fbef400f5b48bf79c46b4a445c7f92d62150c746
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622581"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534118"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso orgContact
 
+Namespace: microsoft.graph
+
 Representa um contato organizacional. Os contatos organizacionais são gerenciados pelos administradores de uma organização e são diferentes dos [contatos pessoais](contact.md). Além disso, os contatos organizacionais são sincronizados a partir dos diretórios locais ou do Exchange Online e são somente leitura.
 
-Herda do [directoryObject](directoryobject.md).
+Herda de [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -24,11 +26,11 @@ Herda do [directoryObject](directoryobject.md).
 |:---------------|:--------|:----------|
 |[Listar contatos da organização](../api/orgcontact-list.md) | [orgContact](orgcontact.md) |Listar Propriedades de contatos organizacionais.|
 |[Obter contato da organização](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Leia as propriedades e as relações de um contato organizacional.|
-|[Obter gerente](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Obtenha o gerente do contato organizacional.|
+|[Obter gerenciador](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Obtenha o gerente do contato organizacional.|
 |[Listar directReports](../api/orgcontact-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Listar os subordinados diretos do contato organizacional.|
-|[Listar memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) collection| Listar os grupos dos quais um contato organizacional é membro.|
+|[Listar memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro.|
 |[Listar transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro, incluindo grupos nos quais o contato organizacional está aninhado.|
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Coleção de cadeias de caracteres| Verifique a associação ao grupo. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| Verifique a associação ao grupo. |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| Retornar todos os grupos dos quais o contato organizacional especificado é membro. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| Retorna uma lista de directoryObjects o contato organizacional é um membro. |
 
@@ -52,7 +54,7 @@ Herda do [directoryObject](directoryobject.md).
 | proxyAddresses               | Coleção de cadeias de caracteres                                         | Por exemplo: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Oferece \$suporte a filtro.                                                                                                                                                                               |
 | surname                      | String                                                     | Sobrenome para este contato organizacional.                          |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|

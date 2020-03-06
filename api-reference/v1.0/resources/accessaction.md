@@ -6,16 +6,18 @@ description: O objeto accessaction fornece informações sobre acessos de um ite
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e27c7513e86932569849cdf794ab55ef4b40b039
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9d91417b3b8cb0a8f321a412b9b238e97c9a0a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033275"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532138"
 ---
 # <a name="accessaction-resource-type"></a>tipo de recurso accessaction
 
-A presença do recurso **accessaction** em uma myactivity indica que a atividade acessou um item. [****][activity]
+Namespace: microsoft.graph
+
+A presença do recurso **accessaction** em uma [**myactivity**][activity] indica que a atividade acessou um item.
 
 >**Observação:** Os registros de atividade do Access atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 

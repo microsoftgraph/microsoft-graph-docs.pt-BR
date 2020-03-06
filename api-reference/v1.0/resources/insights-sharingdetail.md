@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: f82601867e890d9a733932fab66ab18235c780e4
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: c441dcdc3b743e5bf55786ad1b43bfe2010b01b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845004"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531283"
 ---
 # <a name="sharingdetail-resource-type"></a>tipo de recurso sharingDetail
+
+Namespace: microsoft.graph
 
 Tipo complexo contendo propriedades de itens do [sharedInsight](insights-shared.md) . 
 

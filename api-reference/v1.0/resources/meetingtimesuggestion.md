@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 723468d14ebd089d8ed5b020f56e0c70c426ed9b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 048761f3d224cee916f7d1c869c0cbee2fbfb06e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036201"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534253"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Tipo de recurso meetingTimeSuggestion
+
+Namespace: microsoft.graph
 
 Uma sugestão de reunião que inclui informações como o horário da reunião, a probabilidade de presença, a disponibilidade individual e os locais de reunião disponíveis.
 

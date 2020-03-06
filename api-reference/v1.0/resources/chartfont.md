@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9241691296b93eb21e19e10b81f36e692fea0692
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1768e40edde1d02c109e77c7e7ca3c2dd0ffdafa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032991"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531852"
 ---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
+
+Namespace: microsoft.graph
 
 Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
 
@@ -30,7 +32,7 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 |bold|booliano|Representa o status da fonte em negrito.|
 |color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|string|Nome da fonte (por exemplo, "Calibri")|
+|nome|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
 |underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`.|
 

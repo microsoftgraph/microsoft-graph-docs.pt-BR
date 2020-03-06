@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6e6f30625412022006d88179e3192b1463c797c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc9d05e875104469a25ee742635ea8e86682d9e9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032491"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531424"
 ---
 # <a name="filesecuritystate-resource-type"></a>tipo de recurso filesecuritystate
+
+Namespace: microsoft.graph
 
 Contém informações sobre o arquivo (não processo) relacionado ao alerta.
 
@@ -21,7 +23,7 @@ Contém informações sobre o arquivo (não processo) relacionado ao alerta.
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).|
-|name|String|Nome do arquivo (sem o caminho).|
+|nome|String|Nome do arquivo (sem o caminho).|
 |caminho|String|Caminho completo do arquivo/ImageFile.|
 |riskScore|String|Geração de um provedor/Pontuação de risco calculado do arquivo de alerta. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 

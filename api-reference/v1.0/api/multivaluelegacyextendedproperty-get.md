@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c8ca94f253b2949dc25c6cacf8ccdef516827a9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a2642a0c93218020dfb001eca2578a1946453c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022800"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511436"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Obter multiValueLegacyExtendedProperty
+
+Namespace: microsoft.graph
 
 Obtenha uma instância do recurso que contém uma propriedade estendida com vários valores usando `$expand`.
 
@@ -23,7 +25,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [evento](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
 

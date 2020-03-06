@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c6c2ebca11668e022ee01a9f06bb57c8ff3ccf32
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e43c15b96cd19cc821491473d2459058c0c061ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375818"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510827"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
+
+Namespace: microsoft.graph
 
 Atualize as propriedades do objeto **plannertask** .
 ## <a name="permissions"></a>Permissões
@@ -61,7 +63,7 @@ Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/e
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertask"
@@ -85,7 +87,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertask-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
