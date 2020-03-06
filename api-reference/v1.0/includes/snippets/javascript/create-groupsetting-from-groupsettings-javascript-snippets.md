@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 18cbef42fe72bd270fcdb2724c3ee70c0ff2c756
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 47b31865805a2bd22e30a4d57f7af5092bf9bdd5
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35741210"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636412"
 ---
 ```javascript
 
@@ -27,6 +27,6 @@ const groupSetting = {
 };
 
 let res = await client.api('/groupSettings')
-    .post({groupSetting : groupSetting});
+    .post(groupSetting);
 
 ```

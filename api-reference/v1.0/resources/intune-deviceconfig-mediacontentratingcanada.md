@@ -5,30 +5,32 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84f54697d5c6a05f03c28b70e7d6250fa5dd0e46
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2abc1018d6f9aa271e444560d53f6db6c566a7c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360017"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532445"
 ---
-# <a name="mediacontentratingcanada-resource-type"></a><span data-ttu-id="a06bd-103">Tipo de recurso mediaContentRatingCanada</span><span class="sxs-lookup"><span data-stu-id="a06bd-103">mediaContentRatingCanada resource type</span></span>
+# <a name="mediacontentratingcanada-resource-type"></a><span data-ttu-id="fe6b5-103">Tipo de recurso mediaContentRatingCanada</span><span class="sxs-lookup"><span data-stu-id="fe6b5-103">mediaContentRatingCanada resource type</span></span>
 
-> <span data-ttu-id="a06bd-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a06bd-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="fe6b5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fe6b5-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a06bd-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="a06bd-105">Not yet documented</span></span>
+> <span data-ttu-id="fe6b5-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="fe6b5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a06bd-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a06bd-106">Properties</span></span>
-|<span data-ttu-id="a06bd-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a06bd-107">Property</span></span>|<span data-ttu-id="a06bd-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a06bd-108">Type</span></span>|<span data-ttu-id="a06bd-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a06bd-109">Description</span></span>|
+<span data-ttu-id="fe6b5-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="fe6b5-106">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="fe6b5-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fe6b5-107">Properties</span></span>
+|<span data-ttu-id="fe6b5-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fe6b5-108">Property</span></span>|<span data-ttu-id="fe6b5-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="fe6b5-109">Type</span></span>|<span data-ttu-id="fe6b5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="fe6b5-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a06bd-110">movieRating</span><span class="sxs-lookup"><span data-stu-id="a06bd-110">movieRating</span></span>|[<span data-ttu-id="a06bd-111">ratingCanadaMoviesType</span><span class="sxs-lookup"><span data-stu-id="a06bd-111">ratingCanadaMoviesType</span></span>](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|<span data-ttu-id="a06bd-112">Classificação de filmes selecionada para o Canadá.</span><span class="sxs-lookup"><span data-stu-id="a06bd-112">Movies rating selected for Canada.</span></span> <span data-ttu-id="a06bd-113">Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.</span><span class="sxs-lookup"><span data-stu-id="a06bd-113">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.</span></span>|
-|<span data-ttu-id="a06bd-114">tvRating</span><span class="sxs-lookup"><span data-stu-id="a06bd-114">tvRating</span></span>|[<span data-ttu-id="a06bd-115">ratingCanadaTelevisionType</span><span class="sxs-lookup"><span data-stu-id="a06bd-115">ratingCanadaTelevisionType</span></span>](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|<span data-ttu-id="a06bd-116">Classificação de TV selecionada para o Canadá.</span><span class="sxs-lookup"><span data-stu-id="a06bd-116">TV rating selected for Canada.</span></span> <span data-ttu-id="a06bd-117">Os valores possíveis são: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="a06bd-117">Possible values are: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.</span></span>|
+|<span data-ttu-id="fe6b5-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="fe6b5-111">movieRating</span></span>|[<span data-ttu-id="fe6b5-112">ratingCanadaMoviesType</span><span class="sxs-lookup"><span data-stu-id="fe6b5-112">ratingCanadaMoviesType</span></span>](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|<span data-ttu-id="fe6b5-113">Classificação de filmes selecionada para o Canadá.</span><span class="sxs-lookup"><span data-stu-id="fe6b5-113">Movies rating selected for Canada.</span></span> <span data-ttu-id="fe6b5-114">Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.</span><span class="sxs-lookup"><span data-stu-id="fe6b5-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted`.</span></span>|
+|<span data-ttu-id="fe6b5-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="fe6b5-115">tvRating</span></span>|[<span data-ttu-id="fe6b5-116">ratingCanadaTelevisionType</span><span class="sxs-lookup"><span data-stu-id="fe6b5-116">ratingCanadaTelevisionType</span></span>](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|<span data-ttu-id="fe6b5-117">Classificação de TV selecionada para o Canadá.</span><span class="sxs-lookup"><span data-stu-id="fe6b5-117">TV rating selected for Canada.</span></span> <span data-ttu-id="fe6b5-118">Os valores possíveis são: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="fe6b5-118">Possible values are: `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a06bd-118">Relações</span><span class="sxs-lookup"><span data-stu-id="a06bd-118">Relationships</span></span>
-<span data-ttu-id="a06bd-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a06bd-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="fe6b5-119">Relações</span><span class="sxs-lookup"><span data-stu-id="fe6b5-119">Relationships</span></span>
+<span data-ttu-id="fe6b5-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="fe6b5-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a06bd-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a06bd-120">JSON Representation</span></span>
-<span data-ttu-id="a06bd-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a06bd-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fe6b5-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fe6b5-121">JSON Representation</span></span>
+<span data-ttu-id="fe6b5-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fe6b5-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingCanada"

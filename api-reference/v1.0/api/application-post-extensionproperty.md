@@ -5,28 +5,30 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e4cf815d66311dd022297c9c4e716e77f4e2acaa
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 6773a7c33d65c92cb82c0f9289d077a361b4808c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998968"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518872"
 ---
-# <a name="create-extensionproperty"></a><span data-ttu-id="e88c2-103">Criar extensionproperty</span><span class="sxs-lookup"><span data-stu-id="e88c2-103">Create extensionProperty</span></span>
+# <a name="create-extensionproperty"></a><span data-ttu-id="dbbe7-103">Criar extensionproperty</span><span class="sxs-lookup"><span data-stu-id="dbbe7-103">Create extensionProperty</span></span>
 
-<span data-ttu-id="e88c2-104">Crie uma nova definição de [extensionproperty](../resources/extensionproperty.md) .</span><span class="sxs-lookup"><span data-stu-id="e88c2-104">Create a new [extensionProperty](../resources/extensionproperty.md) definition.</span></span> <span data-ttu-id="e88c2-105">Você pode usar essa operação para adicionar um valor de propriedade personalizada ao tipo de objeto de destino definido na **extensãoproperty**, usando solicitações de criação e de atualização padrão para o objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="e88c2-105">You can use this operation to add a custom property value to the targeted object type defined in the **extensionProperty**, using standard creation and update requests to the target object.</span></span>
+<span data-ttu-id="dbbe7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dbbe7-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e88c2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e88c2-106">Permissions</span></span>
+<span data-ttu-id="dbbe7-105">Crie uma nova definição de [extensionproperty](../resources/extensionproperty.md) .</span><span class="sxs-lookup"><span data-stu-id="dbbe7-105">Create a new [extensionProperty](../resources/extensionproperty.md) definition.</span></span> <span data-ttu-id="dbbe7-106">Você pode usar essa operação para adicionar um valor de propriedade personalizada ao tipo de objeto de destino definido na **extensãoproperty**, usando solicitações de criação e de atualização padrão para o objeto de destino.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-106">You can use this operation to add a custom property value to the targeted object type defined in the **extensionProperty**, using standard creation and update requests to the target object.</span></span>
 
-<span data-ttu-id="e88c2-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e88c2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dbbe7-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="dbbe7-107">Permissions</span></span>
 
-|<span data-ttu-id="e88c2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e88c2-109">Permission type</span></span>      | <span data-ttu-id="e88c2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e88c2-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="dbbe7-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dbbe7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="dbbe7-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dbbe7-110">Permission type</span></span>      | <span data-ttu-id="dbbe7-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dbbe7-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e88c2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e88c2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e88c2-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e88c2-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="e88c2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e88c2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e88c2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e88c2-114">Not supported.</span></span>    |
-|<span data-ttu-id="e88c2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e88c2-115">Application</span></span> | <span data-ttu-id="e88c2-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e88c2-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="dbbe7-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dbbe7-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dbbe7-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dbbe7-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="dbbe7-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dbbe7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dbbe7-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-115">Not supported.</span></span>    |
+|<span data-ttu-id="dbbe7-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dbbe7-116">Application</span></span> | <span data-ttu-id="dbbe7-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dbbe7-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e88c2-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e88c2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dbbe7-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dbbe7-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,35 +36,35 @@ ms.locfileid: "37998968"
 POST /applications/{id}/extensionProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e88c2-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e88c2-118">Request headers</span></span>
-| <span data-ttu-id="e88c2-119">Nome</span><span class="sxs-lookup"><span data-stu-id="e88c2-119">Name</span></span>       | <span data-ttu-id="e88c2-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="e88c2-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dbbe7-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dbbe7-119">Request headers</span></span>
+| <span data-ttu-id="dbbe7-120">Nome</span><span class="sxs-lookup"><span data-stu-id="dbbe7-120">Name</span></span>       | <span data-ttu-id="dbbe7-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="dbbe7-121">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="e88c2-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e88c2-121">Authorization</span></span>  | <span data-ttu-id="e88c2-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e88c2-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e88c2-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="e88c2-124">Content-type</span></span> | <span data-ttu-id="e88c2-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e88c2-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="dbbe7-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="dbbe7-122">Authorization</span></span>  | <span data-ttu-id="dbbe7-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="dbbe7-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="dbbe7-125">Content-type</span></span> | <span data-ttu-id="dbbe7-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e88c2-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e88c2-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="dbbe7-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dbbe7-128">Request body</span></span>
 
-<span data-ttu-id="e88c2-128">No corpo da solicitação, forneça um objeto [extensionproperty](../resources/extensionproperty.md) com as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="e88c2-128">In the request body, provide an [extensionProperty](../resources/extensionproperty.md) object with the following properties.</span></span>
+<span data-ttu-id="dbbe7-129">No corpo da solicitação, forneça um objeto [extensionproperty](../resources/extensionproperty.md) com as propriedades a seguir.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-129">In the request body, provide an [extensionProperty](../resources/extensionproperty.md) object with the following properties.</span></span>
 
 
-| <span data-ttu-id="e88c2-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e88c2-129">Property</span></span>     | <span data-ttu-id="e88c2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="e88c2-130">Type</span></span>        | <span data-ttu-id="e88c2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e88c2-131">Description</span></span> |
+| <span data-ttu-id="dbbe7-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dbbe7-130">Property</span></span>     | <span data-ttu-id="dbbe7-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="dbbe7-131">Type</span></span>        | <span data-ttu-id="dbbe7-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="dbbe7-132">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="e88c2-132">dataType</span><span class="sxs-lookup"><span data-stu-id="e88c2-132">dataType</span></span>|<span data-ttu-id="e88c2-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e88c2-133">String</span></span>| <span data-ttu-id="e88c2-134">Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar.</span><span class="sxs-lookup"><span data-stu-id="e88c2-134">Specifies the data type of the value the extension property can hold.</span></span> <span data-ttu-id="e88c2-135">Os valores a seguir são suportados.</span><span class="sxs-lookup"><span data-stu-id="e88c2-135">Following values are supported.</span></span> <span data-ttu-id="e88c2-136">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="e88c2-136">Not nullable.</span></span> <ul><li><span data-ttu-id="e88c2-137">`Binary`-256 bytes máximo</span><span class="sxs-lookup"><span data-stu-id="e88c2-137">`Binary` - 256 bytes maximum</span></span></li><li>`Boolean`</li><li><span data-ttu-id="e88c2-138">`DateTime`-Deve ser especificado no formato ISO 8601.</span><span class="sxs-lookup"><span data-stu-id="e88c2-138">`DateTime` - Must be specified in ISO 8601 format.</span></span> <span data-ttu-id="e88c2-139">Serão armazenados no UTC.</span><span class="sxs-lookup"><span data-stu-id="e88c2-139">Will be stored in UTC.</span></span></li><li><span data-ttu-id="e88c2-140">`Integer`-valor de 32-bit.</span><span class="sxs-lookup"><span data-stu-id="e88c2-140">`Integer` - 32-bit value.</span></span></li><li><span data-ttu-id="e88c2-141">`LargeInteger`-valor de 64-bit.</span><span class="sxs-lookup"><span data-stu-id="e88c2-141">`LargeInteger` - 64-bit value.</span></span></li><li><span data-ttu-id="e88c2-142">`String`-256 caracteres no máximo</span><span class="sxs-lookup"><span data-stu-id="e88c2-142">`String` - 256 characters maximum</span></span></li></ul>|
-|<span data-ttu-id="e88c2-143">nome</span><span class="sxs-lookup"><span data-stu-id="e88c2-143">name</span></span>|<span data-ttu-id="e88c2-144">String</span><span class="sxs-lookup"><span data-stu-id="e88c2-144">String</span></span>| <span data-ttu-id="e88c2-145">Nome da propriedade de extensão.</span><span class="sxs-lookup"><span data-stu-id="e88c2-145">Name of the extension property.</span></span> <span data-ttu-id="e88c2-146">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="e88c2-146">Not nullable.</span></span> |
-|<span data-ttu-id="e88c2-147">targetObjects</span><span class="sxs-lookup"><span data-stu-id="e88c2-147">targetObjects</span></span>|<span data-ttu-id="e88c2-148">String collection</span><span class="sxs-lookup"><span data-stu-id="e88c2-148">String collection</span></span>| <span data-ttu-id="e88c2-149">Os valores a seguir são suportados.</span><span class="sxs-lookup"><span data-stu-id="e88c2-149">Following values are supported.</span></span> <span data-ttu-id="e88c2-150">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="e88c2-150">Not nullable.</span></span> <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|<span data-ttu-id="dbbe7-133">dataType</span><span class="sxs-lookup"><span data-stu-id="dbbe7-133">dataType</span></span>|<span data-ttu-id="dbbe7-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="dbbe7-134">String</span></span>| <span data-ttu-id="dbbe7-135">Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-135">Specifies the data type of the value the extension property can hold.</span></span> <span data-ttu-id="dbbe7-136">Os valores a seguir são suportados.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-136">Following values are supported.</span></span> <span data-ttu-id="dbbe7-137">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-137">Not nullable.</span></span> <ul><li><span data-ttu-id="dbbe7-138">`Binary`-256 bytes máximo</span><span class="sxs-lookup"><span data-stu-id="dbbe7-138">`Binary` - 256 bytes maximum</span></span></li><li>`Boolean`</li><li><span data-ttu-id="dbbe7-139">`DateTime`-Deve ser especificado no formato ISO 8601.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-139">`DateTime` - Must be specified in ISO 8601 format.</span></span> <span data-ttu-id="dbbe7-140">Serão armazenados no UTC.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-140">Will be stored in UTC.</span></span></li><li><span data-ttu-id="dbbe7-141">`Integer`-valor de 32-bit.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-141">`Integer` - 32-bit value.</span></span></li><li><span data-ttu-id="dbbe7-142">`LargeInteger`-valor de 64-bit.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-142">`LargeInteger` - 64-bit value.</span></span></li><li><span data-ttu-id="dbbe7-143">`String`-256 caracteres no máximo</span><span class="sxs-lookup"><span data-stu-id="dbbe7-143">`String` - 256 characters maximum</span></span></li></ul>|
+|<span data-ttu-id="dbbe7-144">nome</span><span class="sxs-lookup"><span data-stu-id="dbbe7-144">name</span></span>|<span data-ttu-id="dbbe7-145">String</span><span class="sxs-lookup"><span data-stu-id="dbbe7-145">String</span></span>| <span data-ttu-id="dbbe7-146">Nome da propriedade de extensão.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-146">Name of the extension property.</span></span> <span data-ttu-id="dbbe7-147">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-147">Not nullable.</span></span> |
+|<span data-ttu-id="dbbe7-148">targetObjects</span><span class="sxs-lookup"><span data-stu-id="dbbe7-148">targetObjects</span></span>|<span data-ttu-id="dbbe7-149">String collection</span><span class="sxs-lookup"><span data-stu-id="dbbe7-149">String collection</span></span>| <span data-ttu-id="dbbe7-150">Os valores a seguir são suportados.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-150">Following values are supported.</span></span> <span data-ttu-id="dbbe7-151">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-151">Not nullable.</span></span> <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
-## <a name="response"></a><span data-ttu-id="e88c2-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="e88c2-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dbbe7-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="dbbe7-152">Response</span></span>
 
-<span data-ttu-id="e88c2-152">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [extensionproperty](../resources/extensionproperty.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e88c2-152">If successful, this method returns a `201 Created` response code and a new [extensionProperty](../resources/extensionproperty.md) object in the response body.</span></span>
+<span data-ttu-id="dbbe7-153">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [extensionproperty](../resources/extensionproperty.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-153">If successful, this method returns a `201 Created` response code and a new [extensionProperty](../resources/extensionproperty.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e88c2-153">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e88c2-153">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="dbbe7-154">Exemplos</span><span class="sxs-lookup"><span data-stu-id="dbbe7-154">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e88c2-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e88c2-154">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dbbe7-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dbbe7-155">Request</span></span>
 
-<span data-ttu-id="e88c2-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e88c2-155">The following is an example of the request.</span></span>
+<span data-ttu-id="dbbe7-156">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-156">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e88c2-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="e88c2-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dbbe7-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="dbbe7-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_extensionproperty_from_application"
@@ -80,28 +82,28 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e88c2-157">C#</span><span class="sxs-lookup"><span data-stu-id="e88c2-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="dbbe7-158">C#</span><span class="sxs-lookup"><span data-stu-id="dbbe7-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-extensionproperty-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e88c2-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e88c2-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="dbbe7-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dbbe7-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-extensionproperty-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e88c2-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e88c2-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="dbbe7-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dbbe7-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-extensionproperty-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="e88c2-160">Java</span><span class="sxs-lookup"><span data-stu-id="e88c2-160">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="dbbe7-161">Java</span><span class="sxs-lookup"><span data-stu-id="dbbe7-161">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e88c2-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="e88c2-161">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dbbe7-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="dbbe7-162">Response</span></span>
 
-<span data-ttu-id="e88c2-162">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [extensionproperty](../resources/extensionProperty.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e88c2-162">If successful, this method returns `201 Created` response code and [extensionProperty](../resources/extensionProperty.md) object in the response body.</span></span>
+<span data-ttu-id="dbbe7-163">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [extensionproperty](../resources/extensionProperty.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dbbe7-163">If successful, this method returns `201 Created` response code and [extensionProperty](../resources/extensionProperty.md) object in the response body.</span></span>
 
 <!-- {
   "blockType": "response",

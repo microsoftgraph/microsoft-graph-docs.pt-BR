@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 42065907c79dc236739bc60e80781173d06bad8b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: efe4514e7f9ee02bd811e9455a7d7a29eb6875c2
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35715603"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636451"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const directoryObject = {
 };
 
 let res = await client.api('/devices/{id}/registeredUsers')
-    .post({directoryObject : directoryObject});
+    .post(directoryObject);
 
 ```

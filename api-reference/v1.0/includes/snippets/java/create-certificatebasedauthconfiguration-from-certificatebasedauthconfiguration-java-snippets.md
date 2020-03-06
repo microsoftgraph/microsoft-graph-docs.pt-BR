@@ -1,7 +1,12 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: e903dd9494d8363be76d406cb6680c44cd8f5809
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37638650"
 ---
-
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
@@ -15,7 +20,7 @@ certificateAuthoritiesList.add(certificateAuthorities);
 certificateBasedAuthConfiguration.certificateAuthorities = certificateAuthoritiesList;
 
 graphClient.organization("{id}").certificateBasedAuthConfiguration()
-	.buildRequest()
-	.post(certificateBasedAuthConfiguration);
+    .buildRequest()
+    .post(certificateBasedAuthConfiguration);
 
 ```
