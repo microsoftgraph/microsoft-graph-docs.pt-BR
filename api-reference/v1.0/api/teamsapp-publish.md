@@ -5,58 +5,60 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e4f5ce3867be2bc7109ae3069e7737ee6be2498
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 29cde581de207637fd0a296b2ba1b20d3e04ef44
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865171"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509318"
 ---
-# <a name="publish-apps-to-your-organizations-app-catalog"></a><span data-ttu-id="7b7ce-103">Publicar aplicativos no catálogo de aplicativos da sua organização</span><span class="sxs-lookup"><span data-stu-id="7b7ce-103">Publish apps to your organization's app catalog</span></span>
+# <a name="publish-apps-to-your-organizations-app-catalog"></a><span data-ttu-id="50ee0-103">Publicar aplicativos no catálogo de aplicativos da sua organização</span><span class="sxs-lookup"><span data-stu-id="50ee0-103">Publish apps to your organization's app catalog</span></span>
+
+<span data-ttu-id="50ee0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50ee0-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="7b7ce-104">Publicar um [aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="7b7ce-104">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.</span></span>
-<span data-ttu-id="7b7ce-105">Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso `distributionMethod`  =  `organization`criado terá.</span><span class="sxs-lookup"><span data-stu-id="7b7ce-105">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have `distributionMethod` = `organization`.</span></span>
+<span data-ttu-id="50ee0-105">Publicar um [aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="50ee0-105">Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.</span></span>
+<span data-ttu-id="50ee0-106">Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso `distributionMethod`  =  `organization`criado terá.</span><span class="sxs-lookup"><span data-stu-id="50ee0-106">Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); the created resource will have `distributionMethod` = `organization`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7b7ce-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7b7ce-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="50ee0-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="50ee0-107">Permissions</span></span>
 
-<span data-ttu-id="7b7ce-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="7b7ce-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
+<span data-ttu-id="50ee0-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="50ee0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-><span data-ttu-id="7b7ce-109">**Observação:** Somente os administradores globais podem chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="7b7ce-109">**Note:** Only global administrators can call this API.</span></span>
+><span data-ttu-id="50ee0-110">**Observação:** Somente os administradores globais podem chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="50ee0-110">**Note:** Only global administrators can call this API.</span></span>
 
-| <span data-ttu-id="7b7ce-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7b7ce-110">Permission Type</span></span>                        | <span data-ttu-id="7b7ce-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7b7ce-111">Permissions (from least to most privileged)</span></span>|
+| <span data-ttu-id="50ee0-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="50ee0-111">Permission Type</span></span>                        | <span data-ttu-id="50ee0-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="50ee0-112">Permissions (from least to most privileged)</span></span>|
 |:----------------------------------     |:-------------|
-| <span data-ttu-id="7b7ce-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7b7ce-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="7b7ce-113">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7b7ce-113">AppCatalog.ReadWrite.All</span></span> |
-| <span data-ttu-id="7b7ce-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7b7ce-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b7ce-115">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="7b7ce-115">Not supported</span></span>|
-| <span data-ttu-id="7b7ce-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7b7ce-116">Application</span></span>                            | <span data-ttu-id="7b7ce-117">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="7b7ce-117">Not supported</span></span>|
+| <span data-ttu-id="50ee0-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="50ee0-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="50ee0-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50ee0-114">AppCatalog.ReadWrite.All</span></span> |
+| <span data-ttu-id="50ee0-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="50ee0-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="50ee0-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="50ee0-116">Not supported</span></span>|
+| <span data-ttu-id="50ee0-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="50ee0-117">Application</span></span>                            | <span data-ttu-id="50ee0-118">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="50ee0-118">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7b7ce-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7b7ce-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50ee0-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="50ee0-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /appCatalogs/teamsApps
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7b7ce-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7b7ce-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="50ee0-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="50ee0-120">Request headers</span></span>
 
-| <span data-ttu-id="7b7ce-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7b7ce-120">Header</span></span>        | <span data-ttu-id="7b7ce-121">Valor</span><span class="sxs-lookup"><span data-stu-id="7b7ce-121">Value</span></span>           |
+| <span data-ttu-id="50ee0-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="50ee0-121">Header</span></span>        | <span data-ttu-id="50ee0-122">Valor</span><span class="sxs-lookup"><span data-stu-id="50ee0-122">Value</span></span>           |
 |:--------------|:--------------  |
-| <span data-ttu-id="7b7ce-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="7b7ce-122">Authorization</span></span> | <span data-ttu-id="7b7ce-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7b7ce-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7b7ce-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7b7ce-125">Content-Type</span></span>  | <span data-ttu-id="7b7ce-126">aplicativo/zip</span><span class="sxs-lookup"><span data-stu-id="7b7ce-126">application/zip</span></span> |
+| <span data-ttu-id="50ee0-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="50ee0-123">Authorization</span></span> | <span data-ttu-id="50ee0-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="50ee0-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="50ee0-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="50ee0-126">Content-Type</span></span>  | <span data-ttu-id="50ee0-127">aplicativo/zip</span><span class="sxs-lookup"><span data-stu-id="50ee0-127">application/zip</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7b7ce-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7b7ce-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="50ee0-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="50ee0-128">Request body</span></span>
 
-<span data-ttu-id="7b7ce-128">Carga do manifesto zip do teams.</span><span class="sxs-lookup"><span data-stu-id="7b7ce-128">Teams Zip Manifest Payload.</span></span>
-<span data-ttu-id="7b7ce-129">Para o arquivo zip do aplicativo do Teams, [consulte criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="7b7ce-129">For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
-<span data-ttu-id="7b7ce-130">Você não pode criar um aplicativo para uma organização que tenha a mesma ID de manifesto que outro aplicativo da organização.</span><span class="sxs-lookup"><span data-stu-id="7b7ce-130">You can't create an app for an organization that has the same manifest ID as another app in that organization.</span></span>
+<span data-ttu-id="50ee0-129">Carga do manifesto zip do teams.</span><span class="sxs-lookup"><span data-stu-id="50ee0-129">Teams Zip Manifest Payload.</span></span>
+<span data-ttu-id="50ee0-130">Para o arquivo zip do aplicativo do Teams, [consulte criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="50ee0-130">For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<span data-ttu-id="50ee0-131">Você não pode criar um aplicativo para uma organização que tenha a mesma ID de manifesto que outro aplicativo da organização.</span><span class="sxs-lookup"><span data-stu-id="50ee0-131">You can't create an app for an organization that has the same manifest ID as another app in that organization.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7b7ce-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b7ce-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="50ee0-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="50ee0-132">Response</span></span>
 
-<span data-ttu-id="7b7ce-132">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [teamsCatalogApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="7b7ce-132">If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.</span></span>
+<span data-ttu-id="50ee0-133">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [teamsCatalogApp](../resources/teamsapp.md) .</span><span class="sxs-lookup"><span data-stu-id="50ee0-133">If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7b7ce-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7b7ce-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="50ee0-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="50ee0-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7b7ce-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7b7ce-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="50ee0-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="50ee0-135">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
@@ -66,9 +68,9 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-<span data-ttu-id="7b7ce-135">Para obter informações sobre como criar um arquivo zip do aplicativo do Microsoft Teams, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="7b7ce-135">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
+<span data-ttu-id="50ee0-136">Para obter informações sobre como criar um arquivo zip do aplicativo do Microsoft Teams, consulte [criar um pacote de aplicativos](/microsoftteams/platform/concepts/apps/apps-package).</span><span class="sxs-lookup"><span data-stu-id="50ee0-136">For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).</span></span>
 
-### <a name="response"></a><span data-ttu-id="7b7ce-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b7ce-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="50ee0-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="50ee0-137">Response</span></span>
 
 ```
 HTTP/1.1 201 Created

@@ -5,28 +5,30 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 58430c5bab6ef412f38da70b7f4bed9fe5c1dd36
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c6109575256ed6a90019b4da1d88723a163569b1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326638"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511667"
 ---
-# <a name="restore-a-previous-version-of-a-listitem"></a><span data-ttu-id="3adc2-104">Restaura uma versão anterior de um ListItem</span><span class="sxs-lookup"><span data-stu-id="3adc2-104">Restore a previous version of a ListItem</span></span>
+# <a name="restore-a-previous-version-of-a-listitem"></a><span data-ttu-id="aa4c4-104">Restaura uma versão anterior de um ListItem</span><span class="sxs-lookup"><span data-stu-id="aa4c4-104">Restore a previous version of a ListItem</span></span>
 
-<span data-ttu-id="3adc2-105">Restaura uma versão anterior de um ListItem para ser a versão atual.</span><span class="sxs-lookup"><span data-stu-id="3adc2-105">Restore a previous version of a ListItem to be the current version.</span></span> <span data-ttu-id="3adc2-106">Isso criará uma nova versão com o conteúdo da versão anterior, mas preservará todas as versões existentes do item.</span><span class="sxs-lookup"><span data-stu-id="3adc2-106">This will create a new version with the contents of the previous version, but preserves all existing versions of the item.</span></span>
+<span data-ttu-id="aa4c4-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aa4c4-105">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3adc2-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="3adc2-107">Permissions</span></span>
+<span data-ttu-id="aa4c4-106">Restaura uma versão anterior de um ListItem para ser a versão atual.</span><span class="sxs-lookup"><span data-stu-id="aa4c4-106">Restore a previous version of a ListItem to be the current version.</span></span> <span data-ttu-id="aa4c4-107">Isso criará uma nova versão com o conteúdo da versão anterior, mas preservará todas as versões existentes do item.</span><span class="sxs-lookup"><span data-stu-id="aa4c4-107">This will create a new version with the contents of the previous version, but preserves all existing versions of the item.</span></span>
 
-<span data-ttu-id="3adc2-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3adc2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="aa4c4-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="aa4c4-108">Permissions</span></span>
 
-|            <span data-ttu-id="3adc2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3adc2-110">Permission type</span></span>             |         <span data-ttu-id="3adc2-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3adc2-111">Permissions (from least to most privileged)</span></span>          |
+<span data-ttu-id="aa4c4-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aa4c4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|            <span data-ttu-id="aa4c4-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aa4c4-111">Permission type</span></span>             |         <span data-ttu-id="aa4c4-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="aa4c4-112">Permissions (from least to most privileged)</span></span>          |
 | :------------------------------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="3adc2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3adc2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="3adc2-113">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="3adc2-113">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
-| <span data-ttu-id="3adc2-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3adc2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3adc2-115">n/d</span><span class="sxs-lookup"><span data-stu-id="3adc2-115">n/a</span></span>                                                          |
-| <span data-ttu-id="3adc2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3adc2-116">Application</span></span>                            | <span data-ttu-id="3adc2-117">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="3adc2-117">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
+| <span data-ttu-id="aa4c4-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aa4c4-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="aa4c4-114">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="aa4c4-114">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
+| <span data-ttu-id="aa4c4-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aa4c4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa4c4-116">n/d</span><span class="sxs-lookup"><span data-stu-id="aa4c4-116">n/a</span></span>                                                          |
+| <span data-ttu-id="aa4c4-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="aa4c4-117">Application</span></span>                            | <span data-ttu-id="aa4c4-118">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span><span class="sxs-lookup"><span data-stu-id="aa4c4-118">Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3adc2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3adc2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aa4c4-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aa4c4-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,43 +37,43 @@ POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
-### <a name="request-body"></a><span data-ttu-id="3adc2-119">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3adc2-119">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="aa4c4-120">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="aa4c4-120">Request body</span></span>
 
-<span data-ttu-id="3adc2-120">Nenhum corpo de solicitação é obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3adc2-120">No request body is required.</span></span>
+<span data-ttu-id="aa4c4-121">Nenhum corpo de solicitação é obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aa4c4-121">No request body is required.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3adc2-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3adc2-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aa4c4-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aa4c4-122">Example</span></span>
 
-<span data-ttu-id="3adc2-122">Este exemplo restaura uma versão de um listItem identificado por `{item-id}` e `{version-id}`.</span><span class="sxs-lookup"><span data-stu-id="3adc2-122">This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.</span></span>
+<span data-ttu-id="aa4c4-123">Este exemplo restaura uma versão de um listItem identificado por `{item-id}` e `{version-id}`.</span><span class="sxs-lookup"><span data-stu-id="aa4c4-123">This example restores a version of a listItem identified by `{item-id}` and `{version-id}`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3adc2-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="3adc2-123">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="aa4c4-124">HTTP</span><span class="sxs-lookup"><span data-stu-id="aa4c4-124">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "restore-item-version-listItem", "scopes": "files.readwrite sites.readwrite.all", "target": "action", "tags": "service.graph service.sharepoint" } -->
 
 ```http
 POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3adc2-124">C#</span><span class="sxs-lookup"><span data-stu-id="3adc2-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="aa4c4-125">C#</span><span class="sxs-lookup"><span data-stu-id="aa4c4-125">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-version-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3adc2-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3adc2-125">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="aa4c4-126">JavaScript</span><span class="sxs-lookup"><span data-stu-id="aa4c4-126">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/restore-item-version-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3adc2-126">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="3adc2-126">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="aa4c4-127">Objective-C</span><span class="sxs-lookup"><span data-stu-id="aa4c4-127">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-version-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3adc2-127">Java</span><span class="sxs-lookup"><span data-stu-id="3adc2-127">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="aa4c4-128">Java</span><span class="sxs-lookup"><span data-stu-id="aa4c4-128">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/restore-item-version-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="3adc2-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="3adc2-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aa4c4-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="aa4c4-129">Response</span></span>
 
-<span data-ttu-id="3adc2-129">Se tiver êxito, a chamada API retorna um código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="3adc2-129">If successful, the API call returns a `204 No Content`.</span></span>
+<span data-ttu-id="aa4c4-130">Se tiver êxito, a chamada API retorna um código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="aa4c4-130">If successful, the API call returns a `204 No Content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 

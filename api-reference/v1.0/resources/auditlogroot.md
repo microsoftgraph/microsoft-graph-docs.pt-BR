@@ -5,40 +5,42 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 45a6ce64f2f5f8b37f1a555c2bf7a38a87a99acf
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7b0632271c2fd02fa6137df3065d413f0e35a046
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730362"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532083"
 ---
-# <a name="auditlogroot-resource-type"></a><span data-ttu-id="32c83-105">tipo de recurso auditLogRoot</span><span class="sxs-lookup"><span data-stu-id="32c83-105">auditLogRoot resource type</span></span>
+# <a name="auditlogroot-resource-type"></a><span data-ttu-id="b2585-105">tipo de recurso auditLogRoot</span><span class="sxs-lookup"><span data-stu-id="b2585-105">auditLogRoot resource type</span></span>
 
-<span data-ttu-id="32c83-106">Contém diferentes tipos de logs de auditoria.</span><span class="sxs-lookup"><span data-stu-id="32c83-106">Contains different types of audit logs.</span></span> <span data-ttu-id="32c83-107">Esses recursos retornam um recurso singleton auditLog.</span><span class="sxs-lookup"><span data-stu-id="32c83-107">This resources returns a singleton auditLog resource.</span></span> <span data-ttu-id="32c83-108">Ele não contém propriedades utilizáveis.</span><span class="sxs-lookup"><span data-stu-id="32c83-108">It doesn't contain any usable properties.</span></span>
+<span data-ttu-id="b2585-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b2585-106">Namespace: microsoft.graph</span></span>
 
-## <a name="methods"></a><span data-ttu-id="32c83-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="32c83-109">Methods</span></span>
+<span data-ttu-id="b2585-107">Contém diferentes tipos de logs de auditoria.</span><span class="sxs-lookup"><span data-stu-id="b2585-107">Contains different types of audit logs.</span></span> <span data-ttu-id="b2585-108">Esses recursos retornam um recurso singleton auditLog.</span><span class="sxs-lookup"><span data-stu-id="b2585-108">This resources returns a singleton auditLog resource.</span></span> <span data-ttu-id="b2585-109">Ele não contém propriedades utilizáveis.</span><span class="sxs-lookup"><span data-stu-id="b2585-109">It doesn't contain any usable properties.</span></span>
 
-| <span data-ttu-id="32c83-110">Método</span><span class="sxs-lookup"><span data-stu-id="32c83-110">Method</span></span>           | <span data-ttu-id="32c83-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="32c83-111">Return Type</span></span>    |<span data-ttu-id="32c83-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="32c83-112">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="b2585-110">Métodos</span><span class="sxs-lookup"><span data-stu-id="b2585-110">Methods</span></span>
+
+| <span data-ttu-id="b2585-111">Método</span><span class="sxs-lookup"><span data-stu-id="b2585-111">Method</span></span>           | <span data-ttu-id="b2585-112">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="b2585-112">Return Type</span></span>    |<span data-ttu-id="b2585-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2585-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="32c83-113">Lista directoryAudits</span><span class="sxs-lookup"><span data-stu-id="32c83-113">List directoryAudits</span></span>](../api/directoryaudit-list.md) | [<span data-ttu-id="32c83-114">directoryAudit</span><span class="sxs-lookup"><span data-stu-id="32c83-114">directoryAudit</span></span>](directoryaudit.md) |<span data-ttu-id="32c83-115">Liste os itens de auditoria de diretório no conjunto de suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="32c83-115">List the directory audit items in the collection and their properties.</span></span>|
-|[<span data-ttu-id="32c83-116">Obter directoryAudit</span><span class="sxs-lookup"><span data-stu-id="32c83-116">Get directoryAudit</span></span>](../api/directoryaudit-get.md) | [<span data-ttu-id="32c83-117">directoryAudit</span><span class="sxs-lookup"><span data-stu-id="32c83-117">directoryAudit</span></span>](directoryaudit.md) |<span data-ttu-id="32c83-118">Obter um item de auditoria do diretório específico e suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="32c83-118">Get a specific directory audit item and its properties.</span></span>|
-|[<span data-ttu-id="32c83-119">Listar entrar</span><span class="sxs-lookup"><span data-stu-id="32c83-119">List signIn</span></span>](../api/signin-list.md) | [<span data-ttu-id="32c83-120">signIn</span><span class="sxs-lookup"><span data-stu-id="32c83-120">signIn</span></span>](signin.md) |<span data-ttu-id="32c83-121">Leia as propriedades e os relacionamentos de objetos de domínio.</span><span class="sxs-lookup"><span data-stu-id="32c83-121">Read properties and relationships of signIn objects.</span></span>|
-|[<span data-ttu-id="32c83-122">Obter entrar</span><span class="sxs-lookup"><span data-stu-id="32c83-122">Get signIn</span></span>](../api/signin-get.md) | [<span data-ttu-id="32c83-123">signIn</span><span class="sxs-lookup"><span data-stu-id="32c83-123">signIn</span></span>](signin.md) |<span data-ttu-id="32c83-124">Leia as propriedades e os relacionamentos de um objeto de domínio.</span><span class="sxs-lookup"><span data-stu-id="32c83-124">Read properties and relationships of signIn object.</span></span>|
+|[<span data-ttu-id="b2585-114">Lista directoryAudits</span><span class="sxs-lookup"><span data-stu-id="b2585-114">List directoryAudits</span></span>](../api/directoryaudit-list.md) | [<span data-ttu-id="b2585-115">directoryAudit</span><span class="sxs-lookup"><span data-stu-id="b2585-115">directoryAudit</span></span>](directoryaudit.md) |<span data-ttu-id="b2585-116">Liste os itens de auditoria de diretório no conjunto de suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="b2585-116">List the directory audit items in the collection and their properties.</span></span>|
+|[<span data-ttu-id="b2585-117">Obter directoryAudit</span><span class="sxs-lookup"><span data-stu-id="b2585-117">Get directoryAudit</span></span>](../api/directoryaudit-get.md) | [<span data-ttu-id="b2585-118">directoryAudit</span><span class="sxs-lookup"><span data-stu-id="b2585-118">directoryAudit</span></span>](directoryaudit.md) |<span data-ttu-id="b2585-119">Obter um item de auditoria do diretório específico e suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="b2585-119">Get a specific directory audit item and its properties.</span></span>|
+|[<span data-ttu-id="b2585-120">Listar entrar</span><span class="sxs-lookup"><span data-stu-id="b2585-120">List signIn</span></span>](../api/signin-list.md) | [<span data-ttu-id="b2585-121">signIn</span><span class="sxs-lookup"><span data-stu-id="b2585-121">signIn</span></span>](signin.md) |<span data-ttu-id="b2585-122">Leia as propriedades e os relacionamentos de objetos de domínio.</span><span class="sxs-lookup"><span data-stu-id="b2585-122">Read properties and relationships of signIn objects.</span></span>|
+|[<span data-ttu-id="b2585-123">Obter entrar</span><span class="sxs-lookup"><span data-stu-id="b2585-123">Get signIn</span></span>](../api/signin-get.md) | [<span data-ttu-id="b2585-124">signIn</span><span class="sxs-lookup"><span data-stu-id="b2585-124">signIn</span></span>](signin.md) |<span data-ttu-id="b2585-125">Leia as propriedades e os relacionamentos de um objeto de domínio.</span><span class="sxs-lookup"><span data-stu-id="b2585-125">Read properties and relationships of signIn object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="32c83-125">Propriedades</span><span class="sxs-lookup"><span data-stu-id="32c83-125">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b2585-126">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b2585-126">Properties</span></span>
 
-<span data-ttu-id="32c83-126">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="32c83-126">None.</span></span>
+<span data-ttu-id="b2585-127">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="b2585-127">None.</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="32c83-127">Relações</span><span class="sxs-lookup"><span data-stu-id="32c83-127">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="b2585-128">Relacionamento</span><span class="sxs-lookup"><span data-stu-id="b2585-128">Relationships</span></span>
 
-| <span data-ttu-id="32c83-128">Relação</span><span class="sxs-lookup"><span data-stu-id="32c83-128">Relationship</span></span> | <span data-ttu-id="32c83-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="32c83-129">Type</span></span>   |<span data-ttu-id="32c83-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="32c83-130">Description</span></span>|
+| <span data-ttu-id="b2585-129">Relação</span><span class="sxs-lookup"><span data-stu-id="b2585-129">Relationship</span></span> | <span data-ttu-id="b2585-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="b2585-130">Type</span></span>   |<span data-ttu-id="b2585-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2585-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="32c83-131">directoryAudits</span><span class="sxs-lookup"><span data-stu-id="32c83-131">directoryAudits</span></span>|<span data-ttu-id="32c83-132">coleção [directoryAudit](directoryaudit.md)</span><span class="sxs-lookup"><span data-stu-id="32c83-132">[directoryAudit](directoryaudit.md) collection</span></span>| <span data-ttu-id="32c83-133">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="32c83-133">Read-only.</span></span> <span data-ttu-id="32c83-134">Anulável.</span><span class="sxs-lookup"><span data-stu-id="32c83-134">Nullable.</span></span>|
-|<span data-ttu-id="32c83-135">signIns</span><span class="sxs-lookup"><span data-stu-id="32c83-135">signIns</span></span>|<span data-ttu-id="32c83-136">coleção de [entrada](signin.md)</span><span class="sxs-lookup"><span data-stu-id="32c83-136">[signIn](signin.md) collection</span></span>| <span data-ttu-id="32c83-p104">Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="32c83-p104">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="b2585-132">directoryAudits</span><span class="sxs-lookup"><span data-stu-id="b2585-132">directoryAudits</span></span>|<span data-ttu-id="b2585-133">coleção [directoryAudit](directoryaudit.md)</span><span class="sxs-lookup"><span data-stu-id="b2585-133">[directoryAudit](directoryaudit.md) collection</span></span>| <span data-ttu-id="b2585-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b2585-134">Read-only.</span></span> <span data-ttu-id="b2585-135">Anulável.</span><span class="sxs-lookup"><span data-stu-id="b2585-135">Nullable.</span></span>|
+|<span data-ttu-id="b2585-136">signIns</span><span class="sxs-lookup"><span data-stu-id="b2585-136">signIns</span></span>|<span data-ttu-id="b2585-137">coleção de [entrada](signin.md)</span><span class="sxs-lookup"><span data-stu-id="b2585-137">[signIn](signin.md) collection</span></span>| <span data-ttu-id="b2585-p104">Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="b2585-p104">Read-only. Nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="32c83-139">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="32c83-139">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b2585-140">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b2585-140">JSON representation</span></span>
 
-<span data-ttu-id="32c83-140">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="32c83-140">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b2585-141">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b2585-141">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -52,10 +54,10 @@ ms.locfileid: "36730362"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="32c83-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="32c83-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b2585-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b2585-142">Example</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="32c83-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="32c83-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b2585-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="b2585-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_auditLogs"
@@ -63,19 +65,19 @@ ms.locfileid: "36730362"
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="32c83-143">C#</span><span class="sxs-lookup"><span data-stu-id="32c83-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b2585-144">C#</span><span class="sxs-lookup"><span data-stu-id="b2585-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="32c83-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="32c83-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b2585-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b2585-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="32c83-145">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="32c83-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b2585-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b2585-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-auditlogs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="32c83-146">Java</span><span class="sxs-lookup"><span data-stu-id="32c83-146">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b2585-147">Java</span><span class="sxs-lookup"><span data-stu-id="b2585-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-auditlogs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

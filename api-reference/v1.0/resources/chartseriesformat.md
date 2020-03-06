@@ -5,34 +5,36 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ce9a777936b25ed77b130dc2b2219eba0f72c183
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a44392eb718c157f6422228405f7bb2a4b411733
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029747"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533097"
 ---
-# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="8188e-103">Tipo de recurso ChartSeriesFormat</span><span class="sxs-lookup"><span data-stu-id="8188e-103">ChartSeriesFormat resource type</span></span>
+# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="161cb-103">Tipo de recurso ChartSeriesFormat</span><span class="sxs-lookup"><span data-stu-id="161cb-103">ChartSeriesFormat resource type</span></span>
 
-<span data-ttu-id="8188e-104">Abrange as propriedades de formatação da série do gráfico.</span><span class="sxs-lookup"><span data-stu-id="8188e-104">encapsulates the format properties for the chart series</span></span>
+<span data-ttu-id="161cb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="161cb-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="161cb-105">Abrange as propriedades de formatação da série do gráfico.</span><span class="sxs-lookup"><span data-stu-id="161cb-105">encapsulates the format properties for the chart series</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="8188e-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="8188e-105">Methods</span></span>
-<span data-ttu-id="8188e-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="8188e-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="161cb-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="161cb-106">Methods</span></span>
+<span data-ttu-id="161cb-107">Nenhum</span><span class="sxs-lookup"><span data-stu-id="161cb-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8188e-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8188e-107">Properties</span></span>
-<span data-ttu-id="8188e-108">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="8188e-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="161cb-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="161cb-108">Properties</span></span>
+<span data-ttu-id="161cb-109">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="161cb-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="8188e-109">Relações</span><span class="sxs-lookup"><span data-stu-id="8188e-109">Relationships</span></span>
-| <span data-ttu-id="8188e-110">Relação</span><span class="sxs-lookup"><span data-stu-id="8188e-110">Relationship</span></span> | <span data-ttu-id="8188e-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="8188e-111">Type</span></span>   |<span data-ttu-id="8188e-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="8188e-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="161cb-110">Relacionamento</span><span class="sxs-lookup"><span data-stu-id="161cb-110">Relationships</span></span>
+| <span data-ttu-id="161cb-111">Relação</span><span class="sxs-lookup"><span data-stu-id="161cb-111">Relationship</span></span> | <span data-ttu-id="161cb-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="161cb-112">Type</span></span>   |<span data-ttu-id="161cb-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="161cb-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8188e-113">fill</span><span class="sxs-lookup"><span data-stu-id="8188e-113">fill</span></span>|[<span data-ttu-id="8188e-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="8188e-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="8188e-p101">Representa o formato de preenchimento de uma série do gráfico, que inclui informações sobre a formatação da tela de fundo. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8188e-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="8188e-117">line</span><span class="sxs-lookup"><span data-stu-id="8188e-117">line</span></span>|[<span data-ttu-id="8188e-118">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="8188e-118">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="8188e-119">Representa a formatação de linha.</span><span class="sxs-lookup"><span data-stu-id="8188e-119">Represents line formatting.</span></span> <span data-ttu-id="8188e-120">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8188e-120">Read-only.</span></span>|
+|<span data-ttu-id="161cb-114">fill</span><span class="sxs-lookup"><span data-stu-id="161cb-114">fill</span></span>|[<span data-ttu-id="161cb-115">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="161cb-115">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="161cb-p101">Representa o formato de preenchimento de uma série do gráfico, que inclui informações sobre a formatação da tela de fundo. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="161cb-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="161cb-118">line</span><span class="sxs-lookup"><span data-stu-id="161cb-118">line</span></span>|[<span data-ttu-id="161cb-119">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="161cb-119">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="161cb-120">Representa a formatação de linha.</span><span class="sxs-lookup"><span data-stu-id="161cb-120">Represents line formatting.</span></span> <span data-ttu-id="161cb-121">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="161cb-121">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="8188e-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8188e-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="161cb-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="161cb-122">JSON representation</span></span>
 
-<span data-ttu-id="8188e-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8188e-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="161cb-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="161cb-123">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

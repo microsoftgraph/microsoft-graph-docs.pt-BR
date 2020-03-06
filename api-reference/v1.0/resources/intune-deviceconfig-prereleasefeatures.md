@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa02678bcbed5111b8c9b67163e569a2f4b6fc1f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 92b2f8e438b0d0aea50f7268e4d19bfc0b6b0c82
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530554"
 ---
-# <a name="prereleasefeatures-enum-type"></a><span data-ttu-id="992a8-103">tipo de enumeração prereleaseFeatures</span><span class="sxs-lookup"><span data-stu-id="992a8-103">prereleaseFeatures enum type</span></span>
+# <a name="prereleasefeatures-enum-type"></a><span data-ttu-id="6096f-103">tipo de enumeração prereleaseFeatures</span><span class="sxs-lookup"><span data-stu-id="6096f-103">prereleaseFeatures enum type</span></span>
 
-> <span data-ttu-id="992a8-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="992a8-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="6096f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6096f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="992a8-105">Valores possíveis para recursos de pré-lançamento.</span><span class="sxs-lookup"><span data-stu-id="992a8-105">Possible values for pre-release features.</span></span>
+> <span data-ttu-id="6096f-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6096f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="992a8-106">Membros</span><span class="sxs-lookup"><span data-stu-id="992a8-106">Members</span></span>
-|<span data-ttu-id="992a8-107">Membro</span><span class="sxs-lookup"><span data-stu-id="992a8-107">Member</span></span>|<span data-ttu-id="992a8-108">Valor</span><span class="sxs-lookup"><span data-stu-id="992a8-108">Value</span></span>|<span data-ttu-id="992a8-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="992a8-109">Description</span></span>|
+<span data-ttu-id="6096f-106">Valores possíveis para recursos de pré-lançamento.</span><span class="sxs-lookup"><span data-stu-id="6096f-106">Possible values for pre-release features.</span></span>
+
+## <a name="members"></a><span data-ttu-id="6096f-107">Membros</span><span class="sxs-lookup"><span data-stu-id="6096f-107">Members</span></span>
+|<span data-ttu-id="6096f-108">Membro</span><span class="sxs-lookup"><span data-stu-id="6096f-108">Member</span></span>|<span data-ttu-id="6096f-109">Valor</span><span class="sxs-lookup"><span data-stu-id="6096f-109">Value</span></span>|<span data-ttu-id="6096f-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="6096f-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="992a8-110">UserDefined</span><span class="sxs-lookup"><span data-stu-id="992a8-110">userDefined</span></span>|<span data-ttu-id="992a8-111">,0</span><span class="sxs-lookup"><span data-stu-id="992a8-111">0</span></span>|<span data-ttu-id="992a8-112">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="992a8-112">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="992a8-113">settingsOnly</span><span class="sxs-lookup"><span data-stu-id="992a8-113">settingsOnly</span></span>|<span data-ttu-id="992a8-114">1</span><span class="sxs-lookup"><span data-stu-id="992a8-114">1</span></span>|<span data-ttu-id="992a8-115">Configurações apenas recursos de pré-lançamento.</span><span class="sxs-lookup"><span data-stu-id="992a8-115">Settings only pre-release features.</span></span>|
-|<span data-ttu-id="992a8-116">settingsAndExperimentations</span><span class="sxs-lookup"><span data-stu-id="992a8-116">settingsAndExperimentations</span></span>|<span data-ttu-id="992a8-117">duas</span><span class="sxs-lookup"><span data-stu-id="992a8-117">2</span></span>|<span data-ttu-id="992a8-118">Configurações e experimentos recursos de pré-lançamento.</span><span class="sxs-lookup"><span data-stu-id="992a8-118">Settings and experimentations pre-release features.</span></span>|
-|<span data-ttu-id="992a8-119">notAllowed</span><span class="sxs-lookup"><span data-stu-id="992a8-119">notAllowed</span></span>|<span data-ttu-id="992a8-120">3D</span><span class="sxs-lookup"><span data-stu-id="992a8-120">3</span></span>|<span data-ttu-id="992a8-121">Recursos de pré-lançamento não permitidos.</span><span class="sxs-lookup"><span data-stu-id="992a8-121">Pre-release features not allowed.</span></span>|
+|<span data-ttu-id="6096f-111">UserDefined</span><span class="sxs-lookup"><span data-stu-id="6096f-111">userDefined</span></span>|<span data-ttu-id="6096f-112">,0</span><span class="sxs-lookup"><span data-stu-id="6096f-112">0</span></span>|<span data-ttu-id="6096f-113">Definido pelo usuário, valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="6096f-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="6096f-114">settingsOnly</span><span class="sxs-lookup"><span data-stu-id="6096f-114">settingsOnly</span></span>|<span data-ttu-id="6096f-115">1 </span><span class="sxs-lookup"><span data-stu-id="6096f-115">1</span></span>|<span data-ttu-id="6096f-116">Configurações apenas recursos de pré-lançamento.</span><span class="sxs-lookup"><span data-stu-id="6096f-116">Settings only pre-release features.</span></span>|
+|<span data-ttu-id="6096f-117">settingsAndExperimentations</span><span class="sxs-lookup"><span data-stu-id="6096f-117">settingsAndExperimentations</span></span>|<span data-ttu-id="6096f-118">2 </span><span class="sxs-lookup"><span data-stu-id="6096f-118">2</span></span>|<span data-ttu-id="6096f-119">Configurações e experimentos recursos de pré-lançamento.</span><span class="sxs-lookup"><span data-stu-id="6096f-119">Settings and experimentations pre-release features.</span></span>|
+|<span data-ttu-id="6096f-120">notAllowed</span><span class="sxs-lookup"><span data-stu-id="6096f-120">notAllowed</span></span>|<span data-ttu-id="6096f-121">3 </span><span class="sxs-lookup"><span data-stu-id="6096f-121">3</span></span>|<span data-ttu-id="6096f-122">Recursos de pré-lançamento não permitidos.</span><span class="sxs-lookup"><span data-stu-id="6096f-122">Pre-release features not allowed.</span></span>|
 
 
 

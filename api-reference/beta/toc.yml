@@ -288,7 +288,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Correio
+            - name: Email
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -392,7 +392,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Trabalho em equipe
+            - name: Teamwork
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -906,7 +906,7 @@
                       href: api/audioroutinggroup-get.md
                     - name: Atualizar
                       href: api/audioroutinggroup-update.md
-                    - name: Delete
+                    - name: Excluir
                       href: api/audioroutinggroup-delete.md
             - name: Reunião online
               href: resources/onlinemeeting.md
@@ -924,7 +924,7 @@
                   href: api/presence-get.md
                 - name: Obter presença para vários usuários
                   href: api/cloudcommunications-getpresencesbyuserid.md
-            - name: Registros de chamadas (visualização)
+            - name: Registros de chamada (visualização)
               items:
                 - name: Visão Geral
                   href: resources/callrecords-api-overview.md
@@ -982,7 +982,7 @@
                   href: api/bookingbusiness-get.md
                 - name: Atualizar
                   href: api/bookingbusiness-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/bookingbusiness-delete.md
                 - name: Publicar
                   href: api/bookingbusiness-publish.md
@@ -1023,7 +1023,7 @@
                   href: api/bookingcustomer-get.md
                 - name: Atualizar
                   href: api/bookingcustomer-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/bookingcustomer-delete.md
             - name: Serviço de reserva
               href: resources/bookingservice.md
@@ -1036,7 +1036,7 @@
                   href: api/bookingservice-get.md
                 - name: Atualizar
                   href: api/bookingservice-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/bookingservice-delete.md
             - name: Membro da equipe de reserva
               href: resources/bookingstaffmember.md
@@ -1049,7 +1049,7 @@
                   href: api/bookingstaffmember-get.md
                 - name: Atualizar
                   href: api/bookingstaffmember-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/bookingstaffmember-delete.md
         - name: Dispositivos e aplicativos
           href: resources/intune-graph-overview.md
@@ -7618,7 +7618,7 @@
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                     - name: Listar
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                    - name: Delete
+                    - name: Excluir
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                 - name: Script de gerenciamento de dispositivo
                   href: resources/intune-shared-devicemanagementscript.md
@@ -8013,6 +8013,8 @@
             - name: Categoria
               href: resources/educationcategory.md
               items:
+                - name: Criar categoria
+                  href: api/educationclass-post-category.md
                 - name: Obter categoria
                   href: api/educationcategory-get.md
                 - name: Excluir categoria
@@ -8020,6 +8022,8 @@
             - name: Amostra rubric
               href: resources/educationrubric.md
               items:
+                - name: Criar amostra rubric
+                  href: api/educationuser-post-rubrics.md
                 - name: Obter amostra rubric
                   href: api/educationrubric-get.md
                 - name: Atualizar amostra rubric
@@ -8619,7 +8623,7 @@
                       href: api/conditionalaccesspolicy-get.md
                     - name: Atualizar
                       href: api/conditionalaccesspolicy-update.md
-                    - name: Delete
+                    - name: Excluir
                       href: api/conditionalaccesspolicy-delete.md
                 - name: Locais nomeados
                   items:
@@ -8645,7 +8649,7 @@
                           href: api/countrynamedlocation-get.md
                         - name: Atualizar
                           href: api/countrynamedlocation-update.md
-                        - name: Delete
+                        - name: Excluir
                           href: api/countrynamedlocation-delete.md
                     - name: Local nomeado por IP
                       items:
@@ -8659,7 +8663,7 @@
                           href: api/ipnamedlocation-get.md
                         - name: Atualizar
                           href: api/ipnamedlocation-update.md
-                        - name: Delete
+                        - name: Excluir
                           href: api/ipnamedlocation-delete.md
             - name: Contratos
               href: resources/contract.md
@@ -8858,7 +8862,7 @@
                     - name: Criar
                       href: api/accesspackageresourcerequest-post.md
                 - name: Escopo de função de recurso de pacote de acesso
-                  href: resources/accesspackageresourcerequest.md
+                  href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: Listar
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
@@ -8875,7 +8879,7 @@
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Atualizar
                   href: api/featurerolloutpolicy-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/featurerolloutpolicy-delete.md
                 - name: Criar aplica-se
                   href: api/featurerolloutpolicy-post-appliesto.md
@@ -9405,7 +9409,7 @@
                   href: api/trustframeworkpolicy-get.md
                 - name: Atualizar
                   href: api/trustframework-put-trustframeworkpolicy.md
-                - name: Delete
+                - name: Excluir
                   href: api/trustframeworkpolicy-delete.md
             - name: Conjunto de chaves de estrutura de confiança
               href: resources/trustframeworkkeyset.md
@@ -9418,7 +9422,7 @@
                   href: api/trustframeworkkeyset-get.md
                 - name: Atualizar
                   href: api/trustframeworkkeyset-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/trustframeworkkeyset-delete.md
                 - name: Gerar chave
                   href: api/trustframeworkkeyset-generatekey.md
@@ -9441,7 +9445,7 @@
                   href: api/identityuserflow-get.md
                 - name: Excluir
                   href: api/identityuserflow-delete.md
-        - name: Correio
+        - name: Email
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -10538,7 +10542,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
@@ -10796,7 +10800,7 @@
                       href: api/openshift-get.md
                     - name: Atualizar
                       href: api/openshift-update.md
-                    - name: Delete
+                    - name: Excluir
                       href: api/openshift-delete.md
                 - name: Abrir solicitação de alteração de turno
                   href: resources/openshiftchangerequest.md
@@ -10864,7 +10868,7 @@
                       href: api/timeoffrequest-get.md
                     - name: Atualizar
                       href: api/timeoffrequest-update.md
-                    - name: Delete
+                    - name: Excluir
                       href: api/timeoffrequest-delete.md
                     - name: Aprovar
                       href: api/timeoffrequest-approve.md
@@ -10917,7 +10921,7 @@
                   href: api/outlooktask-get.md
                 - name: Atualizar
                   href: api/outlooktask-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/outlooktask-delete.md
                 - name: Completo
                   href: api/outlooktask-complete.md
@@ -10936,7 +10940,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: Atualizar
                   href: api/outlooktaskfolder-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/outlooktaskfolder-delete.md
                 - name: Listar tarefas na pasta
                   href: api/outlooktaskfolder-list-tasks.md
@@ -10953,7 +10957,7 @@
                   href: api/outlooktaskgroup-get.md
                 - name: Atualizar
                   href: api/outlooktaskgroup-update.md
-                - name: Delete
+                - name: Excluir
                   href: api/outlooktaskfolder-delete.md
                 - name: Listar pastas de tarefas no grupo
                   href: api/outlooktaskfolder-list-tasks.md
