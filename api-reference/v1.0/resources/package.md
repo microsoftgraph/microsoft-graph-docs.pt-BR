@@ -2,19 +2,21 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Packager
+title: Pacote
 localization_priority: Normal
 description: " ou uma coleção de itens que deve ser tratada como uma coleção em vez de itens individuais."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d8eff13e0cfdc6b355cc289833e7b3050ded2641
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10e99df4a2411fd63e8b8a2ad78d2aa5f0684571
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035662"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534097"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
+
+Namespace: microsoft.graph
 
 O recurso **Package** indica que um DriveItem é o item de nível superior em um "pacote" ou uma coleção de itens que devem ser tratados como uma coleção, em vez de itens individuais.
 
@@ -33,7 +35,7 @@ DriveItems com a faceta **package** não incluem uma faceta **folder** ou **file
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da Propriedade | Tipo   | Descrição                                                                                                                                                                      |
+| Nome da propriedade | Tipo   | Descrição                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type          | string | Uma cadeia de caracteres indicando o tipo de pacote. Embora `oneNote` seja o único valor definido atualmente, você deve esperar que outros tipos de pacote sejam retornados e lidar com eles da forma apropriada. |
 

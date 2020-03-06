@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4ea1daabd57724c789dfb690321e2f485ded225d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8c7880eb89aa4147baa7d8b0bda3aa80d1628bbb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863782"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533705"
 ---
 # <a name="signinstatus-resource-type"></a>tipo de recurso signInStatus
+
+Namespace: microsoft.graph
 
 Fornece o status de entrada (sucesso ou falha) da entrada.
 

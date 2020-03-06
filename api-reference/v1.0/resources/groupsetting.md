@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c85b062e955fc15f83728813427f2de5579e297e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dabede2f21d7ed81bd32eee084e044c00382c447
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030237"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532914"
 ---
 # <a name="groupsetting-resource-type"></a>tipo de recurso groupSetting
+
+Namespace: microsoft.graph
 
 Os comportamentos de controle de configurações de grupo, como listas de palavras bloqueadas para nomes de exibição de grupo, ou se os usuários convidados podem ser proprietários de grupo.
 
@@ -32,10 +34,10 @@ As configurações de grupo podem ser criadas com base no [groupSettingTemplates
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|displayName|String| Exibe o nome deste grupo de configurações, que vem do modelo associado. |
+|displayName|Cadeia de caracteres| Exibe o nome deste grupo de configurações, que vem do modelo associado. |
 |id|String| Identificador exclusivo dessas configurações. Somente leitura. |
 |templateId|String| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura. |
-|values|[](settingvalue.md) coleção SettingValue| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo. |
+|values|coleção [SettingValue](settingvalue.md)| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo. |
 
 ## <a name="relationships"></a>Relações
 

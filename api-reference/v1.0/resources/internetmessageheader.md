@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 14d4cb88c79651bbba381206df7d5ff9b26db0bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f717be91f466790c86b529d9cc81852e7c37853a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030195"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531258"
 ---
 # <a name="internetmessageheader-resource-type"></a>Tipo de recurso internetMessageHeader
+
+Namespace: microsoft.graph
 
 
 Um par chave-valor que representa um cabeçalho de mensagem da Internet, conforme definido pelo [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede obtido por uma mensagem do remetente para o destinatário. 
@@ -23,7 +25,7 @@ Confira exemplos de um cabeçalho de mensagem da Internet em [Exibir cabeçalhos
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Representa a chave em um par chave-valor.|
+|nome|string|Representa a chave em um par chave-valor.|
 |valor|string|O valor em um par chave-valor.|
 
 ## <a name="json-representation"></a>Representação JSON

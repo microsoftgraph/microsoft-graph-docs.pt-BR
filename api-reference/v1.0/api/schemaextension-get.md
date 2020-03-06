@@ -5,15 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b220de863e70c9540915ee6ba42480417576e96e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 163d13fd4045442188aee76c39b5f2bfa6af893a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021533"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509959"
 ---
 # <a name="get-schemaextension"></a>Get schemaExtension
-Obtenha as propriedades da definição [schemaExtension](../resources/schemaextension.md) especificada.
+
+Namespace: Microsoft. Graph Obtém as propriedades da definição [schemaExtension](../resources/schemaextension.md) especificada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

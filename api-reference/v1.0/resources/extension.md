@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e34076cb7bbeec338e71aab6dc7ca9dc4e6cca37
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89375d4856c5d2d93931c5e2d9c2e3b492c85273
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030391"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532963"
 ---
 # <a name="extension-resource-type"></a>Tipo de recurso extension
+
+Namespace: microsoft.graph
 
 Um tipo abstrato para oferecer suporte ao tipo [openTypeExtension](opentypeextension.md) livre do OData v4.
 

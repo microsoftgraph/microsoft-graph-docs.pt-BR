@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c7bf5eef63921f1cc3fab985f4832177767fe1fc
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: c2b7253217e6823d6d74a9114c2e9ce3998af103
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036071"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532095"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso anexo
+
+Namespace: microsoft.graph
 
 Você pode adicionar conteúdo relacionado a um [evento](../resources/event.md) de usuário, [mensagem](../resources/message.md) ou [postagem](../resources/post.md) na forma de anexo.
 

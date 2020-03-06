@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c5b841495b19a81967ba056f702a88c4cbe74efc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b3ec3c9237e246b2af10a867155bc7b6d360a67f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033359"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533380"
 ---
 # <a name="pivottable-resource-type"></a>tipo de recurso de tabela dinâmica
+
+Namespace: microsoft.graph
 
 Representa uma Tabela Dinâmica do Excel.
 
@@ -30,7 +32,7 @@ Representa uma Tabela Dinâmica do Excel.
 |id|Cadeia de caracteres| Id da Tabela Dinâmica.   Somente leitura.|
 |name|String|Nome da Tabela Dinâmica.    |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |planilha|[WorkbookWorksheet](worksheet.md)| A planilha que contém a Tabela Dinâmica atual. Somente leitura.   |

@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a76d11472b3faef95e87ed4724f1397ebe467a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70dfe86840bd908a2e626b7f965d89251b9221aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033779"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533501"
 ---
 # <a name="teamsappinstallation-resource-type"></a>tipo de recurso teamsAppInstallation
+
+Namespace: microsoft.graph
 
 Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que faça parte do aplicativo se tornará parte de qualquer equipe à qual o aplicativo é adicionado.
 
@@ -31,7 +33,7 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que
 |:------------------- |:-------- |:----------- |
 | id                  | string   | Uma ID exclusiva (não a AppID do Teams). |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação   | Tipo    | Descrição |
 |:---------------|:--------|:----------|

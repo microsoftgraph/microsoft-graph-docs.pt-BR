@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b5954d475288dab8d19755150c8510f145836204
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17f14da063b5e25de77bbc85e0c56ffa934385f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014631"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516890"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
+
+Namespace: microsoft.graph
 
 Adiciona um grupo a uma política de ciclo de vida.
 
@@ -49,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Quando é bem-sucedido, este método retorna um código de resposta `200 OK`. Quando o grupo é adicionado à política, o valor **true** é retornado no corpo da resposta. Caso contrário, um valor **false** é retornado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK`. Quando o grupo é adicionado à política, o valor **true** é retornado no corpo da resposta. Caso contrário, um valor **false** é retornado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9761f4423397279c17a96fc2ad4aa0f8ba6afb9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5802745d56a24f8c879fda43deebdbae5977adb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032757"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531737"
 ---
 # <a name="customtimezone-resource-type"></a>Tipo de recurso customTimeZone
+
+Namespace: microsoft.graph
 
 Representa um fuso horário em que a transição do horário padrão para o horário de verão, ou vice-versa, não é padrão.
 
@@ -22,7 +24,7 @@ Representa um fuso horário em que a transição do horário padrão para o hor�
 |:---------------|:--------|:----------|
 | bias | Edm.Int32 | A diferença de tempo em relação ao fuso horário UTC (Tempo Universal Coordenado). Este valor está em minutos.Os fusos horários que estão adiantados em relação ao UTC têm uma diferença de tempo positiva, enquanto os atrasados têm uma diferença de tempo negativa.|
 | daylightOffset | [daylightTimeZoneOffset](daylighttimezoneoffset.md) | Especifica quando o fuso horário muda do horário padrão para o horário de verão. |
-| name | string | O nome do fuso horário personalizado. |
+| nome | string | O nome do fuso horário personalizado. |
 | standardOffset | [standardTimeZoneOffset](standardtimezoneoffset.md) | Especifica quando o fuso horário muda do horário de verão para o horário padrão. |
 
 

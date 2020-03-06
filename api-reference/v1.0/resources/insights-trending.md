@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 624319d216758228de1c3fbed4e7b4f172a9e7ce
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: a3b836eaf503315b4c47d71fce3f308c35dd8aed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844997"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531276"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendência
+
+Namespace: microsoft.graph
 
 Relação avançada conectando um usuário a documentos que estão em tendência ao usuário (são relevantes para o usuário). Os arquivos do OneDrive e os arquivos armazenados em sites de equipe do SharePoint podem ser tendências em torno do usuário.
 
@@ -31,7 +33,7 @@ Relação avançada conectando um usuário a documentos que estão em tendência
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Propriedades que você pode usar para visualizar o documento em sua experiência. |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | Propriedades de referência do documento de tendência, como a URL e o tipo do documento. |
 | lastModifiedDateTime  | DateTimeOffset            | |
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|

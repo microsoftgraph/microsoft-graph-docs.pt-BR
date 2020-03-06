@@ -5,14 +5,16 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 346991b4cf4d545b3d7ccafb87cab9c9b698c940
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ff33c63cd21be11a05f147c0821502dc9a2c9202
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034941"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533921"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
+
+Namespace: microsoft.graph
 
 Range representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc.
 

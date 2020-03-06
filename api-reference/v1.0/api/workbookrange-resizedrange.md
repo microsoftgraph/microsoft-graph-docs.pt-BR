@@ -5,15 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1d0870bbcba63e2c1571fcec0a156e2f2ef8f7fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89fa736cdf2366fa028e7b3a0980794ab1af4cd8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026342"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508748"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
-Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.
+
+Namespace: Microsoft. Graph Obtém um objeto Range semelhante ao objeto Range atual, mas com seu canto inferior direito expandido (ou contratado) por um número de linhas e colunas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

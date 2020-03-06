@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7605cf55e985791f6723b88485f5a51b2636e026
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 696a6a3b02f90abe1456f99d9a40a4d9127b5697
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033870"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533544"
 ---
 # <a name="teamfunsettings-resource-type"></a>tipo de recurso teamFunSettings
+
+Namespace: microsoft.graph
 
 
 

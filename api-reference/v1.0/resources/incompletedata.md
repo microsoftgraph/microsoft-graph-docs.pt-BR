@@ -6,14 +6,16 @@ description: A faceta incompleteData indica que um recurso foi gerado com dados 
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0ac77c5dc4daed9330c4fb71185e9505feee5048
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5fdf78b0fdb0a34e87296619c477d9f868d0756e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029236"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531320"
 ---
 # <a name="incompletedata-resource-type"></a>tipo de recurso incompleteData
+
+Namespace: microsoft.graph
 
 A faceta **incompleteData** indica que um recurso foi gerado com dados incompletos.
 As propriedades dentro podem fornecer informações sobre o motivo pelo qual os dados estão incompletos.

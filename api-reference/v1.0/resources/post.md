@@ -5,15 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 43837b1403b7b213b1b8a30002aeb53b8fa297a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f03117cce8e21f82ada720477da5db24c2a8516
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035095"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533958"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
-Representa um item Post individual em uma entidade [conversationThread](conversationthread.md).
+
+Namespace: Microsoft. Graph representa um item de postagem individual em uma entidade [conversationThread](conversationthread.md) .
 
 Embora você não possa criar explicitamente uma postagem, seguir um destes procedimentos criaria uma postagem:
 
@@ -49,8 +50,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
-|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
+|body|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
+|categories|String collection|As categorias associadas à postagem.|
 |changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|
@@ -63,7 +64,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|Contém o endereço do remetente. O valor de Sender será considerado o endereço do usuário autenticado caso o remetente não seja especificado. Esta é uma propriedade padrão.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [Attachment](attachment.md)| Somente leitura. Anulável.|

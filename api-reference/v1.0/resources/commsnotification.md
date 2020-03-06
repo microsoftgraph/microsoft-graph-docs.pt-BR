@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7d94b7462c50ca5a9304a2c4c320f6e244815373
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d11bda4be798bb4a9d9c0e1048258020c5c2ca08
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913244"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533053"
 ---
 # <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
+
+Namespace: microsoft.graph
 
 Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.
 

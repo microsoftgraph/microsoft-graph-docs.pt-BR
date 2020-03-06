@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5dfadf90d2498fa13f2367ca7467bbce5f810e3f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ec433c2ad38e967d7772031ab654e35fafa7c8b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355985"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531037"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe que contém as propriedades de Evento de Auditoria.
 
@@ -33,7 +35,7 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|String|Nome de exibição do evento.|
+|displayName|Cadeia de caracteres|Nome de exibição do evento.|
 |componentName|String|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
 |atividade|String|Nome amigável da atividade.|

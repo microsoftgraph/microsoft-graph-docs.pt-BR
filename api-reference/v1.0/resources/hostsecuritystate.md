@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: dabe7d0aa026cb1b514e95fbc953dcb1974f8925
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8993e9ac301bc1cc0ae4da4ec66cc131a3e06c18
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029271"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531351"
 ---
 # <a name="hostsecuritystate-resource-type"></a>tipo de recurso hostSecurityState
+
+Namespace: microsoft.graph
 
 Contém informações de estado sobre o host (incluindo dispositivos, computadores e assim por diante).
 

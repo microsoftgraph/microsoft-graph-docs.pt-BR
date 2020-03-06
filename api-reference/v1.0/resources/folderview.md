@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso FolderView fornece ou define recomendações sobre a experiência do usuário de uma pasta.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 67ec2e079348cc45664804d39314e6c81f4548e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a614f0a14f6dc12df412692c01b8005e62665143
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032449"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532936"
 ---
 # <a name="folderview-resource-type"></a>Tipo de recurso FolderView
+
+Namespace: microsoft.graph
 
 O recurso **FolderView** fornece ou define recomendações sobre a experiência do usuário de uma pasta.
 

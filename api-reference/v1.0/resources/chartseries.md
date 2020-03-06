@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4ecdc4c6f249b6783b023d0a69832a9415fc8549
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f7d42633321c78eb03942072731b0636a8ca73b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032911"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531828"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
+
+Namespace: microsoft.graph
 
 Representa uma série de um gráfico.
 
@@ -31,9 +33,9 @@ Representa uma série de um gráfico.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Representa o nome de uma série do gráfico.|
+|nome|string|Representa o nome de uma série do gráfico.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[WorkbookChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: textColumn em um recurso columnDefinition indica que os valores da coluna são texto.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 37a5bbd985d163cf627f4bc0a16a756eaf00af66
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 67e6b1f24155a8cfcecb2fb2443f3b1536ba48bd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033653"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533473"
 ---
 # <a name="textcolumn-resource-type"></a>Tipo de recurso TextColumn
+
+Namespace: microsoft.graph
 
 **textColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são texto.
 

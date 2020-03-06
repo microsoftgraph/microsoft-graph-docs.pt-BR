@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cd551085dac72b2f63e2cb67d9ada978746c0b5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d2c3311259b61790244fe42c0fc1d73e63ac058
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030076"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532103"
 ---
 # <a name="assignedlicense-resource-type"></a>Tipo de recurso assignedLicense
+
+Namespace: microsoft.graph
 
 Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade [user](user.md) é uma coleção de **assignedLicense**.
 

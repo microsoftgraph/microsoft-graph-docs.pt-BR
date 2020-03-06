@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f8df5720e4ec3385f84e811906965f564011f3e3
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 68265b319fd567097b72c9eaad82275fd3faefab
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36633822"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518599"
 ---
 # <a name="patch-channel"></a>Canal de patch
+
+Namespace: microsoft.graph
 
 Atualiza as propriedades do [canal](../resources/channel.md)especificado.
 
@@ -55,7 +57,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Este é um exemplo da solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -64,7 +66,7 @@ Este é um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

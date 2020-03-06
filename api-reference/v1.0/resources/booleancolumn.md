@@ -7,14 +7,16 @@ localization_priority: Normal
 description: booleanColumn em um recurso columnDefinition indica que a coluna mantém um valor booliano.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: baa9b17088a025f25b68b6dd7eb78571b1013837
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aec08623e2ee51a17a83ba0ec139c0524258378c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029958"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531991"
 ---
 # <a name="booleancolumn-resource-type"></a>Tipo de recurso BooleanColumn
+
+Namespace: microsoft.graph
 
 **booleanColumn** em um recurso [columnDefinition](columndefinition.md) indica que a coluna mantém um valor booliano.
 

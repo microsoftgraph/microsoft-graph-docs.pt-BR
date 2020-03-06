@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: adf67d503fa7576ad7446845a98bf799218f768d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28734c08d4626805de467ebad8c640acf3bdf7f1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030286"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531389"
 ---
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
+
+Namespace: microsoft.graph
 
 
 Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde. 

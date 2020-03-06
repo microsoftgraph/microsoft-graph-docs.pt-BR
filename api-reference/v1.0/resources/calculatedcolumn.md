@@ -7,14 +7,16 @@ localization_priority: Normal
 description: calculatedColumn em um recurso columnDefinition indica que os dados da coluna são calculados com base em outras colunas do site.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 19f11c7033f03dbf4a190acbd6df54bbdfe1fa24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77db50430d2d28eb8d23a7e45018b84734dcb77b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029971"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531997"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
+
+Namespace: microsoft.graph
 
 **calculatedColumn** em um recurso [columnDefinition](columndefinition.md) indica que os dados da coluna são calculados com base em outras colunas do site.
 

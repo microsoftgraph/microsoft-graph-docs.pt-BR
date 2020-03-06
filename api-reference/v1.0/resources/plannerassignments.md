@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1bcb28800da11255027394ea8de51e9438a5c488
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 915064d1c697f05c66dfefbbda39a6d31d7d8b47
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035333"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534026"
 ---
 # <a name="plannerassignments-resource-type"></a>tipo de recurso plannerAssignments
+
+Namespace: microsoft.graph
 
 O recurso **plannerAssignments** representa as atribuições de um recurso [plannerTask](plannertask.md) . Este tipo é um tipo aberto. Cada nome de propriedade desse tipo é a ID de um objeto de usuário ao qual uma tarefa é atribuída. Os usuários podem ser atribuídos a tarefas com a criação de novas propriedades nomeadas com a ID, com um objeto [plannerassignment](plannerassignment.md) com a propriedade orderHint preenchida como o valor. Os destinatários podem ser desatribuídos da tarefa definindo o propriedade nomeado com sua ID como nulo.
 

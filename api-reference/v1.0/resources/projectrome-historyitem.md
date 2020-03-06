@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 38cba88a5605e1c67ae84b684425db3c71f5d51c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4053811f1f44621b05830bf40b17d02e0112b455
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035004"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533944"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso historyItem
+
+Namespace: microsoft.graph
 
 Representa um item de histórico de uma [atividade](projectrome-activity.md) em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de histórico que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
 
@@ -39,7 +41,7 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 |expirationDateTime | DateTimeOffset | Opcional. DateTime UTC quando o **historyItem** passará pela exclusão permanente. Pode ser definido pelo cliente.|
 |activeDurationSeconds | int | Opcional. A duração do contrato de usuário ativo. Se não for fornecido, isso será calculado a partir do **startedDateTime** e do **lastActiveDateTime**.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 |Relação | Tipo | Descrição|
 |:------------|:-----|:-----------|

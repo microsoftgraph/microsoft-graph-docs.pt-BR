@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d86bd706eb2fc7702eef101797e7f1da326d4d16
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 453e542e14d4f4b62acb90ac51983ea7a6739e46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355950"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532711"
 ---
 # <a name="installstate-enum-type"></a>tipo de enumeração InstallState
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para o estado de instalação.
 
@@ -22,11 +24,11 @@ Valores possíveis para o estado de instalação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não aplicável|,0|Não aplicável.|
-|instalação|1|Instalação.|
-|falhou|duas|Falhou.|
-|não instalado|3D|Não instalado.|
-|uninstallFailed|quatro|Falha na desinstalação.|
-|desconhecido|0,5|Unknown.|
+|instalação|1 |Instalação.|
+|falhou|2 |Falhou.|
+|não instalado|3 |Não instalado.|
+|uninstallFailed|4 |Falha na desinstalação.|
+|desconhecido|5 |Unknown.|
 
 
 

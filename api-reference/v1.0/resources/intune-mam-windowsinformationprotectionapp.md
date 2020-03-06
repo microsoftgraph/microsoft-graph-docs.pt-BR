@@ -5,24 +5,26 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3a53ffd35ced4b40476868e7e492364ec8ffa0d
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 97e1e866dc71b08064fe46878c25cb5b43c90177
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367347"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533333"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Tipo de recurso windowsInformationProtectionApp
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Aplicativo para proteção de informações do Windows
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição do aplicativo.|
-|descrição|String|A descrição do aplicativo.|
+|displayName|Cadeia de caracteres|Nome de exibição do aplicativo.|
+|description|String|A descrição do aplicativo.|
 |publisherName|String|O nome do distribuidor|
 |productName|Cadeia de caracteres|O nome do produto.|
 |negado|Booliano|Se verdadeiro, é negada proteção ou isenção ao aplicativo.|

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: O recurso contentType representa um tipo de conteúdo no SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b26f9b7a3bafb7b6185aa781c1f842f7c20adab3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c05ed39c0f92b209925fc9a722c5562999ae438c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029635"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531786"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
+
+Namespace: microsoft.graph
 
 O recurso **contentType** representa um _tipo de conteúdo_ no SharePoint.
 Os tipos de conteúdo permitem que você defina um conjunto de colunas que deve estar presente em cada [**ListItem**][listItem] em uma [**lista**][list].
@@ -54,7 +56,7 @@ Aqui está uma representação JSON de um recurso **contentType**.
 | **description**   | string               | O texto descritivo do item.
 | **group**         | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.
 | **hidden**        | booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.
-| **id**            | string               | O identificador exclusivo do tipo de conteúdo.
+| **id**            | cadeia de caracteres               | O identificador exclusivo do tipo de conteúdo.
 | **inheritedFrom** | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.
 | **name**          | string               | O nome do tipo de conteúdo.
 | **order**         | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.

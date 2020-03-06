@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c12bdfbf36b4935ff417c08209aff32de105a9b
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: bfd74da1d030b6a424662949d13180cda2a46b6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37361480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42512080"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [deviceCategory](../resources/intune-shared-devicecategory.md).
 
@@ -24,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Integração** e <br> &nbsp; &nbsp; **Gerenciamento de dispositivo**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **Integração** e <br> &nbsp;&nbsp; **Gerenciamento de dispositivos**| DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -54,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
 |displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
-|descrição|String|Descrição opcional da categoria do dispositivo.|
+|description|String|Descrição opcional da categoria do dispositivo.|
 
 
 

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: aca4f3f5cefe804fa99d4f97f54b544030a28406
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 4229785854934294cff01c6173131f24bc6de2bc
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35737716"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636362"
 ---
 ```javascript
 
@@ -23,6 +23,6 @@ const workbookRangeFormat = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$A$1')/format')
-    .update({workbookRangeFormat : workbookRangeFormat});
+    .update(workbookRangeFormat);
 
 ```

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 60f218686ce9d6eab98ad4a5b2cd269d79000aa7
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e1ac4e27243adc47b087aa6453ff316d9b2e2fa1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360290"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530967"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeração androidRequiredPasswordType
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+Namespace: microsoft.graph
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de senha exigido pelo Android.
 
@@ -22,13 +24,13 @@ Tipo de senha exigido pelo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|caracteres|1|Senha alfabética necessária.|
-|tecla|duas|Senha alfanumérica obrigatória.|
-|alphanumericWithSymbols|3D|Alfanumérica com símbolos de senha necessários.|
-|lowSecurityBiometric|quatro|Senha com base em Biometria de segurança baixa necessária.|
-|numéricos|0,5|Senha numérica obrigatória.|
-|numericComplex|6|Senha numérica complexa obrigatória.|
-|qualquer|178|Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
+|caracteres|1 |Senha alfabética necessária.|
+|tecla|2 |Senha alfanumérica obrigatória.|
+|alphanumericWithSymbols|3 |Alfanumérica com símbolos de senha necessários.|
+|lowSecurityBiometric|4 |Senha com base em Biometria de segurança baixa necessária.|
+|numéricos|5 |Senha numérica obrigatória.|
+|numericComplex|6 |Senha numérica complexa obrigatória.|
+|qualquer|7 |Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
 
 
 
