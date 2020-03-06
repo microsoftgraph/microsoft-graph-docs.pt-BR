@@ -5,20 +5,22 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: be196cff07a33f1debabd71e3e344aee220bf0a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f92d59913065bad82e2af0726a0669c98e4d4df3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035837"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534160"
 ---
-# <a name="onenoteentitybasemodel-resource"></a><span data-ttu-id="833ec-103">recurso onenoteEntityBaseModel</span><span class="sxs-lookup"><span data-stu-id="833ec-103">onenoteEntityBaseModel resource</span></span>
+# <a name="onenoteentitybasemodel-resource"></a><span data-ttu-id="0099c-103">recurso onenoteEntityBaseModel</span><span class="sxs-lookup"><span data-stu-id="0099c-103">onenoteEntityBaseModel resource</span></span>
 
-<span data-ttu-id="833ec-104">Este é o tipo base para entidades do OneNote.</span><span class="sxs-lookup"><span data-stu-id="833ec-104">This is the base type for OneNote entities.</span></span>
+<span data-ttu-id="0099c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0099c-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="833ec-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="833ec-105">JSON representation</span></span>
+<span data-ttu-id="0099c-105">Este é o tipo base para entidades do OneNote.</span><span class="sxs-lookup"><span data-stu-id="0099c-105">This is the base type for OneNote entities.</span></span>
 
-<span data-ttu-id="833ec-106">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="833ec-106">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0099c-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0099c-106">JSON representation</span></span>
+
+<span data-ttu-id="0099c-107">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0099c-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,10 +38,10 @@ ms.locfileid: "36035837"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="833ec-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="833ec-107">Properties</span></span>
-| <span data-ttu-id="833ec-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="833ec-108">Property</span></span>     | <span data-ttu-id="833ec-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="833ec-109">Type</span></span>   |<span data-ttu-id="833ec-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="833ec-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0099c-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0099c-108">Properties</span></span>
+| <span data-ttu-id="0099c-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0099c-109">Property</span></span>     | <span data-ttu-id="0099c-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="0099c-110">Type</span></span>   |<span data-ttu-id="0099c-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="0099c-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="833ec-111">própria</span><span class="sxs-lookup"><span data-stu-id="833ec-111">self</span></span>|<span data-ttu-id="833ec-112">String</span><span class="sxs-lookup"><span data-stu-id="833ec-112">String</span></span>|<span data-ttu-id="833ec-113">O ponto de extremidade onde você pode obter detalhes sobre a página.</span><span class="sxs-lookup"><span data-stu-id="833ec-113">The endpoint where you can get details about the page.</span></span> <span data-ttu-id="833ec-114">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="833ec-114">Read-only.</span></span>|
+|<span data-ttu-id="0099c-112">própria</span><span class="sxs-lookup"><span data-stu-id="0099c-112">self</span></span>|<span data-ttu-id="0099c-113">String</span><span class="sxs-lookup"><span data-stu-id="0099c-113">String</span></span>|<span data-ttu-id="0099c-114">O ponto de extremidade onde você pode obter detalhes sobre a página.</span><span class="sxs-lookup"><span data-stu-id="0099c-114">The endpoint where you can get details about the page.</span></span> <span data-ttu-id="0099c-115">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="0099c-115">Read-only.</span></span>|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

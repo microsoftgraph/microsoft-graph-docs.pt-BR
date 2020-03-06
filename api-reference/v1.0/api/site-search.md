@@ -3,62 +3,64 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Procurar sites
-description: Pesquisar em um locatário do SharePoint para sites que correspondam a palavras-chave fornecidas.
+description: Pesquise num locatário do SharePoint por sites que correspondam a palavras-chave fornecidas.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5612ea4014b1697a367a71e92c9ce4578618386f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: a0238bfd462d33aa63f3b9f68be94ae9365a3b90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509770"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="ea224-103">Procurar sites</span><span class="sxs-lookup"><span data-stu-id="ea224-103">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="34ebb-103">Procurar sites</span><span class="sxs-lookup"><span data-stu-id="34ebb-103">Search for sites</span></span>
 
-<span data-ttu-id="ea224-104">Pesquisar em um locatário do SharePoint para [sites][] que correspondam a palavras-chave fornecidas.</span><span class="sxs-lookup"><span data-stu-id="ea224-104">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
+<span data-ttu-id="34ebb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="34ebb-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="34ebb-105">Pesquisar em um locatário do SharePoint para [sites][] que correspondam a palavras-chave fornecidas.</span><span class="sxs-lookup"><span data-stu-id="34ebb-105">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
 
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="ea224-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ea224-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="34ebb-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="34ebb-107">Permissions</span></span>
 
-<span data-ttu-id="ea224-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea224-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="34ebb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="34ebb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ea224-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ea224-109">Permission type</span></span>                        | <span data-ttu-id="ea224-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ea224-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="34ebb-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="34ebb-110">Permission type</span></span>                        | <span data-ttu-id="34ebb-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="34ebb-111">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="ea224-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ea224-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ea224-112">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea224-112">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="ea224-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ea224-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea224-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ea224-114">Not supported.</span></span>
-|<span data-ttu-id="ea224-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ea224-115">Application</span></span>                            | <span data-ttu-id="ea224-116">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea224-116">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="34ebb-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="34ebb-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="34ebb-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34ebb-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="34ebb-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="34ebb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="34ebb-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="34ebb-115">Not supported.</span></span>
+|<span data-ttu-id="34ebb-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="34ebb-116">Application</span></span>                            | <span data-ttu-id="34ebb-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34ebb-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ea224-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ea224-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="34ebb-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="34ebb-118">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ea224-118">HTTP</span><span class="sxs-lookup"><span data-stu-id="ea224-118">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="34ebb-119">HTTP</span><span class="sxs-lookup"><span data-stu-id="34ebb-119">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites?search={query}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ea224-119">C#</span><span class="sxs-lookup"><span data-stu-id="ea224-119">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="34ebb-120">C#</span><span class="sxs-lookup"><span data-stu-id="34ebb-120">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ea224-120">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ea224-120">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="34ebb-121">JavaScript</span><span class="sxs-lookup"><span data-stu-id="34ebb-121">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ea224-121">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="ea224-121">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="34ebb-122">Objective-C</span><span class="sxs-lookup"><span data-stu-id="34ebb-122">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="ea224-122">Java</span><span class="sxs-lookup"><span data-stu-id="ea224-122">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="34ebb-123">Java</span><span class="sxs-lookup"><span data-stu-id="34ebb-123">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/search-sites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="ea224-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="ea224-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="34ebb-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="34ebb-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -87,7 +89,7 @@ Content-type: application/json
   ]
 }
 ```
-><span data-ttu-id="ea224-124">**Observação:** A única propriedade que funciona para classificação é **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="ea224-124">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="ea224-125">O filtro de pesquisa é uma pesquisa de texto livre que usa várias propriedades ao recuperar os resultados da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="ea224-125">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
+><span data-ttu-id="34ebb-125">**Observação:** A única propriedade que funciona para classificação é **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="34ebb-125">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="34ebb-126">O filtro de pesquisa é uma pesquisa de texto livre que usa várias propriedades ao recuperar os resultados da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="34ebb-126">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
 
 <!-- {
   "type": "#page.annotation",

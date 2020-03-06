@@ -5,32 +5,34 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 01970f5888da4568848651bae7d92fe9ea2a0da5
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9ff0e902aefa8f7e5291cdf40300771570979907
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864513"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510414"
 ---
-# <a name="reportroot-getemailappusageuserdetail"></a><span data-ttu-id="6ea64-103">reportRoot: getEmailAppUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="6ea64-103">reportRoot: getEmailAppUsageUserDetail</span></span>
+# <a name="reportroot-getemailappusageuserdetail"></a><span data-ttu-id="a9978-103">reportRoot: getEmailAppUsageUserDetail</span><span class="sxs-lookup"><span data-stu-id="a9978-103">reportRoot: getEmailAppUsageUserDetail</span></span>
 
-<span data-ttu-id="6ea64-104">Obtenha dados sobre quais atividades os usuários realizaram nos vários aplicativos de email.</span><span class="sxs-lookup"><span data-stu-id="6ea64-104">Get details about which activities users performed on the various email apps.</span></span>
+<span data-ttu-id="a9978-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a9978-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6ea64-105">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Uso de aplicativos de email](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span><span class="sxs-lookup"><span data-stu-id="6ea64-105">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
+<span data-ttu-id="a9978-105">Obtenha dados sobre quais atividades os usuários realizaram nos vários aplicativos de email.</span><span class="sxs-lookup"><span data-stu-id="a9978-105">Get details about which activities users performed on the various email apps.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6ea64-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6ea64-106">Permissions</span></span>
+> <span data-ttu-id="a9978-106">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Uso de aplicativos de email](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span><span class="sxs-lookup"><span data-stu-id="a9978-106">**Note:** For details about different report views and names, see [Office 365 Reports - Email apps usage](https://support.office.com/client/Email-apps-usage-c2ce12a2-934f-4dd4-ba65-49b02be4703d).</span></span>
 
-<span data-ttu-id="6ea64-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6ea64-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a9978-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="a9978-107">Permissions</span></span>
 
-| <span data-ttu-id="6ea64-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6ea64-109">Permission type</span></span>                        | <span data-ttu-id="6ea64-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6ea64-110">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="a9978-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9978-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="a9978-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a9978-110">Permission type</span></span>                        | <span data-ttu-id="a9978-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a9978-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="6ea64-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6ea64-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="6ea64-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6ea64-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="6ea64-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6ea64-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ea64-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6ea64-114">Not supported.</span></span>                           |
-| <span data-ttu-id="6ea64-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6ea64-115">Application</span></span>                            | <span data-ttu-id="6ea64-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6ea64-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="a9978-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a9978-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a9978-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="a9978-113">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="a9978-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a9978-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9978-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a9978-115">Not supported.</span></span>                           |
+| <span data-ttu-id="a9978-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a9978-116">Application</span></span>                            | <span data-ttu-id="a9978-117">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="a9978-117">Reports.Read.All</span></span>                         |
 
-<span data-ttu-id="6ea64-117">**Observação**: para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador do locatário deve ter atribuído ao usuário a função de administrador limitada do Azure ad apropriada.</span><span class="sxs-lookup"><span data-stu-id="6ea64-117">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="6ea64-118">Para obter mais detalhes, consulte [Authorization for APIs to read Office 365 Usage Reports](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="6ea64-118">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
+<span data-ttu-id="a9978-118">**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário.</span><span class="sxs-lookup"><span data-stu-id="a9978-118">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="a9978-119">Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="a9978-119">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6ea64-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6ea64-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a9978-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a9978-120">HTTP request</span></span>
 
 
 <!-- { "blockType": "samples" } --> 
@@ -40,57 +42,57 @@ GET /reports/getEmailAppUsageUserDetail(period='{period_value}')
 GET /reports/getEmailAppUsageUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="6ea64-120">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="6ea64-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="a9978-121">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="a9978-121">Function parameters</span></span>
 
-<span data-ttu-id="6ea64-121">Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.</span><span class="sxs-lookup"><span data-stu-id="6ea64-121">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="a9978-122">Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.</span><span class="sxs-lookup"><span data-stu-id="a9978-122">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="6ea64-122">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="6ea64-122">Parameter</span></span> | <span data-ttu-id="6ea64-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="6ea64-123">Type</span></span>   | <span data-ttu-id="6ea64-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="6ea64-124">Description</span></span>                              |
+| <span data-ttu-id="a9978-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a9978-123">Parameter</span></span> | <span data-ttu-id="a9978-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="a9978-124">Type</span></span>   | <span data-ttu-id="a9978-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9978-125">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="6ea64-125">ponto</span><span class="sxs-lookup"><span data-stu-id="6ea64-125">period</span></span>    | <span data-ttu-id="6ea64-126">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6ea64-126">string</span></span> | <span data-ttu-id="6ea64-127">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="6ea64-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="6ea64-128">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="6ea64-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="6ea64-129">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="6ea64-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="6ea64-130">data</span><span class="sxs-lookup"><span data-stu-id="6ea64-130">date</span></span>      | <span data-ttu-id="6ea64-131">Data</span><span class="sxs-lookup"><span data-stu-id="6ea64-131">Date</span></span>   | <span data-ttu-id="6ea64-132">Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade.</span><span class="sxs-lookup"><span data-stu-id="6ea64-132">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="6ea64-133">{date_value} deve ter um formato de AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="6ea64-133">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="6ea64-134">Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="6ea64-134">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="a9978-126">ponto</span><span class="sxs-lookup"><span data-stu-id="a9978-126">period</span></span>    | <span data-ttu-id="a9978-127">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a9978-127">string</span></span> | <span data-ttu-id="a9978-128">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="a9978-128">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="a9978-129">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="a9978-129">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="a9978-130">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="a9978-130">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="a9978-131">data</span><span class="sxs-lookup"><span data-stu-id="a9978-131">date</span></span>      | <span data-ttu-id="a9978-132">Data</span><span class="sxs-lookup"><span data-stu-id="a9978-132">Date</span></span>   | <span data-ttu-id="a9978-133">Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade.</span><span class="sxs-lookup"><span data-stu-id="a9978-133">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="a9978-134">{date_value} deve ter um formato de AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="a9978-134">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="a9978-135">Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="a9978-135">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="6ea64-135">**Observação:** você precisa definir o período ou data na URL.</span><span class="sxs-lookup"><span data-stu-id="6ea64-135">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="a9978-136">**Observação:** você precisa definir o período ou data na URL.</span><span class="sxs-lookup"><span data-stu-id="a9978-136">**Note:** You need to set either period or date in the URL.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6ea64-136">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6ea64-136">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a9978-137">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a9978-137">Request headers</span></span>
 
-| <span data-ttu-id="6ea64-137">Nome</span><span class="sxs-lookup"><span data-stu-id="6ea64-137">Name</span></span>          | <span data-ttu-id="6ea64-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="6ea64-138">Description</span></span>                              |
+| <span data-ttu-id="a9978-138">Nome</span><span class="sxs-lookup"><span data-stu-id="a9978-138">Name</span></span>          | <span data-ttu-id="a9978-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9978-139">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="6ea64-139">Autorização</span><span class="sxs-lookup"><span data-stu-id="6ea64-139">Authorization</span></span> | <span data-ttu-id="6ea64-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6ea64-p105">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="6ea64-142">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="6ea64-142">If-None-Match</span></span> | <span data-ttu-id="6ea64-143">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="6ea64-143">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="6ea64-144">Opcional.</span><span class="sxs-lookup"><span data-stu-id="6ea64-144">Optional.</span></span> |
+| <span data-ttu-id="a9978-140">Autorização</span><span class="sxs-lookup"><span data-stu-id="a9978-140">Authorization</span></span> | <span data-ttu-id="a9978-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a9978-p105">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="a9978-143">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="a9978-143">If-None-Match</span></span> | <span data-ttu-id="a9978-144">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="a9978-144">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="a9978-145">Opcional.</span><span class="sxs-lookup"><span data-stu-id="a9978-145">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="6ea64-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="6ea64-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a9978-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9978-146">Response</span></span>
 
-<span data-ttu-id="6ea64-146">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="6ea64-146">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="6ea64-147">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="6ea64-147">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="a9978-147">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="a9978-147">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="a9978-148">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="a9978-148">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="6ea64-148">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="6ea64-148">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="a9978-149">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="a9978-149">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="6ea64-149">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="6ea64-149">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="a9978-150">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="a9978-150">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="6ea64-150">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="6ea64-150">Report Refresh Date</span></span>
-- <span data-ttu-id="6ea64-151">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="6ea64-151">User Principal Name</span></span>
-- <span data-ttu-id="6ea64-152">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="6ea64-152">Display Name</span></span>
-- <span data-ttu-id="6ea64-153">Excluído</span><span class="sxs-lookup"><span data-stu-id="6ea64-153">Is Deleted</span></span>
-- <span data-ttu-id="6ea64-154">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="6ea64-154">Deleted Date</span></span>
-- <span data-ttu-id="6ea64-155">Data da última atividade</span><span class="sxs-lookup"><span data-stu-id="6ea64-155">Last Activity Date</span></span>
-- <span data-ttu-id="6ea64-156">Mail para Mac</span><span class="sxs-lookup"><span data-stu-id="6ea64-156">Mail For Mac</span></span>
-- <span data-ttu-id="6ea64-157">Outlook para Mac</span><span class="sxs-lookup"><span data-stu-id="6ea64-157">Outlook For Mac</span></span>
-- <span data-ttu-id="6ea64-158">Outlook para Windows</span><span class="sxs-lookup"><span data-stu-id="6ea64-158">Outlook For Windows</span></span>
-- <span data-ttu-id="6ea64-159">Outlook para Celular</span><span class="sxs-lookup"><span data-stu-id="6ea64-159">Outlook For Mobile</span></span>
-- <span data-ttu-id="6ea64-160">Outro para Celular</span><span class="sxs-lookup"><span data-stu-id="6ea64-160">Other For Mobile</span></span>
-- <span data-ttu-id="6ea64-161">Outlook para Web</span><span class="sxs-lookup"><span data-stu-id="6ea64-161">Outlook For Web</span></span>
-- <span data-ttu-id="6ea64-162">Aplicativo POP3</span><span class="sxs-lookup"><span data-stu-id="6ea64-162">POP3 App</span></span>
-- <span data-ttu-id="6ea64-163">Aplicativo IMAP4</span><span class="sxs-lookup"><span data-stu-id="6ea64-163">IMAP4 App</span></span>
-- <span data-ttu-id="6ea64-164">Aplicativo SMTP</span><span class="sxs-lookup"><span data-stu-id="6ea64-164">SMTP App</span></span>
-- <span data-ttu-id="6ea64-165">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="6ea64-165">Report Period</span></span>
+- <span data-ttu-id="a9978-151">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="a9978-151">Report Refresh Date</span></span>
+- <span data-ttu-id="a9978-152">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="a9978-152">User Principal Name</span></span>
+- <span data-ttu-id="a9978-153">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="a9978-153">Display Name</span></span>
+- <span data-ttu-id="a9978-154">Excluído</span><span class="sxs-lookup"><span data-stu-id="a9978-154">Is Deleted</span></span>
+- <span data-ttu-id="a9978-155">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="a9978-155">Deleted Date</span></span>
+- <span data-ttu-id="a9978-156">Data da última atividade</span><span class="sxs-lookup"><span data-stu-id="a9978-156">Last Activity Date</span></span>
+- <span data-ttu-id="a9978-157">Mail para Mac</span><span class="sxs-lookup"><span data-stu-id="a9978-157">Mail For Mac</span></span>
+- <span data-ttu-id="a9978-158">Outlook para Mac</span><span class="sxs-lookup"><span data-stu-id="a9978-158">Outlook For Mac</span></span>
+- <span data-ttu-id="a9978-159">Outlook para Windows</span><span class="sxs-lookup"><span data-stu-id="a9978-159">Outlook For Windows</span></span>
+- <span data-ttu-id="a9978-160">Outlook para Celular</span><span class="sxs-lookup"><span data-stu-id="a9978-160">Outlook For Mobile</span></span>
+- <span data-ttu-id="a9978-161">Outro para Celular</span><span class="sxs-lookup"><span data-stu-id="a9978-161">Other For Mobile</span></span>
+- <span data-ttu-id="a9978-162">Outlook para Web</span><span class="sxs-lookup"><span data-stu-id="a9978-162">Outlook For Web</span></span>
+- <span data-ttu-id="a9978-163">Aplicativo POP3</span><span class="sxs-lookup"><span data-stu-id="a9978-163">POP3 App</span></span>
+- <span data-ttu-id="a9978-164">Aplicativo IMAP4</span><span class="sxs-lookup"><span data-stu-id="a9978-164">IMAP4 App</span></span>
+- <span data-ttu-id="a9978-165">Aplicativo SMTP</span><span class="sxs-lookup"><span data-stu-id="a9978-165">SMTP App</span></span>
+- <span data-ttu-id="a9978-166">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="a9978-166">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="6ea64-166">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6ea64-166">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a9978-167">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a9978-167">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6ea64-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6ea64-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a9978-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a9978-168">Request</span></span>
 
-<span data-ttu-id="6ea64-168">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6ea64-168">The following is an example of the request.</span></span>
+<span data-ttu-id="a9978-169">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a9978-169">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6ea64-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="6ea64-169">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a9978-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="a9978-170">HTTP</span></span>](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -100,28 +102,28 @@ GET /reports/getEmailAppUsageUserDetail(date={date_value})
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getEmailAppUsageUserDetail(period='D7')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6ea64-170">C#</span><span class="sxs-lookup"><span data-stu-id="6ea64-170">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a9978-171">C#</span><span class="sxs-lookup"><span data-stu-id="a9978-171">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getemailappusageuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6ea64-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6ea64-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a9978-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a9978-172">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getemailappusageuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6ea64-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6ea64-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a9978-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a9978-173">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getemailappusageuserdetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6ea64-173">Java</span><span class="sxs-lookup"><span data-stu-id="6ea64-173">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a9978-174">Java</span><span class="sxs-lookup"><span data-stu-id="a9978-174">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getemailappusageuserdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="6ea64-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="6ea64-174">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a9978-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9978-175">Response</span></span>
 
-<span data-ttu-id="6ea64-175">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6ea64-175">The following is an example of the response.</span></span>
+<span data-ttu-id="a9978-176">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a9978-176">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -135,7 +137,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="6ea64-176">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="6ea64-176">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="a9978-177">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="a9978-177">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

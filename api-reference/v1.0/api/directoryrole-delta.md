@@ -5,81 +5,83 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4324e629ff636503beca7dfcab3d9af81c2210db
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1a8c755fbdadca7926c9f7bce9179e4ce74953e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721261"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517955"
 ---
-# <a name="directoryrole-delta"></a><span data-ttu-id="72a06-104">directoryRole: Delta</span><span class="sxs-lookup"><span data-stu-id="72a06-104">directoryRole: delta</span></span>
+# <a name="directoryrole-delta"></a><span data-ttu-id="776c5-104">directoryRole: Delta</span><span class="sxs-lookup"><span data-stu-id="776c5-104">directoryRole: delta</span></span>
 
-<span data-ttu-id="72a06-105">Obter funções de diretório recém-criadas, atualizadas ou excluídas sem ter que executar uma leitura completa de toda a coleção de recursos.</span><span class="sxs-lookup"><span data-stu-id="72a06-105">Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.</span></span> <span data-ttu-id="72a06-106">Consulte [usando a consulta Delta](/graph/delta-query-overview) para obter detalhes.</span><span class="sxs-lookup"><span data-stu-id="72a06-106">See [Using Delta Query](/graph/delta-query-overview) for details.</span></span>
+<span data-ttu-id="776c5-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="776c5-105">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="72a06-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="72a06-107">Permissions</span></span>
+<span data-ttu-id="776c5-106">Obter funções de diretório recém-criadas, atualizadas ou excluídas sem ter que executar uma leitura completa de toda a coleção de recursos.</span><span class="sxs-lookup"><span data-stu-id="776c5-106">Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.</span></span> <span data-ttu-id="776c5-107">Consulte [usando a consulta Delta](/graph/delta-query-overview) para obter detalhes.</span><span class="sxs-lookup"><span data-stu-id="776c5-107">See [Using Delta Query](/graph/delta-query-overview) for details.</span></span>
 
-<span data-ttu-id="72a06-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="72a06-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="776c5-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="776c5-108">Permissions</span></span>
+
+<span data-ttu-id="776c5-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="776c5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="72a06-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="72a06-110">Permission type</span></span>      | <span data-ttu-id="72a06-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="72a06-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="776c5-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="776c5-111">Permission type</span></span>      | <span data-ttu-id="776c5-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="776c5-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="72a06-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="72a06-112">Delegated (work or school account)</span></span> | <span data-ttu-id="72a06-113">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="72a06-113">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="72a06-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="72a06-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="72a06-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="72a06-115">Not supported.</span></span>    |
-|<span data-ttu-id="72a06-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="72a06-116">Application</span></span> | <span data-ttu-id="72a06-117">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="72a06-117">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="776c5-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="776c5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="776c5-114">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="776c5-114">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="776c5-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="776c5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="776c5-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="776c5-116">Not supported.</span></span>    |
+|<span data-ttu-id="776c5-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="776c5-117">Application</span></span> | <span data-ttu-id="776c5-118">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="776c5-118">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="72a06-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="72a06-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="776c5-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="776c5-119">HTTP request</span></span>
 
-<span data-ttu-id="72a06-119">Para começar a controlar as alterações, faça uma solicitação incluindo a função **Delta** no recurso [directoryRole](../resources/directoryrole.md) .</span><span class="sxs-lookup"><span data-stu-id="72a06-119">To begin tracking changes, you make a request including the **delta** function on the [directoryRole](../resources/directoryrole.md) resource.</span></span>
+<span data-ttu-id="776c5-120">Para começar a controlar as alterações, faça uma solicitação incluindo a função **Delta** no recurso [directoryRole](../resources/directoryrole.md) .</span><span class="sxs-lookup"><span data-stu-id="776c5-120">To begin tracking changes, you make a request including the **delta** function on the [directoryRole](../resources/directoryrole.md) resource.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/delta
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="72a06-120">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="72a06-120">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="776c5-121">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="776c5-121">Query parameters</span></span>
 
-<span data-ttu-id="72a06-121">As alterações de controle provocam uma rodada de uma ou mais chamadas de função **Delta** .</span><span class="sxs-lookup"><span data-stu-id="72a06-121">Tracking changes incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="72a06-122">Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**.</span><span class="sxs-lookup"><span data-stu-id="72a06-122">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="72a06-123">O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta.</span><span class="sxs-lookup"><span data-stu-id="72a06-123">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span> <span data-ttu-id="72a06-124">Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente.</span><span class="sxs-lookup"><span data-stu-id="72a06-124">You only need to specify any desired query parameters once upfront.</span></span> <span data-ttu-id="72a06-125">Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.</span><span class="sxs-lookup"><span data-stu-id="72a06-125">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
+<span data-ttu-id="776c5-122">As alterações de controle provocam uma rodada de uma ou mais chamadas de função **Delta** .</span><span class="sxs-lookup"><span data-stu-id="776c5-122">Tracking changes incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="776c5-123">Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**.</span><span class="sxs-lookup"><span data-stu-id="776c5-123">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="776c5-124">O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta.</span><span class="sxs-lookup"><span data-stu-id="776c5-124">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span> <span data-ttu-id="776c5-125">Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente.</span><span class="sxs-lookup"><span data-stu-id="776c5-125">You only need to specify any desired query parameters once upfront.</span></span> <span data-ttu-id="776c5-126">Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.</span><span class="sxs-lookup"><span data-stu-id="776c5-126">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
 
-| <span data-ttu-id="72a06-126">Parâmetro de consulta</span><span class="sxs-lookup"><span data-stu-id="72a06-126">Query parameter</span></span>      | <span data-ttu-id="72a06-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="72a06-127">Type</span></span>   |<span data-ttu-id="72a06-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="72a06-128">Description</span></span>|
+| <span data-ttu-id="776c5-127">Parâmetro de consulta</span><span class="sxs-lookup"><span data-stu-id="776c5-127">Query parameter</span></span>      | <span data-ttu-id="776c5-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="776c5-128">Type</span></span>   |<span data-ttu-id="776c5-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="776c5-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="72a06-129">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="72a06-129">$deltatoken</span></span> | <span data-ttu-id="72a06-130">string</span><span class="sxs-lookup"><span data-stu-id="72a06-130">string</span></span> | <span data-ttu-id="72a06-131">Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações.</span><span class="sxs-lookup"><span data-stu-id="72a06-131">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="72a06-132">Salve e aplique a URL `deltaLink` inteira incluindo esse token na primeira solicitação da próxima rodada de controle de alterações para essa coleção.</span><span class="sxs-lookup"><span data-stu-id="72a06-132">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
-| <span data-ttu-id="72a06-133">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="72a06-133">$skiptoken</span></span> | <span data-ttu-id="72a06-134">string</span><span class="sxs-lookup"><span data-stu-id="72a06-134">string</span></span> | <span data-ttu-id="72a06-135">Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos.</span><span class="sxs-lookup"><span data-stu-id="72a06-135">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.</span></span> |
+| <span data-ttu-id="776c5-130">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="776c5-130">$deltatoken</span></span> | <span data-ttu-id="776c5-131">string</span><span class="sxs-lookup"><span data-stu-id="776c5-131">string</span></span> | <span data-ttu-id="776c5-132">Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações.</span><span class="sxs-lookup"><span data-stu-id="776c5-132">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="776c5-133">Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.</span><span class="sxs-lookup"><span data-stu-id="776c5-133">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
+| <span data-ttu-id="776c5-134">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="776c5-134">$skiptoken</span></span> | <span data-ttu-id="776c5-135">string</span><span class="sxs-lookup"><span data-stu-id="776c5-135">string</span></span> | <span data-ttu-id="776c5-136">Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos.</span><span class="sxs-lookup"><span data-stu-id="776c5-136">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.</span></span> |
 
-### <a name="odata-query-parameters"></a><span data-ttu-id="72a06-136">Parâmetros de consulta OData</span><span class="sxs-lookup"><span data-stu-id="72a06-136">OData query parameters</span></span>
+### <a name="odata-query-parameters"></a><span data-ttu-id="776c5-137">Parâmetros de consulta OData</span><span class="sxs-lookup"><span data-stu-id="776c5-137">OData query parameters</span></span>
 
-<span data-ttu-id="72a06-137">Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="72a06-137">This method supports OData query parameters to help customize the response.</span></span>
+<span data-ttu-id="776c5-138">Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="776c5-138">This method supports OData query parameters to help customize the response.</span></span>
 
-- <span data-ttu-id="72a06-p106">Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada.</span><span class="sxs-lookup"><span data-stu-id="72a06-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.</span></span>
+- <span data-ttu-id="776c5-p106">Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada.</span><span class="sxs-lookup"><span data-stu-id="776c5-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.</span></span>
 
-- <span data-ttu-id="72a06-140">Há suporte limitado para `$filter`:</span><span class="sxs-lookup"><span data-stu-id="72a06-140">There is limited support for `$filter`:</span></span>
+- <span data-ttu-id="776c5-141">Há suporte limitado para `$filter`:</span><span class="sxs-lookup"><span data-stu-id="776c5-141">There is limited support for `$filter`:</span></span>
 
-  - <span data-ttu-id="72a06-141">A única expressão `$filter` suportada é para controlar alterações de recursos específicos, por sua `$filter=id+eq+{value}` ID `$filter=id+eq+{value1}+or+id+eq+{value2}`: ou.</span><span class="sxs-lookup"><span data-stu-id="72a06-141">The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.</span></span> <span data-ttu-id="72a06-142">O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.</span><span class="sxs-lookup"><span data-stu-id="72a06-142">The number of ids you can specify is limited by the maximum URL length.</span></span>
+  - <span data-ttu-id="776c5-142">A única expressão `$filter` suportada é para controlar alterações de recursos específicos, por sua `$filter=id+eq+{value}` ID `$filter=id+eq+{value1}+or+id+eq+{value2}`: ou.</span><span class="sxs-lookup"><span data-stu-id="776c5-142">The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.</span></span> <span data-ttu-id="776c5-143">O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.</span><span class="sxs-lookup"><span data-stu-id="776c5-143">The number of ids you can specify is limited by the maximum URL length.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="72a06-143">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="72a06-143">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="776c5-144">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="776c5-144">Request headers</span></span>
 
-| <span data-ttu-id="72a06-144">Nome</span><span class="sxs-lookup"><span data-stu-id="72a06-144">Name</span></span>       | <span data-ttu-id="72a06-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="72a06-145">Description</span></span>|
+| <span data-ttu-id="776c5-145">Nome</span><span class="sxs-lookup"><span data-stu-id="776c5-145">Name</span></span>       | <span data-ttu-id="776c5-146">Descrição</span><span class="sxs-lookup"><span data-stu-id="776c5-146">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="72a06-146">Autorização</span><span class="sxs-lookup"><span data-stu-id="72a06-146">Authorization</span></span>  | <span data-ttu-id="72a06-147">&lt;Token&gt; de portador</span><span class="sxs-lookup"><span data-stu-id="72a06-147">Bearer &lt;token&gt;</span></span>|
-| <span data-ttu-id="72a06-148">Content-Type</span><span class="sxs-lookup"><span data-stu-id="72a06-148">Content-Type</span></span>  | <span data-ttu-id="72a06-149">application/json</span><span class="sxs-lookup"><span data-stu-id="72a06-149">application/json</span></span> |
+| <span data-ttu-id="776c5-147">Autorização</span><span class="sxs-lookup"><span data-stu-id="776c5-147">Authorization</span></span>  | <span data-ttu-id="776c5-148">&lt;Token&gt; de portador</span><span class="sxs-lookup"><span data-stu-id="776c5-148">Bearer &lt;token&gt;</span></span>|
+| <span data-ttu-id="776c5-149">Content-Type</span><span class="sxs-lookup"><span data-stu-id="776c5-149">Content-Type</span></span>  | <span data-ttu-id="776c5-150">application/json</span><span class="sxs-lookup"><span data-stu-id="776c5-150">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="72a06-150">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="72a06-150">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="776c5-151">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="776c5-151">Request body</span></span>
 
-<span data-ttu-id="72a06-151">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="72a06-151">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="776c5-152">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="776c5-152">Do not supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="72a06-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="72a06-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="776c5-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="776c5-153">Response</span></span>
 
-<span data-ttu-id="72a06-153">Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [directoryRole](../resources/directoryrole.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="72a06-153">If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body.</span></span> <span data-ttu-id="72a06-154">A resposta também inclui uma URL `nextLink` ou `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="72a06-154">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
+<span data-ttu-id="776c5-154">Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [directoryRole](../resources/directoryrole.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="776c5-154">If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body.</span></span> <span data-ttu-id="776c5-155">A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="776c5-155">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
 
-- <span data-ttu-id="72a06-155">Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão.</span><span class="sxs-lookup"><span data-stu-id="72a06-155">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="72a06-156">O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.</span><span class="sxs-lookup"><span data-stu-id="72a06-156">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
+- <span data-ttu-id="776c5-156">Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão.</span><span class="sxs-lookup"><span data-stu-id="776c5-156">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="776c5-157">O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.</span><span class="sxs-lookup"><span data-stu-id="776c5-157">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
 
-- <span data-ttu-id="72a06-157">Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado.</span><span class="sxs-lookup"><span data-stu-id="72a06-157">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="72a06-158">Salve `deltaLink` a URL e aplique-a na próxima chamada **Delta** para saber mais sobre as alterações no recurso no futuro.</span><span class="sxs-lookup"><span data-stu-id="72a06-158">Save `deltaLink` URL and apply it in the next **delta** call to learn about changes to the resource in the future.</span></span>
+- <span data-ttu-id="776c5-158">Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado.</span><span class="sxs-lookup"><span data-stu-id="776c5-158">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="776c5-159">Salve `deltaLink` a URL e aplique-a na próxima chamada **Delta** para saber mais sobre as alterações no recurso no futuro.</span><span class="sxs-lookup"><span data-stu-id="776c5-159">Save `deltaLink` URL and apply it in the next **delta** call to learn about changes to the resource in the future.</span></span>
 
-### <a name="example"></a><span data-ttu-id="72a06-159">Exemplo</span><span class="sxs-lookup"><span data-stu-id="72a06-159">Example</span></span>
+### <a name="example"></a><span data-ttu-id="776c5-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="776c5-160">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="72a06-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="72a06-160">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="776c5-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="776c5-161">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="72a06-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="72a06-161">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="776c5-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="776c5-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryRole_delta"
@@ -88,28 +90,28 @@ GET /directoryRoles/delta
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="72a06-162">C#</span><span class="sxs-lookup"><span data-stu-id="72a06-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="776c5-163">C#</span><span class="sxs-lookup"><span data-stu-id="776c5-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryrole-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="72a06-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="72a06-163">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="776c5-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="776c5-164">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryrole-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="72a06-164">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="72a06-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="776c5-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="776c5-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryrole-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="72a06-165">Java</span><span class="sxs-lookup"><span data-stu-id="72a06-165">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="776c5-166">Java</span><span class="sxs-lookup"><span data-stu-id="776c5-166">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryrole-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="72a06-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="72a06-166">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="776c5-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="776c5-167">Response</span></span>
 
-<span data-ttu-id="72a06-p111">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="72a06-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="776c5-p111">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="776c5-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -134,10 +136,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="see-also"></a><span data-ttu-id="72a06-169">Confira também</span><span class="sxs-lookup"><span data-stu-id="72a06-169">See also</span></span>
+### <a name="see-also"></a><span data-ttu-id="776c5-170">Confira também</span><span class="sxs-lookup"><span data-stu-id="776c5-170">See also</span></span>
 
-- <span data-ttu-id="72a06-170">[Usar a consulta Delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview) para obter mais detalhes</span><span class="sxs-lookup"><span data-stu-id="72a06-170">[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for more details</span></span>
-- <span data-ttu-id="72a06-171">[Obter as alterações incrementais para usuários](/graph/delta-query-users) para solicitações de um exemplo.</span><span class="sxs-lookup"><span data-stu-id="72a06-171">[Get incremental changes for users](/graph/delta-query-users) for an example requests.</span></span>
+- <span data-ttu-id="776c5-171">[Usar a consulta Delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview) para obter mais detalhes</span><span class="sxs-lookup"><span data-stu-id="776c5-171">[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for more details</span></span>
+- <span data-ttu-id="776c5-172">[Obter as alterações incrementais para usuários](/graph/delta-query-users) para solicitações de um exemplo.</span><span class="sxs-lookup"><span data-stu-id="776c5-172">[Get incremental changes for users](/graph/delta-query-users) for an example requests.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

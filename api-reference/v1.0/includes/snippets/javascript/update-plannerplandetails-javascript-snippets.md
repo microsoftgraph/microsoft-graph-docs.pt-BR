@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2406f41f5b0ae9e6a2c93d9bbc4f97eb19a39629
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: ddc690df247017a5ebe60d306a9c656202896a69
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35734842"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36636377"
 ---
 ```javascript
 
@@ -27,6 +27,6 @@ const plannerPlanDetails = {
 };
 
 let res = await client.api('/planner/plans/{plan-id}/details')
-    .update({plannerPlanDetails : plannerPlanDetails});
+    .update(plannerPlanDetails);
 
 ```

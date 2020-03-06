@@ -1,7 +1,12 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 0de43059b425e03a69e290729c47e14cc4fad6fa
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37638649"
 ---
-
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
@@ -24,9 +29,9 @@ NSData *certificateBasedAuthConfigurationData = [certificateBasedAuthConfigurati
 [urlRequest setHTTPBody:certificateBasedAuthConfigurationData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
-	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		//Request Completed
+        //Request Completed
 
 }];
 

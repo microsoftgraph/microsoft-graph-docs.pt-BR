@@ -5,61 +5,63 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 671a55bc3bdd6630a1d9d36f69c426d1a4d68ec3
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: c0a909c6e29f0f9566ac0835c82238cd9cfb39fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36361664"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510981"
 ---
-# <a name="create-plannerplan"></a><span data-ttu-id="69094-103">Criar plannerPlan</span><span class="sxs-lookup"><span data-stu-id="69094-103">Create plannerPlan</span></span>
+# <a name="create-plannerplan"></a><span data-ttu-id="ffd67-103">Criar plannerPlan</span><span class="sxs-lookup"><span data-stu-id="ffd67-103">Create plannerPlan</span></span>
 
-<span data-ttu-id="69094-104">Use essa API para criar um novo **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="69094-104">Use this API to create a new **plannerPlan**.</span></span>
+<span data-ttu-id="ffd67-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ffd67-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="69094-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="69094-105">Permissions</span></span>
+<span data-ttu-id="ffd67-105">Use essa API para criar um novo **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="ffd67-105">Use this API to create a new **plannerPlan**.</span></span>
 
-<span data-ttu-id="69094-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="69094-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ffd67-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ffd67-106">Permissions</span></span>
 
-| <span data-ttu-id="69094-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="69094-108">Permission type</span></span>                        | <span data-ttu-id="69094-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="69094-109">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="ffd67-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ffd67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="ffd67-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ffd67-109">Permission type</span></span>                        | <span data-ttu-id="ffd67-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ffd67-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="69094-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="69094-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="69094-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69094-111">Group.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="69094-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="69094-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69094-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="69094-113">Not supported.</span></span>                              |
-| <span data-ttu-id="69094-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="69094-114">Application</span></span>                            | <span data-ttu-id="69094-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="69094-115">Not supported.</span></span>                              |
+| <span data-ttu-id="ffd67-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ffd67-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ffd67-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ffd67-112">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="ffd67-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ffd67-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ffd67-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ffd67-114">Not supported.</span></span>                              |
+| <span data-ttu-id="ffd67-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ffd67-115">Application</span></span>                            | <span data-ttu-id="ffd67-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ffd67-116">Not supported.</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="69094-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="69094-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ffd67-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ffd67-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 POST /planner/plans
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="69094-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="69094-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ffd67-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ffd67-118">Request headers</span></span>
 
-| <span data-ttu-id="69094-118">Nome</span><span class="sxs-lookup"><span data-stu-id="69094-118">Name</span></span>          | <span data-ttu-id="69094-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="69094-119">Description</span></span>               |
+| <span data-ttu-id="ffd67-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ffd67-119">Name</span></span>          | <span data-ttu-id="ffd67-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ffd67-120">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="69094-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="69094-120">Authorization</span></span> | <span data-ttu-id="69094-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="69094-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ffd67-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ffd67-121">Authorization</span></span> | <span data-ttu-id="ffd67-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ffd67-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="69094-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="69094-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ffd67-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ffd67-124">Request body</span></span>
 
-<span data-ttu-id="69094-p103">No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md). A propriedade owner do **plannerPlan** deve ser definida com uma identificação de um objeto [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="69094-p103">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object. The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.</span></span>
+<span data-ttu-id="ffd67-p103">No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md). A propriedade owner do **plannerPlan** deve ser definida com uma identificação de um objeto [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="ffd67-p103">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object. The **plannerPlan** owner property must be set to an id of a [group](../resources/group.md) object.</span></span>
 
-><span data-ttu-id="69094-126">**Observação**: o usuário que está criando o plano deve ser um membro do grupo que será proprietário do plano.</span><span class="sxs-lookup"><span data-stu-id="69094-126">**Note:** The user who is creating the plan must be a member of the group that will own the plan.</span></span> <span data-ttu-id="69094-127">Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro.</span><span class="sxs-lookup"><span data-stu-id="69094-127">When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member.</span></span> <span data-ttu-id="69094-128">Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).</span><span class="sxs-lookup"><span data-stu-id="69094-128">After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).</span></span>
-
-
-## <a name="response"></a><span data-ttu-id="69094-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="69094-129">Response</span></span>
-
-<span data-ttu-id="69094-130">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [plannerPlan](../resources/plannerplan.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="69094-130">If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
-
-<span data-ttu-id="69094-p105">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="69094-p105">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
-
-## <a name="example"></a><span data-ttu-id="69094-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="69094-134">Example</span></span>
-
-### <a name="request"></a><span data-ttu-id="69094-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="69094-135">Request</span></span>
-
-<span data-ttu-id="69094-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="69094-136">Here is an example of the request.</span></span>
+><span data-ttu-id="ffd67-127">**Observação**: o usuário que está criando o plano deve ser um membro do grupo que será proprietário do plano.</span><span class="sxs-lookup"><span data-stu-id="ffd67-127">**Note:** The user who is creating the plan must be a member of the group that will own the plan.</span></span> <span data-ttu-id="ffd67-128">Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro.</span><span class="sxs-lookup"><span data-stu-id="ffd67-128">When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member.</span></span> <span data-ttu-id="ffd67-129">Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).</span><span class="sxs-lookup"><span data-stu-id="ffd67-129">After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="69094-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="69094-137">HTTP</span></span>](#tab/http)
+## <a name="response"></a><span data-ttu-id="ffd67-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffd67-130">Response</span></span>
+
+<span data-ttu-id="ffd67-131">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [plannerPlan](../resources/plannerplan.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ffd67-131">If successful, this method returns `201 Created` response code and [plannerPlan](../resources/plannerplan.md) object in the response body.</span></span>
+
+<span data-ttu-id="ffd67-p105">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="ffd67-p105">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+
+## <a name="example"></a><span data-ttu-id="ffd67-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ffd67-135">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="ffd67-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ffd67-136">Request</span></span>
+
+<span data-ttu-id="ffd67-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ffd67-137">Here is an example of the request.</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="ffd67-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="ffd67-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
@@ -74,30 +76,30 @@ Content-length: 381
   "title": "title-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="69094-138">C#</span><span class="sxs-lookup"><span data-stu-id="69094-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ffd67-139">C#</span><span class="sxs-lookup"><span data-stu-id="ffd67-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannerplan-from-planner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="69094-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="69094-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ffd67-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ffd67-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-plannerplan-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="69094-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="69094-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ffd67-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ffd67-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-plannerplan-from-planner-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="69094-141">Java</span><span class="sxs-lookup"><span data-stu-id="69094-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ffd67-142">Java</span><span class="sxs-lookup"><span data-stu-id="ffd67-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-plannerplan-from-planner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="69094-142">No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md).</span><span class="sxs-lookup"><span data-stu-id="69094-142">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.</span></span>
+<span data-ttu-id="ffd67-143">No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md).</span><span class="sxs-lookup"><span data-stu-id="ffd67-143">In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.</span></span>
 
-### <a name="response"></a><span data-ttu-id="69094-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="69094-143">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ffd67-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="ffd67-144">Response</span></span>
 
-<span data-ttu-id="69094-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="69094-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="ffd67-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ffd67-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
