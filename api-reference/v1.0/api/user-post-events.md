@@ -5,14 +5,16 @@ localization_priority: Priority
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5812e0f11d23a54109e99bdc39fab9ac15d86594
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: edb50b35c96236c2ff9ec8379a6dd3aa26d4675f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346370"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508979"
 ---
 # <a name="create-event"></a>Criar evento
+
+Namespace: microsoft.graph
 
 Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
 
@@ -79,7 +81,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 ##### <a name="request-1"></a>Solicitação 1
 Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar o fuso horário para as horas de **início** e **fim** na resposta.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -118,19 +120,19 @@ Content-length: 600
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -237,7 +239,7 @@ A solicitação de exemplo a seguir especifica três locais de onde o organizado
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -307,19 +309,19 @@ Content-length: 1390
 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-multiple-locations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-multiple-locations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-multiple-locations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -456,9 +458,9 @@ Content-length: 2985
 
 
 ##### <a name="request-3"></a>Solicitação 3
-O terceiro exemplo mostra como criar um evento recorrente. O evento ocorre das 12:00 às 2:00 da tarde, todas as segundas-feiras a partir de 4 de setembro de 2017 até o final do ano.
+O terceiro exemplo mostra como criar um evento recorrente uma vez na semana.  O evento ocorre das 12:00 às 2:00 da tarde, todas as segundas-feiras a partir de 4 de setembro de 2017 até o final do ano.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring"
@@ -507,19 +509,19 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-recurring-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-event-recurring-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -639,9 +641,192 @@ Content-type: application/json
 }
 ```
 
+##### <a name="request-4"></a>Solicitação 4
+O quarto exemplo mostra como criar um evento recorrente uma vez ao dia.  O evento ocorre a partir de 12:00 às 2:00, todos os dias, a partir de 21 de fevereiro de 2020, para duas ocorrências.
 
-## <a name="see-also"></a>Confira também
 
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_event_recurring_daily"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+
+{
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does noon work for you?"
+  },
+  "start": {
+      "dateTime": "2020-02-21T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2020-02-21T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"AlexW@contoso.OnMicrosoft.com",
+        "name": "Alex Wilbur"
+      },
+      "type": "required"
+    }
+  ],
+  "recurrence": {
+    "pattern": {
+      "type": "daily",
+      "interval": 1
+    },
+    "range": {
+      "type": "numbered",
+      "startDate": "2020-02-21",
+      "numberOfOccurrences": 2
+    }
+  }
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-recurring-daily-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-daily-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-daily-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-recurring-daily-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
+##### <a name="response-4"></a>Resposta 4
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_recurring_daily",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69')/calendar/events/$entity",
+    "@odata.etag": "W/\"NDznl+Uh50WkanaCOKHkaQAAhrvLCw==\"",
+    "id": "AAMkADU5NUAAA=",
+    "createdDateTime": "2020-02-18T21:23:29.9959527Z",
+    "lastModifiedDateTime": "2020-02-18T21:23:30.4579217Z",
+    "changeKey": "NDznl+Uh50WkanaCOKHkaQAAhrvLCw==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "iCalUId": "040000008200E00074C5B7101A82E00800000000AF2462AAA1E6D501000000000000000010000000E6C8C4BDBB91F7419FFA5141702BF961",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Let's go for lunch",
+    "bodyPreview": "Does noon work for you?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "seriesMaster",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADU5NUAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes noon work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2020-02-21T12:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2020-02-21T14:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueId": "Harry's Bar",
+            "uniqueIdType": "private"
+        }
+    ],
+    "recurrence": {
+        "pattern": {
+            "type": "daily",
+            "interval": 1,
+            "month": 0,
+            "dayOfMonth": 0,
+            "firstDayOfWeek": "sunday",
+            "index": "first"
+        },
+        "range": {
+            "type": "numbered",
+            "startDate": "2020-02-21",
+            "endDate": "0001-01-01",
+            "recurrenceTimeZone": "Pacific Standard Time",
+            "numberOfOccurrences": 2
+        }
+    },
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Alex Wilber",
+                "address": "AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Adele Vance",
+            "address": "AdeleV@contoso.OnMicrosoft.com"
+        }
+    }
+}
+```
+
+
+## <a name="see-also"></a>Também consulte
+
+- [Agendar compromissos repetidos como eventos recorrentes no Outlook](/graph/outlook-schedule-recurring-events)
 - [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
 - [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
 - [Adicionar dados personalizados a grupos usando as extensões do esquema](/graph/extensibility-schema-groups)

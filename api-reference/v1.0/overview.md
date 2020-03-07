@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: aa5b9f8d28cc77878fe1da261621b63163595828
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: 0b21aab90fb1eabec82ab1ee783fcdc89fe397d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402645"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533185"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 
@@ -49,6 +49,16 @@ Existem atualmente 2 versões de APIs REST do Microsoft Graph - v1.0 e beta.
 Se você estiver interessado em APIs novas ou aprimoradas que ainda estejam no status de visualização, consulte [referência de ponto de extremidade beta do Microsoft Graph](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta). Esteja ciente de que as APIs no status de visualização estão sujeitas a alterações e podem interromper os cenários existentes sem aviso prévio. Não obtenha uma dependência de produção de APIs no ponto de extremidade beta.
 
 Encontre mais informações em [Suporte e controle de versão](/graph/versioning-and-support).
+
+## <a name="call-the-v10-endpoint"></a>Chame o ponto de extremidade do v 1.0
+
+As solicitações da API do Microsoft Graph para o ponto de extremidade v1.0 usam o seguinte padrão:
+
+```
+    https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+```
+
+Para detalhes, consulte [Usando a API do Microsoft Graph](/graph/use-the-api).
 
 ## <a name="connect-with-us"></a>Fale conosco
 
