@@ -5,28 +5,30 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: de48737299a940db545e46daabd129ee7443c60a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b69905a0e1d8937c582df3373a4e981f8d8405ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913251"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533076"
 ---
-# <a name="chatinfo-resource-type"></a><span data-ttu-id="172aa-103">tipo de recurso chatInfo</span><span class="sxs-lookup"><span data-stu-id="172aa-103">chatInfo resource type</span></span>
+# <a name="chatinfo-resource-type"></a><span data-ttu-id="fa2ae-103">tipo de recurso chatInfo</span><span class="sxs-lookup"><span data-stu-id="fa2ae-103">chatInfo resource type</span></span>
 
-<span data-ttu-id="172aa-104">Ele contém informações associadas às reuniões do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="172aa-104">This contains information associated with Microsoft Teams meetings.</span></span>
+<span data-ttu-id="fa2ae-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa2ae-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="172aa-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="172aa-105">Properties</span></span>
+<span data-ttu-id="fa2ae-105">Ele contém informações associadas às reuniões do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="fa2ae-105">This contains information associated with Microsoft Teams meetings.</span></span>
 
-| <span data-ttu-id="172aa-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="172aa-106">Property</span></span>            | <span data-ttu-id="172aa-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="172aa-107">Type</span></span>    | <span data-ttu-id="172aa-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="172aa-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fa2ae-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fa2ae-106">Properties</span></span>
+
+| <span data-ttu-id="fa2ae-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fa2ae-107">Property</span></span>            | <span data-ttu-id="fa2ae-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="fa2ae-108">Type</span></span>    | <span data-ttu-id="fa2ae-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa2ae-109">Description</span></span>|
 |:--------------------|:--------|:-----------|
-| <span data-ttu-id="172aa-109">messageId</span><span class="sxs-lookup"><span data-stu-id="172aa-109">messageId</span></span>           | <span data-ttu-id="172aa-110">String</span><span class="sxs-lookup"><span data-stu-id="172aa-110">String</span></span>  | <span data-ttu-id="172aa-111">O identificador exclusivo de uma mensagem em um canal do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="172aa-111">The unique identifier of a message in a Microsoft Teams channel.</span></span> |
-| <span data-ttu-id="172aa-112">replyChainMessageId</span><span class="sxs-lookup"><span data-stu-id="172aa-112">replyChainMessageId</span></span> | <span data-ttu-id="172aa-113">String</span><span class="sxs-lookup"><span data-stu-id="172aa-113">String</span></span>  | <span data-ttu-id="172aa-114">A ID da mensagem de resposta.</span><span class="sxs-lookup"><span data-stu-id="172aa-114">The ID of the reply message.</span></span> |
-| <span data-ttu-id="172aa-115">threadId</span><span class="sxs-lookup"><span data-stu-id="172aa-115">threadId</span></span>            | <span data-ttu-id="172aa-116">String</span><span class="sxs-lookup"><span data-stu-id="172aa-116">String</span></span>  | <span data-ttu-id="172aa-117">O identificador exclusivo de um thread no Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="172aa-117">The unique identifier for a thread in Microsoft Teams.</span></span> |
+| <span data-ttu-id="fa2ae-110">messageId</span><span class="sxs-lookup"><span data-stu-id="fa2ae-110">messageId</span></span>           | <span data-ttu-id="fa2ae-111">String</span><span class="sxs-lookup"><span data-stu-id="fa2ae-111">String</span></span>  | <span data-ttu-id="fa2ae-112">O identificador exclusivo de uma mensagem em um canal do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="fa2ae-112">The unique identifier of a message in a Microsoft Teams channel.</span></span> |
+| <span data-ttu-id="fa2ae-113">replyChainMessageId</span><span class="sxs-lookup"><span data-stu-id="fa2ae-113">replyChainMessageId</span></span> | <span data-ttu-id="fa2ae-114">String</span><span class="sxs-lookup"><span data-stu-id="fa2ae-114">String</span></span>  | <span data-ttu-id="fa2ae-115">A ID da mensagem de resposta.</span><span class="sxs-lookup"><span data-stu-id="fa2ae-115">The ID of the reply message.</span></span> |
+| <span data-ttu-id="fa2ae-116">threadId</span><span class="sxs-lookup"><span data-stu-id="fa2ae-116">threadId</span></span>            | <span data-ttu-id="fa2ae-117">String</span><span class="sxs-lookup"><span data-stu-id="fa2ae-117">String</span></span>  | <span data-ttu-id="fa2ae-118">O identificador exclusivo de um thread no Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="fa2ae-118">The unique identifier for a thread in Microsoft Teams.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="172aa-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="172aa-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fa2ae-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fa2ae-119">JSON representation</span></span>
 
-<span data-ttu-id="172aa-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="172aa-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fa2ae-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fa2ae-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
