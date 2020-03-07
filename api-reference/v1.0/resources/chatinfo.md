@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: de48737299a940db545e46daabd129ee7443c60a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b69905a0e1d8937c582df3373a4e981f8d8405ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913251"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533076"
 ---
 # <a name="chatinfo-resource-type"></a>tipo de recurso chatInfo
+
+Namespace: microsoft.graph
 
 Ele contém informações associadas às reuniões do Microsoft Teams.
 
