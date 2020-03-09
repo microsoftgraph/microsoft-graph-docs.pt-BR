@@ -6,11 +6,11 @@ localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
 ms.openlocfilehash: 1c000496a49460269fbb386c9ba7225b4746f109
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219773"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "42562701"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
