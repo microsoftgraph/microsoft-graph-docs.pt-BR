@@ -209,7 +209,7 @@
                   href: api/user-list-events.md
                 - name: Modo de exibição de lembrete
                   href: api/user-reminderview.md
-            - name: Contacts
+            - name: Contatos
               href: resources/contact.md
               items:
                 - name: Criar contato
@@ -677,6 +677,8 @@
                   href: api/event-list-attachments.md
                 - name: Adicionar anexo
                   href: api/event-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
@@ -725,6 +727,8 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
                 - name: Excluir anexo
@@ -906,7 +910,7 @@
                       href: api/audioroutinggroup-get.md
                     - name: Atualizar
                       href: api/audioroutinggroup-update.md
-                    - name: Excluir
+                    - name: Delete
                       href: api/audioroutinggroup-delete.md
             - name: Reunião online
               href: resources/onlinemeeting.md
@@ -982,7 +986,7 @@
                   href: api/bookingbusiness-get.md
                 - name: Atualizar
                   href: api/bookingbusiness-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/bookingbusiness-delete.md
                 - name: Publicar
                   href: api/bookingbusiness-publish.md
@@ -1023,7 +1027,7 @@
                   href: api/bookingcustomer-get.md
                 - name: Atualizar
                   href: api/bookingcustomer-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/bookingcustomer-delete.md
             - name: Serviço de reserva
               href: resources/bookingservice.md
@@ -1036,7 +1040,7 @@
                   href: api/bookingservice-get.md
                 - name: Atualizar
                   href: api/bookingservice-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/bookingservice-delete.md
             - name: Membro da equipe de reserva
               href: resources/bookingstaffmember.md
@@ -1049,7 +1053,7 @@
                   href: api/bookingstaffmember-get.md
                 - name: Atualizar
                   href: api/bookingstaffmember-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/bookingstaffmember-delete.md
         - name: Dispositivos e aplicativos
           href: resources/intune-graph-overview.md
@@ -7618,7 +7622,7 @@
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                     - name: Listar
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                    - name: Excluir
+                    - name: Delete
                       href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                 - name: Script de gerenciamento de dispositivo
                   href: resources/intune-shared-devicemanagementscript.md
@@ -8623,7 +8627,7 @@
                       href: api/conditionalaccesspolicy-get.md
                     - name: Atualizar
                       href: api/conditionalaccesspolicy-update.md
-                    - name: Excluir
+                    - name: Delete
                       href: api/conditionalaccesspolicy-delete.md
                 - name: Locais nomeados
                   items:
@@ -8649,7 +8653,7 @@
                           href: api/countrynamedlocation-get.md
                         - name: Atualizar
                           href: api/countrynamedlocation-update.md
-                        - name: Excluir
+                        - name: Delete
                           href: api/countrynamedlocation-delete.md
                     - name: Local nomeado por IP
                       items:
@@ -8663,7 +8667,7 @@
                           href: api/ipnamedlocation-get.md
                         - name: Atualizar
                           href: api/ipnamedlocation-update.md
-                        - name: Excluir
+                        - name: Delete
                           href: api/ipnamedlocation-delete.md
             - name: Contratos
               href: resources/contract.md
@@ -8879,7 +8883,7 @@
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Atualizar
                   href: api/featurerolloutpolicy-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/featurerolloutpolicy-delete.md
                 - name: Criar aplica-se
                   href: api/featurerolloutpolicy-post-appliesto.md
@@ -9140,6 +9144,21 @@
                       href: api/homerealmdiscoverypolicy-delete.md
                     - name: Listar aplicadas ao aplicativo
                       href: api/homerealmdiscoverypolicy-list-appliesto.md
+                - name: Política de emissão de token
+                  href: resources/tokenissuancepolicy.md
+                  items:
+                    - name: Criar
+                      href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+                    - name: Listar
+                      href: api/tokenissuancepolicy-list.md
+                    - name: Obter
+                      href: api/tokenissuancepolicy-get.md
+                    - name: Atualizar
+                      href: api/tokenissuancepolicy-update.md
+                    - name: Excluir
+                      href: api/tokenissuancepolicy-delete.md
+                    - name: Listar aplicadas ao aplicativo
+                      href: api/tokenissuancepolicy-list-appliesto.md
                 - name: Política do tempo de vida do token
                   href: resources/tokenlifetimepolicy.md
                   items:
@@ -9493,7 +9512,7 @@
                   href: api/message-list-attachments.md
                 - name: Adicionar anexo
                   href: api/message-post-attachments.md
-                - name: Criar sessão para anexar arquivo grande (versão prévia)
+                - name: Criar sessão para anexar arquivo grande
                   href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
@@ -9508,7 +9527,7 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
-                - name: Criar sessão para anexar arquivo grande (versão prévia)
+                - name: Criar sessão para anexar arquivo grande
                   href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
@@ -10735,6 +10754,8 @@
                   href: api/event-list-attachments.md
                 - name: Adicionar anexo
                   href: api/event-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
@@ -10800,7 +10821,7 @@
                       href: api/openshift-get.md
                     - name: Atualizar
                       href: api/openshift-update.md
-                    - name: Excluir
+                    - name: Delete
                       href: api/openshift-delete.md
                 - name: Abrir solicitação de alteração de turno
                   href: resources/openshiftchangerequest.md
@@ -10868,7 +10889,7 @@
                       href: api/timeoffrequest-get.md
                     - name: Atualizar
                       href: api/timeoffrequest-update.md
-                    - name: Excluir
+                    - name: Delete
                       href: api/timeoffrequest-delete.md
                     - name: Aprovar
                       href: api/timeoffrequest-approve.md
@@ -10921,7 +10942,7 @@
                   href: api/outlooktask-get.md
                 - name: Atualizar
                   href: api/outlooktask-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/outlooktask-delete.md
                 - name: Completo
                   href: api/outlooktask-complete.md
@@ -10940,7 +10961,7 @@
                   href: api/outlooktaskfolder-get.md
                 - name: Atualizar
                   href: api/outlooktaskfolder-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: Listar tarefas na pasta
                   href: api/outlooktaskfolder-list-tasks.md
@@ -10957,7 +10978,7 @@
                   href: api/outlooktaskgroup-get.md
                 - name: Atualizar
                   href: api/outlooktaskgroup-update.md
-                - name: Excluir
+                - name: Delete
                   href: api/outlooktaskfolder-delete.md
                 - name: Listar pastas de tarefas no grupo
                   href: api/outlooktaskfolder-list-tasks.md

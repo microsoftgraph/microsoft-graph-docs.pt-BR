@@ -5,36 +5,36 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: f22fcff82f3ccba4f0bd5e7a486d7a2422b91db5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bde7f1a5b9416c80ab362effb6a3b063f2e66919
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454455"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589086"
 ---
-# <a name="reportroot-getmailboxusagedetail"></a><span data-ttu-id="2d201-103">reportRoot: getMailboxUsageDetail</span><span class="sxs-lookup"><span data-stu-id="2d201-103">reportRoot: getMailboxUsageDetail</span></span>
+# <a name="reportroot-getmailboxusagedetail"></a><span data-ttu-id="7734d-103">reportRoot: getMailboxUsageDetail</span><span class="sxs-lookup"><span data-stu-id="7734d-103">reportRoot: getMailboxUsageDetail</span></span>
 
-<span data-ttu-id="2d201-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2d201-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7734d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7734d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2d201-105">Obtenha dados sobre o uso da caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="2d201-105">Get details about mailbox usage.</span></span>
+<span data-ttu-id="7734d-105">Obtenha dados sobre o uso da caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="7734d-105">Get details about mailbox usage.</span></span>
 
-> <span data-ttu-id="2d201-106">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Uso da caixa de correio](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span><span class="sxs-lookup"><span data-stu-id="2d201-106">**Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span></span>
+> <span data-ttu-id="7734d-106">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Uso da caixa de correio](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span><span class="sxs-lookup"><span data-stu-id="7734d-106">**Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2d201-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="2d201-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7734d-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="7734d-107">Permissions</span></span>
 
-<span data-ttu-id="2d201-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d201-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7734d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7734d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2d201-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d201-110">Permission type</span></span>                        | <span data-ttu-id="2d201-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2d201-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7734d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7734d-110">Permission type</span></span>                        | <span data-ttu-id="7734d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7734d-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="2d201-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d201-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="2d201-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="2d201-113">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="2d201-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d201-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d201-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d201-115">Not supported.</span></span>                           |
-| <span data-ttu-id="2d201-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d201-116">Application</span></span>                            | <span data-ttu-id="2d201-117">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="2d201-117">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="7734d-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7734d-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="7734d-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7734d-113">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="7734d-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7734d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7734d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7734d-115">Not supported.</span></span>                           |
+| <span data-ttu-id="7734d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7734d-116">Application</span></span>                            | <span data-ttu-id="7734d-117">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7734d-117">Reports.Read.All</span></span>                         |
 
-<span data-ttu-id="2d201-118">**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário.</span><span class="sxs-lookup"><span data-stu-id="2d201-118">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="2d201-119">Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="2d201-119">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
+<span data-ttu-id="7734d-118">**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário.</span><span class="sxs-lookup"><span data-stu-id="7734d-118">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="7734d-119">Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="7734d-119">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2d201-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d201-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7734d-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7734d-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -42,92 +42,78 @@ ms.locfileid: "42454455"
 GET /reports/getMailboxUsageDetail(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="2d201-121">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="2d201-121">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="7734d-121">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="7734d-121">Function parameters</span></span>
 
-<span data-ttu-id="2d201-122">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="2d201-122">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="7734d-122">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="7734d-122">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="2d201-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="2d201-123">Parameter</span></span> | <span data-ttu-id="2d201-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="2d201-124">Type</span></span>   | <span data-ttu-id="2d201-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d201-125">Description</span></span>                              |
+| <span data-ttu-id="7734d-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7734d-123">Parameter</span></span> | <span data-ttu-id="7734d-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="7734d-124">Type</span></span>   | <span data-ttu-id="7734d-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="7734d-125">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="2d201-126">ponto</span><span class="sxs-lookup"><span data-stu-id="2d201-126">period</span></span>    | <span data-ttu-id="2d201-127">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="2d201-127">string</span></span> | <span data-ttu-id="2d201-128">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="2d201-128">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="2d201-129">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="2d201-129">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="2d201-130">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="2d201-130">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="2d201-131">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d201-131">Required.</span></span> |
+| <span data-ttu-id="7734d-126">ponto</span><span class="sxs-lookup"><span data-stu-id="7734d-126">period</span></span>    | <span data-ttu-id="7734d-127">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7734d-127">string</span></span> | <span data-ttu-id="7734d-128">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="7734d-128">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="7734d-129">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="7734d-129">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="7734d-130">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="7734d-130">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="7734d-131">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7734d-131">Required.</span></span> |
 
-<span data-ttu-id="2d201-132">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="2d201-132">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="2d201-133">O tipo de saída padrão é text/csv.</span><span class="sxs-lookup"><span data-stu-id="2d201-133">The default output type is text/csv.</span></span> <span data-ttu-id="2d201-134">No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="2d201-134">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="7734d-132">Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta.</span><span class="sxs-lookup"><span data-stu-id="7734d-132">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="7734d-133">O tipo de saída padrão é text/csv.</span><span class="sxs-lookup"><span data-stu-id="7734d-133">The default output type is text/csv.</span></span> <span data-ttu-id="7734d-134">No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="7734d-134">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2d201-135">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d201-135">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7734d-135">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7734d-135">Request headers</span></span>
 
-| <span data-ttu-id="2d201-136">Nome</span><span class="sxs-lookup"><span data-stu-id="2d201-136">Name</span></span>          | <span data-ttu-id="2d201-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d201-137">Description</span></span>               |
+| <span data-ttu-id="7734d-136">Nome</span><span class="sxs-lookup"><span data-stu-id="7734d-136">Name</span></span>          | <span data-ttu-id="7734d-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="7734d-137">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="2d201-138">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d201-138">Authorization</span></span> | <span data-ttu-id="2d201-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d201-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7734d-138">Autorização</span><span class="sxs-lookup"><span data-stu-id="7734d-138">Authorization</span></span> | <span data-ttu-id="7734d-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7734d-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="2d201-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d201-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7734d-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="7734d-141">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="2d201-142">CSV</span><span class="sxs-lookup"><span data-stu-id="2d201-142">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="7734d-142">CSV</span><span class="sxs-lookup"><span data-stu-id="7734d-142">CSV</span></span>
 
-<span data-ttu-id="2d201-143">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="2d201-143">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="2d201-144">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="2d201-144">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="7734d-143">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="7734d-143">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="7734d-144">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="7734d-144">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="2d201-145">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="2d201-145">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="7734d-145">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="7734d-145">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="2d201-146">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="2d201-146">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="7734d-146">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="7734d-146">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="2d201-147">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="2d201-147">Report Refresh Date</span></span>
-- <span data-ttu-id="2d201-148">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="2d201-148">User Principal Name</span></span>
-- <span data-ttu-id="2d201-149">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="2d201-149">Display Name</span></span>
-- <span data-ttu-id="2d201-150">Excluído</span><span class="sxs-lookup"><span data-stu-id="2d201-150">Is Deleted</span></span>
-- <span data-ttu-id="2d201-151">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="2d201-151">Deleted Date</span></span>
-- <span data-ttu-id="2d201-152">Data de criação</span><span class="sxs-lookup"><span data-stu-id="2d201-152">Created Date</span></span>
-- <span data-ttu-id="2d201-153">Data da última atividade</span><span class="sxs-lookup"><span data-stu-id="2d201-153">Last Activity Date</span></span>
-- <span data-ttu-id="2d201-154">Contagem de itens</span><span class="sxs-lookup"><span data-stu-id="2d201-154">Item Count</span></span>
-- <span data-ttu-id="2d201-155">Armazenamento utilizado (bytes)</span><span class="sxs-lookup"><span data-stu-id="2d201-155">Storage Used (Byte)</span></span>
-- <span data-ttu-id="2d201-156">Cota de aviso de problema (bytes)</span><span class="sxs-lookup"><span data-stu-id="2d201-156">Issue Warning Quota (Byte)</span></span>
-- <span data-ttu-id="2d201-157">Cota de proibição de envio (bytes)</span><span class="sxs-lookup"><span data-stu-id="2d201-157">Prohibit Send Quota (Byte)</span></span>
-- <span data-ttu-id="2d201-158">Cota de envio/recebimento (bytes)</span><span class="sxs-lookup"><span data-stu-id="2d201-158">Prohibit Send/Receive Quota (Byte)</span></span>
-- <span data-ttu-id="2d201-159">Contagem de itens excluídos</span><span class="sxs-lookup"><span data-stu-id="2d201-159">Deleted Item Count</span></span>
-- <span data-ttu-id="2d201-160">Tamanho de itens excluídos (bytes)</span><span class="sxs-lookup"><span data-stu-id="2d201-160">Deleted Item Size (Byte)</span></span>
-- <span data-ttu-id="2d201-161">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="2d201-161">Report Period</span></span>
+- <span data-ttu-id="7734d-147">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="7734d-147">Report Refresh Date</span></span>
+- <span data-ttu-id="7734d-148">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="7734d-148">User Principal Name</span></span>
+- <span data-ttu-id="7734d-149">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="7734d-149">Display Name</span></span>
+- <span data-ttu-id="7734d-150">Excluído</span><span class="sxs-lookup"><span data-stu-id="7734d-150">Is Deleted</span></span>
+- <span data-ttu-id="7734d-151">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="7734d-151">Deleted Date</span></span>
+- <span data-ttu-id="7734d-152">Data de criação</span><span class="sxs-lookup"><span data-stu-id="7734d-152">Created Date</span></span>
+- <span data-ttu-id="7734d-153">Data da última atividade</span><span class="sxs-lookup"><span data-stu-id="7734d-153">Last Activity Date</span></span>
+- <span data-ttu-id="7734d-154">Contagem de itens</span><span class="sxs-lookup"><span data-stu-id="7734d-154">Item Count</span></span>
+- <span data-ttu-id="7734d-155">Armazenamento utilizado (bytes)</span><span class="sxs-lookup"><span data-stu-id="7734d-155">Storage Used (Byte)</span></span>
+- <span data-ttu-id="7734d-156">Cota de aviso de problema (bytes)</span><span class="sxs-lookup"><span data-stu-id="7734d-156">Issue Warning Quota (Byte)</span></span>
+- <span data-ttu-id="7734d-157">Cota de proibição de envio (bytes)</span><span class="sxs-lookup"><span data-stu-id="7734d-157">Prohibit Send Quota (Byte)</span></span>
+- <span data-ttu-id="7734d-158">Cota de envio/recebimento (bytes)</span><span class="sxs-lookup"><span data-stu-id="7734d-158">Prohibit Send/Receive Quota (Byte)</span></span>
+- <span data-ttu-id="7734d-159">Contagem de itens excluídos</span><span class="sxs-lookup"><span data-stu-id="7734d-159">Deleted Item Count</span></span>
+- <span data-ttu-id="7734d-160">Tamanho de itens excluídos (bytes)</span><span class="sxs-lookup"><span data-stu-id="7734d-160">Deleted Item Size (Byte)</span></span>
+- <span data-ttu-id="7734d-161">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="7734d-161">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="2d201-162">JSON</span><span class="sxs-lookup"><span data-stu-id="2d201-162">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="7734d-162">JSON</span><span class="sxs-lookup"><span data-stu-id="7734d-162">JSON</span></span>
 
-<span data-ttu-id="2d201-163">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d201-163">If successful, this method returns a `200 OK` response code and a **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** object in the response body.</span></span>
+<span data-ttu-id="7734d-163">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7734d-163">If successful, this method returns a `200 OK` response code and a **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** object in the response body.</span></span>
 
-<span data-ttu-id="2d201-164">O tamanho de página padrão para essa solicitação é de 200 itens.</span><span class="sxs-lookup"><span data-stu-id="2d201-164">The default page size for this request is 200 items.</span></span>
+<span data-ttu-id="7734d-164">O tamanho de página padrão para essa solicitação é de 200 itens.</span><span class="sxs-lookup"><span data-stu-id="7734d-164">The default page size for this request is 200 items.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2d201-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2d201-165">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7734d-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7734d-165">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="2d201-166">CSV</span><span class="sxs-lookup"><span data-stu-id="2d201-166">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="7734d-166">CSV</span><span class="sxs-lookup"><span data-stu-id="7734d-166">CSV</span></span>
 
-<span data-ttu-id="2d201-167">Veja a seguir um exemplo que gera CSV.</span><span class="sxs-lookup"><span data-stu-id="2d201-167">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="7734d-167">Veja a seguir um exemplo que gera CSV.</span><span class="sxs-lookup"><span data-stu-id="7734d-167">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2d201-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d201-168">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7734d-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7734d-168">Request</span></span>
 
-<span data-ttu-id="2d201-169">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d201-169">The following is an example of the request.</span></span>
+<span data-ttu-id="7734d-169">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7734d-169">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2d201-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d201-170">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "reportroot_getmailboxusagedetail_csv"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=text/csv
 ```
-# <a name="c"></a>[<span data-ttu-id="2d201-171">C#</span><span class="sxs-lookup"><span data-stu-id="2d201-171">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getmailboxusagedetail-csv-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[<span data-ttu-id="2d201-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d201-172">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmailboxusagedetail-csv-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="2d201-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d201-173">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagedetail-csv-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-#### <a name="response"></a><span data-ttu-id="2d201-174">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d201-174">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7734d-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="7734d-170">Response</span></span>
 
-<span data-ttu-id="2d201-175">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2d201-175">The following is an example of the response.</span></span>
+<span data-ttu-id="7734d-171">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7734d-171">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -137,7 +123,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="2d201-176">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="2d201-176">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="7734d-172">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="7734d-172">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -152,44 +138,30 @@ Content-Type: application/octet-stream
 Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="2d201-177">JSON</span><span class="sxs-lookup"><span data-stu-id="2d201-177">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="7734d-173">JSON</span><span class="sxs-lookup"><span data-stu-id="7734d-173">JSON</span></span>
 
-<span data-ttu-id="2d201-178">Veja a seguir um exemplo que retorna JSON.</span><span class="sxs-lookup"><span data-stu-id="2d201-178">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="7734d-174">Veja a seguir um exemplo que retorna JSON.</span><span class="sxs-lookup"><span data-stu-id="7734d-174">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2d201-179">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d201-179">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7734d-175">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7734d-175">Request</span></span>
 
-<span data-ttu-id="2d201-180">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d201-180">The following is an example of the request.</span></span>
+<span data-ttu-id="7734d-176">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7734d-176">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2d201-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d201-181">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "reportroot_getmailboxusagedetail_json"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=application/json
 ```
-# <a name="c"></a>[<span data-ttu-id="2d201-182">C#</span><span class="sxs-lookup"><span data-stu-id="2d201-182">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getmailboxusagedetail-json-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[<span data-ttu-id="2d201-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d201-183">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmailboxusagedetail-json-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="2d201-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d201-184">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getmailboxusagedetail-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-#### <a name="response"></a><span data-ttu-id="2d201-185">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d201-185">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7734d-177">Resposta</span><span class="sxs-lookup"><span data-stu-id="7734d-177">Response</span></span>
 
-<span data-ttu-id="2d201-186">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2d201-186">The following is an example of the response.</span></span>
+<span data-ttu-id="7734d-178">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7734d-178">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="2d201-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d201-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7734d-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7734d-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
