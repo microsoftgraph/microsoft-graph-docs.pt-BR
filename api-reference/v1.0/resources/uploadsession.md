@@ -4,21 +4,21 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-description: O recurso UploadSession fornece informações sobre como carregar arquivos grandes no OneDrive, no OneDrive for Business ou em bibliotecas de documentos do SharePoint.
+description: O recurso UploadSession fornece informações sobre como carregar arquivos grandes no OneDrive, no OneDrive for Business ou em bibliotecas de documentos do SharePoint, ou como anexos de arquivo para objetos de eventos e mensagens do Outlook.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3537a59da65499e67283d8a0640e5392c65edce1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b2540c1abdd5e40ea960dc3672ab7cc788e08ddd
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446783"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590010"
 ---
-# <a name="uploadsession-resource"></a>Recurso UploadSession
+# <a name="uploadsession-resource-type"></a>tipo de recurso uploadSession
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
-O recurso **UploadSession** fornece informações sobre como carregar arquivos grandes no OneDrive, no OneDrive for Business ou em bibliotecas de documentos do SharePoint.
+O recurso **uploadSession** fornece informações sobre como carregar arquivos grandes no onedrive, no onedrive for Business ou em bibliotecas de documentos do SharePoint ou em [eventos de evento](event.md) e de [mensagem](message.md) do Outlook como anexos.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -44,11 +44,12 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade       | Tipo              |Descrição
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | Data e hora em UTC em que a sessão de carregamento expirará. O arquivo completo deve ser carregado antes que esta hora de expiração seja atingida.
-| nextExpectedRanges | Coleção de cadeias de caracteres | Uma coleção de intervalos de bytes que estão ausentes do servidor para o arquivo. Estes intervalos são indexados como zero e têm o formato "início-fim" (por exemplo "0-26" para indicar os primeiros 27 bytes do arquivo).
+| nextExpectedRanges | Coleção de cadeias de caracteres | Uma coleção de intervalos de bytes que estão ausentes do servidor para o arquivo. Estes intervalos são indexados como zero e têm o formato "início-fim" (por exemplo "0-26" para indicar os primeiros 27 bytes do arquivo). Ao carregar arquivos como anexos do Outlook, em vez de uma coleção de intervalos, essa propriedade sempre indica um valor único "{Start}", o local no arquivo em que o próximo carregamento deve começar.
 | uploadUrl          | String            | O ponto de extremidade de URL que aceita solicitações PUT para intervalos de bytes do arquivo.
 
 ## <a name="see-also"></a>Confira também
 
+- [Anexar arquivos grandes a mensagens e eventos do Outlook como anexos](/graph/outlook-large-attachments)
 - [Carregar arquivos grandes com uma sessão de upload](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

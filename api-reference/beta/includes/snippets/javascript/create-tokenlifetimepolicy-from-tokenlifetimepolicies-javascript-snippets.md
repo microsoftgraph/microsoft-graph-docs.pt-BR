@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2b506cf74a70033cf58e5cbab353ba2a8935b330
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 2d843ce7eafab4f8034acd0d6913d8230dd1f3ac
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41558885"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589285"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const policy = {
+const tokenLifetimePolicy = {
   definition: [
     "definition-value"
   ],
@@ -25,6 +25,6 @@ const policy = {
 
 let res = await client.api('/policies/tokenLifetimePolicies')
     .version('beta')
-    .post(policy);
+    .post(tokenLifetimePolicy);
 
 ```

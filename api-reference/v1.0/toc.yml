@@ -280,7 +280,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Correio
+            - name: Email
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -617,6 +617,8 @@
                   href: api/event-list-attachments.md
                 - name: Adicionar anexo
                   href: api/event-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
@@ -665,6 +667,8 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
                 - name: Excluir anexo
@@ -3480,6 +3484,28 @@
                   href: api/identityprovider-update.md
                 - name: Excluir o provedor de identidade
                   href: api/identityprovider-delete.md
+            - name: Proteção de informações
+              items:
+                - name: Avaliação de ameaças
+                  items:
+                    - name: Visão Geral
+                      href: resources/threatassessment-api-overview.md
+                    - name: Solicitação de avaliação de ameaças
+                      href: resources/threatassessmentrequest.md
+                    - name: Solicitação de avaliação de email
+                      href: resources/mailassessmentrequest.md
+                    - name: Solicitação de avaliação de arquivo de email
+                      href: resources/emailfileassessmentrequest.md
+                    - name: Solicitação de avaliação de arquivo
+                      href: resources/fileAssessmentRequest.md
+                    - name: Solicitação de avaliação de URL
+                      href: resources/urlassessmentrequest.md
+                    - name: Listar
+                      href: api/informationprotection-list-threatassessmentrequests.md
+                    - name: Criar
+                      href: api/informationprotection-post-threatassessmentrequests.md
+                    - name: Obter
+                      href: api/threatassessmentrequest-get.md
             - name: Gerenciador de convites
               href: resources/invitation.md
               items:
@@ -3556,6 +3582,8 @@
                   href: api/message-list-attachments.md
                 - name: Adicionar anexo
                   href: api/message-post-attachments.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Criar extensão aberta
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Obter extensão aberta
@@ -3569,6 +3597,8 @@
                   href: resources/itemattachment.md
                 - name: Tipo de anexo de referência
                   href: resources/referenceattachment.md
+                - name: Criar sessão para anexar arquivo grande
+                  href: api/attachment-createuploadsession.md
                 - name: Obter anexo
                   href: api/attachment-get.md
                 - name: Excluir anexo
