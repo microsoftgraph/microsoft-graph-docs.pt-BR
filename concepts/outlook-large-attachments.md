@@ -1,46 +1,47 @@
 ---
-title: Anexar arquivos grandes a mensagens do Outlook
-description: Dependendo do tamanho do arquivo, você pode escolher uma de duas maneiras de anexar um arquivo a uma mensagem.
+title: Anexar arquivos grandes a mensagens ou eventos do Outlook
+description: Dependendo do tamanho do arquivo, você pode escolher uma das duas maneiras de anexar um arquivo a uma mensagem ou evento.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5f6f54adf38c0f2827b587e6646df4cb3549a204
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30589b4aeeb6d6f8a17dfefd677abadeba3c76bd
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448568"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590911"
 ---
-# <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>Anexar arquivos grandes às mensagens do Outlook como anexos (visualização)
+# <a name="attach-large-files-to-outlook-messages-or-events"></a>Anexar arquivos grandes a mensagens ou eventos do Outlook
 
-Dependendo do tamanho do arquivo, você pode escolher uma das duas maneiras de anexar um arquivo a uma [mensagem](/graph/api/resources/message?view=graph-rest-beta):
-
-- Se o tamanho do arquivo for menor que 3 MB, você poderá executar um único [POST na propriedade de navegação de anexos da mensagem](/graph/api/message-post-attachments?view=graph-rest-beta). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
-- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de carregamento e use o `PUT` iteradamente para carregar intervalos de bytes do arquivo até que você carregue todo o arquivo. Um cabeçalho na resposta `PUT` finalizada com êxito inclui uma URL com a ID do anexo. 
+Usando a API do Microsoft Graph, é possível anexar arquivos de até 150 MB a uma [mensagem](/graph/api/resources/message?view=graph-rest-1.0) ou item de [evento](/graph/api/resources/event?view=graph-rest-1.0) do Outlook. Dependendo do tamanho do arquivo, escolha uma das duas maneiras de anexar o arquivo:
+- Se o tamanho do arquivo for menor que 3 MB, faça uma única POSTAGEM na propriedade de navegação dos **anexos** do item do Outlook; veja como fazer isso para uma [mensagem](/graph/api/message-post-attachments?view=graph-rest-1.0) ou [evento](/graph/api/event-post-attachments?view=graph-rest-1.0). A resposta `POST` bem-sucedida inclui a ID de anexo do arquivo.
+- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de carregamento e use o `PUT` iteradamente para carregar intervalos de bytes do arquivo até que você carregue todo o arquivo. Um cabeçalho na resposta `PUT` finalizada com êxito inclui uma URL com a ID do anexo.
 
 Para anexar vários arquivos a uma mensagem, escolha a abordagem de cada arquivo com base em seu tamanho e anexe-os individualmente.
 
-Este artigo usa um exemplo para ilustrar a segunda abordagem. O exemplo cria e usa uma sessão de carregamento para adicionar um anexo de arquivo grande (com tamanho acima de 3 MB) a uma mensagem específica. Depois de carregar o arquivo inteiro, ele recebe uma URL que contém uma identificação para o arquivo em anexo, com o qual ele pode fazer outras operações, como obter os metadados do anexo de arquivo.
+Este artigo ilustra a segunda abordagem passo a passo, criando e usando uma sessão de carregamento para adicionar um anexo de arquivo grande (de tamanho superior a 3MB) a um item do Outlook. Cada etapa mostra o código correspondente de uma mensagem e de um evento. Ao carregar o arquivo inteiro com êxito, o artigo exibe a obtenção de um cabeçalho de resposta contendo uma ID para o anexo do arquivo e, em seguida, o uso dessa ID de anexo para obter o conteúdo bruto do anexo ou metadados do anexo. 
 
 > [!IMPORTANT] 
-> Esteja atento a um [problema conhecido](known-issues.md#attaching-large-files-to-messages)se você estiver anexando arquivos de grande tamanho a uma mensagem em uma caixa de correio delegada ou compartilhada.
+> Esteja atento a um [problema conhecido](known-issues.md#attaching-large-files-to-messages)se você estiver anexando arquivos de grande tamanho a uma mensagem ou evento em uma caixa de correio delegada ou compartilhada.
 
-## <a name="step-1-create-an-upload-session"></a>Etapa 1: Criar uma sessão de upload
+## <a name="step-1-create-an-upload-session"></a>Etapa 1: criar uma sessão de carregamento
 
-[Criar uma sessão de carregamento](/graph/api/attachment-createuploadsession?view=graph-rest-beta) para anexar um arquivo a uma mensagem. Especifique o arquivo no parâmetro de entrada **AttachmentItem**.
+[Criar uma sessão de carregamento](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) para anexar um arquivo a uma mensagem ou evento. Especifique o arquivo no parâmetro de entrada **AttachmentItem**.
 
-Uma operação bem-sucedida retorna `HTTP 201 Created` e uma nova instância[uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta), que contém uma URL opaca que você pode usar em operações `PUT` subseqüentes para carregar partes do arquivo. A **uploadSession** fornece um local de armazenamento temporário onde os bytes do arquivo são salvos até que você tenha carregado o arquivo completo.
+Uma operação bem-sucedida retorna `HTTP 201 Created` e uma nova instância[uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0), que contém uma URL opaca que você pode usar em operações `PUT` subseqüentes para carregar partes do arquivo. A **uploadSession** fornece um local de armazenamento temporário onde os bytes do arquivo são salvos até que você tenha carregado o arquivo completo.
 
-Verifique se solicitou `Mail.ReadWrite`permissão para criar **uploadSession**. A URL opaca, retornada na propriedade **uploadUrl** do novo **uploadSession** é pré-autenticada e contém o token de autorização apropriado para consultas `PUT` subsequentes no domínio `https://outlook.office.com`. Esse token expira por **expirationDateTime**. Não Personalize essa URL para as operações `PUT`.
+Certifique-se de pedir permissão de `Mail.ReadWrite` para criar a **uploadSession** para uma mensagem e `Calendars.ReadWrite` para um evento. A URL opaca, retornada na propriedade **uploadUrl** do novo **uploadSession** é pré-autenticada e contém o token de autorização apropriado para consultas `PUT` subsequentes no domínio `https://outlook.office.com`. Esse token expira por **expirationDateTime**. Não Personalize essa URL para as operações `PUT`.
 
 O objeto**uploadSession** na resposta também inclui a propriedade **nextExpectedRanges**, que indica que o local inicial de carregamento deve ser byte 0.
 
-### <a name="example-request-create-an-upload-session"></a>Solicitação de exemplo: criar uma sessão de carregamento
+### <a name="example-create-an-upload-session-for-a-message"></a>Exemplo: criar uma sessão de carregamento para uma mensagem
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "walkthrough_create_uploadsession",
+  "name": "walkthrough_create_uploadsession_message",
   "sampleKeys": ["AAMkADI5MAAIT3drCAAA="]
 }-->
 ```http
@@ -70,10 +71,12 @@ Content-type: application/json
 ---
 
 
-### <a name="example-response-get-an-uploadsession-object"></a>Exemplo de resposta: Obtenha um objeto uploadSession
+#### <a name="response"></a>Resposta
+O exemplo de resposta a seguir mostra o recurso **uploadSession** retornado para a mensagem.
+
 <!-- {
   "blockType": "response",
-  "name": "walkthrough_create_uploadsession",
+  "name": "walkthrough_create_uploadsession_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.uploadSession"
 } -->
@@ -91,10 +94,56 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-create-an-upload-session-for-an-event"></a>Exemplo: criar uma sessão de carregamento para uma evento
+#### <a name="request"></a>Solicitação 
 
-## <a name="step-2-use-the-upload-session-to-upload-a-range-of-bytes-of-the-file"></a>Etapa 2: Usar a sessão de carregamento para carregar um intervalo de bytes do arquivo
+<!-- {
+  "blockType": "request",
+  "name": "walkthrough_create_uploadsession_event",
+  "sampleKeys": ["AAMkADU5CCmSAAA="]
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events/AAMkADU5CCmSAAA=/attachments/createUploadSession
+Content-type: application/json
 
-Para carregar o arquivo, ou uma parte do arquivo, faça uma solicitação `PUT` para o valor da propriedade **uploadUrl** retornado como parte de **uploadSession** na etapa 1. Você pode carregar todo o arquivo ou dividi-lo em vários intervalos de bytes. Para melhorar o desempenho, mantenha cada intervalo de bytes com menos de 4 MB.
+{
+  "AttachmentItem": {
+    "attachmentType": "file",
+    "name": "flower",
+    "size": 3483322
+  }
+}
+```
+
+
+#### <a name="response"></a>Resposta
+O exemplo de resposta a seguir mostra o recurso **uploadSession** retornado para o evento.
+
+<!-- {
+  "blockType": "response",
+  "name": "walkthrough_create_uploadsession_event",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.uploadSession"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5RpAACJlCs8AAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIBtw",
+    "expirationDateTime": "2020-02-22T02:46:56.7410786Z",
+    "nextExpectedRanges": [
+        "0-"
+    ]
+}
+
+```
+
+
+## <a name="step-2-use-the-upload-session-to-upload-a-range-of-bytes-of-the-file"></a>Etapa 2: usar a sessão de carregamento para carregar um intervalo de bytes do arquivo
+
+Para carregar o arquivo, ou uma parte do arquivo, faça uma solicitação `PUT` à URL retornada na etapa 1 na propriedade **uploadUrl** do recurso **uploadSession**. Você pode carregar todo o arquivo ou dividi-lo em vários intervalos de bytes. Para melhorar o desempenho, mantenha cada intervalo de bytes com menos de 4 MB.
 
 Especifique os cabeçalhos e corpo da solicitação conforme é descrito abaixo.
 
@@ -124,7 +173,8 @@ Um carregamento bem-sucedido retorna `HTTP 200 OK` e um objeto **uploadSession**
 -->
 - A propriedade **uploadUrl** não é retornada explicitamente, pois todas as operações `PUT` de uma sessão de carregamento usam a mesma URL retornada ao criar a sessão (etapa 1).
 
-### <a name="example-request-first-upload"></a>Solicitação de exemplo: primeiro carregamento
+### <a name="example-first-upload-to-the-message"></a>Exemplo: primeiro carregamento na mensagem
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -139,7 +189,9 @@ Content-Range: bytes 0-2097151/3483322
 }
 ```
 
-### <a name="example-response-get-the-start-of-the-next-byte-range-that-the-server-expects"></a>Resposta de exemplo: obter o início do próximo intervalo de bytes esperado pelo servidor
+#### <a name="response"></a>Resposta
+
+O exemplo de resposta a seguir mostra na propriedade **NextExpectedRanges** o início do próximo intervalo de bytes que o servidor espera.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -154,16 +206,50 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-first-upload-to-the-event"></a>Exemplo: primeiro carregamento na evento
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+PUT https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5RpAACJlCs8AAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIBtw
+Content-Type: application/octet-stream
+Content-Length: 2097152
+Content-Range: bytes 0-2097151/3483322
+
+{
+  <bytes 0-2097151 of the file to be attached, in binary format>
+}
+```
+
+#### <a name="response"></a>Resposta
+
+O exemplo de resposta a seguir mostra na propriedade **NextExpectedRanges** o início do próximo intervalo de bytes que o servidor espera.
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://outlook.office.com/api/beta/$metadata#Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69%4098a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA%3D')/AttachmentSessions/$entity",
+    "ExpirationDateTime":"2020-02-22T02:46:56.7410786Z",
+    "NextExpectedRanges":["2097152"]
+}
+```
+
 
 ## <a name="step-3-continue-uploading-byte-ranges-until-the-entire-file-has-been-uploaded"></a>Etapa 3: continuar carregando intervalos de bytes até que todo o arquivo tenha sido carregado
 
 Após o carregamento inicial na etapa 2, continue a carregar a parte restante do arquivo, usando uma solicitação `PUT` semelhante, conforme descrito na etapa 2, antes que você atinja a data/hora de vencimento da sessão. Use a coleção **NextExpectedRanges** para determinar onde começar o próximo intervalo de bytes a ser carregado. É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado no serviço.
 
-Quando o último byte do arquivo for carregado com êxito, a operação de `PUT` final retornará `HTTP 201 Created` e um cabeçalho `Location` que indica a URL para o anexo de arquivo no domínio `https://outlook.office.com`. Você pode obter a ID do anexo na URL e salvá-la para uso posterior. Dependendo do seu cenário, você pode usar essa ID para [obter os metadados do anexo](/graph/api/attachment-get?view=graph-rest-beta)ou [remover o anexo da mensagem](/graph/api/attachment-delete?view=graph-rest-beta) usando o ponto de extremidade do Microsoft Graph.
+Quando o último byte do arquivo for carregado com êxito, a operação de `PUT` final retornará `HTTP 201 Created` e um cabeçalho `Location` que indica a URL para o anexo de arquivo no domínio `https://outlook.office.com`. Você pode obter a ID do anexo na URL e salvá-la para uso posterior. Dependendo do cenário, você pode usar essa ID para [obter os metadados do anexo](/graph/api/attachment-get?view=graph-rest-1.0)ou [remover o anexo do item do Outlook](/graph/api/attachment-delete?view=graph-rest-1.0) usando o ponto de extremidade do Microsoft Graph.
 
-O exemplo a seguir mostra como carregar o último intervalo de bytes do arquivo.
+Os exemplos a seguir mostram o carregamento do último intervalo de bytes do arquivo na mensagem e no evento das etapas anteriores.
 
-### <a name="example-request-final-upload"></a>Solicitação de exemplo: carregamento final
+### <a name="example-final-upload-to-the-message"></a>Exemplo: último carregamento na mensagem
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -178,9 +264,8 @@ Content-Range: bytes 2097152-3483321/3483322
 }
 ```
 
-### <a name="example-response-get-the-location-response-header-to-save-the-attachment-id"></a>Resposta de exemplo: obter o cabeçalho de resposta do local para salvar a ID do anexo
-
-Na URL especificada pelo cabeçalho da resposta `Location`, salve a ID do anexo (`AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=`) para uso posterior.
+#### <a name="response"></a>Resposta
+O exemplo de resposta a seguir mostra um cabeçalho de resposta de `Location` onde você pode salvar a ID do anexo (`AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=`) para uso posterior.
 
 <!-- {
   "blockType": "ignored"
@@ -192,33 +277,93 @@ Location: https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-626
 Content-Length: 0
 ```
 
-## <a name="step-4-optional-get-the-file-attachment-from-the-message"></a>Etapa 4 (opcional): obter o arquivo em anexo da mensagem
+### <a name="example-final-upload-to-the-event"></a>Exemplo: último carregamento no evento
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+PUT https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5RpAACJlCs8AAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIBtw
+Content-Type: application/octet-stream
+Content-Length: 1386170
+Content-Range: bytes 2097152-3483321/3483322
 
-Como sempre, [obter um anexo](/graph/api/attachment-get?view=graph-rest-beta) a partir de uma mensagem não é tecnicamente limitado pelo tamanho do anexo.
+{
+  <bytes 2097152-3483321 of the file to be attached, in binary format>
+}
+```
+
+#### <a name="response"></a>Resposta
+O exemplo de resposta a seguir mostra um cabeçalho de resposta de `Location` onde você pode salvar a ID do anexo (`AAMkADU5CCmSAAANZAlYPeyQByv7Y=`) para uso posterior.
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+HTTP/1.1 201 Created
+
+Location: https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/Attachments('AAMkADU5CCmSAAANZAlYPeyQByv7Y=')
+Content-Length: 0
+```
+
+## <a name="step-4-optional-get-the-file-attachment-from-the-outlook-item"></a>Etapa 4 (opcional): obter o arquivo em anexo do item do Outlook
+
+Como sempre, [obter um anexo](/graph/api/attachment-get?view=graph-rest-1.0) a partir de um item do Outlook não é tecnicamente limitado pelo tamanho do anexo.
 
 No entanto, obter um anexo de arquivo grande no formato base64-encoded afeta o desempenho da API. Se você espera um anexo grande:
 
-- Como uma alternativa para obter o conteúdo do anexo no formato base64, você pode [obter os dados brutos do arquivo em anexo](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message?view=graph-rest-1.0).
-- Para [obter os metadados do anexo de arquivo](/graph/api/attachment-get?view=graph-rest-beta#example-1-get-the-properties-of-a-file-attachment), acrescente um parâmetro `$select` para incluir somente as propriedades de metadados desejadas, excluindo a propriedade **contentBytes** que retorna o arquvo em anexo no formato base64.
+- Como uma alternativa para obter o conteúdo do anexo no formato base64, você pode [obter os dados brutos do arquivo em anexo](/graph/api/attachment-get?view=graph-rest-1.0#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message).
+- Para [obter os metadados do anexo de arquivo](/graph/api/attachment-get?view=graph-rest-1.0#example-1-get-the-properties-of-a-file-attachment), acrescente um parâmetro `$select` para incluir somente as propriedades de metadados desejadas, excluindo a propriedade **contentBytes** que retorna o arquvo em anexo no formato base64.
 
-### <a name="example-request-get-the-file-attachment-metadata"></a>Solicitação de exemplo: obter os metadados do arquivo em anexo
+### <a name="example-get-the-raw-file-attached-to-the-event"></a>Exemplo: obter o arquivo bruto anexado ao evento
+Seguindo o exemplo de evento e utilizando a ID do anexo retornada no cabeçalho de `Location` da etapa anterior, o próximo exemplo de solicitação mostra o uso de um parâmetro `$value` para obter os dados de conteúdo bruto do anexo.
 
-O exemplo a seguir mostra o remetente usando um parâmetro `$select` para obter todos os metadados de um arquivo em anexo em uma mensagem, exceto o **contentBytes**.
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "ignored",
+  "name": "walkthrough_get_attachment_raw",
+  "sampleKeys": ["d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32", "AAMkADU5CCmSAAA=", "AAMkADU5CCmSAAANZAlYPeyQByv7Y="]
+}-->
+```http
+GET https://graph.microsoft.com/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/Attachments('AAMkADU5CCmSAAANZAlYPeyQByv7Y=')/$value
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "ignored",
+  "name": "walkthrough_get_attachment_raw",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+content-length: 3483322
+Content-type: image/jpeg
+
+{Raw bytes of the file}
+```
+
+
+### <a name="example-get-the-metadata-of-the-file-attached-to-the-message"></a>Exemplo: obter os metadados do arquivo anexado à mensagem
+Seguindo o exemplo da mensagem, o próximo exemplo de solicitação mostra o uso de um parâmetro `$select` para obter alguns dos metadados de um anexo de arquivo em uma mensagem, excluindo o **contentBytes**.
+
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
-  "name": "walkthrough_get_attachment",
+  "name": "walkthrough_get_attachment_metadata",
   "sampleKeys": ["a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47", "AAMkADI5MAAIT3drCAAA=", "AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0="]
 }-->
 ```http
 GET https://graph.microsoft.com/api/v1.0/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/Attachments('AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=')?$select=lastModifiedDateTime,name,contentType,size,isInline
 ```
 
-### <a name="example-response"></a>Resposta de exemplo
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",
-  "name": "walkthrough_get_attachment",
+  "name": "walkthrough_get_attachment_metadata",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -239,12 +384,14 @@ Content-type: application/json
 }
 ```
 
+
 ## <a name="alternative-cancel-the-upload-session"></a>Alternativa: cancelar a sessão de carregamento
 
 Em qualquer momento antes da sessão de carregamento expirar, se for preciso cancelar o carregamento, você poderá usar a mesma URL opaca inicial para excluir a sessão de carregamento. Uma operação bem-sucedida retorna `HTTP 204 No Content`.
 
-### <a name="example-request-cancel-an-upload-session"></a>Solicitação de exemplo: cancelar uma sessão de carregamento
+### <a name="example-cancel-the-upload-session-for-the-message"></a>Exemplo: cancelar a sessão de carregamento da mensagem
 
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
 }-->
@@ -252,7 +399,7 @@ Em qualquer momento antes da sessão de carregamento expirar, se for preciso can
 DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0tAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNI
 ```
 
-### <a name="example-response"></a>Resposta de exemplo
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "ignored"
@@ -264,5 +411,5 @@ HTTP/1.1 204 No content
 
 ### <a name="errorattachmentsizeshouldnotbelessthanminimumsize"></a>ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
 
-Este erro é devolvido ao tentar [criar uma sessão de upload](/graph/api/attachment-createuploadsession?view=graph-rest-beta) para anexar um arquivo menor que 3 MB. Se o tamanho do arquivo for menor que 3 MB, execute um único [POST na propriedade de navegação de anexos da mensagem](/graph/api/message-post-attachments?view=graph-rest-beta). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
+Este erro é devolvido ao tentar [criar uma sessão de upload](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) para anexar um arquivo menor que 3 MB. Se o tamanho do arquivo for menor que 3 MB, faça uma única POSTAGEM na propriedade de navegação dos **anexos** da [mensagem](/graph/api/message-post-attachments?view=graph-rest-1.0) ou do [evento](/graph/api/event-post-attachments?view=graph-rest-1.0). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
 
