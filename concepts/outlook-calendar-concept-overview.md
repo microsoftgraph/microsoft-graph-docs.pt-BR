@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4db79703595e9a8e4f21fa6eefd0ab098123138b
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 7b79fb25c3f498f284c9bfd582b31dc8ff01fcc0
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840001"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590904"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
@@ -113,6 +113,7 @@ Está procurando a referência de API para esse serviço?
   - [Usar o Outlook para organizar e participar de reuniões online (versão prévia)](outlook-calendar-online-meetings.md)
   - [Agendar compromissos repetidos como eventos recorrentes no Outlook](outlook-schedule-recurring-events.md)
   - [Obter eventos compartilhados](outlook-get-shared-events-calendars.md)
+  - [Anexar arquivos grandes a mensagens ou eventos do Outlook](outlook-large-attachments.md)
   - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
 - Examine a referência da [API de calendário](/graph/api/resources/calendar?view=graph-rest-1.0) do Outlook.
 

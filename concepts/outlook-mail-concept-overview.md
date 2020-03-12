@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 70538917e54ff24be9513bb0d1e912d1918c1a59
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 260aa688c3116222638bf91349a72acea0fa1493
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41839938"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590967"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
@@ -76,9 +76,11 @@ Está procurando a referência de API para esse serviço?
   - [Criar e enviar mensagens](outlook-create-send-messages.md)
   - Formas de [organizar mensagens](outlook-organize-messages.md)
   - [Obter conteúdo MIME de uma mensagem](outlook-get-mime-message.md)
+  - [Anexar arquivos grandes a mensagens ou eventos do Outlook](outlook-large-attachments.md)
   - [Receber mensagens compartilhadas](outlook-share-messages-folders.md)
-  - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
   - Como [enviar email de outro usuário](outlook-send-mail-from-other-user.md)
+  - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
+  
 
 - Saiba mais sobre como [usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) no Microsoft Graph v1.0.
 

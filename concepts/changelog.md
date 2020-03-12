@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0fd8069b0d9bbfe659c17cc8d7a000ece53477f9
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: ee99d4839724b89ba16d7f4b4b9a663198d90f3a
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562700"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590822"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,11 +18,26 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="march-2020"></a>Março de 2020
 
+### <a name="calendar-outlook"></a>Calendário (Outlook)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | Beta e v1.0          | [Adicionando anexos de arquivo de até 150 MB](outlook-large-attachments.md) a uma instância de [evento](/graph/api/resources/event?view=graph-rest-1.0). |
+
+### <a name="mail-outlook"></a>Email (Outlook)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | V1.0          | [Adicionando anexos de arquivo de até 150 MB](outlook-large-attachments.md) a uma instância de [mensagem](/graph/api/resources/message?view=graph-rest-1.0). |
+| Adição        | V1.0          | O tipo complexo [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0), a ação [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) para a entidade de [anexo](/graph/api/resources/attachment?view=graph-rest-1.0) e a enumeração **attachmentType**. |
+| Alterado         | V1.0          | Estendida a entidade [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) existente que foi usada pelo [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) para que esta se aplique ao **anexo** também. |
+
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta | Foi adicionado o suporte de ChannelMessage.Read.All para APIs para ler [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) nos canais. |
+
 
 ## <a name="february-2020"></a>Fevereiro de 2020
 
@@ -92,11 +107,18 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 | Adição | beta |O tipo de recurso [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) controla o mapeamento de declarações para os protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect, para tokens emitidos para um aplicativo específico.|
 | Adição | beta | O tipo de recurso [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) controla o comportamento de autenticação do Azure Active Directory para usuários federados, em particular as restrições de aceleração automática e autenticação de usuário em domínios federados. |
 | Adição | beta | O tipo de recurso [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) controla a duração da vida útil dos tokens de acesso usados ​​para acessar recursos protegidos.|
+| Adição | beta | O [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy?view=graph-rest-beta) tipo de recurso que controla as características de tokens SAML emitidos pelo Azure AD. Isso permite que você defina o algoritmo de assinatura, opções de assinatura ou versão do token SAML a ser usada para emitir o token SAML.
 | Adição | beta | A propriedade [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) foi adicionada ao tipo de recurso **quarantineStatus**.|
 | Adição | Beta e v1.0 | A propriedade **latestSupportedTlsVersion** foi adicionada à entidade da [assinatura](/graph/api/resources/subscription?view=graph-rest-1.0). Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Para obter detalhes, confira [Assinaturas do Microsoft Graph que substituíram o TLS 1.0 e o 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
 | Alteração | Beta | Atualizado o [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) com propriedades adicionais para configurações de solicitante, aprovação e revisão.|
 |Adição | beta | A propriedade [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) foi adicionada ao tipo de recurso **quarantineStatus**.|
 | Adição | Beta e v1.0 | Foi adicionada a permissão Policy.ReadWrite.ApplicationConfiguration ao nível do aplicativo e delegada às operações de leitura e gravação nas políticas de configuração do aplicativo.|
+
+### <a name="identity-and-access-azure-ad--information-protection"></a>Identidade e acesso (Azure AD) | Proteção de informações
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0        | Adicionadas as APIs [criar](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0), [obter](/graph/api/threatassessmentrequest-get?view=graph-rest-1.0) e [listar](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0) para gerenciar os recursos[threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0).|
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
