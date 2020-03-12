@@ -4,12 +4,12 @@ description: Os dados de relatórios acessíveis por meio da API de relatórios 
 author: yixia
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 4fbdd9bec46db414cfd9f330b698c93ddcad9e27
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b62da7d042f4dc61c2ee4da648fd0b612f5caac8
+ms.sourcegitcommit: dbc547a845e507aa934025f9dc73563c13b4fb90
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871566"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42606174"
 ---
 # <a name="authorization-for-apis-to-read-office-365-usage-reports"></a>Autorização para APIs lerem os relatórios de uso do Office 365
 
@@ -18,7 +18,7 @@ Os dados do relatório acessíveis por meio da API de relatórios do Microsoft G
 As APIs que leem os relatórios de uso do Office 365 oferecem suporte a dois tipos de autorização:
 
 - **Autorização no nível do aplicativo** – permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. As permissões concedidas ao aplicativo determinam a autorização. 
-- **Permissão delegada pelo usuário** – permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Além do aplicativo ter recebido as permissões necessárias, o usuário deve ser membro de uma função de administrador limitada do Azure AD. Podendo ser uma das seguintes funções: administrador da empresa, administrador do Exchange, administrador do SharePoint, administrador do Lync, leitor global ou leitor de relatórios.
+- **Permissão delegada pelo usuário** – permite que um aplicativo leia todos os relatórios de uso de serviço em nome do usuário conectado. Além do aplicativo ter recebido as permissões necessárias, o usuário deve ser membro de uma função de administrador limitada do Azure AD. Essa pode ser uma das seguintes funções: administrador da empresa, administrador do Exchange, administrador do SharePoint, administrador do Lync, Administrador de Serviço do Teams, Administrador de Comunicações do Teams, leitor global ou leitor de relatórios.
 
 Se você estiver chamando as APIs do Explorador do Graph:
 

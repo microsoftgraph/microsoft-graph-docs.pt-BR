@@ -5,18 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68037939f6c2abcda77efa6eb0aa606616baf695
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d849f4166e0481accb991c6f318e486917e562e3
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509447"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42572388"
 ---
 # <a name="archive-team"></a>Arquivar equipe
 
 Namespace: microsoft.graph
-
-
 
 Arquive a [equipe ](../resources/team.md) especificada. Quando uma equipe é arquivada, os usuários não podem mais enviar ou curtir mensagens nos canais da equipe, editar o nome, a descrição ou outras configurações da equipe ou, em geral, fazer a maioria das alterações na equipe.
 As alterações de associação à equipe continuam a ser permitidas.
@@ -56,6 +54,9 @@ Na solicitação, você pode _opcionalmente_ incluir o parâmetro `shouldSetSpoS
 }
 ```
 Esse parâmetro opcional define se é necessário definir permissões para membros da equipe como somente leitura no site do SharePoint Online associado à equipe. Essa etapa será ignorada, caso as defina como falsas ou omita o corpo completamente.
+
+>[!IMPORTANT]
+>Não há suporte para o parâmetro `shouldSetSpoSiteReadOnlyForMembers` no contexto do aplicativo.
 
 ## <a name="response"></a>Resposta
 
