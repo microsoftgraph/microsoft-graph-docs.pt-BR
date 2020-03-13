@@ -6,15 +6,15 @@ localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
 ms.openlocfilehash: 1faba5ca71fe9478963120ec43d9eb9da08d721a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520840"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618907"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Respostas de erro da API de segurança do Microsoft Graph
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Erros na API de segurança do Microsoft Graph são retornados usando o código de status de conteúdo parcial HTTP 206, e são entregues por meio de um cabeçalho de aviso.
 

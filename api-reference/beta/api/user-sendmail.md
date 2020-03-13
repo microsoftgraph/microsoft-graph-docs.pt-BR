@@ -6,15 +6,15 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: 2ac87c9e2ea9bd0778db7d96dfa79a0280c42ce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451634"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618899"
 ---
 # <a name="send-mail"></a>Enviar email
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

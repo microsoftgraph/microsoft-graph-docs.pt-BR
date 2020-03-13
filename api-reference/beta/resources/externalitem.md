@@ -6,15 +6,15 @@ author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
 ms.openlocfilehash: e115135bedecfe4b055e028d5c19902a068c8a53
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498697"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618894"
 ---
 # <a name="externalitem-resource-type"></a>tipo de recurso externalItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                        | Tipo de retorno                     | Descrição |
 |:--------------------------------------------------------------|:--------------------------------|:--|
