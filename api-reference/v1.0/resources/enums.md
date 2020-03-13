@@ -5,30 +5,21 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: dc1e20cb52224b1c1fe82ea948750e0e39f910ac
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 575cb3aacbcc507fb2659a7097dfedce828603e3
+ms.sourcegitcommit: dbc547a845e507aa934025f9dc73563c13b4fb90
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591450"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42606856"
 ---
-### <a name="attachmenttype-values"></a>valores AttachmentType
-
-| Membro
-|:--------------
-| file
-| item
-| de referência
-
-
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |primário|,0|O pai do usuário.|
-|relativo|1 | O relativo do usuário.|
-|facilita|2 | O auxílio do usuário.|
-|Doutor|3 | O médico do usuário.|
+|relativo|1| O relativo do usuário.|
+|facilita|duas| O auxílio do usuário.|
+|Doutor|3D| O médico do usuário.|
 |responsável|4 | O guardião do usuário.|
 |pensão|5 | O filho do usuário.|
 |outro|6 | Uma relação não especificada com o usuário.|
@@ -36,7 +27,7 @@ ms.locfileid: "42591450"
 
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
-| Membro
+| Member
 |:-----------------
 | Windows
 | IANA
@@ -47,16 +38,16 @@ ms.locfileid: "42591450"
 | Membro            |Valor
 |:------------------|:-------
 | macro              | ,0
-| provisória         | 1 
-| Atualmente              | 2 
-| temporária               | 3 
+| provisória         | 1
+| Atualmente              | duas
+| temporária               | 3D
 | workingElsewhere  | 4 
 | desconhecido           | -1
 
 
 ### <a name="attendeetype-values"></a>valores de attendetype
 
-| Membro
+| Member
 |:-------------------------
 | obrigatório
 | opcional
@@ -65,7 +56,7 @@ ms.locfileid: "42591450"
 
 ### <a name="externalaudiencescope-values"></a>valores de externalAudienceScope
 
-| Membro
+| Member
 |:-------------------------
 | nenhuma
 | contactsOnly
@@ -74,7 +65,7 @@ ms.locfileid: "42591450"
 
 ### <a name="automaticrepliesstatus-values"></a>valores de automaticRepliesStatus
 
-| Membro
+| Member
 |:-------------------------
 | deficiência
 | alwaysEnabled
@@ -87,9 +78,9 @@ ms.locfileid: "42591450"
 |:-----------|:----------
 | Automático       | -1
 | lightBlue  | ,0
-| lightGreen | 1 
-| lightOrange| 2 
-| lightGray  | 3 
+| lightGreen | 1
+| lightOrange| duas
+| lightGray  | 3D
 | lightYellow| 4 
 | lightTeal  | 5 
 | lightPink  | 6 
@@ -100,7 +91,7 @@ ms.locfileid: "42591450"
 
 ### <a name="educationexternalsource-values"></a>valores de educationExternalSource
 
-| Membro
+| Member
 |:-------------------------
 | activa
 | Manual
@@ -109,7 +100,7 @@ ms.locfileid: "42591450"
 
 ### <a name="educationgender-values"></a>valores de educationGender
 
-| Membro
+| Member
 |:-------------------------
 | feminino
 | canto
@@ -119,7 +110,7 @@ ms.locfileid: "42591450"
 
 ### <a name="eventtype-values"></a>valores de eventType
 
-| Membro
+| Member
 |:-------------------------
 | singleInstance
 | ocorrência
@@ -129,7 +120,7 @@ ms.locfileid: "42591450"
 
 ### <a name="sensitivity-values"></a>valores de sensibilidade
 
-| Membro
+| Member
 |:-------------------------
 | SS
 | pessoal
@@ -139,7 +130,7 @@ ms.locfileid: "42591450"
 
 ### <a name="importance-values"></a>valores de importância
 
-| Membro
+| Member
 |:-------------------------
 | low
 | SS
@@ -147,14 +138,14 @@ ms.locfileid: "42591450"
 
 
 ### <a name="educationuserrole-values"></a>valores de educationUserRole
-| Membro
+| Member
 |:---------------------
 | student
 | teacher
 
 ### <a name="meetingmessagetype-values"></a>valores de meetingMessageType
 
-| Membro
+| Member
 |:-----------------
 | nenhuma
 | meetingRequest
@@ -166,7 +157,7 @@ ms.locfileid: "42591450"
 
 ### <a name="followupflagstatus-values"></a>valores de followupFlagStatus
 
-| Membro
+| Member
 |:-------------------------
 | não sinalizado
 | complete
@@ -175,7 +166,7 @@ ms.locfileid: "42591450"
 
 ### <a name="inferenceclassificationtype-values"></a>valores de inferenceClassificationType
 
-| Membro
+| Member
 |:-----------------
 | Destaques
 | outro
@@ -183,7 +174,7 @@ ms.locfileid: "42591450"
 
 ### <a name="iosnotificationalerttype-values"></a>valores de iosNotificationAlertType
 
-| Membro
+| Member
 |:-------------------------
 | deviceDefault
 | Bandeira
@@ -192,7 +183,7 @@ ms.locfileid: "42591450"
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
-| Membro
+| Member
 |:-------------
 | desconhecido
 | autentica
@@ -208,7 +199,7 @@ ms.locfileid: "42591450"
 
 
 ### <a name="bodytype-values"></a>valores de BodyType
-| Membro
+| Member
 |:---------
 | texto
 | HTML
@@ -216,7 +207,7 @@ ms.locfileid: "42591450"
 
 ### <a name="locationtype-values"></a>valores LocationType
 
-| Membro
+| Member
 |:-------------------------
 | Padrão.
 | conferenceRoom
@@ -231,7 +222,7 @@ ms.locfileid: "42591450"
 
 ### <a name="locationuniqueidtype-values"></a>valores de locationUniqueIdType
 
-| Membro
+| Member
 |:-------------------------
 | desconhecido
 | locationStore
@@ -242,7 +233,7 @@ ms.locfileid: "42591450"
 
 ### <a name="messageactionflag-values"></a>valores de messageActionFlag
 
-| Membro
+| Member
 |:-------------------------
 | qualquer
 | call
@@ -262,24 +253,24 @@ ms.locfileid: "42591450"
 | Membro      | Valor
 |:------------|:------------
 | Proprietário       | ,0
-| Colaborador | 1 
-| Leitor      | 2 
+| Colaborador | 1
+| Leitor      | duas
 | Nenhum        | -1
 
 
 ### <a name="operationstatus-values"></a>valores de operationStatus
 
-| Membro
+| Member
 |:-----------------
 | NotStarted
 | Em execução
 | Completed
-| Com Falha
+| Falhou
 
 
 ### <a name="onenotepatchactiontype-values"></a>valores de onenotePatchActionType
 
-| Membro
+| Member
 |:-------------------------
 | Substituir
 | Append
@@ -289,7 +280,7 @@ ms.locfileid: "42591450"
 
 ### <a name="onenotepatchinsertposition-values"></a>valores de onenotePatchInsertPosition
 
-| Membro
+| Member
 |:-------------------------
 | After
 | Before
@@ -297,7 +288,7 @@ ms.locfileid: "42591450"
 
 ### <a name="phonetype-values"></a>valores de PhoneType
 
-| Membro
+| Member
 |:-------------------------
 | Casa
 | Business
@@ -313,7 +304,7 @@ ms.locfileid: "42591450"
 
 ### <a name="plannerpreviewtype-values"></a>valores de plannerPreviewType
 
-| Membro
+| Member
 |:-------------------------
 | Automático
 | nopreview
@@ -324,7 +315,7 @@ ms.locfileid: "42591450"
 
 ### <a name="status-values"></a>valores de status
 
-| Membro
+| Member
 |:-----------------
 | active
 | atualizado
@@ -335,7 +326,7 @@ ms.locfileid: "42591450"
 
 ### <a name="weekindex-values"></a>valores de weekIndex
 
-| Membro
+| Member
 |:-------------------------
 | primeiro
 | secundária
@@ -346,7 +337,7 @@ ms.locfileid: "42591450"
 
 ### <a name="dayofweek-values"></a>valores de dayOfWeek
 
-| Membro
+| Member
 |:-------------------------
 | domingo
 | período
@@ -358,7 +349,7 @@ ms.locfileid: "42591450"
 
 ### <a name="recurrencepatterntype-values"></a>valores recurrencePattern
 
-| Membro
+| Member
 |:-------------------------
 | diariamente
 | mensal
@@ -370,7 +361,7 @@ ms.locfileid: "42591450"
 
 ### <a name="recurrencerangetype-values"></a>valores de recurrenceRangeType
 
-| Membro
+| Member
 |:-------------------------
 | endDate
 | noEnd
@@ -378,7 +369,7 @@ ms.locfileid: "42591450"
 
 
 ### <a name="onenotesourceservice-values"></a>valores de onenoteSourceService
-| Membro
+| Member
 |:---------------------
 | Desconhecido
 | OneDrive
@@ -388,7 +379,7 @@ ms.locfileid: "42591450"
 
 ### <a name="responsetype-values"></a>valores ResponseType
 
-| Membro
+| Member
 |:-------------------------
 | nenhuma
 | organizer
@@ -400,7 +391,7 @@ ms.locfileid: "42591450"
 
 ### <a name="activitydomain-values"></a>valores de activityDomain
 
-| Membro
+| Member
 |:-------------------------
 | desconhecido
 | trabalho
@@ -410,7 +401,7 @@ ms.locfileid: "42591450"
 
 ### <a name="websitetype-values"></a>valores de WebSiteType
 
-| Membro
+| Member
 |:-------------------------
 | outro
 | Casa
@@ -425,9 +416,9 @@ ms.locfileid: "42591450"
 |:---------|:--------
 | nenhuma     | -1
 | preset0  | ,0
-| preset1  | 1 
-| preset2  | 2 
-| preset3  | 3 
+| preset1  | 1
+| preset2  | duas
+| preset3  | 3D
 | preset4  | 4 
 | preset5  | 5 
 | preset6  | 6 
@@ -457,9 +448,9 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|truePositive|1 |O alerta é verdadeiro e positivo.|
-|falsePositive|2 | O alerta é falso positivo.|
-|benignPositive|3 | O alerta é benigno-positivo.|
+|truePositive|1|O alerta é verdadeiro e positivo.|
+|falsePositive|duas| O alerta é falso positivo.|
+|benignPositive|3D| O alerta é benigno-positivo.|
 
 ### <a name="filehashtype-values"></a>valores de filehashtype
 
@@ -468,9 +459,9 @@ Enumeração para tipos de hash de arquivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo desconhecido.|
-|SHA1|1 |Tipo de hash SHA1.|
-|SHA256|2 | Tipo de hash SHA256.|
-|MD5|3 | Tipo de hash MD5.|
+|SHA1|1|Tipo de hash SHA1.|
+|SHA256|duas| Tipo de hash SHA256.|
+|MD5|3D| Tipo de hash MD5.|
 |authenticodeHash256|4 | Tipo de hash AuthenticodeHash256.|
 |lsHash|5 | Tipo de hash LsHash.|
 |ctph|6 | Tipo de hash CTPH.|
@@ -484,8 +475,8 @@ Enumeração para a direção da conexão de rede (entrada/saída).
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Conexão desconhecida.|
-|entrada|1 |Conexão de entrada.|
-|saída|2 | Conexão de saída.|
+|entrada|1|Conexão de entrada.|
+|saída|duas| Conexão de saída.|
 
 ### <a name="connectionstatus-values"></a>valores de connectionStatus
 
@@ -494,9 +485,9 @@ Enumeração para o status de conexões.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status de conexão desconhecido.|
-|tentou|1 |Tentativa de conexão.|
-|adicionada|2 | Conexão bem-sucedida.|
-|bloqueou|3 | Conexão bloqueada.|
+|tentou|1|Tentativa de conexão.|
+|adicionada|duas| Conexão bem-sucedida.|
+|bloqueou|3D| Conexão bloqueada.|
 |falhou|4 | Falha de conexão.|
 
 ### <a name="processintegritylevel-values"></a>valores de processIntegrityLevel
@@ -519,9 +510,9 @@ Enumeração para hives do registro, conforme definido pelo [/Windows/Desktop/sy
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Hive desconhecido.|
-|currentConfig|1 |HKEY_CURRENT_CONFIG Hive.|
-|currentUser|2 | HKEY_CURRENT_USER Hive.|
-|localMachineSam|3 | HKEY_LOCAL_MACHINE Hive \SAM.|
+|currentConfig|1|HKEY_CURRENT_CONFIG Hive.|
+|currentUser|duas| HKEY_CURRENT_USER Hive.|
+|localMachineSam|3D| HKEY_LOCAL_MACHINE Hive \SAM.|
 |localMachineSamSoftware|4 | HKEY_LOCAL_MACHINE seção \Software.|
 |localMachineSystem|5 | HKEY_LOCAL_MACHINE o hive de \System.|
 |usersDefault|6 | HKEY_USERS\\. Hive padrão.|
@@ -533,9 +524,9 @@ Operação que alterou o nome da chave do registro e/ou o valor.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo de valor de registro desconhecido.|
-|create|1 |Criar registro.|
-|modifica|2 |Modificar o registro.|
-|delete|3 |Excluir registro.|
+|create|1|Criar registro.|
+|modifica|duas|Modificar o registro.|
+|delete|3D|Excluir registro.|
 
 ### <a name="registryvaluetype-values"></a>valores de registryValueType
 
@@ -544,9 +535,9 @@ Enumeração para tipos de valor do registro, conforme definido por [/Windows/De
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo de valor de registro desconhecido.|
-|binário|1 |REG_BINARY tipo de valor do registro.|
-|últimas|2 | REG_DWORD tipo de valor do registro.|
-|dwordLittleEndian|3 | REG_DWORD_LITTLE_ENDIAN tipo de valor do registro.|
+|binário|1|REG_BINARY tipo de valor do registro.|
+|últimas|duas| REG_DWORD tipo de valor do registro.|
+|dwordLittleEndian|3D| REG_DWORD_LITTLE_ENDIAN tipo de valor do registro.|
 |dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN tipo de valor do registro.|
 |expandSz|5 | REG_EXPAND_SZ tipo de valor do registro.|
 |vínculo|6 | REG_LINK tipo de valor do registro.|
@@ -563,9 +554,9 @@ Enumeração para gravidade de alertas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|A severidade é desconhecida.|
-|informativa|1 |A severidade só é para informações.|
-|low|2 | A severidade é baixa.|
-|medium|3 | A severidade é média.|
+|informativa|1|A severidade só é para informações.|
+|low|duas| A severidade é baixa.|
+|medium|3D| A severidade é média.|
 |high|4 | A severidade é alta.|
 
 ### <a name="alertstatus-values"></a>valores de alertStatus
@@ -585,8 +576,8 @@ Valores possíveis para funções de email.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Função desconhecida.|
-|remetente|1 |Remetente do email.|
-|destinatário|2 |Destinatário do email.|
+|remetente|1|Remetente do email.|
+|destinatário|duas|Destinatário do email.|
 
 ### <a name="logontype-values"></a>valores de Logontype
 
@@ -596,25 +587,25 @@ Valores possíveis para o método de User Sign.
 |:---|:---|:---|
 |desconhecido|-1|Unknown.|
 |interativa|,0|O logon é interativo.|
-|remoteInteractive|1 | O logon é interativo remoto.|
-|rede|2 | O logon é rede.|
-|batch|3 | O logon é em lote.|
+|remoteInteractive|1| O logon é interativo remoto.|
+|rede|duas| O logon é rede.|
+|batch|3D| O logon é em lote.|
 |service|4 | O logon é serviço.|
 
 ### <a name="useraccountsecuritytype-values"></a>valores de userAccountSecurityType
 
 Valores possíveis para tipos de contas de usuário (Associação de grupo), por definição do Windows.
 
-|Membro|Member|Descrição|
+|Member|Member|Descrição|
 |:---|:---|:---|
 |desconhecido|-1|Unknown.|
 |caracteres|,0|Membro do grupo de usuários padrão.|
-|força|1 | Membro do grupo de usuários avançados.|
-|administrador|2 | Membro do grupo Administradores.|
+|força|1| Membro do grupo de usuários avançados.|
+|administrador|duas| Membro do grupo Administradores.|
 
 ### <a name="riskdetail-values"></a>valores de riskDetail
 
-| Membro
+| Member
 |:-------------------------
 | adminGeneratedTemporaryPassword
 | userPerformedSecuredPasswordChange
@@ -628,7 +619,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="riskeventtypes-values"></a>valores de riskEventTypes
 
-| Membro
+| Member
 |:-------------------------
 | unlikelyTravel
 | anonymizedIPAddress
@@ -643,7 +634,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="risklevel-values"></a>valores de riskLevel
 
-| Membro
+| Member
 |:-------------------------
 | nenhuma
 | low
@@ -654,7 +645,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="riskstate-values"></a>valores de risco
 
-| Membro
+| Member
 |:-------------------------
 | nenhuma
 | confirmedSafe
@@ -666,7 +657,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 ### <a name="exchangeidformat-values"></a>valores de exchangeIdFormat
 
-|Membro|
+|Member|
 |:---|
 |entryId|
 |ewsId|
@@ -678,57 +669,57 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1      | Ameaça de email.            |
-| url    | 2      | Ameaça de URL.             |
-| file   | 3      | Ameaça do arquivo de anexo. |
+| Email   | 1     | Ameaça de email.            |
+| url    | duas     | Ameaça de URL.             |
+| file   | 3D     | Ameaça do arquivo de anexo. |
 
 ### <a name="threatexpectedassessment-values"></a>valores de threatExpectedAssessment
 
 | Membro  | Valor | Descrição                       |
 |:--------|:------|:----------------------------------|
-| Larga   | 1      | A ameaça deve ser bloqueada.     |
-| bloqueia | 2      | A ameaça não deve ser bloqueada. |
+| Larga   | 1     | A ameaça deve ser bloqueada.     |
+| bloqueia | duas     | A ameaça não deve ser bloqueada. |
 
 ### <a name="threatcategory-values"></a>valores de threatCategory
 
 | Membro             | Valor | Descrição        |
 |:-------------------|:------|:-------------------|
-| electrónico               | 1      | Ameaça de spam.       |
-| fraude           | 2      | Ameaça de phishing.   |
-| software            | 3      | Ameaça de malware.    |
+| electrónico               | 1     | Ameaça de spam.       |
+| fraude           | duas     | Ameaça de phishing.   |
+| software            | 3D     | Ameaça de malware.    |
 | unknownFutureValue | 4      | Um membro Sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>valores de threatAssessmentStatus
 
 | Membro    | Valor | Descrição                              |
 |:----------|:------|:-----------------------------------------|
-| função   | 1      | A avaliação de ameaças ainda está em andamento. |
-| Completed | 2      | A avaliação de ameaças foi concluída.         |
+| função   | 1     | A avaliação de ameaças ainda está em andamento. |
+| Completed | duas     | A avaliação de ameaças foi concluída.         |
 
 ### <a name="threatassessmentrequestsource-values"></a>valores de threatAssessmentRequestSource
 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | ,0     | Ainda não conhece.            |
-| user          | 1      | Envio do usuário.         |
-| administrador | 2      | Envio de administrador de locatários. |
+| user          | 1     | Envio do usuário.         |
+| administrador | duas     | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores de threatAssessmentResultType
 
 | Membro             | Valor | Descrição                                          |
 |:-------------------|:------|:-----------------------------------------------------|
-| checkPolicy        | 1      | O resultado da verificação de política, `mail` apenas para avaliação. |
-| reexaminar             | 2      | O resultado da nova verificação.                                   |
-| unknownFutureValue | 3      | Um membro Sentinel.                                   |
+| checkPolicy        | 1     | O resultado da verificação de política, `mail` apenas para avaliação. |
+| reexaminar             | duas     | O resultado da nova verificação.                                   |
+| unknownFutureValue | 3D     | Um membro Sentinel.                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>valores de mailDestinationRoutingReason
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
 | nenhuma                  | ,0     | Ainda não conhece.                       |
-| mailFlowRule          | 1      | Regra de transporte do Exchange.            |
-| safeSender            | 2      | Lista de remetentes seguros.                   |
-| blockedSender         | 3      | Lista de remetentes bloqueados.                |
+| mailFlowRule          | 1     | Regra de transporte do Exchange.            |
+| safeSender            | duas     | Lista de remetentes seguros.                   |
+| blockedSender         | 3D     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4      | Opção de flitering de spam avançada.     |
 | domainAllowList       | 5      | Lista de permissões de domínio do remetente.           |
 | domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
