@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a9fe4894bbed86a7cc60e92de61b8d9e6efdf239
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3984acc6c256b6198c41aff5c4793b0510fd8ed5
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418803"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639594"
 ---
 # <a name="create-event"></a>Criar evento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -107,7 +107,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [event](.
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,6 +137,7 @@ Content-type: application/json
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,

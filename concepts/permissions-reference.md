@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.openlocfilehash: 53bc7bfa03f1722f5075f7ee8d9f3744e8e2e47a
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590821"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618764"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 

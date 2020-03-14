@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 65ff9382de97ddcd7a0b4bd8a315f8350a80ec35
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 91b11006df02d563902b99c79c4b1ec09bb7e50a
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023121"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639937"
 ---
 # <a name="people-picker-component"></a>Componente de seletor de pessoas
 
@@ -18,13 +18,11 @@ Se o número de pessoas a serem exibidas exceder o `show-max` valor, nem todas a
 
 ## <a name="example"></a>Exemplo
 
-[exemplo de jsfiddle](https://jsfiddle.net/metulev/jdv38fg0/)
+O exemplo a seguir mostra `mgt-people-picker` o componente. Comece a pesquisar um nome para ver os resultados renderizar e usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
 
-```html
-<mgt-people-picker></mgt-people-picker>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-![gerenciamento de pessoas-seletor](./images/mgt-people-picker-image.png)
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## <a name="properties"></a>Propriedades
 

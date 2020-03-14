@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4375dfcb4f87e2533630ccdac555882310e97d0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ffd86da4a725c3b020d12e7ae9a71e6a960a3ec
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451893"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639888"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha calendários de todos do usuário (propriedade de navegação `/calendars`), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. 
+Obtenha calendários de todos do usuário (`/calendars` propriedade de navegação ), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -110,6 +110,7 @@ Content-type: application/json
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "calendarGroupId":null,
             "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,

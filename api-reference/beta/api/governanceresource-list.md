@@ -3,18 +3,18 @@ title: Listar governanceResources
 description: Recupere uma coleção de Entidadegovernanceresource à qual o solicitante tem acesso.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 4b627b48a1e9151735af81c5e1599d905e4e186a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 98c19e86b80a95d23e12508740f082370997f147
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421372"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639867"
 ---
 # <a name="list-governanceresources"></a>Listar governanceResources
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

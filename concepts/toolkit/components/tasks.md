@@ -3,12 +3,12 @@ title: Componente tarefas no Microsoft Graph Toolkit
 description: O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com qualquer tarefa no Microsoft Planner ou no Microsoft to-do.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 19faf3dec1c61680250cacf3cfaf5837b8bc4cee
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 80da5522b73051df4d5c264e5289845b9521058f
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955845"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639916"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente tarefas no Microsoft Graph Toolkit
 
@@ -18,11 +18,11 @@ Além disso, um usuário pode atribuir um único ou vários usuários do Microso
 
 ## <a name="example"></a>Exemplo
 
-[exemplo de jsfiddle](https://jsfiddle.net/metulev/qhg68m31/)
+O exemplo a seguir exibe as tarefas do Microsoft Planner do usuário conectado usando o `mgt-tasks` componente. Você pode usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
 
-````html
-    <mgt-tasks></mgt-tasks>
-````
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
+
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-tasks--tasks&source=docs)
 
 ## <a name="properties"></a>Propriedades
 

@@ -3,12 +3,12 @@ title: Componente pessoas no Microsoft Graph Toolkit
 description: Você pode usar o `mgt-people` componente da Web para exibir um grupo de pessoas ou contatos usando suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 21a530abe227897941c59115a17522cf79d4b163
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 78dc1504d7f46756809abcf922dfcea431fd796c
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870901"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639958"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente pessoas no Microsoft Graph Toolkit
 
@@ -18,13 +18,11 @@ Este componente usa vários controles de [pessoal de gerenciamento](./person.md)
 
 ## <a name="example"></a>Exemplo
 
-[exemplo de jsfiddle](https://jsfiddle.net/metulev/az6pqy2r/)
+O exemplo a seguir mostra um grupo de pessoas exibidas usando `mgt-people` o componente. Você pode usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
 
-```html
-<mgt-people></mgt-people>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-![gerenciamento-pessoas](./images/mgt-people.png)
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## <a name="properties"></a>Propriedades
 
@@ -88,7 +86,7 @@ Os exemplos a seguir mostram como usar o `person` modelo.
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| Recurso | Permissão |
+| Resource | Permissão |
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 

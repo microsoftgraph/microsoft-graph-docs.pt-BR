@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Office 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 2db43dd8ec2d0cf58f2938b78054986823f433c4
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 57b4531770a78f030d093d4c486760d64d9764ea
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418207"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618763"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 
@@ -556,7 +556,7 @@ Quando enviar solicitações GET para Microsoft Graph, você pode usar as opçõ
  
 | Opção de consulta | Exemplo e descrição |  
 |------|------|  
-| count | <p>`count=true`</p><p>A contagem de entidades da coleção. O valor é retornado na propriedade **@odata.count** na resposta.</p> |  
+| count | <p>`count=true`</p><p>A contagem de entidades da coleção. O valor é retornado na propriedade **odata.coun\@** t na resposta.</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>Propriedades de navegação para retornar embutidas na resposta. As propriedades a seguir têm suporte para expressões **expand**:<br /> – Páginas: **parentNotebook**, **parentSection**<br /> – Seções: **parentNotebook**, **parentSectionGroup**<br /> – Grupos de seções: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> – Blocos de anotações: **sections**, **sectionGroups**</p><p>Por padrão, as solicitações GET de páginas expandem **parentSection** e selecionam as propriedades **id**, **name** e **self**. Solicitações GET padrão de seções e grupos de seções expandem **parentNotebook** e **parentSectionGroup** e selecionam as propriedades pai **id**, **name** e **self**. </p><p>Pode ser usado para uma única entidade ou uma coleção.<br />Separar com vírgulas várias propriedades.<br />Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>Uma expressão booliana para se deseja incluir uma entrada no conjunto de resultados. Compatível com os seguintes operadores e funções OData:<br /> – Operadores de comparação: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> – Operadores lógicos: **and**, **or**, **not**<br /> – Funções de cadeia de caracteres: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>Os nomes de [propriedade](#onenote-entity-properties) e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br /><br />**Exemplo**: `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>As [propriedades](#onenote-entity-properties) para classificar por, com uma ordem de classificação opcional **asc** (padrão) ou **desc**. Você pode classificar por qualquer propriedade da entidade na coleção solicitada.</p><p>A ordem de classificação padrão para blocos de anotações, grupos de seções e seções é `name asc`, e para páginas é `lastModifiedTime desc` (última página modificada primeiro).</p><p>Separe as várias propriedades com vírgulas e liste-as na ordem de aplicação desejada. Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |  
@@ -659,7 +659,7 @@ A opção de cadeia de caracteres de consulta **expand** pode ser usada com as s
 |------|------|  
 | Código de êxito | Um código de status de HTTP 200. |  
 | Corpo da resposta | Uma representação de OData da entidade ou conjunto de entidades no formato JSON, da página HTML ou dados binários do recurso de arquivo.  |  
-| Erros | Se a solicitação falhar, a API retornará [erros](onenote-error-codes.md) no objeto **@api.diagnostics** no corpo da resposta. |  
+| Erros | Se a solicitação falhar, a API retornará erros no objeto [errors](onenote-error-codes.md) no **\@@api.diagnostics** no corpo da resposta. |  
 | Cabeçalho X-CorrelationId | Um GUID que identifica de forma exclusiva a solicitação. Você pode usar esse valor juntamente com o valor do cabeçalho Data ao trabalhar com o suporte da Microsoft para solucionar problemas. |  
 
 

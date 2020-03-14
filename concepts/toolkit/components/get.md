@@ -3,12 +3,12 @@ title: Obter componente no Microsoft Graph Toolkit
 description: Um componente Get permite que você faça qualquer consulta GET do Microsoft Graph diretamente no HTML.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 77beb3940eb29a2c9158fba88d78084639e433ed
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7c9c3fcc804dd5ba8257a1140791fa2eb60ff4ce
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39921694"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639965"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no Microsoft Graph Toolkit
 
@@ -16,16 +16,11 @@ Você pode usar `mgt-get` o para tornar qualquer consulta Get do Microsoft Graph
 
 ## <a name="example"></a>Exemplo
 
-```html
-<mgt-get resource="/me/messages" version="beta" scopes="mail.read" max-pages="2">
-  <template>
-    emails: {{value.length}}
-  </template>
-  <template data-type="loading">
-    loading
-  </template>
-</mgt-get>
-```
+O exemplo a seguir mostra o uso do `mgt-get` componente para exibir os emails de um usuário. Você pode usar o editor de código para ver como [as propriedades e os atributos](#properties-and-attributes) alteram o comportamento do componente.
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
+
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
 
 ## <a name="properties-and-attributes"></a>Propriedades e atributos
 

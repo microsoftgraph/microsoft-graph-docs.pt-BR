@@ -3,18 +3,18 @@ title: Obter governanceRoleAssignmentRequest
 description: 'Obter um governanceRoleAssignmentRequest. '
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 86edec1ad26b703da07541411342832b95aea568
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 1e659e5b3aefbd3995bd4e04b28b5de87d2f4fe4
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421113"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639825"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Obter governanceRoleAssignmentRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, ele requer o solicitante 
 *   para ter pelo menos uma atribuição de função no recurso; ou

@@ -3,18 +3,18 @@ title: Listar governanceRoleSettings
 description: Recupere uma coleção de governanceRoleSettings em um Resource.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 3e700b5ceef33a50bd1521e8ff355c0f30460b9d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: c3bfe4470fecfea94ac3a0d2f9b3d81040d07507
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420868"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639578"
 ---
 # <a name="list-governancerolesettings"></a>Listar governanceRoleSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 ## <a name="http-request"></a>Solicitação HTTP

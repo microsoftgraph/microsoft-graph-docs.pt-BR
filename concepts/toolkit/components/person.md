@@ -3,12 +3,12 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 8a0498203296f3880741a4bc2cc53ffd69aff518
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0202d8bc8c8ae23f98cb4add9f9d5ca96afea04d
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866872"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639951"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
@@ -18,12 +18,11 @@ O componente pessoa também usa a [pessoa de gerenciamento de pessoas](./person-
 
 ## <a name="example"></a>Exemplo
 
-[exemplo de jsfiddle](https://jsfiddle.net/metulev/0jkzfr42/)
+O exemplo a seguir exibe uma pessoa usando `mgt-person` o componente. Você pode usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
 
-### <a name="add-the-control-to-the-html-page"></a>Adicionar o controle à página HTML
-```html
-<mgt-person person-query=""></mgt-person>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
+
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
 
 ## <a name="setting-the-person-details"></a>Configurando os detalhes da pessoa
 
@@ -47,7 +46,7 @@ Você pode usar três propriedades para definir os detalhes da pessoa. Use apena
 
   Se nenhuma imagem for fornecida, uma será buscada (se disponível).
 
-## <a name="changing-how-the-component-looks"></a>Alterar a aparência do componente
+## <a name="properties"></a>Propriedades
 
 Você pode usar várias propriedades para personalizar o componente.
 
@@ -123,7 +122,7 @@ Para obter mais informações sobre modelos, estilos e atributos, consulte [comp
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Recurso                                                                                                    | Permissão     |
+| Resource                                                                                                    | Permissão     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [$value/me/Photo/](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |

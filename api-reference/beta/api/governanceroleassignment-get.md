@@ -3,18 +3,18 @@ title: Obter governanceRoleAssignment
 description: Recupere as propriedades e os relacionamentos de um governanceRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 78042d16d736f644cddc70fe5665ef04defb01de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 038189ac8bda4b51588532cbddc022e83db9ffbf
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421155"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639846"
 ---
 # <a name="get-governanceroleassignment"></a>Obter governanceRoleAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

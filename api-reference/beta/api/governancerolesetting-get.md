@@ -3,18 +3,18 @@ title: Obter governanceRoleSetting
 description: Recupere as propriedades e os relacionamentos de um governanceRoleSetting.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: ee94a137d721f1e1f6dfd7b350d3d7397a7de3b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: dbe1540541fb21d023fc644682d390652f5f5707
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420875"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639606"
 ---
 # <a name="get-governancerolesetting"></a>Obter governanceRoleSetting
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso ao qual o [governanceRoleSetting](../resources/governancerolesetting.md) pertence.
 ## <a name="http-request"></a>Solicitação HTTP

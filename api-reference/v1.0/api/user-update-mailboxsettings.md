@@ -6,11 +6,11 @@ author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 088b1f1d6f575cc96029f282ae6608cdeff6b3fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508909"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618686"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 

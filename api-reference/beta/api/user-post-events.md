@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: dddbdcdb9631e54f012e3111fb4080c72926f767
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c5e5d3e8019bc7820692caf173d3d190f769246
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451714"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639891"
 ---
 # <a name="create-event"></a>Criar evento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -179,6 +179,7 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -372,6 +373,7 @@ Content-length: 2985
   "sensitivity":"normal",
   "isAllDay":false,
   "isCancelled":false,
+  "isDraft": false,
   "isOrganizer":true,
   "responseRequested":true,
   "seriesMasterId":null,
@@ -473,7 +475,7 @@ Content-length: 2985
 ### <a name="example-3-create-a-weekly-recurring-event"></a>Exemplo 3: criar um evento recorrente semanal
 
 #### <a name="request"></a>Solicitação
-O terceiro exemplo mostra como criar um evento recorrente que ocorre uma vez por semana. O evento ocorre das 12:00 às 2:00 da tarde, todas as segundas-feiras a partir de 4 de setembro de 2017 até o final do ano.
+O terceiro exemplo mostra como criar um evento recorrente uma vez na semana.  O evento ocorre das 12:00 às 2:00 da tarde, todas as segundas-feiras a partir de 4 de setembro de 2017 até o final do ano.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -573,6 +575,7 @@ Content-type: application/json
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -659,7 +662,7 @@ Content-type: application/json
 ### <a name="example-4-create-a-daily-recurring-event"></a>Exemplo 4: criar um evento recorrente diário
 
 #### <a name="request"></a>Solicitação
-O quarto exemplo mostra como criar um evento recorrente diário. O evento ocorre de 12:00pm a 2:00pm, todos os dias a partir de 25 de fevereiro de 2020, para duas ocorrências.
+O quarto exemplo mostra como criar um evento recorrente uma vez ao dia.  O evento ocorre de 12:00pm a 2:00pm, todos os dias a partir de 25 de fevereiro de 2020, para duas ocorrências.
 
 <!-- {
   "blockType": "request",
@@ -744,6 +747,7 @@ Content-type: application/json
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -922,6 +926,7 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,

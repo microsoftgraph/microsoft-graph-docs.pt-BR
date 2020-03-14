@@ -2,15 +2,15 @@
 title: Referência da API REST do Microsoft Graph v1.0
 description: Bem-vindo à referência da API REST do Microsoft Graph para o ponto de extremidade v1.0.
 localization_priority: Priority
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 0b21aab90fb1eabec82ab1ee783fcdc89fe397d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2204197e169188e36466db783e513e2a1bc85317
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533185"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618656"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 
@@ -55,7 +55,7 @@ Encontre mais informações em [Suporte e controle de versão](/graph/versioning
 As solicitações da API do Microsoft Graph para o ponto de extremidade v1.0 usam o seguinte padrão:
 
 ```
-    https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 Para detalhes, consulte [Usando a API do Microsoft Graph](/graph/use-the-api).

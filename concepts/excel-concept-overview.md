@@ -6,11 +6,11 @@ author: lumine2008
 ms.prod: excel
 ms.custom: scenarios:getting-started
 ms.openlocfilehash: 1dba35e81a748951167327cce1a8174e6c803261
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968927"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42619092"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Visão geral da API de gráficos e pastas de trabalho do Excel
 

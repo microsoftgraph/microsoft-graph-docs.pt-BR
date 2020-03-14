@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e2a6f08c4e00b3d9a4fe2e4032b3b3477c9fe343
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e56d324d3996e03e1426b2f6bd6f37fe04bd9124
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419923"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639574"
 ---
 # <a name="get-event"></a>Obter evento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,6 +111,7 @@ Content-length: 1728
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,

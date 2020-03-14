@@ -3,12 +3,12 @@ title: Componente de logon no kit de ferramentas do Microsoft Graph
 description: Um componente de logon é um botão e um controle de submenu para facilitar a autenticação da plataforma de identidade da Microsoft.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 767894cc88fa40eb96655fc8979dd5b2ef8d4eba
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3b326cc97bf7a3463e43ffcf757cc34d5cc00975
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919434"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639979"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no kit de ferramentas do Microsoft Graph
 
@@ -18,11 +18,11 @@ Um componente de logon é um botão e um controle de submenu para facilitar a au
 
 ## <a name="example"></a>Exemplo
 
-[exemplo de jsfiddle](https://jsfiddle.net/metulev/scb9muh4)
+O exemplo a seguir mostra `mgt-login` o componente com um usuário conectado. 
 
-```html
-<mgt-login></mgt-login>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
+
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
 ## <a name="using-the-control-without-an-authentication-provider"></a>Usando o controle sem um provedor de autenticação
 

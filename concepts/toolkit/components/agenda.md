@@ -3,12 +3,12 @@ title: Componente de agenda no kit de ferramentas do Microsoft Graph
 description: O componente de gerenciamento de agenda da Web é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0676c7ab66e899aa4af3dea0f623f301ce9b9f4e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 334da23db286c7243b9722cae443913219a97f7f
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866886"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639944"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente de agenda no kit de ferramentas do Microsoft Graph
 
@@ -16,13 +16,11 @@ O `mgt-agenda` componente da Web representa eventos em um calendário de usuári
 
 ## <a name="example"></a>Exemplo
 
-[exemplo de jsfiddle](https://jsfiddle.net/metulev/ojt2c7vp/)
+O exemplo a seguir mostra os eventos de calendário do usuário conectado exibidos usando o `mgt-agenda` componente. Você pode usar o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
 
-```html
-<mgt-agenda group-by-day></mgt-agenda>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-![gerenciamento-agenda](./images/mgt-agenda.png)
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## <a name="properties"></a>Propriedades
 
@@ -35,7 +33,7 @@ Por padrão, o `mgt-agenda` componente busca eventos do `/me/calendarview` ponto
 | show-Max | showMax | Um número para indicar o número máximo de eventos a serem exibidos. O valor padrão não é definido (sem máximo). |
 | ID de grupo | groupId | Uma ID de cadeia de caracteres para um calendário de grupo a ser usado em vez do calendário do usuário conectado no momento. |
 | evento-consulta | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos do Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres, delimitadondo-o com `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
-| eventos | eventos | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date`os `days`atributos, `event-query` ou não terão efeito. |
+| events | events | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date`os `days`atributos, `event-query` ou não terão efeito. |
 | grupo por dia | groupByDay | Um valor Boolean para agrupar eventos por dia-por eventos padrão não são agrupados. |
 
 O exemplo a seguir altera o comportamento do componente para buscar dados de uma data específica e até três dias.

@@ -3,24 +3,26 @@ title: Componente de cartão de pessoa no kit de ferramentas do Microsoft Graph
 description: Um componente de cartão de pessoa é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 7f4f20773b152db037d3b57481aa5e8638866f52
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 336e6beabc227a2574e41cf6a658d38fdabfcdcf
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955866"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639923"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Componente de cartão de pessoa no kit de ferramentas do Microsoft Graph
 
 Um componente de cartão de pessoa é um componente responsivo para exibir mais informações relacionadas a uma pessoa. Geralmente, é usado como um submenu do `mgt-person` componente.
 
 Para obter mais informações sobre `mgt-person` o componente, consulte [docs-Person docs](./person.md).
-  
+
 ## <a name="example"></a>Exemplo
 
-```html
-<mgt-person-card person-details="{personObject}" person-image="imgUrl"></mgt-person-card>
-```
+O exemplo a seguir mostra o uso do `mgt-person-card` componente com um `mgt-person` componente. Passe o mouse sobre a pessoa para ver o cartão Person e use o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
+  
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+
+[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
 
 ## <a name="properties"></a>Propriedades
 

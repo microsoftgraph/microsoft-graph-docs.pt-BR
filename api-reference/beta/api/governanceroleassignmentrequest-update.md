@@ -3,18 +3,18 @@ title: Atualizar governanceRoleAssignmentRequests
 description: Permitir que os administradores atualizem suas`AdminApproved` decisões `AdminDenied`(ou) no governanceRoleAssignmentRequests que estão no `PendingAdminDecision`status de.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: d8fc97ff329b171050b0309161ec818a9996d4ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 17e4c273a4ab3da5c5d4da4a54c9b57e339b5b81
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420945"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639804"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,10 +47,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
-|motivo        |String                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
-|sobre        |String                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
+|motivo        |Cadeia de Caracteres                 |✓        |O motivo fornecido pelo administrador para sua decisão.|
+|sobre        |Cadeia de Caracteres                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
 |Cronograma      |[governanceSchedule](../resources/governanceschedule.md)|        | O agendamento da solicitação de atribuição de função. Para o status `AdminApproved`de, é necessário.|
-|assignmentstate      |String|         | O estado da atribuição e os valores podem ser `Eligible` ou. `Active` Para a decisão `AdminApproved`de, é necessário. |
+|assignmentstate      |Cadeia de Caracteres|         | O estado da atribuição e os valores podem ser `Eligible` ou. `Active` Para a decisão `AdminApproved`de, é necessário. |
 ### <a name="response"></a>Resposta
 Este método só pode ser aplicado a solicitações que estão no status de `PendingAdminDecision`.
 
