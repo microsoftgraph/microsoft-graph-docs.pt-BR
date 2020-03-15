@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 51a6a3094f78917d9b4afba8ced9bc698a9cf3bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94e36bf5e451385b0a41d959ca39b4084a06b9d3
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499117"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639881"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -69,9 +69,10 @@ Veja a seguir uma representação JSON do recurso
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,
+  "isReminderOn": true,  
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
@@ -119,6 +120,7 @@ Veja a seguir uma representação JSON do recurso
 |importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
+|isDraft|Boleano|Defina como verdadeiro se o usuário atualizou a reunião no Outlook mas não enviou as atualizações aos participantes. Defina como falso se todas as alterações forem enviadas, ou se o evento for um compromisso sem participantes.|
 |isOnlineMeeting|Booliano| `True`Se esse evento tiver informações de reunião online (ou seja, **onlineMeeting** aponta para um recurso [onlineMeetingInfo](onlinemeetinginfo.md)), caso contrário `false`. O padrão é `false` (**onlineMeeting** é `null`). Opcional. <br> Depois de definir **isOnlineMeeting** como `true`, o Microsoft Graph Inicializa **onlineMeeting**. Subsequentemente, o Outlook ignora todas as alterações feitas em **isOnlineMeeting**e a reunião permanece disponível online. |
 |isOrganizer|Booliano|Defina como verdadeiro se o proprietário do calendário (especificado pela propriedade do **proprietário** do [calendário](calendar.md)) for o organizador do evento (especificado pela propriedade do **organizador** do **evento**). Isso também se aplica se um representante organizou o evento em nome do proprietário.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|

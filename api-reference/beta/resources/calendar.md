@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b3651bc4ea5153c5b3fc68d0106868c3857adca6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 974c6b69ccac03df2515e427267f84db07e2d492
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507842"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639538"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -49,6 +49,7 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|coleção de cadeias de caracteres| Represente os provedores de serviços de reunião online que podem ser usados para criar reuniões online neste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|calendarGroupId|Cadeia de caracteres|O [calendarGroup](calendargroup.md) para criar o calendário. Se o usuário nunca tiver definido explicitamente um grupo para o calendário, esta propriedade estará vazia.|
 |canEdit |Booliano |Verdadeiro se o usuário puder gravar no calendário, caso contrário, falso. Essa propriedade é verdadeira para o usuário que criou o calendário. Ela também é verdadeira para um usuário que compartilhou um calendário e concedeu acesso de gravação por meio de um cliente do Outlook ou do recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
 |canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Apenas o usuário que criou o calendário pode compartilhá-lo. Apenas leitura.|
 |canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. Essa propriedade é definida por meio de um cliente do Outlook ou o do recurso [calendarPermission](calendarpermission.md) correspondente. Apenas leitura.|
