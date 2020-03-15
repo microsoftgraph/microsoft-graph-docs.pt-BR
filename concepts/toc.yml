@@ -49,6 +49,8 @@ items:
             href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
+          - name: JavaScript
+            href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
           - name: PHP
@@ -97,8 +99,6 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: Criar eventos compartilhados
             href: outlook-create-event-in-shared-delegated-calendar.md
-          - name: Anexar arquivos grandes
-            href: outlook-large-attachments.md
           - name: ID Imutável
             href: outlook-immutable-id.md
       - name: Comunicações na nuvem
@@ -182,7 +182,7 @@ items:
             href: outlook-organize-messages.md
           - name: Obter conteúdo MIME
             href: outlook-get-mime-message.md
-          - name: Anexar arquivos grandes
+          - name: Anexar arquivos grandes (visualização)
             href: outlook-large-attachments.md
           - name: Receber mensagens compartilhadas
             href: outlook-share-messages-folders.md
@@ -455,6 +455,8 @@ items:
         items:
           - name: Visão geral do kit de ferramentas
             href: toolkit/overview.md
+          - name: Introdução
+            href: toolkit/get-started.md
           - name: Componentes
             items:
               - name: Logon
