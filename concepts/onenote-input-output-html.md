@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 2ba3ce1432a2213a4ecdcfce1ab9a9c98c88c818
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865729"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618757"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>HTML de entrada e saída nas páginas do OneNote
 
