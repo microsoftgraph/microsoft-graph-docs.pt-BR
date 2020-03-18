@@ -1,37 +1,35 @@
 ---
 title: Atualizar deviceConfigurationUserStatus
 description: Atualizar as propriedades de um objeto deviceConfigurationUserStatus.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4209bfc0192471761dc83c549e1be8bad1f266ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56b2523d4bbbc8d4b507ef3b29d26ecc08636894
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442982"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42753254"
 ---
-# <a name="update-deviceconfigurationuserstatus"></a><span data-ttu-id="df385-103">Atualizar deviceConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="df385-103">Update deviceConfigurationUserStatus</span></span>
+# <a name="update-deviceconfigurationuserstatus"></a><span data-ttu-id="4f5d2-103">Atualizar deviceConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="4f5d2-103">Update deviceConfigurationUserStatus</span></span>
 
-<span data-ttu-id="df385-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="df385-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="4f5d2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="df385-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="df385-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4f5d2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="df385-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="df385-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="4f5d2-106">Atualizar as propriedades de um objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="4f5d2-106">Update the properties of a [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
 
-<span data-ttu-id="df385-107">Atualizar as propriedades de um objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="df385-107">Update the properties of a [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4f5d2-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="4f5d2-107">Prerequisites</span></span>
+<span data-ttu-id="4f5d2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f5d2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="df385-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="df385-108">Prerequisites</span></span>
-<span data-ttu-id="df385-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="df385-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="df385-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="df385-111">Permission type</span></span>|<span data-ttu-id="df385-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="df385-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4f5d2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4f5d2-110">Permission type</span></span>|<span data-ttu-id="4f5d2-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="4f5d2-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="df385-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="df385-113">Delegated (work or school account)</span></span>|<span data-ttu-id="df385-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df385-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="df385-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="df385-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="df385-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="df385-116">Not supported.</span></span>|
-|<span data-ttu-id="df385-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="df385-117">Application</span></span>|<span data-ttu-id="df385-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="df385-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="4f5d2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4f5d2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4f5d2-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f5d2-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="4f5d2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4f5d2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4f5d2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-115">Not supported.</span></span>|
+|<span data-ttu-id="4f5d2-116">Application</span><span class="sxs-lookup"><span data-stu-id="4f5d2-116">Application</span></span>|<span data-ttu-id="4f5d2-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f5d2-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="df385-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="df385-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f5d2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4f5d2-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -49,35 +47,35 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/userStatuses/{deviceConfigurationUserStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="df385-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="df385-120">Request headers</span></span>
-|<span data-ttu-id="df385-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="df385-121">Header</span></span>|<span data-ttu-id="df385-122">Valor</span><span class="sxs-lookup"><span data-stu-id="df385-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4f5d2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4f5d2-119">Request headers</span></span>
+|<span data-ttu-id="4f5d2-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4f5d2-120">Header</span></span>|<span data-ttu-id="4f5d2-121">Valor</span><span class="sxs-lookup"><span data-stu-id="4f5d2-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="df385-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="df385-123">Authorization</span></span>|<span data-ttu-id="df385-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="df385-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="df385-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="df385-125">Accept</span></span>|<span data-ttu-id="df385-126">application/json</span><span class="sxs-lookup"><span data-stu-id="df385-126">application/json</span></span>|
+|<span data-ttu-id="4f5d2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="4f5d2-122">Authorization</span></span>|<span data-ttu-id="4f5d2-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4f5d2-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="4f5d2-124">Accept</span></span>|<span data-ttu-id="4f5d2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4f5d2-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="df385-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="df385-127">Request body</span></span>
-<span data-ttu-id="df385-128">No corpo da solicitação, forneça uma representação JSON do objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="df385-128">In the request body, supply a JSON representation for the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f5d2-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4f5d2-126">Request body</span></span>
+<span data-ttu-id="4f5d2-127">No corpo da solicitação, forneça uma representação JSON do objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="4f5d2-127">In the request body, supply a JSON representation for the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
 
-<span data-ttu-id="df385-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="df385-129">The following table shows the properties that are required when you create the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span></span>
+<span data-ttu-id="4f5d2-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="4f5d2-128">The following table shows the properties that are required when you create the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span></span>
 
-|<span data-ttu-id="df385-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="df385-130">Property</span></span>|<span data-ttu-id="df385-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="df385-131">Type</span></span>|<span data-ttu-id="df385-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="df385-132">Description</span></span>|
+|<span data-ttu-id="4f5d2-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4f5d2-129">Property</span></span>|<span data-ttu-id="4f5d2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="4f5d2-130">Type</span></span>|<span data-ttu-id="4f5d2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="4f5d2-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="df385-133">id</span><span class="sxs-lookup"><span data-stu-id="df385-133">id</span></span>|<span data-ttu-id="df385-134">String</span><span class="sxs-lookup"><span data-stu-id="df385-134">String</span></span>|<span data-ttu-id="df385-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="df385-135">Key of the entity.</span></span>|
-|<span data-ttu-id="df385-136">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="df385-136">userDisplayName</span></span>|<span data-ttu-id="df385-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="df385-137">String</span></span>|<span data-ttu-id="df385-138">Nome de usuário de DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="df385-138">User name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="df385-139">devicesCount</span><span class="sxs-lookup"><span data-stu-id="df385-139">devicesCount</span></span>|<span data-ttu-id="df385-140">Int32</span><span class="sxs-lookup"><span data-stu-id="df385-140">Int32</span></span>|<span data-ttu-id="df385-141">Contagem de dispositivos para esse usuário.</span><span class="sxs-lookup"><span data-stu-id="df385-141">Devices count for that user.</span></span>|
-|<span data-ttu-id="df385-142">status</span><span class="sxs-lookup"><span data-stu-id="df385-142">status</span></span>|[<span data-ttu-id="df385-143">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="df385-143">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="df385-144">Status de conformidade do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="df385-144">Compliance status of the policy report.</span></span> <span data-ttu-id="df385-145">Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="df385-145">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="df385-146">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="df385-146">lastReportedDateTime</span></span>|<span data-ttu-id="df385-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="df385-147">DateTimeOffset</span></span>|<span data-ttu-id="df385-148">Data e hora da última modificação do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="df385-148">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="df385-149">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="df385-149">userPrincipalName</span></span>|<span data-ttu-id="df385-150">String</span><span class="sxs-lookup"><span data-stu-id="df385-150">String</span></span>|<span data-ttu-id="df385-151">UserPrincipalName.</span><span class="sxs-lookup"><span data-stu-id="df385-151">UserPrincipalName.</span></span>|
+|<span data-ttu-id="4f5d2-132">id</span><span class="sxs-lookup"><span data-stu-id="4f5d2-132">id</span></span>|<span data-ttu-id="4f5d2-133">String</span><span class="sxs-lookup"><span data-stu-id="4f5d2-133">String</span></span>|<span data-ttu-id="4f5d2-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-134">Key of the entity.</span></span>|
+|<span data-ttu-id="4f5d2-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="4f5d2-135">userDisplayName</span></span>|<span data-ttu-id="4f5d2-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4f5d2-136">String</span></span>|<span data-ttu-id="4f5d2-137">Nome de usuário de DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-137">User name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="4f5d2-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="4f5d2-138">devicesCount</span></span>|<span data-ttu-id="4f5d2-139">Int32</span><span class="sxs-lookup"><span data-stu-id="4f5d2-139">Int32</span></span>|<span data-ttu-id="4f5d2-140">Contagem de dispositivos para esse usuário.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-140">Devices count for that user.</span></span>|
+|<span data-ttu-id="4f5d2-141">status</span><span class="sxs-lookup"><span data-stu-id="4f5d2-141">status</span></span>|[<span data-ttu-id="4f5d2-142">complianceStatus</span><span class="sxs-lookup"><span data-stu-id="4f5d2-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="4f5d2-143">Status de conformidade do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-143">Compliance status of the policy report.</span></span> <span data-ttu-id="4f5d2-144">Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="4f5d2-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="4f5d2-145">lastReportedDateTime</span></span>|<span data-ttu-id="4f5d2-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4f5d2-146">DateTimeOffset</span></span>|<span data-ttu-id="4f5d2-147">Data e hora da última modificação do relatório de políticas.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-147">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="4f5d2-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="4f5d2-148">userPrincipalName</span></span>|<span data-ttu-id="4f5d2-149">String</span><span class="sxs-lookup"><span data-stu-id="4f5d2-149">String</span></span>|<span data-ttu-id="4f5d2-150">UserPrincipalName.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-150">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="df385-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="df385-152">Response</span></span>
-<span data-ttu-id="df385-153">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="df385-153">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4f5d2-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f5d2-151">Response</span></span>
+<span data-ttu-id="4f5d2-152">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-152">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df385-154">Exemplo</span><span class="sxs-lookup"><span data-stu-id="df385-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4f5d2-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4f5d2-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="df385-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="df385-155">Request</span></span>
-<span data-ttu-id="df385-156">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="df385-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4f5d2-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4f5d2-154">Request</span></span>
+<span data-ttu-id="4f5d2-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-155">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/{deviceConfigurationUserStatusId}
 Content-type: application/json
@@ -93,8 +91,8 @@ Content-length: 290
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="df385-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="df385-157">Response</span></span>
-<span data-ttu-id="df385-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="df385-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4f5d2-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f5d2-156">Response</span></span>
+<span data-ttu-id="4f5d2-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4f5d2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -110,7 +108,6 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 
