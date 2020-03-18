@@ -1,33 +1,33 @@
 ---
-title: Obter windowsFeatureUpdateProfile
-description: Leia as propriedades e as relações do objeto windowsFeatureUpdateProfile.
+title: Obter deviceManagementAutopilotPolicyStatusDetail
+description: Leia as propriedades e as relações do objeto deviceManagementAutopilotPolicyStatusDetail.
 author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da755aec3b857a2d0248e83db05502c552647721
+ms.openlocfilehash: 31f16bcfda34de6bf483300060772f5b00a87480
 ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800386"
+ms.locfileid: "42800211"
 ---
-# <a name="get-windowsfeatureupdateprofile"></a>Obter windowsFeatureUpdateProfile
+# <a name="get-devicemanagementautopilotpolicystatusdetail"></a>Obter deviceManagementAutopilotPolicyStatusDetail
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .
+Leia as propriedades e as relações do objeto [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
+GET /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -51,14 +51,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
+GET https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -66,17 +66,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 412
+Content-Length: 377
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
-    "id": "885bd4ee-d4ee-885b-eed4-5b88eed45b88",
+    "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
+    "id": "dbe093ee-93ee-dbe0-ee93-e0dbee93e0db",
     "displayName": "Display Name value",
-    "description": "Description value",
-    "featureUpdateVersion": "Feature Update Version value",
-    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+    "policyType": "application",
+    "complianceStatus": "compliant",
+    "trackedOnEnrollmentStatus": true,
+    "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
   }
 }
 ```

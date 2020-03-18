@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso appConfigurationSettingItem
 description: Contém propriedades do item de configuração de Configuração do aplicativo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c86d863d3adf85a04666845c8e4fbc223c7c263
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c08967a538577ccbaac68ab3964dea61dc18ac79
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493885"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798158"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

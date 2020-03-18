@@ -1,20 +1,18 @@
 ---
 title: Atualizar intuneBrandingProfileAssignment
 description: Atualiza as propriedades de um objeto intuneBrandingProfileAssignment.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 149b212a8e859671bcf6dc4f50615b31408a704e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3743fd5148f46f5be3ea2447c1b52c1f63d0d2eb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457388"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799671"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>Atualizar intuneBrandingProfileAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 220
   }
 }
 ```
-
 
 
 

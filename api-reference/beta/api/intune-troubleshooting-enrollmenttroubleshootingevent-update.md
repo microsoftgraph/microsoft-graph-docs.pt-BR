@@ -1,20 +1,18 @@
 ---
 title: Atualizar enrollmentTroubleshootingEvent
 description: Atualiza as propriedades de um objeto enrollmentTroubleshootingEvent.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fa294b068f1eb98d55e395091ca0b0a145f96f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a112ee345df1ebf151889aa41d7ba8edba49bbee
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457633"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800127"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>Atualizar enrollmentTroubleshootingEvent
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -163,7 +161,6 @@ Content-Length: 1231
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

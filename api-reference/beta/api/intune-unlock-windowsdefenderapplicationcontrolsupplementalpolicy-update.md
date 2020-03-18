@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsDefenderApplicationControlSupplementalPolicy
 description: Atualiza as propriedades de um objeto windowsDefenderApplicationControlSupplementalPolicy.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e02eaeacdede0451e9c056cb9534f6cf71c20e9
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 0a5dc843e96e0fb45c2b4c9a442cb9415f6dcf98
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39938863"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800043"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Atualizar windowsDefenderApplicationControlSupplementalPolicy
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |displayName|Cadeia de caracteres|O nome de exibição da política complementar do WindowsDefenderApplicationControl.|
 |description|String|A descrição da política suplementar do WindowsDefenderApplicationControl.|
 |conteúdo|Binária|O conteúdo de política suplementar WindowsDefenderApplicationControl no formato de matriz de bytes.|
-|contentFileName|Cadeia de Caracteres|O nome de arquivo do conteúdo da política suplementar da WindowsDefenderApplicationControl.|
+|contentFileName|String|O nome de arquivo do conteúdo da política suplementar da WindowsDefenderApplicationControl.|
 |versão|String|A versão da política suplementar da WindowsDefenderApplicationControl.|
 |creationDatetime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi carregada.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da política suplementar do WindowsDefenderApplicationControl.|
@@ -112,7 +112,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

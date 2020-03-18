@@ -1,16 +1,16 @@
 ---
 title: Acessar windowsInformationProtectionNetworkLearningSummary
 description: Leia as propriedades e as relações do objeto windowsInformationProtectionNetworkLearningSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef7ccae4d88162319dc1ed70ce7c3ee52e812e92
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 721e5a027674aa10b5cc87c39edceebb9522b10b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39937848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799601"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Acessar windowsInformationProtectionNetworkLearningSummary
 
@@ -77,7 +77,6 @@ Content-Length: 213
   }
 }
 ```
-
 
 
 

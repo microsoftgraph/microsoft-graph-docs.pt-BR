@@ -1,20 +1,18 @@
 ---
 title: Atualizar windowsUpdateState
 description: Atualiza as propriedades de um objeto windowsUpdateState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1da79ffe24542b8989ea6673a1c469447a1f64fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6490807f9af605e575fdc10c7e833cf18cbd09c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457899"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800414"
 ---
 # <a name="update-windowsupdatestate"></a>Atualizar windowsUpdateState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -31,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Atualização de software** | DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Application||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Atualização de software** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -62,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |userId|String|A ID do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
 |userPrincipalName|String|Nome principal do usuário.|
-|status|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Status do Windows UDPATE. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|windowsUpdateStatus|Status do Windows UDPATE. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|String|A versão de atualização de qualidade do dispositivo.|
 |featureUpdateVersion|String|A versão atual de atualização de recursos do dispositivo.|
 |lastScanDateTime|DateTimeOffset|A data e hora em que o agente do Windows Update realizou uma verificação bem-sucedida.|
@@ -117,7 +115,6 @@ Content-Length: 553
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

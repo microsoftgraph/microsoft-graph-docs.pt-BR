@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso androidMinimumOperatingSystem
 description: Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc3003a2d62609b0646e79f3d43c51b352f02ee8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1d031ead0b0c1d2113ecd563c6b289c548c0c9d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494174"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799266"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

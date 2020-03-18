@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração certificateStatus
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e5739a3bf40feb890c193bf4bb4f067813190e71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0044141f3538002bb5c2983cb569639f6fa9b93d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493808"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798151"
 ---
 # <a name="certificatestatus-enum-type"></a>tipo de enumeração certificateStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desprovisionado|,0|Ainda não documentado|
-|provisionado|1 |Ainda não documentado|
+|provisionado|1|Ainda não documentado|
 
 
 

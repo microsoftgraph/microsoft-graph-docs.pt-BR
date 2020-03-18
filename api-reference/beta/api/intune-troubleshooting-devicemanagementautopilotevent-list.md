@@ -1,20 +1,18 @@
 ---
 title: Listar deviceManagementAutopilotEvents
 description: Listar Propriedades e relações dos objetos deviceManagementAutopilotEvent.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f21f7ea7359e9503d1f2f03863536ffcb19b92f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc565219592f05262c4ddb40200df381be9102f9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457703"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800239"
 ---
 # <a name="list-devicemanagementautopilotevents"></a>Listar deviceManagementAutopilotEvents
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,13 +63,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1501
+Content-Length: 1539
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
       "id": "3e455cab-5cab-3e45-ab5c-453eab5c453e",
+      "deviceId": "Device Id value",
       "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
       "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
       "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -98,7 +97,6 @@ Content-Length: 1501
   ]
 }
 ```
-
 
 
 

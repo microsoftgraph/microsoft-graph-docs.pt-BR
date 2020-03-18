@@ -1,20 +1,18 @@
 ---
 title: Atualizar mobileAppIntentAndState
 description: Atualiza as propriedades de um objeto mobileAppIntentAndState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09a777fe0d45ebba7e3fba04476a7ecdf841f914
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d79bee0d503c14dc6b62ba7ac2adcc5c780aec5d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457584"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800092"
 ---
 # <a name="update-mobileappintentandstate"></a>Atualizar mobileAppIntentAndState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -129,7 +127,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 

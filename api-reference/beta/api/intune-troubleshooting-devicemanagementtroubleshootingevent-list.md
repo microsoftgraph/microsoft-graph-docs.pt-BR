@@ -1,20 +1,18 @@
 ---
 title: Listar deviceManagementTroubleshootingEvents
 description: Listar propriedades e relações de objetos de deviceManagementTroubleshootingEvent.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ddebcdbfda4cd3d31055daa3161e2995e0a71bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd36340ea09244948dbebcaadb9f8f6c33896477
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457668"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800169"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Listar deviceManagementTroubleshootingEvents
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -100,7 +98,6 @@ Content-Length: 1038
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso androidManagedStoreWebApp
 description: Contém propriedades e propriedades herdadas para aplicativos Web configurados para serem distribuídos por meio do repositório de aplicativos Android gerenciado.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bfdb4339ced00f2f2e3a9335c114a213fa1c914a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a622f8982763d88e6a6e36a3905f03602d6d6a2e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494181"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799273"
 ---
 # <a name="androidmanagedstorewebapp-resource-type"></a>tipo de recurso androidManagedStoreWebApp
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -53,7 +51,7 @@ Herda de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreap
 |uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|O identificador do pacote. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appIdentifier|Cadeia de caracteres|O Nome da Identidade. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|

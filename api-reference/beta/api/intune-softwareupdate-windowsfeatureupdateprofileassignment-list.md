@@ -1,20 +1,18 @@
 ---
 title: Listar windowsFeatureUpdateProfileAssignments
 description: Listar Propriedades e relações dos objetos windowsFeatureUpdateProfileAssignment.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 52e1ffe7570cecb02e5844ffcf2872d4fa02bba4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99ce7aaae200e9a88079f7f5f0bb0552663dd4dd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457829"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800344"
 ---
 # <a name="list-windowsfeatureupdateprofileassignments"></a>Listar windowsFeatureUpdateProfileAssignments
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -79,7 +77,6 @@ Content-Length: 279
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Criar windowsInformationProtectionNetworkLearningSummary
 description: Criar um novo objeto windowsInformationProtectionNetworkLearningSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5397fd98c23fd89a7142efc3441226f3158feb5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f4ead9b9c1948ebf78b60718e57e12f7fe8fa4c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457339"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799615"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Criar windowsInformationProtectionNetworkLearningSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -92,7 +90,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

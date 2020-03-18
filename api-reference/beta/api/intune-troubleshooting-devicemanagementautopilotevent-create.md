@@ -1,20 +1,18 @@
 ---
 title: Criar deviceManagementAutopilotEvent
 description: Criar um novo objeto deviceManagementAutopilotEvent.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fc6a38851497e68861a788083c23fd9936e9fe7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e33ab0fc0b48284457785702d3591f462039505c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457738"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800260"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>Criar deviceManagementAutopilotEvent
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,6 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O UUID do objeto.|
+|deviceId|String|ID de dispositivo associada ao objeto|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
@@ -89,10 +88,11 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/autopilotEvents
 Content-type: application/json
-Content-length: 1323
+Content-length: 1357
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
+  "deviceId": "Device Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -123,11 +123,12 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1372
+Content-Length: 1406
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "3e455cab-5cab-3e45-ab5c-453eab5c453e",
+  "deviceId": "Device Id value",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "deviceRegisteredDateTime": "2017-01-01T00:02:48.7185581-08:00",
   "enrollmentStartDateTime": "2017-01-01T00:00:19.6280481-08:00",
@@ -152,7 +153,6 @@ Content-Length: 1372
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 

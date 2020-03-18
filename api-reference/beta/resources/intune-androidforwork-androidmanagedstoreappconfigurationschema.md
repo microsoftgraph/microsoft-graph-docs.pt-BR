@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso androidManagedStoreAppConfigurationSchema
 description: Esquema que descreve as configurações personalizadas de um aplicativo Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c54ba00a2756950c1e4cecbb6e61e7458427d58
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ee168295ff84f8a553bd87985c22807f5c55d2d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494608"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799336"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>tipo de recurso androidManagedStoreAppConfigurationSchema
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

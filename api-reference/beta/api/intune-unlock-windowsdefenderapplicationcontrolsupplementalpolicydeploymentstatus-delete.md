@@ -1,20 +1,18 @@
 ---
 title: Excluir windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: Exclui windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 758dba601bfb1d2a18c34771f922e17c3fcb1f29
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1c517b37c9742aa1579cc41917df1f15986964c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457500"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799784"
 ---
 # <a name="delete-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Excluir windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

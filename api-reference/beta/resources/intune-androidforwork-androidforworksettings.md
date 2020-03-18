@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso androidForWorkSettings
 description: Configurações para o Android for Work.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d633ed64bfdd804390a227f2d981cb9ce13a72ab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 125be259688bf9d51ef16a3d679a4b2432fe6811
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494832"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799379"
 ---
 # <a name="androidforworksettings-resource-type"></a>Tipo de recurso androidForWorkSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

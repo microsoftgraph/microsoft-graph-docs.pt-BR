@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso androidForWorkApp
 description: Contém propriedades e propriedades herdadas para aplicativos do Android for Work (AFW).
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b2dbe598d074ada719447a3d13f5f89f1c04f60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9d543581c7577e6222c4e08d95ba52012688dceb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494412"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799308"
 ---
 # <a name="androidforworkapp-resource-type"></a>tipo de recurso androidForWorkApp
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -53,13 +51,13 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|O identificador do pacote.|
 |appIdentifier|Cadeia de caracteres|O Nome da Identidade.|
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
 |totalLicenseCount|Int32|O número total de licenças VPP.|
-|appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho.|
+|appStoreUrl|Cadeia de caracteres|A URL do aplicativo de reproduzir para o repositório de trabalho.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso androidManagedStoreApp
 description: Contém propriedades e propriedades herdadas para aplicativos de repositório gerenciado do Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3eab5b4ee2be9c9a60b5e06b8a468e0ee9beb3b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a97bb1fcec1e1d4ba6b53a7d8c110299705365c2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494335"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799287"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>tipo de recurso androidManagedStoreApp
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -53,13 +51,13 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|O identificador do pacote.|
 |appIdentifier|Cadeia de caracteres|O Nome da Identidade.|
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
 |totalLicenseCount|Int32|O número total de licenças VPP.|
-|appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho.|
+|appStoreUrl|Cadeia de caracteres|A URL do aplicativo de reproduzir para o repositório de trabalho.|
 |IsPrivate|Boolean|Indica se o aplicativo está disponível somente para os usuários de uma empresa.|
 |isSystemApp|Boolean|Indica se o aplicativo é um aplicativo de sistema pré-instalado.|
 |supportsOemConfig|Boolean|Se este aplicativo dá suporte à política OEMConfig.|

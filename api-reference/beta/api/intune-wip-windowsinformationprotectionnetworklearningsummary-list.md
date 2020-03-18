@@ -1,16 +1,16 @@
 ---
 title: Listar windowsInformationProtectionNetworkLearningSummaries
 description: Listar propriedades e relações de objetos de windowsInformationProtectionNetworkLearningSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d54050e601f03a4485e9a8c5fcdd4ddbeda2209
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2592d17a88406eff23e8b5debab5dd5897ae6ff0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39937841"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799522"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Listar windowsInformationProtectionNetworkLearningSummaries
 
@@ -76,7 +76,6 @@ Content-Length: 235
   ]
 }
 ```
-
 
 
 

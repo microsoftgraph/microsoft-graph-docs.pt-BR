@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso androidEnrollmentCompanyCode
 description: Uma classe para manter os dados de registro Specialty usados para registrar-se por meio da API de gerenciamento do Android do Google, como token, URL e conteúdo de código QR
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd37bcb9dba4e4fc6ce54e686a6a889ce73448d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00a76474f33a963af4e66efe8bc7a933e639fea2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495169"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799421"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>tipo de recurso androidEnrollmentCompanyCode
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

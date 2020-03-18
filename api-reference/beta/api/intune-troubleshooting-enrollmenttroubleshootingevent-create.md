@@ -1,20 +1,18 @@
 ---
 title: Criar enrollmentTroubleshootingEvent
 description: Cria um novo objeto enrollmentTroubleshootingEvent.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c141c2f76c174ec5e54c88f95277dc2774229a76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b88dd97135e7a69dba4ed32fe88bbeeeab48bb5e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457661"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800155"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Criar enrollmentTroubleshootingEvent
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -163,7 +161,6 @@ Content-Length: 1231
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidPermissionActionType
 description: Ação do Android tomada quando um aplicativo solicita uma permissão perigosa.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f36b6a41fe19470d7d02e114464ee1ae6d9742cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15eb87e8f0a89b9fe0e1925ce735f72a3e601fa6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493990"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798172"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>tipo de enumeração androidPermissionActionType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Ação do Android tomada quando um aplicativo solicita uma permissão perigosa.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |prompt|,0|Ainda não documentado|
-|Concessão autogrant|1 |Ainda não documentado|
-|Negação de permissão|2 |Ainda não documentado|
+|Concessão autogrant|1|Ainda não documentado|
+|Negação de permissão|duas|Ainda não documentado|
 
 
 

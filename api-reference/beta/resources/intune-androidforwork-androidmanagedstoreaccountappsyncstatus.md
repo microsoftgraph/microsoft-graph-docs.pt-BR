@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidManagedStoreAccountAppSyncStatus
 description: Status de sincronização do locatário com a API Google EMM
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1817d9593d63c7343ed612e7dc82f8388d34c345
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 857100f71e71c20e301304d9100cf40cafd59d1f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494699"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799365"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>tipo de enumeração androidManagedStoreAccountAppSyncStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,11 +24,11 @@ Status de sincronização do locatário com a API Google EMM
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|credentialsNotValid|1 |Ainda não documentado|
-|androidForWorkApiError|2 |Ainda não documentado|
-|managementServiceError|3 |Ainda não documentado|
+|credentialsNotValid|1|Ainda não documentado|
+|androidForWorkApiError|duas|Ainda não documentado|
+|managementServiceError|3D|Ainda não documentado|
 |unknownError|4 |Ainda não documentado|
-|nenhuma|5 |Ainda não documentado|
+|none|5 |Ainda não documentado|
 
 
 

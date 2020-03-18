@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidForWorkSyncStatus
 description: Status de sincronização do locatário com a API Google EMM
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a7f8c33c720d7760ca228a56399346ad6ad9268c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb99cda1a32592f9f6fb2ed854004efdc28bef03
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494797"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799372"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>tipo de enumeração androidForWorkSyncStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,11 +24,11 @@ Status de sincronização do locatário com a API Google EMM
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|credentialsNotValid|1 |Ainda não documentado|
-|androidForWorkApiError|2 |Ainda não documentado|
-|managementServiceError|3 |Ainda não documentado|
+|credentialsNotValid|1|Ainda não documentado|
+|androidForWorkApiError|duas|Ainda não documentado|
+|managementServiceError|3D|Ainda não documentado|
 |unknownError|4 |Ainda não documentado|
-|nenhuma|5 |Ainda não documentado|
+|none|5 |Ainda não documentado|
 
 
 
