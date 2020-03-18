@@ -1,20 +1,18 @@
 ---
 title: Criar deviceAppManagementTask
 description: Criar um novo objeto deviceAppManagementTask.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fab1d455e317fa03af530c39e3270891824e63b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b532fb65a66f0b40b05dc97de150bff6099ac8f4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461386"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802500"
 ---
 # <a name="create-deviceappmanagementtask"></a>Criar deviceAppManagementTask
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -115,7 +113,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Atualizar localizedNotificationMessage
 description: Atualizar as propriedades de um objeto localizedNotificationMessage.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f6f3ddffd84976f2a7a1cbc8355e44efdbaffc7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7aa5f527fe8e4f55d422722a8f409ba2d10e32f7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462618"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803158"
 ---
 # <a name="update-localizednotificationmessage"></a>Atualizar localizedNotificationMessage
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -100,7 +98,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

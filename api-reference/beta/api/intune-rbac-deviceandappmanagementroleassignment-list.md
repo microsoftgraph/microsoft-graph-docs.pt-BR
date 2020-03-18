@@ -1,20 +1,18 @@
 ---
 title: Listar deviceAndAppManagementRoleAssignments
 description: Lista propriedades e relações dos objetos deviceAndAppManagementRoleAssignment.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d01bde070d972563726a503e7aca6269580552b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e591840b48cb4d26d590d4b5abc52c7e101a25a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42459944"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801786"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Listar deviceAndAppManagementRoleAssignments
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Application|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -88,7 +86,6 @@ Content-Length: 480
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Obter deviceCompliancePolicyPolicySetItem
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyPolicySetItem.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02a9df8df9effde74e99d3534f232cb86cea77a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fbd1e042438d8d291263cb1e1994e0e4019d1aa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461267"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802444"
 ---
 # <a name="get-devicecompliancepolicypolicysetitem"></a>Obter deviceCompliancePolicyPolicySetItem
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -87,7 +85,6 @@ Content-Length: 532
   }
 }
 ```
-
 
 
 

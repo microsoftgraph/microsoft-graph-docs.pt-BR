@@ -1,16 +1,16 @@
 ---
 title: Atualizar roleScopeTagAutoAssignment
 description: Atualiza as propriedades de um objeto roleScopeTagAutoAssignment.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b177e224c3e0392517a66a964a0a05216c7c8fd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 067464a6362d4af4f5e100391c0dda4474b340f4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955151"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801527"
 ---
 # <a name="update-rolescopetagautoassignment"></a>Atualizar roleScopeTagAutoAssignment
 
@@ -91,7 +91,6 @@ Content-Length: 215
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Atualizar groupPolicyDefinition
 description: Atualiza as propriedades de um objeto groupPolicyDefinition.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c9470b2affadb3ea0cdd38f1dbbb8dd9d44fa966
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 02010b63320f295dad8ec5d5c579d5aa19d0a062
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465160"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804426"
 ---
 # <a name="update-grouppolicydefinition"></a>Atualizar groupPolicyDefinition
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -40,6 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/definition
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition
+PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitions/{groupPolicyDefinitionId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile/definitions/{groupPolicyDefinitionId}
 ```
 
@@ -62,6 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |categoryPath|String|O caminho de categoria completo localizado para a política.|
 |com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|groupPolicyCategoryId|Guid|A ID de categoria da categoria pai|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -77,25 +77,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions/{groupPolicyDefinitionId}
 Content-type: application/json
-Content-length: 285
-
-{
-  "@odata.type": "#microsoft.graph.groupPolicyDefinition",
-  "classType": "machine",
-  "displayName": "Display Name value",
-  "explainText": "Explain Text value",
-  "categoryPath": "Category Path value",
-  "supportedOn": "Supported On value",
-  "policyType": "admxIngested"
-}
-```
-
-### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 398
+Content-length: 353
 
 {
   "@odata.type": "#microsoft.graph.groupPolicyDefinition",
@@ -105,11 +87,30 @@ Content-Length: 398
   "categoryPath": "Category Path value",
   "supportedOn": "Supported On value",
   "policyType": "admxIngested",
+  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d"
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 466
+
+{
+  "@odata.type": "#microsoft.graph.groupPolicyDefinition",
+  "classType": "machine",
+  "displayName": "Display Name value",
+  "explainText": "Explain Text value",
+  "categoryPath": "Category Path value",
+  "supportedOn": "Supported On value",
+  "policyType": "admxIngested",
+  "groupPolicyCategoryId": "4d1e97a2-97a2-4d1e-a297-1e4da2971e4d",
   "id": "f9607947-7947-f960-4779-60f9477960f9",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Obter groupPolicyPresentationLongDecimalTextBox
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationLongDecimalTextBox.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42cd4ebd97f1bda607792cc0711739951263bc55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be96f1b43a9842d49edee1df5a74cbedfb5fc63a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464607"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804167"
 ---
 # <a name="get-grouppolicypresentationlongdecimaltextbox"></a>Obter groupPolicyPresentationLongDecimalTextBox
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -86,7 +84,6 @@ Content-Length: 377
   }
 }
 ```
-
 
 
 

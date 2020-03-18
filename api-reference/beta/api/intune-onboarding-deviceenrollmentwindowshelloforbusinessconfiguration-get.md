@@ -1,20 +1,18 @@
 ---
 title: Obter deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Ler propriedades e relações do objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 363ceb1eca301cb774ef971b18ede26d300e1f03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3082b025d2ae979ed1e197b7a605da8829805fd4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462177"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802955"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Obter deviceEnrollmentWindowsHelloForBusinessConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -96,7 +94,6 @@ Content-Length: 900
   }
 }
 ```
-
 
 
 

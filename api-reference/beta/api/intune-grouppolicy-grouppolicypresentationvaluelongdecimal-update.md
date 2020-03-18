@@ -1,20 +1,18 @@
 ---
 title: Atualizar groupPolicyPresentationValueLongDecimal
 description: Atualiza as propriedades de um objeto groupPolicyPresentationValueLongDecimal.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3bdefa04510d41afd5ff065fbc01adc3da776745
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5141f907f3cee59d50535fcb6c9ff71549a65841
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464019"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803873"
 ---
 # <a name="update-grouppolicypresentationvaluelongdecimal"></a>Atualizar groupPolicyPresentationValueLongDecimal
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 268
   "value": 5
 }
 ```
-
 
 
 

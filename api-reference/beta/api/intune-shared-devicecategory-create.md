@@ -1,20 +1,18 @@
 ---
 title: Criar deviceCategory
 description: Cria um novo objeto deviceCategory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbe00ccf9d94b9cc9253ad1baeeaedbaec29734d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1b01cf52fdaa0272ca2bd996ea527ca131dc8ad
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458859"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801247"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -31,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Application||
 | &nbsp; &nbsp; **Integração** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -101,7 +99,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

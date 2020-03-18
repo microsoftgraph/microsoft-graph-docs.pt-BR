@@ -1,20 +1,18 @@
 ---
 title: Atualizar deviceAppManagement
 description: Atualizar as propriedades de um objeto de deviceAppManagement.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e03b6936d17297159115193a287bc96999c83d71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bed5a7fd19afb736bdbd5e11eece9dbbd7c3424c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458928"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801254"
 ---
 # <a name="update-deviceappmanagement"></a>Atualizar deviceAppManagement
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -27,11 +25,11 @@ Uma das seguintes permissões é necessária para chamar esta API. Para saber ma
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) | |
-| &nbsp;&nbsp; **Aplicativos**, **livros**, **** integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding**integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | |
-| &nbsp;&nbsp; **Aplicativos**, **livros**, **** integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps.ReadWrite.All |
+| Application | |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding**integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -97,7 +95,6 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
-
 
 
 

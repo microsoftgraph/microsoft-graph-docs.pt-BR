@@ -1,16 +1,16 @@
 ---
 title: Atualizar remoteAssistancePartner
 description: Atualizar as propriedades de um objeto remoteAssistancePartner.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bd9bf72677273a953a336a9de7a7998c4c1f56a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: ef98a3300973986b17649e5567ff3de988ff4635
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955081"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801478"
 ---
 # <a name="update-remoteassistancepartner"></a>Atualizar remoteAssistancePartner
 
@@ -96,7 +96,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

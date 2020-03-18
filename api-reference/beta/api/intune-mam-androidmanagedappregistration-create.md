@@ -1,20 +1,18 @@
 ---
 title: Criar androidManagedAppRegistration
 description: Cria um novo objeto androidManagedAppRegistration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 72bd8b8a5c95030b60a7584439349e93993fb4c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e14b4edf97e00a97ecd5ec084b398d8455220b14
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463739"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803691"
 ---
 # <a name="create-androidmanagedappregistration"></a>Criar androidManagedAppRegistration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -146,7 +144,6 @@ Content-Length: 987
   "patchVersion": "Patch Version value"
 }
 ```
-
 
 
 

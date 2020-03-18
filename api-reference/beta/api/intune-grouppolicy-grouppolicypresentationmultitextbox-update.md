@@ -1,20 +1,18 @@
 ---
 title: Atualizar groupPolicyPresentationMultiTextBox
 description: Atualiza as propriedades de um objeto groupPolicyPresentationMultiTextBox.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e309482bfdba7f28d0df5170e0ca9c248b57a8a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cff982b0678368ebf371c87960bef40f484217c3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464523"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804118"
 ---
 # <a name="update-grouppolicypresentationmultitextbox"></a>Atualizar groupPolicyPresentationMultiTextBox
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -101,7 +99,6 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
-
 
 
 

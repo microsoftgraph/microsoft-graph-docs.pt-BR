@@ -1,16 +1,16 @@
 ---
 title: Obter roleScopeTagAutoAssignment
 description: Leia as propriedades e as relações do objeto roleScopeTagAutoAssignment.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c64a4542c99641313692f1ec7889c4a5693b790
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6f38d042cda827c67d0b1e5526ac2f85151b7dc1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955179"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801541"
 ---
 # <a name="get-rolescopetagautoassignment"></a>Obter roleScopeTagAutoAssignment
 
@@ -78,7 +78,6 @@ Content-Length: 244
   }
 }
 ```
-
 
 
 

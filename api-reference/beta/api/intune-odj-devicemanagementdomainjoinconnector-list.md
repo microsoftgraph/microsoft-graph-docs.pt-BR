@@ -1,20 +1,18 @@
 ---
 title: Listar deviceManagementDomainJoinConnectors
 description: Listar Propriedades e relações dos objetos deviceManagementDomainJoinConnector.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e0708c0931f8f1028afd7f96ff34b0d87dcec72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f2cd5a6c989b2088eb2b3b1a5f996e3bc9fdbde
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462548"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803088"
 ---
 # <a name="list-devicemanagementdomainjoinconnectors"></a>Listar deviceManagementDomainJoinConnectors
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -80,7 +78,6 @@ Content-Length: 341
   ]
 }
 ```
-
 
 
 

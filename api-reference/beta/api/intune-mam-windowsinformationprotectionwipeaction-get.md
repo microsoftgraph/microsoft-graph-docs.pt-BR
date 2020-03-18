@@ -1,20 +1,18 @@
 ---
 title: Obter windowsInformationProtectionWipeAction
 description: Leia as propriedades e as relações do objeto windowsInformationProtectionWipeAction.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 664bcb6f63534559ca85625e2e05bd9b9d9e480a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df3bdbb696aa1baf249c6a9a9ef1543b77d0b411
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462814"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803207"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>Obter windowsInformationProtectionWipeAction
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -83,7 +81,6 @@ Content-Length: 496
   }
 }
 ```
-
 
 
 

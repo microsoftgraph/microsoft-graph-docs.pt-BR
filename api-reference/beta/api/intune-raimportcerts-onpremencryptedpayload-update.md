@@ -1,20 +1,18 @@
 ---
 title: Atualizar onPremEncryptedPayload
 description: Atualiza as propriedades de um objeto onPremEncryptedPayload.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5df26a27c1e866ceb726551489f8e1c3036c887f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c161734c9617a041ec87c6807e056665e1b49b2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460154"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801919"
 ---
 # <a name="update-onpremencryptedpayload"></a>Atualizar onPremEncryptedPayload
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -132,7 +130,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 

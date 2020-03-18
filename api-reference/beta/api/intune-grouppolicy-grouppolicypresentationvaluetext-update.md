@@ -1,20 +1,18 @@
 ---
 title: Atualizar groupPolicyPresentationValueText
 description: Atualiza as propriedades de um objeto groupPolicyPresentationValueText.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26a745460214b5253e5916634e22220fae73839d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35e0b53211128b74fd74165e178d9ca9bf68d25c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463879"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803803"
 ---
 # <a name="update-grouppolicypresentationvaluetext"></a>Atualizar groupPolicyPresentationValueText
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
-
 
 
 

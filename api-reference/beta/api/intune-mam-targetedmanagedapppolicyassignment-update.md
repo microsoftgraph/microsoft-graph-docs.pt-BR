@@ -1,20 +1,18 @@
 ---
 title: Atualizar targetedManagedAppPolicyAssignment
 description: Atualizar as propriedades de um objeto targetedManagedAppPolicyAssignment.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3b0db1368b8726deaa7ff3adcacee0774eebfce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 525bf6c1b8d07adbb2a25f7ec3273b3d05c2994a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463150"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803411"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Atualizar targetedManagedAppPolicyAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -103,7 +101,6 @@ Content-Length: 284
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

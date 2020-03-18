@@ -1,20 +1,18 @@
 ---
 title: Criar groupPolicyPresentationValueDecimal
 description: Criar um novo objeto groupPolicyPresentationValueDecimal.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e4ef33a1f72444fc951b4161bb46225d5d9750c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87c88f69dc0759b154f8f4ffc7d3d32b6a8fb787
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464208"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803971"
 ---
 # <a name="create-grouppolicypresentationvaluedecimal"></a>Criar groupPolicyPresentationValueDecimal
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 264
   "value": 5
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Criar mobileThreatDefenseConnector
 description: Cria um novo objeto mobileThreatDefenseConnector.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3e5cb67f0a9df95aad53ec4c1e82669d614cec6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb1904038341c02d1b17696ce0b2016876f8be5d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461967"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802808"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Criar mobileThreatDefenseConnector
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -131,7 +129,6 @@ Content-Length: 775
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

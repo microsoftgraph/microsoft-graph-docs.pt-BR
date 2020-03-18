@@ -1,20 +1,18 @@
 ---
 title: Criar vppToken
 description: Criar um novo objeto vppToken.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5509c267000961acbf519e0b4b2960b4927e6108
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75f8715e1a1358365551c9a4ddfbcca7d10116ec
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461771"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802696"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
 |LocationName|String|Local do token retornado da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
-|roleScopeTagIds|String collection|IDs de marcas de escopo de função atribuídas a esta entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 
 
@@ -156,7 +154,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

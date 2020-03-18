@@ -1,20 +1,18 @@
 ---
 title: Listar groupPolicySettingMappings
 description: Listar Propriedades e relações dos objetos groupPolicySettingMapping.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80258501ce2fc7cd675f5518ca7bf996871a2623
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e81e0a5390559a79aace5a3aab0cf65ddeb42ce
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465433"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804580"
 ---
 # <a name="list-grouppolicysettingmappings"></a>Listar groupPolicySettingMappings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1065
+Content-Length: 1139
 
 {
   "value": [
@@ -93,12 +91,12 @@ Content-Length: 1065
       "settingScope": "device",
       "intuneSettingUriList": [
         "Intune Setting Uri List value"
-      ]
+      ],
+      "intuneSettingDefinitionId": "Intune Setting Definition Id value"
     }
   ]
 }
 ```
-
 
 
 

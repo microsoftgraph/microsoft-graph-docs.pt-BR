@@ -1,20 +1,18 @@
 ---
 title: Criar groupPolicyPresentationDropdownList
 description: Criar um novo objeto groupPolicyPresentationDropdownList.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8d9ade33a1fee4173bd7f5d873a3ee0262566a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 385fb3f1704321c87f961c37b8e09f25c1522bbd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464803"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804251"
 ---
 # <a name="create-grouppolicypresentationdropdownlist"></a>Criar groupPolicyPresentationDropdownList
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -120,7 +118,6 @@ Content-Length: 602
   "required": true
 }
 ```
-
 
 
 

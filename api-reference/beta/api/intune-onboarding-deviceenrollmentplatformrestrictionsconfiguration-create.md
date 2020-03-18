@@ -1,20 +1,18 @@
 ---
 title: Criar deviceEnrollmentPlatformRestrictionsConfiguration
 description: Criar um novo objeto deviceEnrollmentPlatformRestrictionsConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 554dd2ccc5076c96f8ca0e239a3405e4509d474c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afb50a310085a0c82aa521be220ca0e9f3ac562f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462401"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803004"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>Criar deviceEnrollmentPlatformRestrictionsConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -249,7 +247,6 @@ Content-Length: 2935
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Criar groupPolicyPresentationDecimalTextBox
 description: Criar um novo objeto groupPolicyPresentationDecimalTextBox.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 93581dd5a12be1b6a8cec8944f97cefe8ed93dfa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82815464631fe043e290567e4e4a5465453adf7f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464859"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804286"
 ---
 # <a name="create-grouppolicypresentationdecimaltextbox"></a>Criar groupPolicyPresentationDecimalTextBox
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -109,7 +107,6 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
-
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Listar managedDeviceMobileAppConfigurationPolicySetItems
 description: Listar Propriedades e relações dos objetos managedDeviceMobileAppConfigurationPolicySetItem.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 22cedf2aa4207e2216509d03f08aac5b61731297
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 87318f7dd598be4a606f3ab3da1d60e9999a8108
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941061"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802227"
 ---
 # <a name="list-manageddevicemobileappconfigurationpolicysetitems"></a>Listar managedDeviceMobileAppConfigurationPolicySetItems
 
@@ -84,7 +84,6 @@ Content-Length: 583
   ]
 }
 ```
-
 
 
 

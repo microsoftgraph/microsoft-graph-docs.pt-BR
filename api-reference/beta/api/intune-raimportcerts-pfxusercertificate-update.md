@@ -1,20 +1,18 @@
 ---
 title: Atualizar pfxUserCertificate
 description: Atualiza as propriedades de um objeto pfxUserCertificate.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4498260afe255b5b71e5d2bcfab44df331e5c24
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 494e96ddc992e7fb49d7a12d9107df285f74d931
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460063"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801849"
 ---
 # <a name="update-pfxusercertificate"></a>Atualizar pfxUserCertificate
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -135,7 +133,6 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
 
 
 

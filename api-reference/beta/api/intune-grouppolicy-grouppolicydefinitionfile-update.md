@@ -1,20 +1,18 @@
 ---
 title: Atualizar groupPolicyDefinitionFile
 description: Atualiza as propriedades de um objeto groupPolicyDefinitionFile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e25862f0005a4ec87dfae46ace5eddfde7f5dd93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba9ce04ba17290d6240b52e780a4728f9f12ca8d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465055"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804412"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Atualizar groupPolicyDefinitionFile
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -39,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ``` http
 PATCH /deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile
+PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitionFile
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome amigável localizado do arquivo ADMX.|
 |description|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
-|languageCodes|String collection|Os códigos de idioma suportados para o arquivo ADMX.|
+|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX.|
 |targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX.|
 |targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
@@ -114,7 +113,6 @@ Content-Length: 471
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

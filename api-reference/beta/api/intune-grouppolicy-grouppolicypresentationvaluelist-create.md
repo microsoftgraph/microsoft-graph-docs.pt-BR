@@ -1,20 +1,18 @@
 ---
 title: Criar groupPolicyPresentationValueList
 description: Criar um novo objeto groupPolicyPresentationValueList.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d77f344d90ff691b7bf2a16cab2b75f59370f97d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34f320fc8f7a4d59c248fb534a2f008e85a3a48f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464229"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803936"
 ---
 # <a name="create-grouppolicypresentationvaluelist"></a>Criar groupPolicyPresentationValueList
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -105,7 +103,6 @@ Content-Length: 394
   ]
 }
 ```
-
 
 
 
