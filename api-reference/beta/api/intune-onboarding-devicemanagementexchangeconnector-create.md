@@ -1,37 +1,35 @@
 ---
 title: Criar deviceManagementExchangeConnector
 description: Crie um novo objeto deviceManagementExchangeConnector.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cfd6bc3050476dfcabba081c2cb6d36a3c1c3e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7fe5f294f77d18e11197cc312397df8c46a5bac5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462163"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802934"
 ---
-# <a name="create-devicemanagementexchangeconnector"></a><span data-ttu-id="2568a-103">Criar deviceManagementExchangeConnector</span><span class="sxs-lookup"><span data-stu-id="2568a-103">Create deviceManagementExchangeConnector</span></span>
+# <a name="create-devicemanagementexchangeconnector"></a><span data-ttu-id="9994a-103">Criar deviceManagementExchangeConnector</span><span class="sxs-lookup"><span data-stu-id="9994a-103">Create deviceManagementExchangeConnector</span></span>
 
-<span data-ttu-id="2568a-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2568a-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="9994a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="9994a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2568a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2568a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9994a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="9994a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="2568a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2568a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="9994a-106">Crie um novo objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).</span><span class="sxs-lookup"><span data-stu-id="9994a-106">Create a new [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object.</span></span>
 
-<span data-ttu-id="2568a-107">Crie um novo objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).</span><span class="sxs-lookup"><span data-stu-id="2568a-107">Create a new [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9994a-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9994a-107">Prerequisites</span></span>
+<span data-ttu-id="9994a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9994a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2568a-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="2568a-108">Prerequisites</span></span>
-<span data-ttu-id="2568a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2568a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="2568a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2568a-111">Permission type</span></span>|<span data-ttu-id="2568a-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="2568a-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9994a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9994a-110">Permission type</span></span>|<span data-ttu-id="9994a-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="9994a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2568a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2568a-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2568a-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2568a-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="2568a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2568a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2568a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2568a-116">Not supported.</span></span>|
-|<span data-ttu-id="2568a-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2568a-117">Application</span></span>|<span data-ttu-id="2568a-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2568a-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="9994a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9994a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="9994a-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9994a-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="9994a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9994a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9994a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9994a-115">Not supported.</span></span>|
+|<span data-ttu-id="9994a-116">Application</span><span class="sxs-lookup"><span data-stu-id="9994a-116">Application</span></span>|<span data-ttu-id="9994a-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9994a-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2568a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2568a-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9994a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9994a-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,39 +38,39 @@ ms.locfileid: "42462163"
 POST /deviceManagement/exchangeConnectors
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2568a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2568a-120">Request headers</span></span>
-|<span data-ttu-id="2568a-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2568a-121">Header</span></span>|<span data-ttu-id="2568a-122">Valor</span><span class="sxs-lookup"><span data-stu-id="2568a-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9994a-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9994a-119">Request headers</span></span>
+|<span data-ttu-id="9994a-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9994a-120">Header</span></span>|<span data-ttu-id="9994a-121">Valor</span><span class="sxs-lookup"><span data-stu-id="9994a-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2568a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="2568a-123">Authorization</span></span>|<span data-ttu-id="2568a-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2568a-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2568a-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="2568a-125">Accept</span></span>|<span data-ttu-id="2568a-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2568a-126">application/json</span></span>|
+|<span data-ttu-id="9994a-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="9994a-122">Authorization</span></span>|<span data-ttu-id="9994a-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9994a-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="9994a-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="9994a-124">Accept</span></span>|<span data-ttu-id="9994a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="9994a-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2568a-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2568a-127">Request body</span></span>
-<span data-ttu-id="2568a-128">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementExchangeConnector.</span><span class="sxs-lookup"><span data-stu-id="2568a-128">In the request body, supply a JSON representation for the deviceManagementExchangeConnector object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9994a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9994a-126">Request body</span></span>
+<span data-ttu-id="9994a-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementExchangeConnector.</span><span class="sxs-lookup"><span data-stu-id="9994a-127">In the request body, supply a JSON representation for the deviceManagementExchangeConnector object.</span></span>
 
-<span data-ttu-id="2568a-129">A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagementExchangeConnector.</span><span class="sxs-lookup"><span data-stu-id="2568a-129">The following table shows the properties that are required when you create the deviceManagementExchangeConnector.</span></span>
+<span data-ttu-id="9994a-128">A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagementExchangeConnector.</span><span class="sxs-lookup"><span data-stu-id="9994a-128">The following table shows the properties that are required when you create the deviceManagementExchangeConnector.</span></span>
 
-|<span data-ttu-id="2568a-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2568a-130">Property</span></span>|<span data-ttu-id="2568a-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="2568a-131">Type</span></span>|<span data-ttu-id="2568a-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="2568a-132">Description</span></span>|
+|<span data-ttu-id="9994a-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9994a-129">Property</span></span>|<span data-ttu-id="9994a-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="9994a-130">Type</span></span>|<span data-ttu-id="9994a-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="9994a-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2568a-133">id</span><span class="sxs-lookup"><span data-stu-id="2568a-133">id</span></span>|<span data-ttu-id="2568a-134">String</span><span class="sxs-lookup"><span data-stu-id="2568a-134">String</span></span>|<span data-ttu-id="2568a-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="2568a-135">Not yet documented</span></span>|
-|<span data-ttu-id="2568a-136">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="2568a-136">lastSyncDateTime</span></span>|<span data-ttu-id="2568a-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2568a-137">DateTimeOffset</span></span>|<span data-ttu-id="2568a-138">Hora da última sincronização do Exchange Connector</span><span class="sxs-lookup"><span data-stu-id="2568a-138">Last sync time for the Exchange Connector</span></span>|
-|<span data-ttu-id="2568a-139">status</span><span class="sxs-lookup"><span data-stu-id="2568a-139">status</span></span>|[<span data-ttu-id="2568a-140">deviceManagementExchangeConnectorStatus</span><span class="sxs-lookup"><span data-stu-id="2568a-140">deviceManagementExchangeConnectorStatus</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|<span data-ttu-id="2568a-141">Status do Exchange Connector.</span><span class="sxs-lookup"><span data-stu-id="2568a-141">Exchange Connector Status.</span></span> <span data-ttu-id="2568a-142">Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.</span><span class="sxs-lookup"><span data-stu-id="2568a-142">Possible values are: `none`, `connectionPending`, `connected`, `disconnected`.</span></span>|
-|<span data-ttu-id="2568a-143">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="2568a-143">primarySmtpAddress</span></span>|<span data-ttu-id="2568a-144">String</span><span class="sxs-lookup"><span data-stu-id="2568a-144">String</span></span>|<span data-ttu-id="2568a-145">Endereço de email usado para configurar o serviço a serviço do Exchange Connector.</span><span class="sxs-lookup"><span data-stu-id="2568a-145">Email address used to configure the Service To Service Exchange Connector.</span></span>|
-|<span data-ttu-id="2568a-146">serverName</span><span class="sxs-lookup"><span data-stu-id="2568a-146">serverName</span></span>|<span data-ttu-id="2568a-147">String</span><span class="sxs-lookup"><span data-stu-id="2568a-147">String</span></span>|<span data-ttu-id="2568a-148">O nome do servidor Exchange.</span><span class="sxs-lookup"><span data-stu-id="2568a-148">The name of the Exchange server.</span></span>|
-|<span data-ttu-id="2568a-149">connectorServerName</span><span class="sxs-lookup"><span data-stu-id="2568a-149">connectorServerName</span></span>|<span data-ttu-id="2568a-150">String</span><span class="sxs-lookup"><span data-stu-id="2568a-150">String</span></span>|<span data-ttu-id="2568a-151">O nome do servidor que hospeda o Exchange Connector.</span><span class="sxs-lookup"><span data-stu-id="2568a-151">The name of the server hosting the Exchange Connector.</span></span>|
-|<span data-ttu-id="2568a-152">exchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="2568a-152">exchangeConnectorType</span></span>|[<span data-ttu-id="2568a-153">deviceManagementExchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="2568a-153">deviceManagementExchangeConnectorType</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|<span data-ttu-id="2568a-154">O tipo de Exchange Connector configurado.</span><span class="sxs-lookup"><span data-stu-id="2568a-154">The type of Exchange Connector Configured.</span></span> <span data-ttu-id="2568a-155">Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.</span><span class="sxs-lookup"><span data-stu-id="2568a-155">Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.</span></span>|
-|<span data-ttu-id="2568a-156">versão</span><span class="sxs-lookup"><span data-stu-id="2568a-156">version</span></span>|<span data-ttu-id="2568a-157">String</span><span class="sxs-lookup"><span data-stu-id="2568a-157">String</span></span>|<span data-ttu-id="2568a-158">A versão do ExchangeConnectorAgent</span><span class="sxs-lookup"><span data-stu-id="2568a-158">The version of the ExchangeConnectorAgent</span></span>|
-|<span data-ttu-id="2568a-159">exchangeAlias</span><span class="sxs-lookup"><span data-stu-id="2568a-159">exchangeAlias</span></span>|<span data-ttu-id="2568a-160">String</span><span class="sxs-lookup"><span data-stu-id="2568a-160">String</span></span>|<span data-ttu-id="2568a-161">Um alias atribuído a um servidor Exchange</span><span class="sxs-lookup"><span data-stu-id="2568a-161">An alias assigned to the Exchange server</span></span>|
-|<span data-ttu-id="2568a-162">exchangeOrganization</span><span class="sxs-lookup"><span data-stu-id="2568a-162">exchangeOrganization</span></span>|<span data-ttu-id="2568a-163">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="2568a-163">String</span></span>|<span data-ttu-id="2568a-164">Organização do Exchange no servidor Exchange</span><span class="sxs-lookup"><span data-stu-id="2568a-164">Exchange Organization to the Exchange server</span></span>|
+|<span data-ttu-id="9994a-132">id</span><span class="sxs-lookup"><span data-stu-id="9994a-132">id</span></span>|<span data-ttu-id="9994a-133">String</span><span class="sxs-lookup"><span data-stu-id="9994a-133">String</span></span>|<span data-ttu-id="9994a-134">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="9994a-134">Not yet documented</span></span>|
+|<span data-ttu-id="9994a-135">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="9994a-135">lastSyncDateTime</span></span>|<span data-ttu-id="9994a-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9994a-136">DateTimeOffset</span></span>|<span data-ttu-id="9994a-137">Hora da última sincronização do Exchange Connector</span><span class="sxs-lookup"><span data-stu-id="9994a-137">Last sync time for the Exchange Connector</span></span>|
+|<span data-ttu-id="9994a-138">status</span><span class="sxs-lookup"><span data-stu-id="9994a-138">status</span></span>|[<span data-ttu-id="9994a-139">deviceManagementExchangeConnectorStatus</span><span class="sxs-lookup"><span data-stu-id="9994a-139">deviceManagementExchangeConnectorStatus</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|<span data-ttu-id="9994a-140">Status do Exchange Connector.</span><span class="sxs-lookup"><span data-stu-id="9994a-140">Exchange Connector Status.</span></span> <span data-ttu-id="9994a-141">Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.</span><span class="sxs-lookup"><span data-stu-id="9994a-141">Possible values are: `none`, `connectionPending`, `connected`, `disconnected`.</span></span>|
+|<span data-ttu-id="9994a-142">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="9994a-142">primarySmtpAddress</span></span>|<span data-ttu-id="9994a-143">String</span><span class="sxs-lookup"><span data-stu-id="9994a-143">String</span></span>|<span data-ttu-id="9994a-144">Endereço de email usado para configurar o serviço a serviço do Exchange Connector.</span><span class="sxs-lookup"><span data-stu-id="9994a-144">Email address used to configure the Service To Service Exchange Connector.</span></span>|
+|<span data-ttu-id="9994a-145">serverName</span><span class="sxs-lookup"><span data-stu-id="9994a-145">serverName</span></span>|<span data-ttu-id="9994a-146">String</span><span class="sxs-lookup"><span data-stu-id="9994a-146">String</span></span>|<span data-ttu-id="9994a-147">O nome do servidor Exchange.</span><span class="sxs-lookup"><span data-stu-id="9994a-147">The name of the Exchange server.</span></span>|
+|<span data-ttu-id="9994a-148">connectorServerName</span><span class="sxs-lookup"><span data-stu-id="9994a-148">connectorServerName</span></span>|<span data-ttu-id="9994a-149">String</span><span class="sxs-lookup"><span data-stu-id="9994a-149">String</span></span>|<span data-ttu-id="9994a-150">O nome do servidor que hospeda o Exchange Connector.</span><span class="sxs-lookup"><span data-stu-id="9994a-150">The name of the server hosting the Exchange Connector.</span></span>|
+|<span data-ttu-id="9994a-151">exchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="9994a-151">exchangeConnectorType</span></span>|[<span data-ttu-id="9994a-152">deviceManagementExchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="9994a-152">deviceManagementExchangeConnectorType</span></span>](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|<span data-ttu-id="9994a-153">O tipo de Exchange Connector configurado.</span><span class="sxs-lookup"><span data-stu-id="9994a-153">The type of Exchange Connector Configured.</span></span> <span data-ttu-id="9994a-154">Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.</span><span class="sxs-lookup"><span data-stu-id="9994a-154">Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`.</span></span>|
+|<span data-ttu-id="9994a-155">versão</span><span class="sxs-lookup"><span data-stu-id="9994a-155">version</span></span>|<span data-ttu-id="9994a-156">String</span><span class="sxs-lookup"><span data-stu-id="9994a-156">String</span></span>|<span data-ttu-id="9994a-157">A versão do ExchangeConnectorAgent</span><span class="sxs-lookup"><span data-stu-id="9994a-157">The version of the ExchangeConnectorAgent</span></span>|
+|<span data-ttu-id="9994a-158">exchangeAlias</span><span class="sxs-lookup"><span data-stu-id="9994a-158">exchangeAlias</span></span>|<span data-ttu-id="9994a-159">String</span><span class="sxs-lookup"><span data-stu-id="9994a-159">String</span></span>|<span data-ttu-id="9994a-160">Um alias atribuído a um servidor Exchange</span><span class="sxs-lookup"><span data-stu-id="9994a-160">An alias assigned to the Exchange server</span></span>|
+|<span data-ttu-id="9994a-161">exchangeOrganization</span><span class="sxs-lookup"><span data-stu-id="9994a-161">exchangeOrganization</span></span>|<span data-ttu-id="9994a-162">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9994a-162">String</span></span>|<span data-ttu-id="9994a-163">Organização do Exchange no servidor Exchange</span><span class="sxs-lookup"><span data-stu-id="9994a-163">Exchange Organization to the Exchange server</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2568a-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="2568a-165">Response</span></span>
-<span data-ttu-id="2568a-166">Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2568a-166">If successful, this method returns a `201 Created` response code and a [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9994a-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="9994a-164">Response</span></span>
+<span data-ttu-id="9994a-165">Se bem-sucedido, esse método retornará um código de resposta `201 Created` e um objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9994a-165">If successful, this method returns a `201 Created` response code and a [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2568a-167">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2568a-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9994a-166">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9994a-166">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2568a-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2568a-168">Request</span></span>
-<span data-ttu-id="2568a-169">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2568a-169">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="9994a-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9994a-167">Request</span></span>
+<span data-ttu-id="9994a-168">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9994a-168">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/exchangeConnectors
 Content-type: application/json
@@ -92,8 +90,8 @@ Content-length: 490
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2568a-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="2568a-170">Response</span></span>
-<span data-ttu-id="2568a-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2568a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="9994a-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="9994a-169">Response</span></span>
+<span data-ttu-id="9994a-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9994a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -113,7 +111,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
 
 
 

@@ -1,37 +1,35 @@
 ---
 title: Atualizar groupPolicyPresentationValueList
 description: Atualiza as propriedades de um objeto groupPolicyPresentationValueList.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06c170b3d166ae77057b11f4b87130838c1c5e15
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 920156793bfaf6e43047fc971ef04dbb3f1de506
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464222"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803908"
 ---
-# <a name="update-grouppolicypresentationvaluelist"></a><span data-ttu-id="aac33-103">Atualizar groupPolicyPresentationValueList</span><span class="sxs-lookup"><span data-stu-id="aac33-103">Update groupPolicyPresentationValueList</span></span>
+# <a name="update-grouppolicypresentationvaluelist"></a><span data-ttu-id="e8e38-103">Atualizar groupPolicyPresentationValueList</span><span class="sxs-lookup"><span data-stu-id="e8e38-103">Update groupPolicyPresentationValueList</span></span>
 
-<span data-ttu-id="aac33-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="aac33-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="e8e38-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e8e38-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="aac33-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="aac33-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e8e38-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e8e38-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="aac33-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aac33-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="e8e38-106">Atualiza as propriedades de um objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .</span><span class="sxs-lookup"><span data-stu-id="e8e38-106">Update the properties of a [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) object.</span></span>
 
-<span data-ttu-id="aac33-107">Atualiza as propriedades de um objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .</span><span class="sxs-lookup"><span data-stu-id="aac33-107">Update the properties of a [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e8e38-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e8e38-107">Prerequisites</span></span>
+<span data-ttu-id="e8e38-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8e38-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="aac33-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="aac33-108">Prerequisites</span></span>
-<span data-ttu-id="aac33-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aac33-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="aac33-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aac33-111">Permission type</span></span>|<span data-ttu-id="aac33-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="aac33-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e8e38-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e8e38-110">Permission type</span></span>|<span data-ttu-id="e8e38-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e8e38-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="aac33-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aac33-113">Delegated (work or school account)</span></span>|<span data-ttu-id="aac33-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aac33-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="aac33-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aac33-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="aac33-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aac33-116">Not supported.</span></span>|
-|<span data-ttu-id="aac33-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="aac33-117">Application</span></span>|<span data-ttu-id="aac33-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aac33-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="e8e38-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e8e38-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e8e38-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8e38-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="e8e38-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e8e38-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e8e38-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e8e38-115">Not supported.</span></span>|
+|<span data-ttu-id="e8e38-116">Application</span><span class="sxs-lookup"><span data-stu-id="e8e38-116">Application</span></span>|<span data-ttu-id="e8e38-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8e38-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="aac33-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aac33-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e8e38-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e8e38-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +38,33 @@ ms.locfileid: "42464222"
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="aac33-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="aac33-120">Request headers</span></span>
-|<span data-ttu-id="aac33-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="aac33-121">Header</span></span>|<span data-ttu-id="aac33-122">Valor</span><span class="sxs-lookup"><span data-stu-id="aac33-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e8e38-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e8e38-119">Request headers</span></span>
+|<span data-ttu-id="e8e38-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e8e38-120">Header</span></span>|<span data-ttu-id="e8e38-121">Valor</span><span class="sxs-lookup"><span data-stu-id="e8e38-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="aac33-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="aac33-123">Authorization</span></span>|<span data-ttu-id="aac33-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aac33-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="aac33-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="aac33-125">Accept</span></span>|<span data-ttu-id="aac33-126">application/json</span><span class="sxs-lookup"><span data-stu-id="aac33-126">application/json</span></span>|
+|<span data-ttu-id="e8e38-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e8e38-122">Authorization</span></span>|<span data-ttu-id="e8e38-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e8e38-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e8e38-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e8e38-124">Accept</span></span>|<span data-ttu-id="e8e38-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e8e38-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="aac33-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="aac33-127">Request body</span></span>
-<span data-ttu-id="aac33-128">No corpo da solicitação, forneça uma representação JSON do objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .</span><span class="sxs-lookup"><span data-stu-id="aac33-128">In the request body, supply a JSON representation for the [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e8e38-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e8e38-126">Request body</span></span>
+<span data-ttu-id="e8e38-127">No corpo da solicitação, forneça uma representação JSON do objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .</span><span class="sxs-lookup"><span data-stu-id="e8e38-127">In the request body, supply a JSON representation for the [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) object.</span></span>
 
-<span data-ttu-id="aac33-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md).</span><span class="sxs-lookup"><span data-stu-id="aac33-129">The following table shows the properties that are required when you create the [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md).</span></span>
+<span data-ttu-id="e8e38-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md).</span><span class="sxs-lookup"><span data-stu-id="e8e38-128">The following table shows the properties that are required when you create the [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md).</span></span>
 
-|<span data-ttu-id="aac33-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aac33-130">Property</span></span>|<span data-ttu-id="aac33-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="aac33-131">Type</span></span>|<span data-ttu-id="aac33-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="aac33-132">Description</span></span>|
+|<span data-ttu-id="e8e38-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e8e38-129">Property</span></span>|<span data-ttu-id="e8e38-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="e8e38-130">Type</span></span>|<span data-ttu-id="e8e38-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e8e38-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="aac33-133">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="aac33-133">lastModifiedDateTime</span></span>|<span data-ttu-id="aac33-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aac33-134">DateTimeOffset</span></span>|<span data-ttu-id="aac33-135">A data e a hora em que o objeto foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="aac33-135">The date and time the object was last modified.</span></span> <span data-ttu-id="aac33-136">Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="aac33-136">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
-|<span data-ttu-id="aac33-137">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="aac33-137">createdDateTime</span></span>|<span data-ttu-id="aac33-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aac33-138">DateTimeOffset</span></span>|<span data-ttu-id="aac33-139">A data e a hora em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="aac33-139">The date and time the object was created.</span></span> <span data-ttu-id="aac33-140">Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="aac33-140">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
-|<span data-ttu-id="aac33-141">id</span><span class="sxs-lookup"><span data-stu-id="aac33-141">id</span></span>|<span data-ttu-id="aac33-142">String</span><span class="sxs-lookup"><span data-stu-id="aac33-142">String</span></span>|<span data-ttu-id="aac33-143">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="aac33-143">Key of the entity.</span></span> <span data-ttu-id="aac33-144">Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="aac33-144">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
-|<span data-ttu-id="aac33-145">values</span><span class="sxs-lookup"><span data-stu-id="aac33-145">values</span></span>|<span data-ttu-id="aac33-146">Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="aac33-146">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="aac33-147">Uma lista de pares para a apresentação associada.</span><span class="sxs-lookup"><span data-stu-id="aac33-147">A list of pairs for the associated presentation.</span></span>|
+|<span data-ttu-id="e8e38-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="e8e38-132">lastModifiedDateTime</span></span>|<span data-ttu-id="e8e38-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e8e38-133">DateTimeOffset</span></span>|<span data-ttu-id="e8e38-134">A data e a hora em que o objeto foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="e8e38-134">The date and time the object was last modified.</span></span> <span data-ttu-id="e8e38-135">Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="e8e38-135">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="e8e38-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="e8e38-136">createdDateTime</span></span>|<span data-ttu-id="e8e38-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e8e38-137">DateTimeOffset</span></span>|<span data-ttu-id="e8e38-138">A data e a hora em que o objeto foi criado.</span><span class="sxs-lookup"><span data-stu-id="e8e38-138">The date and time the object was created.</span></span> <span data-ttu-id="e8e38-139">Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="e8e38-139">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="e8e38-140">id</span><span class="sxs-lookup"><span data-stu-id="e8e38-140">id</span></span>|<span data-ttu-id="e8e38-141">String</span><span class="sxs-lookup"><span data-stu-id="e8e38-141">String</span></span>|<span data-ttu-id="e8e38-142">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="e8e38-142">Key of the entity.</span></span> <span data-ttu-id="e8e38-143">Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="e8e38-143">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="e8e38-144">values</span><span class="sxs-lookup"><span data-stu-id="e8e38-144">values</span></span>|<span data-ttu-id="e8e38-145">Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="e8e38-145">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="e8e38-146">Uma lista de pares para a apresentação associada.</span><span class="sxs-lookup"><span data-stu-id="e8e38-146">A list of pairs for the associated presentation.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="aac33-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="aac33-148">Response</span></span>
-<span data-ttu-id="aac33-149">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="aac33-149">If successful, this method returns a `200 OK` response code and an updated [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e8e38-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8e38-147">Response</span></span>
+<span data-ttu-id="e8e38-148">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e8e38-148">If successful, this method returns a `200 OK` response code and an updated [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aac33-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aac33-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e8e38-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e8e38-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="aac33-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="aac33-151">Request</span></span>
-<span data-ttu-id="aac33-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="aac33-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e8e38-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e8e38-150">Request</span></span>
+<span data-ttu-id="e8e38-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e8e38-151">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}
 Content-type: application/json
@@ -84,8 +82,8 @@ Content-length: 222
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="aac33-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="aac33-153">Response</span></span>
-<span data-ttu-id="aac33-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="aac33-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e8e38-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="e8e38-152">Response</span></span>
+<span data-ttu-id="e8e38-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e8e38-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -105,7 +103,6 @@ Content-Length: 394
   ]
 }
 ```
-
 
 
 
