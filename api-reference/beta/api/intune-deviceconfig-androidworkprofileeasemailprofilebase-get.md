@@ -1,20 +1,18 @@
 ---
 title: Obter androidWorkProfileEasEmailProfileBase
 description: Leia as propriedades e as relações do objeto androidWorkProfileEasEmailProfileBase.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31ce080f972d07708606cfed53c2ce665f7af57c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2686f069ad9597c2d47f050add31b6d6f3159e23
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449569"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758534"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>Obter androidWorkProfileEasEmailProfileBase
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -115,7 +113,6 @@ Content-Length: 1533
   }
 }
 ```
-
 
 
 

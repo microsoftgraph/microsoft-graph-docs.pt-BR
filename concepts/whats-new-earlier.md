@@ -3,14 +3,31 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3d22924a867e55459b57c63e6563bd66e79f9c75
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 76c967e9674f9d3fbb0dd92db179aef4843e3f52
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865855"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729035"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="january-2020-new-and-generally-available"></a>Janeiro de 2020: Novo e disponível para o público geral
+
+### <a name="security"></a>Segurança
+Como parte do gerenciamento de alerta de cliente, use o método de [alerta de atualização](/graph/api/alert-update?view=graph-rest-1.0) e atualize o campo **comentários** como `Closed in IPC` ou `Closed in MCAS`.
+
+### <a name="teamwork"></a>Trabalho em equipe
+Use a propriedade de navegação **primaryChannel** de uma [equipe](/graph/api/resources/team?view=graph-rest-1.0) para acessar o canal padrão, **Geral**.
+
+### <a name="users"></a>Usuários
+Use a propriedade **identities** para acessar uma ou mais identidades que um [usuário](/graph/api/resources/user?view=graph-rest-1.0) pode usar para entrar em uma conta de usuário do Azure AD. As identidades podem ser fornecidas pela Microsoft, por organizações ou por provedores de identidade social, como Facebook, Google ou Microsoft. Essa propriedade permite que o usuário entre na conta de usuário com uma dessas identidades.
+
+## <a name="january-2020-new-in-preview"></a>Janeiro de 2020: novidades na versão prévia
+
+### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+Atualizações de [janeiro](changelog.md#january-2020) do Intune.
+
 
 ## <a name="december-2019-new-and-generally-available"></a>Dezembro de 2019: Novo e disponível para o público geral
 

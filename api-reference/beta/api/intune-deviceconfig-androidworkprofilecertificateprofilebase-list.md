@@ -1,20 +1,18 @@
 ---
 title: Listar androidWorkProfileCertificateProfileBases
 description: Listar Propriedades e relações dos objetos Entidadeandroidworkprofilecertificateprofilebase.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be2f2bd73dcaae9c23f2f3bfa4901199677142c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8d29d1445c3ef1e97bc8c04e681ac7fbd49afde
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449597"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758611"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>Listar androidWorkProfileCertificateProfileBases
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -119,7 +117,6 @@ Content-Length: 1836
   ]
 }
 ```
-
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Obter Propriedadesdeviceconfigurationconflictsummary
 description: Leia as propriedades e as relações do objeto Propriedadesdeviceconfigurationconflictsummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d5d442615e83af5b0f896d6814b4d299c2ed8e8
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2b4c3b2053627941b7f13bde77c3efe40383968f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949438"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42754353"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Obter Propriedadesdeviceconfigurationconflictsummary
 
@@ -86,7 +86,6 @@ Content-Length: 455
   }
 }
 ```
-
 
 
 
