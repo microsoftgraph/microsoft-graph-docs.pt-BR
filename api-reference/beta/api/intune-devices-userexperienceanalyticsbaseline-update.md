@@ -1,37 +1,35 @@
 ---
 title: Atualizar userExperienceAnalyticsBaseline
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsBaseline.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14eaee6c9995f92a6396819560c02a5a8e64baee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99dee6b79626191aeca6ad1b91b4a9be2268ed64
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468499"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773116"
 ---
-# <a name="update-userexperienceanalyticsbaseline"></a><span data-ttu-id="0e87a-103">Atualizar userExperienceAnalyticsBaseline</span><span class="sxs-lookup"><span data-stu-id="0e87a-103">Update userExperienceAnalyticsBaseline</span></span>
+# <a name="update-userexperienceanalyticsbaseline"></a><span data-ttu-id="e14ee-103">Atualizar userExperienceAnalyticsBaseline</span><span class="sxs-lookup"><span data-stu-id="e14ee-103">Update userExperienceAnalyticsBaseline</span></span>
 
-<span data-ttu-id="0e87a-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0e87a-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="e14ee-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e14ee-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0e87a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="0e87a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e14ee-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e14ee-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="0e87a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="0e87a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="e14ee-106">Atualiza as propriedades de um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) .</span><span class="sxs-lookup"><span data-stu-id="e14ee-106">Update the properties of a [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) object.</span></span>
 
-<span data-ttu-id="0e87a-107">Atualiza as propriedades de um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) .</span><span class="sxs-lookup"><span data-stu-id="0e87a-107">Update the properties of a [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e14ee-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e14ee-107">Prerequisites</span></span>
+<span data-ttu-id="e14ee-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e14ee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0e87a-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="0e87a-108">Prerequisites</span></span>
-<span data-ttu-id="0e87a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0e87a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="0e87a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0e87a-111">Permission type</span></span>|<span data-ttu-id="0e87a-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="0e87a-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e14ee-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e14ee-110">Permission type</span></span>|<span data-ttu-id="e14ee-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e14ee-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0e87a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0e87a-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0e87a-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0e87a-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="0e87a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0e87a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0e87a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0e87a-116">Not supported.</span></span>|
-|<span data-ttu-id="0e87a-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0e87a-117">Application</span></span>|<span data-ttu-id="0e87a-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0e87a-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="e14ee-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e14ee-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e14ee-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e14ee-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="e14ee-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e14ee-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e14ee-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e14ee-115">Not supported.</span></span>|
+|<span data-ttu-id="e14ee-116">Application</span><span class="sxs-lookup"><span data-stu-id="e14ee-116">Application</span></span>|<span data-ttu-id="e14ee-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e14ee-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0e87a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0e87a-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e14ee-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e14ee-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,34 +38,34 @@ ms.locfileid: "42468499"
 PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0e87a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0e87a-120">Request headers</span></span>
-|<span data-ttu-id="0e87a-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0e87a-121">Header</span></span>|<span data-ttu-id="0e87a-122">Valor</span><span class="sxs-lookup"><span data-stu-id="0e87a-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e14ee-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e14ee-119">Request headers</span></span>
+|<span data-ttu-id="e14ee-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e14ee-120">Header</span></span>|<span data-ttu-id="e14ee-121">Valor</span><span class="sxs-lookup"><span data-stu-id="e14ee-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0e87a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="0e87a-123">Authorization</span></span>|<span data-ttu-id="0e87a-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0e87a-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0e87a-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="0e87a-125">Accept</span></span>|<span data-ttu-id="0e87a-126">application/json</span><span class="sxs-lookup"><span data-stu-id="0e87a-126">application/json</span></span>|
+|<span data-ttu-id="e14ee-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e14ee-122">Authorization</span></span>|<span data-ttu-id="e14ee-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e14ee-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e14ee-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e14ee-124">Accept</span></span>|<span data-ttu-id="e14ee-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e14ee-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0e87a-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0e87a-127">Request body</span></span>
-<span data-ttu-id="0e87a-128">No corpo da solicitação, forneça uma representação JSON do objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) .</span><span class="sxs-lookup"><span data-stu-id="0e87a-128">In the request body, supply a JSON representation for the [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e14ee-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e14ee-126">Request body</span></span>
+<span data-ttu-id="e14ee-127">No corpo da solicitação, forneça uma representação JSON do objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) .</span><span class="sxs-lookup"><span data-stu-id="e14ee-127">In the request body, supply a JSON representation for the [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) object.</span></span>
 
-<span data-ttu-id="0e87a-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md).</span><span class="sxs-lookup"><span data-stu-id="0e87a-129">The following table shows the properties that are required when you create the [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md).</span></span>
+<span data-ttu-id="e14ee-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md).</span><span class="sxs-lookup"><span data-stu-id="e14ee-128">The following table shows the properties that are required when you create the [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md).</span></span>
 
-|<span data-ttu-id="0e87a-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0e87a-130">Property</span></span>|<span data-ttu-id="0e87a-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="0e87a-131">Type</span></span>|<span data-ttu-id="0e87a-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="0e87a-132">Description</span></span>|
+|<span data-ttu-id="e14ee-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e14ee-129">Property</span></span>|<span data-ttu-id="e14ee-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="e14ee-130">Type</span></span>|<span data-ttu-id="e14ee-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e14ee-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0e87a-133">id</span><span class="sxs-lookup"><span data-stu-id="0e87a-133">id</span></span>|<span data-ttu-id="0e87a-134">String</span><span class="sxs-lookup"><span data-stu-id="0e87a-134">String</span></span>|<span data-ttu-id="0e87a-135">O identificador exclusivo da linha de base da análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="0e87a-135">The unique identifier of the user experience analytics baseline.</span></span>|
-|<span data-ttu-id="0e87a-136">displayName</span><span class="sxs-lookup"><span data-stu-id="0e87a-136">displayName</span></span>|<span data-ttu-id="0e87a-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="0e87a-137">String</span></span>|<span data-ttu-id="0e87a-138">O nome da linha de base da análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="0e87a-138">The name of the user experience analytics baseline.</span></span>|
-|<span data-ttu-id="0e87a-139">overallScore</span><span class="sxs-lookup"><span data-stu-id="0e87a-139">overallScore</span></span>|<span data-ttu-id="0e87a-140">Int32</span><span class="sxs-lookup"><span data-stu-id="0e87a-140">Int32</span></span>|<span data-ttu-id="0e87a-141">A pontuação geral da linha de base da análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="0e87a-141">The overall score of the user experience analytics baseline.</span></span>|
-|<span data-ttu-id="0e87a-142">isBuiltIn</span><span class="sxs-lookup"><span data-stu-id="0e87a-142">isBuiltIn</span></span>|<span data-ttu-id="0e87a-143">Booliano</span><span class="sxs-lookup"><span data-stu-id="0e87a-143">Boolean</span></span>|<span data-ttu-id="0e87a-144">Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.</span><span class="sxs-lookup"><span data-stu-id="0e87a-144">Signifies if the current baseline is the commercial median baseline or a custom baseline.</span></span>|
-|<span data-ttu-id="0e87a-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="0e87a-145">createdDateTime</span></span>|<span data-ttu-id="0e87a-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0e87a-146">DateTimeOffset</span></span>|<span data-ttu-id="0e87a-147">A data em que a linha de base personalizada foi criada.</span><span class="sxs-lookup"><span data-stu-id="0e87a-147">The date the custom baseline was created.</span></span>|
+|<span data-ttu-id="e14ee-132">id</span><span class="sxs-lookup"><span data-stu-id="e14ee-132">id</span></span>|<span data-ttu-id="e14ee-133">String</span><span class="sxs-lookup"><span data-stu-id="e14ee-133">String</span></span>|<span data-ttu-id="e14ee-134">O identificador exclusivo da linha de base da análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="e14ee-134">The unique identifier of the user experience analytics baseline.</span></span>|
+|<span data-ttu-id="e14ee-135">displayName</span><span class="sxs-lookup"><span data-stu-id="e14ee-135">displayName</span></span>|<span data-ttu-id="e14ee-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e14ee-136">String</span></span>|<span data-ttu-id="e14ee-137">O nome da linha de base da análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="e14ee-137">The name of the user experience analytics baseline.</span></span>|
+|<span data-ttu-id="e14ee-138">overallScore</span><span class="sxs-lookup"><span data-stu-id="e14ee-138">overallScore</span></span>|<span data-ttu-id="e14ee-139">Int32</span><span class="sxs-lookup"><span data-stu-id="e14ee-139">Int32</span></span>|<span data-ttu-id="e14ee-140">A pontuação geral da linha de base da análise da experiência do usuário.</span><span class="sxs-lookup"><span data-stu-id="e14ee-140">The overall score of the user experience analytics baseline.</span></span>|
+|<span data-ttu-id="e14ee-141">isBuiltIn</span><span class="sxs-lookup"><span data-stu-id="e14ee-141">isBuiltIn</span></span>|<span data-ttu-id="e14ee-142">Booliano</span><span class="sxs-lookup"><span data-stu-id="e14ee-142">Boolean</span></span>|<span data-ttu-id="e14ee-143">Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.</span><span class="sxs-lookup"><span data-stu-id="e14ee-143">Signifies if the current baseline is the commercial median baseline or a custom baseline.</span></span>|
+|<span data-ttu-id="e14ee-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="e14ee-144">createdDateTime</span></span>|<span data-ttu-id="e14ee-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e14ee-145">DateTimeOffset</span></span>|<span data-ttu-id="e14ee-146">A data em que a linha de base personalizada foi criada.</span><span class="sxs-lookup"><span data-stu-id="e14ee-146">The date the custom baseline was created.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="0e87a-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e87a-148">Response</span></span>
-<span data-ttu-id="0e87a-149">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0e87a-149">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e14ee-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="e14ee-147">Response</span></span>
+<span data-ttu-id="e14ee-148">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e14ee-148">If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0e87a-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0e87a-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e14ee-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e14ee-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0e87a-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0e87a-151">Request</span></span>
-<span data-ttu-id="0e87a-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0e87a-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e14ee-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e14ee-150">Request</span></span>
+<span data-ttu-id="e14ee-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e14ee-151">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}
 Content-type: application/json
@@ -81,8 +79,8 @@ Content-length: 158
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0e87a-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e87a-153">Response</span></span>
-<span data-ttu-id="0e87a-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0e87a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e14ee-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="e14ee-152">Response</span></span>
+<span data-ttu-id="e14ee-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e14ee-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,7 +95,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 
