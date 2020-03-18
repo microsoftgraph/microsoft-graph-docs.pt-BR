@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aad8574b2a8ef02fce7af1ab7c23cd2ab8018f16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1020d31fa1889efd7f144fb105ee6cfa473fb002
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532689"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42763078"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Tipo de recurso termsAndConditionsAcceptanceStatus
 
@@ -36,8 +36,9 @@ Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitaç�
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
+|userPrincipalName|String|O userPrincipalName do usuário que aceitou o termo.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Link de navegação para os termos e condições atribuídos.|
@@ -56,7 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "userDisplayName": "String",
   "acceptedVersion": 1024,
-  "acceptedDateTime": "String (timestamp)"
+  "acceptedDateTime": "String (timestamp)",
+  "userPrincipalName": "String"
 }
 ```
 

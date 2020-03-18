@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
 description: Item de histórico contido no evento de solução de problemas de aplicativo móvel.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f8a10002d39f09c801c431332f709c93a2099c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a322c09c5c9dc4acce593846238e95c49d0fde6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523314"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764457"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso mobileAppIntentAndState
 description: MobileApp tentativa e estado de instalação para um determinado dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e4b31380a0c1564b86eb985da5bf778c66d3377
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6235aac4c40e452f7ea2a0076ee38687059d97e6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523335"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764723"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>tipo de recurso mobileAppIntentAndState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
