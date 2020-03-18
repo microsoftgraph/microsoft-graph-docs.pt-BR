@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração mobileAppIntent
 description: Indica o status do aplicativo móvel no dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a530c7b67d4bde5829f11471434341d365d3275
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7aa8da2d0cb32f641a050ae565568991b1b42ef4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523342"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765080"
 ---
 # <a name="mobileappintent-enum-type"></a>tipo de enumeração mobileAppIntent
-
-Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Indica o status do aplicativo móvel no dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|,0|Disponível|
-|Não disponível|1 |Não disponível|
-|requiredInstall|2 |Instalação necessária|
-|requiredUninstall|3 |Desinstalação necessária|
+|Não disponível|1|Não disponível|
+|requiredInstall|duas|Instalação necessária|
+|requiredUninstall|3D|Desinstalação necessária|
 |requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
 |impedir|6 |Excluir|

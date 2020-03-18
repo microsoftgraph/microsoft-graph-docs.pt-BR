@@ -1,20 +1,18 @@
 ---
 title: Criar deviceManagementIntentDeviceSettingStateSummary
 description: Criar um novo objeto deviceManagementIntentDeviceSettingStateSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d29d3596c19ddbeb661ee3986787c0337ab2e80e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c817cc0fd8a0d8f101a3ea911e1dc733370f5c99
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471061"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767278"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>Criar deviceManagementIntentDeviceSettingStateSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -107,7 +105,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

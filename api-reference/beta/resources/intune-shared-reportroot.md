@@ -2,19 +2,17 @@
 title: Tipo de recurso reportRoot
 description: O recurso que representa uma instância de um dispositivo ou relatório de solução de problemas, dependendo do contexto.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 739cdc4bd9b10f9d472cebd77c88ae796593a1f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0e7fc15987c7d9e13ecc1f2cd44aa3869556b2f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523573"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767964"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

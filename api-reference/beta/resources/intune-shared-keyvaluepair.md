@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso keyValuePair
 description: Par chave-valor para armazenar configurações personalizadas
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b41f0b18b30945e12df21b780afd7fcf1cade73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd97b7cf0729ae9e1cad1c8440ec9727cc321a67
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527389"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769126"
 ---
 # <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

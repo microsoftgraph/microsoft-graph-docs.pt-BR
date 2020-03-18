@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração policyPlatformType
 description: Tipos de plataforma Suppoorted para políticas.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c0ee815ba97dcc2ba8cea23cb6c0a922a2fb495
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa1301ee1a30b965bdff6f8ffec6b9c6c0f6d283
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523594"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768153"
 ---
 # <a name="policyplatformtype-enum-type"></a>tipo de enumeração policyPlatformType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipos de plataforma Suppoorted para políticas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Android|,0|Android.|
-|androidForWork|1 |AndroidForWork.|
-|iOS|2 |emiti.|
-|macOS|3 |MacOS.|
+|androidForWork|1|AndroidForWork.|
+|iOS|duas|emiti.|
+|macOS|3D|MacOS.|
 |windowsPhone81|4 |Windowsphonee 8,1.|
 |windows81AndLater|5 |Windows 8,1 e posterior|
 |windows10AndLater|6 |Windows 10 e posterior.|

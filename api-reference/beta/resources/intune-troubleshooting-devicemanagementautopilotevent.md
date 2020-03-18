@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementAutopilotEvent
 description: Representa um evento de fluxo do piloto automático.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 361506e7fb04aaa06eac708ab3a13b1f08f6e163
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a70f87915e5ec886d33031f7c19a6417fafa7794
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523391"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765983"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>tipo de recurso deviceManagementAutopilotEvent
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -35,6 +33,7 @@ Representa um evento de fluxo do piloto automático.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O UUID do objeto.|
+|deviceId|String|ID de dispositivo associada ao objeto|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
 |deviceRegisteredDateTime|DateTimeOffset|Data de registro do dispositivo.|
 |enrollmentStartDateTime|DateTimeOffset|Data de início do registro do dispositivo.|
@@ -59,7 +58,9 @@ Representa um evento de fluxo do piloto automático.
 |enrollmentFailureDetails|String|Detalhes da falha de inscrição.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+|Relação|Tipo|Descrição|
+|:---|:---|:---|
+|policyStatusDetails|coleção [deviceManagementAutopilotPolicyStatusDetail](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)|Detalhes de status do aplicativo e da política para este dispositivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -73,6 +74,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "String (identifier)",
+  "deviceId": "String",
   "eventDateTime": "String (timestamp)",
   "deviceRegisteredDateTime": "String (timestamp)",
   "enrollmentStartDateTime": "String (timestamp)",

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsAutopilotDeploymentProfile
 description: Perfil de implantação do Windows AutoPilot
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbfc7f500c043b2755071790b867b9eaad1759cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 981cd4d9b1eb50982c56e59d146a876f4f52ce8f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523468"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766823"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfile
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -45,7 +43,7 @@ Perfil de implantação do Windows AutoPilot
 |deviceNameTemplate|String|O modelo usado para nomear o dispositivo de piloto automático. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|O tipo de dispositivo piloto automático ao qual esse perfil se aplica. Os valores possíveis são: `windowsPc` e `surfaceHub2`.|
 |enableWhiteGlove|Boolean|Habilite o Glove branco do piloto automático para o perfil.|
-|roleScopeTagIds|String collection|Marcas de escopo para o perfil.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo para o perfil.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

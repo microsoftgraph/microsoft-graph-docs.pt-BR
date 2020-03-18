@@ -1,20 +1,18 @@
 ---
 title: Criar deviceManagementStringSettingInstance
 description: Criar um novo objeto deviceManagementStringSettingInstance.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad8d8d333386e351dcd920cbb095c76d814827ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6d567de8a337de9fba3de32b5b8343ef383a314
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470571"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765479"
 ---
 # <a name="create-devicemanagementstringsettinginstance"></a>Criar deviceManagementStringSettingInstance
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -98,7 +96,6 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
-
 
 
 

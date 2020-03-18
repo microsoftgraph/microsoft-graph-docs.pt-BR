@@ -1,20 +1,18 @@
 ---
 title: Atualizar deviceHealthScriptRunSummary
 description: Atualiza as propriedades de um objeto deviceHealthScriptRunSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14a05cb7e2c8bb0df57fefedec6331d73e9846fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1f56c3f379db209ec1bef61a580e9d729ea5012
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469465"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768895"
 ---
 # <a name="update-devicehealthscriptrunsummary"></a>Atualizar deviceHealthScriptRunSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -116,7 +114,6 @@ Content-Length: 543
   "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

@@ -2,19 +2,17 @@
 title: Tipo de recurso report
 description: Descreve o recurso de relatório da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22bb8cd564c4ad27f3299d193f5cea6ad3cbdf75
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d321b5a2dadc4a459194a24224805f7443592532
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523580"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768006"
 ---
 # <a name="report-resource-type"></a>Tipo de recurso report
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

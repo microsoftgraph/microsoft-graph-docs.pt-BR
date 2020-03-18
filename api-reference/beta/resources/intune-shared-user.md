@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso de usuário
 description: Representa um objeto de usuário do Azure Active Directory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee24b3134c6d58224bd1fecad7c0b9e968707271
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1c5d18be286fae35acaa35bef37bd5c3757fbe3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523517"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767194"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -42,7 +40,7 @@ Representa um objeto de usuário do Azure Active Directory.
 |[função exportDeviceAndAppManagementData](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Ainda não documentado|
 |[função getEffectiveDeviceEnrollmentConfigurations](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|Coleção [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Ainda não documentado|
 |**Solução de Problemas**|
-|[função getManagedDevicesWithAppFailures](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|String collection|Recupera a lista de dispositivos com aplicativos com falha.|
+|[função getManagedDevicesWithAppFailures](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Coleção de cadeias de caracteres|Recupera a lista de dispositivos com aplicativos com falha.|
 
 
 ## <a name="properties"></a>Propriedades

@@ -1,20 +1,18 @@
 ---
 title: Atualizar deviceManagementIntentSettingCategory
 description: Atualiza as propriedades de um objeto deviceManagementIntentSettingCategory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c71de6855714e8c196e60b28c185bd025460d49f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 237c8e695fe27464672929256b5d80f36e43e5aa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470767"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766186"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>Atualizar deviceManagementIntentSettingCategory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -92,7 +90,6 @@ Content-Length: 199
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

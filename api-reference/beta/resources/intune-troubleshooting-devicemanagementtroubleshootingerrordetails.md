@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementTroubleshootingErrorDetails
 description: Objeto contendo informações detalhadas sobre o erro e sua correção.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fea29d21c34ab123ba5c573b2a19858cd3bf756
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d2d9fc5f7ca2764e91c18b2bf77c0042f5b65f9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523384"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765682"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>tipo de recurso deviceManagementTroubleshootingErrorDetails
-
-Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

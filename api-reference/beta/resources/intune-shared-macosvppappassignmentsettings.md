@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso macOsVppAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel do Mac VPP a um grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15db6cf48925767ab66ad98204a7283a72a294b9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1b4ecb5f2dbbca6d3f9fe8eebc3771347739e77
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527377"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769063"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>tipo de recurso macOsVppAppAssignmentSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

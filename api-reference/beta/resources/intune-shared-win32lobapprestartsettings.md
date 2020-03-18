@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso win32LobAppRestartSettings
 description: Contém propriedades que descrevem a coordenação de reinicialização após uma instalação de aplicativo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: abf2935fea6023682f5aa045e1c241fefef7f05a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66e5bbfe925dfc6ee023e06d58b70aa4ed680ee4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523482"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766907"
 ---
 # <a name="win32lobapprestartsettings-resource-type"></a>tipo de recurso win32LobAppRestartSettings
-
-Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

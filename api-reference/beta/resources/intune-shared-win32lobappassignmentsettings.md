@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso win32LobAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel de LOB do Win32 a um grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c56d236c48918592394dc143bc6f2c45fb80401
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 340dc21cce7b52ebc55c13488f7340c7b66f9e26
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523496"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767040"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>tipo de recurso win32LobAppAssignmentSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -31,6 +29,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |por|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|O status da notificação para esta atribuição de aplicativo. Os valores possíveis são: `showAll`, `showReboot`, `hideAll`.|
 |restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|As configurações de reinicialização a serem aplicadas para esta atribuição de aplicativo.|
 |installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|As configurações de tempo de instalação a serem aplicadas a esta atribuição de aplicativo.|
+|deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-apps-win32lobappdeliveryoptimizationpriority.md)|A prioridade de otimização de entrega para esta atribuição de aplicativo. Essa configuração não é suportada em ambientes de nuvem nacionais. Os valores possíveis são: `notConfigured`, `foreground`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -57,7 +56,8 @@ Veja a seguir uma representação JSON do recurso.
     "useLocalTime": true,
     "startDateTime": "String (timestamp)",
     "deadlineDateTime": "String (timestamp)"
-  }
+  },
+  "deliveryOptimizationPriority": "String"
 }
 ```
 
