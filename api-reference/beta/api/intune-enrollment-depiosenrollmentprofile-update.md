@@ -1,20 +1,18 @@
 ---
 title: Atualizar depIOSEnrollmentProfile
 description: Atualiza as propriedades de um objeto depIOSEnrollmentProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a79b2cc657639774b551262b1335c9c544f96e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6541fd87466d73b21311cca8c80137c3b2bef64d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467169"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813338"
 ---
 # <a name="update-depiosenrollmentprofile"></a>Atualizar depIOSEnrollmentProfile
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -236,7 +234,6 @@ Content-Length: 2073
   "welcomeScreenDisabled": true
 }
 ```
-
 
 
 

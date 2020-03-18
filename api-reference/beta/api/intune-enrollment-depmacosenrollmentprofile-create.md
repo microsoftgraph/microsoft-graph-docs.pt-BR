@@ -1,20 +1,18 @@
 ---
 title: Criar depMacOSEnrollmentProfile
 description: Criar um novo objeto depMacOSEnrollmentProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cff1ebdf53e2b32bcebaee146e413c32316023c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37a4e58641415b6f6d8a759439d084d96ae9c665
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467162"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813331"
 ---
 # <a name="create-depmacosenrollmentprofile"></a>Criar depMacOSEnrollmentProfile
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -182,7 +180,6 @@ Content-Length: 1309
   "chooseYourLockScreenDisabled": true
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Atualizar managementConditionStatement
 description: Atualiza as propriedades de um objeto managementConditionStatement.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7030fe6fcc821e8c20f3ec4c27809217322e7b0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d983404bc99ce8b5676aa653b8697d9c764b7ea5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465699"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804727"
 ---
 # <a name="update-managementconditionstatement"></a>Atualizar managementConditionStatement
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -115,7 +113,6 @@ Content-Length: 491
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Criar networkIPv4ConfigurationManagementCondition
 description: Criar um novo objeto networkIPv4ConfigurationManagementCondition.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25f2eea8eac23b3faba4e2fd6a208f3a86b74bc3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 999f23f4a2e1164a3861d344cad8b5d334842388
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465664"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804720"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>Criar networkIPv4ConfigurationManagementCondition
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,8 +63,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar networkI
 |ipV4Prefix|String|A sub-rede IPv4 à qual está conectada. por exemplo, 10.0.0.0/8|
 |ipV4Gateway|String|O endereço do gateway IPv4. por exemplo, 10.0.0.0|
 |ipV4DHCPServer|String|O endereço IPv4 do servidor DHCP para o adaptador.|
-|ipV4DNSServerList|String collection|Os servidores DNS IPv4 configurados para o adaptador.|
-|dnsSuffixList|String collection|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
+|ipV4DNSServerList|Coleção de cadeias de caracteres|Os servidores DNS IPv4 configurados para o adaptador.|
+|dnsSuffixList|Coleção de cadeias de caracteres|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
 
 
 
@@ -133,7 +131,6 @@ Content-Length: 697
   ]
 }
 ```
-
 
 
 

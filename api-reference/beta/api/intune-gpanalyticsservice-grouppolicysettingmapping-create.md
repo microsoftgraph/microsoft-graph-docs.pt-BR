@@ -1,20 +1,18 @@
 ---
 title: Criar groupPolicySettingMapping
 description: Criar um novo objeto groupPolicySettingMapping.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35c568fcaee401f249923e047d25d874a9dbc0eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cedc99c795c5aa647499bac49293464c3eeadece
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465447"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804601"
 ---
 # <a name="create-grouppolicysettingmapping"></a>Criar groupPolicySettingMapping
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |:---|:---|:---|
 |id|String|Ainda não documentado|
 |parentId|String|ID pai da configuração de política de grupo.|
-|childIdList|String collection|Lista de IDs filhos da configuração de política de grupo.|
+|childIdList|Coleção de cadeias de caracteres|Lista de IDs filhos da configuração de política de grupo.|
 |settingName|Cadeia de caracteres|O nome dessa configuração de política de grupo.|
 |settingValue|String|O valor dessa configuração de política de grupo.|
 |settingValueType|String|O tipo de valor dessa configuração de política de grupo.|
@@ -71,7 +69,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no MDM ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
-|intuneSettingUriList|String collection|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
+|intuneSettingUriList|Coleção de cadeias de caracteres|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
+|intuneSettingDefinitionId|String|A ID da definição da configuração do Intune|
 
 
 
@@ -85,7 +84,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings
 Content-type: application/json
-Content-length: 887
+Content-length: 957
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -110,7 +109,8 @@ Content-length: 887
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
 
@@ -119,7 +119,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 936
+Content-Length: 1006
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -145,10 +145,10 @@ Content-Length: 936
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
-
 
 
 

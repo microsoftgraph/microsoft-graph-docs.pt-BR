@@ -1,20 +1,18 @@
 ---
 title: Listar networkIPv6ConfigurationManagementConditions
 description: Listar Propriedades e relações dos objetos networkIPv6ConfigurationManagementCondition.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2767b6b5425037da145f870835eee62f97dfcd67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bed03e58925ac11885d7a4a4ce870957a86ba29
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465650"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804664"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>Listar networkIPv6ConfigurationManagementConditions
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -94,7 +92,6 @@ Content-Length: 760
   ]
 }
 ```
-
 
 
 

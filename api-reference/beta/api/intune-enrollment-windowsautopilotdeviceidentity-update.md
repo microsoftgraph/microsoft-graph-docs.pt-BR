@@ -1,20 +1,18 @@
 ---
 title: Atualizar windowsAutopilotDeviceIdentity
 description: Atualiza as propriedades de um objeto windowsAutopilotDeviceIdentity.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc26f3b3a8fda34f85fcc3b82743c98d06b4811e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d54568b2d45a4742f4dd36be5fdd700e7ea16f3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466224"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804986"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Atualizar windowsAutopilotDeviceIdentity
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -147,7 +145,6 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

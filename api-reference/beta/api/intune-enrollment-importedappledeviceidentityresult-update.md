@@ -1,20 +1,18 @@
 ---
 title: Atualizar importedAppleDeviceIdentityResult
 description: Atualiza as propriedades de um objeto importedAppleDeviceIdentityResult.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0963be570d436b142dd853989ba4bb36c8e1ded9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 41f88c799cf33a679c184f060e0ba66c1fdd8c44
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466679"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805239"
 ---
 # <a name="update-importedappledeviceidentityresult"></a>Atualizar importedAppleDeviceIdentityResult
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -121,7 +119,6 @@ Content-Length: 652
   "status": true
 }
 ```
-
 
 
 

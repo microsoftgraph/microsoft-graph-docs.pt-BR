@@ -1,20 +1,18 @@
 ---
 title: Listar importedWindowsAutopilotDeviceIdentities
 description: Lista as propriedades e relações de objetos importedWindowsAutopilotDeviceIdentity.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b5a654939f4cc42e94278fbd48f77f8e9967c61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d91093ce3ae8cc9e67aaeef65de039998ab715b8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466574"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805091"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>Listar importedWindowsAutopilotDeviceIdentities
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,7 +88,6 @@ Content-Length: 825
   ]
 }
 ```
-
 
 
 
