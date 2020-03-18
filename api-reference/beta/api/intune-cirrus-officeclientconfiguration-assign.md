@@ -2,19 +2,17 @@
 title: atribuir ação
 description: Substituir todos os grupos de destino de uma política.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04c7433d2ad35f84e54702b84fe5f9742105b786
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6268317cfc2df93ced328d2b8016276954fe6dac
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444480"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760309"
 ---
 # <a name="assign-action"></a>atribuir ação
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -102,7 +100,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

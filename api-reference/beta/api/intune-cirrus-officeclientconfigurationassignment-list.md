@@ -2,19 +2,17 @@
 title: Listar officeClientConfigurationAssignments
 description: Listar Propriedades e relações dos objetos officeClientConfigurationAssignment.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1558d9aa0360855d6f6c8ce03ff4c74786e04c14
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7995dcc882c486ce8cafff38a98966edac39f80f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444424"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760260"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Listar officeClientConfigurationAssignments
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|* * TODO: determinar escopos * *|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|* * TODO: determinar escopos * *|
+|Application|* * TODO: determinar escopos * *|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -79,7 +77,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

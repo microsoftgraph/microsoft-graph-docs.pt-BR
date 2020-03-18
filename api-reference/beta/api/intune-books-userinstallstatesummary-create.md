@@ -1,20 +1,18 @@
 ---
 title: Criar userInstallStateSummary
 description: Criar um novo objeto userInstallStateSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b07bbf8c6625ed48e89662eba2e253870f60a90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edb1f0b5c4a4d147ebf1b982e17aa16cd43a13e5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444501"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760344"
 ---
 # <a name="create-userinstallstatesummary"></a>Criar userInstallStateSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -98,7 +96,6 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

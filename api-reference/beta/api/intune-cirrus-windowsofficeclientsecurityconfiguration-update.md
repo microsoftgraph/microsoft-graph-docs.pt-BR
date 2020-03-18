@@ -2,15 +2,15 @@
 title: Atualizar windowsOfficeClientSecurityConfiguration
 description: Atualiza as propriedades de um objeto windowsOfficeClientSecurityConfiguration.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c91eeb282358f2993480f9457043d43ba892f7f
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 84c259e442d5d6941d613e75d3bac603452d939d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39929887"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760183"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>Atualizar windowsOfficeClientSecurityConfiguration
 
@@ -144,7 +144,6 @@ Content-Length: 1077
   ]
 }
 ```
-
 
 
 

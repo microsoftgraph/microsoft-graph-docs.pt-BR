@@ -1,20 +1,18 @@
 ---
 title: Listar androidDeviceOwnerScepCertificateProfiles
 description: Listar Propriedades e relações dos objetos androidDeviceOwnerScepCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 089ca800791f37216450b6f84abcceff52ec433c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99d8d198f03953a819f92b6a5d183591443c875f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444130"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759728"
 ---
 # <a name="list-androiddeviceownerscepcertificateprofiles"></a>Listar androidDeviceOwnerScepCertificateProfiles
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -135,7 +133,6 @@ Content-Length: 2427
   ]
 }
 ```
-
 
 
 

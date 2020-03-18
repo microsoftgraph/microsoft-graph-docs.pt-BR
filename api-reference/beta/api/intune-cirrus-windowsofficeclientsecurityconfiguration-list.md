@@ -2,19 +2,17 @@
 title: Listar windowsOfficeClientSecurityConfigurations
 description: Listar Propriedades e relações dos objetos windowsOfficeClientSecurityConfiguration.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c8cd37c950c63a9555e4bdd2ad9b3166c8401f05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6485a05e93acb053b40c9ad53cfb3f278209ef0c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444375"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760190"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>Listar windowsOfficeClientSecurityConfigurations
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
+|Application|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -102,7 +100,6 @@ Content-Length: 1222
   ]
 }
 ```
-
 
 
 

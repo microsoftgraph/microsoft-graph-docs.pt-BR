@@ -1,16 +1,16 @@
 ---
 title: Criar advancedThreatProtectionOnboardingDeviceSettingState
 description: Criar um novo objeto advancedThreatProtectionOnboardingDeviceSettingState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1df3264feff667867569e32a7841216ce1c79618
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 89f9494e906122b3419115366e45e3f5816d04fa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954087"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760036"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>Criar advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -52,16 +52,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar advanced
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`,,,,,,,,,,.|
-|configuração|Cadeia de Caracteres|O nome da classe de configuração e o nome da propriedade.|
-|settingName|Cadeia de Caracteres|O nome da configuração sendo relatada|
-|deviceId|Cadeia de Caracteres|A ID do dispositivo sendo relatada|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone` `mac` `winCE`,,, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` `windows10x` `blackberry` `palm`,,,, `unknown`,,,,,,,,,.|
+|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|settingName|String|O nome da configuração sendo relatada|
+|deviceId|String|A ID do dispositivo sendo relatada|
 |deviceName|String|O nome do dispositivo sendo relatado|
-|userId|Cadeia de Caracteres|A ID do usuário sendo relatada|
+|userId|String|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|Cadeia de Caracteres|O nome de usuário que está sendo relatado|
+|userName|String|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|Cadeia de Caracteres|O modelo do dispositivo que está sendo relatado|
+|deviceModel|String|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
@@ -120,7 +120,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Criar androidEasEmailProfileConfiguration
 description: Criar um novo objeto androidEasEmailProfileConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4916404d1018b7db17d1ef986e87acd774a413d3
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f2689eba9ab2e7cd5921b613086a54bb93cead1b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954108"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759609"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>Criar androidEasEmailProfileConfiguration
 
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidE
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|accountName|Cadeia de Caracteres|Nome da conta do Exchange ActiveSync, exibido para os usuários como o nome do perfil EAS (este).|
+|accountName|String|Nome da conta do Exchange ActiveSync, exibido para os usuários como o nome do perfil EAS (este).|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Método de autenticação para o Exchange ActiveSync. Os valores possíveis são: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |syncCalendar|Boolean|Alterna a sincronização do calendário. Se definido como falso, o calendário será desativado no dispositivo.|
 |syncContacts|Boolean|Alterna a sincronização de contatos. Se definido como falso, os contatos serão desativados no dispositivo.|
@@ -77,7 +77,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidE
 |requireSsl|Boolean|Indica se o SSL deve ou não ser usado.|
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Atributo username que é separado do AAD e injetado nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `username`, `userPrincipalName`, `samAccountName`, `primarySmtpAddress`.|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|Atributo UserDomainName que é separado do AAD e injetado nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `fullDomainName` e `netBiosDomainName`.|
-|customDomainName|Cadeia de Caracteres|Valor de nome de domínio personalizado usado durante a geração de um perfil de email antes da instalação no dispositivo.|
+|customDomainName|String|Valor de nome de domínio personalizado usado durante a geração de um perfil de email antes da instalação no dispositivo.|
 
 
 
@@ -198,7 +198,6 @@ Content-Length: 1738
   "customDomainName": "Custom Domain Name value"
 }
 ```
-
 
 
 

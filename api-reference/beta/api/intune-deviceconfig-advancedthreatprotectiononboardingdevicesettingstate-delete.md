@@ -1,16 +1,16 @@
 ---
 title: Excluir advancedThreatProtectionOnboardingDeviceSettingState
 description: Exclui advancedThreatProtectionOnboardingDeviceSettingState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df60ca914b123e13a8478823528eff067e71f1bd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 5f395748b8bd074bf82ccdba6ac274e48c2c6ca7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954080"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760029"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>Excluir advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -63,7 +63,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
