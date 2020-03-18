@@ -1,35 +1,33 @@
 ---
 title: tipo de enumeração importedWindowsAutopilotDeviceIdentityImportStatus
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 70fa563135dcafe2dd3b723a7c5da06226eb9d53
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b527016cb8c242b3c07df13422bad26d0cdca0c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524714"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783442"
 ---
-# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a><span data-ttu-id="7753b-103">tipo de enumeração importedWindowsAutopilotDeviceIdentityImportStatus</span><span class="sxs-lookup"><span data-stu-id="7753b-103">importedWindowsAutopilotDeviceIdentityImportStatus enum type</span></span>
+# <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a><span data-ttu-id="66906-103">tipo de enumeração importedWindowsAutopilotDeviceIdentityImportStatus</span><span class="sxs-lookup"><span data-stu-id="66906-103">importedWindowsAutopilotDeviceIdentityImportStatus enum type</span></span>
 
-<span data-ttu-id="7753b-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="7753b-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="66906-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="66906-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7753b-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7753b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="66906-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="66906-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="7753b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7753b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="66906-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="66906-106">Not yet documented</span></span>
 
-<span data-ttu-id="7753b-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="7753b-107">Not yet documented</span></span>
-
-## <a name="members"></a><span data-ttu-id="7753b-108">Membros</span><span class="sxs-lookup"><span data-stu-id="7753b-108">Members</span></span>
-|<span data-ttu-id="7753b-109">Membro</span><span class="sxs-lookup"><span data-stu-id="7753b-109">Member</span></span>|<span data-ttu-id="7753b-110">Valor</span><span class="sxs-lookup"><span data-stu-id="7753b-110">Value</span></span>|<span data-ttu-id="7753b-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="7753b-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="66906-107">Membros</span><span class="sxs-lookup"><span data-stu-id="66906-107">Members</span></span>
+|<span data-ttu-id="66906-108">Membro</span><span class="sxs-lookup"><span data-stu-id="66906-108">Member</span></span>|<span data-ttu-id="66906-109">Valor</span><span class="sxs-lookup"><span data-stu-id="66906-109">Value</span></span>|<span data-ttu-id="66906-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="66906-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7753b-112">desconhecido</span><span class="sxs-lookup"><span data-stu-id="7753b-112">unknown</span></span>|<span data-ttu-id="7753b-113">,0</span><span class="sxs-lookup"><span data-stu-id="7753b-113">0</span></span>|<span data-ttu-id="7753b-114">Status desconhecido.</span><span class="sxs-lookup"><span data-stu-id="7753b-114">Unknown status.</span></span>|
-|<span data-ttu-id="7753b-115">função</span><span class="sxs-lookup"><span data-stu-id="7753b-115">pending</span></span>|<span data-ttu-id="7753b-116">1 </span><span class="sxs-lookup"><span data-stu-id="7753b-116">1</span></span>|<span data-ttu-id="7753b-117">Status pendente.</span><span class="sxs-lookup"><span data-stu-id="7753b-117">Pending status.</span></span>|
-|<span data-ttu-id="7753b-118">parcial</span><span class="sxs-lookup"><span data-stu-id="7753b-118">partial</span></span>|<span data-ttu-id="7753b-119">2 </span><span class="sxs-lookup"><span data-stu-id="7753b-119">2</span></span>|<span data-ttu-id="7753b-120">Status parcial.</span><span class="sxs-lookup"><span data-stu-id="7753b-120">Partial status.</span></span>|
-|<span data-ttu-id="7753b-121">complete</span><span class="sxs-lookup"><span data-stu-id="7753b-121">complete</span></span>|<span data-ttu-id="7753b-122">3 </span><span class="sxs-lookup"><span data-stu-id="7753b-122">3</span></span>|<span data-ttu-id="7753b-123">Status completo.</span><span class="sxs-lookup"><span data-stu-id="7753b-123">Complete status.</span></span>|
-|<span data-ttu-id="7753b-124">erro</span><span class="sxs-lookup"><span data-stu-id="7753b-124">error</span></span>|<span data-ttu-id="7753b-125">4 </span><span class="sxs-lookup"><span data-stu-id="7753b-125">4</span></span>|<span data-ttu-id="7753b-126">Status do erro.</span><span class="sxs-lookup"><span data-stu-id="7753b-126">Error status.</span></span>|
+|<span data-ttu-id="66906-111">desconhecido</span><span class="sxs-lookup"><span data-stu-id="66906-111">unknown</span></span>|<span data-ttu-id="66906-112">,0</span><span class="sxs-lookup"><span data-stu-id="66906-112">0</span></span>|<span data-ttu-id="66906-113">Status desconhecido.</span><span class="sxs-lookup"><span data-stu-id="66906-113">Unknown status.</span></span>|
+|<span data-ttu-id="66906-114">função</span><span class="sxs-lookup"><span data-stu-id="66906-114">pending</span></span>|<span data-ttu-id="66906-115">1</span><span class="sxs-lookup"><span data-stu-id="66906-115">1</span></span>|<span data-ttu-id="66906-116">Status pendente.</span><span class="sxs-lookup"><span data-stu-id="66906-116">Pending status.</span></span>|
+|<span data-ttu-id="66906-117">parcial</span><span class="sxs-lookup"><span data-stu-id="66906-117">partial</span></span>|<span data-ttu-id="66906-118">duas</span><span class="sxs-lookup"><span data-stu-id="66906-118">2</span></span>|<span data-ttu-id="66906-119">Status parcial.</span><span class="sxs-lookup"><span data-stu-id="66906-119">Partial status.</span></span>|
+|<span data-ttu-id="66906-120">complete</span><span class="sxs-lookup"><span data-stu-id="66906-120">complete</span></span>|<span data-ttu-id="66906-121">3D</span><span class="sxs-lookup"><span data-stu-id="66906-121">3</span></span>|<span data-ttu-id="66906-122">Status completo.</span><span class="sxs-lookup"><span data-stu-id="66906-122">Complete status.</span></span>|
+|<span data-ttu-id="66906-123">erro</span><span class="sxs-lookup"><span data-stu-id="66906-123">error</span></span>|<span data-ttu-id="66906-124">4 </span><span class="sxs-lookup"><span data-stu-id="66906-124">4</span></span>|<span data-ttu-id="66906-125">Status do erro.</span><span class="sxs-lookup"><span data-stu-id="66906-125">Error status.</span></span>|
 
 
 
