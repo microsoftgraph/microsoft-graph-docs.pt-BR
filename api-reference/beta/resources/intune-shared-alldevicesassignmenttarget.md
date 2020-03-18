@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso allDevicesAssignmentTarget
 description: Representa uma atribuição para todos os dispositivos gerenciados no locatário.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 813f7e67ce9456733187426083f3920cf05cc94d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c472cf0166631b3db2b4270be62cfdd6d43f8ca
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527495"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772227"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Tipo de recurso allDevicesAssignmentTarget
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

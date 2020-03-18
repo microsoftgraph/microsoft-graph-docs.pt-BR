@@ -1,20 +1,18 @@
 ---
 title: Criar appLogCollectionRequest
 description: Criar um novo objeto appLogCollectionRequest.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b016c92f3a57d5032208151177e0fcf023de5c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 33349e7b9e4fc6cec1a7a3e8b9b2916a00640644
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470011"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770218"
 ---
 # <a name="create-applogcollectionrequest"></a>Criar appLogCollectionRequest
-
-Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar appLogCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo. É userId_DeviceId_AppId ID.|
+|id|String|O identificador exclusivo. É userId_DeviceId_AppId ID.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|Cadeia de caracteres|Mensagem de erro se qualquer um durante o processo de carregamento|
-|customLogFolders|String collection|Lista de pastas de log. |
+|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 
@@ -102,7 +100,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

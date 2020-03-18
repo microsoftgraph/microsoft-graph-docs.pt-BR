@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração DeviceType
 description: Tipo de dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e8d3cdd09b80c02f4135952fae39d4e4d4e2d7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f06aef9e1e3efe2dc9ec528c52a2442c54dc183e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527441"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770582"
 ---
 # <a name="devicetype-enum-type"></a>tipo de enumeração DeviceType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |placa|,0|Placa.|
-|windowsRT|1 |WindowsRT.|
-|winMO6|2 |WinMO6.|
-|Nokia|3 |Nokia.|
+|windowsRT|1|WindowsRT.|
+|winMO6|duas|WinMO6.|
+|Nokia|3D|Nokia.|
 |Windowsphonee|4 |Windows Phone.|
 |mac|5 |MacOS.|
 |winCE|6 |WinCE.|
@@ -36,7 +34,7 @@ Tipo de dispositivo.
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|Android|11 |Android.|
+|Android|11|Android.|
 |iSocConsumer|12 |iSocConsumer.|
 |UNIX|13 |UNIX.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM interno.|
@@ -44,6 +42,7 @@ Tipo de dispositivo.
 |surfaceHub|16 |Dispositivo de HUB de superfície.|
 |androidForWork|17 |Android para dispositivo de trabalho.|
 |androidEnterprise|18 |Dispositivo de empresa Android.|
+|windows10x|19|Dispositivo Windows 10x.|
 |rim|100|Rim.|
 |Palm|101|Palm.|
 |desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|

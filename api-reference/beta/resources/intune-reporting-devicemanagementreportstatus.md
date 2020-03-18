@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração deviceManagementReportStatus
 description: Status possíveis associados a um relatório gerado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e549e2ca96e272930c13aa07f0e35e2143e96c2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5578c11ae322fd1745cb5ed5d2f74091997be65
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527510"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772304"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>tipo de enumeração deviceManagementReportStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Status possíveis associados a um relatório gerado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O status da geração de relatórios é desconhecido|
-|notStarted|1 |A geração de relatório não foi iniciada|
-|inProgress|2 |Geração de relatório em andamento|
-|Completed|3 |Geração de relatório concluída|
+|notStarted|1|A geração de relatório não foi iniciada|
+|inProgress|duas|Geração de relatório em andamento|
+|Completed|3D|Geração de relatório concluída|
 |falhou|4 |A geração de relatórios falhou|
 
 

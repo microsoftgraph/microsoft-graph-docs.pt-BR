@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementReportSchedule
 description: Entidade que representa um cronograma para o qual os relatórios são entregues
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ce3f9a54c3be73f089b0ddf99a1f96fd114aff9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a7b97b0c81e0c7da87c8e91170548de22cda19d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772311"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>tipo de recurso deviceManagementReportSchedule
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -37,15 +35,15 @@ Entidade que representa um cronograma para o qual os relatórios são entregues
 |id|String|Identificador exclusivo para esta entidade|
 |reportScheduleName|String|Nome da agenda|
 |assunto|String|Assunto dos relatórios agendados que são entregues|
-|email|String collection|Emails para os quais os relatórios agendados são entregues|
+|email|Coleção de cadeias de caracteres|Emails para os quais os relatórios agendados são entregues|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequência da entrega de relatórios agendados. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Hora de início da entrega dos relatórios agendados|
 |endDateTime|DateTimeOffset|Hora em que a entrega dos relatórios agendados termina|
 |userId|Cadeia de caracteres|A ID do usuário que criou o relatório|
 |reportName|String|Nome do relatório|
 |filter|String|Filtros aplicados no relatório|
-|select|String collection|Colunas selecionadas do relatório|
-|Classificadoporativado|String collection|Ordenação de colunas no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório agendado. Os valores possíveis são: `csv`, `pdf`.|
 
 ## <a name="relationships"></a>Relações

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração userPfxIntendedPurpose
 description: Valores com suporte para a finalidade pretendida de um certificado PFX de usuário.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 00418943b8f10888f4517879907ad0bddfac47cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c80178c206c7e44a74ec537b5f118f85fda204df
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527579"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774229"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>tipo de enumeração userPfxIntendedPurpose
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Valores com suporte para a finalidade pretendida de um certificado PFX de usuár
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |não atribuídos|,0|Nenhuma função/uso atribuído.|
-|smimeEncryption|1 |Válido para criptografia S/MIME.|
-|smimeSigning|2 |Válido para assinatura S/MIME.|
+|smimeEncryption|1|Válido para criptografia S/MIME.|
+|smimeSigning|duas|Válido para assinatura S/MIME.|
 |VPN|4 |Válido para uso na VPN.|
 |detector|8 |Válido para uso em WiFi.|
 

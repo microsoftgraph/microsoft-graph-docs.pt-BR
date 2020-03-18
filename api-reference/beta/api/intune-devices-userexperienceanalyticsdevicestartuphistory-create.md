@@ -1,20 +1,18 @@
 ---
 title: Criar userExperienceAnalyticsDeviceStartupHistory
 description: Criar um novo objeto userExperienceAnalyticsDeviceStartupHistory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2fe97a2567bcde086f8cbc8febbedff3829658b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ca8232f2a013498dcc9dbcce5bfe2d9f1fd54a4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468359"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772381"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>Criar userExperienceAnalyticsDeviceStartupHistory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -125,7 +123,6 @@ Content-Length: 582
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
 
 
 

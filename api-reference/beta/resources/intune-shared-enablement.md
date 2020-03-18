@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração de habilitação
 description: Valores possíveis de uma propriedade
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e9840d453ea3273859ac6e2d6409a83300e611fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 532dc96c1317c02bf15da9c0a6ced9208ff86d53
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523685"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770449"
 ---
 # <a name="enablement-enum-type"></a>tipo de enumeração de habilitação
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Valores possíveis de uma propriedade
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Valor padrão do dispositivo, sem intenção.|
-|enabled|1 |Habilita a configuração do dispositivo.|
-|deficiência|2 |Desabilita a configuração do dispositivo.|
+|enabled|1|Habilita a configuração do dispositivo.|
+|deficiência|duas|Desabilita a configuração do dispositivo.|
 
 
 

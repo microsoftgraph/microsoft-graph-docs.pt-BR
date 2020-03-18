@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração complianceStatus
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 20b7cdca80043586453d9e4d2b956afa3dccfcc4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3449e19528ba833bcb7c650eb4487f1cb891a82
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523748"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771646"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de enumeração complianceStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ainda não documentado|
-|Não aplicável|1 |Ainda não documentado|
-|com|2 |Ainda não documentado|
-|corrigidos|3 |Ainda não documentado|
+|Não aplicável|1|Ainda não documentado|
+|com|duas|Ainda não documentado|
+|corrigidos|3D|Ainda não documentado|
 |Incompatível|4 |Ainda não documentado|
 |erro|5 |Ainda não documentado|
 |apresentar|6 |Ainda não documentado|

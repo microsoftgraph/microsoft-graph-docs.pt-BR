@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso userPFXCertificate
 description: Entidade que encapsula todas as informações necessárias para os certificados PFX de um usuário.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b252b4bc420b3643b313dd5b226d0458af892de3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c0b893425844c85b3beaad2416d175e4497f6e1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523932"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774257"
 ---
 # <a name="userpfxcertificate-resource-type"></a>tipo de recurso userPFXCertificate
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

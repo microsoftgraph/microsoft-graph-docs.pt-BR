@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração installIntent
 description: Valores possíveis para o propósito de instalação escolhido pelo administrador.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 89a0cb9c9c754e4127ea629f5c31e3da6dbe0847
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 734c65ae867b7a0b6debae00e172b637c1e0aa66
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527418"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770057"
 ---
 # <a name="installintent-enum-type"></a>tipo de enumeração installIntent
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para o propósito de instalação escolhido pelo administrado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|,0|Tentativa de instalação disponível.|
-|obrigatório|1 |Tentativa de instalação necessária.|
-|INTAL|2 |Tentativa de instalação de desinstalação.|
-|availableWithoutEnrollment|3 |Disponível sem a intenção de instalação do registro.|
+|obrigatório|1|Tentativa de instalação necessária.|
+|INTAL|duas|Tentativa de instalação de desinstalação.|
+|availableWithoutEnrollment|3D|Disponível sem a intenção de instalação do registro.|
 
 
 
