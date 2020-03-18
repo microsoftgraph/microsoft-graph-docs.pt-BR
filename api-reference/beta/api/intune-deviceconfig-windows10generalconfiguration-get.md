@@ -1,20 +1,18 @@
 ---
 title: Get windows10GeneralConfiguration
 description: Ler propriedades e relações do objeto windows10GeneralConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba626a9980b87c393f52d655a0e76bdce3c0f7ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7216edff838486c854c9bc88424daee34353144
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479902"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739835"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15785
+Content-Length: 15912
 
 {
   "value": {
@@ -160,6 +158,7 @@ Content-Length: 15785
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
     "searchBlockWebResults": true,
+    "findMyFiles": "enabled",
     "securityBlockAzureADJoinedDevicesAutoEncryption": true,
     "diagnosticsDataSubmissionMode": "none",
     "oneDriveDisableFileSync": true,
@@ -292,6 +291,7 @@ Content-Length: 15785
     "privacyBlockInputPersonalization": true,
     "privacyBlockPublishUserActivities": true,
     "privacyBlockActivityFeed": true,
+    "activateAppsWithVoice": "enabled",
     "startBlockUnpinningAppsFromTaskbar": true,
     "startMenuAppListVisibility": "collapse",
     "startMenuHideChangeAccountSettings": true,
@@ -426,11 +426,11 @@ Content-Length: 15785
     "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
       "App Management Package Family Names To Launch After Log On value"
     ],
-    "uninstallBuiltInApps": true
+    "uninstallBuiltInApps": true,
+    "configureTimeZone": "Configure Time Zone value"
   }
 }
 ```
-
 
 
 

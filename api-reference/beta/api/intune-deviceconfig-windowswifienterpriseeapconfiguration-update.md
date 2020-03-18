@@ -1,20 +1,18 @@
 ---
 title: Atualizar windowsWifiEnterpriseEAPConfiguration
 description: Atualiza as propriedades de um objeto windowsWifiEnterpriseEAPConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a0583828dd0d771bcdcc5358c298765dec855237
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b259aad6cca3344aeac67fffa84bb5dfaec35934
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473105"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731646"
 ---
 # <a name="update-windowswifienterpriseeapconfiguration"></a>Atualizar windowsWifiEnterpriseEAPConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -88,7 +86,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |enablePreAuthentication|Boolean|Especifique se a pré-autenticação deve ser habilitada.|
 |maximumPreAuthenticationAttempts|Int32|Especifique as tentativas máximas de pré-autenticação.  Intervalo válido: 1-16|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|EAP (protocolo de autenticação extensível). Indica o tipo de protocolo EAP definido no ponto de extremidade Wi-Fi (roteador). Os possíveis valores são: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
-|trustedServerCertificateNames|String collection|Especificar nomes de certificado de servidor confiável.|
+|trustedServerCertificateNames|Coleção de cadeias de caracteres|Especificar nomes de certificado de servidor confiável.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Especifique o método de autenticação. Os valores possíveis são: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Especificar o protocolo de autenticação interna para EAP TTLS. Os valores possíveis são: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Especifique a cadeia de caracteres para substituir os nomes de texto para privacidade ao usar EAP TTLS ou PEAP.|
@@ -238,7 +236,6 @@ Content-Length: 2449
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
 
 
 

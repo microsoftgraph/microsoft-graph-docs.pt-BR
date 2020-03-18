@@ -1,20 +1,18 @@
 ---
 title: Atualizar deviceManagementIntegerSettingInstance
 description: Atualiza as propriedades de um objeto deviceManagementIntegerSettingInstance.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b6f0a92030beb113bc3ed656995609f20ad76bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cd2f4fc488cbd9aa0401174f7a94588ad6cfe89
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471579"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729651"
 ---
 # <a name="update-devicemanagementintegersettinginstance"></a>Atualizar deviceManagementIntegerSettingInstance
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -98,7 +96,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
 
 
 

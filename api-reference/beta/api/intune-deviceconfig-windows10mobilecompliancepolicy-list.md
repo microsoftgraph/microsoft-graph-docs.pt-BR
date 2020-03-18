@@ -1,20 +1,18 @@
 ---
 title: Listar windows10MobileCompliancePolicies
 description: Listar propriedades e relações dos objetos windows10MobileCompliancePolicy.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ea2cf01ef42df5b70de06535cdbc693ccc9c9f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4eb95d8fc782904649bfa409504e5f4a1a97a6d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479048"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739310"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>Listar windows10MobileCompliancePolicies
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -109,7 +107,6 @@ Content-Length: 1503
   ]
 }
 ```
-
 
 
 

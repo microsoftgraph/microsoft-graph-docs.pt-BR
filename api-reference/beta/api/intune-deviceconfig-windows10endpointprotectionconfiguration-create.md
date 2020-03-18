@@ -1,20 +1,18 @@
 ---
 title: Criar windows10EndpointProtectionConfiguration
 description: Criar um novo objeto windows10EndpointProtectionConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3428ee5e13b8c52a3bbafeaf1c3fa91fd34bd4e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d87cd92f225f59325de87961c0cd477c1693e4a3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480631"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740381"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Criar windows10EndpointProtectionConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -208,7 +206,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|O valor que indica se a execução do conteúdo executável (exe, dll, PS, js, vbs, etc.) deve ser cancelada de email (webmail/email). Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|O valor que indica o uso da proteção avançada contra o Ransomeware. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|Valor que indica o comportamento das pastas protegidas. Os valores possíveis são: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
-|defenderGuardedFoldersAllowedAppPaths|String collection|Lista de caminhos para execução com permissão para acessar as pastas protegidas|
+|defenderGuardedFoldersAllowedAppPaths|Coleção de cadeias de caracteres|Lista de caminhos para execução com permissão para acessar as pastas protegidas|
 |defenderAdditionalGuardedFolders|String collection|Lista de caminhos de pasta a serem adicionados à lista de pastas protegidas|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Valor que indica o comportamento de NetworkProtection. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderExploitProtectionXml|Binária|Conteúdo XML com informações sobre a proteção contra vulnerabilidades.|
@@ -244,18 +242,29 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Política da unidade removível do BitLocker.|
 |bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|Essa configuração inicia uma rotação de senha de recuperação voltada para o cliente após uma recuperação de unidade de sistema operacional (seja usando bootmgr ou WinRE). Os valores possíveis são: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
 |defenderDisableScanArchiveFiles|Boolean|Permite ou proíbe a verificação de arquivos mortos.|
+|defenderAllowScanArchiveFiles|Boolean|Permite ou proíbe a verificação de arquivos mortos.|
 |defenderDisableBehaviorMonitoring|Boolean|Permite ou proíbe a funcionalidade de monitoramento de comportamento do Windows Defender.|
+|defenderAllowBehaviorMonitoring|Boolean|Permite ou proíbe a funcionalidade de monitoramento de comportamento do Windows Defender.|
 |defenderDisableCloudProtection|Boolean|Para melhor proteger seu computador, o Windows Defender enviará informações à Microsoft sobre qualquer problema encontrado. A Microsoft analisará essas informações, aprenderá mais sobre problemas que afetam você e outros clientes e oferecem soluções aprimoradas.|
+|defenderAllowCloudProtection|Boolean|Para melhor proteger seu computador, o Windows Defender enviará informações à Microsoft sobre qualquer problema encontrado. A Microsoft analisará essas informações, aprenderá mais sobre problemas que afetam você e outros clientes e oferecem soluções aprimoradas.|
 |defenderEnableScanIncomingMail|Boolean|Permite ou proíbe a verificação de email.|
 |defenderEnableScanMappedNetworkDrivesDuringFullScan|Boolean|Permite ou proíbe uma verificação completa de unidades de rede mapeadas.|
 |defenderDisableScanRemovableDrivesDuringFullScan|Boolean|Permite ou proíbe uma verificação completa de unidades removíveis. Durante uma verificação rápida, as unidades removíveis ainda podem ser verificadas.|
+|defenderAllowScanRemovableDrivesDuringFullScan|Boolean|Permite ou proíbe uma verificação completa de unidades removíveis. Durante uma verificação rápida, as unidades removíveis ainda podem ser verificadas.|
 |defenderDisableScanDownloads|Boolean|Permite ou proíbe a funcionalidade de proteção do Windows Defender IOAVP.|
+|defenderAllowScanDownloads|Boolean|Permite ou proíbe a funcionalidade de proteção do Windows Defender IOAVP.|
 |defenderDisableIntrusionPreventionSystem|Boolean|Permite ou proíbe a funcionalidade de prevenção de invasão do Windows Defender.|
+|defenderAllowIntrusionPreventionSystem|Boolean|Permite ou proíbe a funcionalidade de prevenção de invasão do Windows Defender.|
 |defenderDisableOnAccessProtection|Boolean|Permite ou proíbe a funcionalidade de proteção de acesso do Windows Defender.|
+|defenderAllowOnAccessProtection|Boolean|Permite ou proíbe a funcionalidade de proteção de acesso do Windows Defender.|
 |defenderDisableRealTimeMonitoring|Boolean|Permite ou proíbe a funcionalidade de monitoramento em tempo real do Windows Defender.|
+|defenderAllowRealTimeMonitoring|Boolean|Permite ou proíbe a funcionalidade de monitoramento em tempo real do Windows Defender.|
 |defenderDisableScanNetworkFiles|Boolean|Permite ou não a verificação de arquivos de rede.|
+|defenderAllowScanNetworkFiles|Boolean|Permite ou não a verificação de arquivos de rede.|
 |defenderDisableScanScriptsLoadedInInternetExplorer|Boolean|Permite ou proíbe a funcionalidade de verificação de scripts do Windows Defender.|
+|defenderAllowScanScriptsLoadedInInternetExplorer|Boolean|Permite ou proíbe a funcionalidade de verificação de scripts do Windows Defender.|
 |defenderBlockEndUserAccess|Boolean|Permite ou proíbe o acesso do usuário à interface de usuário do Windows Defender. Se não permitido, todas as notificações do Windows Defender também serão suprimidas.|
+|defenderAllowEndUserAccess|Boolean|Permite ou proíbe o acesso do usuário à interface de usuário do Windows Defender. Se não permitido, todas as notificações do Windows Defender também serão suprimidas.|
 |defenderScanMaxCpuPercentage|Int32|Representa o fator de carga de CPU médio para a verificação do Windows Defender (em porcentagem). O valor padrão é 50. Valores válidos de 0 a 100|
 |defenderCheckForSignaturesBeforeRunningScan|Boolean|Essa configuração de política permite que você gerencie se uma verificação de novas definições de vírus e spyware ocorrerá antes de executar uma verificação.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Adicionado no Windows 10, versão 1709. Essa configuração de política determina o quanto o Windows Defender antivírus agressivo estará no bloqueio e na verificação de arquivos suspeitos. Tipo de valor é inteiro. Este recurso requer a configuração "ingressar no Microsoft MAPS" habilitada para funcionar. Os valores possíveis são: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
@@ -264,8 +273,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderDisableCatchupFullScan|Boolean|Essa configuração de política permite configurar verificações de atualização para verificações completas agendadas. Uma verificação de atualização é uma verificação iniciada porque uma verificação agendada regularmente foi perdida. Normalmente, essas verificações agendadas são perdidas porque o computador foi desligado no horário agendado.|
 |defenderDisableCatchupQuickScan|Boolean|Essa configuração de política permite que você configure verificações de atualização para verificações rápidas agendadas. Uma verificação de atualização é uma verificação iniciada porque uma verificação agendada regularmente foi perdida. Normalmente, essas verificações agendadas são perdidas porque o computador foi desligado no horário agendado.|
 |defenderEnableLowCpuPriority|Boolean|Essa configuração de política permite habilitar ou desabilitar a baixa prioridade de CPU para verificações agendadas.|
-|defenderFileExtensionsToExclude|String collection|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
-|defenderFilesAndFoldersToExclude|String collection|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
+|defenderFileExtensionsToExclude|Coleção de cadeias de caracteres|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
+|defenderFilesAndFoldersToExclude|Coleção de cadeias de caracteres|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
 |defenderProcessesToExclude|String collection|Processos a serem excluídos das verificações e da proteção em tempo real.|
 |defenderPotentiallyUnwantedAppAction|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Adicionado no Windows 10, versão 1607. Especifica o nível de detecção para aplicativos potencialmente indesejados (PUAs). O Windows Defender alerta você quando um software potencialmente indesejado está sendo baixado ou tenta se instalar em seu computador. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderScanDirection|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|Controla quais conjuntos de arquivos devem ser monitorados. Os valores possíveis são: `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
@@ -273,6 +282,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderScheduledQuickScanTime|TimeOfDay|Seleciona a hora do dia em que a verificação rápida do Windows Defender deve ser executada. Por exemplo, um valor de 0 = 12:00AM, um valor de 60 = 1:00AM, um valor de 120 = 2:00 e assim por diante, até um valor de 1380 = 11:00PM. O valor padrão é 120|
 |defenderScheduledScanDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Seleciona o dia em que a verificação do Windows Defender deve ser executada. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
 |defenderScheduledScanTime|TimeOfDay|Seleciona a hora do dia em que a verificação do Windows Defender deve ser executada.|
+|defenderSignatureUpdateIntervalInHours|Int32|Especifica o intervalo (em horas) que será usado para verificar assinaturas, portanto, em vez de usar o ScheduleDay e Scheduletime, a verificação de novas assinaturas será definida de acordo com o intervalo. Valores válidos de 0 a 24|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Verifica se o nível de consentimento do usuário no Windows Defender deve enviar dados. Os valores possíveis são: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Permite que um administrador especifique quaisquer níveis de severidade de ameaças válidos e a ID de ação padrão correspondente a ser executada.|
 
@@ -288,7 +298,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 30451
+Content-length: 31005
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -969,18 +979,29 @@ Content-length: 30451
   },
   "bitLockerRecoveryPasswordRotation": "disabled",
   "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
   "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
   "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
   "defenderEnableScanIncomingMail": true,
   "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
   "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
   "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
   "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
   "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
   "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
   "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
   "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
   "defenderScanMaxCpuPercentage": 12,
   "defenderCheckForSignaturesBeforeRunningScan": true,
   "defenderCloudBlockLevel": "high",
@@ -1004,6 +1025,7 @@ Content-length: 30451
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderScheduledScanDay": "everyday",
   "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -1020,7 +1042,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 30623
+Content-Length: 31177
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1704,18 +1726,29 @@ Content-Length: 30623
   },
   "bitLockerRecoveryPasswordRotation": "disabled",
   "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
   "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
   "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
   "defenderEnableScanIncomingMail": true,
   "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
   "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
   "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
   "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
   "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
   "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
   "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
   "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
   "defenderScanMaxCpuPercentage": 12,
   "defenderCheckForSignaturesBeforeRunningScan": true,
   "defenderCloudBlockLevel": "high",
@@ -1739,6 +1772,7 @@ Content-Length: 30623
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderScheduledScanDay": "everyday",
   "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -1749,7 +1783,6 @@ Content-Length: 30623
   }
 }
 ```
-
 
 
 

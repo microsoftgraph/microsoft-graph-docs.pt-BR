@@ -1,20 +1,18 @@
 ---
 title: Listar deviceManagementComplexSettingInstances
 description: Listar Propriedades e relações dos objetos deviceManagementComplexSettingInstance.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ec9224af76366d5d11685a9fb22221ed99e96d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf61f7e0ccc4bfa2810a5fa735ba48969c281fd6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471943"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42730071"
 ---
 # <a name="list-devicemanagementcomplexsettinginstances"></a>Listar deviceManagementComplexSettingInstances
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -81,7 +79,6 @@ Content-Length: 256
   ]
 }
 ```
-
 
 
 

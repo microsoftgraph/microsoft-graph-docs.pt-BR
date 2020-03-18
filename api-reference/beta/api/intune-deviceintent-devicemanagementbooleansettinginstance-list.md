@@ -1,20 +1,18 @@
 ---
 title: Listar deviceManagementBooleanSettingInstances
 description: Listar Propriedades e relações dos objetos deviceManagementBooleanSettingInstance.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f4e3a3b14fcef1d57133c983cec246c5c4c53ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04cd5d56d1dc09c2ca9a2bfe6a05dda5fc9aaa70
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472664"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731044"
 ---
 # <a name="list-devicemanagementbooleansettinginstances"></a>Listar deviceManagementBooleanSettingInstances
-
-Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -82,7 +80,6 @@ Content-Length: 278
   ]
 }
 ```
-
 
 
 

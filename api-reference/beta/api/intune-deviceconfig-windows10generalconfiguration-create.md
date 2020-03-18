@@ -1,20 +1,18 @@
 ---
 title: Criar windows10GeneralConfiguration
 description: Cria um novo objeto windows10GeneralConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f97e5a4fbea34b4256f8b5aee4bb5b281586815
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ab837bf85a61b94f94d62ad7f52866a2312b781
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479972"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739912"
 ---
 # <a name="create-windows10generalconfiguration"></a>Criar windows10GeneralConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -83,8 +81,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |authenticationWebSignIn|[habilitação](../resources/intune-shared-enablement.md)|Indica se o provedor de credenciais da Web será habilitado ou não. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|String|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Especifique se deseja permitir ou não a política padrão do FIPS (Federal Information Processing Standard).|
-|displayAppListWithGdiDPIScalingTurnedOn|String collection|Lista de aplicativos herdados com ajuste de DPI GDI ativado.|
-|displayAppListWithGdiDPIScalingTurnedOff|String collection|Lista de aplicativos herdados com a expansão de DPI GDI desativada.|
+|displayAppListWithGdiDPIScalingTurnedOn|Coleção de cadeias de caracteres|Lista de aplicativos herdados com ajuste de DPI GDI ativado.|
+|displayAppListWithGdiDPIScalingTurnedOff|Coleção de cadeias de caracteres|Lista de aplicativos herdados com a expansão de DPI GDI desativada.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
 |enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
@@ -95,7 +93,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |messagingBlockSync|Boolean|Indica se o backup e a restauração de mensagens de texto devem ou não ser bloqueados e mensagens em qualquer lugar.|
 |messagingBlockMMS|Boolean|Indica se a funcionalidade de envio/recebimento de MMS deve ou não ser bloqueada no dispositivo.|
 |messagingBlockRichCommunicationServices|Boolean|Indica se a funcionalidade de envio/recebimento de RCS deve ou não ser bloqueada no dispositivo.|
-|printerNames|String collection|Provisiona automaticamente impressoras com base em seus nomes (nomes de host de rede).|
+|printerNames|Coleção de cadeias de caracteres|Provisiona automaticamente impressoras com base em seus nomes (nomes de host de rede).|
 |printerDefaultName|String|Nome (nome do host de rede) de uma impressora instalada.|
 |printerBlockAddition|Boolean|Impedir a instalação do usuário de impressoras adicionais das configurações de impressoras.|
 |searchBlockDiacritics|Boolean|Especifica se a pesquisa pode usar diacríticos.|
@@ -108,6 +106,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |searchDisableIndexingRemovableDrive|Boolean|Indica se os usuários poderão ou não adicionar locais de unidades removíveis a bibliotecas e para serem indexados.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Especifica uma quantidade mínima de espaço em disco rígido na mesma unidade como o local do índice antes que a indexação seja interrompida.|
 |searchBlockWebResults|Boolean|Indica se a pesquisa da Web deve ou não ser bloqueada.|
+|findMyFiles|[habilitação](../resources/intune-shared-enablement.md)|Controla se o usuário pode configurar a pesquisa para localizar o modo de arquivos, que pesquisa arquivos em discos rígidos secundários e também fora do perfil do usuário. Localizar meus arquivos não permite que os usuários pesquisem arquivos ou locais para os quais eles não têm acesso. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Especifique se deseja permitir a criptografia automática do dispositivo durante o OOBE quando o dispositivo é associado ao AD do Azure (somente desktop).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Obtém ou define um valor que permite que o dispositivo envie dados de diagnóstico e de telemetria de uso, como Watson. Os valores possíveis são: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Obtém ou define um valor para permitir que os administradores de TI impeçam aplicativos e recursos de trabalhar com arquivos no OneDrive.|
@@ -148,7 +147,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |edgeHomeButtonConfigurationEnabled|Boolean|Habilitar a configuração do botão página inicial.|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifique o tipo de páginas que será aberto no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
 |edgeBlockSideloadingExtensions|Boolean|Indica se o usuário pode Sideload as extensões.|
-|edgeRequiredExtensionPackageFamilyNames|String collection|Especifique a lista de nomes de famílias de pacotes de extensões de navegador que são necessários e que não podem ser desativados pelo usuário.|
+|edgeRequiredExtensionPackageFamilyNames|Coleção de cadeias de caracteres|Especifique a lista de nomes de famílias de pacotes de extensões de navegador que são necessários e que não podem ser desativados pelo usuário.|
 |edgeBlockPrinting|Boolean|Configure o Edge para permitir ou bloquear a impressão.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obtém ou define um valor que especifica se a barra de favoritos deve ser configurada para sempre estar visível ou oculta em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |edgeBlockSavingHistory|Boolean|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
@@ -168,8 +167,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Número de dias antes da exclusão do malware em quarentena. Valores válidos de 0 a 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Obtém ou define ações do Defender a serem realizadas em um malware detectado por nível de ameaça.|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia da semana em que o Defender fará a verificação do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
-|defenderFilesAndFoldersToExclude|String collection|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
-|defenderFileExtensionsToExclude|String collection|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
+|defenderFilesAndFoldersToExclude|Coleção de cadeias de caracteres|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
+|defenderFileExtensionsToExclude|Coleção de cadeias de caracteres|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
 |defenderScanMaxCpu|Int32|Porcentagem máxima de uso da CPU durante a verificação. Valores válidos de 0 a 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Valor de monitoramento da atividade do arquivo. Os valores possíveis são: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente indesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
@@ -222,6 +221,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |privacyBlockInputPersonalization|Boolean|Indica se o uso dos serviços de fala baseados na nuvem será bloqueado para os aplicativos Cortana, Ditado ou Store.|
 |privacyBlockPublishUserActivities|Boolean|Bloqueia as experiências/descoberta compartilhadas de recursos usados recentemente no alternador de tarefas, etc.|
 |privacyBlockActivityFeed|Boolean|Bloqueia o uso de serviços de fala baseados em nuvem para Cortana, ditar ou armazenar aplicativos.|
+|activateAppsWithVoice|[habilitação](../resources/intune-shared-enablement.md)|Especifica se os aplicativos do Windows podem ser ativados por voz. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indica se o usuário será ou não impedido de desafixar aplicativos da barra de tarefas.|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|A definição desse valor recolhe a lista de aplicativos, remove a lista de aplicativos totalmente ou desabilita a alternância correspondente no aplicativo Configurações. Os valores possíveis são: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Habilitar essa política impede a exibição da configuração de conta de alteração no bloco de usuário no menu Iniciar.|
@@ -342,8 +342,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |appManagementMSIAllowUserControlOverInstall|Boolean|Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores do sistema.|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|Essa configuração de política instrui o Windows Installer a usar permissões elevadas ao instalar qualquer programa no sistema.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|Essa configuração de política permite bloquear o acesso direto à memória (DMA) para todas as portas de downstream PCI que podem ser conectadas a quente até que um usuário faça logon no Windows.|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Lista de nomes de família de pacotes delimitados por ponto e vírgula de aplicativos do Windows. Os aplicativos do Windows listados devem ser iniciados após o logon.|
-|uninstallBuiltInApps|Boolean|Indica se deseja ou não desinstalar uma lista fixa de aplicativos internos do Windows.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|Coleção de cadeias de caracteres|Lista de nomes de família de pacotes delimitados por ponto e vírgula de aplicativos do Windows. Os aplicativos do Windows listados devem ser iniciados após o logon.|
+|uninstallBuiltInApps|Booliano|Indica se deseja ou não desinstalar uma lista fixa de aplicativos internos do Windows.|
+|configureTimeZone|String|Especifica o fuso horário a ser aplicado ao dispositivo. Este é o nome padrão do Windows para o fuso horário de destino.|
 
 
 
@@ -357,7 +358,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 14888
+Content-length: 15009
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -443,6 +444,7 @@ Content-length: 14888
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
   "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
   "securityBlockAzureADJoinedDevicesAutoEncryption": true,
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
@@ -575,6 +577,7 @@ Content-length: 14888
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
+  "activateAppsWithVoice": "enabled",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -709,7 +712,8 @@ Content-length: 14888
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
   ],
-  "uninstallBuiltInApps": true
+  "uninstallBuiltInApps": true,
+  "configureTimeZone": "Configure Time Zone value"
 }
 ```
 
@@ -718,7 +722,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 15060
+Content-Length: 15181
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -807,6 +811,7 @@ Content-Length: 15060
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
   "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
   "securityBlockAzureADJoinedDevicesAutoEncryption": true,
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
@@ -939,6 +944,7 @@ Content-Length: 15060
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
+  "activateAppsWithVoice": "enabled",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -1073,10 +1079,10 @@ Content-Length: 15060
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
   ],
-  "uninstallBuiltInApps": true
+  "uninstallBuiltInApps": true,
+  "configureTimeZone": "Configure Time Zone value"
 }
 ```
-
 
 
 

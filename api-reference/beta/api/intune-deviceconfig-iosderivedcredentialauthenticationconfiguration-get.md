@@ -1,20 +1,18 @@
 ---
 title: Obter iosDerivedCredentialAuthenticationConfiguration
 description: Leia as propriedades e as relações do objeto iosDerivedCredentialAuthenticationConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 877e697d27c4ca651718176af5fd0aa4b5a90719
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6576075b66a32a99ad76a6355e1547d4253414e8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449002"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42752146"
 ---
 # <a name="get-iosderivedcredentialauthenticationconfiguration"></a>Obter iosDerivedCredentialAuthenticationConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -109,7 +107,6 @@ Content-Length: 1305
   }
 }
 ```
-
 
 
 

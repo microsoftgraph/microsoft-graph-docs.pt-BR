@@ -1,20 +1,18 @@
 ---
 title: Listar macOSImportedPFXCertificateProfiles
 description: Listar Propriedades e relações dos objetos macOSImportedPFXCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36404447e35fde53ee12168422bcad29bb2e585b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 312a73f914e4c2e213bf1bdc0dce5f380b195aa0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442268"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745524"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>Listar macOSImportedPFXCertificateProfiles
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -113,7 +111,6 @@ Content-Length: 1654
   ]
 }
 ```
-
 
 
 

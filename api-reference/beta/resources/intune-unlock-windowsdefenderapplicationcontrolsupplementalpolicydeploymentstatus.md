@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: Contém propriedades para o estado de implantação de uma política suplementar do WindowsDefenderApplicationControl para um dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba11aedae421faff69634f209bbd748bd8bd1238
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e706c22b8add271c0837c525b25bc3c4e43daa7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523244"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729063"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: Atualizar iosGeneralDeviceConfiguration
 description: Atualizar as propriedades de um objeto iosGeneralDeviceConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 824c4dccc62f40ff9f442ad5466509a8ae996ce8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b6a6800722645a272b538bef94de7b0dc1a08b7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448904"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42750492"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Atualizar iosGeneralDeviceConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -109,7 +107,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Indica se o usuário será ou não impedido de visualizar documentos não gerenciados em aplicativos gerenciados.|
 |emailInDomainSuffixes|String collection|Um endereço de email sem um sufixo que corresponde a qualquer uma dessas strings será considerado fora do domínio.|
 |enterpriseAppBlockTrust|Boolean|Indica se o usuário será ou não impedido de confiar em um aplicativo corporativo.|
-|enterpriseAppBlockTrustModification|Boolean|Indica se o usuário será ou não impedido de modificar as configurações de confiança de um aplicativo corporativo.|
+|enterpriseAppBlockTrustModification|Boolean|\[\] Preterido a definição dessa configuração e a definição do valor como ' true ' não tem efeito no dispositivo.|
 |esimBlockModification|Boolean|Indica se a adição ou a remoção de planos da rede celular deve ou não ser permitida no eSIM de um dispositivo supervisionado.|
 |faceTimeBlocked|Boolean|Indica se o usuário será ou não impedido de usar o FaceTime. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |findMyFriendsBlocked|Boolean|Indica se as alterações serão bloqueadas ou não para localizar meus amigos quando o dispositivo estiver no modo supervisionado.|
@@ -199,7 +197,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosGene
 |safariBlockPopups|Boolean|Indica se os popups devem ou não ser bloqueados no Safari.|
 |safariBlocked|Boolean|Indica se o usuário será ou não impedido de usar o Safari. Requer um dispositivo supervisionado para iOS 13 e posterior.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Configurações de cookie do Safari. Os valores possíveis são: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
-|safariManagedDomains|String collection|As URLs correspondentes aos padrões indicados aqui serão consideradas gerenciadas.|
+|safariManagedDomains|Coleção de cadeias de caracteres|As URLs correspondentes aos padrões indicados aqui serão consideradas gerenciadas.|
 |safariPasswordAutoFillDomains|String collection|Os usuários podem salvar senhas no Safari somente de URLs correspondentes aos padrões indicados aqui. Aplica-se a dispositivos no modo supervisionado (iOS 9.3 ou posterior).|
 |safariRequireFraudWarning|Boolean|Indica se um aviso de fraude deve ou não ser exigido no Safari.|
 |screenCaptureBlocked|Boolean|Indica se o usuário será ou não impedido de fazer capturas de tela.|
@@ -846,7 +844,6 @@ Content-Length: 10690
   "kioskModeAppType": "appStoreApp"
 }
 ```
-
 
 
 

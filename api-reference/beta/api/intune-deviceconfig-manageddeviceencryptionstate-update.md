@@ -1,20 +1,18 @@
 ---
 title: Atualizar managedDeviceEncryptionState
 description: Atualiza as propriedades de um objeto managedDeviceEncryptionState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 230ae36e0a028316a8aec48d0b7490a0a1c82a4a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6109a11d366aece7a1df1b86f4aae2459d696019
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448561"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742978"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>Atualizar managedDeviceEncryptionState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -131,7 +129,6 @@ Content-Length: 753
   ]
 }
 ```
-
 
 
 

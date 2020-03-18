@@ -1,20 +1,18 @@
 ---
 title: Listar macOSEndpointProtectionConfigurations
 description: Listar Propriedades e relações dos objetos macOSEndpointProtectionConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d71ff9b6b65316f46f59b125d337397a1bb8b685
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b424e5dab85fcdeaca67adc5ddba551149be5eb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442345"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746665"
 ---
 # <a name="list-macosendpointprotectionconfigurations"></a>Listar macOSEndpointProtectionConfigurations
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2469
+Content-Length: 3271
 
 {
   "value": [
@@ -123,12 +121,28 @@ Content-Length: 2469
       "fileVaultAllowDeferralUntilSignOut": true,
       "fileVaultNumberOfTimesUserCanIgnore": 3,
       "fileVaultDisablePromptAtSignOut": true,
-      "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+      "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+      "fileVaultHidePersonalRecoveryKey": true,
+      "advancedThreatProtectionRealTime": "enabled",
+      "advancedThreatProtectionCloudDelivered": "enabled",
+      "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+      "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+      "advancedThreatProtectionExcludedFolders": [
+        "Advanced Threat Protection Excluded Folders value"
+      ],
+      "advancedThreatProtectionExcludedFiles": [
+        "Advanced Threat Protection Excluded Files value"
+      ],
+      "advancedThreatProtectionExcludedExtensions": [
+        "Advanced Threat Protection Excluded Extensions value"
+      ],
+      "advancedThreatProtectionExcludedProcesses": [
+        "Advanced Threat Protection Excluded Processes value"
+      ]
     }
   ]
 }
 ```
-
 
 
 

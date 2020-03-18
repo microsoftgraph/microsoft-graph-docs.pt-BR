@@ -1,16 +1,16 @@
 ---
 title: Criar managedDeviceEncryptionState
 description: Criar um novo objeto managedDeviceEncryptionState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 81ffda1a19d42bfcf3f86328674c7e0da602c2e0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 72fb8170032070934a03ffc9db5fbc35da49603e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947922"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743167"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>Criar managedDeviceEncryptionState
 
@@ -55,8 +55,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 |userPrincipalName|String|Nome de usuário|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Plataforma do dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `blackberry`, `palm`, `unknown`,,,,,,,,,,.|
 |osVersion|String|Versão do sistema operacional do dispositivo|
-|tpmSpecificationVersion|Cadeia de Caracteres|Versão do TPM do dispositivo|
-|deviceName|Cadeia de Caracteres|Nome do dispositivo|
+|tpmSpecificationVersion|String|Versão do TPM do dispositivo|
+|deviceName|String|Nome do dispositivo|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|Estado de preparação de criptografia. Os valores possíveis são: `notReady` e `ready`.|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Estado de criptografia do dispositivo. Os valores possíveis são: `notEncrypted` e `encrypted`.|
 |encryptionPolicySettingState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado da configuração da política de criptografia. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
@@ -129,7 +129,6 @@ Content-Length: 753
   ]
 }
 ```
-
 
 
 

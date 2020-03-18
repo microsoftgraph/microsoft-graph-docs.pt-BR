@@ -1,20 +1,18 @@
 ---
 title: Obter windows10ImportedPFXCertificateProfile
 description: Leia as propriedades e as relações do objeto windows10ImportedPFXCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cdcd2503a33ca3d2d84044ca847bcfe3be5d522
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0a85ed60501cffcd98b792690e09a0dddf61f7a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479384"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739520"
 ---
 # <a name="get-windows10importedpfxcertificateprofile"></a>Obter windows10ImportedPFXCertificateProfile
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -116,7 +114,6 @@ Content-Length: 1628
   }
 }
 ```
-
 
 
 

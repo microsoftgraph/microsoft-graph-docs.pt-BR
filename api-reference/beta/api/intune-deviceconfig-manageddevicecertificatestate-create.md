@@ -1,20 +1,18 @@
 ---
 title: Criar managedDeviceCertificateState
 description: Criar um novo objeto managedDeviceCertificateState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ba4d93b02c9c5edd53ad61591f8d0163d89bd44
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fcacd051950270ba26088e2433128086f9fc2d42
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442114"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743342"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Criar managedDeviceCertificateState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -178,7 +176,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
 
 
 

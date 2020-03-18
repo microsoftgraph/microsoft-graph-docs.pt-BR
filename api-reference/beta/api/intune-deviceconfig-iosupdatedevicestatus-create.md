@@ -1,20 +1,18 @@
 ---
 title: Criar iosUpdateDeviceStatus
 description: Criar um novo objeto iosUpdateDeviceStatus.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92d412a6426c5832ea6ecebc1f24a9af9dc65145
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1f37c35e29d6e7fcf2c521fa1a3ebbc2743f8b44
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442597"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42748952"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Criar iosUpdateDeviceStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosUpdat
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são `success`: `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`,,,,,,,,,.|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|O status de instalação do relatório de políticas. Os valores possíveis são `success`: `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`, `sharedDeviceUserLoggedInError`, `deviceOsHigherThanDesiredOsVersion`,,,,,,,,,,.|
 |osVersion|String|A versão do dispositivo que está sendo relatado.|
 |deviceId|String|A ID do dispositivo que está sendo relatado.|
 |userId|Cadeia de caracteres|A ID do usuário que está sendo relatado.|
@@ -122,7 +120,6 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

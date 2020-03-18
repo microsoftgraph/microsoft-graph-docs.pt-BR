@@ -1,20 +1,18 @@
 ---
 title: Listar windowsPhone81CertificateProfileBases
 description: Listar Propriedades e relações dos objetos windowsPhone81CertificateProfileBase.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c19ac9e88dbdf5959969c06aae4c9cc75b2b8c96
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e5f6bf95f858f986d3d1b885663075d82271437
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475520"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42734824"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>Listar windowsPhone81CertificateProfileBases
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -120,7 +118,6 @@ Content-Length: 1887
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Criar macOSEndpointProtectionConfiguration
 description: Criar um novo objeto macOSEndpointProtectionConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfd96698582c247a34fdd602f74acbb71ce8708a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: add0da374dd4dcdd11f9a516f241604ad538f91b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442366"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746896"
 ---
 # <a name="create-macosendpointprotectionconfiguration"></a>Criar macOSEndpointProtectionConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -56,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSEnd
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -80,6 +78,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSEnd
 |fileVaultNumberOfTimesUserCanIgnore|Int32|Opcional. Ao usar a opção Defer, este é o número máximo de vezes que o usuário pode ignorar as solicitações para habilitar o FileVault antes que o usuário entre no FileVault será necessário para entrar. Se for definido como-1, ele sempre solicitará a habilitação do FileVault até que o FileVault esteja habilitado, embora permita que o usuário ignore a habilitação de FileVault. Configurar como 0 desativará o recurso.|
 |fileVaultDisablePromptAtSignOut|Boolean|Opcional. Ao usar a opção Defer, se definida como true, o usuário não será solicitado a habilitar o FileVault ao sair.|
 |fileVaultPersonalRecoveryKeyRotationInMonths|Int32|Opcional. Se os tipos de chave de recuperação selecionados incluírem PersonalRecoveryKey, a frequência de rotação dessa chave, em meses.|
+|fileVaultHidePersonalRecoveryKey|Boolean|Opcional. Uma chave de recuperação pessoal oculta não aparece na tela do usuário durante a criptografia FileVault, reduzindo o risco de ela ser terminada nas mãos erradas.|
+|advancedThreatProtectionRealTime|[habilitação](../resources/intune-shared-enablement.md)|Determina se a proteção em tempo real para proteção avançada contra ameaças do Microsoft defender deve ou não ser habilitada no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionCloudDelivered|[habilitação](../resources/intune-shared-enablement.md)|Determina se a proteção do Microsoft defender para proteção avançada contra ameaças deve ou não ser habilitada no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionAutomaticSampleSubmission|[habilitação](../resources/intune-shared-enablement.md)|Determina se o envio automático de exemplo de arquivo para a proteção avançada contra ameaças do Microsoft defender deve ou não ser habilitado no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionDiagnosticDataCollection|[habilitação](../resources/intune-shared-enablement.md)|Determina se o diagnóstico e a coleta de dados de uso devem ou não ser habilitados para a proteção avançada contra ameaças do Microsoft defender no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|advancedThreatProtectionExcludedFolders|Coleção de cadeias de caracteres|Uma lista de caminhos para pastas a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|advancedThreatProtectionExcludedFiles|Coleção de cadeias de caracteres|Uma lista de caminhos para arquivos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|advancedThreatProtectionExcludedExtensions|Coleção de cadeias de caracteres|Uma lista de extensões de arquivo para excluir da verificação antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|advancedThreatProtectionExcludedProcesses|Coleção de cadeias de caracteres|Uma lista de nomes de processos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
 
 
 
@@ -93,7 +100,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2052
+Content-length: 2786
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -145,7 +152,24 @@ Content-length: 2052
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
 
@@ -154,7 +178,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2224
+Content-Length: 2958
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -209,10 +233,26 @@ Content-Length: 2224
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
-
 
 
 

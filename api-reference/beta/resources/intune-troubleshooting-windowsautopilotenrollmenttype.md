@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windowsAutopilotEnrollmentType
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ef841c36cbf7f636daca89e544ae926a11cd5919
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c463aacd54b6720960f26d29a5da3ceb410d900b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523265"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729091"
 ---
 # <a name="windowsautopilotenrollmenttype-enum-type"></a>tipo de enumeração windowsAutopilotEnrollmentType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ainda não documentado|
-|azureADJoinedWithAutopilotProfile|1 |Ainda não documentado|
-|offlineDomainJoined|2 |Ainda não documentado|
-|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3 |Ainda não documentado|
+|azureADJoinedWithAutopilotProfile|1|Ainda não documentado|
+|offlineDomainJoined|duas|Ainda não documentado|
+|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3D|Ainda não documentado|
 |azureADJoinedUsingDeviceAuthWithoutAutopilotProfile|4 |Ainda não documentado|
 |azureADJoinedWithOfflineAutopilotProfile|5 |Ainda não documentado|
 |azureADJoinedWithWhiteGlove|6 |Ainda não documentado|

@@ -1,20 +1,18 @@
 ---
 title: Atualizar deviceManagementIntent
 description: Atualiza as propriedades de um objeto deviceManagementIntent.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 606fb1eeb718e80aaef5e966f6cac29d79a980ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a86550ad6719e81b9b84d56fceabfe8351f3a9de
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471187"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729203"
 ---
 # <a name="update-devicemanagementintent"></a>Atualizar deviceManagementIntent
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
 |templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -107,7 +105,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

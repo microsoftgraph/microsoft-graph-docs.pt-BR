@@ -1,20 +1,18 @@
 ---
 title: Obter windowsDeliveryOptimizationConfiguration
 description: Leia as propriedades e as relações do objeto windowsDeliveryOptimizationConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f024ed08cb013ddbd5e1b3a6cc8a2e6da78ccea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e420d124c6946ffa6f3d90cc93c4d0162f38ad72
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476185"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735641"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>Obter windowsDeliveryOptimizationConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -134,7 +132,6 @@ Content-Length: 2344
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Listar windowsPhoneEASEmailProfileConfigurations
 description: Listar Propriedades e relações dos objetos windowsPhoneEASEmailProfileConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68975a5ebac8fd2ad0b16e58ce6d4346f91e9709
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b6f71a90c153bbad9b193bad0e7330bf733541c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473994"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732913"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>Listar windowsPhoneEASEmailProfileConfigurations
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -121,7 +119,6 @@ Content-Length: 1956
   ]
 }
 ```
-
 
 
 

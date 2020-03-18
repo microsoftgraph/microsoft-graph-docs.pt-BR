@@ -1,20 +1,18 @@
 ---
 title: Criar settingStateDeviceSummary
 description: Criar um novo objeto settingStateDeviceSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6dcf024f4e199214699c3a7ee1298e52d10c970f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d2ce37b52dce53c79035b906658380509438d58
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42483543"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742327"
 ---
 # <a name="create-settingstatedevicesummary"></a>Criar settingStateDeviceSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -123,7 +121,6 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 
