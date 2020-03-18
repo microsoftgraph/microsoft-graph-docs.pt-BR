@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770764"
+ms.locfileid: "42814894"
 ---
 # <a name="create-securitybaselinedevicestate"></a><span data-ttu-id="72a59-103">Criar securityBaselineDeviceState</span><span class="sxs-lookup"><span data-stu-id="72a59-103">Create securityBaselineDeviceState</span></span>
 

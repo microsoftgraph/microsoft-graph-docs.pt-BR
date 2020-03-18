@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774551"
+ms.locfileid: "42814159"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a><span data-ttu-id="8b5c9-103">ação sendCustomNotificationToCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="8b5c9-103">sendCustomNotificationToCompanyPortal action</span></span>
 

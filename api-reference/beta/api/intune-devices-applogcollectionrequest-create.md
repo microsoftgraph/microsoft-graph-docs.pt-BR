@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770218"
+ms.locfileid: "42814775"
 ---
 # <a name="create-applogcollectionrequest"></a><span data-ttu-id="12eee-103">Criar appLogCollectionRequest</span><span class="sxs-lookup"><span data-stu-id="12eee-103">Create appLogCollectionRequest</span></span>
 

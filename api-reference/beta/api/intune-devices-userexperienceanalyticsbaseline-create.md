@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773340"
+ms.locfileid: "42814039"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a><span data-ttu-id="37f2d-103">Criar userExperienceAnalyticsBaseline</span><span class="sxs-lookup"><span data-stu-id="37f2d-103">Create userExperienceAnalyticsBaseline</span></span>
 

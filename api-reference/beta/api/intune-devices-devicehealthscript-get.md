@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769434"
+ms.locfileid: "42814621"
 ---
 # <a name="get-devicehealthscript"></a><span data-ttu-id="5f6a3-103">Obter deviceHealthScript</span><span class="sxs-lookup"><span data-stu-id="5f6a3-103">Get deviceHealthScript</span></span>
 

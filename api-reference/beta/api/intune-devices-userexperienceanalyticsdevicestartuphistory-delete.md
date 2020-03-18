@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772346"
+ms.locfileid: "42813941"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartuphistory"></a><span data-ttu-id="3110e-103">Excluir userExperienceAnalyticsDeviceStartupHistory</span><span class="sxs-lookup"><span data-stu-id="3110e-103">Delete userExperienceAnalyticsDeviceStartupHistory</span></span>
 

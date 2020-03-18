@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771051"
+ms.locfileid: "42814957"
 ---
 # <a name="delete-devicemanagementtemplatesettingcategory"></a><span data-ttu-id="fb47d-103">Excluir deviceManagementTemplateSettingCategory</span><span class="sxs-lookup"><span data-stu-id="fb47d-103">Delete deviceManagementTemplateSettingCategory</span></span>
 

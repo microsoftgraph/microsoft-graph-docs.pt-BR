@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774306"
+ms.locfileid: "42814131"
 ---
 # <a name="triggerconfigurationmanageraction-action"></a><span data-ttu-id="1d419-103">ação triggerConfigurationManagerAction</span><span class="sxs-lookup"><span data-stu-id="1d419-103">triggerConfigurationManagerAction action</span></span>
 

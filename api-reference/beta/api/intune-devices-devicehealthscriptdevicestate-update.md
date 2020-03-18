@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769056"
+ms.locfileid: "42814516"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a><span data-ttu-id="23e1f-103">Atualizar deviceHealthScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="23e1f-103">Update deviceHealthScriptDeviceState</span></span>
 

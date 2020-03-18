@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775132"
+ms.locfileid: "42814208"
 ---
 # <a name="remotelock-action"></a><span data-ttu-id="cd86b-103">Ação remoteLock</span><span class="sxs-lookup"><span data-stu-id="cd86b-103">remoteLock action</span></span>
 

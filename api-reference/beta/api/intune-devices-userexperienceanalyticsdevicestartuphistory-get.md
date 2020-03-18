@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772339"
+ms.locfileid: "42813934"
 ---
 # <a name="get-userexperienceanalyticsdevicestartuphistory"></a><span data-ttu-id="422c5-103">Obter userExperienceAnalyticsDeviceStartupHistory</span><span class="sxs-lookup"><span data-stu-id="422c5-103">Get userExperienceAnalyticsDeviceStartupHistory</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772759"
+ms.locfileid: "42813976"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a><span data-ttu-id="a2e59-103">Obter userExperienceAnalyticsDevicePerformance</span><span class="sxs-lookup"><span data-stu-id="a2e59-103">Get userExperienceAnalyticsDevicePerformance</span></span>
 

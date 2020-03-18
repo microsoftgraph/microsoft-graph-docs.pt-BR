@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770204"
+ms.locfileid: "42814761"
 ---
 # <a name="delete-applogcollectionrequest"></a><span data-ttu-id="b5f2c-103">Excluir appLogCollectionRequest</span><span class="sxs-lookup"><span data-stu-id="b5f2c-103">Delete appLogCollectionRequest</span></span>
 

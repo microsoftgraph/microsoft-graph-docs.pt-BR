@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765241"
+ms.locfileid: "42814992"
 ---
 # <a name="delete-devicemanagementtemplate"></a><span data-ttu-id="d6c5b-103">Excluir deviceManagementTemplate</span><span class="sxs-lookup"><span data-stu-id="d6c5b-103">Delete deviceManagementTemplate</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769686"
+ms.locfileid: "42814691"
 ---
 # <a name="create-detectedapp"></a><span data-ttu-id="eaa1e-103">Criar detectedApp</span><span class="sxs-lookup"><span data-stu-id="eaa1e-103">Create detectedApp</span></span>
 

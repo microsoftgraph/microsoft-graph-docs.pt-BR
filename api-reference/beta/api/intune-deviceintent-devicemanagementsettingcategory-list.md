@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765556"
+ms.locfileid: "42815111"
 ---
 # <a name="list-devicemanagementsettingcategories"></a><span data-ttu-id="a099a-103">Listar deviceManagementSettingCategories</span><span class="sxs-lookup"><span data-stu-id="a099a-103">List deviceManagementSettingCategories</span></span>
 

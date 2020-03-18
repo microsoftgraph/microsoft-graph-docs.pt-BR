@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769609"
+ms.locfileid: "42814649"
 ---
 # <a name="assign-action"></a><span data-ttu-id="3a743-103">atribuir ação</span><span class="sxs-lookup"><span data-stu-id="3a743-103">assign action</span></span>
 

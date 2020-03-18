@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769735"
+ms.locfileid: "42814705"
 ---
 # <a name="list-datasharingconsents"></a><span data-ttu-id="30229-103">Listar dataSharingConsents</span><span class="sxs-lookup"><span data-stu-id="30229-103">List dataSharingConsents</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765248"
+ms.locfileid: "42815006"
 ---
 # <a name="create-devicemanagementtemplate"></a><span data-ttu-id="91cba-103">Criar deviceManagementTemplate</span><span class="sxs-lookup"><span data-stu-id="91cba-103">Create deviceManagementTemplate</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771695"
+ms.locfileid: "42815083"
 ---
 # <a name="get-devicemanagementsettingdefinition"></a><span data-ttu-id="47788-103">Obter deviceManagementSettingDefinition</span><span class="sxs-lookup"><span data-stu-id="47788-103">Get deviceManagementSettingDefinition</span></span>
 

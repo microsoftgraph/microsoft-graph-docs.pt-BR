@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765339"
+ms.locfileid: "42815034"
 ---
 # <a name="get-devicemanagementstringsettinginstance"></a><span data-ttu-id="99202-103">Obter deviceManagementStringSettingInstance</span><span class="sxs-lookup"><span data-stu-id="99202-103">Get deviceManagementStringSettingInstance</span></span>
 

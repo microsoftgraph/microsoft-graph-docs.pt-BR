@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772997"
+ms.locfileid: "42814004"
 ---
 # <a name="get-userexperienceanalyticscategory"></a><span data-ttu-id="7c0b0-103">Obter userExperienceAnalyticsCategory</span><span class="sxs-lookup"><span data-stu-id="7c0b0-103">Get userExperienceAnalyticsCategory</span></span>
 

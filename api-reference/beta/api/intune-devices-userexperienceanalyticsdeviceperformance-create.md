@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772885"
+ms.locfileid: "42813990"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a><span data-ttu-id="33f29-103">Criar userExperienceAnalyticsDevicePerformance</span><span class="sxs-lookup"><span data-stu-id="33f29-103">Create userExperienceAnalyticsDevicePerformance</span></span>
 

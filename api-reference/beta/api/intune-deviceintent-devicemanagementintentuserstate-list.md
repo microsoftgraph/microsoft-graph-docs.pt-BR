@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772101"
+ms.locfileid: "42815160"
 ---
 # <a name="list-devicemanagementintentuserstates"></a><span data-ttu-id="8e362-103">Listar deviceManagementIntentUserStates</span><span class="sxs-lookup"><span data-stu-id="8e362-103">List deviceManagementIntentUserStates</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774299"
+ms.locfileid: "42814124"
 ---
 # <a name="update-manageddevice"></a><span data-ttu-id="8e3bf-103">Atualizar managedDevice</span><span class="sxs-lookup"><span data-stu-id="8e3bf-103">Update managedDevice</span></span>
 
