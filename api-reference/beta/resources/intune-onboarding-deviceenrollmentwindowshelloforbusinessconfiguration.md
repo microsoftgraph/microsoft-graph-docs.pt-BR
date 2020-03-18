@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: As configurações do Windows Hello para empresas permitem que os usuários acessem seus dispositivos usando um gesto, como a autenticação biométrica ou um PIN. Definir configurações para o Windows 10, Windows 10 Mobile e posterior registrados.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8188177065623176f31dec0e6ddfc8ebec5bff5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50ba5c5a2df8455ce50b36ca276780339f495a86
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524178"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779405"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

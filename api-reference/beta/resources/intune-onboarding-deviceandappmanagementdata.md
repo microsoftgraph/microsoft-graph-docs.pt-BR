@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceAndAppManagementData
 description: Dados exportados
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ae7bdb89764e3285b25af87a942981fb7ab820b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7521a37001cb31347a57c3082012c895be956520
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524192"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779776"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>tipo de recurso deviceAndAppManagementData
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

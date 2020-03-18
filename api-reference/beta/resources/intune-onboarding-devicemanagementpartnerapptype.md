@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração deviceManagementPartnerAppType
 description: Tipo de aplicativo de parceiro.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa071d5fe7ae7381b32196197e51688be52f683d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4fa69b5a624355f5d51d6ee9a15dba9b8ad9226
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524122"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778838"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>tipo de enumeração deviceManagementPartnerAppType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Tipo de aplicativo de parceiro.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O tipo de aplicativo parceiro é desconhecido.|
-|singleTenantApp|1 |O aplicativo parceiro é um único locatário no AAD.|
-|multiTenantApp|2 |O aplicativo parceiro é de vários locatários no AAD.|
+|singleTenantApp|1|O aplicativo parceiro é um único locatário no AAD.|
+|multiTenantApp|duas|O aplicativo parceiro é de vários locatários no AAD.|
 
 
 

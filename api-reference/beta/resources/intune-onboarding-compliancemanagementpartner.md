@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso complianceManagementPartner
 description: Parceiro de gerenciamento de conformidade para todas as plataformas
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0ede9726f1fd50169e3d3e8701a0edf98755b2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9141d40aaaea00e2d181b7e38f595c3241ebe82
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527782"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779846"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>tipo de recurso complianceManagementPartner
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

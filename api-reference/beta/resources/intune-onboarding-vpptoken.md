@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso vppToken
 description: Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume Purchase Program para Empresas ou Educação. Isso envolve configurar uma conta do Apple VPP do site da Apple e carregar o token do Apple VPP Empresarial ou Educacional ao Intune. Você pode sincronizar suas informações de volume de compras com o Intune e acompanhar o uso do aplicativo comprado por volume. Você pode carregar vários tokens do Apple VPP Empresarial ou Educacional.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a27f6d2e630d6e83d600cc555cf625590584a677
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4f2cdb7ff14984243c5e8b6317e4f0f3c05b12b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524073"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42777844"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -54,7 +52,7 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
 |LocationName|String|Local do token retornado da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
-|roleScopeTagIds|String collection|IDs de marcas de escopo de função atribuídas a esta entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

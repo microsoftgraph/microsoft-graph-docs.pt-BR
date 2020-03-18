@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso onPremEncryptedPayload
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08d5f3102bb2c748d24235290a8f75abe8408334
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be5152f0467ea3630d6aeb24534dd149fbc74447
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527593"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774782"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>tipo de recurso onPremEncryptedPayload
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

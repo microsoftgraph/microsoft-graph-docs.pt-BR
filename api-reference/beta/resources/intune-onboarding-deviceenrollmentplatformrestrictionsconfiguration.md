@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 description: Configuração de registro de dispositivo que restringe os tipos de dispositivos que um usuário pode registrar
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44f6bada6a1d27956ac73ecc9d0d00e2ec9573b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e89a96a111399310a264ff3c9c6f91dca35cf9ae
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527762"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779440"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

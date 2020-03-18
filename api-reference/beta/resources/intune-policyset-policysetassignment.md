@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso policySetAssignment
 description: Uma classe que contém as propriedades usadas para atribuição de Policyset.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 620a7f92d1105a0eb5d17d27dfa2f5455944be37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee8343c3e2a9aa336343150b0719821cb3b89ce4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527603"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42775181"
 ---
 # <a name="policysetassignment-resource-type"></a>tipo de recurso policySetAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
