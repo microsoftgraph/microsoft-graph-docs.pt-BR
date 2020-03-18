@@ -1,42 +1,40 @@
 ---
 title: Tipo de recurso iosStoreAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da iOS Store para um grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea50a193467d684de052292b8113b6ae3c95d7fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23cb5d484aaa813bfb1b3cd352cd0168e750713e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527398"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769672"
 ---
-# <a name="iosstoreappassignmentsettings-resource-type"></a><span data-ttu-id="e2e7e-103">Tipo de recurso iosStoreAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="e2e7e-103">iosStoreAppAssignmentSettings resource type</span></span>
+# <a name="iosstoreappassignmentsettings-resource-type"></a><span data-ttu-id="5dc2a-103">Tipo de recurso iosStoreAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="5dc2a-103">iosStoreAppAssignmentSettings resource type</span></span>
 
-<span data-ttu-id="e2e7e-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e2e7e-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="5dc2a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5dc2a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e2e7e-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e2e7e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5dc2a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5dc2a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="e2e7e-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e2e7e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
-
-<span data-ttu-id="e2e7e-107">Contém propriedades usadas para atribuir um aplicativo móvel da iOS Store para um grupo.</span><span class="sxs-lookup"><span data-stu-id="e2e7e-107">Contains properties used to assign an iOS Store mobile app to a group.</span></span>
+<span data-ttu-id="5dc2a-106">Contém propriedades usadas para atribuir um aplicativo móvel da iOS Store para um grupo.</span><span class="sxs-lookup"><span data-stu-id="5dc2a-106">Contains properties used to assign an iOS Store mobile app to a group.</span></span>
 
 
-<span data-ttu-id="e2e7e-108">Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="e2e7e-108">Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)</span></span>
+<span data-ttu-id="5dc2a-107">Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="5dc2a-107">Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e2e7e-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e2e7e-109">Properties</span></span>
-|<span data-ttu-id="e2e7e-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e2e7e-110">Property</span></span>|<span data-ttu-id="e2e7e-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="e2e7e-111">Type</span></span>|<span data-ttu-id="e2e7e-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2e7e-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5dc2a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5dc2a-108">Properties</span></span>
+|<span data-ttu-id="5dc2a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5dc2a-109">Property</span></span>|<span data-ttu-id="5dc2a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="5dc2a-110">Type</span></span>|<span data-ttu-id="5dc2a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="5dc2a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e2e7e-113">vpnConfigurationId</span><span class="sxs-lookup"><span data-stu-id="e2e7e-113">vpnConfigurationId</span></span>|<span data-ttu-id="e2e7e-114">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e2e7e-114">String</span></span>|<span data-ttu-id="e2e7e-115">A identificação de configuração da VPN a aplicar neste aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e2e7e-115">The VPN Configuration Id to apply for this app.</span></span>|
-|<span data-ttu-id="e2e7e-116">**Apps**</span><span class="sxs-lookup"><span data-stu-id="e2e7e-116">**Apps**</span></span>|
-|<span data-ttu-id="e2e7e-117">uninstallOnDeviceRemoval</span><span class="sxs-lookup"><span data-stu-id="e2e7e-117">uninstallOnDeviceRemoval</span></span>|<span data-ttu-id="e2e7e-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="e2e7e-118">Boolean</span></span>|<span data-ttu-id="e2e7e-119">Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.</span><span class="sxs-lookup"><span data-stu-id="e2e7e-119">Whether or not to uninstall the app when device is removed from Intune.</span></span>|
+|<span data-ttu-id="5dc2a-112">vpnConfigurationId</span><span class="sxs-lookup"><span data-stu-id="5dc2a-112">vpnConfigurationId</span></span>|<span data-ttu-id="5dc2a-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5dc2a-113">String</span></span>|<span data-ttu-id="5dc2a-114">A identificação de configuração da VPN a aplicar neste aplicativo.</span><span class="sxs-lookup"><span data-stu-id="5dc2a-114">The VPN Configuration Id to apply for this app.</span></span>|
+|<span data-ttu-id="5dc2a-115">**Apps**</span><span class="sxs-lookup"><span data-stu-id="5dc2a-115">**Apps**</span></span>|
+|<span data-ttu-id="5dc2a-116">uninstallOnDeviceRemoval</span><span class="sxs-lookup"><span data-stu-id="5dc2a-116">uninstallOnDeviceRemoval</span></span>|<span data-ttu-id="5dc2a-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="5dc2a-117">Boolean</span></span>|<span data-ttu-id="5dc2a-118">Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.</span><span class="sxs-lookup"><span data-stu-id="5dc2a-118">Whether or not to uninstall the app when device is removed from Intune.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e2e7e-120">Relações</span><span class="sxs-lookup"><span data-stu-id="e2e7e-120">Relationships</span></span>
-<span data-ttu-id="e2e7e-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e2e7e-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="5dc2a-119">Relações</span><span class="sxs-lookup"><span data-stu-id="5dc2a-119">Relationships</span></span>
+<span data-ttu-id="5dc2a-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="5dc2a-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e2e7e-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e2e7e-122">JSON Representation</span></span>
-<span data-ttu-id="e2e7e-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e2e7e-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5dc2a-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5dc2a-121">JSON Representation</span></span>
+<span data-ttu-id="5dc2a-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5dc2a-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"

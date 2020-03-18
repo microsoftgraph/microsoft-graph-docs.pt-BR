@@ -1,37 +1,35 @@
 ---
 title: Criar deviceManagementIntentDeviceSettingStateSummary
 description: Criar um novo objeto deviceManagementIntentDeviceSettingStateSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d29d3596c19ddbeb661ee3986787c0337ab2e80e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c817cc0fd8a0d8f101a3ea911e1dc733370f5c99
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471061"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767278"
 ---
-# <a name="create-devicemanagementintentdevicesettingstatesummary"></a><span data-ttu-id="1eb20-103">Criar deviceManagementIntentDeviceSettingStateSummary</span><span class="sxs-lookup"><span data-stu-id="1eb20-103">Create deviceManagementIntentDeviceSettingStateSummary</span></span>
+# <a name="create-devicemanagementintentdevicesettingstatesummary"></a><span data-ttu-id="3a34f-103">Criar deviceManagementIntentDeviceSettingStateSummary</span><span class="sxs-lookup"><span data-stu-id="3a34f-103">Create deviceManagementIntentDeviceSettingStateSummary</span></span>
 
-<span data-ttu-id="1eb20-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1eb20-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="3a34f-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3a34f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1eb20-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1eb20-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3a34f-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3a34f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="1eb20-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1eb20-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="3a34f-106">Criar um novo objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) .</span><span class="sxs-lookup"><span data-stu-id="3a34f-106">Create a new [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.</span></span>
 
-<span data-ttu-id="1eb20-107">Criar um novo objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) .</span><span class="sxs-lookup"><span data-stu-id="1eb20-107">Create a new [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3a34f-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3a34f-107">Prerequisites</span></span>
+<span data-ttu-id="3a34f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a34f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1eb20-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1eb20-108">Prerequisites</span></span>
-<span data-ttu-id="1eb20-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1eb20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="1eb20-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1eb20-111">Permission type</span></span>|<span data-ttu-id="1eb20-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1eb20-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3a34f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3a34f-110">Permission type</span></span>|<span data-ttu-id="3a34f-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="3a34f-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1eb20-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1eb20-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1eb20-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1eb20-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="1eb20-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1eb20-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1eb20-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1eb20-116">Not supported.</span></span>|
-|<span data-ttu-id="1eb20-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1eb20-117">Application</span></span>|<span data-ttu-id="1eb20-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1eb20-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="3a34f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3a34f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3a34f-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a34f-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="3a34f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3a34f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3a34f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a34f-115">Not supported.</span></span>|
+|<span data-ttu-id="3a34f-116">Application</span><span class="sxs-lookup"><span data-stu-id="3a34f-116">Application</span></span>|<span data-ttu-id="3a34f-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a34f-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1eb20-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1eb20-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a34f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3a34f-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,37 +38,37 @@ ms.locfileid: "42471061"
 POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSummaries
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1eb20-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1eb20-120">Request headers</span></span>
-|<span data-ttu-id="1eb20-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1eb20-121">Header</span></span>|<span data-ttu-id="1eb20-122">Valor</span><span class="sxs-lookup"><span data-stu-id="1eb20-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3a34f-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3a34f-119">Request headers</span></span>
+|<span data-ttu-id="3a34f-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3a34f-120">Header</span></span>|<span data-ttu-id="3a34f-121">Valor</span><span class="sxs-lookup"><span data-stu-id="3a34f-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1eb20-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="1eb20-123">Authorization</span></span>|<span data-ttu-id="1eb20-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1eb20-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1eb20-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1eb20-125">Accept</span></span>|<span data-ttu-id="1eb20-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1eb20-126">application/json</span></span>|
+|<span data-ttu-id="3a34f-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="3a34f-122">Authorization</span></span>|<span data-ttu-id="3a34f-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3a34f-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3a34f-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="3a34f-124">Accept</span></span>|<span data-ttu-id="3a34f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3a34f-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1eb20-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1eb20-127">Request body</span></span>
-<span data-ttu-id="1eb20-128">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementIntentDeviceSettingStateSummary.</span><span class="sxs-lookup"><span data-stu-id="1eb20-128">In the request body, supply a JSON representation for the deviceManagementIntentDeviceSettingStateSummary object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a34f-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3a34f-126">Request body</span></span>
+<span data-ttu-id="3a34f-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementIntentDeviceSettingStateSummary.</span><span class="sxs-lookup"><span data-stu-id="3a34f-127">In the request body, supply a JSON representation for the deviceManagementIntentDeviceSettingStateSummary object.</span></span>
 
-<span data-ttu-id="1eb20-129">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementIntentDeviceSettingStateSummary.</span><span class="sxs-lookup"><span data-stu-id="1eb20-129">The following table shows the properties that are required when you create the deviceManagementIntentDeviceSettingStateSummary.</span></span>
+<span data-ttu-id="3a34f-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementIntentDeviceSettingStateSummary.</span><span class="sxs-lookup"><span data-stu-id="3a34f-128">The following table shows the properties that are required when you create the deviceManagementIntentDeviceSettingStateSummary.</span></span>
 
-|<span data-ttu-id="1eb20-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1eb20-130">Property</span></span>|<span data-ttu-id="1eb20-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="1eb20-131">Type</span></span>|<span data-ttu-id="1eb20-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="1eb20-132">Description</span></span>|
+|<span data-ttu-id="3a34f-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3a34f-129">Property</span></span>|<span data-ttu-id="3a34f-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3a34f-130">Type</span></span>|<span data-ttu-id="3a34f-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3a34f-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1eb20-133">id</span><span class="sxs-lookup"><span data-stu-id="1eb20-133">id</span></span>|<span data-ttu-id="1eb20-134">String</span><span class="sxs-lookup"><span data-stu-id="1eb20-134">String</span></span>|<span data-ttu-id="1eb20-135">A ID</span><span class="sxs-lookup"><span data-stu-id="1eb20-135">The ID</span></span>|
-|<span data-ttu-id="1eb20-136">settingName</span><span class="sxs-lookup"><span data-stu-id="1eb20-136">settingName</span></span>|<span data-ttu-id="1eb20-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1eb20-137">String</span></span>|<span data-ttu-id="1eb20-138">Nome de uma configuração</span><span class="sxs-lookup"><span data-stu-id="1eb20-138">Name of a setting</span></span>|
-|<span data-ttu-id="1eb20-139">compliantCount</span><span class="sxs-lookup"><span data-stu-id="1eb20-139">compliantCount</span></span>|<span data-ttu-id="1eb20-140">Int32</span><span class="sxs-lookup"><span data-stu-id="1eb20-140">Int32</span></span>|<span data-ttu-id="1eb20-141">Número de dispositivos em conformidade</span><span class="sxs-lookup"><span data-stu-id="1eb20-141">Number of compliant devices</span></span>|
-|<span data-ttu-id="1eb20-142">conflictCount</span><span class="sxs-lookup"><span data-stu-id="1eb20-142">conflictCount</span></span>|<span data-ttu-id="1eb20-143">Int32</span><span class="sxs-lookup"><span data-stu-id="1eb20-143">Int32</span></span>|<span data-ttu-id="1eb20-144">Número de dispositivos em conflito</span><span class="sxs-lookup"><span data-stu-id="1eb20-144">Number of devices in conflict</span></span>|
-|<span data-ttu-id="1eb20-145">errorCount</span><span class="sxs-lookup"><span data-stu-id="1eb20-145">errorCount</span></span>|<span data-ttu-id="1eb20-146">Int32</span><span class="sxs-lookup"><span data-stu-id="1eb20-146">Int32</span></span>|<span data-ttu-id="1eb20-147">Número de dispositivos com erro</span><span class="sxs-lookup"><span data-stu-id="1eb20-147">Number of error devices</span></span>|
-|<span data-ttu-id="1eb20-148">nonCompliantCount</span><span class="sxs-lookup"><span data-stu-id="1eb20-148">nonCompliantCount</span></span>|<span data-ttu-id="1eb20-149">Int32</span><span class="sxs-lookup"><span data-stu-id="1eb20-149">Int32</span></span>|<span data-ttu-id="1eb20-150">Número de dispositivos não compatíveis</span><span class="sxs-lookup"><span data-stu-id="1eb20-150">Number of non compliant devices</span></span>|
-|<span data-ttu-id="1eb20-151">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="1eb20-151">notApplicableCount</span></span>|<span data-ttu-id="1eb20-152">Int32</span><span class="sxs-lookup"><span data-stu-id="1eb20-152">Int32</span></span>|<span data-ttu-id="1eb20-153">Número de dispositivos não aplicáveis</span><span class="sxs-lookup"><span data-stu-id="1eb20-153">Number of not applicable devices</span></span>|
-|<span data-ttu-id="1eb20-154">remediatedCount</span><span class="sxs-lookup"><span data-stu-id="1eb20-154">remediatedCount</span></span>|<span data-ttu-id="1eb20-155">Int32</span><span class="sxs-lookup"><span data-stu-id="1eb20-155">Int32</span></span>|<span data-ttu-id="1eb20-156">Número de dispositivos corrigidos</span><span class="sxs-lookup"><span data-stu-id="1eb20-156">Number of remediated devices</span></span>|
+|<span data-ttu-id="3a34f-132">id</span><span class="sxs-lookup"><span data-stu-id="3a34f-132">id</span></span>|<span data-ttu-id="3a34f-133">String</span><span class="sxs-lookup"><span data-stu-id="3a34f-133">String</span></span>|<span data-ttu-id="3a34f-134">A ID</span><span class="sxs-lookup"><span data-stu-id="3a34f-134">The ID</span></span>|
+|<span data-ttu-id="3a34f-135">settingName</span><span class="sxs-lookup"><span data-stu-id="3a34f-135">settingName</span></span>|<span data-ttu-id="3a34f-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3a34f-136">String</span></span>|<span data-ttu-id="3a34f-137">Nome de uma configuração</span><span class="sxs-lookup"><span data-stu-id="3a34f-137">Name of a setting</span></span>|
+|<span data-ttu-id="3a34f-138">compliantCount</span><span class="sxs-lookup"><span data-stu-id="3a34f-138">compliantCount</span></span>|<span data-ttu-id="3a34f-139">Int32</span><span class="sxs-lookup"><span data-stu-id="3a34f-139">Int32</span></span>|<span data-ttu-id="3a34f-140">Número de dispositivos em conformidade</span><span class="sxs-lookup"><span data-stu-id="3a34f-140">Number of compliant devices</span></span>|
+|<span data-ttu-id="3a34f-141">conflictCount</span><span class="sxs-lookup"><span data-stu-id="3a34f-141">conflictCount</span></span>|<span data-ttu-id="3a34f-142">Int32</span><span class="sxs-lookup"><span data-stu-id="3a34f-142">Int32</span></span>|<span data-ttu-id="3a34f-143">Número de dispositivos em conflito</span><span class="sxs-lookup"><span data-stu-id="3a34f-143">Number of devices in conflict</span></span>|
+|<span data-ttu-id="3a34f-144">errorCount</span><span class="sxs-lookup"><span data-stu-id="3a34f-144">errorCount</span></span>|<span data-ttu-id="3a34f-145">Int32</span><span class="sxs-lookup"><span data-stu-id="3a34f-145">Int32</span></span>|<span data-ttu-id="3a34f-146">Número de dispositivos com erro</span><span class="sxs-lookup"><span data-stu-id="3a34f-146">Number of error devices</span></span>|
+|<span data-ttu-id="3a34f-147">nonCompliantCount</span><span class="sxs-lookup"><span data-stu-id="3a34f-147">nonCompliantCount</span></span>|<span data-ttu-id="3a34f-148">Int32</span><span class="sxs-lookup"><span data-stu-id="3a34f-148">Int32</span></span>|<span data-ttu-id="3a34f-149">Número de dispositivos não compatíveis</span><span class="sxs-lookup"><span data-stu-id="3a34f-149">Number of non compliant devices</span></span>|
+|<span data-ttu-id="3a34f-150">notApplicableCount</span><span class="sxs-lookup"><span data-stu-id="3a34f-150">notApplicableCount</span></span>|<span data-ttu-id="3a34f-151">Int32</span><span class="sxs-lookup"><span data-stu-id="3a34f-151">Int32</span></span>|<span data-ttu-id="3a34f-152">Número de dispositivos não aplicáveis</span><span class="sxs-lookup"><span data-stu-id="3a34f-152">Number of not applicable devices</span></span>|
+|<span data-ttu-id="3a34f-153">remediatedCount</span><span class="sxs-lookup"><span data-stu-id="3a34f-153">remediatedCount</span></span>|<span data-ttu-id="3a34f-154">Int32</span><span class="sxs-lookup"><span data-stu-id="3a34f-154">Int32</span></span>|<span data-ttu-id="3a34f-155">Número de dispositivos corrigidos</span><span class="sxs-lookup"><span data-stu-id="3a34f-155">Number of remediated devices</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1eb20-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="1eb20-157">Response</span></span>
-<span data-ttu-id="1eb20-158">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1eb20-158">If successful, this method returns a `201 Created` response code and a [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3a34f-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a34f-156">Response</span></span>
+<span data-ttu-id="3a34f-157">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3a34f-157">If successful, this method returns a `201 Created` response code and a [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1eb20-159">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1eb20-159">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3a34f-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3a34f-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1eb20-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1eb20-160">Request</span></span>
-<span data-ttu-id="1eb20-161">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1eb20-161">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3a34f-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a34f-159">Request</span></span>
+<span data-ttu-id="3a34f-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3a34f-160">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSummaries
 Content-type: application/json
@@ -88,8 +86,8 @@ Content-length: 280
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1eb20-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="1eb20-162">Response</span></span>
-<span data-ttu-id="1eb20-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1eb20-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3a34f-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a34f-161">Response</span></span>
+<span data-ttu-id="3a34f-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3a34f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -107,7 +105,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 
