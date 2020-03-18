@@ -1,37 +1,35 @@
 ---
 title: Criar mobileAppIntentAndState
 description: Criar um novo objeto mobileAppIntentAndState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fe4cce732d11733a2c1e0ce7aef34f0e111f378
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6b5132675f09da3b26ffca6e51893ab64afed43
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457626"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800120"
 ---
-# <a name="create-mobileappintentandstate"></a><span data-ttu-id="cbb86-103">Criar mobileAppIntentAndState</span><span class="sxs-lookup"><span data-stu-id="cbb86-103">Create mobileAppIntentAndState</span></span>
+# <a name="create-mobileappintentandstate"></a><span data-ttu-id="ad53d-103">Criar mobileAppIntentAndState</span><span class="sxs-lookup"><span data-stu-id="ad53d-103">Create mobileAppIntentAndState</span></span>
 
-<span data-ttu-id="cbb86-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="cbb86-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="ad53d-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ad53d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cbb86-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="cbb86-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ad53d-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ad53d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="cbb86-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="cbb86-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="ad53d-106">Criar um novo objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .</span><span class="sxs-lookup"><span data-stu-id="ad53d-106">Create a new [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
 
-<span data-ttu-id="cbb86-107">Criar um novo objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .</span><span class="sxs-lookup"><span data-stu-id="cbb86-107">Create a new [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="ad53d-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ad53d-107">Prerequisites</span></span>
+<span data-ttu-id="ad53d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad53d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="cbb86-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="cbb86-108">Prerequisites</span></span>
-<span data-ttu-id="cbb86-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbb86-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="cbb86-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cbb86-111">Permission type</span></span>|<span data-ttu-id="cbb86-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="cbb86-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ad53d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ad53d-110">Permission type</span></span>|<span data-ttu-id="ad53d-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ad53d-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cbb86-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cbb86-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cbb86-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbb86-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="cbb86-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cbb86-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cbb86-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cbb86-116">Not supported.</span></span>|
-|<span data-ttu-id="cbb86-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cbb86-117">Application</span></span>|<span data-ttu-id="cbb86-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbb86-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ad53d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ad53d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ad53d-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad53d-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="ad53d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ad53d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ad53d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ad53d-115">Not supported.</span></span>|
+|<span data-ttu-id="ad53d-116">Application</span><span class="sxs-lookup"><span data-stu-id="ad53d-116">Application</span></span>|<span data-ttu-id="ad53d-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad53d-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cbb86-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cbb86-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad53d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ad53d-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +38,33 @@ ms.locfileid: "42457626"
 POST /users/{usersId}/mobileAppIntentAndStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cbb86-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cbb86-120">Request headers</span></span>
-|<span data-ttu-id="cbb86-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cbb86-121">Header</span></span>|<span data-ttu-id="cbb86-122">Valor</span><span class="sxs-lookup"><span data-stu-id="cbb86-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ad53d-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ad53d-119">Request headers</span></span>
+|<span data-ttu-id="ad53d-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ad53d-120">Header</span></span>|<span data-ttu-id="ad53d-121">Valor</span><span class="sxs-lookup"><span data-stu-id="ad53d-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cbb86-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="cbb86-123">Authorization</span></span>|<span data-ttu-id="cbb86-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cbb86-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cbb86-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="cbb86-125">Accept</span></span>|<span data-ttu-id="cbb86-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cbb86-126">application/json</span></span>|
+|<span data-ttu-id="ad53d-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="ad53d-122">Authorization</span></span>|<span data-ttu-id="ad53d-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ad53d-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ad53d-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ad53d-124">Accept</span></span>|<span data-ttu-id="ad53d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ad53d-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cbb86-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cbb86-127">Request body</span></span>
-<span data-ttu-id="cbb86-128">No corpo da solicitação, forneça uma representação JSON do objeto mobileAppIntentAndState.</span><span class="sxs-lookup"><span data-stu-id="cbb86-128">In the request body, supply a JSON representation for the mobileAppIntentAndState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad53d-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ad53d-126">Request body</span></span>
+<span data-ttu-id="ad53d-127">No corpo da solicitação, forneça uma representação JSON do objeto mobileAppIntentAndState.</span><span class="sxs-lookup"><span data-stu-id="ad53d-127">In the request body, supply a JSON representation for the mobileAppIntentAndState object.</span></span>
 
-<span data-ttu-id="cbb86-129">A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAppIntentAndState.</span><span class="sxs-lookup"><span data-stu-id="cbb86-129">The following table shows the properties that are required when you create the mobileAppIntentAndState.</span></span>
+<span data-ttu-id="ad53d-128">A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAppIntentAndState.</span><span class="sxs-lookup"><span data-stu-id="ad53d-128">The following table shows the properties that are required when you create the mobileAppIntentAndState.</span></span>
 
-|<span data-ttu-id="cbb86-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="cbb86-130">Property</span></span>|<span data-ttu-id="cbb86-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="cbb86-131">Type</span></span>|<span data-ttu-id="cbb86-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="cbb86-132">Description</span></span>|
+|<span data-ttu-id="ad53d-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ad53d-129">Property</span></span>|<span data-ttu-id="ad53d-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="ad53d-130">Type</span></span>|<span data-ttu-id="ad53d-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="ad53d-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cbb86-133">id</span><span class="sxs-lookup"><span data-stu-id="cbb86-133">id</span></span>|<span data-ttu-id="cbb86-134">String</span><span class="sxs-lookup"><span data-stu-id="cbb86-134">String</span></span>|<span data-ttu-id="cbb86-135">O UUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="cbb86-135">UUID for the object</span></span>|
-|<span data-ttu-id="cbb86-136">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="cbb86-136">managedDeviceIdentifier</span></span>|<span data-ttu-id="cbb86-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="cbb86-137">String</span></span>|<span data-ttu-id="cbb86-138">Identificador de dispositivo criado ou coletado pelo Intune.</span><span class="sxs-lookup"><span data-stu-id="cbb86-138">Device identifier created or collected by Intune.</span></span>|
-|<span data-ttu-id="cbb86-139">userId</span><span class="sxs-lookup"><span data-stu-id="cbb86-139">userId</span></span>|<span data-ttu-id="cbb86-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="cbb86-140">String</span></span>|<span data-ttu-id="cbb86-141">Identificador do usuário que tentou registrar o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="cbb86-141">Identifier for the user that tried to enroll the device.</span></span>|
-|<span data-ttu-id="cbb86-142">mobileAppList</span><span class="sxs-lookup"><span data-stu-id="cbb86-142">mobileAppList</span></span>|<span data-ttu-id="cbb86-143">coleção [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)</span><span class="sxs-lookup"><span data-stu-id="cbb86-143">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection</span></span>|<span data-ttu-id="cbb86-144">A lista de efeitos e Estados de carga para o locatário.</span><span class="sxs-lookup"><span data-stu-id="cbb86-144">The list of payload intents and states for the tenant.</span></span>|
+|<span data-ttu-id="ad53d-132">id</span><span class="sxs-lookup"><span data-stu-id="ad53d-132">id</span></span>|<span data-ttu-id="ad53d-133">String</span><span class="sxs-lookup"><span data-stu-id="ad53d-133">String</span></span>|<span data-ttu-id="ad53d-134">O UUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="ad53d-134">UUID for the object</span></span>|
+|<span data-ttu-id="ad53d-135">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="ad53d-135">managedDeviceIdentifier</span></span>|<span data-ttu-id="ad53d-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ad53d-136">String</span></span>|<span data-ttu-id="ad53d-137">Identificador de dispositivo criado ou coletado pelo Intune.</span><span class="sxs-lookup"><span data-stu-id="ad53d-137">Device identifier created or collected by Intune.</span></span>|
+|<span data-ttu-id="ad53d-138">userId</span><span class="sxs-lookup"><span data-stu-id="ad53d-138">userId</span></span>|<span data-ttu-id="ad53d-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ad53d-139">String</span></span>|<span data-ttu-id="ad53d-140">Identificador do usuário que tentou registrar o dispositivo.</span><span class="sxs-lookup"><span data-stu-id="ad53d-140">Identifier for the user that tried to enroll the device.</span></span>|
+|<span data-ttu-id="ad53d-141">mobileAppList</span><span class="sxs-lookup"><span data-stu-id="ad53d-141">mobileAppList</span></span>|<span data-ttu-id="ad53d-142">coleção [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)</span><span class="sxs-lookup"><span data-stu-id="ad53d-142">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection</span></span>|<span data-ttu-id="ad53d-143">A lista de efeitos e Estados de carga para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ad53d-143">The list of payload intents and states for the tenant.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="cbb86-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbb86-145">Response</span></span>
-<span data-ttu-id="cbb86-146">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cbb86-146">If successful, this method returns a `201 Created` response code and a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ad53d-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad53d-144">Response</span></span>
+<span data-ttu-id="ad53d-145">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ad53d-145">If successful, this method returns a `201 Created` response code and a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cbb86-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cbb86-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ad53d-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ad53d-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cbb86-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cbb86-148">Request</span></span>
-<span data-ttu-id="cbb86-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cbb86-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="ad53d-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ad53d-147">Request</span></span>
+<span data-ttu-id="ad53d-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ad53d-148">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates
 Content-type: application/json
@@ -97,8 +95,8 @@ Content-length: 831
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="cbb86-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbb86-150">Response</span></span>
-<span data-ttu-id="cbb86-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cbb86-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ad53d-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad53d-149">Response</span></span>
+<span data-ttu-id="ad53d-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ad53d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -129,7 +127,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 
