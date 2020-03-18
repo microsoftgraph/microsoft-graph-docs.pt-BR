@@ -1,20 +1,18 @@
 ---
 title: Criar androidForWorkAppConfigurationSchema
 description: Criar um novo objeto androidForWorkAppConfigurationSchema.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ebbe17ab43740e389da432f69866b8f7a37fa88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4a668848c58a0399e338aa1f9552b656bd54cf0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446272"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815765"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>Criar androidForWorkAppConfigurationSchema
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -134,7 +132,6 @@ Content-Length: 844
   ]
 }
 ```
-
 
 
 
