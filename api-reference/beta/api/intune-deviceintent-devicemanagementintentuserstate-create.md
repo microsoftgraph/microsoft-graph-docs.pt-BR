@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766165"
+ms.locfileid: "42815181"
 ---
 # <a name="create-devicemanagementintentuserstate"></a><span data-ttu-id="9f918-103">Criar deviceManagementIntentUserState</span><span class="sxs-lookup"><span data-stu-id="9f918-103">Create deviceManagementIntentUserState</span></span>
 

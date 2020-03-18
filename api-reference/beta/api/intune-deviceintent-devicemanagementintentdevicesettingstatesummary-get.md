@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767243"
+ms.locfileid: "42815286"
 ---
 # <a name="get-devicemanagementintentdevicesettingstatesummary"></a><span data-ttu-id="33a38-103">Obter deviceManagementIntentDeviceSettingStateSummary</span><span class="sxs-lookup"><span data-stu-id="33a38-103">Get deviceManagementIntentDeviceSettingStateSummary</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766697"
+ms.locfileid: "42815237"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a><span data-ttu-id="4ed10-103">Atualizar deviceManagementIntentDeviceState</span><span class="sxs-lookup"><span data-stu-id="4ed10-103">Update deviceManagementIntentDeviceState</span></span>
 

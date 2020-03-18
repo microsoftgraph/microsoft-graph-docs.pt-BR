@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772171"
+ms.locfileid: "42815174"
 ---
 # <a name="delete-devicemanagementintentuserstate"></a><span data-ttu-id="cbee4-103">Excluir deviceManagementIntentUserState</span><span class="sxs-lookup"><span data-stu-id="cbee4-103">Delete deviceManagementIntentUserState</span></span>
 

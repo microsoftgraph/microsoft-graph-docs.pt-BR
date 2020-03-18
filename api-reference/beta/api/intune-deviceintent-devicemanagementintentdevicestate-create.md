@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766956"
+ms.locfileid: "42815265"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a><span data-ttu-id="17ec3-103">Criar deviceManagementIntentDeviceState</span><span class="sxs-lookup"><span data-stu-id="17ec3-103">Create deviceManagementIntentDeviceState</span></span>
 
