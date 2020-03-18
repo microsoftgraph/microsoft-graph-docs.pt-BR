@@ -1,33 +1,31 @@
 ---
 title: tipo de enumeração vpnTrafficRuleRoutingPolicyType
 description: Especifica a política de roteamento para uma regra de tráfego VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5d26e9c84f21fb952d4db58ef5faf28d1b696454
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 577408b34b7483ebc313f761dfaf47e0e09cdd90
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529269"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787282"
 ---
-# <a name="vpntrafficruleroutingpolicytype-enum-type"></a><span data-ttu-id="e03f0-103">tipo de enumeração vpnTrafficRuleRoutingPolicyType</span><span class="sxs-lookup"><span data-stu-id="e03f0-103">vpnTrafficRuleRoutingPolicyType enum type</span></span>
+# <a name="vpntrafficruleroutingpolicytype-enum-type"></a><span data-ttu-id="ce6bc-103">tipo de enumeração vpnTrafficRuleRoutingPolicyType</span><span class="sxs-lookup"><span data-stu-id="ce6bc-103">vpnTrafficRuleRoutingPolicyType enum type</span></span>
 
-<span data-ttu-id="e03f0-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e03f0-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="ce6bc-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ce6bc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e03f0-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e03f0-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ce6bc-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ce6bc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="e03f0-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e03f0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="ce6bc-106">Especifica a política de roteamento para uma regra de tráfego VPN.</span><span class="sxs-lookup"><span data-stu-id="ce6bc-106">Specifies the routing policy for a VPN traffic rule.</span></span>
 
-<span data-ttu-id="e03f0-107">Especifica a política de roteamento para uma regra de tráfego VPN.</span><span class="sxs-lookup"><span data-stu-id="e03f0-107">Specifies the routing policy for a VPN traffic rule.</span></span>
-
-## <a name="members"></a><span data-ttu-id="e03f0-108">Membros</span><span class="sxs-lookup"><span data-stu-id="e03f0-108">Members</span></span>
-|<span data-ttu-id="e03f0-109">Membro</span><span class="sxs-lookup"><span data-stu-id="e03f0-109">Member</span></span>|<span data-ttu-id="e03f0-110">Valor</span><span class="sxs-lookup"><span data-stu-id="e03f0-110">Value</span></span>|<span data-ttu-id="e03f0-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="e03f0-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ce6bc-107">Membros</span><span class="sxs-lookup"><span data-stu-id="ce6bc-107">Members</span></span>
+|<span data-ttu-id="ce6bc-108">Membro</span><span class="sxs-lookup"><span data-stu-id="ce6bc-108">Member</span></span>|<span data-ttu-id="ce6bc-109">Valor</span><span class="sxs-lookup"><span data-stu-id="ce6bc-109">Value</span></span>|<span data-ttu-id="ce6bc-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce6bc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e03f0-112">nenhuma</span><span class="sxs-lookup"><span data-stu-id="e03f0-112">none</span></span>|<span data-ttu-id="e03f0-113">,0</span><span class="sxs-lookup"><span data-stu-id="e03f0-113">0</span></span>|<span data-ttu-id="e03f0-114">Nenhuma política de roteamento especificada.</span><span class="sxs-lookup"><span data-stu-id="e03f0-114">No routing policy specified.</span></span>|
-|<span data-ttu-id="e03f0-115">splitTunnel</span><span class="sxs-lookup"><span data-stu-id="e03f0-115">splitTunnel</span></span>|<span data-ttu-id="e03f0-116">1 </span><span class="sxs-lookup"><span data-stu-id="e03f0-116">1</span></span>|<span data-ttu-id="e03f0-117">O tráfego de rede do aplicativo especificado será roteado através da VPN.</span><span class="sxs-lookup"><span data-stu-id="e03f0-117">Network traffic for the specified app will be routed through the VPN.</span></span>|
-|<span data-ttu-id="e03f0-118">forceTunnel</span><span class="sxs-lookup"><span data-stu-id="e03f0-118">forceTunnel</span></span>|<span data-ttu-id="e03f0-119">2 </span><span class="sxs-lookup"><span data-stu-id="e03f0-119">2</span></span>|<span data-ttu-id="e03f0-120">Todo o tráfego de rede será roteado através da VPN.</span><span class="sxs-lookup"><span data-stu-id="e03f0-120">All network traffic will be routed through the VPN.</span></span>|
+|<span data-ttu-id="ce6bc-111">none</span><span class="sxs-lookup"><span data-stu-id="ce6bc-111">none</span></span>|<span data-ttu-id="ce6bc-112">,0</span><span class="sxs-lookup"><span data-stu-id="ce6bc-112">0</span></span>|<span data-ttu-id="ce6bc-113">Nenhuma política de roteamento especificada.</span><span class="sxs-lookup"><span data-stu-id="ce6bc-113">No routing policy specified.</span></span>|
+|<span data-ttu-id="ce6bc-114">splitTunnel</span><span class="sxs-lookup"><span data-stu-id="ce6bc-114">splitTunnel</span></span>|<span data-ttu-id="ce6bc-115">1</span><span class="sxs-lookup"><span data-stu-id="ce6bc-115">1</span></span>|<span data-ttu-id="ce6bc-116">O tráfego de rede do aplicativo especificado será roteado através da VPN.</span><span class="sxs-lookup"><span data-stu-id="ce6bc-116">Network traffic for the specified app will be routed through the VPN.</span></span>|
+|<span data-ttu-id="ce6bc-117">forceTunnel</span><span class="sxs-lookup"><span data-stu-id="ce6bc-117">forceTunnel</span></span>|<span data-ttu-id="ce6bc-118">duas</span><span class="sxs-lookup"><span data-stu-id="ce6bc-118">2</span></span>|<span data-ttu-id="ce6bc-119">Todo o tráfego de rede será roteado através da VPN.</span><span class="sxs-lookup"><span data-stu-id="ce6bc-119">All network traffic will be routed through the VPN.</span></span>|
 
 
 

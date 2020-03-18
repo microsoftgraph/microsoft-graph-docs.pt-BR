@@ -1,35 +1,33 @@
 ---
 title: tipo de enumeração mdmAppConfigKeyType
 description: Tipos de chave de configuração de aplicativo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 31bc1c4651484a4cdb1d74fee29449a00a02f6a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 982423e7215cf2311542d4d6c0b0526667f7d8ce
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42492121"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797892"
 ---
-# <a name="mdmappconfigkeytype-enum-type"></a><span data-ttu-id="3e995-103">tipo de enumeração mdmAppConfigKeyType</span><span class="sxs-lookup"><span data-stu-id="3e995-103">mdmAppConfigKeyType enum type</span></span>
+# <a name="mdmappconfigkeytype-enum-type"></a><span data-ttu-id="c5431-103">tipo de enumeração mdmAppConfigKeyType</span><span class="sxs-lookup"><span data-stu-id="c5431-103">mdmAppConfigKeyType enum type</span></span>
 
-<span data-ttu-id="3e995-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3e995-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="c5431-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c5431-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3e995-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3e995-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c5431-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c5431-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="3e995-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3e995-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="c5431-106">Tipos de chave de configuração de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="c5431-106">App configuration key types.</span></span>
 
-<span data-ttu-id="3e995-107">Tipos de chave de configuração de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="3e995-107">App configuration key types.</span></span>
-
-## <a name="members"></a><span data-ttu-id="3e995-108">Membros</span><span class="sxs-lookup"><span data-stu-id="3e995-108">Members</span></span>
-|<span data-ttu-id="3e995-109">Membro</span><span class="sxs-lookup"><span data-stu-id="3e995-109">Member</span></span>|<span data-ttu-id="3e995-110">Valor</span><span class="sxs-lookup"><span data-stu-id="3e995-110">Value</span></span>|<span data-ttu-id="3e995-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e995-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c5431-107">Membros</span><span class="sxs-lookup"><span data-stu-id="c5431-107">Members</span></span>
+|<span data-ttu-id="c5431-108">Membro</span><span class="sxs-lookup"><span data-stu-id="c5431-108">Member</span></span>|<span data-ttu-id="c5431-109">Valor</span><span class="sxs-lookup"><span data-stu-id="c5431-109">Value</span></span>|<span data-ttu-id="c5431-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="c5431-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3e995-112">StringType</span><span class="sxs-lookup"><span data-stu-id="3e995-112">stringType</span></span>|<span data-ttu-id="3e995-113">,0</span><span class="sxs-lookup"><span data-stu-id="3e995-113">0</span></span>|<span data-ttu-id="3e995-114">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3e995-114">Not yet documented</span></span>|
-|<span data-ttu-id="3e995-115">IntegerType</span><span class="sxs-lookup"><span data-stu-id="3e995-115">integerType</span></span>|<span data-ttu-id="3e995-116">1 </span><span class="sxs-lookup"><span data-stu-id="3e995-116">1</span></span>|<span data-ttu-id="3e995-117">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3e995-117">Not yet documented</span></span>|
-|<span data-ttu-id="3e995-118">RealType</span><span class="sxs-lookup"><span data-stu-id="3e995-118">realType</span></span>|<span data-ttu-id="3e995-119">2 </span><span class="sxs-lookup"><span data-stu-id="3e995-119">2</span></span>|<span data-ttu-id="3e995-120">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3e995-120">Not yet documented</span></span>|
-|<span data-ttu-id="3e995-121">BooleanType</span><span class="sxs-lookup"><span data-stu-id="3e995-121">booleanType</span></span>|<span data-ttu-id="3e995-122">3 </span><span class="sxs-lookup"><span data-stu-id="3e995-122">3</span></span>|<span data-ttu-id="3e995-123">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3e995-123">Not yet documented</span></span>|
-|<span data-ttu-id="3e995-124">TokenType</span><span class="sxs-lookup"><span data-stu-id="3e995-124">tokenType</span></span>|<span data-ttu-id="3e995-125">4 </span><span class="sxs-lookup"><span data-stu-id="3e995-125">4</span></span>|<span data-ttu-id="3e995-126">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3e995-126">Not yet documented</span></span>|
+|<span data-ttu-id="c5431-111">StringType</span><span class="sxs-lookup"><span data-stu-id="c5431-111">stringType</span></span>|<span data-ttu-id="c5431-112">,0</span><span class="sxs-lookup"><span data-stu-id="c5431-112">0</span></span>|<span data-ttu-id="c5431-113">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c5431-113">Not yet documented</span></span>|
+|<span data-ttu-id="c5431-114">IntegerType</span><span class="sxs-lookup"><span data-stu-id="c5431-114">integerType</span></span>|<span data-ttu-id="c5431-115">1</span><span class="sxs-lookup"><span data-stu-id="c5431-115">1</span></span>|<span data-ttu-id="c5431-116">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c5431-116">Not yet documented</span></span>|
+|<span data-ttu-id="c5431-117">RealType</span><span class="sxs-lookup"><span data-stu-id="c5431-117">realType</span></span>|<span data-ttu-id="c5431-118">duas</span><span class="sxs-lookup"><span data-stu-id="c5431-118">2</span></span>|<span data-ttu-id="c5431-119">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c5431-119">Not yet documented</span></span>|
+|<span data-ttu-id="c5431-120">BooleanType</span><span class="sxs-lookup"><span data-stu-id="c5431-120">booleanType</span></span>|<span data-ttu-id="c5431-121">3D</span><span class="sxs-lookup"><span data-stu-id="c5431-121">3</span></span>|<span data-ttu-id="c5431-122">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c5431-122">Not yet documented</span></span>|
+|<span data-ttu-id="c5431-123">TokenType</span><span class="sxs-lookup"><span data-stu-id="c5431-123">tokenType</span></span>|<span data-ttu-id="c5431-124">4 </span><span class="sxs-lookup"><span data-stu-id="c5431-124">4</span></span>|<span data-ttu-id="c5431-125">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="c5431-125">Not yet documented</span></span>|
 
 
 

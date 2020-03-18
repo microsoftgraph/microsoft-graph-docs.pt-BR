@@ -1,38 +1,36 @@
 ---
 title: Tipo de recurso iosHomeScreenFolderPage
 description: Uma pasta com os aplicativos na tela inicial
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dab4cc8829a5d3970778465b404b7fb29a4d0556
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 93fca952cfda7bf1e49c17a3fe71b3a62384d0e6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791573"
 ---
-# <a name="ioshomescreenfolderpage-resource-type"></a><span data-ttu-id="aad9f-103">Tipo de recurso iosHomeScreenFolderPage</span><span class="sxs-lookup"><span data-stu-id="aad9f-103">iosHomeScreenFolderPage resource type</span></span>
+# <a name="ioshomescreenfolderpage-resource-type"></a><span data-ttu-id="e07e1-103">Tipo de recurso iosHomeScreenFolderPage</span><span class="sxs-lookup"><span data-stu-id="e07e1-103">iosHomeScreenFolderPage resource type</span></span>
 
-<span data-ttu-id="aad9f-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="aad9f-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="e07e1-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e07e1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="aad9f-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="aad9f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e07e1-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e07e1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="aad9f-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aad9f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="e07e1-106">Uma pasta com os aplicativos na tela inicial</span><span class="sxs-lookup"><span data-stu-id="e07e1-106">A folder containing apps on the Home Screen</span></span>
 
-<span data-ttu-id="aad9f-107">Uma pasta com os aplicativos na tela inicial</span><span class="sxs-lookup"><span data-stu-id="aad9f-107">A folder containing apps on the Home Screen</span></span>
-
-## <a name="properties"></a><span data-ttu-id="aad9f-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="aad9f-108">Properties</span></span>
-|<span data-ttu-id="aad9f-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aad9f-109">Property</span></span>|<span data-ttu-id="aad9f-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="aad9f-110">Type</span></span>|<span data-ttu-id="aad9f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="aad9f-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e07e1-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e07e1-107">Properties</span></span>
+|<span data-ttu-id="e07e1-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e07e1-108">Property</span></span>|<span data-ttu-id="e07e1-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="e07e1-109">Type</span></span>|<span data-ttu-id="e07e1-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e07e1-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="aad9f-112">displayName</span><span class="sxs-lookup"><span data-stu-id="aad9f-112">displayName</span></span>|<span data-ttu-id="aad9f-113">String</span><span class="sxs-lookup"><span data-stu-id="aad9f-113">String</span></span>|<span data-ttu-id="aad9f-114">Nome da página da pasta</span><span class="sxs-lookup"><span data-stu-id="aad9f-114">Name of the folder page</span></span>|
-|<span data-ttu-id="aad9f-115">aplicativos</span><span class="sxs-lookup"><span data-stu-id="aad9f-115">apps</span></span>|<span data-ttu-id="aad9f-116">Conjunto [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)</span><span class="sxs-lookup"><span data-stu-id="aad9f-116">[iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md) collection</span></span>|<span data-ttu-id="aad9f-117">Uma lista de aplicativos exibidos em uma página dentro de uma pasta.</span><span class="sxs-lookup"><span data-stu-id="aad9f-117">A list of apps to appear on a page within a folder.</span></span> <span data-ttu-id="aad9f-118">Este conjunto pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="aad9f-118">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="e07e1-111">displayName</span><span class="sxs-lookup"><span data-stu-id="e07e1-111">displayName</span></span>|<span data-ttu-id="e07e1-112">String</span><span class="sxs-lookup"><span data-stu-id="e07e1-112">String</span></span>|<span data-ttu-id="e07e1-113">Nome da página da pasta</span><span class="sxs-lookup"><span data-stu-id="e07e1-113">Name of the folder page</span></span>|
+|<span data-ttu-id="e07e1-114">aplicativos</span><span class="sxs-lookup"><span data-stu-id="e07e1-114">apps</span></span>|<span data-ttu-id="e07e1-115">Conjunto [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)</span><span class="sxs-lookup"><span data-stu-id="e07e1-115">[iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md) collection</span></span>|<span data-ttu-id="e07e1-116">Uma lista de aplicativos exibidos em uma página dentro de uma pasta.</span><span class="sxs-lookup"><span data-stu-id="e07e1-116">A list of apps to appear on a page within a folder.</span></span> <span data-ttu-id="e07e1-117">Este conjunto pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="e07e1-117">This collection can contain a maximum of 500 elements.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="aad9f-119">Relações</span><span class="sxs-lookup"><span data-stu-id="aad9f-119">Relationships</span></span>
-<span data-ttu-id="aad9f-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="aad9f-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e07e1-118">Relações</span><span class="sxs-lookup"><span data-stu-id="e07e1-118">Relationships</span></span>
+<span data-ttu-id="e07e1-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e07e1-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="aad9f-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="aad9f-121">JSON Representation</span></span>
-<span data-ttu-id="aad9f-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="aad9f-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e07e1-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e07e1-120">JSON Representation</span></span>
+<span data-ttu-id="e07e1-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e07e1-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenFolderPage"
