@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso networkIPv6ConfigurationManagementCondition
 description: As condições de gerenciamento baseado em configuração IPv6 podem ser definidas que serão acionadas quando um dispositivo detectar determinadas configurações de rede IP. Uma condição de gerenciamento de configuração IP só será considerada TRUE quando a conexão de rede estiver ativa. Os endereços do servidor DHCP IPv6 podem não ser correspondentes. Isso ocorre porque o Windows (circa Redstone) não expõe essas informações para o serviço de autenticação natural.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf7fab6135a4d4fd11f62742e8435651a723523c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca8c907d09a742b237483144fa849da27e4f9ae8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524508"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783204"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv6ConfigurationManagementCondition
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -48,8 +46,8 @@ Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagem
 |applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |ipV6Prefix|String|A sub-rede IPv6 a ser conectada. por exemplo, 2001: DB8::/32|
 |ipV6Gateway|String|O endereço do gateway IPv6 para. por exemplo, 2001: DB8:: 1|
-|ipV6DNSServerList|String collection|Servidores DNS IPv6 configurados para o adaptador.|
-|dnsSuffixList|String collection|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
+|ipV6DNSServerList|Coleção de cadeias de caracteres|Servidores DNS IPv6 configurados para o adaptador.|
+|dnsSuffixList|Coleção de cadeias de caracteres|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

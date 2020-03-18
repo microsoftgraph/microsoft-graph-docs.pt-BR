@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windowsUserAccountControlSettings
 description: Valores possíveis para as configurações de controle de conta de usuário do Windows.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4be316d14754fb9e8fd54ceee2ce8ec30d26a507
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c8ff424dbb41356bd732fc2e7b100073b6df2c52
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525359"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786141"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enumeração windowsUserAccountControlSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para as configurações de controle de conta de usuário do W
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysNotify|1 |Sempre notificar.|
-|notifyOnAppChanges|2 |Notificar alterações no aplicativo.|
-|notifyOnAppChangesWithoutDimming|3 |Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
+|alwaysNotify|1|Sempre notificar.|
+|notifyOnAppChanges|duas|Notificar alterações no aplicativo.|
+|notifyOnAppChangesWithoutDimming|3D|Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
 |neverNotify|4 |Nunca notificar.|
 
 

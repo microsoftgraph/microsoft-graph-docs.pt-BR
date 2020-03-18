@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração managedDeviceRemoteAction
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 77e7b0b9c10f80ce7e447295d73ebc6e52ed6de2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eafb9c017516620186b3ad10a44c19ad0ebf2ecf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524960"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783932"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>tipo de enumeração managedDeviceRemoteAction
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Ative|,0|Ainda não documentado|
-|delete|1 |Ainda não documentado|
-|fullScan|2 |Ainda não documentado|
-|quickScan|3 |Ainda não documentado|
+|delete|1|Ainda não documentado|
+|fullScan|duas|Ainda não documentado|
+|quickScan|3D|Ainda não documentado|
 |signatureUpdate|4 |Ainda não documentado|
 |revelar|5 |Ainda não documentado|
 |customTextNotification|6 |Ainda não documentado|

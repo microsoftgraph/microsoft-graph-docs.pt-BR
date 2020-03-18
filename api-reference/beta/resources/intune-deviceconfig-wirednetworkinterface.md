@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração wiredNetworkInterface
 description: Tipo de interface de rede Apple.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b4c18d715b31278a3176d33b57b4defce6c75df2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fafbd8bedd3070d0aef46e43fee3efd88cf0dca0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528905"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786106"
 ---
 # <a name="wirednetworkinterface-enum-type"></a>tipo de enumeração wiredNetworkInterface
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de interface de rede Apple.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |anyEthernet|,0|Qualquer Ethernet.|
-|firstActiveEthernet|1 |Primeira Ethernet ativa.|
-|secondActiveEthernet|2 |Segunda Ethernet ativa.|
-|thirdActiveEthernet|3 |Terceira Ethernet ativa.|
+|firstActiveEthernet|1|Primeira Ethernet ativa.|
+|secondActiveEthernet|duas|Segunda Ethernet ativa.|
+|thirdActiveEthernet|3D|Terceira Ethernet ativa.|
 |firstEthernet|4 |Primeira Ethernet.|
 |secondEthernet|5 |Segunda Ethernet.|
 |thirdEthernet|6 |Terceira Ethernet.|

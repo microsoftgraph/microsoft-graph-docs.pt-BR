@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementSettingComparison
 description: Entidade que representa o resultado da comparação da configuração
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6eebd6da0667960fc4319c8c073ad221ddc694a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a91dc3ce4cb7e8730f346800d53740db78e5526
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525261"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785348"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>tipo de recurso deviceManagementSettingComparison
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso revokeAppleVppLicensesActionResult
 description: Cancelar o resultado da ação de licenças VPP da Apple
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 696901900f3bad4829bd4b51018992d25e99aefc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc3c289a01578e1d707d0a1780fa76c9a675ac33
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524925"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783876"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>tipo de recurso revokeAppleVppLicensesActionResult
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementIntentSettingSecretConstraint
 description: Restrição que indica que esse valor é um segredo e será criptografado.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e14ec0f6caaac4bfeef0a01f0fa48d0f591939d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b247edd3326ddaf6e666d4bf798c2ba1a9d76606
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528826"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785397"
 ---
 # <a name="devicemanagementintentsettingsecretconstraint-resource-type"></a>tipo de recurso deviceManagementIntentSettingSecretConstraint
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

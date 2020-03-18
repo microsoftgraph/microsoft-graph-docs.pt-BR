@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração managedDevicePartnerReportedHealthState
 description: Estados de integridade disponíveis para a API de integridade do dispositivo
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 832e79d759b969dbd96dfd773bac732ec68460d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 430b4e5f75a30ca79445f01908ac3881795d2a6a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528528"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783939"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo de enumeração managedDevicePartnerReportedHealthState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Estados de integridade disponíveis para a API de integridade do dispositivo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O estado de integridade do dispositivo ainda não foi relatado|
-|ativado|1 |O dispositivo foi ativado por um parceiro de defesa contra ameaças móveis, mas ainda não relatou a integridade.|
-|desativada|2 |O dispositivo foi desativado por um parceiro de defesa contra ameaças móveis. A integridade do dispositivo não é conhecida.|
-|presos|3 |O dispositivo é considerado protegido pelo parceiro de defesa contra ameaças móveis.|
+|ativado|1|O dispositivo foi ativado por um parceiro de defesa contra ameaças móveis, mas ainda não relatou a integridade.|
+|desativada|duas|O dispositivo foi desativado por um parceiro de defesa contra ameaças móveis. A integridade do dispositivo não é conhecida.|
+|presos|3D|O dispositivo é considerado protegido pelo parceiro de defesa contra ameaças móveis.|
 |lowSeverity|4 |O dispositivo é considerado com baixa ameaça pelo parceiro de defesa contra ameaças móveis.|
 |mediumSeverity|5 |O dispositivo é considerado como ameaça médio pelo parceiro de defesa contra ameaças móveis.|
 |highSeverity|6 |O dispositivo é considerado de alta ameaça pelo parceiro de defesa contra ameaças móveis.|

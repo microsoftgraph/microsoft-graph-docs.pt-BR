@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso managedDeviceModelsAndManufacturers
 description: Modela e fabrica meatadata para dispositivos gerenciados na conta
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa241bd17ad8c42074ed74d2d2548777ea8bf3ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac83d2501eb42cc12044e8d566031e6a5dd6080c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528533"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783953"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>tipo de recurso managedDeviceModelsAndManufacturers
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,8 +23,8 @@ Modela e fabrica meatadata para dispositivos gerenciados na conta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceModels|String collection|Lista de modelos para dispositivos gerenciados na conta|
-|deviceManufacturers|String collection|Lista de fabricantes de dispositivos gerenciados na conta|
+|deviceModels|Coleção de cadeias de caracteres|Lista de modelos para dispositivos gerenciados na conta|
+|deviceManufacturers|Coleção de cadeias de caracteres|Lista de fabricantes de dispositivos gerenciados na conta|
 
 ## <a name="relationships"></a>Relações
 Nenhum

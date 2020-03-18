@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso configurationManagerClientInformation
 description: Informações do cliente do Configuration Manager sincronizadas a partir do SCCM
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67c1a4b4a9ac570b4acd71a1ce819f9705fd32e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1c9e9b88677c925fb33c998af571b23090dcff5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528673"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785053"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>tipo de recurso configurationManagerClientInformation
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,6 +24,7 @@ Informações do cliente do Configuration Manager sincronizadas a partir do SCCM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |clientIdentifier|String|ID do cliente do Gerenciador de configurações do SCCM|
+|IsBlocked|Boolean|Status bloqueado do cliente do Gerenciador de configurações do SCCM|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -40,7 +39,8 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientInformation",
-  "clientIdentifier": "String"
+  "clientIdentifier": "String",
+  "isBlocked": true
 }
 ```
 

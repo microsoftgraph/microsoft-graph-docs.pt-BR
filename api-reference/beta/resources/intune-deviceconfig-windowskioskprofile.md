@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsKioskProfile
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c84979b3d83c1bf71447f9c1c9de2ef3ee32af6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 005684c109ba4500b1e8648ba1a93b389454d667
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525520"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786359"
 ---
 # <a name="windowskioskprofile-resource-type"></a>tipo de recurso windowsKioskProfile
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

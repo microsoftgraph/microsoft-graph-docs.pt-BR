@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso userExperienceAnalyticsCategory
 description: A entidade de categoria da experiência do usuário contém as pontuações e insights para as várias métricas de uma categoria.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81da542a14e20460f9b7b9f3dc81df390e344dd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ba9d56e1b20b66efe2b0653358dca4907ca0dc2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528483"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783834"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>tipo de recurso userExperienceAnalyticsCategory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

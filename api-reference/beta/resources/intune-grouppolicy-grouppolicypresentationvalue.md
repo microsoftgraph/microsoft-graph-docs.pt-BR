@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso groupPolicyPresentationValue
 description: A entidade de valor de apresentação base que armazena o valor de uma única apresentação de política de grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1cb9d8cad31faf2dc888082f491c0df51ba01e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2406f4fecbf0fe7e682a0cd60aef7395c88c716d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524403"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782915"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>tipo de recurso groupPolicyPresentationValue
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

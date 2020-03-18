@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração configurationManagerActionType
 description: Tipo de ação no cliente do Configuration Manager
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b15d8315c33890185f91c84b95bd75155c6a94f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df6c274b0e8317a609fc5fb50a6361fb50a9d6ba
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525142"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785074"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>tipo de enumeração configurationManagerActionType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de ação no cliente do Configuration Manager
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |refreshMachinePolicy|,0|Atualizar política de máquina no cliente do Configuration Manager|
-|refreshUserPolicy|1 |Atualizar política de usuário no cliente do Configuration Manager|
-|wakeUpClient|2 |Cliente do Gerenciador de configuração do Wake up|
-|appEvaluation|3 |Política de aplicativo de avaliação no cliente do Configuration Manager|
+|refreshUserPolicy|1|Atualizar política de usuário no cliente do Configuration Manager|
+|wakeUpClient|duas|Cliente do Gerenciador de configuração do Wake up|
+|appEvaluation|3D|Política de aplicativo de avaliação no cliente do Configuration Manager|
 
 
 

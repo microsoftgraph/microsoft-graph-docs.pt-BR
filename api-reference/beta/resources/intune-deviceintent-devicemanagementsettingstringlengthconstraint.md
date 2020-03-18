@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementSettingStringLengthConstraint
 description: Restrição que impõe um determinado intervalo de duração da cadeia de caracteres
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f78206495b4694b19a7558df4ab790c24b8f658b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e77c60950bef96fc83c3af186598a37c2e58d2a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528775"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785271"
 ---
 # <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>tipo de recurso deviceManagementSettingStringLengthConstraint
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementSettingRequiredConstraint
 description: Restrição que impõe uma determinada configuração necessária que não é nula/indefinida/sequência vazia/não configurada
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea5cd7d7fe20e2b956e8beadcddf27f4b73f89ea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a077be2aac78b468ba7b265f8154ceee29803eef
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528777"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785285"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>tipo de recurso deviceManagementSettingRequiredConstraint
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

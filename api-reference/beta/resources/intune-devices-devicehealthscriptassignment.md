@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceHealthScriptAssignment
 description: Contém propriedades usadas para atribuir um script de gerenciamento de dispositivo a um grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb041ab1c1cd5d416d3e7acb8a91cc1e488b65a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef7a088f85646d699958b5ebbcbc996b3f0b3d57
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528629"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784955"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>tipo de recurso deviceHealthScriptAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

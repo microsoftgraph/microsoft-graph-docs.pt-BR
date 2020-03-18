@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso securityBaselineCategoryStateSummary
 description: A linha de base de segurança por categoria Resumo de estado de conformidade para a linha de base de segurança da conta.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81fa1d5d8d4d3c01eb5f827b7e40e1cacf666ea9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 455b0f269244b05b3b210ce9e8705d62f43d3426
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528743"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785207"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>tipo de recurso securityBaselineCategoryStateSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

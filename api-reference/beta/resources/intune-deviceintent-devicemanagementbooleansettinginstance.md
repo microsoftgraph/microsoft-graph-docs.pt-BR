@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementBooleanSettingInstance
 description: Uma instância de configuração representando um valor booliano
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0886e4ca691a29ed6c33efd2f4104d37ab0ef629
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a211d46c753d4eeb51098af7498c3a21bea0df24
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528889"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786085"
 ---
 # <a name="devicemanagementbooleansettinginstance-resource-type"></a>tipo de recurso deviceManagementBooleanSettingInstance
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

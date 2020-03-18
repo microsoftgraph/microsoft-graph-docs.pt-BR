@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração appManagementLevel
 description: Níveis de gerenciamento para aplicativos
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4cc8ee7fa2154116744317ad983c2c416eb01866
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df598acd3882df96eeb226f75b3754056c48a80f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527986"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782577"
 ---
 # <a name="appmanagementlevel-enum-type"></a>tipo de enumeração appManagementLevel
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Níveis de gerenciamento para aplicativos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |não especificado|,0|Não especificado|
-|não gerenciados|1 |Não gerenciados|
-|MDM|2 |MDM|
+|não gerenciados|1|Não gerenciados|
+|MDM|duas|MDM|
 |androidEnterprise|4 |Android Enterprise|
 
 

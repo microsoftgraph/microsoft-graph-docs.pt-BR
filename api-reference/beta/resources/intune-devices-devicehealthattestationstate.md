@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso deviceHealthAttestationState
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec4dc668fb4e2d132a5589b24855461690452f16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3df829f13e7df3fe517977f08c2e87c4e0a1e110
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528633"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784969"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Tipo de recurso deviceHealthAttestationState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -54,8 +52,8 @@ Ainda não documentado
 |secureBootConfigurationPolicyFingerPrint|String|Impressão digital da política de configuração de Inicialização Segura personalizada|
 |codeIntegrityPolicy|String|A política de Integridade de código que está controlando a segurança do ambiente de inicialização|
 |bootRevisionListInfo|String|A Lista de revisão de inicialização carregada durante a inicialização inicial no dispositivo confirmado|
-|operatingSystemRevListInfo|Cadeia de caracteres|A Lista de revisão de sistema operacional carregada durante a inicialização inicial no dispositivo confirmado|
-|healthStatusMismatchInfo|String|Esse atributo será exibido se o serviço DHA detectar um problema de integridade|
+|operatingSystemRevListInfo|String|A Lista de revisão de sistema operacional carregada durante a inicialização inicial no dispositivo confirmado|
+|healthStatusMismatchInfo|Cadeia de caracteres|Esse atributo será exibido se o serviço DHA detectar um problema de integridade|
 |healthAttestationSupportedStatus|Cadeia de caracteres|Esse atributo indica se DHA é compatível com o dispositivo|
 
 ## <a name="relationships"></a>Relações

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração mdmSupportedState
 description: Status de suporte do MDM da configuração.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d5424eccf29e30ecff1cc9a216d82b28d3ce6ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca95d05201fdf398fccd282e9437b3de352abdb1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524459"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783134"
 ---
 # <a name="mdmsupportedstate-enum-type"></a>tipo de enumeração mdmSupportedState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Status de suporte do MDM da configuração.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O status de suporte de MDM da configuração não é conhecido.|
-|oferecido|1 |Há suporte para a configuração.|
-|sem suporte|2 |A configuração não é suportada.|
-|preterido|3 |A configuração é depcrecated.|
+|oferecido|1|Há suporte para a configuração.|
+|sem suporte|duas|A configuração não é suportada.|
+|preterido|3D|A configuração é depcrecated.|
 
 
 

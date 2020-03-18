@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração de plataforma
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 55abf84bcc034cd3a536b26f0b04dd8f57e4d067
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 427a2da5048584c45d5efe7b5b7265d012c996cd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524693"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783400"
 ---
 # <a name="platform-enum-type"></a>tipo de enumeração de plataforma
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Plataforma de dispositivo desconhecida|
-|emiti|1 |Plataforma de dispositivo IOS|
-|Android|2 |Plataforma do dispositivo Android|
-|Windows|3 |Plataforma de dispositivo do Windows|
+|emiti|1|Plataforma de dispositivo IOS|
+|Android|duas|Plataforma do dispositivo Android|
+|Windows|3D|Plataforma de dispositivo do Windows|
 |windowsMobile|4 |Plataforma de dispositivo WindowsMobile|
 |macOS|5 |Plataforma de dispositivo Mac|
 

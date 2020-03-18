@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementSettingFileConstraint
 description: A restrição que impõe a extensão do arquivo é aceitável para uma determinada configuração
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1757f3d6d7e6e60a9c45e95e531a142fabbb95f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a9e5a3f4ce8cec54dbdd0f1a690b039b2da0524
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525247"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785320"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>tipo de recurso deviceManagementSettingFileConstraint
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -28,7 +26,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|supportedExtensions|String collection|Extensões de arquivo aceitáveis para carregar essa configuração|
+|supportedExtensions|Coleção de cadeias de caracteres|Extensões de arquivo aceitáveis para carregar essa configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum

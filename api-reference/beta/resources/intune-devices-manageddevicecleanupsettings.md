@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso managedDeviceCleanupSettings
 description: Defina a regra quando o administrador quiser que os dispositivos sejam limpos.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e1626e01d240caaeeef6689ed785dd1f262c361
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86003dfd0121b6d4056377e8cf340497f41ccbd9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524974"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783960"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso managedDeviceCleanupSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

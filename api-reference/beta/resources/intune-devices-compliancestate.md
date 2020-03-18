@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração compliancestate
 description: Estado de conformidade.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 78dc7dfee02a1b1670a2259d20465d4660e73a08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b0ba44c95a49d7646008ac4664926e257c02a19
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525149"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785102"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de enumeração compliancestate
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Estado de conformidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Unknown.|
-|com|1 |Com.|
-|incompatível|2 |O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
-|apresentar|3 |Conflito com outras regras.|
+|com|1|Com.|
+|incompatível|duas|O dispositivo não está em conformidade e é bloqueado de recursos corporativos.|
+|apresentar|3D|Conflito com outras regras.|
 |erro|4 |Erro|
 |inGracePeriod|254|O dispositivo não está em conformidade, mas ainda tem acesso aos recursos corporativos|
 |configmanager|255|Gerenciado pelo Gerenciador de configuração|

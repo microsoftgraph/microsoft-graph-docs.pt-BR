@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso locationManagementCondition
 description: Contém as informações para definir uma condição de gerenciamento de local, uma área de interesse, para monitorar.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbbeec236d51d7e7a21321ba0386a473312a4b05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56e9c10d8d9d53a9e0009b6a70210da6d7873065
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524522"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783253"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>tipo de recurso locationManagementCondition
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

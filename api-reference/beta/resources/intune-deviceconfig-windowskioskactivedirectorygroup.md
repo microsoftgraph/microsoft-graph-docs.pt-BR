@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsKioskActiveDirectoryGroup
 description: A classe usada para identificar um grupo de diretórios do Azure para a configuração do quiosque
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab2a9834e4f3eac6fbff84fc84a78873aca8415f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4cdd39b6374b0b8c53d0b3333c9a92484971cc4a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529059"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786450"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>tipo de recurso windowsKioskActiveDirectoryGroup
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

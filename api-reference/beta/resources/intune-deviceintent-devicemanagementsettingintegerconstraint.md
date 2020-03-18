@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementSettingIntegerConstraint
 description: Restrição que impõe o intervalo de valor permitido para uma configuração de inteiro
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c849d3a774535dd0cbf3e7628bcde2daa500fbe7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc06c695ff9ad53a44a8218a64c3d6254db76203
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525233"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785306"
 ---
 # <a name="devicemanagementsettingintegerconstraint-resource-type"></a>tipo de recurso deviceManagementSettingIntegerConstraint
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

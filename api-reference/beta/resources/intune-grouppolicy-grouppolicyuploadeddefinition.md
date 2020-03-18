@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso groupPolicyUploadedDefinition
 description: A entidade descreve todas as informações sobre uma única diretiva de grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c3eda09caf3bcc031697e2b3d410c1933eb6e63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e345d43db0048afa395793faa6edfa6cfface1a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524375"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782773"
 ---
 # <a name="grouppolicyuploadeddefinition-resource-type"></a>tipo de recurso groupPolicyUploadedDefinition
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -43,6 +41,7 @@ Herda de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefi
 |categoryPath|String|O caminho de categoria completo localizado para a política. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md). Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|groupPolicyCategoryId|Guid|A ID de categoria da categoria pai herdada de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
@@ -50,6 +49,7 @@ Herda de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefi
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |DefinitionFile|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|O arquivo de política de grupo associado à definição. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|category|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|A categoria de política de grupo associada à definição. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |apresentações|coleção [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|As apresentações de política de grupo associadas à definição. Herdado de [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -69,6 +69,7 @@ Veja a seguir uma representação JSON do recurso.
   "categoryPath": "String",
   "supportedOn": "String",
   "policyType": "String",
+  "groupPolicyCategoryId": "Guid",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }

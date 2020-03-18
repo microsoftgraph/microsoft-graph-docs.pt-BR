@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windowsUserType
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6297f93578b0d202ce2b9be41e77b3edc721ee4d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ed17a91b6baed1b7de87a9f035c858fdddfe69f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524550"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783330"
 ---
 # <a name="windowsusertype-enum-type"></a>tipo de enumeração windowsUserType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |administrador|,0|Ainda não documentado|
-|caracteres|1 |Ainda não documentado|
+|caracteres|1|Ainda não documentado|
 
 
 

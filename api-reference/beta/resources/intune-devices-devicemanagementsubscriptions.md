@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração deviceManagementSubscriptions
 description: Assinaturas de gerenciamento de dispositivo móvel de locatário.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: abeecbc1ef953e39fddf74510d5b8fdb1f10e4d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94d6c29a2c23d364681abaf4cd42f4330f5389f6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525037"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784266"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>tipo de enumeração deviceManagementSubscriptions
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,9 +23,9 @@ Assinaturas de gerenciamento de dispositivo móvel de locatário.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhuma|
-|Intune|1 |Assinatura do Microsoft Intune|
-|Office365|2 |Assinatura do Office365|
+|none|,0|Nenhuma|
+|Intune|1|Assinatura do Microsoft Intune|
+|Office365|duas|Assinatura do Office365|
 |intunePremium|4 |Assinatura do Microsoft Intune Premium|
 |intune_EDU|8 |Assinatura do Microsoft Intune para educação|
 |intune_SMB|16 |Assinatura do Microsoft Intune para pequenas empresas|

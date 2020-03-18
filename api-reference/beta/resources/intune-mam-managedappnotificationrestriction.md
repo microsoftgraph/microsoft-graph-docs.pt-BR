@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração managedAppNotificationRestriction
 description: Restringir notificação de aplicativo gerenciado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 941fcac27234996e78c67a572fe0a2bbe66f10f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e89f9b17ae7a94a9d7447d802821047cdfc09f28
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527908"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781821"
 ---
 # <a name="managedappnotificationrestriction-enum-type"></a>tipo de enumeração managedAppNotificationRestriction
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Restringir notificação de aplicativo gerenciado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |permitiu|,0|Compartilhar todas as notificações.|
-|blockOrganizationalData|1 |Não compartilhe dados do Orgnizational em notificações.|
-|Larga|2 |Não compartilhe notificações.|
+|blockOrganizationalData|1|Não compartilhe dados do Orgnizational em notificações.|
+|Larga|duas|Não compartilhe notificações.|
 
 
 

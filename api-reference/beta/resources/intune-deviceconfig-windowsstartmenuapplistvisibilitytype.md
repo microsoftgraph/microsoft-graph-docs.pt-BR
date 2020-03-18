@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windowsStartMenuAppListVisibilityType
 description: Tipo de visibilidade da lista de aplicativos do menu iniciar.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 35b1145a0d643f028cd2403236e297f091d9f684
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd517d9fa660136df39dff6ab96c455ca280b61e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525394"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786218"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>tipo de enumeração windowsStartMenuAppListVisibilityType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Tipo de visibilidade da lista de aplicativos do menu iniciar.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário. Valor padrão.|
-|combinados|1 |Recolha a lista de aplicativos no menu iniciar.|
-|remover|2 |Remove totalmente a lista de aplicativos do menu iniciar.|
+|combinados|1|Recolha a lista de aplicativos no menu iniciar.|
+|remover|duas|Remove totalmente a lista de aplicativos do menu iniciar.|
 |disableSettingsApp|4 |Desabilita a alternância (recolhimento ou remoção) correspondente no aplicativo configurações.|
 
 

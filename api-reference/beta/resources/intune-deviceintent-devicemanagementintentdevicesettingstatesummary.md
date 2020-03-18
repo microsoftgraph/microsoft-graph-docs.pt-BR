@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementIntentDeviceSettingStateSummary
 description: Entidade que representa o resumo de estado de configuração de dispositivo para uma intenção
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd4b59ebf8937f0ee9b2bdd9e0c06388a35d6f42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a351f3ca7dd778592150605ca7a491212f4e51d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528846"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785425"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>tipo de recurso deviceManagementIntentDeviceSettingStateSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração importedWindowsAutopilotDeviceIdentityUploadStatus
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6c6bba85fd0c24c9b434e134582f7adfc04b253f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8a7777bb681a51e683a879e2730fab1591ec860
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524707"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783428"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>tipo de enumeração importedWindowsAutopilotDeviceIdentityUploadStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noupload|,0|Nenhum status de carregamento.|
-|função|1 |Status pendente.|
-|complete|2 |Status completo.|
-|erro|3 |Status do erro.|
+|função|1|Status pendente.|
+|complete|duas|Status completo.|
+|erro|3D|Status do erro.|
 
 
 

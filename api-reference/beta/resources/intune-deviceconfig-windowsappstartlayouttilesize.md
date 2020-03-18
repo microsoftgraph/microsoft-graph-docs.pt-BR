@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windowsAppStartLayoutTileSize
 description: O tamanho do bloco do aplicativo do Windows no layout de início.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c3082054c42072c365088d70746fba6386f8826
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ffe5a2f6fa59f90958365193a9ca01fff245f9bb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525569"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786548"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enumeração windowsAppStartLayoutTileSize
-
-Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ O tamanho do bloco do aplicativo do Windows no layout de início.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |hidden|,0|Oculta.|
-|small|1 |1x1 pequeno.|
-|medium|2 |2x2 médio.|
-|várias|3 |Wide 4x2.|
+|small|1|1x1 pequeno.|
+|medium|duas|2x2 médio.|
+|várias|3D|Wide 4x2.|
 |large|4 |4x4 grande.|
 
 

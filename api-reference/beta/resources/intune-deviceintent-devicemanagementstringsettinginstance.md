@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementStringSettingInstance
 description: Uma instância de configuração que representa um valor de cadeia de caracteres
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: feb3152da31d21bb5833a4311326d6b99d9fb7ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca9d18df296c3716294501eb95511f55c5c62444
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525219"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785257"
 ---
 # <a name="devicemanagementstringsettinginstance-resource-type"></a>tipo de recurso deviceManagementStringSettingInstance
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração coManagementEligibleType
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a5f02d26a52560e982d386f714a199799e19a99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a1a86fdb3f032c356ca492f484fd6b115f89dee
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528693"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785109"
 ---
 # <a name="comanagementeligibletype-enum-type"></a>tipo de enumeração coManagementEligibleType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,9 +23,9 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|cogerenciado|1 |Ainda não documentado|
-|estará|2 |Ainda não documentado|
-|eligibleButNotAadJoined|3 |Ainda não documentado|
+|cogerenciado|1|Ainda não documentado|
+|estará|duas|Ainda não documentado|
+|eligibleButNotAadJoined|3D|Ainda não documentado|
 |needsOSUpdate|4 |Ainda não documentado|
 
 

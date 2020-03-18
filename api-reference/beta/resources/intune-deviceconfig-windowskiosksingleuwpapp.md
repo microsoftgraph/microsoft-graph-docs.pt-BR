@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsKioskSingleUWPApp
 description: A classe usada para identificar as informações do aplicativo UWP para a configuração do quiosque
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05042fe7d0285c593dfd325aa9b186808e85bc2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ae650af23985c26b00f99513ecfa4b3f691e14b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786352"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso windowsKioskSingleUWPApp
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

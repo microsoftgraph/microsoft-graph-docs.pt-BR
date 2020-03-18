@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração appLogDecryptionAlgorithm
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 33747247f84118277d0f10427608d2beb2ad0358
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 708b9e8c6b85af653949e037e43978c7a9653d6d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528728"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785214"
 ---
 # <a name="applogdecryptionalgorithm-enum-type"></a>tipo de enumeração appLogDecryptionAlgorithm
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

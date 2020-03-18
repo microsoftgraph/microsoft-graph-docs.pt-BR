@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso groupPolicyPresentationDecimalTextBox
 description: Representa um elemento ADMX decimalTextBox e um elemento de ADMX decimal.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: abdfec2614684109656dae0932a89dfeae59f813
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05543470e9889a7c4b0a27716e2ff2d12781b400
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524431"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782971"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>tipo de recurso groupPolicyPresentationDecimalTextBox
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

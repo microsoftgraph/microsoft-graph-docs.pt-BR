@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração importedWindowsAutopilotDeviceIdentityImportStatus
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 70fa563135dcafe2dd3b723a7c5da06226eb9d53
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b527016cb8c242b3c07df13422bad26d0cdca0c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524714"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783442"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>tipo de enumeração importedWindowsAutopilotDeviceIdentityImportStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status desconhecido.|
-|função|1 |Status pendente.|
-|parcial|2 |Status parcial.|
-|complete|3 |Status completo.|
+|função|1|Status pendente.|
+|parcial|duas|Status parcial.|
+|complete|3D|Status completo.|
 |erro|4 |Status do erro.|
 
 

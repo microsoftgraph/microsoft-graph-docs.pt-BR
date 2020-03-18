@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso embeddedSIMActivationCodePool
 description: Um pool representa um grupo de códigos de ativação do SIM incorporados.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ffaf5aeff0f0ebbd0be898ec3ac3950f37b740a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 61ee61870eca7ffcde8bd00e2a12f3220b906eff
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524543"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783309"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>tipo de recurso embeddedSIMActivationCodePool
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

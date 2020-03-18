@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração managedDeviceArchitecture
 description: Arquitetura do processador
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: efbb507dc4efd9e94ca894ff53e48be0644fdf91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 688dfdd800e80a76869d3adf9fd4f7154d49422f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528540"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783967"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>tipo de enumeração managedDeviceArchitecture
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Arquitetura do processador
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Arquitetura desconhecida|
-|x|1 |X|
-|Professional|2 |Professional|
-|equipe|3 |EQUIPE|
+|x|1|X|
+|Professional|duas|Professional|
+|equipe|3D|EQUIPE|
 |arM64|4 |ARM64|
 
 

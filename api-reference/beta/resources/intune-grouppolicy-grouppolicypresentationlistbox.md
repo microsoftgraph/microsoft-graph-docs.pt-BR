@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso groupPolicyPresentationListBox
 description: Representa um elemento listBox do ADMX e um elemento de lista ADMX.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9092f455f99b9527ee81146bd344e097e21a4563
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e6899a14648d93bc5f7ba341b2e06501d4fa571
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528048"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782950"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>tipo de recurso groupPolicyPresentationListBox
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

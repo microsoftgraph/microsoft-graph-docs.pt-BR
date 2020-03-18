@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso hourlySchedule
 description: Agendamento de execução por hora de um script de gerenciamento de dispositivo recorrente.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f52366b076fe7c8b2183424f8c02b72573fc5119
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e798eed75cdb5499bb2ea0c3ca40ac4d7c0b9c54
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525002"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784016"
 ---
 # <a name="hourlyschedule-resource-type"></a>tipo de recurso hourlySchedule
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

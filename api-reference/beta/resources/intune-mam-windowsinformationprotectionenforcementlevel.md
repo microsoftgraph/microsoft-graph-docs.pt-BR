@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windowsInformationProtectionEnforcementLevel
 description: Valores possíveis para níveis de imposição de proteção WIP
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 46488043220297617dfc4eb807d94ef2a9c0ba19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e6fb9528a3a4d87f13e1901c18885b7224291389
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527837"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780623"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>tipo de enumeração windowsInformationProtectionEnforcementLevel
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para níveis de imposição de proteção WIP
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noprotection|,0|Nenhuma imposição de proteção|
-|encryptAndAuditOnly|1 |Somente criptografia e auditoria|
-|encryptAuditAndPrompt|2 |Criptografar, auditar e solicitar|
-|encryptAuditAndBlock|3 |Criptografar, auditar e bloquear|
+|encryptAndAuditOnly|1|Somente criptografia e auditoria|
+|encryptAuditAndPrompt|duas|Criptografar, auditar e solicitar|
+|encryptAuditAndBlock|3D|Criptografar, auditar e bloquear|
 
 
 

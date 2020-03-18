@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsKioskUser
 description: A classe base de usuário usada para identificar as informações da conta da configuração do quiosque
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50f5fb2f646881c48094ac1047a15291f0668e5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea2ddf6d9f159c63a58a2abe6db07f0b1f59b99c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525576"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786345"
 ---
 # <a name="windowskioskuser-resource-type"></a>tipo de recurso windowsKioskUser
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

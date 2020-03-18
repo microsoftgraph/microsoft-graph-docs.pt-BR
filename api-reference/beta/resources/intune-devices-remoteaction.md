@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração remoteaction
 description: As ações remotas do Intune dão suporte.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5818a7e0ffcaaad948ccd19c11293794fff756bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 914d2b7717be151adeb43c9585af39ab3383482c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524946"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783904"
 ---
 # <a name="remoteaction-enum-type"></a>tipo de enumeração remoteaction
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ As ações remotas do Intune dão suporte.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O usuário inicia uma ação desconhecida.|
-|factoryReset|1 |O usuário inicia uma ação para a redefinição de fábrica de um dispositivo. |
-|removeCompanyData|2 |O usuário inicia uma ação para remover dados da empresa de um dispositivo. |
-|resetPasscode|3 |O usuário inicia uma ação para remover a senha de um dispositivo iOS ou redefinir a senha do dispositivo Android/Windows. |
+|factoryReset|1|O usuário inicia uma ação para a redefinição de fábrica de um dispositivo. |
+|removeCompanyData|duas|O usuário inicia uma ação para remover dados da empresa de um dispositivo. |
+|resetPasscode|3D|O usuário inicia uma ação para remover a senha de um dispositivo iOS ou redefinir a senha do dispositivo Android/Windows. |
 |remoteLock|4 |O usuário inicia uma ação para bloquear remotamente um dispositivo.|
 |enableLostMode|5 |O usuário inicia uma ação para habilitar o modo perdido em um dispositivo iOS supervisionado.|
 |disableLostMode|6 |O usuário inicia uma ação para desabilitar o modo perdido em um dispositivo iOS supervisionado.|
@@ -36,7 +34,7 @@ As ações remotas do Intune dão suporte.
 |rebootNow|8 |O usuário inicia uma ação para reinicializar um dispositivo Windows.|
 |recoverPasscode|9 |O usuário inicia uma ação para redefinir o PIN para o Passport para funcionar no dispositivo Windows Phone.|
 |cleanWindowsDevice|10 |O usuário inicia uma ação para limpar o dispositivo Windows.|
-|logoutSharedAppleDeviceActiveUser|11 |O usuário inicia uma ação para fazer o logoff do usuário atual em um dispositivo Apple compartilhado.|
+|logoutSharedAppleDeviceActiveUser|11|O usuário inicia uma ação para fazer o logoff do usuário atual em um dispositivo Apple compartilhado.|
 |quickScan|12 |O usuário inicia uma ação para executar a verificação rápida no dispositivo.|
 |fullScan|13 |O usuário inicia uma ação para executar a verificação completa no dispositivo.|
 |windowsDefenderUpdateSignatures|14 |O usuário inicia uma ação para atualizar as assinaturas de malware no dispositivo.|

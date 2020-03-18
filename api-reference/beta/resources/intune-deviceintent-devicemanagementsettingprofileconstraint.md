@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementSettingProfileConstraint
 description: Restrição que impõe um determinado perfil de metadados
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb6784fa929aa298579cc889b39cfa90b475a014
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4b565321069c27949fbd5814c4ddc1c4eb1451b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525226"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785299"
 ---
 # <a name="devicemanagementsettingprofileconstraint-resource-type"></a>tipo de recurso deviceManagementSettingProfileConstraint
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

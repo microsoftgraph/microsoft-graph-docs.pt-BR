@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso tipo complexowindowskioskmultipleapps
 description: A classe usada para identificar a configuração do aplicativo multimodo para a configuração do quiosque
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f5a56f3717b3d03b4caf900005661e316fa3401
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 240625f8cac334375fe1f02b4de0c48f49b73478
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786366"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso tipo complexowindowskioskmultipleapps
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

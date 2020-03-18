@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso hardwareInformation
 description: Informações de hardware de um determinado dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40c3c122fe5aae65b4ed34d5178c67160a7fbe0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40edcecb7c581722b7c423e4d76f181689a6020d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525009"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784030"
 ---
 # <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

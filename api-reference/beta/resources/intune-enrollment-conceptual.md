@@ -4,16 +4,16 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 596e4deb8743cbb43f3d44c94165499408ee6b9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb0dd9d6b03330cc0f585fb36dfff64a2dfe1a34
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528330"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783547"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -60,4 +60,3 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Tipo de uso do dispositivo Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Configurações de tela de status de registro do Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Tipo de usuário do Windows](intune-enrollment-windowsusertype.md)
-

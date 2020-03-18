@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementScriptDeviceState
 description: Contém propriedades para o estado de execução do dispositivo do script de gerenciamento de dispositivos.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 037ebebad70a21e32a09fc0b54fabde1c8603069
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dbb088dbe6fc9e9cd324124269e4cfb8a4c7c66b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525051"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784906"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso deviceManagementScriptDeviceState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

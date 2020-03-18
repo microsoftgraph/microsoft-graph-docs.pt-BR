@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso windowsDefenderScanActionResult
 description: Resultado da última verificação do Windows Defender
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e26904504d882af0ed253b547709a29e075954c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58e2490e0b473c1a59cb3ac35525fbc57b5790a8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528427"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783736"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Tipo de recurso windowsDefenderScanActionResult
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

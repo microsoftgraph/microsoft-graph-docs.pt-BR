@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração deviceRegistrationState
 description: Status do registro do dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f999e393caab410ea3f7565ade25d189193cfc40
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 908f38a2da8f5960eb9c5f1879b7b54374b806ed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525023"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784130"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Status do registro do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não registrado|,0|O dispositivo não está registrado.|
-|inscreve|2 |O dispositivo está registrado.|
-|revogado|3 |O dispositivo foi bloqueado, apagado ou desativado.|
+|inscreve|duas|O dispositivo está registrado.|
+|revogado|3D|O dispositivo foi bloqueado, apagado ou desativado.|
 |keyconflict|4 |O dispositivo tem um conflito de teclas.|
 |approvalPending|5 |O dispositivo está aguardando aprovação.|
 |certificateReset|6 |O certificado de dispositivo foi redefinido.|

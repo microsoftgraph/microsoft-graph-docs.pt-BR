@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso deleteUserFromSharedAppleDeviceActionResult
 description: Resultado de ação de excluir o usuário do dispositivo compartilhado da Apple
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82decf5af685014560ce5a5b7a66fee7cede41c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09448e70e80ca07c9f556e698f70a0e17d4eb820
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528660"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785025"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>Tipo de recurso deleteUserFromSharedAppleDeviceActionResult
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

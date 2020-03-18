@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso managedMobileApp
 description: O identificador da implantação de um aplicativo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58fc8d20d20ad97284f79e88185a1e1381b9acc8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dec43cce448ae38260d1ba27e7993939fb28837e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527872"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781302"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

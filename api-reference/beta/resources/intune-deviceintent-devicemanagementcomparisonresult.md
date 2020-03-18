@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração deviceManagementComparisonResult
 description: Definir o tipo de resultado de comparação
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fcbec4eea2ab05ff6e8f1f304dfdd175926d3b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6a0221ec4ded26bddb06eb3672e67e7b466c973
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525331"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785956"
 ---
 # <a name="devicemanagementcomparisonresult-enum-type"></a>tipo de enumeração deviceManagementComparisonResult
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Definir o tipo de resultado de comparação
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Comparação de configurações desconhecida|
-|EQUAL|1 |Os valores de configuração são iguais|
-|Não igual a|2 |Os valores de configuração não são iguais|
-|adicionado|3 |A configuração é adicionada|
+|EQUAL|1|Os valores de configuração são iguais|
+|Não igual a|duas|Os valores de configuração não são iguais|
+|adicionado|3D|A configuração é adicionada|
 |removido|4 |A configuração é removida|
 
 

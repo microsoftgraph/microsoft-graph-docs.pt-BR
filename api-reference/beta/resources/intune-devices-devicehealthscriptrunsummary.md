@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceHealthScriptRunSummary
 description: Contém propriedades para o resumo de execução de um script de gerenciamento de dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 959b6722f1a72ff1f423f4288ebebdcd14aada11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1be7c470bb2776b16f74f352dc93e1f56163abf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528609"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784934"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>tipo de recurso deviceHealthScriptRunSummary
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

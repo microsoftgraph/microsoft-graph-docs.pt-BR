@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso embeddedSIMActivationCodePoolAssignment
 description: A entidade de atribuição do pool de código de ativação do SIM incorporado atribui um embeddedSIMActivationCodePool específico a um grupo de dispositivos do AAD.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1f98e56826ed08b46a92c7cf1ad5026a1ed9cc9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b0782f070afb6edba104a3dae71955d82673d62
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528216"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783302"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>tipo de recurso embeddedSIMActivationCodePoolAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

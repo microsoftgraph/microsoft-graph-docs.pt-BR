@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsAutopilotDeploymentProfileAssignment
 description: Uma atribuição de um perfil de implantação do piloto automático do Windows a um grupo do AAD.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2943897a054ed2f302b9eecf421ddb9e2cdd1222
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b11c464e3a1e69b7580f2458277abe77d593af75
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528252"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783393"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfileAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

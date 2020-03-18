@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceManagementSettingRegexConstraint
 description: Restrição que impõe a configuração corresponde a um determinado padrão de RegEx
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12107fb0338e98d6ea423a2f14cd5e6809acfce9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e4eca30a72ebeeaf3c1410fd458821519ea11c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528790"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785292"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>tipo de recurso deviceManagementSettingRegexConstraint
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração userExperienceAnalyticsHealthState
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 74001c5d7e3e4dd482c9afae4261428e184a5ae2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e12867ece70127f42fdd7f68d5c2f5f6eaae4718
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524883"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783799"
 ---
 # <a name="userexperienceanalyticshealthstate-enum-type"></a>tipo de enumeração userExperienceAnalyticsHealthState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ainda não documentado|
-|insufficientData|1 |Ainda não documentado|
-|needsAttention|2 |Ainda não documentado|
-|meetingGoals|3 |Ainda não documentado|
+|insufficientData|1|Ainda não documentado|
+|needsAttention|duas|Ainda não documentado|
+|meetingGoals|3D|Ainda não documentado|
 
 
 

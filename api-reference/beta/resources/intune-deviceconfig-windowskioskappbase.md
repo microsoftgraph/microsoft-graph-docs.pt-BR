@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsKioskAppBase
 description: A classe base de um tipo de aplicativo
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 712c23e008e6c0b1434143383e4e8cd924ace509
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3ba4a27f1107b35264d1671530b5314ea28026c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525527"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786443"
 ---
 # <a name="windowskioskappbase-resource-type"></a>tipo de recurso windowsKioskAppBase
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

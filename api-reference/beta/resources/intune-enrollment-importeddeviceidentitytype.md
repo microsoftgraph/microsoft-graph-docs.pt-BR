@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração importedDeviceIdentityType
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d3e87048e4aa1fc51cb98fd1976ceccd8edcc724
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a56191f0187ba43fa5ba96ea974fad24f3fe6b2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524721"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783456"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>tipo de enumeração importedDeviceIdentityType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Valor desconhecido de importedDeviceIdentityType.|
-|imei|1 |A identidade do dispositivo é do tipo IMEI.|
-|serialNumber|2 |A identidade do dispositivo é do tipo número de série.|
+|imei|1|A identidade do dispositivo é do tipo IMEI.|
+|serialNumber|duas|A identidade do dispositivo é do tipo número de série.|
 
 
 

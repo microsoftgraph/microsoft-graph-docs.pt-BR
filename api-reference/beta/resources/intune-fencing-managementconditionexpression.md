@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso managementConditionExpression
 description: Uma expressão de condição de gerenciamento é uma expressão que produz um valor Boolean quando avaliado, ou seja, true ou false, indicando que uma instrução de condição de gerenciamento é ativada/desativada. Uma expressão de condição de gerenciamento pode ser composta de uma combinação de variáveis de expressão e operadores de expressão de valor booleano.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e6fd961fd5a0239b96896387f1f382e4573420b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a374318f7dce2e1e60536599bb39e27d3be9562
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524515"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783239"
 ---
 # <a name="managementconditionexpression-resource-type"></a>tipo de recurso managementConditionExpression
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

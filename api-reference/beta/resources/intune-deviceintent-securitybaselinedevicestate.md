@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso securityBaselineDeviceState
 description: O resumo do estado de conformidade da linha de base de segurança da linha de base de segurança para um dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d3fa75d79789d91efd22efc40637132bad4f80c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0db4b05fc804e58c2cee1ba030540bd948dcc479
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528735"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785193"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>tipo de recurso securityBaselineDeviceState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso insightValueDouble
 description: O valor em uma visão geral da análise da experiência do usuário.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbca1e22061ff14c696f6f52fcbaeebb1fc741eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9894883a023a56c0cfcffb18dc7d9bd091a322ab
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528566"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784009"
 ---
 # <a name="insightvaluedouble-resource-type"></a>tipo de recurso insightValueDouble
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

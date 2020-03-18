@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso groupPolicyDefinition
 description: A entidade descreve todas as informações sobre uma única diretiva de grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 038647f4e40036db89ecf61cdece531662658c46
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e99b32687c0a93673cdbf8889b05e6423cc73c3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528090"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783020"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>tipo de recurso groupPolicyDefinition
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -37,6 +35,7 @@ A entidade descreve todas as informações sobre uma única diretiva de grupo.
 |categoryPath|String|O caminho de categoria completo localizado para a política.|
 |com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
+|groupPolicyCategoryId|Guid|A ID de categoria da categoria pai|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -44,6 +43,7 @@ A entidade descreve todas as informações sobre uma única diretiva de grupo.
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |DefinitionFile|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|O arquivo de política de grupo associado à definição.|
+|category|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|A categoria de política de grupo associada à definição.|
 |apresentações|coleção [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|As apresentações de política de grupo associadas à definição.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -63,6 +63,7 @@ Veja a seguir uma representação JSON do recurso.
   "categoryPath": "String",
   "supportedOn": "String",
   "policyType": "String",
+  "groupPolicyCategoryId": "Guid",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsEnrollmentStatusScreenSettings
 description: Configuração da tela status do registro
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3758dd850a5c98ea2c0ddad4d261fc9a7388ac3c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5e167652c57ad7380b7185865dd1437819dbe68
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528225"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783337"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>tipo de recurso windowsEnrollmentStatusScreenSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

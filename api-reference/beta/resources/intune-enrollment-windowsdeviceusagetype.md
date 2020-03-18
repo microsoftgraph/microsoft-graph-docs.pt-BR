@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windowsDeviceUsageType
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 83f2e7a0e2e0d414dd00ff6f17d43d96d7e498f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bf1300c1a786fabc36aacad1162d00185adf7c5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524557"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783344"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>tipo de enumeração windowsDeviceUsageType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Únicousuário|,0|Tipo de dispositivo de usuário único|
-|compartilhado|1 |Tipo de dispositivo compartilhado|
+|compartilhado|1|Tipo de dispositivo compartilhado|
 
 
 

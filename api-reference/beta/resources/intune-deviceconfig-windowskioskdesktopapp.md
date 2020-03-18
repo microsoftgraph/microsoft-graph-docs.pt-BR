@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso Complexowindowskioskdesktopapp
 description: A classe base de um tipo de aplicativo
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7df38deba11cae5199a781a38dda6cd4b5abb698
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f940a656395a58df4487648a2090455b97d1647b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529031"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786387"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>tipo de recurso Complexowindowskioskdesktopapp
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

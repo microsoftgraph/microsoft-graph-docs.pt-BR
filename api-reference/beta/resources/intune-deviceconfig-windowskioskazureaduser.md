@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windowsKioskAzureADUser
 description: A classe usada para identificar uma conta de usuário do AzureAD para a configuração do quiosque
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c98e2b1c9f22b319cdb1f56fc76e92caa6d830b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 950d1bfeaf73f2f3a37cbd7c154323baf603aebd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529036"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786408"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>tipo de recurso windowsKioskAzureADUser
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
