@@ -1,20 +1,18 @@
 ---
 title: Atualizar userExperienceAnalyticsStartupScoreHistory
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsStartupScoreHistory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4645c627a54f0476c0928bb5bfd2267a04741fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba0503fdbfc9a7fe162e7be3eb25c4d2b3d81b5b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467953"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813744"
 ---
 # <a name="update-userexperienceanalyticsstartupscorehistory"></a>Atualizar userExperienceAnalyticsStartupScoreHistory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,6 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 |startupScore|Int32|Pontuação de inicialização do dispositivo de análise da experiência do usuário.|
 |coreBootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário.|
 |coreSigninScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário.|
+|recommendedSoftwareScore|Int32|A pontuação de entrada do core do dispositivo de análise da experiência do usuário.|
 
 
 
@@ -71,14 +70,15 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsStartupScoreHistory/{userExperienceAnalyticsStartupScoreHistoryId}
 Content-type: application/json
-Content-length: 216
+Content-length: 250
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
 
@@ -87,7 +87,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 265
+Content-Length: 299
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
@@ -95,10 +95,10 @@ Content-Length: 265
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
-
 
 
 

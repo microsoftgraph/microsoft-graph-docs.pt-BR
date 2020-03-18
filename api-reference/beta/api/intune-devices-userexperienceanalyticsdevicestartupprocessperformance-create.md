@@ -1,20 +1,18 @@
 ---
 title: Criar userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Criar um novo objeto userExperienceAnalyticsDeviceStartupProcessPerformance.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1f87169ff1477aae7d64e8fe4fce65df926df8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60947f54e7f06c71c78b966bcab2c80f5e39cf4f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468247"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813877"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Criar userExperienceAnalyticsDeviceStartupProcessPerformance
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -104,7 +102,6 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
-
 
 
 

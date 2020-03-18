@@ -1,20 +1,18 @@
 ---
 title: Criar windowsManagedDevice
 description: Criar um novo objeto windowsManagedDevice.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f8da966e7219f24ab9f3e907acdbc871d8b5ce8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75f6393938d8dfb72fffd4d5afe2698a0fa787fb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467820"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813667"
 ---
 # <a name="create-windowsmanageddevice"></a>Criar windowsManagedDevice
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -118,7 +116,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de validade do certificado de gerenciamento de dispositivos. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância de dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Contagem de malware ativo para este dispositivo Windows. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Contagem de malware corrigido para este dispositivo Windows. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de ti herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -140,7 +138,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 7641
+Content-length: 7665
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -311,7 +309,8 @@ Content-length: 7641
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -324,7 +323,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7690
+Content-Length: 7714
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -496,14 +495,14 @@ Content-Length: 7690
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
   "processorArchitecture": "x86"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Obter userExperienceAnalyticsStartupScoreHistory
 description: Leia as propriedades e as relações do objeto userExperienceAnalyticsStartupScoreHistory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d23f85afc1195da585b052bc200902b2c5eb4ded
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cde9869ff44b2de0f7642a8ad03e3c4eb7ebd046
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467960"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813758"
 ---
 # <a name="get-userexperienceanalyticsstartupscorehistory"></a>Obter userExperienceAnalyticsStartupScoreHistory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 296
+Content-Length: 332
 
 {
   "value": {
@@ -77,11 +75,11 @@ Content-Length: 296
     "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
     "startupScore": 12,
     "coreBootScore": 13,
-    "coreSigninScore": 15
+    "coreSigninScore": 15,
+    "recommendedSoftwareScore": 8
   }
 }
 ```
-
 
 
 

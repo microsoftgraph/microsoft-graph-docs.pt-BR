@@ -1,16 +1,16 @@
 ---
 title: Criar windowsManagementAppHealthState
 description: Criar um novo objeto windowsManagementAppHealthState.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7995d21550b6152ec4fae020fd42e8118f334fb8
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1883dcf29f30e921ccbadbcb9022c919d67c8755
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944241"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813618"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Criar windowsManagementAppHealthState
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 |:---|:---|:---|
 |id|String|Identificador exclusivo do estado de integridade do aplicativo de gerenciamento do Windows. Essa propriedade é somente leitura.|
 |HealthState|[HealthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo de gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|Cadeia de Caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
+|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Tempo de check-in do aplicativo de gerenciamento do Windows por último.|
 |deviceName|String|Nome do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
-|deviceOSVersion|Cadeia de Caracteres|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
+|deviceOSVersion|String|Versão do Windows 10 so do dispositivo no qual o aplicativo de gerenciamento do Windows está instalado.|
 
 
 
@@ -99,7 +99,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
 
 
 

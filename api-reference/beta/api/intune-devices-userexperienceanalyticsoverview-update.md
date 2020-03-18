@@ -1,20 +1,18 @@
 ---
 title: Atualizar userExperienceAnalyticsOverview
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsOverview.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9db68a2dcd02c5ff7facf725c908fc5a2b5e7a32
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4716110b418bbce07f99cfd7b2a7feef60d9d147
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468079"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813800"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Atualizar userExperienceAnalyticsOverview
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -133,7 +131,6 @@ Content-Length: 809
   "bestPracticesHealthState": "insufficientData"
 }
 ```
-
 
 
 

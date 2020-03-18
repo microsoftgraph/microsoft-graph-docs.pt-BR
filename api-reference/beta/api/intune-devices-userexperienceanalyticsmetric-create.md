@@ -1,20 +1,18 @@
 ---
 title: Criar userExperienceAnalyticsMetric
 description: Criar um novo objeto userExperienceAnalyticsMetric.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9e8ca95bcb11d26212f0248fcced244d6edbc9d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d6d7fe337c379555ce982d8c29c1913e48429f84
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468233"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813842"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Criar userExperienceAnalyticsMetric
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -95,7 +93,6 @@ Content-Length: 196
   "unit": "Unit value"
 }
 ```
-
 
 
 
