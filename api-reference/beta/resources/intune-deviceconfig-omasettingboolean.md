@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso omaSettingBoolean
 description: Definição booliana para configurações de OMA.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 346b08685b8a44b414bd6f19d601541dc964cf92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34cc6d42cc6a6914af67e8b986dd5230a389fdd2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525975"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788468"
 ---
 # <a name="omasettingboolean-resource-type"></a>Tipo de recurso omaSettingBoolean
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

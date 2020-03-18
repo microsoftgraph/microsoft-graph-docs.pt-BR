@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso windows10AppsForceUpdateSchedule
 description: Agendamento de atualização forçada do Windows 10 para aplicativos
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5c1e1c832e961b00161ef0a3d98cd8c278dc97e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 980503e9316e5ae1d0083f2226519004fa802afd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529239"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787226"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>tipo de recurso windows10AppsForceUpdateSchedule
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType
 description: Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 93aec1ff6a526f49afb6aa711a341a3c31ea274b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cf27aa3ca4816e1af2ba4eea1d7e20fbef3dc71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526238"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790360"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>tipo de enumeração localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowe
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|grupos|1 |Administradores|
-|administratorsAndPowerUsers|2 |Administradores e usuários avançados|
-|administratorsAndInteractiveUsers|3 |Administradores e usuários interativos |
+|grupos|1|Administradores|
+|administratorsAndPowerUsers|duas|Administradores e usuários avançados|
+|administratorsAndInteractiveUsers|3D|Administradores e usuários interativos |
 
 
 

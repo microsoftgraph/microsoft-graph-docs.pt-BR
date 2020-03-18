@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso airPrintDestination
 description: Representa um destino de impressão.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99693cbdfa77895e0116ac5228fdf58d95afeacb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0f77b9f0ee3ff3abe46a41b0c6760a15d7aa2c1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487358"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797203"
 ---
 # <a name="airprintdestination-resource-type"></a>tipo de recurso airPrintDestination
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso customSubjectAlternativeName
 description: Definição do nome alternativo da entidade personalizada
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2e54e6d3c0ddea77758b083e5d2f979dc7f49b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22f28942f891bc8ac72f6640091e0b8e1195f51f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526934"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795649"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>tipo de recurso customSubjectAlternativeName
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

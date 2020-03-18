@@ -2,19 +2,17 @@
 title: tipo de recurso windowsOfficeClientConfiguration
 description: Entidade que descreve as configurações de política do Office para Windows.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb85de3a2ac9ad86c486eadc616cdb87383f100e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 705555ff285420c4aa9d43ee57034026e9043785
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488002"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797287"
 ---
 # <a name="windowsofficeclientconfiguration-resource-type"></a>tipo de recurso windowsOfficeClientConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

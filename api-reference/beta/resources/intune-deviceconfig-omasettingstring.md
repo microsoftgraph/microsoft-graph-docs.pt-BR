@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso omaSettingString
 description: Definição de cadeia de caracteres para configurações de OMA.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89597dd841746284c044fab6376a78501f3ffe8e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d20a88e79a1383789a67883d03aae6b8e4463f4e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525961"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788433"
 ---
 # <a name="omasettingstring-resource-type"></a>Tipo de recurso omaSettingString
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração bitLockerRecoveryPasswordRotationType
 description: Tipo de rotação da senha de recuperação do BitLocker
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 989690620e6be54caa35e02be0920f15a7d2787b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e0be99dd7307c13975c430a5693098ca57e9eb6e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527031"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795740"
 ---
 # <a name="bitlockerrecoverypasswordrotationtype-enum-type"></a>tipo de enumeração bitLockerRecoveryPasswordRotationType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de rotação da senha de recuperação do BitLocker
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|deficiência|1 |Rotação da senha de recuperação desativada|
-|enabledForAzureAd|2 |Rotação da senha de recuperação em dispositivos ingressados no Azure AD|
-|enabledForAzureAdAndHybrid|3 |Rotação da senha de recuperação para os dispositivos ingressados e híbridos do Azure AD|
+|deficiência|1|Rotação da senha de recuperação desativada|
+|enabledForAzureAd|duas|Rotação da senha de recuperação em dispositivos ingressados no Azure AD|
+|enabledForAzureAdAndHybrid|3D|Rotação da senha de recuperação para os dispositivos ingressados e híbridos do Azure AD|
 
 
 

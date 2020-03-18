@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração mobileAppDependencyType
 description: Indica o tipo de dependência associado a uma relação entre dois aplicativos móveis.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e008d01d4f53e5739412f279878d83cf7cc87d34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 64603e4d39713a366b542c6322ac06c193e43c7b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491701"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797815"
 ---
 # <a name="mobileappdependencytype-enum-type"></a>tipo de enumeração mobileAppDependencyType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Indica o tipo de dependência associado a uma relação entre dois aplicativos m
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |as|,0|Indica que o aplicativo filho deve ser detectado antes da instalação do aplicativo pai.|
-|Instalação|1 |Indica que o aplicativo filho deve ser instalado antes da instalação do aplicativo pai.|
+|Instalação|1|Indica que o aplicativo filho deve ser instalado antes da instalação do aplicativo pai.|
 
 
 

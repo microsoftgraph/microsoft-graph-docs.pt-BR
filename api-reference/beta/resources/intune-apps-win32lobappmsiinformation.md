@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso win32LobAppMsiInformation
 description: Contém as propriedades do aplicativo MSI para um aplicativo Win32.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92ff70c8b1bbf63ce6fd81321282a0f61f4accc3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd710b166bd1171ed17a2deef7648e580d578301
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490690"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797637"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>tipo de recurso win32LobAppMsiInformation
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

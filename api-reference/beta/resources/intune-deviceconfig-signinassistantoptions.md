@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração signInAssistantOptions
 description: Valores para o SignInAssistantSettings.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b2761879846a71a7d12a13a3f03730c70ea52c7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c5d5b8fd93c0eb0dea24bda9d902b35f0320f9f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525842"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787513"
 ---
 # <a name="signinassistantoptions-enum-type"></a>tipo de enumeração signInAssistantOptions
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Valores para o SignInAssistantSettings.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado-WLIDSVC start será definido como SERVICE_DEMAND_START.|
-|deficiência|1 |Disabled-WLIDSVC start será definido como SERVICE_DISABLED.|
+|deficiência|1|Disabled-WLIDSVC start será definido como SERVICE_DISABLED.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso mobileAppInstallStatus
 description: Contém propriedades para o estado de instalação de um aplicativo móvel para um dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 891ddaa41d03c18afd45eff8c7dbe05cb8e32b0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f62b21b583d72607582eadb9c3fadd3c5045f15
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491694"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797808"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>tipo de recurso mobileAppInstallStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

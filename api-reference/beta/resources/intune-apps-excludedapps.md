@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso excludedApps
 description: Contém propriedades para aplicativos do Office365 excluídos.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 47954bb18ad7ac1ec517038f9861818418e6aabd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24813edf732d73905a6b45b9e4fe584b6312a13c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493794"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798137"
 ---
 # <a name="excludedapps-resource-type"></a>tipo de recurso excludedApps
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

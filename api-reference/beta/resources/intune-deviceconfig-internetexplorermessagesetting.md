@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração internetExplorerMessageSetting
 description: Qual mensagem será exibida por borda antes de mudar para o Internet Explorer.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 927184dc3e2cc341180a36060d5e41045c5ac086
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7f1875e758ba815786a7941678367980f3db3d0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529967"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791706"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>tipo de enumeração internetExplorerMessageSetting
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Qual mensagem será exibida por borda antes de mudar para o Internet Explorer.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|deficiência|1 |Deficiência.|
-|enabled|2 |Permiti.|
-|keepGoing|3 |KeepGoing.|
+|deficiência|1|Deficiência.|
+|enabled|duas|Permiti.|
+|keepGoing|3D|KeepGoing.|
 
 
 

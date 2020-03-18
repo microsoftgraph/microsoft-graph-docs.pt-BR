@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso unsupportedDeviceConfigurationDetail
 description: Uma descrição do motivo pelo qual uma entidade não é suportada.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ad1f5b06e9b3890eea2eb754220572436ac94c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 710f71b65a30e8211895c0b0073a572a385a89b7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529357"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787450"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso unsupportedDeviceConfigurationDetail
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

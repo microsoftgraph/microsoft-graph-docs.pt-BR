@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso mobileContainedApp
 description: Uma classe abstrata que representa um aplicativo contido em um mobileApp que atua como um pacote.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73536b8e1343d2c69296ca7c8149f4fad0e9a34b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ebfb99c5c1c16d04c7a567af19475840903e8832
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491327"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797766"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>tipo de recurso mobileContainedApp
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

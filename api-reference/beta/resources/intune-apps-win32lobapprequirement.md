@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso win32LobAppRequirement
 description: Classe base para detectar um aplicativo Win32
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9392c54dd78f0f7fce752423f9cf6c57a7713f58
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91c8a23170ba18e2c5c8ec3a3890e548a27df9cd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490340"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797560"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>tipo de recurso win32LobAppRequirement
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

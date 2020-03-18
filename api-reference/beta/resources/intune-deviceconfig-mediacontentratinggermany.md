@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso mediaContentRatingGermany
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9c55acb14d9e1d184da95a343edac6b3a6dcf4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f32a6ed59861dce47f5c38f7259b78879bf1681c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526031"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788580"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>Tipo de recurso mediaContentRatingGermany
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

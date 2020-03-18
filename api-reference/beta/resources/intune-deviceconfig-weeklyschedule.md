@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração weeklySchedule
 description: Valores possíveis para um cronograma semanal.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c55cad1f35659c12d734696442f1d0feac31178
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d26d8861ab7dd5fe6e6fb2b4111aa6c3458fe611
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525716"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787261"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enumeração weeklySchedule
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para um cronograma semanal.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|diário|1 |Diário.|
-|domingo|2 |Domingo.|
-|período|3 |Segunda-feira.|
+|diário|1|Diário.|
+|domingo|duas|Domingo.|
+|período|3D|Segunda-feira.|
 |feira|4 |Terça-feira.|
 |feira|5 |Quarta-feira.|
 |quinta-feira|6 |Quinta-feira.|

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso restrictedAppsViolation
 description: Violação de perfil de configuração de aplicativos restritos por dispositivo por usuário
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b5d1dda2d91c57d8159daa0248d96e8dbf8d97f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9dcac75a4e13b5d3c503095c3cb58f118314ab67
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525877"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787604"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>tipo de recurso restrictedAppsViolation
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração ratingIrelandMoviesType
 description: Rótulos de classificação de filmes na Irlanda
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: effa5631a001acacccc07587dd93302a0142d2fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5df4010ba503d2b3dbe0519c3bc25db52b96b96
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529491"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787695"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>tipo de enumeração ratingIrelandMoviesType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Rótulos de classificação de filmes na Irlanda
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1 |Não permitir conteúdo de filmes|
-|geral|2 |Adequado para crianças com idade de saída da escola|
-|parentalGuidance|3 |A classificação PG aconselha a orientação dos pais|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|Adequado para crianças com idade de saída da escola|
+|parentalGuidance|3D|A classificação PG aconselha a orientação dos pais|
 |agesAbove12|4 |A classificação 12A é adequada para visualizadores de 12 ou mais antigos|
 |agesAbove15|5 |A classificação do 15A é adequada para visualizadores de 15 ou mais|
 |agesAbove16|6 |A classificação 16 é adequada para visualizadores de 16 ou mais antigos|

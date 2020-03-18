@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração defenderSecurityCenterNotificationsFromAppType
 description: Valores possíveis para defenderSecurityCenterNotificationsFromApp
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e5522e375e08605bf7e42d6853bc6775f5e41ab3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4799ec2ad8fa9f0b4b3c629b87cf8e6b7240ef16
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526844"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794421"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>tipo de enumeração defenderSecurityCenterNotificationsFromAppType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Valores possíveis para defenderSecurityCenterNotificationsFromApp
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|blockNoncriticalNotifications|1 |Bloquear notificações não críticas|
-|blockAllNotifications|2 |Bloquear todas as notificações|
+|blockNoncriticalNotifications|1|Bloquear notificações não críticas|
+|blockAllNotifications|duas|Bloquear todas as notificações|
 
 
 

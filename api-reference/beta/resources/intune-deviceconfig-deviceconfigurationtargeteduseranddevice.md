@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deviceConfigurationTargetedUserAndDevice
 description: Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d202c50c22cb287f91c18ab6b779d48e971f672c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e373dfd4cae79fad4877195544091d054560873
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530151"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793230"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso deviceConfigurationTargetedUserAndDevice
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

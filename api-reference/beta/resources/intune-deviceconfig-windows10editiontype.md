@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windows10EditionType
 description: Tipo Windows 10 Edition.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0908a7a5ad9e5eb2bde70cd514fe8304b8ba0ce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1bc9f191211a2018eadd5fe19846bc9e63059e7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529204"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786723"
 ---
 # <a name="windows10editiontype-enum-type"></a>tipo de enumeração windows10EditionType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo Windows 10 Edition.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |windows10Enterprise|,0|Windows 10 Enterprise|
-|windows10EnterpriseN|1 |Windows 10 Enterprise|
-|windows10Education|2 |Windows 10 Education|
-|windows10EducationN|3 |Windows 10 Educan|
+|windows10EnterpriseN|1|Windows 10 Enterprise|
+|windows10Education|duas|Windows 10 Education|
+|windows10EducationN|3D|Windows 10 Educan|
 |windows10MobileEnterprise|4 |Windows 10 Mobile Enterprise|
 |windows10HolographicEnterprise|5 |Windows 10 Holographic Enterprise|
 |windows10Professional|6 |Windows 10 Professional|
@@ -36,7 +34,7 @@ Tipo Windows 10 Edition.
 |windows10ProfessionalEducation|8 |Windows 10 Professional Education|
 |windows10ProfessionalEducationN|9 |Windows 10 Professional Educan|
 |windows10ProfessionalWorkstation|10 |Windows 10 Professional para estações de trabalho|
-|windows10ProfessionalWorkstationN|11 |Windows 10 Professional para estações de trabalho N|
+|windows10ProfessionalWorkstationN|11|Windows 10 Professional para estações de trabalho N|
 |notConfigured|12 |NotConfigured|
 |windows10Home|13 |Página inicial do Windows 10|
 |windows10HomeChina|14 |Windows 10 Home da China|

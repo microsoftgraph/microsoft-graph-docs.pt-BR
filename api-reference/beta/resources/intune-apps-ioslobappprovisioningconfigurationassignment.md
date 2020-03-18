@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso iosLobAppProvisioningConfigurationAssignment
 description: Uma classe que contém as propriedades usadas para atribuição de grupo de um provisionamento e configuração de aplicativos LOB iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90bc02deb5298bd57d465f2eb5b24fb22e0cbcc8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08c7e80fb399a91322e464ae312c8d6a86c2bd7b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493605"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798116"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>tipo de recurso iosLobAppProvisioningConfigurationAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração vpnOnDemandRuleConnectionAction
 description: Ação de conexão de regra por demanda da VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ed2243b393595adeb39f84137f4096e6d0e2812b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36538a98cbc136b7c651fbfb87e366eec3e5a5e2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529302"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787352"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>tipo de enumeração vpnOnDemandRuleConnectionAction
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ação de conexão de regra por demanda da VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |connect|,0|Ao.|
-|evaluateConnection|1 |Avaliar conexão.|
-|ignora|2 |Ignora.|
-|disconnect|3 |Desconectar.|
+|evaluateConnection|1|Avaliar conexão.|
+|ignora|duas|Ignora.|
+|disconnect|3D|Desconectar.|
 
 
 

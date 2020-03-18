@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração scheduledRetireState
 description: 'Cancelar ou confirmar desativação agendada '
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c85a0bb02c330dfb2e53bd694bf9f71a642642d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 801b4e6343dc68cbe29c29f4ad38ebf9059e13d1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529434"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787583"
 ---
 # <a name="scheduledretirestate-enum-type"></a>tipo de enumeração scheduledRetireState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Cancelar ou confirmar desativação agendada
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |cancelRetire|,0|Cancelar a desativação.|
-|comfirmRetire|1 |Desative esses dispositivos.|
+|comfirmRetire|1|Desative esses dispositivos.|
 
 
 

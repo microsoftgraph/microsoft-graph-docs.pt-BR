@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso managedAllDeviceCertificateState
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4be36b8c62d661957158dce03514e3c20bc4c0c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81c5e810228534a4772b3cdf233faefe67537ef8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526059"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788636"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>tipo de recurso managedAllDeviceCertificateState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

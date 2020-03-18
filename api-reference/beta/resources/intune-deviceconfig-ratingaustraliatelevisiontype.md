@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração ratingAustraliaTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Austrália
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e86cc187f2047ac0636be0040c04763fdc4f6ec7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 858e3d84d542c72c49aa32840d0a0437137e67db
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525947"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788384"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enumeração ratingAustraliaTelevisionType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Rótulos de classificação de conteúdo de TV na Austrália
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|poliescolares|2 |A classificação P destina-se a preaulas|
-|children|3 |A classificação de C destina-se a crianças com menos de 14|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|poliescolares|duas|A classificação P destina-se a preaulas|
+|children|3D|A classificação de C destina-se a crianças com menos de 14|
 |geral|4 |A classificação G é adequada para todas as idades|
 |parentalGuidance|5 |A classificação PG é recomendada para visualizadores jovens|
 |completa|6 |A classificação M é recomendada para visualizadores mais de 15|

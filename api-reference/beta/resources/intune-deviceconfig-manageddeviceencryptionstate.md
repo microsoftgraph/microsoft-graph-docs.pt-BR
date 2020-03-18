@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso managedDeviceEncryptionState
 description: Relatório de criptografia por dispositivo
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b21e418f548794a64e7ba72c1fd704b21db5febc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0afacd0cc11a53a632d83d412e3e4ab88cc75f8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526052"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788622"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>tipo de recurso managedDeviceEncryptionState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

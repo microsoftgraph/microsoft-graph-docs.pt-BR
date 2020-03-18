@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração localSecurityOptionsInformationShownOnLockScreenType
 description: Valores possíveis para LocalSecurityOptionsInformationShownOnLockScreenType
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d3af6756ec1ddbde2fdd8cc6603af17bca0184c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd9380313bb3201d86c53c4f14d66bbbe99c7de3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526224"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790346"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>tipo de enumeração localSecurityOptionsInformationShownOnLockScreenType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para LocalSecurityOptionsInformationShownOnLockScreenType
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|userDisplayNameDomainUser|1 |Nome de exibição do usuário, nomes de domínio e de usuário|
-|userDisplayNameOnly|2 |Somente nome de exibição do usuário|
-|doNotDisplayUser|3 |Não exibir informações do usuário|
+|userDisplayNameDomainUser|1|Nome de exibição do usuário, nomes de domínio e de usuário|
+|userDisplayNameOnly|duas|Somente nome de exibição do usuário|
+|doNotDisplayUser|3D|Não exibir informações do usuário|
 
 
 

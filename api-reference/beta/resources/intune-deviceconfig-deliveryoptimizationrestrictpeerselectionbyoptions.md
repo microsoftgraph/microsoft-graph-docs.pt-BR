@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração deliveryOptimizationRestrictPeerSelectionByOptions
 description: Valores para restringir a seleção de par.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b836765b4b89762e91a9d47c5133e8221912e9a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5eb1efe72e70051f84502df19957def98020b26f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526744"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793377"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>tipo de enumeração deliveryOptimizationRestrictPeerSelectionByOptions
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Valores para restringir a seleção de par.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|Máscara de sub-rede|1 |Máscara de sub-rede.|
+|Máscara de sub-rede|1|Máscara de sub-rede.|
 
 
 

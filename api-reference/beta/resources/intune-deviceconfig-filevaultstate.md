@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração filevaultstate
 description: Estado FileVault
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f2fa72d2db91ba000209332aec3d59579cba822
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1efe284a4d6bad3685c6fbf9c4003153a3aca913
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529995"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791762"
 ---
 # <a name="filevaultstate-enum-type"></a>tipo de enumeração filevaultstate
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Estado FileVault
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Êxito no estado FileVault|
-|driveEncryptedByUser|1 |O FileVault foi habilitado pelo usuário e não está sendo gerenciado por política|
-|userDeferredEncryption|2 |A política do FileVault foi instalada com êxito, mas o usuário não iniciou a criptografia|
+|driveEncryptedByUser|1|O FileVault foi habilitado pelo usuário e não está sendo gerenciado por política|
+|userDeferredEncryption|duas|A política do FileVault foi instalada com êxito, mas o usuário não iniciou a criptografia|
 |escrowNotEnabled|4 |A caução da chave de recuperação FileVault não está habilitada|
 
 

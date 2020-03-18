@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidUsernameSource
 description: Fonte de nome de usuário Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 82487879c19aabfb7243a147fa115e98b84d2e8a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b95ee27d87a560b4d73d3b5c92554da440864673
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527278"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796710"
 ---
 # <a name="androidusernamesource-enum-type"></a>tipo de enumeração androidUsernameSource
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Fonte de nome de usuário Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |username|,0|O nome de usuário.|
-|userPrincipalName|1 |O nome da entidade de segurança do usuário.|
-|samAccountName|2 |O nome da conta Sam do usuário.|
-|primarySmtpAddress|3 |Endereço SMTP principal.|
+|userPrincipalName|1|O nome da entidade de segurança do usuário.|
+|samAccountName|duas|O nome da conta Sam do usuário.|
+|primarySmtpAddress|3D|Endereço SMTP principal.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidDeviceOwnerVirtualHomeButtonType
 description: Tela inicial virtual do modo de quiosque do dispositivo Android tipo de botão de Home Page virtual.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7549853813a3af17333907b8e6c71b1775a33b28
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c8861a101bdf554b50394e41dc01d5953286afb2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42486000"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796955"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>tipo de enumeração androidDeviceOwnerVirtualHomeButtonType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Tela inicial virtual do modo de quiosque do dispositivo Android tipo de botão d
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|swipeUp|1 |Botão deslizar para cima para a página inicial.|
-|flutuante|2 |Botão de página inicial flutuante.|
+|swipeUp|1|Botão deslizar para cima para a página inicial.|
+|flutuante|duas|Botão de página inicial flutuante.|
 
 
 

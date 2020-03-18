@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso mobileAppProvisioningConfigGroupAssignment
 description: Contém as propriedades usadas para atribuir uma configuração de provisionamento de aplicativo a um grupo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b912c55b6b0f526246938356bc913da9e8717b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 67939ed672b2ead92494e63dae0ca44e6cdc7719
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491474"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797794"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>tipo de recurso mobileAppProvisioningConfigGroupAssignment
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

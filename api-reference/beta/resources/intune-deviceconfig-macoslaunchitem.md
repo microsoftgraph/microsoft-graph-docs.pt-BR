@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso macOSLaunchItem
 description: Representa um aplicativo na lista de itens de lançamento do macOS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbdec2156c135544a6ce36887fcd7c911217dff5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 378b2e3f510d8d0db082e3843ea2588e5a5e161d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529683"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789203"
 ---
 # <a name="macoslaunchitem-resource-type"></a>tipo de recurso macOSLaunchItem
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

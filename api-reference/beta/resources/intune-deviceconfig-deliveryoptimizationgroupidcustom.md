@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deliveryOptimizationGroupIdCustom
 description: Tipo de ID de grupo personalizado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f19576203d720eeb35c4268e6ea4f28c968c969
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3dd542a99a7eace79fbc3318117dbf7c539ee79
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526787"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794365"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdCustom
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

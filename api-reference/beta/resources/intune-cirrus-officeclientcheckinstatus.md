@@ -2,19 +2,17 @@
 title: tipo de recurso officeClientCheckinStatus
 description: Entidade que descreve as estatísticas de check-in do locatário.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b5509fed7c7dba43a9070695982c120f007f097
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66087cd47fa70352f8051fc220820ea355805f19
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488541"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797336"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso officeClientCheckinStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -32,7 +30,7 @@ Entidade que descreve as estatísticas de check-in do locatário.
 |userId|String|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Tempo de check-in do último dispositivo em UTC.|
 |errorMessage|String|Mensagem de erro se algum associado para o último check-in.|
-|appliedPolicies|String collection|Lista de políticas entregues ao dispositivo como última verificação.|
+|appliedPolicies|Coleção de cadeias de caracteres|Lista de políticas entregues ao dispositivo como última verificação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

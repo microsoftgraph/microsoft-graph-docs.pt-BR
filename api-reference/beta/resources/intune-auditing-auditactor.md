@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso auditActor
 description: Uma classe que contém as propriedades para Ator de auditoria.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40aa3d256da1d7a1c50fc898c6755a82185897ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d54d34081c931df442afa6d6d0e569de75fb652
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489486"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797434"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

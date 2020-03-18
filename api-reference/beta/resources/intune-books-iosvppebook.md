@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso iosVppEBook
 description: Uma classe que contém as propriedades do livro eletrônico Vpp iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29c3f6de1d698989d91e132000e18d6dacc29968
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e888d818b3fca91af0b783170ba86039888bac8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488898"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797378"
 ---
 # <a name="iosvppebook-resource-type"></a>Tipo de recurso iosVppEBook
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -55,7 +53,7 @@ Herda de [managedEBook](../resources/intune-books-managedebook.md)
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

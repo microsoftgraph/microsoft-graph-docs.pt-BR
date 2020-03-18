@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração hashAlgorithm
 description: Opções de algoritmo de hash.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 17a6065c43456e86d7c5a984d6709b4d66dd9794
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afc685afd353e65d402047922240f24afaaaa1ef
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526427"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791727"
 ---
 # <a name="hashalgorithms-enum-type"></a>tipo de enumeração hashAlgorithm
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,8 +23,8 @@ Opções de algoritmo de hash.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|SHA1|1 |Algoritmo de hash SHA-1.|
-|SHA2|2 |Algoritmo de hash SHA-2.|
+|SHA1|1|Algoritmo de hash SHA-1.|
+|SHA2|duas|Algoritmo de hash SHA-2.|
 
 
 

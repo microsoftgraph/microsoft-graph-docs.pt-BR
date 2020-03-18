@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração advancedBitLockerState
 description: Estado do BitLocker avançado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7ea303e306510eb0b0afc8960d16b2d9091148ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3de3ddc3e1b6f881c572a76ca99b45b89b8cdd71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487449"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797224"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>tipo de enumeração advancedBitLockerState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Estado do BitLocker avançado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Êxito no estado do BitLocker avançado|
-|noUserConsent|1 |O usuário nunca deu o consentimento para a criptografia|
-|osVolumeEncryptionMethodMismatch|2 |O método de criptografia do volume de so é diferente daquele definido por política|
+|noUserConsent|1|O usuário nunca deu o consentimento para a criptografia|
+|osVolumeEncryptionMethodMismatch|duas|O método de criptografia do volume de so é diferente daquele definido por política|
 |osVolumeTpmRequired|4 |TPM não usado para proteção do volume de so, mas é exigido por política|
 |osVolumeTpmOnlyRequired|8 |A proteção somente TPM não é usada para o volume de so, mas é necessária para a política|
 |osVolumeTpmPinRequired|16 |TPM + proteção de PIN não usada para o volume de sistema operacional, mas é necessária para a política|

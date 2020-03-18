@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso vpnProxyServer
 description: Servidor proxy VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0e1701aaf353515a9152b2a69513d57c89cdaf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ccf4995520bb213c9adea7afa0ba436cae9dc8d7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525751"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787331"
 ---
 # <a name="vpnproxyserver-resource-type"></a>tipo de recurso vpnProxyServer
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

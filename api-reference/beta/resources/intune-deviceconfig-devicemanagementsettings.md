@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso deviceManagementSettings
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3c6e3f718cb7b3915daecc700e55b733947530c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3e622c5231bd985a6834e9b6b1d908860385245
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526595"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42792007"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -33,6 +31,7 @@ Ainda não documentado
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|O provedor de credenciais derivado a ser usado para esta conta. Os valores possíveis são: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|String|O URI de autoatendimento do provedor de credenciais derivado.|
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|A propriedade para determinar se o registro do administrador do dispositivo Android está habilitado para esta conta.|
+|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|A propriedade para determinar se deve ignorar as configurações de conformidade não suportadas em determinados modelos de dispositivos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -54,7 +53,8 @@ Veja a seguir uma representação JSON do recurso.
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
-  "androidDeviceAdministratorEnrollmentEnabled": true
+  "androidDeviceAdministratorEnrollmentEnabled": true,
+  "ignoreDevicesForUnsupportedSettingsEnabled": true
 }
 ```
 

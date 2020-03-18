@@ -4,16 +4,16 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b75ea23fcde73349efb857df50e8df71bd34c2d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18958c1ff3789a2a8cdea35d51d605c09331b745
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487463"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797238"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -39,6 +39,8 @@ Namespace: Microsoft. Graph
 - [Tipo qualificado de gerenciamento de co](intune-devices-comanagementeligibletype.md)
 - [Estado de conformidade](intune-devices-compliancestate.md)
 - [Ação do Gerenciador de configurações](intune-devices-configurationmanageraction.md)
+- [Status de entrega de ação do Gerenciador de configurações](intune-devices-configurationmanageractiondeliverystatus.md)
+- [Resultado da ação do Gerenciador de configurações](intune-devices-configurationmanageractionresult.md)
 - [Tipo de ação do Gerenciador de configurações](intune-devices-configurationmanageractiontype.md)
 - [Recursos habilitados pelo cliente do Gerenciador de Configurações](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Estado de integridade do cliente de gerenciador de configurações](intune-devices-configurationmanagerclienthealthstate.md)
@@ -49,6 +51,7 @@ Namespace: Microsoft. Graph
 - [Resultado da ação de excluir o usuário do dispositivo compartilhado da Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Aplicativo detectado](intune-devices-detectedapp.md)
 - [Resultado da ação do dispositivo](intune-devices-deviceactionresult.md)
+- [Tipo de filtro de atribuição de gerenciamento de dispositivos e aplicativos](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [Motivo da falha de registro do dispositivo](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Resumo do Estado de Acesso ao Exchange do dispositivo](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Geolocalização do dispositivo](intune-devices-devicegeolocation.md)
@@ -59,10 +62,14 @@ Namespace: Microsoft. Graph
 - [Script de integridade do dispositivo](intune-devices-devicehealthscript.md)
 - [Atribuição de script de integridade do dispositivo](intune-devices-devicehealthscriptassignment.md)
 - [Estado do dispositivo de script de integridade do dispositivo](intune-devices-devicehealthscriptdevicestate.md)
+- [Resumo de correção de script de integridade do dispositivo](intune-devices-devicehealthscriptremediationsummary.md)
 - [Resumo de execução de script de integridade do dispositivo](intune-devices-devicehealthscriptrunsummary.md)
 - [Definição de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Instância de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Evento de piloto automático de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotevent.md)
+- [Status de conformidade da política do AutoPilot de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)
+- [Detalhe de status da política do AutoPilot de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
+- [Tipo de política do AutoPilot de gerenciamento de dispositivos](intune-troubleshooting-devicemanagementautopilotpolicytype.md)
 - [Instância de configuração booleana de gerenciamento de dispositivos](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Definição de configuração da coleção de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Instância de configuração da coleção de gerenciamento de dispositivos](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
@@ -103,6 +110,7 @@ Namespace: Microsoft. Graph
 - [Restrição de perfil da configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [Restrição de regex de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingregexconstraint.md)
 - [Restrição obrigatória da configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
+- [Restrição SDDL da configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingsddlconstraint.md)
 - [Restrição de comprimento de cadeia de caracteres de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [Restrição de xml de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
 - [Instância de configuração da cadeia de caracteres do gerenciamento de dispositivos](intune-deviceintent-devicemanagementstringsettinginstance.md)

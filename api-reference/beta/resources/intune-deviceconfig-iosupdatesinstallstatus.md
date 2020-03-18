@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração iosUpdatesInstallStatus
 description: Ainda não documentado
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 839ece354ff79bb1adfb564ab68dbf414dc8d01f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ba9b17b10e9ecac48fbc8b39cc896d1e9d8f873
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526287"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790500"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|disponível|1 |Ainda não documentado|
-|Estado|2 |Ainda não documentado|
-|desconhecido|3 |Ainda não documentado|
+|disponível|1|Ainda não documentado|
+|Estado|duas|Ainda não documentado|
+|desconhecido|3D|Ainda não documentado|
 |Baixe|-2016330712|Ainda não documentado|
 |downloadFailed|-2016330711|Ainda não documentado|
 |downloadRequiresComputer|-2016330710|Ainda não documentado|
@@ -42,6 +40,7 @@ Ainda não documentado
 |installFailed|-2016330702|Ainda não documentado|
 |notSupportedOperation|-2016330701|Ainda não documentado|
 |sharedDeviceUserLoggedInError|-2016330699|Ainda não documentado|
+|deviceOsHigherThanDesiredOsVersion|-2016330696|Ainda não documentado|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso iosEduCertificateSettings
 description: Certificados de raiz confiável e PFX para iOS EDU.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 503d2b1d0f4fa94e95d20882b10a0c30d968680e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f772ee8f484b2b8bc42a6ed48298dc5a17016afc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529931"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791615"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso iosEduCertificateSettings
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

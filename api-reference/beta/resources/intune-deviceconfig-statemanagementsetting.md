@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração stateManagementSetting
 description: Configuração de gerenciamento de estado.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 603d2a282602f40a1804b4f317dd2d35e58e7b91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c415bc3166044c0690e152dbdc1a624a179d020
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529366"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787478"
 ---
 # <a name="statemanagementsetting-enum-type"></a>tipo de enumeração stateManagementSetting
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Configuração de gerenciamento de estado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|bloqueou|1 |Bloqueou.|
-|autorizado|2 |Autorizado.|
+|bloqueou|1|Bloqueou.|
+|autorizado|duas|Autorizado.|
 
 
 

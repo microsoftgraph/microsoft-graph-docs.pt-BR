@@ -2,19 +2,17 @@
 title: tipo de recurso Conjuntoofficeclientconfiguration
 description: Configuração de cliente do Office.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fabc35866aafbbb4052ce5eab3f0de977ec6adb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a6077f327efc24279d04e1a4a377f2ef50eb171
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488534"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797329"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso Conjuntoofficeclientconfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

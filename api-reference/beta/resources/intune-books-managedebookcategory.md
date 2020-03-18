@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso managedEBookCategory
 description: Contém propriedades de uma única categoria de eBook do Intune.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5c61deaf03667f3b6533149a0281a027154d737
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ec19e13da9df1a73a9526222b1e3b3aabb8936f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488618"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797350"
 ---
 # <a name="managedebookcategory-resource-type"></a>tipo de recurso managedEBookCategory
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

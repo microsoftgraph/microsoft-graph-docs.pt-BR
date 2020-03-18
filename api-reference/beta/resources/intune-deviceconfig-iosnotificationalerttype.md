@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração iosNotificationAlertType
 description: Tipo de alerta de configurações de notificação.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 48199ce2dac2fffcae35f483ebba174677805a52
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa282710be26baef233f00d8714bcf5cce0abd13
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529876"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790577"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>tipo de enumeração iosNotificationAlertType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de alerta de configurações de notificação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|Bandeira|1 |Bandeira.|
-|JanelaRestrita|2 |JanelaRestrita.|
-|nenhuma|3 |Nenhum|
+|Bandeira|1|Bandeira.|
+|JanelaRestrita|duas|JanelaRestrita.|
+|none|3D|Nenhum|
 
 
 

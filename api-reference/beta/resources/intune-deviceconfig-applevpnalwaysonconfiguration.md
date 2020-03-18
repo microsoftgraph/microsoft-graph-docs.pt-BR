@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso appleVpnAlwaysOnConfiguration
 description: Configuração de VPN AlwaysOn para MacOS e iOS IKEv2
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b963556254766cff951faeed707e5c6aceed05f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10facf24c8fd56786c2706e1fa8ee999f48e2ed7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527151"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796065"
 ---
 # <a name="applevpnalwaysonconfiguration-resource-type"></a>tipo de recurso appleVpnAlwaysOnConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração vpnAuthenticationMethod
 description: Método de autenticação VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 035fe88bbcde357fd67c42252c6e903f1c610275
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 048b31bd835c1e94d3afcef87b6bd8e93f3ddeec
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525793"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787415"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>tipo de enumeração vpnAuthenticationMethod
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Método de autenticação VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |certificado|,0|Autenticar com um certificado.|
-|usernameAndPassword|1 |Usar nome de usuário e senha para autenticação.|
-|sharedSecret|2 |Usar segredo compartilhado para autenticação.  Válido somente para iOS IKEv2.|
-|derivedCredential|3 |Use a credencial derivada para autenticação.|
+|usernameAndPassword|1|Usar nome de usuário e senha para autenticação.|
+|sharedSecret|duas|Usar segredo compartilhado para autenticação.  Válido somente para iOS IKEv2.|
+|derivedCredential|3D|Use a credencial derivada para autenticação.|
 
 
 

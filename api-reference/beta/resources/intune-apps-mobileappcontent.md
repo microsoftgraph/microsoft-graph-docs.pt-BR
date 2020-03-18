@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso mobileAppContent
 description: Contém propriedades de conteúdo para uma versão específica do aplicativo. Cada mobileAppContent pode ter vários mobileAppContentFile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62effaf4c2f970e8c6dc5b88d0a677dd90b33e5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc1888288809812b0b2af533641fd61161cee08
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491883"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797843"
 ---
 # <a name="mobileappcontent-resource-type"></a>Tipo de recurso mobileAppContent
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

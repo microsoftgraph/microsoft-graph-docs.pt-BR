@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidVpnConnectionType
 description: Tipo de conexão VPN Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f967a92ca4d6a430ffc5ac7066afd823ea19746
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6b639023da1d87fc9be6e16636136d24590d8d5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527264"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796696"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>tipo de enumeração androidVpnConnectionType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de conexão VPN Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |ciscoAnyConnect|,0|Cisco AnyConnect.|
-|pulseSecure|1 |Pulso seguro.|
-|f5EdgeClient|2 |Cliente de borda F5.|
-|dellSonicWallMobileConnect|3 |Conexão móvel Dell SonicWALL.|
+|pulseSecure|1|Pulso seguro.|
+|f5EdgeClient|duas|Cliente de borda F5.|
+|dellSonicWallMobileConnect|3D|Conexão móvel Dell SonicWALL.|
 |checkPointCapsuleVpn|4 |Verificar VPN de cápsula de ponto.|
 |Citrix|5 |Citrix|
 

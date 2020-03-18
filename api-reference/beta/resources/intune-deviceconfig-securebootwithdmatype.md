@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração secureBootWithDMAType
 description: Valores possíveis de inicialização segura com DMA
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d1d989d7b39e2db96c3140fca5845230e1984e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f824fe29cce64d4e9b5f62e633e21defbcec57df
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529415"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787569"
 ---
 # <a name="securebootwithdmatype-enum-type"></a>tipo de enumeração secureBootWithDMAType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Valores possíveis de inicialização segura com DMA
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado, nenhuma operação|
-|withoutDMA|1 |Ativa o VBS com inicialização segura|
-|withDMA|3 |Ativa o VBS com inicialização segura e DMA|
+|withoutDMA|1|Ativa o VBS com inicialização segura|
+|withDMA|3D|Ativa o VBS com inicialização segura e DMA|
 
 
 

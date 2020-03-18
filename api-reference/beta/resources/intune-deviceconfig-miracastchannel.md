@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração miracastChannel
 description: Valores possíveis para o canal Miracast.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d0c280f5c4c1db74d1323375006a839ea422397e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3cca2c5a91c88e7bf7890ab8f35c4948986faca
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529596"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788531"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enumeração miracastChannel
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para o canal Miracast.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|um|1 |Só.|
-|two|2 |Two.|
-|three|3 |Seguintes.|
+|um|1|Só.|
+|two|duas|Two.|
+|three|3D|Seguintes.|
 |four|4 |Quarta.|
 |five|5 |Máximo.|
 |MRU|6 |MRU.|
@@ -36,7 +34,7 @@ Valores possíveis para o canal Miracast.
 |altura|8 |Altura.|
 |nove|9 |Nove.|
 |primeiros|10 |Primeiros.|
-|11|11 |11.|
+|11|11|11.|
 |thirtySix|36|36.|
 |40|40|40.|
 |fortyFour|44|44.|

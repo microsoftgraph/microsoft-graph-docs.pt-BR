@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidRequiredPasswordType
 description: Tipo de senha exigido pelo Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7d20aee3893d9d74e01fad6858c59d2c524059d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ceac6e3953615524fb78b14c380218bf5c43f19
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527301"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796731"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeração androidRequiredPasswordType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de senha exigido pelo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|caracteres|1 |Senha alfabética necessária.|
-|tecla|2 |Senha alfanumérica obrigatória.|
-|alphanumericWithSymbols|3 |Alfanumérica com símbolos de senha necessários.|
+|caracteres|1|Senha alfabética necessária.|
+|tecla|duas|Senha alfanumérica obrigatória.|
+|alphanumericWithSymbols|3D|Alfanumérica com símbolos de senha necessários.|
 |lowSecurityBiometric|4 |Senha com base em Biometria de segurança baixa necessária.|
 |numéricos|5 |Senha numérica obrigatória.|
 |numericComplex|6 |Senha numérica complexa obrigatória.|

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso win32LobAppFileSystemDetection
 description: Contém um caminho de arquivo ou pasta para detectar um aplicativo Win32
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9d7142fe8bc2db33472c9fd2997e069a02ace93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da95d263af1bf2e217ab5468659b17eed2cb3f8c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490865"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797651"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>tipo de recurso win32LobAppFileSystemDetection
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

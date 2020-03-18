@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso numberRange
 description: Definição do intervalo de números.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fee2fe4271b3ce070194a08e2ad7c3022cd42626
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e3073de15fc84f5a8cb755d6aad32caaf1ee29f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529575"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788489"
 ---
 # <a name="numberrange-resource-type"></a>tipo de recurso numberRange
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração windows10VpnConnectionType
 description: Tipos de conexão VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e464f8136c069edd94d7ebacf9946d6648028dc6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a5e514b5cbaecd2272c4bb94e2f21356633e8fb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529155"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786625"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>tipo de enumeração windows10VpnConnectionType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipos de conexão VPN.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |pulseSecure|,0|Pulso seguro.|
-|f5EdgeClient|1 |Cliente de borda F5.|
-|dellSonicWallMobileConnect|2 |Conexão móvel Dell SonicWALL.|
-|checkPointCapsuleVpn|3 |Verificar VPN de cápsula de ponto.|
+|f5EdgeClient|1|Cliente de borda F5.|
+|dellSonicWallMobileConnect|duas|Conexão móvel Dell SonicWALL.|
+|checkPointCapsuleVpn|3D|Verificar VPN de cápsula de ponto.|
 |Automático|4 |Automático.|
 |Conexões|5 |Conexões.|
 |protocolo|6 |Protocolo.|

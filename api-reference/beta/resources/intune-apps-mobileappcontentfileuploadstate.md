@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração mobileAppContentFileUploadState
 description: Contém propriedades para carregar Estados de solicitação.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 28b89119acb17ecbc94e081122f69c27e0357c45
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bcf54beeb8155a865c2360018d29b40599b2918
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491764"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797829"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enumeração mobileAppContentFileUploadState
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Contém propriedades para carregar Estados de solicitação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|transientError|1 |Ainda não documentado|
-|erro|2 |Ainda não documentado|
-|desconhecido|3 |Ainda não documentado|
+|transientError|1|Ainda não documentado|
+|erro|duas|Ainda não documentado|
+|desconhecido|3D|Ainda não documentado|
 |azureStorageUriRequestSuccess|100|Ainda não documentado|
 |azureStorageUriRequestPending|101|Ainda não documentado|
 |azureStorageUriRequestFailed|102|Ainda não documentado|

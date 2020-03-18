@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração visibilitySetting
 description: Estado de visibilidade genérico.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6dee4d709242b62c2ffdb0eb9fc2ba198cdbb37d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a62a44b5e4d5b0a834bf1e1f4ca17f1fb1f23c17
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529339"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787422"
 ---
 # <a name="visibilitysetting-enum-type"></a>tipo de enumeração visibilitySetting
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Estado de visibilidade genérico.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|ocult|1 |Ocultar.|
-|programa|2 |Mostrar.|
+|ocult|1|Ocultar.|
+|programa|duas|Mostrar.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso macOSCredentialSingleSignOnExtension
 description: Representa um perfil de extensão de logon único de tipo de credencial para dispositivos macOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20e0e4ea5d7152553f7de690ec693d5d0a1d30d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec152f59cba88c2bb3e02e5fc90aba2a8c6f94a2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529731"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790297"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>tipo de recurso macOSCredentialSingleSignOnExtension
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -30,7 +28,7 @@ Herda de [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossing
 |:---|:---|:---|
 |extensionIdentifier|String|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
 |teamIdentifier|String|Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.|
-|domínio|String collection|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
+|domínio|Coleção de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
 |esfera|String|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
 |as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 

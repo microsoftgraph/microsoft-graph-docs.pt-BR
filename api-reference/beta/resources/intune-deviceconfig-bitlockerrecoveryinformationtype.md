@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração bitLockerRecoveryInformationType
 description: Tipos BitLockerRecoveryInformationType
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a902087fc41a1be9144b02f77c4b599ac9df76a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e34d91ec138771f05e71520bbea2c736c12d3328
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527045"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795854"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>tipo de enumeração bitLockerRecoveryInformationType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,8 +23,8 @@ Tipos BitLockerRecoveryInformationType
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|passwordAndKey|1 |Armazenar senhas de recuperação e pacotes de chaves.|
-|passwordOnly|2 |Armazenar somente senhas de recuperação.|
+|passwordAndKey|1|Armazenar senhas de recuperação e pacotes de chaves.|
+|passwordOnly|duas|Armazenar somente senhas de recuperação.|
 
 
 

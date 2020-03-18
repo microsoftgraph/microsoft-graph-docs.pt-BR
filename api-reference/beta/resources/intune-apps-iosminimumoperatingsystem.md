@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso iosMinimumOperatingSystem
 description: Contém as propriedades do sistema operacional mínimo obrigatório para um aplicativo móvel iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71139b1c88ecf2e75080d35000aff78c5906fe54
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fb9c8d60f7ef8b50412824d8d786e596a339a4a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493598"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798102"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

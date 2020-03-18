@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso iosHomeScreenFolderPage
 description: Uma pasta com os aplicativos na tela inicial
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dab4cc8829a5d3970778465b404b7fb29a4d0556
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 93fca952cfda7bf1e49c17a3fe71b3a62384d0e6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791573"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Tipo de recurso iosHomeScreenFolderPage
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

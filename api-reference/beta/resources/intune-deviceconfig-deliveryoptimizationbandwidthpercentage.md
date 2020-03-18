@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deliveryOptimizationBandwidthPercentage
 description: Limites de largura de banda especificados como uma porcentagem.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85053c5e02b9ac429a3251c1c302c786f6a8f6db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 34e3a76bf7b7ef70f880d4de8c432f84d7eb3509
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526794"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794372"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthPercentage
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

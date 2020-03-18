@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso iosBookmark
 description: indicador de URL iOS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a297dcf731f1bec513f25896c3025e337358b85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 465aafff3910eb0d62990a14a42ce4cb79a16334
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529954"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791685"
 ---
 # <a name="iosbookmark-resource-type"></a>tipo de recurso iosBookmark
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

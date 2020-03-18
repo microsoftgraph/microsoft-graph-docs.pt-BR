@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração lanManagerAuthenticationLevel
 description: Valores possíveis para LanManagerAuthenticationLevel
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b979c66469ac29339045dd9d1341f85839084bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 670cb0bec6915b79102eae227a261f26eb052413
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529757"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790374"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>tipo de enumeração lanManagerAuthenticationLevel
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Valores possíveis para LanManagerAuthenticationLevel
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |lmAndNltm|,0|Enviar respostas LM & NTLM|
-|lmNtlmAndNtlmV2|1 |Send LM & NTLM-use a segurança da sessão NTLMv2, se estiver negociada|
-|lmAndNtlmOnly|2 |Enviar somente respostas LM & NTLM|
-|lmAndNtlmV2|3 |Enviar somente respostas LM & NTLMv2|
+|lmNtlmAndNtlmV2|1|Send LM & NTLM-use a segurança da sessão NTLMv2, se estiver negociada|
+|lmAndNtlmOnly|duas|Enviar somente respostas LM & NTLM|
+|lmAndNtlmV2|3D|Enviar somente respostas LM & NTLMv2|
 |lmNtlmV2AndNotLm|4 |Enviar LM & somente respostas NTLMv2. Recusar LM|
 |lmNtlmV2AndNotLmOrNtm|5 |Enviar LM & somente respostas NTLMv2. Recusar LM & NTLM|
 

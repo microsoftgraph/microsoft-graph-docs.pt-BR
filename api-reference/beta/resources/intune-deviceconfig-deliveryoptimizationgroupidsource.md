@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deliveryOptimizationGroupIdSource
 description: Tipos de suporte a GroupId
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6858d338dc145bb398d08b36ca9d56bdb56ebfd5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: adbb6aec59af4bcf3dc4a5c4f089bf1af249c4b0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526779"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793412"
 ---
 # <a name="deliveryoptimizationgroupidsource-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdSource
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

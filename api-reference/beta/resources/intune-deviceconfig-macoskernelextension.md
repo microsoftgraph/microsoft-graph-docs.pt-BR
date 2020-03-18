@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso macOSKernelExtension
 description: Representa uma extensão de kernel macOS específica. Uma extensão de kernel macOS pode ser descrita por seu identificador de equipe e seu identificador de pacote.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 822d75c5b5f9a9bfd8f7869007c0b7757db401e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef061b7a04b48b83df031abf6997900032307000
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526094"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789210"
 ---
 # <a name="macoskernelextension-resource-type"></a>tipo de recurso macOSKernelExtension
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

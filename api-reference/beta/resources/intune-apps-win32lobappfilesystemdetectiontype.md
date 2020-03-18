@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração win32LobAppFileSystemDetectionType
 description: Contém todo o tipo de detecção de sistema de arquivos com suporte.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 122218dffa1d63697489ad73ff04601d32a001ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 090416526f516e46459fcd90beeaf39dccacddc1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490774"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797644"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>tipo de enumeração win32LobAppFileSystemDetectionType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Contém todo o tipo de detecção de sistema de arquivos com suporte.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|houver|1 |Se o arquivo ou a pasta especificada existe.|
-|modifiedDate|2 |Data da última modificação.|
-|createdDate|3 |Data de criação.|
+|houver|1|Se o arquivo ou a pasta especificada existe.|
+|modifiedDate|duas|Data da última modificação.|
+|createdDate|3D|Data de criação.|
 |versão|4 |Tipo de valor de versão.|
 |sizeInMB|5 |Tipo de detecção de tamanho.|
 |doesNotExist|6 |O arquivo ou a pasta especificada não existe.|

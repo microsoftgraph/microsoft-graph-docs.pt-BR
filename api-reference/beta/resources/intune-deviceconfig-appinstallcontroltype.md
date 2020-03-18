@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração appInstallControlType
 description: Configuração do controle de instalação do aplicativo
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ebbb82dc92afada1e62cb111cc63223b9cf7bee7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da6e9187facd9f9ff14ad0416e577cdabfbd41d6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527152"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796086"
 ---
 # <a name="appinstallcontroltype-enum-type"></a>tipo de enumeração appInstallControlType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Configuração do controle de instalação do aplicativo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|em qualquer lugar|1 |Desativar recomendações de aplicativo|
-|storeOnly|2 |Permitir somente aplicativos de armazenamento|
-|a0/&gt|3 |Mostrar recomendações de aplicativo|
+|em qualquer lugar|1|Desativar recomendações de aplicativo|
+|storeOnly|duas|Permitir somente aplicativos de armazenamento|
+|a0/&gt|3D|Mostrar recomendações de aplicativo|
 |preferStore|4 |Avisar antes de instalar aplicativos de fora do repositório|
 
 

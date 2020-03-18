@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso vpnServer
 description: Definição do servidor VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 836e37bbd7d82b2d591d08819b1713bb7f03a7c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 577b606ee4dc46cd5ed8f93c351f5b41e73fe973
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525744"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787317"
 ---
 # <a name="vpnserver-resource-type"></a>tipo de recurso vpnServer
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

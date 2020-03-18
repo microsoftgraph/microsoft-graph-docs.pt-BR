@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração meteredConnectionLimitType
 description: Configurações de limite de conexão limitada.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ae979859b9e6802e91602c96e42cafb1104f6eeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b1bb6334a90f61d14ad4b58876ef4de545d30fd5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526010"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788538"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>tipo de enumeração meteredConnectionLimitType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Configurações de limite de conexão limitada.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |irrestrito|,0|Unrestricted|
-|prefixo|1 |Fixed|
-|variável|2 |Variável|
+|prefixo|1|Fixed|
+|variável|duas|Variável|
 
 
 

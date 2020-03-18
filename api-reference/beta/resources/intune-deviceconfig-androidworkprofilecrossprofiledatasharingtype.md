@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração androidWorkProfileCrossProfileDataSharingType
 description: Tipo de compartilhamento de dados entre perfis de perfil de trabalho do Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: eb5566d6a326f802f3259e1515b7a64223dce771
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3f1ff4c2ec4db8a010e78abfae2be2aafee60996
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527229"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796661"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>tipo de enumeração androidWorkProfileCrossProfileDataSharingType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Tipo de compartilhamento de dados entre perfis de perfil de trabalho do Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|preventAny|1 |Impedir qualquer compartilhamento.|
-|allowPersonalToWork|2 |Permitir solicitação de compartilhamento de dados do perfil pessoal para o perfil de trabalho.|
-|norestrictions|3 |Sem restrições no compartilhamento.|
+|preventAny|1|Impedir qualquer compartilhamento.|
+|allowPersonalToWork|duas|Permitir solicitação de compartilhamento de dados do perfil pessoal para o perfil de trabalho.|
+|norestrictions|3D|Sem restrições no compartilhamento.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deliveryOptimizationBandwidthAbsolute
 description: Limites de largura de banda em quilobytes por segundo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 536ba80fbc1ae0cee8bbef9933d6366a05284c33
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8313f742c407eb6ca7b4dffeaf6dba86a631843
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794393"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthAbsolute
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

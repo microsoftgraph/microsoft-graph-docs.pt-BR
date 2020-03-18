@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso deliveryOptimizationMaxCacheSize
 description: Tipos de tamanho máximo de cache da otimização de entrega.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e3a64fca000a6871e289115555837966465a39d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3029ece8a43d64cf52cda1c6c58da48d0b7d446
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526759"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793398"
 ---
 # <a name="deliveryoptimizationmaxcachesize-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSize
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

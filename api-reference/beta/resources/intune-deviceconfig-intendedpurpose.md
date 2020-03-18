@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração da intendedpurpose
 description: Opções de importação de PFX.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9b3b7734289c55a4763d307fdd587880dcebf4eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 952c4c3680dee489e7a556f4e0a8342932c4207e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526420"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791713"
 ---
 # <a name="intendedpurpose-enum-type"></a>tipo de enumeração da intendedpurpose
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,9 +23,9 @@ Opções de importação de PFX.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não atribuídos|1 |Não atribuídos|
-|smimeEncryption|2 |SmimeEncryption|
-|smimeSigning|3 |SmimeSigning|
+|não atribuídos|1|Não atribuídos|
+|smimeEncryption|duas|SmimeEncryption|
+|smimeSigning|3D|SmimeSigning|
 |VPN|4 |VPN|
 |detector|5 |Detector|
 

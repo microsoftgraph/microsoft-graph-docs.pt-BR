@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso androidDeviceOwnerGlobalProxyDirect
 description: Proxy global do proprietário do dispositivo Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58e95490fa3fd7adaec6e6b8f01c43566b1c289a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc2b960b85fd7fac506423af4d3a380247fb4892
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42486546"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797004"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyDirect
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -30,7 +28,7 @@ Herda de [androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androi
 |:---|:---|:---|
 |host|String|O nome do host|
 |propor|Int32|A porta|
-|excludedHosts|String collection|Os hosts excluídos|
+|excludedHosts|Coleção de cadeias de caracteres|Os hosts excluídos|
 
 ## <a name="relationships"></a>Relações
 Nenhum

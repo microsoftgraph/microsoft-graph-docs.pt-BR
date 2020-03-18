@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração eapFastConfiguration
 description: Configurações disponíveis para a configuração EAP-FAST.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: db3f39eaeb375705c974e907ae4b0a177bd6c4ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b70e2688473f9af93dcd3b0f0d4d05b77d81446f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526543"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791951"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>tipo de enumeração eapFastConfiguration
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Configurações disponíveis para a configuração EAP-FAST.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noProtectedAccessCredential|,0|Use EAP-FAST sem PAC (credencial de acesso protegido).|
-|useProtectedAccessCredential|1 |Use a PAC (credencial de acesso protegido).|
-|useProtectedAccessCredentialAndProvision|2 |Use a PAC (credencial de acesso protegido) e provisionar PAC.|
-|useProtectedAccessCredentialAndProvisionAnonymously|3 |Use a PAC (credencial de acesso protegido), provisione PAC e faça isso de forma anônima.|
+|useProtectedAccessCredential|1|Use a PAC (credencial de acesso protegido).|
+|useProtectedAccessCredentialAndProvision|duas|Use a PAC (credencial de acesso protegido) e provisionar PAC.|
+|useProtectedAccessCredentialAndProvisionAnonymously|3D|Use a PAC (credencial de acesso protegido), provisione PAC e faça isso de forma anônima.|
 
 
 

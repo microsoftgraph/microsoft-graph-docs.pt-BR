@@ -1,20 +1,18 @@
 ---
 title: Tipo de recurso vppLicensingType
 description: Contém propriedades para o tipo de licenciamento iOS Volume-Purchased Program (VPP).
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff94d7ddbec70b40b59dc4b1dbfc1b4a5985be3b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c04e3fbc7da2a355dc8d5b1e69ad90a6f333a9cf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491012"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797693"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Tipo de recurso vppLicensingType
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

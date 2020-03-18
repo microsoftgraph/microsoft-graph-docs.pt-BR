@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração usernamename
 description: Fonte de nome de usuário.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b4379d16990b04cbdc6a47e288716e90558f1bc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f76ffeb23a32c670e0f9fed676a2ca508724444
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525800"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787429"
 ---
 # <a name="usernamesource-enum-type"></a>tipo de enumeração usernamename
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +24,8 @@ Fonte de nome de usuário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userPrincipalName|,0|Nome principal do usuário.|
-|primarySmtpAddress|1 |Endereço SMTP principal.|
-|samAccountName|2 |O nome da conta Sam do usuário.|
+|primarySmtpAddress|1|Endereço SMTP principal.|
+|samAccountName|duas|O nome da conta Sam do usuário.|
 
 
 

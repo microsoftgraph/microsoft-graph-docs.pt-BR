@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração Enumeraçãodevicecomplianceactiontype
 description: Enumeração de tipo de ação agendada
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bff5247237cc0d6daf45515c5bdbaaa3e675017a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ebf4df22787d19e5718ebd2099cd81af3925271
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526718"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793356"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enumeração Enumeraçãodevicecomplianceactiontype
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,9 +24,9 @@ Enumeração de tipo de ação agendada
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |NoAction|,0|Nenhuma ação|
-|Notifica|1 |Enviar notificação|
-|Larga|2 |Bloquear o dispositivo no AAD|
-|Ative|3 |Desativar o dispositivo|
+|Notifica|1|Enviar notificação|
+|Larga|duas|Bloquear o dispositivo no AAD|
+|Ative|3D|Desativar o dispositivo|
 |revelar|4 |Apagar o dispositivo|
 |removeResourceAccessProfiles|5 |Remover perfis de acesso a recursos do dispositivo|
 |Membropushnotification|9 |Enviar notificação por push ao dispositivo|

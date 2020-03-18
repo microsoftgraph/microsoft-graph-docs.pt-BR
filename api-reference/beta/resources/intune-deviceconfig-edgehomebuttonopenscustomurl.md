@@ -1,20 +1,18 @@
 ---
 title: tipo de recurso edgeHomeButtonOpensCustomURL
 description: Mostrar o botão página inicial; clicar no botão página inicial carrega uma URL específica.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60184022f219eba09f205121721b48fd6675d8c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ba83e4ee870a5e258a40c0c94d8d157f8564a91
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530060"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791888"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>tipo de recurso edgeHomeButtonOpensCustomURL
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

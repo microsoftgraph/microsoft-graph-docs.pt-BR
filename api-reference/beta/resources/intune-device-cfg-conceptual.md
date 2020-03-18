@@ -4,16 +4,16 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3ba5df73946b6d0c279be38b86e63f93623248c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40229752dacbdd18213653966ca40ccc00587c57
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487540"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797245"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -233,6 +233,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de método de enfileiramento de pacotes do firewall](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [Tipo de método de codificação de chaves pré-compartilhadas do firewall](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
 - [Tipo de proteção da pasta](intune-deviceconfig-folderprotectiontype.md)
+- [Categoria política de grupo](intune-grouppolicy-grouppolicycategory.md)
 - [Configuração de política de grupo](intune-grouppolicy-grouppolicyconfiguration.md)
 - [Atribuição da configuração de política de grupo](intune-grouppolicy-grouppolicyconfigurationassignment.md)
 - [Tipo de configuração de política de grupo](intune-grouppolicy-grouppolicyconfigurationtype.md)
@@ -259,6 +260,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Multitexto do valor da apresentação da política de grupo](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
 - [Texto do valor da apresentação da política de grupo](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [Tipo de política de grupo](intune-grouppolicy-grouppolicytype.md)
+- [Categoria de política de grupo carregada](intune-grouppolicy-grouppolicyuploadedcategory.md)
 - [Definição de política de grupo carregada](intune-grouppolicy-grouppolicyuploadeddefinition.md)
 - [Apresentação de política de grupo carregada](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [Algoritmos hash](intune-deviceconfig-hashalgorithms.md)
@@ -266,6 +268,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Finalidade pretendida](intune-deviceconfig-intendedpurpose.md)
 - [Configuração de mensagem do Internet Explorer](intune-deviceconfig-internetexplorermessagesetting.md)
 - [Nível de segurança do site da Internet](intune-deviceconfig-internetsitesecuritylevel.md)
+- [extensão de logon único do iOS AD do Azure](intune-deviceconfig-iosazureadsinglesignonextension.md)
 - [Indicador do iOS](intune-deviceconfig-iosbookmark.md)
 - [Perfil de certificado do iOS](intune-deviceconfig-ioscertificateprofile.md)
 - [Base de perfil de certificado do iOS](intune-deviceconfig-ioscertificateprofilebase.md)
@@ -327,6 +330,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Segurança de sessão mínima de opções de segurança local](intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)
 - [Tipo de comportamento de remoção de cartão inteligente de opções de segurança local](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [Tipo de comportamento de solicitação de elevação de usuário padrão de opções de segurança local](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
+- [par de chave/valor de domínios associados ao macOS](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [Base de perfil de certificado do macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Política de conformidade do macOS](intune-deviceconfig-macoscompliancepolicy.md)
 - [extensão de logon único da credencial macOS](intune-deviceconfig-macoscredentialsinglesignonextension.md)

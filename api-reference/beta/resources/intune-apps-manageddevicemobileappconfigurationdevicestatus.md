@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso managedDeviceMobileAppConfigurationDeviceStatus
 description: Contém propriedades, propriedades herdadas e ações para um status de configuração de aplicativo móvel do MDM para um dispositivo.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3037e019409e90792880feb525076ddf2950e8a9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0694de82df8069d41cde6b72ed0d297928bc1ba2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366662"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797941"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>tipo de recurso managedDeviceMobileAppConfigurationDeviceStatus
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades, propriedades herdadas e ações para um status de configuração de aplicativo móvel do MDM para um dispositivo.
 

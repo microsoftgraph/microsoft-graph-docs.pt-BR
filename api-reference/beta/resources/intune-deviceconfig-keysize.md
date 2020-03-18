@@ -1,20 +1,18 @@
 ---
 title: tipo de enumeração keySize
 description: Opções de tamanho de chave.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bb1171f3f062db0d0c54f1619efaf221717e9bda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 976e3cd7c27596d18ccb4061a8435f74e6bc37cd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529790"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790416"
 ---
 # <a name="keysize-enum-type"></a>tipo de enumeração keySize
-
-Namespace: Microsoft. Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +24,7 @@ Opções de tamanho de chave.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |size1024|,0|Bits 1024.|
-|size2048|1 |Bits 2048.|
+|size2048|1|Bits 2048.|
 
 
 
