@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f82c99054f3c78225fa582ae09ff16507fad98ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cfc204718a25bc8d5f0ac450469bd87c2d0e9b0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447847"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42816157"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -63,6 +63,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |**Termos e condições corporativos**|
 |termsAndConditions|Conjunto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Os termos e condições associados ao gerenciamento do dispositivo da empresa.|
 |**Configuração do dispositivo**|
+|intuneAccountId|Guid|ID da conta do Intune para determinado locatário.|
 |deviceCompliancePolicies|Coleção [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|As políticas de conformidade do dispositivo.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|O resumo do estado de conformidade dos dispositivos para esta conta.|
 |deviceCompliancePolicySettingStateSummaries|Coleção [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)|Os estados resumidos das configurações da política de conformidade para esta conta.|
