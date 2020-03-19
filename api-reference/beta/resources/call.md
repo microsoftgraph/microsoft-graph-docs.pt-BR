@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9ea8f0d1c250c7b74e2b809c73fb0ce36dd1473a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20536e700a471aae159cc8db7b6cb1aa084a0624
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799501"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -66,6 +66,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Nenhum                                                        | Inicie e interrompa a tela de compartilhamento na chamada.                                      |
 | **Operações de gravação**                                           |                                                             |                                              |
 | [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Atualiza o status da gravação.                      |
+| [Registrar dados de qualidade do dispositivo](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Registre dados de qualidade do dispositivo de videoconferência.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -75,6 +76,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | O participante que atendeu a chamada. Somente leitura.                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md) collection                                                                   | As informações de roteamento sobre como a chamada foi redirecionada. Somente leitura.                                                                                                                |
 | callbackUri         | String                                                                                                 | A URL de retorno de chamada à qual os retornos serão entregues. Deve ser `https`.                                                                                                                               |
+| callChainId         | Cadeia de caracteres                                                                                                 | Um identificador único para todas as chamadas de participantes em uma conferência ou um identificador exclusivo para chamadas com dois participantes em uma chamada P2P.  Isso precisa ser copiado de `Microsoft.Graph.Call.CallChainId`. |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para cenários de reunião.                                                                                                                                |
 | direction           | String                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
 | id                  | String                                                                                                 | A ID de chamada. Somente leitura.                                                                                                                                                                        |
@@ -114,6 +116,7 @@ Veja a seguir uma representação JSON do recurso.
     "activeModalities",
     "answeredBy",
     "callRoutes",
+    "callChainId",
     "chatInfo",
     "direction",
     "id",
@@ -143,6 +146,7 @@ Veja a seguir uma representação JSON do recurso.
   "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
+  "callChainId": "String",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
