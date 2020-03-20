@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 811ffe95d24c0ef5053cd3c63fcfc0f27f231133
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 626dd1072e1bd6035a099dabb0c489de2e5dfc7b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639972"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815989"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,6 +18,38 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="march-2020"></a>Março de 2020
 
+### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[deviceManagementAutopilotPolicyStatusDetail](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail?view=graph-rest-beta)<br/>[groupPolicyCategory](/graph/api/resources/intune-grouppolicy-grouppolicycategory?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[configurationManagerActionResult](/graph/api/resources/intune-devices-configurationmanageractionresult?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationSummary](/graph/api/resources/intune-devices-devicehealthscriptremediationsummary?view=graph-rest-beta)<br/>[deviceManagementSettingSddlConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingsddlconstraint?view=graph-rest-beta)<br/>[iosAzureAdSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta)<br/>[macOSAssociatedDomainsKeyValuePair](/graph/api/resources/intune-deviceconfig-macosassociateddomainskeyvaluepair?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[configurationManagerActionDeliveryStatus](/graph/api/resources/intune-devices-configurationmanageractiondeliverystatus?view=graph-rest-beta)<br/>[deviceManagementAutopilotPolicyComplianceStatus](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus?view=graph-rest-beta)<br/>[deviceManagementAutopilotPolicyType](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotpolicytype?view=graph-rest-beta)<br/>[win32LobAppDeliveryOptimizationPriority](/graph/api/resources/intune-apps-win32lobappdeliveryoptimizationpriority?view=graph-rest-beta)<br/>|
+|Adição|beta|Adicionada a ação [getAvailableExtensionProperties](o:getAvailableExtensionProperties?view=graph-rest-beta)|
+|Adição|beta|Adicionada a ação [getObjectsById](o:getObjectsById?view=graph-rest-beta)|
+|Adição|beta|Adicionada a ação [generateApplePushNotificationCertificateSigningRequest](/graph/api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest?view=graph-rest-beta?view=graph-rest-beta) em [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate?view=graph-rest-beta) |
+|Adição|beta|Adicionada a ação [generateEncryptionPublicKey](/graph/api/intune-enrollment-deponboardingsetting-generateencryptionpublickey?view=graph-rest-beta?view=graph-rest-beta) em [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) |
+|Adição|beta|Adicionada a ação [getSettingNonComplianceReport](/graph/api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport?view=graph-rest-beta?view=graph-rest-beta) a [deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) |
+|Adição|beta|Adicionada a função [getRemediationSummary](o:getRemediationSummary:Collection(microsoft.graph.deviceHealthScript?view=graph-rest-beta)?view=graph-rest-beta) à coleção [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) |
+|Exclusão|beta|Foram removidos os seguintes tipos complexos:<br/>**groupPolicyObjectFile**<br/>|
+|Exclusão|beta|Removida a ação [createMigrationReport](o:createMigrationReport:Collection(microsoft.graph.groupPolicyMigrationReport?view=graph-rest-beta)?view=graph-rest-beta) da coleção [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport?view=graph-rest-beta) |
+|Exclusão|beta|Removida a propriedade **groupPolicyObjectFiles** da entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **deviceID** à entidade [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **groupPolicyCategoryId** à entidade [groupPolicyDefinition](/graph/api/resources/intune-grouppolicy-grouppolicydefinition?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **intuneSettingDefinitionId** à entidade [groupPolicySettingMapping](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingmapping?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **fileVaultHidePersonalRecoveryKey**, **advancedThreatProtectionRealTime**, **advancedThreatProtectionCloudDelivered**, **advancedThreatProtectionAutomaticSampleSubmission**, **advancedThreatProtectionDiagnosticDataCollection**, **advancedThreatProtectionExcludedFolders**, **advancedThreatProtectionExcludedFiles**, **advancedThreatProtectionExcludedExtensions** e **advancedThreatProtectionExcludedProcesses** à entidade [macOSEndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-macosendpointprotectionconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **directorySizeQuota** à entidade [organization](/graph/api/resources/intune-onboarding-organization?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **defenderAllowScanArchiveFiles**, **defenderAllowBehaviorMonitoring**, **defenderAllowCloudProtection**, **defenderAllowScanRemovableDrivesDuringFullScan**, **defenderAllowScanDownloads**, **defenderAllowIntrusionPreventionSystem**, **defenderAllowOnAccessProtection**, **defenderAllowRealTimeMonitoring**, **defenderAllowScanNetworkFiles**, **defenderAllowScanScriptsLoadedInInternetExplorer**, **defenderAllowEndUserAccess** e **defenderSignatureUpdateIntervalInHours** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
+|Alteração|beta|Foram alteradas as seguintes propriedades na entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta):<br/>**defenderBlockEndUserAccess** de obrigatória para opcional<br/>**defenderCheckForSignaturesBeforeRunningScan** de obrigatória para opcional<br/>**defenderCloudBlockLevel** de obrigatória para opcional<br/>**defenderDisableBehaviorMonitoring** de obrigatória para opcional<br/>**defenderDisableCatchupFullScan** de obrigatória para opcional<br/>**defenderDisableCatchupQuickScan** de obrigatória para opcional<br/>**defenderDisableCloudProtection** de obrigatória para opcional<br/>**defenderDisableIntrusionPreventionSystem** de obrigatória para opcional<br/>**defenderDisableOnAccessProtection** de obrigatória para opcional<br/>**defenderDisableRealTimeMonitoring** de obrigatória para opcional<br/>**defenderDisableScanArchiveFiles** de obrigatória para opcional<br/>**defenderDisableScanDownloads** de obrigatória para opcional<br/>**defenderDisableScanNetworkFiles** de obrigatória para opcional<br/>**defenderDisableScanRemovableDrivesDuringFullScan** de obrigatória para opcional<br/>**defenderDisableScanScriptsLoadedInInternetExplorer** de obrigatória para opcional<br/>**defenderEnableLowCpuPriority** de obrigatória para opcional<br/>**defenderEnableScanIncomingMail** de obrigatória para opcional<br/>**defenderEnableScanMappedNetworkDrivesDuringFullScan** de obrigatória para opcional<br/>**defenderPotentiallyUnwantedAppAction** de obrigatória para opcional<br/>**defenderScanDirection** de obrigatória para opcional<br/>**defenderScanType** de obrigatória para opcional<br/>**defenderScheduledScanDay** de obrigatória para opcional<br/>**defenderSubmitSamplesConsentType** de obrigatória para opcional<br/>|
+|Adição|beta|Adicionadas as propriedades **findMyFiles**, **activateAppsWithVoice** e **configureTimeZone** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade de navegação **groupPolicyCategories** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade de navegação **policyStatusDetails** à entidade [deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade de navegação **category** à entidade [groupPolicyDefinition](/graph/api/resources/intune-grouppolicy-grouppolicydefinition?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **isBlocked** ao tipo complexo [configurationManagerClientInformation](/graph/api/resources/intune-devices-configurationmanagerclientinformation?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **ignoreDevicesForUnsupportedSettingsEnabled** ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **deliveryOptimizationPriority** ao tipo complexo [win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro **deviceOsHigherThanDesiredOsVersion** ao tipo de enumeração [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta)|
+
 ### <a name="calendar"></a>Calendário
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
@@ -25,10 +57,19 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | Beta | Adicionada a propriedade **calendarGroupId** à entidade [calendário](/graph/api/resources/calendar?view=graph-rest-beta). |
 | Adição | Beta | Adicionada a propriedade **isDraft** à entidade [evento](/graph/api/resources/event?view=graph-rest-beta). |
 
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
+|Adição|beta|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call.md).|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
+
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
+| Adição | v1.0 | Adicionada a permissão de novo usuário [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 | Adição | beta | Adicionada a permissão de aplicativo PrivilegedAccess.Read.AzureResources de [Privileged Identity Management - recursos do Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
 
 ### <a name="reports--office-365-usage-reports"></a>Relatórios | Relatórios de uso do Office 365
@@ -45,6 +86,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="february-2020"></a>Fevereiro de 2020
 
+### <a name="cloud-communications--call"></a>Comunicações na nuvem | Chamadas
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição|beta|Adicionada a propriedade de **inicialização** para o tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
+
 ### <a name="cloud-communications--call-records"></a>Comunicação em nuvem | Gravação
 
 Novas APIs e recursos adicionados à assinatura e à recuperação de registros de chamadas da sua organização.
@@ -55,12 +102,6 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 | Adição | beta | Foram adicionadas novas entidades:<br /><li>[callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta)</li> <li>[sessão](/graph/api/resources/callrecords-session?view=graph-rest-beta)</li> <li>[segmento](/graph/api/resources/callrecords-segment?view=graph-rest-beta)</li>|
 | Adição | beta | Foram adicionados novos tipos complexos:<br /><li>[ponto de extremidade](/graph/api/resources/callrecords-endpoint?view=graph-rest-beta)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-beta)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-beta)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-beta)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-beta)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-beta)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-beta)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-beta)</li> <li>[mídia](/graph/api/resources/callrecords-media?view=graph-rest-beta)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-beta)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-beta)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-beta)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-beta)</li> |
 | Adição | beta | Suporte adicional das assinaturas [Webhook](webhooks.md) para as chamadas de registros.|
-
-### <a name="cloud-communications--recording"></a>Comunicações em nuvem | Gravação
-
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Adição|beta|Adicionada a propriedade de **inicialização** para o tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -113,9 +154,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 | Adição | beta | O tipo de recurso [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) controla a duração da vida útil dos tokens de acesso usados ​​para acessar recursos protegidos.|
 | Adição | beta | O [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy?view=graph-rest-beta) tipo de recurso que controla as características de tokens SAML emitidos pelo Azure AD. Isso permite que você defina o algoritmo de assinatura, opções de assinatura ou versão do token SAML a ser usada para emitir o token SAML.
 | Adição | beta | A propriedade [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) foi adicionada ao tipo de recurso **quarantineStatus**.|
-| Adição | Beta e v1.0 | A propriedade **latestSupportedTlsVersion** foi adicionada à entidade da [assinatura](/graph/api/resources/subscription?view=graph-rest-1.0). Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Para obter detalhes, confira [Assinaturas do Microsoft Graph que substituíram o TLS 1.0 e o 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
 | Alteração | Beta | Atualizado o [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) com propriedades adicionais para configurações de solicitante, aprovação e revisão.|
-|Adição | beta | A propriedade [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) foi adicionada ao tipo de recurso **quarantineStatus**.|
 | Adição | Beta e v1.0 | Foi adicionada a permissão Policy.ReadWrite.ApplicationConfiguration ao nível do aplicativo e delegada às operações de leitura e gravação nas políticas de configuração do aplicativo.|
 
 ### <a name="identity-and-access-azure-ad--information-protection"></a>Identidade e acesso (Azure AD) | Proteção de informações
@@ -136,7 +175,6 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | v1.0 | O [user: reprocessLicenseAssignment do ](/graph/api/user-reprocesslicenseassignment), foi adicionado ao que pode ser usado para reprocessar todas as atribuições de licença baseadas em grupo para o [user ](/graph/api/resources/user?view=graph-rest-1.0). |
-| Adição | v1.0 | A propriedade **identidades** foi adicionada ao recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0). Esta propriedade representa o conjunto de identidades (como contas locais e contas sociais) com as quais este usuário pode se conectar.|
 
 ## <a name="january-2020"></a>Janeiro de 2020
 

@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 53bc7bfa03f1722f5075f7ee8d9f3744e8e2e47a
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: e556f3691ca5cc152d58678a12827a053964dc90
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618764"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815821"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1657,6 +1657,7 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _User.ReadWrite.All_ |     Ler e gravar os perfis completos de todos os usuários | Permite ao aplicativo ler e gravar o conjunto completo de propriedades do perfil, relatórios e gerentes de outros usuários na sua organização, em nome do usuário conectado. Também permite que o aplicativo crie e exclua usuários, além de redefinir senhas de usuário em nome do usuário conectado. | Sim | Não |
 | _User.Invite.All_  |     Convidar usuários convidados para a organização | Permite que o aplicativo convide usuários para sua organização em nome do usuário conectado. | Sim | Não |
 | _User.Export.All_       |    Exportar dados de usuários | Permite que o aplicativo exporte os dados de um usuário organizacional, quando executado por um administrador da empresa.| Sim | Não |
+| _User.ManageIdentities.All_       |    Gerenciar identidades de usuário | Permite que um aplicativo leia, atualize e exclua identidades associadas a uma conta de usuário à qual o usuário conectado tenha acesso. Controla quais identidades os seus usuários podem usar para entrar. | Sim | Não |
 
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -1667,6 +1668,7 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _User.ReadWrite.All_ |   Ler e gravar os perfis completos de todos os usuários | Permite ao aplicativo ler e gravar o conjunto completo de propriedades do perfil, relatórios e gerentes de outros usuários na sua organização, sem um usuário conectado.  Também permite que o aplicativo crie e exclua usuários não administrativos. Não permite a redefinição de senhas de usuário. | Sim |
 | _User.Invite.All_  |     Convidar usuários convidados para a organização | Permite que o aplicativo convide usuários para sua organização sem um usuário conectado. | Sim |
 | _User.Export.All_       |    Exportar dados de usuários | Permite que o aplicativo exporte dados de usuários organizacionais, sem um usuário conectado.| Sim |
+| _User.ManageIdentities.All_       |    Gerenciar todas as identidades de usuário | Permite que um aplicativo leia, atualize e exclua identidades associadas a uma conta de usuário sem que o usuário esteja conectado. Controla quais identidades os usuários podem usar para entrar. |  Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -1716,6 +1718,8 @@ A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto
 
 Para ler as associações de grupos de um usuário (`memberOf`), o aplicativo deve ter o [_Group.Read.All_](#group-permissions) ou o [_Group.ReadWrite.All_](#group-permissions). No entanto, se o usuário também tiver uma associação a um [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) ou [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta), o aplicativo também precisará de permissões efetivas para ler esses recursos ou o Microsoft Graph retornará um erro. Isso significa que o aplicativo deve ter também [Permissões do diretório](#directory-permissions); para as Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para acessar unidades administrativas e funções de diretório.
 
+Com o _User.ManageIdentities.All_ delegado ou as permissões de aplicativo, é possível atualizar as identidades (`identities`) de um usuário. Isso inclui as identidades federadas (ou identidades sociais) ou as identidades locais com nomes de entrada com base em nome ou email.
+
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
@@ -1724,7 +1728,6 @@ Para ler as associações de grupos de um usuário (`memberOf`), o aplicativo de
 * _User.ReadWrite_: Atualizar a foto do usuário conectado (`PUT /me/photo/$value`).
 * _User.ReadBasic.All_: Localizar todos os usuários cujos nomes começam com "Davi" (`GET /users?$filter=startswith(displayName,'David')`).
 * _User.Read.All_: Ler o gerente de um usuário (`GET /user/{id | userPrincipalName}/manager`).
-
 
 #### <a name="application"></a>Aplicativo
 
