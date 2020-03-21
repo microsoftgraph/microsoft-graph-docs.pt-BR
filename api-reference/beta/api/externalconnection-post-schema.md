@@ -5,36 +5,34 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7fd9a9caa8c85df45fb292f822a7a1959175316b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af5756277ddcf41a04ebed795ceeb4f1f0e3d08e
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422142"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892550"
 ---
-# <a name="create-schema"></a><span data-ttu-id="85a85-103">Criar esquema</span><span class="sxs-lookup"><span data-stu-id="85a85-103">Create schema</span></span>
+# <a name="create-schema"></a><span data-ttu-id="544d3-103">Criar esquema</span><span class="sxs-lookup"><span data-stu-id="544d3-103">Create schema</span></span>
 
-<span data-ttu-id="85a85-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="85a85-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="544d3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="544d3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="85a85-105">Crie o esquema para uma [conexão](../resources/externalconnection.md)do Microsoft Search.</span><span class="sxs-lookup"><span data-stu-id="85a85-105">Create the schema for a Microsoft Search [connection](../resources/externalconnection.md).</span></span>
-
-<span data-ttu-id="85a85-106">Dois tipos de esquema são suportados: itens personalizados e arquivos.</span><span class="sxs-lookup"><span data-stu-id="85a85-106">Two schema types are supported: custom items, and files.</span></span>
+<span data-ttu-id="544d3-105">Crie o esquema para uma [conexão](../resources/externalconnection.md)do Microsoft Search.</span><span class="sxs-lookup"><span data-stu-id="544d3-105">Create the schema for a Microsoft Search [connection](../resources/externalconnection.md).</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a><span data-ttu-id="85a85-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="85a85-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="544d3-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="544d3-106">Permissions</span></span>
 
-<span data-ttu-id="85a85-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85a85-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="544d3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="544d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="85a85-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="85a85-110">Permission type</span></span>                        | <span data-ttu-id="85a85-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="85a85-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="544d3-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="544d3-109">Permission type</span></span>                        | <span data-ttu-id="544d3-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="544d3-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="85a85-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="85a85-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="85a85-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="85a85-113">Not supported.</span></span> |
-| <span data-ttu-id="85a85-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="85a85-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85a85-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="85a85-115">Not supported.</span></span> |
-| <span data-ttu-id="85a85-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="85a85-116">Application</span></span>                            | <span data-ttu-id="85a85-117">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85a85-117">ExternalItem.ReadWrite.All</span></span> |
+| <span data-ttu-id="544d3-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="544d3-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="544d3-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="544d3-112">Not supported.</span></span> |
+| <span data-ttu-id="544d3-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="544d3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="544d3-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="544d3-114">Not supported.</span></span> |
+| <span data-ttu-id="544d3-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="544d3-115">Application</span></span>                            | <span data-ttu-id="544d3-116">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="544d3-116">ExternalItem.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="85a85-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="85a85-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="544d3-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="544d3-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,40 +40,38 @@ ms.locfileid: "42422142"
 POST /external/connections/{id}/schema
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="85a85-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="85a85-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="544d3-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="544d3-118">Request headers</span></span>
 
-| <span data-ttu-id="85a85-120">Nome</span><span class="sxs-lookup"><span data-stu-id="85a85-120">Name</span></span>                  | <span data-ttu-id="85a85-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="85a85-121">Description</span></span>                                          |
-|:----------------------|:-----------------------------------------------------|
-| <span data-ttu-id="85a85-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="85a85-122">Authorization</span></span>         | <span data-ttu-id="85a85-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="85a85-p102">Bearer {token}. Required.</span></span>                            |
-| <span data-ttu-id="85a85-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="85a85-125">Content-Type</span></span>          | <span data-ttu-id="85a85-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="85a85-p103">application/json. Required.</span></span>                          |
-| <span data-ttu-id="85a85-128">Prefiro: responder-Async</span><span class="sxs-lookup"><span data-stu-id="85a85-128">Prefer: respond-async</span></span> | <span data-ttu-id="85a85-129">Use isso para fazer com que a solicitação seja executada de forma assíncrona.</span><span class="sxs-lookup"><span data-stu-id="85a85-129">Use this to cause the request to execute asynchronously.</span></span> <span data-ttu-id="85a85-130">Opcional.</span><span class="sxs-lookup"><span data-stu-id="85a85-130">Optional.</span></span> |
+| <span data-ttu-id="544d3-119">Nome</span><span class="sxs-lookup"><span data-stu-id="544d3-119">Name</span></span>                  | <span data-ttu-id="544d3-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="544d3-120">Description</span></span>                                                        |
+|:----------------------|:-------------------------------------------------------------------|
+| <span data-ttu-id="544d3-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="544d3-121">Authorization</span></span>         | <span data-ttu-id="544d3-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="544d3-p102">Bearer {token}. Required.</span></span>                                          |
+| <span data-ttu-id="544d3-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="544d3-124">Content-Type</span></span>          | <span data-ttu-id="544d3-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="544d3-p103">application/json. Required.</span></span>                                        |
+| <span data-ttu-id="544d3-127">Prefiro: responder-Async</span><span class="sxs-lookup"><span data-stu-id="544d3-127">Prefer: respond-async</span></span> | <span data-ttu-id="544d3-128">Use isso para fazer com que a solicitação seja executada de forma assíncrona.</span><span class="sxs-lookup"><span data-stu-id="544d3-128">Use this to cause the request to execute asynchronously.</span></span> <span data-ttu-id="544d3-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="544d3-129">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="85a85-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="85a85-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="544d3-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="544d3-130">Request body</span></span>
 
-<span data-ttu-id="85a85-132">No corpo da solicitação, forneça uma representação JSON de um objeto [Schema](../resources/schema.md) .</span><span class="sxs-lookup"><span data-stu-id="85a85-132">In the request body, supply a JSON representation of a [schema](../resources/schema.md) object.</span></span>
+<span data-ttu-id="544d3-131">No corpo da solicitação, forneça uma representação JSON de um objeto [Schema](../resources/schema.md) .</span><span class="sxs-lookup"><span data-stu-id="544d3-131">In the request body, supply a JSON representation of a [schema](../resources/schema.md) object.</span></span>
 
-<span data-ttu-id="85a85-133">Ao registrar um esquema de item personalizado, o `schema` objeto deve ter a `baseType` propriedade definida como `microsoft.graph.externalItem` e deve conter a `properties` propriedade.</span><span class="sxs-lookup"><span data-stu-id="85a85-133">When registering a custom item schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalItem` and MUST contain the `properties` property.</span></span> <span data-ttu-id="85a85-134">O `properties` objeto deve conter pelo menos uma propriedade, até um máximo de 64.</span><span class="sxs-lookup"><span data-stu-id="85a85-134">The `properties` object must contain at least one property, up to a maximum of 64.</span></span>
+<span data-ttu-id="544d3-132">Ao registrar um esquema de item personalizado, o `schema` objeto deve ter a `baseType` propriedade definida como `microsoft.graph.externalItem` e deve conter a `properties` propriedade.</span><span class="sxs-lookup"><span data-stu-id="544d3-132">When registering a custom item schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalItem` and MUST contain the `properties` property.</span></span> <span data-ttu-id="544d3-133">O `properties` objeto deve conter pelo menos uma propriedade, até um máximo de 64.</span><span class="sxs-lookup"><span data-stu-id="544d3-133">The `properties` object must contain at least one property, up to a maximum of 64.</span></span>
 
-<span data-ttu-id="85a85-135">Ao registrar um esquema de arquivos, o `schema` objeto deve ter a `baseType` propriedade definida como `microsoft.graph.externalFile`.</span><span class="sxs-lookup"><span data-stu-id="85a85-135">When registering a file schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalFile`.</span></span>
+## <a name="response"></a><span data-ttu-id="544d3-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="544d3-134">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="85a85-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="85a85-136">Response</span></span>
+<span data-ttu-id="544d3-135">Com o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver êxito, este método retornará um `202 Accepted` código de resposta e uma URL no `Location` cabeçalho de resposta que pode ser usada para [obter o status da operação](../api/connectionoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="544d3-135">With the `Prefer: respond-async` header included in the request, if successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/connectionoperation-get.md).</span></span>
 
-<span data-ttu-id="85a85-137">Com o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver êxito, este método retornará um `202 Accepted` código de resposta e uma URL no `Location` cabeçalho de resposta que pode ser usada para [obter o status da operação](../api/connectionoperation-get.md).</span><span class="sxs-lookup"><span data-stu-id="85a85-137">With the `Prefer: respond-async` header included in the request, if successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/connectionoperation-get.md).</span></span>
-
-<span data-ttu-id="85a85-138">Sem o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto de [esquema](../resources/schema.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="85a85-138">Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/schema.md) object in the response body.</span></span>
+<span data-ttu-id="544d3-136">Sem o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto de [esquema](../resources/schema.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="544d3-136">Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/schema.md) object in the response body.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="85a85-139">A criação de um esquema é um processo de longa execução sujeito a tempos limite de gateway.</span><span class="sxs-lookup"><span data-stu-id="85a85-139">Creating a schema is a long-running process prone to gateway timeouts.</span></span> <span data-ttu-id="85a85-140">Recomendamos usar o `Prefer: respond-async` cabeçalho para evitar erros de tempo limite.</span><span class="sxs-lookup"><span data-stu-id="85a85-140">We recommend using the `Prefer: respond-async` header to avoid timeout errors.</span></span>
+> <span data-ttu-id="544d3-137">A criação de um esquema é um processo de longa execução sujeito a tempos limite de gateway.</span><span class="sxs-lookup"><span data-stu-id="544d3-137">Creating a schema is a long-running process prone to gateway timeouts.</span></span> <span data-ttu-id="544d3-138">Recomendamos usar o `Prefer: respond-async` cabeçalho para evitar erros de tempo limite.</span><span class="sxs-lookup"><span data-stu-id="544d3-138">We recommend using the `Prefer: respond-async` header to avoid timeout errors.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="85a85-141">Exemplos</span><span class="sxs-lookup"><span data-stu-id="85a85-141">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="544d3-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="544d3-139">Examples</span></span>
 
-### <a name="example-1-register-custom-schema-asynchronously"></a><span data-ttu-id="85a85-142">Exemplo 1: registrar o esquema personalizado de forma assíncrona</span><span class="sxs-lookup"><span data-stu-id="85a85-142">Example 1: Register custom schema asynchronously</span></span>
+### <a name="example-register-custom-schema-asynchronously"></a><span data-ttu-id="544d3-140">Exemplo: registrar esquema personalizado de forma assíncrona</span><span class="sxs-lookup"><span data-stu-id="544d3-140">Example: Register custom schema asynchronously</span></span>
 
-#### <a name="request"></a><span data-ttu-id="85a85-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="85a85-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="544d3-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="544d3-141">Request</span></span>
 
-<span data-ttu-id="85a85-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="85a85-144">The following is an example of the request.</span></span>
+<span data-ttu-id="544d3-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="544d3-142">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="85a85-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="85a85-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="544d3-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="544d3-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schema_from_connection_async"
@@ -109,26 +105,25 @@ Prefer: respond-async
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="85a85-146">C#</span><span class="sxs-lookup"><span data-stu-id="85a85-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="544d3-144">C#</span><span class="sxs-lookup"><span data-stu-id="544d3-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="85a85-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="85a85-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="544d3-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="544d3-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-async-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="85a85-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="85a85-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="544d3-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="544d3-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
-#### <a name="response"></a><span data-ttu-id="85a85-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="85a85-149">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="544d3-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="544d3-147">Response</span></span>
 <!-- markdownlint-enable MD024 -->
 
-<span data-ttu-id="85a85-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="85a85-150">The following is an example of the response.</span></span>
+<span data-ttu-id="544d3-148">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="544d3-148">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -138,63 +133,6 @@ Prefer: respond-async
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
-```
-
-### <a name="example-2-register-file-schema-synchronously"></a><span data-ttu-id="85a85-151">Exemplo 2: registrar o esquema de arquivo de forma síncrona</span><span class="sxs-lookup"><span data-stu-id="85a85-151">Example 2: Register file schema synchronously</span></span>
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="request"></a><span data-ttu-id="85a85-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="85a85-152">Request</span></span>
-<!-- markdownlint-enable MD024 -->
-
-<span data-ttu-id="85a85-153">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="85a85-153">The following is an example of the request.</span></span>
-
-# <a name="http"></a>[<span data-ttu-id="85a85-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="85a85-154">HTTP</span></span>](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_schema_from_connection"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/connections/contosofiles/schema
-Content-type: application/json
-
-{
-  "baseType": "microsoft.graph.externalFile"
-}
-```
-# <a name="c"></a>[<span data-ttu-id="85a85-155">C#</span><span class="sxs-lookup"><span data-stu-id="85a85-155">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[<span data-ttu-id="85a85-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="85a85-156">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[<span data-ttu-id="85a85-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="85a85-157">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="response"></a><span data-ttu-id="85a85-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="85a85-158">Response</span></span>
-<!-- markdownlint-enable MD024 -->
-
-<span data-ttu-id="85a85-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="85a85-159">The following is an example of the response.</span></span>
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schema"
-} -->
-
-```http
-HTTP/1.1 201 Created
-
-{
-  "baseType": "microsoft.graph.externalFile"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

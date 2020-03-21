@@ -1,38 +1,38 @@
 ---
 title: Excluir externalItem
-description: Exclua um externalItem ou externalfile.
+description: Excluir um externalItem.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6d5cf833b6f91a76c8fee63c81bd6dd6db32d548
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 263d04ed1b254a52d9eacab19997e40cdac4dc67
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422009"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892539"
 ---
-# <a name="delete-externalitem"></a><span data-ttu-id="ce70e-103">Excluir externalItem</span><span class="sxs-lookup"><span data-stu-id="ce70e-103">Delete externalItem</span></span>
+# <a name="delete-externalitem"></a><span data-ttu-id="d4889-103">Excluir externalItem</span><span class="sxs-lookup"><span data-stu-id="d4889-103">Delete externalItem</span></span>
 
-<span data-ttu-id="ce70e-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ce70e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d4889-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d4889-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ce70e-105">Exclua um [externalitem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md).</span><span class="sxs-lookup"><span data-stu-id="ce70e-105">Delete an [externalitem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).</span></span>
+<span data-ttu-id="d4889-105">Excluir um [externalitem](../resources/externalitem.md).</span><span class="sxs-lookup"><span data-stu-id="d4889-105">Delete an [externalitem](../resources/externalitem.md).</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="permissions"></a><span data-ttu-id="ce70e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ce70e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d4889-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d4889-106">Permissions</span></span>
 
-<span data-ttu-id="ce70e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce70e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d4889-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d4889-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ce70e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ce70e-109">Permission type</span></span>                        | <span data-ttu-id="ce70e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ce70e-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d4889-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d4889-109">Permission type</span></span>                        | <span data-ttu-id="d4889-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d4889-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="ce70e-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ce70e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ce70e-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ce70e-112">Not supported.</span></span> |
-| <span data-ttu-id="ce70e-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ce70e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce70e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ce70e-114">Not supported.</span></span> |
-| <span data-ttu-id="ce70e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ce70e-115">Application</span></span>                            | <span data-ttu-id="ce70e-116">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce70e-116">ExternalItem.ReadWrite.All</span></span> |
+| <span data-ttu-id="d4889-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d4889-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d4889-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d4889-112">Not supported.</span></span> |
+| <span data-ttu-id="d4889-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d4889-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d4889-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d4889-114">Not supported.</span></span> |
+| <span data-ttu-id="d4889-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d4889-115">Application</span></span>                            | <span data-ttu-id="d4889-116">ExternalItem.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4889-116">ExternalItem.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ce70e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ce70e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d4889-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d4889-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,34 +40,34 @@ ms.locfileid: "42422009"
 DELETE /external/connections/{connection-id}/items/{item-id}
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="ce70e-118">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="ce70e-118">Path parameters</span></span>
+## <a name="path-parameters"></a><span data-ttu-id="d4889-118">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="d4889-118">Path parameters</span></span>
 
-| <span data-ttu-id="ce70e-119">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="ce70e-119">Parameter</span></span>     | <span data-ttu-id="ce70e-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="ce70e-120">Type</span></span>   | <span data-ttu-id="ce70e-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce70e-121">Description</span></span>                                         |
+| <span data-ttu-id="d4889-119">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="d4889-119">Parameter</span></span>     | <span data-ttu-id="d4889-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="d4889-120">Type</span></span>   | <span data-ttu-id="d4889-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="d4889-121">Description</span></span>                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| <span data-ttu-id="ce70e-122">ID de conexão</span><span class="sxs-lookup"><span data-stu-id="ce70e-122">connection-id</span></span> | <span data-ttu-id="ce70e-123">string</span><span class="sxs-lookup"><span data-stu-id="ce70e-123">string</span></span> | <span data-ttu-id="ce70e-124">A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém</span><span class="sxs-lookup"><span data-stu-id="ce70e-124">The `id` property of the containing [externalConnection](../resources/externalconnection.md)</span></span> |
-| <span data-ttu-id="ce70e-125">item-id</span><span class="sxs-lookup"><span data-stu-id="ce70e-125">item-id</span></span>       | <span data-ttu-id="ce70e-126">string</span><span class="sxs-lookup"><span data-stu-id="ce70e-126">string</span></span> | <span data-ttu-id="ce70e-127">A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md).</span><span class="sxs-lookup"><span data-stu-id="ce70e-127">The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).</span></span> |
+| <span data-ttu-id="d4889-122">ID de conexão</span><span class="sxs-lookup"><span data-stu-id="d4889-122">connection-id</span></span> | <span data-ttu-id="d4889-123">string</span><span class="sxs-lookup"><span data-stu-id="d4889-123">string</span></span> | <span data-ttu-id="d4889-124">A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém</span><span class="sxs-lookup"><span data-stu-id="d4889-124">The `id` property of the containing [externalConnection](../resources/externalconnection.md)</span></span> |
+| <span data-ttu-id="d4889-125">item-id</span><span class="sxs-lookup"><span data-stu-id="d4889-125">item-id</span></span>       | <span data-ttu-id="d4889-126">string</span><span class="sxs-lookup"><span data-stu-id="d4889-126">string</span></span> | <span data-ttu-id="d4889-127">A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md).</span><span class="sxs-lookup"><span data-stu-id="d4889-127">The developer-provided `id` property of the [externalItem](../resources/externalitem.md).</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="ce70e-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ce70e-128">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d4889-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d4889-128">Request headers</span></span>
 
-| <span data-ttu-id="ce70e-129">Nome</span><span class="sxs-lookup"><span data-stu-id="ce70e-129">Name</span></span>          | <span data-ttu-id="ce70e-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce70e-130">Description</span></span>               |
+| <span data-ttu-id="d4889-129">Nome</span><span class="sxs-lookup"><span data-stu-id="d4889-129">Name</span></span>          | <span data-ttu-id="d4889-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="d4889-130">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="ce70e-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="ce70e-131">Authorization</span></span> | <span data-ttu-id="ce70e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ce70e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d4889-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="d4889-131">Authorization</span></span> | <span data-ttu-id="d4889-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d4889-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ce70e-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ce70e-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d4889-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d4889-134">Request body</span></span>
 
-<span data-ttu-id="ce70e-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ce70e-135">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d4889-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d4889-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ce70e-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce70e-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d4889-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="d4889-136">Response</span></span>
 
-<span data-ttu-id="ce70e-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ce70e-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d4889-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d4889-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ce70e-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ce70e-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d4889-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d4889-139">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ce70e-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ce70e-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d4889-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d4889-140">Request</span></span>
 
-<span data-ttu-id="ce70e-141">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ce70e-141">The following is an example of the request.</span></span>
+<span data-ttu-id="d4889-141">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d4889-141">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ce70e-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce70e-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d4889-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="d4889-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_externalitem"
@@ -76,7 +76,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 ```http
 PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 ```
-# <a name="objective-c"></a>[<span data-ttu-id="ce70e-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce70e-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d4889-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d4889-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -84,10 +84,10 @@ PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 
 
 <!-- markdownlint-disable MD024 -->
-### <a name="response"></a><span data-ttu-id="ce70e-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce70e-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d4889-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="d4889-144">Response</span></span>
 <!-- markdownlint-enable MD024 -->
 
-<span data-ttu-id="ce70e-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ce70e-145">The following is an example of the response.</span></span>
+<span data-ttu-id="d4889-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d4889-145">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
