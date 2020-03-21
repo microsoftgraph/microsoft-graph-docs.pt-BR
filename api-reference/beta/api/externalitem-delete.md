@@ -1,24 +1,24 @@
 ---
 title: Excluir externalItem
-description: Exclua um externalItem ou externalfile.
+description: Excluir um externalItem.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6d5cf833b6f91a76c8fee63c81bd6dd6db32d548
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 263d04ed1b254a52d9eacab19997e40cdac4dc67
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422009"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892539"
 ---
 # <a name="delete-externalitem"></a>Excluir externalItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um [externalitem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md).
+Excluir um [externalitem](../resources/externalitem.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -45,7 +45,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md). |
+| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

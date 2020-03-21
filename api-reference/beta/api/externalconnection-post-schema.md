@@ -5,22 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7fd9a9caa8c85df45fb292f822a7a1959175316b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af5756277ddcf41a04ebed795ceeb4f1f0e3d08e
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422142"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892550"
 ---
 # <a name="create-schema"></a>Criar esquema
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie o esquema para uma [conexão](../resources/externalconnection.md)do Microsoft Search.
-
-Dois tipos de esquema são suportados: itens personalizados e arquivos.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -44,10 +42,10 @@ POST /external/connections/{id}/schema
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome                  | Descrição                                          |
-|:----------------------|:-----------------------------------------------------|
-| Autorização         | {token} de portador. Obrigatório.                            |
-| Content-Type          | application/json. Obrigatório.                          |
+| Nome                  | Descrição                                                        |
+|:----------------------|:-------------------------------------------------------------------|
+| Autorização         | {token} de portador. Obrigatório.                                          |
+| Content-Type          | application/json. Obrigatório.                                        |
 | Prefiro: responder-Async | Use isso para fazer com que a solicitação seja executada de forma assíncrona. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -55,8 +53,6 @@ POST /external/connections/{id}/schema
 No corpo da solicitação, forneça uma representação JSON de um objeto [Schema](../resources/schema.md) .
 
 Ao registrar um esquema de item personalizado, o `schema` objeto deve ter a `baseType` propriedade definida como `microsoft.graph.externalItem` e deve conter a `properties` propriedade. O `properties` objeto deve conter pelo menos uma propriedade, até um máximo de 64.
-
-Ao registrar um esquema de arquivos, o `schema` objeto deve ter a `baseType` propriedade definida como `microsoft.graph.externalFile`.
 
 ## <a name="response"></a>Resposta
 
@@ -69,7 +65,7 @@ Sem o `Prefer: respond-async` cabeçalho incluído na solicitação, se tiver ê
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-register-custom-schema-asynchronously"></a>Exemplo 1: registrar o esquema personalizado de forma assíncrona
+### <a name="example-register-custom-schema-asynchronously"></a>Exemplo: registrar esquema personalizado de forma assíncrona
 
 #### <a name="request"></a>Solicitação
 
@@ -123,7 +119,6 @@ Prefer: respond-async
 
 ---
 
-
 <!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>Resposta
 <!-- markdownlint-enable MD024 -->
@@ -138,63 +133,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
-```
-
-### <a name="example-2-register-file-schema-synchronously"></a>Exemplo 2: registrar o esquema de arquivo de forma síncrona
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="request"></a>Solicitação
-<!-- markdownlint-enable MD024 -->
-
-Este é um exemplo de solicitação.
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_schema_from_connection"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/connections/contosofiles/schema
-Content-type: application/json
-
-{
-  "baseType": "microsoft.graph.externalFile"
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="response"></a>Resposta
-<!-- markdownlint-enable MD024 -->
-
-Este é um exemplo de resposta.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schema"
-} -->
-
-```http
-HTTP/1.1 201 Created
-
-{
-  "baseType": "microsoft.graph.externalFile"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

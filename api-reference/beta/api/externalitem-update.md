@@ -5,20 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: ff3237204310365eb8945a739bd423668494f786
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 104e5c95b27f555e174c2f1669b758bf69fdda6d
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421995"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892448"
 ---
 # <a name="update-externalitem"></a>Atualizar externalitem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um [externalitem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md).
+Atualizar as propriedades de um [externalitem](../resources/externalitem.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -45,7 +45,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md). |
+| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,26 +56,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades a seguir podem ser atualizadas.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes (exceto propriedades dentro do `properties` objeto) que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações de outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades a seguir podem ser atualizadas.
 
-> [!NOTE]
-> Durante a visualização apenas, `acl` a propriedade pode ser atualizada via patch. Para atualizar outras propriedades, use um [Put para substituir o item existente por um novo item](externalconnection-put-items.md).
+| Propriedade   | Tipo                                  | Descrição               |
+|:-----------|:--------------------------------------|:--------------------------|
+| ACL        | coleção [ACL](../resources/acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
+| content    | Cadeia de caracteres                                | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. |
+| properties | Objeto                                | Um recipiente de propriedades com as propriedades do item. As propriedades devem estar em conformidade com o [esquema](../resources/schema.md) definido para o [externalConnection](../resources/externalconnection.md). |
 
-### <a name="externalitem-properties"></a>Propriedades externalItem
+### <a name="updating-the-acl-collection"></a>Atualizando a coleção ACL
 
-| Propriedade | Tipo                                  | Descrição               |
-|:---------|:--------------------------------------|:--------------------------|
-| ACL      | coleção [ACL](../resources/acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
+Se a `acl` propriedade for incluída em uma solicitação Update, a coleção ACL existente será substituída pela coleção incluída na solicitação.
 
-### <a name="externalfile-properties"></a>Propriedades de externalfile
+### <a name="updating-the-properties-object"></a>Atualizando o objeto Properties
 
-| Propriedade | Tipo                                  | Descrição               |
-|:---------|:--------------------------------------|:--------------------------|
-| ACL      | coleção [ACL](../resources/acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
+Se a `properties` propriedade for incluída em uma solicitação Update, o conjunto de propriedades existente será substituído pelo valor incluído na solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [externalItem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [externalItem](../resources/externalitem.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -161,5 +160,8 @@ Content-type: application/json
   "description": "Update externalitem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
+  ]
 }-->

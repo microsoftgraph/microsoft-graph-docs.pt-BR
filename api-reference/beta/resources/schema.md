@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 40c31536f8d53c46563fda4205d34deee0501beb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be9001d1fab756be09e88768f0b34540c14aafcf
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520953"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892532"
 ---
 # <a name="schema-resource-type"></a>tipo de recurso de esquema
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [co
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                    | Tipo de retorno                   | Descrição |
 |:----------------------------------------------------------|:------------------------------|:--|
@@ -33,8 +33,8 @@ Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [co
 
 | Propriedade   | Tipo                               | Descrição                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Os valores possíveis são: `microsoft.graph.externalItem` e `microsoft.graph.externalFile`. Obrigatório. |
-| properties | coleção [Property](property.md) | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 64. Obrigatório quando `baseType` está definido como `microsoft.graph.externalItem`. Ignorado quando `baseType` está definido como `microsoft.graph.externalFile`. |
+| baseType   | String                             | Tem que ser definida como `microsoft.graph.externalItem`. Obrigatório. |
+| properties | coleção [Property](property.md) | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 64. |
 
 ## <a name="relationships"></a>Relações
 

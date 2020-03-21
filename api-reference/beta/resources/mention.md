@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3780c4b01fc6dc81418034931f37e84d1e295b41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70005abbe8eaf0e9680f106f59caf091aa2495d2
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522698"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892580"
 ---
 # <a name="mention-resource-type"></a>tipo de recurso menção
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -79,7 +79,7 @@ Nenhuma
 |[Post](../api/user-sendmail.md#request-2) e Send | Nenhum | Criar e enviar mençãos como parte de uma nova mensagem.|
 |[Postar](../api/user-post-messages.md#request-2) em um novo rascunho | [mensagem](../resources/message.md) que contém um ou mais objetos de **menção** . | Crie um rascunho de uma nova mensagem e inclua um ou mais objetos de **menção** .|
 |[Obter](../api/user-list-messages.md#request-2) mensagens mencionando-me | Coleção [message](../resources/message.md) | Obtenha todas as mensagens na caixa de correio do usuário conectado que contenham **menção** deste usuário.|
-|[Obter](../api/message-get.md#request-2) uma mensagem e suas mencionações | Coleção [message](../resources/message.md) | Obtenha uma mensagem e expanda os detalhes de cada **menção** na mensagem.|
+|[Obter](../api/message-get.md#example-2) uma mensagem e suas mencionações | Coleção [message](../resources/message.md) | Obtenha uma mensagem e expanda os detalhes de cada **menção** na mensagem.|
 |[Excluir](../api/message-delete.md#request-2) uma menção | Nenhum |Exclui a menção especificada na mensagem especificada na caixa de correio do usuário conectado. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

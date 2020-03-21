@@ -5,16 +5,19 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 91de559bd365b9d6141e10a82af9ee06593f08ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a4f4e9bb9a782e71dd0c2f349baaacc5b61f480
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498774"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892594"
 ---
 # <a name="externalfile-resource-type"></a>tipo de recurso externalfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
+
+> [!CAUTION]
+> O `externalFile` tipo foi preterido. Os desenvolvedores não devem usar esse tipo. Arquivos externos ainda podem ser indexados usando o tipo [externalItem](externalitem.md) .
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +25,7 @@ Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                        | Tipo de retorno  | Descrição |
 |:--------------------------------------------------------------|:-------------|:--|

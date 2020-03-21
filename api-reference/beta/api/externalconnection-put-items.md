@@ -5,22 +5,22 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8b75e3753555e840b042e8876f91e27ed77b4a76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fb15ef50dfba8318691085f43a8967b155d9d3f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422051"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892546"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [externalItem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md).
+Criar um novo [externalItem](../resources/externalitem.md).
 
-Essa API pode ser usada para criar um item personalizado ou um arquivo. Especifique o tipo que você está criando incluindo a `@odata.type` Propriedade no corpo JSON. O [externalConnection](../resources/externalconnection.md) recipiente deve ter um [esquema](../resources/schema.md) registrado do tipo correspondente.
+Essa API pode ser usada para criar um item personalizado. Especifique o tipo que você está criando incluindo a `@odata.type` Propriedade no corpo JSON. O [externalConnection](../resources/externalconnection.md) recipiente deve ter um [esquema](../resources/schema.md) registrado do tipo correspondente.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -47,7 +47,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | ID de conexão | string | A `id` Propriedade do [externalConnection](../resources/externalconnection.md) que contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md) ou do [externalfile](../resources/externalfile.md). Se nenhum item já existir com isso `id`, um novo item é criado. Se já existir um item com isso `id`, ele será substituído pelo objeto enviado no corpo. |
+| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalitem.md). Se nenhum item já existir com isso `id`, um novo item é criado. Se já existir um item com isso `id`, ele será substituído pelo objeto enviado no corpo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [externalItem](../resources/externalitem.md) ou [externalfile](../resources/externalfile.md) . A carga é limitada a 4 MB.
+No corpo da solicitação, forneça uma representação JSON de um objeto [externalItem](../resources/externalitem.md) . A carga é limitada a 4 MB.
 
 ### <a name="creating-an-externalitem"></a>Criar um externalItem
 
@@ -88,17 +88,13 @@ As propriedades em `externalItem` um devem usar especificadores de tipo na carga
     > [!IMPORTANT]
     > Ao incluir uma propriedade de tipo `Collection(DateTime)`, você deve usar o especificador `Collection(DateTimeOffset)`de tipo.
 
-### <a name="creating-an-externalfile"></a>Criando um externalfile
-
-Ao criar um `externalFile`, os campos a seguir são obrigatórios `acl`: `name` `@odata.type`,, `url`e.
-
 ## <a name="response"></a>Resposta
 
 Se bem sucedido, este método retorna um código de resposta `200 OK`.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-custom-item"></a>Exemplo 1: criar um item personalizado
+### <a name="example-create-a-custom-item"></a>Exemplo: criar um item personalizado
 
 #### <a name="request"></a>Solicitação
 
@@ -142,76 +138,6 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-externalitem-from-connections-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="response"></a>Resposta
-<!-- markdownlint-enable MD024 -->
-
-Este é um exemplo de resposta.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-```
-
-### <a name="example-2-create-a-file"></a>Exemplo 2: criar um arquivo
-
-<!-- markdownlint-disable MD024 -->
-#### <a name="request"></a>Solicitação
-<!-- markdownlint-enable MD024 -->
-
-Este é um exemplo de solicitação.
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_externalfile_from_connections"
-}-->
-
-```http
-PUT https://graph.microsoft.com/beta/connections/contosofiles/items/myFile01
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.externalFile",
-  "acl": [
-    {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
-      "accessType": "grant",
-      "identitySource": "Azure Active Directory"
-    }
-  ],
-  "createdDateTime": "2019-01-31T03:44:19.0354159Z",
-  "modifiedDateTime": "2019-01-31T03:44:19.0354159Z",
-  "createdBy": "Pradeep Gupta",
-  "lastModifiedBy": "Adele Vance",
-  "title": "Enterprise Search Graph Ingestion API",
-  "url": "file://filesrv02.corp.contoso.com/data/project/Enterprise Search.docx",
-  "name": "Enterprise Search.docx",
-  "extension": "docx",
-  "size": 8676776,
-  "content": "The quick brown fox jumps over the lazy dog."
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-externalfile-from-connections-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-externalfile-from-connections-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-externalfile-from-connections-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
