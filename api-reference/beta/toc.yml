@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -46,7 +46,7 @@
         - name: Controlar alterações
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/beta
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/beta
@@ -73,7 +73,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -160,11 +160,11 @@
     - name: Referência beta
       expanded: true
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -288,7 +288,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Email
+            - name: Correio
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -392,7 +392,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Teamwork
+            - name: Trabalho em equipe
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -406,7 +406,7 @@
                   href: api/user-delete-teamsappinstallation.md
         - name: Grupos
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -928,7 +928,7 @@
                   href: api/cloudcommunications-getpresencesbyuserid.md
             - name: Registros de chamada (visualização)
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/callrecords-api-overview.md
                 - name: Registro de chamadas
                   href: resources/callrecords-callrecord.md
@@ -971,7 +971,7 @@
         - name: Reserva de clientes
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/booking-api-overview.md
             - name: Negócio de reservas
               href: resources/bookingbusiness.md
@@ -8160,7 +8160,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -8250,7 +8250,7 @@
         - name: Finanças (visualização)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/dynamics-graph-reference.md
             - name: Conta
               href: resources/dynamics-account.md
@@ -8485,7 +8485,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/azure-ad-overview.md
             - name: Avaliações do acesso
               href: resources/accessreviews-root.md
@@ -9030,7 +9030,7 @@
                       href: api/informationprotectionlabel-extractlabel.md
                 - name: Avaliação de ameaças
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/threatassessment-api-overview.md
                     - name: Solicitação de avaliação de ameaças
                       href: resources/threatassessmentrequest.md
@@ -9229,6 +9229,13 @@
                       href: api/tokenlifetimepolicy-delete.md
                     - name: Listar aplicadas ao aplicativo
                       href: api/tokenlifetimepolicy-list-appliesto.md
+                - name: Política de padrões de segurança
+                  href: resources/identitysecuritydefaultsenforcementpolicy.md
+                  items:
+                    - name: Obter
+                      href: api/identitysecuritydefaultsenforcementpolicy-get.md
+                    - name: Atualizar
+                      href: api/identitysecuritydefaultsenforcementpolicy-update.md
             - name: Privileged Identity Management
               items:
                 - name: Privileged Identity Management
@@ -9519,7 +9526,7 @@
                   href: api/identityuserflow-get.md
                 - name: Excluir
                   href: api/identityuserflow-delete.md
-        - name: Email
+        - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -9783,7 +9790,7 @@
                   href: api/resource-get.md
         - name: Notificações
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/notifications-api-overview.md
             - name: Notificação
               href: resources/projectrome-notification.md
@@ -10092,6 +10099,121 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Obter uma propriedade de vários valores
                       href: api/multivaluelegacyextendedproperty-get.md
+        - name: Impressão universal
+          items:
+            - name: Print
+              href: resources/print.md
+            - name: Conectores
+              href: resources/printconnector.md
+              items:
+                - name: Listar
+                  href: api/print-list-connectors.md
+                - name: Obter
+                  href: api/printconnector-get.md
+                - name: Atualizar
+                  href: api/printconnector-update.md
+                - name: Excluir
+                  href: api/printconnector-delete.md
+            - name: Trabalhos de impressão
+              href: resources/printjob.md
+              items:
+                - name: Criar
+                  href: api/printer-post-jobs.md
+                - name: Obter
+                  href: api/printjob-get.md
+                - name: Iniciar
+                  href: api/printjob-startprintjob.md
+                - name: Cancelar
+                  href: api/printjob-cancelprintjob.md
+            - name: Impressoras
+              href: resources/printer.md
+              items:
+                - name: Listar
+                  href: api/print-list-printers.md
+                - name: Obter
+                  href: api/printer-get.md
+                - name: Excluir
+                  href: api/printer-delete.md
+                - name: Obter recursos
+                  href: api/printer-getcapabilities.md
+                - name: Conectores de lista
+                  href: api/printer-list-connectors.md
+                - name: Listar trabalhos de impressão
+                  href: api/printer-list-jobs.md
+                - name: Criar trabalho de impressão
+                  href: api/printer-post-jobs.md
+                - name: Listar usuários permitidos
+                  href: api/printer-list-allowedusers.md
+                - name: Listar allowedGroups
+                  href: api/printer-list-allowedgroups.md
+                - name: Adicionar grupo permitido
+                  href: api/printer-post-allowedgroups.md
+                - name: Adicionar usuário permitido
+                  href: api/printer-post-allowedusers.md
+                - name: Excluir grupo permitido
+                  href: api/printer-delete-allowedgroup.md
+                - name: Excluir usuário permitido
+                  href: api/printer-delete-alloweduser.md
+                - name: Redefinir padrões
+                  href: api/printer-resetdefaults.md
+            - name: Compartilhamentos de impressora
+              href: resources/printershare.md
+              items:
+                - name: Listar
+                  href: api/print-list-printershares.md
+                - name: Criar
+                  href: api/print-post-printershares.md
+                - name: Obter
+                  href: api/printershare-get.md
+                - name: Atualizar
+                  href: api/printershare-update.md
+                - name: Excluir
+                  href: api/printershare-delete.md
+            - name: Relatórios
+              items:
+                - name: Organizado por impressora
+                  items:
+                    - name: Obter
+                      href: api/printusagesummarybyprinter-get.md
+                    - name: Listar trabalhos de impressão arquivados de uma impressora
+                      href: api/reports-getprinterarchivedprintjobs.md
+                    - name: Listar relatórios diários por impressora
+                      href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+                    - name: Listar relatórios mensais por impressora
+                      href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+                - name: Organizado por usuário ou grupo
+                  items:
+                    - name: Obter
+                      href: api/printusagesummarybyuser-get.md
+                    - name: Listar trabalhos de impressão arquivados de um usuário
+                      href: api/reports-getuserarchivedprintjobs.md
+                    - name: Listar trabalhos de impressão arquivados de um grupo
+                      href: api/reports-getgrouparchivedprintjobs.md
+                    - name: Listar relatórios diários por usuário
+                      href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+                    - name: Listar relatórios mensais por usuário
+                      href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+            - name: Serviços
+              href: resources/printservice.md
+              items:
+                - name: Listar
+                  href: api/print-list-services.md
+                - name: Obter
+                  href: api/printservice-get.md
+                - name: Endpoint
+                  href: resources/printserviceendpoint.md
+                  items:
+                    - name: Obter o ponto de extremidade
+                      href: api/printserviceendpoint-get.md
+                    - name: Listar os pontos de extremidade de um serviço
+                      href: api/printservice-list-endpoints.md
+            - name: Configurações
+              href: resources/printsettings.md
+              items:
+                - name: Obter
+                  href: api/print-get-settings.md
+                - name: Atualizar
+                  href: api/print-update-settings.md
         - name: Relatórios
           items:
             - name: Relatórios de identidade e acesso
@@ -10110,7 +10232,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Registro e uso
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Contagem de registro de usuário de credenciais
                       href: resources/credentialuserregistrationcount.md
@@ -10134,7 +10256,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Relatórios de uso do Office 365
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/report.md
                 - name: Uso do dispositivo do Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -10337,13 +10459,13 @@
           items:
             - name: Consulta
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/search-api-overview.md
                 - name: Dados de consulta
                   href: api/search-query.md
             - name: Índice
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/indexing-api-overview.md
                 - name: Conexão externa
                   items:
@@ -10382,16 +10504,6 @@
                     - name: Atualizar item externo
                       href: api/externalitem-update.md
                     - name: Excluir item externo
-                      href: api/externalitem-delete.md
-                - name: Arquivo externo
-                  items:
-                    - name: Arquivo externo
-                      href: resources/externalfile.md
-                    - name: Criar arquivo externo
-                      href: api/externalconnection-put-items.md
-                    - name: Atualizar arquivo externo
-                      href: api/externalitem-update.md
-                    - name: Excluir arquivo externo
                       href: api/externalitem-delete.md
         - name: Segurança
           displayname: 'Security API, Microsoft Graph Security API'
@@ -10458,7 +10570,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -10519,7 +10631,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -10616,7 +10728,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Teamwork
+        - name: Trabalho em equipe
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
