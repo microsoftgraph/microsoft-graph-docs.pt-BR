@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Permite que você receba notificações de alteração quase em tempo real para uma unidade usando o socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: a1343cb1dcab4ea1fda9ffc13ba14f7402f3dca2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca15c21ecd08b2a74700d2b729e23632e427a72f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517794"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892650"
 ---
 # <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do WebSocket
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 Permite que você receba notificações de alteração quase em tempo real para uma [unidade][] usando o [Socket.Io][].
 Socket.io é uma biblioteca de notificações popular para JavaScript que utiliza WebSockets. Para saber mais, confira [Socket.Io](https://socket.io).
 
-[unidade]: ../resources/drive.md
+[drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
 
 ## <a name="permissions"></a>Permissões
@@ -93,8 +93,6 @@ Content-type: application/json
 ```
 
 O `notificationUrl` retornado é uma URL de ponto de extremidade Socket.IO.
-Para usá-lo com um cliente do socket.io, divida a cadeia `/callback?` de caracteres no token.
-A parte da cadeia de caracteres `/callback?` antes é a URL de ponto de extremidade Socket.Io e a parte da cadeia de caracteres depois é uma cadeia de caracteres de consulta opaca que deve ser fornecida à biblioteca.
 
 O exemplo a seguir mostra como usar o `notificationUrl` com Socket.Io em JavaScript.
 
@@ -102,11 +100,8 @@ O exemplo a seguir mostra como usar o `notificationUrl` com Socket.Io em JavaScr
 // this is the notificationUrl returned from this API
 var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
 
-// after the split, split[0] will be everything leading up to '/callback?' and split[1] will be everything after.
-var split = notificationUrl.split("/callback?");
-
 // 'io' comes from the socket.io client library
-var socket = io(split[0], { query: split[1] });
+var socket = io(notificationUrl);
 
 // these examples log to the console.
 // your app would provide its own callbacks

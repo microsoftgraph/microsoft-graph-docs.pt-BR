@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d7690c0db76c7087ff747397eb48e6f014720fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29a83493884ffab11b10e8d48f051a45be1f1364
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516812"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892612"
 ---
 # <a name="update-a-group-setting"></a>Atualizar uma configuração de grupo
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de um objeto de configuração de grupo específico.
+Atualizar as propriedades de um objeto [groupSetting](../resources/groupsetting.md) para definições de [grupo](../resources/group.md) em todo o locatário ou uma configuração de grupo específico.
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
-Atualizar uma configuração específica de grupo ou de locatário como um todo.
+
 
 ```http
 PATCH /groupSettings/{id}
@@ -49,36 +49,43 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| values | coleção SettingValue | O conjunto atualizado de valores.  OBSERVAÇÃO: Você deve fornecer o conjunto inteiro. Você não pode atualizar um único conjunto de valores. |
+| values | coleção [SettingValue](../resources/settingvalue.md) | O conjunto de valores atualizado. Você deve incluir todo o conjunto de coleta. Não é possível atualizar um único conjunto de valores. |
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-update-a-tenant-wide-group-setting"></a>Exemplo 1: atualizar uma configuração de grupo em todo o locatário
+
+Neste exemplo, `{id}` é o identificador do objeto groupSetting de todo o locatário.
+
 #### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_groupsetting"
+  "name": "update_tenant_setting"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
 Content-type: application/json
-Content-length: 173
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
+    {
+      "name": "EnableMIPLabels",
+      "value": "false"
+    },
     {
       "name": "CustomBlockedWordsList",
       "value": ""
     },
     {
       "name": "EnableMSStandardBlockedWords",
-      "value": "False"
+      "value": "false"
     },
     {
       "name": "ClassificationDescriptions",
@@ -94,11 +101,11 @@ Content-length: 173
     },
     {
       "name": "AllowGuestsToBeGroupOwner",
-      "value": "False"
+      "value": "false"
     },
     {
       "name": "AllowGuestsToAccessGroups",
-      "value": "True"
+      "value": "true"
     },
     {
       "name": "GuestUsageGuidelinesUrl",
@@ -106,11 +113,11 @@ Content-length: 173
     },
     {
       "name": "GroupCreationAllowedGroupId",
-      "value": "62e90394-69f5-4237-9190-012177145e10"
+      "value": ""
     },
     {
       "name": "AllowToAddGuests",
-      "value": "True"
+      "value": "true"
     },
     {
       "name": "UsageGuidelinesUrl",
@@ -122,29 +129,47 @@ Content-length: 173
     },
     {
       "name": "EnableGroupCreation",
-      "value": "True"
+      "value": "true"
     }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Resposta
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="example-2-update-a-specific-group-setting"></a>Exemplo 2: atualizar uma configuração de grupo específico
 
----
+Neste exemplo, o primeiro `{id}` na solicitação é o identificador do grupo e o segundo `{id}` é o identificador do objeto groupSetting.
 
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "update_groupsetting"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
+Content-type: application/json
+
+{
+  "displayName": "GroupSettings",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "values": [
+    {
+            "name": "AllowToAddGuests",
+            "value": "false"
+    }
+  ]
+}
+```
 
 #### <a name="response"></a>Resposta
 

@@ -5,16 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: abdd62d526392998421efe0e44f89e9d44ec47a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c19ee6dddd426d523838f7557c13ceaed8ee111f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517247"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892643"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 
-Namespace: Microsoft. Graph adicione o grupo à lista de grupos favoritos do usuário atual. Suportado somente para grupos do Office 365.
+Namespace: microsoft.graph
+
+Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

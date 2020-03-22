@@ -5,16 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3584d432c2300f09c53ff7107c149e8651b24b4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87880e417af00695b3644fac87d47db5d91f8047
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517240"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892636"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
-Namespace: Microsoft. Graph Use essa API para remover um proprietário de um grupo do Office 365, um grupo de segurança ou um grupo de segurança habilitado para email por meio da propriedade de navegação owners.
+Namespace: microsoft.graph
+
+Use esta API para remover um proprietário de um grupo do Office 365, de um grupo de segurança ou de um grupo de segurança habilitado para email através da propriedade de navegação owners.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
