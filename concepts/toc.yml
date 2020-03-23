@@ -318,6 +318,10 @@ items:
             href: teams-protected-apis.md
           - name: Enviar mensagens proativas com um bot
             href: teams-proactive-messaging.md
+      - name: Impressão Universal
+        items:
+          - name: Visão geral
+            href: universal-print-concept-overview.md
       - name: Workbooks e gráficos
         displayName: Excel
         items:
