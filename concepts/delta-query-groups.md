@@ -4,12 +4,12 @@ description: A consulta delta permite que você consulte adições, exclusões o
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 32c4a6b88cecd858751c5732416577def407ab30
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 0f91b33218ad07d140b910e061bdf3a76d676573
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394597"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892657"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 
@@ -238,7 +238,7 @@ Alguns aspectos a observar sobre a resposta do exemplo acima:
 
 - `members@delta` contém todas as alterações de associação.
 
-  - O primeiro usuário da lista foi removido do grupo. Isso foi feito por meio da remoção da associação ou exclusão do objeto de usuário. A propriedade `@removed` descreve esse procedimento.
+  - O primeiro usuário da lista foi removido do grupo. Isso foi feito por meio da remoção da associação ou exclusão do objeto de usuário. A propriedade `@removed` descreve esse procedimento. Somente os usuários que tiverem sido excluídos permanentemente serão removidos dos grupos. Os usuários que foram excluídos temporariamente mantêm suas participações no grupo e não serão exibidos no resultado delta até que tenham sido excluídos permanentemente. Para obter mais detalhes, consulte [diretório (itens deletados)](/graph/api/resources/directory?view=graph-rest-1.0).
 
   - O segundo usuário foi adicionado ao grupo.
 

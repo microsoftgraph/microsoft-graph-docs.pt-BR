@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 54066ba22f34481bd213806909dc0f826d6860d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a5071120969394c0f60ff8cbb9632581375c369
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517191"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892811"
 ---
 # <a name="remove-member"></a>Remover membro
 
-Namespace: microsoft.graph Use essa API para remover um membro de um grupo por meio da propriedade de navegação **membros**.
+Namespace: microsoft.graph
+
+Use essa API para remover um membro de um grupo por meio **da** propriedade de navegação membros.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

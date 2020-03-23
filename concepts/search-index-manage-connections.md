@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f2d09cbd82a21874cf870c3214100115b225a1f
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 99f0ab4591caa6c311f2771f1c6a0772a8f16087
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704376"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892797"
 ---
 # <a name="create-update-and-delete-connections-to-the-microsoft-search-service"></a>Criar, atualizar e excluir conexões com o serviço da Pesquisa da Microsoft
 
@@ -25,9 +25,7 @@ Uma conexão permite que seu aplicativo [defina um esquema](/graph/api/externalc
 Antes que um aplicativo possa adicionar itens ao índice de pesquisa, ele deve criar e configurar uma conexão usando as etapas a seguir.
 
 - [Criar uma conexão](/graph/api/external-post-connections?view=graph-rest-beta) com ID exclusiva, nome de exibição e descrição.
-- [Registrar um esquema](/graph/api/externalconnection-post-schema?view=graph-rest-beta).
-  - Para itens personalizados (como tíquetes de assistência técnica ou entradas de banco de dados de inventário etc.), defina os campos que serão incluídos no índice.
-  - Para arquivos externos, especifique o tipo `microsoft.graph.externalFile`.
+- [Registre um esquema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) para definir os campos que serão incluídos no índice.
 
 > [!IMPORTANT]
 > Depois que um esquema é registrado, ele não pode ser alterado para uma conexão existente.
@@ -43,6 +41,6 @@ Você pode [excluir uma conexão](/graph/api/externalconnection-delete?view=grap
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Por que usar a API de Pesquisa da Microsoft?](search-concept-overview.md#why-use-the-microsoft-search-api)
-- [Usar a API de Pesquisa da Microsoft para indexar dados](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Examine a referência da API de indexação](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 - [Visão geral dos conectores do Microsoft Graph](/microsoftsearch/connectors-overview)
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub

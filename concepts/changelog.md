@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 626dd1072e1bd6035a099dabb0c489de2e5dfc7b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 880a9ac89dda073ac31b0f6ae12c1dbb3bef0e41
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815989"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892664"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,21 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="march-2020"></a>Março de 2020
+
+### <a name="calendar"></a>Calendário
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | Beta | Adicionada a propriedade **calendarGroupId** à entidade [calendário](/graph/api/resources/calendar?view=graph-rest-beta). |
+| Adição | Beta | Adicionada a propriedade **isDraft** à entidade [evento](/graph/api/resources/event?view=graph-rest-beta). |
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
+|Adição|beta|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call.md).|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -50,27 +65,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a propriedade **deliveryOptimizationPriority** ao tipo complexo [win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **deviceOsHigherThanDesiredOsVersion** ao tipo de enumeração [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta)|
 
-### <a name="calendar"></a>Calendário
-
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
-|:----------------|:------------|:-----------------------------------------|
-| Adição | Beta | Adicionada a propriedade **calendarGroupId** à entidade [calendário](/graph/api/resources/calendar?view=graph-rest-beta). |
-| Adição | Beta | Adicionada a propriedade **isDraft** à entidade [evento](/graph/api/resources/event?view=graph-rest-beta). |
-
-### <a name="cloud-communications"></a>Comunicações na nuvem
-
-| **Tipo de alteração** | **Versão** | **Descrição** |
-|:---|:---|:---|
-|Adição|beta|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
-|Adição|beta|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call.md).|
-|Adição|beta|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
-
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
 | Adição | v1.0 | Adicionada a permissão de novo usuário [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 | Adição | beta | Adicionada a permissão de aplicativo PrivilegedAccess.Read.AzureResources de [Privileged Identity Management - recursos do Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
+| Adição | beta | A permissão [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) foi adicionada para listar a atividade de entrada de um usuário.|
+| Adição | beta | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), que representa a política de padrões de segurança do Azure Active Directory.|
 
 ### <a name="reports--office-365-usage-reports"></a>Relatórios | Relatórios de uso do Office 365
 
@@ -78,11 +80,47 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |:----------------|:------------|:-----------------------------------------|
 | Alteração          | Beta e v1.0  | Para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso do serviço do Office 365 em nome de um usuário, as funções de usuário Administrador de Serviço do Teams e Administrador de Comunicações do Teams foram adicionadas como aceitas. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](reportroot-authorization.md).|
 
+### <a name="search"></a>Pesquisar
+
+| Tipo de alteração | Versão | Descrição                                                                                                                                               |
+|-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Alteração      | beta    | O recurso [externalfile](/graph/api/resources/externalfile?view=graph-rest-beta) foi substituído.                                                  |
+| Alteração      | beta    | O recurso [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) já oferece suporte às propriedades de **conteúdo** e **propriedades**.      |
+| Alteração      | beta    | As operações nos recursos [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) já retornam um cabeçalho quando são reguladas. |
+
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta | Foi adicionado o suporte de ChannelMessage.Read.All para APIs para ler [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) nos canais. |
+
+### <a name="universal-print"></a>Impressão universal
+
+Foram adicionadas novas APIs e recursos para gerenciar e imprimir em impressoras usando o serviço Impressão universal.
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:---|:---|:---|
+| Adição | beta | A entidade [archivedPrintJob](/graph/api/resources/archivedprintjob) foi adicionada.|
+| Adição | beta | O tipo de complexo [deviceHealth](/graph/api/resources/devicehealth) foi adicionado.|
+| Adição | beta | O tipo de complexo [integerRange](/graph/api/resources/integerrange) foi adicionado.|
+| Adição | beta | A entidade [print](/graph/api/resources/print) foi adicionada.|
+| Adição | beta | A entidade [printConnector](/graph/api/resources/printconnector) foi adicionada.|
+| Adição | beta | A entidade [printDocument](/graph/api/resources/printdocument) foi adicionada.|
+| Adição | beta | A entidade [printer](/graph/api/resources/printer) foi adicionada.|
+| Adição | beta | O tipo de complexo [printerCapabilities](/graph/api/resources/printercapabilities) foi adicionado.|
+| Adição | beta | O tipo de complexo [printerDefaults](/graph/api/resources/printerdefaults) foi adicionado.|
+| Adição | beta | O tipo de complexo [printerDocumentConfiguration](/graph/api/resources/printerdocumentconfiguration) foi adicionado.|
+| Adição | beta | O tipo de complexo [printerLocation](/graph/api/resources/printerlocation) foi adicionado.|
+| Adição | beta | A entidade [printerShare](/graph/api/resources/printershare) foi adicionada.|
+| Adição | beta | O tipo de complexo [printerStatus](/graph/api/resources/printerstatus) foi adicionado.|
+| Adição | beta | A entidade [printJob](/graph/api/resources/printJob) foi adicionada.|
+| Adição | beta | O tipo de complexo [printJobStatus](/graph/api/resources/printjobstatus) foi adicionado.|
+| Adição | beta | O tipo de complexo [printPageRange](/graph/api/resources/printpagerange) foi adicionado.|
+| Adição | beta | A entidade [printService](/graph/api/resources/printpagerange) foi adicionada.|
+| Adição | beta | A entidade [printServiceEndpoint](/graph/api/resources/printserviceendpoint) foi adicionada.|
+| Adição | beta | O tipo de complexo [printerSettings](/graph/api/resources/printsettings) foi adicionado.|
+| Adição | beta | A entidade [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) foi adicionada.|
+| Adição | beta | A entidade [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) foi adicionada.|
 
 ## <a name="february-2020"></a>Fevereiro de 2020
 
@@ -146,7 +184,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
-| Adição | Beta e v1.0 | A propriedade **latestSupportedTlsVersion** foi adicionada à entidade da [assinatura](/graph/api/resources/subscription?view=graph-rest-1.0). Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Para obter detalhes, confira [Assinaturas do Microsoft Graph que substituíram o TLS 1.0 e o 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). 
+| Adição | Beta e v1.0 | A propriedade **latestSupportedTlsVersion** foi adicionada à entidade da [assinatura](/graph/api/resources/subscription?view=graph-rest-1.0). Especifica a versão mais recente do TLS que o ponto de extremidade de notificação tem suporte. Permite que os assinantes usem uma versão preterida do TLS por um período limitado. Para obter detalhes, confira [Assinaturas do Microsoft Graph que substituíram o TLS 1.0 e o 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/).
 | Alteração | beta |Conjunto de políticas existentes atualizado com um segmento de [políticas](/graph/api/resources/policy-overview?view=graph-rest-beta) de URL. Os recursos de política digitados agora estão agrupados no segmento de políticas conforme descrito em [postagem no blog](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). Esta atualização adiciona quatro recursos de política digitados: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>e [homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta)  </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
 | Adição | beta | Adicionado [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) o tipo de recurso que controla a saída automática para sessões da web após um período de inatividade, para aplicativos que suportam a funcionalidade de tempo limite baseado em atividade.|
 | Adição | beta |O tipo de recurso [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) controla o mapeamento de declarações para os protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect, para tokens emitidos para um aplicativo específico.|
@@ -222,7 +260,7 @@ Novas APIs e recursos adicionados à assinatura e à recuperação de registros 
 | Alteração | Beta e v1.0 | O método [Atualizar alerta](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) agora atualiza o campo **comentários** apenas com os seguintes valores: <br/> `Closed in IPC`, `Closed in MCAS`.|
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
- 
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição | v1.0 | A propriedade de navegação **primaryChannel** foi adicionada ao tipo de recurso de equipe.|
@@ -250,8 +288,8 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 |Adição|beta|Adicionado o recurso de [presença](/graph/api/resources/presence?view=graph-rest-beta) e métodos associados e as permissões Presence.Read e Presence.Read.All foram introduzidos.|
 |Adição|v1.0|Adicionadas as seguintes APIs: [criar chamada](/graph/api/application-post-calls?view=graph-rest-1.0), [atender chamada](/graph/api/call-answer?view=graph-rest-1.0), [rejeitar chamada](/graph/api/call-reject?view=graph-rest-1.0), [obter chamada](/graph/api/call-get?view=graph-rest-1.0), [excluir chamada](/graph/api/call-delete?view=graph-rest-1.0), [ignorar chamada](/graph/api/call-mute?view=graph-rest-1.0), [ativar / desativar som](/graph/api/call-unmute?view=graph-rest-1.0), [função de compartilhamento de tela de alteração de chamada](/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [transferência de chamada](/graph/api/call-transfer?view=graph-rest-1.0), [redirecionamento de chamada](/graph/api/call-redirect?view=graph-rest-1.0), [reproduzir um prompt](/graph/api/call-playprompt?view=graph-rest-1.0), [gravar resposta](/graph/api/call-recordresponse?view=graph-rest-1.0), [inscrever-se em tne](/graph/api/call-subscribetotone?view=graph-rest-1.0), [listar participantes](/graph/api/call-list-participants?view=graph-rest-1.0), [convidar participantes](/graph/api/participant-invite?view=graph-rest-1.0), [obter participantes](/graph/api/participant-get?view=graph-rest-1.0), [silenciar participantes](/graph/api/participant-mute?view=graph-rest-1.0), [criar reunião online](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [obter reunião online](/graph/api/onlinemeeting-get?view=graph-rest-1.0) e [ligar keep alive](/graph/api/call-keepalive?view=graph-rest-1.0).|
 |Adição|v1.0|Os recursos a seguir foram adicionados: [chamada](/graph/api/resouces/call?view=graph-rest-1.0), [participante](/graph/api/resouces/participant?view=graph-rest-1.0) e [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0).|
-| Alteração        | Beta        | Registro de API IVR renomeado para [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
-| Alteração        | Beta        | Removidas as propriedades de objeto [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) **isCanceled**, **canceledDateTime**, e**entryExitAnnouncement**. Propriedade renomeada **joinUrl**para **joinWebUrl**. | 
+| Alteração        | Beta        | Registro de API IVR renomeado para [recordResponse](/graph/api/call-record?view=graph-rest-beta). |
+| Alteração        | Beta        | Removidas as propriedades de objeto [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) **isCanceled**, **canceledDateTime**, e**entryExitAnnouncement**. Propriedade renomeada **joinUrl**para **joinWebUrl**. |
 | Adição        | Beta & v 1.0       | Adicionada a operação[delete onlineMeeting](/graph/api/onlinemeeting-delete.md).|
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
@@ -347,7 +385,7 @@ Introduziu a versão 1,1 do Microsoft Graph Toolkit.
 | Alteração          | Beta e v1.0  | Para as permissões delegadas permitirem que aplicativos leiam relatórios de uso de serviço do Office 365 em nome de um usuário, o administrador de locatários deve atribuir ao usuário uma função de administrador limitada do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](reportroot-authorization.md).|
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
- 
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta | Foram adicionadas[ notificações](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) para mensagens de canal novas e editadas e mensagens de chat novas e editadas. |
@@ -591,9 +629,9 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Adição | Beta | Foram adicionadas novas entidades: <br/>[authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail?view=graph-rest-beta)|
+| Adição | Beta | Foram adicionadas novas entidades: <br/>[authenticationDetail](/graph/api/resources/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/resources/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/resources/networkLocationDetail?view=graph-rest-beta)|
 | Adição | Beta | Foram adicionadas as propriedades **alternateSignInName**, **ServicePrincipalId**, **ServicePrincipalName** e **authenticationProcessingDetails** ao recurso [signIn](/graph/api/resources/signin?view=graph-rest-beta). |
-| Exclusão | Beta | A referência a [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) foi movida de [signIn](/graph/api/resources/signin?view=graph-rest-beta) para [authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta). |
+| Exclusão | Beta | A referência a [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) foi movida de [signIn](/graph/api/resources/signin?view=graph-rest-beta) para [authenticationDetail](/graph/api/resources/authenticationDetail?view=graph-rest-beta). |
 | Adição | Beta | A propriedade **signInActivity** foi adicionada ao recurso [user](/graph/api/resources/user?view=graph-rest-beta). |
 | Adição | Beta | Adicionado um novo tipo de entidade: [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
 | Adição | Beta | Foi adicionado um novo tipo de entidade: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
@@ -659,9 +697,9 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição      | Beta          |A API de [Criar e enviar notificações](/graph/api/user-post-notifications?view=graph-rest-beta) foi adicionada para habilitar o direcionamento de usuários sem o gerenciamento de tokens "em nome de". |
+| Adição    | Beta      |A API de [Criar e enviar notificações](/graph/api/user-post-notifications?view=graph-rest-beta) foi adicionada para habilitar o direcionamento de usuários sem o gerenciamento de tokens "em nome de". |
 | Adição        | Beta          | A propriedade **targetPolicy** foi introduzida no recurso [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) para permitir que pontos de extremidade da Web sejam direcionados por push da Web. |
-| Adição      | Beta          |  A propriedade **fallbackPolicy** foi adicionada ao recurso [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) para habilitar a entrega garantida no iOS para notificações de alta prioridade. |
+| Adição    | Beta      |  A propriedade **fallbackPolicy** foi adicionada ao recurso [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) para habilitar a entrega garantida no iOS para notificações de alta prioridade. |
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
