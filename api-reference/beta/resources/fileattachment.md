@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: c77f5294a191b827673e52ee60c132713b16e490
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e14b98c5ee3302d5b19bc7ad92187112b6d8c80b
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498298"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926796"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um arquivo (como um arquivo de texto ou documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md)do usuário. A propriedade **contentBytes** contém os conteúdos com codificação base64 do arquivo.  
+Um arquivo (como um arquivo de texto ou documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md)do usuário. 
 
 Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 
@@ -26,6 +26,9 @@ Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 * As propriedades **name** e **contentBytes** necessárias.
 
 Derivado de [attachment](attachment.md).
+
+> [!NOTE]
+> Certifique-se de codificar o conteúdo do arquivo na base64 antes de atribuí-lo ao **contentbytes necessárias**.
 
 ## <a name="methods"></a>Métodos
 

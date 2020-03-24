@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7716697d6dd5cdb852c0851c301dba00b28f3fe8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca9d0e6a6dd4d02b48c205f69e4f4985571b4914
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437956"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926747"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Atualizar conditionalAccessPolicy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
+
+> [!NOTE]
+> Essa API tem um [problema conhecido](/graph/known-issues#permissions) relacionado às permissões.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0ef5ff461f906da6c9480f7f44ba73a870ebfe48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1666b6074700fb8fbbd52c7655581f8bf98d102
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508482"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926843"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso accessReview
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessReview` o representa uma revisão do Access.  
+Representa uma análise do Azure AD [Access](accessreviews-root.md).  
 
 
 ## <a name="methods"></a>Métodos
@@ -57,7 +57,7 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , `accessRev
 
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 
 
@@ -108,9 +108,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 
-## <a name="the-accessreviewsettings-type"></a>O tipo accessReviewSettings
+## <a name="accessreviewsettings-resource-type"></a>tipo de recurso accessReviewSettings
 
-O `accessReviewSettings` fornece configurações adicionais ao criar uma revisão do Access, para controlar o comportamento do recurso ao iniciar uma revisão do Access.  Este tipo tem as seguintes propriedades: 
+O tipo de recurso **accessReviewSettings** fornece configurações adicionais ao criar uma revisão do Access, para controlar o comportamento do recurso ao iniciar uma revisão do Access. Este tipo tem as propriedades a seguir. 
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
@@ -124,18 +124,18 @@ O `accessReviewSettings` fornece configurações adicionais ao criar uma revisã
 | `autoApplyReviewResultsEnabled`|`Boolean` | Sinalizador para indicar se a capacidade de aplicação automática, para alterar automaticamente o recurso de acesso ao objeto de destino, está habilitada.  Se não habilitado, um usuário deve, após a conclusão da revisão, aplicar a revisão do Access. |
 | `accessRecommendationsEnabled`|`Boolean` | Sinalizador para indicar se a exibição de recomendações para revisores está habilitada. |
 
-## <a name="the-autoreviewsettings-type"></a>O tipo autoReviewSettings
+## <a name="autoreviewsettings-resource-type"></a>tipo de recurso autoReviewSettings
 
-O `autoReviewSettings` é inserido nas configurações de análise do Access e especifica o comportamento do recurso quando uma revisão do Access é concluída.  O tipo tem uma propriedade, `notReviewedResult`.
+O tipo de recurso **autoReviewSettings** é incorporado nas configurações de revisão do Access e, juntamente com o **autoReviewEnabled**, especifica o comportamento do recurso quando uma revisão do Access é concluída. O recurso tem uma propriedade, **notReviewedResult**. Se você não quiser ter uma decisão de revisão registrada, a menos que o revisor faça uma escolha explícita, defina **autoReviewEnabled** como false. Se você deseja que o sistema ofereça uma decisão mesmo se o revisor não fizer uma escolha, defina **autoReviewEnabled** como `true` e inclua **autoReviewSettings** com a propriedade **notReviewedResult** . Depois, quando uma revisão for concluída, com base na propriedade **notReviewedResult** , a decisão será registrada em um `Approve` ou `Deny`no.   
 
 | Propriedade                     | Tipo     | Descrição                          |
 | :--------------------------- | :------  | :----------                          |
-| `notReviewedResult`          |`String`  | Deve ser `Approve`, `Deny` ou `Recommendation`. |
+| `notReviewedResult`          |`String`  | Deve ser `Approve`, `Deny` ou `Recommendation`.  Se `Recommendation`, `accessRecommendationsEnabled` nas configurações também deverá ser definido como true. |
 
 
-## <a name="the-accessreviewrecurrencesettings-type"></a>O tipo accessReviewRecurrenceSettings
+## <a name="accessreviewrecurrencesettings-resource-type"></a>tipo de recurso accessReviewRecurrenceSettings
 
-O `accessReviewRecurrenceSettings` está incorporado nas configurações de revisão do Access e especifica que a revisão do acesso se repete em intervalos regulares.  Este tipo tem as seguintes propriedades:
+O tipo de recurso **accessReviewRecurrenceSettings** é incorporado nas configurações de revisão do Access e especifica que a revisão do Access se repete em intervalos regulares.  Este tipo tem as propriedades a seguir.
 
 | Propriedade                     | Tipo                                                                                                          | Descrição |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 93e3f45cc52af1e6e4c72be0d22a5bfcef376c5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c914c5921548d6fa297ce0b859f1c7c85c0f07cb
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454882"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926789"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,11 +40,13 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao seguinte parâmetro de consulta OData para ajudar a personalizar a resposta. Observe que os filtros são diferenciados entre maiúsculas e minúsculas, exceto o status. 
+Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Observe que os filtros são diferenciados entre maiúsculas e minúsculas, exceto o status. 
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filtra os resultados (linhas). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/provisioning?$top=20`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. Você deve passar o filtro superior na consulta para gerar o token. Você não pode especificar o número de resultados a serem ignorados.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query_parameters).
 
