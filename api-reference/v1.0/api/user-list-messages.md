@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 67e201d14cdae4ada4ccca8160822ace5793c099
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc5664b2fc71ed6fad75ca94f01281bb15f69e5
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509056"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892629"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -28,6 +28,8 @@ Existem dois cenários em que um aplicativo pode receber mensagens na pasta de e
 
 * Se o aplicativo tiver permissões de aplicativo ou
 * Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+
+> **Observação** Lembre-se da [questão conhecida](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) essa operação inclui mensagens de chat do Microsoft Teams em sua resposta.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
