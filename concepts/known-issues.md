@@ -3,96 +3,16 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 09a53d4103436eab8314c19420ecb9b15cd981a5
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: a76dc8ee7b7253a792d7722a9f8455f40581c023
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619094"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926670"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
 Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no [Log de alterações do Microsoft Graph](changelog.md).
-
-## <a name="users"></a>Usuários
-
-### <a name="no-instant-access-after-creation"></a>Sem acesso instantâneo após a criação
-
-Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Office 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Office 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
-
-### <a name="photo-restrictions"></a>Restrições de foto
-
-A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando a visualização da API unificada do Office 365, o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis com a propriedade **photo** do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) do Microsoft Graph. A falha na leitura ou na atualização de uma foto, nesse caso, resultaria no seguinte erro:
-
-```javascript
-    {
-      "error": {
-        "code": "ErrorNonExistentMailbox",
-        "message": "The SMTP address has no mailbox associated with it."
-      }
-    }
-```
-
-### <a name="using-delta-query"></a>Uso da consulta delta
-
-Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
-
-### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>A revogação de sessões de entrada retorna um código HTTP errado
-
-O [usuário: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) deve retornar uma resposta `204 No content` para ter revogações bem-sucedidas e um código de erro HTTP (4xx ou 5xx) se algo der errado com a solicitação.  No entanto, devido a um problema de serviço, essa API retorna um parâmetro `200 OK` e um parâmetro booleano que é sempre true.  Até que isso seja corrigido, é recomendado que desenvolvedores simplesmente tratem qualquer código de retorno 2xx como bem-sucedido para esta API.
-
-### <a name="incomplete-objects-when-using-getbyids-request"></a>Objetos incompletos ao usar a solicitação getByIds
-
-A solicitação de objetos usando a opção de [Obter objetos de diretório de uma lista de IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) deve retornar objetos completos. No entanto, atualmente, os objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) no ponto de extremidade v1.0 são retornados com um conjunto limitado de propriedades. Como solução temporária, ao usar a operação em combinação com a opção de consulta `$select`, objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) mais completos serão retornados. Esse comportamento não está de acordo com as especificações do OData. Como esse comportamento pode ser atualizado no futuro, use esta solução alternativa apenas quando fornecer `$select=` com todas as propriedades de seu interesse e somente se futuras alterações nessa solução alternativa forem aceitáveis.
-
-## <a name="microsoft-teams"></a>Microsoft Teams
-
-### <a name="get-teams-and-post-teams-are-not-supported"></a>Não há suporte para GET /teams e POST /teams
-
-Confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0) para obter uma lista de equipes.
-Confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0) para criar equipes.
-
-### <a name="missing-teams-in-list-all-teams"></a>Equipes ausentes em listas todas as equipes
-
-Algumas equipes que foram criadas no passado mas não foram usadas recentemente por um usuário do Microsoft Teams não são listadas por [listar todas as equipes](teams-list-all-teams.md).
-Novas equipes serão listadas.
-Algumas equipes antigas não têm uma propriedade **resourceProvisioningOptions** que contém “Equipe”, que é configurada em equipes recém-criadas e equipes que são visitadas no Microsoft Teams.
-No futuro, vamos configurar **resourceProvisioningOptions** em equipes existentes que não foram abertas no Microsoft Teams.
-
-## <a name="groups"></a>Grupos
-
-### <a name="permissions-for-groups-and-microsoft-teams"></a>Permissões para grupos e Microsoft Teams
-
-O Microsoft Graph expõe duas permissões ([*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para obter acesso a APIs de grupos e Microsoft Teams.
-As permissões do aplicativo devem ser consentidas por um administrador.
-No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
-
-Além disso, somente a API para administração de grupo principal e gerenciamento suporta acesso usando permissões delegadas ou somente para aplicativos. Todos os outros recursos da API do grupo dão suporte apenas a permissões delegadas.
-
-Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e somente para aplicativos:
-
-* Criar e excluir grupos
-* Obter e atualizar propriedades do grupo pertencentes ao gerenciamento ou administração de grupo
-* [Definições do diretório](/graph/api/resources/directoryobject?view=graph-rest-1.0), tipo e sincronização do grupo
-* Membros e proprietários de grupo
-
-Exemplos de recursos de grupo que oferecem suporte somente a permissões delegadas:
-
-* Conversas, eventos e foto de grupo
-* Remetentes externos, remetentes aceitos ou rejeitados e assinatura de grupo
-* Favoritos do usuário e contagem de não vistos
-
-### <a name="policy"></a>Política
-
-O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App.
-
-### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
-
-Atualmente, há um problema que impede a configuração da propriedade **allowExternalSenders** de um grupo em uma operação de POST ou PATCH no `/v1.0` e no `/beta`.
-
-### <a name="using-delta-query"></a>Uso da consulta delta
-
-Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
 
 ## <a name="bookings"></a>Reservas
 
@@ -115,8 +35,6 @@ Como alternativa, você pode limitar o conjunto de empresas retornadas pela soli
 ```
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
-
-
 ## <a name="calendars"></a>Calendários
 
 ### <a name="accessing-a-shared-calendar"></a>Acessar um calendário compartilhado
@@ -168,6 +86,36 @@ A versão beta oferece uma solução alternativa, na qual é possível usar a pr
 
 O cliente do Microsoft Teams não mostra o menu **Exibir detalhes da Reunião** para reuniões de canal criadas por meio da API de comunicações na nuvem.
 
+## <a name="cloud-solution-provider-apps"></a>Aplicativos de Provedor de Soluções na Nuvem
+
+### <a name="csp-apps-must-use-azure-ad-endpoint"></a>Os aplicativos CSP devem usar o ponto de extremidade do Azure AD
+
+Aplicativos de provedor de solução de nuvem (CSP) devem adquirir tokens de pontos de extremidade do Azure AD (v1) para chamar a Microsoft Graph com êxito em seus clientes gerenciados por parceiros. Atualmente, não há suporte para aquisição de um token pelo ponto de extremidade Azure AD v 2.0 mais recente.
+
+### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>A pré-autorização para aplicativos CSP não funciona em alguns locatários do cliente
+
+Sob certas circunstâncias, o pré-consentimento para aplicativos CSP pode não funcionar para alguns de seus locatários de clientes.
+
+- Para aplicativos que usam permissões delegadas, ao usar o aplicativo pela primeira vez com um novo locatário do cliente, você poderá receber esse erro após o logon: `AADSTS50000: There was an error issuing a token`.
+- Para aplicativos que usam permissões de aplicativos, seu aplicativo pode adquirir um token, mas inesperadamente receber uma mensagem de acesso negado ao chamar o Microsoft Graph.
+
+Estamos trabalhando para corrigir esse problema o mais rápido possível, de modo que a pré-autorização funcionará para todos os seus locatários de clientes.
+
+Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a seguinte solução alternativa.
+
+>**OBSERVAÇÃO:** esta não é uma solução permanente e destina-se apenas a desbloquear o desenvolvimento.  Esta solução alternativa não será necessária uma vez que a questão acima mencionada seja corrigida.  Esta solução alternativa não precisa ser desfeita após a correção.
+
+1. Abra uma sessão do Azure AD v2 PowerShell e conecte-se ao locatário do parceiro `customer`digitando suas credenciais de administrador na janela de entrada. Você pode baixar e instalar o Azure AD PowerShell V2 [aqui](https://www.powershellgallery.com/packages/AzureAD).
+
+    ```PowerShell
+    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
+    ```
+
+2. Crie o servicePrincipal do Microsoft Graph.
+
+    ```PowerShell
+    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
+    ```
 ## <a name="contacts"></a>Contatos
 
 ### <a name="organization-contacts-available-in-only-beta"></a>Contatos de organização disponíveis somente na versão beta
@@ -214,70 +162,11 @@ Como alternativa, você pode simplesmente [obter](/graph/api/contact-get?view=gr
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-
-## <a name="messages"></a>Mensagens
-
-### <a name="attaching-large-files-to-messages"></a>Anexando grandes arquivos a mensagens
-Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) só é bem sucedida se a mensagem estiver na caixa de correio do usuário conectado.
-
-### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
-
-O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](/graph/api/message-createreply?view=graph-rest-1.0), [createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0), [createForward](/graph/api/message-createforward?view=graph-rest-1.0)) não se torna parte do corpo do rascunho de mensagem resultante.
-
-### <a name="get-messages-returns-chats-in-microsoft-teams"></a>As mensagens GET retornam chats no Microsoft Teams
-
-Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclui chats do usuário no Microsoft Teams que ocorreu fora do escopo de uma equipe ou de um canal. Essas mensagens de chat tem "IM" como o assunto.
-
-
-## <a name="drives-files-and-content-streaming"></a>Unidades, arquivos e streaming de conteúdo
-
-* O acesso pela primeira vez a uma unidade pessoal de um usuário pelo Microsoft Graph antes que ele acesse seu site pessoal por um navegador resulta em uma resposta 401.
-
-## <a name="query-parameter-limitations"></a>Limitações de parâmetro de consulta
-
-* Não há suporte para vários namespaces.
-* Não há suporte para GETs em `$ref` e conversão em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
-* `@odata.bind` não é compatível. Isso significa que os desenvolvedores não poderão definir corretamente a propriedade de navegação **acceptedSenders** ou **rejectedSenders** em um grupo.
-* `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos.
-* `$expand`:
-  * Não há suporte para `nextLink`
-  * Não há suporte para mais de um nível de expansão
-  * Não há suporte com parâmetros adicionais (`$filter`, `$select`)
-* `$filter`:
-  * Não há suporte para filtros no ponto de extremidade `/attachments`. Se presente, o parâmetro `$filter` é ignorado.
-  * Não há suporte para filtragem de carga de trabalho cruzada.
-* `$search`:
-  * A pesquisa de texto completo só está disponível para um subconjunto de entidades, como mensagens.
-  * Não há suporte para pesquisa de carga de trabalho cruzada.
-
 ## <a name="delta-query"></a>Consulta delta
 
 * O contexto de OData às vezes é retornado incorretamente ao controlar alterações nas relações.
 * As extensões de esquema (herdadas) não são retornadas com instrução $select, mas são retornadas sem $select.
 * Os clientes não podem controlar alterações em extensões abertas ou extensões de esquema.
-
-## <a name="application-and-serviceprincipal-api-changes"></a>Alterações do aplicativo e da API servicePrincipal
-
-Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
-
-Limitações atuais:
-
-* Algumas propriedades do aplicativo (como appRoles e addIns) não estarão disponíveis até que todas as alterações sejam concluídas.
-* Somente aplicativos multilocatários podem ser registrados.
-* Atualizar aplicativos é restrito aos aplicativos registrados após a atualização inicial beta.
-* Usuários do Azure Active Directory podem registrar aplicativos e adicionar proprietários adicionais.
-* Suporte para protocolos OpenID Connect e OAuth.
-* Atribuições de política para uma falha de aplicativo.
-* Falha em operações em ownedObjects que exigem appId (por exemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
-
-Em desenvolvimento:
-
-* Capacidade de registrar aplicativos de um único locatário.
-* Atualizações para o servicePrincipal.
-* Migração de aplicativos Azure AD existentes para um modelo atualizado.
-* Suporte para appRoles, clientes pré-autorizados, reivindicações opcionais, reivindicações de associação de grupo e identidade visual.
-* Os usuários de conta Microsoft (MSA) podem registrar aplicativos.
-* Suporte para protocolos SAML e WsFed.
 
 ## <a name="extensions"></a>Extensões
 
@@ -301,6 +190,74 @@ Recursos de diretório, como **dispositivo**, **grupo** e **usuário**, atualmen
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Não há suporte a filtragem em propriedades de extensão de esquema em todos os tipos de entidade
 
 Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contato**, **evento**, **mensagem** ou **postagem**.
+
+## <a name="files-onedrive"></a>Arquivos (OneDrive)
+
+* O primeiro acesso a uma unidade pessoal de um usuário pelo Microsoft Graph antes que ele acesse o próprio site pessoal por um navegador resulta em uma resposta 401.
+
+## <a name="groups"></a>Grupos
+
+### <a name="permissions-for-groups-and-microsoft-teams"></a>Permissões para grupos e Microsoft Teams
+
+O Microsoft Graph expõe duas permissões ([*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para obter acesso a APIs de grupos e Microsoft Teams.
+As permissões do aplicativo devem ser consentidas por um administrador.
+No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
+
+Além disso, somente a API para administração de grupo principal e gerenciamento suporta acesso usando permissões delegadas ou somente para aplicativos. Todos os outros recursos da API do grupo dão suporte apenas a permissões delegadas.
+
+Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e somente para aplicativos:
+
+* Criar e excluir grupos
+* Obter e atualizar propriedades do grupo pertencentes ao gerenciamento ou administração de grupo
+* [Definições do diretório](/graph/api/resources/directoryobject?view=graph-rest-1.0), tipo e sincronização do grupo
+* Membros e proprietários de grupo
+
+Exemplos de recursos de grupo que oferecem suporte somente a permissões delegadas:
+
+* Conversas, eventos e foto de grupo
+* Remetentes externos, remetentes aceitos ou rejeitados e assinatura de grupo
+* Favoritos do usuário e contagem de não vistos
+
+### <a name="policy"></a>Política
+
+O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App.
+
+### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
+
+Atualmente, há um problema que impede a configuração da propriedade **allowExternalSenders** de um grupo em uma operação de POST ou PATCH no `/v1.0` e no `/beta`.
+
+### <a name="using-delta-query"></a>Uso da consulta delta
+
+Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
+
+## <a name="identity-and-access--application-and-service-principal-apis"></a>Identidade e acesso | APIs da entidade de serviço e aplicativo
+
+Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
+
+Limitações atuais:
+
+* Algumas propriedades do aplicativo (como appRoles e addIns) não estarão disponíveis até que todas as alterações sejam concluídas.
+* Somente aplicativos multilocatários podem ser registrados.
+* Atualizar aplicativos é restrito aos aplicativos registrados após a atualização inicial beta.
+* Usuários do Azure Active Directory podem registrar aplicativos e adicionar proprietários adicionais.
+* Suporte para protocolos OpenID Connect e OAuth.
+* Atribuições de política para uma falha de aplicativo.
+* Falha em operações em ownedObjects que exigem appId (por exemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+Em desenvolvimento:
+
+* Capacidade de registrar aplicativos de um único locatário.
+* Atualizações para o servicePrincipal.
+* Migração de aplicativos Azure AD existentes para um modelo atualizado.
+* Suporte para appRoles, clientes pré-autorizados, reivindicações opcionais, reivindicações de associação de grupo e identidade visual.
+* Os usuários de conta Microsoft (MSA) podem registrar aplicativos.
+* Suporte para protocolos SAML e WsFed.
+
+## <a name="identity-and-access--conditional-access"></a>Identidade e acesso | Acesso condicional
+
+### <a name="permissions"></a>Permissões
+
+Atualmente, a permissão Policy.Read.All é necessária para chamar as APIs POST e PATCH. No futuro, a permissão Policy.ReadWrite.ConditionalAccess possibilitará que você leia as políticas do diretório.
 
 ## <a name="json-batching"></a>Envio em lote JSON
 
@@ -334,38 +291,82 @@ Solicitações individuais podem depender de outras solicitações individuais. 
 
 Conforme o processamento em lotes JSON amadurece, essas limitações são removidas.
 
-## <a name="cloud-solution-provider-apps"></a>Aplicativos de Provedor de Soluções na Nuvem
+## <a name="mail-outlook"></a>Email (Outlook)
 
-### <a name="csp-apps-must-use-azure-ad-endpoint"></a>Os aplicativos CSP devem usar o ponto de extremidade do Azure AD
+### <a name="attaching-large-files-to-messages"></a>Anexando grandes arquivos a mensagens
+Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) só é bem sucedida se a mensagem estiver na caixa de correio do usuário conectado.
 
-Aplicativos de provedor de solução de nuvem (CSP) devem adquirir tokens de pontos de extremidade do Azure AD (v1) para chamar a Microsoft Graph com êxito em seus clientes gerenciados por parceiros. Atualmente, não há suporte para aquisição de um token pelo ponto de extremidade Azure AD v 2.0 mais recente.
+### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
 
-### <a name="pre-consent-for-csp-apps-doesnt-work-in-some-customer-tenants"></a>A pré-autorização para aplicativos CSP não funciona em alguns locatários do cliente
+O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](/graph/api/message-createreply?view=graph-rest-1.0), [createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0), [createForward](/graph/api/message-createforward?view=graph-rest-1.0)) não se torna parte do corpo do rascunho de mensagem resultante.
 
-Sob certas circunstâncias, o pré-consentimento para aplicativos CSP pode não funcionar para alguns de seus locatários de clientes.
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>As mensagens GET retornam chats no Microsoft Teams
 
-- Para aplicativos que usam permissões delegadas, ao usar o aplicativo pela primeira vez com um novo locatário do cliente, você poderá receber esse erro após o logon: `AADSTS50000: There was an error issuing a token`.
-- Para aplicativos que usam permissões de aplicativos, seu aplicativo pode adquirir um token, mas inesperadamente receber uma mensagem de acesso negado ao chamar o Microsoft Graph.
+Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclui chats do usuário no Microsoft Teams que ocorreu fora do escopo de uma equipe ou de um canal. Essas mensagens de chat tem "IM" como o assunto.
 
-Estamos trabalhando para corrigir esse problema o mais rápido possível, de modo que a pré-autorização funcionará para todos os seus locatários de clientes.
+## <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
-Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a seguinte solução alternativa.
+### <a name="get-teams-and-post-teams-are-not-supported"></a>Não há suporte para GET /teams e POST /teams
 
->**OBSERVAÇÃO:** esta não é uma solução permanente e destina-se apenas a desbloquear o desenvolvimento.  Esta solução alternativa não será necessária uma vez que a questão acima mencionada seja corrigida.  Esta solução alternativa não precisa ser desfeita após a correção.
+Confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0) para obter uma lista de equipes.
+Confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0) para criar equipes.
 
-1. Abra uma sessão do Azure AD v2 PowerShell e conecte-se ao locatário do parceiro `customer`digitando suas credenciais de administrador na janela de entrada. Você pode baixar e instalar o Azure AD PowerShell V2 [aqui](https://www.powershellgallery.com/packages/AzureAD).
+### <a name="missing-teams-in-list-all-teams"></a>Equipes ausentes em listas todas as equipes
 
-    ```PowerShell
-    Connect-AzureAd -TenantId {customerTenantIdOrDomainName}
-    ```
+Algumas equipes que foram criadas no passado mas não foram usadas recentemente por um usuário do Microsoft Teams não são listadas por [listar todas as equipes](teams-list-all-teams.md).
+Novas equipes serão listadas.
+Algumas equipes antigas não têm uma propriedade **resourceProvisioningOptions** que contém “Equipe”, que é configurada em equipes recém-criadas e equipes que são visitadas no Microsoft Teams.
+No futuro, vamos configurar **resourceProvisioningOptions** em equipes existentes que não foram abertas no Microsoft Teams.
 
-2. Crie o servicePrincipal do Microsoft Graph.
+## <a name="users"></a>Usuários
 
-    ```PowerShell
-    New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
-    ```
+### <a name="no-instant-access-after-creation"></a>Sem acesso instantâneo após a criação
+
+Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Office 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Office 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
+
+### <a name="photo-restrictions"></a>Restrições de foto
+
+A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando a visualização da API unificada do Office 365, o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis com a propriedade **photo** do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) do Microsoft Graph. A falha na leitura ou na atualização de uma foto, nesse caso, resultaria no seguinte erro:
+
+```javascript
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+```
+
+### <a name="using-delta-query"></a>Uso da consulta delta
+
+Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
+
+### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>A revogação de sessões de entrada retorna um código HTTP errado
+
+O [usuário: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) deve retornar uma resposta `204 No content` para ter revogações bem-sucedidas e um código de erro HTTP (4xx ou 5xx) se algo der errado com a solicitação.  No entanto, devido a um problema de serviço, essa API retorna um parâmetro `200 OK` e um parâmetro booleano que é sempre true.  Até que isso seja corrigido, é recomendado que desenvolvedores simplesmente tratem qualquer código de retorno 2xx como bem-sucedido para esta API.
+
+### <a name="incomplete-objects-when-using-getbyids-request"></a>Objetos incompletos ao usar a solicitação getByIds
+
+A solicitação de objetos usando a opção de [Obter objetos de diretório de uma lista de IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) deve retornar objetos completos. No entanto, atualmente, os objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) no ponto de extremidade v1.0 são retornados com um conjunto limitado de propriedades. Como solução temporária, ao usar a operação em combinação com a opção de consulta `$select`, objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) mais completos serão retornados. Esse comportamento não está de acordo com as especificações do OData. Como esse comportamento pode ser atualizado no futuro, use esta solução alternativa apenas quando fornecer `$select=` com todas as propriedades de seu interesse e somente se futuras alterações nessa solução alternativa forem aceitáveis.
+
+## <a name="query-parameter-limitations"></a>Limitações de parâmetro de consulta
+
+* Não há suporte para vários namespaces.
+* Não há suporte para GETs em `$ref` e conversão em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
+* `@odata.bind` não é compatível. Isso significa que os desenvolvedores não poderão definir corretamente a propriedade de navegação **acceptedSenders** ou **rejectedSenders** em um grupo.
+* `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos.
+* `$expand`:
+  * Não há suporte para `nextLink`
+  * Não há suporte para mais de um nível de expansão
+  * Não há suporte com parâmetros adicionais (`$filter`, `$select`)
+* `$filter`:
+  * Não há suporte para filtros no ponto de extremidade `/attachments`. Se presente, o parâmetro `$filter` é ignorado.
+  * Não há suporte para filtragem de carga de trabalho cruzada.
+* `$search`:
+  * A pesquisa de texto completo só está disponível para um subconjunto de entidades, como mensagens.
+  * Não há suporte para pesquisa de carga de trabalho cruzada.
+
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Funcionalidade disponível apenas nas APIs Graph do Azure AD ou REST do Office 365
 
-Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](https://msdn.microsoft.com/office/office365/api/api-catalog) específicas do ponto de extremidade. Para o Azure Active Directory, veja a postagem no blog [Microsoft Graph ou Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre os recursos que só estão disponíveis pela API do Graph do Azure AD.
-
+Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](https://docs.microsoft.com/previous-versions/office/office-365-api/) específicas do ponto de extremidade. Para o Azure Active Directory, confira [Migrar aplicativos do Azure AD Graph para o Microsoft Graph](https://docs.microsoft.com/graph/migrate-azure-ad-graph-overview). 

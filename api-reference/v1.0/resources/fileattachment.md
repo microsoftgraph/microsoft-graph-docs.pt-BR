@@ -5,18 +5,18 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ad8c1a9ffd4a4b5cc68554505464173a40aafd29
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be0f4a15b42b869ae4f8c11f4e384220063dbe97
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531430"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926761"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
 Namespace: microsoft.graph
 
-Um arquivo (como um arquivo de texto ou um documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md) ou [postagem](../resources/post.md). A propriedade **contentBytes** possui os conteúdos codificados base64 do arquivo.  
+Um arquivo (como um arquivo de texto ou um documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md) ou [postagem](../resources/post.md) do usuário. 
 
 Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 
@@ -24,6 +24,9 @@ Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 * As propriedades **name** e **contentBytes** necessárias.
 
 Derivado de [attachment](attachment.md).
+
+> [!NOTE]
+> Certifique-se de codificar o conteúdo do arquivo em Base64 antes de atribuí-lo a **contentBytes**.
 
 ## <a name="methods"></a>Métodos
 

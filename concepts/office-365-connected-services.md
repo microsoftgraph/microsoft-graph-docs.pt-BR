@@ -4,12 +4,12 @@ description: Você pode usar os serviços conectados no Visual Studio para confi
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7d47af5472a7c4bff8b8fae05c0cb87cc079cc29
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: a051b4011ab2efef7179680bb5bcbab1e717d8cc
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969528"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926663"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Chamar serviços do Office 365 no Visual Studio 2017 com a API do Microsoft Graph
 
@@ -21,7 +21,7 @@ Para usar os serviços conectados do Office 365 com o Microsoft Graph, você pre
 
 - Baixe o [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), caso ainda não tenha feito isso. Se estiver usando uma versão anterior do Visual Studio, você pode usar o Visual Studio 2017 Preview lado a lado com sua versão atual.
 
-- Obtenha uma assinatura do Office 365. Para obter uma avaliação gratuita, entre no [Programa para Desenvolvedores do Office 365](https://dev.office.com/devprogram).
+- Obtenha uma assinatura do Microsoft 365. Para obter uma avaliação gratuita, entre no [Programa para Desenvolvedores do Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## <a name="get-the-starter-project"></a>Obter o projeto inicial
 
