@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3218bf404665e9e4889fae77e5b1efbbd6f2dc9f
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 67b55dc01cbbc9ae5188e93a5bf24248e2ded483
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618900"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948384"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -1179,3 +1179,18 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
 | threatCategory               | 1     | Agregar solicitação de avaliação `threatCategory`de ameaça por.               |
 | mailDestinationRoutingReason | duas     | Agregar solicitação de avaliação `mailDestinationRoutingReason`de ameaça por. |
+
+### <a name="riskeventtypes-values"></a>valores de riskEventTypes
+
+| Member
+|:-------------------------
+| unlikelyTravel
+| anonymizedIPAddress
+| maliciousIPAddress
+| unfamiliarFeatures
+| malwareInfectedIPAddress
+| suspiciousIPAddress
+| leakedCredentials
+| investigationsThreatIntelligence
+| genérico
+| unknownFutureValue
