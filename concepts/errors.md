@@ -2,12 +2,12 @@
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: "  "
 localization_priority: Priority
-ms.openlocfilehash: eb7ce8d2d0a7836842469406768ce8a6eb81e94c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 684c00dfc8618378800faf9aad064370215e7ccd
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969791"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926677"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 
@@ -199,10 +199,6 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos ob
 | **virusSuspicious**                | Este documento é suspeito e pode conter um vírus.
 | **zeroOrFewerResultsRequested**    | Nenhum ou poucos resultados solicitados.
 
-<!-- ##Additional Resources##
-
-- [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
 
 <!-- {
   "type": "#page.annotation",

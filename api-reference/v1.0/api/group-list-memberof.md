@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 120cb02837ee30bc67ce315e158d4d4361a8be42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f3a129d8ed9d96393eae38e26860648f016323d
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517072"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926850"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 
-Namespace: microsoft.graph Obtenha os grupos dos quais o grupo é membro direto. 
+Namespace: microsoft.graph
+
+Obtenha grupos dos quais um grupo é um membro direto. 
 
 Essa operação não é transitiva. Ao contrário de obter Grupos do Office 365 de um usuário, isso retorna todos os tipos de grupos, não apenas grupos do Office 365.
 

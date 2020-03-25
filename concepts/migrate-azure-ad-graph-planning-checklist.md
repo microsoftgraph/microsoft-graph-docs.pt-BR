@@ -4,12 +4,12 @@ description: Lista de verificação para migrar seus aplicativos do Azure AD Gra
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 905a692e6a4fddf71b6488e1695957cba5b182ae
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 59114221b91f6dc1800f9f1601cb2e2c06709ff8
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778261"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926782"
 ---
 # <a name="app-migration-planning-checklist"></a>Lista de verificação de planejamento de migração de aplicativos
 
@@ -53,9 +53,9 @@ Agora você já fez a migração para o Microsoft Graph, nunca foi mais fácil d
 
 Se você estiver usando a [biblioteca de autenticação do AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (Adal), considere mudar para a biblioteca de autenticação da [Microsoft](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre a [sintaxe de chamada resquest](migrate-azure-ad-graph-request-differences.md) para iniciar a etapa 1: revisando as diferenças da API.
 - Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
 - Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
-- Para saber mais sobre atualizações de progresso e cronogramas, confira [Microsoft Graph ou o gráfico do Azure ad](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) no centro de desenvolvimento do Office.
+- Para saber mais sobre atualizações de progresso e cronogramas, confira [Microsoft Graph ou o Azure ad Graph](https://developer.microsoft.com/en-us/graph/blogs/microsoft-graph-or-azure-ad-graph/).

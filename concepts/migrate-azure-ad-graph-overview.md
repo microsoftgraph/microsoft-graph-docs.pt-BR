@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API do Azure Active Directory (
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9a817e7fbc056994d98fa32ec945d8e9c2deda5
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 311bc8c800d7415e7e2d192f5b11aed971faafa4
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234051"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926775"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Migrar aplicativos do Azure AD Graph para o Microsoft Graph
 
@@ -38,9 +38,9 @@ O restante dos artigos desta seção o ajudará a mover seu aplicativo do Azure 
 - Orientações que descrevem diferenças específicas entre as APIs.
 - Links para recursos adicionais e exemplos para ilustrar diferenças específicas.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - Mostre a [lista de verificação de migração de aplicativos](migrate-azure-ad-graph-planning-checklist.md) para ajudá-lo a planejar a movimentação.
 - Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
 - Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.
-- Para saber mais sobre atualizações de progresso e cronogramas, confira [Microsoft Graph ou o gráfico do Azure ad](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) no centro de desenvolvimento do Office.
+- Para saber mais sobre atualizações de progresso e cronogramas, confira [Microsoft Graph ou o Azure ad Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).
