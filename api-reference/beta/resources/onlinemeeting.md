@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: b6e0848b88427cf0929030f07b163204842c3cd7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 888b5d7d60a72ed95cb3e3f6cbb1b6e5407919ab
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522253"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962363"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,7 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 |:---------------|:--------|:----------|
 | [Criar ReuniãoOnline](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online. |
 | [Obter onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos de um objeto **onlineMeeting** . |
+| [Criar ou obter onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Criar uma reunião online com uma ID externa personalizada. Se a reunião já existir, recupere sua propriedades. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -41,8 +42,9 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 | joinWebUrl                   | String                                                 | A URL de ingresso da reunião online. Somente leitura.|
 | participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
 | assunto                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
-| capabilities              | String collection                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
+| capabilities              | Coleção de cadeias de caracteres                                      | A lista de recursos de reunião. Os valores possíveis são `questionAndAnswer`:. |
 | videoTeleconferenceId     | String                                                 | A ID de teleconferência de vídeo. Somente leitura. |
+| externalId                | Cadeia de caracteres                                                 | A ID externa. Uma ID personalizada. Opcional. |
 
 ### <a name="autoadmittedusers-values"></a>valores de autoAdmittedUsers
 | Valor | Descrição  |
@@ -59,7 +61,7 @@ Contém informações sobre a reunião, incluindo a URL usada para ingressar em 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+  "externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->

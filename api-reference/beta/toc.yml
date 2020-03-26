@@ -288,7 +288,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Correio
+            - name: Email
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -392,7 +392,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Trabalho em equipe
+            - name: Teamwork
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -919,6 +919,8 @@
                   href: api/onlinemeeting-get.md
                 - name: Excluir
                   href: api/onlinemeeting-delete.md
+                - name: Criar ou obter
+                  href: api/onlinemeeting-createorget.md
             - name: Presença
               href: resources/presence.md
               items:
@@ -9526,7 +9528,7 @@
                   href: api/identityuserflow-get.md
                 - name: Excluir
                   href: api/identityuserflow-delete.md
-        - name: Correio
+        - name: Email
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -10728,7 +10730,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral

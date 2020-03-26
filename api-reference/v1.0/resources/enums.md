@@ -2,16 +2,20 @@
 title: Valores de enumeração
 description: Valores de enumeração do Microsoft Graph.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+ms.prod: non-product-specific
+author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 575cb3aacbcc507fb2659a7097dfedce828603e3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: a28fa0cc9a53b6f9108a587c13efd8ab83a28bbf
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618687"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948391"
 ---
+# <a name="enum-values"></a>Valores de enumeração
+
+Namespace: microsoft.graph
+
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
 |Membro|Valor|Descrição|
@@ -632,6 +636,26 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | genérico
 | unknownFutureValue
 
+### <a name="riskeventtype-values"></a>valores de riskEventType
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|genérico|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
 ### <a name="risklevel-values"></a>valores de riskLevel
 
 | Member
@@ -701,7 +725,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | ,0     | Ainda não conhece.            |
-| user          | 1     | Envio do usuário.         |
+| usuário          | 1     | Envio do usuário.         |
 | administrador | duas     | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores de threatAssessmentResultType

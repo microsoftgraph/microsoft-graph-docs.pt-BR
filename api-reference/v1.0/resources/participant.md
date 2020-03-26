@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso participante
-description: O tipo de participante.
+description: Representa o tipo de participante.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e6711a771d0c10112850f2d05943f4e8752ebbdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82a8cdd51cc7dd8c3be1e06c24ff61b19a9b86ac
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534086"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962335"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
 Namespace: microsoft.graph
 
-O tipo de participante.
+Representa o tipo de participante.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,6 +35,7 @@ O tipo de participante.
 | isInLobby            | Booliano                                  | `true`Se o participante estiver no lobby.                          |
 | IsMuted              | Booliano                                  | `true`Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | Informação que especifica se o participante tem capacidade de gravação. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
