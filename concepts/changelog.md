@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: aeb9cabcbb65790549ccd6f6e920447e0f43ae95
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c3030085bec80f1b9efe5dd1c74c6ed3ab9784e8
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948419"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962431"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -32,6 +32,29 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
 |Adição|beta|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call.md).|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
+| Adição | beta | Adicionado o método [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
+| Adição | beta | Adicionada uma propriedade opcional **externalId**. |
+
+### <a name="cloud-communications--call"></a>Comunicações na nuvem | Chamadas
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição|v1.0|Adicionada a nova propriedade **inicialização** ao tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0).
+|Adição|v1.0|Foram adicionados novos tipos complexos:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
+|Adição|v1.0|Adicionada a nova propriedade **recordingInfo** à entidade [participant](/graph/api/resources/participant?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **recordingStatus** ao tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova ação [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) à entidade [call](/graph/api/resources/call?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **endpointType** ao tipo complexo [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **countryCode** ao tipo complexo [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **incomingContext** à entidade [call](/graph/api/resources/call?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **sourceParticipantId** ao tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **observedParticipantId** ao tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **onBehalfOf** ao tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **transferorf** ao tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **callRoute** à entidade [call](/graph/api/resources/call?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **final** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **original** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
+|Adição|v1.0|Adicionada a nova propriedade **routingType** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -1436,7 +1459,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | Adicionar as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** no recurso [domain](/graph/api/resources/domain?view=graph-rest-1.0).|
 | Adição | beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0).|
-| Adição | beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
+| Adição | Beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
 
 ### <a name="identity-and-access--identity-protection"></a>Identidade e acesso | Proteção de identidade
 
@@ -2410,7 +2433,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|Beta|Foram adicionadas as propriedades **managedDeviceOwnerType**, **preferMdmOverGroupPolicyAppliedDateTime**, **isAutopilotEnrolled** e **requestUserEnrollmentApproval** à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionada a propriedade **managedDeviceModelsAndManufacturers** à entidade [managedDeviceOverview](/graph/api/resources/intune-devices-manageddeviceoverview?view=graph-rest-beta)|
 |Adição|Beta|Foram adicionadas as propriedades **localSecurityOptionsMachineInactivityLimitInMinutes**, **localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool**, **localSecurityOptionsInformationShownOnLockScreen**, **defenderSecurityCenterDisableAccountUI**, **defenderSecurityCenterDisableHardwareUI**, **defenderSecurityCenterDisableRansomwareUI**, **defenderSecurityCenterDisableSecureBootUI** e **defenderSecurityCenterDisableTroubleshootingUI** à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
-|Adição|Beta|Foram adicionadas as propriedades **printerNames**, **printerDefaultName**, **printerBlockAddition** e **searchBlockWebResults** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Adição|beta|Foram adicionadas as propriedades **printerNames**, **printerDefaultName**, **printerBlockAddition** e **searchBlockWebResults** à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
 |Adição|Beta|Foram adicionadas as propriedades **profileTarget**, **enableAlwaysOn** e **enableDeviceTunnel** à entidade [windows10VpnConfiguration](/graph/api/resources/intune-deviceconfig-windows10vpnconfiguration?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionada a propriedade **enrollmentStatusScreenSettings** à entidade [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionada a propriedade de navegação **deviceConfigurationRestrictedAppsViolations** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
