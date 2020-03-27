@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 50b187209d722252e11df6a5cfc20ea5b796b875
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: db87dfa7c855ba96b7cd7924b4f7829a6fd05a26
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892776"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962356"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -125,3 +125,25 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 - [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
+
+#### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
+
+Os limites são expressos como solicitações por segundo (rps).
+
+| Tipo de solicitação do Teams                                   | Limitar por aplicativo por locatário        | Limitar por aplicativo em todos os locatários      |
+|------------------------------------------------------|---------------------------------|------------|
+| Todas as chamadas de API do Graph para o Microsoft Teams              | 15000 solicitações a cada 10 segundos | n/d |
+| OBTER equipe, canal, guia, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| Canal POST/PUT, guia, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
+| PATCH da equipe, canal, guia, installedApps, appCatalogs |  30 rps                         | 300 rps  |
+| EXCLUIR canal, Tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
+| OBTER /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
+| POSTAR /teams/```{team-id}```, COLOCAR /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| OBTER mensagem do canal  | 5 rps | 100 rps |
+| OBTER 1:1/mensagem de chat do grupo  | 3 rps | 30 rps |
+| POSTAR mensagem do canal | 2 rps | 20 rps |
+| POSTAR 1:1/mensagem de chat do grupo | 2 rps | 20 rps |
+
+É possível emitir, no máximo, 4 solicitações por segundo por aplicativo em uma determinada equipe ou canal.
+
+Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).

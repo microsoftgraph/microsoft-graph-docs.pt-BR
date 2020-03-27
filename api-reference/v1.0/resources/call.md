@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d903865d0977d93e2b8c0ca3cbaafc2d1607a632
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0764a7a4e5ca7845033f5f31a440ec183528da4d
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531975"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962314"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -55,12 +55,15 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Ative o mudo para si mesmo na chamada.                                                          |
 | [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Desative o mudo automaticamente na chamada.                                                        |
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Nenhum                                                        | Inicie e interrompa a tela de compartilhamento na chamada.                                      |
+| **Operações de gravação**                                           |                                                             |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Atualiza o status da gravação.                      |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo                                                                                                   | Descrição                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | String                                                                                                 | A URL de retorno de chamada à qual os retornos serão entregues. Deve ser `https`.                                                                                                                               |
+| callRoutes         | [callRoute](callRoute.md) collection                                                                                                 | As informações de roteamento sobre como a chamada foi redirecionada. Apenas leitura.                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para ingressar em uma reunião.                                                                                                                              |
 | direction           | String                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
 | id                  | String                                                                                                 | A ID de chamada. Somente leitura.                                                                                                                                                                        |
@@ -74,9 +77,10 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | state               | String                                                                                                 | O estado da chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura.                          |
 | assunto             | String                                                                                                 | O assunto da conversa.                                                                                                                                                                    |
 | targets             | conjunto [invitationParticipantInfo](participantinfo.md)                                             | O destinatário da chamada. Informações necessárias para criar chamadas ponto a ponto.                                                                                                            |
-toneInfo            | [toneInfo](toneinfo.md)                                                                                | Somente leitura.                                                                                                                                                                        |
+toneInfo            | [toneInfo](toneinfo.md)                                                                                | Apenas leitura.                                                                                                                                                                        |
+incomingContext            | [incomingContext](incomingContext.md)                                                                                | O contexto associado a uma chamada recebida.                                                                                                                                                                       |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação        | Tipo                                                 | Descrição                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|

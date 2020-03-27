@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: ed6151ecaada91655f8e7d0d0473aa153df768a6
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: aeb9cabcbb65790549ccd6f6e920447e0f43ae95
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926768"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948419"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -63,12 +63,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a propriedade **isBlocked** ao tipo complexo [configurationManagerClientInformation](/graph/api/resources/intune-devices-configurationmanagerclientinformation?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **ignoreDevicesForUnsupportedSettingsEnabled** ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **deliveryOptimizationPriority** ao tipo complexo [win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)|
-|Adição|beta|Adicionado o membro **deviceOsHigherThanDesiredOsVersion** ao tipo de enumeração [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro **deviceOsHigherThanDesiredOsVersion** ao tipo de enumeração [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta). |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
+| Adição | Beta e v1.0 | Adição da propriedade **authenticationRequirement** e da propriedade **riskEventTypes_v2** à propriedade [entrar](/graph/api/resources/signin?view=graph-rest-1.0). |
 | Adição | v1.0 | Adicionada a permissão de novo usuário [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 | Adição | beta | Adicionada a permissão de aplicativo PrivilegedAccess.Read.AzureResources de [Privileged Identity Management - recursos do Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
 | Adição | beta | A permissão [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) foi adicionada para listar a atividade de entrada de um usuário.|
@@ -2265,7 +2266,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta) <br> [Update](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
 | Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta).|
