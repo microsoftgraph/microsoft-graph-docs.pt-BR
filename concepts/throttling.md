@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: db87dfa7c855ba96b7cd7924b4f7829a6fd05a26
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 3889f23353b46c852547501c59d8a94653c67b75
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962356"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986145"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -126,7 +126,7 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
-#### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
+### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
 
 Os limites são expressos como solicitações por segundo (rps).
 

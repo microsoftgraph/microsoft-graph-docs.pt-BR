@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b34dfe6b04811583ad2352ac9469c975573312e7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f9e3c2da2008b5e44f4b13449abd6b63251fe08f
+ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814306"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43034745"
 ---
 # <a name="update-deviceshellscript"></a>Atualizar deviceShellScript
 
@@ -51,15 +51,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceS
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
+|executionFrequency|Duração|O intervalo de execução do script. Se não definido, o script é executado uma vez.|
+|retryCount|Int32|O número de vezes que o script deve ser repetido se falhar.|
+|blockExecutionNotifications|Booliano|Indica se o usuário é notificado quando um script é executado.|
 |id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
+|displayName|Cadeia de caracteres|O nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|fileName|String|O nome do arquivo de script.|
+|roleScopeTagIds|String collection|A lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 
 
 
@@ -73,10 +76,13 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}
 Content-type: application/json
-Content-length: 305
+Content-length: 409
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "displayName": "Display Name value",
   "description": "Description value",
   "scriptContent": "c2NyaXB0Q29udGVudA==",
@@ -93,10 +99,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 477
+Content-Length: 581
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
   "displayName": "Display Name value",
   "description": "Description value",
@@ -110,7 +119,6 @@ Content-Length: 477
   ]
 }
 ```
-
 
 
 

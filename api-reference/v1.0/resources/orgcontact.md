@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbef400f5b48bf79c46b4a445c7f92d62150c746
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44fdd10d1e86405c9a24ed0dab97125e3cc52360
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534118"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986072"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso orgContact
 
@@ -20,6 +20,8 @@ Representa um contato organizacional. Os contatos organizacionais são gerenciad
 
 Herda de [directoryObject](directoryobject.md).
 
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/orgcontact-delta.md).
+
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
@@ -28,7 +30,7 @@ Herda de [directoryObject](directoryobject.md).
 |[Obter contato da organização](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Leia as propriedades e as relações de um contato organizacional.|
 |[Obter gerenciador](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Obtenha o gerente do contato organizacional.|
 |[Listar directReports](../api/orgcontact-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Listar os subordinados diretos do contato organizacional.|
-|[Listar memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro.|
+|[List memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro.|
 |[Listar transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro, incluindo grupos nos quais o contato organizacional está aninhado.|
 |[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| Verifique a associação ao grupo. |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| Retornar todos os grupos dos quais o contato organizacional especificado é membro. |
@@ -54,12 +56,12 @@ Herda de [directoryObject](directoryobject.md).
 | proxyAddresses               | Coleção de cadeias de caracteres                                         | Por exemplo: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Oferece \$suporte a filtro.                                                                                                                                                                               |
 | surname                      | String                                                     | Sobrenome para este contato organizacional.                          |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |directReports|Coleção [directoryObject](directoryobject.md)| Os subordinados diretos do contato. (Os usuários e contatos que têm a propriedade do gerente definidas para este contato.)  Somente leitura. Anulável.|
-|manager|[directoryObject](directoryobject.md)| O usuário ou contato que é o gerente do contato. Somente leitura.|
+|manager|[directoryObject](directoryobject.md)| O usuário ou contato que é o gerente do contato. Apenas leitura.|
 |memberOf|Coleção [directoryObject](directoryobject.md)| Grupos dos quais este contato é membro. Somente leitura. Anulável.|
 |transitiveMemberOf|Coleção [directoryObject](directoryobject.md)| Grupos dos quais este contato é membro, incluindo grupos nos quais o contato está aninhado.|. Somente leitura. Anulável.|
 

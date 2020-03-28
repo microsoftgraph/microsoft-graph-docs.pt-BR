@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad870fbe0a4969f012a7c2b895d857e04071ba97
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ff502dca1f7915dc0f722b33ef7c933ed8646881
+ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814320"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43034759"
 ---
 # <a name="get-deviceshellscript"></a>Obter deviceShellScript
 
@@ -66,11 +66,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 520
+Content-Length: 630
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceShellScript",
+    "executionFrequency": "PT2M43.444327S",
+    "retryCount": 10,
+    "blockExecutionNotifications": true,
     "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
     "displayName": "Display Name value",
     "description": "Description value",
@@ -85,7 +88,6 @@ Content-Length: 520
   }
 }
 ```
-
 
 
 

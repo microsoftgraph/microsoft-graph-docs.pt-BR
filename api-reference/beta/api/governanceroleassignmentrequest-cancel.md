@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 019c9e20af4cea4ad88b0c9311f4a737618ac639
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 576c75e88bf882d8836a0731457fc37b337b0037
+ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639832"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43034766"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governanceRoleAssignmentRequest
 
@@ -41,7 +41,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Authorization  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório.|
 | Content-type  | application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -52,14 +52,14 @@ Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. N�
 
 ## <a name="error-codes"></a>Códigos de erro
 Essa API segue o padrão de códigos HTTP. Além disso, os códigos de erro personalizados são mostrados abaixo.
-|Código de erro     | Mensagem de erro              | Detalhes |
-|:--------------------| :---------------------|:--------------------|
-| 400 BadRequest | RoleAssignmentRequestNotFound | O governanceRoleAssignmentRequest não existe no sistema.
-| 400 BadRequest | RequestCannotBeCancelled    | Somente as solicitações no status `Granted`de `PendingApproval`, `PendingApprovalProvisioning` e `PendingAdminDecision` podem ser canceladas.
+| Código de erro | Mensagem de erro | Detalhes |
+|:---------- |:------------- |:------- |
+| 400 BadRequest | RoleAssignmentRequestNotFound | O governanceRoleAssignmentRequest não existe no sistema. |
+| 400 BadRequest | RequestCannotBeCancelled | Somente as solicitações no status `Granted`de `PendingApproval`, `PendingApprovalProvisioning` e `PendingAdminDecision` podem ser canceladas. |
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "truncated": false,

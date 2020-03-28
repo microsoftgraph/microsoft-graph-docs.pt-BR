@@ -9125,17 +9125,16 @@
             - name: Contatos organizacionais
               href: resources/orgcontact.md
               items:
-                - name: Contato
-                  href: resources/orgcontact.md
-                  items:
-                    - name: Listar contatos org
-                      href: api/orgcontact-list.md
-                    - name: Obter contato org
-                      href: api/orgcontact-get.md
-                    - name: Atualizar contato org
-                      href: api/orgcontact-update.md
-                    - name: Excluir contato org
-                      href: api/orgcontact-delete.md
+                - name: Listar contatos org
+                  href: api/orgcontact-list.md
+                - name: Obter contato org
+                  href: api/orgcontact-get.md
+                - name: Atualizar contato org
+                  href: api/orgcontact-update.md
+                - name: Excluir contato org
+                  href: api/orgcontact-delete.md
+                - name: Obter Delta de contatos da organização
+                  href: api/orgcontact-delta.md
                 - name: Grupos
                   href: resources/group.md
                   items:
@@ -9150,9 +9149,10 @@
                   items:
                     - name: Listar subordinados diretos
                       href: api/orgcontact-list-directreports.md
-                - name: Objeto de diretório
-                  href: resources/directoryobject.md
-                  items:
+                    - name: Listar memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: Obter gerente
+                      href: api/orgcontact-get-manager.md
                     - name: Obter objetos de membros
                       href: api/orgcontact-getmemberobjects.md
             - name: Política

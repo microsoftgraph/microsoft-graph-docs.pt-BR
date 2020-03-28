@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso remoteItem indica que um driveItem faz referência a um item que existe em outra unidade.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8ce3c5c24506e75a34a95ee1da52d5bebd15ebd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 131336245f60d0f62da7bc7cc9922c32e3f545a3
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533852"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986086"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
@@ -39,6 +39,7 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
   "file": { "@odata.type": "microsoft.graph.file" },
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image" : { "@odata.type": "microsoft.graph.image" },
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "name": "string",
@@ -48,6 +49,7 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "size": 1024,
+  "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -63,6 +65,7 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informações sobre o item remoto do sistema de arquivos local. Somente leitura.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indica que o item remoto é uma pasta. Somente leitura.                                                                                                            |
 | id                   | String                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
+| image                | [Imagem](image.md)                   | Metadados de imagem, se o item for uma imagem. Somente leitura.                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                              |
 | nome                 | String                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |
@@ -72,6 +75,7 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Fornece interoperabilidade entre itens no OneDrive for Business e no SharePoint com o conjunto completo de identificadores de item. Somente leitura.                                          |
 | size                 | Int64                               | Tamanho do item remoto. Somente leitura.                                                                                                                               |
 | specialFolder        | [specialFolder][]                   | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.                                                                     |
+| video                | [Video](video.md)                   | Metadados de vídeo, se o item for um vídeo. Somente leitura.                                                                                                    |
 | webDavUrl            | URL                                 | URL compatível com DAV para o item.                                                                                                                                  |
 | webUrl               | URL                                 | URL que exibe o recurso no navegador. Somente leitura.                                                                                                         |
 
