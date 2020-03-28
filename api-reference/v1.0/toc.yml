@@ -3523,12 +3523,28 @@
                   href: api/orgcontact-list.md
                 - name: Obter contato org
                   href: api/orgcontact-get.md
-                - name: Listar subordinados diretos
-                  href: api/orgcontact-list-directreports.md
-                - name: Listar memberOf
-                  href: api/orgcontact-list-memberof.md
-                - name: Obter gerente
-                  href: api/orgcontact-get-manager.md
+                - name: Obter Delta de contatos da organização
+                  href: api/orgcontact-delta.md
+                - name: Grupos
+                  href: resources/group.md
+                  items:
+                    - name: Listar memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: Obter grupos de membros
+                      href: api/orgcontact-getmembergroups.md
+                    - name: Verificar grupos de membros
+                      href: api/orgcontact-checkmembergroups.md
+                - name: Hierarquia da organização
+                  href: resources/directoryobject.md
+                  items:
+                    - name: Listar subordinados diretos
+                      href: api/orgcontact-list-directreports.md
+                    - name: Listar memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: Obter gerente
+                      href: api/orgcontact-get-manager.md
+                    - name: Obter objetos de membros
+                      href: api/orgcontact-getmemberobjects.md
             - name: SKU inscrita
               href: resources/subscribedsku.md
               items:
