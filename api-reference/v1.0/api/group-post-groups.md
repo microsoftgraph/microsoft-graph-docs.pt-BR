@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 418c24dcb3779725cadb41e59c712c870d1bd74a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: def5f50f2e247ce8d66f798b8ba300a4732f51fc
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516988"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986110"
 ---
 # <a name="create-group"></a>Criar grupo
 
-Namespace: microsoft.graph Crie um novo grupo conforme especificado no corpo da solicitação. Você pode criar os seguintes tipos de grupos:
+Namespace: microsoft.graph
+
+Crie um novo grupo conforme especificado no corpo da solicitação. Você pode criar os seguintes tipos de grupos:
 
 * Grupo do Office 365 (grupo unificado)
 * Grupo de segurança
