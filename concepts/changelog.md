@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c3030085bec80f1b9efe5dd1c74c6ed3ab9784e8
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 034e6b580e664bdba6730e2e19143e2dd60414e4
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962431"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986138"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -25,6 +25,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | Beta | Adicionada a propriedade **calendarGroupId** à entidade [calendário](/graph/api/resources/calendar?view=graph-rest-beta). |
 | Adição | Beta | Adicionada a propriedade **isDraft** à entidade [evento](/graph/api/resources/event?view=graph-rest-beta). |
 
+### <a name="change-notifications"></a>Notificações de alteração
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+|:----------------|:------------|:-----------------------------------------|
+| Adição | beta | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta.md??view=graph-rest-beta).|
+| Adição | v1.0 | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta.md??view=graph-rest-1.0).|
+
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
@@ -34,6 +41,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
 | Adição | beta | Adicionado o método [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
 | Adição | beta | Adicionada uma propriedade opcional **externalId**. |
+|Adição|beta|Adicionado um `Accept-Language`cabeçalho opcional para [reuniões online](/graph/api/resources/onlinemeeting).
 
 ### <a name="cloud-communications--call"></a>Comunicações na nuvem | Chamadas
 
@@ -87,6 +95,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a propriedade **ignoreDevicesForUnsupportedSettingsEnabled** ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta)|
 |Adição|beta|Adicionada a propriedade **deliveryOptimizationPriority** ao tipo complexo [win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)|
 |Adição|beta|Adicionado o membro **deviceOsHigherThanDesiredOsVersion** ao tipo de enumeração [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta). |
+
+### <a name="files-onedrive-for-business"></a>Arquivos (OneDrive for Business)
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | Beta e v1.0 | Adicionadas as propriedades de **imagem** e **vídeo** ao recurso [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0). Essas propriedades permite que você recupere as miniaturas de tipo de mídia quando combinadas com uma função de expansão.  |
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
@@ -2426,7 +2440,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|Foram adicionadas as propriedades **minimumWipePatchVersion**, **allowedAndroidDeviceManufacturers** e **appActionIfAndroidDeviceManufacturerNotAllowed** à entidade [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta)|
 |Adição|Beta|Foram adicionadas as propriedades **minimumWipeSdkVersion**, **minimumWipePatchVersion**, **allowedIosDeviceModels**, **appActionIfIosDeviceModelNotAllowed**, **allowedAndroidDeviceManufacturers** e **appActionIfAndroidDeviceManufacturerNotAllowed** à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta)|
 |Adição|Beta|Foram adicionadas as propriedades **notApplicablePlatformCount** e **conflictCount** à entidade [deviceComplianceDeviceOverview](/graph/api/resources/intune-deviceconfig-devicecompliancedeviceoverview?view=graph-rest-beta)|
-|Adição|Beta|Foram adicionadas as propriedades **notApplicablePlatformCount** e **conflictCount** à entidade [deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta)|
+|Adição|beta|Foram adicionadas as propriedades **notApplicablePlatformCount** e **conflictCount** à entidade [deviceConfigurationDeviceOverview](/graph/api/resources/intune-deviceconfig-deviceconfigurationdeviceoverview?view=graph-rest-beta)|
 |Adição|Beta|Foi adicionada a propriedade **accountMoveCompletionDateTime** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
 |Adição|Beta|Foram adicionadas as propriedades **minimumWipeSdkVersion**, **allowedIosDeviceModels** e **appActionIfIosDeviceModelNotAllowed** à entidade [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta)|
 |Adição|Beta|Foram adicionadas as propriedades **minimumWipeOsVersion**, **minimumWipeAppVersion**, **appActionIfDeviceComplianceRequired** e **appActionIfMaximumPinRetriesExceeded** à entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|

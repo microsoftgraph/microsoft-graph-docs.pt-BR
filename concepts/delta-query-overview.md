@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6b66d2b6028e0b625c47f301c7d7087e12dfd150
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: d1b72356e38404c300bd1380fb1047ae04ac37ca
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331203"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986010"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -115,6 +115,7 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Grupos                                                         | Função [delta](/graph/api/group-delta?view=graph-rest-1.0) do recurso [group](/graph/api/resources/group?view=graph-rest-1.0)                                                   |
 | Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) do recurso [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                     |
 | Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta?view=graph-rest-1.0) do recurso [mensagem](/graph/api/resources/message?view=graph-rest-1.0)                                              |
+| Contatos organizacionais | função [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) do recurso [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) |
 | Pastas de contatos pessoais                                       | função [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) do recurso [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
 | Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0)    
 | Itens do Planner\*\* (pré-visualização)                                    | função [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (visualização)|                                         |
@@ -180,7 +181,7 @@ As consultas Delta estão disponíveis para os clientes hospedados na nuvem púb
 
 ### <a name="token-duration"></a>Duração do token
 
-Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente. Para objetos de identidade (**directoryobject**, **directoryRole**, **Group**, **User**), o limite é 30 dias.
+Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente. Para objetos de identidade (**directoryobject**, **directoryRole**, **group**, **orgContact**, **user**), o limite é 30 dias.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

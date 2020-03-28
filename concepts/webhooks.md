@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 099a5af3dafe3d1f7531f88583236cb1ab381ab7
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 4833bb30239e5ea30022617c2cf5adfa8b2d0544
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618761"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986153"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -153,6 +153,10 @@ O Microsoft Graph valida o ponto de extremidade de notificação fornecido na pr
     - O corpo deve incluir o token de validação fornecido pelo Microsoft Graph.
 
 O cliente deve descartar o token de validação depois de o fornecer na resposta.
+
+Além disso, você pode usar a [coleção do Microsoft Graph Postman](use-postman.md) para confirmar que o ponto de extremidade implementa a solicitação de validação. A solicitação de **Validação de Assinaturas** na pasta **Diversos** fornece testes de unidade que validam a resposta fornecida por seu ponto de extremidade.  
+
+![resultados do teste de resposta de validação](images/change-notifications/validation-request-tests-results.png)
 
 ### <a name="renewing-a-subscription"></a>Renovar uma assinatura
 
