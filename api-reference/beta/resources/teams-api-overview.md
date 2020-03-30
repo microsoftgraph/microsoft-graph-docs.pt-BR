@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e07a4e658486d0075e34911cad4daaf17a07401
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3771a9e62a317e292b8d2a821ecb21e6b354d8af
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866529"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962328"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -36,6 +36,15 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Office 365 que fo
 |[Folga](/graph/api/resources/timeoff?view=graph-rest-beta) (visualização)| [Criar](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [Listar](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [Obter](/graph/api/timeoff-get?view=graph-rest-beta), [Substituir](/graph/api/timeoff-put?view=graph-rest-beta), [Excluir](/graph/api/timeoff-delete?view=graph-rest-beta) |
 |[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (visualização)| [Criar](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [Listar](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [Obter](/graph/api/timeoffreason-get?view=graph-rest-beta), [Substituir](/graph/api/timeoffreason-put?view=graph-rest-beta), [Excluir](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
 
+## <a name="microsoft-teams-limits"></a>Limites do Microsoft Teams
+
+As limitações de desempenho e de capacidade testadas do Microsoft Teams estão documentadas nas [especificações e limites do Microsoft Teams](/microsoftteams/limits-specifications-teams).
+Esses limites aplicam-se diretamente ao usar o Microsoft Teams ou usar as APIs do Microsoft Graph.
+Como todas as equipes têm um grupo correspondente, e cada grupo é um objeto de diretório, limites no [número de grupos](/microsoft-365/admin/create-groups/office-365-groups#group-limits) e o [número de objetos de diretório ("recursos")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) também podem ser levados em consideração. 
+
+Os arquivos dentro de canais são armazenados no SharePoint. [os limites do SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) se aplicam.
+
+Confira também [redução dos limites dos serviços do Microsoft Teams](/graph/throttling).
 
 ## <a name="teams-and-groups"></a>Equipes e grupos
 
@@ -95,6 +104,16 @@ Se nenhum desses usuários estiver conectado ao aplicativo/site do Microsoft Tea
 
 > [!Note]
 > Os convidados do locatário sempre são processados pelo caminho lento.
+
+## <a name="polling-requirements"></a>Requisitos de sondagem
+
+Se seu aplicativo sonda para ver se um recurso foi alterado, você só poderá fazer isso uma vez por dia. ([teamsAsyncOperation](teamsasyncoperation.md) é uma exceção no sentido de que é foi desenvolvida para ser sondada frequentemente.) Se você precisar saber sobre mudanças com mais frequência que esta, você deve [criar uma assinatura](../api/subscription-post-subscriptions.md) para esse recurso e receber notificações de alteração (webhooks). Caso não encontre suporte para o tipo de assinatura necessária, recomendamos que você faça comentários por meio do [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
+
+Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde isso for possível.  Para obter detalhes, consulte [obter mensagens de canal delta](/graph/api/chatmessage-delta?view=graph-rest-beta).
+
+As sondagem está executando uma operação OBTER em um recurso repetidamente para ver se o recurso foi alterado. Você tem permissão para obter o mesmo recurso várias vezes por dia, desde que não seja uma sondagem. Por exemplo, está tudo bem se você usar OBTER /me/joinedTeams toda vez que o usuário visita/atualiza sua página da web, mas não é certo usar OBTER /me/joinedTeams em um loop a cada 30 segundos para atualizar essa página da web.
+
+Os aplicativos que não seguem esses requisitos de sondagem serão considerados violações de [termos de uso das APIs da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). A violação destes Termos da API pode resultar [suspensão](/graph/throttling)ou no cancelamento do uso das APIs da Microsoft.
 
 ## <a name="see-also"></a>Confira também
 
