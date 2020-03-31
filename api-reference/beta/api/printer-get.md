@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: faa68c631ff498892934b35dec24f5940736d025
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 8d825808bc7f6af0101c0cd966759f861ee77cef
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947999"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062116"
 ---
 # <a name="get-printer"></a>Obter impressora
 
@@ -98,7 +98,6 @@ Content-length: 1313
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "acceptingJobs": true,
-  "registeredBy": {},
   "status": {
     "processingState": "stopped",
     "processingStateReasons": ["disconnected"],

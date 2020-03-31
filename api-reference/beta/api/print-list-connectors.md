@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5d1ec9b66d815553af7118a8d256107150f5a8de
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 0b6e9474def623d6b5492464ad5190828a8135cd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948335"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062165"
 ---
 # <a name="list-connectors"></a>Conectores de lista
 
@@ -103,7 +103,6 @@ Content-length: 1289
         "lastConnectionTime": "2020-02-04T07:00:00.0000000"
       },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
-      "registeredBy": {},
       "location": {
         "latitude": 1.1,
         "longitude": 2.2,

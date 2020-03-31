@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 71b0740c433fdc44e63d684999f30dd9e560d804
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2205f35470a9c99f16719624e7d99538c92050c1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435147"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061976"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +60,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 |initiatedBy/user/displayName| eq|
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |initiatedBy/app/appId| eq|
-|initiatedBy/app/appDisplayName| eq|
+|initiatedBy/app/displayName| eq|
 |targetResources/any(t: t/id)| eq|
 |targetResources/any(t:t/displayName)| eq, startswith|
 

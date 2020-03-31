@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9f69eca77fbeb7b9501c1f9186d0e00199a08658
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2b4b33fc17eb8dfb44e46ac18cb18aaeabe3d06c
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497829"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062592"
 ---
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Permite definir um sinalizador para que o usuário possa acompanhar um item post
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Data e hora em que o acompanhamento foi concluído.|
-|dueDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve ser concluído.|
+|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação**: para definir a data de conclusão, você também deve especificar `startDateTime`o; caso contrário, você receberá `400 Bad Request` uma resposta.|
 |flagStatus|Cadeia de caracteres|O status de acompanhamento de um item. Os valores possíveis são: `notFlagged`, `complete` e `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve começar.|
 

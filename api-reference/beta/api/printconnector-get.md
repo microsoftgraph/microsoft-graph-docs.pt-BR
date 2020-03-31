@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8999a4371ea50b2d3438bcca20d2bf3c205f7bcf
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: dee62dd32f88ee85ba20b05604c30d6ac293ee15
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948142"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062130"
 ---
 # <a name="get-printconnector"></a>Obter um multiconectado
 
@@ -123,8 +123,7 @@ Content-length: 1097
         "Red West"
     ],
     "stateOrProvince": "Washington"
-  },
-  "registeredBy": {}
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 28734c08d4626805de467ebad8c640acf3bdf7f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c59401a9265f892fb2573fc2be3b0525baf1ece
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531389"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062585"
 ---
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
@@ -23,13 +23,13 @@ Permite definir um sinalizador em um item para que o usuário acompanhe mais tar
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Data e hora em que o acompanhamento foi concluído.|
-|dueDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve ser concluído.|
+|dueDateTime|**dateTimeTimeZone**|A data e a hora em que o acompanhamento deve ser concluído. **Observação**: para definir a data de conclusão, você também deve especificar `startDateTime`o; caso contrário, você receberá `400 Bad Request` uma resposta.|
 |flagStatus|followupFlagStatus|O status de acompanhamento de um item. Os valores possíveis são: `notFlagged`, `complete` e `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve começar.|
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",

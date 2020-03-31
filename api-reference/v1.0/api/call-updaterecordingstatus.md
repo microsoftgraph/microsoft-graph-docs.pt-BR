@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f1109cdaa02d5715335fd0948f64cff9bff8c4dd
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 9601c3a4589ba899d76b4ce55c1b0fdf8b3da355
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962518"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062578"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: updateRecordingStatus
 
@@ -18,7 +18,6 @@ Namespace: microsoft.graph
 
 Atualize o status de gravação do aplicativo associado a uma chamada.
 
-> [!NOTE]
 > **Restrição adicional**: você não pode usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a API **updateRecordingStatus** para indicar que a gravação começou e receber uma resposta de êxito dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá finalizar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação foi concluída.
 
 ## <a name="permissions"></a>Permissões

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c511598e200b7583b98e6fba1f7d07fa9f9d98dd
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: d23b016bb383903f35d370c9d4afb623518e5bfd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947718"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062088"
 ---
 # <a name="update-printer"></a>Atualizar impressora
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos de [impressora](..
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|nome|String|O nome da impressora.|
+|name|String|O nome da impressora.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Printer](../resources/printer.md) atualizado no corpo da resposta.
@@ -111,7 +111,6 @@ Content-length: 1313
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "acceptingJobs": true,
-  "registeredBy": {},
   "status": {
     "processingState": "idle",
     "processingStateReasons": [],

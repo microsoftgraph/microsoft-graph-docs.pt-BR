@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 15d48ae22ca838af2c1fd6d09b4bc2b4eac68ae6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8543663094d914069d2dfef7e34247d91dd2646f
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518018"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062032"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -57,7 +57,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 | initiatedBy/user/displayName                                 | eq                  |
 | initiatedBy/user/userPrincipalName                           | eq, startswith      |
 | initiatedBy/app/appId                                        | eq                  |
-| initiatedBy/app/appDisplayName                               | eq                  |
+| initiatedBy/app/displayName                                  | eq                  |
 | targetResources/Any (t: t/ID eq ' {value} ')                    | eq                  |
 | targetResources/Any (t: t/displayName EQ ' {value} ')            | eq                  |
 | targetResources/Any (x: StartsWith (x/displayName, ' {value} ')) | startswith          |

@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6377d80f923de289c90cbf56762f78bc303e3e22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7ec2609c17259dcfb04e06aa115be0fe99e33c20
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814593"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062060"
 ---
 # <a name="update-devicehealthscript"></a>Atualizar deviceHealthScript
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +53,6 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |:---|:---|:---|
 |id|String|Identificador exclusivo do script de integridade do dispositivo|
 |publicador|String|Nome do editor de script de integridade do dispositivo|
-|versão|String|Versão do script de integridade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
 |description|String|Descrição do script de integridade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
@@ -61,11 +60,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
-|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
-|isGlobalScript|Boolean|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
-|highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
+|enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
+|runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|roleScopeTagIds|String collection|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
 
 
 
@@ -84,7 +81,6 @@ Content-length: 575
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
-  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -94,10 +90,8 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
-}
+  ]
+ }
 ```
 
 ### <a name="response"></a>Resposta

@@ -5,22 +5,22 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5cb1087323287f3c8e752810b1c37365c8268a19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7759a9c42ca9178dc95266ffa4630ef891832ecd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521058"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062634"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa usuários do Azure AD que estão em risco. O Azure AD avalia continuamente o risco do usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todos os usuários de risco em seu Azure AD.
 
-Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
+Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
 
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
@@ -50,9 +50,8 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |`userPrincipalName`|`string`|Nome UPN de usuário arriscado|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|histórico|coleção [riskyUserHistoryItem](riskyuserhistoryitem.md)|Representa o histórico de riscos de um usuário do Azure AD, conforme determinado pela proteção de identidade do Azure AD. |
+
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 

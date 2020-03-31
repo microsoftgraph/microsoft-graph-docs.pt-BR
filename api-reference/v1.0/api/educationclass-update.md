@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4e6aba0c4d712febeee1273738a0c2cbd2bc2dff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce3dd12343574455c6afb55cf509fbfd2583b588
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517548"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062620"
 ---
 # <a name="update-educationclass-properties"></a>Atualizar propriedades educationclass
 
@@ -45,9 +45,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |description|String| Descrição da aula.|
 |displayName|Cadeia de caracteres| Nome da aula.|
-|mailNickname|Cadeia de caracteres| Alias de email para envio de email a todos os usuários, se esse recurso estiver habilitado. |
-<!-- Please verify the revised description here. -->
-|classCode|Cadeia de caracteres| Código de aula usado pela escola.| |externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. | |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.| |externalSource|cadeia de caracteres| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `enum_sentinel`. |
+|mailNickname|String| Alias de email para envio de email a todos os usuários, se esse recurso estiver habilitado. |
+|classCode|String| Código de classe usado pela escola.|
+|externalId|String| ID da aula no sistema de sincronização. |
+|externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.|
+|externalSource|cadeia de caracteres| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationClass](../resources/educationclass.md) atualizado no corpo da resposta.
@@ -108,11 +110,11 @@ Content-length: 224
   "description": "World History Level 1",
   "classCode": "301",
   "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
+    }
+  },
   "displayName": "History - World History 1",
   "externalId": "301",
   "externalName": "World History Level 1",
