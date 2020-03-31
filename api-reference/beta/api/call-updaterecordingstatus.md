@@ -5,63 +5,65 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7a86276b42244b6fc1443d07d5170175f7166a92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e6312d862940aeff840e74094b4b1e75734634e
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440679"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062564"
 ---
-# <a name="call-updaterecordingstatus"></a><span data-ttu-id="f4100-103">Call: updateRecordingStatus</span><span class="sxs-lookup"><span data-stu-id="f4100-103">call: updateRecordingStatus</span></span>
+# <a name="call-updaterecordingstatus"></a><span data-ttu-id="86214-103">Call: updateRecordingStatus</span><span class="sxs-lookup"><span data-stu-id="86214-103">call: updateRecordingStatus</span></span>
 
-<span data-ttu-id="f4100-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f4100-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="86214-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="86214-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4100-105">Atualize o status de gravação do aplicativo associado a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="f4100-105">Update the application's recording status associated with a call.</span></span>
+<span data-ttu-id="86214-105">Atualize o status de gravação do aplicativo associado a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="86214-105">Update the application's recording status associated with a call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4100-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f4100-106">Permissions</span></span>
-<span data-ttu-id="f4100-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f4100-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+> <span data-ttu-id="86214-106">**Restrição adicional**: você não pode usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a API **updateRecordingStatus** para indicar que a gravação começou e receber uma resposta de êxito dessa API.</span><span class="sxs-lookup"><span data-stu-id="86214-106">**Additional Restriction**: You may NOT use the Media Access API to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content ("record" or "recording"), without first calling the **updateRecordingStatus** API to indicate that recording has begun, and receiving a success reply from that API.</span></span> <span data-ttu-id="86214-107">Se o aplicativo começar a gravar qualquer reunião, ele deverá finalizar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação foi concluída.</span><span class="sxs-lookup"><span data-stu-id="86214-107">If your application begins recording any meeting, it must end the recording prior to calling the **updateRecordingStatus** API to indicate that the recording has ended.</span></span>
 
-| <span data-ttu-id="f4100-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f4100-109">Permission type</span></span>                        | <span data-ttu-id="f4100-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f4100-110">Permissions (from least to most privileged)</span></span>      |
+## <a name="permissions"></a><span data-ttu-id="86214-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="86214-108">Permissions</span></span>
+<span data-ttu-id="86214-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="86214-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="86214-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="86214-111">Permission type</span></span>                        | <span data-ttu-id="86214-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="86214-112">Permissions (from least to most privileged)</span></span>      |
 |:---------------------------------------|:-------------------------------------------------|
-| <span data-ttu-id="f4100-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f4100-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f4100-112">Não suportado</span><span class="sxs-lookup"><span data-stu-id="f4100-112">Not Supported</span></span>                                    |
-| <span data-ttu-id="f4100-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f4100-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4100-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="f4100-114">Not Supported</span></span>                                    |
-| <span data-ttu-id="f4100-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f4100-115">Application</span></span>                            | <span data-ttu-id="f4100-116">Calls. JoinGroupCalls. All, calls. AccessMedia. All</span><span class="sxs-lookup"><span data-stu-id="f4100-116">Calls.JoinGroupCalls.All, Calls.AccessMedia.All</span></span>  |
+| <span data-ttu-id="86214-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="86214-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="86214-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="86214-114">Not Supported</span></span>                                    |
+| <span data-ttu-id="86214-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="86214-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86214-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="86214-116">Not Supported</span></span>                                    |
+| <span data-ttu-id="86214-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="86214-117">Application</span></span>                            | <span data-ttu-id="86214-118">Calls. JoinGroupCalls. All, calls. AccessMedia. All</span><span class="sxs-lookup"><span data-stu-id="86214-118">Calls.JoinGroupCalls.All, Calls.AccessMedia.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="f4100-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f4100-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86214-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="86214-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateRecordingStatus
 POST /communications/calls/{id}/updateRecordingStatus
 ```
-> <span data-ttu-id="f4100-118">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="f4100-118">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="f4100-119">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="f4100-119">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="86214-120">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="86214-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="86214-121">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="86214-121">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f4100-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f4100-120">Request headers</span></span>
-| <span data-ttu-id="f4100-121">Nome</span><span class="sxs-lookup"><span data-stu-id="f4100-121">Name</span></span>          | <span data-ttu-id="f4100-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="f4100-122">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="86214-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="86214-122">Request headers</span></span>
+| <span data-ttu-id="86214-123">Nome</span><span class="sxs-lookup"><span data-stu-id="86214-123">Name</span></span>          | <span data-ttu-id="86214-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="86214-124">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f4100-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="f4100-123">Authorization</span></span> | <span data-ttu-id="f4100-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f4100-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f4100-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="f4100-126">Content-type</span></span> | <span data-ttu-id="f4100-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f4100-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="86214-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="86214-125">Authorization</span></span> | <span data-ttu-id="86214-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="86214-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="86214-128">Content-type</span><span class="sxs-lookup"><span data-stu-id="86214-128">Content-type</span></span> | <span data-ttu-id="86214-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="86214-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f4100-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f4100-129">Request body</span></span>
-<span data-ttu-id="f4100-130">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f4100-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="86214-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="86214-131">Request body</span></span>
+<span data-ttu-id="86214-132">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="86214-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f4100-131">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f4100-131">Parameter</span></span>       | <span data-ttu-id="f4100-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="f4100-132">Type</span></span>    | <span data-ttu-id="f4100-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="f4100-133">Description</span></span>                                                                           |
+| <span data-ttu-id="86214-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="86214-133">Parameter</span></span>       | <span data-ttu-id="86214-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="86214-134">Type</span></span>    | <span data-ttu-id="86214-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="86214-135">Description</span></span>                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| <span data-ttu-id="f4100-134">clientContext</span><span class="sxs-lookup"><span data-stu-id="f4100-134">clientContext</span></span>   | <span data-ttu-id="f4100-135">String</span><span class="sxs-lookup"><span data-stu-id="f4100-135">String</span></span>  | <span data-ttu-id="f4100-136">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="f4100-136">Unique Client Context string.</span></span> <span data-ttu-id="f4100-137">O limite máximo é de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="f4100-137">Max limit is 256 chars.</span></span>                                 |
-| <span data-ttu-id="f4100-138">status</span><span class="sxs-lookup"><span data-stu-id="f4100-138">status</span></span>          | <span data-ttu-id="f4100-139">String</span><span class="sxs-lookup"><span data-stu-id="f4100-139">String</span></span>  | <span data-ttu-id="f4100-140">O status de gravação.</span><span class="sxs-lookup"><span data-stu-id="f4100-140">The recording status.</span></span> <span data-ttu-id="f4100-141">Os valores possíveis são `notRecording`: `recording`,, `failed`ou.</span><span class="sxs-lookup"><span data-stu-id="f4100-141">Possible values are: `notRecording`, `recording`, or `failed`.</span></span>  |
+| <span data-ttu-id="86214-136">clientContext</span><span class="sxs-lookup"><span data-stu-id="86214-136">clientContext</span></span>   | <span data-ttu-id="86214-137">String</span><span class="sxs-lookup"><span data-stu-id="86214-137">String</span></span>  | <span data-ttu-id="86214-138">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="86214-138">Unique Client Context string.</span></span> <span data-ttu-id="86214-139">O limite máximo é de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="86214-139">Max limit is 256 chars.</span></span>                                 |
+| <span data-ttu-id="86214-140">status</span><span class="sxs-lookup"><span data-stu-id="86214-140">status</span></span>          | <span data-ttu-id="86214-141">String</span><span class="sxs-lookup"><span data-stu-id="86214-141">String</span></span>  | <span data-ttu-id="86214-142">O status de gravação.</span><span class="sxs-lookup"><span data-stu-id="86214-142">The recording status.</span></span> <span data-ttu-id="86214-143">Os valores possíveis são `notRecording`: `recording`,, `failed`ou.</span><span class="sxs-lookup"><span data-stu-id="86214-143">Possible values are: `notRecording`, `recording`, or `failed`.</span></span>  |
 
-## <a name="response"></a><span data-ttu-id="f4100-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="f4100-142">Response</span></span>
-<span data-ttu-id="f4100-143">Este método retorna um `200 OK` código de resposta e um cabeçalho de local com um URI para o objeto [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.</span><span class="sxs-lookup"><span data-stu-id="f4100-143">This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="86214-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="86214-144">Response</span></span>
+<span data-ttu-id="86214-145">Este método retorna um `200 OK` código de resposta e um cabeçalho de local com um URI para o objeto [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.</span><span class="sxs-lookup"><span data-stu-id="86214-145">This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f4100-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f4100-144">Example</span></span>
-<span data-ttu-id="f4100-145">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="f4100-145">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="86214-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="86214-146">Example</span></span>
+<span data-ttu-id="86214-147">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="86214-147">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="f4100-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f4100-146">Request</span></span>
-<span data-ttu-id="f4100-147">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="f4100-147">The following example shows the request.</span></span>
+### <a name="request"></a><span data-ttu-id="86214-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="86214-148">Request</span></span>
+<span data-ttu-id="86214-149">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="86214-149">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f4100-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="f4100-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="86214-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="86214-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-updateRecordingStatus"
@@ -76,24 +78,24 @@ Content-Length: 79
   "status": "notRecording | recording | failed"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f4100-149">C#</span><span class="sxs-lookup"><span data-stu-id="f4100-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="86214-151">C#</span><span class="sxs-lookup"><span data-stu-id="86214-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-updaterecordingstatus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f4100-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f4100-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="86214-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="86214-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-updaterecordingstatus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f4100-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f4100-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="86214-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="86214-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-updaterecordingstatus-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f4100-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="f4100-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="86214-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="86214-154">Response</span></span>
 
-> <span data-ttu-id="f4100-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f4100-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="86214-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="86214-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

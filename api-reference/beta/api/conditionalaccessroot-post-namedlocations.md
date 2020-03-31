@@ -5,70 +5,70 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0db12bb6caa1c63057f230151db2f66c180cac8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 948cecd3cc81cd5df5b1caf2948ac6872dccd08a
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437879"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062327"
 ---
-# <a name="create-namedlocation"></a><span data-ttu-id="03374-103">Criar namedLocation</span><span class="sxs-lookup"><span data-stu-id="03374-103">Create namedLocation</span></span>
+# <a name="create-namedlocation"></a><span data-ttu-id="2d30c-103">Criar namedLocation</span><span class="sxs-lookup"><span data-stu-id="2d30c-103">Create namedLocation</span></span>
 
-<span data-ttu-id="03374-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="03374-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2d30c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d30c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="03374-105">Criar um novo objeto [namedLocation](../resources/namedlocation.md) .</span><span class="sxs-lookup"><span data-stu-id="03374-105">Create a new [namedLocation](../resources/namedlocation.md) object.</span></span>
+<span data-ttu-id="2d30c-105">Criar um novo objeto [namedLocation](../resources/namedlocation.md) .</span><span class="sxs-lookup"><span data-stu-id="2d30c-105">Create a new [namedLocation](../resources/namedlocation.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="03374-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="03374-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2d30c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2d30c-106">Permissions</span></span>
 
-<span data-ttu-id="03374-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="03374-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2d30c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d30c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="03374-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="03374-109">Permission type</span></span>                        | <span data-ttu-id="03374-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="03374-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="2d30c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2d30c-109">Permission type</span></span>                        | <span data-ttu-id="2d30c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2d30c-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="03374-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="03374-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="03374-112">Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="03374-112">Policy.ReadWrite.ConditionalAccess</span></span> |
-| <span data-ttu-id="03374-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="03374-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="03374-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="03374-114">Not supported.</span></span> |
-| <span data-ttu-id="03374-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="03374-115">Application</span></span>                            | <span data-ttu-id="03374-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="03374-116">Not supported.</span></span> |
+| <span data-ttu-id="2d30c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2d30c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="2d30c-112">Policy.ReadWrite.ConditionalAccess</span><span class="sxs-lookup"><span data-stu-id="2d30c-112">Policy.ReadWrite.ConditionalAccess</span></span> |
+| <span data-ttu-id="2d30c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2d30c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d30c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d30c-114">Not supported.</span></span> |
+| <span data-ttu-id="2d30c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2d30c-115">Application</span></span>                            | <span data-ttu-id="2d30c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2d30c-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="03374-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="03374-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2d30c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2d30c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /conditionalAccess/namedLocations
+POST /identity/conditionalAccess/namedLocations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="03374-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="03374-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2d30c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2d30c-118">Request headers</span></span>
 
-| <span data-ttu-id="03374-119">Nome</span><span class="sxs-lookup"><span data-stu-id="03374-119">Name</span></span>          | <span data-ttu-id="03374-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="03374-120">Description</span></span>   |
+| <span data-ttu-id="2d30c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="2d30c-119">Name</span></span>          | <span data-ttu-id="2d30c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d30c-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="03374-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="03374-121">Authorization</span></span> | <span data-ttu-id="03374-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="03374-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="03374-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="03374-124">Content-Type</span></span>  | <span data-ttu-id="03374-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="03374-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="2d30c-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="2d30c-121">Authorization</span></span> | <span data-ttu-id="2d30c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d30c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2d30c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2d30c-124">Content-Type</span></span>  | <span data-ttu-id="2d30c-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2d30c-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="03374-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="03374-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2d30c-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2d30c-127">Request body</span></span>
 
-<span data-ttu-id="03374-128">No corpo da solicitação, forneça uma representação JSON de um objeto [ipNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) .</span><span class="sxs-lookup"><span data-stu-id="03374-128">In the request body, supply a JSON representation of an [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object.</span></span>
+<span data-ttu-id="2d30c-128">No corpo da solicitação, forneça uma representação JSON de um objeto [ipNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) .</span><span class="sxs-lookup"><span data-stu-id="2d30c-128">In the request body, supply a JSON representation of an [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="03374-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="03374-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2d30c-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d30c-129">Response</span></span>
 
-<span data-ttu-id="03374-130">Se tiver êxito, este método retornará `201 Created`um código de resposta e um novo objeto [ipNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="03374-130">If successful, this method returns a `201 Created`response code and a new [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object in the response body.</span></span>
+<span data-ttu-id="2d30c-130">Se tiver êxito, este método retornará `201 Created`um código de resposta e um novo objeto [ipNamedLocation](../resources/ipnamedlocation.md) ou [countryNamedLocation](../resources/countrynamedlocation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2d30c-130">If successful, this method returns a `201 Created`response code and a new [ipNamedLocation](../resources/ipnamedlocation.md) or [countryNamedLocation](../resources/countrynamedlocation.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="03374-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="03374-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2d30c-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2d30c-131">Examples</span></span>
 
-### <a name="example-1-create-an-ipnamedlocation"></a><span data-ttu-id="03374-132">Exemplo 1: criar um ipNamedLocation</span><span class="sxs-lookup"><span data-stu-id="03374-132">Example 1: Create an ipNamedLocation</span></span>
+### <a name="example-1-create-an-ipnamedlocation"></a><span data-ttu-id="2d30c-132">Exemplo 1: criar um ipNamedLocation</span><span class="sxs-lookup"><span data-stu-id="2d30c-132">Example 1: Create an ipNamedLocation</span></span>
 
-#### <a name="request"></a><span data-ttu-id="03374-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="03374-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d30c-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d30c-133">Request</span></span>
 
-<span data-ttu-id="03374-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="03374-134">The following is an example of the request.</span></span>
+<span data-ttu-id="2d30c-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d30c-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="03374-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="03374-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2d30c-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="2d30c-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -87,22 +87,22 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="03374-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="03374-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2d30c-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2d30c-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-namedlocation-from-conditionalaccessroot-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="03374-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="03374-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2d30c-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2d30c-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-namedlocation-from-conditionalaccessroot-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="03374-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="03374-138">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d30c-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d30c-138">Response</span></span>
 
-<span data-ttu-id="03374-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="03374-139">The following is an example of the response.</span></span>
+<span data-ttu-id="2d30c-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2d30c-139">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="03374-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="03374-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2d30c-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d30c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -134,18 +134,18 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-2-create-a-countrynamedlocation"></a><span data-ttu-id="03374-142">Exemplo 2: criar um countryNamedLocation</span><span class="sxs-lookup"><span data-stu-id="03374-142">Example 2: Create a countryNamedLocation</span></span>
+### <a name="example-2-create-a-countrynamedlocation"></a><span data-ttu-id="2d30c-142">Exemplo 2: criar um countryNamedLocation</span><span class="sxs-lookup"><span data-stu-id="2d30c-142">Example 2: Create a countryNamedLocation</span></span>
 
-#### <a name="request"></a><span data-ttu-id="03374-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="03374-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2d30c-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2d30c-143">Request</span></span>
 
-<span data-ttu-id="03374-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="03374-144">The following is an example of the request.</span></span>
+<span data-ttu-id="2d30c-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2d30c-144">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -159,11 +159,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="03374-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="03374-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2d30c-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="2d30c-145">Response</span></span>
 
-<span data-ttu-id="03374-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="03374-146">The following is an example of the response.</span></span>
+<span data-ttu-id="2d30c-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2d30c-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="03374-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="03374-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2d30c-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2d30c-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

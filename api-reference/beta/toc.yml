@@ -28,7 +28,8 @@
           href: /graph/paging?context=graph/api/beta
         - name: Usar parâmetros de consulta
           href: /graph/query-parameters?context=graph/api/beta
-        - name: Solicitações em lote
+        - name: Envio em lote
+          displayName: Batch requests
           href: /graph/json-batching?context=graph/api/beta
         - name: Limitação
           href: /graph/throttling?context=graph/api/beta
@@ -43,8 +44,8 @@
               href: /graph/webhooks-outlook-authz?context=graph/api/beta
             - name: Notificações com dados de recursos (visualização)
               href: /graph/webhooks-with-resource-data?context=graph/api/beta
-        - name: Controlar alterações
-          displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
+        - name: Controle de alterações
+          displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
             - name: Visão Geral
               href: /graph/delta-query-overview?context=graph/api/beta
