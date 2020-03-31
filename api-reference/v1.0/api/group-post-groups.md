@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: def5f50f2e247ce8d66f798b8ba300a4732f51fc
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: c3bd3331a9dacf3d2b2959f961a2e7f744d78898
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986110"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061843"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -54,6 +54,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | displayName | string | O nome para exibição no catálogo de endereços do grupo. Obrigatório. |
+| description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Obrigatório. |
 | securityEnabled | booliano | Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365. Obrigatório. |

@@ -4,12 +4,12 @@ description: Descreve como usar o Microsoft Graph Data Connect para selecionar o
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 0aab5ac3806eeda54364dff6ae0b6995098da953
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 0c5ec59fc42ed2e5a0b21631dd3c501ae9c4bfe1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969190"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062593"
 ---
 # <a name="user-selection-and-filtering-microsoft-graph-data-connect-supports"></a>O Microsoft Graph Data Connect é compatível com a seleção de usuário e filtragem
 
@@ -24,7 +24,7 @@ Você pode executar pipelines em um conjunto de usuários. As opções para sele
 
 Especifique a seleção de usuários em OrigemDoConjuntoDeDados da atividade de cópia do Azure Data Factory. Para executar em uma lista de grupos, adicione um novo campo **GruposPermitidos** em **PropriedadesDoTipo** e aplique essa definição para uma lista de até dez **IDs de objeto** de um grupo, separados por vírgulas. Se nenhum grupo for especificado por padrão, os dados serão extraídos da organização inteira. 
 
-Para especificar um predicado para executar no locatário inteiro, adicione um novo campo **EscopoDeFiltroUriDoUsuário** em **PropriedadesDoTipo** e o defina no predicado. O formato do predicado deve coincidir com o formato de consulta de APIs do Microsoft Graph. Se você quiser limitar a seleção para os usuários que funcionam no departamento de finanças, você pode usar `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`, por exemplo.
+Para especificar um predicado para executar no locatário inteiro, adicione um novo campo **EscopoDeFiltroUriDoUsuário** em **PropriedadesDoTipo** e o defina no predicado. O formato do predicado deve coincidir com o formato de consulta de APIs do Microsoft Graph. Se você quiser limitar a seleção para os usuários que funcionam no departamento de finanças, você pode usar `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`, por exemplo. Se desejar limitar a seleção a um usuário, você pode usar o `https://graph.microsoft.com/v1.0/users?$filter=mail eq 'contosouser1@contoso.com'`.
 
 A consulta retornará somente usuários dentro da organização do Office 365 que você está pesquisando. Os usuários convidados e caixas de correio que não são de usuários não serão retornadas.
 

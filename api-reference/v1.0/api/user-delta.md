@@ -5,18 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 752aac92d83ca7aa257d6fd83acb79bbc9b96ac3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb1e24c2b020a44cf4aabc7e8e8c7c81edba9256
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509220"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061850"
 ---
 # <a name="user-delta"></a>user: delta
 
 Namespace: microsoft.graph
 
-Veja os usuários recentemente criados, atualizados ou excluídos sem ter que executar uma leitura completa da coleção de usuários inteira. Confira [Controlar alterações](/graph/delta-query-overview) para saber mais.
+Veja os usuários recentemente criados, atualizados ou excluídos sem ter que executar uma leitura completa da coleção de usuários inteira. Confira [controle de alterações](/graph/delta-query-overview) para obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 

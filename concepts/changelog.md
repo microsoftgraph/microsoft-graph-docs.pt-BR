@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5414537eadfd21de28d1e4b8d60613249a8991a0
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: 3ee6c013ebb60ead77e2b1b8c043f0f7421048a2
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034780"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062603"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -29,15 +29,15 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 |:----------------|:------------|:-----------------------------------------|
-| Adição | beta | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta.md??view=graph-rest-beta).|
-| Adição | v1.0 | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta.md??view=graph-rest-1.0).|
+| Adição | beta | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta?view=graph-rest-beta).|
+| Adição | v1.0 | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
 |:---|:---|:---|
 |Adição|beta|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
-|Adição|beta|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call.md).|
+|Adição|beta|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call?view=graph-rest-beta).|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
 | Adição | beta | Adicionado o método [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
 | Adição | beta | Adicionada uma propriedade opcional **externalId**. |
@@ -114,6 +114,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), que representa a política de padrões de segurança do Azure Active Directory.|
 | Adição | beta | Suporte adicional para os filtros `$top` e `$skiptoken` para dar suporte à paginação no método [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list.md). |
 
+### <a name="identity-and-access-azure-ad--conditional-access"></a>Identidade e acesso (Azure AD) | Acesso condicional
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Alteração | beta | As APIs de acesso condicional foram atualizadas para usar o segmento/identity/; por exemplo,/beta/identity/conditionalAccess/policies.|
+
 ### <a name="reports--office-365-usage-reports"></a>Relatórios | Relatórios de uso do Office 365
 
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
@@ -133,6 +139,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta | Foi adicionado o suporte de ChannelMessage.Read.All para APIs para ler [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) nos canais. |
+
 
 ### <a name="universal-print"></a>Impressão universal
 
@@ -2747,7 +2754,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 ## <a name="january-2018"></a>Janeiro de 2018
 
-### <a name="batch-requests"></a>Solicitações em lote
+### <a name="batching"></a>Envio em lote
 
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|

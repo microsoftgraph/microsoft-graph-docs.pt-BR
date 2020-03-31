@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ebe9baf44acb273513bb8047740880ec04c205e5
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 60849d6d00dfb390eee9e2122e007194a9a28468
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892762"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062604"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -18,6 +18,18 @@ Confira os destaques das novidades do Microsoft Graph e como você pode [compart
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
 
 ## <a name="march-2020-new-and-generally-available"></a>Março de 2020: novo e disponível para o público geral
+
+### <a name="change-notifications"></a>Notificações de alteração
+[O controle de alterações](/graph/api/orgcontact-delta?view=graph-rest-1.0) para [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-1.0).
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+- Obtenha o roteamento de chamadas e o contexto de entrada de um [chamada](/graph/api/resources/call?view=graph-rest-1.0).
+- Um aplicativo pode [atualizar o status da gravação](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) de uma chamada.
+- Pode especificar as informações de gravação para um [participante](/graph/api/resources/participant?view=graph-rest-1.0), incluindo o iniciador e o status da gravação.
+- Pode identificar como parte do [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) o código do país e o tipo de ponto de extremidade (como o Skype for Business ou o Skype for Business VOIP) do participante.
+
+### <a name="files"></a>Arquivos
+[Os itens remotos](/graph/api/resources/remoteitem?view=graph-rest-1.0) compartilhados com um usuário, adicionados ao OneDrive do usuário, ou retornados como resultado de pesquisa podem conter metadados para uma imagem ou um vídeo.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 Use a permissão delegada `User.ManageIdentities.All` para permitir que um aplicativo leia, atualize ou exclua identidades associadas à conta de um usuário, às quais o usuário conectado tem acesso. Use essa permissão no nível do aplicativo sem um usuário conectado. Isso permite ao aplicativo [gerenciar](/graph/api/user-update?view=graph-rest-1.0) com quais identidades um usuário pode se inscrever.
@@ -34,6 +46,8 @@ O administrador de serviços do Teams e o administrador de comunicações do Tea
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 - Os parceiros de dispositivos de VTC (teleconferência por vídeo de terceiros) podem registrar e fornecer dados de qualidade de mídia para dispositivos de teleconferência por vídeo através de um bot de CVI (Interoperabilidade de vídeo em nuvem) e usando a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-beta). A qualidade da mídia inclui dados do tipo aberto para [áudio](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-beta), [vídeo](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-beta) e [compartilhamento de tela](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-beta).
 - Identifique de forma exclusiva os participantes de uma conferência ou [chamada](/graph/api/resources/call?view=graph-rest-beta) de participante a participante usando a propriedade **callChainId**.
+- Use [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) para obter uma instância de [reunião online](/graph/api/resources/onlinemeeting?view=graph-rest-beta) por um ID externo personalizado e criar uma quando não houver nenhuma.
+- Use o `Accept-Language` cabeçalho opcional da solicitação HTTP para [criar](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) ou [obter](/graph/api/onlinemeeting-get?view=graph-rest-beta) uma instância da reunião online, para que a operação bem-sucedida exiba o conteúdo da propriedade **joinInformation** no idioma especificado e variante de localidade.
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 Atualizações de [março](changelog.md#march-2020) do Intune
@@ -49,6 +63,11 @@ Atualizações de [março](changelog.md#march-2020) do Intune
 
 ### <a name="teamwork"></a>Trabalho em equipe
 Use a `ChannelMessage.Read.All` permissão no nível do aplicativo para ler [instâncias de](/graph/api/resources/chatmessage?view=graph-rest-beta)chatMessage em canais sem um usuário conectado.
+
+### <a name="universal-print"></a>Impressão universal
+Estréia da [API de impressão universal](universal-print-concept-overview.md), que permite que os usuários imprimam na Web ou de um aplicativo. A API permite que os administradores de TI gerenciem o acesso de usuários e grupos a impressoras na nuvem do Microsoft 365, compartilhamento remoto da impressora para manter a disponibilidade, monitorar o status da impressora e emitir relatórios sobre trabalho de impressão arquivado e uso. 
+
+Observe que a partir de março de 2020, o serviço de _impressão universal_ está na visualização particular. Confira [anunciando a impressão universal: uma solução de impressão baseada na nuvem](https://aka.ms/announcinguniversalprint) para obter informações sobre a participação.
 
 ## <a name="february-2020-new-and-generally-available"></a>Fevereiro de 2020: novo e disponível para o público geral
 
