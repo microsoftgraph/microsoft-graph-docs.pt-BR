@@ -368,7 +368,8 @@ items:
             href: paging.md
           - name: Usar parâmetros de consulta
             href: query-parameters.md
-          - name: Solicitações em lote
+          - name: Envio em lote
+            displayName: Batch requests
             href: json-batching.md
           - name: Limitação
             href: throttling.md
@@ -383,10 +384,10 @@ items:
                 href: webhooks-outlook-authz.md
               - name: Notificações com dados de recursos (visualização)
                 href: webhooks-with-resource-data.md
-          - name: Controlar alterações
-            displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
+          - name: Controle de alterações
+            displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: delta-query-overview.md
               - name: Obter alterações em eventos (exemplo)
                 href: delta-query-events.md
