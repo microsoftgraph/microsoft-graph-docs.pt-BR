@@ -1,16 +1,16 @@
 ---
 title: 'Call: logTeleconferenceDeviceQuality'
-description: Registrar dados de qualidade do dispositivo de teleconferência de vídeo.
+description: Registre dados de qualidade do dispositivo de videoconferência.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 664c86f7aee5d5e720f428b0f5ca502b0445c605
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ad5b5496d4d80428cace4617fd4295f48cb3932b
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729980"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082319"
 ---
 # <a name="call-logteleconferencedevicequality"></a>Call: logTeleconferenceDeviceQuality
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Registrar dados de qualidade do dispositivo de teleconferência de vídeo.
+Registre dados de qualidade do dispositivo de videoconferência.
 
 O bot de interoperabilidade de vídeo de nuvem (CVI) representa dispositivos de teleconferência de vídeo (VTC) e atua como um agente back-to-back para um dispositivo VTC em uma chamada em conferência. Como um bot do CVI está no meio do VTC e da infraestrutura do Microsoft Teams como um proxy do VTC, ele tem dois trechos de mídia. Um trecho de mídia está entre a infraestrutura de bot e de equipes do CVI, como o servidor de conferência do teams ou um cliente do teams. O outro trecho de mídia está entre o bot CVI e o dispositivo VTC. 
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Calls.AccessMedia.All |
+| Aplicativo                            | Calls.AccessMedia.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -74,7 +74,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/app/calls/logTeleconferenceDeviceQuality
+POST https://graph.microsoft.com/beta/communications/calls/logTeleconferenceDeviceQuality
 Content-type: application/json
 
 {

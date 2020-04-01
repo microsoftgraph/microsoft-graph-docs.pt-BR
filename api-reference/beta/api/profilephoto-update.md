@@ -5,24 +5,22 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 6cc62c6f7ee588e04f9668456808aa89389a171f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b61a3313a60728e465ece48b13fa1c3c70bc956b
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455022"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082361"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho da foto que você pode adicionar a 4 MB.
+Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. Como há atualmente um limite de 8MB no tamanho total de cada solicitação REST, isso limita o tamanho da foto que você pode adicionar a até 8 MB.
 
 Use apenas o PUT para essa operação na versão beta.
-
-> **Observação** A operação atualizar foto no beta oferece suporte somente às caixas de correio corporativa ou de estudante do usuário e não às caixas de correio pessoais.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
