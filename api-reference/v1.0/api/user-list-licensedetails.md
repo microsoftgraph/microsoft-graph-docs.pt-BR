@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ff8d83748d8a285011b078abc028826d026125f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cbcc01b729eed5127f963e7c79ae73004c5e7bd4
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509084"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082403"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos licenseDetails.
+Recupere uma lista de objetos **licenseDetails** para usuários empresariais.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

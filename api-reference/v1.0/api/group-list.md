@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c6b9fc09f21dca5b12c4e46101183eb28233d168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c79460c1098d6c4def65fcf53211e8583b868f6c
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517016"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082354"
 ---
 # <a name="list-groups"></a>Listar grupos
 
-Namespace: microsoft.graph Lista todos os grupos em uma organização, incluindo, mas não se limitando a, Grupos do Office 365. 
+Namespace: microsoft.graph
+
+Lista todos os grupos em uma organização, inclusive, mas não se limitando a, Grupos do Office 365. 
 
 Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo. Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma operação [GET](group-get.md) para o grupo e especifique as propriedades em uma opção de consulta `$select` do OData. A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`.
 
