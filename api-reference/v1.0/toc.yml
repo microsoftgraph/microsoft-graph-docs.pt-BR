@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: /graph/auth/index?context=graph/api/1.0
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -45,7 +45,7 @@
         - name: Controle de alterações
           displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: /graph/delta-query-overview?context=graph/api/1.0
             - name: Obter alterações em eventos (exemplo)
               href: /graph/delta-query-events?context=graph/api/1.0
@@ -72,7 +72,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -104,7 +104,7 @@
               href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
     - name: Usar SDKs
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/sdks/sdks-overview?context=graph/api/1.0
         - name: Instalar o SDK
           href: /graph/sdks/sdk-installation?context=graph/api/1.0
@@ -159,11 +159,11 @@
     - name: Referência v1.0
       expanded: true
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -360,7 +360,7 @@
                   href: api/planneruser-list-tasks.md
         - name: Grupos
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -803,6 +803,8 @@
                   href: api/call-mute.md
                 - name: Atualizar status de gravação
                   href: api/call-updaterecordingstatus.md
+                - name: Dados de qualidade do dispositivo de teleconferência de log
+                  href: api/call-logteleconferencedevicequality.md
             - name: Reunião online
               href: resources/onlinemeeting.md
               items:
@@ -841,7 +843,7 @@
         - name: Dispositivos e aplicativos
           displayName: Intune
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/intune-graph-overview.md
             - name: Gerenciamento de aplicativos
               href: resources/intune-app-conceptual.md
@@ -3203,7 +3205,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -3277,7 +3279,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/azure-ad-overview.md
             - name: Aplicativo
               href: resources/application.md
@@ -3487,7 +3489,7 @@
               items:
                 - name: Avaliação de ameaças
                   items:
-                    - name: Visão Geral
+                    - name: Visão geral
                       href: resources/threatassessment-api-overview.md
                     - name: Solicitação de avaliação de ameaças
                       href: resources/threatassessmentrequest.md
@@ -4113,7 +4115,7 @@
         - name: Segurança
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/security-api-overview.md
             - name: Alertas
               href: resources/alert.md
@@ -4145,7 +4147,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -4185,7 +4187,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
