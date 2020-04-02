@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 20536e700a471aae159cc8db7b6cb1aa084a0624
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb0767e0dab914f63051524ba6ce2860ae577d6b
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799501"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082340"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -66,6 +66,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Nenhum                                                        | Inicie e interrompa a tela de compartilhamento na chamada.                                      |
 | **Operações de gravação**                                           |                                                             |                                              |
 | [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Atualiza o status da gravação.                      |
+| **Operações de Registro**                                           |                                                             |                                              |
 | [Registrar dados de qualidade do dispositivo](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Registre dados de qualidade do dispositivo de videoconferência.|
 
 ## <a name="properties"></a>Propriedades

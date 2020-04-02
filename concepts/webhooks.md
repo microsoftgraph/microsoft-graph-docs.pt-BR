@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4833bb30239e5ea30022617c2cf5adfa8b2d0544
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: fda8f362d3554f535012bc058ae4a0c7d5ddcfc7
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986153"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082347"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -73,6 +73,8 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 - Não há suporte a locatários do Microsoft Azure AD B2C.
 
 - Não há suporte a notificações para entidades de usuário para contas Microsoft pessoais.
+
+- Existe um [Problema conhecido](graph/concepts/known-issues#change-notifications) com as assinaturas do usuário.
 
 ### <a name="outlook-resource-limitations"></a>Limitações de recursos do Outlook
 
