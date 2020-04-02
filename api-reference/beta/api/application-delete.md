@@ -1,20 +1,20 @@
 ---
 title: Excluir aplicativo
 description: Exclui um aplicativo.
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ffb34c81dc5181b83d425d5b0902a406c97f32b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e420eb81346b56e969a745124e09fe6607c3e13b
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441540"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107203"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

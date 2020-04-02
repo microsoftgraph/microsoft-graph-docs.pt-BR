@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 9363bd711900cc6211e995c112581d3a91e08a04
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66e1817fa327444b51028292bcda59c8663bd683
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518984"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108414"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>tipo de recurso yammerGroupsActivityDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -22,15 +22,16 @@ Namespace: Microsoft. Graph
 | :----------------- | :------ |
 | reportRefreshDate  | Data    |
 | groupDisplayName   | String  |
-| isDeleted          | Boolean |
+| isDeleted          | Booliano |
 | ownerPrincipalName | String  |
 | lastActivityDate   | Data    |
 | groupType          | String  |
-| office365Connected | Boolean |
+| office365Connected | Booliano |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |
 | likedCount         | Int64   |
+| networkDisplayName | String  |
 | reportPeriod       | String  |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -54,7 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "memberCount": 1024, 
   "postedCount": 1024, 
   "readCount": 1024, 
-  "likedCount": 1024, 
+  "likedCount": 1024,
+  "networkDisplayName": "String",
   "reportPeriod": "String"
 }
 ```

@@ -1,20 +1,20 @@
 ---
 title: Adicionar proprietário
 description: Use esta API para adicionar um proprietário a um aplicativo.
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cc47d329e84cdd7cdea2356c81c3271f986e3d86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6299f481c3cfcad1eb62cd1460f7f0d2b071e62
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441456"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107070"
 ---
 # <a name="add-owner"></a>Adicionar proprietário
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

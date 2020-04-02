@@ -2,19 +2,19 @@
 title: List extensionproperties
 description: Recupere uma lista de objetos extensionproperty.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4affac01ce4f0ff3ea3d4a6428c3ecc1e20ec591
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fccabed52311a14c898af2ba9c2b219e91d1dbdc
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441512"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107175"
 ---
 # <a name="list-extensionproperties"></a>List extensionproperties
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

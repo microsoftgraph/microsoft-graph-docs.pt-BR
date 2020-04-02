@@ -1,20 +1,20 @@
 ---
 title: Atualizar aplicativo
 description: Atualiza as propriedades de um objeto Application.
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4229d563e562cd5d8d33086f2fef04d1607ffea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3095cd731824d7a388ad2520291453b3fd91e845
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441428"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107000"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | identifierUris | Coleção de cadeias de caracteres | Os URIs que identificam o aplicativo em seu locatário do Azure AD ou em um domínio personalizado verificado, se o aplicativo é multilocatário. Para obter mais informações, consulte [Application Objects and Service principal Objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
 | informações  | [informationalUrl](../resources/informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing do aplicativo, suporte, termos de serviço e URLs da declaração de privacidade. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, consulte [Adicionar termos de serviço e declaração de privacidade para aplicativos registrados do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Booliano | Especifica o tipo de aplicativo de fallback como cliente público; por exemplo, um aplicativo instalado em um dispositivo móvel. O valor padrão é `false`, que significa que o tipo de aplicativo de fallback é um cliente confidencial, como o aplicativo Web. Há determinados cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) Flow onde ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
-| keyCredentials | Coleção [keyCredential](../resources/keycredential.md) | O conjunto de credenciais chave associadas ao aplicativo. Não anulável. |
+| keyCredentials | [keyCredential](../resources/keycredential.md) collection | O conjunto de credenciais chave associadas ao aplicativo. Não anulável. |
 | logo | Stream | O principal logotipo do aplicativo. Não anulável. |
 | optionalClaims | optionalClaims | Desenvolvedores de aplicativos podem configurar declarações opcionais em aplicativos do Azure AD para especificar quais declarações desejam em tokens enviados ao aplicativo pelo serviço de token de segurança da Microsoft. Consulte [declarações opcionais](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) para obter mais informações. |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo. |

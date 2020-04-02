@@ -6,16 +6,16 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: fb6f3c92972255dc459263da1bb161de22e3f5b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a5d4c8f45baaa980e2c8bc3f32c348182b13bc1
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505564"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109051"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -174,7 +174,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 
 >**Observação:** o parâmetro @microsoft.graph.conflictBehavior deve ser incluído na URL, em vez do corpo da solicitação.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                   | Caminho REST
 |:---------------------------------------------------------|:------------------
@@ -195,6 +195,8 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Copiar item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Pesquisar itens](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Listar alterações em uma unidade](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [Seguir o item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Deixar de seguir o item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Criar link de compartilhamento](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -221,7 +223,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [folder]: folder.md
 [obter versões anteriores]: ../api/driveitem-list-versions.md
 [obtendo miniaturas]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

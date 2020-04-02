@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de usuário
 description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 38c82eff5d079651f0fbdaebfa3cf0bd1fbc2328
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd430b633629726ebb46e43aa0c0048a5f107b93
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519558"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108435"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma conta de usuário do AD do Azure. Herda de [directoryObject](directoryobject.md).
+Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directoryobject.md).
 
-Por motivos de desempenho, as operações [create](../api/user-post-users.md), [get](../api/user-get.md) e [list](../api/user-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades padrão estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.
+Por motivos de desempenho, as operações [criar](../api/user-post-users.md), [obter](../api/user-get.md) e [listar](../api/user-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades padrão estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.
 
 Esse recurso permite:
 

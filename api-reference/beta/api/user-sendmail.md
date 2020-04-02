@@ -1,16 +1,16 @@
 ---
 title: Enviar email
 description: Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
-author: dkershaw10
+author: svpsiva
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2ac87c9e2ea9bd0778db7d96dfa79a0280c42ce3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 3e722ea2ee069f5ea18f27c26e658847dfdfabdd
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618899"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107350"
 ---
 # <a name="send-mail"></a>Enviar email
 

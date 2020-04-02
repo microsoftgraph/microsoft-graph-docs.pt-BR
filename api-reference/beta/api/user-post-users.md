@@ -1,20 +1,20 @@
 ---
 title: Criar usuário
 description: Crie um novo usuário.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9f95d1b2264e6a09b8ab2a33345d09ba00e62604
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4329429d0927b2d97fb606891870d850b4807b93
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451667"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107406"
 ---
 # <a name="create-user"></a>Criar usuário
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |True se a conta estiver habilitada; caso contrário, false.|
+|accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
 |displayName |cadeia de caracteres |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|

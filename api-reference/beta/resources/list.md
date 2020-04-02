@@ -6,16 +6,16 @@ title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a7e59cf2e81371428e3816acc6e89c4a102ca40e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 861e3c0b90c68ebf7a4a554e94097f790182727e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522957"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109044"
 ---
 # <a name="list-resource"></a>Recurso List
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 [Excluir item de lista]: ../api/listitem-delete.md
 [Criar item de lista]: ../api/listitem-create.md
 [Obter atividades recentes]: ../api/activities-list.md
-[Obter canal WebSocket]: ../api/driveitem-subscriptions-socketio.md
+[Obter canal WebSocket]: ../api/subscriptions-socketio.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -135,7 +135,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 [listItem]: listitem.md
 [site]: site.md
 [systemFacet]: systemfacet.md
-[subscription]: subscription.md
+[assinatura]: subscription.md
 
 <!--
 {

@@ -1,16 +1,16 @@
 ---
 title: 'user: findRoomLists'
 description: Obtenha as listas de salas definidas em um locatário.
-author: angelgolfer-ms
+author: vrod9429
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb30a259bb83470c087cf6492f57b149c118790b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b7fa355c1edf3c08557556e5d338823fd9b1fa4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451963"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107882"
 ---
 # <a name="user-findroomlists"></a>user: findRoomLists
 

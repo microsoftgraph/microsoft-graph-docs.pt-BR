@@ -1,16 +1,16 @@
 ---
 title: Obter um usuário
 description: Recuperar as propriedades e os relacionamentos do objeto user.
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b1f274c1bdf2d179ed5ee91e98d7e0e8952d0cbd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4568b44ac0da8727a9f6155127ab3de88c8b7029
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451939"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107847"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 

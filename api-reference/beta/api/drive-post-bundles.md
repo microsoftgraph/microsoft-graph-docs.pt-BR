@@ -6,16 +6,16 @@ description: Criar um pacote de driveItems
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 254c0b445c8eed6d92a1b577029ff29f86039769
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58ac2e4d0e6cc4a4f587aec082b59fe4ab633037
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433178"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107266"
 ---
 # <a name="create-bundle"></a>Criar pacote
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 {
   "name": "Just some files",
-  "@name.conflictBehavior" : "rename",
+  "@microsoft.graph.conflictBehavior" : "rename",
   "bundle": { },
   "children": [
     { "id": "1234asdf" },
@@ -135,7 +135,7 @@ Content-Type: application/json
 
 {
   "name": "My Day at the Beach",
-  "@name.conflictBehavior" : "rename",
+  "@microsoft.graph.conflictBehavior" : "rename",
   "bundle": { "album": {} },
   "children": [
     { "id": "1234asdf" }

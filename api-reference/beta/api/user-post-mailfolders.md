@@ -2,19 +2,19 @@
 title: Criar MailFolder
 description: Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: svpsiva
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6126877177099548b4225670a7b377f981986e4d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e9326595874bf28a15d14b0742deafcea74c1a1f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451690"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107427"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

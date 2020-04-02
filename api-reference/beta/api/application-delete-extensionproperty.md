@@ -2,19 +2,19 @@
 title: Delete extensionproperty
 description: Excluir uma extensãoproperty.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 812cb9555495ee921cacd7ec05156879d6d3058c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 405518b58bb3bc9a5270992c681aaf098660a61e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441554"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107196"
 ---
 # <a name="delete-extensionproperty"></a>Delete extensionproperty
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

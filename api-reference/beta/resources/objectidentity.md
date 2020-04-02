@@ -3,18 +3,18 @@ title: tipo de recurso objectidentity
 description: Representa uma identidade usada para entrar em uma conta de usuário.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 7eeb5278b2f1d1743177c8d90e496cc719556f94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: users
+author: krbain
+ms.openlocfilehash: 61d68865c0b1e77339b2e2ec2b0f27f095fc4e8f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522523"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109023"
 ---
 # <a name="objectidentity-resource-type"></a>tipo de recurso objectidentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

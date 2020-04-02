@@ -2,15 +2,15 @@
 title: Listar calendários
 description: 'Obtenha calendários de todos do usuário (`/calendars` propriedade de navegação ), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. '
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: harini84
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2ffd86da4a725c3b020d12e7ae9a71e6a960a3ec
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: fad9538a84fa4a85a128bacbcbfce7457350a398
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639888"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107742"
 ---
 # <a name="list-calendars"></a>Listar calendários
 

@@ -1,20 +1,20 @@
 ---
 title: Listar scopedAdministratorOf
 description: Recupere uma lista de scopedRoleMembership para o usuário.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0303425884d3ae7b622c5e20a7ed1909feb99850
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48b8412b8646cb6daa9d802bd48a966e7d12c58a
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451767"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107574"
 ---
 # <a name="list-scopedadministratorof"></a>Listar scopedAdministratorOf
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

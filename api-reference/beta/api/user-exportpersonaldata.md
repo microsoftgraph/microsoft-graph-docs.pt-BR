@@ -2,19 +2,19 @@
 title: 'usuário: exportPersonalData'
 description: Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar os dados de um usuário organizacional.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9b453899973f9a296d333abb62e48093412f0b93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afd5ba023d78fa969936915bb28187bb5fd17f1f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451984"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107875"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização.
 
