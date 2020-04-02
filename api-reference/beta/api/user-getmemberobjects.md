@@ -2,62 +2,62 @@
 title: 'user: getMemberObjects'
 description: Retorna todos os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8f4014263a9b55a25c384727776534a4a6800f3d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7511ca196f996ce1dfb8f8803f84b93270601d9b
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451923"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107812"
 ---
-# <a name="user-getmemberobjects"></a><span data-ttu-id="36348-104">user: getMemberObjects</span><span class="sxs-lookup"><span data-stu-id="36348-104">user: getMemberObjects</span></span>
+# <a name="user-getmemberobjects"></a><span data-ttu-id="13703-104">user: getMemberObjects</span><span class="sxs-lookup"><span data-stu-id="13703-104">user: getMemberObjects</span></span>
 
-<span data-ttu-id="36348-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="36348-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="13703-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="13703-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="36348-p102">Retorna todos os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva.</span><span class="sxs-lookup"><span data-stu-id="36348-p102">Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.</span></span>
+<span data-ttu-id="13703-p102">Retorna todos os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. A verificação é transitiva.</span><span class="sxs-lookup"><span data-stu-id="13703-p102">Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="36348-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="36348-108">Permissions</span></span>
-<span data-ttu-id="36348-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36348-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="13703-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="13703-108">Permissions</span></span>
+<span data-ttu-id="13703-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="13703-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="36348-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="36348-111">Permission type</span></span>      | <span data-ttu-id="36348-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="36348-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="13703-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="13703-111">Permission type</span></span>      | <span data-ttu-id="13703-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="13703-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="36348-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="36348-113">Delegated (work or school account)</span></span> | <span data-ttu-id="36348-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="36348-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="36348-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="36348-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36348-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="36348-116">Not supported.</span></span>    |
-|<span data-ttu-id="36348-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="36348-117">Application</span></span> | <span data-ttu-id="36348-118">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36348-118">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="13703-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="13703-113">Delegated (work or school account)</span></span> | <span data-ttu-id="13703-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="13703-114">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="13703-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="13703-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="13703-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="13703-116">Not supported.</span></span>    |
+|<span data-ttu-id="13703-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="13703-117">Application</span></span> | <span data-ttu-id="13703-118">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13703-118">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="36348-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="36348-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="13703-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="13703-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/getMemberObjects
 ```
-## <a name="request-headers"></a><span data-ttu-id="36348-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="36348-120">Request headers</span></span>
-| <span data-ttu-id="36348-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="36348-121">Header</span></span>       | <span data-ttu-id="36348-122">Valor</span><span class="sxs-lookup"><span data-stu-id="36348-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="13703-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="13703-120">Request headers</span></span>
+| <span data-ttu-id="13703-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="13703-121">Header</span></span>       | <span data-ttu-id="13703-122">Valor</span><span class="sxs-lookup"><span data-stu-id="13703-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="36348-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="36348-123">Authorization</span></span>  | <span data-ttu-id="36348-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="36348-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="36348-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="36348-126">Content-Type</span></span>  | <span data-ttu-id="36348-127">application/json</span><span class="sxs-lookup"><span data-stu-id="36348-127">application/json</span></span>  |
+| <span data-ttu-id="13703-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="13703-123">Authorization</span></span>  | <span data-ttu-id="13703-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="13703-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="13703-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="13703-126">Content-Type</span></span>  | <span data-ttu-id="13703-127">application/json</span><span class="sxs-lookup"><span data-stu-id="13703-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="36348-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="36348-128">Request body</span></span>
-<span data-ttu-id="36348-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="36348-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="13703-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="13703-128">Request body</span></span>
+<span data-ttu-id="13703-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="13703-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="36348-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="36348-130">Parameter</span></span>    | <span data-ttu-id="36348-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="36348-131">Type</span></span>   |<span data-ttu-id="36348-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="36348-132">Description</span></span>|
+| <span data-ttu-id="13703-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="13703-130">Parameter</span></span>    | <span data-ttu-id="13703-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="13703-131">Type</span></span>   |<span data-ttu-id="13703-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="13703-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="36348-133">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="36348-133">securityEnabledOnly</span></span>|<span data-ttu-id="36348-134">Booliano</span><span class="sxs-lookup"><span data-stu-id="36348-134">Boolean</span></span>|<span data-ttu-id="36348-p105">**true** para especificar que somente grupos de segurança dos quais o usuário é membro devem ser retornados; **false** para especificar que todos os grupos dos quais o usuário é membro devem ser retornados. Observação: Definir esse parâmetro como **true** é suportado apenas ao chamar este método em um usuário.</span><span class="sxs-lookup"><span data-stu-id="36348-p105">**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.</span></span>|
+|<span data-ttu-id="13703-133">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="13703-133">securityEnabledOnly</span></span>|<span data-ttu-id="13703-134">Booliano</span><span class="sxs-lookup"><span data-stu-id="13703-134">Boolean</span></span>|<span data-ttu-id="13703-p105">**true** para especificar que somente grupos de segurança dos quais o usuário é membro devem ser retornados; **false** para especificar que todos os grupos dos quais o usuário é membro devem ser retornados. Observação: Definir esse parâmetro como **true** é suportado apenas ao chamar este método em um usuário.</span><span class="sxs-lookup"><span data-stu-id="13703-p105">**true** to specify that only security groups that the user is a member of should be returned; **false** to specify that all groups that the user is a member of should be returned. Note: Setting this parameter to **true** is only supported when calling this method on a user.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="36348-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="36348-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="13703-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="13703-137">Response</span></span>
 
-<span data-ttu-id="36348-138">Se bem-sucedido, este método retorna um código de resposta `200 OK` e a coleção de cadeias de caracteres no corpo da resposta que contém as IDs dos grupos e das funções de diretório dos quais o usuário é membro.</span><span class="sxs-lookup"><span data-stu-id="36348-138">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups and directory roles that the user is a member of.</span></span>
+<span data-ttu-id="13703-138">Se bem-sucedido, este método retorna um código de resposta `200 OK` e a coleção de cadeias de caracteres no corpo da resposta que contém as IDs dos grupos e das funções de diretório dos quais o usuário é membro.</span><span class="sxs-lookup"><span data-stu-id="13703-138">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups and directory roles that the user is a member of.</span></span>
 
-## <a name="example"></a><span data-ttu-id="36348-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="36348-139">Example</span></span>
-<span data-ttu-id="36348-140">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="36348-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="36348-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="36348-141">Request</span></span>
-<span data-ttu-id="36348-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="36348-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="13703-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="13703-139">Example</span></span>
+<span data-ttu-id="13703-140">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="13703-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="13703-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="13703-141">Request</span></span>
+<span data-ttu-id="13703-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="13703-142">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="36348-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="36348-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="13703-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="13703-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmemberobjects"
@@ -71,23 +71,23 @@ Content-length: 33
   "securityEnabledOnly": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="36348-144">C#</span><span class="sxs-lookup"><span data-stu-id="36348-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="13703-144">C#</span><span class="sxs-lookup"><span data-stu-id="13703-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="36348-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="36348-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="13703-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="13703-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="36348-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="36348-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="13703-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="13703-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmemberobjects-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="36348-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="36348-147">Response</span></span>
-<span data-ttu-id="36348-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="36348-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="13703-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="13703-147">Response</span></span>
+<span data-ttu-id="13703-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="13703-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

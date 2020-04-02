@@ -2,57 +2,57 @@
 title: 'usuário: reprocessLicenseAssignment'
 description: Reprocessar todas as atribuições de licença baseadas em grupo para o usuário.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6808b236195d354698dfad062eb5965f836e9dea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95bed640289a6fae53b0d01e8ab3c351d3531d6b
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451648"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107371"
 ---
-# <a name="user-reprocesslicenseassignment"></a><span data-ttu-id="510ab-103">usuário: reprocessLicenseAssignment</span><span class="sxs-lookup"><span data-stu-id="510ab-103">user: reprocessLicenseAssignment</span></span>
+# <a name="user-reprocesslicenseassignment"></a><span data-ttu-id="f3244-103">usuário: reprocessLicenseAssignment</span><span class="sxs-lookup"><span data-stu-id="f3244-103">user: reprocessLicenseAssignment</span></span>
 
-<span data-ttu-id="510ab-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="510ab-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f3244-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f3244-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="510ab-105">Reprocessar todas as atribuições de licença baseadas em grupo para o usuário.</span><span class="sxs-lookup"><span data-stu-id="510ab-105">Reprocess all group-based license assignments for the user.</span></span> <span data-ttu-id="510ab-106">Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="510ab-106">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span> <span data-ttu-id="510ab-107">Além disso [, consulte identificar e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="510ab-107">Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.</span></span>
+<span data-ttu-id="f3244-105">Reprocessar todas as atribuições de licença baseadas em grupo para o usuário.</span><span class="sxs-lookup"><span data-stu-id="f3244-105">Reprocess all group-based license assignments for the user.</span></span> <span data-ttu-id="f3244-106">Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span><span class="sxs-lookup"><span data-stu-id="f3244-106">To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).</span></span> <span data-ttu-id="f3244-107">Além disso [, consulte identificar e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.</span><span class="sxs-lookup"><span data-stu-id="f3244-107">Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="510ab-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="510ab-108">Permissions</span></span>
-<span data-ttu-id="510ab-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="510ab-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f3244-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="f3244-108">Permissions</span></span>
+<span data-ttu-id="f3244-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f3244-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="510ab-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="510ab-111">Permission type</span></span>      | <span data-ttu-id="510ab-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="510ab-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f3244-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f3244-111">Permission type</span></span>      | <span data-ttu-id="f3244-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f3244-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="510ab-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="510ab-113">Delegated (work or school account)</span></span> | <span data-ttu-id="510ab-114">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="510ab-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="510ab-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="510ab-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="510ab-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="510ab-116">Not supported.</span></span>    |
-|<span data-ttu-id="510ab-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="510ab-117">Application</span></span> | <span data-ttu-id="510ab-118">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="510ab-118">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f3244-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f3244-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f3244-114">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3244-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f3244-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f3244-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3244-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f3244-116">Not supported.</span></span>    |
+|<span data-ttu-id="f3244-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f3244-117">Application</span></span> | <span data-ttu-id="f3244-118">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3244-118">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="510ab-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="510ab-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f3244-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f3244-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id}/reprocessLicenseAssignment
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="510ab-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="510ab-120">Request headers</span></span>
-| <span data-ttu-id="510ab-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="510ab-121">Header</span></span>       | <span data-ttu-id="510ab-122">Valor</span><span class="sxs-lookup"><span data-stu-id="510ab-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f3244-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f3244-120">Request headers</span></span>
+| <span data-ttu-id="f3244-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f3244-121">Header</span></span>       | <span data-ttu-id="f3244-122">Valor</span><span class="sxs-lookup"><span data-stu-id="f3244-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="510ab-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="510ab-123">Authorization</span></span>  | <span data-ttu-id="510ab-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="510ab-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f3244-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="f3244-123">Authorization</span></span>  | <span data-ttu-id="f3244-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f3244-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="510ab-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="510ab-126">Request body</span></span>
-<span data-ttu-id="510ab-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="510ab-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f3244-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f3244-126">Request body</span></span>
+<span data-ttu-id="f3244-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f3244-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="510ab-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="510ab-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f3244-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3244-128">Response</span></span>
 
-<span data-ttu-id="510ab-129">Se bem-sucedido, este método retorna `200 OK` o código de resposta e um objeto [User](../resources/user.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="510ab-129">If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="f3244-129">Se bem-sucedido, este método retorna `200 OK` o código de resposta e um objeto [User](../resources/user.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f3244-129">If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="510ab-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="510ab-130">Example</span></span>
-<span data-ttu-id="510ab-131">O exemplo a seguir mostra como reprocessar atribuições de licença para o usuário.</span><span class="sxs-lookup"><span data-stu-id="510ab-131">The following example shows how to reprocess license assignments for the user.</span></span>
-### <a name="request"></a><span data-ttu-id="510ab-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="510ab-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="f3244-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f3244-130">Example</span></span>
+<span data-ttu-id="f3244-131">O exemplo a seguir mostra como reprocessar atribuições de licença para o usuário.</span><span class="sxs-lookup"><span data-stu-id="f3244-131">The following example shows how to reprocess license assignments for the user.</span></span>
+### <a name="request"></a><span data-ttu-id="f3244-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3244-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="510ab-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="510ab-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f3244-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="f3244-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_reprocessLicenseAssignment"
@@ -61,25 +61,25 @@ POST /users/{id}/reprocessLicenseAssignment
 POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83/reprocessLicenseAssignment
 
 ```
-# <a name="c"></a>[<span data-ttu-id="510ab-134">C#</span><span class="sxs-lookup"><span data-stu-id="510ab-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f3244-134">C#</span><span class="sxs-lookup"><span data-stu-id="f3244-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reprocesslicenseassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="510ab-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="510ab-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f3244-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f3244-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reprocesslicenseassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="510ab-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="510ab-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f3244-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f3244-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-reprocesslicenseassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="510ab-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="510ab-137">Response</span></span>
-<span data-ttu-id="510ab-138">A resposta é o objeto de usuário atualizado.</span><span class="sxs-lookup"><span data-stu-id="510ab-138">The response is the updated user object.</span></span>
+### <a name="response"></a><span data-ttu-id="f3244-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3244-137">Response</span></span>
+<span data-ttu-id="f3244-138">A resposta é o objeto de usuário atualizado.</span><span class="sxs-lookup"><span data-stu-id="f3244-138">The response is the updated user object.</span></span>
 
-><span data-ttu-id="510ab-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="510ab-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="f3244-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f3244-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

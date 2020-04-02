@@ -2,64 +2,64 @@
 title: 'usuário: exportPersonalData'
 description: Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar os dados de um usuário organizacional.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9b453899973f9a296d333abb62e48093412f0b93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afd5ba023d78fa969936915bb28187bb5fd17f1f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451984"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107875"
 ---
-# <a name="user-exportpersonaldata"></a><span data-ttu-id="73917-103">usuário: exportPersonalData</span><span class="sxs-lookup"><span data-stu-id="73917-103">user: exportPersonalData</span></span>
+# <a name="user-exportpersonaldata"></a><span data-ttu-id="bcd83-103">usuário: exportPersonalData</span><span class="sxs-lookup"><span data-stu-id="bcd83-103">user: exportPersonalData</span></span>
 
-<span data-ttu-id="73917-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="73917-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bcd83-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bcd83-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="73917-105">Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização.</span><span class="sxs-lookup"><span data-stu-id="73917-105">Submits a data policy operation request, made by a company administrator to export an organizational user's data.</span></span>
+<span data-ttu-id="bcd83-105">Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização.</span><span class="sxs-lookup"><span data-stu-id="bcd83-105">Submits a data policy operation request, made by a company administrator to export an organizational user's data.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="73917-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="73917-106">Permissions</span></span>
-<span data-ttu-id="73917-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="73917-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bcd83-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="bcd83-106">Permissions</span></span>
+<span data-ttu-id="bcd83-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bcd83-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="73917-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="73917-109">Permission type</span></span>      | <span data-ttu-id="73917-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="73917-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bcd83-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bcd83-109">Permission type</span></span>      | <span data-ttu-id="bcd83-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bcd83-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="73917-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="73917-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="73917-112">User. Export. All e User. Read. All</span><span class="sxs-lookup"><span data-stu-id="73917-112">User.Export.All and User.Read.All</span></span>  |
-|<span data-ttu-id="73917-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="73917-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="73917-114">Não aplicável</span><span class="sxs-lookup"><span data-stu-id="73917-114">Not applicable</span></span>  |
-|<span data-ttu-id="73917-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="73917-115">Application</span></span> | <span data-ttu-id="73917-116">User. Export. All e User. Read. All</span><span class="sxs-lookup"><span data-stu-id="73917-116">User.Export.All and User.Read.All</span></span> |
+|<span data-ttu-id="bcd83-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bcd83-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="bcd83-112">User. Export. All e User. Read. All</span><span class="sxs-lookup"><span data-stu-id="bcd83-112">User.Export.All and User.Read.All</span></span>  |
+|<span data-ttu-id="bcd83-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bcd83-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="bcd83-114">Não aplicável</span><span class="sxs-lookup"><span data-stu-id="bcd83-114">Not applicable</span></span>  |
+|<span data-ttu-id="bcd83-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bcd83-115">Application</span></span> | <span data-ttu-id="bcd83-116">User. Export. All e User. Read. All</span><span class="sxs-lookup"><span data-stu-id="bcd83-116">User.Export.All and User.Read.All</span></span> |
 
-><span data-ttu-id="73917-117">**Observação:** A exportação só pode ser realizada por um administrador da empresa quando a permissão delegada é usada.</span><span class="sxs-lookup"><span data-stu-id="73917-117">**Note:** Export can only be performed by a company administrator when the delegated permission is used.</span></span>
+><span data-ttu-id="bcd83-117">**Observação:** A exportação só pode ser realizada por um administrador da empresa quando a permissão delegada é usada.</span><span class="sxs-lookup"><span data-stu-id="bcd83-117">**Note:** Export can only be performed by a company administrator when the delegated permission is used.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="73917-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="73917-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bcd83-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bcd83-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id}/exportPersonalData
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="73917-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="73917-119">Request headers</span></span>
-| <span data-ttu-id="73917-120">Nome</span><span class="sxs-lookup"><span data-stu-id="73917-120">Name</span></span>       | <span data-ttu-id="73917-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="73917-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="bcd83-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bcd83-119">Request headers</span></span>
+| <span data-ttu-id="bcd83-120">Nome</span><span class="sxs-lookup"><span data-stu-id="bcd83-120">Name</span></span>       | <span data-ttu-id="bcd83-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="bcd83-121">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="73917-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="73917-122">Authorization</span></span>  | <span data-ttu-id="73917-123">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="73917-123">Bearer {token}</span></span>|
+| <span data-ttu-id="bcd83-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="bcd83-122">Authorization</span></span>  | <span data-ttu-id="bcd83-123">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="bcd83-123">Bearer {token}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="73917-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="73917-124">Request body</span></span>
-<span data-ttu-id="73917-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="73917-125">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bcd83-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bcd83-124">Request body</span></span>
+<span data-ttu-id="bcd83-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bcd83-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="73917-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="73917-126">Parameter</span></span>    | <span data-ttu-id="73917-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="73917-127">Type</span></span>   |<span data-ttu-id="73917-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="73917-128">Description</span></span> |
+| <span data-ttu-id="bcd83-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="bcd83-126">Parameter</span></span>    | <span data-ttu-id="bcd83-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="bcd83-127">Type</span></span>   |<span data-ttu-id="bcd83-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="bcd83-128">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="73917-129">storageLocation</span><span class="sxs-lookup"><span data-stu-id="73917-129">storageLocation</span></span>|<span data-ttu-id="73917-130">String</span><span class="sxs-lookup"><span data-stu-id="73917-130">String</span></span>|<span data-ttu-id="73917-131">Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de armazenamento do Azure, onde os dados devem ser exportados.</span><span class="sxs-lookup"><span data-stu-id="73917-131">This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.</span></span>|
+|<span data-ttu-id="bcd83-129">storageLocation</span><span class="sxs-lookup"><span data-stu-id="bcd83-129">storageLocation</span></span>|<span data-ttu-id="bcd83-130">String</span><span class="sxs-lookup"><span data-stu-id="bcd83-130">String</span></span>|<span data-ttu-id="bcd83-131">Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de armazenamento do Azure, onde os dados devem ser exportados.</span><span class="sxs-lookup"><span data-stu-id="bcd83-131">This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="73917-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="73917-132">Response</span></span>
-<span data-ttu-id="73917-133">Se tiver êxito, este método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="73917-133">If successful, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="73917-134">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="73917-134">It does not return anything in the response body.</span></span> <span data-ttu-id="73917-135">A resposta contém os cabeçalhos a seguir.</span><span class="sxs-lookup"><span data-stu-id="73917-135">The response contains the following headers.</span></span>
+## <a name="response"></a><span data-ttu-id="bcd83-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="bcd83-132">Response</span></span>
+<span data-ttu-id="bcd83-133">Se tiver êxito, este método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="bcd83-133">If successful, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="bcd83-134">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bcd83-134">It does not return anything in the response body.</span></span> <span data-ttu-id="bcd83-135">A resposta contém os cabeçalhos a seguir.</span><span class="sxs-lookup"><span data-stu-id="bcd83-135">The response contains the following headers.</span></span>
 
-| <span data-ttu-id="73917-136">Nome</span><span class="sxs-lookup"><span data-stu-id="73917-136">Name</span></span>       | <span data-ttu-id="73917-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="73917-137">Description</span></span> |
+| <span data-ttu-id="bcd83-136">Nome</span><span class="sxs-lookup"><span data-stu-id="bcd83-136">Name</span></span>       | <span data-ttu-id="bcd83-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="bcd83-137">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="73917-138">Local</span><span class="sxs-lookup"><span data-stu-id="73917-138">Location</span></span>  | <span data-ttu-id="73917-139">URL para verificar o status da solicitação.</span><span class="sxs-lookup"><span data-stu-id="73917-139">URL to check on the status of the Request.</span></span> |
-| <span data-ttu-id="73917-140">Repetir-após</span><span class="sxs-lookup"><span data-stu-id="73917-140">Retry-After</span></span>  | <span data-ttu-id="73917-141">Período de tempo em segundos.</span><span class="sxs-lookup"><span data-stu-id="73917-141">Time period in seconds.</span></span> <span data-ttu-id="73917-142">O criador de solicitação deve aguardar esse tempo depois de enviar uma solicitação para verificar o status.</span><span class="sxs-lookup"><span data-stu-id="73917-142">Request maker should wait this long after submitting a request to check for the status.</span></span> |
+| <span data-ttu-id="bcd83-138">Local</span><span class="sxs-lookup"><span data-stu-id="bcd83-138">Location</span></span>  | <span data-ttu-id="bcd83-139">URL para verificar o status da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bcd83-139">URL to check on the status of the Request.</span></span> |
+| <span data-ttu-id="bcd83-140">Repetir-após</span><span class="sxs-lookup"><span data-stu-id="bcd83-140">Retry-After</span></span>  | <span data-ttu-id="bcd83-141">Período de tempo em segundos.</span><span class="sxs-lookup"><span data-stu-id="bcd83-141">Time period in seconds.</span></span> <span data-ttu-id="bcd83-142">O criador de solicitação deve aguardar esse tempo depois de enviar uma solicitação para verificar o status.</span><span class="sxs-lookup"><span data-stu-id="bcd83-142">Request maker should wait this long after submitting a request to check for the status.</span></span> |
 
 
-## <a name="example"></a><span data-ttu-id="73917-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="73917-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="73917-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="73917-144">Request</span></span>
+## <a name="example"></a><span data-ttu-id="bcd83-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bcd83-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bcd83-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bcd83-144">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="73917-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="73917-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bcd83-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="bcd83-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_exportpersonaldata"
@@ -73,21 +73,21 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="73917-146">C#</span><span class="sxs-lookup"><span data-stu-id="73917-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bcd83-146">C#</span><span class="sxs-lookup"><span data-stu-id="bcd83-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-exportpersonaldata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="73917-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="73917-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bcd83-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bcd83-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-exportpersonaldata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="73917-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="73917-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bcd83-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bcd83-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="73917-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="73917-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="bcd83-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="bcd83-149">Response</span></span>
 
 ```http
 {
