@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: a76dc8ee7b7253a792d7722a9f8455f40581c023
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 743245f7f64ce0a3b31ca2f3dfadfb4b22d629aa
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926670"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082327"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -81,6 +81,12 @@ Atualmente, há suporte parcial para um calendário com base em uma Inscrição 
 Atualmente, a propriedade **onlineMeetingUrl** de um [evento](/graph/api/resources/event?view=graph-rest-1.0) de reunião do Skype indica a URL da reunião online. No entanto, essa propriedade para um evento de reunião do Microsoft Teams está definida como nula.
 
 A versão beta oferece uma solução alternativa, na qual é possível usar a propriedade **onlineMeetingProvider** de um [evento](/graph/api/resources/event?view=graph-rest-beta)para verificar se o provedor é o Microsoft Teams. Por meio da propriedade **onlineMeeting** do **evento**, você pode acessar o **joinUrl**.
+
+## <a name="change-notifications"></a>Notificações de alteração
+
+### <a name="additional-notifications-for-users"></a>Notificações adicionais para usuários
+
+[As assinaturas](/graph/api/resources/subscription) para alterações de **usuário ** com **ChangeType** definidas como **atualizadas** também receberão notificações de **ChangeType**: **atualizadas** na criaçã e na exclusão do usuário.
 
 ## <a name="cloud-communications"></a>Comunicações na nuvem 
 
