@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4d1d93d0cd61d2f84ef015b9e76be44dc6f8d68f
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 9c2138eaf656472c1a6395902a5bb3da18c52175
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932628"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43127171"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphDriveItem *driveItem = [[MSGraphDriveItem alloc] init];
 [driveItem setName:@"My Day at the Beach"];
-[driveItem set@name.conflictBehavior:@"rename"];
+[driveItem set@microsoft.graph.conflictBehavior:@"rename"];
 MSGraphBundle *bundle = [[MSGraphBundle alloc] init];
 MSGraphAlbum *album = [[MSGraphAlbum alloc] init];
 [bundle setAlbum:album];
