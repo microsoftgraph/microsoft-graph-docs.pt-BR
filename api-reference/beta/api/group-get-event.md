@@ -1,62 +1,62 @@
 ---
 title: Obter evento
 description: Obter um objeto event.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e56d324d3996e03e1426b2f6bd6f37fe04bd9124
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: cfab8c59a8afc1fdd6d0e2a1305e8687d927e218
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639574"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123752"
 ---
-# <a name="get-event"></a><span data-ttu-id="6e46c-103">Obter evento</span><span class="sxs-lookup"><span data-stu-id="6e46c-103">Get event</span></span>
+# <a name="get-event"></a><span data-ttu-id="d5081-103">Obter evento</span><span class="sxs-lookup"><span data-stu-id="d5081-103">Get event</span></span>
 
-<span data-ttu-id="6e46c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6e46c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d5081-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d5081-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6e46c-105">Obter um objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="6e46c-105">Get an [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="d5081-105">Obter um objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="d5081-105">Get an [event](../resources/event.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6e46c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6e46c-106">Permissions</span></span>
-<span data-ttu-id="6e46c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e46c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5081-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d5081-106">Permissions</span></span>
+<span data-ttu-id="d5081-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5081-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6e46c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6e46c-109">Permission type</span></span>      | <span data-ttu-id="6e46c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6e46c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d5081-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d5081-109">Permission type</span></span>      | <span data-ttu-id="d5081-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d5081-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6e46c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6e46c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6e46c-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6e46c-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6e46c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6e46c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e46c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6e46c-114">Not supported.</span></span>    |
-|<span data-ttu-id="6e46c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6e46c-115">Application</span></span> | <span data-ttu-id="6e46c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6e46c-116">Not supported.</span></span> |
+|<span data-ttu-id="d5081-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d5081-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d5081-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5081-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d5081-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d5081-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5081-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d5081-114">Not supported.</span></span>    |
+|<span data-ttu-id="d5081-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d5081-115">Application</span></span> | <span data-ttu-id="d5081-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d5081-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6e46c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6e46c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5081-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d5081-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}
 GET /groups/{id}/calendar/events/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6e46c-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6e46c-118">Optional query parameters</span></span>
-<span data-ttu-id="6e46c-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6e46c-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d5081-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d5081-118">Optional query parameters</span></span>
+<span data-ttu-id="d5081-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d5081-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6e46c-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6e46c-120">Request headers</span></span>
-| <span data-ttu-id="6e46c-121">Nome</span><span class="sxs-lookup"><span data-stu-id="6e46c-121">Name</span></span>       | <span data-ttu-id="6e46c-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="6e46c-122">Type</span></span> | <span data-ttu-id="6e46c-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e46c-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="d5081-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d5081-120">Request headers</span></span>
+| <span data-ttu-id="d5081-121">Nome</span><span class="sxs-lookup"><span data-stu-id="d5081-121">Name</span></span>       | <span data-ttu-id="d5081-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="d5081-122">Type</span></span> | <span data-ttu-id="d5081-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5081-123">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="6e46c-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="6e46c-124">Authorization</span></span>  | <span data-ttu-id="6e46c-125">string</span><span class="sxs-lookup"><span data-stu-id="6e46c-125">string</span></span> | <span data-ttu-id="6e46c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6e46c-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6e46c-128">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="6e46c-128">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="6e46c-129">string</span><span class="sxs-lookup"><span data-stu-id="6e46c-129">string</span></span> | <span data-ttu-id="6e46c-130">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="6e46c-130">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="6e46c-131">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="6e46c-131">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="6e46c-132">Opcional.</span><span class="sxs-lookup"><span data-stu-id="6e46c-132">Optional.</span></span> |
-| <span data-ttu-id="6e46c-133">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="6e46c-133">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="6e46c-134">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6e46c-134">string</span></span> | <span data-ttu-id="6e46c-135">O formato da propriedade **corpo** a ser retornada.</span><span class="sxs-lookup"><span data-stu-id="6e46c-135">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="6e46c-136">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="6e46c-136">Values can be "text" or "html".</span></span> <span data-ttu-id="6e46c-137">Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado.</span><span class="sxs-lookup"><span data-stu-id="6e46c-137">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="6e46c-138">Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="6e46c-138">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="6e46c-139">Opcional.</span><span class="sxs-lookup"><span data-stu-id="6e46c-139">Optional.</span></span> |
+| <span data-ttu-id="d5081-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="d5081-124">Authorization</span></span>  | <span data-ttu-id="d5081-125">string</span><span class="sxs-lookup"><span data-stu-id="d5081-125">string</span></span> | <span data-ttu-id="d5081-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d5081-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d5081-128">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="d5081-128">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="d5081-129">string</span><span class="sxs-lookup"><span data-stu-id="d5081-129">string</span></span> | <span data-ttu-id="d5081-130">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="d5081-130">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="d5081-131">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="d5081-131">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="d5081-132">Opcional.</span><span class="sxs-lookup"><span data-stu-id="d5081-132">Optional.</span></span> |
+| <span data-ttu-id="d5081-133">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="d5081-133">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="d5081-134">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d5081-134">string</span></span> | <span data-ttu-id="d5081-135">O formato da propriedade **corpo** a ser retornada.</span><span class="sxs-lookup"><span data-stu-id="d5081-135">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="d5081-136">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="d5081-136">Values can be "text" or "html".</span></span> <span data-ttu-id="d5081-137">Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado.</span><span class="sxs-lookup"><span data-stu-id="d5081-137">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="d5081-138">Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="d5081-138">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="d5081-139">Opcional.</span><span class="sxs-lookup"><span data-stu-id="d5081-139">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6e46c-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6e46c-140">Request body</span></span>
-<span data-ttu-id="6e46c-141">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6e46c-141">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5081-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d5081-140">Request body</span></span>
+<span data-ttu-id="d5081-141">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d5081-141">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6e46c-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e46c-142">Response</span></span>
-<span data-ttu-id="6e46c-143">Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6e46c-143">If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d5081-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5081-142">Response</span></span>
+<span data-ttu-id="d5081-143">Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d5081-143">If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6e46c-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6e46c-144">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="6e46c-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6e46c-145">Request</span></span>
-<span data-ttu-id="6e46c-146">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6e46c-146">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d5081-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d5081-144">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="d5081-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d5081-145">Request</span></span>
+<span data-ttu-id="d5081-146">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d5081-146">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="6e46c-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="6e46c-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5081-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5081-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_group_event"
@@ -64,24 +64,24 @@ GET /groups/{id}/calendar/events/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA==
 ```
-# <a name="c"></a>[<span data-ttu-id="6e46c-148">C#</span><span class="sxs-lookup"><span data-stu-id="6e46c-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5081-148">C#</span><span class="sxs-lookup"><span data-stu-id="d5081-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6e46c-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6e46c-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5081-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5081-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6e46c-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6e46c-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5081-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5081-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="6e46c-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e46c-151">Response</span></span>
-<span data-ttu-id="6e46c-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6e46c-152">The following is an example of the response.</span></span>
-><span data-ttu-id="6e46c-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6e46c-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="d5081-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5081-151">Response</span></span>
+<span data-ttu-id="d5081-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d5081-152">The following is an example of the response.</span></span>
+><span data-ttu-id="d5081-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d5081-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,57 +1,57 @@
 ---
 title: Excluir evento
 description: Excluir um objeto event.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 23efd70ad5bee60e8b07ddec2a0a52b20502655c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a0a76dc07db13476957d1bad31aacfb2ec76bf4
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420462"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123864"
 ---
-# <a name="delete-event"></a><span data-ttu-id="d4a9c-103">Excluir evento</span><span class="sxs-lookup"><span data-stu-id="d4a9c-103">Delete event</span></span>
+# <a name="delete-event"></a><span data-ttu-id="d5cdf-103">Excluir evento</span><span class="sxs-lookup"><span data-stu-id="d5cdf-103">Delete event</span></span>
 
-<span data-ttu-id="d4a9c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d4a9c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d5cdf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d5cdf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d4a9c-105">Excluir um objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="d4a9c-105">Delete an [event](../resources/event.md) object.</span></span>
+<span data-ttu-id="d5cdf-105">Excluir um objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="d5cdf-105">Delete an [event](../resources/event.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d4a9c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d4a9c-106">Permissions</span></span>
-<span data-ttu-id="d4a9c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d4a9c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5cdf-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d5cdf-106">Permissions</span></span>
+<span data-ttu-id="d5cdf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5cdf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d4a9c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d4a9c-109">Permission type</span></span>      | <span data-ttu-id="d4a9c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d4a9c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d5cdf-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d5cdf-109">Permission type</span></span>      | <span data-ttu-id="d5cdf-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d5cdf-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d4a9c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d4a9c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d4a9c-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4a9c-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d4a9c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d4a9c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d4a9c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-114">Not supported.</span></span>    |
-|<span data-ttu-id="d4a9c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d4a9c-115">Application</span></span> | <span data-ttu-id="d4a9c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-116">Not supported.</span></span> |
+|<span data-ttu-id="d5cdf-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d5cdf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d5cdf-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5cdf-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d5cdf-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d5cdf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5cdf-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-114">Not supported.</span></span>    |
+|<span data-ttu-id="d5cdf-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d5cdf-115">Application</span></span> | <span data-ttu-id="d5cdf-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d4a9c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d4a9c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5cdf-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d5cdf-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/events/{id}
 DELETE /groups/{id}/calendar/events/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d4a9c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d4a9c-118">Request headers</span></span>
-| <span data-ttu-id="d4a9c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="d4a9c-119">Name</span></span>       | <span data-ttu-id="d4a9c-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="d4a9c-120">Type</span></span> | <span data-ttu-id="d4a9c-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="d4a9c-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d5cdf-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d5cdf-118">Request headers</span></span>
+| <span data-ttu-id="d5cdf-119">Nome</span><span class="sxs-lookup"><span data-stu-id="d5cdf-119">Name</span></span>       | <span data-ttu-id="d5cdf-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="d5cdf-120">Type</span></span> | <span data-ttu-id="d5cdf-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5cdf-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="d4a9c-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d4a9c-122">Authorization</span></span>  | <span data-ttu-id="d4a9c-123">string</span><span class="sxs-lookup"><span data-stu-id="d4a9c-123">string</span></span>  | <span data-ttu-id="d4a9c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5cdf-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d5cdf-122">Authorization</span></span>  | <span data-ttu-id="d5cdf-123">string</span><span class="sxs-lookup"><span data-stu-id="d5cdf-123">string</span></span>  | <span data-ttu-id="d5cdf-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d4a9c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d4a9c-126">Request body</span></span>
-<span data-ttu-id="d4a9c-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5cdf-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d5cdf-126">Request body</span></span>
+<span data-ttu-id="d5cdf-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d4a9c-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="d4a9c-128">Response</span></span>
-<span data-ttu-id="d4a9c-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d5cdf-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5cdf-128">Response</span></span>
+<span data-ttu-id="d5cdf-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d4a9c-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d4a9c-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="d4a9c-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d4a9c-132">Request</span></span>
-<span data-ttu-id="d4a9c-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d5cdf-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d5cdf-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="d5cdf-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d5cdf-132">Request</span></span>
+<span data-ttu-id="d5cdf-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d4a9c-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="d4a9c-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5cdf-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5cdf-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_group_event"
@@ -59,24 +59,24 @@ DELETE /groups/{id}/calendar/events/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/events/AQMkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NwAzZWYARgAAA_b2VnUAiWNLj0xeSOs499YHAMT2RdsuOqRIlQZ4vOzp66YAAAIBDQAAAMT2RdsuOqRIlQZ4vOzp66YAAAIJOgAAAA==
 ```
-# <a name="c"></a>[<span data-ttu-id="d4a9c-135">C#</span><span class="sxs-lookup"><span data-stu-id="d4a9c-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5cdf-135">C#</span><span class="sxs-lookup"><span data-stu-id="d5cdf-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d4a9c-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d4a9c-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5cdf-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5cdf-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d4a9c-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d4a9c-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5cdf-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5cdf-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d4a9c-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="d4a9c-138">Response</span></span>
-<span data-ttu-id="d4a9c-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-139">The following is an example of the response.</span></span> 
-><span data-ttu-id="d4a9c-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d4a9c-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="d5cdf-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="d5cdf-138">Response</span></span>
+<span data-ttu-id="d5cdf-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-139">The following is an example of the response.</span></span> 
+><span data-ttu-id="d5cdf-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d5cdf-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

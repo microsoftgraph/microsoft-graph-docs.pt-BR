@@ -5,34 +5,34 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 34b397c23053d6a0dff698d0b55a53ac621ab6c1
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 3c50089bb2f0bf4278ce8450350c12e7c54c1bb2
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082699"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124221"
 ---
-# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="faea2-103">Call: logTeleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="faea2-103">call: logTeleconferenceDeviceQuality</span></span>
+# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="38dd7-103">Call: logTeleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="38dd7-103">call: logTeleconferenceDeviceQuality</span></span>
 
-<span data-ttu-id="faea2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="faea2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="38dd7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38dd7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="faea2-105">Registre dados de qualidade do dispositivo de videoconferência.</span><span class="sxs-lookup"><span data-stu-id="faea2-105">Log video teleconferencing device quality data.</span></span>
+<span data-ttu-id="38dd7-105">Registre dados de qualidade do dispositivo de videoconferência.</span><span class="sxs-lookup"><span data-stu-id="38dd7-105">Log video teleconferencing device quality data.</span></span>
 
-<span data-ttu-id="faea2-106">O bot de interoperabilidade de vídeo de nuvem (CVI) representa dispositivos de teleconferência de vídeo (VTC) e atua como um agente back-to-back para um dispositivo VTC em uma chamada em conferência.</span><span class="sxs-lookup"><span data-stu-id="faea2-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="faea2-107">Como um bot do CVI está no meio do VTC e da infraestrutura do Microsoft Teams como um proxy do VTC, ele tem dois trechos de mídia.</span><span class="sxs-lookup"><span data-stu-id="faea2-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="faea2-108">Um trecho de mídia está entre a infraestrutura de bot e de equipes do CVI, como o servidor de conferência do teams ou um cliente do teams.</span><span class="sxs-lookup"><span data-stu-id="faea2-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="faea2-109">O outro trecho de mídia está entre o bot CVI e o dispositivo VTC.</span><span class="sxs-lookup"><span data-stu-id="faea2-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
+<span data-ttu-id="38dd7-106">O bot de interoperabilidade de vídeo de nuvem (CVI) representa dispositivos de teleconferência de vídeo (VTC) e atua como um agente back-to-back para um dispositivo VTC em uma chamada em conferência.</span><span class="sxs-lookup"><span data-stu-id="38dd7-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="38dd7-107">Como um bot do CVI está no meio do VTC e da infraestrutura do Microsoft Teams como um proxy do VTC, ele tem dois trechos de mídia.</span><span class="sxs-lookup"><span data-stu-id="38dd7-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="38dd7-108">Um trecho de mídia está entre a infraestrutura de bot e de equipes do CVI, como o servidor de conferência do teams ou um cliente do teams.</span><span class="sxs-lookup"><span data-stu-id="38dd7-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="38dd7-109">O outro trecho de mídia está entre o bot CVI e o dispositivo VTC.</span><span class="sxs-lookup"><span data-stu-id="38dd7-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
 
-<span data-ttu-id="faea2-110">Os parceiros de terceiros possuem o trecho de mídia do VTC e a infraestrutura de equipe não pode acessar os dados de qualidade do trecho de chamada de terceiros.</span><span class="sxs-lookup"><span data-stu-id="faea2-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="faea2-111">Este método é somente para os parceiros do CVI fornecerem seus dados de qualidade de mídia.</span><span class="sxs-lookup"><span data-stu-id="faea2-111">This method is only for the CVI partners to provide their media quality data.</span></span>
+<span data-ttu-id="38dd7-110">Os parceiros de terceiros possuem o trecho de mídia do VTC e a infraestrutura de equipe não pode acessar os dados de qualidade do trecho de chamada de terceiros.</span><span class="sxs-lookup"><span data-stu-id="38dd7-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="38dd7-111">Este método é somente para os parceiros do CVI fornecerem seus dados de qualidade de mídia.</span><span class="sxs-lookup"><span data-stu-id="38dd7-111">This method is only for the CVI partners to provide their media quality data.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="faea2-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="faea2-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="38dd7-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="38dd7-112">Permissions</span></span>
 
-<span data-ttu-id="faea2-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="faea2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="38dd7-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38dd7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="faea2-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="faea2-115">Permission type</span></span>                        | <span data-ttu-id="faea2-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="faea2-116">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="38dd7-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="38dd7-115">Permission type</span></span>                        | <span data-ttu-id="38dd7-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="38dd7-116">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="faea2-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="faea2-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="faea2-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="faea2-118">Not supported.</span></span> |
-| <span data-ttu-id="faea2-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="faea2-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="faea2-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="faea2-120">Not supported.</span></span> |
-| <span data-ttu-id="faea2-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="faea2-121">Application</span></span>                            | <span data-ttu-id="faea2-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="faea2-122">Calls.AccessMedia.All</span></span> |
+| <span data-ttu-id="38dd7-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="38dd7-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="38dd7-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38dd7-118">Not supported.</span></span> |
+| <span data-ttu-id="38dd7-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="38dd7-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38dd7-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38dd7-120">Not supported.</span></span> |
+| <span data-ttu-id="38dd7-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38dd7-121">Application</span></span>                            | <span data-ttu-id="38dd7-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="38dd7-122">Calls.AccessMedia.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="faea2-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="faea2-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38dd7-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38dd7-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,32 +40,34 @@ ms.locfileid: "43082699"
 POST /communications/calls/logTeleconferenceDeviceQuality
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="faea2-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="faea2-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="38dd7-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="38dd7-124">Request headers</span></span>
 
-| <span data-ttu-id="faea2-125">Nome</span><span class="sxs-lookup"><span data-stu-id="faea2-125">Name</span></span>          | <span data-ttu-id="faea2-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="faea2-126">Description</span></span>   |
+| <span data-ttu-id="38dd7-125">Nome</span><span class="sxs-lookup"><span data-stu-id="38dd7-125">Name</span></span>          | <span data-ttu-id="38dd7-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="38dd7-126">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="faea2-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="faea2-127">Authorization</span></span> | <span data-ttu-id="faea2-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="faea2-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="faea2-130">Agente de usuário</span><span class="sxs-lookup"><span data-stu-id="faea2-130">User-Agent</span></span>    | <span data-ttu-id="faea2-131">Descreve o nome e a versão do aplicativo de chamada.</span><span class="sxs-lookup"><span data-stu-id="faea2-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="faea2-132">Os detalhes surgirão no Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="faea2-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="faea2-133">O formato sugerido é ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="faea2-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="faea2-134">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="faea2-134">Required.</span></span>|
+| <span data-ttu-id="38dd7-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="38dd7-127">Authorization</span></span> | <span data-ttu-id="38dd7-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38dd7-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="38dd7-130">Agente de usuário</span><span class="sxs-lookup"><span data-stu-id="38dd7-130">User-Agent</span></span>    | <span data-ttu-id="38dd7-131">Descreve o nome e a versão do aplicativo de chamada.</span><span class="sxs-lookup"><span data-stu-id="38dd7-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="38dd7-132">Os detalhes surgirão no Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="38dd7-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="38dd7-133">O formato sugerido é ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="38dd7-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="38dd7-134">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38dd7-134">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="faea2-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="faea2-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="38dd7-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="38dd7-135">Request body</span></span>
 
-<span data-ttu-id="faea2-136">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="faea2-136">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="38dd7-136">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="38dd7-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="faea2-137">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="faea2-137">Parameter</span></span>    | <span data-ttu-id="faea2-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="faea2-138">Type</span></span>        | <span data-ttu-id="faea2-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="faea2-139">Description</span></span> |
+| <span data-ttu-id="38dd7-137">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="38dd7-137">Parameter</span></span>    | <span data-ttu-id="38dd7-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="38dd7-138">Type</span></span>        | <span data-ttu-id="38dd7-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="38dd7-139">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="faea2-140">qualidade</span><span class="sxs-lookup"><span data-stu-id="faea2-140">quality</span></span>|[<span data-ttu-id="faea2-141">teleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="faea2-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="faea2-142">Dados de qualidade do trecho de mídia do VTC.</span><span class="sxs-lookup"><span data-stu-id="faea2-142">Quality data of VTC media leg.</span></span>|
+|<span data-ttu-id="38dd7-140">qualidade</span><span class="sxs-lookup"><span data-stu-id="38dd7-140">quality</span></span>|[<span data-ttu-id="38dd7-141">teleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="38dd7-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="38dd7-142">Dados de qualidade do trecho de mídia do VTC.</span><span class="sxs-lookup"><span data-stu-id="38dd7-142">Quality data of VTC media leg.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="faea2-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="faea2-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38dd7-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="38dd7-143">Response</span></span>
 
-<span data-ttu-id="faea2-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="faea2-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="38dd7-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38dd7-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="faea2-146">Exemplos</span><span class="sxs-lookup"><span data-stu-id="faea2-146">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="38dd7-146">Exemplos</span><span class="sxs-lookup"><span data-stu-id="38dd7-146">Examples</span></span>
 
-<span data-ttu-id="faea2-147">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="faea2-147">The following example shows how to call this API.</span></span>
+<span data-ttu-id="38dd7-147">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="38dd7-147">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="faea2-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="faea2-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="38dd7-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38dd7-148">Request</span></span>
 
-<span data-ttu-id="faea2-149">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="faea2-149">The following is an example of the request.</span></span>
+<span data-ttu-id="38dd7-149">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="38dd7-149">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="38dd7-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="38dd7-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call_logteleconferencedevicequality"
@@ -160,10 +162,28 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="38dd7-151">C#</span><span class="sxs-lookup"><span data-stu-id="38dd7-151">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-logteleconferencedevicequality-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="faea2-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="faea2-150">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="38dd7-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="38dd7-152">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-logteleconferencedevicequality-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="faea2-151">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="faea2-151">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="38dd7-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38dd7-153">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-logteleconferencedevicequality-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="38dd7-154">Java</span><span class="sxs-lookup"><span data-stu-id="38dd7-154">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-logteleconferencedevicequality-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="38dd7-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="38dd7-155">Response</span></span>
+
+<span data-ttu-id="38dd7-156">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="38dd7-156">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

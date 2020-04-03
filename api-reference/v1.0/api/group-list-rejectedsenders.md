@@ -1,58 +1,58 @@
 ---
 title: Listar rejectedSenders
 description: 'Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para este grupo. '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 28a16c7468cbe1b0639446bd776683ab8ab257f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d982ecf52ac6bf8ed7d7cc7e6b7f535bfdba9370
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517044"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125173"
 ---
-# <a name="list-rejectedsenders"></a><span data-ttu-id="a9567-103">Listar rejectedSenders</span><span class="sxs-lookup"><span data-stu-id="a9567-103">List rejectedSenders</span></span>
+# <a name="list-rejectedsenders"></a><span data-ttu-id="02b78-103">Listar rejectedSenders</span><span class="sxs-lookup"><span data-stu-id="02b78-103">List rejectedSenders</span></span>
 
-<span data-ttu-id="a9567-104">Namespace: Microsoft. Graph obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para esse grupo.</span><span class="sxs-lookup"><span data-stu-id="a9567-104">Namespace: microsoft.graph Get a list of users or groups that are in the rejected-senders list for this group.</span></span> 
+<span data-ttu-id="02b78-104">Namespace: Microsoft. Graph obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para esse grupo.</span><span class="sxs-lookup"><span data-stu-id="02b78-104">Namespace: microsoft.graph Get a list of users or groups that are in the rejected-senders list for this group.</span></span> 
 
-<span data-ttu-id="a9567-p101">Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="a9567-p101">Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="02b78-p101">Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.</span><span class="sxs-lookup"><span data-stu-id="02b78-p101">Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a9567-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="a9567-107">Permissions</span></span>
-<span data-ttu-id="a9567-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9567-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="02b78-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="02b78-107">Permissions</span></span>
+<span data-ttu-id="02b78-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="02b78-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a9567-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a9567-110">Permission type</span></span>      | <span data-ttu-id="a9567-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a9567-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="02b78-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="02b78-110">Permission type</span></span>      | <span data-ttu-id="02b78-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="02b78-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a9567-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a9567-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a9567-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a9567-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a9567-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a9567-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9567-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a9567-115">Not supported.</span></span>    |
-|<span data-ttu-id="a9567-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a9567-116">Application</span></span> | <span data-ttu-id="a9567-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a9567-117">Not supported.</span></span> |
+|<span data-ttu-id="02b78-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="02b78-112">Delegated (work or school account)</span></span> | <span data-ttu-id="02b78-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02b78-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="02b78-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="02b78-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02b78-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="02b78-115">Not supported.</span></span>    |
+|<span data-ttu-id="02b78-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="02b78-116">Application</span></span> | <span data-ttu-id="02b78-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="02b78-117">Not supported.</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="a9567-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a9567-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="02b78-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="02b78-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/rejectedSenders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a9567-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a9567-119">Optional query parameters</span></span>
-<span data-ttu-id="a9567-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a9567-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="02b78-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="02b78-119">Optional query parameters</span></span>
+<span data-ttu-id="02b78-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="02b78-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a9567-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a9567-121">Request headers</span></span>
-| <span data-ttu-id="a9567-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="a9567-122">Header</span></span>       | <span data-ttu-id="a9567-123">Valor</span><span class="sxs-lookup"><span data-stu-id="a9567-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="02b78-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="02b78-121">Request headers</span></span>
+| <span data-ttu-id="02b78-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="02b78-122">Header</span></span>       | <span data-ttu-id="02b78-123">Valor</span><span class="sxs-lookup"><span data-stu-id="02b78-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="a9567-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a9567-124">Authorization</span></span>  | <span data-ttu-id="a9567-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a9567-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="02b78-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="02b78-124">Authorization</span></span>  | <span data-ttu-id="02b78-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="02b78-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="a9567-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a9567-127">Request body</span></span>
-<span data-ttu-id="a9567-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a9567-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="02b78-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="02b78-127">Request body</span></span>
+<span data-ttu-id="02b78-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="02b78-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a9567-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9567-129">Response</span></span>
-<span data-ttu-id="a9567-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a9567-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="02b78-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="02b78-129">Response</span></span>
+<span data-ttu-id="02b78-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02b78-130">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a9567-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a9567-131">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="a9567-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a9567-132">Request</span></span>
-<span data-ttu-id="a9567-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a9567-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="02b78-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="02b78-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="02b78-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="02b78-132">Request</span></span>
+<span data-ttu-id="02b78-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="02b78-133">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a9567-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="a9567-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="02b78-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="02b78-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rejectedsenders"
@@ -60,28 +60,28 @@ GET /groups/{id}/rejectedSenders
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
-# <a name="c"></a>[<span data-ttu-id="a9567-135">C#</span><span class="sxs-lookup"><span data-stu-id="a9567-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="02b78-135">C#</span><span class="sxs-lookup"><span data-stu-id="02b78-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rejectedsenders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a9567-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a9567-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="02b78-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="02b78-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rejectedsenders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a9567-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a9567-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="02b78-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="02b78-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rejectedsenders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a9567-138">Java</span><span class="sxs-lookup"><span data-stu-id="a9567-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="02b78-138">Java</span><span class="sxs-lookup"><span data-stu-id="02b78-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rejectedsenders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="a9567-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9567-139">Response</span></span>
-<span data-ttu-id="a9567-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a9567-140">The following is an example of the response.</span></span>
-><span data-ttu-id="a9567-141">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a9567-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a9567-142">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a9567-142">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="02b78-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="02b78-139">Response</span></span>
+<span data-ttu-id="02b78-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="02b78-140">The following is an example of the response.</span></span>
+><span data-ttu-id="02b78-141">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="02b78-141">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="02b78-142">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="02b78-142">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
