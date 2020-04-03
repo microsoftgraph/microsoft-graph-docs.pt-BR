@@ -1,97 +1,97 @@
 ---
 title: Criar grupo
 description: 'Crie um novo grupo conforme especificado no corpo da solicitação. '
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c3bd3331a9dacf3d2b2959f961a2e7f744d78898
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 6ba8b5808819358d31aa41e71251beefc71c92b6
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061843"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124480"
 ---
-# <a name="create-group"></a><span data-ttu-id="954cd-103">Criar grupo</span><span class="sxs-lookup"><span data-stu-id="954cd-103">Create group</span></span>
+# <a name="create-group"></a><span data-ttu-id="82706-103">Criar grupo</span><span class="sxs-lookup"><span data-stu-id="82706-103">Create group</span></span>
 
-<span data-ttu-id="954cd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="954cd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="82706-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="82706-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="954cd-105">Crie um novo grupo conforme especificado no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="954cd-105">Create a new group as specified in the request body.</span></span> <span data-ttu-id="954cd-106">Você pode criar os seguintes tipos de grupos:</span><span class="sxs-lookup"><span data-stu-id="954cd-106">You can create the following types of groups:</span></span>
+<span data-ttu-id="82706-105">Crie um novo grupo conforme especificado no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="82706-105">Create a new group as specified in the request body.</span></span> <span data-ttu-id="82706-106">Você pode criar os seguintes tipos de grupos:</span><span class="sxs-lookup"><span data-stu-id="82706-106">You can create the following types of groups:</span></span>
 
-* <span data-ttu-id="954cd-107">Grupo do Office 365 (grupo unificado)</span><span class="sxs-lookup"><span data-stu-id="954cd-107">Office 365 group (unified group)</span></span>
-* <span data-ttu-id="954cd-108">Grupo de segurança</span><span class="sxs-lookup"><span data-stu-id="954cd-108">Security group</span></span>
+* <span data-ttu-id="82706-107">Grupo do Office 365 (grupo unificado)</span><span class="sxs-lookup"><span data-stu-id="82706-107">Office 365 group (unified group)</span></span>
+* <span data-ttu-id="82706-108">Grupo de segurança</span><span class="sxs-lookup"><span data-stu-id="82706-108">Security group</span></span>
 
-<span data-ttu-id="954cd-109">Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-109">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="954cd-110">Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="954cd-110">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span>
+<span data-ttu-id="82706-109">Esta operação retorna, por padrão, apenas um subconjunto das propriedades de cada grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-109">This operation returns by default only a subset of the properties for each group.</span></span> <span data-ttu-id="82706-110">Essas propriedades padrão estão listadas na seção [Propriedades](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="82706-110">These default properties are noted in the [Properties](../resources/group.md#properties) section.</span></span>
 
-<span data-ttu-id="954cd-111">Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta do `$select` OData.</span><span class="sxs-lookup"><span data-stu-id="954cd-111">To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.</span></span>
+<span data-ttu-id="82706-111">Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta do `$select` OData.</span><span class="sxs-lookup"><span data-stu-id="82706-111">To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.</span></span>
 
-> <span data-ttu-id="954cd-112">**Observação**: Embora o Microsoft Teams tenha como base grupos do Office 365, atualmente não é possível criar uma equipe por meio desta API.</span><span class="sxs-lookup"><span data-stu-id="954cd-112">**Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API.</span></span> <span data-ttu-id="954cd-113">Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="954cd-113">You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.</span></span>
+> <span data-ttu-id="82706-112">**Observação**: Embora o Microsoft Teams tenha como base grupos do Office 365, atualmente não é possível criar uma equipe por meio desta API.</span><span class="sxs-lookup"><span data-stu-id="82706-112">**Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API.</span></span> <span data-ttu-id="82706-113">Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="82706-113">You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="954cd-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="954cd-114">Permissions</span></span>
-<span data-ttu-id="954cd-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="954cd-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="82706-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="82706-114">Permissions</span></span>
+<span data-ttu-id="82706-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="82706-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="954cd-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="954cd-117">Permission type</span></span>      | <span data-ttu-id="954cd-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="954cd-118">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="82706-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="82706-117">Permission type</span></span>      | <span data-ttu-id="82706-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="82706-118">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="954cd-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="954cd-119">Delegated (work or school account)</span></span> | <span data-ttu-id="954cd-120">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="954cd-120">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
-|<span data-ttu-id="954cd-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="954cd-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="954cd-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="954cd-122">Not supported.</span></span>    |
-|<span data-ttu-id="954cd-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="954cd-123">Application</span></span> | <span data-ttu-id="954cd-124">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="954cd-124">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="82706-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="82706-119">Delegated (work or school account)</span></span> | <span data-ttu-id="82706-120">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="82706-120">Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
+|<span data-ttu-id="82706-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="82706-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82706-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="82706-122">Not supported.</span></span>    |
+|<span data-ttu-id="82706-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="82706-123">Application</span></span> | <span data-ttu-id="82706-124">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82706-124">Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="954cd-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="954cd-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82706-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="82706-125">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="954cd-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="954cd-126">Request headers</span></span>
-| <span data-ttu-id="954cd-127">Nome</span><span class="sxs-lookup"><span data-stu-id="954cd-127">Name</span></span>       | <span data-ttu-id="954cd-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="954cd-128">Type</span></span> | <span data-ttu-id="954cd-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="954cd-129">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="82706-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="82706-126">Request headers</span></span>
+| <span data-ttu-id="82706-127">Nome</span><span class="sxs-lookup"><span data-stu-id="82706-127">Name</span></span>       | <span data-ttu-id="82706-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="82706-128">Type</span></span> | <span data-ttu-id="82706-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="82706-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="954cd-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="954cd-130">Authorization</span></span>  | <span data-ttu-id="954cd-131">string</span><span class="sxs-lookup"><span data-stu-id="954cd-131">string</span></span>  | <span data-ttu-id="954cd-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="954cd-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="954cd-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="954cd-134">Content-Type</span></span>  | <span data-ttu-id="954cd-135">application/json</span><span class="sxs-lookup"><span data-stu-id="954cd-135">application/json</span></span>  |
+| <span data-ttu-id="82706-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="82706-130">Authorization</span></span>  | <span data-ttu-id="82706-131">string</span><span class="sxs-lookup"><span data-stu-id="82706-131">string</span></span>  | <span data-ttu-id="82706-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82706-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="82706-134">Content-Type</span><span class="sxs-lookup"><span data-stu-id="82706-134">Content-Type</span></span>  | <span data-ttu-id="82706-135">application/json</span><span class="sxs-lookup"><span data-stu-id="82706-135">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="954cd-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="954cd-136">Request body</span></span>
-<span data-ttu-id="954cd-137">A tabela a seguir mostra as propriedades do recurso [group](../resources/group.md) que você deve especificar quando criar um grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-137">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="82706-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="82706-136">Request body</span></span>
+<span data-ttu-id="82706-137">A tabela a seguir mostra as propriedades do recurso [group](../resources/group.md) que você deve especificar quando criar um grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-137">The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group.</span></span> 
 
-| <span data-ttu-id="954cd-138">Propriedade</span><span class="sxs-lookup"><span data-stu-id="954cd-138">Property</span></span> | <span data-ttu-id="954cd-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="954cd-139">Type</span></span> | <span data-ttu-id="954cd-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="954cd-140">Description</span></span>|
+| <span data-ttu-id="82706-138">Propriedade</span><span class="sxs-lookup"><span data-stu-id="82706-138">Property</span></span> | <span data-ttu-id="82706-139">Tipo</span><span class="sxs-lookup"><span data-stu-id="82706-139">Type</span></span> | <span data-ttu-id="82706-140">Descrição</span><span class="sxs-lookup"><span data-stu-id="82706-140">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="954cd-141">displayName</span><span class="sxs-lookup"><span data-stu-id="954cd-141">displayName</span></span> | <span data-ttu-id="954cd-142">string</span><span class="sxs-lookup"><span data-stu-id="954cd-142">string</span></span> | <span data-ttu-id="954cd-143">O nome para exibição no catálogo de endereços do grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-143">The name to display in the address book for the group.</span></span> <span data-ttu-id="954cd-144">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="954cd-144">Required.</span></span> |
-| <span data-ttu-id="954cd-145">description</span><span class="sxs-lookup"><span data-stu-id="954cd-145">description</span></span> | <span data-ttu-id="954cd-146">string</span><span class="sxs-lookup"><span data-stu-id="954cd-146">string</span></span> | <span data-ttu-id="954cd-147">Uma descrição para o grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-147">A description for the group.</span></span> <span data-ttu-id="954cd-148">Máx.</span><span class="sxs-lookup"><span data-stu-id="954cd-148">Max.</span></span> <span data-ttu-id="954cd-149">comprimento: 1024 caracteres.</span><span class="sxs-lookup"><span data-stu-id="954cd-149">length: 1024 characters.</span></span> <span data-ttu-id="954cd-150">Opcional.</span><span class="sxs-lookup"><span data-stu-id="954cd-150">Optional.</span></span> |
-| <span data-ttu-id="954cd-151">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="954cd-151">mailEnabled</span></span> | <span data-ttu-id="954cd-152">booliano</span><span class="sxs-lookup"><span data-stu-id="954cd-152">boolean</span></span> | <span data-ttu-id="954cd-153">Defina como **true** para grupos habilitados para email.</span><span class="sxs-lookup"><span data-stu-id="954cd-153">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="954cd-154">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="954cd-154">Required.</span></span> |
-| <span data-ttu-id="954cd-155">mailNickname</span><span class="sxs-lookup"><span data-stu-id="954cd-155">mailNickname</span></span> | <span data-ttu-id="954cd-156">string</span><span class="sxs-lookup"><span data-stu-id="954cd-156">string</span></span> | <span data-ttu-id="954cd-157">O alias de email do grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-157">The mail alias for the group.</span></span> <span data-ttu-id="954cd-158">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="954cd-158">Required.</span></span> |
-| <span data-ttu-id="954cd-159">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="954cd-159">securityEnabled</span></span> | <span data-ttu-id="954cd-160">booliano</span><span class="sxs-lookup"><span data-stu-id="954cd-160">boolean</span></span> | <span data-ttu-id="954cd-161">Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="954cd-161">Set to **true** for security-enabled groups, including Office 365 groups.</span></span> <span data-ttu-id="954cd-162">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="954cd-162">Required.</span></span> |
-| <span data-ttu-id="954cd-163">owners</span><span class="sxs-lookup"><span data-stu-id="954cd-163">owners</span></span> | <span data-ttu-id="954cd-164">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="954cd-164">string collection</span></span> | <span data-ttu-id="954cd-165">Esta propriedade representa os proprietários do grupo na hora de criação.</span><span class="sxs-lookup"><span data-stu-id="954cd-165">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="954cd-166">Opcional.</span><span class="sxs-lookup"><span data-stu-id="954cd-166">Optional.</span></span> |
-| <span data-ttu-id="954cd-167">membros</span><span class="sxs-lookup"><span data-stu-id="954cd-167">members</span></span> | <span data-ttu-id="954cd-168">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="954cd-168">string collection</span></span> | <span data-ttu-id="954cd-169">Esta propriedade representa os membros do grupo na hora de criação.</span><span class="sxs-lookup"><span data-stu-id="954cd-169">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="954cd-170">Opcional.</span><span class="sxs-lookup"><span data-stu-id="954cd-170">Optional.</span></span> |
+| <span data-ttu-id="82706-141">displayName</span><span class="sxs-lookup"><span data-stu-id="82706-141">displayName</span></span> | <span data-ttu-id="82706-142">string</span><span class="sxs-lookup"><span data-stu-id="82706-142">string</span></span> | <span data-ttu-id="82706-143">O nome para exibição no catálogo de endereços do grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-143">The name to display in the address book for the group.</span></span> <span data-ttu-id="82706-144">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82706-144">Required.</span></span> |
+| <span data-ttu-id="82706-145">description</span><span class="sxs-lookup"><span data-stu-id="82706-145">description</span></span> | <span data-ttu-id="82706-146">string</span><span class="sxs-lookup"><span data-stu-id="82706-146">string</span></span> | <span data-ttu-id="82706-147">Uma descrição para o grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-147">A description for the group.</span></span> <span data-ttu-id="82706-148">Máx.</span><span class="sxs-lookup"><span data-stu-id="82706-148">Max.</span></span> <span data-ttu-id="82706-149">comprimento: 1024 caracteres.</span><span class="sxs-lookup"><span data-stu-id="82706-149">length: 1024 characters.</span></span> <span data-ttu-id="82706-150">Opcional.</span><span class="sxs-lookup"><span data-stu-id="82706-150">Optional.</span></span> |
+| <span data-ttu-id="82706-151">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="82706-151">mailEnabled</span></span> | <span data-ttu-id="82706-152">booliano</span><span class="sxs-lookup"><span data-stu-id="82706-152">boolean</span></span> | <span data-ttu-id="82706-153">Defina como **true** para grupos habilitados para email.</span><span class="sxs-lookup"><span data-stu-id="82706-153">Set to **true** for mail-enabled groups.</span></span> <span data-ttu-id="82706-154">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82706-154">Required.</span></span> |
+| <span data-ttu-id="82706-155">mailNickname</span><span class="sxs-lookup"><span data-stu-id="82706-155">mailNickname</span></span> | <span data-ttu-id="82706-156">string</span><span class="sxs-lookup"><span data-stu-id="82706-156">string</span></span> | <span data-ttu-id="82706-157">O alias de email do grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-157">The mail alias for the group.</span></span> <span data-ttu-id="82706-158">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82706-158">Required.</span></span> |
+| <span data-ttu-id="82706-159">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="82706-159">securityEnabled</span></span> | <span data-ttu-id="82706-160">booliano</span><span class="sxs-lookup"><span data-stu-id="82706-160">boolean</span></span> | <span data-ttu-id="82706-161">Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="82706-161">Set to **true** for security-enabled groups, including Office 365 groups.</span></span> <span data-ttu-id="82706-162">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82706-162">Required.</span></span> |
+| <span data-ttu-id="82706-163">owners</span><span class="sxs-lookup"><span data-stu-id="82706-163">owners</span></span> | <span data-ttu-id="82706-164">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="82706-164">string collection</span></span> | <span data-ttu-id="82706-165">Esta propriedade representa os proprietários do grupo na hora de criação.</span><span class="sxs-lookup"><span data-stu-id="82706-165">This property represents the owners for the group at creation time.</span></span> <span data-ttu-id="82706-166">Opcional.</span><span class="sxs-lookup"><span data-stu-id="82706-166">Optional.</span></span> |
+| <span data-ttu-id="82706-167">membros</span><span class="sxs-lookup"><span data-stu-id="82706-167">members</span></span> | <span data-ttu-id="82706-168">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="82706-168">string collection</span></span> | <span data-ttu-id="82706-169">Esta propriedade representa os membros do grupo na hora de criação.</span><span class="sxs-lookup"><span data-stu-id="82706-169">This property represents the members for the group at creation time.</span></span> <span data-ttu-id="82706-170">Opcional.</span><span class="sxs-lookup"><span data-stu-id="82706-170">Optional.</span></span> |
 
-> <span data-ttu-id="954cd-171">**Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.</span><span class="sxs-lookup"><span data-stu-id="954cd-171">**Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.</span></span>
+> <span data-ttu-id="82706-171">**Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.</span><span class="sxs-lookup"><span data-stu-id="82706-171">**Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.</span></span>
 
-<span data-ttu-id="954cd-172">Especifique outras propriedades graváveis conforme necessário para o seu grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-172">Specify other writable properties as necessary for your group.</span></span> <span data-ttu-id="954cd-173">Confira mais informações nas propriedades do recurso [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="954cd-173">For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
+<span data-ttu-id="82706-172">Especifique outras propriedades graváveis conforme necessário para o seu grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-172">Specify other writable properties as necessary for your group.</span></span> <span data-ttu-id="82706-173">Confira mais informações nas propriedades do recurso [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="82706-173">For more information, see the properties of the [group](../resources/group.md) resource.</span></span>
 
-><span data-ttu-id="954cd-174">**Observação:** Criar um grupo usando o Group. Criar a permissão de aplicativo sem especificar os proprietários criará o grupo anonimamente e o grupo não será modificado.</span><span class="sxs-lookup"><span data-stu-id="954cd-174">**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable.</span></span> <span data-ttu-id="954cd-175">Você pode usar a operação `POST` e adicionar proprietários ao grupo enquanto a cria para especificar proprietários que podem modificar o grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-175">You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.</span></span>
+><span data-ttu-id="82706-174">**Observação:** Criar um grupo usando o Group. Criar a permissão de aplicativo sem especificar os proprietários criará o grupo anonimamente e o grupo não será modificado.</span><span class="sxs-lookup"><span data-stu-id="82706-174">**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable.</span></span> <span data-ttu-id="82706-175">Você pode usar a operação `POST` e adicionar proprietários ao grupo enquanto a cria para especificar proprietários que podem modificar o grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-175">You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.</span></span>
 
-> <span data-ttu-id="954cd-176">Criar um Grupo do Office 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários criará o grupo anonimamente.</span><span class="sxs-lookup"><span data-stu-id="954cd-176">Creating an Office 365 group programmatically with an app-only context and without specifying owners will create the group anonymously.</span></span> <span data-ttu-id="954cd-177">Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.</span><span class="sxs-lookup"><span data-stu-id="954cd-177">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
+> <span data-ttu-id="82706-176">Criar um Grupo do Office 365 programaticamente com um contexto somente de aplicativo e sem especificar os proprietários criará o grupo anonimamente.</span><span class="sxs-lookup"><span data-stu-id="82706-176">Creating an Office 365 group programmatically with an app-only context and without specifying owners will create the group anonymously.</span></span> <span data-ttu-id="82706-177">Se assim o fizer, o site associado do SharePoint Online só será criado automaticamente, após a execução de outras ações manuais.</span><span class="sxs-lookup"><span data-stu-id="82706-177">Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.</span></span>  
 
 
-### <a name="grouptypes-options"></a><span data-ttu-id="954cd-178">Opções de groupTypes</span><span class="sxs-lookup"><span data-stu-id="954cd-178">groupTypes options</span></span>
+### <a name="grouptypes-options"></a><span data-ttu-id="82706-178">Opções de groupTypes</span><span class="sxs-lookup"><span data-stu-id="82706-178">groupTypes options</span></span>
 
-<span data-ttu-id="954cd-179">Use a propriedade **groupTypes** para controlar o tipo de grupo e sua associação, conforme mostrad.</span><span class="sxs-lookup"><span data-stu-id="954cd-179">Use the **groupTypes** property to control the type of group and its membership, as shown.</span></span>
+<span data-ttu-id="82706-179">Use a propriedade **groupTypes** para controlar o tipo de grupo e sua associação, conforme mostrad.</span><span class="sxs-lookup"><span data-stu-id="82706-179">Use the **groupTypes** property to control the type of group and its membership, as shown.</span></span>
 
-| <span data-ttu-id="954cd-180">Tipo de grupo</span><span class="sxs-lookup"><span data-stu-id="954cd-180">Type of group</span></span> | <span data-ttu-id="954cd-181">Associação atribuída</span><span class="sxs-lookup"><span data-stu-id="954cd-181">Assigned membership</span></span> | <span data-ttu-id="954cd-182">Associação dinâmica</span><span class="sxs-lookup"><span data-stu-id="954cd-182">Dynamic membership</span></span> |
+| <span data-ttu-id="82706-180">Tipo de grupo</span><span class="sxs-lookup"><span data-stu-id="82706-180">Type of group</span></span> | <span data-ttu-id="82706-181">Associação atribuída</span><span class="sxs-lookup"><span data-stu-id="82706-181">Assigned membership</span></span> | <span data-ttu-id="82706-182">Associação dinâmica</span><span class="sxs-lookup"><span data-stu-id="82706-182">Dynamic membership</span></span> |
 |:--------------|:------------------------|:---------------|
-| <span data-ttu-id="954cd-183">Office 365 (também conhecido como grupo unificado)</span><span class="sxs-lookup"><span data-stu-id="954cd-183">Office 365 (aka unified group)</span></span>| `["Unified"]` | `["Unified","DynamicMembership"]`
-| <span data-ttu-id="954cd-184">Dinâmica</span><span class="sxs-lookup"><span data-stu-id="954cd-184">Dynamic</span></span> | <span data-ttu-id="954cd-185">`[]` (_null_)</span><span class="sxs-lookup"><span data-stu-id="954cd-185">`[]` (_null_)</span></span> | `["DynamicMembership"]`|
+| <span data-ttu-id="82706-183">Office 365 (também conhecido como grupo unificado)</span><span class="sxs-lookup"><span data-stu-id="82706-183">Office 365 (aka unified group)</span></span>| `["Unified"]` | `["Unified","DynamicMembership"]`
+| <span data-ttu-id="82706-184">Dinâmica</span><span class="sxs-lookup"><span data-stu-id="82706-184">Dynamic</span></span> | <span data-ttu-id="82706-185">`[]` (_null_)</span><span class="sxs-lookup"><span data-stu-id="82706-185">`[]` (_null_)</span></span> | `["DynamicMembership"]`|
 
-## <a name="response"></a><span data-ttu-id="954cd-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="954cd-186">Response</span></span>
-<span data-ttu-id="954cd-187">Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um objeto [group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="954cd-187">If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="954cd-188">A resposta inclui somente as propriedades padrão do grupo.</span><span class="sxs-lookup"><span data-stu-id="954cd-188">The response includes only the default properties of the group.</span></span>
+## <a name="response"></a><span data-ttu-id="82706-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="82706-186">Response</span></span>
+<span data-ttu-id="82706-187">Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um objeto [group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="82706-187">If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="82706-188">A resposta inclui somente as propriedades padrão do grupo.</span><span class="sxs-lookup"><span data-stu-id="82706-188">The response includes only the default properties of the group.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="954cd-189">Exemplos</span><span class="sxs-lookup"><span data-stu-id="954cd-189">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="82706-189">Exemplos</span><span class="sxs-lookup"><span data-stu-id="82706-189">Examples</span></span>
 
-### <a name="example-1-create-an-office-365-group"></a><span data-ttu-id="954cd-190">Exemplo 1: criando um grupo do Office 365</span><span class="sxs-lookup"><span data-stu-id="954cd-190">Example 1: Create an Office 365 group</span></span>
+### <a name="example-1-create-an-office-365-group"></a><span data-ttu-id="82706-190">Exemplo 1: criando um grupo do Office 365</span><span class="sxs-lookup"><span data-stu-id="82706-190">Example 1: Create an Office 365 group</span></span>
 
-<span data-ttu-id="954cd-191">O exemplo a seguir cria um grupo do Office 365.</span><span class="sxs-lookup"><span data-stu-id="954cd-191">The following example creates an Office 365 group.</span></span>
+<span data-ttu-id="82706-191">O exemplo a seguir cria um grupo do Office 365.</span><span class="sxs-lookup"><span data-stu-id="82706-191">The following example creates an Office 365 group.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="954cd-192">Solicitação</span><span class="sxs-lookup"><span data-stu-id="954cd-192">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="82706-192">Solicitação</span><span class="sxs-lookup"><span data-stu-id="82706-192">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="954cd-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="954cd-193">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82706-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="82706-193">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -112,30 +112,30 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="954cd-194">C#</span><span class="sxs-lookup"><span data-stu-id="954cd-194">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82706-194">C#</span><span class="sxs-lookup"><span data-stu-id="82706-194">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="954cd-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="954cd-195">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82706-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82706-195">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="954cd-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="954cd-196">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82706-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82706-196">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="954cd-197">Java</span><span class="sxs-lookup"><span data-stu-id="954cd-197">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="82706-197">Java</span><span class="sxs-lookup"><span data-stu-id="82706-197">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="954cd-198">Resposta</span><span class="sxs-lookup"><span data-stu-id="954cd-198">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="82706-198">Resposta</span><span class="sxs-lookup"><span data-stu-id="82706-198">Response</span></span>
 
-<span data-ttu-id="954cd-199">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="954cd-199">The following is an example of the response.</span></span>
+<span data-ttu-id="82706-199">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="82706-199">The following is an example of the response.</span></span>
 
-><span data-ttu-id="954cd-200">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="954cd-200">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="954cd-201">Todas as propriedades padrão serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="954cd-201">All the default properties are returned from an actual call.</span></span>
+><span data-ttu-id="82706-200">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="82706-200">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="82706-201">Todas as propriedades padrão serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="82706-201">All the default properties are returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -176,14 +176,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-group-with-owners-and-members"></a><span data-ttu-id="954cd-202">Exemplo 2: criando um grupo com membros e proprietários</span><span class="sxs-lookup"><span data-stu-id="954cd-202">Example 2: Create a group with owners and members</span></span>
+### <a name="example-2-create-a-group-with-owners-and-members"></a><span data-ttu-id="82706-202">Exemplo 2: criando um grupo com membros e proprietários</span><span class="sxs-lookup"><span data-stu-id="82706-202">Example 2: Create a group with owners and members</span></span>
 
-<span data-ttu-id="954cd-203">O exemplo a seguir cria um grupo do Office 365 com um proprietário e membros especificados.</span><span class="sxs-lookup"><span data-stu-id="954cd-203">The following example creates an Office 365 group with an owner and members specified.</span></span>
+<span data-ttu-id="82706-203">O exemplo a seguir cria um grupo do Office 365 com um proprietário e membros especificados.</span><span class="sxs-lookup"><span data-stu-id="82706-203">The following example creates an Office 365 group with an owner and members specified.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="954cd-204">Solicitação</span><span class="sxs-lookup"><span data-stu-id="954cd-204">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="82706-204">Solicitação</span><span class="sxs-lookup"><span data-stu-id="82706-204">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="954cd-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="954cd-205">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82706-205">HTTP</span><span class="sxs-lookup"><span data-stu-id="82706-205">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
@@ -210,30 +210,30 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="954cd-206">C#</span><span class="sxs-lookup"><span data-stu-id="954cd-206">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82706-206">C#</span><span class="sxs-lookup"><span data-stu-id="82706-206">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="954cd-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="954cd-207">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82706-207">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82706-207">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="954cd-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="954cd-208">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82706-208">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82706-208">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="954cd-209">Java</span><span class="sxs-lookup"><span data-stu-id="954cd-209">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="82706-209">Java</span><span class="sxs-lookup"><span data-stu-id="82706-209">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-prepopulated-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="954cd-210">Resposta</span><span class="sxs-lookup"><span data-stu-id="954cd-210">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="82706-210">Resposta</span><span class="sxs-lookup"><span data-stu-id="82706-210">Response</span></span>
 
-<span data-ttu-id="954cd-211">Veja a seguir o exemplo de uma resposta bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="954cd-211">The following is an example of a successful response.</span></span> <span data-ttu-id="954cd-212">Ele inclui apenas propriedades padrão.</span><span class="sxs-lookup"><span data-stu-id="954cd-212">It includes only default properties.</span></span> <span data-ttu-id="954cd-213">Posteriormente, você pode acessar as propriedades de navegação de grupo **proprietários** ou **membros** para verificar o proprietário ou membros.</span><span class="sxs-lookup"><span data-stu-id="954cd-213">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
+<span data-ttu-id="82706-211">Veja a seguir o exemplo de uma resposta bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="82706-211">The following is an example of a successful response.</span></span> <span data-ttu-id="82706-212">Ele inclui apenas propriedades padrão.</span><span class="sxs-lookup"><span data-stu-id="82706-212">It includes only default properties.</span></span> <span data-ttu-id="82706-213">Posteriormente, você pode acessar as propriedades de navegação de grupo **proprietários** ou **membros** para verificar o proprietário ou membros.</span><span class="sxs-lookup"><span data-stu-id="82706-213">You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members.</span></span> 
 
-><span data-ttu-id="954cd-214">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="954cd-214">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="954cd-215">Todas as propriedades padrão serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="954cd-215">All the default properties are returned from an actual call.</span></span>
+><span data-ttu-id="82706-214">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="82706-214">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="82706-215">Todas as propriedades padrão serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="82706-215">All the default properties are returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
