@@ -1,16 +1,16 @@
 ---
 title: Listar memberOf
 description: 'Obtenha grupos dos quais um grupo é um membro direto. '
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6f3a129d8ed9d96393eae38e26860648f016323d
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 7f30b10ef9c6b33fc92b86b02fefe8c4c71c4a39
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926850"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125222"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 

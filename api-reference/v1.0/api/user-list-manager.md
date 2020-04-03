@@ -2,15 +2,15 @@
 title: Listar gerente
 description: Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 1f73127c95981bc22d4269e7a8e57aa570e64f2b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7c3987a2fa0b9de06da823c19831e51428f0ad3
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509070"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108806"
 ---
 # <a name="list-manager"></a>Listar gerente
 

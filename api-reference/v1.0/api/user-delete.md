@@ -1,16 +1,16 @@
 ---
 title: Excluir um usuário - Microsoft Graph API
 description: Descreve o método de exclusão de recursos do usuário (entidade) do Microsoft Graph API (REST).
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c06b491ba48692ca51f13c5287658fe32c5500be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc923a58f50557d2468574a91e2aa68759e6fe71
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509213"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108645"
 ---
 # <a name="delete-a-user"></a>Excluir um usuário
 

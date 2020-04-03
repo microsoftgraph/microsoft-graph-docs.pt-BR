@@ -2,15 +2,15 @@
 title: Listar grupos
 description: Lista todos os grupos disponíveis em uma organização, inclusive, mas não limitado a Grupos do Office 365.
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4e0069df916b3a29759ee164c15aac7dc1fcb2ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c3f36c21370234410d4bbd1be0dd0a195c94220
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419098"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123731"
 ---
 # <a name="list-groups"></a>Listar grupos
 

@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com grupos no Microsoft Graph
 description: Os grupos são conjuntos de usuários e de outras entidades de segurança que compartilham o acesso a recursos nos serviços Microsoft ou em seu aplicativo. O Microsoft Graph fornece APIs que você pode usar para criar e gerenciar os diferentes tipos e funcionalidades de grupo de acordo com seu cenário. Todas as operações relacionadas a grupos no Microsoft Graph exigem autorização do administrador.
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 3d795b1fc43d4c43aaf06dcce5811a03751148d5
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1a9458ff742ff6e40fdb00faff4e9331753510c3
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863897"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125019"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 

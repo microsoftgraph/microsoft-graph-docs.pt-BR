@@ -1,16 +1,16 @@
 ---
 title: Obter configurações
 description: Leia o usuário e o objeto de configurações da organização.
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cce0c226a977db1e628aa759352cb686b2597e3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c13fc7b26b7d83ceda3a9c16d5a0d801f4f49c1
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508895"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109037"
 ---
 # <a name="get-settings"></a>Obter configurações
 

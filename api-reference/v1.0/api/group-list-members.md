@@ -2,15 +2,15 @@
 title: Listar membros
 description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos organizacionais e outros grupos como membros.
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c46a675ee8d7932b9e0621024645cfef67224134
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d441b7e1f3631cb871dfd4cdbec36abbe8ceaba
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517065"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125201"
 ---
 # <a name="list-members"></a>Listar membros
 

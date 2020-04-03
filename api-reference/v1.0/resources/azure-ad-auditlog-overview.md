@@ -2,15 +2,15 @@
 title: Visão geral da API de log de auditoria do Azure AD
 description: O Azure AD (Azure Active Directory) controla métricas de atividade e de entrada de usuário e cria logs de auditoria que ajudam você a entender como os usuários acessam e usam os serviços do Azure AD.
 localization_priority: Priority
-author: dhanyahk
+author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 0391d250d109731da43fc86f5b67c50dadc52373
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2841b950096ca43f72f387a50a39b632e53ab62
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532023"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124214"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Visão geral da API de log de auditoria do Azure AD
 

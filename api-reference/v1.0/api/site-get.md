@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Recupere as propriedades e as relações de um recurso do site.
 doc_type: apiPageType
-ms.openlocfilehash: af50b2eae0287ad31e75c6373b6dedb4c67bd42b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d01ea89091bb718cf98680253f7b80c1c64ebb8c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509798"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108939"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -21,17 +21,6 @@ Namespace: microsoft.graph
 Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.
 
 [site]: ../resources/site.md
-
-Um **site** é endereçado para ser um identificador exclusivo que é uma ID composta dos seguintes valores:
-
-* Hostname do conjunto de sites (contoso.sharepoint.com)
-* ID exclusiva do conjunto de sites (GUID)
-* ID exclusiva do site (GUID)
-
-Há também um identificador de site reservado, `root`, que sempre faz referência ao site raiz de um determinado destino da seguinte maneira:
-
-* `/sites/root`: O site raiz do locatário.
-* `/groups/{group-id}/sites/root`: O site da equipe do grupo.
 
 ## <a name="permissions"></a>Permissões
 

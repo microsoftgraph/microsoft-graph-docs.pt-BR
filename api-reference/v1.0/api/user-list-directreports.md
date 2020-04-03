@@ -2,15 +2,15 @@
 title: Listar directReports
 description: Obtenha relatórios diretos do usuário.
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0052c96ea73018c0ef020bc72d8fec14e2a352fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 90ea3bad86307f1172869f72a311238c4ee43eaa
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509105"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108841"
 ---
 # <a name="list-directreports"></a>Listar directReports
 

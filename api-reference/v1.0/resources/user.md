@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de usuário
 description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: ba0052c1c066aacd71d8a7e32ad710db62d62ae4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4030d215548f7e7e4d680f676d20482be71b6b8b
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533426"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108449"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 

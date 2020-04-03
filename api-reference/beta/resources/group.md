@@ -2,15 +2,15 @@
 title: tipo de recurso de grupo
 description: Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, uma equipe do Microsoft Teams ou um grupo de segurança.
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 84706a54b9628ef142d75804b1950f531bc18282
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d9a9cc75214bc3dcbcc765d3a1797eb266ff26b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497144"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124907"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 

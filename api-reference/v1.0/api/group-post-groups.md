@@ -1,16 +1,16 @@
 ---
 title: Criar grupo
 description: 'Crie um novo grupo conforme especificado no corpo da solicitação. '
-author: dkershaw10
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c3bd3331a9dacf3d2b2959f961a2e7f744d78898
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 6ba8b5808819358d31aa41e71251beefc71c92b6
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061843"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124480"
 ---
 # <a name="create-group"></a>Criar grupo
 
