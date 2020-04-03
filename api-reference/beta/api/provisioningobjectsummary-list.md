@@ -2,15 +2,15 @@
 title: Listar provisioningObjectSummary
 description: Obter todos os eventos de provisionamento que ocorreram em seu locatário.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c914c5921548d6fa297ce0b859f1c7c85c0f07cb
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 51375b2f83eeeb5755e3685a159a2338c34fa3fd
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926789"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123092"
 ---
 # <a name="list-provisioningobjectsummary"></a>Listar provisioningObjectSummary
 
@@ -24,7 +24,7 @@ Obter todos os eventos de provisionamento que ocorreram em seu locatário, como 
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|Tipo de permissão | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |

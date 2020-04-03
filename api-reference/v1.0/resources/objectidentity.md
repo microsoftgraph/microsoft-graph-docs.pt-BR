@@ -3,18 +3,18 @@ title: tipo de recurso objectidentity
 description: Representa uma identidade usada para entrar em uma conta de usuário.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 5aada0b7802495571498fe3b3b6f6576c89e6579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: users
+author: krbain
+ms.openlocfilehash: 240489ea41e4b19e09ca3f913141b59de1ef117e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447350"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108925"
 ---
 # <a name="objectidentity-resource-type"></a>tipo de recurso objectidentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Representa uma identidade usada para entrar em uma conta de usuário. Uma identidade pode ser fornecida pela Microsoft, por organizações ou por provedores de identidade social, como Facebook, Google ou Microsoft, que estão vinculados a uma conta de usuário. Isso permite que o usuário entre na conta de usuário com qualquer uma dessas identidades associadas.
 

@@ -1,16 +1,16 @@
 ---
 title: Listar ownedDevices
 description: Obtenha a lista de dispositivos de propriedade do usuário.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 30303b1984fc1a1231d5ebd580d34aecf6db8d7f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fad3f407360d747b10f44cfb92055167e4f8fb9
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509049"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108778"
 ---
 # <a name="list-owneddevices"></a>Listar ownedDevices
 

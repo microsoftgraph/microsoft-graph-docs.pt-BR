@@ -1,20 +1,20 @@
 ---
 title: Excluir grupo-API do Microsoft Graph
 description: Descreve o método Delete do recurso de grupo (entidade) da API do Microsoft Graph (REST).
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0596b80444d3a37ee37c948d9b9ec69b6d1db3b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6eec50e07253bd380c6253f2aad7105f29ee7474
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420091"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123794"
 ---
 # <a name="delete-group"></a>Excluir grupo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

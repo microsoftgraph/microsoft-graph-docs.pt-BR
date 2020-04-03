@@ -2,19 +2,19 @@
 title: Criar accessReview
 description: No recurso de revisões do Azure AD Access, crie um novo objeto accessReview.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbda7226bcfb52370385d58598bc6fda14bd13d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca2fcc1aa0fe7f61c757d2de6a29af52d51709d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441911"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123514"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

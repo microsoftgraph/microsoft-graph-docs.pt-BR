@@ -2,19 +2,19 @@
 title: Excluir accessReview
 description: No recurso de revisões do Azure AD Access, exclua um objeto accessReview.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: daf96b917c8c285f06f803179c4c1eff5b913f86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0ba1faf75688a3e1887f10aa1c68e7281d2417e
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441927"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123549"
 ---
 # <a name="delete-accessreview"></a>Excluir accessReview
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

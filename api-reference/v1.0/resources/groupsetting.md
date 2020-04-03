@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso groupSetting
 description: Os comportamentos de controle de configurações de grupo, como listas de palavras bloqueadas para nomes de exibição de grupo, ou se os usuários convidados podem ser proprietários de grupo.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: dabede2f21d7ed81bd32eee084e044c00382c447
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e8e890e03a3af81a7fcdbdf5c86e203ae702e81
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532914"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125005"
 ---
 # <a name="groupsetting-resource-type"></a>tipo de recurso groupSetting
 
@@ -20,7 +20,7 @@ Os comportamentos de controle de configurações de grupo, como listas de palavr
 
 As configurações de grupo podem ser criadas com base no [groupSettingTemplates](groupsettingtemplate.md)disponível e alteradas de seus padrões predefinidos. Essas configurações controlam os comportamentos de grupo em um nível de locatário ou em um grupo específico. Quando a mesma configuração é definida em todo o locatário e em um grupo específico, a configuração de nível de grupo substitui a configuração em todo o locatário.  Por exemplo, a configuração em todo o locatário pode permitir que convidados sejam convidados por membros existentes de grupos, mas uma configuração de grupo individual pode substituir e não permitir que convidados sejam convidados por membros do grupo. As configurações de grupo regem o comportamento de grupos do Office 365.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ As configurações de grupo podem ser criadas com base no [groupSettingTemplates
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres| Exibe o nome deste grupo de configurações, que vem do modelo associado. |
-|id|String| Identificador exclusivo dessas configurações. Somente leitura. |
+|id|String| Identificador exclusivo dessas configurações. Apenas leitura. |
 |templateId|String| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura. |
 |values|coleção [SettingValue](settingvalue.md)| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo. |
 

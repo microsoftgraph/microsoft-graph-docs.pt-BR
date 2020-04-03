@@ -3,18 +3,18 @@ title: Listar businessFlowTemplates
 description: No recurso de revisões do Azure AD Access, liste todos os objetos businessFlowTemplate.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: e2e2f6c14b77b479b94add75643884ca44217870
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 28950fe2f76e66307f483adbe75d2e1365c614d5
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441008"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123668"
 ---
 # <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

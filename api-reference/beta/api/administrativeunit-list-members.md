@@ -1,20 +1,20 @@
 ---
 title: Listar membros
 description: Use essa API para obter a lista de Membros (usuário e grupo) em uma unidade administrativa.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b5e2c8b25a81f3ae23e33270e17e0303bbad4940
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 672cf1a335c2b7d8b67f1581591cc608a0f9e83a
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441704"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123332"
 ---
 # <a name="list-members"></a>Listar membros
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: Adicionar um scopedRoleMember
 description: 'Adicione um novo scopedRoleMembership. Observação: somente as funções de administrador de *conta de usuário* e *administrador de helpdesk* têm suporte para associações com escopo de função.'
 localization_priority: Normal
-author: davidmu1
+author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6fe72ec5158eb055b6f4309089aa8dc0327571a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2888e50142a77d5f669e9090aecf6b50aeaeb02e
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441701"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123325"
 ---
 # <a name="add-a-scopedrolemember"></a>Adicionar um scopedRoleMember
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

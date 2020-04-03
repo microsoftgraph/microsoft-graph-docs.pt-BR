@@ -2,15 +2,15 @@
 title: tipo de recurso de domínio
 doc_type: resourcePageType
 description: Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu diretório.
-author: davidmu1
+author: kholtz
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dff6c9ad49a5e072c7bccb3903135e93beea0bf8
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 5aa7659c9ab53ac4879a7ab2f1a13f62c729df63
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948377"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125313"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -35,7 +35,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |appId|String|O identificador de aplicativo no Azure Active Directory.|
 |appliedConditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) conjunto|Uma lista de políticas de acesso condicional disparadas pela atividade de entrada correspondente.|
 |authenticationDetails|coleção [authenticationDetail](authenticationdetail.md)|O resultado da tentativa de autenticação e detalhes adicionais sobre o método de autenticação.|
-|authenticationMethodsUsed|Coleção de cadeias de caracteres|Os métodos de autenticação usados. Valores possíveis: `SMS`, `Authenticator App`, `App Verification code` `Password` `FIDO` `PTA`,,, ou `PHS`.|
+|authenticationMethodsUsed|String collection|Os métodos de autenticação usados. Valores possíveis: `SMS`, `Authenticator App`, `App Verification code` `Password` `FIDO` `PTA`,,, ou `PHS`.|
 |authenticationProcessingDetails|Coleção [KeyValue](keyvalue.md)|Detalhes de processamento de autenticação adicionais, como o nome do agente em caso de PTA/PHS ou nome do servidor/farm, no caso de autenticação federada.|
 |authenticationRequirement | string | Isso mantém o nível mais alto de autenticação necessário por meio de todas as etapas de entrada para que a entrada tenha êxito.|
 |clientAppUsed|String|O cliente herdado usado para a atividade de entrada. Por exemplo, navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP ou POP.|
@@ -54,7 +54,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |resourceId|Cadeia de caracteres|O identificador do recurso para o qual o usuário entrou.|
 |riskDetail|riskDetail|O motivo por trás de um estado específico de um usuário arriscado, entrar ou um evento de risco. Valores possíveis: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy`,,, `adminDismissedAllRiskForUser`,, `adminConfirmedSigninCompromised`, ou. `unknownFutureValue` O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são `hidden`retornados.|
 |riskEventTypes|coleção riskEventType|A lista de tipos de eventos de risco associados à entrada. Valores possíveis: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials`,,, `investigationsThreatIntelligence`,, `generic`, ou. `unknownFutureValue`|
-|riskEventTypes_v2|Coleção de cadeias de caracteres|A lista de tipos de eventos de risco associados à entrada. Valores possíveis: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials`,,, `investigationsThreatIntelligence`,, `generic`, ou. `unknownFutureValue`|
+|riskEventTypes_v2|String collection|A lista de tipos de eventos de risco associados à entrada. Valores possíveis: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials`,,, `investigationsThreatIntelligence`,, `generic`, ou. `unknownFutureValue`|
 |riskLevelAggregated|riskLevel|O nível de risco agregado. Valores possíveis: `none`, `low`, `medium` `high` `hidden`,, ou `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são `hidden`retornados.|
 |riskLevelDuringSignIn|riskLevel|O nível de risco durante a entrada. Valores possíveis: `none`, `low`, `medium` `high` `hidden`,, ou `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são `hidden`retornados.|
 |riskState|riskState|O estado de risco de um usuário arriscado, logon ou um evento de risco. Valores possíveis: `none`, `confirmedSafe`, `remediated` `dismissed` `atRisk` `confirmedCompromised`,,, ou `unknownFutureValue`.|

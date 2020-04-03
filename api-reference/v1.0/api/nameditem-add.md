@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 93c17cfaad15e50d7eacfaf3f0c9f47825c8064f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0320518218c76a5cbb7201a53b10f23a93d55f96
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511422"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108505"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/add
-POST /workbook/worksheets({id|name})/names/add
+POST /workbook/worksheets/{id|name}/names/add
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|string|O nome do item nomeado.|
+|name|string|O nome do item nomeado.|
 |de referência|Json|A fórmula ou o intervalo ao qual o nome fará referência.|
 |comment|string|O comentário associado ao item nomeado|
 

@@ -1,20 +1,20 @@
 ---
 title: Listar Administrativeunits dos quais
 description: Recupere uma lista de objetos administrativeUnit.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 10bedf9c47e549576748aabfcd7612d7ddb452ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad6599e16dd9500f03b8f88b09482af4ef8d4b73
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441729"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123311"
 ---
 # <a name="list-administrativeunits"></a>Listar Administrativeunits dos quais
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

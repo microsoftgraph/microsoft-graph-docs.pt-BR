@@ -3,18 +3,18 @@ title: Listar programControls de um programa
 description: No recurso de revisões do Azure AD Access, liste todos os objetos programControl vinculados a um programa específico.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 776c7681eb893c9a38a88a5370a8a7a6a4acdacf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: e24c41ea7e0f99af914bf396766ae2120d556eca
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454966"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123068"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Listar programControls de um programa
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

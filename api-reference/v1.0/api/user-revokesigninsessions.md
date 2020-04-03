@@ -2,15 +2,15 @@
 title: 'usuário: revokeSignInSessions'
 description: Invalida todos os tokens de atualização do usuário emitidos para aplicativos (bem como cookies de sessão no navegador de um usuário), redefinindo a propriedade de usuário **signInSessionsValidFromDateTime** para a data e hora atual.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d2c5104723e3dbe4a775f7905e04def52fe32283
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 59bd8e4ac5d8e848120646630c0c6b0a66f005e0
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508930"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108218"
 ---
 # <a name="user-revokesigninsessions"></a>usuário: revokeSignInSessions
 

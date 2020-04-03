@@ -1,20 +1,20 @@
 ---
 title: Listar scopedRoleMembers
 description: Recupere uma lista de recursos do scopedRoleMembership.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d8e30378e5a23222b6861bb5e1b31750d053b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbcdecdc227477dc53c137547c0e78b46b92107d
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441706"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123353"
 ---
 # <a name="list-scopedrolemembers"></a>Listar scopedRoleMembers
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

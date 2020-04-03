@@ -1,16 +1,16 @@
 ---
 title: Listar fotos
 description: Recuperar uma lista dos objetos profilePhoto.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31af445d49d1e6629fc615506c5bf2714efae3ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 869ea2c0cebcce8957abfc32374ee288cdcc4fc2
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517051"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125194"
 ---
 # <a name="list-photos"></a>Listar fotos
 

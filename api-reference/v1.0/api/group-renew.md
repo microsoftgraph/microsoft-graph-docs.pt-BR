@@ -2,15 +2,15 @@
 title: 'group: renew'
 description: Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f64460378188ec4376a615857c78ea9d538920fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e1e9403acf31df4544c5e894895aa17a1e86e2a
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516946"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124123"
 ---
 # <a name="group-renew"></a>group: renew
 

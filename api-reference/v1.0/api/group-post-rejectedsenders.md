@@ -1,16 +1,16 @@
 ---
 title: Criar rejectedSender
 description: Adiciona um novo usuário ou grupo à lista rejectedSender.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c6712b3dcd9438bd478803cbfd45ca5f5a9d6616
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 75c07fa4f2e8304db615d658b6ad7aea688ae944
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516967"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123646"
 ---
 # <a name="create-rejectedsender"></a>Criar rejectedSender
 

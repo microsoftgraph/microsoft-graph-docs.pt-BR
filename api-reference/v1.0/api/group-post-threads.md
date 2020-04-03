@@ -1,16 +1,16 @@
 ---
 title: Criar thread de conversas
 description: 'Inicie uma nova conversa em grupo criando primeiro um thread. '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c8d5c4d4025f8928acd5a8a40e0b8c6ca7a3fb18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c24668a6a33c41b32fed67462d57a984745d32b1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516960"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124130"
 ---
 # <a name="create-conversation-thread"></a>Criar thread de conversas
 

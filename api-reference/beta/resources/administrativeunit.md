@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso administrativeUnit
-description: Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário e de grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos ou dentro do escopo para uma unidade administrativa para um administrador regional ou departamental.
+description: Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário e de grupo.
 localization_priority: Normal
-author: davidmu1
+author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d279bcfd605df8d53331cc217d7b5fdb76510659
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c351ac7f06867cc7e8160352babb5e4fca5fe381
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508391"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124956"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso administrativeUnit
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 Este tópico fornece descrições das propriedades declaradas e propriedades de navegação expostas pela entidade administrativeUnit, bem como as operações e funções que podem ser chamadas no recurso Administrativeunits dos quais.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |[Listar Administrativeunits dos quais](../api/administrativeunit-list.md) | coleção [administrativeUnit](administrativeunit.md) |Listar Propriedades de todos os Administrativeunits dos quais.|
 |[Obter administrativeUnit](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
 |[Atualizar adminstrativeUnit](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |Atualize o objeto administrativeUnit. |
-|[Excluir adminstrativeUnit](../api/administrativeunit-delete.md) | Nenhum |Exclua o objeto administrativeUnit. |
+|[Excluir adminstrativeUnit](../api/administrativeunit-delete.md) | None |Exclua o objeto administrativeUnit. |
 |[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicionar um membro (usuário ou grupo).|
 |[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha a lista de Membros (de usuário e de grupo).|
 |[Obter um membro](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Obter um membro específico.|
@@ -55,7 +55,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
 |displayName|cadeia de caracteres|Nome de exibição para a unidade administrativa.|
-|id|string|Identificador exclusivo para a unidade administrativa. Somente leitura.|
+|id|string|Identificador exclusivo para a unidade administrativa. Apenas leitura.|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como HiddenMembership ou público. Se não for definido, o comportamento padrão é público. Quando definido como HiddenMembership, somente os membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações

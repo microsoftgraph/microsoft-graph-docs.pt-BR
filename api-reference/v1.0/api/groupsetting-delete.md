@@ -1,16 +1,16 @@
 ---
 title: Excluir uma configuração de grupo
 description: Excluir uma configuração de grupo.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 20a6bded37bb2b881b0f9f85d313d0c25fd20560
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c4d27271c3dc8f5af6170fe4ad7ed008438e1d5
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516840"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124606"
 ---
 # <a name="delete-a-group-setting"></a>Excluir uma configuração de grupo
 

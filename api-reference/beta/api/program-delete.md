@@ -3,18 +3,18 @@ title: Excluir programa
 description: No recurso de revisões do Azure AD Access, exclua um objeto Program.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: c7c6fd7ca637d977fe007dc1adc4ed31af08aa69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 205384fea42dd1b6b5bb77f82320082c4d14ae29
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454994"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123164"
 ---
 # <a name="delete-program"></a>Excluir programa
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

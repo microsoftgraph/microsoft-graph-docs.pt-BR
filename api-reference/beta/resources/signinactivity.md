@@ -2,15 +2,15 @@
 title: tipo de recurso signInActivity
 description: Fornece a última data de logon de um usuário específico.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a65b3fd02f3cc9b0f0e6049fcf99133292c8d6d2
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 86678b346466caa5c0d7a139a6da9ce0cf09e0c0
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892599"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125292"
 ---
 # <a name="signinactivity-resource-type"></a>tipo de recurso signInActivity
 

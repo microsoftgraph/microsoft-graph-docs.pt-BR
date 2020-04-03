@@ -1,16 +1,16 @@
 ---
 title: Atualizar aplicativo
 description: Atualiza as propriedades de um objeto Application.
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6b06d9d998af2300d8114c98822ed7c76a6ec115
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 750cb29ad1d6f38f06687b65e4029a2ad3c128bb
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518844"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108582"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 

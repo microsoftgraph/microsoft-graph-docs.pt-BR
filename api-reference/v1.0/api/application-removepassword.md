@@ -2,15 +2,15 @@
 title: 'aplicativo: removePassword'
 description: Remover uma senha de um aplicativo
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fe5f330bc73c7ad10cceb074b299ed08e99ed476
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4efe722fa3037f3a0156dd14e3fa2740dfb28f37
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518851"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108597"
 ---
 # <a name="application-removepassword"></a>aplicativo: removePassword
 

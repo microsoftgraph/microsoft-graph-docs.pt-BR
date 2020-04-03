@@ -2,15 +2,15 @@
 title: 'group: addFavorite'
 description: Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c19ee6dddd426d523838f7557c13ceaed8ee111f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: fa588470f0182a5000c721f361bafff8af5693dc
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892643"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125285"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 

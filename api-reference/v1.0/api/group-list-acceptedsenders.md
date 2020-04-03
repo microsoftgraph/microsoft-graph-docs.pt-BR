@@ -1,16 +1,16 @@
 ---
 title: Listar acceptedSenders
 description: Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d1fecef3e02a706b167e6fd2e2b35aa85b769ce2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 036ab2cfe7f9b1fbe1e98e71e706f59c4a5d551b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517107"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125278"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
 

@@ -1,20 +1,20 @@
 ---
 title: Remover acceptedSender
 description: 'Remover um usuário ou grupo da lista de remetentes aceitos. '
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f4b82ccaef290efa0bec00785e5f1ad3a30f516f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2274d3f5e8dfab42b1df9d6da0510ae7d22de463
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420574"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123892"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

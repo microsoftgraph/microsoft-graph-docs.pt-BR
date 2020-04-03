@@ -1,16 +1,16 @@
 ---
 title: Criar uma configuração de grupo
-description: Use essa API para criar uma nova configuração, com base nos modelos disponíveis no groupSettingTemplates. Essas configurações podem ser no nível do locatário ou no nível do grupo. A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que determina se os membros de um grupo podem convidar usuários convidados podem ser definidos. Isso irá controlar esse comportamento assim que a capacidade de adicionar usuários convidados a um grupo estiver disponível.
+description: Crie uma nova configuração, com base nos modelos disponíveis no groupSettingTemplates.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06b63deba03bee7646c4d0e0f0323b3720d6073b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9379ade9de508affa2ade5ba23f325617b9b314b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516819"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124501"
 ---
 # <a name="create-a-group-setting"></a>Criar uma configuração de grupo
 

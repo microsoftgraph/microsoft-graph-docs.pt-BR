@@ -1,20 +1,20 @@
 ---
 title: Atualizar administrativeunit
 description: Atualiza as propriedades de um objeto administrativeUnit.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 30d8470c16e2d7556b65ea797b2298025cfc74d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a373789cb566653956aa9dad2732d1fac226f441
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441687"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123304"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

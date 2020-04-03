@@ -2,19 +2,19 @@
 title: Obter dataPolicyOperation
 description: Recupere as propriedades do objeto dataPolicyOperation.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2ce26de4e8dadd58d7a3a337b1c8217d3db1d5eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08cfbf935a1a37be83349d2d75631bc8767ec8d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436115"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123682"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Recupere as propriedades do objeto dataPolicyOperation.
 

@@ -1,20 +1,20 @@
 ---
 title: Adicionar um membro
 description: Use esta API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c8eb575415f9063405b6c8d7c9891eb0cb9aaaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91767a0d83fe35363879045cc703fb564806d228
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441694"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123262"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

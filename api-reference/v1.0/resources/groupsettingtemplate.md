@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso groupSettingTemplate
-description: Modelos de configuração de grupo representam configurações definidas pelo sistema disponíveis para o locatário. As configurações de grupo podem ser criadas com base no **groupSettingTemplates**disponível e os valores alterados de seus padrões predefinidos. Modelos de configuração de grupo não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou podem representar configurações de grupo específicas. Atualmente, os únicos modelos disponíveis se aplicam aos grupos do Office 365 e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
+description: Modelos de configuração de grupo representam configurações definidas pelo sistema disponíveis para o locatário.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fa392d6bf6dcd8ceaf15d97dfe695fbaaeabed4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a74999a29c32ac82dc568df593f6df5e8f925f1b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531353"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124921"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>tipo de recurso groupSettingTemplate
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Modelos de configuração de grupo representam configurações definidas pelo sistema disponíveis para o locatário. [As configurações de grupo](groupsetting.md) podem ser criadas com base no **groupSettingTemplates**disponível e os valores alterados de seus padrões predefinidos. Modelos de configuração de grupo não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou podem representar configurações de grupo específicas. Atualmente, os únicos modelos disponíveis se aplicam aos grupos do Office 365 e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|

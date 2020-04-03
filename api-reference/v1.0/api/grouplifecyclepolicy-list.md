@@ -1,16 +1,16 @@
 ---
 title: Listar groupLifecyclePolicies
 description: Listar todos os objetos groupLifecyclePolicies.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b5c4159e3ace8d85fc55a26e4313a74878e5de07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08555aeb58212279966752da6b61867efefbe359
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516869"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124634"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 

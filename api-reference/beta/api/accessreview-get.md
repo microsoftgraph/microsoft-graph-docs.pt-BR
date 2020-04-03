@@ -2,19 +2,19 @@
 title: Obter accessReview
 description: No recurso de revisões do Azure AD Access, recupere um objeto accessReview.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3025d17a421faea8c7aa939b18ab6980d2d333aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b363c2f3be60bd782e6b0524e99b846b2ace9752
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441904"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123534"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,20 +1,20 @@
 ---
 title: Excluir conversa
 description: Excluir um objeto conversation.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4a48006944a5ec3ad513ed908c3cd6b67c197985
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 811d139507a26650f04d7b75e03e5fb62b97ff9a
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420532"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123871"
 ---
 # <a name="delete-conversation"></a>Excluir conversa
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

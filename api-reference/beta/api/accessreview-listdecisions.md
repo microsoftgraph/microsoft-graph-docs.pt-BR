@@ -2,19 +2,19 @@
 title: Listar decisões accessReview
 description: No recurso de revisões do Azure AD Access, recupere as decisões de um objeto accessReview.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 00bc58377b68f3654ebff10ed985cbbcf63e8ed8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7042210e9a3e3b6686e5c1bc4529a06d210a34d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441890"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123521"
 ---
 # <a name="list-accessreview-decisions"></a>Listar decisões accessReview
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

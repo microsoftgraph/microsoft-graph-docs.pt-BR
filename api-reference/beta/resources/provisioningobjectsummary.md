@@ -2,27 +2,27 @@
 title: tipo de recurso provisioningObjectSummary
 description: Representa uma ação executada pelo serviço de provisionamento do Azure AD e suas propriedades associadas.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ed6b760af60900436d22da4ae1302f458d50c4c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbac0770c7093b4dbe5e8ecd84e191444ca61c77
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521338"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125026"
 ---
 # <a name="provisioningobjectsummary-resource-type"></a>tipo de recurso provisioningObjectSummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma ação executada pelo serviço de provisionamento do Azure AD e suas propriedades associadas. 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-| Método       | Tipo de retorno | Descrição |
+| Método  | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Listar provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Obtenha uma lista de todos os eventos de provisionamento que ocorreram em seu locatário. |
 
