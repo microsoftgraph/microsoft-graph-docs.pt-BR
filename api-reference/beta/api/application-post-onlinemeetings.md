@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8dd6ac12419af35e361b39c34017d18943315cee
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 3df2bb5775da4042920474890a5c115fe2466de5
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986034"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144234"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
 | Aplicativo                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Observação:** as permissões de aplicativo foram preteridas e serão removidas em abril de 2020.
+> \* **Observação:** as permissões de aplicativo foram preteridas e serão removidas em julho de 2020.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e um o
 #### <a name="request"></a>Solicitação
 
 > [!Note]
-> A criação de reuniões online usando um token de aplicativo foi descontinuada e o suporte será removido em abril de 2020. Use o caminho /me com um token de usuário para criar reuniões online.
+> A criação de reuniões online usando um token de aplicativo foi preterida e o suporte será removido em julho de 2020. Use o caminho /me com um token de usuário para criar reuniões online.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

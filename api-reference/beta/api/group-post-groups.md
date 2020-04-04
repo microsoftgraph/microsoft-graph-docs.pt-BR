@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d9b347e03c55e4e575e69f663f83820fb7f28015
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 893c03041d8b601ed101d7e6e61775738c040058
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062557"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144230"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -55,13 +55,14 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome para exibição no catálogo de endereços do grupo. Obrigatório. |
+| displayName | string | O nome para exibição no catálogo de endereços do grupo. Comprimento máximo: 256 caracteres. Obrigatório. |
 | description | string | Uma descrição para o grupo. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
 | mailNickname | string | O alias de email do grupo. Obrigatório. |
 | securityEnabled | booliano | Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365. Obrigatório. |
 | owners | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
 | membros | Coleção [directoryObject](../resources/directoryobject.md) | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
+|visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
 
 > **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.
 

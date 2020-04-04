@@ -32,7 +32,7 @@ items:
       - name: Tutoriais
         items:
           - name: Visão Geral
-            href: tutorials.md
+            href: tutorials.yml
           - name: .NET Core
             href: /graph/tutorials/dotnet-core
           - name: Android
@@ -168,10 +168,7 @@ items:
       - name: Identidade e acesso
         href: azuread-identity-access-management-concept-overview.md
         displaName: 'Azure AD, Microsoft identity platform'
-        items:
-          - name: Proteção de Informações
-            href: information-protection-overview.md
-      - name: Email
+      - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -295,6 +292,8 @@ items:
             href: security-authorization.md
           - name: Soluções integradas
             href: security-integration.md
+          - name: Proteção de Informações
+            href: information-protection-overview.md
           - name: Oportunidades de parceria
             href: security-partner-overview.md
       - name: Sites e listas
@@ -466,20 +465,22 @@ items:
             items:
               - name: Logon
                 href: toolkit/components/login.md
+              - name: Obter
+                href: toolkit/components/get.md
               - name: Pessoa
                 href: toolkit/components/person.md
               - name: Pessoas
                 href: toolkit/components/people.md
+              - name: Cartão Pessoal
+                href: toolkit/components/person-card.md
+              - name: Seletor de Pessoas
+                href: toolkit/components/people-picker.md
+              - name: Seletor de Canal do Teams
+                href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
               - name: Tarefas
                 href: toolkit/components/tasks.md
-              - name: Seletor de Pessoas
-                href: toolkit/components/people-picker.md
-              - name: Cartão Pessoal
-                href: toolkit/components/person-card.md
-              - name: Obter
-                href: toolkit/components/get.md
           - name: Provedores
             items:
               - name: Usando os provedores

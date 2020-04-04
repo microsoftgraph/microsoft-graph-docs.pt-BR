@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6ba8b5808819358d31aa41e71251beefc71c92b6
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1734f4b848ca3ba5a1f816649a2587d878f9e9c3
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124480"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144111"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -53,13 +53,14 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome para exibição no catálogo de endereços do grupo. Obrigatório. |
+| displayName | string | O nome para exibição no catálogo de endereços do grupo. Comprimento máximo: 256 caracteres. Obrigatório. |
 | description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
-| mailNickname | string | O alias de email do grupo. Obrigatório. |
+| mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Obrigatório. |
 | securityEnabled | booliano | Defina como **verdadeiro** para grupos ativados por segurança, incluindo grupos do Office 365. Obrigatório. |
 | owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
 | membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |
+|visibility|String|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: `Private`, `Public`, `HiddenMembership` ou vazio (que é interpretado como `Public`).|
 
 > **Observação:** os grupos criados usando o portal do Microsoft Azure sempre terão **securityEnabled** definido inicialmente como `true`.
 
