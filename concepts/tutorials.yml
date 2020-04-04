@@ -1,0 +1,71 @@
+### YamlMime:Landing
+title: Tutoriais do Microsoft Graph
+summary: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você na criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
+metadata:
+  title: Tutoriais do Microsoft Graph
+  description: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você na criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
+  ms.topic: landing-page
+  author: jasonjoh
+  ms.author: jasonjoh
+  ms.date: 04/02/2020
+  ms.openlocfilehash: a897fedd643d95d54b4883e041b5d2c66e6b90ae
+  ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 04/04/2020
+  ms.locfileid: "43144380"
+landingContent:
+- title: Criar seu primeiro aplicativo do lado do servidor
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: ASP.NET
+      url: /graph/tutorials/aspnet
+    - text: Node.js
+      url: /graph/tutorials/node
+    - text: PHP
+      url: /graph/tutorials/php
+    - text: Python
+      url: /graph/tutorials/python
+    - text: Ruby
+      url: /graph/tutorials/ruby
+- title: Criar seu primeiro aplicativo nativo
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: .NET Core
+      url: /graph/tutorial/dotnet-core
+    - text: Android
+      url: /graph/tutorials/android
+    - text: iOS Objective-C
+      url: /graph/tutorials/ios-objectivec
+    - text: iOS Swift
+      url: /graph/tutorials/ios-swift
+    - text: Java
+      url: /graph/tutorials/java
+    - text: React Native
+      url: /graph/tutorials/react-native
+    - text: UWP
+      url: /graph/tutorials/uwp
+    - text: Xamarin
+      url: /graph/tutorials/xamarin
+- title: Criar seu primeiro aplicativo de página única
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Angular
+      url: /graph/tutorials/angular
+    - text: JavaScript
+      url: /graph/tutorials/javascript
+    - text: React
+      url: /graph/tutorials/react
+- title: Cenários
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Alterar notificações e a consulta delta
+      url: /learn/modules/msgraph-changenotifications-trackchanges
+    - text: Otimizar o uso de dados com parâmetros de consulta
+      url: learn/modules/optimize-data-usage
+    - text: Otimizar o tráfego de rede
+      url: learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters
