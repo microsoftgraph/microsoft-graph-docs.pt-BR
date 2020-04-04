@@ -3,12 +3,12 @@ title: Componente de agenda no kit de ferramentas do Microsoft Graph
 description: O componente de gerenciamento de agenda da Web é usado para representar eventos em um calendário de usuário ou grupo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 334da23db286c7243b9722cae443913219a97f7f
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: d8112a876c148ef9463f57d87a3a899194d3491a
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639944"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144321"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente de agenda no kit de ferramentas do Microsoft Graph
 
@@ -33,7 +33,7 @@ Por padrão, o `mgt-agenda` componente busca eventos do `/me/calendarview` ponto
 | show-Max | showMax | Um número para indicar o número máximo de eventos a serem exibidos. O valor padrão não é definido (sem máximo). |
 | ID de grupo | groupId | Uma ID de cadeia de caracteres para um calendário de grupo a ser usado em vez do calendário do usuário conectado no momento. |
 | evento-consulta | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos do Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres, delimitadondo-o com `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
-| events | events | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date`os `days`atributos, `event-query` ou não terão efeito. |
+| eventos | eventos | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente-Use essa propriedade para acessar os eventos carregados pelo componente. Defina esse valor para carregar seus próprios eventos, se o valor for definido por desenvolvedor, `date`os `days`atributos, `event-query` ou não terão efeito. |
 | grupo por dia | groupByDay | Um valor Boolean para agrupar eventos por dia-por eventos padrão não são agrupados. |
 
 O exemplo a seguir altera o comportamento do componente para buscar dados de uma data específica e até três dias.
@@ -129,17 +129,33 @@ Os eventos a seguir são acionados do controle.
 | eventClick | O usuário clica ou toca em um evento.|
 
 
-## <a name="graph-scopes"></a>Escopos de gráfico
+## <a name="permissions"></a>Permissions
 
 Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
-| recurso | permissão/escopo |
+| Resource | Permissão |
 | - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | `Calendars.Read` |
+| [/me/calendarview](/graph/api/calendar-list-calendarview?view=graph-rest-1.0) | Calendars.Read |
 
-O componente permite que você especifique uma consulta diferente do Microsoft Graph para chamar (como `/groups/{id}/calendar/calendarView`). Nesse caso, acrescente o escopo no final da cadeia de caracteres, delimitado por`|`
+O componente permite que você especifique uma consulta diferente do Microsoft Graph para chamar (como `/groups/{id}/calendar/calendarView`). Nesse caso, acrescente a permissão ao final da cadeia de caracteres, delimitado por `|`.
 
 ## <a name="authentication"></a>Autenticação
 
 O controle de logon aproveita o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).
 
+## <a name="extend-for-more-control"></a>Estender para mais controle
+
+Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected` métodos render * para substituição em extensões de componente.
+
+| Método | Descrição |
+| - | - |
+| renderLoading | Renderiza um estado de carregamento enquanto o componente é carregado. |
+| renderNoData | Renderiza um estado de dados vazio. |
+| renderGroups | Classifica dados de eventos em grupos e os renderiza com cabeçalhos de grupo. |
+| renderHeader | Renderiza um cabeçalho de grupo. |
+| renderEvents | Renderiza uma lista de objetos Event. |
+| renderEvent | Renderiza um evento singular e todas as suas partes.
+| renderTitle | Renderiza a parte do título do evento. |
+| renderLocation | Renderiza a parte do local do evento. |
+| renderAttendees | Renderiza a parte dos participantes do evento. |
+| renderOther | Renderiza o conteúdo do evento adicional. |

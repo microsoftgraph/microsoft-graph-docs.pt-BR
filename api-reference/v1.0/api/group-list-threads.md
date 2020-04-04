@@ -5,18 +5,20 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 75074f6602ac3c7b633a734dcf0ff3dc5c68ab1d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 758e8ac28680a6d6625f3a5f0d14c70ee0f9596a
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125166"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144132"
 ---
 # <a name="list-threads"></a>Listar threads
 
-Namespace: Microsoft. Graph obter todos os threads de um grupo.
+Namespace: microsoft.graph
 
->Observação: você também pode [obter todos os threads de uma conversa](conversation-list-threads.md).
+Obter todos os threads de um grupo.
+
+>**Observação:** Você também pode [obter todos os threads de uma conversa](conversation-list-threads.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso drive é o objeto de nível superior que representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: 3b3d7d2d82ab2a6539ace2fa143ceaad55722336
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba048773d49c2fdea3896f3200a3c9112af0969e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531565"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108379"
 ---
 # <a name="drive-resource-type"></a>Tipo de unidade de recurso
 
@@ -57,6 +57,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
   "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "string (timestamp)",
@@ -97,6 +98,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 
 | Relação | Tipo                                 | Descrição
 |:-------------|:-------------------------------------|:-----------------------
+| following    | Coleção [DriveItem](driveitem.md) | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
 | items        | Coleção [DriveItem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
 | root         | [DriveItem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
 | special      | Coleção [DriveItem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
@@ -110,6 +112,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | [Recuperar a pasta raiz da Unidade padrão do usuário][item-get]       | `GET /drive/root`           |
 | [Listar filhos na Unidade][item-children]             | `GET /drive/root/children`  |
 | [Listar alterações de todos os Itens na Unidade][item-changes]    | `GET /drive/root/delta`     |
+| [Listar os driveItems seguidos pelo usuário][drive-following]         | `Get /drive/followed`       |
 | [Pesquisar Itens na Unidade][item-search]               | `GET /drive/root/search`    |
 | [Acessar pasta especial](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
@@ -124,6 +127,7 @@ Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos também são 
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
+[drive-following]: ../api/drive-list-following.md
 
 
 <!-- {

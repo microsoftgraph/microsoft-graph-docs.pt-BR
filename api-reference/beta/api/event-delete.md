@@ -5,20 +5,23 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d426d69b42c0f75b2e52abf8a835f3deb170c778
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04ec124393bb5925c4f1f8c4596c6320de3c1f7b
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423249"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144223"
 ---
 # <a name="delete-event"></a>Excluir evento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um evento.
+Remove o [evento](../resources/event.md) especificado do calendário que o contém. 
+
+Se o evento for uma reunião, excluir o evento no calendário do organizador enviará uma mensagem de cancelamento para os participantes da reunião.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

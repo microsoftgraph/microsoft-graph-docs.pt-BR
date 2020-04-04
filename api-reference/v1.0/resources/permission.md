@@ -7,12 +7,12 @@ localization_priority: Priority
 description: O recurso Permission fornece informações sobre uma permissão de compartilhamento concedida a um recurso DriveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2fa13c414d45561110d1fa1310cfc913efec6118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 789d049a836e5e2aaa879a3239e370e55d7951ce
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534062"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108463"
 ---
 # <a name="permission-resource-type"></a>Tipo de recurso permission
 
@@ -119,6 +119,25 @@ Um link de edição fornece acesso de leitura e gravação a um item.
 }
 ```
 
+### <a name="existing-access-link"></a>Link de acesso existente
+
+Este link não concede privilégios adicionais ao usuário.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+```
+
 ### <a name="sharing-invitation"></a>Convite de compartilhamento
 Além de criar links de compartilhamento, um usuário pode ser convidado pelo endereço de email. Nesse cenário, a permissão cria um convite que é enviado ao email do usuário.
 
@@ -168,6 +187,7 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 | [Adicionar](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Adicionar usuários ao link de compartilhamento](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 ## <a name="remarks"></a>Comentários

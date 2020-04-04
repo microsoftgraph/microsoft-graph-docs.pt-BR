@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 413496c585cdb13b77ddedab997eb64629572660
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 864a38bd5133d471ab0c56d220dc8c2e9fe51ffc
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082326"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108995"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="march-2020"></a>Março de 2020
+
+### <a name="reports-apis"></a>APIs de relatórios
+
+| **Tipo de alteração** | **Versão** | **Descrição**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Adição        | Beta  | Foi adicionada a propriedade **networkDisplayName** à entidade [yammerGroupsActivityDetail](/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta).|
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
@@ -110,6 +116,11 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | Beta e v1.0 | Adicionadas as propriedades de **imagem** e **vídeo** ao recurso [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0). Essas propriedades permite que você recupere as miniaturas de tipo de mídia quando combinadas com uma função de expansão.  |
+| Adição | v1.0 | Foi adicionada a ação **conceder** à entidade [permissão](/graph/api/resources/permission?view=graph-rest-v1.0). |
+| Adição        | v1.0        | Foi adicionada a propriedade de navegação **seguindo** à entidade [unidade](/graph/api/resources/drive?view=graph-rest-v1.0). |
+| Adição        | v1.0        | Foi adicionada a ação [seguir](/graph/api/driveitem-follow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
+| Adição        | v1.0        | Foi adicionada a ação [deixar de seguir](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
+
 
 ### <a name="identity-and-access-azure-ad"></a>Identidade e acesso (Azure AD)
 
@@ -142,12 +153,24 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Alteração      | beta    | O recurso [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) já oferece suporte às propriedades de **conteúdo** e **propriedades**.      |
 | Alteração      | beta    | As operações nos recursos [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) já retornam um cabeçalho quando são reguladas. |
 
+
+### <a name="sites-onedrive-and-sharepoint"></a>Sites (OneDrive e SharePoint)
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :-------------------------------------- |
+| Adição        | v1.0        | Foi adicionada a propriedade de navegação [followSite](/graph/api/follow-site?view=graph-rest-1.0) ao conjunto de entidades [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
+| Adição        | v1.0        | Foi adicionada a propriedade de navegação [unfollowSite](/graph/api/unfollow-site?view=graph-rest-1.0) ao conjunto de entidades [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
+
+### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0       | Adicionada a propriedade de navegação **assinaturas** à entidade de [lista](/graph/api/resources/list?view=graph-rest-v1.0). |
+
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta | Foi adicionado o suporte de ChannelMessage.Read.All para APIs para ler [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) nos canais. |
-
 
 ### <a name="universal-print"></a>Impressão universal
 
@@ -752,9 +775,9 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição    | Beta      |A API de [Criar e enviar notificações](/graph/api/user-post-notifications?view=graph-rest-beta) foi adicionada para habilitar o direcionamento de usuários sem o gerenciamento de tokens "em nome de". |
+| Adição        | Beta            |A API de [Criar e enviar notificações](/graph/api/user-post-notifications?view=graph-rest-beta) foi adicionada para habilitar o direcionamento de usuários sem o gerenciamento de tokens "em nome de". |
 | Adição        | Beta          | A propriedade **targetPolicy** foi introduzida no recurso [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) para permitir que pontos de extremidade da Web sejam direcionados por push da Web. |
-| Adição    | Beta      |  A propriedade **fallbackPolicy** foi adicionada ao recurso [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) para habilitar a entrega garantida no iOS para notificações de alta prioridade. |
+| Adição        | Beta            |  A propriedade **fallbackPolicy** foi adicionada ao recurso [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) para habilitar a entrega garantida no iOS para notificações de alta prioridade. |
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
@@ -1097,7 +1120,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta       | Adicionada a propriedade de navegação **assinaturas** à entidade de [lista](/graph/api/resources/list?view=graph-rest-beta). |
+| Adição        | Beta        | Adicionada a propriedade de navegação **assinaturas** à entidade de [lista](/graph/api/resources/list?view=graph-rest-beta). |
 
 ### <a name="reports"></a>Relatórios
 

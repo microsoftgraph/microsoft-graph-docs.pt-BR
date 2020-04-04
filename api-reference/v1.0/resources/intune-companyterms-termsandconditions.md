@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 252ed085bf95e9604b0e6fdbffc245b6c5236fe4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fc2ea20788d7f137e44d7ef04fa5b4ce061709f1
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530989"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144097"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
@@ -23,7 +23,7 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar termsAndConditionses](../api/intune-companyterms-termsandconditions-list.md)|Coleção [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Listar propriedades e relações dos objetos [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
+|[Listar termsAndConditions](../api/intune-companyterms-termsandconditions-list.md)|Coleção [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Listar propriedades e relações dos objetos [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
 |[Obter termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ler propriedades e relações do objeto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
 |[Criar termsAndConditions](../api/intune-companyterms-termsandconditions-create.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Criar um novo objeto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
 |[Excluir termsAndConditions](../api/intune-companyterms-termsandconditions-delete.md)|Nenhum|Excluir um [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|
@@ -36,13 +36,13 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
-|description|String|Descrição fornecida pelo administrador para a política de T&C.|
+|descrição|String|Descrição fornecida pelo administrador para a política de T&C.|
 |title|String|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |assignments|Coleção [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|A lista de atribuições dessa política de T&C.|

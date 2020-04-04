@@ -6,12 +6,12 @@ description: O recurso do site fornece metadados e relações para um site do Sh
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1878b46f7738f440808960e43310b2d7606ee22f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ba96c6cc62bd6efbff8e0efb6062104d994090c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533693"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108547"
 ---
 # <a name="site-resource"></a>Recurso do site
 
@@ -30,6 +30,8 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Obter análises][]              | [itemAnalytics][] | Obter análises para este recurso. 
 | [Obter atividades por intervalo][] | [itemActivityStat][] | Obter uma coleção de **itemActivityStats** dentro do intervalo de tempo especificado.
 | [Pesquisar sites][]     | coleção de sites | Pesquise num locatário do SharePoint por sites que correspondam a palavras-chave fornecidas.
+| [Seguir Site][]          | coleção de sites | Seguir um ou vários sites de usuário.
+| [Deixar de Seguir Site][]        | coleção de sites | Seguir um ou vários sites de usuário.
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -39,6 +41,8 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Obter atividades por intervalo]: ../api/itemactivitystat-getactivitybyinterval.md
 [Pesquisar sites]: ../api/site-search.md
 [itemActivityStat]: itemactivitystat.md
+[Seguir site]: ../api/site-follow.md
+[Deixar de seguir site]: ../api/site-unfollow.md
 
 ## <a name="properties"></a>Propriedades
 
@@ -56,7 +60,18 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | **siteCollection**       | [siteCollection](sitecollection.md) | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura. |
 | **webUrl**               | string (url)                        | A URL que exibe o item no navegador. Somente leitura.                                          |
 
-## <a name="relationships"></a>Relacionamentos
+### <a name="id-property"></a>propriedade do id
+Um **site** é identificado por um ID exclusivo que é composto pelos seguintes valores:
+* Hostname do conjunto de sites (contoso.sharepoint.com)
+* ID exclusiva do conjunto de sites (GUID)
+* ID exclusiva do site (GUID)
+  
+O identificador `root` sempre faz referência ao site raiz de um determinado destino, como a seguir:
+
+* `/sites/root`: O site raiz do locatário.
+* `/groups/{group-id}/sites/root`: O site da equipe do grupo.
+  
+## <a name="relationships"></a>Relações
 
 | Relação      | Tipo                             | Descrição
 |:------------------|:---------------------------------|:----------------------

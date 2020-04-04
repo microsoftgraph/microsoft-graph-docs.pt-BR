@@ -3,12 +3,12 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0202d8bc8c8ae23f98cb4add9f9d5ca96afea04d
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 53cd4d8bb7a2bb23a3c54924ee07b4843e7fc503
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639951"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144279"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
@@ -82,9 +82,11 @@ Para saber mais, confira [estilos de componentes](../style.md).
 
 O `mgt-person` componente oferece suporte a vários [modelos](../templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes:
 
-| Tipo de dados     | Contexto de dados              | Descrição                                                       |
-| ---------     | ------------------------- | ----------------------------------------------------------------- |
-| Padrão.     | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
+| Tipo de dados | Contexto de dados | Descrição |
+| --------- | ------------ | ----------- |
+| carregando | nenhuma | O modelo a ser renderizado enquanto o componente está em um estado laoding. |
+| sem dados | nenhuma | O modelo a ser renderizado quando nenhuma imagem de pessoa ou dados estiver disponível. | 
+| Padrão. | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
 | cartão de pessoa | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o item de gerenciamento de pessoa que é exibido ao focalizar ou clique. |
 
 O exemplo a seguir define um modelo para o componente Person.
@@ -113,7 +115,7 @@ O `mgt-person` componente pode mostrar um `mgt-person-card` em foco ou clique.
 
 | Atributo    |  Propriedade     | Descrição                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| cartão de pessoa | personCard | Uma enumeração para determinar a ação do usuário necessária para ativar o `hover` painel `click`ou o menu suspenso. O valor padrão é`none` |
+| cartão de pessoa | personCardInteraction | Uma enumeração para determinar a ação do usuário necessária para ativar o `hover` painel `click`ou o menu suspenso. O valor padrão é`none` |
 
 
 Para obter mais informações sobre modelos, estilos e atributos, consulte [componente de cartão de pessoa](./person-card.md).
@@ -135,3 +137,16 @@ Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 ## <a name="authentication"></a>Autenticação
 
 O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md) para buscar os dados necessários.
+
+## <a name="extend-for-more-control"></a>Estender para mais controle
+
+Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected render*` métodos para substituir em extensões de componente.
+
+| Método | Descrição |
+| - | - |
+| renderLoading | Renderiza o estado de carregamento. |
+| renderImage | Renderiza a parte da imagem. |
+| renderNoData | Renderiza quando nenhum dado de imagem ou pessoa está disponível. |
+| renderDetails | Renderiza a parte de detalhes da pessoa. |
+| renderEmail | Renderiza a subparte de email dos detalhes da pessoa. |
+| rendername | Renderiza o nome subparte dos detalhes da pessoa. |

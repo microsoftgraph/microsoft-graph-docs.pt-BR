@@ -3,12 +3,12 @@ title: Provedor do Microsoft Teams
 description: Use o provedor de equipes dentro da guia do Microsoft Teams para facilitar a autenticação e o acesso ao Microsoft Graph a todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 08fe1e2e33ddc31ee88ed32dc4d57fdefac0c8fc
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 850d414557313a2a16b3cd5c1c4b854cc1b00081
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866865"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144265"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
@@ -35,7 +35,7 @@ O exemplo a seguir usa o provedor em HTML (via CDN).
 ```
 
 | Atributo | Descrição |
-| --- | --- | --- |
+| --- | --- |
 | Client-ID   | String Client ID (consulte Configure Your Teams app). Obrigatório. |
 | auth-Popup-URL  | Caminho absoluto ou relativo para a página que manipulará a autenticação no pop-up (consulte criar a página pop-up). Obrigatório. |
 | escopos  | Cadeias de caracteres separadas por vírgula para escopos para os quais o usuário deve se concordar. Opcional. |

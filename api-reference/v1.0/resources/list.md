@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: af970267f4aebcac986659324a30238a8510c010
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a63f4bdbf3ef8290a9295bc0ecb9abdee5452b45
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447581"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108442"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -37,6 +37,7 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/v1
 | [Atualizar item de lista][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Excluir item de lista][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Criar item de lista][]      | POST /lists/{list-id}
+| [Obter canal WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 
 [Obter lista]: ../api/list-get.md
 [Criar lista]: ../api/list-create.md
@@ -44,6 +45,7 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/v1
 [Atualizar item de lista]: ../api/listitem-update.md
 [Excluir item de lista]: ../api/listitem-delete.md
 [Criar item de lista]: ../api/listitem-create.md
+[Obter canal WebSocket]: ../api/subscriptions-socketio.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -73,6 +75,7 @@ Veja a seguir uma representação JSON de um recurso **list**.
     "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -125,6 +128,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 | **items**         | Collection([listItem][])         | Todos os itens contidos na lista.
 | **columns**       | Collection([columnDefinition][]) | A coleção de definições de campo para esta lista.
 | **contentTypes**  | Collection([contentType][])      | A coleção de tipos de conteúdo presentes nesta lista.
+| **assinaturas** | Conjunto([assinatura][])     | O conjunto de assinaturas na lista.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -138,6 +142,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 [sharepointIds]: sharepointids.md
 [site]: site.md
 [systemFacet]: systemfacet.md
+[assinatura]: subscription.md
 
 <!-- {
   "type": "#page.annotation",

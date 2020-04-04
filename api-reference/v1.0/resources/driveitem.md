@@ -6,12 +6,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 016c1e9efc290082a0ab6136496f0eeeeab9be4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15dfedfda092f2c4a742699f40359de51d9ffc0e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531555"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108561"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -193,6 +193,8 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | [Copiar item](../api/driveitem-copy.md)                    | detalhes sobre como [monitorar o progresso](/graph/long-running-actions-overview) da cópia | Cria uma cópia de um driveItem (incluindo qualquer filho).
 | [Pesquisar itens](../api/driveitem-search.md)               | coleção de driveItem | Pesquise a hierarquia de itens para itens que correspondam a uma consulta.
 | [Listar alterações em uma unidade](../api/driveitem-delta.md)     | link delta | Listar quaisquer alterações na unidade.
+| [Seguir o item](../api/driveitem-follow.md)                | driveItem  | Seguir um driveItem.
+| [Deixar de seguir o item](../api/driveitem-unfollow.md)            | Sem conteúdo | Deixar de seguir um driveItem.
 | [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | coleção de driveItem | Listar driveItems com suas miniaturas. 
 | [Criar link de compartilhamento](../api/driveitem-createlink.md)    | link de compartilhamento | Criar um link para compartilhar o driveItem.
 | [Adicionar permissões](../api/driveitem-invite.md)            | coleção de [permissão][] | Envia um convite de compartilhamento a um usuário.
@@ -215,7 +217,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 [folder]: folder.md
 [obter versões anteriores]: ../api/driveitem-list-versions.md
 [obtendo miniaturas]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

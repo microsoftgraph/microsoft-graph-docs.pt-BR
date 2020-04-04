@@ -3,14 +3,14 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 91b11006df02d563902b99c79c4b1ec09bb7e50a
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 175370b3c00ebaef0db85912c032898e2dacb5e7
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639937"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144300"
 ---
-# <a name="people-picker-component"></a>Componente de seletor de pessoas
+# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Componente de seletor de pessoas no Microsoft Graph Toolkit
 
 Você pode usar a `mgt-people-picker` pesquisa de componente da Web para um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph. Por padrão, o componente pesquisará todas as pessoas; Você também pode definir uma propriedade de grupo para filtrar os resultados.
 
@@ -82,10 +82,12 @@ mgt-people-picker {
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
+| Padrão. | nulo: não há dados | O modelo usado para substituir a renderização de todo o componente.
 | carregando | nulo: não há dados | O modelo usado para renderizar o estado do seletor enquanto a solicitação ao gráfico está sendo feita. |
-| erro | nulo: não há dados| O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
-| selecionado-pessoa |Person: o objeto de detalhes da pessoa| O modelo para renderizar as pessoas selecionadas. |
-| vendedor | Person: o objeto de detalhes da pessoa| O modelo para renderizar pessoas na lista suspensa. |
+| erro | nulo: não há dados | O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
+| sem dados | nulo: não há dados | Um modelo alternativo usado se a pesquisa de usuário não retornar nenhum usuário. |
+| selecionado-pessoa | Person: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
+| person | Person: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 
@@ -110,3 +112,19 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 ## <a name="authentication"></a>Autenticação
 
 O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).
+
+## <a name="extend-for-more-control"></a>Estender para mais controle
+
+Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected render*` métodos para substituir em extensões de componente.
+
+| Método | Descrição |
+| - | - |
+| renderInput | Renderiza a caixa de texto de entrada. |
+| renderSelectedPeople | Renderiza os tokens de pessoas selecionados. |
+| renderSelectedPerson | Renderiza um token de pessoa individual. |
+| renderFlyout | Renderiza o cromo domenu. |
+| renderFlyoutContent | Processa o estado apropriado no submenu de resultados. |
+| renderLoading | Renderiza o estado de carregamento. |
+| renderNoData | Renderiza o estado quando nenhum resultado é encontrado para a consulta de pesquisa. |
+| renderSearchResults | Renderiza a lista de resultados de pesquisa. |
+| renderPersonResult | Renderiza um resultado de pesquisa de pessoa individual. |

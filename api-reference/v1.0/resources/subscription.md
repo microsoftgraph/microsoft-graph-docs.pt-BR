@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a490257ccc1ba17e7e425c24126c24689c612a9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ede2274abebbba1148762f5d3606cd61a4578a4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533600"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108428"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -21,6 +21,7 @@ Uma assinatura permite que um aplicativo cliente receba notificações sobre dad
 - Um [alerta][] do Microsoft Graph Security API
 - Um [conversa][] de um grupo do Office 365
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
+- Uma [lista][] em um [site][] do SharePoint
 - Uma [mensagem][], [evento][] ou [contato][] no Outlook
 - Um [usuário][] ou [grupo][] no Azure Active Directory
 
@@ -40,7 +41,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| changeType | cadeia de caracteres | Obrigatório. Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações do item na raiz da unidade suportam somente `updated` changeType. Notificações de grupos e usuário suportam `updated` e `deleted` changeType. |
+| changeType | cadeia de caracteres | Obrigatório. Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Observação: As notificações de lista e do item na raiz da unidade têm suporte apenas para o changeType `updated`. Notificações de grupos e usuário suportam `updated` e `deleted` changeType. |
 | notificationUrl | cadeia de caracteres | Obrigatório. A URL do ponto de extremidade que receberá as notificações. Esta URL deve usar o protocolo HTTPS. |
 | recurso | cadeia de caracteres | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado.|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
@@ -60,6 +61,7 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Contatos            | 4230 minutos (em 3 dias)    |
 | Conversas em grupo | 4230 minutos (em 3 dias)    |
 | Itens raiz de unidade    | 4230 minutos (em 3 dias)    |
+| Lista do SharePoint     | 4230 minutos (em 3 dias)    |
 | Alertas de segurança     | 43200 minutos (em 30 dias )  |
 
 > **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor suportado. No futuro, as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
@@ -110,6 +112,8 @@ Veja a seguir uma representação JSON do recurso.
 [contato]: ./contact.md
 [conversa]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

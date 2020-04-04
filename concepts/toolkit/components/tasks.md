@@ -3,12 +3,12 @@ title: Componente tarefas no Microsoft Graph Toolkit
 description: O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com qualquer tarefa no Microsoft Planner ou no Microsoft to-do.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 80da5522b73051df4d5c264e5289845b9521058f
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: cfd248ca7cb240cd724b8df863383b308121db4b
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639916"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144272"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente tarefas no Microsoft Graph Toolkit
 
@@ -31,6 +31,7 @@ O exemplo a seguir exibe as tarefas do Microsoft Planner do usuário conectado u
 | Data-Source = "todo/planejador" | dataSource | Uma enumeração para configurar a fonte de dados para tarefas-Microsoft to-do ou Microsoft Planner. O padrão é `planner`. |
 | somente leitura | readOnly | Um booliano para definir a interface de tarefa como somente leitura (sem adicionar ou remover tarefas). O padrão é `false`. |
 | Ocultar-cabeçalho | hideHeader | Um booliano para mostrar ou ocultar o cabeçalho do componente. O padrão é `false`. |
+| Hide-opções | hideoptions | Um booliano para mostrar ou ocultar as opções nas tarefas. O padrão é `false`.
 | Initial-ID = "planner_id/folder_id" | initialid | Uma ID de cadeia de caracteres para definir o planejador ou pasta inicialmente exibido para a ID fornecida. |
 | Initial-Bucket-ID = "bucket_id" | initialBucketId | Uma ID de cadeia de caracteres para definir o Bucket exibido inicialmente (somente a fonte de dados do Planner) para a ID fornecida. |
 | Target-ID = "planner_id/folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou ID de pasta fornecido. |
@@ -102,6 +103,19 @@ mgt-tasks {
 --task-complete-header-color
 --task-complete-detail-color
 --task-complete-detail-icon-color
+
+--task-icon-background-completed
+--task-icon-background
+
+--task-icon-border-completed
+--task-icon-border
+
+--task-icon-color
+--task-icon-color-completed
+
+--task-icon-border-radius
+
+--task-icon-alignment: flex-start (default) | center | flex-end
 }
 ````
 

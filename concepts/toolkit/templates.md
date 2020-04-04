@@ -3,12 +3,12 @@ title: Modelos no Microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a69460b788a2e3ef7558ba8e0f0630557943d463
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: 46a1f9b771f358de6099bf1266c10c4c1ebe0cb0
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953596"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144258"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no Microsoft Graph Toolkit
 
@@ -122,54 +122,94 @@ Haverá casos em que o objeto de contexto de dados contém loop e você precisar
 </template>
 ```
 
-## <a name="converters"></a>Conversores
+## <a name="templatecontext"></a>TemplateContext
 
-Em muitos casos, talvez você queira transformar os dados antes de apresentá-los no modelo. Por exemplo, você pode querer formatar corretamente uma data antes de ela ser renderizada. Nesses casos, talvez você queira usar um conversor de modelos.
-
-Para usar um conversor de modelos, primeiro é necessário definir uma função que fará a conversão. Por exemplo, você pode definir uma função para formatar uma data.
+Cada componente no Microsoft Graph Toolkit define a `templateContext` Propriedade, que você pode usar para passar dados adicionais para qualquer modelo no componente. 
 
 ```ts
-getTimeRange(event) {
-  // TODO: format a string from the event object as you wish
-  // timeRange = ...
+document.querySelector('mgt-agenda').templateContext = {
 
-  return timeRange;
+  someObject: {},
+  formatDate: (date: Date) => { /* format date and return */ },
+  someEventHandler: (e) => { /* handleEvent */  }
+
 }
 ```
 
-Em seguida, defina um novo conversor no elemento e nomeie-o conforme você vir ajustar.
+Agora, as propriedades `templateContext` no objeto estarão disponíveis para serem usadas nas expressões de associação no modelo.
+
+Isso pode ser útil em muitos cenários, como converter dados em suas associações ou vincular a eventos. 
+
+### <a name="converters"></a>Conversores
+
+Em muitos casos, talvez você queira transformar os dados antes de apresentá-los no modelo. Por exemplo, você pode querer formatar corretamente uma data antes de ela ser renderizada. Nesses casos, talvez você queira usar um conversor de modelos.
+
+Para usar um conversor de modelos, primeiro é necessário definir uma função que fará a conversão. Por exemplo, você pode definir uma função para converter um objeto de evento em um intervalo de tempo formatado.
 
 ```ts
-let agenda = document.querySelector('mgt-agenda');
-agenda.templateConverters["myConverter"] = getTimeRange;
+document.querySelector('mgt-agenda').templateContext = {
+
+  getTimeRange: (event) => {
+    // TODO: format a string from the event object as you wish
+    // timeRange = ...
+
+    return timeRange;
+  }
+
+}
 ```
 
-Para usar o conversor no seu modelo, use as chaves triplas.
+Para usar o conversor no seu modelo, use-o como se você tivesse usado uma função no code-behind.
 
 ```html
 <template data-type="event">
-  <div>{{{ myConverter(event) }}}</div>
+  <div>{{ getTimeRange(event) }}</div>
 </template>
 ```
 
-Você também pode usar funções internas sem definir o conversor de modelos.
+### <a name="event-or-property-binding"></a>Associação de evento ou propriedade
+
+O `data-props` atributo permite adicionar um ouvinte de eventos ou definir um valor de propriedade diretamente em seus modelos. 
 
 ```html
-<template data-type="event">
-  <div>{{{ event.subject.toUpperCase() }}}</div>
+<template>
+    <button data-props="{{@click: myEvent, myProp: value}}"></button>
 </template>
 ```
+
+Os dados-props aceitam uma cadeia de caracteres delimitada por vírgulas para cada propriedade ou manipulador de eventos que você queira definir. 
+
+Para adicionar um manipulador de eventos, Prefixe o nome do evento `@`com. O manipulador de eventos deverá estar disponível no `templateContext` do elemento.
+
+```ts
+document.querySelector('mgt-agenda').templateContext = {
+
+  someEventHandler: (e, context, root) => { /* handleEvent */  }
+
+}
+```
+
+```html
+<template>
+    <button data-props="{{@click: someEventHandler}}"></button>
+</template>
+```
+
+Os argumentos de evento, o contexto de dados e o elemento raiz do modelo são passados para o manipulador de eventos como parâmetros.
+
 
 ## <a name="template-rendered-event"></a>Evento de modelo renderizado
 
-Em certos casos, talvez você queira obter uma referência para o elemento renderizado. Isso pode ser útil para adicionar ouvintes de eventos a elementos no modelo. Neste cenário, você pode usar o `templateRendered` evento.
+Em certos casos, talvez você queira obter uma referência para o elemento renderizado. Isso pode ser útil se você quiser manipular a renderização do conteúdo sozinho ou se quiser modificar o elemento renderizado.
+
+Neste cenário, você pode usar o `templateRendered` evento, que é acionado depois que o modelo é renderizado.
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');
 agenda.addEventListener('templateRendered', (e) => { });
 ```
 
-Os detalhes do evento conterão a referência ao elemento que está sendo renderizado, o objeto de contexto de dados e o tipo de modelo.
+Os detalhes do evento conterão uma referência ao elemento que está sendo renderizado, o objeto de contexto de dados e o tipo de modelo.
 
 ```ts
 agenda.addEventListener('templateRendered', (e) => { 

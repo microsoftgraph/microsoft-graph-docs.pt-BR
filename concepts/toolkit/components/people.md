@@ -3,12 +3,12 @@ title: Componente pessoas no Microsoft Graph Toolkit
 description: Você pode usar o `mgt-people` componente da Web para exibir um grupo de pessoas ou contatos usando suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 78dc1504d7f46756809abcf922dfcea431fd796c
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 34b7877b16d7f97d201e7bd96e1378c1e542bbcf
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639958"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144293"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente pessoas no Microsoft Graph Toolkit
 
@@ -66,6 +66,7 @@ O `mgt-people` dá suporte a vários [modelos](../templates.md) que você pode u
 | `person` | `person`: objeto Person | O modelo usado para renderizar cada pessoa. |
 | `overflow` | `people`: lista de objetos Person <br> `max`: número de pessoas mostradas <br> `extra`: número de pessoas extras | O modelo usado para renderizar o número além do máximo à direita da lista de pessoas. |
 | `no-data` | Nenhum contexto de dados é passado | O modelo usado quando não há dados disponíveis. |
+| `loading` | Nenhum contexto de dados é passado | O modelo usado enquanto o componente carrega o estado.
 
 Os exemplos a seguir mostram como usar o `person` modelo.
 
@@ -93,3 +94,15 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 ## <a name="authentication"></a>Autenticação
 
 O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).
+
+## <a name="extend-for-more-control"></a>Estender para mais controle
+
+Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected render*` métodos para substituir em extensões de componente.
+
+| Método | Descrição |
+| - | - |
+| renderLoading | Renderiza o estado de carregamento. |
+| renderNoData | Renderiza o estado de dados vazio. |
+| renderPeople | Renderiza uma lista de pessoas, até o `show-max` valor. |
+| renderPerson | Renderiza uma pessoa individual. |
+| renderOverflow | Renderiza uma representação de pessoas restantes além do `show-max` valor. |

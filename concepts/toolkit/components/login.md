@@ -3,12 +3,12 @@ title: Componente de logon no kit de ferramentas do Microsoft Graph
 description: Um componente de logon é um botão e um controle de submenu para facilitar a autenticação da plataforma de identidade da Microsoft.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3b326cc97bf7a3463e43ffcf757cc34d5cc00975
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 5ef2856f6cd86e9fe35523d6cf8f6ac9174860a8
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639979"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144307"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no kit de ferramentas do Microsoft Graph
 
@@ -89,3 +89,26 @@ Este componente usa o [componente Person](./person.md) para exibir o usuário e 
 ## <a name="authentication"></a>Autenticação
 
 O controle de logon usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md). 
+
+## <a name="extend-for-more-control"></a>Estender para mais controle
+
+Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected render*` métodos para substituir em extensões de componente.
+
+| Método | Descrição |
+| - | - |
+| renderButton | Renderiza o cromo do botão. |
+| renderButtonContent | Renderiza o conteúdo do botão. |
+| renderFlyout | Renderiza o cromo domenu. |
+| renderFlyoutContent | Renderiza o conteúdo do submenu. |
+
+### <a name="bring-your-own-flyout"></a>Traga seu próprio submenu
+
+É possível usar seu próprio componente de submenu no lugar do interno, substituindo o `renderFlyout()` método e fornecendo o novo submenu.
+
+Nesse caso, verifique se o componente de login continua funcionando conforme o esperado, substituindo os `protected` métodos de exibição de submenu para atualizar a visibilidade do submenu alternativo.
+
+| Método | Descrição |
+| - | - |
+| hideFlyout | Descarta o submenu. |
+| Menu de atalho | Exibe o submenu. |
+| toggleFlyout | Alterna o estado do submenu. |
