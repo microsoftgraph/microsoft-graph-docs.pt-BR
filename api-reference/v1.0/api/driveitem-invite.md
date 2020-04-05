@@ -7,31 +7,31 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Envia um convite de compartilhamento para um DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 16924f6bd09b0f6e1a5918e002456ce8201571cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 129cbeaf43c9c409b645a7a94b8b4a3371329a8b
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517731"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146419"
 ---
-# <a name="send-a-sharing-invitation"></a><span data-ttu-id="4649b-103">Enviar um convite de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="4649b-103">Send a sharing invitation</span></span>
+# <a name="send-a-sharing-invitation"></a><span data-ttu-id="7ff27-103">Enviar um convite de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="7ff27-103">Send a sharing invitation</span></span>
 
-<span data-ttu-id="4649b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4649b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7ff27-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7ff27-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4649b-105">Envia um convite de compartilhamento para um **DriveItem**.</span><span class="sxs-lookup"><span data-stu-id="4649b-105">Sends a sharing invitation for a **DriveItem**.</span></span>
-<span data-ttu-id="4649b-106">Um convite de compartilhamento fornece permissões para os destinatários e, opcionalmente, envia um email com um [link de compartilhamento][].</span><span class="sxs-lookup"><span data-stu-id="4649b-106">A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].</span></span>
+<span data-ttu-id="7ff27-105">Envia um convite de compartilhamento para um **DriveItem**.</span><span class="sxs-lookup"><span data-stu-id="7ff27-105">Sends a sharing invitation for a **DriveItem**.</span></span>
+<span data-ttu-id="7ff27-106">Um convite de compartilhamento fornece permissões para os destinatários e, opcionalmente, envia um email com um [link de compartilhamento][].</span><span class="sxs-lookup"><span data-stu-id="7ff27-106">A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4649b-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="4649b-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ff27-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="7ff27-107">Permissions</span></span>
 
-<span data-ttu-id="4649b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4649b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7ff27-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ff27-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4649b-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4649b-110">Permission type</span></span>      | <span data-ttu-id="4649b-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4649b-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7ff27-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7ff27-110">Permission type</span></span>      | <span data-ttu-id="7ff27-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7ff27-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4649b-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4649b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4649b-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4649b-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4649b-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4649b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4649b-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4649b-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4649b-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4649b-116">Application</span></span> | <span data-ttu-id="4649b-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4649b-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7ff27-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7ff27-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7ff27-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ff27-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7ff27-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7ff27-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ff27-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ff27-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7ff27-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7ff27-116">Application</span></span> | <span data-ttu-id="7ff27-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ff27-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4649b-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4649b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ff27-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7ff27-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,9 +43,9 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a><span data-ttu-id="4649b-119">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4649b-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ff27-119">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7ff27-119">Request body</span></span>
 
-<span data-ttu-id="4649b-120">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4649b-120">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="7ff27-120">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7ff27-120">In the request body, provide a JSON object with the following parameters.</span></span>
 
 <!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
@@ -62,25 +62,25 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| <span data-ttu-id="4649b-121">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="4649b-121">Parameter</span></span>        | <span data-ttu-id="4649b-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="4649b-122">Type</span></span>                           | <span data-ttu-id="4649b-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="4649b-123">Description</span></span>
+| <span data-ttu-id="7ff27-121">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7ff27-121">Parameter</span></span>        | <span data-ttu-id="7ff27-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ff27-122">Type</span></span>                           | <span data-ttu-id="7ff27-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ff27-123">Description</span></span>
 |:-----------------|:-------------------------------|:-------------------------
-| <span data-ttu-id="4649b-124">destinatários</span><span class="sxs-lookup"><span data-stu-id="4649b-124">recipients</span></span>       | <span data-ttu-id="4649b-125">Collection([DriveRecipient][])</span><span class="sxs-lookup"><span data-stu-id="4649b-125">Collection([DriveRecipient][])</span></span> | <span data-ttu-id="4649b-126">Uma coleção dos destinatários que receberão o acesso e o convite de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="4649b-126">A collection of recipients who will receive access and the sharing invitation.</span></span>
-| <span data-ttu-id="4649b-127">mensagem</span><span class="sxs-lookup"><span data-stu-id="4649b-127">message</span></span>          | <span data-ttu-id="4649b-128">String</span><span class="sxs-lookup"><span data-stu-id="4649b-128">String</span></span>                         | <span data-ttu-id="4649b-p103">Uma mensagem de texto sem formatação que está incluída no convite de compartilhamento. Comprimento máximo de 2000 caracteres.</span><span class="sxs-lookup"><span data-stu-id="4649b-p103">A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.</span></span>
-| <span data-ttu-id="4649b-131">requireSignIn</span><span class="sxs-lookup"><span data-stu-id="4649b-131">requireSignIn</span></span>    | <span data-ttu-id="4649b-132">Booleano</span><span class="sxs-lookup"><span data-stu-id="4649b-132">Boolean</span></span>                        | <span data-ttu-id="4649b-133">Especifica se o destinatário do convite precisa fazer logon para visualizar o item compartilhado.</span><span class="sxs-lookup"><span data-stu-id="4649b-133">Specifies whether the recipient of the invitation is required to sign-in to view the shared item.</span></span>
-| <span data-ttu-id="4649b-134">sendInvitation</span><span class="sxs-lookup"><span data-stu-id="4649b-134">sendInvitation</span></span>   | <span data-ttu-id="4649b-135">Booliano</span><span class="sxs-lookup"><span data-stu-id="4649b-135">Boolean</span></span>                        | <span data-ttu-id="4649b-136">Se verdadeiro, um [link de compartilhamento][] será enviado ao destinatário.</span><span class="sxs-lookup"><span data-stu-id="4649b-136">If true, a [sharing link][] is sent to the recipient.</span></span> <span data-ttu-id="4649b-137">Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.</span><span class="sxs-lookup"><span data-stu-id="4649b-137">Otherwise, a permission is granted directly without sending a notification.</span></span>
-| <span data-ttu-id="4649b-138">funções</span><span class="sxs-lookup"><span data-stu-id="4649b-138">roles</span></span>            | <span data-ttu-id="4649b-139">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="4649b-139">Collection(String)</span></span>             | <span data-ttu-id="4649b-140">Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="4649b-140">Specify the roles that are to be granted to the recipients of the sharing invitation.</span></span>
+| <span data-ttu-id="7ff27-124">destinatários</span><span class="sxs-lookup"><span data-stu-id="7ff27-124">recipients</span></span>       | <span data-ttu-id="7ff27-125">Collection([DriveRecipient][])</span><span class="sxs-lookup"><span data-stu-id="7ff27-125">Collection([DriveRecipient][])</span></span> | <span data-ttu-id="7ff27-126">Uma coleção dos destinatários que receberão o acesso e o convite de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="7ff27-126">A collection of recipients who will receive access and the sharing invitation.</span></span>
+| <span data-ttu-id="7ff27-127">mensagem</span><span class="sxs-lookup"><span data-stu-id="7ff27-127">message</span></span>          | <span data-ttu-id="7ff27-128">String</span><span class="sxs-lookup"><span data-stu-id="7ff27-128">String</span></span>                         | <span data-ttu-id="7ff27-p103">Uma mensagem de texto sem formatação que está incluída no convite de compartilhamento. Comprimento máximo de 2000 caracteres.</span><span class="sxs-lookup"><span data-stu-id="7ff27-p103">A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.</span></span>
+| <span data-ttu-id="7ff27-131">requireSignIn</span><span class="sxs-lookup"><span data-stu-id="7ff27-131">requireSignIn</span></span>    | <span data-ttu-id="7ff27-132">Booleano</span><span class="sxs-lookup"><span data-stu-id="7ff27-132">Boolean</span></span>                        | <span data-ttu-id="7ff27-133">Especifica se o destinatário do convite precisa fazer logon para visualizar o item compartilhado.</span><span class="sxs-lookup"><span data-stu-id="7ff27-133">Specifies whether the recipient of the invitation is required to sign-in to view the shared item.</span></span>
+| <span data-ttu-id="7ff27-134">sendInvitation</span><span class="sxs-lookup"><span data-stu-id="7ff27-134">sendInvitation</span></span>   | <span data-ttu-id="7ff27-135">Booliano</span><span class="sxs-lookup"><span data-stu-id="7ff27-135">Boolean</span></span>                        | <span data-ttu-id="7ff27-136">Se verdadeiro, um [link de compartilhamento][] será enviado ao destinatário.</span><span class="sxs-lookup"><span data-stu-id="7ff27-136">If true, a [sharing link][] is sent to the recipient.</span></span> <span data-ttu-id="7ff27-137">Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.</span><span class="sxs-lookup"><span data-stu-id="7ff27-137">Otherwise, a permission is granted directly without sending a notification.</span></span>
+| <span data-ttu-id="7ff27-138">funções</span><span class="sxs-lookup"><span data-stu-id="7ff27-138">roles</span></span>            | <span data-ttu-id="7ff27-139">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="7ff27-139">Collection(String)</span></span>             | <span data-ttu-id="7ff27-140">Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="7ff27-140">Specify the roles that are to be granted to the recipients of the sharing invitation.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4649b-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4649b-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7ff27-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7ff27-141">Example</span></span>
 
-<span data-ttu-id="4649b-142">Este exemplo envia um convite de compartilhamento para um usuário com o endereço de email "ryan@contoso.com" com uma mensagem sobre um arquivo recebendo colaborações.</span><span class="sxs-lookup"><span data-stu-id="4649b-142">This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.</span></span>
-<span data-ttu-id="4649b-143">O convite concede acesso de leitura e gravação ao arquivo para Ryan.</span><span class="sxs-lookup"><span data-stu-id="4649b-143">The invitation grants Ryan read-write access to the file.</span></span>
+<span data-ttu-id="7ff27-142">Este exemplo envia um convite de compartilhamento para um usuário com o endereço de email "ryan@contoso.com" com uma mensagem sobre um arquivo recebendo colaborações.</span><span class="sxs-lookup"><span data-stu-id="7ff27-142">This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.</span></span>
+<span data-ttu-id="7ff27-143">O convite concede acesso de leitura e gravação ao arquivo para Ryan.</span><span class="sxs-lookup"><span data-stu-id="7ff27-143">The invitation grants Ryan read-write access to the file.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="4649b-144">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4649b-144">HTTP Request</span></span>
+### <a name="http-request"></a><span data-ttu-id="7ff27-144">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7ff27-144">HTTP Request</span></span>
 
-<span data-ttu-id="4649b-145">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto de coleção [permission](../resources/permission.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4649b-145">If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.</span></span>
+<span data-ttu-id="7ff27-145">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto de coleção [permission](../resources/permission.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7ff27-145">If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4649b-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="4649b-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7ff27-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="7ff27-146">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -99,28 +99,28 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4649b-147">C#</span><span class="sxs-lookup"><span data-stu-id="4649b-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7ff27-147">C#</span><span class="sxs-lookup"><span data-stu-id="7ff27-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4649b-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4649b-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7ff27-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ff27-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4649b-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4649b-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7ff27-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7ff27-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="4649b-150">Java</span><span class="sxs-lookup"><span data-stu-id="4649b-150">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7ff27-150">Java</span><span class="sxs-lookup"><span data-stu-id="7ff27-150">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="4649b-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="4649b-151">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7ff27-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ff27-151">Response</span></span>
 
-<span data-ttu-id="4649b-152">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4649b-152">Here is an example of the response.</span></span>
+<span data-ttu-id="7ff27-152">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7ff27-152">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -148,14 +148,14 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="4649b-153">Comentários</span><span class="sxs-lookup"><span data-stu-id="4649b-153">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7ff27-153">Comentários</span><span class="sxs-lookup"><span data-stu-id="7ff27-153">Remarks</span></span>
 
-* <span data-ttu-id="4649b-154">[Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.</span><span class="sxs-lookup"><span data-stu-id="4649b-154">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.</span></span>
-* <span data-ttu-id="4649b-155">Para obter uma lista das funções disponíveis, confira [Funções de enumeração](../resources/permission.md#roles-enumeration).</span><span class="sxs-lookup"><span data-stu-id="4649b-155">For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).</span></span>
+* <span data-ttu-id="7ff27-154">[Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.</span><span class="sxs-lookup"><span data-stu-id="7ff27-154">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.</span></span>
+* <span data-ttu-id="7ff27-155">Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).</span><span class="sxs-lookup"><span data-stu-id="7ff27-155">For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).</span></span>
 
-## <a name="error-responses"></a><span data-ttu-id="4649b-156">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="4649b-156">Error Responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="7ff27-156">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="7ff27-156">Error Responses</span></span>
 
-<span data-ttu-id="4649b-157">Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="4649b-157">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="7ff27-157">Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="7ff27-157">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 
 [driveRecipient]: ../resources/driverecipient.md
