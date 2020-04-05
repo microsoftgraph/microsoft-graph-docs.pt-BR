@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 864a38bd5133d471ab0c56d220dc8c2e9fe51ffc
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 126fc15aafb1f6c24aefa5976800fbb1f1008bb6
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108995"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146349"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,20 +17,6 @@ Esse log de mudanças cobre o que foi alterado na API do Microsoft Graph, inclui
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="march-2020"></a>Março de 2020
-
-### <a name="reports-apis"></a>APIs de relatórios
-
-| **Tipo de alteração** | **Versão** | **Descrição**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Adição        | Beta  | Foi adicionada a propriedade **networkDisplayName** à entidade [yammerGroupsActivityDetail](/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta).|
-
-### <a name="cloud-communications"></a>Comunicações na nuvem
-
-| **Tipo de alteração** | **Versão** | **Descrição** |
-|:---|:---|:---|
-|Adição|v1.0|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
-|Adição|v1.0|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call.md).|
-|Adição|v1.0|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
 
 ### <a name="calendar"></a>Calendário
 
@@ -45,17 +31,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |:----------------|:------------|:-----------------------------------------|
 | Adição | beta | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionado o suporte para [consultas delta para orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
-
-### <a name="cloud-communications"></a>Comunicações na nuvem
-
-| **Tipo de alteração** | **Versão** | **Descrição** |
-|:---|:---|:---|
-|Adição|beta|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
-|Adição|beta|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call?view=graph-rest-beta).|
-|Adição|beta|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
-| Adição | beta | Adicionado o método [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
-| Adição | beta | Adicionada uma propriedade opcional **externalId**. |
-|Adição|beta|Adicionado um `Accept-Language`cabeçalho opcional para [reuniões online](/graph/api/resources/onlinemeeting).
 
 ### <a name="cloud-communications--call"></a>Comunicações na nuvem | Chamadas
 
@@ -77,6 +52,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|v1.0|Adicionada a nova propriedade **final** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **original** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **routingType** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
+|Adição|Beta e v1.0|Adicionada a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) à coleção [call](/graph/api/resources/call).|
+|Adição|Beta e v1.0|Adicionada a propriedade **callChainId** à entidade [call](/graph/api/resources/call).|
+|Adição|Beta e v1.0|Foram adicionados novos tipos complexos:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
+
+### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+| Adição | beta | Adicionado o método [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
+| Adição | beta | Adicionada uma propriedade opcional **externalId** para [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta). |
+|Adição|beta|Adicionado um `Accept-Language`cabeçalho opcional para [reuniões online](/graph/api/resources/onlinemeeting?view=graph-rest-beta).
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Dispositivos e aplicativos (Microsoft Intune)
 
@@ -116,7 +102,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | Beta e v1.0 | Adicionadas as propriedades de **imagem** e **vídeo** ao recurso [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0). Essas propriedades permite que você recupere as miniaturas de tipo de mídia quando combinadas com uma função de expansão.  |
-| Adição | v1.0 | Foi adicionada a ação **conceder** à entidade [permissão](/graph/api/resources/permission?view=graph-rest-v1.0). |
+| Adição | v1.0 | Foi adicionada a ação **conceder** à entidade [permissão](/graph/api/resources/permission?view=graph-rest-1.0). |
 | Adição        | v1.0        | Foi adicionada a propriedade de navegação **seguindo** à entidade [unidade](/graph/api/resources/drive?view=graph-rest-v1.0). |
 | Adição        | v1.0        | Foi adicionada a ação [seguir](/graph/api/driveitem-follow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 | Adição        | v1.0        | Foi adicionada a ação [deixar de seguir](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) em [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
@@ -131,7 +117,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Adicionada a permissão de aplicativo PrivilegedAccess.Read.AzureResources de [Privileged Identity Management - recursos do Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
 | Adição | beta | A permissão [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) foi adicionada para listar a atividade de entrada de um usuário.|
 | Adição | beta | Foi adicionada a [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), que representa a política de padrões de segurança do Azure Active Directory.|
-| Adição | beta | Suporte adicional para os filtros `$top` e `$skiptoken` para dar suporte à paginação no método [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list.md). |
+| Adição | beta | Suporte adicional para os filtros `$top` e `$skiptoken` para dar suporte à paginação no método [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list). |
 
 ### <a name="identity-and-access-azure-ad--conditional-access"></a>Identidade e acesso (Azure AD) | Acesso condicional
 
@@ -144,8 +130,9 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Alteração          | Beta e v1.0  | Para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso do serviço do Office 365 em nome de um usuário, as funções de usuário Administrador de Serviço do Teams e Administrador de Comunicações do Teams foram adicionadas como aceitas. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Office 365](reportroot-authorization.md).|
+| Adição        | Beta  | Foi adicionada a propriedade **networkDisplayName** à entidade [yammerGroupsActivityDetail](/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta).|
 
-### <a name="search"></a>Pesquisar
+### <a name="search"></a>Pesquisa
 
 | Tipo de alteração | Versão | Descrição                                                                                                                                               |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -160,11 +147,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :-------------------------------------- |
 | Adição        | v1.0        | Foi adicionada a propriedade de navegação [followSite](/graph/api/follow-site?view=graph-rest-1.0) ao conjunto de entidades [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
 | Adição        | v1.0        | Foi adicionada a propriedade de navegação [unfollowSite](/graph/api/unfollow-site?view=graph-rest-1.0) ao conjunto de entidades [usuário](/graph/api/resources/user?view=graph-rest-1.0). |
-
-### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0       | Adicionada a propriedade de navegação **assinaturas** à entidade de [lista](/graph/api/resources/list?view=graph-rest-v1.0). |
+| Adição        | v1.0       | Adicionada a propriedade de navegação **assinaturas** à entidade de [lista](/graph/api/resources/list?view=graph-rest-1.0). |
 
 ### <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
