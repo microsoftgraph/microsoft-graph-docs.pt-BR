@@ -165,7 +165,7 @@
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -289,7 +289,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Email
+            - name: Correio
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -8238,7 +8238,7 @@
                   href: api/driveitem-createlink.md
                 - name: Usar links de compartilhamento
                   href: api/shares-get.md
-                - name: Adicionar usuários ao link de compartilhamento
+                - name: Conceder acesso ao link de compartilhamento
                   href: api/permission-grant.md
                 - name: Listar permissões
                   href: api/driveitem-list-permissions.md
@@ -9529,7 +9529,7 @@
                   href: api/identityuserflow-get.md
                 - name: Excluir
                   href: api/identityuserflow-delete.md
-        - name: Email
+        - name: Correio
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -10102,7 +10102,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Obter uma propriedade de vários valores
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Impressão universal
+        - name: Impressão Universal
           items:
             - name: Print
               href: resources/print.md

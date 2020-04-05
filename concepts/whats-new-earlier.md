@@ -3,14 +3,52 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 76c967e9674f9d3fbb0dd92db179aef4843e3f52
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 57e96bb808a18531880ad1de3b194669441a8f3b
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729035"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146379"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="february-2020-new-and-generally-available"></a>Fevereiro de 2020: novo e disponível para o público geral
+
+### <a name="calendar"></a>Calendário
+Vamos examinar um exemplo de [criação de um evento em um calendário compartilhado ou delegado](outlook-create-event-in-shared-delegated-calendar.md), além das ações e propriedades disponíveis para o representante, os convidados e o proprietário do calendário durante esse processo.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- Para aumentar a segurança ao assinar as [notificações de alteração dos dados do usuário](webhooks.md), [impor o Protocolo TLS 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) ou mais recente em clientes e servidores de sites usados no processo de notificação. O novo requisito será lançado em estágios a partir de 15 de fevereiro de 2020. A partir de 15 de maio de 2020, todos os pontos de extremidade de notificação devem atendem ao novo requisito de TLS. [Descubra os estágios do lançamento](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) e, se necessário, use a nova propriedade **latestSupportedTlsVersion** como uma solução alternativa temporária para evitar falhas de assinatura antes de concluir a atualização de TLS.
+- Use os respectivos tipos de [solicitação de avaliação de ameaças](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) para controlar as ameaças de [email](/graph/api/resources/mailassessmentrequest?view=graph-rest-1.0), um [arquivo de mensagem de email](/graph/api/resources/emailfileassessmentrequest?view=graph-rest-1.0) (arquivo .EML), [arquivo de anexo de email](/graph/api/resources/fileassessmentrequest?view=graph-rest-1.0) (texto, Word ou arquivo binário) ou [URL](/graph/api/resources/urlassessmentrequest?view=graph-rest-1.0).
+
+### <a name="users"></a>Usuários
+[Reprocessar](/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0) todas as atribuições de licença baseadas em grupo para um [usuário](/graph/api/resources/user?view=graph-rest-1.0).
+
+
+## <a name="february-2020-new-in-preview-only"></a>Fevereiro de 2020: nova somente para visualização
+
+### <a name="calendar"></a>Calendário
+Confira [tarefas com suporte por APIs de visualização que gerenciam o compartilhamento de calendários e a delegação](outlook-share-or-delegate-calendar.md).
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+- Use o novo recurso [registros de chamadas](/graph/api/resources/callrecord?view=graph-rest-beta) para obter metadados de chamadas e reuniões online do Microsoft Teams e do Skype for Business para uma organização.
+- Para um participante de uma reunião, use a propriedade **Iniciador** para obter as informações de identidade do iniciador de uma [gravação](/graph/api/resources/recordinginfo?view=graph-rest-beta), se houver uma.
+
+### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+Atualizações de [fevereiro](changelog.md#february-2020) do Intune.
+
+### <a name="groups"></a>Grupos
+Use o método [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta) para atribuir licenças de produtos, como o Office 365 ou o Enterprise Mobility + Security, a um grupo. Como o Azure AD garante que as licenças sejam designadas para os membros do grupo, os membros que ingressarem ou saírem de um grupo não precisarão mais de gerenciamento de licenças no nível individual.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- Defina as configurações de solicitação, aprovação e revisar ao criar uma [política de atribuição de pacote](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta).
+- Acessar tipos específicos de [políticas de uma organização](/graph/api/resources/policy-overview?view=graph-rest-beta) usando o `/policies`segmento URL e especificando o tipo de política. Por exemplo, uma organização pode forçar uma política a entrar automaticamente no usuário de uma sessão da Web após um período de inatividade, confira as operações CRUD para instâncias de [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta). Essa é um [alteração significativa](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/) para que seja mais fácil descobrir todas as políticas, agrupando todas as políticas digitadas sob o `/policies`segmento. Acesse outras políticas digitadas de uma abordagem semelhante: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)e [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-beta). 
+- Use a permissão de nível de aplicativo e `Policy.ReadWrite.ApplicationConfiguration` delegada para operações de leitura e gravação na configuração do aplicativo [políticas](/graph/api/resources/policy-overview?view=graph-rest-beta) mencionadas no item anterior.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Use [alterar as notificações](/graph/api/resources/webhooks?view=graph-rest-beta) em todas as mensagens do canal ou em todas as mensagens de chat em uma organização.
+- [Recuse](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta) uma [solicitação de troca de turnos](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta) com outro usuário em uma [equipe](/graph/api/resources/team?view=graph-rest-beta).
 
 ## <a name="january-2020-new-and-generally-available"></a>Janeiro de 2020: Novo e disponível para o público geral
 
