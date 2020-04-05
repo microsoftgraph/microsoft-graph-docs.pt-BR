@@ -6,12 +6,12 @@ description: recurso Permission representando uma permissão de compartilhamento
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c35134e39618121f9aa7b29c490a6d8427b4a373
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4a7eaa3b075e6a5c8a7b234e721c5d224bd489f9
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108197"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146370"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
 
@@ -77,7 +77,7 @@ Veja a seguir uma representação JSON do recurso.
 | expirationDateTime  | DateTimeOffset              | Um formato de yyyy-MM-ddTHH: mm: ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime. MinValue indica que não há validade configurada para essa permissão. Opcional.
 | hasPassword         | Booliano                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
 
-### <a name="roles-enumeration-values"></a>Valores de enumeração de funções
+### <a name="roles-property-values"></a>Valores da Propriedade Roles
 
 | Valor        | Detalhes                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -147,7 +147,7 @@ Este link de edição fornece acesso de leitura e gravação a qualquer pessoa n
 
 ### <a name="existing-access-link"></a>Link de acesso existente
 
-Este link não concede nenhum privilégio adicional para o usuário.
+Este link não concede privilégios adicionais ao usuário.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
 

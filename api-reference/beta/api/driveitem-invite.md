@@ -6,16 +6,16 @@ title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1b9d704b1375bc0bc3f4239572e3cfd80fb954a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 594df009c38ff1d7384207e7486392f24d7a8dbd
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432569"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146398"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -222,9 +222,9 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos ob
 ## <a name="remarks"></a>Comentários
 
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
-* Para obter uma lista das funções disponíveis, confira [Funções de enumeração](../resources/permission.md#roles-enumeration-values).
+* Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
 
-## <a name="error-responses"></a>Respostas de erros
+## <a name="error-responses"></a>Respostas de erro
 
 Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 

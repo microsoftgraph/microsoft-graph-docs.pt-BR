@@ -6,16 +6,16 @@ description: Conceder a uma lista de usuários acesso para usar o link especific
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c7679c07be231e9127686a1abf15fe4d9a80482a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 901b5c7b7e67b0d45a0d4891b239fa950d864119
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455939"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146391"
 ---
-# <a name="grant-permission"></a>Conceder permissão
+# <a name="permission-grant"></a>permissão: Grant
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,7 +65,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | destinatários         | Coleção ([driveRecipient][]) | Uma coleção de destinatários que receberão acesso.
 | funções              | Collection(String)             | Se o link for um link "acesso existente", especifica as funções a serem concedidas aos usuários. Caso contrário, deve corresponder à função do link.
 
-Para obter uma lista das funções disponíveis, confira [Funções de enumeração](../resources/permission.md#roles-enumeration-values).
+Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
 
 ## <a name="response"></a>Resposta
 
