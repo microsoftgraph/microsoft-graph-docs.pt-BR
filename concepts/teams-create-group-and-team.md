@@ -4,12 +4,12 @@ description: 'Criar um grupo que inclui uma equipe envolve as seguintes etapas: 
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8eba391c859003d926424667f01e36a79d81ecb3
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 80779619006da786652fa02f9d041975e4909e27
+ms.sourcegitcommit: fadf83089455674ee721c22d59f7d54758d21896
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146363"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43148256"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Criar equipes e gerenciar membros usando o Microsoft Graph
 
@@ -69,11 +69,15 @@ Todas as equipes têm o suporte de grupos do Office 365. A maneira mais rápida 
 
 3. Adicione todos os membros (e convidados, se necessário) ao grupo usando a operação [adicionar membro](/graph/api/group-post-members?view=graph-rest-1.0), caso não tenha feito isso na Etapa 1.
 
-4. Depois que o grupo for criado com êxito, o que pode levar até 15 minutos após concluir a Etapa 1, crie uma equipe do Microsoft Teams usando a operação [criar equipe a partir do grupo](/graph/api/team-post?view=graph-rest-beta). Se houver um erro, o processo de criação de grupo pode não ser concluído, tente esperar alguns minutos.
+4. Depois que o grupo for criado com êxito, o que pode levar até 15 minutos após concluir a Etapa 1, crie uma equipe do Microsoft Teams usando a operação [criar equipe a partir do grupo](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group). Se houver um erro, o processo de criação de grupo pode não ser concluído, tente esperar alguns minutos. 
 
     ```http
-    PUT /groups/{id}/team
-    { }
+    POST https://graph.microsoft.com/beta/teams
+    Content-Type: application/json
+    {
+      "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+      "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+    }
     ```
 
     O exemplo a seguir mostra a resposta. 
@@ -81,18 +85,11 @@ Todas as equipes têm o suporte de grupos do Office 365. A maneira mais rápida 
     >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
     ```http
-    HTTP/1.1 200 OK
-    Content-type: application/json
-    Content-length: xxx
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json
+    Location: /teams/{teamId}/operations/{operationId}
+    Content-Location: /teams/{teamId}
     {
-        "@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#teams/$entity",
-        "id" : "b7f968af-ca51-42f6-a77e-82c7147bc8f2",
-        "webUrl" : "https://example.com",
-        "isArchived" : null,
-        "memberSettings" : { },
-        "guestSettings" : { },
-        "messagingSettings" : { },
-        "funSettings" : {}
     }
     ```
 
