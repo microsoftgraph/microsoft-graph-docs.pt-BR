@@ -393,7 +393,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Teamwork
+            - name: Trabalho em equipe
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -9386,6 +9386,19 @@
                       href: api/unifiedroleassignment-get.md
                     - name: Excluir atribuição de função
                       href: api/unifiedroleassignment-delete.md
+                - name: Múltiplo de atribuição de função
+                  href: resources/unifiedroleassignmentmultiple.md
+                  items:
+                    - name: Listar
+                      href: api/unifiedroleassignmentmultiple-list.md
+                    - name: Criar
+                      href: api/unifiedroleassignmentmultiple-post.md
+                    - name: Obter
+                      href: api/unifiedroleassignmentmultiple-get.md
+                    - name: Atualizar
+                      href: api/unifiedroleassignmentmultiple-delete.md
+                    - name: Excluir
+                      href: api/unifiedroleassignmentmultiple-delete.md
             - name: Entidade de serviço
               href: resources/serviceprincipal.md
               items:
@@ -10102,7 +10115,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Obter uma propriedade de vários valores
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Impressão Universal
+        - name: Impressão universal
           items:
             - name: Print
               href: resources/print.md
@@ -10731,7 +10744,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Teamwork
+        - name: Trabalho em equipe
           displayName: Microsoft Teams
           items:
             - name: Visão Geral

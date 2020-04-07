@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 43cf52fde2719f44ac03c6c31444d135e925e460
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e041e30eefdcf10792bf652176c9d35ba1687c5
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452061"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160237"
 ---
 # <a name="get-unifiedroleassignment"></a>Obter unifiedRoleAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,13 +56,14 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) solicitado no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1--get-details-of-a-role-assignment"></a>Exemplo 1: obter detalhes de uma atribuição de função
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment"
@@ -71,22 +72,8 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -105,12 +92,76 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
     "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
     "principalId": "4ab0b690-479b-47ff-af8f-2576cf521872",
-    "resourceScope": "/",
-    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10"
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0"
 }
 ```
 
+### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>Exemplo 2: obter detalhes de uma atribuição de função com`$expand`
+
+#### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo da solicitação com o parâmetro `$expand` de consulta.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignment"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition,principal,directoryScope
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "id": "lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1",
+    "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+    "roleDefinition": {
+      "id": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+      "displayName": "Billing Administrator",
+      "description": "Can perform common billing related tasks like updating payment information.",
+      "rolePermissions": [
+        {
+          "allowedResourceActions": [
+            "microsoft.commerce.billing/allEntities/allTasks",
+            "microsoft.directory/organization/basic/update",
+          ],
+          "excludedResourceActions": []
+        }],
+      "isEnabled": true,
+      },
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "principal": {
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+      "id": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d ",
+      "userPrincipalName": "alice@contoso.com",
+      "displayName": "Alice Smith"
+    },
+    "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScope": {
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization/$entity",
+      "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
+      "displayName": "Contoso_Seattle_Admins"
+    }
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

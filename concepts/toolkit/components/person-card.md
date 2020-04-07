@@ -3,12 +3,12 @@ title: Componente de cartão de pessoa no kit de ferramentas do Microsoft Graph
 description: Um componente de cartão de pessoa é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 3d440f1340f9ee3f40c37538b1befcacd9867dc1
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 60989eddf28fd421a4cf35fcc6bd9f7433aa9852
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144286"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160307"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Componente de cartão de pessoa no kit de ferramentas do Microsoft Graph
 
@@ -41,13 +41,15 @@ Para obter mais informações sobre `TeamsProvider` o provedor, consulte [Micros
 
 ## <a name="properties"></a>Propriedades
 
-O componente usa o Microsoft Graph para fornecer detalhes adicionais sobre o usuário. Para definir um usuário, você deve usar a propriedade **Person-Query** de `mgt-person`.
+Por padrão, o `mgt-person` componente passará os detalhes da pessoa para `mgt-person-card` o componente. No entanto, você pode usar esses atributos para mudar isso ao `mgt-person` padronizar o componente ou `mgt-person-card` ao usar o componente como um componente autônomo.
 
 | Atributo         | Tipo                     | Descrição                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | pessoa-detalhes | MicrosoftGraph. User <br> MicrosoftGraph. Person <br> MicrosoftGraph. Contact | Objeto Person conforme definido pelo Microsoft Graph, contendo detalhes relacionados ao usuário. |
 | pessoa-imagem   | png/jpg/SVG                    | Imagem relacionada à pessoa exibida no cartão.                                   |
 | Inherit-detalhes   | Nenhum.                  | Permite que o cartão de pessoa percorra a `mgt-person` árvore pai para que o `person-details` componente `person-image` use o mesmo e os dados.                      |
+| ID de usuário | string | Permite que os desenvolvedores forneçam o ID de usuário para dados de recuperar exibidos no componente de cartão de pessoa |
+| pessoa – consulta | string | Permite que os desenvolvedores forneçam uma consulta de pessoa para dados de recuperar exibidos no componente de cartão de pessoa |
 
 
 ## <a name="templates"></a>Modelos
@@ -129,4 +131,3 @@ Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse comp
 | renderExpandedDetails | Renderiza o conteúdo no contêiner de detalhes expandido. |
 | renderContactDetails | Renderiza a parte dos detalhes do contato dos detalhes expandidos. |
 | renderAdditionalDetails | Renderiza a parte detalhes adicionais dos detalhes expandidos. |
-
