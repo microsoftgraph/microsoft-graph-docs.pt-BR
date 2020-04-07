@@ -4,12 +4,12 @@ description: Os identificadores imutáveis permitem que seu aplicativo obtenha u
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ba38d0aba0063b66c0a51e235c193a57741e9988
-ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
+ms.openlocfilehash: e5b92760e3de8d36190c83a57997f70b55b34ed1
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40994954"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160293"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter identificadores imutáveis para recursos do Outlook
 
@@ -34,7 +34,6 @@ A ID imutável de um item não se alterará, desde que o item permaneça na mesm
 
 - O usuário mover o item para uma caixa de correio de arquivo morto.
 - O usuário exportar o item (para um PST, como um arquivo MSG, etc.) e importá-lo novamente na sua caixa de correio.
-- O usuário enviar uma mensagem de rascunho. A ID imutável da cópia em Itens Enviados não for a mesma ID imutável da mensagem de rascunho.
 
 ## <a name="items-that-support-immutable-id"></a>Itens que dão suporte a IDs imutáveis
 
@@ -48,6 +47,17 @@ Os seguintes itens dão suporte a IDs imutáveis:
 - [tipo de recurso outlookTask](/graph/api/resources/outlooktask)
 
 Tipos de contêiner (mailFolder, calendário, etc.) não dão suporte a IDs imutáveis, mas suas IDs normais já eram constantes.
+
+## <a name="immutable-id-with-sending-mail"></a>ID imutável com o envio de e-mails
+
+Você pode usar IDs imutáveis para localizar uma mensagem na pasta Itens enviados após ela ter sido enviada, usando as seguintes etapas:
+
+1. [Crie uma mensagem de rascunho](/graph/api/user-post-messages) usando o `Prefer: IdType="ImmutableId"`cabeçalho e salve a `id` propriedade da mensagem na resposta.
+1. [Envie a mensagem](/graph/api/message-send) usando a ID da etapa anterior.
+1. [Obtenha a mensagem](/graph/api/message-get) usando a ID da primeira etapa. Esta é a cópia em Itens Enviados.
+
+> [!NOTE]
+> Obter a mensagem em Itens Enviados pode não ter êxito imediatamente após o envio da mensagem. A cópia da mensagem não será criada até que a mensagem seja enviada com êxito, o que pode levar algum tempo.
 
 ## <a name="immutable-id-with-change-notifications"></a>ID imutável com notificações de alteração
 
