@@ -3,18 +3,18 @@ title: Obter suspiciousIpRiskEvent
 description: Recupere as propriedades e os relacionamentos de um objeto suspiciousipriskevent.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 358f83996eeced51694816290579a800d6209aae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: 4e1610f71280a96d3829f7043aa2232ea9569f1f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453079"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181305"
 ---
 # <a name="get-suspiciousipriskevent"></a>Obter suspiciousIpRiskEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

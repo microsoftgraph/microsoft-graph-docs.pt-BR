@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso riskDetection
 description: Representa todas as detecções de riscos em locatários do AzureAD.
-author: davidmu1
+author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8e3c2144bebe042040384b70e8ae91a9a4770d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b5db0cd41bcd23ac07c226c8f5a6711d4e817f11
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521072"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178888"
 ---
 # <a name="riskdetection-resource-type"></a>tipo de recurso riskDetection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,10 +41,10 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |`id`|`string`|ID exclusiva da detecção de risco. |
 |`requestId`|`string`|ID de solicitação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada.|
 |`correlationId`|`string`|ID de correlação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada. |
-|`riskType`|`riskEventType`|O tipo de evento de risco detectado. Os valores possíveis são unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, genericadminConfirmedUserCompromised , mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP e unknownFutureValue. |
+|`riskType`|`riskEventType`|O tipo de evento de risco detectado. Os valores possíveis são unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, genericadminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP e unknownFutureValue. |
 |`riskState`|`riskState`|O estado de um usuário ou logon arriscado detectado. Os valores possíveis são nenhum, confirmedSafe, corrigido, descartado, atRisk, confirmedCompromised e unknownFutureValue. |
 |`riskLevel`|`riskLevel`|Nível do risco detectado. Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
-|`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, oculto, adminConfirmedUserCompromised, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
+|`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
 |`source`|`string`|Fonte da detecção de risco. Por exemplo, "activeDirectory". |
 |`detectionTimingType`|`riskDetectionTimingType`|Intervalo do risco detectado (em tempo real/offline). Os valores possíveis são não definidos, em tempo real, nearRealtime, offline, unknownFutureValue. |
 |`activity`|`activityType`|Indica o tipo de atividade ao qual o risco detectado está vinculado. Os valores possíveis são entrar, User, unknownFutureValue. |

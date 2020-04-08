@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso directoryObject
 description: Descreve o recurso directoryAudit (entidade) da API do Microsoft Graph (REST), que ajuda as atividades de auditoria de diretório (locatário) (versão beta).
-author: davidmu1
+author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbd3789ca6a33a16f214d5d961986ef4e1b6c016
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 723c9089ed19e6d69375bd815b4233594be286a2
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870327"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181969"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,11 +32,11 @@ Representa os itens de auditoria de diretório e sua coleção.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|activityDisplayName|Cadeia de caracteres|Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, veja [lista de atividades do Azure Ad](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|activityDisplayName|String|Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, veja [lista de atividades do Azure Ad](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|Coleção [KeyValue](keyvalue.md)|Indica detalhes adicionais sobre a atividade.|
-|category|Cadeia de caracteres|Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)|
+|category|String|Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)|
 |correlationId|GUID|Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.|
-|id|Cadeia de caracteres| Indica que a ID exclusiva para a atividade. Este é um GUID.|
+|id|String| Indica que a ID exclusiva para a atividade. Este é um GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Indica que informações sobre o usuário ou o aplicativo iniciou a atividade.|
 |loggedByService|Cadeia de caracteres|Indica informação em que o serviço iniciou a atividade (por exemplo: gerenciamento de senha de autoatendimento, principais diretório, B2C, os usuários convidados, Microsoft Identity Manager, Privileged Identity Management.|
 |resultado|cadeia de caracteres| Indica o resultado da atividade. Valores possíveis são: `success`, `failure`, `timeout`, `unknownFutureValue`.||

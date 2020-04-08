@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso domainDnsCnameRecord
-description: Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade DomainDnsRecord.
-author: davidmu1
+description: Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9b3a957197821bfb010aed5de071ec1e89192828
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d8894e84113217263906275b13045d598c59429
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42506362"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178940"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>tipo de recurso domainDnsCnameRecord
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Não há suporte para consultas diretas a esse recurso. Confira o tópico de [do
 |:---------------|:--------|:----------|
 |canônicaname|String| O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS. |
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura|
-|IsOptional|Boolean| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
+|IsOptional|Booliano| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
 |rótulo|String| O valor usado ao configurar o *alias/host/nome* do registro CNAME no host DNS. |
 |recordType|String| Tipo de registro DNS. O valor é sempre *CNAME*. Chave|
 |supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro CNAME.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|

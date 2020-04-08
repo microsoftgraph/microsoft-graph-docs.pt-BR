@@ -1,20 +1,20 @@
 ---
 title: Restaurar item excluído
 description: 'Restaura um item recentemente excluído de itens excluídos. '
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0c0a7a4e1e3087cf05eef023620eb273a62b9556
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 911f5c661f8e7393fcbf0f0cf0d8365415779e6a
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435315"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181011"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

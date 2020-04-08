@@ -2,19 +2,19 @@
 title: Obter featureRolloutPolicy
 description: Recupere as propriedades e os relacionamentos de um objeto featurerolloutpolicy.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 155d9398a981c8d3a478f92ac61de04d97f873a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6fdf941383d8f64e690899b80044300c3d69d684
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421757"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181116"
 ---
 # <a name="get-featurerolloutpolicy"></a>Obter featureRolloutPolicy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

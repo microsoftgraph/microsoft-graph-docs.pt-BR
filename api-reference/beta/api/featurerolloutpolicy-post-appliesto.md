@@ -2,19 +2,19 @@
 title: Atribuir aplica-se
 description: Atribua um directoryobject à distribuição de recursos.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8a9e68ed790fa388ac19b4a8e8504c680042ae80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cd64b45d1a3a285eb4fd53908ff6e3d364bb502
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421722"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181102"
 ---
 # <a name="assign-appliesto"></a>Atribuir aplica-se
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

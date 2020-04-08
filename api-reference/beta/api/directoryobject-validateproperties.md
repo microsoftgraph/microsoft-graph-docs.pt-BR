@@ -1,22 +1,22 @@
 ---
 title: 'directoryobject: ValidateProperties'
-description: Validar se o nome de exibição ou o apelido de email de um grupo do Office 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar a API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **criar** um grupo do Office 365. Para validar as propriedades de um grupo existente, use a função ValidateProperties para grupos.
+description: Valide se o nome de exibição do grupo do Office 365 ou apelido de email está em conformidade com as políticas de nomenclatura.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a2b72e5c7978ae495f85d207a38801093811d2c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fcdaa24b874b30db52e737ed048618b6cf6d4377
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434599"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180920"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryobject: ValidateProperties
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
-Validar se o nome de exibição ou o apelido de email de um grupo do Office 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar a API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **criar** um grupo do Office 365. Para validar as propriedades de um grupo existente, use a [função ValidateProperties](group-validateproperties.md) para grupos.
+Valide se o nome de exibição do grupo do Office 365 ou apelido de email está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **criar** um grupo do Office 365. Para validar as propriedades de um grupo existente, use a [função ValidateProperties](group-validateproperties.md) para grupos.
 
 As seguintes validações são realizadas para o nome de exibição e as propriedades de apelido de email: 
 1. Validar a política de nomenclatura de prefixo e sufixo
@@ -44,8 +44,8 @@ POST /directoryObjects/validateProperties
 
 | Nome           | Descrição      |
 |:---------------|:-----------------|
-| Authorization  | Portador {código}    |
-| Content-Type   | application/json |
+| Autorização  | Portador {código}. Obrigatório.   |
+| Content-Type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.

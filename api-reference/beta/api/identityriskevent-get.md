@@ -3,18 +3,18 @@ title: Obter identityRiskEvent
 description: Recupere as propriedades e os relacionamentos do objeto identityriskevent.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca43d02d7bde1a9f128a6de853315c8f3ebb4105
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a3d0beecec119076e753d4405d08b40f3885e33
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446464"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181088"
 ---
 # <a name="get-identityriskevent"></a>Obter identityRiskEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

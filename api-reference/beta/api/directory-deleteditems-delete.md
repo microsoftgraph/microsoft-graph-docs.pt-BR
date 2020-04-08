@@ -1,20 +1,20 @@
 ---
 title: Excluir permanentemente item
 description: Excluir permanentemente um item de itens excluídos.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2cbee272810cf58b48e1a28cb1559bfe382b27dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8911b94d8f1ad5131a8299a3a1aa7be8365ab813
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435525"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181032"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

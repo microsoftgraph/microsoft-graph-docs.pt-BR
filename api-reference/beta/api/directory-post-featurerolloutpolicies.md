@@ -2,19 +2,19 @@
 title: Criar featureRolloutPolicy
 description: Criar um novo objeto featureRolloutPolicy.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc2ed04abef450415cc4ee9802cceed687dc324b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f6cd81e6a2299e3bfcb7c318d17b5f28fb01049
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435196"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180990"
 ---
 # <a name="create-featurerolloutpolicy"></a>Criar featureRolloutPolicy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

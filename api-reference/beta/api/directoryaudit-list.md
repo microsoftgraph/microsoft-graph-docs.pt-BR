@@ -2,15 +2,15 @@
 title: Lista directoryAudits
 description: Descreve o método list do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
 localization_priority: Normal
-author: davidmu1
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2205f35470a9c99f16719624e7d99538c92050c1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 6de6196406b27f786fc996fe8a95c08472486a8c
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061976"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180976"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo o usuário, o aplicativo, o gerenciamento de dispositivos e de grupo, o gerenciamento de identidade privilegiado (PIM), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (SSPR e senha de administrador Redefine) e gerenciamento de grupo de autoatendimento.
+Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo o usuário, o aplicativo, o gerenciamento de dispositivos e de grupo, o gerenciamento de identidades privilegiadas, as revisões de acesso, os termos de uso, a proteção de identidade, o gerenciamento de senhas (redefinições de senha do SSPR e do administrador) e o gerenciamento de grupo de autoatendimento.
 
 ## <a name="permissions"></a>Permissões
 

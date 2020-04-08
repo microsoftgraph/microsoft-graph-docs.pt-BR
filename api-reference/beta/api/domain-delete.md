@@ -1,20 +1,20 @@
 ---
 title: Excluir domínio
 description: Exclui um domínio de um locatário.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23a22347ddc0531411251f87ea31b6477836a34a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 871a3e5334b6dc93ad65ea91508caccf0482b531
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433815"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180127"
 ---
 # <a name="delete-domain"></a>Excluir domínio
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

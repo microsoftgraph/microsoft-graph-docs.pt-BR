@@ -2,19 +2,19 @@
 title: Atualizar featureRolloutPolicy
 description: Atualize as propriedades do objeto featurerolloutpolicy.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e93dbcbdc7d4a4d40b929a801dae4b673100a274
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1e454f08649b631a694194a585a623e9c819702
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421708"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181095"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |description|String|Uma descrição para esta política.|
 |displayName|Cadeia de caracteres|O nome de exibição para esta política.|
-|isAppliedToOrganization|Boolean|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
+|isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta

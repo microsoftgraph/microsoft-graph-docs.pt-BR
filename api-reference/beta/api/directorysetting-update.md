@@ -1,20 +1,20 @@
 ---
 title: Atualizar uma configuração de diretório
 description: Atualiza as propriedades de um objeto de configuração de diretório específico.
-author: davidmu1
+author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5f560771ca69f0ff2147806d66f677c41395f94a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2980a1be5dcea6ac0beffc4e4c575cff6534fe83
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433962"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180353"
 ---
 # <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

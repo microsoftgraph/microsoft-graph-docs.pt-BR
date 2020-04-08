@@ -1,20 +1,20 @@
 ---
 title: Obter item excluído
 description: Recupera as propriedades de um item recentemente excluído em itens excluídos.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02e56eac0d0e3ac8b2b0132f321098f0ea45b0de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36d93cb91efe7bbd696fbd90c0a1de4640e67f62
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435448"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181025"
 ---
 # <a name="get-deleted-item"></a>Obter item excluído
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

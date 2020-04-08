@@ -2,19 +2,19 @@
 title: Listar riskDetection
 description: Recupere as propriedades de uma coleção do objeto **riskDetection** .
 localization_priority: Normal
-author: davidmu1
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 821fb0fe790982ef83a48a4418af2d4c6a144ee4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0917c451777b7c98c11a25a21b5978cf199b93b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453909"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181207"
 ---
 # <a name="list-riskdetection"></a>Listar riskDetection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

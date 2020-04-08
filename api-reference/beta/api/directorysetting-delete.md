@@ -1,20 +1,20 @@
 ---
 title: Excluir uma configuração de diretório
 description: Excluir uma configuração de diretório.
-author: davidmu1
+author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 16add1a6545740a068895c3af8c8a0afd3c66beb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27eb77aebf0dac6eac352f370088d8729952ff96
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434095"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180841"
 ---
 # <a name="delete-a-directory-setting"></a>Excluir uma configuração de diretório
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

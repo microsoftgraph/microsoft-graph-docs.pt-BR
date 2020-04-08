@@ -3,18 +3,18 @@ title: Listar suspiciousIpRiskEvents
 description: Recupere uma lista de objetos suspiciousipriskevent.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: fa2db24eccf3885b064ebe9af4837c6144d0e15c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: a2693303195266f3396906e2bcd78b651ade759a
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453056"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181298"
 ---
 # <a name="list-suspiciousipriskevents"></a>Listar suspiciousIpRiskEvents
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

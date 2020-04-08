@@ -3,16 +3,18 @@ title: Obter impossibleTravelRiskEvent
 description: Recupere as propriedades e os relacionamentos de um objeto impossibletravelriskevent.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 469a1bebb02057017bd8444208c0a27102f45883
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+author: cloudhandler
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 408b8e1f9e8ddc639b9e1a5f53932d865bd2bc51
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869506"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181074"
 ---
 # <a name="get-impossibletravelriskevent"></a>Obter impossibleTravelRiskEvent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskEvent.Read.All |
+|Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

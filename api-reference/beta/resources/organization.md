@@ -2,19 +2,19 @@
 title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cb347dcd95b60a0afcbb4704f65f9339db2973e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ccbfa054bb89d600dfd5e27efbebc0c4a2739509
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522127"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181677"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
 | objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-| onPremisesSyncEnabled | Boolean | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
+| onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
 | preferredLanguage | String | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
@@ -59,7 +59,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | securityComplianceNotificationPhones | Coleção de cadeias de caracteres ||
 | state | String | Nome do estado do endereço da organização. |
 | street | Cadeia de caracteres | Nome da rua do endereço da organização. |
-| technicalNotificationMails |String collection | Não anulável. |
+| technicalNotificationMails |Coleção de cadeias de caracteres | Não anulável. |
 | verifiedDomains | coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável. |
 
 ## <a name="relationships"></a>Relações
@@ -67,7 +67,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

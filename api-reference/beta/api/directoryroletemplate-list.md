@@ -1,20 +1,20 @@
 ---
 title: Listar directoryRoleTemplates
 description: Recupere uma lista de objetos directoryroletemplate.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 525bacfb6cc6763232490ed5d9d9cffbcb46b06c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00d1382cbbf380d921e6fe47b92ed68e9165a1d0
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434123"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180848"
 ---
 # <a name="list-directoryroletemplates"></a>Listar directoryRoleTemplates
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,16 +3,18 @@ title: Obter unfamiliarLocationRiskEvent
 description: Recupere as propriedades e os relacionamentos de um objeto unfamiliarlocationriskevent.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 0f09a4b74c3203e92fada0a31e971b930f560276
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: 727bb16d43589019ce5272e3e9e8c6e04499ce44
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863495"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178923"
 ---
 # <a name="get-unfamiliarlocationriskevent"></a>Obter unfamiliarLocationRiskEvent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | IdentityRiskEvent.Read.All |
+|Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -1,20 +1,20 @@
 ---
 title: 'domínio: forceDelete'
 description: Exclui um domínio usando uma operação assíncrona.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 341e80864d6d0ac09f51c22a09cdec78fcea023f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4daff04db42782a5d9b611d454a5cfb2c12953b1
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433689"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180099"
 ---
 # <a name="domain-forcedelete"></a>domínio: forceDelete
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,7 +67,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Boolean| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar.<br>*True* (padrão): as contas de usuário renomeadas como parte desta operação estão desabilitadas.<br>*False* -as contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
+|disableUserAccounts|Booliano| Opção para desabilitar contas de usuário renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar.<br>*True* (padrão): as contas de usuário renomeadas como parte desta operação estão desabilitadas.<br>*False* -as contas de usuário renomeadas como parte dessa operação não estão desabilitadas. |
 
 ## <a name="response"></a>Resposta
 

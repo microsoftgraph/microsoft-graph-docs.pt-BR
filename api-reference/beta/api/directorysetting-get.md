@@ -1,20 +1,20 @@
 ---
 title: Obter uma configuração de diretório
 description: Recupere as propriedades de um objeto de configuração de diretório específico.
-author: davidmu1
+author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: df98499099bb26cc0d50564ecaf4a9aa556313f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3c75ac850c77c9980bb798d751a5ed342b612a4
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433990"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180834"
 ---
 # <a name="get-a-directory-setting"></a>Obter uma configuração de diretório
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

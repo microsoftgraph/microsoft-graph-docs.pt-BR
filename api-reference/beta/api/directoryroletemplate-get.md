@@ -1,20 +1,20 @@
 ---
 title: Obter directoryRoleTemplate
 description: Recupera as propriedades e os relacionamentos do objeto directoryroletemplate.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eec2aa1fdfceded2c0944e88fe1025a1118d4053
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac25dafd1209728de828f904a694f13c0b3990b2
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434130"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180855"
 ---
 # <a name="get-directoryroletemplate"></a>Obter directoryRoleTemplate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

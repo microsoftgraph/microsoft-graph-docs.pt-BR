@@ -1,20 +1,20 @@
 ---
 title: Listar domínios
 description: Recupere uma lista de objetos Domain.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c957631112ed80161f00e82024b0d380cb8c8c39
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 503655b7a12c33584db8a4473187f88d7185c36b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433493"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180015"
 ---
 # <a name="list-domains"></a>Listar domínios
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

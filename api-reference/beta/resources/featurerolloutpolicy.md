@@ -2,19 +2,19 @@
 title: tipo de recurso featureRolloutPolicy
 description: Representa uma política de distribuição de recursos associada a um objeto de diretório.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a5ebc5884b0fd1ccf52fca961247e610b1c8cad5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27e421283c9908c648769ccbe652f990f2728fce
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498480"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181719"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>tipo de recurso featureRolloutPolicy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,7 +63,7 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 |displayName|Cadeia de caracteres|O nome de exibição desta política de distribuição de recursos.|
 |apresentam|stagedFeatureName| Os valores possíveis são: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Somente leitura.|
-|isAppliedToOrganization|Boolean|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
+|isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
 
 ## <a name="relationships"></a>Relações

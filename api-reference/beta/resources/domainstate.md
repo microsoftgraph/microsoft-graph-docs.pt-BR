@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso domainstate
 description: Representa o status de operações assíncronas agendadas em um domínio.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 66d5d5b57cb5ef30054a6187e34caf8713b6e63b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86c5bc7fa987b137b7e11fe9ff825939e95d4426
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505802"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181747"
 ---
 # <a name="domainstate-resource-type"></a>tipo de recurso domainstate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

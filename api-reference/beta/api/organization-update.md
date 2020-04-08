@@ -2,19 +2,19 @@
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c1d162f3511e49ab3d5462dfca2c033a75c56342
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad330d5b4db44550512c48d52ff80f4ec76e74d8
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456324"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181382"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade  | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String collection|                                        **Anotações**: não anulável.            |
+|marketingNotificationEmails|Coleção String|                                        **Anotações**: não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
 |securityComplianceNotificationPhones|Coleção de cadeia de caracteres||
