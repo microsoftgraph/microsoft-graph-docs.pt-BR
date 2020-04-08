@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 51a6cc26ff6e8fcdc3ba5a4ffe20d52adc5d48ab
+ms.openlocfilehash: 8411549a59b2d47e4aaaba0a8572088af100ecb3
 ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/07/2020
-ms.locfileid: "40871736"
+ms.locfileid: "42815951"
 ---
 ```javascript
 
@@ -15,15 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const threatAssessmentRequest = {
-  @odata.type: "#microsoft.graph.urlAssessmentRequest",
-  url: "http://test.com",
-  expectedAssessment: "block",
-  category: "phishing"
-};
-
 let res = await client.api('/informationProtection/threatAssessmentRequests')
-    .version('beta')
-    .post(threatAssessmentRequest);
+    .get();
 
 ```
