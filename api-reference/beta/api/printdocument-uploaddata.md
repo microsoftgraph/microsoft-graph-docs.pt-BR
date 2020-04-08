@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7592de07f74aa6fb715a90b2becad57a0e14b194
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 10bf87d66126d85bdc52c69659647c7728084ac5
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895577"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "42948085"
 ---
 # <a name="printdocument-uploaddata"></a>Documento de documentos: uploadData
 
@@ -62,6 +62,8 @@ Se tiver êxito, este método retornará uma das seguintes respostas. Não retor
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API para carregar os primeiros 72797 bytes de um documento.
 ##### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printdocument-uploaddata"
@@ -71,6 +73,20 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/documents/{i
 Range: bytes=0-72796
 Content-Length: 72797
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printdocument-uploaddata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printdocument-uploaddata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printdocument-uploaddata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Resposta
 
 Um ou mais segmentos ausentes:

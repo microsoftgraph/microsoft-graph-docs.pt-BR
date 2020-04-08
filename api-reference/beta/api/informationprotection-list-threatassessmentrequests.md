@@ -6,15 +6,15 @@ author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: a87828e1700a8813caae64f01d1e970f8a1f7939
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42446381"
 ---
 # <a name="list-threatassessmentrequests"></a>Listar threatAssessmentRequests
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
