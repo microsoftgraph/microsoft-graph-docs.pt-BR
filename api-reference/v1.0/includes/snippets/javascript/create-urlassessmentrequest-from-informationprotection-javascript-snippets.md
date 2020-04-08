@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 51a6cc26ff6e8fcdc3ba5a4ffe20d52adc5d48ab
+ms.openlocfilehash: ff77577394e5ff99f392f2a925abd936c7328c7d
 ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/07/2020
-ms.locfileid: "40871736"
+ms.locfileid: "42815841"
 ---
 ```javascript
 
@@ -23,7 +23,6 @@ const threatAssessmentRequest = {
 };
 
 let res = await client.api('/informationProtection/threatAssessmentRequests')
-    .version('beta')
     .post(threatAssessmentRequest);
 
 ```
