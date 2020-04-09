@@ -2,19 +2,19 @@
 title: Excluir publishedResource
 description: Excluir um objeto [publishedResource](../resources/publishedresource.md) .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 74c20ce468392d3dfb380ea9d341f9c0ccf6e9dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e1079c21fe1f33dca424a4d6a374f02baa86563
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454862"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200177"
 ---
 # <a name="delete-publishedresource"></a>Excluir publishedResource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

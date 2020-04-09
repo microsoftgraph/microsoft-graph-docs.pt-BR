@@ -3,18 +3,18 @@ title: Atualizar oAuth2PermissionGrant
 description: Atualize as propriedades do objeto oAuth2PermissionGrant.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 056b1491de7044efac3a51612590766949fd7a96
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: 450f7909c6737a623cc23b8622a2817d17ef166d
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456611"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199607"
 ---
 # <a name="update-oauth2permissiongrant"></a>Atualizar oAuth2PermissionGrant
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

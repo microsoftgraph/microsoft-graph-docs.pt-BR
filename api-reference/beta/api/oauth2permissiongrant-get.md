@@ -3,18 +3,18 @@ title: Obter oAuth2Permissiongrant
 description: Recupere as propriedades e os relacionamentos do objeto oAuth2Permissiongrant.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: e81d81182d40940c900c4855aa7eebb018aea54d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: 760e73e0bedec62b8166139d3aa3e96615417577
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456660"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200317"
 ---
 # <a name="get-oauth2permissiongrant"></a>Obter oAuth2Permissiongrant
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

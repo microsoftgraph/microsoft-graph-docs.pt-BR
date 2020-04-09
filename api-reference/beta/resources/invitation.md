@@ -2,19 +2,19 @@
 title: tipo de recurso convite
 description: Representa um convite usado para adicionar usuários externos a uma organização.
 localization_priority: Normal
-author: davidmu1
+author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8be2cf55c095a6d1737525e491f920213b04cff0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2766206dc5a66529a3d8497ef64d2a9202f270d0
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523188"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199736"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|invitedUser|[user](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
+|invitedUser|[Usuário](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

@@ -2,19 +2,19 @@
 title: Atribuir onPremisesAgent a onPremisesAgentGroup
 description: Atribua onPremisesAgent a onPremisesAgentGroup.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a1f2f3df53414f7f042a444d0482f50c51246e3f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b8ad12fe08c6846718be1ac39ba2f4a62627a83
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456485"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199757"
 ---
 # <a name="assign-onpremisesagent-to-onpremisesagentgroup"></a>Atribuir onPremisesAgent a onPremisesAgentGroup
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: Obter onPremisesAgent
 description: Recupere as propriedades e os relacionamentos de um objeto onPremisesAgent.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bc0581202af3ce66f808a49ac931a0a9b800e5bd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d4224e981c7652036459e56549bcfe9a96098423
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456499"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199802"
 ---
 # <a name="get-onpremisesagent"></a>Obter onPremisesAgent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

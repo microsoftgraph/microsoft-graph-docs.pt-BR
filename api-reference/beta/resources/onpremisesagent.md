@@ -2,19 +2,19 @@
 title: tipo de recurso onPremisesAgent
 description: tipo de recurso onPremisesAgent.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ff30f427c2aac754ba3cfda4082d590e95f5edd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdc6355b33539899ab51a4a6881a8109cb8d87a6
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522239"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199750"
 ---
 # <a name="onpremisesagent-resource-type"></a>tipo de recurso onPremisesAgent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,20 +1,20 @@
 ---
 title: Obter educationalActivity
-description: Recupere as propriedades e os relacionamentos de um objeto educationalactivity.
+description: Recupere as propriedades e os relacionamentos de um objeto educationalActivity.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e9b4784a2dc757e5a28371065ce0bc66916554c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35d927664013775c6bb470d5118427d3bc6c45ae
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427862"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199533"
 ---
 # <a name="get-educationalactivity"></a>Obter educationalActivity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,9 +52,9 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome           |Descrição                  |
+|Nome            |Descrição                  |
 |:---------------|:----------------------------|
-| Autorização  | {token} de portador. Obrigatório.   |
+|Autorização   |{token} de portador. Obrigatório.    |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -71,6 +71,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e o obj
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationalactivity"
@@ -80,19 +81,21 @@ Este é um exemplo de solicitação.
 GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Resposta
 

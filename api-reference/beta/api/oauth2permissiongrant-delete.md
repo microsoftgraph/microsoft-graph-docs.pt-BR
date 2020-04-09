@@ -3,18 +3,18 @@ title: Excluir oAuth2PermissionGrant
 description: Excluir um oAuth2PermissionGrant.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 3bc0786445e8bac495a0768751ac43fb1ead5bb4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: 14d70a5673ddf1e08f9aa50758befb85348efa1a
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456688"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199981"
 ---
 # <a name="delete-oauth2permissiongrant"></a>Excluir oAuth2PermissionGrant
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

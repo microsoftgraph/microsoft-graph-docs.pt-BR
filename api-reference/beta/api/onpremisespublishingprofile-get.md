@@ -2,19 +2,19 @@
 title: Obter onPremisesPublishingProfile
 description: Recupere as propriedades e os relacionamentos de um objeto [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e36466d8bcb61f260886978bbf7b812001af49c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9fe411c59577132dfd770db20db11bce4061d75d
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456440"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199904"
 ---
 # <a name="get-onpremisespublishingprofile"></a>Obter onPremisesPublishingProfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

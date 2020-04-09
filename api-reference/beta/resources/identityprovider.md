@@ -3,18 +3,18 @@ title: Tipo de recurso do identityProvider
 description: Representa um provedor de identidade do Azure Active Directory (Azure AD). O provedor de identidade pode ser Microsoft, Google, Facebook, Amazon ou LinkedIn.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 30e9451d67a5438a8739879747e301d016e0520a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: Nickgmicrosoft
+ms.openlocfilehash: 91eb55c35a17393de623e2c9c5f99c7d3f43386a
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496660"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199740"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

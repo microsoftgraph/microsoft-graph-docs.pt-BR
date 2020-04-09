@@ -3,18 +3,18 @@ title: Configurando a mensagem de convite
 description: O objeto invitedUserMessageInfo permite que você configure a mensagem de convite.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: f52a68cd2e6803943ac1f76fd2df12ae01f88071
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: elisolMS
+ms.openlocfilehash: 7b2d4e25dc85f1140ecba9ab9d0365cc4e842be6
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523174"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200086"
 ---
 # <a name="configuring-the-invitation-message"></a>Configurando a mensagem de convite
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

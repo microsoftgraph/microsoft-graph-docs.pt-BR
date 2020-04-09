@@ -2,19 +2,19 @@
 title: Listar onPremisesAgentGroups
 description: Recupere uma lista de objetos onPremisesAgentGroup.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 84177ae4054071fb60b6d323d034a6076eb8d9ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4192171bc48b0a535b75f527929d97426e3e1f8
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456457"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199925"
 ---
 # <a name="list-onpremisesagentgroups"></a>Listar onPremisesAgentGroups
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

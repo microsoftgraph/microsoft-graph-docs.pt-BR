@@ -2,19 +2,19 @@
 title: Remover o publishedResource de um onPremisesAgentGroup
 description: Remover um objeto [publishedResource](../resources/publishedresource.md) de um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6c8945712a3b8685155a4c3c66e7403f9027c83c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e300f57d58dcb0d9b32f17fa603b50df9aeb4c1
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454847"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200184"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Remover o publishedResource de um onPremisesAgentGroup
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

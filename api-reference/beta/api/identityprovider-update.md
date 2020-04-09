@@ -3,18 +3,18 @@ title: Atualizar identityProvider
 description: Atualize as propriedades em um identityprovider existente.
 localization_priority: Normal
 doc_type: apiPageType
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2d0217bf395a37b361e83818e653a2ad23220eef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1925e71e365d6a5f632176c62afc43ee30e829ee
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446482"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199568"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ No corpo da solicitação, fornece um objeto JSON com uma ou mais propriedades q
 |:---------------|:--------|:----------|
 |clientId|Cadeia de caracteres|O ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
 |clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
-|nome|String|O nome exclusivo do provedor de identidade.|
+|nome|Cadeia de caracteres|O nome exclusivo do provedor de identidade.|
 
 ## <a name="response"></a>Resposta
 

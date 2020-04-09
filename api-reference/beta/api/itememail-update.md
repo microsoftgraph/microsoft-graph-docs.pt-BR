@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a0d65971de615c788073938819cdfd0d0fb352d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62d7198eabebda2b7ed612c57754007130195a90
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457225"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200318"
 ---
 # <a name="update-itememail"></a>Atualizar email
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/emails/{id} 
+PATCH /me/profile/emails/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição                                                              |
 |:-------------|:------------|:-------------------------------------------------------------------------|
-|address       |Cadeia de caracteres       | O próprio endereço de email.                                                | 
+|address       |Cadeia de caracteres       | O próprio endereço de email.                                                |
 |displayName   |Cadeia de caracteres       | O nome ou rótulo que um usuário associou a um endereço de email específico. |
 |type          |cadeia de caracteres       | Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`.     |
 
@@ -81,6 +81,7 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-itememail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,7 +95,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Resposta
 

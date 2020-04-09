@@ -2,19 +2,19 @@
 title: Atualizar onPremisesPublishingProfile
 description: Atualiza as propriedades de um objeto onPremisesPublishingProfile.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e08645e9e1f68b57eec4bfb0e33bdfaf7ac2d5d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83f4023b350357512c0c976ad63cf9c86cffc9c1
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456436"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199766"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Atualizar onPremisesPublishingProfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

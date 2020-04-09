@@ -2,19 +2,19 @@
 title: Criar convite
 description: Use esta API para criar um novo convite. O convite adiciona um usuário externo à organização.
 localization_priority: Normal
-author: davidmu1
+author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: befc9eafaa2354f548b514d9889cf3587dfff3f7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40d3076253452c2ae6aa967eb5e24db017e69c23
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457332"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199770"
 ---
 # <a name="create-invitation"></a>Criar convite
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

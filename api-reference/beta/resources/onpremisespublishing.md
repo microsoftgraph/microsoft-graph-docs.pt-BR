@@ -2,19 +2,19 @@
 title: tipo de recurso onPremisesPublishing
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: db81ef2c61142edb0d3ca58a67b34c7da34e71f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9395a2d51628ed6ffc8ed0049f73595e2c98ba7a
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522211"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200051"
 ---
 # <a name="onpremisespublishing-resource-type"></a>tipo de recurso onPremisesPublishing
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +28,9 @@ Um objeto **onPremisesPublishing** representa o conjunto de propriedades para pu
 |externalAuthenticationType|String|Detalhes a configuração de pré-autenticação para o aplicativo os valores possíveis são: `passthru`, `aadPreAuthentication`.|
 |externalUrl|String|A URL externa publicada para o aplicativo. Por exemplohttps://intranet-contoso.msappproxy.net/  |
 |internalUrl|String|A URL interna do aplicativo. Por exemplohttps://intranet/ |
-|isOnPremPublishingEnabled|Boolean|Indica se o aplicativo está sendo publicado ou não no momento.|
+|isOnPremPublishingEnabled|Booliano|Indica se o aplicativo está sendo publicado ou não no momento.|
 |applicationServerTimeout|String|A duração que o conector aguardará por uma resposta do aplicativo backend antes de fechar a conexão. Os valores possíveis `default`são `long`:. Use `long` se o servidor levar mais de 60-75 segundos para responder às solicitações. Além disso `long` , tente se você não consegue acessar o aplicativo e o status do erro é "tempo limite de backend".|
-|isTranslateHostHeaderEnabled|Boolean|Indica se o aplicativo deve traduzir URLs nos cabeçalhos de resposta. Isso inclui a configuração do site correto para cookies.|
+|isTranslateHostHeaderEnabled|Booliano|Indica se o aplicativo deve traduzir URLs nos cabeçalhos de resposta. Isso inclui a configuração do site correto para cookies.|
 
 ## <a name="json-representation"></a>Representação JSON
 
