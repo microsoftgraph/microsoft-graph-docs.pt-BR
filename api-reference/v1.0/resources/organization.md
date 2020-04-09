@@ -2,15 +2,15 @@
 title: tipo de recurso organization
 description: " criar e excluir não têm suporte. Herda de directoryObject."
 localization_priority: Priority
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bbb11149edd6263aaf65570a9068e4333c293ae6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e45724b994000289cad21821608f58abeb5b9742
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534134"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181740"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 

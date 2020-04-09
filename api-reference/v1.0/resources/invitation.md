@@ -2,15 +2,15 @@
 title: tipo de recurso convite
 description: Representa um convite usado para adicionar usuários externos a uma organização.
 localization_priority: Priority
-author: davidmu1
+author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 29dcf476dc7d26f87c04a6fd8d075c4ed0d77bd5
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 95978c18ac047394adfd2a18c2dd6538900c8116
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062550"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200296"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
