@@ -2,15 +2,15 @@
 title: Obter grupos de membros
 description: Retorna todos os grupos dos quais o usuário, grupo ou objeto de diretório especificado é membro. Esta função é transitiva.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb3c58925aafe3b454863b2160b30db5be2a8242
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60d21aefcf1d2abac66e7797624984570bd132bf
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517983"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181920"
 ---
 # <a name="get-member-groups"></a>Obter grupos de membros
 

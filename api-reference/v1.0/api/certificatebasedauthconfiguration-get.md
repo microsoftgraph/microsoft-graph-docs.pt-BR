@@ -2,15 +2,15 @@
 title: Obter certificateBasedAuthConfiguration
 description: Obter as propriedades de um objeto certificatebasedauthconfiguration.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 608d07e01146f5dddf1751b3a79a322667b4503c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 232dc629fdd4e6bec1914654d036c8d097d2bd17
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518634"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181256"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Obter certificateBasedAuthConfiguration
 

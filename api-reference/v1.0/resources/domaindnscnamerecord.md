@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso domainDnsCnameRecord
-description: Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade DomainDnsRecord.
-author: davidmu1
+description: Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 938a11bc1cc7790e2e521c86a51b258882dfad86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9aa4b443d6361a9d83a20d1c3e2e6345e7ee5809
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531612"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181655"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>tipo de recurso domainDnsCnameRecord
 

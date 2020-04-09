@@ -2,21 +2,21 @@
 title: Lista directoryAudits
 description: Descreve o método list do recurso directoryAudit (entidade) da API do Microsoft Graph.
 localization_priority: Normal
-author: dhanyahk
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8543663094d914069d2dfef7e34247d91dd2646f
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 1bcbd266ba88e11e7c787cadb7753263b519b3ea
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062032"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181955"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
 Namespace: microsoft.graph
 
-Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo o usuário, o aplicativo, o gerenciamento de dispositivos e de grupo, o gerenciamento de identidade privilegiado (PIM), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (autoatendimento e administração redefinições de senha) e gerenciamento de grupo de autoatendimento e assim por diante.
+Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo o usuário, o aplicativo, o gerenciamento de dispositivos e de grupo, o gerenciamento de identidades privilegiadas, as revisões de acesso, os termos de uso, a proteção de identidade, o gerenciamento de senhas (autoatendimento e redefinições de senha de administrador) e o gerenciamento de grupos de autoatendimento e assim por diante.
 
 ## <a name="permissions"></a>Permissões
 

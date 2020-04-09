@@ -2,15 +2,15 @@
 title: Excluir certificateBasedAuthConfiguration
 description: Exclua certificateBasedAuthConfiguration.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a09ab17568e539ccce87c50d5d8c5180e0c30334
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ca0722a3aa9c0ab778c9964cfee043afc47e30b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518641"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181698"
 ---
 # <a name="delete-certificatebasedauthconfiguration"></a>Excluir certificateBasedAuthConfiguration
 

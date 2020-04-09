@@ -2,15 +2,15 @@
 title: Listar certificateBasedAuthConfigurations
 description: Obtenha uma lista de objetos certificatebasedauthconfiguration.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f045eee24c9c4150419e69adc7279987206510d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0dfd4edce70c254f99f30bde8e90425bdd01f901
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518627"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181249"
 ---
 # <a name="list-certificatebasedauthconfigurations"></a>Listar certificateBasedAuthConfigurations
 

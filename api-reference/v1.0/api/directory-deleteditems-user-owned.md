@@ -1,16 +1,16 @@
 ---
 title: Listar itens excluídos pertencentes a um usuário
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6c114e41e113faa3a039a2039844a5fa0cd273f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8ccd5e784886fc6822016d6bd9bd451458e3a1d
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518032"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181962"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 

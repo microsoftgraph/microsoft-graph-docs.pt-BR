@@ -1,16 +1,16 @@
 ---
 title: Obter domínio
 description: Recupere as propriedades e os relacionamentos do objeto Domain.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4562b226509c27888d79f62c29a7cfc064e1736e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e5eaee09efa63c98ca3ee2ed6335863b73b1d80
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517878"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179448"
 ---
 # <a name="get-domain"></a>Obter domínio
 

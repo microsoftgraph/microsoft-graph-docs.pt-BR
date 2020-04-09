@@ -2,15 +2,15 @@
 title: Verificar grupos de membros
 description: Verificar se há associação em uma lista de grupos especificada e retorna dessa lista esses grupos
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 40712d9765c00b5fd26f77ca494fb3f647548fd2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9aa5462810304fc12e0f87286212d2b0bf57b2d1
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518011"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181948"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 

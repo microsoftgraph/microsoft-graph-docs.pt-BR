@@ -2,15 +2,15 @@
 title: Obter objetos de membros
 description: " Retorna todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. Esta função é transitiva. "
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb16a8901d89240ca3b6edea0311075fbd0d07ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66a7ebebe219e52a0d1581b65a1aa937c49ba533
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517976"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181913"
 ---
 # <a name="get-member-objects"></a>Obter objetos de membros
 

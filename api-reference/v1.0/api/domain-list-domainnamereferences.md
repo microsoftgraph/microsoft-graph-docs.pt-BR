@@ -1,16 +1,16 @@
 ---
 title: Listar domainNameReferences
-description: Recupere uma lista de directoryobject com uma referência ao domínio. A lista retornada conterá todos os objetos de diretório que têm uma dependência no domínio.
-author: davidmu1
+description: Recupere uma lista de directoryobject com uma referência ao domínio.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 513c36432c828720e90ac015a2bc38a69aecbf0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db09904e99eb892a5ee09acd43dde1967ce3ea39
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517885"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179441"
 ---
 # <a name="list-domainnamereferences"></a>Listar domainNameReferences
 

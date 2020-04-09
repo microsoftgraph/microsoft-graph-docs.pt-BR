@@ -1,16 +1,16 @@
 ---
 title: Excluir directoryObject
 description: Exclui um directoryObject.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46e5faec04b28cd6d48f8f4344d6c5237e4a29e5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 02311d5908237325e627e61706d25ee1b3d16c2f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518004"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181941"
 ---
 # <a name="delete-directoryobject"></a>Excluir directoryObject
 

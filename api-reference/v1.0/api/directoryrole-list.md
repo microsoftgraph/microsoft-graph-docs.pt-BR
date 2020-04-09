@@ -1,16 +1,16 @@
 ---
 title: Listar directoryRoles
 description: Lista as funções de diretório ativadas no locatário.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9c6f5233ae5563963974a7bc1d544a260fd78c99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f4a8f8838d77c9a947c304ee18898832c1d5428
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517934"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181396"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 

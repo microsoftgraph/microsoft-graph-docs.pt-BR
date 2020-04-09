@@ -2,21 +2,21 @@
 title: Obter directoryAudit
 description: Descreve o método Get do recurso directoryAudit (entidade) da API do Microsoft Graph.
 localization_priority: Normal
-author: dhanyahk
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82a395224cd9230e3f5c6bdd1d13f087aec0d178
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bf36db27c6ba21bc8799977baa881bf1b8c6fee
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518025"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179455"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
 Namespace: microsoft.graph
 
-Obter um item específico de log de auditoria do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como usuários, aplicativos, gerenciamento de dispositivo e grupo, gerenciamento de identidade privilegiada (PIM), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senha ( Autoatendimento e redefinições de senha de administrador), gerenciamento de grupo de autoatendimento e assim por diante.
+Obter um item específico de log de auditoria do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como usuários, aplicativos, gerenciamento de dispositivo e grupo, gerenciamento de identidade privilegiada (PIM), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (autoatendimento e redefinições de senha de administrador), gerenciamento de grupo de autoatendimento e assim por diante.
 
 ## <a name="permissions"></a>Permissões
 

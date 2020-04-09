@@ -1,16 +1,16 @@
 ---
 title: Listar serviceConfigurationRecords
 description: Recupera uma lista de objetos domainDnsRecord necessários para habilitar serviços para o domínio.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1511264ab304ae317686ea99fd8dbe8014f11132
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15dcda1621680325a8e93f1dfada3012ec45a6b0
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517871"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179434"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Listar serviceConfigurationRecords
 

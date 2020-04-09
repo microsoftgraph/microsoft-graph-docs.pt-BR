@@ -1,16 +1,16 @@
 ---
 title: Listar itens excluídos
 description: Recupere uma lista de itens recentemente excluídos em itens excluídos.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46e67b54c2e12d50a05a364f975019726d8cc01c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fb4bc8bd5b696da4c2b895255ebb41a5170ce4b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518046"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181768"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 

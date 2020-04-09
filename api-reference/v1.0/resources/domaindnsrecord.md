@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso domainDnsRecord
-description: Para cada domínio no locatário, talvez seja necessário adicionar registros DNS ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services. A entidade **DomainDnsRecord** é usada para apresentar esses registros DNS. Entidade base para entidades DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord e DomainDnsTxtRecord.
+description: A entidade DomainDnsRecord é usada para apresentar registros DNS.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9402ec0785da87236fa94a9749f8b400f3164e1e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e2b64a15f49e31384045adcfe85758af06e1e92
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531598"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181641"
 ---
 # <a name="domaindnsrecord-resource-type"></a>tipo de recurso domainDnsRecord
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar domínio
 description: Atualize as propriedades do objeto Domain.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b00c418bcb7385a5380ace560fb83e18c8cbb058
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b22677f64057cfa0baf16afb76d58a0d6d456203
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517843"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179406"
 ---
 # <a name="update-domain"></a>Atualizar domínio
 
