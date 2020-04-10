@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fda8f362d3554f535012bc058ae4a0c7d5ddcfc7
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 977211f9e2e77250201fe2c346a04153cf3a0cdf
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082347"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200219"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -42,6 +42,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
 - [Alerta][] de segurança
 - Equipes [callRecord][] (visualização)
+- [chatMessage][] do Teams (visualização)
 
 Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
 
@@ -74,7 +75,7 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 
 - Não há suporte a notificações para entidades de usuário para contas Microsoft pessoais.
 
-- Existe um [Problema conhecido](graph/concepts/known-issues#change-notifications) com as assinaturas do usuário.
+- Existe um [problema conhecido](known-issues.md#change-notifications) nas assinaturas de usuários e grupos.
 
 ### <a name="outlook-resource-limitations"></a>Limitações de recursos do Outlook
 
@@ -267,9 +268,9 @@ Repita o procedimento para outras notificações na solicitação.
 Os exemplos de código a seguir estão disponíveis no GitHub.
 
 - [Módulo de Treinamento do Microsoft Graph - Usar notificações de alteração e controlar alterações com o Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
-- [Exemplo de webhooks do Microsoft Graph para Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-- [Exemplo de webhooks do Microsoft Graph para ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-- [Exemplo de webhooks de usuários do Microsoft Graph usando o SDK do WebJobs](https://github.com/microsoftgraph/webjobs-webhooks-sample)
+- [Exemplo de webhooks do Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
+- [Exemplo de Webhooks do Microsoft Graph para o ASP.NET Core](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
+- [Exemplo de Webhooks do Microsoft Graph para Java Spring](https://github.com/microsoftgraph/java-spring-webhooks-sample)
 
 ## <a name="see-also"></a>Confira também
 
@@ -287,4 +288,5 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta
+[callRecord]: /graph/api/resources/callrecords-callrecord
+[chatMessage]: /graph/api/resources/chatmessage

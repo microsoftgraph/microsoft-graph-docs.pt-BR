@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 743245f7f64ce0a3b31ca2f3dfadfb4b22d629aa
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 6a62de57a5fe18438807f817f67a17bcf0a731dd
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082327"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200303"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -87,6 +87,10 @@ A versão beta oferece uma solução alternativa, na qual é possível usar a pr
 ### <a name="additional-notifications-for-users"></a>Notificações adicionais para usuários
 
 [As assinaturas](/graph/api/resources/subscription) para alterações de **usuário ** com **ChangeType** definidas como **atualizadas** também receberão notificações de **ChangeType**: **atualizadas** na criaçã e na exclusão do usuário.
+
+### <a name="additional-notifications-for-groups"></a>Notificações adicionais para grupos
+
+As [assinaturas](/graph/api/resources/subscription) de alterações de **grupo** com **changeType** definidas como **atualizado** também receberão notificações de **ChangeType**: **atualizado** em criação e exclusão de grupos.
 
 ## <a name="cloud-communications"></a>Comunicações na nuvem 
 

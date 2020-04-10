@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c66a1d38f9f63136c202a675608c58bf4b8ec57f
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 2da57e4779760cfb3dd0a9c124c2058327822de1
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160286"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181684"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -45,7 +45,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição|v1.0|Adicionada a nova propriedade **inicialização** ao tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0).
-|Adição|v1.0|Foram adicionados novos tipos complexos:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
+|Adição|v1.0|Foram adicionados novos tipos complexos:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
 |Adição|v1.0|Adicionada a nova propriedade **recordingInfo** à entidade [participant](/graph/api/resources/participant?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **recordingStatus** ao tipo complexo [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova ação [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) à entidade [call](/graph/api/resources/call?view=graph-rest-1.0).
@@ -56,7 +56,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|v1.0|Adicionada a nova propriedade **observedParticipantId** ao tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **onBehalfOf** ao tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **transferorf** ao tipo complexo [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
-|Adição|v1.0|Adicionada a nova propriedade **callRoute** à entidade [call](/graph/api/resources/call?view=graph-rest-1.0).
+|Adição|v1.0|Foi adicionada a nova propriedade **CallRoutes** à entidade de [chamada](/graph/api/resources/call?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **final** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **original** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Adição|v1.0|Adicionada a nova propriedade **routingType** ao tipo complexo [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
