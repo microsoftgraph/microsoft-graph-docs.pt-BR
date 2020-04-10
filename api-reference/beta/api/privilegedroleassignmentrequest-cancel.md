@@ -3,65 +3,65 @@ title: Cancelar privilegedRoleAssignmentRequest
 description: Cancelar uma privilegedRoleAssignmentRequest.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: b03b866f69e3fb4a9249a3081f57295d2cee3b88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 674b89cc122c51a4532d445ff8499a4194aa63ab
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455295"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218686"
 ---
-# <a name="cancel-privilegedroleassignmentrequest"></a><span data-ttu-id="36655-103">Cancelar privilegedRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="36655-103">Cancel privilegedRoleAssignmentRequest</span></span>
+# <a name="cancel-privilegedroleassignmentrequest"></a><span data-ttu-id="68e2f-103">Cancelar privilegedRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="68e2f-103">Cancel privilegedRoleAssignmentRequest</span></span>
 
-<span data-ttu-id="36655-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="36655-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="68e2f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68e2f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="36655-105">Cancelar uma [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span><span class="sxs-lookup"><span data-stu-id="36655-105">Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span>
+<span data-ttu-id="68e2f-105">Cancelar uma [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span><span class="sxs-lookup"><span data-stu-id="68e2f-105">Cancel a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="36655-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="36655-106">Permissions</span></span>
-<span data-ttu-id="36655-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36655-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="68e2f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="68e2f-106">Permissions</span></span>
+<span data-ttu-id="68e2f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="68e2f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="36655-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="36655-109">Permission type</span></span>                        | <span data-ttu-id="36655-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="36655-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="68e2f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="68e2f-109">Permission type</span></span>                        | <span data-ttu-id="68e2f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="68e2f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="36655-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="36655-111">Delegated (work or school account)</span></span> | <span data-ttu-id="36655-112">PrivilegedAccess. ReadWrite. AzureAD, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="36655-112">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="36655-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="36655-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36655-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="36655-114">Not supported.</span></span> |
-|<span data-ttu-id="36655-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="36655-115">Application</span></span>                            | <span data-ttu-id="36655-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="36655-116">Not supported.</span></span> |
+|<span data-ttu-id="68e2f-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="68e2f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="68e2f-112">PrivilegedAccess. ReadWrite. AzureAD, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="68e2f-112">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="68e2f-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="68e2f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="68e2f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="68e2f-114">Not supported.</span></span> |
+|<span data-ttu-id="68e2f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="68e2f-115">Application</span></span>                            | <span data-ttu-id="68e2f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="68e2f-116">Not supported.</span></span> |
 
 
-### <a name="http-request"></a><span data-ttu-id="36655-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="36655-117">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="68e2f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="68e2f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignmentRequests({requestid})/cancel
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="36655-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="36655-118">Request headers</span></span>
-| <span data-ttu-id="36655-119">Nome</span><span class="sxs-lookup"><span data-stu-id="36655-119">Name</span></span>      |<span data-ttu-id="36655-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="36655-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="68e2f-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="68e2f-118">Request headers</span></span>
+| <span data-ttu-id="68e2f-119">Nome</span><span class="sxs-lookup"><span data-stu-id="68e2f-119">Name</span></span>      |<span data-ttu-id="68e2f-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="68e2f-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="36655-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="36655-121">Authorization</span></span>  | <span data-ttu-id="36655-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="36655-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="68e2f-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="68e2f-121">Authorization</span></span>  | <span data-ttu-id="68e2f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="68e2f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="36655-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="36655-124">Request body</span></span>
-<span data-ttu-id="36655-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="36655-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="68e2f-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="68e2f-124">Request body</span></span>
+<span data-ttu-id="68e2f-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="68e2f-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="36655-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="36655-126">Response</span></span>
-<span data-ttu-id="36655-127">Se tiver êxito, este método retornará um código de resposta `200 Ok`.</span><span class="sxs-lookup"><span data-stu-id="36655-127">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="36655-128">Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="36655-128">It returns [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="68e2f-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="68e2f-126">Response</span></span>
+<span data-ttu-id="68e2f-127">Se tiver êxito, este método retornará um código de resposta `200 Ok`.</span><span class="sxs-lookup"><span data-stu-id="68e2f-127">If successful, this method returns a `200 Ok` response code.</span></span> <span data-ttu-id="68e2f-128">Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="68e2f-128">It returns [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) in the response body.</span></span>
 
-### <a name="error-codes"></a><span data-ttu-id="36655-129">Códigos de erro</span><span class="sxs-lookup"><span data-stu-id="36655-129">Error codes</span></span>
-<span data-ttu-id="36655-130">Essa API retorna os códigos de erro HTTP padrão.</span><span class="sxs-lookup"><span data-stu-id="36655-130">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="36655-131">Além disso, ele retorna os códigos de erro personalizados listados na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="36655-131">In addition, it returns the custom error codes listed in the following table.</span></span>
+### <a name="error-codes"></a><span data-ttu-id="68e2f-129">Códigos de erro</span><span class="sxs-lookup"><span data-stu-id="68e2f-129">Error codes</span></span>
+<span data-ttu-id="68e2f-130">Essa API retorna os códigos de erro HTTP padrão.</span><span class="sxs-lookup"><span data-stu-id="68e2f-130">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="68e2f-131">Além disso, ele retorna os códigos de erro personalizados listados na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="68e2f-131">In addition, it returns the custom error codes listed in the following table.</span></span>
 
-|<span data-ttu-id="36655-132">Código de erro</span><span class="sxs-lookup"><span data-stu-id="36655-132">Error code</span></span>     | <span data-ttu-id="36655-133">Mensagem de erro</span><span class="sxs-lookup"><span data-stu-id="36655-133">Error message</span></span>              |
+|<span data-ttu-id="68e2f-132">Código de erro</span><span class="sxs-lookup"><span data-stu-id="68e2f-132">Error code</span></span>     | <span data-ttu-id="68e2f-133">Mensagem de erro</span><span class="sxs-lookup"><span data-stu-id="68e2f-133">Error message</span></span>              |
 |:--------------------| :---------------------|
-| <span data-ttu-id="36655-134">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="36655-134">400 BadRequest</span></span> | <span data-ttu-id="36655-135">RequestId não pode ser nulo.</span><span class="sxs-lookup"><span data-stu-id="36655-135">RequestId cannot be Null.</span></span> |
-| <span data-ttu-id="36655-136">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="36655-136">400 BadRequest</span></span> | <span data-ttu-id="36655-137">Solicitação com ID de solicitação não encontrada.</span><span class="sxs-lookup"><span data-stu-id="36655-137">Request with request ID not found.</span></span> |
-| <span data-ttu-id="36655-138">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="36655-138">400 BadRequest</span></span> | <span data-ttu-id="36655-139">O cancelamento pode ser feito apenas em status agendado e PendingApproval.</span><span class="sxs-lookup"><span data-stu-id="36655-139">Cancellation can be done only on status Scheduled and PendingApproval.</span></span> |
-| <span data-ttu-id="36655-140">403 não autorizado</span><span class="sxs-lookup"><span data-stu-id="36655-140">403 UnAuthorized</span></span> | <span data-ttu-id="36655-141">O solicitante não tem permissão para cancelar a chamada ou a solicitação de cancelamento.</span><span class="sxs-lookup"><span data-stu-id="36655-141">Requester not allowed to make Cancel call or request not found.</span></span> |
+| <span data-ttu-id="68e2f-134">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="68e2f-134">400 BadRequest</span></span> | <span data-ttu-id="68e2f-135">RequestId não pode ser nulo.</span><span class="sxs-lookup"><span data-stu-id="68e2f-135">RequestId cannot be Null.</span></span> |
+| <span data-ttu-id="68e2f-136">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="68e2f-136">400 BadRequest</span></span> | <span data-ttu-id="68e2f-137">Solicitação com ID de solicitação não encontrada.</span><span class="sxs-lookup"><span data-stu-id="68e2f-137">Request with request ID not found.</span></span> |
+| <span data-ttu-id="68e2f-138">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="68e2f-138">400 BadRequest</span></span> | <span data-ttu-id="68e2f-139">O cancelamento pode ser feito apenas em status agendado e PendingApproval.</span><span class="sxs-lookup"><span data-stu-id="68e2f-139">Cancellation can be done only on status Scheduled and PendingApproval.</span></span> |
+| <span data-ttu-id="68e2f-140">403 não autorizado</span><span class="sxs-lookup"><span data-stu-id="68e2f-140">403 UnAuthorized</span></span> | <span data-ttu-id="68e2f-141">O solicitante não tem permissão para cancelar a chamada ou a solicitação de cancelamento.</span><span class="sxs-lookup"><span data-stu-id="68e2f-141">Requester not allowed to make Cancel call or request not found.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="36655-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="36655-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="36655-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="36655-143">Request</span></span>
-<span data-ttu-id="36655-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="36655-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="68e2f-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="68e2f-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="68e2f-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="68e2f-143">Request</span></span>
+<span data-ttu-id="68e2f-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="68e2f-144">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="36655-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="36655-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="68e2f-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="68e2f-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cancel_privilegedRoleAssignmentRequests"
@@ -69,22 +69,22 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/cancel
 ```
-# <a name="c"></a>[<span data-ttu-id="36655-146">C#</span><span class="sxs-lookup"><span data-stu-id="36655-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="68e2f-146">C#</span><span class="sxs-lookup"><span data-stu-id="68e2f-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cancel-privilegedroleassignmentrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="36655-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="36655-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="68e2f-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="68e2f-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/cancel-privilegedroleassignmentrequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="36655-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="36655-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="68e2f-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="68e2f-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/cancel-privilegedroleassignmentrequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="36655-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="36655-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="68e2f-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="68e2f-149">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

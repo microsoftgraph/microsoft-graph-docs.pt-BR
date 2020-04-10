@@ -3,35 +3,35 @@ title: tipo de recurso synchronizationError
 description: Representa um erro que ocorreu durante o processo de sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a754b03379d1e40ba7310283a0efdd94ff30631
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 884c39273d8d474a228cd8f4a8f2b321950e8caf
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520076"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217546"
 ---
-# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="64c54-103">tipo de recurso synchronizationError</span><span class="sxs-lookup"><span data-stu-id="64c54-103">synchronizationError resource type</span></span>
+# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="fe024-103">tipo de recurso synchronizationError</span><span class="sxs-lookup"><span data-stu-id="fe024-103">synchronizationError resource type</span></span>
 
-<span data-ttu-id="64c54-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="64c54-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fe024-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fe024-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64c54-105">Representa um erro que ocorreu durante o processo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="64c54-105">Represents an error that occurred during the synchronization process.</span></span>
+<span data-ttu-id="fe024-105">Representa um erro que ocorreu durante o processo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="fe024-105">Represents an error that occurred during the synchronization process.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="64c54-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="64c54-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fe024-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fe024-106">Properties</span></span>
 
 <!-- Add descriptions for the properties. -->
-| <span data-ttu-id="64c54-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="64c54-107">Property</span></span>     | <span data-ttu-id="64c54-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="64c54-108">Type</span></span>   |<span data-ttu-id="64c54-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="64c54-109">Description</span></span>|
+| <span data-ttu-id="fe024-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fe024-107">Property</span></span>     | <span data-ttu-id="fe024-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="fe024-108">Type</span></span>   |<span data-ttu-id="fe024-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="fe024-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="64c54-110">código</span><span class="sxs-lookup"><span data-stu-id="64c54-110">code</span></span>|<span data-ttu-id="64c54-111">String</span><span class="sxs-lookup"><span data-stu-id="64c54-111">String</span></span>||
-|<span data-ttu-id="64c54-112">mensagem</span><span class="sxs-lookup"><span data-stu-id="64c54-112">message</span></span>|<span data-ttu-id="64c54-113">String</span><span class="sxs-lookup"><span data-stu-id="64c54-113">String</span></span>||
-|<span data-ttu-id="64c54-114">tenantActionable</span><span class="sxs-lookup"><span data-stu-id="64c54-114">tenantActionable</span></span>|<span data-ttu-id="64c54-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="64c54-115">Boolean</span></span>||
+|<span data-ttu-id="fe024-110">código</span><span class="sxs-lookup"><span data-stu-id="fe024-110">code</span></span>|<span data-ttu-id="fe024-111">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="fe024-111">String</span></span>||
+|<span data-ttu-id="fe024-112">mensagem</span><span class="sxs-lookup"><span data-stu-id="fe024-112">message</span></span>|<span data-ttu-id="fe024-113">String</span><span class="sxs-lookup"><span data-stu-id="fe024-113">String</span></span>||
+|<span data-ttu-id="fe024-114">tenantActionable</span><span class="sxs-lookup"><span data-stu-id="fe024-114">tenantActionable</span></span>|<span data-ttu-id="fe024-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="fe024-115">Boolean</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="64c54-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="64c54-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fe024-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fe024-116">JSON representation</span></span>
 
-<span data-ttu-id="64c54-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="64c54-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fe024-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fe024-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

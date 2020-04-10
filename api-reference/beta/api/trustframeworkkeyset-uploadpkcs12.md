@@ -2,33 +2,35 @@
 title: 'trustFrameworkKeySet: uploadPkcs12'
 description: Carregar uma chave PKCS 12 Format (PFX) em um conjunto de chaves.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9cb1ff03d392032ae99117991b0c8ff356621476
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 64d5b2d2c10194156a1b577437d1e7a90773b80a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938187"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219008"
 ---
-# <a name="trustframeworkkeyset-uploadpkcs12"></a><span data-ttu-id="67e77-103">trustFrameworkKeySet: uploadPkcs12</span><span class="sxs-lookup"><span data-stu-id="67e77-103">trustFrameworkKeySet: uploadPkcs12</span></span>
+# <a name="trustframeworkkeyset-uploadpkcs12"></a><span data-ttu-id="1ef5a-103">trustFrameworkKeySet: uploadPkcs12</span><span class="sxs-lookup"><span data-stu-id="1ef5a-103">trustFrameworkKeySet: uploadPkcs12</span></span>
+
+<span data-ttu-id="1ef5a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ef5a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="67e77-104">Carregar uma chave do formato PKCS12 (PFX) para um [trustFrameworkKeyset](../resources/trustframeworkkeyset.md).</span><span class="sxs-lookup"><span data-stu-id="67e77-104">Upload a PKCS12 format key (PFX) to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="67e77-105">A entrada é um valor codificado de base 64 do conteúdo do certificado PFX.</span><span class="sxs-lookup"><span data-stu-id="67e77-105">The input is a base-64 encoded value of the Pfx certificate contents.</span></span> <span data-ttu-id="67e77-106">Este método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).</span><span class="sxs-lookup"><span data-stu-id="67e77-106">This method returns [trustFrameworkKey](../resources/trustframeworkkey.md).</span></span>
+<span data-ttu-id="1ef5a-105">Carregar uma chave do formato PKCS12 (PFX) para um [trustFrameworkKeyset](../resources/trustframeworkkeyset.md).</span><span class="sxs-lookup"><span data-stu-id="1ef5a-105">Upload a PKCS12 format key (PFX) to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="1ef5a-106">A entrada é um valor codificado de base 64 do conteúdo do certificado PFX.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-106">The input is a base-64 encoded value of the Pfx certificate contents.</span></span> <span data-ttu-id="1ef5a-107">Este método retorna [trustFrameworkKey](../resources/trustframeworkkey.md).</span><span class="sxs-lookup"><span data-stu-id="1ef5a-107">This method returns [trustFrameworkKey](../resources/trustframeworkkey.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="67e77-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="67e77-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1ef5a-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="1ef5a-108">Permissions</span></span>
 
-<span data-ttu-id="67e77-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="67e77-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1ef5a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ef5a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="67e77-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="67e77-110">Permission type</span></span>                        | <span data-ttu-id="67e77-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="67e77-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="1ef5a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1ef5a-111">Permission type</span></span>                        | <span data-ttu-id="1ef5a-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1ef5a-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="67e77-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="67e77-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="67e77-113">TrustFrameworkKeySet. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="67e77-113">TrustFrameworkKeySet.ReadWrite.All</span></span> |
-| <span data-ttu-id="67e77-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="67e77-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="67e77-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="67e77-115">Not supported.</span></span> |
-| <span data-ttu-id="67e77-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="67e77-116">Application</span></span>                            | <span data-ttu-id="67e77-117">TrustFrameworkKeySet. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="67e77-117">TrustFrameworkKeySet.ReadWrite.All</span></span> |
+| <span data-ttu-id="1ef5a-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1ef5a-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="1ef5a-114">TrustFrameworkKeySet. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="1ef5a-114">TrustFrameworkKeySet.ReadWrite.All</span></span> |
+| <span data-ttu-id="1ef5a-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1ef5a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ef5a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-116">Not supported.</span></span> |
+| <span data-ttu-id="1ef5a-117">Application</span><span class="sxs-lookup"><span data-stu-id="1ef5a-117">Application</span></span>                            | <span data-ttu-id="1ef5a-118">TrustFrameworkKeySet. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="1ef5a-118">TrustFrameworkKeySet.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="67e77-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="67e77-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ef5a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1ef5a-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,33 +38,33 @@ ms.locfileid: "37938187"
 POST /trustFramework/keySets/{id}/uploadPkcs12
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="67e77-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="67e77-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1ef5a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef5a-120">Request headers</span></span>
 
-| <span data-ttu-id="67e77-120">Nome</span><span class="sxs-lookup"><span data-stu-id="67e77-120">Name</span></span>          | <span data-ttu-id="67e77-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="67e77-121">Description</span></span>   |
+| <span data-ttu-id="1ef5a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="1ef5a-121">Name</span></span>          | <span data-ttu-id="1ef5a-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="1ef5a-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="67e77-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="67e77-122">Authorization</span></span> | <span data-ttu-id="67e77-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="67e77-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="67e77-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="67e77-125">Content-type</span></span>  | <span data-ttu-id="67e77-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="67e77-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="1ef5a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="1ef5a-123">Authorization</span></span> | <span data-ttu-id="1ef5a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1ef5a-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="1ef5a-126">Content-type</span></span>  | <span data-ttu-id="1ef5a-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="67e77-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="67e77-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1ef5a-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef5a-129">Request body</span></span>
 
-<span data-ttu-id="67e77-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="67e77-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="1ef5a-130">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="67e77-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="67e77-130">Parameter</span></span>    | <span data-ttu-id="67e77-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="67e77-131">Type</span></span>        | <span data-ttu-id="67e77-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="67e77-132">Description</span></span> |
+| <span data-ttu-id="1ef5a-131">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="1ef5a-131">Parameter</span></span>    | <span data-ttu-id="1ef5a-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="1ef5a-132">Type</span></span>        | <span data-ttu-id="1ef5a-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="1ef5a-133">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="67e77-133">key</span><span class="sxs-lookup"><span data-stu-id="67e77-133">key</span></span>|<span data-ttu-id="67e77-134">String</span><span class="sxs-lookup"><span data-stu-id="67e77-134">String</span></span>|<span data-ttu-id="67e77-135">Este é o campo para enviar conteúdo de PFX.</span><span class="sxs-lookup"><span data-stu-id="67e77-135">This is the field for sending pfx content.</span></span> <span data-ttu-id="67e77-136">O valor deve ser uma versão de codificação de base 64 do conteúdo de certificado real.</span><span class="sxs-lookup"><span data-stu-id="67e77-136">The value should be a base-64 encoded version of the actual certificate content.</span></span>|
-|<span data-ttu-id="67e77-137">password</span><span class="sxs-lookup"><span data-stu-id="67e77-137">password</span></span>|<span data-ttu-id="67e77-138">String</span><span class="sxs-lookup"><span data-stu-id="67e77-138">String</span></span>|<span data-ttu-id="67e77-139">Este é o campo para enviar a senha para o conteúdo de PFX.</span><span class="sxs-lookup"><span data-stu-id="67e77-139">This is the field for sending the password to PFX content.</span></span>|
+|<span data-ttu-id="1ef5a-134">key</span><span class="sxs-lookup"><span data-stu-id="1ef5a-134">key</span></span>|<span data-ttu-id="1ef5a-135">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="1ef5a-135">String</span></span>|<span data-ttu-id="1ef5a-136">Este é o campo para enviar conteúdo de PFX.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-136">This is the field for sending pfx content.</span></span> <span data-ttu-id="1ef5a-137">O valor deve ser uma versão de codificação de base 64 do conteúdo de certificado real.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-137">The value should be a base-64 encoded version of the actual certificate content.</span></span>|
+|<span data-ttu-id="1ef5a-138">password</span><span class="sxs-lookup"><span data-stu-id="1ef5a-138">password</span></span>|<span data-ttu-id="1ef5a-139">String</span><span class="sxs-lookup"><span data-stu-id="1ef5a-139">String</span></span>|<span data-ttu-id="1ef5a-140">Este é o campo para enviar a senha para o conteúdo de PFX.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-140">This is the field for sending the password to PFX content.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="67e77-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="67e77-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1ef5a-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ef5a-141">Response</span></span>
 
-<span data-ttu-id="67e77-141">Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="67e77-141">If successful, this method returns a `200 OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.</span></span>
+<span data-ttu-id="1ef5a-142">Se tiver êxito, este método retornará `200 OK` um código de resposta e um novo objeto [trustFrameworkKey](../resources/trustframeworkkey.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-142">If successful, this method returns a `200 OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="67e77-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="67e77-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1ef5a-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1ef5a-143">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="67e77-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67e77-143">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1ef5a-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef5a-144">Request</span></span>
 
-<span data-ttu-id="67e77-144">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="67e77-144">The following is an example of the request.</span></span>
+<span data-ttu-id="1ef5a-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-145">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="67e77-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="67e77-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1ef5a-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="1ef5a-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_uploadpkcs12"
@@ -77,26 +79,26 @@ Content-type: application/json
   "password": "password-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="67e77-146">C#</span><span class="sxs-lookup"><span data-stu-id="67e77-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1ef5a-147">C#</span><span class="sxs-lookup"><span data-stu-id="1ef5a-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadpkcs12-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="67e77-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67e77-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1ef5a-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1ef5a-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-uploadpkcs12-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="67e77-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="67e77-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1ef5a-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1ef5a-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadpkcs12-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="67e77-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="67e77-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1ef5a-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ef5a-150">Response</span></span>
 
-<span data-ttu-id="67e77-150">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="67e77-150">The following is an example of the response.</span></span>
+<span data-ttu-id="1ef5a-151">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-151">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="67e77-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="67e77-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1ef5a-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1ef5a-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

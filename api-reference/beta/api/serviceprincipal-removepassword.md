@@ -2,35 +2,35 @@
 title: 'servicePrincipalName: removePassword'
 description: Remover uma senha de um servicePrincipalName
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57c7c225ba2b5475f141c23abdef39e8a08a542b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4c68e934fb6ea3085c5dd268371e9f5763519c9
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453342"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218609"
 ---
-# <a name="serviceprincipal-removepassword"></a><span data-ttu-id="5db6b-103">servicePrincipalName: removePassword</span><span class="sxs-lookup"><span data-stu-id="5db6b-103">servicePrincipal: removePassword</span></span>
+# <a name="serviceprincipal-removepassword"></a><span data-ttu-id="77c90-103">servicePrincipalName: removePassword</span><span class="sxs-lookup"><span data-stu-id="77c90-103">servicePrincipal: removePassword</span></span>
 
-<span data-ttu-id="5db6b-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5db6b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="77c90-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="77c90-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5db6b-105">Remover uma senha de um objeto do [servicePrincipalName](../resources/serviceprincipal.md) .</span><span class="sxs-lookup"><span data-stu-id="5db6b-105">Remove a password from a [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
+<span data-ttu-id="77c90-105">Remover uma senha de um objeto do [servicePrincipalName](../resources/serviceprincipal.md) .</span><span class="sxs-lookup"><span data-stu-id="77c90-105">Remove a password from a [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5db6b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="5db6b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="77c90-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="77c90-106">Permissions</span></span>
 
-<span data-ttu-id="5db6b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5db6b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="77c90-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="77c90-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5db6b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5db6b-109">Permission type</span></span>                        | <span data-ttu-id="5db6b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5db6b-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="77c90-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="77c90-109">Permission type</span></span>                        | <span data-ttu-id="77c90-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="77c90-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5db6b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5db6b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5db6b-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5db6b-112">Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="5db6b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5db6b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5db6b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5db6b-114">Not supported.</span></span> |
-| <span data-ttu-id="5db6b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5db6b-115">Application</span></span>                            | <span data-ttu-id="5db6b-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5db6b-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="77c90-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="77c90-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="77c90-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="77c90-112">Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="77c90-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="77c90-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77c90-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="77c90-114">Not supported.</span></span> |
+| <span data-ttu-id="77c90-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="77c90-115">Application</span></span>                            | <span data-ttu-id="77c90-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="77c90-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5db6b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5db6b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="77c90-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="77c90-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,32 +38,32 @@ ms.locfileid: "42453342"
 POST /servicePrincipals/{id}/removePassword
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5db6b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5db6b-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="77c90-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="77c90-118">Request headers</span></span>
 
-| <span data-ttu-id="5db6b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="5db6b-119">Name</span></span>           | <span data-ttu-id="5db6b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="5db6b-120">Description</span></span>                |
+| <span data-ttu-id="77c90-119">Nome</span><span class="sxs-lookup"><span data-stu-id="77c90-119">Name</span></span>           | <span data-ttu-id="77c90-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="77c90-120">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="5db6b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="5db6b-121">Authorization</span></span>  | <span data-ttu-id="5db6b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5db6b-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="5db6b-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="5db6b-124">Content-type</span></span>   | <span data-ttu-id="5db6b-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5db6b-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="77c90-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="77c90-121">Authorization</span></span>  | <span data-ttu-id="77c90-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="77c90-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="77c90-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="77c90-124">Content-type</span></span>   | <span data-ttu-id="77c90-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="77c90-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5db6b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5db6b-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="77c90-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="77c90-127">Request body</span></span>
 
-| <span data-ttu-id="5db6b-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5db6b-128">Property</span></span>     | <span data-ttu-id="5db6b-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="5db6b-129">Type</span></span>   |<span data-ttu-id="5db6b-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="5db6b-130">Description</span></span>|
+| <span data-ttu-id="77c90-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="77c90-128">Property</span></span>     | <span data-ttu-id="77c90-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="77c90-129">Type</span></span>   |<span data-ttu-id="77c90-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="77c90-130">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5db6b-131">keyId</span><span class="sxs-lookup"><span data-stu-id="5db6b-131">keyId</span></span> | <span data-ttu-id="5db6b-132">GUID</span><span class="sxs-lookup"><span data-stu-id="5db6b-132">GUID</span></span> | <span data-ttu-id="5db6b-133">O identificador exclusivo da senha.</span><span class="sxs-lookup"><span data-stu-id="5db6b-133">The unique identifier for the password.</span></span> <span data-ttu-id="5db6b-134">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5db6b-134">Required.</span></span> |
+| <span data-ttu-id="77c90-131">keyId</span><span class="sxs-lookup"><span data-stu-id="77c90-131">keyId</span></span> | <span data-ttu-id="77c90-132">GUID</span><span class="sxs-lookup"><span data-stu-id="77c90-132">GUID</span></span> | <span data-ttu-id="77c90-133">O identificador exclusivo da senha.</span><span class="sxs-lookup"><span data-stu-id="77c90-133">The unique identifier for the password.</span></span> <span data-ttu-id="77c90-134">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="77c90-134">Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="5db6b-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="5db6b-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="77c90-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="77c90-135">Response</span></span>
 
-<span data-ttu-id="5db6b-136">Se tiver êxito, este método retornará um código de resposta `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="5db6b-136">If successful, this method returns a `204 No content` response code.</span></span>
+<span data-ttu-id="77c90-136">Se tiver êxito, este método retornará um código de resposta `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="77c90-136">If successful, this method returns a `204 No content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5db6b-137">Exemplos</span><span class="sxs-lookup"><span data-stu-id="5db6b-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="77c90-137">Exemplos</span><span class="sxs-lookup"><span data-stu-id="77c90-137">Examples</span></span>
 
-<span data-ttu-id="5db6b-138">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="5db6b-138">The following example shows how to call this API.</span></span>
+<span data-ttu-id="77c90-138">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="77c90-138">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="5db6b-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5db6b-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="77c90-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="77c90-139">Request</span></span>
 
-<span data-ttu-id="5db6b-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5db6b-140">The following is an example of the request.</span></span>
+<span data-ttu-id="77c90-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="77c90-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5db6b-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="5db6b-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="77c90-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="77c90-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipal_removepassword"
@@ -77,16 +77,16 @@ Content-type: application/json
     "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="5db6b-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5db6b-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="77c90-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="77c90-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-removepassword-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5db6b-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="5db6b-143">Response</span></span>
+### <a name="response"></a><span data-ttu-id="77c90-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="77c90-143">Response</span></span>
 
-<span data-ttu-id="5db6b-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5db6b-144">The following is an example of the response.</span></span>
+<span data-ttu-id="77c90-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="77c90-144">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

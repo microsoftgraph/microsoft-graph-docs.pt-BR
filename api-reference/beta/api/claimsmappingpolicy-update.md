@@ -2,35 +2,35 @@
 title: Atualizar claimsmappingpolicy
 description: Atualize as propriedades do objeto claimsMappingPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b990ad66ab78f0b60547bdb0f13fa2db5fb187b8
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: cfc04c7455d254978f1cd0b8bc56c94bf7e03655
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589675"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217961"
 ---
-# <a name="update-claimsmappingpolicy"></a><span data-ttu-id="56175-103">Atualizar claimsmappingpolicy</span><span class="sxs-lookup"><span data-stu-id="56175-103">Update claimsmappingpolicy</span></span>
+# <a name="update-claimsmappingpolicy"></a><span data-ttu-id="8e8af-103">Atualizar claimsmappingpolicy</span><span class="sxs-lookup"><span data-stu-id="8e8af-103">Update claimsmappingpolicy</span></span>
 
-<span data-ttu-id="56175-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="56175-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8e8af-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8e8af-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="56175-105">Atualiza as propriedades de um objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="56175-105">Update the properties of a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.</span></span>
+<span data-ttu-id="8e8af-105">Atualiza as propriedades de um objeto [claimsMappingPolicy](../resources/claimsmappingpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="8e8af-105">Update the properties of a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="56175-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="56175-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8e8af-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8e8af-106">Permissions</span></span>
 
-<span data-ttu-id="56175-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56175-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8e8af-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8e8af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="56175-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="56175-109">Permission type</span></span>                        | <span data-ttu-id="56175-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="56175-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="8e8af-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8e8af-109">Permission type</span></span>                        | <span data-ttu-id="8e8af-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8e8af-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="56175-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="56175-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="56175-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="56175-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="56175-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="56175-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56175-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="56175-114">Not supported.</span></span> |
-| <span data-ttu-id="56175-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="56175-115">Application</span></span>                            | <span data-ttu-id="56175-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="56175-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="8e8af-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8e8af-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8e8af-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="8e8af-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="8e8af-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8e8af-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e8af-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8e8af-114">Not supported.</span></span> |
+| <span data-ttu-id="8e8af-115">Application</span><span class="sxs-lookup"><span data-stu-id="8e8af-115">Application</span></span>                            | <span data-ttu-id="8e8af-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="8e8af-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="56175-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="56175-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8e8af-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8e8af-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,35 +38,35 @@ ms.locfileid: "42589675"
 PATCH /policies/claimsMappingPolicies/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="56175-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="56175-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8e8af-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8e8af-118">Request headers</span></span>
 
-| <span data-ttu-id="56175-119">Nome</span><span class="sxs-lookup"><span data-stu-id="56175-119">Name</span></span>       | <span data-ttu-id="56175-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="56175-120">Description</span></span>|
+| <span data-ttu-id="8e8af-119">Nome</span><span class="sxs-lookup"><span data-stu-id="8e8af-119">Name</span></span>       | <span data-ttu-id="8e8af-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="8e8af-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="56175-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="56175-121">Authorization</span></span> | <span data-ttu-id="56175-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="56175-122">Bearer {token}</span></span> |
-| <span data-ttu-id="56175-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="56175-123">Content-type</span></span> | <span data-ttu-id="56175-124">application/json</span><span class="sxs-lookup"><span data-stu-id="56175-124">application/json</span></span> |
+| <span data-ttu-id="8e8af-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="8e8af-121">Authorization</span></span> | <span data-ttu-id="8e8af-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="8e8af-122">Bearer {token}</span></span> |
+| <span data-ttu-id="8e8af-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="8e8af-123">Content-type</span></span> | <span data-ttu-id="8e8af-124">application/json</span><span class="sxs-lookup"><span data-stu-id="8e8af-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="56175-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="56175-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8e8af-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8e8af-125">Request body</span></span>
 
-<span data-ttu-id="56175-126">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="56175-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="56175-127">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="56175-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="56175-128">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="56175-128">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="8e8af-126">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="8e8af-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="8e8af-127">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="8e8af-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8e8af-128">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="8e8af-128">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="56175-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="56175-129">Property</span></span>     | <span data-ttu-id="56175-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="56175-130">Type</span></span>        | <span data-ttu-id="56175-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="56175-131">Description</span></span> |
+| <span data-ttu-id="8e8af-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8e8af-129">Property</span></span>     | <span data-ttu-id="8e8af-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="8e8af-130">Type</span></span>        | <span data-ttu-id="8e8af-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="8e8af-131">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="56175-132">definir</span><span class="sxs-lookup"><span data-stu-id="56175-132">definition</span></span>|<span data-ttu-id="56175-133">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="56175-133">String collection</span></span>| <span data-ttu-id="56175-134">Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política.</span><span class="sxs-lookup"><span data-stu-id="56175-134">A string collection containing a JSON string that defines the rules and settings for this policy.</span></span>  <span data-ttu-id="56175-135">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="56175-135">Required.</span></span>|
-|<span data-ttu-id="56175-136">description</span><span class="sxs-lookup"><span data-stu-id="56175-136">description</span></span>|<span data-ttu-id="56175-137">String</span><span class="sxs-lookup"><span data-stu-id="56175-137">String</span></span>| <span data-ttu-id="56175-138">Descrição da política.</span><span class="sxs-lookup"><span data-stu-id="56175-138">Description for this policy.</span></span>|
-|<span data-ttu-id="56175-139">displayName</span><span class="sxs-lookup"><span data-stu-id="56175-139">displayName</span></span>|<span data-ttu-id="56175-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="56175-140">String</span></span>| <span data-ttu-id="56175-141">Nome para exibição dessa política.</span><span class="sxs-lookup"><span data-stu-id="56175-141">Display name for this policy.</span></span> <span data-ttu-id="56175-142">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="56175-142">Required.</span></span>|
-|<span data-ttu-id="56175-143">isOrganizationDefault</span><span class="sxs-lookup"><span data-stu-id="56175-143">isOrganizationDefault</span></span>|<span data-ttu-id="56175-144">Booliano</span><span class="sxs-lookup"><span data-stu-id="56175-144">Boolean</span></span>|<span data-ttu-id="56175-145">Se definido como true, ativa esta política.</span><span class="sxs-lookup"><span data-stu-id="56175-145">If set to true, activates this policy.</span></span> <span data-ttu-id="56175-146">Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão.</span><span class="sxs-lookup"><span data-stu-id="56175-146">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="56175-147">Opcional, o valor padrão é false.</span><span class="sxs-lookup"><span data-stu-id="56175-147">Optional, default value is false.</span></span>|
+|<span data-ttu-id="8e8af-132">definir</span><span class="sxs-lookup"><span data-stu-id="8e8af-132">definition</span></span>|<span data-ttu-id="8e8af-133">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="8e8af-133">String collection</span></span>| <span data-ttu-id="8e8af-134">Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política.</span><span class="sxs-lookup"><span data-stu-id="8e8af-134">A string collection containing a JSON string that defines the rules and settings for this policy.</span></span>  <span data-ttu-id="8e8af-135">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8e8af-135">Required.</span></span>|
+|<span data-ttu-id="8e8af-136">description</span><span class="sxs-lookup"><span data-stu-id="8e8af-136">description</span></span>|<span data-ttu-id="8e8af-137">String</span><span class="sxs-lookup"><span data-stu-id="8e8af-137">String</span></span>| <span data-ttu-id="8e8af-138">Descrição da política.</span><span class="sxs-lookup"><span data-stu-id="8e8af-138">Description for this policy.</span></span>|
+|<span data-ttu-id="8e8af-139">displayName</span><span class="sxs-lookup"><span data-stu-id="8e8af-139">displayName</span></span>|<span data-ttu-id="8e8af-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8e8af-140">String</span></span>| <span data-ttu-id="8e8af-141">Nome para exibição dessa política.</span><span class="sxs-lookup"><span data-stu-id="8e8af-141">Display name for this policy.</span></span> <span data-ttu-id="8e8af-142">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8e8af-142">Required.</span></span>|
+|<span data-ttu-id="8e8af-143">isOrganizationDefault</span><span class="sxs-lookup"><span data-stu-id="8e8af-143">isOrganizationDefault</span></span>|<span data-ttu-id="8e8af-144">Boolean</span><span class="sxs-lookup"><span data-stu-id="8e8af-144">Boolean</span></span>|<span data-ttu-id="8e8af-145">Se definido como true, ativa esta política.</span><span class="sxs-lookup"><span data-stu-id="8e8af-145">If set to true, activates this policy.</span></span> <span data-ttu-id="8e8af-146">Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão.</span><span class="sxs-lookup"><span data-stu-id="8e8af-146">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="8e8af-147">Opcional, o valor padrão é false.</span><span class="sxs-lookup"><span data-stu-id="8e8af-147">Optional, default value is false.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="56175-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="56175-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8e8af-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e8af-148">Response</span></span>
 
-<span data-ttu-id="56175-p106">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56175-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="8e8af-p106">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8e8af-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="56175-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="56175-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8e8af-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8e8af-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="56175-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56175-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8e8af-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8e8af-152">Request</span></span>
 
-<span data-ttu-id="56175-153">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="56175-153">The following is an example of the request.</span></span>
+<span data-ttu-id="8e8af-153">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8e8af-153">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="56175-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="56175-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8e8af-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="8e8af-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_claimsmappingpolicy"
@@ -85,26 +85,26 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="56175-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56175-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8e8af-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8e8af-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-claimsmappingpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="56175-156">C#</span><span class="sxs-lookup"><span data-stu-id="56175-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8e8af-156">C#</span><span class="sxs-lookup"><span data-stu-id="8e8af-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-claimsmappingpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="56175-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56175-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8e8af-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8e8af-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-claimsmappingpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="56175-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="56175-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8e8af-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e8af-158">Response</span></span>
 
-<span data-ttu-id="56175-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="56175-159">The following is an example of the response.</span></span>
+<span data-ttu-id="8e8af-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8e8af-159">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="56175-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56175-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="8e8af-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8e8af-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

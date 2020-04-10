@@ -3,32 +3,32 @@ title: tipo de recurso stringKeyAttributeMappingSourceValuePair
 description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é attributeMappingSource.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f28b58b5f6bdadf33412a125a841d1c614285557
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88dd652e12a8ba7d5d866e2817685e0ad3a732eb
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520104"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217574"
 ---
-# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="49301-103">tipo de recurso stringKeyAttributeMappingSourceValuePair</span><span class="sxs-lookup"><span data-stu-id="49301-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
+# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="33cce-103">tipo de recurso stringKeyAttributeMappingSourceValuePair</span><span class="sxs-lookup"><span data-stu-id="33cce-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
 
-<span data-ttu-id="49301-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="49301-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="33cce-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="33cce-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="49301-105">Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é [attributeMappingSource](synchronization-attributemappingsource.md).</span><span class="sxs-lookup"><span data-stu-id="49301-105">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
+<span data-ttu-id="33cce-105">Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é [attributeMappingSource](synchronization-attributemappingsource.md).</span><span class="sxs-lookup"><span data-stu-id="33cce-105">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="49301-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="49301-106">Properties</span></span>
-| <span data-ttu-id="49301-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="49301-107">Property</span></span>     | <span data-ttu-id="49301-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="49301-108">Type</span></span>   |<span data-ttu-id="49301-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="49301-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="33cce-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="33cce-106">Properties</span></span>
+| <span data-ttu-id="33cce-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="33cce-107">Property</span></span>     | <span data-ttu-id="33cce-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="33cce-108">Type</span></span>   |<span data-ttu-id="33cce-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="33cce-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="49301-110">key</span><span class="sxs-lookup"><span data-stu-id="49301-110">key</span></span>|<span data-ttu-id="49301-111">String</span><span class="sxs-lookup"><span data-stu-id="49301-111">String</span></span>|<span data-ttu-id="49301-112">O nome do parâmetro.</span><span class="sxs-lookup"><span data-stu-id="49301-112">The name of the parameter.</span></span>|
-|<span data-ttu-id="49301-113">valor</span><span class="sxs-lookup"><span data-stu-id="49301-113">value</span></span>|[<span data-ttu-id="49301-114">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="49301-114">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="49301-115">O valor do parâmetro.</span><span class="sxs-lookup"><span data-stu-id="49301-115">The value of the parameter.</span></span>|
+|<span data-ttu-id="33cce-110">key</span><span class="sxs-lookup"><span data-stu-id="33cce-110">key</span></span>|<span data-ttu-id="33cce-111">Cadeia de Caracteres</span><span class="sxs-lookup"><span data-stu-id="33cce-111">String</span></span>|<span data-ttu-id="33cce-112">O nome do parâmetro.</span><span class="sxs-lookup"><span data-stu-id="33cce-112">The name of the parameter.</span></span>|
+|<span data-ttu-id="33cce-113">valor</span><span class="sxs-lookup"><span data-stu-id="33cce-113">value</span></span>|[<span data-ttu-id="33cce-114">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="33cce-114">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="33cce-115">O valor do parâmetro.</span><span class="sxs-lookup"><span data-stu-id="33cce-115">The value of the parameter.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="49301-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="49301-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="33cce-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="33cce-116">JSON representation</span></span>
 
-<span data-ttu-id="49301-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="49301-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="33cce-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="33cce-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

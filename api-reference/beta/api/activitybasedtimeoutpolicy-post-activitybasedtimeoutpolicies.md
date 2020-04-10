@@ -2,35 +2,35 @@
 title: Criar activityBasedTimeoutPolicy
 description: Criar um novo activityBasedTimeoutPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b71cb4ef50d8942aa002221ad7369c74c2417308
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: a862e485be19f432ee3a2abc8519639444e9f169
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589933"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217936"
 ---
-# <a name="create-activitybasedtimeoutpolicy"></a><span data-ttu-id="798dc-103">Criar activityBasedTimeoutPolicy</span><span class="sxs-lookup"><span data-stu-id="798dc-103">Create activityBasedTimeoutPolicy</span></span>
+# <a name="create-activitybasedtimeoutpolicy"></a><span data-ttu-id="8169c-103">Criar activityBasedTimeoutPolicy</span><span class="sxs-lookup"><span data-stu-id="8169c-103">Create activityBasedTimeoutPolicy</span></span>
 
-<span data-ttu-id="798dc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="798dc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8169c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8169c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="798dc-105">Criar um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="798dc-105">Create a new [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
+<span data-ttu-id="8169c-105">Criar um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="8169c-105">Create a new [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="798dc-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="798dc-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8169c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8169c-106">Permissions</span></span>
 
-<span data-ttu-id="798dc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="798dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8169c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8169c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="798dc-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="798dc-109">Permission type</span></span>                        | <span data-ttu-id="798dc-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="798dc-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="8169c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8169c-109">Permission type</span></span>                        | <span data-ttu-id="8169c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8169c-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="798dc-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="798dc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="798dc-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="798dc-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
-| <span data-ttu-id="798dc-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="798dc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="798dc-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="798dc-114">Not supported.</span></span> |
-| <span data-ttu-id="798dc-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="798dc-115">Application</span></span>                            | <span data-ttu-id="798dc-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="798dc-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="8169c-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8169c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8169c-112">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="8169c-112">Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="8169c-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8169c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8169c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8169c-114">Not supported.</span></span> |
+| <span data-ttu-id="8169c-115">Application</span><span class="sxs-lookup"><span data-stu-id="8169c-115">Application</span></span>                            | <span data-ttu-id="8169c-116">Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="8169c-116">Policy.ReadWrite.ApplicationConfiguration</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="798dc-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="798dc-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8169c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8169c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,28 +38,28 @@ ms.locfileid: "42589933"
 POST policies/activityBasedTimeoutPolicies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="798dc-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="798dc-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8169c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8169c-118">Request headers</span></span>
 
-| <span data-ttu-id="798dc-119">Nome</span><span class="sxs-lookup"><span data-stu-id="798dc-119">Name</span></span>          | <span data-ttu-id="798dc-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="798dc-120">Description</span></span>   |
+| <span data-ttu-id="8169c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="8169c-119">Name</span></span>          | <span data-ttu-id="8169c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="8169c-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="798dc-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="798dc-121">Authorization</span></span> | <span data-ttu-id="798dc-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="798dc-122">Bearer {token}</span></span> |
-| <span data-ttu-id="798dc-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="798dc-123">Content-type</span></span> | <span data-ttu-id="798dc-124">application/json</span><span class="sxs-lookup"><span data-stu-id="798dc-124">application/json</span></span> |
+| <span data-ttu-id="8169c-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="8169c-121">Authorization</span></span> | <span data-ttu-id="8169c-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="8169c-122">Bearer {token}</span></span> |
+| <span data-ttu-id="8169c-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="8169c-123">Content-type</span></span> | <span data-ttu-id="8169c-124">application/json</span><span class="sxs-lookup"><span data-stu-id="8169c-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="798dc-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="798dc-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8169c-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8169c-125">Request body</span></span>
 
-<span data-ttu-id="798dc-126">No corpo da solicitação, forneça uma representação JSON do objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="798dc-126">In the request body, supply a JSON representation of [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
+<span data-ttu-id="8169c-126">No corpo da solicitação, forneça uma representação JSON do objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="8169c-126">In the request body, supply a JSON representation of [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="798dc-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="798dc-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8169c-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="8169c-127">Response</span></span>
 
-<span data-ttu-id="798dc-128">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="798dc-128">If successful, this method returns a `201 Created` response code and a new [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="8169c-128">Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8169c-128">If successful, this method returns a `201 Created` response code and a new [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="798dc-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="798dc-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="8169c-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="8169c-129">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="798dc-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="798dc-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="8169c-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8169c-130">Request</span></span>
 
-<span data-ttu-id="798dc-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="798dc-131">The following is an example of the request.</span></span>
+<span data-ttu-id="8169c-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8169c-131">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="798dc-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="798dc-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8169c-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="8169c-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_activitybasedtimeoutpolicy_from_activitybasedtimeoutpolicies"
@@ -77,26 +77,26 @@ Content-type: application/json
   "isOrganizationDefault": true
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="798dc-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="798dc-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8169c-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8169c-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="798dc-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="798dc-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8169c-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8169c-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="798dc-135">C#</span><span class="sxs-lookup"><span data-stu-id="798dc-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8169c-135">C#</span><span class="sxs-lookup"><span data-stu-id="8169c-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="798dc-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="798dc-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8169c-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="8169c-136">Response</span></span>
 
-<span data-ttu-id="798dc-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="798dc-137">The following is an example of the response.</span></span>
+<span data-ttu-id="8169c-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8169c-137">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="798dc-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="798dc-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="8169c-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8169c-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
