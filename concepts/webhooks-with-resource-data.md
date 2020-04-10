@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 0056b1fced746f335a840e9b9473152718a30093
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 41cf03e94bef399142135c899d812820651338b7
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42816164"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200212"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>Configurar notificações de alteração que incluam dados de recursos (visualização)
 
@@ -91,7 +91,6 @@ Content-Type: application/json
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
-  "encryptionCertificateThumbprint": "{thumbprint from the certificate}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secret client state}"
 }

@@ -3,12 +3,12 @@ title: 'Kit de ferramentas do Microsoft Graph: Web Components da plataforma Micr
 description: O kit de ferramentas do Microsoft Graph é uma coleção de resuable, componentes da Web e auxiliares de estrutura independente para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 348e08212010f66fdde5ee3b752fe901699fbaa9
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 2ba11a66dcec1eaec276b3fe71427fcf356cbcde
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639546"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181613"
 ---
 # <a name="microsoft-graph-toolkit-web-components-powered-by-microsoft-graph"></a>Kit de ferramentas do Microsoft Graph: Web Components da plataforma Microsoft Graph
 
@@ -36,6 +36,7 @@ O kit de ferramentas do Microsoft Graph inclui uma coleção de componentes Web 
 |[Seletor de pessoas](./components/people-picker.md)|Fornece a capacidade de Pesquisar pessoas e renderizar a lista de resultados.|
 |[Cartão de pessoa](./components/person-card.md)|Um submenu usado no componente Person para exibir mais informações de perfil sobre um usuário.|
 |[Get](./components/get.md)|Faça uma consulta GET para qualquer API do Microsoft Graph diretamente no HTML.|
+|[Seletor de canal](./components/teams-channel-picker.md)|Fornece a capacidade de Pesquisar os canais do Microsoft Teams para selecionar um canal de uma lista de resultados renderizada.|
 
 ### <a name="providers"></a>Provedores
 

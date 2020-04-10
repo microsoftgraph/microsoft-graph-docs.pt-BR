@@ -4,12 +4,12 @@ description: 'A Microsoft oferece soluções e serviços que ampliam a vida mode
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f20db2c626c7af2f042cf4916d2be37dda4b184
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: 779dae27aa75537250d7a992924e8c16a9675e33
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951233"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199967"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Usuários que você pode alcançar com o Microsoft Graph
 
@@ -25,17 +25,18 @@ Use o Microsoft Graph para alcançar usuários com contas pessoais da Microsoft,
 
 Use o Microsoft Graph para alcançar usuários e organizações que têm licenças para os serviços do Microsoft 365 para negócios, empresas ou educação. Esses serviços do Microsoft 365 incluem:
 
--   Office 365
--   Enterprise Mobility + Security
--   Windows 10
+- Office 365
+- Enterprise Mobility + Security
+- Windows 10
 
 Com o consentimento deles, você pode usar o Microsoft Graph para obter acesso aos dados de usuários e organizacionais de acordo com os serviços para os quais eles têm licenças e os serviços e recursos disponíveis no Microsoft Graph. Para saber mais, veja os [principais serviços e recursos do Microsoft Graph](overview-major-services.md).
 
 ### <a name="worldwide-multigeo-and-national-clouds"></a>Nuvens nacionais, mundiais e multigeográficas
+
 Os serviços do Microsoft Graph fazem parte da nuvem mundial da Microsoft. Além disso, a Microsoft oferece:
 
--   Recursos multigeográficos para organizações multinacionais com diversas regiões geográficas e/ou países em seu locatário existente.
--   Implantações de nuvem nacional para o governo dos EUA e Alemanha, além do Azure e Office 365 operados pela 21Vianet na China.
+- Recursos multigeográficos para organizações multinacionais com diversas regiões geográficas e/ou países em seu locatário existente.
+- Implantações de nuvem nacional para o governo dos EUA e Alemanha, além do Azure e Office 365 operados pela 21Vianet na China.
 
 Com o consentimento deles, você poderá usar o Microsoft Graph para alcançar usuários e organizações cujos serviços estejam na nuvem mundial, incluindo as organizações com serviços multigeográficos. Além disso, você também poderá usar o Microsoft Graph para acessar usuários e organizações em instalações de nuvem nacional, mas são necessárias considerações especiais quanto à soberania de nuvem. Para saber mais, veja as [implantações de nuvem nacional](deployments.md).
 
