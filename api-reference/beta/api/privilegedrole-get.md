@@ -3,18 +3,18 @@ title: Get privilegedRole
 description: 'Recupere as propriedades e os relacionamentos do objeto privilegedRole. '
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 36d9fa5a4e5d85f6617f223523770fe1e25698b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: efaa5ae2fbf0f2a9089352a97285780f38c1b713
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455373"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218767"
 ---
 # <a name="get-privilegedrole"></a>Get privilegedRole
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,18 +3,18 @@ title: Get privilegedRoleAssignment
 description: Recupere as propriedades e os relacionamentos do objeto privilegedRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 2aa140c1085b24a33df7aba3ab2aa7cf6907610a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: d34126379b2461107877d70da9719a3e5f3205d3
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455337"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218728"
 ---
 # <a name="get-privilegedroleassignment"></a>Get privilegedRoleAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

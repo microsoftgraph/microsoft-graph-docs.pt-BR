@@ -2,15 +2,15 @@
 title: Obter homeRealmDiscoveryPolicy
 description: Recupere as propriedades e os relacionamentos do objeto homeRealmDiscoveryPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e10d7c6b53e794738f06e7a812c72946d4566a12
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 03ac68f90a9d595bf701e5901dc4656317793bfb
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562665"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218538"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>Obter homeRealmDiscoveryPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
+| Delegada (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

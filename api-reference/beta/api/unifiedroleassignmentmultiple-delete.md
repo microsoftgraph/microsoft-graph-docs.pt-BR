@@ -2,15 +2,15 @@
 title: Excluir unifiedRoleAssignmentMultiple
 description: Excluir um objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b494d14f4f2c2a37ea4b03cdbffb1dc12569c6e1
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: f4df58deab010d6cb7b5374210ebde1aad2eb6d2
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181431"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218980"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>Excluir unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

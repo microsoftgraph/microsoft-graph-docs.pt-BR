@@ -3,18 +3,18 @@ title: tipo de recurso governanceRoleDefinition
 description: Representa as definições de função. Para os recursos do Azure, ele pode representar as funções do Azure RBAC, como proprietário, leitor, colaborador, etc.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 985e674c0e8e79f7b929097dd5c61dfa15917a93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: b6ff2edcfd1725b31051d1fc73c04539acf73e56
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497388"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217922"
 ---
 # <a name="governanceroledefinition-resource-type"></a>tipo de recurso governanceRoleDefinition
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` tem suporte no `roleDefinitions` conjunto 
 |resourceId |String     |Obrigatório. A ID do recurso associada à definição de função. |
 |externalId   |Cadeia de caracteres     |A ID externa da definição de função.|
 |displayName|Cadeia de caracteres     |O nome de exibição da definição de função.|
-|templateId | String | |
+|templateId | Cadeia de Caracteres | |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

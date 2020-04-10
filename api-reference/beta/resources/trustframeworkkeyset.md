@@ -2,19 +2,19 @@
 title: tipo de recurso trustFrameworkKeySet
 description: Representa um conjunto de chaves/diretivas de política de confiança.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2620a7aca90e8a8ae27880343914dfcbbabe27d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0784bffd1682f59e94d728c2311ffaaa01681c5
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519642"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218048"
 ---
 # <a name="trustframeworkkeyset-resource-type"></a>tipo de recurso trustFrameworkKeySet
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

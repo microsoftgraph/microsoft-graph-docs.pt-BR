@@ -3,14 +3,14 @@ title: Obter Entidadegovernanceresource
 description: Recupere as propriedades e os relacionamentos de um objeto Entidadegovernanceresource.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 235b4cdfffd5573af5a5470ee5687e4a17ec42c6
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: cc9eb38838ce4dbbd06888cb4b5d004e7ee6e150
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639874"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218924"
 ---
 # <a name="get-governanceresource"></a>Obter Entidadegovernanceresource
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. Read. AzureResources |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 

@@ -3,18 +3,18 @@ title: tipo de recurso attributeMappingFunctionSchema
 description: Descreve uma função que pode ser usada em um mapeamento de atributo para transformar valores durante a sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 195f8e11737d2f9ae48675cdb7a7046869090e19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 16dae5dca65b3d238c2d12fddc2b474e7e03ac0d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520244"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219176"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>tipo de recurso attributeMappingFunctionSchema
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

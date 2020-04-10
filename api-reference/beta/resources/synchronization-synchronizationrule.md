@@ -1,24 +1,24 @@
 ---
 title: tipo de recurso synchronizationRule
-description: Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos sincronizar e em que direção, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformada quando estiverem sincronizadas da origem para o diretório de destino.
+description: Define como a sincronização deve ser executada para o mecanismo de sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b1d8afd1f87527a5a92755ff45ec876c8d66d9c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0698afb7e3584aa1d4cd6697504138f6262e5141
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520048"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217364"
 ---
 # <a name="synchronizationrule-resource-type"></a>tipo de recurso synchronizationRule
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos sincronizar e em que direção, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformada quando estiverem sincronizadas da origem para o diretório de destino.
+Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos sincronizar e em que direção, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos devem ser transformados quando forem sincronizados da origem para o diretório de destino.
 
 >**Observação:** As regras de sincronização definem a sincronização em uma direção – do diretório de origem para o diretório de destino. Os diretórios de origem e de destino são definidos como parte das propriedades da regra.
 
@@ -34,8 +34,8 @@ As regras de sincronização são atualizadas como parte do [esquema de sincroni
 |nome           |String     |Nome legível da regra de sincronização. Não anulável.|
 |objectmappings |coleção [Objectmapping](synchronization-objectmapping.md)    |Conjunto de mapeamentos de objeto com suporte da regra. Informa ao mecanismo de sincronização quais objetos devem ser sincronizados.|
 |prioridade       |Inteiro    |Prioridade relativa a outras regras no [synchronizationSchema](synchronization-synchronizationschema.md). As regras com o número de prioridade mais baixa serão processadas primeiro.|
-|sourceDirectoryName       |String    |Nome do diretório de origem. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
-|targetDirectoryName       |String    |Nome do diretório de destino. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
+|sourceDirectoryName       |Cadeia de Caracteres    |Nome do diretório de origem. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
+|targetDirectoryName       |Cadeia de Caracteres    |Nome do diretório de destino. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -2,19 +2,19 @@
 title: Tipo de recurso userflow
 description: Os fluxos de usuário de identidade são viagens de autenticação integradas
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d4fa3064d19d96a2a8297f72de6a625ee36c8db3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d14722844c6449a585ca023df80fccb4e9d7c90b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496548"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218454"
 ---
 # <a name="userflow-resource-type"></a>Tipo de recurso userflow
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

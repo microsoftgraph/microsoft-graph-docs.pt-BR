@@ -3,18 +3,18 @@ title: Get privilegedRoleSummary
 description: Recupere as propriedades e os relacionamentos do objeto privilegedRoleSummary.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 56f7678231c4aacaf941667364facf0b863632e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 3a0bb4df38d4e0d56101a6254e3be472532e4b69
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455242"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218644"
 ---
 # <a name="get-privilegedrolesummary"></a>Get privilegedRoleSummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

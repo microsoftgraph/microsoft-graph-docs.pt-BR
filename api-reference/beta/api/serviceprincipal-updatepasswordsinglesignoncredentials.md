@@ -2,19 +2,19 @@
 title: 'servicePrincipalName: updatePasswordSingleSignOnCredentials'
 description: Atualize as credenciais de logon único usando uma senha de um usuário ou grupo.
 localization_priority: Normal
-author: bharathramh92
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7b64d948a59fa52b193d787c850cdab86d34275b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab8a6d256c3f90dbaaa7197f87dec4fd230c73d0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453314"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218588"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipalName: updatePasswordSingleSignOnCredentials
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All (também precisa Directory. Read. All), Directory. AccessAsUser. All, Directory. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Application. ReadWrite. All (também precisa Directory. Read. All), Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | Application. ReadWrite. All (também precisa Directory. Read. All), Directory. AccessAsUser. All, Directory. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | Application. ReadWrite. All (também precisa Directory. Read. All), Directory. ReadWrite. All |
 
 > [!NOTE]
 > Os usuários podem criar credenciais para si mesmos. Os proprietários e administradores da entidade de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, confira [funções de diretório](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).

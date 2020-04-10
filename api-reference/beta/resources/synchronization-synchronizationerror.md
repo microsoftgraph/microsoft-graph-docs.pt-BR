@@ -3,18 +3,18 @@ title: tipo de recurso synchronizationError
 description: Representa um erro que ocorreu durante o processo de sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a754b03379d1e40ba7310283a0efdd94ff30631
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 884c39273d8d474a228cd8f4a8f2b321950e8caf
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520076"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217546"
 ---
 # <a name="synchronizationerror-resource-type"></a>tipo de recurso synchronizationError
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Representa um erro que ocorreu durante o processo de sincronização.
 <!-- Add descriptions for the properties. -->
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|código|String||
+|código|Cadeia de Caracteres||
 |mensagem|String||
 |tenantActionable|Boolean||
 

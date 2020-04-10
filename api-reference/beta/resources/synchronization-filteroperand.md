@@ -3,18 +3,18 @@ title: tipo de recurso filterOperand
 description: Contém uma coleção de valores para o operando.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 26aab36386f8d3468555974e56ad91fcd55bc413
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c66ebc2ef5033b57c46bef0ebb831b4f2087a0b3
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520174"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218419"
 ---
 # <a name="filteroperand-resource-type"></a>tipo de recurso filterOperand
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Contém uma coleção de valores para o operando.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|values|String collection|Coleção de valores.|
+|values|Coleção de cadeias de caracteres|Coleção de valores.|
 
 ## <a name="json-representation"></a>Representação JSON
 

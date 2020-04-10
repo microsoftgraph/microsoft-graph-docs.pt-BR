@@ -3,18 +3,18 @@ title: tipo de recurso stringKeyAttributeMappingSourceValuePair
 description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é attributeMappingSource.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f28b58b5f6bdadf33412a125a841d1c614285557
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88dd652e12a8ba7d5d866e2817685e0ad3a732eb
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520104"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217574"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>tipo de recurso stringKeyAttributeMappingSourceValuePair
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|String|O nome do parâmetro.|
+|key|Cadeia de Caracteres|O nome do parâmetro.|
 |valor|[attributeMappingSource](synchronization-attributemappingsource.md)|O valor do parâmetro.|
 
 ## <a name="json-representation"></a>Representação JSON

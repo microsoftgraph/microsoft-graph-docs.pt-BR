@@ -3,18 +3,18 @@ title: 'servicePrincipalName: getMemberGroups'
 description: Obtenha a lista de grupos dos quais essa entidade de serviço é membro.  A verificação é transitiva.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 40fa4162a5aea180507c0cbc04bbe095de466f3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: d9fd21012f4fe799b18ab07b85683b46ec012c8e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453461"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219099"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipalName: getMemberGroups
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

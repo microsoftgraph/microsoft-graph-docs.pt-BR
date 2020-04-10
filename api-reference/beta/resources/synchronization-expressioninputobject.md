@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso expressionInputObject
-description: 'Representa um objeto a ser usado como dados de teste de entrada quando a ação [synchronizationSchema: ParseName](../api/synchronization_synchronizationschema_parseexpression.md) executa uma avaliação de expressão.'
+description: Representa um objeto a ser usado como dados de teste de entrada quando a ação synchronizationSchema ParseName executa uma avaliação de expressão.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 107dd80187f7b00439ec248be513d921bc64888e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0756e14f9a35e1ff1b5a63d563d4bca742be566d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520202"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218440"
 ---
 # <a name="expressioninputobject-resource-type"></a>tipo de recurso expressionInputObject
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

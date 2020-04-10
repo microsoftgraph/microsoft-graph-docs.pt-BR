@@ -2,17 +2,19 @@
 title: 'trustFrameworkKeySet: getActiveKey'
 description: Obtém a chave ativa no conjunto de chaves.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ea4e1e31812bdbdb7a8e6619280367a5ed873fc9
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: db234801ed4f4a1f1599d249d95f17b92a1f8afb
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937529"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215886"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
+| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +59,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um no
 
 Este é um exemplo de solicitação.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_getactivekey"
@@ -66,15 +68,15 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-getactivekey-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-getactivekey-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-getactivekey-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

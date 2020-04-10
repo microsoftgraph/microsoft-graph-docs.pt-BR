@@ -1,24 +1,24 @@
 ---
 title: Visão geral da API de sincronização do Azure AD
-description: ') permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow e muito mais. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:'
+description: Automatizar a criação, a manutenção e a remoção de identidades em aplicativos em nuvem.
 localization_priority: Normal
 doc_type: conceptualPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 62c127b632277a93312afd7682939049b1e9de68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e1abd5adc0a36f8ece4f33fde45a5c17280f4e2
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520139"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217609"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A sincronização de identidade do Azure Active Directory (Azure AD) (também chamada de "provisionamento") permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow, e muito mais. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:
+A sincronização de identidade do Azure Active Directory (Azure AD) (também chamada de "provisionamento") permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow e outros. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:
 
 - Criar, iniciar e interromper trabalhos de sincronização
 - Fazer alterações no esquema de sincronização para trabalhos

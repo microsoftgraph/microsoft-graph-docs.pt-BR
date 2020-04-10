@@ -2,15 +2,15 @@
 title: Obter tokenIssuancePolicy
 description: Recupere as propriedades e os relacionamentos do objeto tokenIssuancePolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b07e68f1b9519b35ea5578bff9fd1a7993078532
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 9c49e2c4f479431cbe78def584c8200b3b569d24
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591709"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219260"
 ---
 # <a name="get-tokenissuancepolicy"></a>Obter tokenIssuancePolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
+| Delegada (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

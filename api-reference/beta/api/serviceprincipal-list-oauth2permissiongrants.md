@@ -3,18 +3,18 @@ title: 'servicePrincipalName: listar oAuth2Permissiongrants'
 description: Recupere uma lista de objetos oAuth2Permissiongrant.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9391c0c8d311972a47b57e33d90b4592b275d407
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 089357ff1ba739815a03460bae4a0cdcd78c296d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453391"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219057"
 ---
 # <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipalName: listar oAuth2Permissiongrants
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

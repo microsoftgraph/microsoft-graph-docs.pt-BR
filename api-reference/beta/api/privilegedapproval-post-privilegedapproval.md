@@ -3,18 +3,18 @@ title: Create privilegedApproval
 description: Use esta API para criar um novo privilegedApproval.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 05b8b7011f281ef371a49f0544c478f6736a8c1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 08551b793212a54aafe1dc37fd965d695a77c962
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455428"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218791"
 ---
 # <a name="create-privilegedapproval"></a>Create privilegedApproval
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

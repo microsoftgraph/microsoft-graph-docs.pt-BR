@@ -3,18 +3,18 @@ title: 'servicePrincipalName: listar createdObjects'
 description: Recupere uma lista de objetos directoryobject.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 544b346df02244b5a5f519afa69bbba6f5d6339d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 74d23f1fb682cb0c0e06c9d1260d7c478bbdfa43
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453420"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219078"
 ---
 # <a name="serviceprincipal-list-createdobjects"></a>servicePrincipalName: listar createdObjects
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

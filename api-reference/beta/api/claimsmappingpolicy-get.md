@@ -2,15 +2,15 @@
 title: Obter claimsMappingPolicy
 description: Recupere as propriedades e os relacionamentos do objeto claimsMappingPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa3bcbdcd5c3d3d1732f3eb7c2de7c411a75bfd8
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: c8423830753a6b8c19334d53b210b1874d09256e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562686"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217978"
 ---
 # <a name="get-claimsmappingpolicy"></a>Obter claimsMappingPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
+| Delegada (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

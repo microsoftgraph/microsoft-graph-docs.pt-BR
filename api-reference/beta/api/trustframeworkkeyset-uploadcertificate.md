@@ -2,19 +2,19 @@
 title: 'trustFrameworkKeySet: uploadCertificate'
 description: Carregar um certificado em um conjunto de chaves.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: febe9f7c6e742a2d48d2242b9a447a778efa3246
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0342565ca8c7e652118c525a3c51c4700840d718
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452124"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215893"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | TrustFrameworkKeySet. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|key|String| Este é o campo para enviar conteúdo de certificado. O valor deve ser uma versão de codificação de base 64 do conteúdo de certificado real. |
+|key|Cadeia de Caracteres| Este é o campo para enviar conteúdo de certificado. O valor deve ser uma versão de codificação de base 64 do conteúdo de certificado real. |
 
 ## <a name="response"></a>Resposta
 

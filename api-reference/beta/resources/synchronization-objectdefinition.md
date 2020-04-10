@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso ObjectDefinition
-description: Descreve um objeto e seus atributos. As definições de objeto fazem parte do directoryDefinition, que é atualizado como parte do synchronizationSchema.
+description: Descreve um objeto e seus atributos.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9fd48c57ce036ef3fe101c31da8158f23f6a1430
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1879674ae9cafde385ef31a62807c61f2679391
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520153"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217623"
 ---
 # <a name="objectdefinition-resource-type"></a>tipo de recurso ObjectDefinition
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

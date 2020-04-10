@@ -2,15 +2,15 @@
 title: tipo de recurso unifiedRoleAssignmentMultiple
 description: Uma atribuição de função é o vínculo entre uma definição de função e uma entidade de segurança em um escopo específico para o propósito de conceder acesso.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c8c3f66f051a2ab9a9855f3b9ec5fab79e9f5b33
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 20e0d7a213ea6e46db9cf9774c46bda0070ecd27
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160322"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218027"
 ---
 # <a name="unifiedroleassignmentmultiple-resource-type"></a>tipo de recurso unifiedRoleAssignmentMultiple
 
@@ -29,7 +29,7 @@ Um unifiedRoleAssignmentMultiple é usado para conceder acesso aos recursos. Ele
 | [Obter unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-get.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Leia as propriedades e os relacionamentos do objeto unifiedRoleAssignmentMultiple. |
 | [Criar unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-post.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Crie um novo unifiedRoleAssignmentMultiple postando na coleção roleAssignment. |
 | [Atualizar unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-update.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Atualize um objeto unifiedRoleAssignmentMultiple existente. |
-| [Excluir unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-delete.md) | Nenhum | Exclua o objeto unifiedRoleAssignmentMultiple. |
+| [Excluir unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-delete.md) | None | Exclua o objeto unifiedRoleAssignmentMultiple. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -38,13 +38,13 @@ Um unifiedRoleAssignmentMultiple é usado para conceder acesso aos recursos. Ele
 | id | String | O identificador exclusivo para o unifiedRoleAssignmentMultiple. Chave, não anulável, somente leitura. |
 | displayName | Cadeia de caracteres | Nome da atribuição de função. |
 | description | String | Descrição da atribuição de função. |
-| roleDefinitionId | Cadeia de caracteres | ID do unifiedRoleDefinition para o qual a atribuição é. Somente leitura. |
+| roleDefinitionId | Cadeia de Caracteres | ID do unifiedRoleDefinition para o qual a atribuição é. Somente leitura. |
 | roleDefinition | [unifiedRoleDefinition](unifiedroledefinition.md) |Propriedade que indica o roleDefinition para o qual a atribuição é. Fornecido de modo que os chamadores possam obter a definição `$expand` de função usando ao mesmo tempo em que se obtém a atribuição de função. |
-| principalIds | Coleção String | ObjectIDs das entidades de segurança para as quais a atribuição é concedida. |
+| principalIds | Coleção de cadeias de caracteres | ObjectIDs das entidades de segurança para as quais a atribuição é concedida. |
 | entidades| Coleção [directoryObject](directoryobject.md) | Coleção somente leitura fazendo referência a entidades de segurança atribuídas. Desde que os chamadores possam obter as entidades usando `$expand` ao mesmo tempo em que se obtém a atribuição de função. Somente leitura. |
-| directoryScopeIds | Coleção String | IDs dos objetos de diretório que representam os escopos da atribuição. Os escopos de uma atribuição determinam o conjunto de recursos para o qual foram concedidos acesso a entidades de segurança. Escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos de aplicativo são escopos definidos e compreendidos por esse aplicativo apenas. |
+| directoryScopeIds | Coleção de cadeias de caracteres | IDs dos objetos de diretório que representam os escopos da atribuição. Os escopos de uma atribuição determinam o conjunto de recursos para o qual foram concedidos acesso a entidades de segurança. Escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Os escopos de aplicativo são escopos definidos e compreendidos por esse aplicativo apenas. |
 | directoryScopes | Coleção [directoryObject](directoryobject.md) | Coleção somente leitura fazendo referência aos objetos de diretório que são o escopo da atribuição. Desde que os chamadores possam obter os objetos de diretório `$expand` usando ao mesmo tempo que obter a atribuição de função. Somente leitura. |
-| appScopeIds | Coleção String | IDs dos escopos específicos do aplicativo quando os escopos de atribuição são específicos do aplicativo. Os escopos de uma atribuição determinam o conjunto de recursos para o qual a entidade de segurança recebeu acesso. Escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para escopo em todo o locatário. Os escopos de aplicativo são escopos definidos e compreendidos por esse aplicativo apenas. |
+| appScopeIds | Coleção de cadeias de caracteres | IDs dos escopos específicos do aplicativo quando os escopos de atribuição são específicos do aplicativo. Os escopos de uma atribuição determinam o conjunto de recursos para o qual a entidade de segurança recebeu acesso. Escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use "/" para escopo em todo o locatário. Os escopos de aplicativo são escopos definidos e compreendidos por esse aplicativo apenas. |
 | appScopes | coleção [appScope](appscope.md) |Coleção somente leitura com detalhes dos escopos específicos do aplicativo quando os escopos de atribuição são específicos do aplicativo. Entidade de confinamento. |
 
 ## <a name="relationships"></a>Relações

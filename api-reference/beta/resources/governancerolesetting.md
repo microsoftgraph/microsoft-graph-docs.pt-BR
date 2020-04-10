@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso governanceRoleSetting
-description: " regra e assim por diante."
+description: Representa um conjunto de configurações em cada definição de função que precisam ser avaliadas quando as atribuições de função são criadas ou modificadas.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9cf027969fb6ae988fd3e57da9d6c3002a4b4da9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 1f6bbd544e65bf5781b8ec77201980e5602bbf11
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497325"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217915"
 ---
 # <a name="governancerolesetting-resource-type"></a>tipo de recurso governanceRoleSetting
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

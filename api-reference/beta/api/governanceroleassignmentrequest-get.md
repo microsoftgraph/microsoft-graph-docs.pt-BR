@@ -3,14 +3,14 @@ title: Obter governanceRoleAssignmentRequest
 description: 'Obter um governanceRoleAssignmentRequest. '
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 1e659e5b3aefbd3995bd4e04b28b5de87d2f4fe4
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: f88ed34fb016f06015df067bd86a33f88ea52407
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639825"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218875"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Obter governanceRoleAssignmentRequest
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. Read. AzureResources |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, ele requer o solicitante 
 *   para ter pelo menos uma atribuição de função no recurso; ou

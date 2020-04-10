@@ -3,18 +3,18 @@ title: Listar privilegedRoles
 description: Recupere uma lista de objetos privilegedRole.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 4279005dc1fd8bbb9052b6eb57e5a5c485f03637
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: a5d8d6f35d21bcabd19b1888124e9533b22ae702
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455365"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218756"
 ---
 # <a name="list-privilegedroles"></a>Listar privilegedRoles
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

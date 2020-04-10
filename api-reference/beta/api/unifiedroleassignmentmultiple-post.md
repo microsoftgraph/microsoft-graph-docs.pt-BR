@@ -2,15 +2,15 @@
 title: Criar unifiedRoleAssignmentMultiple
 description: Criar um novo objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4238dc202068390095296b9532316cb18e6fd768
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 61cb184bfb08d90fba6fdcaa879d3b6c38d8e58e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160325"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218966"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Criar unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -61,6 +61,8 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 
 Este é um exemplo de solicitação. Observe o uso do **roleTemplateId** para **roleDefinitionId**. **roleDefinitionId** pode ser a ID de modelo de todo o serviço ou o **roleDefinitionId**específico do diretório.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentmultiple_from_rbacapplication"
@@ -77,6 +79,20 @@ Content-type: application/json
     "directoryScopeIds": ["28ca5a85-489a-49a0-b555-0a6d81e56f0d", "8152656a-cf9a-4928-a457-1512d4cae295"],
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-from-rbacapplication-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentmultiple-from-rbacapplication-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentmultiple-from-rbacapplication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -114,6 +130,8 @@ Use as informações a seguir para criar atribuições de função do Intune:
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentmultiple_intune_specific"
@@ -130,6 +148,20 @@ Content-type: application/json
     "appScopeIds": ["allDevices"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-intune-specific-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentmultiple-intune-specific-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentmultiple-intune-specific-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

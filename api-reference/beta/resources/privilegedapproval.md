@@ -3,18 +3,18 @@ title: tipo de recurso privilegedApproval
 description: Representa uma aprovação solicitada no gerenciamento de identidade privilegiado para obter uma função.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 1269e23b5cbb68c665aace8c2590150f687611cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: c4148e5740c9b31368be336a615524ced426a560
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521548"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219225"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso privilegedApproval
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,12 +36,12 @@ Representa uma aprovação solicitada no gerenciamento de identidade privilegiad
 |:---------------|:--------|:----------|
 |approvalDuration|Duração||
 |approvalstate|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvaltype|String||
-|approverReason|String||
+|approvaltype|Cadeia de Caracteres||
+|approverReason|Cadeia de Caracteres||
 |endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Cadeia de Caracteres||
+|roleId|Cadeia de Caracteres||
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |userId|Cadeia de caracteres||
 

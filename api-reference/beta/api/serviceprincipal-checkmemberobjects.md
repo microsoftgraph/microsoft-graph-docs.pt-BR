@@ -2,19 +2,19 @@
 title: 'servicePrincipalName: checkMemberObjects'
 description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de princípio de serviço especificado.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d3104709cd26eeea3d933faf1d62dfa2f3a5629b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec86d27838167c3a1663a2ce076d8e8b06e3eb76
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453531"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219330"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipalName: checkMemberObjects
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,18 +3,18 @@ title: tipo de recurso synchronizationProgress
 description: Representa o andamento de um synchronizationJob para a conclusão.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fb5fb9482a9b8523f1967928a4243a5b104f6a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c9a9ea8b5bd9d2a0fbfbcb1a64381b46e2f96283
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520055"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217399"
 ---
 # <a name="synchronizationprogress-resource-type"></a>tipo de recurso synchronizationProgress
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Representa o andamento de um [synchronizationJob](synchronization-synchronizatio
 |completedUnits|Int32|O numerador de uma taxa de progresso; o número de unidades de alterações já processadas.|
 |progressObservationDateTime|DateTimeOffset|O tempo de uma observação de progresso como um deslocamento em minutos do UTC.|
 |totalUnits|Int32|O denominador de uma taxa de progresso; várias unidades de alterações a serem processadas para realizar a sincronização.|
-|unid|String|Uma descrição opcional das unidades.|
+|unid|Cadeia de Caracteres|Uma descrição opcional das unidades.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

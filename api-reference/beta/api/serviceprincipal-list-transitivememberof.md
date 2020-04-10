@@ -3,18 +3,18 @@ title: Listar os memberOf transitivos de servicePrincipalName
 description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro. Essa operação é transitiva e inclui todos os grupos dos quais essa entidade de serviço é um membro aninhado.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ff520f6c30cc540545d379bc2ef2cd611bd2267d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 08abf0ba21404fe9d900784f3f54204af4ba750a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453419"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219036"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Listar os memberOf transitivos de servicePrincipalName
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

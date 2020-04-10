@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso de contrato
-description: Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso termos de uso do Azure Active Directory de acordo com seu cenário.
+description: Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD).
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9d45be38338554a1bf5181e4f7a3624b3d928127
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: raprakasMSFT
+ms.openlocfilehash: 6ac24e7a46441b59e621425517371db9227b4010
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508384"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218482"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 | [Listar contratos](../api/agreement-list.md) | coleção de [contratos](agreement.md) | Obtenha uma coleção de objetos de contrato. |
 | [Obter contrato](../api/agreement-get.md) | [contrato](agreement.md) | Leia as propriedades e as relações de um objeto de contrato. |
 | [Atualizar contrato](../api/agreement-update.md) | [contrato](agreement.md) | Atualize um objeto de contrato. |
-| [Excluir contrato](../api/agreement-delete.md) | Nenhum | Exclua um objeto de contrato. |
+| [Excluir contrato](../api/agreement-delete.md) | None | Exclua um objeto de contrato. |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |

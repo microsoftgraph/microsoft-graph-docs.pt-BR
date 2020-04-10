@@ -3,18 +3,18 @@ title: tipo de recurso Entidadegovernanceresource
 description: Representa os recursos que podem ser gerenciados pelo gerenciamento de identidade privilegiado (PIM). Para recursos do Azure, pode ser uma assinatura, um grupo de recursos e um recurso como uma máquina virtual, um banco de dados SQL, etc.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 28af0f6ca55881bd0f0848cda27cfe56bd1d5eb5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: d2ce70da20a3a976acc567ee8138cc0b0dcaffb2
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497612"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219246"
 ---
 # <a name="governanceresource-resource-type"></a>tipo de recurso Entidadegovernanceresource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,12 +35,12 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` há suporte no `roleDefinitions` conjunto 
 | Propriedade          |Tipo         |Descrição|
 |:------------------|:----------|:----------|
 |id                 |String     |A ID do recurso. Está no formato GUID.|
-|externalId           |String   |A ID externa do recurso, que representa sua ID original no sistema externo. Por exemplo, a ID externa de um recurso de assinatura pode ser "/subscriptions/c14ae696-5e0c-4E5D-88cc-bef6637737ac". |
-|type               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
+|externalId           |Cadeia de Caracteres   |A ID externa do recurso, que representa sua ID original no sistema externo. Por exemplo, a ID externa de um recurso de assinatura pode ser "/subscriptions/c14ae696-5e0c-4E5D-88cc-bef6637737ac". |
+|tipo               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
 |displayName        |Cadeia de caracteres     |O nome de exibição do recurso.|
 |status             |String     |O status de um determinado recurso. Por exemplo, ele pode representar se o recurso está bloqueado ou não (valores: `Active` / `Locked`). Observação: essa propriedade pode ser estendida no futuro para dar suporte a mais cenários.|
 |registeredDateTime|DateTimeOffset      |Representa a data e hora em que o recurso é registrado no PIM.|
-|registeredRoot|String      |ExternalId do escopo raiz do recurso que é registrado no PIM. O escopo raiz pode ser os recursos pai, avô ou ancestral superior.|
+|registeredRoot|Cadeia de Caracteres      |ExternalId do escopo raiz do recurso que é registrado no PIM. O escopo raiz pode ser os recursos pai, avô ou ancestral superior.|
 |roleAssignmentCount|Int32      |Opcional. O número de atribuições de função para determinado recurso. Para obter a propriedade, explictly use `$select=roleAssignmentCount` na consulta.|
 |roleDefinitionCount|Int32      |Opcional. O número de definições de função para o recurso especificado. Para obter a propriedade, explictly use `$select=roleDefinitionCount` na consulta.|
 |permissões|[governancePermission](../resources/governancepermission.md)      |Opcional. Ele representa o status do acesso do solicitante ao recurso. Para obter a propriedade, explictly use `$select=permissions` na consulta.|

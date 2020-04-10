@@ -3,18 +3,18 @@ title: 'servicePrincipalName: getMemberObjects'
 description: Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.  Essa verificação é transitiva.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: afa2e48691ba421fad8ffc1c2f5ae630591295d6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 689eb4514207d58cb69a2ea0a32cd89fea93d5b0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453453"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219281"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipalName: getMemberObjects
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

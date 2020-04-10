@@ -2,15 +2,15 @@
 title: Atualizar identitySecurityDefaultsEnforcementPolicy
 description: Atualiza as propriedades de um objeto identitySecurityDefaultsEnforcementPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 42fd16c4e275f5fdb6635cb491a11c57ce1ae1bc
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 4aee6888f37958d226d00ad68c11230309df66af
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42946995"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218931"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Atualizar identitySecurityDefaultsEnforcementPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy. ReadWrite. ConditionalAccess |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. ReadWrite. ConditionalAccess |
+| Delegada (conta corporativa ou de estudante)     | Policy. ReadWrite. ConditionalAccess |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | Policy. ReadWrite. ConditionalAccess |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

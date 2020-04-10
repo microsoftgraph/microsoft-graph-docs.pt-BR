@@ -3,18 +3,18 @@ title: tipo de recurso governanceRoleAssignmentRequest
 description: Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 33e6dcaff75edc705cac4696a0fe7a86d988abe9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 611622930d0ff79a2b65589a5029c9eff5e773af
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497493"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219232"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>tipo de recurso governanceRoleAssignmentRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,13 +39,13 @@ Representa a solicitação de operações de atribuição de função no gerenci
 |resourceId                 |String         |Obrigatório. A ID do recurso ao qual a solicitação de atribuição de função está associada.|
 |roleDefinitionId           |String         |Obrigatório. A ID da definição de função à qual a solicitação de atribuição de função está associada.|
 |SubjectID                  |String         |Obrigatório. A ID da entidade à qual a solicitação de atribuição de função está associada.|
-|type                       |String         |Obrigatório. Representando o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Administradores atribuem usuários/grupos a funções;</li><li>`UserAdd`: Os usuários ativam atribuições qualificadas;</li><li> `AdminUpdate`: Administradores alterar as atribuições de função existentes</li><li>`AdminRemove`: Administradores removem usuários/grupos de funções;<li>`UserRemove`: Os usuários desativam atribuições ativas;<li>`UserExtend`: Os usuários solicitam estender suas atribuições de expiração;</li><li>`AdminExtend`: Os administradores extendem as atribuições expiradas.</li><li>`UserRenew`: Os usuários solicitam a renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Os administradores extendem as atribuições expiradas.</li></ul>|
+|tipo                       |String         |Obrigatório. Representando o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Administradores atribuem usuários/grupos a funções;</li><li>`UserAdd`: Os usuários ativam atribuições qualificadas;</li><li> `AdminUpdate`: Administradores alterar as atribuições de função existentes</li><li>`AdminRemove`: Administradores removem usuários/grupos de funções;<li>`UserRemove`: Os usuários desativam atribuições ativas;<li>`UserExtend`: Os usuários solicitam estender suas atribuições de expiração;</li><li>`AdminExtend`: Os administradores extendem as atribuições expiradas.</li><li>`UserRenew`: Os usuários solicitam a renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Os administradores extendem as atribuições expiradas.</li></ul>|
 |assignmentstate|String  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição qualificada</li><li> `Active`– Se ele for atribuído `Active` diretamente por administradores ou ativado em uma atribuição qualificada pelos usuários.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Somente leitura. O tempo de criação da solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |Cronograma                   |[governanceSchedule](governanceschedule.md)|O objeto Schedule da solicitação de atribuição de função.|
-|motivo                     |String         |Uma mensagem fornecida por usuários e administradores quando você cria a solicitação sobre por que ela é necessária.|
+|motivo                     |Cadeia de Caracteres         |Uma mensagem fornecida por usuários e administradores quando você cria a solicitação sobre por que ela é necessária.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |O status da solicitação de atribuição de função.|
-|linkedEligibleRoleAssignmentId|String        |Se esta for uma solicitação para ativação de função, ela representará a ID `eligible assignment` da referida; Caso contrário, o valor `null`será. |
+|linkedEligibleRoleAssignmentId|Cadeia de Caracteres        |Se esta for uma solicitação para ativação de função, ela representará a ID `eligible assignment` da referida; Caso contrário, o valor `null`será. |
 
 
 

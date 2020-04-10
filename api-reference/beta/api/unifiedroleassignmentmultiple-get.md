@@ -2,15 +2,15 @@
 title: Obter unifiedRoleAssignmentMultiple
 description: Recupere as propriedades e os relacionamentos de um objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 376e4826057e9e474c0fa6e5061a8a8d4f56a979
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 01f59e08a298fd5bf3e630de1cb562bc6de810a4
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181494"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215813"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Obter unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

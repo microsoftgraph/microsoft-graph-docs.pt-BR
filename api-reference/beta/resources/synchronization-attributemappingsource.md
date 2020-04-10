@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso attributeMappingSource
-description: 'Define como um valor deve ser extraído (ou transformado) a partir do objeto Source. Por exemplo, pode ser um valor simples de um determinado atributo no objeto Source ou pode ser uma expressão mais complexa de concatenação/extração/substituição de cadeia de caracteres com base em vários atributos de origem. '
+description: Define como um valor deve ser extraído (ou transformado) a partir do objeto Source.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 969f262f76f976c13f5c0a26ae53d67751b8820b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a5a70e3a299eda812fc1ed2c11f82ebfee92e22
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520230"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219162"
 ---
 # <a name="attributemappingsource-resource-type"></a>tipo de recurso attributeMappingSource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,10 +24,10 @@ Define como um valor deve ser extraído (ou transformado) a partir do objeto Sou
 
 | Propriedade              | Tipo                      | Descrição               |
 |:----------------------|:--------------------------|:--------------------------|
-|expressão             |String                     |Representação de expressão equivalente deste objeto **attributeMappingSource** .|
+|expressão             |Cadeia de Caracteres                     |Representação de expressão equivalente deste objeto **attributeMappingSource** .|
 |nome                   |String                     |Parâmetro Name da origem do mapeamento. Dependendo do valor da propriedade **Type** , isso pode ser o nome da função, o nome do atributo de origem ou um valor constante a ser usado. |
 |parameters             |coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Se este objeto representar uma função, lista os parâmetros da função. Os parâmetros consistem nos objetos **attributeMappingSource** , permitindo expressões complexas. Se **Type** não `Function`for, esta propriedade será NULL/matriz vazia. |
-|type                   | String                    |O tipo desta fonte de mapeamento de atributos. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
+|tipo                   | String                    |O tipo desta fonte de mapeamento de atributos. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -3,18 +3,18 @@ title: Listar privilegedRoleAssignments
 description: Recupere uma lista de objetos privilegedRoleAssignment, que correspondem a todas as atribuições de função da organização.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 82bbe53abec4cfdf01893873ba09aef8af0e72bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 4baf83cd05010a179fe47c86e949f2bd6aa70f16
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455349"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218721"
 ---
 # <a name="list-privilegedroleassignments"></a>Listar privilegedRoleAssignments
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

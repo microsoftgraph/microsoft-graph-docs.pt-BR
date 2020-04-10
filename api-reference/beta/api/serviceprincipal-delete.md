@@ -3,18 +3,18 @@ title: Excluir o servicePrincipalName
 description: Exclua o servicePrincipalName.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 038baa31b3176427fbf2cb827719fc9ab142c969
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: cad7df48a955dbe06a239b120d6b32f079a7043b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453496"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219302"
 ---
 # <a name="delete-serviceprincipal"></a>Excluir o servicePrincipalName
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

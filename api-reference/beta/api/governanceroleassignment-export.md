@@ -3,14 +3,14 @@ title: Exportar governanceRoleAssignmentRequests
 description: Recupere uma coleção de governanceRoleAssignmentRequests no formato `application/octet-stream`, que pode ser analisado como um arquivo. csv no navegador.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 5a4440a8a7870522e50cee7622c6ec7ef95393a9
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: b09eaa5cfe3c4530faedbfd52d2f9b52bd41f07d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639853"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218903"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Exportar governanceRoleAssignmentRequests
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. Read. AzureResources |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | PrivilegedAccess. Read. AzureResources |
 
 
 ## <a name="http-request"></a>Solicitação HTTP

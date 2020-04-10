@@ -3,18 +3,18 @@ title: 'servicePrincipalName: listar appRoleAssignments'
 description: Recupere uma lista de objetos approleassignment.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ee03911dce685ec7df8465343b56c4b6b9375c4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: e9e4780b6a0a0743a0d89c0eb5d076a65864f1b8
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453440"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219274"
 ---
 # <a name="serviceprincipal-list-approleassignments"></a>servicePrincipalName: listar appRoleAssignments
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

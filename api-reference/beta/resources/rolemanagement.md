@@ -2,19 +2,19 @@
 title: tipo de recurso roleManagement
 description: Recurso de gerenciamento de função RBAC
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 91aad7dc635884631700fe8b9b9b6d44f214b68e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71c9a12cec6fa58d60f71fe1adcf1af3715da1de
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521044"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215769"
 ---
 # <a name="rolemanagement-resource-type"></a>tipo de recurso roleManagement
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Entidade de gerenciamento de função RBAC da Microsoft 365. Fornece acesso a de
 
 ## <a name="methods"></a>Métodos
 
-Nenhum
+None
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,7 +36,7 @@ Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 
-Nenhuma
+None
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

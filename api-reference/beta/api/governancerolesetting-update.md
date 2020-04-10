@@ -3,18 +3,18 @@ title: Atualizar governanceRoleSetting
 description: Atualize as propriedades de governanceRoleSetting.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2cd81e24f6719ea47e7c6cf86486fbb63cd26d3b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: e8f18cae950276979330d0f4830acbd2eb4492ab
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420812"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215795"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governanceRoleSetting
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -3,18 +3,18 @@ title: tipo de recurso synchronizationSchedule
 description: Define o agendamento usado para executar um synchronizationJob.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc34a596af9b8f1270462b7c180e62ffde0cf0f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f72c292954c7a5e7ae0d4c9d68a5ae900942f4d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520041"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217336"
 ---
 # <a name="synchronizationschedule-resource-type"></a>tipo de recurso synchronizationSchedule
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

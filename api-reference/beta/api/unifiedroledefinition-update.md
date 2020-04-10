@@ -2,15 +2,15 @@
 title: Atualizar unifiedRoleDefinition
 description: Atualiza as propriedades de um objeto unifiedRoleDefinition.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8b9c6ddb7910ed4f70695c7b585453cb22f4eb38
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fb1cd8a7e8cbef279c5007b3cd721193ff25e518
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181547"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218938"
 ---
 # <a name="update-unifiedroledefinition"></a>Atualizar unifiedRoleDefinition
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta corporativa ou de estudante)     | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |isEnabled|Boolean| Sinalizador que indica se a função está habilitada para atribuição. Se false, a função não estará disponível para atribuição. Somente leitura quando isbuiltem for true. |
 |resourceScopes|Coleção de cadeias de caracteres| Lista de escopos permissões concedidas pela definição de função aplicam-se ao. No momento, só há suporte para "/". Somente leitura quando isbuiltem for true. **NÃO USE. Essa propriedade será preterida em breve. Anexar escopo à atribuição de função.**|
 |rolePermissions|coleção [unifiedRolePermission](../resources/unifiedrolepermission.md)| Lista de permissões incluídas na função. Somente leitura quando isbuiltem for true. Obrigatório. |
-|templateId|String| Identificador de modelo personalizado que pode ser definido quando isbuiltem é falso. Esse identificador geralmente é usado se um precisa de um identificador para ser o mesmo em diferentes diretórios. Somente leitura quando isbuiltem for true. |
+|templateId|Cadeia de Caracteres| Identificador de modelo personalizado que pode ser definido quando isbuiltem é falso. Esse identificador geralmente é usado se um precisa de um identificador para ser o mesmo em diferentes diretórios. Somente leitura quando isbuiltem for true. |
 |versão|String| Indica a versão da definição de função. Somente leitura quando isbuiltem for true.|
 
 ## <a name="response"></a>Resposta

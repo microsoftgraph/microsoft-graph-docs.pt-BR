@@ -2,19 +2,19 @@
 title: 'servicePrincipalName: addpassword'
 description: Adicione uma senha forte a um servicePrincipalName.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 11a8d6e6a54941e6ecee10878c01ed0e5f5e91da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 781cb68eb8f73440972485e4151e23eb345425e2
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453524"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219106"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipalName: addpassword
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

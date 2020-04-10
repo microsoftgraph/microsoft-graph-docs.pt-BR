@@ -3,18 +3,18 @@ title: 'privilegedRoleAssignment: My'
 description: Obtenha as atribuições de função privilegiada do solicitante.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: f2b3103320c2ff989813bee3b054d24760818e56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 223fb82884efa5f9c5ffd5eff0db2707ec0fe966
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455316"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218700"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: My
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

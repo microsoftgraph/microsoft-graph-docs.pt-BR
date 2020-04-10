@@ -2,19 +2,19 @@
 title: Listar trustFrameworkPolicies
 description: Essa operação lista todos os objetos trustFrameworkPolicy em um locatário do Azure AD B2C.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 61e110d00bb39074314f847cdfb530b9488a855f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 439573b524465d540e8c167ab9b3961d2c770f31
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452180"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215942"
 ---
 # <a name="list-trustframeworkpolicies"></a>Listar trustFrameworkPolicies
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy. Read. All, Policy. ReadWrite. TrustFramework|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Delegada (conta corporativa ou de estudante)|Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Application|Policy. Read. All, Policy. ReadWrite. TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 

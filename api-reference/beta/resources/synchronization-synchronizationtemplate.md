@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso synchronizationtemplate
-description: " qualquer pessoa pode recuperar o modelo para ver as configurações padrão, incluindo o esquema de sincronização."
+description: Fornece configurações de sincronização pré-configuradas para um aplicativo específico.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9952b06276efa712068091ecd8b7b5dc5e6769d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5067df26f0b1c1e6b77d1c3d87d4c73bb9e45208
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520013"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217000"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationtemplate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,8 +41,8 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 |ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo ao qual este modelo pertence.|
 |Padrão.        |Boolean                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
 |description    |String                     |Descrição do modelo.|
-|detectáveis   |String                     |`true`Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
-|factoryTag     |String                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|
+|detectáveis   |Cadeia de Caracteres                     |`true`Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
+|factoryTag     |Cadeia de Caracteres                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|
 |los       |coleção metadataEntry   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 
 ## <a name="relationships"></a>Relações

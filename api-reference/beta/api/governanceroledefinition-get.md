@@ -3,14 +3,14 @@ title: Obter governanceRoleDefinition
 description: Recupere as propriedades e os relacionamentos de um governanceRoleDefinition.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 89c1165431b87768fafa9553d688ca9331f9e470
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 55dbc8933c9adeda1bcd2d40c5ed9c54de7dd55a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639797"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218854"
 ---
 # <a name="get-governanceroledefinition"></a>Obter governanceRoleDefinition
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. Read. AzureResources |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso ao qual o [governanceRoleDefinition](../resources/governanceroledefinition.md) pertence.
 

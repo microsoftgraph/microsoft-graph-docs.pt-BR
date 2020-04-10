@@ -2,15 +2,15 @@
 title: tipo de recurso tokenIssuancePolicy
 description: Representa a política para especificar as características dos tokens SAML emitidos pelo Azure AD.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0d88680ffd24133b0c5ddb3c9ac3dd3408a46dc2
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 9772e58a996c8800ea1822302df2f3a218f08a28
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591786"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219134"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>tipo de recurso tokenIssuancePolicy
 
@@ -26,15 +26,15 @@ Representa a política para especificar as características dos tokens SAML emit
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar tokenIssuancePolicy](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Criar um objeto tokenIssuancePolicy. |
 | [Obter tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Ler propriedades e relações de um objeto tokenIssuancePolicy. |
 | [Listar tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Ler propriedades e relações de objetos tokenIssuancePolicy. |
-| [Atualizar tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | Nenhum | Atualizar um objeto tokenIssuancePolicy. |
-| [Excluir tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | Nenhum | Excluir um objeto tokenIssuancePolicy. |
+| [Atualizar tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | None | Atualizar um objeto tokenIssuancePolicy. |
+| [Excluir tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | None | Excluir um objeto tokenIssuancePolicy. |
 | [Listar se aplica](../api/tokenissuancepolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obtenha a lista de directoryObjects à qual essa política foi aplicada. |
 
 ## <a name="properties"></a>Propriedades
@@ -45,7 +45,7 @@ Herda de [stsPolicy](stsPolicy.md).
 |definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
 |description|String| Descrição da política.|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Booliano|Ignore essa propriedade. A política de emissão de token só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
+|isOrganizationDefault|Boolean|Ignore essa propriedade. A política de emissão de token só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
 
 
 ### <a name="properties-of-a-token-issuance-policy-definition"></a>Propriedades de uma definição de política de emissão de token
@@ -63,9 +63,9 @@ O formulário Propriedades o objeto JSON que representa uma política de emissã
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|String|Representa as opções de assinatura de certificado disponíveis no Azure AD. Os valores com suporte `ResponseOnly`são `TokenOnly`: `ResponseAndToken`,,.  |
-|SamlTokenVersion|String|Versão do token SAML. Os valores com suporte `1.1`são `2.0`:,. |
-|SigningAlgorithm|String|Algoritmo de assinatura usado pelo Azure AD para assinar o token SAML. Os valores com suporte `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`são `http://www.w3.org/2000/09/xmldsig#rsa-sha1`:,.|
+|TokenResponseSigningPolicy|Cadeia de Caracteres|Representa as opções de assinatura de certificado disponíveis no Azure AD. Os valores com suporte `ResponseOnly`são `TokenOnly`: `ResponseAndToken`,,.  |
+|SamlTokenVersion|Cadeia de Caracteres|Versão do token SAML. Os valores com suporte `1.1`são `2.0`:,. |
+|SigningAlgorithm|Cadeia de Caracteres|Algoritmo de assinatura usado pelo Azure AD para assinar o token SAML. Os valores com suporte `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`são `http://www.w3.org/2000/09/xmldsig#rsa-sha1`:,.|
 |Versão|Inteiro|Defina o valor 1. Obrigatório.|
 
 

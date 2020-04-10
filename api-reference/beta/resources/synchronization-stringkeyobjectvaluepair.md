@@ -3,18 +3,18 @@ title: tipo de recurso stringKeyObjectValuePair
 description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é um objeto JSON arbitrário. Este é um tipo de OData aberto que espera ter uma propriedade chamada `value` que seja um objeto JSON válido.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c3a86cd4963f8d17fbe9f4c5371e98070f8f8f4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a04df77ee010368b73abfe5a2d8d78cfe99b0b4
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520090"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217560"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>tipo de recurso stringKeyObjectValuePair
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|String|Chave.|
+|key|Cadeia de Caracteres|Chave.|
 |valor|Json|Objeto JSON arbitrário.|
 
 ## <a name="json-representation"></a>Representação JSON

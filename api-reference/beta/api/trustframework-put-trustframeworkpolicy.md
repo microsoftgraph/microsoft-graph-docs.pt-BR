@@ -2,17 +2,19 @@
 title: Atualizar trustFrameworkPolicy
 description: 'Esta operação atualiza um objeto trustFrameworkPolicy existente ou, se houver algum, ele cria um. '
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ade1f27b65b5149a0847fb39ab7efd16042e018
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: de1df6c258794165e37d3572d4bee5da84316c83
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734476"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215907"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Atualizar ou criar trustFrameworkPolicy
+
+Namespace: microsoft.graph
 
 >**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -24,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Policy.ReadWrite.TrustFramework|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Application|Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 

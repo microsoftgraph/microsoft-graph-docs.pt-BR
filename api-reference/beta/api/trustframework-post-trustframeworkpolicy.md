@@ -2,17 +2,19 @@
 title: Criar trustFrameworkPolicy
 description: Essa operação cria um novo objeto trustFrameworkPolicy em um locatário do Azure AD B2C.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 39dd9cbc14ae0dc6040618619595dd4cceb0dadc
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: b3e06b35d838817e3214ea10d22c11fe8d19d59f
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734462"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215914"
 ---
 # <a name="create-trustframeworkpolicy"></a>Criar trustFrameworkPolicy
+
+Namespace: microsoft.graph
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -24,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Policy.ReadWrite.TrustFramework|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Application|Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 

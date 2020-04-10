@@ -3,18 +3,18 @@ title: tipo de recurso synchronizationStatus
 description: Representa o status atual do synchronizationJob.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 179eda96e62c124de5c64688352040b62dfc6c77
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5c17e28c805fbfde1e59a383899da43b5966628
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520027"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217266"
 ---
 # <a name="synchronizationstatus-resource-type"></a>tipo de recurso synchronizationStatus
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Representa o status atual do [synchronizationJob](synchronization-synchronizatio
 
 | Propriedade                              | Tipo      | Descrição    |
 |:--------------------------------------|:----------|:---------------|
-|código|String|Código de status de alto nível do trabalho de sincronização. Os valores possíveis são: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
+|código|Cadeia de Caracteres|Código de status de alto nível do trabalho de sincronização. Os valores possíveis são: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Número de vezes consecutivas que esse trabalho falhou.|
 |escrowsPruned|Boolean|`true`Se as caução do trabalho (erros no nível do objeto) foram removidas durante a sincronização inicial. As caução podem ser removidas se durante a sincronização inicial, você atinge o limite de erros que normalmente colocam o trabalho em quarentena. Em vez de entrar em quarentena, o processo de sincronização limpa os erros do trabalho e continua até que a sincronização inicial seja concluída. Quando a sincronização inicial for concluída, o trabalho será pausado e aguardará que o cliente Limpe os erros.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução do trabalho.|
@@ -35,7 +35,7 @@ Representa o status atual do [synchronizationJob](synchronization-synchronizatio
 |steadyStateFirstAchievedTime|DateTimeOffset|O horário em que o estado Steady (não há mais alterações no processo) foi obtido pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|O horário em que o estado Steady (não mais alterações no processo) foi atingido pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|coleção [stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)|Contagem de objetos sincronizados, listados por tipo de objeto.|
-|troubleshootingUrl|String|No caso de um erro, a URL com as etapas de solução de problemas para o problema.|
+|troubleshootingUrl|Cadeia de Caracteres|No caso de um erro, a URL com as etapas de solução de problemas para o problema.|
 
 ### <a name="synchronization-status-code-details"></a>Detalhes do código de status de sincronização
 

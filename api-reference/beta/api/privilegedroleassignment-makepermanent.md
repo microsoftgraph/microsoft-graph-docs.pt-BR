@@ -1,24 +1,24 @@
 ---
 title: 'privilegedRoleAssignment: makePermanent'
-description: Torne a atribuição de função como permanente.
+description: Tornar a atribuição de função permanente.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: b17cb3d7bb1248be06d34078f0f0bc897870c684
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: c2c041cc23bfe9118d9a4745a69796239952bac8
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455330"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218707"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Torne a atribuição de função como permanente.
+Tornar a atribuição de função permanente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

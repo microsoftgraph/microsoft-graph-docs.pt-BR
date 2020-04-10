@@ -3,18 +3,18 @@ title: Create appRoleAssignment
 description: Use esta API para criar um novo appRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 196bed2ed7b860c344e83e3c0ffde38d51d967d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 71148acc2c62572a2f6c7e9f711e3660d5d523ad
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453370"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219029"
 ---
 # <a name="create-approleassignment"></a>Create appRoleAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

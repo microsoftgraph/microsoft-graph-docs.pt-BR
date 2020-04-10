@@ -2,19 +2,19 @@
 title: Criar trustFrameworkKeySet
 description: Criar um novo objeto **trustFrameworkKeySet** .
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1054fdfb13ff65f310c1c07fcb0f7d1bae2debf3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 934a3c7bbcd0e76bc41eac0294e0660ea9da3ccc
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452187"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215954"
 ---
 # <a name="create-trustframeworkkeyset"></a>Criar trustFrameworkKeySet
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All   |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet. ReadWrite. All    |
+| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All   |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | TrustFrameworkKeySet. ReadWrite. All    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -3,18 +3,18 @@ title: tipo de recurso synchronizationTaskExecution
 description: Resume os resultados da execução do trabalho de sincronização.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 936201202a36d85f8b7a0caa5cfb1cebb002bbb1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: befe67baa554cf80cd1e8f3788ca530baf5e9c5c
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520020"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217119"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso synchronizationTaskExecution
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Resume os resultados da execução do trabalho de sincronização.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activityIdentifier           |String |Identificador do trabalho executado.|
+|activityIdentifier           |Cadeia de Caracteres |Identificador do trabalho executado.|
 |countEntitled                |Int64  |Contagem de entradas processadas que foram atribuídas para este aplicativo.|
 |countEntitledForProvisioning |Int64  |Contagem de entradas processadas que foram atribuídas para provisionamento.|
 |countEscrowed                |Int64  |Contagem de entradas que foram caução (erros).|

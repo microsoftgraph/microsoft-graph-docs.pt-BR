@@ -2,15 +2,15 @@
 title: Criar unifiedRoleDefinition
 description: Criar um novo objeto unifiedRoleDefinition.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 67e3f59dbbd8f18d99cc58306cfa86a76c28e17d
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: b05074aed0c8204645c96e8a5e2e8af1d00fec91
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181263"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216726"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta corporativa ou de estudante)     | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

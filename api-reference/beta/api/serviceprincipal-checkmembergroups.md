@@ -3,18 +3,18 @@ title: 'servicePrincipalName: checkMemberGroups'
 description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 63bf38ca44f75781bb501c0871a45e642799748c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 120cd98ea22a452593e41f93637211151d1d1f2b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453536"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219337"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipalName: checkMemberGroups
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

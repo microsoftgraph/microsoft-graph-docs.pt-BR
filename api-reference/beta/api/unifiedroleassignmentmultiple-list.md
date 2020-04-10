@@ -1,18 +1,18 @@
 ---
-title: Listar unifiedRoleAssignmentMultiple
+title: Listar UnifiedRoleAssignmentMultiple
 description: Recupere as propriedades e os relacionamentos do objeto unifiedRoleAssignmentMultiple.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7fc80e7246a706b3fce41d00f0f628444a9426ab
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 174c848da527fb0f32bd3102e01dfcff5baffa40
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160329"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218973"
 ---
-# <a name="list-unifiedroleassignmentmultiple"></a>Listar unifiedRoleAssignmentMultiple
+# <a name="list-unifiedroleassignmentmultiple"></a>Listar UnifiedRoleAssignmentMultiple
 
 Namespace: microsoft.graph
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

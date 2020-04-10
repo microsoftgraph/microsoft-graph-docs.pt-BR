@@ -3,18 +3,18 @@ title: tipo de recurso privilegedRole
 description: Representa uma função de administrador do Azure AD, como um **administrador global, administrador de cobrança, administrador de serviço, administrador de usuário, administrador de senha**, etc.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ef4e8ba8c8b362a0f91b4a5179eb0c7a209bf994
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 51114eea797d27886f48c664d06d0b88d4a35a2d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521513"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217908"
 ---
 # <a name="privilegedrole-resource-type"></a>tipo de recurso privilegedRole
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

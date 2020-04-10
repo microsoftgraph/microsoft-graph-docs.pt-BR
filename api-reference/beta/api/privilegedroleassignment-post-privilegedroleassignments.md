@@ -3,14 +3,14 @@ title: Create privilegedRoleAssignment
 description: Use esta API para criar um novo privilegedRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 77b71c823e6c682cfd937ab83408de5d7d18553f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 064fe66ca6939246cb8dcddafb0564641d3a2a71
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455304"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218693"
 ---
 # <a name="create-privilegedroleassignment"></a>Create privilegedRoleAssignment
 
