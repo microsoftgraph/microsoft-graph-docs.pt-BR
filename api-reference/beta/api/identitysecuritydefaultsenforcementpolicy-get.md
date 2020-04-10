@@ -2,15 +2,15 @@
 title: Obter identitySecurityDefaultsEnforcementPolicy
 description: Recupere as propriedades e os relacionamentos do objeto identitysecuritydefaultsenforcementpolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ab081d6542d8d2c678ab2f8b176739000b668eb
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 8feba00ec3757a0c96d80047d8e61360b4c98f73
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947052"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218840"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>Obter identitySecurityDefaultsEnforcementPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | Policy.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
