@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: edb50b35c96236c2ff9ec8379a6dd3aa26d4675f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 045432e0f937509cc607b55d468bbc81e70f396b
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508979"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229616"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -77,8 +77,11 @@ Como o recurso **event** dá suporte a [extensions](/graph/extensibility-overvie
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-create-an-event"></a>Exemplo 1: criar um evento
+
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar o fuso horário para as horas de **início** e **fim** na resposta.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -139,7 +142,7 @@ Content-length: 600
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response"></a>Resposta
 Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -181,6 +184,9 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "isOnlineMeeting":false,
+    "onlineMeetingProvider":"unknown",
+    "onlineMeeting":null,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -234,7 +240,9 @@ Content-length: 2197
 ```
 
 
-##### <a name="request-2"></a>Solicitação 2
+### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>Exemplo 2: criar um evento que ocorrerá em vários locais
+
+#### <a name="request"></a>Solicitação
 A solicitação de exemplo a seguir especifica três locais de onde o organizador e os participantes podem participar da reunião.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
@@ -328,7 +336,7 @@ Content-length: 1390
 ---
 
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
 O exemplo de resposta a seguir mostra o evento criado que especifica as informações dos três locais de reunião. Devido ao cabeçalho da solicitação `Prefer: outlook.timezone="Pacific Standard Time"`, as propriedades **start** e **end** são expressas em PST.
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -371,6 +379,9 @@ Content-length: 2985
   "type":"singleInstance",
   "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
   "onlineMeetingUrl":null,
+  "isOnlineMeeting":true,
+  "onlineMeetingProvider":"unknown",
+  "onlineMeeting":null,
   "responseStatus":{
     "response":"organizer",
     "time":"0001-01-01T00:00:00Z"
@@ -457,7 +468,9 @@ Content-length: 2985
 ```
 
 
-##### <a name="request-3"></a>Solicitação 3
+### <a name="example-3-create-a-recurring-event"></a>Exemplo 3: criar um evento recorrente
+
+#### <a name="request"></a>Solicitação
 O terceiro exemplo mostra como criar um evento recorrente uma vez na semana.  O evento ocorre das 12:00 às 2:00 da tarde, todas as segundas-feiras a partir de 4 de setembro de 2017 até o final do ano.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -528,7 +541,7 @@ Content-type: application/json
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-##### <a name="response-3"></a>Resposta 3
+#### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -569,6 +582,9 @@ Content-type: application/json
     "type":"seriesMaster",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "isOnlineMeeting":true,
+    "onlineMeetingProvider":"unknown",
+    "onlineMeeting":null,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -637,18 +653,18 @@ Content-type: application/json
             "address":"AlexW@contoso.onmicrosoft.com"
         }
     },
-    "OnlineMeeting":null
 }
 ```
+### <a name="example-4-create-and-enable-an-event-as-an-online-meeting"></a>Exemplo 4: criar e habilitar um evento como uma reunião online
 
-##### <a name="request-4"></a>Solicitação 4
-O quarto exemplo mostra como criar um evento recorrente uma vez ao dia.  O evento ocorre a partir de 12:00 às 2:00, todos os dias, a partir de 21 de fevereiro de 2020, para duas ocorrências.
+#### <a name="request"></a>Solicitação
+Veja um exemplo de uma solicitação que cria um evento e o habilita como uma reunião online. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar o fuso horário para as horas de **início** e **fim** na resposta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_event_recurring_daily"
+  "name": "create_event_from_user_with_online_meeting"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events
@@ -662,11 +678,11 @@ Content-type: application/json
     "content": "Does noon work for you?"
   },
   "start": {
-      "dateTime": "2020-02-21T12:00:00",
+      "dateTime": "2017-04-15T12:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "end": {
-      "dateTime": "2020-02-21T14:00:00",
+      "dateTime": "2017-04-15T14:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "location":{
@@ -675,23 +691,15 @@ Content-type: application/json
   "attendees": [
     {
       "emailAddress": {
-        "address":"AlexW@contoso.OnMicrosoft.com",
-        "name": "Alex Wilbur"
+        "address":"samanthab@contoso.onmicrosoft.com",
+        "name": "Samantha Booth"
       },
       "type": "required"
     }
   ],
-  "recurrence": {
-    "pattern": {
-      "type": "daily",
-      "interval": 1
-    },
-    "range": {
-      "type": "numbered",
-      "startDate": "2020-02-21",
-      "numberOfOccurrences": 2
-    }
-  }
+  "allowNewTimeProposals": true,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -713,13 +721,13 @@ Content-type: application/json
 ---
 
 
-
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-##### <a name="response-4"></a>Resposta 4
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+#### <a name="response"></a>Resposta
+Veja um exemplo de resposta que exibe as propriedades **start** e **end** usando o fuso horário especificado no cabeçalho `Prefer: outlook.timezone`.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
-  "name": "create_event_recurring_daily",
+  "name": "create_event_from_user_with_online_meeting",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
@@ -728,47 +736,51 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69')/calendar/events/$entity",
-    "@odata.etag": "W/\"NDznl+Uh50WkanaCOKHkaQAAhrvLCw==\"",
-    "id": "AAMkADU5NUAAA=",
-    "createdDateTime": "2020-02-18T21:23:29.9959527Z",
-    "lastModifiedDateTime": "2020-02-18T21:23:30.4579217Z",
-    "changeKey": "NDznl+Uh50WkanaCOKHkaQAAhrvLCw==",
-    "categories": [],
-    "originalStartTimeZone": "Pacific Standard Time",
-    "originalEndTimeZone": "Pacific Standard Time",
-    "iCalUId": "040000008200E00074C5B7101A82E00800000000AF2462AAA1E6D501000000000000000010000000E6C8C4BDBB91F7419FFA5141702BF961",
-    "reminderMinutesBeforeStart": 15,
-    "isReminderOn": true,
-    "hasAttachments": false,
-    "subject": "Let's go for lunch",
-    "bodyPreview": "Does noon work for you?",
-    "importance": "normal",
-    "sensitivity": "normal",
-    "isAllDay": false,
-    "isCancelled": false,
-    "isOrganizer": true,
-    "responseRequested": true,
-    "seriesMasterId": null,
-    "showAs": "busy",
-    "type": "seriesMaster",
-    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADU5NUAAA%3D&exvsurl=1&path=/calendar/item",
-    "onlineMeetingUrl": null,
-    "responseStatus": {
-        "response": "organizer",
-        "time": "0001-01-01T00:00:00Z"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
+    "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
+    "id":"AAMkAGI1AAAt8AHjAAA=",
+    "createdDateTime":"2017-04-15T03:00:50.7579581Z",
+    "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
+    "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
+    "categories":[
+    ],
+    "originalStartTimeZone":"Pacific Standard Time",
+    "originalEndTimeZone":"Pacific Standard Time",
+    "iCalUId":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
+    "reminderMinutesBeforeStart":15,
+    "isReminderOn":true,
+    "hasAttachments":false,
+    "subject":"Let's go brunch",
+    "bodyPreview":"Does noon work for you?",
+    "importance":"normal",
+    "sensitivity":"normal",
+    "isAllDay":false,
+    "isCancelled":false,
+    "isOrganizer":true,
+    "responseRequested":true,
+    "seriesMasterId":null,
+    "showAs":"busy",
+    "type":"singleInstance",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl":null,
+    "isOnlineMeeting": true,
+    "onlineMeetingProvider": "teamsForBusiness",
+    "allowNewTimeProposals": true,
+    "responseStatus":{
+        "response":"organizer",
+        "time":"0001-01-01T00:00:00Z"
     },
-    "body": {
-        "contentType": "html",
-        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes noon work for you?\r\n</body>\r\n</html>\r\n"
+    "body":{
+        "contentType":"html",
+        "content":"<html><head></head><body>Does late morning work for you?</body></html>"
     },
-    "start": {
-        "dateTime": "2020-02-21T12:00:00.0000000",
-        "timeZone": "Pacific Standard Time"
+    "start":{
+        "dateTime":"2017-04-15T11:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
     },
-    "end": {
-        "dateTime": "2020-02-21T14:00:00.0000000",
-        "timeZone": "Pacific Standard Time"
+    "end":{
+        "dateTime":"2017-04-15T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
     },
     "location": {
         "displayName": "Harry's Bar",
@@ -780,51 +792,38 @@ Content-type: application/json
         {
             "displayName": "Harry's Bar",
             "locationType": "default",
-            "uniqueId": "Harry's Bar",
-            "uniqueIdType": "private"
+            "uniqueIdType": "unknown"
         }
     ],
-    "recurrence": {
-        "pattern": {
-            "type": "daily",
-            "interval": 1,
-            "month": 0,
-            "dayOfMonth": 0,
-            "firstDayOfWeek": "sunday",
-            "index": "first"
-        },
-        "range": {
-            "type": "numbered",
-            "startDate": "2020-02-21",
-            "endDate": "0001-01-01",
-            "recurrenceTimeZone": "Pacific Standard Time",
-            "numberOfOccurrences": 2
-        }
-    },
-    "attendees": [
+    "recurrence":null,
+    "attendees":[
         {
-            "type": "required",
-            "status": {
-                "response": "none",
-                "time": "0001-01-01T00:00:00Z"
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
             },
-            "emailAddress": {
-                "name": "Alex Wilber",
-                "address": "AlexW@contoso.OnMicrosoft.com"
+            "emailAddress":{
+                "name":"Samantha Booth",
+                "address":"samanthab@contoso.onmicrosoft.com"
             }
         }
     ],
-    "organizer": {
-        "emailAddress": {
-            "name": "Adele Vance",
-            "address": "AdeleV@contoso.OnMicrosoft.com"
+    "organizer":{
+        "emailAddress":{
+            "name":"Dana Swope",
+            "address":"danas@contoso.onmicrosoft.com"
         }
+    },
+    "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+1 425 555 0123"
     }
 }
 ```
 
-
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 - [Agendar compromissos repetidos como eventos recorrentes no Outlook](/graph/outlook-schedule-recurring-events)
 - [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
