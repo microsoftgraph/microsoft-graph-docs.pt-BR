@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7b121a1bd3369eebd752651fa412510daf943b76
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: daca733578e5415fc777bc01a8ef1272cfdcc681
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520784"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228877"
 ---
 # <a name="serviceinformation-resource-type"></a>tipo de recurso do minhas informações
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,10 +22,10 @@ Representa dados descritivos básicos sobre os serviços de nuvem que um usuári
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade     | Tipo        | Descrição                                            |
-|:-------------|:------------|:-------------------------------------------------------|
+| Propriedade     | Tipo        | Descrição                                                      |
+|:-------------|:------------|:-----------------------------------------------------------------|
 |nome          | Cadeia de caracteres      | O nome do serviço de nuvem (por exemplo, Twitter, Instagram). |
-|webUrl        | String      | Contém a URL para o serviço que está sendo referenciado.     |
+|webUrl        | String      | Contém a URL para o serviço que está sendo referenciado.               |
 
 ## <a name="json-representation"></a>Representação JSON
 

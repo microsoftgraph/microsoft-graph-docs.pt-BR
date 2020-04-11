@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8a5d4c8f45baaa980e2c8bc3f32c348182b13bc1
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 68fa883e7383c0f064aeece1d61a1788fed49ed6
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109051"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227740"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -174,7 +174,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 
 >**Observação:** o parâmetro @microsoft.graph.conflictBehavior deve ser incluído na URL, em vez do corpo da solicitação.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                   | Caminho REST
 |:---------------------------------------------------------|:------------------
@@ -195,8 +195,8 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Copiar item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Pesquisar itens](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Listar alterações em uma unidade](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Seguir o item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Deixar de seguir o item](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
+| [Seguir item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Item inseguir](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Criar link de compartilhamento](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -204,6 +204,8 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Excluir permissão](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Obter canal WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Fazer Check-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Fazer Check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Obter análises]: ../api/itemanalytics-get.md

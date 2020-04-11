@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: cdeb6a676304fe4ec69207f9df6331d0df503b56
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85e04cb96453c4415e4120e463a5c233aadc4ca3
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519551"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229385"
 ---
 # <a name="useraccountinformation-resource-type"></a>tipo de recurso userAccountInformation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,18 +24,18 @@ Herda de [Myfacet](itemfacet.md).
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                             | Tipo de retorno                                         | Descrição                                                         |
-|:-------------------------------------------------------------------|:----------------------------------------------------|:--------------------------------------------------------------------|
+| Método                                                             | Tipo de retorno                                         | Descrição                                                                   |
+|:-------------------------------------------------------------------|:----------------------------------------------------|:------------------------------------------------------------------------------|
 | [Obter userAccountInformation](../api/useraccountinformation-get.md) | [userAccountInformation](useraccountinformation.md) | Leia as propriedades e os relacionamentos de um objeto **userAccountInformation** . |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo                       | Descrição                                                                                                                              |
-|:--------------------|:---------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-|ageGroup             |String                      | Mostra o grupo de idade do usuário. Os valores `null`permitidos `minor`, `notAdult` e `adult` são gerados pelo diretório e não podem ser alterados.|
+| Propriedade            | Tipo                       | Descrição                                                                                                                               |
+|:--------------------|:---------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+|ageGroup             |String                      | Mostra o grupo de idade do usuário. Os valores `null`permitidos `minor`, `notAdult` e `adult` são gerados pelo diretório e não podem ser alterados. |
 |countryCode          |String|                     | Contém o código de país de dois caracteres associado à conta de usuários.                                                                |
-|preferredLanguageTag |[localeInfo](localeinfo.md) | Contém o idioma que o usuário associou como preferencial para a conta.                                                              |
-|userPrincipalName    |String                      | O nome principal do usuário (UPN) do usuário associado à conta.                                                                   |
+|preferredLanguageTag |[localeInfo](localeinfo.md) | Contém o idioma que o usuário associou como preferencial para a conta.                                                               |
+|userPrincipalName    |String                      | O nome principal do usuário (UPN) do usuário associado à conta.                                                                    |
 
 ## <a name="relationships"></a>Relações
 

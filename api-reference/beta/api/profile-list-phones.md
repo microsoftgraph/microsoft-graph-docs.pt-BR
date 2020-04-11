@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 518e58f6bc516998d8609a3e51563eb09a70cfd5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bbdf6d17f771e4daa7c586cb3634fc0b77fc949c
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455135"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228650"
 ---
 # <a name="list-phones"></a>Listar telefones
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/phones 
+GET /me/profile/phones
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

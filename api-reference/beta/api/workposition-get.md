@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ae3042a2b9cb5081973f9ed3a7f421493781211c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57f3f732e2f19b5cd9ffc428f83256a154406ebb
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451249"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228594"
 ---
 # <a name="get-workposition"></a>Obter workPosition
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,13 +42,13 @@ GET /me/profile/positions/{id}
 
 Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
-|Nome            |Valor    |Descrição                                                                                                                                                                 |
-|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limita a resposta somente aos objetos que contêm os critérios especificados.                                                                                             |
+|Nome            |Valor    |Descrição                                                                                                                                                                      |
+|:---------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |Limita a resposta somente aos objetos que contêm os critérios especificados.                                                                                                  |
 |$orderby        |cadeia de caracteres   |Por padrão, os objetos na resposta são classificados por seu valor **createdDateTime** em uma consulta. Você pode alterar a ordem da resposta usando o `$orderby` parâmetro.|
-|$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                        |
-|$skip           |int      |Ignore os primeiros n resultados, útil para paginação.                                                                                                                                |
-|$top            |int      |Número de resultados a ser retornado.                                                                                                                                           |
+|$select         |string   |Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.                                             |
+|$skip           |int      |Ignore os primeiros n resultados, útil para paginação.                                                                                                                                     |
+|$top            |int      |Número de resultados a ser retornado.                                                                                                                                                |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

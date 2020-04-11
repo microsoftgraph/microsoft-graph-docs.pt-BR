@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7dad5536eb78b2d7119ace63eb0f7ce16880e85f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c8ea4e9bf7db268c5ec6bffad1c7d43cbbdd2439
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521922"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227726"
 ---
 # <a name="personanniversary-resource-type"></a>tipo de recurso personAnniversary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,17 +24,17 @@ Herda de [Myfacet](itemFacet.md).
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                   | Tipo de retorno                               | Descrição                                                    |
-|:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|
+| Método                                                   | Tipo de retorno                               | Descrição                                                              |
+|:---------------------------------------------------------|:------------------------------------------|:-------------------------------------------------------------------------|
 | [Obter personAnniversary](../api/personanniversary-get.md) | [personAnniversary](personanniversary.md) | Leia as propriedades e os relacionamentos de um objeto **personAnniversary** . |
-| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Atualizar um objeto **personAnniversary** .                               |
-| [Delete](../api/personanniversary-delete.md)             | None                                      | Excluir um objeto **personAnniversary** .                               |
+| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Atualizar um objeto **personAnniversary** .                                   |
+| [Delete](../api/personanniversary-delete.md)             | None                                      | Excluir um objeto **personAnniversary** .                                   |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição                                                      |
 |:-------------|:------------|:-----------------------------------------------------------------|
-|data          |Data         | Contém a data associada ao tipo de aniversário.         |
+|data          |Data         | Contém a data associada ao tipo de aniversário.          |
 |type          |cadeia de caracteres       | Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
@@ -43,7 +43,7 @@ Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso. 
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",

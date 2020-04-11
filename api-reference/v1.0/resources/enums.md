@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: a28fa0cc9a53b6f9108a587c13efd8ab83a28bbf
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: e78f4226b2b2a2a100c4e3dedfa096d1120c91b8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948391"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229483"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -71,7 +71,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| deficiência
+| desabilitadas
 | alwaysEnabled
 | agendado
 
@@ -432,7 +432,7 @@ Namespace: microsoft.graph
 | preset10 | 10 
 | preset11 | 11
 | preset12 | 12 
-| preset13 | 13 
+| preset13 | Treze
 | preset14 | 14 
 | preset15 | 15 
 | preset16 | 16 
@@ -689,11 +689,41 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |restid|
 |restImmutableEntryId|
 
+### <a name="onlinemeetingprovidertype-values"></a>valores de onlineMeetingProviderType
+
+|Member|
+|:---|
+|desconhecido|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### <a name="delegatemeetingmessagedeliveryoptions-values"></a>valores de delegateMeetingMessageDeliveryOptions
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### <a name="calendarroletype-values"></a>valores de calendarRoleType
+
+|Member|
+|:---|
+|nenhuma|
+|freeBusyRead|
+|limitedRead|
+|Saiba|
+|gravável|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|cliente|
+
 ### <a name="threatassessmentcontenttype-values"></a>valores de threatAssessmentContentType
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | duas     | Ameaça de URL.             |
 | file   | 3D     | Ameaça do arquivo de anexo. |
 
@@ -725,7 +755,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | ,0     | Ainda não conhece.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | administrador | duas     | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores de threatAssessmentResultType
@@ -753,6 +783,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
 | autoPurgeToDeleted    | 11    | Mensagem de movimentação de viagens para exclusão. |
 | saída              | 12     | Emails de saída.                      |
-| Não é lixo eletrônico               | 13     | Permitir por não ser lixo eletrônico.              |
+| Não é lixo eletrônico               | Treze    | Permitir por não ser lixo eletrônico.              |
 | desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
 | unknownFutureValue    | 15     | Um membro Sentinel.                  |
+

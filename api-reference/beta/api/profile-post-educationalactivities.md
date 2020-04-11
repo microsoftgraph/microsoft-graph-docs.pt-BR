@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 492fa89c332c3dce6a0c0c6dd2274d1de5562927
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9da437b7bc53d1d42c2d1f8fcc33d76925c8c8ef
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455113"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229343"
 ---
 # <a name="create-educationalactivity"></a>Criar educationalActivity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
-| Aplicativo                            | User.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,9 +40,9 @@ POST /user/profile/educationalActivities
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório.|
+| Nome           |Descrição                  |
+|:---------------|:----------------------------|
+| Autorização  | {token} de portador. Obrigatório.   |
 | Content-Type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação

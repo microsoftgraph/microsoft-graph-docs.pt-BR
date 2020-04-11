@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5f5b3e8b8d688079090ed0f9ad12d175a7754fdb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63131aa1edc9a6a76c148017cf2a555f8c8fefc5
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517135"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219127"
 ---
 # <a name="get-conversation-thread"></a>Obter thread de conversas
 
-Namespace: Microsoft. Graph obter um objeto [thread](../resources/conversationthread.md) .
+Namespace: microsoft.graph
+
+Obter um objeto [thread](../resources/conversationthread.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

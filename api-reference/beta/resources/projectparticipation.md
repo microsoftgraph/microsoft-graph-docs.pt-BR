@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 1aa9188f40175ba0f52f143081004d8c3cbc4797
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e292795eeccc25029063763c0e1a2c4883009d7
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521429"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227677"
 ---
 # <a name="projectparticipation-resource-type"></a>tipo de recurso projectParticipation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,22 +24,22 @@ Herda de [Myfacet](itemfacet.md).
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                         | Tipo de retorno                                     | Descrição                                                       |
-|:---------------------------------------------------------------|:------------------------------------------------|:------------------------------------------------------------------|
-| [Obter projectParticipation](../api/projectparticipation-get.md) | [projectParticipation](projectparticipation.md) | Leia as propriedades e os relacionamentos de um objeto **projectParticipation** . |
-| [Atualizar projectParticipation](../api/projectparticipation-update.md)                | [projectParticipation](projectparticipation.md) | Atualizar um objeto **projectParticipation** .                               |
-| [Excluir projectParticipation](../api/projectparticipation-delete.md)                | Nenhum.                                            | Excluir um objeto **projectParticipation** .                               |
+| Método                                                                | Tipo de retorno                                     | Descrição                                                                 |
+|:----------------------------------------------------------------------|:------------------------------------------------|:----------------------------------------------------------------------------|
+| [Obter projectParticipation](../api/projectparticipation-get.md)        | [projectParticipation](projectparticipation.md) | Leia as propriedades e os relacionamentos de um objeto **projectParticipation** . |
+| [Atualizar projectParticipation](../api/projectparticipation-update.md)  | [projectParticipation](projectparticipation.md) | Atualizar um objeto **projectParticipation** .                                   |
+| [Excluir projectParticipation](../api/projectparticipation-delete.md)  | Nenhum.                                           | Excluir um objeto **projectParticipation** .                                   |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade     | Tipo                                        | Descrição                                                                                      |
-|:-------------|:--------------------------------------------|:-------------------------------------------------------------------------------------------------|
+| Propriedade     | Tipo                                        | Descrição                                                                                                |
+|:-------------|:--------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 |categories    | String collection                           | Contém categorias que um usuário associou ao projeto (por exemplo, transformação digital, Rig óleo). |
-|clientes        |[companyDetail](companydetail.md)            | Contém informações detalhadas sobre o cliente para o qual o projeto foi.                              |
-|conhecidos    |coleção [relatedPerson](relatedperson.md) | Lista as pessoas que também trabalharam no projeto.                                                          |
-|detalhada        |[positionDetail](positiondetail.md)          | Contém detalhes sobre a função do usuário no projeto.                                             |
-|displayName   |String                                       |Contém um nome amigável para o projeto.                                                         |
-|responsáveis      |coleção [relatedPerson](relatedperson.md) | A pessoa ou as pessoas que patrocinaram o projeto.                                                         |
+|clientes        |[companyDetail](companydetail.md)            | Contém informações detalhadas sobre o cliente para o qual o projeto foi.                                        |
+|conhecidos    |coleção [relatedPerson](relatedperson.md) | Lista as pessoas que também trabalharam no projeto.                                                              |
+|detalhada        |[positionDetail](positiondetail.md)          | Contém detalhes sobre a função do usuário no projeto.                                                      |
+|displayName   |String                                       |Contém um nome amigável para o projeto.                                                                   |
+|responsáveis      |coleção [relatedPerson](relatedperson.md) | A pessoa ou as pessoas que patrocinaram o projeto.                                                            |
 
 ## <a name="relationships"></a>Relações
 

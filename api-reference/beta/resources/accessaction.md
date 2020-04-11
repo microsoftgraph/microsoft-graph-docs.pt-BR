@@ -6,18 +6,18 @@ title: Accessaction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 81be9565ad926eb3498228ced9098578168734db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd4cee56045f03e0e4429f282add1de33e8ee794
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508573"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228321"
 ---
 # <a name="accessaction-resource-type"></a>tipo de recurso accessaction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 A presença do recurso **accessaction** em uma [**myactivity**][activity] indica que a atividade acessou um item.
 

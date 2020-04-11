@@ -5,20 +5,18 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27e728e172ec8870082f6b7d668f1f19f29f22dc
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: ec0326889cb55ce878d543dd88304925b6fdfd39
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591478"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229553"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>tipo de recurso urlAssessmentRequest
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Usado para criar e recuperar uma avaliação de ameaça de URL, derivada de [threatAssessmentRequest](threatAssessmentRequest.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|

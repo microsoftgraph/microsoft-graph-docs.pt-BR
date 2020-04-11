@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 1da3ad429011da62f49105c6f352c86ec0741cd4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d10ea81f3648be1896637ca866d0185c2a674097
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521908"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227730"
 ---
 # <a name="personinterest-resource-type"></a>tipo de recurso personInterest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,20 +24,20 @@ Herda de [Myfacet](itemfacet.md).
 
 ## <a name="methods"></a>Métodos
 
-| Método       | Tipo de retorno | Descrição |
-|:---------------------------------------------------|:------------------------------------|:------------------------------------------------------------|
-| [Obter personInterest](../api/personinterest-get.md) | [personInterest](personinterest.md) | Leia as propriedades e os relacionamentos de um objeto **personInterest** . |
-| [Atualizar personInterest](../api/personinterest-update.md)          | [personInterest](personinterest.md) | Atualizar um objeto **personInterest** .                               |
-| [Excluir personInterest](../api/personinterest-delete.md)          | Nenhum                                | Excluir um objeto **personInterest** .                               |
+| Método                                                    | Tipo de retorno                         | Descrição                                                           |
+|:----------------------------------------------------------|:------------------------------------|:----------------------------------------------------------------------|
+| [Obter personInterest](../api/personinterest-get.md)        | [personInterest](personinterest.md) | Leia as propriedades e os relacionamentos de um objeto **personInterest** . |
+| [Atualizar personInterest](../api/personinterest-update.md)  | [personInterest](personinterest.md) | Atualizar um objeto **personInterest** .                                   |
+| [Excluir personInterest](../api/personinterest-delete.md)  | Nenhum                                | Excluir um objeto **personInterest** .                                   |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade     | Tipo             | Descrição                                                                          |
-|:-------------|:-----------------|:-------------------------------------------------------------------------------------|
+| Propriedade     | Tipo             | Descrição                                                                                    |
+|:-------------|:-----------------|:-----------------------------------------------------------------------------------------------|
 |categories    |String collection | Contém categorias que um usuário associou aos juros (por exemplo, pessoal, recipies). |
-|description   |String            | Contém uma descrição dos juros.                                              |
-|displayName   |Cadeia de caracteres            | Contém um nome amigável para os juros.                                           |
-|webUrl        |String            | Contém um link para uma página da Web ou recurso sobre os juros.                         |
+|description   |String            | Contém uma descrição dos juros.                                                        |
+|displayName   |Cadeia de caracteres            | Contém um nome amigável para os juros.                                                     |
+|webUrl        |String            | Contém um link para uma página da Web ou recurso sobre os juros.                                  |
 
 ## <a name="relationships"></a>Relações
 
@@ -45,7 +45,7 @@ Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso. 
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ef65c81830c219d988159753be3528d37609c531
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26989c4eb5b7af987ab9a50555d3abdf07e3a16a
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455883"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228688"
 ---
 # <a name="update-personname"></a>Atualizar PersonName
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ PATCH /me/profile/names/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo                                            | Descrição                                                                             | 
+| Propriedade     | Tipo                                            | Descrição                                                                             |
 |:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
 |displayName   |Cadeia de caracteres                                           | Fornece um processamento ordenado de nome e sobrenome.                              |
 |primeiro         |String                                           | Nome do usuário.                                                                 |
@@ -105,7 +105,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Resposta
 

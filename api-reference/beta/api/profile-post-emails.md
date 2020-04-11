@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c273e7c826d8222596521948c91f48d939657575
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f65cdb5e63ba6bacf048e337b1689390caa0f347
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455106"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229336"
 ---
 # <a name="create-itememail"></a>Criar email
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
-| Aplicativo                            | User.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,9 +40,9 @@ POST /user/profile/emails
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório.|
+| Nome           |Descrição                  |
+|:---------------|:----------------------------|
+| Autorização  | {token} de portador. Obrigatório.   |
 | Content-Type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 48c585a05043b4f17e5e7406eb44b9150b5e5bdc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bc101ca8cbfb063fa1bba3a2ebdb4e6afc2fd57
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523062"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229399"
 ---
 # <a name="itemphone-resource-type"></a>tipo de recurso de Tel.
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,18 +22,18 @@ Representa informações detalhadas sobre números de telefone associados a um u
 
 ## <a name="methods"></a>Métodos
 
-| Método                                     | Tipo de retorno               | Descrição                                            |
-|:-------------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Obter o número de telefone](../api/itemphone-get.md)   | [Número de telefone](itemphone.md) | Leia as propriedades e os relacionamentos de um objeto **MyPhone** . |
-| [Atualizar o número de telefone](../api/itemphone-update.md)       | [Número de telefone](itemphone.md) | Atualize um objeto **MyPhone** .                               |
-| [Excluir o número de telefone](../api/itemphone-delete.md)       | Nenhum                      | Excluir um objeto **MyPhone** .                               |
+| Método                                               | Tipo de retorno               | Descrição                                                       |
+|:-----------------------------------------------------|:--------------------------|:------------------------------------------------------------------|
+| [Obter o número de telefone](../api/itemphone-get.md)             | [Número de telefone](itemphone.md) | Leia as propriedades e os relacionamentos de um objeto **MyPhone** . |
+| [Atualizar o número de telefone](../api/itemphone-update.md)       | [Número de telefone](itemphone.md) | Atualize um objeto **MyPhone** .                                   |
+| [Excluir o número de telefone](../api/itemphone-delete.md)       | Nenhum                      | Excluir um objeto **MyPhone** .                                   |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |Cadeia de caracteres       | Contém um nome amigável para o número de telefone.                                                                                  |
-|number        |String       | Contém o número de telefone.                                                                                                       |
+|number        |String       | Contém o número de telefone.                                                                                                      |
 |type          |string       | Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="relationships"></a>Relações

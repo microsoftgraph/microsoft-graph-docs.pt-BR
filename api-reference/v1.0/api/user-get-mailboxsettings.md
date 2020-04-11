@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5077d98d1cda1f40f3cd9c3886b607458c700ec3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: ecdfca25da3f231e5b5603343c70409e97f805e8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618685"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229644"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -22,6 +22,7 @@ Os usuários podem definir as configurações a seguir para suas caixas de corre
 
 - [respostas automáticas](../resources/automaticrepliessetting.md) (notificar pessoas automaticamente ao receber seus emails)
 - formato de data
+- delegateMeetingMessageDeliveryOptions
 - [localidade](../resources/localeinfo.md) (idioma e país/região)
 - formato de hora
 - fuso horário
@@ -59,6 +60,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 GET /me/mailboxSettings/dateFormat
 GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
 
+GET /me/mailboxSettings/delegateMeetingMessageDeliveryOptions
+GET /users/{id|userPrincipalName}/mailboxSettings/delegateMeetingMessageDeliveryOptions
+
 GET /me/mailboxSettings/language
 GET /users/{id|userPrincipalName}/mailboxSettings/language
 
@@ -88,6 +92,7 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 - Objeto [mailboxSettings](../resources/mailboxsettings.md)
 - Objeto [automaticRepliesSetting](../resources/automaticrepliessetting.md)
 - cadeia de caracteres (para **dateFormat**)
+- Cadeia de caracteres (para **delegateMeetingMessageDeliveryOptions**)
 - Objeto [localeInfo](../resources/localeinfo.md)
 - cadeia de caracteres (para **timeFormat**)
 - cadeia de caracteres (para **timeZone**)
@@ -156,7 +161,8 @@ Content-type: application/json
         }
     },
     "dateFormat": "MM/dd/yyyy",
-    "timeFormat": "hh:mm tt"
+    "timeFormat": "hh:mm tt",
+    "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 

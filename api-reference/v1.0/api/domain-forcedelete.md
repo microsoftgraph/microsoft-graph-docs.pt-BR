@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b50957082fe4f2e1e0a87d24cf36a7a7fc6eed16
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a9219a6e49cc0c0ddc223ea1d9dd108903a21cd0
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181340"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228828"
 ---
 # <a name="force-domain-deletion"></a>Forçar exclusão de domínio
 
@@ -83,7 +83,7 @@ Se bem-sucedido, este método retorna `HTTP/1.1 204 OK` o código de status.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/domains/{id}/forceDelete
+POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
 Content-length: 33
 

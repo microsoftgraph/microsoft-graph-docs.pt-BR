@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2a51b252c2fa75695fd62b2d05710a48ce71503c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf31a230d9e77a64905bf04b2ee26215bb47375f
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451522"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229056"
 ---
 # <a name="update-webaccount"></a>Atualizar webaccount
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |description   |String                                                   | Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado. |
 |service       |[Informações sobre o](../resources/serviceinformation.md) | Representa os dados descritivos básicos sobre o serviço de nuvem fornecido por um usuário.                   |
 |statusMessage |String                                                   | Contém uma mensagem de status do serviço de nuvem, se fornecido ou sincronizado.                   |
-|userId        |Cadeia de caracteres                                                   | O nome de usuário exibido para a conta da webaccount (por exemplo, @kevinb).                                       |
+|userId        |Cadeia de caracteres                                                   | O nome de usuário exibido para a conta da webaccount (por exemplo, @kevinb).                             |
 |webUrl        |String                                                   | Contém um link para o perfil de usuários no serviço de nuvem, se houver um.                        |
 
 ## <a name="response"></a>Resposta

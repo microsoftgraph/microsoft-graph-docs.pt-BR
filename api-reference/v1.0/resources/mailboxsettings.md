@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 99097c026ef219e82a34a6c7b043cf70d36c965d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2fb1cb6f45b91843b7c57aa66f6c136d24db2c2
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447504"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229049"
 ---
 # <a name="mailboxsettings-resource-type"></a>Tipo de recurso mailboxSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Configurações da caixa de correio principal de um [usuário](user.md).
 
@@ -27,6 +27,7 @@ Você pode [obter](../api/user-get-mailboxsettings.md) ou [Atualizar](../api/use
 |archiveFolder|string|ID de uma pasta de arquivo morto do usuário.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado.|
 |dateFormat|string|O formato de data da caixa de correio do usuário.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especificará se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas da reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |idioma|[localeInfo](localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
 |Formato de TimeFormat|string|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
@@ -49,6 +50,7 @@ Veja a seguir uma representação JSON do recurso.
   "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "dateFormat": "string",
+  "delegateMeetingMessageDeliveryOptions": "String",
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",

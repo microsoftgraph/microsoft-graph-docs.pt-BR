@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9552a435d130db6eed3216ff8f1990ff33447381
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87688a8e8049370ebe6a0bd4929450f3de7a1301
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455172"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228657"
 ---
 # <a name="list-names"></a>Listar nomes
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ Este método oferece suporte a alguns dos parâmetros de consulta OData para aju
 | Autorização  | {token} de portador. Obrigatório.   |
 | Content-Type   | application/json. Obrigatório. |
 
-## <a name="request-body"></a>Corpo da solicitação 
+## <a name="request-body"></a>Corpo da solicitação
 
 Não forneça um corpo de solicitação para esse método.
 

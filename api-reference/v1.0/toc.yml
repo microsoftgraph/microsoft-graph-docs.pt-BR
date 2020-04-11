@@ -104,7 +104,7 @@
               href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
     - name: Usar SDKs
       items:
-        - name: Visão Geral
+        - name: Visão geral
           href: /graph/sdks/sdks-overview?context=graph/api/1.0
         - name: Instalar o SDK
           href: /graph/sdks/sdk-installation?context=graph/api/1.0
@@ -721,6 +721,15 @@
                   href: api/calendargroup-list-calendars.md
                 - name: Criar calendário no grupo de calendários
                   href: api/calendargroup-post-calendars.md
+            - name: Permissão de calendário
+              href: resources/calendarpermission.md
+              items:
+                - name: Obter
+                  href: api/calendarpermission-get.md
+                - name: Atualizar
+                  href: api/calendarpermission-update.md
+                - name: Excluir
+                  href: api/calendarpermission-delete.md
             - name: Categorias
               href: resources/outlookcategory.md
               items:
@@ -2368,7 +2377,7 @@
                       href: api/intune-notification-localizednotificationmessage-list.md
                     - name: Obter
                       href: api/intune-notification-localizednotificationmessage-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-notification-localizednotificationmessage-create.md
                     - name: Excluir
                       href: api/intune-notification-localizednotificationmessage-delete.md
@@ -2383,7 +2392,7 @@
                       href: api/intune-devices-manageddevice-list.md
                     - name: Obter
                       href: api/intune-devices-manageddevice-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-devices-manageddevice-create.md
                     - name: Excluir
                       href: api/intune-devices-manageddevice-delete.md
@@ -2445,7 +2454,7 @@
                       href: api/intune-notification-notificationmessagetemplate-list.md
                     - name: Obter
                       href: api/intune-notification-notificationmessagetemplate-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-notification-notificationmessagetemplate-create.md
                     - name: Excluir
                       href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -2464,7 +2473,7 @@
                       href: api/intune-remoteassistance-remoteassistancepartner-list.md
                     - name: Obter
                       href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-remoteassistance-remoteassistancepartner-create.md
                     - name: Excluir
                       href: api/intune-remoteassistance-remoteassistancepartner-delete.md
@@ -2499,7 +2508,7 @@
                       href: api/intune-mam-androidmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-androidmanagedappprotection-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-mam-androidmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-androidmanagedappprotection-delete.md
@@ -2525,7 +2534,7 @@
                       href: api/intune-mam-defaultmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-defaultmanagedappprotection-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-mam-defaultmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -2538,7 +2547,7 @@
                       href: api/intune-mam-iosmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-iosmanagedappprotection-get.md
-                    - name: Criar
+                    - name: Create
                       href: api/intune-mam-iosmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-iosmanagedappprotection-delete.md
@@ -3233,6 +3242,10 @@
                   href: api/driveitem-get.md
                 - name: Obter miniaturas
                   href: api/driveitem-list-thumbnails.md
+                - name: Check-in de arquivos
+                  href: api/driveitem-checkin.md
+                - name: Fazer check-out de arquivos
+                  href: api/driveitem-checkout.md
                 - name: Criar pasta
                   href: api/driveitem-post-children.md
                 - name: Atualizar item
@@ -3326,6 +3339,18 @@
                   href: api/application-post-owners.md
                 - name: Remover proprietário
                   href: api/application-delete-owners.md
+                - name: Adicionar política de emissão de token
+                  href: api/application-post-tokenissuancepolicies.md
+                - name: Listar políticas de emissão de token
+                  href: api/application-list-tokenissuancepolicies.md
+                - name: Remover política de emissão de token
+                  href: api/application-delete-tokenissuancepolicies.md
+                - name: Adicionar política de tempo de vida do token
+                  href: api/application-post-tokenlifetimepolicies.md
+                - name: Listar políticas de vida útil de token
+                  href: api/application-list-tokenlifetimepolicies.md
+                - name: Remover política de tempo de vida do token
+                  href: api/application-delete-tokenlifetimepolicies.md
             - name: Logs de auditoria
               href: resources/azure-ad-auditlog-overview.md
               items:
@@ -3556,6 +3581,67 @@
                       href: api/orgcontact-get-manager.md
                     - name: Obter objetos de membros
                       href: api/orgcontact-getmemberobjects.md
+            - name: Política
+              href: resources/policy-overview.md
+              items:
+                - name: Política de tempo limite baseada em atividade
+                  href: resources/activitybasedtimeoutpolicy.md
+                  items:
+                    - name: Listar
+                      href: api/activitybasedtimeoutpolicy-list.md
+                    - name: Criar
+                      href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                    - name: Obter
+                      href: api/activitybasedtimeoutpolicy-get.md
+                    - name: Atualizar
+                      href: api/activitybasedtimeoutpolicy-update.md
+                    - name: Excluir
+                      href: api/activitybasedtimeoutpolicy-delete.md
+                - name: Política de descoberta de realm inicial
+                  href: resources/homerealmdiscoverypolicy.md
+                  items:
+                    - name: Listar
+                      href: api/homerealmdiscoverypolicy-list.md
+                    - name: Criar
+                      href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                    - name: Obter
+                      href: api/homerealmdiscoverypolicy-get.md
+                    - name: Atualizar
+                      href: api/homerealmdiscoverypolicy-update.md
+                    - name: Excluir
+                      href: api/homerealmdiscoverypolicy-delete.md
+                    - name: Listar aplicadas ao aplicativo
+                      href: api/homerealmdiscoverypolicy-list-appliesto.md
+                - name: Política de emissão de token
+                  href: resources/tokenissuancepolicy.md
+                  items:
+                    - name: Listar
+                      href: api/tokenissuancepolicy-list.md
+                    - name: Criar
+                      href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+                    - name: Obter
+                      href: api/tokenissuancepolicy-get.md
+                    - name: Atualizar
+                      href: api/tokenissuancepolicy-update.md
+                    - name: Excluir
+                      href: api/tokenissuancepolicy-delete.md
+                    - name: Listar aplicadas ao aplicativo
+                      href: api/tokenissuancepolicy-list-appliesto.md
+                - name: Política do tempo de vida do token
+                  href: resources/tokenlifetimepolicy.md
+                  items:
+                    - name: Listar
+                      href: api/tokenlifetimepolicy-list.md
+                    - name: Criar
+                      href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                    - name: Obter
+                      href: api/tokenlifetimepolicy-get.md
+                    - name: Atualizar
+                      href: api/tokenlifetimepolicy-update.md
+                    - name: Excluir
+                      href: api/tokenlifetimepolicy-delete.md
+                    - name: Listar aplicadas ao aplicativo
+                      href: api/tokenlifetimepolicy-list-appliesto.md
             - name: SKU inscrita
               href: resources/subscribedsku.md
               items:
@@ -4123,7 +4209,7 @@
         - name: Segurança
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/security-api-overview.md
             - name: Alertas
               href: resources/alert.md
@@ -4277,10 +4363,10 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Teamwork
+        - name: Trabalho em equipe
           displayName: Microsoft Teams
           items:
-            - name: Visão Geral
+            - name: Visão geral
               href: resources/teams-api-overview.md
             - name: Equipe
               href: resources/team.md

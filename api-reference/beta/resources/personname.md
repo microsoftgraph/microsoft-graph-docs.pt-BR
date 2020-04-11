@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6212721774b9b7bc47a4e312d438f1b001a90bef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4927ba05443d4b54eaac3f54b7e0d3a8cd62159
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521901"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227683"
 ---
 # <a name="personname-resource-type"></a>tipo de recurso PersonName
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,15 +32,15 @@ Herda de [Myfacet](itemfacet.md).
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade     | Tipo                              | Descrição |
-|:-------------|:----------------------------------|:------------|
+| Propriedade     | Tipo                              | Descrição                                                                                                  |
+|:-------------|:----------------------------------|:-------------------------------------------------------------------------------------------------------------|
 |displayName   |Cadeia de caracteres                             | Fornece uma renderização ordenada de firstName e lastName, dependendo da localidade do usuário ou de seu dispositivo. |
 |primeiro         |String                             | Nome do usuário.                                                                                      |
 |initials      |String                             | Iniciais do usuário.                                                                                        |
 |languageTag   |String                             | Contém o nome do idioma (en-US, no-NB, en-AU) após o formato BCP47 da IETF.                        |
 |durar          |String                             | Sobrenome do usuário.                                                                                       |
 |Virgem        |String                             | Nome de solteira do usuário.                                                                                     |
-|middleware        |String                             | Middlie nome do usuário.                                                                                    | 
+|middleware        |String                             | Middlie nome do usuário.                                                                                    |
 |apelido      |String                             | Apelido do usuário.                                                                                        |
 |pronúncia |[yomiPersonName](yomipersonname.md)| Orientações sobre como pronunciar o nome dos usuários.                                                                 |
 |sufixo        |String                             | Designadores usados após o nome dos usuários (por exemplo: PhD).                                                             |

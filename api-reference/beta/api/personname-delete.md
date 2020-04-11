@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1a0c3872b9af5a97cfae680b021a53498df34b09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 638248d35953faed5bedcf229217bd4a97efd648
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455876"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228699"
 ---
 # <a name="delete-personname"></a>Excluir PersonName
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ DELETE /me/profile/names/{id}
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome           |Descrição                  | 
+| Nome           |Descrição                  |
 |:---------------|:----------------------------|
 | Autorização  | {token} de portador. Obrigatório.   |
 | Content-Type   | application/json. Obrigatório. |
@@ -81,7 +81,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/names/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Resposta
 

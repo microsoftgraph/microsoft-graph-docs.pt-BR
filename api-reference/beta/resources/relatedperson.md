@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 507746674f17a7bf8255ccddc53ea14fe2ca5a26
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c440be4ad291857fad9540cccad2e43d3a0e7121
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521177"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227681"
 ---
 # <a name="relatedperson-resource-type"></a>tipo de recurso relatedPerson
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +22,11 @@ Representa informações sobre as pessoas relacionadas às informações de uma 
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade        | Tipo        | Descrição                                               |
-|:----------------|:------------|:----------------------------------------------------------|
-|displayName      |Cadeia de caracteres       | Nome da pessoa.                                        |
+| Propriedade        | Tipo        | Descrição                                                                                                                                                                                                                                     |
+|:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|displayName      |Cadeia de caracteres       | Nome da pessoa.                                                                                                                                                                                                                             |
 |relação     |String       | Os valores possíveis são: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
-|userPrincipalName|String       | Endereço de email ou referência a uma pessoa na organização. |
+|userPrincipalName|String       | Endereço de email ou referência a uma pessoa na organização.                                                                                                                                                                                       |
 
 ## <a name="json-representation"></a>Representação JSON
 

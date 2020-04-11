@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0934ea66c15e090a4f9ba9bcaa62a6c7eb900cd5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48a9e26bde5d06b834c542cbb987a2faff9fc23c
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522992"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229392"
 ---
 # <a name="languageproficiency-resource-type"></a>tipo de recurso languageProficiency
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,19 +24,19 @@ Herda de [Myfacet](itemFacet.md).
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                       | Tipo de retorno                                   | Descrição                                                      | 
-|:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Obter languageProficiency](../api/languageproficiency-get.md) | [languageProficiency](languageproficiency.md) | Leia as propriedades e os relacionamentos de um objeto **languageProficiency** . |
-| [Atualizar languageProficiency](../api/languageproficiency-update.md)               | [languageProficiency](languageproficiency.md) | Atualizar um objeto **languageProficiency** .                               |
-| [Excluir languageProficiency](../api/languageproficiency-delete.md)               | Nenhum                                          | Excluir um objeto **languageProficiency** .                               |
+| Método                                                              | Tipo de retorno                                   | Descrição                                                                |
+|:--------------------------------------------------------------------|:----------------------------------------------|:---------------------------------------------------------------------------|
+| [Obter languageProficiency](../api/languageproficiency-get.md)        | [languageProficiency](languageproficiency.md) | Leia as propriedades e os relacionamentos de um objeto **languageProficiency** . |
+| [Atualizar languageProficiency](../api/languageproficiency-update.md)  | [languageProficiency](languageproficiency.md) | Atualizar um objeto **languageProficiency** .                                   |
+| [Excluir languageProficiency](../api/languageproficiency-delete.md)  | Nenhum                                          | Excluir um objeto **languageProficiency** .                                   |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição                                                                                                                                                 |
 |:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | Contém o nome de formato longo para o idioma.                                                                                                   |
+|displayName   |String       | Contém o nome de formato longo para o idioma.                                                                                                               |
 |proficiência   |string       | Os valores possíveis são: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|tag           |String       | Contém o nome BCP47 de quatro caracteres para o idioma (en-US, no-NB, en-AU).                                                                                  |
+|tag           |String       | Contém o nome BCP47 de quatro caracteres para o idioma (en-US, no-NB, en-AU).                                                                              |
 
 ## <a name="relationships"></a>Relações
 
@@ -44,7 +44,7 @@ Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso. 
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",

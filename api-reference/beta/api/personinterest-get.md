@@ -1,20 +1,20 @@
 ---
 title: Obter personInterest
-description: Recupere as propriedades e os relacionamentos de um objeto personinterest.
+description: Recupere as propriedades e os relacionamentos de um objeto personInterest.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e6be28c2912768c9df45af2cb10fa08db0f78e05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 160ad0ca952c3c03ca5ae5596baca2dea7c2753e
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455897"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228678"
 ---
 # <a name="get-personinterest"></a>Obter personInterest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

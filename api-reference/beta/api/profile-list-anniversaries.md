@@ -1,20 +1,20 @@
 ---
 title: Listar aniversários
-description: Recupere uma lista de objetos personanniversary.
+description: Recupere uma lista de objetos personAnniversary.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2da148080d519e6be25b1d8c8bc787061e73f579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dbcb732c9abe0dbee45016d5629693585faec5dc
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455211"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228671"
 ---
 # <a name="list-anniversaries"></a>Listar aniversários
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/anniversaries 
+GET /me/profile/anniversaries
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

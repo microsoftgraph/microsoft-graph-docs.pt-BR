@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 62d7198eabebda2b7ed612c57754007130195a90
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e304ce5e92a4ef0fa64b2b7e2044887d86477255
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200318"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229035"
 ---
 # <a name="update-itememail"></a>Atualizar email
 

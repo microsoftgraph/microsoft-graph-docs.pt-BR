@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a18d72fb44f373b6cee1047cc2eed5f0c18a1d0e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaf58bd7e20caeb418946814daa7ca8f7bb9bfa3
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523076"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229413"
 ---
 # <a name="itememail-resource-type"></a>tipo de recurso de email
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +22,11 @@ Representa informações detalhadas sobre endereços de email associados ao usu�
 
 ## <a name="methods"></a>Métodos
 
-| Método                                   | Tipo de retorno               | Descrição                                            |
-|:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Get](../api/itememail-get.md) | [Email](itememail.md) | Ler propriedades e relações de um objeto item de **email** . |
-| [Update](../api/itememail-update.md)     | [Email](itememail.md) | Atualize um objeto de **email** .                               |
-| [Delete](../api/itememail-delete.md)     | None                      | Excluir um objeto de **email** .                               |
+| Método                                   | Tipo de retorno               | Descrição                                                      |
+|:-----------------------------------------|:--------------------------|:-----------------------------------------------------------------|
+| [Get](../api/itememail-get.md)           | [Email](itememail.md) | Ler propriedades e relações de um objeto item de **email** .    |
+| [Update](../api/itememail-update.md)     | [Email](itememail.md) | Atualize um objeto de **email** .                                  |
+| [Delete](../api/itememail-delete.md)     | None                      | Excluir um objeto de **email** .                                  |
 
 ## <a name="properties"></a>Propriedades
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: c5c7d7765d546dad5f6de39f72f092b3bf9daee6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b398ee8b0dbe14570f4ae59c71372502f3d0565
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521464"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227684"
 ---
 # <a name="profile-resource-type"></a>tipo de recurso Profile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,36 +22,36 @@ Representa propriedades descritivas de uma pessoa em um locatário. Essas propri
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                                     | Tipo de retorno                                                    | Descrição                                                                          |
-|:---------------------------------------------------------------------------|:---------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [Obter perfil](../api/profile-get.md)                                       | [perfil](profile.md)                                          | Leia as propriedades e as relações do objeto de perfil.                                 |
-| [Excluir perfil](../api/profile-delete.md)                                         | Nenhum                                                           | Excluir um objeto de **perfil** .                                                               |
-| [Listar conta](../api/profile-list-account.md)                             | coleção [userAccountInformation](useraccountinformation.md) | Obtenha uma coleção de objetos **userAccountInformation** .                                      |
-| [Criar personAnniversary](../api/profile-post-anniversaries.md)           | [personAnniversary](personanniversary.md)                      | Crie um novo **personAnniversary** postando na coleção de datas comemorativas.           |
-| [Listar aniversários](../api/profile-list-anniversaries.md)                 | coleção [personAnniversary](personanniversary.md)           | Obtenha uma coleção de objetos **personAnniversary** .                                           |
+| Método                                                                     | Tipo de retorno                                                    | Descrição                                                                                  |
+|:---------------------------------------------------------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
+| [Obter perfil](../api/profile-get.md)                                       | [perfil](profile.md)                                          | Leia as propriedades e as relações do objeto de perfil.                                         |
+| [Excluir perfil](../api/profile-delete.md)                                 | Nenhum                                                           | Excluir um objeto de **perfil** .                                                                 |
+| [Listar conta](../api/profile-list-account.md)                             | coleção [userAccountInformation](useraccountinformation.md) | Obtenha uma coleção de objetos **userAccountInformation** .                                          |
+| [Criar personAnniversary](../api/profile-post-anniversaries.md)           | [personAnniversary](personanniversary.md)                      | Crie um novo **personAnniversary** postando na coleção de datas comemorativas.               |
+| [Listar aniversários](../api/profile-list-anniversaries.md)                 | coleção [personAnniversary](personanniversary.md)           | Obtenha uma coleção de objetos **personAnniversary** .                                               |
 | [Criar educationalActivity](../api/profile-post-educationalactivities.md) | [educationalActivity](educationalactivity.md)                  | Crie um novo **educationalActivity** postando na coleção **educationalActivities** . |
-| [Listar educationalActivities](../api/profile-list-educationalactivities.md) | coleção [educationalActivity](educationalactivity.md)       | Obtenha uma coleção de objetos **educationalActivity** .                                         |
-| [Criar email](../api/profile-post-emails.md)                          | [Email](itememail.md)                                      | Crie um novo **email** postando na coleção emails.                          |
-| [Listar emails](../api/profile-list-emails.md)                               | coleção [email](itememail.md)                           | Obter uma coleção de objetos de **email** .                                                   |
-| [Criar personInterest](../api/profile-post-interests.md)                  | [personInterest](personinterest.md)                            | Crie um novo **personInterest** postando na coleção interesses.                  |
-| [Listar interesses](../api/profile-list-interests.md)                         | coleção [personInterest](personinterest.md)                 | Obtenha uma coleção de objetos **personInterest** .                                              |
-| [Criar languageProficiency](../api/profile-post-languages.md)             | [languageProficiency](languageproficiency.md)                  | Crie um novo **languageProficiency** postando na coleção de idiomas.             |
-| [Idiomas de lista](../api/profile-list-languages.md)                         | coleção [languageProficiency](languageproficiency.md)       | Obtenha uma coleção de objetos **languageProficiency** .                                         |
-| [Nomes da lista](../api/profile-list-names.md)                                 | coleção [PersonName](personname.md)                         | Obtenha uma coleção de objetos **PersonName** .                                                  |
-| [Criar PersonName](../api/profile-post-names.md)                          | [personName](personName.md)                                    | Crie um novo objeto **PersonName** postando na coleção names.                   |
-| [Listar sites](../api/profile-list-websites.md)                           | coleção [personWebsite](personwebsite.md)                   | Obtenha uma coleção de objetos **personWebsite** .                                               |
-| [Criar um número de telefone](../api/profile-post-phones.md)                          | [Número de telefone](itemphone.md)                                      | Criar um novo meu telefone postando na coleção phones.                          |
-| [Listar telefones](../api/profile-list-phones.md)                               | coleção [Multiphone](itemphone.md)                           | Obter uma coleção de objetos de **Multiphone** .                                                   |
-| [Criar workPosition](../api/profile-post-positions.md)                    | [workPosition](workposition.md)                                | Crie um novo workPosition postando na coleção Positions.                    |
-| [Listar posições](../api/profile-list-positions.md)                         | coleção [workPosition](workposition.md)                     | Obtenha uma coleção de objetos **workPosition** .                                                |
-| [Criar projectParticipation](../api/profile-post-projects.md)             | [projectParticipation](projectparticipation.md)                | Criar um novo **projectParticipation** postando na coleção Projects.             |
-| [Listar projetos](../api/profile-list-projects.md)                           | coleção [projectParticipation](projectparticipation.md)     | Obtenha uma coleção de objetos **projectParticipation** .                                        |
-| [Criar skillProficiency](../api/profile-post-skills.md)                   | [skillProficiency](skillproficiency.md)                        | Crie um novo **skillProficiency** postando na coleção de habilidades.                   |
-| [Listar qualificações](../api/profile-list-skills.md)                               | coleção [skillProficiency](skillproficiency.md)             | Obtenha uma coleção de objetos **skillProficiency** .                                            |
-| [Criar conta da](../api/profile-post-webaccounts.md)                    | [conta da](webaccount.md)                                    | Crie uma nova **conta da webaccount** postando na coleção webaccounts.                    |
-| [Listar contas da webaccount](../api/profile-list-webaccounts.md)                     | coleção [Webaccount](webaccount.md)                         | Obtenha uma coleção de objetos **webaccount** .                                                  |
-| [Criar personWebsite](../api/profile-post-websites.md)                    | [personWebsite](personwebsite.md)                              | Crie um novo **personWebsite** postando na coleção sites.                    |
-| [Listar sites](../api/profile-list-websites.md)                           | coleção [personWebsite](personwebsite.md)                   | Obtenha uma coleção de objetos **personWebsite** .                                               |
+| [Listar educationalActivities](../api/profile-list-educationalactivities.md) | coleção [educationalActivity](educationalactivity.md)       | Obtenha uma coleção de objetos **educationalActivity** .                                            |
+| [Criar email](../api/profile-post-emails.md)                          | [Email](itememail.md)                                      | Crie um novo **email** postando na coleção emails.                              |
+| [Listar emails](../api/profile-list-emails.md)                               | coleção [email](itememail.md)                           | Obter uma coleção de objetos de **email** .                                                      |
+| [Criar personInterest](../api/profile-post-interests.md)                  | [personInterest](personinterest.md)                            | Crie um novo **personInterest** postando na coleção interesses.                      |
+| [Listar interesses](../api/profile-list-interests.md)                         | coleção [personInterest](personinterest.md)                 | Obtenha uma coleção de objetos **personInterest** .                                                  |
+| [Criar languageProficiency](../api/profile-post-languages.md)             | [languageProficiency](languageproficiency.md)                  | Crie um novo **languageProficiency** postando na coleção de idiomas.                 |
+| [Idiomas de lista](../api/profile-list-languages.md)                         | coleção [languageProficiency](languageproficiency.md)       | Obtenha uma coleção de objetos **languageProficiency** .                                             |
+| [Nomes da lista](../api/profile-list-names.md)                                 | coleção [PersonName](personname.md)                         | Obtenha uma coleção de objetos **PersonName** .                                                      |
+| [Criar PersonName](../api/profile-post-names.md)                          | [personName](personName.md)                                    | Crie um novo objeto **PersonName** postando na coleção names.                       |
+| [Listar sites](../api/profile-list-websites.md)                           | coleção [personWebsite](personwebsite.md)                   | Obtenha uma coleção de objetos **personWebsite** .                                                   |
+| [Criar um número de telefone](../api/profile-post-phones.md)                          | [Número de telefone](itemphone.md)                                      | Criar um novo meu telefone postando na coleção phones.                                  |
+| [Listar telefones](../api/profile-list-phones.md)                               | coleção [Multiphone](itemphone.md)                           | Obter uma coleção de objetos de **Multiphone** .                                                       |
+| [Criar workPosition](../api/profile-post-positions.md)                    | [workPosition](workposition.md)                                | Crie um novo workPosition postando na coleção Positions.                            |
+| [Listar posições](../api/profile-list-positions.md)                         | coleção [workPosition](workposition.md)                     | Obtenha uma coleção de objetos **workPosition** .                                                    |
+| [Criar projectParticipation](../api/profile-post-projects.md)             | [projectParticipation](projectparticipation.md)                | Criar um novo **projectParticipation** postando na coleção Projects.                 |
+| [Listar projetos](../api/profile-list-projects.md)                           | coleção [projectParticipation](projectparticipation.md)     | Obtenha uma coleção de objetos **projectParticipation** .                                            |
+| [Criar skillProficiency](../api/profile-post-skills.md)                   | [skillProficiency](skillproficiency.md)                        | Crie um novo **skillProficiency** postando na coleção de habilidades.                       |
+| [Listar qualificações](../api/profile-list-skills.md)                               | coleção [skillProficiency](skillproficiency.md)             | Obtenha uma coleção de objetos **skillProficiency** .                                                |
+| [Criar conta da](../api/profile-post-webaccounts.md)                    | [conta da](webaccount.md)                                    | Crie uma nova **conta da webaccount** postando na coleção webaccounts.                        |
+| [Listar contas da webaccount](../api/profile-list-webaccounts.md)                     | coleção [Webaccount](webaccount.md)                         | Obtenha uma coleção de objetos **webaccount** .                                                      |
+| [Criar personWebsite](../api/profile-post-websites.md)                    | [personWebsite](personwebsite.md)                              | Crie um novo **personWebsite** postando na coleção sites.                        |
+| [Listar sites](../api/profile-list-websites.md)                           | coleção [personWebsite](personwebsite.md)                   | Obtenha uma coleção de objetos **personWebsite** .                                                   |
 
 ## <a name="properties"></a>Propriedades
 
@@ -61,20 +61,20 @@ Representa propriedades descritivas de uma pessoa em um locatário. Essas propri
 
 ## <a name="relationships"></a>Relações
 
-| Relação          | Tipo                                                         | Descrição         |
-|:----------------------|:-------------------------------------------------------------|:--------------------|
-|Count                |coleção [userAccountInformation](useraccountinformation.md)| Representa informações especificamente associadas à conta de um usuário. Somente leitura. Anulável.|
-|datas especiais          |coleção [personAnniversary](personanniversary.md)          | Representa os detalhes de datas significativas associadas a uma pessoa. Somente leitura. Anulável.|
+| Relação          | Tipo                                                         | Descrição                                                                                                                                    |
+|:----------------------|:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+|Count                |coleção [userAccountInformation](useraccountinformation.md)| Representa informações especificamente associadas à conta de um usuário. Somente leitura. Anulável.                                                             |
+|datas especiais          |coleção [personAnniversary](personanniversary.md)          | Representa os detalhes de datas significativas associadas a uma pessoa. Somente leitura. Anulável.                                                      |
 |educationalActivities  |coleção [educationalActivity](educationalactivity.md)      | Representa os dados que um usuário forneceu relacionados ao Undergraduate, graduado, dograduação ou outras atividades educacionais. Somente leitura. Anulável.|
-|email                 |coleção [email](itememail.md)                          | Representa informações detalhadas sobre endereços de email associados ao usuário. Somente leitura. Anulável.|
-|interests              |coleção [personInterest](personinterest.md)                | Fornece informações detalhadas sobre os interesses que o usuário tenha associado a si mesmos em vários serviços. Somente leitura. Anulável.|
-|Idiomas              |coleção [languageProficiency](languageproficiency.md)      | Representa informações detalhadas sobre os idiomas que um usuário adicionou ao perfil. Somente leitura. Anulável.|
-|telefones                 |coleção [Multiphone](itemphone.md)                          | Representa informações detalhadas sobre números de telefone associados a um usuário em vários serviços. Somente leitura. Anulável.|
-|as              |coleção [workPosition](workposition.md)                    | Representa informações detalhadas sobre posições de trabalho associadas ao perfil de um usuário. Somente leitura. Anulável.|
-|Projetos               |coleção [projectParticipation](projectparticipation.md)    | Representa informações detalhadas sobre os projetos associados a um usuário. Somente leitura. Anulável.|
-|skills                 |coleção [skillProficiency](skillproficiency.md)            | Representa informações detalhadas sobre as habilidades associadas a um usuário em vários serviços. Somente leitura. Anulável.|
-|contas da            |coleção [Webaccount](webaccount.md)                        | Representa contas da Web que o usuário indicou que usa ou adicionou ao perfil do usuário. Somente leitura. Anulável.|
-|websites               |coleção [personWebsite](personwebsite.md)                  | Representa informações detalhadas sobre sites associados a um usuário em vários serviços. Somente leitura. Anulável.|
+|email                 |coleção [email](itememail.md)                          | Representa informações detalhadas sobre endereços de email associados ao usuário. Somente leitura. Anulável.                                           |
+|interests              |coleção [personInterest](personinterest.md)                | Fornece informações detalhadas sobre os interesses que o usuário tenha associado a si mesmos em vários serviços. Somente leitura. Anulável.                |
+|Idiomas              |coleção [languageProficiency](languageproficiency.md)      | Representa informações detalhadas sobre os idiomas que um usuário adicionou ao perfil. Somente leitura. Anulável.                                   |
+|telefones                 |coleção [Multiphone](itemphone.md)                          | Representa informações detalhadas sobre números de telefone associados a um usuário em vários serviços. Somente leitura. Anulável.                           |
+|as              |coleção [workPosition](workposition.md)                    | Representa informações detalhadas sobre posições de trabalho associadas ao perfil de um usuário. Somente leitura. Anulável.                                    |
+|Projetos               |coleção [projectParticipation](projectparticipation.md)    | Representa informações detalhadas sobre os projetos associados a um usuário. Somente leitura. Anulável.                                                    |
+|skills                 |coleção [skillProficiency](skillproficiency.md)            | Representa informações detalhadas sobre as habilidades associadas a um usuário em vários serviços. Somente leitura. Anulável.                                  |
+|contas da            |coleção [Webaccount](webaccount.md)                        | Representa contas da Web que o usuário indicou que usa ou adicionou ao perfil do usuário. Somente leitura. Anulável.                               |
+|websites               |coleção [personWebsite](personwebsite.md)                  | Representa informações detalhadas sobre sites associados a um usuário em vários serviços. Somente leitura. Anulável.                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

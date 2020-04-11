@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: Check-in de um recurso DriveItem com check-out, que disponibiliza a versão do documento para outras pessoas.
-ms.date: 09/10/2017
-title: Check-in de arquivos
+description: Faça check-in em um recurso de DriveItem com check-out, que torna a versão do documento disponível para outras pessoas.
+title: 'driveItem: checkin'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ee6a711d1b065784a93a2a2363cfdc6ffbede1a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cc008e18bd70acfed0bb6b951d3694f3cc9593d
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433017"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227579"
 ---
-# <a name="check-in-changes-to-a-driveitem-resource"></a>Alterações de check-in em um recurso de DriveItem
+# <a name="driveitem-checkin"></a>driveItem: checkin
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check-in de um recurso DriveItem com check-out, que disponibiliza a versão do documento para outras pessoas.
+Faça check-in em um recurso de **driveItem** com check-out, que torna a versão do documento disponível para outras pessoas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 |   Nome    | Valor  |                                                Descrição                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Opcional. O status desejado do documento após a conclusão da operação de check-in. Pode ser `published` ou não especificado. |
+| checkInAs | string | Opcional. O status do documento após a conclusão da operação de check-in. Pode ser `published` ou não especificado. |
 | comment   | string | Um comentário de check-in comentário associado à versão.                                                   |
 
 ## <a name="example"></a>Exemplo

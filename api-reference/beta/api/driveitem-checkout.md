@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: Check-out de um recurso driveItem para impedir que outras pessoas editem o documento e que suas alterações fiquem visíveis até que o documento passe por check-in.
-ms.date: 09/10/2017
-title: Fazer check-out de arquivos
+description: Confira um recurso driveItem para impedir que outras pessoas editem o documento e suas alterações sejam visíveis até que a documentação esteja marcada.
+title: 'driveItem: checkout'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4159882b29dc69429a7b99bb89d1e8051d6e9c03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69f01b949d38d76be24834151c10581589b75e2e
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432940"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227586"
 ---
-# <a name="check-out-a-driveitem-resource"></a>Fazer check-out do recurso DriveItem
+# <a name="driveitem-checkout"></a>driveItem: checkout
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check-out de um recurso driveItem para impedir que outras pessoas editem o documento e que suas alterações fiquem visíveis até que o documento passe por [check-in](driveitem-checkin.md).
+Confira um recurso **driveItem** para impedir que outras pessoas editem o documento e impedir que as alterações sejam visíveis até que seja [feito o check-in](driveitem-checkin.md)documentado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -75,7 +74,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a chamada API retorna um código `204 No content`.
+Se tiver êxito, a chamada de `204 No content`API retornará.
 
 <!-- { "blockType": "response" } -->
 

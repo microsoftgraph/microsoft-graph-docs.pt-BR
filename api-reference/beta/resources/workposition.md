@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 086273e54d923054ce8e71ef1c67fb2bb4f7002a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d55a6d2572ec5ecbe190d8ab7dde3b2a7dd67f09
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519061"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228856"
 ---
 # <a name="workposition-resource-type"></a>tipo de recurso workPosition
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,18 +24,18 @@ Esse tipo de recurso herda de [Myfacet](itemfacet.md).
 
 ## <a name="methods"></a>Métodos
 
-| Método                                         | Tipo de retorno                     | Descrição                                               |
-|:-----------------------------------------------|:--------------------------------|:----------------------------------------------------------|
-| [Obter workPosition](../api/workposition-get.md) | [workPosition](workposition.md) | Leia as propriedades e os relacionamentos de um objeto **workPosition** . |
-| [Atualizar workPosition](../api/workposition-update.md)        | [workPosition](workposition.md) | Atualizar um objeto **workPosition** .                               |
-| [Excluir workPosition](../api/workposition-delete.md)        | Nenhum                            | Excluir um objeto **workPosition** .                               |
+| Método                                                      | Tipo de retorno                     | Descrição                                                         |
+|:------------------------------------------------------------|:--------------------------------|:--------------------------------------------------------------------|
+| [Obter workPosition](../api/workposition-get.md)              | [workPosition](workposition.md) | Leia as propriedades e os relacionamentos de um objeto **workPosition** . |
+| [Atualizar workPosition](../api/workposition-update.md)        | [workPosition](workposition.md) | Atualizar um objeto **workPosition** .                                   |
+| [Excluir workPosition](../api/workposition-delete.md)        | Nenhum                            | Excluir um objeto **workPosition** .                                   |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade             | Tipo                               | Descrição                                                                                                |
-|:---------------------|:-----------------------------------|:-----------------------------------------------------------------------------------------------------------|
-|categories            |String collection                   | Contém categorias que um usuário associou à posição (por exemplo, transformação digital, pessoas). |
-|detalhada                |[positionDetail](positiondetail.md) | Contém detalhes sobre as posições de emprego atuais e anteriores do usuário.                                 |
+| Propriedade             | Tipo                                | Descrição                                                                                                |
+|:---------------------|:------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|categories            | String collection                   | Contém categorias que um usuário associou à posição (por exemplo, transformação digital, pessoas). |
+|detalhada                | [positionDetail](positiondetail.md) | Contém detalhes sobre as posições de emprego atuais e anteriores do usuário.                                |
 
 ## <a name="relationships"></a>Relações
 

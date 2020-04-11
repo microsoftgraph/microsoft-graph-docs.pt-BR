@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6662ab205e390ae72d283d5015aa346c4b6fc2b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c8b5a3711c7abdbbdd8ddba8f7a36c85978718b
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520503"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228870"
 ---
 # <a name="skillproficiency-resource-type"></a>tipo de recurso skillProficiency
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,18 +24,18 @@ Herda de [Myfacet](itemfacet.md).
 
 ## <a name="methods"></a>Métodos
  
-| Método                                                 | Tipo de retorno                             | Descrição                                                   |
-|:-------------------------------------------------------|:----------------------------------------|:--------------------------------------------------------------|
-| [Obter skillProficiency](../api/skillproficiency-get.md) | [skillProficiency](skillproficiency.md) | Leia as propriedades e os relacionamentos de um objeto **skillProficiency** . |
-| [Atualizar skillProficiency](../api/skillproficiency-update.md)            | [skillProficiency](skillproficiency.md) | Atualizar um objeto **skillProficiency** .                               |
-| [Excluir skillProficiency](../api/skillproficiency-delete.md)            | Nenhum                                    | Excluir um objeto **skillProficiency** .                               |
+| Método                                                         | Tipo de retorno                             | Descrição                                                             |
+|:---------------------------------------------------------------|:----------------------------------------|:------------------------------------------------------------------------|
+| [Obter skillProficiency](../api/skillproficiency-get.md)         | [skillProficiency](skillproficiency.md) | Leia as propriedades e os relacionamentos de um objeto **skillProficiency** . |
+| [Atualizar skillProficiency](../api/skillproficiency-update.md)   | [skillProficiency](skillproficiency.md) | Atualizar um objeto **skillProficiency** .                                   |
+| [Excluir skillProficiency](../api/skillproficiency-delete.md)   | Nenhum                                    | Excluir um objeto **skillProficiency** .                                   |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo             | Descrição                                                                                                                        |
 |:-------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |String collection | Contém categorias que um usuário associou à habilidade (por exemplo, pessoal, profissional, hobby).                                       |
-|displayName   |Cadeia de caracteres            | Contém um nome amigável para a habilidade.                                                                                            |      
+|categories    |String collection | Contém categorias que um usuário associou à habilidade (por exemplo, pessoal, profissional, hobby).                             |
+|displayName   |Cadeia de caracteres            | Contém um nome amigável para a habilidade.                                                                                            |
 |proficiência   |string            | Os possíveis valores são: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
 |webUrl        |String            | Contém um link para uma fonte de informações sobre a habilidade.                                                                          |
 

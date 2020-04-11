@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a1f77cfbfcdadad38be834af42321cc20006de6a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b51f1f16cb55d69c043a6b76b4ea98a4684bf906
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455197"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228664"
 ---
 # <a name="list-emails"></a>Listar emails
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/emails 
+GET /me/profile/emails
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

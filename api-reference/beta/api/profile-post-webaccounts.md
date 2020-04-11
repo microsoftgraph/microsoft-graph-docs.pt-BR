@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 36c519f1d6fa3f7236eafe9a005e3e80451a9a0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc2619702a514bed8776d501ef26440f3a804ed2
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455043"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228615"
 ---
 # <a name="create-webaccount"></a>Criar conta da
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All |
-| Aplicativo                            | User.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | User. ReadWrite, User. ReadWrite. All          |
+| Delegado (conta pessoal da Microsoft) | User. ReadWrite, User. ReadWrite. All          |
+| Aplicativo                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,9 +40,9 @@ POST /me/profile/webAccounts
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório.|
+| Nome           | Descrição                 |
+|:---------------|:----------------------------|
+| Autorização  | {token} de portador. Obrigatório.   |
 | Content-Type   | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
