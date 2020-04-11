@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 2bf38135898675d16464b110951bada83f631548
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0742ac1f35e10cfbed09ca164d4cb2af6a1c8484
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215746"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229364"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -17,6 +17,16 @@ Confira os destaques das novidades do Microsoft Graph e como você pode [compart
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
 
+## <a name="april-2020-new-and-generally-available"></a>Abril de 2020: novo e geralmente disponível.
+
+### <a name="calendar"></a>Calendário
+- [Compartilhar ou delegar calendários](outlook-share-or-delegate-calendar.md) de forma programática, com uma maior paridade com a experiência do usuário do Outlook. Além de controlar as permissões do usuário atual e o status de compartilhamento de um calendário:
+  - Para cada [calendário](/graph/api/resources/calendar?view=graph-rest-1.0), você pode gerenciar as [permissões](/graph/api/resources/calendarpermission?view=graph-rest-1.0) de cada usuário com o qual o calendário é compartilhado. 
+  - Para cada [caixa de correio](/graph/api/resources/mailboxsettings?view=graph-rest-1.0), você pode especificar se um representante, proprietário de caixa de correio ou ambos receberão mensagens da reunião e respostas da reunião. 
+- [Criar ou atualizar um evento como uma reunião online](outlook-calendar-online-meetings.md):
+  - Para cada **calendário**, especifique os provedores de reuniões online permitidos e padrão.
+  - Crie ou atualize um [evento](/graph/api/resources/event?view=graph-rest-1.0) que esteja disponível online e forneça detalhes para que os participantes possam ingressar na reunião online. 
+  - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl**.
 
 ## <a name="april-2020-new-in-preview-only"></a>Março de 2020: Novo somente para visualização
 

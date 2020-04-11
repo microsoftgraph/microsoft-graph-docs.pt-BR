@@ -6,12 +6,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 15dfedfda092f2c4a742699f40359de51d9ffc0e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 60ca96d7c29bd5c0a31412d8016cc2d17d6515b8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108561"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229490"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -202,6 +202,8 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | [Excluir permissão](../api/permission-delete.md)         | Sem Conteúdo | Remove a permissão do driveItem.
 | [Obter canal WebSocket][getWebSocket]                    | [assinatura][] | Recebe notificações de alteração quase em tempo real para uma unidade usando o socket.io.
 | [Item de visualização][item-preview]                             | objeto json | Obtenha URLs incorporáveis de curta duração para um item de modo a renderizar uma visualização temporária.
+| [Fazer ceck-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Fazer check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Obter análises]: ../api/itemanalytics-get.md

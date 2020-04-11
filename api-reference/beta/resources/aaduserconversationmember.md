@@ -5,16 +5,18 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 058164d44ef6d9d6ba6667cf1cb7249bf57c2a83
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: caf8336d58ee40fcc1bf51b569cf334ba99294fc
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633507"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228349"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>tipo de recurso aadUserConversationMember
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
+
+
 
 Representa um usuário do Azure Active Directory em um [chat](chat.md) ou [canal](channel.md). Esse tipo é herdado do [conversationMember](conversationmember.md).
 

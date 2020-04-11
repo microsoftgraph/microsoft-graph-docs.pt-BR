@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 1d3a0df8c2e6bc13dee12f6d82c65b432b736c73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e38ab316864cb9cf9426a47766a4c8dbe7b062a
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532970"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229476"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -77,11 +77,14 @@ Esse recurso permite:
 |importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
+|isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 |isOrganizer|Booliano|Defina como verdadeiro se o proprietário do calendário (especificado pela propriedade do **proprietário** do [calendário](calendar.md)) for o organizador do evento (especificado pela propriedade do **organizador** do **evento**). Isso também se aplica se um representante organizou o evento em nome do proprietário.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|O local do evento.|
 |locations|Coleção [location](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Detalhes para o participante entrar na reunião online. Somente leitura.|
+|onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
 |onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica um evento como uma reunião online como o Skype. Somente leitura.|
 |organizer|[recipient](recipient.md)|O organizador do evento.|
 |originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
@@ -199,11 +202,14 @@ Veja a seguir uma representação JSON do recurso
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isOnlineMeeting": true,
   "isOrganizer": true,
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
+  "onlineMeetingProvider": "string",
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

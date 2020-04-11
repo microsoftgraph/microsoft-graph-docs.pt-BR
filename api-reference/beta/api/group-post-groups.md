@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 893c03041d8b601ed101d7e6e61775738c040058
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: ebdf299679daaef688078dd69038b1a568e30a26
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144230"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218581"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -184,7 +184,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-an-office-365-group-with-an-owner-and-members"></a>Exemplo 2: Criando um grupo do Office 365 com um proprietário e membros
 
-O exemplo a seguir cria um grupo do Office 365 com um proprietário e membros especificados.
+O exemplo a seguir cria um grupo do Office 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) ou o envio em lotes JSON.
 
 #### <a name="request"></a>Solicitação
 

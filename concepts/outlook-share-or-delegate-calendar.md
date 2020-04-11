@@ -4,14 +4,14 @@ description: No Outlook, um proprietário de calendário pode compartilhá-lo co
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: c3fa2e10a94cba583ec6f2b90162dc56c7a17cef
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 7654928f0fab1080f7f85eee48186964957224dc
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774769"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229420"
 ---
-# <a name="share-or-delegate-a-calendar-in-outlook-preview"></a>Compartilhar ou delegar um calendário no Outlook (visualização)
+# <a name="share-or-delegate-a-calendar-in-outlook"></a>Compartilhar ou delegar um calendário no Outlook
 
 No Outlook, o proprietário do calendário pode compartilhá-lo com outro usuário. O proprietário pode especificar quais informações em eventos não particulares podem ser visualizadas e pode conceder acesso de gravação para os usuários na mesma organização. 
 
@@ -33,9 +33,6 @@ Este artigo descreve programaticamente a execução das seguintes tarefas com um
 - [Obtenha ou defina a configuração de caixa de correio para receber solicitações de reunião e respostas para um calendário delegado](#get-or-set-mailbox-setting-to-receive-meeting-requests-and-responses).
 - [Exclua um compartilhamento ou um representante de um calendário](#delete-a-sharee-or-delegate-of-a-calendar).
 
-> [!NOTE]
-> As tarefas anteriores usam a API para compartilhamento e delegação de calendário que está em [visualização e disponível apenas na versão beta](versioning-and-support.md#beta-version), com exceção das quatro propriedades do [calendário](/graph/api/resources/calendar?view=graph-rest-1.0): **canEdit**, **canShare**, **canViewPrivateItems** e **owner**.
-
 Os aplicativos também podem fazer o seguinte usando a API que geralmente está disponível:
 
 - [Obter calendário do Outlook compartilhado ou delegado ou seus eventos](outlook-get-shared-events-calendars.md)
@@ -48,7 +45,7 @@ Nesta seção:
 - [Proprietário do calendário: obter informações e permissões de compartilhamento e delegação](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
 - [Proprietário do calendário: atualizar permissões para um compartilhamento existente ou delegado em um calendário](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
 
-Todos os calendários estão associados a um conjunto de objetos [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta), cada um deles descreve um compartilhamento ou delegado e a permissão associada que o proprietário do calendário configurou. A enumeração [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values?view=graph-rest-beta) define o intervalo de permissões que o Microsoft Graph dá suporte:
+Todos os calendários estão associados a um conjunto de objetos [calendarPermission](/graph/api/resources/calendarpermission), cada um deles descreve um compartilhamento ou delegado e a permissão associada que o proprietário do calendário configurou. A enumeração [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values) define o intervalo de permissões que o Microsoft Graph dá suporte:
 
 - `none` Esse valor se aplica somente a `My Organization` que não tem permissões para o calendário. Isso não se aplica a usuários individuais, pois somente os usuários com permissões estão associados a um objeto **calendarPermission** para o calendário.
 - `freeBusyRead` O sharee pode exibir o status de disponibilidade do proprietário, mas não outros detalhes no calendário.
@@ -81,7 +78,7 @@ O exemplo a seguir mostra, com o consentimento de Alex ou administrador, como ob
   - **emailAddress** especifica a subpropriedade **name** como "My Organization"; o **endereço**de "My Organization" é nulo.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarperms"
@@ -89,15 +86,15 @@ O exemplo a seguir mostra, com o consentimento de Alex ou administrador, como ob
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calendar/calendarPermissions
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarperms-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarperms-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendarperms-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -166,7 +163,7 @@ Com exceção da propriedade **função**, você não pode atualizar outras prop
 O exemplo a seguir atualiza a propriedade **função**, alterando a permissão de um compartilhamento existente, Adele, de `read` a `write` para o calendário personalizado "festas das crianças".
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendarperm",
@@ -180,15 +177,15 @@ Content-type: application/json
   "role": "write"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarperm-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarperm-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendarperm-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -250,7 +247,7 @@ Observe as seguintes propriedades de Alex:
 
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar_props_owner",
@@ -259,15 +256,15 @@ Observe as seguintes propriedades de Alex:
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calendar
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-props-owner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-props-owner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-props-owner-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -329,7 +326,7 @@ Observe as seguintes propriedades:
 > Um compartilhamento ou representante só pode personalizar a propriedade **nome** de um calendário compartilhado/delegado. A atualização é visível apenas para eles mesmos; o proprietário do calendário não vê essas alterações no nome do calendário.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar_props_delegate",
@@ -338,15 +335,15 @@ Observe as seguintes propriedades:
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/meganb@contoso.OnMicrosoft.com/calendars/AAMkADlAABhbftjAAA=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-props-delegate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-props-delegate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-props-delegate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -399,7 +396,7 @@ Nesta seção:
 
 Dependendo do nível de delegação que um proprietário de calendário prefere, o proprietário poderá especificar quem deve receber solicitações de reunião e respostas para gerenciar as reuniões no calendário. 
 
-Programaticamente, você pode obter ou definir a propriedade **delegateMeetingMessageDeliveryOptions** do proprietário do calendário [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) para especificar para quem o Outlook deve direcionar as instâncias[eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta) e [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta):
+Programaticamente, você pode obter ou definir a propriedade **delegateMeetingMessageDeliveryOptions** do proprietário do calendário [mailboxSettings](/graph/api/resources/mailboxsettings) para especificar para quem o Outlook deve direcionar as instâncias[eventMessageRequest](/graph/api/resources/eventmessagerequest) e [eventMessageResponse](/graph/api/resources/eventmessageresponse):
 
 - `sendToDelegateOnly`
 
@@ -418,7 +415,7 @@ Essa é uma configuração para toda a caixa de correio; portanto, a mesma confi
 O exemplo a seguir obtém **mailboxSettings** de um proprietário de calendário que permite a solicitação de reunião direta do Outlook e respostas a somente delegados de calendário, ou seja, **delegateMeetingMessageDeliveryOptions** está definida como `sendToDelegateOnly`.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_owner",
@@ -427,15 +424,15 @@ O exemplo a seguir obtém **mailboxSettings** de um proprietário de calendário
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/mailboxsettings
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-owner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-owner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-owner-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -499,7 +496,7 @@ Content-type: application/json
 O exemplo a seguir atualiza a propriedade **delegateMeetingMessageDeliveryOptions** para `sendToDelegateAndPrincipal`, para que o Outlook solicite solicitações de reunião e respostas do calendário delegado a todos os delegados e o proprietário.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_mailboxsettings_owner",
@@ -513,15 +510,15 @@ Content-type: application/json
   "delegateMeetingMessageDeliveryOptions": "sendToDelegateAndPrincipal"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-mailboxsettings-owner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/patch-mailboxsettings-owner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-mailboxsettings-owner-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -550,7 +547,7 @@ Content-type: application/json
 No exemplo a seguir, Alex exclui Sara no compartilhamento do calendário de "festas das crianças".
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_sharee",
@@ -559,15 +556,15 @@ No exemplo a seguir, Alex exclui Sara no compartilhamento do calendário de "fes
 ```http
 DELETE https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calendars/AAMkADAwAABf02bAAAA=/calendarPermissions/L289RXhjaGFuZ2VMYWJTWVnYW5C
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-sharee-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-sharee-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-sharee-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -598,4 +595,4 @@ Saiba mais sobre:
 - [Obter eventos do Outlook em um calendário compartilhado ou delegado](outlook-get-shared-events-calendars.md)
 - [Criar eventos do Outlook em um calendário compartilhado ou delegado](outlook-create-event-in-shared-delegated-calendar.md)
 - [Por que se integrar com o calendário do Outlook](outlook-calendar-concept-overview.md)
-- A [API de calendário](/graph/api/resources/calendar?view=graph-rest-beta) do Outlook no Microsoft Graph beta.
+- A [API de calendário](/graph/api/resources/calendar) do Outlook no Microsoft Graph beta.

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c710b37455d02d28f6d599296c17e5f2ccc55aef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46733b71c66094fb6bb8de164f62078e52ae1b92
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517317"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229378"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -65,9 +65,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina.|
 |importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
+|isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |location|[Location](../resources/location.md)|O local do evento.|
 |locations|Coleção [location](../resources/location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
+|onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
 |responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
@@ -88,7 +90,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -112,6 +114,8 @@ Content-length: 285
   "recurrence": null,
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true
 }
 ```
@@ -130,7 +134,7 @@ Content-length: 285
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -153,7 +157,14 @@ Content-length: 285
   "recurrence": null,  
   "iCalUId": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
+  "isReminderOn": true,
+  "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+91 22 6241 6885"
+  }
 }
 ```
 

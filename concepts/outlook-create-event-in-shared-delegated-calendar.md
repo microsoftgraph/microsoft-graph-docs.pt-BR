@@ -4,12 +4,12 @@ description: No Outlook, os clientes podem compartilhar um calendário com outro
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 085356c6cd6f356e300b4b48fb89840bf7d6df15
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 006b4bf1e9a3729979e523e16d95bf0affc02e89
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774614"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229504"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Crie eventos do Outlook em um calendário compartilhado ou delegado
 
@@ -17,7 +17,7 @@ No Outlook, os clientes podem compartilhar um calendário com outros usuários e
 
 Programaticamente, o Microsoft Graph oferece suporte à leitura e à criação de eventos em calendários que foram compartilhadas por outros usuários, além de leitura da calendários compartilhados e da atualização do nome do calendário para compartilhados. O suporte também se aplica a calendários que foram delegados. O restante deste artigo discorre sobre a criação de um evento de reunião em um calendário compartilhado ou delegado. Para obter eventos, consulte[Obter eventos do Outlook em um calendário compartilhado ou delegado](outlook-get-shared-events-calendars.md).
 
-A instrução a seguir usa o cenário de exemplo em que Alex delega seu calendário principal à Adele no Outlook e mantém a configuração de caixa de correio do Outlook padrão para direcionar solicitações de reunião e respostas apenas às pessoas delegadas. (Na versão beta, essa configuração corresponde à propriedade **delegateMeetingMessageDeliveryOptions** do [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) do Alex, definida como o valor padrão `sendToDelegateOnly`). 
+A instrução a seguir usa o cenário de exemplo em que Alex delega seu calendário principal à Adele no Outlook e mantém a configuração de caixa de correio do Outlook padrão para direcionar solicitações de reunião e respostas apenas às pessoas delegadas. (Esta configuração corresponde à propriedade **delegateMeetingMessageDeliveryOptions** de [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) do Alex, definida como o valor padrão `sendToDelegateOnly`). 
 
 A instrução passo a passo descreve algumas etapas subsequentes:
 1. [Adele obtém o calendário que Alex delegou a ela](#step-1-adele-gets-the-delegated-calendar).
@@ -38,7 +38,7 @@ Caso Alex tenha compartilhado com Adele mas não tiver delegado seu calendário 
 Entre como Adele, obtenha os calendários a que ela tem acesso e identifique aquele que Alex delegou a ela, para usá-lo na próxima etapa para criar um evento no calendário. 
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_Adele_calendars"
@@ -46,19 +46,19 @@ Entre como Adele, obtenha os calendários a que ela tem acesso e identifique aqu
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendars
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-adele-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-adele-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-adele-calendars-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-adele-calendars-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -284,7 +284,7 @@ Ao entregar a solicitação de reunião, o Outlook cria automaticamente um[event
 Conectado como Clara, obtenha o [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)e **event** que estão associados à solicitação de reunião da etapa 2:
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADADVj3fyAABZ5hYdAAA="],
@@ -293,19 +293,19 @@ Conectado como Clara, obtenha o [eventMessage](/graph/api/resources/eventmessage
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADADVj3fyAABZ5hYdAAA=?$expand=microsoft.graph.eventMessage/event
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-and-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-and-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-and-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-eventmessage-and-event-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -507,7 +507,7 @@ Content-type: application/json
 Conectada como Clara, define o **evento** como provisório e inclui uma mensagem na resposta:
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADADVj3fyAABZ5ieyAAA="],
@@ -522,19 +522,19 @@ Content-type: application/json
   "sendResponse": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-reply-tentativelyaccept-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-reply-tentativelyaccept-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-reply-tentativelyaccept-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-reply-tentativelyaccept-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -559,7 +559,7 @@ Como Adele é uma representante do calendário principal de Alex, Adele recebe t
 Conectada como Adele, obtem [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) que representa a resposta de Clara na etapa 4:
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADI4oeRpAABf0HJUAAA="],
@@ -568,19 +568,19 @@ Conectada como Adele, obtem [eventMessage](/graph/api/resources/eventmessage?vie
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI4oeRpAABf0HJUAAA=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-get-reply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-get-reply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-get-reply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-get-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -669,7 +669,7 @@ Como Alex manteve o padrão de fazer com que o Outlook direcionasse todas as sol
 Conectado como Alex, obtem o [evento](/graph/api/resources/event?view=graph-rest-1.0) que Adele criou na etapa 2 e obtem respostas da propriedade **participantes**:
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADJXJGu0AABf02qwAAA="],
@@ -678,19 +678,19 @@ Conectado como Alex, obtem o [evento](/graph/api/resources/event?view=graph-rest
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-get-responses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-get-responses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-get-responses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-get-responses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

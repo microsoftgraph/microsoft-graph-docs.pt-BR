@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 87215fd2de22fad78f35c4627510a3673ae34187
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: deea7afbb170c72cf2fe91834877c1f6ddd6e102
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109072"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229623"
 ---
 # <a name="create-calendar"></a>Criar calendário
 
@@ -46,7 +46,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [calendar
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [calendar](../resources/calendar.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +81,7 @@ Content-type: application/json
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -102,6 +102,12 @@ Content-type: application/json
     "canShare":true,
     "canViewPrivateItems":true,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"
