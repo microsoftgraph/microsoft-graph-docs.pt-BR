@@ -1,0 +1,108 @@
+---
+title: Obter activityBasedTimeoutPolicy
+description: Obter as propriedades de um objeto activityBasedTimeoutPolicy.
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 59a51b16b04f1d5930d13074d4f372cffee2b8d9
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227768"
+---
+# <a name="get-activitybasedtimeoutpolicy"></a><span data-ttu-id="b0e46-103">Obter activityBasedTimeoutPolicy</span><span class="sxs-lookup"><span data-stu-id="b0e46-103">Get activityBasedTimeoutPolicy</span></span>
+
+<span data-ttu-id="b0e46-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b0e46-104">Namespace: microsoft.graph</span></span>
+
+
+
+<span data-ttu-id="b0e46-105">Obter as propriedades de um objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="b0e46-105">Get the properties of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="b0e46-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b0e46-106">Permissions</span></span>
+
+<span data-ttu-id="b0e46-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b0e46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="b0e46-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b0e46-109">Permission type</span></span>                        | <span data-ttu-id="b0e46-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b0e46-110">Permissions (from least to most privileged)</span></span> |
+|:---------------------------------------|:--------------------------------------------|
+| <span data-ttu-id="b0e46-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b0e46-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b0e46-112">Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="b0e46-112">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+| <span data-ttu-id="b0e46-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b0e46-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0e46-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b0e46-114">Not supported.</span></span> |
+| <span data-ttu-id="b0e46-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b0e46-115">Application</span></span>                            | <span data-ttu-id="b0e46-116">Policy. Read. All, Policy. ReadWrite. ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="b0e46-116">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="b0e46-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b0e46-117">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /policies/activityBasedTimeoutPolicies/{id}
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="b0e46-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b0e46-118">Optional query parameters</span></span>
+
+<span data-ttu-id="b0e46-119">Este método oferece suporte `$select` aos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b0e46-119">This method supports the `$select` OData query parameters to help customize the response.</span></span> <span data-ttu-id="b0e46-120">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b0e46-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="b0e46-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b0e46-121">Request headers</span></span>
+
+| <span data-ttu-id="b0e46-122">Nome</span><span class="sxs-lookup"><span data-stu-id="b0e46-122">Name</span></span>      |<span data-ttu-id="b0e46-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="b0e46-123">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="b0e46-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="b0e46-124">Authorization</span></span> | <span data-ttu-id="b0e46-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b0e46-p103">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="b0e46-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b0e46-127">Request body</span></span>
+
+<span data-ttu-id="b0e46-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b0e46-128">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="b0e46-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="b0e46-129">Response</span></span>
+
+<span data-ttu-id="b0e46-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b0e46-130">If successful, this method returns a `200 OK` response code and the requested [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="b0e46-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b0e46-131">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="b0e46-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b0e46-132">Request</span></span>
+
+<span data-ttu-id="b0e46-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b0e46-133">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_activitybasedtimeoutpolicy"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies/{id}
+```
+
+### <a name="response"></a><span data-ttu-id="b0e46-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="b0e46-134">Response</span></span>
+
+<span data-ttu-id="b0e46-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b0e46-135">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="b0e46-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b0e46-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.activityBasedTimeoutPolicy"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "definition": [
+    "definition-value"
+  ],
+  "displayName": "displayName-value",
+  "isOrganizationDefault": true,
+  "id": "id-value"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get activityBasedTimeoutPolicy",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
