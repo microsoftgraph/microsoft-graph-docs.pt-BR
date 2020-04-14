@@ -1,35 +1,37 @@
 ---
 title: Criar deviceManagementDomainJoinConnector
 description: Criar um novo objeto deviceManagementDomainJoinConnector.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 787bbde0438b9a8f8a28e42c591436cc70f1f406
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 13b6e4dd2c2aff14b4c1003cf354e126d37ab75e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803109"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462642"
 ---
-# <a name="create-devicemanagementdomainjoinconnector"></a><span data-ttu-id="e490e-103">Criar deviceManagementDomainJoinConnector</span><span class="sxs-lookup"><span data-stu-id="e490e-103">Create deviceManagementDomainJoinConnector</span></span>
+# <a name="create-devicemanagementdomainjoinconnector"></a><span data-ttu-id="db497-103">Criar deviceManagementDomainJoinConnector</span><span class="sxs-lookup"><span data-stu-id="db497-103">Create deviceManagementDomainJoinConnector</span></span>
 
-> <span data-ttu-id="e490e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e490e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="db497-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="db497-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e490e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e490e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="db497-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="db497-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="e490e-106">Criar um novo objeto [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) .</span><span class="sxs-lookup"><span data-stu-id="e490e-106">Create a new [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object.</span></span>
+> <span data-ttu-id="db497-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="db497-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e490e-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e490e-107">Prerequisites</span></span>
-<span data-ttu-id="e490e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e490e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="db497-107">Criar um novo objeto [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) .</span><span class="sxs-lookup"><span data-stu-id="db497-107">Create a new [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object.</span></span>
 
-|<span data-ttu-id="e490e-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e490e-110">Permission type</span></span>|<span data-ttu-id="e490e-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e490e-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="db497-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="db497-108">Prerequisites</span></span>
+<span data-ttu-id="db497-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db497-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="db497-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="db497-111">Permission type</span></span>|<span data-ttu-id="db497-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="db497-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e490e-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e490e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e490e-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e490e-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="e490e-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e490e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e490e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e490e-115">Not supported.</span></span>|
-|<span data-ttu-id="e490e-116">Application</span><span class="sxs-lookup"><span data-stu-id="e490e-116">Application</span></span>|<span data-ttu-id="e490e-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e490e-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="db497-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="db497-113">Delegated (work or school account)</span></span>|<span data-ttu-id="db497-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db497-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="db497-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="db497-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="db497-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="db497-116">Not supported.</span></span>|
+|<span data-ttu-id="db497-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="db497-117">Application</span></span>|<span data-ttu-id="db497-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db497-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e490e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e490e-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db497-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="db497-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,34 +40,34 @@ ms.locfileid: "42803109"
 POST /deviceManagement/domainJoinConnectors
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e490e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e490e-119">Request headers</span></span>
-|<span data-ttu-id="e490e-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e490e-120">Header</span></span>|<span data-ttu-id="e490e-121">Valor</span><span class="sxs-lookup"><span data-stu-id="e490e-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="db497-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="db497-120">Request headers</span></span>
+|<span data-ttu-id="db497-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="db497-121">Header</span></span>|<span data-ttu-id="db497-122">Valor</span><span class="sxs-lookup"><span data-stu-id="db497-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e490e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e490e-122">Authorization</span></span>|<span data-ttu-id="e490e-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e490e-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e490e-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e490e-124">Accept</span></span>|<span data-ttu-id="e490e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e490e-125">application/json</span></span>|
+|<span data-ttu-id="db497-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="db497-123">Authorization</span></span>|<span data-ttu-id="db497-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="db497-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="db497-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="db497-125">Accept</span></span>|<span data-ttu-id="db497-126">application/json</span><span class="sxs-lookup"><span data-stu-id="db497-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e490e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e490e-126">Request body</span></span>
-<span data-ttu-id="e490e-127">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementDomainJoinConnector.</span><span class="sxs-lookup"><span data-stu-id="e490e-127">In the request body, supply a JSON representation for the deviceManagementDomainJoinConnector object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db497-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="db497-127">Request body</span></span>
+<span data-ttu-id="db497-128">No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementDomainJoinConnector.</span><span class="sxs-lookup"><span data-stu-id="db497-128">In the request body, supply a JSON representation for the deviceManagementDomainJoinConnector object.</span></span>
 
-<span data-ttu-id="e490e-128">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementDomainJoinConnector.</span><span class="sxs-lookup"><span data-stu-id="e490e-128">The following table shows the properties that are required when you create the deviceManagementDomainJoinConnector.</span></span>
+<span data-ttu-id="db497-129">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementDomainJoinConnector.</span><span class="sxs-lookup"><span data-stu-id="db497-129">The following table shows the properties that are required when you create the deviceManagementDomainJoinConnector.</span></span>
 
-|<span data-ttu-id="e490e-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e490e-129">Property</span></span>|<span data-ttu-id="e490e-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="e490e-130">Type</span></span>|<span data-ttu-id="e490e-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e490e-131">Description</span></span>|
+|<span data-ttu-id="db497-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="db497-130">Property</span></span>|<span data-ttu-id="db497-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="db497-131">Type</span></span>|<span data-ttu-id="db497-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="db497-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e490e-132">id</span><span class="sxs-lookup"><span data-stu-id="e490e-132">id</span></span>|<span data-ttu-id="e490e-133">String</span><span class="sxs-lookup"><span data-stu-id="e490e-133">String</span></span>|<span data-ttu-id="e490e-134">Identificador exclusivo para representar um conector.</span><span class="sxs-lookup"><span data-stu-id="e490e-134">Unique identifier to represent a connector.</span></span>|
-|<span data-ttu-id="e490e-135">displayName</span><span class="sxs-lookup"><span data-stu-id="e490e-135">displayName</span></span>|<span data-ttu-id="e490e-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e490e-136">String</span></span>|<span data-ttu-id="e490e-137">O nome de exibição do conector.</span><span class="sxs-lookup"><span data-stu-id="e490e-137">The connector display name.</span></span>|
-|<span data-ttu-id="e490e-138">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="e490e-138">lastConnectionDateTime</span></span>|<span data-ttu-id="e490e-139">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e490e-139">DateTimeOffset</span></span>|<span data-ttu-id="e490e-140">Último conector de horário contatado o Intune.</span><span class="sxs-lookup"><span data-stu-id="e490e-140">Last time connector contacted Intune.</span></span>|
-|<span data-ttu-id="e490e-141">state</span><span class="sxs-lookup"><span data-stu-id="e490e-141">state</span></span>|[<span data-ttu-id="e490e-142">deviceManagementDomainJoinConnectorState</span><span class="sxs-lookup"><span data-stu-id="e490e-142">deviceManagementDomainJoinConnectorState</span></span>](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|<span data-ttu-id="e490e-143">O estado do conector.</span><span class="sxs-lookup"><span data-stu-id="e490e-143">The connector state.</span></span> <span data-ttu-id="e490e-144">Os valores possíveis são: `active`, `error`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="e490e-144">Possible values are: `active`, `error`, `inactive`.</span></span>|
-|<span data-ttu-id="e490e-145">versão</span><span class="sxs-lookup"><span data-stu-id="e490e-145">version</span></span>|<span data-ttu-id="e490e-146">String</span><span class="sxs-lookup"><span data-stu-id="e490e-146">String</span></span>|<span data-ttu-id="e490e-147">A versão do conector.</span><span class="sxs-lookup"><span data-stu-id="e490e-147">The version of the connector.</span></span>|
+|<span data-ttu-id="db497-133">id</span><span class="sxs-lookup"><span data-stu-id="db497-133">id</span></span>|<span data-ttu-id="db497-134">String</span><span class="sxs-lookup"><span data-stu-id="db497-134">String</span></span>|<span data-ttu-id="db497-135">Identificador exclusivo para representar um conector.</span><span class="sxs-lookup"><span data-stu-id="db497-135">Unique identifier to represent a connector.</span></span>|
+|<span data-ttu-id="db497-136">displayName</span><span class="sxs-lookup"><span data-stu-id="db497-136">displayName</span></span>|<span data-ttu-id="db497-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="db497-137">String</span></span>|<span data-ttu-id="db497-138">O nome de exibição do conector.</span><span class="sxs-lookup"><span data-stu-id="db497-138">The connector display name.</span></span>|
+|<span data-ttu-id="db497-139">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="db497-139">lastConnectionDateTime</span></span>|<span data-ttu-id="db497-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="db497-140">DateTimeOffset</span></span>|<span data-ttu-id="db497-141">Último conector de horário contatado o Intune.</span><span class="sxs-lookup"><span data-stu-id="db497-141">Last time connector contacted Intune.</span></span>|
+|<span data-ttu-id="db497-142">state</span><span class="sxs-lookup"><span data-stu-id="db497-142">state</span></span>|[<span data-ttu-id="db497-143">deviceManagementDomainJoinConnectorState</span><span class="sxs-lookup"><span data-stu-id="db497-143">deviceManagementDomainJoinConnectorState</span></span>](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|<span data-ttu-id="db497-144">O estado do conector.</span><span class="sxs-lookup"><span data-stu-id="db497-144">The connector state.</span></span> <span data-ttu-id="db497-145">Os valores possíveis são: `active`, `error`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="db497-145">Possible values are: `active`, `error`, `inactive`.</span></span>|
+|<span data-ttu-id="db497-146">versão</span><span class="sxs-lookup"><span data-stu-id="db497-146">version</span></span>|<span data-ttu-id="db497-147">String</span><span class="sxs-lookup"><span data-stu-id="db497-147">String</span></span>|<span data-ttu-id="db497-148">A versão do conector.</span><span class="sxs-lookup"><span data-stu-id="db497-148">The version of the connector.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e490e-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="e490e-148">Response</span></span>
-<span data-ttu-id="e490e-149">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e490e-149">If successful, this method returns a `201 Created` response code and a [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="db497-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="db497-149">Response</span></span>
+<span data-ttu-id="db497-150">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="db497-150">If successful, this method returns a `201 Created` response code and a [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e490e-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e490e-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="db497-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="db497-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e490e-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e490e-151">Request</span></span>
-<span data-ttu-id="e490e-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e490e-152">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="db497-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="db497-152">Request</span></span>
+<span data-ttu-id="db497-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="db497-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors
 Content-type: application/json
@@ -80,8 +82,8 @@ Content-length: 235
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e490e-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="e490e-153">Response</span></span>
-<span data-ttu-id="e490e-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e490e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="db497-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="db497-154">Response</span></span>
+<span data-ttu-id="db497-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="db497-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -96,7 +98,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 

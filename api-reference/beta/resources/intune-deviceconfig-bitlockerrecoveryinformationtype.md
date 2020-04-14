@@ -1,30 +1,32 @@
 ---
 title: tipo de enumeração bitLockerRecoveryInformationType
 description: Tipos BitLockerRecoveryInformationType
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e34d91ec138771f05e71520bbea2c736c12d3328
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7e6793766d9f81d298fb42703971fb219f9d10c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795854"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469803"
 ---
-# <a name="bitlockerrecoveryinformationtype-enum-type"></a><span data-ttu-id="d5a25-103">tipo de enumeração bitLockerRecoveryInformationType</span><span class="sxs-lookup"><span data-stu-id="d5a25-103">bitLockerRecoveryInformationType enum type</span></span>
+# <a name="bitlockerrecoveryinformationtype-enum-type"></a><span data-ttu-id="2d651-103">tipo de enumeração bitLockerRecoveryInformationType</span><span class="sxs-lookup"><span data-stu-id="2d651-103">bitLockerRecoveryInformationType enum type</span></span>
 
-> <span data-ttu-id="d5a25-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d5a25-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="2d651-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d651-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d5a25-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d5a25-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2d651-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2d651-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d5a25-106">Tipos BitLockerRecoveryInformationType</span><span class="sxs-lookup"><span data-stu-id="d5a25-106">BitLockerRecoveryInformationType types</span></span>
+> <span data-ttu-id="2d651-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2d651-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d5a25-107">Membros</span><span class="sxs-lookup"><span data-stu-id="d5a25-107">Members</span></span>
-|<span data-ttu-id="d5a25-108">Membro</span><span class="sxs-lookup"><span data-stu-id="d5a25-108">Member</span></span>|<span data-ttu-id="d5a25-109">Valor</span><span class="sxs-lookup"><span data-stu-id="d5a25-109">Value</span></span>|<span data-ttu-id="d5a25-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5a25-110">Description</span></span>|
+<span data-ttu-id="2d651-107">Tipos BitLockerRecoveryInformationType</span><span class="sxs-lookup"><span data-stu-id="2d651-107">BitLockerRecoveryInformationType types</span></span>
+
+## <a name="members"></a><span data-ttu-id="2d651-108">Membros</span><span class="sxs-lookup"><span data-stu-id="2d651-108">Members</span></span>
+|<span data-ttu-id="2d651-109">Membro</span><span class="sxs-lookup"><span data-stu-id="2d651-109">Member</span></span>|<span data-ttu-id="2d651-110">Valor</span><span class="sxs-lookup"><span data-stu-id="2d651-110">Value</span></span>|<span data-ttu-id="2d651-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="2d651-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d5a25-111">passwordAndKey</span><span class="sxs-lookup"><span data-stu-id="d5a25-111">passwordAndKey</span></span>|<span data-ttu-id="d5a25-112">1</span><span class="sxs-lookup"><span data-stu-id="d5a25-112">1</span></span>|<span data-ttu-id="d5a25-113">Armazenar senhas de recuperação e pacotes de chaves.</span><span class="sxs-lookup"><span data-stu-id="d5a25-113">Store recovery passwords and key packages.</span></span>|
-|<span data-ttu-id="d5a25-114">passwordOnly</span><span class="sxs-lookup"><span data-stu-id="d5a25-114">passwordOnly</span></span>|<span data-ttu-id="d5a25-115">duas</span><span class="sxs-lookup"><span data-stu-id="d5a25-115">2</span></span>|<span data-ttu-id="d5a25-116">Armazenar somente senhas de recuperação.</span><span class="sxs-lookup"><span data-stu-id="d5a25-116">Store recovery passwords only.</span></span>|
+|<span data-ttu-id="2d651-112">passwordAndKey</span><span class="sxs-lookup"><span data-stu-id="2d651-112">passwordAndKey</span></span>|<span data-ttu-id="2d651-113">1</span><span class="sxs-lookup"><span data-stu-id="2d651-113">1</span></span>|<span data-ttu-id="2d651-114">Armazenar senhas de recuperação e pacotes de chaves.</span><span class="sxs-lookup"><span data-stu-id="2d651-114">Store recovery passwords and key packages.</span></span>|
+|<span data-ttu-id="2d651-115">passwordOnly</span><span class="sxs-lookup"><span data-stu-id="2d651-115">passwordOnly</span></span>|<span data-ttu-id="2d651-116">duas</span><span class="sxs-lookup"><span data-stu-id="2d651-116">2</span></span>|<span data-ttu-id="2d651-117">Armazenar somente senhas de recuperação.</span><span class="sxs-lookup"><span data-stu-id="2d651-117">Store recovery passwords only.</span></span>|
 
 
 

@@ -1,32 +1,34 @@
 ---
 title: tipo de enumeração androidForWorkBindStatus
 description: Vincular o status do locatário à API do Google EMM
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7cbdd8813b7bf4a6594b43aaba101e5d4170c58a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b688452a5a6e0c8d47871f06279bc22344c6508a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799400"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459242"
 ---
-# <a name="androidforworkbindstatus-enum-type"></a><span data-ttu-id="243a5-103">tipo de enumeração androidForWorkBindStatus</span><span class="sxs-lookup"><span data-stu-id="243a5-103">androidForWorkBindStatus enum type</span></span>
+# <a name="androidforworkbindstatus-enum-type"></a><span data-ttu-id="4c64c-103">tipo de enumeração androidForWorkBindStatus</span><span class="sxs-lookup"><span data-stu-id="4c64c-103">androidForWorkBindStatus enum type</span></span>
 
-> <span data-ttu-id="243a5-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="243a5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4c64c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4c64c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="243a5-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="243a5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4c64c-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4c64c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="243a5-106">Vincular o status do locatário à API do Google EMM</span><span class="sxs-lookup"><span data-stu-id="243a5-106">Bind status of the tenant with the Google EMM API</span></span>
+> <span data-ttu-id="4c64c-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4c64c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="243a5-107">Membros</span><span class="sxs-lookup"><span data-stu-id="243a5-107">Members</span></span>
-|<span data-ttu-id="243a5-108">Membro</span><span class="sxs-lookup"><span data-stu-id="243a5-108">Member</span></span>|<span data-ttu-id="243a5-109">Valor</span><span class="sxs-lookup"><span data-stu-id="243a5-109">Value</span></span>|<span data-ttu-id="243a5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="243a5-110">Description</span></span>|
+<span data-ttu-id="4c64c-107">Vincular o status do locatário à API do Google EMM</span><span class="sxs-lookup"><span data-stu-id="4c64c-107">Bind status of the tenant with the Google EMM API</span></span>
+
+## <a name="members"></a><span data-ttu-id="4c64c-108">Membros</span><span class="sxs-lookup"><span data-stu-id="4c64c-108">Members</span></span>
+|<span data-ttu-id="4c64c-109">Membro</span><span class="sxs-lookup"><span data-stu-id="4c64c-109">Member</span></span>|<span data-ttu-id="4c64c-110">Valor</span><span class="sxs-lookup"><span data-stu-id="4c64c-110">Value</span></span>|<span data-ttu-id="4c64c-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="4c64c-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="243a5-111">Não acoplado</span><span class="sxs-lookup"><span data-stu-id="243a5-111">notBound</span></span>|<span data-ttu-id="243a5-112">,0</span><span class="sxs-lookup"><span data-stu-id="243a5-112">0</span></span>|<span data-ttu-id="243a5-113">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="243a5-113">Not yet documented</span></span>|
-|<span data-ttu-id="243a5-114">limite</span><span class="sxs-lookup"><span data-stu-id="243a5-114">bound</span></span>|<span data-ttu-id="243a5-115">1</span><span class="sxs-lookup"><span data-stu-id="243a5-115">1</span></span>|<span data-ttu-id="243a5-116">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="243a5-116">Not yet documented</span></span>|
-|<span data-ttu-id="243a5-117">boundAndValidated</span><span class="sxs-lookup"><span data-stu-id="243a5-117">boundAndValidated</span></span>|<span data-ttu-id="243a5-118">duas</span><span class="sxs-lookup"><span data-stu-id="243a5-118">2</span></span>|<span data-ttu-id="243a5-119">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="243a5-119">Not yet documented</span></span>|
-|<span data-ttu-id="243a5-120">desassociação</span><span class="sxs-lookup"><span data-stu-id="243a5-120">unbinding</span></span>|<span data-ttu-id="243a5-121">3D</span><span class="sxs-lookup"><span data-stu-id="243a5-121">3</span></span>|<span data-ttu-id="243a5-122">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="243a5-122">Not yet documented</span></span>|
+|<span data-ttu-id="4c64c-112">Não acoplado</span><span class="sxs-lookup"><span data-stu-id="4c64c-112">notBound</span></span>|<span data-ttu-id="4c64c-113">,0</span><span class="sxs-lookup"><span data-stu-id="4c64c-113">0</span></span>|<span data-ttu-id="4c64c-114">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="4c64c-114">Not yet documented</span></span>|
+|<span data-ttu-id="4c64c-115">limite</span><span class="sxs-lookup"><span data-stu-id="4c64c-115">bound</span></span>|<span data-ttu-id="4c64c-116">1</span><span class="sxs-lookup"><span data-stu-id="4c64c-116">1</span></span>|<span data-ttu-id="4c64c-117">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="4c64c-117">Not yet documented</span></span>|
+|<span data-ttu-id="4c64c-118">boundAndValidated</span><span class="sxs-lookup"><span data-stu-id="4c64c-118">boundAndValidated</span></span>|<span data-ttu-id="4c64c-119">duas</span><span class="sxs-lookup"><span data-stu-id="4c64c-119">2</span></span>|<span data-ttu-id="4c64c-120">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="4c64c-120">Not yet documented</span></span>|
+|<span data-ttu-id="4c64c-121">desassociação</span><span class="sxs-lookup"><span data-stu-id="4c64c-121">unbinding</span></span>|<span data-ttu-id="4c64c-122">3D</span><span class="sxs-lookup"><span data-stu-id="4c64c-122">3</span></span>|<span data-ttu-id="4c64c-123">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="4c64c-123">Not yet documented</span></span>|
 
 
 

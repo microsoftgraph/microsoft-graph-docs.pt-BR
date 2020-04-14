@@ -1,37 +1,39 @@
 ---
 title: tipo de recurso bitLockerFixedDrivePolicy
 description: Políticas de unidade fixa do BitLocker.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b44a56b02a6e8a15d4d2cfb0919cc852a9899fb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 85cd64200bb422c1a4bb25456f1686e1fb4a88da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795861"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469810"
 ---
-# <a name="bitlockerfixeddrivepolicy-resource-type"></a><span data-ttu-id="7887a-103">tipo de recurso bitLockerFixedDrivePolicy</span><span class="sxs-lookup"><span data-stu-id="7887a-103">bitLockerFixedDrivePolicy resource type</span></span>
+# <a name="bitlockerfixeddrivepolicy-resource-type"></a><span data-ttu-id="51879-103">tipo de recurso bitLockerFixedDrivePolicy</span><span class="sxs-lookup"><span data-stu-id="51879-103">bitLockerFixedDrivePolicy resource type</span></span>
 
-> <span data-ttu-id="7887a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7887a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="51879-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="51879-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7887a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7887a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="51879-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="51879-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="7887a-106">Políticas de unidade fixa do BitLocker.</span><span class="sxs-lookup"><span data-stu-id="7887a-106">BitLocker Fixed Drive Policies.</span></span>
+> <span data-ttu-id="51879-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="51879-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7887a-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7887a-107">Properties</span></span>
-|<span data-ttu-id="7887a-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7887a-108">Property</span></span>|<span data-ttu-id="7887a-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="7887a-109">Type</span></span>|<span data-ttu-id="7887a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="7887a-110">Description</span></span>|
+<span data-ttu-id="51879-107">Políticas de unidade fixa do BitLocker.</span><span class="sxs-lookup"><span data-stu-id="51879-107">BitLocker Fixed Drive Policies.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="51879-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="51879-108">Properties</span></span>
+|<span data-ttu-id="51879-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="51879-109">Property</span></span>|<span data-ttu-id="51879-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="51879-110">Type</span></span>|<span data-ttu-id="51879-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="51879-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7887a-111">encryptionMethod</span><span class="sxs-lookup"><span data-stu-id="7887a-111">encryptionMethod</span></span>|[<span data-ttu-id="7887a-112">bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="7887a-112">bitLockerEncryptionMethod</span></span>](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|<span data-ttu-id="7887a-113">Selecione o método de criptografia para unidades fixas.</span><span class="sxs-lookup"><span data-stu-id="7887a-113">Select the encryption method for fixed drives.</span></span> <span data-ttu-id="7887a-114">Os valores possíveis são: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span><span class="sxs-lookup"><span data-stu-id="7887a-114">Possible values are: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span></span>|
-|<span data-ttu-id="7887a-115">requireEncryptionForWriteAccess</span><span class="sxs-lookup"><span data-stu-id="7887a-115">requireEncryptionForWriteAccess</span></span>|<span data-ttu-id="7887a-116">Booliano</span><span class="sxs-lookup"><span data-stu-id="7887a-116">Boolean</span></span>|<span data-ttu-id="7887a-117">Essa configuração de política determina se é necessário proteger o BitLocker para unidades de dados fixas em um computador.</span><span class="sxs-lookup"><span data-stu-id="7887a-117">This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</span></span>|
-|<span data-ttu-id="7887a-118">recoveryOptions</span><span class="sxs-lookup"><span data-stu-id="7887a-118">recoveryOptions</span></span>|[<span data-ttu-id="7887a-119">bitLockerRecoveryOptions</span><span class="sxs-lookup"><span data-stu-id="7887a-119">bitLockerRecoveryOptions</span></span>](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|<span data-ttu-id="7887a-120">Essa configuração de política permite controlar como as unidades de dados fixas protegidas por BitLocker são recuperadas na ausência das credenciais necessárias.</span><span class="sxs-lookup"><span data-stu-id="7887a-120">This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials.</span></span> <span data-ttu-id="7887a-121">Essa configuração de política é aplicada quando você ativa o BitLocker.</span><span class="sxs-lookup"><span data-stu-id="7887a-121">This policy setting is applied when you turn on BitLocker.</span></span>|
+|<span data-ttu-id="51879-112">encryptionMethod</span><span class="sxs-lookup"><span data-stu-id="51879-112">encryptionMethod</span></span>|[<span data-ttu-id="51879-113">bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="51879-113">bitLockerEncryptionMethod</span></span>](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|<span data-ttu-id="51879-114">Selecione o método de criptografia para unidades fixas.</span><span class="sxs-lookup"><span data-stu-id="51879-114">Select the encryption method for fixed drives.</span></span> <span data-ttu-id="51879-115">Os valores possíveis são: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span><span class="sxs-lookup"><span data-stu-id="51879-115">Possible values are: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span></span>|
+|<span data-ttu-id="51879-116">requireEncryptionForWriteAccess</span><span class="sxs-lookup"><span data-stu-id="51879-116">requireEncryptionForWriteAccess</span></span>|<span data-ttu-id="51879-117">Booliano</span><span class="sxs-lookup"><span data-stu-id="51879-117">Boolean</span></span>|<span data-ttu-id="51879-118">Essa configuração de política determina se é necessário proteger o BitLocker para unidades de dados fixas em um computador.</span><span class="sxs-lookup"><span data-stu-id="51879-118">This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</span></span>|
+|<span data-ttu-id="51879-119">recoveryOptions</span><span class="sxs-lookup"><span data-stu-id="51879-119">recoveryOptions</span></span>|[<span data-ttu-id="51879-120">bitLockerRecoveryOptions</span><span class="sxs-lookup"><span data-stu-id="51879-120">bitLockerRecoveryOptions</span></span>](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|<span data-ttu-id="51879-121">Essa configuração de política permite controlar como as unidades de dados fixas protegidas por BitLocker são recuperadas na ausência das credenciais necessárias.</span><span class="sxs-lookup"><span data-stu-id="51879-121">This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials.</span></span> <span data-ttu-id="51879-122">Essa configuração de política é aplicada quando você ativa o BitLocker.</span><span class="sxs-lookup"><span data-stu-id="51879-122">This policy setting is applied when you turn on BitLocker.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="7887a-122">Relações</span><span class="sxs-lookup"><span data-stu-id="7887a-122">Relationships</span></span>
-<span data-ttu-id="7887a-123">Nenhum</span><span class="sxs-lookup"><span data-stu-id="7887a-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="51879-123">Relações</span><span class="sxs-lookup"><span data-stu-id="51879-123">Relationships</span></span>
+<span data-ttu-id="51879-124">Nenhum</span><span class="sxs-lookup"><span data-stu-id="51879-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="7887a-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7887a-124">JSON Representation</span></span>
-<span data-ttu-id="7887a-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7887a-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="51879-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="51879-125">JSON Representation</span></span>
+<span data-ttu-id="51879-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="51879-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bitLockerFixedDrivePolicy"

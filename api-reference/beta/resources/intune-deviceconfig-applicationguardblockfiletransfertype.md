@@ -1,33 +1,35 @@
 ---
 title: tipo de enumeração applicationGuardBlockFileTransferType
 description: Valores possíveis para applicationGuardBlockFileTransfer
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c9d95a609949d620a509aa4c1c34162a9b94e30b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af04ab67ba1132ab5ae487104bc42cbb21cedee0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795937"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470010"
 ---
-# <a name="applicationguardblockfiletransfertype-enum-type"></a><span data-ttu-id="a830e-103">tipo de enumeração applicationGuardBlockFileTransferType</span><span class="sxs-lookup"><span data-stu-id="a830e-103">applicationGuardBlockFileTransferType enum type</span></span>
+# <a name="applicationguardblockfiletransfertype-enum-type"></a><span data-ttu-id="4d0eb-103">tipo de enumeração applicationGuardBlockFileTransferType</span><span class="sxs-lookup"><span data-stu-id="4d0eb-103">applicationGuardBlockFileTransferType enum type</span></span>
 
-> <span data-ttu-id="a830e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="a830e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4d0eb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d0eb-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a830e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a830e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4d0eb-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4d0eb-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="a830e-106">Valores possíveis para applicationGuardBlockFileTransfer</span><span class="sxs-lookup"><span data-stu-id="a830e-106">Possible values for applicationGuardBlockFileTransfer</span></span>
+> <span data-ttu-id="4d0eb-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4d0eb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a830e-107">Membros</span><span class="sxs-lookup"><span data-stu-id="a830e-107">Members</span></span>
-|<span data-ttu-id="a830e-108">Membro</span><span class="sxs-lookup"><span data-stu-id="a830e-108">Member</span></span>|<span data-ttu-id="a830e-109">Valor</span><span class="sxs-lookup"><span data-stu-id="a830e-109">Value</span></span>|<span data-ttu-id="a830e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="a830e-110">Description</span></span>|
+<span data-ttu-id="4d0eb-107">Valores possíveis para applicationGuardBlockFileTransfer</span><span class="sxs-lookup"><span data-stu-id="4d0eb-107">Possible values for applicationGuardBlockFileTransfer</span></span>
+
+## <a name="members"></a><span data-ttu-id="4d0eb-108">Membros</span><span class="sxs-lookup"><span data-stu-id="4d0eb-108">Members</span></span>
+|<span data-ttu-id="4d0eb-109">Membro</span><span class="sxs-lookup"><span data-stu-id="4d0eb-109">Member</span></span>|<span data-ttu-id="4d0eb-110">Valor</span><span class="sxs-lookup"><span data-stu-id="4d0eb-110">Value</span></span>|<span data-ttu-id="4d0eb-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="4d0eb-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a830e-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="a830e-111">notConfigured</span></span>|<span data-ttu-id="a830e-112">,0</span><span class="sxs-lookup"><span data-stu-id="a830e-112">0</span></span>|<span data-ttu-id="a830e-113">Não configurado</span><span class="sxs-lookup"><span data-stu-id="a830e-113">Not Configured</span></span>|
-|<span data-ttu-id="a830e-114">blockImageAndTextFile</span><span class="sxs-lookup"><span data-stu-id="a830e-114">blockImageAndTextFile</span></span>|<span data-ttu-id="a830e-115">1</span><span class="sxs-lookup"><span data-stu-id="a830e-115">1</span></span>|<span data-ttu-id="a830e-116">Bloquear a área de transferência para transferir o arquivo de texto e imagem</span><span class="sxs-lookup"><span data-stu-id="a830e-116">Block clipboard to transfer Image and Text file</span></span>|
-|<span data-ttu-id="a830e-117">blockImageFile</span><span class="sxs-lookup"><span data-stu-id="a830e-117">blockImageFile</span></span>|<span data-ttu-id="a830e-118">duas</span><span class="sxs-lookup"><span data-stu-id="a830e-118">2</span></span>|<span data-ttu-id="a830e-119">Bloquear área de transferência para transferir o arquivo de imagem</span><span class="sxs-lookup"><span data-stu-id="a830e-119">Block clipboard to transfer Image file</span></span>|
-|<span data-ttu-id="a830e-120">blockNone</span><span class="sxs-lookup"><span data-stu-id="a830e-120">blockNone</span></span>|<span data-ttu-id="a830e-121">3D</span><span class="sxs-lookup"><span data-stu-id="a830e-121">3</span></span>|<span data-ttu-id="a830e-122">Nenhum dos arquivos de texto ou de imagem está bloqueado da transferência</span><span class="sxs-lookup"><span data-stu-id="a830e-122">Neither of text file or image file is blocked from transferring</span></span>|
-|<span data-ttu-id="a830e-123">blockTextFile</span><span class="sxs-lookup"><span data-stu-id="a830e-123">blockTextFile</span></span>|<span data-ttu-id="a830e-124">4 </span><span class="sxs-lookup"><span data-stu-id="a830e-124">4</span></span>|<span data-ttu-id="a830e-125">Bloquear área de transferência para transferir arquivo de texto</span><span class="sxs-lookup"><span data-stu-id="a830e-125">Block clipboard to transfer Text file</span></span>|
+|<span data-ttu-id="4d0eb-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="4d0eb-112">notConfigured</span></span>|<span data-ttu-id="4d0eb-113">,0</span><span class="sxs-lookup"><span data-stu-id="4d0eb-113">0</span></span>|<span data-ttu-id="4d0eb-114">Não configurado</span><span class="sxs-lookup"><span data-stu-id="4d0eb-114">Not Configured</span></span>|
+|<span data-ttu-id="4d0eb-115">blockImageAndTextFile</span><span class="sxs-lookup"><span data-stu-id="4d0eb-115">blockImageAndTextFile</span></span>|<span data-ttu-id="4d0eb-116">1</span><span class="sxs-lookup"><span data-stu-id="4d0eb-116">1</span></span>|<span data-ttu-id="4d0eb-117">Bloquear a área de transferência para transferir o arquivo de texto e imagem</span><span class="sxs-lookup"><span data-stu-id="4d0eb-117">Block clipboard to transfer Image and Text file</span></span>|
+|<span data-ttu-id="4d0eb-118">blockImageFile</span><span class="sxs-lookup"><span data-stu-id="4d0eb-118">blockImageFile</span></span>|<span data-ttu-id="4d0eb-119">duas</span><span class="sxs-lookup"><span data-stu-id="4d0eb-119">2</span></span>|<span data-ttu-id="4d0eb-120">Bloquear área de transferência para transferir o arquivo de imagem</span><span class="sxs-lookup"><span data-stu-id="4d0eb-120">Block clipboard to transfer Image file</span></span>|
+|<span data-ttu-id="4d0eb-121">blockNone</span><span class="sxs-lookup"><span data-stu-id="4d0eb-121">blockNone</span></span>|<span data-ttu-id="4d0eb-122">3D</span><span class="sxs-lookup"><span data-stu-id="4d0eb-122">3</span></span>|<span data-ttu-id="4d0eb-123">Nenhum dos arquivos de texto ou de imagem está bloqueado da transferência</span><span class="sxs-lookup"><span data-stu-id="4d0eb-123">Neither of text file or image file is blocked from transferring</span></span>|
+|<span data-ttu-id="4d0eb-124">blockTextFile</span><span class="sxs-lookup"><span data-stu-id="4d0eb-124">blockTextFile</span></span>|<span data-ttu-id="4d0eb-125">4 </span><span class="sxs-lookup"><span data-stu-id="4d0eb-125">4</span></span>|<span data-ttu-id="4d0eb-126">Bloquear área de transferência para transferir arquivo de texto</span><span class="sxs-lookup"><span data-stu-id="4d0eb-126">Block clipboard to transfer Text file</span></span>|
 
 
 

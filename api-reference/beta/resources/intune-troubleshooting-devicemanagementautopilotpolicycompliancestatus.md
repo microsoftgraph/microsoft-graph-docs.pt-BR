@@ -1,34 +1,36 @@
 ---
 title: tipo de enumeração deviceManagementAutopilotPolicyComplianceStatus
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d1d34167392f0ff239c3b7e0eaaa90d704842ce6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9cf4f8b60f87b10a7bed456c5119909dc0c4824f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462299"
 ---
-# <a name="devicemanagementautopilotpolicycompliancestatus-enum-type"></a><span data-ttu-id="6ae2a-103">tipo de enumeração deviceManagementAutopilotPolicyComplianceStatus</span><span class="sxs-lookup"><span data-stu-id="6ae2a-103">deviceManagementAutopilotPolicyComplianceStatus enum type</span></span>
+# <a name="devicemanagementautopilotpolicycompliancestatus-enum-type"></a><span data-ttu-id="74006-103">tipo de enumeração deviceManagementAutopilotPolicyComplianceStatus</span><span class="sxs-lookup"><span data-stu-id="74006-103">deviceManagementAutopilotPolicyComplianceStatus enum type</span></span>
 
-> <span data-ttu-id="6ae2a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6ae2a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="74006-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="74006-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6ae2a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6ae2a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="74006-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="74006-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="6ae2a-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-106">Not yet documented</span></span>
+> <span data-ttu-id="74006-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="74006-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="6ae2a-107">Membros</span><span class="sxs-lookup"><span data-stu-id="6ae2a-107">Members</span></span>
-|<span data-ttu-id="6ae2a-108">Membro</span><span class="sxs-lookup"><span data-stu-id="6ae2a-108">Member</span></span>|<span data-ttu-id="6ae2a-109">Valor</span><span class="sxs-lookup"><span data-stu-id="6ae2a-109">Value</span></span>|<span data-ttu-id="6ae2a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="6ae2a-110">Description</span></span>|
+<span data-ttu-id="74006-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="74006-107">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="74006-108">Membros</span><span class="sxs-lookup"><span data-stu-id="74006-108">Members</span></span>
+|<span data-ttu-id="74006-109">Membro</span><span class="sxs-lookup"><span data-stu-id="74006-109">Member</span></span>|<span data-ttu-id="74006-110">Valor</span><span class="sxs-lookup"><span data-stu-id="74006-110">Value</span></span>|<span data-ttu-id="74006-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="74006-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6ae2a-111">desconhecido</span><span class="sxs-lookup"><span data-stu-id="6ae2a-111">unknown</span></span>|<span data-ttu-id="6ae2a-112">,0</span><span class="sxs-lookup"><span data-stu-id="6ae2a-112">0</span></span>|<span data-ttu-id="6ae2a-113">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-113">Not yet documented</span></span>|
-|<span data-ttu-id="6ae2a-114">com</span><span class="sxs-lookup"><span data-stu-id="6ae2a-114">compliant</span></span>|<span data-ttu-id="6ae2a-115">1</span><span class="sxs-lookup"><span data-stu-id="6ae2a-115">1</span></span>|<span data-ttu-id="6ae2a-116">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-116">Not yet documented</span></span>|
-|<span data-ttu-id="6ae2a-117">instalação</span><span class="sxs-lookup"><span data-stu-id="6ae2a-117">installed</span></span>|<span data-ttu-id="6ae2a-118">duas</span><span class="sxs-lookup"><span data-stu-id="6ae2a-118">2</span></span>|<span data-ttu-id="6ae2a-119">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-119">Not yet documented</span></span>|
-|<span data-ttu-id="6ae2a-120">incompatível</span><span class="sxs-lookup"><span data-stu-id="6ae2a-120">notCompliant</span></span>|<span data-ttu-id="6ae2a-121">3D</span><span class="sxs-lookup"><span data-stu-id="6ae2a-121">3</span></span>|<span data-ttu-id="6ae2a-122">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-122">Not yet documented</span></span>|
-|<span data-ttu-id="6ae2a-123">não instalado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-123">notInstalled</span></span>|<span data-ttu-id="6ae2a-124">4 </span><span class="sxs-lookup"><span data-stu-id="6ae2a-124">4</span></span>|<span data-ttu-id="6ae2a-125">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-125">Not yet documented</span></span>|
-|<span data-ttu-id="6ae2a-126">erro</span><span class="sxs-lookup"><span data-stu-id="6ae2a-126">error</span></span>|<span data-ttu-id="6ae2a-127">5 </span><span class="sxs-lookup"><span data-stu-id="6ae2a-127">5</span></span>|<span data-ttu-id="6ae2a-128">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ae2a-128">Not yet documented</span></span>|
+|<span data-ttu-id="74006-112">desconhecido</span><span class="sxs-lookup"><span data-stu-id="74006-112">unknown</span></span>|<span data-ttu-id="74006-113">,0</span><span class="sxs-lookup"><span data-stu-id="74006-113">0</span></span>|<span data-ttu-id="74006-114">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="74006-114">Not yet documented</span></span>|
+|<span data-ttu-id="74006-115">com</span><span class="sxs-lookup"><span data-stu-id="74006-115">compliant</span></span>|<span data-ttu-id="74006-116">1</span><span class="sxs-lookup"><span data-stu-id="74006-116">1</span></span>|<span data-ttu-id="74006-117">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="74006-117">Not yet documented</span></span>|
+|<span data-ttu-id="74006-118">instalação</span><span class="sxs-lookup"><span data-stu-id="74006-118">installed</span></span>|<span data-ttu-id="74006-119">duas</span><span class="sxs-lookup"><span data-stu-id="74006-119">2</span></span>|<span data-ttu-id="74006-120">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="74006-120">Not yet documented</span></span>|
+|<span data-ttu-id="74006-121">incompatível</span><span class="sxs-lookup"><span data-stu-id="74006-121">notCompliant</span></span>|<span data-ttu-id="74006-122">3D</span><span class="sxs-lookup"><span data-stu-id="74006-122">3</span></span>|<span data-ttu-id="74006-123">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="74006-123">Not yet documented</span></span>|
+|<span data-ttu-id="74006-124">não instalado</span><span class="sxs-lookup"><span data-stu-id="74006-124">notInstalled</span></span>|<span data-ttu-id="74006-125">4 </span><span class="sxs-lookup"><span data-stu-id="74006-125">4</span></span>|<span data-ttu-id="74006-126">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="74006-126">Not yet documented</span></span>|
+|<span data-ttu-id="74006-127">erro</span><span class="sxs-lookup"><span data-stu-id="74006-127">error</span></span>|<span data-ttu-id="74006-128">5 </span><span class="sxs-lookup"><span data-stu-id="74006-128">5</span></span>|<span data-ttu-id="74006-129">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="74006-129">Not yet documented</span></span>|
 
 
 
