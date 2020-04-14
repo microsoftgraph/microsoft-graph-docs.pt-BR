@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderPromptForSampleSubmission
 description: Valores possíveis para avisar o usuário para envio de amostras.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7787dc018862a5311f37866957c6df4d968f910a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6f346797813e2589bf35e9e9c45243192fe16ac8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794456"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413108"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enumeração defenderPromptForSampleSubmission
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

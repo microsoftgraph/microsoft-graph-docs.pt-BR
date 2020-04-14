@@ -2,19 +2,19 @@
 title: Adicionar membro
 description: Adicionar um membro a um grupo do Office 365 ou grupo de segurança por meio da propriedade de navegação **Members** .
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bbb17793b31ccc7b927ad422bab0f49a280e8a30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e4b209d7b941bc681e63f9f1781072ff501eb1e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418782"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396571"
 ---
 # <a name="add-member"></a>Adicionar membro
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

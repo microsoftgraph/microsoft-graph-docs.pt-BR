@@ -1,18 +1,20 @@
 ---
 title: Atualizar managedDeviceMobileAppConfigurationUserSummary
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationUserSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 290800111f5acfc5a74fa72834ab2ce7148491e0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 455109f055b0acb4e4edc1a9608c411f022717ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815427"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415866"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>Atualizar managedDeviceMobileAppConfigurationUserSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -108,7 +110,6 @@ Content-Length: 370
   "configurationVersion": 4
 }
 ```
-
 
 
 

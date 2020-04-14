@@ -4,17 +4,17 @@ description: Obtenha todos os objetos de política no diretório.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 0f3119d79ed7c9dfa37453aa90bf0b95eecb901b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: dkershaw10
+ms.openlocfilehash: 9af05ec8655f3b8561352596f62c9dbedd270ca2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455505"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408345"
 ---
 # <a name="list-policies"></a>Listar políticas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

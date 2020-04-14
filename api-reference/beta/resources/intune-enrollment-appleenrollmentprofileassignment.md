@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso appleEnrollmentProfileAssignment
 description: Uma atribuição de um perfil da Apple.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e05ce41982ea2439163592cb9b35f5584e086b2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e2284a3982205c17b9b96ec43c52b1e8ed77d77f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419547"
 ---
 # <a name="appleenrollmentprofileassignment-resource-type"></a>tipo de recurso appleEnrollmentProfileAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

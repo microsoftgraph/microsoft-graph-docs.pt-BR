@@ -1,18 +1,20 @@
 ---
 title: Atualizar mobileAppContentFile
 description: Atualiza as propriedades de um objeto mobileAppContentFile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 055e8eb3b055c84c44f334a75209c2d6871f5f68
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bf26e28f7c24c49f573f2607a6c0abb4f4afcc6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761276"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415422"
 ---
 # <a name="update-mobileappcontentfile"></a>Atualizar mobileAppContentFile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -116,7 +118,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

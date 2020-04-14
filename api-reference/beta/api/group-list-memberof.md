@@ -1,20 +1,20 @@
 ---
 title: Grupo de lista memberOf
 description: Obter grupos e unidades administrativas dos quais o grupo é membro direto.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4b4edb12a1b620c77f844d1e2a5d5f5a7751a249
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f98e5d7f4a0bf1fcbc92a57467bdf009ab7b2698
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419433"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406604"
 ---
 # <a name="list-group-memberof"></a>Grupo de lista memberOf
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

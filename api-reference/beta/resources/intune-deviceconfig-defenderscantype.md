@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderScanType
 description: Valores possíveis para o tipo de verificação do sistema.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a25d1397a10f4d599fa34b2b14ec5168384a3be
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b833840281653b5ff083eb97dae5313406dc1a8f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794435"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413063"
 ---
 # <a name="defenderscantype-enum-type"></a>tipo de enumeração defenderScanType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,7 +26,7 @@ Valores possíveis para o tipo de verificação do sistema.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|deficiência|1|Verificação de sistema desabilitada.|
+|desabilitadas|1|Verificação de sistema desabilitada.|
 |agiliza|duas|Verificação rápida do sistema.|
 |cheia|3D|Verificação completa do sistema.|
 

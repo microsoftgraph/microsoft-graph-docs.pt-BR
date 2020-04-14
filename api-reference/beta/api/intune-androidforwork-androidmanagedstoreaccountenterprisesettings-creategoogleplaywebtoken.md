@@ -1,18 +1,20 @@
 ---
 title: ação createGooglePlayWebToken
 description: Gera um token Web que é usado em um componente incorporável.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 95ce74b002f26632945d19ad191edeb76eedd2ae
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 75c705344b1e2d281579a0f70c78a025ee430b65
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762507"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418038"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>ação createGooglePlayWebToken
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -84,7 +86,6 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Atualizar androidManagedStoreAccountEnterpriseSettings
 description: Atualiza as propriedades de um objeto androidManagedStoreAccountEnterpriseSettings.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cbebf0310a5ddd58b423a701bd12bc5f4f8c60f2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e5df0d4e008dce234858334c42d2841ab2c0332e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762438"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417892"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Atualizar androidManagedStoreAccountEnterpriseSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -142,7 +144,6 @@ Content-Length: 1010
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

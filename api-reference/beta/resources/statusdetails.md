@@ -2,19 +2,19 @@
 title: tipo de recurso statusDetails
 description: Descreve o status do evento de provisionamento e os erros associados.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 853f7ba95ca4e569efd57bb46024b4258b098d90
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f931d14a026a6809e70b4cc83e5b8e55e72e63a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520314"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411855"
 ---
 # <a name="statusdetails-resource-type"></a>tipo de recurso statusDetails
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

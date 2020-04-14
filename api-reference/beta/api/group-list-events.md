@@ -1,20 +1,20 @@
 ---
 title: Listar eventos
 description: Recuperar uma lista de objetos event.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6a8ff2621089214d30b9b7aa8d06c069312f3c6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b748151247dbca6c85ad1b0f089676315a9e7be6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419601"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396967"
 ---
 # <a name="list-events"></a>Listar eventos
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/events
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

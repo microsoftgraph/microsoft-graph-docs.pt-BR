@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso groupAssignmentTarget
 description: Representa uma atribuição para um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85da1976d4935e6cc8e2ca4d3d3e08e2ddd007ac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3bb1de3dbd95145bc7f1ce631175e9867deb1dde
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770071"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407691"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Tipo de recurso groupAssignmentTarget
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

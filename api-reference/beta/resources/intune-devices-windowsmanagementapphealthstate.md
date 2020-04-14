@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsManagementAppHealthState
 description: Entidade de estado de integridade do aplicativo de gerenciamento do Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f37c2f5ac2f109e0b897b55c78a6ede9f77de76
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 85f8adbd44ddcea679f29aaa1e028384bb59aafb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783603"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419624"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>tipo de recurso windowsManagementAppHealthState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

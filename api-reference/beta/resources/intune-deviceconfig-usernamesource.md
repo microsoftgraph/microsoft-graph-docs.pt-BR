@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração usernamename
 description: Fonte de nome de usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f76ffeb23a32c670e0f9fed676a2ca508724444
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ee5ef7efb07bc6ce775a5edb5e4fc049337abf58
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787429"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412550"
 ---
 # <a name="usernamesource-enum-type"></a>tipo de enumeração usernamename
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -2,17 +2,19 @@
 title: tipo de recurso conditionalAccessLocations
 description: Representa os locais incluídos e excluídos do escopo da política.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6997664eb131664bcaaf571398ed393fb13c987c
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 09440c789ae98ae2d5eb46de26f56b32bf0ce578
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638565"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413405"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>tipo de recurso conditionalAccessLocations
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ Representa os locais incluídos e excluídos do escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeLocations | Coleção de cadeias de caracteres | IDs de local em escopo de política, a menos `All`que explicitamente `AllTrusted`excluído, ou. |
-| excludeLocations | Coleção de cadeias de caracteres | IDs de local excluídas do escopo da política. |
+| includeLocations | Coleção String | IDs de local em escopo de política, a menos `All`que explicitamente `AllTrusted`excluído, ou. |
+| excludeLocations | Coleção String | IDs de local excluídas do escopo da política. |
 
 ## <a name="json-representation"></a>Representação JSON
 

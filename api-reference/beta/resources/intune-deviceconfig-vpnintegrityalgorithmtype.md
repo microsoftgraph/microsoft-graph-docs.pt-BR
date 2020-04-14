@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração vpnIntegrityAlgorithmType
 description: O tipo de algoritmo de integridade da Associação de segurança VPN
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a9993391ddd4d426d057b6d6c77de8642610c66
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6f592a14be6b1aa311580d319165897eb6f63de8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787373"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412190"
 ---
 # <a name="vpnintegrityalgorithmtype-enum-type"></a>tipo de enumeração vpnIntegrityAlgorithmType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

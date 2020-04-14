@@ -1,18 +1,20 @@
 ---
 title: Criar androidDeviceOwnerEnrollmentProfile
 description: Criar um novo objeto androidDeviceOwnerEnrollmentProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 636843deb4151c98aacf63853c975b75ac9bfd67
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c02d06ca269da451112293e833ca2460e95fd3b2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815814"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395992"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Criar androidDeviceOwnerEnrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -130,7 +132,6 @@ Content-Length: 799
   ]
 }
 ```
-
 
 
 

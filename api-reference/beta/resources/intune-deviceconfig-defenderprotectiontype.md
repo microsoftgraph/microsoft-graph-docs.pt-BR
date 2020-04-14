@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderProtectionType
 description: Possíveis valores da proteção do defender PUA
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e485cc311a0f4d5da84b78b6b8659ff033adb444
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 313aa28d3b34728edca50f3fb46cb175f2c5e619
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794449"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413101"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>tipo de enumeração defenderProtectionType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

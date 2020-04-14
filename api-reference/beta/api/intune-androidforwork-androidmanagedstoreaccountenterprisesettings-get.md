@@ -1,18 +1,20 @@
 ---
 title: Obter androidManagedStoreAccountEnterpriseSettings
 description: Leia as propriedades e as relações do objeto androidManagedStoreAccountEnterpriseSettings.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 173fdb387d1dfe99dae8eaf7e464511dca1e0bda
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 99b49192b72bb13db93f8713f8009b4ffde67e3f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762500"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418007"
 ---
 # <a name="get-androidmanagedstoreaccountenterprisesettings"></a>Obter androidManagedStoreAccountEnterpriseSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -99,7 +101,6 @@ Content-Length: 1081
   }
 }
 ```
-
 
 
 

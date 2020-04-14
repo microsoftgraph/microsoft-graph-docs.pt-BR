@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração vpnOnDemandRuleConnectionDomainAction
 description: Ação de domínio de conexão de regra por demanda de VPN.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cf4aa54b83ab6d99d4a1f32c32e810c4b994a62d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7c5d9289d320924bfe73d404f59444cb754c18c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787338"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412066"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>tipo de enumeração vpnOnDemandRuleConnectionDomainAction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

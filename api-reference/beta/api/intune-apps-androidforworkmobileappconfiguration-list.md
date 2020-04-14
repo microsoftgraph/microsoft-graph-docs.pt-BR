@@ -1,18 +1,20 @@
 ---
 title: Listar androidForWorkMobileAppConfigurations
 description: Listar Propriedades e relações dos objetos androidForWorkMobileAppConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 52c08ee474bc931a45a6eea0b4e6094abae6d91d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 083b3cb53b9d962e17766df5d663627e541d3eee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762340"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43395277"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>Listar androidForWorkMobileAppConfigurations
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 853
+Content-Length: 906
 
 {
   "value": [
@@ -89,12 +91,12 @@ Content-Length: 853
           "permission": "Permission value",
           "action": "autoGrant"
         }
-      ]
+      ],
+      "profileApplicability": "androidWorkProfile"
     }
   ]
 }
 ```
-
 
 
 

@@ -1,26 +1,26 @@
 ---
 title: Atualizar outlooktask
 description: Alterar as propriedades graváveis de uma tarefa do Outlook.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1e11cbafef89333c48491f1e0143b6d8fb19393d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc311b0e95e33dd189908d7bbec8fa9d57fd0282
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456168"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413591"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Alterar as propriedades graváveis de uma tarefa do Outlook.
 
-A propriedade **completedDateTime** pode ser definida pela ação **Complete** ou explicitamente por uma operação patch. Se você usar PATCH para definir **completedDateTime**, certifique-se de **** `completed` definir o status também.
+A propriedade **completedDateTime** pode ser definida pela ação **Complete** ou explicitamente por uma operação patch. Se você usar PATCH para definir **completedDateTime**, certifique-se de **status** `completed` definir o status também.
 
 Por padrão, essa operação (e as operações de tarefa POST, GET e [Complete](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso deviceEnrollmentLimitConfiguration
 description: Configuração de registro de dispositivo que restringe o número de dispositivos que um usuário pode registrar
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b388020b8f3b883e390783a50da36bdf40c78da
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 956bb4593bd6efc9a08e1ae2ee077c8770cf0615
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779650"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418918"
 ---
 # <a name="deviceenrollmentlimitconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentLimitConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

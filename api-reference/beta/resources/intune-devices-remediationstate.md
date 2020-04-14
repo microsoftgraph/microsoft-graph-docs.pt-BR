@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração remediable
 description: Indica o tipo de status de execução do script de gerenciamento de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cd940bbe2256baa7954e67ba9469ac00740f4ad1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5d615df720a99a88077fa593394308ae816c17c1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783911"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401980"
 ---
 # <a name="remediationstate-enum-type"></a>tipo de enumeração remediable
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

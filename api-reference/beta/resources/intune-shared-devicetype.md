@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração DeviceType
 description: Tipo de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f06aef9e1e3efe2dc9ec528c52a2442c54dc183e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4690c0c67da9a78bcc9d111cc64712510179f789
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407862"
 ---
 # <a name="devicetype-enum-type"></a>tipo de enumeração DeviceType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -36,7 +38,7 @@ Tipo de dispositivo.
 |iPod|10 |iPodTouch.|
 |Android|11|Android.|
 |iSocConsumer|12 |iSocConsumer.|
-|UNIX|13 |UNIX.|
+|UNIX|Treze|UNIX.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM interno.|
 |holoLens|15 |Representando o Windows 10 Goggles sofisticado.|
 |surfaceHub|16 |Dispositivo de HUB de superfície.|

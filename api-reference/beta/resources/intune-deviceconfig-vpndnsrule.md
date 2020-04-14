@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso vpnDnsRule
 description: Definição de regra DNS de VPN.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ffc8c01aadfe77bd3d92d9f7618a5846cf7c855
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac7b87442dc2fda2df5e342981def579457bae3d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787387"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412228"
 ---
 # <a name="vpndnsrule-resource-type"></a>tipo de recurso vpnDnsRule
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,7 +26,7 @@ Definição de regra DNS de VPN.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |nome|String|Tdomínio.|
-|servidores|Coleção de cadeias de caracteres|Servidores.|
+|servidores|Coleção String|Servidores.|
 |proxyServerUri|String|URI do servidor proxy.|
 |Gatilho autotrigger|Boolean|Conectar-se automaticamente à VPN quando o dispositivo se conectar a este domínio: padrão false.|
 |persistente|Boolean|Manter esta regra ativa mesmo quando a VPN não estiver conectada: false padrão|

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração siteSecurityLevel
 description: Valores possíveis para o nível de segurança do site.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bf97b4ff81bade843d99bf55b3a22711d22b96f3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8906bb409dad0e758104e6c71596cd6a6fa6ea30
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787499"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412892"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>tipo de enumeração siteSecurityLevel
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

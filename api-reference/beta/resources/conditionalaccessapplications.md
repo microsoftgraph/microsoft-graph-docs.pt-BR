@@ -2,19 +2,19 @@
 title: tipo de recurso conditionalAccessApplications
 description: Representa os aplicativos e as ações do usuário incluídos e excluídos do escopo da política.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4e66618a8dbf6d5d29ca3b5c08a9b7bd10e05ded
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6484ec54b5e39ad2e6b189cc70c05fd666b81297
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507566"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413513"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>tipo de recurso conditionalAccessApplications
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +24,9 @@ Representa os aplicativos e as ações do usuário incluídos no e excluídos da
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| includeApplications | String collection | A lista de IDs de aplicativo à qual a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All`. |
-| excludeApplications | String collection | A lista de IDs de aplicativo explicitamente excluídas da política. |
-| includeUserActions | String collection | Ações do usuário a serem incluídas ( `urn:user:registersecurityinfo`por exemplo,) |
+| includeApplications | Coleção String | A lista de IDs de aplicativo à qual a política se aplica, a menos que explicitamente excluída (em excludeApplications). Também pode ser definido como `All`. |
+| excludeApplications | Coleção String | A lista de IDs de aplicativo explicitamente excluídas da política. |
+| includeUserActions | Coleção String | Ações do usuário a serem incluídas ( `urn:user:registersecurityinfo`por exemplo,) |
 
 ## <a name="relationships"></a>Relações
 

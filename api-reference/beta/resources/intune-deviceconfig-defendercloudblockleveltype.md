@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderCloudBlockLevelType
 description: Possíveis valores de nível de bloco de nuvem
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3afc9a0bdf5d25c4496cb2dcf4a7ef013ac0785d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6f960a4ef6a3f02cc3d96abba470c3322b6fcb0b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795615"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413288"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>tipo de enumeração defenderCloudBlockLevelType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

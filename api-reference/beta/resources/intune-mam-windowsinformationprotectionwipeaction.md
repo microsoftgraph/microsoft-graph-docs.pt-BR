@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsInformationProtectionWipeAction
 description: Representa as solicitações de apagamento emitidas por um administrador de locatários para dispositivos do Windows BYOD (Traga seu próprio dispositivo).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7f4411731a8f997dc58d32b82aca27f8481888a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b06dda234d0b4f92525367b0c7c0d218a763ed8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780238"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419188"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>tipo de recurso windowsInformationProtectionWipeAction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -2,19 +2,19 @@
 title: tipo de recurso stsPolicy
 description: Representa um tipo de base abstrato para tipos de política que controlam o comportamento da plataforma de identidade da Microsoft.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b3206908e75e9d36638bc59ee2fdcba7006534ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7233c4f147b31a42102dd9c5dbf241d9899356a6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520300"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411832"
 ---
 # <a name="policybase-resource-type"></a>tipo de recurso policyBase
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ Nenhum
 |id|String| Identificador exclusivo da política. Somente leitura. Herdado de [policyBase](policyBase.md).|
 |description|String| Descrição da política. Herdado de [policyBase](policyBase.md).|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Herdado de [policyBase](policyBase.md).|
-|definir|String collection| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
+|definir|Coleção String| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 ## <a name="relationships"></a>Relações

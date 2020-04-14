@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de configurações do usuário (UserSettings)
 description: 'As atuais configurações de usuário para descoberta de conteúdo. '
-author: dkershaw10
+author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 43799ef1f4e417f2ebd9fc51c49e4a895f0203b1
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: c04a3ac42d26bc219967c706a9fddad4067653ff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144244"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411722"
 ---
 # <a name="usersettings-resource-type"></a>Tipo de recurso de configurações do usuário (UserSettings)
 
@@ -26,7 +26,7 @@ Esse recurso permite:
 - Habilitar ou desabilitar a descoberta de conteúdo para usuários específicos. Isso também desabilita documentos no Office Delve.
 
 > [!NOTE]
-> Este ponto de extremidade funciona apenas com os usuários. Você não pode usar esse ponto de extremidade com contatos.
+> Esse ponto de extremidade só funciona com usuários. Você não pode usar esse ponto de extremidade com os contatos.
 
 ## <a name="methods"></a>Métodos
 | Método       | Tipo de retorno  |Descrição|

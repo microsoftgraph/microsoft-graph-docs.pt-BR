@@ -1,18 +1,20 @@
 ---
 title: Listar windowsUniversalAppXContainedApps
 description: Listar Propriedades e relações dos objetos windowsUniversalAppXContainedApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f428ff1d57c82147d3b80af682576a99fd40947f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 21aa69095185dd32e5da4920740639c13047349b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760624"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408833"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Listar windowsUniversalAppXContainedApps
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -77,7 +79,6 @@ Content-Length: 216
   ]
 }
 ```
-
 
 
 

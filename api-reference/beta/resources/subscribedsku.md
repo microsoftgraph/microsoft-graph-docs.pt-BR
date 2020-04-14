@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso subscribedSku
-description: " criar, atualizar e excluir não são suportados. Não há suporte para expressões de filtro de consulta. Herda do directoryObject."
+description: Representa o tipo de SKU inscrito.
 localization_priority: Normal
-author: davidmu1
+author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 528ec916edf049ef48b057afabad943bbb2182cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63aafb107a9c95c3dd4fa0c5b3aad33bccdc0174
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411745"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Atualizar iosVppAppAssignedLicense
 description: Atualiza as propriedades de um objeto iosVppAppAssignedLicense.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d26b8830ee428bbb19e1b897f826fcff4b1d22bb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3a1007e95ea71a1bde87380c6d408e9557724bb0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761853"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416574"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Atualizar iosVppAppAssignedLicense
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -96,7 +98,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

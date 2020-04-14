@@ -1,18 +1,20 @@
 ---
 title: Atualizar mobileAppProvisioningConfigGroupAssignment
 description: Atualiza as propriedades de um objeto mobileAppProvisioningConfigGroupAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5170fcd30e6de4f16b56d6da963f3193924e5114
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 537570ee2e1300cf5c6eede23d8a8d5ef0cccfb3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761157"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414567"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Atualizar mobileAppProvisioningConfigGroupAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -87,7 +89,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
 
 
 

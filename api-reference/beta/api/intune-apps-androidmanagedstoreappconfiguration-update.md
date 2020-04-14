@@ -1,18 +1,20 @@
 ---
 title: Atualizar androidManagedStoreAppConfiguration
 description: Atualiza as propriedades de um objeto androidManagedStoreAppConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b490c747168265367b0609585fc29d2f36bc03e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8dbcb5e73fbb672a80aef01e28978c8411f63831
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762193"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417418"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>Atualizar androidManagedStoreAppConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|Coleção de cadeias de caracteres|o aplicativo associado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de aplicativo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de configuração de aplicativo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |description|String|Descrição fornecida pelo administrador da configuração do dispositivo. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
@@ -63,6 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |payloadJson|String|Carga JSON da configuração do aplicativo empresarial Android.|
 |permissionActions|coleção [androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Lista de permissões de aplicativo Android e ações de permissão correspondentes.|
 |appSupportsOemConfig|Boolean|Se este AppConfig é ou não uma política de OEMConfig.|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Aplicabilidade de perfil corporativo Android (AndroidWorkProfile, DeviceOwner ou default (aplica-se a ambos)). Os valores possíveis são: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 
 
@@ -76,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 Content-type: application/json
-Content-length: 592
+Content-length: 641
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -98,7 +101,8 @@ Content-length: 592
       "action": "autoGrant"
     }
   ],
-  "appSupportsOemConfig": true
+  "appSupportsOemConfig": true,
+  "profileApplicability": "androidWorkProfile"
 }
 ```
 
@@ -107,7 +111,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 764
+Content-Length: 813
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -132,10 +136,10 @@ Content-Length: 764
       "action": "autoGrant"
     }
   ],
-  "appSupportsOemConfig": true
+  "appSupportsOemConfig": true,
+  "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

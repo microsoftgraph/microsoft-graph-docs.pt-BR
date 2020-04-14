@@ -1,20 +1,20 @@
 ---
 title: Obter outlookTaskGroup
 description: Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8d3d5b164d3bdcfee98f9f664afd187b91d9f016
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: adcb583df01aa25d0927e595b37fe09d56b3fbbb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456115"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408383"
 ---
 # <a name="get-outlooktaskgroup"></a>Obter outlookTaskGroup
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

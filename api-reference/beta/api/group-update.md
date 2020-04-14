@@ -1,20 +1,20 @@
 ---
 title: Atualizar grupo
 description: Atualiza as propriedades de um objeto [Group](../resources/group.md) .
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a2e5e9fa10ec8d37099f09cc294b36a429bb0642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef9cca7194adeeea1c3fc52c02e4b3d515afe2c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446678"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396094"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

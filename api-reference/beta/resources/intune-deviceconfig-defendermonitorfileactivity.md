@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderMonitorFileActivity
 description: Valores possíveis para monitorar a atividade do arquivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dc43905a4fa245a497d28c8bae97724534a6470f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0fd9fce6cd47ead0d68c57658fa34404f52f5d7b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794470"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413162"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>tipo de enumeração defenderMonitorFileActivity
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

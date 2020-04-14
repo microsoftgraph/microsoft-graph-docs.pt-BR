@@ -1,18 +1,20 @@
 ---
 title: Listar iosVppAppAssignedDeviceLicenses
 description: Listar Propriedades e relações dos objetos iosVppAppAssignedDeviceLicense.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4645f225b9cdbfa490030b8cbc43c75128d750a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 76905bb5996a1aa2463a28872419f1958a3e70e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761899"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416706"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>Listar iosVppAppAssignedDeviceLicenses
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -80,7 +82,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: Atualizar evento
 description: Atualize um objeto event.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e4112a32175f7b1a515cd9d400d70b8d502ecefe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ed143b7b540f64bae81208127ade193a6cc238fa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418188"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396180"
 ---
 # <a name="update-event"></a>Atualizar evento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

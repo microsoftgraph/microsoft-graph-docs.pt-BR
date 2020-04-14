@@ -2,19 +2,19 @@
 title: Atualizar orgcontact
 description: Atualize as propriedades do objeto orgcontact.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c56ab5562e9b242819d7110914329996e64596a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa9704c44dc8dc7068bf387b97669e2c42aecdd2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456229"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403221"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |state|Cadeia de caracteres||
 |streetAddress|String||
 |surname|String||
-|businessPhones|String collection||
+|businessPhones|Coleção de cadeias de caracteres||
 
 ## <a name="response"></a>Resposta
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementExchangeOnPremisesPolicy
 description: Entidade singleton que representa a política local do Exchange configurada para um locatário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62968925457c6954e96764d9d970d2d0266e099f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a4d633388ea8d59d5c22e54663c235201bdfece
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418823"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>tipo de recurso deviceManagementExchangeOnPremisesPolicy
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

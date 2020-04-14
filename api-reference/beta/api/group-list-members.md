@@ -1,20 +1,20 @@
 ---
 title: Membros do grupo de lista
-description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação não é transitiva.
+description: Obtenha uma lista dos membros diretos do grupo.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 25f2585647e81afdf4abb9a2257b9548f1847c37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: feae4be3a16254e15548f53bb19d55d186fa1ac4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419423"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396945"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

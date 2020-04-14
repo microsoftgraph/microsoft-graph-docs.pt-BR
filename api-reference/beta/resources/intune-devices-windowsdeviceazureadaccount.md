@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsDeviceAzureADAccount
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86370451e07242d7c17b8ce23dacfa8fe3aacd30
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d92fb74d9cd52e2702a9471cb0d01b0ebdb4191d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783715"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401762"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Tipo de recurso windowsDeviceAzureADAccount
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

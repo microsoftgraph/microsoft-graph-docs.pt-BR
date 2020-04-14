@@ -1,18 +1,20 @@
 ---
 title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto vppToken.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cf2916b7444d829d1be71c329d2f7fd0fb41d01e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8804c12df044c11b9cdb7ba32c2b37517aa72b9b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802647"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403276"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -68,7 +70,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
 |LocationName|String|Local do token retornado da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
+|roleScopeTagIds|Coleção String|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 
 
@@ -154,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

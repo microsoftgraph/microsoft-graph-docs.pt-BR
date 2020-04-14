@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso omaSetting
 description: Configurações de OMA.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f53e50bdf3584ab7f34afedbd938ad0749eb23b6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bfd4c72bc6018a4b49bcc20c0c1abd953052e471
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788482"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402033"
 ---
 # <a name="omasetting-resource-type"></a>Tipo de recurso omaSetting
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

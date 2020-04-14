@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração UserEmail
 description: Valores possíveis para origem de nome de usuário ou fonte de email.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d5cc2f678fc0baa97cb88f8fe5043fd2f4dcb063
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: acc94a412fe1ccdffb90eb7d325ab15b8e72ba1b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787436"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412621"
 ---
 # <a name="useremailsource-enum-type"></a>tipo de enumeração UserEmail
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

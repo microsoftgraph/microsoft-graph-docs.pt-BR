@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementScript
 description: O Intune fornecerá ao cliente a capacidade de executar os scripts do PowerShell nos dispositivos de ingresso no Azure Active Directory do Windows 10 registrados. O script pode ser executado uma vez ou periodicamente.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a97da3ed79cd443e31f1c97bec757f0788a15eef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a85ef320c75855c1a23efb7a438061b0d7faed1a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770848"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407892"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso deviceManagementScript
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -45,7 +47,7 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts do PowerShell
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 |runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 ## <a name="relationships"></a>Relações

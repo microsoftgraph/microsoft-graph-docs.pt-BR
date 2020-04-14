@@ -1,18 +1,20 @@
 ---
 title: Criar macOsVppApp
 description: Criar um novo objeto macOsVppApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 535c3f3af83d783d66d9b974b8617905437c1b2d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b0d0704c6c4fca4411656dcbf604fde85004d7af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761675"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409960"
 ---
 # <a name="create-macosvppapp"></a>Criar macOsVppApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -67,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOsVpp
 |uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
 |totalLicenseCount|Int32|O número total de licenças VPP.|
@@ -75,7 +77,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOsVpp
 |appStoreUrl|String|A URL da loja.|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|O tipo de licença com suporte.|
 |vppTokenOrganizationName|String|A organização associada ao Token do Programa de Compra por Volume da Apple|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business`, `education`. Os valores possíveis são: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business` e `education`. Os valores possíveis são: `business`, `education`.|
 |vppTokenAppleId|String|O Apple Id associado ao Token do Programa de Compra de Volume da Apple.|
 |bundleId|String|O Nome da Identidade.|
 |vppTokenId|String|Identificador do token VPP associado a este aplicativo.|
@@ -216,7 +218,6 @@ Content-Length: 2041
   ]
 }
 ```
-
 
 
 

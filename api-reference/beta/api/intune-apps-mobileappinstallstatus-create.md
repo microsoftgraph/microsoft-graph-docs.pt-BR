@@ -1,18 +1,20 @@
 ---
 title: Criar mobileAppInstallStatus
 description: Criar um novo objeto mobileAppInstallStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48218f2a1f793f231d65aefe1f51e11171a85a1a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2cf896807b1bce39b8f83a956ead7531a7c0d0b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761234"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414964"
 ---
 # <a name="create-mobileappinstallstatus"></a>Criar mobileAppInstallStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -121,7 +123,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Obter outlookTask
 description: Obtenha as propriedades e as relações de uma tarefa do Outlook na caixa de correio do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c355803ef243fb5a23d18ff8fecfd66260e7a9b2
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 89b790ee480fc6c92aff5652fc2c165d6eb828e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618891"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413772"
 ---
 # <a name="get-outlooktask"></a>Obter outlookTask
 

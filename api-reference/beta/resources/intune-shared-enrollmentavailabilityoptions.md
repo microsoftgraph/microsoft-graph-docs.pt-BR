@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração enrollmentAvailabilityOptions
 description: Opções disponíveis para a personalização do fluxo de registro
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e357c2e929fbe4a926a6146c5b151956ef9e514
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7be587e0e73a717929e8b63a07aa79551023b23a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770414"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407760"
 ---
 # <a name="enrollmentavailabilityoptions-enum-type"></a>tipo de enumeração enrollmentAvailabilityOptions
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

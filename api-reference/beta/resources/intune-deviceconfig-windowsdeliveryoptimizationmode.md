@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsDeliveryOptimizationMode
 description: Modo de otimização de entrega para distribuição de mesmo nível
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: faf70d8cb1122b09d5fcc6a5dcbf221cf3a6991c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 71bc7e364ca18fefe9ebc5fa5ed75d5dac485a01
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786513"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411909"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

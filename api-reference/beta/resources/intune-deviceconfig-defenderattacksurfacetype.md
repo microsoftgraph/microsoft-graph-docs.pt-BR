@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderAttackSurfaceType
 description: Valores possíveis de regras de redução da superfície de ataque do defender
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f160cdd8cbaa5abf7adf8180d8077d99e4a07d3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b410cfd7d51c072f2145c014aabc02380eb4ed1f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795614"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413327"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>tipo de enumeração defenderAttackSurfaceType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

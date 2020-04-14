@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração certificateRevocationStatus
 description: Status de revogação de certificado.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f0e0342924faf166e6daf0a66149e841b88d6d0c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8d449fc723fd4c3a03c9a72bdbc74768b7db698c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795691"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402228"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>tipo de enumeração certificateRevocationStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Status de revogação de certificado.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Não revogado.|
+|nenhuma|,0|Não revogado.|
 |função|1|Revogação pendente.|
 |executados|duas|Comando de revogação emitido.|
 |falhou|3D|Falha de revogação.|

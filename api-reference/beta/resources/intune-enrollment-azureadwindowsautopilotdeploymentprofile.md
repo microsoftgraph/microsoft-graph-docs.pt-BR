@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso azureADWindowsAutopilotDeploymentProfile
 description: Perfil de implantação do Windows AutoPilot
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3eb9a30ad393512f2aad3a9bcd68702b207a378
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2bdc03487293b4e777ceb45af7ba6b563319ee6a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783554"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419447"
 ---
 # <a name="azureadwindowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso azureADWindowsAutopilotDeploymentProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -47,7 +49,7 @@ Herda de [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsa
 |deviceNameTemplate|String|O modelo usado para nomear o dispositivo de piloto automático. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres. Herdado de [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|O tipo de dispositivo piloto automático ao qual esse perfil se aplica. Herdado de [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md). Os valores possíveis são: `windowsPc`, `surfaceHub2`, `holoLens`.|
 |enableWhiteGlove|Boolean|Habilite o Glove branco do piloto automático para o perfil. Herdado de [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo para o perfil. Herdado de [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|roleScopeTagIds|Coleção String|Marcas de escopo para o perfil. Herdado de [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

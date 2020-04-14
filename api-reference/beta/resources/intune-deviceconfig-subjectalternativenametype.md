@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração subjectAlternativeNameType
 description: Opções de nome alternativo de entidade.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7837c1027a6711a0614c0329c46c5a9e41b9f265
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 14ed51cab266889a3358e2a619590c86f71bdb08
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787471"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412736"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>tipo de enumeração subjectAlternativeNameType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Opções de nome alternativo de entidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum nome alternativo de entidade.|
+|nenhuma|,0|Nenhum nome alternativo de entidade.|
 |emailAddress|1|Endereço de email.|
 |userPrincipalName|duas|Nome principal do usuário (UPN).|
 |customAzureADAttribute|4 |Atributo personalizado do Azure AD.|

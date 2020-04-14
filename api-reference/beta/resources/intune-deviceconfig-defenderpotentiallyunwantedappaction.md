@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderPotentiallyUnwantedAppAction
 description: Ação do defender a ser executada em aplicativo potencialmente indesejado (PUA).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0c99cf04b217239fb1a06b2a6c26dcacc6c61cf7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 11517fc4089913541fd40d48be188c81fb57bf4f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794463"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413123"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>tipo de enumeração defenderPotentiallyUnwantedAppAction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

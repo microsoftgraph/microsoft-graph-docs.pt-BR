@@ -1,18 +1,20 @@
 ---
 title: Criar androidManagedStoreWebApp
 description: Criar um novo objeto androidManagedStoreWebApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb71488437b40c050c77d72dd9e62320223b016b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c23d0df9033aa0f92c09ef6664776a154b3cfa3e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762194"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417411"
 ---
 # <a name="create-androidmanagedstorewebapp"></a>Criar androidManagedStoreWebApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -67,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|O identificador do pacote. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appIdentifier|Cadeia de caracteres|O Nome da Identidade. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
@@ -76,6 +78,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |appStoreUrl|Cadeia de caracteres|A URL do aplicativo de reproduzir para o repositório de trabalho. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |IsPrivate|Boolean|Indica se o aplicativo está disponível somente para os usuários de uma empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |isSystemApp|Boolean|Indica se o aplicativo é um aplicativo de sistema pré-instalado. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appTracks|coleção [androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|As faixas que são visíveis para esta empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |supportsOemConfig|Boolean|Se este aplicativo dá suporte à política OEMConfig. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
@@ -90,7 +93,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 987
+Content-length: 1171
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
@@ -122,6 +125,13 @@ Content-length: 987
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
@@ -131,7 +141,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1159
+Content-Length: 1343
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
@@ -166,10 +176,16 @@ Content-Length: 1159
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
-
 
 
 

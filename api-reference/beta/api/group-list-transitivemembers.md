@@ -1,20 +1,20 @@
 ---
 title: Membros transitivos do grupo de lista
-description: Obtenha uma lista dos membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
+description: Obtenha uma lista dos membros do grupo.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 32c2820a0dc7f5ce690a3342da578d1fccb31bf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9116569521cb024cd6501e448f8dccad61f64260
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419097"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396814"
 ---
 # <a name="list-group-transitive-members"></a>Membros transitivos do grupo de lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

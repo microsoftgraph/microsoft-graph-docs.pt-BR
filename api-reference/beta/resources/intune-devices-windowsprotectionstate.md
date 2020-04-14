@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso Windowsprotectionstate foi
 description: Entidade de status de proteção de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d42efcc04a060d9585c8d02d17d72449ae0a9c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2f34c6b1a18d5de654409cedbb384f0390933ba9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783596"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419617"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>tipo de recurso Windowsprotectionstate foi
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

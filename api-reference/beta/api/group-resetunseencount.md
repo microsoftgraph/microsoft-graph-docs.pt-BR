@@ -1,20 +1,20 @@
 ---
 title: 'group: resetUnseenCount'
-description: Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita. Suporte apenas para Grupos do Office 365.
-author: dkershaw10
+description: Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita.
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c6500e7258026578e2adde35d0f194d1c42f9281
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff1f80d8e716f0fe16ae4e34d40b8f40942f6e32
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418228"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396305"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração networkSingleSignOnType
 description: Configurações de tipo de logon único de rede Wi-Fi.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4095ec21477aea6a1a1ae37597725e58997486dd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a3c469e496626a2cbc31d741653971ae63df0458
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788510"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413048"
 ---
 # <a name="networksinglesignontype-enum-type"></a>tipo de enumeração networkSingleSignOnType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Configurações de tipo de logon único de rede Wi-Fi.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deficiência|,0|Desabilitado|
+|desabilitadas|,0|Desabilitado|
 |pré-login|1|Pré-login|
 |pré-login|duas|Pós-logon|
 

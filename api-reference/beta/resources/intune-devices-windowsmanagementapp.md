@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsManagementApp
 description: Entidade do aplicativo de gerenciamento do Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4dc0e11da5a669d42b13fc3ff81945726c18c9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fa5f2189d0e4273ca287e7cd5ac2a58db60a3f67
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783610"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419647"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>tipo de recurso windowsManagementApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

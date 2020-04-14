@@ -1,20 +1,20 @@
 ---
 title: Adicionar proprietário do grupo
-description: Adiciona um usuário aos proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo.
+description: Adiciona um usuário aos proprietários do grupo.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06cd29f13bd5ed2a11f7f5f033da64e488f92ead
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f35ac4cd3058d89c5aa31eb460f866d9c4c665d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418775"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396484"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

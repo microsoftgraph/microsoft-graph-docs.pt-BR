@@ -4,17 +4,17 @@ description: Um contato, evento ou mensagem que está anexado a outro evento,
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: 82f0e9fa1ab499d7adc305cd74fcf7cdf09fd796
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: cf8f539411f0825b372da803d07cc341e9babef2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523090"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401732"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,10 +39,10 @@ Derivado de [attachment](attachment.md).
 |name|Cadeia de caracteres|O nome de exibição do anexo.|
 |size|Int32|O tamanho do anexo em bytes.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|O contato anexado, a mensagem ou o evento. Propriedade de navegação.|
+|item|[OutlookItem](outlookitem.md)|O contato anexado, a mensagem ou o evento. Propriedade Navigation.|
 
 ## <a name="json-representation"></a>Representação JSON
 

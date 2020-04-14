@@ -2,19 +2,19 @@
 title: tipo de recurso conditionalAccessGrantControls
 description: Representa os controles de concessão que devem ser atendidos para passar a política.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b91afb44cc43c3c6ac4970afc36914abcb08c4c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9746bfb37dd3887def0f070256d90e46efecbdb6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507545"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413428"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>tipo de recurso conditionalAccessGrantControls
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ Representa os controles de concessão que devem ser atendidos para passar a pol�
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
 | operator | String | Define o relacionamento dos controles de concessão. Valores possíveis: `AND`, `OR`. |
-| builtInControls | String collection | Lista de valores de controles internos exigidos pela política. Valores possíveis: `Block`, `Mfa`, `CompliantDevice` `DomainJoinedDevice`,, `ApprovedApplication`,`CompliantApplication` |
-| customAuthenticationFactors | String collection | Lista de IDs de controles personalizados exigidos pela política. Saiba mais sobre os controles personalizados aqui:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
-| termsOfUse | String collection | Lista de [termos de uso](agreement.md) IDs exigidos pela política. |
+| builtInControls | Coleção String | Lista de valores de controles internos exigidos pela política. Valores possíveis: `Block`, `Mfa`, `CompliantDevice` `DomainJoinedDevice`,, `ApprovedApplication`,`CompliantApplication` |
+| customAuthenticationFactors | Coleção String | Lista de IDs de controles personalizados exigidos pela política. Saiba mais sobre os controles personalizados aqui:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| termsOfUse | Coleção String | Lista de [termos de uso](agreement.md) IDs exigidos pela política. |
 
 ## <a name="relationships"></a>Relações
 

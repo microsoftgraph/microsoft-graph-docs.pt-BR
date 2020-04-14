@@ -1,20 +1,20 @@
 ---
 title: Criar anexo
 description: Use esta API para adicionar um anexo a um outlookTask.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d81c0c9b3c59e41c1df42f2af446a61d7bb1a34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc6bf02fceef6467f7d32232c873517c797bd3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456177"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413614"
 ---
 # <a name="create-attachment"></a>Criar anexo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

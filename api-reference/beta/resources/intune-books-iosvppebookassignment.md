@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iosVppEBookAssignment
 description: Contém propriedades usadas para atribuir um livro eletrônico iOS VPP a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d68ae7cab6de91ebd30afb0379ea254ae8fc0609
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 54c08746d3659d21d9cd23c23bc69da5af502385
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797371"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43403082"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Tipo de recurso iosVppEBookAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração vpnAuthenticationMethod
 description: Método de autenticação VPN.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 048b31bd835c1e94d3afcef87b6bd8e93f3ddeec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dd3cc6887f5434df00a2ed9a817c0ca79c8c880e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787415"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412448"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>tipo de enumeração vpnAuthenticationMethod
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

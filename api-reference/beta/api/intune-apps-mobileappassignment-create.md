@@ -1,18 +1,20 @@
 ---
 title: Criar mobileAppAssignment
 description: Criar um novo objeto mobileAppAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5a3894b183d8edae03091f65c535d504d9f9932
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c71bb454f93c5228e0c0a99a6b18a43b11a5e0ee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761423"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43404709"
 ---
 # <a name="create-mobileappassignment"></a>Criar mobileAppAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -107,7 +109,6 @@ Content-Length: 383
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

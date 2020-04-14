@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso androidDeviceOwnerGlobalProxyAutoConfig
 description: Configuração automática de proxy global de proprietário do dispositivo Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c3acf7ef749a95cd17009284d587e4dd41ef4ec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3cee579dbd5a8dee57b270e117a0c50aca377f94
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797011"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43402982"
 ---
 # <a name="androiddeviceownerglobalproxyautoconfig-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyAutoConfig
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

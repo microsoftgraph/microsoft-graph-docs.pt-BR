@@ -3,18 +3,18 @@ title: Política de atualização
 description: Atualize as propriedades em uma política preexistente.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 81c9d429ba3a74d854a9d091f6e40af7993916f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: dkershaw10
+ms.openlocfilehash: 1194d746d0313da0835fc9939bc12671c372684d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455489"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408251"
 ---
 # <a name="update-policy"></a>Política de atualização
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

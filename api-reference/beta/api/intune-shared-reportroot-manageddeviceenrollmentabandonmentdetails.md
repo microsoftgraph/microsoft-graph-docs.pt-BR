@@ -1,18 +1,20 @@
 ---
 title: função managedDeviceEnrollmentAbandonmentDetails
 description: Metadados para o relatório de detalhes de abandono de registro
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3652904e9b8b3bb1e2e46228a1b8ff5f7f5ca58b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b8d11c01ca9bee9c895947d4966b59f4690353f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800694"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408454"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>função managedDeviceEnrollmentAbandonmentDetails
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp;&nbsp; **Troublshooting** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -82,7 +84,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

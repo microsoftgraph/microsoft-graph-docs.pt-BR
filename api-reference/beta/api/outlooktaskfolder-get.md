@@ -1,20 +1,20 @@
 ---
 title: Obter outlookTaskFolder
 description: Obtenha as propriedades e os relacionamentos da pasta de tarefas especificada do Outlook.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 19ce6ee84c272da4e3e80d31b89b8ac593f19608
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b34ea469df9f545dfaeaac02cd3077d23e4252e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456156"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413528"
 ---
 # <a name="get-outlooktaskfolder"></a>Obter outlookTaskFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

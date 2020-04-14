@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsInformationProtectionResourceCollection
 description: Coleção de recursos da Proteção de Informações do Windows
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7d6fad5c2367ace676b67ec6f44f7ca3b082d27
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e5df360e80f2f5efd6d6e4390a1553fbaa4cffce
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780336"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419218"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionResourceCollection
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -4,17 +4,17 @@ description: Contém uma credencial de chave associada a um aplicativo ou a uma 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 507ea4283ae34e0148d84cd8f76036880a255e98
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 983cc4c9cbd19cd7f0b4261f28a00e8e020cefe9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523027"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401709"
 ---
 # <a name="keycredential-resource-type"></a>tipo de recurso keycredential
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
