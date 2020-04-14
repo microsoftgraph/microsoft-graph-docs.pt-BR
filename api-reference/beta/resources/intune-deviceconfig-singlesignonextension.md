@@ -1,34 +1,36 @@
 ---
 title: tipo de recurso singleSignOnExtension
 description: Representa uma extensão de logon único da Apple.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1a6186a8838dd007018dba2635dc9559078c550
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 91be31aca71c97ed5d872659f336714d9b58c9e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787506"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412899"
 ---
-# <a name="singlesignonextension-resource-type"></a><span data-ttu-id="5ea44-103">tipo de recurso singleSignOnExtension</span><span class="sxs-lookup"><span data-stu-id="5ea44-103">singleSignOnExtension resource type</span></span>
+# <a name="singlesignonextension-resource-type"></a><span data-ttu-id="6d0b8-103">tipo de recurso singleSignOnExtension</span><span class="sxs-lookup"><span data-stu-id="6d0b8-103">singleSignOnExtension resource type</span></span>
 
-> <span data-ttu-id="5ea44-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5ea44-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="6d0b8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6d0b8-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5ea44-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5ea44-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6d0b8-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6d0b8-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="5ea44-106">Representa uma extensão de logon único da Apple.</span><span class="sxs-lookup"><span data-stu-id="5ea44-106">Represents an Apple Single Sign-On Extension.</span></span>
+> <span data-ttu-id="6d0b8-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6d0b8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5ea44-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5ea44-107">Properties</span></span>
-|<span data-ttu-id="5ea44-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5ea44-108">Property</span></span>|<span data-ttu-id="5ea44-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="5ea44-109">Type</span></span>|<span data-ttu-id="5ea44-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="5ea44-110">Description</span></span>|
+<span data-ttu-id="6d0b8-107">Representa uma extensão de logon único da Apple.</span><span class="sxs-lookup"><span data-stu-id="6d0b8-107">Represents an Apple Single Sign-On Extension.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="6d0b8-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6d0b8-108">Properties</span></span>
+|<span data-ttu-id="6d0b8-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6d0b8-109">Property</span></span>|<span data-ttu-id="6d0b8-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="6d0b8-110">Type</span></span>|<span data-ttu-id="6d0b8-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6d0b8-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="5ea44-111">Relações</span><span class="sxs-lookup"><span data-stu-id="5ea44-111">Relationships</span></span>
-<span data-ttu-id="5ea44-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="5ea44-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="6d0b8-112">Relações</span><span class="sxs-lookup"><span data-stu-id="6d0b8-112">Relationships</span></span>
+<span data-ttu-id="6d0b8-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6d0b8-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5ea44-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5ea44-113">JSON Representation</span></span>
-<span data-ttu-id="5ea44-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5ea44-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6d0b8-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6d0b8-114">JSON Representation</span></span>
+<span data-ttu-id="6d0b8-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6d0b8-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.singleSignOnExtension"

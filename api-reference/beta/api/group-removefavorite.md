@@ -2,56 +2,56 @@
 title: 'group: removeFavorite'
 description: Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 31fea0dd73f8201dce104a0adf404137ad2fd90e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3be0788fdf5093520e55c1ce40a3290cd4be5e15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42418509"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43396337"
 ---
-# <a name="group-removefavorite"></a><span data-ttu-id="d7737-104">group: removeFavorite</span><span class="sxs-lookup"><span data-stu-id="d7737-104">group: removeFavorite</span></span>
+# <a name="group-removefavorite"></a><span data-ttu-id="599a3-104">group: removeFavorite</span><span class="sxs-lookup"><span data-stu-id="599a3-104">group: removeFavorite</span></span>
 
-<span data-ttu-id="d7737-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d7737-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="599a3-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="599a3-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d7737-p102">Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="d7737-p102">Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.</span></span>
+<span data-ttu-id="599a3-p102">Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="599a3-p102">Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d7737-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="d7737-108">Permissions</span></span>
-<span data-ttu-id="d7737-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d7737-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="599a3-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="599a3-108">Permissions</span></span>
+<span data-ttu-id="599a3-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="599a3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d7737-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d7737-111">Permission type</span></span>      | <span data-ttu-id="d7737-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d7737-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="599a3-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="599a3-111">Permission type</span></span>      | <span data-ttu-id="599a3-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="599a3-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d7737-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d7737-113">Delegated (work or school account)</span></span> | <span data-ttu-id="d7737-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7737-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d7737-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d7737-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7737-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d7737-116">Not supported.</span></span>    |
-|<span data-ttu-id="d7737-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d7737-117">Application</span></span> | <span data-ttu-id="d7737-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d7737-118">Not supported.</span></span> |
+|<span data-ttu-id="599a3-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="599a3-113">Delegated (work or school account)</span></span> | <span data-ttu-id="599a3-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="599a3-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="599a3-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="599a3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="599a3-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="599a3-116">Not supported.</span></span>    |
+|<span data-ttu-id="599a3-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="599a3-117">Application</span></span> | <span data-ttu-id="599a3-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="599a3-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d7737-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d7737-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="599a3-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="599a3-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/removeFavorite
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d7737-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d7737-120">Request headers</span></span>
-| <span data-ttu-id="d7737-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d7737-121">Header</span></span>       | <span data-ttu-id="d7737-122">Valor</span><span class="sxs-lookup"><span data-stu-id="d7737-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="599a3-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="599a3-120">Request headers</span></span>
+| <span data-ttu-id="599a3-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="599a3-121">Header</span></span>       | <span data-ttu-id="599a3-122">Valor</span><span class="sxs-lookup"><span data-stu-id="599a3-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d7737-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="d7737-123">Authorization</span></span>  | <span data-ttu-id="d7737-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d7737-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="d7737-126">Preferir</span><span class="sxs-lookup"><span data-stu-id="d7737-126">Prefer</span></span> | <span data-ttu-id="d7737-127">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="d7737-127">return=minimal.</span></span> <span data-ttu-id="d7737-128">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="d7737-128">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="d7737-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="d7737-129">Optional.</span></span>  | 
+| <span data-ttu-id="599a3-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="599a3-123">Authorization</span></span>  | <span data-ttu-id="599a3-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="599a3-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="599a3-126">Preferir</span><span class="sxs-lookup"><span data-stu-id="599a3-126">Prefer</span></span> | <span data-ttu-id="599a3-127">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="599a3-127">return=minimal.</span></span> <span data-ttu-id="599a3-128">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="599a3-128">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="599a3-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="599a3-129">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="d7737-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d7737-130">Request body</span></span>
-<span data-ttu-id="d7737-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d7737-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="599a3-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="599a3-130">Request body</span></span>
+<span data-ttu-id="599a3-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="599a3-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d7737-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="d7737-132">Response</span></span>
-<span data-ttu-id="d7737-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d7737-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="599a3-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="599a3-132">Response</span></span>
+<span data-ttu-id="599a3-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="599a3-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d7737-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d7737-135">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="d7737-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d7737-136">Request</span></span>
-<span data-ttu-id="d7737-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d7737-137">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="599a3-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="599a3-135">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="599a3-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="599a3-136">Request</span></span>
+<span data-ttu-id="599a3-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="599a3-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d7737-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="d7737-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="599a3-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="599a3-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_removefavorite"
@@ -59,23 +59,23 @@ POST /groups/{id}/removeFavorite
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 ```
-# <a name="c"></a>[<span data-ttu-id="d7737-139">C#</span><span class="sxs-lookup"><span data-stu-id="d7737-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="599a3-139">C#</span><span class="sxs-lookup"><span data-stu-id="599a3-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-removefavorite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d7737-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d7737-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="599a3-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="599a3-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-removefavorite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d7737-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d7737-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="599a3-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="599a3-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-removefavorite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="d7737-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="d7737-142">Response</span></span>
-<span data-ttu-id="d7737-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d7737-143">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="599a3-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="599a3-142">Response</span></span>
+<span data-ttu-id="599a3-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="599a3-143">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

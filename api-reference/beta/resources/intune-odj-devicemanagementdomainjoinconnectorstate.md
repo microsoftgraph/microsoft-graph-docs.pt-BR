@@ -1,31 +1,33 @@
 ---
 title: tipo de enumeração deviceManagementDomainJoinConnectorState
 description: A solicitação ODJ diz.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e8eff02a8ff4d47f920bad6506bcb9e3b37f0785
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 919b8e22b119b211cea4b897c7f2f7c713307e02
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779881"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419113"
 ---
-# <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a><span data-ttu-id="f9bca-103">tipo de enumeração deviceManagementDomainJoinConnectorState</span><span class="sxs-lookup"><span data-stu-id="f9bca-103">deviceManagementDomainJoinConnectorState enum type</span></span>
+# <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a><span data-ttu-id="c2980-103">tipo de enumeração deviceManagementDomainJoinConnectorState</span><span class="sxs-lookup"><span data-stu-id="c2980-103">deviceManagementDomainJoinConnectorState enum type</span></span>
 
-> <span data-ttu-id="f9bca-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="f9bca-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="c2980-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c2980-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f9bca-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f9bca-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c2980-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c2980-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="f9bca-106">A solicitação ODJ diz.</span><span class="sxs-lookup"><span data-stu-id="f9bca-106">The ODJ request states.</span></span>
+> <span data-ttu-id="c2980-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c2980-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="f9bca-107">Membros</span><span class="sxs-lookup"><span data-stu-id="f9bca-107">Members</span></span>
-|<span data-ttu-id="f9bca-108">Membro</span><span class="sxs-lookup"><span data-stu-id="f9bca-108">Member</span></span>|<span data-ttu-id="f9bca-109">Valor</span><span class="sxs-lookup"><span data-stu-id="f9bca-109">Value</span></span>|<span data-ttu-id="f9bca-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9bca-110">Description</span></span>|
+<span data-ttu-id="c2980-107">A solicitação ODJ diz.</span><span class="sxs-lookup"><span data-stu-id="c2980-107">The ODJ request states.</span></span>
+
+## <a name="members"></a><span data-ttu-id="c2980-108">Membros</span><span class="sxs-lookup"><span data-stu-id="c2980-108">Members</span></span>
+|<span data-ttu-id="c2980-109">Membro</span><span class="sxs-lookup"><span data-stu-id="c2980-109">Member</span></span>|<span data-ttu-id="c2980-110">Valor</span><span class="sxs-lookup"><span data-stu-id="c2980-110">Value</span></span>|<span data-ttu-id="c2980-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="c2980-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f9bca-111">active</span><span class="sxs-lookup"><span data-stu-id="f9bca-111">active</span></span>|<span data-ttu-id="f9bca-112">,0</span><span class="sxs-lookup"><span data-stu-id="f9bca-112">0</span></span>|<span data-ttu-id="f9bca-113">O conector está ativamente fazendo ping no Intune.</span><span class="sxs-lookup"><span data-stu-id="f9bca-113">Connector is actively pinging Intune.</span></span>|
-|<span data-ttu-id="f9bca-114">erro</span><span class="sxs-lookup"><span data-stu-id="f9bca-114">error</span></span>|<span data-ttu-id="f9bca-115">1</span><span class="sxs-lookup"><span data-stu-id="f9bca-115">1</span></span>|<span data-ttu-id="f9bca-116">Não há um coração do conector da última hora.</span><span class="sxs-lookup"><span data-stu-id="f9bca-116">There is no heart-beat from connector from last one hour.</span></span>|
-|<span data-ttu-id="f9bca-117">inativa</span><span class="sxs-lookup"><span data-stu-id="f9bca-117">inactive</span></span>|<span data-ttu-id="f9bca-118">duas</span><span class="sxs-lookup"><span data-stu-id="f9bca-118">2</span></span>|<span data-ttu-id="f9bca-119">Não há um coração do conector dos últimos 5 dias.</span><span class="sxs-lookup"><span data-stu-id="f9bca-119">There is no heart-beat from connector from last 5 days.</span></span>|
+|<span data-ttu-id="c2980-112">active</span><span class="sxs-lookup"><span data-stu-id="c2980-112">active</span></span>|<span data-ttu-id="c2980-113">,0</span><span class="sxs-lookup"><span data-stu-id="c2980-113">0</span></span>|<span data-ttu-id="c2980-114">O conector está ativamente fazendo ping no Intune.</span><span class="sxs-lookup"><span data-stu-id="c2980-114">Connector is actively pinging Intune.</span></span>|
+|<span data-ttu-id="c2980-115">erro</span><span class="sxs-lookup"><span data-stu-id="c2980-115">error</span></span>|<span data-ttu-id="c2980-116">1</span><span class="sxs-lookup"><span data-stu-id="c2980-116">1</span></span>|<span data-ttu-id="c2980-117">Não há um coração do conector da última hora.</span><span class="sxs-lookup"><span data-stu-id="c2980-117">There is no heart-beat from connector from last one hour.</span></span>|
+|<span data-ttu-id="c2980-118">inativa</span><span class="sxs-lookup"><span data-stu-id="c2980-118">inactive</span></span>|<span data-ttu-id="c2980-119">duas</span><span class="sxs-lookup"><span data-stu-id="c2980-119">2</span></span>|<span data-ttu-id="c2980-120">Não há um coração do conector dos últimos 5 dias.</span><span class="sxs-lookup"><span data-stu-id="c2980-120">There is no heart-beat from connector from last 5 days.</span></span>|
 
 
 
