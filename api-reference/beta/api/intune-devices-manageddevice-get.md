@@ -1,18 +1,20 @@
 ---
 title: Acessar managedDevice
 description: Leia as propriedades e as relações do objeto managedDevice.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2acc153aef821f32205a6cd04b1331dabd00353
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0eaf878a982f4cde9858f789322b10dd2eaf1d1f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814257"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43324816"
 ---
 # <a name="get-manageddevice"></a>Acessar managedDevice
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -70,7 +72,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8076
+Content-Length: 8136
 
 {
   "value": {
@@ -248,11 +250,11 @@ Content-Length: 8076
     },
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
-    "processorArchitecture": "x86"
+    "processorArchitecture": "x86",
+    "specificationVersion": "Specification Version value"
   }
 }
 ```
-
 
 
 

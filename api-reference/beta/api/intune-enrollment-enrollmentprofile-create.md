@@ -1,18 +1,20 @@
 ---
 title: Criar enrollmentProfile
 description: Criar um novo objeto enrollmentProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc2331048268137a81c2f11150266d75a00057e1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c3eb88d96e9594ab984e9a0f9b47e5c5f663f227
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813194"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43319155"
 ---
 # <a name="create-enrollmentprofile"></a>Criar enrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,10 +56,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar enrollme
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|Cadeia de caracteres|Nome do perfil|
 |description|String|Descrição do perfil|
-|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação do usuário|
+|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro|
-|Enableauthenticationviacompanyportal foi adicionada|Boolean|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
+|Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
 
 
 
@@ -102,7 +104,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

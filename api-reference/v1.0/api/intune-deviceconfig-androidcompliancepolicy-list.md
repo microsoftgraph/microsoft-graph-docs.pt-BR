@@ -1,16 +1,16 @@
 ---
 title: Listar androidCompliancePolicies
 description: Listar propriedades e relações dos objetos androidCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7287abb42d6695617c9aa23df76ad0195c218fa4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fd0e3da85caf6798ca48daad9dbd45ab89877d17
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515375"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316709"
 ---
 # <a name="list-androidcompliancepolicies"></a>Listar androidCompliancePolicies
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -100,6 +100,8 @@ Content-Length: 1476
   ]
 }
 ```
+
+
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceManagementIntentAssignment
 description: Atualiza as propriedades de um objeto deviceManagementIntentAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 862ecb3b706d486499a3bee8c0de14c92b7368e8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c6e5d6b5f040f7e4feed6e5b75e9c1af23212d12
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815307"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43326954"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Atualizar deviceManagementIntentAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -91,7 +93,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

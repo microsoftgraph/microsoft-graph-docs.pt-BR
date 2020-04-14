@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceManagementIntentUserStateSummary
 description: Atualiza as propriedades de um objeto deviceManagementIntentUserStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88749a89e92ffa3069c929b4e754627049491725
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f43e8499b341b30b475ed3ccc9a1954056c6bb21
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815139"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43325607"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>Atualizar deviceManagementIntentUserStateSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -99,7 +101,6 @@ Content-Length: 247
   "successCount": 12
 }
 ```
-
 
 
 

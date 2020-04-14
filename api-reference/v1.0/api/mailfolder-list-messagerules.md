@@ -2,15 +2,15 @@
 title: Listar regras
 description: Obtenha todos os objetos messageRule definidos para a caixa de entrada do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ccdf23f7fc4813bae915f673fe88ab54d15173d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a0532e0f8a17d8feb59dcd4c39f5b99b67618bad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511632"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316645"
 ---
 # <a name="list-rules"></a>Listar regras
 

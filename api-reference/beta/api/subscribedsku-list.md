@@ -2,19 +2,19 @@
 title: Listar subscribedSkus
 description: Recupere a lista de assinaturas comerciais que uma organização adquiriu.
 localization_priority: Normal
-author: davidmu1
+author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ca68f2a2bc7dd96d22b8bacc5c65b8983b85bb1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57a4aade0a154fe08b5573cb814b5146aafee602
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453125"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43318571"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
