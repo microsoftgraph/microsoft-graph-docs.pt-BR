@@ -1,18 +1,20 @@
 ---
 title: Obter androidForWorkEnterpriseWiFiConfiguration
 description: Leia as propriedades e as relações do objeto androidForWorkEnterpriseWiFiConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fca98617ea3d8f7e0f23f2815c6aa28694029edf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 50c71dd0051ad63aed1081ef159b44a6f4a67ec7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759355"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43347218"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>Obter androidForWorkEnterpriseWiFiConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -117,7 +119,6 @@ Content-Length: 1820
   }
 }
 ```
-
 
 
 

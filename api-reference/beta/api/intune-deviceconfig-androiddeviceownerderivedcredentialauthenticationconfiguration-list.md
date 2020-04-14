@@ -1,18 +1,18 @@
 ---
-title: Listar androidCustomConfigurations
-description: Listar propriedades e relações dos objetos androidCustomConfiguration.
+title: Listar androidDeviceOwnerDerivedCredentialAuthenticationConfigurations
+description: Listar Propriedades e relações dos objetos androidDeviceOwnerDerivedCredentialAuthenticationConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e4ae714fc60c9a61addbf39af40afa72315b93c
+ms.openlocfilehash: aa748b6e54851695346de15935cec18b67c87d25
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352317"
+ms.locfileid: "43351312"
 ---
-# <a name="list-androidcustomconfigurations"></a>Listar androidCustomConfigurations
+# <a name="list-androiddeviceownerderivedcredentialauthenticationconfigurations"></a>Listar androidDeviceOwnerDerivedCredentialAuthenticationConfigurations
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos objetos [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md).
+Listar Propriedades e relações dos objetos [androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,13 +66,13 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1667
+Content-Length: 1398
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.androidCustomConfiguration",
-      "id": "619b5e6d-5e6d-619b-6d5e-9b616d5e9b61",
+      "@odata.type": "#microsoft.graph.androidDeviceOwnerDerivedCredentialAuthenticationConfiguration",
+      "id": "9815f155-f155-9815-55f1-159855f11598",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
@@ -102,17 +102,7 @@ Content-Length: 1667
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
-      "version": 7,
-      "omaSettings": [
-        {
-          "@odata.type": "microsoft.graph.omaSettingInteger",
-          "displayName": "Display Name value",
-          "description": "Description value",
-          "omaUri": "Oma Uri value",
-          "value": 5,
-          "isReadOnly": true
-        }
-      ]
+      "version": 7
     }
   ]
 }
