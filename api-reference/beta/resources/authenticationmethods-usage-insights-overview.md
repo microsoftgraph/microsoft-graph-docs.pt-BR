@@ -1,20 +1,20 @@
 ---
 title: Trabalhar com a API de relatório de uso dos métodos de autenticação
 description: O relatório de uso dos métodos de autenticação ajuda uma organização a entender como os usuários finais estão usando recursos do Azure Active Directory, como redefinição de senha de autoatendimento e autenticação multifator (MFA).
-author: davidmu1
 localization_priority: Normal
-ms.prod: reports
+author: kholtz
+ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 8f20c633d1cfcbadd50a1c892cf6370211e0acb7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7f7a8e6cddf308c5681f74ca6546a9467704cc6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508077"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472197"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Trabalhar com a API de relatório de uso dos métodos de autenticação
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

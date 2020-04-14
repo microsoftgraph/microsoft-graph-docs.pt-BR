@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsUniversalAppX
 description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios Windows Universal AppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f2a0fa86edac8df7fd437c0660209f09462c9ba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6e1787d1bfa45ed92b5d2e0a2b8387002fdcbc98
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797448"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472135"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>Tipo de recurso windowsUniversalAppX
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: Listar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatuses
 description: Listar Propriedades e relações dos objetos windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 55a95abd12ca89e5e1314108d63432737b1f69a0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3ee8264204c0f3a70254d8d0f5cf4ae902c76326
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799770"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471538"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatuses"></a>Listar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatuses
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -83,7 +85,6 @@ Content-Length: 612
   ]
 }
 ```
-
 
 
 

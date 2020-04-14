@@ -1,19 +1,20 @@
 ---
 title: tipo de recurso deviceDetail
-description: Indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Inclui informações como navegador de dispositivo e informações de so, se o dispositivo for gerenciado pelo Azure AD.
+description: Indica os detalhes do dispositivo associados a um dispositivo usado para entrar.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 45d87629f1ac513fe13c98592637f20f5fac0129
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d19eefbc9ca7f9a750ddf5ebe231cf57366d765
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973769"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472142"
 ---
 # <a name="devicedetail-resource-type"></a>tipo de recurso deviceDetail
-Indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Inclui informações como navegador de dispositivo e informações de so, se o dispositivo for gerenciado pelo Azure AD.
+
+Namespace: o Microsoft. Graph indica os detalhes do dispositivo associados a um dispositivo usado para entrar. Inclui informações como navegador de dispositivo e informações de so, se o dispositivo for gerenciado pelo Azure AD.
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsAutopilotDeploymentProfile
 description: Perfil de implantação do Windows AutoPilot
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 981cd4d9b1eb50982c56e59d146a876f4f52ce8f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ec2ca148b66078f7da8b60fff82a829eba8ce34
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766823"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471956"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -39,10 +41,10 @@ Perfil de implantação do Windows AutoPilot
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do perfil|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Configuração de experiência inicial da caixa|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Configuração da tela status do registro|
-|extractHardwareHash|Boolean|Extração HardwareHash para o perfil|
+|extractHardwareHash|Booliano|Extração HardwareHash para o perfil|
 |deviceNameTemplate|String|O modelo usado para nomear o dispositivo de piloto automático. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|O tipo de dispositivo piloto automático ao qual esse perfil se aplica. Os valores possíveis são: `windowsPc` e `surfaceHub2`.|
-|enableWhiteGlove|Boolean|Habilite o Glove branco do piloto automático para o perfil.|
+|enableWhiteGlove|Booliano|Habilite o Glove branco do piloto automático para o perfil.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo para o perfil.|
 
 ## <a name="relationships"></a>Relações

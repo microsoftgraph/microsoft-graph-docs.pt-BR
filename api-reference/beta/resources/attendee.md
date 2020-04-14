@@ -4,17 +4,17 @@ description: Um participante do evento. Pode ser uma pessoa ou recurso, como uma
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: 57df22d5d1e4d5b8c60a8689254d11292a1793d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: harini84
+ms.openlocfilehash: f08734a9ec03c5e7e95a00abc5c95a9c968fa81c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508147"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472316"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: tipo de recurso applicationEnforcedRestrictionsSessionControl
 description: Controle de sessão para impor restrições de aplicativo.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b5f608a2915db80d671ab604ab69d256d6aad0ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 258da369c6a254aa2cff1f611564eb3121d3633b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508286"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472226"
 ---
 # <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>tipo de recurso applicationEnforcedRestrictionsSessionControl
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

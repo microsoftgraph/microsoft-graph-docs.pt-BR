@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso auditProperty
 description: Uma classe que contém as propriedades para a Propriedade de auditoria.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f1f5cc213f99300811c627692a516ac8c0b6e89
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dd5a43f1837ed3acf8927af5bac4e46d864f3fec
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797420"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472113"
 ---
 # <a name="auditproperty-resource-type"></a>Tipo de recurso auditProperty
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

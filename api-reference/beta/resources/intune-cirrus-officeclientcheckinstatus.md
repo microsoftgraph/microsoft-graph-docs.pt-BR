@@ -2,17 +2,19 @@
 title: tipo de recurso officeClientCheckinStatus
 description: Entidade que descreve as estatísticas de check-in do locatário.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66087cd47fa70352f8051fc220820ea355805f19
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3a2f8bb8728a43187903016ca3417b8e6655b3ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797336"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471486"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso officeClientCheckinStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +28,7 @@ Entidade que descreve as estatísticas de check-in do locatário.
 |deviceName|String|Nome do dispositivo que está tentando fazer check-in.|
 |devicePlatform|String|Plataforma do dispositivo que está tentando fazer check-in.|
 |devicePlatformVersion|String|Versão da plataforma do dispositivo que está tentando fazer check-in.|
-|wasSuccessful|Boolean|Se o último check-in foi bem-sucedido.|
+|wasSuccessful|Booliano|Se o último check-in foi bem-sucedido.|
 |userId|String|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Tempo de check-in do último dispositivo em UTC.|
 |errorMessage|String|Mensagem de erro se algum associado para o último check-in.|

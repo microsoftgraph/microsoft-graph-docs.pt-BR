@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso auditEvent
 description: Uma classe que contém as propriedades de Evento de Auditoria.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11b992b4273f74a512cd6267cf9c5b997d9b6498
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 245b16bbf08135b82b834ee7b86f0a89ae67aab9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797427"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472120"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
