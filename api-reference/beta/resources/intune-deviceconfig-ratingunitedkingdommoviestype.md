@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração ratingUnitedKingdomMoviesType
 description: Rótulos de classificação de filmes no Reino Unido
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 76c8cd2752c8dc6ffa85fee32138a329bcd89361
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9fd25569966a44aeec160258b7b10c1360b463e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787653"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444979"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

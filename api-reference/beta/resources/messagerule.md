@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso messageRule
 description: Uma regra que se aplica a mensagens na Caixa de Entrada de um usuário.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ec7225800c179ae5592c5d2ef040f8a009568ac7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b8618540559a508671383a777d608ea21c35ea3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522670"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446596"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

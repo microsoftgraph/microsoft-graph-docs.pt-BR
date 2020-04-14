@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso vppTokenRevokeLicensesActionResult
 description: O status da ação de revogação de licenças executada no token do Apple Volume Purchase Program.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2ec896504435c644767af1ff04a74f4eaf4aa17
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e4033342cfb1b08563b53a00ea1314209cc1db49
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777499"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446827"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>tipo de recurso vppTokenRevokeLicensesActionResult
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

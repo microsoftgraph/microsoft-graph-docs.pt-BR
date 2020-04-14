@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceAppManagementTask
 description: Uma tarefa de gerenciamento de aplicativo de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f51f72823e7f353018cd3edc97155c418a767b1b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 76ec2531f5c7697e65727efe8847b8021a1ccf7d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42776764"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446692"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>tipo de recurso deviceAppManagementTask
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração safeSearchFilterType
 description: Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 22b87cdb9cf4b5ea96caab7efa764de0f27fa452
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8585745d2f4e9c529e6ef56c9ce209b1da67f2ac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787590"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444874"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>tipo de enumeração safeSearchFilterType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

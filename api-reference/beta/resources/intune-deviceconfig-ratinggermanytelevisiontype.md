@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração ratingGermanyTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Alemanha
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5616720aedc2e0a2f084a18e27fa57d3e43e53ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 815ec04a9216bdde410a4b59bfdb87114dba3e6f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787702"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445076"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>tipo de enumeração ratingGermanyTelevisionType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

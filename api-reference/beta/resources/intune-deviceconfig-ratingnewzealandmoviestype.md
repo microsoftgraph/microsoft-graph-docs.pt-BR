@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração ratingNewZealandMoviesType
 description: Rótulos de classificação de filmes na Nova Zelândia
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3d820e517c6705759b289c0bd981480eadbc1ab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5ac2acd28f0114b69f7f9c508cb3538ebf36fa81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787667"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445009"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enumeração ratingNewZealandMoviesType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

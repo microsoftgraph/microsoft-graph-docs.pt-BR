@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsHelloForBusinessPinUsage
 description: Opções de uso de PIN do Windows Hello para empresas
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e6024a230eff77492b6468225c078c8c12a74dea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3cde7bfe0c0567dd342e9552b180ca48c1952ef5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446767"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enumeração windowsHelloForBusinessPinUsage
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

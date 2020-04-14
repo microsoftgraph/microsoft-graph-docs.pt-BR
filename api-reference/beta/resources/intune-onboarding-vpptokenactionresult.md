@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso vppTokenActionResult
 description: O status da ação executada com um token do Apple Volume Purchase Program.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a0a722bf9314d03794fb3b1823afd4bc27cb94f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ff272e6dea9a4778c9f2cb33f3c59f411b257da7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777753"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446834"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>tipo de recurso vppTokenActionResult
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

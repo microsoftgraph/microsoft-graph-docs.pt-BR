@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationCheckBox
 description: Representa um elemento checkBox ADMX e um elemento Boolean do ADMX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 51318c184aeb481946f30a71eedac50bb069df06
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 38469d39a90a4e6dbb9035b11603a296780ab5e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782985"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446901"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>tipo de recurso groupPolicyPresentationCheckBox
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
