@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementIntentDeviceState
 description: Entidade que representa o estado do dispositivo para uma intenção
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9545629a51a0bcdbd893f206ff4f52700dc34b7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5194cf31241a5b6e39e724861950de41722f4ac5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785418"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43423645"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>tipo de recurso deviceManagementIntentDeviceState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

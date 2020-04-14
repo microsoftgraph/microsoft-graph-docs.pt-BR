@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso win32LobAppRegistryDetection
 description: Contém as propriedades do registro para detectar um aplicativo Win32
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88b99817974352079b7f590aaafded67f274f0a5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2b6f28d6c042ab86273cd11d9e756bb4941e315b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797581"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422736"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>tipo de recurso win32LobAppRegistryDetection
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

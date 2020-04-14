@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deliveryOptimizationGroupIdOptionsType
 description: Valores possíveis para a configuração DeliveryOptimizationGroupIdOptionsType.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5d68d6a82c413ea3abfe34886b5508d607b56bec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3c39fc2d706f2d14f149d602d8d4e543c53bdb8e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794355"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420469"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>tipo de enumeração deliveryOptimizationGroupIdOptionsType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

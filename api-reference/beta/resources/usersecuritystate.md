@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso usersecuritystate
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+description: Contém informações monitoradoras sobre a conta de usuário.
 localization_priority: Normal
-author: dkershaw10
+author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 67e5c7d2feb76346d754f582e34b5afe39af3d32
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3df36132011cc668950615b2229c76c85237094
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519509"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422389"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso usersecuritystate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

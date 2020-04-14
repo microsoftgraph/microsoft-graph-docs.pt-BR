@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderSecurityCenterITContactDisplayType
 description: Valores possíveis para defenderSecurityCenterITContactDisplay
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 772144cff07e1e35b22a36cf9ad602c20edb353d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8bc4a71af690e632ae426a2aa184a4b7236f28d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794428"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420851"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>tipo de enumeração defenderSecurityCenterITContactDisplayType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

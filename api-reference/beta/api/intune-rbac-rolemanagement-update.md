@@ -1,18 +1,18 @@
 ---
-title: Ação syncDevice
-description: Ainda não documentado
+title: Atualizar roleManagement
+description: Atualiza as propriedades de um objeto roleManagement.
 author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec365d44ac83eec8c50645aed92d91aa50c34bbb
+ms.openlocfilehash: 6d81ccac5dc51c1193f6956c346910aa66784898
 ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425139"
+ms.locfileid: "43423900"
 ---
-# <a name="syncdevice-action"></a>Ação syncDevice
+# <a name="update-rolemanagement"></a>Atualizar roleManagement
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Atualiza as propriedades de um objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,11 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/managedDevices/{managedDeviceId}/syncDevice
-POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice/syncDevice
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/syncDevice
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/syncDevice
-POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/syncDevice
+PATCH /roleManagement
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,23 +47,44 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+No corpo da solicitação, forneça uma representação JSON do objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) .
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar [roleManagement](../resources/intune-rbac-rolemanagement.md).
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [roleManagement](../resources/intune-rbac-rolemanagement.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/syncDevice
+PATCH https://graph.microsoft.com/beta/roleManagement
+Content-type: application/json
+Content-length: 56
+
+{
+  "@odata.type": "#microsoft.graph.roleManagement"
+}
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 105
+
+{
+  "@odata.type": "#microsoft.graph.roleManagement",
+  "id": "6fb74c1e-4c1e-6fb7-1e4c-b76f1e4cb76f"
+}
 ```
 
 

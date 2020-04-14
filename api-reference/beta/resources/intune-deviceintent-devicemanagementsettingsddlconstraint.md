@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementSettingSddlConstraint
 description: A restrição que impõe a configuração é um SDDL bem formado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 869f7771223a6df167b174d7bf30ff37dc3fe489
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 56836ee15ef8b19407b56af231305e35f4361ba7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785278"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420051"
 ---
 # <a name="devicemanagementsettingsddlconstraint-resource-type"></a>tipo de recurso deviceManagementSettingSddlConstraint
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

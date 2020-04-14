@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso win32LobAppInstallExperience
 description: Contém propriedades de experiência de instalação para um aplicativo Win32
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a8f6fcecd995857b337f6d91b09e2ce7361defb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2470aeac3b92052e801db12d4da7f76113a9c8d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797623"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422970"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>tipo de recurso win32LobAppInstallExperience
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

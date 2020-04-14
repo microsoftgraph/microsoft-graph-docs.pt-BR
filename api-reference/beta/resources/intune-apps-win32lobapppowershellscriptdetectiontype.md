@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração win32LobAppPowerShellScriptDetectionType
 description: Contém todo o tipo de detecção de saída de script do PowerShell com suporte.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 47fcba9cd87a128c45f79685073d9c5740c8ea0e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 03433546a54cf119a99cafe56109d2e0bcb1dce9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797602"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422789"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>tipo de enumeração win32LobAppPowerShellScriptDetectionType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

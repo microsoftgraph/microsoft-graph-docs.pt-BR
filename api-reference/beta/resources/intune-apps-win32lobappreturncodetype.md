@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração win32LobAppReturnCodeType
 description: Indica o tipo de código de retorno.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e0f35d48ade6a005ad37879e5eaeb237421da58
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ba354643d48d034c9dee1ab3adf55982a587c3b6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797539"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422574"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>tipo de enumeração win32LobAppReturnCodeType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

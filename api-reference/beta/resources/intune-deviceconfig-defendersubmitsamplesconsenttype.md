@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração defenderSubmitSamplesConsentType
 description: Valores possíveis para DefenderSubmitSamplesConsentType
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5fc146fb2bc65a44161a02b90e87ac805d1cb7f8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c26130a10be34e0632a528f23d20f05bb4aa122a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794414"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420821"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>tipo de enumeração defenderSubmitSamplesConsentType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

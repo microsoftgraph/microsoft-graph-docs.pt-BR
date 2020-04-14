@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deliveryOptimizationBandwidthBusinessHoursLimit
 description: Tipo de tempo de largura de banda e tipos de porcentagem
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83e0402e7b63925e8c02c87a5c1abd9b08c9c8c6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4044b62a42c37abf030ff0a5d206093d4a2b8c80
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794386"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420585"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthBusinessHoursLimit
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

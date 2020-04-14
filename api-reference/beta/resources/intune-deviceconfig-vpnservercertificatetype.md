@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração vpnServerCertificateType
 description: O tipo de certificado que o servidor VPN apresentará ao cliente VPN para autenticação
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 307def5845b4c2af2ab6c032fcda40466883be0e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 43775918815e2a6ad40ac71097657b355fb76e5a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787310"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43420228"
 ---
 # <a name="vpnservercertificatetype-enum-type"></a>tipo de enumeração vpnServerCertificateType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
