@@ -2,19 +2,19 @@
 title: tipo de recurso do iniciador
 description: Descreve quem ou o que iniciou o evento de provisionamento.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 909849775e5bf35c9a29902efbbc3975177956d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d279ce00855cb8125085e48bddf63f1b8f0e5e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496009"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461724"
 ---
 # <a name="initiator-resource-type"></a>tipo de recurso do iniciador
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

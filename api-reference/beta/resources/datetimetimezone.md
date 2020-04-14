@@ -3,18 +3,18 @@ title: tipo de recurso dateTimeTimeZone
 description: Descreve a data, a hora e o fuso horário de um ponto no tempo.
 localization_priority: Normal
 doc_type: resourcePageType
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 9ffbc319700fd871bd3f27af9eaaaf85cdaf1ffa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 592e8cecccdf8d1514515c4b67a9517352f5a643
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463057"
 ---
 # <a name="datetimetimezone-resource-type"></a>tipo de recurso dateTimeTimeZone
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Descreve a data, a hora e o fuso horário de um ponto no tempo.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|dateTime|String|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`). Por exemplo, "2019-04-16T09:00:00".|
+|dateTime|Cadeia de caracteres|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`). Por exemplo, "2019-04-16T09:00:00".|
 |timeZone|Cadeia de caracteres|Representa um fuso horário, por exemplo, "Hora Padrão do Pacífico". Confira abaixo os valores possíveis.|
 
 Em geral, a propriedade**timeZone** _pode_ ser definida como qualquer um dos [fusos horários com suporte no Windows](/windows-hardware/manufacture/desktop/default-time-zones), bem como [os fusos horários adicionais com suporte da API do calendário](#additional-time-zones).

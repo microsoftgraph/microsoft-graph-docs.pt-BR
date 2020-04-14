@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementAutopilotPolicyStatusDetail
 description: Item de detalhes do status da política contido por um evento piloto automático.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59e2ec1273d9bc2cdb938021e8eba45debedf7b9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 54912018d69b33979cb14630ba6016b0999b03a2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765731"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462292"
 ---
 # <a name="devicemanagementautopilotpolicystatusdetail-resource-type"></a>tipo de recurso deviceManagementAutopilotPolicyStatusDetail
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -36,7 +38,7 @@ Item de detalhes do status da política contido por um evento piloto automático
 |displayName|Cadeia de caracteres|O nome amigável da política.|
 |PolicyType|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|O tipo de política. Os valores possíveis são: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|O status de conformidade da política. Os possíveis valores são: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|trackedOnEnrollmentStatus|Boolean|Indica se este prolicy foi rastreado como parte da sessão de sincronização do registro de inicialização do AutoPilot|
+|trackedOnEnrollmentStatus|Booliano|Indica se este prolicy foi rastreado como parte da sessão de sincronização do registro de inicialização do AutoPilot|
 |lastReportedDateTime|DateTimeOffset|Carimbo de data/hora do status da política relatado|
 
 ## <a name="relationships"></a>Relações

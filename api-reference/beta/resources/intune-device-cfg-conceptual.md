@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40229752dacbdd18213653966ca40ccc00587c57
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3b97f69f16fef9b39213b30942049300450a8155
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797245"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463512"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -36,6 +36,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Base de perfil de certificado de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Política de conformidade do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Configuração de autenticação de credencial derivada do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Configuração de Wi-Fi corporativa do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Configuração geral do dispositivo do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
@@ -107,7 +108,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Item da lista do aplicativo](intune-deviceconfig-applistitem.md)
 - [Tipo de lista do aplicativo](intune-deviceconfig-applisttype.md)
 - [Tipo de controle do aplicativo App Locker](intune-deviceconfig-applockerapplicationcontroltype.md)
+- [Item de lista de aplicativos Apple](intune-deviceconfig-appleapplistitem.md)
 - [Base de configuração de recursos do dispositivo Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
+- [Base de configuração de check-in da Apple expedida](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Formato de nome de assunto da Apple](intune-deviceconfig-applesubjectnameformat.md)
 - [Configuração do Apple VPN Always on](intune-deviceconfig-applevpnalwaysonconfiguration.md)
 - [Configuração de VPN da Apple](intune-deviceconfig-applevpnconfiguration.md)
@@ -241,6 +244,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de classe de definição de política de grupo](intune-grouppolicy-grouppolicydefinitionclasstype.md)
 - [Arquivo de definição de política de grupo](intune-grouppolicy-grouppolicydefinitionfile.md)
 - [Valor de definição de política de grupo](intune-grouppolicy-grouppolicydefinitionvalue.md)
+- [Operação de política de grupo](intune-grouppolicy-grouppolicyoperation.md)
+- [Status da operação da política de grupo](intune-grouppolicy-grouppolicyoperationstatus.md)
+- [Tipo de operação de política de grupo](intune-grouppolicy-grouppolicyoperationtype.md)
 - [Apresentação da política de grupo](intune-grouppolicy-grouppolicypresentation.md)
 - [Caixa de seleção de apresentação da política de grupo](intune-grouppolicy-grouppolicypresentationcheckbox.md)
 - [Caixa de combinação de apresentação da política de grupo](intune-grouppolicy-grouppolicypresentationcombobox.md)
@@ -262,6 +268,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de política de grupo](intune-grouppolicy-grouppolicytype.md)
 - [Categoria de política de grupo carregada](intune-grouppolicy-grouppolicyuploadedcategory.md)
 - [Definição de política de grupo carregada](intune-grouppolicy-grouppolicyuploadeddefinition.md)
+- [Arquivo de definição carregado da política de grupo](intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)
+- [Política de grupo carregou o status do arquivo de definição](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
+- [Política de grupo carregou o arquivo de idioma](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [Apresentação de política de grupo carregada](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [Algoritmos hash](intune-deviceconfig-hashalgorithms.md)
 - [Configuração de acesso à tinta](intune-deviceconfig-inkaccesssetting.md)
@@ -282,6 +291,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração do dispositivo iOS EDU](intune-deviceconfig-iosedudeviceconfiguration.md)
 - [Configuração do dispositivo de educação do iOS](intune-deviceconfig-ioseducationdeviceconfiguration.md)
 - [Configuração de Wi-Fi corporativa do iOS](intune-deviceconfig-iosenterprisewificonfiguration.md)
+- [configuração de check-in do iOS expedida](intune-deviceconfig-iosexpeditedcheckinconfiguration.md)
 - [Configuração geral do dispositivo iOS](intune-deviceconfig-iosgeneraldeviceconfiguration.md)
 - [Aplicativo de tela inicial do iOS](intune-deviceconfig-ioshomescreenapp.md)
 - [Pasta de tela inicial do iOS](intune-deviceconfig-ioshomescreenfolder.md)

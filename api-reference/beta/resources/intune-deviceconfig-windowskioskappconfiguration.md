@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsKioskAppConfiguration
 description: A classe base do aplicativo usada para identificar as informações do aplicativo da configuração do quiosque
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cf983eaee29e9ff54a9cbe5b95b533604b6c8f4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b92cfb6cd931e1a8ea8e829ee5e9fd96ae569dfb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786436"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466827"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>tipo de recurso windowsKioskAppConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

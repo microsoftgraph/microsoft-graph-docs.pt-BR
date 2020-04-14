@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso Propriedadesdeviceconfigurationconflictsummary
 description: Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce52c97601883bc54b3701b08755159df21c248e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f04fbf8784e87c72cd744f5faddc3d667f74e6bc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793272"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469407"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>tipo de recurso Propriedadesdeviceconfigurationconflictsummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

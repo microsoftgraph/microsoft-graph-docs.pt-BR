@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsKioskAzureADGroup
 description: A classe usada para identificar um grupo do AzureAD para a configuração do quiosque
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a17c17a825b544093ebd8e8ecd858db65bd449b6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4c312f5fbefdf156bda98f8f82ce68c4e0d3213f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786415"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466790"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>tipo de recurso windowsKioskAzureADGroup
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

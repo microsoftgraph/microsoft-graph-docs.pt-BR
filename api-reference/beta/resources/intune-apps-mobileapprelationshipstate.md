@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso mobileAppRelationshipState
 description: Descreve os detalhes de status da instalação do aplicativo filho no contexto de UPN e ID de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c1142609c388ba7a246fe716402729a9495400
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 31c96fc196de529a15c5ce69f9587dcff21d0e99
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797773"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462572"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>tipo de recurso mobileAppRelationshipState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

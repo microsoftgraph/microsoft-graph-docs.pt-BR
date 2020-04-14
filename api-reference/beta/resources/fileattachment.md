@@ -4,13 +4,13 @@ description: Um arquivo (como um arquivo de texto ou documento do Word) anexado 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: e14b98c5ee3302d5b19bc7ad92187112b6d8c80b
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+author: svpsiva
+ms.openlocfilehash: 9eb0d5e3a40c27e4f7b7b6662d7ae0b8e3bcef93
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926796"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460227"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -28,14 +28,14 @@ Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 Derivado de [attachment](attachment.md).
 
 > [!NOTE]
-> Certifique-se de codificar o conteúdo do arquivo na base64 antes de atribuí-lo ao **contentbytes necessárias**.
+> Certifique-se de codificar o conteúdo do arquivo em Base64 antes de atribuí-lo a **contentBytes**.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades, relações ou conteúdo bruto de um objeto fileattachment.|
-|[Delete](../api/attachment-delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
+|[Excluir](../api/attachment-delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

@@ -3,18 +3,18 @@ title: Obter synchronizationtemplate
 description: Recupere um modelo de sincronização por seu identificador.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f75f25eb44693ce4158bdbf1e8de1047fecadef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e0f5ff93cc87bd5c4cca2ada9891ba8ce4d02ac4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452880"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471157"
 ---
 # <a name="get-synchronizationtemplate"></a>Obter synchronizationtemplate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

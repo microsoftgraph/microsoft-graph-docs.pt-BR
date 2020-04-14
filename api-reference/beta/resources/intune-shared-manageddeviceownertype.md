@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração managedDeviceOwnerType
 description: Tipo de proprietário de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f340ca4a53ee9d62747885522aeedc6f57b81252
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2cc319f36e417d522fa1844aacc0db2202b84420
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466247"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>tipo de enumeração managedDeviceOwnerType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementAbstractComplexSettingInstance
 description: Uma instância de configuração representando um valor complexo para uma configuração abstrata
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b9895cd74bb0807adcf2b8f1a86713e45097b22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b6106e8690cb25dac395f83ca17ca705d7c6ba92
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786092"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470788"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>tipo de recurso deviceManagementAbstractComplexSettingInstance
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

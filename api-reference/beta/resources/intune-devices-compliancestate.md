@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração compliancestate
 description: Estado de conformidade.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b0ba44c95a49d7646008ac4664926e257c02a19
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c088f3a0fc3a4bd4b01f29da5f228920f00a398f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785102"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465140"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de enumeração compliancestate
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

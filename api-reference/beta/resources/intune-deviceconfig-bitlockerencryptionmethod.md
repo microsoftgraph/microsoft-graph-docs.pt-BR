@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração bitLockerEncryptionMethod
 description: Tipos BitLockerEncryptionMethod
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d590276cc42c63111597914c6c82adb1e76dac49
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c52874c3362e08a5793e8901d0c53ef907004407
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795888"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469817"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>tipo de enumeração bitLockerEncryptionMethod
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

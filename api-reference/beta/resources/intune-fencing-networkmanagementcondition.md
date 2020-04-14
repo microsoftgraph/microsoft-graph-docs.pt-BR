@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso networkManagementCondition
 description: Contém as informações para definir uma condição de gerenciamento de rede.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0558d4580842322ef34e1836df0cd498d79996b2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5f3a6e7a90b7a844e362c01bd63ddaa59c68286b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783197"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463371"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>tipo de recurso networkManagementCondition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

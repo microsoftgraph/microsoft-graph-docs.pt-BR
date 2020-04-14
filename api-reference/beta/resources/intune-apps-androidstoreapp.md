@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso androidStoreApp
 description: Contém propriedades e propriedades herdadas para aplicativos da loja Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61b256ddbcc16b040a1015859a6a0f5d7843672d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5ed8b27ad8df2973e684ecc08e7241f4f090514c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798165"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462586"
 ---
 # <a name="androidstoreapp-resource-type"></a>Tipo de recurso androidStoreApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

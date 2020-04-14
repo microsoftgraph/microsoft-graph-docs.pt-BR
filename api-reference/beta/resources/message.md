@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de mensagem
 description: Uma mensagem em uma pasta da caixa de correio.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 02ab3eb62d173897d3456e3f28144e0db48de609
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a70e3a51ac33a640e1b5e2b3a6597fb2f2963deb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522677"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446611"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 

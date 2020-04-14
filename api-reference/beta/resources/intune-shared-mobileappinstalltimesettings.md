@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso mobileAppInstallTimeSettings
 description: Contém propriedades usadas para determinar quando oferecer um aplicativo a dispositivos e quando instalar o aplicativo em dispositivos.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 413d37ef0f672289e68e7dd8d8e2d0b6bc7d17ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 904fc60d28ce8fcca52ea8b84c81d99031ed9ee7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768503"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466126"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>tipo de recurso mobileAppInstallTimeSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Contém propriedades usadas para determinar quando oferecer um aplicativo a disp
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|useLocalTime|Boolean|Se a hora do dispositivo local ou a hora UTC deve ser usada ao determinar os horários disponíveis e prazos.|
+|useLocalTime|Booliano|Se a hora do dispositivo local ou a hora UTC deve ser usada ao determinar os horários disponíveis e prazos.|
 |startDateTime|DateTimeOffset|O horário em que o aplicativo deve estar disponível para instalação.|
 |deadlineDateTime|DateTimeOffset|O horário em que o aplicativo deve ser instalado.|
 

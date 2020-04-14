@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso outOfBoxExperienceSettings
 description: Configuração de experiência inicial da caixa
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ff9a13168287cbbff1bbe34346f684d65a9609c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 82bfd9a7126298958d35ad121b22115bb1f71241
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783407"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460704"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,12 +25,12 @@ Configuração de experiência inicial da caixa
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hidePrivacySettings|Boolean|Mostrar ou ocultar as configurações de privacidade para o usuário|
-|hideEULA|Boolean|Mostrar ou ocultar o EULA para o usuário|
+|hidePrivacySettings|Booliano|Mostrar ou ocultar as configurações de privacidade para o usuário|
+|hideEULA|Booliano|Mostrar ou ocultar o EULA para o usuário|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuário. Os valores possíveis são: `administrator` e `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação do AAD join. Os valores possíveis são: `singleUser` e `shared`.|
-|skipKeyboardSelectionPage|Boolean|Se definido, ignore a página de seleção de teclado se idioma e região estiverem definidos|
-|hideEscapeLink|Boolean|Se for definido como true, o usuário não poderá iniciar novamente com uma conta diferente, na entrada da empresa|
+|skipKeyboardSelectionPage|Booliano|Se definido, ignore a página de seleção de teclado se idioma e região estiverem definidos|
+|hideEscapeLink|Booliano|Se for definido como true, o usuário não poderá iniciar novamente com uma conta diferente, na entrada da empresa|
 
 ## <a name="relationships"></a>Relações
 Nenhum

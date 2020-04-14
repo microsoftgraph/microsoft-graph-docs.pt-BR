@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso proxiedDomain
 description: Domínio com proxy
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdfdf1fdbea81f415633c810bd21172164f3765f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b4b2dff399888ba51008f84b76decae8d211862e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768055"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466090"
 ---
 # <a name="proxieddomain-resource-type"></a>Tipo de recurso proxiedDomain
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

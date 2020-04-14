@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração importedDeviceIdentityType
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a56191f0187ba43fa5ba96ea974fad24f3fe6b2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3a0cd97598ad411aad8c63d0ccba9097889ef70a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783456"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460809"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>tipo de enumeração importedDeviceIdentityType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

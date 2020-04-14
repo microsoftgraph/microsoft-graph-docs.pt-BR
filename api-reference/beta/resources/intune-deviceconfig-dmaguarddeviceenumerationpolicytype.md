@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração dmaGuardDeviceEnumerationPolicyType
 description: Valores possíveis de DmaGuardDeviceEnumerationPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e3289a40916d4942980274e2375aefdf6081934c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f735a5ce77c0162899d7e93974a07de4f0be137b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791965"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469160"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>tipo de enumeração dmaGuardDeviceEnumerationPolicyType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

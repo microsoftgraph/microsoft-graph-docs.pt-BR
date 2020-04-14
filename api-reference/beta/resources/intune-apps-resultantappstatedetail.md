@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração resultantAppStateDetail
 description: Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de instalação específico.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 818574c76be80b31c03164c9029aa6150c1f5fab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c0de2345a4c698da79ec01db7bddcc139b5b2660
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797714"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462537"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enumeração resultantAppStateDetail
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

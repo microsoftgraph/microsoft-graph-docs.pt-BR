@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração easAuthenticationMethod
 description: Método de autenticação do Exchange Active Sync.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e30e61f7283e0eb03ded48fceb151a2143afdb2b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c4bdb64ddf0959353b5f9da12da9450460a78a37
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791937"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469115"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>tipo de enumeração easAuthenticationMethod
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

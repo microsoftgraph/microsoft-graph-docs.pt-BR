@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso embeddedSIMActivationCode
 description: O código de ativação do SIM incorporado, conforme fornecido pela operadora móvel.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 397f0eaaa15272601ddcf432e40086d9d0cd9270
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 28a2344c6e31e944074bc14a7c779a3f165e506a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783316"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469108"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>tipo de recurso embeddedSIMActivationCode
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

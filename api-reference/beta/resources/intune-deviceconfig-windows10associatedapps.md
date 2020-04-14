@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windows10AssociatedApps
 description: Definição de aplicativo associado ao Windows 10.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44b754ba08e8fde1366fda67640582d8552bc4f3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8dc45852b0bd97b7000edd55e74bb9407587d7e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787204"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466276"
 ---
 # <a name="windows10associatedapps-resource-type"></a>tipo de recurso windows10AssociatedApps
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

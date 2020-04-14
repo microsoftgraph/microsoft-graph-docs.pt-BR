@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração welcomeScreenMeetingInformation
 description: Valores possíveis para informações de reunião de tela de boas-vindas.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b7e386aa7501d2253d1f042c21b058cfe807bf2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a51ef427b7d7544b805589d669cf0e9794d0f29d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787254"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466389"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>tipo de enumeração welcomeScreenMeetingInformation
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

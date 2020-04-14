@@ -2,19 +2,19 @@
 title: 'orgContact: getMemberGroups'
 description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e1446ac49dc21a3edc717c340ebe5d8601b0ddf5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66a11dd997d3d9d04b5292c6837344826860398f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456282"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466999"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean||
+|securityEnabledOnly|Booliano||
 
 ## <a name="response"></a>Resposta
 

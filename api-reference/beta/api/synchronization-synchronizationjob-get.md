@@ -3,18 +3,18 @@ title: Obter synchronizationJob
 description: Recupere o trabalho de sincronização existente e suas propriedades.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b7f08a5af94c2d03e21230430d58952fa81cc6bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bfe5c6e5932448eda4f977f9619843ed4bdec2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453011"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466424"
 ---
 # <a name="get-synchronizationjob"></a>Obter synchronizationJob
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: tipo de recurso detailsInfo
 description: Um conjunto de propriedades que pode conter qualquer informação sobre a identidade ou o sistema associado.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 434cc659c66c94b3120431c233fe583e87bfbbbd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f62a773bb65f5d323ad6f906e53467366f7956d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463050"
 ---
 # <a name="detailsinfo-resource-type"></a>tipo de recurso detailsInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração chassisType
 description: Tipo de chassi.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 149499046387db3fb0954c9038d09f48aa660fbf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fcc964a2b78fafc94fab3adcd081083cf4047152
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785116"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465170"
 ---
 # <a name="chassistype-enum-type"></a>tipo de enumeração chassisType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

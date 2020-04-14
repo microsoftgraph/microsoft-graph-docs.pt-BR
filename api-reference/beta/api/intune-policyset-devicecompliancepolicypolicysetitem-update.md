@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceCompliancePolicyPolicySetItem
 description: Atualiza as propriedades de um objeto deviceCompliancePolicyPolicySetItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 20145f98d06b631e78b4fe51d347c10e54e0de15
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4ccf924111cc32d3af66e943bc2546b801767fd5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802430"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467177"
 ---
 # <a name="update-devicecompliancepolicypolicysetitem"></a>Atualizar deviceCompliancePolicyPolicySetItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -110,7 +112,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

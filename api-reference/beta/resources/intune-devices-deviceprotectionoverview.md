@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceProtectionOverview
 description: Informações de hardware de um determinado dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e9bdadb7cef003a8d22653660d516afe8357d59
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8e6f949cae0ae293c713ba52480d23c44ea093b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784137"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470722"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso deviceProtectionOverview
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso macOSDeviceFeaturesConfiguration
 description: Perfil de configuração de recursos do dispositivo macOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8d0f8d04f854d93179e5e17a0953259f3dbdc7e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ce1813068a883e17194f94a7dd7cd5f5b2dfbc66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790276"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464154"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Tipo de recurso macOSDeviceFeaturesConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -38,7 +40,7 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -48,23 +50,23 @@ Herda de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|coleção [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras de impressão que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|coleção [macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a serem iniciados quando o usuário fizer logon. Esta coleção pode conter um máximo de 500 elementos.|
-|adminShowHostInfo|Boolean|Se deseja mostrar as informações de host de administrador na janela de logon.|
+|adminShowHostInfo|Booliano|Se deseja mostrar as informações de host de administrador na janela de logon.|
 |loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
-|authorizedUsersListHidden|Boolean|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
-|authorizedUsersListHideLocalUsers|Boolean|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
-|authorizedUsersListHideMobileAccounts|Boolean|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
-|authorizedUsersListIncludeNetworkUsers|Boolean|Se os usuários da rede serão mostrados na lista de usuários autorizados na janela de logon.|
-|authorizedUsersListHideAdminUsers|Boolean|Se os usuários de administrador serão ocultos na lista de usuários autorizados na janela de logon.|
-|authorizedUsersListShowOtherManagedUsers|Boolean|Se deseja mostrar outros usuários na lista de usuários autorizados na janela de logon.|
-|shutDownDisabled|Boolean|Se o item de botão desligar será ocultado na janela de logon.|
-|restartDisabled|Boolean|Se o item de botão de reinicialização será ocultado na janela de logon.|
-|sleepDisabled|Boolean|Se o item de menu de suspensão será ocultado na janela de logon.|
-|consoleAccessDisabled|Boolean|Se o outro usuário desconsiderará o uso do>console> nome de usuário especial.|
-|shutDownDisabledWhileLoggedIn|Boolean|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
-|restartDisabledWhileLoggedIn|Boolean|Se o item de menu reiniciar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
-|powerOffDisabledWhileLoggedIn|Boolean|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
-|logOutDisabledWhileLoggedIn|Boolean|Se o item de menu fazer logout na janela de logon será desabilitado enquanto o usuário estiver conectado.|
-|screenLockDisableImmediate|Boolean|Se as funções de bloqueio de tela imediata serão desabilitadas.|
+|authorizedUsersListHidden|Booliano|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
+|authorizedUsersListHideLocalUsers|Booliano|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListHideMobileAccounts|Booliano|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListIncludeNetworkUsers|Booliano|Se os usuários da rede serão mostrados na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListHideAdminUsers|Booliano|Se os usuários de administrador serão ocultos na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListShowOtherManagedUsers|Booliano|Se deseja mostrar outros usuários na lista de usuários autorizados na janela de logon.|
+|shutDownDisabled|Booliano|Se o item de botão desligar será ocultado na janela de logon.|
+|restartDisabled|Booliano|Se o item de botão de reinicialização será ocultado na janela de logon.|
+|sleepDisabled|Booliano|Se o item de menu de suspensão será ocultado na janela de logon.|
+|consoleAccessDisabled|Booliano|Se o outro usuário desconsiderará o uso do>console> nome de usuário especial.|
+|shutDownDisabledWhileLoggedIn|Booliano|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|restartDisabledWhileLoggedIn|Booliano|Se o item de menu reiniciar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|powerOffDisabledWhileLoggedIn|Booliano|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|logOutDisabledWhileLoggedIn|Booliano|Se o item de menu fazer logout na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|screenLockDisableImmediate|Booliano|Se as funções de bloqueio de tela imediata serão desabilitadas.|
 |associatedDomains|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo, e o valor deve ser uma cadeia de caracteres no formato "Service: domain" onde domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example. com). Esta coleção pode conter um máximo de 500 elementos.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Obtém ou define um perfil de extensão de logon único. Preterido: Use MacOSSingleSignOnExtension em vez disso.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Obtém ou define um perfil de extensão de logon único.|

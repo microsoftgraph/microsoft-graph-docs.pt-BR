@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windows10AppsForceUpdateSchedule
 description: Agendamento de atualização forçada do Windows 10 para aplicativos
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 980503e9316e5ae1d0083f2226519004fa802afd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: eb590d65a6ae60eeede42b3ce6b5d422f306b8c8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466309"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>tipo de recurso windows10AppsForceUpdateSchedule
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,7 +27,7 @@ Agendamento de atualização forçada do Windows 10 para aplicativos
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|A hora de início da reinicialização forçada.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Agenda de recorrência. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
-|runImmediatelyIfAfterStartDateTime|Boolean|Se true, executará a tarefa imediatamente se StartDatetime estiver no passado, senão, será executado na próxima recorrência.|
+|runImmediatelyIfAfterStartDateTime|Booliano|Se true, executará a tarefa imediatamente se StartDatetime estiver no passado, senão, será executado na próxima recorrência.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

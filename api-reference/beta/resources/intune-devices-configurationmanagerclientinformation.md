@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso configurationManagerClientInformation
 description: Informações do cliente do Configuration Manager sincronizadas a partir do SCCM
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1c9e9b88677c925fb33c998af571b23090dcff5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 725847d0150a886ed11ce6d68cd49138711ede0f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785053"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465019"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>tipo de recurso configurationManagerClientInformation
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,7 +26,7 @@ Informações do cliente do Configuration Manager sincronizadas a partir do SCCM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |clientIdentifier|String|ID do cliente do Gerenciador de configurações do SCCM|
-|IsBlocked|Boolean|Status bloqueado do cliente do Gerenciador de configurações do SCCM|
+|IsBlocked|Booliano|Status bloqueado do cliente do Gerenciador de configurações do SCCM|
 
 ## <a name="relationships"></a>Relações
 Nenhum

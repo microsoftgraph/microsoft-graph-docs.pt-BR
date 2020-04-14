@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso adminConsent
 description: Informações de consentimento do administrador.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f0f60f39c676fb8c6aca5144b2aa3b561b7cbaf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d45249024e7d3766bfedb716c151a495a92daa75
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785172"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462457"
 ---
 # <a name="adminconsent-resource-type"></a>tipo de recurso adminConsent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

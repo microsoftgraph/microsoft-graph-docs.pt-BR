@@ -1,18 +1,20 @@
 ---
 title: Criar deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Crie um novo objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5452cd34459ccef0694708b41f82f3bd13a7f081
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 44a67ef7627087b361888729497267262e55fa15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802969"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470384"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Criar deviceEnrollmentWindowsHelloForBusinessConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -64,8 +66,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceEnrollment
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Controla a capacidade de usar letras minúsculas no PIN do Windows Hello para empresas.  Permitido permite o uso de letras minúsculas, enquanto que Required garante que estão presentes. Se definido como não permitido, as letras minúsculas não serão permitidas. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Controla a capacidade de usar caracteres especiais no PIN do Windows Hello para empresas.  Permitido permite o uso de caracteres especiais, enquanto que Required garante que eles estão presentes. Se definido como não permitido, caracteres especiais não serão permitidos. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
 |state|[habilitação](../resources/intune-shared-enablement.md)|Controla se é para permitir que o dispositivo seja configurado para o Windows Hello para empresas. Se for definido como desabilitado, o usuário não poderá provisionar o Windows Hello para empresas, exceto no Azure Active Directory que ingressou em telefones móveis, se for necessário. Se definido como não configurado, o Intune não substituirá os padrões do cliente. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|securityDeviceRequired|Boolean|Controla se é necessário exigir um TPM (Trusted Platform Module) para provisionar o Windows Hello para empresas. Um TPM oferece um benefício de segurança adicional nos dados armazenados nele que não podem ser usados em outros dispositivos. Se for definido como false, todos os dispositivos poderão provisionar o Windows Hello para empresas mesmo se não houver um TPM utilizável.|
-|unlockWithBiometricsEnabled|Boolean|Controla o uso de gestos biométricos, como face e impressão digital, como uma alternativa para o PIN do Windows Hello para empresas.  Se for definido como false, os gestos biométricos não serão permitidos. Os usuários ainda devem configurar um PIN como um backup em caso de falhas.|
+|securityDeviceRequired|Booliano|Controla se é necessário exigir um TPM (Trusted Platform Module) para provisionar o Windows Hello para empresas. Um TPM oferece um benefício de segurança adicional nos dados armazenados nele que não podem ser usados em outros dispositivos. Se for definido como false, todos os dispositivos poderão provisionar o Windows Hello para empresas mesmo se não houver um TPM utilizável.|
+|unlockWithBiometricsEnabled|Booliano|Controla o uso de gestos biométricos, como face e impressão digital, como uma alternativa para o PIN do Windows Hello para empresas.  Se for definido como false, os gestos biométricos não serão permitidos. Os usuários ainda devem configurar um PIN como um backup em caso de falhas.|
 |remotePassportEnabled|Booliano|Controla o uso do Windows Hello para empresas remotos. O Windows Hello para empresas remotos permite que um dispositivo portátil e registrado possa ser usado como um complemento para autenticação de área de trabalho. A área de trabalho deve ser membro do Azure AD e o dispositivo complementar deve ter um PIN do Windows Hello para empresas.|
 |pinPreviousBlockCount|Int32|Controla a capacidade de impedir que os usuários usem PINs passados. Isso deve ser definido entre 0 e 50, inclusive, e o PIN atual do usuário é incluído nessa contagem. Se for definido como 0, os PINs anteriores não serão armazenados. O histórico de PIN não é preservado por meio de uma redefinição de PIN.|
 |pinExpirationInDays|Int32|Controla o período de tempo (em dias) que um PIN pode ser usado antes que o sistema exija que o usuário o altere. Isso deve ser definido entre 0 e 730, inclusive. Se definido como 0, o PIN do usuário nunca expirará|
@@ -139,7 +141,6 @@ Content-Length: 839
   "securityKeyForSignIn": "enabled"
 }
 ```
-
 
 
 

@@ -4,13 +4,13 @@ description: Representa um escopo de permissão delegada do OAuth 2,0.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 684f08be52b453922d58919e589a7888007deefb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: 725fe0c65fd05752cd6f862291efcffbcf3d22c5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521950"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469063"
 ---
 # <a name="permissionscope-resource-type"></a>tipo de recurso permissionScope
 
@@ -24,14 +24,14 @@ Representa um escopo de permissão delegada do OAuth 2,0. Os escopos de permiss�
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|adminConsentDescription|Cadeia de caracteres| Texto de ajuda de permissão que aparece nas experiências de atribuição de aplicativo e consentimento de administrador. |
-|adminConsentDisplayName|Cadeia de caracteres| Nome para exibição da permissão que aparece nas experiências de atribuição de aplicativo e consentimento de administrador. |
+|adminConsentDescription|String| Texto de ajuda de permissão que aparece nas experiências de atribuição de aplicativo e consentimento de administrador. |
+|adminConsentDisplayName|String| Nome para exibição da permissão que aparece nas experiências de atribuição de aplicativo e consentimento de administrador. |
 |id|Guid| Identificador de permissão de escopo exclusivo dentro da coleção oauth2Permissions. |
 |isEnabled|Boolean| Ao criar ou atualizar uma permissão, essa propriedade deve ser definida como **true** (que é o padrão). Para excluir uma permissão, essa propriedade deve ser definida primeiro como **false**. Nesse ponto, em uma chamada subsequente, a permissão pode ser removida. |
-|tenham|Cadeia de caracteres| Para uso interno. |
-|type|Cadeia de caracteres| Especifica se essa permissão de escopo pode ser consentida por um usuário final ou se é uma permissão em todo o locatário que deve ser consentida pelo administrador da empresa. Os valores possíveis são *User* ou *admin*. |
-|userConsentDescription|Cadeia de caracteres| Texto de ajuda de permissão que aparece na experiência de consentimento do usuário final. |
-|userConsentDisplayName|Cadeia de caracteres| Nome para exibição da permissão que aparece na experiência de consentimento do usuário final. |
+|tenham|String| Para uso interno. |
+|type|String| Especifica se essa permissão de escopo pode ser consentida por um usuário final ou se é uma permissão em todo o locatário que deve ser consentida pelo administrador da empresa. Os valores possíveis são *User* ou *admin*. |
+|userConsentDescription|String| Texto de ajuda de permissão que aparece na experiência de consentimento do usuário final. |
+|userConsentDisplayName|String| Nome para exibição da permissão que aparece na experiência de consentimento do usuário final. |
 |value|Cadeia de caracteres| O valor da declaração do escopo que o aplicativo de recursos deve esperar no token de acesso do OAuth 2,0. |
 
 ## <a name="json-representation"></a>Representação JSON

@@ -2,19 +2,19 @@
 title: Tipo de recurso outlookGeoCoordinates
 description: As coordenadas geográficas, a elevação e o grau de precisão delas para um local físico.
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2fba6b6d811a10f06338e8e13e5c8dc487e31813
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92b2df1b9e08c242871f6995ee14364295a6b732
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522183"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463299"
 ---
 # <a name="outlookgeocoordinates-resource-type"></a>Tipo de recurso outlookGeoCoordinates
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

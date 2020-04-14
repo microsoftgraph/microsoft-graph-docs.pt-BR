@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso dailySchedule
 description: Agenda de execução diária de um script de gerenciamento de dispositivo recorrente.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b95238a35db1e439768784a58007f6b604031e2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b921b13fd87d3a500ca543ca6601a9ad368456ea
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785039"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464997"
 ---
 # <a name="dailyschedule-resource-type"></a>tipo de recurso dailySchedule
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

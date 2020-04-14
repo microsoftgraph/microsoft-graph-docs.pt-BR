@@ -3,18 +3,18 @@ title: Listar modelos de sincronização existentes
 description: Lista os modelos de sincronização associados a um determinado aplicativo ou entidade de serviço.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fa6cff80d76b12092801d9deea3d5c2d209c21d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 717acbd1f7b679095ad84e371891926bca139843
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452908"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471142"
 ---
 # <a name="list-existing-synchronization-templates"></a>Listar modelos de sincronização existentes
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

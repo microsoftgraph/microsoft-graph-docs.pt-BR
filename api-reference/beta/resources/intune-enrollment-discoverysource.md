@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração Discovery
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a8125f21268fe29dd4e6c625b46caf5f9288508f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 774537f93b13db4fe0d1042c918fcc6dd320fdd8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783498"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460883"
 ---
 # <a name="discoverysource-enum-type"></a>tipo de enumeração Discovery
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

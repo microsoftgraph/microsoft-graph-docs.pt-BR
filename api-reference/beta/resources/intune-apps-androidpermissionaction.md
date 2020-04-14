@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso androidPermissionAction
 description: O mapeamento entre uma permissão de aplicativo Android e a ação que o Android deve executar quando essa permissão é solicitada.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce351edc83ac31c21c05b7d3e64c2f3be315da61
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c0e1b793a447d29d1ed554e1b6466895ccc9e57f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799259"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459139"
 ---
 # <a name="androidpermissionaction-resource-type"></a>tipo de recurso androidPermissionAction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

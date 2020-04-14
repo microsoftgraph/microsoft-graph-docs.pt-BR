@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração advancedBitLockerState
 description: Estado do BitLocker avançado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3de3ddc3e1b6f881c572a76ca99b45b89b8cdd71
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dab8da54a9e34a42184bd071576736eca706e2fd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797224"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471067"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>tipo de enumeração advancedBitLockerState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

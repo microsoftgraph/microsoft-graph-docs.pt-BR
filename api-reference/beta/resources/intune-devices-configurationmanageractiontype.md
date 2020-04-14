@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração configurationManagerActionType
 description: Tipo de ação no cliente do Configuration Manager
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df6c274b0e8317a609fc5fb50a6361fb50a9d6ba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fd12ace8453740d0c89fc5393a660d05dac83ef4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785074"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465072"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>tipo de enumeração configurationManagerActionType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

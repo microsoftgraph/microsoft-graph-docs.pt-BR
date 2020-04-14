@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração androidForWorkBindStatus
 description: Vincular o status do locatário à API do Google EMM
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7cbdd8813b7bf4a6594b43aaba101e5d4170c58a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b688452a5a6e0c8d47871f06279bc22344c6508a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799400"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459242"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>tipo de enumeração androidForWorkBindStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso deviceCompliancePolicySettingState
 description: Estado da configuração da política de conformidade de dispositivo para um determinado dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4249866e4b6af66806d7bcc5fc6b0ab7aaa325b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a762b9bc0e7996f1c775e372d10a60f87e649de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793321"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469512"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -35,6 +37,7 @@ Estado da configuração da política de conformidade de dispositivo para um det
 |userPrincipalName|String|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,7 +69,8 @@ Veja a seguir uma representação JSON do recurso.
       "displayName": "String"
     }
   ],
-  "currentValue": "String"
+  "currentValue": "String",
+  "settingInstanceId": "String"
 }
 ```
 

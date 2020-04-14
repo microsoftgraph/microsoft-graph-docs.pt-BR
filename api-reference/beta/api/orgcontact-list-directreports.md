@@ -2,19 +2,19 @@
 title: 'orgContact: list directReports'
 description: Obter os subordinados diretos do contato.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7563d1a948023d70c36a8afc6ba5bbd2ae5bf7f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05ecd35a75b95818d3789ffb3ef002598267ab61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466977"
 ---
 # <a name="orgcontact-list-directreports"></a>orgContact: list directReports
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

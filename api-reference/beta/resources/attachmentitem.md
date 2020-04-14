@@ -2,19 +2,19 @@
 title: tipo de recurso attachmentItem
 description: Representa os atributos de um item a ser anexado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fa739af74f00142405ecb536346639d3a2ca9f60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7402a22665fec8716156395f4a783c804a42febb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508154"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461020"
 ---
 # <a name="attachmentitem-resource-type"></a>tipo de recurso attachmentItem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

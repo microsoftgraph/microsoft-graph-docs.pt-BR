@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 18958c1ff3789a2a8cdea35d51d605c09331b745
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f20ad594af8819fab9c9f88e0af81a5fbf009a59
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797238"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471121"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -62,6 +62,8 @@ Namespace: microsoft.graph
 - [Script de integridade do dispositivo](intune-devices-devicehealthscript.md)
 - [Atribuição de script de integridade do dispositivo](intune-devices-devicehealthscriptassignment.md)
 - [Estado do dispositivo de script de integridade do dispositivo](intune-devices-devicehealthscriptdevicestate.md)
+- [Histórico de correção de script de integridade do dispositivo](intune-devices-devicehealthscriptremediationhistory.md)
+- [Dados de histórico de correção de script de integridade do dispositivo](intune-devices-devicehealthscriptremediationhistorydata.md)
 - [Resumo de correção de script de integridade do dispositivo](intune-devices-devicehealthscriptremediationsummary.md)
 - [Resumo de execução de script de integridade do dispositivo](intune-devices-devicehealthscriptrunsummary.md)
 - [Definição de configuração complexa abstrata de gerenciamento de dispositivos](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
@@ -96,6 +98,7 @@ Namespace: microsoft.graph
 - [Atribuição de grupo de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptgroupassignment.md)
 - [Resumo de execução de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptrunsummary.md)
 - [Estado de usuário de script de gerenciamento de dispositivos](intune-devices-devicemanagementscriptuserstate.md)
+- [Restrição de implementação abstrata da configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md)
 - [Restrição de aplicativo para configuração de gerenciamento de dispositivo](intune-deviceintent-devicemanagementsettingappconstraint.md)
 - [Restrição booleana de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Categoria de configuração do gerenciamento de dispositivos](intune-deviceintent-devicemanagementsettingcategory.md)
@@ -179,8 +182,6 @@ Namespace: microsoft.graph
 - [Estado de correção](intune-devices-remediationstate.md)
 - [Ação remota](intune-devices-remoteaction.md)
 - [Auditoria de ação remota](intune-devices-remoteactionaudit.md)
-- [Status da inclusão de assistência remota](intune-remoteassistance-remoteassistanceonboardingstatus.md)
-- [Parceiro de assistência remota](intune-remoteassistance-remoteassistancepartner.md)
 - [Resultado da ação de bloqueio remoto](intune-devices-remotelockactionresult.md)
 - [Resultado da ação de redefinir a senha](intune-devices-resetpasscodeactionresult.md)
 - [Resultado de ação de revogar licenças VPP da Apple](intune-devices-revokeapplevpplicensesactionresult.md)
@@ -210,7 +211,7 @@ Namespace: microsoft.graph
 - [Métrica de análise da experiência do usuário](intune-devices-userexperienceanalyticsmetric.md)
 - [Visão geral da análise da experiência do usuário](intune-devices-userexperienceanalyticsoverview.md)
 - [Resumo de regressão da análise da experiência do usuário](intune-devices-userexperienceanalyticsregressionsummary.md)
-- [Histórico de Pontuação de início da análise da experiência do usuário](intune-devices-userexperienceanalyticsstartupscorehistory.md)
+- [Histórico de pontuação da análise da experiência do usuário](intune-devices-userexperienceanalyticsscorehistory.md)
 - [Análise da experiência do usuário resumida por](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Estado de implantação do piloto automático do Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)

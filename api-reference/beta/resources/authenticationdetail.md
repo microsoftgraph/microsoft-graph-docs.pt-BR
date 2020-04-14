@@ -2,19 +2,19 @@
 title: tipo de recurso authenticationDetail
 description: Fornece os detalhes de autenticação para uma entrada de usuário, como informações de autenticação multifator (MFA) e detalhes de PTA/PHS.
 localization_priority: Normal
-author: davidmu1
+author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 97375635d86b1be8149035c94d183026a3d49a25
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb60959bf71713f6e90bd070d34808b46e3f83cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508084"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461003"
 ---
 # <a name="authenticationdetail-resource-type"></a>tipo de recurso authenticationDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Fornece os detalhes de autenticação para uma entrada de usuário, como informa
 |authenticationStepDateTime|DateTimeOffset|Representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
 |authenticationStepRequirement|String|A etapa de autenticação atendida. Por exemplo, autenticação primária ou autenticação multifator.|
 |authenticationStepResultDetail|String|Detalhes sobre por que a etapa foi bem-sucedida ou falhou. Por exemplo, o usuário é bloqueado, o código de fraude inserido, nenhuma entrada de telefone-tempo limite, telefone inacessível ou declaração no token.|
-|adicionada|Boolean|Indica o status da etapa de autenticação.|Valores possíveis: `succeeded`, `failed`.|
+|adicionada|Booliano|Indica o status da etapa de autenticação.|Valores possíveis: `succeeded`, `failed`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração applicationGuardEnabledOptions
 description: Valores possíveis para ApplicationGuardEnabledOptions
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 91efe1ee9f243c41df79c6f87318d6f916dea887
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 87ce7edd7a882136500e1689666f4847b3b26d66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795930"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469963"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>tipo de enumeração applicationGuardEnabledOptions
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

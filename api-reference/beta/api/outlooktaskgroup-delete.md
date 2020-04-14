@@ -1,20 +1,20 @@
 ---
 title: Excluir outlookTaskGroup
 description: Exclua o outlookTaskGroup especificado.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e69691bea3d814a2a281f5022277538d7ea05e91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a064930ea16fba8d86203a1c7f03fbb25f8a87d2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456128"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463064"
 ---
 # <a name="delete-outlooktaskgroup"></a>Excluir outlookTaskGroup
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

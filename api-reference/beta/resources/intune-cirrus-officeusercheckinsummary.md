@@ -2,17 +2,19 @@
 title: tipo de recurso officeUserCheckinSummary
 description: Entidade que descreve as estatísticas de check-in do locatário.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ef202194c8817e500d27a96ae3dbf4e5e1a8359
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8564f7d0d2fb06218b141b7e9369f2096bdec982
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797294"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462516"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>tipo de recurso officeUserCheckinSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

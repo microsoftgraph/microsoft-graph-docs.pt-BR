@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso appListItem
 description: Representa um aplicativo na lista de aplicativos gerenciados
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7cde9f58fd7deb66fb30f871d1ff7d0968835a40
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a34b8dcfbf3912d5b2a816ddfce6af49596b869
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795923"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469956"
 ---
 # <a name="applistitem-resource-type"></a>Tipo de recurso appListItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +28,7 @@ Representa um aplicativo na lista de aplicativos gerenciados
 |nome|String|O nome do aplicativo|
 |distribuidor|String|O distribuidor do aplicativo|
 |appStoreUrl|Cadeia de caracteres|A URL da loja do aplicativo|
-|appId|String|O aplicativo ou identificador do pacote do aplicativo|
+|appId|String|O identificador do pacote do aplicativo|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iPv4Range
 description: Definição de intervalo IPv4.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1bed3b43af7203a6c1ee081156708679337e94e0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3615c08c99d9d8f9220abd96f0ef5aff90b4a451
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769280"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463327"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

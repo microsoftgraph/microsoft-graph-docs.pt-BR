@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iosVppAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel do iOS VPP a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a72f1876d0d0dcd181aee7a9b0322f372838377
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a8393b4da0b4c31f2e0bfd455f6eeb6f1b51dea8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769567"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460591"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Tipo de recurso iosVppAppAssignmentSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +31,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |useDeviceLicensing|Booliano|Se usa ou não o licenciamento do dispositivo.|
 |vpnConfigurationId|Cadeia de caracteres|A identificação de configuração da VPN a aplicar neste aplicativo.|
 |**Apps**|
-|uninstallOnDeviceRemoval|Boolean|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
+|uninstallOnDeviceRemoval|Booliano|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

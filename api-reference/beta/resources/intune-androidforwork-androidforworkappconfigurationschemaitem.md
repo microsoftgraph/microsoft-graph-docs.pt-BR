@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso androidForWorkAppConfigurationSchemaItem
 description: Item de configuração único dentro de um esquema de configurações personalizadas de um aplicativo do Android for Work.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e64edefe6da8b0c09b0eb90a6c772f34d908cf5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8ed09ee79b8a5607f4aec0647ed7d221ee407e5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799414"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459272"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchemaItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

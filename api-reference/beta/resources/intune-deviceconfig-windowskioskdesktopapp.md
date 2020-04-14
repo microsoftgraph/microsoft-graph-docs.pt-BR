@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso Complexowindowskioskdesktopapp
 description: A classe base de um tipo de aplicativo
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f940a656395a58df4487648a2090455b97d1647b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af8e97b8b1aac3fcee5592da78b96bc2ccfd5143
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786387"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463461"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>tipo de recurso Complexowindowskioskdesktopapp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +31,7 @@ Herda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Propriedadesstartlayouttilesize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do bloco do aplicativo para o layout inicial herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
 |nome|String|Representa o nome amigável de um aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
-|autolançamento|Boolean|Permitir que o aplicativo seja iniciado automaticamente no modo de quiosque de vários aplicativos herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|autolançamento|Booliano|Permitir que o aplicativo seja iniciado automaticamente no modo de quiosque de vários aplicativos herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |caminho|String|Definir o caminho de um aplicativo de área de trabalho|
 |Propriedadesdesktopapplicationid|String|Definir o Propriedadesdesktopapplicationid do aplicativo|
 |desktopApplicationLinkPath|String|Definir o DesktopApplicationLinkPath do aplicativo|

@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso outlookTaskGroup
 description: 'Um grupo de pastas (outlookTaskFolder) que contém tarefas do Outlook (coleção de objetos outlookTask). '
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 67439b11cc2067df23c71cf9fc939fbfb250f874
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8018863ed7fd142b99e0008f860495a4d13d4e01
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522071"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463207"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,8 +30,8 @@ No Outlook, há um grupo `My Tasks` de tarefas padrão que você não pode renom
 |[Obter outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.|
 |[Criar outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Criar uma pasta de tarefas do Outlook.|
 |[Listar taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |coleção [outlookTaskFolder](outlooktaskfolder.md)| Obter uma coleção de pastas de tarefas do Outlook.|
-|[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
-|[Delete](../api/outlooktaskgroup-delete.md) | Nenhum |Excluir o grupo de tarefas do Outlook especificado. |
+|[Atualizar](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
+|[Excluir](../api/outlooktaskgroup-delete.md) | Nenhum |Excluir o grupo de tarefas do Outlook especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -39,7 +39,7 @@ No Outlook, há um grupo `My Tasks` de tarefas padrão que você não pode renom
 |changeKey|String|A versão do grupo de tarefas.|
 |groupKey|Edm.Guid|O identificador exclusivo do GUID do grupo de tarefas.|
 |id|String|O identificador exclusivo da cadeia de caracteres do grupo de tarefas. Somente leitura.|
-|IsDefault|Boolean|True se o grupo de tarefas é o grupo de tarefas padrão.|
+|IsDefault|Booliano|True se o grupo de tarefas é o grupo de tarefas padrão.|
 |nome|String|O nome do grupo de tarefas.|
 
 ## <a name="relationships"></a>Relações

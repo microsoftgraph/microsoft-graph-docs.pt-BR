@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso importedDeviceIdentity
 description: O recurso importedDeviceIdentity representa uma identidade de hardware exclusiva de um dispositivo que foi pré-configurado para configuração de pré-registro.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 093cc5057ecdb6a34398567378677e5a41aaa18e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ca0c87fdd68f541d4645d0657123dafc73a11fb7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783470"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460823"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>tipo de recurso importedDeviceIdentity
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

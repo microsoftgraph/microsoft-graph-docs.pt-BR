@@ -1,18 +1,20 @@
 ---
 title: Obter windowsInformationProtectionAppLockerFile
 description: Ler propriedades e relações do objeto windowsInformationProtectionAppLockerFile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f52ecfa1be9a63d462bba07ebc0569974338b3fd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 942309fc03c4a7ee76ff9338eaa68a03893be05c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803320"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465544"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>Obter windowsInformationProtectionAppLockerFile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -82,7 +84,6 @@ Content-Length: 291
   }
 }
 ```
-
 
 
 

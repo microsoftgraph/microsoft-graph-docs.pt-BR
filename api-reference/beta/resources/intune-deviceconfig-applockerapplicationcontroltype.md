@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração appLockerApplicationControlType
 description: Valores possíveis dos tipos de controle do aplicativo AppLocker
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b339074d33a0d501de12e12fa2ea9b2682fb7fe6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5455cb2a4e8e16f8bd5ca737655f50f625c3151f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469898"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>tipo de enumeração appLockerApplicationControlType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

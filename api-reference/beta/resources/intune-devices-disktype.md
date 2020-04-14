@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração disktype
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ff896519862909504ee9756be643c5bd514dcf57
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f51fe5d26377295809d043c8df3308feface4e1a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784116"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470653"
 ---
 # <a name="disktype-enum-type"></a>tipo de enumeração disktype
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

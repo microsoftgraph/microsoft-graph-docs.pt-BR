@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso encryptionReportPolicyDetails
 description: Detalhes da política para o relatório de criptografia
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd802c6a13789f9179d4f2940bc78a80f1ff15d0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8a92037429908af4ff53ea45b9b5f9b65a5a436
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791783"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460062"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>tipo de recurso encryptionReportPolicyDetails
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

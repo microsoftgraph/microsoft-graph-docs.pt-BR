@@ -2,15 +2,15 @@
 title: tipo de recurso orgContact
 description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c160c3e65c6905eec15bccccb10cabb086b57e39
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: c8d6c1b675b5638ba58e7845f98ef9f66a314c79
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463313"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso orgContact
 
@@ -31,9 +31,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Obter orgContact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Leia as propriedades e os relacionamentos do objeto orgContact.|
 |[Obter gerenciador](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Obtenha o gerente do contato.|
 |[Listar directReports](../api/orgcontact-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Listar os subordinados diretos do contato.|
-|[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) collection| Obter uma coleção de objetos memberOf.|
-|[Delete](../api/orgcontact-delete.md) | Nenhum |Exclua o objeto orgContact. |
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| Verifique a associação ao grupo. |
+|[Listar memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) collection| Obter uma coleção de objetos memberOf.|
+|[Excluir](../api/orgcontact-delete.md) | Nenhum |Exclua o objeto orgContact. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Coleção de cadeias de caracteres| Verifique a associação ao grupo. |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| Retornar todos os grupos dos quais o contato especificado é membro. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| Retorna uma lista de directoryObjects o contato é um membro. |
 
@@ -62,7 +62,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |directReports|Coleção [directoryObject](directoryobject.md)| Os subordinados diretos do contato. (Os usuários e contatos que têm a propriedade do gerente definidas para este contato.)  Somente leitura. Anulável.|
-|manager|[directoryObject](directoryobject.md)| O usuário ou contato que é o gerente do contato. Apenas leitura.|
+|manager|[directoryObject](directoryobject.md)| O usuário ou contato que é o gerente do contato. Somente leitura.|
 |memberOf|Coleção [directoryObject](directoryobject.md)| Grupos dos quais este contato é membro. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

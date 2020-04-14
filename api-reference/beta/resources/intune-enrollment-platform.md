@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração de plataforma
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 427a2da5048584c45d5efe7b5b7265d012c996cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4e523988f13aa94199882405d5ba0fa62c0ec043
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783400"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460682"
 ---
 # <a name="platform-enum-type"></a>tipo de enumeração de plataforma
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

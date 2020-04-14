@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso configurationManagerClientEnabledFeatures
 description: recursos habilitados pelo cliente do Gerenciador de Configurações
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce366adec1bcab58df761a6a271a45fbd0510c03
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 189751d12f7220dcfa4e3e6985c3913bb7ae0e32
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785067"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465057"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,14 +25,14 @@ recursos habilitados pelo cliente do Gerenciador de Configurações
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|inventory|Boolean|Se o estoque é gerenciado pelo Intune|
-|modernApps|Boolean|Se o aplicativo moderno é gerenciado pelo Intune|
-|resourceAccess|Boolean|Se o acesso ao recurso é gerenciado pelo Intune|
-|deviceConfiguration|Boolean|Se a configuração do dispositivo é gerenciada pelo Intune|
-|compliancePolicy|Boolean|Se a política de conformidade é gerenciada pelo Intune|
+|inventory|Booliano|Se o estoque é gerenciado pelo Intune|
+|modernApps|Booliano|Se o aplicativo moderno é gerenciado pelo Intune|
+|resourceAccess|Booliano|Se o acesso ao recurso é gerenciado pelo Intune|
+|deviceConfiguration|Booliano|Se a configuração do dispositivo é gerenciada pelo Intune|
+|compliancePolicy|Booliano|Se a política de conformidade é gerenciada pelo Intune|
 |windowsUpdateForBusiness|Booliano|Se o Windows Update para Empresas é gerenciado pelo Intune|
-|endpointProtection|Boolean|Se o Endpoint Protection é gerenciado pelo Intune|
-|Officetreinamento|Boolean|Se o aplicativo do Office é gerenciado pelo Intune|
+|endpointProtection|Booliano|Se o Endpoint Protection é gerenciado pelo Intune|
+|Officetreinamento|Booliano|Se o aplicativo do Office é gerenciado pelo Intune|
 
 ## <a name="relationships"></a>Relações
 Nenhum

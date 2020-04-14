@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceConfigurationGroupAssignment
 description: Atribuição de grupo de configuração de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30cf907a96232952e050f7c57a170e403320a913
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: eafc10e4fb464ab9dbaee642816b56a761bb5516
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793244"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469378"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>tipo de recurso deviceConfigurationGroupAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -34,7 +36,7 @@ Atribuição de grupo de configuração de dispositivo.
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
-|excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
+|excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

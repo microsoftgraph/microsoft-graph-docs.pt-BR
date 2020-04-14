@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso networkIPv4ConfigurationManagementCondition
 description: As condições de gerenciamento baseado em configuração IPv4 podem ser definidas que serão acionadas quando um dispositivo detectar determinadas configurações de rede IP. As condições de gerenciamento de configuração IP só serão consideradas TRUE quando a conexão de rede estiver ativa.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 936a846bff444c3d7c5392bf267de5cbd84d765e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7f33bccea9005431aeb36c43b4104e536d0b9b52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783211"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463401"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv4ConfigurationManagementCondition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

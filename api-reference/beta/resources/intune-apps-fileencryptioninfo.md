@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso fileEncryptionInfo
 description: Contém propriedades de informações de criptografia de arquivos para a versão de conteúdo de um aplicativo de linha de negócios.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c5586b3107e8b7039df7068d0ab6b00e81bf4b5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e5eaa2e993fb56eeb56b7e147963a0b8df03cae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798130"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459094"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Tipo de recurso fileEncryptionInfo
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso Navegaçãoadvancedthreatprotectiononboardingstatesummary
 description: Resumo do estado de integração da proteção avançada contra ameaças do Windows Defender na conta.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3b3d28826f2d26674b8ab24898e68164e635e01
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3ee2567da227882c4cd81d901709ce93d96f7fb7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797210"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470975"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>tipo de recurso Navegaçãoadvancedthreatprotectiononboardingstatesummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

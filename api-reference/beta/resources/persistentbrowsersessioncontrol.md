@@ -2,23 +2,23 @@
 title: tipo de recurso persistentBrowserSessionControl
 description: Controle de sessão para definir se deseja persistir cookies ou não.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d46ffa5cc3f0eee423b4800ee13f19677bf7c41f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 151259c98330c1319e71c8d9b9d44b1e9183f7b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521943"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469056"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>tipo de recurso persistentBrowserSessionControl
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controle de sessão para definir se deseja persistir cookies ou não. Inehrits do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão para definir se deseja persistir cookies ou não. Herda do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 

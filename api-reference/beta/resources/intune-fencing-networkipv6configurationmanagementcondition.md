@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso networkIPv6ConfigurationManagementCondition
 description: As condições de gerenciamento baseado em configuração IPv6 podem ser definidas que serão acionadas quando um dispositivo detectar determinadas configurações de rede IP. Uma condição de gerenciamento de configuração IP só será considerada TRUE quando a conexão de rede estiver ativa. Os endereços do servidor DHCP IPv6 podem não ser correspondentes. Isso ocorre porque o Windows (circa Redstone) não expõe essas informações para o serviço de autenticação natural.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ca8c907d09a742b237483144fa849da27e4f9ae8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 49687e09b21c4a7d7a816b652ff5338347a3c2af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783204"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463378"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv6ConfigurationManagementCondition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,20 @@
 ---
 title: Excluir synchronizationJob
-description: Interrompa o trabalho de sincronização e exclua permanentemente todo o estado associado a ele. As contas sincronizadas são deixadas como estão.
+description: Interrompa o trabalho de sincronização e exclua permanentemente todo o estado associado a ele.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2c346b1020250cb1e46aa9f3c2b57f9fd5b1f1ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd732200b8ab02be3bffc443272a45f2da8a9a77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466431"
 ---
 # <a name="delete-synchronizationjob"></a>Excluir synchronizationJob
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

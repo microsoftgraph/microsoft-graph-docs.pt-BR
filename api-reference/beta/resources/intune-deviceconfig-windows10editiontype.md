@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windows10EditionType
 description: Tipo Windows 10 Edition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e1bc9f191211a2018eadd5fe19846bc9e63059e7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7b42c1f37b6c3a0cda4787d8e25f0c38313e9026
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786723"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466879"
 ---
 # <a name="windows10editiontype-enum-type"></a>tipo de enumeração windows10EditionType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -36,7 +38,7 @@ Tipo Windows 10 Edition.
 |windows10ProfessionalWorkstation|10 |Windows 10 Professional para estações de trabalho|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional para estações de trabalho N|
 |notConfigured|12 |NotConfigured|
-|windows10Home|13 |Página inicial do Windows 10|
+|windows10Home|Treze|Página inicial do Windows 10|
 |windows10HomeChina|14 |Windows 10 Home da China|
 |windows10HomeN|15 |Windows 10 Home N|
 |windows10HomeSingleLanguage|16 |Idioma de Home único do Windows 10|

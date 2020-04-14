@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceManagementAutopilotPolicyType
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9560466ca25c9bc399cc7b360088e2322d96bf4e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 565eb8a319e22b004acc9a4da2163598a82c6874
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765689"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462285"
 ---
 # <a name="devicemanagementautopilotpolicytype-enum-type"></a>tipo de enumeração deviceManagementAutopilotPolicyType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

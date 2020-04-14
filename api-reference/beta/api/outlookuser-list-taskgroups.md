@@ -2,19 +2,19 @@
 title: Listar taskGroups
 description: Obter todos os grupos de tarefas do Outlook na caixa de correio do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 219c124c3a8932d97fe3809b88ce7f4866b91342
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b53fc7c6e5dbbb4dd705bf41a2b6c4e4a8ceee6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456086"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467985"
 ---
 # <a name="list-taskgroups"></a>Listar taskGroups
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

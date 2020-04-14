@@ -2,19 +2,19 @@
 title: tipo de recurso signInFrequencySessionControl
 description: Controle de sessão para impor a frequência de entrada.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e13a5d46b6dfcd24b24f93e9e9870fbe89f2ee84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 282c96bb9030f066aadbf0515ec0466da62c502f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466036"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>tipo de recurso signInFrequencySessionControl
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

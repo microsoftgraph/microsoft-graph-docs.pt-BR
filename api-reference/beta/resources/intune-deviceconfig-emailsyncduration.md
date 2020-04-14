@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração emailSyncDuration
 description: Valores possíveis para duração da sincronização de email.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a9e0befe5e34354be0bd7ea05181e08bbbc09a96
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ca28161d7a4f8b0683be6a96df00bf4cdd7cda6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791804"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460091"
 ---
 # <a name="emailsyncduration-enum-type"></a>tipo de enumeração emailSyncDuration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso mobileAppAssignmentSettings
 description: Classe de resumo que contém as propriedades usadas para atribuir um aplicativo móvel a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e8599ee216f8d0001be63d92bb3cd1d91154a31
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 311da86592543c800c9a7d56d4b97b00b07829aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768580"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466133"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>Tipo de recurso mobileAppAssignmentSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

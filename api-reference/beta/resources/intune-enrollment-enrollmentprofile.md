@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso enrollmentProfile
 description: O recurso enrollmentProfile representa uma coleção de configurações que devem ser fornecidas como pré-registro para habilitar a inscrição de determinados dispositivos cujas identidades foram pré-configuradas. As identidades de dispositivo pré-configuradas são atribuídas a esse tipo de perfil para aplicar as configurações do perfil no registro do dispositivo correspondente.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1b47d1479997f9f72bf7b7af4dca951b9e9d4bd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 954f1d846b2af90598239d205970e3c2505f1fb1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783491"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460852"
 ---
 # <a name="enrollmentprofile-resource-type"></a>tipo de recurso enrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -38,10 +40,10 @@ O recurso enrollmentProfile representa uma coleção de configurações que deve
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|Cadeia de caracteres|Nome do perfil|
 |description|String|Descrição do perfil|
-|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação do usuário|
+|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro|
-|Enableauthenticationviacompanyportal foi adicionada|Boolean|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
+|Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
 
 ## <a name="relationships"></a>Relações
 Nenhum

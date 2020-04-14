@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração officeUpdateChannel
 description: A enumeração para especificar o canal de atualizações do office365.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 52a92a83efd9f7807ac09b53b936a5c51671c93b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d1d5270217dae8de150e8a6d5f5fc53af2f1cb88
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797721"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462544"
 ---
 # <a name="officeupdatechannel-enum-type"></a>tipo de enumeração officeUpdateChannel
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ A enumeração para especificar o canal de atualizações do office365.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Ainda não documentado|
+|nenhuma|,0|Ainda não documentado|
 |hoje|1|Ainda não documentado|
 |adiado|duas|Ainda não documentado|
 |firstReleaseCurrent|3D|Ainda não documentado|

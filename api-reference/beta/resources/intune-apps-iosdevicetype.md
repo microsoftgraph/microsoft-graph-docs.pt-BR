@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso do iosDeviceType
 description: Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo móvel pode executar.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c842d27d3113210d96479388d2395b24dea8f123
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cfe7f7e0340fbbe8c223694a172b1a77986863e6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798123"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459065"
 ---
 # <a name="iosdevicetype-resource-type"></a>Tipo de recurso do iosDeviceType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|iPad|Boolean|Se o aplicativo deve ser executado em iPads.|
+|iPad|Booliano|Se o aplicativo deve ser executado em iPads.|
 |iPhoneAndIPod|Booliano|Se o aplicativo deve ser executado em iPhones e iPods.|
 
 ## <a name="relationships"></a>Relações

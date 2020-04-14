@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso bitLockerFixedDrivePolicy
 description: Políticas de unidade fixa do BitLocker.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b44a56b02a6e8a15d4d2cfb0919cc852a9899fb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 85cd64200bb422c1a4bb25456f1686e1fb4a88da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795861"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469810"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>tipo de recurso bitLockerFixedDrivePolicy
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso appleVppTokenTroubleshootingEvent
 description: Evento representando um evento de solução de problemas do token VPP da Apple.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d03222ffcf04b814af3c5155d7ead5c3f0b61787
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c1d4ecf9e36d9f9c7bcb0fee85611f1a8d2b5f52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766032"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462336"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>tipo de recurso appleVppTokenTroubleshootingEvent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração appleSubjectNameFormat
 description: Opções de formato de nome de entidade para dispositivos Apple.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e1317c6cd0b02ea899db94389dcf314c61801d01
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a0173f594578887ff3f5d9496f0d4291c4e259b0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796072"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470077"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>tipo de enumeração appleSubjectNameFormat
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

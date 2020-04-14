@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de evento
 description: Um evento em um calendário.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 94e36bf5e451385b0a41d959ca39b4084a06b9d3
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 8fd89046572615ca4dae85d64423e8f88fed5d49
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639881"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454099"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 

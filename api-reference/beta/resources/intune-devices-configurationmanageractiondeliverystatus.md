@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração configurationManagerActionDeliveryStatus
 description: Estado de entrega da ação de dispositivo do Gerenciador de configurações
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 58dca2b1ecb5419a3f56889a55c0816f492af430
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ab437ff9a7945b4bdd61b4e3e3a103e72b780e04
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785088"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465118"
 ---
 # <a name="configurationmanageractiondeliverystatus-enum-type"></a>tipo de enumeração configurationManagerActionDeliveryStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

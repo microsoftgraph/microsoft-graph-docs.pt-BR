@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração remoteaction
 description: As ações remotas do Intune dão suporte.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 914d2b7717be151adeb43c9585af39ab3383482c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 33978f4a8d073876621fcc4cb2c0f4e0bdc065e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783904"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466760"
 ---
 # <a name="remoteaction-enum-type"></a>tipo de enumeração remoteaction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -36,7 +38,7 @@ As ações remotas do Intune dão suporte.
 |cleanWindowsDevice|10 |O usuário inicia uma ação para limpar o dispositivo Windows.|
 |logoutSharedAppleDeviceActiveUser|11|O usuário inicia uma ação para fazer o logoff do usuário atual em um dispositivo Apple compartilhado.|
 |quickScan|12 |O usuário inicia uma ação para executar a verificação rápida no dispositivo.|
-|fullScan|13 |O usuário inicia uma ação para executar a verificação completa no dispositivo.|
+|fullScan|Treze|O usuário inicia uma ação para executar a verificação completa no dispositivo.|
 |windowsDefenderUpdateSignatures|14 |O usuário inicia uma ação para atualizar as assinaturas de malware no dispositivo.|
 |factoryResetKeepEnrollmentData|15 |O usuário inicia um dispositivo de apagamento remoto de ação com a manutenção dos dados de registro.|
 |updateDeviceAccount|16 |O usuário inicia uma ação para atualizar a conta no dispositivo.|

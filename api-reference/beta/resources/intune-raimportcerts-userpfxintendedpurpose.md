@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração userPfxIntendedPurpose
 description: Valores com suporte para a finalidade pretendida de um certificado PFX de usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c80178c206c7e44a74ec537b5f118f85fda204df
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb7ee28f73762ec3db6bca213ea1d9e21b4353ce
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774229"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462351"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>tipo de enumeração userPfxIntendedPurpose
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

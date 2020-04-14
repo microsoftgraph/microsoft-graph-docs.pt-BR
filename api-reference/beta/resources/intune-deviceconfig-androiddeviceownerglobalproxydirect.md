@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso androidDeviceOwnerGlobalProxyDirect
 description: Proxy global do proprietário do dispositivo Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc2b960b85fd7fac506423af4d3a380247fb4892
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7f1b57ebdfb44504295824637352d543ff64111e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797004"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463483"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>tipo de recurso androidDeviceOwnerGlobalProxyDirect
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

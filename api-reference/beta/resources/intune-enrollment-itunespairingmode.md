@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração iTunesPairingMode
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c5d0700ab22ac0cf88ba3231494f0048dd2987a5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8902edc633de5084c57ee0bb7389f0eb21838ee5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783421"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460726"
 ---
 # <a name="itunespairingmode-enum-type"></a>tipo de enumeração iTunesPairingMode
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso tipo complexowindowskioskmultipleapps
 description: A classe usada para identificar a configuração do aplicativo multimodo para a configuração do quiosque
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 240625f8cac334375fe1f02b4de0c48f49b73478
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 010f8196bd152b872b3910eec9759e31efa4a1e1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786366"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463454"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso tipo complexowindowskioskmultipleapps
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,9 +29,9 @@ Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |apps|coleção [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Estes são os únicos aplicativos da Windows Store que estarão disponíveis para inicialização no menu iniciar. Essa coleção pode conter um máximo de 128 elementos.|
-|a barra de tarefas|Boolean|Essa configuração permite que o administrador especifique se a barra de tarefas é mostrada ou não.|
-|allowAccessToDownloadsFolder|Boolean|Essa configuração permite o acesso à pasta downloads no explorador de arquivos.|
-|disallowDesktopApps|Boolean|Essa configuração indica que os aplicativos de área de trabalho são permitidos. O padrão é true.|
+|a barra de tarefas|Booliano|Essa configuração permite que o administrador especifique se a barra de tarefas é mostrada ou não.|
+|allowAccessToDownloadsFolder|Booliano|Essa configuração permite o acesso à pasta downloads no explorador de arquivos.|
+|disallowDesktopApps|Booliano|Essa configuração indica que os aplicativos de área de trabalho são permitidos. O padrão é true.|
 |startMenuLayoutXml|Binária|Permite que os administradores substituam o layout de início padrão e impede que o usuário o altere.O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. XML precisa estar no formato binário.|
 
 ## <a name="relationships"></a>Relações

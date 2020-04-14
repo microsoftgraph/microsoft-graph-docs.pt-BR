@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração Enumeraçãoapplevpnconnectiontype
 description: Tipo de conexão VPN da Apple.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 52fc264a71fd6069cc1ab8cdf6cc82dbda0b0c0f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: efb6a8c8c77a50f253b01f6a73a41eb922347254
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470024"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>tipo de enumeração Enumeraçãoapplevpnconnectiontype
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -36,7 +38,7 @@ Tipo de conexão VPN da Apple.
 |Membroszscalerprivateaccess|10 |Zscaler acesso privado.|
 |f5Access2018|11|F5 Access 2018.|
 |citrixSso|12 |Citrix SSO.|
-|paloAltoGlobalProtectV2|13 |O Palo Alto Networks GlobalProtect v2.|
+|paloAltoGlobalProtectV2|Treze|O Palo Alto Networks GlobalProtect v2.|
 |Conexões|14 |Conexões.|
 |alwaysOn|15 |AlwaysOn.|
 

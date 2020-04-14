@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso targetedManagedAppConfigurationPolicySetItem
 description: Uma classe que contém as propriedades usadas para a configuração de aplicativo gerenciada PolicySetItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd76257c9c9eba8390d417798ca528cd12aa42da
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bc75e0bd3f32bb8a08fe5b8c214909bf9df11da0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775034"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463349"
 ---
 # <a name="targetedmanagedappconfigurationpolicysetitem-resource-type"></a>tipo de recurso targetedManagedAppConfigurationPolicySetItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

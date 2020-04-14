@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso omaSettingFloatingPoint
 description: Definição de ponto flutuante para configurações de OMA.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8692c5b39e829cdcff54d555535c1f0f08867a0d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 122a0e40253e276aeabbd5ff9d59b8f45f93f79a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788447"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463000"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Tipo de recurso omaSettingFloatingPoint
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

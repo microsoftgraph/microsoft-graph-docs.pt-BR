@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementUserRightsLocalUserOrGroup
 description: Representa informações de um usuário ou grupo local usado para a configuração de direitos do usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 49721c0713bcb2b2af7b3b19fbcb3c2f4a816194
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f17c22d8719f60ee28732727607db62422f1b74b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42792000"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469243"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>tipo de recurso deviceManagementUserRightsLocalUserOrGroup
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

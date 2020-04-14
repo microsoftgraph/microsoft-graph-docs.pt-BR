@@ -2,19 +2,19 @@
 title: tipo de recurso rbacApplication
 description: Propriedade de navegação gerenciamento de função
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3fd03ed6bb8f3e5e3548781c29d5d9fe16fcba23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1501eb32a16073990930ecf6004946b5026ea91
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462249"
 ---
 # <a name="rbacapplication-resource-type"></a>tipo de recurso rbacApplication
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
-Nenhuma
+None
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

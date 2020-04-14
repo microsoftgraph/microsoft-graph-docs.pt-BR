@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso excludedApps
 description: Contém propriedades para aplicativos do Office365 excluídos.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24813edf732d73905a6b45b9e4fe584b6312a13c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9e391c713324b69747e0528285580e3300e71868
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798137"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459101"
 ---
 # <a name="excludedapps-resource-type"></a>tipo de recurso excludedApps
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,20 +25,20 @@ Contém propriedades para aplicativos do Office365 excluídos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Access|Boolean|O valor de se o MS Office Access deve ser excluído ou não.|
-|Ele|Boolean|O valor de se o MS Office Excel deve ser excluído ou não.|
-|Groove|Boolean|O valor de se o MS Office OneDrive for Business-Groove deve ser excluído ou não.|
-|Destina|Boolean|O valor de se o MS Office InfoPath deve ou não ser excluído.|
-|Lync|Boolean|O valor de se o MS Office Skype for Business-Lync deve ser excluído ou não.|
-|oneDrive|Boolean|O valor de se o MS Office OneDrive deve ser excluído ou não.|
-|oneNote|Boolean|O valor de se o MS Office OneNote deve ser excluído ou não.|
-|outlook|Boolean|O valor de se o MS Office Outlook deve ser excluído ou não.|
-|Apresentação|Boolean|O valor de se o MS Office PowerPoint deve ser excluído ou não.|
-|publicador|Boolean|O valor de se o MS Office Publisher deve ser excluído ou não.|
-|sharePointDesigner|Boolean|O valor de se o MS Office SharePointDesigner deve ser excluído ou não.|
-|Teams|Boolean|O valor de se as equipes do MS Office devem ser excluídas ou não.|
-|Visio|Boolean|O valor de se o MS Office Visio deve ser excluído ou não.|
-|palavras|Boolean|O valor de se o MS Office Word deve ser excluído ou não.|
+|Access|Booliano|O valor de se o MS Office Access deve ser excluído ou não.|
+|Ele|Booliano|O valor de se o MS Office Excel deve ser excluído ou não.|
+|Groove|Booliano|O valor de se o MS Office OneDrive for Business-Groove deve ser excluído ou não.|
+|Destina|Booliano|O valor de se o MS Office InfoPath deve ou não ser excluído.|
+|Lync|Booliano|O valor de se o MS Office Skype for Business-Lync deve ser excluído ou não.|
+|oneDrive|Booliano|O valor de se o MS Office OneDrive deve ser excluído ou não.|
+|oneNote|Booliano|O valor de se o MS Office OneNote deve ser excluído ou não.|
+|outlook|Booliano|O valor de se o MS Office Outlook deve ser excluído ou não.|
+|Apresentação|Booliano|O valor de se o MS Office PowerPoint deve ser excluído ou não.|
+|publicador|Booliano|O valor de se o MS Office Publisher deve ser excluído ou não.|
+|sharePointDesigner|Booliano|O valor de se o MS Office SharePointDesigner deve ser excluído ou não.|
+|Teams|Booliano|O valor de se as equipes do MS Office devem ser excluídas ou não.|
+|Visio|Booliano|O valor de se o MS Office Visio deve ser excluído ou não.|
+|palavras|Booliano|O valor de se o MS Office Word deve ser excluído ou não.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

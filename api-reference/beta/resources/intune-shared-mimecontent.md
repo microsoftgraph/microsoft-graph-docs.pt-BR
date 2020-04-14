@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso mimeContent
 description: Contém as propriedades de um conteúdo genérico MIME.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fc230ab7644724ca971639c98394ebc256c1194
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 86537f6d93f2ff50c212105fce3f4fb91f137184
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466163"
 ---
 # <a name="mimecontent-resource-type"></a>Tipo de recurso mimeContent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

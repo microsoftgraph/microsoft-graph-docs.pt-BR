@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso macOSCredentialSingleSignOnExtension
 description: Representa um perfil de extensão de logon único de tipo de credencial para dispositivos macOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec152f59cba88c2bb3e02e5fc90aba2a8c6f94a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00466b80c1ab94f5984641b34a0a00f97e764773
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790297"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464183"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>tipo de recurso macOSCredentialSingleSignOnExtension
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

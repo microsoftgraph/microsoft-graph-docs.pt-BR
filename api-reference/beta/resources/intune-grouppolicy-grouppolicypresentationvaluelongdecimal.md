@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationValueLongDecimal
 description: A entidade representa um valor Long não assinado de uma apresentação de caixa de texto decimal longa em uma definição de política.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a6d4d99d057aa466925102cbdba6ee8d9324afa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb8a15c2980714c84e3a247488db01b459caba92
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782887"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469641"
 ---
 # <a name="grouppolicypresentationvaluelongdecimal-resource-type"></a>tipo de recurso groupPolicyPresentationValueLongDecimal
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

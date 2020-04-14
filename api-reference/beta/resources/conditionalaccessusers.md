@@ -2,19 +2,19 @@
 title: tipo de recurso conditionalAccessUsers
 description: Representa usuários, grupos e funções incluídos e excluídos do escopo da política.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 269fe0552c69773fa62b97cf9803b3e0127f655b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99fa682b787a164896cb638060798cddee07b255
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507503"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467933"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>tipo de recurso conditionalAccessUsers
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,12 +24,12 @@ Representa usuários, grupos e funções incluídos e excluídos do escopo da po
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeUsers | String collection | IDs de usuário em escopo de política, a menos que `None` explicitamente `All` excluído `GuestsOrExternalUsers`ou ou. |
-| excludeUsers | String collection | IDs de usuário excluídas do escopo da política e `GuestsOrExternalUsers`/ou. |
-| includeGroups | String collection | IDs de grupo em escopo de política, a menos que `All`explicitamente excluído ou. |
-| excludeGroups | String collection | IDs de grupo excluídas do escopo da política. |
-| includeRoles | String collection | IDs de função em escopo de política, a menos que `All`explicitamente excluído ou. |
-| excludeRoles | String collection | IDs de função excluídas do escopo da política. |
+| includeUsers | Coleção de cadeias de caracteres | IDs de usuário em escopo de política, a menos que `None` explicitamente `All` excluído `GuestsOrExternalUsers`ou ou. |
+| excludeUsers | Coleção de cadeias de caracteres | IDs de usuário excluídas do escopo da política e `GuestsOrExternalUsers`/ou. |
+| includeGroups | Coleção de cadeias de caracteres | IDs de grupo em escopo de política, a menos que `All`explicitamente excluído ou. |
+| excludeGroups | Coleção de cadeias de caracteres | IDs de grupo excluídas do escopo da política. |
+| includeRoles | Coleção de cadeias de caracteres | IDs de função em escopo de política, a menos que `All`explicitamente excluído ou. |
+| excludeRoles | Coleção de cadeias de caracteres | IDs de função excluídas do escopo da política. |
 
 ## <a name="relationships"></a>Relações
 

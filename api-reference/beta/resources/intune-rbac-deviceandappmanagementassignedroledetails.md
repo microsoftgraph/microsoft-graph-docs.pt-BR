@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceAndAppManagementAssignedRoleDetails
 description: O conjunto de definições de função e atribuições de função atribuídas a um usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1590470f436dac6572ebf9d0430d144060f9b7f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 061929eadd3b636ab8fcc4d89a45489bacfa9aae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773942"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467693"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>tipo de recurso deviceAndAppManagementAssignedRoleDetails
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

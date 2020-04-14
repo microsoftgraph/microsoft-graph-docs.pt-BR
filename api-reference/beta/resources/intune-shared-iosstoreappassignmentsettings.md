@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iosStoreAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da iOS Store para um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23cb5d484aaa813bfb1b3cd352cd0168e750713e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 41ebc66736b5a21dc052cd089e3abd05ae00b37b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769672"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460606"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Tipo de recurso iosStoreAppAssignmentSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -28,7 +30,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |:---|:---|:---|
 |vpnConfigurationId|Cadeia de caracteres|A identificação de configuração da VPN a aplicar neste aplicativo.|
 |**Apps**|
-|uninstallOnDeviceRemoval|Boolean|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
+|uninstallOnDeviceRemoval|Booliano|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

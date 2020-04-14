@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsAutopilotDeviceIdentity
 description: O recurso windowsAutopilotDeviceIdentity representa um dispositivo do Windows AutoPilot.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e3fb3e7c70fe41f353ea4816dc9f97d57cd86b4a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a2e81edfac49d48dd4963e527e26cd38b8df7478
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783386"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459838"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>tipo de recurso windowsAutopilotDeviceIdentity
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso configurationManagerClientHealthState
 description: Estado de integridade do cliente de gerenciador de configurações
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b43419ee34747c154663d45c137ef19ca5ed4126
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1c1c707d118b666f52e8a898cd0ad258c5cc8308
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465034"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>tipo de recurso configurationManagerClientHealthState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

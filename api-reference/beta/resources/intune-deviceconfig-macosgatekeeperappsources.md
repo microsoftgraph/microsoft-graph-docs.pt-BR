@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração macOSGatekeeperAppSources
 description: Opções de origem do aplicativo para gatekeeper do macOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4cd02a8d4844b5a7ac0db799841fe03f528e062e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 53e98d727f2c90d830b66106d3376564e6c89116
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42789454"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464132"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>tipo de enumeração macOSGatekeeperAppSources
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

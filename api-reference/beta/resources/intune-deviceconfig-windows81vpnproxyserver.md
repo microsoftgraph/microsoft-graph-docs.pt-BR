@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windows81VpnProxyServer
 description: Servidor proxy VPN.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 345856eb5032026cd92c33cad07a620e3659f473
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c5d7744fe2c501c09ff5fb2e810e61e57e91a75e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786562"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467784"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>tipo de recurso windows81VpnProxyServer
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,8 +31,8 @@ Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 |automaticConfigurationScriptUrl|String|URL do script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Cadeia de caracteres|Enfrentar. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |propor|Int32|Propor. Valores válidos de 0 a 65535 herdados de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|automaticallyDetectProxySettings|Boolean|Detectar automaticamente as configurações de proxy.|
-|bypassProxyServerForLocalAddress|Boolean|Ignorar servidor proxy para endereço local.|
+|automaticallyDetectProxySettings|Booliano|Detectar automaticamente as configurações de proxy.|
+|bypassProxyServerForLocalAddress|Booliano|Ignorar servidor proxy para endereço local.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

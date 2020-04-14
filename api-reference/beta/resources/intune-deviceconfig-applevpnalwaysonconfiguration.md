@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso appleVpnAlwaysOnConfiguration
 description: Configuração de VPN AlwaysOn para MacOS e iOS IKEv2
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10facf24c8fd56786c2706e1fa8ee999f48e2ed7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8ca620debf139e0696a7a9b403781768b0523103
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796065"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470054"
 ---
 # <a name="applevpnalwaysonconfiguration-resource-type"></a>tipo de recurso appleVpnAlwaysOnConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,15 +26,15 @@ Configuração de VPN AlwaysOn para MacOS e iOS IKEv2
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |tunnelConfiguration|[vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)|Determina a quais conexões a configuração de túnel específica se aplica. Os valores possíveis são: `wifiAndCellular`, `cellular`, `wifi`.|
-|userToggleEnabled|Boolean|Permitir que o usuário alterne a configuração VPN usando a interface do usuário|
+|userToggleEnabled|Booliano|Permitir que o usuário alterne a configuração VPN usando a interface do usuário|
 |voicemailExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine se o serviço de caixa postal será isento da conexão VPN sempre ativa. Os valores possíveis são: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
 |airPrintExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine se o serviço de impressão do servidor será isento da conexão VPN sempre ativa. Os valores possíveis são: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
 |cellularExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine se o serviço celular será isento da conexão VPN sempre ativa. Os valores possíveis são: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
-|allowAllCaptiveNetworkPlugins|Boolean|Especifica se o tráfego de todos os plugins de rede prisioneiros deve ser permitido fora da VPN|
+|allowAllCaptiveNetworkPlugins|Booliano|Especifica se o tráfego de todos os plugins de rede prisioneiros deve ser permitido fora da VPN|
 |allowedCaptiveNetworkPlugins|[specifiedCaptiveNetworkPlugins](../resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md)|Determina se todos, alguns ou nenhum aplicativo de rede cativo não nativo são permitidos|
-|allowCaptiveWebSheet|Boolean|Determina se o tráfego do aplicativo Websheet é permitido fora da VPN|
+|allowCaptiveWebSheet|Booliano|Determina se o tráfego do aplicativo Websheet é permitido fora da VPN|
 |natKeepAliveIntervalInSeconds|Int32|Especifica com que frequência, em segundos, enviar um pacote de KeepAlive de conversão de endereços de rede através da VPN|
-|natKeepAliveOffloadEnable|Boolean|Habilitar descarregamento de hardware de sinais de KeepAlive de NAT quando o dispositivo estiver suspenso|
+|natKeepAliveOffloadEnable|Booliano|Habilitar descarregamento de hardware de sinais de KeepAlive de NAT quando o dispositivo estiver suspenso|
 
 ## <a name="relationships"></a>Relações
 Nenhum

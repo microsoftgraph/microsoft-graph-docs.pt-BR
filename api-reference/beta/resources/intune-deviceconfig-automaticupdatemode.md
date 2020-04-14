@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração Propriedades automaticupdatemode
 description: Valores possíveis para o modo de atualização automática.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 845fdacfb0b29449e4464ec0eea03924632e861b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bb7af7e6a54da14c16313a712e1c745467e61783
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795902"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469839"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
