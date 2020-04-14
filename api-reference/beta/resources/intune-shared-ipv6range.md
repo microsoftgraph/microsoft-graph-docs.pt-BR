@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iPv6Range
 description: Definição de intervalo IPv6.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf5dff72f8df369fa48c71ff58bf6e4925cc16e8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77037ad6e8635a9e83da6fb727b30406e77304b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769161"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473579"
 ---
 # <a name="ipv6range-resource-type"></a>Tipo de recurso iPv6Range
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -2,19 +2,19 @@
 title: tipo de recurso mailboxUsageMailboxCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 41bb58fa74deb9f8296a8f109d83b7cdeb73012e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 32a2aba9aab207cede8118baed4435708995192a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522845"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473429"
 ---
 # <a name="mailboxusagemailboxcounts-resource-type"></a>tipo de recurso mailboxUsageMailboxCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 

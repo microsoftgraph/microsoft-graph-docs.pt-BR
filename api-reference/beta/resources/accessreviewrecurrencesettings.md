@@ -4,17 +4,17 @@ description: ''
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsofit-identity-platform
-author: ''
-ms.openlocfilehash: 807be44f256fa3a9080cc3cb458033726aadc107
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: markwahl-msft
+ms.openlocfilehash: 7c45a0b57d869acdb49c5a37f235232c70e8ec6f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508468"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472233"
 ---
 # <a name="accessreviewrecurrencesettings-resource-type"></a>tipo de recurso accessReviewRecurrenceSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +22,8 @@ Namespace: Microsoft. Graph
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| recurrenceType | string |  |
-| recurrenceEndType | string |  |
+| recurrenceType | cadeia de caracteres |  |
+| recurrenceEndType | cadeia de caracteres |  |
 | durationInDays | Int32 |  |
 | recurrenceCount | Int32 |  |
 

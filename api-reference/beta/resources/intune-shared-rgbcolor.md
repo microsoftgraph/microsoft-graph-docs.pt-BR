@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso rgbColor
 description: Cor em RGB.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7febc0aab64b19cfa7929af95466d9b10ecce2a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 95b8df7634f79a1ebca4df8c89c0580b6442cd02
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767901"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473519"
 ---
 # <a name="rgbcolor-resource-type"></a>Tipo de recurso rgbColor
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 69d36e3fa0be8c287835403bd445b7eea52f3dfc
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 6521bc80d8efac08e4954f467de7870e3baee494
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590813"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473880"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 
@@ -72,6 +72,8 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Enviar
 - Receber
 - Ler
+- Reunião criada
+- Reunião interagindo
 - Data do relatório
 - Período de Relatório
 

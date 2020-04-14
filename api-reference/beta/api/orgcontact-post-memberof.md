@@ -2,19 +2,19 @@
 title: Criar memberOf
 description: Use esta API para criar um novo memberOf.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2b6b664d979c976d4dc7ecc1436650400a57fcc1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e7293fcc20400e26f93f9a4e4fd89fa9156ceba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474720"
 ---
 # <a name="create-memberof"></a>Criar memberOf
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

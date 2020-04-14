@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração runAsAccountType
 description: Indica o tipo de contexto de execução em que o aplicativo é executado.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7395995e9cec7f54a8374a6856eb9e8bf050ae54
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 95d7b5266dfdce6f7099537a126305fd927bb294
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767866"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473512"
 ---
 # <a name="runasaccounttype-enum-type"></a>tipo de enumeração runAsAccountType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

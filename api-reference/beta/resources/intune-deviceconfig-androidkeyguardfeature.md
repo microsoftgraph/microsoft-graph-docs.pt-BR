@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração androidKeyguardFeature
 description: Recurso de protetor de recurso Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 351d33c3e54f607cb8e5a8b8693f9f483afe846b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ba0520d47a362678e8d6eb1f698eee9aad2a28c5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796752"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473803"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>tipo de enumeração androidKeyguardFeature
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
