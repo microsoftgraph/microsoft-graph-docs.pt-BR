@@ -1,35 +1,37 @@
 ---
 title: Criar roleAssignment
 description: Criar um novo objeto roleAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ecf81f0e976cfba9bb159d8234a6118dd129b24
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: becb8ec776092e966bf4af24fc2c32dcad10a6a9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801681"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421014"
 ---
-# <a name="create-roleassignment"></a><span data-ttu-id="48020-103">Criar roleAssignment</span><span class="sxs-lookup"><span data-stu-id="48020-103">Create roleAssignment</span></span>
+# <a name="create-roleassignment"></a><span data-ttu-id="39123-103">Criar roleAssignment</span><span class="sxs-lookup"><span data-stu-id="39123-103">Create roleAssignment</span></span>
 
-> <span data-ttu-id="48020-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="48020-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="39123-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="39123-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="48020-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="48020-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="39123-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="39123-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="48020-106">Criar um novo objeto [roleAssignment](../resources/intune-rbac-roleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="48020-106">Create a new [roleAssignment](../resources/intune-rbac-roleassignment.md) object.</span></span>
+> <span data-ttu-id="39123-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="39123-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="48020-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="48020-107">Prerequisites</span></span>
-<span data-ttu-id="48020-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48020-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="39123-107">Criar um novo objeto [roleAssignment](../resources/intune-rbac-roleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="39123-107">Create a new [roleAssignment](../resources/intune-rbac-roleassignment.md) object.</span></span>
 
-|<span data-ttu-id="48020-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="48020-110">Permission type</span></span>|<span data-ttu-id="48020-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="48020-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="39123-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="39123-108">Prerequisites</span></span>
+<span data-ttu-id="39123-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="39123-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="39123-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="39123-111">Permission type</span></span>|<span data-ttu-id="39123-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="39123-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="48020-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="48020-112">Delegated (work or school account)</span></span>|<span data-ttu-id="48020-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="48020-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="48020-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="48020-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="48020-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="48020-115">Not supported.</span></span>|
-|<span data-ttu-id="48020-116">Application</span><span class="sxs-lookup"><span data-stu-id="48020-116">Application</span></span>|<span data-ttu-id="48020-117">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="48020-117">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="39123-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="39123-113">Delegated (work or school account)</span></span>|<span data-ttu-id="39123-114">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="39123-114">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="39123-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="39123-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="39123-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="39123-116">Not supported.</span></span>|
+|<span data-ttu-id="39123-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="39123-117">Application</span></span>|<span data-ttu-id="39123-118">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="39123-118">DeviceManagementRBAC.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="48020-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="48020-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39123-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="39123-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +40,35 @@ ms.locfileid: "42801681"
 POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="48020-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="48020-119">Request headers</span></span>
-|<span data-ttu-id="48020-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="48020-120">Header</span></span>|<span data-ttu-id="48020-121">Valor</span><span class="sxs-lookup"><span data-stu-id="48020-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="39123-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="39123-120">Request headers</span></span>
+|<span data-ttu-id="39123-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="39123-121">Header</span></span>|<span data-ttu-id="39123-122">Valor</span><span class="sxs-lookup"><span data-stu-id="39123-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="48020-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="48020-122">Authorization</span></span>|<span data-ttu-id="48020-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="48020-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="48020-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="48020-124">Accept</span></span>|<span data-ttu-id="48020-125">application/json</span><span class="sxs-lookup"><span data-stu-id="48020-125">application/json</span></span>|
+|<span data-ttu-id="39123-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="39123-123">Authorization</span></span>|<span data-ttu-id="39123-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="39123-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="39123-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="39123-125">Accept</span></span>|<span data-ttu-id="39123-126">application/json</span><span class="sxs-lookup"><span data-stu-id="39123-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="48020-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="48020-126">Request body</span></span>
-<span data-ttu-id="48020-127">No corpo da solicitação, forneça uma representação JSON do objeto roleAssignment.</span><span class="sxs-lookup"><span data-stu-id="48020-127">In the request body, supply a JSON representation for the roleAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="39123-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="39123-127">Request body</span></span>
+<span data-ttu-id="39123-128">No corpo da solicitação, forneça uma representação JSON do objeto roleAssignment.</span><span class="sxs-lookup"><span data-stu-id="39123-128">In the request body, supply a JSON representation for the roleAssignment object.</span></span>
 
-<span data-ttu-id="48020-128">A tabela a seguir mostra as propriedades que são necessárias ao criar roleAssignment.</span><span class="sxs-lookup"><span data-stu-id="48020-128">The following table shows the properties that are required when you create the roleAssignment.</span></span>
+<span data-ttu-id="39123-129">A tabela a seguir mostra as propriedades que são necessárias ao criar roleAssignment.</span><span class="sxs-lookup"><span data-stu-id="39123-129">The following table shows the properties that are required when you create the roleAssignment.</span></span>
 
-|<span data-ttu-id="48020-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="48020-129">Property</span></span>|<span data-ttu-id="48020-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="48020-130">Type</span></span>|<span data-ttu-id="48020-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="48020-131">Description</span></span>|
+|<span data-ttu-id="39123-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="39123-130">Property</span></span>|<span data-ttu-id="39123-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="39123-131">Type</span></span>|<span data-ttu-id="39123-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="39123-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="48020-132">id</span><span class="sxs-lookup"><span data-stu-id="48020-132">id</span></span>|<span data-ttu-id="48020-133">String</span><span class="sxs-lookup"><span data-stu-id="48020-133">String</span></span>|<span data-ttu-id="48020-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="48020-134">Key of the entity.</span></span> <span data-ttu-id="48020-135">É somente leitura e gerada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="48020-135">This is read-only and automatically generated.</span></span>|
-|<span data-ttu-id="48020-136">displayName</span><span class="sxs-lookup"><span data-stu-id="48020-136">displayName</span></span>|<span data-ttu-id="48020-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="48020-137">String</span></span>|<span data-ttu-id="48020-138">O nome de exibição ou nome amigável da atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="48020-138">The display or friendly name of the role Assignment.</span></span>|
-|<span data-ttu-id="48020-139">description</span><span class="sxs-lookup"><span data-stu-id="48020-139">description</span></span>|<span data-ttu-id="48020-140">String</span><span class="sxs-lookup"><span data-stu-id="48020-140">String</span></span>|<span data-ttu-id="48020-141">Descrição da atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="48020-141">Description of the Role Assignment.</span></span>|
-|<span data-ttu-id="48020-142">scopeMembers</span><span class="sxs-lookup"><span data-stu-id="48020-142">scopeMembers</span></span>|<span data-ttu-id="48020-143">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="48020-143">String collection</span></span>|<span data-ttu-id="48020-144">Lista de IDs de grupos de segurança de membros de escopo da função.</span><span class="sxs-lookup"><span data-stu-id="48020-144">List of ids of role scope member security groups.</span></span>  <span data-ttu-id="48020-145">Estas são as IDs do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="48020-145">These are IDs from Azure Active Directory.</span></span>|
-|<span data-ttu-id="48020-146">scopeType</span><span class="sxs-lookup"><span data-stu-id="48020-146">scopeType</span></span>|[<span data-ttu-id="48020-147">roleAssignmentScopeType</span><span class="sxs-lookup"><span data-stu-id="48020-147">roleAssignmentScopeType</span></span>](../resources/intune-rbac-roleassignmentscopetype.md)|<span data-ttu-id="48020-148">Especifica o tipo de escopo de uma atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="48020-148">Specifies the type of scope for a Role Assignment.</span></span> <span data-ttu-id="48020-149">O tipo padrão ' ResourceScope ' permite a atribuição de ResourceScopes.</span><span class="sxs-lookup"><span data-stu-id="48020-149">Default type 'ResourceScope' allows assignment of ResourceScopes.</span></span> <span data-ttu-id="48020-150">Para ' mydevices ', ' AllLicensedUsers ' e ' AllDevicesAndLicensedUsers ', a propriedade ResourceScopes deve ser deixada vazia.</span><span class="sxs-lookup"><span data-stu-id="48020-150">For 'AllDevices', 'AllLicensedUsers', and 'AllDevicesAndLicensedUsers', the ResourceScopes property should be left empty.</span></span> <span data-ttu-id="48020-151">Os valores possíveis são: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.</span><span class="sxs-lookup"><span data-stu-id="48020-151">Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.</span></span>|
-|<span data-ttu-id="48020-152">resourceScopes</span><span class="sxs-lookup"><span data-stu-id="48020-152">resourceScopes</span></span>|<span data-ttu-id="48020-153">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="48020-153">String collection</span></span>|<span data-ttu-id="48020-154">Lista de IDs de grupos de segurança de membros de escopo da função.</span><span class="sxs-lookup"><span data-stu-id="48020-154">List of ids of role scope member security groups.</span></span>  <span data-ttu-id="48020-155">Estas são as IDs do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="48020-155">These are IDs from Azure Active Directory.</span></span>|
+|<span data-ttu-id="39123-133">id</span><span class="sxs-lookup"><span data-stu-id="39123-133">id</span></span>|<span data-ttu-id="39123-134">String</span><span class="sxs-lookup"><span data-stu-id="39123-134">String</span></span>|<span data-ttu-id="39123-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="39123-135">Key of the entity.</span></span> <span data-ttu-id="39123-136">É somente leitura e gerada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="39123-136">This is read-only and automatically generated.</span></span>|
+|<span data-ttu-id="39123-137">displayName</span><span class="sxs-lookup"><span data-stu-id="39123-137">displayName</span></span>|<span data-ttu-id="39123-138">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="39123-138">String</span></span>|<span data-ttu-id="39123-139">O nome de exibição ou nome amigável da atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="39123-139">The display or friendly name of the role Assignment.</span></span>|
+|<span data-ttu-id="39123-140">description</span><span class="sxs-lookup"><span data-stu-id="39123-140">description</span></span>|<span data-ttu-id="39123-141">String</span><span class="sxs-lookup"><span data-stu-id="39123-141">String</span></span>|<span data-ttu-id="39123-142">Descrição da atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="39123-142">Description of the Role Assignment.</span></span>|
+|<span data-ttu-id="39123-143">scopeMembers</span><span class="sxs-lookup"><span data-stu-id="39123-143">scopeMembers</span></span>|<span data-ttu-id="39123-144">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="39123-144">String collection</span></span>|<span data-ttu-id="39123-145">Lista de IDs de grupos de segurança de membros de escopo da função.</span><span class="sxs-lookup"><span data-stu-id="39123-145">List of ids of role scope member security groups.</span></span>  <span data-ttu-id="39123-146">Estas são as IDs do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="39123-146">These are IDs from Azure Active Directory.</span></span>|
+|<span data-ttu-id="39123-147">scopeType</span><span class="sxs-lookup"><span data-stu-id="39123-147">scopeType</span></span>|[<span data-ttu-id="39123-148">roleAssignmentScopeType</span><span class="sxs-lookup"><span data-stu-id="39123-148">roleAssignmentScopeType</span></span>](../resources/intune-rbac-roleassignmentscopetype.md)|<span data-ttu-id="39123-149">Especifica o tipo de escopo de uma atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="39123-149">Specifies the type of scope for a Role Assignment.</span></span> <span data-ttu-id="39123-150">O tipo padrão ' ResourceScope ' permite a atribuição de ResourceScopes.</span><span class="sxs-lookup"><span data-stu-id="39123-150">Default type 'ResourceScope' allows assignment of ResourceScopes.</span></span> <span data-ttu-id="39123-151">Para ' mydevices ', ' AllLicensedUsers ' e ' AllDevicesAndLicensedUsers ', a propriedade ResourceScopes deve ser deixada vazia.</span><span class="sxs-lookup"><span data-stu-id="39123-151">For 'AllDevices', 'AllLicensedUsers', and 'AllDevicesAndLicensedUsers', the ResourceScopes property should be left empty.</span></span> <span data-ttu-id="39123-152">Os valores possíveis são: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.</span><span class="sxs-lookup"><span data-stu-id="39123-152">Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.</span></span>|
+|<span data-ttu-id="39123-153">resourceScopes</span><span class="sxs-lookup"><span data-stu-id="39123-153">resourceScopes</span></span>|<span data-ttu-id="39123-154">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="39123-154">String collection</span></span>|<span data-ttu-id="39123-155">Lista de IDs de grupos de segurança de membros de escopo da função.</span><span class="sxs-lookup"><span data-stu-id="39123-155">List of ids of role scope member security groups.</span></span>  <span data-ttu-id="39123-156">Estas são as IDs do Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="39123-156">These are IDs from Azure Active Directory.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="48020-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="48020-156">Response</span></span>
-<span data-ttu-id="48020-157">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [roleAssignment](../resources/intune-rbac-roleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="48020-157">If successful, this method returns a `201 Created` response code and a [roleAssignment](../resources/intune-rbac-roleassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="39123-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="39123-157">Response</span></span>
+<span data-ttu-id="39123-158">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [roleAssignment](../resources/intune-rbac-roleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="39123-158">If successful, this method returns a `201 Created` response code and a [roleAssignment](../resources/intune-rbac-roleassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="48020-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="48020-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="39123-159">Exemplo</span><span class="sxs-lookup"><span data-stu-id="39123-159">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="48020-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="48020-159">Request</span></span>
-<span data-ttu-id="48020-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="48020-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="39123-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="39123-160">Request</span></span>
+<span data-ttu-id="39123-161">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="39123-161">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 Content-type: application/json
@@ -86,8 +88,8 @@ Content-length: 277
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="48020-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="48020-161">Response</span></span>
-<span data-ttu-id="48020-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="48020-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="39123-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="39123-162">Response</span></span>
+<span data-ttu-id="39123-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="39123-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -107,7 +109,6 @@ Content-Length: 326
   ]
 }
 ```
-
 
 
 
