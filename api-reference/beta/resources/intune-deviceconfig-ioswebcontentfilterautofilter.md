@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosWebContentFilterAutoFilter
 description: Representa um tipo de configuração de filtro de conteúdo da Web iOS, que habilita o recurso de filtro automático do iOS e permite o controle de acesso à URL adicional. Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61054fa3e8d8894203a72b32cbb68ebb91e05aeb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01063b5709b0e10730e542f00149d6c6e3320d0a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790472"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440067"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>tipo de recurso iosWebContentFilterAutoFilter
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,8 +28,8 @@ Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebconten
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedUrls|Coleção de cadeias de caracteres|URLs adicionais permitidas para acesso|
-|blockedUrls|Coleção de cadeias de caracteres|URLs adicionais bloqueadas para acesso|
+|allowedUrls|Coleção String|URLs adicionais permitidas para acesso|
+|blockedUrls|Coleção String|URLs adicionais bloqueadas para acesso|
 
 ## <a name="relationships"></a>Relações
 Nenhum

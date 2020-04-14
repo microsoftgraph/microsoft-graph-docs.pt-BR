@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationText
 description: Representa um elemento de texto do ADMX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14680f7fd98e0e05c3aafdf8eaf1636a500f1c82
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8df0774abd90986f86ab870d40d0fec94ebd554
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782929"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443816"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>tipo de recurso groupPolicyPresentationText
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

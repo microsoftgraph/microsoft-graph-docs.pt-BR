@@ -2,19 +2,19 @@
 title: tipo de recurso emailActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c664cb4a381cf2ebe3de9bd9ca53719786b94405
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54efe4d3a24a0409e8daa2ebde6d4aff4b729118
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499565"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440566"
 ---
 # <a name="emailactivityuserdetail-resource-type"></a>tipo de recurso emailActivityUserDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -29,7 +29,7 @@ Namespace: Microsoft. Graph
 | sendCount         | Int64             |
 | receiveCount      | Int64             |
 | readCount         | Int64             |
-| assignedProducts  | String collection |
+| assignedProducts  | Coleção String |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Representação JSON

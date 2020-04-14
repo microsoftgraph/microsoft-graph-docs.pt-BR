@@ -2,19 +2,19 @@
 title: tipo de recurso hybridAgentUpdaterConfiguration
 description: tipo de recurso hybridAgentUpdaterConfiguration.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c10173d099ac7c2ad9714b0240f306e783fdd6da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5054ab7c22cb35a846df29ea058e0d3c02c5e7e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496807"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440509"
 ---
 # <a name="hybridagentupdaterconfiguration-resource-type"></a>tipo de recurso hybridAgentUpdaterConfiguration
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iosNotificationSettings
 description: Um item que descreve a configuração de notificação.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c748c0ba5d21674438af0c7a60883ab8c9832e09
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a14233ef8f74aa0aeeb7e21be3fc819aec985a4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790570"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440245"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

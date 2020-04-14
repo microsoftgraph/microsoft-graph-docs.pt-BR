@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosWebContentFilterSpecificWebsitesAccess
 description: Representa um tipo de configuração de filtro de conteúdo da Web iOS, que instala os indicadores de URL no navegador integrado do iOS. Um cenário de exemplo está na sala de aula em que os professores gostariam que os alunos navegassem sites por meio de marcadores de navegador configurados em seus dispositivos iOS e sem acesso a outros sites.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: db8e5bea69fb7369d6d7af9429ec163b87b65df2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f6e68fecd5bed0f51f89d15714ac3f2c95516396
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790458"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440037"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>tipo de recurso iosWebContentFilterSpecificWebsitesAccess
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

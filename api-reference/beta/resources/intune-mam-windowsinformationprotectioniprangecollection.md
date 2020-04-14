@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsInformationProtectionIPRangeCollection
 description: Coleção de intervalos de IP da Proteção de Informações do Windows
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c277bf90b14fec8408b918d1bbef99ad4ca21fa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d991ba74a269b9feaf52d8bdd5bc7ea4b2c65469
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780567"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443683"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionIPRangeCollection
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

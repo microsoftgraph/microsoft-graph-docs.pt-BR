@@ -1,18 +1,20 @@
 ---
 title: Criar depIOSEnrollmentProfile
 description: Criar um novo objeto depIOSEnrollmentProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a76a30ac3f136e91f6f85191581e592d2f98ef4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e88af42bfb50a3d2f21b35b6a1e723956e0e3881
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813366"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441471"
 ---
 # <a name="create-depiosenrollmentprofile"></a>Criar depIOSEnrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -234,7 +236,6 @@ Content-Length: 2073
   "welcomeScreenDisabled": true
 }
 ```
-
 
 
 

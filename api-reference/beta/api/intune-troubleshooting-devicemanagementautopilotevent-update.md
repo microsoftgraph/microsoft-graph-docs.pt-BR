@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceManagementAutopilotEvent
 description: Atualiza as propriedades de um objeto deviceManagementAutopilotEvent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ea3703d23eb45e9c91dd40cbd3cb3031b7e2cd30
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ed84a7c1bee3c1b6a6a06136392350a6883d870d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800232"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443452"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>Atualizar deviceManagementAutopilotEvent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -153,7 +155,6 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 

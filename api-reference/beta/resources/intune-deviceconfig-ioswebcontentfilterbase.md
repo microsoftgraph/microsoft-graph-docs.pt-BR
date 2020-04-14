@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosWebContentFilterBase
 description: Representa um tipo de base de configuração de filtro de conteúdo da Web iOS. Uma base vazia e abstrata. O chamador deve usar um dos tipos derivados para configurações.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3675e08e8401de2e5115e060694a5ea7a9981319
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 031c73c984d58598bcc2bbf85d5e0fe5abd61b64
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790465"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440060"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>tipo de recurso iosWebContentFilterBase
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

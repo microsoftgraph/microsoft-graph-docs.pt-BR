@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosKerberosSingleSignOnExtension
 description: Representa um perfil de extensão de logon único do tipo Kerberos para dispositivos iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07b51e3d9fc7fe184f8cbf120f34c7ef3cbdb754
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00da8cb6d687a8fcc828f23b0c9d78c8c38afb0b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790598"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440299"
 ---
 # <a name="ioskerberossinglesignonextension-resource-type"></a>tipo de recurso iosKerberosSingleSignOnExtension
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,11 +29,11 @@ Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |esfera|String|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
-|domínio|Coleção de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
+|domínio|Coleção String|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
 |blockAutomaticLogin|Boolean|Habilita ou desabilita o uso do chaveiro.|
 |CacheName|String|Obtém ou define o nome genérico dos serviços de segurança do cache Kerberos a ser usado para esse perfil.|
-|credentialBundleIdAccessControlList|Coleção de cadeias de caracteres|Obtém ou define uma lista de IDs de lote de aplicativos que têm permissão para acessar o tíquete de concessão de tíquete Kerberos.|
-|domainRealms|Coleção de cadeias de caracteres|Obtém ou define uma lista de Realms para o mapeamento do realm do domínio personalizado. Os territórios diferenciam maiúsculas de minúsculas.|
+|credentialBundleIdAccessControlList|Coleção String|Obtém ou define uma lista de IDs de lote de aplicativos que têm permissão para acessar o tíquete de concessão de tíquete Kerberos.|
+|domainRealms|Coleção String|Obtém ou define uma lista de Realms para o mapeamento do realm do domínio personalizado. Os territórios diferenciam maiúsculas de minúsculas.|
 |isDefaultRealm|Boolean|Quando for true, o realm deste perfil será selecionado como o padrão. Necessário se vários perfis de tipo Kerberos estiverem configurados.|
 |passwordBlockModification|Boolean|Habilita ou desabilita as alterações de senha.|
 |passwordExpirationDays|Int32|Substitui a expiração padrão da senha em dias. Para a maioria dos domínios, esse valor é calculado automaticamente.|

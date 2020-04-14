@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração localSecurityOptionsSmartCardRemovalBehaviorType
 description: Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b54aa37d7bbe78f1d8a8b308e7377e50a46389f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 933d78b3b9e0de1c586391b1544fe1eefdd9640b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790332"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439808"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>tipo de enumeração localSecurityOptionsSmartCardRemovalBehaviorType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

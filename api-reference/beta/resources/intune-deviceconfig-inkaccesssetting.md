@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração inkAccessSetting
 description: Valores para a configuração InkWorkspaceAccess.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cf5fb6e91d21d66ae36ef7e0427cbaa7f55991a1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9475db506afe5b6bcd976d173c2f1610c8317c09
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791720"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444271"
 ---
 # <a name="inkaccesssetting-enum-type"></a>tipo de enumeração inkAccessSetting
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,8 +26,8 @@ Valores para a configuração InkWorkspaceAccess.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|enabled|1|Permiti.|
-|deficiência|duas|Deficiência.|
+|habilitadas|1|Permiti.|
+|desabilitadas|duas|Deficiência.|
 
 
 

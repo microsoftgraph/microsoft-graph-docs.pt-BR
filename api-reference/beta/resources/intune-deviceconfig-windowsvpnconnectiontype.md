@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsVpnConnectionType
 description: Tipo de conexão VPN do Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b27694b46cefc123b9c60b5c89838cee12b76b0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c2f98d8e869f171f112b69481b16f6ee82a4f8f0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786127"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441060"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>tipo de enumeração windowsVpnConnectionType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

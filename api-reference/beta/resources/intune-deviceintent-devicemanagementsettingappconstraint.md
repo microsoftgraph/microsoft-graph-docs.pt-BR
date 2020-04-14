@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementSettingAppConstraint
 description: A restrição que impõe a configuração contém somente tipos de aplicativos disponíveis.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b80fa581686692a47051405cc68f4d6d0694b95
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 012f20e69f79018ffecbac0ff4558687ec407bdd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785376"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443317"
 ---
 # <a name="devicemanagementsettingappconstraint-resource-type"></a>tipo de recurso deviceManagementSettingAppConstraint
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|supportedTypes|Coleção de cadeias de caracteres|Tipos de aplicativos aceitáveis para permitir essa configuração|
+|supportedTypes|Coleção String|Tipos de aplicativos aceitáveis para permitir essa configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum

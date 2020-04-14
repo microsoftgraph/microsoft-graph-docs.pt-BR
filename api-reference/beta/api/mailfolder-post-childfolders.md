@@ -1,20 +1,20 @@
 ---
 title: Criar MailFolder
 description: Use esta API para criar um novo mailFolder filho.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78333402e6a69209ab9086c217436fb03a9e0dfe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 250c5097afc35222a18f17a342ecb2a70a12d0f3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457010"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443369"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iosNetworkUsageRule
 description: Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenciados usam redes, como redes de dados celulares.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26e62ee0d470d178b15a849c16f4e1678cc0152e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 422600c9bffd6b1e7849cabc30229645cab486e7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790584"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440470"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Tipo de recurso iosNetworkUsageRule
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

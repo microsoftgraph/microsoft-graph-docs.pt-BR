@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso mobileAppDependency
 description: Descreve um tipo de dependência entre dois aplicativos móveis.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5440a7c9729ca0990021df9c0c89065b672b0ff2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 42f87c57f7df7c60e75070ed9ac0a579cb436f91
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797822"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440389"
 ---
 # <a name="mobileappdependency-resource-type"></a>tipo de recurso mobileAppDependency
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

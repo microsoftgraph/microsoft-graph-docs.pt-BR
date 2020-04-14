@@ -2,15 +2,15 @@
 title: tipo de recurso mailSearchFolder
 description: Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email correspondentes aos critérios de pesquisa especificados. mailSearchFolder herda de mailFolder.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ce4abccab636d8e73f4f423b4270e8804a4634eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58c0d95473472930bbc43038e89cb1c8c19d1777
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522817"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443086"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
@@ -47,8 +47,8 @@ Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo rec
 |:---------------|:--------|:----------|
 | IsSupported | Boolean | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
 | includeNestedFolders | Boolean | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
-| sourceFolderIds | String collection | As pastas de caixa de correio que devem ser minadas. |
-| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
+| sourceFolderIds | Coleção String | As pastas de caixa de correio que devem ser minadas. |
+| filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="json-representation"></a>Representação JSON
 

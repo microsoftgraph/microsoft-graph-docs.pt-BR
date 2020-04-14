@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceHealthScript
 description: O Intune fornecerá ao cliente a capacidade de executar os scripts de integridade do PowerShell (remediation + detecção) nos dispositivos do Windows 10 Azure Active Directory associados registrados.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80e1539cf941d2d1cfa04fefcb442493f984347c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d84c56bd23624ba5d975a65435e7203040c2c1ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784962"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443228"
 ---
 # <a name="devicehealthscript-resource-type"></a>tipo de recurso deviceHealthScript
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -34,6 +36,7 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 |[ação enableGlobalScripts](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Nenhuma|Ainda não documentado|
 |[função areGlobalScriptsAvailable](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Ainda não documentado|
 |[função getRemediationSummary](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Ainda não documentado|
+|[função getRemediationHistory](../api/intune-devices-devicehealthscript-getremediationhistory.md)|[deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md)|Função para obter o número de correções por scripts de integridade do dispositivo|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -50,7 +53,7 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
 |runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|roleScopeTagIds|Coleção String|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
 |isGlobalScript|Boolean|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
 |highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
 

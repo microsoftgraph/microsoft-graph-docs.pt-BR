@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementSettingDefinition
 description: Entidade que representa a definição de uma determinada configuração
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72789bb8dc5c331f896deafa8615614f65e9cd75
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d09f1ed2129af06eb697522ccfa4ddd493d03025
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785341"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443265"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>tipo de recurso deviceManagementSettingDefinition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -39,7 +41,7 @@ Entidade que representa a definição de uma determinada configuração
 |description|String|A descrição da configuração|
 |placeholderText|String|Texto do espaço reservado como um exemplo de entrada válida|
 |documentationUrl|String|URL para configurar a documentação|
-|palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
+|palavras-chave|Coleção String|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
 

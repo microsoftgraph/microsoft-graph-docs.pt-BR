@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationLongDecimalTextBox
 description: Representa um elemento ADMX longDecimalTextBox e um elemento ADMX longDecimal.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fdea54c6080dfa57fc3f9695fed211b8925a523c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 29444d81bec6089de22faca5c40c990c22c73258
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782943"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443830"
 ---
 # <a name="grouppolicypresentationlongdecimaltextbox-resource-type"></a>tipo de recurso groupPolicyPresentationLongDecimalTextBox
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

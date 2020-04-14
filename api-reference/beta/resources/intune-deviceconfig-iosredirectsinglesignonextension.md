@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosRedirectSingleSignOnExtension
 description: Representa um perfil de extensão de logon único de tipo Redirecionado para dispositivos iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0bcff1697c8d41889736cbe74039f8c43d53d680
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e837b10163fbd61c050f2942210e699255ef540f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790556"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440215"
 ---
 # <a name="iosredirectsinglesignonextension-resource-type"></a>tipo de recurso iosRedirectSingleSignOnExtension
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +31,7 @@ Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesi
 |extensionIdentifier|String|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
 |teamIdentifier|String|Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.|
 |as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
-|urlPrefixes|Coleção de cadeias de caracteres|Um ou mais prefixos de URL de provedores de identidade em cujo nome a extensão do aplicativo executa logon único. As URLs devem começar com http://ou https://. Todos os prefixos de URL devem ser exclusivos para todos os perfis.|
+|urlPrefixes|Coleção String|Um ou mais prefixos de URL de provedores de identidade em cujo nome a extensão do aplicativo executa logon único. As URLs devem começar com http://ou https://. Todos os prefixos de URL devem ser exclusivos para todos os perfis.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,19 +2,19 @@
 title: tipo de recurso emailAppUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 700ef4b222860d19ef3ba78ae583a50e8cf8d0cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d25f8ce307fb5572515ce12c347fdc2a7dbb726
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499481"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440545"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>tipo de recurso emailAppUsageUserDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -26,15 +26,15 @@ Namespace: Microsoft. Graph
 | isDeleted         | Boolean           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
-| mailForMac        | String collection |
-| outlookForMac     | String collection |
-| outlookForWindows | String collection |
-| outlookForMobile  | String collection |
-| otherForMobile    | String collection |
-| outlookForWeb     | String collection |
-| pop3App           | String collection |
-| imap4App          | String collection |
-| smtpApp           | String collection |
+| mailForMac        | Coleção String |
+| outlookForMac     | Coleção String |
+| outlookForWindows | Coleção String |
+| outlookForMobile  | Coleção String |
+| otherForMobile    | Coleção String |
+| outlookForWeb     | Coleção String |
+| pop3App           | Coleção String |
+| imap4App          | Coleção String |
+| smtpApp           | Coleção String |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Representação JSON

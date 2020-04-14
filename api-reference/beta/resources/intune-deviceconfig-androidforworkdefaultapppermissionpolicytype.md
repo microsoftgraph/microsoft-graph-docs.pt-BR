@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração androidForWorkDefaultAppPermissionPolicyType
 description: Tipo de política de permissão de aplicativo padrão do Android para trabalho.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 00a2910f7750ddcf9bd9208cfc46e4da1c4b5355
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01ea2a3b54c2e0bd2d0675eac56851563cf4bd84
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796871"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442892"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>tipo de enumeração androidForWorkDefaultAppPermissionPolicyType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

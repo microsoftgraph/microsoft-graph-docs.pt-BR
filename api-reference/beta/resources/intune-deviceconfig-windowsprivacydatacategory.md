@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsPrivacyDataCategory
 description: Especificador de categoria de dados de privacidade do Windows para acesso a dados de privacidade.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b86b598427748f70ea9c3cbde9280e19a0da652
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af6b1aaec3349a37d9d121eb8df26f34accef0af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786240"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444047"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>tipo de enumeração windowsPrivacyDataCategory
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +28,7 @@ Especificador de categoria de dados de privacidade do Windows para acesso a dado
 |notConfigured|,0|Nenhum nível de acesso especificado, sem tentativas. O dispositivo pode se comportar como no UserInControl ou no ForceAllow. Pode depender que os dados de privacidade foram acessados, versões do Windows e outros fatores.|
 |accountInfo|1|Permite que aplicativos acessem o nome do usuário, a imagem e outras informações da conta criadas na conta da Microsoft. Adicionado no Windows 10, versão 1607.|
 |appsRunInBackground|duas|Permitir que os aplicativos recebam informações, enviem notificações e permaneçam atualizados, mesmo quando o usuário não estiver usando-os. Lembre-se de que ao desabilitar os aplicativos de comunicação (email, voz, etc.) do acesso em segundo plano, esses aplicativos podem ou não funcionar como estão com o acesso em segundo plano. Adicionado no Windows 10, versão 1703.|
-|calendar|3D|Permitir que aplicativos acessem o calendário do usuário. Adicionado no Windows 10, versão 1607.|
+|calendário|3D|Permitir que aplicativos acessem o calendário do usuário. Adicionado no Windows 10, versão 1607.|
 |callHistory|4 |Permitir que aplicativos acessem o histórico de chamadas do usuário. Adicionado no Windows 10, versão 1607.|
 |Câmara|5 |Permitir que os aplicativos acessem a câmera no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
 |contacts|6 |Permitir que aplicativos acessem as informações de contato do usuário. Adicionado no Windows 10, versão 1607.|
@@ -36,7 +38,7 @@ Especificador de categoria de dados de privacidade do Windows para acesso a dado
 |SMS|10 |Permitir que os aplicativos leiam ou enviem mensagens, texto ou MMS. Adicionado no Windows 10, versão 1607.|
 |microfone|11|Permitir que os aplicativos usem o microfone no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
 |movimento|12 |Permitir que os aplicativos usem dados de movimento gerados no usuário do dispositivo. Adicionado no Windows 10, versão 1607.|
-|por|13 |Permitir que aplicativos acessem notificações do usuário. Adicionado no Windows 10, versão 1607.|
+|por|Treze|Permitir que aplicativos acessem notificações do usuário. Adicionado no Windows 10, versão 1607.|
 |phone|14 |Permitir que aplicativos acessem dados de telefone e façam chamadas telefônicas. Adicionado no Windows 10, versão 1607.|
 |rádios|15 |Permitir que os aplicativos usem rádios, incluindo Bluetooth, para enviar e receber dados. Adicionado no Windows 10, versão 1607.|
 |tarefas|16 |Permitir que aplicativos acessem o Agendador de tarefas. Adicionado no Windows 10, versão 1703.|

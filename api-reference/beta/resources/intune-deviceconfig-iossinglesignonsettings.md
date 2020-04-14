@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosSingleSignOnSettings
 description: configurações de autenticação Kerberos do iOS para logon único
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd959b3019a6bd4ce553b53a70042fffd5c9b277
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2f43f5feea67f9f94a8aa5f9179add26deb84ee6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790535"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440186"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>tipo de recurso iosSingleSignOnSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,7 +26,7 @@ configurações de autenticação Kerberos do iOS para logon único
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de identificadores de aplicativos que têm permissão para usar esse logon. Se esse campo for omitido, o logon será aplicado a todos os aplicativos no dispositivo. Esta coleção pode conter um máximo de 500 elementos.|
-|allowedUrls|Coleção de cadeias de caracteres|Lista de URLs HTTP que devem ser correspondidas para usar esse logon. Com o iOS 9,0 ou posterior, um caractere curinga pode ser usado.|
+|allowedUrls|Coleção String|Lista de URLs HTTP que devem ser correspondidas para usar esse logon. Com o iOS 9,0 ou posterior, um caractere curinga pode ser usado.|
 |displayName|String|O nome de exibição das configurações de logon mostradas no dispositivo receptor.|
 |kerberosPrincipalName|String|Um nome principal Kerberos. Se não for fornecido, o usuário será solicitado a fornecer um durante a instalação do perfil.|
 |kerberosRealm|String|Um nome de realm Kerberos. Diferencia maiúsculas de minúsculas.|

@@ -3,14 +3,14 @@ title: Listar mensagens
 description: 'Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). '
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: d7398b7013fdb6e2463db5dd94b147f45151fcea
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: e83eea71f205727b25f2e6a7dbdf0d8c4a651151
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892685"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440609"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -31,7 +31,7 @@ Existem dois cenários em que um aplicativo pode receber mensagens na pasta de e
 * Se o aplicativo tiver permissões de aplicativo ou
 * Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
-> **Observação** Esteja ciente do [problema conhecido](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) de que esta operação inclui mensagens de chat do Microsoft Teams em sua resposta.
+> **Observação** Lembre-se da [questão conhecida](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) essa operação inclui mensagens de chat do Microsoft Teams em sua resposta.
  
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

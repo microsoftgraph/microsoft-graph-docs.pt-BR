@@ -2,19 +2,19 @@
 title: tipo de recurso mailFolder
 description: Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e Rascunhos. As pastas de email podem conter mensagens, outros itens do Outlook e pastas de correio filho.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9f80f49c193192f4a7ef63c51b20f6693fabc403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bbce8afa1926444af025b0b57d857f94a296e852
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522824"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443094"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -78,7 +78,7 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
-|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
+|displayName|String|O nome de exibição da mailFolder.|
 |id|String|Identificador exclusivo de mailFolder.|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|

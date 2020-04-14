@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsInformationProtectionDesktopApp
 description: Aplicativo da área de trabalho para a proteção de informações do Windows
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44aa52bfe2dbae82adfc98c49fbba5a1aae500bf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2460fbe031f0ee5816b437bdb35c0484bd546b43
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780784"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443720"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>Tipo de recurso windowsInformationProtectionDesktopApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

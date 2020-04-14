@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso keyIntegerValuePair
 description: Um par chave-valor com uma chave de cadeia de caracteres e um valor inteiro.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f2a3f4201956db2cbca001f8d94f6ae6ecc90d7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 67a48f48f52c613c13552506d9cc76823bb042f7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790430"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439977"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>tipo de recurso keyIntegerValuePair
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

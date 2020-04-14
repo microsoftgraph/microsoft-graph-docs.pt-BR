@@ -2,19 +2,19 @@
 title: Criar outlookTask
 description: Crie uma tarefa do Outlook no grupo de tarefas padrão`My Tasks`() e na pasta de`Tasks`tarefas padrão () na caixa de correio do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b2cf7b56f7721145e577a25759c8edff8c4c9ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 855497074695876a9ec05a24ef2320d0b12dc668
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440680"
 ---
 # <a name="create-outlooktask"></a>Criar outlookTask
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -97,7 +97,7 @@ O método POST ignora a parte de hora de **StartDateTime** e **dueDateTime** no 
 
 Como o cabeçalho `Prefer` especifica PST, o método POST expressa todas as propriedades relacionadas à data na resposta em PST. Em particular, para as propriedades **StartDateTime** e **dueDateTime** , o método post converte meia-noite em est para pst e retorna-as em PST na resposta.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

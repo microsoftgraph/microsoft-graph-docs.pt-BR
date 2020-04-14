@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationDropdownList
 description: Representa um elemento ADMX dropdownList e um elemento enum do ADMX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5b0a4e73043618116b920f6af5b22931b594d4e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01c11fd0d9c2df7a55e09a5fcf636c5311d7d70b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782964"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443845"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownList
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

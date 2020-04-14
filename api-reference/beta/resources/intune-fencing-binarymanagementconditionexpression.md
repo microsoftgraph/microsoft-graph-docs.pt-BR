@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso binaryManagementConditionExpression
 description: Uma expressão de condição de gerenciamento que é avaliada usando uma operação binária.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff87c376bd88e49d8dc2c3d4657607e7bddcb503
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 575f5d14b3c7427976814405729f12ed48d8a3fa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442742"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>tipo de recurso binaryManagementConditionExpression
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

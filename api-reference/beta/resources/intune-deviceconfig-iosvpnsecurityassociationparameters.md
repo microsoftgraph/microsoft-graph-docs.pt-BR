@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosVpnSecurityAssociationParameters
 description: Parâmetros de associação de segurança VPN
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3da905a68222b60bef7225f34afc2b4a0b39a50
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f52d4d05945a29a1eaa44823d13b41eb560f688a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790493"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440097"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>tipo de recurso iosVpnSecurityAssociationParameters
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

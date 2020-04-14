@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsPrivacyDataAccessLevel
 description: Determine o nível de acesso à categoria de dados de privacidade do Windows específica.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 96ef43bae6996c3268a3e0d268f80267e192deee
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: deebb9f7d24646d18b425b0948eb4a229341fb6d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786247"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444054"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>tipo de enumeração windowsPrivacyDataAccessLevel
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

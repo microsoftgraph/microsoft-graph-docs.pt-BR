@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
 description: Restrição que impõe os tipos de inscrição aplicados a uma configuração
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c5d34f381e7f4b52039551fb120e4691bc40026
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: afe72c82b80d6d3207ffd5298b313a02c63090b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785327"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443250"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enrollmentTypes|Coleção de cadeias de caracteres|Lista de tipos de registro|
+|enrollmentTypes|Coleção String|Lista de tipos de registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum

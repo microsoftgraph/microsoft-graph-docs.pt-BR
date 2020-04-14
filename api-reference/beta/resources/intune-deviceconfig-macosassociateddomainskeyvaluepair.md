@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso macOSAssociatedDomainsKeyValuePair
 description: Par chave de valor para domínios associados
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08a59f0566da2e2dffa64c059cc913923ec5cf58
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ebf62a01d4a97fde51974ea2e7984b97c39dc5d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790318"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439719"
 ---
 # <a name="macosassociateddomainskeyvaluepair-resource-type"></a>tipo de recurso macOSAssociatedDomainsKeyValuePair
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

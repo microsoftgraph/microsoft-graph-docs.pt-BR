@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosSingleSignOnExtension
 description: Uma classe base abstrata para todos os tipos de extensão de logon único do iOS específicos.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1109f864cc01133ca3b2c7fc43732b858302743
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18f06e0e57cbe6ee774df9c10d226ad5ee5c986d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790542"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440201"
 ---
 # <a name="iossinglesignonextension-resource-type"></a>tipo de recurso iosSingleSignOnExtension
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

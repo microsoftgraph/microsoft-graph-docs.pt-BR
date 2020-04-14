@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração localSecurityOptionsStandardUserElevationPromptBehaviorType
 description: Valores possíveis para LocalSecurityOptionsStandardUserElevationPromptBehavior
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 293637986f2c42753c2db4c7b7f4e8c3c037e938
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3281255e411c2e3a97e004e26124755b3b647d07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790325"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439729"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>tipo de enumeração localSecurityOptionsStandardUserElevationPromptBehaviorType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

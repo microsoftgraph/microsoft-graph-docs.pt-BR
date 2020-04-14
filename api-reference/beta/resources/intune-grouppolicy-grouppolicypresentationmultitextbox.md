@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationMultiTextBox
 description: Representa um elemento multitextbox de ADMX e um elemento de multitexto ADMX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d701c9768c5f07195662ff25f7f5066f921862a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: acdf1168585136bb358594e4d3dd8c7d3f8df970
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782936"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443823"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>tipo de recurso groupPolicyPresentationMultiTextBox
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

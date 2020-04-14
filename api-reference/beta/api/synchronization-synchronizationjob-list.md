@@ -3,18 +3,18 @@ title: Listar trabalhos de sincronização
 description: Listar trabalhos existentes para uma determinada instância de aplicativo (entidade de serviço).
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fad9cf8cafac7b09804acd4e2026ac540686a118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 331c21653c80c2c8db3e0650945a946e1aea2e8d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453022"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437568"
 ---
 # <a name="list-synchronization-jobs"></a>Listar trabalhos de sincronização
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

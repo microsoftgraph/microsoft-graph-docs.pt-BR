@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso managedDevice
 description: Dispositivos gerenciados ou pré-registrados pelo Intune
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 981a02c9ce52467a2cd48ebf8ca780ce80791a02
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8aeb14f7ef4b0c5471b54af2dba87eec8f483c28
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783974"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443980"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -79,7 +81,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo. Essa propriedade é somente leitura.|
 |aadRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory. Essa propriedade é somente leitura.|
 |azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory. Essa propriedade é somente leitura.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount` e `azureAdJoinUsingAzureVmExtension`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indica se o modo perdido está habilitado ou desabilitado. Essa propriedade é somente leitura. Os valores possíveis são: `disabled` e `enabled`.|
 |activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado. Essa propriedade é somente leitura.|
 |emailAddress|String|Email (s) para o usuário associado ao dispositivo. Essa propriedade é somente leitura.|
@@ -102,7 +104,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |serialNumber|Cadeia de caracteres|Autoridade. Essa propriedade é somente leitura.|
 |phoneNumber|String|Número de telefone do dispositivo. Essa propriedade é somente leitura.|
 |androidSecurityPatchLevel|String|Nível de patch de segurança do Android. Essa propriedade é somente leitura.|
-|userDisplayName|String|Nome de exibição do usuário. Essa propriedade é somente leitura.|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário. Essa propriedade é somente leitura.|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Recursos habilitados para cliente do ConfigrMgr. Essa propriedade é somente leitura.|
 |wiFiMacAddress|String|MAC Wi-Fi. Essa propriedade é somente leitura.|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|O estado do atestado de integridade do dispositivo. Essa propriedade é somente leitura.|
@@ -120,7 +122,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de validade do certificado de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
 |iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura.|
 |udid|String|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de dispositivo.|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de dispositivo.|
 |windowsActiveMalwareCount|Int32|Contagem de malware ativo para este dispositivo Windows. Essa propriedade é somente leitura.|
 |windowsRemediatedMalwareCount|Int32|Contagem de malware corrigido para este dispositivo Windows. Essa propriedade é somente leitura.|
 |notes|Cadeia de caracteres|Observações sobre o dispositivo criado pelo administrador de ti|
@@ -129,6 +131,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |ethernetMacAddress|String|MAC Ethernet. Essa propriedade é somente leitura.|
 |physicalMemoryInBytes|Int64|Memória total em bytes. Essa propriedade é somente leitura.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Arquitetura do processador. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
+|specificationVersion|String|Versão de especificação. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -322,7 +325,8 @@ Veja a seguir uma representação JSON do recurso.
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,
-  "processorArchitecture": "String"
+  "processorArchitecture": "String",
+  "specificationVersion": "String"
 }
 ```
 

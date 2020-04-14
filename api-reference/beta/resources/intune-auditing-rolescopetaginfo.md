@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso roleScopeTagInfo
 description: Uma classe que contém as propriedades do objeto de marca de escopo de função.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c932a1353f684771a1979ae970141d674f726142
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7240e06e34d003eceeece5c8b7fbb365ed20bf1f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797406"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441210"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>tipo de recurso roleScopeTagInfo
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

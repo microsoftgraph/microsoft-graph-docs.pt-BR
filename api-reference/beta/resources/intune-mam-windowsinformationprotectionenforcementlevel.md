@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsInformationProtectionEnforcementLevel
 description: Valores possíveis para níveis de imposição de proteção WIP
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e6fb9528a3a4d87f13e1901c18885b7224291389
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cf07d4023b979b213165b6665f6d8dc65d45b66d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780623"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443694"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>tipo de enumeração windowsInformationProtectionEnforcementLevel
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

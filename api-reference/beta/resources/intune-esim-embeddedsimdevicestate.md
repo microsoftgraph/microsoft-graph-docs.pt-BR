@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso embeddedSIMDeviceState
 description: Descreve o estado de implantação do código de ativação do SIM incorporado em relação a um dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d10c6a179e783235e0b6bf79226b8ba1a7e2cb1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b88fe5ada325e77b03bc83f2dcec5bb099c2f7d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783295"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442783"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>tipo de recurso embeddedSIMDeviceState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

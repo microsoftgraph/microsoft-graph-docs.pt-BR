@@ -3,18 +3,18 @@ title: 'synchronizationSchema: filterOperators'
 description: Liste todos os operadores com suporte nos filtros de escopo.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4b248b20725c754a1efdea75e5b84ef6196bdebf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b80c14879cb04f615d4feafaece48166f56b1a7f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452950"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443011"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

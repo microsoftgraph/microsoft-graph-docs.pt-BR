@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração mobileAppDependencyType
 description: Indica o tipo de dependência associado a uma relação entre dois aplicativos móveis.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 64603e4d39713a366b542c6322ac06c193e43c7b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a892b472d47765e9d570ad8096f771eee79e1a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797815"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440382"
 ---
 # <a name="mobileappdependencytype-enum-type"></a>tipo de enumeração mobileAppDependencyType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

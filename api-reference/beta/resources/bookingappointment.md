@@ -2,19 +2,19 @@
 title: tipo de recurso bookingAppointment
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3cd4be5fc83614fe81e0df4453623a7d4bd7d8b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f08b33cd223a140373f6130f19099ce0c941d8b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442189"
 ---
 # <a name="bookingappointment-resource-type"></a>tipo de recurso bookingAppointment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -60,7 +60,7 @@ Representa um compromisso de cliente para um [bookingService](bookingservice.md)
 |serviceLocation|[location](location.md)|O local onde o serviço é entregue.|
 |serviceName|String|O nome do **bookingService** associado a este compromisso.<br>Essa propriedade é opcional ao criar um novo compromisso. Se não for especificado, será calculado a partir do serviço associado ao compromisso pela propriedade **ServiceId** .|
 |Notas|String|Observações de um [bookingStaffMember](bookingstaffmember.md). O valor dessa propriedade está disponível somente ao se ler este **bookingAppointment** por sua ID.|
-|staffMemberIds|String collection|A ID de cada [bookingStaffMember](bookingstaffmember.md) que está agendado neste compromisso.|
+|staffMemberIds|Coleção String|A ID de cada [bookingStaffMember](bookingstaffmember.md) que está agendado neste compromisso.|
 |iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário de início do compromisso.|
 
 ## <a name="relationships"></a>Relações

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsKioskLocalGroup
 description: A classe usada para identificar um grupo local para a configuração do quiosque
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8afbba5f158f7766255bb1252c06b6ed1c9024d6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7385fd0990fc7ac135a3ea9ba318e06571ecdd6d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444091"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso windowsKioskLocalGroup
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

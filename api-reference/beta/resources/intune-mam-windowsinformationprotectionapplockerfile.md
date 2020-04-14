@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsInformationProtectionAppLockerFile
 description: Arquivo do AppLocker da Proteção de Informações do Windows
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: be3ccb5775220ee6bdf491b4c4452649549aec20
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c35f2b722dba0c3b8bd9341b1fe513064f8ed570
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42780938"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443734"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLockerFile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

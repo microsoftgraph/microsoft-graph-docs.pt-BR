@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsUniversalAppXContainedApp
 description: Uma classe que representa um aplicativo contido de um aplicativo do WindowsUniversalAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9fb6cab66b2e8ce52e75f2dcc6f27363d13fff0f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e347eb0f51c8ddc77ead7ae40449c428a08ec56a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797441"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441217"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>tipo de recurso windowsUniversalAppXContainedApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
