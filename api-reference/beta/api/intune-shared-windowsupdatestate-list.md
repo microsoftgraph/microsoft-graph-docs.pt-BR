@@ -1,39 +1,41 @@
 ---
 title: Listar windowsUpdateStates
 description: Listar Propriedades e relações dos objetos windowsUpdateState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dbfb82512a25b7709ffb8196d442f9c7faedd7a8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4d0b57ae69cde613665addb323445c1eb2cd75b6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800421"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471291"
 ---
-# <a name="list-windowsupdatestates"></a><span data-ttu-id="f7c30-103">Listar windowsUpdateStates</span><span class="sxs-lookup"><span data-stu-id="f7c30-103">List windowsUpdateStates</span></span>
+# <a name="list-windowsupdatestates"></a><span data-ttu-id="5f63c-103">Listar windowsUpdateStates</span><span class="sxs-lookup"><span data-stu-id="5f63c-103">List windowsUpdateStates</span></span>
 
-> <span data-ttu-id="f7c30-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="f7c30-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="5f63c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5f63c-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f7c30-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f7c30-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5f63c-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5f63c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="f7c30-106">Listar Propriedades e relações dos objetos [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="f7c30-106">List properties and relationships of the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) objects.</span></span>
+> <span data-ttu-id="5f63c-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5f63c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f7c30-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f7c30-107">Prerequisites</span></span>
-<span data-ttu-id="f7c30-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7c30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5f63c-107">Listar Propriedades e relações dos objetos [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="5f63c-107">List properties and relationships of the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) objects.</span></span>
 
-|<span data-ttu-id="f7c30-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f7c30-110">Permission type</span></span>|<span data-ttu-id="f7c30-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="f7c30-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="5f63c-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5f63c-108">Prerequisites</span></span>
+<span data-ttu-id="5f63c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5f63c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="5f63c-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5f63c-111">Permission type</span></span>|<span data-ttu-id="5f63c-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5f63c-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f7c30-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f7c30-112">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="f7c30-113">&nbsp; &nbsp; **Configuração do dispositivo**</span><span class="sxs-lookup"><span data-stu-id="f7c30-113">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="f7c30-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f7c30-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-| <span data-ttu-id="f7c30-115">&nbsp;&nbsp; **Atualização de software**</span><span class="sxs-lookup"><span data-stu-id="f7c30-115">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="f7c30-116">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f7c30-116">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="f7c30-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f7c30-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f7c30-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f7c30-118">Not supported.</span></span>|
-|<span data-ttu-id="f7c30-119">Application</span><span class="sxs-lookup"><span data-stu-id="f7c30-119">Application</span></span>||
-| <span data-ttu-id="f7c30-120">&nbsp; &nbsp; **Configuração do dispositivo**</span><span class="sxs-lookup"><span data-stu-id="f7c30-120">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="f7c30-121">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f7c30-121">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-| <span data-ttu-id="f7c30-122">&nbsp;&nbsp; **Atualização de software**</span><span class="sxs-lookup"><span data-stu-id="f7c30-122">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="f7c30-123">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f7c30-123">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="5f63c-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5f63c-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="5f63c-114">&nbsp; &nbsp; **Configuração do dispositivo**</span><span class="sxs-lookup"><span data-stu-id="5f63c-114">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="5f63c-115">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5f63c-115">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+| <span data-ttu-id="5f63c-116">&nbsp;&nbsp; **Atualização de software**</span><span class="sxs-lookup"><span data-stu-id="5f63c-116">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="5f63c-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5f63c-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="5f63c-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5f63c-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5f63c-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5f63c-119">Not supported.</span></span>|
+|<span data-ttu-id="5f63c-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5f63c-120">Application</span></span>||
+| <span data-ttu-id="5f63c-121">&nbsp; &nbsp; **Configuração do dispositivo**</span><span class="sxs-lookup"><span data-stu-id="5f63c-121">&nbsp; &nbsp; **Device configuration**</span></span> | <span data-ttu-id="5f63c-122">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5f63c-122">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+| <span data-ttu-id="5f63c-123">&nbsp;&nbsp; **Atualização de software**</span><span class="sxs-lookup"><span data-stu-id="5f63c-123">&nbsp; &nbsp; **Software Update**</span></span> | <span data-ttu-id="5f63c-124">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="5f63c-124">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f7c30-124">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f7c30-124">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5f63c-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5f63c-125">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -42,28 +44,28 @@ ms.locfileid: "42800421"
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f7c30-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f7c30-125">Request headers</span></span>
-|<span data-ttu-id="f7c30-126">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f7c30-126">Header</span></span>|<span data-ttu-id="f7c30-127">Valor</span><span class="sxs-lookup"><span data-stu-id="f7c30-127">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5f63c-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5f63c-126">Request headers</span></span>
+|<span data-ttu-id="5f63c-127">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5f63c-127">Header</span></span>|<span data-ttu-id="5f63c-128">Valor</span><span class="sxs-lookup"><span data-stu-id="5f63c-128">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f7c30-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="f7c30-128">Authorization</span></span>|<span data-ttu-id="f7c30-129">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f7c30-129">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f7c30-130">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f7c30-130">Accept</span></span>|<span data-ttu-id="f7c30-131">application/json</span><span class="sxs-lookup"><span data-stu-id="f7c30-131">application/json</span></span>|
+|<span data-ttu-id="5f63c-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="5f63c-129">Authorization</span></span>|<span data-ttu-id="5f63c-130">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5f63c-130">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5f63c-131">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5f63c-131">Accept</span></span>|<span data-ttu-id="5f63c-132">application/json</span><span class="sxs-lookup"><span data-stu-id="5f63c-132">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f7c30-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f7c30-132">Request body</span></span>
-<span data-ttu-id="f7c30-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f7c30-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5f63c-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5f63c-133">Request body</span></span>
+<span data-ttu-id="5f63c-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5f63c-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f7c30-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7c30-134">Response</span></span>
-<span data-ttu-id="f7c30-135">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f7c30-135">If successful, this method returns a `200 OK` response code and a collection of [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5f63c-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="5f63c-135">Response</span></span>
+<span data-ttu-id="5f63c-136">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5f63c-136">If successful, this method returns a `200 OK` response code and a collection of [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f7c30-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f7c30-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5f63c-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5f63c-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f7c30-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f7c30-137">Request</span></span>
-<span data-ttu-id="f7c30-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f7c30-138">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5f63c-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5f63c-138">Request</span></span>
+<span data-ttu-id="5f63c-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5f63c-139">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates
 ```
 
-### <a name="response"></a><span data-ttu-id="f7c30-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7c30-139">Response</span></span>
-<span data-ttu-id="f7c30-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f7c30-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5f63c-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="5f63c-140">Response</span></span>
+<span data-ttu-id="5f63c-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5f63c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -87,7 +89,6 @@ Content-Length: 630
   ]
 }
 ```
-
 
 
 
