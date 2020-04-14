@@ -1,35 +1,37 @@
 ---
 title: Obter windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: Leia as propriedades e as relações do objeto windowsDefenderApplicationControlSupplementalPolicyAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 524c330c0d66d5535b93fa70e146907f38e0d41b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ad62be778edf45daa8791a5210ccb1f990bb0b58
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799812"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457170"
 ---
-# <a name="get-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a><span data-ttu-id="ca249-103">Obter windowsDefenderApplicationControlSupplementalPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="ca249-103">Get windowsDefenderApplicationControlSupplementalPolicyAssignment</span></span>
+# <a name="get-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a><span data-ttu-id="e2031-103">Obter windowsDefenderApplicationControlSupplementalPolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="e2031-103">Get windowsDefenderApplicationControlSupplementalPolicyAssignment</span></span>
 
-> <span data-ttu-id="ca249-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ca249-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="e2031-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e2031-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ca249-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ca249-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e2031-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e2031-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="ca249-106">Leia as propriedades e as relações do objeto [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="ca249-106">Read properties and relationships of the [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object.</span></span>
+> <span data-ttu-id="e2031-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e2031-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ca249-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ca249-107">Prerequisites</span></span>
-<span data-ttu-id="ca249-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca249-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e2031-107">Leia as propriedades e as relações do objeto [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="e2031-107">Read properties and relationships of the [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object.</span></span>
 
-|<span data-ttu-id="ca249-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ca249-110">Permission type</span></span>|<span data-ttu-id="ca249-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ca249-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="e2031-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e2031-108">Prerequisites</span></span>
+<span data-ttu-id="e2031-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2031-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="e2031-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e2031-111">Permission type</span></span>|<span data-ttu-id="e2031-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e2031-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ca249-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ca249-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ca249-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ca249-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="ca249-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ca249-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ca249-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ca249-115">Not supported.</span></span>|
-|<span data-ttu-id="ca249-116">Application</span><span class="sxs-lookup"><span data-stu-id="ca249-116">Application</span></span>|<span data-ttu-id="ca249-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ca249-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="e2031-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e2031-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e2031-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e2031-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="e2031-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e2031-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e2031-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e2031-116">Not supported.</span></span>|
+|<span data-ttu-id="e2031-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e2031-117">Application</span></span>|<span data-ttu-id="e2031-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e2031-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ca249-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ca249-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e2031-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e2031-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +40,31 @@ ms.locfileid: "42799812"
 GET /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/assignments/{windowsDefenderApplicationControlSupplementalPolicyAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ca249-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ca249-119">Optional query parameters</span></span>
-<span data-ttu-id="ca249-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ca249-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e2031-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e2031-120">Optional query parameters</span></span>
+<span data-ttu-id="e2031-121">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e2031-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ca249-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ca249-121">Request headers</span></span>
-|<span data-ttu-id="ca249-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ca249-122">Header</span></span>|<span data-ttu-id="ca249-123">Valor</span><span class="sxs-lookup"><span data-stu-id="ca249-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e2031-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e2031-122">Request headers</span></span>
+|<span data-ttu-id="e2031-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e2031-123">Header</span></span>|<span data-ttu-id="e2031-124">Valor</span><span class="sxs-lookup"><span data-stu-id="e2031-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ca249-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="ca249-124">Authorization</span></span>|<span data-ttu-id="ca249-125">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ca249-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ca249-126">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ca249-126">Accept</span></span>|<span data-ttu-id="ca249-127">application/json</span><span class="sxs-lookup"><span data-stu-id="ca249-127">application/json</span></span>|
+|<span data-ttu-id="e2031-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="e2031-125">Authorization</span></span>|<span data-ttu-id="e2031-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e2031-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e2031-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e2031-127">Accept</span></span>|<span data-ttu-id="e2031-128">application/json</span><span class="sxs-lookup"><span data-stu-id="e2031-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ca249-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ca249-128">Request body</span></span>
-<span data-ttu-id="ca249-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ca249-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e2031-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e2031-129">Request body</span></span>
+<span data-ttu-id="e2031-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e2031-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ca249-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca249-130">Response</span></span>
-<span data-ttu-id="ca249-131">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ca249-131">If successful, this method returns a `200 OK` response code and [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e2031-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2031-131">Response</span></span>
+<span data-ttu-id="e2031-132">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e2031-132">If successful, this method returns a `200 OK` response code and [windowsDefenderApplicationControlSupplementalPolicyAssignment](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ca249-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ca249-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e2031-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e2031-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ca249-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ca249-133">Request</span></span>
-<span data-ttu-id="ca249-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ca249-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e2031-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e2031-134">Request</span></span>
+<span data-ttu-id="e2031-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e2031-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/assignments/{windowsDefenderApplicationControlSupplementalPolicyAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="ca249-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca249-135">Response</span></span>
-<span data-ttu-id="ca249-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ca249-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e2031-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2031-136">Response</span></span>
+<span data-ttu-id="e2031-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e2031-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -78,7 +80,6 @@ Content-Length: 279
   }
 }
 ```
-
 
 
 

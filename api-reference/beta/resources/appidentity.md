@@ -3,31 +3,31 @@ title: tipo de recurso appIdentity
 description: Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui ID do aplicativo, nome, ID da entidade de serviço e nome. Este recurso é chamado pela API directoryAudit
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 08cb797f56d26b4b421fb25210f7dad2715c70d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: d9d2c6ff3ceadd55404d32e57d1837c4023771f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508300"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450165"
 ---
-# <a name="appidentity-resource-type"></a><span data-ttu-id="3a9d8-105">tipo de recurso appIdentity</span><span class="sxs-lookup"><span data-stu-id="3a9d8-105">appIdentity resource type</span></span>
+# <a name="appidentity-resource-type"></a><span data-ttu-id="ee44a-105">tipo de recurso appIdentity</span><span class="sxs-lookup"><span data-stu-id="ee44a-105">appIdentity resource type</span></span>
 
-<span data-ttu-id="3a9d8-106">Namespace: Microsoft. Graph indica a identidade do aplicativo que executou a ação ou foi alterada.</span><span class="sxs-lookup"><span data-stu-id="3a9d8-106">Namespace: microsoft.graph Indicates the identity of the application that performed the action or was changed.</span></span> <span data-ttu-id="3a9d8-107">Inclui ID do aplicativo, nome, ID da entidade de serviço e nome.</span><span class="sxs-lookup"><span data-stu-id="3a9d8-107">Includes Application Id, Name, Service Principal ID and Name.</span></span> <span data-ttu-id="3a9d8-108">Este recurso é chamado pela API [directoryAudit](../api/directoryaudit-get.md)</span><span class="sxs-lookup"><span data-stu-id="3a9d8-108">This resource is called by the [directoryAudit](../api/directoryaudit-get.md) API</span></span>
+<span data-ttu-id="ee44a-106">Namespace: Microsoft. Graph indica a identidade do aplicativo que executou a ação ou foi alterada.</span><span class="sxs-lookup"><span data-stu-id="ee44a-106">Namespace: microsoft.graph Indicates the identity of the application that performed the action or was changed.</span></span> <span data-ttu-id="ee44a-107">Inclui ID do aplicativo, nome, ID da entidade de serviço e nome.</span><span class="sxs-lookup"><span data-stu-id="ee44a-107">Includes Application Id, Name, Service Principal ID and Name.</span></span> <span data-ttu-id="ee44a-108">Este recurso é chamado pela API [directoryAudit](../api/directoryaudit-get.md)</span><span class="sxs-lookup"><span data-stu-id="ee44a-108">This resource is called by the [directoryAudit](../api/directoryaudit-get.md) API</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="3a9d8-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3a9d8-109">Properties</span></span>
-| <span data-ttu-id="3a9d8-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3a9d8-110">Property</span></span>     | <span data-ttu-id="3a9d8-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="3a9d8-111">Type</span></span>   |<span data-ttu-id="3a9d8-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="3a9d8-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ee44a-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ee44a-109">Properties</span></span>
+| <span data-ttu-id="ee44a-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ee44a-110">Property</span></span>     | <span data-ttu-id="ee44a-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="ee44a-111">Type</span></span>   |<span data-ttu-id="ee44a-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="ee44a-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3a9d8-113">appId</span><span class="sxs-lookup"><span data-stu-id="3a9d8-113">appId</span></span>|<span data-ttu-id="3a9d8-114">String</span><span class="sxs-lookup"><span data-stu-id="3a9d8-114">String</span></span>|<span data-ttu-id="3a9d8-115">Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="3a9d8-115">Refers to the Unique GUID representing Application Id in the Azure Active Directory.</span></span>|
-|<span data-ttu-id="3a9d8-116">displayName</span><span class="sxs-lookup"><span data-stu-id="3a9d8-116">displayName</span></span>|<span data-ttu-id="3a9d8-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3a9d8-117">String</span></span>|<span data-ttu-id="3a9d8-118">Refere-se ao nome do aplicativo exibido no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="3a9d8-118">Refers to the Application Name displayed in the Azure Portal.</span></span>|
-|<span data-ttu-id="3a9d8-119">servicePrincipalName</span><span class="sxs-lookup"><span data-stu-id="3a9d8-119">servicePrincipalId</span></span>|<span data-ttu-id="3a9d8-120">String</span><span class="sxs-lookup"><span data-stu-id="3a9d8-120">String</span></span>|<span data-ttu-id="3a9d8-121">Refere-se ao GUID exclusivo indicando a ID da entidade de serviço no Azure Active Directory para o aplicativo correspondente.</span><span class="sxs-lookup"><span data-stu-id="3a9d8-121">Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.</span></span>|
-|<span data-ttu-id="3a9d8-122">servicePrincipalName</span><span class="sxs-lookup"><span data-stu-id="3a9d8-122">servicePrincipalName</span></span>|<span data-ttu-id="3a9d8-123">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3a9d8-123">String</span></span>|<span data-ttu-id="3a9d8-124">Refere-se ao nome da entidade de segurança do serviço é o nome do aplicativo no locatário.</span><span class="sxs-lookup"><span data-stu-id="3a9d8-124">Refers to the Service Principal Name is the Application name in the tenant.</span></span> |
+|<span data-ttu-id="ee44a-113">appId</span><span class="sxs-lookup"><span data-stu-id="ee44a-113">appId</span></span>|<span data-ttu-id="ee44a-114">String</span><span class="sxs-lookup"><span data-stu-id="ee44a-114">String</span></span>|<span data-ttu-id="ee44a-115">Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="ee44a-115">Refers to the Unique GUID representing Application Id in the Azure Active Directory.</span></span>|
+|<span data-ttu-id="ee44a-116">displayName</span><span class="sxs-lookup"><span data-stu-id="ee44a-116">displayName</span></span>|<span data-ttu-id="ee44a-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ee44a-117">String</span></span>|<span data-ttu-id="ee44a-118">Refere-se ao nome do aplicativo exibido no portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="ee44a-118">Refers to the Application Name displayed in the Azure Portal.</span></span>|
+|<span data-ttu-id="ee44a-119">servicePrincipalName</span><span class="sxs-lookup"><span data-stu-id="ee44a-119">servicePrincipalId</span></span>|<span data-ttu-id="ee44a-120">String</span><span class="sxs-lookup"><span data-stu-id="ee44a-120">String</span></span>|<span data-ttu-id="ee44a-121">Refere-se ao GUID exclusivo indicando a ID da entidade de serviço no Azure Active Directory para o aplicativo correspondente.</span><span class="sxs-lookup"><span data-stu-id="ee44a-121">Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.</span></span>|
+|<span data-ttu-id="ee44a-122">servicePrincipalName</span><span class="sxs-lookup"><span data-stu-id="ee44a-122">servicePrincipalName</span></span>|<span data-ttu-id="ee44a-123">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ee44a-123">String</span></span>|<span data-ttu-id="ee44a-124">Refere-se ao nome da entidade de segurança do serviço é o nome do aplicativo no locatário.</span><span class="sxs-lookup"><span data-stu-id="ee44a-124">Refers to the Service Principal Name is the Application name in the tenant.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="3a9d8-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3a9d8-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ee44a-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ee44a-125">JSON representation</span></span>
 
-<span data-ttu-id="3a9d8-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3a9d8-126">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ee44a-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ee44a-126">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

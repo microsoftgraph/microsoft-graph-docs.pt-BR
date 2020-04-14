@@ -1,38 +1,40 @@
 ---
 title: tipo de recurso deviceManagementEnumConstraint
 description: A restrição que impõe o valor da configuração é de um conjunto de cadeias de caracteres permitido
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab333cc5b55e588ef01257da02f0832edbf02a30
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a118fd250788ba00baf50495f346485572f750aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785460"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448327"
 ---
-# <a name="devicemanagementenumconstraint-resource-type"></a><span data-ttu-id="95720-103">tipo de recurso deviceManagementEnumConstraint</span><span class="sxs-lookup"><span data-stu-id="95720-103">deviceManagementEnumConstraint resource type</span></span>
+# <a name="devicemanagementenumconstraint-resource-type"></a><span data-ttu-id="079b3-103">tipo de recurso deviceManagementEnumConstraint</span><span class="sxs-lookup"><span data-stu-id="079b3-103">deviceManagementEnumConstraint resource type</span></span>
 
-> <span data-ttu-id="95720-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="95720-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="079b3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="079b3-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="95720-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="95720-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="079b3-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="079b3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="95720-106">A restrição que impõe o valor da configuração é de um conjunto de cadeias de caracteres permitido</span><span class="sxs-lookup"><span data-stu-id="95720-106">Constraint that enforces the setting value is from a permitted set of strings</span></span>
+> <span data-ttu-id="079b3-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="079b3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="079b3-107">A restrição que impõe o valor da configuração é de um conjunto de cadeias de caracteres permitido</span><span class="sxs-lookup"><span data-stu-id="079b3-107">Constraint that enforces the setting value is from a permitted set of strings</span></span>
 
 
-<span data-ttu-id="95720-107">Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="95720-107">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
+<span data-ttu-id="079b3-108">Herda de [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="079b3-108">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="95720-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="95720-108">Properties</span></span>
-|<span data-ttu-id="95720-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="95720-109">Property</span></span>|<span data-ttu-id="95720-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="95720-110">Type</span></span>|<span data-ttu-id="95720-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="95720-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="079b3-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="079b3-109">Properties</span></span>
+|<span data-ttu-id="079b3-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="079b3-110">Property</span></span>|<span data-ttu-id="079b3-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="079b3-111">Type</span></span>|<span data-ttu-id="079b3-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="079b3-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="95720-112">values</span><span class="sxs-lookup"><span data-stu-id="95720-112">values</span></span>|<span data-ttu-id="95720-113">coleção [deviceManagementEnumValue](../resources/intune-deviceintent-devicemanagementenumvalue.md)</span><span class="sxs-lookup"><span data-stu-id="95720-113">[deviceManagementEnumValue](../resources/intune-deviceintent-devicemanagementenumvalue.md) collection</span></span>|<span data-ttu-id="95720-114">Lista de valores válidos para esta cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="95720-114">List of valid values for this string</span></span>|
+|<span data-ttu-id="079b3-113">values</span><span class="sxs-lookup"><span data-stu-id="079b3-113">values</span></span>|<span data-ttu-id="079b3-114">coleção [deviceManagementEnumValue](../resources/intune-deviceintent-devicemanagementenumvalue.md)</span><span class="sxs-lookup"><span data-stu-id="079b3-114">[deviceManagementEnumValue](../resources/intune-deviceintent-devicemanagementenumvalue.md) collection</span></span>|<span data-ttu-id="079b3-115">Lista de valores válidos para esta cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="079b3-115">List of valid values for this string</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="95720-115">Relações</span><span class="sxs-lookup"><span data-stu-id="95720-115">Relationships</span></span>
-<span data-ttu-id="95720-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="95720-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="079b3-116">Relações</span><span class="sxs-lookup"><span data-stu-id="079b3-116">Relationships</span></span>
+<span data-ttu-id="079b3-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="079b3-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="95720-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="95720-117">JSON Representation</span></span>
-<span data-ttu-id="95720-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="95720-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="079b3-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="079b3-118">JSON Representation</span></span>
+<span data-ttu-id="079b3-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="079b3-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementEnumConstraint"
