@@ -3,58 +3,60 @@ title: 'synchronizationJob: validateCredentials'
 description: Valide se as credenciais são válidas no locatário.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: de805e5bca52c0f2d16a6b83955a38f0d6a80944
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cc61dd5eb9d5e012f0fce672eac4f330eb460df3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409713"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437509"
 ---
-# <a name="synchronizationjob-validatecredentials"></a><span data-ttu-id="8efd5-103">synchronizationJob: validateCredentials</span><span class="sxs-lookup"><span data-stu-id="8efd5-103">synchronizationJob: validateCredentials</span></span>
+# <a name="synchronizationjob-validatecredentials"></a><span data-ttu-id="4c3e8-103">synchronizationJob: validateCredentials</span><span class="sxs-lookup"><span data-stu-id="4c3e8-103">synchronizationJob: validateCredentials</span></span>
+
+<span data-ttu-id="4c3e8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4c3e8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8efd5-104">Valide se as credenciais são válidas no locatário.</span><span class="sxs-lookup"><span data-stu-id="8efd5-104">Validate that the credentials are valid in the tenant.</span></span>
+<span data-ttu-id="4c3e8-105">Valide se as credenciais são válidas no locatário.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-105">Validate that the credentials are valid in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8efd5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="8efd5-105">Permissions</span></span>
-<span data-ttu-id="8efd5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8efd5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4c3e8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4c3e8-106">Permissions</span></span>
+<span data-ttu-id="4c3e8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4c3e8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8efd5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8efd5-108">Permission type</span></span>                        | <span data-ttu-id="8efd5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8efd5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4c3e8-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4c3e8-109">Permission type</span></span>                        | <span data-ttu-id="4c3e8-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4c3e8-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8efd5-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8efd5-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="8efd5-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8efd5-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="8efd5-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8efd5-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="8efd5-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8efd5-113">Not supported.</span></span> |
-|<span data-ttu-id="8efd5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8efd5-114">Application</span></span>                            |<span data-ttu-id="8efd5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8efd5-115">Not supported.</span></span>| 
+|<span data-ttu-id="4c3e8-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4c3e8-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="4c3e8-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4c3e8-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="4c3e8-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4c3e8-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="4c3e8-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-114">Not supported.</span></span> |
+|<span data-ttu-id="4c3e8-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4c3e8-115">Application</span></span>                            |<span data-ttu-id="4c3e8-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-116">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="8efd5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8efd5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4c3e8-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4c3e8-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8efd5-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8efd5-117">Request headers</span></span>
-| <span data-ttu-id="8efd5-118">Nome</span><span class="sxs-lookup"><span data-stu-id="8efd5-118">Name</span></span>       | <span data-ttu-id="8efd5-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="8efd5-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4c3e8-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4c3e8-118">Request headers</span></span>
+| <span data-ttu-id="4c3e8-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4c3e8-119">Name</span></span>       | <span data-ttu-id="4c3e8-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="4c3e8-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8efd5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8efd5-120">Authorization</span></span>  | <span data-ttu-id="8efd5-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="8efd5-121">Bearer {code}</span></span>|
+| <span data-ttu-id="4c3e8-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4c3e8-121">Authorization</span></span>  | <span data-ttu-id="4c3e8-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="4c3e8-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8efd5-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8efd5-122">Request body</span></span>
-<span data-ttu-id="8efd5-123">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8efd5-123">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4c3e8-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4c3e8-123">Request body</span></span>
+<span data-ttu-id="4c3e8-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="8efd5-124">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="8efd5-124">Parameter</span></span>    | <span data-ttu-id="8efd5-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="8efd5-125">Type</span></span>   |<span data-ttu-id="8efd5-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="8efd5-126">Description</span></span>|
+| <span data-ttu-id="4c3e8-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="4c3e8-125">Parameter</span></span>    | <span data-ttu-id="4c3e8-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="4c3e8-126">Type</span></span>   |<span data-ttu-id="4c3e8-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="4c3e8-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8efd5-127">useSavedCredentials</span><span class="sxs-lookup"><span data-stu-id="8efd5-127">useSavedCredentials</span></span>|<span data-ttu-id="8efd5-128">Booliano</span><span class="sxs-lookup"><span data-stu-id="8efd5-128">Boolean</span></span>|<span data-ttu-id="8efd5-129">Quando `true`, o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas.</span><span class="sxs-lookup"><span data-stu-id="8efd5-129">When `true`, the `credentials` parameter will be ignored and the previously saved credentials (if any) will be validated instead.</span></span> |
-|<span data-ttu-id="8efd5-130">las</span><span class="sxs-lookup"><span data-stu-id="8efd5-130">credentials</span></span>|<span data-ttu-id="8efd5-131">coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="8efd5-131">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) collection</span></span>|<span data-ttu-id="8efd5-132">Credenciais a serem validadas.</span><span class="sxs-lookup"><span data-stu-id="8efd5-132">Credentials to validate.</span></span> <span data-ttu-id="8efd5-133">Ignorado quando o `useSavedCredentials` parâmetro é `true`.</span><span class="sxs-lookup"><span data-stu-id="8efd5-133">Ignored when the `useSavedCredentials` parameter is `true`.</span></span>|
+|<span data-ttu-id="4c3e8-128">useSavedCredentials</span><span class="sxs-lookup"><span data-stu-id="4c3e8-128">useSavedCredentials</span></span>|<span data-ttu-id="4c3e8-129">Boolean</span><span class="sxs-lookup"><span data-stu-id="4c3e8-129">Boolean</span></span>|<span data-ttu-id="4c3e8-130">Quando `true`, o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-130">When `true`, the `credentials` parameter will be ignored and the previously saved credentials (if any) will be validated instead.</span></span> |
+|<span data-ttu-id="4c3e8-131">las</span><span class="sxs-lookup"><span data-stu-id="4c3e8-131">credentials</span></span>|<span data-ttu-id="4c3e8-132">coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="4c3e8-132">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) collection</span></span>|<span data-ttu-id="4c3e8-133">Credenciais a serem validadas.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-133">Credentials to validate.</span></span> <span data-ttu-id="4c3e8-134">Ignorado quando o `useSavedCredentials` parâmetro é `true`.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-134">Ignored when the `useSavedCredentials` parameter is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8efd5-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="8efd5-134">Response</span></span>
-<span data-ttu-id="8efd5-135">Se a validação for bem-sucedida, este método retornará `204, No Content` um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="8efd5-135">If validation is successful, this method returns a `204, No Content` response code.</span></span> <span data-ttu-id="8efd5-136">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8efd5-136">It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4c3e8-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="4c3e8-135">Response</span></span>
+<span data-ttu-id="4c3e8-136">Se a validação for bem-sucedida, este método retornará `204, No Content` um código de resposta.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-136">If validation is successful, this method returns a `204, No Content` response code.</span></span> <span data-ttu-id="4c3e8-137">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-137">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8efd5-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8efd5-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4c3e8-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4c3e8-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="8efd5-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8efd5-138">Request</span></span>
-<span data-ttu-id="8efd5-139">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8efd5-139">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="4c3e8-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4c3e8-139">Request</span></span>
+<span data-ttu-id="4c3e8-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-140">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8efd5-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="8efd5-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4c3e8-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="4c3e8-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_validatecredentials"
@@ -71,23 +73,23 @@ Content-length: 218
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8efd5-141">C#</span><span class="sxs-lookup"><span data-stu-id="8efd5-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4c3e8-142">C#</span><span class="sxs-lookup"><span data-stu-id="4c3e8-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-validatecredentials-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8efd5-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8efd5-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4c3e8-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4c3e8-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-validatecredentials-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8efd5-143">Objetivo-C</span><span class="sxs-lookup"><span data-stu-id="8efd5-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4c3e8-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4c3e8-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-validatecredentials-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="8efd5-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="8efd5-144">Response</span></span>
-<span data-ttu-id="8efd5-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8efd5-145">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="4c3e8-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="4c3e8-145">Response</span></span>
+<span data-ttu-id="4c3e8-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4c3e8-146">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,32 +1,34 @@
 ---
 title: tipo de enumeração localSecurityOptionsInformationDisplayedOnLockScreenType
 description: Valores possíveis para LocalSecurityOptionsInformationDisplayedOnLockScreen
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f018cb88e5cfe14d33e5783f6aab6cefd2a98dbf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 39a432d79d5d2e374d186ba3e3d5f7f1fb954f95
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790353"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439829"
 ---
-# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a><span data-ttu-id="80e19-103">tipo de enumeração localSecurityOptionsInformationDisplayedOnLockScreenType</span><span class="sxs-lookup"><span data-stu-id="80e19-103">localSecurityOptionsInformationDisplayedOnLockScreenType enum type</span></span>
+# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a><span data-ttu-id="8421a-103">tipo de enumeração localSecurityOptionsInformationDisplayedOnLockScreenType</span><span class="sxs-lookup"><span data-stu-id="8421a-103">localSecurityOptionsInformationDisplayedOnLockScreenType enum type</span></span>
 
-> <span data-ttu-id="80e19-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="80e19-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="8421a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8421a-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="80e19-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="80e19-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8421a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="8421a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="80e19-106">Valores possíveis para LocalSecurityOptionsInformationDisplayedOnLockScreen</span><span class="sxs-lookup"><span data-stu-id="80e19-106">Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen</span></span>
+> <span data-ttu-id="8421a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="8421a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="80e19-107">Membros</span><span class="sxs-lookup"><span data-stu-id="80e19-107">Members</span></span>
-|<span data-ttu-id="80e19-108">Membro</span><span class="sxs-lookup"><span data-stu-id="80e19-108">Member</span></span>|<span data-ttu-id="80e19-109">Valor</span><span class="sxs-lookup"><span data-stu-id="80e19-109">Value</span></span>|<span data-ttu-id="80e19-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="80e19-110">Description</span></span>|
+<span data-ttu-id="8421a-107">Valores possíveis para LocalSecurityOptionsInformationDisplayedOnLockScreen</span><span class="sxs-lookup"><span data-stu-id="8421a-107">Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen</span></span>
+
+## <a name="members"></a><span data-ttu-id="8421a-108">Membros</span><span class="sxs-lookup"><span data-stu-id="8421a-108">Members</span></span>
+|<span data-ttu-id="8421a-109">Membro</span><span class="sxs-lookup"><span data-stu-id="8421a-109">Member</span></span>|<span data-ttu-id="8421a-110">Valor</span><span class="sxs-lookup"><span data-stu-id="8421a-110">Value</span></span>|<span data-ttu-id="8421a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="8421a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="80e19-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="80e19-111">notConfigured</span></span>|<span data-ttu-id="80e19-112">,0</span><span class="sxs-lookup"><span data-stu-id="80e19-112">0</span></span>|<span data-ttu-id="80e19-113">Não configurado</span><span class="sxs-lookup"><span data-stu-id="80e19-113">Not Configured</span></span>|
-|<span data-ttu-id="80e19-114">grupos</span><span class="sxs-lookup"><span data-stu-id="80e19-114">administrators</span></span>|<span data-ttu-id="80e19-115">1</span><span class="sxs-lookup"><span data-stu-id="80e19-115">1</span></span>|<span data-ttu-id="80e19-116">Nome de exibição do usuário, nomes de domínio e de usuário</span><span class="sxs-lookup"><span data-stu-id="80e19-116">User display name, domain and user names</span></span>|
-|<span data-ttu-id="80e19-117">administratorsAndPowerUsers</span><span class="sxs-lookup"><span data-stu-id="80e19-117">administratorsAndPowerUsers</span></span>|<span data-ttu-id="80e19-118">duas</span><span class="sxs-lookup"><span data-stu-id="80e19-118">2</span></span>|<span data-ttu-id="80e19-119">Somente nome de exibição do usuário</span><span class="sxs-lookup"><span data-stu-id="80e19-119">User display name only</span></span>|
-|<span data-ttu-id="80e19-120">administratorsAndInteractiveUsers</span><span class="sxs-lookup"><span data-stu-id="80e19-120">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="80e19-121">3D</span><span class="sxs-lookup"><span data-stu-id="80e19-121">3</span></span>|<span data-ttu-id="80e19-122">Não exibir informações do usuário</span><span class="sxs-lookup"><span data-stu-id="80e19-122">Do not display user information</span></span>|
+|<span data-ttu-id="8421a-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="8421a-112">notConfigured</span></span>|<span data-ttu-id="8421a-113">,0</span><span class="sxs-lookup"><span data-stu-id="8421a-113">0</span></span>|<span data-ttu-id="8421a-114">Não configurado</span><span class="sxs-lookup"><span data-stu-id="8421a-114">Not Configured</span></span>|
+|<span data-ttu-id="8421a-115">grupos</span><span class="sxs-lookup"><span data-stu-id="8421a-115">administrators</span></span>|<span data-ttu-id="8421a-116">1</span><span class="sxs-lookup"><span data-stu-id="8421a-116">1</span></span>|<span data-ttu-id="8421a-117">Nome de exibição do usuário, nomes de domínio e de usuário</span><span class="sxs-lookup"><span data-stu-id="8421a-117">User display name, domain and user names</span></span>|
+|<span data-ttu-id="8421a-118">administratorsAndPowerUsers</span><span class="sxs-lookup"><span data-stu-id="8421a-118">administratorsAndPowerUsers</span></span>|<span data-ttu-id="8421a-119">duas</span><span class="sxs-lookup"><span data-stu-id="8421a-119">2</span></span>|<span data-ttu-id="8421a-120">Somente nome de exibição do usuário</span><span class="sxs-lookup"><span data-stu-id="8421a-120">User display name only</span></span>|
+|<span data-ttu-id="8421a-121">administratorsAndInteractiveUsers</span><span class="sxs-lookup"><span data-stu-id="8421a-121">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="8421a-122">3D</span><span class="sxs-lookup"><span data-stu-id="8421a-122">3</span></span>|<span data-ttu-id="8421a-123">Não exibir informações do usuário</span><span class="sxs-lookup"><span data-stu-id="8421a-123">Do not display user information</span></span>|
 
 
 

@@ -1,34 +1,36 @@
 ---
 title: tipo de enumeração androidForWorkVpnConnectionType
 description: Tipo de conexão VPN do Android para work.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5acac7a7966efb703337162bb736f48c55b9f756
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4c9aa93d2f4ea5c5783a2bc194249b8fe3afa6f0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442854"
 ---
-# <a name="androidforworkvpnconnectiontype-enum-type"></a><span data-ttu-id="e4215-103">tipo de enumeração androidForWorkVpnConnectionType</span><span class="sxs-lookup"><span data-stu-id="e4215-103">androidForWorkVpnConnectionType enum type</span></span>
+# <a name="androidforworkvpnconnectiontype-enum-type"></a><span data-ttu-id="d2686-103">tipo de enumeração androidForWorkVpnConnectionType</span><span class="sxs-lookup"><span data-stu-id="d2686-103">androidForWorkVpnConnectionType enum type</span></span>
 
-> <span data-ttu-id="e4215-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e4215-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="d2686-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2686-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e4215-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e4215-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d2686-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d2686-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="e4215-106">Tipo de conexão VPN do Android para work.</span><span class="sxs-lookup"><span data-stu-id="e4215-106">Android For Work VPN connection type.</span></span>
+> <span data-ttu-id="d2686-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d2686-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="e4215-107">Membros</span><span class="sxs-lookup"><span data-stu-id="e4215-107">Members</span></span>
-|<span data-ttu-id="e4215-108">Membro</span><span class="sxs-lookup"><span data-stu-id="e4215-108">Member</span></span>|<span data-ttu-id="e4215-109">Valor</span><span class="sxs-lookup"><span data-stu-id="e4215-109">Value</span></span>|<span data-ttu-id="e4215-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e4215-110">Description</span></span>|
+<span data-ttu-id="d2686-107">Tipo de conexão VPN do Android para work.</span><span class="sxs-lookup"><span data-stu-id="d2686-107">Android For Work VPN connection type.</span></span>
+
+## <a name="members"></a><span data-ttu-id="d2686-108">Membros</span><span class="sxs-lookup"><span data-stu-id="d2686-108">Members</span></span>
+|<span data-ttu-id="d2686-109">Membro</span><span class="sxs-lookup"><span data-stu-id="d2686-109">Member</span></span>|<span data-ttu-id="d2686-110">Valor</span><span class="sxs-lookup"><span data-stu-id="d2686-110">Value</span></span>|<span data-ttu-id="d2686-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="d2686-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e4215-111">ciscoAnyConnect</span><span class="sxs-lookup"><span data-stu-id="e4215-111">ciscoAnyConnect</span></span>|<span data-ttu-id="e4215-112">,0</span><span class="sxs-lookup"><span data-stu-id="e4215-112">0</span></span>|<span data-ttu-id="e4215-113">Cisco AnyConnect.</span><span class="sxs-lookup"><span data-stu-id="e4215-113">Cisco AnyConnect.</span></span>|
-|<span data-ttu-id="e4215-114">pulseSecure</span><span class="sxs-lookup"><span data-stu-id="e4215-114">pulseSecure</span></span>|<span data-ttu-id="e4215-115">1</span><span class="sxs-lookup"><span data-stu-id="e4215-115">1</span></span>|<span data-ttu-id="e4215-116">Pulso seguro.</span><span class="sxs-lookup"><span data-stu-id="e4215-116">Pulse Secure.</span></span>|
-|<span data-ttu-id="e4215-117">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="e4215-117">f5EdgeClient</span></span>|<span data-ttu-id="e4215-118">duas</span><span class="sxs-lookup"><span data-stu-id="e4215-118">2</span></span>|<span data-ttu-id="e4215-119">Cliente de borda F5.</span><span class="sxs-lookup"><span data-stu-id="e4215-119">F5 Edge Client.</span></span>|
-|<span data-ttu-id="e4215-120">dellSonicWallMobileConnect</span><span class="sxs-lookup"><span data-stu-id="e4215-120">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="e4215-121">3D</span><span class="sxs-lookup"><span data-stu-id="e4215-121">3</span></span>|<span data-ttu-id="e4215-122">Conexão móvel Dell SonicWALL.</span><span class="sxs-lookup"><span data-stu-id="e4215-122">Dell SonicWALL Mobile Connection.</span></span>|
-|<span data-ttu-id="e4215-123">checkPointCapsuleVpn</span><span class="sxs-lookup"><span data-stu-id="e4215-123">checkPointCapsuleVpn</span></span>|<span data-ttu-id="e4215-124">4 </span><span class="sxs-lookup"><span data-stu-id="e4215-124">4</span></span>|<span data-ttu-id="e4215-125">Verificar VPN de cápsula de ponto.</span><span class="sxs-lookup"><span data-stu-id="e4215-125">Check Point Capsule VPN.</span></span>|
-|<span data-ttu-id="e4215-126">Citrix</span><span class="sxs-lookup"><span data-stu-id="e4215-126">citrix</span></span>|<span data-ttu-id="e4215-127">5 </span><span class="sxs-lookup"><span data-stu-id="e4215-127">5</span></span>|<span data-ttu-id="e4215-128">Citrix</span><span class="sxs-lookup"><span data-stu-id="e4215-128">Citrix</span></span>|
+|<span data-ttu-id="d2686-112">ciscoAnyConnect</span><span class="sxs-lookup"><span data-stu-id="d2686-112">ciscoAnyConnect</span></span>|<span data-ttu-id="d2686-113">,0</span><span class="sxs-lookup"><span data-stu-id="d2686-113">0</span></span>|<span data-ttu-id="d2686-114">Cisco AnyConnect.</span><span class="sxs-lookup"><span data-stu-id="d2686-114">Cisco AnyConnect.</span></span>|
+|<span data-ttu-id="d2686-115">pulseSecure</span><span class="sxs-lookup"><span data-stu-id="d2686-115">pulseSecure</span></span>|<span data-ttu-id="d2686-116">1</span><span class="sxs-lookup"><span data-stu-id="d2686-116">1</span></span>|<span data-ttu-id="d2686-117">Pulso seguro.</span><span class="sxs-lookup"><span data-stu-id="d2686-117">Pulse Secure.</span></span>|
+|<span data-ttu-id="d2686-118">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="d2686-118">f5EdgeClient</span></span>|<span data-ttu-id="d2686-119">duas</span><span class="sxs-lookup"><span data-stu-id="d2686-119">2</span></span>|<span data-ttu-id="d2686-120">Cliente de borda F5.</span><span class="sxs-lookup"><span data-stu-id="d2686-120">F5 Edge Client.</span></span>|
+|<span data-ttu-id="d2686-121">dellSonicWallMobileConnect</span><span class="sxs-lookup"><span data-stu-id="d2686-121">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="d2686-122">3D</span><span class="sxs-lookup"><span data-stu-id="d2686-122">3</span></span>|<span data-ttu-id="d2686-123">Conexão móvel Dell SonicWALL.</span><span class="sxs-lookup"><span data-stu-id="d2686-123">Dell SonicWALL Mobile Connection.</span></span>|
+|<span data-ttu-id="d2686-124">checkPointCapsuleVpn</span><span class="sxs-lookup"><span data-stu-id="d2686-124">checkPointCapsuleVpn</span></span>|<span data-ttu-id="d2686-125">4 </span><span class="sxs-lookup"><span data-stu-id="d2686-125">4</span></span>|<span data-ttu-id="d2686-126">Verificar VPN de cápsula de ponto.</span><span class="sxs-lookup"><span data-stu-id="d2686-126">Check Point Capsule VPN.</span></span>|
+|<span data-ttu-id="d2686-127">Citrix</span><span class="sxs-lookup"><span data-stu-id="d2686-127">citrix</span></span>|<span data-ttu-id="d2686-128">5 </span><span class="sxs-lookup"><span data-stu-id="d2686-128">5</span></span>|<span data-ttu-id="d2686-129">Citrix</span><span class="sxs-lookup"><span data-stu-id="d2686-129">Citrix</span></span>|
 
 
 

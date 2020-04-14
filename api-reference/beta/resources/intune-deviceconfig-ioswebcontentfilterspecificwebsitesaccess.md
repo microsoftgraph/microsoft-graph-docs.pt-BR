@@ -1,39 +1,41 @@
 ---
 title: tipo de recurso iosWebContentFilterSpecificWebsitesAccess
 description: Representa um tipo de configuração de filtro de conteúdo da Web iOS, que instala os indicadores de URL no navegador integrado do iOS. Um cenário de exemplo está na sala de aula em que os professores gostariam que os alunos navegassem sites por meio de marcadores de navegador configurados em seus dispositivos iOS e sem acesso a outros sites.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: db8e5bea69fb7369d6d7af9429ec163b87b65df2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f6e68fecd5bed0f51f89d15714ac3f2c95516396
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790458"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440037"
 ---
-# <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a><span data-ttu-id="a205a-104">tipo de recurso iosWebContentFilterSpecificWebsitesAccess</span><span class="sxs-lookup"><span data-stu-id="a205a-104">iosWebContentFilterSpecificWebsitesAccess resource type</span></span>
+# <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a><span data-ttu-id="42ec4-104">tipo de recurso iosWebContentFilterSpecificWebsitesAccess</span><span class="sxs-lookup"><span data-stu-id="42ec4-104">iosWebContentFilterSpecificWebsitesAccess resource type</span></span>
 
-> <span data-ttu-id="a205a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="a205a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="42ec4-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42ec4-105">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a205a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a205a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="42ec4-106">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="42ec4-106">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="a205a-107">Representa um tipo de configuração de filtro de conteúdo da Web iOS, que instala os indicadores de URL no navegador integrado do iOS.</span><span class="sxs-lookup"><span data-stu-id="a205a-107">Represents an iOS Web Content Filter setting type, which installs URL bookmarks into iOS built-in browser.</span></span> <span data-ttu-id="a205a-108">Um cenário de exemplo está na sala de aula em que os professores gostariam que os alunos navegassem sites por meio de marcadores de navegador configurados em seus dispositivos iOS e sem acesso a outros sites.</span><span class="sxs-lookup"><span data-stu-id="a205a-108">An example scenario is in the classroom where teachers would like the students to navigate websites through browser bookmarks configured on their iOS devices, and no access to other sites.</span></span>
+> <span data-ttu-id="42ec4-107">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="42ec4-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="42ec4-108">Representa um tipo de configuração de filtro de conteúdo da Web iOS, que instala os indicadores de URL no navegador integrado do iOS.</span><span class="sxs-lookup"><span data-stu-id="42ec4-108">Represents an iOS Web Content Filter setting type, which installs URL bookmarks into iOS built-in browser.</span></span> <span data-ttu-id="42ec4-109">Um cenário de exemplo está na sala de aula em que os professores gostariam que os alunos navegassem sites por meio de marcadores de navegador configurados em seus dispositivos iOS e sem acesso a outros sites.</span><span class="sxs-lookup"><span data-stu-id="42ec4-109">An example scenario is in the classroom where teachers would like the students to navigate websites through browser bookmarks configured on their iOS devices, and no access to other sites.</span></span>
 
 
-<span data-ttu-id="a205a-109">Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span><span class="sxs-lookup"><span data-stu-id="a205a-109">Inherits from [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span></span>
+<span data-ttu-id="42ec4-110">Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span><span class="sxs-lookup"><span data-stu-id="42ec4-110">Inherits from [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a205a-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a205a-110">Properties</span></span>
-|<span data-ttu-id="a205a-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a205a-111">Property</span></span>|<span data-ttu-id="a205a-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="a205a-112">Type</span></span>|<span data-ttu-id="a205a-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="a205a-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="42ec4-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="42ec4-111">Properties</span></span>
+|<span data-ttu-id="42ec4-112">Propriedade</span><span class="sxs-lookup"><span data-stu-id="42ec4-112">Property</span></span>|<span data-ttu-id="42ec4-113">Tipo</span><span class="sxs-lookup"><span data-stu-id="42ec4-113">Type</span></span>|<span data-ttu-id="42ec4-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="42ec4-114">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a205a-114">specificWebsitesOnly</span><span class="sxs-lookup"><span data-stu-id="a205a-114">specificWebsitesOnly</span></span>|<span data-ttu-id="a205a-115">coleção [iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)</span><span class="sxs-lookup"><span data-stu-id="a205a-115">[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md) collection</span></span>|<span data-ttu-id="a205a-116">Os indicadores de URL que serão instalados no navegador interno e o usuário só poderão acessar sites através de indicadores.</span><span class="sxs-lookup"><span data-stu-id="a205a-116">URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks.</span></span> <span data-ttu-id="a205a-117">Esta coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="a205a-117">This collection can contain a maximum of 500 elements.</span></span>|
-|<span data-ttu-id="a205a-118">websitelist</span><span class="sxs-lookup"><span data-stu-id="a205a-118">websiteList</span></span>|<span data-ttu-id="a205a-119">coleção [iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)</span><span class="sxs-lookup"><span data-stu-id="a205a-119">[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md) collection</span></span>|<span data-ttu-id="a205a-120">Os indicadores de URL que serão instalados no navegador interno e o usuário só poderão acessar sites através de indicadores.</span><span class="sxs-lookup"><span data-stu-id="a205a-120">URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks.</span></span> <span data-ttu-id="a205a-121">Esta coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="a205a-121">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="42ec4-115">specificWebsitesOnly</span><span class="sxs-lookup"><span data-stu-id="42ec4-115">specificWebsitesOnly</span></span>|<span data-ttu-id="42ec4-116">coleção [iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)</span><span class="sxs-lookup"><span data-stu-id="42ec4-116">[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md) collection</span></span>|<span data-ttu-id="42ec4-117">Os indicadores de URL que serão instalados no navegador interno e o usuário só poderão acessar sites através de indicadores.</span><span class="sxs-lookup"><span data-stu-id="42ec4-117">URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks.</span></span> <span data-ttu-id="42ec4-118">Esta coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="42ec4-118">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="42ec4-119">websitelist</span><span class="sxs-lookup"><span data-stu-id="42ec4-119">websiteList</span></span>|<span data-ttu-id="42ec4-120">coleção [iosBookmark](../resources/intune-deviceconfig-iosbookmark.md)</span><span class="sxs-lookup"><span data-stu-id="42ec4-120">[iosBookmark](../resources/intune-deviceconfig-iosbookmark.md) collection</span></span>|<span data-ttu-id="42ec4-121">Os indicadores de URL que serão instalados no navegador interno e o usuário só poderão acessar sites através de indicadores.</span><span class="sxs-lookup"><span data-stu-id="42ec4-121">URL bookmarks which will be installed into built-in browser and user is only allowed to access websites through bookmarks.</span></span> <span data-ttu-id="42ec4-122">Esta coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="42ec4-122">This collection can contain a maximum of 500 elements.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a205a-122">Relações</span><span class="sxs-lookup"><span data-stu-id="a205a-122">Relationships</span></span>
-<span data-ttu-id="a205a-123">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a205a-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="42ec4-123">Relações</span><span class="sxs-lookup"><span data-stu-id="42ec4-123">Relationships</span></span>
+<span data-ttu-id="42ec4-124">Nenhum</span><span class="sxs-lookup"><span data-stu-id="42ec4-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a205a-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a205a-124">JSON Representation</span></span>
-<span data-ttu-id="a205a-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a205a-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="42ec4-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="42ec4-125">JSON Representation</span></span>
+<span data-ttu-id="42ec4-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="42ec4-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosWebContentFilterSpecificWebsitesAccess"

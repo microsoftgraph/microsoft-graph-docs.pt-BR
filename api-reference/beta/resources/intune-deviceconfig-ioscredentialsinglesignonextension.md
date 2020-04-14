@@ -1,42 +1,44 @@
 ---
 title: tipo de recurso iosCredentialSingleSignOnExtension
 description: Representa um perfil de extensão de logon único de tipo de credencial para dispositivos iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf6f3202abb5fce499a842a03aae189fc1572141
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a8956fb879bf51bf33f3b682826279fd702f127
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791657"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444136"
 ---
-# <a name="ioscredentialsinglesignonextension-resource-type"></a><span data-ttu-id="b86f6-103">tipo de recurso iosCredentialSingleSignOnExtension</span><span class="sxs-lookup"><span data-stu-id="b86f6-103">iosCredentialSingleSignOnExtension resource type</span></span>
+# <a name="ioscredentialsinglesignonextension-resource-type"></a><span data-ttu-id="11879-103">tipo de recurso iosCredentialSingleSignOnExtension</span><span class="sxs-lookup"><span data-stu-id="11879-103">iosCredentialSingleSignOnExtension resource type</span></span>
 
-> <span data-ttu-id="b86f6-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b86f6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="11879-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="11879-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="b86f6-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b86f6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="11879-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="11879-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="b86f6-106">Representa um perfil de extensão de logon único de tipo de credencial para dispositivos iOS.</span><span class="sxs-lookup"><span data-stu-id="b86f6-106">Represents a Credential-type Single Sign-On extension profile for iOS devices.</span></span>
+> <span data-ttu-id="11879-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="11879-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="11879-107">Representa um perfil de extensão de logon único de tipo de credencial para dispositivos iOS.</span><span class="sxs-lookup"><span data-stu-id="11879-107">Represents a Credential-type Single Sign-On extension profile for iOS devices.</span></span>
 
 
-<span data-ttu-id="b86f6-107">Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)</span><span class="sxs-lookup"><span data-stu-id="b86f6-107">Inherits from [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)</span></span>
+<span data-ttu-id="11879-108">Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)</span><span class="sxs-lookup"><span data-stu-id="11879-108">Inherits from [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b86f6-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b86f6-108">Properties</span></span>
-|<span data-ttu-id="b86f6-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b86f6-109">Property</span></span>|<span data-ttu-id="b86f6-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="b86f6-110">Type</span></span>|<span data-ttu-id="b86f6-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="b86f6-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="11879-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="11879-109">Properties</span></span>
+|<span data-ttu-id="11879-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="11879-110">Property</span></span>|<span data-ttu-id="11879-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="11879-111">Type</span></span>|<span data-ttu-id="11879-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="11879-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b86f6-112">extensionIdentifier</span><span class="sxs-lookup"><span data-stu-id="b86f6-112">extensionIdentifier</span></span>|<span data-ttu-id="b86f6-113">String</span><span class="sxs-lookup"><span data-stu-id="b86f6-113">String</span></span>|<span data-ttu-id="b86f6-114">Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.</span><span class="sxs-lookup"><span data-stu-id="b86f6-114">Gets or sets the bundle ID of the app extension that performs SSO for the specified URLs.</span></span>|
-|<span data-ttu-id="b86f6-115">teamIdentifier</span><span class="sxs-lookup"><span data-stu-id="b86f6-115">teamIdentifier</span></span>|<span data-ttu-id="b86f6-116">String</span><span class="sxs-lookup"><span data-stu-id="b86f6-116">String</span></span>|<span data-ttu-id="b86f6-117">Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.</span><span class="sxs-lookup"><span data-stu-id="b86f6-117">Gets or sets the team ID of the app extension that performs SSO for the specified URLs.</span></span>|
-|<span data-ttu-id="b86f6-118">domínio</span><span class="sxs-lookup"><span data-stu-id="b86f6-118">domains</span></span>|<span data-ttu-id="b86f6-119">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="b86f6-119">String collection</span></span>|<span data-ttu-id="b86f6-120">Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.</span><span class="sxs-lookup"><span data-stu-id="b86f6-120">Gets or sets a list of hosts or domain names for which the app extension performs SSO.</span></span>|
-|<span data-ttu-id="b86f6-121">esfera</span><span class="sxs-lookup"><span data-stu-id="b86f6-121">realm</span></span>|<span data-ttu-id="b86f6-122">String</span><span class="sxs-lookup"><span data-stu-id="b86f6-122">String</span></span>|<span data-ttu-id="b86f6-123">Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.</span><span class="sxs-lookup"><span data-stu-id="b86f6-123">Gets or sets the case-sensitive realm name for this profile.</span></span>|
-|<span data-ttu-id="b86f6-124">as</span><span class="sxs-lookup"><span data-stu-id="b86f6-124">configurations</span></span>|<span data-ttu-id="b86f6-125">coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="b86f6-125">[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) collection</span></span>|<span data-ttu-id="b86f6-126">Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial.</span><span class="sxs-lookup"><span data-stu-id="b86f6-126">Gets or sets a list of typed key-value pairs used to configure Credential-type profiles.</span></span> <span data-ttu-id="b86f6-127">Esta coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="b86f6-127">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="11879-113">extensionIdentifier</span><span class="sxs-lookup"><span data-stu-id="11879-113">extensionIdentifier</span></span>|<span data-ttu-id="11879-114">String</span><span class="sxs-lookup"><span data-stu-id="11879-114">String</span></span>|<span data-ttu-id="11879-115">Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.</span><span class="sxs-lookup"><span data-stu-id="11879-115">Gets or sets the bundle ID of the app extension that performs SSO for the specified URLs.</span></span>|
+|<span data-ttu-id="11879-116">teamIdentifier</span><span class="sxs-lookup"><span data-stu-id="11879-116">teamIdentifier</span></span>|<span data-ttu-id="11879-117">String</span><span class="sxs-lookup"><span data-stu-id="11879-117">String</span></span>|<span data-ttu-id="11879-118">Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.</span><span class="sxs-lookup"><span data-stu-id="11879-118">Gets or sets the team ID of the app extension that performs SSO for the specified URLs.</span></span>|
+|<span data-ttu-id="11879-119">domínio</span><span class="sxs-lookup"><span data-stu-id="11879-119">domains</span></span>|<span data-ttu-id="11879-120">Coleção String</span><span class="sxs-lookup"><span data-stu-id="11879-120">String collection</span></span>|<span data-ttu-id="11879-121">Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.</span><span class="sxs-lookup"><span data-stu-id="11879-121">Gets or sets a list of hosts or domain names for which the app extension performs SSO.</span></span>|
+|<span data-ttu-id="11879-122">esfera</span><span class="sxs-lookup"><span data-stu-id="11879-122">realm</span></span>|<span data-ttu-id="11879-123">String</span><span class="sxs-lookup"><span data-stu-id="11879-123">String</span></span>|<span data-ttu-id="11879-124">Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.</span><span class="sxs-lookup"><span data-stu-id="11879-124">Gets or sets the case-sensitive realm name for this profile.</span></span>|
+|<span data-ttu-id="11879-125">as</span><span class="sxs-lookup"><span data-stu-id="11879-125">configurations</span></span>|<span data-ttu-id="11879-126">coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="11879-126">[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) collection</span></span>|<span data-ttu-id="11879-127">Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial.</span><span class="sxs-lookup"><span data-stu-id="11879-127">Gets or sets a list of typed key-value pairs used to configure Credential-type profiles.</span></span> <span data-ttu-id="11879-128">Esta coleção pode conter um máximo de 500 elementos.</span><span class="sxs-lookup"><span data-stu-id="11879-128">This collection can contain a maximum of 500 elements.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b86f6-128">Relações</span><span class="sxs-lookup"><span data-stu-id="b86f6-128">Relationships</span></span>
-<span data-ttu-id="b86f6-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b86f6-129">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="11879-129">Relações</span><span class="sxs-lookup"><span data-stu-id="11879-129">Relationships</span></span>
+<span data-ttu-id="11879-130">Nenhum</span><span class="sxs-lookup"><span data-stu-id="11879-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b86f6-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b86f6-130">JSON Representation</span></span>
-<span data-ttu-id="b86f6-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b86f6-131">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="11879-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="11879-131">JSON Representation</span></span>
+<span data-ttu-id="11879-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="11879-132">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosCredentialSingleSignOnExtension"
