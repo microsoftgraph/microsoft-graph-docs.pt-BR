@@ -1,34 +1,36 @@
 ---
 title: tipo de recurso runSchedule
 description: Executar o agendamento de um script de gerenciamento de dispositivo recorrente.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0450c63472439d42dc317045659c7ae07a3aea3a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a1cff2186cfd0d256da7e04cf5ccecc38862eff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783862"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383054"
 ---
-# <a name="runschedule-resource-type"></a><span data-ttu-id="07f3a-103">tipo de recurso runSchedule</span><span class="sxs-lookup"><span data-stu-id="07f3a-103">runSchedule resource type</span></span>
+# <a name="runschedule-resource-type"></a><span data-ttu-id="70da4-103">tipo de recurso runSchedule</span><span class="sxs-lookup"><span data-stu-id="70da4-103">runSchedule resource type</span></span>
 
-> <span data-ttu-id="07f3a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="07f3a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="70da4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="70da4-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="07f3a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="07f3a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="70da4-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="70da4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="07f3a-106">Executar o agendamento de um script de gerenciamento de dispositivo recorrente.</span><span class="sxs-lookup"><span data-stu-id="07f3a-106">Run schedule of a recurring device management script.</span></span>
+> <span data-ttu-id="70da4-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="70da4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="07f3a-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="07f3a-107">Properties</span></span>
-|<span data-ttu-id="07f3a-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="07f3a-108">Property</span></span>|<span data-ttu-id="07f3a-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="07f3a-109">Type</span></span>|<span data-ttu-id="07f3a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="07f3a-110">Description</span></span>|
+<span data-ttu-id="70da4-107">Executar o agendamento de um script de gerenciamento de dispositivo recorrente.</span><span class="sxs-lookup"><span data-stu-id="70da4-107">Run schedule of a recurring device management script.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="70da4-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="70da4-108">Properties</span></span>
+|<span data-ttu-id="70da4-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="70da4-109">Property</span></span>|<span data-ttu-id="70da4-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="70da4-110">Type</span></span>|<span data-ttu-id="70da4-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="70da4-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="07f3a-111">Relações</span><span class="sxs-lookup"><span data-stu-id="07f3a-111">Relationships</span></span>
-<span data-ttu-id="07f3a-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="07f3a-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="70da4-112">Relações</span><span class="sxs-lookup"><span data-stu-id="70da4-112">Relationships</span></span>
+<span data-ttu-id="70da4-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="70da4-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="07f3a-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="07f3a-113">JSON Representation</span></span>
-<span data-ttu-id="07f3a-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="07f3a-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="70da4-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="70da4-114">JSON Representation</span></span>
+<span data-ttu-id="70da4-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="70da4-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.runSchedule"
