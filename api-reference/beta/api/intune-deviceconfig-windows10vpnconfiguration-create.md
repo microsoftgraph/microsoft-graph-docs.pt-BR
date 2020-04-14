@@ -1,18 +1,20 @@
 ---
 title: Criar windows10VpnConfiguration
 description: Criar um novo objeto windows10VpnConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 675ed74b9e486b8f93bbc3107a332b0f1c3932fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 805333ca59440bcf0abfe097c9ab9faf4360160b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42737895"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43337927"
 ---
 # <a name="create-windows10vpnconfiguration"></a>Criar windows10VpnConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -72,7 +74,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |enableAlwaysOn|Boolean|Habilitar o modo Always on.|
 |enableDeviceTunnel|Boolean|Habilitar o túnel de dispositivo.|
 |enableDnsRegistration|Boolean|Habilitar o registro de endereço IP com DNS interno.|
-|dnsSuffixes|Coleção de cadeias de caracteres|Especifique sufixos DNS para adicionar à lista de pesquisa de DNS para rotear corretamente nomes curtos.|
+|dnsSuffixes|Coleção String|Especifique sufixos DNS para adicionar à lista de pesquisa de DNS para rotear corretamente nomes curtos.|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Método de autenticação. Os valores possíveis são: `certificate`, `usernameAndPassword`, `customEapXml`.|
 |rememberUserCredentials|Boolean|Lembrar as credenciais do usuário.|
 |enableConditionalAccess|Boolean|Habilitar o acesso condicional.|
@@ -87,7 +89,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |trafficRules|coleção [vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md)|Regras de tráfego. Essa coleção pode conter um máximo de 1.000 elementos.|
 |roteie|coleção [vpnRoute](../resources/intune-deviceconfig-vpnroute.md)|Rotas (opcionais para provedores de terceiros). Essa coleção pode conter um máximo de 1.000 elementos.|
 |dnsRules|coleção [vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md)|Regras de DNS. Essa coleção pode conter um máximo de 1.000 elementos.|
-|trustedNetworkDomains|Coleção de cadeias de caracteres|Domínios de rede confiáveis|
+|trustedNetworkDomains|Coleção String|Domínios de rede confiáveis|
 
 
 
@@ -392,7 +394,6 @@ Content-Length: 4332
   ]
 }
 ```
-
 
 
 
