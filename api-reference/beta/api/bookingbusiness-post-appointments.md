@@ -2,19 +2,19 @@
 title: Criar bookingAppointment
 description: Crie um novo bookingAppointment para o bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54e326c238a4e57564b019548be490c5f44a9053
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc5eb648f581e7bb0dc88a413be44297df790c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441218"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366594"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: tipo de recurso bookingStaffMember
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 321529c510346ea896cffcb2e363df72bf578197
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 055627af88a51c73d81d23c8ccd1a6e1f4af5d45
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507891"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43360539"
 ---
 # <a name="bookingstaffmember-resource-type"></a>tipo de recurso bookingStaffMember
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

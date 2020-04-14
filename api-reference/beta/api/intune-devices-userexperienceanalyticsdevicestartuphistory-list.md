@@ -1,18 +1,20 @@
 ---
 title: Listar userExperienceAnalyticsDeviceStartupHistories
 description: Listar Propriedades e relações dos objetos userExperienceAnalyticsDeviceStartupHistory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c552c3fa209a06021af2923e4110d3a456d2ac2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 78e6f455625b3e21a5d09c2a70848c972dcd9a71
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813927"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379496"
 ---
 # <a name="list-userexperienceanalyticsdevicestartuphistories"></a>Listar userExperienceAnalyticsDeviceStartupHistories
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -87,7 +89,6 @@ Content-Length: 675
   ]
 }
 ```
-
 
 
 

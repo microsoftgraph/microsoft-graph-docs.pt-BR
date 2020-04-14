@@ -1,18 +1,20 @@
 ---
 title: Get deviceAppManagement
 description: Ler propriedades e relações do objeto deviceAppManagement.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bb20886dc19e3a1faca1ca7bd7bb640ec43f6cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8973a5f839f547da652859ddec22ee9c52e6f82d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801268"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43391170"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -30,7 +32,7 @@ Uma das seguintes permissões é necessária para chamar esta API. Para saber ma
 | &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding**integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| |
+|Aplicativo| |
 | &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding**integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
@@ -88,7 +90,6 @@ Content-Length: 133
   }
 }
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: Atualizar bookingservice
 description: Atualiza as propriedades de um objeto bookingService no bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a218ee14aaa0a27118e9d4dfd05b074937a50118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c64dc057963bdaed34ecab70792fdd5df526406
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441078"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376353"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,7 +65,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|String collection|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|Coleção String|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.

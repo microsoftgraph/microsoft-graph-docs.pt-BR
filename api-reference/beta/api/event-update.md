@@ -1,20 +1,20 @@
 ---
 title: Atualizar evento
 description: Atualizar as propriedades do objeto evento.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bcfd38ed0d574c249ef7f66013147f8f262f7c97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae4e03f7057cec80bdba362df806ad7b0532af5c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422646"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364551"
 ---
 # <a name="update-event"></a>Atualizar evento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,7 +66,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | categories|String|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina. |
 | importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-| isAllDay|Boolean|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
+| isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 | isReminderOn|Boolean|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 | location|Local|O local do evento.|
@@ -75,10 +75,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | recurrence|PatternedRecurrence|O padrão de recorrência do evento.|
 | reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
 | responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
-| sensitivity|Cadeia de caracteres| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+| sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|O status a ser exibido. Os valores possíveis são `free` : `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`,.|
 | iniciar|DateTimeTimeZone|A data, a hora e o fuso horário do evento. |
-| assunto|Cadeia de caracteres|O texto da linha de assunto do evento.|
+| assunto|String|O texto da linha de assunto do evento.|
 
 Como o recurso **evento** dá suporte as [extensões](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância do **evento** existente.
 

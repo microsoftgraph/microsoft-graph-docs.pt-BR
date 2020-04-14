@@ -2,19 +2,19 @@
 title: tipo de recurso userCredentialUsageDetails
 description: Representa o uso de redefinição de senha de autoatendimento para um determinado locatário.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: cd71091293041d84f0f2c1d5436999fa5793037b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ff48554c7bab011171136181c7a1ab0ce8b01db
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519530"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384974"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>tipo de recurso userCredentialUsageDetails
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

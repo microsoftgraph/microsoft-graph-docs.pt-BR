@@ -1,20 +1,20 @@
 ---
 title: 'event: tentativelyAccept'
 description: Aceitar provisoriamente o evento específico em um calendário de usuário.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b3e9f5510499e1ab6d015cd58e1e97a8eabac995
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca017eaef42d1a686f5f3ddbc28b297c943c3c2e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422681"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364809"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,7 +62,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer **** a definição `true`de sendResponse como. Opcional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|Uma data/hora alternativa propostas por um convidado para uma solicitação de reunião para iniciar e finalizar. Válido somente para eventos que permitem novas propostas de horários. A definição desse parâmetro requer **sendResponse** a definição `true`de sendResponse como. Opcional.|
 
 ## <a name="response"></a>Resposta
 

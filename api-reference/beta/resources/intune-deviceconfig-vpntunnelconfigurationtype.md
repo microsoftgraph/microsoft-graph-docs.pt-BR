@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração vpnTunnelConfigurationType
 description: O tipo de túneis que estarão presentes no cliente VPN para configuração
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c54f54e07b6a6e94bdad35511f2aa9d50a37a49e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d60d8fdd812fe18a5010683ddc0d1ef6cd8fbf06
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787275"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358927"
 ---
 # <a name="vpntunnelconfigurationtype-enum-type"></a>tipo de enumeração vpnTunnelConfigurationType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

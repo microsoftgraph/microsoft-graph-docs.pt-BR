@@ -2,15 +2,15 @@
 title: Listar directorySettingTemplates
 description: Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
 localization_priority: Normal
-author: dkershaw10
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 09afd3ff60f9f9d12a94ad52c8a7e6dcf34935cf
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3d4abe74ed67910e82bcdf936de3a7b54b463ac9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180155"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375541"
 ---
 # <a name="list-directorysettingtemplates"></a>Listar directorySettingTemplates
 

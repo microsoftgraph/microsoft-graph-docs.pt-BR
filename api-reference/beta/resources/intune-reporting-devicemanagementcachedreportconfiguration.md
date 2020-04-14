@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementCachedReportConfiguration
 description: Entidade que representa a configuração de um relatório em cache
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 34db21fc0e010a118077e90ad543e40b06da6884
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dccca364bf446d81a01b0dbbdd17657ff077157a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772668"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356615"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>tipo de recurso deviceManagementCachedReportConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -35,8 +37,8 @@ Entidade que representa a configuração de um relatório em cache
 |id|String|Identificador exclusivo para esta entidade|
 |reportName|String|Nome do relatório|
 |filter|String|Filtros aplicados na criação de relatórios.|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
+|select|Coleção String|Colunas selecionadas do relatório|
+|Classificadoporativado|Coleção String|Ordenação de colunas no relatório|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|
 |expirationDateTime|DateTimeOffset|Hora em que o relatório em cache expira|

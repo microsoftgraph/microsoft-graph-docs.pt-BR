@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso roleScopeTag
 description: Marca de escopo de função
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d76ca4d2493b3d644c5b73c6b0645109573d3293
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b30b3944976b2d8d0ac13aeb658402849c0b2d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773186"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356814"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

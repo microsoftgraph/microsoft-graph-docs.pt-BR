@@ -2,17 +2,19 @@
 title: Obter Conjuntoofficeclientconfiguration
 description: Obtenha uma política específica.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a7e85b29a5f60b8a12bd5c26635d71aa4c397fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 235e2b498b788d15268de197364442d8f7bb75e1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760302"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392166"
 ---
 # <a name="get-officeclientconfiguration"></a>Obter Conjuntoofficeclientconfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -39,7 +41,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
@@ -100,7 +102,6 @@ Content-Length: 1137
   }
 }
 ```
-
 
 
 

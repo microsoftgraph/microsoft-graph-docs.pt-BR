@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementScriptGroupAssignment
 description: Contém propriedades usadas para atribuir um script de gerenciamento de dispositivo a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c52a6cf614337f94ac28cbf75457a8d4eb19597a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00b3650cefa15f0a8e7fb070b5786ff0e5104156
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784899"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43374996"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>tipo de recurso deviceManagementScriptGroupAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

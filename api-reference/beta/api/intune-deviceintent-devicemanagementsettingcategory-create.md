@@ -1,18 +1,20 @@
 ---
 title: Criar deviceManagementSettingCategory
 description: Criar um novo objeto deviceManagementSettingCategory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 331437082df79e302c3ab9a2b3603fbf5e8963ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 52fe09f9c5ebd74c6d665f990836d1e0006a3c7b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815132"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381614"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>Criar deviceManagementSettingCategory
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

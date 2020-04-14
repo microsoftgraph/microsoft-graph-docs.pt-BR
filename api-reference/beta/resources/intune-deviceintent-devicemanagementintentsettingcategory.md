@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementIntentSettingCategory
 description: Entidade que representa uma categoria de configuração de intenção
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c3fc3df6963c5f3e7952c4952d1b9fcea8e1656
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5241512e43c8a02af9445ece2310db83358e996b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785404"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388506"
 ---
 # <a name="devicemanagementintentsettingcategory-resource-type"></a>tipo de recurso deviceManagementIntentSettingCategory
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

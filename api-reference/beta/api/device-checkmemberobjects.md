@@ -2,19 +2,19 @@
 title: 'dispositivo: checkMemberObjects'
 description: Verifique se há associação em uma lista de grupos, funções de diretório ou unidades administrativas para o objeto de dispositivo especificado.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5211ae45f2e6643023352b84508755f920c76dd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaed357620258430f2c84d35842612326368ca10
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436009"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387059"
 ---
 # <a name="device-checkmemberobjects"></a>dispositivo: checkMemberObjects
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

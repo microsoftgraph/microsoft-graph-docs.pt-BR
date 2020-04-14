@@ -2,19 +2,19 @@
 title: Excluir bookingAppointment
 description: Excluir um bookingAppointment no bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b0a1179311139e75bf60699d1ef77d3fbaf7b55c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 531b2008cb5be2b94e22f3d7a7d4f947f4d9db8d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441295"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367625"
 ---
 # <a name="delete-bookingappointment"></a>Excluir bookingAppointment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,20 +1,20 @@
 ---
 title: Atualizar dispositivo
 description: Atualizar as propriedades de um dispositivo.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e44e28ea9d496e039d2820098ec8f1ce8caae643
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 395466abbb647f18e3891516353461ffba86d9d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435553"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381677"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceAndAppManagementAssignmentFilterType
 description: Representa o tipo do filtro de atribuição.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 29b79504dd327d70bec6d973cd08a3f265fb1ab1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4e1febcc506de1248f519be5cd1c2d40fca9dc15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783323"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358099"
 ---
 # <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>tipo de enumeração deviceAndAppManagementAssignmentFilterType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Representa o tipo do filtro de atribuição.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Valor padrão. Não usar.|
+|nenhuma|,0|Valor padrão. Não usar.|
 |ser|1|Indica em-Filter, a correspondência de regra oferecerá a carga aos dispositivos.|
 |impedir|duas|Indica ausência temporária, a correspondência de regra não oferecerá a carga aos dispositivos.|
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração mobileThreatPartnerTenantState
 description: Estado do parceiro desse locatário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c13a7e3d12299b86c3112e10e09d7b4eb746ba61
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 40034b8f3db9622e106fb6cb58470e383c12f962
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778166"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371517"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enumeração mobileThreatPartnerTenantState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,7 +27,7 @@ Estado do parceiro desse locatário.
 |:---|:---|:---|
 |indisponível|,0|O parceiro não está disponível.|
 |disponível|1|O parceiro está disponível.|
-|enabled|duas|O parceiro está habilitado.|
+|habilitadas|duas|O parceiro está habilitado.|
 |Não responde|3D|O parceiro não responde.|
 
 

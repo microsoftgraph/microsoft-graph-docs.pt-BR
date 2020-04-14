@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso managedAppStatus
 description: Representa o status de proteção e configuração do aplicativo para a organização.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 994d9ca0f3327998346a07e765f4a5b37f53ae90
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 523d564f00189952ac3046c5f02bf782bc0f8e2f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781450"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371787"
 ---
 # <a name="managedappstatus-resource-type"></a>Tipo de recurso managedAppStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

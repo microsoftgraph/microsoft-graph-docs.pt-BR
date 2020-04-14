@@ -1,18 +1,20 @@
 ---
 title: Atualizar windowsManagementApp
 description: Atualiza as propriedades de um objeto windowsManagementApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3364080e38e36fa344d71d6a0b9d8fa0d48ffea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6d28de562a46828764d29ca0c0c453bf229d43d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813625"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43378373"
 ---
 # <a name="update-windowsmanagementapp"></a>Atualizar windowsManagementApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -87,7 +89,6 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
-
 
 
 

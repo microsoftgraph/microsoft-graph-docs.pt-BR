@@ -1,20 +1,20 @@
 ---
 title: 'evento: forward'
 description: 'Esta ação permite que o organizador ou participante de um evento de reunião encaminhe o '
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 139d88c083269d92077da57eca1a730dfe314081
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d333aab5240b7ff6ae391800e448fe9a36837a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422976"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365643"
 ---
 # <a name="event-forward"></a>evento: forward
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: Atualizar bookingappointment
 description: Atualiza as propriedades de um objeto bookingAppointment no bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e2af9b0a547ecea9895802d3f4ab4666a243ed9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58b6ce47cedca752cbbe151805a0ba1fd9c78cdf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441281"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367535"
 ---
 # <a name="update-bookingappointment"></a>Atualizar bookingappointment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,7 +67,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |serviceLocation|[location](../resources/location.md)|O local onde o serviço é entregue.|
 |serviceName|String|O nome do **bookingService** associado a este compromisso.<br>Essa propriedade é opcional ao criar um novo compromisso. Se não for especificado, será calculado a partir do serviço associado ao compromisso pela propriedade **ServiceId** .|
 |Notas|String|Observações de um [bookingStaffMember](../resources/bookingstaffmember.md). O valor dessa propriedade está disponível somente ao se ler este **bookingAppointment** por sua ID.|
-|staffMemberIds|String collection|A ID de cada [bookingStaffMember](../resources/bookingstaffmember.md) que está agendado neste compromisso.|
+|staffMemberIds|Coleção String|A ID de cada [bookingStaffMember](../resources/bookingstaffmember.md) que está agendado neste compromisso.|
 |iniciar|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário de início do compromisso.|
 
 

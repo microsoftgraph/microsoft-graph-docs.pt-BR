@@ -2,19 +2,19 @@
 title: tipo de recurso provisionedIdentity
 description: Descreve a identidade associada ao evento de resumo do objeto de provisionamento.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 86363bdf77f83e6903c86362c2797c51d1215073
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fde45d8e9baf28fddfe9935d71689d24059dfa3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521352"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371392"
 ---
 # <a name="provisionedidentity-resource-type"></a>tipo de recurso provisionedIdentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

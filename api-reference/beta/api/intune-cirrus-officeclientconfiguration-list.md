@@ -2,17 +2,19 @@
 title: Listar officeClientConfigurations
 description: Obtenha todas as políticas.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 12f9734357a2198b30c2fa6142894aadf8e8d308
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a795cddff58d9070eba7b883e1b78c3cd62d7d64
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760295"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43392143"
 ---
 # <a name="list-officeclientconfigurations"></a>Listar officeClientConfigurations
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -100,7 +102,6 @@ Content-Length: 1207
   ]
 }
 ```
-
 
 
 

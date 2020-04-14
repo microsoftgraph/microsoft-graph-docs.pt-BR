@@ -2,19 +2,19 @@
 title: Obter eventMessage
 description: Expanda ' parâmetro no **evento**
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ecf480c0aa4158f1b5b91eaf8275976e1d2e43c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d81c4516cb6cc8f3e114a6f8f4b54fbce7714cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422590"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364441"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

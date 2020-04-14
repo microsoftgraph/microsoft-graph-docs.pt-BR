@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso edgeHomeButtonConfiguration
 description: A classe base de configuração do botão de página inicial usada para identificar as opções disponíveis
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46e225cb83bd7ade2ae4b6907fefdc7e8f3074d2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 718d7180f4d474b0a08c87a98b5d22d6a9792b3a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386396"
 ---
 # <a name="edgehomebuttonconfiguration-resource-type"></a>tipo de recurso edgeHomeButtonConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

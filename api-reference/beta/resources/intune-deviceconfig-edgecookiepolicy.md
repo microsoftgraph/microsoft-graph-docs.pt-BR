@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração edgeCookiePolicy
 description: Valores possíveis para especificar quais cookies são permitidos no Microsoft Edge.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e78ac8b9d3c181a35df808805c7042477aa75c2c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0066e7a64cd63425352787b5bcc33bfc32fe8342
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386459"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>tipo de enumeração edgeCookiePolicy
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

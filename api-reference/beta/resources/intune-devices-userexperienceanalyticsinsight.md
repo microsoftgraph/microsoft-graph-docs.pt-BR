@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso userExperienceAnalyticsInsight
 description: A visão geral da análise da experiência do usuário é a recomendação de melhorar a pontuação de análise da experiência do usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c28df3bc40f02948198a67850de6fd573607a366
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b5a712766534793fd11ba8b07955870d7e1195dd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783792"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389242"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>tipo de recurso userExperienceAnalyticsInsight
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

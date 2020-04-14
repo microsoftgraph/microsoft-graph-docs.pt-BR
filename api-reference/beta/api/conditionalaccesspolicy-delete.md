@@ -2,15 +2,15 @@
 title: Excluir conditionalAccessPolicy
 description: Excluir um conditionalAccessPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e1317b54e623237d7963e839d71b9d235e30bbba
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: f49e0b6a7817fffa1773b6793acf2759187b90e6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062496"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387195"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Excluir conditionalAccessPolicy
 

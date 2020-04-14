@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardType
 description: Valores possíveis das configurações do Credential Guard.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c9532485213c97ac500057842cdcc3e5cbb6719b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4d063858501bb8741000234bde8ade8d33550c9f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42792042"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43359738"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

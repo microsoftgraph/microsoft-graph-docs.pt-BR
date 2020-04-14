@@ -1,18 +1,20 @@
 ---
 title: Atualizar groupPolicyPresentationListBox
 description: Atualiza as propriedades de um objeto groupPolicyPresentationListBox.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 506d52889c8d73c8d6b7d7026f59e1aefa4b769d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 30f5c01eb9d8d89be4d89d5877b4d4611585fd30
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804188"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375268"
 ---
 # <a name="update-grouppolicypresentationlistbox"></a>Atualizar groupPolicyPresentationListBox
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -96,7 +98,6 @@ Content-Length: 278
   "valuePrefix": "Value Prefix value"
 }
 ```
-
 
 
 

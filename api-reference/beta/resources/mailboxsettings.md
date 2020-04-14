@@ -2,19 +2,19 @@
 title: Tipo de recurso mailboxSettings
 description: Configurações para a caixa de correio principal do usuário conectado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f6dbb44810c9469eb6ddb4dc8fd3299bb2b71e71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e091cba82392ece157864b6ad74ff16a66a67e71
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522866"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389012"
 ---
 # <a name="mailboxsettings-resource-type"></a>Tipo de recurso mailboxSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

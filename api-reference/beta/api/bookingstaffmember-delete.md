@@ -2,19 +2,19 @@
 title: Excluir bookingStaffMember
 description: Excluir um membro da equipe no bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 42086e0a8623adf717943d84ad92816ea13e917b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5665ef8f39cdf79fbec004c7a430076a04879a07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441071"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376322"
 ---
 # <a name="delete-bookingstaffmember"></a>Excluir bookingStaffMember
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,15 +2,15 @@
 title: Atualizar countryNamedlocation
 description: Atualiza as propriedades de um objeto countryNamedLocation.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 49ba8d1c9ce6f4217d0177141c76bbbbd8fbc27a
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: a6d69e8610159955dac4a4f90c57c3f731fafcef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061981"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381856"
 ---
 # <a name="update-countrynamedlocation"></a>Atualizar countryNamedLocation
 
@@ -51,9 +51,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
+|countriesAndRegions|Coleção String|Lista de países e/ou regiões no formato de duas letras especificado pela ISO 3166-2.|
 |displayName|String|Nome legível do local.|
-|includeUnknownCountriesAndRegions|Booliano|O valor é `true` se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
+|includeUnknownCountriesAndRegions|Boolean|O valor é `true` se os endereços IP que não mapeiam para um país ou região devem ser incluídos no local nomeado.|
 
 ## <a name="response"></a>Resposta
 

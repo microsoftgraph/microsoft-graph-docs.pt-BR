@@ -4,17 +4,17 @@ description: Excluir um anexo de um evento de calendário, mensagem, tarefa do O
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: ff05d5d9b1bbed80c45129a82fa955a909ccb2e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: svpsiva
+ms.openlocfilehash: b97cbdbcb63b396fe5aeea31f33593a6145cea25
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441337"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367780"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceManagement
 description: Atualizar as propriedades de um objeto deviceManagement.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aecca341cef5b88794f20a9d037b340c33bf97b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 75bca64ce38779e0e9c1f905525414e5b0308f81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801030"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43390049"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -38,7 +40,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **Notificação** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Notificação** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -50,7 +52,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
-| Application ||
+| Aplicativo ||
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -60,7 +62,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **Notificação** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Notificação** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -189,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

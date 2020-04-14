@@ -1,20 +1,20 @@
 ---
 title: Listar grupos de dispositivos
 description: Obter grupos dos quais este dispositivo é membro direto. Essa operação não é transitiva.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d6020ea3a0be67b55e573b71c93235a5896c5e5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84f1623332d2e4e202236744a18794990322867d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435854"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386918"
 ---
 # <a name="list-device-groups"></a>Listar grupos de dispositivos
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

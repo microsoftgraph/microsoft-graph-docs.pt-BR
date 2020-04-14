@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso organization
 description: O recurso da organização representa uma instância de configurações e recursos globais que operam e são provisionados no nível do locatário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd8481ddea83194c7e1b769c70518c9ddff3f894
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5f4fcca12b08b49533c583d38e089d0c3b5335c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778012"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371421"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

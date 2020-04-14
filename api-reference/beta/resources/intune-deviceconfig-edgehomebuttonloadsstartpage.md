@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso edgeHomeButtonLoadsStartPage
 description: Mostrar o botão página inicial; clicar no botão página inicial carrega a página inicial, que também é o valor padrão.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 776eb3d38ffd184a0319661d3c9a23968c0c3de7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5cac7794a82df2d5abb209b94ef27d59a1b5161f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791895"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43386358"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>tipo de recurso edgeHomeButtonLoadsStartPage
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,16 +1,16 @@
 ---
 title: tipo complexo de recurso de targetResource-API do Microsoft Graph
 description: Define o tipo complexo de recurso de entidade de targetResource da API do Microsoft Graph que oferece suporte à atividade de locatário de relatórios de log de auditoria (locatário).
-author: davidmu1
+author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: azure-ad
-ms.openlocfilehash: 751ac6af11b8fdb5709dad816ad2e4c7f2cb53db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 42f477c5d68359882c6c679f66212b8b56055ed5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519992"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356248"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso targetResource
 
@@ -27,7 +27,7 @@ Representa os tipos de recursos de destino associados à atividade de auditoria.
 |displayName|Cadeia de caracteres|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
 |type|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
 |userPrincipalName|Cadeia de caracteres|Quando o **tipo** está definido `User`como, isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
-|groupType|Cadeia de caracteres|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
+|groupType|String|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
 |ModifiedProperties|coleção [modifiedproperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
 
 ## <a name="json-representation"></a>Representação JSON

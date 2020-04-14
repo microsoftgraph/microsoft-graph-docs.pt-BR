@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração managedAppClipboardSharingLevel
 description: Representa o nível ao qual a área de transferência do dispositivo pode ser compartilhada entre aplicativos
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f6153eeb4b76af9d8974b715b7c6342c646ba6e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f854a18bfcfac3f937c976180bbc4a423abbae0d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782241"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43374034"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>tipo de enumeração managedAppClipboardSharingLevel
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

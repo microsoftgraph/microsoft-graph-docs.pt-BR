@@ -1,16 +1,16 @@
 ---
 title: Criar evento
 description: Use essa API para criar um novo evento no calendário especificado ou no padrão.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6838fa64501a8187ca0486598ac3c6e4d35ab268
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: c9dfdaaba6f9fb611a5ff5fe2db171b911bc344d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639573"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376039"
 ---
 # <a name="create-event"></a>Criar evento
 

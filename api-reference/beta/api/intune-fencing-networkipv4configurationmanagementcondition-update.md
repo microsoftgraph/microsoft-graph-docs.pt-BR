@@ -1,18 +1,20 @@
 ---
 title: Atualizar networkIPv4ConfigurationManagementCondition
 description: Atualiza as propriedades de um objeto networkIPv4ConfigurationManagementCondition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d8edc9742608583aa8f7451030959fa3e7f8978
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01ade0f662fc909ab8370cc17da5db239ba13893
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804692"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384445"
 ---
 # <a name="update-networkipv4configurationmanagementcondition"></a>Atualizar networkIPv4ConfigurationManagementCondition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,8 +65,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [network
 |ipV4Prefix|String|A sub-rede IPv4 à qual está conectada. por exemplo, 10.0.0.0/8|
 |ipV4Gateway|String|O endereço do gateway IPv4. por exemplo, 10.0.0.0|
 |ipV4DHCPServer|String|O endereço IPv4 do servidor DHCP para o adaptador.|
-|ipV4DNSServerList|Coleção de cadeias de caracteres|Os servidores DNS IPv4 configurados para o adaptador.|
-|dnsSuffixList|Coleção de cadeias de caracteres|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
+|ipV4DNSServerList|Coleção String|Os servidores DNS IPv4 configurados para o adaptador.|
+|dnsSuffixList|Coleção String|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
 
 
 
@@ -131,7 +133,6 @@ Content-Length: 697
   ]
 }
 ```
-
 
 
 

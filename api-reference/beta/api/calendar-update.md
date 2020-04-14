@@ -2,19 +2,19 @@
 title: Atualizar o calendário
 description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser um para um usuário '
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 810e93dba4dcae60dce18366945382bd5ec8a2bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7cb1f6cf1bc77d264d31007ec411b7b070151786
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376000"
 ---
 # <a name="update-calendar"></a>Atualizar calendário
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

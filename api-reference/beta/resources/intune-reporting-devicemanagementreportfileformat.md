@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceManagementReportFileFormat
 description: Valores possíveis para o formato de arquivo de um relatório
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f32afaadfff2bde53843452c4d098820c8d39606
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2cfa5535489d9622d3f62f5641c2c129d0c8b0d3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772472"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389005"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>tipo de enumeração deviceManagementReportFileFormat
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

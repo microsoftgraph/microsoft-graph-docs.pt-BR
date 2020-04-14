@@ -2,19 +2,19 @@
 title: Listar compromissos
 description: Obtenha uma lista de objetos bookingAppointment para o bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1cc6fcf3889ffca8bdf6f41f14533487f96db798
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1a1f1cb63d4f5feee4f8a6d399a91dfc4c35266
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441267"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367177"
 ---
 # <a name="list-appointments"></a>Listar compromissos
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

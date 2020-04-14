@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceGuardVirtualizationBasedSecurityState
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 67c24f09c76b6c2aa35dacfb4f78c2870715e393
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 01b8c11e12e1a219db8d64dd9f1734b7227df6bd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784976"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362404"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

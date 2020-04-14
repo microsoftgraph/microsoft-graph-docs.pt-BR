@@ -2,19 +2,19 @@
 title: Obter bookingStaffMember
 description: Obtenha as propriedades e os relacionamentos de um bookingStaffMember no bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0abdf3d3c6b60fa5d937a58a18c7723e4aeba151
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a614199159c7b01f8b4b6a3d5dcfd0c36d4710ad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441057"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376259"
 ---
 # <a name="get-bookingstaffmember"></a>Obter bookingStaffMember
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

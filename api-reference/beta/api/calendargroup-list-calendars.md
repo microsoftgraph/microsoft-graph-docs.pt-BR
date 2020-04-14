@@ -1,16 +1,16 @@
 ---
 title: Listar calendários
 description: Recupera uma lista de calendários que pertencem a um grupo de calendários.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a943d707345873ccac2ca8a02e301cbf7d29ab0
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 9d62fb3b97f269298a4c9feb517c44d5917ec191
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639566"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43361412"
 ---
 # <a name="list-calendars"></a>Listar calendários
 

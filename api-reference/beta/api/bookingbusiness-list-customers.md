@@ -2,19 +2,19 @@
 title: Listar clientes
 description: Obtenha uma lista de objetos bookingCustomer.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0d1d81092f2fdadb29fe1937309907728a056852
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e174bfda0a7b3c1979df6c994f314dbc751da8b7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441260"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366886"
 ---
 # <a name="list-customers"></a>Listar clientes
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

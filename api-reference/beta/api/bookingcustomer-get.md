@@ -2,19 +2,19 @@
 title: Obter bookingCustomer
 description: Obtenha as propriedades e os relacionamentos de um objeto bookingCustomer.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c0c2c6de4b75f0c22009967f2b0727d67084dedf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09a7154f7bee03a2d83c3d3d88fb8ce74a95c57f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441099"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376453"
 ---
 # <a name="get-bookingcustomer"></a>Obter bookingCustomer
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

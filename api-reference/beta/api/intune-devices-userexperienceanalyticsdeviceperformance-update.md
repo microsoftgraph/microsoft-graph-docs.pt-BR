@@ -1,18 +1,20 @@
 ---
 title: Atualizar userExperienceAnalyticsDevicePerformance
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsDevicePerformance.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62beda431bf34efafadc73c1fff7db87ef67a33f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 75719a81a38e70cfbfc487710358a9f75e866690
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813955"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379641"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Atualizar userExperienceAnalyticsDevicePerformance
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -126,7 +128,6 @@ Content-Length: 578
   "responsiveDesktopTimeInMs": 9
 }
 ```
-
 
 
 

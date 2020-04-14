@@ -2,19 +2,19 @@
 title: Obter bookingAppointment
 description: Obtenha as propriedades e os relacionamentos de um objeto bookingAppointment no bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 397a5632655f9c09d637dcc232f173ca1c9c0220
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb6058ef761c91fc338aeba3cdb1483c91649cf3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441297"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367549"
 ---
 # <a name="get-bookingappointment"></a>Obter bookingAppointment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

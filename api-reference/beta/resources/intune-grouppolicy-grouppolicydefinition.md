@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyDefinition
 description: A entidade descreve todas as informações sobre uma única diretiva de grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e99b32687c0a93673cdbf8889b05e6423cc73c3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 05021b93dfae495941d13b3f18cb01d7e7c0a706
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376992"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>tipo de recurso groupPolicyDefinition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

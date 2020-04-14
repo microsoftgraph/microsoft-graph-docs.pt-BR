@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração easServices
 description: Exchange Active Sync Services.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 85c1bf633fe300f3ddf2efb06345e077d60aa3fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1286b53a534891b7282b03ade10c6bedaf85c9eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791923"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43359391"
 ---
 # <a name="easservices-enum-type"></a>tipo de enumeração easServices
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Exchange Active Sync Services.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Ainda não documentado|
+|nenhuma|,0|Ainda não documentado|
 |calendars|1|Permite a sincronização de calendários.|
 |contacts|duas|Permite a sincronização de contatos.|
 |email|4 |Permite a sincronização de emails.|

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceManagementDerivedCredentialIssuer
 description: Valores com suporte para o emissor de credenciais derivado.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e52a43e0df85acfe6c63f10c7459033553a32e8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0f24af2e25b8623c4d15a51b65d7e4d6c63103cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774201"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43357836"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>tipo de enumeração deviceManagementDerivedCredentialIssuer
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

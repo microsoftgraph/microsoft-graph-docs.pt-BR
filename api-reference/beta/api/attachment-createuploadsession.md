@@ -2,15 +2,15 @@
 title: 'Anexo: createUploadSession'
 description: Crie uma sessão de upload para carregar de forma iterativa os intervalos de um arquivo para anexar o arquivo à mensagem especificada.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a068413b1849da27f3723bb9d006ab487b07a3a0
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 6bfdc379a8eb7857e4871ad13a6be47e87a2fe6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589912"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368015"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
 
@@ -18,26 +18,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar uma sessão de carregamento que permite que um aplicativo carregue intervalos de um arquivo de forma iterativa, para anexar o arquivo a um item do Outlook. O item pode ser uma [mensagem](../resources/message.md) ou um [evento](../resources/event.md).
+Criar uma sessão de carregamento que permite que um aplicativo carregue intervalos de um arquivo de forma iterativa, para anexar o arquivo à [mensagem](../resources/message.md)especificada.
 
-Use essa abordagem para anexar um arquivo se o tamanho do arquivo estiver entre 3 MB e 150 MB. Para anexar um arquivo menor que 3 MB, execute uma `POST` operação na propriedade de navegação **Attachments** do item do Outlook; Veja como fazer isso [para uma mensagem](message-post-attachments.md) ou [para um evento](event-post-attachments.md). 
+Use essa abordagem para anexar um arquivo a uma **mensagem** quando o tamanho do arquivo estiver entre 3 mb e 150 MB. Para anexar um arquivo menor que 3 MB, [post na propriedade de navegação Attachments](message-post-attachments.md). 
 
 Como parte da resposta, esta ação retorna uma URL de upload que você pode usar em consultas sequenciais `PUT` subsequentes. Os cabeçalhos de solicitação `PUT` para cada operação permitem que você especifique o intervalo exato de bytes a serem carregados. Isso permite que a transferência seja retomada, caso a conexão de rede seja interrompida durante o carregamento. 
 
-A seguir estão as etapas para anexar um arquivo a um item do Outlook usando uma sessão de carregamento:
+A seguir estão as etapas para anexar um arquivo usando uma sessão de carregamento:
 
-1. Criar uma sessão de carregamento.
-2. Dentro dessa sessão de upload, carregue de forma iterativa os intervalos de bytes (até 4 MB cada vez) até que todos os bytes do arquivo tenham sido carregados e o arquivo esteja anexado ao item especificado.
-3. Salve a ID do anexo para acesso futuro.
-4. Opcional: exclua a sessão de upload.
+1. Criar uma sessão de upload
+2. Dentro dessa sessão de upload, carregue de forma iterativa os intervalos de bytes (até 4 MB cada vez) até que todos os bytes do arquivo tenham sido carregados e o arquivo seja anexado à mensagem especificada
+3. Salvar a ID do anexo para acesso futuro
+4. Opcional: excluir a sessão de upload 
 
-Consulte [anexar arquivos grandes a mensagens ou eventos do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
+Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
 
 > [!TIP]
 > O Exchange Online permite que os administradores personalizem o limite de tamanho de mensagens de caixas de correio do Office 365, incluindo qualquer anexo de mensagem. Por padrão, esse limite de tamanho de mensagem é de 35 MB. Descubra como [Personalizar o tamanho máximo da mensagem](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) para dar suporte a anexos maiores que o limite padrão para o seu locatário. 
 
 > [!IMPORTANT] 
-> Esteja ciente de um [problema conhecido](/graph/known-issues#attaching-large-files-to-messages) se estiver anexando um arquivo grande a uma mensagem ou evento em uma caixa de correio compartilhada ou delegada.
+> Esteja ciente de um [problema conhecido](/graph/known-issues#attaching-large-files-to-messages) se estiver anexando a uma mensagem em uma caixa de correio compartilhada ou delegada.
 
 
 ## <a name="permissions"></a>Permissões
@@ -52,16 +52,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para criar uma sessão de carregamento para anexar um arquivo a um **evento**: 
-
 <!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/attachments/createUploadSession
-```
 
-Para criar uma sessão de carregamento para anexar um arquivo a uma **mensagem**: 
-
-<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/attachments/createUploadSession
 ```
@@ -96,7 +88,7 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como criar uma sessão de carregamento que você pode usar em operações de upload de arquivo subsequentes para a mensagem especificada.
+O exemplo a seguir mostra como criar uma sessão de carregamento que você pode usar em operações de upload de arquivo subsequentes.
 
 ### <a name="request"></a>Solicitação
 

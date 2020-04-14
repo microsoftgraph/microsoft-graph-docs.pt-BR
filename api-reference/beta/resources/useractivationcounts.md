@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso userActivationCounts
 description: Veja a seguir uma representação JSON do recurso.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 65554254260d640638e7cbbbb2d0a0076e209f22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91366f9d2b2308c997c111123d856581db7c00c6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519544"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384951"
 ---
 # <a name="useractivationcounts-resource-type"></a>tipo de recurso userActivationCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 

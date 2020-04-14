@@ -2,17 +2,19 @@
 title: tipo de recurso officeConfiguration
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de dispositivos.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26d6023224048166d0d287ce893c07663638e1f9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 203efb4eab301f64eedfaceeba0e007c1a0b0123
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797315"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362607"
 ---
 # <a name="officeconfiguration-resource-type"></a>tipo de recurso officeConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração managedAppDataTransferLevel
 description: Os dados podem ser transferidos de/para essas classes de aplicativos
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 68d3fcaf0a75be8405f06c21102d8a462318825d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b51d15eb98871bd3d3b413ddf6f6aa65d3e55950
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782017"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43373109"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>tipo de enumeração managedAppDataTransferLevel
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,7 +27,7 @@ Os dados podem ser transferidos de/para essas classes de aplicativos
 |:---|:---|:---|
 |todos os aplicativos|,0|Todos os aplicativos.|
 |managedApps|1|Aplicativos gerenciados.|
-|none|duas|Nenhum aplicativo.|
+|nenhuma|duas|Nenhum aplicativo.|
 
 
 

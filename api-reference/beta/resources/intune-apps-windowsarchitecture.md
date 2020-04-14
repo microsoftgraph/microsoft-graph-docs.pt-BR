@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsArchitecture
 description: Contém propriedades da arquitetura do Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 34f3d887d5839f87d07876084baa1439aca7a46a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 169d343d9b7799aabeb16ca506508456d9f4d841
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797525"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43360503"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeração windowsArchitecture
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Contém propriedades da arquitetura do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum sinalizador definido.|
+|nenhuma|,0|Nenhum sinalizador definido.|
 |x|1|Se o tipo de arquitetura do Windows x86 é ou não suportado.|
 |Professional|duas|Se o tipo de arquitetura do Windows x64 é ou não suportado.|
 |equipe|4 |Se o tipo de arquitetura Windows de braço é ou não suportado.|

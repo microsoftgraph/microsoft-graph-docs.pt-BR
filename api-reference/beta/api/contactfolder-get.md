@@ -1,20 +1,20 @@
 ---
 title: Obter contactFolder
 description: Obtenha uma pasta de contatos usando a respectiva ID.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78f70919b00b275572efef6287f3fdf3da7995c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 61a5accbda2558e5ff39f7e599cb5c3c71bb704b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436983"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43381903"
 ---
 # <a name="get-contactfolder"></a>Obter contactFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

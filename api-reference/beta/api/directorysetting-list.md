@@ -1,16 +1,16 @@
 ---
 title: Listar configurações de diretório
 description: Recupere uma lista de objetos de configuração de diretório.
-author: dkershaw10
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46765047bfa5e24bb8ccd14b95986f9c3878909e
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: e0b105d5bd4c5178b3a9f62aeda781bdb74eae3a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180781"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375633"
 ---
 # <a name="list-directory-settings"></a>Listar configurações de diretório
 

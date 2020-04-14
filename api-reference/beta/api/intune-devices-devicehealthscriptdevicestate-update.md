@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceHealthScriptDeviceState
 description: Atualiza as propriedades de um objeto deviceHealthScriptDeviceState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fb1ce759be5b8482b29199095a4e3da32f614ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 76bb9f37148233b34f6ad56896debed5872a2924
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814516"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380534"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>Atualizar deviceHealthScriptDeviceState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -114,7 +116,6 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
-
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: Excluir eventMessage
 description: Exclua a eventMessage.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 04b85a8d34d242af712f55e4d255357ff93613ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1aca6a297a9d2b7732fc08f7595caeba13492760
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422639"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364492"
 ---
 # <a name="delete-eventmessage"></a>Excluir eventMessage
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

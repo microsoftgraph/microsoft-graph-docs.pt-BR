@@ -2,15 +2,15 @@
 title: Listar políticas
 description: Recupere uma lista de objetos conditionalAccessPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa5b594930e3550fef89a3c25fd5fa434ca894f5
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 4c1d56cde38b7dfd3acbff3c20d399c5b762f3da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062390"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382286"
 ---
 # <a name="list-policies"></a>Listar políticas
 

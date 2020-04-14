@@ -1,20 +1,20 @@
 ---
 title: Criar ContactFolder
 description: 'Cria uma nova contactFolder como um filho de uma pasta especificada. '
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7f782f32bd08532cad2efb10a101e3f96230bdbe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73360e3df950de638a265cbe7c759c2085adaced
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436871"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375907"
 ---
 # <a name="create-contactfolder"></a>Criar ContactFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

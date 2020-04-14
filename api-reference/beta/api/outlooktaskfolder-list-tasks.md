@@ -1,20 +1,20 @@
 ---
 title: Listar tarefas
 description: Obter todas as tarefas do Outlook na pasta especificada.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5a61aa1792bebfdd26970b4d9a5b028e286d6bea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0a16f9b509f912c3fef5ed8c16b53596f017cd22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456149"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389673"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

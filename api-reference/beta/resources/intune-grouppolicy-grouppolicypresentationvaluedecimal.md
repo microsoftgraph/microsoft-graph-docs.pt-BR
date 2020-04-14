@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationValueDecimal
 description: A entidade representa um valor inteiro não assinado de uma apresentação de caixa de texto decimal em uma definição de política.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fceec1a61cdc1f36e3dd2cea472cd0893952d92
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 83f1bd185d4aa7fb94f2cd89ecd637892c0c3748
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782901"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376867"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>tipo de recurso groupPolicyPresentationValueDecimal
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

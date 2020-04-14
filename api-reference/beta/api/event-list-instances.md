@@ -2,19 +2,19 @@
 title: Listar instâncias
 description: Obter as instâncias (ocorrências) de um evento para um intervalo de tempo especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8a1be0344964b53582436d5397bdffb09e2bc7aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea891efd5932aecb252a0e3015b63710b9aaf660
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422828"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365228"
 ---
 # <a name="list-instances"></a>Instâncias de lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

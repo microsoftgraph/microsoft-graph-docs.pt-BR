@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso sideLoadingKey
 description: A entidade SideLoadingKey é necessária para os dispositivos Windows 8 e 8,1 para aplicativos de linha de negócios de desinstalar para um locatário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1a5f0dbc305e7a9cd71cfb8a90046edf1e2cfb5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 118fc4ad76e7e8b848e70f8dd2592ab319928a60
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777935"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371399"
 ---
 # <a name="sideloadingkey-resource-type"></a>tipo de recurso sideLoadingKey
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

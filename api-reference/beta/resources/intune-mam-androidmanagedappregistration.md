@@ -1,18 +1,20 @@
 ---
 title: androidManagedAppRegistration resource type
 description: Representa os detalhes de sincronização de um aplicativo para Android, com recursos de gerenciamento, para um usuário específico. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25b9d2ce83101af5892eac9f3e319c4a51462f41
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af40999484ca3da7a2e3454441486a79aa29f07c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782759"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43385757"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration resource type
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,20 +1,20 @@
 ---
 title: tipo UserIdentity
-description: 'Para as revisões do Azure AD Access, este tipo representa uma identidade de usuário do Azure AD para um revisor de uma revisão do Access.  '
+description: Representa uma identidade de usuário do Azure AD para um revisor de uma revisão do Access.
 localization_priority: Normal
-author: dkershaw10
+author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 466b39a52f2bc2b9e20f313f3f80926855f492f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cb40f4d9815ed0c95f319fd5f112dfd5802f10a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519523"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384967"
 ---
 # <a name="useridentity-type"></a>tipo UserIdentity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

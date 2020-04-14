@@ -1,20 +1,20 @@
 ---
 title: Obter evento
 description: Obtenha as propriedades e relacionamentos do objeto de evento especificado.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a228e80c59a15763cde4bc378ce74aaf89d6acfc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22f72f23d0521b6e78e4d776b0e5e0288ebba46a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422969"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365508"
 ---
 # <a name="get-event"></a>Obter evento
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -119,7 +119,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ---
 
 ##### <a name="response-1"></a>Resposta 1
-Veja um exemplo da resposta. Como nenhum `Prefer: outlook.body-content-type` cabeçalho foi especificado, a propriedade **Body** é retornada no formato HTML padrão. 
+Veja a seguir um exemplo da resposta. Como nenhum cabeçalho `Prefer: outlook.body-content-type` foi especificado, a propriedade **body** será retornada no formato HTML padrão. 
 
 <!-- {
   "blockType": "response",

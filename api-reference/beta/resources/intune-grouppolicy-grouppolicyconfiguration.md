@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyConfiguration
 description: A entidade de configuração de política de grupo contém os valores configurados para uma ou mais definições de política de grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81c6937fca0c51b18d86ccf3b0dbedd58b71971b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6e2d017b7bbd8f76d59f7862fbb943c455c78fbe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783113"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43377077"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>tipo de recurso groupPolicyConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -37,7 +39,7 @@ A entidade de configuração de política de grupo contém os valores configurad
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
 |displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto Resource.|
 |description|String|Descrição fornecida pelo usuário para o objeto Resource.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|A lista de marcas de escopo para a configuração.|
+|roleScopeTagIds|Coleção String|A lista de marcas de escopo para a configuração.|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 

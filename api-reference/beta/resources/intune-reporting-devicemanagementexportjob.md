@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementExportJob
 description: Entidade que representa um trabalho para exportar um relatório
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e44057e786126003802cada7320329167a3c97fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a66072a2bd87cfb279f6b9d39027228f6c9f4b5c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772549"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356568"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>tipo de recurso deviceManagementExportJob
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -35,7 +37,7 @@ Entidade que representa um trabalho para exportar um relatório
 |id|String|Identificador exclusivo para esta entidade|
 |reportName|String|Nome do relatório|
 |filter|String|Filtros aplicados no relatório|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|select|Coleção String|Colunas selecionadas do relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
 |instantâneoid|String|Um instantâneo é um subconjunto identificável do DataSet representado pelo ReportName. Uma ID de Identificação_da_sessão ou CachedReportConfiguration pode ser usada aqui. Se uma Identificação_da_sessão for especificada, Filter, Select e OrderBy serão aplicadas aos dados representados pela Identificação_da_sessão. Filter, Select e OrderBy não podem ser especificados junto com uma ID CachedReportConfiguration.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do trabalho de exportação. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|

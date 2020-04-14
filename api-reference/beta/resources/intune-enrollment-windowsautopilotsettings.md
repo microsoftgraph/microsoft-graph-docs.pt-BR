@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsAutopilotSettings
 description: O recurso windowsAutopilotSettings representa uma conta do Windows AutoPilot para sincronizar dados com o serviço de sincronização de dados do dispositivo Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 073c6431ed0ef817fa0349805e93601e7b31f882
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7f482dd42bbd40a71dfb60ffee0c5c2d6febec41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783358"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358517"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>tipo de recurso windowsAutopilotSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

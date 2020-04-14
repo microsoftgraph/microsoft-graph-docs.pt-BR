@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyCategory
 description: A entidade de categoria armazena a categoria de uma definição de política de grupo
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b754020cc4a7c4f7e9fdf7cc35f74d9dcc4c4c1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3b81a102bd5864d4f11f787e15bb2d709f0203cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783120"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43377188"
 ---
 # <a name="grouppolicycategory-resource-type"></a>tipo de recurso groupPolicyCategory
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -2,19 +2,19 @@
 title: tipo de recurso iPv6CidrRange
 description: Representa um intervalo IPv6 usando a notação CIDR.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1b27b94762eeaa1c93d269ffaddf6e0ba1bc55d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46c4742a65ec8826f363187eaaba05a1bfb8f893
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523139"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43384959"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>tipo de recurso iPv6CidrRange
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

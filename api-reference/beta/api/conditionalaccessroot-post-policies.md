@@ -2,15 +2,15 @@
 title: Criar conditionalAccessPolicy
 description: Criar um novo conditionalAccessPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 859c4ef3f6dab28b708946e3251ecb27dba84f3b
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 6472bda1ecf840b0fc700b831e3ee48e153aa5bf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062336"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382089"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Criar conditionalAccessPolicy
 

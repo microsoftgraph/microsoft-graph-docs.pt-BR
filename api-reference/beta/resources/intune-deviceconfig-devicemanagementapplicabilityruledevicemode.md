@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementApplicabilityRuleDeviceMode
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 099f6081366187e240bf8510fca30a548fea4fe3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 684dd5415d5ffa3c8884611efb1c9add8bdf0651
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42792035"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43359658"
 ---
 # <a name="devicemanagementapplicabilityruledevicemode-resource-type"></a>tipo de recurso deviceManagementApplicabilityRuleDeviceMode
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

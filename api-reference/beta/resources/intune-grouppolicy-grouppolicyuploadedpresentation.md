@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyUploadedPresentation
 description: A entidade base para a apresentação de exibição de qualquer opção adicional em uma definição de política de grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22269283d71ce05f2ed2714f2010848e801c4426
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 827ac04bbe6e603748b1394e91e7ddff45653c73
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782766"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43385764"
 ---
 # <a name="grouppolicyuploadedpresentation-resource-type"></a>tipo de recurso groupPolicyUploadedPresentation
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

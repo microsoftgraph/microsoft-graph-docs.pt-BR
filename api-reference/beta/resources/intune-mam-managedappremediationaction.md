@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração managedAppRemediationAction
 description: Uma ação iniciada pelo administrador para ser aplicada em um aplicativo gerenciado.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c625ecde045860f49f06acff4513698fd82b474
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f6def057a694971d74089b5a9bde821d9d98ae0f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781485"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371966"
 ---
 # <a name="managedappremediationaction-enum-type"></a>tipo de enumeração managedAppRemediationAction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

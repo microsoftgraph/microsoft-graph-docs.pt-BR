@@ -2,15 +2,15 @@
 title: Atualizar conditionalAccessPolicy
 description: Atualiza as propriedades de um objeto conditionalAccessPolicy.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 52d325f0a75bfdedf6ebf36d0a775efe9580739f
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 7cec2052a830d1d9c5a30452e49b59fb9037cfa0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062400"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382372"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Atualizar conditionalAccessPolicy
 

@@ -2,17 +2,19 @@
 title: tipo de recurso officeConfigurationAssignmentTarget
 description: Destino de atribuição de configuração de cliente do Office.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50540e7693679117b3320d4ba927eb77d858563f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3d34d1272c5815144b11ec2b8ca804d33ed6bde0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797308"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362518"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationAssignmentTarget
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

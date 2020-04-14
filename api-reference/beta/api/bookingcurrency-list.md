@@ -2,19 +2,19 @@
 title: Listar bookingCurrencies
 description: Obtenha uma lista de objetos bookingCurrency disponíveis para uma empresa de livros da Microsoft.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d708f4985dc0a257fcc6961a3f77d088f883c3a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f279cfe4d6a5ca8ceef65ce63fb3edbf76716e68
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441120"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376525"
 ---
 # <a name="list-bookingcurrencies"></a>Listar bookingCurrencies
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
