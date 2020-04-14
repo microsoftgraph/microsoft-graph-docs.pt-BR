@@ -1,35 +1,37 @@
 ---
 title: Listar appleUserInitiatedEnrollmentProfiles
 description: Listar Propriedades e relações dos objetos appleUserInitiatedEnrollmentProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1158b53151ccf6a75500dd9f5c08775ff05665c0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3be1238d9376438071b64cfaed9adc1c14e0fb0f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813471"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43320392"
 ---
-# <a name="list-appleuserinitiatedenrollmentprofiles"></a><span data-ttu-id="5afae-103">Listar appleUserInitiatedEnrollmentProfiles</span><span class="sxs-lookup"><span data-stu-id="5afae-103">List appleUserInitiatedEnrollmentProfiles</span></span>
+# <a name="list-appleuserinitiatedenrollmentprofiles"></a><span data-ttu-id="70463-103">Listar appleUserInitiatedEnrollmentProfiles</span><span class="sxs-lookup"><span data-stu-id="70463-103">List appleUserInitiatedEnrollmentProfiles</span></span>
 
-> <span data-ttu-id="5afae-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="5afae-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="70463-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="70463-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5afae-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5afae-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="70463-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="70463-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="5afae-106">Listar Propriedades e relações dos objetos [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="5afae-106">List properties and relationships of the [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) objects.</span></span>
+> <span data-ttu-id="70463-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="70463-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5afae-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5afae-107">Prerequisites</span></span>
-<span data-ttu-id="5afae-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5afae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="70463-107">Listar Propriedades e relações dos objetos [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="70463-107">List properties and relationships of the [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) objects.</span></span>
 
-|<span data-ttu-id="5afae-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5afae-110">Permission type</span></span>|<span data-ttu-id="5afae-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5afae-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="70463-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="70463-108">Prerequisites</span></span>
+<span data-ttu-id="70463-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="70463-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="70463-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="70463-111">Permission type</span></span>|<span data-ttu-id="70463-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="70463-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5afae-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5afae-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5afae-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="5afae-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="5afae-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5afae-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5afae-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5afae-115">Not supported.</span></span>|
-|<span data-ttu-id="5afae-116">Application</span><span class="sxs-lookup"><span data-stu-id="5afae-116">Application</span></span>|<span data-ttu-id="5afae-117">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="5afae-117">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="70463-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="70463-113">Delegated (work or school account)</span></span>|<span data-ttu-id="70463-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="70463-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="70463-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="70463-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="70463-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="70463-116">Not supported.</span></span>|
+|<span data-ttu-id="70463-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="70463-117">Application</span></span>|<span data-ttu-id="70463-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="70463-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5afae-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5afae-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70463-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="70463-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +40,28 @@ ms.locfileid: "42813471"
 GET /deviceManagement/appleUserInitiatedEnrollmentProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5afae-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5afae-119">Request headers</span></span>
-|<span data-ttu-id="5afae-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5afae-120">Header</span></span>|<span data-ttu-id="5afae-121">Valor</span><span class="sxs-lookup"><span data-stu-id="5afae-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="70463-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="70463-120">Request headers</span></span>
+|<span data-ttu-id="70463-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="70463-121">Header</span></span>|<span data-ttu-id="70463-122">Valor</span><span class="sxs-lookup"><span data-stu-id="70463-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5afae-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="5afae-122">Authorization</span></span>|<span data-ttu-id="5afae-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5afae-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5afae-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5afae-124">Accept</span></span>|<span data-ttu-id="5afae-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5afae-125">application/json</span></span>|
+|<span data-ttu-id="70463-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="70463-123">Authorization</span></span>|<span data-ttu-id="70463-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="70463-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="70463-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="70463-125">Accept</span></span>|<span data-ttu-id="70463-126">application/json</span><span class="sxs-lookup"><span data-stu-id="70463-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5afae-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5afae-126">Request body</span></span>
-<span data-ttu-id="5afae-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5afae-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70463-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="70463-127">Request body</span></span>
+<span data-ttu-id="70463-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="70463-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5afae-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="5afae-128">Response</span></span>
-<span data-ttu-id="5afae-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5afae-129">If successful, this method returns a `200 OK` response code and a collection of [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="70463-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="70463-129">Response</span></span>
+<span data-ttu-id="70463-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="70463-130">If successful, this method returns a `200 OK` response code and a collection of [appleUserInitiatedEnrollmentProfile](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5afae-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5afae-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="70463-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="70463-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5afae-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5afae-131">Request</span></span>
-<span data-ttu-id="5afae-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5afae-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="70463-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="70463-132">Request</span></span>
+<span data-ttu-id="70463-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="70463-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles
 ```
 
-### <a name="response"></a><span data-ttu-id="5afae-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="5afae-133">Response</span></span>
-<span data-ttu-id="5afae-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5afae-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="70463-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="70463-134">Response</span></span>
+<span data-ttu-id="70463-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="70463-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -88,7 +90,6 @@ Content-Length: 708
   ]
 }
 ```
-
 
 
 
