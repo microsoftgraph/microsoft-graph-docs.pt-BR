@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso win32LobAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel de LOB do Win32 a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 340dc21cce7b52ebc55c13488f7340c7b66f9e26
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 199a2444a814e989d1567830c400762556f7a6fe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767040"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436965"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>tipo de recurso win32LobAppAssignmentSettings
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

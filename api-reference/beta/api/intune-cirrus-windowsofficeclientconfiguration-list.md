@@ -2,17 +2,19 @@
 title: Listar windowsOfficeClientConfigurations
 description: Listar Propriedades e relações dos objetos windowsOfficeClientConfiguration.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b59828b2605fffbfd6e8a0c7341a4d3c9de093a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 008cbf721379b30ede2ae29018267fc67c2c68e3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760225"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436711"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>Listar windowsOfficeClientConfigurations
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
+|Aplicativo|DeviceManagementConfiguration. ReadWrite. All DeviceManagementConfiguration. Read. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -100,7 +102,6 @@ Content-Length: 1214
   ]
 }
 ```
-
 
 
 

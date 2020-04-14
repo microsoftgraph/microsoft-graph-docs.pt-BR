@@ -1,18 +1,20 @@
 ---
 title: Criar deviceManagementSettingDefinition
 description: Criar um novo objeto deviceManagementSettingDefinition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 584828e743b49b27c7f986587dfd7d03c933da7c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ba658fe605034703c2565f3f8f3a6d70cd6685de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815097"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43427813"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Criar deviceManagementSettingDefinition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -61,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |description|String|A descrição da configuração|
 |placeholderText|String|Texto do espaço reservado como um exemplo de entrada válida|
 |documentationUrl|String|URL para configurar a documentação|
-|palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
+|palavras-chave|Coleção String|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
 
@@ -158,7 +160,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

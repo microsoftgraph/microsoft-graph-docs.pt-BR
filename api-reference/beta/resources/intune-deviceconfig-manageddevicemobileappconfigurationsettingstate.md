@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso managedDeviceMobileAppConfigurationSettingState
 description: Estado da configuração do aplicativo móvel do dispositivo gerenciado para um determinado dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 740d2fe591810829080ed6da78e9c6fcc68e7d52
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f5fbdae9a59b19216db0db0f460402ce3ba374a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788615"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437289"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>tipo de recurso managedDeviceMobileAppConfigurationSettingState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -35,6 +37,7 @@ Estado da configuração do aplicativo móvel do dispositivo gerenciado para um 
 |userPrincipalName|String|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,7 +69,8 @@ Veja a seguir uma representação JSON do recurso.
       "displayName": "String"
     }
   ],
-  "currentValue": "String"
+  "currentValue": "String",
+  "settingInstanceId": "String"
 }
 ```
 

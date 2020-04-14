@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso androidManagedStoreApp
 description: Contém propriedades e propriedades herdadas para aplicativos de repositório gerenciado do Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a97bb1fcec1e1d4ba6b53a7d8c110299705365c2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4f4628e60f62b6a36c72f543e2309c35b1c97b86
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799287"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437426"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>tipo de recurso androidManagedStoreApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -51,15 +53,16 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |packageId|String|O identificador do pacote.|
 |appIdentifier|Cadeia de caracteres|O Nome da Identidade.|
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
 |totalLicenseCount|Int32|O número total de licenças VPP.|
-|appStoreUrl|Cadeia de caracteres|A URL do aplicativo de reproduzir para o repositório de trabalho.|
+|appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho.|
 |IsPrivate|Boolean|Indica se o aplicativo está disponível somente para os usuários de uma empresa.|
 |isSystemApp|Boolean|Indica se o aplicativo é um aplicativo de sistema pré-instalado.|
+|appTracks|coleção [androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|As faixas que são visíveis para esta empresa.|
 |supportsOemConfig|Boolean|Se este aplicativo dá suporte à política OEMConfig.|
 
 ## <a name="relationships"></a>Relações
@@ -114,6 +117,13 @@ Veja a seguir uma representação JSON do recurso.
   "appStoreUrl": "String",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "String",
+      "trackAlias": "String"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```

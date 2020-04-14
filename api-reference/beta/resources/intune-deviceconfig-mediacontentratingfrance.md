@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso mediaContentRatingFrance
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccfa69711a4bd9790cce28e41fc0585fe34b6dfb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c7ac9e4309f2f6cf97c0caf6faed36f43347d5a8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437219"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>Tipo de recurso mediaContentRatingFrance
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

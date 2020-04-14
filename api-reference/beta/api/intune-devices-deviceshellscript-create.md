@@ -1,18 +1,20 @@
 ---
 title: Criar deviceShellScript
 description: Criar um novo objeto deviceShellScript.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f310a1b2b83effda2af1a2a73406325f78a06f3d
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: 5be107a65a2f680cfe379108567cb972531da801
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034752"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43425611"
 ---
 # <a name="create-deviceshellscript"></a>Criar deviceShellScript
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceSh
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|executionFrequency|Duração|O intervalo do script a ser executado. Se não definido, o script é executado uma vez.|
-|retryCount|Int32| O número de vezes que o script deve ser repetido se falhar. |
-|blockExecutionNotifications|Booliano|Indica se o usuário é notificado quando um script está sendo executado.|
+|executionFrequency|Duração|O intervalo de execução do script. Se não definido, o script será executado uma vez|
+|retryCount|Int32|Número de vezes que o script deve ser repetido se falhar|
+|blockExecutionNotifications|Boolean|Não notifica o usuário de que um script está sendo executado|
 |id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
 |displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
@@ -61,8 +63,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceSh
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|fileName|String|O nome do arquivo de script.|
-|roleScopeTagIds|String collection|A lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|fileName|String|Nome do arquivo de script.|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 
 
 

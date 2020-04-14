@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração prereleaseFeatures
 description: Valores possíveis para recursos de pré-lançamento.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 527b6e8625def282a184511495a5c43d3cc94e6b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d73ec9063a9b32c560c12b4b093a1bcef17a4844
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788405"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437016"
 ---
 # <a name="prereleasefeatures-enum-type"></a>tipo de enumeração prereleaseFeatures
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

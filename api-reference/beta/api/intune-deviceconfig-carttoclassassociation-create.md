@@ -1,18 +1,20 @@
 ---
 title: Criar cartToClassAssociation
 description: Criar um novo objeto cartToClassAssociation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abfd05152a968696e4f35879e7cd5a8bb957bc2f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a694dff31579279e2fd5127157ad4e40786a6f2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42756986"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434413"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -57,8 +59,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar cartToCl
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |description|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
-|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivos a serem associados às classes.|
-|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
+|deviceCartIds|Coleção String|Identificadores de carrinhos de dispositivos a serem associados às classes.|
+|classroomIds|Coleção String|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
 
 
@@ -111,7 +113,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Acessar appleDeviceFeaturesConfigurationBase
 description: Leia as propriedades e as relações do objeto appleDeviceFeaturesConfigurationBase.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dfec0f90f16782de70dba66fc7c346d8828b0e2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 14009fa26260f8bb07fd04c8783849c7a18c9b75
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42757147"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43434511"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Acessar appleDeviceFeaturesConfigurationBase
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -116,7 +118,6 @@ Content-Length: 1550
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsFeatureUpdateProfileAssignment
 description: Esta entidade contém as propriedades usadas para atribuir um perfil de atualização de recursos do Windows a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: db98805b8135c3027a0440a0b513d36d6e58bd25
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 888fc7e0737f0ba7de6b7813a8f6855de60b2422
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436921"
 ---
 # <a name="windowsfeatureupdateprofileassignment-resource-type"></a>tipo de recurso windowsFeatureUpdateProfileAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração Enumeraçãodevicecomplianceactiontype
 description: Enumeração de tipo de ação agendada
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ebf4df22787d19e5718ebd2099cd81af3925271
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f0a5a3b4ab73bc0d97b5b47619cdcabb401400f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793356"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437389"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enumeração Enumeraçãodevicecomplianceactiontype
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

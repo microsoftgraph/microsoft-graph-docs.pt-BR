@@ -1,18 +1,20 @@
 ---
 title: Listar windowsPhone81ImportedPFXCertificateProfiles
 description: Listar Propriedades e relações dos objetos windowsPhone81ImportedPFXCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d3ef00ab0d69ee5aa49e70659b023d84b20743c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6e2d97199bc6200da5e5d58c01fe95c640faceb1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42733879"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43429535"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>Listar windowsPhone81ImportedPFXCertificateProfiles
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -112,7 +114,6 @@ Content-Length: 1725
   ]
 }
 ```
-
 
 
 

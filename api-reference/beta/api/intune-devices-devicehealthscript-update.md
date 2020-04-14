@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceHealthScript
 description: Atualiza as propriedades de um objeto deviceHealthScript.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ec2609c17259dcfb04e06aa115be0fe99e33c20
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: e93ee667a8a4b479b8e4b8bde78b7808a7acea0d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43426384"
 ---
 # <a name="update-devicehealthscript"></a>Atualizar deviceHealthScript
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -53,6 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |:---|:---|:---|
 |id|String|Identificador exclusivo do script de integridade do dispositivo|
 |publicador|String|Nome do editor de script de integridade do dispositivo|
+|versão|String|Versão do script de integridade do dispositivo|
 |displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
 |description|String|Descrição do script de integridade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
@@ -60,9 +63,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de integridade do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
-|runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
-|roleScopeTagIds|String collection|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
+|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|roleScopeTagIds|Coleção String|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
+|isGlobalScript|Boolean|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
+|highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
 
 
 
@@ -81,6 +86,7 @@ Content-length: 575
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -90,8 +96,10 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
- }
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -122,7 +130,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 

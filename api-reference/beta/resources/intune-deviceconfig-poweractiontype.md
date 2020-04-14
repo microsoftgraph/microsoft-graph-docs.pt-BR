@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração powerActionType
 description: Tipos de ação de energia
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6352809006b196ecafc05be817af81cffb47797e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a65f5f59ad4f598152145313481b537fa3035bd5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788412"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437063"
 ---
 # <a name="poweractiontype-enum-type"></a>tipo de enumeração powerActionType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -4,17 +4,17 @@ description: Lista os aplicativos cliente pré autorizados
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: b84e9a49d293978754a06bdae229806f529690ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 195659151fd512152dca267233c50bf1870c49b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521576"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436860"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>tipo de recurso Preauthorizedapplication e
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Lista os aplicativos clientes que são previamente autorizados com as permissõe
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |appId|String| O identificador exclusivo do aplicativo. |
-|permissionIds|String collection| O identificador exclusivo para o [oauth2PermissionScopes](permissionscope.md) que o aplicativo exige. |
+|permissionIds|Coleção String| O identificador exclusivo para o [oauth2PermissionScopes](permissionscope.md) que o aplicativo exige. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
