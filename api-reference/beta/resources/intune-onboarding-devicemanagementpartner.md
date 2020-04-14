@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso deviceManagementPartner
 description: Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivos.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6806b94e559139de09ddb74a0eadc759e8e12541
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ded5ca40f2dbc37dabef915793bcf8f9c6c872c6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778908"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455662"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Tipo de recurso deviceManagementPartner
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração configurationUsage
 description: Valores possíveis da lista ConfigurationUsage.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9db3809ae91ca3fc1294c2045ebd072f813ae985
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 366765594a559ec8db966458c5a7a1dc2ed1ce10
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795663"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453475"
 ---
 # <a name="configurationusage-enum-type"></a>tipo de enumeração configurationUsage
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

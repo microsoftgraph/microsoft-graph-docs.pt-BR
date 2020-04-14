@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso managedAppProtectionPolicySetItem
 description: Uma classe que contém as propriedades usadas para proteção de aplicativos gerenciados PolicySetItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e8bdc277f92d30f6506b5528bc00816d8639e65
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e9a71fd8768690fcb68fc97d7846d08995468a99
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458393"
 ---
 # <a name="managedappprotectionpolicysetitem-resource-type"></a>tipo de recurso managedAppProtectionPolicySetItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -43,7 +45,7 @@ Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)
 |displayName|Cadeia de caracteres|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|guidedDeploymentTags|Coleção String|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |targetedAppManagementLevels|String|TargetedAppManagementLevels do ManagedAppPolicySetItem.|
 
 ## <a name="relationships"></a>Relações

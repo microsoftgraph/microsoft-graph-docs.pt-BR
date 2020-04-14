@@ -1,18 +1,20 @@
 ---
 title: função getManagedAppDiagnosticStatuses
 description: Obtém diagnóstico do status de validação para um determinado usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cd9d5ccf9477b0db5aec803fbe1b18482f49c32
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0c3930dd8e70deb2324fbb6e95694cf0be9a05c2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800554"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447504"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>função getManagedAppDiagnosticStatuses
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -76,7 +78,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

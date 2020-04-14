@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyDefinitionFile
 description: A entidade representa um arquivo XML ADMX (modelo administrativo). O arquivo ADMX contém uma coleção de definições de política de grupo e seus locais por caminho de categoria. O arquivo de definição de política de grupo também contém os idiomas suportados conforme determinado pelos arquivos de idioma do ADML (modelo administrativo) dependente de idioma.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b91839ad7c9d4d5052a9249e37f3be7eb1fe5404
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 821acf4f14602ea622b03b310b12a1e5f8269395
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783006"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448080"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>tipo de recurso groupPolicyDefinitionFile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -31,7 +33,7 @@ A entidade representa um arquivo XML ADMX (modelo administrativo). O arquivo ADM
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome amigável localizado do arquivo ADMX.|
 |description|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
-|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX.|
+|languageCodes|Coleção String|Os códigos de idioma suportados para o arquivo ADMX.|
 |targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX.|
 |targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|

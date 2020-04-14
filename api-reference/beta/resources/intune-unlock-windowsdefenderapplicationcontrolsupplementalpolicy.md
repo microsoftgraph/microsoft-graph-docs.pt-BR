@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsDefenderApplicationControlSupplementalPolicy
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df4373ba0bd438eb645c11e86449b3fd4d84e913
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb54ddff0b8e97912b241efc2fa742b0ee661c3d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729077"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449586"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicy
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -41,7 +43,7 @@ Ainda não documentado
 |versão|String|A versão da política suplementar da WindowsDefenderApplicationControl.|
 |creationDatetime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi carregada.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da política suplementar do WindowsDefenderApplicationControl.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

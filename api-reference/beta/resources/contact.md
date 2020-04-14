@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso contact
 description: Um contato é um item no Outlook no qual você pode organizar e salvar informações sobre as pessoas e organizações com quem se comunica. Os contatos estão contidos em pastas de contatos.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 256a8e63b5ff331bdc770ed690998c98c1e92098
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2866d316deffa3160e5c43535a55df93efa429ca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507461"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458102"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -98,7 +98,7 @@ Veja a seguir uma representação JSON do recurso
 |displayName|Cadeia de caracteres|O nome para exibição do contato. Você pode especificar o nome de exibição em uma operação [criar](../api/user-post-contacts.md) ou [atualizar](../api/contact-update.md). Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação [atualizar](../api/contact-update.md).|
 |emailAddresses|coleção [typedEmailAddress](typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
-|flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de conclusão do contato. |
+|sinalizador|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de conclusão do contato. |
 |gender |String |O sexo do contato. |
 |generation|String|A geração do contato.|
 |givenName|String|O nome do contato.|

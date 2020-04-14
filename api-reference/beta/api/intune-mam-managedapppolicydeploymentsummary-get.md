@@ -1,18 +1,20 @@
 ---
 title: Obter managedAppPolicyDeploymentSummary
 description: Ler propriedades e relações do objeto managedAppPolicyDeploymentSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f09a768b509c237400af32f3ba656f883938e31e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: edcc9e132a9888935766f5f27b4acfb2682b48ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803551"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455826"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Obter managedAppPolicyDeploymentSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -92,7 +94,6 @@ Content-Length: 688
   }
 }
 ```
-
 
 
 

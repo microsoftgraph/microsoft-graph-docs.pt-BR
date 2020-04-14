@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementConstraint
 description: Entidade base para uma restrição
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f52150e249899276db26bbe52a8594bd75af0b10
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d3ca6c31e011bacf04d6796907b3eff951608e89
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785467"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448334"
 ---
 # <a name="devicemanagementconstraint-resource-type"></a>tipo de recurso deviceManagementConstraint
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

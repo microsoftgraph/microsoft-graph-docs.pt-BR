@@ -1,18 +1,20 @@
 ---
 title: Atualizar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: Atualiza as propriedades de um objeto windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d908d20f3a7b02fe5d11ea1a1070830a4422e47f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e56d0aa964e341d231d7468328be32bb8c4f590f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799763"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457163"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Atualizar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -111,7 +113,6 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
 
 
 

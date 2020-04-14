@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso remoteLockActionResult
 description: Resultado da ação de bloquear com um pin para desbloquear
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 232d7b0244da1afb396869512dc394b02a22b084
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: db6ce9d84ad2e280ea562101eab77a83f2f1964f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783890"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448110"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Tipo de recurso remoteLockActionResult
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

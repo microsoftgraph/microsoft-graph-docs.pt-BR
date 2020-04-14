@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementEnumConstraint
 description: A restrição que impõe o valor da configuração é de um conjunto de cadeias de caracteres permitido
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab333cc5b55e588ef01257da02f0832edbf02a30
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a118fd250788ba00baf50495f346485572f750aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785460"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448327"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>tipo de recurso deviceManagementEnumConstraint
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

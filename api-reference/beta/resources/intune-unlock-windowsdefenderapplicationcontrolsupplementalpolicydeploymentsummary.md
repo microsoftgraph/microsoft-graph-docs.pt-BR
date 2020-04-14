@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 description: Contém propriedades para o resumo de implantação de uma política complementar do WindowsDefenderApplicationControl.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 479e929f2c20126225467144d4ce1fe5cef2c58d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c16cdd6518998f6979260462d844cefa072f2061
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764212"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449556"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

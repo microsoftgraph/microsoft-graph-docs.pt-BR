@@ -1,18 +1,20 @@
 ---
 title: Obter telecomExpenseManagementPartner
 description: Ler propriedades de leitura e relações do objeto telecomExpenseManagementPartner.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0cb0a3268d5be9f5c574ee0f2e83bdffb19a4cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e3bcdc2551c1b6beba3347be74d2c9a93677ccd7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800316"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457553"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>Obter telecomExpenseManagementPartner
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -80,7 +82,6 @@ Content-Length: 330
   }
 }
 ```
-
 
 
 

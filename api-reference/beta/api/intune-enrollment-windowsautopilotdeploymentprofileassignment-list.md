@@ -1,18 +1,20 @@
 ---
 title: Listar windowsAutopilotDeploymentProfileAssignments
 description: Listar Propriedades e relações dos objetos windowsAutopilotDeploymentProfileAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0989af8909199d1b4694f8af896f3555ccbfd10
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4579e8e1c8c4328ad87e91a109919c7141c17eeb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42805056"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452465"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>Listar windowsAutopilotDeploymentProfileAssignments
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -79,7 +81,6 @@ Content-Length: 354
   ]
 }
 ```
-
 
 
 

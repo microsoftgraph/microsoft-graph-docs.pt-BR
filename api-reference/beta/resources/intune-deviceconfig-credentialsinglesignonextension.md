@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso credentialSingleSignOnExtension
 description: Representa um perfil de extensão de logon único de tipo de credencial.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72144dc9194f0452b947e2cb72e934893f1721e6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 51c003d84cb323a0fb049be52e46a7d5fce5112b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795656"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453468"
 ---
 # <a name="credentialsinglesignonextension-resource-type"></a>tipo de recurso credentialSingleSignOnExtension
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -28,7 +30,7 @@ Herda de [singleSignOnExtension](../resources/intune-deviceconfig-singlesignonex
 |:---|:---|:---|
 |extensionIdentifier|String|Obtém ou define a ID do pacote da extensão do aplicativo que executa o SSO para as URLs especificadas.|
 |teamIdentifier|String|Obtém ou define a ID de equipe da extensão de aplicativo que executa o SSO para as URLs especificadas.|
-|domínio|Coleção de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
+|domínio|Coleção String|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
 |esfera|String|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
 |as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsDeviceType
 description: Contém propriedades do tipo de dispositivo do Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 36a1a92f0526b92a026ca650798ea7fd288398a8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8f953e5169945cdb3f09a5926030387c3f558b4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797518"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450763"
 ---
 # <a name="windowsdevicetype-enum-type"></a>tipo de enumeração windowsDeviceType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Contém propriedades do tipo de dispositivo do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum sinalizador definido.|
+|nenhuma|,0|Nenhum sinalizador definido.|
 |placa|1|Se o tipo de dispositivo do Windows da área de trabalho é ou não suportado.|
 |processadores|duas|Se o tipo de dispositivo móvel do Windows é ou não suportado.|
 |holographic|4 |Se o tipo de dispositivo do Windows Holographic é ou não suportado.|

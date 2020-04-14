@@ -1,18 +1,20 @@
 ---
 title: Criar intuneBrandingProfile
 description: Criar um novo objeto intuneBrandingProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e67b58af13ec67d157a44b657e019a0bd4c37204
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c497b81df5672df4a0d188fde1de4f3866b88611
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458190"
 ---
 # <a name="create-intunebrandingprofile"></a>Criar intuneBrandingProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -79,7 +81,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar intuneBr
 |showOfficeWebApps|Boolean|Booliano que indica se o Office webapps será mostrado no portal da empresa|
 |sendDeviceOwnershipChangePushNotification|Boolean|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final. Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
 
 
 
@@ -218,7 +220,6 @@ Content-Length: 1964
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Listar deviceManagementScriptPolicySetItems
 description: Listar Propriedades e relações dos objetos deviceManagementScriptPolicySetItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5198f2f799ecb87684bd4f9bd1c6a2da10dc3896
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2afb9134e1a318f9b7fb40ce9aa012df514d1ea9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802367"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454407"
 ---
 # <a name="list-devicemanagementscriptpolicysetitems"></a>Listar deviceManagementScriptPolicySetItems
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -84,7 +86,6 @@ Content-Length: 570
   ]
 }
 ```
-
 
 
 

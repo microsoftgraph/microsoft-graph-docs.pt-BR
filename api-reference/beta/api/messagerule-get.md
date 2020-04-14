@@ -1,20 +1,20 @@
 ---
 title: Obter regra
 description: Obtenha as propriedades e as relações de um objeto messageRule.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c1f231ce172d57d5b388b4ed848731da844e492b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 932337a15ac558d8f92c3b0f76a2c40b7ad74984
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456843"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448439"
 ---
 # <a name="get-rule"></a>Obter regra
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5d
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC. 
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

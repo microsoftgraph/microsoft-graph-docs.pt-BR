@@ -3,14 +3,14 @@ title: tipo de recurso appIdentity
 description: Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui ID do aplicativo, nome, ID da entidade de serviço e nome. Este recurso é chamado pela API directoryAudit
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 08cb797f56d26b4b421fb25210f7dad2715c70d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: d9d2c6ff3ceadd55404d32e57d1837c4023771f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508300"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450165"
 ---
 # <a name="appidentity-resource-type"></a>tipo de recurso appIdentity
 

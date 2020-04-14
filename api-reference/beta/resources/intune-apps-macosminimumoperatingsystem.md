@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso macOSMinimumOperatingSystem
 description: O sistema operacional mínimo necessário para um aplicativo do MacOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10761cc10189608ac7bd7bce52a199c355f3a807
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2d3dcfee961f312a9944958ec159f6c9af4aa9da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798018"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458862"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>tipo de recurso macOSMinimumOperatingSystem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

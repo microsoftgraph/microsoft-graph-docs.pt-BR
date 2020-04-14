@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosVppAppAssignedLicense
 description: atribuição de licença do programa de compra de volume iOS. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1f39c51ed187034655be1ac5797f734b78b4fe8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c4db87866ac28541ebae2029614de15c5241fdfd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798067"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458959"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>tipo de recurso iosVppAppAssignedLicense
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

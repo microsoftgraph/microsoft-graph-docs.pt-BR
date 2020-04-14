@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso enrollmentConfigurationAssignment
 description: Atribuição de configuração de registro
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87b98ab191f8a1b7608a3b9eecf68f6df17272af
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c7b788737471ac8a127b339a1efb677fa726da08
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778635"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455593"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: Atualizar importedWindowsAutopilotDeviceIdentity
 description: Atualizar as propriedades de um objeto importedWindowsAutopilotDeviceIdentity.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f077756ea4eb4007e9e51fb73f842eb7a0676d4f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 752ee4f5b423c52809127f7528b76d9dbafb92ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42805084"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452509"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Atualizar importedWindowsAutopilotDeviceIdentity
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -120,7 +122,6 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

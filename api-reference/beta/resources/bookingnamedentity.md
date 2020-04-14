@@ -2,19 +2,19 @@
 title: tipo de recurso bookingNamedEntity
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 5c219d0ab879c1bc1ae172d08322647b2c261497
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa200d2d7aee435f6bb156cc857d471c222e740d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507986"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453652"
 ---
 # <a name="bookingnamedentity-resource-type"></a>tipo de recurso bookingNamedEntity
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

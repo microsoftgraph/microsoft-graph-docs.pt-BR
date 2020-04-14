@@ -1,18 +1,20 @@
 ---
 title: Criar unsupportedGroupPolicyExtension
 description: Criar um novo objeto unsupportedGroupPolicyExtension.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5a7826e00c2b0bccb6fa7e3832995fa67ea9dbd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5d7c67d2322d914e156bc6eeff76a957982a38cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804566"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454810"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>Criar unsupportedGroupPolicyExtension
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -96,7 +98,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 

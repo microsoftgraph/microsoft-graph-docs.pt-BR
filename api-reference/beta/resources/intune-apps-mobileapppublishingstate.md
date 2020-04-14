@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração mobileAppPublishingState
 description: Indica o estado de publicação de um aplicativo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d82f2c4ab2a486e5d85369b8ae67e9b1e74b5324
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b8c5dfef2e58518608728b925084963f1739ed1a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797787"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458541"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>tipo de enumeração mobileAppPublishingState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

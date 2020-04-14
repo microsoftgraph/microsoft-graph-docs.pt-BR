@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração companyPortalAction
 description: Ação em um dispositivo que pode ser executado no portal da empresa
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 06b98895d5439675df07584b6716a18767738306
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9b0e7eb1c2165a4201a185a5cb8dff2b6a073160
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771905"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457412"
 ---
 # <a name="companyportalaction-enum-type"></a>tipo de enumeração companyPortalAction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

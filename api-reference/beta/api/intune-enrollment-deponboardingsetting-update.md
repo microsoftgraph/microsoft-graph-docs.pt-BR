@@ -1,18 +1,20 @@
 ---
 title: Atualizar depOnboardingSetting
 description: Atualiza as propriedades de um objeto depOnboardingSetting.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb36a7e6a8205144ac02a8d373a2c2e728029cee
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e9ae1aba99df421761ac34bb5065bfa20390b8b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813208"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448245"
 ---
 # <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -63,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [depOnbo
 |tokenname|String|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
 |dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
@@ -123,7 +125,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

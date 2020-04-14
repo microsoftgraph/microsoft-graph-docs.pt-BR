@@ -1,18 +1,20 @@
 ---
 title: Atualizar managedAppPolicyDeploymentSummary
 description: Atualizar as propriedades de um objeto managedAppPolicyDeploymentSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d690d4d3e59846c466a35ee5c54050a83865be59
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e53086e7f8dcde578960b4dd7be356caddb16359
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803544"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455819"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Atualizar managedAppPolicyDeploymentSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -120,7 +122,6 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
-
 
 
 

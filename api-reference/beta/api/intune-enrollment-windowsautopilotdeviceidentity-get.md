@@ -1,18 +1,20 @@
 ---
 title: Obter windowsAutopilotDeviceIdentity
 description: Leia as propriedades e as relações do objeto windowsAutopilotDeviceIdentity.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e19da07f66266d28b92b5a62837c2c0a0997482f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 58f39920d386d50050f8e1c1dd6fa08d5148f3d3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42805014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452383"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>Obter windowsAutopilotDeviceIdentity
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -96,7 +98,6 @@ Content-Length: 1187
   }
 }
 ```
-
 
 
 

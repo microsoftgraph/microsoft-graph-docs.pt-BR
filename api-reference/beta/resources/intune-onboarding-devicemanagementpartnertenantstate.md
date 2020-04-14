@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceManagementPartnerTenantState
 description: Estado do parceiro desse locatário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b3c2ee7c46e98a9fd834a4a3aba6011845cc5ef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4ca8c8a0263fe3f8672dd66c5ac620765d176f66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778712"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455586"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enumeração deviceManagementPartnerTenantState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,7 +27,7 @@ Estado do parceiro desse locatário.
 |:---|:---|:---|
 |desconhecido|,0|O estado do parceiro é desconhecido.|
 |indisponível|1|O parceiro não está disponível.|
-|enabled|duas|O parceiro está habilitado.|
+|habilitadas|duas|O parceiro está habilitado.|
 |Cerro|3D|Conexão de parceiro terminada.|
 |rejeitar|4 |As mensagens de parceiros são rejeitadas.|
 |Não responde|5 |O parceiro não responde.|

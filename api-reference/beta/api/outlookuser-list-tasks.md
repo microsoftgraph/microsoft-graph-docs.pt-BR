@@ -2,19 +2,19 @@
 title: Listar tarefas
 description: Obtenha todas as tarefas do Outlook na caixa de correio do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9752274de9e6d6045c1cbad4bcb5036e9a52d362
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3888c1164fc167ad98fa9a572cf95caec68bd61e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456065"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457107"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

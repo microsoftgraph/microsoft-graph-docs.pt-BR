@@ -2,15 +2,15 @@
 title: Atualizar ipnamedlocation
 description: Atualiza as propriedades de um objeto ipNamedLocation.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 50ae9a0e1523a625b2deaf971e9031a1e2ea1bb1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: d31b6a91d052b0b8f717d5696ba56e765a2788cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062257"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458139"
 ---
 # <a name="update-ipnamedlocation"></a>Atualizar ipNamedlocation
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:-------------|:------------|:------------|
 |displayName|String|Nome legível do local.|
 |Intervalos|Coleção [ipRange](../resources/iprange.md)|Lista de intervalos de endereços IP no formato CIDR do IPv4 (1.2.3.4/32) ou qualquer formato IPv6 permitido da IETF RFC5962.|
-|isTrusted|Booliano|O valor é `true` se esse local for explicitamente confiável.|
+|isTrusted|Boolean|O valor é `true` se esse local for explicitamente confiável.|
 
 ## <a name="response"></a>Resposta
 

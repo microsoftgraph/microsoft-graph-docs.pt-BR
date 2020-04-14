@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicySettingMapping
 description: A configuração da política de grupo para o mapeamento MDM/Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83c3f827bcd7ed9bf5a0fa7fcf863c1d585e4342
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d237484a36a12169a030d780db9431f9267d3582
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783155"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458444"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>tipo de recurso groupPolicySettingMapping
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -34,7 +36,7 @@ A configuração da política de grupo para o mapeamento MDM/Intune.
 |:---|:---|:---|
 |id|String|Ainda não documentado|
 |parentId|String|ID pai da configuração de política de grupo.|
-|childIdList|Coleção de cadeias de caracteres|Lista de IDs filhos da configuração de política de grupo.|
+|childIdList|Coleção String|Lista de IDs filhos da configuração de política de grupo.|
 |settingName|Cadeia de caracteres|O nome dessa configuração de política de grupo.|
 |settingValue|String|O valor dessa configuração de política de grupo.|
 |settingValueType|String|O tipo de valor dessa configuração de política de grupo.|
@@ -50,7 +52,7 @@ A configuração da política de grupo para o mapeamento MDM/Intune.
 |isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no MDM ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
-|intuneSettingUriList|Coleção de cadeias de caracteres|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
+|intuneSettingUriList|Coleção String|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
 |intuneSettingDefinitionId|String|A ID da definição da configuração do Intune|
 
 ## <a name="relationships"></a>Relações

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso hasPayloadLinkResultItem
 description: Uma classe que contém o resultado da ação HasPayloadLinks.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46568e386c2896db307f78cc12205c115605a76e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3194dc0e7c1f154dcb61ab4f4731111a87fefe9d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775903"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458407"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>tipo de recurso hasPayloadLinkResultItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

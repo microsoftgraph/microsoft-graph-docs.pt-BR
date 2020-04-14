@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso eventMessageRequest
 description: Uma mensagem que representa uma solicitação de reunião.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 086abfa10e26cc85ffdbe48932feb8b7761c2872
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f3e15e95a9a3b933fbf12d34fad26493fff13c1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499033"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454095"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso eventMessageRequest
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

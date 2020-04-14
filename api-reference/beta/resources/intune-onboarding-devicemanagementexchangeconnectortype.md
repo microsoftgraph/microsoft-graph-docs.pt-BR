@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceManagementExchangeConnectorType
 description: O tipo de conector do Exchange.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ba3550a494350a31a4b7dc3a2977c7b9660a51cd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 14b64c562dc957ff346209ece2555d335f16515d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779062"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448058"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

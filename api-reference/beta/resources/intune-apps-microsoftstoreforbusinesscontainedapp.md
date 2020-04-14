@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso microsoftStoreForBusinessContainedApp
 description: Uma classe que representa um aplicativo contido de um MicrosoftStoreForBusinessApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1dfcf9fcfe41552a652643d2122b3d256449a117
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 55df4b9c3291d9e9f7ae92eb3056c50d983264b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797871"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458615"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>tipo de recurso microsoftStoreForBusinessContainedApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

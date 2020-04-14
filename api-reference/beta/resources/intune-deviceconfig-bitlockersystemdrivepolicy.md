@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso bitLockerSystemDrivePolicy
 description: Políticas de base de criptografia BitLocker.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 313def2a64fdb1a2af57461ba58860361e0de1f2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 82ed6d717c58f740dd25d2aff18478ced48c4641
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795726"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453670"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>tipo de recurso bitLockerSystemDrivePolicy
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

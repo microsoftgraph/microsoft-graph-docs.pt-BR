@@ -2,19 +2,19 @@
 title: tipo de recurso optionalClaim
 description: Contém uma declaração opcional associada a um aplicativo.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2ddfde1c367d77c741b142fbce5ab2e053273e41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 004af66e19c540421730c05ebeca27f90abf99db
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522141"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455018"
 ---
 # <a name="optionalclaim-resource-type"></a>tipo de recurso optionalClaim
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Confira [fornecer declarações opcionais ao aplicativo Azure AD](https://docs.m
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|AdditionalProperties|String collection| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade Name. |
+|AdditionalProperties|Coleção String| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade Name. |
 |essencial|Boolean| Se o valor for true, a declaração especificada pelo cliente será necessária para garantir uma experiência de autorização suave para a tarefa específica solicitada pelo usuário final. O valor padrão é falso.|
 |nome|String| O nome da declaração opcional. |
 |source|String| A origem (objeto de diretório) da declaração. Há declarações predefinidas e declarações definidas pelo usuário das propriedades de extensão. Se o valor de origem for nulo, a declaração será uma declaração opcional predefinida. Se o valor de origem for User, o valor na propriedade Name será a Propriedade Extension do objeto user. |

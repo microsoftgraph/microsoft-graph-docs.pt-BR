@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsAutopilotDeploymentProfilePolicySetItem
 description: Uma classe que contém as propriedades usadas para o perfil de implantação do piloto automático do Windows PolicySetItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e958076c046231f8f84f973fc3d3820cfd7f10da
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8e0b5ce3786561bb697da09707fb2f62358229ca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774866"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448005"
 ---
 # <a name="windowsautopilotdeploymentprofilepolicysetitem-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfilePolicySetItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -43,7 +45,7 @@ Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)
 |displayName|Cadeia de caracteres|DisplayName do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status do PolicySetItem. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Herdado de [policySetItem](../resources/intune-policyset-policysetitem.md). Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
+|guidedDeploymentTags|Coleção String|Marcas da implantação dirigida herdadas de [policySetItem](../resources/intune-policyset-policysetitem.md)|
 
 ## <a name="relationships"></a>Relações
 Nenhum

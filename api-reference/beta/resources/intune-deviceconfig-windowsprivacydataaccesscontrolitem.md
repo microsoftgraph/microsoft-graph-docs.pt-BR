@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso windowsPrivacyDataAccessControlItem
 description: Especificar o nível de controle de acesso por categoria de dados de privacidade
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 237b7f992b78d134d37ebdeb7d47b14257b0f801
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 801642c1c9f6f77e2af57eef8113b89e838803d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786254"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453454"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>tipo de recurso windowsPrivacyDataAccessControlItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

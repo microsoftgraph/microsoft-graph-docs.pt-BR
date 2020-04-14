@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso deviceAndAppManagementAssignmentTarget
 description: Tipo base para destinos de atribuição.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8d72918a9baaf1216d4016aaac9c149319a3c34
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7bebdaa6da8212b1a0a246ec34dcf84d8f8dd8d2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771380"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457311"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentTarget
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

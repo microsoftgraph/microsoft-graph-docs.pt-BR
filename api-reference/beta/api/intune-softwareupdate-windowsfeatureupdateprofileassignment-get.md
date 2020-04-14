@@ -1,18 +1,20 @@
 ---
 title: Obter windowsFeatureUpdateProfileAssignment
 description: Leia as propriedades e as relações do objeto windowsFeatureUpdateProfileAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f78e4ebd364e4526dc86ae85632c7ebc85e5babb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 21c1c3aaa9d9f79d28fc56daccf6c3e7875f5181
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800351"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457588"
 ---
 # <a name="get-windowsfeatureupdateprofileassignment"></a>Obter windowsFeatureUpdateProfileAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -78,7 +80,6 @@ Content-Length: 255
   }
 }
 ```
-
 
 
 

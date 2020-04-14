@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso dataSharingConsent
 description: Informações de consentimento de compartilhamento de dados.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f98c2967eb9d3e14b0f8e219547aa73104d67614
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 22247866b1f1a4c2a9ae391cd7c9564e67f20f3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785032"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456905"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso dataSharingConsent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

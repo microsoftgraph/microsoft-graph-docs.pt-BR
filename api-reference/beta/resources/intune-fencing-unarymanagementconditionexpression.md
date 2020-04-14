@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso unaryManagementConditionExpression
 description: Uma expressão de condição de gerenciamento que é avaliada usando uma operação unário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4616a7b7bdb54d1bb205d545db4ff7eecbeedbb5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1f0bd5282307d1c8619f756d79209fb04a86bef2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783190"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453234"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>tipo de recurso unaryManagementConditionExpression
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

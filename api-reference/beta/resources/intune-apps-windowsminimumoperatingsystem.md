@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsMinimumOperatingSystem
 description: O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e0e7f274be302e58692b6a6f18b43906de27fd3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8a148bc1ace18af3d4fd1206e7caf3849074244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797504"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450749"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

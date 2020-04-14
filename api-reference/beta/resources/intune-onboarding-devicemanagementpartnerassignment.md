@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementPartnerAssignment
 description: Direcionamento de grupo de usuários para o parceiro de gerenciamento de dispositivos
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 306acfae948a81ca5c8933f455a21347bf27ee9e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4bee2745c7757ed31d18c3a05916b1e9aa0bec41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778719"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455648"
 ---
 # <a name="devicemanagementpartnerassignment-resource-type"></a>tipo de recurso deviceManagementPartnerAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

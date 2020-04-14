@@ -3,18 +3,18 @@ title: Excluir política
 description: Excluir uma política.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: d86f4011df727ec31e2c054e0fa2ea10736ca9e5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: dkershaw10
+ms.openlocfilehash: c24a20133d79e32d0a2e5559fbc2309b5863aa9b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455526"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450883"
 ---
 # <a name="delete-policy"></a>Excluir política
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

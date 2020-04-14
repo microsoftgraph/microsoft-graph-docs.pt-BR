@@ -2,19 +2,19 @@
 title: Tipo de recurso Contract
 description: Representa uma parceria existente que o locatário do parceiro tem com um locatário do cliente.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 67e2a4f78e33748b7648dd57892831faf7e27c23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cbf58924c8d8abec95346364a0c3723f8a44f8fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507419"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458061"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso Contract
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementIntent
 description: Entidade que representa uma intenção de aplicar configurações a um dispositivo
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ab1b6cd07bfa922f82cbd11e4f03aa2ba0a3515
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c31a227766e57554677191a3ab509f167e712882
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785432"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455684"
 ---
 # <a name="devicemanagementintent-resource-type"></a>tipo de recurso deviceManagementIntent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -42,7 +44,7 @@ Entidade que representa uma intenção de aplicar configurações a um dispositi
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
 |templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

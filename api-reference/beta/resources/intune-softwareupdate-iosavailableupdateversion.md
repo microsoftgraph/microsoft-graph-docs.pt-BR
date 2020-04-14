@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosAvailableUpdateVersion
 description: detalhes da versão da atualização disponível do iOS
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29cf7500bc7069af0b2a1184adb0fe28bb0ac891
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 91fa2d9d6c770d67b185d94c91200ce6fc5b23b7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766361"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455027"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>tipo de recurso iosAvailableUpdateVersion
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -26,7 +28,7 @@ detalhes da versão da atualização disponível do iOS
 |productVersion|String|A versão da atualização.|
 |postingDateTime|DateTimeOffset|A data de lançamento da atualização.|
 |expirationDateTime|DateTimeOffset|A data de expiração da atualização.|
-|supportedDevices|Coleção de cadeias de caracteres|Lista de dispositivos com suporte para a atualização.|
+|supportedDevices|Coleção String|Lista de dispositivos com suporte para a atualização.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

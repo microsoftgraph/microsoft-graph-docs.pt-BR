@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso macOSLobChildApp
 description: Contém as propriedades do aplicativo de LOB do MacOS em um pacote de pacote
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a74d40582806fb4f574cb80beaff2db0abac0caa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 34ad5669235df33a3933c34001da9bae993a8faf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798039"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458883"
 ---
 # <a name="macoslobchildapp-resource-type"></a>tipo de recurso macOSLobChildApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

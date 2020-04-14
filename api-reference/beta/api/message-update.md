@@ -1,20 +1,20 @@
 ---
 title: Atualizar mensagem
 description: Atualizar as propriedades do objeto mensagem.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c087c9ecb423d305681567b68bfb8726dbe3e2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 283cc2af9a643ec1233e912466a1c615abdd4b79
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456877"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448461"
 ---
 # <a name="update-message"></a>Atualizar mensagem
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. |
 |sinalizador|[followupFlag](../resources/followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Devem corresponder à caixa de correio real que foi usada. |
-|importância|Cadeia de caracteres|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|importância|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Atualizável apenas se IsDraft = true.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|

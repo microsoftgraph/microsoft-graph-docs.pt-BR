@@ -2,19 +2,19 @@
 title: tipo de recurso bookingCurrency
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: c1d56dde0c239245f6724040229df7d417a79613
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d04522b3a754e5a929fd48f8ea3c94f6ee5a6c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508000"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453759"
 ---
 # <a name="bookingcurrency-resource-type"></a>tipo de recurso bookingCurrency
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

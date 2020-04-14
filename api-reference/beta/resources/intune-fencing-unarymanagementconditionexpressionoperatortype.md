@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração unaryManagementConditionExpressionOperatorType
 description: Operadores suportados para expressões de condição de gerenciamento unários
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b8983ed82dbe525088a4e5ee234bbc8c9a9829c5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 660d679265ce8739e882bf8ac066f8c7969e78c9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783183"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458511"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>tipo de enumeração unaryManagementConditionExpressionOperatorType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

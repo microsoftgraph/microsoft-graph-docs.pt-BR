@@ -2,19 +2,19 @@
 title: tipo de recurso credentialUsageSummary
 description: Representa o estado atual de quantos usuários da sua organização estão usando recursos de redefinição de senha de autoatendimento.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 17fc4535e5132b6bf6c2f6eab4a94b5a58ef9bb1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 736575ba8958a45cad76f7142967c2a629b0732a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507349"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458023"
 ---
 # <a name="credentialusagesummary-resource-type"></a>tipo de recurso credentialUsageSummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +30,9 @@ Representa o estado atual de quantos usuários da sua organização estão usand
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| authMethod | string | Representa o método de autenticação usado pelo usuário. Os valores possíveis são `email`: `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` , (usado somente para redefinição de senha de autoatendimento `appCode`), `alternateMobileCall` `appNotification`, e (somente com suporte para registro). |
+| authMethod | cadeia de caracteres | Representa o método de autenticação usado pelo usuário. Os valores possíveis são `email`: `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` , (usado somente para redefinição de senha de autoatendimento `appCode`), `alternateMobileCall` `appNotification`, e (somente com suporte para registro). |
 | failureActivityCount | Int64 | Fornece a contagem de redefinições ou dados de registro com falha. |
-| apresentam | string | Define o recurso a ser relatado. Os valores possíveis são `registration` : `reset`e. |
+| apresentam | cadeia de caracteres | Define o recurso a ser relatado. Os valores possíveis são `registration` : `reset`e. |
 | id | String | O identificador exclusivo da atividade. Somente leitura. |
 | successfulActivityCount | Int64 | Fornece a contagem de registros ou redefinições bem-sucedidas. |
 

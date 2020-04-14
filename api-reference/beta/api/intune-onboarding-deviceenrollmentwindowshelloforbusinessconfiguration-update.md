@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Atualize as propriedades de um objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 716650b408bbb6d0faf413e1410839e55aff21ea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d7d2c98349c35fe541418c1147b53ffb7d4ca262
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802941"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450371"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Atualizar deviceEnrollmentWindowsHelloForBusinessConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -139,7 +141,6 @@ Content-Length: 839
   "securityKeyForSignIn": "enabled"
 }
 ```
-
 
 
 

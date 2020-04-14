@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso groupPolicyPresentationValueList
 description: A entidade representa uma coleção de pares de nome/valor de uma apresentação de caixa de listagem em uma definição de política.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 992bf41203e956a40ddb14a95ecf3c87b4abbb74
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d039d96238f3b76dbfbc3df9fbc55dbe3a5f6612
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782894"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455131"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>tipo de recurso groupPolicyPresentationValueList
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

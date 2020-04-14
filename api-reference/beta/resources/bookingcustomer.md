@@ -2,19 +2,19 @@
 title: tipo de recurso bookingCustomer
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: af64f8686b1779030c0ace93b4805845c6ed3c81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42ad0826cdabbba2c3b26101d93160f71344fc6c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507993"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453651"
 ---
 # <a name="bookingcustomer-resource-type"></a>tipo de recurso bookingCustomer
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

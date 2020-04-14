@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração managedAppAvailability
 description: Disponibilidade de um aplicativo gerenciado (MAM).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1264fcdd702096a9c14264fe187d6b0631ff040f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f533d51a96a1eab20ba73929af94d1ed2a57325a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797962"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458734"
 ---
 # <a name="managedappavailability-enum-type"></a>tipo de enumeração managedAppAvailability
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

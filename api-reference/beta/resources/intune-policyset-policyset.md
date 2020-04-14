@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso policyset
 description: Uma classe que contém as propriedades usadas para Policyset.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d50b59deb24bba2e10e6060a46b41e435b779f4a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 845f353a7eb1f5fd95e460a68f23404b88b7a0b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775202"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458325"
 ---
 # <a name="policyset-resource-type"></a>tipo de recurso policyset
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -41,8 +43,8 @@ Uma classe que contém as propriedades usadas para Policyset.
 |description|String|Descrição do Policyset.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do Policyset. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida|
-|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Policyset|
+|guidedDeploymentTags|Coleção String|Marcas da implantação dirigida|
+|roleScopeTags|Coleção String|RoleScopeTags do Policyset|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

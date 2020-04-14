@@ -1,20 +1,20 @@
 ---
 title: Excluir mailFolder
 description: Exclua o mailFolder ou o mailSearchFolder especificado.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: beb64ef61e4b8e67b231faa8f6847b76004b0497
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b09329fd2e39ecd2e59e53b04aebfaaed5c13651
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457073"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457149"
 ---
 # <a name="delete-mailfolder"></a>Excluir mailFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

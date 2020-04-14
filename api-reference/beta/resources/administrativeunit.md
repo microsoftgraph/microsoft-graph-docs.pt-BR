@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c351ac7f06867cc7e8160352babb5e4fca5fe381
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 3c6eb4b38f2af40d3c559da91ab3275086d0e652
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124956"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450832"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso administrativeUnit
 
@@ -20,6 +20,8 @@ Namespace: microsoft.graph
 
 Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário e de grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos ou dentro do escopo para uma unidade administrativa para um administrador regional ou departamental.
 
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/administrativeunit-delta.md).
+
 Vejamos um exemplo. Imagine que Contoso Corp seja composto de duas divisões: Divisão de costa oeste e uma divisão de costa leste. As funções de diretório na contoso têm o escopo completo do locatário. Lee, um administrador da empresa contoso, deseja delegar responsabilidades administrativas, mas scopeá-las à divisão da costa oeste ou à divisão da costa leste.  Lee pode criar uma *unidade de admistrative da costa oeste* e colocar todos os usuários da costa oeste nessa unidade administrativa.  Da mesma forma, Lee pode criar uma *unidade administrativa da costa leste*.  Agora, Lee, pode começar a delegar responsabilidades administrativas a outros, mas com **escopo** para as novas unidades administrativas que ele criou. Lee coloca Jennifer em uma função de *administrador de assistência técnica* com **escopo** para a *unidade administrativa da costa oeste*.  Isso permite que o Jennifer redefina a senha de qualquer usuário, mas somente se esses usuários estiverem na *unidade administrativa da costa oeste*.  Da mesma forma, Lee cria Dave em uma função de *administrador de conta de usuário* com o **escopo** da *unidade administrativa da costa leste*.  Isso permite que Dave atualize os usuários, atribua licenças e redefina a senha de qualquer usuário, mas somente se esses usuários estiverem na *unidade administrativa da costa leste*. Para obter uma visão geral do vídeo, confira [introdução às unidades administrativas do Azure Active Directory](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units).
 
 Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview).
@@ -27,15 +29,16 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 Este tópico fornece descrições das propriedades declaradas e propriedades de navegação expostas pela entidade administrativeUnit, bem como as operações e funções que podem ser chamadas no recurso Administrativeunits dos quais.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Criar administrativeUnit](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Crie uma nova unidade administrativa.|
-|[Listar Administrativeunits dos quais](../api/administrativeunit-list.md) | coleção [administrativeUnit](administrativeunit.md) |Listar Propriedades de todos os Administrativeunits dos quais.|
-|[Obter administrativeUnit](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
-|[Atualizar adminstrativeUnit](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |Atualize o objeto administrativeUnit. |
-|[Excluir adminstrativeUnit](../api/administrativeunit-delete.md) | None |Exclua o objeto administrativeUnit. |
+|[Criar](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Crie uma nova unidade administrativa.|
+|[List](../api/administrativeunit-list.md) | coleção [administrativeUnit](administrativeunit.md) |Listar Propriedades de todos os Administrativeunits dos quais.|
+|[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
+|[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualize o objeto administrativeUnit. |
+|[Delete](../api/administrativeunit-delete.md) | Nenhum |Exclua o objeto administrativeUnit. |
+|[Obter delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Obter **administrativeunits dos quais** recém criados, atualizados ou excluídos sem ter que realizar uma leitura completa de toda a coleção de recursos.|
 |[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicionar um membro (usuário ou grupo).|
 |[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha a lista de Membros (de usuário e de grupo).|
 |[Obter um membro](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Obter um membro específico.|
@@ -55,7 +58,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |:---------------|:--------|:----------|
 |description|string|Uma descrição opcional para a unidade administrativa.|
 |displayName|cadeia de caracteres|Nome de exibição para a unidade administrativa.|
-|id|string|Identificador exclusivo para a unidade administrativa. Apenas leitura.|
+|id|cadeia de caracteres|Identificador exclusivo para a unidade administrativa. Somente leitura.|
 |visibilidade|string|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como HiddenMembership ou público. Se não for definido, o comportamento padrão é público. Quando definido como HiddenMembership, somente os membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações

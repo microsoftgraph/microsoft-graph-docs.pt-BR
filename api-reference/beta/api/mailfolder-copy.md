@@ -1,20 +1,20 @@
 ---
 title: 'mailFolder: copy'
 description: Copie uma mailFolder e seu conteúdo para outra mailFolder.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 807ab04b53dd00739ae8949b59461ea47027d8f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ebaa9147fd909c46f55ce569cfe328167a3908f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457091"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457156"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso unsupportedGroupPolicyExtension
 description: Extensão de política de grupo sem suporte.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b42daa1bc6a54de08f6f0db29e55af86e853424
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9cbc25ef9b1bf20a0f3c13058ca6f151e8e78b07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783127"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448103"
 ---
 # <a name="unsupportedgrouppolicyextension-resource-type"></a>tipo de recurso unsupportedGroupPolicyExtension
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

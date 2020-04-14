@@ -2,19 +2,19 @@
 title: 'outlookTask: concluir'
 description: 'Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** para a data atual, '
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: afe7f34d634a52c369916ca5acc68c05a1b6030c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2eb50c7f4437ebbae0f2b2778869bb6aef130105
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456184"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449790"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: concluir
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

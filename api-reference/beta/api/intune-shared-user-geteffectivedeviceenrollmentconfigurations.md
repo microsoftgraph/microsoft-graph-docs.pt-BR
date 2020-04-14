@@ -1,18 +1,20 @@
 ---
 title: função getEffectiveDeviceEnrollmentConfigurations
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64e3d53b2952e6f0ecb6242d13f41aaf9ae6fb70
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a263e13ccf1729c6c7c6244b04e699587a9d0730
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800568"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447518"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>função getEffectiveDeviceEnrollmentConfigurations
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -29,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -90,7 +92,6 @@ Content-Length: 422
   ]
 }
 ```
-
 
 
 

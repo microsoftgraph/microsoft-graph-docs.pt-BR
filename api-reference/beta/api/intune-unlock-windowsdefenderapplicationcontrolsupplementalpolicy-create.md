@@ -1,18 +1,20 @@
 ---
 title: Criar windowsDefenderApplicationControlSupplementalPolicy
 description: Criar um novo objeto windowsDefenderApplicationControlSupplementalPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d207aaced3212111cc40c78576fffe3ceb9d21ad
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2aaaa2d1933e8067a0830ad202a245c87441eccb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800071"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455387"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Criar windowsDefenderApplicationControlSupplementalPolicy
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -59,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 |versão|String|A versão da política suplementar da WindowsDefenderApplicationControl.|
 |creationDatetime|DateTimeOffset|A data e a hora em que a política suplementar WindowsDefenderApplicationControl foi carregada.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da política suplementar do WindowsDefenderApplicationControl.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de política suplementar do WindowsDefenderApplicationControl.|
 
 
 
@@ -111,7 +113,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

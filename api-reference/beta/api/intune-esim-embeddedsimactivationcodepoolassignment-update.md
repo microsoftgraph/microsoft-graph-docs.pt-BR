@@ -1,18 +1,20 @@
 ---
 title: Atualizar embeddedSIMActivationCodePoolAssignment
 description: Atualiza as propriedades de um objeto embeddedSIMActivationCodePoolAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 248384210ab721b151edd4aa0d7546ad54f49a47
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8dc0a1f5452f300ac33c5d888494ce7524ce051a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804881"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452138"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Atualizar embeddedSIMActivationCodePoolAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -91,7 +93,6 @@ Content-Length: 228
   }
 }
 ```
-
 
 
 

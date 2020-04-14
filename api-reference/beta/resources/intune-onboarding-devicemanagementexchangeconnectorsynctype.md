@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração deviceManagementExchangeConnectorSyncType
 description: O tipo de sincronização do Exchange Connector solicitada.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 57b3a31e7b80c546d17caf39c7269787367039e0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f4cde0b7d1d0ae6c728140c8e6b045b5a497a841
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779118"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448065"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorSyncType
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração certificateIssuanceStates
 description: Opções de estado de emissão de certificado.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c4307d8dadf1f3b74f4a7f92bf4b56d44f63ee7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 03bc757288afd670c5329bf45c68f282b3cd5264
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795698"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453630"
 ---
 # <a name="certificateissuancestates-enum-type"></a>tipo de enumeração certificateIssuanceStates
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -36,7 +38,7 @@ Opções de estado de emissão de certificado.
 |responseProcessingFailed|10 |Ainda não documentado|
 |responsePending|11|Ainda não documentado|
 |enrollmentSucceeded|12 |Ainda não documentado|
-|enrollmentNotNeeded|13 |Ainda não documentado|
+|enrollmentNotNeeded|Treze|Ainda não documentado|
 |revogado|14 |Ainda não documentado|
 |removedFromCollection|15 |Ainda não documentado|
 |renewVerified|16 |Ainda não documentado|

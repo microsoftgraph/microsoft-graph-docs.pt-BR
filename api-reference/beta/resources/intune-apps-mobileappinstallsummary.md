@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso mobileAppInstallSummary
 description: Contém propriedades para o resumo de instalação de um aplicativo móvel.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8f61fa7d4f23ddb86e7a02d7ad0233e6a34edd8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d6ee038510ce7891e2599dda2d101ed7d1aec6d1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797801"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457006"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso mobileAppInstallSummary
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -2,15 +2,15 @@
 title: tipo de recurso bookingService
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 2bdf2fa686023ce33233722b3cd05f2984d1cabb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53c5bc6be0953c68dc431be04b17f582715582c0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507898"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448364"
 ---
 # <a name="bookingservice-resource-type"></a>tipo de recurso bookingService
 
@@ -36,7 +36,7 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |defaultduration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M 59.999999999999 S. |
 |DefaultLocation|[location](location.md)|O local físico padrão para o serviço.|
 |defaultprice|Duplo|O preço monetário padrão do serviço.|
-|defaultpricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultpricetype|cadeia de caracteres|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultlembrers|coleção [bookingReminder](bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
 |description|String|Uma descrição de texto para o serviço.|
 |displayName|Cadeia de caracteres|Um nome de serviço.|
@@ -47,7 +47,7 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|String collection|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|Coleção String|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

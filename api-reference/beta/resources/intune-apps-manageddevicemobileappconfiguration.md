@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso managedDeviceMobileAppConfiguration
 description: Uma classe abstrata para a configuração do Aplicativo móvel para dispositivos registrados.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f4163cdf7d137756e86dc98529db4f3eb5c6b12
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d4deb062c7b927712d0557aa3257ba719e45bc12
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797955"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458719"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -32,7 +34,7 @@ Uma classe abstrata para a configuração do Aplicativo móvel para dispositivos
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |targetedMobileApps|Coleção de cadeias de caracteres|o aplicativo associado.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de aplicativo.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de configuração de aplicativo.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|

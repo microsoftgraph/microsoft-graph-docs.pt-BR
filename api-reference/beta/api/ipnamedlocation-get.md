@@ -2,15 +2,15 @@
 title: Obter ipNamedLocation
 description: Recupere as propriedades e os relacionamentos de um objeto ipnamedlocation.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 28db84021531989e24df8dda76d2146b16889583
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 56adfa46c706bbee37ab8d84f86e60ef2558cd34
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062263"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458146"
 ---
 # <a name="get-ipnamedlocation"></a>Obter ipNamedLocation
 

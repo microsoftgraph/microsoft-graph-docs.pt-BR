@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso iosVppAppRevokeLicensesActionResult
 description: Define resultados para ações em aplicativos VPP do iOS, contendo propriedades herdadas de ActionResult.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ebb4af4c9cd6b9f58a3e0ee341b7e43192094d29
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 16945bcb0043a07821803964b245319fb10b5c8a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798053"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458943"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>tipo de recurso iosVppAppRevokeLicensesActionResult
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

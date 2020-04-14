@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso de usuário
 description: Representa um objeto de usuário do Azure Active Directory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c1c5d18be286fae35acaa35bef37bd5c3757fbe3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: aaf05a13b1037e6d638e0727e3aba1301ca56993
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767194"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447975"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -24,8 +26,8 @@ Representa um objeto de usuário do Azure Active Directory.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar objetos Users](../api/intune-shared-user-list.md) .|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|[user](../resources/intune-shared-user.md)|Ler propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Criar objeto user](../api/intune-shared-user-create.md) .|[user](../resources/intune-shared-user.md)|Criar um novo objeto de [user](../resources/intune-shared-user.md).|
+|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|[Usuário](../resources/intune-shared-user.md)|Ler propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
+|[Criar objeto user](../api/intune-shared-user-create.md) .|[Usuário](../resources/intune-shared-user.md)|Criar um novo objeto de [user](../resources/intune-shared-user.md).|
 |[Excluir usuário](../api/intune-shared-user-delete.md).|Nenhum|Excluir [user](../resources/intune-shared-user.md).|
 |[Atualize](../api/intune-shared-user-update.md) o objeto do usuário.|[user](../resources/intune-shared-user.md)|Atualizar as propriedades de um objeto de [user](../resources/intune-shared-user.md).|
 |**Gerenciamento de dispositivos**|
@@ -40,7 +42,7 @@ Representa um objeto de usuário do Azure Active Directory.
 |[função exportDeviceAndAppManagementData](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Ainda não documentado|
 |[função getEffectiveDeviceEnrollmentConfigurations](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|Coleção [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Ainda não documentado|
 |**Solução de Problemas**|
-|[função getManagedDevicesWithAppFailures](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Coleção de cadeias de caracteres|Recupera a lista de dispositivos com aplicativos com falha.|
+|[função getManagedDevicesWithAppFailures](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Coleção String|Recupera a lista de dispositivos com aplicativos com falha.|
 
 
 ## <a name="properties"></a>Propriedades

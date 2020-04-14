@@ -4,17 +4,17 @@ description: Especifica configurações para aplicativo não Web ou API Web. (po
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: e22f973f9d133b3c4c7827733f51f2028cd506ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 55b4afed8db68fe07cb04965c1665f26f61b1c59
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521303"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457297"
 ---
 # <a name="publicclientapplication-resource-type"></a>tipo de recurso publicClientApplication
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Especifica configurações para aplicativo não Web ou API não Web (por exemplo
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|redirectUris|String collection| Especifica as URLs nas quais os tokens de usuário são enviados para entrada ou os URIs de redirecionamento nos quais os códigos de autorização OAuth 2,0 e tokens de acesso são enviados. |
+|redirectUris|Coleção String| Especifica as URLs nas quais os tokens de usuário são enviados para entrada ou os URIs de redirecionamento nos quais os códigos de autorização OAuth 2,0 e tokens de acesso são enviados. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

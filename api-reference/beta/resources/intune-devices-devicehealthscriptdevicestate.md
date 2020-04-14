@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceHealthScriptDeviceState
 description: Contém propriedades para o estado de execução do dispositivo do script de integridade do dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e491914385a5fc2a1e3b664e606b801cf92bf9f0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 15b88acaf91e82981e821d96f8456cc943965081
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784948"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448117"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>tipo de recurso deviceHealthScriptDeviceState
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

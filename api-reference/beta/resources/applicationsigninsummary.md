@@ -2,19 +2,19 @@
 title: tipo de recurso applicationSignInDetailedSummary
 description: Representa um resumo de entrada do aplicativo.
 localization_priority: Normal
-author: davidmu1
+author: kholtz
 ms.prod: microsoft-identity-platform
-doc_type: resourcePageType_
-ms.openlocfilehash: ed491c9bce61bdc7f9ae3821360832dd8cbe04e5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+doc_type: resourcePageType
+ms.openlocfilehash: 79dbe02f723c9c8912ce8a227a47d6f50260c330
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508265"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455273"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>tipo de recurso applicationSignInSummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

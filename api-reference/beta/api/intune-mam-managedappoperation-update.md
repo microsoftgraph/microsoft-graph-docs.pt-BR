@@ -1,18 +1,20 @@
 ---
 title: Atualizar managedAppOperation
 description: Atualizar as propriedades de um objeto managedAppOperation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4848a970f92141b14629f3a073538657eaf3978
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 66b951399428998c3881c67b3cf04b9462f0c909
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803579"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455862"
 ---
 # <a name="update-managedappoperation"></a>Atualizar managedAppOperation
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -95,7 +97,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

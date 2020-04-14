@@ -2,19 +2,19 @@
 title: tipo de recurso applicationServicePrincipal
 description: Uma combinação de um aplicativo e um servicePrincipalName.
 localization_priority: Normal
-author: luleonpla
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9a7cc33e05c28e5552815778e86e5b1b9e7aaf06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 904e094f177adab51addcf90826ac35a016cf737
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508279"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455295"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>tipo de recurso applicationServicePrincipal
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

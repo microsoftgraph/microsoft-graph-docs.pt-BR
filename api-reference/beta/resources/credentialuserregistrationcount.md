@@ -2,19 +2,19 @@
 title: tipo de recurso credentialUserRegistrationCount
 description: Representa o estado atual de quantos usuários da sua organização estão registrados para recursos de redefinição de senha de autoatendimento e autenticação multifator.
 localization_priority: Normal
-author: davidmu1
+author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: cd08bbcd6a189c2f76c130d28ea749745a5f8fca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b291d871686b514474f754500d490be3ad331441
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507342"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458008"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>tipo de recurso credentialUserRegistrationCount
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

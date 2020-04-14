@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windows10NetworkProxyServer
 description: Política de Servidor Proxy de Rede.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f02444a1cfccd2638f9fa6872b6b35dab649287
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 56c4b4bd526c69bf9992673aa8ae93d723a2d9bf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786674"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456950"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Tipo de recurso windows10NetworkProxyServer
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

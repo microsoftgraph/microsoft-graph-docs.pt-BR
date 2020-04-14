@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração policySetStatus
 description: A enumeração para especificar o status de Policyset.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a470e6c13bfd20ada920bbe2b471bfa96379092
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b4fc37dd889edaa5a5050db3c162ec147d2573cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775146"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448028"
 ---
 # <a name="policysetstatus-enum-type"></a>tipo de enumeração policySetStatus
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

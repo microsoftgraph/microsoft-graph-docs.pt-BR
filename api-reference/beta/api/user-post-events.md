@@ -3,14 +3,14 @@ title: Criar evento
 description: Crie um evento no calendário especificado ou no calendário padrão do usuário.
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 5c5e5d3e8019bc7820692caf173d3d190f769246
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 82672ec05fbee9645af7a257d309d16d6ad5d519
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639891"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458124"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -245,7 +245,7 @@ Content-length: 2197
 ```
 
 
-### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>Exemplo 2: criar um evento que ocorre em vários locais
+### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>Exemplo 2: criar um evento que ocorrerá em vários locais
 
 #### <a name="request"></a>Solicitação
 A solicitação de exemplo a seguir especifica três locais de onde o organizador e os participantes podem participar da reunião.

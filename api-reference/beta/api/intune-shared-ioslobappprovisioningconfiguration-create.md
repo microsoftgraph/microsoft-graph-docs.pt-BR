@@ -1,18 +1,20 @@
 ---
 title: Criar iosLobAppProvisioningConfiguration
 description: Criar um novo objeto iosLobAppProvisioningConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 20106850370b95611420040b08ad96edd5af1509
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6be403537d60c0c28cc2a6ef7900daf41fc25c28
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800932"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453856"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Criar iosLobAppProvisioningConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
 
@@ -59,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosLobAp
 |expirationDateTime|DateTimeOffset|Data e hora de expiração do perfil opcional.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
@@ -117,7 +119,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 

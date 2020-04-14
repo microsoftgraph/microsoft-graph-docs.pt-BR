@@ -1,18 +1,20 @@
 ---
 title: Atualizar appleVppTokenTroubleshootingEvent
 description: Atualiza as propriedades de um objeto appleVppTokenTroubleshootingEvent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3cd091cf9bd69c3976cd0a07cababbf841316b71
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d55c771aabcc7bd83f35b7c8f58acdac5d198ac4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800267"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448155"
 ---
 # <a name="update-applevpptokentroubleshootingevent"></a>Atualizar appleVppTokenTroubleshootingEvent
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -140,7 +142,6 @@ Content-Length: 930
   "tokenId": "Token Id value"
 }
 ```
-
 
 
 

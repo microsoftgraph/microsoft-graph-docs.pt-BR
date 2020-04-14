@@ -1,18 +1,20 @@
 ---
 title: Atualizar groupPolicyConfiguration
 description: Atualiza as propriedades de um objeto groupPolicyConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6265e7b9382322a138c39f05f57daa4579452a82
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d3a261947073c96934cc6c84c276fc232d06c0b1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804482"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454662"
 ---
 # <a name="update-grouppolicyconfiguration"></a>Atualizar groupPolicyConfiguration
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -54,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
 |displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto Resource.|
 |description|String|Descrição fornecida pelo usuário para o objeto Resource.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|A lista de marcas de escopo para a configuração.|
+|roleScopeTagIds|Coleção String|A lista de marcas de escopo para a configuração.|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -101,7 +103,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

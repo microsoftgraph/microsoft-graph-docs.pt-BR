@@ -1,18 +1,20 @@
 ---
 title: Função deviceConfigurationUserActivity
 description: Metadados para o relatório de atividades do usuário de configuração do dispositivo
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40356d2f2c2c75a1bdcb046c8775ccef30674695
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fe0bae86ec3342ededeb9beb7126443572996853
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800708"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455408"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Função deviceConfigurationUserActivity
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -72,7 +74,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

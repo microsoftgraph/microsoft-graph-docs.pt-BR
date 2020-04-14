@@ -1,18 +1,20 @@
 ---
 title: Criar policyset
 description: Criar um novo objeto policyset.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 83791cf67af354a2a7a086633c9311028c8dda72
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 22a1d700b0f82cb98876e4fadb439ee5010fed12
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802143"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456289"
 ---
 # <a name="create-policyset"></a>Criar policyset
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -58,8 +60,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o policy
 |description|String|Descrição do Policyset.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status de validação/atribuição do Policyset. Os valores possíveis são: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Código de erro, caso algum tenha ocorrido. Os valores possíveis são: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Coleção de cadeias de caracteres|Marcas da implantação dirigida|
-|roleScopeTags|Coleção de cadeias de caracteres|RoleScopeTags do Policyset|
+|guidedDeploymentTags|Coleção String|Marcas da implantação dirigida|
+|roleScopeTags|Coleção String|RoleScopeTags do Policyset|
 
 
 
@@ -114,7 +116,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: 'mailFolder: delta'
 description: Obtenha um conjunto de pastas de email que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 97e6e63cf62c9816812d90667a5a427f77d62e94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 32fa6e8dcf3deb65698e9c1aee7a95d46ea87c6b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457066"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457142"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ Você pode usar um parâmetro de consulta `$select` como em qualquer solicitaç�
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 

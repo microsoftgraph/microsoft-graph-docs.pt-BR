@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso iosHomeScreenApp
 description: Representa um ícone de um aplicativo na tela inicial
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb9d3dcd32834167ab89a1e62311942a542f74ac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 858ce1825ab09709f412aeee978dc53a47a0d0af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455166"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Tipo de recurso iosHomeScreenApp
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

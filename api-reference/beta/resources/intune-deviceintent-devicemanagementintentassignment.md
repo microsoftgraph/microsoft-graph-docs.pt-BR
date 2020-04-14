@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso deviceManagementIntentAssignment
 description: Entidade de atribuição de intenções
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dec487feeb8dff155b2f74e94d616399ba659669
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 663fbd0a98f8eae9b324c34c064f181f779a958c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785439"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455669"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>tipo de recurso deviceManagementIntentAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -2,15 +2,15 @@
 title: Excluir ipNamedLocation
 description: Excluir um objeto ipNamedLocation.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6ba92dc18fce372d963a450798e3037b078963d6
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: fedfc04e1e53f25700a54a9918c47d2b9641b0cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062307"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458153"
 ---
 # <a name="delete-ipnamedlocation"></a>Excluir ipNamedLocation
 

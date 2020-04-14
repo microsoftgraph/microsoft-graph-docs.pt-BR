@@ -1,18 +1,20 @@
 ---
 title: Obter mdmWindowsInformationProtectionPolicyPolicySetItem
 description: Leia as propriedades e as relações do objeto mdmWindowsInformationProtectionPolicyPolicySetItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a476f5c1ec3c739b07dfa924ba1c16be9beaf1c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4c5e0c5ed14f0c783244370e1eb9ad9de7f84d5f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802199"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449820"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicypolicysetitem"></a>Obter mdmWindowsInformationProtectionPolicyPolicySetItem
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -85,7 +87,6 @@ Content-Length: 547
   }
 }
 ```
-
 
 
 

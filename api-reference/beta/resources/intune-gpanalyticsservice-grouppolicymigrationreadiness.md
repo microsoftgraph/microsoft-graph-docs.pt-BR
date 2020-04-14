@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração groupPolicyMigrationReadiness
 description: Indica se o arquivo de objeto de diretiva de grupo está coberto e pronto para a migração do Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: efd579adb3c3408eda9b87ffb7f48e98c836065f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d05a88dd1e9aacb36968b99c2ec797c8ac3bf01f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783169"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458473"
 ---
 # <a name="grouppolicymigrationreadiness-enum-type"></a>tipo de enumeração groupPolicyMigrationReadiness
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -23,7 +25,7 @@ Indica se o arquivo de objeto de diretiva de grupo está coberto e pronto para a
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|1|Nenhuma cobertura do Intune|
+|nenhuma|1|Nenhuma cobertura do Intune|
 |parcial|duas|Cobertura do Intune parcial|
 |complete|3D|Cobertura completa do Intune|
 |erro|4 |Erro ao analisar a cobertura|

@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso intuneBrand
 description: intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c50e0b3a55a3df4e1c1f71f9058f407a7f912516
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 92b706fee0e1b0a6af0d877d040339416d9b78c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42778369"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455571"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -31,7 +33,7 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |showNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial do aplicativo do portal da empresa|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual padrão|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo atribuídas ao perfil de identidade visual padrão|
 |contactITName|String|Nome da pessoa/organização responsável pelo suporte de TI.|
 |contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
 |contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de TI.|

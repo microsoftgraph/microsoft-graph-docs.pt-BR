@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso depIOSEnrollmentProfile
 description: O recurso DepIOSEnrollmentProfile representa um perfil de registro de programa de registro de dispositivo Apple (DEP) específico para a configuração do iOS. Esse tipo de perfil deve ser atribuído aos números de série da Apple DEP antes que os dispositivos correspondentes possam se inscrever via DEP.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9295f5d29581bc98be0c1fb90c3549ee0d81f863
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2397048cc117ac9f6887e67612c91be1ba33bc34
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783526"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453241"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>tipo de recurso depIOSEnrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -2,19 +2,19 @@
 title: Criar outlookTaskFolder
 description: Crie uma pasta de tarefas no grupo de tarefas padrão`My Tasks`() da caixa de correio do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb6d3e6c66d39bd94c108a3b091f53b742da10e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63662dffac9cb36031efd11cac76eb8bd23b0da1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456053"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456197"
 ---
 # <a name="create-outlooktaskfolder"></a>Criar outlookTaskFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

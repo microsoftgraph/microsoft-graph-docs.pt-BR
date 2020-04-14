@@ -2,19 +2,19 @@
 title: tipo de recurso bookingBusiness
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 314228247131386363da89272d459eb68e022e6c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ba6da0291c0a2153908d14e74deeb83c6c138d5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508007"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453766"
 ---
 # <a name="bookingbusiness-resource-type"></a>tipo de recurso bookingBusiness
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

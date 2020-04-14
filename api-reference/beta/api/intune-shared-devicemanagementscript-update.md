@@ -1,18 +1,20 @@
 ---
 title: Atualizar deviceManagementScript
 description: Atualiza as propriedades de um objeto deviceManagementScript.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3d27fdbaf7de530783c4751c7898dd972f45db2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2ce2171f02608ac7e922f6a4a9580665134c83f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800946"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453943"
 ---
 # <a name="update-devicemanagementscript"></a>Atualizar deviceManagementScript
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -29,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application||
+|Aplicativo||
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -65,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 |runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 
@@ -127,7 +129,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

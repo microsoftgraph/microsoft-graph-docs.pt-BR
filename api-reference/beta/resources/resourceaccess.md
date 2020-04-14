@@ -4,17 +4,17 @@ description: Especifica um escopo de permissão OAuth 2,0 ou uma função de apl
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 7d369b654a1184470afdefd03aac2103f1a47e01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: e8972ec33fdb9a509267909876bf2aaab26e8205
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453093"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso resourceAccess
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -4,17 +4,17 @@ description: Especifica o conjunto de escopos de permissão OAuth 2,0 e funçõe
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 3c2251f5a5b4655a73747490f5052661c3b4a6eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: 84641cc49a518eb41095b80aa0501dce5acf3d35
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453100"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>tipo de recurso requiredResourceAccess
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,15 +2,15 @@
 title: Excluir mensagem
 description: Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d6eb7477f251ee51c2baa09216d5d0e87d8bf968
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 3f69c123b72dfb876a7ed60d427b76674e1556f6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618893"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448610"
 ---
 # <a name="delete-message"></a>Excluir mensagem
 

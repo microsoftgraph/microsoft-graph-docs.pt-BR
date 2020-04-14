@@ -1,20 +1,20 @@
 ---
 title: Atualizar regra
 description: Altere as propriedades graváveis em um objeto messageRule e salve as alterações.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b5c0577f8dd2d767f58cd464cfe7d874b5c7c5b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c3b6482c7ff896abb224c8e408ee8964bf7e8e96
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456842"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448432"
 ---
 # <a name="update-rule"></a>Atualizar regra
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

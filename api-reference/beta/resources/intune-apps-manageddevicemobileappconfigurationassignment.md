@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso managedDeviceMobileAppConfigurationAssignment
 description: Contém as propriedades usadas para atribuir uma configuração de aplicativo MDM a um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5e67c6399c2f7782c9edbaeeb73d5e5bab0c00f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c62d99ff785b0581b5761a8ecfcd352c6189c6ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797948"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43458712"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationAssignment
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

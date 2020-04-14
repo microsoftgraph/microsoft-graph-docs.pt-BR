@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração certificateDestinationStore
 description: Valores possíveis para o repositório de destino do certificado.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 90372a70ee6e7e08d0732535a876234391801eee
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a70f94084bde686908033c87214bdd748c904c93
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795705"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453617"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>tipo de enumeração certificateDestinationStore
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsDefenderApplicationControlSupplementalPolicyStatuses
 description: Enumerar valores para os vários status de implantação de política complementar do WindowsDefenderApplicationControl.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 851bb0a5544a807b1ae73cac15dfa5f788271703
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 69f909f1bac3b33101d5e0e5515ad74588f46be2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764093"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449549"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicystatuses-enum-type"></a>tipo de enumeração windowsDefenderApplicationControlSupplementalPolicyStatuses
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

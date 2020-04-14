@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso deviceEnrollmentPlatformRestriction
 description: Restrições de registro específicas de plataformas
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf67d9b39462a11286420a6cd6aa79f2e45fb246
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ede5fac054b457230a8523539f3bf0f3a72ce4a7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779622"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455124"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -27,7 +29,7 @@ Restrições de registro específicas de plataformas
 |personalDeviceEnrollmentBlocked|Booliano|Bloqueia o registro de dispositivos de sua propriedade|
 |osMinimumVersion|String|Versão do SO mínimo compatível|
 |osMaximumVersion|Cadeia de caracteres|Versão do SO máximo compatível|
-|blockedManufacturers|Coleção de cadeias de caracteres|Conjunto de fabricantes bloqueados.|
+|blockedManufacturers|Coleção String|Conjunto de fabricantes bloqueados.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

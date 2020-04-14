@@ -1,20 +1,20 @@
 ---
 title: Obter mailFolder
 description: Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9e64f82cf6a0e4d6578ca0faf7bc9186589f12b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af2f7c04e1a24c514098b7d5801bb04c07d89102
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457059"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457135"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

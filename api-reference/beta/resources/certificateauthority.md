@@ -2,19 +2,19 @@
 title: tipo de recurso certificateAuthority
 description: Representa uma autoridade de certificação.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3f5f34664bd721564a8ee63248c65b66123aad98
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25303f527a8ba440e9a1e413379bf8037e551168
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507772"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454350"
 ---
 # <a name="certificateauthority-resource-type"></a>tipo de recurso certificateAuthority
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

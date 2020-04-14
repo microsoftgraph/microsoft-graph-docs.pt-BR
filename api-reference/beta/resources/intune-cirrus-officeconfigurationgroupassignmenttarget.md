@@ -2,17 +2,19 @@
 title: tipo de recurso officeConfigurationGroupAssignmentTarget
 description: Destino de atribuição de grupo AAD de configuração de cliente do Office.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b27ecf9284dcf4ddf52502dab524e5d77d346f1f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9e09d73695c542c24fe6be297dec9496794d95fc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797301"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43454280"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationGroupAssignmentTarget
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
