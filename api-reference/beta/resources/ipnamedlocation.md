@@ -2,19 +2,19 @@
 title: tipo de recurso ipNamedLocation
 description: Representa um local nomeado do Azure Active Directory definido por intervalos de IP. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de acesso condicional.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e32d6c51ae09601bc752ed2a352dc50a4285f7c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 067c77c6bc8a17d84252568548b44a3a44cd8f35
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523160"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382525"
 ---
 # <a name="ipnamedlocation-resource-type"></a>tipo de recurso ipNamedLocation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

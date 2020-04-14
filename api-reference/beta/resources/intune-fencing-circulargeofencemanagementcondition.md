@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso circularGeofenceManagementCondition
 description: Contém as informações para definir uma condição de gerenciamento de isolamento geográfico circular, uma área de interesse, para monitorar.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83a8bad4de835ed793e38f125c6dd0382ec0d800
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 597438dc3b6bb2772f2c28bb2a64d84d5fba8d61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783260"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382735"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>tipo de recurso circularGeofenceManagementCondition
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

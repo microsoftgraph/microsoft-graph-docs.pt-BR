@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 description: A experiência do usuário da entidade de histórico de inicialização do dispositivo de análise contém detalhes do histórico de desempenho da inicialização.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4275053cda78e26093879b64a521870eec21089
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 80339855c5154e2cd563b0c76b400cd9d4536f90
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783820"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382820"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupHistory
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

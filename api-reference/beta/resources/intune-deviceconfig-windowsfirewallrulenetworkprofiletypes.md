@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração windowsFirewallRuleNetworkProfileTypes
 description: Sinalizadores que representam quais tipos de perfil de rede se aplicam a uma regra de firewall.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d2a7a10936df83300c432ea9412790ba33ccc1c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4e0d1a24d1da6d34ae501e08e0460d98f1969d03
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786485"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383240"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>tipo de enumeração windowsFirewallRuleNetworkProfileTypes
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

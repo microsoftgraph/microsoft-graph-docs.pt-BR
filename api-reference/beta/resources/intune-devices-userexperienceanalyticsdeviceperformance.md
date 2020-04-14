@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso userExperienceAnalyticsDevicePerformance
 description: A entidade de desempenho do dispositivo de análise da experiência do usuário contém detalhes de desempenho de inicialização do dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fcb0305469e4cd3d51933a60741ff6da0cb70ef4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a3dd901a24ee8ae521838640aa31a3bd5b9b719d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783827"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382827"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsDevicePerformance
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

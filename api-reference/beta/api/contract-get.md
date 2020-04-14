@@ -2,19 +2,19 @@
 title: Obter contrato
 description: Recupere as propriedades e os relacionamentos do objeto Contract.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 86665dae8edd12aaaee9bd5598fb5aabbfd39f85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6807c2586ea133f13970b57f53c57f58faf0561f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436780"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43360910"
 ---
 # <a name="get-contract"></a>Obter contrato
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

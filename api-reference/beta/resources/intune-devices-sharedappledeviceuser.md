@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso sharedAppleDeviceUser
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 550d8af3cab51f611feed7f87f1d2f56a850de4e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4dc78ad66302d4ffd330936cc95bd9b3cd7ae900
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783855"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383047"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>tipo de recurso sharedAppleDeviceUser
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

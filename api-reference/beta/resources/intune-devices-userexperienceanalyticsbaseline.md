@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso userExperienceAnalyticsBaseline
 description: A entidade de linha de base da experiência do usuário contém valores de linha de base para comparar as pontuações de análise da experiência do usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9702783264773d5b1cc7d3bc4ec6846db92fa42
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c99d520490a7d68d29b1dc867f2bf1fc8b371b5d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783841"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382929"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>tipo de recurso userExperienceAnalyticsBaseline
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

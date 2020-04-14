@@ -1,18 +1,20 @@
 ---
 title: Tipo de recurso windowsFirewallNetworkProfile
 description: Políticas de perfil do firewall do Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 589b6328c788f4cac5c407e49ccd0481e82c235e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c3450c68648b1111c3a95d4dc84b62ebd23b9250
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786506"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383302"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Tipo de recurso windowsFirewallNetworkProfile
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

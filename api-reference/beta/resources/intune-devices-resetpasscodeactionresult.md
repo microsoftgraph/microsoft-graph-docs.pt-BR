@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso resetPasscodeActionResult
 description: Resultado de ação de redefinir a senha
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c30c204699f7fdc277aab56848fb109a32ab8ec4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 65ec840aaab89ee3558ee2882c5c3ed048f4c65a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783883"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383179"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>tipo de recurso resetPasscodeActionResult
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

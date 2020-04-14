@@ -1,16 +1,16 @@
 ---
 title: 'grupo: getMemberGroups'
-description: Retorne todos os grupos dos quais o grupo especificado é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação, que retorna somente os grupos dos quais o grupo é membro direto.
+description: Retorne todos os grupos dos quais o grupo especificado é membro.
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fa39c81910086158f447a703edb517bac59d80d7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 716123c17b6512c425b23c6c0c29e5e1a8fd3d09
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517121"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43316751"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 

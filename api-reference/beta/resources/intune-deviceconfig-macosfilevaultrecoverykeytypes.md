@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração macOSFileVaultRecoveryKeyTypes
 description: Tipos de chave de recuperação para macOS FileVault
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b53726b04dcecd1411caa1cee2f6e03638e30007
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77fe5f115fec13498d0dbd034d87872f65bfc211
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42789468"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383451"
 ---
 # <a name="macosfilevaultrecoverykeytypes-enum-type"></a>tipo de enumeração macOSFileVaultRecoveryKeyTypes
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

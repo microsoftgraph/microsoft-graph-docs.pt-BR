@@ -2,19 +2,19 @@
 title: 'bookingBusiness: publish'
 description: Tornar a página de agendamento dessa empresa disponível para clientes externos.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b8ee635da938a53dff4603bb50f4903f0a000253
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1f2a9bf6e7617cf991a37acada452c6c19b05d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441162"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382410"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: publish
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: tipo de enumeração weeklySchedule
 description: Valores possíveis para um cronograma semanal.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d26d8861ab7dd5fe6e6fb2b4111aa6c3458fe611
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ce3e6eb555171291763f0560cf980cad41455659
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787261"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383380"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enumeração weeklySchedule
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 

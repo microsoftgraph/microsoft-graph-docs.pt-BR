@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso userExperienceAnalyticsDeviceStartupProcess
 description: Os detalhes do processo de inicialização do dispositivo de análise da experiência do usuário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71f65179d5a8dc4334362a3aefe2704650afc60b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 880db84375825c9c343221c537c50f40644bc33c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783813"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382813"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupProcess
+
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
