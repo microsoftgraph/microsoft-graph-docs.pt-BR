@@ -3,18 +3,18 @@ title: 'synchronizationSchema: funções'
 description: Listar todas as funções atualmente suportadas no attributeMappingSource.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2c8b1e47f4dbb5c50bd416cf83efbfb75005c412
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d47a20fd9a2ddc36b18d411c4fb55939b97362f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452957"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471201"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema: funções
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
