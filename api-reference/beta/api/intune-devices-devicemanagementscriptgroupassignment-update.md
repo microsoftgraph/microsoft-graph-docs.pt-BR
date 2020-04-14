@@ -1,35 +1,37 @@
 ---
 title: Atualizar deviceManagementScriptGroupAssignment
 description: Atualiza as propriedades de um objeto deviceManagementScriptGroupAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ce6e977c64177d391d11a168b9c6dac0965a226
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8fe0c3c84983eb1bb6cb1ca0e12eb59b4fe6eae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814397"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43380143"
 ---
-# <a name="update-devicemanagementscriptgroupassignment"></a><span data-ttu-id="69aa7-103">Atualizar deviceManagementScriptGroupAssignment</span><span class="sxs-lookup"><span data-stu-id="69aa7-103">Update deviceManagementScriptGroupAssignment</span></span>
+# <a name="update-devicemanagementscriptgroupassignment"></a><span data-ttu-id="2ed55-103">Atualizar deviceManagementScriptGroupAssignment</span><span class="sxs-lookup"><span data-stu-id="2ed55-103">Update deviceManagementScriptGroupAssignment</span></span>
 
-> <span data-ttu-id="69aa7-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="69aa7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="2ed55-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ed55-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="69aa7-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="69aa7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2ed55-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2ed55-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="69aa7-106">Atualiza as propriedades de um objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="69aa7-106">Update the properties of a [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object.</span></span>
+> <span data-ttu-id="2ed55-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2ed55-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="69aa7-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="69aa7-107">Prerequisites</span></span>
-<span data-ttu-id="69aa7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="69aa7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2ed55-107">Atualiza as propriedades de um objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="2ed55-107">Update the properties of a [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object.</span></span>
 
-|<span data-ttu-id="69aa7-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="69aa7-110">Permission type</span></span>|<span data-ttu-id="69aa7-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="69aa7-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="2ed55-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="2ed55-108">Prerequisites</span></span>
+<span data-ttu-id="2ed55-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2ed55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="2ed55-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2ed55-111">Permission type</span></span>|<span data-ttu-id="2ed55-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="2ed55-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="69aa7-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="69aa7-112">Delegated (work or school account)</span></span>|<span data-ttu-id="69aa7-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69aa7-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="69aa7-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="69aa7-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="69aa7-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="69aa7-115">Not supported.</span></span>|
-|<span data-ttu-id="69aa7-116">Application</span><span class="sxs-lookup"><span data-stu-id="69aa7-116">Application</span></span>|<span data-ttu-id="69aa7-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69aa7-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="2ed55-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2ed55-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2ed55-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2ed55-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="2ed55-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2ed55-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2ed55-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2ed55-116">Not supported.</span></span>|
+|<span data-ttu-id="2ed55-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2ed55-117">Application</span></span>|<span data-ttu-id="2ed55-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2ed55-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="69aa7-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="69aa7-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2ed55-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2ed55-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +41,31 @@ PATCH /deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignment
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="69aa7-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="69aa7-119">Request headers</span></span>
-|<span data-ttu-id="69aa7-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="69aa7-120">Header</span></span>|<span data-ttu-id="69aa7-121">Valor</span><span class="sxs-lookup"><span data-stu-id="69aa7-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2ed55-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2ed55-120">Request headers</span></span>
+|<span data-ttu-id="2ed55-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2ed55-121">Header</span></span>|<span data-ttu-id="2ed55-122">Valor</span><span class="sxs-lookup"><span data-stu-id="2ed55-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="69aa7-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="69aa7-122">Authorization</span></span>|<span data-ttu-id="69aa7-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="69aa7-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="69aa7-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="69aa7-124">Accept</span></span>|<span data-ttu-id="69aa7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="69aa7-125">application/json</span></span>|
+|<span data-ttu-id="2ed55-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="2ed55-123">Authorization</span></span>|<span data-ttu-id="2ed55-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2ed55-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2ed55-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="2ed55-125">Accept</span></span>|<span data-ttu-id="2ed55-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2ed55-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="69aa7-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="69aa7-126">Request body</span></span>
-<span data-ttu-id="69aa7-127">No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="69aa7-127">In the request body, supply a JSON representation for the [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2ed55-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2ed55-127">Request body</span></span>
+<span data-ttu-id="2ed55-128">No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="2ed55-128">In the request body, supply a JSON representation for the [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object.</span></span>
 
-<span data-ttu-id="69aa7-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md).</span><span class="sxs-lookup"><span data-stu-id="69aa7-128">The following table shows the properties that are required when you create the [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md).</span></span>
+<span data-ttu-id="2ed55-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md).</span><span class="sxs-lookup"><span data-stu-id="2ed55-129">The following table shows the properties that are required when you create the [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md).</span></span>
 
-|<span data-ttu-id="69aa7-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="69aa7-129">Property</span></span>|<span data-ttu-id="69aa7-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="69aa7-130">Type</span></span>|<span data-ttu-id="69aa7-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="69aa7-131">Description</span></span>|
+|<span data-ttu-id="2ed55-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2ed55-130">Property</span></span>|<span data-ttu-id="2ed55-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="2ed55-131">Type</span></span>|<span data-ttu-id="2ed55-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="2ed55-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="69aa7-132">id</span><span class="sxs-lookup"><span data-stu-id="69aa7-132">id</span></span>|<span data-ttu-id="69aa7-133">String</span><span class="sxs-lookup"><span data-stu-id="69aa7-133">String</span></span>|<span data-ttu-id="69aa7-134">Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="69aa7-134">Key of the device management script group assignment entity.</span></span> <span data-ttu-id="69aa7-135">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="69aa7-135">This property is read-only.</span></span>|
-|<span data-ttu-id="69aa7-136">targetGroupId</span><span class="sxs-lookup"><span data-stu-id="69aa7-136">targetGroupId</span></span>|<span data-ttu-id="69aa7-137">String</span><span class="sxs-lookup"><span data-stu-id="69aa7-137">String</span></span>|<span data-ttu-id="69aa7-138">A ID do grupo do Azure Active Directory para o qual estamos direcionando o script.</span><span class="sxs-lookup"><span data-stu-id="69aa7-138">The Id of the Azure Active Directory group we are targeting the script to.</span></span>|
+|<span data-ttu-id="2ed55-133">id</span><span class="sxs-lookup"><span data-stu-id="2ed55-133">id</span></span>|<span data-ttu-id="2ed55-134">String</span><span class="sxs-lookup"><span data-stu-id="2ed55-134">String</span></span>|<span data-ttu-id="2ed55-135">Chave da entidade de atribuição do grupo de scripts de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="2ed55-135">Key of the device management script group assignment entity.</span></span> <span data-ttu-id="2ed55-136">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2ed55-136">This property is read-only.</span></span>|
+|<span data-ttu-id="2ed55-137">targetGroupId</span><span class="sxs-lookup"><span data-stu-id="2ed55-137">targetGroupId</span></span>|<span data-ttu-id="2ed55-138">String</span><span class="sxs-lookup"><span data-stu-id="2ed55-138">String</span></span>|<span data-ttu-id="2ed55-139">A ID do grupo do Azure Active Directory para o qual estamos direcionando o script.</span><span class="sxs-lookup"><span data-stu-id="2ed55-139">The Id of the Azure Active Directory group we are targeting the script to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="69aa7-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="69aa7-139">Response</span></span>
-<span data-ttu-id="69aa7-140">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="69aa7-140">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2ed55-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="2ed55-140">Response</span></span>
+<span data-ttu-id="2ed55-141">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2ed55-141">If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="69aa7-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="69aa7-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2ed55-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2ed55-142">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="69aa7-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="69aa7-142">Request</span></span>
-<span data-ttu-id="69aa7-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="69aa7-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2ed55-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2ed55-143">Request</span></span>
+<span data-ttu-id="2ed55-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2ed55-144">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 Content-type: application/json
@@ -75,8 +77,8 @@ Content-length: 124
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="69aa7-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="69aa7-144">Response</span></span>
-<span data-ttu-id="69aa7-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="69aa7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2ed55-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="2ed55-145">Response</span></span>
+<span data-ttu-id="2ed55-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2ed55-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -88,7 +90,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

@@ -2,55 +2,55 @@
 title: Criar bookingAppointment
 description: Crie um novo bookingAppointment para o bookingbusiness especificado.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54e326c238a4e57564b019548be490c5f44a9053
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc5eb648f581e7bb0dc88a413be44297df790c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441218"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366594"
 ---
-# <a name="create-bookingappointment"></a><span data-ttu-id="ad54c-103">Criar bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="ad54c-103">Create bookingAppointment</span></span>
+# <a name="create-bookingappointment"></a><span data-ttu-id="dac81-103">Criar bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="dac81-103">Create bookingAppointment</span></span>
 
-<span data-ttu-id="ad54c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ad54c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dac81-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dac81-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ad54c-105">Crie um novo [bookingAppointment](../resources/bookingappointment.md) para o [bookingbusiness](../resources/bookingbusiness.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="ad54c-105">Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="ad54c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ad54c-106">Permissions</span></span>
-<span data-ttu-id="ad54c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad54c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dac81-105">Crie um novo [bookingAppointment](../resources/bookingappointment.md) para o [bookingbusiness](../resources/bookingbusiness.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="dac81-105">Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dac81-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="dac81-106">Permissions</span></span>
+<span data-ttu-id="dac81-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dac81-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ad54c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ad54c-109">Permission type</span></span>      | <span data-ttu-id="ad54c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ad54c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dac81-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dac81-109">Permission type</span></span>      | <span data-ttu-id="dac81-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dac81-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ad54c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ad54c-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="ad54c-112">BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="ad54c-112">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="ad54c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ad54c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad54c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ad54c-114">Not supported.</span></span>   |
-|<span data-ttu-id="ad54c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ad54c-115">Application</span></span> | <span data-ttu-id="ad54c-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ad54c-116">Not supported.</span></span>  |
+|<span data-ttu-id="dac81-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dac81-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="dac81-112">BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="dac81-112">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="dac81-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dac81-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dac81-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dac81-114">Not supported.</span></span>   |
+|<span data-ttu-id="dac81-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dac81-115">Application</span></span> | <span data-ttu-id="dac81-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dac81-116">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="ad54c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ad54c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dac81-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dac81-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ad54c-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ad54c-118">Request headers</span></span>
-| <span data-ttu-id="ad54c-119">Nome</span><span class="sxs-lookup"><span data-stu-id="ad54c-119">Name</span></span>       | <span data-ttu-id="ad54c-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ad54c-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dac81-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dac81-118">Request headers</span></span>
+| <span data-ttu-id="dac81-119">Nome</span><span class="sxs-lookup"><span data-stu-id="dac81-119">Name</span></span>       | <span data-ttu-id="dac81-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="dac81-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ad54c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ad54c-121">Authorization</span></span>  | <span data-ttu-id="ad54c-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="ad54c-122">Bearer {code}</span></span>|
+| <span data-ttu-id="dac81-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="dac81-121">Authorization</span></span>  | <span data-ttu-id="dac81-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="dac81-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ad54c-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ad54c-123">Request body</span></span>
-<span data-ttu-id="ad54c-124">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="ad54c-124">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dac81-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dac81-123">Request body</span></span>
+<span data-ttu-id="dac81-124">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="dac81-124">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="ad54c-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad54c-125">Response</span></span>
-<span data-ttu-id="ad54c-126">Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ad54c-126">If successful, this method returns `201, Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dac81-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="dac81-125">Response</span></span>
+<span data-ttu-id="dac81-126">Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dac81-126">If successful, this method returns `201, Created` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ad54c-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ad54c-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ad54c-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ad54c-128">Request</span></span>
-<span data-ttu-id="ad54c-129">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ad54c-129">The following is an example of the request.</span></span> <span data-ttu-id="ad54c-130">Este compromisso não envolve a reserva de membros específicos da equipe.</span><span class="sxs-lookup"><span data-stu-id="ad54c-130">This appointment does not involve booking specific staff members.</span></span>
+## <a name="example"></a><span data-ttu-id="dac81-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dac81-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dac81-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dac81-128">Request</span></span>
+<span data-ttu-id="dac81-129">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="dac81-129">The following is an example of the request.</span></span> <span data-ttu-id="dac81-130">Este compromisso não envolve a reserva de membros específicos da equipe.</span><span class="sxs-lookup"><span data-stu-id="dac81-130">This appointment does not involve booking specific staff members.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ad54c-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="ad54c-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dac81-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="dac81-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness"
@@ -166,23 +166,23 @@ Content-type: application/json
     }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ad54c-132">C#</span><span class="sxs-lookup"><span data-stu-id="ad54c-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="dac81-132">C#</span><span class="sxs-lookup"><span data-stu-id="dac81-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingappointment-from-bookingbusiness-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ad54c-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ad54c-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="dac81-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dac81-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bookingappointment-from-bookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ad54c-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ad54c-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="dac81-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dac81-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bookingappointment-from-bookingbusiness-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="ad54c-135">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="ad54c-135">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="ad54c-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad54c-136">Response</span></span>
-<span data-ttu-id="ad54c-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ad54c-137">The following is an example of the response.</span></span> <span data-ttu-id="ad54c-138">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="ad54c-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="ad54c-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ad54c-139">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="dac81-135">No corpo da solicitação, forneça uma representação JSON do objeto [bookingAppointment](../resources/bookingappointment.md) .</span><span class="sxs-lookup"><span data-stu-id="dac81-135">In the request body, supply a JSON representation of [bookingAppointment](../resources/bookingappointment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="dac81-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="dac81-136">Response</span></span>
+<span data-ttu-id="dac81-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="dac81-137">The following is an example of the response.</span></span> <span data-ttu-id="dac81-138">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="dac81-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="dac81-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dac81-139">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
