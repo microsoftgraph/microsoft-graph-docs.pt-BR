@@ -1,35 +1,35 @@
 ---
 title: Atualizar termsAndConditionsAcceptanceStatus
 description: Atualizar as propriedades de um objeto termsAndConditionsAcceptanceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a73e29bb768bef36df50e734be6a4222190d6532
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04d036b311fb0ab091ca31c60f72a3f08f5792f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515438"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442129"
 ---
-# <a name="update-termsandconditionsacceptancestatus"></a><span data-ttu-id="5c124-103">Atualizar termsAndConditionsAcceptanceStatus</span><span class="sxs-lookup"><span data-stu-id="5c124-103">Update termsAndConditionsAcceptanceStatus</span></span>
+# <a name="update-termsandconditionsacceptancestatus"></a><span data-ttu-id="5999f-103">Atualizar termsAndConditionsAcceptanceStatus</span><span class="sxs-lookup"><span data-stu-id="5999f-103">Update termsAndConditionsAcceptanceStatus</span></span>
 
-<span data-ttu-id="5c124-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5c124-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5999f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5999f-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="5c124-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5c124-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5999f-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5999f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5c124-106">Atualizar as propriedades de um objeto [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="5c124-106">Update the properties of a [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) object.</span></span>
+<span data-ttu-id="5999f-106">Atualizar as propriedades de um objeto [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="5999f-106">Update the properties of a [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5c124-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5c124-107">Prerequisites</span></span>
-<span data-ttu-id="5c124-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5c124-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5999f-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5999f-107">Prerequisites</span></span>
+<span data-ttu-id="5999f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5999f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5c124-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5c124-110">Permission type</span></span>|<span data-ttu-id="5c124-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5c124-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5999f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5999f-110">Permission type</span></span>|<span data-ttu-id="5999f-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5999f-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5c124-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5c124-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5c124-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c124-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="5c124-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5c124-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5c124-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5c124-115">Not supported.</span></span>|
-|<span data-ttu-id="5c124-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5c124-116">Application</span></span>|<span data-ttu-id="5c124-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5c124-117">Not supported.</span></span>|
+|<span data-ttu-id="5999f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5999f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5999f-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5999f-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="5999f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5999f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5999f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5999f-115">Not supported.</span></span>|
+|<span data-ttu-id="5999f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5999f-116">Application</span></span>|<span data-ttu-id="5999f-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5999f-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5c124-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5c124-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5999f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5999f-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,33 +38,33 @@ ms.locfileid: "42515438"
 PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5c124-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5c124-119">Request headers</span></span>
-|<span data-ttu-id="5c124-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5c124-120">Header</span></span>|<span data-ttu-id="5c124-121">Valor</span><span class="sxs-lookup"><span data-stu-id="5c124-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5999f-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5999f-119">Request headers</span></span>
+|<span data-ttu-id="5999f-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5999f-120">Header</span></span>|<span data-ttu-id="5999f-121">Valor</span><span class="sxs-lookup"><span data-stu-id="5999f-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5c124-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="5c124-122">Authorization</span></span>|<span data-ttu-id="5c124-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5c124-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5c124-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5c124-124">Accept</span></span>|<span data-ttu-id="5c124-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5c124-125">application/json</span></span>|
+|<span data-ttu-id="5999f-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="5999f-122">Authorization</span></span>|<span data-ttu-id="5999f-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5999f-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5999f-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="5999f-124">Accept</span></span>|<span data-ttu-id="5999f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5999f-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5c124-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5c124-126">Request body</span></span>
-<span data-ttu-id="5c124-127">No corpo da solicitação, forneça uma representação JSON do objeto [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="5c124-127">In the request body, supply a JSON representation for the [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5999f-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5999f-126">Request body</span></span>
+<span data-ttu-id="5999f-127">No corpo da solicitação, forneça uma representação JSON do objeto [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="5999f-127">In the request body, supply a JSON representation for the [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) object.</span></span>
 
-<span data-ttu-id="5c124-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="5c124-128">The following table shows the properties that are required when you create the [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span></span>
+<span data-ttu-id="5999f-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="5999f-128">The following table shows the properties that are required when you create the [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md).</span></span>
 
-|<span data-ttu-id="5c124-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5c124-129">Property</span></span>|<span data-ttu-id="5c124-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="5c124-130">Type</span></span>|<span data-ttu-id="5c124-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="5c124-131">Description</span></span>|
+|<span data-ttu-id="5999f-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5999f-129">Property</span></span>|<span data-ttu-id="5999f-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="5999f-130">Type</span></span>|<span data-ttu-id="5999f-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="5999f-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5c124-132">id</span><span class="sxs-lookup"><span data-stu-id="5c124-132">id</span></span>|<span data-ttu-id="5c124-133">String</span><span class="sxs-lookup"><span data-stu-id="5c124-133">String</span></span>|<span data-ttu-id="5c124-134">Identificador exclusivo da entidade.</span><span class="sxs-lookup"><span data-stu-id="5c124-134">Unique identifier of the entity.</span></span>|
-|<span data-ttu-id="5c124-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="5c124-135">userDisplayName</span></span>|<span data-ttu-id="5c124-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5c124-136">String</span></span>|<span data-ttu-id="5c124-137">Nome de exibição do usuário cuja aceitação a entidade representa.</span><span class="sxs-lookup"><span data-stu-id="5c124-137">Display name of the user whose acceptance the entity represents.</span></span>|
-|<span data-ttu-id="5c124-138">acceptedVersion</span><span class="sxs-lookup"><span data-stu-id="5c124-138">acceptedVersion</span></span>|<span data-ttu-id="5c124-139">Int32</span><span class="sxs-lookup"><span data-stu-id="5c124-139">Int32</span></span>|<span data-ttu-id="5c124-140">Número da versão mais recente dos T&C aceitos pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="5c124-140">Most recent version number of the T&C accepted by the user.</span></span>|
-|<span data-ttu-id="5c124-141">acceptedDateTime</span><span class="sxs-lookup"><span data-stu-id="5c124-141">acceptedDateTime</span></span>|<span data-ttu-id="5c124-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5c124-142">DateTimeOffset</span></span>|<span data-ttu-id="5c124-143">A data e a hora em que os termos foram aceitos pela última vez pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="5c124-143">DateTime when the terms were last accepted by the user.</span></span>|
+|<span data-ttu-id="5999f-132">id</span><span class="sxs-lookup"><span data-stu-id="5999f-132">id</span></span>|<span data-ttu-id="5999f-133">String</span><span class="sxs-lookup"><span data-stu-id="5999f-133">String</span></span>|<span data-ttu-id="5999f-134">Identificador exclusivo da entidade.</span><span class="sxs-lookup"><span data-stu-id="5999f-134">Unique identifier of the entity.</span></span>|
+|<span data-ttu-id="5999f-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="5999f-135">userDisplayName</span></span>|<span data-ttu-id="5999f-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5999f-136">String</span></span>|<span data-ttu-id="5999f-137">Nome de exibição do usuário cuja aceitação a entidade representa.</span><span class="sxs-lookup"><span data-stu-id="5999f-137">Display name of the user whose acceptance the entity represents.</span></span>|
+|<span data-ttu-id="5999f-138">acceptedVersion</span><span class="sxs-lookup"><span data-stu-id="5999f-138">acceptedVersion</span></span>|<span data-ttu-id="5999f-139">Int32</span><span class="sxs-lookup"><span data-stu-id="5999f-139">Int32</span></span>|<span data-ttu-id="5999f-140">Número da versão mais recente dos T&C aceitos pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="5999f-140">Most recent version number of the T&C accepted by the user.</span></span>|
+|<span data-ttu-id="5999f-141">acceptedDateTime</span><span class="sxs-lookup"><span data-stu-id="5999f-141">acceptedDateTime</span></span>|<span data-ttu-id="5999f-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5999f-142">DateTimeOffset</span></span>|<span data-ttu-id="5999f-143">A data e a hora em que os termos foram aceitos pela última vez pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="5999f-143">DateTime when the terms were last accepted by the user.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5c124-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c124-144">Response</span></span>
-<span data-ttu-id="5c124-145">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5c124-145">If successful, this method returns a `200 OK` response code and an updated [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5999f-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="5999f-144">Response</span></span>
+<span data-ttu-id="5999f-145">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5999f-145">If successful, this method returns a `200 OK` response code and an updated [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5c124-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5c124-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5999f-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5999f-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5c124-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5c124-147">Request</span></span>
-<span data-ttu-id="5c124-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5c124-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5999f-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5999f-147">Request</span></span>
+<span data-ttu-id="5999f-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5999f-148">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 Content-type: application/json
@@ -78,8 +78,8 @@ Content-length: 211
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5c124-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c124-149">Response</span></span>
-<span data-ttu-id="5c124-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5c124-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5999f-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="5999f-149">Response</span></span>
+<span data-ttu-id="5999f-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5999f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -93,6 +93,8 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
+
+
 
 
 

@@ -1,33 +1,36 @@
 ---
 title: tipo de enumeração deviceManagementExchangeAccessState
 description: Estado de acesso do Exchange de dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ef97c75379a446c0dc503636e8870dfe14f52ee2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73dd5e2a60f2e73172d3fba853cc74f07ccfc5ee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533291"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453994"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a><span data-ttu-id="8a473-103">tipo de enumeração deviceManagementExchangeAccessState</span><span class="sxs-lookup"><span data-stu-id="8a473-103">deviceManagementExchangeAccessState enum type</span></span>
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a><span data-ttu-id="6976b-103">tipo de enumeração deviceManagementExchangeAccessState</span><span class="sxs-lookup"><span data-stu-id="6976b-103">deviceManagementExchangeAccessState enum type</span></span>
 
-<span data-ttu-id="8a473-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a473-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6976b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6976b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="8a473-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="8a473-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6976b-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6976b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8a473-106">Estado de acesso do Exchange de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="8a473-106">Device Exchange Access State.</span></span>
+<span data-ttu-id="6976b-106">Estado de acesso do Exchange de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="6976b-106">Device Exchange Access State.</span></span>
 
-## <a name="members"></a><span data-ttu-id="8a473-107">Membros</span><span class="sxs-lookup"><span data-stu-id="8a473-107">Members</span></span>
-|<span data-ttu-id="8a473-108">Membro</span><span class="sxs-lookup"><span data-stu-id="8a473-108">Member</span></span>|<span data-ttu-id="8a473-109">Valor</span><span class="sxs-lookup"><span data-stu-id="8a473-109">Value</span></span>|<span data-ttu-id="8a473-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a473-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6976b-107">Membros</span><span class="sxs-lookup"><span data-stu-id="6976b-107">Members</span></span>
+|<span data-ttu-id="6976b-108">Membro</span><span class="sxs-lookup"><span data-stu-id="6976b-108">Member</span></span>|<span data-ttu-id="6976b-109">Valor</span><span class="sxs-lookup"><span data-stu-id="6976b-109">Value</span></span>|<span data-ttu-id="6976b-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="6976b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8a473-111">nenhuma</span><span class="sxs-lookup"><span data-stu-id="8a473-111">none</span></span>|<span data-ttu-id="8a473-112">,0</span><span class="sxs-lookup"><span data-stu-id="8a473-112">0</span></span>|<span data-ttu-id="8a473-113">Nenhum estado de acesso descoberto do Exchange</span><span class="sxs-lookup"><span data-stu-id="8a473-113">No access state discovered from Exchange</span></span>|
-|<span data-ttu-id="8a473-114">desconhecido</span><span class="sxs-lookup"><span data-stu-id="8a473-114">unknown</span></span>|<span data-ttu-id="8a473-115">1 </span><span class="sxs-lookup"><span data-stu-id="8a473-115">1</span></span>|<span data-ttu-id="8a473-116">O estado de acesso do dispositivo ao Exchange é desconhecido</span><span class="sxs-lookup"><span data-stu-id="8a473-116">Device access state to Exchange is unknown</span></span>|
-|<span data-ttu-id="8a473-117">autorizado</span><span class="sxs-lookup"><span data-stu-id="8a473-117">allowed</span></span>|<span data-ttu-id="8a473-118">2 </span><span class="sxs-lookup"><span data-stu-id="8a473-118">2</span></span>|<span data-ttu-id="8a473-119">O dispositivo tem acesso ao Exchange</span><span class="sxs-lookup"><span data-stu-id="8a473-119">Device has access to Exchange</span></span>|
-|<span data-ttu-id="8a473-120">bloqueou</span><span class="sxs-lookup"><span data-stu-id="8a473-120">blocked</span></span>|<span data-ttu-id="8a473-121">3 </span><span class="sxs-lookup"><span data-stu-id="8a473-121">3</span></span>|<span data-ttu-id="8a473-122">O dispositivo está bloqueado no Exchange</span><span class="sxs-lookup"><span data-stu-id="8a473-122">Device is Blocked in Exchange</span></span>|
-|<span data-ttu-id="8a473-123">em quarentena</span><span class="sxs-lookup"><span data-stu-id="8a473-123">quarantined</span></span>|<span data-ttu-id="8a473-124">4 </span><span class="sxs-lookup"><span data-stu-id="8a473-124">4</span></span>|<span data-ttu-id="8a473-125">O dispositivo está em quarentena no Exchange</span><span class="sxs-lookup"><span data-stu-id="8a473-125">Device is Quarantined in Exchange</span></span>|
+|<span data-ttu-id="6976b-111">nenhuma</span><span class="sxs-lookup"><span data-stu-id="6976b-111">none</span></span>|<span data-ttu-id="6976b-112">,0</span><span class="sxs-lookup"><span data-stu-id="6976b-112">0</span></span>|<span data-ttu-id="6976b-113">Nenhum estado de acesso descoberto do Exchange</span><span class="sxs-lookup"><span data-stu-id="6976b-113">No access state discovered from Exchange</span></span>|
+|<span data-ttu-id="6976b-114">desconhecido</span><span class="sxs-lookup"><span data-stu-id="6976b-114">unknown</span></span>|<span data-ttu-id="6976b-115">1</span><span class="sxs-lookup"><span data-stu-id="6976b-115">1</span></span>|<span data-ttu-id="6976b-116">O estado de acesso do dispositivo ao Exchange é desconhecido</span><span class="sxs-lookup"><span data-stu-id="6976b-116">Device access state to Exchange is unknown</span></span>|
+|<span data-ttu-id="6976b-117">autorizado</span><span class="sxs-lookup"><span data-stu-id="6976b-117">allowed</span></span>|<span data-ttu-id="6976b-118">duas</span><span class="sxs-lookup"><span data-stu-id="6976b-118">2</span></span>|<span data-ttu-id="6976b-119">O dispositivo tem acesso ao Exchange</span><span class="sxs-lookup"><span data-stu-id="6976b-119">Device has access to Exchange</span></span>|
+|<span data-ttu-id="6976b-120">bloqueou</span><span class="sxs-lookup"><span data-stu-id="6976b-120">blocked</span></span>|<span data-ttu-id="6976b-121">3D</span><span class="sxs-lookup"><span data-stu-id="6976b-121">3</span></span>|<span data-ttu-id="6976b-122">O dispositivo está bloqueado no Exchange</span><span class="sxs-lookup"><span data-stu-id="6976b-122">Device is Blocked in Exchange</span></span>|
+|<span data-ttu-id="6976b-123">em quarentena</span><span class="sxs-lookup"><span data-stu-id="6976b-123">quarantined</span></span>|<span data-ttu-id="6976b-124">4 </span><span class="sxs-lookup"><span data-stu-id="6976b-124">4</span></span>|<span data-ttu-id="6976b-125">O dispositivo está em quarentena no Exchange</span><span class="sxs-lookup"><span data-stu-id="6976b-125">Device is Quarantined in Exchange</span></span>|
+
+
+
 
 
 

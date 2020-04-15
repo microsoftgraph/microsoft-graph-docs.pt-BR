@@ -1,37 +1,37 @@
 ---
 title: Atualizar reportRoot
 description: Atualizar as propriedades de um objeto reportRoot.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64b08e6c4e81d877743157c51e0c578cd8e0adda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39ff21b113e3962058a349afb2eed477f9638587
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512010"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411538"
 ---
-# <a name="update-reportroot"></a><span data-ttu-id="2e39b-103">Atualizar reportRoot</span><span class="sxs-lookup"><span data-stu-id="2e39b-103">Update reportRoot</span></span>
+# <a name="update-reportroot"></a><span data-ttu-id="54b7b-103">Atualizar reportRoot</span><span class="sxs-lookup"><span data-stu-id="54b7b-103">Update reportRoot</span></span>
 
-<span data-ttu-id="2e39b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2e39b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="54b7b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="54b7b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2e39b-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2e39b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="54b7b-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="54b7b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2e39b-106">Atualizar as propriedades de um objeto [reportRoot](../resources/intune-shared-reportroot.md).</span><span class="sxs-lookup"><span data-stu-id="2e39b-106">Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
+<span data-ttu-id="54b7b-106">Atualizar as propriedades de um objeto [reportRoot](../resources/intune-shared-reportroot.md).</span><span class="sxs-lookup"><span data-stu-id="54b7b-106">Update the properties of a [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2e39b-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="2e39b-107">Prerequisites</span></span>
-<span data-ttu-id="2e39b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2e39b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="54b7b-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="54b7b-107">Prerequisites</span></span>
+<span data-ttu-id="54b7b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="54b7b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2e39b-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2e39b-110">Permission type</span></span>|<span data-ttu-id="2e39b-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="2e39b-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="54b7b-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="54b7b-110">Permission type</span></span>|<span data-ttu-id="54b7b-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="54b7b-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2e39b-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2e39b-112">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="2e39b-113">&nbsp;&nbsp; Configuração do dispositivo</span><span class="sxs-lookup"><span data-stu-id="2e39b-113">&nbsp; &nbsp; Device configuration</span></span> | <span data-ttu-id="2e39b-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e39b-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-| <span data-ttu-id="2e39b-115">&nbsp;&nbsp; Solução de problemas</span><span class="sxs-lookup"><span data-stu-id="2e39b-115">&nbsp; &nbsp; Troubleshooting</span></span> | <span data-ttu-id="2e39b-116">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e39b-116">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="2e39b-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2e39b-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2e39b-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e39b-118">Not supported.</span></span>|
-|<span data-ttu-id="2e39b-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2e39b-119">Application</span></span>|<span data-ttu-id="2e39b-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e39b-120">Not supported.</span></span>|
+|<span data-ttu-id="54b7b-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="54b7b-112">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="54b7b-113">&nbsp;&nbsp; Configuração do dispositivo</span><span class="sxs-lookup"><span data-stu-id="54b7b-113">&nbsp; &nbsp; Device configuration</span></span> | <span data-ttu-id="54b7b-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54b7b-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+| <span data-ttu-id="54b7b-115">&nbsp;&nbsp; Solução de problemas</span><span class="sxs-lookup"><span data-stu-id="54b7b-115">&nbsp; &nbsp; Troubleshooting</span></span> | <span data-ttu-id="54b7b-116">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54b7b-116">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="54b7b-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="54b7b-117">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="54b7b-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="54b7b-118">Not supported.</span></span>|
+|<span data-ttu-id="54b7b-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="54b7b-119">Application</span></span>|<span data-ttu-id="54b7b-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="54b7b-120">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2e39b-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2e39b-121">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="54b7b-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="54b7b-121">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,29 +40,29 @@ ms.locfileid: "42512010"
 PATCH /reports
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2e39b-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2e39b-122">Request headers</span></span>
-|<span data-ttu-id="2e39b-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2e39b-123">Header</span></span>|<span data-ttu-id="2e39b-124">Valor</span><span class="sxs-lookup"><span data-stu-id="2e39b-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="54b7b-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="54b7b-122">Request headers</span></span>
+|<span data-ttu-id="54b7b-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="54b7b-123">Header</span></span>|<span data-ttu-id="54b7b-124">Valor</span><span class="sxs-lookup"><span data-stu-id="54b7b-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2e39b-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="2e39b-125">Authorization</span></span>|<span data-ttu-id="2e39b-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e39b-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2e39b-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="2e39b-127">Accept</span></span>|<span data-ttu-id="2e39b-128">application/json</span><span class="sxs-lookup"><span data-stu-id="2e39b-128">application/json</span></span>|
+|<span data-ttu-id="54b7b-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="54b7b-125">Authorization</span></span>|<span data-ttu-id="54b7b-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="54b7b-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="54b7b-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="54b7b-127">Accept</span></span>|<span data-ttu-id="54b7b-128">application/json</span><span class="sxs-lookup"><span data-stu-id="54b7b-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2e39b-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2e39b-129">Request body</span></span>
-<span data-ttu-id="2e39b-130">No corpo da solicitação, forneça uma representação JSON do objeto [reportRoot](../resources/intune-shared-reportroot.md).</span><span class="sxs-lookup"><span data-stu-id="2e39b-130">In the request body, supply a JSON representation for the [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="54b7b-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="54b7b-129">Request body</span></span>
+<span data-ttu-id="54b7b-130">No corpo da solicitação, forneça uma representação JSON do objeto [reportRoot](../resources/intune-shared-reportroot.md).</span><span class="sxs-lookup"><span data-stu-id="54b7b-130">In the request body, supply a JSON representation for the [reportRoot](../resources/intune-shared-reportroot.md) object.</span></span>
 
-<span data-ttu-id="2e39b-131">A tabela a seguir mostra as propriedades que são necessárias ao criar [reportRoot](../resources/intune-shared-reportroot.md).</span><span class="sxs-lookup"><span data-stu-id="2e39b-131">The following table shows the properties that are required when you create the [reportRoot](../resources/intune-shared-reportroot.md).</span></span>
+<span data-ttu-id="54b7b-131">A tabela a seguir mostra as propriedades que são necessárias ao criar [reportRoot](../resources/intune-shared-reportroot.md).</span><span class="sxs-lookup"><span data-stu-id="54b7b-131">The following table shows the properties that are required when you create the [reportRoot](../resources/intune-shared-reportroot.md).</span></span>
 
-|<span data-ttu-id="2e39b-132">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2e39b-132">Property</span></span>|<span data-ttu-id="2e39b-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="2e39b-133">Type</span></span>|<span data-ttu-id="2e39b-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e39b-134">Description</span></span>|
+|<span data-ttu-id="54b7b-132">Propriedade</span><span class="sxs-lookup"><span data-stu-id="54b7b-132">Property</span></span>|<span data-ttu-id="54b7b-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="54b7b-133">Type</span></span>|<span data-ttu-id="54b7b-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="54b7b-134">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2e39b-135">id</span><span class="sxs-lookup"><span data-stu-id="2e39b-135">id</span></span>|<span data-ttu-id="2e39b-136">String</span><span class="sxs-lookup"><span data-stu-id="2e39b-136">String</span></span>|<span data-ttu-id="2e39b-137">O identificador exclusivo dessa entidade.</span><span class="sxs-lookup"><span data-stu-id="2e39b-137">The unique identifier for this entity.</span></span>|
+|<span data-ttu-id="54b7b-135">id</span><span class="sxs-lookup"><span data-stu-id="54b7b-135">id</span></span>|<span data-ttu-id="54b7b-136">String</span><span class="sxs-lookup"><span data-stu-id="54b7b-136">String</span></span>|<span data-ttu-id="54b7b-137">O identificador exclusivo dessa entidade.</span><span class="sxs-lookup"><span data-stu-id="54b7b-137">The unique identifier for this entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2e39b-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e39b-138">Response</span></span>
-<span data-ttu-id="2e39b-139">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [reportRoot](../resources/intune-shared-reportroot.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2e39b-139">If successful, this method returns a `200 OK` response code and an updated [reportRoot](../resources/intune-shared-reportroot.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="54b7b-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="54b7b-138">Response</span></span>
+<span data-ttu-id="54b7b-139">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [reportRoot](../resources/intune-shared-reportroot.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="54b7b-139">If successful, this method returns a `200 OK` response code and an updated [reportRoot](../resources/intune-shared-reportroot.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2e39b-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2e39b-140">Example</span></span>
-### <a name="request"></a><span data-ttu-id="2e39b-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e39b-141">Request</span></span>
-<span data-ttu-id="2e39b-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2e39b-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="54b7b-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="54b7b-140">Example</span></span>
+### <a name="request"></a><span data-ttu-id="54b7b-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="54b7b-141">Request</span></span>
+<span data-ttu-id="54b7b-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="54b7b-142">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/reports
 Content-type: application/json
@@ -71,8 +71,8 @@ Content-length: 2
 {}
 ```
 
-### <a name="response"></a><span data-ttu-id="2e39b-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e39b-143">Response</span></span>
-<span data-ttu-id="2e39b-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2e39b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="54b7b-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="54b7b-143">Response</span></span>
+<span data-ttu-id="54b7b-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="54b7b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -83,6 +83,8 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
 
 
 
