@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8ab703760246fe08145924fd5d21ce4d02a5090b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6fa0bc09f2f6038dd49c8c804420ce042bd5ec93
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763297"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510580"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>tipo de recurso teleconferenceDeviceMediaQuality
 
@@ -32,7 +32,7 @@ Representa dados de qualidade de mídia do dispositivo de teleconferência de v�
 |averageOutboundRoundTripDelay|Duração|O intervalo médio de ida e volta da rede de fluxo de saída.|
 |channelIndex|Int32|O índice de canal da mídia. A indexação começa com 1.  Se uma sessão de mídia contiver três modalidades de vídeo, os índices de canal serão 1, 2 e 3.|
 |inboundPackets|Int64|O número total de pacotes de entrada.|
-|localIPAddress|String|o endereço IP local da sessão de mídia.|
+|localIPAddress|Cadeia de caracteres|o endereço IP local da sessão de mídia.|
 |localPort|Int32|A porta de mídia local.|
 |maximumInboundJitter|Duração|A tremulação máxima da rede de fluxo de entrada.|
 |maximumInboundPacketLossRateInPercentage|Duplo|A taxa máxima de perda de pacote de fluxo de entrada em porcentagem (0-100). Por exemplo, 0, 1 significa 0, 1%.|
@@ -43,8 +43,16 @@ Representa dados de qualidade de mídia do dispositivo de teleconferência de v�
 |mediaDuration|Duração|A duração da modalidade total. Se a mídia habilitada e desabilitada várias vezes, MediaDuration será a soma de todas as durações.|
 |networkLinkSpeedInBytes|Int64|A velocidade do link de rede em bytes|
 |outboundPackets|Int64|O número total dos pacotes de saída.|
-|remoteIPAddress|String|O endereço IP remoto da sessão de mídia.|
+|remoteIPAddress|Cadeia de caracteres|O endereço IP remoto da sessão de mídia.|
 |remotePort|Int32|A porta de mídia remota.|
+
+### <a name="derived-types"></a>Tipos derivados
+
+| Tipo                                                 | Descrição                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | Dados de qualidade de áudio do dispositivo de teleconferência de vídeo.                          |
+| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | Dados de qualidade de vídeo do dispositivo de teleconferência de vídeo.                          |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Obter tokens de autenticação
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: /graph/auth/index?context=graph/api/beta
         - name: Noções básicas
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -74,7 +74,7 @@
         - name: Azure AD Graph.
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Lista de verificação para migração de aplicativos
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -161,11 +161,11 @@
     - name: Referência beta
       expanded: true
       items:
-        - name: Visão geral
+        - name: Visão Geral
           href: overview.md
         - name: Usuários
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/users.md
             - name: Usuário
               href: resources/user.md
@@ -407,7 +407,7 @@
                   href: api/user-delete-teamsappinstallation.md
         - name: Grupos
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/groups-overview.md
             - name: Grupo
               href: resources/group.md
@@ -931,7 +931,7 @@
                   href: api/cloudcommunications-getpresencesbyuserid.md
             - name: Registros de chamada (visualização)
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/callrecords-api-overview.md
                 - name: Registro de chamadas
                   href: resources/callrecords-callrecord.md
@@ -974,7 +974,7 @@
         - name: Reserva de clientes
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/booking-api-overview.md
             - name: Negócio de reservas
               href: resources/bookingbusiness.md
@@ -1216,6 +1216,8 @@
                       href: api/intune-apps-androidmanagedstoreapp-delete.md
                     - name: Atualizar
                       href: api/intune-apps-androidmanagedstoreapp-update.md
+                - name: Configurações de atribuição de aplicativo repositório gerenciado do Android
+                  href: resources/intune-apps-androidmanagedstoreappassignmentsettings.md
                 - name: Configuração do aplicativo do repositório gerenciado Android
                   href: resources/intune-apps-androidmanagedstoreappconfiguration.md
                   items:
@@ -1246,6 +1248,8 @@
                   href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md
                 - name: Tipo de dados do item de esquema de configuração do aplicativo do repositório gerenciado Android
                   href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
+                - name: Faixa de aplicativos do repositório gerenciado do Android
+                  href: resources/intune-apps-androidmanagedstoreapptrack.md
                 - name: Aplicativo Web do repositório gerenciado do Android
                   href: resources/intune-apps-androidmanagedstorewebapp.md
                   items:
@@ -1265,6 +1269,8 @@
                   href: resources/intune-apps-androidpermissionaction.md
                 - name: Tipo de ação de permissão do Android
                   href: resources/intune-apps-androidpermissionactiontype.md
+                - name: Aplicabilidade do perfil do Android
+                  href: resources/intune-apps-androidprofileapplicability.md
                 - name: Aplicativo da loja Android
                   href: resources/intune-apps-androidstoreapp.md
                   items:
@@ -2642,6 +2648,19 @@
                       href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
                 - name: Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android
                   href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
+                - name: Configuração de autenticação de credencial derivada do proprietário do dispositivo Android
+                  href: resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md
+                  items:
+                    - name: Listar
+                      href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-list.md
+                    - name: Obter
+                      href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-get.md
+                    - name: Criar
+                      href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-create.md
+                    - name: Excluir
+                      href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-delete.md
+                    - name: Atualizar
+                      href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
                 - name: Configuração de Wi-Fi corporativa do proprietário do dispositivo Android
                   href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                   items:
@@ -3244,6 +3263,8 @@
                   href: resources/intune-deviceconfig-applisttype.md
                 - name: Tipo de controle do aplicativo App Locker
                   href: resources/intune-deviceconfig-applockerapplicationcontroltype.md
+                - name: Item de lista de aplicativos Apple
+                  href: resources/intune-deviceconfig-appleapplistitem.md
                 - name: Base de configuração de recursos do dispositivo Apple
                   href: resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md
                   items:
@@ -3251,6 +3272,13 @@
                       href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
                     - name: Obter
                       href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
+                - name: Base de configuração de check-in da Apple expedida
+                  href: resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md
+                  items:
+                    - name: Listar
+                      href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-list.md
+                    - name: Obter
+                      href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-get.md
                 - name: Formato de nome de assunto da Apple
                   href: resources/intune-deviceconfig-applesubjectnameformat.md
                 - name: Configuração do Apple VPN Always on
@@ -3779,6 +3807,23 @@
                       href: api/intune-grouppolicy-grouppolicydefinitionvalue-delete.md
                     - name: Atualizar
                       href: api/intune-grouppolicy-grouppolicydefinitionvalue-update.md
+                - name: Operação de política de grupo
+                  href: resources/intune-grouppolicy-grouppolicyoperation.md
+                  items:
+                    - name: Listar
+                      href: api/intune-grouppolicy-grouppolicyoperation-list.md
+                    - name: Obter
+                      href: api/intune-grouppolicy-grouppolicyoperation-get.md
+                    - name: Criar
+                      href: api/intune-grouppolicy-grouppolicyoperation-create.md
+                    - name: Excluir
+                      href: api/intune-grouppolicy-grouppolicyoperation-delete.md
+                    - name: Atualizar
+                      href: api/intune-grouppolicy-grouppolicyoperation-update.md
+                - name: Status da operação da política de grupo
+                  href: resources/intune-grouppolicy-grouppolicyoperationstatus.md
+                - name: Tipo de operação de política de grupo
+                  href: resources/intune-grouppolicy-grouppolicyoperationtype.md
                 - name: Apresentação da política de grupo
                   href: resources/intune-grouppolicy-grouppolicypresentation.md
                   items:
@@ -4024,6 +4069,33 @@
                       href: api/intune-grouppolicy-grouppolicyuploadeddefinition-delete.md
                     - name: Atualizar
                       href: api/intune-grouppolicy-grouppolicyuploadeddefinition-update.md
+                - name: Arquivo de definição carregado da política de grupo
+                  href: resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md
+                  items:
+                    - name: Listar
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-list.md
+                    - name: Obter
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-get.md
+                    - name: Criar
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-create.md
+                    - name: Excluir
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-delete.md
+                    - name: Atualizar
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-update.md
+                    - name: ação addLanguageFiles
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles.md
+                    - name: ação removeLanguageFiles
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles.md
+                    - name: ação updateLanguageFiles
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles.md
+                    - name: ação uploadNewVersion
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion.md
+                    - name: ação remover
+                      href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove.md
+                - name: Política de grupo carregou o status do arquivo de definição
+                  href: resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md
+                - name: Política de grupo carregou o arquivo de idioma
+                  href: resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md
                 - name: Apresentação de política de grupo carregada
                   href: resources/intune-grouppolicy-grouppolicyuploadedpresentation.md
                   items:
@@ -4173,6 +4245,19 @@
                       href: api/intune-deviceconfig-iosenterprisewificonfiguration-delete.md
                     - name: Atualizar
                       href: api/intune-deviceconfig-iosenterprisewificonfiguration-update.md
+                - name: configuração de check-in do iOS expedida
+                  href: resources/intune-deviceconfig-iosexpeditedcheckinconfiguration.md
+                  items:
+                    - name: Listar
+                      href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-list.md
+                    - name: Obter
+                      href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-get.md
+                    - name: Criar
+                      href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-create.md
+                    - name: Excluir
+                      href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-delete.md
+                    - name: Atualizar
+                      href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-update.md
                 - name: Configuração geral do dispositivo iOS
                   href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                   items:
@@ -5825,6 +5910,10 @@
                       href: api/intune-devices-devicehealthscriptdevicestate-delete.md
                     - name: Atualizar
                       href: api/intune-devices-devicehealthscriptdevicestate-update.md
+                - name: Histórico de correção de script de integridade do dispositivo
+                  href: resources/intune-devices-devicehealthscriptremediationhistory.md
+                - name: Dados de histórico de correção de script de integridade do dispositivo
+                  href: resources/intune-devices-devicehealthscriptremediationhistorydata.md
                 - name: Resumo de correção de script de integridade do dispositivo
                   href: resources/intune-devices-devicehealthscriptremediationsummary.md
                 - name: Resumo de execução de script de integridade do dispositivo
@@ -6139,6 +6228,8 @@
                       href: api/intune-devices-devicemanagementscriptuserstate-delete.md
                     - name: Atualizar
                       href: api/intune-devices-devicemanagementscriptuserstate-update.md
+                - name: Restrição de implementação abstrata da configuração de gerenciamento de dispositivo
+                  href: resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md
                 - name: Restrição de aplicativo para configuração de gerenciamento de dispositivo
                   href: resources/intune-deviceintent-devicemanagementsettingappconstraint.md
                 - name: Restrição booleana de configuração do gerenciamento de dispositivos
@@ -6599,25 +6690,6 @@
                       href: api/intune-devices-remoteactionaudit-delete.md
                     - name: Atualizar
                       href: api/intune-devices-remoteactionaudit-update.md
-                - name: Status da inclusão de assistência remota
-                  href: resources/intune-remoteassistance-remoteassistanceonboardingstatus.md
-                - name: Parceiro de assistência remota
-                  href: resources/intune-remoteassistance-remoteassistancepartner.md
-                  items:
-                    - name: Listar
-                      href: api/intune-remoteassistance-remoteassistancepartner-list.md
-                    - name: Obter
-                      href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                    - name: Criar
-                      href: api/intune-remoteassistance-remoteassistancepartner-create.md
-                    - name: Excluir
-                      href: api/intune-remoteassistance-remoteassistancepartner-delete.md
-                    - name: Atualizar
-                      href: api/intune-remoteassistance-remoteassistancepartner-update.md
-                    - name: Ação beginOnboarding
-                      href: api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md
-                    - name: Ação disconnect
-                      href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
                 - name: Resultado de ação de bloqueio remoto
                   href: resources/intune-devices-remotelockactionresult.md
                 - name: Resultado de ação de redefinir a senha
@@ -6799,19 +6871,19 @@
                       href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
                     - name: summarizeDeviceRegressionPerformance
                       href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
-                - name: Histórico de Pontuação de início da análise da experiência do usuário
-                  href: resources/intune-devices-userexperienceanalyticsstartupscorehistory.md
+                - name: Histórico de pontuação da análise da experiência do usuário
+                  href: resources/intune-devices-userexperienceanalyticsscorehistory.md
                   items:
                     - name: Listar
-                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-list.md
+                      href: api/intune-devices-userexperienceanalyticsscorehistory-list.md
                     - name: Obter
-                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-get.md
+                      href: api/intune-devices-userexperienceanalyticsscorehistory-get.md
                     - name: Criar
-                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-create.md
+                      href: api/intune-devices-userexperienceanalyticsscorehistory-create.md
                     - name: Excluir
-                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-delete.md
+                      href: api/intune-devices-userexperienceanalyticsscorehistory-delete.md
                     - name: Atualizar
-                      href: api/intune-devices-userexperienceanalyticsstartupscorehistory-update.md
+                      href: api/intune-devices-userexperienceanalyticsscorehistory-update.md
                 - name: Análise da experiência do usuário resumida por
                   href: resources/intune-devices-userexperienceanalyticssummarizedby.md
                 - name: Expressões de condição de gerenciamento variável
@@ -7482,6 +7554,13 @@
                       href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                     - name: Atualizar
                       href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+                - name: Vários aplicativos RBAC
+                  href: resources/intune-rbac-rbacapplicationmultiple.md
+                  items:
+                    - name: Obter
+                      href: api/intune-rbac-rbacapplicationmultiple-get.md
+                    - name: Atualizar
+                      href: api/intune-rbac-rbacapplicationmultiple-update.md
                 - name: Ação Resource
                   href: resources/intune-rbac-resourceaction.md
                 - name: Operação de recurso
@@ -7525,6 +7604,13 @@
                       href: api/intune-rbac-roledefinition-delete.md
                     - name: Atualizar
                       href: api/intune-rbac-roledefinition-update.md
+                - name: Gerenciamento de função
+                  href: resources/intune-rbac-rolemanagement.md
+                  items:
+                    - name: Obter
+                      href: api/intune-rbac-rolemanagement-get.md
+                    - name: Atualizar
+                      href: api/intune-rbac-rolemanagement-update.md
                 - name: Permissão de função
                   href: resources/intune-rbac-rolepermission.md
                 - name: Marca de escopo de função
@@ -8163,7 +8249,7 @@
         - name: Arquivos
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/onedrive.md
             - name: Unidades
               href: resources/drive.md
@@ -8257,7 +8343,7 @@
         - name: Finanças (visualização)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/dynamics-graph-reference.md
             - name: Conta
               href: resources/dynamics-account.md
@@ -8492,7 +8578,7 @@
         - name: Identidade e acesso
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/azure-ad-overview.md
             - name: Avaliações do acesso
               href: resources/accessreviews-root.md
@@ -8561,16 +8647,18 @@
             - name: Unidade administrativa
               href: resources/administrativeunit.md
               items:
-                - name: Criar unidade administrativa
-                  href: api/administrativeunit-post-administrativeunits.md
-                - name: Listar unidade administrativa
+                - name: Listar
                   href: api/administrativeunit-list.md
-                - name: Obter unidade administrativa
+                - name: Create
+                  href: api/administrativeunit-post-administrativeunits.md
+                - name: Obter
                   href: api/administrativeunit-get.md
-                - name: Atualizar unidade administrativa
+                - name: Atualizar
                   href: api/administrativeunit-update.md
-                - name: Excluir unidade administrativa
+                - name: Excluir
                   href: api/administrativeunit-delete.md
+                - name: Obter intervalo
+                  href: api/administrativeunit-delta.md
                 - name: Adicionar um membro
                   href: api/administrativeunit-post-members.md
                 - name: Listar membros
@@ -8667,11 +8755,11 @@
             - name: Configuração de autenticação baseada em certificado
               href: resources/certificatebasedauthconfiguration.md
               items:
-                - name: Listar
+                - name: Lista
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
-                - name: Criar
+                - name: Create
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
@@ -8697,7 +8785,7 @@
                       items:
                         - name: Local nomeado
                           href: resources/namedlocation.md
-                        - name: Listar
+                        - name: Lista
                           href: api/conditionalaccessroot-list-namedlocations.md
                         - name: Obter
                           href: api/namedlocation-get.md
@@ -8709,7 +8797,7 @@
                           href: resources/countrynamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Create
+                        - name: Criar
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/countrynamedlocation-get.md
@@ -8723,7 +8811,7 @@
                           href: resources/ipnamedlocation.md
                         - name: Listar
                           href: api/conditionalaccessroot-list-namedlocations.md
-                        - name: Create
+                        - name: Criar
                           href: api/conditionalaccessroot-post-namedlocations.md
                         - name: Obter
                           href: api/ipnamedlocation-get.md
@@ -9037,7 +9125,7 @@
                       href: api/informationprotectionlabel-extractlabel.md
                 - name: Avaliação de ameaças
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/threatassessment-api-overview.md
                     - name: Solicitação de avaliação de ameaças
                       href: resources/threatassessmentrequest.md
@@ -9051,7 +9139,7 @@
                       href: resources/urlassessmentrequest.md
                     - name: Listar
                       href: api/informationprotection-list-threatassessmentrequests.md
-                    - name: Create
+                    - name: Criar
                       href: api/informationprotection-post-threatassessmentrequests.md
                     - name: Obter
                       href: api/threatassessmentrequest-get.md
@@ -9810,7 +9898,7 @@
                   href: api/resource-get.md
         - name: Notificações
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/notifications-api-overview.md
             - name: Notificação
               href: resources/projectrome-notification.md
@@ -10121,7 +10209,7 @@
                       href: api/multivaluelegacyextendedproperty-get.md
         - name: Impressão universal
           items:
-            - name: Print
+            - name: Imprimir
               href: resources/print.md
             - name: Conectores
               href: resources/printconnector.md
@@ -10252,7 +10340,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Registro e uso
                   items:
-                    - name: Visão geral
+                    - name: Visão Geral
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Contagem de registro de usuário de credenciais
                       href: resources/credentialuserregistrationcount.md
@@ -10276,7 +10364,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Relatórios de uso do Office 365
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/report.md
                 - name: Uso do dispositivo do Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -10479,13 +10567,13 @@
           items:
             - name: Consulta
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/search-api-overview.md
                 - name: Dados de consulta
                   href: api/search-query.md
             - name: Índice
               items:
-                - name: Visão geral
+                - name: Visão Geral
                   href: resources/indexing-api-overview.md
                 - name: Conexão externa
                   items:
@@ -10590,7 +10678,7 @@
         - name: Sites e listas
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/sharepoint.md
             - name: Sites
               href: resources/site.md
@@ -10651,7 +10739,7 @@
         - name: Tarefas e planos
           displayName: Planner
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/planner-overview.md
             - name: Plano
               href: resources/plannerplan.md
@@ -11215,7 +11303,7 @@
         - name: Workbooks e gráficos
           displayName: Excel
           items:
-            - name: Visão geral
+            - name: Visão Geral
               href: resources/excel.md
             - name: Workbook
               href: resources/workbook.md

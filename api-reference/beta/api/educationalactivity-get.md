@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 35d927664013775c6bb470d5118427d3bc6c45ae
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 6118622b033a6c524a100170a2177a98cad6f7d6
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199533"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510599"
 ---
 # <a name="get-educationalactivity"></a>Obter educationalActivity
 
@@ -81,17 +81,14 @@ Este é um exemplo de solicitação.
 GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

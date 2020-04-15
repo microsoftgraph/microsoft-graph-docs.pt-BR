@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 33b781a5b32285f30b4be1c5941fa75bf836fac3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0ba68e9b6566cde9ede255d2f3a196558621aad7
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763225"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510984"
 ---
 # <a name="teleconferencedevicevideoquality-resource-type"></a>tipo de recurso teleconferenceDeviceVideoQuality
 
@@ -30,6 +30,12 @@ O recurso **teleconferenceDeviceVideoQuality** herda as propriedades de [telecon
 |averageInboundFrameRate|Duplo|A taxa média de quadros de vídeo de fluxo de entrada por segundo.|
 |averageOutboundBitRate|Duplo|A taxa média de bits de vídeo de fluxo de saída por segundo.|
 |averageOutboundFrameRate|Duplo|A taxa média de quadros de vídeo de fluxo de saída por segundo.|
+
+### <a name="derived-types"></a>Tipos derivados
+
+| Tipo                                                 | Descrição                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

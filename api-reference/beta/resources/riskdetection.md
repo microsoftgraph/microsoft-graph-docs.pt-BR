@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b5db0cd41bcd23ac07c226c8f5a6711d4e817f11
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 01d0f5c566a3c633caab8e321202e422bbad62a8
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43178888"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510998"
 ---
 # <a name="riskdetection-resource-type"></a>tipo de recurso riskDetection
 
@@ -41,7 +41,8 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |`id`|`string`|ID exclusiva da detecção de risco. |
 |`requestId`|`string`|ID de solicitação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada.|
 |`correlationId`|`string`|ID de correlação da entrada associada à detecção de risco. Essa propriedade será NULL se a detecção de risco não estiver associada a uma entrada. |
-|`riskType`|`riskEventType`|O tipo de evento de risco detectado. Os valores possíveis são unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, genericadminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP e unknownFutureValue. |
+|`riskEventType`|`string`|O tipo de evento de risco detectado. Os valores possíveis são `unlikelyTravel`: `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue`,,,,,,,,,,, e. `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` |
+|`riskType`|`riskEventType`|Lista de tipos de eventos de risco.<br/>**Observação:** Essa propriedade foi preterida. Use **riskEventTypes** em vez disso. |
 |`riskState`|`riskState`|O estado de um usuário ou logon arriscado detectado. Os valores possíveis são nenhum, confirmedSafe, corrigido, descartado, atRisk, confirmedCompromised e unknownFutureValue. |
 |`riskLevel`|`riskLevel`|Nível do risco detectado. Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
 |`riskDetail`|`riskDetail`|Detalhes do risco detectado. Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Os clientes P1 serão retornados `hidden`.|
