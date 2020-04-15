@@ -1,57 +1,57 @@
 ---
 title: Excluir dispositivo
 description: Exclui um dispositivo registrado.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c310af137d0fbdd33dd63293e063d9f89b304b63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 969afefaca69a563d166d084d2732f443ed39eb5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518137"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464032"
 ---
-# <a name="delete-device"></a><span data-ttu-id="3a3f7-103">Excluir dispositivo</span><span class="sxs-lookup"><span data-stu-id="3a3f7-103">Delete device</span></span>
+# <a name="delete-device"></a><span data-ttu-id="39338-103">Excluir dispositivo</span><span class="sxs-lookup"><span data-stu-id="39338-103">Delete device</span></span>
 
-<span data-ttu-id="3a3f7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a3f7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="39338-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="39338-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3a3f7-105">Exclui um dispositivo registrado.</span><span class="sxs-lookup"><span data-stu-id="3a3f7-105">Delete a registered device.</span></span>
+<span data-ttu-id="39338-105">Exclui um dispositivo registrado.</span><span class="sxs-lookup"><span data-stu-id="39338-105">Delete a registered device.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3a3f7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3a3f7-106">Permissions</span></span>
-<span data-ttu-id="3a3f7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a3f7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="39338-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="39338-106">Permissions</span></span>
+<span data-ttu-id="39338-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="39338-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="3a3f7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3a3f7-109">Permission type</span></span>      | <span data-ttu-id="3a3f7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3a3f7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="39338-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="39338-109">Permission type</span></span>      | <span data-ttu-id="39338-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="39338-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3a3f7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3a3f7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3a3f7-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3a3f7-112">Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="3a3f7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3a3f7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3a3f7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a3f7-114">Not supported.</span></span>    |
-|<span data-ttu-id="3a3f7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3a3f7-115">Application</span></span> | <span data-ttu-id="3a3f7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a3f7-116">Not supported.</span></span> |
+|<span data-ttu-id="39338-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="39338-111">Delegated (work or school account)</span></span> | <span data-ttu-id="39338-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="39338-112">Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="39338-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="39338-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="39338-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="39338-114">Not supported.</span></span>    |
+|<span data-ttu-id="39338-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="39338-115">Application</span></span> | <span data-ttu-id="39338-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="39338-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3a3f7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3a3f7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39338-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="39338-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
 ```
-> <span data-ttu-id="3a3f7-118">Observação: A "id" na solicitação é a propriedade "id" do dispositivo, não a propriedade "deviceId".</span><span class="sxs-lookup"><span data-stu-id="3a3f7-118">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
+> <span data-ttu-id="39338-118">Observação: A "id" na solicitação é a propriedade "id" do dispositivo, não a propriedade "deviceId".</span><span class="sxs-lookup"><span data-stu-id="39338-118">Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3a3f7-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3a3f7-119">Request headers</span></span>
-| <span data-ttu-id="3a3f7-120">Nome</span><span class="sxs-lookup"><span data-stu-id="3a3f7-120">Name</span></span>       | <span data-ttu-id="3a3f7-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="3a3f7-121">Type</span></span> | <span data-ttu-id="3a3f7-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="3a3f7-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="39338-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="39338-119">Request headers</span></span>
+| <span data-ttu-id="39338-120">Nome</span><span class="sxs-lookup"><span data-stu-id="39338-120">Name</span></span>       | <span data-ttu-id="39338-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="39338-121">Type</span></span> | <span data-ttu-id="39338-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="39338-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="3a3f7-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="3a3f7-123">Authorization</span></span>  | <span data-ttu-id="3a3f7-124">string</span><span class="sxs-lookup"><span data-stu-id="3a3f7-124">string</span></span>  | <span data-ttu-id="3a3f7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3a3f7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="39338-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="39338-123">Authorization</span></span>  | <span data-ttu-id="39338-124">string</span><span class="sxs-lookup"><span data-stu-id="39338-124">string</span></span>  | <span data-ttu-id="39338-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="39338-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3a3f7-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3a3f7-127">Request body</span></span>
-<span data-ttu-id="3a3f7-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3a3f7-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="39338-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="39338-127">Request body</span></span>
+<span data-ttu-id="39338-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="39338-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3a3f7-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a3f7-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="39338-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="39338-129">Response</span></span>
 
-<span data-ttu-id="3a3f7-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3a3f7-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="39338-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="39338-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3a3f7-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3a3f7-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3a3f7-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a3f7-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="39338-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="39338-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="39338-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="39338-133">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="3a3f7-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="3a3f7-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="39338-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="39338-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_device"
@@ -59,25 +59,25 @@ DELETE /devices/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/devices/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="3a3f7-135">C#</span><span class="sxs-lookup"><span data-stu-id="3a3f7-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="39338-135">C#</span><span class="sxs-lookup"><span data-stu-id="39338-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3a3f7-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3a3f7-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="39338-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="39338-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-device-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3a3f7-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3a3f7-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="39338-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="39338-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3a3f7-138">Java</span><span class="sxs-lookup"><span data-stu-id="3a3f7-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="39338-138">Java</span><span class="sxs-lookup"><span data-stu-id="39338-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="3a3f7-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a3f7-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="39338-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="39338-139">Response</span></span>
 
 <!-- {
   "blockType": "response",

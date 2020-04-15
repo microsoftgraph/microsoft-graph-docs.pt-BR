@@ -2,31 +2,31 @@
 title: tipo de recurso mailTipsError
 description: Um erro que ocorre durante uma ação.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 476e48f0b9729aebdefcb2e263b597b1e8e9fbdb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d9f5df716d62f2ae33e9a6c90d5803413b8c69b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447483"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461828"
 ---
-# <a name="mailtipserror-resource-type"></a><span data-ttu-id="0ae1c-103">tipo de recurso mailTipsError</span><span class="sxs-lookup"><span data-stu-id="0ae1c-103">mailTipsError resource type</span></span>
+# <a name="mailtipserror-resource-type"></a><span data-ttu-id="3fb7e-103">tipo de recurso mailTipsError</span><span class="sxs-lookup"><span data-stu-id="3fb7e-103">mailTipsError resource type</span></span>
 
-<span data-ttu-id="0ae1c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0ae1c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3fb7e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3fb7e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0ae1c-105">Um erro que ocorre durante uma ação.</span><span class="sxs-lookup"><span data-stu-id="0ae1c-105">An error that occurs during an action.</span></span>
+<span data-ttu-id="3fb7e-105">Um erro que ocorre durante uma ação.</span><span class="sxs-lookup"><span data-stu-id="3fb7e-105">An error that occurs during an action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0ae1c-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0ae1c-106">Properties</span></span>
-| <span data-ttu-id="0ae1c-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0ae1c-107">Property</span></span>     | <span data-ttu-id="0ae1c-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="0ae1c-108">Type</span></span>   |<span data-ttu-id="0ae1c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="0ae1c-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3fb7e-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3fb7e-106">Properties</span></span>
+| <span data-ttu-id="3fb7e-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3fb7e-107">Property</span></span>     | <span data-ttu-id="3fb7e-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="3fb7e-108">Type</span></span>   |<span data-ttu-id="3fb7e-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="3fb7e-109">Description</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="0ae1c-110">mensagem</span><span class="sxs-lookup"><span data-stu-id="0ae1c-110">message</span></span> | <span data-ttu-id="0ae1c-111">String</span><span class="sxs-lookup"><span data-stu-id="0ae1c-111">String</span></span> | <span data-ttu-id="0ae1c-112">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="0ae1c-112">The error message.</span></span> |
-| <span data-ttu-id="0ae1c-113">código</span><span class="sxs-lookup"><span data-stu-id="0ae1c-113">code</span></span> | <span data-ttu-id="0ae1c-114">String</span><span class="sxs-lookup"><span data-stu-id="0ae1c-114">String</span></span> | <span data-ttu-id="0ae1c-115">O código de erro.</span><span class="sxs-lookup"><span data-stu-id="0ae1c-115">The error code.</span></span> |
+| <span data-ttu-id="3fb7e-110">mensagem</span><span class="sxs-lookup"><span data-stu-id="3fb7e-110">message</span></span> | <span data-ttu-id="3fb7e-111">String</span><span class="sxs-lookup"><span data-stu-id="3fb7e-111">String</span></span> | <span data-ttu-id="3fb7e-112">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="3fb7e-112">The error message.</span></span> |
+| <span data-ttu-id="3fb7e-113">código</span><span class="sxs-lookup"><span data-stu-id="3fb7e-113">code</span></span> | <span data-ttu-id="3fb7e-114">String</span><span class="sxs-lookup"><span data-stu-id="3fb7e-114">String</span></span> | <span data-ttu-id="3fb7e-115">O código de erro.</span><span class="sxs-lookup"><span data-stu-id="3fb7e-115">The error code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="0ae1c-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0ae1c-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3fb7e-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3fb7e-116">JSON representation</span></span>
 
-<span data-ttu-id="0ae1c-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0ae1c-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3fb7e-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3fb7e-117">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
