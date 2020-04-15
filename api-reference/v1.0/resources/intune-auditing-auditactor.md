@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso auditActor
 description: Uma classe que contém as propriedades para Ator de auditoria.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c10ac0a18f5bfcf68be56edc402c83d9882a8ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c6a51d99d712305292e17d19487d829bd2e09af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532738"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439529"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -57,6 +57,9 @@ Veja a seguir uma representação JSON do recurso.
   "userId": "String"
 }
 ```
+
+
+
 
 
 

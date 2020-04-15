@@ -4,13 +4,13 @@ description: Representa uma função de aplicativo que pode ser solicitada por u
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 2bda5d65d71873c1427ae99ded550962ad135433
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: e94b1bce8f7888cf2bca4f316dfa8d6a6a96c244
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533138"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451654"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 
@@ -21,7 +21,7 @@ Representa uma função de aplicativo que pode ser solicitada por um aplicativo 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|Especifica se essa definição de função de aplicativo pode ser atribuída a usuários e grupos por meio da configuração de "usuário" ou a outros aplicativos (que estão acessando esse aplicativo em cenários de serviço de daemon) definindo como "aplicativo" ou ambos.|
+|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se essa definição de função de aplicativo pode ser atribuída a usuários e grupos por meio da configuração de "usuário" ou a outros aplicativos (que estão acessando esse aplicativo em cenários de serviço de daemon) definindo como "aplicativo" ou ambos.|
 |description|String|Texto de ajuda de permissão que aparece nas experiências de consentimento e atribuição de aplicativo de administração.|
 |displayName|Cadeia de caracteres|Nome para exibição da permissão que aparece nas experiências de atribuição de aplicativo e consentimento de administrador.|
 |id|Guid|Identificador de função exclusivo dentro da coleção **appRoles** . Ao criar uma nova função de aplicativo, um novo identificador GUID deve ser fornecido. |

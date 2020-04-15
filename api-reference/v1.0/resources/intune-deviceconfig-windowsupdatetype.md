@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windowsUpdateType
 description: Para quais dispositivos de filial receberão suas atualizações
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df2fb50d31720e1f919c23020dd739e1c604fd70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 673f95c2f1bd6e3e1d0523af91290922b793c91d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532228"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451336"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enumeração windowsUpdateType
 
@@ -24,11 +24,14 @@ Para quais dispositivos de filial receberão suas atualizações
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Permite que o usuário defina.|
-|todos os|1 |Canal semestral (direcionado). O dispositivo obtém todas as atualizações de recursos aplicáveis do canal semestral (direcionado).|
-|businessReadyOnly|2 |Canal semestral. O dispositivo Obtém atualizações de recursos do canal semestral.|
-|windowsInsiderBuildFast|3 |Compilação do Windows Insider-Fast|
+|todos os|1|Canal semestral (direcionado). O dispositivo obtém todas as atualizações de recursos aplicáveis do canal semestral (direcionado).|
+|businessReadyOnly|duas|Canal semestral. O dispositivo Obtém atualizações de recursos do canal semestral.|
+|windowsInsiderBuildFast|3D|Compilação do Windows Insider-Fast|
 |windowsInsiderBuildSlow|4 |Compilação do Windows Insider-lenta|
 |windowsInsiderBuildRelease|5 |Versão de lançamento do Windows Insider|
+
+
+
 
 
 

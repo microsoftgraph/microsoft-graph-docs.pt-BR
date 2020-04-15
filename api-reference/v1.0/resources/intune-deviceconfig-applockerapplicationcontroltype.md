@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração appLockerApplicationControlType
 description: Valores possíveis dos tipos de controle do aplicativo AppLocker
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ca428eb0ccf9121cc3a7b02e6abb333e0b4e5503
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a0f2509aff44de9ebd2c4ae5ea7db63bccfa604f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530921"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449137"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>tipo de enumeração appLockerApplicationControlType
 
@@ -24,10 +24,13 @@ Valores possíveis dos tipos de controle do aplicativo AppLocker
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Valor padrão do dispositivo, nenhum tipo de controle do aplicativo selecionado.|
-|enforceComponentsAndStoreApps|1 |Aplicar o componente do Windows e armazenar aplicativos.|
-|auditComponentsAndStoreApps|2 |Auditar o componente do Windows e armazenar aplicativos.|
-|enforceComponentsStoreAppsAndSmartlocker|3 |Aplicar componentes do Windows, armazenar aplicativos e armário inteligente.|
+|enforceComponentsAndStoreApps|1|Aplicar o componente do Windows e armazenar aplicativos.|
+|auditComponentsAndStoreApps|duas|Auditar o componente do Windows e armazenar aplicativos.|
+|enforceComponentsStoreAppsAndSmartlocker|3D|Aplicar componentes do Windows, armazenar aplicativos e armário inteligente.|
 |auditComponentsStoreAppsAndSmartlocker|4 |Auditoria de componentes do Windows, aplicativos de armazenamento e armário inteligente.|
+
+
+
 
 
 

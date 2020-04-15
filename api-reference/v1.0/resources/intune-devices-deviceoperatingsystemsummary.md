@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceOperatingSystemSummary
 description: Resumo do sistema operacional do dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82eb7fe0feb0f410a0ef80ab6756aa499f73b71d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 460edb4724dcff002e207d7c5df6095cc3a8f130
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533270"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453973"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 
@@ -51,6 +51,9 @@ Veja a seguir uma representação JSON do recurso.
   "unknownCount": 1024
 }
 ```
+
+
+
 
 
 

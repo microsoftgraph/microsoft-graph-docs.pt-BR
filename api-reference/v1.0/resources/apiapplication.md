@@ -4,13 +4,13 @@ description: Especifica as configurações para um aplicativo da API Web.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 94be61bf19b74ca95c4659c3bd9c8166dc7c01a1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 91c37d5f9eb6dc5c6db7bd89bfb57ae116aad40e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532126"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439663"
 ---
 # <a name="apiapplication-resource-type"></a>tipo de recurso apiApplication
 

@@ -1,16 +1,16 @@
 ---
 title: Criar windowsInformationProtectionPolicy
 description: Cria um novo objeto windowsInformationProtectionPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a3ae32ec6d7aa5fe0b162d9278596a3999ba4e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cfe1b3e80bd083994cec223c7a449f9ee012b5bc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43450067"
 ---
 # <a name="create-windowsinformationprotectionpolicy"></a>Criar windowsInformationProtectionPolicy
 
@@ -391,6 +391,8 @@ Content-Length: 4577
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
+
+
 
 
 

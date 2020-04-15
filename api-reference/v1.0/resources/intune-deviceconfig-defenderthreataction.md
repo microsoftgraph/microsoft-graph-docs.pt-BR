@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração defenderThreatAction
 description: Ação padrão do defender a ser executada em ameaças de malware detectadas.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e4c9edcd596d6dcd40b2cfe873b660651f74bb3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24c2b0c60f0451b58e624558fd44f3628c92e3cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530857"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43448985"
 ---
 # <a name="defenderthreataction-enum-type"></a>tipo de enumeração defenderThreatAction
 
@@ -24,12 +24,15 @@ Ação padrão do defender a ser executada em ameaças de malware detectadas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Aplicar ação com base na definição de atualização.|
-|ordena|1 |Limpe a ameaça detectada.|
-|quarentena|2 |Colocar em quarentena a ameaça detectada.|
-|remover|3 |Remova a ameaça detectada.|
+|ordena|1|Limpe a ameaça detectada.|
+|quarentena|duas|Colocar em quarentena a ameaça detectada.|
+|remover|3D|Remova a ameaça detectada.|
 |permitiu|4 |Permitir a ameaça detectada.|
 |UserDefined|5 |Permitir que o usuário determine a ação a ser tomada com a ameaça detectada.|
 |Larga|6 |Bloquear a ameaça detectada.|
+
+
+
 
 
 

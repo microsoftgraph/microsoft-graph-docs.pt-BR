@@ -1,16 +1,16 @@
 ---
 title: ação sync
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b6a77deed92d3cbdfae21e2ca4d890612845e79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9f0e4a7f8d31fa4542e01180257ca601685dc4eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512556"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451782"
 ---
 # <a name="sync-action"></a>Ação sync
 
@@ -78,6 +78,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração applicationGuardBlockFileTransferType
 description: Valores possíveis para applicationGuardBlockFileTransfer
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b5c924a8244eab897ee3a0a72a55c054e8e3fd93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3448c117b63d52872adf6d0b3914d58a57ed7554
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532627"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449166"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>tipo de enumeração applicationGuardBlockFileTransferType
 
@@ -24,10 +24,13 @@ Valores possíveis para applicationGuardBlockFileTransfer
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|blockImageAndTextFile|1 |Bloquear a área de transferência para transferir o arquivo de texto e imagem|
-|blockImageFile|2 |Bloquear área de transferência para transferir o arquivo de imagem|
-|blockNone|3 |Nenhum dos arquivos de texto ou de imagem está bloqueado da transferência|
+|blockImageAndTextFile|1|Bloquear a área de transferência para transferir o arquivo de texto e imagem|
+|blockImageFile|duas|Bloquear área de transferência para transferir o arquivo de imagem|
+|blockNone|3D|Nenhum dos arquivos de texto ou de imagem está bloqueado da transferência|
 |blockTextFile|4 |Bloquear área de transferência para transferir arquivo de texto|
+
+
+
 
 
 

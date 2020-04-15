@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mobileLobApp
 description: Uma classe base abstrata que contém propriedades para a toda a linha móvel de aplicativos de negócios.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2fd1681442d62e2a2ef403b8709ce0dbb2072e05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1003d8e7e2ef0295f7635b478a0e5de32cf3414a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531075"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439649"
 ---
 # <a name="mobilelobapp-resource-type"></a>Tipo de recurso mobileLobApp
 
@@ -91,6 +91,9 @@ Veja a seguir uma representação JSON do recurso.
   "size": 1024
 }
 ```
+
+
+
 
 
 

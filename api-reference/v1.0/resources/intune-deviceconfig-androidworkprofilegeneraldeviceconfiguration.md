@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso Entidadeandroidforworkprofiledeviceconfiguration
 description: Configuração geral do dispositivo de perfil de trabalho do Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9a99d0d5318932176f7e87b2274392cf6363fcf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45019689ab397365d8c65813f0e084a51d1985f6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532641"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449250"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>tipo de recurso Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -139,6 +139,9 @@ Veja a seguir uma representação JSON do recurso.
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Criar defaultManagedAppProtection
 description: Criar um novo objeto defaultManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aad221854091952806247f8f901593ae8489eb7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cbba10ade14ca98d84f15e885583a34b1bd1a6cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513291"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418676"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Criar defaultManagedAppProtection
 
@@ -221,6 +221,8 @@ Content-Length: 2143
   "faceIdBlocked": true
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Criar managedAndroidLobApp
 description: Cria um novo objeto managedAndroidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5ee2ef73f6ee90773ef5dd57d12215bdff40c6e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53d291b2d194c56b70fec1f29bfd7cd5228c8db8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456048"
 ---
 # <a name="create-managedandroidlobapp"></a>Criar managedAndroidLobApp
 
@@ -176,6 +176,8 @@ Content-Length: 1325
   "versionCode": "Version Code value"
 }
 ```
+
+
 
 
 

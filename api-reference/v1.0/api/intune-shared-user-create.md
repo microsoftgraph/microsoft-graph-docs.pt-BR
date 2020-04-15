@@ -1,16 +1,16 @@
 ---
 title: Criar usuário
 description: Criar um novo objeto user.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47464435a2b38e5fb6a6649ab4b1f932bd970a89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 343614306136f4962f6ac1955dbe2b1ad906279d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512003"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411490"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -92,6 +92,8 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
 
 
 

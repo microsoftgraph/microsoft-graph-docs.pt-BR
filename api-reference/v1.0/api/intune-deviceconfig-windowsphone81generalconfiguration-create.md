@@ -1,16 +1,16 @@
 ---
 title: Criar windowsPhone81GeneralConfiguration
 description: Criar um novo objeto windowsPhone81GeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e103ad8ce662f2881e72db2f7baddc29b9edd3f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0935e294037ff9a9823e74ec676421e742f0dc5e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513728"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441846"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Criar windowsPhone81GeneralConfiguration
 
@@ -200,6 +200,8 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
+
 
 
 

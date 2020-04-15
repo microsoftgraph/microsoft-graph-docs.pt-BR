@@ -1,20 +1,20 @@
 ---
 title: tipo de recurso usersecuritystate
 description: Contém informações monitoradoras sobre a conta de usuário.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1f2c9de090d20f9fc6e1e383b285e31afb1c3d77
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6192e5a549c646cc9b63117b111a0c5d167d75a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446776"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442331"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso usersecuritystate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Contém informações monitoradoras sobre a conta de usuário.
 
@@ -26,7 +26,7 @@ Contém informações monitoradoras sobre a conta de usuário.
 |accountName|String|Nome da conta da conta de usuário (sem o domínio do Active Directory ou domínio DNS) `mailNickName`-(também chamado).|
 |domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, formato de domínio \ conta).|
 |emailRole|emailRole|Para alertas relacionados a email-a função de email da conta de usuário. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
-|isVpn|Boolean|Indica se o usuário fez logon por meio de uma VPN.|
+|isVpn|Booliano|Indica se o usuário fez logon por meio de uma VPN.|
 |logonDateTime|DateTimeOffset|Hora em que o logon ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |LogonId|String|ID de entrada do usuário.|
 |logonIp|String|Endereço IP para o qual a solicitação de entrada originou.|

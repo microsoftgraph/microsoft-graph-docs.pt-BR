@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceAndAppManagementRoleAssignment
 description: Atualizar as propriedades de um objeto deviceAndAppManagementRoleAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2c94afdd7ce01067c617326a0018e088d6dc300
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d4e2c97a9217e011e357e87e6f1e45bbe0cefa2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512325"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452720"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>Atualizar deviceAndAppManagementRoleAssignment
 
@@ -104,6 +104,8 @@ Content-Length: 307
   ]
 }
 ```
+
+
 
 
 

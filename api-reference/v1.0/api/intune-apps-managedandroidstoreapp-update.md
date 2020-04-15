@@ -1,16 +1,16 @@
 ---
 title: Atualizar managedAndroidStoreApp
 description: Atualiza as propriedades de um objeto managedAndroidStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 940c87cb1b3b5dc7ff7f1731b97bcfdbb4a0e2be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2ee86699e8dc1e714b38d8085bc25ebeb7bdcc2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516381"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446364"
 ---
 # <a name="update-managedandroidstoreapp"></a>Atualizar managedAndroidStoreApp
 
@@ -164,6 +164,8 @@ Content-Length: 1188
   }
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso androidCustomConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso androidCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1349209cc4148a844c144528a350b8db868473e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 013b22984cf69bb8f7808c61152841c590ca5813
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530968"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449379"
 ---
 # <a name="androidcustomconfiguration-resource-type"></a>Tipo de recurso androidCustomConfiguration
 
@@ -81,6 +81,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

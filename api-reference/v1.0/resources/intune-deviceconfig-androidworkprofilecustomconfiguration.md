@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso androidWorkProfileCustomConfiguration
 description: Configuração personalizada de perfil de trabalho do Android
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d24aea70981e0bec51c3849a22cfad67dca1d3b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 428df05288aeba87c5f7fe6b9ea1f28b05c04699
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532654"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449280"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>tipo de recurso androidWorkProfileCustomConfiguration
 
@@ -81,6 +81,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

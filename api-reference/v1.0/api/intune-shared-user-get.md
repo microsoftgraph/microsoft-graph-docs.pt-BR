@@ -1,16 +1,16 @@
 ---
 title: Obter usuário
 description: Leia as propriedades e as relações do objeto user.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e259b1de5dc72b0f8b312e70c0496a9a09d00406
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45c045f4088b72c5eb3ea1aeb37c086a7257079d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511989"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411348"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -80,6 +80,8 @@ Content-Length: 118
   }
 }
 ```
+
+
 
 
 

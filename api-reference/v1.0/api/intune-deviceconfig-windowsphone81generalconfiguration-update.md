@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsPhone81GeneralConfiguration
 description: Atualizar as propriedades de um objeto windowsPhone81GeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b4b0afc4968ef26a141c15afa43ab773c39e99e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a81ff812b1a40bd9e3b6aeb20f12639d8fc00ac5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513700"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447871"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Atualizar windowsPhone81GeneralConfiguration
 
@@ -200,6 +200,8 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
+
 
 
 

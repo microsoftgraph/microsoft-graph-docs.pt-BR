@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsInformationProtectionPolicy
 description: Atualizar as propriedades de um objeto windowsInformationProtectionPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b4a18737ef5ee8352766af56b50b3e35673ff01
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbdd28cec07d63adc3d25293a502fb594546b210
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512801"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453086"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Atualizar windowsInformationProtectionPolicy
 
@@ -391,6 +391,8 @@ Content-Length: 4577
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
+
+
 
 
 

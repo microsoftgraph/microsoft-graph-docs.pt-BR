@@ -1,16 +1,16 @@
 ---
 title: Atualizar managedAndroidLobApp
 description: Atualiza as propriedades de um objeto managedAndroidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ebf6faafb5d6dc5e864513f33a7368029688e753
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fbfe8e17ae0eb948668f3e2fb52df94a0f63b72
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516416"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446423"
 ---
 # <a name="update-managedandroidlobapp"></a>Atualizar managedAndroidLobApp
 
@@ -176,6 +176,8 @@ Content-Length: 1325
   "versionCode": "Version Code value"
 }
 ```
+
+
 
 
 

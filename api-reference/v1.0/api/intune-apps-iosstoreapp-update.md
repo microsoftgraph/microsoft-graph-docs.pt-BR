@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosStoreApp
 description: Atualiza as propriedades de um objeto iosStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ceb596449b27ec092bdd2b52e772baa21d884893
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 17ee325e88961b7ae9336324284c4a6e4bb0ba52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516522"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441008"
 ---
 # <a name="update-iosstoreapp"></a>Atualizar iosStoreApp
 
@@ -165,6 +165,8 @@ Content-Length: 1198
   }
 }
 ```
+
+
 
 
 

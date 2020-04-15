@@ -1,16 +1,16 @@
 ---
 title: iosCompliancePolicy resource type
 description: Essa classe contém as configurações de conformidade do iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c50cc5e0f8901401c3533dca985f366ca17daef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 925327c6c27d8de4bbc5f58954f72bec672eaf51
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530705"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439453"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy resource type
 
@@ -100,6 +100,9 @@ Veja a seguir uma representação JSON do recurso.
   "managedEmailProfileRequired": true
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosVppApp
 description: Atualiza as propriedades de um objeto iosVppApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d302daf914fd8dbc32a2ebd40901dd8c81c10636
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e7b6302aae55b63a2e2faf327f2f82a030894bf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516487"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456123"
 ---
 # <a name="update-iosvppapp"></a>Atualizar iosVppApp
 
@@ -175,6 +175,8 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração deviceManagementExchangeAccessStateReason
 description: Motivo do estado de acesso ao Exchange do dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b0e3d5190ae946bf101ab9955cbdf9d6a4592e97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf3b6d3200ab461877b90dda2226437c863b4d0c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533278"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453987"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessStateReason
 
@@ -24,9 +24,9 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |nenhuma|,0|Nenhum motivo de estado de acesso descoberto do Exchange|
-|desconhecido|1 |Razão do estado de acesso desconhecido|
-|exchangeGlobalRule|2 |Estado de acesso determinado pela regra global do Exchange|
-|exchangeIndividualRule|3 |Estado de acesso determinado pela regra individual do Exchange|
+|desconhecido|1|Razão do estado de acesso desconhecido|
+|exchangeGlobalRule|duas|Estado de acesso determinado pela regra global do Exchange|
+|exchangeIndividualRule|3D|Estado de acesso determinado pela regra individual do Exchange|
 |exchangeDeviceRule|4 |Estado de acesso determinado pela regra de dispositivo do Exchange|
 |exchangeUpgrade|5 |Estado de acesso devido à atualização do Exchange|
 |exchangeMailboxPolicy|6 |Estado de acesso determinado pela política de caixa de correio do Exchange|
@@ -35,10 +35,13 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 |incompatível|9 |Estado de acesso revogado pelo desafio de conformidade|
 |Não registrado|10 |Estado de acesso revogado pelo desafio de gerenciamento|
 |unknownLocation|12 |Estado de acesso devido à localização desconhecida|
-|mfaRequired|13 |Estado de acesso devido ao desafio da MFA|
+|mfaRequired|Treze|Estado de acesso devido ao desafio da MFA|
 |azureADBlockDueToAccessPolicy|14 |Estado de acesso revogado pela política de acesso AAD|
 |compromisedPassword|15 |Estado de acesso revogado por senha comprometida|
 |deviceNotKnownWithManagedApp|16 |Estado de acesso revogado por desafio de aplicativo gerenciado|
+
+
+
 
 
 

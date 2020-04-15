@@ -1,16 +1,16 @@
 ---
 title: Acessar windowsPhone81CustomConfiguration
 description: Leia as propriedades e as relações do objeto windowsPhone81CustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5126fcf212c476b8da43c95cb05987b6378b8acd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c376e6e6740527dc6b37e582815568a2b013e005
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513749"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43422061"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>Acessar windowsPhone81CustomConfiguration
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -89,6 +89,8 @@ Content-Length: 632
   }
 }
 ```
+
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso reportRoot
 description: O recurso que representa uma instância dos Relatórios de históricos.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09d8e31be500151a36e8f365915ed8f08c5aae98
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ada932e70f024186d2ec52b6be54914eaeb50c02
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447805"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445671"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -71,4 +71,7 @@ Content-Type: application/json
 {
 }
 ```
+
+
+
 

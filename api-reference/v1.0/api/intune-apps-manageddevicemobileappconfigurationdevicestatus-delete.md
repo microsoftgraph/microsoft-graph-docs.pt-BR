@@ -1,16 +1,16 @@
 ---
 title: Excluir managedDeviceMobileAppConfigurationDeviceStatus
 description: Exclui managedDeviceMobileAppConfigurationDeviceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e6dcf82f07453da586563906bc9e6ac8d39bec67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d2b1d2dea837e039763af9d4879d9a8cd03f4f3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516297"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455543"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>Excluir managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

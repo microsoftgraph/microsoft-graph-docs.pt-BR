@@ -1,16 +1,16 @@
 ---
 title: Criar iosMobileAppConfiguration
 description: Cria um novo objeto iosMobileAppConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c981cd33dbb125e41bd2a151d5dbc5e2d189d847
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a80ce6fd97b3e6d5459b9060a9d47b5db1d76124
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516585"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443600"
 ---
 # <a name="create-iosmobileappconfiguration"></a>Criar iosMobileAppConfiguration
 
@@ -124,6 +124,8 @@ Content-Length: 706
   ]
 }
 ```
+
+
 
 
 

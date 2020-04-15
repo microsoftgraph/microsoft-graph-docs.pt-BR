@@ -2,15 +2,15 @@
 title: Tipo de recurso deviceManagement
 description: 'O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8cfc204718a25bc8d5f0ac450469bd87c2d0e9b0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d0f55f824d5368fa51f415db5b493ef09cccfeee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42816157"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445721"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -24,7 +24,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Termos e condições corporativos   
 - Definições de configuração do dispositivo  
 - Gerenciamento de dispositivo  
-- Endpoint Protection  
+- Proteção de pontos de extremidade  
 - Perfis de registro  
 - Notificações  
 - Políticas de integração, configurações e detalhes  
@@ -55,7 +55,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |**Integração**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |**Auditoria**|
@@ -121,6 +121,9 @@ Veja a seguir uma representação JSON do recurso.
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
+
+
+
 
 
 

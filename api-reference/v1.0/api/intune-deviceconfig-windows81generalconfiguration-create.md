@@ -1,16 +1,16 @@
 ---
 title: Criar windows81GeneralConfiguration
 description: Criar um novo objeto windows81GeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e55963c321534fd2558f7242ff9080275a068de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdf8247b674f41369715273e4c269bb20c0016de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513868"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441912"
 ---
 # <a name="create-windows81generalconfiguration"></a>Criar windows81GeneralConfiguration
 
@@ -196,6 +196,8 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
 
 
 

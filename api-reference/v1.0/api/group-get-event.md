@@ -1,16 +1,16 @@
 ---
 title: Obter evento
 description: Obter um objeto event.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c6eede17a8e59b22268284fb88cdd951aab7327b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0506efaa916c1caea5b016b19d5787363446cbd6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517142"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436822"
 ---
 # <a name="get-event"></a>Obter evento
 

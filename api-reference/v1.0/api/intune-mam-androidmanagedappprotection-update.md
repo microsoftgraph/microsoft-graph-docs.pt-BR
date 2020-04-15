@@ -1,16 +1,16 @@
 ---
 title: Atualizar androidManagedAppProtection
 description: Atualizar as propriedades de um objeto androidManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 320d931c718f59825bcdccf306f1b93a96e66382
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c804bbf664092db1aee635a577920c2e8cb3cc2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513319"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43421952"
 ---
 # <a name="update-androidmanagedappprotection"></a>Atualizar androidManagedAppProtection
 
@@ -200,6 +200,8 @@ Content-Length: 1864
   "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
+
+
 
 
 

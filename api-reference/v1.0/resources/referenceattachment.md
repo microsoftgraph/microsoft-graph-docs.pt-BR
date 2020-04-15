@@ -3,14 +3,14 @@ title: Tipo de recurso referenceAttachment
 description: Um link para um arquivo (como um arquivo de texto ou um documento do Word) em uma unidade de nuvem do OneDrive for Business ou outros locais de armazenamento compatíveis, anexado a um evento, mensagem ou postagem.
 localization_priority: Normal
 ms.prod: outlook
-author: angelgolfer-ms
+author: svpsiva
 doc_type: resourcePageType
-ms.openlocfilehash: 9c17070e2ff10877039a98e42303f06f7842da2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb3298d5fc316c86c3befb8a937b3d9477831121
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533866"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445512"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
 

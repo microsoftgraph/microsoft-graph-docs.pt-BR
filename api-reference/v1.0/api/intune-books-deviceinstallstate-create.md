@@ -1,16 +1,16 @@
 ---
 title: Criar deviceInstallState
 description: Criar um novo objeto deviceInstallState.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f5d57957517f78949ce166f70cbd083a6dafec07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d672672efd1bac5752b9b93b878b207a603fff2a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515718"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455536"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 
@@ -109,6 +109,8 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
 
 
 

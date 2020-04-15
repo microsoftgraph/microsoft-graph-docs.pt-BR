@@ -1,16 +1,16 @@
 ---
 title: Atualizar managedIOSStoreApp
 description: Atualiza as propriedades de um objeto managedIOSStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c4f4d8c24acab38ecef0ec1df1ea40642f64b64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0428f92c020bdf73b65307e44ec33544775239ac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442496"
 ---
 # <a name="update-managediosstoreapp"></a>Atualizar managedIOSStoreApp
 
@@ -171,6 +171,8 @@ Content-Length: 1276
   }
 }
 ```
+
+
 
 
 

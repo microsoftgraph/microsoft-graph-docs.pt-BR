@@ -1,16 +1,16 @@
 ---
 title: Atualizar windows10SecureAssessmentConfiguration
 description: Atualizar as propriedades de um objeto windows10SecureAssessmentConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: afe7ecd5951dc554762762ec9bfdb05b8f8d99cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 936a3f4a694c694d3c5dfaf5a4fd6ddbd1c2221f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513948"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442054"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>Atualizar windows10SecureAssessmentConfiguration
 
@@ -112,6 +112,8 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
+
+
 
 
 

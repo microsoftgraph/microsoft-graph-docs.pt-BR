@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso deviceManagementTroubleshootingEvent
 description: Evento que representa uma falha geral.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 330eb14f15902b47b9136e426869f5755e66857b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba52be83003c826970ce8b3941007e398323058e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447770"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451262"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -55,6 +55,9 @@ Veja a seguir uma representação JSON do recurso.
   "correlationId": "String"
 }
 ```
+
+
+
 
 
 

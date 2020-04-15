@@ -1,16 +1,16 @@
 ---
 title: Excluir enrollmentConfigurationAssignment
 description: Exclui enrollmentConfigurationAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b11aff971057d85895cd5f73bdc31fb44c462715
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 375fd24eb693a632fbb9fea2d88471a546390adf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512493"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442444"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>Excluir enrollmentConfigurationAssignment
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

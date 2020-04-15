@@ -1,16 +1,16 @@
 ---
 title: Criar androidManagedAppRegistration
 description: Cria um novo objeto androidManagedAppRegistration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 468339116feae5efb8d50507eee4c5953ca3a45a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d62f07d8daa7b6c4244d4f8feef6a48102eb74d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513312"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446043"
 ---
 # <a name="create-androidmanagedappregistration"></a>Criar androidManagedAppRegistration
 
@@ -129,6 +129,8 @@ Content-Length: 753
   "version": "Version value"
 }
 ```
+
+
 
 
 

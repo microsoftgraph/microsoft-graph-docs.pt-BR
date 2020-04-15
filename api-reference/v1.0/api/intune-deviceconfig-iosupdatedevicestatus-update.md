@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosUpdateDeviceStatus
 description: Atualizar as propriedades de um objeto iosUpdateDeviceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99315ddd48c2b9367f14bcbab7b331b39a087efe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 473cbbe1e6b18560c4a215ce6cd444024e0de185
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514435"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446088"
 ---
 # <a name="update-iosupdatedevicestatus"></a>Atualizar iosUpdateDeviceStatus
 
@@ -117,6 +117,8 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

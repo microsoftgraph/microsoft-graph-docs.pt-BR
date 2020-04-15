@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração appListType
 description: Valores possíveis da lista de aplicativos de conformidade.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ead624878dafd1d2edd1aca27d689da5af57de8a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a372f2f160a4a08a1c9f1c3e4276ea10344daff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532621"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43449152"
 ---
 # <a name="applisttype-enum-type"></a>tipo de enumeração appListType
 
@@ -24,8 +24,11 @@ Valores possíveis da lista de aplicativos de conformidade.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |nenhuma|,0|Valor padrão, sem intenção.|
-|appsInListCompliant|1 |A lista representa os aplicativos que serão considerados compatíveis (apenas os aplicativos na lista são compatíveis).|
-|appsNotInListCompliant|2 |A lista representa os aplicativos que serão considerados não compatíveis (todos os aplicativos são compatíveis, exceto os aplicativos na lista).|
+|appsInListCompliant|1|A lista representa os aplicativos que serão considerados compatíveis (apenas os aplicativos na lista são compatíveis).|
+|appsNotInListCompliant|duas|A lista representa os aplicativos que serão considerados não compatíveis (todos os aplicativos são compatíveis, exceto os aplicativos na lista).|
+
+
+
 
 
 

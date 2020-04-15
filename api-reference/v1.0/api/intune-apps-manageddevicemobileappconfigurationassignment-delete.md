@@ -1,16 +1,16 @@
 ---
 title: Excluir managedDeviceMobileAppConfigurationAssignment
 description: Exclui managedDeviceMobileAppConfigurationAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7a21e4fc42fcc5442f726e5cdf43451b467d037
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c3a2ca323d4da3eaf2adf7560ad3c60fcde5cd01
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516332"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446297"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>Excluir managedDeviceMobileAppConfigurationAssignment
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso resourceAction
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae06b047fc93f09bd2b797a4eeaa296d232a0b68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 899075a8ac494daf345fa6f8d91e3cc38126ec53
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441620"
 ---
 # <a name="resourceaction-resource-type"></a>Tipo de recurso resourceAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -23,7 +23,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedResourceActions|String collection|Ações permitidas|
+|allowedResourceActions|Coleção de cadeias de caracteres|Ações permitidas|
 |notAllowedResourceActions|String collection|Ações não permitidas|
 
 ## <a name="relationships"></a>Relações
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

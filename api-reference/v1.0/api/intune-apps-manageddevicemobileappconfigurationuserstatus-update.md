@@ -1,16 +1,16 @@
 ---
 title: Atualizar managedDeviceMobileAppConfigurationUserStatus
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 66b166e59fb0e08a4a7e414bbd4390aa4fec49da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 33093b5aa04b20890a49b962cfad68878d90f21e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516219"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442668"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Atualizar managedDeviceMobileAppConfigurationUserStatus
 
@@ -99,6 +99,8 @@ Content-Length: 355
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

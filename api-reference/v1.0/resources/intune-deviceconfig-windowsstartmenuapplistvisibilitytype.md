@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração windowsStartMenuAppListVisibilityType
 description: Tipo de visibilidade da lista de aplicativos do menu iniciar.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 913b782289c821536a7bc92e2d3f4e2f68a87ef7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e96cbcb7ace8ee66563fd809cac3c2092a5c6e4b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530333"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43451410"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>tipo de enumeração windowsStartMenuAppListVisibilityType
 
@@ -24,9 +24,12 @@ Tipo de visibilidade da lista de aplicativos do menu iniciar.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário. Valor padrão.|
-|combinados|1 |Recolha a lista de aplicativos no menu iniciar.|
-|remover|2 |Remove totalmente a lista de aplicativos do menu iniciar.|
+|combinados|1|Recolha a lista de aplicativos no menu iniciar.|
+|remover|duas|Remove totalmente a lista de aplicativos do menu iniciar.|
 |disableSettingsApp|4 |Desabilita a alternância (recolhimento ou remoção) correspondente no aplicativo configurações.|
+
+
+
 
 
 

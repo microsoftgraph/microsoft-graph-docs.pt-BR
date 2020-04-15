@@ -1,16 +1,16 @@
 ---
 title: Atualizar windows81CompliancePolicy
 description: Atualiza as propriedades de um objeto windows81CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f6a7f82eadee9dffd3d5a5f6a62852657e3ff51e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 094e7146382993ba700b8b85ee63a659b741bcde
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513875"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441935"
 ---
 # <a name="update-windows81compliancepolicy"></a>Atualizar windows81CompliancePolicy
 
@@ -130,6 +130,8 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

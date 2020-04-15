@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração deviceManagementSubscriptionState
 description: Estado de assinatura de gerenciamento de dispositivo móvel do locatário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 36494fc309e1dc5bd7612117a924136e2f1b2bf2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65ad25506c5a1a59dde80101e0a17624f66d793d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43453980"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>tipo de enumeração deviceManagementSubscriptionState
 
@@ -24,12 +24,15 @@ Estado de assinatura de gerenciamento de dispositivo móvel do locatário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |função|,0|Pending|
-|active|1 |Ativo|
-|warning|2 |Aviso|
-|deficiência|3 |Desabilitado|
+|active|1|Ativo|
+|warning|duas|Aviso|
+|desabilitadas|3D|Desabilitado|
 |deleted|4 |Deleted|
 |bloqueou|5 |Blocked|
 |Bloqueado|8 |Bloqueado|
+
+
+
 
 
 

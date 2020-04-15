@@ -1,16 +1,16 @@
 ---
 title: Criar deviceAndAppManagementRoleDefinition
 description: Cria um novo objeto deviceAndAppManagementRoleDefinition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 281c965de97876812510b04a5f131f1354720df8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2def0ee7e2cc578b3660d9e1eedbfc0a517a0afd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512318"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43452713"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>Criar deviceAndAppManagementRoleDefinition
 
@@ -126,6 +126,8 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
+
+
 
 
 
