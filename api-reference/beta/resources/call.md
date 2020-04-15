@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fb0767e0dab914f63051524ba6ce2860ae577d6b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: b97fc0ce4ca6ead942347357dd99d125dd95f583
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082340"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510643"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -87,7 +87,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contém os recursos de uma reunião. Somente leitura.                                                                                                       |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações da reunião. Informações necessárias para cenários de reunião.                                                                                                              |
 | myParticipantId     | String                                                                                                 | Somente leitura.                                                                                                                                                                        |
-| requestedModalities | String collection                                                                                      | A lista de modalidades solicitadas. | Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| requestedModalities | String collection                                                                                      | A lista de modalidades solicitadas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | As informações de resultado. Por exemplo pode incluir o motivo de término. Somente leitura.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Tempo limite do toque em segundos para chamadas realizadas de ponto a ponto. O valor máximo para esse atributo é de 115 segundos.                                                                                        |
 | routingPolicies     | Coleção de cadeias de caracteres                                                                                      | Essa propriedade é aplicável somente às chamadas ponto a ponto. Os valores possíveis são: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`, `preferSkypeForBusiness`.                                                                                                   |
