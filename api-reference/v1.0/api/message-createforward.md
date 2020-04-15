@@ -2,15 +2,15 @@
 title: 'message: createForward'
 description: Crie um rascunho para encaminhar a mensagem especificada. Você pode atualizar o rascunho para adicionar conteúdo ao **corpo** ou alterar outras propriedades da mensagem ou, simplesmente, enviar o rascunho.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b6bfb95cf7378af473a4753a723e64e7cb9fc37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77e2e35d56e3aa4a6078b4deac543cb1079df9ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511562"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355185"
 ---
 # <a name="message-createforward"></a>message: createForward
 

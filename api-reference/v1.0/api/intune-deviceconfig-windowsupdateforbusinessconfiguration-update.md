@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsUpdateForBusinessConfiguration
 description: Atualizar as propriedades de um objeto windowsUpdateForBusinessConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b6210ea07f3f0be70867f88d061a4ce22e7ce49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9afdfb8e55d15763b8023ef0ed0a28d1f64559d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513662"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43388866"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Atualizar windowsUpdateForBusinessConfiguration
 
@@ -144,6 +144,8 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
+
+
 
 
 

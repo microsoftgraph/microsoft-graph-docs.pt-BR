@@ -2,15 +2,15 @@
 title: tipo de recurso orgContact
 description: Representa um contato organizacional
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 44fdd10d1e86405c9a24ed0dab97125e3cc52360
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: af8c6da3b7953618160aa19f79d976d5e8d248a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986072"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354079"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso orgContact
 
@@ -30,9 +30,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Obter contato da organização](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Leia as propriedades e as relações de um contato organizacional.|
 |[Obter gerenciador](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Obtenha o gerente do contato organizacional.|
 |[Listar directReports](../api/orgcontact-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Listar os subordinados diretos do contato organizacional.|
-|[List memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro.|
+|[Listar memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro.|
 |[Listar transitiveMemberOf](../api/orgcontact-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos quais um contato organizacional é membro, incluindo grupos nos quais o contato organizacional está aninhado.|
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| Verifique a associação ao grupo. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Coleção de cadeias de caracteres| Verifique a associação ao grupo. |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|String collection| Retornar todos os grupos dos quais o contato organizacional especificado é membro. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| Retorna uma lista de directoryObjects o contato organizacional é um membro. |
 
@@ -56,12 +56,12 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | proxyAddresses               | Coleção de cadeias de caracteres                                         | Por exemplo: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Oferece \$suporte a filtro.                                                                                                                                                                               |
 | surname                      | String                                                     | Sobrenome para este contato organizacional.                          |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |directReports|Coleção [directoryObject](directoryobject.md)| Os subordinados diretos do contato. (Os usuários e contatos que têm a propriedade do gerente definidas para este contato.)  Somente leitura. Anulável.|
-|manager|[directoryObject](directoryobject.md)| O usuário ou contato que é o gerente do contato. Apenas leitura.|
+|manager|[directoryObject](directoryobject.md)| O usuário ou contato que é o gerente do contato. Somente leitura.|
 |memberOf|Coleção [directoryObject](directoryobject.md)| Grupos dos quais este contato é membro. Somente leitura. Anulável.|
 |transitiveMemberOf|Coleção [directoryObject](directoryobject.md)| Grupos dos quais este contato é membro, incluindo grupos nos quais o contato está aninhado.|. Somente leitura. Anulável.|
 

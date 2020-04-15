@@ -1,16 +1,16 @@
 ---
 title: Obter deviceConfigurationDeviceStateSummary
 description: Ler propriedades e relações do objeto deviceConfigurationDeviceStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dd27a99b06e22190dd7a4a5131b311d5c3405ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d06bf07ba90baeb18292a7380b65c6f22a3f5d3b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43370265"
 ---
 # <a name="get-deviceconfigurationdevicestatesummary"></a>Obter deviceConfigurationDeviceStateSummary
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurationDeviceStateSummaries
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -82,6 +82,8 @@ Content-Length: 376
   }
 }
 ```
+
+
 
 
 

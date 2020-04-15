@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso remoteLockActionResult
 description: Resultado da ação de bloquear com um pin para desbloquear
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9205ba5ede57f87cfc56cdbebaea1d5d2ccaa08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0fcf663ad633f09a1198c901ffa1b82c2278b3ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532185"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43406823"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Tipo de recurso remoteLockActionResult
 
@@ -52,6 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   "unlockPin": "String"
 }
 ```
+
+
+
 
 
 

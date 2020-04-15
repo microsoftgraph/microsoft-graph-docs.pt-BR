@@ -1,16 +1,16 @@
 ---
 title: Criar enrollmentTroubleshootingEvent
 description: Cria um novo objeto enrollmentTroubleshootingEvent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 605a4bed084236321d5831d6ef09a4049d70c878
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 770a784cacd9b74529142e3b81ca3cef0f76af92
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511863"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43368741"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Criar enrollmentTroubleshootingEvent
 
@@ -114,6 +114,8 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
+
+
 
 
 

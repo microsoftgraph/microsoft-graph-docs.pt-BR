@@ -1,16 +1,16 @@
 ---
 title: Acessar deviceCompliancePolicyDeviceStateSummary
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyDeviceStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdff5719456be612ccb052c84ae492edcf2a4004
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29d374564c487ff218b1f3aec4aca46051f7b7f9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515025"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399953"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Acessar deviceCompliancePolicyDeviceStateSummary
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -84,6 +84,8 @@ Content-Length: 439
   }
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: iosUpdateConfiguration resource type
 description: A Configuração de Atualização do iOS permite que você configure a janela de tempo na semana para instalar atualizações do iOS
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53110245e040fe2bc04f9fbdb0eaf1aa6d318049
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e246790da381e6ee4e63e7e6c88bf99478777ce
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532473"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410395"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>iosUpdateConfiguration resource type
 
@@ -90,6 +90,9 @@ Veja a seguir uma representação JSON do recurso.
   ],
 }
 -->
+
+
+
 
 
 

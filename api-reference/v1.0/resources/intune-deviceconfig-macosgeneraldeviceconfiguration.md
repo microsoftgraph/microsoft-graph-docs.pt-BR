@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso macOSGeneralDeviceConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso macOSGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9785472110dadb0bcab37cb93f85a434d160a89e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8dbfcacc743ca56be6e555c852236079b40352ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532452"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410146"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso macOSGeneralDeviceConfiguration
 
@@ -105,6 +105,9 @@ Veja a seguir uma representação JSON do recurso.
   "passwordRequired": true
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar appleDeviceFeaturesConfigurationBase
 description: Leia as propriedades e as relações do objeto appleDeviceFeaturesConfigurationBase.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 01ae1edda65987336ecdece6ce13296b84602e67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab4c4d80a74bc5c4e5224c1fca864710d629614f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515186"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400947"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Acessar appleDeviceFeaturesConfigurationBase
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -80,6 +80,8 @@ Content-Length: 379
   }
 }
 ```
+
+
 
 
 

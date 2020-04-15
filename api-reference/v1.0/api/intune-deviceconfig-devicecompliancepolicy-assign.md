@@ -1,16 +1,16 @@
 ---
 title: atribuir ação
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 432ae60b3b4172a6b0f2fdf5322a1ef9dc2b6f15
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d47b67440db488082b513e1e7615229c68a7704f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515088"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400169"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -100,6 +100,8 @@ Content-Length: 274
   ]
 }
 ```
+
+
 
 
 

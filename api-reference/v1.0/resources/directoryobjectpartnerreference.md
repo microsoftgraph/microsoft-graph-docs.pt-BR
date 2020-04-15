@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso directoryObjectPartnerReference
 description: Representa uma referência a um objeto Directory em um locatário do parceiro. Herda do directoryObject.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2f15edcbdc3b78b3565548a740058728c4996770
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78d202cea4b092671a63870c7172dd31d3f70846
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531642"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407085"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
 

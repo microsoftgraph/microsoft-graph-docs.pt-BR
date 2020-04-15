@@ -1,16 +1,16 @@
 ---
 title: Criar managedMobileApp
 description: Criar um novo objeto managedMobileApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17611c7eb3c4052892ec23ab49751db2bfd9b66c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8f10c47fb867e77fd5e8287d6c8f43da8f090de
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513053"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398575"
 ---
 # <a name="create-managedmobileapp"></a>Criar managedMobileApp
 
@@ -97,6 +97,8 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
+
 
 
 

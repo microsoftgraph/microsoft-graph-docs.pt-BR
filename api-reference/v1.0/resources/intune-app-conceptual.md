@@ -1,16 +1,16 @@
 ---
 title: Gerenciar aplicativos usando Microsoft Intune
 description: 'Os seguintes recursos do Graph estão disponíveis para gerenciar aplicativos móveis no Intune:  '
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: e0891232c413bddeebb3228729b4e80302aa02fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 222b5dbd149e94ac7af857e57d16254864e5b9a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531250"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397434"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Gerenciar aplicativos usando Microsoft Intune
 
@@ -76,4 +76,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar aplicativos m�
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
+
+
+
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar deviceComplianceActionItem
 description: Leia as propriedades e as relações do objeto deviceComplianceActionItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0fad5c437c1eadacff683565aa9a4bb7ab9c863
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85be9bd70a82b8b7bb29ad2aa39a386393a5130a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515158"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400874"
 ---
 # <a name="get-devicecomplianceactionitem"></a>Acessar deviceComplianceActionItem
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -81,6 +81,8 @@ Content-Length: 355
   }
 }
 ```
+
+
 
 
 

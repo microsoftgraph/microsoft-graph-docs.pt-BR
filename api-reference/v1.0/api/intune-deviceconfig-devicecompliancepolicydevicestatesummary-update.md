@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceCompliancePolicyDeviceStateSummary
 description: Atualizar as propriedades de um objeto deviceCompliancePolicyDeviceStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a005d29d1da04763978163f8aca5f1d3373d235
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65193c1bfd77a947f707a19b976a62700a35d2f4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515018"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399946"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Atualizar deviceCompliancePolicyDeviceStateSummary
 
@@ -111,6 +111,8 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

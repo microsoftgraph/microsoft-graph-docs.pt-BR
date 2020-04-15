@@ -1,16 +1,16 @@
 ---
 title: Atualizar macOSDeviceFeaturesConfiguration
 description: Atualizar as propriedades de um objeto macOSDeviceFeaturesConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e472c0775f8317b2abac0c8481ec882b09afe87
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7987044afd4aefc9bcab132327439c988a110139
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514330"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387867"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
@@ -97,6 +97,8 @@ Content-Length: 342
   "version": 7
 }
 ```
+
+
 
 
 

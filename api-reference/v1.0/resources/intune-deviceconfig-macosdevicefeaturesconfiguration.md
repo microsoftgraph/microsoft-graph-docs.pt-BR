@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso macOSDeviceFeaturesConfiguration
 description: Perfil de configuração de recursos do dispositivo macOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9de8481e038de5f76822cabf903f6a8f341ba4e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b2092fe5df45467ccee7088f0e6244115ac0bfd8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530645"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410168"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Tipo de recurso macOSDeviceFeaturesConfiguration
 
@@ -71,6 +71,9 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
+
+
 
 
 

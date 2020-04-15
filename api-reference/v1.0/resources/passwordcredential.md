@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso passwordCredential
-description: Contém uma credencial de senha associada a um aplicativo ou a uma entidade de serviço. A propriedade **passwordCredentials** da entidade servicePrincipalName e da entidade Application é uma coleção de **passwordCredential**.
+description: Contém uma credencial de senha associada a um aplicativo ou a uma entidade de serviço.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 0067b993cfc7d9708673bf25b20ecc054bff7925
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: ec0bc1e6057e1bc9b55b1af90ff0056401f88ff1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534076"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397202"
 ---
 # <a name="passwordcredential-resource-type"></a>tipo de recurso passwordCredential
 

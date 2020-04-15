@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedApp
 description: Classe abstrata que contém propriedades e propriedades herdadas para aplicativos que você pode gerenciar com uma política de proteção de aplicativos do Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48383aa528e0102dd8c1a77f22edd41d0385a8e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36e3da414e20ebf419b7e917536617778670a5b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532787"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354465"
 ---
 # <a name="managedapp-resource-type"></a>Tipo de recurso managedApp
 
@@ -88,6 +88,9 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosManagedAppProtection
 description: Atualizar as propriedades de um objeto iosManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3776963d2bc67cb3af9a3929b3a62da739055dcd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb7824cbd2ad6aae6f0c2d2093516437c9645e6a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513228"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399123"
 ---
 # <a name="update-iosmanagedappprotection"></a>Atualizar iosManagedAppProtection
 
@@ -194,6 +194,8 @@ Content-Length: 1740
   "faceIdBlocked": true
 }
 ```
+
+
 
 
 

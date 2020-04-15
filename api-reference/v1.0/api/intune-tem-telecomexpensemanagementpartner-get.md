@@ -1,16 +1,16 @@
 ---
 title: Obter telecomExpenseManagementPartner
 description: Ler propriedades de leitura e relações do objeto telecomExpenseManagementPartner.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ed83eeb2552ac8f0811f25765097807cf615e16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56237eded27c2d83b3ff1bfdbbfa180277a69803
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511919"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411101"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>Obter telecomExpenseManagementPartner
 
@@ -39,7 +39,7 @@ GET /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagement
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -80,6 +80,8 @@ Content-Length: 330
   }
 }
 ```
+
+
 
 
 

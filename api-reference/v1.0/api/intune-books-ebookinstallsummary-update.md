@@ -1,16 +1,16 @@
 ---
 title: Atualizar eBookInstallSummary
 description: Atualizar as propriedades de um objeto eBookInstallSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25381593a17fcf9ac9c6a19b73d9b1c5961313e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e0bc28ef68125b61c22687db60a1db98040bb8d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515676"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356030"
 ---
 # <a name="update-ebookinstallsummary"></a>Atualizar eBookInstallSummary
 
@@ -102,6 +102,8 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
+
 
 
 

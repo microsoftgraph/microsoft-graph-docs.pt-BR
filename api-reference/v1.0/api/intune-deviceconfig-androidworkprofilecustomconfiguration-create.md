@@ -1,16 +1,16 @@
 ---
 title: Criar androidWorkProfileCustomConfiguration
 description: Criar um novo objeto androidWorkProfileCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1b145a03761614f452c897bd4fa6ccb2535b43e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 17d4c8c2c78b2710fdbeed5286c4e2daff6f66fd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515256"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401265"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>Criar androidWorkProfileCustomConfiguration
 
@@ -116,6 +116,8 @@ Content-Length: 585
   ]
 }
 ```
+
+
 
 
 

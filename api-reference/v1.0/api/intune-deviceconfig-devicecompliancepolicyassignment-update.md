@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceCompliancePolicyAssignment
 description: Atualizar as propriedades de um objeto deviceCompliancePolicyAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 083c74d87e22990f491ed087186b47e98de638fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2cd2895b83eca1ab8ce99c026ef8c02ce8e2ccde
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515032"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399960"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>Atualizar deviceCompliancePolicyAssignment
 
@@ -91,6 +91,8 @@ Content-Length: 221
   }
 }
 ```
+
+
 
 
 

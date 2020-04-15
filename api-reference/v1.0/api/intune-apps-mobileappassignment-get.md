@@ -1,16 +1,16 @@
 ---
 title: Acessar mobileAppAssignment
 description: Leia as propriedades e as relações do objeto mobileAppAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5fbb036a62845d3e490732caf8056728395100c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b5d8a3f85c975dc4b0d39eb9235cbad3333dce77
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516041"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401537"
 ---
 # <a name="get-mobileappassignment"></a>Acessar mobileAppAssignment
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -82,6 +82,8 @@ Content-Length: 359
   }
 }
 ```
+
+
 
 
 

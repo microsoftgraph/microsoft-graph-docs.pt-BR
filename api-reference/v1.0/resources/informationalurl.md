@@ -4,13 +4,13 @@ description: Informações de perfil básicas do aplicativo.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: ebf2a79931936e8f45f93cba46b1fefdbf0163b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: d783a8c4ad833be0b6dabf9b9405256796b880b7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532879"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397441"
 ---
 # <a name="informationalurl-resource-type"></a>tipo de recurso informationalUrl
 

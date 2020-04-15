@@ -1,16 +1,16 @@
 ---
 title: Listar managedAppStatusRaws
 description: Listar propriedades e relações dos objetos managedAppStatusRaw.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fdf4df3de105d9b8ca25a1a2dbf2ee3c83e7e326
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3005acccbb32b8e4beaeae21e9880ce494242e2e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513060"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398582"
 ---
 # <a name="list-managedappstatusraws"></a>Listar managedAppStatusRaws
 
@@ -79,6 +79,8 @@ Content-Length: 307
   ]
 }
 ```
+
+
 
 
 

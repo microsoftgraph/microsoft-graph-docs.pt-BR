@@ -1,16 +1,16 @@
 ---
 title: 'message: replyAll'
 description: Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 09c45c975b8acca8b1ec064f52804f6c83c14283
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 07ea6c8846139f6209b188d12cf60273c0838b29
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511485"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355091"
 ---
 # <a name="message-replyall"></a>message: replyAll
 

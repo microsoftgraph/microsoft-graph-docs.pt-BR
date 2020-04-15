@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso detectedApp
 description: Um aplicativo gerenciado ou não gerenciado que está instalado em um dispositivo gerenciado. Aplicativos não gerenciados só aparecerão para dispositivos marcados como controlados pela empresa.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcf11e763ff826ddc0f3c20ff722b6f3d124af57
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dae22c8a2e939d7ab06a645726f139d5b02ac724
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530296"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407047"
 ---
 # <a name="detectedapp-resource-type"></a>Tipo de recurso detectedApp
 
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
+
+
+
 
 
 

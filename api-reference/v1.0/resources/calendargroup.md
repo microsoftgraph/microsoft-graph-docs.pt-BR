@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso calendarGroup
 description: Um grupo de calendários do usuário.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 230d6b0f90b8dec5ad223b7243fbc710dd720a30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 875bce80b4d4319439acf7c4d202a052770990a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531978"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407124"
 ---
 # <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
 

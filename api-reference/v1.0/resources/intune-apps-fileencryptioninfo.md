@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso fileEncryptionInfo
 description: Contém propriedades de informações de criptografia de arquivos para a versão de conteúdo de um aplicativo de linha de negócios.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0859447e06b7264f5018e575c047a283d02dc34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 945376e142a62efdc6b95b3150aa4425cb45f90d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532844"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397311"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Tipo de recurso fileEncryptionInfo
 
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   "fileDigestAlgorithm": "String"
 }
 ```
+
+
+
 
 
 

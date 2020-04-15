@@ -1,16 +1,16 @@
 ---
 title: Excluir targetedManagedAppPolicyAssignment
 description: Exclui targetedManagedAppPolicyAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ce921ed3db0cfa3d8b9d7f877c20ad6d01748f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 01b1b78f1abf6c42164aa9e9c0df4655f691c04e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512934"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397959"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Excluir targetedManagedAppPolicyAssignment
 
@@ -67,6 +67,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

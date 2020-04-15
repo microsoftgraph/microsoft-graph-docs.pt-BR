@@ -1,16 +1,16 @@
 ---
 title: Atualizar mdmWindowsInformationProtectionPolicy
 description: Atualizar as propriedades de um objeto mdmWindowsInformationProtectionPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 05a2273d26170242251f62836e4a2bf78b75821b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4562037a35fdfde2e1ac67489faf80ac0d3caa5e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512990"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398239"
 ---
 # <a name="update-mdmwindowsinformationprotectionpolicy"></a>Atualizar mdmWindowsInformationProtectionPolicy
 
@@ -355,6 +355,8 @@ Content-Length: 4077
   "isAssigned": true
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get managedAppStatusRaw
 description: Ler propriedades e relações do objeto managedAppStatusRaw.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dfcba4465fe9d145e480ab0af87047e77e1293a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b25451f69bc2dcf67882a35976fbfb96a9c7ba1c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513067"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43398597"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/managedAppStatuses/{managedAppStatusId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -80,6 +80,8 @@ Content-Length: 279
   }
 }
 ```
+
+
 
 
 

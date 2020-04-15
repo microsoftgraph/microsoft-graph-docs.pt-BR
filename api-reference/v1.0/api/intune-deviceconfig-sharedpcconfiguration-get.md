@@ -1,16 +1,16 @@
 ---
 title: Acessar sharedPCConfiguration
 description: Leia as propriedades e relações do objeto sharedPCConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ed5091c48248af42782b50bb324f8e7d2ee46c69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f748991c883c486719abeb392deafb12cbb88102
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514239"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387495"
 ---
 # <a name="get-sharedpcconfiguration"></a>Acessar sharedPCConfiguration
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -98,6 +98,8 @@ Content-Length: 1101
   }
 }
 ```
+
+
 
 
 

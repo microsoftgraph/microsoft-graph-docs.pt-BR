@@ -1,16 +1,16 @@
 ---
 title: Atualizar Entidadeandroidforworkprofiledeviceconfiguration
 description: Atualiza as propriedades de um objeto Entidadeandroidforworkprofiledeviceconfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f6968e62a3c1fb3e86dc4329e569cea5eeda4722
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84f0e526f525e674f3244aa23ee1efbda1220a1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515193"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401018"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>Atualizar Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -199,6 +199,8 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
+
+
 
 
 

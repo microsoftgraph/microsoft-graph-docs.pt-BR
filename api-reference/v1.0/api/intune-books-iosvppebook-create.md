@@ -1,16 +1,16 @@
 ---
 title: Criar iosVppEBook
 description: Cria um novo objeto iosVppEBook.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2baa0da642f5335ed804d9b0b3861aa8fd4ebe51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a7b7fe4f5bb7e264be2b9e48db5372380833e7e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515669"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356002"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 
@@ -145,6 +145,8 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
 
 
 

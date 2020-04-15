@@ -1,16 +1,16 @@
 ---
 title: Excluir deviceComplianceScheduledActionForRule
 description: Exclui deviceComplianceScheduledActionForRule.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 150d98ca846016c4f8cf952367061f6d63cf06b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89bc0f613f1be3672bad25e4fc0e5e5bdbb6c818
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514968"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399713"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>Excluir deviceComplianceScheduledActionForRule
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 'evento: dismissReminder'
 description: Ignorar um lembrete que foi disparado para um evento em um calendário do usuário.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a725b576e02772fe31a294343eba839acf646f69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5613b2a250e5845baa7fd9d53743ed7a24c9da1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517366"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371054"
 ---
 # <a name="event-dismissreminder"></a>evento: dismissReminder
 

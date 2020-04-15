@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso outlookUser
 description: Representa os serviços do Outlook disponíveis para um usuário.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 27d7e91223a763720cdb70d6b857f91c0955b5ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c18451c9d4c75f76cd8f2f544c1325c14b233f38
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447252"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397234"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 
 Representa os serviços do Outlook disponíveis para um usuário.
@@ -33,7 +33,7 @@ Representa os serviços do Outlook disponíveis para um usuário.
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |masterCategories|Coleção [outlookCategory](../resources/outlookcategory.md)| Uma lista de categorias definidas para o usuário. | 

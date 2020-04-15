@@ -2,15 +2,15 @@
 title: Obter orgContact
 description: Recupere as propriedades de um objeto orgContact.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 041898cb17c827835db016c1955135d312432a9b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 399fdbe0cacf0335e104e12a4e0d0c144acef81c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511198"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43387331"
 ---
 # <a name="get-orgcontact"></a>Obter orgContact
 

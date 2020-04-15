@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsPhone81CompliancePolicy
 description: Atualizar as propriedades de um objeto windowsPhone81CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d4ce67eecbce4381126e041b21b8a5396c84145
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 183edcc5d6559ce0f60cb4864a28c80d7a50b5f7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513777"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43399389"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>Atualizar windowsPhone81CompliancePolicy
 
@@ -130,6 +130,8 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

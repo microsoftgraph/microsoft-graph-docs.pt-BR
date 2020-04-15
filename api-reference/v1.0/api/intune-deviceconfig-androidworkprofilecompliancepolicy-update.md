@@ -1,16 +1,16 @@
 ---
 title: Atualizar na entidadeandroidworkprofilecompliancepolicy
 description: Atualiza as propriedades de um objeto na entidadeandroidworkprofilecompliancepolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c025e6bf6f2cfb0be5b9eb18823fb6b8b24400b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1f3b49f167dd30f327ccc1fe5d4dde02345381fc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515263"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43401328"
 ---
 # <a name="update-androidworkprofilecompliancepolicy"></a>Atualizar na entidadeandroidworkprofilecompliancepolicy
 
@@ -160,6 +160,8 @@ Content-Length: 1342
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
 
 
 

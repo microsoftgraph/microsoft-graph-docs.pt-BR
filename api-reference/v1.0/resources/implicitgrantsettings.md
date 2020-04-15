@@ -4,13 +4,13 @@ description: Especifica se este aplicativo Web pode solicitar tokens usando o fl
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: e2d15c7468442c8ad3adbddddd843ee12a7249ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 247d565e8b6c43b2ddedcdfeb23e3cd1fd5e3ad2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531325"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43397464"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>tipo de recurso implicitGrantSettings
 

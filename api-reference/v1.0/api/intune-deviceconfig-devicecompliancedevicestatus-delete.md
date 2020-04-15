@@ -1,16 +1,16 @@
 ---
 title: Excluir deviceComplianceDeviceStatus
 description: Exclui deviceComplianceDeviceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5098ea290dbf40c574dd1892562f46c6bdb91f37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e5be7d2e7bdd63190867ed5803aebe8c32f6c687
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515116"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400301"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>Excluir deviceComplianceDeviceStatus
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

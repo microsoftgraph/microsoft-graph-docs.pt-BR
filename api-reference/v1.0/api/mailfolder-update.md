@@ -1,16 +1,16 @@
 ---
 title: Atualizar mailfolder
 description: Atualize as propriedades do objeto mailfolder.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 94b0888dfacaf33dd04e3a06e80577e2d96b39c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08f84655d05e1ae3c4ab604d411769e09863b6a6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511590"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43355343"
 ---
 # <a name="update-mailfolder"></a>Atualizar mailfolder
 

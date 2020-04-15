@@ -1,16 +1,16 @@
 ---
 title: Criar androidManagedAppProtection
 description: Cria um novo objeto androidManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f86da9b3ff95f8a385bfd238621eb7aca94af4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1be25dcecba02ed851827b69e282b4092fcf426
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513347"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407365"
 ---
 # <a name="create-androidmanagedappprotection"></a>Criar androidManagedAppProtection
 
@@ -200,6 +200,8 @@ Content-Length: 1864
   "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
+
+
 
 
 

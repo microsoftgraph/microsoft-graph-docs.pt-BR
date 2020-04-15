@@ -1,16 +1,16 @@
 ---
 title: Criar deviceComplianceActionItem
 description: Criar um novo objeto deviceComplianceActionItem.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1d745a9df748ce16ca5f26a8eef0716f809d857
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae6d23ca7e6b906295f727cfb35132802fbb20f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515172"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43400917"
 ---
 # <a name="create-devicecomplianceactionitem"></a>Criar deviceComplianceActionItem
 
@@ -100,6 +100,8 @@ Content-Length: 320
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso microsoftStoreForBusinessApp
 description: Aplicativos da Microsoft Store for Business. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f26c1b03d83a90690200f6da3a944dc370c1cfc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88a8e458fd4ee96b58e15f0e058e6b78ff526fd1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531129"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382417"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>Tipo de recurso microsoftStoreForBusinessApp
 
@@ -97,6 +97,9 @@ Veja a seguir uma representação JSON do recurso.
   "packageIdentityName": "String"
 }
 ```
+
+
+
 
 
 

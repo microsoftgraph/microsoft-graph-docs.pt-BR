@@ -1,16 +1,16 @@
 ---
 title: managedAndroidStoreApp resource type
 description: Contém propriedades e propriedades herdadas para aplicativos da loja Android que você pode gerenciar com uma política de proteção de aplicativos do Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 254ed7f1f2771765d904b817fe80ee1c0c381b71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3160a68bd3db100bf820e7530486dc3e297ff4b6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531192"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43354558"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp resource type
 
@@ -107,6 +107,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

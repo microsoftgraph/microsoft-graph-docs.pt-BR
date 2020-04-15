@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso mobileAppContentFile
 description: Contém propriedades de um único arquivo de instalação associado uma versão específica de mobileAppContent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3eba7d5addc48349a63d40effdcda638c0f684e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18540fd8f3bc6579c528f9a7bafd586d19f23c8c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532760"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43410873"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -71,6 +71,9 @@ Veja a seguir uma representação JSON do recurso.
   "uploadState": "String"
 }
 ```
+
+
+
 
 
 
