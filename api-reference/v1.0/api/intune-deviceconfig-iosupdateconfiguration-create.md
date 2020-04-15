@@ -1,16 +1,16 @@
 ---
 title: Criar iosUpdateConfiguration
 description: Cria um novo objeto iosUpdateConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42adbc130e09e237f96bb7bc1354c5fb1294271f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 790a4a7307b3da4d73c89cdfbfe9149ffb8f8e70
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514498"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467469"
 ---
 # <a name="create-iosupdateconfiguration"></a>Criar iosUpdateConfiguration
 
@@ -113,6 +113,8 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
 
 
 

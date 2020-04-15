@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceConfigurationDeviceStateSummary
 description: Atualizar as propriedades de um objeto deviceConfigurationDeviceStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 85927189e6ade41d7592628f7088a0f4364be4fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a0229b605a9aa7bbee3b2555c74823edf9ced43c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514779"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460689"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Atualizar deviceConfigurationDeviceStateSummary
 
@@ -105,6 +105,8 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

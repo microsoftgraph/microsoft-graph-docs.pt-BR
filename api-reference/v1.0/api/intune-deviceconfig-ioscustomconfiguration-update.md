@@ -1,16 +1,16 @@
 ---
 title: Atualizar iosCustomConfiguration
 description: Atualizar as propriedades de um objeto iosCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e123cfd86170e600143adb2cebd7651c9d270e88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e89c9da3232e172547f8ffe129673f55a7041cb6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514575"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474616"
 ---
 # <a name="update-ioscustomconfiguration"></a>Atualizar iosCustomConfiguration
 
@@ -106,6 +106,8 @@ Content-Length: 451
   "payload": "cGF5bG9hZA=="
 }
 ```
+
+
 
 
 

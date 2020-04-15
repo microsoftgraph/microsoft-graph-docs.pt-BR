@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windows10CompliancePolicy
 description: Essa classe contém configurações de conformidade para o Windows 10.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e2ee4abc567b20dfd7427a1f4ea08054feb3c84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4bcae9e857687bfcfb42fc3a48b8641171835ff
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532298"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472479"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Tipo de recurso windows10CompliancePolicy
 
@@ -110,6 +110,9 @@ Veja a seguir uma representação JSON do recurso.
   "storageRequireEncryption": true
 }
 ```
+
+
+
 
 
 

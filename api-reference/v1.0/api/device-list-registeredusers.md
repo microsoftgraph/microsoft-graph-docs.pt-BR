@@ -1,16 +1,16 @@
 ---
 title: Listar registeredUsers
 description: Recupera uma lista de usuários que são usuários registrados do dispositivo.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02b05e2184116b7dbac1f1c2eeb1c23a78f70322
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 868fa7203af4cb8b821d0a69b3fb75e375499b14
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518109"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463990"
 ---
 # <a name="list-registeredusers"></a>Listar registeredUsers
 

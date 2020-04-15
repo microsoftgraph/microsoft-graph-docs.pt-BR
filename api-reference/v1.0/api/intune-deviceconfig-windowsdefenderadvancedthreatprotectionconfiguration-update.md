@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 description: Atualizar as propriedades de um objeto windowsDefenderAdvancedThreatProtectionConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf4f109085a20fb8ce8a88df2c72a3ce1d391d9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c19b3ed5d748d40f6b0784d23fa165e1b7e5492
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513805"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462030"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -103,6 +103,8 @@ Content-Length: 439
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
+
 
 
 

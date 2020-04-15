@@ -1,16 +1,16 @@
 ---
 title: Listar windows10CustomConfigurations
 description: Listar propriedades e relações dos objetos windows10CustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd482dbba6565f9d8935b4808451fd9eced9a70f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d99552deb64b4ba38d286bfcea80a6a8fef1725
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514147"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468801"
 ---
 # <a name="list-windows10customconfigurations"></a>Listar windows10CustomConfigurations
 
@@ -88,6 +88,8 @@ Content-Length: 673
   ]
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Excluir androidGeneralDeviceConfiguration
 description: Exclui androidGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c1667920738ebfb9152078f850b926ecaa9ea72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62b87f0d3462708be78b8a52cbdd59c06d3d5f52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515319"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474646"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>Excluir androidGeneralDeviceConfiguration
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

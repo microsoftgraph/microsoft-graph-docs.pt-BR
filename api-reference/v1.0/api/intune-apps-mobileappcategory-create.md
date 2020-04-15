@@ -1,16 +1,16 @@
 ---
 title: Criar mobileAppCategory
 description: Criar um novo objeto mobileAppCategory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b1d1eacbfa95c587c1bcd59eaf2c646b118c3793
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7894965d771e1d92c4b8fbfe81dd65cb4dbf1aae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516020"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464869"
 ---
 # <a name="create-mobileappcategory"></a>Criar mobileAppCategory
 
@@ -90,6 +90,8 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

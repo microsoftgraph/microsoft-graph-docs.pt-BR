@@ -2,15 +2,15 @@
 title: 'entre em contato com: delta'
 description: Obtenha um conjunto de contatos que foram adicionados, excluídos ou atualizados em uma pasta especificada.
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 89e0bb098cd4fb619c2d27e105a2d2a717c05f24
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f334ca3eedd35a2f5d1a8eea0168f52cd172870e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518305"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474705"
 ---
 # <a name="contact-delta"></a>entre em contato com: delta
 
@@ -53,7 +53,7 @@ O controle de alterações em contatos corresponde a uma série de uma ou mais c
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 

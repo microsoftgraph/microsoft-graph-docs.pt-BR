@@ -1,16 +1,16 @@
 ---
 title: Atualizar windows81GeneralConfiguration
 description: Atualizar as propriedades de um objeto windows81GeneralConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06da85949517cfa0a2acae20de48d608d1fe8523
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 468a04a0b2aed2166d41d388b8eb9bea7e3b0c6b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513840"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466627"
 ---
 # <a name="update-windows81generalconfiguration"></a>Atualizar windows81GeneralConfiguration
 
@@ -196,6 +196,8 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
 
 
 

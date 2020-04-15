@@ -1,16 +1,16 @@
 ---
 title: Excluir deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Exclui deviceEnrollmentWindowsHelloForBusinessConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d894e5082e2d3d8d0d273dd3dbe51f996749043a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a3ffeca97e8571e28965dccc4f08ccd21ff0273
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512605"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473238"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Excluir deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

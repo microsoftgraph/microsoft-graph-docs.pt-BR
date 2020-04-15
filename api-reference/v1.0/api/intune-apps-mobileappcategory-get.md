@@ -1,16 +1,16 @@
 ---
 title: Get mobileAppCategory
 description: Ler propriedades e relações do objeto mobileAppCategory.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bc3c75b5e4e9f34a753ad89c5706207f3c3fcb4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea7d1fae284c0f898f67c1cb5d115fb55744d7a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516006"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464855"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 
@@ -40,7 +40,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryI
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -78,6 +78,8 @@ Content-Length: 239
   }
 }
 ```
+
+
 
 
 

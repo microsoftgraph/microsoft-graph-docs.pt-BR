@@ -1,16 +1,16 @@
 ---
 title: Atualizar managedDeviceMobileAppConfigurationDeviceSummary
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationDeviceSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 98a38fd33d220943aaff32bea1cca963665bb186
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a29e7f3f3e76e8327073831d4e4deec5fafb8bf2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516255"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471710"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Atualizar managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -105,6 +105,8 @@ Content-Length: 348
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

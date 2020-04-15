@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosStoreApp
 description: Contém propriedades e propriedades herdadas para aplicativos da loja iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6e43680571a8cc53ce6317477467ecdfcff3400
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f30fb29d436a439c4ff74e2968e2fe4f4586aaf1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474324"
 ---
 # <a name="iosstoreapp-resource-type"></a>Tipo de recurso iosStoreApp
 
@@ -107,6 +107,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

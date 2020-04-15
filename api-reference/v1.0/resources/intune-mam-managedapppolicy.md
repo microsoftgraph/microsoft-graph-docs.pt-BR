@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso managedAppPolicy
 description: O recurso ManagedAppPolicy representa um tipo de base para políticas específicas de plataformas.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55045faa017c852b812c04b2565269773090ee2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f0e26ea51641bf2a291802d391bfaace18da31f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448379"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468515"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
+
 
 
 

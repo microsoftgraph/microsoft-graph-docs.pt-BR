@@ -2,15 +2,15 @@
 title: Atualizar as configurações de caixa de correio do usuário
 description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui as configurações para respostas automáticas (notificar as pessoas automaticamente no recebimento de seus emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 20065f593312839d8f0fd05718b120817a1dbbc0
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: d85eb8c514cbe8d8841a359f5c27a1570ade9a62
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229609"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466537"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -61,10 +61,10 @@ No corpo da solicitação, forneça os valores para as propriedades relevantes q
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Você pode definir essas notificações para apenas um intervalo de datas futuras.|
-|dateFormat|string|O formato de data da caixa de correio do usuário.|
+|dateFormat|cadeia de caracteres|O formato de data da caixa de correio do usuário.|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especificará se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas da reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |idioma|[localeInfo](../resources/localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
-|Formato de TimeFormat|string|O formato de hora da caixa de correio do usuário.|
+|Formato de TimeFormat|cadeia de caracteres|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](../resources/workinghours.md)|As horas, os dias de uma semana e o fuso horário em que o usuário trabalha.|
 

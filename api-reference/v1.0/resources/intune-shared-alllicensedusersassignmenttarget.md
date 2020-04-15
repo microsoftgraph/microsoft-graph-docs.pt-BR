@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso allLicensedUsersAssignmentTarget
 description: Representa uma atribuição para todos os usuários licenciados no locatário.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d4ab4fe536f20ed35d48a000f60df6a51b26c81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 57462832aba5663f58a70d4f1d27f6d682070cf4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447896"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463714"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>Tipo de recurso allLicensedUsersAssignmentTarget
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -42,6 +42,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
+
+
+
 
 
 

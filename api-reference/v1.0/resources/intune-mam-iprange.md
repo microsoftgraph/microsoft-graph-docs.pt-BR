@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso ipRange
 description: Classe base de intervalo de IP para intervalo de endereços IPV4 e IPv6
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a3bcbc3e92fea65e9085c29df9af306d0cb75d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a6ecf451f43f4161bacfb1aa54cce87227a7468e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530198"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468544"
 ---
 # <a name="iprange-resource-type"></a>Tipo de recurso ipRange
 
@@ -39,6 +39,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
+
+
 
 
 

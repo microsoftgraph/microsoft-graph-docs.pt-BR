@@ -1,16 +1,16 @@
 ---
 title: Acessar iosVppApp
 description: Leia as propriedades e as relações do objeto iosVppApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 44c0f4e047e522311ec822f33e5bda3e8ba34904
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9841c1ac70735e1dc9291b812d8fd268f1c2b30
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516501"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456161"
 ---
 # <a name="get-iosvppapp"></a>Acessar iosVppApp
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -110,6 +110,8 @@ Content-Length: 1487
   }
 }
 ```
+
+
 
 
 

@@ -2,15 +2,15 @@
 title: Atualizar a categoria do Outlook
 description: 'Atualize a propriedade gravável, **color**, do objeto outlookCategory especificado. Não é possível modificar a propriedade **DisplayName** '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 623653f292ddc67c491537e7e60ceeaa900dd655
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48944d1149bca4b3c0a771192f2bfbd4349d0470
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461955"
 ---
 # <a name="update-outlook-category"></a>Atualizar a categoria do Outlook
 

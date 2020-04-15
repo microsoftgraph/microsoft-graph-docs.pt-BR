@@ -1,16 +1,16 @@
 ---
 title: Atualizar calendargroup
 description: Atualiza as propriedades do objeto calendargroup.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 63c535eafdc2b976c545a2f7c205ee3a903356de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ddd1c931df1826f04db4ef25f397ccc18691174a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518739"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471747"
 ---
 # <a name="update-calendargroup"></a>Atualizar calendargroup
 

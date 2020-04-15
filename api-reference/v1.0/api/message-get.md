@@ -1,16 +1,16 @@
 ---
 title: Obter mensagem
 description: Recupere as propriedades e os relacionamentos de um objeto message.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 448bb6531c39e0ea97a6f8c60a723e78317aa101
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 466681c0306373146facb927276fd6b7fb60f48f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618697"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467311"
 ---
 # <a name="get-message"></a>Obter mensagem
 

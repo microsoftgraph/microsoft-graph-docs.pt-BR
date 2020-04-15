@@ -1,16 +1,16 @@
 ---
 title: Get windowsUniversalAppX
 description: Ler propriedades e relações do objeto windowsUniversalAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e5f368a5ec5d2a6dd7259b96571020fe119b226
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8993839c26c4ba3e5ffcf1aaba2606124af5c977
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515788"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464458"
 ---
 # <a name="get-windowsuniversalappx"></a>Get windowsUniversalAppX
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -108,6 +108,8 @@ Content-Length: 1450
   }
 }
 ```
+
+
 
 
 

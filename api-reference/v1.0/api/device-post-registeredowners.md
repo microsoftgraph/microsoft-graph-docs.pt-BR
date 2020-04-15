@@ -1,16 +1,16 @@
 ---
 title: Criar registeredOwner
 description: Adiciona um usuário como proprietário registrado do dispositivo.
-author: davidmu1
+author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 59b70c830308c8feedb672b9606a0c0489c2d27f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 085e2ccf71f26b3a34a0eb2daceed1bcbb60ac22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518081"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466701"
 ---
 # <a name="create-registeredowner"></a>Criar registeredOwner
 

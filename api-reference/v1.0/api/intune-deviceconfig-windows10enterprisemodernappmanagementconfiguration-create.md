@@ -1,16 +1,16 @@
 ---
 title: Criar windows10EnterpriseModernAppManagementConfiguration
 description: Criar um novo objeto windows10EnterpriseModernAppManagementConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a3545a308b670fdb46db3c931ac2bfab43d34a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7012203977ca8475c5a19ff97a55a4b4d289c07b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514081"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460487"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>Criar windows10EnterpriseModernAppManagementConfiguration
 
@@ -100,6 +100,8 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
+
+
 
 
 

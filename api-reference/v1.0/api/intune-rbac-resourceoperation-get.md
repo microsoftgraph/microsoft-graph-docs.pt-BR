@@ -1,16 +1,16 @@
 ---
 title: Obter resourceOperation
 description: Ler propriedades e relações do objeto resourceOperation.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fbe269ecd0741929f03d8c436fbf51243f709528
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80345f5ed9f6675f63882104fc983c0dc6586191
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512269"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461326"
 ---
 # <a name="get-resourceoperation"></a>Obter resourceOperation
 
@@ -39,7 +39,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -78,6 +78,8 @@ Content-Length: 256
   }
 }
 ```
+
+
 
 
 

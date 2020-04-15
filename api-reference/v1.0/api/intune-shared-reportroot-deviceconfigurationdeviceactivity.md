@@ -1,16 +1,16 @@
 ---
 title: Função deviceConfigurationDeviceActivity
 description: Metadados para o relatório de atividade do dispositivo de configuração do dispositivo
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8bc229a510c48f769dcaeaaef9340fbf4fb31b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce3dc9e8af86ed9f0b5b40d33db3232bb735cc0b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512045"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463796"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>Função deviceConfigurationDeviceActivity
 
@@ -72,6 +72,8 @@ Content-Length: 123
   }
 }
 ```
+
+
 
 
 

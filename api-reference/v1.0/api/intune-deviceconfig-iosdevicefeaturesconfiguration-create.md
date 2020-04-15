@@ -1,16 +1,16 @@
 ---
 title: Criar iosDeviceFeaturesConfiguration
 description: Criar um novo objeto iosDeviceFeaturesConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e191d89416402c8037cf7970e858681a1db14887
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3667ff6aa0ccd0945a9846420a6763e95fe109a0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514568"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473386"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Criar iosDeviceFeaturesConfiguration
 
@@ -222,6 +222,8 @@ Content-Length: 2160
   ]
 }
 ```
+
+
 
 
 

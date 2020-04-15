@@ -2,15 +2,15 @@
 title: 'message: delta'
 description: Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38009588fa608ef4f1ebf8926d8380617ada09a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95dd32cfa4966fe651f00efb346e154534af62d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511534"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43361534"
 ---
 # <a name="message-delta"></a>message: delta
 

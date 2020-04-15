@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso deviceEnrollmentLimitConfiguration
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbffcdfd69c0b711bfb400f77a39ee91d8fdffa9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77eb50d6fa72b1ba8e7562aa0383ec07bf895147
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448148"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459562"
 ---
 # <a name="deviceenrollmentlimitconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentLimitConfiguration
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -44,7 +44,7 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceen
 |versão|Int32|Ainda não está documentado Herdado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |limite|Int32|Ainda não documentado|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo. Herdada do [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
@@ -70,6 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "limit": 1024
 }
 ```
+
+
+
 
 
 

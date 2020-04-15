@@ -1,16 +1,16 @@
 ---
 title: Excluir windows10CustomConfiguration
 description: Exclui windows10CustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad4c59fd70ebdbb45cc01af4e61b63b5ab7ba298
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: abbcf798ae2dd30822ece63c1d9d5ce7d42114ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514161"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471635"
 ---
 # <a name="delete-windows10customconfiguration"></a>Excluir windows10CustomConfiguration
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

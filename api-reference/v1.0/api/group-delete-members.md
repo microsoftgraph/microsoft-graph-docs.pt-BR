@@ -2,15 +2,15 @@
 title: Remover membro
 description: Use essa API para remover um membro de um grupo por meio **da** propriedade de navegação membros.
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7a5071120969394c0f60ff8cbb9632581375c369
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: c7d4e3e433f7004c7c764a11e6e462392b66667f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892811"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461417"
 ---
 # <a name="remove-member"></a>Remover membro
 

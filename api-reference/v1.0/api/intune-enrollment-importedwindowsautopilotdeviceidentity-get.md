@@ -1,16 +1,16 @@
 ---
 title: Obter importedWindowsAutopilotDeviceIdentity
 description: Lê as propriedades e relações do objeto importedWindowsAutopilotDeviceIdentity.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ca3d5ee5b5fe43534acbd1d9627e17c59e7f71cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 711d2562813a4c2a8f9741b147ca5a97c1a77d96
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513410"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471411"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>Obter importedWindowsAutopilotDeviceIdentity
 
@@ -40,7 +40,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -87,6 +87,8 @@ Content-Length: 635
   }
 }
 ```
+
+
 
 
 

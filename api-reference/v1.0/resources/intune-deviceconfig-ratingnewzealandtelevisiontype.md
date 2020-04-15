@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingNewZealandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Nova Zelândia
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2fcb57cc98d580fd50a0cd3aa2dea5de45657e93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdda1f2265d68fbcc6b13ce8f77c444298ff9d74
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530486"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472739"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>tipo de enumeração ratingNewZealandTelevisionType
 
@@ -24,10 +24,13 @@ Rótulos de classificação de conteúdo de TV na Nova Zelândia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|geral|2 |A classificação G exclui os materiais que provavelmente danificarão os filhos em 14|
-|parentalGuidance|3 |A classificação do PGR incentiva os pais e os guardiões a supervisionar os visualizadores mais jovens|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|geral|duas|A classificação G exclui os materiais que provavelmente danificarão os filhos em 14|
+|parentalGuidance|3D|A classificação do PGR incentiva os pais e os guardiões a supervisionar os visualizadores mais jovens|
 |adultos|4 |A classificação ao ao não é adequada para crianças|
+
+
+
 
 
 

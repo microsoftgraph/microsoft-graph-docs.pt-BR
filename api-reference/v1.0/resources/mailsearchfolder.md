@@ -2,19 +2,19 @@
 title: tipo de recurso mailSearchFolder
 description: Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email correspondentes aos critérios de pesquisa especificados. mailSearchFolder herda de mailFolder.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: eb2ff38cc2089c143e98f8297177341685879635
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e0c392270ac6b82462c7ffb99afb722c6e60bc9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447490"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461866"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Um **mailSearchFolder** é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email correspondentes aos critérios de pesquisa especificados. **mailSearchFolder** herda de [mailFolder](mailfolder.md). Pastas de pesquisa podem ser criadas em qualquer pasta da caixa de correio do Exchange Online de um usuário. No entanto, para que uma pasta de pesquisa apareça no Outlook, no Outlook para a Web ou no Outlook Live, a pasta deve ser criada na pasta **WellKnownFolderName. SearchFolders** . 
 
@@ -43,9 +43,9 @@ Quando uma pasta de pesquisa é excluída, seu aplicativo deve criar um novo rec
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| IsSupported | Boolean | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
-| includeNestedFolders | Boolean | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
-| sourceFolderIds | String collection | As pastas de caixa de correio que devem ser minadas. |
+| IsSupported | Booliano | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
+| includeNestedFolders | Booliano | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida na pesquisa. `true`significa que uma pesquisa profunda deve ser feita para incluir pastas filhas na hierarquia de cada pasta explicitamente especificada no **sourceFolderIds**. `false`significa uma pesquisa superficial de apenas cada uma das pastas explicitamente especificadas no **sourceFolderIds**. |
+| sourceFolderIds | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="json-representation"></a>Representação JSON

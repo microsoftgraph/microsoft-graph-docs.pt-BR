@@ -1,16 +1,16 @@
 ---
 title: Excluir calendarGroup
 description: Exclui um grupo de calendários diferente do grupo de calendários padrão.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b1734d3a1a2b039bdff8239529daa51f57f10b49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 444ef815a2e84b56360f3d270eecd58a398fda03
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471807"
 ---
 # <a name="delete-calendargroup"></a>Excluir calendarGroup
 

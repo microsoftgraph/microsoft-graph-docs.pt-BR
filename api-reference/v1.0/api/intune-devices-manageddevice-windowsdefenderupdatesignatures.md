@@ -1,16 +1,16 @@
 ---
 title: Ação windowsDefenderUpdateSignatures
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 23130ca72077f55a69cbfd5a3d921cce49ae07c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20dcd0ae2e653c4e785767dc5f0e5d156e174276
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513452"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474416"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>Ação windowsDefenderUpdateSignatures
 
@@ -65,6 +65,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

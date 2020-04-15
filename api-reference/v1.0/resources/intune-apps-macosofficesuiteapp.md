@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso macOSOfficeSuiteApp
 description: Contém propriedades e propriedades herdadas do aplicativo do MacOS Office Suite.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24c7dfd571ed079839bb76adff6cdacc254c34ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aef580fb37ee79e199ff5336a808f0bae42b35cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532803"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474256"
 ---
 # <a name="macosofficesuiteapp-resource-type"></a>Tipo de recurso macOSOfficeSuiteApp
 
@@ -87,6 +87,9 @@ Veja a seguir uma representação JSON do recurso.
   "publishingState": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar contato
 description: Atualize as propriedades de um objeto contact.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e26fb6521c3f9bcd6672da4241a727b3680aab1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21f6571295ca229178a050f601e19f044e10815e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518291"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462187"
 ---
 # <a name="update-contact"></a>Atualizar contato
 

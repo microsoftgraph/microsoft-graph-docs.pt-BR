@@ -2,15 +2,15 @@
 title: Obter calendário
 description: 'Obtenha as propriedades e as relações de um objeto calendário. O calendário pode ser um para um usuário '
 localization_priority: Priority
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b09049c2e1d7c225806b3c1531b96ed3a6b7c3a
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 0a216938f99d03bcc15e8b46ef64eee8a91cfd60
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43228849"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471866"
 ---
 # <a name="get-calendar"></a>Obter calendário
 

@@ -1,16 +1,16 @@
 ---
 title: Adicionar anexo
 description: Use esta API para criar um novo Anexo.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 41dae3f8703ab0ef24a10ccbed6910d05118c578
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9f7a0e01ab4113694927fe9c6323a23f4c7c2036
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517289"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461529"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 

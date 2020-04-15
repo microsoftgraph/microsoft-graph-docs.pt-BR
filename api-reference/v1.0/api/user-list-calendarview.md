@@ -3,14 +3,14 @@ title: Listar calendarView
 description: 'Obter as ocorrências, exceções e instâncias únicas de eventos em uma exibição de calendário definida por um intervalo de tempo, a partir do calendário padrão do usuário, '
 localization_priority: Priority
 doc_type: apiPageType
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 15fe8fb9e92b98755ebf5e65ee794e0679f0f3f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7dec5123f330af2a2cded0d0b34950b67c2bb9c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509133"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43455514"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 

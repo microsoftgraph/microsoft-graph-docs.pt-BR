@@ -1,16 +1,16 @@
 ---
 title: Get detectedApp
 description: Ler propriedades e relações do objeto detectedApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f361b6602635ec0fee266483314f75bd6b14b91f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aefefab9e5c82c0e40cb4b6bd37f446269218a61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513620"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456763"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
 
@@ -39,7 +39,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -79,6 +79,8 @@ Content-Length: 247
   }
 }
 ```
+
+
 
 
 

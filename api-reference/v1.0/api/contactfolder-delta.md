@@ -2,15 +2,15 @@
 title: 'contactFolder: delta'
 description: Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.
 localization_priority: Normal
-author: angelgolfer-ms
+author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3704b7a4a79641b1d3905f298c519247678ccb5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7065463c73f45c415f9ae64256952a4752669d52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462165"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -53,7 +53,7 @@ Você pode usar um parâmetro de consulta `$select` como em qualquer solicitaç�
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 

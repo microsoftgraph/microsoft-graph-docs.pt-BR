@@ -1,16 +1,16 @@
 ---
 title: Criar windowsMobileMSI
 description: Cria um novo objeto windowsMobileMSI.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a27e369110b0b426c412049848d2d36f80d9d77d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a29458fb9cefa8a948184dbef45e5e3748ff5bbf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515844"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464563"
 ---
 # <a name="create-windowsmobilemsi"></a>Criar windowsMobileMSI
 
@@ -150,6 +150,8 @@ Content-Length: 1027
   "ignoreVersionDetection": true
 }
 ```
+
+
 
 
 

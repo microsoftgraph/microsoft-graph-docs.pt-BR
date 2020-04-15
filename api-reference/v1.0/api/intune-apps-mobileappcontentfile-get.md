@@ -1,16 +1,16 @@
 ---
 title: Acessar mobileAppContentFile
 description: Leia as propriedades e as relações do objeto mobileAppContentFile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fad00b959f214bdab3d4a883bf372860c49de705
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5ffdc706f86e0a7c93a9aff572e2f6f48733efc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515929"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464696"
 ---
 # <a name="get-mobileappcontentfile"></a>Acessar mobileAppContentFile
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -84,6 +84,8 @@ Content-Length: 491
   }
 }
 ```
+
+
 
 
 

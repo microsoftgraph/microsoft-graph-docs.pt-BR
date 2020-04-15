@@ -2,15 +2,15 @@
 title: tipo de recurso de dispositivo
 description: Representa um dispositivo registrado na organização.
 localization_priority: Normal
-author: davidmu1
+author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 45b1829337c93af45e6f3edc1dd72191fcc0d14c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 850b56660f93349462ab23afa787adcb1cc32010
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531675"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474388"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -46,7 +46,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 |complianceExpirationDateTime|DateTimeOffset| O carimbo de data/hora quando o dispositivo não é mais considerado compatível. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-|deviceId|string| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
+|deviceId|cadeia de caracteres| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
 |deviceMetadata|String| Somente para uso interno. Definido como nulo. |
 |deviceVersion|Int32| Somente para uso interno. |
 |displayName|Cadeia de caracteres|O nome de exibição do dispositivo. Obrigatório. |
@@ -62,7 +62,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeia de caracteres| Somente para uso interno. Não anulável. |
 |profiletype|String|O tipo de perfil do dispositivo. Valores possíveis:<br />**RegisteredDevice** (padrão)<br />**SecureVM**<br />**Printer**<br />**Compartilhado**<br />**IoT**|
-|systemLabels|String collection| Lista de rótulos aplicados ao dispositivo pelo sistema. |
+|systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
 |trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>Relacionamento
@@ -70,7 +70,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
-|[Listar membros transitivos](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| Listar os grupos dos quais o dispositivo é membro. Essa operação é transitiva. |
+|[Listar memberOf transitivos](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| Listar os grupos dos quais o dispositivo é membro. Essa operação é transitiva. |
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável. |
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável.|
 

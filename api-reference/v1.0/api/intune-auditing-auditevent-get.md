@@ -1,16 +1,16 @@
 ---
 title: Get auditEvent
 description: Ler propriedades e relações do objeto auditEvent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bdc8ef1aa81a94d9a63486319a418460fac1700f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7b445c0bef3e7a50be41e8ef65e50f59a0fea81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515753"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464407"
 ---
 # <a name="get-auditevent"></a>Get auditEvent
 
@@ -39,7 +39,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -113,6 +113,8 @@ Content-Length: 1538
   }
 }
 ```
+
+
 
 
 

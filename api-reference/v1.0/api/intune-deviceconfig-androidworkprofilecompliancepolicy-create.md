@@ -1,16 +1,16 @@
 ---
 title: Criar na entidadeandroidworkprofilecompliancepolicy
 description: Criar um novo objeto na entidadeandroidworkprofilecompliancepolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a55df85c3fccdefe30e0e5a42003a79beddbd4d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd48640a1dd0b6a7dd3e0b8e972d352f797e4774
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515291"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470443"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>Criar na entidadeandroidworkprofilecompliancepolicy
 
@@ -160,6 +160,8 @@ Content-Length: 1342
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
 
 
 

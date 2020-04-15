@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedEBook
 description: Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66d0efae21a68bd14286af45c4c021dbf7ba96fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a73da0f3f9fc6eb86f158ece8f9a8f8eecb663d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531003"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468664"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -76,6 +76,9 @@ Veja a seguir uma representação JSON do recurso.
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar windows10CompliancePolicy
 description: Leia as propriedades e as relações do objeto windows10CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3eba9a85bd1a11ef22515675fe7f871748bc686
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e27cad08cc078f70e055f168847c57de21c918b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514189"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474519"
 ---
 # <a name="get-windows10compliancepolicy"></a>Acessar windows10CompliancePolicy
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -99,6 +99,8 @@ Content-Length: 1197
   }
 }
 ```
+
+
 
 
 

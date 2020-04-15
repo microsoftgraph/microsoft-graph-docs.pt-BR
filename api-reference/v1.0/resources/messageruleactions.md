@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso messageRuleActions
 description: Representa o conjunto de ações que estão disponíveis para uma regra.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 548d5bba0bf176c8cde4d9b46b28ed6e0520c579
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 406632618c4200fc217b993a7df8631b13db3cc8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447392"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468343"
 ---
 # <a name="messageruleactions-resource-type"></a>Tipo de recurso messageRuleActions
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 
 Representa o conjunto de ações que estão disponíveis para uma regra.
@@ -24,13 +24,13 @@ Representa o conjunto de ações que estão disponíveis para uma regra.
 |:---------------|:--------|:----------|
 | assignCategories | Coleção de cadeia de caracteres | Uma lista de categorias a serem atribuídas a uma mensagem. |
 | copyToFolder | String | O ID de uma pasta para a qual uma mensagem deve ser copiada. |
-| delete | Boolean | Indica se uma mensagem deve ser movida para a pasta Itens Excluídos. |
+| delete | Booliano | Indica se uma mensagem deve ser movida para a pasta Itens Excluídos. |
 | forwardAsAttachmentTo | Coleção [recipient](recipient.md) | Os endereços de email dos destinatários para os quais uma mensagem deve ser encaminhada como um anexo. |
 | forwardTo | Coleção [recipient](recipient.md) | Os endereços de email dos destinatários para os quais uma mensagem deve ser encaminhada. |
-| markAsRead | Boolean | Indica se uma mensagem deve ser marcada como lida. |
+| markAsRead | Booliano | Indica se uma mensagem deve ser marcada como lida. |
 | markImportance | importância | Define a importância da mensagem, que pode ser: `low`, `normal`, `high`. |
 | moveToFolder |  Cadeia de caracteres| O ID da pasta para a qual uma mensagem será movida. |
-| permanentDelete | Boolean | Indica se uma mensagem deve ser excluída permanentemente e não salva na pasta Itens Excluídos. |
+| permanentDelete | Booliano | Indica se uma mensagem deve ser excluída permanentemente e não salva na pasta Itens Excluídos. |
 | redirectTo | Coleção [recipient](recipient.md) | Os endereços de email para os quais uma mensagem deve ser redirecionada. |
 | stopProcessingRules | Boolean | Indica se regras subsequentes devem ser avaliadas. |
 

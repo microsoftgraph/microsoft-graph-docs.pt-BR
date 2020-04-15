@@ -2,15 +2,15 @@
 title: 'evento: delta'
 description: 'Obtém um conjunto de eventos que foram adicionados, excluídos ou atualizado em um**calendarView** (um intervalo de eventos) '
 localization_priority: Priority
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eec9537d9ca45e3c9f5d64f052a76870d2779dc7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e21b03de00a88d4db5fb168015b8c61f7c92eea
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517373"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461664"
 ---
 # <a name="event-delta"></a>evento: delta
 

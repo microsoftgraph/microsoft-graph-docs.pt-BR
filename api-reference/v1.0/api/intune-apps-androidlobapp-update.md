@@ -1,16 +1,16 @@
 ---
 title: Atualizar androidLobApp
 description: Atualiza as propriedades de um objeto androidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ca5c8b1242e5805b00150ebfc79ba0d88499d241
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 321aa49ed5139704ce796707208c04a46937e8b2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516662"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463922"
 ---
 # <a name="update-androidlobapp"></a>Atualizar androidLobApp
 
@@ -170,6 +170,8 @@ Content-Length: 1247
   "versionCode": "Version Code value"
 }
 ```
+
+
 
 
 

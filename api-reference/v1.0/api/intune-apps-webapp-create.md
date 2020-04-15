@@ -1,16 +1,16 @@
 ---
 title: Criar webApp
 description: Cria um novo objeto webApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ee153bac96a29e040b96491c104b9348bc2df09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 366e7ad40bde32db4d7c28d57b88dc2ecd83ebc7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515873"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464620"
 ---
 # <a name="create-webapp"></a>Criar webApp
 
@@ -135,6 +135,8 @@ Content-Length: 817
   "useManagedBrowser": true
 }
 ```
+
+
 
 
 

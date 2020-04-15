@@ -1,16 +1,16 @@
 ---
 title: Criar calendário
 description: Use esta API para criar um novo calendário em um grupo de calendários para um usuário.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7eda16d5f255243650073efb54ee641b61bf960f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 423e382445f4ac64272bb49b686bbbdddb6bd3ec
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518753"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471762"
 ---
 # <a name="create-calendar"></a>Criar calendário
 

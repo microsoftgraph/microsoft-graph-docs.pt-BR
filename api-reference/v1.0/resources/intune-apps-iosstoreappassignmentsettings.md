@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosStoreAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da iOS Store para um grupo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: afbb1ecf250b67563f965aae6d5e7e39ebc9083d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b83422a937bf9a067bd55c4ef09806e01bc51ad9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531206"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474317"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Tipo de recurso iosStoreAppAssignmentSettings
 
@@ -44,6 +44,9 @@ Veja a seguir uma representação JSON do recurso.
   "vpnConfigurationId": "String"
 }
 ```
+
+
+
 
 
 

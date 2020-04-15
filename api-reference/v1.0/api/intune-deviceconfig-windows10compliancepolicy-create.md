@@ -1,16 +1,16 @@
 ---
 title: Criar windows10CompliancePolicy
 description: Cria um novo objeto windows10CompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bbb9f2966d0c643c8b48a3582403127517f116b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e5d67068ef9a70bb4b0b6f95e0b74b8b991967b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514203"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474554"
 ---
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
 
@@ -154,6 +154,8 @@ Content-Length: 1126
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

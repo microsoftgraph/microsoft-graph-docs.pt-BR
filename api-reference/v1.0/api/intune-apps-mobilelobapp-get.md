@@ -1,16 +1,16 @@
 ---
 title: Acessar mobileLobApp
 description: Leia as propriedades e as relações do objeto mobileLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd83029eb3c4eaf9fe0052e6db5bf383b42179c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a88d8f3778262310837f84439507a764cb395f0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515887"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464652"
 ---
 # <a name="get-mobilelobapp"></a>Acessar mobileLobApp
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -95,6 +95,8 @@ Content-Length: 925
   }
 }
 ```
+
+
 
 
 

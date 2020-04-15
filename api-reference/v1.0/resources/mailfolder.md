@@ -2,15 +2,15 @@
 title: tipo de recurso mailFolder
 description: Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e Rascunhos. As pastas de email podem conter mensagens, outros itens do Outlook e pastas de correio filho.
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0de32560e154eaa732e596040525025ad0676926
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e3ba437359fedf604e800e12554f186b67c3f78
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448015"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461873"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 

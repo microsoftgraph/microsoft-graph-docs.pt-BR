@@ -2,15 +2,15 @@
 title: Obter eventMessage
 description: Expanda o parâmetro na propriedade de navegação de **evento** para obter o evento associado no calendário de um participante.
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 74eb815be1f5ceb5562dccd1c8db2e42b609c097
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2fb7318c8c98b02771fac376a3abaf6350e1b7c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517303"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461559"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 

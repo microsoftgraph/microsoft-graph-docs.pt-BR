@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso windowsInformationProtectionAppLearningSummary
 description: Entidade de Resumo de AppLearning da Proteção de Informações do Windows
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 118ab01606982d07804b163065c72fcfb8884f71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f025f0aaa751eb1486fb19785eb886a62db8de9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468350"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLearningSummary
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -57,6 +57,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
+
+
+
 
 
 

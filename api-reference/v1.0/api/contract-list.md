@@ -2,15 +2,15 @@
 title: Listar contratos
 description: Recupere uma lista de objetos Contract associados a um locatário do parceiro.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 166a2fa0122384720845fa0f8bdb4e66826342b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d029163603b9c5bdafc9f8fa0c2394fb157ebe8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518221"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460547"
 ---
 # <a name="list-contracts"></a>Listar contratos
 

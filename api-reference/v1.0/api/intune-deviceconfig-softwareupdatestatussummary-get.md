@@ -1,16 +1,16 @@
 ---
 title: Obter softwareUpdateStatusSummary
 description: Ler propriedades e relações do objeto softwareUpdateStatusSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e1d33af94600d922360a6d7c98adf11919a9fc0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ed1e458357f98ad3cbfc3e7dc88aeede7b5887d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514218"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474602"
 ---
 # <a name="get-softwareupdatestatussummary"></a>Obter softwareUpdateStatusSummary
 
@@ -39,7 +39,7 @@ GET /deviceManagement/softwareUpdateStatusSummary
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -90,6 +90,8 @@ Content-Length: 620
   }
 }
 ```
+
+
 
 
 

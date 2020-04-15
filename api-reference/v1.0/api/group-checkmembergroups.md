@@ -1,16 +1,16 @@
 ---
 title: 'group: checkMemberGroups'
-description: Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais
-author: dkershaw10
+description: Verifique se há associação na lista de grupos especificada.
+author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b2ad7dd8e98c88ed428f9a61287027b49f5a73c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 47b5e631ec93bf15e76ab55491c858af235520cc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461484"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 

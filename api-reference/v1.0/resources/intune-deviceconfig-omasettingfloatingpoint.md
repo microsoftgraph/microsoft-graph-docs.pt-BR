@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso omaSettingFloatingPoint
 description: Definição de ponto flutuante para configurações de OMA.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ace6b422dc56aa8fbfc456775458e50e10a792a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b5db5b376bdce3d428b36c014c949087ab36185
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473023"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Tipo de recurso omaSettingFloatingPoint
 
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
+
+
 
 
 

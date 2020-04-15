@@ -1,16 +1,16 @@
 ---
 title: Criar macOSCustomConfiguration
 description: Cria um novo objeto macOSCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 90583d103211f374ed761813a033000546fbc036
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7d9b3869843092185e44407fcbed392e3cceffee
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514393"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468830"
 ---
 # <a name="create-macoscustomconfiguration"></a>Criar macOSCustomConfiguration
 
@@ -106,6 +106,8 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso optionalClaim
 description: FORNEÇA UMA DESCRIÇÃO AQUI
 localization_priority: Normal
 author: sureshja
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: de97333a2a7580e9b6a9b58e042c0c5a8ff9bbe7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: def69ff8da77eedbaf4cd48669594994764cb2a4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534125"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468321"
 ---
 # <a name="optionalclaim-resource-type"></a>tipo de recurso optionalClaim
 
@@ -24,7 +24,7 @@ Confira [fornecer declarações opcionais ao aplicativo Azure AD](/azure/active-
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|AdditionalProperties|String collection| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade Name. |
+|AdditionalProperties|Coleção de cadeias de caracteres| Propriedades adicionais da declaração. Se uma propriedade existir nessa coleção, ela modificará o comportamento da declaração opcional especificada na propriedade Name. |
 |essencial|Booliano| Se o valor for true, a declaração especificada pelo cliente será necessária para garantir uma experiência de autorização suave para a tarefa específica solicitada pelo usuário final. O valor padrão é falso.|
 |nome|String| O nome da declaração opcional. |
 |source|String| A origem (objeto de diretório) da declaração. Há declarações predefinidas e declarações definidas pelo usuário das propriedades de extensão. Se o valor de origem for nulo, a declaração será uma declaração opcional predefinida. Se o valor de origem for User, o valor na propriedade Name será a Propriedade Extension do objeto user. |

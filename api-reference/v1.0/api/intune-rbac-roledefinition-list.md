@@ -1,16 +1,16 @@
 ---
 title: Listar roleDefinitions
 description: Listar propriedades e relações dos objetos roleDefinition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4db6975abdd76839813691e1a0d1a1464ab7a811
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 382e9af98d797f9f68734f615f80fdfbfb85e05f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512185"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461289"
 ---
 # <a name="list-roledefinitions"></a>Listar roleDefinitions
 
@@ -93,6 +93,8 @@ Content-Length: 746
   ]
 }
 ```
+
+
 
 
 

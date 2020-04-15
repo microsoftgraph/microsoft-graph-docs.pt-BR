@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso eBookInstallSummary
 description: Contém propriedades do resumo da instalação de um livro para um dispositivo.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8338d2376540d8600d574e56ac38c95d0c6b9626
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e5068e7c84797898e33b13fc503f11aaf7ad081b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531017"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468778"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 
@@ -60,6 +60,9 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledUserCount": 1024
 }
 ```
+
+
+
 
 
 

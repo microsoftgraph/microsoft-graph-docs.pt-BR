@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso deviceManagementExchangeConnector
 description: Entidade que representa uma conexão a um ambiente do Exchange.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 861461886ec22a63f661dda7134ff75339e0cce8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dba4bd9f425d5b35bcb23a053b3866684fa44efc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448120"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459534"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Tipo de recurso deviceManagementExchangeConnector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -70,6 +70,9 @@ Veja a seguir uma representação JSON do recurso.
   "exchangeOrganization": "String"
 }
 ```
+
+
+
 
 
 

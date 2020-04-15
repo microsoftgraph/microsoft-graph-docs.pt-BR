@@ -2,15 +2,15 @@
 title: Listar mensagens
 description: Obtenha todas as mensagens na caixa de correio do usuário conectado, ou em uma pasta especificada na caixa de correio.
 localization_priority: Priority
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c3aca6f718548155a5a13ff617dacfa61f54927
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96fbf541b7d1f0d686ec2be8bb6f61c56a415c5e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511625"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467341"
 ---
 # <a name="list-messages"></a>Listar mensagens
 

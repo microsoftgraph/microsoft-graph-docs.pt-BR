@@ -1,16 +1,16 @@
 ---
 title: Get defaultManagedAppProtection
 description: Ler propriedades e relações do objeto defaultManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9f221dca8326ed9987491ca86e9136703872141
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 52301ef823067a5abb08dc7dd8ddbdba1498ebcf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513277"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43457972"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtecti
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -124,6 +124,8 @@ Content-Length: 2264
   }
 }
 ```
+
+
 
 
 

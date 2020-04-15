@@ -1,16 +1,16 @@
 ---
 title: Criar windows10SecureAssessmentConfiguration
 description: Cria um novo objeto windows10SecureAssessmentConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58af4dd157691184dc7cf87c1942921d8716c348
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ff31c25d5d09194e4bc27d38cd3eca21b041b61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513976"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456971"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>Criar windows10SecureAssessmentConfiguration
 
@@ -112,6 +112,8 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
+
+
 
 
 

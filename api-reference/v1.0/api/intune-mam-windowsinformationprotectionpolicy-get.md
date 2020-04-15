@@ -1,16 +1,16 @@
 ---
 title: Obter windowsInformationProtectionPolicy
 description: Ler propriedades e relações do objeto windowsInformationProtectionPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 13d61f69b72c1b7956338e20f8310f0d8abbcd80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc37fbbce68e5b53162a08ddcbeb4c6f12092e79
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512815"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471352"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>Obter windowsInformationProtectionPolicy
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -210,6 +210,8 @@ Content-Length: 4870
   }
 }
 ```
+
+
 
 
 

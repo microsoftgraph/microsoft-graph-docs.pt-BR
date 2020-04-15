@@ -1,16 +1,16 @@
 ---
 title: Get deviceEnrollmentPlatformRestrictionsConfiguration
 description: Ler propriedades e relações do objeto deviceEnrollmentPlatformRestrictionsConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b2bdc791223ee8ff617bbee72a1593f581a30d5c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9029fad7fe5d1c68182bcf60afcf0616b19fc97a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512626"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471593"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -116,6 +116,8 @@ Content-Length: 1927
   }
 }
 ```
+
+
 
 
 

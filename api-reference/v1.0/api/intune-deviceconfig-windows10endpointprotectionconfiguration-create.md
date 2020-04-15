@@ -1,16 +1,16 @@
 ---
 title: Criar windows10EndpointProtectionConfiguration
 description: Criar um novo objeto windows10EndpointProtectionConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb003198b59293274550ed6f1d47f3466baef250
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 276d1c7956266a72b3b54bb0c4ee13064cecbdf6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514133"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467454"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Criar windows10EndpointProtectionConfiguration
 
@@ -70,8 +70,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes do domínio|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes públicas|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes privadas|
-|defenderAttackSurfaceReductionExcludedPaths|String collection|Lista de arquivos executáveis e pastas a serem excluídos das regras de redução de superfície de ataque|
-|defenderGuardedFoldersAllowedAppPaths|String collection|Lista de caminhos para execução com permissão para acessar as pastas protegidas|
+|defenderAttackSurfaceReductionExcludedPaths|Coleção de cadeias de caracteres|Lista de arquivos executáveis e pastas a serem excluídos das regras de redução de superfície de ataque|
+|defenderGuardedFoldersAllowedAppPaths|Coleção de cadeias de caracteres|Lista de caminhos para execução com permissão para acessar as pastas protegidas|
 |defenderAdditionalGuardedFolders|String collection|Lista de caminhos de pasta a serem adicionados à lista de pastas protegidas|
 |defenderExploitProtectionXml|Binária|Conteúdo XML com informações sobre a proteção contra vulnerabilidades.|
 |defenderExploitProtectionXmlFileName|String|Nome do arquivo do qual DefenderExploitProtectionXml foi obtido.|
@@ -311,6 +311,8 @@ Content-Length: 4417
   }
 }
 ```
+
+
 
 
 

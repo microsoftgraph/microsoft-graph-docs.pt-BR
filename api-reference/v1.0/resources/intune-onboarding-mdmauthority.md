@@ -1,20 +1,20 @@
 ---
 title: tipo de enumeração mdmAuthority
 description: Define autoridade de gerenciamento de dispositivo móvel.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f9ec6f04f49397c4d273cf6f4819a31e8e1ce962
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7e9c72c8ab4e6c80d999192eab391406b63ea94
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448043"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459384"
 ---
 # <a name="mdmauthority-enum-type"></a>tipo de enumeração mdmAuthority
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -24,9 +24,12 @@ Define autoridade de gerenciamento de dispositivo móvel.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Desconhecido|
-|Intune|1 |Intune|
-|SCCM|2 |SCCM|
-|Office365|3 |Office365|
+|Intune|1|Intune|
+|SCCM|duas|SCCM|
+|Office365|3D|Office365|
+
+
+
 
 
 

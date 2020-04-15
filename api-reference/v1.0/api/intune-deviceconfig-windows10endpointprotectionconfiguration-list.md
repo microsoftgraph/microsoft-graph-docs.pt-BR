@@ -1,16 +1,16 @@
 ---
 title: Listar windows10EndpointProtectionConfigurations
 description: Listar propriedades e relações dos objetos windows10EndpointProtectionConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9beeaf62d30b7c0487fc0871b6c08e3434c7a50e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2142f8d3146f00106537aa13c18b4033e8c33b4a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514095"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467425"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Listar windows10EndpointProtectionConfigurations
 
@@ -168,6 +168,8 @@ Content-Length: 4834
   ]
 }
 ```
+
+
 
 
 

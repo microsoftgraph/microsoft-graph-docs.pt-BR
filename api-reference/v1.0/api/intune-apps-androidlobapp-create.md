@@ -1,16 +1,16 @@
 ---
 title: Criar androidLobApp
 description: Cria um novo objeto androidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 908710b779a62d17749eec009ccf031f4f25bb7f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f67300d100c3487259ae54e9322ffef70256a595
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516693"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463983"
 ---
 # <a name="create-androidlobapp"></a>Criar androidLobApp
 
@@ -170,6 +170,8 @@ Content-Length: 1247
   "versionCode": "Version Code value"
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar roleAssignment
 description: Atualizar as propriedades de um objeto roleAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06c71be971a4a3a37eed40568b3ec84d69d19b62
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b346f7b40b718b4910eaf733c6dc7c24ae139a8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467356"
 ---
 # <a name="update-roleassignment"></a>Atualizar roleAssignment
 
@@ -97,6 +97,8 @@ Content-Length: 242
   ]
 }
 ```
+
+
 
 
 

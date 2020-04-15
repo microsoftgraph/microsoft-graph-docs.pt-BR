@@ -1,16 +1,16 @@
 ---
 title: Criar iosVppEBookAssignment
 description: Criar um novo objeto iosVppEBookAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0fdd070e495dca9af77f484542405a45e50fe652
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb41945807d73eb956f0b38e716fd9ffb4994c79
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515627"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43470489"
 ---
 # <a name="create-iosvppebookassignment"></a>Criar iosVppEBookAssignment
 
@@ -94,6 +94,8 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Função verifyWindowsEnrollmentAutoDiscovery
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff32b1c5c8cc06835ca6d23697fd20bea83ba20c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce4fd7e165e22ea0402efe009545970f6e849eaf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512052"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463811"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Função verifyWindowsEnrollmentAutoDiscovery
 
@@ -74,6 +74,8 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
 
 
 

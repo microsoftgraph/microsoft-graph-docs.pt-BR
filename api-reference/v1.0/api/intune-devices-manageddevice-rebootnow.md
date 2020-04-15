@@ -1,16 +1,16 @@
 ---
 title: Ação rebootNow
 description: Reinicie o dispositivo
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1278dce3ea353631329795f668c914a13fb7bc80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b2e1cd13dd64375186d4ef0d720c5cac49688f76
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513529"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43456600"
 ---
 # <a name="rebootnow-action"></a>Ação rebootNow
 
@@ -65,6 +65,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

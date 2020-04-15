@@ -1,16 +1,16 @@
 ---
 title: Get userInstallStateSummary
 description: Ler propriedades e relações do objeto userInstallStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c5c64f92f18d1993eb8b6f542a515b60501a3279
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70896167324398427564518b34df4444564b45dd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515522"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473405"
 ---
 # <a name="get-userinstallstatesummary"></a>Get userInstallStateSummary
 
@@ -39,7 +39,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -79,6 +79,8 @@ Content-Length: 269
   }
 }
 ```
+
+
 
 
 

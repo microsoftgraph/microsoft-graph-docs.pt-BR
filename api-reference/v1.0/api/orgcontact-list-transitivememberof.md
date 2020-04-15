@@ -1,16 +1,16 @@
 ---
 title: Listar transitiveMemberOf
 description: Obter grupos dos quais o contato do organziational é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o usuário é um membro aninhado.
-author: anchanda
+author: dkershaw10
 localization_priority: Normal
-ms.prod: groups
+ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 67c3984aa54b733596902a370326ed6ed7b6e232
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afcda6aee90a6d50741c82b4b37869c97fbfb555
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511163"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463751"
 ---
 # <a name="list-transitivememberof"></a>Listar transitiveMemberOf
 
@@ -38,7 +38,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte `$select` aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

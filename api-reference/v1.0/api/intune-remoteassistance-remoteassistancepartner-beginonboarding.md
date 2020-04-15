@@ -1,16 +1,16 @@
 ---
 title: Ação beginOnboarding
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04c9875545292aa94a73b366ebf801f70d20bb80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df7b246274a4bbf28db098f86c651288c6d659c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512178"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461251"
 ---
 # <a name="beginonboarding-action"></a>Ação beginOnboarding
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Acessar windows10CustomConfiguration
 description: Leia as propriedades e as relações do objeto windows10CustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56b514a664445c02dc28197a6b26170500eb39a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66513f5a908daea3c7659cce44f6a244436e493f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514154"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43471628"
 ---
 # <a name="get-windows10customconfiguration"></a>Acessar windows10CustomConfiguration
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -89,6 +89,8 @@ Content-Length: 627
   }
 }
 ```
+
+
 
 
 

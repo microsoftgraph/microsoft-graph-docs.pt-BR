@@ -1,16 +1,16 @@
 ---
 title: Criar windowsDefenderAdvancedThreatProtectionConfiguration
 description: Criar um novo objeto windowsDefenderAdvancedThreatProtectionConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 72e3539e42dfc1ddc71252f1dea4ef09fadb1bfd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7aae33c52f16b8c3ed50ce1bf195e26d5944e1b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513833"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462070"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Criar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -103,6 +103,8 @@ Content-Length: 439
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
+
 
 
 

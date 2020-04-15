@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceManagementExchangeConnector
 description: Atualizar as propriedades de um objeto deviceManagementExchangeConnector.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8d71e8ed9713a4666e4f1ffb695578f7c55b0ed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bbffaa83eaddd58e0b196ce1e7191ed53fd97c58
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512549"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43473208"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Atualizar deviceManagementExchangeConnector
 
@@ -111,6 +111,8 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
 
 
 

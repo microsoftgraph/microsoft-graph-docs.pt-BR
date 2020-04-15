@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração ratingIrelandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Irlanda
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a7b37bf9e8cbfd8bbc4fa03db3250ed4ed4eafe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2804fe5510dd7b524342bd3beb10c27d1bdb8cf2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530499"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472799"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enumeração ratingIrelandTelevisionType
 
@@ -24,12 +24,15 @@ Rótulos de classificação de conteúdo de TV na Irlanda
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todos os programas de TV|
-|Bloqueado|1 |Não permitir que qualquer TV mostre conteúdo|
-|geral|2 |A classificação GA é adequada para todos os públicos|
-|children|3 |A classificação CH é adequada para crianças|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|geral|duas|A classificação GA é adequada para todos os públicos|
+|children|3D|A classificação CH é adequada para crianças|
 |youngAdults|4 |A classificação de YA é adequada para a audiência Teenage|
 |parentalSupervision|5 |A classificação de PS convida os pais e os guardiões para considerar o acesso de crianças|
 |completa|6 |A classificação MA é adequada para adultos|
+
+
+
 
 
 

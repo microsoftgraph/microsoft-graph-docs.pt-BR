@@ -1,16 +1,16 @@
 ---
 title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33a3a179c4f1c393d3ab7954b53da113f4f0fa7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5553f8e475d13a96c37ef9170fe302ce29b16f4c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515725"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464338"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -171,6 +171,8 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
+
 
 
 

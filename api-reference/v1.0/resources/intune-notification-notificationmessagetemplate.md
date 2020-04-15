@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso notificationMessageTemplate
 description: Mensagens de notificação são mensagens enviadas para usuários finais considerados não compatíveis com as políticas de conformidade definidas pelo administrador. Os administradores escolhem as notificações e as configuram no Console do administrador do Intune usando a página de criação de política de conformidade, na seção "Ações de não conformidade". Use o objeto notificationMessageTemplate para criar suas próprias notificações personalizadas para os administradores escolherem durante a configuração de ações de não conformidade.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e30a2938e8520b07841ca79141e3fae6d1ba5cd2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdc400a84f51fa11f3d70b28fd21973fd1cf663c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448190"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459622"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Tipo de recurso notificationMessageTemplate
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -39,7 +39,7 @@ Mensagens de notificação são mensagens enviadas para usuários finais conside
 |defaultLocale|Cadeia de caracteres|A localidade padrão para fallback quando a localidade solicitada não está disponível.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|As opções de identidade visual do modelo de mensagem. A identidade visual é definida no Console do administrador do Intune. Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |localizedNotificationMessages|Coleção [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md)|A lista de mensagens localizadas para esse modelo de mensagem de notificação.|
@@ -62,6 +62,9 @@ Veja a seguir uma representação JSON do recurso.
   "brandingOptions": "String"
 }
 ```
+
+
+
 
 
 

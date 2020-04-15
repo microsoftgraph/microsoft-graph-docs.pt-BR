@@ -1,16 +1,16 @@
 ---
 title: Atualizar windowsUniversalAppX
 description: Atualiza as propriedades de um objeto windowsUniversalAppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b684cb53aa514f27391842accea803d409b7d663
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2a79cab44b52a06c73a0bf3ff9e1e0b846c86ea3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464444"
 ---
 # <a name="update-windowsuniversalappx"></a>Atualizar windowsUniversalAppX
 
@@ -172,6 +172,8 @@ Content-Length: 1361
   "identityVersion": "Identity Version value"
 }
 ```
+
+
 
 
 

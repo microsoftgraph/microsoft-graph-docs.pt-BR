@@ -1,16 +1,16 @@
 ---
 title: Atualizar androidCustomConfiguration
 description: Atualiza as propriedades de um objeto androidCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a9c22f05bc3d847fc1db1bd41f77ac0178c6ae8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b40b9872f3ac1b14a9eea245be297d8939963550
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42515333"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474660"
 ---
 # <a name="update-androidcustomconfiguration"></a>Atualizar androidCustomConfiguration
 
@@ -116,6 +116,8 @@ Content-Length: 574
   ]
 }
 ```
+
+
 
 
 

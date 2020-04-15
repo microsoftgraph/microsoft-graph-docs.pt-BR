@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos e para um conjunto especificado de aplicativos em um dispositivo iOS
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6861a30d7afeaa9c238b41d3419767246f9c7bfe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87069d34b6e5469673e7646b687a81e11a3816fd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533211"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468725"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Tipo de recurso iosManagedAppProtection
 
@@ -143,4 +143,7 @@ Veja a seguir uma representação JSON do recurso.
   ],
 }
 -->
+
+
+
 

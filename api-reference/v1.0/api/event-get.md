@@ -1,16 +1,16 @@
 ---
 title: Obter evento
 description: Obtenha as propriedades e relacionamentos do objeto de evento especificado.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c2dd0e9539bba1a92fe3fb38f1e0bff22e55eac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f1476cedfad256abd53e8b2d55bd656e0bb2ce1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371039"
 ---
 # <a name="get-event"></a>Obter evento
 

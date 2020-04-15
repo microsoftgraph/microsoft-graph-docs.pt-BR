@@ -1,16 +1,16 @@
 ---
 title: Excluir iosVppApp
 description: Exclui iosVppApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76d6f3f12c7341ce473ad6d5d566c3aad3e5153f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: acdc87aaad7b1a0e67b379b7990600f9de32bf5b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516508"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469612"
 ---
 # <a name="delete-iosvppapp"></a>Excluir iosVppApp
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

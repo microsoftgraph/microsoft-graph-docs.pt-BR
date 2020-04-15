@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceComplianceUserOverview
 description: Ainda não documentado
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a42c92d29902c0f755380bc3e784efc4863fb61d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9811809d38ea02dffab8cc21e07bffb1d83334dd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530797"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465792"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Tipo de recurso deviceComplianceUserOverview
 
@@ -62,6 +62,9 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
+
+
+
 
 
 

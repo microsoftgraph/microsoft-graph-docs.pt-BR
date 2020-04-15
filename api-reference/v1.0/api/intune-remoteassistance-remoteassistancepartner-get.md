@@ -1,16 +1,16 @@
 ---
 title: Acessar remoteAssistancePartner
 description: Leia as propriedades e as relações do objeto remoteAssistancePartner.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 40b828333808dc2079de3a5a3cd95a0c93a665e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4287a8cda08c4d40a2061636950d75f6b84fdebd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512150"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465872"
 ---
 # <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 
@@ -39,7 +39,7 @@ GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -79,6 +79,8 @@ Content-Length: 346
   }
 }
 ```
+
+
 
 
 

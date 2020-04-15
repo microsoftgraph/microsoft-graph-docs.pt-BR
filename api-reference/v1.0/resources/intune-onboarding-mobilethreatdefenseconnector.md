@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso mobileThreatDefenseConnector
 description: Entidade que representa uma conexão com o parceiro de defesa contra ameaças móveis.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8e67761c3ad30b044d8f114060b4ac778f371f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 602d7bfca8bde4af25c5d0cb59e57db08ca60816
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448050"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459377"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Tipo de recurso mobileThreatDefenseConnector
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -35,10 +35,10 @@ Entidade que representa uma conexão com o parceiro de defesa contra ameaças m�
 |id|String|Ainda não documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Estado do parceiro de sincronização de dados para esta conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|androidEnabled|Boolean|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
-|iosEnabled|Boolean|No iOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
-|androidDeviceBlockedOnMissingPartnerData|Boolean|No Android, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
-|iosDeviceBlockedOnMissingPartnerData|Boolean|No iOS, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
+|androidEnabled|Booliano|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|iosEnabled|Booliano|No iOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|androidDeviceBlockedOnMissingPartnerData|Booliano|No Android, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
+|iosDeviceBlockedOnMissingPartnerData|Booliano|No iOS, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
 |partnerUnsupportedOsVersionBlocked|Boolean|Obter ou definir se dispositivos devem ser bloqueados nas plataformas habilitadas que não atendam aos requisitos mínimos de versão do Parceiro de Sincronização de Dados|
 |partnerUnresponsivenessThresholdInDays|Int32|Obtém ou define dias de tolerância por locatário à falta de resposta para esta integração de parceiro|
 
@@ -67,6 +67,9 @@ Veja a seguir uma representação JSON do recurso.
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
+
+
 
 
 

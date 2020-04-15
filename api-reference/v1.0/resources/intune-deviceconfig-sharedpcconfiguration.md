@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso sharedPCConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso sharedPCConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fd3cbec442f45539a35a06d7c66d9b26872319f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: baef17018f1a035569f797867068967af48c51cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530456"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43472591"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>Tipo de recurso sharedPCConfiguration
 
@@ -101,6 +101,9 @@ Veja a seguir uma representação JSON do recurso.
   "maintenanceStartTime": "String (time of day)"
 }
 ```
+
+
+
 
 
 

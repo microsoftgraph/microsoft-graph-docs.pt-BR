@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso intuneBrand
 description: intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 57db6b18699ef4d563d777aee3c27b2f2696494e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6048e295ba0ca06fe02872aca52fdc32ae686a54
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448057"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459407"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -32,7 +32,7 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |onlineSupportSiteUrl|String|URL do site de assistência técnica de TI da empresa/organização.|
 |onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de assistência técnica de TI da empresa/organização.|
 |themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|Cor de tema principal usado nos aplicativos e no portal da Web do Portal da Empresa.|
-|showLogo|Boolean|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
+|showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do Portal da Empresa que têm um plano de fundo claro atrás do logotipo.|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do Portal da Empresa que têm um plano de fundo escuro atrás do logotipo.|
 |showNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
@@ -80,6 +80,9 @@ Veja a seguir uma representação JSON do recurso.
   "showDisplayNameNextToLogo": true
 }
 ```
+
+
+
 
 
 

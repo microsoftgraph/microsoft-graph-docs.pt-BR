@@ -1,16 +1,16 @@
 ---
 title: Excluir importedWindowsAutopilotDeviceIdentityUpload
 description: Exclui importedWindowsAutopilotDeviceIdentityUpload.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f81d86e3f67989518a434dbbc5464286a6dd2db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 052f76275edcaa0f13e5c114bd32b6f37ce3c3fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42513375"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462900"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentityupload"></a>Excluir importedWindowsAutopilotDeviceIdentityUpload
 
@@ -63,6 +63,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

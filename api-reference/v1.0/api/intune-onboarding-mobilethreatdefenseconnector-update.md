@@ -1,16 +1,16 @@
 ---
 title: Atualizar mobileThreatDefenseConnector
 description: Atualiza as propriedades de um objeto mobileThreatDefenseConnector.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d652e77b62c6020dd83ba9d2088c3bdd26b09a06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40c91ca200b05e1e484aa5af446325acebfab0f7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42512444"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466581"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>Atualizar mobileThreatDefenseConnector
 
@@ -108,6 +108,8 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
+
 
 
 

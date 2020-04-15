@@ -1,16 +1,16 @@
 ---
 title: Get macOSCustomConfiguration
 description: Ler propriedades e relações do objeto macOSCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce5e5d647697b7b50feec70f2953497ede6f3dcf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b97dae2011c1781b7f6e2980c84303b898ae3521
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42514379"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468816"
 ---
 # <a name="get-macoscustomconfiguration"></a>Get macOSCustomConfiguration
 
@@ -39,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -83,6 +83,8 @@ Content-Length: 492
   }
 }
 ```
+
+
 
 
 

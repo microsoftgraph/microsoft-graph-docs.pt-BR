@@ -1,16 +1,16 @@
 ---
 title: androidManagedAppRegistration resource type
 description: Representa os detalhes de sincronização de um aplicativo para Android, com recursos de gerenciamento, para um usuário específico. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83d97dc394ee7422c159bcb98469032a14fc772e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae370308ef0156feac17f8016cb4759b68898a2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532167"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43474144"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration resource type
 
@@ -99,4 +99,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 -->
  
+
+
+
 

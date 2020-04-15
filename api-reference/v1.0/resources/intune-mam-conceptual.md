@@ -1,16 +1,16 @@
 ---
 title: Como proteger dados de aplicativos corporativos com o Microsoft Intune
 description: As políticas de proteção de aplicativos do Microsoft Intune ajudam a proteger os dados da empresa e evitar a perda de dados.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: b9b02ccb2d13d4db44ed235d8f2ac2463a6c6f64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 014376cbed9ccebb9200fdfee0889d5877d87ba0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533215"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468612"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -74,4 +74,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Coleção de domínios como proxy da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Coleção de recursos da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Aplicativo de loja de proteção de informações do Windows](intune-mam-windowsinformationprotectionstoreapp.md)
+
+
+
 
