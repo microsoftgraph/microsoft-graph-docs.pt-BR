@@ -5,33 +5,39 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b6c51a2c3722e3c62691b357f87749f63b968d2b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: bbcc0b99a75a61375bcf68dc20d32c4052d4f885
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082703"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43511166"
 ---
-# <a name="teleconferencedevicevideoquality-resource-type"></a><span data-ttu-id="e10d5-103">tipo de recurso teleconferenceDeviceVideoQuality</span><span class="sxs-lookup"><span data-stu-id="e10d5-103">teleconferenceDeviceVideoQuality resource type</span></span>
+# <a name="teleconferencedevicevideoquality-resource-type"></a><span data-ttu-id="7b167-103">tipo de recurso teleconferenceDeviceVideoQuality</span><span class="sxs-lookup"><span data-stu-id="7b167-103">teleconferenceDeviceVideoQuality resource type</span></span>
 
-<span data-ttu-id="e10d5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e10d5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7b167-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7b167-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e10d5-105">Representa dados de qualidade de vídeo do dispositivo de teleconferência de vídeo.</span><span class="sxs-lookup"><span data-stu-id="e10d5-105">Represents video teleconferencing device video quality data.</span></span>
+<span data-ttu-id="7b167-105">Representa dados de qualidade de vídeo do dispositivo de teleconferência de vídeo.</span><span class="sxs-lookup"><span data-stu-id="7b167-105">Represents video teleconferencing device video quality data.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e10d5-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e10d5-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7b167-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7b167-106">Properties</span></span>
 
-<span data-ttu-id="e10d5-107">O recurso **teleconferenceDeviceVideoQuality** herda as propriedades de [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)e inclui as seguintes propriedades adicionais.</span><span class="sxs-lookup"><span data-stu-id="e10d5-107">The **teleconferenceDeviceVideoQuality** resource inherits the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md), and includes the following additional properties.</span></span>
+<span data-ttu-id="7b167-107">O recurso **teleconferenceDeviceVideoQuality** herda as propriedades de [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md)e inclui as seguintes propriedades adicionais.</span><span class="sxs-lookup"><span data-stu-id="7b167-107">The **teleconferenceDeviceVideoQuality** resource inherits the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md), and includes the following additional properties.</span></span>
 
-| <span data-ttu-id="e10d5-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e10d5-108">Property</span></span>     | <span data-ttu-id="e10d5-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="e10d5-109">Type</span></span>        | <span data-ttu-id="e10d5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e10d5-110">Description</span></span> |
+| <span data-ttu-id="7b167-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7b167-108">Property</span></span>     | <span data-ttu-id="7b167-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="7b167-109">Type</span></span>        | <span data-ttu-id="7b167-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b167-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="e10d5-111">averageInboundBitRate</span><span class="sxs-lookup"><span data-stu-id="e10d5-111">averageInboundBitRate</span></span>|<span data-ttu-id="e10d5-112">Duplo</span><span class="sxs-lookup"><span data-stu-id="e10d5-112">Double</span></span>|<span data-ttu-id="e10d5-113">A taxa média de bits de vídeo de fluxo de entrada por segundo.</span><span class="sxs-lookup"><span data-stu-id="e10d5-113">The average inbound stream video bit rate per second.</span></span>|
-|<span data-ttu-id="e10d5-114">averageInboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="e10d5-114">averageInboundFrameRate</span></span>|<span data-ttu-id="e10d5-115">Duplo</span><span class="sxs-lookup"><span data-stu-id="e10d5-115">Double</span></span>|<span data-ttu-id="e10d5-116">A taxa média de quadros de vídeo de fluxo de entrada por segundo.</span><span class="sxs-lookup"><span data-stu-id="e10d5-116">The average inbound stream video frame rate per second.</span></span>|
-|<span data-ttu-id="e10d5-117">averageOutboundBitRate</span><span class="sxs-lookup"><span data-stu-id="e10d5-117">averageOutboundBitRate</span></span>|<span data-ttu-id="e10d5-118">Duplo</span><span class="sxs-lookup"><span data-stu-id="e10d5-118">Double</span></span>|<span data-ttu-id="e10d5-119">A taxa média de bits de vídeo de fluxo de saída por segundo.</span><span class="sxs-lookup"><span data-stu-id="e10d5-119">The average outbound stream video bit rate per second.</span></span>|
-|<span data-ttu-id="e10d5-120">averageOutboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="e10d5-120">averageOutboundFrameRate</span></span>|<span data-ttu-id="e10d5-121">Duplo</span><span class="sxs-lookup"><span data-stu-id="e10d5-121">Double</span></span>|<span data-ttu-id="e10d5-122">A taxa média de quadros de vídeo de fluxo de saída por segundo.</span><span class="sxs-lookup"><span data-stu-id="e10d5-122">The average outbound stream video frame rate per second.</span></span>|
+|<span data-ttu-id="7b167-111">averageInboundBitRate</span><span class="sxs-lookup"><span data-stu-id="7b167-111">averageInboundBitRate</span></span>|<span data-ttu-id="7b167-112">Duplo</span><span class="sxs-lookup"><span data-stu-id="7b167-112">Double</span></span>|<span data-ttu-id="7b167-113">A taxa média de bits de vídeo de fluxo de entrada por segundo.</span><span class="sxs-lookup"><span data-stu-id="7b167-113">The average inbound stream video bit rate per second.</span></span>|
+|<span data-ttu-id="7b167-114">averageInboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="7b167-114">averageInboundFrameRate</span></span>|<span data-ttu-id="7b167-115">Duplo</span><span class="sxs-lookup"><span data-stu-id="7b167-115">Double</span></span>|<span data-ttu-id="7b167-116">A taxa média de quadros de vídeo de fluxo de entrada por segundo.</span><span class="sxs-lookup"><span data-stu-id="7b167-116">The average inbound stream video frame rate per second.</span></span>|
+|<span data-ttu-id="7b167-117">averageOutboundBitRate</span><span class="sxs-lookup"><span data-stu-id="7b167-117">averageOutboundBitRate</span></span>|<span data-ttu-id="7b167-118">Duplo</span><span class="sxs-lookup"><span data-stu-id="7b167-118">Double</span></span>|<span data-ttu-id="7b167-119">A taxa média de bits de vídeo de fluxo de saída por segundo.</span><span class="sxs-lookup"><span data-stu-id="7b167-119">The average outbound stream video bit rate per second.</span></span>|
+|<span data-ttu-id="7b167-120">averageOutboundFrameRate</span><span class="sxs-lookup"><span data-stu-id="7b167-120">averageOutboundFrameRate</span></span>|<span data-ttu-id="7b167-121">Duplo</span><span class="sxs-lookup"><span data-stu-id="7b167-121">Double</span></span>|<span data-ttu-id="7b167-122">A taxa média de quadros de vídeo de fluxo de saída por segundo.</span><span class="sxs-lookup"><span data-stu-id="7b167-122">The average outbound stream video frame rate per second.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e10d5-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e10d5-123">JSON representation</span></span>
+### <a name="derived-types"></a><span data-ttu-id="7b167-123">Tipos derivados</span><span class="sxs-lookup"><span data-stu-id="7b167-123">Derived types</span></span>
 
-<span data-ttu-id="e10d5-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e10d5-124">The following is a JSON representation of the resource.</span></span>
+| <span data-ttu-id="7b167-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="7b167-124">Type</span></span>                                                 | <span data-ttu-id="7b167-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b167-125">Description</span></span>                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [<span data-ttu-id="7b167-126">teleconferenceDeviceScreenSharingQuality</span><span class="sxs-lookup"><span data-stu-id="7b167-126">teleconferenceDeviceScreenSharingQuality</span></span>](teleconferencedevicescreensharingquality.md)    | <span data-ttu-id="7b167-127">Dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo.</span><span class="sxs-lookup"><span data-stu-id="7b167-127">Video teleconferencing device screen-sharing quality data.</span></span> |
+
+## <a name="json-representation"></a><span data-ttu-id="7b167-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7b167-128">JSON representation</span></span>
+
+<span data-ttu-id="7b167-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7b167-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
