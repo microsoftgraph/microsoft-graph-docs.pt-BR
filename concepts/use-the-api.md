@@ -4,12 +4,12 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0be1d19f9968d5da7d4c3f7ff84a76397dfa2115
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e374f124824705cc88aa7f991d99f2c99e7caa9a
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448526"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510497"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -109,6 +109,33 @@ Com exceção das opções de consulta OData, alguns métodos exigem valores de 
 GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:00.0000000&endDateTime=2019-09-01T17:00:00.0000000
 ```
 
+## <a name="tools-for-interacting-with-microsoft-graph"></a>Ferramentas para interagir com o Microsoft Graph
+
+### <a name="graph-explorer"></a>Explorador do Graph
+
+O Explorador do Graph é uma ferramenta baseada na Web que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode acessar o Explorador do Graph em: `https://developer.microsoft.com/graph/graph-explorer`.
+
+Você pode acessar os dados de demonstração sem fazer logon, ou pode fazer logon em um locatário de sua preferência. Use as etapas a seguir para criar a solicitação:
+
+1. Selecione o método HTTP.
+2. Selecione a versão da API que você deseja usar.
+3. Digite a consulta na caixa de texto da solicitação.
+4. Selecione **Executar consulta**. 
+
+O exemplo a seguir mostra uma solicitação que retorna informações sobre usuários no locatário da demonstração:
+
+![Captura de tela do Explorador do Graph com uma solicitação de usuário GET realçada](./images/graph-explorer.png)
+
+Os exemplos de consultas são fornecidos no Explorador do Graph para permitir que você execute solicitações comuns mais rapidamente. Para ver os exemplos disponíveis, selecione **mostrar mais exemplos**. Selecione **Ativado** para o conjunto de exemplos que deseja ver e, depois de fechar a janela de seleção, você deverá ver uma lista de solicitações predefinidas.
+
+Um código de status e uma mensagem são exibidos depois que uma solicitação é enviada, e a resposta é exibida na guia **Visualização de resposta**.
+
+### <a name="postman"></a>Postman
+
+O Postman é uma ferramenta que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode baixar o Postman em: `https://www.getpostman.com/`. Para interagir com o Microsoft Graph no Postman, use a coleção do Microsoft Graph.
+
+Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](https://docs.microsoft.comgraph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+
 ## <a name="next-steps"></a>Próximas etapas
 
-Você está pronto para começar a trabalhar com o Microsoft Graph. Para saber mais, vá para o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) para experimentar algumas solicitações, tente o [Início Rápido](https://developer.microsoft.com/graph/quick-start) ou comece a usar um dos nossos [SDKs e exemplos de código](https://developer.microsoft.com/graph/code-samples-and-sdks).
+Você está pronto para começar a trabalhar com o Microsoft Graph. Experimente o [Início rápido](https://developer.microsoft.com/graph/quick-start), ou comece a usar um de nossos [SDKs e exemplos de código](https://developer.microsoft.com/graph/code-samples-and-sdks).
