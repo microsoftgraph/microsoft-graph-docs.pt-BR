@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 175370b3c00ebaef0db85912c032898e2dacb5e7
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: bdfb4951151876d79dede974654747d25a54c833
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144300"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510879"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Componente de seletor de pessoas no Microsoft Graph Toolkit
 
@@ -26,7 +26,7 @@ O exemplo a seguir mostra `mgt-people-picker` o componente. Comece a pesquisar u
 
 ## <a name="properties"></a>Propriedades
 
-Por padrão, o `mgt-people-picker` componente busca eventos do `/me/people` ponto de extremidade. Use os atributos a seguir para alterar esse comportamento.
+Por padrão, o `mgt-people-picker` componente busca pessoas do `/me/people` ponto de extremidade. Use os atributos a seguir para alterar esse comportamento.
 
 | Atributo | Propriedade | Descrição                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,6 +65,14 @@ Você pode preencher dados de pessoas selecionados executando um dos seguintes p
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
+## <a name="events"></a>Eventos
+
+Os eventos a seguir são acionados do componente.
+
+| Evento | Descrição |
+| --- | --- |
+| `selectionChanged` | O usuário adicionou ou removeu uma pessoa da lista de pessoas selecionadas/escolhidas.|
+
 ## <a name="css-custom-properties"></a>Propriedades personalizadas de CSS
 
 O `mgt-people-picker` componente define as seguintes propriedades personalizadas de CSS.
@@ -87,7 +95,7 @@ mgt-people-picker {
 | erro | nulo: não há dados | O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | sem dados | nulo: não há dados | Um modelo alternativo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | selecionado-pessoa | Person: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| person | Person: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
+| vendedor | Person: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 

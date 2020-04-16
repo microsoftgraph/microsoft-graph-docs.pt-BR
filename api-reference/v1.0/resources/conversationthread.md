@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4e49e8617125758f606c42c47de3d9d13495666f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8ac7efb08e498b45247119e995aae4c5b1fcb8e
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531752"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43511040"
 ---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
 
-Namespace: Microsoft. Graph A conversationThread é uma coleção de [postagens](post.md).
+Namespace: microsoft.graph
+
+Um conversationThread é uma coleção de [postagens](post.md).
 
 A coleção de destinatários da última postagem são os destinatários agregados do thread inteiro. Um thread pode ter uma coleção crescente de destinatários. Um novo thread é criado quando um destinatário é removido do thread.
 
@@ -26,7 +28,7 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |[Criar thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
 |[Obter conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
-|[Excluir](../api/conversationthread-delete.md) | Nenhum |Exclua um objeto conversationThread. |
+|[Delete](../api/conversationthread-delete.md) | Nenhum |Exclua um objeto conversationThread. |
 |[Responder](../api/conversationthread-reply.md)|Nenhuma|Responda a este thread criando uma nova entidade Post.|
 |[Listar Postagens](../api/conversationthread-list-posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 

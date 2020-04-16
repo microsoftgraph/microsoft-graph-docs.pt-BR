@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: faf9c5c7aca7da0e54f9d7b50899a5340b142a1b
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: bd0603c220e0bd90f1f8ace2889efe5124175153
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082704"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43511173"
 ---
 # <a name="teleconferencedevicemediaquality-resource-type"></a>tipo de recurso teleconferenceDeviceMediaQuality
 
@@ -43,6 +43,14 @@ Representa dados de qualidade de mídia do dispositivo de teleconferência de v�
 |outboundPackets|Int64|O número total dos pacotes de saída.|
 |remoteIPAddress|String|O endereço IP remoto da sessão de mídia.|
 |remotePort|Int32|A porta de mídia remota.|
+
+### <a name="derived-types"></a>Tipos derivados
+
+| Tipo                                                 | Descrição                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [teleconferenceDeviceAudioQuality](teleconferencedeviceaudioquality.md)    | Dados de qualidade de áudio do dispositivo de teleconferência de vídeo.                          |
+| [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md)    | Dados de qualidade de vídeo do dispositivo de teleconferência de vídeo.                          |
+| [teleconferenceDeviceScreenSharingQuality](teleconferencedevicescreensharingquality.md)    | Dados de qualidade de compartilhamento de tela do dispositivo de teleconferência de vídeo. |
 
 ## <a name="json-representation"></a>Representação JSON
 
