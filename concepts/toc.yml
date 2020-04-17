@@ -357,6 +357,8 @@ items:
             href: auth-cloudsolutionprovider.md
           - name: Acesso à caixa de correio limitado
             href: auth-limit-mailbox-access.md
+          - name: Solucionar erros de autorização
+            href: resolve-auth-errors.md
       - name: Usar a API
         items:
           - name: Visão geral
