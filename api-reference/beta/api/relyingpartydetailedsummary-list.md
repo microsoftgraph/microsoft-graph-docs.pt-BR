@@ -1,0 +1,131 @@
+---
+title: Listar relyingPartyDetailedSummary
+description: Recupere uma lista de objetos relyingPartyDetailedSummary.
+localization_priority: Normal
+author: davidmu1
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: cc7b05e012507cc1e6e36cf3ee189f6b63100d4d
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543447"
+---
+# <a name="list-relyingpartydetailedsummary"></a><span data-ttu-id="272ed-103">Listar relyingPartyDetailedSummary</span><span class="sxs-lookup"><span data-stu-id="272ed-103">List relyingPartyDetailedSummary</span></span>
+
+<span data-ttu-id="272ed-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="272ed-104">Namespace: microsoft.graph</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="272ed-105">Recupere uma lista de objetos **relyingPartyDetailedSummary** .</span><span class="sxs-lookup"><span data-stu-id="272ed-105">Retrieve a list of **relyingPartyDetailedSummary** objects.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="272ed-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="272ed-106">Permissions</span></span>
+
+<span data-ttu-id="272ed-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="272ed-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="272ed-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="272ed-109">Permission type</span></span>                        | <span data-ttu-id="272ed-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="272ed-110">Permissions (from least to most privileged)</span></span> |
+|:---------------------------------------|:--------------------------------------------|
+| <span data-ttu-id="272ed-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="272ed-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="272ed-112">Report. Read. All</span><span class="sxs-lookup"><span data-stu-id="272ed-112">Report.Read.All</span></span> |
+| <span data-ttu-id="272ed-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="272ed-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="272ed-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="272ed-114">Not supported.</span></span> |
+| <span data-ttu-id="272ed-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="272ed-115">Application</span></span>                            | <span data-ttu-id="272ed-116">Report. Read. All</span><span class="sxs-lookup"><span data-stu-id="272ed-116">Report.Read.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="272ed-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="272ed-117">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /reports/getRelyingPartyDetailedSummary
+```
+## <a name="function-parameters"></a><span data-ttu-id="272ed-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="272ed-118">Function parameters</span></span>
+
+| <span data-ttu-id="272ed-119">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="272ed-119">Parameter</span></span> | <span data-ttu-id="272ed-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="272ed-120">Description</span></span> |
+|:----------|:----------|
+| <span data-ttu-id="272ed-121">ponto</span><span class="sxs-lookup"><span data-stu-id="272ed-121">period</span></span> | <span data-ttu-id="272ed-122">Os valores com suporte são: D1, D7, D30.</span><span class="sxs-lookup"><span data-stu-id="272ed-122">The supported values are: D1, D7, D30.</span></span> <span data-ttu-id="272ed-123">Eles seguem o formato Dn, em que n representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="272ed-123">These values follow the format Dn where n represents the number of days over which the report is aggregated.</span></span>|
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="272ed-124">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="272ed-124">Optional query parameters</span></span>
+
+<span data-ttu-id="272ed-125">Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="272ed-125">This method supports some of the OData query parameters to help customize the response.</span></span> 
+
+- <span data-ttu-id="272ed-126">Você pode usar o `$filter` parâmetro para filtrar por RelyingPartyId, migrationStatus e outros atributos.</span><span class="sxs-lookup"><span data-stu-id="272ed-126">You can use the `$filter` parameter to filter by relyingPartyId, migrationStatus and other attributes.</span></span> <span data-ttu-id="272ed-127">Por exemplo, $filter = relyingPartyId EQ ' identifier '.</span><span class="sxs-lookup"><span data-stu-id="272ed-127">For example, $filter= relyingPartyId eq 'identifier'.</span></span>
+- <span data-ttu-id="272ed-128">Você pode usar `$orderby`, `$top`e `$skip` parâmetros de consulta em qualquer solicitação get.</span><span class="sxs-lookup"><span data-stu-id="272ed-128">You can use `$orderby`, `$top`, and `$skip` query parameters in any GET request.</span></span>
+
+<span data-ttu-id="272ed-129">Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="272ed-129">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+
+
+## <a name="request-headers"></a><span data-ttu-id="272ed-130">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="272ed-130">Request headers</span></span>
+
+| <span data-ttu-id="272ed-131">Nome</span><span class="sxs-lookup"><span data-stu-id="272ed-131">Name</span></span>      |<span data-ttu-id="272ed-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="272ed-132">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="272ed-133">Autorização</span><span class="sxs-lookup"><span data-stu-id="272ed-133">Authorization</span></span> | <span data-ttu-id="272ed-134">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="272ed-134">Bearer {code}.</span></span> <span data-ttu-id="272ed-135">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="272ed-135">Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="272ed-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="272ed-136">Request body</span></span>
+
+<span data-ttu-id="272ed-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="272ed-137">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="272ed-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="272ed-138">Response</span></span>
+
+<span data-ttu-id="272ed-139">Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="272ed-139">If successful, this method returns a `200 OK` response code and the requested [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="272ed-140">Exemplos</span><span class="sxs-lookup"><span data-stu-id="272ed-140">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="272ed-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="272ed-141">Request</span></span>
+
+<span data-ttu-id="272ed-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="272ed-142">The following is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_relyingpartydetailedsummary"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(period='period_value')
+```
+
+### <a name="response"></a><span data-ttu-id="272ed-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="272ed-143">Response</span></span>
+
+<span data-ttu-id="272ed-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="272ed-144">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="272ed-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="272ed-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.relyingPartyDetailedSummary"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "1fec2821-6c43-4919-9560-ce36c820faa5",
+  "relyingPartyId": "https://contosoorg-dev-ed.my.contoso.com",
+  "serviceId": "287ed092-c182-4748-99a9-9ef3b5a0a0f9",
+  "relyingPartyName": "contoso",
+  "successfulSignInCount": 90,
+  "failedSignInCount": 10,
+  "totalSignInCount": 100,
+  "signInSuccessRate":90.0,
+  "uniqueUserCount": 10,
+  "migrationStatus": "ready",
+  "replyUrls": [
+      "https://contosoorg-dev-ed.my.contoso.com"
+  ],
+  "migrationValidationDetails": [
+      {
+          "name": "AdditionalWSFedEndpointCheckResult",
+          "value": "{\"result\": 0, \"message\": \"No additional WS-Federation endpoints were found.\"}"
+      }
+  ]
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get relyingPartyDetailedSummary",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
