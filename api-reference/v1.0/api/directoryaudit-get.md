@@ -2,15 +2,15 @@
 title: Obter directoryAudit
 description: Descreve o método Get do recurso directoryAudit (entidade) da API do Microsoft Graph.
 localization_priority: Normal
-author: cloudhandler
+author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8bf36db27c6ba21bc8799977baa881bf1b8c6fee
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 41d6ccf79a7f32082b81d3b9088cc7598bef4cf8
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179455"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543398"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 

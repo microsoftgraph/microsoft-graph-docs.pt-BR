@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso directoryObject
 description: Descreve o recurso directoryAudit (entidade) da API do Microsoft Graph (REST), que ajuda as atividades de auditoria de diretório (locatário) (versão beta).
-author: cloudhandler
+author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 723c9089ed19e6d69375bd815b4233594be286a2
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: e7e3c3a72834d3dc44ad274f35c03454b17494c9
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181969"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543405"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 
