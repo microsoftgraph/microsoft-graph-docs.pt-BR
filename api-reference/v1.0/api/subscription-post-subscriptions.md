@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 488527475534faa92eb223be19e1bf247a9b11fd
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 05914a1014e9d635da8d38927e207a5c17823c93
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229588"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543426"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -126,7 +126,7 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 |Grupos|grupos|
 |Conversas|groups('*{id}*')/conversations|
 |Unidades|me/drive/root|
-|Listar|site/{site-id}/lists/{list-id}|
+|Listar|sites/{site-id}/lists/{list-id}|
 |Alerta de segurança|security/alerts?$filter=status eq 'New'|
 
 ##### <a name="response"></a>Resposta
