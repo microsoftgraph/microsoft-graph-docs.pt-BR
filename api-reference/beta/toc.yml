@@ -289,7 +289,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Correio
+            - name: Email
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -393,7 +393,7 @@
                   href: api/profile-get.md
                 - name: Excluir o perfil do usuário
                   href: api/profile-delete.md
-            - name: Trabalho em equipe
+            - name: Teamwork
               items:
                 - name: Aplicativo instalado
                   href: resources/teamsappinstallation.md
@@ -901,7 +901,7 @@
                 - name: Grupo de roteamento de áudio
                   href: resources/audioroutinggroup.md
                   items:
-                    - name: Create
+                    - name: Criar
                       href: api/call-post-audioroutinggroups.md
                     - name: Obter
                       href: api/audioroutinggroup-get.md
@@ -914,7 +914,7 @@
             - name: Reunião online
               href: resources/onlinemeeting.md
               items:
-                - name: Create
+                - name: Criar
                   href: api/application-post-onlinemeetings.md
                 - name: Obter
                   href: api/onlinemeeting-get.md
@@ -981,7 +981,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: Obter
                   href: api/bookingbusiness-get.md
@@ -1022,7 +1022,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-customers.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-customers.md
                 - name: Obter
                   href: api/bookingcustomer-get.md
@@ -1035,7 +1035,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-services.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-services.md
                 - name: Obter
                   href: api/bookingservice-get.md
@@ -1048,7 +1048,7 @@
               items:
                 - name: Listar
                   href: api/bookingbusiness-list-staffmembers.md
-                - name: Create
+                - name: Criar
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: Obter
                   href: api/bookingstaffmember-get.md
@@ -8649,7 +8649,7 @@
               items:
                 - name: Listar
                   href: api/administrativeunit-list.md
-                - name: Create
+                - name: Criar
                   href: api/administrativeunit-post-administrativeunits.md
                 - name: Obter
                   href: api/administrativeunit-get.md
@@ -8759,7 +8759,7 @@
                   href: api/certificatebasedauthconfiguration-list.md
                 - name: Obter
                   href: api/certificatebasedauthconfiguration-get.md
-                - name: Create
+                - name: Criar
                   href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                 - name: Excluir
                   href: api/certificatebasedauthconfiguration-delete.md
@@ -8771,7 +8771,7 @@
                       href: resources/conditionalaccesspolicy.md
                     - name: Listar
                       href: api/conditionalaccessroot-list-policies.md
-                    - name: Create
+                    - name: Criar
                       href: api/conditionalaccessroot-post-policies.md
                     - name: Obter
                       href: api/conditionalaccesspolicy-get.md
@@ -9013,14 +9013,14 @@
                   items:
                     - name: Listar
                       href: api/accesspackageresourcerequest-list.md
-                    - name: Create
+                    - name: Criar
                       href: api/accesspackageresourcerequest-post.md
                 - name: Escopo de função de recurso de pacote de acesso
                   href: resources/accesspackageresourcerolescope.md
                   items:
                     - name: Listar
                       href: api/accesspackage-list-accesspackageresourcerolescopes.md
-                    - name: Create
+                    - name: Criar
                       href: api/accesspackage-post-accesspackageresourcerolescopes.md
             - name: Política de distribuição de recursos
               href: resources/featurerolloutpolicy.md
@@ -9029,7 +9029,7 @@
                   href: api/directory-list-featurerolloutpolicies.md
                 - name: Obter
                   href: api/featurerolloutpolicy-get.md
-                - name: Create
+                - name: Criar
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Atualizar
                   href: api/featurerolloutpolicy-update.md
@@ -9151,12 +9151,16 @@
             - name: Concessão de permissão oauth2
               href: resources/oauth2permissiongrant.md
               items:
-                - name: Obter concessão de permissão oauth2
+                - name: Listar
+                  href: api/oauth2permissiongrant-list.md
+                - name: Obter
                   href: api/oauth2permissiongrant-get.md
-                - name: Atualizar concessão de permissão oauth2
+                - name: Atualizar
                   href: api/oauth2permissiongrant-update.md
-                - name: Excluir concessão de permissão oauth2
+                - name: Excluir
                   href: api/oauth2permissiongrant-delete.md
+                - name: Obter intervalo
+                  href: api/oauth2permissiongrant-delta.md
             - name: Publicação local
               href: resources/onpremisespublishingprofile-root.md
               items:
@@ -9178,7 +9182,7 @@
                       href: api/onpremisesagentgroup-list.md
                     - name: Obter
                       href: api/onpremisesagentgroup-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/onpremisesagentgroup-post.md
                     - name: Atualizar
                       href: api/onpremisesagentgroup-update.md
@@ -9198,7 +9202,7 @@
                       href: api/publishedresource-list.md
                     - name: Obter
                       href: api/publishedresource-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/publishedresource-post.md
                     - name: Atualizar
                       href: api/publishedresource-update.md
@@ -9634,7 +9638,7 @@
                   href: api/identityuserflow-get.md
                 - name: Excluir
                   href: api/identityuserflow-delete.md
-        - name: Correio
+        - name: Email
           displayName: 'Outlook, Outlook mail'
           items:
             - name: Visão Geral
@@ -10207,7 +10211,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Obter uma propriedade de vários valores
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Impressão universal
+        - name: Impressão Universal
           items:
             - name: Imprimir
               href: resources/print.md
@@ -10326,6 +10330,13 @@
           items:
             - name: Relatórios de identidade e acesso
               items:
+                - name: Atividade do aplicativo AD FS
+                  items:
+                    - name: Resumo detalhado da terceira parte confiável
+                      href: resources/relyingpartydetailedsummary.md
+                      items:
+                        - name: Listar
+                          href: api/relyingpartydetailedsummary-list.md
                 - name: Entrada do aplicativo
                   items:
                     - name: Resumo de entrada
@@ -10836,7 +10847,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão Geral
