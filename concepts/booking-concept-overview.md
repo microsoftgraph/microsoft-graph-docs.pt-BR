@@ -1,20 +1,20 @@
 ---
 title: Visão geral da API do Microsoft Bookings (versão prévia)
-description: O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer pequena empresa que forneça serviços com base em agendamentos, como oficinas mecânicas, salões de cabeleireiros e empresas de advocacia, podem beneficiar com o gerenciamento de seus agendamentos para liberar tempo para tarefas mais importantes para expandir seus negócios. O Microsoft Bookings está disponível para empresas que possuem uma assinatura do Office 365 Business Premium.
+description: O Microsoft Bookings fornece aplicativos online e móveis que tornam simples e eficiente o agendamento de compromissos para a organização, seus usuários e clientes.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4eba867db964ae4fddf861e60866d1d97f7891e9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 3c244c84178770fb0d30cad9e9f09f514989f476
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969309"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543335"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 
-O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer pequena empresa que forneça serviços com base em agendamentos, como oficinas mecânicas, salões de cabeleireiros e empresas de advocacia, podem beneficiar com o gerenciamento de seus agendamentos para liberar tempo para tarefas mais importantes para expandir seus negócios. O Microsoft Bookings está disponível para empresas que possuem uma assinatura do Office 365 Business Premium.
+O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer organização que forneça serviços mediante agendamento, como empresas de grande porte, oficinas de automóveis, salões de beleza e escritórios de advocacia, pode se beneficiar com o gerenciamento de seus agendamentos, e assim liberar tempo para a tarefa mais importante de expandir os negócios. O Microsoft Bookings está disponível para organizações empresariais e empresas que possuem uma assinatura do Microsoft 365 Business Standard.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Por que se integrar ao Microsoft Bookings usando o Microsoft Graph?
 

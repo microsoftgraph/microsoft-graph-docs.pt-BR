@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 890c98f674428ae4ef1d51e3386c381dbb2cda34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7bb66b09d5baaf571ab7f6b27a0a190c7d36ead0
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471583"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543279"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -79,13 +79,15 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |:---|:---|:---|
 | Adição | Beta | Adicionado [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta)e [appScope](/graph/api/resources/appscope?view=graph-rest-beta) e as seguintes ações:<br><li>[Listar UnifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[Obter unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[Criar unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[Atualizar unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[Excluir unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>. |
 | Adição | Beta | O suporte para [consultas delta para administrativeUnits](/graph/api/administrativeunit-delta?view=graph-rest-beta) foi adicionado.|
+| Adição | beta | Suporte adicionado para [consultas delta para oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionado [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta)e [appScope](/graph/api/resources/appscope?view=graph-rest-beta) e as seguintes ações:<br><li>[Listar UnifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[Obter unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[Criar unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[Atualizar unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[Excluir unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>. |
 | Adição | v1.0 | Os recursos de política digitados serão agrupados sob o segmento de URL [políticas](/graph/api/resources/policy-overview?view=graph-rest-1.0). Esta atualização adiciona cinco recursos de política digitados: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0) </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0) e </li> <li>[tokenIssuancePolicies](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0)</li>|
 | Adição | v1.0 | Foi adicionado o tipo de recurso [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0), que controla a saída automática de sessões da Web após um período de inatividade, para aplicativos que oferecem suporte à funcionalidade de tempo limite baseado em atividade.|
 | Adição | v1.0 |O tipo de recurso [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0) controla o mapeamento de declarações para os protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect, para tokens emitidos para um aplicativo específico.|
 | Adição | v1.0 | O tipo de recurso [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0) controla o comportamento de autenticação do Azure Active Directory para usuários federados, em particular as restrições de aceleração automática e autenticação de usuário em domínios federados. |
 | Adição | v1.0 | O tipo de recurso [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0) controla a duração da vida útil dos tokens de acesso usados ​​para acessar recursos protegidos.|
-| Adição | v1.0 | O [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0) tipo de recurso que controla as características de tokens SAML emitidos pelo Azure AD. Isso permite que você defina o algoritmo de assinatura, opções de assinatura ou versão do token SAML a ser usada para emitir o token SAML.
+| Adição | v1.0 | O [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0) tipo de recurso que controla as características de tokens SAML emitidos pelo Azure AD. Isso permite que você defina o algoritmo de assinatura, opções de assinatura ou versão do token SAML a ser usada para emitir o token SAML.|
+| Adição | beta | Novo tipo de recurso [relyingPartyDetailedSummary](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) adicionado. Esse tipo de recurso oferece suporte à [listagem](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) de terceiras partes confiáveis configuradas nos Serviços de Federação do Active Directory (AD FS).|
 
 ### <a name="reports"></a>Relatórios
 
@@ -432,7 +434,7 @@ A presença na versão beta foi adicionada e APIs de comunicações na nuvem par
 |:---|:---|:---|
 |Adição|beta|Foram adicionadas novas entidades:<br/>[deviceShellScript](/graph/api/resources/intune-devices-deviceshellscript?view=graph-rest-beta)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[deviceManagementSettingFileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingfileconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingProfileConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingprofileconstraint?view=graph-rest-beta)<br/>[redirectSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-redirectsinglesignonextension?view=graph-rest-beta)<br/>[retireScheduledManagedDevice](/graph/api/resources/intune-deviceconfig-retirescheduledmanageddevice?view=graph-rest-beta)<br/>|
-|Adição|beta|Foram adicionados novos tipos de enumeração:<br/>[defenderRealtimeScanDirection](/graph/api/resources/intune-deviceconfig-defenderrealtimescandirection?view=graph-rest-beta)<br/>[managedAppDataIngestionLocation](/graph/api/resources/intune-mam-managedappdataingestionlocation?view=graph-rest-beta)<br/>[managedDeviceArchitecture](/graph/api/resources/intune-devices-manageddevicearchitecture?view=graph-rest-beta)<br/>[mdmSupportedState](/graph/api/resources/intune-gpanalyticsservice-mdmsupportedstate?view=graph-rest-beta)<br/>[scheduledRetireState](/graph/api/resources/intune-deviceconfig-scheduledretirestate?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[defenderRealtimeScanDirection](/graph/api/resources/intune-deviceconfig-defenderrealtimescandirection?view=graph-rest-beta)<br/>[managedAppDataIngestionLocation](/graph/api/resources/intune-mam-managedappdataingestionlocation?view=graph-rest-beta)<br/>[managedDeviceArchitecture](/graph/api/resources/intune-devices-manageddevicearchitecture?view=graph-rest-beta)<br/>[mdmSupportedState](/graph/api/resources/intune-gpanalyticsservice-mdmsupportedstate?view=graph-rest-beta)<br/>[scheduledRetireState](/graph/api/resources/intune-deviceconfig-scheduledretirestate?view=graph-rest-beta)<br/>|
 |Adição|beta|A ação [getDevicesScheduledToRetire](o:getDevicesScheduledToRetire:Collection(microsoft.graph.deviceCompliancePolicy)) foi adicionada à coleção [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) |
 |Adição|beta|A ação [setScheduledRetireState](o:setScheduledRetireState:Collection(microsoft.graph.deviceCompliancePolicy)) foi adicionada à coleção [deviceCompliancePolicy](/graph/api/resources/intune-shared-devicecompliancepolicy?view=graph-rest-beta) |
 |Adição|beta|A ação [wipe](/graph/api/intune-devices-manageddevice-wipe) foi adicionada ao [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
@@ -661,7 +663,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 | Adição | Beta | Adicionadas as propriedades **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** ao recurso [schedule](/graph/api/resources/schedule?view=graph-rest-beta).|
 | Adição        | Beta          | Outra rota adicionada para recuperar um [driveItem] usando uma ID de canal e de equipe, [obter driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
-## <a name="october-2019"></a>Outubro de 2019
+### <a name="october-2019"></a>Outubro de 2019
 
 ### <a name="calendar"></a>Calendário
 
