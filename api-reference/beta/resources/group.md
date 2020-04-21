@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4d9a9cc75214bc3dcbcc765d3a1797eb266ff26b
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f539a22f7e3841c2a6251cc83c2a1e1960f3fdfc
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124907"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581685"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -113,6 +113,7 @@ Esse recurso permite:
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao grupo. <br><br>Retornado apenas em $select. Somente leitura.|
 |autoSubscribeNewMembers|Boolean|Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |classificação|String|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Os valores válidos para esta propriedade são definidos criando um valor de [configuração](directorysetting.md) ClassificationList com base na [definição de modelo](directorysettingtemplate.md).<br><br>Retornado por padrão.|
+|createdByAppId|Cadeia de caracteres|ID do aplicativo usado para criar o grupo. Pode ser nulo para alguns grupos. <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
 |createdDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
 |deletedDateTime|DateTimeOffset| Para alguns objetos do Azure Active Directory (usuário, grupo, aplicativo), se o objeto for excluído, ele será excluído primeiro logicamente e essa propriedade será atualizada com a data e a hora em que o objeto foi excluído. Caso contrário, essa propriedade é nula. Se o objeto for restaurado, essa propriedade será atualizada para nula. |
 |description|String|Uma descrição opcional para o grupo. <br><br>Retornado por padrão.|
@@ -236,6 +237,7 @@ Veja a seguir uma representação JSON do recurso
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "description": "string",
