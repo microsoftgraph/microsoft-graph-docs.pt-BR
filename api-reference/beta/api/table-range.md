@@ -1,20 +1,20 @@
 ---
-title: 'Table: Range'
+title: 'workbooktable: Range'
 description: Obtém o objeto de intervalo associado a toda a tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5ae2fcf801eb163e2bbc3d1fd346ac074ff482dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e227769aca8f3a0773bdc446ea9016e8c4653ff
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452796"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581657"
 ---
-# <a name="table-range"></a>Table: Range
+# <a name="workbooktable-range"></a>workbooktable: Range
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,15 +24,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /workbook/tables/{id|name}/Range
+GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -45,12 +45,12 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -58,7 +58,7 @@ Este é um exemplo da solicitação.
   "name": "table_range"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/Range
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-range-csharp-snippets.md)]
@@ -75,8 +75,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 ---
 
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

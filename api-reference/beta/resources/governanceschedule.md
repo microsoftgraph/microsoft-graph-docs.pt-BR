@@ -14,7 +14,7 @@ ms.locfileid: "42497213"
 ---
 # <a name="governanceschedule-resource-type"></a>tipo de recurso governanceSchedule
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Representa o agendamento de um [governanceRoleAssignmentRequest](../resources/go
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|A hora de término da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. *Observação: se o valor for `null`, ele indica uma atribuição permanente.*|
-|type|String|O tipo de agendamento de atribuição de função. O `Once` só é suportado por enquanto.
+|type|Cadeia de caracteres|O tipo de agendamento de atribuição de função. O `Once` só é suportado por enquanto.
 |duration|Duração|A duração de uma atribuição de função. É no formato de um TimeSpan.|
 
 ## <a name="json-representation"></a>Representação JSON
