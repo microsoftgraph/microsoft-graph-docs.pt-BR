@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API do Microsoft Bookings (versão prévia)
 description: O Microsoft Bookings fornece aplicativos online e móveis que tornam simples e eficiente o agendamento de compromissos para a organização, seus usuários e clientes.
-author: angelgolfer-ms
+author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3c244c84178770fb0d30cad9e9f09f514989f476
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: bb1e6137a43b5a0a5ee5ec796bacb1315a395304
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543335"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581678"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 

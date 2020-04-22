@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 104e5c95b27f555e174c2f1669b758bf69fdda6d
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: de4b983592978ca05b2e2db8fe1eccd0697147fb
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892448"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43718616"
 ---
 # <a name="update-externalitem"></a>Atualizar externalitem
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo                                  | Descrição               |
 |:-----------|:--------------------------------------|:--------------------------|
 | ACL        | coleção [ACL](../resources/acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
-| content    | Cadeia de caracteres                                | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. |
+| conteúdo    | [externalItemContent](../resources/externalitemcontent.md) | Uma representação de texto sem formatação ou HTML do conteúdo do item. O texto nessa propriedade é indexado de texto completo. |
 | properties | Objeto                                | Um recipiente de propriedades com as propriedades do item. As propriedades devem estar em conformidade com o [esquema](../resources/schema.md) definido para o [externalConnection](../resources/externalconnection.md). |
 
 ### <a name="updating-the-acl-collection"></a>Atualizando a coleção ACL
@@ -149,7 +149,10 @@ Content-type: application/json
     "priority": 1,
     "assignee": "john@contoso.com"
   },
-  "content": "Textual content of the file"
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
 }
 ```
 
