@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4a6b9eee7f7289a4f24ba88ca7a5ba36983018d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9bf059fb728a34dbaefb813dc9a4b177fd9e0834
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387185"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43720906"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Obter conditionalAccessPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Policy.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -172,11 +172,12 @@ Content-type: application/json
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
             ]
         },
-        "deviceStates": {
-            "includeStates": [
+        "deviceStates": null,
+        "devices": {
+            "includeDeviceStates": [
                 "All"
             ],
-            "excludeStates": [
+            "excludeDeviceStates": [
                 "Compliant"
             ]
         }
