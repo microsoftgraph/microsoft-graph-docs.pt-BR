@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3889f23353b46c852547501c59d8a94653c67b75
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: f1837551b5ee863769277a3ed023afa21f3c7c92
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986145"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581636"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -145,5 +145,6 @@ Os limites são expressos como solicitações por segundo (rps).
 | POSTAR 1:1/mensagem de chat do grupo | 2 rps | 20 rps |
 
 É possível emitir, no máximo, 4 solicitações por segundo por aplicativo em uma determinada equipe ou canal.
+Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um determinado canal.
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).

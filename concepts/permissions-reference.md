@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 002221d8520fb2e379588e71bb7eccfb43475708
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 4f060f07dd2abf56dd63222f416ce6f2c3a053d3
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160300"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581671"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -701,7 +701,7 @@ No caso de Permissões de aplicativo, há algumas limitações para APIs com sup
 
 Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-Para definir o atributo **preferredDataLocation** de um grupo do Office 365, um aplicativo precisa de permissões de Diretório. Quando os usuários em um ambiente multigeográfico criam um grupo do Office 365, o valor**preferredDataLocation** para o grupo é definido automaticamente como sendo igual ao do usuário. Para saber mais sobre o local de dados preferencial dos grupos, confira [Criar um grupo do Office 365 com uma PDL específica](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
+Para definir o atributo **preferredDataLocation** de um grupo do Office 365, um aplicativo precisa da permissão Directory.ReadWrite.All. Quando os usuários em um ambiente multigeográfico criam um grupo do Office 365, o valor**preferredDataLocation** para o grupo é definido automaticamente como sendo igual ao do usuário. Para saber mais sobre o local de dados preferencial dos grupos, confira [Criar um grupo do Office 365 com uma PDL específica](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
 
 As permissões de grupo são usadas para controlar o acesso aos recursos e APIs do [Microsoft Teams](/graph/api/resources/teams-api-overview). Não há suporte para as contas pessoais da Microsoft.
 
@@ -1272,8 +1272,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Presence.Read_ | Ler as informações de presença do usuário | Permite que o aplicativo leia as informações de presença em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Sim |
-| _Presence.Read.All_ |   Ler as informações de presença de todos os usuários em sua organização | Permite que o aplicativo leia as informações de presença de todos os usuário do diretório em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Sim |
+| _Presence.Read_ | Ler as informações de presença do usuário | Permite que o aplicativo leia as informações de presença em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Não |
+| _Presence.Read.All_ |   Ler as informações de presença de todos os usuários em sua organização | Permite que o aplicativo leia as informações de presença de todos os usuário do diretório em nome do usuário conectado. As informações de presença incluem atividade, disponibilidade, nota de status, calendário de mensagens de ausência temporária, fuso horário e local. | Não |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1765,16 +1765,16 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 
 ---
 
-## <a name="user-authentication-method-permissions-private-preview"></a>Permissões do método de autenticação do usuário ([visualização privada](#permissions-availability-status))
+## <a name="user-authentication-method-permissions-preview"></a>Permissões do método de autenticação do usuário ([visualização](#permissions-availability-status))
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
-|_UserAuthenticationMethod.Read_ (visualização privada)        |Ler os próprios métodos de autenticação       |Permitir que o aplicativo leia os métodos de autenticação do usuário conectado, incluindo números de telefone e configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas do usuário conectado, entrar ou usar métodos de autenticação do usuário conectado. |Sim|Não|
-|_UserAuthenticationMethod.Read.All_ (visualização privada)    |Ler os métodos de autenticação dos usuários    |Permite que o aplicativo leia os métodos de autenticação de todos os usuários em sua organização aos quais o usuário têm acesso. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|Não|
-|_UserAuthenticationMethod.ReadWrite_ (visualização privada)   |Gerenciar os próprios métodos de autenticação     |Permite que o aplicativo leia e grave os métodos de autenticação do usuário conectado, incluindo números de telefone e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas do usuário conectado, entrar ou usar métodos de autenticação do usuário conectado. |Sim|Não|
-|_UserAuthenticationMethod.ReadWrite.All_ (visualização privada)|Gerenciar os métodos de autenticação dos usuários  |Permite que o aplicativo leia e grave os métodos de autenticação de todos os usuários em sua organização aos quais o usuário conectado têm acesso. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|Não|
+|_UserAuthenticationMethod.Read_ (visualização)        |Ler os próprios métodos de autenticação       |Permitir que o aplicativo leia os métodos de autenticação do usuário conectado, incluindo números de telefone e configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas do usuário conectado, entrar ou usar métodos de autenticação do usuário conectado. |Sim|Não|
+|_UserAuthenticationMethod.Read.All_ (visualização)    |Ler os métodos de autenticação dos usuários    |Permite que o aplicativo leia os métodos de autenticação de todos os usuários em sua organização aos quais o usuário têm acesso. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|Não|
+|_UserAuthenticationMethod.ReadWrite_ (visualização)   |Gerenciar os próprios métodos de autenticação     |Permite que o aplicativo leia e grave os métodos de autenticação do usuário conectado, incluindo números de telefone e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas do usuário conectado, entrar ou usar métodos de autenticação do usuário conectado. |Sim|Não|
+|_UserAuthenticationMethod.ReadWrite.All_ (visualização)|Gerenciar os métodos de autenticação dos usuários  |Permite que o aplicativo leia e grave os métodos de autenticação de todos os usuários em sua organização aos quais o usuário conectado têm acesso. Os métodos de autenticação incluem coisas como o número de telefone do usuário e as configurações do aplicativo Authenticator. Isso não permite que o aplicativo veja informações secretas, como senhas, entrar ou usar métodos de autenticação. |Sim|Não|
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 

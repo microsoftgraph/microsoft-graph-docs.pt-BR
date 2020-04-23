@@ -1,25 +1,22 @@
 ---
-title: Obter objetos directory a partir de uma lista de ids
-description: A opção selecionar não está disponível para todos os tipos de arquivo.
+title: 'directoryObject: getByIds'
+description: Retorna os objetos de diretório especificados em uma lista de IDs.
 author: keylimesoda
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8ff81002804a445ab102b3df0bac2b57332fec2b
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7ed4066709e351d8500cbd9e40ba47e69fd1420d
+ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181927"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43581692"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a>Obter objetos directory a partir de uma lista de ids
+# <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
 Namespace: microsoft.graph
 
-Retorna os objetos de diretório especificados em uma lista de IDs.
-
->[!NOTE]
->Os objetos de diretório retornados são os objetos completos que contêm todas as propriedades. A opção `$select` não está disponível para esta operação.
+Retorne os objetos de diretório especificados em uma lista de IDs.
 
 >[!NOTE]
 >Essa API tem um [problema conhecido](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Nem todos os objetos de diretório retornados são os objetos completos que contêm todas as propriedades.
@@ -27,7 +24,7 @@ Retorna os objetos de diretório especificados em uma lista de IDs.
 Alguns usos comuns dessa função são:
 
 * Resolva as IDs retornadas por funções (que retornam coleções de IDs) como [getMemberObjects](directoryobject-getmemberobjects.md) ou [getMemberGroups](directoryobject-getmembergroups.md) para seus objetos de diretório de suporte.
-* Resolver ids que persistem em um repositório externo pelo aplicativo para seus objetos de diretório de suporte.
+* Resolva IDs que persistem em um repositório externo pelo aplicativo para seus objetos de diretório de suporte.
 
 ## <a name="permissions"></a>Permissões
 
@@ -55,7 +52,7 @@ POST /directoryObjects/getByIds
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | string | application/json  |
+| Content-type  | string | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -63,16 +60,16 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|ids|Coleção de cadeias de caracteres| Uma coleção de IDs para a qual retornar objetos. Você pode especificar até 1000 IDs. |
+|ids|Coleção de cadeias de caracteres| Uma coleção de IDs para a qual retornar objetos.  As IDs são GUIDs, representadas como cadeias de caracteres.  Você pode especificar até 1000 IDs. |
 |tipos|Coleção de cadeias de caracteres| Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar. Se não estiver especificado, o padrão será [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto deriva do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) pode ser especificado na coleção. Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-v1.0), [grupo](/graph/api/resources/group?view=graph-rest-v1.0), [dispositivo](/graph/api/resources/device?view=graph-rest-v1.0) e assim por diante. Para procurar referências para uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/pt-BR/cloud-solution-provider) especifique [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0). Se não for especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0),  que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/pt-BR/cloud-solution-provider). Os valores não diferenciam maiúsculas de minúsculas.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção de cadeias de caracteres no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -109,9 +106,9 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
