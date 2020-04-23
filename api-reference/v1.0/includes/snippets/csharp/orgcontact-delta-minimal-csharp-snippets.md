@@ -1,17 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5a8f1541e098af8fd033fe294794122f0e2c3107
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 2e79da0abb76b07ab22b2da38b50124733300e1d
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082116"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43770910"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var orgContact = await graphClient.Contacts["delta"]
+var delta = await graphClient.Contacts
+    .Delta()
     .Request()
     .Header("Prefer","return=minimal")
     .Select( e => new {

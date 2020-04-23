@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ea6a0dafb64aab774d78c98e4d60e82f3a93894e
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: aa297e12793bb6d9e58e59bf7268a533942484b2
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35733138"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43770898"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var type = "view";
 var scope = "anonymous";
 
 await graphClient.Me.Drive.Items["{item-id}"]
-    .CreateLink(type,scope)
+    .CreateLink(type,scope,null,null,null)
     .Request()
     .PostAsync();
 
