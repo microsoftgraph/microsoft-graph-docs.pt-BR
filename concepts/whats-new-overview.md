@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 0742ac1f35e10cfbed09ca164d4cb2af6a1c8484
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 448c9b0063a04cf0ddaa375092a1dd9ceff6694a
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229364"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557847"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -28,10 +28,28 @@ Confira os destaques das novidades do Microsoft Graph e como você pode [compart
   - Crie ou atualize um [evento](/graph/api/resources/event?view=graph-rest-1.0) que esteja disponível online e forneça detalhes para que os participantes possam ingressar na reunião online. 
   - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl**.
 
-## <a name="april-2020-new-in-preview-only"></a>Março de 2020: Novo somente para visualização
+### <a name="files"></a>Arquivos
+- [Check-out](/graph/api/driveitem-checkout?view=graph-rest-1.0) ou [check-in](/graph/api/driveitem-checkin?view=graph-rest-1.0) de um arquivo para o OneDrive para gerenciar a atualização do arquivo e disponibilizar atualizações para outras pessoas quando as atualizações estiverem prontas.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-Para gerenciar funções e atribuir acesso a recursos nos provedores de controle de acesso baseado em função (RBAC), como o Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta). O recurso **unifiedRoleAssignmentMultiple** permite definir uma única função em uma matriz de escopos e atribuir a função a várias entidades (como usuários). 
+- Para gerenciar funções e atribuir acesso a recursos nos provedores de controle de acesso baseado em função (RBAC), como o Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0). O recurso **unifiedRoleAssignmentMultiple** permite definir uma única função em uma matriz de escopos e atribuir a função a várias entidades (como usuários).
+- Acessar tipos específicos de [políticas de uma organização](/graph/api/resources/policy-overview?view=graph-rest-1.0) usando o `/policies`segmento URL e especificando o tipo de política. Por exemplo, uma organização pode forçar uma política a entrar automaticamente no usuário de uma sessão da Web após um período de inatividade, confira as operações CRUD para instâncias de [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0). Essa é um [alteração significativa](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-1.0/) para que seja mais fácil descobrir todas as políticas, agrupando todas as políticas digitadas sob o `/policies`segmento. Acesse outras políticas digitadas de uma abordagem semelhante: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0)e [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-1.0). 
+
+## <a name="april-2020-new-in-preview-only"></a>Abril de 2020: novo somente para visualização
+
+### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+Atualizações de [abril](changelog.md#april-2020) do Intune.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- [Controlar alterações](/graph/api/administrativeunit-delta?view=graph-rest-beta) para [unidades administrativas](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+- [Controlar alterações](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) para [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta).
+- [Gerenciar](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) os [métodos de autenticação](/graph/api/resources/authenticationmethod?view=graph-rest-beta) de um usuário que incluem a [senha](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta) ou [telefone](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta). Por exemplo, [redefinir uma senha de usuário](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta), [obter o status da redefinição](/graph/api/authenticationoperation-get?view=graph-rest-beta) ou [adicionar um número de telefone](/graph/api/authentication-post-phonemethods?view=graph-rest-beta) para um usuário para autenticação de SMS ou chamada de voz, se a política estiver habilitada para o usuário.
+
+### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
+[Listar](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [participantes confiáveis](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) configurados nos Serviços de Federação do Active Directory.
+
+### <a name="reports--office-365-usage-reports"></a>Relatórios | Relatórios de uso do Office 365
+Exibir dados de **Reunião Criada** e de **Reunião Interagida** nos relatórios CSV para [contagens de atividades de email](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [contagens de atividades de email do usuário](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) e [detalhes de atividades de email do usuário](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
 
 
 ## <a name="march-2020-new-and-generally-available"></a>Março de 2020: Novo e disponível para o público geral

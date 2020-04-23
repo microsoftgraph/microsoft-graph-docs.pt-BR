@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite que você se integre com o melhor dos se
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bdcd7f7b4b73b92eb41b44b08c301f401aaa814f
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 5bb8a7a1771dd0ecf4f2ef282e44e54d9c813117
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062627"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557840"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -83,8 +83,8 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-|Dispositivos e aplicativos | Intune | Registra e configura dispositivos e gerencia aplicativos móveis em sua organização. | [Visão geral de dispositivos e aplicativos do Intune](intune-concept-overview.md) |
-| Impressão universal (visualização) | Impressão universal | A impressão universal é uma infraestrutura de impressão baseada na nuvem do Microsoft 365 que permite uma experiência de impressão simples, rica e segura aos usuários e reduz o tempo e o esforço de TI. | [Visão geral da API de impressão universal](universal-print-concept-overview.md) |
+| Impressão na nuvem (visualização) | Impressão Universal | A impressão universal é uma infraestrutura de impressão baseada na nuvem do Microsoft 365 que permite uma experiência de impressão simples, rica e segura aos usuários e reduz o tempo e o esforço de TI. | [Impressão na nuvem usando a API de Impressão Universal](universal-print-concept-overview.md) |
+|Gerenciamento corporativo de dispositivos e aplicativos | Intune | Registra e configura dispositivos e gerencia aplicativos móveis em sua organização. | [Visão geral de dispositivos e aplicativos do Intune](intune-concept-overview.md) |
 
 
 ## <a name="security"></a>Segurança
@@ -126,7 +126,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Reserva de clientes (prévia) | Microsoft Bookings | Tem como alvo pequenas empresas para permitir que seus clientes reservem serviços diretamente na Web ou no Facebook. Permite que os operadores de negócios gerenciem as preferências, os serviços e os preços dos clientes, as listas de funcionários e os agendamentos e outras informações comerciais comuns. | [Visão geral da API do Microsoft Bookings](booking-concept-overview.md) |
+| Reserva de clientes (prévia) | Microsoft Bookings | Tem como alvo organizações para permitir que seus usuários e clientes reservem serviços diretamente na Web ou no Facebook. Permite que os provedores de negócios gerenciem preferências, serviços e preços do cliente, listas e agendas de funcionários e outras informações empresariais comuns. | [Visão geral da API do Microsoft Bookings](booking-concept-overview.md) |
 | Finanças (visualização) | Dynamics 365 Business Central | Permite o gerenciamento de dados financeiros automação e proteção da rede de fornecedores, gerenciamento de vendas e melhor atendimento ao cliente, gerenciamento de projetos e otimização das operações com a solução de gerenciamento de negócios tudo em um.| [Visão geral da API Business Central](dynamics-business-central-concept-overview.md) |
 
 

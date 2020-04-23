@@ -5,18 +5,20 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ff75cf4b3ff1f48a895c4be98b3c8fb8576128c
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: f2890f1158819c58378ec89782be053506140774
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229518"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557875"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
 Namespace: microsoft.graph
 
-Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira [Noções básicas de como registrar um aplicativo no Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md). 
+Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira [Noções básicas de como registrar um aplicativo no Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md).
+
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -27,6 +29,7 @@ Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no
 |[Obter aplicativo](../api/application-get.md) | [application](application.md) |Ler as propriedades e as relações de um objeto de aplicativo.|
 |[Atualizar aplicativo](../api/application-update.md) | [application](application.md) |Atualize o objeto application. |
 |[Excluir aplicativo](../api/application-delete.md) | Nenhum |Exclua o objeto application. |
+|[Obter delta](../api/application-delta.md)|[aplicativo](application.md)|Obtenha os aplicativos recentemente criados, atualizados ou excluídos sem ter que executar uma leitura completa de toda a coleção de recursos.|
 |[Listar aplicativos excluídos](../api/directory-deleteditems-list.md) | Conjunto [directoryObject](directoryobject.md) | Recuperar uma lista de aplicativos excluídos recentemente. |
 |[Obter o aplicativo excluído](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Recuperar as propriedades de um aplicativo excluído recentemente. |
 |[Excluir aplicativo permanentemente](../api/directory-deleteditems-delete.md) | Nenhum | Excluir permanentemente um aplicativo. |

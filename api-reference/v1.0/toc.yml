@@ -281,7 +281,7 @@
                       href: api/usersettings-get.md
                     - name: Atualizar configurações
                       href: api/usersettings-update.md
-            - name: Correio
+            - name: Email
               href: resources/message.md
               items:
                 - name: Criar pasta de email
@@ -2377,7 +2377,7 @@
                       href: api/intune-notification-localizednotificationmessage-list.md
                     - name: Obter
                       href: api/intune-notification-localizednotificationmessage-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-notification-localizednotificationmessage-create.md
                     - name: Excluir
                       href: api/intune-notification-localizednotificationmessage-delete.md
@@ -2392,7 +2392,7 @@
                       href: api/intune-devices-manageddevice-list.md
                     - name: Obter
                       href: api/intune-devices-manageddevice-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-devices-manageddevice-create.md
                     - name: Excluir
                       href: api/intune-devices-manageddevice-delete.md
@@ -2454,7 +2454,7 @@
                       href: api/intune-notification-notificationmessagetemplate-list.md
                     - name: Obter
                       href: api/intune-notification-notificationmessagetemplate-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-notification-notificationmessagetemplate-create.md
                     - name: Excluir
                       href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -2473,7 +2473,7 @@
                       href: api/intune-remoteassistance-remoteassistancepartner-list.md
                     - name: Obter
                       href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-remoteassistance-remoteassistancepartner-create.md
                     - name: Excluir
                       href: api/intune-remoteassistance-remoteassistancepartner-delete.md
@@ -2508,7 +2508,7 @@
                       href: api/intune-mam-androidmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-androidmanagedappprotection-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-mam-androidmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-androidmanagedappprotection-delete.md
@@ -2534,7 +2534,7 @@
                       href: api/intune-mam-defaultmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-defaultmanagedappprotection-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-mam-defaultmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -2547,7 +2547,7 @@
                       href: api/intune-mam-iosmanagedappprotection-list.md
                     - name: Obter
                       href: api/intune-mam-iosmanagedappprotection-get.md
-                    - name: Create
+                    - name: Criar
                       href: api/intune-mam-iosmanagedappprotection-create.md
                     - name: Excluir
                       href: api/intune-mam-iosmanagedappprotection-delete.md
@@ -3315,6 +3315,8 @@
                   href: api/application-update.md
                 - name: Excluir aplicativo
                   href: api/application-delete.md
+                - name: Obter intervalo
+                  href: api/application-delta.md
                 - name: Listar aplicativos excluídos
                   href: api/directory-deleteditems-list.md
                 - name: Obter o aplicativo excluído
@@ -4363,7 +4365,7 @@
                   href: api/plannerprogresstaskboardtaskformat-get.md
                 - name: Atualizar progresso do formato de quadro de tarefas
                   href: api/plannerprogresstaskboardtaskformat-update.md
-        - name: Trabalho em equipe
+        - name: Teamwork
           displayName: Microsoft Teams
           items:
             - name: Visão geral

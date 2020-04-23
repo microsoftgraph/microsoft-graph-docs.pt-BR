@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 59c3418c2f3596264f4e6029c926c51f5d37169b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 47d28c4bced21ad182acc9c04452f7172f5b821b
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471576"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557882"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -104,7 +104,7 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 
 | **Coleção de recursos**                                        | **API**                                                                                                                                                                                |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Aplicativos (visualização)                                         | Função [delta](/graph/api/application-delta) do recurso [application](/graph/api/resources/application) (visualização)                     |
+| Aplicativos                                         | Função [delta](/graph/api/application-delta) do recurso [aplicativo](/graph/api/resources/application)                     |
 | Unidades administrativas (visualização)                                         | função [delta](/graph/api/administrativeunit-delta) do recurso [administrativeUnit](/graph/api/resources/administrativeunit) (visualização)                     |
 | Mensagens de chat em um canal (visualização)                            | função [delta](/graph/api/chatmessage-delta) do recurso [chatMessage](/graph/api/resources/chatmessage) |
 | Classes (pré-visualização)                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass) (visualização)                     |
@@ -117,6 +117,7 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) do recurso [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                     |
 | Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta?view=graph-rest-1.0) do recurso [mensagem](/graph/api/resources/message?view=graph-rest-1.0)                                              |
 | Contatos organizacionais | função [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) do recurso [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) |
+| OAuth2PermissionGrants (visualização) | Função [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) do recurso [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) (visualização) |
 | Pastas de contatos pessoais                                       | função [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) do recurso [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
 | Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0)    
 | Itens do Planner\*\* (pré-visualização)                                    | função [delta](/graph/api/planneruser-list-delta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser) (visualização)|                                         |

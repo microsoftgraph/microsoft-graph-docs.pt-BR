@@ -5,16 +5,18 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a82a3e9132ba01d9643fe8a6ec712a8cec1c4631
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: c56839b9df70c73104841702931d21331e4d43f7
+ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125264"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "43557854"
 ---
 # <a name="list-conversations"></a>Listar conversas
 
-Namespace: Microsoft. Graph recupere a lista de [conversas](../resources/conversation.md) desse grupo.
+Namespace: microsoft.graph
+
+Recupere a lista de [conversas](../resources/conversation.md) desse grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

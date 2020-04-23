@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 6a62de57a5fe18438807f817f67a17bcf0a731dd
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e673e03ea0750fbdbb6c289ceff114b4f5ea1a71
+ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200303"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43543174"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -86,11 +86,11 @@ A versão beta oferece uma solução alternativa, na qual é possível usar a pr
 
 ### <a name="additional-notifications-for-users"></a>Notificações adicionais para usuários
 
-[As assinaturas](/graph/api/resources/subscription) para alterações de **usuário ** com **ChangeType** definidas como **atualizadas** também receberão notificações de **ChangeType**: **atualizadas** na criaçã e na exclusão do usuário.
+As [assinaturas](/graph/api/resources/subscription) de alterações para o **usuário** com o **changeType** definido como **atualizado** também receberão notificações de **changeType**: **atualizado** na criação do usuário e exclusão reversível do usuário.
 
 ### <a name="additional-notifications-for-groups"></a>Notificações adicionais para grupos
 
-As [assinaturas](/graph/api/resources/subscription) de alterações de **grupo** com **changeType** definidas como **atualizado** também receberão notificações de **ChangeType**: **atualizado** em criação e exclusão de grupos.
+As [assinaturas](/graph/api/resources/subscription) de alterações no **grupo** com o **changeType** definido como **atualizado** também receberão notificações **changeType**: **atualizado** na criação do grupo e exclusão reversível do grupo.
 
 ## <a name="cloud-communications"></a>Comunicações na nuvem 
 
@@ -316,10 +316,12 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 
 ## <a name="teamwork-microsoft-teams"></a>Trabalho em equipe (Microsoft Teams)
 
-### <a name="get-teams-and-post-teams-are-not-supported"></a>Não há suporte para GET /teams e POST /teams
+### <a name="get-teams-is-not-supported"></a>GET /teams não tem suporte
 
-Confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0) para obter uma lista de equipes.
-Confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0) para criar equipes.
+Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
+
+### <a name="post-teams-is-only-available-in-beta"></a>POST /teams está disponível apenas na versão beta
+Para criar equipes na versão v1.0, confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Equipes ausentes em listas todas as equipes
 
