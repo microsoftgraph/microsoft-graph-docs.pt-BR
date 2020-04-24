@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7e227769aca8f3a0773bdc446ea9016e8c4653ff
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 4eca16f51df83f1cd7c54776dfea7554cff7c382
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581657"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805766"
 ---
 # <a name="workbooktable-range"></a>workbooktable: Range
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
@@ -57,7 +57,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "table_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/Range
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: a44cac259e9be653ca0e7b21c81b6c72224268b1
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 8aa9312bf8b7e8f9a2cec049b8275d4ce7a04012
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895482"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806847"
 ---
 # <a name="printershare-resource-type"></a>tipo de recurso printerShare
 
@@ -24,10 +24,16 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar printerShares](../api/print-list-printershares.md) | coleção [printerShare](printershare.md) | Obtenha uma lista de compartilhamentos de impressora no locatário. |
-| [Obter printerShare](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um objeto printerShare. |
-| [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Atualizar um objeto printerShare. |
+| [List](../api/print-list-printershares.md) | coleção [printerShare](printershare.md) | Obtenha uma lista de compartilhamentos de impressora no locatário. |
+| [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um objeto **printerShare** . |
+| [Atualização](../api/printershare-update.md) | [printerShare](printershare.md) | Atualizar um objeto **printerShare** . |
 | [Delete](../api/printershare-delete.md) | Nenhum | Descompartilhar uma impressora. |
+| [Listar allowedUsers](../api/printershare-list-allowedusers.md) | coleção [UserIdentity](useridentity.md) | Recupere uma lista de usuários que receberam acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
+| [Adicionar allowedUser](../api/printershare-post-allowedusers.md) | Nenhum | Conceda ao usuário especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado. |
+| [Remover allowedUser](../api/printershare-delete-alloweduser.md) | Nenhum | Revoga o acesso ao compartilhamento de impressora do usuário especificado. |
+| [Listar allowedGroups](../api/printershare-list-allowedgroups.md) | coleção [Identity](identity.md) | Recupere uma lista de grupos aos quais foi concedido acesso para enviar trabalhos de impressão ao compartilhamento de impressora associado. |
+| [Adicionar allowedGroup](../api/printershare-post-allowedgroups.md) | Nenhum | Conceda ao grupo especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado. |
+| [Remover allowedGroup](../api/printershare-delete-allowedgroup.md) | Nenhum | Revoga o acesso ao compartilhamento de impressora do grupo especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -36,10 +42,12 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 |name|String|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando o compartilhamento da impressora foi criado. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |impressora|[impressora](printer.md)|A impressora à qual esse compartilhamento de impressora está relacionado. |
+|allowedUsers|coleção [UserIdentity](useridentity.md)|Os usuários que têm acesso à impressão usando a impressora.|
+|allowedGroups|[identity](identity.md)|Os grupos cujos usuários têm acesso para imprimir usando a impressora.|
 
 ## <a name="json-representation"></a>Representação JSON
 

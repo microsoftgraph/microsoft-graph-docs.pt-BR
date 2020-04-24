@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 072351ebc95d8610bc069055aacb0b193e1ca626
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 3eba71074da995f635b89e011b138b6563671309
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218602"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805953"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar o servicePrincipalName
 
@@ -59,7 +59,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |publisherName|String|O nome de exibição do locatário no qual o aplicativo associado está especificado.|
 |replyUrls|Cadeia de Caracteres|As URLs às quais os tokens de usuário são enviados para entrar com aplicativo associado ou os URIs de redirecionamento aos quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|Cadeia de Caracteres|Os URIs que identificam o aplicativo associado. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não nulos, o operador **any** é obrigatório para expressões de filtro em Propriedades de vários valores; para obter mais informações, consulte [supported queries, Filters, and paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|servicePrincipalNames|Cadeia de Caracteres|Os URIs que identificam o aplicativo associado. Para obter mais informações, consulte [Application Objects and Service principal Objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).                            **Observações**: não anulável. O operador **any** é obrigatório para expressões de filtro em Propriedades de valores múltiplos; para obter mais informações, consulte [supported queries, Filters, and paging Options](https://docs.microsoft.com/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-supported-queries-filters-and-paging-options).            |
 |tags|Cadeia de Caracteres|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta

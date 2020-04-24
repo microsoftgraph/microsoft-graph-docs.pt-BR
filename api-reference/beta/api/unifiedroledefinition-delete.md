@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf4461c4de9b8fb3880e051ee01d1c2e5bcf9a06
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 6f2eab11e3683bd997bb2fa34999904865677e05
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218952"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805937"
 ---
 # <a name="delete-unifiedroledefinition"></a>Excluir unifiedRoleDefinition
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

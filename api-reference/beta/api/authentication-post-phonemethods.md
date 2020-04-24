@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 985c0719e393f7a7eb637949cec10a239b433682
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: 3f4979c9f1910a7092223d982189178844af5eba
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557755"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805700"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões que atuam em si (de menos para mais privilégios) | Permissões que atuam em outros (de menos para mais privilégios)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All | UserAuthenticationMethod. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All | UserAuthenticationMethod. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
 Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
@@ -63,7 +63,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [phone
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato\<"+\> \<ramal\>\>de\<código de país x", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.|
-|PhoneType|String|Os valores possíveis são `mobile`: `alternateMobile`,, `office`e.|
+|PhoneType|Cadeia de Caracteres|Os valores possíveis são `mobile`: `alternateMobile`,, `office`e.|
 
 ## <a name="response"></a>Resposta
 
@@ -74,6 +74,8 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_phoneauthenticationmethod_from_authentication"
@@ -88,6 +90,20 @@ Content-type: application/json
   "phoneType": "mobile",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-phoneauthenticationmethod-from-authentication-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-phoneauthenticationmethod-from-authentication-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-phoneauthenticationmethod-from-authentication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

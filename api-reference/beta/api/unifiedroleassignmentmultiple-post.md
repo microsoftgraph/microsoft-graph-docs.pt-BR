@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 61cb184bfb08d90fba6fdcaa879d3b6c38d8e58e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 35f1063e36a5ada065ec7d5ac91e91e5d57db79a
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218966"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806366"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Criar unifiedRoleAssignmentMultiple
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegada (conta corporativa ou de estudante) | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application | RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory |
+| Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Application | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

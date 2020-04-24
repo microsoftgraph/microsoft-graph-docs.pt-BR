@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e115135bedecfe4b055e028d5c19902a068c8a53
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: e1497528e759a2fb5556aed3e9b936b1c9797ee0
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618894"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43805656"
 ---
 # <a name="externalitem-resource-type"></a>tipo de recurso externalItem
 
@@ -35,7 +35,7 @@ Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da
 | Propriedade   | Tipo                     | Descrição                          |
 |:-----------|:-------------------------|:-------------------------------------|
 | ACL        | coleção [ACL](acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. Obrigatório. |
-| content    | Cadeia de caracteres                   | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. Opcional. |
+| conteúdo    | [externalItemContent](externalitemcontent.md) | Uma representação de texto sem formatação ou HTML do conteúdo do item. O texto nessa propriedade é indexado de texto completo. Opcional. |
 | id         | String                   | ID exclusiva fornecida pelo desenvolvedor do item dentro do [externalConnection](externalconnection.md)que contém o. Deve ser alfanumérico e um máximo de 128 caracteres. Obrigatório. |
 | properties | Objeto                   | Um recipiente de propriedades com as propriedades do item. As propriedades devem estar em conformidade com o [esquema](schema.md) definido para o [externalConnection](externalconnection.md). Obrigatório. |
 
@@ -60,7 +60,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "acl": [{"@odata.type": "microsoft.graph.acl"}],
-  "content": "String",
+  "content": {"@odata.type": "microsoft.graph.externalItemContent"},
   "id": "String (identifier)",
   "properties": "Object"
 }
