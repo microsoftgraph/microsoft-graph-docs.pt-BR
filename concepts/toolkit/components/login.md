@@ -3,53 +3,53 @@ title: Componente de logon no kit de ferramentas do Microsoft Graph
 description: Um componente de logon é um botão e um controle de submenu para facilitar a autenticação da plataforma de identidade da Microsoft.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 5ef2856f6cd86e9fe35523d6cf8f6ac9174860a8
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: b269ddda5c4c71517e77a7ed038daeeb0d920403
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144307"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812552"
 ---
-# <a name="login-component-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="280de-103">Componente de logon no kit de ferramentas do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="280de-103">Login component in the Microsoft Graph Toolkit</span></span>
+# <a name="login-component-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="b70a0-103">Componente de logon no kit de ferramentas do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="b70a0-103">Login component in the Microsoft Graph Toolkit</span></span>
 
-<span data-ttu-id="280de-104">Um componente de logon é um botão e um controle de submenu para facilitar a autenticação da plataforma de identidade da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="280de-104">A Login component is a button and flyout control to facilitate Microsoft identity platform authentication.</span></span> <span data-ttu-id="280de-105">Ele fornece dois Estados:</span><span class="sxs-lookup"><span data-stu-id="280de-105">It provides two states:</span></span>
-* <span data-ttu-id="280de-106">Quando o usuário não está conectado, o controle é um botão simples para iniciar o processo de entrada.</span><span class="sxs-lookup"><span data-stu-id="280de-106">When user is not signed in, the control is a simple button to initiate the sign in process.</span></span>
-* <span data-ttu-id="280de-107">Quando o usuário está conectado, o controle exibe o nome de usuário conectado atual, a imagem de perfil e o email.</span><span class="sxs-lookup"><span data-stu-id="280de-107">When user is signed in, the control displays the current signed in user name, profile image, and email.</span></span> <span data-ttu-id="280de-108">Quando clicado, um submenu é aberto com um comando para sair.</span><span class="sxs-lookup"><span data-stu-id="280de-108">When clicked, a flyout is opened with a command to sign out.</span></span>
+<span data-ttu-id="b70a0-104">Um componente de logon é um botão e um controle de submenu para facilitar a autenticação da plataforma de identidade da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b70a0-104">A Login component is a button and flyout control to facilitate Microsoft identity platform authentication.</span></span> <span data-ttu-id="b70a0-105">Ele fornece dois Estados:</span><span class="sxs-lookup"><span data-stu-id="b70a0-105">It provides two states:</span></span>
+* <span data-ttu-id="b70a0-106">Quando o usuário não está conectado, o controle é um botão simples para iniciar o processo de entrada.</span><span class="sxs-lookup"><span data-stu-id="b70a0-106">When user is not signed in, the control is a simple button to initiate the sign in process.</span></span>
+* <span data-ttu-id="b70a0-107">Quando o usuário está conectado, o controle exibe o nome de usuário conectado atual, a imagem de perfil e o email.</span><span class="sxs-lookup"><span data-stu-id="b70a0-107">When user is signed in, the control displays the current signed in user name, profile image, and email.</span></span> <span data-ttu-id="b70a0-108">Quando clicado, um submenu é aberto com um comando para sair.</span><span class="sxs-lookup"><span data-stu-id="b70a0-108">When clicked, a flyout is opened with a command to sign out.</span></span>
 
-## <a name="example"></a><span data-ttu-id="280de-109">Exemplo</span><span class="sxs-lookup"><span data-stu-id="280de-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b70a0-109">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b70a0-109">Example</span></span>
 
-<span data-ttu-id="280de-110">O exemplo a seguir mostra `mgt-login` o componente com um usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="280de-110">The following example shows the `mgt-login` component with a signed-in user.</span></span> 
+<span data-ttu-id="b70a0-110">O exemplo a seguir mostra `mgt-login` o componente com um usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="b70a0-110">The following example shows the `mgt-login` component with a signed-in user.</span></span> 
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
 
-[<span data-ttu-id="280de-111">Abra este exemplo em gerenciamento de. dev</span><span class="sxs-lookup"><span data-stu-id="280de-111">Open this example in mgt.dev</span></span>](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
+[<span data-ttu-id="b70a0-111">Abra este exemplo em gerenciamento de. dev</span><span class="sxs-lookup"><span data-stu-id="b70a0-111">Open this example in mgt.dev</span></span>](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
-## <a name="using-the-control-without-an-authentication-provider"></a><span data-ttu-id="280de-112">Usando o controle sem um provedor de autenticação</span><span class="sxs-lookup"><span data-stu-id="280de-112">Using the control without an authentication provider</span></span>
+## <a name="using-the-control-without-an-authentication-provider"></a><span data-ttu-id="b70a0-112">Usando o controle sem um provedor de autenticação</span><span class="sxs-lookup"><span data-stu-id="b70a0-112">Using the control without an authentication provider</span></span>
 
-<span data-ttu-id="280de-113">O componente funciona com um provedor e o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="280de-113">The component works with a provider and Microsoft Graph out of the box.</span></span> <span data-ttu-id="280de-114">No entanto, se você quiser fornecer sua própria lógica e autenticação, você pode usar `userDetails` a propriedade para definir os detalhes do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="280de-114">However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details.</span></span> 
+<span data-ttu-id="b70a0-113">O componente funciona com um provedor e o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="b70a0-113">The component works with a provider and Microsoft Graph out of the box.</span></span> <span data-ttu-id="b70a0-114">No entanto, se você quiser fornecer sua própria lógica e autenticação, você pode usar `userDetails` a propriedade para definir os detalhes do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="b70a0-114">However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details.</span></span> 
 
-| <span data-ttu-id="280de-115">Atributo</span><span class="sxs-lookup"><span data-stu-id="280de-115">Attribute</span></span> | <span data-ttu-id="280de-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="280de-116">Property</span></span> | <span data-ttu-id="280de-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="280de-117">Description</span></span> |
+| <span data-ttu-id="b70a0-115">Atributo</span><span class="sxs-lookup"><span data-stu-id="b70a0-115">Attribute</span></span> | <span data-ttu-id="b70a0-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b70a0-116">Property</span></span> | <span data-ttu-id="b70a0-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="b70a0-117">Description</span></span> |
 | --- | --- | -- |
-| <span data-ttu-id="280de-118">User-detalhes</span><span class="sxs-lookup"><span data-stu-id="280de-118">user-details</span></span> | <span data-ttu-id="280de-119">userdetails</span><span class="sxs-lookup"><span data-stu-id="280de-119">userDetails</span></span> | <span data-ttu-id="280de-120">Defina o objeto de usuário que será exibido no controle.</span><span class="sxs-lookup"><span data-stu-id="280de-120">Set the user object that will be displayed on the control.</span></span> |
+| <span data-ttu-id="b70a0-118">User-detalhes</span><span class="sxs-lookup"><span data-stu-id="b70a0-118">user-details</span></span> | <span data-ttu-id="b70a0-119">userdetails</span><span class="sxs-lookup"><span data-stu-id="b70a0-119">userDetails</span></span> | <span data-ttu-id="b70a0-120">Defina o objeto de usuário que será exibido no controle.</span><span class="sxs-lookup"><span data-stu-id="b70a0-120">Set the user object that will be displayed on the control.</span></span> |
 
-<span data-ttu-id="280de-121">O exemplo a seguir define os detalhes da pessoa.</span><span class="sxs-lookup"><span data-stu-id="280de-121">The following example sets the person details.</span></span>
+<span data-ttu-id="b70a0-121">O exemplo a seguir define os detalhes da pessoa.</span><span class="sxs-lookup"><span data-stu-id="b70a0-121">The following example sets the person details.</span></span>
 
 ```js
 let loginControl = document.getElementById('myLoginControl');
 loginControl.userDetails = {
     displayName: 'Nikola Metulev',
     email: 'nikola@contoso.com',
-    profileImage: 'url'
+    personImage: 'url'
 }
 ```
 
-<span data-ttu-id="280de-122">A `userDetails` configuração `null` para vai para o estado de desconectar.</span><span class="sxs-lookup"><span data-stu-id="280de-122">Setting `userDetails` to `null` will go to the signed out state.</span></span>
+<span data-ttu-id="b70a0-122">A `userDetails` configuração `null` para vai para o estado de desconectar.</span><span class="sxs-lookup"><span data-stu-id="b70a0-122">Setting `userDetails` to `null` will go to the signed out state.</span></span>
 
-<span data-ttu-id="280de-123">Use os `loginInitiated` eventos `logoutInitiated` e para lidar com a entrada e a saída.</span><span class="sxs-lookup"><span data-stu-id="280de-123">Use the `loginInitiated` and `logoutInitiated` events to handle signing in and out.</span></span> 
+<span data-ttu-id="b70a0-123">Use os `loginInitiated` eventos `logoutInitiated` e para lidar com a entrada e a saída.</span><span class="sxs-lookup"><span data-stu-id="b70a0-123">Use the `loginInitiated` and `logoutInitiated` events to handle signing in and out.</span></span> 
 
-## <a name="css-custom-properties"></a><span data-ttu-id="280de-124">Propriedades personalizadas de CSS</span><span class="sxs-lookup"><span data-stu-id="280de-124">CSS custom properties</span></span>
+## <a name="css-custom-properties"></a><span data-ttu-id="b70a0-124">Propriedades personalizadas de CSS</span><span class="sxs-lookup"><span data-stu-id="b70a0-124">CSS custom properties</span></span>
 
-<span data-ttu-id="280de-125">O `mgt-login` componente define as seguintes propriedades personalizadas de CSS.</span><span class="sxs-lookup"><span data-stu-id="280de-125">The `mgt-login` component defines the following CSS custom properties.</span></span>
+<span data-ttu-id="b70a0-125">O `mgt-login` componente define as seguintes propriedades personalizadas de CSS.</span><span class="sxs-lookup"><span data-stu-id="b70a0-125">The `mgt-login` component defines the following CSS custom properties.</span></span>
 
 ```css
 mgt-login {
@@ -68,47 +68,47 @@ mgt-login {
 }
 ```
 
-<span data-ttu-id="280de-126">Para saber mais, confira [estilos de componentes](../style.md).</span><span class="sxs-lookup"><span data-stu-id="280de-126">To learn more, see [styling components](../style.md).</span></span>
+<span data-ttu-id="b70a0-126">Para saber mais, confira [estilos de componentes](../style.md).</span><span class="sxs-lookup"><span data-stu-id="b70a0-126">To learn more, see [styling components](../style.md).</span></span>
 
-## <a name="events"></a><span data-ttu-id="280de-127">Eventos</span><span class="sxs-lookup"><span data-stu-id="280de-127">Events</span></span>
+## <a name="events"></a><span data-ttu-id="b70a0-127">Eventos</span><span class="sxs-lookup"><span data-stu-id="b70a0-127">Events</span></span>
 
-<span data-ttu-id="280de-128">Os eventos a seguir são acionados do controle.</span><span class="sxs-lookup"><span data-stu-id="280de-128">The following events are fired from the control.</span></span>
+<span data-ttu-id="b70a0-128">Os eventos a seguir são acionados do controle.</span><span class="sxs-lookup"><span data-stu-id="b70a0-128">The following events are fired from the control.</span></span>
 
-| <span data-ttu-id="280de-129">Evento</span><span class="sxs-lookup"><span data-stu-id="280de-129">Event</span></span> | <span data-ttu-id="280de-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="280de-130">Description</span></span> |
+| <span data-ttu-id="b70a0-129">Evento</span><span class="sxs-lookup"><span data-stu-id="b70a0-129">Event</span></span> | <span data-ttu-id="b70a0-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="b70a0-130">Description</span></span> |
 | --- | --- |
-| `loginInitiated` | <span data-ttu-id="280de-131">O usuário clicou no botão entrar para iniciar o processo de logon-cancelable.</span><span class="sxs-lookup"><span data-stu-id="280de-131">The user clicked the sign in button to start the login process - cancelable.</span></span>|
-| `loginCompleted` | <span data-ttu-id="280de-132">o processo de login foi bem-sucedido e o usuário está conectado.</span><span class="sxs-lookup"><span data-stu-id="280de-132">the login process was successful and the user is now signed in.</span></span> |
-| `loginFailed` | <span data-ttu-id="280de-133">O usuário cancelou o processo de logon ou não pôde entrar.</span><span class="sxs-lookup"><span data-stu-id="280de-133">The user canceled the login process or was unable to sign in.</span></span>|
-| `logoutInitiated` | <span data-ttu-id="280de-134">O usuário iniciou o logout-cancelamento.</span><span class="sxs-lookup"><span data-stu-id="280de-134">The user started to logout - cancelable.</span></span> |
-| `logoutCompleted` | <span data-ttu-id="280de-135">O usuário saiu.</span><span class="sxs-lookup"><span data-stu-id="280de-135">The user signed out.</span></span> |
+| `loginInitiated` | <span data-ttu-id="b70a0-131">O usuário clicou no botão entrar para iniciar o processo de logon-cancelable.</span><span class="sxs-lookup"><span data-stu-id="b70a0-131">The user clicked the sign in button to start the login process - cancelable.</span></span>|
+| `loginCompleted` | <span data-ttu-id="b70a0-132">o processo de login foi bem-sucedido e o usuário está conectado.</span><span class="sxs-lookup"><span data-stu-id="b70a0-132">the login process was successful and the user is now signed in.</span></span> |
+| `loginFailed` | <span data-ttu-id="b70a0-133">O usuário cancelou o processo de logon ou não pôde entrar.</span><span class="sxs-lookup"><span data-stu-id="b70a0-133">The user canceled the login process or was unable to sign in.</span></span>|
+| `logoutInitiated` | <span data-ttu-id="b70a0-134">O usuário iniciou o logout-cancelamento.</span><span class="sxs-lookup"><span data-stu-id="b70a0-134">The user started to logout - cancelable.</span></span> |
+| `logoutCompleted` | <span data-ttu-id="b70a0-135">O usuário saiu.</span><span class="sxs-lookup"><span data-stu-id="b70a0-135">The user signed out.</span></span> |
 
-## <a name="microsoft-graph-permissions"></a><span data-ttu-id="280de-136">Permissões do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="280de-136">Microsoft Graph permissions</span></span>
+## <a name="microsoft-graph-permissions"></a><span data-ttu-id="b70a0-136">Permissões do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="b70a0-136">Microsoft Graph permissions</span></span>
 
-<span data-ttu-id="280de-137">Este componente usa o [componente Person](./person.md) para exibir o usuário e herda todas as permissões.</span><span class="sxs-lookup"><span data-stu-id="280de-137">This component uses the [Person component](./person.md) to display the user and inherits all permissions.</span></span> 
+<span data-ttu-id="b70a0-137">Este componente usa o [componente Person](./person.md) para exibir o usuário e herda todas as permissões.</span><span class="sxs-lookup"><span data-stu-id="b70a0-137">This component uses the [Person component](./person.md) to display the user and inherits all permissions.</span></span> 
 
-## <a name="authentication"></a><span data-ttu-id="280de-138">Autenticação</span><span class="sxs-lookup"><span data-stu-id="280de-138">Authentication</span></span>
+## <a name="authentication"></a><span data-ttu-id="b70a0-138">Autenticação</span><span class="sxs-lookup"><span data-stu-id="b70a0-138">Authentication</span></span>
 
-<span data-ttu-id="280de-139">O controle de logon usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).</span><span class="sxs-lookup"><span data-stu-id="280de-139">The login control uses the global authentication provider described in the [authentication documentation](./../providers.md).</span></span> 
+<span data-ttu-id="b70a0-139">O controle de logon usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).</span><span class="sxs-lookup"><span data-stu-id="b70a0-139">The login control uses the global authentication provider described in the [authentication documentation](./../providers.md).</span></span> 
 
-## <a name="extend-for-more-control"></a><span data-ttu-id="280de-140">Estender para mais controle</span><span class="sxs-lookup"><span data-stu-id="280de-140">Extend for more control</span></span>
+## <a name="extend-for-more-control"></a><span data-ttu-id="b70a0-140">Estender para mais controle</span><span class="sxs-lookup"><span data-stu-id="b70a0-140">Extend for more control</span></span>
 
-<span data-ttu-id="280de-141">Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected render*` métodos para substituir em extensões de componente.</span><span class="sxs-lookup"><span data-stu-id="280de-141">For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.</span></span>
+<span data-ttu-id="b70a0-141">Para cenários mais complexos ou uma UX verdadeiramente personalizada, esse componente expõe vários `protected render*` métodos para substituir em extensões de componente.</span><span class="sxs-lookup"><span data-stu-id="b70a0-141">For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.</span></span>
 
-| <span data-ttu-id="280de-142">Método</span><span class="sxs-lookup"><span data-stu-id="280de-142">Method</span></span> | <span data-ttu-id="280de-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="280de-143">Description</span></span> |
+| <span data-ttu-id="b70a0-142">Método</span><span class="sxs-lookup"><span data-stu-id="b70a0-142">Method</span></span> | <span data-ttu-id="b70a0-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="b70a0-143">Description</span></span> |
 | - | - |
-| <span data-ttu-id="280de-144">renderButton</span><span class="sxs-lookup"><span data-stu-id="280de-144">renderButton</span></span> | <span data-ttu-id="280de-145">Renderiza o cromo do botão.</span><span class="sxs-lookup"><span data-stu-id="280de-145">Renders the button chrome.</span></span> |
-| <span data-ttu-id="280de-146">renderButtonContent</span><span class="sxs-lookup"><span data-stu-id="280de-146">renderButtonContent</span></span> | <span data-ttu-id="280de-147">Renderiza o conteúdo do botão.</span><span class="sxs-lookup"><span data-stu-id="280de-147">Renders the button content.</span></span> |
-| <span data-ttu-id="280de-148">renderFlyout</span><span class="sxs-lookup"><span data-stu-id="280de-148">renderFlyout</span></span> | <span data-ttu-id="280de-149">Renderiza o cromo domenu.</span><span class="sxs-lookup"><span data-stu-id="280de-149">Renders the flyout chrome.</span></span> |
-| <span data-ttu-id="280de-150">renderFlyoutContent</span><span class="sxs-lookup"><span data-stu-id="280de-150">renderFlyoutContent</span></span> | <span data-ttu-id="280de-151">Renderiza o conteúdo do submenu.</span><span class="sxs-lookup"><span data-stu-id="280de-151">Renders the flyout content.</span></span> |
+| <span data-ttu-id="b70a0-144">renderButton</span><span class="sxs-lookup"><span data-stu-id="b70a0-144">renderButton</span></span> | <span data-ttu-id="b70a0-145">Renderiza o cromo do botão.</span><span class="sxs-lookup"><span data-stu-id="b70a0-145">Renders the button chrome.</span></span> |
+| <span data-ttu-id="b70a0-146">renderButtonContent</span><span class="sxs-lookup"><span data-stu-id="b70a0-146">renderButtonContent</span></span> | <span data-ttu-id="b70a0-147">Renderiza o conteúdo do botão.</span><span class="sxs-lookup"><span data-stu-id="b70a0-147">Renders the button content.</span></span> |
+| <span data-ttu-id="b70a0-148">renderFlyout</span><span class="sxs-lookup"><span data-stu-id="b70a0-148">renderFlyout</span></span> | <span data-ttu-id="b70a0-149">Renderiza o cromo domenu.</span><span class="sxs-lookup"><span data-stu-id="b70a0-149">Renders the flyout chrome.</span></span> |
+| <span data-ttu-id="b70a0-150">renderFlyoutContent</span><span class="sxs-lookup"><span data-stu-id="b70a0-150">renderFlyoutContent</span></span> | <span data-ttu-id="b70a0-151">Renderiza o conteúdo do submenu.</span><span class="sxs-lookup"><span data-stu-id="b70a0-151">Renders the flyout content.</span></span> |
 
-### <a name="bring-your-own-flyout"></a><span data-ttu-id="280de-152">Traga seu próprio submenu</span><span class="sxs-lookup"><span data-stu-id="280de-152">Bring your own flyout</span></span>
+### <a name="bring-your-own-flyout"></a><span data-ttu-id="b70a0-152">Traga seu próprio submenu</span><span class="sxs-lookup"><span data-stu-id="b70a0-152">Bring your own flyout</span></span>
 
-<span data-ttu-id="280de-153">É possível usar seu próprio componente de submenu no lugar do interno, substituindo o `renderFlyout()` método e fornecendo o novo submenu.</span><span class="sxs-lookup"><span data-stu-id="280de-153">It is possible to use your own flyout component in place of the built-in one, by overriding the `renderFlyout()` method and providing the new flyout.</span></span>
+<span data-ttu-id="b70a0-153">É possível usar seu próprio componente de submenu no lugar do interno, substituindo o `renderFlyout()` método e fornecendo o novo submenu.</span><span class="sxs-lookup"><span data-stu-id="b70a0-153">It is possible to use your own flyout component in place of the built-in one, by overriding the `renderFlyout()` method and providing the new flyout.</span></span>
 
-<span data-ttu-id="280de-154">Nesse caso, verifique se o componente de login continua funcionando conforme o esperado, substituindo os `protected` métodos de exibição de submenu para atualizar a visibilidade do submenu alternativo.</span><span class="sxs-lookup"><span data-stu-id="280de-154">In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.</span></span>
+<span data-ttu-id="b70a0-154">Nesse caso, verifique se o componente de login continua funcionando conforme o esperado, substituindo os `protected` métodos de exibição de submenu para atualizar a visibilidade do submenu alternativo.</span><span class="sxs-lookup"><span data-stu-id="b70a0-154">In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.</span></span>
 
-| <span data-ttu-id="280de-155">Método</span><span class="sxs-lookup"><span data-stu-id="280de-155">Method</span></span> | <span data-ttu-id="280de-156">Descrição</span><span class="sxs-lookup"><span data-stu-id="280de-156">Description</span></span> |
+| <span data-ttu-id="b70a0-155">Método</span><span class="sxs-lookup"><span data-stu-id="b70a0-155">Method</span></span> | <span data-ttu-id="b70a0-156">Descrição</span><span class="sxs-lookup"><span data-stu-id="b70a0-156">Description</span></span> |
 | - | - |
-| <span data-ttu-id="280de-157">hideFlyout</span><span class="sxs-lookup"><span data-stu-id="280de-157">hideFlyout</span></span> | <span data-ttu-id="280de-158">Descarta o submenu.</span><span class="sxs-lookup"><span data-stu-id="280de-158">Dismisses the flyout.</span></span> |
-| <span data-ttu-id="280de-159">Menu de atalho</span><span class="sxs-lookup"><span data-stu-id="280de-159">showFlyout</span></span> | <span data-ttu-id="280de-160">Exibe o submenu.</span><span class="sxs-lookup"><span data-stu-id="280de-160">Displays the flyout.</span></span> |
-| <span data-ttu-id="280de-161">toggleFlyout</span><span class="sxs-lookup"><span data-stu-id="280de-161">toggleFlyout</span></span> | <span data-ttu-id="280de-162">Alterna o estado do submenu.</span><span class="sxs-lookup"><span data-stu-id="280de-162">Toggles the state of the flyout.</span></span> |
+| <span data-ttu-id="b70a0-157">hideFlyout</span><span class="sxs-lookup"><span data-stu-id="b70a0-157">hideFlyout</span></span> | <span data-ttu-id="b70a0-158">Descarta o submenu.</span><span class="sxs-lookup"><span data-stu-id="b70a0-158">Dismisses the flyout.</span></span> |
+| <span data-ttu-id="b70a0-159">Menu de atalho</span><span class="sxs-lookup"><span data-stu-id="b70a0-159">showFlyout</span></span> | <span data-ttu-id="b70a0-160">Exibe o submenu.</span><span class="sxs-lookup"><span data-stu-id="b70a0-160">Displays the flyout.</span></span> |
+| <span data-ttu-id="b70a0-161">toggleFlyout</span><span class="sxs-lookup"><span data-stu-id="b70a0-161">toggleFlyout</span></span> | <span data-ttu-id="b70a0-162">Alterna o estado do submenu.</span><span class="sxs-lookup"><span data-stu-id="b70a0-162">Toggles the state of the flyout.</span></span> |
