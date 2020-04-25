@@ -4,12 +4,12 @@ description: Estas perguntas frequentes respondem dúvidas relacionadas aos Iní
 author: jasonjoh
 ms.author: jasonjoh
 localization_priority: Normal
-ms.openlocfilehash: bd1405f4805bb9740fb7119adcf2f877236d19cf
-ms.sourcegitcommit: b523648530fcc8c2a3ded35b419be8047b9fcd10
-ms.translationtype: HT
+ms.openlocfilehash: 00e1d3d20276c888f2f22d7e62f7434da282bca9
+ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35084086"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43806827"
 ---
 # <a name="microsoft-graph-quick-start-faq"></a>Perguntas frequentes do início rápido do Microsoft Graph
 
@@ -36,7 +36,7 @@ Esta seção responde perguntas sobre o conteúdo dos exemplos de início rápid
 
 ### <a name="can-i-get-the-quick-start-code-without-downloading-through-the-quick-start-page"></a>Posso obter o código de início rápido sem fazer o download através da página de início rápido?
 
-Com certeza! Todo download de início rápido é baseado em um [tutorial do Microsoft Graph](tutorials.md), portanto, você terá duas outras opções para obter o mesmo código-fonte:
+Com certeza! Todo download de início rápido é baseado em um [tutorial do Microsoft Graph](tutorials.yml), portanto, você terá duas outras opções para obter o mesmo código-fonte:
 
 - Crie o código por conta própria seguindo tutorial passo a passo.
 - Faça o download do projeto concluído a partir do repositório GitHub correspondente e siga as instruções no README para configurar e executar a amostra.
@@ -50,17 +50,18 @@ A tabela a seguir lista o tutorial correspondente e o repositório do GitHub par
 
 | Início Rápido | Tutorial | Repositório do GitHub |
 |-------------|----------|-------------------|
-| Android | [Tutorial](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/android-java-connect-sample) |
+| Android | [Tutorial](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
 | Angular | [Tutorial](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
-| ASP.NET MVC | [Tutorial](/graph/tutorials/aspnet) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
-| iOS (Swift) | Nenhum | [GitHub](https://github.com/microsoftgraph/ios-swift-connect-sample) |
-| iOS (Objective-C) | Nenhum | [GitHub](https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample) |
+| ASP.NET MVC | [Tutorial](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
+| iOS (Swift) | Tutorial (/graph/tutorials/ios-swift | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
+| iOS (Objective-C) | Tutorial (/graph/tutorials/ios-objectivec | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
 | Node.js | [Tutorial](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
 | PHP | [Tutorial](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
 | Python | [Tutorial](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
+| React | [Tutorial](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
 | Ruby | [Tutorial](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
 | UWP | [Tutorial](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-| Xamarin | Nenhum | [GitHub](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) |
+| Xamarin | Tutorial (/graph/tutorials/xamarin | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
 
 ### <a name="why-dont-any-of-the-quick-start-samples-show-advanced-authentication-use-cases"></a>Por que nenhum dos exemplos de início rápido mostra casos de uso de autenticação avançados?
 

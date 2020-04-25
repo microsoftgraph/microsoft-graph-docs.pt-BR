@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: efeb9a9007fbe09636db266f145a294f12ab4d6e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 4ea105329440bfb28ec9b03b323d7482e42725ed
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895530"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812566"
 ---
 # <a name="get-printusagesummarybyuser"></a>Obter printUsageSummaryByUser
 
@@ -29,7 +29,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Users. Read. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,6 +39,9 @@ GET /reports/monthlyPrintUsageSummariesByUser/{id}
 GET /print/reports/dailyPrintUsageSummariesByUser/{id}
 GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

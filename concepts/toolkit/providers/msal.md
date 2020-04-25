@@ -3,12 +3,12 @@ title: Provedor MSAL
 description: O provedor MSAL usa MSAL. js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 95dfae9954ff098ae9e777c3c330c5f334b8b0aa
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 84962c0df0be9012f09ba8a87e17dcd3954d6e22
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868489"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806015"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
@@ -36,7 +36,7 @@ Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo p
 | Client-ID   | String Client ID (consulte Creating a app/Client ID). Obrigatório.|
 | tipo de logon  | A enumeração `redirect` entre `popup` e o valor padrão `redirect`é. Opcional. |
 | escopos  | Cadeias de caracteres separadas por vírgula para escopos para os quais o usuário deve se concordar. Opcional.|
-| autoridades  | A cadeia de caracteres de autoridade-padrão é a autoridade comum. Opcional.|
+| autoridades  | A cadeia de caracteres de autoridade-padrão é a autoridade comum. Para aplicativos de locatário único, use a ID de locatário ou o nome do locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]`. Opcional.|
 | depende de | Cadeia de caracteres de seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional. |
 
 ### <a name="initialize-in-javascript"></a>Inicializar em JavaScript
@@ -64,10 +64,10 @@ interface MsalConfig {
 
 Você deve fornecer um `clientId` (para criar um novo `UserAgentApplication`).
 
-Para saber mais, confira a [documentação do MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics).
+Para saber mais sobre o MSAL. js e as opções adicionais que você pode usar ao inicializar a biblioteca do MSAL, consulte a [documentação do MSAL](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications).
 
 ## <a name="creating-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
 
 Para obter detalhes sobre como registrar um aplicativo e obter uma ID de cliente, consulte o [início rápido registrar um aplicativo](/azure/active-directory/develop/quickstart-register-app).
 
->**Observação:** MSAL só oferece suporte ao fluxo implícito para OAuth. Certifique-se de habilitar o fluxo implícito em seu aplicativo no portal do Azure (não está habilitado por padrão). Em **autenticação**, encontre a seção **concessão implícita** e marque as caixas de seleção para **tokens de acesso** e **tokens de ID**.
+>**Observação:** MSAL só oferece suporte ao fluxo implícito para OAuth. Certifique-se de habilitar o fluxo implícito em seu aplicativo no portal do Azure (não está habilitado por padrão). Em **autenticação**, encontre a seção **concessão implícita** e marque as caixas de seleção para **tokens de acesso** e **tokens de ID**. Para usar a autoridade comum, defina **Account em qualquer diretório organizacional**. Para usar um locatário específico, defina o `authority` durante a inicialização.

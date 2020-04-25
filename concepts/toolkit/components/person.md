@@ -3,12 +3,12 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 53cd4d8bb7a2bb23a3c54924ee07b4843e7fc503
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: a23d5432c868881f05c04b84626962d684f7d1eb
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144279"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812545"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
@@ -40,7 +40,7 @@ Você pode usar três propriedades para definir os detalhes da pessoa. Use apena
     personControl.personDetails = {
         displayName: 'Nikola Metulev',
         email: 'nikola@contoso.com',
-        image: 'url'
+        personImage: 'url'
     }
     ```
 

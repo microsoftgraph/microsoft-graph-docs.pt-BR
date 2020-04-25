@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5b8c16df2985e03e8b2aacc4e9463618102d93b4
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 1e6e04f02862afa265c15115d3c5db8c16f1f512
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947851"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812538"
 ---
 # <a name="list-jobs"></a>Listar trabalhos
 
@@ -29,13 +29,19 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Users. Read. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}/jobs
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+
+### <a name="exceptions"></a>Exceções
+Não há suporte para alguns operadores `$count`: `$orderby`, `$search`, `$filter`,.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

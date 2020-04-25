@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c399e5e375ccd0890c2b8e31663d39d952467c09
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 33171e0878c05d044a1f0d4dbde181600e0605ed
+ms.sourcegitcommit: d2536f56e3a424219660bc0495ec8632932b4fb8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062132"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43812517"
 ---
 # <a name="list-printers"></a>Listar impressoras
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Users. Read. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ Este método oferece suporte a alguns dos parâmetros de consulta OData para aju
 
 ### <a name="exceptions"></a>Exceções
 * Os `$expand` operadores `select` e têm suporte para a `share` propriedade de navegação, mas não `jobs`para.
-* Não `$count` há suporte para o operador.
+* Não há suporte para alguns operadores `$count`: `$orderby`, `$search`,.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

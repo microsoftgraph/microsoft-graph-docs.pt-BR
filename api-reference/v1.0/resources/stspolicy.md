@@ -5,14 +5,14 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ae84fae2df06ddb2911f6462d644f522510ed89c
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 29a9125119f360aa4f5eda24393d4098c9d60f73
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229581"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43805325"
 ---
-# <a name="policybase-resource-type"></a>tipo de recurso policyBase
+# <a name="stspolicy-resource-type"></a>tipo de recurso stsPolicy
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Representa um tipo de base abstrato para tipos de política que controlam o comp
 
 Herda de [policyBase](policyBase.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Nenhum
 
@@ -31,7 +31,7 @@ Nenhum
 |id|String| Identificador exclusivo da política. Somente leitura. Herdado de [policyBase](policyBase.md).|
 |description|String| Descrição da política. Herdado de [policyBase](policyBase.md).|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Herdado de [policyBase](policyBase.md).|
-|definir|String collection| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
+|definir|Coleção de cadeias de caracteres| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 ## <a name="relationships"></a>Relações
