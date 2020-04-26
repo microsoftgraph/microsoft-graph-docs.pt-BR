@@ -4,12 +4,12 @@ description: Para definir o escopo das permissões de aplicativo de um aplicativ
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ccc33acff5c95cde3f4ba210684b177cc69334c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 75778efe46552eef0c7798cd602eed99ef871d5e
+ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969486"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43806841"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Permissões de escopo de aplicativo para caixas de correio específicas do Exchange Online 
 
@@ -48,6 +48,8 @@ Observação: as alterações nas políticas de acesso a aplicativos podem levar
 ## <a name="supported-permissions-and-additional-resources"></a>Permissões compatíveis e recursos adicionais
 Os administradores podem usar os cmdlets ApplicationAccessPolicy para controlar o acesso à caixa de correio de um aplicativo que tenha recebido as seguintes permissões de aplicativo: 
 - Mail.Read
+- Mail.ReadBasic
+- Mail.ReadBasic.All
 - Mail.ReadWrite
 - Mail.Send
 - MailboxSettings.Read  
