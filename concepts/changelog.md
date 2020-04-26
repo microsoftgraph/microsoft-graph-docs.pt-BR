@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 05d05d0ec0165d8bbd84523f0f38f81a733ff9d7
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 8dfeaa3de759291849685c9a95c101a6e34750ed
+ms.sourcegitcommit: fe3cb0e47920467324ddcf0773354349e3612d4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805413"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43849997"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -35,7 +35,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
-| Adição | beta | As propriedades **allowedGroups** e **allowedUsers** foram adicionadas à entidade [printerShare](/graph/api/resources/printershare).|
+| Adição | beta | As propriedades **allowedGroups** e **allowedUsers** foram adicionadas à entidade [printerShare](/graph/api/resources/printershare?view=graph-rest-beta).|
 
 ### <a name="devices-and-apps--corporate-management-intune"></a>Dispositivos e aplicativos | Gerenciamento corporativo (Intune)
 
