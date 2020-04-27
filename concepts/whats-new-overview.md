@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 448c9b0063a04cf0ddaa375092a1dd9ceff6694a
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: 105845810acb96082dbc213f8d26ab98d96f9e57
+ms.sourcegitcommit: fe3cb0e47920467324ddcf0773354349e3612d4f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557847"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "43850011"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -37,8 +37,15 @@ Confira os destaques das novidades do Microsoft Graph e como você pode [compart
 
 ## <a name="april-2020-new-in-preview-only"></a>Abril de 2020: novo somente para visualização
 
-### <a name="devices-and-apps"></a>Dispositivos e aplicativos
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+
+Designar usuários e grupos permitidos para usar compartilhamentos de impressoras [específicos](/graph/api/resources/printershare?view=graph-rest-beta) em impressão universal, a infraestrutura de impressão baseada na nuvem do Microsoft 365. Para experimentar recursos de gerenciamento de impressão eficientes e centralizados, assim como oferecer uma experiência de impressão simples, porém rica e segura para os usuários de impressão, consulte o [Anúncio de impressão universal](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-universal-print-a-cloud-based-print-solution/ba-p/1204775) e participe do programa de visualização.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
 Atualizações de [abril](changelog.md#april-2020) do Intune.
+
+### <a name="groups"></a>Grupos
+Identifique o aplicativo que criou um [grupo](/graph/api/resources/group?view=graph-rest-beta) pela sua ID do aplicativo.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - [Controlar alterações](/graph/api/administrativeunit-delta?view=graph-rest-beta) para [unidades administrativas](/graph/api/resources/administrativeunit?view=graph-rest-beta).
