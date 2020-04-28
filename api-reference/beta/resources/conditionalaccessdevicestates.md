@@ -2,38 +2,38 @@
 title: tipo de recurso conditionalAccessDeviceStates
 description: Representa os Estados do dispositivo no escopo da política.
 localization_priority: Normal
-author: dkershaw10
+author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 03981fc5be0388e8146c163ab4500eae87d65704
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c23406f63ae94a494e972d4063277c277d655423
+ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413499"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43916798"
 ---
-# <a name="conditionalaccessdevicestates-resource-type"></a><span data-ttu-id="dcac8-103">tipo de recurso conditionalAccessDeviceStates</span><span class="sxs-lookup"><span data-stu-id="dcac8-103">conditionalAccessDeviceStates resource type</span></span>
+# <a name="conditionalaccessdevicestates-resource-type"></a><span data-ttu-id="6a924-103">tipo de recurso conditionalAccessDeviceStates</span><span class="sxs-lookup"><span data-stu-id="6a924-103">conditionalAccessDeviceStates resource type</span></span>
 
-<span data-ttu-id="dcac8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dcac8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6a924-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6a924-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dcac8-105">Representa os Estados do dispositivo no escopo da política.</span><span class="sxs-lookup"><span data-stu-id="dcac8-105">Represents device states in the policy scope.</span></span>
+<span data-ttu-id="6a924-105">Representa os Estados do dispositivo no escopo da política.</span><span class="sxs-lookup"><span data-stu-id="6a924-105">Represents device states in the policy scope.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dcac8-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dcac8-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6a924-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6a924-106">Properties</span></span>
 
-| <span data-ttu-id="dcac8-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dcac8-107">Property</span></span>     | <span data-ttu-id="dcac8-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="dcac8-108">Type</span></span>        | <span data-ttu-id="dcac8-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="dcac8-109">Description</span></span> |
+| <span data-ttu-id="6a924-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6a924-107">Property</span></span>     | <span data-ttu-id="6a924-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="6a924-108">Type</span></span>        | <span data-ttu-id="6a924-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="6a924-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="dcac8-110">includeStates</span><span class="sxs-lookup"><span data-stu-id="dcac8-110">includeStates</span></span> | <span data-ttu-id="dcac8-111">Coleção String</span><span class="sxs-lookup"><span data-stu-id="dcac8-111">String collection</span></span> | <span data-ttu-id="dcac8-112">Estados no escopo da política.</span><span class="sxs-lookup"><span data-stu-id="dcac8-112">States in the scope of the policy.</span></span> <span data-ttu-id="dcac8-113">`All`é o único valor permitido.</span><span class="sxs-lookup"><span data-stu-id="dcac8-113">`All` is the only allowed value.</span></span> |
-| <span data-ttu-id="dcac8-114">excludeStates</span><span class="sxs-lookup"><span data-stu-id="dcac8-114">excludeStates</span></span> | <span data-ttu-id="dcac8-115">Coleção String</span><span class="sxs-lookup"><span data-stu-id="dcac8-115">String collection</span></span> | <span data-ttu-id="dcac8-116">Estados excluídos do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="dcac8-116">States excluded from the scope of the policy.</span></span> <span data-ttu-id="dcac8-117">Valores possíveis: `Compliant`, `DomainJoined`.</span><span class="sxs-lookup"><span data-stu-id="dcac8-117">Possible values: `Compliant`, `DomainJoined`.</span></span> |
+| <span data-ttu-id="6a924-110">includeStates</span><span class="sxs-lookup"><span data-stu-id="6a924-110">includeStates</span></span> | <span data-ttu-id="6a924-111">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="6a924-111">String collection</span></span> | <span data-ttu-id="6a924-112">Estados no escopo da política.</span><span class="sxs-lookup"><span data-stu-id="6a924-112">States in the scope of the policy.</span></span> <span data-ttu-id="6a924-113">`All`é o único valor permitido.</span><span class="sxs-lookup"><span data-stu-id="6a924-113">`All` is the only allowed value.</span></span> |
+| <span data-ttu-id="6a924-114">excludeStates</span><span class="sxs-lookup"><span data-stu-id="6a924-114">excludeStates</span></span> | <span data-ttu-id="6a924-115">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="6a924-115">String collection</span></span> | <span data-ttu-id="6a924-116">Estados excluídos do escopo da política.</span><span class="sxs-lookup"><span data-stu-id="6a924-116">States excluded from the scope of the policy.</span></span> <span data-ttu-id="6a924-117">Valores possíveis: `Compliant`, `DomainJoined`.</span><span class="sxs-lookup"><span data-stu-id="6a924-117">Possible values: `Compliant`, `DomainJoined`.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="dcac8-118">Relações</span><span class="sxs-lookup"><span data-stu-id="dcac8-118">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="6a924-118">Relações</span><span class="sxs-lookup"><span data-stu-id="6a924-118">Relationships</span></span>
 
-<span data-ttu-id="dcac8-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dcac8-119">None.</span></span>
+<span data-ttu-id="6a924-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6a924-119">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dcac8-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dcac8-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6a924-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6a924-120">JSON representation</span></span>
 
-<span data-ttu-id="dcac8-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="dcac8-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6a924-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6a924-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
